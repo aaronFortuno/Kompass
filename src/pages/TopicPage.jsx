@@ -50,9 +50,13 @@ export function TopicPage() {
       </header>
 
       <div className="space-y-8">
-        {topic.content.map((block, i) => (
-          <ContentBlock key={i} block={block} />
-        ))}
+        {/* TODO iteració 3: StepViewer. De moment aplano steps. */}
+        {topic.steps
+          .flatMap((step) => step.blocks)
+          .filter((block) => block.type !== 'exercise')
+          .map((block, i) => (
+            <ContentBlock key={i} block={block} />
+          ))}
       </div>
     </article>
   );

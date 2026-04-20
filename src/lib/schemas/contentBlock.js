@@ -33,7 +33,16 @@ const TableBlockSchema = z.object({
   caption: z.string().optional(),
 });
 
+const EXERCISE_ID_REGEX = /^A\d[ab]-\d+-ex-\d+$/;
+
+const ExerciseBlockSchema = z.object({
+  type: z.literal('exercise'),
+  exerciseId: z.string().regex(EXERCISE_ID_REGEX),
+  variant: z.enum(['quick-check', 'assessment']).default('quick-check').optional(),
+});
+
 export const ContentBlockSchema = z.discriminatedUnion('type', [
   ExplanationBlockSchema,
   TableBlockSchema,
+  ExerciseBlockSchema,
 ]);
