@@ -19,10 +19,10 @@ export function HomePage() {
       </header>
 
       <div className="flex flex-wrap gap-3">
-        <Link to="/temes" className="btn-primary inline">
+        <Link to="/temes" className="btn-primary">
           {t('home.ctaStart')}
         </Link>
-        <Link to="/rutes" className="btn-ghost inline">
+        <Link to="/rutes" className="btn-ghost">
           {t('home.ctaPaths')}
         </Link>
       </div>

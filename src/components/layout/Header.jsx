@@ -19,7 +19,7 @@ export function Header() {
 
   const linkClass = ({ isActive }) =>
     [
-      'inline px-3 py-2 rounded-sm text-sm',
+      'px-3 py-2 rounded-sm text-sm',
       'motion-hover',
       isActive ? 'text-accent font-medium' : 'text-content-muted hover:text-content',
     ].join(' ');
@@ -29,7 +29,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-20 bg-surface/90 backdrop-blur border-b border-border">
       <div className="page-gutter max-w-content-list mx-auto flex items-center justify-between gap-4 py-3">
-        <Link to="/" className="inline" aria-label={t('app.name')}>
+        <Link to="/" className="inline-flex items-center" aria-label={t('app.name')}>
           <Logo />
         </Link>
 

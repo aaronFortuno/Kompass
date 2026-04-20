@@ -17,7 +17,7 @@ export function TopicPage() {
         <p className="text-content-muted">
           {t('topic.notFoundBody', { id: topicId })}
         </p>
-        <Link to="/temes" className="btn-ghost inline">
+        <Link to="/temes" className="btn-ghost">
           {t('topic.backToIndex')}
         </Link>
       </div>
@@ -43,7 +43,7 @@ export function TopicPage() {
       </div>
 
       <footer className="pt-4 border-t border-border">
-        <Link to="/temes" className="btn-ghost inline">
+        <Link to="/temes" className="btn-ghost">
           {t('topic.backToIndex')}
         </Link>
       </footer>

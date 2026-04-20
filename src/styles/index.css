@@ -80,16 +80,6 @@
     background-color: transparent;
     color: inherit;
   }
-  /* Targets tàctils mínim 44px · §17.4 */
-  button, a, [role="button"] {
-    @apply min-h-[44px] min-w-[44px] inline-flex items-center justify-center;
-  }
-  /* Restableix el mínim per a botons inline dins de text */
-  a.inline, button.inline {
-    min-height: 0;
-    min-width: 0;
-    display: inline;
-  }
 }
 
 @layer components {
@@ -103,8 +93,9 @@
   .card {
     @apply bg-surface border border-border rounded-md shadow-soft p-4 sm:p-6;
   }
+  /* Target tàctil mínim 44×44 px és propietat dels controls interactius (§17.4). */
   .btn {
-    @apply rounded-md px-4 py-2 font-medium transition-colors;
+    @apply inline-flex items-center justify-center min-h-[44px] min-w-[44px] rounded-md px-4 py-2 font-medium transition-colors;
   }
   .btn-primary {
     @apply btn bg-accent text-accent-content hover:opacity-90;

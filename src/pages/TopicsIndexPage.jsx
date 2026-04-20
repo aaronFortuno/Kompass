@@ -27,7 +27,7 @@ export function TopicsIndexPage() {
                 <li key={topic.id}>
                   <Link
                     to={`/temes/${topic.id}`}
-                    className="card block hover:border-accent inline"
+                    className="card block hover:border-accent"
                   >
                     <span className="block text-xs uppercase tracking-wide text-content-muted">
                       {topic.id}

@@ -718,7 +718,7 @@ Aquesta secció cobreix quatre transversals de presentació que afecten tots els
   - **Mòbil** (< `md`): columna única; navegació principal en un menú col·lapsable (hamburguesa).
   - **Tauleta i desktop** (`md+`): header fix a dalt amb navegació inline; contingut centrat amb `max-w-3xl` per a vistes de tema i `max-w-6xl` per a llistats.
 
-- **Targets tàctils mínim** 44×44 px (WCAG 2.5.5 Level AAA recomanat).
+- **Targets tàctils mínim** 44×44 px (WCAG 2.5.5 Level AAA recomanat). Aplicat com a propietat de la classe utilitat `.btn` (i les seves variants `.btn-primary`, `.btn-ghost`), no com a regla global sobre `<a>`/`<button>`. Els enllaços de text en flow, els cards i els logos tenen layout propi i no necessiten el mínim tàctil — només els controls-botó l'apliquen.
 - **Verificació obligatòria** abans de commit d'UI significativa: 375 px (iPhone mini), 768 px (iPad), 1280 px (laptop).
 - **Sense deps afegides.** Tailwind ja ho cobreix tot.
 

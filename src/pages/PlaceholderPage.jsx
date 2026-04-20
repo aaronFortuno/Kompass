@@ -10,7 +10,7 @@ export function PlaceholderPage({ titleKey }) {
         {titleKey ? t(titleKey) : t('placeholder.title')}
       </h1>
       <p className="text-content-muted">{t('placeholder.body')}</p>
-      <Link to="/" className="btn-ghost inline">
+      <Link to="/" className="btn-ghost">
         {t('placeholder.backHome')}
       </Link>
     </div>
