@@ -75,6 +75,11 @@
     transition-duration: var(--duration-base);
     transition-timing-function: var(--ease-standard);
   }
+  /* Neutralitzem el fons groc nadiu de <mark>; l'estil el posa el component. */
+  mark {
+    background-color: transparent;
+    color: inherit;
+  }
   /* Targets tàctils mínim 44px · §17.4 */
   button, a, [role="button"] {
     @apply min-h-[44px] min-w-[44px] inline-flex items-center justify-center;
