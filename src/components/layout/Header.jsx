@@ -3,8 +3,10 @@ import { Link, NavLink } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { useT } from '@/i18n';
 import { ThemeToggle } from '@/components/ui/ThemeToggle.jsx';
-import { LocaleSwitcher } from '@/components/ui/LocaleSwitcher.jsx';
 import { Logo } from '@/components/ui/Logo.jsx';
+// LocaleSwitcher retirat temporalment mentre només tenim contingut en
+// català. El component i el hook d'i18n segueixen al projecte; es pot
+// retornar el selector quan s'afegeixi contingut en un altre locale.
 
 const NAV_ITEMS = [
   { to: '/', key: 'nav.home', end: true },
@@ -42,7 +44,6 @@ export function Header() {
         </nav>
 
         <div className="hidden md:flex items-center gap-1">
-          <LocaleSwitcher />
           <ThemeToggle />
         </div>
 
@@ -92,7 +93,6 @@ export function Header() {
               </NavLink>
             ))}
             <div className="flex items-center gap-1 pt-3 mt-2 border-t border-border">
-              <LocaleSwitcher />
               <ThemeToggle />
             </div>
           </nav>
