@@ -124,6 +124,34 @@
   .btn-ghost {
     @apply motion-hover;
   }
+
+  /* Animació d'entrada d'step al reproductor · §18 */
+  @keyframes step-enter {
+    from {
+      opacity: 0;
+      transform: translateX(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes step-enter-back {
+    from {
+      opacity: 0;
+      transform: translateX(-12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .animate-step-enter {
+    animation: step-enter var(--duration-base) var(--ease-standard);
+  }
+  .animate-step-enter-back {
+    animation: step-enter-back var(--duration-base) var(--ease-standard);
+  }
 }
 
 /* Respecta prefers-reduced-motion · §17.6 regla 3 */

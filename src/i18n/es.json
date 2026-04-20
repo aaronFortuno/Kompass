@@ -33,6 +33,18 @@
     "notFoundTitle": "Tema no encontrado",
     "notFoundBody": "No existe ningún tema con el identificador {id}."
   },
+  "step": {
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "progress": "Paso {current} de {total}",
+    "goToStep": "Ir al paso {number}"
+  },
+  "exercise": {
+    "placeholderTitle": "Ejercicio pendiente de implementación",
+    "placeholderBody": "Aquí se renderizará el ejercicio {id} cuando tengamos el motor de ejercicios.",
+    "variantQuickCheck": "Comprobación rápida",
+    "variantAssessment": "Evaluación"
+  },
   "theme": {
     "label": "Tema",
     "light": "Claro",

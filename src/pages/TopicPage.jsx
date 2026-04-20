@@ -2,7 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { useTopic } from '@/hooks/useTopic.js';
 import { useT } from '@/i18n';
-import { ContentBlock } from '@/components/topic/ContentBlock.jsx';
+import { StepViewer } from '@/components/topic/StepViewer.jsx';
 
 function BackLink() {
   const { t } = useT();
@@ -49,15 +49,7 @@ export function TopicPage() {
         <p className="text-content-muted">{topic.description}</p>
       </header>
 
-      <div className="space-y-8">
-        {/* TODO iteració 3: StepViewer. De moment aplano steps. */}
-        {topic.steps
-          .flatMap((step) => step.blocks)
-          .filter((block) => block.type !== 'exercise')
-          .map((block, i) => (
-            <ContentBlock key={i} block={block} />
-          ))}
-      </div>
+      <StepViewer topic={topic} />
     </article>
   );
 }

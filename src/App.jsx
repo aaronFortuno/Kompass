@@ -17,6 +17,7 @@ export default function App() {
               <Route index element={<HomePage />} />
               <Route path="temes" element={<TopicsIndexPage />} />
               <Route path="temes/:topicId" element={<TopicPage />} />
+              <Route path="temes/:topicId/:stepId" element={<TopicPage />} />
               <Route path="rutes" element={<PlaceholderPage titleKey="nav.paths" />} />
               <Route path="progres" element={<PlaceholderPage titleKey="nav.progress" />} />
               <Route path="*" element={<PlaceholderPage />} />

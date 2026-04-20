@@ -33,6 +33,18 @@
     "notFoundTitle": "Tema no trobat",
     "notFoundBody": "No existeix cap tema amb l'identificador {id}."
   },
+  "step": {
+    "previous": "Anterior",
+    "next": "Següent",
+    "progress": "Pas {current} de {total}",
+    "goToStep": "Ves al pas {number}"
+  },
+  "exercise": {
+    "placeholderTitle": "Exercici pendent d'implementació",
+    "placeholderBody": "Aquí es renderitzarà l'exercici {id} quan tinguem el motor d'exercicis.",
+    "variantQuickCheck": "Comprovació ràpida",
+    "variantAssessment": "Avaluació"
+  },
   "theme": {
     "label": "Tema",
     "light": "Clar",
