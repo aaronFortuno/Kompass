@@ -31,13 +31,22 @@
   "topic": {
     "backToIndex": "Torna als temes",
     "notFoundTitle": "Tema no trobat",
-    "notFoundBody": "No existeix cap tema amb l'identificador {id}."
+    "notFoundBody": "No existeix cap tema amb l'identificador {id}.",
+    "pendingTitle": "Et queden {count} exercicis pendents",
+    "pendingIntro": "Per completar el tema, encara has de resoldre els següents exercicis:",
+    "pendingReason": {
+      "notAttempted": "no intentat",
+      "withErrors": "amb errors"
+    }
   },
   "step": {
     "previous": "Anterior",
     "next": "Següent",
     "progress": "Pas {current} de {total}",
-    "goToStep": "Ves al pas {number}"
+    "goToStep": "Ves al pas {number}",
+    "labelShort": "Pas {number}",
+    "finish": "Finalitzar",
+    "reviewPending": "Revisar pendents ({count})"
   },
   "exercise": {
     "variantQuickCheck": "Comprovació ràpida",

@@ -31,13 +31,22 @@
   "topic": {
     "backToIndex": "Volver a los temas",
     "notFoundTitle": "Tema no encontrado",
-    "notFoundBody": "No existe ningún tema con el identificador {id}."
+    "notFoundBody": "No existe ningún tema con el identificador {id}.",
+    "pendingTitle": "Te quedan {count} ejercicios pendientes",
+    "pendingIntro": "Para completar el tema, aún tienes que resolver los siguientes ejercicios:",
+    "pendingReason": {
+      "notAttempted": "no intentado",
+      "withErrors": "con errores"
+    }
   },
   "step": {
     "previous": "Anterior",
     "next": "Siguiente",
     "progress": "Paso {current} de {total}",
-    "goToStep": "Ir al paso {number}"
+    "goToStep": "Ir al paso {number}",
+    "labelShort": "Paso {number}",
+    "finish": "Finalizar",
+    "reviewPending": "Revisar pendientes ({count})"
   },
   "exercise": {
     "variantQuickCheck": "Comprobación rápida",

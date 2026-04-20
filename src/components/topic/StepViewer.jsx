@@ -1,17 +1,26 @@
 import { useEffect, useMemo, useRef } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import {
+  ChevronLeft,
+  ChevronRight,
+  Award,
+  AlertTriangle,
+} from 'lucide-react';
 import { useT } from '@/i18n';
 import { ContentBlock } from '@/components/topic/ContentBlock.jsx';
 import { StepProgress } from '@/components/topic/StepProgress.jsx';
+import { PendingExercisesNotice } from '@/components/topic/PendingExercisesNotice.jsx';
 import { useProgressStore } from '@/store/useProgressStore.js';
 
 /*
  * Reproductor d'steps · ARCHITECTURE §18
  * - Navegació lliure.
  * - Deep-link via /temes/:topicId/:stepId.
- * - Teclat: ← → / PgUp PgDown / Home End (ignora inputs).
- * - Sense persistir l'step actual a UserProgress.
+ * - Teclat: ← → / PgUp PgDn / Home End (ignora inputs).
+ * - Al darrer step: "Finalitzar" (success) si tots els exercicis
+ *   completed amb lastAttemptCorrect=true; en cas contrari "Revisar
+ *   pendents" (warning) que porta al primer pendent, amb un avís
+ *   llistant els pendents just a sobre del nav.
  */
 
 function resolveStepIndex(topic, stepId) {
@@ -31,6 +40,33 @@ function pathForStep(topicId, step) {
   return step.id ? `/temes/${topicId}/${step.id}` : `/temes/${topicId}`;
 }
 
+function computePending(topic, exercisesState) {
+  const pending = [];
+  topic.steps.forEach((step, stepIndex) => {
+    const exerciseBlock = step.blocks.find((b) => b.type === 'exercise');
+    if (!exerciseBlock) return;
+    const entry = exercisesState?.[exerciseBlock.exerciseId];
+    if (!entry) {
+      pending.push({
+        stepIndex,
+        step,
+        exerciseId: exerciseBlock.exerciseId,
+        reason: 'notAttempted',
+      });
+      return;
+    }
+    if (entry.lastAttemptCorrect === false) {
+      pending.push({
+        stepIndex,
+        step,
+        exerciseId: exerciseBlock.exerciseId,
+        reason: 'withErrors',
+      });
+    }
+  });
+  return pending;
+}
+
 export function StepViewer({ topic }) {
   const { t } = useT();
   const navigate = useNavigate();
@@ -39,16 +75,21 @@ export function StepViewer({ topic }) {
   const stepIndex = resolveStepIndex(topic, stepId);
   const step = topic.steps[stepIndex];
   const total = topic.steps.length;
-  const markStepVisited = useProgressStore((s) => s.markStepVisited);
+  const isLast = stepIndex === total - 1;
 
-  // Detecta direcció per triar animació endavant/enrere.
+  const markStepVisited = useProgressStore((s) => s.markStepVisited);
+  const exercisesState = useProgressStore((s) => s.exercises);
+  const pending = useMemo(
+    () => computePending(topic, exercisesState),
+    [topic, exercisesState]
+  );
+
   const prevIndexRef = useRef(stepIndex);
   const direction = stepIndex >= prevIndexRef.current ? 'forward' : 'backward';
   useEffect(() => {
     prevIndexRef.current = stepIndex;
   }, [stepIndex]);
 
-  // Registra la visita en el moment d'entrar al step.
   useEffect(() => {
     if (step?.id) {
       markStepVisited(topic.id, step.id);
@@ -94,6 +135,49 @@ export function StepViewer({ topic }) {
   const animationClass =
     direction === 'forward' ? 'animate-step-enter' : 'animate-step-enter-back';
 
+  const primaryButton = (() => {
+    if (!isLast) {
+      return (
+        <button
+          type="button"
+          className="btn-primary"
+          onClick={() => goTo(stepIndex + 1)}
+          disabled={!canNext}
+          aria-label={t('step.next')}
+        >
+          <span className="hidden sm:inline mr-1">{t('step.next')}</span>
+          <ChevronRight size={18} aria-hidden="true" />
+        </button>
+      );
+    }
+    if (pending.length === 0) {
+      return (
+        <button
+          type="button"
+          className="btn inline-flex items-center justify-center min-h-[44px] min-w-[44px] rounded-md px-4 py-2 font-medium bg-success text-accent-content motion-hover hover:opacity-90"
+          onClick={() => navigate('/temes')}
+          aria-label={t('step.finish')}
+        >
+          <Award size={18} aria-hidden="true" />
+          <span className="ml-1">{t('step.finish')}</span>
+        </button>
+      );
+    }
+    return (
+      <button
+        type="button"
+        className="btn inline-flex items-center justify-center min-h-[44px] min-w-[44px] rounded-md px-4 py-2 font-medium bg-warning text-accent-content motion-hover hover:opacity-90"
+        onClick={() => goTo(pending[0].stepIndex)}
+        aria-label={t('step.reviewPending', { count: pending.length })}
+      >
+        <AlertTriangle size={18} aria-hidden="true" />
+        <span className="ml-1">
+          {t('step.reviewPending', { count: pending.length })}
+        </span>
+      </button>
+    );
+  })();
+
   return (
     <div className="section-gap">
       <StepProgress
@@ -112,6 +196,10 @@ export function StepViewer({ topic }) {
         ))}
       </section>
 
+      {isLast && pending.length > 0 && (
+        <PendingExercisesNotice pending={pending} onGoTo={goTo} />
+      )}
+
       <nav
         className="flex items-center justify-between gap-3 pt-6 border-t border-border"
         aria-label="step navigation"
@@ -129,16 +217,7 @@ export function StepViewer({ topic }) {
         <span className="text-sm text-content-muted">
           {t('step.progress', { current: stepIndex + 1, total })}
         </span>
-        <button
-          type="button"
-          className="btn-primary"
-          onClick={() => goTo(stepIndex + 1)}
-          disabled={!canNext}
-          aria-label={t('step.next')}
-        >
-          <span className="hidden sm:inline mr-1">{t('step.next')}</span>
-          <ChevronRight size={18} aria-hidden="true" />
-        </button>
+        {primaryButton}
       </nav>
     </div>
   );
