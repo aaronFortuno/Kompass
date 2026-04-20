@@ -5,17 +5,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        bg: 'var(--color-bg)',
-        surface: 'var(--color-surface)',
-        'surface-raised': 'var(--color-surface-raised)',
-        content: 'var(--color-content)',
-        'content-muted': 'var(--color-content-muted)',
-        border: 'var(--color-border)',
-        accent: 'var(--color-accent)',
-        'accent-content': 'var(--color-accent-content)',
-        success: 'var(--color-success)',
-        danger: 'var(--color-danger)',
-        warning: 'var(--color-warning)',
+        bg: 'rgb(var(--color-bg) / <alpha-value>)',
+        surface: 'rgb(var(--color-surface) / <alpha-value>)',
+        'surface-raised': 'rgb(var(--color-surface-raised) / <alpha-value>)',
+        content: 'rgb(var(--color-content) / <alpha-value>)',
+        'content-muted': 'rgb(var(--color-content-muted) / <alpha-value>)',
+        border: 'rgb(var(--color-border) / <alpha-value>)',
+        accent: 'rgb(var(--color-accent) / <alpha-value>)',
+        'accent-content': 'rgb(var(--color-accent-content) / <alpha-value>)',
+        success: 'rgb(var(--color-success) / <alpha-value>)',
+        danger: 'rgb(var(--color-danger) / <alpha-value>)',
+        warning: 'rgb(var(--color-warning) / <alpha-value>)',
       },
       fontFamily: {
         sans: [
