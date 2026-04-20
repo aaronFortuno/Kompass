@@ -46,7 +46,11 @@
     "retry": "Torna a provar",
     "correct": "Correcte!",
     "incorrect": "Encara no",
-    "notFound": "Exercici {id} no trobat."
+    "notFound": "Exercici {id} no trobat.",
+    "blankLabel": "Buit {id}",
+    "youWrote": "has posat",
+    "leftBlank": "no hi has posat res",
+    "expectedWas": "la resposta esperada era"
   },
   "theme": {
     "label": "Tema",

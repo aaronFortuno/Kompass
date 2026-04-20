@@ -14,16 +14,27 @@ describe('validateResponse · slotMap + dropdownFill', () => {
     },
   });
 
-  it('accepta resposta correcta', () => {
-    expect(validateResponse(exercise, { 1: 'Mein', 2: 'Meine' }).correct).toBe(true);
+  it('correctOverall=true si tots els slots coincideixen', () => {
+    const r = validateResponse(exercise, { 1: 'Mein', 2: 'Meine' });
+    expect(r.correctOverall).toBe(true);
+    expect(r.perBlank['1'].correct).toBe(true);
+    expect(r.perBlank['2'].correct).toBe(true);
   });
 
-  it('rebutja si un slot falla', () => {
-    expect(validateResponse(exercise, { 1: 'Meine', 2: 'Meine' }).correct).toBe(false);
+  it('marca només el slot que falla', () => {
+    const r = validateResponse(exercise, { 1: 'Meine', 2: 'Meine' });
+    expect(r.correctOverall).toBe(false);
+    expect(r.perBlank['1'].correct).toBe(false);
+    expect(r.perBlank['1'].actual).toBe('Meine');
+    expect(r.perBlank['1'].expected).toBe('Mein');
+    expect(r.perBlank['2'].correct).toBe(true);
   });
 
-  it('rebutja si un slot és buit', () => {
-    expect(validateResponse(exercise, { 1: 'Mein' }).correct).toBe(false);
+  it('tracta slot buit com incorrecte', () => {
+    const r = validateResponse(exercise, { 1: 'Mein' });
+    expect(r.correctOverall).toBe(false);
+    expect(r.perBlank['2'].correct).toBe(false);
+    expect(r.perBlank['2'].actual).toBe('');
   });
 });
 
@@ -36,17 +47,22 @@ describe('validateResponse · slotMap + typeIn caseSensitive', () => {
     },
   });
 
-  it('accepta exactament igual', () => {
-    expect(validateResponse(exercise, { 1: 'ich', 2: 'Sie' }).correct).toBe(true);
+  it('accepta exacte', () => {
+    const r = validateResponse(exercise, { 1: 'ich', 2: 'Sie' });
+    expect(r.correctOverall).toBe(true);
   });
 
-  it('accepta amb espais en blanc extra (trim)', () => {
-    expect(validateResponse(exercise, { 1: '  ich ', 2: 'Sie' }).correct).toBe(true);
+  it('trim aplicat', () => {
+    const r = validateResponse(exercise, { 1: '  ich ', 2: 'Sie' });
+    expect(r.correctOverall).toBe(true);
+    expect(r.perBlank['1'].actual).toBe('  ich ');
+    expect(r.perBlank['1'].expected).toBe('ich');
   });
 
-  it('rebutja diferència de cas quan caseSensitive', () => {
-    expect(validateResponse(exercise, { 1: 'Ich', 2: 'Sie' }).correct).toBe(false);
-    expect(validateResponse(exercise, { 1: 'ich', 2: 'sie' }).correct).toBe(false);
+  it('diferencia majúscules quan caseSensitive', () => {
+    const r = validateResponse(exercise, { 1: 'Ich', 2: 'Sie' });
+    expect(r.correctOverall).toBe(false);
+    expect(r.perBlank['1'].correct).toBe(false);
   });
 });
 
@@ -59,10 +75,9 @@ describe('validateResponse · slotMap + typeIn case-insensitive', () => {
     },
   });
 
-  it('accepta qualsevol variant de cas', () => {
-    expect(validateResponse(exercise, { 1: 'WOHNE' }).correct).toBe(true);
-    expect(validateResponse(exercise, { 1: 'Wohne' }).correct).toBe(true);
-    expect(validateResponse(exercise, { 1: 'wohne' }).correct).toBe(true);
+  it('accepta variants de cas', () => {
+    expect(validateResponse(exercise, { 1: 'WOHNE' }).correctOverall).toBe(true);
+    expect(validateResponse(exercise, { 1: 'Wohne' }).correctOverall).toBe(true);
   });
 });
 
@@ -75,12 +90,28 @@ describe('validateResponse · slotMapMultiple', () => {
     },
   });
 
-  it('accepta qualsevol forma de la llista', () => {
-    expect(validateResponse(exercise, { 1: 'am' }).correct).toBe(true);
-    expect(validateResponse(exercise, { 1: 'an dem' }).correct).toBe(true);
+  it('accepta qualsevol forma', () => {
+    const r = validateResponse(exercise, { 1: 'am' });
+    expect(r.correctOverall).toBe(true);
   });
 
-  it('rebutja formes fora de la llista', () => {
-    expect(validateResponse(exercise, { 1: 'auf dem' }).correct).toBe(false);
+  it('expected concatena formes', () => {
+    const r = validateResponse(exercise, { 1: 'auf dem' });
+    expect(r.correctOverall).toBe(false);
+    expect(r.perBlank['1'].expected).toBe('am / an dem');
+    expect(r.perBlank['1'].actual).toBe('auf dem');
+  });
+});
+
+describe('validateResponse · exactMatch', () => {
+  const exercise = makeExercise({
+    interaction: { type: 'typeIn', slots: [], caseSensitive: false, trimWhitespace: true },
+    validation: { type: 'exactMatch', answer: 'b' },
+  });
+
+  it('no té perBlank', () => {
+    const r = validateResponse(exercise, 'b');
+    expect(r.correctOverall).toBe(true);
+    expect(r.perBlank).toEqual({});
   });
 });

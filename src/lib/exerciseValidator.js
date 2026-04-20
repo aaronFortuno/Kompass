@@ -1,8 +1,22 @@
 /*
  * Validador d'exercicis (DATA-MODEL §7).
- * Rep exercise + response i retorna { correct: boolean }.
- * Aplica les regles de typeIn (caseSensitive, trimWhitespace) abans
- * de comparar amb les respostes esperades.
+ * Retorna:
+ *   {
+ *     correctOverall: boolean,
+ *     perBlank: {
+ *       [blankId]: { correct, actual, expected }
+ *     }
+ *   }
+ *
+ * `expected` és sempre la forma original del JSON (amb majúscules reals);
+ * `actual` és la resposta tal com l'usuari l'ha donada (abans de
+ * normalitzar). La comparació interna sí normalitza segons els flags
+ * de typeIn (caseSensitive, trimWhitespace).
+ *
+ * Per a `slotMapMultiple`, `expected` és les formes acceptades unides
+ * per " / " per mostrar-les totes al feedback.
+ * Per a `exactMatch` (una sola resposta sense slots) no hi ha
+ * `perBlank`; tornem-lo buit.
  */
 
 function normalizeForInteraction(value, interaction) {
@@ -20,30 +34,48 @@ export function validateResponse(exercise, response) {
   const { interaction, validation } = exercise;
 
   if (validation.type === 'slotMap') {
+    const perBlank = {};
     for (const [blankId, expected] of Object.entries(validation.answers)) {
-      const actual = normalizeForInteraction(response[blankId], interaction);
-      const target = normalizeForInteraction(expected, interaction);
-      if (actual !== target) return { correct: false };
+      const actual = response?.[blankId] ?? '';
+      const normActual = normalizeForInteraction(actual, interaction);
+      const normTarget = normalizeForInteraction(expected, interaction);
+      perBlank[blankId] = {
+        correct: normActual === normTarget,
+        actual,
+        expected,
+      };
     }
-    return { correct: true };
+    const correctOverall = Object.values(perBlank).every((b) => b.correct);
+    return { correctOverall, perBlank };
   }
 
   if (validation.type === 'slotMapMultiple') {
+    const perBlank = {};
     for (const [blankId, accepted] of Object.entries(validation.answers)) {
-      const actual = normalizeForInteraction(response[blankId], interaction);
-      const normalizedAccepted = accepted.map((a) =>
+      const actual = response?.[blankId] ?? '';
+      const normActual = normalizeForInteraction(actual, interaction);
+      const normAccepted = accepted.map((a) =>
         normalizeForInteraction(a, interaction)
       );
-      if (!normalizedAccepted.includes(actual)) return { correct: false };
+      perBlank[blankId] = {
+        correct: normAccepted.includes(normActual),
+        actual,
+        expected: accepted.join(' / '),
+      };
     }
-    return { correct: true };
+    const correctOverall = Object.values(perBlank).every((b) => b.correct);
+    return { correctOverall, perBlank };
   }
 
   if (validation.type === 'exactMatch') {
-    const actual = normalizeForInteraction(response, interaction);
-    const target = normalizeForInteraction(validation.answer, interaction);
-    return { correct: actual === target };
+    const actual = response ?? '';
+    const normActual = normalizeForInteraction(actual, interaction);
+    const normTarget = normalizeForInteraction(validation.answer, interaction);
+    return {
+      correctOverall: normActual === normTarget,
+      perBlank: {},
+    };
   }
 
-  return { correct: false };
+  return { correctOverall: false, perBlank: {} };
 }

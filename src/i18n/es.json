@@ -46,7 +46,11 @@
     "retry": "Vuelve a intentarlo",
     "correct": "¡Correcto!",
     "incorrect": "Aún no",
-    "notFound": "Ejercicio {id} no encontrado."
+    "notFound": "Ejercicio {id} no encontrado.",
+    "blankLabel": "Hueco {id}",
+    "youWrote": "has puesto",
+    "leftBlank": "no has puesto nada",
+    "expectedWas": "la respuesta esperada era"
   },
   "theme": {
     "label": "Tema",
