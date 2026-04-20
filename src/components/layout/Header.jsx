@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
 import { useT } from '@/i18n';
 import { ThemeToggle } from '@/components/ui/ThemeToggle.jsx';
 import { LocaleSwitcher } from '@/components/ui/LocaleSwitcher.jsx';
@@ -17,11 +18,12 @@ export function Header() {
 
   const linkClass = ({ isActive }) =>
     [
-      'inline px-3 py-2 rounded-sm text-sm transition-colors',
-      isActive
-        ? 'text-accent font-medium'
-        : 'text-content-muted hover:text-content',
+      'inline px-3 py-2 rounded-sm text-sm',
+      'motion-hover',
+      isActive ? 'text-accent font-medium' : 'text-content-muted hover:text-content',
     ].join(' ');
+
+  const ToggleIcon = menuOpen ? X : Menu;
 
   return (
     <header className="sticky top-0 z-20 bg-surface/90 backdrop-blur border-b border-border">
@@ -45,7 +47,7 @@ export function Header() {
 
         <button
           type="button"
-          className="md:hidden btn-ghost"
+          className="md:hidden btn-ghost p-2 rounded-sm"
           aria-expanded={menuOpen}
           aria-controls="mobile-menu"
           onClick={() => setMenuOpen((v) => !v)}
@@ -53,29 +55,26 @@ export function Header() {
           <span className="sr-only">
             {menuOpen ? t('common.closeMenu') : t('common.openMenu')}
           </span>
-          <svg
-            width="22"
-            height="22"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            aria-hidden="true"
-          >
-            {menuOpen ? (
-              <path d="M6 6l12 12M18 6L6 18" />
-            ) : (
-              <path d="M4 7h16M4 12h16M4 17h16" />
-            )}
-          </svg>
+          <ToggleIcon size={22} aria-hidden="true" />
         </button>
       </div>
 
-      {menuOpen && (
-        <div
-          id="mobile-menu"
-          className="md:hidden border-t border-border bg-surface"
-        >
+      {/*
+        Menú mòbil animat · §17.6
+        Truc: grid amb grid-template-rows 0fr → 1fr per animar l'alçada
+        sense conèixer-la. El fill té overflow:hidden i min-h:0.
+      */}
+      <div
+        id="mobile-menu"
+        aria-hidden={!menuOpen}
+        className={[
+          'md:hidden grid motion-panel',
+          menuOpen
+            ? 'grid-rows-[1fr] opacity-100'
+            : 'grid-rows-[0fr] opacity-0 pointer-events-none',
+        ].join(' ')}
+      >
+        <div className="overflow-hidden min-h-0 border-t border-border bg-surface">
           <nav
             className="page-gutter max-w-content-list mx-auto py-3 flex flex-col gap-1"
             aria-label="primary-mobile"
@@ -97,7 +96,7 @@ export function Header() {
             </div>
           </nav>
         </div>
-      )}
+      </div>
     </header>
   );
 }
