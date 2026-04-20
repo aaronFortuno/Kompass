@@ -51,7 +51,9 @@
     "youWrote": "Has puesto",
     "leftBlank": "No has puesto nada",
     "expectedWas": "correcto:",
-    "tipPrefix": "Consejo:"
+    "tipPrefix": "Consejo:",
+    "alreadyCompleted": "Ya has resuelto este ejercicio correctamente. Estas son las respuestas.",
+    "tryAgain": "Volver a intentar"
   },
   "theme": {
     "label": "Tema",

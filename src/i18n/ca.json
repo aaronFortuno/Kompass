@@ -51,7 +51,9 @@
     "youWrote": "Has posat",
     "leftBlank": "No hi has posat res",
     "expectedWas": "correcte:",
-    "tipPrefix": "Consell:"
+    "tipPrefix": "Consell:",
+    "alreadyCompleted": "Ja has resolt aquest exercici correctament. Aquestes són les respostes.",
+    "tryAgain": "Tornar a intentar"
   },
   "theme": {
     "label": "Tema",

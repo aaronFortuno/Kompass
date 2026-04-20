@@ -1,27 +1,102 @@
-import { useMemo, useState } from 'react';
-import { CheckCircle2, XCircle, RotateCcw } from 'lucide-react';
+import { useMemo, useState, useEffect } from 'react';
+import { CheckCircle2, XCircle, RotateCcw, BookOpenCheck } from 'lucide-react';
 import { useT } from '@/i18n';
 import { InlineRichText } from '@/components/ui/InlineRichText.jsx';
 import { validateResponse } from '@/lib/exerciseValidator.js';
 import { selectFeedback } from '@/lib/feedback.js';
-import { useProgressStore } from '@/store/useProgressStore.js';
+import {
+  useProgressStore,
+  useExerciseProgress,
+} from '@/store/useProgressStore.js';
 import { DropdownFillRenderer } from './DropdownFillRenderer.jsx';
 import { TypeInRenderer } from './TypeInRenderer.jsx';
 
 /*
- * Orquestra un exercici (DATA-MODEL §3.3).
- * Valida en "Comprovar" (form submit → Enter funciona). Quan es
- * comprova, els renderers reben perBlank per tenyir cada input.
- * El feedback final mostra missatge general + llista dels buits
- * errats amb la resposta esperada.
+ * ExerciseEngine · DATA-MODEL §3.3 + progress store
+ *
+ * Tres estats d'ús:
+ *   (a) Sense estat previ: l'usuari respon i comprova.
+ *   (b) Completat prèviament (firstCorrectAt existeix): entrem
+ *       directament en mode "resolt" amb les respostes correctes
+ *       pre-omplertes i deshabilitades; botó "Tornar a intentar"
+ *       per reiniciar.
+ *   (c) En curs: pot haver-hi intents anteriors fallats; es permet
+ *       respondre i comprovar normalment.
+ *
+ * L'estat "fallat lastAttempt" (opció B) es reflecteix a la barra
+ * de progrés; aquí no bloqueja la interacció.
  */
+
+function buildCorrectResponse(exercise) {
+  const v = exercise.validation;
+  if (v.type === 'slotMap') return { ...v.answers };
+  if (v.type === 'slotMapMultiple') {
+    return Object.fromEntries(
+      Object.entries(v.answers).map(([k, arr]) => [k, arr[0]])
+    );
+  }
+  return {};
+}
+
+function buildAllCorrectPerBlank(exercise) {
+  const v = exercise.validation;
+  if (v.type === 'slotMap') {
+    return Object.fromEntries(
+      Object.entries(v.answers).map(([k, expected]) => [
+        k,
+        { correct: true, actual: expected, expected },
+      ])
+    );
+  }
+  if (v.type === 'slotMapMultiple') {
+    return Object.fromEntries(
+      Object.entries(v.answers).map(([k, arr]) => [
+        k,
+        { correct: true, actual: arr[0], expected: arr.join(' / ') },
+      ])
+    );
+  }
+  return {};
+}
+
 export function ExerciseEngine({ exercise }) {
   const { t } = useT();
-  const [response, setResponse] = useState({});
-  const [result, setResult] = useState(null);
   const recordExerciseAttempt = useProgressStore(
     (s) => s.recordExerciseAttempt
   );
+  const progress = useExerciseProgress(exercise.id);
+  const alreadySolved = !!progress?.firstCorrectAt;
+
+  const [response, setResponse] = useState(() =>
+    alreadySolved ? buildCorrectResponse(exercise) : {}
+  );
+  const [result, setResult] = useState(() =>
+    alreadySolved
+      ? {
+          correctOverall: true,
+          perBlank: buildAllCorrectPerBlank(exercise),
+          feedback: exercise.feedback.correct,
+          prefilled: true,
+        }
+      : null
+  );
+
+  // Si l'exercici canvia (p. ex. navegació entre steps), rearmar l'estat.
+  useEffect(() => {
+    if (alreadySolved) {
+      setResponse(buildCorrectResponse(exercise));
+      setResult({
+        correctOverall: true,
+        perBlank: buildAllCorrectPerBlank(exercise),
+        feedback: exercise.feedback.correct,
+        prefilled: true,
+      });
+    } else {
+      setResponse({});
+      setResult(null);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [exercise.id]);
 
   const updateSlot = (blankId, value) =>
     setResponse((r) => ({ ...r, [blankId]: value }));
@@ -42,13 +117,14 @@ export function ExerciseEngine({ exercise }) {
     );
   };
 
-  const handleReset = () => {
+  const handleRetry = () => {
     setResponse({});
     setResult(null);
   };
 
   const locked = result !== null;
   const perBlank = result?.perBlank;
+  const showPrefilledBanner = result?.prefilled === true;
 
   const interactionNode = useMemo(() => {
     if (exercise.interaction.type === 'dropdownFill') {
@@ -87,6 +163,13 @@ export function ExerciseEngine({ exercise }) {
         <p className="text-content font-medium">{exercise.prompt}</p>
       )}
 
+      {showPrefilledBanner && (
+        <div className="flex items-center gap-2 text-sm text-success bg-success/5 border border-success/20 rounded-sm px-3 py-2">
+          <BookOpenCheck size={16} aria-hidden="true" />
+          <span>{t('exercise.alreadyCompleted')}</span>
+        </div>
+      )}
+
       <div className="p-4 rounded-md bg-surface-raised border border-border">
         {interactionNode}
       </div>
@@ -98,14 +181,18 @@ export function ExerciseEngine({ exercise }) {
           </button>
         )}
         {locked && (
-          <button type="button" className="btn-ghost" onClick={handleReset}>
+          <button type="button" className="btn-ghost" onClick={handleRetry}>
             <RotateCcw size={16} aria-hidden="true" />
-            <span className="ml-1">{t('exercise.retry')}</span>
+            <span className="ml-1">
+              {showPrefilledBanner
+                ? t('exercise.tryAgain')
+                : t('exercise.retry')}
+            </span>
           </button>
         )}
       </div>
 
-      {result && (
+      {result && !showPrefilledBanner && (
         <ExerciseFeedback
           correct={result.correctOverall}
           message={result.feedback.message}
