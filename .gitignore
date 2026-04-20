@@ -39,3 +39,6 @@ pnpm-debug.log*
 # Coverage / test output
 coverage/
 *.lcov
+
+# Fonts de contingut (PDFs de treball, no s'han de publicar)
+.gramatik/
