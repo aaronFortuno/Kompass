@@ -48,9 +48,10 @@
     "incorrect": "Aún no",
     "notFound": "Ejercicio {id} no encontrado.",
     "blankLabel": "Hueco {id}",
-    "youWrote": "has puesto",
-    "leftBlank": "no has puesto nada",
-    "expectedWas": "la respuesta esperada era"
+    "youWrote": "Has puesto",
+    "leftBlank": "No has puesto nada",
+    "expectedWas": "correcto:",
+    "tipPrefix": "Consejo:"
   },
   "theme": {
     "label": "Tema",

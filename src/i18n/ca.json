@@ -48,9 +48,10 @@
     "incorrect": "Encara no",
     "notFound": "Exercici {id} no trobat.",
     "blankLabel": "Buit {id}",
-    "youWrote": "has posat",
-    "leftBlank": "no hi has posat res",
-    "expectedWas": "la resposta esperada era"
+    "youWrote": "Has posat",
+    "leftBlank": "No hi has posat res",
+    "expectedWas": "correcte:",
+    "tipPrefix": "Consell:"
   },
   "theme": {
     "label": "Tema",

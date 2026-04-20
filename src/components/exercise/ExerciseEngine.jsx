@@ -138,42 +138,59 @@ function ExerciseFeedback({ correct, message, perBlank, blanks }) {
         className={`${iconClass} shrink-0 mt-0.5`}
         aria-hidden="true"
       />
-      <div className="space-y-2 min-w-0 flex-1">
-        <span className="block font-semibold text-content">{statusLabel}</span>
-        <p className="text-content-muted leading-relaxed">
-          <InlineRichText text={message} />
-        </p>
+      <div className="space-y-3 min-w-0 flex-1">
+        <span className="block text-lg font-semibold text-content">
+          {statusLabel}
+        </span>
+
         {errors.length > 0 && (
-          <ul className="mt-3 space-y-1.5 text-sm">
+          <ul className="space-y-2">
             {errors.map((e) => (
               <li
                 key={e.blankId}
-                className="text-content-muted"
+                className="p-2 rounded-sm bg-danger/5 border border-danger/20 text-content"
               >
-                <span className="font-semibold text-content">
+                <span className="block text-xs font-semibold uppercase tracking-wide text-danger mb-1">
                   {t('exercise.blankLabel', { id: e.blankId })}
                   {e.label ? ` · ${e.label}` : ''}
                 </span>
-                {': '}
-                {e.actual ? (
-                  <>
-                    {t('exercise.youWrote')}{' '}
-                    <code className="px-1 py-0.5 rounded-sm bg-danger/10 text-danger font-mono">
-                      {e.actual}
-                    </code>
-                    {'; '}
-                  </>
-                ) : (
-                  <>{t('exercise.leftBlank')}{'; '}</>
-                )}
-                {t('exercise.expectedWas')}{' '}
-                <code className="px-1 py-0.5 rounded-sm bg-success/10 text-success font-mono">
-                  {e.expected}
-                </code>
-                .
+                <span className="block">
+                  {e.actual ? (
+                    <>
+                      {t('exercise.youWrote')}{' '}
+                      <code className="px-1.5 py-0.5 rounded-sm bg-danger/10 text-danger font-mono">
+                        {e.actual}
+                      </code>
+                    </>
+                  ) : (
+                    <span className="italic text-content-muted">
+                      {t('exercise.leftBlank')}
+                    </span>
+                  )}
+                  {' · '}
+                  {t('exercise.expectedWas')}{' '}
+                  <code className="px-1.5 py-0.5 rounded-sm bg-success/10 text-success font-mono">
+                    {e.expected}
+                  </code>
+                </span>
               </li>
             ))}
           </ul>
+        )}
+
+        {message && (
+          <p
+            className={`text-sm text-content-muted leading-relaxed ${
+              errors.length > 0 ? 'pt-2 border-t border-border' : ''
+            }`}
+          >
+            {errors.length > 0 && (
+              <span className="font-semibold text-content-muted">
+                {t('exercise.tipPrefix')}{' '}
+              </span>
+            )}
+            <InlineRichText text={message} />
+          </p>
         )}
       </div>
     </div>
