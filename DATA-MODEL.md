@@ -112,7 +112,63 @@ Text explicatiu principal en Markdown. Pot incloure imatges, taules senzilles i 
 }
 ```
 
-Taula estructurada amb suport per a èmfasi cromàtic.
+Taula estructurada amb cel·les riques.
+
+**Forma de cada cel·la:**
+
+- `string` — text pla (pot contenir *inline rich text*, vegeu §3.6).
+- `object { text, rowspan?, colspan?, emphasis?, align? }` — cel·la amb atributs.
+  - `text` *(string)*: contingut. Admet inline rich text.
+  - `rowspan` *(integer ≥ 1)*: nombre de files que cobreix la cel·la. Les files següents ometen la cel·la coberta (semàntica HTML).
+  - `colspan` *(integer ≥ 1)*: nombre de columnes que cobreix.
+  - `emphasis` *(string)*: marca semàntica per al renderer. Valors previstos: `"header"`, `"accent"`, `"muted"`. Permet estilar una cel·la sense canviar el text.
+  - `align` *(string)*: `"left" | "center" | "right"`. Per defecte `"left"`.
+- `null` — *no* és vàlid. Les cel·les "tapades" per un rowspan/colspan previ simplement s'ometen de la fila corresponent (és a dir, una fila pot tenir menys elements que columnes té la taula).
+
+**Exemple amb cel·les fusionades (taula comparativa ES/CA/DE/EN):**
+
+```json
+{
+  "type": "table",
+  "title": "Vergleichen Sie",
+  "headers": ["Spanisch", "", "Katalanisch", "", "Deutsch", "", "Englisch"],
+  "rows": [
+    [
+      { "text": "su", "rowspan": 4 },
+      "nombre (de él)",
+      { "text": "el seu", "rowspan": 2 },
+      "nom (d'ell)",
+      "**s**ein",
+      "Name",
+      "his"
+    ],
+    [
+      "nombre (de ella)",
+      "nom (d'ella)",
+      "**i**hr",
+      "Name",
+      "her"
+    ],
+    [
+      "dirección (de él)",
+      { "text": "la seva", "rowspan": 2 },
+      "adreça (d'ell)",
+      "**s**eine",
+      "Adresse",
+      "his"
+    ],
+    [
+      "dirección (de ella)",
+      "adreça (d'ella)",
+      "**i**hre",
+      "Adresse",
+      "her"
+    ]
+  ]
+}
+```
+
+Les files 2-4 tenen menys cel·les que columnes: les posicions "tapades" per `rowspan` de files prèvies s'ometen. El renderer les reconstrueix a l'hora de generar l'HTML.
 
 ```json
 {
@@ -285,7 +341,26 @@ Estat de l'usuari. Viu a localStorage sota la clau `kompass.progress.v1`.
 
 **Criteri de tema completat:** tots els `exerciseIds` del tema apareixen a `exercisesCompleted`.
 
-### 3.6. `ExportFile`
+### 3.6. `InlineRichText`
+
+Qualsevol camp de text de contingut teòric (cel·les de taula, cos d'explicacions, text d'exemples, feedback d'exercicis) admet un subconjunt mínim d'inline rich text. El parser és intern al projecte, no depenem d'una llibreria Markdown per a això.
+
+**Sintaxi admesa:**
+
+- `**text**` → `<strong>` — èmfasi fort, general. Negreta.
+- `==text==` → destacat cromàtic amb color `accent`. Ús: marcar patrons, arrels, lletres clau. És la sintaxi per a l'èmfasi pedagògic que el PDF font sovint representa en color.
+
+**No admès a l'MVP:** cursiva, subratllat, codi inline, enllaços, imatges. Si calen, es consideren via blocs dedicats (`example`, `explanation` amb Markdown complet més endavant) o extensió explícita d'aquest schema.
+
+**Escapament:** per literalitzar `**` o `==`, precedir amb `\` (`\*\*`, `\=\=`). Un `\` literal s'escriu `\\`.
+
+**Regles d'aplicació:**
+
+1. Aquesta sintaxi **només** és vàlida dins de camps marcats com a "admet inline rich text". La resta de camps (ids, tipus, urls…) són text pla.
+2. El renderer aplica la transformació al client; el JSON guarda la notació en cru.
+3. Aplicable en: cel·les de `table`, `text` d'examples, `message` de `feedback`, `body` d'`explanation` (on ja conviu amb Markdown complet — la subsintaxi és compatible).
+
+### 3.7. `ExportFile`
 
 Format del fitxer d'exportació/importació que l'usuari pot descarregar.
 

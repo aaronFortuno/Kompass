@@ -53,9 +53,11 @@ Base path: `/kompass/`. URLs amb hash per evitar problemes amb rutes profundes.
 6. **Escriu comentaris en català**, però noms de variables, funcions i fitxers en anglès. Els strings visibles a la UI passen pel sistema i18n (`t()`), no són literals al JSX.
 7. **Tot estil consumeix tokens semàntics** (ARCHITECTURE §17.1). `bg-surface`, `text-content`, `rounded-md`, `shadow-soft`… Mai colors, mides ni radis hardcoded. Si cal un valor nou, primer s'afegeix als tokens.
 8. **Tota cadena visible a la UI passa per `t('namespace.key')`** i la clau s'afegeix a `src/i18n/ca.json` i `src/i18n/es.json` (ARCHITECTURE §17.3). Excepció: noms propis i contingut d'estudi en alemany dins dels JSON de `src/data/`.
-9. **El contingut didàctic (gramàtica, exemples, feedback pedagògic) el proporciona el desenvolupador.** La teva feina és estructurar-lo segons DATA-MODEL, no inventar-lo. Si detectes que en caldria més, pregunta; no ompliguis amb contingut propi.
-10. **Icones sempre de Lucide** (`lucide-react`). Cap altre joc d'icones ni SVGs solts (§17.5 ARCHITECTURE). Color per `currentColor`, `aria-hidden` si són decoratives, `aria-label` al control si són l'únic contingut.
-11. **Tot canvi d'estat visible s'anima amb tokens de motion** (§17.6). No durades ni easings literals; sempre `duration-base`, `ease-standard`, etc. No `transition-none` ni sense transició en elements que canvien d'estat.
+9. **Contingut teòric (regles gramaticals, explicacions, taules, exemples):** el proporciona el desenvolupador via PDFs a `.gramatik/`. La teva feina és estructurar-lo segons DATA-MODEL, no inventar-lo. Si cal contrast, consulta Deutsche Welle / Goethe / dwds.de; no reescriguis la regla pel teu compte.
+10. **Exercicis:** els esbosses tu (3-4 per tema, JSON complet segons DATA-MODEL §3.3) i el desenvolupador els valida explícitament abans d'integrar-los al tema. No els incorporis fins que aprovi.
+11. **Text teòric pot contenir inline rich text** (DATA-MODEL §3.6): `**bold**` per èmfasi fort i `==highlight==` per destacat cromàtic (color accent). Només aquests dos; res més sense ampliar el schema.
+12. **Icones sempre de Lucide** (`lucide-react`). Cap altre joc d'icones ni SVGs solts (§17.5 ARCHITECTURE). Color per `currentColor`, `aria-hidden` si són decoratives, `aria-label` al control si són l'únic contingut.
+13. **Tot canvi d'estat visible s'anima amb tokens de motion** (§17.6). No durades ni easings literals; sempre `duration-base`, `ease-standard`, etc. No `transition-none` ni sense transició en elements que canvien d'estat.
 
 ### Mai
 
