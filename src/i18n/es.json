@@ -26,8 +26,7 @@
   "theme": {
     "label": "Tema",
     "light": "Claro",
-    "dark": "Oscuro",
-    "system": "Sistema"
+    "dark": "Oscuro"
   },
   "locale": {
     "label": "Idioma",

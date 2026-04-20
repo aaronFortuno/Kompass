@@ -82,7 +82,7 @@ Base path: `/kompass/`. URLs amb hash per evitar problemes amb rutes profundes.
 | Fitxers JSON de contingut | `kebab-case.json`                                     |
 | Ids de tema               | `{level}{sublevel}-{number}` → `A1b-19`               |
 | Ids d'exercici            | `{topicId}-ex-{number}` → `A1b-19-ex-02`              |
-| Clau de localStorage      | `kompass.progress.v1` (progrés), `kompass.theme`, `kompass.locale` (§17.5 ARCH) |
+| Clau de localStorage      | `kompass.progress.v1` (progrés), `kompass.theme` (`light\|dark`), `kompass.locale` (§17.7 ARCH) |
 | Alias d'imports           | `@` → `src/` (configurat a `vite.config.js`)          |
 | Claus de i18n             | `namespace.subkey` camelCase → `nav.topics`, `home.ctaStart` |
 | Tokens de color           | Classes Tailwind semàntiques: `bg-surface`, `text-content`, `text-accent`, `border-border` |

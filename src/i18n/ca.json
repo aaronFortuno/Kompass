@@ -26,8 +26,7 @@
   "theme": {
     "label": "Tema",
     "light": "Clar",
-    "dark": "Fosc",
-    "system": "Sistema"
+    "dark": "Fosc"
   },
   "locale": {
     "label": "Idioma",

@@ -672,9 +672,10 @@ Aquesta secció cobreix quatre transversals de presentació que afecten tots els
 ### 17.2 Tema clar/fosc
 
 - **Mecanisme:** `darkMode: 'class'` a `tailwind.config.js`. L'arrel `<html>` té o no la classe `dark`.
-- **Default:** respecta `prefers-color-scheme` del sistema.
-- **Override manual:** toggle a l'header que permet triar `"light"`, `"dark"` o `"system"`.
-- **Persistència:** clau `kompass.theme` a `localStorage`, amb valors `"light" | "dark" | "system"`. Clau independent del `UserProgress` per no afectar-ne l'esquema ni les migracions.
+- **Valors possibles:** només `"light"` i `"dark"`. No hi ha mode "system" explícit: s'ha descartat per simplificar el mental model (el toggle sempre decideix).
+- **First-visit:** si no hi ha preferència guardada a `localStorage`, es llegeix `prefers-color-scheme` una única vegada per fixar el valor inicial i s'escriu immediatament. A partir d'aquí, el canvi del sistema no afecta la preferència.
+- **Override manual:** toggle a l'header que alterna entre `light` i `dark`.
+- **Persistència:** clau `kompass.theme` a `localStorage`, amb valors `"light" | "dark"`. Clau independent del `UserProgress` per no afectar-ne l'esquema ni les migracions.
 - **Implementació:** `src/theme/index.jsx` exposa `ThemeProvider`, hook `useTheme()` i component `ThemeToggle`. Es munta a `App.jsx` per sobre del router.
 
 ### 17.3 Internacionalització (i18n)
@@ -777,7 +778,7 @@ Components d'exercici amb feedback (correcte/incorrecte) usen els mateixos token
 | Clau                  | Contingut                 | Esquema                      |
 | --------------------- | ------------------------- | ---------------------------- |
 | `kompass.progress.v1` | Progrés d'usuari          | `UserProgress` (DM §3.5)     |
-| `kompass.theme`       | Preferència de tema       | `"light" \| "dark" \| "system"` |
+| `kompass.theme`       | Preferència de tema       | `"light" \| "dark"`          |
 | `kompass.locale`      | Idioma de la UI           | `"ca" \| "es"`               |
 
 Qualsevol canvi al `schemaVersion` d'alguna d'aquestes claus requereix migració (vegeu §2 de DATA-MODEL).

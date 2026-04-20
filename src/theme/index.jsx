@@ -9,50 +9,41 @@ import {
 
 /*
  * Tema clar/fosc · §17.2 ARCHITECTURE
- * "light" | "dark" | "system" persistit a localStorage.kompass.theme.
- * Quan el valor efectiu és "dark", afegim la classe "dark" a <html>.
+ * Només "light" | "dark". First-visit llegeix prefers-color-scheme una
+ * vegada per fixar el default i el persisteix. Després, sempre user-driven.
  */
 
 const STORAGE_KEY = 'kompass.theme';
-const VALID_PREFS = ['light', 'dark', 'system'];
+const VALID_PREFS = ['light', 'dark'];
 
 const ThemeContext = createContext(null);
 
-function readStoredPreference() {
-  if (typeof window === 'undefined') return 'system';
-  const raw = window.localStorage.getItem(STORAGE_KEY);
-  return VALID_PREFS.includes(raw) ? raw : 'system';
+function systemInitial() {
+  if (typeof window !== 'undefined' && window.matchMedia) {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+  return 'light';
 }
 
-function systemPrefersDark() {
-  if (typeof window === 'undefined' || !window.matchMedia) return false;
-  return window.matchMedia('(prefers-color-scheme: dark)').matches;
+function readInitialPreference() {
+  if (typeof window === 'undefined') return 'light';
+  const raw = window.localStorage.getItem(STORAGE_KEY);
+  if (VALID_PREFS.includes(raw)) return raw;
+  const initial = systemInitial();
+  window.localStorage.setItem(STORAGE_KEY, initial);
+  return initial;
 }
 
 function applyDomClass(isDark) {
-  const el = document.documentElement;
-  el.classList.toggle('dark', isDark);
+  document.documentElement.classList.toggle('dark', isDark);
 }
 
 export function ThemeProvider({ children }) {
-  const [preference, setPreferenceState] = useState(readStoredPreference);
-  const [systemDark, setSystemDark] = useState(systemPrefersDark);
+  const [preference, setPreferenceState] = useState(readInitialPreference);
 
-  // Escolta canvis en la preferència del sistema per reaccionar quan el mode és "system".
   useEffect(() => {
-    if (!window.matchMedia) return undefined;
-    const mq = window.matchMedia('(prefers-color-scheme: dark)');
-    const handler = (e) => setSystemDark(e.matches);
-    mq.addEventListener('change', handler);
-    return () => mq.removeEventListener('change', handler);
-  }, []);
-
-  const effective = preference === 'system' ? (systemDark ? 'dark' : 'light') : preference;
-
-  // Sincronitza amb el DOM cada cop que canvia.
-  useEffect(() => {
-    applyDomClass(effective === 'dark');
-  }, [effective]);
+    applyDomClass(preference === 'dark');
+  }, [preference]);
 
   const setPreference = useCallback((next) => {
     if (!VALID_PREFS.includes(next)) return;
@@ -60,9 +51,13 @@ export function ThemeProvider({ children }) {
     setPreferenceState(next);
   }, []);
 
+  const toggle = useCallback(() => {
+    setPreference(preference === 'dark' ? 'light' : 'dark');
+  }, [preference, setPreference]);
+
   const value = useMemo(
-    () => ({ preference, effective, setPreference }),
-    [preference, effective, setPreference]
+    () => ({ preference, setPreference, toggle }),
+    [preference, setPreference, toggle]
   );
 
   return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;
