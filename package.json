@@ -14,11 +14,12 @@
     "validate-content": "node scripts/validateAllContent.js"
   },
   "dependencies": {
+    "lucide-react": "^1.8.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.0",
-    "zustand": "^4.5.4",
-    "zod": "^3.23.8"
+    "zod": "^3.23.8",
+    "zustand": "^4.5.4"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.1",

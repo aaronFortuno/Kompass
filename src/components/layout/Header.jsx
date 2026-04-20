@@ -38,7 +38,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden md:flex items-center gap-1">
           <LocaleSwitcher />
           <ThemeToggle />
         </div>
@@ -91,7 +91,7 @@ export function Header() {
                 {t(item.key)}
               </NavLink>
             ))}
-            <div className="flex items-center justify-between gap-3 pt-3 mt-2 border-t border-border">
+            <div className="flex items-center gap-1 pt-3 mt-2 border-t border-border">
               <LocaleSwitcher />
               <ThemeToggle />
             </div>

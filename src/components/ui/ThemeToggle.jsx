@@ -1,26 +1,28 @@
+import { Sun, Moon, Monitor } from 'lucide-react';
 import { useT } from '@/i18n';
 import { useTheme } from '@/theme';
 
-const OPTIONS = ['light', 'dark', 'system'];
+const CYCLE = ['light', 'dark', 'system'];
+const ICONS = { light: Sun, dark: Moon, system: Monitor };
 
 export function ThemeToggle() {
   const { t } = useT();
   const { preference, setPreference } = useTheme();
 
+  const Icon = ICONS[preference] ?? Monitor;
+  const currentLabel = t(`theme.${preference}`);
+  const nextPreference = CYCLE[(CYCLE.indexOf(preference) + 1) % CYCLE.length];
+  const nextLabel = t(`theme.${nextPreference}`);
+
   return (
-    <label className="flex items-center gap-2 text-sm text-content-muted">
-      <span className="sr-only sm:not-sr-only">{t('theme.label')}</span>
-      <select
-        className="bg-surface text-content border border-border rounded-sm px-2 py-1"
-        value={preference}
-        onChange={(e) => setPreference(e.target.value)}
-      >
-        {OPTIONS.map((opt) => (
-          <option key={opt} value={opt}>
-            {t(`theme.${opt}`)}
-          </option>
-        ))}
-      </select>
-    </label>
+    <button
+      type="button"
+      className="btn-ghost p-2 rounded-sm"
+      aria-label={`${t('theme.label')}: ${currentLabel}. ${nextLabel}`}
+      title={`${t('theme.label')}: ${currentLabel}`}
+      onClick={() => setPreference(nextPreference)}
+    >
+      <Icon size={20} aria-hidden="true" />
+    </button>
   );
 }

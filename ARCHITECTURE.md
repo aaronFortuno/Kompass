@@ -718,7 +718,61 @@ Aquesta secció cobreix quatre transversals de presentació que afecten tots els
 - **Verificació obligatòria** abans de commit d'UI significativa: 375 px (iPhone mini), 768 px (iPad), 1280 px (laptop).
 - **Sense deps afegides.** Tailwind ja ho cobreix tot.
 
-### 17.5 Claus de `localStorage` (taula completa)
+### 17.5 Icones
+
+**Biblioteca única:** [Lucide](https://lucide.dev/) via `lucide-react`. No es combinen jocs d'icones ni s'importen SVGs d'altres fonts per mantenir coherència visual (mateix gruix, mateix estil geomètric, mateixes proporcions).
+
+**Ús:**
+
+```jsx
+import { Languages } from 'lucide-react';
+<Languages size={20} aria-hidden="true" />
+```
+
+**Convencions:**
+
+- `color` sempre per `currentColor` (heretat del contenidor); mai `color` com a prop numèric o hex.
+- `size` per defecte 20 px (quadra bé amb l'alçada de línia del text base). Es poden fer servir també 16 (inline-small) i 24 (focal).
+- Tota icona purament decorativa porta `aria-hidden="true"`. Si l'icona és el contingut *únic* d'un control (p. ex. un botó sense text visible), el control ha de tenir `aria-label`.
+- Stroke amb el default de Lucide (2). No es canvia puntualment; si es volgués canviar, es fa globalment via prop al wrapper comú.
+
+**Per què Lucide:** biblioteca oberta, mantenida, estil homogeni, tree-shakeable (un import = una icona al bundle), bon coverage funcional.
+
+### 17.6 Motion (transicions i animacions)
+
+**Principi:** tot canvi d'estat visible s'anima. Obrir/tancar menús, modals, panells, feedback d'encert/error, aparició de contingut després de càrrega, canvis de pàgina. La immediatesa "dura" es reserva per a interaccions tàctils directes (hover de focus bàsic).
+
+**Tokens de motion** (definits a `src/styles/index.css` i exposats a Tailwind):
+
+| Token                 | Valor                            | Ús                                                   |
+| --------------------- | -------------------------------- | ---------------------------------------------------- |
+| `--duration-fast`     | 120 ms                           | Hover, tap feedback, micro-canvis                    |
+| `--duration-base`     | 220 ms                           | Obrir/tancar menús, popovers, tooltips               |
+| `--duration-slow`     | 360 ms                           | Modals, transicions de pàgina, contingut gran        |
+| `--ease-standard`     | `cubic-bezier(0.2, 0, 0, 1)`     | Transicions generals (accelera + decelera)           |
+| `--ease-enter`        | `cubic-bezier(0, 0, 0, 1)`       | Entrada d'elements (només decelera)                  |
+| `--ease-exit`         | `cubic-bezier(0.3, 0, 1, 1)`     | Sortida d'elements (només accelera)                  |
+| `--ease-emphasized`   | `cubic-bezier(0.3, 0, 0, 1)`     | Canvis d'estat amb pes visual (accent)               |
+
+Mapejats a Tailwind com a `transition-duration`, `transition-timing-function` i com a classes compostes reutilitzables (`.motion-enter`, `.motion-exit`, `.motion-hover`).
+
+**Regles vinculants:**
+
+1. **No `transition-none` ni `transition: none` implícits.** Si un element té un canvi d'estat, ha de tenir tokens de motion aplicats.
+2. **No durades ni easings inline.** Sempre via tokens (`duration-base ease-standard`). Si el patró actual no hi és, s'afegeix com a token primer.
+3. **`prefers-reduced-motion: reduce` es respecta globalment.** El CSS desactiva o escurça les animacions per a aquests usuaris (al bloc `@media (prefers-reduced-motion: reduce)` de `styles/index.css`).
+4. **Mai s'anima `width` ni `height` directament** si es pot fer amb `transform` o `grid-template-rows` (patró `0fr → 1fr`). Són més barates i no forcen reflow.
+5. **Animacions d'entrada i de sortida coherents:** si una cosa puja entrant, baixa sortint; si apareix des de la dreta, surt cap a la dreta.
+
+**Patrons reutilitzables** (a `styles/index.css`, layer `components`):
+
+- `.motion-hover` — transició `colors + opacity` amb `duration-fast ease-standard` per botons i enllaços.
+- `.motion-panel` — `duration-base ease-standard` per panells i menús col·lapsables.
+- `.motion-modal` — `duration-slow ease-emphasized` per modals.
+
+Components d'exercici amb feedback (correcte/incorrecte) usen els mateixos tokens — això també garanteix que la resposta pedagògica se senti integrada, no un afegitó tècnic.
+
+### 17.7 Claus de `localStorage` (taula completa)
 
 | Clau                  | Contingut                 | Esquema                      |
 | --------------------- | ------------------------- | ---------------------------- |

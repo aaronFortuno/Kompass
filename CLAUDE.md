@@ -54,6 +54,8 @@ Base path: `/kompass/`. URLs amb hash per evitar problemes amb rutes profundes.
 7. **Tot estil consumeix tokens semàntics** (ARCHITECTURE §17.1). `bg-surface`, `text-content`, `rounded-md`, `shadow-soft`… Mai colors, mides ni radis hardcoded. Si cal un valor nou, primer s'afegeix als tokens.
 8. **Tota cadena visible a la UI passa per `t('namespace.key')`** i la clau s'afegeix a `src/i18n/ca.json` i `src/i18n/es.json` (ARCHITECTURE §17.3). Excepció: noms propis i contingut d'estudi en alemany dins dels JSON de `src/data/`.
 9. **El contingut didàctic (gramàtica, exemples, feedback pedagògic) el proporciona el desenvolupador.** La teva feina és estructurar-lo segons DATA-MODEL, no inventar-lo. Si detectes que en caldria més, pregunta; no ompliguis amb contingut propi.
+10. **Icones sempre de Lucide** (`lucide-react`). Cap altre joc d'icones ni SVGs solts (§17.5 ARCHITECTURE). Color per `currentColor`, `aria-hidden` si són decoratives, `aria-label` al control si són l'únic contingut.
+11. **Tot canvi d'estat visible s'anima amb tokens de motion** (§17.6). No durades ni easings literals; sempre `duration-base`, `ease-standard`, etc. No `transition-none` ni sense transició en elements que canvien d'estat.
 
 ### Mai
 
@@ -65,6 +67,8 @@ Base path: `/kompass/`. URLs amb hash per evitar problemes amb rutes profundes.
 6. **No facis refactor "de passada".** Si detectes una millora, anota-la i pregunta abans de dur-la a terme en la mateixa sessió d'una feina diferent.
 7. **No posis colors hex, `rgb()`, `hsl()`, ni mides amb píxels arbitraris als components.** Només tokens semàntics (§17.1). Si cal un color nou, actualitza `src/styles/index.css` i `tailwind.config.js`.
 8. **No introdueixis llibreries d'i18n pesades** (react-i18next, FormatJS) sense consultar. El hook propi de `src/i18n/` cobreix les necessitats actuals.
+9. **No barregis jocs d'icones.** Només Lucide. Si alguna cosa no hi és, es dissenya un wrapper amb un SVG inline puntual i s'anota com a excepció, no s'importa una segona llibreria.
+10. **No animis `width`/`height` directament** si pots usar `transform` o el truc de `grid-template-rows: 0fr → 1fr` (§17.6 regla 4).
 
 ---
 

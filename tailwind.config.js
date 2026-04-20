@@ -41,6 +41,17 @@ export default {
         'content-read': '48rem',
         'content-list': '72rem',
       },
+      transitionDuration: {
+        fast: 'var(--duration-fast)',
+        base: 'var(--duration-base)',
+        slow: 'var(--duration-slow)',
+      },
+      transitionTimingFunction: {
+        standard: 'var(--ease-standard)',
+        enter: 'var(--ease-enter)',
+        exit: 'var(--ease-exit)',
+        emphasized: 'var(--ease-emphasized)',
+      },
     },
   },
   plugins: [],

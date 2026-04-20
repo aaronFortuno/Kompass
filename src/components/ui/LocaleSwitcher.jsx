@@ -1,22 +1,26 @@
+import { Languages } from 'lucide-react';
 import { useT } from '@/i18n';
 
 export function LocaleSwitcher() {
   const { t, locale, setLocale, availableLocales } = useT();
 
+  const nextLocale =
+    availableLocales[(availableLocales.indexOf(locale) + 1) % availableLocales.length];
+  const currentLabel = t(`locale.${locale}`);
+  const nextLabel = t(`locale.${nextLocale}`);
+
   return (
-    <label className="flex items-center gap-2 text-sm text-content-muted">
-      <span className="sr-only sm:not-sr-only">{t('locale.label')}</span>
-      <select
-        className="bg-surface text-content border border-border rounded-sm px-2 py-1"
-        value={locale}
-        onChange={(e) => setLocale(e.target.value)}
-      >
-        {availableLocales.map((loc) => (
-          <option key={loc} value={loc}>
-            {t(`locale.${loc}`)}
-          </option>
-        ))}
-      </select>
-    </label>
+    <button
+      type="button"
+      className="btn-ghost p-2 rounded-sm relative"
+      aria-label={`${t('locale.label')}: ${currentLabel}. ${nextLabel}`}
+      title={`${t('locale.label')}: ${currentLabel}`}
+      onClick={() => setLocale(nextLocale)}
+    >
+      <Languages size={20} aria-hidden="true" />
+      <span className="absolute -bottom-0.5 -right-0.5 text-[10px] font-semibold bg-accent text-accent-content rounded-sm px-1 leading-tight uppercase">
+        {locale}
+      </span>
+    </button>
   );
 }
