@@ -251,6 +251,33 @@ Vídeo incrustat (YouTube, Vimeo) o local.
 
 ```json
 {
+  "type": "callout",
+  "variant": "tip",
+  "title": "Mini-regla pràctica",
+  "body": "Recorda aquests cinc vocabularis: **_der Name, der Vorname, der Familienname_** són masculins; **_die Adresse, die Telefonnummer_** són femenins."
+}
+```
+
+Nota destacada amb icona, color i vora propis. Admet Markdown complet al body.
+
+**Variants:**
+
+| `variant`   | Paper                                         |
+| ----------- | --------------------------------------------- |
+| `info`      | Nota general, context addicional.             |
+| `tip`       | Truc mnemotècnic, consell pràctic.            |
+| `warning`   | Atenció, fals amic, punt de fricció.          |
+| `danger`    | Error greu típic a evitar.                    |
+| `example`   | Exemple destacat fora del flux del text.      |
+
+**Camps:**
+
+- `variant` *(string, obligatori)*: una de les 5 variants.
+- `title` *(string, opcional)*: títol en negreta a dalt del callout.
+- `body` *(string, obligatori)*: Markdown complet + inline rich text.
+
+```json
+{
   "type": "exercise",
   "exerciseId": "A1b-19-ex-01",
   "variant": "quick-check"

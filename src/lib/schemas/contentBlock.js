@@ -41,8 +41,16 @@ const ExerciseBlockSchema = z.object({
   variant: z.enum(['quick-check', 'assessment']).default('quick-check').optional(),
 });
 
+const CalloutBlockSchema = z.object({
+  type: z.literal('callout'),
+  variant: z.enum(['info', 'tip', 'warning', 'danger', 'example']),
+  title: z.string().optional(),
+  body: RichStringSchema,
+});
+
 export const ContentBlockSchema = z.discriminatedUnion('type', [
   ExplanationBlockSchema,
   TableBlockSchema,
   ExerciseBlockSchema,
+  CalloutBlockSchema,
 ]);

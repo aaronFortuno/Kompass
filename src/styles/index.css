@@ -93,6 +93,14 @@
   .card {
     @apply bg-surface border border-border rounded-md shadow-soft p-4 sm:p-6;
   }
+  /* Dins d'un callout, elimina marges verticals del primer/últim fill
+     perquè quedi compacte sota el títol. */
+  .callout-body > :first-child {
+    margin-top: 0;
+  }
+  .callout-body > :last-child {
+    margin-bottom: 0;
+  }
   /* Target tàctil mínim 44×44 px és propietat dels controls interactius (§17.4). */
   .btn {
     @apply inline-flex items-center justify-center min-h-[44px] min-w-[44px] rounded-md px-4 py-2 font-medium transition-colors;

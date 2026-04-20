@@ -143,4 +143,23 @@ describe('ContentBlockSchema', () => {
     };
     expect(ContentBlockSchema.safeParse(block).success).toBe(true);
   });
+
+  it('accepta un bloc callout amb variant vàlida', () => {
+    const block = {
+      type: 'callout',
+      variant: 'tip',
+      title: 'Truc',
+      body: 'Recorda que _der Name_ és masculí.',
+    };
+    expect(ContentBlockSchema.safeParse(block).success).toBe(true);
+  });
+
+  it('rebutja un bloc callout amb variant desconeguda', () => {
+    const block = {
+      type: 'callout',
+      variant: 'bananas',
+      body: 'x',
+    };
+    expect(ContentBlockSchema.safeParse(block).success).toBe(false);
+  });
 });

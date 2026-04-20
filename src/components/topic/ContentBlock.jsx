@@ -1,6 +1,7 @@
 import { ExplanationBlock } from '@/components/topic/blocks/ExplanationBlock.jsx';
 import { TableBlock } from '@/components/topic/blocks/TableBlock.jsx';
 import { ExerciseBlock } from '@/components/topic/blocks/ExerciseBlock.jsx';
+import { CalloutBlock } from '@/components/topic/blocks/CalloutBlock.jsx';
 
 /*
  * Dispatcher per a ContentBlock (DATA-MODEL §3.2).
@@ -14,6 +15,8 @@ export function ContentBlock({ block }) {
       return <TableBlock block={block} />;
     case 'exercise':
       return <ExerciseBlock block={block} />;
+    case 'callout':
+      return <CalloutBlock block={block} />;
     default:
       if (import.meta.env?.DEV) {
         console.warn(`[ContentBlock] tipus desconegut: ${block.type}`);
