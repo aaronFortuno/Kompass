@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Design tokens centralitzats · §17.1 ARCHITECTURE
+ * Valors crus en variables CSS. Mai consumir literals des dels components;
+ * sempre via classes Tailwind mapejades a aquestes vars (tailwind.config.js).
+ */
+:root {
+  --color-bg: #f8f7f4;
+  --color-surface: #ffffff;
+  --color-surface-raised: #ffffff;
+  --color-content: #1b1d22;
+  --color-content-muted: #5f6672;
+  --color-border: #e4e2dc;
+  --color-accent: #2b5cff;
+  --color-accent-content: #ffffff;
+  --color-success: #1f8a4c;
+  --color-danger: #c0392b;
+  --color-warning: #b37400;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+
+  --shadow-soft: 0 1px 2px rgba(20, 20, 30, 0.04), 0 2px 6px rgba(20, 20, 30, 0.04);
+  --shadow-raised: 0 6px 20px rgba(20, 20, 30, 0.08);
+}
+
+.dark {
+  --color-bg: #0f1115;
+  --color-surface: #161a22;
+  --color-surface-raised: #1e2430;
+  --color-content: #e8ecf1;
+  --color-content-muted: #8b92a1;
+  --color-border: #2a313d;
+  --color-accent: #7e9bff;
+  --color-accent-content: #0a0d12;
+  --color-success: #3dd08a;
+  --color-danger: #ff6d6d;
+  --color-warning: #e8a64d;
+
+  --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow-raised: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+@layer base {
+  html {
+    color-scheme: light dark;
+  }
+  body {
+    @apply bg-bg text-content font-sans antialiased;
+    font-feature-settings: 'cv11', 'ss01';
+  }
+  /* Targets tàctils mínim 44px · §17.4 */
+  button, a, [role="button"] {
+    @apply min-h-[44px] min-w-[44px] inline-flex items-center justify-center;
+  }
+  /* Restableix el mínim per a botons inline dins de text */
+  a.inline, button.inline {
+    min-height: 0;
+    min-width: 0;
+    display: inline;
+  }
+}
+
+@layer components {
+  /* Patrons repetits de layout · §17.1 */
+  .page-gutter {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+  .section-gap {
+    @apply space-y-6 sm:space-y-8;
+  }
+  .card {
+    @apply bg-surface border border-border rounded-md shadow-soft p-4 sm:p-6;
+  }
+  .btn {
+    @apply rounded-md px-4 py-2 font-medium transition-colors;
+  }
+  .btn-primary {
+    @apply btn bg-accent text-accent-content hover:opacity-90;
+  }
+  .btn-ghost {
+    @apply btn bg-transparent text-content hover:bg-surface-raised;
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "app": {
+    "name": "Kompass",
+    "tagline": "Aprende alemán A1 a tu ritmo"
+  },
+  "nav": {
+    "home": "Inicio",
+    "topics": "Temas",
+    "paths": "Rutas",
+    "progress": "Progreso",
+    "about": "Acerca de"
+  },
+  "home": {
+    "welcome": "Bienvenido a Kompass",
+    "intro": "Una web para estudiar alemán A1 sin inicio de sesión, sin fronteras y a tu ritmo. Tu progreso vive en el navegador y puedes exportarlo cuando quieras.",
+    "ctaStart": "Explora los temas",
+    "ctaPaths": "Ver rutas",
+    "statusTitle": "Estado actual",
+    "statusScaffold": "Estamos en fase de scaffold visual. Pronto habrá contenido real."
+  },
+  "placeholder": {
+    "title": "Página en construcción",
+    "body": "Esta sección todavía no está disponible. Vuelve más adelante.",
+    "backHome": "Volver al inicio"
+  },
+  "theme": {
+    "label": "Tema",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema"
+  },
+  "locale": {
+    "label": "Idioma",
+    "ca": "Catalán",
+    "es": "Castellano"
+  },
+  "common": {
+    "openMenu": "Abrir el menú",
+    "closeMenu": "Cerrar el menú"
+  }
+}
