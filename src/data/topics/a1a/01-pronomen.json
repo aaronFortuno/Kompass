@@ -10,8 +10,99 @@
   "axes": ["pronoms-verbs"],
   "steps": [
     {
-      "id": "personal",
+      "id": "intro",
       "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Context i motivació\n\nEls pronoms són, literalment, les paraules que fem servir **en lloc del nom**. Quan vols dir \"jo em dic Anna\", \"tu ets estudiant\" o \"ella viu a Berlín\", el pronom (jo, tu, ella) és la primera peça de la frase. Per això, si comences a aprendre alemany, els pronoms són l'eina número u: sense ells, no pots ni presentar-te ni parlar d'algú altre.\n\nEn aquest tema veurem dos grups:\n\n- **Els pronoms personals** (_Personalpronomen_): _ich_, _du_, _er_, _sie_, _es_, _wir_, _ihr_, _sie_, _Sie_. Serveixen per indicar **qui** fa o és alguna cosa.\n- **Els pronoms possessius** (_Possessivpronomen_): _mein_, _dein_, _sein_, _ihr_… Serveixen per dir **de qui** és alguna cosa (el meu nom, la teva adreça, el seu telèfon).\n\nAixò et permetrà fer coses tan bàsiques i tan importants com:\n\n> **Ich heiße Marc.** (Em dic Marc.)\n> **Mein Name ist Marc.** (El meu nom és Marc.)\n> **Wie ist Ihre Telefonnummer?** (Quin és el seu telèfon, de Vostè?)\n\nNo cal aprendre-ho tot en un sol dia. Llegeix la lliçó amb calma, torna-hi quan calgui, i practica amb els exercicis. Els pronoms els faràs servir cada dia a partir d'ara, o sigui que s'aniran assentant sols amb la repetició.\n\n> **Nota general.** En alemany, **tots els substantius s'escriuen amb majúscula inicial**, sempre, estiguin on estiguin de la frase. Per això veuràs _Name_, _Adresse_, _Telefonnummer_ amb majúscula. No és que siguin noms propis: és una convenció ortogràfica de la llengua."
+        }
+      ]
+    },
+    {
+      "id": "personal-singular",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "Els pronoms personals alemanys són set formes, igual que en català. La **persona gramatical** indica de qui parlem: la primera persona sóc jo (qui parla), la segona persona ets tu (amb qui parlo), la tercera persona és algú altre (de qui parlem).\n\n#### Singular: jo, tu, ell/ella/això\n\n- **_ich_** = jo. És la primera persona del singular. A diferència del català (_jo_) o del castellà (_yo_), _ich_ **s'escriu sempre en minúscula**, fins i tot al mig de la frase. Només va en majúscula si comença una oració.\n  > **Ich bin Student.** (Sóc estudiant.)\n\n- **_du_** = tu. És el tracte informal: el que fas servir amb amics, família, companys joves, nens. En alemany la distinció formal/informal és viva i important; ho veurem més avall amb _Sie_.\n  > **Du heißt Anna.** (Et dius Anna.)\n\n- **_er / sie / es_** = ell / ella / això (o \"allò\"). És la tercera persona del singular, i aquí l'alemany **sí que distingeix el gènere**, com el català:\n  - **_er_** → masculí (ell).\n  - **_sie_** → femení (ella).\n  - **_es_** → neutre. L'alemany té tres gèneres (masculí, femení i neutre), i _es_ es fa servir per als substantius neutres, com _das Kind_ (el nen/la criatura) o _das Buch_ (el llibre).\n  > **Er kommt aus Berlin.** (Ell ve de Berlín.)\n  > **Sie wohnt in Barcelona.** (Ella viu a Barcelona.)\n  > **Es ist neu.** (És nou. — referit a un substantiu neutre, p. ex. _das Buch_.)\n\n> **Atenció als gèneres.** En català \"el llibre\" és masculí, però en alemany _das Buch_ és **neutre**. El gènere dels substantius alemanys no coincideix sempre amb el català, i per això _es_ no es tradueix únicament com a \"això\". Quan parles d'un objecte neutre, _es_ pot voler dir \"ell\" o \"ella\" en la traducció catalana."
+        }
+      ]
+    },
+    {
+      "id": "personal-plural",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Plural: nosaltres, vosaltres, ells/elles\n\n- **_wir_** = nosaltres / nosaltres mateixes. L'alemany no distingeix masculí i femení en plural del pronom personal (a diferència del castellà _nosotros / nosotras_).\n  > **Wir lernen Deutsch.** (Estudiem alemany.)\n\n- **_ihr_** = vosaltres / vosaltres mateixes. És el plural informal de _du_: el \"vosaltres\" que fas servir amb un grup d'amics.\n  > **Ihr seid jung.** (Sou joves.)\n\n- **_sie_** = ells / elles. De nou, **no hi ha distinció de gènere** en el plural: _sie_ val tant per \"ells\" com per \"elles\".\n  > **Sie wohnen in München.** (Viuen a Munic.)\n\nPotser ja t'has adonat d'una cosa: la forma _sie_ apareix tres vegades amb tres significats (**ella**, **ells/elles** i, com veurem ara, també **Vostè/Vostès**). Com distingim? Per dos senyals: (a) el **verb** (no és el mateix _sie ist_ \"ella és\" que _sie sind_ \"ells són\" que _Sie sind_ \"Vostè és\"), i (b) el **context**. És un punt que fa patir molts aprenents, però amb pràctica s'aclareix.\n\n#### La forma de cortesia: _Sie_\n\nL'alemany té una forma especial per al tracte formal, que es fa servir quan parles amb desconeguts, gent gran, professors, caps, clients, etc. És **_Sie_**, **sempre amb majúscula inicial**, i coincideix en forma amb el _sie_ plural (\"ells/elles\"). Té una particularitat única: val tant si parles amb **una persona** com amb **diverses**. Singular i plural no es distingeixen.\n\n> **Wie heißen Sie?** (Com es diu, Vostè? — o Vostès?)\n> **Sind Sie Student?** (És Vostè estudiant?)\n\n**Quan fer servir _Sie_ i quan _du_?**\n\n- Amb una persona **desconeguda adulta** → _Sie_.\n- Amb **un infant o un jove** → _du_.\n- Amb **amics, família, companys propers** → _du_.\n- En contextos **formals** (feina, administració, comerç, universitat amb professors) → _Sie_, almenys al principi.\n\nEn cas de dubte, fes servir _Sie_: errar pel costat formal mai ofèn; tractar algú de _du_ sense confiança sí que pot quedar brusc.\n\n> **Observació clau.** L'alemany **no marca gènere als pronoms plurals** (_wir_, _ihr_, _sie_ serveixen per a grups masculins, femenins o mixtos). Però sí que **distingeix formal i informal** (_du/ihr_ vs _Sie_), una distinció que el català ha anat perdent i que el castellà manté amb _tú_ vs _usted_."
+        }
+      ]
+    },
+    {
+      "id": "check-personal",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-1-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "possessive-concordance",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "Els pronoms possessius expressen **a qui pertany una cosa**: el meu nom, la teva adreça, el seu telèfon. Cada pronom personal té el seu possessiu corresponent:\n\n| Pronom personal | Possessiu (arrel) | Traducció |\n|---|---|---|\n| _ich_ | _mein-_ | el meu / la meva |\n| _du_ | _dein-_ | el teu / la teva |\n| _er_ | _sein-_ | el seu / la seva (d'ell) |\n| _sie_ (ella) | _ihr-_ | el seu / la seva (d'ella) |\n| _Sie_ (cortesia) | _Ihr-_ | el seu / la seva (de Vostè) |\n\nEn aquest tema introductori ens centrem en aquests cinc, que són els que veuràs a les primeres converses (presentacions, dades personals). Els altres (_unser_ \"nostre\", _euer_ \"vostre\", _ihr_ \"d'ells/elles\") els trobaràs més endavant.\n\n#### La regla: el possessiu concorda amb el substantiu posseït\n\nAquí ve el primer concepte que **no es comporta igual que en català**. Fixa't en aquests dos exemples:\n\n> **Mein Name ist Anna.** (El meu nom és Anna.)\n> **Meine Adresse ist...** (La meva adreça és...)\n\nEn tots dos casos, \"el que posseeix\" és la mateixa persona: _ich_ (jo). Però el possessiu canvia: **_mein_** davant de _Name_ i **_meine_** davant de _Adresse_. Per què?\n\nPerquè _Name_ és un substantiu **masculí** (_der Name_) i _Adresse_ és un substantiu **femení** (_die Adresse_). En alemany, **el possessiu concorda amb el gènere del substantiu que segueix**, no amb el del posseïdor.\n\n- Davant de substantiu masculí o neutre → forma curta: **_mein, dein, sein, ihr, Ihr_**.\n- Davant de substantiu femení → forma amb **-e**: **_meine, deine, seine, ihre, Ihre_**.\n\n> **Mein Vorname ist Marc.** (El meu nom de pila és Marc.) — _der Vorname_, masculí.\n> **Meine Telefonnummer ist 600 123 456.** (El meu telèfon és 600 123 456.) — _die Telefonnummer_, femení.\n\nAixò, al principi, sembla una feinada extra: cada cop que dius un possessiu, has de saber el gènere del substantiu que ve darrere. I ho és. Però amb els noms bàsics del primer tema (_Name, Vorname, Familienname, Adresse, Telefonnummer_) ho interioritzaràs de pressa.\n\n> **Mini-regla pràctica inicial.** Recorda aquests cinc vocabularis: **_der Name, der Vorname, der Familienname_** són masculins; **_die Adresse, die Telefonnummer_** són femenins. Amb aquesta llista, ja pots construir una presentació sencera."
+        }
+      ]
+    },
+    {
+      "id": "check-possessive-concordance",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-1-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "sein-vs-ihr",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El cas delicat: _sein_ (d'ell) vs _ihr_ (d'ella)\n\nAquí hi ha el punt que fa ensopegar més els catalanoparlants i castellanoparlants, i paga la pena mirar-lo amb calma.\n\nEn català, quan diem **\"el seu nom\"**, pot voler dir \"el nom d'ell\" o \"el nom d'ella\". El pronom _seu_ no distingeix. En castellà passa exactament igual amb **\"su nombre\"**: pot ser d'ell o d'ella. El context és qui desambigua.\n\n**L'alemany, en canvi, sí que distingeix.** Hi ha dues paraules diferents:\n\n- **==s==ein / ==s==eine** → el posseïdor és **masculí** (ell). Correspon a l'anglès _his_.\n- **i==hr== / i==hr==e** → el posseïdor és **femení** (ella). Correspon a l'anglès _her_.\n\nEl truc per recordar-ho és fixar-se en el **contrast visual**: la **s** inicial de _sein_ marca \"de ell\" (com _son_ en francès o _si_ del llatí), i el digraf **hr** al mig de _ihr_ marca \"de ella\" (pensa en l'anglès _her_, que també porta _hr_). Les lletres del voltant (\"ein\", \"i\", \"e\") són només la forma: el que realment distingeix el significat és la **s** contra el **hr**.\n\n| Castellà | Català | Alemany | Anglès |\n|---|---|---|---|\n| su nombre (de él) | el seu nom (d'ell) | ==s==ein Name | his name |\n| su nombre (de ella) | el seu nom (d'ella) | i==hr== Name | her name |\n| su dirección (de él) | la seva adreça (d'ell) | ==s==eine Adresse | his address |\n| su dirección (de ella) | la seva adreça (d'ella) | i==hr==e Adresse | her address |\n\nObserva com funciona la doble concordança:\n\n- **Ell** posseeix un substantiu **masculí** (_Name_) → _sein_ (curt).\n- **Ell** posseeix un substantiu **femení** (_Adresse_) → _seine_ (amb -e).\n- **Ella** posseeix un substantiu **masculí** (_Name_) → _ihr_ (curt).\n- **Ella** posseeix un substantiu **femení** (_Adresse_) → _ihre_ (amb -e).\n\nÉs a dir, **dues preguntes** cal fer-se cada cop:\n\n1. Qui posseeix, és home o dona? → tria entre _sein-_ i _ihr-_.\n2. Què es posseeix, és masculí/neutre o femení? → afegeix o no la _-e_ final.\n\nExemple combinat:\n\n> **Markus ist neu. Sein Name ist Markus Weber, und seine Adresse ist Hauptstraße 5.**\n> (En Markus és nou. El seu nom és Markus Weber, i la seva adreça és Hauptstraße 5.)\n\n> **Anna ist Studentin. Ihr Vorname ist Anna, und ihre Telefonnummer ist 030 12345.**\n> (L'Anna és estudiant. El seu nom de pila és Anna, i el seu telèfon és 030 12345.)"
+        }
+      ]
+    },
+    {
+      "id": "check-sein-vs-ihr",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-1-ex-03", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "formal-ihr",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El possessiu de cortesia: _Ihr / Ihre_\n\nQuan parles de _Sie_ (Vostè), el possessiu és **_Ihr / Ihre_**, sempre amb **majúscula inicial**, encara que estigui al mig de la frase. La majúscula és el que el distingeix visualment de l'_ihr_ minúscula (\"d'ella\"): formalment, en parlant en veu alta, sonen igual, però per escrit no es confonen.\n\n> **Wie ist Ihr Name?** (Com es diu Vostè? Literalment: Com és el seu nom?)\n> **Ist das Ihre Adresse?** (Aquesta és la seva adreça, de Vostè?)"
+        }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals\n\nAquests són els errors típics que fan els catalanoparlants en aquest tema. Si els coneixes d'avançada, te'ls podràs corregir tu sol/a.\n\n**1. Confondre _sein_ i _ihr_.**\nCom que en català i castellà _el seu / su_ val per a tots dos, és temptador triar _sein_ per costum. Però en alemany cal mirar **qui** posseeix.\n\n> Incorrecte: **Anna und sein Name**.\n> Correcte: **Anna und ==i==hr Name**. (L'Anna és dona, per tant _ihr_.)\n\n**2. Oblidar la _-e_ final quan el substantiu és femení.**\n\n> Incorrecte: **mein Adresse**.\n> Correcte: **meine Adresse**. (_die Adresse_ és femení → cal _-e_.)\n\n**3. Posar la _-e_ quan el substantiu és masculí o neutre.**\n\n> Incorrecte: **meine Name**.\n> Correcte: **mein Name**. (_der Name_ és masculí → forma curta.)\n\n**4. Barrejar _du_ i _Sie_ en una mateixa conversa.**\nUn cop has triat el tracte amb algú, s'hi queda durant tota la conversa. No alternis _Wie heißt du?_ amb _Wie heißen Sie?_ dirigits a la mateixa persona.\n\n**5. Escriure _ich_ amb majúscula en posició interna.**\nA l'anglès \"I\" va sempre en majúscula; en alemany, **_ich_ és minúscula**.\n\n> Incorrecte: **Heute bin Ich müde.**\n> Correcte: **Heute bin ich müde.** (Avui estic cansat/da.)\n\n**6. Oblidar la majúscula a _Sie / Ihr / Ihre_ cortesia.**\nÉs l'única marca ortogràfica que distingeix _sie_ (ella/ells) de _Sie_ (Vostè), i _ihr_ (d'ella, o \"vosaltres\") de _Ihr_ (de Vostè). Per escrit, la majúscula no és un caprici: és el senyal del tracte formal.\n\n> Incorrecte: **wie ist ihre adresse?** (queda ambigu: de Vostè o d'ella?)\n> Correcte: **Wie ist Ihre Adresse?** (queda clar: de Vostè.)\n\n**7. Assumir que el gènere català es manté en alemany.**\nNo pots deduir el gènere alemany a partir del català. _La adreça_ és femení també en alemany (_die Adresse_, coincideix), però _el llibre_ és neutre en alemany (_das Buch_). Aprèn cada substantiu **amb el seu article**: no és _Name_, és _der Name_; no és _Telefonnummer_, és _die Telefonnummer_. Aquest petit gest des del dia u t'estalvia molts errors futurs."
+        }
+      ]
+    },
+    {
+      "id": "assessment",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-1-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi del tema\n\nAquestes taules són una referència compacta per al repàs, un cop el tema està entès. Si les consultes abans d'haver fet la lliçó, poden semblar dense; tornar-hi després et resultarà molt més clar."
+        },
         {
           "type": "table",
           "title": "1.1 Personalpronomen — Pronom personal",
@@ -25,12 +116,7 @@
             ["3. Person Plural", "**sie**"],
             ["Höflichkeitsform (Sg. = Pl.)", "**Sie**"]
           ]
-        }
-      ]
-    },
-    {
-      "id": "possessive",
-      "blocks": [
+        },
         {
           "type": "table",
           "title": "1.2 Possessivpronomen — Pronom possessiu",
@@ -51,12 +137,7 @@
             ],
             ["**Ihr** (de Vostè)", "", "**Ihre** (de Vostè)", ""]
           ]
-        }
-      ]
-    },
-    {
-      "id": "synthesis-comparativa",
-      "blocks": [
+        },
         {
           "type": "table",
           "title": "Vergleichen Sie — Compareu",
