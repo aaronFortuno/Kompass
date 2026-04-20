@@ -97,6 +97,7 @@ export function StepViewer({ topic }) {
   return (
     <div className="section-gap">
       <StepProgress
+        topicId={topic.id}
         steps={topic.steps}
         currentIndex={stepIndex}
         onJump={goTo}
