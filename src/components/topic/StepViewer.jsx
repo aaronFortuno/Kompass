@@ -4,6 +4,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useT } from '@/i18n';
 import { ContentBlock } from '@/components/topic/ContentBlock.jsx';
 import { StepProgress } from '@/components/topic/StepProgress.jsx';
+import { useProgressStore } from '@/store/useProgressStore.js';
 
 /*
  * Reproductor d'steps · ARCHITECTURE §18
@@ -38,6 +39,7 @@ export function StepViewer({ topic }) {
   const stepIndex = resolveStepIndex(topic, stepId);
   const step = topic.steps[stepIndex];
   const total = topic.steps.length;
+  const markStepVisited = useProgressStore((s) => s.markStepVisited);
 
   // Detecta direcció per triar animació endavant/enrere.
   const prevIndexRef = useRef(stepIndex);
@@ -45,6 +47,13 @@ export function StepViewer({ topic }) {
   useEffect(() => {
     prevIndexRef.current = stepIndex;
   }, [stepIndex]);
+
+  // Registra la visita en el moment d'entrar al step.
+  useEffect(() => {
+    if (step?.id) {
+      markStepVisited(topic.id, step.id);
+    }
+  }, [markStepVisited, topic.id, step?.id]);
 
   const goTo = useMemo(
     () => (index) => {

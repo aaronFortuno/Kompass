@@ -4,6 +4,7 @@ import { useT } from '@/i18n';
 import { InlineRichText } from '@/components/ui/InlineRichText.jsx';
 import { validateResponse } from '@/lib/exerciseValidator.js';
 import { selectFeedback } from '@/lib/feedback.js';
+import { useProgressStore } from '@/store/useProgressStore.js';
 import { DropdownFillRenderer } from './DropdownFillRenderer.jsx';
 import { TypeInRenderer } from './TypeInRenderer.jsx';
 
@@ -18,6 +19,9 @@ export function ExerciseEngine({ exercise }) {
   const { t } = useT();
   const [response, setResponse] = useState({});
   const [result, setResult] = useState(null);
+  const recordExerciseAttempt = useProgressStore(
+    (s) => s.recordExerciseAttempt
+  );
 
   const updateSlot = (blankId, value) =>
     setResponse((r) => ({ ...r, [blankId]: value }));
@@ -31,6 +35,11 @@ export function ExerciseEngine({ exercise }) {
       outcome.correctOverall
     );
     setResult({ ...outcome, feedback });
+    recordExerciseAttempt(
+      exercise.topicId,
+      exercise.id,
+      outcome.correctOverall
+    );
   };
 
   const handleReset = () => {
