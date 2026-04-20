@@ -4,6 +4,7 @@ import { Menu, X } from 'lucide-react';
 import { useT } from '@/i18n';
 import { ThemeToggle } from '@/components/ui/ThemeToggle.jsx';
 import { LocaleSwitcher } from '@/components/ui/LocaleSwitcher.jsx';
+import { Logo } from '@/components/ui/Logo.jsx';
 
 const NAV_ITEMS = [
   { to: '/', key: 'nav.home', end: true },
@@ -28,8 +29,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-20 bg-surface/90 backdrop-blur border-b border-border">
       <div className="page-gutter max-w-content-list mx-auto flex items-center justify-between gap-4 py-3">
-        <Link to="/" className="inline font-semibold text-content">
-          {t('app.name')}
+        <Link to="/" className="inline" aria-label={t('app.name')}>
+          <Logo />
         </Link>
 
         <nav className="hidden md:flex items-center gap-1" aria-label="primary">
