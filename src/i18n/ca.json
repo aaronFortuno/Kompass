@@ -29,8 +29,7 @@
     "empty": "Encara no hi ha temes publicats."
   },
   "topic": {
-    "levelLabel": "Nivell {level}",
-    "backToIndex": "Torna a l'índex",
+    "backToIndex": "Torna als temes",
     "notFoundTitle": "Tema no trobat",
     "notFoundBody": "No existeix cap tema amb l'identificador {id}."
   },

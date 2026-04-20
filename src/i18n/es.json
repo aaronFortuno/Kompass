@@ -29,8 +29,7 @@
     "empty": "Aún no hay temas publicados."
   },
   "topic": {
-    "levelLabel": "Nivel {level}",
-    "backToIndex": "Volver al índice",
+    "backToIndex": "Volver a los temas",
     "notFoundTitle": "Tema no encontrado",
     "notFoundBody": "No existe ningún tema con el identificador {id}."
   },
