@@ -6,12 +6,12 @@ import { InlineRichText } from '@/components/ui/InlineRichText.jsx';
  * Les cel·les "tapades" per un rowspan/colspan previ s'ometen de la fila.
  */
 
-function cellClasses({ emphasis, align = 'left' }) {
+function cellClasses({ emphasis, align = 'left' }, { isHeader = false } = {}) {
   return [
     'border-b border-border px-3 py-2 align-top',
     align === 'center' && 'text-center',
     align === 'right' && 'text-right',
-    emphasis === 'header' && 'font-semibold text-content',
+    (isHeader || emphasis === 'header') && 'font-semibold text-content',
     emphasis === 'muted' && 'text-content-muted',
     emphasis === 'accent' && 'text-accent font-semibold',
   ]
@@ -19,23 +19,26 @@ function cellClasses({ emphasis, align = 'left' }) {
     .join(' ');
 }
 
-function Cell({ cell }) {
+function Cell({ cell, as = 'td', ...rest }) {
+  const Tag = as;
+  const isHeader = as === 'th';
   if (typeof cell === 'string') {
     return (
-      <td className={cellClasses({})}>
+      <Tag className={cellClasses({}, { isHeader })} {...rest}>
         <InlineRichText text={cell} />
-      </td>
+      </Tag>
     );
   }
   const { text, rowspan, colspan } = cell;
   return (
-    <td
+    <Tag
       rowSpan={rowspan}
       colSpan={colspan}
-      className={cellClasses(cell)}
+      className={cellClasses(cell, { isHeader })}
+      {...rest}
     >
       <InlineRichText text={text} />
-    </td>
+    </Tag>
   );
 }
 
@@ -54,13 +57,7 @@ export function TableBlock({ block }) {
             <thead className="bg-surface-raised">
               <tr>
                 {headers.map((h, i) => (
-                  <th
-                    key={i}
-                    className="text-left border-b border-border px-3 py-2 font-semibold text-content-muted"
-                    scope="col"
-                  >
-                    {h}
-                  </th>
+                  <Cell key={i} cell={h} as="th" scope="col" />
                 ))}
               </tr>
             </thead>

@@ -114,7 +114,7 @@ Text explicatiu principal en Markdown. Pot incloure imatges, taules senzilles i 
 
 Taula estructurada amb cel·les riques.
 
-**Forma de cada cel·la:**
+**Forma de cada cel·la** (aplica tant a `headers` com a `rows`):
 
 - `string` — text pla (pot contenir *inline rich text*, vegeu §3.6).
 - `object { text, rowspan?, colspan?, emphasis?, align? }` — cel·la amb atributs.
@@ -131,7 +131,12 @@ Taula estructurada amb cel·les riques.
 {
   "type": "table",
   "title": "Vergleichen Sie",
-  "headers": ["Spanisch", "", "Katalanisch", "", "Deutsch", "", "Englisch"],
+  "headers": [
+    { "text": "Spanisch", "colspan": 2 },
+    { "text": "Katalanisch", "colspan": 2 },
+    { "text": "Deutsch", "colspan": 2 },
+    "Englisch"
+  ],
   "rows": [
     [
       { "text": "su", "rowspan": 4 },

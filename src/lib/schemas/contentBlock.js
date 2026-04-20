@@ -28,7 +28,7 @@ const ExplanationBlockSchema = z.object({
 const TableBlockSchema = z.object({
   type: z.literal('table'),
   title: z.string().optional(),
-  headers: z.array(z.string()).optional(),
+  headers: z.array(CellSchema).optional(),
   rows: z.array(RowSchema),
   caption: z.string().optional(),
 });

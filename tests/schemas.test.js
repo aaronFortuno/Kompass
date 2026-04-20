@@ -72,4 +72,16 @@ describe('ContentBlockSchema', () => {
     const block = { type: 'pancake', body: 'dummy' };
     expect(ContentBlockSchema.safeParse(block).success).toBe(false);
   });
+
+  it('accepta headers amb cel·les riques (colspan)', () => {
+    const block = {
+      type: 'table',
+      headers: [
+        { text: 'Spanisch', colspan: 2 },
+        'Englisch',
+      ],
+      rows: [['su', 'nombre', 'his']],
+    };
+    expect(ContentBlockSchema.safeParse(block).success).toBe(true);
+  });
 });
