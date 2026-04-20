@@ -57,15 +57,32 @@ Un tema del curs. Correspon a una unitat de la taula de continguts.
   "axes": ["preposicions", "casos"],
   "prerequisites": ["A1a-28", "A1a-34", "A1b-18"],
   "estimatedMinutes": 25,
-  "content": [
-    { "type": "explanation", "…": "…" },
-    { "type": "table", "…": "…" },
-    { "type": "lerntipp", "…": "…" }
-  ],
-  "exerciseIds": [
-    "A1b-19-ex-01",
-    "A1b-19-ex-02",
-    "A1b-19-ex-03"
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        { "type": "explanation", "body": "### Context\n…" }
+      ]
+    },
+    {
+      "id": "regla",
+      "blocks": [
+        { "type": "explanation", "body": "### La regla clau\n…" },
+        { "type": "table", "title": "…", "rows": [ [ "…" ] ] }
+      ]
+    },
+    {
+      "id": "check-regla",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-19-ex-01" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        { "type": "table", "title": "Síntesi", "rows": [ [ "…" ] ] }
+      ]
+    }
   ]
 }
 ```
@@ -82,8 +99,16 @@ Un tema del curs. Correspon a una unitat de la taula de continguts.
 - `axes` *(string[])*: eixos temàtics transversals als quals pertany (per a la vista "per eix"). Vegeu §4.
 - `prerequisites` *(string[])*: ids de temes que convé haver vist abans. No bloqueja l'accés, només es mostra com a suggeriment.
 - `estimatedMinutes` *(integer)*: temps estimat per completar el tema. Usat per mostrar a l'UI i calcular progrés de rutes.
-- `content` *(ContentBlock[])*: contingut conceptual del tema. Vegeu §3.2.
-- `exerciseIds` *(string[])*: ids dels exercicis associats, en ordre de presentació suggerit.
+- `steps` *(Step[])*: seqüència ordenada de píndoles que l'estudiant recorre amb el reproductor (vegeu ARCHITECTURE §18). Cada Step té la forma següent:
+
+  ```json
+  { "id": "optional-step-id", "blocks": [ /* ContentBlock[] */ ] }
+  ```
+  
+  - `id` *(string, opcional)*: identificador estable del pas. Útil per a deep-linking (URL `/temes/{topicId}/{stepId}`). Únic dins del tema. Si no es dona, es referencia per posició (1-based).
+  - `blocks` *(ContentBlock[])*: un o més blocs que es renderitzen apilats dins del pas. Pot barrejar `explanation`, `table` i `exercise` (vegeu §3.2). Un sol pas pot ser exclusivament un `exercise` — és el patró per a "comprovacions ràpides" integrades al recorregut.
+
+- **Derivats:** els `exerciseIds` que formen part del tema s'obtenen recorrent `steps[*].blocks` filtrant els de tipus `exercise`. No es desen explícitament.
 
 ### 3.2. `ContentBlock`
 
@@ -223,6 +248,25 @@ Conjunt d'exemples bilingües amb anotacions gramaticals opcionals.
 ```
 
 Vídeo incrustat (YouTube, Vimeo) o local.
+
+```json
+{
+  "type": "exercise",
+  "exerciseId": "A1b-19-ex-01",
+  "variant": "quick-check"
+}
+```
+
+Referència a un exercici a renderitzar al lloc on apareix aquest bloc. L'exercici com a entitat viu a `src/data/exercises/…` i es valida pel seu propi schema (§3.3).
+
+**Camps:**
+
+- `exerciseId` *(string, obligatori)*: id de l'exercici segons §3.3.
+- `variant` *(string, opcional)*: indica el rol de l'exercici dins del recorregut.
+  - `"quick-check"` — comprovació ràpida d'una secció que s'acaba de presentar. Per defecte si s'omet.
+  - `"assessment"` — exercici d'avaluació del tema (típicament als últims steps).
+  
+  La variant només afecta com el renderer presenta l'exercici (etiqueta "Comprobació" vs "Avaluació"); no canvia la lògica de validació ni el schema de l'Exercise.
 
 ### 3.3. `Exercise`
 

@@ -788,4 +788,35 @@ Qualsevol canvi al `schemaVersion` d'alguna d'aquestes claus requereix migració
 
 ---
 
+## 18. Reproductor del tema (UX)
+
+Els temes es presenten com a **reproductor de steps**, no com a document scrolling lineal. Cada step (definit al Topic — vegeu DATA-MODEL §3.1) és una pantalla; l'usuari avança amb "Següent →" / "← Anterior".
+
+**Principis:**
+
+- **Navegació lliure.** L'usuari pot avançar sempre, encara que hi hagi un exercici al step actual no completat. No bloquegem; la pedagogia és amable.
+- **Recordatori d'exercicis pendents.** Quan l'usuari arriba a l'últim step, si queden exercicis sense respondre correctament, es mostra un avís amb la llista de quins falten i enllaç directe a cada un.
+- **Deep-linking.** URL `/temes/:topicId` entra al primer step; `/temes/:topicId/:stepId` entra directament al step amb aquell `id`. Si no hi ha `stepId` vàlid, fallback al primer step amb un warn a consola en dev.
+- **Progrés visible** en format híbrid:
+  - A **mòbil** (< `md`): dots, un per step, sota el títol; l'actiu es destaca en color `accent`, els visitats amb variant muted. Mida tàctil generosa (≥ 24 px).
+  - A **desktop** (`md+`): barra fina amb tick marks per cada step i un fill progressiu fins al step actual. Tooltip amb el títol/id al passar el ratolí.
+- **Teclat:**
+  - `→` / `PageDown` → següent step.
+  - `←` / `PageUp` → anterior step.
+  - `Home` → primer step; `End` → últim.
+  - El handler ignora les tecles dins de camps de formulari (`<input>`, `<select>`, `<textarea>`) per no entrar en conflicte amb inputs d'exercici.
+- **Transicions animades** entre steps amb tokens de motion (§17.6): `opacity` + desplaçament lateral lleuger (`translateX(8px)` en entrada, `translateX(-8px)` en sortida, invertit si es retrocedeix). Duració `--duration-base`, easing `--ease-standard`.
+- **Sense persistència d'step actual.** `UserProgress` només desa els exercicis completats correctament (§3.5 DATA-MODEL), no el step actiu. Cada entrada al tema comença al primer step tret que hi hagi deep-link.
+
+**Components:**
+
+- `src/components/topic/StepViewer.jsx` — orquestra la navegació, anima transicions, publica l'step actual al URL.
+- `src/components/topic/StepProgress.jsx` — indicador de progrés (dots a mòbil, barra a desktop).
+- `src/components/topic/blocks/ExerciseBlock.jsx` — renderer del bloc `exercise`; amb chip "Comprovació ràpida" o "Avaluació" segons `variant`.
+- `src/components/topic/PendingExercisesNotice.jsx` — l'avís al final del tema, només si n'hi ha de pendents.
+
+**Mode "lectura llarga" (no MVP):** es preveu afegir en un futur un toggle per presentar tots els blocs del tema en scroll continu (útil per al repàs). Quan s'implementi, serà un wrapper alternatiu al mateix Topic sense canviar el schema.
+
+---
+
 *Fi del document.*
