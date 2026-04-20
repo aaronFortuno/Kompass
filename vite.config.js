@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-  base: '/kompass/',
+  base: '/Kompass/',
   plugins: [react()],
   resolve: {
     alias: {

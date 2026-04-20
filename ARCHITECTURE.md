@@ -204,7 +204,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/kompass/',           // Obligat per a GitHub Pages project site
+  base: '/Kompass/',           // Obligat per a GitHub Pages project site. El case ha de coincidir amb el nom exacte del repo.
   plugins: [react()],
   build: {
     outDir: 'dist',
@@ -223,11 +223,13 @@ export default defineConfig({
 
 ### 4.2. Base path i deploy
 
-GitHub Pages serveix el projecte des de `https://<user>.github.io/kompass/`. Per tant:
+GitHub Pages serveix el projecte des de `https://<user>.github.io/Kompass/` (el subdomini del user és sempre en minúscules, però el path respecta el case del nom del repo). Per tant:
 
-- `vite.config.js` → `base: '/kompass/'`.
+- `vite.config.js` → `base: '/Kompass/'` (amb `K` majúscula, com al repo).
 - `HashRouter` de React Router (no `BrowserRouter`) per evitar problemes amb refresh de rutes profundes.
-- Les URLs finals són `https://<user>.github.io/kompass/#/temes/A1b-19`.
+- Les URLs finals són `https://<user>.github.io/Kompass/#/temes/A1b-19`.
+
+**Atenció:** si algun dia es canvia el nom del repo, cal actualitzar `base` a `vite.config.js` i `href` del favicon a `index.html`.
 
 ### 4.3. Workflow `deploy.yml`
 
