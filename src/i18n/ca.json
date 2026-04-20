@@ -23,6 +23,17 @@
     "body": "Aquesta secció encara no està disponible. Torna més endavant.",
     "backHome": "Torna a l'inici"
   },
+  "topics": {
+    "title": "Temes",
+    "intro": "Tots els temes disponibles agrupats per nivell. Tria'n un per començar.",
+    "empty": "Encara no hi ha temes publicats."
+  },
+  "topic": {
+    "levelLabel": "Nivell {level}",
+    "backToIndex": "Torna a l'índex",
+    "notFoundTitle": "Tema no trobat",
+    "notFoundBody": "No existeix cap tema amb l'identificador {id}."
+  },
   "theme": {
     "label": "Tema",
     "light": "Clar",

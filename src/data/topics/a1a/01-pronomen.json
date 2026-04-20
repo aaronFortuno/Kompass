@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-1",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 1,
+  "title": "Pronomen — pronoms",
+  "shortTitle": "Pronomen",
+  "description": "Pronoms personals (ich, du, er…) i possessius (mein, dein, sein…) amb comparativa ES/CA/DE/EN.",
+  "axes": ["pronoms-verbs"],
+  "content": [
+    {
+      "type": "table",
+      "title": "1.1 Personalpronomen — Pronom personal",
+      "headers": ["Persona i nombre", "Pronom"],
+      "rows": [
+        ["1. Person Singular", "**ich**"],
+        ["2. Person Singular", "**du**"],
+        ["3. Person Singular (m. / f. / n.)", "**er** / **sie** / **es**"],
+        ["1. Person Plural", "**wir**"],
+        ["2. Person Plural", "**ihr**"],
+        ["3. Person Plural", "**sie**"],
+        ["Höflichkeitsform (Sg. = Pl.)", "**Sie**"]
+      ]
+    },
+    {
+      "type": "table",
+      "title": "1.2 Possessivpronomen — Pronom possessiu",
+      "headers": [
+        "Masc. / Neutre",
+        "Substantiu m. / n.",
+        "Femení",
+        "Substantiu fem."
+      ],
+      "rows": [
+        ["**mein**", "Name", "**meine**", "Adresse"],
+        ["**dein**", "Vorname", "**deine**", "Telefonnummer"],
+        [
+          "**sein** (d'ell) / **ihr** (d'ella)",
+          "Familienname",
+          "**seine** (d'ell) / **ihre** (d'ella)",
+          ""
+        ],
+        ["**Ihr** (de Vostè)", "", "**Ihre** (de Vostè)", ""]
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Vergleichen Sie — Compareu",
+      "headers": [
+        { "text": "Spanisch", "colspan": 2 },
+        { "text": "Katalanisch", "colspan": 2 },
+        { "text": "Deutsch", "colspan": 2 },
+        "Englisch"
+      ],
+      "rows": [
+        [
+          { "text": "su", "rowspan": 4 },
+          "nombre (de él)",
+          { "text": "el seu", "rowspan": 2 },
+          "nom (d'ell)",
+          "==s==ein",
+          "Name",
+          "his"
+        ],
+        [
+          "nombre (de ella)",
+          "nom (d'ella)",
+          "==i==hr",
+          "Name",
+          "her"
+        ],
+        [
+          "dirección (de él)",
+          { "text": "la seva", "rowspan": 2 },
+          "adreça (d'ell)",
+          "==s==eine",
+          "Adresse",
+          "his"
+        ],
+        [
+          "dirección (de ella)",
+          "adreça (d'ella)",
+          "==i==hre",
+          "Adresse",
+          "her"
+        ]
+      ],
+      "caption": "El \"su\" castellà és ambigu: el context ha de resoldre el referent. L'alemany distingeix el posseïdor masculí (sein) del femení (ihr)."
+    }
+  ],
+  "exerciseIds": []
+}

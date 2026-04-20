@@ -4,6 +4,8 @@ import { I18nProvider } from '@/i18n';
 import { AppShell } from '@/components/layout/AppShell.jsx';
 import { HomePage } from '@/pages/HomePage.jsx';
 import { PlaceholderPage } from '@/pages/PlaceholderPage.jsx';
+import { TopicsIndexPage } from '@/pages/TopicsIndexPage.jsx';
+import { TopicPage } from '@/pages/TopicPage.jsx';
 
 export default function App() {
   return (
@@ -13,7 +15,8 @@ export default function App() {
           <Routes>
             <Route element={<AppShell />}>
               <Route index element={<HomePage />} />
-              <Route path="temes" element={<PlaceholderPage titleKey="nav.topics" />} />
+              <Route path="temes" element={<TopicsIndexPage />} />
+              <Route path="temes/:topicId" element={<TopicPage />} />
               <Route path="rutes" element={<PlaceholderPage titleKey="nav.paths" />} />
               <Route path="progres" element={<PlaceholderPage titleKey="nav.progress" />} />
               <Route path="*" element={<PlaceholderPage />} />
