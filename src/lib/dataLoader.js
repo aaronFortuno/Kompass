@@ -11,6 +11,10 @@ const topicModules = import.meta.glob('../data/topics/**/*.json', {
   eager: true,
   import: 'default',
 });
+const exerciseModules = import.meta.glob('../data/exercises/**/*.json', {
+  eager: true,
+  import: 'default',
+});
 
 const topicsById = new Map();
 const topicsByLevel = new Map();
@@ -23,9 +27,14 @@ for (const data of Object.values(topicModules)) {
   topicsByLevel.get(levelKey).push(data);
 }
 
-// Ordre estable per `number` dins de cada nivell.
 for (const list of topicsByLevel.values()) {
   list.sort((a, b) => a.number - b.number);
+}
+
+const exercisesById = new Map();
+for (const data of Object.values(exerciseModules)) {
+  if (!data?.id) continue;
+  exercisesById.set(data.id, data);
 }
 
 export function getTopic(id) {
@@ -42,4 +51,8 @@ export function getTopicsByLevel(levelKey) {
 
 export function getAllLevelKeys() {
   return Array.from(topicsByLevel.keys()).sort();
+}
+
+export function getExercise(id) {
+  return exercisesById.get(id) ?? null;
 }

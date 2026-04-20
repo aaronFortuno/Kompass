@@ -40,10 +40,13 @@
     "goToStep": "Ir al paso {number}"
   },
   "exercise": {
-    "placeholderTitle": "Ejercicio pendiente de implementación",
-    "placeholderBody": "Aquí se renderizará el ejercicio {id} cuando tengamos el motor de ejercicios.",
     "variantQuickCheck": "Comprobación rápida",
-    "variantAssessment": "Evaluación"
+    "variantAssessment": "Evaluación",
+    "check": "Comprobar",
+    "retry": "Vuelve a intentarlo",
+    "correct": "¡Correcto!",
+    "incorrect": "Aún no",
+    "notFound": "Ejercicio {id} no encontrado."
   },
   "theme": {
     "label": "Tema",

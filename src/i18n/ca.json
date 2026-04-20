@@ -40,10 +40,13 @@
     "goToStep": "Ves al pas {number}"
   },
   "exercise": {
-    "placeholderTitle": "Exercici pendent d'implementació",
-    "placeholderBody": "Aquí es renderitzarà l'exercici {id} quan tinguem el motor d'exercicis.",
     "variantQuickCheck": "Comprovació ràpida",
-    "variantAssessment": "Avaluació"
+    "variantAssessment": "Avaluació",
+    "check": "Comprovar",
+    "retry": "Torna a provar",
+    "correct": "Correcte!",
+    "incorrect": "Encara no",
+    "notFound": "Exercici {id} no trobat."
   },
   "theme": {
     "label": "Tema",

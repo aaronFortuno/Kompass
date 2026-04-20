@@ -1,32 +1,42 @@
 import { useT } from '@/i18n';
+import { useExercise } from '@/hooks/useExercise.js';
+import { ExerciseEngine } from '@/components/exercise/ExerciseEngine.jsx';
 
 /*
  * ContentBlock type="exercise" · DATA-MODEL §3.2
- * Placeholder. El motor d'exercicis es construirà en una iteració
- * posterior. El bloc actual renderitza una targeta informativa amb
- * el chip de variant, de manera que la posició de l'exercici dins
- * del recorregut ja és visible.
+ * Carrega l'exercici del dataLoader i el lliura a ExerciseEngine.
+ * El chip de variant (quick-check / assessment) s'ensenya a dalt per
+ * donar context a l'usuari sobre la naturalesa del pas.
  */
 export function ExerciseBlock({ block }) {
   const { t } = useT();
   const { exerciseId, variant = 'quick-check' } = block;
+  const exercise = useExercise(exerciseId);
 
   const variantLabel =
     variant === 'assessment'
       ? t('exercise.variantAssessment')
       : t('exercise.variantQuickCheck');
 
+  if (!exercise) {
+    return (
+      <section className="card border-danger border-2">
+        <span className="text-danger text-sm">
+          {t('exercise.notFound', { id: exerciseId })}
+        </span>
+      </section>
+    );
+  }
+
   return (
-    <section className="card border-dashed">
-      <span className="inline-block text-xs uppercase tracking-wide font-semibold text-accent mb-2">
+    <section className="space-y-3">
+      <span className="inline-block text-xs uppercase tracking-wide font-semibold text-accent">
         {variantLabel}
       </span>
-      <h3 className="text-lg font-semibold text-content mb-1">
-        {t('exercise.placeholderTitle')}
-      </h3>
-      <p className="text-content-muted text-sm">
-        {t('exercise.placeholderBody', { id: exerciseId })}
-      </p>
+      {exercise.title && (
+        <h3 className="text-xl font-semibold text-content">{exercise.title}</h3>
+      )}
+      <ExerciseEngine exercise={exercise} />
     </section>
   );
 }
