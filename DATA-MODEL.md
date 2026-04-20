@@ -95,7 +95,11 @@ Un bloc de contingut conceptual dins d'un tema. És la unitat mínima del materi
 { "type": "explanation", "title": "…", "body": "markdown string" }
 ```
 
-Text explicatiu principal en Markdown. Pot incloure imatges, taules senzilles i èmfasis.
+Text explicatiu principal en **Markdown complet**: paràgrafs, llistes numerades i amb punts, subtítols `###` i `####` (evitar `#` i `##`, que xoquen amb els títols del tema), `**bold**`, `_italic_`, `code` inline, blockquotes, i taules senzilles de GFM. També admet la subsintaxi `==highlight==` (§3.6) per a destacat cromàtic dins del text.
+
+Els blocs `table` grans i les taules amb cel·les fusionades o èmfasi cromàtic es modelen com a blocs `table` separats, no dins del Markdown. Regla: el Markdown de `body` és per al recorregut narratiu; els blocs `table` són per a la síntesi o la referència estructurada.
+
+**Ús tipic:** un tema té N `explanation` blocks que formen la **lliçó** (recorregut didàctic amb motivació, concepte, desenvolupament gradual, paranys) seguits d'un o més blocs `table` que fan de **síntesi** final. Vegeu la política de material didàctic a la memòria del projecte.
 
 ```json
 {

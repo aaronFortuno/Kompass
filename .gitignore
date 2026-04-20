@@ -42,3 +42,6 @@ coverage/
 
 # Fonts de contingut (PDFs de treball, no s'han de publicar)
 .gramatik/
+
+# Esborranys de lliçons en revisió (abans d'integrar-los al JSON)
+.drafts/

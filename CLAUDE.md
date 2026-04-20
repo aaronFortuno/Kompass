@@ -95,12 +95,18 @@ Base path: `/kompass/`. URLs amb hash per evitar problemes amb rutes profundes.
 
 ### Afegir un tema nou
 
-1. Crea `src/data/topics/{nivell}/{num}-{slug}.json` seguint el schema `Topic` de DATA-MODEL §3.1.
-2. Crea la carpeta `src/data/exercises/{nivell}/{num}/` amb els fitxers JSON dels exercicis.
-3. Si el tema pertany a eixos temàtics existents, referencia'ls al camp `axes`. Si cal un eix nou, afegeix-lo a `src/data/axes.json` i documenta-ho.
-4. Executa `npm run validate-content`. Si falla, corregeix.
-5. Comprova visualment al browser que el tema renderitza i els exercicis funcionen.
-6. Commit: `Afegeix tema {id} ({title curt})`.
+El tema no és només la síntesi del PDF; porta una **lliçó narrativa** (explanation amb Markdown) + **síntesi** (taules tipus PDF) en aquest ordre. Vegeu la memòria del projecte "Política de material didàctic".
+
+1. **Esborrany de lliçó:** llança un subagent general-purpose amb el PDF corresponent (`.gramatik/{nivell}/…`) + les directrius pedagògiques de la memòria. Output: `.drafts/{topicId}-lesson.md`. (Aquesta carpeta està al `.gitignore`.)
+2. **Espera validació del desenvolupador** sobre l'esborrany abans de tocar res més. No integris contingut teòric sense vistiplau explícit.
+3. Crea `src/data/topics/{nivell}/{num}-{slug}.json` seguint el schema `Topic` de DATA-MODEL §3.1:
+   - Blocs `explanation` amb el Markdown de la lliçó validada.
+   - Blocs `table` amb la síntesi del PDF (com a A1a-1).
+4. Si cal, crea `src/data/exercises/{nivell}/{num}/` amb els fitxers JSON dels exercicis — però els exercicis els proposes tu com a esborranys i el desenvolupador els valida abans d'afegir-los al camp `exerciseIds`.
+5. Si el tema pertany a eixos temàtics existents, referencia'ls al camp `axes`. Si cal un eix nou, afegeix-lo a `src/data/axes.json` i documenta-ho.
+6. Executa `npm run validate-content`. Si falla, corregeix.
+7. Comprova visualment al browser que el tema renderitza i els exercicis funcionen.
+8. Commit: `Afegeix tema {id} ({title curt})`.
 
 ### Afegir un exercici a un tema existent
 
