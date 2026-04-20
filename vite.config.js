@@ -13,6 +13,14 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'),
     },
   },
+  server: {
+    port: 3003,
+    strictPort: true,
+  },
+  preview: {
+    port: 3003,
+    strictPort: true,
+  },
   build: {
     outDir: 'dist',
     sourcemap: true,
