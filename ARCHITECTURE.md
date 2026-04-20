@@ -677,6 +677,7 @@ Aquesta secció cobreix quatre transversals de presentació que afecten tots els
 - **Override manual:** toggle a l'header que alterna entre `light` i `dark`.
 - **Persistència:** clau `kompass.theme` a `localStorage`, amb valors `"light" | "dark"`. Clau independent del `UserProgress` per no afectar-ne l'esquema ni les migracions.
 - **Implementació:** `src/theme/index.jsx` exposa `ThemeProvider`, hook `useTheme()` i component `ThemeToggle`. Es munta a `App.jsx` per sobre del router.
+- **Transició suau:** el canvi de tema anima `background-color`, `color` i `border-color` amb `--duration-base` i `--ease-standard` a través d'una regla global a `*, *::before, *::after` (a `styles/index.css`, layer `base`). Les classes amb especificitat més alta (`.motion-hover`) sobreescriuen la duració, així els hovers continuen sent ràpids (120 ms).
 
 ### 17.3 Internacionalització (i18n)
 
