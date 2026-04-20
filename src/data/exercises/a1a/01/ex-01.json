@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-1-ex-01",
+  "topicId": "A1a-1",
+  "title": "Els pronoms personals en context",
+  "prompt": "Escriu el pronom personal correcte a cada buit.",
+  "difficulty": 1,
+  "tags": ["personalpronomen"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Hallo, {{1}} heiße Marc.\nDas ist Anna, und hier wohnt {{2}}.\nEntschuldigung, wie heißen {{3}}?\nIn Kompass lernen {{4}} Deutsch.",
+    "blanks": [
+      { "id": "1", "label": "1a sg. (jo)" },
+      { "id": "2", "label": "3a sg. f. (ella)" },
+      { "id": "3", "label": "cortesia (Vostè)" },
+      { "id": "4", "label": "1a pl. (nosaltres)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "jo" },
+      { "blankId": "2", "placeholder": "ella" },
+      { "blankId": "3", "placeholder": "Vostè" },
+      { "blankId": "4", "placeholder": "nosaltres" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "ich", "2": "sie", "3": "Sie", "4": "wir" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Fixa't que **Sie** (Vostè) és l'únic que sempre porta majúscula, encara que vagi al mig de la frase."
+    },
+    "incorrect": {
+      "default": "Revisa la persona i el nombre a cada frase. Pistes: _ich_ és minúscula al mig de frase; per a 'ella' → _sie_; per a 'Vostè' → **Sie** sempre amb majúscula; per a 'nosaltres' → _wir_."
+    }
+  }
+}

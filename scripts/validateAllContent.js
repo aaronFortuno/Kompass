@@ -9,6 +9,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { TopicSchema } from '../src/lib/schemas/topic.js';
+import { ExerciseSchema } from '../src/lib/schemas/exercise.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -72,8 +73,13 @@ async function main() {
     path.join(DATA_DIR, 'topics'),
     TopicSchema
   );
-  // Exercicis i rutes es validaran quan tinguem els seus schemas.
-  const total = topicErrors;
+  const exerciseErrors = await validateFiles(
+    'exercises',
+    path.join(DATA_DIR, 'exercises'),
+    ExerciseSchema
+  );
+  // Rutes es validaran quan tinguin schema.
+  const total = topicErrors + exerciseErrors;
   if (total > 0) {
     console.error(`\n${total} fitxer(s) amb errors.`);
     process.exit(1);

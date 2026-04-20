@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-1-ex-04",
+  "topicId": "A1a-1",
+  "title": "A l'oficina d'estudiants: mini-diàleg",
+  "prompt": "Completa el diàleg entre la recepcionista (tracte formal) i un nou estudiant.",
+  "difficulty": 2,
+  "tags": ["integration", "formal", "possessivpronomen"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "— Guten Tag! Wie heißen {{1}}?\n— {{2}} heiße Jonas Becker.\n— Und wie ist {{3}} Adresse, Herr Becker?\n— {{4}} Adresse ist Schillerstraße 8.\n— Das ist meine Kollegin Anna. {{5}} Telefonnummer ist 030 99 88 77.",
+    "blanks": [
+      { "id": "1", "label": "tracte formal" },
+      { "id": "2", "label": "qui respon: el Jonas" },
+      { "id": "3", "label": "possessiu formal + fem." },
+      { "id": "4", "label": "possessiu 1a sg. + fem." },
+      { "id": "5", "label": "possessiu d'ella (Anna) + fem." }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["du", "Sie", "ihr"] },
+      { "blankId": "2", "options": ["Ich", "Du", "Er"] },
+      { "blankId": "3", "options": ["dein", "Ihre", "Ihr"] },
+      { "blankId": "4", "options": ["Mein", "Meine", "Ihre"] },
+      { "blankId": "5", "options": ["Sein", "Ihre", "Ihr"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "Sie", "2": "Ich", "3": "Ihre", "4": "Meine", "5": "Ihre" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Felicitats! Has integrat tot el tema: cortesia **Sie**, possessiu formal **Ihre**, primera persona **Ich** i la concordança femenina amb _Adresse_ i _Telefonnummer_."
+    },
+    "incorrect": {
+      "default": "Tres pistes: (a) a una oficina amb un client desconegut el tracte és _Sie_, i el possessiu corresponent és _Ihr / Ihre_ sempre amb majúscula; (b) _Adresse_ i _Telefonnummer_ són femenins, per tant demanen forma amb _-e_; (c) el possessiu de l'Anna (3a sg. f.) és l'arrel _ihr-_; aquí a inici de frase s'escriu **Ihre** amb majúscula i la _-e_ per concordar amb _Telefonnummer_."
+    }
+  }
+}

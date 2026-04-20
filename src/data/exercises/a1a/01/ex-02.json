@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-1-ex-02",
+  "topicId": "A1a-1",
+  "title": "Mein o Meine? Concordança amb el substantiu",
+  "prompt": "Tria la forma correcta per a cada frase de presentació.",
+  "difficulty": 1,
+  "tags": ["possessivpronomen", "concordanca"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "{{1}} Name ist Laura.\n{{2}} Adresse ist Hauptstraße 12.\n{{3}} Vorname ist Jonas.\n{{4}} Telefonnummer ist 030 55 44 33.",
+    "blanks": [
+      { "id": "1", "label": "der Name (m.)" },
+      { "id": "2", "label": "die Adresse (f.)" },
+      { "id": "3", "label": "der Vorname (m.)" },
+      { "id": "4", "label": "die Telefonnummer (f.)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Mein", "Meine"] },
+      { "blankId": "2", "options": ["Mein", "Meine"] },
+      { "blankId": "3", "options": ["Mein", "Meine"] },
+      { "blankId": "4", "options": ["Mein", "Meine"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "Mein", "2": "Meine", "3": "Mein", "4": "Meine" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Ja has interioritzat la concordança: el possessiu mira el gènere del substantiu, no el del posseïdor."
+    },
+    "incorrect": {
+      "default": "Recorda: _der Name, der Vorname_ són masculins → forma curta **Mein**. _Die Adresse, die Telefonnummer_ són femenins → forma amb _-e_ → **Meine**."
+    }
+  }
+}

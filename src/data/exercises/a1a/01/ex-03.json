@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-1-ex-03",
+  "topicId": "A1a-1",
+  "title": "Sein, Seine, Ihr o Ihre?",
+  "prompt": "Tria la forma correcta aplicant la doble concordança: qui posseeix i què es posseeix.",
+  "difficulty": 2,
+  "tags": ["possessivpronomen", "sein-ihr"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Das ist Markus. {{1}} Name ist Markus Weber.\n{{2}} Adresse ist Hauptstraße 5.\nDas ist Anna. {{3}} Vorname ist Anna.\n{{4}} Telefonnummer ist 030 12345.",
+    "blanks": [
+      { "id": "1", "label": "ell + der Name" },
+      { "id": "2", "label": "ell + die Adresse" },
+      { "id": "3", "label": "ella + der Vorname" },
+      { "id": "4", "label": "ella + die Telefonnummer" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Sein", "Seine", "Ihr", "Ihre"] },
+      { "blankId": "2", "options": ["Sein", "Seine", "Ihr", "Ihre"] },
+      { "blankId": "3", "options": ["Sein", "Seine", "Ihr", "Ihre"] },
+      { "blankId": "4", "options": ["Sein", "Seine", "Ihr", "Ihre"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "Sein", "2": "Seine", "3": "Ihr", "4": "Ihre" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has aplicat bé les dues concordances: primer qui posseeix (ell/ella), després el gènere del substantiu."
+    },
+    "incorrect": {
+      "default": "Atenció a dues coses alhora: (1) Markus és home → arrel ==s==ein-; Anna és dona → arrel i==hr==-. (2) _Name, Vorname_ són masculins → forma curta; _Adresse, Telefonnummer_ són femenins → afegeix _-e_."
+    }
+  }
+}
