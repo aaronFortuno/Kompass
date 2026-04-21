@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-4-ex-06",
+  "topicId": "A1b-4",
+  "title": "Fórmules geogràfiques combinades",
+  "prompt": "Completa cada frase amb la fórmula geogràfica correcta. Escriu només el que falta al buit.",
+  "difficulty": 3,
+  "tags": ["himmelsrichtungen", "formules-geografiques", "am", "im-bundesland", "an-der-grenze", "typein", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) _Köln liegt {{1}} Rhein._ (preposició + article contrets)\n\nb) _München liegt im {{2}} Bayern._ (\"estat federal\")\n\nc) _Flensburg liegt {{3}} zu Dänemark._ (preposició + \"frontera\" en datiu)\n\nd) _Potsdam liegt {{4}} Berlin._ (\"a prop de\", fórmula amb _Nähe_)\n\ne) _Dresden liegt {{5}} Deutschlands._ (\"a l'est de\", dins del país)",
+    "blanks": [
+      { "id": "1", "label": "an + dem contret" },
+      { "id": "2", "label": "estat federal" },
+      { "id": "3", "label": "a la frontera" },
+      { "id": "4", "label": "a prop de" },
+      { "id": "5", "label": "a l'est" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "am / an dem…" },
+      { "blankId": "2", "placeholder": "Bundesland" },
+      { "blankId": "3", "placeholder": "an der Grenze" },
+      { "blankId": "4", "placeholder": "in der Nähe von" },
+      { "blankId": "5", "placeholder": "im Osten" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["am"],
+      "2": ["Bundesland"],
+      "3": ["an der Grenze"],
+      "4": ["in der Nähe von"],
+      "5": ["im Osten"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Cinc patrons productius que pots combinar per descriure qualsevol ciutat: ==_am_== + riu, ==_im Bundesland_==, ==_an der Grenze zu_==, ==_in der Nähe von_==, ==_im_== + cardinal. Amb això ja pots presentar el teu poble a un alemany.",
+      "references": ["A1b-4"]
+    },
+    "incorrect": {
+      "default": "Revisa les contraccions i els articles obligatoris: _an + dem = **am**_; _an **der** Grenze_ (datiu femení de _die Grenze_); _in **der** Nähe von_ (datiu femení de _die Nähe_).",
+      "byResponse": [
+        {
+          "match": { "1": "an Rhein" },
+          "message": "_An + dem = **am**_. Els rius alemanys porten article obligatori: _==am== Rhein_ (m.), _an der Elbe_ (f.).",
+          "references": ["A1b-4", "A1a-34"]
+        },
+        {
+          "match": { "1": "an dem" },
+          "message": "_An dem_ s'ha de contreure obligatòriament a ==_am_==. En el dia a dia, no contreure sona estrany.",
+          "references": ["A1b-4", "A1a-34"]
+        },
+        {
+          "match": { "3": "an die Grenze" },
+          "message": "_An die Grenze_ seria acusatiu (moviment: \"cap a la frontera\"). Per a posició (_liegen_): _an ==der== Grenze_ (datiu femení: _die Grenze → der Grenze_).",
+          "references": ["A1b-4"]
+        },
+        {
+          "match": { "4": "in Nähe von" },
+          "message": "Cal article: _in ==der== Nähe von_ (_die Nähe_ és femení, datiu = _der_).",
+          "references": ["A1b-4"]
+        }
+      ]
+    }
+  }
+}

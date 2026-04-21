@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-4-ex-05",
+  "topicId": "A1b-4",
+  "title": "_im Süden_ o _südlich von_",
+  "prompt": "Tria la forma correcta segons si es parla de la part d'un territori o de la relació entre dues ciutats.",
+  "difficulty": 2,
+  "tags": ["himmelsrichtungen", "im", "suedlich-von", "dropdownfill", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) \"Munic és al sud d'Alemanya.\" → _München liegt {{1}} Deutschlands._\n\nb) \"Potsdam és al sud de Berlín.\" → _Potsdam liegt {{2}} Berlin._\n\nc) \"Hamburg és al nord d'Alemanya.\" → _Hamburg liegt {{3}} Deutschlands._\n\nd) \"Leipzig és a l'oest de Dresden.\" → _Leipzig liegt {{4}} Dresden._",
+    "blanks": [
+      { "id": "1", "label": "part del país" },
+      { "id": "2", "label": "relació amb Berlín" },
+      { "id": "3", "label": "part del país" },
+      { "id": "4", "label": "relació amb Dresden" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["im Süden", "südlich von"] },
+      { "blankId": "2", "options": ["im Süden von", "südlich von"] },
+      { "blankId": "3", "options": ["im Norden", "nördlich von"] },
+      { "blankId": "4", "options": ["im Westen von", "westlich von"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "im Süden",
+      "2": "südlich von",
+      "3": "im Norden",
+      "4": "westlich von"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has entès la distinció més subtil del tema: ==**im + cardinal**== = _en quina part_ d'un territori; ==**cardinal + -lich von**== = _la relació amb un altre punt_.",
+      "references": ["A1b-4"]
+    },
+    "incorrect": {
+      "default": "Distingeix els dos patrons: _im Norden Deutschlands_ (dins d'Alemanya) vs _nördlich von Berlin_ (més al nord que Berlín, fora de Berlín).",
+      "byResponse": [
+        {
+          "match": { "2": "im Süden von" },
+          "message": "Atenció: _im Süden von Berlin_ voldria dir \"a la part sud de Berlín mateix\" (un barri). Per dir que Potsdam és una ciutat **separada, al sud de Berlín**, cal ==_südlich von_==.",
+          "references": ["A1b-4"]
+        },
+        {
+          "match": { "4": "im Westen von" },
+          "message": "Leipzig és una ciutat diferent de Dresden, no un barri de Dresden. La relació entre dues ciutats es marca amb ==_westlich von_==.",
+          "references": ["A1b-4"]
+        },
+        {
+          "match": { "1": "südlich von" },
+          "message": "Munic és **dins** d'Alemanya, a la seva part sud: ==_im Süden Deutschlands_==. _Südlich von Deutschland_ voldria dir \"més al sud que Alemanya\" (fora del país).",
+          "references": ["A1b-4"]
+        },
+        {
+          "match": { "3": "nördlich von" },
+          "message": "Hamburg és **dins** d'Alemanya, a la seva part nord: ==_im Norden Deutschlands_==. _Nördlich von Deutschland_ seria fora del país, cap a Dinamarca.",
+          "references": ["A1b-4"]
+        }
+      ]
+    }
+  }
+}

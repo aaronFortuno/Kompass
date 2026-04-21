@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-4-ex-01",
+  "topicId": "A1b-4",
+  "title": "La contracció _im_ amb punt cardinal",
+  "prompt": "Tria la forma correcta de _in + cardinal_.",
+  "difficulty": 1,
+  "tags": ["himmelsrichtungen", "im", "contraccio", "datiu", "singlechoice", "quick-check"],
+  "stimulus": {
+    "type": "text",
+    "content": "Completa la frase: _Hamburg liegt ___ Norden Deutschlands._"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "in", "label": "_in_" },
+      { "id": "im", "label": "_im_" },
+      { "id": "in-der", "label": "_in der_" },
+      { "id": "in-den", "label": "_in den_" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "im" },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. _in + dem_ (datiu masculí, perquè _der Norden_ és masculí) → contracta a ==**im**==. Aquesta contracció és obligatòria aquí, no opcional.",
+      "references": ["A1b-4"]
+    },
+    "incorrect": {
+      "default": "Recorda: _in_ amb punts cardinals regeix datiu, i _Norden_ és masculí. La contracció _in + dem_ → ==**im**== és obligatòria.",
+      "byResponse": [
+        {
+          "match": { "response": "in" },
+          "message": "Falta el datiu. _Norden_ és masculí (_der Norden_), i _in_ regeix datiu quan parlem de posició. Contracció: _in + dem = ==im==_.",
+          "references": ["A1b-4", "A1a-34"]
+        },
+        {
+          "match": { "response": "in-der" },
+          "message": "_in der_ és el datiu **femení**. _Der Norden_ és masculí, per tant: _in dem → ==im==_.",
+          "references": ["A1b-4"]
+        },
+        {
+          "match": { "response": "in-den" },
+          "message": "_in den_ seria acusatiu (moviment) o plural. Aquí volem datiu singular masculí: ==**im**==.",
+          "references": ["A1b-4"]
+        }
+      ]
+    }
+  }
+}

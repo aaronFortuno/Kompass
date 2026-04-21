@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-4-ex-02",
+  "topicId": "A1b-4",
+  "title": "Posició o moviment: _im_ vs _nach_",
+  "prompt": "Tria la frase correcta per expressar \"Viatgem cap al nord\".",
+  "difficulty": 1,
+  "tags": ["himmelsrichtungen", "im", "nach", "posicio-moviment", "singlechoice", "quick-check"],
+  "stimulus": {
+    "type": "text",
+    "content": "Tria la frase correcta per a: **\"Viatgem cap al nord.\"**"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "im", "label": "_Wir reisen im Norden._" },
+      { "id": "nach", "label": "_Wir reisen nach Norden._" },
+      { "id": "in", "label": "_Wir reisen in Norden._" },
+      { "id": "zu", "label": "_Wir reisen zu Norden._" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "nach" },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. _Reisen_ és moviment → pregunta _wohin?_ → ==**nach Norden**== (sense article).",
+      "references": ["A1b-4"]
+    },
+    "incorrect": {
+      "default": "Distingir posició / moviment: _wo?_ → ==**im** Norden==; _wohin?_ → ==**nach** Norden==. _Reisen_ és moviment.",
+      "byResponse": [
+        {
+          "match": { "response": "im" },
+          "message": "_Im Norden_ significa \"al nord\" (posició estàtica). Aquí hi ha moviment (_reisen_), per tant: ==**nach Norden**==.",
+          "references": ["A1b-4"]
+        },
+        {
+          "match": { "response": "zu" },
+          "message": "_Zu_ es fa servir amb persones o llocs concrets (_zum Arzt_), no amb punts cardinals. Amb cardinals: ==**nach**==.",
+          "references": ["A1b-4", "A1a-34"]
+        },
+        {
+          "match": { "response": "in" },
+          "message": "Amb cardinals no fem servir _in_ sol: per a posició contrau amb el datiu (==_im_==), per a moviment fes servir ==_nach_==.",
+          "references": ["A1b-4"]
+        }
+      ]
+    }
+  }
+}

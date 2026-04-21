@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-4-ex-04",
+  "topicId": "A1b-4",
+  "title": "_im_ o _nach_ segons el verb",
+  "prompt": "Escriu _im_ o _nach_ a cada buit segons si la frase expressa posició o moviment.",
+  "difficulty": 2,
+  "tags": ["himmelsrichtungen", "im", "nach", "posicio-moviment", "typein", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) _Hamburg liegt {{1}} Norden._\n\nb) _Wir fahren morgen {{2}} Süden._\n\nc) _Dresden liegt {{3}} Osten Deutschlands._\n\nd) _Der Zug aus Berlin fährt {{4}} Westen._\n\ne) _Frankfurt liegt {{5}} Westen Deutschlands._",
+    "blanks": [
+      { "id": "1", "label": "posició o moviment?" },
+      { "id": "2", "label": "posició o moviment?" },
+      { "id": "3", "label": "posició o moviment?" },
+      { "id": "4", "label": "posició o moviment?" },
+      { "id": "5", "label": "posició o moviment?" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "im / nach" },
+      { "blankId": "2", "placeholder": "im / nach" },
+      { "blankId": "3", "placeholder": "im / nach" },
+      { "blankId": "4", "placeholder": "im / nach" },
+      { "blankId": "5", "placeholder": "im / nach" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["im"],
+      "2": ["nach"],
+      "3": ["im"],
+      "4": ["nach"],
+      "5": ["im"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Ja domines la distinció ==**wo? → im**== / ==**wohin? → nach**==. Aquesta regla et cobrirà el 90% dels casos.",
+      "references": ["A1b-4"]
+    },
+    "incorrect": {
+      "default": "Identifica el verb. _liegen_ = posició (_wo?_ → ==**im**==); _fahren / fliegen / reisen_ = moviment (_wohin?_ → ==**nach**==)."
+    }
+  }
+}

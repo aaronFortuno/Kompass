@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-4-ex-03",
+  "topicId": "A1b-4",
+  "title": "Cardinals alemanys al compàs",
+  "prompt": "Associa cada paraula alemanya amb el símbol i la posició corresponent al compàs.",
+  "difficulty": 1,
+  "tags": ["himmelsrichtungen", "vocabulari", "matchpairs", "assessment"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "de1", "group": "Alemany", "content": { "type": "text", "content": "**Norden**" } },
+      { "id": "de2", "group": "Alemany", "content": { "type": "text", "content": "**Süden**" } },
+      { "id": "de3", "group": "Alemany", "content": { "type": "text", "content": "**Osten**" } },
+      { "id": "de4", "group": "Alemany", "content": { "type": "text", "content": "**Westen**" } },
+      { "id": "de5", "group": "Alemany", "content": { "type": "text", "content": "**Nordosten**" } },
+      { "id": "de6", "group": "Alemany", "content": { "type": "text", "content": "**Südwesten**" } },
+      { "id": "sym1", "group": "Símbol", "content": { "type": "text", "content": "N (dalt)" } },
+      { "id": "sym2", "group": "Símbol", "content": { "type": "text", "content": "S (baix)" } },
+      { "id": "sym3", "group": "Símbol", "content": { "type": "text", "content": "O (dreta)" } },
+      { "id": "sym4", "group": "Símbol", "content": { "type": "text", "content": "W (esquerra)" } },
+      { "id": "sym5", "group": "Símbol", "content": { "type": "text", "content": "NO (dalt-dreta)" } },
+      { "id": "sym6", "group": "Símbol", "content": { "type": "text", "content": "SW (baix-esquerra)" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Alemany",
+    "groupBLabel": "Símbol"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["de1", "sym1"],
+      ["de2", "sym2"],
+      ["de3", "sym3"],
+      ["de4", "sym4"],
+      ["de5", "sym5"],
+      ["de6", "sym6"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Recorda l'abreviatura alemanya: ==**O**== per _Osten_ (no _E_ com en anglès _East_). I els intermedis sempre vertical + horitzontal: ==_Nordosten_==, ==_Südwesten_==.",
+      "references": ["A1b-4"]
+    },
+    "incorrect": {
+      "default": "En alemany, _Osten_ = est (**O**, dreta al mapa), _Westen_ = oest (**W**, esquerra). Els intermedis es formen vertical + horitzontal: _Nordosten_ (NO, dalt-dreta), _Südwesten_ (SW, baix-esquerra)."
+    }
+  }
+}

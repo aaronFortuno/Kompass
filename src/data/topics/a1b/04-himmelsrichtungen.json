@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-4",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 4,
+  "title": "Himmelsrichtungen",
+  "shortTitle": "Himmelsrichtungen",
+  "description": "Els punts cardinals en alemany (Norden, Süden, Osten, Westen i intermedis), amb les tres preposicions clau (im per posició, nach per destinació, aus dem per origen), la construcció nördlich/südlich von per relacionar llocs i fórmules geogràfiques útils (an + riu, im Bundesland, an der Grenze zu, in der Nähe von).",
+  "axes": ["vocabulari-tematic", "preposicions"],
+  "prerequisites": ["A1a-34"],
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Situar al mapa\n\nSi algú et pregunta _Wo liegt Hamburg?_ (\"on és Hamburg?\"), no respondràs amb coordenades GPS. Diràs que és **al nord**. En alemany, aquesta resposta fa servir una eina senzilla però amb una petita trampa: els ==**Himmelsrichtungen**== (literalment \"direccions del cel\", és a dir, punts cardinals) van sempre amb **preposició + cas**, i la preposició canvia segons si parles de **posició** (estar a) o **moviment** (anar cap a).\n\nAquesta lliçó fa tres coses:\n\n1. Aprendre els quatre punts cardinals i els quatre intermedis.\n2. Distingir **im Norden** (posició) de **nach Norden** (moviment).\n3. Introduir fórmules útils per descriure la geografia d'una ciutat o país: _in der Nähe von_, _an der Grenze_, _im Bundesland_.\n\nÉs una lliçó molt productiva: amb cinc patrons fixos pots descriure on és qualsevol lloc."
+        }
+      ]
+    },
+    {
+      "id": "cardinals",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Els quatre bàsics"
+        },
+        {
+          "type": "table",
+          "headers": ["Alemany", "Català", "Abreviatura"],
+          "rows": [
+            ["**der Norden**", "el nord", "N"],
+            ["**der Süden**", "el sud", "S"],
+            ["**der Osten**", "l'est", "O"],
+            ["**der Westen**", "l'oest", "W"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Tots quatre són **masculins** (_der_) i acaben en **-en**. No és casualitat: és una terminació antiga que marca \"regió, àmbit\". Recorda'ls com un grup: _Norden, Süden, Osten, Westen_ — sempre amb article masculí."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Atenció a l'ortografia alemanya",
+          "body": "L'abreviatura alemanya d'_Osten_ és **O** (no _E_ com en català o anglès _East_). Als mapes alemanys veuràs **N / S / O / W** (i **NO, SO, NW, SW** per als intermedis)."
+        },
+        {
+          "type": "explanation",
+          "body": "**Els quatre intermedis** es formen combinant dos cardinals, sempre en aquest ordre fix (nord/sud primer, est/oest després):"
+        },
+        {
+          "type": "table",
+          "headers": ["Alemany", "Català"],
+          "rows": [
+            ["**der Nordosten**", "el nord-est"],
+            ["**der Nordwesten**", "el nord-oest"],
+            ["**der Südosten**", "el sud-est"],
+            ["**der Südwesten**", "el sud-oest"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Regla de formació",
+          "body": "Primer l'eix vertical (_Nord-_ o _Süd-_), després l'horitzontal (_-osten_ o _-westen_). Mai _Ostnorden_ ni _Westsüden_."
+        }
+      ]
+    },
+    {
+      "id": "im-position",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Posició: _im_ + cardinal\n\nPer dir **on és** una ciutat o regió dins d'un país, fem servir la preposició **in** + **dem** (datiu masculí), contracta a ==**im**==:\n\n> **im Norden, im Süden, im Osten, im Westen**\n> **im Nordosten, im Südwesten**, etc.\n\n**Patró bàsic:**\n\n> _Subjecte + liegt + im + cardinal_\n\n**Exemples (d'Alemanya):**\n\n- _Kiel liegt ==im Norden==._ → Kiel és al nord.\n- _Berlin liegt ==im Osten==._ → Berlín és a l'est.\n- _München liegt ==im Süden==._ → Munic és al sud.\n- _Stuttgart liegt ==im Südwesten==._ → Stuttgart és al sud-oest."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Per què _liegen_ i no _sein_?",
+          "body": "En alemany, per a **localitzacions geogràfiques** (ciutats, rius, muntanyes...) es prefereix ==_liegen_== (\"jeure, estar estès\"). _München ist im Süden_ no és incorrecte, però sona menys natural que _München liegt im Süden_. Pensa-ho com \"Munic _s'estén_ al sud\"."
+        }
+      ]
+    },
+    {
+      "id": "check-im",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-4-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "nach-movement",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Moviment: _nach_ + cardinal\n\nSi en comptes de dir **on ets** vols dir **cap a on vas**, canvia la preposició. Fem servir ==**nach**== + cardinal **sense article**:\n\n> **nach Norden, nach Süden, nach Osten, nach Westen**\n\n**Patró:**\n\n> _Subjecte + verb de moviment + nach + cardinal_\n\n**Exemples:**\n\n- _Der Zug fährt ==nach Süden==._ → El tren va cap al sud.\n- _Wir fliegen ==nach Osten==._ → Volem cap a l'est.\n- _Der Wind weht ==nach Westen==._ → El vent bufa cap a l'oest."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Contrast clau",
+          "body": "_Berlin liegt ==im== Osten_ (posició) vs. _Wir fahren ==nach== Osten_ (moviment). La mateixa paraula _Osten_, dues preposicions diferents. El truc: pregunta't _wo?_ (on?) → **im**; pregunta't _wohin?_ (cap a on?) → **nach**."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Per què _nach_ sense article?",
+          "body": "_Nach_ és la mateixa preposició que fa servir per anar a ciutats i països sense article: _nach Berlin, nach Deutschland_. Els punts cardinals es comporten com \"destinacions generals\" i per això perden l'article."
+        }
+      ]
+    },
+    {
+      "id": "check-nach",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-4-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "von-origin",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### D'on ve: _aus dem_ + cardinal\n\nPer completar el quadre, per indicar **procedència** (d'on ve alguna cosa) amb un cardinal, fem servir **aus dem** (sí, amb article, perquè _aus_ regeix datiu):\n\n- _Der Wind kommt ==aus dem Norden==._ → El vent ve del nord.\n- _Sie kommt ==aus dem Süden== Spaniens._ → Ella ve del sud d'Espanya.\n\nAlternativament, amb adjectiu, es pot dir _aus dem nördlichen Teil_ (\"de la part septentrional\"), però **aus dem + cardinal** és la forma estàndard en A1."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Resum de les tres preposicions",
+          "body": "- **Wo?** → ==**im** Norden== (posició)\n- **Wohin?** → ==**nach** Norden== (destinació)\n- **Woher?** → ==**aus dem** Norden== (origen)"
+        }
+      ]
+    },
+    {
+      "id": "noerdlich-von",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Relació entre llocs: _nördlich von_\n\nFins ara hem situat un lloc **dins d'un país**: _Kiel liegt im Norden_ (de Alemanya, implícit). Però sovint vols dir que una ciutat és **al nord d'una altra ciutat** (relació entre dos punts). Aquí canviem de construcció:\n\n> ==**nördlich von**== / südlich von / östlich von / westlich von + Dativ\n\n- _Potsdam liegt ==südlich von Berlin==._ → Potsdam és al sud de Berlín.\n- _Bremen liegt ==nordwestlich von Hannover==._ → Bremen és al nord-oest d'Hannover.\n- _Leipzig liegt ==westlich von Dresden==._ → Leipzig és a l'oest de Dresden.\n\n**Formació:** cardinal sense _-en_ + **-lich** + **von** + _datiu_:"
+        },
+        {
+          "type": "table",
+          "headers": ["Cardinal", "Adjectiu direccional"],
+          "rows": [
+            ["Norden", "nördlich"],
+            ["Süden", "südlich"],
+            ["Osten", "östlich"],
+            ["Westen", "westlich"],
+            ["Nordosten", "nordöstlich"],
+            ["Südwesten", "südwestlich"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Contrast essencial",
+          "body": "_München liegt ==im Süden==_ (dins d'Alemanya, al sud) vs. _München liegt ==südlich von Nürnberg==_ (Munic és més al sud que Nuremberg). La primera forma et diu _en quina part_ d'un territori; la segona, _la relació amb un altre punt_."
+        }
+      ]
+    },
+    {
+      "id": "extras",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Altres fórmules geogràfiques útils\n\nAquestes expressions acompanyen els cardinals en descripcions reals i t'estalvien frases llargues.\n\n**1. in der Nähe von + Dativ** → \"a prop de\"\n\n- _Potsdam liegt ==in der Nähe von Berlin==._ → Potsdam és a prop de Berlín.\n\n**2. nicht weit von + Dativ** → \"no lluny de\"\n\n- _Wiesbaden liegt ==nicht weit von Frankfurt==._ → Wiesbaden no és lluny de Frankfurt.\n\n**3. im Bundesland + nom** → \"a l'estat federal de…\"\n\n- _München liegt ==im Bundesland Bayern==._ → Munic és a l'estat federal de Baviera.\n- Alemanya té 16 ==_Bundesländer_== (estats federats). Alguns que veuràs: _Bayern, Sachsen, Hessen, Nordrhein-Westfalen, Baden-Württemberg_.\n\n**4. an einem Fluss** → \"a un riu\"\n\n- _Köln liegt ==am Rhein==._ → Colònia és al Rin. (_an dem → am_)\n- _Dresden liegt ==an der Elbe==._ → Dresden és a l'Elba.\n\n**5. an der Grenze (zu…)** → \"a la frontera (amb…)\"\n\n- _Flensburg liegt ==an der Grenze zu Dänemark==._ → Flensburg és a la frontera amb Dinamarca.\n- També: _an der dänischen Grenze_ (a la frontera danesa)."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Patró combinat típic",
+          "body": "_München liegt im Süden Deutschlands, im Bundesland Bayern, nicht weit von der Grenze zu Österreich._ Una sola frase, tres fórmules, tota una localització."
+        }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Pitfalls i errors freqüents\n\n**1. Confondre _im_ i _nach_.**\nÉs l'error número u. _Im Norden_ = posició (\"està al nord\"). _Nach Norden_ = direcció (\"cap al nord\"). No són intercanviables. Si dubtes, substitueix mentalment: _wo?_ → im; _wohin?_ → nach.\n\n**2. Posar article després de _nach_.**\n_Nach dem Norden_ és incorrecte. Amb punts cardinals, **nach** sempre va sol: _nach Norden_, _nach Süden_, _nach Südosten_.\n\n**3. Treure l'article després de _aus_.**\nAl contrari: _aus Norden_ és incorrecte. Aquí **sí** que cal article: _aus ==dem== Norden_.\n\n**4. Oblidar la _-e-_ interior en _östlich_.**\nÉs _östlich_ amb **ö** (umlaut) i amb **-lich**, no _ostlich_ ni _östig_. De la mateixa manera: _nördlich_ (amb ö), _südlich_ (amb ü).\n\n**5. Ordre dels intermedis.**\nÉs ==_Nordosten_==, no _Ostnorden_. ==_Südwesten_==, no _Westsüden_. Sempre **vertical + horitzontal**.\n\n**6. _Liegt_ vs. _ist_ vs. _befindet sich_.**\nPer a geografia, el verb natural és _liegen_. _Sein_ és correcte però pla. _Sich befinden_ (\"trobar-se\") és més formal i el veuràs en textos escrits, no en conversa."
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Traduir literalment \"al nord de\" amb _im_",
+          "body": "\"Potsdam és al sud de Berlín\" **no** és _Potsdam liegt im Süden von Berlin_ (això vol dir \"a la part sud de Berlín mateix\", dins la ciutat!). La traducció correcta és _Potsdam liegt ==südlich von== Berlin_. Aquesta distinció _im Süden vs. südlich von_ és la trampa més subtil del tema."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-4-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-4-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-4-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-4-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Recapitulem\n\nHas après a situar qualsevol lloc a Alemanya (i més enllà) amb fórmules simples i repetibles. Els cinc patrons clau del tema:\n\n1. **Wo?** → _liegt ==im== + cardinal_ · _Berlin liegt im Osten._\n2. **Wohin?** → _fährt ==nach== + cardinal_ · _Wir fahren nach Süden._\n3. **Woher?** → _kommt ==aus dem== + cardinal_ · _Der Wind kommt aus dem Norden._\n4. **Relació entre ciutats** → _==nördlich/südlich/östlich/westlich von== + dativ_ · _Potsdam liegt südlich von Berlin._\n5. **Fórmules complementàries** → _an + riu_ (_am Rhein_), _im Bundesland_ (_im Bundesland Bayern_), _in der Nähe von_, _an der Grenze zu_."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Frase-tipus que ho concentra tot",
+          "body": "_Freiburg liegt ==im Südwesten== Deutschlands, ==im Bundesland== Baden-Württemberg, ==nicht weit von der Grenze zu== Frankreich und der Schweiz._\n\nUna sola frase, quatre fórmules, localització total."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Mini-test mental",
+          "body": "Pregunta't on és la teva ciutat i digues-ho en alemany amb tres d'aquestes construccions. Si pots fer-ho sense aturar-te, tens el tema assimilat.\n\n_Und jetzt weißt du, wo alles liegt. Bis zum nächsten Thema!_"
+        }
+      ]
+    }
+  ]
+}
