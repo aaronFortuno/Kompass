@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-27",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 27,
+  "title": "Verben mit Nominativ und Akkusativ",
+  "shortTitle": "Verben + Akk",
+  "description": "Introducció conceptual a l'acusatiu com a cas del complement directe. Es presenta la pregunta diagnòstica (_Wen?_ / _Was?_), l'estructura subjecte (Nom) + verb + objecte (Akk), la família de verbs típics d'A1 que regeixen acusatiu (_haben, kaufen, essen, trinken, nehmen, sehen, lesen, bekommen, bezahlen, brauchen, machen, möchten, suchen_) i el contrast amb _sein_ com a verb copulatiu (atribut en nominatiu). Les formes concretes dels articles en acusatiu es treballen al tema A1a-28.",
+  "axes": ["pronoms-verbs", "casos"],
+  "prerequisites": ["A1a-14"],
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Del concepte a la pràctica: l'acusatiu arriba\n\nA la lliçó **A1a-14** et vam presentar una idea clau: l'alemany **declina**. Els articles no són fixos; canvien segons la **funció sintàctica** del substantiu a la frase. Allà vam anunciar tres casos —**nominatiu**, **acusatiu**, **datiu**— i vam dir que els aniríem treballant un per un.\n\nFins ara, tot el que has vist amb _der, die, das, ein, eine, kein_… ha estat sempre en **nominatiu**, el cas del subjecte. Però les frases reals no només tenen subjecte: hi ha coses que es compren, es mengen, es veuen, es tenen. Això és el **complement directe**, i en alemany té el seu cas propi: l'**acusatiu** (_Akkusativ_).\n\nAquesta lliçó té dos objectius lligats:\n\n1. Entendre **què és l'acusatiu** com a funció: quan el necessitem i per què.\n2. Conèixer la família de **verbs que demanen acusatiu** a l'A1 (_haben, kaufen, essen, trinken, nehmen, sehen, lesen, bekommen, bezahlen…_).\n\nLa forma concreta dels articles en acusatiu (_den, die, das, einen, eine, ein…_) la veurem **amb detall a A1a-28**. Avui ens centrem en el **concepte i els verbs**. Tu, amb la feina d'A1a-14 ben feta, ja tens el marc mental per entendre el que ve."
+        }
+      ]
+    },
+    {
+      "id": "que-es-acusatiu",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Què és l'acusatiu?\n\nL'**acusatiu** (_Akkusativ_, abreujat _Akk_) és el cas del **complement directe**: el substantiu que rep directament l'acció del verb.\n\nLa pregunta que el delata és senzilla:\n\n> ==Wen?== (a qui?) / ==Was?== (què?)\n\nSi darrere d'un verb pots preguntar _Wen?_ o _Was?_ i obtens una resposta, aquesta resposta va en **acusatiu**.\n\n**Exemples (amb la pregunta diagnòstica):**\n\n- _Ich trinke **einen Apfelsaft**._ → _Was trinke ich?_ → _einen Apfelsaft._ ✅ Acusatiu.\n- _Er kauft **ein Buch**._ → _Was kauft er?_ → _ein Buch._ ✅ Acusatiu.\n- _Wir sehen **den Film**._ → _Was sehen wir?_ → _den Film._ ✅ Acusatiu."
+        },
+        {
+          "type": "explanation",
+          "body": "#### Com es tradueix això al català\n\nEl **complement directe** també existeix en català i en castellà, però nosaltres no el marquem canviant l'article. El marquem amb **l'ordre de les paraules** i, de vegades, amb la preposició _a_ (en castellà, davant de persones):"
+        },
+        {
+          "type": "table",
+          "headers": ["Català", "Castellà", "Alemany"],
+          "rows": [
+            ["Jo bec **un suc**.", "Yo bebo **un zumo**.", "_Ich trinke **einen Saft**._"],
+            ["Veig **el Marc**.", "Veo **a Marcos**.", "_Ich sehe **den Marc**._"],
+            ["Comprem **una poma**.", "Compramos **una manzana**.", "_Wir kaufen **einen Apfel**._"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Observa: en català _un suc_ i _el Marc_ tenen els mateixos articles que si fossin subjecte. En alemany, el salt de _ein_ a _einen_ i de _der_ a _den_ et diu, **abans que el significat**, que aquell substantiu és complement directe. L'article fa de ==senyal lluminós== de funció sintàctica."
+        }
+      ]
+    },
+    {
+      "id": "estructura-frase",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### L'estructura bàsica: subjecte (Nom) + verb + objecte (Akk)\n\nLa frase tipus d'aquesta lliçó té tres peces:\n\n> **Subjecte** (Nominatiu) + **verb conjugat** + **complement directe** (Acusatiu)"
+        },
+        {
+          "type": "table",
+          "headers": ["Subjecte (Nom)", "Verb", "Objecte directe (Akk)"],
+          "rows": [
+            ["_Ich_", "_habe_", "_einen Hund._"],
+            ["_Du_", "_kaufst_", "_ein Brot._"],
+            ["_Er_", "_isst_", "_einen Apfel._"],
+            ["_Wir_", "_sehen_", "_den Film._"],
+            ["_Sie_", "_liest_", "_die Zeitung._"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Dos casos conviuen a la mateixa frase: el **subjecte va en nominatiu** (_ich, du, er…_ o _der/die/das Substantiv_) i l'**objecte va en acusatiu** (amb l'article adaptat). El verb, al mig, és qui **demana** l'acusatiu."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Idea clau",
+          "body": "No és que _Apfel_ sigui acusatiu pel fet de ser una poma; és acusatiu perquè _essen_ (menjar) és un verb que exigeix un complement directe. El verb **governa** el cas."
+        }
+      ]
+    },
+    {
+      "id": "verbs-tipics",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Verbs típics que demanen acusatiu a l'A1\n\nAquí tens la llista de verbs de nivell A1 que porten **sempre o gairebé sempre** un objecte directe en acusatiu. No cal que els memoritzis de cop; alguns ja els coneixes d'unitats anteriors. El que et demano és que, quan en vegis un, ja pensis: \"aquest vol **acusatiu**\"."
+        },
+        {
+          "type": "table",
+          "headers": ["Verb", "Significat", "Exemple"],
+          "rows": [
+            ["**haben**", "tenir", "_Ich habe ==einen Bruder==._"],
+            ["**kaufen**", "comprar", "_Sie kauft ==ein Kleid==._"],
+            ["**essen**", "menjar", "_Er isst ==einen Apfel==._"],
+            ["**trinken**", "beure", "_Wir trinken ==einen Kaffee==._"],
+            ["**nehmen**", "agafar, prendre", "_Ich nehme ==die Suppe==._"],
+            ["**sehen**", "veure", "_Ihr seht ==den Film==._"],
+            ["**lesen**", "llegir", "_Du liest ==ein Buch==._"],
+            ["**bekommen**", "rebre, obtenir", "_Er bekommt ==ein Geschenk==._"],
+            ["**bezahlen**", "pagar", "_Ich bezahle ==die Rechnung==._"],
+            ["**suchen**", "buscar", "_Wir suchen ==die Adresse==._"],
+            ["**brauchen**", "necessitar", "_Ich brauche ==einen Stift==._"],
+            ["**machen**", "fer", "_Sie macht ==die Hausaufgaben==._"],
+            ["**möchten**", "voldria", "_Ich möchte ==eine Pizza==._"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Fals amic: _bekommen_",
+          "body": "_bekommen_ **no** vol dir \"esdevenir\" (això és _werden_). Vol dir **rebre, obtenir** —en una situació de restaurant, per exemple, _Ich bekomme ein Rindersteak_ vol dir \"jo prenc / per a mi el bistec de vedella\". És un fals amic clàssic amb l'anglès _to become_."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista pedagògica",
+          "body": "El PDF de l'IOC d'aquesta lliçó treballa sobretot amb escenes de **restaurant**: _nehmen, trinken, bekommen, bezahlen, essen_ apareixen una i altra vegada amb plats i begudes. No és casualitat: és el context natural d'A1 on més acusatius amuntegaràs en poques frases."
+        }
+      ]
+    },
+    {
+      "id": "contrast-sein",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Contrast clau: _sein_ **no** demana acusatiu\n\nUn malentès freqüent: si tot substantiu darrere d'un verb és acusatiu, _sein_ (ser) també ho seria? ==No==. El verb _sein_ és un verb **copulatiu**: no té complement directe, sinó un **atribut**. I l'atribut, en alemany, va en **nominatiu**, com el subjecte."
+        },
+        {
+          "type": "table",
+          "headers": ["Verb", "Cas del substantiu després", "Exemple"],
+          "rows": [
+            ["**sein** (ser)", "**Nominatiu**", "_Das ist ==ein== Apfel._"],
+            ["**essen** (menjar)", "**Acusatiu**", "_Ich esse ==einen== Apfel._"],
+            ["**heißen** (dir-se)", "**Nominatiu**", "_Er ist ==ein== Lehrer._ (també amb _sein_)"],
+            ["**haben** (tenir)", "**Acusatiu**", "_Ich habe ==einen== Bruder._"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Mira bé les dues primeres files: el mateix mot, _Apfel_, però amb article diferent. A la primera frase és **atribut** (diu **què és** una cosa assenyalada) → nominatiu → _ein Apfel_. A la segona és **complement directe** (què menjo) → acusatiu → _einen Apfel_.\n\nAquesta parella _Das ist ein…_ / _Ich habe einen…_ és un dels exercicis més repetits del PDF IOC: és la manera més neta de veure, en dues frases consecutives, com el cas canvia segons la feina que fa el substantiu."
+        }
+      ]
+    },
+    {
+      "id": "quick-check-funcio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-27-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "quick-check-verbs",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-27-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. Creure que \"l'article no canvia\" perquè en català no canvia.**\nL'instint romànic és mantenir _ein Apfel_ sempre igual. Però en acusatiu masculí, ==_ein_ es converteix en _einen_==, i _der_ es converteix en ==_den_==. La sorpresa més gran ve amb el masculí; els detalls concrets els treballes a **A1a-28**.\n\n- Incorrecte: _Ich habe **ein** Bruder._ ❌\n- Correcte: _Ich habe ==einen== Bruder._ ✅\n\n**2. Confondre _sein_ amb verbs d'acció.**\nSi la frase és _Das ist…_, el substantiu va en **nominatiu** (_Das ist ein Apfel_). Només si el verb fa una acció sobre l'objecte (_essen, kaufen, haben…_) entra l'acusatiu.\n\n- Incorrecte: _Das ist einen Apfel._ ❌\n- Correcte: _Das ist ==ein== Apfel._ / _Ich esse ==einen== Apfel._ ✅\n\n**3. El fals amic _bekommen_.**\n_bekommen_ no vol dir \"esdevenir, tornar-se\". Vol dir **rebre**. A la pregunta _Was bekommen Sie?_ del cambrer, la resposta és _Ich bekomme ein Steak_ (\"per a mi, un bistec\"), no \"jo em converteixo en bistec\".\n\n**4. Oblidar que el plural no té article indeterminat.**\nEn plural, _ein_ simplement **desapareix**: _Das sind Pommes frites_ → _Ich nehme Pommes frites._ El negatiu, en canvi, sí que hi és: _==keine== Pommes frites_. Això ja ho tens treballat a la família de _kein_.\n\n**5. Col·locar el complement directe abans del verb sense pensar-ho.**\nEn alemany pots dir _Einen Apfel esse ich_ (amb èmfasi), però la frase neutra és _Ich esse einen Apfel_. De moment, mantén l'ordre **subjecte – verb – objecte** i fixa't en l'**article**, no en l'ordre."
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Parany crític",
+          "body": "**_sein_ no regeix acusatiu.** Es diu _Das ist **ein** Apfel_ (nominatiu), mai _~~Das ist einen Apfel~~_. El canvi _ein → einen_ només passa amb verbs que demanen complement directe (_haben, kaufen, essen, sehen, nehmen, bekommen…_)."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-27-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-27-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-27-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-27-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi del tema\n\n**Tres idees per endur-te a casa:**\n\n1. **L'acusatiu és el cas del complement directe** — el substantiu que respon a _Wen?_ (a qui?) o _Was?_ (què?) darrere d'un verb. En català no té marca formal; en alemany sí: l'article canvia.\n2. **El verb governa el cas** — no és el substantiu qui decideix si va en acusatiu, sinó el **verb**. _sein_ vol nominatiu (atribut); _haben, kaufen, essen, trinken, nehmen, sehen, lesen, bekommen, bezahlen, brauchen, möchten…_ volen ==acusatiu==.\n3. **El canvi més visible és al masculí** — _ein_ passa a _einen_, _der_ passa a _den_. Femení, neutre i plural tenen formes que coincideixen amb el nominatiu (_die, das, die_). Els detalls complets de la taula els veuràs a **A1a-28**."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista pràctica",
+          "body": "Cada cop que aprenguis un verb nou, apunta-te'l amb la seva ==**regència**==: \"_essen_ + Akk\", \"_haben_ + Akk\", \"_sein_ + Nom\". Aquest petit gest —marcar el cas al costat del verb al teu quadern— et salvarà moltíssimes frases. És exactament el que fan els diccionaris alemanys per a estudiants."
+        },
+        {
+          "type": "explanation",
+          "body": "**Connexions:** **A1a-14** (concepte de declinació i casos), **A1a-12/13** (articles determinats i indeterminats en nominatiu), **A1a-28** (articles en acusatiu: formes concretes de _den, einen, keinen_), i més endavant el **datiu** (A1b) i els **pronoms personals en acusatiu** (_mich, dich, ihn, sie, es, uns, euch, sie_). Avui has posat el marc conceptual; la propera lliçó hi omple la taula."
+        }
+      ]
+    }
+  ]
+}

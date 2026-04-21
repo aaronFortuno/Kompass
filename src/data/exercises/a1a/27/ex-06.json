@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-27-ex-06",
+  "topicId": "A1a-27",
+  "title": "Fonaments de l'acusatiu",
+  "prompt": "Valora si les afirmacions següents són certes o falses. És la síntesi conceptual final de la lliçó.",
+  "difficulty": 2,
+  "tags": ["síntesi", "acusatiu", "sein", "truefalse", "assessment"],
+  "stimulus": {
+    "type": "text",
+    "content": "Llegeix cada afirmació amb atenció i decideix si és certa o falsa."
+  },
+  "interaction": {
+    "type": "trueFalse",
+    "statements": [
+      { "id": "s1", "text": "En alemany, l'**acusatiu** és el cas del complement directe." },
+      { "id": "s2", "text": "Amb el verb _sein_, el substantiu que ve darrere va en acusatiu: _Das ist einen Apfel_." },
+      { "id": "s3", "text": "Els verbs _haben, kaufen, essen, trinken, sehen, lesen_ demanen un objecte directe en acusatiu." },
+      { "id": "s4", "text": "Les preguntes diagnòstiques de l'acusatiu són _Wen?_ i _Was?_" }
+    ]
+  },
+  "validation": {
+    "type": "truthMap",
+    "answers": {
+      "s1": true,
+      "s2": false,
+      "s3": true,
+      "s4": true
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent! Tens clars els fonaments de la lliçó: l'acusatiu marca el complement directe; _sein_ és l'excepció (atribut en nominatiu, _ein Apfel_); la família de verbs d'acció d'A1 demana acusatiu; i _Wen? / Was?_ són les preguntes que el delaten.",
+      "references": ["A1a-27"]
+    },
+    "incorrect": {
+      "default": "Repassa el punt s2: _sein_ és copulatiu i no demana acusatiu. Es diu _Das ist **ein** Apfel_ (nominatiu), no _einen_. La resta d'afirmacions són correctes."
+    }
+  }
+}

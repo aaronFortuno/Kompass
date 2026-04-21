@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-27-ex-01",
+  "topicId": "A1a-27",
+  "title": "Nominatiu o acusatiu? El verb decideix",
+  "prompt": "Per a cada frase, digues si el substantiu en negreta és subjecte (nominatiu) o complement directe (acusatiu). Recorda: _sein_ no demana acusatiu.",
+  "difficulty": 1,
+  "tags": ["nominatiu", "acusatiu", "sein", "quick-check"],
+  "stimulus": {
+    "type": "text",
+    "content": "Llegeix cada frase i decideix si l'afirmació sobre el cas del substantiu és certa o falsa."
+  },
+  "interaction": {
+    "type": "trueFalse",
+    "statements": [
+      { "id": "s1", "text": "_Ich kaufe **einen Apfel**._ → El substantiu _Apfel_ està en acusatiu (és complement directe)." },
+      { "id": "s2", "text": "_Das ist **ein Apfel**._ → El substantiu _Apfel_ està en acusatiu." },
+      { "id": "s3", "text": "_Wir sehen **den Film**._ → El substantiu _Film_ està en acusatiu." },
+      { "id": "s4", "text": "_Er trinkt **einen Kaffee**._ → El substantiu _Kaffee_ està en nominatiu." }
+    ]
+  },
+  "validation": {
+    "type": "truthMap",
+    "answers": {
+      "s1": true,
+      "s2": false,
+      "s3": true,
+      "s4": false
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé! _kaufen, sehen, trinken_ demanen acusatiu (complement directe). _sein_ és copulatiu i l'atribut va en nominatiu: _Das ist ein Apfel_, no _einen Apfel_.",
+      "references": ["A1a-27"]
+    },
+    "incorrect": {
+      "default": "Recorda la regla: el verb decideix el cas. _sein_ (s2) és copulatiu → atribut en nominatiu. _kaufen, sehen, trinken_ (s1, s3, s4) volen acusatiu."
+    }
+  }
+}

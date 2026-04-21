@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-27-ex-05",
+  "topicId": "A1a-27",
+  "title": "Tria un verb que encaixi",
+  "prompt": "Completa amb un verb de la lliçó (forma _ich_, present). L'objecte _einen Apfelsaft_ ja està en acusatiu, així que necessites un verb que demani acusatiu. Escriu només el verb, sense cap altra paraula.",
+  "difficulty": 2,
+  "tags": ["verbs", "acusatiu", "producció", "typein", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Ich {{1}} einen Apfelsaft._ (Prenc / bec un suc de poma.)",
+    "blanks": [
+      { "id": "1", "label": "verb en forma _ich_ que demani acusatiu" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "verb en forma _ich_" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["trinke", "nehme", "kaufe", "bekomme", "bezahle", "möchte", "moechte"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé! Qualsevol d'aquests verbs encaixa: _trinke, nehme, kaufe, bekomme, bezahle, möchte_ (tots demanen acusatiu). L'objecte _einen Apfelsaft_ ja apareix en forma d'acusatiu masculí (_ein → einen_).",
+      "references": ["A1a-27"]
+    },
+    "incorrect": {
+      "default": "Pensa en verbs que es puguin fer amb una beguda: _trinken_ (beure), _nehmen_ (prendre, p. ex. al restaurant), _kaufen_ (comprar), _bekommen_ (rebre), _bezahlen_ (pagar), _möchten_ (voldria). Tots volen acusatiu. Escriu la forma _ich_: _trinke, nehme, kaufe, bekomme, bezahle, möchte_."
+    }
+  }
+}

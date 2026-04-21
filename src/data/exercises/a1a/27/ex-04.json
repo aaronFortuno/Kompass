@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-27-ex-04",
+  "topicId": "A1a-27",
+  "title": "_sein_ vs _sehen_: el verb mana",
+  "prompt": "Tria l'article correcte segons el verb. Recorda: _Mann_ és masculí, i amb _sein_ → atribut (nominatiu), amb _sehen_ → complement directe (acusatiu).",
+  "difficulty": 2,
+  "tags": ["sein", "sehen", "article", "masculí", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Das ist {{1}} Mann._ (Aquest és un home.)\n2. _Ich sehe {{2}} Mann._ (Veig un home.)",
+    "blanks": [
+      { "id": "1", "label": "article davant _Mann_ amb _sein_" },
+      { "id": "2", "label": "article davant _Mann_ amb _sehen_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["ein", "einen"] },
+      { "blankId": "2", "options": ["ein", "einen"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "ein",
+      "2": "einen"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte! Mateix substantiu (_Mann_), cas diferent: amb _sein_ → atribut en **nominatiu** (_ein Mann_); amb _sehen_ → complement directe en **acusatiu** (_einen Mann_). És el verb qui mana.",
+      "references": ["A1a-27"]
+    },
+    "incorrect": {
+      "default": "Repassem: _sein_ (ser) → nominatiu (_ein_); _sehen_ (veure) → acusatiu (_einen_, perquè _Mann_ és masculí). El salt _ein → einen_ és típic del masculí en acusatiu."
+    }
+  }
+}

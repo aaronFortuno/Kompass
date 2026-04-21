@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-27-ex-03",
+  "topicId": "A1a-27",
+  "title": "Quin verb no demana acusatiu?",
+  "prompt": "Identifica el verb que **no** porta un complement directe en acusatiu.",
+  "difficulty": 1,
+  "tags": ["sein", "verbs", "singlechoice", "assessment"],
+  "stimulus": {
+    "type": "text",
+    "content": "Quin d'aquests verbs **no** porta un complement directe en acusatiu?"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "a", "label": "_haben_ (tenir)" },
+      { "id": "b", "label": "_sein_ (ser)" },
+      { "id": "c", "label": "_kaufen_ (comprar)" },
+      { "id": "d", "label": "_essen_ (menjar)" }
+    ]
+  },
+  "validation": {
+    "type": "exactMatch",
+    "answer": "b"
+  },
+  "feedback": {
+    "correct": {
+      "message": "Exacte! _sein_ és un verb **copulatiu**: no té complement directe, sinó **atribut** en nominatiu (_Das ist **ein** Apfel_). Els altres tres (_haben, kaufen, essen_) volen acusatiu (_einen Bruder, einen Apfel_…).",
+      "references": ["A1a-27"]
+    },
+    "incorrect": {
+      "default": "_sein_ (ser) és l'excepció: no demana acusatiu, sinó nominatiu (atribut). _haben, kaufen, essen_ sí que demanen complement directe en acusatiu."
+    }
+  }
+}

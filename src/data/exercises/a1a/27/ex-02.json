@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-27-ex-02",
+  "topicId": "A1a-27",
+  "title": "Associa verbs i objectes directes",
+  "prompt": "Cada verb demana un objecte en acusatiu. Associa cada verb amb l'objecte directe més natural.",
+  "difficulty": 1,
+  "tags": ["verbs", "acusatiu", "col·locacions", "matchpairs", "quick-check"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "c1", "group": "Verb", "content": { "type": "text", "content": "_trinken_" } },
+      { "id": "c3", "group": "Verb", "content": { "type": "text", "content": "_lesen_" } },
+      { "id": "c5", "group": "Verb", "content": { "type": "text", "content": "_bezahlen_" } },
+      { "id": "c7", "group": "Verb", "content": { "type": "text", "content": "_haben_" } },
+      { "id": "c2", "group": "Objecte directe (Akk)", "content": { "type": "text", "content": "_einen Kaffee_" } },
+      { "id": "c4", "group": "Objecte directe (Akk)", "content": { "type": "text", "content": "_ein Buch_" } },
+      { "id": "c6", "group": "Objecte directe (Akk)", "content": { "type": "text", "content": "_die Rechnung_" } },
+      { "id": "c8", "group": "Objecte directe (Akk)", "content": { "type": "text", "content": "_einen Bruder_" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Verb",
+    "groupBLabel": "Objecte directe (Akk)"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["c1", "c2"],
+      ["c3", "c4"],
+      ["c5", "c6"],
+      ["c7", "c8"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte! Cadascun d'aquests verbs demana acusatiu: es beu un cafè, es llegeix un llibre, es paga el compte, es té un germà. Els articles ja apareixen en forma d'acusatiu (_einen, ein, die, einen_).",
+      "references": ["A1a-27"]
+    },
+    "incorrect": {
+      "default": "Pensa en col·locacions naturals: _trinken_ + beguda, _lesen_ + text, _bezahlen_ + factura o compte, _haben_ + possessió. Tots quatre verbs demanen acusatiu."
+    }
+  }
+}
