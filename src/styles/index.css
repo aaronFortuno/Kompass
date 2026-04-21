@@ -1386,6 +1386,50 @@ html.dark .k-mark {
   align-items: center;
   gap: 10px;
 }
+
+/*
+ * Banner "pròxima lliçó": apareix al peu quan l'usuari és al darrer
+ * beat i ha premut → una vegada (readyToExit). El segon → navega.
+ * Animem l'entrada amb un fade + slide lleuger des de la dreta per
+ * reforçar la sensació de "preludi a saltar de lliçó".
+ */
+.kf-next-lesson {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  padding: 4px 14px;
+  margin-right: 4px;
+  border-right: 1px solid rgb(var(--color-reader-rule));
+  animation: kf-next-in 340ms var(--ease-enter) both;
+}
+.kf-next-kicker {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgb(var(--color-reader-muted));
+  line-height: 1;
+}
+.kf-next-title {
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(var(--color-reader-ink));
+  line-height: 1.1;
+  max-width: 280px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@keyframes kf-next-in {
+  from { opacity: 0; transform: translateX(10px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@media (max-width: 720px) {
+  .kf-next-lesson { display: none; }
+}
 .kf-foot-icon {
   display: inline-flex;
   align-items: center;

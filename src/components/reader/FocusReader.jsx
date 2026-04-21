@@ -13,7 +13,7 @@ import {
 import { useT } from '@/i18n';
 import { useSettings } from '@/store/useSettingsStore.js';
 import { useProgressStore } from '@/store/useProgressStore.js';
-import { getExercise } from '@/lib/dataLoader.js';
+import { getExercise, getTopicsByLevel } from '@/lib/dataLoader.js';
 import { buildBeats, isRichStep, stepKind } from '@/lib/reader/buildBeats.js';
 import { legacyBlocksToBeats } from '@/lib/reader/legacyBlocksToBeats.js';
 import {
@@ -74,6 +74,20 @@ function resolveStepIndex(topic, stepId) {
   if (!stepId) return 0;
   const i = topic.steps.findIndex((s) => s.id === stepId);
   return i < 0 ? 0 : i;
+}
+
+/*
+ * Troba el topic següent al mateix sublevel (A1a-1 → A1a-2 → …). Si no
+ * queda cap topic més al sublevel, retorna null. El fan servir el flux
+ * d'exit del reader per encadenar lliçons.
+ */
+function findNextTopic(topic) {
+  if (!topic || !topic.level) return null;
+  const levelKey = `${topic.level.toLowerCase()}${topic.sublevel || ''}`;
+  const topics = getTopicsByLevel(levelKey) || [];
+  const idx = topics.findIndex((t) => t.id === topic.id);
+  if (idx < 0 || idx >= topics.length - 1) return null;
+  return topics[idx + 1];
 }
 
 // ───────────────────────────────────────────── sub-components
@@ -846,6 +860,10 @@ export function FocusReader({ topic }) {
   // que es munta aquest reader per a un topic.id concret; auto-dismiss
   // després de 2 s o bé amb tecla d'acció / clic.
   const [splashVisible, setSplashVisible] = useState(true);
+  // Flux de sortida al final de la lliçó: el primer → al darrer beat
+  // activa el mode "ready to exit" (mostra avís de la pròxima lliçó);
+  // el segon → navega a la lliçó següent.
+  const [readyToExit, setReadyToExit] = useState(false);
   const rootRef = useRef(null);
   // Ref que l'exercici current escriu amb { handleArrow(d) }. El reader
   // consulta aquesta ref abans de fer goBeat quan l'usuari prem ← / →
@@ -858,6 +876,10 @@ export function FocusReader({ topic }) {
   const totalSteps = topic.steps.length;
   const beats = useMemo(() => stepToBeats(step), [step]);
   const beat = beats[Math.min(beatIdx, Math.max(beats.length - 1, 0))];
+  const nextTopic = useMemo(() => findNextTopic(topic), [topic]);
+  const isAtEnd =
+    stepIdx === totalSteps - 1 &&
+    beatIdx >= Math.max(beats.length - 1, 0);
 
   // Llista plana de beats del topic sencer — permet al peek animar les
   // transicions entre passos de la mateixa manera que les transicions
@@ -929,7 +951,15 @@ export function FocusReader({ topic }) {
   // altre tema des de fora del reader).
   useEffect(() => {
     setSplashVisible(true);
+    setReadyToExit(false);
   }, [topic.id]);
+
+  // Si l'usuari surt del darrer beat (amb ←, clic al sidebar…), tornem a
+  // deixar readyToExit a fals perquè el seu proper → al final torni a
+  // avisar.
+  useEffect(() => {
+    if (!isAtEnd) setReadyToExit(false);
+  }, [isAtEnd]);
 
   // Helper internat: moure un beat (o step en mode full). No toca fastMode.
   const moveBeat = useCallback(
@@ -960,12 +990,29 @@ export function FocusReader({ topic }) {
   );
 
   // Navegació normal: reseteja fastMode (el typewriter torna al ritme habitual).
+  // Al darrer beat del darrer step, el primer → activa el mode
+  // "ready to exit" (apareix el banner de pròxima lliçó); el segon →
+  // navega a la lliçó següent, o torna al temari si no hi ha més.
   const goBeat = useCallback(
     (d) => {
       setFastMode(false);
+      if (d === 1 && isAtEnd) {
+        if (readyToExit) {
+          if (nextTopic) {
+            navigate('/temari/' + nextTopic.id);
+          } else {
+            navigate('/temari');
+          }
+          return;
+        }
+        setReadyToExit(true);
+        return;
+      }
+      // Si estàvem en readyToExit i ara ens movem enrere, el useEffect
+      // del isAtEnd ja el reseteja.
       moveBeat(d);
     },
-    [moveBeat],
+    [moveBeat, isAtEnd, readyToExit, nextTopic, navigate],
   );
 
   const goStep = useCallback(
@@ -1276,6 +1323,18 @@ export function FocusReader({ topic }) {
         </div>
 
         <div className="kf-foot-right">
+          {isAtEnd && readyToExit ? (
+            <div className="kf-next-lesson" role="status" aria-live="polite">
+              <span className="kf-next-kicker">
+                {nextTopic ? 'Pròxima lliçó' : 'Has acabat'}
+              </span>
+              <span className="kf-next-title">
+                {nextTopic
+                  ? nextTopic.shortTitle || nextTopic.title
+                  : topic.title}
+              </span>
+            </div>
+          ) : null}
           <button
             type="button"
             className="kf-foot-icon"
@@ -1289,13 +1348,14 @@ export function FocusReader({ topic }) {
             type="button"
             className="kf-btn kf-btn-primary"
             onClick={() => goBeat(1)}
-            disabled={
-              isFullMode
-                ? stepIdx === totalSteps - 1
-                : stepIdx === totalSteps - 1 && beatIdx === beats.length - 1
-            }
           >
-            <span>{t('step.next')}</span>
+            <span>
+              {isAtEnd
+                ? readyToExit
+                  ? nextTopic ? 'Continuar' : 'Al temari'
+                  : 'Final'
+                : t('step.next')}
+            </span>
             <ArrowRight size={12} aria-hidden="true" />
           </button>
         </div>
