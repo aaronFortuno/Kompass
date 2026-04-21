@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-40",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 40,
+  "title": "Verben mit Dativergänzung",
+  "shortTitle": "Verbs + Dat",
+  "description": "La llista tancada de verbs alemanys que demanen datiu (_helfen, gefallen, gehören, danken, gratulieren, antworten…_), amb pronoms i articles en datiu i els paranys de calc del català.",
+  "axes": ["pronoms-verbs", "casos"],
+  "prerequisites": ["A1b-39"],
+  "estimatedMinutes": 30,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Per què hi ha verbs que demanen datiu?\n\nRecordem la idea d'A1b-38: cada verb té una **valència** fixa, una \"forma\" de complements que demana. La gran majoria (_sehen, kaufen, essen, lesen…_) demanen ==acusatiu==: _Ich sehe **den Mann**, ich kaufe **das Buch**_.\n\nUn grup petit però molt freqüent demana ==datiu== en lloc d'acusatiu. No hi ha una raó semàntica clara i universal: són verbs que històricament han cristal·litzat amb datiu, i cal ==memoritzar-los com una unitat==.\n\n==La trampa per a catalanoparlants== és que gairebé tots aquests verbs alemanys són **transitius en català**, i per tant l'instint fa cercar acusatiu."
+        },
+        {
+          "type": "table",
+          "title": "40.1 Català transitiu vs alemany en datiu",
+          "headers": ["Català (transitiu)", "Alemany (DATIU!)"],
+          "rows": [
+            ["_Ajudo **la meva germana**_", "_Ich helfe **meiner Schwester**_"],
+            ["_Responc **al professor**_", "_Ich antworte **dem Lehrer**_"],
+            ["_Felicito **el Thomas**_", "_Ich gratuliere **dem Thomas**_"],
+            ["_Dono les gràcies **al pare**_", "_Ich danke **dem Vater**_"],
+            ["_Segueixo **el guia**_", "_Ich folge **dem Reiseführer**_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Regla pràctica de partida",
+          "body": "Si el verb alemany és d'aquesta llista, ==el complement principal és el _\"a algú\"_== en sentit de destinatari, i va en **datiu**, independentment de com es traduïa al català. No busquis lògica; memoritza el grup."
+        }
+      ]
+    },
+    {
+      "id": "lista",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### La llista dels verbs amb datiu (A1)\n\nAquesta és la llista canònica que has de saber per A1b. Els marcats amb ==**★**== són _high-frequency_ i sortiran a cada pas."
+        },
+        {
+          "type": "table",
+          "title": "40.2 Verbs amb datiu · llista tancada A1",
+          "headers": ["Verb", "Traducció", "Exemple (pronom datiu)"],
+          "rows": [
+            ["**antworten** ==★==", "respondre a algú", "_Ich antworte ==dir==._"],
+            ["**danken** ==★==", "donar les gràcies a algú", "_Ich danke ==dir== für deine Hilfe._"],
+            ["**folgen**", "seguir algú", "_Kannst du ==mir== folgen?_"],
+            ["**gefallen** ==★==", "agradar a algú", "_Der Film hat ==mir== gefallen._"],
+            ["**gehören** ==★==", "pertànyer a algú", "_Das Buch gehört ==mir==._"],
+            ["**gratulieren**", "felicitar algú", "_Ich gratuliere ==dir== zum Geburtstag._"],
+            ["**helfen** ==★==", "ajudar algú", "_Er hat ==mir== geholfen._"],
+            ["**passen** ==★==", "quedar bé / anar bé a algú", "_Die Hose passt ==mir== nicht._"],
+            ["**schmecken** ==★==", "tenir bon gust a algú", "_Die Suppe schmeckt ==mir== nicht._"],
+            ["**vertrauen**", "confiar en algú", "_Ich vertraue ==dir==._"],
+            ["**verzeihen**", "perdonar algú", "_Verzeihen Sie ==mir==!_"],
+            ["**zuhören**", "escoltar algú (atentament)", "_Kannst du ==mir== bitte zuhören?_"],
+            ["**weh tun**", "fer mal a algú", "_Mein Zahn tut ==mir== weh._"],
+            ["**Leid tun**", "saber greu a algú", "_Es tut ==mir== Leid._"],
+            ["**gut tun**", "fer bé a algú", "_Der Tee tut ==mir== gut._"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista de memòria per blocs semàntics",
+          "body": "- ==**Socials / destinatari**== → _antworten, danken, gratulieren, helfen, zuhören, folgen_. Tots demanen _a qui_ va dirigida l'acció.\n- ==**Emocions / percepció**== → _gefallen, schmecken, passen, weh tun, Leid tun, gut tun_. Tots responen a la fórmula catalana _\"a mi em…\"_.\n- ==**Possessió / confiança**== → _gehören, vertrauen, verzeihen_. Tots impliquen una persona com a referent moral o propietari."
+        }
+      ]
+    },
+    {
+      "id": "morfologia",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### La forma del datiu: recordatori ràpid\n\nEls verbs d'aquesta lliçó tenen el seu **complement principal** en datiu. Necessites, doncs, les formes que ja coneixes d'A1b-37 (pronoms) i A1b-36 (articles).\n\n##### Pronoms personals en datiu"
+        },
+        {
+          "type": "table",
+          "title": "40.3 Pronoms personals en datiu",
+          "headers": ["Nominatiu", "Datiu"],
+          "rows": [
+            ["_ich_", "==_mir_=="],
+            ["_du_", "==_dir_=="],
+            ["_er_ / _es_", "==_ihm_=="],
+            ["_sie_ (ella)", "==_ihr_=="],
+            ["_wir_", "==_uns_=="],
+            ["_ihr_", "==_euch_=="],
+            ["_sie_ (ells/es) / _Sie_", "==_ihnen_ / _Ihnen_=="]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "40.4 Article determinat, indeterminat i possessiu en datiu",
+          "headers": ["", "masc.", "neut.", "fem.", "plural"],
+          "rows": [
+            ["**determinat**", "==_dem_==", "==_dem_==", "==_der_==", "==_den_== …**-n**"],
+            ["**indeterminat**", "==_einem_==", "==_einem_==", "==_einer_==", "(cap)"],
+            ["**possessiu (_mein-_)**", "==_meinem_==", "==_meinem_==", "==_meiner_==", "==_meinen_== …-n"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Recordatori del plural",
+          "body": "En datiu plural, ==el nom afegeix una _-n_== si no en té ja: _die Kinder → den Kinder**n**_, _die Freunde → den Freunde**n**_. No s'afegeix si el plural ja acaba en _-n_ o _-s_."
+        },
+        {
+          "type": "explanation",
+          "body": "**Tres exemples complets per fixar-ho:**\n\n- _Ich helfe ==meinem Bruder==._ (masc. sg, possessiu)\n- _Die Suppe schmeckt ==den Kindern==._ (plural, article determinat, ==**-n**== afegida)\n- _Das Auto gehört ==einer Freundin==._ (fem. sg, indeterminat)"
+        }
+      ]
+    },
+    {
+      "id": "check-1-classifica",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-40-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "especifics",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Especificitats d'alguns verbs\n\nAlguns d'aquests verbs tenen matisos que cal conèixer per no caure en errors típics.\n\n##### _helfen_ — la trampa del verb \"normal\"\n\n_Helfen_ és probablement el més traïdor del grup: en català, _ajudar_ pren complement directe (_ajudo la Maria_), cosa que empeny l'estudiant a dir _\"Ich helfe **die** Maria\"_ ❌. En alemany és sempre ==**datiu**==:\n\n- _Ich helfe ==der Maria==._ ✅\n- _Kannst du ==mir== helfen?_ — _Em pots ajudar?_\n- _Wir helfen ==unseren Eltern==._ — _Ajudem els nostres pares._\n\nA més, _helfen_ és de conjugació irregular en present: _ich helfe, du h**i**lfst, er h**i**lft_ (canvi ==_e → i_==).\n\n##### _gefallen_ — la construcció invertida\n\n_Gefallen_ inverteix el subjecte respecte del català (_a mi m'agrada X_ → _X em plau a mi_). Ja ho has treballat a A1b-5. El ==**subjecte gramatical**== és la cosa que agrada, i la ==**persona**== va en datiu:\n\n- _==Der Film== gefällt ==mir==._ — subjecte: _der Film_ · datiu: _mir_.\n- _==Die Museen== gefallen ==mir==._ — subjecte plural → verb plural.\n\nEl mateix patró segueixen _schmecken_ i _passen_:\n\n- _==Die Suppe== schmeckt ==mir== nicht._\n- _==Die Hose== passt ==dir== gut._\n\n##### _antworten_ — respondre a algú / respondre a una pregunta\n\n_Antworten_ agafa ==datiu per a la persona== i **preposició _auf_ + acusatiu** per al contingut de la resposta:\n\n- _Ich antworte ==dem Lehrer==._ — datiu (a qui)\n- _Ich antworte ==auf die Frage==._ — _auf_ + Akk. (a què)\n- _Ich antworte ==dem Lehrer auf die Frage==._ — tots dos."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "No confondre amb _beantworten_",
+          "body": "_Beantworten_ (respondre + Akk.) sí que és acusatiu directe: _Ich beantworte **die Frage**._ Són dos verbs diferents, amb comportaments diferents."
+        },
+        {
+          "type": "explanation",
+          "body": "##### _gratulieren_ — felicitar per X\n\n_Gratulieren_ agafa ==datiu per a la persona== i **preposició _zu_ + datiu** per al motiu:\n\n- _Ich gratuliere ==dir==._ — datiu (a qui)\n- _Ich gratuliere ==dir zum Geburtstag==._ — _zu_ + datiu (per què; _zum = zu dem_).\n- _Wir gratulieren ==ihr zur Hochzeit==._ — _zur = zu der_.\n\n##### _danken_ — agrair alguna cosa\n\nMateix patró: ==datiu per a la persona==, **preposició _für_ + acusatiu** per al motiu:\n\n- _Ich danke ==dir==._\n- _Ich danke ==dir für deine Hilfe==._ — _für_ + Akk.\n\n##### _zuhören_ — escoltar amb atenció\n\n_Zuhören_ és ==**verb separable**== (prefix _zu-_). En present i imperatiu, el _zu-_ va al final:\n\n- _Ich höre ==dir== zu._ — _T'escolto._\n- _Hör ==mir== zu!_ — _Escolta'm!_\n\nEn perfet: _Ich habe ==dir== ==zugehört==_."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "No confondre amb _hören_",
+          "body": "_Hören_ (= sentir, no escoltar) és acusatiu: _Ich höre **dich**._ — _Et sento._ Dos verbs semànticament propers però amb casos diferents."
+        },
+        {
+          "type": "explanation",
+          "body": "##### _weh tun / Leid tun / gut tun_ — locucions amb _tun_\n\nSón tres locucions formades amb _tun_ + adjectiu/substantiu, totes amb ==datiu== per indicar _a qui_ afecta:\n\n- _Der Kopf tut ==mir== ==weh==._ — _Em fa mal el cap._\n- _Es tut ==mir== ==Leid==._ — _Em sap greu._\n- _Der Tee tut ==dir== ==gut==._ — _El te et va bé._\n\nEl ==**subjecte**== és la **cosa** que fa mal / sap greu / fa bé; la persona afectada és en datiu."
+        }
+      ]
+    },
+    {
+      "id": "check-2-pronom",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-40-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "contrast",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Contrast directe català-alemany: els verbs \"traïdors\"\n\nAquests verbs són els que més sovint es traduïen amb acusatiu per error. Fixa-t'hi bé."
+        },
+        {
+          "type": "table",
+          "title": "40.5 Verbs traïdors · català (sembla acusatiu) → alemany (és datiu)",
+          "headers": ["Català (sembla acusatiu)", "Alemany (és DATIU)"],
+          "rows": [
+            ["_Ajudo la Maria._", "_Ich helfe **der Maria**._"],
+            ["_Felicito el Hans._", "_Ich gratuliere **dem Hans**._"],
+            ["_Dono les gràcies al Peter._", "_Ich danke **dem Peter**._"],
+            ["_Responc al pare._", "_Ich antworte **dem Vater**._"],
+            ["_Segueixo el guia._", "_Ich folge **dem Reiseführer**._"],
+            ["_Escolto la Sara._", "_Ich höre **der Sara** zu._"],
+            ["_Confio en tu._", "_Ich vertraue **dir**._ (sense preposició!)"],
+            ["_Et perdono._", "_Ich verzeihe **dir**._"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Heurística útil",
+          "body": "Quan aprenguis un verb nou en alemany, apunta'l sempre amb ==el cas que demana al costat==: _helfen + D_, _kaufen + A_, _antworten + D / auf + A_. Així evites haver-ho de repensar cada cop."
+        }
+      ]
+    },
+    {
+      "id": "check-3-articles",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-40-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals\n\n**1. Posar el complement en acusatiu per analogia amb el català.**\n\n- Incorrecte: _Ich helfe ==den== Mann._ ❌ (acusatiu)\n- Correcte: _Ich helfe ==dem== Mann._ ✅ (datiu)\n\n**2. Oblidar la _-n_ del datiu plural.**\n\n- Incorrecte: _Ich helfe ==den Kinder==._ ❌\n- Correcte: _Ich helfe ==den Kinder==**==n==**._ ✅\n\n**3. Pronom acusatiu en lloc de datiu.**\n\n- Incorrecte: _Kannst du ==mich== helfen?_ ❌ (_mich_ és acusatiu)\n- Correcte: _Kannst du ==mir== helfen?_ ✅\n\n**4. Confondre _hören_ (Akk.) amb _zuhören_ (Dat.).**\n\n- _Ich höre ==dich==._ — _Et sento._ (acusatiu)\n- _Ich höre ==dir== zu._ — _T'escolto._ (datiu, separable)\n\n**5. Confondre _antworten_ (Dat.) amb _beantworten_ (Akk.).**\n\n- _Ich antworte ==dem Lehrer==._ — _Responc al professor._\n- _Ich beantworte ==die Frage==._ — _Responc (a) la pregunta._"
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Paranys 6 i 7",
+          "body": "**6. Posar preposició on no toca** (_a_, _per_, _en_). El datiu d'aquests verbs **no porta preposició**. No calquis _a + persona_ del català: _Ich antworte ==an den Lehrer==_ ❌ · _Ich antworte ==dem Lehrer==_ ✅\n\n**7. Oblidar el canvi vocàlic de _helfen_.** _Du ==helfst== mir_ ❌ · _Du ==hilfst== mir_ ✅ (==_e → i_==)."
+        }
+      ]
+    },
+    {
+      "id": "check-4-produccio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-40-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-5-traduccio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-40-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-6-errors",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-40-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-7-dialeg",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-40-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-8-aparellar",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-40-ex-08", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi\n\n**La llista tancada de verbs amb datiu (A1), en una imatge:**\n\n> ==**Socials / destinatari:**== _helfen, antworten, danken, gratulieren, zuhören, folgen, verzeihen_\n>\n> ==**Emocions / percepció:**== _gefallen, schmecken, passen, weh tun, Leid tun, gut tun_\n>\n> ==**Possessió / confiança:**== _gehören, vertrauen_"
+        },
+        {
+          "type": "table",
+          "title": "40.6 Les sis regles clau",
+          "headers": ["Regla", "Contingut"],
+          "rows": [
+            ["**1. Llista tancada**", "En alemany, aquests verbs concrets demanen ==datiu==; la resta de transitius prenen acusatiu. El català no dóna pistes fiables."],
+            ["**2. Pronom en datiu**", "==_mir, dir, ihm, ihr, uns, euch, ihnen_==. Mai _mich, dich, ihn_."],
+            ["**3. Article/possessiu en datiu**", "==_dem_== (m/n), ==_der_== (f), ==_den …-n_== (pl). En plural, el nom afegeix una _-n_ si no en té."],
+            ["**4. Sense preposició**", "El datiu d'aquests verbs és ==directe==: _Ich antworte dem Lehrer_, no _an den Lehrer_."],
+            ["**5. Preposicions complementàries**", "_danken **für** + Akk._, _gratulieren **zu** + Dat._, _antworten **auf** + Akk._ (per al motiu/contingut, no per a la persona)."],
+            ["**6. Verbs propers**", "_hören_ (Akk.) vs _zuhören_ (Dat.); _antworten_ (Dat.) vs _beantworten_ (Akk.)."]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Heurística operativa:**\n\n- Quan trobis un verb nou, apunta'l amb el cas al costat: ==_verb + D_== o ==_verb + A_==.\n- En dubte amb _helfen, danken, gratulieren, antworten, folgen_: són ==**datiu**== tot i semblar acusatiu en català.\n- Amb _gefallen, schmecken, passen_: recorda la ==**construcció invertida**== — el subjecte és la cosa, la persona va en datiu.\n\n**Enllaços amb el que ja saps:**\n\n- **A1b-5** — **Vorlieben: _gefallen_.** El primer verb amb datiu que has vist a fons. Aquí l'amplies a tota la família.\n- **A1b-39** — **Akk. vs Dat.** La regla general; aquí n'ets aplicant la llista tancada de datiu."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista pràctica final",
+          "body": "Els alemanys nadius aprenen aquests verbs com una unitat des de primària. Per tu, la via més ràpida és ==repetir-los en frases curtes amb pronoms== fins que sonin automàtics: _Ich helfe **dir**. Das gehört **mir**. Es gefällt **uns**. Ich danke **euch**._ Amb vint o trenta repeticions en context, el cas \"s'enganxa\" al verb i ja no hi pensaràs més."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Curiositat útil",
+          "body": "En alemany antic, molts més verbs demanaven datiu. Alguns s'han \"modernitzat\" cap a acusatiu (_fragen_ ara és Akk., però abans podia ser Dat.). D'altres s'han quedat amb datiu com a residu històric, com ara _helfen_ i _danken_. Per això no hi ha lògica semàntica: és herència. Memoritzar la llista és l'única via realista."
+        }
+      ]
+    }
+  ]
+}

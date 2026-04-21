@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-40-ex-08",
+  "topicId": "A1b-40",
+  "title": "Pregunta ↔ resposta amb verb datiu",
+  "prompt": "Aparella cada ==**pregunta**== amb la ==**resposta**== que hi encaixa. La paraula clau de la pregunta (_wem?, wer?, warum?_) i el verb et donen el cas esperat.",
+  "difficulty": 2,
+  "tags": ["verbs-datiu", "matchPairs", "wem", "integracio", "assessment"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "q1", "group": "pregunta", "content": { "type": "text", "content": "_**Wie** schmeckt dir die Suppe?_" } },
+      { "id": "q2", "group": "pregunta", "content": { "type": "text", "content": "_**Wem** gehört dieses Handy?_" } },
+      { "id": "q3", "group": "pregunta", "content": { "type": "text", "content": "_**Wer** hat dir geholfen?_" } },
+      { "id": "q4", "group": "pregunta", "content": { "type": "text", "content": "_**Gefällt** dir München?_" } },
+      { "id": "q5", "group": "pregunta", "content": { "type": "text", "content": "_**Wem** antwortest du?_" } },
+      { "id": "q6", "group": "pregunta", "content": { "type": "text", "content": "_**Warum** gratulierst du Hans?_" } },
+      { "id": "r1", "group": "resposta", "content": { "type": "text", "content": "_==**Meiner Schwester.**==_" } },
+      { "id": "r2", "group": "resposta", "content": { "type": "text", "content": "_==**Weil er heute Geburtstag hat.**==_" } },
+      { "id": "r3", "group": "resposta", "content": { "type": "text", "content": "_==**Mein Vater hat mir geholfen.**==_" } },
+      { "id": "r4", "group": "resposta", "content": { "type": "text", "content": "_==**Ja, sie schmeckt mir sehr gut!**==_" } },
+      { "id": "r5", "group": "resposta", "content": { "type": "text", "content": "_==**Das gehört mir.**==_" } },
+      { "id": "r6", "group": "resposta", "content": { "type": "text", "content": "_==**Ja, die Stadt gefällt mir sehr.**==_" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Pregunta",
+    "groupBLabel": "Resposta"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["q1", "r4"],
+      ["q2", "r5"],
+      ["q3", "r3"],
+      ["q4", "r6"],
+      ["q5", "r1"],
+      ["q6", "r2"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "La paraula clau de la pregunta et diu el cas: ==**_wem?_**== (a qui?) demana ==**datiu**== i es respon amb un datiu (_mir, dir, meiner Schwester, dem Vater…_). La tens ben associada al grup de verbs: ==_gehören, antworten, helfen, gefallen, schmecken, gratulieren_== = ==**sempre datiu**==.",
+      "references": ["A1b-40"]
+    },
+    "incorrect": {
+      "default": "Mira dues pistes de cada pregunta: (1) la ==paraula interrogativa==: _wem?_ → resposta en datiu (_mir, meiner Schwester_); _wer?_ → resposta en nominatiu (_mein Vater, er_); _warum?_ → resposta amb _weil_; _wie?_ → resposta de qualitat (_gut, sehr gut_). (2) el ==verb==: si és datiu, el complement personal va en datiu."
+    }
+  }
+}

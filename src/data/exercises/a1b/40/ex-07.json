@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-40-ex-07",
+  "topicId": "A1b-40",
+  "title": "Diàleg d'aniversari · completa els buits",
+  "prompt": "Completa el diàleg triant l'opció correcta per a cada buit: pronoms datius (_mir, dir, ihm…_), articles datius (_dem, den_), i el verb _helfen_ conjugat (amb canvi _e → i_).",
+  "difficulty": 3,
+  "tags": ["verbs-datiu", "dialeg", "integracio", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "**A:** _Hallo Peter! Herzlichen Glückwunsch! Ich gratuliere {{1}} zum Geburtstag!_\n\n**B:** _Vielen Dank! Das ist nett von dir._\n\n**A:** _Hier, ein kleines Geschenk für dich. Gefällt es {{2}}?_\n\n**B:** _Oh, ein Buch! Ja, es gefällt {{3}} sehr gut. Danke!_\n\n**A:** _Möchtest du auch Kuchen? Ich habe einen Schokoladenkuchen gebacken._\n\n**B:** _Gern! Mmm… der Kuchen schmeckt {{4}} wirklich gut!_\n\n**A:** _Schön. Übrigens, brauchst du noch Hilfe mit deiner Party am Samstag? Ich kann {{5}} gern {{6}}._\n\n**B:** _Ja, bitte! Du {{7}} mir mit den Getränken._\n\n**A:** _Kein Problem, ich antworte dann auch {{8}} Gästen, wenn sie Fragen haben._",
+    "blanks": [
+      { "id": "1", "label": "1. _gratulieren_ + a tu (pron. dat.)" },
+      { "id": "2", "label": "2. _gefallen_ + a tu (pron. dat.)" },
+      { "id": "3", "label": "3. _gefallen_ + a mi (pron. dat.)" },
+      { "id": "4", "label": "4. _schmecken_ + a mi (pron. dat.)" },
+      { "id": "5", "label": "5. _helfen_ + a tu (pron. dat.)" },
+      { "id": "6", "label": "6. infinitiu al final" },
+      { "id": "7", "label": "7. _du_ + _helfen_ (canvi _e → i_)" },
+      { "id": "8", "label": "8. article datiu plural + _Gästen_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["dir", "dich", "du", "dein"] },
+      { "blankId": "2", "options": ["dir", "dich", "du", "dein"] },
+      { "blankId": "3", "options": ["mir", "mich", "ich", "mein"] },
+      { "blankId": "4", "options": ["mir", "mich", "ich", "mein"] },
+      { "blankId": "5", "options": ["dir", "dich", "du", "dein"] },
+      { "blankId": "6", "options": ["helfen", "hilft", "hilfst", "geholfen"] },
+      { "blankId": "7", "options": ["hilfst", "helfst", "hilft", "helfen"] },
+      { "blankId": "8", "options": ["den", "die", "dem", "der"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "dir",
+      "2": "dir",
+      "3": "mir",
+      "4": "mir",
+      "5": "dir",
+      "6": "helfen",
+      "7": "hilfst",
+      "8": "den"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. El diàleg recull els cinc verbs datius més usats en una conversa quotidiana: ==_gratulieren, gefallen, schmecken, helfen, antworten_== → ==**tots datiu**==. Pronoms: _mir, dir, ihm/ihr, uns, euch, ihnen_. I _helfen_ té canvi _e → i_: _du **hilfst**, er **hilft**_.",
+      "references": ["A1b-40", "A1b-37"]
+    },
+    "incorrect": {
+      "default": "Totes les fórmules socials d'aquest diàleg (felicitar, fer regals, oferir ajuda, menjar) passen per verbs datius. Recorda: _gratulieren, gefallen, schmecken, helfen, antworten_ demanen pronom en ==**datiu**==: _mir, dir, ihm, ihr, uns, euch, ihnen_.",
+      "byResponse": [
+        {
+          "match": { "1": "dich" },
+          "message": "_gratulieren_ és ==**datiu**==: _Ich gratuliere **dir**._ _dich_ és acusatiu."
+        },
+        {
+          "match": { "3": "mich" },
+          "message": "_gefallen_ és ==**datiu**==: _Es gefällt **mir**._ _mich_ és acusatiu."
+        },
+        {
+          "match": { "6": "hilfst" },
+          "message": "Amb verb modal (_Ich kann…_) l'altre verb va en ==**infinitiu al final**==: _Ich kann dir **helfen**._ (No conjugat)."
+        },
+        {
+          "match": { "6": "hilft" },
+          "message": "Amb verb modal, l'altre verb va en ==**infinitiu**==: _Ich kann dir **helfen**._"
+        },
+        {
+          "match": { "7": "helfst" },
+          "message": "_helfen_ té canvi ==**_e → i_**== en 2a sg: _Du **hilfst** mir._ (no _helfst_)."
+        },
+        {
+          "match": { "8": "die" },
+          "message": "_antworten_ és ==**datiu**==. Datiu plural → ==_den_==, i el nom afegeix _-n_ (_den Gäste**n**_)."
+        },
+        {
+          "match": { "8": "dem" },
+          "message": "_Gäste_ és plural (masc. _der Gast → pl. die Gäste_). Datiu plural → ==_den_==, amb _-n_ al nom: _den Gästen_. _dem_ és masc./neut. singular."
+        }
+      ]
+    }
+  }
+}

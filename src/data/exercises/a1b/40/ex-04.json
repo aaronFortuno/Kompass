@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-40-ex-04",
+  "topicId": "A1b-40",
+  "title": "Conjuga i completa amb pronom datiu",
+  "prompt": "Construeix la frase sencera amb el verb ==conjugat== i el pronom personal en ==**datiu**==. Vigila el canvi _e → i_ de _helfen_ en 2a i 3a del singular (_du hilfst, er hilft_).",
+  "difficulty": 2,
+  "tags": ["verbs-datiu", "conjugacio", "produccio", "typeIn"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. (ich / helfen / du) → {{1}}\n\n2. (du / helfen / ich) → {{2}}\n\n3. (er / danken / wir) → {{3}}\n\n4. (wir / gratulieren / ihr) → {{4}}\n\n5. (das Buch / gefallen / ich) → {{5}}\n\n6. (ich / antworten / Sie) → {{6}}\n\n7. (der Film / gefallen / er) → {{7}}\n\n8. (die Hose / passen / du) → {{8}}",
+    "blanks": [
+      { "id": "1", "label": "1. _jo ajudo a tu_" },
+      { "id": "2", "label": "2. _tu ajudes a mi_ (atenció _e → i_)" },
+      { "id": "3", "label": "3. _ell ens dona les gràcies_" },
+      { "id": "4", "label": "4. _us felicitem_" },
+      { "id": "5", "label": "5. _el llibre m'agrada_" },
+      { "id": "6", "label": "6. _jo li responc a vostè_" },
+      { "id": "7", "label": "7. _la pel·lícula li agrada_ (a ell)" },
+      { "id": "8", "label": "8. _els pantalons et van bé_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Ich helfe …" },
+      { "blankId": "2", "placeholder": "Du h…st …" },
+      { "blankId": "3", "placeholder": "Er dankt …" },
+      { "blankId": "4", "placeholder": "Wir gratulieren …" },
+      { "blankId": "5", "placeholder": "Das Buch …" },
+      { "blankId": "6", "placeholder": "Ich antworte …" },
+      { "blankId": "7", "placeholder": "Der Film …" },
+      { "blankId": "8", "placeholder": "Die Hose …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": [
+        "Ich helfe dir.",
+        "Ich helfe dir"
+      ],
+      "2": [
+        "Du hilfst mir.",
+        "Du hilfst mir"
+      ],
+      "3": [
+        "Er dankt uns.",
+        "Er dankt uns"
+      ],
+      "4": [
+        "Wir gratulieren euch.",
+        "Wir gratulieren euch"
+      ],
+      "5": [
+        "Das Buch gefällt mir.",
+        "Das Buch gefällt mir"
+      ],
+      "6": [
+        "Ich antworte Ihnen.",
+        "Ich antworte Ihnen"
+      ],
+      "7": [
+        "Der Film gefällt ihm.",
+        "Der Film gefällt ihm"
+      ],
+      "8": [
+        "Die Hose passt dir.",
+        "Die Hose passt dir"
+      ]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Tres passos automàtics: (1) ==conjuga el verb== amb la persona que fa l'acció (o amb la cosa, si és _gefallen/schmecken/passen_). (2) El complement personal va en ==**datiu**==: _mir, dir, ihm, ihr, uns, euch, ihnen/Ihnen_. (3) _helfen_ canvia _e → i_ en 2a i 3a sg: _du **hilfst**, er **hilft**_.",
+      "references": ["A1b-40", "A1b-37"]
+    },
+    "incorrect": {
+      "default": "Revisa tres coses: (1) el verb està **ben conjugat**? (_helfen_ té canvi _e → i_: _du hilfst, er hilft_). (2) El pronom està en ==**datiu**==? (_mir, dir, ihm, ihr, uns, euch, ihnen_). (3) Amb _gefallen/passen_: el **subjecte** és la cosa, el verb concorda amb ella.",
+      "byResponse": [
+        {
+          "match": { "2": "Du helfst mir." },
+          "message": "_helfen_ té canvi vocàlic _e → i_ en 2a i 3a sg: ==_Du **hilfst** mir._== (no _helfst_). És un irregular com _essen, sehen, lesen_."
+        },
+        {
+          "match": { "2": "Du hilfst mich." },
+          "message": "_helfen_ és ==**datiu**==: _Du hilfst **mir**._ (no _mich_)."
+        },
+        {
+          "match": { "5": "Ich gefalle mir dem Buch." },
+          "message": "_gefallen_ funciona al revés: el ==subjecte== és la **cosa** que agrada. _==Das Buch== gefällt **mir**._"
+        },
+        {
+          "match": { "6": "Ich antworte Sie." },
+          "message": "_antworten_ és ==**datiu**==, i el pronom de _Sie_ (formal) en datiu és ==_Ihnen_==. _Ich antworte **Ihnen**._"
+        },
+        {
+          "match": { "7": "Der Film gefällt ihn." },
+          "message": "_gefallen_ és ==**datiu**==: _Der Film gefällt **ihm**._ _ihn_ és acusatiu."
+        }
+      ]
+    }
+  }
+}

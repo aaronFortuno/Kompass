@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-40-ex-01",
+  "topicId": "A1b-40",
+  "title": "Datiu o acusatiu? Classifica el verb",
+  "prompt": "Per a cada verb alemany, indica si demana ==**datiu**== (és de la llista tancada: _helfen, gefallen, gehören, danken, gratulieren, antworten…_) o ==**acusatiu**== (la immensa majoria: _sehen, kaufen, lesen, essen…_).",
+  "difficulty": 1,
+  "tags": ["verbs-datiu", "classificacio", "llista-tancada"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _helfen_ → {{1}}\n\n2. _sehen_ → {{2}}\n\n3. _gefallen_ → {{3}}\n\n4. _kaufen_ → {{4}}\n\n5. _danken_ → {{5}}\n\n6. _lesen_ → {{6}}\n\n7. _gehören_ → {{7}}\n\n8. _antworten_ → {{8}}\n\n9. _essen_ → {{9}}\n\n10. _gratulieren_ → {{10}}",
+    "blanks": [
+      { "id": "1", "label": "1. _helfen_" },
+      { "id": "2", "label": "2. _sehen_" },
+      { "id": "3", "label": "3. _gefallen_" },
+      { "id": "4", "label": "4. _kaufen_" },
+      { "id": "5", "label": "5. _danken_" },
+      { "id": "6", "label": "6. _lesen_" },
+      { "id": "7", "label": "7. _gehören_" },
+      { "id": "8", "label": "8. _antworten_" },
+      { "id": "9", "label": "9. _essen_" },
+      { "id": "10", "label": "10. _gratulieren_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["datiu", "acusatiu"] },
+      { "blankId": "2", "options": ["datiu", "acusatiu"] },
+      { "blankId": "3", "options": ["datiu", "acusatiu"] },
+      { "blankId": "4", "options": ["datiu", "acusatiu"] },
+      { "blankId": "5", "options": ["datiu", "acusatiu"] },
+      { "blankId": "6", "options": ["datiu", "acusatiu"] },
+      { "blankId": "7", "options": ["datiu", "acusatiu"] },
+      { "blankId": "8", "options": ["datiu", "acusatiu"] },
+      { "blankId": "9", "options": ["datiu", "acusatiu"] },
+      { "blankId": "10", "options": ["datiu", "acusatiu"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "datiu",
+      "2": "acusatiu",
+      "3": "datiu",
+      "4": "acusatiu",
+      "5": "datiu",
+      "6": "acusatiu",
+      "7": "datiu",
+      "8": "datiu",
+      "9": "acusatiu",
+      "10": "datiu"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "La regla d'or: la **immensa majoria** de verbs alemanys prenen acusatiu. Només cal memoritzar la llista curta de ==**verbs amb datiu**==: _helfen, gefallen, gehören, passen, schmecken, gratulieren, antworten, danken, folgen, vertrauen, verzeihen, zuhören_ + les locucions amb _tun_.",
+      "references": ["A1b-40", "A1b-39"]
+    },
+    "incorrect": {
+      "default": "Torna a la llista tancada (taula 40.2). Si el verb **no hi és**, és acusatiu per defecte. Els traïdors habituals: _helfen, danken, gratulieren, antworten, folgen_ demanen **datiu** tot i semblar transitius en català.",
+      "byResponse": [
+        {
+          "match": { "1": "acusatiu" },
+          "message": "_helfen_ és el verb més traïdor del grup: en català _ajudar_ porta CD, però en alemany és ==**datiu**==. _Ich helfe **dir**._"
+        },
+        {
+          "match": { "5": "acusatiu" },
+          "message": "_danken_ (donar les gràcies) → ==**datiu**== per a la persona: _Ich danke **dir**._ (Amb _für_ + Akk. per al motiu.)"
+        },
+        {
+          "match": { "8": "acusatiu" },
+          "message": "_antworten_ (respondre a algú) → ==**datiu**==: _Ich antworte **dem Lehrer**._ No confonguis amb _beantworten_ (+ Akk.)."
+        },
+        {
+          "match": { "10": "acusatiu" },
+          "message": "_gratulieren_ (felicitar) → ==**datiu**==: _Ich gratuliere **dir**._ El català _felicitar algú_ és transitiu, però l'alemany no segueix la mateixa lògica."
+        },
+        {
+          "match": { "3": "acusatiu" },
+          "message": "_gefallen_ és el verb datiu per excel·lència (A1b-5). Subjecte = cosa, persona = ==**datiu**==: _Der Film gefällt **mir**._"
+        },
+        {
+          "match": { "7": "acusatiu" },
+          "message": "_gehören_ (pertànyer) → ==**datiu**==: _Das Buch gehört **mir**._ Es pot entendre com \"_a algú_\", i per això datiu."
+        }
+      ]
+    }
+  }
+}

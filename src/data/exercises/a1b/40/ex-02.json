@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-40-ex-02",
+  "topicId": "A1b-40",
+  "title": "Pronom en datiu o acusatiu?",
+  "prompt": "Tria el pronom correcte. Primer identifica el verb: si és de la llista de ==**datiu**== (_helfen, gefallen, gehören, passen, danken, gratulieren…_), pronom en datiu (_mir/dir/ihm/ihr…_). Si és acusatiu, _mich/dich/ihn/sie…_",
+  "difficulty": 2,
+  "tags": ["verbs-datiu", "pronoms", "dat-vs-akk"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Kannst du {{1}} helfen?_\n\n2. _Ich sehe {{2}} auf der Straße._\n\n3. _Der Film gefällt {{3}} sehr._\n\n4. _Ich liebe {{4}}._\n\n5. _Gratulierst du {{5}} zum Geburtstag?_ (a ell)\n\n6. _Wir finden {{6}} nett._ (a ell)\n\n7. _Das Buch gehört {{7}}._ (a nosaltres)\n\n8. _Ich danke {{8}} für deine Hilfe._\n\n9. _Er versteht {{9}} nicht._ (a mi)\n\n10. _Die Hose passt {{10}} nicht._ (a mi)",
+    "blanks": [
+      { "id": "1", "label": "1. _helfen_ + a mi" },
+      { "id": "2", "label": "2. _sehen_ + a tu" },
+      { "id": "3", "label": "3. _gefallen_ + a mi" },
+      { "id": "4", "label": "4. _lieben_ + a tu" },
+      { "id": "5", "label": "5. _gratulieren_ + a ell" },
+      { "id": "6", "label": "6. _finden_ + a ell" },
+      { "id": "7", "label": "7. _gehören_ + a nosaltres" },
+      { "id": "8", "label": "8. _danken_ + a tu" },
+      { "id": "9", "label": "9. _verstehen_ + a mi" },
+      { "id": "10", "label": "10. _passen_ + a mi" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["mir", "mich"] },
+      { "blankId": "2", "options": ["dir", "dich"] },
+      { "blankId": "3", "options": ["mir", "mich"] },
+      { "blankId": "4", "options": ["dir", "dich"] },
+      { "blankId": "5", "options": ["ihm", "ihn"] },
+      { "blankId": "6", "options": ["ihm", "ihn"] },
+      { "blankId": "7", "options": ["uns", "wir"] },
+      { "blankId": "8", "options": ["dir", "dich"] },
+      { "blankId": "9", "options": ["mir", "mich"] },
+      { "blankId": "10", "options": ["mir", "mich"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "mir",
+      "2": "dich",
+      "3": "mir",
+      "4": "dich",
+      "5": "ihm",
+      "6": "ihn",
+      "7": "uns",
+      "8": "dir",
+      "9": "mich",
+      "10": "mir"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. El reflex que has d'automatitzar: ==verb de la llista de datiu== → pronom datiu (_mir, dir, ihm, ihr, uns, euch, ihnen_). ==Verb normal== → pronom acusatiu (_mich, dich, ihn, sie, uns, euch, sie_).",
+      "references": ["A1b-40", "A1b-37"]
+    },
+    "incorrect": {
+      "default": "Primer identifica el verb. Si és de la llista de datiu (_helfen, gefallen, gehören, passen, danken, gratulieren, antworten, folgen, vertrauen, verzeihen, zuhören_), pronom en ==**datiu**==: _mir, dir, ihm, ihr, uns, euch, ihnen_. Si no, ==acusatiu==: _mich, dich, ihn, sie, uns, euch, sie_.",
+      "byResponse": [
+        {
+          "match": { "1": "mich" },
+          "message": "_helfen_ és ==**datiu**==: _Kannst du **mir** helfen?_ (no _mich_). És l'error clàssic: el català diu _ajudar-me_ (CD), l'alemany exigeix datiu."
+        },
+        {
+          "match": { "3": "mich" },
+          "message": "_gefallen_ és ==**datiu**==: _Der Film gefällt **mir**._ La persona sempre en datiu, el subjecte és la cosa."
+        },
+        {
+          "match": { "5": "ihn" },
+          "message": "_gratulieren_ és ==**datiu**==: _Gratulierst du **ihm** zum Geburtstag?_ (no _ihn_)."
+        },
+        {
+          "match": { "8": "dich" },
+          "message": "_danken_ és ==**datiu**==: _Ich danke **dir**._ (El motiu va amb _für_ + Akk.: _für deine Hilfe_.)"
+        },
+        {
+          "match": { "2": "dir" },
+          "message": "_sehen_ és un verb normal, ==**acusatiu**==: _Ich sehe **dich**._ No és de la llista tancada."
+        },
+        {
+          "match": { "9": "mir" },
+          "message": "_verstehen_ (entendre) és ==**acusatiu**==: _Er versteht **mich** nicht._ No és de la llista de datiu."
+        },
+        {
+          "match": { "10": "mich" },
+          "message": "_passen_ (anar bé / quedar bé) és ==**datiu**==: _Die Hose passt **mir** nicht._ La cosa és el subjecte, la persona en datiu."
+        }
+      ]
+    }
+  }
+}

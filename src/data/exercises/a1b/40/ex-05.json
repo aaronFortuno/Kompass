@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-40-ex-05",
+  "topicId": "A1b-40",
+  "title": "Tradueix del català a l'alemany",
+  "prompt": "Tradueix cada frase. Recorda: la **llista de datiu** (_helfen, danken, gefallen, gehören, passen, schmecken, gratulieren, antworten, folgen, vertrauen, verzeihen, zuhören_) → pronom en ==**datiu**== (_mir, dir, ihm, ihr, uns, euch, ihnen_), ==**sense preposició**==.",
+  "difficulty": 3,
+  "tags": ["verbs-datiu", "traduccio", "produccio", "typeIn"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. \"T'ajudo.\" → {{1}}\n\n2. \"Li dono les gràcies (a ell).\" → {{2}}\n\n3. \"La sopa no m'agrada.\" → {{3}}\n\n4. \"Aquest cotxe és meu.\" (pertany a mi) → {{4}}\n\n5. \"Et felicito pel teu aniversari.\" → {{5}}\n\n6. \"Confio en tu.\" → {{6}}\n\n7. \"Em fa mal el cap.\" → {{7}}\n\n8. \"Escolta'm, sisplau!\" → {{8}}",
+    "blanks": [
+      { "id": "1", "label": "1. T'ajudo." },
+      { "id": "2", "label": "2. Li dono les gràcies (a ell)." },
+      { "id": "3", "label": "3. La sopa no m'agrada (de gust)." },
+      { "id": "4", "label": "4. Aquest cotxe és meu. (_gehören_)" },
+      { "id": "5", "label": "5. Et felicito pel teu aniversari." },
+      { "id": "6", "label": "6. Confio en tu." },
+      { "id": "7", "label": "7. Em fa mal el cap." },
+      { "id": "8", "label": "8. Escolta'm, sisplau! (_zuhören_)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Ich helfe …" },
+      { "blankId": "2", "placeholder": "Ich danke …" },
+      { "blankId": "3", "placeholder": "Die Suppe …" },
+      { "blankId": "4", "placeholder": "Dieses Auto …" },
+      { "blankId": "5", "placeholder": "Ich gratuliere …" },
+      { "blankId": "6", "placeholder": "Ich vertraue …" },
+      { "blankId": "7", "placeholder": "Der Kopf …" },
+      { "blankId": "8", "placeholder": "Hör …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": [
+        "Ich helfe dir.",
+        "Ich helfe dir"
+      ],
+      "2": [
+        "Ich danke ihm.",
+        "Ich danke ihm"
+      ],
+      "3": [
+        "Die Suppe schmeckt mir nicht.",
+        "Die Suppe schmeckt mir nicht"
+      ],
+      "4": [
+        "Dieses Auto gehört mir.",
+        "Das Auto gehört mir.",
+        "Dieses Auto gehört mir",
+        "Das Auto gehört mir"
+      ],
+      "5": [
+        "Ich gratuliere dir zum Geburtstag.",
+        "Ich gratuliere dir zum Geburtstag"
+      ],
+      "6": [
+        "Ich vertraue dir.",
+        "Ich vertraue dir"
+      ],
+      "7": [
+        "Der Kopf tut mir weh.",
+        "Mir tut der Kopf weh.",
+        "Der Kopf tut mir weh",
+        "Mir tut der Kopf weh"
+      ],
+      "8": [
+        "Hör mir bitte zu!",
+        "Hör mir bitte zu",
+        "Hör mir bitte zu.",
+        "Bitte hör mir zu!",
+        "Bitte hör mir zu"
+      ]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. La llista de verbs de datiu d'A1 es consolida amb la pràctica; cada cop que trobis _helfen / danken / gefallen / gehören / passen / schmecken / gratulieren / antworten / folgen / vertrauen / verzeihen / zuhören_, pronom en ==**datiu**== automàticament.",
+      "references": ["A1b-40"]
+    },
+    "incorrect": {
+      "default": "Revisa dues coses: (1) és un verb de la llista de datiu? Si sí, el complement va en ==_mir/dir/ihm/ihr/uns/euch/ihnen_==, ==sense preposició==. (2) Per a _schmecken, passen, gefallen, wehtun_: el **subjecte** és la cosa, no la persona. _La sopa m'agrada (de gust)_ = _Die Suppe schmeckt **mir**._",
+      "byResponse": [
+        {
+          "match": { "1": "Ich helfe dich." },
+          "message": "_helfen_ és ==**datiu**==: _Ich helfe **dir**._ (no _dich_)."
+        },
+        {
+          "match": { "6": "Ich vertraue in dich." },
+          "message": "_vertrauen_ és ==**datiu sense preposició**==: _Ich vertraue **dir**._ El català _confiar **en**_ no es calca: l'alemany no porta preposició amb _vertrauen_."
+        },
+        {
+          "match": { "5": "Ich gratuliere dich für deinen Geburtstag." },
+          "message": "Dos errors: (1) _gratulieren_ és ==**datiu**== → _**dir**_ (no _dich_). (2) El motiu va amb ==**_zu_ + datiu**==, no _für_: _zum Geburtstag_ (= _zu dem_)."
+        },
+        {
+          "match": { "8": "Höre mich zu!" },
+          "message": "_zuhören_ és ==**datiu**== (_**mir**_, no _mich_), i és ==**separable**== (_zu_ al final). Imperatiu: _Hör **mir** bitte **zu**!_"
+        },
+        {
+          "match": { "2": "Ich danke ihn." },
+          "message": "_danken_ és ==**datiu**==: _Ich danke **ihm**._ (no _ihn_, que és acusatiu)."
+        },
+        {
+          "match": { "7": "Mein Kopf tut mich weh." },
+          "message": "_weh tun_ demana ==**datiu**==: _Der Kopf tut **mir** weh._ (no _mich_). I noteu que es diu _der Kopf_ (article determinat), no _mein Kopf_, en aquesta expressió."
+        }
+      ]
+    }
+  }
+}

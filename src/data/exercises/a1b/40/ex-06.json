@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-40-ex-06",
+  "topicId": "A1b-40",
+  "title": "Troba l'error: correcta o incorrecta?",
+  "prompt": "Per a cada frase, decideix si és ==**correcta**== (_verdader_) o ==**incorrecta**== (_fals_). Busca errors típics: cas equivocat, terminació, pronom, preposició de més.",
+  "difficulty": 2,
+  "tags": ["verbs-datiu", "trueFalse", "diagnostic"],
+  "stimulus": {
+    "type": "text",
+    "content": "Llegeix cada frase amb atenció i decideix si hi ha algun error de cas, pronom, terminació o preposició."
+  },
+  "interaction": {
+    "type": "trueFalse",
+    "statements": [
+      { "id": "s1", "text": "_Ich helfe **meine** Mutter._" },
+      { "id": "s2", "text": "_Ich sehe **dir** auf der Straße._" },
+      { "id": "s3", "text": "_Kannst du **mich** helfen?_" },
+      { "id": "s4", "text": "_Das Buch gehört **den Kinder**._" },
+      { "id": "s5", "text": "_Ich antworte **an den Lehrer**._" },
+      { "id": "s6", "text": "_Der Film gefällt **ich**._" },
+      { "id": "s7", "text": "_Ich danke **dir** für deine Hilfe._" },
+      { "id": "s8", "text": "_Du **hilfst** mir immer._" }
+    ]
+  },
+  "validation": {
+    "type": "truthMap",
+    "answers": {
+      "s1": false,
+      "s2": false,
+      "s3": false,
+      "s4": false,
+      "s5": false,
+      "s6": false,
+      "s7": true,
+      "s8": true
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Errors més freqüents que has sabut detectar: (1) ==acusatiu per calc del català== (_helfen, danken, gratulieren_ demanen datiu), (2) oblidar la ==**-n** del datiu plural==, (3) afegir ==preposicions innecessàries== (_a/an + persona_), (4) no conèixer els pronoms datius (_mir, dir, ihm…_).",
+      "references": ["A1b-40"]
+    },
+    "incorrect": {
+      "default": "Recorda la rutina: identifica el verb → si és de la llista de datiu, complement en ==_dem/der/den-n_== o pronom ==_mir/dir/ihm…_==, ==sense preposició==. Repassa cada frase buscant un d'aquests errors típics."
+    }
+  }
+}

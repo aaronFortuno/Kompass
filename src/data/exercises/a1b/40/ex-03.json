@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-40-ex-03",
+  "topicId": "A1b-40",
+  "title": "Article o possessiu: datiu vs acusatiu",
+  "prompt": "Tria l'article o possessiu correcte segons el cas que demana el verb. Recorda el datiu: ==_dem_== (m/n), ==_der_== (f), ==_den_== …**-n** (pl). En acusatiu només canvia el masculí: _der → den_.",
+  "difficulty": 2,
+  "tags": ["verbs-datiu", "declinacio", "articles", "possessius"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich helfe {{1}} Bruder._ (_mein-_)\n\n2. _Ich kenne {{2}} Lehrer._ (_der_)\n\n3. _Das Auto gehört {{3}} Freundin._ (_ein-_)\n\n4. _Wir danken {{4}} Eltern._ (_unser-_)\n\n5. _Ich sehe {{5}} Frau._ (_die_)\n\n6. _Sie antwortet {{6}} Polizisten._ (_der_)\n\n7. _Ich kaufe {{7}} Geschenk._ (_ein-_)\n\n8. _Der Schlüssel passt {{8}} Tür._ (_die_)\n\n9. _Ich gratuliere {{9}} Großmutter._ (_mein-_)\n\n10. _Die Suppe schmeckt {{10}} Kindern._ (_die_, pl.)",
+    "blanks": [
+      { "id": "1", "label": "1. _helfen_ + _mein-_ + _Bruder_ (masc.)" },
+      { "id": "2", "label": "2. _kennen_ + _der_ + _Lehrer_ (masc.)" },
+      { "id": "3", "label": "3. _gehören_ + _ein-_ + _Freundin_ (fem.)" },
+      { "id": "4", "label": "4. _danken_ + _unser-_ + _Eltern_ (pl.)" },
+      { "id": "5", "label": "5. _sehen_ + _die_ + _Frau_ (fem.)" },
+      { "id": "6", "label": "6. _antworten_ + _der_ + _Polizisten_ (masc. sg, n-Dekl.)" },
+      { "id": "7", "label": "7. _kaufen_ + _ein-_ + _Geschenk_ (neut.)" },
+      { "id": "8", "label": "8. _passen_ + _die_ + _Tür_ (fem.)" },
+      { "id": "9", "label": "9. _gratulieren_ + _mein-_ + _Großmutter_ (fem.)" },
+      { "id": "10", "label": "10. _schmecken_ + _die_ + _Kindern_ (pl.)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["meinem", "meinen", "meiner", "mein"] },
+      { "blankId": "2", "options": ["der", "den", "dem", "des"] },
+      { "blankId": "3", "options": ["eine", "einer", "einem", "einen"] },
+      { "blankId": "4", "options": ["unsere", "unseren", "unserem", "unser"] },
+      { "blankId": "5", "options": ["die", "der", "den", "dem"] },
+      { "blankId": "6", "options": ["der", "den", "dem", "des"] },
+      { "blankId": "7", "options": ["ein", "einen", "einem", "eines"] },
+      { "blankId": "8", "options": ["die", "der", "den", "dem"] },
+      { "blankId": "9", "options": ["meine", "meiner", "meinem", "meinen"] },
+      { "blankId": "10", "options": ["die", "der", "den", "dem"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "meinem",
+      "2": "den",
+      "3": "einer",
+      "4": "unseren",
+      "5": "die",
+      "6": "dem",
+      "7": "ein",
+      "8": "der",
+      "9": "meiner",
+      "10": "den"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Els dos passos que has fet: (1) identificar el **verb** → datiu o acusatiu. (2) Declinar l'article/possessiu segons el **cas i el gènere**. En datiu: ==_dem_== (m/n), ==_der_== (f), ==_den …-n_== (pl). En acusatiu només canvia masc.: _der → den_.",
+      "references": ["A1b-40", "A1b-36"]
+    },
+    "incorrect": {
+      "default": "Segueix dos passos: **Pas 1**, identifica el verb (datiu o acusatiu?). **Pas 2**, declina l'article/possessiu segons el cas i el gènere. Consulta la taula 40.4 del tema.",
+      "byResponse": [
+        {
+          "match": { "1": "meinen" },
+          "message": "_helfen_ demana ==**datiu**==. Masculí datiu → ==_meinem_==: _Ich helfe **meinem** Bruder._ _meinen_ seria acusatiu (_Ich sehe meinen Bruder_)."
+        },
+        {
+          "match": { "4": "unsere" },
+          "message": "_danken_ + datiu plural → ==_unseren_==, amb _-n_ al final. _unsere_ seria nominatiu o acusatiu plural."
+        },
+        {
+          "match": { "6": "den" },
+          "message": "_antworten_ demana ==**datiu**==. Masculí datiu → ==_dem_==: _Sie antwortet **dem** Polizisten._ _den_ seria acusatiu."
+        },
+        {
+          "match": { "8": "die" },
+          "message": "_passen_ demana ==**datiu**==. Femení datiu → ==_der_==: _Der Schlüssel passt **der** Tür._"
+        },
+        {
+          "match": { "9": "meine" },
+          "message": "_gratulieren_ demana ==**datiu**==. Femení datiu → ==_meiner_==: _Ich gratuliere **meiner** Großmutter._"
+        },
+        {
+          "match": { "10": "die" },
+          "message": "_schmecken_ demana ==**datiu**==. Plural datiu → ==_den_== (i el nom afegeix _-n_ si no en té). _Den Kinder**n**_."
+        },
+        {
+          "match": { "5": "der" },
+          "message": "_sehen_ és ==**acusatiu**==. Femení acusatiu → ==_die_== (igual que nominatiu): _Ich sehe **die** Frau._"
+        },
+        {
+          "match": { "7": "einen" },
+          "message": "_kaufen_ + neutre acusatiu → ==_ein_== (igual que nominatiu, sense _-n_). _Einen_ seria masculí acusatiu."
+        }
+      ]
+    }
+  }
+}
