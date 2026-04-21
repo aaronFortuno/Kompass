@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-33-ex-08",
+  "topicId": "A1b-33",
+  "title": "Completa el diàleg",
+  "prompt": "Completa cada buit del diàleg. Entre parèntesis tens la pista del que cal escriure (pregunta, preposició, cas, nombre). Escriu exactament la forma correcta.",
+  "difficulty": 3,
+  "tags": ["dialog", "typeIn", "integrat", "wie-lange", "seit"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "— _Hallo, Anna! {{1}} bist du hier?_ (pregunta: quant de temps fa que)\n\n— _Ich bin {{2}} in Deutschland._ (seit + una setmana, fem.)\n\n— _Und {{3}} bleibst du?_ (pregunta: quant de temps)\n\n— _Ich bleibe {{4}} ._ (1 Monat, acusatiu masc.)\n\n— _{{5}} arbeite ich._ (Von … bis …, Montag / Freitag)\n\n— _Super! Und {{6}} lernst du Deutsch?_ (pregunta: des de quan)\n\n— _Ich lerne {{7}} Deutsch._ (seit + 2 anys, datiu pl.)",
+    "blanks": [
+      { "id": "1", "label": "1. Wie lange" },
+      { "id": "2", "label": "2. seit + einer Woche" },
+      { "id": "3", "label": "3. wie lange" },
+      { "id": "4", "label": "4. einen Monat" },
+      { "id": "5", "label": "5. Von Montag bis Freitag" },
+      { "id": "6", "label": "6. Seit wann" },
+      { "id": "7", "label": "7. seit zwei Jahren" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Wie …" },
+      { "blankId": "2", "placeholder": "seit ein… Woche" },
+      { "blankId": "3", "placeholder": "wie …" },
+      { "blankId": "4", "placeholder": "ein… Monat" },
+      { "blankId": "5", "placeholder": "Von … bis …" },
+      { "blankId": "6", "placeholder": "Seit wann / Wie lange" },
+      { "blankId": "7", "placeholder": "seit zwei …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Wie lange"],
+      "2": ["seit einer Woche"],
+      "3": ["wie lange"],
+      "4": ["einen Monat"],
+      "5": ["Von Montag bis Freitag"],
+      "6": ["Seit wann", "seit wann", "Wie lange", "wie lange"],
+      "7": ["seit zwei Jahren"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Observa el contrast entre ==_Wie lange bist du hier?_== (literalment: quant de temps fa que ets aquí) i ==_Ich bin seit einer Woche hier_== (Präsens + _seit_). ==**L'alemany fa servir el present**== per a coses que encara duren, on el català necessita \"fa… que\" o \"des de fa\". El buit 6 admet tant _Seit wann_ com _Wie lange_: les dues preguntes encaixen amb la resposta _seit zwei Jahren_.",
+      "references": ["A1b-33"]
+    },
+    "incorrect": {
+      "default": "Les claus del diàleg: (1) per preguntar per la durada que continua, _==Wie lange==_ o _==Seit wann==_; (2) _seit_ sempre amb ==datiu== (_einer Woche, zwei Jahren_); (3) durada nua en ==acusatiu== (_einen Monat_); (4) _von… bis…_ amb majúscula inicial quan obre la frase.",
+      "byResponse": [
+        {
+          "match": { "2": "seit eine Woche" },
+          "message": "_Seit_ + datiu femení: _seit ==einer== Woche_, no _eine_."
+        },
+        {
+          "match": { "4": "ein Monat" },
+          "message": "Durada masculina en ==acusatiu==: _==einen== Monat_, no _ein Monat_."
+        },
+        {
+          "match": { "7": "seit zwei Jahre" },
+          "message": "==**Datiu plural amb _-n_**==: _seit zwei ==Jahren==_, no _Jahre_."
+        },
+        {
+          "match": { "7": "seit zwei Jahren." },
+          "message": "Molt a prop — sobra el punt final (aquí el buit és enmig de la frase). _seit zwei Jahren_ sense punt."
+        },
+        {
+          "match": { "5": "von Montag bis Freitag" },
+          "message": "Obre la frase → majúscula inicial: _==Von== Montag bis Freitag_."
+        }
+      ]
+    }
+  }
+}

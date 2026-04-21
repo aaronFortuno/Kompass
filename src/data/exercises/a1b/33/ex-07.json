@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-33-ex-07",
+  "topicId": "A1b-33",
+  "title": "Troba l'error (o confirma que és correcta)",
+  "prompt": "Per a cada frase, identifica què hi passa: (a) ==**cas equivocat**==, (b) ==**preposició sobrant**==, (c) ==**temps verbal equivocat**==, o (d) ==**correcta**==.",
+  "difficulty": 3,
+  "tags": ["errors", "seit", "acusatiu", "perfekt", "wie-lange"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich bleibe für einen Monat in Berlin._ → {{1}}\n\n2. _Ich habe seit drei Jahren in Berlin gewohnt._ → {{2}}\n\n3. _Seit eine Woche ist Nico in Deutschland._ → {{3}}\n\n4. _Wir arbeiten von Montag bis Freitag._ → {{4}}\n\n5. _Ich lerne Deutsch seit zwei Jahre._ → {{5}}\n\n6. _Sie bleibt ein Monat in Spanien._ → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "1. für einen Monat" },
+      { "id": "2", "label": "2. habe gewohnt seit" },
+      { "id": "3", "label": "3. seit eine Woche" },
+      { "id": "4", "label": "4. von Montag bis Freitag" },
+      { "id": "5", "label": "5. seit zwei Jahre" },
+      { "id": "6", "label": "6. ein Monat (masc.)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "1",
+        "options": [
+          "(a) cas equivocat",
+          "(b) preposició sobrant",
+          "(c) temps verbal equivocat",
+          "(d) correcta"
+        ]
+      },
+      {
+        "blankId": "2",
+        "options": [
+          "(a) cas equivocat",
+          "(b) preposició sobrant",
+          "(c) temps verbal equivocat",
+          "(d) correcta"
+        ]
+      },
+      {
+        "blankId": "3",
+        "options": [
+          "(a) cas equivocat",
+          "(b) preposició sobrant",
+          "(c) temps verbal equivocat",
+          "(d) correcta"
+        ]
+      },
+      {
+        "blankId": "4",
+        "options": [
+          "(a) cas equivocat",
+          "(b) preposició sobrant",
+          "(c) temps verbal equivocat",
+          "(d) correcta"
+        ]
+      },
+      {
+        "blankId": "5",
+        "options": [
+          "(a) cas equivocat",
+          "(b) preposició sobrant",
+          "(c) temps verbal equivocat",
+          "(d) correcta"
+        ]
+      },
+      {
+        "blankId": "6",
+        "options": [
+          "(a) cas equivocat",
+          "(b) preposició sobrant",
+          "(c) temps verbal equivocat",
+          "(d) correcta"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "(b) preposició sobrant",
+      "2": "(c) temps verbal equivocat",
+      "3": "(a) cas equivocat",
+      "4": "(d) correcta",
+      "5": "(a) cas equivocat",
+      "6": "(a) cas equivocat"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. ==**Els tres errors rei**==: (1) _seit_ sempre amb **datiu**, inclòs el _-n_ del datiu plural; (2) amb _seit_ es fa servir **Präsens**, no Perfekt; (3) la durada nua va en **acusatiu** (_einen Monat_, no _ein Monat_). La frase 1 (_für einen Monat_) tècnicament existeix, però a A1 el patró net és acusatiu sol.",
+      "references": ["A1b-33"]
+    },
+    "incorrect": {
+      "default": "Tres preguntes ràpides: (1) Hi ha _seit_ + acusatiu? → cas equivocat. (2) Hi ha _seit_ + Perfekt? → temps verbal equivocat. (3) Hi ha _für_ davant d'una durada? → preposició sobrant a A1.",
+      "byResponse": [
+        {
+          "match": { "1": "(a) cas equivocat" },
+          "message": "El cas és correcte (_einen Monat_, acusatiu). L'error és la preposició _für_: a A1 la durada va ==sense preposició==. Resposta: **(b)**."
+        },
+        {
+          "match": { "1": "(d) correcta" },
+          "message": "_für einen Monat_ existeix (durades planificades cap al futur), però el patró A1 net és ==acusatiu sol==: _Ich bleibe einen Monat in Berlin_. A efectes d'aquest exercici: **(b) preposició sobrant**."
+        },
+        {
+          "match": { "2": "(a) cas equivocat" },
+          "message": "El cas és correcte (_drei Jahren_, datiu plural +n). L'error és el **temps verbal**: amb _seit_ (acció que continua) cal ==Präsens==, no Perfekt. Resposta: **(c)**."
+        },
+        {
+          "match": { "3": "(c) temps verbal equivocat" },
+          "message": "El temps verbal (_ist_) és correcte. L'error és el cas: _seit_ + ==**datiu femení**== → _seit ==einer== Woche_. Resposta: **(a)**."
+        },
+        {
+          "match": { "4": "(a) cas equivocat" },
+          "message": "_von Montag bis Freitag_ és **correcte**. Amb dies sense article, el cas queda \"invisible\" però el patró funciona. Resposta: **(d)**."
+        },
+        {
+          "match": { "5": "(c) temps verbal equivocat" },
+          "message": "El temps (_lerne_, Präsens) és correcte. L'error és el ==**datiu plural sense _-n_**==: _seit zwei ==Jahren==_, no _Jahre_. Resposta: **(a)**."
+        },
+        {
+          "match": { "6": "(b) preposició sobrant" },
+          "message": "No hi ha cap preposició sobrant. L'error és el cas: _Monat_ és masculí i la durada és acusatiu → _==einen== Monat_, no _ein Monat_. Resposta: **(a)**."
+        }
+      ]
+    }
+  }
+}

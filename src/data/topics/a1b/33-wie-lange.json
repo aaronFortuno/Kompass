@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-33",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 33,
+  "title": "Wie lange?",
+  "shortTitle": "Wie lange",
+  "description": "Tres maneres d'expressar la durada: acusatiu nu, interval amb von… bis…, i període fins al present amb seit + datiu.",
+  "axes": ["expressions-i-funcions", "preposicions"],
+  "prerequisites": ["A1b-32"],
+  "estimatedMinutes": 25,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### La pregunta _Wie lange?_\n\n_Wie lange_ vol dir literalment \"**com de llarg**\", però en temporal es tradueix com **quant de temps**. Pregunta per la **durada** d'una acció o estat.\n\n- _==Wie lange== trainiert ihr?_ — **Quant de temps** entreneu?\n- _==Wie lange== wohnst du in Berlin?_ — **Quant de temps** fa que vius a Berlín?\n- _==Wie lange== arbeitest du heute?_ — **Quant de temps** treballes avui?\n\nAquesta pregunta té **tres tipus de resposta** segons quin aspecte de la durada vulguis expressar:"
+        },
+        {
+          "type": "table",
+          "title": "33.1 Els tres patrons de resposta a Wie lange?",
+          "headers": ["Tipus", "Marca", "Què expressa", "Cas"],
+          "rows": [
+            ["**Durada nua**", "_(res, acusatiu sol)_", "Quant de temps dura l'acció", "==**Acusatiu**=="],
+            ["**Interval**", "_von… bis…_", "Des de quan fins a quan", "_von_ +Datiu · _bis_ +Akk"],
+            ["**Període fins ara**", "_seit…_", "Fa X temps que dura (i continua)", "==**Datiu**=="]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Primer contrast amb A1b-32",
+          "body": "_Wann?_ respon amb **moments** (_am Montag, um 8 Uhr, im Juli_). _Wie lange?_ respon amb **durades**. Si dubtes, pregunta't: _puc posar-hi \"durant\" davant en català?_ Si sí, és _wie lange_. ==_Estudio durant dues hores_ → durada. _Estudio a les dues_ → moment.=="
+        }
+      ]
+    },
+    {
+      "id": "acusatiu-durada",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Patró 1: durada en acusatiu (sense preposició)\n\nLa manera **més directa** d'expressar una durada: un sintagma nominal temporal en ==**acusatiu**==, **sense cap preposició** al davant.\n\n- _Wir trainieren ==eine Stunde==._ — Entrenem **una hora**.\n- _Ich arbeite ==den ganzen Tag==._ — Treballo **tot el dia**.\n- _Sie bleibt ==einen Monat== in Spanien._ — Es queda **un mes** a Espanya.\n- _Wir machen ==zwei Wochen== Urlaub._ — Fem **dues setmanes** de vacances.\n\n**Per què acusatiu?** L'alemany marca els **complements temporals de durada** (igual que els de direcció o els objectes directes) amb acusatiu. És una regla que cal interioritzar: ==**durada = acusatiu**==. No hi ha preposició perquè no cal — el cas mateix ja diu \"aquesta és la durada\"."
+        },
+        {
+          "type": "table",
+          "title": "33.2 Formes de la durada en acusatiu",
+          "headers": ["Masculí (Tag, Monat)", "Femení (Woche, Stunde, Minute)", "Neutre (Jahr)", "Plural"],
+          "rows": [
+            ["_==einen== Tag_", "_==eine== Woche_", "_==ein== Jahr_", "_==zwei== Tage, ==drei== Wochen_"],
+            ["_==den== ganzen Tag_", "_==die== ganze Woche_", "_==das== ganze Jahr_", "—"],
+            ["_==einen== Monat_", "_==eine== Minute_", "—", "_==zwei== Monate_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Avís per a catalanoparlants",
+          "body": "En masculí singular, l'article indefinit canvia: _==ein==_ (nominatiu) → _==einen==_ (acusatiu). No diguis _\"Ich bleibe ~~ein Monat~~\"_ sinó _\"Ich bleibe ==einen Monat==\"_. En femení, neutre i plural, l'article no canvia visualment, però la **regla** (acusatiu) sí que hi és."
+        },
+        {
+          "type": "explanation",
+          "body": "**Paraules de durada freqüents** (totes en acusatiu):\n\n_eine Minute · eine Stunde · einen Tag · eine Woche · einen Monat · ein Jahr · eine Sekunde · ein Wochenende · eine Nacht_"
+        }
+      ]
+    },
+    {
+      "id": "check-1-acusatiu",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-33-ex-04", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "von-bis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Patró 2: interval amb _von… bis…_\n\nQuan vols marcar un **principi i un final** — des de quan fins a quan — fas servir la combinació ==**von… bis…**==.\n\n- _Wir trainieren ==von 9:00 bis 11:00==._ — Entrenem **de 9:00 a 11:00**.\n- _Ich arbeite ==von Montag bis Freitag==._ — Treballo **de dilluns a divendres**.\n- _Die Schule ist ==von September bis Juni==._ — L'escola va **de setembre a juny**.\n- _Der Kurs dauert ==von Januar bis März==._ — El curs dura **de gener a març**."
+        },
+        {
+          "type": "table",
+          "title": "33.3 Gramàtica de von i bis",
+          "headers": ["Preposició", "Cas", "Significat", "Exemple"],
+          "rows": [
+            ["**von**", "**+Datiu**", "_des de_ (principi)", "_==von dem== Montag_ → _==vom== Montag_"],
+            ["**bis**", "**+Akkusativ**", "_fins a_ (final)", "_==bis den== Freitag_ → _==bis== Freitag_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Simplificació pràctica",
+          "body": "Amb **hores, dies de la setmana i mesos**, normalment no apareix article: _von Montag bis Freitag, von 9 bis 11, von Januar bis März_. El cas hi és tècnicament però és invisible perquè no hi ha res on marcar-lo. Respira. ==Memoritza el patró _von… bis…_ com un bloc==."
+        },
+        {
+          "type": "explanation",
+          "body": "**Quan apareix l'article (i el cas es nota):**\n\n- _==Vom== Anfang bis ==zum== Ende._ — Del principi fins al final. (_vom_ = _von+dem_ [datiu]; _bis zum_ = _bis zu+dem_ [datiu]; _bis_ s'hi recolza en _zu_ per introduir l'article.)\n- _Ich bleibe ==vom 3. bis zum 10. August==._ — Em quedo **del 3 al 10 d'agost** (veure A1b-35 per a dates completes)."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Truc útil",
+          "body": "_von… bis…_ sempre funciona també per a **llocs** (_von Berlin bis München_) i **quantitats** (_von 10 bis 20 Euro_). És un patró molt versàtil."
+        }
+      ]
+    },
+    {
+      "id": "seit",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Patró 3: període fins al present amb _seit_\n\nQuan una acció **va començar al passat i continua ara**, fas servir ==**seit**== + **Datiu**. Expressa **fa X temps que** (i encara dura).\n\n- _Nico ist ==seit einer Woche== in Deutschland._ — Nico és a Alemanya **des de fa una setmana** (i encara hi és).\n- _Ich wohne ==seit drei Jahren== in Berlin._ — Visc a Berlín **des de fa tres anys**.\n- _Sie lernt ==seit zwei Monaten== Deutsch._ — Estudia alemany **des de fa dos mesos**.\n- _Wir sind ==seit 2020== verheiratet._ — Estem casats **des del 2020**."
+        },
+        {
+          "type": "explanation",
+          "body": "**Cas: _seit_ regeix sempre ==datiu==.** Això té conseqüències visibles:"
+        },
+        {
+          "type": "table",
+          "title": "33.4 Contrast acusatiu (durada nua) vs. datiu (seit)",
+          "headers": ["Acusatiu (durada nua)", "Datiu (_seit_)"],
+          "rows": [
+            ["_eine Woche_", "_seit ==einer== Woche_"],
+            ["_einen Monat_", "_seit ==einem== Monat_"],
+            ["_ein Jahr_", "_seit ==einem== Jahr_"],
+            ["_zwei Wochen_", "_seit zwei ==Wochen==_"],
+            ["_drei Jahre_", "_seit drei ==Jahren== (+n al plural!)_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Datiu plural",
+          "body": "Recorda la regla d'A1b-17: el **datiu plural** afegeix ==**-n**== al nom (si no en té ja un). Per això _drei ==Jahren==, zwei ==Monaten==, fünf ==Stunden==_ (_Stunden_ ja acaba en _-n_, no en posem un altre)."
+        },
+        {
+          "type": "explanation",
+          "body": "**El contrast clau amb el present català:**\n\nEn català diem _\"Visc a Berlín **des de fa** tres anys\"_ o _\"**Fa** tres anys que visc a Berlín\"_. En alemany, amb _seit_, s'usa el ==**Präsens**==, no cap temps compost:\n\n- ✅ _Ich ==wohne== seit drei Jahren in Berlin._ (literalment: \"Visc des de fa tres anys\")\n- ❌ _Ich ~~habe gewohnt~~ seit drei Jahren in Berlin._\n\nAquesta és una de les trampes gramaticals més clàssiques per a catalanoparlants: l'alemany **no** usa el Perfekt amb _seit_ per a accions que continuen. Present directe."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Preview A1b-34",
+          "body": "_Seit_ marca un **període que dura fins ara**. Hi ha una altra preposició, _vor_ (+Datiu), que marca un **moment puntual del passat** (_vor drei Tagen_ = fa tres dies, acció ja acabada). La propera lliçó explora el contrast. De moment retén: ==_seit_ = encara dura, _vor_ = ja va acabar=="
+        }
+      ]
+    },
+    {
+      "id": "check-2-seit",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-33-ex-03", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "wann-vs-wielange",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Resum comparatiu: _Wann?_ vs _Wie lange?_\n\nEls dos sistemes conviuen i sovint es barregen en una mateixa frase. Taula mestra:"
+        },
+        {
+          "type": "table",
+          "title": "33.5 Wann? vs. Wie lange?",
+          "headers": ["Pregunta", "Resposta típica", "Preposició", "Cas", "Exemple"],
+          "rows": [
+            ["**Wann?**", "moment puntual", "_am, um, im_", "Datiu", "_==Am Montag== arbeite ich._"],
+            ["**Wann?**", "data exacta", "_am_ + data", "Datiu", "_==Am 3. Mai== fahren wir._"],
+            ["**Wie lange?**", "durada pura", "_(res)_", "==**Akkusativ**==", "_Ich bleibe ==einen Monat==._"],
+            ["**Wie lange?**", "interval", "_von… bis…_", "Dat / Akk", "_==Von 9 bis 11== trainiere ich._"],
+            ["**Wie lange?**", "fins ara", "_seit_", "==**Datiu**==", "_==Seit zwei Jahren== wohne ich hier._"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Frases amb totes dues preguntes alhora:**\n\n- _==Am Montag== arbeite ich ==acht Stunden==._ — Dilluns treballo vuit hores. (_wann_ → _am Montag_; _wie lange_ → _acht Stunden_)\n- _==Seit Januar== lerne ich ==jeden Tag eine Stunde== Deutsch._ — Des del gener, estudio alemany cada dia una hora. (_seit_ introdueix el període; _eine Stunde_ és durada en acusatiu)"
+        }
+      ]
+    },
+    {
+      "id": "check-3-classifica",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-33-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. Posar una preposició davant de la durada.**\n\nPer instint, traduïm \"durant\" del català. En alemany **no hi és**.\n\n- ❌ _Ich bleibe ~~für~~ einen Monat in Spanien._ (_für_ existeix però canvia el matís)\n- ✅ _Ich bleibe ==einen Monat== in Spanien._\n\n> Nota: _für + Akkusativ_ també és possible (_für einen Monat_) i s'usa per a **durades planificades cap al futur**, però a A1 el patró bàsic i segur és ==acusatiu nu==. Comença amb això.\n\n**2. Oblidar el canvi _ein → einen_ en masculí.**\n\n- ❌ _Ich arbeite ~~ein~~ Tag in Berlin._\n- ✅ _Ich arbeite ==einen== Tag in Berlin._\n\n**3. Usar Perfekt amb _seit_.**\n\nEl parany número u. _Seit_ demana **present** per a accions que continuen.\n\n- ❌ _Ich ~~habe gewohnt~~ seit zwei Jahren in Berlin._\n- ✅ _Ich ==wohne== seit zwei Jahren in Berlin._"
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Paranys 4, 5 i 6",
+          "body": "**4. Posar _seit_ en acusatiu.** _Seit_ és **sempre datiu**. Mai acusatiu.\n\n- ❌ _seit ~~eine~~ Woche_ → ✅ _seit ==einer== Woche_\n- ❌ _seit drei ~~Jahre~~_ → ✅ _seit drei ==Jahren==_ (datiu plural amb _-n_)\n\n**5. Confondre _von… bis…_ amb _seit_.**\n\n- _==Von 2020 bis 2023== habe ich in Berlin gewohnt._ → interval **tancat** (ja no hi visc). Perfekt.\n- _==Seit 2020== wohne ich in Berlin._ → període **obert** (encara hi visc). Present.\n\nLa tria de preposició canvia el significat i el temps verbal.\n\n**6. Barrejar _wann_ i _wie lange_ mentalment.** Si algú et pregunta _==Wie lange== bleibst du?_ i contestes _\"Am Montag\"_, no has respost a la pregunta. _Am Montag_ respon a _wann_."
+        }
+      ]
+    },
+    {
+      "id": "check-4-escollir",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-33-ex-02", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-5-error",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-33-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-6-ordre",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-33-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-7-traduccio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-33-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-8-dialog",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-33-ex-08", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi\n\n**La pregunta _Wie lange?_ té tres respostes tipus:**"
+        },
+        {
+          "type": "table",
+          "title": "33.6 Els tres patrons en una imatge",
+          "headers": ["Patró", "Forma", "Cas", "Significat", "Temps verbal"],
+          "rows": [
+            ["**Durada nua**", "_eine Stunde, einen Monat, zwei Wochen_", "==Akkusativ==", "quant dura", "qualsevol"],
+            ["**Interval**", "_von… bis…_", "_von_ +Dat · _bis_ +Akk", "des de / fins a", "qualsevol"],
+            ["**Fins ara**", "_seit…_", "==Dativ==", "fa X temps que (encara dura)", "**Präsens**"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Les cinc regles que no canvien mai",
+          "body": "1. **Durada = acusatiu sense preposició.** _Ich bleibe ==einen Monat==._ No _für einen Monat_ a A1.\n2. **Masculí canvia article:** _ein → ==einen==_ en acusatiu. _einen Tag, einen Monat_.\n3. **_seit_ = datiu.** _seit ==einer== Woche, seit ==einem== Jahr, seit drei ==Jahren==_.\n4. **Datiu plural + -n** al substantiu: _drei ==Jahren==, zwei ==Monaten==_ (excepte si ja acaba en _-n_).\n5. **_seit_ va amb Präsens**, no amb Perfekt, per a accions que continuen. _Ich ==wohne== seit drei Jahren hier_ (mai _~~habe gewohnt~~_)."
+        },
+        {
+          "type": "explanation",
+          "body": "**Contrast _Wann?_ vs _Wie lange?_:**\n\n- _Wann?_ → moment (_am Montag, um 8 Uhr_). Veure A1b-32.\n- _Wie lange?_ → durada. Aquesta lliçó.\n- _Seit wann?_ → des de quan (respon amb _seit_ + data/moment: _seit Januar, seit 2020_).\n\n**Enllaços amb el que ja saps:**\n\n- **A1a-7, A1b-17** — casos i articles: acusatiu i datiu ja els coneixes; aquí els apliques a temporals.\n- **A1a-2, A1a-18, A1b-30** — posició 2 i inversió: quan el complement temporal obre la frase, aplica la inversió.\n- **A1b-32** — _wann?_ i moments puntuals. Contrast amb aquesta lliçó.\n\n**Preview A1b-34.** La lliçó següent explora el contrast ==_seit_ (període que continua) vs _vor_ (moment passat acabat)==. _Seit drei Tagen_ = fa tres dies i continua. _Vor drei Tagen_ = fa tres dies, ja va acabar."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista pràctica final",
+          "body": "Quan tradueixis del català, identifica primer **quin patró** necessites — durada, interval o període fins ara — i triaràs la preposició correcta (o cap). Si és _seit_, recorda't automàticament: ==datiu + present==. Amb aquest reflex evitaràs el 80% dels errors."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-33-ex-02",
+  "topicId": "A1b-33",
+  "title": "Tria el patró: acusatiu, von…bis… o seit",
+  "prompt": "Tria el patró correcte per a cada frase segons el significat: ==**acusatiu sol**== (durada nua), ==**_von… bis…_**== (interval) o ==**_seit_**== (fins ara).",
+  "difficulty": 2,
+  "tags": ["wie-lange", "patrons", "acusatiu", "seit", "von-bis"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich bleibe ___ in Spanien._ → {{1}}\n\n2. _Wir arbeiten ___ ._ → {{2}}\n\n3. ____ lerne ich Deutsch._ → {{3}}\n\n4. _Der Kurs ist ___ ._ → {{4}}\n\n5. _Nico ist ___ in Deutschland._ → {{5}}\n\n6. _Ich arbeite ___ ._ → {{6}}\n\n7. _Die Bibliothek ist ___ geöffnet._ → {{7}}\n\n8. _Wir wohnen ___ hier._ → {{8}}",
+    "blanks": [
+      { "id": "1", "label": "1. quedar-se un mes" },
+      { "id": "2", "label": "2. treballar vuit hores" },
+      { "id": "3", "label": "3. aprendre alemany (fins ara)" },
+      { "id": "4", "label": "4. el curs (interval)" },
+      { "id": "5", "label": "5. Nico, Alemanya (una setmana, fins ara)" },
+      { "id": "6", "label": "6. tot el dia (durada)" },
+      { "id": "7", "label": "7. biblioteca oberta (horari)" },
+      { "id": "8", "label": "8. viure aquí (dos anys, fins ara)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "1",
+        "options": ["einen Monat", "von einem Monat", "seit einem Monat"]
+      },
+      {
+        "blankId": "2",
+        "options": ["acht Stunden", "von acht Stunden", "seit acht Stunden"]
+      },
+      {
+        "blankId": "3",
+        "options": ["Ein Jahr", "Von einem Jahr", "Seit einem Jahr"]
+      },
+      {
+        "blankId": "4",
+        "options": ["Januar bis März", "von Januar bis März", "seit Januar"]
+      },
+      {
+        "blankId": "5",
+        "options": ["eine Woche", "von einer Woche", "seit einer Woche"]
+      },
+      {
+        "blankId": "6",
+        "options": ["den ganzen Tag", "vom ganzen Tag", "seit dem ganzen Tag"]
+      },
+      {
+        "blankId": "7",
+        "options": ["acht Stunden", "von 9 bis 17", "seit 9"]
+      },
+      {
+        "blankId": "8",
+        "options": ["zwei Jahre", "von zwei Jahren", "seit zwei Jahren"]
+      }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "einen Monat",
+      "2": "acht Stunden",
+      "3": "Seit einem Jahr",
+      "4": "von Januar bis März",
+      "5": "seit einer Woche",
+      "6": "den ganzen Tag",
+      "7": "von 9 bis 17",
+      "8": "seit zwei Jahren"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. ==**Tres patrons, tres usos**==: durada nua (acusatiu, sense preposició), interval tancat (_von… bis…_), període que continua (_seit_ + datiu). Si la frase diu \"fa X temps que\" o \"des de fa\" → _seit_. Si diu \"de X a Y\" → _von… bis…_. La resta (duració pura) → acusatiu sol.",
+      "references": ["A1b-33"]
+    },
+    "incorrect": {
+      "default": "Pregunta't què expressa la frase: **quant dura** (acusatiu sol), **de quan a quan** (_von… bis…_), o **des de fa quant i encara continua** (_seit_ + datiu).",
+      "byResponse": [
+        {
+          "match": { "1": "seit einem Monat" },
+          "message": "_Ich bleibe ___ in Spanien_ expressa **quant de temps em quedaré** (durada), no fa quant que hi sóc. Cal ==acusatiu sol==: _einen Monat_."
+        },
+        {
+          "match": { "3": "Ein Jahr" },
+          "message": "La frase vol dir \"fa un any que estudio alemany\" — acció que **continua**. Cal ==_seit_ + datiu==: _Seit einem Jahr_."
+        },
+        {
+          "match": { "4": "Januar bis März" },
+          "message": "Sense _von_ no és un interval complet. El patró és ==_von… bis…_== com a bloc: _von Januar bis März_."
+        },
+        {
+          "match": { "5": "eine Woche" },
+          "message": "_Nico ist ___ in Deutschland_ — és a Alemanya **ara** i ho està des de fa una setmana. Cal ==_seit einer Woche_==, no l'acusatiu sol."
+        },
+        {
+          "match": { "6": "vom ganzen Tag" },
+          "message": "_den ganzen Tag_ (tot el dia) és una **durada pura** en acusatiu. No cal cap preposició: _Ich arbeite ==den ganzen Tag==_."
+        },
+        {
+          "match": { "8": "zwei Jahre" },
+          "message": "_Wir wohnen ___ hier_ = \"fa dos anys que vivim aquí\" (continua). Cal ==_seit zwei Jahren_== (datiu plural amb _-n_)."
+        }
+      ]
+    }
+  }
+}

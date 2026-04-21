@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-33-ex-06",
+  "topicId": "A1b-33",
+  "title": "Ordena les paraules (posició 2 + inversió)",
+  "prompt": "Ordena els fragments per formar una frase correcta amb ==**verb conjugat a la posició 2**==. Si el complement temporal va a la **pos. 1**, aplica la **inversió** (subjecte a la 3). Escriu la frase sencera amb majúscula inicial i punt final.",
+  "difficulty": 3,
+  "tags": ["ordre-paraules", "inversio", "typeIn", "wie-lange"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _ich · wohne · seit drei Jahren · in Berlin_ → {{1}}\n\n2. _wir · trainieren · von 9 bis 11_ → {{2}}\n\n3. _seit einer Woche · ist · Nico · in Deutschland_ → {{3}}\n\n4. _ich · bleibe · einen Monat · in Spanien_ → {{4}}\n\n5. _von Montag bis Freitag · arbeite · ich · acht Stunden_ → {{5}}\n\n6. _der Kurs · dauert · drei Monate_ → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "1. viure a Berlín (3 anys)" },
+      { "id": "2", "label": "2. entrenar de 9 a 11" },
+      { "id": "3", "label": "3. Nico a Alemanya (inversió)" },
+      { "id": "4", "label": "4. quedar-se un mes" },
+      { "id": "5", "label": "5. treballar dl-dv (inversió)" },
+      { "id": "6", "label": "6. el curs dura 3 mesos" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Ich …" },
+      { "blankId": "2", "placeholder": "Wir …" },
+      { "blankId": "3", "placeholder": "Seit einer Woche …" },
+      { "blankId": "4", "placeholder": "Ich …" },
+      { "blankId": "5", "placeholder": "Von Montag bis Freitag …" },
+      { "blankId": "6", "placeholder": "Der Kurs …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": [
+        "Ich wohne seit drei Jahren in Berlin.",
+        "Ich wohne seit drei Jahren in Berlin"
+      ],
+      "2": [
+        "Wir trainieren von 9 bis 11.",
+        "Wir trainieren von 9 bis 11"
+      ],
+      "3": [
+        "Seit einer Woche ist Nico in Deutschland.",
+        "Seit einer Woche ist Nico in Deutschland"
+      ],
+      "4": [
+        "Ich bleibe einen Monat in Spanien.",
+        "Ich bleibe einen Monat in Spanien"
+      ],
+      "5": [
+        "Von Montag bis Freitag arbeite ich acht Stunden.",
+        "Von Montag bis Freitag arbeite ich acht Stunden"
+      ],
+      "6": [
+        "Der Kurs dauert drei Monate.",
+        "Der Kurs dauert drei Monate"
+      ]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Quan el complement temporal va a la **posició 1** (frases 3 i 5), aplica la ==**inversió**==: verb conjugat a la 2, subjecte a la 3. És la mateixa regla que vas veure a A1a-18 i A1b-30, ara amb complements temporals de durada.",
+      "references": ["A1b-33", "A1a-18", "A1b-30"]
+    },
+    "incorrect": {
+      "default": "Comprova dues coses: (1) el **verb conjugat** sempre a la ==**posició 2**==; (2) si hi ha un complement a la pos. 1, el **subjecte** va a la ==**pos. 3**==. Revisa majúscula inicial, punt final i ortografia.",
+      "byResponse": [
+        {
+          "match": { "3": "Seit einer Woche Nico ist in Deutschland." },
+          "message": "==Error de V2==: després d'_Seit einer Woche_ cal el verb, no el subjecte. _Seit einer Woche ==ist Nico==_ (inversió)."
+        },
+        {
+          "match": { "5": "Von Montag bis Freitag ich arbeite acht Stunden." },
+          "message": "==Error de V2==: el verb conjugat va a la pos. 2. _Von Montag bis Freitag ==arbeite ich==_ (inversió)."
+        },
+        {
+          "match": { "1": "Ich seit drei Jahren wohne in Berlin." },
+          "message": "_wohne_ és el verb conjugat: ha d'anar a la ==pos. 2==, just després del subjecte: _Ich ==wohne== seit drei Jahren in Berlin_."
+        }
+      ]
+    }
+  }
+}

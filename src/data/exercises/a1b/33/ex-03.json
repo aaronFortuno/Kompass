@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-33-ex-03",
+  "topicId": "A1b-33",
+  "title": "Cas correcte després de seit (datiu)",
+  "prompt": "Tria la forma correcta en ==**datiu**== després de _seit_. Recorda: masculí/neutre _einem_, femení _einer_, ==**plural +n**== al substantiu.",
+  "difficulty": 2,
+  "tags": ["seit", "datiu", "articles", "plural-n"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich wohne hier seit {{1}} Woche._\n\n2. _Er lernt seit {{2}} Monat Deutsch._\n\n3. _Wir sind seit {{3}} Jahr verheiratet._\n\n4. _Sie arbeitet seit drei {{4}} hier._\n\n5. _Anna ist seit zwei {{5}} in Berlin._\n\n6. _Ich kenne ihn seit fünf {{6}} ._\n\n7. _Wir wohnen seit {{7}} Zeit in Madrid._\n\n8. _Seit {{8}} Geburtstag habe ich das Fahrrad._",
+    "blanks": [
+      { "id": "1", "label": "1. Woche (fem.)" },
+      { "id": "2", "label": "2. Monat (masc.)" },
+      { "id": "3", "label": "3. Jahr (neut.)" },
+      { "id": "4", "label": "4. Jahre (plural)" },
+      { "id": "5", "label": "5. Wochen (plural)" },
+      { "id": "6", "label": "6. Monate (plural)" },
+      { "id": "7", "label": "7. lang- + Zeit (fem.)" },
+      { "id": "8", "label": "8. mein- + Geburtstag (masc.)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["eine", "einer", "einen"] },
+      { "blankId": "2", "options": ["ein", "einem", "einen"] },
+      { "blankId": "3", "options": ["ein", "einem", "eines"] },
+      { "blankId": "4", "options": ["Jahre", "Jahren", "Jahr"] },
+      { "blankId": "5", "options": ["Wochen", "Wochens", "Woche"] },
+      { "blankId": "6", "options": ["Monate", "Monaten", "Monat"] },
+      { "blankId": "7", "options": ["lange", "langer", "lang"] },
+      { "blankId": "8", "options": ["meinem", "meinen", "mein"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "einer",
+      "2": "einem",
+      "3": "einem",
+      "4": "Jahren",
+      "5": "Wochen",
+      "6": "Monaten",
+      "7": "langer",
+      "8": "meinem"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. _Seit_ regeix ==**datiu**==. Masculí/neutre: _einem, meinem_. Femení: _einer, meiner_. ==**Plural: -n al nom**== (_Jahren, Monaten, Tagen_) — excepte si ja acaba en _-n_ (_Wochen, Stunden_). Amb adjectius en datiu femení: _langer Zeit_ (seit + fem. dat. → _der langen Zeit_ o, sense article, _langer Zeit_).",
+      "references": ["A1b-33", "A1b-17"]
+    },
+    "incorrect": {
+      "default": "_Seit_ + ==datiu==, sempre. Recorda la taula: _einem_ (masc./neut.), _einer_ (fem.), ==**_-n_ al plural**==. No confonguis amb l'acusatiu (_einen, eine, ein_).",
+      "byResponse": [
+        {
+          "match": { "1": "eine" },
+          "message": "_eine_ és nominatiu/acusatiu. Després de _seit_ cal ==**datiu**==: _seit ==einer== Woche_."
+        },
+        {
+          "match": { "1": "einen" },
+          "message": "_einen_ és acusatiu masculí. _Woche_ és femení i _seit_ demana datiu: _seit ==einer== Woche_."
+        },
+        {
+          "match": { "2": "einen" },
+          "message": "_einen_ és acusatiu. _Seit_ + datiu: _seit ==einem== Monat_."
+        },
+        {
+          "match": { "4": "Jahre" },
+          "message": "==**Datiu plural amb _-n_**==: _seit drei ==Jahren==_, no _Jahre_."
+        },
+        {
+          "match": { "6": "Monate" },
+          "message": "Datiu plural afegeix _-n_: _seit fünf ==Monaten==_ (no _Monate_)."
+        },
+        {
+          "match": { "5": "Wochens" },
+          "message": "_Wochens_ no existeix. _Wochen_ ja és la forma de plural, i com que acaba en _-n_ no se n'afegeix una altra: _seit zwei ==Wochen==_."
+        },
+        {
+          "match": { "7": "lange" },
+          "message": "Aquí _Zeit_ és femení datiu sense article: l'adjectiu porta la marca forta _-er_ → _seit ==langer== Zeit_."
+        },
+        {
+          "match": { "8": "meinen" },
+          "message": "_meinen_ és acusatiu masculí. _Seit_ + datiu masculí → _seit ==meinem== Geburtstag_."
+        }
+      ]
+    }
+  }
+}

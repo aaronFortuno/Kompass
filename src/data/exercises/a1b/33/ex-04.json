@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-33-ex-04",
+  "topicId": "A1b-33",
+  "title": "Completa amb la durada en acusatiu",
+  "prompt": "Escriu la durada en ==**acusatiu**==. Entre parèntesis tens el nombre i el substantiu en nominatiu. Recorda: masculí _ein → ==einen==_; femení, neutre i plural no canvien visualment.",
+  "difficulty": 2,
+  "tags": ["acusatiu", "durada", "typeIn"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich bleibe {{1}} in Spanien._ (1 / Monat)\n\n2. _Wir trainieren {{2}} ._ (1 / Stunde)\n\n3. _Sie lernt {{3}} Deutsch._ (1 / Jahr)\n\n4. _Er arbeitet {{4}} ._ (der ganze Tag)\n\n5. _Ich mache {{5}} Urlaub._ (2 / Woche)\n\n6. _Der Film dauert {{6}} ._ (3 / Stunde)",
+    "blanks": [
+      { "id": "1", "label": "1. un mes (masc.)" },
+      { "id": "2", "label": "2. una hora (fem.)" },
+      { "id": "3", "label": "3. un any (neut.)" },
+      { "id": "4", "label": "4. tot el dia (masc. + adj.)" },
+      { "id": "5", "label": "5. dues setmanes (pl.)" },
+      { "id": "6", "label": "6. tres hores (pl.)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "ein… Monat" },
+      { "blankId": "2", "placeholder": "ein… Stunde" },
+      { "blankId": "3", "placeholder": "ein… Jahr" },
+      { "blankId": "4", "placeholder": "d… ganz… Tag" },
+      { "blankId": "5", "placeholder": "zwei …" },
+      { "blankId": "6", "placeholder": "drei …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["einen Monat"],
+      "2": ["eine Stunde"],
+      "3": ["ein Jahr"],
+      "4": ["den ganzen Tag"],
+      "5": ["zwei Wochen"],
+      "6": ["drei Stunden"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. ==**Durada = acusatiu**==. Masculí: _==einen== Monat / ==einen== Tag_ (canvi respecte del nominatiu _ein_). Femení i neutre: l'article no canvia visualment (_eine Stunde, ein Jahr_). Plural sense article: res especial (_zwei Wochen, drei Stunden_). Amb adjectiu fort (_ganze_), la marca d'acusatiu la porta tot: _==den ganzen== Tag_.",
+      "references": ["A1b-33", "A1a-7"]
+    },
+    "incorrect": {
+      "default": "==**Durada = acusatiu**==. Vigila el masculí: _ein → ==einen==_. Si hi ha article i adjectiu (_der ganze Tag_ → _den ganzen Tag_), tots dos prenen la marca d'acusatiu.",
+      "byResponse": [
+        {
+          "match": { "1": "ein Monat" },
+          "message": "_Monat_ és masculí. Acusatiu: _==einen== Monat_, no _ein Monat_."
+        },
+        {
+          "match": { "1": "einem Monat" },
+          "message": "_einem_ és datiu. Durada nua → ==acusatiu==: _einen Monat_."
+        },
+        {
+          "match": { "4": "der ganze Tag" },
+          "message": "_der ganze Tag_ és **nominatiu**. En acusatiu masculí: _==den ganzen== Tag_ (tots dos porten la _-n_)."
+        },
+        {
+          "match": { "4": "den ganze Tag" },
+          "message": "Falta la _-n_ a l'adjectiu: _den ganz==en== Tag_ (masc. acusatiu)."
+        },
+        {
+          "match": { "5": "zwei Woche" },
+          "message": "_Woche_ és singular. Plural: _zwei ==Wochen==_."
+        },
+        {
+          "match": { "6": "drei Stunde" },
+          "message": "Plural de _Stunde_: _==Stunden==_. _Drei Stunden_."
+        }
+      ]
+    }
+  }
+}

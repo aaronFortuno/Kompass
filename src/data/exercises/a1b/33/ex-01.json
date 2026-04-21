@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-33-ex-01",
+  "topicId": "A1b-33",
+  "title": "Wann? o Wie lange?",
+  "prompt": "Per a cada resposta, marca quina de les dues preguntes hi encaixa: ==**_Wann?_**== (moment puntual) o ==**_Wie lange?_**== (durada).",
+  "difficulty": 1,
+  "tags": ["wann", "wie-lange", "classificacio", "moment-vs-durada"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Um acht Uhr._ → {{1}}\n\n2. _Eine Stunde._ → {{2}}\n\n3. _Am Montag._ → {{3}}\n\n4. _Seit drei Jahren._ → {{4}}\n\n5. _Von 9 bis 11._ → {{5}}\n\n6. _Im Juli._ → {{6}}\n\n7. _Einen Monat._ → {{7}}\n\n8. _Am 3. Mai._ → {{8}}",
+    "blanks": [
+      { "id": "1", "label": "1. Um acht Uhr" },
+      { "id": "2", "label": "2. Eine Stunde" },
+      { "id": "3", "label": "3. Am Montag" },
+      { "id": "4", "label": "4. Seit drei Jahren" },
+      { "id": "5", "label": "5. Von 9 bis 11" },
+      { "id": "6", "label": "6. Im Juli" },
+      { "id": "7", "label": "7. Einen Monat" },
+      { "id": "8", "label": "8. Am 3. Mai" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Wann?", "Wie lange?"] },
+      { "blankId": "2", "options": ["Wann?", "Wie lange?"] },
+      { "blankId": "3", "options": ["Wann?", "Wie lange?"] },
+      { "blankId": "4", "options": ["Wann?", "Wie lange?"] },
+      { "blankId": "5", "options": ["Wann?", "Wie lange?"] },
+      { "blankId": "6", "options": ["Wann?", "Wie lange?"] },
+      { "blankId": "7", "options": ["Wann?", "Wie lange?"] },
+      { "blankId": "8", "options": ["Wann?", "Wie lange?"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Wann?",
+      "2": "Wie lange?",
+      "3": "Wann?",
+      "4": "Wie lange?",
+      "5": "Wie lange?",
+      "6": "Wann?",
+      "7": "Wie lange?",
+      "8": "Wann?"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. _Wann?_ demana un **moment**: quan passa. _Wie lange?_ demana una **quantitat de temps**: quant dura. ==Si pots posar-hi 'durant' davant en català, és _wie lange_.== Les marques típiques: _um, am, im_ → moment (_wann_); _seit, von…bis…_ o acusatiu nu → durada (_wie lange_).",
+      "references": ["A1b-33", "A1b-32"]
+    },
+    "incorrect": {
+      "default": "Tres pistes ràpides: (1) _um 8 Uhr, am Montag, im Juli, am 3. Mai_ → sempre **moment** (_wann_); (2) _seit…, von…bis…_ → sempre **durada** (_wie lange_); (3) acusatiu sol (_eine Stunde, einen Monat_) → **durada**.",
+      "byResponse": [
+        {
+          "match": { "1": "Wie lange?" },
+          "message": "_Um acht Uhr_ diu **a quina hora** passa una cosa — és un **moment** → _==Wann?==_"
+        },
+        {
+          "match": { "2": "Wann?" },
+          "message": "_Eine Stunde_ és una **quantitat de temps**, no un moment. Respon a _==Wie lange?==_"
+        },
+        {
+          "match": { "4": "Wann?" },
+          "message": "_Seit drei Jahren_ expressa **des de fa quant de temps** (durada) — respon a _==Wie lange?==_ El pur moment seria _im Jahr 2020_."
+        },
+        {
+          "match": { "5": "Wann?" },
+          "message": "_Von 9 bis 11_ marca un **interval** (principi i final) = durada → _==Wie lange?==_"
+        },
+        {
+          "match": { "7": "Wann?" },
+          "message": "_Einen Monat_ (acusatiu sol) és **quant dura**, no quan passa → _==Wie lange?==_"
+        },
+        {
+          "match": { "8": "Wie lange?" },
+          "message": "_Am 3. Mai_ és una **data concreta** — un moment → _==Wann?==_"
+        }
+      ]
+    }
+  }
+}

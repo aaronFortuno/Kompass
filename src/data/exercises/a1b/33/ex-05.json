@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-33-ex-05",
+  "topicId": "A1b-33",
+  "title": "Tradueix del català a l'alemany",
+  "prompt": "Tradueix cada frase a l'alemany. ==**Tres verificacions**== abans d'escriure: (1) durada pura → **acusatiu sense preposició**; (2) _seit_ → **datiu + Präsens**; (3) interval → **_von… bis…_**. Escriu la frase sencera amb puntuació final.",
+  "difficulty": 3,
+  "tags": ["traduccio", "typeIn", "produccio", "wie-lange"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. \"Entrenem una hora.\" → {{1}}\n\n2. \"Estudio alemany des de fa dos anys.\" → {{2}}\n\n3. \"Treballo de nou a cinc.\" → {{3}}\n\n4. \"Em quedo un mes a Berlín.\" → {{4}}\n\n5. \"Visc aquí des de fa una setmana.\" → {{5}}\n\n6. \"El curs dura tres mesos.\" → {{6}}\n\n7. \"Nico és a Alemanya des de fa una setmana.\" → {{7}}\n\n8. \"Treballo tot el dia.\" → {{8}}",
+    "blanks": [
+      { "id": "1", "label": "1. entrenar una hora" },
+      { "id": "2", "label": "2. estudiar alemany (2 anys, fins ara)" },
+      { "id": "3", "label": "3. treballar (de 9 a 5)" },
+      { "id": "4", "label": "4. quedar-se un mes a Berlín" },
+      { "id": "5", "label": "5. viure aquí (1 setmana, fins ara)" },
+      { "id": "6", "label": "6. el curs dura 3 mesos" },
+      { "id": "7", "label": "7. Nico a Alemanya (1 setmana, fins ara)" },
+      { "id": "8", "label": "8. treballar tot el dia" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Wir trainieren …" },
+      { "blankId": "2", "placeholder": "Ich lerne seit …" },
+      { "blankId": "3", "placeholder": "Ich arbeite von …" },
+      { "blankId": "4", "placeholder": "Ich bleibe …" },
+      { "blankId": "5", "placeholder": "Ich wohne seit …" },
+      { "blankId": "6", "placeholder": "Der Kurs dauert …" },
+      { "blankId": "7", "placeholder": "Nico ist seit …" },
+      { "blankId": "8", "placeholder": "Ich arbeite …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": [
+        "Wir trainieren eine Stunde.",
+        "Wir trainieren eine Stunde"
+      ],
+      "2": [
+        "Ich lerne seit zwei Jahren Deutsch.",
+        "Ich lerne seit zwei Jahren Deutsch",
+        "Seit zwei Jahren lerne ich Deutsch.",
+        "Seit zwei Jahren lerne ich Deutsch"
+      ],
+      "3": [
+        "Ich arbeite von neun bis fünf.",
+        "Ich arbeite von neun bis fünf",
+        "Ich arbeite von 9 bis 5.",
+        "Ich arbeite von 9 bis 5"
+      ],
+      "4": [
+        "Ich bleibe einen Monat in Berlin.",
+        "Ich bleibe einen Monat in Berlin"
+      ],
+      "5": [
+        "Ich wohne seit einer Woche hier.",
+        "Ich wohne seit einer Woche hier",
+        "Seit einer Woche wohne ich hier.",
+        "Seit einer Woche wohne ich hier"
+      ],
+      "6": [
+        "Der Kurs dauert drei Monate.",
+        "Der Kurs dauert drei Monate"
+      ],
+      "7": [
+        "Nico ist seit einer Woche in Deutschland.",
+        "Nico ist seit einer Woche in Deutschland",
+        "Seit einer Woche ist Nico in Deutschland.",
+        "Seit einer Woche ist Nico in Deutschland"
+      ],
+      "8": [
+        "Ich arbeite den ganzen Tag.",
+        "Ich arbeite den ganzen Tag"
+      ]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Recorda la regla mestra: ==**en alemany, _seit_ + Präsens**== equival a \"_fa… que_ + present\" en català. Per això _Ich lerne seit zwei Jahren Deutsch_ és \"estudio alemany des de fa dos anys\" (mai _habe gelernt_ per a una acció que encara dura). Amb durades nues (_eine Stunde, den ganzen Tag_) i intervals (_von… bis…_), el temps verbal és lliure.",
+      "references": ["A1b-33"]
+    },
+    "incorrect": {
+      "default": "Comprova: (1) si és ==durada pura==, acusatiu sense preposició (_einen Monat, eine Stunde, den ganzen Tag_); (2) si és ==_seit_==, datiu + **Präsens** (mai Perfekt); (3) si és ==interval==, _von… bis…_ com a bloc; (4) ortografia, majúscules, punt final.",
+      "byResponse": [
+        {
+          "match": { "2": "Ich habe seit zwei Jahren Deutsch gelernt." },
+          "message": "==**Mai Perfekt amb _seit_**== si l'acció continua. L'alemany usa present: _Ich ==lerne== seit zwei Jahren Deutsch_."
+        },
+        {
+          "match": { "2": "Ich lerne seit zwei Jahre Deutsch." },
+          "message": "==**Datiu plural amb _-n_**==: _seit zwei ==Jahren==_, no _Jahre_."
+        },
+        {
+          "match": { "4": "Ich bleibe ein Monat in Berlin." },
+          "message": "_Monat_ és masculí i la durada és acusatiu: _Ich bleibe ==einen== Monat in Berlin_."
+        },
+        {
+          "match": { "4": "Ich bleibe für einen Monat in Berlin." },
+          "message": "A A1 el patró net és ==**acusatiu sol, sense _für_**==: _Ich bleibe einen Monat in Berlin_."
+        },
+        {
+          "match": { "5": "Ich wohne seit eine Woche hier." },
+          "message": "_Seit_ + datiu femení: _seit ==einer== Woche_ (no _eine_)."
+        },
+        {
+          "match": { "7": "Nico ist seit eine Woche in Deutschland." },
+          "message": "_Woche_ és femení, _seit_ demana datiu: _seit ==einer== Woche_."
+        },
+        {
+          "match": { "8": "Ich arbeite der ganze Tag." },
+          "message": "Durada masculina = acusatiu: _==den ganzen== Tag_ (tots dos porten _-n_)."
+        }
+      ]
+    }
+  }
+}
