@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-35-ex-02",
+  "topicId": "A1b-35",
+  "title": "Completa la terminació de l'ordinal",
+  "prompt": "Tria la terminació correcta de l'ordinal segons el cas. Nominatiu (_der_) → ==_-e_==. Datiu (_am_) → ==_-en_==. L'arrel ja està donada (amb _-t-_ o _-st-_ incorporada).",
+  "difficulty": 2,
+  "tags": ["datum", "declinacio", "ordinals", "dropdownFill"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Heute ist der fünft{{1}} Oktober._\n\n2. _Am zwölft{{2}} April habe ich Geburtstag._\n\n3. _Der erst{{3}} Januar ist ein Feiertag._\n\n4. _Wir treffen uns am dritt{{4}} Mai._\n\n5. _Morgen ist der siebt{{5}} Juni._\n\n6. _Am acht{{6}} März feiern wir._\n\n7. _Der einundzwanzigst{{7}} Juni ist der längste Tag._\n\n8. _Am einunddreißigst{{8}} Dezember ist Silvester._\n\n9. _Der neunzehnt{{9}} Februar war ein Samstag._\n\n10. _Am zwanzigst{{10}} Mai fahren wir nach Berlin._",
+    "blanks": [
+      { "id": "1", "label": "1. _der fünft__ Oktober_ (nom.)" },
+      { "id": "2", "label": "2. _am zwölft__ April_ (dat.)" },
+      { "id": "3", "label": "3. _der erst__ Januar_ (nom.)" },
+      { "id": "4", "label": "4. _am dritt__ Mai_ (dat.)" },
+      { "id": "5", "label": "5. _der siebt__ Juni_ (nom.)" },
+      { "id": "6", "label": "6. _am acht__ März_ (dat.)" },
+      { "id": "7", "label": "7. _der einundzwanzigst__ Juni_ (nom.)" },
+      { "id": "8", "label": "8. _am einunddreißigst__ Dezember_ (dat.)" },
+      { "id": "9", "label": "9. _der neunzehnt__ Februar_ (nom.)" },
+      { "id": "10", "label": "10. _am zwanzigst__ Mai_ (dat.)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["-e", "-en", "-er", "-es"] },
+      { "blankId": "2", "options": ["-e", "-en", "-er", "-es"] },
+      { "blankId": "3", "options": ["-e", "-en", "-er", "-es"] },
+      { "blankId": "4", "options": ["-e", "-en", "-er", "-es"] },
+      { "blankId": "5", "options": ["-e", "-en", "-er", "-es"] },
+      { "blankId": "6", "options": ["-e", "-en", "-er", "-es"] },
+      { "blankId": "7", "options": ["-e", "-en", "-er", "-es"] },
+      { "blankId": "8", "options": ["-e", "-en", "-er", "-es"] },
+      { "blankId": "9", "options": ["-e", "-en", "-er", "-es"] },
+      { "blankId": "10", "options": ["-e", "-en", "-er", "-es"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "-e",
+      "2": "-en",
+      "3": "-e",
+      "4": "-en",
+      "5": "-e",
+      "6": "-en",
+      "7": "-e",
+      "8": "-en",
+      "9": "-e",
+      "10": "-en"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Regla compacta: **nominatiu amb _der_** → ==_-e_== · **datiu amb _am_** → ==_-en_==. La resta (_-er_, _-es_) no apareixen en aquests dos contextos bàsics; són per a l'article indeterminat o altres casos.",
+      "references": ["A1b-35", "A1b-29"]
+    },
+    "incorrect": {
+      "default": "Una sola pregunta: _der_ sol o _am_? Si és _der_ sol (nominatiu) → ==_-e_==. Si és _am_ (= _an dem_, datiu) → ==_-en_==. L'arrel ja està feta (amb _-t_ o _-st_ segons el número).",
+      "byResponse": [
+        {
+          "match": { "1": "-en" },
+          "message": "_Heute ist der fünft**e** Oktober._ — _der_ sol marca **nominatiu**, per tant ==_-e_==."
+        },
+        {
+          "match": { "2": "-e" },
+          "message": "_Am zwölft**en** April._ — _am_ marca **datiu**, per tant ==_-en_==."
+        },
+        {
+          "match": { "4": "-e" },
+          "message": "_Am dritt**en** Mai._ — _am_ és signatura de datiu → ==_-en_==. _dritt-_ és una arrel irregular (no _drei-te_), però la terminació segueix la regla general."
+        },
+        {
+          "match": { "7": "-en" },
+          "message": "_Der einundzwanzigst**e** Juni._ — _der_ sol marca **nominatiu** → ==_-e_==. A partir del 20 l'arrel és _-st-_ (no _-t-_)."
+        }
+      ]
+    }
+  }
+}

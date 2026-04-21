@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-35-ex-05",
+  "topicId": "A1b-35",
+  "title": "Pronuncia l'any",
+  "prompt": "Escriu cada any en lletres. Recorda el tall: ==abans del 2000== → _segle + **hundert** + desenes_ (_neunzehnhundertneunzig_ = 1990). ==Des del 2000== → cardinal normal (_zweitausendsechzehn_). El _und_ després de _zweitausend_ és opcional: acceptem les dues formes.",
+  "difficulty": 3,
+  "tags": ["datum", "jahreszahlen", "typeIn", "produccio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _1066_ → {{1}}\n\n2. _1492_ → {{2}}\n\n3. _1789_ → {{3}}\n\n4. _1945_ → {{4}}\n\n5. _1989_ → {{5}}\n\n6. _2000_ → {{6}}\n\n7. _2016_ → {{7}}\n\n8. _2024_ → {{8}}",
+    "blanks": [
+      { "id": "1", "label": "1. _1066_ (abans del 1100: cardinal sencer)" },
+      { "id": "2", "label": "2. _1492_ (segle + hundert + desenes)" },
+      { "id": "3", "label": "3. _1789_" },
+      { "id": "4", "label": "4. _1945_" },
+      { "id": "5", "label": "5. _1989_" },
+      { "id": "6", "label": "6. _2000_" },
+      { "id": "7", "label": "7. _2016_" },
+      { "id": "8", "label": "8. _2024_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "tausend…" },
+      { "blankId": "2", "placeholder": "vierzehnhundert…" },
+      { "blankId": "3", "placeholder": "siebzehnhundert…" },
+      { "blankId": "4", "placeholder": "neunzehnhundert…" },
+      { "blankId": "5", "placeholder": "neunzehnhundert…" },
+      { "blankId": "6", "placeholder": "zweitausend" },
+      { "blankId": "7", "placeholder": "zweitausend…" },
+      { "blankId": "8", "placeholder": "zweitausend…" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["tausendsechsundsechzig"],
+      "2": ["vierzehnhundertzweiundneunzig"],
+      "3": ["siebzehnhundertneunundachtzig"],
+      "4": ["neunzehnhundertfünfundvierzig", "neunzehnhundertfuenfundvierzig"],
+      "5": ["neunzehnhundertneunundachtzig"],
+      "6": ["zweitausend"],
+      "7": ["zweitausendsechzehn", "zweitausendundsechzehn"],
+      "8": ["zweitausendvierundzwanzig", "zweitausendundvierundzwanzig"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. El tall és clar: abans del 2000, es parteix en **segle + hundert + desenes** (_neunzehn**hundert**fünfundvierzig_). Des del 2000, és un cardinal normal (_zweitausendsechzehn_). El _und_ és opcional després de _zweitausend_ i ==no s'usa mai== al mig dels anys anteriors al 2000.",
+      "references": ["A1b-35", "A1a-32"]
+    },
+    "incorrect": {
+      "default": "Tres rangs, tres estratègies: (a) **< 1100**: cardinal sencer (_tausend…_). (b) **1100-1999**: segle + _hundert_ + desenes (_**neunzehn**hundert**neunundachtzig**_ = 1989). (c) **≥ 2000**: cardinal normal (_zweitausendsechzehn_). Ortografia: _sechzig_ (no _sechszig_), _siebzehn_ (no _siebenzehn_).",
+      "byResponse": [
+        {
+          "match": { "5": "neunzehnhundertachtundneunzig" },
+          "message": "_neunundachtzig_ = 89 (9-i-80), no 98. 1989 → _neunzehnhundertneunundachtzig_."
+        },
+        {
+          "match": { "2": "tausendvierhundertzweiundneunzig" },
+          "message": "Per als anys 1100-1999 no s'usa el cardinal sencer, sinó **segle + hundert**: ==_vierzehnhundert_==_zweiundneunzig_ (14-cents-92), no _tausendvierhundert…_."
+        },
+        {
+          "match": { "7": "zwanzigsechzehn" },
+          "message": "La forma col·loquial _zwanzigsechzehn_ existeix però no és la **versió estàndard**. Aquí esperem _==zweitausendsechzehn==_ (amb o sense _und_)."
+        },
+        {
+          "match": { "1": "eintausendsechsundsechzig" },
+          "message": "_1000_ en alemany és _==tausend==_, no _eintausend_ (a diferència del 100 = _hundert_, sense _ein_). 1066 → _tausendsechsundsechzig_."
+        }
+      ]
+    }
+  }
+}

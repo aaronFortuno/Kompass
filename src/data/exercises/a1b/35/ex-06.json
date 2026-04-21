@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-35-ex-06",
+  "topicId": "A1b-35",
+  "title": "Troba l'error (o confirma que és correcta)",
+  "prompt": "Per a cada frase, identifica què hi passa: ==**(a) falta o sobra preposició**==, ==**(b) terminació incorrecta**==, o ==**(c) la frase és correcta**==.",
+  "difficulty": 3,
+  "tags": ["datum", "errors", "diagnostic"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich bin **in 1990** geboren._ → {{1}}\n\n2. _Heute ist **der fünften** Oktober._ → {{2}}\n\n3. _Wir treffen uns **am fünfte** Oktober._ → {{3}}\n\n4. _Der **10.5.2024** ist mein Geburtstag._ → {{4}}\n\n5. _Der erste **von Januar** ist ein Feiertag._ → {{5}}\n\n6. _**Am neunzehnhundertneunundachtzig** ist die Mauer gefallen._ → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "1. _Ich bin in 1990 geboren._" },
+      { "id": "2", "label": "2. _Heute ist der fünften Oktober._" },
+      { "id": "3", "label": "3. _Wir treffen uns am fünfte Oktober._" },
+      { "id": "4", "label": "4. _Der 10.5.2024 ist mein Geburtstag._" },
+      { "id": "5", "label": "5. _Der erste von Januar ist ein Feiertag._" },
+      { "id": "6", "label": "6. _Am neunzehnhundertneunundachtzig ist die Mauer gefallen._" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "1",
+        "options": [
+          "(a) preposició sobrant o que falta",
+          "(b) terminació incorrecta",
+          "(c) correcta"
+        ]
+      },
+      {
+        "blankId": "2",
+        "options": [
+          "(a) preposició sobrant o que falta",
+          "(b) terminació incorrecta",
+          "(c) correcta"
+        ]
+      },
+      {
+        "blankId": "3",
+        "options": [
+          "(a) preposició sobrant o que falta",
+          "(b) terminació incorrecta",
+          "(c) correcta"
+        ]
+      },
+      {
+        "blankId": "4",
+        "options": [
+          "(a) preposició sobrant o que falta",
+          "(b) terminació incorrecta",
+          "(c) correcta"
+        ]
+      },
+      {
+        "blankId": "5",
+        "options": [
+          "(a) preposició sobrant o que falta",
+          "(b) terminació incorrecta",
+          "(c) correcta"
+        ]
+      },
+      {
+        "blankId": "6",
+        "options": [
+          "(a) preposició sobrant o que falta",
+          "(b) terminació incorrecta",
+          "(c) correcta"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "(a) preposició sobrant o que falta",
+      "2": "(b) terminació incorrecta",
+      "3": "(b) terminació incorrecta",
+      "4": "(c) correcta",
+      "5": "(a) preposició sobrant o que falta",
+      "6": "(a) preposició sobrant o que falta"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Els ==**dos errors rei**== amb dates en alemany són: (1) afegir preposicions per calc d'altres llengües (_in 1990_ de l'anglès, _von Januar_ del català, _am 1989_ per inèrcia), i (2) confondre _-e_ (nominatiu) amb _-en_ (datiu).",
+      "references": ["A1b-35"]
+    },
+    "incorrect": {
+      "default": "Dues comprovacions: (1) **preposició**: _am_ només davant d'una **data amb dia i mes**, mai davant d'un **any** sol; _in_ mai davant d'any; _von_ mai entre ordinal i mes. (2) **Terminació**: _der_ → _-e_, _am_ → _-en_.",
+      "byResponse": [
+        {
+          "match": { "1": "(b) terminació incorrecta" },
+          "message": "_1990_ és un **any sol**, i els anys no porten preposició en alemany. L'error és sobrar _in_: correcte seria _Ich bin ==**1990**== geboren_ o _Ich bin ==**im Jahr 1990**== geboren_. Error **(a)**."
+        },
+        {
+          "match": { "1": "(c) correcta" },
+          "message": "_in 1990_ és un calc de l'anglès. En alemany els anys van sense preposició: _==**1990**==_. Error **(a)**."
+        },
+        {
+          "match": { "2": "(a) preposició sobrant o que falta" },
+          "message": "La preposició no hi és (és nominatiu amb _der_). El problema és la terminació: _der fünft**e**_ (nom. → _-e_), no _der fünft**en**_. Error **(b)**."
+        },
+        {
+          "match": { "3": "(a) preposició sobrant o que falta" },
+          "message": "_am_ és correcte (datiu temporal). El problema és la terminació: després d'_am_ cal ==_-en_==: _am fünft**en** Oktober_, no _am fünft**e** Oktober_. Error **(b)**."
+        },
+        {
+          "match": { "4": "(a) preposició sobrant o que falta" },
+          "message": "_10.5.2024_ és el format alemany correcte (DD.MM.AAAA). Es llegeix _der zehnte Mai zweitausendvierundzwanzig_. La frase és **correcta**."
+        },
+        {
+          "match": { "4": "(b) terminació incorrecta" },
+          "message": "El format numèric _10.5.2024_ és correcte (DD.MM.AAAA alemany). La frase és **correcta**."
+        },
+        {
+          "match": { "5": "(b) terminació incorrecta" },
+          "message": "Les terminacions hi són bé (_der erst**e**…_). El que sobra és _von_: en alemany no hi ha preposició entre ordinal i mes. Correcte: _==der erste Januar==_. Error **(a)**."
+        },
+        {
+          "match": { "6": "(b) terminació incorrecta" },
+          "message": "El problema no és la terminació (els anys no es declinen). És que _am_ **sobra**: els anys no porten preposició. Correcte: _==1989 ist die Mauer gefallen==_ o _==Im Jahr 1989…==_. Error **(a)**."
+        }
+      ]
+    }
+  }
+}

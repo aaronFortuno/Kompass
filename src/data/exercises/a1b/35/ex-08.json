@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-35-ex-08",
+  "topicId": "A1b-35",
+  "title": "Diàleg sobre aniversaris",
+  "prompt": "Completa el diàleg amb la forma correcta (preposició o terminació). Observa el patró: **dia del mes** → _am + -en/-sten_. **Any sol** → sense preposició, o _im Jahr_.",
+  "difficulty": 3,
+  "tags": ["datum", "dialeg", "fill-in-the-blank", "produccio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "**A:** Wann hast du Geburtstag?\n\n**B:** Ich habe {{1}} zwölf{{2}} April Geburtstag. Und du?\n\n**A:** Ich bin {{3}} ersten Januar geboren. Mein Bruder hat {{4}} fünfzehn{{5}} August Geburtstag.\n\n**B:** Dein Bruder ist also ein Sommerkind! Und deine Eltern?\n\n**A:** Meine Mutter ist {{6}} Jahr 1965 geboren, am dreißig{{7}} Mai. Mein Vater ist {{8}} 1962 geboren.",
+    "blanks": [
+      { "id": "1", "label": "1. preposició davant de _zwölften April_" },
+      { "id": "2", "label": "2. terminació de _zwölf…_" },
+      { "id": "3", "label": "3. preposició davant de _ersten Januar_" },
+      { "id": "4", "label": "4. preposició davant de _fünfzehnten August_" },
+      { "id": "5", "label": "5. terminació de _fünfzehn…_" },
+      { "id": "6", "label": "6. preposició davant de _Jahr 1965_" },
+      { "id": "7", "label": "7. terminació de _dreißig…_" },
+      { "id": "8", "label": "8. preposició davant de _1962_ sol (pot quedar buit)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["am", "an", "im", "—"] },
+      { "blankId": "2", "options": ["-te", "-ten", "-sten", "-e"] },
+      { "blankId": "3", "options": ["am", "an", "im", "—"] },
+      { "blankId": "4", "options": ["am", "an", "im", "—"] },
+      { "blankId": "5", "options": ["-te", "-ten", "-sten", "-e"] },
+      { "blankId": "6", "options": ["am", "an", "im", "—"] },
+      { "blankId": "7", "options": ["-ten", "-sten", "-te", "-ste"] },
+      { "blankId": "8", "options": ["am", "in", "im", "—"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "am",
+      "2": "-ten",
+      "3": "am",
+      "4": "am",
+      "5": "-ten",
+      "6": "im",
+      "7": "-sten",
+      "8": "—"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. El diàleg il·lustra les tres combinacions típiques: ==**dia+mes**== → _==am==_ + _-en/-sten_ (_am zwölften April_, _am dreißigsten Mai_). ==**Any dins de _Jahr_**== → _==im Jahr 1965==_. ==**Any sol**== → sense preposició (_1962 geboren_). Són les tres distribucions que trobaràs en qualsevol conversa sobre dates.",
+      "references": ["A1b-35", "A1b-14"]
+    },
+    "incorrect": {
+      "default": "Tres patrons a memoritzar: (a) **dia del mes** → _==am==_ + ordinal en _-en/-sten_. (b) **Any dins de _Jahr_** → _==im==_ _Jahr_ + any. (c) **Any sol** → res de preposició (deixa-ho buit). No confonguis _im_ (= _in dem_, Jahr) amb _am_ (= _an dem_, dia).",
+      "byResponse": [
+        {
+          "match": { "1": "im" },
+          "message": "Davant d'un dia del mes → _==am==_ (= _an dem_, datiu temporal): _==am== zwölften April_. _im_ (= _in dem_) s'usa amb _Jahr_ o amb mesos sols."
+        },
+        {
+          "match": { "6": "am" },
+          "message": "Davant de _Jahr_ → _==im==_ (= _in dem Jahr_): _==im== Jahr 1965_. _am_ només davant de dies del mes."
+        },
+        {
+          "match": { "8": "in" },
+          "message": "L'any sol **no porta preposició** en alemany (mai _in 1962_, calc de l'anglès). La resposta és ==— (sense preposició)==. O també funciona _==im Jahr 1962==_, però aquí hem triat la versió sense preposició."
+        },
+        {
+          "match": { "8": "am" },
+          "message": "_am_ només davant de **dia del mes**, no davant d'any sol. L'any sol va **sense preposició**: _Mein Vater ist ==1962== geboren._"
+        },
+        {
+          "match": { "2": "-te" },
+          "message": "Després d'_am_ (datiu) la terminació és ==_-en_==, no _-e_: _am zwölft**en** April_."
+        },
+        {
+          "match": { "7": "-ten" },
+          "message": "_dreißig_ és ≥ 20 → ordinal en _-st-_: _am dreißig**sten** Mai_ (no _dreißig**ten**_)."
+        }
+      ]
+    }
+  }
+}

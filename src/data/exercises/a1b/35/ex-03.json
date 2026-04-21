@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-35-ex-03",
+  "topicId": "A1b-35",
+  "title": "Escriu la data en lletres (nominatiu)",
+  "prompt": "Transforma cada data numèrica en la forma parlada en ==**nominatiu**==: _**der** + ordinal **_-e_** + mes_. Exemple: _5.10._ → _der fünfte Oktober_. Escriu la resposta completa, sense puntuació.",
+  "difficulty": 2,
+  "tags": ["datum", "nominatiu", "typeIn", "produccio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _1.1._ → {{1}}\n\n2. _14.2._ → {{2}}\n\n3. _8.3._ → {{3}}\n\n4. _1.5._ → {{4}}\n\n5. _3.10._ → {{5}}\n\n6. _31.10._ → {{6}}\n\n7. _25.12._ → {{7}}\n\n8. _6.1._ → {{8}}",
+    "blanks": [
+      { "id": "1", "label": "1. _1.1._" },
+      { "id": "2", "label": "2. _14.2._" },
+      { "id": "3", "label": "3. _8.3._" },
+      { "id": "4", "label": "4. _1.5._" },
+      { "id": "5", "label": "5. _3.10._" },
+      { "id": "6", "label": "6. _31.10._" },
+      { "id": "7", "label": "7. _25.12._" },
+      { "id": "8", "label": "8. _6.1._" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "der … Januar" },
+      { "blankId": "2", "placeholder": "der … Februar" },
+      { "blankId": "3", "placeholder": "der … März" },
+      { "blankId": "4", "placeholder": "der … Mai" },
+      { "blankId": "5", "placeholder": "der … Oktober" },
+      { "blankId": "6", "placeholder": "der … Oktober" },
+      { "blankId": "7", "placeholder": "der … Dezember" },
+      { "blankId": "8", "placeholder": "der … Januar" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["der erste Januar"],
+      "2": ["der vierzehnte Februar"],
+      "3": ["der achte März"],
+      "4": ["der erste Mai"],
+      "5": ["der dritte Oktober"],
+      "6": ["der einunddreißigste Oktober"],
+      "7": ["der fünfundzwanzigste Dezember"],
+      "8": ["der sechste Januar"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Recorda les **arrels irregulars**: _erste, zweite, **dritte**, vierte, fünfte, sechste, **siebte**, **achte**, neunte, zehnte…_. A partir del 20, el sufix és _-ste_ (_einundzwanzigste, fünfundzwanzigste, einunddreißigste_).",
+      "references": ["A1b-35", "A1a-33"]
+    },
+    "incorrect": {
+      "default": "Comprova tres coses: (1) article _==der==_ al davant (nominatiu); (2) **ordinal correcte** (vigila _erste, dritte, siebte, achte_, que són irregulars); (3) **terminació _-e_** en nominatiu (o _-ste_ si és ≥ 20). Mes en majúscula i sense preposició entre ordinal i mes.",
+      "byResponse": [
+        {
+          "match": { "3": "der achste März" },
+          "message": "L'ordinal de **8** és _acht**e**_ (no _achste_): l'arrel ja acaba en _-t_, només afegeixes _-e_. → _der ach**te** März_."
+        },
+        {
+          "match": { "5": "der dreite Oktober" },
+          "message": "L'ordinal de **3** és **irregular**: _==dritte==_ (no _dreite_). → _der drit**te** Oktober_."
+        },
+        {
+          "match": { "6": "der einunddreißigte Oktober" },
+          "message": "A partir del 20 els ordinals fan _-ste_, no _-te_: _der einunddreißig**ste** Oktober_."
+        },
+        {
+          "match": { "1": "der ein Januar" },
+          "message": "L'ordinal d'**1** és **irregular**: _==erste==_ (no _ein_ ni _einste_). → _der erst**e** Januar_."
+        }
+      ]
+    }
+  }
+}

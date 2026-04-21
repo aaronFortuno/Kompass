@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-35-ex-04",
+  "topicId": "A1b-35",
+  "title": "Escriu la data amb _am_ (datiu)",
+  "prompt": "Transforma cada data numèrica en la forma amb ==**_am_ + datiu**==: _am + ordinal **_-en_** + mes_. Exemple: _5.10._ → _am fünften Oktober_. Escriu la resposta completa.",
+  "difficulty": 2,
+  "tags": ["datum", "datiu", "am", "typeIn", "produccio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _1.1._ → {{1}}\n\n2. _14.2._ → {{2}}\n\n3. _8.3._ → {{3}}\n\n4. _1.5._ → {{4}}\n\n5. _3.10._ → {{5}}\n\n6. _31.10._ → {{6}}\n\n7. _25.12._ → {{7}}\n\n8. _24.6._ → {{8}}",
+    "blanks": [
+      { "id": "1", "label": "1. _1.1._" },
+      { "id": "2", "label": "2. _14.2._" },
+      { "id": "3", "label": "3. _8.3._" },
+      { "id": "4", "label": "4. _1.5._" },
+      { "id": "5", "label": "5. _3.10._" },
+      { "id": "6", "label": "6. _31.10._" },
+      { "id": "7", "label": "7. _25.12._" },
+      { "id": "8", "label": "8. _24.6._" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "am … Januar" },
+      { "blankId": "2", "placeholder": "am … Februar" },
+      { "blankId": "3", "placeholder": "am … März" },
+      { "blankId": "4", "placeholder": "am … Mai" },
+      { "blankId": "5", "placeholder": "am … Oktober" },
+      { "blankId": "6", "placeholder": "am … Oktober" },
+      { "blankId": "7", "placeholder": "am … Dezember" },
+      { "blankId": "8", "placeholder": "am … Juni" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["am ersten Januar"],
+      "2": ["am vierzehnten Februar"],
+      "3": ["am achten März"],
+      "4": ["am ersten Mai"],
+      "5": ["am dritten Oktober"],
+      "6": ["am einunddreißigsten Oktober"],
+      "7": ["am fünfundzwanzigsten Dezember"],
+      "8": ["am vierundzwanzigsten Juni"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. En datiu, totes les terminacions són ==_-en_== (o ==_-sten_== a partir del 20). _Am = an dem_ (contracció **obligatòria** amb _der_). L'ordinal segueix les mateixes arrels irregulars que en nominatiu: _ersten, dritten, siebten, achten_.",
+      "references": ["A1b-35", "A1b-14"]
+    },
+    "incorrect": {
+      "default": "Comprova: (1) comença amb _==am==_ (contracció _an + dem_, mai _an dem_ sencer en aquest context); (2) **terminació _-en_** en datiu (o _-sten_ si és ≥ 20); (3) arrels irregulars (_erst-, dritt-, siebt-, acht-_).",
+      "byResponse": [
+        {
+          "match": { "1": "an dem ersten Januar" },
+          "message": "La contracció _am_ és la forma natural aquí: ==_am ersten Januar_==. _an dem_ desenvolupat sona molt marcat i no és el que toca."
+        },
+        {
+          "match": { "3": "am achsten März" },
+          "message": "L'ordinal de **8** en datiu és _acht**en**_ (no _achsten_): l'arrel ja acaba en _-t_, només afegeixes _-en_. → _am ach**ten** März_."
+        },
+        {
+          "match": { "5": "am dreiten Oktober" },
+          "message": "_dritt-_ és arrel **irregular**: → _am drit**ten** Oktober_ (no _dreiten_)."
+        },
+        {
+          "match": { "7": "am fünfundzwanzigten Dezember" },
+          "message": "A partir del 20 els ordinals fan _-sten_ en datiu (no _-ten_): _am fünfundzwanzig**sten** Dezember_."
+        },
+        {
+          "match": { "4": "am einsten Mai" },
+          "message": "L'ordinal d'**1** és irregular: _erst-_. En datiu: _am erst**en** Mai_ (no _einsten_)."
+        }
+      ]
+    }
+  }
+}

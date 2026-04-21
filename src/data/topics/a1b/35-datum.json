@@ -1,0 +1,256 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-35",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 35,
+  "title": "Das Datum",
+  "shortTitle": "Datum",
+  "description": "Dir la data en alemany: ordinals declinats (nominatiu _-e_ vs datiu _-en_ amb _am_), pronúncia dels anys i format numèric DD.MM.AAAA.",
+  "axes": ["expressions-i-funcions"],
+  "prerequisites": ["A1a-33"],
+  "estimatedMinutes": 25,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Per què una lliçó sencera per a la data?\n\nEn català dius _\"avui és 20 d'abril\"_ i _\"el 20 d'abril\"_ sense canviar res: la data és invariable. En alemany, en canvi, ==la data és un adjectiu declinat== (un ordinal que es comporta com els adjectius de A1b-29), i canvia segons si és **subjecte** (nominatiu) o **complement de temps amb _an_** (datiu).\n\nLa bona notícia és que ja tens totes les peces:\n\n1. **Els ordinals** (_der erste, der zweite, der fünfte, der zwanzigste…_) — A1a-33.\n2. **Els mesos** (_Januar, Februar, März… Oktober, November, Dezember_) — A1a-34.\n3. **La contracció _am = an dem_** amb datiu — A1b-14.\n4. **Les terminacions d'adjectiu** (_-e, -en, -er_) — A1b-29.\n\nEl que farem aquí és **combinar-les** i afegir una peça nova: **els anys** (_1989, 2016, 2024_), que tenen una pronúncia pròpia."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Enfoc de la lliçó",
+          "body": "Aquesta lliçó ajunta tres peces que ja tens — ==ordinals== (A1a-33), ==mesos== (A1a-34) i ==la contracció _am_ = _an dem_== (A1b-14) — per formar dates. La novetat és triple: (1) com es pronuncien els **anys**, (2) com es fa la **data amb ordinal declinat** (_der fünfte Oktober_ / _am fünften Oktober_), i (3) com es llegeix el **format numèric formal** (_5.10.2016_)."
+        }
+      ]
+    },
+    {
+      "id": "jahreszahlen",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Els anys (_die Jahreszahlen_)\n\nPrimera regla, senzilla i important: en alemany, l'any **no porta preposició** per defecte.\n\n- _==1989== ist die Berliner Mauer gefallen._ — _El 1989 va caure el mur de Berlín._\n- _Ich bin ==1990== geboren._ — _Vaig néixer el 1990._\n\nOpcionalment es pot afegir **==_im Jahr_==** davant del número (equivalent al nostre _l'any_). Totes dues formes són correctes:\n\n- _==Im Jahr 1989== ist die Berliner Mauer gefallen._\n- _Ich bin ==im Jahr 1990== geboren._"
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Atenció, parany per a catalanoparlants",
+          "body": "NO es diu _\"in 1990\"_ (com l'anglès _in 1990_). És ==_1990_== a seques, o ==_im Jahr 1990_==. El _\"in\"_ sol és error garantit."
+        },
+        {
+          "type": "explanation",
+          "body": "##### Com es pronuncien els anys\n\nL'alemany té un sistema específic segons el rang.\n\n**De 1100 a 1999** → es diu el **segle + centenes** amb la paraula _hundert_:"
+        },
+        {
+          "type": "table",
+          "title": "35.1 Anys 1100-1999: segle + _hundert_ + desenes",
+          "headers": ["Any", "Pronúncia"],
+          "rows": [
+            ["1066", "_tausendsechsundsechzig_ (abans de 1100: cardinal normal)"],
+            ["1113", "_==elfhundert==dreizehn_ (11-cents-13)"],
+            ["1492", "_==vierzehnhundert==zweiundneunzig_ (14-cents-92)"],
+            ["1888", "_==achtzehnhundert==achtundachtzig_ (18-cents-88)"],
+            ["1990", "_==neunzehnhundert==neunzig_ (19-cents-90)"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "La lògica és: _vierzehn_ (14) + _hundert_ (cents) + _zweiundneunzig_ (92) → 1492. Exactament com l'anglès _fourteen-ninety-two_.\n\n**De 2000 endavant** → es diu com un **cardinal normal**:"
+        },
+        {
+          "type": "table",
+          "title": "35.2 Anys ≥ 2000: cardinal normal",
+          "headers": ["Any", "Pronúncia"],
+          "rows": [
+            ["2000", "_zweitausend_"],
+            ["2001", "_zweitausend[und]eins_"],
+            ["2011", "_zweitausend[und]elf_ (o col·loquial _zwanzig-elf_)"],
+            ["2016", "_zweitausend[und]sechzehn_ (o _zwanzig-sechzehn_)"],
+            ["2024", "_zweitausend[und]vierundzwanzig_"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "El _und_ és opcional i molt freqüent en la parla quotidiana. A partir del 2010, alguns parlants joves fan servir la forma \"anglesa\" _==zwanzig-sechzehn==_ (com _twenty-sixteen_), però la versió estàndard continua sent _zweitausendsechzehn_."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Abans del 1100",
+          "body": "Anys medievals, rars al teu nivell: es fa servir el cardinal sencer. _753 = siebenhundertdreiundfünfzig_."
+        }
+      ]
+    },
+    {
+      "id": "tage-monate",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Els dies del mes: ordinal + mes\n\nPer dir **\"el 5 d'octubre\"** en alemany necessites **dues peces**:\n\n1. Un **ordinal** entre 1 i 31 (la taula d'A1a-33): _erste, zweite, dritte, vierte, fünfte… einunddreißigste_.\n2. El **nom del mes** (A1a-34): _Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember_.\n\n**Esquema bàsic** (nominatiu, sense complement):\n\n> _der_ + **ordinal-e** + _Mes_\n\n- _==der fünfte Oktober==_ — el 5 d'octubre\n- _==der erste Januar==_ — l'1 de gener (Any Nou)\n- _==der dritte März==_ — el 3 de març\n- _==der einundzwanzigste Juni==_ — el 21 de juny (solstici d'estiu)\n- _==der einunddreißigste Dezember==_ — el 31 de desembre\n\n##### També pots substituir el mes per un ordinal\n\nSi ja se sap quin mes és (o en contextos administratius), pots fer _==der fünfte Zehnte==_ en lloc de _der fünfte Oktober_. Literalment: \"el cinquè (del) desè\". Els dos ordinals es declinen igual.\n\n- _Heute ist der fünfte ==Oktober==._ = _Heute ist der fünfte ==Zehnte==._\n- _Mein Geburtstag ist der zwölfte ==April==._ = _Mein Geburtstag ist der zwölfte ==Vierte==._"
+        }
+      ]
+    },
+    {
+      "id": "format-numeric",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El format numèric formal (_5.10.2016_)\n\nEn alemany, les dates numèriques s'escriuen amb **punt darrere de cada número** (dia i mes), mai amb barra:\n\n- _==5.10.2016==_ (correcte)\n- _5/10/2016_ ❌ (format anglès)\n- _10.5.2016_ ❌ (format americà: mes primer)\n\n==L'ordre és sempre **dia → mes → any**==, com en català. **El punt després del número el converteix en ordinal**: _5._ vol dir _der fünfte_ (no _fünf_).\n\n##### Com es llegeix _5.10.2016_?\n\n> _Heute ist der ==fünfte== Oktober ==zweitausendsechzehn==._\n\nDesgranat:\n- _5._ → _der fünfte_ (ordinal, no \"fünf\")\n- _10._ → _Oktober_ (el mes, encara que s'hagi escrit com a número)\n- _2016_ → _zweitausendsechzehn_ (any, cardinal normal)\n\nTambé funciona amb dia de la setmana al davant:\n\n- _==Heute ist Dienstag, der 5. Oktober 2016.==_ — _Avui és dimarts, 5 d'octubre de 2016._\n\nPronúncia: _\"Heute ist Dienstag, der fünfte Oktober zweitausendsechzehn.\"_"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista pràctica",
+          "body": "Quan veus un **número seguit de punt** en alemany (_5._, _21._, _31._), llegeix-lo com a ordinal declinat. És el marcador visual dels ordinals en text escrit."
+        }
+      ]
+    },
+    {
+      "id": "check-1-cas",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-35-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "nom-vs-dat",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Nominatiu vs datiu: les dues construccions clau\n\nAquí és on s'ajunta tot. Segons la funció sintàctica, la data va en **nominatiu** (subjecte, atribut) o en **datiu** (complement de temps amb _an_).\n\n##### Cas 1 · Nominatiu: _Heute ist der fünfte Oktober_\n\nQuan la data és el **subjecte** o l'**atribut** d'una frase (típicament amb _sein_), va en ==nominatiu==. L'article determinat és _der_ i la terminació de l'ordinal és **==-e==**.\n\n- _==Heute ist der fünfte Oktober.==_ — _Avui és el 5 d'octubre._\n- _==Morgen ist der sechste Oktober.==_ — _Demà és el 6 d'octubre._\n- _==Der erste Januar ist ein Feiertag.==_ — _L'1 de gener és festiu._\n\nPreguntes típiques en nominatiu:\n- _Der Wievielte ist heute?_ — _Quants n'estem?_ / _Quin dia és avui?_\n- _Welches Datum ist heute?_ — _Quina data és avui?_\n\n##### Cas 2 · Datiu amb _am_ (= _an dem_): _am fünften Oktober_\n\nQuan la data és un **complement de temps** (\"el 5 d'octubre\" en el sentit de \"quan?\"), va en ==datiu==. Es fa servir la contracció ==_am = an dem_== (A1b-14), i la terminació de l'ordinal és **==-en==**.\n\n- _Wir treffen uns ==am fünften Oktober==._ — _Ens trobem el 5 d'octubre._\n- _Ich habe ==am ersten Mai== Geburtstag._ — _Faig anys l'1 de maig._\n- _==Am dritten Oktober== ist der Tag der Deutschen Einheit._ — _El 3 d'octubre és el Dia de la Unitat Alemanya._\n\nPregunta típica en datiu:\n- _==Wann==_ + verb → resposta amb _am…_\n- _Wann hast du Geburtstag?_ → _==Am zwölften April.==_"
+        },
+        {
+          "type": "table",
+          "title": "35.3 Nominatiu vs datiu · taula resum",
+          "headers": ["Context", "Terminació", "Nominatiu (_Heute ist…_)", "Terminació ", "Datiu (_Wir treffen uns…_)"],
+          "rows": [
+            ["Article determinat", "-**e**", "_==der== fünft**e** Oktober_", "-**en**", "_==am== fünft**en** Oktober_ (_an dem_)"],
+            ["Article indeterminat", "-**er**", "_==ein== fünft**er** Oktober_", "-**en**", "_==an einem== fünft**en** Oktober_"],
+            ["Sense article", "-**er**", "_Fünft**er** Oktober: Treffen mit Freunden_", "—", "(no és possible en datiu)"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Lectura de la taula, línia per línia:**\n\n1. _Heute ist ==der fünfte== Oktober._ — nominatiu definit: _der_ + _-e_.\n2. _Es war ==ein fünfter== Oktober._ — nominatiu indefinit (un 5 d'octubre qualsevol): _ein_ + _-er_.\n3. _==Fünfter Oktober==: Treffen mit Freunden._ — titular/encapçalament (agenda): sense article, _-er_.\n4. _Wir treffen uns ==am fünften== Oktober._ — datiu definit: _am_ + _-en_.\n5. _Wir treffen uns ==an einem fünften== Oktober._ — datiu indefinit: _an einem_ + _-en_.\n6. En datiu **sense article** no funciona: has de posar _am_ o _an einem_."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Per recordar-ho",
+          "body": "Les terminacions són ==les mateixes que per a qualsevol adjectiu== (veure A1b-29). El \"truc\" és que l'ordinal _fünft-_ es comporta com qualsevol adjectiu: _der fünfte Tag_, _am fünften Tag_, _ein kalter Tag_, _an einem kalten Tag_. Mateix sistema."
+        }
+      ]
+    },
+    {
+      "id": "check-2-terminacio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-35-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "anys-i-data",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Combinar any + data completa\n\nPer dir la data completa amb any, simplement afegeixes l'any al final, sense preposició ni coma obligatòria (encara que és freqüent posar-la).\n\n**En nominatiu:**\n\n- _Heute ist ==der fünfte Oktober zweitausendsechzehn==._ — _Avui és 5 d'octubre de 2016._\n- _Der ==neunte November neunzehnhundertneunundachtzig== war ein historischer Tag._ — _El 9 de novembre de 1989 va ser un dia històric._\n\n**En datiu:**\n\n- _Wir haben uns ==am fünften Oktober zweitausendsechzehn== getroffen._ — _Ens vam trobar el 5 d'octubre de 2016._\n- _==Am dritten Oktober neunzehnhundertneunzig== wurde Deutschland wiedervereinigt._ — _El 3 d'octubre de 1990 Alemanya es va reunificar._"
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "L'any no es declina mai",
+          "body": "Només el dia (ordinal) canvia segons el cas. L'any és un pur número."
+        }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. Oblidar la declinació de l'ordinal.**\n\nEn català diem _\"el cinc d'octubre\"_ i _\"el 5 d'octubre\"_ igual. En alemany, ==_der fünfte Oktober_== (nominatiu) i ==_am fünften Oktober_== (datiu) són formes diferents.\n\n- Incorrecte: _Am fünfte Oktober._ ❌\n- Correcte: _Am ==fünften== Oktober._ ✅\n\n**2. Dir _\"in 1990\"_ (calcat de l'anglès).**\n\nL'any va sense preposició, o amb _im Jahr_.\n\n- Incorrecte: _Ich bin ==in 1990== geboren._ ❌\n- Correcte: _Ich bin ==1990== geboren._ ✅ o _Ich bin ==im Jahr 1990== geboren._ ✅\n\n**3. Oblidar el punt després del número en format numèric.**\n\nEl punt ==converteix el número en ordinal==. Sense punt, és cardinal.\n\n- _5 Oktober_ → _fünf Oktober_ ❌ (no té sentit; seria com dir \"cinc octubre\")\n- _==5.== Oktober_ → _der fünfte Oktober_ ✅\n\n**4. Pronunciar els anys com a cardinals sencers (abans de 2000).**\n\n- Incorrecte (però comprensible): _1492 = tausendvierhundertzweiundneunzig_\n- Correcte (idiomàtic): _1492 = ==vierzehnhundertzweiundneunzig==_ (14-cents-92)\n\nA partir del 2000 sí que es fa amb cardinal sencer: _2016 = zweitausendsechzehn_."
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Paranys 5 i 6",
+          "body": "**5. Confondre l'ordre dia/mes en format numèric.** L'alemany segueix el format europeu **DD.MM.AAAA**, com el català. No confonguis amb el format americà (MM/DD/YYYY). _5.10.2016_ = 5 d'octubre de 2016.\n\n**6. Dir _\"der erste von Januar\"_ (calc del català _\"el primer de gener\"_).** En alemany no hi ha preposició entre ordinal i mes. Es juxtaposen directament. Incorrecte: _der erste ==von== Januar_ ❌ · Correcte: _==der erste Januar==_ ✅"
+        }
+      ]
+    },
+    {
+      "id": "check-3-nominatiu",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-35-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-4-datiu",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-35-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-5-anys",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-35-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-6-errors",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-35-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-7-traduccio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-35-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-8-dialeg",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-35-ex-08", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi\n\n**La data en alemany, en una imatge:**\n\n> **Nominatiu:** _==der== + ordinal**==-e==** + Mes (+ Any)_ → _der fünfte Oktober 2016_\n>\n> **Datiu:** _==am== + ordinal**==-en==** + Mes (+ Any)_ → _am fünften Oktober 2016_"
+        },
+        {
+          "type": "table",
+          "title": "35.4 Les sis regles clau",
+          "headers": ["Regla", "Contingut"],
+          "rows": [
+            ["**1. Ordinal declinat**", "El número del dia es comporta com un adjectiu. Nominatiu ==_-e_==, datiu ==_-en_== (o _-ste_ / _-sten_ a partir del 20)."],
+            ["**2. Mesos invariables**", "_Januar… Dezember_, sense declinació, sense article propi."],
+            ["**3. Any sense preposició**", "_1989_, _2016_, _2024_. Opcional: _im Jahr 1989_. Mai _in 1989_."],
+            ["**4. Pronunciació d'anys**", "<1100 cardinal sencer · 1100-1999 _segle + hundert + desenes_ · ≥2000 cardinal normal."],
+            ["**5. Format DD.MM.AAAA**", "El punt darrere del dia i del mes marca ==ordinal==. _5.10.2016_ = _der fünfte Oktober zweitausendsechzehn_."],
+            ["**6. Sense preposició entre ordinal i mes**", "_der erste Januar_ (no _der erste **von** Januar_)."]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Quan fer servir cada cas:**\n\n- ==Nominatiu== → la data **és** alguna cosa: _Heute ist **der fünfte Oktober**. **Der erste Januar** ist ein Feiertag._\n- ==Datiu amb _am_== → la data respon a **quan?**: _Wir treffen uns **am fünften Oktober**. Ich habe **am zwölften April** Geburtstag._\n\n**Enllaços amb el que ja saps:**\n\n- **A1a-33** — **Ordinals.** La base morfològica. _fünfte, fünfte, fünfte_ — ara els declines.\n- **A1a-34** — **Dies, mesos, estacions.** Els mesos són els noms que combines amb l'ordinal.\n- **A1b-14** — **_Am_ = _an dem_.** La contracció que fa funcionar el datiu temporal.\n- **A1b-29** — **Adjectius declinats.** El sistema de terminacions que també s'aplica als ordinals."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista pràctica final",
+          "body": "Quan diguis una data en veu alta, ==primer pensa si és subjecte o complement temporal==. Si és _\"avui és…\"_ / _\"el X és…\"_ → **nominatiu, _-e_**. Si és _\"quan?\" / \"el X fem…\"_ → **datiu, _am… -en_**. Amb pràctica, la distinció es fa automàtica, com _der Mann_ vs _dem Mann_."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Curiositat útil",
+          "body": "Els alemanys fan servir moltíssim la data en datiu als correus i missatges: _\"Bis zum fünfzehnten!\"_ (_fins al 15!_), _\"Ab dem ersten März…\"_ (_a partir de l'1 de març…_). Són les mateixes terminacions que aquí, amb altres preposicions (_bis zu_ + datiu, _ab_ + datiu). Una base sòlida d'aquesta lliçó et portarà lluny."
+        }
+      ]
+    }
+  ]
+}

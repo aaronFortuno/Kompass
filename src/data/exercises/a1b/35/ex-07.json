@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-35-ex-07",
+  "topicId": "A1b-35",
+  "title": "Tradueix del català a l'alemany",
+  "prompt": "Tradueix cada frase a l'alemany. Decideix si la data és ==**nominatiu**== (_der + -e_) o ==**datiu**== (_am + -en_). Els **anys** van sense preposició (o amb _im Jahr_). Escriu la frase sencera amb puntuació.",
+  "difficulty": 3,
+  "tags": ["datum", "traduccio", "typeIn", "produccio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. \"Avui és 20 d'abril.\" → {{1}}\n\n2. \"Faig anys el 12 de juny.\" → {{2}}\n\n3. \"Vaig néixer el 1990.\" → {{3}}\n\n4. \"Ens trobem el 3 d'octubre.\" → {{4}}\n\n5. \"L'1 de maig és festa.\" → {{5}}\n\n6. \"El mur de Berlín va caure el 1989.\" → {{6}}\n\n7. \"Demà és 5 de desembre.\" → {{7}}\n\n8. \"El 24 de desembre celebrem la Nit de Nadal.\" → {{8}}",
+    "blanks": [
+      { "id": "1", "label": "1. Avui és 20 d'abril." },
+      { "id": "2", "label": "2. Faig anys el 12 de juny." },
+      { "id": "3", "label": "3. Vaig néixer el 1990." },
+      { "id": "4", "label": "4. Ens trobem el 3 d'octubre." },
+      { "id": "5", "label": "5. L'1 de maig és festa." },
+      { "id": "6", "label": "6. El mur de Berlín va caure el 1989." },
+      { "id": "7", "label": "7. Demà és 5 de desembre." },
+      { "id": "8", "label": "8. El 24 de desembre celebrem la Nit de Nadal." }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Heute ist …" },
+      { "blankId": "2", "placeholder": "Ich habe … Geburtstag." },
+      { "blankId": "3", "placeholder": "Ich bin … geboren." },
+      { "blankId": "4", "placeholder": "Wir treffen uns …" },
+      { "blankId": "5", "placeholder": "Der erste Mai …" },
+      { "blankId": "6", "placeholder": "Die Berliner Mauer …" },
+      { "blankId": "7", "placeholder": "Morgen ist …" },
+      { "blankId": "8", "placeholder": "Am … feiern wir …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": [
+        "Heute ist der zwanzigste April.",
+        "Heute ist der zwanzigste April"
+      ],
+      "2": [
+        "Ich habe am zwölften Juni Geburtstag.",
+        "Am zwölften Juni habe ich Geburtstag.",
+        "Ich habe am zwölften Juni Geburtstag",
+        "Am zwölften Juni habe ich Geburtstag"
+      ],
+      "3": [
+        "Ich bin 1990 geboren.",
+        "Ich bin im Jahr 1990 geboren.",
+        "1990 bin ich geboren.",
+        "Im Jahr 1990 bin ich geboren.",
+        "Ich bin 1990 geboren",
+        "Ich bin im Jahr 1990 geboren"
+      ],
+      "4": [
+        "Wir treffen uns am dritten Oktober.",
+        "Am dritten Oktober treffen wir uns.",
+        "Wir treffen uns am dritten Oktober",
+        "Am dritten Oktober treffen wir uns"
+      ],
+      "5": [
+        "Der erste Mai ist ein Feiertag.",
+        "Der erste Mai ist Feiertag.",
+        "Der erste Mai ist ein Feiertag",
+        "Der erste Mai ist Feiertag"
+      ],
+      "6": [
+        "Die Berliner Mauer ist 1989 gefallen.",
+        "Die Berliner Mauer ist im Jahr 1989 gefallen.",
+        "1989 ist die Berliner Mauer gefallen.",
+        "Im Jahr 1989 ist die Berliner Mauer gefallen.",
+        "Die Berliner Mauer ist 1989 gefallen",
+        "1989 ist die Berliner Mauer gefallen"
+      ],
+      "7": [
+        "Morgen ist der fünfte Dezember.",
+        "Morgen ist der fünfte Dezember"
+      ],
+      "8": [
+        "Am vierundzwanzigsten Dezember feiern wir Heiligabend.",
+        "Am vierundzwanzigsten Dezember feiern wir den Heiligabend.",
+        "Wir feiern am vierundzwanzigsten Dezember Heiligabend.",
+        "Am vierundzwanzigsten Dezember feiern wir Heiligabend"
+      ]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. La distribució típica: **subjecte/atribut** → ==_der_ + _-e_==; **complement de temps (quan?)** → ==_am_ + _-en_==; **any sol** → ==sense preposició== (o _im Jahr_). Aquestes són les tres combinacions que cobreixen el 99% dels casos quotidians.",
+      "references": ["A1b-35", "A1b-14"]
+    },
+    "incorrect": {
+      "default": "Tres preguntes: (1) la data és **subjecte** (_Heute ist…, Der X ist…_) o **complement temporal** (_Am X_, responent a _quan?_)? (2) és una **data amb dia+mes** (porta article/preposició) o un **any sol** (sense preposició)? (3) ortografia, majúscules, punt final.",
+      "byResponse": [
+        {
+          "match": { "3": "Ich bin in 1990 geboren." },
+          "message": "Els **anys** no porten preposició. Correcte: _Ich bin ==1990== geboren._ o _Ich bin ==im Jahr 1990== geboren._"
+        },
+        {
+          "match": { "2": "Ich habe der zwölfte Juni Geburtstag." },
+          "message": "_Geburtstag haben_ pregunta _quan?_ → complement de temps → ==**datiu**==: _Ich habe ==am zwölften Juni== Geburtstag._"
+        },
+        {
+          "match": { "4": "Wir treffen uns der dritte Oktober." },
+          "message": "_Wir treffen uns_ + _quan?_ → **datiu** amb _am_: _Wir treffen uns ==am dritten Oktober==._"
+        },
+        {
+          "match": { "5": "Am ersten Mai ist ein Feiertag." },
+          "message": "Aquí la data és el **subjecte** (_l'1 de maig **és** festiu_), no un complement de temps → **nominatiu**: _==Der erste Mai== ist ein Feiertag._"
+        },
+        {
+          "match": { "6": "Die Berliner Mauer ist am 1989 gefallen." },
+          "message": "Els **anys** no porten _am_. Correcte: _Die Berliner Mauer ist ==1989== gefallen._ o _…==im Jahr 1989==…_"
+        }
+      ]
+    }
+  }
+}
