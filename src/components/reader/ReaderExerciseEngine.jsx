@@ -128,7 +128,16 @@ function SlotLineRenderer({
     const first = item.blankIds[0];
     const el = inputRefs.current[first];
     if (el && typeof el.focus === 'function') {
-      el.focus();
+      // preventScroll: evita que el navegador scrolli cap a l'element
+      // quan rep focus. Sense això, al navegar a un beat d'exercici
+      // des del sidebar/progress bar, el browser pot empènyer tot el
+      // layout cap amunt per "fer visible" l'input — trenca la posició
+      // absoluta dels peeks i els far apareixen en primer pla. (§83)
+      try {
+        el.focus({ preventScroll: true });
+      } catch {
+        el.focus();
+      }
       if ('selectionStart' in el) {
         try {
           el.selectionStart = el.value?.length ?? 0;

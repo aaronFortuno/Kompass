@@ -826,6 +826,118 @@
   }
 }
 
+/*
+ * Splash d'entrada a una nova lliçó · §80
+ * Overlay que cobreix tot el reader amb el nom del topic en gran. Es
+ * munta fade-in, dura 2 s, i s'acaba amb fade-out al dismiss.
+ */
+.kf-entry-splash {
+  position: fixed;
+  inset: 0;
+  z-index: 55;
+  background: rgb(var(--color-reader-paper));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: kf-splash-in 420ms var(--ease-emphasized) both;
+}
+.kf-entry-splash.is-leaving {
+  animation: kf-splash-out 320ms var(--ease-exit) both;
+}
+@keyframes kf-splash-in {
+  from {
+    opacity: 0;
+    transform: scale(1.03);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes kf-splash-out {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+}
+.kf-entry-splash-inner {
+  max-width: 720px;
+  text-align: center;
+  padding: 0 40px;
+}
+.kf-entry-splash-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgb(var(--color-reader-muted));
+  margin: 0 0 28px;
+}
+.kf-entry-splash-kicker-sep {
+  display: inline-block;
+  width: 24px;
+  height: 1px;
+  background: rgb(var(--color-reader-rule));
+}
+.kf-entry-splash-title {
+  font-family: 'Newsreader', serif;
+  font-weight: 500;
+  font-size: calc(80px * var(--kf-type-scale, 1));
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  color: rgb(var(--color-reader-ink));
+  margin: 0 0 26px;
+  text-wrap: balance;
+}
+.kf-entry-splash-desc {
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-size: calc(22px * var(--kf-type-scale, 1));
+  line-height: 1.4;
+  color: rgb(var(--color-reader-ink-2));
+  margin: 0 0 48px;
+  max-width: 38ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.kf-entry-splash-hint {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgb(var(--color-reader-muted));
+  margin: 0;
+}
+.kf-entry-splash-hint kbd {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  border: 1px solid rgb(var(--color-reader-rule));
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: rgb(var(--color-reader-kbd-bg));
+  color: rgb(var(--color-reader-ink));
+  margin: 0 4px;
+}
+@media (max-width: 720px) {
+  .kf-entry-splash-title {
+    font-size: calc(48px * var(--kf-type-scale, 1));
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .kf-entry-splash,
+  .kf-entry-splash.is-leaving {
+    animation: none !important;
+  }
+}
+
 .kf-stage-full {
   gap: 40px;
   padding: 20px 0 40px;

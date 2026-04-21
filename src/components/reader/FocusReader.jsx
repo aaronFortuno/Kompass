@@ -25,6 +25,7 @@ import { parseInline } from '@/lib/reader/parseInline.js';
 import { Typed } from '@/components/reader/Typed.jsx';
 import { ReaderSettingsDrawer } from '@/components/reader/ReaderSettingsDrawer.jsx';
 import { ReaderExerciseEngine } from '@/components/reader/ReaderExerciseEngine.jsx';
+import { ReaderEntrySplash } from '@/components/reader/ReaderEntrySplash.jsx';
 
 /*
  * Focus Reader · ARCHITECTURE §18
@@ -841,6 +842,10 @@ export function FocusReader({ topic }) {
   const [fastMode, setFastMode] = useState(false);
   // Drawer de settings (§79): s'obre amb "c" o el botó ⚙ del peu.
   const [drawerOpen, setDrawerOpen] = useState(false);
+  // Splash d'entrada a una nova lliçó (§80). Es mostra la primera vegada
+  // que es munta aquest reader per a un topic.id concret; auto-dismiss
+  // després de 2 s o bé amb tecla d'acció / clic.
+  const [splashVisible, setSplashVisible] = useState(true);
   const rootRef = useRef(null);
   // Ref que l'exercici current escriu amb { handleArrow(d) }. El reader
   // consulta aquesta ref abans de fer goBeat quan l'usuari prem ← / →
@@ -919,6 +924,12 @@ export function FocusReader({ topic }) {
   useEffect(() => {
     if (step?.id) markStepVisited(topic.id, step.id);
   }, [markStepVisited, topic.id, step?.id]);
+
+  // Reset del splash quan canvia de topic (per exemple, navegació a un
+  // altre tema des de fora del reader).
+  useEffect(() => {
+    setSplashVisible(true);
+  }, [topic.id]);
 
   // Helper internat: moure un beat (o step en mode full). No toca fastMode.
   const moveBeat = useCallback(
@@ -1020,9 +1031,9 @@ export function FocusReader({ topic }) {
   // Teclat global.
   useEffect(() => {
     const onKey = (e) => {
-      // Si el drawer està obert, ignorem dreceres del reader (l'ESC
-      // el captura el drawer mateix en el seu propi handler).
-      if (drawerOpen) return;
+      // Si el drawer està obert o el splash està actiu, ignorem dreceres
+      // del reader (cada un té el seu propi handler que absorbeix).
+      if (drawerOpen || splashVisible) return;
 
       if (e.key === 'Escape') {
         e.preventDefault();
@@ -1076,7 +1087,7 @@ export function FocusReader({ topic }) {
     };
     window.addEventListener('keydown', onKey, true);
     return () => window.removeEventListener('keydown', onKey, true);
-  }, [closeReader, goBeat, goStep, goBlock, skipOrAdvance, drawerOpen]);
+  }, [closeReader, goBeat, goStep, goBlock, skipOrAdvance, drawerOpen, splashVisible]);
 
   // Swipe tàctil.
   const touchRef = useRef({ x: 0, y: 0, t: 0, active: false });
@@ -1294,6 +1305,13 @@ export function FocusReader({ topic }) {
         open={drawerOpen}
         onClose={() => setDrawerOpen(false)}
       />
+
+      {splashVisible ? (
+        <ReaderEntrySplash
+          topic={topic}
+          onDismiss={() => setSplashVisible(false)}
+        />
+      ) : null}
     </div>
   );
 }
