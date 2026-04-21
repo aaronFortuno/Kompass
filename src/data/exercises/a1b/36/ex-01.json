@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-36-ex-01",
+  "topicId": "A1b-36",
+  "title": "Identificar el cas d'una forma d'article",
+  "prompt": "Cada frase conté un sintagma amb un article o possessiu. Indica en quin cas està.",
+  "difficulty": 2,
+  "tags": ["deklination", "cas", "article-definit", "article-indefinit", "possessiu"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. **der Mann** (_\"Der Mann schläft.\"_) → {{1}}\n\n2. **den Hund** (_\"Ich sehe den Hund.\"_) → {{2}}\n\n3. **dem Freund** (_\"Ich helfe dem Freund.\"_) → {{3}}\n\n4. **des Kindes** (_\"das Spielzeug des Kindes\"_) → {{4}}\n\n5. **eine Frau** (_\"Ich sehe eine Frau.\"_) → {{5}}\n\n6. **mit einer Lehrerin** → {{6}}\n\n7. **meinem Bruder** (_\"bei meinem Bruder\"_) → {{7}}\n\n8. **meinen Bruder** (_\"Ich besuche meinen Bruder.\"_) → {{8}}\n\n9. **unseres Hauses** (_\"das Dach unseres Hauses\"_) → {{9}}\n\n10. **euren Kindern** (_\"Ich schenke euren Kindern ein Buch.\"_) → {{10}}",
+    "blanks": [
+      { "id": "1", "label": "_der Mann_" },
+      { "id": "2", "label": "_den Hund_" },
+      { "id": "3", "label": "_dem Freund_" },
+      { "id": "4", "label": "_des Kindes_" },
+      { "id": "5", "label": "_eine Frau_ (Ich sehe…)" },
+      { "id": "6", "label": "_mit einer Lehrerin_" },
+      { "id": "7", "label": "_bei meinem Bruder_" },
+      { "id": "8", "label": "_meinen Bruder_ (Akk)" },
+      { "id": "9", "label": "_unseres Hauses_" },
+      { "id": "10", "label": "_euren Kindern_ (Dat pl.)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Nominativ", "Akkusativ", "Dativ", "Genitiv"] },
+      { "blankId": "2", "options": ["Nominativ", "Akkusativ", "Dativ", "Genitiv"] },
+      { "blankId": "3", "options": ["Nominativ", "Akkusativ", "Dativ", "Genitiv"] },
+      { "blankId": "4", "options": ["Nominativ", "Akkusativ", "Dativ", "Genitiv"] },
+      { "blankId": "5", "options": ["Nominativ", "Akkusativ", "Dativ", "Genitiv"] },
+      { "blankId": "6", "options": ["Nominativ", "Akkusativ", "Dativ", "Genitiv"] },
+      { "blankId": "7", "options": ["Nominativ", "Akkusativ", "Dativ", "Genitiv"] },
+      { "blankId": "8", "options": ["Nominativ", "Akkusativ", "Dativ", "Genitiv"] },
+      { "blankId": "9", "options": ["Nominativ", "Akkusativ", "Dativ", "Genitiv"] },
+      { "blankId": "10", "options": ["Nominativ", "Akkusativ", "Dativ", "Genitiv"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Nominativ",
+      "2": "Akkusativ",
+      "3": "Dativ",
+      "4": "Genitiv",
+      "5": "Akkusativ",
+      "6": "Dativ",
+      "7": "Dativ",
+      "8": "Akkusativ",
+      "9": "Genitiv",
+      "10": "Dativ"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Tens interioritzada la **signatura de cada terminació**: _-en_ masc. Akk, _-em_ Dat sg. masc./neut., _-er_ Dat/Gen fem., _-es_ Gen masc./neut. Les preposicions (_mit, bei, für_…) i els verbs (_helfen, sehen, besuchen_) acaben d'ajustar la lectura.",
+      "references": ["A1b-36"]
+    },
+    "incorrect": {
+      "default": "Estratègia en **dos passos**: (1) què demana el context? (preposició, verb, funció sintàctica → cas); (2) quin gènere té el substantiu? Amb això, la terminació de l'article ja t'indica el cas. Recorda: _den_ = masc. Akk o Dat pl., _dem_ = Dat masc./neut., _der_ = Nom masc. / Dat fem. / Gen fem. / Gen pl., _des_ = Gen masc./neut.",
+      "byResponse": [
+        {
+          "match": { "3": "Genitiv" },
+          "message": "_dem Freund_: terminació _-em_ = **Datiu** masc./neut. singular. El genitiu masc. seria _des Freundes_."
+        },
+        {
+          "match": { "6": "Genitiv" },
+          "message": "_einer_ és ambigu (Dat fem. **o** Gen fem.), però el context _mit einer Lehrerin_ té preposició **_mit_**, que sempre regeix **Datiu**."
+        },
+        {
+          "match": { "7": "Akkusativ" },
+          "message": "_meinem_ (_-em_) és **Datiu** masc./neut., no acusatiu. _meinen_ (_-en_) sí que seria Akk masc. (o Dat pl.)."
+        },
+        {
+          "match": { "8": "Dativ" },
+          "message": "_meinen Bruder_ aquí és complement directe (_besuchen_ + Akk). _-en_ = masc. Akk **o** Dat pl. Com que _Bruder_ és masc. singular, és Akkusativ."
+        },
+        {
+          "match": { "10": "Akkusativ" },
+          "message": "_euren Kindern_: la _-n_ al final del substantiu (_Kinder → Kindern_) és la marca del **Datiu plural**. _-en_ + _-n_ al substantiu = sempre Dat pl."
+        }
+      ]
+    }
+  }
+}

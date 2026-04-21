@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-36",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 36,
+  "title": "Deklination - bestimmter/unbestimmter Artikel, Possessivartikel",
+  "shortTitle": "Deklinació articles",
+  "description": "Consolidació final del sistema casual d'A1: la taula 3×4×4 (3 tipus d'article × 4 gèneres × 4 casos) vista com un sol sistema amb patrons unificats. _ein, kein_ i els set possessius es declinen tots igual.",
+  "axes": ["generes-articles-declinacio", "casos"],
+  "prerequisites": ["A1b-17", "A1b-19"],
+  "estimatedMinutes": 30,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Què vol dir \"declinar\", definitivament\n\nDes d'A1a-14 vas sentir que els articles alemanys \"canvien de forma segons el cas\". Aquella lliçó només et donava el **nominatiu**. A1a-28 va afegir l'**acusatiu**. A1b-19 i A1b-20 van introduir el **datiu** a través de les preposicions. A1b-17 va tancar el cercle amb el **genitiu**.\n\nAra, per fi, tens **les peces de tots quatre casos** i **els tres tipus d'article** alhora. Aquesta lliçó és el ==**mapa**==."
+        },
+        {
+          "type": "explanation",
+          "body": "> **Per què cal?** Perquè a nivell d'A1 tu ja has fet servir _mit meinem Bruder_, _für meine Schwester_, _ohne mein Auto_ i _in der Küche_ sense pensar-hi gaire. Cadascuna d'aquestes formes venia aïllada d'una lliçó concreta. Fins que no **veus la graella sencera**, no t'adones que totes elles formen **un sistema coherent** amb molt poques variacions reals.\n\n**Les tres famílies d'article que tens a A1:**\n\n1. **Article determinat** (_der bestimmte Artikel_): _der, die, das, die_ i les seves formes declinades.\n2. **Article indeterminat** (_der unbestimmte Artikel_): _ein, eine, ein_ — ==**no té plural**== (si vols dir \"uns quants\" en plural simplement no hi poses article).\n3. **Article possessiu** (_der Possessivartikel_): _mein, dein, sein, ihr, unser, euer, Ihr_ — ==es declina **exactament com _ein_**==, però _sí_ té plural."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Bonus conceptual",
+          "body": "A aquesta família hi pertany també ==_**kein**_== (la negació de _ein_): _kein Mann, keine Frau, kein Kind, keine Kinder_. _kein_ es declina **exactament igual** que els possessius. Per això el PDF del curs les presenta juntes."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Enfoc: no hi ha res de nou",
+          "body": "Aquesta lliçó **no introdueix res de nou**. El que fa és **ajuntar en una sola mirada** tots els articles que has vist dispersats al llarg de vint-i-dues lliçons. L'objectiu: que puguis **visualitzar la taula completa 3×4×4** (3 tipus d'article × 4 gèneres/plural × 4 casos = 48 caselles) i, sobretot, **detectar els patrons** que fan que no hagis de memoritzar 48 formes aïllades, sinó un grapat de **regles elegants**."
+        }
+      ]
+    },
+    {
+      "id": "bestimmter",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Taula 1 · Article determinat (_der, die, das_)\n\nAquesta és la més senzilla perquè no hi ha variació de \"tipus\": només hi ha una forma per gènere i cas. Ja la coneixes tota."
+        },
+        {
+          "type": "table",
+          "title": "36.1 Article determinat (_der bestimmte Artikel_)",
+          "headers": ["Cas", "masculí", "femení", "neutre", "Plural"],
+          "rows": [
+            ["**Nominativ**", "==der==", "die", "das", "die"],
+            ["**Akkusativ**", "==**den**==", "die", "das", "die"],
+            ["**Dativ**", "==**dem**==", "==**der**==", "==**dem**==", "==**den**== + -n"],
+            ["**Genitiv**", "==**des**== + -s", "==**der**==", "==**des**== + -s", "==**der**=="]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Els quatre patrons a recordar:**\n\n1. **El masculí és el que més es mou:** canvia en tots quatre casos (_der → den → dem → des_). És l'únic gènere amb quatre formes diferents.\n2. **El femení i el plural comparteixen ritme:** _die / die_ en Nom/Akk, _der / den+N_ en Dat, _der / der_ en Gen.\n3. **El neutre té la peresa del femení al davant, però la fatiga del masculí al darrere:** _das / das_ en Nom/Akk (com el femení), _dem / des_ en Dat/Gen (com el masculí).\n4. **Datiu plural afegeix una _-n_ al substantiu** (_den Kindern, den Freunden_), a banda de l'article. Única peculiaritat morfològica del substantiu en tots quatre casos (l'altra és la _-s/-es_ del genitiu masc./neut.)."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Vorsicht! _der_ múltiple",
+          "body": "_der_ apareix a **quatre** caselles diferents (Nom masc., Dat fem., Gen fem., Gen pl.). El **context** — sobretot la **preposició** o el **verb** — desambigua sempre."
+        }
+      ]
+    },
+    {
+      "id": "unbestimmter",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Taula 2 · Article indeterminat (_ein, eine, ein_) i negatiu (_kein_)\n\nL'article indeterminat té una particularitat visible d'entrada: ==**no té plural**==. La raó és òbvia: _ein_ = _un_. No existeix _uns_."
+        },
+        {
+          "type": "table",
+          "title": "36.2 Article indeterminat (_ein_)",
+          "headers": ["Cas", "masculí", "femení", "neutre", "Plural"],
+          "rows": [
+            ["**Nominativ**", "==ein==", "eine", "==ein==", "— (sense article)"],
+            ["**Akkusativ**", "==**einen**==", "eine", "==ein==", "— (sense article)"],
+            ["**Dativ**", "==**einem**==", "==**einer**==", "==**einem**==", "— (sense article)"],
+            ["**Genitiv**", "==**eines**== + -s", "==**einer**==", "==**eines**== + -s", "— (sense article)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Contrast amb el determinat: la regla mnemotècnica",
+          "body": "Als **masculins i neutres del nominatiu i del neutre de l'acusatiu**, l'article indeterminat és ==més curt== que el determinat: no té terminació (_ein_ vs. _der/das_). En tota la resta de caselles, ==repeteix l'esquelet del determinat== (_einen ↔ den_, _einem ↔ dem_, _einer ↔ der_, _eines ↔ des_)."
+        },
+        {
+          "type": "explanation",
+          "body": "**Per negar, _kein_:** _kein_ es declina **exactament igual que _ein_**, però ==sí té plural==: _keine, keine, keinen+N, keiner_."
+        },
+        {
+          "type": "table",
+          "title": "36.3 Article negatiu (_kein_)",
+          "headers": ["Cas", "masculí", "femení", "neutre", "Plural"],
+          "rows": [
+            ["**Nominativ**", "kein", "keine", "kein", "==**keine**=="],
+            ["**Akkusativ**", "==**keinen**==", "keine", "kein", "==**keine**=="],
+            ["**Dativ**", "==**keinem**==", "==**keiner**==", "==**keinem**==", "==**keinen**== + -n"],
+            ["**Genitiv**", "==**keines**== + -s", "==**keiner**==", "==**keines**== + -s", "==**keiner**=="]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Exemples en context:** _Ich habe **keinen** Hund._ · _Sie spricht mit **keinem** Studenten._ · _Die Frau **keines** Ministers._"
+        }
+      ]
+    },
+    {
+      "id": "check-det-indet",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-36-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "possessiv",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Taula 3 · Articles possessius (_mein, dein, sein, ihr, unser, euer, Ihr_)\n\nAra ve la notícia ==**alliberadora**== del curs d'A1.\n\n> ==Els set possessius es declinen **tots** exactament com _kein_.==\n\nAixò vol dir: si saps _kein / keine / keinen / keinem / keiner / keines_, ja saps **també** _mein / meine / meinen / meinem / meiner / meines_ **i** _dein…_ **i** _sein…_ **i** _ihr…_ **i** _unser…_ **i** _euer…_ **i** _Ihr…_. **Set taules idèntiques.**"
+        },
+        {
+          "type": "table",
+          "title": "36.4 Taula genèrica del possessiu (_mein-_)",
+          "headers": ["Cas", "masculí", "femení", "neutre", "Plural"],
+          "rows": [
+            ["**Nominativ**", "mein", "meine", "mein", "==**meine**=="],
+            ["**Akkusativ**", "==**meinen**==", "meine", "mein", "==**meine**=="],
+            ["**Dativ**", "==**meinem**==", "==**meiner**==", "==**meinem**==", "==**meinen**== + -n"],
+            ["**Genitiv**", "==**meines**== + -s", "==**meiner**==", "==**meines**== + -s", "==**meiner**=="]
+          ],
+          "caption": "Substitueix _mein-_ per qualsevol dels set radicals: _dein-, sein-, ihr-, unser-, euer-, Ihr-_."
+        },
+        {
+          "type": "table",
+          "title": "36.5 Els set radicals possessius",
+          "headers": ["Persona", "Radical", "Exemple"],
+          "rows": [
+            ["_ich_", "**mein-**", "_mein Bruder, meine Schwester_"],
+            ["_du_", "**dein-**", "_dein Auto, deine Freundin_"],
+            ["_er / es_", "**sein-**", "_sein Hund, seine Katze_"],
+            ["_sie_ (ella)", "**ihr-**", "_ihr Mann, ihre Tasche_"],
+            ["_wir_", "**unser-**", "_unser Haus, unsere Eltern_"],
+            ["_ihr_ (vosaltres)", "**euer- / eur-**", "_euer Lehrer, eure Lehrerin_"],
+            ["_sie_ (ells/elles)", "**ihr-**", "_ihr Projekt, ihre Ideen_"],
+            ["_Sie_ (formal)", "**Ihr-**", "_Ihr Büro, Ihre E-Mail_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Dos paranys ortogràfics del possessiu",
+          "body": "1. ==**_euer_ perd la _-e-_ del radical**== quan s'afegeix una terminació que comença per vocal o que faria la paraula massa llarga: _eu**e**r Bruder_ però _eu**re** Schwester, eu**re**n Kindern, eu**re**m Vater_. L'excepció és _euer_ sense terminació.\n2. ==**_sein-_ i _ihr-_ es confonen fàcilment**==. _sein-_ és \"seu **d'ell** / seu **de cosa neutra**\". _ihr-_ és \"seu **d'ella** / seu **d'ells/elles**\". _Ihr-_ (majúscula) és \"seu **de vostè**\". La forma del radical depèn del **posseïdor**, no del substantiu posseït."
+        }
+      ]
+    },
+    {
+      "id": "check-possessiu",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-36-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "patro-unificat",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El patró unificat: _ein / kein / mein_ comparteixen tres \"supersignatures\"\n\nSi mires les tres taules anteriors superposades, veus que **totes** acaben en el mateix joc de terminacions segons cas i gènere. Aquest és l'esquema mestre que tanca A1:"
+        },
+        {
+          "type": "table",
+          "title": "36.6 Terminacions mestres de _ein / kein / mein_ (i tots els possessius)",
+          "headers": ["Cas", "masculí", "femení", "neutre", "Plural"],
+          "rows": [
+            ["**Nominativ**", "—", "-e", "—", "-e"],
+            ["**Akkusativ**", "==**-en**==", "-e", "—", "-e"],
+            ["**Dativ**", "==**-em**==", "==**-er**==", "==**-em**==", "==**-en**== + -n"],
+            ["**Genitiv**", "==**-es**== + -s", "==**-er**==", "==**-es**== + -s", "==**-er**=="]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "_der/die/das_ tenen aquestes mateixes terminacions però amb el radical _d-_ (i algunes formes irregulars del nominatiu/acusatiu neutre). _ein/kein/mein_ apliquen el joc ==**nét**== sobre un radical buit (_ein-_, _kein-_, _mein-_…), amb l'única excepció que **masculí i neutre de nominatiu + neutre d'acusatiu** no porten cap terminació (són _ein, ein, ein_)."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Truc definitiu",
+          "body": "Si dubtes d'una forma possessiva, pregunta't: ==_\"Com seria amb **kein**?\"_==. La resposta del possessiu és la mateixa forma canviant-ne el radical. _Mit meinem Bruder_ ↔ _Mit keinem Bruder_. _Für deine Schwester_ ↔ _Für keine Schwester_. _Das Haus meiner Eltern_ ↔ _Das Haus keiner Eltern_."
+        }
+      ]
+    },
+    {
+      "id": "check-patro",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-36-ex-03", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "sein-vs-ihr",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Parany clau: _sein-_ vs. _ihr-_\n\nEn català, _\"el seu\"_ val per a ell, per a ella i per a ells/elles. En alemany, el **radical canvia** segons el gènere del **posseïdor** (no del posseït).\n\n- _Max liest **sein** Buch._ (Max = _er_ → _sein-_)\n- _Anna liest **ihr** Buch._ (Anna = _sie_ → _ihr-_)\n- _Die Kinder suchen **ihre** Mutter._ (_sie_ plural → _ihr-_)\n- _Herr Müller, ist das **Ihr** Auto?_ (formal → _Ihr-_ amb majúscula)\n\nLa ==**terminació**==, en canvi, es decideix pel substantiu posseït (gènere + cas): _sein**en** Bruder_ (masc. Akk), _sein**e** Schwester_ (fem. Akk), _sein**em** Kind_ (neut. Dat)."
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Dues decisions independents",
+          "body": "El possessiu es construeix en **dos passos**: (1) ==**radical**== pel posseïdor (_mein-/dein-/sein-/ihr-/unser-/euer-/Ihr-_); (2) ==**terminació**== pel posseït (gènere + cas del substantiu que segueix). No barregis els dos passos."
+        }
+      ]
+    },
+    {
+      "id": "check-sein-ihr",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-36-ex-04", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "assessment-1-transformacio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-36-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2-match",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-36-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3-dropdown",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-36-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4-text-seguit",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-36-ex-08", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El sistema casual d'A1, en una sola graella\n\nLa taula 3×4×4 completa, amb les tres famílies superposades:"
+        },
+        {
+          "type": "table",
+          "title": "36.7 Síntesi: det / indet / poss · els quatre casos",
+          "headers": ["Cas", "det. masc./fem./neut./pl.", "indet. masc./fem./neut.", "kein/poss. masc./fem./neut./pl."],
+          "rows": [
+            ["**Nom**", "der / die / das / die", "ein / eine / ein", "(k)ein / (k)eine / (k)ein / (k)eine"],
+            ["**Akk**", "==**den**== / die / das / die", "==**einen**== / eine / ein", "==**(k)einen**== / (k)eine / (k)ein / (k)eine"],
+            ["**Dat**", "dem / der / dem / den+N", "einem / einer / einem", "(k)einem / (k)einer / (k)einem / (k)einen+N"],
+            ["**Gen**", "des+s / der / des+s / der", "eines+s / einer / eines+s", "(k)eines+s / (k)einer / (k)eines+s / (k)einer"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "#### Regles d'or per fixar-les a la memòria\n\n1. ==**Aprens un, saps vuit.**== _kein, mein, dein, sein, ihr, unser, euer, Ihr_ es declinen tots igual.\n2. ==**Les terminacions no canvien mai:**== _-en_ (masc. Akk), _-em_ (masc./neut. Dat), _-er_ (fem. Dat/Gen, pl. Gen), _-es_ (masc./neut. Gen). Si saps aquestes quatre, ho saps tot.\n3. ==**Datiu plural afegeix _-n_ al substantiu**==, sempre i quan no acabi ja en _-n_ o _-s_. _den Kindern, den Freunden_, però _den Autos_ (acaba en _-s_, invariable).\n4. ==**Genitiu masc./neut. afegeix _-s_ o _-es_**== al substantiu (_des Mannes, des Kindes, des Autos_). Vegeu A1b-17 per al criteri.\n5. ==**_ein_ no té plural.**== Per a \"uns pocs X\" → cap article. Per a \"cap X\" → _kein-_. Per a \"els meus X\" → _meine_.\n6. ==**_euer_ perd la _-e-_**== davant de terminació vocàlica: _euer Bruder_, però _eure Schwester, euren Kindern_."
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Confusions recurrents que cal desactivar",
+          "body": "- ==_sein-_ vs. _ihr-_==: gènere **del posseïdor**, no del posseït.\n- ==_meinen_ vs. _meinem_==: _-en_ = masc. Akk singular **o** plural Dat; _-em_ = masc./neut. Dat singular.\n- ==_der_ múltiple==: pot ser Nom masc., Dat fem., Gen fem. o Gen pl. Només el context decideix.\n- ==Datiu femení _-er_ = Genitiu femení _-er_==: (p. ex. _der Mutter_, _einer Mutter_, _meiner Mutter_ poden ser totes dues coses). El verb o preposició desambigua."
+        },
+        {
+          "type": "explanation",
+          "body": "#### Connexions amb altres lliçons\n\nConsolida **A1a-14** (nominatiu inicial), **A1a-28** (acusatiu), **A1b-17** (genitiu), **A1b-19** + **A1b-20** (datiu en context preposicional). Prepara qualsevol ús futur d'adjectius declinats (ja vists parcialment a A1b-29) i és **condició prèvia** per al pas a A2, on s'hi afegiran els **pronoms relatius** (que es declinen pràcticament com _der/die/das_) i les formes declinades dels **Demonstrativpronomen** i **Fragewörter** (_welcher, dieser_). Amb aquesta taula al cap, el salt a A2 deixa de fer por."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Tancament del bloc de casos d'A1",
+          "body": "Aquesta lliçó tanca el sistema casual d'A1. Ja tens la graella completa: tres tipus d'article, quatre gèneres/plural, quatre casos. **Quaranta-vuit caselles, però només quatre terminacions de base.** A partir d'aquí, el salt a A2 consisteix a **refinar** (adjectius declinats, pronoms relatius, demostratius), no a aprendre coses radicalment noves. _Willkommen im vollständigen Kasussystem!_"
+        }
+      ]
+    }
+  ]
+}

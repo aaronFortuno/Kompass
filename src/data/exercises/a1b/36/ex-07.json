@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-36-ex-07",
+  "topicId": "A1b-36",
+  "title": "_ein_ o _kein_ en context",
+  "prompt": "Completa cada frase amb la forma correcta d'_ein_ o _kein_ segons el context.",
+  "difficulty": 2,
+  "tags": ["deklination", "ein", "kein", "avaluacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich habe {{1}} Bruder._ (_der Bruder_, Akk)\n\n2. _Das ist {{2}} Idee!_ (_die Idee_, Nom exclamatiu)\n\n3. _Er wohnt bei {{3}} Freund._ (_der Freund_, Dat)\n\n4. _Das ist die Meinung {{4}} Lehrerin._ (_die Lehrerin_, Gen)\n\n5. _Ich trinke {{5}} Tee._ (_der Tee_, Akk)\n\n6. _Wir essen mit {{6}} Kind._ (_das Kind_, Dat)\n\n7. _Ich habe {{7}} Geld._ (negació; _das Geld_, Akk)\n\n8. _Sie hat {{8}} Hund._ (_der Hund_, Akk — afirmatiu)",
+    "blanks": [
+      { "id": "1", "label": "1. _der Bruder_, Akk (afirmatiu)" },
+      { "id": "2", "label": "2. _die Idee_, Nom" },
+      { "id": "3", "label": "3. _der Freund_, Dat (bei)" },
+      { "id": "4", "label": "4. _die Lehrerin_, Gen" },
+      { "id": "5", "label": "5. _der Tee_, Akk" },
+      { "id": "6", "label": "6. _das Kind_, Dat (mit)" },
+      { "id": "7", "label": "7. _das Geld_, Akk (negació)" },
+      { "id": "8", "label": "8. _der Hund_, Akk (afirmatiu)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["ein", "eine", "einen", "einem", "einer", "eines", "kein", "keine", "keinen", "keinem", "keiner", "keines"] },
+      { "blankId": "2", "options": ["ein", "eine", "einen", "einem", "einer", "eines", "kein", "keine", "keinen", "keinem", "keiner", "keines"] },
+      { "blankId": "3", "options": ["ein", "eine", "einen", "einem", "einer", "eines", "kein", "keine", "keinen", "keinem", "keiner", "keines"] },
+      { "blankId": "4", "options": ["ein", "eine", "einen", "einem", "einer", "eines", "kein", "keine", "keinen", "keinem", "keiner", "keines"] },
+      { "blankId": "5", "options": ["ein", "eine", "einen", "einem", "einer", "eines", "kein", "keine", "keinen", "keinem", "keiner", "keines"] },
+      { "blankId": "6", "options": ["ein", "eine", "einen", "einem", "einer", "eines", "kein", "keine", "keinen", "keinem", "keiner", "keines"] },
+      { "blankId": "7", "options": ["ein", "eine", "einen", "einem", "einer", "eines", "kein", "keine", "keinen", "keinem", "keiner", "keines"] },
+      { "blankId": "8", "options": ["ein", "eine", "einen", "einem", "einer", "eines", "kein", "keine", "keinen", "keinem", "keiner", "keines"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "einen",
+      "2": "eine",
+      "3": "einem",
+      "4": "einer",
+      "5": "einen",
+      "6": "einem",
+      "7": "kein",
+      "8": "einen"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. _ein_ i _kein_ es declinen **idènticament** (excepte que _ein_ no té plural). Les preposicions fixes (_bei, mit_) demanen Datiu, i _Geld_ és neutre Akk → la negació és _kein_ (sense terminació).",
+      "references": ["A1b-36"]
+    },
+    "incorrect": {
+      "default": "_ein_ i _kein_ comparteixen taula: només canvien l'arrel. Signatures: masc. Akk = _-en_, fem. Nom/Akk = _-e_, masc./neut. Dat = _-em_, fem. Dat/Gen = _-er_, masc./neut. Gen = _-es_, neut. Nom/Akk = sense terminació.",
+      "byResponse": [
+        {
+          "match": { "3": "einen" },
+          "message": "_bei_ sempre regeix **Datiu**. Dat masc. sg. = _-em_: _bei ein**em** Freund_."
+        },
+        {
+          "match": { "6": "ein" },
+          "message": "_mit_ sempre regeix **Datiu**. Dat neut. sg. = _-em_: _mit ein**em** Kind_."
+        },
+        {
+          "match": { "7": "keinen" },
+          "message": "_das Geld_ és **neutre**, no masculí. Neutre Akk = sense terminació → _**kein** Geld_."
+        },
+        {
+          "match": { "7": "kein" },
+          "message": "(Si has marcat _kein_ era correcte!) _Geld_ és neutre singular → _kein_ sense terminació."
+        },
+        {
+          "match": { "4": "eines" },
+          "message": "_die Lehrerin_ és **femení**. Gen fem. = _-er_: _ein**er** Lehrerin_. _-es_ seria Gen masc./neut."
+        }
+      ]
+    }
+  }
+}

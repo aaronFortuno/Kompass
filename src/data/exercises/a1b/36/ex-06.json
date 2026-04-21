@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-36-ex-06",
+  "topicId": "A1b-36",
+  "title": "Emparella forma ↔ etiqueta (gènere · cas)",
+  "prompt": "Empareja cada forma d'article amb l'etiqueta que la descriu millor. Algunes formes són ambigües sense context: tria l'etiqueta que reculli les possibilitats principals.",
+  "difficulty": 2,
+  "tags": ["deklination", "matching", "reconeixement-formes"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "f1", "group": "formes", "content": { "type": "text", "content": "_den_" } },
+      { "id": "e1", "group": "etiquetes", "content": { "type": "text", "content": "masc. Akk **o** pl. Dat (+-n)" } },
+      { "id": "f2", "group": "formes", "content": { "type": "text", "content": "_dem_" } },
+      { "id": "e2", "group": "etiquetes", "content": { "type": "text", "content": "masc./neut. Dat" } },
+      { "id": "f3", "group": "formes", "content": { "type": "text", "content": "_des_" } },
+      { "id": "e3", "group": "etiquetes", "content": { "type": "text", "content": "masc./neut. Gen (+-s)" } },
+      { "id": "f4", "group": "formes", "content": { "type": "text", "content": "_einer_" } },
+      { "id": "e4", "group": "etiquetes", "content": { "type": "text", "content": "fem. Dat/Gen" } },
+      { "id": "f5", "group": "formes", "content": { "type": "text", "content": "_meinen_" } },
+      { "id": "e5", "group": "etiquetes", "content": { "type": "text", "content": "masc. Akk sg. **o** Dat pl." } },
+      { "id": "f6", "group": "formes", "content": { "type": "text", "content": "_unseres_" } },
+      { "id": "e6", "group": "etiquetes", "content": { "type": "text", "content": "masc./neut. Gen (+-s)" } }
+    ]
+  },
+  "interaction": { "type": "matchPairs", "groupALabel": "Formes", "groupBLabel": "Etiquetes" },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["f1", "e1"],
+      ["f2", "e2"],
+      ["f3", "e3"],
+      ["f4", "e4"],
+      ["f5", "e5"],
+      ["f6", "e6"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Cada terminació té una **signatura acústica**: _-en_ (masc. Akk / Dat pl.), _-em_ (Dat masc./neut.), _-er_ (Dat/Gen fem. o Gen pl.), _-es_ (Gen masc./neut.). Una vegada les sents, el cas es dedueix gairebé automàticament.",
+      "references": ["A1b-36"]
+    },
+    "incorrect": {
+      "default": "Pensa en termes de **terminacions mestres**: _-en_ → masc. Akk o Dat pl.; _-em_ → Dat masc./neut.; _-er_ → Dat/Gen fem. (o Gen pl.); _-es_ → Gen masc./neut. Els articles determinats _den/dem/des_ hereten aquestes mateixes signatures; _einen/einem/eines_ i _meinen/meinem/meines_ també. És un sol sistema."
+    }
+  }
+}

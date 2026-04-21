@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-36-ex-08",
+  "topicId": "A1b-36",
+  "title": "Text seguit: la família de Markus",
+  "prompt": "Completa el paràgraf amb els articles adequats (determinats, indeterminats o possessius). Fixa't en el cas que demana cada context (preposicions, verbs, funció sintàctica) i en el gènere del substantiu.",
+  "difficulty": 3,
+  "tags": ["deklination", "text-seguit", "barrejat", "sintesi", "avaluacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Das ist {{1}} Familie von {{2}} Freund Markus. Markus wohnt mit {{3}} Mutter und {{4}} Vater in {{5}} kleinen Haus. Er hat auch {{6}} Schwester, aber sie wohnt nicht mehr bei {{7}} Eltern. Am Wochenende besucht Markus oft {{8}} Großeltern. Sie sind die Eltern {{9}} Mutter und sie wohnen in {{10}} Stadt in der Nähe._",
+    "blanks": [
+      { "id": "1", "label": "1. _die Familie_, Nom (determinat)" },
+      { "id": "2", "label": "2. _der Freund_, Dat per _von_ (possessiu ich)" },
+      { "id": "3", "label": "3. _die Mutter_, Dat per _mit_ (possessiu d'ell)" },
+      { "id": "4", "label": "4. _der Vater_, Dat per _mit_ (possessiu d'ell)" },
+      { "id": "5", "label": "5. _das Haus_, Dat Wechsel _in_ (Wo?) (indeterminat)" },
+      { "id": "6", "label": "6. _die Schwester_, Akk (indeterminat)" },
+      { "id": "7", "label": "7. _die Eltern_ pl., Dat per _bei_ (possessiu d'ell)" },
+      { "id": "8", "label": "8. _die Großeltern_ pl., Akk (possessiu d'ell)" },
+      { "id": "9", "label": "9. _die Mutter_, Gen (possessiu d'ell)" },
+      { "id": "10", "label": "10. _die Stadt_, Dat Wechsel _in_ (Wo?) (indeterminat)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "die" },
+      { "blankId": "2", "placeholder": "meinem" },
+      { "blankId": "3", "placeholder": "seiner" },
+      { "blankId": "4", "placeholder": "seinem" },
+      { "blankId": "5", "placeholder": "einem" },
+      { "blankId": "6", "placeholder": "eine" },
+      { "blankId": "7", "placeholder": "seinen" },
+      { "blankId": "8", "placeholder": "seine" },
+      { "blankId": "9", "placeholder": "seiner" },
+      { "blankId": "10", "placeholder": "einer" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "die",
+      "2": "meinem",
+      "3": "seiner",
+      "4": "seinem",
+      "5": "einem",
+      "6": "eine",
+      "7": "seinen",
+      "8": "seine",
+      "9": "seiner",
+      "10": "einer"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has fet el **doble pas** amb fluïdesa: (1) identificar el **cas** (preposició _von/mit/bei/in_ → Dat; _besucht_ + Akk; _Eltern_ + Gen possessiu), (2) triar la **terminació** per gènere/nombre. I has aplicat correctament la distinció _ihr-/sein-_: Markus és **ell**, per tant tots els possessius del passatge són _sein-_. ==Aprens un, saps vuit.==",
+      "references": ["A1b-36"]
+    },
+    "incorrect": {
+      "default": "Per a cada buit, fes **dos passos**: (1) quin cas demana el context? (_von, mit, bei, in Wo?_ → Dat; _besuchen_ + Akk; possessió + substantiu → Gen); (2) quin gènere té el substantiu posseït? El radical possessiu és sempre _sein-_ perquè el posseïdor és Markus (ell).",
+      "byResponse": [
+        {
+          "match": { "2": "mein" },
+          "message": "_von_ regeix **Datiu**. Dat masc. sg. → _-em_: _von **meinem** Freund_."
+        },
+        {
+          "match": { "3": "seinem" },
+          "message": "_die Mutter_ és **femení**. _mit_ + Dat fem. sg. → _-er_: _mit **seiner** Mutter_."
+        },
+        {
+          "match": { "3": "ihrer" },
+          "message": "El posseïdor és Markus (**ell**) → radical _sein-_, no _ihr-_. Dat fem. sg. → _-er_: _**seiner** Mutter_."
+        },
+        {
+          "match": { "5": "ein" },
+          "message": "_in_ + Wo? (sense moviment) = **Datiu**. _das Haus_ és neutre → Dat neut. sg. = _-em_: _in **einem** Haus_."
+        },
+        {
+          "match": { "5": "einen" },
+          "message": "_in_ amb Wechsel: si indica **Wo?** (permanència, no moviment) → Datiu. Aquí _wohnt in…_ és permanència → Dat neut. = _einem_."
+        },
+        {
+          "match": { "7": "seinem" },
+          "message": "_Eltern_ és **plural**. _bei_ + Dat pl. = _-en_ (i _Eltern_ ja acaba en _-n_, no cal afegir-ne): _bei **seinen** Eltern_."
+        },
+        {
+          "match": { "8": "seinen" },
+          "message": "_besuchen_ + Akk. _die Großeltern_ és **plural** → Akk pl. = _-e_: _**seine** Großeltern_, no _seinen_."
+        },
+        {
+          "match": { "9": "seinem" },
+          "message": "_die Eltern **seiner** Mutter_ és Genitiu femení singular (possessió) → _-er_, no _-em_."
+        },
+        {
+          "match": { "10": "einen" },
+          "message": "_wohnen in_ + Wo? = Dat. _die Stadt_ és femení → Dat fem. sg. = _-er_: _in **einer** Stadt_."
+        }
+      ]
+    }
+  }
+}

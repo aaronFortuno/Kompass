@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-36-ex-02",
+  "topicId": "A1b-36",
+  "title": "Possessius: triar la forma correcta",
+  "prompt": "Completa cada frase amb la forma correcta del possessiu. Es dóna el posseïdor entre parèntesis i el gènere/nombre del substantiu posseït en context.",
+  "difficulty": 2,
+  "tags": ["possessiu", "mein", "dein", "sein", "ihr", "unser", "euer"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Das ist {{1}} Bruder._ (ich, _der Bruder_, Nom)\n\n2. _Ich liebe {{2}} Schwester._ (ich, _die Schwester_, Akk)\n\n3. _Er spielt mit {{3}} Kindern._ (er, _die Kinder_, Dat pl.)\n\n4. _Wo ist {{4}} Auto?_ (du, _das Auto_, Nom)\n\n5. _Sie wohnt bei {{5}} Eltern._ (sie=ella, _die Eltern_, Dat pl.)\n\n6. _Das ist {{6}} Hund._ (wir, _der Hund_, Nom)\n\n7. _Ich mag {{7}} Lehrerin._ (ihr=vosaltres, _die Lehrerin_, Akk)\n\n8. _Haben Sie {{8}} Pass dabei?_ (Sie formal, _der Pass_, Akk)\n\n9. _Das Haus {{9}} Eltern ist groß._ (ich, _die Eltern_, Gen pl.)\n\n10. _Sie gehen mit {{10}} Freundin ins Kino._ (sie=ells, _die Freundin_, Dat)",
+    "blanks": [
+      { "id": "1", "label": "1. ich + masc. Nom" },
+      { "id": "2", "label": "2. ich + fem. Akk" },
+      { "id": "3", "label": "3. er + pl. Dat" },
+      { "id": "4", "label": "4. du + neut. Nom" },
+      { "id": "5", "label": "5. sie(ella) + pl. Dat" },
+      { "id": "6", "label": "6. wir + masc. Nom" },
+      { "id": "7", "label": "7. ihr(vosaltres) + fem. Akk" },
+      { "id": "8", "label": "8. Sie(formal) + masc. Akk" },
+      { "id": "9", "label": "9. ich + pl. Gen" },
+      { "id": "10", "label": "10. sie(ells) + fem. Dat" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "mein…" },
+      { "blankId": "2", "placeholder": "mein…" },
+      { "blankId": "3", "placeholder": "sein…" },
+      { "blankId": "4", "placeholder": "dein…" },
+      { "blankId": "5", "placeholder": "ihr…" },
+      { "blankId": "6", "placeholder": "unser…" },
+      { "blankId": "7", "placeholder": "eur…" },
+      { "blankId": "8", "placeholder": "Ihr…" },
+      { "blankId": "9", "placeholder": "mein…" },
+      { "blankId": "10", "placeholder": "ihr…" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "mein",
+      "2": "meine",
+      "3": "seinen",
+      "4": "dein",
+      "5": "ihren",
+      "6": "unser",
+      "7": "eure",
+      "8": "Ihren",
+      "9": "meiner",
+      "10": "ihrer"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Tens ben integrats els **dos passos**: radical pel posseïdor i terminació pel posseït. Els casos delicats: _euer → eur-_ davant vocal (_eure_), _Sie_ formal amb majúscula (_Ihren_), Dat pl. amb _-n_ afegida al substantiu quan no acaba ja en _-n/-s_.",
+      "references": ["A1b-36"]
+    },
+    "incorrect": {
+      "default": "Dos passos independents: (1) radical → **qui posseeix** (ich=_mein-_, du=_dein-_, er/es=_sein-_, sie/ells=_ihr-_, wir=_unser-_, ihr(vos.)=_euer-/eur-_, Sie=_Ihr-_); (2) terminació → **gènere i cas del substantiu posseït** (Akk masc. _-en_, Akk fem./pl. _-e_, Dat masc./neut. _-em_, Dat fem. _-er_, Dat pl. _-en_, Gen masc./neut. _-es_, Gen fem./pl. _-er_, Nom masc./neut. _—_, Nom fem./pl. _-e_).",
+      "byResponse": [
+        {
+          "match": { "7": "euer" },
+          "message": "Davant de terminació que comença per vocal, _euer_ perd la _-e-_: _**eu**r**e** Lehrerin_, no _eu**e**r**e**_."
+        },
+        {
+          "match": { "7": "euere" },
+          "message": "_euere_ no existeix: _euer_ perd la _-e-_ del radical → _**eure**_."
+        },
+        {
+          "match": { "3": "seine" },
+          "message": "_Kindern_ (Dat pl., amb _-n_ afegida) demana terminació _-en_: _**seinen** Kindern_."
+        },
+        {
+          "match": { "5": "ihre" },
+          "message": "_bei_ regeix Datiu. Plural Dat → terminació _-en_: _**ihren** Eltern_ (aquí _Eltern_ ja acaba en _-n_, no cal afegir-ne una altra)."
+        },
+        {
+          "match": { "8": "ihren" },
+          "message": "Atenció a la majúscula: _Sie_ formal → radical _**Ihr-**_ amb majúscula. Forma correcta: _**Ihren**_."
+        },
+        {
+          "match": { "9": "meinen" },
+          "message": "_das Haus **meiner** Eltern_ és Genitiu plural (possessió): _-er_ (Gen pl.), no _-en_ (Dat pl.)."
+        },
+        {
+          "match": { "10": "ihre" },
+          "message": "_mit_ regeix Datiu, i _die Freundin_ és femení singular → Dat fem. = _-er_: _**ihrer** Freundin_."
+        }
+      ]
+    }
+  }
+}

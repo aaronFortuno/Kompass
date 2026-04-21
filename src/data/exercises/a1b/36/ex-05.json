@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-36-ex-05",
+  "topicId": "A1b-36",
+  "title": "Transformació _der → ein → mein_",
+  "prompt": "Reescriu cada sintagma en article determinat amb les formes paral·leles d'_ein_ i de _mein_ (mantenint el cas). Escriu només la forma de l'article (o _—_ si no n'hi ha).",
+  "difficulty": 3,
+  "tags": ["deklination", "transformacio", "der-ein-mein", "avaluacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "**Exemple:** _den Hund (Akk)_ → _**einen** Hund_ / _**meinen** Hund_\n\n1. _dem Kind (Dat)_ → {{1}} Kind / {{2}} Kind\n\n2. _der Frau (Dat)_ → {{3}} Frau / {{4}} Frau\n\n3. _des Mannes (Gen)_ → {{5}} Mannes / {{6}} Mannes\n\n4. _die Katze (Nom)_ → {{7}} Katze / {{8}} Katze\n\n5. _den Kindern (Dat pl.)_ → {{9}} Kindern / {{10}} Kindern",
+    "blanks": [
+      { "id": "1", "label": "1a. ein-forma (Dat neut.)" },
+      { "id": "2", "label": "1b. mein-forma (Dat neut.)" },
+      { "id": "3", "label": "2a. ein-forma (Dat fem.)" },
+      { "id": "4", "label": "2b. mein-forma (Dat fem.)" },
+      { "id": "5", "label": "3a. ein-forma (Gen masc.)" },
+      { "id": "6", "label": "3b. mein-forma (Gen masc.)" },
+      { "id": "7", "label": "4a. ein-forma (Nom fem.)" },
+      { "id": "8", "label": "4b. mein-forma (Nom fem.)" },
+      { "id": "9", "label": "5a. ein-forma (Dat pl.) — _ein_ no té plural!" },
+      { "id": "10", "label": "5b. mein-forma (Dat pl.)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "einem" },
+      { "blankId": "2", "placeholder": "meinem" },
+      { "blankId": "3", "placeholder": "einer" },
+      { "blankId": "4", "placeholder": "meiner" },
+      { "blankId": "5", "placeholder": "eines" },
+      { "blankId": "6", "placeholder": "meines" },
+      { "blankId": "7", "placeholder": "eine" },
+      { "blankId": "8", "placeholder": "meine" },
+      { "blankId": "9", "placeholder": "—" },
+      { "blankId": "10", "placeholder": "meinen" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["einem"],
+      "2": ["meinem"],
+      "3": ["einer"],
+      "4": ["meiner"],
+      "5": ["eines"],
+      "6": ["meines"],
+      "7": ["eine"],
+      "8": ["meine"],
+      "9": ["—", "-", "cap", "sense"],
+      "10": ["meinen"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has vist el **paral·lelisme**: _ein_ i _mein_ repeteixen exactament la mateixa cara del determinat (_einem ↔ dem_, _einer ↔ der_, _eines ↔ des_), i els possessius són simplement _ein_ amb radical canviat. La **única excepció** és que _ein_ no té plural; els possessius **sí**.",
+      "references": ["A1b-36"]
+    },
+    "incorrect": {
+      "default": "Cada _der_-forma té el seu paral·lel en _ein_ i en _mein_, **amb la mateixa terminació**. L'excepció única: _ein_ **no té plural** → cap article en plural, però _mein/kein/etc._ sí: _meinen Kindern, keinen Kindern_.",
+      "byResponse": [
+        {
+          "match": { "9": "einen" },
+          "message": "_ein_ **no té plural**. Per dir \"uns/unes nens\" en plural → **sense article** (_Kindern_). Per a la negació → _keinen_. Per al possessiu → _meinen_."
+        },
+        {
+          "match": { "9": "eines" },
+          "message": "_ein_ **no té plural**. Per al plural Dat → sense article, o amb _kein-/mein-_ (que sí tenen plural)."
+        },
+        {
+          "match": { "7": "ein" },
+          "message": "Femení Nominatiu = _-e_: _**eine** Katze_ (igual que Akk fem.)."
+        },
+        {
+          "match": { "10": "meinem" },
+          "message": "_-em_ és Dat masc./neut. **singular**. Dat **plural** = _-en_ + _-n_ al substantiu: _**meinen** Kinder**n**_."
+        }
+      ]
+    }
+  }
+}

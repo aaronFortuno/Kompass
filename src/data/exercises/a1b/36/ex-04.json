@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-36-ex-04",
+  "topicId": "A1b-36",
+  "title": "_sein-_ vs. _ihr-_: el gènere del posseïdor",
+  "prompt": "En català _\"el seu / la seva\"_ val per a ell, ella i ells. En alemany, el **radical** del possessiu depèn del **posseïdor**. Tria la forma correcta segons qui posseeix.",
+  "difficulty": 2,
+  "tags": ["possessiu", "sein", "ihr", "genere-posseidor"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Anna liebt ___(1) Bruder._ (ella → posseïdor fem.)\n\n2. _Max liest ___(2) Buch._ (ell → posseïdor masc.)\n\n3. _Frau Müller spricht mit ___(3) Kollegen._ (ella, Dat sg. masc.)\n\n4. _Herr Schmidt fährt mit ___(4) Auto._ (ell, Dat sg. neut.)\n\n5. _Die Kinder suchen ___(5) Mutter._ (ells/elles, Akk sg. fem.)\n\n6. _Der Junge spielt mit ___(6) Hund._ (ell, Dat sg. masc.)\n\n7. _Meine Schwestern zeigen ___(7) Fotos._ (elles, Akk pl.)\n\n8. _Mein Vater repariert ___(8) Fahrrad._ (ell, Akk sg. neut.)",
+    "blanks": [
+      { "id": "1", "label": "1. Anna (ella) → masc. Akk" },
+      { "id": "2", "label": "2. Max (ell) → neut. Akk" },
+      { "id": "3", "label": "3. Frau Müller (ella) → masc. Dat" },
+      { "id": "4", "label": "4. Herr Schmidt (ell) → neut. Dat" },
+      { "id": "5", "label": "5. Die Kinder (ells) → fem. Akk" },
+      { "id": "6", "label": "6. Der Junge (ell) → masc. Dat" },
+      { "id": "7", "label": "7. Meine Schwestern (elles) → pl. Akk" },
+      { "id": "8", "label": "8. Mein Vater (ell) → neut. Akk" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["seinen", "ihren", "sein", "ihr", "seine", "ihre"] },
+      { "blankId": "2", "options": ["sein", "ihr", "seinen", "ihren", "seine", "ihre"] },
+      { "blankId": "3", "options": ["seinem", "ihrem", "seinen", "ihren", "seiner", "ihrer"] },
+      { "blankId": "4", "options": ["seinem", "ihrem", "seinen", "ihren", "sein", "ihr"] },
+      { "blankId": "5", "options": ["seine", "ihre", "seinen", "ihren", "seiner", "ihrer"] },
+      { "blankId": "6", "options": ["seinem", "ihrem", "seinen", "ihren", "seinem", "ihren"] },
+      { "blankId": "7", "options": ["seine", "ihre", "seinen", "ihren", "seiner", "ihrer"] },
+      { "blankId": "8", "options": ["sein", "ihr", "seinen", "ihren", "seine", "ihre"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "ihren",
+      "2": "sein",
+      "3": "ihrem",
+      "4": "seinem",
+      "5": "ihre",
+      "6": "seinem",
+      "7": "ihre",
+      "8": "sein"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has separat clarament les dues decisions: **radical** pel posseïdor (ell → _sein-_, ella/ells → _ihr-_) i **terminació** pel substantiu posseït. Aquesta és la **regla d'or** que allibera els possessius alemanys de mig de la seva aparent complexitat.",
+      "references": ["A1b-36"]
+    },
+    "incorrect": {
+      "default": "El radical és **sempre pel posseïdor**: _sein-_ si posseeix **ell (_er_)** o una **cosa neutra (_es_)**; _ihr-_ si posseeix **ella (_sie_)** o **ells/elles (_sie_ pl.)**; _Ihr-_ (majúscula) si posseeix **_Sie_ formal**. La terminació, en canvi, va sempre pel substantiu posseït (gènere + cas).",
+      "byResponse": [
+        {
+          "match": { "1": "seinen" },
+          "message": "Anna és **ella** → radical _**ihr**-_. Terminació _-en_ (masc. Akk) → _**ihren** Bruder_."
+        },
+        {
+          "match": { "2": "ihr" },
+          "message": "Max és **ell** → radical _**sein**-_. Neut. Akk = sense terminació → _**sein** Buch_."
+        },
+        {
+          "match": { "5": "seine" },
+          "message": "_Die Kinder_ (posseïdors) són **ells** → radical _**ihr**-_. Akk fem. sg. = _-e_ → _**ihre** Mutter_."
+        },
+        {
+          "match": { "7": "seine" },
+          "message": "_Meine Schwestern_ són **elles** → radical _**ihr**-_. Akk pl. = _-e_ → _**ihre** Fotos_."
+        },
+        {
+          "match": { "8": "seine" },
+          "message": "_Mein Vater_ és **ell** → radical _sein-_. _Fahrrad_ és **neutre** (das Fahrrad) → Akk neut. = sense terminació → _**sein** Fahrrad_, no _seine_."
+        }
+      ]
+    }
+  }
+}

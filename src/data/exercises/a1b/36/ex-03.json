@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-36-ex-03",
+  "topicId": "A1b-36",
+  "title": "Terminacions mestres: el patró unificat",
+  "prompt": "Per a cada forma, tria la terminació correcta que correspon al cas i gènere indicats. Serveix per a _ein, kein_ i tots els possessius.",
+  "difficulty": 2,
+  "tags": ["deklination", "patro-unificat", "terminacions", "ein", "kein", "mein"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _ein___(1) Hund_ (masc. Akk)\n\n2. _ein___(2) Frau_ (fem. Dat)\n\n3. _ein___(3) Kind_ (neut. Nom) — sense terminació\n\n4. _kein___(4) Bruder_ (masc. Dat)\n\n5. _mein___(5) Schwester_ (fem. Nom)\n\n6. _unser___(6) Kindern_ (pl. Dat)\n\n7. _sein___(7) Mannes_ (masc. Gen)\n\n8. _ihr___(8) Eltern_ (pl. Nom/Akk)",
+    "blanks": [
+      { "id": "1", "label": "1. masc. Akk" },
+      { "id": "2", "label": "2. fem. Dat" },
+      { "id": "3", "label": "3. neut. Nom" },
+      { "id": "4", "label": "4. masc. Dat" },
+      { "id": "5", "label": "5. fem. Nom" },
+      { "id": "6", "label": "6. pl. Dat" },
+      { "id": "7", "label": "7. masc. Gen" },
+      { "id": "8", "label": "8. pl. Nom/Akk" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["—", "-e", "-en", "-em", "-er", "-es"] },
+      { "blankId": "2", "options": ["—", "-e", "-en", "-em", "-er", "-es"] },
+      { "blankId": "3", "options": ["—", "-e", "-en", "-em", "-er", "-es"] },
+      { "blankId": "4", "options": ["—", "-e", "-en", "-em", "-er", "-es"] },
+      { "blankId": "5", "options": ["—", "-e", "-en", "-em", "-er", "-es"] },
+      { "blankId": "6", "options": ["—", "-e", "-en", "-em", "-er", "-es"] },
+      { "blankId": "7", "options": ["—", "-e", "-en", "-em", "-er", "-es"] },
+      { "blankId": "8", "options": ["—", "-e", "-en", "-em", "-er", "-es"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "-en",
+      "2": "-er",
+      "3": "—",
+      "4": "-em",
+      "5": "-e",
+      "6": "-en",
+      "7": "-es",
+      "8": "-e"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Tens la taula de **terminacions mestres** ben interioritzada. Amb aquestes quatre formes clau (_-en_ Akk masc., _-em_ Dat masc./neut., _-er_ Dat/Gen fem. i Gen pl., _-es_ Gen masc./neut.) més els casos \"buits\" (Nom/Akk masc./neut. singular de _ein_) i la _-e_ (Nom/Akk fem./pl.), ==tens **tot** el sistema==.",
+      "references": ["A1b-36"]
+    },
+    "incorrect": {
+      "default": "Memoritza aquestes quatre signatures:\n\n- ==**_-en_**== → masc. Akk (i Dat pl. amb _-n_ al subst.).\n- ==**_-em_**== → masc./neut. Dat.\n- ==**_-er_**== → fem. Dat/Gen i Gen pl.\n- ==**_-es_**== → masc./neut. Gen (+ _-s_ al subst.).\n\nLa resta: _-e_ (fem. Nom/Akk sg. i pl. Nom/Akk), i _—_ (sense terminació) per a masc./neut. Nom sg. i neut. Akk sg. de _ein/kein/mein_.",
+      "byResponse": [
+        {
+          "match": { "1": "-em" },
+          "message": "_-em_ és **Datiu** masc./neut. Aquí tens _einen Hund_ (Akkusativ masc.) → _-en_."
+        },
+        {
+          "match": { "2": "-em" },
+          "message": "_-em_ és Dat masc./neut., no femení. Dat fem. = _-er_: _ein**er** Frau_."
+        },
+        {
+          "match": { "3": "-e" },
+          "message": "_ein_ no té terminació al **neutre Nominatiu** (ni al neutre Akkusatiu). És _ein Kind_, no _eine Kind_."
+        },
+        {
+          "match": { "4": "-en" },
+          "message": "_-en_ és Akk masc. sg. o Dat pl. Aquí vols Dat masc. sg. → _-em_: _kein**em** Bruder_."
+        },
+        {
+          "match": { "6": "-er" },
+          "message": "_-er_ és fem. Dat/Gen (i Gen pl.), no Dat pl. Dat pl. = _-en_ + _-n_ al subst.: _unser**en** Kinder**n**_."
+        },
+        {
+          "match": { "7": "-en" },
+          "message": "_des Mannes_ és Gen masc. sg. Possessiu Gen masc. = _-es_ + _-s/-es_ al subst.: _sein**es** Mann**es**_."
+        }
+      ]
+    }
+  }
+}
