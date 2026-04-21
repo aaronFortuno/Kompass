@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-29-ex-01",
+  "topicId": "A1b-29",
+  "title": "Quin verb forma el Perfekt amb _sein_?",
+  "prompt": "Quin d'aquests verbs forma el **Perfekt amb _sein_**? Recorda: moviment amb desplaçament, canvi d'estat, o els tres casos especials (_sein, bleiben, passieren_).",
+  "difficulty": 1,
+  "tags": ["haben", "sein", "perfekt", "auxiliar", "singleChoice"],
+  "stimulus": {
+    "type": "text",
+    "content": "Tria el verb que forma el Perfekt amb _sein_."
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "essen", "label": "_essen_ (menjar)" },
+      { "id": "gehen", "label": "_gehen_ (anar)" },
+      { "id": "kaufen", "label": "_kaufen_ (comprar)" },
+      { "id": "lesen", "label": "_lesen_ (llegir)" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "gehen" },
+  "feedback": {
+    "correct": {
+      "message": "Correcte. _gehen_ és un **verb de moviment amb desplaçament** (vas d'un lloc a un altre) → ==**_ich **bin** gegangen_**==. La resta són verbs **transitius** (tenen objecte en acusatiu) i van amb _haben_.",
+      "references": ["A1b-29"]
+    },
+    "incorrect": {
+      "default": "Pregunta't: el verb indica **desplaçament** d'un lloc a un altre, o **canvi d'estat**? Si sí → _sein_. Si porta objecte en acusatiu → _haben_.",
+      "byResponse": [
+        {
+          "match": { "response": "essen" },
+          "message": "_essen_ porta un objecte directe (_einen Apfel_): és **transitiu** → _haben_. _Ich **habe** gegessen_."
+        },
+        {
+          "match": { "response": "kaufen" },
+          "message": "_kaufen_ porta un objecte directe (_ein Buch_): és **transitiu** → _haben_. _Ich **habe** gekauft_."
+        },
+        {
+          "match": { "response": "lesen" },
+          "message": "_lesen_ porta un objecte directe (_die Zeitung_): és **transitiu** → _haben_. _Ich **habe** gelesen_."
+        }
+      ]
+    }
+  }
+}

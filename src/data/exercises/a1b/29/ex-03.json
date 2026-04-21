@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-29-ex-03",
+  "topicId": "A1b-29",
+  "title": "Conjuga l'auxiliar del Perfekt",
+  "prompt": "Escriu la forma conjugada de l'auxiliar (_haben_ o _sein_) segons el **subjecte** i el **verb**. Combina el que saps: tria correctament _haben_/_sein_ i conjuga'l a la persona adequada.",
+  "difficulty": 3,
+  "tags": ["haben", "sein", "perfekt", "conjugacio", "typeIn"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Du {{1}} gestern nach Hause gekommen._\n2. _Ihr {{2}} einen Film gesehen._\n3. _Sie (ella) {{3}} um sieben aufgestanden._\n4. _Wir {{4}} uns gewaschen._\n5. _Was {{5}} passiert?_\n6. _Ich {{6}} ein Buch gekauft._\n7. _Meine Großeltern {{7}} nach Italien gereist._\n8. _Er {{8}} drei Stunden geschlafen._",
+    "blanks": [
+      { "id": "1", "label": "1. _du_ + _kommen_ (moviment)" },
+      { "id": "2", "label": "2. _ihr_ + _sehen_ (transitiu)" },
+      { "id": "3", "label": "3. _sie_ (ella) + _aufstehen_ (moviment)" },
+      { "id": "4", "label": "4. _wir_ + _sich waschen_ (reflexiu)" },
+      { "id": "5", "label": "5. _was_ + _passieren_ (cas especial)" },
+      { "id": "6", "label": "6. _ich_ + _kaufen_ (transitiu)" },
+      { "id": "7", "label": "7. _meine Großeltern_ + _reisen_ (moviment)" },
+      { "id": "8", "label": "8. _er_ + _schlafen_ (no moviment, no canvi d'estat)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "_du_ + _kommen_" },
+      { "blankId": "2", "placeholder": "_ihr_ + _sehen_" },
+      { "blankId": "3", "placeholder": "_sie_ + _aufstehen_" },
+      { "blankId": "4", "placeholder": "_wir_ + _sich waschen_" },
+      { "blankId": "5", "placeholder": "_was_ + _passieren_" },
+      { "blankId": "6", "placeholder": "_ich_ + _kaufen_" },
+      { "blankId": "7", "placeholder": "_sie_ (pl.) + _reisen_" },
+      { "blankId": "8", "placeholder": "_er_ + _schlafen_" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["bist"],
+      "2": ["habt"],
+      "3": ["ist"],
+      "4": ["haben"],
+      "5": ["ist"],
+      "6": ["habe"],
+      "7": ["sind"],
+      "8": ["hat"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has combinat els **dos passos**: primer triar l'auxiliar (_sein_ per a moviment/canvi d'estat/casos especials; _haben_ per a la resta, inclosos reflexius) i després **conjugar-lo** al subjecte. Recorda: _sein_ → _bin, bist, ist, sind, seid, sind_; _haben_ → _habe, hast, hat, haben, habt, haben_.",
+      "references": ["A1b-29", "A1b-26"]
+    },
+    "incorrect": {
+      "default": "Dos passos: (1) quin **auxiliar**? _sein_ si hi ha desplaçament, canvi d'estat o és un cas especial; _haben_ en qualsevol altre cas (reflexius inclosos). (2) **Conjuga'l** al subjecte. _sein_: _bin/bist/ist/sind/seid/sind_; _haben_: _habe/hast/hat/haben/habt/haben_.",
+      "byResponse": [
+        {
+          "match": { "1": "hast" },
+          "message": "Parany típic (transferència del català \"has vingut\"). _kommen_ és **moviment amb desplaçament** → ==_sein_==. La forma correcta per a _du_ és ==**_bist_**==: _du **bist** gekommen_."
+        },
+        {
+          "match": { "1": "bin" },
+          "message": "L'auxiliar és correcte (_sein_), però la conjugació no: _du_ + _sein_ = ==**_bist_**==, no _bin_ (que és _ich_)."
+        },
+        {
+          "match": { "2": "seid" },
+          "message": "_sehen_ porta objecte directe (_einen Film_): és **transitiu** → ==_haben_==, no _sein_. _ihr_ + _haben_ = ==**_habt_**==."
+        },
+        {
+          "match": { "3": "hat" },
+          "message": "Parany del català (\"s'ha llevat\"). _aufstehen_ és **moviment amb desplaçament** (canvies de posició, surts del llit) → ==_sein_==. _sie_ (ella) + _sein_ = ==**_ist_**==."
+        },
+        {
+          "match": { "4": "sind" },
+          "message": "Parany clau: _sich waschen_ és un **reflexiu**. Tots els reflexius van amb ==_haben_==, encara que puguin semblar moviment. _wir_ + _haben_ = ==**_haben_**==."
+        },
+        {
+          "match": { "5": "hat" },
+          "message": "_passieren_ és un dels **tres casos especials** que van amb ==_sein_==. _was_ (3a sg.) + _sein_ = ==**_ist_**==: _Was **ist** passiert?_"
+        },
+        {
+          "match": { "6": "bin" },
+          "message": "_kaufen_ porta objecte directe (_ein Buch_): és **transitiu** → ==_haben_==, no _sein_. _ich_ + _haben_ = ==**_habe_**==."
+        },
+        {
+          "match": { "7": "haben" },
+          "message": "_reisen_ és **moviment amb desplaçament** (viatjar entre llocs) → ==_sein_==, no _haben_. _sie_ (ells, plural) + _sein_ = ==**_sind_**==."
+        },
+        {
+          "match": { "7": "ist" },
+          "message": "L'auxiliar és correcte (_sein_), però _meine Großeltern_ és **plural** (_sie_), no _er/sie/es_. _sie_ (pl.) + _sein_ = ==**_sind_**==, no _ist_."
+        },
+        {
+          "match": { "8": "ist" },
+          "message": "_schlafen_ **no** indica desplaçament ni canvi d'estat (dormir és estat continu): va amb ==_haben_==. _er_ + _haben_ = ==**_hat_**==."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-29-ex-02",
+  "topicId": "A1b-29",
+  "title": "Tria l'auxiliar: _haben_ o _sein_?",
+  "prompt": "Completa cada frase triant l'auxiliar correcte. Pregunta't si el verb és ==moviment/canvi d'estat== (_sein_) o ==transitiu/reflexiu/la resta== (_haben_).",
+  "difficulty": 2,
+  "tags": ["haben", "sein", "perfekt", "auxiliar", "dropdownFill"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich {{1}} nach Berlin gefahren._\n2. _Katrin {{2}} einen Apfel gegessen._\n3. _Wir {{3}} zu Hause geblieben._\n4. _Er {{4}} sich gefreut._\n5. _Was {{5}} passiert?_\n6. _Du {{6}} ein Buch gekauft._\n7. _Das Baby {{7}} eingeschlafen._\n8. _Wir {{8}} einen Film gesehen._",
+    "blanks": [
+      { "id": "1", "label": "1. _ich_ + _fahren_ (moviment)" },
+      { "id": "2", "label": "2. _Katrin_ + _essen_ (transitiu)" },
+      { "id": "3", "label": "3. _wir_ + _bleiben_ (cas especial)" },
+      { "id": "4", "label": "4. _er_ + _sich freuen_ (reflexiu)" },
+      { "id": "5", "label": "5. _was_ + _passieren_ (cas especial)" },
+      { "id": "6", "label": "6. _du_ + _kaufen_ (transitiu)" },
+      { "id": "7", "label": "7. _das Baby_ + _einschlafen_ (canvi d'estat)" },
+      { "id": "8", "label": "8. _wir_ + _sehen_ (transitiu)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["bin", "habe"] },
+      { "blankId": "2", "options": ["hat", "ist"] },
+      { "blankId": "3", "options": ["sind", "haben"] },
+      { "blankId": "4", "options": ["hat", "ist"] },
+      { "blankId": "5", "options": ["hat", "ist"] },
+      { "blankId": "6", "options": ["hast", "bist"] },
+      { "blankId": "7", "options": ["hat", "ist"] },
+      { "blankId": "8", "options": ["haben", "sind"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "bin",
+      "2": "hat",
+      "3": "sind",
+      "4": "hat",
+      "5": "ist",
+      "6": "hast",
+      "7": "ist",
+      "8": "haben"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has aplicat bé els **tres criteris** de _sein_: moviment (_fahren_), canvi d'estat (_einschlafen_) i casos especials (_bleiben, passieren_). Tota la resta — transitius (_essen, kaufen, sehen_) i reflexius (_sich freuen_) — van amb ==_haben_==.",
+      "references": ["A1b-29"]
+    },
+    "incorrect": {
+      "default": "Test de les tres preguntes: (1) És _sein, bleiben, passieren_? → _sein_. (2) Desplaçament o canvi d'estat? → _sein_. (3) La resta (transitius, reflexius…) → _haben_.",
+      "byResponse": [
+        {
+          "match": { "1": "habe" },
+          "message": "_fahren_ és **moviment amb desplaçament** (vas a Berlín): ==_sein_==. La forma correcta és _ich **bin** gefahren_."
+        },
+        {
+          "match": { "2": "ist" },
+          "message": "_essen_ porta un objecte en acusatiu (_einen Apfel_): és **transitiu** → ==_haben_==. _Katrin **hat** gegessen_."
+        },
+        {
+          "match": { "3": "haben" },
+          "message": "_bleiben_ és un dels **tres casos especials** que van amb _sein_, encara que sembli permanència. ==_wir **sind** geblieben_==."
+        },
+        {
+          "match": { "4": "ist" },
+          "message": "Parany típic: _sich freuen_ és un **reflexiu**. Tots els reflexius van amb ==_haben_==, sense excepcions: _er **hat** sich gefreut_."
+        },
+        {
+          "match": { "5": "hat" },
+          "message": "_passieren_ (passar, succeir) és un dels **tres casos especials** a memoritzar: va amb ==_sein_==. _Was **ist** passiert?_"
+        },
+        {
+          "match": { "6": "bist" },
+          "message": "_kaufen_ porta objecte en acusatiu (_ein Buch_): és **transitiu** → ==_haben_==. _Du **hast** gekauft_."
+        },
+        {
+          "match": { "7": "hat" },
+          "message": "_einschlafen_ indica un **canvi d'estat** (passes de despert a adormit): ==_sein_==. _Das Baby **ist** eingeschlafen_."
+        },
+        {
+          "match": { "8": "sind" },
+          "message": "_sehen_ porta objecte en acusatiu (_einen Film_): és **transitiu** → ==_haben_==. _Wir **haben** gesehen_."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-29",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 29,
+  "title": "Hilfsverben: haben oder sein",
+  "shortTitle": "haben o sein",
+  "description": "Tria entre haben i sein per formar el Perfekt segons el tipus de verb.",
+  "axes": ["temps-verbals"],
+  "prerequisites": ["A1b-26"],
+  "estimatedMinutes": 20,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Context\n\nEn català tots els temps compostos es formen amb un sol auxiliar: **haver**. _\"He menjat\"_, _\"he anat\"_, _\"m'he llevat\"_ — tot amb _haver_.\n\nL'alemany no. Per formar el **Perfekt** (el passat més usat a l'oral) hi ha ==dos auxiliars possibles==: **_haben_** i **_sein_**. I triar el correcte no és opcional: és part de la gramàtica."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "La bona notícia",
+          "body": "La **majoria** de verbs van amb ==**_haben_**==. Només un grup reduït — però molt freqüent — demana ==**_sein_**=="
+        }
+      ]
+    },
+    {
+      "id": "regla-sein",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Quan fem servir _sein_\n\n_sein_ s'utilitza amb **tres grups** de verbs:\n\n1. **Verbs de moviment amb desplaçament** (d'un punt A a un punt B, o cap a un objectiu).\n2. **Verbs de canvi d'estat** (passar d'un estat a un altre).\n3. **Tres casos específics** que cal memoritzar: ==_sein_==, ==_bleiben_==, ==_passieren_=="
+        },
+        {
+          "type": "explanation",
+          "body": "##### 1. Verbs de moviment (_Fortbewegung_)\n\nExpressen un desplaçament en una direcció:\n\n- **_gehen_** (anar) — _Ich **bin** nach Hause ==gegangen==._\n- **_kommen_** (venir) — _Du **bist** zu spät ==gekommen==._\n- **_fahren_** (anar amb vehicle) — _Wir **sind** nach Berlin ==gefahren==._\n- **_fliegen_** (volar) — _Sie **ist** nach Mallorca ==geflogen==._\n- **_laufen_** (córrer) — _Er **ist** schnell ==gelaufen==._\n- **_reisen_** (viatjar) — _Ihr **seid** nach Italien ==gereist==._\n- **_aufstehen_** (llevar-se) — _Ich **bin** um sieben ==aufgestanden==._"
+        },
+        {
+          "type": "explanation",
+          "body": "##### 2. Verbs de canvi d'estat (_Zustandsveränderung_)\n\nIndiquen que alguna cosa passa d'un estat a un altre:\n\n- **_sterben_** (morir) — _Er **ist** ==gestorben==._\n- **_einschlafen_** (adormir-se) — _Das Baby **ist** ==eingeschlafen==._\n- **_werden_** (esdevenir) — _Sie **ist** Lehrerin ==geworden==._\n- **_aufwachen_** (despertar-se) — _Ich **bin** früh ==aufgewacht==._"
+        },
+        {
+          "type": "explanation",
+          "body": "##### 3. Casos específics\n\nTres verbs que no encaixen exactament amb les regles anteriors però també van amb _sein_:\n\n- **_sein_** (ser/estar) — _Wo **seid** ihr ==gewesen==?_ (On éreu?)\n- **_bleiben_** (quedar-se) — _Wir **sind** zu Hause ==geblieben==._ (Ens hem quedat a casa.)\n- **_passieren_** (passar, succeir) — _Was **ist** ==passiert==?_ (Què ha passat?)"
+        }
+      ]
+    },
+    {
+      "id": "check-sein",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-29-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "regla-haben",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Quan fem servir _haben_\n\n**Tota la resta.** Si no és cap dels casos de dalt, és ==**_haben_**==. En particular:\n\n##### Verbs transitius (amb objecte directe)\n\nQualsevol verb que porti un complement en **acusatiu**.\n\n- **_essen_** — _Katrin **hat** einen Apfel ==gegessen==._ (La Katrin ha menjat una poma.)\n- **_kaufen_** — _Ich **habe** ein Buch ==gekauft==._\n- **_lesen_** — _Er **hat** die Zeitung ==gelesen==._\n- **_sehen_** — _Wir **haben** einen Film ==gesehen==._\n\n##### Verbs reflexius\n\nTots els verbs amb pronom reflexiu (_sich_) fan el Perfekt amb ==**_haben_**==, **sense excepcions**.\n\n- **_sich freuen_** — _Er **hat** sich ==gefreut==._ (Ell s'ha alegrat.)\n- **_sich waschen_** — _Ich **habe** mich ==gewaschen==._\n- **_sich anziehen_** — _Du **hast** dich ==angezogen==._"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Truc per a catalanoparlants",
+          "body": "Pensa el reflexiu de l'alemany com si el _sich_ \"ocupés\" el lloc de l'auxiliar estrany. Com que ja hi ha pronom, l'auxiliar és **sempre _haben_**."
+        }
+      ]
+    },
+    {
+      "id": "trampa-catala",
+      "blocks": [
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Compte amb la interferència del català!",
+          "body": "En català diem _\"he anat\"_, _\"he vingut\"_, _\"m'he llevat\"_ — tots amb _haver_. En alemany, aquests mateixos verbs demanen ==**_sein_**==:\n\n- **he** anat → _ich **bin** gegangen_\n- **he** vingut → _ich **bin** gekommen_\n- **m'he** llevat → _ich **bin** aufgestanden_\n\nNo tradueixis literalment l'auxiliar. Pregunta't: _hi ha desplaçament? Hi ha canvi d'estat?_ Si sí → ==_sein_=="
+        }
+      ]
+    },
+    {
+      "id": "check-haben-sein",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-29-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "lerntipp",
+      "blocks": [
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "El test de les tres preguntes",
+          "body": "Davant d'un verb, pregunta't **en aquest ordre**:\n\n1. És _sein_, _bleiben_ o _passieren_? → ==**_sein_**== (memoritza'ls).\n2. Indica desplaçament o canvi d'estat? → ==**_sein_**==\n3. En qualsevol altre cas? → ==**_haben_**==\n\nEls reflexius (_sich_) sempre responen \"sí\" a la pregunta 3: són _haben_ **automàticament**."
+        }
+      ]
+    },
+    {
+      "id": "check-final",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-29-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "table",
+          "title": "29.1 Quan _haben_, quan _sein_",
+          "headers": ["Auxiliar", "Tipus de verb", "Exemples"],
+          "rows": [
+            ["==**_sein_**==", "Moviment amb desplaçament", "_gehen, kommen, fahren, fliegen, laufen, reisen, aufstehen_"],
+            ["==**_sein_**==", "Canvi d'estat", "_sterben, einschlafen, werden, aufwachen_"],
+            ["==**_sein_**==", "Casos específics", "_sein, bleiben, passieren_"],
+            ["**_haben_**", "Transitius (amb acusatiu)", "_essen, kaufen, lesen, sehen, trinken, machen_"],
+            ["**_haben_**", "Reflexius (amb _sich_)", "_sich freuen, sich waschen, sich anziehen_"],
+            ["**_haben_**", "La resta", "_schlafen, arbeiten, wohnen, spielen_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Paranys crítics",
+          "body": "- No tradueixis l'auxiliar català literalment: _\"he anat\"_ → ==_ich **bin** gegangen_==, no _\"ich habe gegangen\"_.\n- Els **reflexius** són sempre ==_haben_==, encara que el verb sembli moviment (_sich setzen_ = seure → _ich **habe** mich gesetzt_).\n- _bleiben_ (quedar-se) sembla **permanència**, però va amb ==_sein_==. És un dels tres casos a memoritzar."
+        },
+        {
+          "type": "explanation",
+          "body": "**Connexions amb altres lliçons:**\n\n- **A1b-26** — introducció al Perfekt (auxiliar + participi).\n- **A1b-27** / **A1b-28** — formació del participi (_ge-…-t_, _ge-…-en_, verbs separables, _-ieren_).\n- **A1b-25** — Präteritum (l'altre passat, per a verbs com _sein, haben_ i modals)."
+        }
+      ]
+    }
+  ]
+}
