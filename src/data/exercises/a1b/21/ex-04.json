@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-21-ex-04",
+  "topicId": "A1b-21",
+  "title": "liegen/legen, stehen/stellen, sitzen/setzen",
+  "prompt": "Tria el verb adequat per a cada frase segons si hi ha acció (amb objecte directe) o estat.",
+  "difficulty": 2,
+  "tags": ["parelles-posicio", "liegen-legen", "sitzen-setzen", "stehen-stellen"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1) *Der Schlüssel {{1}} auf dem Tisch.* (estat, *der Schlüssel*)\n2) *Ich {{2}} den Schlüssel auf den Tisch.* (jo, poso)\n3) *Das Kind {{3}} auf dem Boden.* (estat, està assegut)\n4) *Die Mutter {{4}} das Kind auf den Stuhl.* (ella, asseu)\n5) *Die Flasche {{5}} im Kühlschrank.* (estat, dreta)\n6) *Er {{6}} die Flasche in den Kühlschrank.* (acció)",
+    "blanks": [
+      { "id": "1", "label": "verb" },
+      { "id": "2", "label": "verb" },
+      { "id": "3", "label": "verb" },
+      { "id": "4", "label": "verb" },
+      { "id": "5", "label": "verb" },
+      { "id": "6", "label": "verb" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["liegt", "lege", "sitzt", "setzt", "steht", "stellt"] },
+      { "blankId": "2", "options": ["liegt", "lege", "sitzt", "setzt", "steht", "stellt"] },
+      { "blankId": "3", "options": ["liegt", "lege", "sitzt", "setzt", "steht", "stellt"] },
+      { "blankId": "4", "options": ["liegt", "lege", "sitzt", "setzt", "steht", "stellt"] },
+      { "blankId": "5", "options": ["liegt", "lege", "sitzt", "setzt", "steht", "stellt"] },
+      { "blankId": "6", "options": ["liegt", "lege", "sitzt", "setzt", "steht", "stellt"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "liegt",
+      "2": "lege",
+      "3": "sitzt",
+      "4": "setzt",
+      "5": "steht",
+      "6": "stellt"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has aplicat bé la regla: verbs estàtics (*liegt, sitzt, steht*) sense objecte directe + datiu; verbs transitius (*lege, setzt, stellt*) amb objecte directe + acusatiu.",
+      "references": ["A1b-21"]
+    },
+    "incorrect": {
+      "default": "Regla: si hi ha **objecte directe** (*ich lege ==den Schlüssel==*, *die Mutter setzt ==das Kind==*) → verb transitiu → acusatiu. Si **no** hi ha objecte directe (*der Schlüssel liegt…*) → verb estàtic → datiu. Solucions: (1) liegt, (2) lege, (3) sitzt, (4) setzt, (5) steht, (6) stellt."
+    }
+  }
+}

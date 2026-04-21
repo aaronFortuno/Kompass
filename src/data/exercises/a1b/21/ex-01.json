@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-21-ex-01",
+  "topicId": "A1b-21",
+  "title": "Quin verb NO indica canvi de lloc?",
+  "prompt": "Quin d'aquests verbs NO indica canvi de lloc (Ortswechsel)?",
+  "difficulty": 1,
+  "tags": ["verbs-moviment", "ortswechsel", "classificacio"],
+  "stimulus": {
+    "type": "text",
+    "content": "Pensa si el verb implica un trajecte d'un lloc A a un lloc B, o si descriu on **és** alguna cosa."
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "fahren", "label": "fahren" },
+      { "id": "fliegen", "label": "fliegen" },
+      { "id": "sich-befinden", "label": "sich befinden" },
+      { "id": "einsteigen", "label": "einsteigen" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "sich-befinden" },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. ==*sich befinden*== = trobar-se → permanència → datiu (*Wo?*). Els altres tres impliquen moviment → acusatiu (*Wohin?*).",
+      "references": ["A1b-21"]
+    },
+    "incorrect": {
+      "default": "*fahren, fliegen, einsteigen* impliquen tots un desplaçament. Només *sich befinden* descriu on **és** una cosa, sense moviment.",
+      "byResponse": [
+        {
+          "match": { "response": "fahren" },
+          "message": "*fahren* = anar (en vehicle). Implica desplaçament → Wohin? → acusatiu."
+        },
+        {
+          "match": { "response": "fliegen" },
+          "message": "*fliegen* = volar. També és un verb de moviment clar → acusatiu."
+        },
+        {
+          "match": { "response": "einsteigen" },
+          "message": "*einsteigen* = pujar (a un vehicle). És moviment (separable, demana *in + acusatiu*)."
+        }
+      ]
+    }
+  }
+}

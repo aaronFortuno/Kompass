@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-21-ex-07",
+  "topicId": "A1b-21",
+  "title": "Produeix un text curt",
+  "prompt": "Tradueix aquest text curt a alemany. Fes servir els verbs dels dos grups correctament.",
+  "difficulty": 3,
+  "tags": ["produccio", "verbs-moviment", "text-lliure"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Tradueix a alemany:\n\n> \"Jo visc a Hamburg. Cada dia vaig a la feina en metro. Treballo en una oficina al centre. A migdia em seuré al parc i menjaré un entrepà. Després torno a l'oficina.\"\n\n(Hamburg; *die U-Bahn*; *das Büro*; *das Zentrum*; *der Park*; *das Sandwich*)\n\n{{1}}",
+    "blanks": [
+      { "id": "1", "label": "text traduït" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      {
+        "blankId": "1",
+        "placeholder": "Ich wohne in Hamburg. Jeden Tag …"
+      }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": [
+        "Ich wohne in Hamburg. Jeden Tag fahre ich mit der U-Bahn zur Arbeit. Ich arbeite in einem Büro im Zentrum. Mittags setze ich mich in den Park und esse ein Sandwich. Danach gehe ich zurück ins Büro.",
+        "Ich wohne in Hamburg. Jeden Tag fahre ich mit der U-Bahn zur Arbeit. Ich arbeite in einem Büro im Zentrum. Mittags setze ich mich in den Park und esse ein Sandwich. Danach gehe ich zurück ins Büro"
+      ]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent composició. Has alternat correctament *wohnen* (datiu), *fahren* + *mit der U-Bahn* (datiu fix amb *mit*), *arbeiten* (datiu), *sich setzen* (acusatiu), *gehen* (acusatiu).",
+      "references": ["A1b-21", "A1a-34"]
+    },
+    "incorrect": {
+      "default": "Revisa: *wohnen/arbeiten* sempre datiu (*in Hamburg*, *in einem Büro im Zentrum*); *sich setzen* acusatiu (*in den Park*); *gehen* acusatiu (*ins Büro*); *mit der U-Bahn* datiu (preposició *mit*, A1a-34). Model: *Ich wohne in Hamburg. Jeden Tag fahre ich mit der U-Bahn zur Arbeit. Ich arbeite in einem Büro im Zentrum. Mittags setze ich mich in den Park und esse ein Sandwich. Danach gehe ich zurück ins Büro.*"
+    }
+  }
+}

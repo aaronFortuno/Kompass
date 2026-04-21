@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-21-ex-06",
+  "topicId": "A1b-21",
+  "title": "Corregeix el verb inadequat",
+  "prompt": "Cada frase té **un verb mal escollit**. Escriu la frase corregida.",
+  "difficulty": 3,
+  "tags": ["correccio", "errors-tipics", "parelles-posicio", "wohnen-ziehen"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1) *Ich ==liege== das Buch auf den Tisch.* (vull dir: poso el llibre) →\n{{1}}\n\n2) *Er ==setzt== auf dem Stuhl.* (vull dir: està assegut) →\n{{2}}\n\n3) *Die Lampe ==stellt== auf dem Schreibtisch.* (vull dir: la làmpada hi és) →\n{{3}}\n\n4) *Wir ==wohnen== nach Hamburg.* (vull dir: ens mudem a Hamburg) →\n{{4}}",
+    "blanks": [
+      { "id": "1", "label": "frase corregida" },
+      { "id": "2", "label": "frase corregida" },
+      { "id": "3", "label": "frase corregida" },
+      { "id": "4", "label": "frase corregida" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Ich ___ das Buch auf den Tisch." },
+      { "blankId": "2", "placeholder": "Er ___ auf dem Stuhl." },
+      { "blankId": "3", "placeholder": "Die Lampe ___ auf dem Schreibtisch." },
+      { "blankId": "4", "placeholder": "Wir ___ nach Hamburg." }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": [
+        "Ich lege das Buch auf den Tisch.",
+        "Ich lege das Buch auf den Tisch"
+      ],
+      "2": [
+        "Er sitzt auf dem Stuhl.",
+        "Er sitzt auf dem Stuhl"
+      ],
+      "3": [
+        "Die Lampe steht auf dem Schreibtisch.",
+        "Die Lampe steht auf dem Schreibtisch"
+      ],
+      "4": [
+        "Wir ziehen nach Hamburg.",
+        "Wir ziehen nach Hamburg"
+      ]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has detectat les quatre confusions típiques: *liegen*→==*legen*== (hi ha objecte directe), *setzen*→==*sitzen*== (estat, sense objecte), *stellen*→==*stehen*== (sense objecte), *wohnen*→==*ziehen*== (moviment de mudar-se).",
+      "references": ["A1b-21"]
+    },
+    "incorrect": {
+      "default": "Pista clau: *verb estàtic* (sense objecte, en datiu) vs. *verb transitiu* (amb objecte, en acusatiu). I *wohnen* ≠ *ziehen*: el primer és residir (datiu), el segon mudar-se (moviment). Correccions: (1) *Ich lege das Buch auf den Tisch.* (2) *Er sitzt auf dem Stuhl.* (3) *Die Lampe steht auf dem Schreibtisch.* (4) *Wir ziehen nach Hamburg.*"
+    }
+  }
+}

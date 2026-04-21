@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-21-ex-03",
+  "topicId": "A1b-21",
+  "title": "Classifica els verbs per grup",
+  "prompt": "Empareja cada verb amb el grup al qual pertany: moviment (Akkusativ) o permanència (Dativ).",
+  "difficulty": 2,
+  "tags": ["verbs-moviment", "classificacio", "matchPairs"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "v-gehen", "group": "verbs", "content": { "type": "text", "content": "gehen" } },
+      { "id": "v-fliegen", "group": "verbs", "content": { "type": "text", "content": "fliegen" } },
+      { "id": "v-einsteigen", "group": "verbs", "content": { "type": "text", "content": "einsteigen" } },
+      { "id": "v-kommen", "group": "verbs", "content": { "type": "text", "content": "kommen" } },
+      { "id": "v-laufen", "group": "verbs", "content": { "type": "text", "content": "laufen" } },
+      { "id": "v-sein", "group": "verbs", "content": { "type": "text", "content": "sein" } },
+      { "id": "v-bleiben", "group": "verbs", "content": { "type": "text", "content": "bleiben" } },
+      { "id": "v-wohnen", "group": "verbs", "content": { "type": "text", "content": "wohnen" } },
+      { "id": "v-befinden", "group": "verbs", "content": { "type": "text", "content": "sich befinden" } },
+      { "id": "v-arbeiten", "group": "verbs", "content": { "type": "text", "content": "arbeiten" } },
+      { "id": "g-mov-1", "group": "grup", "content": { "type": "text", "content": "**Moviment (Akkusativ)** — trajecte 1" } },
+      { "id": "g-mov-2", "group": "grup", "content": { "type": "text", "content": "**Moviment (Akkusativ)** — trajecte 2" } },
+      { "id": "g-mov-3", "group": "grup", "content": { "type": "text", "content": "**Moviment (Akkusativ)** — trajecte 3" } },
+      { "id": "g-mov-4", "group": "grup", "content": { "type": "text", "content": "**Moviment (Akkusativ)** — trajecte 4" } },
+      { "id": "g-mov-5", "group": "grup", "content": { "type": "text", "content": "**Moviment (Akkusativ)** — trajecte 5" } },
+      { "id": "g-per-1", "group": "grup", "content": { "type": "text", "content": "**Permanència (Dativ)** — estat 1" } },
+      { "id": "g-per-2", "group": "grup", "content": { "type": "text", "content": "**Permanència (Dativ)** — estat 2" } },
+      { "id": "g-per-3", "group": "grup", "content": { "type": "text", "content": "**Permanència (Dativ)** — estat 3" } },
+      { "id": "g-per-4", "group": "grup", "content": { "type": "text", "content": "**Permanència (Dativ)** — estat 4" } },
+      { "id": "g-per-5", "group": "grup", "content": { "type": "text", "content": "**Permanència (Dativ)** — estat 5" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Verbs",
+    "groupBLabel": "Grup"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["v-gehen", "g-mov-1"],
+      ["v-fliegen", "g-mov-2"],
+      ["v-einsteigen", "g-mov-3"],
+      ["v-kommen", "g-mov-4"],
+      ["v-laufen", "g-mov-5"],
+      ["v-sein", "g-per-1"],
+      ["v-bleiben", "g-per-2"],
+      ["v-wohnen", "g-per-3"],
+      ["v-befinden", "g-per-4"],
+      ["v-arbeiten", "g-per-5"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has identificat correctament els cinc verbs de desplaçament (*gehen, fliegen, einsteigen, kommen, laufen*) i els cinc d'estat (*sein, bleiben, wohnen, sich befinden, arbeiten*).",
+      "references": ["A1b-21"]
+    },
+    "incorrect": {
+      "default": "Pista: els verbs de permanència són aquells en què pots substituir-los per *estar* o *viure* sense canviar el sentit (*sein, bleiben, wohnen, sich befinden, arbeiten*). Els de moviment descriuen un trajecte d'A a B (*gehen, fliegen, einsteigen, kommen, laufen*). Atenció: encara que *wohnen* pugui semblar \"dinàmic\" en català, en alemany és sempre estàtic → datiu."
+    }
+  }
+}

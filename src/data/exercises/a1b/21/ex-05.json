@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-21-ex-05",
+  "topicId": "A1b-21",
+  "title": "Completa amb verb i cas coherents",
+  "prompt": "Completa cada frase amb el verb adequat **i** l'article al cas correcte. Escriu la frase sencera.",
+  "difficulty": 3,
+  "tags": ["verbs-moviment", "hängen", "produccio", "cas"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1) *Ich ____ das Bild ____ Wand.* (penjar, la paret) →\n{{1}}\n\n2) *Das Bild ____ ____ Wand.* (està penjat) →\n{{2}}\n\n3) *Wir ____ ____ Supermarkt.* (anar, el supermercat) →\n{{3}}\n\n4) *Sie ____ sich ____ Sofa.* (ella s'asseu, el sofà) →\n{{4}}\n\n5) *Das Auto ____ ____ Parkplatz.* (està aparcat, *der Parkplatz*) →\n{{5}}",
+    "blanks": [
+      { "id": "1", "label": "frase 1" },
+      { "id": "2", "label": "frase 2" },
+      { "id": "3", "label": "frase 3" },
+      { "id": "4", "label": "frase 4" },
+      { "id": "5", "label": "frase 5" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Ich hänge das Bild ___ Wand." },
+      { "blankId": "2", "placeholder": "Das Bild ___ ___ Wand." },
+      { "blankId": "3", "placeholder": "Wir gehen ___ Supermarkt." },
+      { "blankId": "4", "placeholder": "Sie setzt sich ___ Sofa." },
+      { "blankId": "5", "placeholder": "Das Auto steht ___ Parkplatz." }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": [
+        "Ich hänge das Bild an die Wand.",
+        "Ich hänge das Bild an die Wand"
+      ],
+      "2": [
+        "Das Bild hängt an der Wand.",
+        "Das Bild hängt an der Wand"
+      ],
+      "3": [
+        "Wir gehen in den Supermarkt.",
+        "Wir gehen in den Supermarkt"
+      ],
+      "4": [
+        "Sie setzt sich auf das Sofa.",
+        "Sie setzt sich auf das Sofa",
+        "Sie setzt sich aufs Sofa.",
+        "Sie setzt sich aufs Sofa"
+      ],
+      "5": [
+        "Das Auto steht auf dem Parkplatz.",
+        "Das Auto steht auf dem Parkplatz"
+      ]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has lligat verb i cas: *hängen* transitiu (acusatiu) / intransitiu (datiu), *gehen* + acusatiu, *sich setzen* reflexiu + acusatiu, *stehen* + datiu.",
+      "references": ["A1b-21", "A1b-19"]
+    },
+    "incorrect": {
+      "default": "Revisa: (1) *hängen* amb objecte directe → acusatiu *an die Wand*; (2) *hängen* sense objecte → datiu *an der Wand*; (3) *gehen* = moviment → acusatiu *in den Supermarkt*; (4) *sich setzen* = acció reflexiva → acusatiu *auf das Sofa* (o *aufs Sofa*); (5) *stehen* = estat → datiu *auf dem Parkplatz*."
+    }
+  }
+}

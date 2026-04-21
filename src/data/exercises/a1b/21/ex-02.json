@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-21-ex-02",
+  "topicId": "A1b-21",
+  "title": "liegen / legen / stehen / stellen?",
+  "prompt": "Completa: *Ich ____ den Teller auf den Tisch.* (poso el plat sobre la taula)",
+  "difficulty": 2,
+  "tags": ["parelles-posicio", "transitiu", "stellen"],
+  "stimulus": {
+    "type": "text",
+    "content": "Fixa't: hi ha objecte directe (*den Teller*). Això t'indica que el verb és transitiu."
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "liege", "label": "liege" },
+      { "id": "lege", "label": "lege" },
+      { "id": "stehe", "label": "stehe" },
+      { "id": "stelle", "label": "stelle" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "stelle" },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Un plat es **posa dret** (o més aviat pla però alçat sobre la superfície) → ==*stellen*==. A més, *auf den Tisch* (acusatiu) confirma que hi ha moviment.",
+      "references": ["A1b-21"]
+    },
+    "incorrect": {
+      "default": "El plat es **col·loca** (moviment) → verb transitiu. *legen* s'usa per coses allargades i clarament ajagudes (llibres, papers). *stellen* és més habitual per a plats, gots, ampolles.",
+      "byResponse": [
+        {
+          "match": { "response": "liege" },
+          "message": "*liegen* és estàtic (estar estirat) i intransitiu (no admet objecte directe). Aquí tens *den Teller* com a objecte → cal un verb transitiu."
+        },
+        {
+          "match": { "response": "lege" },
+          "message": "*legen* també és transitiu i correcte per a objectes allargats o clarament \"ajaguts\". Per a un plat, el convencional és ==*stellen*== (queda \"dret\" sobre la superfície)."
+        },
+        {
+          "match": { "response": "stehe" },
+          "message": "*stehen* és estàtic (estar dret) i intransitiu. Aquí hi ha objecte directe → cal *stellen*."
+        }
+      ]
+    }
+  }
+}

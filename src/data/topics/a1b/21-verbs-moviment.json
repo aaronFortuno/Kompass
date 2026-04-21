@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-21",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 21,
+  "title": "Verben mit oder ohne Ortswechsel",
+  "shortTitle": "Verbs + moviment",
+  "description": "Distinció entre verbs amb canvi de lloc (Ortswechsel → acusatiu) i verbs de permanència (→ datiu), amb les parelles liegen/legen, stehen/stellen, sitzen/setzen i el cas especial de hängen.",
+  "axes": ["pronoms-verbs", "preposicions", "casos"],
+  "prerequisites": ["A1b-19"],
+  "estimatedMinutes": 15,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Els verbs diuen si hi ha moviment o no\n\nA **A1b-19** vas descobrir la gran regla de les Wechselpräpositionen: **Wo?** (ubicació) → datiu, **Wohin?** (direcció) → acusatiu. Però et vas emportar un dubte legítim: *com sé si la frase descriu una ubicació o un moviment?*\n\nLa resposta curta: **te la dóna el verb**.\n\n> Hi ha dos grups de verbs: els que indiquen **==Ortswechsel==** (canvi de lloc, moviment d'un punt A a un punt B) i els que indiquen **permanència** o absència de moviment (l'acció passa en un lloc, sense desplaçament).\n\nAvui aprendràs:\n\n1. Els **verbs de moviment** més freqüents (*gehen, fahren, fliegen, kommen, steigen…*) i què els caracteritza.\n2. Els **verbs sense canvi de lloc** (*sein, sich befinden, wohnen, arbeiten…*) i com ancoren la frase en un lloc fix.\n3. Les tres **parelles clau** de verbs de posició vs. col·locació: *liegen/legen*, *stehen/stellen*, *sitzen/setzen*.\n4. El cas especial de *hängen*, que canvia de cas sense canviar de forma.\n\nAquesta lliçó consolida A1b-19. És curta i molt pràctica: el 90% del contingut són exemples i parelles."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Temps estimat",
+          "body": "12-15 minuts."
+        }
+      ]
+    },
+    {
+      "id": "dos-grups",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Els dos grans grups: moviment vs. permanència\n\n**Grup 1: verbs amb ==Ortswechsel== (canvi de lloc).**\n\nIndiquen que algú o alguna cosa es **desplaça d'un lloc A a un lloc B**. Responen a la pregunta *Wohin?* → **acusatiu**."
+        },
+        {
+          "type": "table",
+          "title": "21.1 Verbs amb Ortswechsel (→ acusatiu)",
+          "headers": ["Verb", "Traducció", "Exemple"],
+          "rows": [
+            ["**gehen**", "anar, caminar", "*Ich gehe ==ins== Büro.*"],
+            ["**fahren**", "anar (en vehicle), conduir", "*Wir fahren ==in die== Stadt.*"],
+            ["**fliegen**", "volar", "*Sie fliegt ==nach== Berlin.*"],
+            ["**kommen**", "venir, arribar", "*Er kommt ==ins== Zimmer.*"],
+            ["**einsteigen**", "pujar (a un vehicle)", "*Ich steige ==in den== Bus ein.*"],
+            ["**aussteigen**", "baixar (d'un vehicle)", "*Sie steigt ==aus dem== Zug aus.*"],
+            ["**laufen**", "córrer, anar a peu", "*Das Kind läuft ==in den== Park.*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Observació",
+          "body": "*einsteigen* i *aussteigen* són verbs separables (A1b-16). *einsteigen* demana preposició **in + acusatiu**; *aussteigen* demana **aus + datiu** (perquè *aus* sempre és datiu)."
+        },
+        {
+          "type": "explanation",
+          "body": "**Grup 2: verbs ==sense== canvi de lloc (permanència).**\n\nIndiquen que algú o alguna cosa **és / està / roman en un mateix lloc**, sense moure's. Responen a *Wo?* → **datiu**."
+        },
+        {
+          "type": "table",
+          "title": "21.2 Verbs sense Ortswechsel (→ datiu)",
+          "headers": ["Verb", "Traducció", "Exemple"],
+          "rows": [
+            ["**sein**", "ésser, estar", "*Ich bin ==im== Büro.*"],
+            ["**sich befinden**", "trobar-se, estar situat", "*Das Hotel befindet sich ==in der== Altstadt.*"],
+            ["**bleiben**", "quedar-se, romandre", "*Er bleibt ==zu Hause==.*"],
+            ["**wohnen**", "viure, residir", "*Wir wohnen ==in einem== Dorf.*"],
+            ["**arbeiten**", "treballar", "*Sie arbeitet ==in der== Bank.*"],
+            ["**warten**", "esperar", "*Ich warte ==an der== Bushaltestelle.*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Truc català",
+          "body": "Si pots substituir el verb per *ésser* o *estar* sense canviar gaire el sentit, és del grup 2 (datiu). Si el verb implica un trajecte de A a B, és del grup 1 (acusatiu)."
+        }
+      ]
+    },
+    {
+      "id": "quick-check-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-21-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "parelles-posicio",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Les tres parelles clau: posició vs. col·locació\n\nAquí hi ha el cor del tema. L'alemany té **parells de verbs** que distingeixen formalment entre **estar en una posició** (estàtic) i **posar alguna cosa en aquella posició** (transitiu, moviment).\n\nEn català diem *posar* i *estar* amb molts matisos; l'alemany t'obliga a triar el verb adequat a la postura."
+        },
+        {
+          "type": "table",
+          "title": "21.3 Les tres parelles de posició",
+          "headers": ["Postura", "Verb ==estàtic== (Wo? · datiu)", "Verb ==transitiu== (Wohin? · acusatiu)"],
+          "rows": [
+            ["estirat", "**liegen** — estar estirat, jeure", "**legen** — posar estirat"],
+            ["dret", "**stehen** — estar dret", "**stellen** — posar dret"],
+            ["assegut", "**sitzen** — estar assegut", "**setzen** — asseure (algú)"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "21.4 Contrast exemplar",
+          "headers": ["Estàtic (datiu)", "Transitiu (acusatiu)"],
+          "rows": [
+            ["*Das Buch **liegt** ==auf dem== Tisch.* (el llibre **és** sobre la taula)", "*Ich **lege** das Buch ==auf den== Tisch.* (**poso** el llibre sobre la taula)"],
+            ["*Die Lampe **steht** ==neben dem== Sofa.* (la làmpada **és** al costat del sofà)", "*Sie **stellt** die Lampe ==neben das== Sofa.* (ella **posa** la làmpada al costat del sofà)"],
+            ["*Das Kind **sitzt** ==auf dem== Stuhl.* (el nen **seu** a la cadira)", "*Die Mutter **setzt** das Kind ==auf den== Stuhl.* (la mare **asseu** el nen a la cadira)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista morfològica útil",
+          "body": "- Els verbs estàtics tenen vocal forta: l==ie==gen, st==e==hen, s==i==tzen.\n- Els transitius tenen -e- i doble consonant o *-ll-*: l==e==gen, st==e==ll==en==, s==e==tz==en==.\n- Els estàtics són **intransitius** (no porten objecte directe). Els transitius **sí** que porten objecte directe en acusatiu (*el llibre*, *la làmpada*, *el nen*)."
+        },
+        {
+          "type": "table",
+          "title": "21.5 Conjugació (present) — recordatori",
+          "headers": ["", "liegen", "legen", "stehen", "stellen", "sitzen", "setzen"],
+          "rows": [
+            ["**ich**", "liege", "lege", "stehe", "stelle", "sitze", "setze"],
+            ["**du**", "liegst", "legst", "stehst", "stellst", "sitzt", "setzt"],
+            ["**er/sie/es**", "liegt", "legt", "steht", "stellt", "sitzt", "setzt"],
+            ["**wir**", "liegen", "legen", "stehen", "stellen", "sitzen", "setzen"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quick-check-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-21-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "hangen-especial",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El cas especial: **hängen**\n\n*hängen* és una excepció bonica perquè té **la mateixa forma** en les dues funcions, però canvia el cas de la preposició:"
+        },
+        {
+          "type": "table",
+          "title": "21.6 hängen: mateix verb, dos casos",
+          "headers": ["Funció", "Exemple", "Cas"],
+          "rows": [
+            ["**Intransitiu** (estar penjat) — *Wo?*", "*Das Bild **hängt** ==an der== Wand.*", "**Datiu**"],
+            ["**Transitiu** (penjar) — *Wohin?*", "*Ich **hänge** das Bild ==an die== Wand.*", "**Acusatiu**"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Diferència",
+          "body": "En la versió intransitiva, *hängen* descriu **on és** el quadre. En la transitiva, descriu **l'acció de penjar-lo** (hi ha un objecte directe: *das Bild*).\n\nEn alemany parlat antic, *hängen* intransitiu tenia una forma irregular diferent (*hing, gehangen*) mentre que el transitiu era regular (*hängte, gehängt*). En A1 no cal entrar-hi: la diferència pràctica és **el cas de la preposició**."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Veritat pràctica per detectar quin és quin",
+          "body": "- Si hi ha **objecte directe** (*ich hänge ==das Bild==…*) → transitiu → acusatiu.\n- Si **no** n'hi ha (*das Bild hängt…*) → intransitiu → datiu."
+        }
+      ]
+    },
+    {
+      "id": "mapa-mental",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Mapa mental del tema\n\nAquest és el diagrama que has de tenir al cap cada vegada que vulguis formular una frase amb preposició local. **Primer** pregunta't: *el verb implica moviment?* **Després** tria cas i article."
+        },
+        {
+          "type": "table",
+          "title": "21.7 Mapa mental dels verbs",
+          "headers": ["MOVIMENT (Wohin? · Akkusativ)", "SENSE MOVIMENT (Wo? · Dativ)"],
+          "rows": [
+            ["gehen", "sein"],
+            ["fahren", "sich befinden"],
+            ["fliegen", "bleiben"],
+            ["kommen", "wohnen"],
+            ["einsteigen", "arbeiten"],
+            ["aussteigen", "warten"],
+            ["laufen", "liegen"],
+            ["legen", "stehen"],
+            ["stellen", "sitzen"],
+            ["setzen", "hängen (intrans.)"],
+            ["hängen (trans.)", ""]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contrastos-subtils",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Matisos i paranys\n\n**1. Verbs que depenen del context.**\n\nAlguns verbs poden anar als dos grups segons què expressin:\n\n- *spielen* (jugar): normalment estàtic (*Die Kinder spielen ==im== Garten*), però excepcional si implica desplaçament (*Die Kinder laufen ==in den== Garten*, aquí el verb real és *laufen*).\n- *schwimmen*: *Ich schwimme ==im== See* (nedo **al** llac — Wo?, estàtic). *Ich schwimme ==ans== Ufer* (nedo **cap a** la vora — Wohin?, moviment direccional)."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Regla pràctica",
+          "body": "Si el verb **en si** (no la preposició) descriu una direcció o destinació, el cas és acusatiu. Si descriu l'activitat dins d'un lloc, datiu."
+        },
+        {
+          "type": "explanation",
+          "body": "**2. *wohnen* i *arbeiten* són sempre datiu.**\n\nEncara que en català diguis \"vaig a viure a Berlín\", en alemany:\n\n- *Ich ==wohne== in Berlin.* (datiu — on visc)\n- *Ich ==ziehe== nach Berlin.* (acusatiu — em desplaço a Berlín)\n\n*wohnen* no descriu l'arribada, descriu la residència. El verb de moviment per a canviar de casa és *ziehen*.\n\n**3. *bleiben* (quedar-se) és datiu.**\n\nMalgrat que en algunes llengües \"quedar-se\" pot semblar un verb d'acció, en alemany és clarament estàtic: *Ich bleibe ==im== Hotel.* (em quedo a l'hotel).\n\n**4. Distinció *setzen* / *sich setzen*.**\n\n- *Ich ==setze== das Kind auf den Stuhl.* — assec el nen (jo actuo sobre algú).\n- *Ich ==setze mich== auf den Stuhl.* — m'assec (reflexiu: acció sobre mi mateix).\n\nTotes dues demanen **acusatiu** perquè hi ha moviment (l'acció d'asseure)."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1-classificar",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-21-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2-parelles",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-21-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3-verb-cas",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-21-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4-correccio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-21-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-5-produccio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-21-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Resum del que t'emportes\n\n**Els dos grups de verbs:**\n\n- **Amb Ortswechsel** (canvi de lloc, *Wohin?*, acusatiu): *gehen, fahren, fliegen, kommen, einsteigen, aussteigen, laufen, ziehen*.\n- **Sense Ortswechsel** (*Wo?*, datiu): *sein, sich befinden, bleiben, wohnen, arbeiten, warten*."
+        },
+        {
+          "type": "table",
+          "title": "21.8 Síntesi — Les tres parelles clau",
+          "headers": ["Estàtic (datiu)", "Transitiu (acusatiu)"],
+          "rows": [
+            ["**liegen** (estar estirat)", "**legen** (posar estirat)"],
+            ["**stehen** (estar dret)", "**stellen** (posar dret)"],
+            ["**sitzen** (estar assegut)", "**setzen** (asseure)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Truc infal·lible",
+          "body": "Pregunta't: **\"El verb té objecte directe?\"** Si sí → moviment transitiu → acusatiu. Si no → estat → datiu."
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Errors a evitar",
+          "body": "- ==*Ich liege das Buch…*== — incorrecte. Correcte: *Ich **lege** das Buch…*\n- ==*Er setzt auf dem Stuhl…*== — incorrecte (sense objecte). Correcte: *Er **sitzt** auf dem Stuhl.*\n- ==*Wir wohnen nach Hamburg*== — incorrecte. *wohnen* no admet direcció. Per mudar-se: *Wir **ziehen** nach Hamburg.*"
+        },
+        {
+          "type": "explanation",
+          "body": "**Enllaços amb altres lliçons:**\n\n- **A1b-19** — Wechselpräpositionen i regla Wo?/Wohin?\n- **A1a-34** — preposicions amb datiu fix: *mit, bei, aus, nach, von, zu, seit*.\n- **A1b-18** — preposicions amb acusatiu fix.\n- **A1b-16** — verbs separables: *einsteigen, aussteigen*."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Proper pas (A1b-22)",
+          "body": "Aprofundirem en preposicions i expressions de direcció amb *nach, zu, in* per parlar de destinacions (ciutats, països, persones, edificis). Avui ja tens l'eina mental: **el verb decideix el cas**. Practica-la descrivint accions quotidianes: *posar la tassa a la taula, asseure't al sofà, anar al bany, penjar el quadre*."
+        }
+      ]
+    }
+  ]
+}
