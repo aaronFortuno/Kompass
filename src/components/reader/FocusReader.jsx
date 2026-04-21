@@ -527,6 +527,73 @@ function ExerciseBeatCard({ beat, stepIdx, onFinish }) {
 
 // ───────────────────────────────────────────── dispatcher
 
+/*
+ * BeatStagePeek · §73
+ *
+ * En mode fragment, el focus està al beat actiu però l'usuari veu un
+ * "peek" atenuat del beat anterior (desplaçat cap amunt, més petit) i
+ * del següent (desplaçat cap avall). Això dóna sensació de scroll
+ * contextual: saps d'on vens i on vas, sense perdre la concentració a
+ * la frase actual.
+ *
+ * Implementació: renderitzem TOTS els beats del step dins un contenidor
+ * relatiu amb `position: absolute` per a cada beat. Cada beat rep una
+ * classe segons el seu rol (delta a beatIdx): current, prev, next,
+ * prev-far, next-far. Les classes tenen transform+opacity predefinits;
+ * el canvi de className dispara una CSS transition. D'aquesta manera
+ * el beat que passa de current → prev es "desplaça" suaument sense
+ * desmuntar-se, i el nou current/next entra directament al seu lloc
+ * (els far ja eren invisibles, simplement es fan visibles en el nou
+ * rol).
+ *
+ * El beat current és l'únic amb typewriter actiu (si ho està
+ * globalment); els peek es renderitzen sempre amb fastMode=true (text
+ * complet, sense caret). El kicker de Capítol només es mostra al
+ * current, perquè els peek queden atenuats.
+ */
+function BeatStagePeek({
+  beats,
+  beatIdx,
+  stepIdx,
+  step,
+  settings,
+  speed,
+  fastMode,
+}) {
+  return (
+    <>
+      {beats.map((b, i) => {
+        const delta = i - beatIdx;
+        let role;
+        if (delta === 0) role = 'current';
+        else if (delta === -1) role = 'prev';
+        else if (delta === 1) role = 'next';
+        else if (delta < -1) role = 'prev-far';
+        else role = 'next-far';
+
+        const isCurrent = role === 'current';
+        return (
+          <div
+            key={`s${stepIdx}-b${i}`}
+            className={`kf-peek kf-peek-${role}`}
+            aria-hidden={!isCurrent}
+          >
+            <BeatBody
+              beat={b}
+              step={step}
+              stepIdx={stepIdx}
+              showKicker={isCurrent}
+              settings={settings}
+              speed={speed}
+              fastMode={isCurrent ? fastMode : true}
+            />
+          </div>
+        );
+      })}
+    </>
+  );
+}
+
 function BeatBody({
   beat,
   step,
@@ -861,7 +928,7 @@ export function FocusReader({ topic }) {
       </div>
 
       {/* BODY */}
-      <div className="kf-body">
+      <div className="kf-body" data-mode={isFullMode ? 'full' : 'peek'}>
         <Backdrop topic={topic} />
 
         {isFullMode ? (
@@ -885,17 +952,15 @@ export function FocusReader({ topic }) {
             ))}
           </div>
         ) : (
-          <div className="kf-stage" key={`s${stepIdx}-b${beatIdx}`}>
-            <BeatBody
-              beat={beat}
-              step={step}
-              stepIdx={stepIdx}
-              showKicker={true}
-              settings={settings}
-              speed={speed}
-              fastMode={fastMode}
-            />
-          </div>
+          <BeatStagePeek
+            beats={beats}
+            beatIdx={beatIdx}
+            stepIdx={stepIdx}
+            step={step}
+            settings={settings}
+            speed={speed}
+            fastMode={fastMode}
+          />
         )}
       </div>
 

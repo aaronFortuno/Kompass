@@ -446,19 +446,26 @@
 .kf-seg.here { background: rgb(var(--color-reader-ink)); }
 
 /* Body
- * Baseline vertical fixa: el beat actiu comença sempre a una alçada
- * consistent (aprox. 1/3 des de dalt). Si el contingut creix, creix cap
- * avall sense moure les primeres línies — pedagògicament fa que la
- * capçalera del beat quedi ancorada mentre es desplega. (§76)
+ * Dos modes: peek (studyMode=fragment) o full (studyMode=full).
+ *  - peek: el contenidor és relatiu; tots els beats es posicionen amb
+ *    position:absolute i transform segons el seu rol (§73).
+ *  - full: flex amb padding vertical i scroll intern del kf-stage-full.
+ * En ambdós casos la baseline vertical és consistent — el current
+ * beat queda ancorat a ~22vh des de dalt i creix cap avall (§76).
  */
 .kf-body {
   flex: 1;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
   min-height: 0;
   position: relative;
   overflow: hidden;
+}
+.kf-body[data-mode="peek"] {
+  padding: 0;
+}
+.kf-body[data-mode="full"] {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   padding: 22vh 40px 60px;
 }
 .kf-backdrop {
@@ -488,6 +495,61 @@
   align-items: flex-start;
   gap: 20px;
 }
+
+/*
+ * Peek stage: cada beat és un .kf-peek posicionat amb transform en
+ * funció del seu rol (delta al current). Les transicions CSS fan la
+ * navegació entre beats com un scroll vertical fluid.
+ *
+ * Els "-far" són offscreen (opacity 0) però continuen muntats per
+ * poder transicionar-los quan entren al slot prev/next.
+ */
+.kf-peek {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 100%;
+  max-width: 880px;
+  padding: 0 40px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  transform-origin: center top;
+  transition:
+    transform 480ms var(--ease-standard),
+    opacity 380ms var(--ease-standard),
+    filter 480ms var(--ease-standard);
+  will-change: transform, opacity;
+}
+.kf-peek-prev-far {
+  transform: translate(-50%, -30vh) scale(0.5);
+  opacity: 0;
+  pointer-events: none;
+}
+.kf-peek-prev {
+  transform: translate(-50%, 2vh) scale(0.62);
+  opacity: 0.18;
+  pointer-events: none;
+  filter: blur(0.4px);
+}
+.kf-peek-current {
+  transform: translate(-50%, 22vh) scale(1);
+  opacity: 1;
+}
+.kf-peek-next {
+  transform: translate(-50%, 70vh) scale(0.62);
+  opacity: 0.18;
+  pointer-events: none;
+  filter: blur(0.4px);
+}
+.kf-peek-next-far {
+  transform: translate(-50%, 110vh) scale(0.5);
+  opacity: 0;
+  pointer-events: none;
+}
+
 .kf-stage-full {
   gap: 40px;
   padding: 20px 0 40px;
