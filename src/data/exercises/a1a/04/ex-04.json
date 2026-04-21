@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-4-ex-04",
+  "topicId": "A1a-4",
+  "title": "El perfil de la Laura",
+  "prompt": "Completa l'autoretrat triant _nicht_, _kein_ o _keine_ segons convingui.",
+  "difficulty": 2,
+  "tags": ["integration", "nicht", "kein", "presentacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Ich heiße Laura. Ich bin {{1}} verheiratet, ich bin ledig.\nIch habe {{2}} Kinder, aber ich habe zwei Schwestern.\nIch komme {{3}} aus München. Ich komme aus Hamburg.\nIch bin {{4}} Lehrerin von Beruf. Ich bin Ingenieurin.\nIch habe {{5}} Auto; ich fahre mit dem Fahrrad.",
+    "blanks": [
+      { "id": "1", "label": "adjectiu _verheiratet_" },
+      { "id": "2", "label": "plural _Kinder_" },
+      { "id": "3", "label": "lloc amb preposició" },
+      { "id": "4", "label": "_Lehrerin_ (f., professió)" },
+      { "id": "5", "label": "_das Auto_ (n.)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["nicht", "kein", "keine"] },
+      { "blankId": "2", "options": ["nicht", "kein", "keine"] },
+      { "blankId": "3", "options": ["nicht", "kein", "keine"] },
+      { "blankId": "4", "options": ["nicht", "kein", "keine"] },
+      { "blankId": "5", "options": ["nicht", "kein", "keine"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "nicht",
+      "2": "keine",
+      "3": "nicht",
+      "4": "keine",
+      "5": "kein"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has combinat els dos tipus de negació amb gènere i nombre: _nicht_ davant d'adjectius i llocs, _kein/keine_ davant de substantius segons el gènere (_Lehrerin_ femení → _keine_; _Auto_ neutre → _kein_)."
+    },
+    "incorrect": {
+      "default": "Repassa: _verheiratet_ és adjectiu → _nicht_. _Kinder_ és plural → _keine_. _aus München_ és lloc amb preposició → _nicht_ davant. _Lehrerin_ és femení i sense article en afirmatiu → _keine_. _Auto_ és neutre i en afirmatiu portaria _ein_ → _kein_."
+    }
+  }
+}

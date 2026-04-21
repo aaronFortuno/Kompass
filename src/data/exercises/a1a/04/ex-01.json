@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-4-ex-01",
+  "topicId": "A1a-4",
+  "title": "On va _nicht_ a la frase?",
+  "prompt": "Tria en quin dels dos buits va _nicht_. L'altre buit queda com `—` (buit).",
+  "difficulty": 1,
+  "tags": ["nicht", "posicio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Ich {{1a}} arbeite {{1b}}.\nIch bin {{2a}} verheiratet {{2b}}.\nWir leben {{3a}} zusammen {{3b}}.\nIch komme {{4a}} aus Berlin {{4b}}.",
+    "blanks": [
+      { "id": "1a", "label": "frase 1 · abans del verb" },
+      { "id": "1b", "label": "frase 1 · després del verb" },
+      { "id": "2a", "label": "frase 2 · abans de _verheiratet_" },
+      { "id": "2b", "label": "frase 2 · després de _verheiratet_" },
+      { "id": "3a", "label": "frase 3 · abans de _zusammen_" },
+      { "id": "3b", "label": "frase 3 · després de _zusammen_" },
+      { "id": "4a", "label": "frase 4 · abans de _aus Berlin_" },
+      { "id": "4b", "label": "frase 4 · després de _aus Berlin_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1a", "options": ["nicht", "—"] },
+      { "blankId": "1b", "options": ["nicht", "—"] },
+      { "blankId": "2a", "options": ["nicht", "—"] },
+      { "blankId": "2b", "options": ["nicht", "—"] },
+      { "blankId": "3a", "options": ["nicht", "—"] },
+      { "blankId": "3b", "options": ["nicht", "—"] },
+      { "blankId": "4a", "options": ["nicht", "—"] },
+      { "blankId": "4b", "options": ["nicht", "—"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1a": "—",
+      "1b": "nicht",
+      "2a": "nicht",
+      "2b": "—",
+      "3a": "nicht",
+      "3b": "—",
+      "4a": "nicht",
+      "4b": "—"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has vist la doble lògica: si negues el verb sol, _nicht_ va **al final**; si negues un element concret (adjectiu, adverbi, lloc), _nicht_ va **just davant** d'aquest element."
+    },
+    "incorrect": {
+      "default": "Recorda la regla d'or: _nicht_ va **darrere del verb conjugat** i **davant del que vols negar**. Si no hi ha cap element concret a negar, _nicht_ tendeix al final."
+    }
+  }
+}

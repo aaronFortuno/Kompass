@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-4-ex-07",
+  "topicId": "A1a-4",
+  "title": "Un minidiàleg: conèixer algú",
+  "prompt": "Completa el diàleg triant _nicht_, _kein_ o _keine_ a cada buit.",
+  "difficulty": 3,
+  "tags": ["integration", "dialeg", "nicht", "kein"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "— Bist du verheiratet?\n— Nein, ich bin {{1}} verheiratet.\n— Hast du Kinder?\n— Nein, ich habe {{2}} Kinder.\n— Und wo wohnst du? In München?\n— Nein, ich wohne {{3}} in München. Ich wohne in Köln.\n— Arbeitest du hier?\n— Nein, ich arbeite {{4}}. Ich bin Studentin.\n— Hast du ein Auto?\n— Nein, ich habe {{5}} Auto. Aber ich habe ein Fahrrad.\n— Und dein Bruder? Hat er auch ein Fahrrad?\n— Nein, er hat {{6}} Fahrrad; er hat ein Auto.",
+    "blanks": [
+      { "id": "1", "label": "adjectiu _verheiratet_" },
+      { "id": "2", "label": "plural _Kinder_" },
+      { "id": "3", "label": "lloc amb preposició _in München_" },
+      { "id": "4", "label": "verb sencer _arbeiten_" },
+      { "id": "5", "label": "_das Auto_ (n.)" },
+      { "id": "6", "label": "_das Fahrrad_ (n.)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["nicht", "kein", "keine"] },
+      { "blankId": "2", "options": ["nicht", "kein", "keine"] },
+      { "blankId": "3", "options": ["nicht", "kein", "keine"] },
+      { "blankId": "4", "options": ["nicht", "kein", "keine"] },
+      { "blankId": "5", "options": ["nicht", "kein", "keine"] },
+      { "blankId": "6", "options": ["nicht", "kein", "keine"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "nicht",
+      "2": "keine",
+      "3": "nicht",
+      "4": "nicht",
+      "5": "kein",
+      "6": "kein"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Felicitats. Has portat tot el tema a una conversa real: els adjectius i els verbs amb _nicht_, els substantius amb _ein_ o sense article amb _kein/keine_, i la concordança de gènere i nombre al seu lloc."
+    },
+    "incorrect": {
+      "default": "Repassa tres pilars: (1) adjectiu/verb/lloc → _nicht_. (2) substantiu amb _ein_ en afirmatiu o plural sense article → _kein/keine_. (3) la terminació _-e_ de _keine_ apareix si el substantiu és femení singular o plural; si és masculí o neutre singular, forma curta _kein_. _Auto_ i _Fahrrad_ són tots dos neutres (_das Auto_, _das Fahrrad_), per tant _kein_."
+    }
+  }
+}

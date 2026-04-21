@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-4-ex-03",
+  "topicId": "A1a-4",
+  "title": "_nicht_, _kein_ o _keine_?",
+  "prompt": "Decideix quina forma de negació encaixa a cada frase segons què es nega.",
+  "difficulty": 2,
+  "tags": ["nicht", "kein", "contrast"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Ich habe {{1}} Auto.\nIch komme {{2}} aus Bremen.\nIch habe {{3}} Geschwister.\nEr ist {{4}} müde.",
+    "blanks": [
+      { "id": "1", "label": "das Auto (n., afirmatiu amb _ein_)" },
+      { "id": "2", "label": "lloc amb preposició" },
+      { "id": "3", "label": "plural sense article" },
+      { "id": "4", "label": "adjectiu" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["nicht", "kein", "keine"] },
+      { "blankId": "2", "options": ["nicht", "kein", "keine"] },
+      { "blankId": "3", "options": ["nicht", "kein", "keine"] },
+      { "blankId": "4", "options": ["nicht", "kein", "keine"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "kein", "2": "nicht", "3": "keine", "4": "nicht" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has distingit bé els dos mons: _kein/keine_ per a substantius amb _ein_ o sense article; _nicht_ per a tota la resta (verbs, adjectius, llocs...)."
+    },
+    "incorrect": {
+      "default": "Repassa el truc: si en afirmatiu hi hauria _ein/eine_ o cap article, la negació és _kein/keine_; si el que negues és un verb, un adjectiu, un adverbi o un lloc amb preposició, és _nicht_."
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-4-ex-05",
+  "topicId": "A1a-4",
+  "title": "Escriu la forma correcta",
+  "prompt": "Escriu _nicht_, _kein_ o _keine_ a cada buit. Pensa primer què s'està negant.",
+  "difficulty": 2,
+  "tags": ["typein", "nicht", "kein", "produccio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Ich bin {{1}} verheiratet.\nIch habe {{2}} Bruder.\nWir haben {{3}} Geschwister.\nEr arbeitet heute {{4}}.",
+    "blanks": [
+      { "id": "1", "label": "adjectiu _verheiratet_ · \"No estic casat/da.\"" },
+      { "id": "2", "label": "_der Bruder_ (m., sg.) · \"No tinc germà.\"" },
+      { "id": "3", "label": "_Geschwister_ (pl.) · \"No tenim germans.\"" },
+      { "id": "4", "label": "verb sencer · \"Avui no treballa.\"" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "nicht / kein / keine" },
+      { "blankId": "2", "placeholder": "nicht / kein / keine" },
+      { "blankId": "3", "placeholder": "nicht / kein / keine" },
+      { "blankId": "4", "placeholder": "nicht / kein / keine" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "nicht", "2": "kein", "3": "keine", "4": "nicht" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has produït les quatre formes de memòria i al lloc correcte de la frase."
+    },
+    "incorrect": {
+      "default": "Pistes: (1) _verheiratet_ és adjectiu → _nicht_ davant. (2) _Bruder_ és masculí singular que en afirmatiu portaria _ein_ → _kein_. (3) _Geschwister_ és plural → _keine_. (4) _arbeitet heute_ és verb amb adverbi temporal → _nicht_ al final."
+    }
+  }
+}

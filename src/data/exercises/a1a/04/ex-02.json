@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-4-ex-02",
+  "topicId": "A1a-4",
+  "title": "_kein_ o _keine_? Concordança amb el substantiu",
+  "prompt": "Tria la forma correcta segons el gènere i el nombre del substantiu negat.",
+  "difficulty": 1,
+  "tags": ["kein", "concordanca"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Ich habe {{1}} Auto.\nIch habe {{2}} Schwester.\nIch habe {{3}} Kinder.\nIch bin {{4}} Ingenieur.",
+    "blanks": [
+      { "id": "1", "label": "das Auto (n., sg.)" },
+      { "id": "2", "label": "die Schwester (f., sg.)" },
+      { "id": "3", "label": "Kinder (pl.)" },
+      { "id": "4", "label": "der Ingenieur (m., sg., professió)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["kein", "keine"] },
+      { "blankId": "2", "options": ["kein", "keine"] },
+      { "blankId": "3", "options": ["kein", "keine"] },
+      { "blankId": "4", "options": ["kein", "keine"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "kein", "2": "keine", "3": "keine", "4": "kein" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has aplicat la concordança: **masculí/neutre singular → _kein_**; **femení singular o plural → _keine_**."
+    },
+    "incorrect": {
+      "default": "Pista: és la mateixa lògica que _mein / meine_. Si el substantiu és femení (_die Schwester_) o plural (_die Kinder_), afegeix _-e_ → _keine_. Si és masculí (_der Ingenieur_) o neutre (_das Auto_), forma curta → _kein_."
+    }
+  }
+}
