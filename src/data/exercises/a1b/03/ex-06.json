@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-3-ex-06",
+  "topicId": "A1b-3",
+  "title": "Traduir amb _von_, _nach_, _zu_ i l'excepció",
+  "prompt": "Completa cada frase en alemany escrivint només la preposició (amb article o contracció si cal) que falta.",
+  "difficulty": 3,
+  "tags": ["wegrichtung", "von", "nach", "zu", "in-akk", "typein", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) Vinc de la feina i me'n vaig a casa.\n_Ich komme {{1}} Arbeit und gehe {{2}} Hause._\n\nb) Demà volo a Berlín.\n_Morgen fliege ich {{3}} Berlin._\n\nc) Va al metge en autobús.\n_Er fährt mit dem Bus {{4}} Arzt._\n\nd) El tren va de Munic a Viena.\n_Der Zug fährt {{5}} München {{6}} Wien._\n\ne) Aquest estiu anem a Turquia.\n_Diesen Sommer fahren wir {{7}} Türkei._",
+    "blanks": [
+      { "id": "1", "label": "origen (_die Arbeit_)" },
+      { "id": "2", "label": "cap a casa" },
+      { "id": "3", "label": "cap a ciutat" },
+      { "id": "4", "label": "cap al metge (_der Arzt_)" },
+      { "id": "5", "label": "origen ciutat" },
+      { "id": "6", "label": "destinació ciutat" },
+      { "id": "7", "label": "cap a país amb article (_die Türkei_)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "prep. + article" },
+      { "blankId": "2", "placeholder": "expressió fixa" },
+      { "blankId": "3", "placeholder": "preposició" },
+      { "blankId": "4", "placeholder": "contracció" },
+      { "blankId": "5", "placeholder": "preposició" },
+      { "blankId": "6", "placeholder": "preposició" },
+      { "blankId": "7", "placeholder": "prep. + article" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["von der"],
+      "2": ["nach"],
+      "3": ["nach"],
+      "4": ["zum"],
+      "5": ["von"],
+      "6": ["nach"],
+      "7": ["in die"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Has combinat les tres preposicions amb les seves excepcions: _von_ per a l'origen, _nach_ per a ciutats i _nach Hause_, _zu(m/r)_ per a persones i institucions, i _in + acusatiu_ per a països amb article. Ja pots explicar qualsevol trajecte bàsic en alemany.",
+      "references": ["A1b-3"]
+    },
+    "incorrect": {
+      "default": "Repassa la taula síntesi: _Woher?_ → _von / aus_; _Wohin?_ → _nach_ (noms propis) / _zu_ (noms comuns) / _in + acusatiu_ (països amb article). I _nach Hause_ és expressió fixa, sense article.",
+      "byResponse": [
+        {
+          "match": { "2": "zu" },
+          "message": "Moviment cap a casa = expressió fixa ==**nach Hause**==. _zu Hause_ seria \"ser a casa\" (estàtic, no moviment).",
+          "references": ["A1b-3"]
+        },
+        {
+          "match": { "2": "zu Hause" },
+          "message": "_zu Hause_ és \"a casa\" (ubicació). Aquí hi ha moviment → ==**nach Hause**==.",
+          "references": ["A1b-3"]
+        },
+        {
+          "match": { "7": "nach der" },
+          "message": "_die Türkei_ porta article → excepció: ==**in + acusatiu**==. _in die Türkei_.",
+          "references": ["A1b-3"]
+        },
+        {
+          "match": { "7": "nach die" },
+          "message": "Amb països que porten article, la regla _nach_ no s'aplica: fem servir ==**in die**== _Türkei_.",
+          "references": ["A1b-3"]
+        },
+        {
+          "match": { "3": "zum" },
+          "message": "_Berlin_ és ciutat (nom propi, sense article) → ==**nach**== _Berlin_, no _zum_.",
+          "references": ["A1b-3"]
+        },
+        {
+          "match": { "4": "zu" },
+          "message": "_der Arzt_ és masculí i porta article: contracció obligatòria _zu + dem_ = ==**zum**==.",
+          "references": ["A1b-3", "A1a-34"]
+        },
+        {
+          "match": { "1": "von" },
+          "message": "_die Arbeit_ és femení i porta article: _von + der_ no es contrau. Cal escriure ==**von der**== _Arbeit_.",
+          "references": ["A1b-3"]
+        },
+        {
+          "match": { "1": "vom" },
+          "message": "_die Arbeit_ és femení, no masculí. _vom_ (_= von + dem_) només amb masculí/neutre. Aquí: ==**von der**== _Arbeit_.",
+          "references": ["A1b-3"]
+        }
+      ]
+    }
+  }
+}

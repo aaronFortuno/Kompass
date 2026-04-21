@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-3-ex-03",
+  "topicId": "A1b-3",
+  "title": "_nach_ o _zu(m/r)_?",
+  "prompt": "Tria _nach_ o _zu(m/r)_ segons si el destí és un nom propi o un nom comú. Recorda les contraccions obligatòries amb masculí i femení.",
+  "difficulty": 2,
+  "tags": ["wegrichtung", "nach", "zu", "contraccions", "dropdownfill", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) _Ich fahre {{1}} München._\n\nb) _Wir gehen {{2}} Supermarkt._ (_der Supermarkt_)\n\nc) _Sie fliegt {{3}} Italien._\n\nd) _Er geht {{4}} Schule._ (_die Schule_)\n\ne) _Das Kind läuft {{5}} Mutter._ (_die Mutter_)\n\nf) _Der Zug fährt {{6}} Hamburg._",
+    "blanks": [
+      { "id": "1", "label": "ciutat" },
+      { "id": "2", "label": "nom comú masc." },
+      { "id": "3", "label": "país sense article" },
+      { "id": "4", "label": "nom comú fem." },
+      { "id": "5", "label": "persona fem." },
+      { "id": "6", "label": "ciutat" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["nach", "zu", "zum", "zur"] },
+      { "blankId": "2", "options": ["nach", "zu", "zum", "zur"] },
+      { "blankId": "3", "options": ["nach", "zu", "zum", "zur"] },
+      { "blankId": "4", "options": ["nach", "zu", "zum", "zur"] },
+      { "blankId": "5", "options": ["nach", "zu", "zum", "zur"] },
+      { "blankId": "6", "options": ["nach", "zu", "zum", "zur"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "nach",
+      "2": "zum",
+      "3": "nach",
+      "4": "zur",
+      "5": "zur",
+      "6": "nach"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Ja tens interioritzada la regla bàsica: noms propis → ==**nach**==; noms comuns → ==**zu**== (amb contracció segons gènere: _zum_ m./n., _zur_ f.).",
+      "references": ["A1b-3"]
+    },
+    "incorrect": {
+      "default": "Fes-te la pregunta en dos passos: (1) és nom propi o comú? → tria entre _nach_ i _zu_. (2) si és _zu_ i porta article, contreu amb _dem_ (→ _zum_) o _der_ (→ _zur_).",
+      "byResponse": [
+        {
+          "match": { "2": "zu" },
+          "message": "Amb masculí datiu, contracció obligatòria: _zu + dem_ = ==**zum**==. Aquí: _zum Supermarkt_.",
+          "references": ["A1b-3", "A1a-34"]
+        },
+        {
+          "match": { "4": "nach" },
+          "message": "_Schule_ és nom comú, no topònim. Toca _==zur== Schule_ (_zu + der_).",
+          "references": ["A1b-3"]
+        },
+        {
+          "match": { "4": "zu" },
+          "message": "_die Schule_ és femení: cal contreure _zu + der_ = ==**zur**==. _zur Schule_.",
+          "references": ["A1b-3"]
+        },
+        {
+          "match": { "1": "zu" },
+          "message": "_München_ és ciutat (nom propi) → ==**nach**== _München_, no _zu_.",
+          "references": ["A1b-3"]
+        },
+        {
+          "match": { "1": "zum" },
+          "message": "_München_ és nom propi i no porta article. Amb ciutats: ==**nach**== _München_.",
+          "references": ["A1b-3"]
+        }
+      ]
+    }
+  }
+}

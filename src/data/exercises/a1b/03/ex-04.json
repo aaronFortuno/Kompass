@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-3-ex-04",
+  "topicId": "A1b-3",
+  "title": "_nach_ o _in + acusatiu_?",
+  "prompt": "Escriu la preposició (i l'article, si cal) per a cada destinació. Recorda l'excepció: països amb article → _in die / in den_.",
+  "difficulty": 2,
+  "tags": ["wegrichtung", "in-akk", "nach", "typein", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) (_Frankreich_) _Ich fahre {{1}} Frankreich._\n\nb) (_die Türkei_) _Ich fliege {{2}} Türkei._\n\nc) (_Österreich_) _Wir reisen {{3}} Österreich._\n\nd) (_die USA_) _Sie fliegt {{4}} USA._\n\ne) (_Berlin_) _Der Zug fährt {{5}} Berlin._",
+    "blanks": [
+      { "id": "1", "label": "país sense article" },
+      { "id": "2", "label": "país amb article fem." },
+      { "id": "3", "label": "país sense article" },
+      { "id": "4", "label": "país amb article pl." },
+      { "id": "5", "label": "ciutat" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "preposició" },
+      { "blankId": "2", "placeholder": "preposició + article" },
+      { "blankId": "3", "placeholder": "preposició" },
+      { "blankId": "4", "placeholder": "preposició + article" },
+      { "blankId": "5", "placeholder": "preposició" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["nach"],
+      "2": ["in die"],
+      "3": ["nach"],
+      "4": ["in die"],
+      "5": ["nach"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has aplicat la regla _i_ l'excepció: països sense article → ==**nach**==; països amb article → ==**in + acusatiu**==.",
+      "references": ["A1b-3"]
+    },
+    "incorrect": {
+      "default": "La regla: _nach_ amb noms propis sense article. L'excepció: _die Schweiz, die Türkei, die USA, die Niederlande, der Iran_ → sempre _in + acusatiu_ (_in die / in den_).",
+      "byResponse": [
+        {
+          "match": { "2": "nach die" },
+          "message": "Excepció: països amb article (_die Türkei_) demanen ==**in + acusatiu**==, no _nach_. _in die Türkei_.",
+          "references": ["A1b-3"]
+        },
+        {
+          "match": { "2": "nach der" },
+          "message": "_nach_ regeix datiu, però aquí la regla s'estavella amb l'excepció: _die Türkei_ va amb ==**in + acusatiu**== → _in die Türkei_.",
+          "references": ["A1b-3"]
+        },
+        {
+          "match": { "4": "nach den" },
+          "message": "_die USA_ és plural però l'excepció demana _in + acusatiu_ plural: acusatiu plural = _die_. Per tant, ==**in die**== _USA_.",
+          "references": ["A1b-3"]
+        },
+        {
+          "match": { "4": "in den" },
+          "message": "_die USA_ és plural (no masculí). Acusatiu plural = _die_, no _den_. ==**in die**== _USA_.",
+          "references": ["A1b-3"]
+        },
+        {
+          "match": { "1": "in" },
+          "message": "_Frankreich_ no porta article, així que s'aplica la regla general: ==**nach**== _Frankreich_.",
+          "references": ["A1b-3"]
+        }
+      ]
+    }
+  }
+}

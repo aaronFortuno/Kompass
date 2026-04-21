@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-3-ex-01",
+  "topicId": "A1b-3",
+  "title": "_nach_ o _zu_?",
+  "prompt": "Tria la preposició correcta.",
+  "difficulty": 1,
+  "tags": ["wegrichtung", "nach", "zu", "singlechoice", "quick-check"],
+  "stimulus": {
+    "type": "text",
+    "content": "Completa: _Ich fahre ___ Hamburg._ (_Vaig a Hamburg._)"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "nach", "label": "_nach_" },
+      { "id": "zum", "label": "_zum_" },
+      { "id": "zur", "label": "_zur_" },
+      { "id": "von", "label": "_von_" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "nach" },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. _Hamburg_ és un nom propi (ciutat), per tant ==**nach**==. Amb ciutats, països i continents sempre _nach_.",
+      "references": ["A1b-3"]
+    },
+    "incorrect": {
+      "default": "Recorda: _nach_ + noms propis geogràfics (ciutats, països sense article, continents); _zu(m/r)_ + noms comuns (persones, edificis).",
+      "byResponse": [
+        {
+          "match": { "response": "zum" },
+          "message": "_zu_ és per a noms comuns (edificis, persones). Amb ciutats fem servir ==**nach**==.",
+          "references": ["A1b-3"]
+        },
+        {
+          "match": { "response": "zur" },
+          "message": "_zur_ (= _zu + der_) necessita un nom comú femení amb article (_zur Schule_). _Hamburg_ és una ciutat → ==**nach**== _Hamburg_.",
+          "references": ["A1b-3"]
+        },
+        {
+          "match": { "response": "von" },
+          "message": "_von_ indica el punt de partida, no la destinació. Aquí vas **cap a** Hamburg, no en vens → ==**nach**==.",
+          "references": ["A1b-3"]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-3",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 3,
+  "title": "Wegrichtung",
+  "shortTitle": "Wegrichtung",
+  "description": "Les tres preposicions bàsiques de trajecte (von, nach, zu), totes regides per datiu, amb les seves contraccions obligatòries (vom, zum, zur) i l'excepció dels països amb article (in + acusatiu). Fixa el contrast Woher? / Wohin? i els paranys més freqüents per a catalanoparlants (nach Hause vs zu Hause, nach vs zu).",
+  "axes": ["preposicions", "expressions-i-funcions"],
+  "prerequisites": ["A1a-34"],
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### D'on véns i cap a on vas\n\nQuan expliques un trajecte en alemany, hi ha dues preguntes bàsiques: ==**Woher?**== (d'on?) i ==**Wohin?**== (cap a on?). Cadascuna demana una preposició diferent:\n\n- **von** → punt de partida (_d'on véns_)\n- **nach** o **zu** → destinació (_cap a on vas_)\n\n_Ich komme **von** der Arbeit und gehe **nach** Hause._ (Vinc de la feina i me'n vaig a casa.)\n\nTotes tres preposicions regeixen **datiu**. Això no és negociable: _von_, _nach_ i _zu_ són preposicions fixes de datiu, no canvien mai. L'únic dilema real d'aquesta lliçó és: quan _nach_ i quan _zu_? Ho veurem amb una regla simple i tres excepcions importants."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Prerequisit",
+          "body": "Aquesta lliçó dona per sabudes les preposicions fixes de datiu d'**A1a-34** (_aus, bei, mit, nach, seit, von, zu, gegenüber_) i les formes d'article en datiu. Si tens fresc què és _dem / der / den + -n_, pots anar endavant."
+        }
+      ]
+    },
+    {
+      "id": "von-origin",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### _von_ — el punt de partida\n\n==**von**== indica d'on comença un trajecte. Sempre + datiu."
+        },
+        {
+          "type": "table",
+          "headers": ["Lloc", "Amb _von_"],
+          "rows": [
+            ["_der Bahnhof_", "==**vom**== _Bahnhof_"],
+            ["_die Schule_", "==**von der**== _Schule_"],
+            ["_das Büro_", "==**vom**== _Büro_"],
+            ["_Berlin_", "**von** _Berlin_"],
+            ["_meine Oma_", "**von meiner** _Oma_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Contracció obligatòria",
+          "body": "_von + dem_ → ==**vom**== (masculí i neutre singular). Amb femení i plural no hi ha contracció: _von der_, _von den_."
+        },
+        {
+          "type": "explanation",
+          "body": "**Exemples:**\n\n- _Der Bus kommt ==**vom**== Bahnhof._ (El bus ve de l'estació.)\n- _Ich komme gerade ==**von der**== Arbeit._ (Acabo de venir de la feina.)\n- _Sie fährt ==**von**== Berlin ==**nach**== München._ (Va de Berlín a Munic.)"
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "_von_ no és _aus_",
+          "body": "_von_ indica un **punt de partida puntual** d'un trajecte; _aus_ indica **origen/procedència** (d'on ets, d'on surts d'un edifici).\n\n- _Ich komme **aus** Spanien._ (Sóc d'Espanya.)\n- _Ich komme **von** der Arbeit._ (Vinc de la feina — acabo de sortir-ne.)"
+        }
+      ]
+    },
+    {
+      "id": "nach-zu",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### _nach_ vs. _zu_ — la destinació\n\nAquí hi ha la decisió clau. La regla bàsica:"
+        },
+        {
+          "type": "table",
+          "headers": ["Regla", "Preposició"],
+          "rows": [
+            ["Amb **noms propis** (ciutats, països, continents)", "==**nach**=="],
+            ["Amb **noms comuns** (persones, edificis, llocs concrets)", "==**zu**=="]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Amb _nach_ (noms propis):**\n\n- _Ich fliege ==**nach**== Berlin._ (Vaig a Berlín.)\n- _Wir fahren ==**nach**== Deutschland._ (Anem a Alemanya.)\n- _Sie reist ==**nach**== Europa._ (Viatja a Europa.)\n\n**Amb _zu_ (noms comuns):**\n\n- _Ich gehe ==**zum**== Arzt._ (Vaig al metge.)\n- _Er fährt ==**zur**== Schule._ (Va a l'escola.)\n- _Wir gehen ==**zu**== Anna._ (Anem a casa de l'Anna.)"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Contraccions de _zu_",
+          "body": "- _zu + dem_ → ==**zum**== (masculí/neutre)\n- _zu + der_ → ==**zur**== (femení)\n- Amb plural: _zu den_ (no es contrau)."
+        }
+      ]
+    },
+    {
+      "id": "check-nach-zu",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-3-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "exceptions",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Excepcions importants\n\n**1. Països amb article (_in + acusatiu_, no _nach_).**\n\nAlguns països porten article en alemany. Amb aquests **NO** es fa servir _nach_, sinó ==**in + acusatiu**== (direcció). Els més freqüents són:"
+        },
+        {
+          "type": "table",
+          "headers": ["País", "Direcció"],
+          "rows": [
+            ["_die Schweiz_", "==**in die**== _Schweiz_"],
+            ["_die Türkei_", "==**in die**== _Türkei_"],
+            ["_die USA_ (pl.)", "==**in die**== _USA_"],
+            ["_der Iran_", "==**in den**== _Iran_"],
+            ["_die Niederlande_ (pl.)", "==**in die**== _Niederlande_"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "- _Ich fahre ==**in die**== Schweiz._ (Vaig a Suïssa.) — no _nach der Schweiz_.\n- _Sie fliegt ==**in die**== USA._ (Se'n va als EUA.)"
+        },
+        {
+          "type": "explanation",
+          "body": "**2. _nach Hause_ — expressió fixa.**\n\nPer dir \"cap a casa\" es diu ==**nach Hause**== (lexicalitzat, sense article). I \"a casa\" (estar-hi) és ==**zu Hause**==.\n\n- _Ich gehe ==**nach Hause**==._ (Me'n vaig a casa — direcció.)\n- _Ich bin ==**zu Hause**==._ (Sóc a casa — localització.)"
+        },
+        {
+          "type": "explanation",
+          "body": "**3. Punts cardinals i adverbis de direcció amb _nach_.**\n\n- _Der Vogel fliegt ==**nach**== Süden._ (L'ocell vola cap al sud.)\n- _Geh ==**nach**== links!_ (Vés a l'esquerra!)\n- _Fahren Sie ==**nach**== rechts._ (Giri a la dreta.)"
+        }
+      ]
+    },
+    {
+      "id": "check-exception",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-3-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys i errors freqüents\n\n**1. _nach_ amb nom comú.**\n\nError: _Ich gehe **nach** dem Arzt._\nCorrecte: _Ich gehe ==**zum**== Arzt._\n\nRegla ferma: _nach_ només amb noms propis geogràfics (i _nach Hause_)."
+        },
+        {
+          "type": "explanation",
+          "body": "**2. Oblidar la contracció obligatòria _vom_ / _zum_ / _zur_.**\n\nForçat: _Ich komme von dem Bahnhof._\nNatural: _Ich komme ==**vom**== Bahnhof._\n\nAmb masculí/neutre, sempre contraccions amb _von_ i _zu_ en el registre parlat."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "_nach die Schweiz_ — error clàssic",
+          "body": "Els països amb article no accepten _nach_. Memoritza: _die Schweiz_, _die Türkei_, _die USA_, _die Niederlande_, _der Iran_ → sempre ==**in + acusatiu**==."
+        },
+        {
+          "type": "explanation",
+          "body": "**4. Confondre _zu Hause_ i _nach Hause_.**\n\n- ==**zu Hause**== = **a casa** (estar-hi, ubicació).\n- ==**nach Hause**== = **cap a casa** (moviment).\n\n_Ich gehe **nach Hause**, weil ich **zu Hause** sein will._"
+        },
+        {
+          "type": "explanation",
+          "body": "**5. _Wohin?_ vs. _Woher?_.**\n\n- _Woher kommst du?_ (D'on véns?) → resposta amb _von_ o _aus_.\n- _Wohin gehst du?_ (Cap a on vas?) → resposta amb _nach_ o _zu_ o _in_."
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Mai acusatiu darrere _zu_",
+          "body": "_zu_ és **sempre datiu**. Error: _zu **den** Arzt_. Correcte: ==**zum**== _Arzt_."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-3-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-3-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-3-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-3-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Recapitulem\n\nLa lògica direccional de l'alemany A1 gira entorn de tres preposicions, totes amb **datiu**:\n\n1. ==**von**== **(d'on)** → punt de partida. Contracció: _vom_ (m./n.).\n2. ==**nach**== **(cap a on)** → amb **noms propis** geogràfics (ciutats, països sense article, continents). També _nach Hause_, _nach links/rechts_, punts cardinals.\n3. ==**zu**== **(cap a on)** → amb **noms comuns** (persones, edificis, llocs concrets). Contraccions: _zum_ (m./n.), _zur_ (f.)."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Excepció clau",
+          "body": "Països amb article (_die Schweiz, die Türkei, die USA, die Niederlande, der Iran_) demanen ==**in + acusatiu**==, no _nach_."
+        },
+        {
+          "type": "table",
+          "title": "Parella simètrica a recordar",
+          "headers": ["Pregunta", "Resposta"],
+          "rows": [
+            ["_Woher?_", "_von / aus_"],
+            ["_Wohin?_", "_nach / zu / in_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Estratègia pràctica",
+          "body": "Abans d'escollir, pregunta't dues coses:\n\n1. **És origen o destinació?** → tria la família (_von_ vs. _nach/zu/in_).\n2. **És nom propi o comú?** → tria dins la família (_nach_ vs. _zu_).\n\nAmb aquestes dues decisions, l'encertes el 90% de les vegades."
+        },
+        {
+          "type": "explanation",
+          "body": "**Connexions amb altres lliçons:**\n\n- Prové de **A1a-34** (preposicions de datiu) i consolida _von_, _nach_ i _zu_ en l'eix direccional.\n- Et prepara per al bloc de **preposicions locals** (A1b-4 i següents), on ampliaràs els casos direccionals amb _in, auf, an_ + acusatiu/datiu (les famoses _Wechselpräpositionen_)."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Gute Reise — wohin auch immer!",
+          "body": "De moment, ja pots explicar **d'on véns** i **cap a on vas** en alemany. És la base de qualsevol conversa sobre viatges, trajectes diaris i direccions."
+        }
+      ]
+    }
+  ]
+}

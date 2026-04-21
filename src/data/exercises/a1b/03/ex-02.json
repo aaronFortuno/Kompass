@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-3-ex-02",
+  "topicId": "A1b-3",
+  "title": "L'excepció dels països amb article",
+  "prompt": "Tria la forma correcta.",
+  "difficulty": 2,
+  "tags": ["wegrichtung", "in-akk", "excepcio", "singlechoice", "quick-check"],
+  "stimulus": {
+    "type": "text",
+    "content": "Com es diu en alemany \"Vaig a Suïssa\"?"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "nach-die", "label": "_Ich fahre **nach die** Schweiz._" },
+      { "id": "in-die", "label": "_Ich fahre **in die** Schweiz._" },
+      { "id": "zur", "label": "_Ich fahre **zur** Schweiz._" },
+      { "id": "nach", "label": "_Ich fahre **nach** Schweiz._" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "in-die" },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. _die Schweiz_ porta article, per tant és una excepció: ==**in + acusatiu**== (_in die Schweiz_), no _nach_.",
+      "references": ["A1b-3"]
+    },
+    "incorrect": {
+      "default": "Els països amb article (_die Schweiz, die Türkei, die USA, die Niederlande, der Iran_) demanen ==**in + acusatiu**==, no _nach_.",
+      "byResponse": [
+        {
+          "match": { "response": "nach-die" },
+          "message": "No. Amb països que porten article, la regla de _nach_ no s'aplica: fem servir ==**in + acusatiu**==.",
+          "references": ["A1b-3"]
+        },
+        {
+          "match": { "response": "zur" },
+          "message": "_zu_ és per a noms comuns (persones, edificis), no per a països. Aquí toca ==**in die**== _Schweiz_.",
+          "references": ["A1b-3"]
+        },
+        {
+          "match": { "response": "nach" },
+          "message": "_die Schweiz_ porta article obligatori i, a més, l'excepció fa que no acceptis _nach_. Per tant: ==**in die**== _Schweiz_.",
+          "references": ["A1b-3"]
+        }
+      ]
+    }
+  }
+}

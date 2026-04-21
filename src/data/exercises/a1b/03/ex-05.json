@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-3-ex-05",
+  "topicId": "A1b-3",
+  "title": "_Woher?_ / _Wohin?_ — pregunta i resposta",
+  "prompt": "Associa cada pregunta amb la resposta que hi encaixa. Fixa't en la preposició que obre cada frase.",
+  "difficulty": 2,
+  "tags": ["wegrichtung", "woher", "wohin", "matchpairs", "assessment"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "q1", "group": "Pregunta", "content": { "type": "text", "content": "_Woher kommst du?_" } },
+      { "id": "q2", "group": "Pregunta", "content": { "type": "text", "content": "_Wohin gehst du?_ (cap al metge)" } },
+      { "id": "q3", "group": "Pregunta", "content": { "type": "text", "content": "_Wohin fährst du im Urlaub?_ (Itàlia)" } },
+      { "id": "q4", "group": "Pregunta", "content": { "type": "text", "content": "_Wohin fliegt ihr?_ (Suïssa)" } },
+      { "id": "q5", "group": "Pregunta", "content": { "type": "text", "content": "_Wohin geht er jetzt?_ (a casa)" } },
+      { "id": "a1", "group": "Resposta", "content": { "type": "text", "content": "_Ich komme **vom** Bahnhof._" } },
+      { "id": "a2", "group": "Resposta", "content": { "type": "text", "content": "_Ich gehe **zum** Arzt._" } },
+      { "id": "a3", "group": "Resposta", "content": { "type": "text", "content": "_Ich fahre **nach** Italien._" } },
+      { "id": "a4", "group": "Resposta", "content": { "type": "text", "content": "_Wir fliegen **in die** Schweiz._" } },
+      { "id": "a5", "group": "Resposta", "content": { "type": "text", "content": "_Er geht **nach Hause**._" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Pregunta",
+    "groupBLabel": "Resposta"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["q1", "a1"],
+      ["q2", "a2"],
+      ["q3", "a3"],
+      ["q4", "a4"],
+      ["q5", "a5"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has coordinat pregunta + preposició: _Woher_ → _von/aus_; _Wohin_ → _nach/zu/in_. La lògica direccional t'ajuda molt més que memoritzar cada cas.",
+      "references": ["A1b-3"]
+    },
+    "incorrect": {
+      "default": "Recorda la simetria: _vom_ respon a _Woher?_ (origen); _zum_ respon a _Wohin?_ (destinació). I _nach Hause_ sempre indica moviment cap a casa, no ubicació (això seria _zu Hause_)."
+    }
+  }
+}
