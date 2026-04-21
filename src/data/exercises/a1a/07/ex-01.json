@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-7-ex-01",
+  "topicId": "A1a-7",
+  "title": "Curt o amb -e? Les arrels ja conegudes",
+  "prompt": "Tria la terminació correcta segons el gènere o nombre del substantiu posseït.",
+  "difficulty": 1,
+  "tags": ["possessivpronomen", "concordanca"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Das ist {{1}} Glas.\nHier liegt {{2}} Tasche.\nMarkus sucht {{3}} Stift.\nAnna hat {{4}} Stifte dabei.",
+    "blanks": [
+      { "id": "1", "label": "posseïdor _ich_, das Glas (neutre)" },
+      { "id": "2", "label": "posseïdor _du_, die Tasche (femení)" },
+      { "id": "3", "label": "posseïdor _er_, der Stift (masculí)" },
+      { "id": "4", "label": "posseïdor _sie_ (ella), die Stifte (plural)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["mein", "meine"] },
+      { "blankId": "2", "options": ["dein", "deine"] },
+      { "blankId": "3", "options": ["sein", "seine"] },
+      { "blankId": "4", "options": ["ihr", "ihre"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "mein", "2": "deine", "3": "sein", "4": "ihre" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has aplicat la regla de les dues terminacions: curta per a masculí i neutre, _-e_ per a femení i plural."
+    },
+    "incorrect": {
+      "default": "Recorda la simetria: masculí + neutre → forma curta; femení + plural → forma amb _-e_.",
+      "byResponse": [
+        {
+          "match": { "1": "meine" },
+          "message": "_das Glas_ és neutre. Neutre funciona com a masculí en nominatiu: forma curta → _mein_."
+        },
+        {
+          "match": { "4": "ihr" },
+          "message": "_die Stifte_ és plural. En nominatiu, plural es comporta com a femení: cal _-e_ → _ihre_."
+        }
+      ]
+    }
+  }
+}

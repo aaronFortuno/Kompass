@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-7-ex-06",
+  "topicId": "A1a-7",
+  "title": "Triar entre ihr, ihre, Ihr i Ihre pel context",
+  "prompt": "Totes quatre opcions són iguals a cada buit. La teva feina és llegir el context per decidir.",
+  "difficulty": 3,
+  "tags": ["possessivpronomen", "cortesia", "context"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Frau Schmidt, wie ist {{1}} Telefonnummer?\nDas sind Max und Tom. {{2}} Tasche liegt hier.\nDas ist meine Schwester Lea. {{3}} Stift ist neu.",
+    "blanks": [
+      { "id": "1", "label": "cortesia a una dona (Frau Schmidt)" },
+      { "id": "2", "label": "d'ells (Max i Tom, grup)" },
+      { "id": "3", "label": "d'ella (la Lea, una dona)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["ihr", "ihre", "Ihr", "Ihre"] },
+      { "blankId": "2", "options": ["ihr", "ihre", "Ihr", "Ihre"] },
+      { "blankId": "3", "options": ["ihr", "ihre", "Ihr", "Ihre"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "Ihre", "2": "ihre", "3": "ihr" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has sabut distingir els tres usos: cortesia a la Sra. Schmidt (_Ihre_, majúscula + _-e_ per a _Telefonnummer_ femení), tercera persona plural (_ihre_ amb _-e_ per a _Tasche_ femenina), i tercera persona femenina (_ihr_ sense _-e_ perquè _Stift_ és masculí)."
+    },
+    "incorrect": {
+      "default": "Tres preguntes en ordre: (a) tracte formal? si sí, majúscula. (b) qui posseeix? tria l'arrel. (c) gènere/nombre del substantiu posseït? decideix la terminació.",
+      "byResponse": [
+        {
+          "match": { "1": "ihre" },
+          "message": "Tractament formal a la Sra. Schmidt → _Ihre_ amb **majúscula**."
+        },
+        {
+          "match": { "1": "ihr" },
+          "message": "Tractament formal a la Sra. Schmidt → _Ihre_ amb **majúscula**. A més, _Telefonnummer_ és femení, cal _-e_."
+        },
+        {
+          "match": { "1": "Ihr" },
+          "message": "Bé la majúscula (cortesia), però _die Telefonnummer_ és femení: cal _-e_ → _Ihre_."
+        },
+        {
+          "match": { "2": "Ihre" },
+          "message": "No és tracte formal; estem parlant de Max i Tom (tercera persona). No cal majúscula: _ihre_."
+        },
+        {
+          "match": { "3": "Ihr" },
+          "message": "No és tracte formal; estem parlant de la Lea (tercera persona). No cal majúscula."
+        },
+        {
+          "match": { "3": "ihre" },
+          "message": "_der Stift_ és masculí, no femení. Forma curta: _ihr_, sense _-e_."
+        },
+        {
+          "match": { "3": "Ihre" },
+          "message": "Dos problemes: no és tracte formal (no cal majúscula) i _Stift_ és masculí (no cal _-e_). Resposta: _ihr_."
+        }
+      ]
+    }
+  }
+}

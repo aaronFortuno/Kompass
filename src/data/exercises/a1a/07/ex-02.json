@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-7-ex-02",
+  "topicId": "A1a-7",
+  "title": "unser i euer: la contracció eure",
+  "prompt": "Tria la forma correcta. Recorda que _euer_ es contrau en _eure_ davant de femení i plural.",
+  "difficulty": 2,
+  "tags": ["possessivpronomen", "unser", "euer"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "{{1}} Glas steht auf dem Tisch.\nIst das {{2}} Tasche?\n{{3}} Stift ist blau.\nWo sind {{4}} Stifte?",
+    "blanks": [
+      { "id": "1", "label": "posseïdor _wir_, das Glas (neutre)" },
+      { "id": "2", "label": "posseïdor _ihr_ vosaltres, die Tasche (femení)" },
+      { "id": "3", "label": "posseïdor _wir_, der Stift (masculí)" },
+      { "id": "4", "label": "posseïdor _ihr_ vosaltres, die Stifte (plural)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["unser", "unsere", "unseres"] },
+      { "blankId": "2", "options": ["euer", "euere", "eure"] },
+      { "blankId": "3", "options": ["unser", "unsere", "unseren"] },
+      { "blankId": "4", "options": ["euer", "euere", "eure"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "unser", "2": "eure", "3": "unser", "4": "eure" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has notat que _euer_ es contrau en _eure_ davant de femení i plural, i que _unser_ en canvi és totalment regular."
+    },
+    "incorrect": {
+      "default": "Repassa: _unser_ és regular (_unser_ / _unsere_). _euer_ és l'únic irregular: davant de vocal es contrau i dona _eure_.",
+      "byResponse": [
+        {
+          "match": { "2": "euere" },
+          "message": "Ull: _euer + e_ no dona _euere_, sinó **_eure_**. La _-e-_ del mig cau quan s'afegeix una terminació vocàlica."
+        },
+        {
+          "match": { "4": "euere" },
+          "message": "Ull: _euer + e_ no dona _euere_, sinó **_eure_**. La _-e-_ del mig cau quan s'afegeix una terminació vocàlica."
+        },
+        {
+          "match": { "1": "unseres" },
+          "message": "_unseres_ existeix, però en altres casos (genitiu). En nominatiu només tens _unser_ (masc./neut.) i _unsere_ (fem./pl.)."
+        },
+        {
+          "match": { "3": "unseren" },
+          "message": "_unseren_ existeix, però en acusatiu masculí o datiu plural. En nominatiu masculí cal la forma curta: _unser_."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-7-ex-05",
+  "topicId": "A1a-7",
+  "title": "A la recepció de l'hotel: cortesia Ihr / Ihre",
+  "prompt": "El recepcionista parla amb la Sra. Weber. Completa amb el possessiu de cortesia que correspongui a cada substantiu.",
+  "difficulty": 2,
+  "tags": ["possessivpronomen", "cortesia", "formal"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "— Guten Abend, Frau Weber. Ist das {{1}} Tasche?\n— Ja, danke!\n— Und ist das {{2}} Glas? Ich habe es auf der Bar gefunden.\n— Ja, das ist mein Glas.\n— Sehr gut. Hier sind auch {{3}} Stifte.\n— Oh, und wo ist {{4}} Stift?",
+    "blanks": [
+      { "id": "1", "label": "cortesia + die Tasche (fem.)" },
+      { "id": "2", "label": "cortesia + das Glas (neutre)" },
+      { "id": "3", "label": "cortesia + die Stifte (plural)" },
+      { "id": "4", "label": "cortesia + der Stift (masc.)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["ihre", "Ihre", "eure"] },
+      { "blankId": "2", "options": ["ihr", "Ihr", "euer"] },
+      { "blankId": "3", "options": ["ihre", "Ihre", "eure"] },
+      { "blankId": "4", "options": ["ihr", "Ihr", "euer"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "Ihre", "2": "Ihr", "3": "Ihre", "4": "Ihr" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Tractament formal a la Sra. Weber: _Ihr / Ihre_ sempre amb majúscula, amb _-e_ per a _Tasche_ (fem.) i _Stifte_ (pl.), i sense _-e_ per a _Glas_ (neut.) i _Stift_ (masc.)."
+    },
+    "incorrect": {
+      "default": "Dos passos: (1) tracte formal → arrel _Ihr-_ amb majúscula; (2) mira el gènere del substantiu per triar curt (_Ihr_) o amb _-e_ (_Ihre_).",
+      "byResponse": [
+        {
+          "match": { "1": "ihre" },
+          "message": "A un hotel, amb un client desconegut, el tracte és sempre formal (_Sie_), i el possessiu corresponent és _Ihre_ **amb majúscula obligatòria**."
+        },
+        {
+          "match": { "2": "ihr" },
+          "message": "A un hotel, amb un client desconegut, el tracte és sempre formal (_Sie_), i el possessiu corresponent és _Ihr_ **amb majúscula obligatòria**."
+        },
+        {
+          "match": { "3": "ihre" },
+          "message": "Tracte formal → _Ihre_ amb **majúscula obligatòria**, vagi on vagi a la frase."
+        },
+        {
+          "match": { "4": "ihr" },
+          "message": "Tracte formal → _Ihr_ amb **majúscula obligatòria**, vagi on vagi a la frase."
+        },
+        {
+          "match": { "1": "eure" },
+          "message": "_eure_ és la forma de _ihr_ vosaltres (plural informal). En context de recepció formal, no hi pinta res."
+        },
+        {
+          "match": { "3": "eure" },
+          "message": "_eure_ és la forma de _ihr_ vosaltres (plural informal). En context de recepció formal, no hi pinta res."
+        }
+      ]
+    }
+  }
+}

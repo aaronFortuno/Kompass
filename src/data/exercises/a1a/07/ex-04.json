@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-7-ex-04",
+  "topicId": "A1a-7",
+  "title": "A l'aula: possessius en context",
+  "prompt": "Completa el diàleg escolar amb els possessius correctes.",
+  "difficulty": 2,
+  "tags": ["possessivpronomen", "integration", "aula"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "— Entschuldigung, ist das {{1}} Stift? — Ja, das ist {{2}} Stift.\n— Und diese Tasche? — Nein, das ist nicht meine Tasche, das ist {{3}} Tasche.\n— Die Kinder haben {{4}} Glas vergessen.\n— Hier sind {{5}} Stifte!",
+    "blanks": [
+      { "id": "1", "label": "pregunta a un company (_du_), der Stift (masc.)" },
+      { "id": "2", "label": "resposta en 1a sg. (_ich_), der Stift (masc.)" },
+      { "id": "3", "label": "posseïdor _sie_ (Anna), die Tasche (fem.)" },
+      { "id": "4", "label": "posseïdor _sie_ (els nens, plural), das Glas (neutre)" },
+      { "id": "5", "label": "posseïdor _ihr_ vosaltres, die Stifte (plural)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["dein", "deine", "deins"] },
+      { "blankId": "2", "options": ["mein", "meine", "meins"] },
+      { "blankId": "3", "options": ["ihr", "ihre", "Ihre"] },
+      { "blankId": "4", "options": ["sein", "seine", "ihr"] },
+      { "blankId": "5", "options": ["euer", "euere", "eure"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "dein", "2": "mein", "3": "ihre", "4": "ihr", "5": "eure" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has aplicat la regla en els quatre gèneres/nombres i has resolt l'irregular _euer → eure_."
+    },
+    "incorrect": {
+      "default": "Revisa la doble concordança: arrel segons qui posseeix; terminació _-e_ només si el substantiu és femení o plural.",
+      "byResponse": [
+        {
+          "match": { "3": "Ihre" },
+          "message": "No és tracte formal: estem parlant de l'Anna (tercera persona). La majúscula no correspon aquí."
+        },
+        {
+          "match": { "4": "seine" },
+          "message": "El posseïdor són 'els nens' (_die Kinder_, plural). La base és _ihr-_ (d'ells/elles), no _sein-_. A més, _das Glas_ és neutre: forma curta."
+        },
+        {
+          "match": { "4": "sein" },
+          "message": "El posseïdor són 'els nens' (_die Kinder_, plural). La base és _ihr-_ (d'ells/elles), no _sein-_."
+        },
+        {
+          "match": { "5": "euere" },
+          "message": "_euer_ perd la _-e-_ del mig davant de terminació vocàlica: **_eure_**."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-7",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 7,
+  "title": "Els possessius",
+  "shortTitle": "Possessius",
+  "description": "Sistema complet dels pronoms possessius en nominatiu: les set arrels (mein, dein, sein, ihr, unser, euer, Ihr) i les dues terminacions segons gènere/nombre del substantiu posseït.",
+  "axes": ["pronoms-verbs", "generes-articles-declinacio"],
+  "prerequisites": ["A1a-1"],
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Context i motivació\n\nJa vas veure a **A1a-1** els primers pronoms possessius: _mein_, _dein_, _sein_, _ihr_ i la forma de cortesia _Ihr_. Allà vam treballar sobretot dues coses: el **contrast sein / ihr** (d'ell vs. d'ella, una distinció que ni el català ni el castellà fan), i la concordança bàsica amb el gènere del substantiu posseït (_mein Name_ masculí vs. _meine Adresse_ femení). Ho teníem reduït al **singular** i a frases de presentació personal.\n\nEn aquest tema anem un pas més enllà. Els possessius són **set arrels** (una per a cada persona gramatical) i, per a cadascuna, hi ha **quatre formes** segons el substantiu que vagi darrere: masculí, femení, neutre i plural. En total, una **matriu 7 × 4** que treballarem en nominatiu. L'objectiu no és memoritzar-la com un poema, sinó veure que hi ha només **dues terminacions** en joc i saber triar-les amb criteri.\n\n> **Ich suche meinen Stift.** → no, encara no: això és acusatiu (A1a-28).\n> **Das ist ==mein== Stift.** (Aquest és el meu bolígraf.) — nominatiu, masculí.\n> **Das ist ==meine== Tasche.** (Aquesta és la meva bossa.) — nominatiu, femení.\n> **Das ist ==mein== Glas.** (Aquest és el meu got.) — nominatiu, neutre.\n> **Das sind ==meine== Stifte.** (Aquests són els meus bolígrafs.) — nominatiu, plural.\n\nVeuràs que la lògica és la mateixa per a totes les arrels. Un cop la dominis amb _mein_, la resta va gairebé sola."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Nota d'abast",
+          "body": "Aquest tema es queda en **nominatiu**. Els possessius canvien de forma quan apareixen en acusatiu o datiu (p. ex. _meinen_, _meinem_), però això ho treballarem més endavant, un cop els casos estiguin presentats (A1a-14, A1a-28, A1a-34)."
+        }
+      ]
+    },
+    {
+      "id": "sistema-general",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### La idea de fons: arrel + terminació\n\nTot possessiu alemany té dues peces:\n\n1. Una **arrel** que indica **qui posseeix**.\n2. Una **terminació** que concorda amb **el substantiu posseït** (el seu gènere i nombre).\n\nLes set arrels, una per persona gramatical, són:"
+        },
+        {
+          "type": "table",
+          "headers": ["Persona", "Arrel", "Significat"],
+          "rows": [
+            ["_ich_", "**mein-**", "el meu / la meva"],
+            ["_du_", "**dein-**", "el teu / la teva"],
+            ["_er / es_", "**sein-**", "el seu / la seva (d'ell, o d'un neutre)"],
+            ["_sie_ (ella)", "**ihr-**", "el seu / la seva (d'ella)"],
+            ["_wir_", "**unser-**", "el nostre / la nostra"],
+            ["_ihr_ (vosaltres)", "**euer-**", "el vostre / la vostra"],
+            ["_sie_ (ells/elles)", "**ihr-**", "el seu / la seva (d'ells/elles)"],
+            ["_Sie_ (cortesia)", "**Ihr-**", "el seu / la seva (de Vostè/Vostès)"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "I la **terminació en nominatiu** té només dues variants:\n\n- **Forma curta** (sense afegir res) → davant de substantius **masculins** i **neutres**.\n- **Forma amb _-e_** → davant de substantius **femenins** i **plurals**.\n\nAixò vol dir que, en nominatiu, cada arrel només té **dues cares visibles**: _mein_ / _meine_, _dein_ / _deine_, _sein_ / _seine_, _ihr_ / _ihre_, _Ihr_ / _Ihre_. Les arrels _unser_ i _euer_ segueixen la mateixa lògica, amb un matís ortogràfic que veurem."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Truc clau",
+          "body": "Masculí i neutre **comparteixen** forma. Femení i plural **també comparteixen** forma. Això redueix la feina a la meitat."
+        }
+      ]
+    },
+    {
+      "id": "tabla-mein-dein-sein-ihr",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Les arrels ja vistes: _mein_, _dein_, _sein_, _ihr_\n\nPer a _mein_, _dein_, _sein_, _ihr_ (i _Ihr_ de cortesia), l'aplicació del sistema és directa. L'única feina és:\n\n1. Triar l'arrel segons **qui posseeix**.\n2. Afegir _-e_ si el substantiu és femení o plural.\n\nEt presento la taula amb quatre substantius-referència que anirem reutilitzant tota la lliçó:\n\n- **der Stift** (el bolígraf) — masculí.\n- **die Tasche** (la bossa) — femení.\n- **das Glas** (el got) — neutre.\n- **die Stifte** (els bolígrafs) — plural."
+        },
+        {
+          "type": "table",
+          "headers": ["Posseïdor", "+ Stift (m.)", "+ Tasche (f.)", "+ Glas (n.)", "+ Stifte (pl.)"],
+          "rows": [
+            ["_ich_", "**mein** Stift", "**meine** Tasche", "**mein** Glas", "**meine** Stifte"],
+            ["_du_", "**dein** Stift", "**deine** Tasche", "**dein** Glas", "**deine** Stifte"],
+            ["_er / es_", "**sein** Stift", "**seine** Tasche", "**sein** Glas", "**seine** Stifte"],
+            ["_sie_ (ella)", "**ihr** Stift", "**ihre** Tasche", "**ihr** Glas", "**ihre** Stifte"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Mira les columnes: **_Stift_ i _Glas_** porten sempre la **forma curta** (masculí i neutre = mateixa terminació en nominatiu). **_Tasche_ i _Stifte_** porten sempre la **forma amb _-e_** (femení i plural = mateixa terminació). És el patró que ja hem anunciat; aquí el veus aplicat."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Ja coneixes aquesta part",
+          "body": "Si has fet A1a-1, les caselles de _mein_, _meine_, _sein_, _seine_, _ihr_, _ihre_ no són cap sorpresa. El que és nou aquí és veure-ho **sistematitzat en columna** i descobrir que **neutre es comporta com masculí** i **plural com femení**. Aquesta simetria és la llei que et farà anar ràpid."
+        }
+      ]
+    },
+    {
+      "id": "check-singular",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-7-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "neu-unser-euer",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Les dues arrels noves: _unser_ i _euer_\n\nAquí entra el contingut pròpiament **nou** del tema. Les arrels _unser_ (nostre) i _euer_ (vostre, informal) segueixen **exactament la mateixa regla** que les anteriors: curta davant masculí/neutre, amb _-e_ davant femení/plural."
+        },
+        {
+          "type": "table",
+          "headers": ["Posseïdor", "+ Stift (m.)", "+ Tasche (f.)", "+ Glas (n.)", "+ Stifte (pl.)"],
+          "rows": [
+            ["_wir_", "**unser** Stift", "**unsere** Tasche", "**unser** Glas", "**unsere** Stifte"],
+            ["_ihr_ (vosaltres)", "**euer** Stift", "**eure** Tasche", "**euer** Glas", "**eure** Stifte"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Tres coses a observar.\n\n**1. _unser_ és regular i predictible.** T'afegeixes la _-e_ i ja està: _unsere_. No hi ha sorpresa.\n\n**2. _euer_ perd la _-e_ del mig quan s'allarga.** Aquí hi ha l'única irregularitat ortogràfica del tema. Quan afegeixes _-e_ a _euer_, **no** obtens _euere_ (que sonaria incòmode), sinó **==eu==re**. La _-e-_ del mig cau.\n\n> Incorrecte: ~~euere Tasche~~.\n> Correcte: **==eu==re Tasche**.\n\nMnemotècnica: _euer_ → _eu-re_. Es **\"contrau\"** com fa _teuer_ (car) → _teures_ (car, masculí/neutre decliniu). És el mateix fenomen fonètic: una seqüència _-er-_ davant de vocal esdevé _-r-_.\n\n**3. No confonguis _euer_ (el vostre) amb _ihr_ (el seu).** Ambdues arrels comencen en contextos de plural, però:\n\n- _euer_ correspon a _ihr_ pronom personal (**vosaltres**, informal).\n- _ihr_ arrel possessiva correspon al pronom personal _sie_ (**ells/elles**) **o** al _sie_ (**ella**).\n\nÉs l'inconvenient d'haver triat la mateixa paraula per a \"vosaltres\" (pronom personal) i \"el seu\" (possessiu): però com que _ihr_ pronom personal no té forma possessiva _ihr_, sinó _euer_, no hi ha conflicte real."
+        }
+      ]
+    },
+    {
+      "id": "check-unser-euer",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-7-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "plural-ihr-vs-cortesia-ihr",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El triple _ihr_: ella, ells/elles, i Vostè\n\nÉs el punt més confús del tema, i val la pena aturar-s'hi. Hi ha **tres usos possibles** de l'arrel _ihr_:\n\n1. **_ihr_ = d'ella** (possessiu de _sie_ ella). Ja vist a A1a-1.\n2. **_ihr_ = d'ells / d'elles** (possessiu de _sie_ plural). **Nou en aquest tema.**\n3. **_Ihr_ = de Vostè / de Vostès** (possessiu de cortesia _Sie_). Amb **majúscula obligatòria**. Ja vist a A1a-1, però aquí l'ampliem als quatre gèneres.\n\nLes tres formes **sonen exactament igual** en parlar. El que les distingeix són dues coses:\n\n- Per **escrit**: la **majúscula** en la forma de cortesia (_Ihr / Ihre_), present sempre, fins i tot al mig de la frase.\n- Pel **context**: de qui estem parlant."
+        },
+        {
+          "type": "table",
+          "headers": ["Context", "Possessiu", "Exemple"],
+          "rows": [
+            ["d'ella (una persona, femení)", "**ihr** / **ihre**", "Anna und **ihr** Stift"],
+            ["d'ells/elles (més d'una persona)", "**ihr** / **ihre**", "die Kinder und **ihre** Stifte"],
+            ["de Vostè / Vostès (cortesia)", "**Ihr** / **Ihre**", "Herr Meier, ist das **Ihr** Stift?"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Observa que **els casos 1 i 2 són gràficament idèntics**: _ihr_ minúscula tant si és \"d'ella\" com si és \"d'ells/elles\". L'única manera de distingir-los és saber **de qui es parla** (una dona, o un grup).\n\n> **Das ist Anna. ==I==hr Stift ist rot.** → _ihr_ = d'ella (parlem de l'Anna, una dona).\n> **Das sind Anna und Lisa. ==I==hr Stift ist rot.** → _ihr_ = d'elles (parlem d'un grup, aquí d'elles dues).\n> **Frau Meier, ist das ==I==hr Stift?** → _Ihr_ = de Vostè (tracte formal). Majúscula obligatòria.\n\n**Pregunta freqüent:** i si faig un text amb diversos personatges i salto entre possessius d'ell, d'ella i d'ells? Llavors el **context frasal** és qui desambigua. L'alemany ho assumeix i tira endavant, com també fem el català i el castellà amb \"el seu / su\" quan hi ha més d'un referent possible."
+        }
+      ]
+    },
+    {
+      "id": "check-triple-ihr",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-7-ex-03", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "sintesi-cortesia",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### La cortesia _Ihr / Ihre_ aplicada als quatre gèneres\n\nA A1a-1 la cortesia la vèiem sobretot amb _Name_ i _Adresse_. Aquí la completem amb els quatre gèneres/nombres, perquè és el tipus de possessiu amb què més sovint et toparàs en contextos formals (botigues, oficines, hotels, administració):\n\n> **Herr Weber, ist das ==I==hr Stift?** (Sr. Weber, és aquest el seu bolígraf?) — masculí.\n> **Frau Weber, ist das ==I==hre Tasche?** (Sra. Weber, és aquesta la seva bossa?) — femení.\n> **Ist das ==I==hr Glas?** (És aquest el seu got?) — neutre.\n> **Sind das ==I==hre Stifte?** (Són aquests els seus bolígrafs?) — plural.\n\nLa majúscula és **sempre** obligatòria, independentment de la posició a la frase, i també independentment de si parla amb una sola persona o un grup: _Sie_ (i per tant _Ihr / Ihre_) val per al Vostè i al Vostès alhora."
+        }
+      ]
+    },
+    {
+      "id": "taula-completa",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi visual: la matriu 7 × 4\n\nAquí tens la taula sencera del nominatiu. És una referència; **no cal memoritzar-la**. El que cal és dominar el sistema (arrel + terminació) i saber anar a buscar la casella quan la necessitis."
+        },
+        {
+          "type": "table",
+          "headers": ["Posseïdor", "+ Stift (m.)", "+ Tasche (f.)", "+ Glas (n.)", "+ Stifte (pl.)"],
+          "rows": [
+            ["_ich_", "mein", "meine", "mein", "meine"],
+            ["_du_", "dein", "deine", "dein", "deine"],
+            ["_er / es_", "sein", "seine", "sein", "seine"],
+            ["_sie_ (ella)", "ihr", "ihre", "ihr", "ihre"],
+            ["_wir_", "unser", "unsere", "unser", "unsere"],
+            ["_ihr_ (vosaltres)", "euer", "**eure**", "euer", "**eure**"],
+            ["_sie_ (ells/elles)", "ihr", "ihre", "ihr", "ihre"],
+            ["**_Sie_ (cortesia)**", "**Ihr**", "**Ihre**", "**Ihr**", "**Ihre**"]
+          ],
+          "caption": "Dues columnes es repeteixen (masculí = neutre; femení = plural). Una sola arrel és irregular (euer → eure). Una sola arrel exigeix majúscula constant (Ihr)."
+        }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals\n\n**1. Afegir _-e_ al neutre.**\nEl neutre sempre es comporta com el masculí en nominatiu.\n> Incorrecte: ~~meine Glas~~.\n> Correcte: **mein Glas**.\n\n**2. Oblidar _-e_ al plural.**\nEl plural es comporta com el femení en nominatiu.\n> Incorrecte: ~~mein Stifte~~.\n> Correcte: **meine Stifte**.\n\n**3. Escriure _euere_ en comptes de _eure_.**\nL'única irregularitat del tema: _euer_ perd la _-e-_ del mig quan s'allarga.\n> Incorrecte: ~~euere Tasche~~.\n> Correcte: **eure Tasche**.\n\n**4. Confondre _ihr_ (d'ella / d'ells / vosaltres pronom personal) amb _Ihr_ (de Vostè).**\nEn context formal, la majúscula és **no negociable**.\n> Incorrecte: **ist das ihr Stift, Herr Meier?**\n> Correcte: **Ist das ==I==hr Stift, Herr Meier?**\n\n**5. Usar _sein_ per un posseïdor femení.**\nJa el vam tractar a A1a-1. Si qui posseeix és una dona, la base és _ihr-_, **mai** _sein-_.\n\n**6. Creure que hi ha un possessiu diferent per a \"vosaltres\" i \"ells/elles\".**\nL'alemany fa servir _euer_ per a \"vostre\" (de vosaltres, informal) i _ihr_ per a \"d'ells/elles\". Són **dues paraules diferents**. No caiguis en l'analogia falsa amb el castellà _su_ que val per a gairebé tot.\n\n**7. Ignorar el gènere de substantius desconeguts.**\nSense saber si una paraula és masculí, femení, neutre o plural, no pots triar la forma. Per això aprendre el **substantiu amb el seu article** (_die Tasche_, no _Tasche_ sola) és el millor estalvi de temps que pots fer a A1."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-7-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-7-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-7-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-7-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi del tema\n\nJa tens el sistema complet dels possessius en nominatiu. Resumit en tres idees:\n\n1. **Arrel segons qui posseeix:** set arrels (_mein, dein, sein, ihr, unser, euer, Ihr_), una per persona gramatical. El punt delicat segueix sent _sein_ (d'ell) vs. _ihr_ (d'ella, d'ells/elles).\n2. **Terminació segons el substantiu posseït:** dues formes, forma curta per a masculí i neutre, forma amb _-e_ per a femení i plural.\n3. **Dos avisos ortogràfics:** _euer + e_ → **_eure_** (mai _euere_); _Ihr / Ihre_ de cortesia sempre amb **majúscula**.\n\nTornaràs als possessius quan introduïm l'**acusatiu** (A1a-28) i el **datiu** (A1a-34), on l'arrel es manté però apareixen noves terminacions (_meinen_, _meinem_, _meiner_…). El que aprens aquí és la base que farà que aquell salt sigui manejable."
+        }
+      ]
+    }
+  ]
+}

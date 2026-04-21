@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-7-ex-07",
+  "topicId": "A1a-7",
+  "title": "Escena de classe: les set arrels en un sol text",
+  "prompt": "Completa la narració amb els possessius que corresponguin. Fixa't bé en qui posseeix a cada buit.",
+  "difficulty": 3,
+  "tags": ["possessivpronomen", "integration", "aula"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Frau Klein ist {{1}} Lehrerin. «Guten Morgen! Ist das {{2}} Buch, Marco?», fragt sie.\nMarco sagt: «Ja, das ist {{3}} Buch.»\n«Und {{4}} Stifte, Anna und Lisa? Wo sind sie?»\nAnna und Lisa antworten: «{{5}} Stifte sind in der Tasche.»\n«Sehr gut. Und Sie, Herr Müller, wie ist {{6}} Adresse?»",
+    "blanks": [
+      { "id": "1", "label": "posseïdor _wir_ (la nostra professora), die Lehrerin (fem.)" },
+      { "id": "2", "label": "posseïdor _du_ (al Marco), das Buch (neutre)" },
+      { "id": "3", "label": "resposta en 1a sg. (_ich_), das Buch (neutre)" },
+      { "id": "4", "label": "posseïdor _ihr_ vosaltres (a l'Anna i la Lisa), die Stifte (plural)" },
+      { "id": "5", "label": "resposta en 1a pl. (_wir_, l'Anna i la Lisa), die Stifte (plural), inici de frase" },
+      { "id": "6", "label": "cortesia al Sr. Müller, die Adresse (fem.)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["unser", "unsere", "unsers"] },
+      { "blankId": "2", "options": ["dein", "deine", "deins"] },
+      { "blankId": "3", "options": ["mein", "meine", "meins"] },
+      { "blankId": "4", "options": ["euer", "euere", "eure"] },
+      { "blankId": "5", "options": ["Unser", "Unsere", "Unseres"] },
+      { "blankId": "6", "options": ["ihre", "Ihre", "eure"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "unsere", "2": "dein", "3": "mein", "4": "eure", "5": "Unsere", "6": "Ihre" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Felicitats. Has posat en joc les set arrels en un sol text: _unser_ (×2), _dein_, _mein_, _euer → eure_, i la cortesia _Ihre_. Ja domines el sistema del nominatiu."
+    },
+    "incorrect": {
+      "default": "Revisa per a cada buit: (1) qui posseeix, (2) el gènere/nombre del substantiu, (3) si hi ha cortesia (majúscula).",
+      "byResponse": [
+        {
+          "match": { "1": "unser" },
+          "message": "_die Lehrerin_ és femení. Forma amb _-e_: _unsere_."
+        },
+        {
+          "match": { "4": "euere" },
+          "message": "Ull amb l'únic irregular: _euer + e_ → _eure_, no _euere_."
+        },
+        {
+          "match": { "4": "euer" },
+          "message": "_die Stifte_ és plural. Cal terminació _-e_, i _euer_ contrau: **_eure_**."
+        },
+        {
+          "match": { "6": "ihre" },
+          "message": "És tracte formal al Sr. Müller. Majúscula obligatòria: _Ihre_."
+        },
+        {
+          "match": { "6": "eure" },
+          "message": "El Sr. Müller rep tracte formal, no és part d'un 'vosaltres'. _Ihre_, no _eure_."
+        },
+        {
+          "match": { "5": "Unser" },
+          "message": "_die Stifte_ és plural. Cal _-e_: _Unsere_ (inici de frase, per això va en majúscula)."
+        }
+      ]
+    }
+  }
+}

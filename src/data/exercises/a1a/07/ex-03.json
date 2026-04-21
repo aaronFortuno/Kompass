@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-7-ex-03",
+  "topicId": "A1a-7",
+  "title": "El triple ihr: ella, ells/elles, Vostè",
+  "prompt": "Llegeix el context de cada frase i tria _ihr_, _ihre_ o _Ihre_ segons correspongui.",
+  "difficulty": 2,
+  "tags": ["possessivpronomen", "cortesia", "ihr"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Das ist Herr Schmidt. Ist das {{1}} Tasche, Herr Schmidt?\nDas ist Anna. {{2}} Tasche ist neu.\nDas sind Max und Lisa. {{3}} Stifte liegen hier.",
+    "blanks": [
+      { "id": "1", "label": "tracte formal → cortesia (Herr Schmidt)" },
+      { "id": "2", "label": "d'ella (Anna, una dona)" },
+      { "id": "3", "label": "d'ells (grup: Max i Lisa)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["ihr", "ihre", "Ihre"] },
+      { "blankId": "2", "options": ["ihr", "ihre", "Ihre"] },
+      { "blankId": "3", "options": ["ihr", "ihre", "Ihre"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "Ihre", "2": "ihre", "3": "ihre" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has llegit el context per distingir cortesia (majúscula) de la resta, i has aplicat la terminació _-e_ en tots tres casos perquè _Tasche_ és femení i _Stifte_ és plural."
+    },
+    "incorrect": {
+      "default": "Pregunta't dues coses: (a) qui posseeix la cosa? si és 'Vostè', _Ihr-_ en majúscula; (b) el substantiu és femení o plural? llavors cal _-e_.",
+      "byResponse": [
+        {
+          "match": { "1": "ihre" },
+          "message": "Al Sr. Schmidt el tractem de _Sie_ (tracte formal amb un adult desconegut). Per tant, el possessiu és _Ihre_ amb **majúscula**."
+        },
+        {
+          "match": { "1": "ihr" },
+          "message": "Dos problemes: és tracte formal (cal **majúscula**), i _Tasche_ és femení (cal _-e_). Resposta: _Ihre_."
+        },
+        {
+          "match": { "2": "Ihre" },
+          "message": "Aquí no hi ha tracte formal; estem parlant de l'Anna, una tercera persona. La majúscula no correspon: _ihre_ en minúscula."
+        },
+        {
+          "match": { "3": "Ihre" },
+          "message": "Aquí no hi ha tracte formal; estem parlant de Max i Lisa, una tercera persona (plural). La majúscula no correspon: _ihre_ en minúscula."
+        }
+      ]
+    }
+  }
+}
