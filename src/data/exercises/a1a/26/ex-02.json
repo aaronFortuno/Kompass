@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-26-ex-02",
+  "topicId": "A1a-26",
+  "title": "Quin modal demana el context?",
+  "prompt": "Tria el modal adequat en cada mini-context. Atenció al parany: _nicht müssen_ NO és prohibició; la prohibició és _nicht dürfen_.",
+  "difficulty": 2,
+  "tags": ["modal", "semantica", "nicht-duerfen", "nicht-muessen"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Al metge: — Sie {{1}} mehr Gemüse essen. (obligació per consell del metge)\n2. A l'aeroport, rètol: — Hier {{2}} man nicht rauchen. (prohibició)\n3. A la nevera buida: — Ich {{3}} heute einkaufen gehen. (necessitat objectiva)\n4. Un nen, entossudit: — Ich {{4}} ein Eis! (voluntat ferma, to infantil)",
+    "blanks": [
+      { "id": "1", "label": "3a pl. formal _Sie_" },
+      { "id": "2", "label": "3a sg. + _nicht_ (prohibició)" },
+      { "id": "3", "label": "1a sg. (necessitat)" },
+      { "id": "4", "label": "1a sg. (voluntat)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["sollen", "müssen", "dürfen", "wollen"] },
+      { "blankId": "2", "options": ["muss", "darf", "will", "soll"] },
+      { "blankId": "3", "options": ["muss", "darf", "will", "soll"] },
+      { "blankId": "4", "options": ["möchte", "will", "soll", "muss"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "sollen",
+      "2": "darf",
+      "3": "muss",
+      "4": "will"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has triat el matís correcte de cada modal: _sollen_ quan la instrucció ve d'algú altre (el metge); _nicht dürfen_ per a la prohibició (no _nicht müssen_, que voldria dir \"no cal\"); _müssen_ per a la necessitat objectiva; _wollen_ per a la voluntat ferma (un nen que vol, no un client educat que _möchte_)."
+    },
+    "incorrect": {
+      "default": "Claus de tria: (1) si ho diu el metge o el cap → _sollen_; (2) prohibició → _nicht dürfen_ (no _nicht müssen_!); (3) necessitat (cal fer-ho) → _müssen_; (4) voluntat ferma, sense cortesia → _wollen_. Recorda: _möchte_ és cortesia educada, _will_ és decisió directa."
+    }
+  }
+}

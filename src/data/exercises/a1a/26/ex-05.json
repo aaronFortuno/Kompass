@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-26-ex-05",
+  "topicId": "A1a-26",
+  "title": "Satzklammer a la colònia d'estiu",
+  "prompt": "Completa els modals conjugats i els infinitius. Recorda la Satzklammer: modal a la posició 2 (o 1 en pregunta), infinitiu al final.",
+  "difficulty": 2,
+  "tags": ["modal", "satzklammer", "assessment", "infinitiu"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Im Sommercamp gelten strenge Regeln.\nDie Kinder {{1}} jeden Morgen um sieben Uhr {{2}}.\nSie {{3}} im See {{4}}, aber nur mit einem Betreuer.\nNachts {{5}} sie nicht alleine aus dem Zimmer {{6}}.\nAm Freitagabend {{7}} wir zusammen ein Lagerfeuer {{8}}?",
+    "blanks": [
+      { "id": "1", "label": "_müssen_, 3a pl." },
+      { "id": "2", "label": "infinitiu \"llevar-se\"" },
+      { "id": "3", "label": "_dürfen_, 3a pl." },
+      { "id": "4", "label": "infinitiu \"nedar\"" },
+      { "id": "5", "label": "_dürfen_, 3a pl. (prohibició)" },
+      { "id": "6", "label": "infinitiu \"sortir\"" },
+      { "id": "7", "label": "_sollen_, 1a pl. (proposta)" },
+      { "id": "8", "label": "infinitiu \"fer\"" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["muss", "müssen", "müsst", "musst"] },
+      { "blankId": "2", "options": ["aufstehen", "stehen auf", "aufsteht", "aufstehe"] },
+      { "blankId": "3", "options": ["darf", "dürfen", "dürft", "darfst"] },
+      { "blankId": "4", "options": ["schwimmen", "schwimmt", "schwimme", "geschwommen"] },
+      { "blankId": "5", "options": ["dürfen", "darf", "darfst", "dürft"] },
+      { "blankId": "6", "options": ["gehen", "geht", "gehe", "gegangen"] },
+      { "blankId": "7", "options": ["Sollen", "Sollst", "Sollt", "Soll"] },
+      { "blankId": "8", "options": ["machen", "macht", "mache", "gemacht"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "müssen",
+      "2": "aufstehen",
+      "3": "dürfen",
+      "4": "schwimmen",
+      "5": "dürfen",
+      "6": "gehen",
+      "7": "Sollen",
+      "8": "machen"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Satzklammer impecable. El modal conjugat (_müssen, dürfen, sollen_) obre el claudàtor a la posició 2; l'infinitiu (_aufstehen, schwimmen, gehen, machen_) el tanca al final. Fixa't també que _aufstehen_, que és un verb separable (A1a-25), ==es manté sencer== a l'infinitiu al final de la frase modal: no es parteix quan va acompanyant un modal."
+    },
+    "incorrect": {
+      "default": "Dues regles alhora: (1) el modal es conjuga al plural amb la vocal de l'infinitiu (_müssen, dürfen, sollen_); (2) el segon verb va a l'infinitiu (forma del diccionari, acabada en -en) al final. Nota: quan un verb separable (_aufstehen_) acompanya un modal, NO es parteix — apareix sencer al final: _müssen aufstehen_."
+    }
+  }
+}

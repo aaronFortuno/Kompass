@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-26-ex-04",
+  "topicId": "A1a-26",
+  "title": "Tria el modal segons el matís",
+  "prompt": "Tria el modal que correspon a cada situació. Atenció: prohibició = _nicht dürfen_ (mai _nicht müssen_!); _Soll ich...?_ = \"vols que...?\"; _wollen_ és fort, _möchte_ és educat.",
+  "difficulty": 2,
+  "tags": ["modal", "semantica", "assessment", "matisos"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Al cinema, abans de la pel·lícula: \"Man {{1}} während des Films nicht telefonieren.\" (prohibició)\n2. El metge al pacient: \"Sie {{2}} mehr Obst und Gemüse essen.\" (consell/instrucció externa)\n3. Una amiga ofereix ajuda: \"{{3}} ich dir beim Umzug helfen?\" (oferiment)\n4. A l'oficina, mirant el rellotge: \"Ich {{4}} um drei Uhr zu einem wichtigen Termin gehen.\" (necessitat)\n5. A la botiga de roba: \"{{5}} ich das Hemd anprobieren?\" (demanar permís)\n6. Un nen al supermercat: \"Mama, ich {{6}} Schokolade!\" (voluntat ferma, infantil)",
+    "blanks": [
+      { "id": "1", "label": "3a sg. (prohibició)" },
+      { "id": "2", "label": "3a pl. formal _Sie_ (consell)" },
+      { "id": "3", "label": "1a sg. (oferiment)" },
+      { "id": "4", "label": "1a sg. (necessitat)" },
+      { "id": "5", "label": "1a sg. (permís)" },
+      { "id": "6", "label": "1a sg. (voluntat)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["muss", "darf", "will", "soll"] },
+      { "blankId": "2", "options": ["müssen", "dürfen", "sollen", "wollen"] },
+      { "blankId": "3", "options": ["Muss", "Darf", "Soll", "Will"] },
+      { "blankId": "4", "options": ["muss", "darf", "soll", "will"] },
+      { "blankId": "5", "options": ["Muss", "Darf", "Soll", "Will"] },
+      { "blankId": "6", "options": ["möchte", "will", "soll", "muss"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "darf",
+      "2": "sollen",
+      "3": "Soll",
+      "4": "muss",
+      "5": "Darf",
+      "6": "will"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has capturat els matisos: (1) prohibició = _nicht dürfen_; (2) instrucció del metge = _sollen_; (3) oferiment educat = _Soll ich...?_ (\"vols que...?\"); (4) necessitat objectiva = _müssen_; (5) demanar permís = _dürfen_; (6) nen entossudit = _wollen_ (mai _möchte_, perquè no és educat; mai _muss_, perquè no és necessitat)."
+    },
+    "incorrect": {
+      "default": "Claus: prohibició → _nicht dürfen_ (**mai** _nicht müssen_!). Consell d'una tercera persona (metge, cap) → _sollen_. _Soll ich...?_ = 'vols que jo...?'. Demanar permís → _dürfen_. Voluntat ferma (sobretot infantil) → _wollen_, no _möchte_."
+    }
+  }
+}

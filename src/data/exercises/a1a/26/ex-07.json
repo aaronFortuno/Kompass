@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-26-ex-07",
+  "topicId": "A1a-26",
+  "title": "_nicht müssen_ vs. _nicht dürfen_",
+  "prompt": "Decideix si cada afirmació és certa o falsa. Recorda la distinció crítica: _nicht müssen_ = \"no cal\"; _nicht dürfen_ = \"està prohibit\".",
+  "difficulty": 2,
+  "tags": ["modal", "nicht-muessen", "nicht-duerfen", "assessment", "truefalse"],
+  "stimulus": {
+    "type": "text",
+    "content": "Llegeix cada afirmació amb atenció. No et deixis portar per la intuïció del català: en alemany, la prohibició mai es fa amb _müssen_."
+  },
+  "interaction": {
+    "type": "trueFalse",
+    "statements": [
+      { "id": "s1", "text": "_Du musst hier nicht rauchen_ significa 'està prohibit fumar aquí'." },
+      { "id": "s2", "text": "_Du darfst hier nicht rauchen_ significa 'està prohibit fumar aquí'." },
+      { "id": "s3", "text": "_Ich muss nicht arbeiten_ significa 'no cal que treballi' (ningú m'obliga)." },
+      { "id": "s4", "text": "Per expressar prohibició (rètols, normes) en alemany, el modal adequat és _müssen + nicht_." }
+    ]
+  },
+  "validation": {
+    "type": "truthMap",
+    "answers": {
+      "s1": false,
+      "s2": true,
+      "s3": true,
+      "s4": false
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Tens clar el gran parany dels modals: **_nicht müssen_ = no cal** (absència d'obligació); **_nicht dürfen_ = està prohibit** (prohibició). No barregis mai els dos: si vols expressar una norma o una prohibició, el verb és sempre **_dürfen_**, mai _müssen_."
+    },
+    "incorrect": {
+      "default": "Fixa-t'hi bé: _nicht müssen_ **mai** és prohibició. _Ich muss nicht_ = 'no cal que'. Per expressar prohibició necessites **_dürfen + nicht/kein_**: _Man darf hier nicht rauchen_ = aquí no s'hi pot fumar. Si algun rètol diu _Sie müssen nicht..._ en realitat està dient 'vostè no està obligat a...', no 'prohibit'."
+    }
+  }
+}

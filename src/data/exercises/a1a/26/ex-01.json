@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-26-ex-01",
+  "topicId": "A1a-26",
+  "title": "Conjugació dels quatre modals nous",
+  "prompt": "Conjuga _müssen, dürfen, wollen_ i _sollen_ al singular. Recorda la regla modal: _ich_ i _er/sie/es_ no porten terminació i són iguals; al singular canvia la vocal (excepte _sollen_, que no canvia).",
+  "difficulty": 1,
+  "tags": ["modal", "muessen", "duerfen", "wollen", "sollen", "conjugacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Ich {{1}} heute viel arbeiten.\n2. {{2}} ich das Fenster öffnen?\n3. Er {{3}} Arzt werden.\n4. Du {{4}} mehr Wasser trinken, sagt der Arzt.",
+    "blanks": [
+      { "id": "1", "label": "_müssen_, 1a sg." },
+      { "id": "2", "label": "_dürfen_, 1a sg. — demanar permís" },
+      { "id": "3", "label": "_wollen_, 3a sg. — voluntat ferma" },
+      { "id": "4", "label": "_sollen_, 2a sg. — instrucció externa" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["muss", "musst", "müsse", "müsst"] },
+      { "blankId": "2", "options": ["Darf", "Darfst", "Dürfe", "Dürft"] },
+      { "blankId": "3", "options": ["wolle", "willt", "will", "wollt"] },
+      { "blankId": "4", "options": ["soll", "sollst", "solle", "sollt"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "muss",
+      "2": "Darf",
+      "3": "will",
+      "4": "sollst"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has aplicat la regla modal: _ich_ i _er/sie/es_ no porten terminació (_ich muss, er will_); _du_ porta -st (_du sollst_); i al singular la vocal canvia (_müssen → muss_, _wollen → will_, _dürfen → darf_), mentre que _sollen_ manté _o_."
+    },
+    "incorrect": {
+      "default": "Pistes: (1) _ich müssen_ → **muss** (sense -e, vocal u); (2) _ich dürfen_ → **Darf** (vocal a al singular, sense -e); (3) _er wollen_ → **will** (vocal i al singular, sense -t); (4) _du sollen_ → **sollst** (amb -st, _sollen_ no canvia la vocal)."
+    }
+  }
+}

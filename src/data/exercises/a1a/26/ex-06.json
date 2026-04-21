@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-26-ex-06",
+  "topicId": "A1a-26",
+  "title": "Diàleg: plans per al cap de setmana",
+  "prompt": "Completa el diàleg triant el modal adequat entre els sis. Força la tria conscient: _wollen_ (voluntat directa), _möchte_ (desig educat), _müssen_ (necessitat), _sollen_ (proposta), _dürfen_ (permís/prohibició), _können_ (capacitat).",
+  "difficulty": 3,
+  "tags": ["modal", "sis-modals", "assessment", "dialeg"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "— Hallo Anna! Was {{1}} du am Wochenende machen?\n— Ich weiß nicht. Ich {{2}} eigentlich zu Hause bleiben, weil ich viel arbeiten {{3}}.\n— Schade. {{4}} wir vielleicht am Sonntag zusammen ins Museum gehen?\n— Hm, gute Idee! Aber {{5}} man dort fotografieren?\n— Ich glaube nein. Man {{6}} im Museum keine Fotos machen.\n— Kein Problem. Ich {{7}} sowieso lieber ohne Kamera die Bilder ansehen.\n— Super! {{8}} du gut zu Fuß gehen, oder nehmen wir den Bus?\n— Zu Fuß, klar! Ich {{9}} unbedingt ein bisschen laufen.",
+    "blanks": [
+      { "id": "1", "label": "2a sg. (voluntat)" },
+      { "id": "2", "label": "1a sg. (desig suau)" },
+      { "id": "3", "label": "1a sg. (necessitat)" },
+      { "id": "4", "label": "1a pl. (proposta)" },
+      { "id": "5", "label": "3a sg. (preguntar permís)" },
+      { "id": "6", "label": "3a sg. (prohibició)" },
+      { "id": "7", "label": "1a sg. (preferència educada)" },
+      { "id": "8", "label": "2a sg. (capacitat)" },
+      { "id": "9", "label": "1a sg. (voluntat ferma)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["willst", "magst", "musst", "sollst"] },
+      { "blankId": "2", "options": ["möchte", "muss", "will", "darf"] },
+      { "blankId": "3", "options": ["muss", "darf", "will", "soll"] },
+      { "blankId": "4", "options": ["Müssen", "Dürfen", "Sollen", "Wollen"] },
+      { "blankId": "5", "options": ["muss", "darf", "will", "soll"] },
+      { "blankId": "6", "options": ["muss", "darf", "will", "soll"] },
+      { "blankId": "7", "options": ["möchte", "muss", "darf", "soll"] },
+      { "blankId": "8", "options": ["Kannst", "Musst", "Darfst", "Sollst"] },
+      { "blankId": "9", "options": ["will", "muss", "darf", "soll"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "willst",
+      "2": "möchte",
+      "3": "muss",
+      "4": "Sollen",
+      "5": "darf",
+      "6": "darf",
+      "7": "möchte",
+      "8": "Kannst",
+      "9": "will"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Increïble: has orquestrat la família sencera. **_wollen_** per voluntat directa (_Was willst du machen?_, _Ich will laufen_). **_möchte_** per desig suau o preferència educada (_Ich möchte bleiben_, _Ich möchte ansehen_). **_müssen_** per necessitat objectiva (_weil ich arbeiten muss_). **_sollen_** per propostes (_Sollen wir gehen?_). **_dürfen_** per permís (_Darf man fotografieren?_) i prohibició amb negació (_Man darf keine Fotos machen_). **_können_** per capacitat (_Kannst du zu Fuß gehen?_). Això és el mapa mental complet dels modals a l'A1."
+    },
+    "incorrect": {
+      "default": "Guia de tria ràpida: (1) voluntat forta o directa → _wollen_; (2) desig educat, preferència cortesa → _möchte_; (3) necessitat / obligació interna → _müssen_; (4) proposta ('vols que...?', 'què et sembla si...?') → _sollen_; (5) permís i prohibició (amb _nicht_) → _dürfen_; (6) capacitat o possibilitat → _können_. Si dubtes entre _wollen_ i _möchte_, pensa: sona brusc? → probablement toca _möchte_."
+    }
+  }
+}

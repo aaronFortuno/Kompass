@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-26-ex-03",
+  "topicId": "A1a-26",
+  "title": "La setmana de Klaus",
+  "prompt": "Completa el text conjugant els sis modals al present. Singular sense terminació a _ich_ i _er/sie/es_, _du_ amb -st, plural amb la vocal de l'infinitiu.",
+  "difficulty": 2,
+  "tags": ["modal", "conjugacio", "assessment", "tots-modals"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Hallo! Ich heiße Klaus und ich bin Student. Während der Woche {{1}} ich jeden Tag um sieben Uhr aufstehen.\nIn der Uni {{2}} man nicht essen oder trinken.\nAber ich {{3}} nach dem Unterricht mit Freunden ins Café gehen.\nAbends {{4}} ich meistens lernen, weil ich gute Noten bekommen möchte.\nAm Wochenende {{5}} ich endlich ausschlafen!\nUnd du? Was {{6}} du in deiner Freizeit machen?\n{{7}} wir am Samstag zusammen ins Kino gehen?",
+    "blanks": [
+      { "id": "1", "label": "_müssen_, 1a sg." },
+      { "id": "2", "label": "_dürfen_, 3a sg. impersonal (prohibició)" },
+      { "id": "3", "label": "_können_, 1a sg. (possibilitat)" },
+      { "id": "4", "label": "_müssen_, 1a sg." },
+      { "id": "5", "label": "_dürfen_, 1a sg. (permís, \"ara sí que puc\")" },
+      { "id": "6", "label": "_wollen_, 2a sg. (voluntat)" },
+      { "id": "7", "label": "_sollen_, 1a pl. (proposta)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["muss", "musst", "müsse", "müssen"] },
+      { "blankId": "2", "options": ["darf", "darft", "dürfe", "dürfen"] },
+      { "blankId": "3", "options": ["kann", "kannst", "könne", "können"] },
+      { "blankId": "4", "options": ["muss", "musst", "müsse", "müssen"] },
+      { "blankId": "5", "options": ["darf", "darfst", "dürfe", "dürfen"] },
+      { "blankId": "6", "options": ["willst", "will", "wollst", "wollt"] },
+      { "blankId": "7", "options": ["Sollen", "Sollst", "Solle", "Sollt"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "muss",
+      "2": "darf",
+      "3": "kann",
+      "4": "muss",
+      "5": "darf",
+      "6": "willst",
+      "7": "Sollen"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has aplicat la regla modal en totes les persones: singular sense terminació (_ich muss, ich darf, ich kann_), _du_ amb -st (_willst_), i plural amb la vocal de l'infinitiu (_wir sollen_). A més, has reconegut els matisos: _dürfen_ per permís i prohibició, _müssen_ per necessitat, _wollen_ per voluntat, _sollen_ per propostes."
+    },
+    "incorrect": {
+      "default": "Repassa la taula de conjugació. Al singular de _müssen_ → _muss_, _dürfen_ → _darf_, _können_ → _kann_, _wollen_ → _will_, _sollen_ → _soll_ (l'únic sense canvi vocàlic). Terminacions: _ich_ i _er/sie/es_ res, _du_ -st, _wir / sie_ -(e)n."
+    }
+  }
+}
