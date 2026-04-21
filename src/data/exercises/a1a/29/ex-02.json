@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-29-ex-02",
+  "topicId": "A1a-29",
+  "title": "Envàs o mesura? Fa plural o no?",
+  "prompt": "Associa cada expressió amb la categoria corresponent. Recorda: els **envasos** fan plural com a substantius normals (_zwei Flaschen_); les **mesures i pesos** es queden invariables en singular (_zwei Liter_).",
+  "difficulty": 1,
+  "tags": ["mengenangaben", "plural", "envasos", "mesures", "quick-check"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "c1", "group": "Expressió", "content": { "type": "text", "content": "_zwei Flaschen Wasser_" } },
+      { "id": "c2", "group": "Expressió", "content": { "type": "text", "content": "_drei Dosen Tomaten_" } },
+      { "id": "c3", "group": "Expressió", "content": { "type": "text", "content": "_fünf Becher Joghurt_" } },
+      { "id": "c4", "group": "Expressió", "content": { "type": "text", "content": "_zwei Kilo Kartoffeln_" } },
+      { "id": "c5", "group": "Expressió", "content": { "type": "text", "content": "_drei Liter Milch_" } },
+      { "id": "c6", "group": "Expressió", "content": { "type": "text", "content": "_vier Stück Gurken_" } },
+      { "id": "g1", "group": "Categoria", "content": { "type": "text", "content": "**Envàs → fa plural** (_Flaschen_)" } },
+      { "id": "g2", "group": "Categoria", "content": { "type": "text", "content": "**Envàs → fa plural** (_Dosen_)" } },
+      { "id": "g3", "group": "Categoria", "content": { "type": "text", "content": "**Envàs → fa plural** (_Becher_, igual en plural)" } },
+      { "id": "g4", "group": "Categoria", "content": { "type": "text", "content": "**Mesura → NO fa plural** (_Kilo_)" } },
+      { "id": "g5", "group": "Categoria", "content": { "type": "text", "content": "**Mesura → NO fa plural** (_Liter_)" } },
+      { "id": "g6", "group": "Categoria", "content": { "type": "text", "content": "**Mesura → NO fa plural** (_Stück_)" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Expressió",
+    "groupBLabel": "Categoria"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["c1", "g1"],
+      ["c2", "g2"],
+      ["c3", "g3"],
+      ["c4", "g4"],
+      ["c5", "g5"],
+      ["c6", "g6"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Exacte! Els **envasos** (_Flasche, Dose, Becher_) es comporten com substantius normals i fan plural. Les **mesures i pesos** (_Kilo, Liter, Stück_) es queden en singular encara que siguin dos, tres o cinc.",
+      "references": ["A1a-29"]
+    },
+    "incorrect": {
+      "default": "Recorda la regla: envasos → plural (_Flaschen, Dosen, Becher_, etc.); mesures i pesos → singular invariable (_Kilo, Liter, Gramm, Stück, Bund_)."
+    }
+  }
+}

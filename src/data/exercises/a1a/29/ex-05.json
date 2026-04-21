@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-29-ex-05",
+  "topicId": "A1a-29",
+  "title": "La llista de la compra: sense preposicions",
+  "prompt": "Completa la llista de la compra triant el producte correcte (sense preposició).",
+  "difficulty": 2,
+  "tags": ["mengenangaben", "preposicio", "vocabulari", "dropdownfill", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Al súper: _Ich nehme ein Paket {{1}}, eine Dose {{2}} und 500 Gramm {{3}}._ (Agafo un paquet d'arròs, una llauna de tomàquet i 500 grams de fideus.)",
+    "blanks": [
+      { "id": "1", "label": "arròs" },
+      { "id": "2", "label": "tomàquet" },
+      { "id": "3", "label": "fideus" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Reis", "von Reis", "Nudeln"] },
+      { "blankId": "2", "options": ["Tomaten", "von Tomaten", "Nudeln"] },
+      { "blankId": "3", "options": ["Nudeln", "von Nudeln", "Reis"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Reis",
+      "2": "Tomaten",
+      "3": "Nudeln"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Exacte! _ein Paket ==Reis==, eine Dose ==Tomaten== und 500 Gramm ==Nudeln==_. Tres expressions de quantitat, cap preposició, i els productes directament darrere de l'envàs o la mesura.",
+      "references": ["A1a-29"]
+    },
+    "incorrect": {
+      "default": "Cap de les opcions amb _von_ és correcta. En alemany no hi va cap preposició entre la quantitat i el producte: _ein Paket Reis_, _eine Dose Tomaten_, _500 Gramm Nudeln_."
+    }
+  }
+}

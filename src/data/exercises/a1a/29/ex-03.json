@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-29-ex-03",
+  "topicId": "A1a-29",
+  "title": "Tradueix: _una ampolla d'aigua_",
+  "prompt": "Tradueix l'expressió _una ampolla d'aigua_ a l'alemany. Recorda: no hi va cap preposició entre l'envàs i el producte.",
+  "difficulty": 1,
+  "tags": ["mengenangaben", "traduccio", "typein", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_una ampolla d'aigua_ → _eine {{1}} {{2}}._",
+    "blanks": [
+      { "id": "1", "label": "envàs" },
+      { "id": "2", "label": "producte" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "envàs" },
+      { "blankId": "2", "placeholder": "producte" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Flasche",
+      "2": "Wasser"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte! _eine ==Flasche== ==Wasser==_, sense cap preposició entre els dos substantius. El _de_ del català desapareix en alemany.",
+      "references": ["A1a-29"]
+    },
+    "incorrect": {
+      "default": "La resposta és _eine ==Flasche Wasser==_. Recorda: no hi va cap preposició (ni _von_ ni _aus_) entre l'envàs i el producte. Els dos substantius s'enganxen directament."
+    }
+  }
+}

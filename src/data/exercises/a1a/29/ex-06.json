@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-29-ex-06",
+  "topicId": "A1a-29",
+  "title": "Corregeix: frases amb errors típics",
+  "prompt": "Per a cada frase, digues si és correcta o conté un error típic (preposició sobrera o plural mal aplicat).",
+  "difficulty": 2,
+  "tags": ["mengenangaben", "errors", "truefalse", "assessment"],
+  "stimulus": {
+    "type": "text",
+    "content": "Fixa't en la preposició i en les terminacions de plural. Recorda: sense _von_ / _aus_; envasos sí fan plural; mesures no."
+  },
+  "interaction": {
+    "type": "trueFalse",
+    "statements": [
+      { "id": "s1", "text": "_Ich möchte eine Tafel Schokolade._ — és correcte." },
+      { "id": "s2", "text": "_Ich möchte eine Tafel von Schokolade._ — és correcte." },
+      { "id": "s3", "text": "_Zwei Liter Milch, bitte._ — és correcte (_Liter_ en singular, encara que siguin dos)." },
+      { "id": "s4", "text": "_Zwei Liters Milch, bitte._ — és correcte." },
+      { "id": "s5", "text": "_Drei Flaschen Bier._ — és correcte (_Flasche_ en plural _Flaschen_ perquè són tres)." }
+    ]
+  },
+  "validation": {
+    "type": "truthMap",
+    "answers": {
+      "s1": true,
+      "s2": false,
+      "s3": true,
+      "s4": false,
+      "s5": true
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé! Tens les dues regles assimilades: **sense preposició** entre envàs/mesura i producte (_eine Tafel Schokolade_, no _von Schokolade_); **unitats de mesura invariables** (_zwei Liter_, no _Liters_); **envasos com a substantius normals** (_drei Flaschen_, amb plural).",
+      "references": ["A1a-29"]
+    },
+    "incorrect": {
+      "default": "Revisa: (s2) _von_ no hi va mai entre envàs i producte. (s4) _Liter_ és unitat de mesura i no fa plural, ni tan sols amb número. (s1, s3, s5) sí que són correctes."
+    }
+  }
+}

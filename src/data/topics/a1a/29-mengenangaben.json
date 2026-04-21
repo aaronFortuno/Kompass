@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-29",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 29,
+  "title": "Mengenangaben: envasos, mesures i pesos",
+  "shortTitle": "Mengenangaben",
+  "description": "Expressions de quantitat en alemany: envasos (_Verpackungen_: Schachtel, Paket, Packung, Beutel, Becher, Glas, Flasche, Dose, Tasse, Netz, Bund, Tafel, Tube) i mesures/pesos (_Maße und Gewichte_: Gramm, Kilogramm/Kilo, Liter, Milliliter). Dues regles clau: (1) entre l'envàs/mesura i el producte no hi va cap preposició (_eine Flasche ∅ Wasser_, a diferència del català _una ampolla d'aigua_); (2) els envasos fan plural com a substantius normals (_zwei Flaschen_), però les unitats de mesura i pesos es mantenen invariables en singular (_zwei Liter, zwei Kilo, vier Stück_). Vocabulari i regles imprescindibles per fer la compra, llegir receptes i demanar al restaurant.",
+  "axes": ["vocabulari-tematic"],
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "Anar a comprar en alemany és un dels moments on més clar se't fa que la llengua funciona amb una lògica diferent. En català dius _un quilo **de** patates_, _una ampolla **d'**aigua_, _dos paquets **de** fideus_: la preposició ==**de**== enllaça sempre la mesura o l'envàs amb el producte. En alemany, aquesta preposició senzillament **no hi és**.\n\n> _un quilo **de** patates_ → _ein Kilo ==∅== Kartoffeln_\n> _una ampolla **d'**aigua_ → _eine Flasche ==∅== Wasser_\n> _un paquet **de** fideus_ → _eine Packung ==∅== Nudeln_\n\nAquesta lliçó cobreix les **Mengenangaben** (expressions de quantitat): els envasos (_Verpackungen_), les mesures i pesos (_Maße und Gewichte_), i la regla que governa com s'enganxen al producte. És una lliçó curta però amb molt ús pràctic: sense aquestes paraules no pots fer la compra ni llegir una recepta."
+        }
+      ]
+    },
+    {
+      "id": "verpackungen",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Els envasos (_Verpackungen_)\n\nUn **envàs** és allò que conté el producte: una capsa, una ampolla, una llauna, un paquet. A l'alemany són substantius normals, amb gènere i plural, que hauràs d'aprendre com a vocabulari."
+        },
+        {
+          "type": "table",
+          "headers": ["Singular", "Plural", "Català"],
+          "rows": [
+            ["_das ==Stück==_", "_die Stücke_", "la peça, el tros"],
+            ["_die ==Schachtel==_", "_die Schachteln_", "la capsa"],
+            ["_das ==Paket==_ / _die ==Packung==_", "_die Pakete_ / _die Packungen_", "el paquet"],
+            ["_der ==Beutel==_", "_die Beutel_", "la bossa"],
+            ["_der ==Becher==_", "_die Becher_", "la terrina, el got (de iogurt)"],
+            ["_das ==Glas==_", "_die Gläser_", "el pot (de vidre)"],
+            ["_die ==Flasche==_", "_die Flaschen_", "l'ampolla"],
+            ["_die ==Dose==_", "_die Dosen_", "la llauna"],
+            ["_die ==Tasse==_", "_die Tassen_", "la tassa"],
+            ["_das ==Netz==_", "_die Netze_", "la xarxa (p. ex. de taronges)"],
+            ["_der ==Bund==_", "_die Bund_", "el manat (d'herbes)"],
+            ["_die ==Tafel==_", "_die Tafeln_", "la tauleta (de xocolata)"],
+            ["_die ==Tube==_", "_die Tuben_", "el tub (mostassa, pasta de dents…)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Nota pedagògica",
+          "body": "Fixa't que un mateix envàs pot ser bastant diferent segons la llengua. _==Becher==_ és tant la terrina del iogurt com un got de plàstic; _==Glas==_ és el pot de melmelada o el got de beure (segons context); _==Netz==_ és la bosseta de xarxa on venen les taronges o les patates al súper. No intentis traduir literalment; pensa en l'envàs físic."
+        }
+      ]
+    },
+    {
+      "id": "masse-gewichte",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Mesures i pesos (_Maße und Gewichte_)\n\nLes unitats del sistema mètric, que comparteixes amb el català:"
+        },
+        {
+          "type": "table",
+          "headers": ["Abreviatura", "Substantiu alemany", "Català"],
+          "rows": [
+            ["**g**", "_das ==Gramm==_", "gram"],
+            ["**kg**", "_das ==Kilogramm==_ (col·loquial: _das Kilo_)", "quilogram / quilo"],
+            ["**l**", "_der ==Liter==_", "litre"],
+            ["**ml**", "_der ==Milliliter==_", "mil·lilitre"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Observació",
+          "body": "A la parla quotidiana, _Kilogramm_ gairebé sempre es diu _==Kilo==_ (com en català). Les dues formes són correctes; a la botiga, sentiràs _ein Kilo Äpfel_ molt més sovint que _ein Kilogramm Äpfel_."
+        }
+      ]
+    },
+    {
+      "id": "regla-central",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### La regla clau: **sense preposició**\n\nAquí és on l'alemany i el català divergeixen de manera espectacular. Quan combines un envàs, una mesura o un pes amb un producte, en alemany ==**no hi ha cap preposició entremig**==. Simplement poses un substantiu al costat de l'altre.\n\n> **CA:** _un paquet **de** fideus_\n> **ES:** _un paquete **de** fideos_\n> **DE:** _eine Packung ==∅== Nudeln_\n\n> **CA:** _un quilo **de** patates_\n> **ES:** _un kilo **de** patatas_\n> **DE:** _ein Kilo ==∅== Kartoffeln_\n\nEn altres paraules: la fórmula alemanya és simplement\n\n> [ **quantitat + envàs/mesura** ] + [ **producte** ]\n\nsense res que les uneixi. El producte apareix ==directament== darrere de l'envàs o la mesura."
+        },
+        {
+          "type": "explanation",
+          "body": "**Més exemples (del material IOC):**\n\n- _eine ==Schachtel== Petersilie_ — una capsa de julivert\n- _ein ==Paket== Reis_ — un paquet d'arròs\n- _eine ==Packung== Nudeln_ — una bossa/paquet de fideus\n- _ein ==Beutel== Karotten_ — una bossa de pastanagues\n- _ein ==Becher== Joghurt_ — una terrina de iogurt\n- _ein ==Glas== Marmelade_ — un pot de melmelada\n- _eine ==Flasche== Bier_ — una ampolla de cervesa\n- _eine ==Dose== Tomaten_ — una llauna de tomàquet\n- _eine ==Tasse== Champignons_ — una tassa de xampinyons\n- _ein ==Netz== Kartoffeln_ — una xarxa de patates\n- _eine ==Tafel== Schokolade_ — una tauleta de xocolata\n- _eine ==Tube== Senf_ — un tub de mostassa\n- _500 ==Gramm== Nudeln_ — 500 grams de fideus\n- _ein ==Liter== Milch_ — un litre de llet\n\nCom pots comprovar: mai no apareix _von_, _aus_ ni cap altra preposició entre l'envàs i el producte. ==És aposició pura==."
+        }
+      ]
+    },
+    {
+      "id": "quick-check-sense-preposicio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-29-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "plural-mesures",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Les mesures i els pesos **no fan plural**\n\nAquí hi ha una segona regla que pot sorprendre. Les paraules _Stück_, _Bund_, _Gramm_, _Kilo(gramm)_, _Liter_, _Milliliter_ — quan van acompanyades d'un número més gran d'1 — ==es mantenen en singular==.\n\n> _ein ==Stück== Gurke_ → _vier ==Stück== Gurken_ (**no** _vier Stücke Gurken_)\n> _ein ==Bund== Suppengrün_ → _zwei ==Bund== Suppengrün_\n> _ein ==Kilo== Apfel_ → _zwei ==Kilo== Orangen_ (**no** _zwei Kilos_)\n> _ein ==Liter== Milch_ → _zwei ==Liter== Saft_\n\nFixa't en el contrast amb el **producte**: _Gurke_ → _Gurken_ (plural normal, perquè hi ha diverses cogombres). El que no canvia és la **unitat de mesura**.\n\n**Exemples complets del material IOC:**\n\n- _ein ==Stück== Gurke, vier ==Stück== Gurken_\n- _500 ==Gramm== Nudeln_\n- _ein ==Kilogramm== Äpfel, zwei ==Kilogramm== Orangen, fünf ==Kilo== Kartoffeln_\n- _ein ==Liter== Milch, zwei ==Liter== Saft_\n- _250 ==Milliliter== Ketchup_"
+        },
+        {
+          "type": "explanation",
+          "body": "#### En canvi, els envasos **sí que fan plural**\n\nEls envasos (_Schachtel, Paket, Flasche, Dose, Becher…_) es comporten com substantius normals i ==adopten la forma plural== quan n'hi ha més d'un. És la diferència entre \"una unitat de mesura fixa\" (singular invariable) i \"un objecte comptable\" (plural normal)."
+        },
+        {
+          "type": "table",
+          "headers": ["Singular", "Plural amb número"],
+          "rows": [
+            ["_eine ==Schachtel== Petersilie_", "_zwei ==Schachteln== Spinat_"],
+            ["_ein ==Paket== Reis_", "_zwei ==Pakete== Nudeln_"],
+            ["_eine ==Packung== Nudeln_", "_drei ==Packungen== Reis_"],
+            ["_ein ==Beutel== Karotten_", "_zwei ==Beutel== Kartoffeln_"],
+            ["_ein ==Becher== Joghurt_", "_fünf ==Becher== Erdbeerjoghurt_"],
+            ["_ein ==Glas== Marmelade_", "_drei ==Gläser== Bolognesesauce_"],
+            ["_eine ==Flasche== Bier_", "_vier ==Flaschen== Cola_"],
+            ["_eine ==Dose== Tomaten_", "_zwei ==Dosen== Limonade_"],
+            ["_eine ==Tasse== Champignons_", "_zwei ==Tassen== Zwiebeln_"],
+            ["_ein ==Netz== Kartoffeln_", "_zwei ==Netze== Orangen_"],
+            ["_eine ==Tafel== Schokolade_", "_drei ==Tafeln== Schokolade_"],
+            ["_eine ==Tube== Senf_", "_zwei ==Tuben== Mayonäse_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Resum en una línia",
+          "body": "==**Envasos** fan plural== (_zwei Flaschen_); ==**mesures i pesos** no fan plural== (_zwei Liter, zwei Kilo, vier Stück_)."
+        }
+      ]
+    },
+    {
+      "id": "quick-check-plural",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-29-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. Afegir-hi _von_ o _aus_ per \"traduir\" el _de_.**\nÉs l'error número u. L'instint romànic demana una preposició d'enllaç, però en alemany no hi va.\n\n- Incorrecte: _eine Flasche ==von== Wasser_ ❌\n- Incorrecte: _ein Kilo ==aus== Kartoffeln_ ❌\n- Correcte: _eine Flasche ==∅== Wasser_ ✅\n- Correcte: _ein Kilo ==∅== Kartoffeln_ ✅\n\n**2. Posar _Kilos_, _Liters_, _Gramms_ en plural.**\nLes unitats de mesura no fan plural. El número ja indica la quantitat; la paraula es queda igual.\n\n- Incorrecte: _zwei ==Kilos== Orangen_ ❌\n- Incorrecte: _drei ==Liters== Saft_ ❌\n- Correcte: _zwei ==Kilo== Orangen_ ✅\n- Correcte: _drei ==Liter== Saft_ ✅\n\n**3. No fer plural l'envàs quan toca.**\nAquest és l'error contrari: per excés de prudència, algú pot deixar _Flasche_ o _Dose_ en singular amb número plural. Però els envasos **sí que** fan plural normal.\n\n- Incorrecte: _zwei ==Flasche== Cola_ ❌\n- Correcte: _zwei ==Flaschen== Cola_ ✅\n\n**4. Posar l'article del producte enmig.**\nEn alemany, el producte darrere d'una expressió de quantitat ==no porta article==. No es diu _eine Flasche **das** Wasser_ ni _ein Kilo **die** Kartoffeln_. El producte apareix \"pelat\".\n\n- Incorrecte: _eine Tasse ==der== Kaffee_ ❌\n- Correcte: _eine Tasse ==∅== Kaffee_ ✅\n\n**5. Confondre _Glas_ / _Becher_ / _Tasse_.**\nEls tres es poden traduir per \"got\" o \"tassa\" en moments diferents, però a la pràctica són envasos molt distints. _==Glas==_ és vidre (pot de melmelada, got de beure); _==Becher==_ és terrina o got de plàstic (iogurt, gelat); _==Tasse==_ és la tassa amb nansa (cafè, te). Aprèn cada paraula lligada al seu producte prototípic."
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Parany crític",
+          "body": "**Mai _von_ o _aus_ entre quantitat i producte.** Es diu _eine Flasche **Wasser**_, no _~~eine Flasche von Wasser~~_. I les unitats de mesura **no fan plural**: _zwei **Liter**_, _drei **Kilo**_, _vier **Stück**_ — no _~~zwei Liters~~_ ni _~~drei Kilos~~_."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-29-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-29-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-29-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-29-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi del tema\n\n**Tres idees per endur-te a casa:**\n\n1. **Sense preposició** — _una ampolla **d'**aigua_ → _eine Flasche ==∅== Wasser_. Entre l'envàs/mesura i el producte no hi va res. El _de_ català desapareix. Aquesta és la regla estrella de la lliçó, i l'error més fàcil de cometre.\n2. **Envasos fan plural, mesures no** — _==zwei Flaschen==_ (envàs, plural normal) / _==zwei Liter==, ==zwei Kilo==, ==vier Stück==_ (mesures, singular invariable). Memoritza la parella: _Flasche/Flaschen_ sí, _Liter/Liter_ sí (igual).\n3. **Vocabulari d'envasos** — _Schachtel, Paket, Packung, Beutel, Becher, Glas, Flasche, Dose, Tasse, Netz, Bund, Tafel, Tube_. Són paraules molt útils a l'hora de comprar i cuinar. No intentis traduir-les literalment: associa cada paraula al seu envàs físic prototípic (_Becher_ = terrina de iogurt, _Tafel_ = tauleta de xocolata, _Netz_ = bosseta de xarxa)."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista pràctica",
+          "body": "La propera vegada que facis una llista de la compra, intenta escriure-la mentalment en alemany. _2 Flaschen Wasser, 1 Kilo Kartoffeln, 1 Paket Reis, 500 Gramm Nudeln, 1 Tafel Schokolade…_ Repetir aquest exercici automatitza tant el vocabulari d'envasos com la regla d'absència de preposició."
+        },
+        {
+          "type": "explanation",
+          "body": "**Connexions:** aquesta lliçó encaixa amb el vocabulari d'aliments (A1a) i amb els contextos de **compra i restaurant**. Més endavant, a A1b, aquestes expressions et sortiran sovint en frases amb _möchten_ (_Ich möchte ein Kilo Äpfel, bitte_) i amb l'acusatiu dels productes comptables (p. ex. _Ich nehme zwei Flaschen Wasser_ — els envasos van en acusatiu, però la construcció interna no canvia)."
+        }
+      ]
+    }
+  ]
+}

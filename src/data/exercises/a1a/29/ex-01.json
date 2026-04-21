@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-29-ex-01",
+  "topicId": "A1a-29",
+  "title": "Sense preposició: la regla bàsica",
+  "prompt": "Llegeix cada afirmació sobre com s'enganxen l'envàs i el producte en alemany, i digues si és certa o falsa.",
+  "difficulty": 1,
+  "tags": ["mengenangaben", "preposicio", "quick-check"],
+  "stimulus": {
+    "type": "text",
+    "content": "Entre l'envàs/mesura i el producte, en alemany no hi va cap preposició."
+  },
+  "interaction": {
+    "type": "trueFalse",
+    "statements": [
+      { "id": "s1", "text": "En alemany es diu _eine Flasche **von** Wasser_ (amb _von_)." },
+      { "id": "s2", "text": "En alemany es diu _eine Flasche Wasser_ (sense preposició)." },
+      { "id": "s3", "text": "En català fem servir la preposició _de_ (_una ampolla **d'**aigua_), però en alemany no cal res entre l'envàs i el producte." },
+      { "id": "s4", "text": "La fórmula alemanya és _quantitat + envàs + producte_, amb els substantius l'un darrere l'altre." }
+    ]
+  },
+  "validation": {
+    "type": "truthMap",
+    "answers": {
+      "s1": false,
+      "s2": true,
+      "s3": true,
+      "s4": true
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé! La regla és clara: en alemany, entre l'envàs/mesura i el producte ==no hi va cap preposició==. _eine Flasche Wasser_ (no pas _eine Flasche von Wasser_).",
+      "references": ["A1a-29"]
+    },
+    "incorrect": {
+      "default": "Revisa: _eine Flasche Wasser_ és **correcte** (els dos substantius van junts, sense preposició). _eine Flasche von Wasser_ és un calc del català o l'anglès i sona estrany en alemany."
+    }
+  }
+}

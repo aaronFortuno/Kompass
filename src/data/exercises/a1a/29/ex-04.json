@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-29-ex-04",
+  "topicId": "A1a-29",
+  "title": "Envàs vs mesura: plural o singular?",
+  "prompt": "Tria la forma correcta segons si és envàs (fa plural) o mesura (no fa plural).",
+  "difficulty": 2,
+  "tags": ["mengenangaben", "plural", "dropdownfill", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Ich kaufe drei {{1}} Cola und zwei {{2}} Orangen._ (Compro tres ampolles de cola i dos quilos de taronges.)",
+    "blanks": [
+      { "id": "1", "label": "envàs (plural)" },
+      { "id": "2", "label": "mesura (invariable)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Flasche", "Flaschen", "Flaschens"] },
+      { "blankId": "2", "options": ["Kilo", "Kilos", "Kilogrämme"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Flaschen",
+      "2": "Kilo"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé! _drei ==Flaschen== Cola_ (envàs → plural normal) i _zwei ==Kilo== Orangen_ (mesura → singular invariable). Les dues regles combinades en una mateixa frase.",
+      "references": ["A1a-29"]
+    },
+    "incorrect": {
+      "default": "Repassem: _Flasche_ és un envàs → fa plural _Flaschen_ (amb número plural). _Kilo_ és una unitat de mesura → es queda en _Kilo_ encara que siguin dos, tres o cinc."
+    }
+  }
+}
