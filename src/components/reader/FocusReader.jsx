@@ -359,10 +359,10 @@ function ExampleBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed 
           onDone={() => setDeDone(true)}
         />
         {deDone && beat.ex.ca ? (
-          <p className="kf-beat-ex-ca kf-fade-in">{beat.ex.ca}</p>
+          <p className="kf-beat-ex-ca kf-fade-in">{parseInline(beat.ex.ca)}</p>
         ) : null}
         {deDone && beat.ex.note ? (
-          <p className="kf-beat-ex-note kf-fade-in">{beat.ex.note}</p>
+          <p className="kf-beat-ex-note kf-fade-in">{parseInline(beat.ex.note)}</p>
         ) : null}
       </div>
     </>
@@ -379,7 +379,7 @@ function PronBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed }) 
       <div className="kf-beat-pron">
         <span className="kf-marker">Pronom</span>
         <h2 className="kf-beat-pron-huge">{tab.pron}</h2>
-        {tab.gloss ? <p className="kf-beat-pron-gloss">= {tab.gloss}</p> : null}
+        {tab.gloss ? <p className="kf-beat-pron-gloss">= {parseInline(tab.gloss)}</p> : null}
         {tab.note ? (
           <Typed
             text={tab.note}
@@ -393,7 +393,7 @@ function PronBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed }) 
         {noteDone && tab.example ? (
           <div className="kf-beat-pron-ex kf-fade-in">
             <div className="de">{parseInline(tab.example.de)}</div>
-            {tab.example.ca ? <div className="ca">{tab.example.ca}</div> : null}
+            {tab.example.ca ? <div className="ca">{parseInline(tab.example.ca)}</div> : null}
           </div>
         ) : null}
       </div>
@@ -408,10 +408,10 @@ function PairBeat({ beat, step, stepIdx, showKicker }) {
       {showKicker ? <BeatKicker step={step} stepIdx={stepIdx} beatKicker={step.id} /> : null}
       <div className="kf-beat-pair kf-fade-in">
         <span className="kf-marker kf-block-wide">Possessiu {beat.idx} / {beat.total}</span>
-        <span className="kf-beat-pair-personal">{pair.personal}</span>
+        <span className="kf-beat-pair-personal">{parseInline(pair.personal)}</span>
         <span className="kf-beat-pair-arrow">→</span>
-        <span className="kf-beat-pair-poss">{pair.possessive}</span>
-        {pair.gloss ? <span className="kf-beat-pair-gloss">{pair.gloss}</span> : null}
+        <span className="kf-beat-pair-poss">{parseInline(pair.possessive)}</span>
+        {pair.gloss ? <span className="kf-beat-pair-gloss">{parseInline(pair.gloss)}</span> : null}
       </div>
     </>
   );
@@ -495,7 +495,7 @@ function CalloutBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed 
           <Icon size={20} aria-hidden="true" />
         </div>
         <div className="kf-beat-callout-body">
-          {c.title ? <h4>{c.title}</h4> : null}
+          {c.title ? <h4>{parseInline(c.title)}</h4> : null}
           {c.body ? (
             <Typed
               text={c.body}
@@ -1480,7 +1480,7 @@ export function FocusReader({ topic }) {
             >
               <kbd>p</kbd>
               <span className="lbl">
-                {settings.autoPlay ? (autoPlayPaused ? 'pausat' : 'auto') : 'play'}
+                {settings.autoPlay ? (autoPlayPaused ? 'pause' : 'auto') : 'play'}
               </span>
             </span>
             <span className="kf-sep" />
