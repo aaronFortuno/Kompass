@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-25-ex-02",
+  "topicId": "A1b-25",
+  "title": "Conjuga _sein_ i _haben_ en Präteritum",
+  "prompt": "Escriu la forma correcta de **_war_** (de _sein_) o **_hatte_** (de _haben_) segons la persona. Recorda: ==_ich_ i _er/sie/es_ tenen la **mateixa** forma==.",
+  "difficulty": 1,
+  "tags": ["sein", "haben", "prateritum", "conjugacio", "typeIn"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich {{1}} gestern im Theater._\n2. _Wo {{2}} du am Wochenende?_\n3. _Wir {{3}} keine Zeit._\n4. _Ihr {{4}} sehr pünktlich!_\n5. _Meine Eltern {{5}} Urlaub in Spanien._\n6. _Es {{6}} kalt und windig._\n7. _Du {{7}} recht, es war zu teuer._\n8. _Ich {{8}} als Kind einen Hund._\n9. _Sie (ella) {{9}} sehr glücklich._\n10. _{{10}} ihr zufrieden mit dem Essen?_",
+    "blanks": [
+      { "id": "1", "label": "1. _sein_, _ich_" },
+      { "id": "2", "label": "2. _sein_, _du_" },
+      { "id": "3", "label": "3. _haben_, _wir_" },
+      { "id": "4", "label": "4. _sein_, _ihr_" },
+      { "id": "5", "label": "5. _haben_, _sie_ (ells)" },
+      { "id": "6", "label": "6. _sein_, _es_" },
+      { "id": "7", "label": "7. _haben_, _du_" },
+      { "id": "8", "label": "8. _haben_, _ich_" },
+      { "id": "9", "label": "9. _sein_, _sie_ (ella)" },
+      { "id": "10", "label": "10. _sein_, _ihr_ (a l'inici de frase, amb majúscula)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "sein, ich" },
+      { "blankId": "2", "placeholder": "sein, du" },
+      { "blankId": "3", "placeholder": "haben, wir" },
+      { "blankId": "4", "placeholder": "sein, ihr" },
+      { "blankId": "5", "placeholder": "haben, sie (pl.)" },
+      { "blankId": "6", "placeholder": "sein, es" },
+      { "blankId": "7", "placeholder": "haben, du" },
+      { "blankId": "8", "placeholder": "haben, ich" },
+      { "blankId": "9", "placeholder": "sein, sie (ella)" },
+      { "blankId": "10", "placeholder": "Sein, ihr (majúscula)" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["war"],
+      "2": ["warst"],
+      "3": ["hatten"],
+      "4": ["wart"],
+      "5": ["hatten"],
+      "6": ["war"],
+      "7": ["hattest"],
+      "8": ["hatte"],
+      "9": ["war"],
+      "10": ["wart"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Ja tens memoritzada la conjugació: **_sein_** → _war, warst, war, waren, wart, waren_ (irregular total). **_haben_** → _hatte, hattest, hatte, hatten, hattet, hatten_ (arrel _hatt-_ + terminacions regulars de Präteritum).",
+      "references": ["A1b-25"]
+    },
+    "incorrect": {
+      "default": "Revisa les dues taules. _sein_ és **irregular**: _war_ (ich/er), _warst_ (du), _waren_ (wir/sie), _wart_ (ihr). _haben_ segueix el patró amb _hatt-_: _hatte_ (ich/er), _hattest_ (du), _hatten_ (wir/sie), _hattet_ (ihr). ==_ich_ i _er/sie/es_ coincideixen sempre==.",
+      "byResponse": [
+        {
+          "match": { "1": "ware" },
+          "message": "_ich_ no afegeix _-e_ al Präteritum: la forma és ==**_war_**==, arrel seca. _wäre_ (amb Umlaut) seria Konjunktiv II, un altre temps."
+        },
+        {
+          "match": { "2": "warts" },
+          "message": "La _-st_ de _du_ va sencera, sense _t_ intermedi: ==**_warst_**==, no _warts_."
+        },
+        {
+          "match": { "3": "hatte" },
+          "message": "_wir_ porta terminació **_-n_**: ==**_hatten_**==. _hatte_ seria _ich / er / sie / es_."
+        },
+        {
+          "match": { "4": "ward" },
+          "message": "_ihr_ + _sein_ en Präteritum és ==**_wart_**== (amb _-t_, no _-d_)."
+        },
+        {
+          "match": { "4": "waret" },
+          "message": "_sein_ és irregular total i no segueix la taula estàndard. _ihr_ → ==**_wart_**== (no _waret_)."
+        },
+        {
+          "match": { "5": "hatte" },
+          "message": "_meine Eltern_ és plural (_sie_) → terminació _-n_: ==**_hatten_**==."
+        },
+        {
+          "match": { "6": "ware" },
+          "message": "_es_ (3a persona singular) coincideix amb _ich_ en Präteritum: ==**_war_**==, arrel seca."
+        },
+        {
+          "match": { "7": "hattst" },
+          "message": "_haben_ té arrel _hatt-_ + _-est_ per a _du_: ==**_hattest_**==, no _hattst_."
+        },
+        {
+          "match": { "8": "hattete" },
+          "message": "Sense doble _-te-_: l'arrel ja és _hatt-_ i _ich_ no afegeix terminació. Resultat: ==**_hatte_**==."
+        },
+        {
+          "match": { "9": "warst" },
+          "message": "_sie_ (ella) és **3a persona singular**, no 2a. La forma és ==**_war_**== (igual que _ich/er/es_). _warst_ seria _du_."
+        },
+        {
+          "match": { "10": "wart ihr" },
+          "message": "Escriu **només el verb** al buit: ==**_Wart_**==. _ihr_ ja ve donat a la frase."
+        }
+      ]
+    }
+  }
+}

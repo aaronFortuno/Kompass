@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-25-ex-04",
+  "topicId": "A1b-25",
+  "title": "Construir frases en Präteritum (ordre V2)",
+  "prompt": "Per a cada conjunt de paraules desordenades, tria la frase ==**correctament ordenada**==. Recorda: el verb conjugat (_war, hatte, konnte…_) sempre ocupa la ==**segona posició**== (V2). Si comences per un complement temporal, el subjecte va després del verb (inversió).",
+  "difficulty": 2,
+  "tags": ["order", "sintaxi", "V2", "prateritum"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _gestern · ich · müde · war · sehr_ → {{1}}\n\n2. _hatten · keine · wir · Zeit_ → {{2}}\n\n3. _als Kind · konnte · ich · schwimmen · nicht_ → {{3}}\n\n4. _gab · im Park · es · viele Leute_ → {{4}}\n\n5. _musste · sie · gestern · lange · arbeiten_ → {{5}}\n\n6. _warst · du · am Samstag · wo_ → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "1. afirmativa, complement temporal" },
+      { "id": "2", "label": "2. afirmativa bàsica" },
+      { "id": "3", "label": "3. amb complement temporal en V1" },
+      { "id": "4", "label": "4. amb _es gibt_ + complement" },
+      { "id": "5", "label": "5. modal + infinitiu (Satzklammer)" },
+      { "id": "6", "label": "6. pregunta amb pronom interrogatiu" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "1",
+        "options": [
+          "Ich war gestern sehr müde.",
+          "Gestern ich war sehr müde.",
+          "Gestern sehr müde war ich."
+        ]
+      },
+      {
+        "blankId": "2",
+        "options": [
+          "Wir hatten keine Zeit.",
+          "Keine Zeit hatten wir.",
+          "Wir keine Zeit hatten."
+        ]
+      },
+      {
+        "blankId": "3",
+        "options": [
+          "Als Kind konnte ich nicht schwimmen.",
+          "Als Kind ich konnte nicht schwimmen.",
+          "Ich als Kind konnte nicht schwimmen."
+        ]
+      },
+      {
+        "blankId": "4",
+        "options": [
+          "Im Park gab es viele Leute.",
+          "Im Park es gab viele Leute.",
+          "Es gab im Park viele Leute."
+        ]
+      },
+      {
+        "blankId": "5",
+        "options": [
+          "Sie musste gestern lange arbeiten.",
+          "Sie musste lange arbeiten gestern.",
+          "Sie gestern musste lange arbeiten."
+        ]
+      },
+      {
+        "blankId": "6",
+        "options": [
+          "Wo warst du am Samstag?",
+          "Wo du warst am Samstag?",
+          "Am Samstag wo warst du?"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Ich war gestern sehr müde.",
+      "2": "Wir hatten keine Zeit.",
+      "3": "Als Kind konnte ich nicht schwimmen.",
+      "4": "Im Park gab es viele Leute.",
+      "5": "Sie musste gestern lange arbeiten.",
+      "6": "Wo warst du am Samstag?"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. En totes les frases has col·locat el verb conjugat en ==**V2**==: _war, hatten, konnte, gab, musste, warst_. Quan comences per un complement (_Als Kind_, _Im Park_, _Wo_), la **inversió** posa el subjecte just després del verb (V3). Amb verbs modals (_musste arbeiten_), el Präteritum està en V2 i l'infinitiu tanca la frase al final (Satzklammer).",
+      "references": ["A1b-25"]
+    },
+    "incorrect": {
+      "default": "Regla d'or: el verb conjugat ha d'estar en **V2** (la segona posició). Si V1 és un complement (_Als Kind_, _Im Park_, _Wo_), fas **inversió** i el subjecte va a V3. Amb modals, l'infinitiu va al final (Satzklammer). En preguntes _wh-_, l'ordre és: _Wo_ (V1) + verb (V2) + subjecte (V3) + resta.",
+      "byResponse": [
+        {
+          "match": { "1": "Gestern ich war sehr müde." },
+          "message": "==Error de V2==: _*Gestern ich war*_ posa el verb a la tercera posició. Si _gestern_ ocupa V1, el verb ha d'anar immediatament després: _Gestern **war** ich sehr müde_ (també seria vàlid)."
+        },
+        {
+          "match": { "2": "Wir keine Zeit hatten." },
+          "message": "_hatten_ és el verb conjugat i ha d'anar en **V2**, no al final: ==_Wir **hatten** keine Zeit._=="
+        },
+        {
+          "match": { "3": "Als Kind ich konnte nicht schwimmen." },
+          "message": "==Error de V2==: després de _Als Kind_ (V1), el verb ha d'anar en V2, no el subjecte. Correcte: _Als Kind **konnte** ich nicht schwimmen._"
+        },
+        {
+          "match": { "4": "Im Park es gab viele Leute." },
+          "message": "==Error de V2==: _*Im Park es gab*_. Com que _Im Park_ ocupa V1, _gab_ ha d'anar en V2 i _es_ a V3: _Im Park **gab** es viele Leute._"
+        },
+        {
+          "match": { "5": "Sie musste lange arbeiten gestern." },
+          "message": "Amb modals, l'**infinitiu tanca la frase** (Satzklammer): _musste … arbeiten_. _gestern_ va **entre** el modal i l'infinitiu, no al final: _Sie musste **gestern** lange arbeiten._"
+        },
+        {
+          "match": { "6": "Wo du warst am Samstag?" },
+          "message": "En preguntes _wh-_, després de _Wo_ (V1) ve el verb (V2): _Wo **warst** du am Samstag?_ No és com l'anglès _Where you were_."
+        }
+      ]
+    }
+  }
+}

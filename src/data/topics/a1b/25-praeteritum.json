@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-25",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 25,
+  "title": "Das Präteritum",
+  "shortTitle": "Präteritum",
+  "description": "El passat escrit de l'alemany, restringit a sein, haben, modals i es gibt — els únics verbs que s'usen en Präteritum també a l'oral.",
+  "axes": ["temps-verbals", "pronoms-verbs"],
+  "prerequisites": ["A1b-24"],
+  "estimatedMinutes": 25,
+  "steps": [
+    {
+      "id": "que-es-el-prateritum",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Què és el Präteritum i per què només alguns verbs\n\nEl **Präteritum** és el passat **narratiu** de l'alemany: el veus a llibres, notícies i textos escrits. A l'oral, els alemanys expliquen el passat amb **Perfekt** (A1b-24). ==Però hi ha un grup reduït de verbs que fan excepció i **sí** s'utilitzen en Präteritum també a la parla quotidiana==: **_sein, haben_, els verbs modals i l'expressió _es gibt_**. Aquests són els únics que cal saber a A1.\n\nA diferència del Perfekt (dos mots: auxiliar + participi), el Präteritum és una forma verbal ==**d'un sol mot**==."
+        },
+        {
+          "type": "table",
+          "title": "25.1 Perfekt vs. Präteritum — un exemple de cada",
+          "headers": ["Perfekt (oral, 2 mots)", "Präteritum (escrit, 1 mot)"],
+          "rows": [
+            ["_Ich **habe** gestern Pizza **gegessen**._", "_Ich **aß** gestern Pizza._"],
+            ["_Wir **sind** nach Berlin **gefahren**._", "_Wir **fuhren** nach Berlin._"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Per a la **majoria de verbs**, a l'oral sempre s'utilitza Perfekt. El Präteritum queda per la literatura i la premsa. **Però** hi ha una excepció important: els verbs ==**més freqüents i curts**== de l'idioma s'utilitzen en Präteritum també parlant, perquè en Perfekt sonen pesats i poc naturals.\n\n==Els verbs que has d'aprendre en Präteritum a A1 són:== **_sein_, _haben_, els 6 modals (_können, müssen, wollen, sollen, dürfen, mögen_) i l'expressió _es gibt_**. Amb la resta → Perfekt."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Comparació natural",
+          "body": "_Ich **war** müde_ (Präteritum, natural a l'oral) vs. _Ich **bin müde gewesen**_ (Perfekt, possible però estrany oralment). Els alemanys escullen sempre la primera."
+        }
+      ]
+    },
+    {
+      "id": "sein-haben",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Les dues estrelles: _sein_ i _haben_\n\nMemoritza'ls bé perquè apareixen **cada dia**.\n\n**_sein → war_** — arrel irregular, sense _-t-_ entre mig."
+        },
+        {
+          "type": "table",
+          "title": "25.2 _sein_ en Präteritum",
+          "headers": ["Persona", "Präteritum", "Exemple"],
+          "rows": [
+            ["_ich_", "==**war**==", "_Ich **war** gestern krank._"],
+            ["_du_", "==**warst**==", "_Wo **warst** du?_"],
+            ["_er/sie/es_", "==**war**==", "_Es **war** sonnig._"],
+            ["_wir_", "==**waren**==", "_Wir **waren** im Kino._"],
+            ["_ihr_", "==**wart**==", "_**Wart** ihr zu Hause?_"],
+            ["_sie/Sie_", "==**waren**==", "_Sie **waren** sehr nett._"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**_haben → hatte_** — arrel _hatt-_ + terminacions regulars."
+        },
+        {
+          "type": "table",
+          "title": "25.3 _haben_ en Präteritum",
+          "headers": ["Persona", "Präteritum", "Exemple"],
+          "rows": [
+            ["_ich_", "==**hatte**==", "_Ich **hatte** Hunger._"],
+            ["_du_", "==**hattest**==", "_Du **hattest** recht._"],
+            ["_er/sie/es_", "==**hatte**==", "_Sie **hatte** keine Zeit._"],
+            ["_wir_", "==**hatten**==", "_Wir **hatten** Glück._"],
+            ["_ihr_", "==**hattet**==", "_Ihr **hattet** viel Arbeit._"],
+            ["_sie/Sie_", "==**hatten**==", "_Sie **hatten** ein Problem._"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Paral·lelisme clau",
+          "body": "==_ich_ i _er/sie/es_ tenen **la mateixa forma**== en Präteritum (_war / war_, _hatte / hatte_). Això passa amb **tots** els verbs en Präteritum, també els modals. És una de les poques simplificacions que ofereix l'alemany!"
+        }
+      ]
+    },
+    {
+      "id": "check-1-sein-haben",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-25-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "modals",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Els modals en Präteritum\n\nEls modals **perden l'Umlaut** i afegeixen ==**-te-**== + terminacions. Patró general: _arrel sense Umlaut_ + _te_ + terminació."
+        },
+        {
+          "type": "table",
+          "title": "25.4 Els 6 modals en Präteritum",
+          "headers": ["Infinitiu", "Arrel Prät.", "_ich_ / _er-sie-es_", "_du_", "_wir_ / _sie_", "_ihr_"],
+          "rows": [
+            ["**_können_**", "_konn-_", "==**konnte**==", "_konntest_", "_konnten_", "_konntet_"],
+            ["**_müssen_**", "_muss-_", "==**musste**==", "_musstest_", "_mussten_", "_musstet_"],
+            ["**_wollen_**", "_woll-_", "==**wollte**==", "_wolltest_", "_wollten_", "_wolltet_"],
+            ["**_sollen_**", "_soll-_", "==**sollte**==", "_solltest_", "_sollten_", "_solltet_"],
+            ["**_dürfen_**", "_durf-_", "==**durfte**==", "_durftest_", "_durften_", "_durftet_"],
+            ["**_mögen_**", "_moch-_", "==**mochte**==", "_mochtest_", "_mochten_", "_mochtet_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Vorsicht! Canvis d'arrel que no pots confondre",
+          "body": "==_mögen_ canvia _g_ per _ch_== → _mochte_ (no _\"mögte\"_). _können, müssen, dürfen_ **perden l'Umlaut**: _konnte, musste, durfte_ (no _\"könnte\"_, que és **Konjunktiv II**, un altre temps!). _wollen_ i _sollen_ no tenen Umlaut a l'infinitiu, així que no canvien arrel."
+        },
+        {
+          "type": "explanation",
+          "body": "**Exemples:**\n\n- _Als Kind **konnte** ich nicht schwimmen._ (no sabia nedar)\n- _Ich **musste** gestern arbeiten._ (vaig haver de treballar)\n- _Sie **wollte** nicht kommen._ (no volia venir)\n- _Wir **durften** nicht rauchen._ (no ens deixaven fumar)\n- _Er **mochte** keinen Kaffee._ (no li agradava el cafè)\n- _Du **solltest** um 8 hier sein._ (havies de ser-hi a les 8)"
+        }
+      ]
+    },
+    {
+      "id": "check-2-modals",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-25-ex-03", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "es-gab",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### _es gibt → es gab_\n\nL'expressió fixa _es gibt_ (\"hi ha\") té la seva forma en Präteritum: ==**_es gab_**== (\"hi havia\")."
+        },
+        {
+          "type": "table",
+          "title": "25.5 Present vs. Präteritum d'_es gibt_",
+          "headers": ["Present", "Präteritum"],
+          "rows": [
+            ["_Es **gibt** viele Leute._", "_Es **gab** viele Leute._"],
+            ["_Es **gibt** ein Problem._", "_Es **gab** ein Problem._"],
+            ["_Was **gibt** es zum Essen?_", "_Was **gab** es zum Essen?_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Recordatori d'A1a",
+          "body": "L'objecte d'_es gibt / es gab_ sempre va en ==**acusatiu**==, com en present: _Es gab **einen** Unfall_."
+        },
+        {
+          "type": "explanation",
+          "body": "#### Resum del mini-sistema A1\n\nAquests són els **9 verbs** que has de dominar en Präteritum a A1. La resta, sempre en Perfekt (A1b-24) quan parlis."
+        },
+        {
+          "type": "table",
+          "title": "25.6 El mini-sistema: 9 verbs en Präteritum",
+          "headers": ["Verb", "Infinitiu", "Prät. _ich_ / _er_", "Significat passat"],
+          "rows": [
+            ["ser/estar", "_sein_", "==**war**==", "era / estava / vaig ser"],
+            ["tenir", "_haben_", "==**hatte**==", "tenia / vaig tenir"],
+            ["poder / saber", "_können_", "==**konnte**==", "podia / sabia"],
+            ["haver de", "_müssen_", "==**musste**==", "havia de"],
+            ["voler", "_wollen_", "==**wollte**==", "volia"],
+            ["haver de (obligació externa)", "_sollen_", "==**sollte**==", "havia de"],
+            ["poder (permís)", "_dürfen_", "==**durfte**==", "podia (em deixaven)"],
+            ["agradar", "_mögen_", "==**mochte**==", "m'agradava"],
+            ["hi ha", "_es gibt_", "==**es gab**==", "hi havia"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "check-3-contrast-perfekt",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-25-ex-01", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-4-order",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-25-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-5-match",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-25-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-6-rewrite",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-25-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-7-narrative",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-25-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi\n\nEl Präteritum A1 es redueix a **9 verbs**. Memoritza les formes de **1a/3a persona** (que coincideixen):\n\n> ==**_war · hatte · konnte · musste · wollte · sollte · durfte · mochte · es gab_**=="
+        },
+        {
+          "type": "table",
+          "title": "25.7 Terminacions del Präteritum (tots els verbs excepte _sein_)",
+          "headers": ["Persona", "Terminació", "Exemple amb _haben_ / _können_"],
+          "rows": [
+            ["_ich_", "— (arrel seca)", "_hatte, konnte_"],
+            ["_du_", "==**-st**==", "_hattest, konntest_"],
+            ["_er/sie/es_", "— (igual que _ich_)", "_hatte, konnte_"],
+            ["_wir_", "==**-n**==", "_hatten, konnten_"],
+            ["_ihr_", "==**-t**==", "_hattet, konntet_"],
+            ["_sie/Sie_", "==**-n**==", "_hatten, konnten_"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "_sein_ és irregular total: _war, warst, war, waren, wart, waren_ (no segueix aquesta taula)."
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Paranys crítics",
+          "body": "- ==_ich_ i _er/sie/es_ tenen **la mateixa** forma== en Präteritum. No _\"ich hatte / er hat\"_; és _\"er **hatte**\"_.\n- Modals ==**perden l'Umlaut**==: _können → konnte_ (no _könnte_, que és Konjunktiv II).\n- _mögen_ canvia a _**mochte**_ (amb _-ch-_).\n- Amb verbs normals (_gehen, essen, trinken, kommen…_) a l'oral → **Perfekt**, no Präteritum."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "La regla de ferro",
+          "body": "**Quan usar Präteritum (oral):** _sein, haben_, modals, _es gibt_.\n\n**Quan usar Perfekt (oral):** tota la resta."
+        },
+        {
+          "type": "explanation",
+          "body": "**Connexions amb altres lliçons:**\n\n- **A1a-5** — _sein_ en present.\n- **A1a-14** — _haben_ en present.\n- **A1b-7** i **A1b-15** — els modals en present.\n- **A1b-24** — **Perfekt** (contrast imprescindible: quan Präteritum, quan Perfekt).\n\nPreparació per **A1b-26+**: altres temps i narracions més complexes. El Präteritum complet de verbs forts i regulars es deixa per a **nivell A2**."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-25-ex-06",
+  "topicId": "A1b-25",
+  "title": "Reescriu les frases en passat (Präteritum)",
+  "prompt": "Reescriu cada verb en **Präteritum**. Totes les frases porten _sein, haben_, un modal o _es gibt_, així que toca Präteritum (no Perfekt). Escriu ==**només la forma verbal**==, mantenint la mateixa persona.",
+  "difficulty": 2,
+  "tags": ["rewrite", "prateritum", "conjugacio", "typeIn"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich **bin** glücklich._ → _Ich {{1}} glücklich._\n2. _Wir **haben** einen Hund._ → _Wir {{2}} einen Hund._\n3. _Sie **kann** gut Deutsch._ → _Sie {{3}} gut Deutsch._\n4. _Es **gibt** ein Problem._ → _Es {{4}} ein Problem._\n5. _Ihr **müsst** früh aufstehen._ → _Ihr {{5}} früh aufstehen._\n6. _Du **willst** Kaffee._ → _Du {{6}} Kaffee._\n7. _Ich **mag** diesen Film._ → _Ich {{7}} diesen Film._\n8. _Die Kinder **dürfen** spielen._ → _Die Kinder {{8}} spielen._",
+    "blanks": [
+      { "id": "1", "label": "1. _sein_, _ich_" },
+      { "id": "2", "label": "2. _haben_, _wir_" },
+      { "id": "3", "label": "3. _können_, _sie_" },
+      { "id": "4", "label": "4. _es gibt_" },
+      { "id": "5", "label": "5. _müssen_, _ihr_" },
+      { "id": "6", "label": "6. _wollen_, _du_" },
+      { "id": "7", "label": "7. _mögen_, _ich_" },
+      { "id": "8", "label": "8. _dürfen_, _die Kinder_ (pl.)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "sein, ich" },
+      { "blankId": "2", "placeholder": "haben, wir" },
+      { "blankId": "3", "placeholder": "können, sie" },
+      { "blankId": "4", "placeholder": "es gibt" },
+      { "blankId": "5", "placeholder": "müssen, ihr" },
+      { "blankId": "6", "placeholder": "wollen, du" },
+      { "blankId": "7", "placeholder": "mögen, ich" },
+      { "blankId": "8", "placeholder": "dürfen, plural" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["war"],
+      "2": ["hatten"],
+      "3": ["konnte"],
+      "4": ["gab"],
+      "5": ["musstet"],
+      "6": ["wolltest"],
+      "7": ["mochte"],
+      "8": ["durften"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has passat al Präteritum els **9 verbs clau** sense dificultat: _bin → war_, _haben → hatten_, _kann → konnte_, _gibt → gab_, _müsst → musstet_, _willst → wolltest_, _mag → mochte_, _dürfen → durften_. Aquestes transformacions són el cor de A1b-25.",
+      "references": ["A1b-25"]
+    },
+    "incorrect": {
+      "default": "Els modals **perden l'Umlaut** en Präteritum: _können → konnte_ (no _könnte_!), _müssen → musste_, _dürfen → durfte_. _mögen_ canvia _g_ per _ch_ → _mochte_. _sein_ és irregular: _war_. _haben_ → _hatte_. _es gibt_ → _es gab_.",
+      "byResponse": [
+        {
+          "match": { "3": "könnte" },
+          "message": "==Parany crític==: _könnte_ (amb Umlaut) és **Konjunktiv II** (\"podria\"), un altre temps. En Präteritum _können_ perd l'Umlaut → ==**_konnte_**==."
+        },
+        {
+          "match": { "3": "kannte" },
+          "message": "_kannte_ és el Präteritum de _kennen_ (\"conèixer\"), no de _können_. Amb _können_ → ==**_konnte_**==."
+        },
+        {
+          "match": { "5": "müssten" },
+          "message": "_müssten_ (amb Umlaut) és Konjunktiv II. En Präteritum _müssen_ perd l'Umlaut i _ihr_ porta _-t_: ==**_musstet_**==."
+        },
+        {
+          "match": { "5": "musste" },
+          "message": "_musste_ seria _ich / er / sie / es_. _ihr_ porta terminació _-t_: ==**_musstet_**==."
+        },
+        {
+          "match": { "6": "wollte" },
+          "message": "_wollte_ seria _ich / er / sie / es_. _du_ porta terminació _-est_: ==**_wolltest_**==."
+        },
+        {
+          "match": { "7": "mögte" },
+          "message": "==Parany==: _mögen_ no fa _mögte_. Canvia _g_ per _ch_ → ==**_mochte_**==."
+        },
+        {
+          "match": { "7": "möchte" },
+          "message": "_möchte_ (amb Umlaut) és **Konjunktiv II** de _mögen_, i s'usa com a forma educada de _wollen_ (\"voldria\"). En Präteritum pur: ==**_mochte_**== (amb _-ch-_, sense Umlaut)."
+        },
+        {
+          "match": { "8": "dürften" },
+          "message": "_dürften_ (amb Umlaut) és Konjunktiv II. En Präteritum _dürfen_ perd l'Umlaut → ==**_durften_**==."
+        },
+        {
+          "match": { "8": "durfte" },
+          "message": "_die Kinder_ és plural (_sie_): terminació _-n_ → ==**_durften_**==. _durfte_ seria singular."
+        },
+        {
+          "match": { "4": "gabte" },
+          "message": "_es gibt_ és un verb fort: el Präteritum és ==**_gab_**==, no _gabte_. No afegeix _-te-_."
+        },
+        {
+          "match": { "1": "ware" },
+          "message": "_ich war_ no afegeix _-e_: ==**_war_**== és la forma seca. _wäre_ (amb Umlaut) seria Konjunktiv II."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-25-ex-07",
+  "topicId": "A1b-25",
+  "title": "Un cap de setmana a Berlín — text narratiu",
+  "prompt": "Completa el text amb la forma de Präteritum del verb indicat entre parèntesis. Presta atenció a la **persona**: recorda que ==_ich_ i _er/sie/es_ comparteixen forma==, però _wir_ i _ihr_ tenen terminacions pròpies.",
+  "difficulty": 3,
+  "tags": ["text-narratiu", "prateritum", "sintesi", "avaluacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Letztes Jahr {{1}} ich in Berlin. Ich {{2}} nur drei Tage, aber es {{3}} so viel zu sehen! Am Montag {{4}} ich ins Museum, aber es {{5}} geschlossen. Am Dienstag {{6}} wir endlich den Reichstag besuchen. Abends {{7}} ich früh ins Bett, weil ich sehr müde {{8}}._",
+    "blanks": [
+      { "id": "1", "label": "1. _sein_, _ich_" },
+      { "id": "2", "label": "2. _haben_, _ich_" },
+      { "id": "3", "label": "3. _es gibt_" },
+      { "id": "4", "label": "4. _wollen_, _ich_" },
+      { "id": "5", "label": "5. _sein_, _es_" },
+      { "id": "6", "label": "6. _können_, _wir_" },
+      { "id": "7", "label": "7. _müssen_, _ich_" },
+      { "id": "8", "label": "8. _sein_, _ich_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "sein, ich" },
+      { "blankId": "2", "placeholder": "haben, ich" },
+      { "blankId": "3", "placeholder": "es gibt" },
+      { "blankId": "4", "placeholder": "wollen, ich" },
+      { "blankId": "5", "placeholder": "sein, es" },
+      { "blankId": "6", "placeholder": "können, wir" },
+      { "blankId": "7", "placeholder": "müssen, ich" },
+      { "blankId": "8", "placeholder": "sein, ich" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["war"],
+      "2": ["hatte"],
+      "3": ["gab"],
+      "4": ["wollte"],
+      "5": ["war"],
+      "6": ["konnten"],
+      "7": ["musste"],
+      "8": ["war"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "==**Fantàstic.**== Has fet narració fluida en Präteritum: _war, hatte, gab, wollte, war, konnten, musste, war_. Fixa't que _ich war_ apareix **3 vegades** amb la mateixa forma, i que _wir konnten_ porta _-n_ (no _konnte_). Aquest tipus de text és exactament el que sonarà natural quan expliquis experiències passades amb els 9 verbs clau.",
+      "references": ["A1b-25", "A1b-24"]
+    },
+    "incorrect": {
+      "default": "Errors freqüents a evitar: (1) _\"ich war / er war\"_ mateixa forma (no cal afegir _-e_); (2) _es gab_ (no _es gabte_); (3) _wir konnten_ (terminació _-n_ de plural, no _konnte_). Repassa les taules de _sein_ (irregular) i modals (arrel sense Umlaut + _-te-_ + terminació).",
+      "byResponse": [
+        {
+          "match": { "1": "ware" },
+          "message": "_ich_ no porta _-e_ en Präteritum: ==**_war_**==, seca."
+        },
+        {
+          "match": { "1": "bin gewesen" },
+          "message": "Amb _sein_ l'oral/narratiu usa Präteritum, no Perfekt → ==**_war_**==."
+        },
+        {
+          "match": { "3": "gabte" },
+          "message": "_es gibt_ és irregular: el Präteritum és ==**_gab_**==, no _gabte_. No afegeix _-te-_."
+        },
+        {
+          "match": { "3": "gibt" },
+          "message": "La consigna és reescriure en passat. Present _gibt_ → Präteritum ==**_gab_**==."
+        },
+        {
+          "match": { "4": "wolle" },
+          "message": "Els modals afegeixen _-te-_ a l'arrel: _woll-_ + _te_ = ==**_wollte_**== (per a _ich_)."
+        },
+        {
+          "match": { "6": "konnte" },
+          "message": "_wir_ porta terminació ==**-n**==: _konnt-_ + _en_ = ==**_konnten_**==. _konnte_ seria _ich/er_."
+        },
+        {
+          "match": { "6": "könnten" },
+          "message": "_könnten_ (amb Umlaut) és **Konjunktiv II** (\"podríem\"). En Präteritum _können_ perd l'Umlaut: ==**_konnten_**==."
+        },
+        {
+          "match": { "7": "müsste" },
+          "message": "_müsste_ (amb Umlaut) és Konjunktiv II. Präteritum _müssen_ perd l'Umlaut → ==**_musste_**==."
+        },
+        {
+          "match": { "7": "mussten" },
+          "message": "_mussten_ seria _wir / sie_ (plural). _ich_ fa ==**_musste_**== (arrel seca, sense _-n_)."
+        },
+        {
+          "match": { "5": "ware" },
+          "message": "_es_ (3a sg.) coincideix amb _ich_ en Präteritum: ==**_war_**==, sense _-e_."
+        }
+      ]
+    }
+  }
+}

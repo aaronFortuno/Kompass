@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-25-ex-01",
+  "topicId": "A1b-25",
+  "title": "Präteritum o Perfekt? Tria la forma natural a l'oral",
+  "prompt": "Per a cada frase, tria la forma **natural en l'oral**. Recorda la regla d'or: ==_sein, haben_, modals i _es gibt_== → **Präteritum**. La resta de verbs → **Perfekt**.",
+  "difficulty": 2,
+  "tags": ["prateritum", "perfekt", "contrast", "tria"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Gestern {{1}} ich sehr müde._\n2. _Als Kind {{2}} ich viel Zeit._\n3. _Ich {{3}} nicht zur Party kommen, weil ich krank war._\n4. _Es {{4}} gestern viele Menschen im Park._\n5. _Wir {{5}} letztes Jahr nach Italien._ (moviment: verb normal!)\n6. _Du {{6}} gestern nicht in der Schule. Wo warst du?_\n7. _Sie {{7}} den Kuchen essen, aber sie hatte keinen Hunger._\n8. _Ihr {{8}} gestern Pizza gegessen?_\n9. _Als wir klein waren, {{9}} wir um 20 Uhr ins Bett._\n10. _Ich {{10}} als Kind keinen Fisch._",
+    "blanks": [
+      { "id": "1", "label": "1. ser (_sein_)" },
+      { "id": "2", "label": "2. tenir (_haben_)" },
+      { "id": "3", "label": "3. poder (_können_)" },
+      { "id": "4", "label": "4. hi havia (_es gibt_)" },
+      { "id": "5", "label": "5. anar (_fahren_ — verb normal)" },
+      { "id": "6", "label": "6. ser (_sein_)" },
+      { "id": "7", "label": "7. voler (_wollen_)" },
+      { "id": "8", "label": "8. menjar (_essen_ — verb normal)" },
+      { "id": "9", "label": "9. haver de (_müssen_)" },
+      { "id": "10", "label": "10. agradar (_mögen_)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["bin", "war", "bin gewesen"] },
+      { "blankId": "2", "options": ["habe", "hatte", "habe gehabt"] },
+      { "blankId": "3", "options": ["konnte", "kann", "habe gekonnt"] },
+      { "blankId": "4", "options": ["gibt", "gab", "hat gegeben"] },
+      { "blankId": "5", "options": ["fuhren", "sind gefahren", "waren gefahren"] },
+      { "blankId": "6", "options": ["warst", "bist", "bist gewesen"] },
+      { "blankId": "7", "options": ["will", "wollte", "hat gewollt"] },
+      { "blankId": "8", "options": ["hattet", "habt", "wart"] },
+      { "blankId": "9", "options": ["müssen", "mussten", "haben gemusst"] },
+      { "blankId": "10", "options": ["mag", "mochte", "habe gemocht"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "war",
+      "2": "hatte",
+      "3": "konnte",
+      "4": "gab",
+      "5": "sind gefahren",
+      "6": "warst",
+      "7": "wollte",
+      "8": "habt",
+      "9": "mussten",
+      "10": "mochte"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has aplicat la regla d'or: ==_sein, haben_, modals i _es gibt_== van en **Präteritum** a l'oral (_war, hatte, konnte, gab, warst, wollte, mussten, mochte_); els **verbs normals** com _fahren_ o _essen_ van en **Perfekt** (_sind gefahren, habt gegessen_).",
+      "references": ["A1b-25", "A1b-24"]
+    },
+    "incorrect": {
+      "default": "Pensa en dos passos: (1) el verb és _sein / haben_ / modal / _es gibt_? → Präteritum. (2) Si no, és un verb normal? → Perfekt. Evita formes com _\"habe gekonnt\"_ o _\"bin gewesen\"_ a l'oral: són gramaticals però poc naturals.",
+      "byResponse": [
+        {
+          "match": { "1": "bin" },
+          "message": "_bin_ és **present**, però la frase parla de _gestern_ (ahir). Amb _sein_ + passat a l'oral → ==**_war_**== (Präteritum), no _bin gewesen_."
+        },
+        {
+          "match": { "1": "bin gewesen" },
+          "message": "_bin gewesen_ és gramatical (Perfekt de _sein_), però a l'oral sona estrany. Amb _sein_ els alemanys usen ==**_war_**== (Präteritum)."
+        },
+        {
+          "match": { "3": "habe gekonnt" },
+          "message": "Els modals van en **Präteritum** a l'oral, no en Perfekt. _können_ + passat → ==**_konnte_**==, no _habe gekonnt_."
+        },
+        {
+          "match": { "4": "hat gegeben" },
+          "message": "_es gibt_ té forma pròpia en Präteritum: ==**_es gab_**==. _hat gegeben_ és gramaticalment existent però no s'usa per a \"hi havia\"."
+        },
+        {
+          "match": { "5": "fuhren" },
+          "message": "_fuhren_ és Präteritum, però _fahren_ és un **verb normal**, no _sein / haben_ / modal. A l'oral → **Perfekt**: ==**_sind gefahren_**==. _fuhren_ només a text escrit."
+        },
+        {
+          "match": { "5": "waren gefahren" },
+          "message": "_waren gefahren_ és **Plusquamperfekt** (passat del passat), no s'ajusta al context. Amb un verb normal de moviment → Perfekt: ==**_sind gefahren_**==."
+        },
+        {
+          "match": { "8": "hattet" },
+          "message": "_essen_ és un **verb normal**, no un modal. En passat a l'oral → **Perfekt** amb _haben_: _**habt** gegessen_. _hattet_ seria Präteritum de _haben_, que no encaixa aquí."
+        },
+        {
+          "match": { "8": "wart" },
+          "message": "_wart_ (Prät. de _sein_) no encaixa amb _Pizza gegessen_. Per a _essen_ en passat → Perfekt: ==**_habt_** gegessen==."
+        },
+        {
+          "match": { "9": "müssen" },
+          "message": "_müssen_ és l'infinitiu/present. La frase parla de quan erem petits → ==**_mussten_**== (Präteritum, _wir_)."
+        },
+        {
+          "match": { "9": "haben gemusst" },
+          "message": "Els modals van en **Präteritum** a l'oral, no en Perfekt. _müssen_ + _wir_ + passat → ==**_mussten_**==."
+        },
+        {
+          "match": { "10": "habe gemocht" },
+          "message": "_mögen_ va en **Präteritum** a l'oral: ==**_mochte_**== (amb _-ch-_, no _mögte_)."
+        }
+      ]
+    }
+  }
+}

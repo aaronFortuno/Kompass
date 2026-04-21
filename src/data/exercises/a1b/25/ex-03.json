@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-25-ex-03",
+  "topicId": "A1b-25",
+  "title": "Tria el modal en Präteritum segons el context",
+  "prompt": "Tria el modal en Präteritum que s'ajusta al **significat** de la frase. Recorda els matisos: _konnte_ (capacitat), _musste_ (necessitat), _wollte_ (voluntat), _sollte_ (obligació externa), _durfte_ (permís), _mochte_ (m'agradava).",
+  "difficulty": 2,
+  "tags": ["modals", "prateritum", "context", "tria"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich {{1}} nicht kommen, ich hatte zu viel Arbeit._ (no em va ser possible)\n2. _Als Kind {{2}} ich keinen Spinat._ (no m'agradava)\n3. _Wir {{3}} um 22 Uhr zu Hause sein — das war die Regel._ (obligació externa)\n4. _Sie {{4}} ins Kino gehen, aber der Film war ausverkauft._ (tenia ganes)\n5. _Ihr {{5}} gestern lange arbeiten, oder?_ (necessitat)\n6. _Mit 16 {{6}} du in Deutschland kein Bier trinken._ (permís denegat)\n7. _Er {{7}} Klavier spielen, aber nicht gut._ (capacitat)\n8. _Die Kinder {{8}} nicht fernsehen nach 20 Uhr._ (permís denegat)",
+    "blanks": [
+      { "id": "1", "label": "1. _ich_, no era possible" },
+      { "id": "2", "label": "2. _ich_, no m'agradava" },
+      { "id": "3", "label": "3. _wir_, regla externa" },
+      { "id": "4", "label": "4. _sie_ (ella), volia" },
+      { "id": "5", "label": "5. _ihr_, necessitat" },
+      { "id": "6", "label": "6. _du_, permís" },
+      { "id": "7", "label": "7. _er_, capacitat" },
+      { "id": "8", "label": "8. _die Kinder_, permís" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["wollte", "konnte", "durfte"] },
+      { "blankId": "2", "options": ["mochte", "wollte", "musste"] },
+      { "blankId": "3", "options": ["wollten", "sollten", "konnten"] },
+      { "blankId": "4", "options": ["wollte", "durfte", "musste"] },
+      { "blankId": "5", "options": ["wolltet", "musstet", "mochtet"] },
+      { "blankId": "6", "options": ["durftest", "wolltest", "konntest"] },
+      { "blankId": "7", "options": ["mochte", "konnte", "musste"] },
+      { "blankId": "8", "options": ["mochten", "durften", "wollten"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "konnte",
+      "2": "mochte",
+      "3": "sollten",
+      "4": "wollte",
+      "5": "musstet",
+      "6": "durftest",
+      "7": "konnte",
+      "8": "durften"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Tens els matisos dels modals ben fixats: ==_konnte_== (capacitat, \"podia/sabia\"), ==_musste_== (necessitat interna), ==_sollte_== (regla externa, \"havia de\"), ==_wollte_== (voluntat), ==_durfte_== (permís, \"em deixaven\"), ==_mochte_== (\"m'agradava\"). Aquesta és la clau de tot A1b-15.",
+      "references": ["A1b-25", "A1b-15", "A1b-16"]
+    },
+    "incorrect": {
+      "default": "Repassa els matisos: _konnte_ = capacitat; _musste_ = necessitat; _wollte_ = voluntat; _sollte_ = regla externa; _durfte_ = permís; _mochte_ = \"m'agradava\". Totes porten _-te-_ + terminació i ==perden l'Umlaut==.",
+      "byResponse": [
+        {
+          "match": { "1": "wollte" },
+          "message": "_wollte_ seria \"no volia\". La frase diu \"tenia massa feina\" → no era **possible**, no una qüestió de voluntat. El correcte és ==**_konnte_**==."
+        },
+        {
+          "match": { "2": "wollte" },
+          "message": "_wollte_ seria \"no volia menjar\". \"_mochte_\" significa \"m'agradava\" (estat permanent, no decisió puntual). En aquest context infantil, el natural és ==**_mochte_**==."
+        },
+        {
+          "match": { "3": "wollten" },
+          "message": "\"_wollten_\" seria \"volíem\" (voluntat). La frase diu \"era la regla\" → obligació externa → ==**_sollten_**==."
+        },
+        {
+          "match": { "3": "konnten" },
+          "message": "\"_konnten_\" seria capacitat, però la frase parla de una **regla** imposada. Regla externa → ==**_sollten_**==."
+        },
+        {
+          "match": { "4": "durfte" },
+          "message": "\"_durfte_\" seria \"em deixaven\". El context (\"aber der Film war ausverkauft\") indica que **volia** anar però no va poder; la voluntat és el focus → ==**_wollte_**==."
+        },
+        {
+          "match": { "5": "wolltet" },
+          "message": "\"_wolltet_\" seria voluntat (\"volíeu\"). El \"oder?\" i el context (\"treballar molt\") apunten a necessitat → ==**_musstet_**==."
+        },
+        {
+          "match": { "6": "konntest" },
+          "message": "Parany clàssic: amb 16 anys **tècnicament** pots beure (capacitat), però aquí es parla del **permís legal**. A Alemanya, _dürfen_ és el modal del permís → ==**_durftest_**==."
+        },
+        {
+          "match": { "7": "mochte" },
+          "message": "\"_mochte_\" seria \"li agradava\". Aquí parla d'**habilitat** tècnica (\"però no bé\") → ==**_konnte_**==."
+        },
+        {
+          "match": { "8": "mochten" },
+          "message": "\"_mochten_\" seria \"els agradava\" (no els agradava mirar TV?). El context (\"després de les 20h\") indica **prohibició de permís** → ==**_durften_**=="
+        },
+        {
+          "match": { "8": "wollten" },
+          "message": "\"_wollten_\" seria \"no volien mirar TV\". És molt més natural entendre-ho com a **prohibició dels pares** → ==**_durften_**== (A1b-16 style)."
+        }
+      ]
+    }
+  }
+}

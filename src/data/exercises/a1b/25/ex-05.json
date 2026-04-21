@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-25-ex-05",
+  "topicId": "A1b-25",
+  "title": "Infinitiu ↔ Präteritum + traducció",
+  "prompt": "Empareja cada **infinitiu alemany** amb la seva forma de **1a persona en Präteritum** i la **traducció catalana**. És l'exercici de memorització pura: si tens aquestes 8 associacions fixes, tens tot A1b-25 tancat.",
+  "difficulty": 2,
+  "tags": ["match", "prateritum", "infinitiu", "traduccio", "memoria"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "inf1", "group": "inf", "content": { "type": "text", "content": "_sein_" } },
+      { "id": "inf2", "group": "inf", "content": { "type": "text", "content": "_haben_" } },
+      { "id": "inf3", "group": "inf", "content": { "type": "text", "content": "_können_" } },
+      { "id": "inf4", "group": "inf", "content": { "type": "text", "content": "_müssen_" } },
+      { "id": "inf5", "group": "inf", "content": { "type": "text", "content": "_wollen_" } },
+      { "id": "inf6", "group": "inf", "content": { "type": "text", "content": "_dürfen_" } },
+      { "id": "inf7", "group": "inf", "content": { "type": "text", "content": "_mögen_" } },
+      { "id": "inf8", "group": "inf", "content": { "type": "text", "content": "_es gibt_" } },
+      { "id": "prat1", "group": "prat", "content": { "type": "text", "content": "==**_war_**== — era / estava" } },
+      { "id": "prat2", "group": "prat", "content": { "type": "text", "content": "==**_hatte_**== — tenia" } },
+      { "id": "prat3", "group": "prat", "content": { "type": "text", "content": "==**_konnte_**== — podia / sabia" } },
+      { "id": "prat4", "group": "prat", "content": { "type": "text", "content": "==**_musste_**== — havia de" } },
+      { "id": "prat5", "group": "prat", "content": { "type": "text", "content": "==**_wollte_**== — volia" } },
+      { "id": "prat6", "group": "prat", "content": { "type": "text", "content": "==**_durfte_**== — em deixaven" } },
+      { "id": "prat7", "group": "prat", "content": { "type": "text", "content": "==**_mochte_**== — m'agradava" } },
+      { "id": "prat8", "group": "prat", "content": { "type": "text", "content": "==**_es gab_**== — hi havia" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Infinitiu",
+    "groupBLabel": "Präteritum (1a p.) + traducció"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["inf1", "prat1"],
+      ["inf2", "prat2"],
+      ["inf3", "prat3"],
+      ["inf4", "prat4"],
+      ["inf5", "prat5"],
+      ["inf6", "prat6"],
+      ["inf7", "prat7"],
+      ["inf8", "prat8"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Tens les 8 associacions al cap. ==_sein → war_==, ==_haben → hatte_==, ==_können → konnte_==, ==_müssen → musste_==, ==_wollen → wollte_==, ==_dürfen → durfte_==, ==_mögen → mochte_==, ==_es gibt → es gab_==. Aquesta llista és literalment **tot** el Präteritum que has d'usar activament a A1.",
+      "references": ["A1b-25"]
+    },
+    "incorrect": {
+      "default": "Paranys típics: ==_können → konnte_== (no _könnte_, que és Konjunktiv II); ==_mögen → mochte_== (canvi _g → ch_, no _mögte_); ==_dürfen → durfte_== (sense Umlaut); ==_müssen → musste_== (sense Umlaut). _sein_ és l'únic irregular total."
+    }
+  }
+}
