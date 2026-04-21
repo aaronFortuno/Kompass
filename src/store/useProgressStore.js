@@ -24,6 +24,10 @@ const INITIAL_STATE = {
   lastUpdated: null,
   topics: {},
   exercises: {},
+  // Volàtil (no persist): últim response+result per exerciseId.
+  // Serveix per restaurar el feedback quan l'usuari surt i torna al
+  // step dins la mateixa sessió. Es buida a cada "Tornar a intentar".
+  ephemeralResults: {},
 };
 
 const MAX_ATTEMPTS = 10;
@@ -116,11 +120,31 @@ export const useProgressStore = create(
         });
       },
 
+      setEphemeralResult: (exerciseId, payload) => {
+        if (!exerciseId) return;
+        set((state) => {
+          const next = { ...state.ephemeralResults };
+          if (payload == null) {
+            delete next[exerciseId];
+          } else {
+            next[exerciseId] = payload;
+          }
+          return { ...state, ephemeralResults: next };
+        });
+      },
+
       reset: () => set({ ...INITIAL_STATE }),
     }),
     {
       name: 'kompass.progress.v1',
       version: 1,
+      // ephemeralResults queda fora del localStorage: és només una
+      // memòria intra-sessió per no perdre el feedback quan l'usuari
+      // navega entre steps.
+      partialize: (state) => {
+        const { ephemeralResults, ...persisted } = state;
+        return persisted;
+      },
       // Futures migracions:
       //   migrate: (persistedState, fromVersion) => {
       //     if (fromVersion === 0) { ... }
@@ -136,6 +160,17 @@ export const useProgressStore = create(
 export function useExerciseProgress(exerciseId) {
   return useProgressStore((s) =>
     exerciseId ? s.exercises[exerciseId] ?? null : null
+  );
+}
+
+/**
+ * Lookup del resultat en memòria per restaurar el feedback d'un
+ * exercici quan l'usuari torna a visitar el seu step en la mateixa
+ * sessió. No es persisteix.
+ */
+export function useEphemeralResult(exerciseId) {
+  return useProgressStore((s) =>
+    exerciseId ? s.ephemeralResults?.[exerciseId] ?? null : null
   );
 }
 

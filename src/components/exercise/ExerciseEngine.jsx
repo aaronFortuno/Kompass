@@ -4,10 +4,7 @@ import { useT } from '@/i18n';
 import { InlineRichText } from '@/components/ui/InlineRichText.jsx';
 import { validateResponse } from '@/lib/exerciseValidator.js';
 import { selectFeedback } from '@/lib/feedback.js';
-import {
-  useProgressStore,
-  useExerciseProgress,
-} from '@/store/useProgressStore.js';
+import { useProgressStore } from '@/store/useProgressStore.js';
 import { DropdownFillRenderer } from './DropdownFillRenderer.jsx';
 import { TypeInRenderer } from './TypeInRenderer.jsx';
 
@@ -59,42 +56,50 @@ function buildAllCorrectPerBlank(exercise) {
   return {};
 }
 
+function buildPrefilledSolved(exercise) {
+  return {
+    response: buildCorrectResponse(exercise),
+    result: {
+      correctOverall: true,
+      perBlank: buildAllCorrectPerBlank(exercise),
+      feedback: exercise.feedback.correct,
+      prefilled: true,
+    },
+  };
+}
+
+function buildInitialState(exercise) {
+  // Llegim el store de manera no reactiva: la decisió d'estat inicial
+  // s'ha de prendre una vegada per exercici, no cada vegada que el
+  // store canvia.
+  const state = useProgressStore.getState();
+  const ephemeral = state.ephemeralResults?.[exercise.id];
+  if (ephemeral) {
+    return { response: ephemeral.response, result: ephemeral.result };
+  }
+  const firstCorrectAt = state.exercises[exercise.id]?.firstCorrectAt;
+  if (firstCorrectAt) return buildPrefilledSolved(exercise);
+  return { response: {}, result: null };
+}
+
 export function ExerciseEngine({ exercise }) {
   const { t } = useT();
   const recordExerciseAttempt = useProgressStore(
     (s) => s.recordExerciseAttempt
   );
-  const progress = useExerciseProgress(exercise.id);
-  const alreadySolved = !!progress?.firstCorrectAt;
+  const setEphemeralResult = useProgressStore((s) => s.setEphemeralResult);
 
-  const [response, setResponse] = useState(() =>
-    alreadySolved ? buildCorrectResponse(exercise) : {}
-  );
-  const [result, setResult] = useState(() =>
-    alreadySolved
-      ? {
-          correctOverall: true,
-          perBlank: buildAllCorrectPerBlank(exercise),
-          feedback: exercise.feedback.correct,
-          prefilled: true,
-        }
-      : null
-  );
+  const initial = useMemo(() => buildInitialState(exercise), [exercise.id]);
+  const [response, setResponse] = useState(initial.response);
+  const [result, setResult] = useState(initial.result);
 
-  // Si l'exercici canvia (p. ex. navegació entre steps), rearmar l'estat.
+  // Rearma l'estat quan canviem d'exercici sense que el component
+  // es desmunti (cas improbable amb key={stepIndex} del StepViewer,
+  // però n'assegurem el comportament).
   useEffect(() => {
-    if (alreadySolved) {
-      setResponse(buildCorrectResponse(exercise));
-      setResult({
-        correctOverall: true,
-        perBlank: buildAllCorrectPerBlank(exercise),
-        feedback: exercise.feedback.correct,
-        prefilled: true,
-      });
-    } else {
-      setResponse({});
-      setResult(null);
-    }
+    const next = buildInitialState(exercise);
+    setResponse(next.response);
+    setResult(next.result);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [exercise.id]);
 
@@ -109,7 +114,9 @@ export function ExerciseEngine({ exercise }) {
       response,
       outcome.correctOverall
     );
-    setResult({ ...outcome, feedback });
+    const newResult = { ...outcome, feedback };
+    setResult(newResult);
+    setEphemeralResult(exercise.id, { response, result: newResult });
     recordExerciseAttempt(
       exercise.topicId,
       exercise.id,
@@ -120,6 +127,7 @@ export function ExerciseEngine({ exercise }) {
   const handleRetry = () => {
     setResponse({});
     setResult(null);
+    setEphemeralResult(exercise.id, null);
   };
 
   const locked = result !== null;
