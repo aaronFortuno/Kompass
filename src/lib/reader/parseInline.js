@@ -9,42 +9,91 @@
  *
  * Escapament: \**  \==  \_  \`  \\
  *
- * Retorna un array de fills React llestos per renderitzar directament
- * dins de qualsevol element. Cada fragment de text pla queda com string,
- * els emfàticas com <strong/mark/em/code>.
+ * Aquest mòdul exposa dues capes:
+ *   1. `tokenizeInline(text)` → retorna una llista de tokens
+ *      `{ type, content }` on type ∈ {text|strong|em|mark|code}.
+ *      Aquesta és la representació "de seguiment": el typewriter itera
+ *      sobre els caràcters _visibles_ (ja sense els delimitadors markdown).
+ *   2. `parseInline(text)` → retorna un array de fills React llestos per
+ *      renderitzar. Utilitza tokenizeInline internament.
+ *   3. `renderTokensUpTo(tokens, n)` → renderitza només els primers `n`
+ *      caràcters visibles, preservant el format a cada segment. S'usa
+ *      al component <Typed /> per escriure text formatat progressivament
+ *      sense mostrar mai els símbols de sintaxi.
  *
- * Pure function, sense React estat. Els tests viuen a tests/parseInline.test.js.
+ * Pure functions. Els tests viuen a tests/parseInline.test.js.
  */
 
 import { createElement } from 'react';
 
-const TOKEN_RE = /(\\[\\*=_`])|(\*\*(?:[^*]|\*(?!\*))+\*\*)|(==[^=]+==)|(_[^_]+_)|(`[^`]+`)/g;
+const TOKEN_RE =
+  /(\\[\\*=_`])|(\*\*(?:[^*]|\*(?!\*))+\*\*)|(==[^=]+==)|(_[^_]+_)|(`[^`]+`)/g;
 
-export function parseInline(text) {
+export function tokenizeInline(text) {
   if (!text) return [];
   const out = [];
   let last = 0;
-  let key = 0;
   let m;
-
   TOKEN_RE.lastIndex = 0;
   while ((m = TOKEN_RE.exec(text))) {
-    if (m.index > last) out.push(text.slice(last, m.index));
+    if (m.index > last) {
+      out.push({ type: 'text', content: text.slice(last, m.index) });
+    }
     const tok = m[0];
     if (tok.startsWith('\\')) {
-      // Caràcter escapat: afegim només el segon char.
-      out.push(tok.slice(1));
+      out.push({ type: 'text', content: tok.slice(1) });
     } else if (tok.startsWith('**')) {
-      out.push(createElement('strong', { key: key++ }, tok.slice(2, -2)));
+      out.push({ type: 'strong', content: tok.slice(2, -2) });
     } else if (tok.startsWith('==')) {
-      out.push(createElement('mark', { key: key++, className: 'k-mark' }, tok.slice(2, -2)));
+      out.push({ type: 'mark', content: tok.slice(2, -2) });
     } else if (tok.startsWith('_')) {
-      out.push(createElement('em', { key: key++ }, tok.slice(1, -1)));
+      out.push({ type: 'em', content: tok.slice(1, -1) });
     } else if (tok.startsWith('`')) {
-      out.push(createElement('code', { key: key++ }, tok.slice(1, -1)));
+      out.push({ type: 'code', content: tok.slice(1, -1) });
     }
     last = m.index + tok.length;
   }
-  if (last < text.length) out.push(text.slice(last));
+  if (last < text.length) {
+    out.push({ type: 'text', content: text.slice(last) });
+  }
   return out;
+}
+
+export function visibleLength(tokens) {
+  let len = 0;
+  for (const tok of tokens) len += tok.content.length;
+  return len;
+}
+
+function renderToken(tok, content, key) {
+  switch (tok.type) {
+    case 'strong':
+      return createElement('strong', { key }, content);
+    case 'em':
+      return createElement('em', { key }, content);
+    case 'mark':
+      return createElement('mark', { key, className: 'k-mark' }, content);
+    case 'code':
+      return createElement('code', { key }, content);
+    default:
+      return content;
+  }
+}
+
+export function renderTokensUpTo(tokens, n) {
+  const out = [];
+  let acc = 0;
+  let key = 0;
+  for (const tok of tokens) {
+    const len = tok.content.length;
+    if (acc >= n) break;
+    const visibleHere = acc + len <= n ? tok.content : tok.content.slice(0, n - acc);
+    out.push(renderToken(tok, visibleHere, key++));
+    acc += len;
+  }
+  return out;
+}
+
+export function parseInline(text) {
+  return renderTokensUpTo(tokenizeInline(text), Number.POSITIVE_INFINITY);
 }

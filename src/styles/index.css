@@ -781,6 +781,13 @@
   border-radius: 2px;
   color: rgb(var(--color-reader-ink));
 }
+/* En mode fosc el groc saturat sobre paper tenyit queda massa dominant;
+   l'apliquem amb alpha per aconseguir un glow amber que no foragiti el
+   text en crema. El color del text queda inalterat (ink-2 en dark). */
+html.dark .k-mark {
+  background: rgb(var(--color-reader-mark) / 0.22);
+  color: rgb(var(--color-reader-ink));
+}
 .kf-beat-heading code,
 .kf-beat-lead code,
 .kf-beat-body code,

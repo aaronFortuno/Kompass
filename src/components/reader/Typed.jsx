@@ -1,15 +1,24 @@
-import { useEffect, useRef, useState } from 'react';
-import { parseInline } from '@/lib/reader/parseInline.js';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import {
+  tokenizeInline,
+  visibleLength,
+  renderTokensUpTo,
+} from '@/lib/reader/parseInline.js';
 
 /*
  * Typed · typewriter reutilitzable · ARCHITECTURE §17.6
  *
- * Mostra `text` caràcter a caràcter. Aplica `parseInline` al text visible
- * perquè els emfàticas (**, ==, _, `) s'animin correctament.
+ * Escriu `text` caràcter a caràcter aplicant el format inline ja des del
+ * primer caràcter. El component mai mostra els símbols de sintaxi
+ * markdown (**, ==, _, `) mentre va escrivint; els caràcters formatats
+ * apareixen directament amb el seu estil final (negreta, cursiva,
+ * highlight o codi). Això evita el "redibuixat" que es produïa abans,
+ * quan el delimitador de tancament feia desaparèixer els símbols ja
+ * escrits.
  *
  * Props:
- *   - text: string
- *   - speed: ms per caràcter (42 per defecte, resol-se amb
+ *   - text: string (amb inline rich text markup)
+ *   - speed: ms per caràcter _visible_ (42 per defecte, resol-se amb
  *     resolveTypewriterSpeed(settings.typewriterSpeed))
  *   - startDelay: ms abans de començar
  *   - active: si false, mostra el text complet immediatament (equival a
@@ -17,8 +26,6 @@ import { parseInline } from '@/lib/reader/parseInline.js';
  *   - as: tag HTML de l'arrel ('p', 'h1', 'span'…). Per defecte 'span'.
  *   - className: classes extra per a l'arrel
  *   - onDone: callback opcional quan acaba l'animació
- *
- * Mostra un caret parpellejant només mentre l'animació està activa.
  */
 export function Typed({
   text = '',
@@ -29,20 +36,21 @@ export function Typed({
   className,
   onDone,
 }) {
-  const [n, setN] = useState(active ? 0 : text.length);
+  const tokens = useMemo(() => tokenizeInline(text), [text]);
+  const total = useMemo(() => visibleLength(tokens), [tokens]);
+  const [n, setN] = useState(active ? 0 : total);
   const [done, setDone] = useState(!active);
   const rafRef = useRef(null);
 
   useEffect(() => {
     if (!active) {
-      setN(text.length);
+      setN(total);
       setDone(true);
       if (onDone) onDone();
       return undefined;
     }
     setN(0);
     setDone(false);
-    const total = text.length;
     let start = null;
     const step = (t) => {
       if (!start) start = t + startDelay;
@@ -60,15 +68,16 @@ export function Typed({
     return () => {
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
-  }, [text, speed, startDelay, active, onDone]);
+  }, [tokens, total, speed, startDelay, active, onDone]);
 
-  const shown = active ? text.slice(0, n) : text;
+  const visibleN = active ? n : total;
+  const shown = renderTokensUpTo(tokens, visibleN);
   const showCaret = active && !done;
   const Tag = as;
 
   return (
     <Tag className={className}>
-      <span className={showCaret ? 'kf-caret' : undefined}>{parseInline(shown)}</span>
+      <span className={showCaret ? 'kf-caret' : undefined}>{shown}</span>
     </Tag>
   );
 }
