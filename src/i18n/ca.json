@@ -68,7 +68,15 @@
     "expectedWas": "correcte:",
     "tipPrefix": "Consell:",
     "alreadyCompleted": "Ja has resolt aquest exercici correctament. Aquestes són les respostes.",
-    "tryAgain": "Tornar a intentar"
+    "tryAgain": "Tornar a intentar",
+    "statements": {
+      "true": "Cert",
+      "false": "Fals"
+    },
+    "pairing": {
+      "pair": "Aparella",
+      "unpair": "Desaparella"
+    }
   },
   "theme": {
     "label": "Tema",

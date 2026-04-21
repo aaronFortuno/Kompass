@@ -7,6 +7,9 @@ import { selectFeedback } from '@/lib/feedback.js';
 import { useProgressStore } from '@/store/useProgressStore.js';
 import { DropdownFillRenderer } from './DropdownFillRenderer.jsx';
 import { TypeInRenderer } from './TypeInRenderer.jsx';
+import { SingleChoiceRenderer } from './SingleChoiceRenderer.jsx';
+import { TrueFalseRenderer } from './TrueFalseRenderer.jsx';
+import { MatchPairsRenderer } from './MatchPairsRenderer.jsx';
 
 /*
  * ExerciseEngine · DATA-MODEL §3.3 + progress store
@@ -32,6 +35,9 @@ function buildCorrectResponse(exercise) {
       Object.entries(v.answers).map(([k, arr]) => [k, arr[0]])
     );
   }
+  if (v.type === 'exactMatch') return v.answer;
+  if (v.type === 'truthMap') return { ...v.answers };
+  if (v.type === 'pairMap') return v.pairs.map(([a, b]) => [a, b]);
   return {};
 }
 
@@ -53,6 +59,35 @@ function buildAllCorrectPerBlank(exercise) {
       ])
     );
   }
+  if (v.type === 'truthMap') {
+    return Object.fromEntries(
+      Object.entries(v.answers).map(([k, expected]) => [
+        k,
+        {
+          correct: true,
+          actual: String(expected),
+          expected: String(expected),
+        },
+      ])
+    );
+  }
+  if (v.type === 'pairMap') {
+    return Object.fromEntries(
+      v.pairs.map(([a, b]) => {
+        const key = [a, b].sort().join('|');
+        const label = `${a} ↔ ${b}`;
+        return [key, { correct: true, actual: label, expected: label }];
+      })
+    );
+  }
+  // exactMatch sense slots: mantenim perBlank buit (contracte existent).
+  return {};
+}
+
+function buildInitialEmptyResponse(exercise) {
+  const t = exercise.interaction.type;
+  if (t === 'singleChoice') return '';
+  if (t === 'matchPairs') return [];
   return {};
 }
 
@@ -79,7 +114,7 @@ function buildInitialState(exercise) {
   }
   const firstCorrectAt = state.exercises[exercise.id]?.firstCorrectAt;
   if (firstCorrectAt) return buildPrefilledSolved(exercise);
-  return { response: {}, result: null };
+  return { response: buildInitialEmptyResponse(exercise), result: null };
 }
 
 export function ExerciseEngine({ exercise }) {
@@ -104,7 +139,7 @@ export function ExerciseEngine({ exercise }) {
   }, [exercise.id]);
 
   const updateSlot = (blankId, value) =>
-    setResponse((r) => ({ ...r, [blankId]: value }));
+    setResponse((r) => ({ ...(r || {}), [blankId]: value }));
 
   const handleCheck = (e) => {
     e?.preventDefault?.();
@@ -125,7 +160,7 @@ export function ExerciseEngine({ exercise }) {
   };
 
   const handleRetry = () => {
-    setResponse({});
+    setResponse(buildInitialEmptyResponse(exercise));
     setResult(null);
     setEphemeralResult(exercise.id, null);
   };
@@ -135,7 +170,8 @@ export function ExerciseEngine({ exercise }) {
   const showPrefilledBanner = result?.prefilled === true;
 
   const interactionNode = useMemo(() => {
-    if (exercise.interaction.type === 'dropdownFill') {
+    const type = exercise.interaction.type;
+    if (type === 'dropdownFill') {
       return (
         <DropdownFillRenderer
           exercise={exercise}
@@ -146,7 +182,7 @@ export function ExerciseEngine({ exercise }) {
         />
       );
     }
-    if (exercise.interaction.type === 'typeIn') {
+    if (type === 'typeIn') {
       return (
         <TypeInRenderer
           exercise={exercise}
@@ -157,13 +193,48 @@ export function ExerciseEngine({ exercise }) {
         />
       );
     }
+    if (type === 'singleChoice') {
+      return (
+        <SingleChoiceRenderer
+          exercise={exercise}
+          response={response}
+          onChoose={(id) => setResponse(id)}
+          disabled={locked}
+          correctOverall={result?.correctOverall ?? false}
+        />
+      );
+    }
+    if (type === 'trueFalse') {
+      return (
+        <TrueFalseRenderer
+          exercise={exercise}
+          response={response}
+          onChoose={(statementId, value) =>
+            setResponse((r) => ({ ...(r || {}), [statementId]: value }))
+          }
+          disabled={locked}
+          perBlank={perBlank}
+        />
+      );
+    }
+    if (type === 'matchPairs') {
+      return (
+        <MatchPairsRenderer
+          exercise={exercise}
+          response={response}
+          onPair={(nextPairs) => setResponse(nextPairs)}
+          disabled={locked}
+          perBlank={perBlank}
+        />
+      );
+    }
     if (import.meta.env?.DEV) {
       console.warn(
-        `[ExerciseEngine] tipus d'interacció no implementat: ${exercise.interaction.type}`
+        `[ExerciseEngine] tipus d'interacció no implementat: ${type}`
       );
     }
     return null;
-  }, [exercise, response, locked, perBlank]);
+  }, [exercise, response, locked, perBlank, result]);
 
   return (
     <form onSubmit={handleCheck} className="space-y-4">
@@ -205,14 +276,31 @@ export function ExerciseEngine({ exercise }) {
           correct={result.correctOverall}
           message={result.feedback.message}
           perBlank={result.perBlank}
-          blanks={exercise.stimulus.blanks}
+          exercise={exercise}
         />
       )}
     </form>
   );
 }
 
-function ExerciseFeedback({ correct, message, perBlank, blanks }) {
+/*
+ * Resol l'etiqueta humana d'un "blankId" segons el tipus d'exercici.
+ * Per a textWithBlanks: del camp stimulus.blanks[].label.
+ * Per a trueFalse: del text de l'statement.
+ * Per a pairMap: cap label (la parella ja és autoexplicativa).
+ */
+function resolveBlankLabel(exercise, blankId) {
+  const { stimulus, interaction } = exercise;
+  if (stimulus?.type === 'textWithBlanks' && Array.isArray(stimulus.blanks)) {
+    return stimulus.blanks.find((x) => String(x.id) === String(blankId))?.label;
+  }
+  if (interaction?.type === 'trueFalse' && Array.isArray(interaction.statements)) {
+    return interaction.statements.find((s) => String(s.id) === String(blankId))?.text;
+  }
+  return undefined;
+}
+
+function ExerciseFeedback({ correct, message, perBlank, exercise }) {
   const { t } = useT();
   const Icon = correct ? CheckCircle2 : XCircle;
   const statusLabel = correct ? t('exercise.correct') : t('exercise.incorrect');
@@ -227,7 +315,7 @@ function ExerciseFeedback({ correct, message, perBlank, blanks }) {
             blankId,
             actual: b.actual,
             expected: b.expected,
-            label: blanks?.find((x) => String(x.id) === String(blankId))?.label,
+            label: resolveBlankLabel(exercise, blankId),
           }))
       : [];
 

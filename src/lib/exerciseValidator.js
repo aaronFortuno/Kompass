@@ -17,6 +17,10 @@
  * per " / " per mostrar-les totes al feedback.
  * Per a `exactMatch` (una sola resposta sense slots) no hi ha
  * `perBlank`; tornem-lo buit.
+ * Per a `truthMap`, cada statement és un slot i `expected`/`actual` són
+ * "true" o "false" com a string per uniformitat amb la resta de tipus.
+ * Per a `pairMap`, cada parella esperada és un slot amb clau `idA|idB`
+ * (ordenada alfabèticament); `expected` és el parell canònic "a ↔ b".
  */
 
 function normalizeForInteraction(value, interaction) {
@@ -28,6 +32,14 @@ function normalizeForInteraction(value, interaction) {
     if (!caseSensitive) v = v.toLowerCase();
   }
   return v;
+}
+
+function canonicalPairKey(a, b) {
+  return [a, b].sort().join('|');
+}
+
+function formatPairLabel(a, b) {
+  return `${a} ↔ ${b}`;
 }
 
 export function validateResponse(exercise, response) {
@@ -74,6 +86,54 @@ export function validateResponse(exercise, response) {
     return {
       correctOverall: normActual === normTarget,
       perBlank: {},
+    };
+  }
+
+  if (validation.type === 'truthMap') {
+    const perBlank = {};
+    for (const [statementId, expected] of Object.entries(validation.answers)) {
+      const raw = response?.[statementId];
+      const answered = raw === true || raw === false;
+      const correct = answered && raw === expected;
+      perBlank[statementId] = {
+        correct,
+        actual: answered ? String(raw) : '',
+        expected: String(expected),
+      };
+    }
+    const correctOverall = Object.values(perBlank).every((b) => b.correct);
+    return { correctOverall, perBlank };
+  }
+
+  if (validation.type === 'pairMap') {
+    const expectedPairs = validation.pairs;
+    const userPairs = Array.isArray(response) ? response : [];
+    // Indexem les parelles de l'usuari per clau canònica (ordre irrellevant).
+    const userPairSet = new Set(
+      userPairs
+        .filter((p) => Array.isArray(p) && p.length === 2 && p[0] && p[1])
+        .map(([a, b]) => canonicalPairKey(a, b))
+    );
+    const perBlank = {};
+    for (const [a, b] of expectedPairs) {
+      const key = canonicalPairKey(a, b);
+      const matched = userPairSet.has(key);
+      perBlank[key] = {
+        correct: matched,
+        actual: matched ? formatPairLabel(a, b) : '',
+        expected: formatPairLabel(a, b),
+      };
+    }
+    // Globalment és correcte si cada parella esperada està present I
+    // l'usuari no ha creat parelles extres incorrectes.
+    const expectedKeys = new Set(
+      expectedPairs.map(([a, b]) => canonicalPairKey(a, b))
+    );
+    const hasAllExpected = Object.values(perBlank).every((b) => b.correct);
+    const hasNoExtras = [...userPairSet].every((k) => expectedKeys.has(k));
+    return {
+      correctOverall: hasAllExpected && hasNoExtras,
+      perBlank,
     };
   }
 

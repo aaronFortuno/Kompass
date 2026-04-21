@@ -68,7 +68,15 @@
     "expectedWas": "correcto:",
     "tipPrefix": "Consejo:",
     "alreadyCompleted": "Ya has resuelto este ejercicio correctamente. Estas son las respuestas.",
-    "tryAgain": "Volver a intentar"
+    "tryAgain": "Volver a intentar",
+    "statements": {
+      "true": "Cierto",
+      "false": "Falso"
+    },
+    "pairing": {
+      "pair": "Emparejar",
+      "unpair": "Desemparejar"
+    }
   },
   "theme": {
     "label": "Tema",

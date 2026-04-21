@@ -115,3 +115,138 @@ describe('validateResponse · exactMatch', () => {
     expect(r.perBlank).toEqual({});
   });
 });
+
+describe('validateResponse · exactMatch amb singleChoice', () => {
+  const exercise = makeExercise({
+    interaction: {
+      type: 'singleChoice',
+      options: [
+        { id: 'a', label: 'A' },
+        { id: 'b', label: 'B' },
+        { id: 'c', label: 'C' },
+      ],
+    },
+    validation: { type: 'exactMatch', answer: 'b' },
+  });
+
+  it('accepta l\'id correcte', () => {
+    const r = validateResponse(exercise, 'b');
+    expect(r.correctOverall).toBe(true);
+    expect(r.perBlank).toEqual({});
+  });
+
+  it('rebutja un altre id', () => {
+    const r = validateResponse(exercise, 'a');
+    expect(r.correctOverall).toBe(false);
+    expect(r.perBlank).toEqual({});
+  });
+
+  it('rebutja resposta buida', () => {
+    const r = validateResponse(exercise, '');
+    expect(r.correctOverall).toBe(false);
+  });
+});
+
+describe('validateResponse · truthMap', () => {
+  const exercise = makeExercise({
+    interaction: {
+      type: 'trueFalse',
+      statements: [
+        { id: 's1', text: 'Afirmació 1' },
+        { id: 's2', text: 'Afirmació 2' },
+        { id: 's3', text: 'Afirmació 3' },
+      ],
+    },
+    validation: {
+      type: 'truthMap',
+      answers: { s1: true, s2: false, s3: true },
+    },
+  });
+
+  it('correctOverall=true si totes les afirmacions tenen el valor esperat', () => {
+    const r = validateResponse(exercise, { s1: true, s2: false, s3: true });
+    expect(r.correctOverall).toBe(true);
+    expect(r.perBlank.s1.correct).toBe(true);
+    expect(r.perBlank.s2.correct).toBe(true);
+    expect(r.perBlank.s3.correct).toBe(true);
+  });
+
+  it('marca nomes els statements que fallen', () => {
+    const r = validateResponse(exercise, { s1: true, s2: true, s3: false });
+    expect(r.correctOverall).toBe(false);
+    expect(r.perBlank.s1.correct).toBe(true);
+    expect(r.perBlank.s2.correct).toBe(false);
+    expect(r.perBlank.s2.actual).toBe('true');
+    expect(r.perBlank.s2.expected).toBe('false');
+    expect(r.perBlank.s3.correct).toBe(false);
+  });
+
+  it('statement no respost es tracta com a incorrecte amb actual buit', () => {
+    const r = validateResponse(exercise, { s1: true, s2: false });
+    expect(r.correctOverall).toBe(false);
+    expect(r.perBlank.s3.correct).toBe(false);
+    expect(r.perBlank.s3.actual).toBe('');
+    expect(r.perBlank.s3.expected).toBe('true');
+  });
+});
+
+describe('validateResponse · pairMap', () => {
+  const exercise = makeExercise({
+    interaction: { type: 'matchPairs' },
+    validation: {
+      type: 'pairMap',
+      pairs: [
+        ['c1', 'c2'],
+        ['c3', 'c4'],
+        ['c5', 'c6'],
+      ],
+    },
+  });
+
+  it('accepta totes les parelles correctes en qualsevol ordre', () => {
+    const r = validateResponse(exercise, [
+      ['c3', 'c4'],
+      ['c2', 'c1'],
+      ['c5', 'c6'],
+    ]);
+    expect(r.correctOverall).toBe(true);
+    expect(Object.values(r.perBlank).every((b) => b.correct)).toBe(true);
+  });
+
+  it('marca només les parelles que falten', () => {
+    const r = validateResponse(exercise, [
+      ['c1', 'c2'],
+      ['c3', 'c6'], // incorrecta: c3 hauria d'anar amb c4
+    ]);
+    expect(r.correctOverall).toBe(false);
+    const c1c2 = r.perBlank['c1|c2'];
+    const c3c4 = r.perBlank['c3|c4'];
+    const c5c6 = r.perBlank['c5|c6'];
+    expect(c1c2.correct).toBe(true);
+    expect(c3c4.correct).toBe(false);
+    expect(c5c6.correct).toBe(false);
+  });
+
+  it('parelles extres no esperades invaliden tot i tot que hi siguin les correctes', () => {
+    const r = validateResponse(exercise, [
+      ['c1', 'c2'],
+      ['c3', 'c4'],
+      ['c5', 'c6'],
+      ['c1', 'c6'], // extra no esperada
+    ]);
+    expect(r.correctOverall).toBe(false);
+  });
+
+  it('resposta buida produeix tot incorrecte', () => {
+    const r = validateResponse(exercise, []);
+    expect(r.correctOverall).toBe(false);
+    expect(Object.values(r.perBlank).every((b) => !b.correct)).toBe(true);
+    expect(r.perBlank['c1|c2'].expected).toBe('c1 ↔ c2');
+  });
+
+  it('expected usa sempre l\'ordre definit al JSON (no canònic)', () => {
+    // Definit com ['c3','c4'] al JSON → expected llegible com "c3 ↔ c4"
+    const r = validateResponse(exercise, []);
+    expect(r.perBlank['c3|c4'].expected).toBe('c3 ↔ c4');
+  });
+});

@@ -3,10 +3,10 @@ import { RichStringSchema } from './richText.js';
 
 /*
  * Schema d'Exercise (DATA-MODEL §3.3 + §5-§8).
- * MVP cobreix els tipus necessaris per al primer tema (A1a-1):
- *   - Stimulus: text, textWithBlanks
- *   - Interaction: dropdownFill, typeIn
- *   - Validation: slotMap, slotMapMultiple, exactMatch
+ * Cobreix els tipus implementats fins ara:
+ *   - Stimulus: text, textWithBlanks, image, cardSet
+ *   - Interaction: dropdownFill, typeIn, singleChoice, trueFalse, matchPairs
+ *   - Validation: slotMap, slotMapMultiple, exactMatch, truthMap, pairMap
  * Els altres tipus s'afegiran a mesura que toquin.
  */
 
@@ -33,9 +33,44 @@ const TextWithBlanksStimulusSchema = z.object({
     .min(1),
 });
 
+const ImageStimulusSchema = z.object({
+  type: z.literal('image'),
+  src: z.string().min(1),
+  alt: z.string().min(1),
+  caption: z.string().optional(),
+});
+
+// Contingut d'una card dins d'un cardSet: text o imatge.
+const CardContentSchema = z.discriminatedUnion('type', [
+  z.object({
+    type: z.literal('text'),
+    content: RichStringSchema,
+  }),
+  z.object({
+    type: z.literal('image'),
+    src: z.string().min(1),
+    alt: z.string().min(1),
+  }),
+]);
+
+const CardSetStimulusSchema = z.object({
+  type: z.literal('cardSet'),
+  cards: z
+    .array(
+      z.object({
+        id: z.string().min(1),
+        group: z.string().min(1),
+        content: CardContentSchema,
+      })
+    )
+    .min(2),
+});
+
 const StimulusSchema = z.discriminatedUnion('type', [
   TextStimulusSchema,
   TextWithBlanksStimulusSchema,
+  ImageStimulusSchema,
+  CardSetStimulusSchema,
 ]);
 
 // ─── Interaction ─────────────────────────────────────────────
@@ -66,9 +101,42 @@ const TypeInInteractionSchema = z.object({
   trimWhitespace: z.boolean().optional().default(true),
 });
 
+const SingleChoiceInteractionSchema = z.object({
+  type: z.literal('singleChoice'),
+  options: z
+    .array(
+      z.object({
+        id: z.string().min(1),
+        label: RichStringSchema,
+      })
+    )
+    .min(2),
+});
+
+const TrueFalseInteractionSchema = z.object({
+  type: z.literal('trueFalse'),
+  statements: z
+    .array(
+      z.object({
+        id: z.string().min(1),
+        text: RichStringSchema,
+      })
+    )
+    .min(1),
+});
+
+const MatchPairsInteractionSchema = z.object({
+  type: z.literal('matchPairs'),
+  groupALabel: z.string().optional(),
+  groupBLabel: z.string().optional(),
+});
+
 const InteractionSchema = z.discriminatedUnion('type', [
   DropdownFillInteractionSchema,
   TypeInInteractionSchema,
+  SingleChoiceInteractionSchema,
+  TrueFalseInteractionSchema,
+  MatchPairsInteractionSchema,
 ]);
 
 // ─── Validation ──────────────────────────────────────────────
@@ -88,10 +156,24 @@ const ExactMatchValidationSchema = z.object({
   answer: z.string(),
 });
 
+const TruthMapValidationSchema = z.object({
+  type: z.literal('truthMap'),
+  answers: z.record(z.boolean()),
+});
+
+const PairMapValidationSchema = z.object({
+  type: z.literal('pairMap'),
+  pairs: z
+    .array(z.tuple([z.string().min(1), z.string().min(1)]))
+    .min(1),
+});
+
 const ValidationSchema = z.discriminatedUnion('type', [
   SlotMapValidationSchema,
   SlotMapMultipleValidationSchema,
   ExactMatchValidationSchema,
+  TruthMapValidationSchema,
+  PairMapValidationSchema,
 ]);
 
 // ─── Feedback ────────────────────────────────────────────────
