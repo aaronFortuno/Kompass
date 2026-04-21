@@ -501,14 +501,10 @@ function ExerciseBeatCard({ beat, stepIdx, onFinish, peek = false }) {
   const label = isAssessment
     ? t('exercise.variantAssessment')
     : t('exercise.variantQuickCheck');
+  // El chip i títol ja viuen dins la .kf-ex-card; no duplicarem un
+  // kf-chapter fora. El número de pas el dóna la sidebar lateral.
   return (
     <div className="kf-ex-wrap">
-      <div className="kf-chapter">
-        <Dumbbell size={12} aria-hidden="true" />
-        <span>{label}</span>
-        <span className="kf-sep" />
-        <span>Pas {String(stepIdx + 1).padStart(2, '0')}</span>
-      </div>
       <div className="kf-ex-card">
         <div className="kf-ex-header">
           <span

@@ -517,6 +517,9 @@ export function ReaderExerciseEngine({ exercise, peek = false }) {
   const prompt = exercise.prompt;
   const hint = exercise.hint;
 
+  const currentIsCorrect = revealed ? validateCurrent() : null;
+  const isLast = itemIdx === items.length - 1;
+
   return (
     <div className="kf-rex">
       <div className="kf-rex-meta">
@@ -526,59 +529,70 @@ export function ReaderExerciseEngine({ exercise, peek = false }) {
         </span>
       </div>
 
-      {currentItem.kind === 'slot-line' ? (
-        <SlotLineRenderer
-          exercise={exercise}
-          item={currentItem}
-          responses={responses}
-          onAnswer={setBlankResponse}
-          revealed={revealed}
-          onSubmit={submit}
-          focusFirstInput={!peek && !revealed}
-        />
-      ) : currentItem.kind === 'statement' ? (
-        <StatementRenderer
-          item={currentItem}
-          value={responses[currentItem.statementId]}
-          onAnswer={(v) => setResponses((r) => ({ ...r, [currentItem.statementId]: v }))}
-          revealed={revealed}
-          correctBool={exercise.validation?.answers?.[currentItem.statementId]}
-          onSubmit={submit}
-        />
-      ) : (
-        <SingleChoiceRenderer
-          exercise={exercise}
-          response={responses.whole}
-          onAnswer={(id) => setResponses((r) => ({ ...r, whole: id }))}
-          revealed={revealed}
-          onSubmit={submit}
-        />
-      )}
-
-      {revealed ? (
-        <div className={['kf-rex-feedback', validateCurrent() ? 'is-ok' : 'is-bad'].join(' ')}>
-          {validateCurrent() ? (
-            <>
-              <Check size={14} aria-hidden="true" />
-              <span>Correcte</span>
-            </>
+      <div className="kf-rex-row">
+        <div className="kf-rex-item">
+          {currentItem.kind === 'slot-line' ? (
+            <SlotLineRenderer
+              exercise={exercise}
+              item={currentItem}
+              responses={responses}
+              onAnswer={setBlankResponse}
+              revealed={revealed}
+              onSubmit={submit}
+              focusFirstInput={!peek && !revealed}
+            />
+          ) : currentItem.kind === 'statement' ? (
+            <StatementRenderer
+              item={currentItem}
+              value={responses[currentItem.statementId]}
+              onAnswer={(v) => setResponses((r) => ({ ...r, [currentItem.statementId]: v }))}
+              revealed={revealed}
+              correctBool={exercise.validation?.answers?.[currentItem.statementId]}
+              onSubmit={submit}
+            />
           ) : (
-            <>
-              <XIcon size={14} aria-hidden="true" />
-              <span>
-                Resposta correcta:{' '}
-                <b>
-                  {currentItem.kind === 'slot-line'
-                    ? currentItem.blankIds.map((b) => expectedDisplay(exercise, b)).join(' / ')
-                    : currentItem.kind === 'statement'
-                      ? String(exercise.validation?.answers?.[currentItem.statementId])
-                      : String(exercise.validation?.answer ?? '')}
-                </b>
-              </span>
-            </>
+            <SingleChoiceRenderer
+              exercise={exercise}
+              response={responses.whole}
+              onAnswer={(id) => setResponses((r) => ({ ...r, whole: id }))}
+              revealed={revealed}
+              onSubmit={submit}
+            />
           )}
         </div>
-      ) : null}
+
+        {revealed ? (
+          <div
+            className={[
+              'kf-rex-feedback-aside',
+              currentIsCorrect ? 'is-ok' : 'is-bad',
+            ].join(' ')}
+            role="status"
+            aria-live="polite"
+          >
+            {currentIsCorrect ? (
+              <>
+                <Check size={14} aria-hidden="true" />
+                <span>Correcte</span>
+              </>
+            ) : (
+              <>
+                <XIcon size={14} aria-hidden="true" />
+                <div>
+                  <span className="kf-rex-feedback-label">Correcta:</span>{' '}
+                  <b>
+                    {currentItem.kind === 'slot-line'
+                      ? currentItem.blankIds.map((b) => expectedDisplay(exercise, b)).join(' / ')
+                      : currentItem.kind === 'statement'
+                        ? String(exercise.validation?.answers?.[currentItem.statementId])
+                        : String(exercise.validation?.answer ?? '')}
+                  </b>
+                </div>
+              </>
+            )}
+          </div>
+        ) : null}
+      </div>
 
       {!revealed && hint ? (
         <p className="kf-rex-hint">
@@ -589,12 +603,13 @@ export function ReaderExerciseEngine({ exercise, peek = false }) {
       <div className="kf-rex-nav">
         <button
           type="button"
-          className="kf-rex-btn"
+          className="kf-rex-btn kf-rex-btn-icon"
           onClick={back}
           disabled={itemIdx === 0}
+          aria-label="Pregunta anterior"
+          title="Pregunta anterior"
         >
-          <ArrowLeft size={12} aria-hidden="true" />
-          <span>Prèvia</span>
+          <ArrowLeft size={14} aria-hidden="true" />
         </button>
         <div className="kf-rex-dots">
           {items.map((_, i) => {
@@ -629,21 +644,35 @@ export function ReaderExerciseEngine({ exercise, peek = false }) {
             );
           })}
         </div>
-        <button
-          type="button"
-          className="kf-rex-btn kf-rex-btn-primary"
-          onClick={submit}
-          disabled={!revealed && !hasAnswer()}
-        >
-          <span>
-            {revealed
-              ? itemIdx === items.length - 1
-                ? 'Finalitzar'
-                : 'Següent'
-              : t('exercise.check')}
-          </span>
-          <ArrowRight size={12} aria-hidden="true" />
-        </button>
+        {!revealed ? (
+          <button
+            type="button"
+            className="kf-rex-btn kf-rex-btn-primary"
+            onClick={submit}
+            disabled={!hasAnswer()}
+          >
+            <span>{t('exercise.check')}</span>
+          </button>
+        ) : isLast ? (
+          <button
+            type="button"
+            className="kf-rex-btn kf-rex-btn-primary"
+            onClick={submit}
+          >
+            <span>Finalitzar</span>
+            <Check size={14} aria-hidden="true" />
+          </button>
+        ) : (
+          <button
+            type="button"
+            className="kf-rex-btn kf-rex-btn-primary kf-rex-btn-icon"
+            onClick={submit}
+            aria-label="Pregunta següent"
+            title="Pregunta següent"
+          >
+            <ArrowRight size={14} aria-hidden="true" />
+          </button>
+        )}
       </div>
     </div>
   );
