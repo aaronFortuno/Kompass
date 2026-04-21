@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-20-ex-04",
+  "topicId": "A1b-20",
+  "title": "Fix + Wechsel a la mateixa frase",
+  "prompt": "Cada frase barreja una preposició **fixa** i una **Wechselpräposition**. Tria l'article correcte a cada buit. Identifica primer el grup de cada preposició; després, si és Wechsel, pregunta't *Wo?* o *Wohin?*.",
+  "difficulty": 3,
+  "tags": ["fix-vs-wechsel", "articles", "contrast", "avaluacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich gehe **durch** {{1}} Park **in** {{2}} Café._\n2. _Wir sind **bei** {{3}} Freunden **in** {{4}} Wohnzimmer._\n3. _Er fährt **mit** {{5}} Fahrrad **auf** {{6}} Markt._\n4. _Das Kind läuft **ohne** {{7}} Jacke **über** {{8}} Straße._\n5. _Die Katze sitzt **neben** {{9}} Sofa, **gegenüber** {{10}} Fenster._\n6. _Ich komme **aus** {{11}} Schule und gehe **in** {{12}} Supermarkt._",
+    "blanks": [
+      { "id": "1", "label": "durch + der Park" },
+      { "id": "2", "label": "in + das Café (Wohin?)" },
+      { "id": "3", "label": "bei + die Freunde (pl.)" },
+      { "id": "4", "label": "in + das Wohnzimmer (Wo?)" },
+      { "id": "5", "label": "mit + das Fahrrad" },
+      { "id": "6", "label": "auf + der Markt (Wohin?)" },
+      { "id": "7", "label": "ohne + die Jacke" },
+      { "id": "8", "label": "über + die Straße (Wohin?)" },
+      { "id": "9", "label": "neben + das Sofa (Wo?)" },
+      { "id": "10", "label": "gegenüber + das Fenster" },
+      { "id": "11", "label": "aus + die Schule" },
+      { "id": "12", "label": "in + der Supermarkt (Wohin?)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["den", "dem"] },
+      { "blankId": "2", "options": ["das", "dem"] },
+      { "blankId": "3", "options": ["den", "die"] },
+      { "blankId": "4", "options": ["das", "dem"] },
+      { "blankId": "5", "options": ["das", "dem"] },
+      { "blankId": "6", "options": ["den", "dem"] },
+      { "blankId": "7", "options": ["die", "der"] },
+      { "blankId": "8", "options": ["die", "der"] },
+      { "blankId": "9", "options": ["das", "dem"] },
+      { "blankId": "10", "options": ["das", "dem"] },
+      { "blankId": "11", "options": ["die", "der"] },
+      { "blankId": "12", "options": ["den", "dem"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "den",
+      "2": "das",
+      "3": "den",
+      "4": "dem",
+      "5": "dem",
+      "6": "den",
+      "7": "die",
+      "8": "die",
+      "9": "dem",
+      "10": "dem",
+      "11": "der",
+      "12": "den"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Fantàstic. Has fet el doble pas a cada buit: (a) identificar grup, (b) si és Wechsel, aplicar Wo?/Wohin?. Observa que _bei den Freunden_ afegeix **-n** al plural (regla del datiu plural), que _auf den Markt_ és Akk perquè _fahren auf_ indica direcció, i que _neben dem Sofa_ és Dat perquè el gat **seu** (Wo?). _gegenüber_ és Dat-fix pur.",
+      "references": ["A1b-20", "A1b-19", "A1a-34"]
+    },
+    "incorrect": {
+      "default": "El truc és identificar **primer** el grup de cada preposició, **abans** de pensar el cas. Fixes no pregunten. Wechsel sí: _Wo?_ → Dat, _Wohin?_ → Akk. I recorda el datiu plural: **-n** al substantiu.",
+      "byResponse": [
+        {
+          "match": { "1": "dem" },
+          "message": "_durch_ és Akk-fix. _der Park_ → ==_durch **den** Park_==. No preguntis *Wo?*/*Wohin?*: _durch_ és sempre acusatiu."
+        },
+        {
+          "match": { "2": "dem" },
+          "message": "_in_ és Wechsel. _gehen in_ indica **direcció** (Wohin?) → ==_in **das** Café_==. _dem Café_ seria Wo? (estàtic), que contradiu _gehen_."
+        },
+        {
+          "match": { "4": "das" },
+          "message": "_in_ és Wechsel. _wir sind_ indica **ubicació** (Wo?) → ==_in **dem** Wohnzimmer_== (col·loquialment _im_). _das_ seria Wohin?, que contradiu _sein_."
+        },
+        {
+          "match": { "6": "dem" },
+          "message": "_auf_ és Wechsel. _fahren auf_ indica **direcció** (Wohin?) → ==_auf **den** Markt_==. _dem Markt_ seria Wo? (estàtic)."
+        },
+        {
+          "match": { "8": "der" },
+          "message": "_über_ és Wechsel. _laufen über_ (travessar) indica **direcció** (Wohin?) → ==_über **die** Straße_==. _der_ seria Dat, que no correspon al moviment."
+        },
+        {
+          "match": { "9": "das" },
+          "message": "_neben_ és Wechsel. _sitzen neben_ indica **ubicació** (Wo?) → ==_neben **dem** Sofa_==. _das_ seria Wohin?, que contradiu _sitzen_."
+        },
+        {
+          "match": { "10": "das" },
+          "message": "_gegenüber_ és Dat-fix (és del grup ①, junt amb _aus-bei-mit-nach-seit-von-zu_). ==_gegenüber **dem** Fenster_==, sempre datiu."
+        },
+        {
+          "match": { "3": "die" },
+          "message": "_bei_ és Dat-fix. Plural → ==_bei **den** Freunden_== (amb **-n** al substantiu). _die_ seria nominatiu/acusatiu plural."
+        },
+        {
+          "match": { "12": "dem" },
+          "message": "_in_ és Wechsel. _gehen in_ (anar a) indica **direcció** (Wohin?) → ==_in **den** Supermarkt_==. _dem_ seria Wo? (estàtic), que contradiu _gehen_."
+        },
+        {
+          "match": { "11": "die" },
+          "message": "_aus_ és Dat-fix. Fem. → ==_aus **der** Schule_==. _die_ seria nom./acus., mai amb _aus_."
+        },
+        {
+          "match": { "7": "der" },
+          "message": "_ohne_ és Akk-fix. _die Jacke_ fem. → ==_ohne **die** Jacke_== (fem. acus. = fem. nom.). _der_ seria Dat fem., no procedeix amb _ohne_."
+        },
+        {
+          "match": { "5": "das" },
+          "message": "_mit_ és Dat-fix. _das Fahrrad_ neut. → ==_mit **dem** Fahrrad_==. _das_ seria nom./acus., no procedeix amb _mit_."
+        }
+      ]
+    }
+  }
+}

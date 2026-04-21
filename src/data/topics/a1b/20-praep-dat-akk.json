@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-20",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 20,
+  "title": "Lokale Präpositionen - Präpositionen mit Dativ oder Akkusativ",
+  "shortTitle": "Präp Dat/Akk",
+  "description": "Mapa general de les preposicions locals d'A1: fixes de datiu, fixes d'acusatiu i Wechselpräpositionen. Quin cas demana cada grup i per què.",
+  "axes": ["preposicions", "casos"],
+  "prerequisites": ["A1b-19"],
+  "estimatedMinutes": 25,
+  "steps": [
+    {
+      "id": "mapa-general",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El mapa general de les preposicions locals\n\nDesprés d'A1b-19, on vas conèixer les **Wechselpräpositionen** (_in, an, auf, über, unter, vor, hinter, neben, zwischen_) i el seu joc de *Wo? → datiu* / *Wohin? → acusatiu*, toca **tancar el cercle** i fer el mapa complet de totes les preposicions locals d'A1.\n\nLa idea nuclear d'aquesta lliçó: ==algunes preposicions tenen cas **fix** (sempre datiu o sempre acusatiu)==, i aquest cas ==**no depèn**== de si preguntes *Wo?*, *Woher?* o *Wohin?*. És **just el contrari** del que passa amb les Wechselpräpositionen."
+        },
+        {
+          "type": "table",
+          "title": "20.1 Les preposicions locals d'A1 en tres grups",
+          "headers": ["Grup", "Cas", "Membres", "Exemple"],
+          "rows": [
+            ["**① Fixes amb datiu**", "sempre Dativ", "_aus, bei, mit, nach, seit, von, zu, gegenüber_", "_Ich wohne **bei** meiner Tante._"],
+            ["**② Fixes amb acusatiu**", "sempre Akkusativ", "_durch, für, ohne, gegen, um, bis_", "_Wir gehen **durch** den Park._"],
+            ["**③ Wechselpräpositionen**", "Dat (Wo?) / Akk (Wohin?)", "_in, an, auf, über, unter, vor, hinter, neben, zwischen_", "_**im** Park_ (Wo?) vs. _**in den** Park_ (Wohin?)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Vorsicht! Algunes preposicions tenen sempre el mateix cas",
+          "body": "El cas de les preposicions **fixes** és ==**independent**== de si preguntes *Wo?*, *Woher?* o *Wohin?*. Per exemple, _nach_ porta **sempre** datiu, tant si és ubicació (_Ich bin **nach** der Arbeit zu Hause_) com direcció (_Ich fahre **nach** Berlin_). La pregunta només determina el cas amb les **Wechselpräpositionen**."
+        }
+      ]
+    },
+    {
+      "id": "grup-1-dat-fix",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Grup ①: repàs de les preposicions fixes de datiu\n\nLes 8 preposicions del grup **dativ-fix** ja les vas veure a **A1a-34**. Les recordem amb la cantarella clàssica:\n\n> **==aus - bei - mit - nach - seit - von - zu==** (+ _gegenüber_)\n\nQue porten **sempre datiu**, passi el que passi. _seit_ és temporal (no local) i _mit_ rarament és local pur, però pertanyen al mateix grup formal."
+        },
+        {
+          "type": "table",
+          "title": "20.2 Dativ-fix: ús local",
+          "headers": ["Preposició", "Significat local", "Exemple"],
+          "rows": [
+            ["==_aus_==", "de (procedència, origen interior)", "_Sie kommt **aus der** Schule._"],
+            ["==_bei_==", "a casa de / a l'empresa / prop de", "_Er arbeitet **bei** Siemens._"],
+            ["==_nach_==", "cap a (ciutats i països sense article)", "_Wir fliegen **nach** Wien._"],
+            ["==_von_==", "de (procedència, punt de sortida)", "_Der Zug kommt **vom** Hauptbahnhof._"],
+            ["==_zu_==", "a / cap a (persones, institucions)", "_Ich gehe **zum** Arzt._"],
+            ["==_gegenüber_==", "davant de / enfront de", "_Die Apotheke ist **der Bank** gegenüber._"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Contraccions obligatòries",
+          "body": "Recorda les contraccions recurrents d'A1a-34: ==_zum_== (_zu + dem_), ==_zur_== (_zu + der_), ==_beim_== (_bei + dem_), ==_vom_== (_von + dem_). En llengua parlada són pràcticament obligatòries."
+        }
+      ]
+    },
+    {
+      "id": "grup-2-akk-fix",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Grup ②: les preposicions fixes d'acusatiu (nou!)\n\nAquí introduïm un grup que fins ara **no havies treballat** de manera sistemàtica. Són **poques i freqüents**, i van **sempre amb acusatiu**:\n\n> **==durch - für - ohne - gegen - um - bis==**"
+        },
+        {
+          "type": "table",
+          "title": "20.3 Akkusativ-fix",
+          "headers": ["Preposició", "Significat principal", "Exemple"],
+          "rows": [
+            ["==_durch_==", "a través de, pel mig de", "_Wir gehen **durch den** Park._"],
+            ["==_für_==", "per a (destinatari, finalitat)", "_Das Geschenk ist **für meinen** Bruder._"],
+            ["==_ohne_==", "sense", "_Ich komme **ohne meinen** Hund._"],
+            ["==_gegen_==", "contra / cap a (hora aproximada)", "_Das Auto fährt **gegen den** Baum._ · _Ich komme **gegen 8 Uhr**._"],
+            ["==_um_==", "al voltant de / a les (hora exacta)", "_Wir sitzen **um den** Tisch._ · _Die Schule beginnt **um 8 Uhr**._"],
+            ["==_bis_==", "fins a (temps o lloc)", "_Der Bus fährt **bis** Berlin._ · _**Bis** morgen!_"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "#### Repàs llampec: articles en acusatiu\n\nA A1a-28 vas veure els articles en acusatiu. Només la forma **masculina** canvia respecte al nominatiu; femení, neutre i plural són iguals."
+        },
+        {
+          "type": "table",
+          "title": "20.4 Articles en acusatiu",
+          "headers": ["", "Maskulin", "Femenin", "Neutrum", "Plural"],
+          "rows": [
+            ["**Determinat**", "==**den**==", "die", "das", "die"],
+            ["**Indeterminat**", "==**einen**==", "eine", "ein", "—"],
+            ["**Negatiu / possessiu**", "==**keinen / meinen**==", "keine / meine", "kein / mein", "keine / meine"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Exemples amb els quatre gèneres/nombres:**\n\n- _Wir gehen **durch den** Park._ → passem a través del parc (_durch_ + masc. → ==_den_==).\n- _Das Buch ist **für die** Mutter._ → el llibre és per a la mare (_für_ + fem. → ==_die_==).\n- _Ich komme **ohne das** Geld._ → vinc sense els diners (_ohne_ + neutre → ==_das_==).\n- _Er spielt **gegen die** Kinder._ → juga contra els nens (_gegen_ + plural → ==_die_==)."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Contraccions freqüents (no obligatòries)",
+          "body": "A diferència de *zum/zur*, aquestes són només **col·loquials**, però molt habituals:\n\n- _für + das_ → ==_fürs_== · _Das ist **fürs** Kind._\n- _durch + das_ → ==_durchs_== · _**Durchs** Fenster sehe ich den Garten._\n- _um + das_ → ==_ums_== · _**Ums** Haus laufen Kinder._"
+        }
+      ]
+    },
+    {
+      "id": "check-1-classificar",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-20-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "contrast-fix-wechsel",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El contrast clau: fix vs. Wechsel\n\nLa confusió típica després d'A1b-19 és pensar que **totes** les preposicions \"canvien\" segons *Wo?/Wohin?*. ==**No.**== Només les 9 Wechselpräpositionen ho fan. Les altres tenen un cas **fix** i no es mouen.\n\nFixa't en aquest contrast:"
+        },
+        {
+          "type": "table",
+          "title": "20.5 Mateix verb, preposicions diferents",
+          "headers": ["Frase", "Preposició", "Cas", "Per què"],
+          "rows": [
+            ["_Ich gehe **in den** Park._", "_in_", "Akk (Wohin?)", "Wechselpräposition → depèn de la pregunta"],
+            ["_Ich gehe **durch den** Park._", "_durch_", "Akk (fix)", "Fixa d'acusatiu, **sempre** Akk"],
+            ["_Ich bin **im** Park._", "_in_", "Dat (Wo?)", "Wechselpräposition → Wo? → Dat"],
+            ["_Ich bin **bei dem** Park._", "_bei_", "Dat (fix)", "Fixa de datiu, **sempre** Dat"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "==El cas de _durch_ i _bei_ no canvia mai==",
+          "body": "Encara que canviï la pregunta, encara que canviï el verb, encara que hi hagi moviment direccional: _durch_ **sempre** és acusatiu i _bei_ **sempre** és datiu. El cas d'_in_ sí que canvia. Aquesta és **l'única** diferència rellevant entre els dos mons."
+        }
+      ]
+    },
+    {
+      "id": "check-2-articles-fixos",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-20-ex-02", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-3-dat-vs-akk-fix",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-20-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-4-contrast-mixt",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-20-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-5-traduccio-grup",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-20-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-6-text-lliure",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-20-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi: el mapa complet de les preposicions locals d'A1\n\nJa tens les tres famílies. Les **dues cantarelles** són el teu fil d'Ariadna:"
+        },
+        {
+          "type": "table",
+          "title": "20.6 Les tres famílies, una sola taula",
+          "headers": ["Grup", "Membres", "Cas"],
+          "rows": [
+            ["**Sempre datiu**", "_aus, bei, mit, nach, seit, von, zu_ (+ _gegenüber_)", "==Dat=="],
+            ["**Sempre acusatiu**", "_durch, für, ohne, gegen, um, bis_", "==Akk=="],
+            ["**Wechsel**", "_in, an, auf, über, unter, vor, hinter, neben, zwischen_", "==Dat (Wo?) / Akk (Wohin?)=="]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Les dues preguntes que ho determinen tot",
+          "body": "**1. ==A quin grup pertany la preposició?==** → fixa o Wechsel.\n\n**2. Només si és Wechsel:** *Wo?* → datiu · *Wohin?* → acusatiu · *Woher?* → datiu (però normalment amb _aus/von_, que ja són fixes de datiu).\n\nSi és **fixa**, no et fa falta la pregunta. Si és **Wechsel**, sí."
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Paranys crítics per recordar",
+          "body": "- _**nach** Berlin_ és ==**datiu**== (_nach_ és fix), **no acusatiu**, encara que sigui direcció.\n- _**durch den** Park_ és ==**acusatiu**== (_durch_ és fix), encara que **no** hi hagi moviment direccional.\n- _**bei**_ ≠ _**neben**_: _bei_ és Dat-fix genèric (a casa de, prop de); _neben_ és Wechsel (just al costat, cas segons la pregunta).\n- _**für**_ i _**ohne**_ no són locals en sentit estricte, però pertanyen al grup Akk-fix: et convé memoritzar-les juntes."
+        },
+        {
+          "type": "explanation",
+          "body": "**Connexions amb altres lliçons:**\n\n- **A1a-28** (articles en acusatiu) — la declinació que necessites per al grup ②.\n- **A1a-34** (dativ-fix original) — el grup ① tal com el vas conèixer.\n- **A1b-1** (primera aproximació local) — ubicacions amb _in/an/auf_.\n- **A1b-18** (_Wo? Woher? Wohin?_) — les tres preguntes espacials.\n- **A1b-19** (Wechselpräpositionen) — el joc Dat/Akk segons la pregunta.\n- **A1b-21** (_Verben mit oder ohne Ortswechsel_) — verbs que trien el cas de les Wechsel.\n\nAmb aquesta lliçó tens **tot el sistema** de preposicions locals d'A1 tancat. A partir d'aquí es tracta de practicar fins que identifiquis el grup a primer cop d'ull."
+        }
+      ]
+    }
+  ]
+}

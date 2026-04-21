@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-20-ex-03",
+  "topicId": "A1b-20",
+  "title": "Dat-fix vs. Akk-fix — parany",
+  "prompt": "Tria la forma de l'article correcta. Has de decidir si la preposició demana **datiu** o **acusatiu**: memoritza a quin grup pertany cadascuna abans de pensar en la declinació.",
+  "difficulty": 2,
+  "tags": ["preposicions-fixes", "dativ-vs-akkusativ", "articles"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Das Geschenk ist für {{1}} Vater._\n2. _Ich arbeite bei {{2}} Zahnarzt._\n3. _Wir laufen durch {{3}} Tunnel._\n4. _Sie kommt aus {{4}} Schule._\n5. _Ohne {{5}} Bruder gehe ich nicht._\n6. _Ich spreche mit {{6}} Lehrer._\n7. _Der Zug fährt gegen {{7}} Lastwagen._\n8. _Er geht zu {{8}} Freund._",
+    "blanks": [
+      { "id": "1", "label": "für + der Vater" },
+      { "id": "2", "label": "bei + ein Zahnarzt" },
+      { "id": "3", "label": "durch + der Tunnel" },
+      { "id": "4", "label": "aus + die Schule" },
+      { "id": "5", "label": "ohne + mein Bruder" },
+      { "id": "6", "label": "mit + der Lehrer" },
+      { "id": "7", "label": "gegen + ein Lastwagen" },
+      { "id": "8", "label": "zu + sein Freund" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["den", "dem"] },
+      { "blankId": "2", "options": ["einen", "einem"] },
+      { "blankId": "3", "options": ["den", "dem"] },
+      { "blankId": "4", "options": ["die", "der"] },
+      { "blankId": "5", "options": ["meinen", "meinem"] },
+      { "blankId": "6", "options": ["den", "dem"] },
+      { "blankId": "7", "options": ["einen", "einem"] },
+      { "blankId": "8", "options": ["seinen", "seinem"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "den",
+      "2": "einem",
+      "3": "den",
+      "4": "der",
+      "5": "meinen",
+      "6": "dem",
+      "7": "einen",
+      "8": "seinem"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has identificat correctament el grup de cada preposició: ==_für, durch, ohne, gegen_== → **Akk** (_den, einen, meinen_); ==_bei, aus, mit, zu_== → **Dat** (_einem, der, dem, seinem_). Les **cantarelles** són el teu mètode infal·lible: *aus-bei-mit-nach-seit-von-zu* i *durch-für-ohne-gegen-um-bis*.",
+      "references": ["A1b-20", "A1a-34", "A1a-28"]
+    },
+    "incorrect": {
+      "default": "Cantarelles clau: **Dat** → _aus, bei, mit, nach, seit, von, zu_. **Akk** → _durch, für, ohne, gegen, um, bis_. Si dubtes d'una preposició, comprova si és a la cantarella d'Akk; si no hi és i tampoc és Wechsel, és de la cantarella de Dat.",
+      "byResponse": [
+        {
+          "match": { "1": "dem" },
+          "message": "_für_ és Akk-fix (cantarella: _durch-für-ohne-gegen-um-bis_). Masc. → ==_**den** Vater_==. _dem_ seria datiu."
+        },
+        {
+          "match": { "3": "dem" },
+          "message": "_durch_ és Akk-fix. Masc. → ==_**den** Tunnel_==. Encara que _durch_ impliqui moviment \"a través\", això és irrellevant per al cas: sempre Akk."
+        },
+        {
+          "match": { "2": "einen" },
+          "message": "_bei_ és Dat-fix (cantarella: _aus-bei-mit-nach-seit-von-zu_). Masc. → ==_**einem** Zahnarzt_==. _einen_ seria acusatiu."
+        },
+        {
+          "match": { "4": "die" },
+          "message": "_aus_ és Dat-fix. Fem. → ==_**der** Schule_==. _die_ seria nominatiu/acusatiu."
+        },
+        {
+          "match": { "5": "meinem" },
+          "message": "_ohne_ és Akk-fix. Masc. → ==_**meinen** Bruder_==. _meinem_ seria datiu."
+        },
+        {
+          "match": { "6": "den" },
+          "message": "_mit_ és Dat-fix. Masc. → ==_**dem** Lehrer_==. _den_ seria acusatiu."
+        },
+        {
+          "match": { "7": "einem" },
+          "message": "_gegen_ és Akk-fix. Masc. → ==_**einen** Lastwagen_==. _einem_ seria datiu."
+        },
+        {
+          "match": { "8": "seinen" },
+          "message": "_zu_ és Dat-fix. Masc. → ==_**seinem** Freund_==. _seinen_ seria acusatiu."
+        }
+      ]
+    }
+  }
+}

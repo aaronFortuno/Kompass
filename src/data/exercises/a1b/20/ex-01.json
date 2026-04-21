@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-20-ex-01",
+  "topicId": "A1b-20",
+  "title": "Classifica les preposicions per grup",
+  "prompt": "A quin grup pertany cada preposició? Tria entre _sempre datiu_, _sempre acusatiu_ o _canvia (Wechsel)_. Si dubtes, recorda les dues cantarelles: **aus-bei-mit-nach-seit-von-zu** (Dat-fix) i **durch-für-ohne-gegen-um-bis** (Akk-fix); la resta de locals són Wechsel.",
+  "difficulty": 1,
+  "tags": ["preposicions", "classificacio", "dativ-fix", "akkusativ-fix", "wechsel"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _durch_ → {{1}}\n2. _bei_ → {{2}}\n3. _in_ → {{3}}\n4. _für_ → {{4}}\n5. _auf_ → {{5}}\n6. _mit_ → {{6}}\n7. _ohne_ → {{7}}\n8. _zu_ → {{8}}\n9. _an_ → {{9}}\n10. _gegen_ → {{10}}\n11. _nach_ → {{11}}\n12. _zwischen_ → {{12}}",
+    "blanks": [
+      { "id": "1", "label": "durch" },
+      { "id": "2", "label": "bei" },
+      { "id": "3", "label": "in" },
+      { "id": "4", "label": "für" },
+      { "id": "5", "label": "auf" },
+      { "id": "6", "label": "mit" },
+      { "id": "7", "label": "ohne" },
+      { "id": "8", "label": "zu" },
+      { "id": "9", "label": "an" },
+      { "id": "10", "label": "gegen" },
+      { "id": "11", "label": "nach" },
+      { "id": "12", "label": "zwischen" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["sempre Dat", "sempre Akk", "Wechsel"] },
+      { "blankId": "2", "options": ["sempre Dat", "sempre Akk", "Wechsel"] },
+      { "blankId": "3", "options": ["sempre Dat", "sempre Akk", "Wechsel"] },
+      { "blankId": "4", "options": ["sempre Dat", "sempre Akk", "Wechsel"] },
+      { "blankId": "5", "options": ["sempre Dat", "sempre Akk", "Wechsel"] },
+      { "blankId": "6", "options": ["sempre Dat", "sempre Akk", "Wechsel"] },
+      { "blankId": "7", "options": ["sempre Dat", "sempre Akk", "Wechsel"] },
+      { "blankId": "8", "options": ["sempre Dat", "sempre Akk", "Wechsel"] },
+      { "blankId": "9", "options": ["sempre Dat", "sempre Akk", "Wechsel"] },
+      { "blankId": "10", "options": ["sempre Dat", "sempre Akk", "Wechsel"] },
+      { "blankId": "11", "options": ["sempre Dat", "sempre Akk", "Wechsel"] },
+      { "blankId": "12", "options": ["sempre Dat", "sempre Akk", "Wechsel"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "sempre Akk",
+      "2": "sempre Dat",
+      "3": "Wechsel",
+      "4": "sempre Akk",
+      "5": "Wechsel",
+      "6": "sempre Dat",
+      "7": "sempre Akk",
+      "8": "sempre Dat",
+      "9": "Wechsel",
+      "10": "sempre Akk",
+      "11": "sempre Dat",
+      "12": "Wechsel"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Tens els tres grups fixats: ==**aus-bei-mit-nach-seit-von-zu**== són Dat-fix; ==**durch-für-ohne-gegen-um-bis**== són Akk-fix; la resta (_in, an, auf, über, unter, vor, hinter, neben, zwischen_) són Wechsel. A partir d'aquí, triar el cas correcte és mecànica pura.",
+      "references": ["A1b-20", "A1a-34", "A1b-19"]
+    },
+    "incorrect": {
+      "default": "Repassa les dues cantarelles: Dat-fix → **aus-bei-mit-nach-seit-von-zu**. Akk-fix → **durch-für-ohne-gegen-um-bis**. Tot el que no hi sigui i sigui local és Wechsel (_in, an, auf, über, unter, vor, hinter, neben, zwischen_).",
+      "byResponse": [
+        {
+          "match": { "1": "Wechsel" },
+          "message": "_durch_ **no és** Wechsel: pertany al grup Akk-fix (_durch-für-ohne-gegen-um-bis_). Sempre acusatiu, passi el que passi."
+        },
+        {
+          "match": { "11": "sempre Akk" },
+          "message": "Parany típic: _nach_ sembla \"direcció → acusatiu\", però és del grup Dat-fix (_aus-bei-mit-nach-seit-von-zu_). _nach Berlin_ és datiu, encara que hi hagi moviment."
+        },
+        {
+          "match": { "5": "sempre Dat" },
+          "message": "_auf_ és Wechselpräposition, no Dat-fix. A _auf dem Tisch_ (Wo?) és datiu, però a _auf den Tisch_ (Wohin?) és acusatiu."
+        },
+        {
+          "match": { "5": "sempre Akk" },
+          "message": "_auf_ és Wechselpräposition, no Akk-fix. El cas depèn de la pregunta: *Wo?* → Dat, *Wohin?* → Akk."
+        },
+        {
+          "match": { "9": "sempre Dat" },
+          "message": "_an_ és Wechselpräposition, no Dat-fix. A _am Tisch_ (Wo?) és datiu, però a _an die Tafel_ (Wohin?) és acusatiu."
+        },
+        {
+          "match": { "2": "sempre Akk" },
+          "message": "_bei_ és Dat-fix (_aus-bei-mit-nach-seit-von-zu_). Sempre datiu: _bei meiner Tante_, _beim Arzt_."
+        },
+        {
+          "match": { "7": "sempre Dat" },
+          "message": "_ohne_ és Akk-fix (_durch-für-ohne-gegen-um-bis_): _ohne meinen Hund_, _ohne das Geld_."
+        },
+        {
+          "match": { "10": "sempre Dat" },
+          "message": "_gegen_ és Akk-fix: _gegen den Baum_, _gegen die Kinder_. Confusió típica amb l'hora: _gegen 8 Uhr_ (sense article, no es veu el cas, però és acusatiu)."
+        }
+      ]
+    }
+  }
+}

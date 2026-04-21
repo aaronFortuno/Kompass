@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-20-ex-05",
+  "topicId": "A1b-20",
+  "title": "Preposició ↔ traducció + grup",
+  "prompt": "Empareja cada preposició alemanya amb la traducció catalana i el **grup** al qual pertany (Dat-fix, Akk-fix o Wechsel).",
+  "difficulty": 2,
+  "tags": ["preposicions", "traduccio", "grup", "memoria"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "de1", "group": "de", "content": { "type": "text", "content": "durch" } },
+      { "id": "de2", "group": "de", "content": { "type": "text", "content": "bei" } },
+      { "id": "de3", "group": "de", "content": { "type": "text", "content": "über" } },
+      { "id": "de4", "group": "de", "content": { "type": "text", "content": "ohne" } },
+      { "id": "de5", "group": "de", "content": { "type": "text", "content": "zu" } },
+      { "id": "de6", "group": "de", "content": { "type": "text", "content": "neben" } },
+      { "id": "de7", "group": "de", "content": { "type": "text", "content": "gegen" } },
+      { "id": "de8", "group": "de", "content": { "type": "text", "content": "aus" } },
+      { "id": "ca1", "group": "ca", "content": { "type": "text", "content": "a través de — **Akk-fix**" } },
+      { "id": "ca2", "group": "ca", "content": { "type": "text", "content": "a casa de / prop de — **Dat-fix**" } },
+      { "id": "ca3", "group": "ca", "content": { "type": "text", "content": "per sobre / per — **Wechsel**" } },
+      { "id": "ca4", "group": "ca", "content": { "type": "text", "content": "sense — **Akk-fix**" } },
+      { "id": "ca5", "group": "ca", "content": { "type": "text", "content": "cap a (persona/lloc) — **Dat-fix**" } },
+      { "id": "ca6", "group": "ca", "content": { "type": "text", "content": "al costat de — **Wechsel**" } },
+      { "id": "ca7", "group": "ca", "content": { "type": "text", "content": "contra / cap a (hora) — **Akk-fix**" } },
+      { "id": "ca8", "group": "ca", "content": { "type": "text", "content": "de (procedència) — **Dat-fix**" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Alemany",
+    "groupBLabel": "Traducció + grup"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["de1", "ca1"],
+      ["de2", "ca2"],
+      ["de3", "ca3"],
+      ["de4", "ca4"],
+      ["de5", "ca5"],
+      ["de6", "ca6"],
+      ["de7", "ca7"],
+      ["de8", "ca8"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Tens la tríada (forma ↔ significat ↔ grup) integrada per a 8 preposicions. La traducció sola no et serveix si no recordes el grup: _durch_ i _über_ tots dos es poden traduir per \"per\" en català, però un és Akk-fix i l'altre Wechsel. Memoritza sempre la parella **preposició + grup**.",
+      "references": ["A1b-20"]
+    },
+    "incorrect": {
+      "default": "Observa l'ambigüitat del català: \"per\" pot ser _durch_ (Akk-fix) o _über_ (Wechsel); \"cap a\" pot ser _zu_ (Dat-fix) o _gegen_ (Akk-fix, per a hores). El grup és tan important com la traducció. Dat-fix: _aus, bei, zu_. Akk-fix: _durch, ohne, gegen_. Wechsel: _über, neben_."
+    }
+  }
+}

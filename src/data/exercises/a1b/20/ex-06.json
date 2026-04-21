@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-20-ex-06",
+  "topicId": "A1b-20",
+  "title": "Un dia a la feina — text lliure",
+  "prompt": "Omple cada buit amb la **preposició + article** adequats. Barreja els tres grups (Dat-fix, Akk-fix, Wechsel). S'accepten les formes contretes (_im, zum, zur_) i les no contretes (_in dem, zu dem, zu der_) indistintament.",
+  "difficulty": 3,
+  "tags": ["sintesi", "contraccions", "avaluacio", "text-lliure"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Morgens fahre ich {{1}} Bus {{2}} Arbeit. Ich arbeite {{3}} einer großen Firma {{4}} Stadtzentrum. Mittags esse ich {{5}} meinen Kollegen {{6}} Kantine. Nach der Arbeit gehe ich {{7}} Park und trinke einen Kaffee {{8}} Café._",
+    "blanks": [
+      { "id": "1", "label": "1. _mit_ + _der Bus_ (Dat-fix, masc.)" },
+      { "id": "2", "label": "2. _zu_ + _die Arbeit_ (Dat-fix, fem.)" },
+      { "id": "3", "label": "3. \"a una empresa\" (Dat-fix, sense article)" },
+      { "id": "4", "label": "4. _in_ + _das Stadtzentrum_ (Wechsel, Wo? → Dat neutre)" },
+      { "id": "5", "label": "5. \"amb\" (Dat-fix, sense article — seguit de _meinen_)" },
+      { "id": "6", "label": "6. _in_ + _die Kantine_ (Wechsel, Wo? → Dat fem.)" },
+      { "id": "7", "label": "7. _durch_ + _der Park_ (Akk-fix, masc.)" },
+      { "id": "8", "label": "8. _in_ + _das Café_ (Wechsel, Wo? → Dat neutre)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "preposició + article" },
+      { "blankId": "2", "placeholder": "preposició + article (contreta)" },
+      { "blankId": "3", "placeholder": "només preposició" },
+      { "blankId": "4", "placeholder": "preposició + article (contreta)" },
+      { "blankId": "5", "placeholder": "només preposició" },
+      { "blankId": "6", "placeholder": "preposició + article" },
+      { "blankId": "7", "placeholder": "preposició + article" },
+      { "blankId": "8", "placeholder": "preposició + article (contreta)" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["mit dem"],
+      "2": ["zur", "zu der"],
+      "3": ["bei"],
+      "4": ["im", "in dem"],
+      "5": ["mit"],
+      "6": ["in der"],
+      "7": ["durch den"],
+      "8": ["im", "in dem"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé: has navegat els tres grups en un text real. ==_mit dem_== i ==_zur_== (Dat-fix); ==_bei_== i ==_mit_== (Dat-fix, sense article); ==_im_==, ==_in der_==, ==_im_== (Wechsel + Wo? → Dat); i ==_durch den_== (Akk-fix). Aquest és el nivell de control esperable després d'A1b-20.",
+      "references": ["A1b-20", "A1b-19", "A1a-34"]
+    },
+    "incorrect": {
+      "default": "Pensa cada buit en dos passos: (1) **quin grup** és la preposició?; (2) si és Wechsel, **Wo?** o **Wohin?**. Errors típics: \"_zum Arbeit_\" (gènere: _die Arbeit_ fem. → _zur_, no _zum_); \"_in den Stadtzentrum_\" (ubicació estàtica → Wo? → _im_, no _in den_); oblidar que _durch_ és Akk-fix i posar datiu.",
+      "byResponse": [
+        {
+          "match": { "2": "zum" },
+          "message": "Error de gènere. _die Arbeit_ és **femení** → _zu + der_ = ==_**zur**_==. _zum_ seria masc./neut. (_zum Arzt, zum Kino_)."
+        },
+        {
+          "match": { "4": "in den" },
+          "message": "_arbeiten in_ indica **ubicació** (Wo? → Dat), no direcció. _das Stadtzentrum_ neut. → ==_**im** Stadtzentrum_== (o _in dem_). _in den_ seria Wohin? + masc."
+        },
+        {
+          "match": { "4": "ins" },
+          "message": "_arbeiten in_ indica **ubicació** (Wo? → Dat), no direcció. La contracció correcta és ==_**im**_== (_in + dem_), no _ins_ (_in + das_, que és Wohin?)."
+        },
+        {
+          "match": { "7": "durch dem" },
+          "message": "_durch_ és Akk-fix, no datiu. Masc. → ==_**durch den** Park_==."
+        },
+        {
+          "match": { "6": "in die" },
+          "message": "_essen in_ indica **ubicació** (Wo? → Dat), no direcció. Fem. → ==_**in der** Kantine_==. _in die_ seria Wohin?."
+        },
+        {
+          "match": { "8": "ins" },
+          "message": "_trinken in_ indica **ubicació** (Wo? → Dat), no direcció. ==_**im** Café_== (Dat neut.), no _ins_ (Akk neut., Wohin?)."
+        },
+        {
+          "match": { "1": "mit den" },
+          "message": "_mit_ és Dat-fix. Masc. → ==_**mit dem** Bus_==. _den_ seria acusatiu."
+        },
+        {
+          "match": { "3": "in" },
+          "message": "_in einer großen Firma_ seria possible, però el patró català \"a / treballar a\" un lloc de feina en alemany és ==_**bei** einer Firma_== (Dat-fix). _bei_ senyala \"a l'empresa de\"."
+        }
+      ]
+    }
+  }
+}

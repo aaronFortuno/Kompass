@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-20-ex-02",
+  "topicId": "A1b-20",
+  "title": "Articles amb preposicions fixes",
+  "prompt": "Escriu l'**article correcte** (només l'article, no la preposició) a cada buit. El substantiu amb el seu gènere/número ja te'l donem entre parèntesis. Recorda: preposicions del grup Dat-fix demanen datiu; les del grup Akk-fix demanen acusatiu.",
+  "difficulty": 2,
+  "tags": ["articles", "dativ-fix", "akkusativ-fix", "declinacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich fahre mit {{1}} Bus._ _(der Bus)_\n2. _Das Buch ist für {{2}} Kind._ _(das Kind)_\n3. _Wir gehen durch {{3}} Wald._ _(der Wald)_\n4. _Ich komme aus {{4}} Türkei._ _(die Türkei)_\n5. _Er spielt gegen {{5}} Mannschaft._ _(die Mannschaft)_\n6. _Sie wohnt bei {{6}} Eltern._ _(die Eltern, pl.)_\n7. _Ohne {{7}} Schlüssel kann ich nicht rein._ _(der Schlüssel)_\n8. _Ich gehe zu {{8}} Ärztin._ _(die Ärztin)_\n9. _Um {{9}} Tisch sitzen acht Leute._ _(der Tisch)_\n10. _Nach {{10}} Konzert gehen wir essen._ _(das Konzert)_",
+    "blanks": [
+      { "id": "1", "label": "mit + der Bus" },
+      { "id": "2", "label": "für + das Kind" },
+      { "id": "3", "label": "durch + der Wald" },
+      { "id": "4", "label": "aus + die Türkei" },
+      { "id": "5", "label": "gegen + die Mannschaft" },
+      { "id": "6", "label": "bei + die Eltern (pl.)" },
+      { "id": "7", "label": "ohne + der Schlüssel" },
+      { "id": "8", "label": "zu + die Ärztin" },
+      { "id": "9", "label": "um + der Tisch" },
+      { "id": "10", "label": "nach + das Konzert" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "article" },
+      { "blankId": "2", "placeholder": "article" },
+      { "blankId": "3", "placeholder": "article" },
+      { "blankId": "4", "placeholder": "article" },
+      { "blankId": "5", "placeholder": "article" },
+      { "blankId": "6", "placeholder": "article" },
+      { "blankId": "7", "placeholder": "article" },
+      { "blankId": "8", "placeholder": "article" },
+      { "blankId": "9", "placeholder": "article" },
+      { "blankId": "10", "placeholder": "article" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "dem",
+      "2": "das",
+      "3": "den",
+      "4": "der",
+      "5": "die",
+      "6": "den",
+      "7": "den",
+      "8": "der",
+      "9": "den",
+      "10": "dem"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has aplicat les dues taules: Dat → _dem/der/dem/den_ (masc./fem./neut./pl.); Akk → _den/die/das/die_. I has vist dos paranys subtils: _nach_ és Dat-fix tot i que sovint sembla direcció (_nach **dem** Konzert_), i _bei_ amb plural afegeix **-n** al substantiu (_bei den Eltern_, però aquí _Eltern_ ja acaba en _-n_).",
+      "references": ["A1b-20", "A1a-28", "A1a-34"]
+    },
+    "incorrect": {
+      "default": "Dues taules clau: ==**Dat** masc./neut. = _dem_, fem. = _der_, pl. = _den (+n)_==. ==**Akk** masc. = _den_, fem. = _die_, neut. = _das_, pl. = _die_==. Per a cada buit: (1) identifica el grup de la preposició; (2) aplica la taula corresponent.",
+      "byResponse": [
+        {
+          "match": { "3": "dem" },
+          "message": "_durch_ és Akk-fix. _der Wald_ masculí → acusatiu ==_**den** Wald_==. _dem_ seria datiu."
+        },
+        {
+          "match": { "10": "das" },
+          "message": "Parany clàssic. _nach_ és Dat-fix, **no** acusatiu: _das Konzert_ neutre → datiu ==_**dem** Konzert_==. _das_ seria acusatiu, però _nach_ no fa mai acusatiu."
+        },
+        {
+          "match": { "1": "den" },
+          "message": "_mit_ és Dat-fix. _der Bus_ masc. → datiu ==_**dem** Bus_==. _den_ seria acusatiu."
+        },
+        {
+          "match": { "7": "dem" },
+          "message": "_ohne_ és Akk-fix. _der Schlüssel_ masc. → acusatiu ==_**den** Schlüssel_==. _dem_ seria datiu."
+        },
+        {
+          "match": { "4": "die" },
+          "message": "_aus_ és Dat-fix. _die Türkei_ femení → datiu ==_**der** Türkei_==. _die_ seria nominatiu o acusatiu."
+        },
+        {
+          "match": { "8": "die" },
+          "message": "_zu_ és Dat-fix. _die Ärztin_ femení → datiu ==_**der** Ärztin_==. (A la llengua parlada se sol contraure: _**zur** Ärztin_.)"
+        },
+        {
+          "match": { "9": "dem" },
+          "message": "_um_ és Akk-fix. _der Tisch_ masc. → acusatiu ==_**den** Tisch_==. _dem_ seria datiu."
+        }
+      ]
+    }
+  }
+}
