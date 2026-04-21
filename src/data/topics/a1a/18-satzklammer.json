@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-18",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 18,
+  "title": "Estructura de la frase — Satzklammer",
+  "shortTitle": "Satzklammer",
+  "description": "La inversió (el subjecte a la 3 quan un complement va a la 1) i la Satzklammer (verb conjugat a la 2 i segona peça verbal al final), les dues estructures que expliquen per què l'alemany només es revela del tot al final de la frase.",
+  "axes": ["sintaxi-ordre-paraules"],
+  "prerequisites": ["A1a-2"],
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Context i motivació\n\nA la lliçó **A1a-2** vas conèixer la regla d'or de l'alemany: en una oració declarativa, **el verb conjugat va sempre a la posició 2**. També vas veure les W-Fragen (amb Fragewort) i les Ja/Nein-Fragen (amb el verb a la 1). Ara anem al **següent nivell**: què passa quan comencem la frase per alguna cosa que no és el subjecte, i què passa quan hi ha **més d'una peça verbal** a la mateixa frase.\n\nDues idees noves, totes dues naturals de l'alemany i força \"exòtiques\" per a nosaltres:\n\n1. La **inversió** (_Inversion_) — quan un complement s'enfila a la posició 1, el subjecte \"salta\" a la posició 3.\n2. La **Satzklammer** — literalment, els \"**claudàtors de la frase**\": una estructura on el verb conjugat (a la 2) i una segona peça verbal (al final de tot) ==abracen== tota la informació.\n\nAquests dos mecanismes expliquen per què, quan llegeixes alemany, de vegades el sentit només s'aclareix al final del tot. Tranquil·litat: amb poques regles ho dominaràs."
+        }
+      ]
+    },
+    {
+      "id": "recap-positions",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Refresc ràpid: posicions a la frase\n\nAbans d'entrar en matèria, recordem el vocabulari (si vols, repassa **A1a-2**):\n\n- **Posició 1** — el primer \"bloc\" d'informació de la frase. Pot ser el subjecte, un complement, un adverbi... qualsevol cosa.\n- **Posició 2** — el **verb conjugat** (_konjugiertes Verb_). Sempre. En declaratives no falla mai.\n- **Posició 3 i següents** — el subjecte (si no és a la 1) i els complements (_Ergänzungen_).\n- **Posició final** — reservada, com veurem, per a la **segona peça verbal** (infinitiu, participi o prefix separable) quan n'hi ha.\n\nRecorda: **no comptem paraules, comptem blocs**. _Am Wochenende_ (dues paraules) ocupa una sola posició."
+        }
+      ]
+    },
+    {
+      "id": "inversion-core",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### La inversió: quan el subjecte s'aparta\n\nFins ara, les frases que has vist solien començar pel subjecte:\n\n> _==Ich== ==spiele== manchmal Fußball._ — _Jo jugo a futbol de vegades._\n\nPerò l'alemany permet, i de fet fomenta, **començar per un complement** per donar-li èmfasi o per lligar amb el que s'ha dit abans. I aquí ve el truc: **el verb no es mou**, continua a la posició 2. L'únic que canvia és el subjecte, que **s'aparta a la posició 3**."
+        },
+        {
+          "type": "table",
+          "title": "Inversió: verb i subjecte, sempre junts",
+          "headers": ["Posició 1", "Posició 2", "Posició 3", "Posició 4+"],
+          "rows": [
+            ["_Ich_", "**==spiele==**", "—", "_manchmal Fußball._"],
+            ["_Manchmal_", "**==spiele==**", "_ich_", "_Fußball._"],
+            ["_Am Wochenende_", "**==spiele==**", "_ich_", "_Fußball mit Anna._"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Les tres frases volen dir pràcticament el mateix, però canvia l'èmfasi. Posar _Manchmal_ o _Am Wochenende_ a la posició 1 destaca **quan** passa l'acció. És com si en català diguéssim \"_De vegades, jo jugo a futbol_\" vs \"_Jo jugo a futbol de vegades_\".\n\n**La regla d'or que has de retenir:**\n\n> ==Verb i subjecte sempre van junts==. Si el subjecte no és a la 1, anirà **just darrere del verb**, a la posició 3.\n\n**Comparació trilingüe:**\n\n- CA: _Els caps de setmana jo jugo a futbol._ (ordre flexible)\n- ES: _Los fines de semana yo juego al fútbol._ (ordre flexible)\n- DE: _Am Wochenende ==spiele== ==ich== Fußball._ (==complement== — ==verb== — ==subjecte==)"
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Error típic de catalanoparlant",
+          "body": "En català, darrere d'un complement inicial, sol venir el subjecte abans que el verb. En alemany **és al revés**: el verb **sempre** primer.\n\n- Incorrecte: _Am Wochenende ich spiele Fußball._\n- Correcte: _Am Wochenende **spiele ich** Fußball._"
+        }
+      ]
+    },
+    {
+      "id": "check-inversion",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-18-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "satzklammer-intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### La Satzklammer: els \"claudàtors de la frase\"\n\nAquí ve una de les construccions **més característiques** de l'alemany, i una de les que més despista els catalanoparlants. En català i castellà, quan un verb té dues parts (auxiliar + infinitiu, auxiliar + participi), les posem **juntes**:\n\n- CA: _==Puc== ==ballar== tango molt bé._\n- ES: _==Puedo== ==bailar== tango muy bien._\n\nL'alemany fa una cosa radicalment diferent. Les dues parts del verb **se separen**, i es col·loquen als extrems de la frase. El **verb conjugat** (el que canvia segons la persona) es queda a la posició 2; la **segona peça verbal** (infinitiu, participi, o prefix separable) ==vola al final de la frase==. I tot el que no és verb queda enmig, ==tancat== entre les dues peces.\n\nAquesta estructura s'anomena **Satzklammer**, que es tradueix literalment com \"**claudàtors de la frase**\" o \"**parèntesi verbal**\". És molt útil pensar-ho així: imagina que el verb conjugat és un **claudàtor obert** i la segona peça verbal un **claudàtor tancat**, i que tota la informació viu a dins.\n\n> [ ==verb conjugat== … _complements_ … ==2a peça verbal== ]"
+        },
+        {
+          "type": "table",
+          "title": "Exemple bàsic de Satzklammer",
+          "headers": ["Posició 1", "Posició 2 (Verb 1)", "Posició 3", "Mig", "Final (Verb 2)"],
+          "rows": [
+            ["_Sie_", "**==kann==**", "—", "_sehr gut Tango_", "**==tanzen.==**"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Traducció: _Ella sap ballar tango molt bé._ Fixa't: en català les dues peces verbals (_sap ballar_) van juntes. En alemany, _kann_ obre el claudàtor, _tanzen_ el tanca, i enmig hi ha tot el contingut."
+        }
+      ]
+    },
+    {
+      "id": "satzklammer-when",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Quan apareix la Satzklammer?\n\nLa Satzklammer no és una excepció rara: apareix en **moltes** estructures habituals de l'alemany. A nivell A1 en veuràs tres de principals (les treballaràs amb més profunditat en lliçons futures; aquí només les introduïm):\n\n**1. Verbs modals (A1a-19, A1a-26)**\n\nUn verb modal (_können_, _möchten_, _müssen_, _wollen_…) es conjuga a la posició 2; l'**infinitiu** del verb principal va al final.\n\n> _Ich ==möchte== ein Bier ==trinken==._ — _Voldria beure una cervesa._\n\n**2. Verbs separables (A1a-25)**\n\nAlguns verbs alemanys tenen un **prefix que se separa** en present. L'arrel es conjuga a la 2, i el prefix ==marxa al final==.\n\n> _aufstehen_ (llevar-se) → _Ich ==stehe== um 7 Uhr ==auf==._ — _Em llevo a les 7._\n\n**3. Perfekt (ja ho veuràs a A1b)**\n\nEl passat compost de l'alemany fa servir un auxiliar (_haben_ o _sein_) a la 2, i el **participi** al final.\n\n> _Ich ==habe== gestern Tango ==getanzt==._ — _Ahir vaig ballar tango._\n\nEn els tres casos, el patró és idèntic: ==verb conjugat a la 2, segona peça al final==, tota la resta enmig. És la **mateixa estructura**, el mateix esquelet."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Analogia: l'abraçada",
+          "body": "Pensa-hi com en una **abraçada**. Les dues peces verbals són els dos braços que abracen tot el contingut de la frase. En alemany, la informació important (objectes, adverbis, complements…) viu ==dins de l'abraçada=="
+        }
+      ]
+    },
+    {
+      "id": "check-satzklammer",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-18-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "satzklammer-inversion",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### I si combinem Satzklammer amb inversió?\n\nAquí la cosa es posa interessant però no et compliquis: **les regles segueixen iguals**. Si comencem la frase per un complement, passen exactament les dues coses que ja saps:\n\n1. El **verb conjugat** continua a la posició 2 (no es mou mai).\n2. El **subjecte** salta a la posició 3.\n3. La **segona peça verbal** continua al **final** de la frase."
+        },
+        {
+          "type": "table",
+          "title": "Satzklammer + inversió",
+          "headers": ["Posició 1", "Posició 2 (Verb 1)", "Posició 3", "Mig", "Final (Verb 2)"],
+          "rows": [
+            ["_Tango_", "**==kann==**", "_sie_", "_sehr gut_", "**==tanzen.==**"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Traducció: _Tango, ella en sap ballar molt bé._ Fixa't-hi: _Tango_ (el complement d'objecte) està a la posició 1 per èmfasi; _kann_ manté la posició 2; _sie_ (el subjecte) ha saltat a la 3; i _tanzen_ roman al final, tancant el claudàtor.\n\n**Aquesta combinació és molt habitual** en alemany parlat i escrit. Cada vegada que veus una frase que comença per un adverbi temporal (_heute_, _morgen_, _am Wochenende_...) i conté un verb modal o separable, tindràs el patró complet davant teu."
+        }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. Posar el verb a la posició 3 després d'un complement inicial.**\nÉs l'error rei. En català l'ordre \"complement + subjecte + verb\" sona natural. En alemany, **no existeix**: el verb es manté a la 2.\n\n- Incorrecte: _Am Wochenende ich spiele Fußball._\n- Correcte: _Am Wochenende ==spiele ich== Fußball._\n\n**2. Ajuntar les dues peces verbals.**\nPer influència del català/castellà, costa acceptar que _kann_ i _tanzen_ van separats. L'instint ens diu \"_kann tanzen_\" tot junt.\n\n- Incorrecte: _Sie kann tanzen sehr gut Tango._\n- Correcte: _Sie ==kann== sehr gut Tango ==tanzen==._\n\n**3. Conjugar la segona peça verbal.**\nEl verb principal d'una Satzklammer va en **infinitiu** (o participi, o com a prefix); ==mai no es conjuga==. El que es conjuga és el modal o l'auxiliar.\n\n- Incorrecte: _Ich möchte ein Bier trinke._\n- Correcte: _Ich möchte ein Bier ==trinken==._ (infinitiu)\n\n**4. Oblidar separar el prefix dels verbs separables.**\nVerbs com _aufstehen_, _ankommen_, _einkaufen_ **se separen** en present (ho veuràs a **A1a-25**). El prefix marxa al final.\n\n- Incorrecte: _Ich aufstehe um 7 Uhr._\n- Correcte: _Ich ==stehe== um 7 Uhr ==auf==._\n\n**5. Tenir por del \"final\" de la frase.**\nA l'inici fa vertigen: \"i si m'oblido del verb del final?\" Passa a tothom. Consell: quan comencis una frase amb un modal o un auxiliar, **tingues ja pensat el verb principal**. Amb temps es fa automàtic."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Resum dels paranys",
+          "body": "El verb conjugat **mai** deixa la posició 2, tot i que hi hagi un complement al davant. Les dues peces verbals **mai** van juntes: la segona vola ==al final==, sempre en **infinitiu, participi o prefix**, mai conjugada. I amb els verbs separables: no els deixis sencers, **separa'ls**."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-18-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-18-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-18-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-18-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Tres idees per endur-te a casa\n\n1. **Inversió** — quan un complement va a la posició 1, el **verb es queda a la 2** i el **subjecte salta a la 3**. Verb i subjecte, sempre junts.\n2. **Satzklammer** — quan hi ha **dues peces verbals** (modal + infinitiu, auxiliar + participi, arrel + prefix separable), el **verb conjugat es queda a la 2** i la **segona peça vola al final**. Tot el contingut viu ==entre els dos claudàtors==.\n3. **Es combinen sense problema** — inversió + Satzklammer és un patró habitual a l'alemany. Les regles no es contradiuen: simplement s'acumulen.\n\nPista pràctica: cada vegada que llegeixis una frase alemanya i no hi trobis de seguida el sentit, **busca el verb del final**. Sovint la clau és allà, pacientment esperant-te.\n\nConnexions que vindran: **A1a-19** (_können_ i _mögen_), **A1a-25** (verbs separables), **A1a-26** (verbs modals), i a **A1b** el _Perfekt_. Totes són aplicacions del mateix principi: la Satzklammer. Una vegada l'has entesa, desbloqueges molta sintaxi alemanya de cop."
+        },
+        {
+          "type": "table",
+          "title": "18.1 Inversió (una peça verbal)",
+          "headers": ["Posició 1", "Posició 2 (verb)", "Posició 3 (subjecte)", "Resta"],
+          "rows": [
+            ["_Ich_", "**spiele**", "—", "_manchmal Fußball._"],
+            ["_Manchmal_", "**spiele**", "_ich_", "_Fußball._"],
+            ["_Am Wochenende_", "**spiele**", "_ich_", "_Fußball mit Anna._"]
+          ],
+          "caption": "Amb una sola peça verbal: el verb es queda a la 2 i el subjecte salta a la 3 quan la 1 està ocupada."
+        },
+        {
+          "type": "table",
+          "title": "18.2 Satzklammer (dues peces verbals)",
+          "headers": ["Posició 1", "Verb 1 (conjugat)", "Posició 3", "Mig", "Final (Verb 2)"],
+          "rows": [
+            ["_Sie_", "**kann**", "—", "_sehr gut Tango_", "**tanzen.**"],
+            ["_Ich_", "**möchte**", "—", "_ein Bier_", "**trinken.**"],
+            ["_Ich_", "**stehe**", "—", "_um 7 Uhr_", "**auf.**"],
+            ["_Am Wochenende_", "**möchte**", "_sie_", "_Tango_", "**tanzen.**"]
+          ],
+          "caption": "Modal + infinitiu, arrel + prefix separable, auxiliar + participi: sempre el mateix esquelet."
+        }
+      ]
+    }
+  ]
+}

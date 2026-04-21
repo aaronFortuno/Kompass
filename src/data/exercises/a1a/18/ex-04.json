@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-18-ex-04",
+  "topicId": "A1a-18",
+  "title": "Satzklammer amb verb modal",
+  "prompt": "Construeix una Satzklammer amb un modal conjugat a la 2 i l'infinitiu al final.",
+  "difficulty": 2,
+  "tags": ["satzklammer", "verb-modal", "infinitiu"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Anna {{1}} sehr gut Deutsch {{2}}. (_Anna sap parlar alemany molt bé._) Verbs: _können + sprechen_.",
+    "blanks": [
+      { "id": "1", "label": "posició 2 (modal conjugat)" },
+      { "id": "2", "label": "posició final (infinitiu)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["kann", "können", "spricht"] },
+      { "blankId": "2", "options": ["sprechen", "spricht", "spreche"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "kann",
+      "2": "sprechen"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Exacte! _kann_ (modal, conjugat amb _Anna_ = ella) obre el claudàtor; _sprechen_ (infinitiu) el tanca. Entremig, tot el contingut: _sehr gut Deutsch_."
+    },
+    "incorrect": {
+      "default": "Recorda: el **modal** es conjuga (_sie kann_); el **verb principal** es queda en **infinitiu** al final (_sprechen_, amb _-en_).",
+      "byResponse": [
+        {
+          "match": { "1": "spricht" },
+          "message": "Aquí el verb conjugat de la posició 2 ha de ser el **modal** _kann_, no _sprechen_. _sprechen_ es queda al final en infinitiu."
+        },
+        {
+          "match": { "1": "können" },
+          "message": "_können_ és l'infinitiu del modal. A la posició 2 hi va la forma **conjugada** amb _Anna_ (3a sing.): _kann_."
+        },
+        {
+          "match": { "2": "spricht" },
+          "message": "La segona peça de la Satzklammer **mai** es conjuga. Ha d'anar en **infinitiu**: _sprechen_."
+        }
+      ]
+    }
+  }
+}

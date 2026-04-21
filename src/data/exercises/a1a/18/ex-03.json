@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-18-ex-03",
+  "topicId": "A1a-18",
+  "title": "Inversió amb complement de temps",
+  "prompt": "Aplica la inversió: la frase comença per un complement temporal. Tria la forma correcta per a cada buit.",
+  "difficulty": 2,
+  "tags": ["inversio", "posicio-verb", "complement-temps"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Morgen {{1}} {{2}} nach Berlin. (_Demà [jo] viatjo a Berlín._) Verb: _fahren_.",
+    "blanks": [
+      { "id": "1", "label": "posició 2 (verb)" },
+      { "id": "2", "label": "posició 3 (subjecte)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["fahre", "ich", "fährt"] },
+      { "blankId": "2", "options": ["ich", "fahre", "du"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "fahre",
+      "2": "ich"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé! _Morgen_ ocupa la posició 1, _fahre_ la 2 (verb), _ich_ la 3 (subjecte). Verb i subjecte, junts i en aquest ordre."
+    },
+    "incorrect": {
+      "default": "Atenció: quan un complement va a la 1, no canvia res del verb — continua a la 2. El subjecte (_ich_) és el que es mou a la posició 3.",
+      "byResponse": [
+        {
+          "match": { "1": "fährt" },
+          "message": "_fährt_ és la forma de 3a persona (_er / sie / es_). Com que el subjecte és _ich_, la forma correcta és _fahre_.",
+          "references": ["A1a-15"]
+        },
+        {
+          "match": { "1": "ich" },
+          "message": "El subjecte mai va a la posició 2: aquesta posició és sempre del verb. L'ordre correcte és _Morgen fahre ich..._"
+        }
+      ]
+    }
+  }
+}

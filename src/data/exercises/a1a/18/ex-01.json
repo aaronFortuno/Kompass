@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-18-ex-01",
+  "topicId": "A1a-18",
+  "title": "Inversió amb complement temporal",
+  "prompt": "La frase comença per un complement (_Heute_). Tria la forma correcta per a cada buit. Recorda: verb i subjecte sempre junts, en aquest ordre.",
+  "difficulty": 1,
+  "tags": ["inversio", "posicio-verb", "declarativa"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Heute {{1}} {{2}} Deutsch. (_Avui estudio alemany._)",
+    "blanks": [
+      { "id": "1", "label": "posició 2 (verb)" },
+      { "id": "2", "label": "posició 3 (subjecte)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["lerne", "ich", "bin"] },
+      { "blankId": "2", "options": ["ich", "lerne", "du"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "lerne",
+      "2": "ich"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte! _Heute_ ocupa la posició 1, el verb _lerne_ es manté a la 2, i el subjecte _ich_ salta a la 3. Verb i subjecte, sempre junts."
+    },
+    "incorrect": {
+      "default": "Recorda: quan un complement va al davant, el verb **no es mou** de la posició 2, i el subjecte passa a la 3. Verb i subjecte sempre junts.",
+      "byResponse": [
+        {
+          "match": { "1": "ich" },
+          "message": "Has posat el subjecte a la posició 2, però la posició 2 és **sempre** del verb conjugat. En alemany no hi ha l'ordre \"complement + subjecte + verb\" que tenim en català.",
+          "references": ["A1a-2"]
+        }
+      ]
+    }
+  }
+}

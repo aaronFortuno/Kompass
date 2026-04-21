@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-18-ex-02",
+  "topicId": "A1a-18",
+  "title": "Les dues peces de la Satzklammer",
+  "prompt": "Construeix una Satzklammer amb el verb modal _können_ + _kommen_. Tria la forma correcta per a cada buit.",
+  "difficulty": 1,
+  "tags": ["satzklammer", "verb-modal", "infinitiu"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Ich {{1}} heute nicht {{2}}. (_Avui no puc venir._) Verbs: _können + kommen_.",
+    "blanks": [
+      { "id": "1", "label": "posició 2 (verb conjugat)" },
+      { "id": "2", "label": "posició final (infinitiu)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["kann", "komme", "kommen"] },
+      { "blankId": "2", "options": ["kommen", "komme", "kommt"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "kann",
+      "2": "kommen"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte! _kann_ obre el claudàtor a la posició 2 (conjugat amb _ich_); _kommen_ el tanca al final (en infinitiu, invariable)."
+    },
+    "incorrect": {
+      "default": "Recorda: el verb **modal** es conjuga amb el subjecte (_ich kann_), i el verb **principal** es queda en infinitiu al final de la frase (_kommen_).",
+      "byResponse": [
+        {
+          "match": { "2": "komme" },
+          "message": "La segona peça de la Satzklammer **mai** es conjuga: va en **infinitiu** (_kommen_, amb _-en_). La persona ja queda marcada pel verb modal (_ich kann_)."
+        },
+        {
+          "match": { "1": "kommen" },
+          "message": "A la posició 2 hi ha d'anar el verb **conjugat** amb _ich_, que és el modal _kann_. _kommen_ es queda al final, en infinitiu."
+        }
+      ]
+    }
+  }
+}

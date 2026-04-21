@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-18-ex-05",
+  "topicId": "A1a-18",
+  "title": "Inversió i Satzklammer alhora",
+  "prompt": "La frase combina les dues estructures: complement a la 1 (inversió) i verb modal (Satzklammer). Tria la forma correcta per a cada buit.",
+  "difficulty": 3,
+  "tags": ["satzklammer", "inversio", "verb-modal", "combinacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Am Wochenende {{1}} {{2}} Tango {{3}}. (_El cap de setmana [ella] vol ballar tango._) Verbs: _möchten + tanzen_.",
+    "blanks": [
+      { "id": "1", "label": "posició 2 (modal)" },
+      { "id": "2", "label": "posició 3 (subjecte)" },
+      { "id": "3", "label": "posició final (infinitiu)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["möchte", "tanzen", "sie"] },
+      { "blankId": "2", "options": ["sie", "möchte", "ich"] },
+      { "blankId": "3", "options": ["tanzen", "tanzt", "tanze"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "möchte",
+      "2": "sie",
+      "3": "tanzen"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Fantàstic! Has combinat les dues regles d'aquesta lliçó: inversió (subjecte a la 3 perquè _Am Wochenende_ ocupa la 1) + Satzklammer (_möchte_ a la 2, _tanzen_ al final)."
+    },
+    "incorrect": {
+      "default": "Repassem l'estructura: posició 1 = _Am Wochenende_; posició 2 = modal conjugat (_möchte_); posició 3 = subjecte (_sie_); mig = complement (_Tango_); final = infinitiu (_tanzen_).",
+      "byResponse": [
+        {
+          "match": { "1": "sie" },
+          "message": "La posició 2 és **sempre** del verb conjugat. El subjecte _sie_ va a la 3, just darrere del verb. Recorda: verb i subjecte, sempre junts."
+        },
+        {
+          "match": { "3": "tanzt" },
+          "message": "La segona peça de la Satzklammer no es conjuga: va en **infinitiu** (_tanzen_). Qui es conjuga és el modal (_sie möchte_)."
+        },
+        {
+          "match": { "3": "tanze" },
+          "message": "_tanze_ és la forma de 1a persona (_ich_). La segona peça de la Satzklammer ha d'anar en **infinitiu**: _tanzen_."
+        }
+      ]
+    }
+  }
+}
