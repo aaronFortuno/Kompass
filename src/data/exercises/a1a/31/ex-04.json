@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-31-ex-04",
+  "topicId": "A1a-31",
+  "title": "_als_ vs _wie_ i superlatiu de _groß_",
+  "prompt": "Tria l'opció correcta per a cada buit. Distingeix igualtat (_wie_) i desigualtat (_als_), i recorda que _groß_ no duplica la _s_ al superlatiu.",
+  "difficulty": 2,
+  "tags": ["als", "wie", "superlatiu", "gross", "dropdownfill", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Anna ist **so** groß {{1}} Lisa._ (= L'Anna és tan alta com la Lisa.)\n2. _Paul ist **größer** {{2}} Anna._ (= En Paul és més alt que l'Anna.)\n3. _Martin ist **am {{3}}**. Er ist 1,95 m._ (= El Martin és el més alt.)",
+    "blanks": [
+      { "id": "1", "label": "connector d'igualtat" },
+      { "id": "2", "label": "connector de desigualtat" },
+      { "id": "3", "label": "superlatiu de _groß_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["als", "wie", "am"] },
+      { "blankId": "2", "options": ["als", "wie", "am"] },
+      { "blankId": "3", "options": ["größten", "großten", "größsten"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "wie",
+      "2": "als",
+      "3": "größten"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has distingit les tres estructures: **igualtat** (_so...**wie**_), **comparatiu** (adj-er **als**), **superlatiu** (_**am** ...-sten_). I has recordat que _groß_ **no duplica la _s_** al superlatiu: _am **größten**_, no _*am großsten_ ni _*am größsten_."
+    },
+    "incorrect": {
+      "default": "Recorda: **igualtat** = _so X **wie** Y_ (tan X com Y). **Desigualtat** = _X-er **als** Y_ (més X que Y). **Superlatiu** = _**am** X-sten_. I per a _groß_: _am größten_, perquè la _ß_ ja conté la _s_ i no es duplica.",
+      "byResponse": [
+        {
+          "match": { "1": "als" },
+          "message": "Aquí hi ha _so_ davant (igualtat, A = B), així que la conjunció és **_wie_** (\"com\"). _als_ només va amb comparatius (desigualtat)."
+        },
+        {
+          "match": { "2": "wie" },
+          "message": "Aquí hi ha _größer_ (comparatiu), així que la conjunció és **_als_** (\"que\"). _wie_ només va amb igualtat (_so ... wie_)."
+        },
+        {
+          "match": { "3": "großten" },
+          "message": "Falta l'Umlaut: _groß_ pren Umlaut al superlatiu → _am **größ**ten_."
+        },
+        {
+          "match": { "3": "größsten" },
+          "message": "No es duplica la _s_: la _ß_ de _groß_ ja porta el so \"s\" incorporat. La forma correcta és _am **größten**_, sense _-s-_ extra."
+        }
+      ]
+    }
+  }
+}

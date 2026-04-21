@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-31-ex-05",
+  "topicId": "A1a-31",
+  "title": "Classifica cada adjectiu amb el seu comparatiu",
+  "prompt": "Empareja cada adjectiu en grau positiu amb la seva forma comparativa. Hi ha regulars purs, amb Umlaut, semi-irregulars i un totalment irregular (d'A1a-17).",
+  "difficulty": 2,
+  "tags": ["comparatiu", "umlaut", "irregulars", "matchpairs", "assessment"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "p-schon", "group": "Positiu", "content": { "type": "text", "content": "_schön_" } },
+      { "id": "p-alt", "group": "Positiu", "content": { "type": "text", "content": "_alt_" } },
+      { "id": "p-gut", "group": "Positiu", "content": { "type": "text", "content": "_gut_" } },
+      { "id": "p-hoch", "group": "Positiu", "content": { "type": "text", "content": "_hoch_" } },
+      { "id": "p-gross", "group": "Positiu", "content": { "type": "text", "content": "_groß_" } },
+      { "id": "p-billig", "group": "Positiu", "content": { "type": "text", "content": "_billig_" } },
+      { "id": "c-schoner", "group": "Comparatiu", "content": { "type": "text", "content": "_schöner_" } },
+      { "id": "c-alter", "group": "Comparatiu", "content": { "type": "text", "content": "_älter_" } },
+      { "id": "c-besser", "group": "Comparatiu", "content": { "type": "text", "content": "_besser_" } },
+      { "id": "c-hoher", "group": "Comparatiu", "content": { "type": "text", "content": "_höher_" } },
+      { "id": "c-grosser", "group": "Comparatiu", "content": { "type": "text", "content": "_größer_" } },
+      { "id": "c-billiger", "group": "Comparatiu", "content": { "type": "text", "content": "_billiger_" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Positiu",
+    "groupBLabel": "Comparatiu"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["p-schon", "c-schoner"],
+      ["p-alt", "c-alter"],
+      ["p-gut", "c-besser"],
+      ["p-hoch", "c-hoher"],
+      ["p-gross", "c-grosser"],
+      ["p-billig", "c-billiger"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has classificat correctament: _schön/schöner_ i _billig/billiger_ són **regulars purs**; _alt/älter_ i _groß/größer_ prenen **Umlaut**; _hoch/höher_ és **semi-irregular** (perd la _ch_); _gut/besser_ és **totalment irregular** (connexió amb A1a-17).",
+      "references": ["A1a-17"]
+    },
+    "incorrect": {
+      "default": "Repassa els quatre grups: regulars purs (_schön, billig, klein, schnell_...), regulars amb Umlaut (_alt, jung, lang, kurz, warm, stark_...), semi-irregulars ortogràfics (_hoch → höher_, _groß → größer_, _teuer → teurer_), i totalment irregulars (només _gut → besser_ i _gern → lieber_, de l'A1a-17)."
+    }
+  }
+}

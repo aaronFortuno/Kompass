@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-31-ex-03",
+  "topicId": "A1a-31",
+  "title": "Patrons variats en context",
+  "prompt": "Aplica el patró adequat (regular pur, amb Umlaut o semi-irregular) a cadascun d'aquests adjectius.",
+  "difficulty": 2,
+  "tags": ["comparatiu", "superlatiu", "umlaut", "gross", "typein", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ein Fahrrad ist **{{1}}** als ein Auto, aber ein Zug ist am schnellsten._ (De _langsam_ = lent.)\n2. _Berlin ist **{{2}}** als München._ (De _groß_.)\n3. _Mein Opa ist **am {{3}}**. Er ist 92._ (De _alt_.)\n4. _Im Sommer sind die Tage **{{4}}** als im Winter._ (De _lang_.)",
+    "blanks": [
+      { "id": "1", "label": "comparatiu de _langsam_" },
+      { "id": "2", "label": "comparatiu de _groß_" },
+      { "id": "3", "label": "superlatiu de _alt_ (sense _am_)" },
+      { "id": "4", "label": "comparatiu de _lang_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "…er" },
+      { "blankId": "2", "placeholder": "… + er" },
+      { "blankId": "3", "placeholder": "…sten" },
+      { "blankId": "4", "placeholder": "… + er" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "langsamer",
+      "2": "größer",
+      "3": "ältesten",
+      "4": "länger"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has aplicat correctament tres patrons: regular pur (_langsamer_), semi-irregular sense duplicació de _s_ (_größer_), i Umlaut + _-e-_ per dental (_am ältesten_, _länger_). Això és el nucli del tema."
+    },
+    "incorrect": {
+      "default": "Revisa els tres patrons: (1) _langsam_ és regular pur → _langsamer_. (2) _groß_ és semi-irregular: _größer_ al comparatiu (amb Umlaut), _am größten_ al superlatiu (sense duplicar _s_). (3) _alt_ i _lang_ prenen Umlaut: _älter / am ältesten_ (amb _-e-_ per la _-t_ final), _länger_."
+    }
+  }
+}

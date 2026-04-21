@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-31-ex-06",
+  "topicId": "A1a-31",
+  "title": "La tríada de _alt_ amb Umlaut i _-e-_ eufònica",
+  "prompt": "Completa la tríada de _alt_ en una mini-història sobre tres germans. Atenció: hi ha Umlaut al comparatiu i superlatiu, i _-e-_ eufònica abans del _-sten_.",
+  "difficulty": 2,
+  "tags": ["comparatiu", "superlatiu", "umlaut", "e-euforica", "typein", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Anna ist 10 Jahre **alt**._ (Positiu, donat d'exemple.)\n2. _Paul ist 15 Jahre alt. Er ist **{{1}}** als Anna._ (Comparatiu.)\n3. _Opa ist 80. Er ist **am {{2}}** in der Familie._ (Superlatiu.)",
+    "blanks": [
+      { "id": "1", "label": "comparatiu de _alt_" },
+      { "id": "2", "label": "superlatiu de _alt_ (sense _am_)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "a → ä, + er" },
+      { "blankId": "2", "placeholder": "…esten" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "älter",
+      "2": "ältesten"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. La tríada completa de _alt_ és: **alt → älter → am ältesten**. Hi ha **Umlaut** (_a → ä_) tant al comparatiu com al superlatiu, i hi ha **_-e-_** abans del _-sten_ perquè l'adjectiu acaba en _-t_."
+    },
+    "incorrect": {
+      "default": "La tríada de _alt_ és: **alt → älter → am ältesten**. Dos punts clau: (1) **Umlaut obligatori** (_a → ä_) en aquest adjectiu; (2) **_-e-_ eufònica** abans del _-sten_, perquè _alt_ acaba en dental _-t_ (com _kalt, hart, kurz_). Sense _-e-_, _*am ältsten_ és impronunciable."
+    }
+  }
+}

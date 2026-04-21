@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-31-ex-02",
+  "topicId": "A1a-31",
+  "title": "Adjectius amb Umlaut",
+  "prompt": "Completa cada frase amb la forma correcta (amb Umlaut) dels adjectius _alt_, _kalt_ i _lang_.",
+  "difficulty": 2,
+  "tags": ["comparatiu", "superlatiu", "umlaut", "typein", "quick-check"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Mein Bruder ist **{{1}}** als ich._ (= El meu germà és més gran (d'edat) que jo. De _alt_.)\n2. _Im Winter ist es **{{2}}** als im Sommer._ (= A l'hivern fa més fred que a l'estiu. De _kalt_.)\n3. _Die Tage sind im Juni **am {{3}}**._ (= Al juny els dies són els més llargs. De _lang_.)",
+    "blanks": [
+      { "id": "1", "label": "comparatiu de _alt_" },
+      { "id": "2", "label": "comparatiu de _kalt_" },
+      { "id": "3", "label": "superlatiu de _lang_ (sense _am_)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "a → ä, + er" },
+      { "blankId": "2", "placeholder": "a → ä, + er" },
+      { "blankId": "3", "placeholder": "…sten" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "älter",
+      "2": "kälter",
+      "3": "längsten"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Aquests tres adjectius monosíl·labs prenen Umlaut: _alt → **älter**_, _kalt → **kälter**_, _lang → **längsten**_. És un patró freqüentíssim entre els monosíl·labs amb _a/o/u_ d'ús diari."
+    },
+    "incorrect": {
+      "default": "Atenció: _alt_, _kalt_ i _lang_ són adjectius monosíl·labs amb _a_, i **prenen Umlaut** al comparatiu i superlatiu. _a → ä_: _**älter**_, _**kälter**_, _**längsten**_ (am längsten). Si no poses l'Umlaut, la forma és incorrecta."
+    }
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-31",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 31,
+  "title": "Komparativ und Superlativ",
+  "shortTitle": "Komparativ",
+  "description": "La formació regular del comparatiu (_-er_) i del superlatiu (_am ...-sten_) de qualsevol adjectiu alemany, amb Umlaut en els monosíl·labs d'ús diari i un grapat d'irregularitats ortogràfiques.",
+  "axes": ["expressions-i-funcions"],
+  "prerequisites": ["A1a-17"],
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Context i motivació\n\nA l'**A1a-17** vas memoritzar dues tríades irregulars emblemàtiques: **gut → besser → am besten** i **gern → lieber → am liebsten**. Allà te les vaig presentar com un **bloc tancat**, un paquet que calia aprendre sencer, i vaig deixar una promesa: \"més endavant veuràs com es formen els comparatius i superlatius **regulars** de qualsevol adjectiu\".\n\nAquest tema és aquesta promesa feta realitat. Anirem a l'altra cara de la moneda: **la formació regular** del comparatiu i superlatiu per a **qualsevol adjectiu** alemany. Són els patrons que aplicaràs a **_schön_**, **_billig_**, **_schnell_**, **_klein_** i centenars més. És la gradació de l'adjectiu sencera, **_die Steigerung des Adjektivs_**.\n\n> _Die Wohnung A ist **schön**. Die Wohnung B ist **schöner**. Die Wohnung C ist **am schönsten**._\n> (El pis A és bonic. El pis B és més bonic. El pis C és el més bonic.)\n\n**La bona notícia:** el patró és **molt regular i molt senzill**. Afegeixes **==-er==** per al comparatiu i **==am ...-(e)sten==** per al superlatiu. Res de formes noves sense arrel: l'adjectiu positiu ja et dóna el 80% de la feina feta.\n\n**La notícia amb asterisc:** un grupet d'adjectius molt freqüents prenen **Umlaut** a les vocals (_alt → älter_) i alguns tenen petites irregularitats ortogràfiques. Són pocs, però cal coneixe'ls perquè apareixen cada dia.\n\nAquest tema **amplia** l'A1a-17, no el substitueix. Les dues tríades irregulars d'allà continuen sent irregulars; aquí aprens el patró que segueixen **tots els altres adjectius**."
+        }
+      ]
+    },
+    {
+      "id": "formacio-regular",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### La formació regular: **-er** i **am ...-sten**\n\nComencem pel cor del tema. La gradació regular d'un adjectiu alemany es fa amb **dues terminacions fixes**:"
+        },
+        {
+          "type": "table",
+          "title": "Patró regular de gradació",
+          "headers": ["Grau", "Patró", "Exemple _schön_"],
+          "rows": [
+            ["Positiu", "adjectiu tal com és", "**schön**"],
+            ["Comparatiu", "adjectiu + **==-er==**", "**schöner**"],
+            ["Superlatiu", "**==am==** + adjectiu + **==-sten==**", "**am schönsten**"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**El comparatiu.** Agafes l'adjectiu i li enganxes **_-er_** al final. Així de simple:\n\n> _schön_ (bonic) → _**schöner**_ (més bonic)\n> _billig_ (barat) → _**billiger**_ (més barat)\n> _schnell_ (ràpid) → _**schneller**_ (més ràpid)\n> _klein_ (petit) → _**kleiner**_ (més petit)\n\n**El superlatiu.** Aquí hi ha **dues peces fixes** al voltant de l'adjectiu: un **_am_** davant i un **_-sten_** al final.\n\n> _schön_ → _**am schönsten**_ (el més bonic)\n> _billig_ → _**am billigsten**_ (el més barat)\n> _schnell_ → _**am schnellsten**_ (el més ràpid)"
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Atenció a la doble funció de _-er_",
+          "body": "La terminació _-er_ del comparatiu és la mateixa lletra que apareix també en declinacions (per exemple _ein schöner Mann_, on _-er_ marca nominatiu masculí). **No són el mateix _-er_**: el del comparatiu s'afegeix al lexema sempre igual, sigui quin sigui el gènere o cas. De fet, la frase típica del comparatiu és _X ist schöner als Y_, amb el verb _sein_, i aquí l'adjectiu va **sense declinar** — només amb _-er_ comparatiu."
+        }
+      ]
+    },
+    {
+      "id": "quan-afegir-e",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Quan cal una **-e-** abans del **-sten**\n\nHas vist que el superlatiu és _am ...**-sten**_. Però de vegades trobaràs escrit _am ...**-esten**_, amb una _-e-_ extra. No és capritx: és una regla fonètica clara.\n\n**Afegim _-e-_ quan l'adjectiu acaba en _-t_, _-d_, _-s_, _-ß_, _-z_ o grup difícil de pronunciar.** És perquè _am *hartsten_ seria impronunciable; amb _-e-_ queda _am härtesten_, pronunciable."
+        },
+        {
+          "type": "table",
+          "title": "Superlatius amb _-e-_ eufònica",
+          "headers": ["Adjectiu", "Superlatiu", "Motiu"],
+          "rows": [
+            ["**alt** (vell)", "**am ältesten**", "acaba en _-t_"],
+            ["**hart** (dur)", "**am härtesten**", "acaba en _-t_"],
+            ["**kalt** (fred)", "**am kältesten**", "acaba en _-t_"],
+            ["**kurz** (curt)", "**am kürzesten**", "acaba en _-z_"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "En canvi, _schön_ acaba en _-n_ i no necessita _-e-_: _am schönsten_, no *_am schönesten_."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Regla pràctica",
+          "body": "Si l'adjectiu **acaba en dental o sibilant** (_-t, -d, -s, -ß, -z_), poses _-e-_ al superlatiu. Si no, directe _-sten_. No et preocupis de memoritzar la llista: quan pronunciïs la paraula, sentiràs que \"demana\" la _-e-_."
+        }
+      ]
+    },
+    {
+      "id": "umlaut",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Adjectius que prenen **Umlaut**: _alt → älter_\n\nAquí ve la primera irregularitat sistemàtica, i és **molt important** perquè afecta adjectius d'ús diari. **Molts adjectius monosíl·labs** amb vocal **_a_, _o_ o _u_** prenen **Umlaut** (_ä, ö, ü_) al comparatiu **i** al superlatiu.\n\nEl patró segueix sent regular (_-er_ i _am ...-sten_), però **amb la vocal modificada**:"
+        },
+        {
+          "type": "table",
+          "title": "Adjectius amb Umlaut",
+          "headers": ["Positiu", "Comparatiu", "Superlatiu"],
+          "rows": [
+            ["**alt** (vell)", "**==älter==**", "**am ältesten**"],
+            ["**jung** (jove)", "**==jünger==**", "**am jüngsten**"],
+            ["**lang** (llarg)", "**==länger==**", "**am längsten**"],
+            ["**kurz** (curt)", "**==kürzer==**", "**am kürzesten**"],
+            ["**kalt** (fred)", "**==kälter==**", "**am kältesten**"],
+            ["**warm** (calent)", "**==wärmer==**", "**am wärmsten**"],
+            ["**stark** (fort)", "**==stärker==**", "**am stärksten**"],
+            ["**scharf** (picant)", "**==schärfer==**", "**am schärfsten**"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Com saber quins prenen Umlaut?",
+          "body": "La resposta honesta és: **memorització amb l'ús**. No hi ha una regla infal·lible — de fet, hi ha parelles de contrast. Per exemple _alt_ → _älter_ (amb Umlaut), però _flach_ → _flacher_ (sense Umlaut). Són adjectius molt freqüents, així que els aprendràs aviat sentint-los. El criteri pràctic: **assumeix Umlaut per als monosíl·labs d'ús diari amb _a/o/u_**, i confirma al diccionari quan dubtis."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Catalanoparlant: pista fonètica",
+          "body": "L'Umlaut no és una lletra diferent, és una **pronunciació diferent**. _a_ → _ä_ sona com la _e_ oberta del català (_älter_ ≈ \"*élter*\"). _u_ → _ü_ no té equivalent directe: és com una _i_ amb llavis arrodonits (_jünger_). _o_ → _ö_ és entre _o_ i _e_."
+        }
+      ]
+    },
+    {
+      "id": "irregularitats-ortografiques",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Petites irregularitats ortogràfiques\n\nA banda de l'Umlaut, hi ha un grapat d'adjectius que **perden o canvien lletres** al comparatiu o al superlatiu. Són pocs però freqüents:\n\n**1. Pèrdua de la _-e-_ interna** (adjectius acabats en _-el_ o _-er_ àtons):"
+        },
+        {
+          "type": "table",
+          "title": "Pèrdua de _-e-_ interna",
+          "headers": ["Positiu", "Comparatiu", "Superlatiu"],
+          "rows": [
+            ["**teuer** (car)", "**teurer**", "**am teuersten**"],
+            ["**dunkel** (fosc)", "**dunkler**", "**am dunkelsten**"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Fixa't que _teuer_ perd la _-e-_ al comparatiu (_teurer_, no _teueer_), i _dunkel_ perd la _-e-_ del mig (_dunkler_, no _dunkeler_). És una qüestió de fluïdesa fonètica.\n\n**2. _hoch_ → _höher_**: canvi de _ch_ a _h_."
+        },
+        {
+          "type": "table",
+          "title": "Irregularitat de _hoch_",
+          "headers": ["Positiu", "Comparatiu", "Superlatiu"],
+          "rows": [
+            ["**hoch** (alt)", "**==höher==** (sense _ch_)", "**am höchsten** (amb _ch_)"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Al comparatiu desapareix la _ch_ (_höher_, no _höcher_); al superlatiu torna (_am höchsten_). És dels irregulars més vistosos.\n\n**3. _groß_ → _am größten_**: **superlatiu sense _-s-_**."
+        },
+        {
+          "type": "table",
+          "title": "Irregularitat de _groß_",
+          "headers": ["Positiu", "Comparatiu", "Superlatiu"],
+          "rows": [
+            ["**groß** (gran)", "**größer**", "**==am größten==** (no _am größsten_)"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "La _ß_ de _groß_ ja porta el so de \"s\" incorporat, així que **no es duplica** al superlatiu. Per això: _am größten_, no _am größsten_."
+        }
+      ]
+    },
+    {
+      "id": "irregulars-totals",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Els irregulars totals: connexió amb A1a-17\n\nI ara, el pont amb el que ja saps. A l'**A1a-17** vas aprendre dues tríades **totalment irregulars**, que no segueixen el patró d'aquest tema:"
+        },
+        {
+          "type": "table",
+          "title": "Els dos irregulars totals (A1a-17)",
+          "headers": ["Positiu", "Comparatiu", "Superlatiu"],
+          "rows": [
+            ["**gut** (bo)", "**besser**", "**am besten**"],
+            ["**gern** (de gust)", "**lieber**", "**am liebsten**"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Aquestes dues són **úniques en el seu nivell d'irregularitat**: no mantenen l'arrel. La resta d'adjectius alemanys segueixen el patró regular d'aquest tema, amb o sense Umlaut, amb o sense petites variacions ortogràfiques."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Resum de la jerarquia d'irregularitat",
+          "body": "1. **Totalment irregulars** (canvi d'arrel): _gut/besser/am besten_, _gern/lieber/am liebsten_. Només aquests dos. → **A1a-17**.\n2. **Semi-irregulars** (canvi ortogràfic): _hoch/höher/am höchsten_, _teuer/teurer_, _dunkel/dunkler_, _groß/größer/am größten_.\n3. **Regulars amb Umlaut**: _alt/älter_, _jung/jünger_, _kurz/kürzer_, _warm/wärmer_, _stark/stärker_... (molts monosíl·labs amb _a/o/u_).\n4. **Regulars purs**: _schön/schöner_, _billig/billiger_, _klein/kleiner_, _schnell/schneller_... (la gran majoria)."
+        }
+      ]
+    },
+    {
+      "id": "construccio-als",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### La construcció del comparatiu: **als**\n\nJa ho vas veure a l'A1a-17, però val la pena repetir-ho perquè ara l'aplicaràs a qualsevol adjectiu. Per comparar **dos elements** en alemany, la conjunció és **==als==**, no _wie_.\n\n> _Die Wohnung A ist **schöner als** die Wohnung B._\n> (El pis A és més bonic que el pis B.)\n>\n> _Mein Bruder ist **älter als** ich._\n> (El meu germà és més gran que jo.)\n>\n> _Das Auto ist **schneller als** das Fahrrad._\n> (El cotxe és més ràpid que la bicicleta.)\n\n**Tres estructures fonamentals** que apareixeran constantment:"
+        },
+        {
+          "type": "table",
+          "title": "Les tres estructures comparatives",
+          "headers": ["Relació", "Estructura", "Exemple"],
+          "rows": [
+            ["**A = B**", "_A ist **so** adj **wie** B_", "_Die Wohnung A ist **so schön wie** die Wohnung B._"],
+            ["**A > B**", "_A ist adj-**er als** B_", "_Die Wohnung A ist **schöner als** die Wohnung B._"],
+            ["**C = el més**", "_C ist **am** adj-**sten**_", "_Die Wohnung C ist **am schönsten**._"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Atenció al contrast _als_ / _wie_",
+          "body": "És la trampa més habitual per al catalanoparlant (i també per al germanoparlant col·loquial!). **Igualtat** → _wie_ (\"com\"): _so groß **wie**_ (tan gran **com**). **Desigualtat (comparatiu)** → _als_ (\"que\"): _größer **als**_ (més gran **que**). En català fem servir \"com\" i \"que\"; en alemany, _wie_ i _als_. Memoritza-ho amb dos exemples fixos: _so groß wie_ / _größer als_."
+        }
+      ]
+    },
+    {
+      "id": "check-formacio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-31-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "check-umlaut",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-31-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals\n\n**1. Oblidar l'Umlaut en adjectius monosíl·labs.**\nDir _*alter_ en lloc de _älter_, _*junger_ en lloc de _jünger_ o _*kalter_ en lloc de _kälter_ és l'error més freqüent. Recorda que molts monosíl·labs amb _a/o/u_ el prenen. Si l'adjectiu és curt i quotidià, **sospita Umlaut**.\n\n**2. Posar Umlaut on no toca.**\nL'error invers: no tots els adjectius amb _a/o/u_ prenen Umlaut. _flach → flacher_ (no *_flächer_), _rund → runder_ (no *_ründer_), _bunt → bunter_. Si no saps, consulta; però no apliquis Umlaut a tot de manera automàtica.\n\n**3. Confondre _als_ i _wie_.**\nEn alemany estàndard, **comparatiu = _als_** (que), **igualtat = _wie_** (com). _schöner **als**_, _so schön **wie**_. Els propis alemanys col·loquials barregen _als_ i _wie_, però a l'escrit i als exàmens és un error. Tu aprén-ho correctament des del principi.\n\n**4. Oblidar el _am_ del superlatiu.**\nEl superlatiu predicatiu (el d'aquest tema) **sempre** porta _am_ davant: _am schönsten_, _am billigsten_, _am ältesten_. Dir només _schönsten_ o _billigsten_ sense _am_ és agramatical en aquest ús.\n\n**5. Oblidar la _-e-_ davant de _-sten_.**\nAdjectius acabats en _-t, -d, -s, -ß, -z_ demanen _-e-_ al superlatiu: _am ält**e**sten_, _am kält**e**sten_, _am kürz**e**sten_. Sense _-e-_ és impronunciable i incorrecte.\n\n**6. Duplicar la _s_ a _groß_.**\n_groß_ acaba amb _ß_ (que ja porta el so \"s\"). Al superlatiu **no** es duplica: _am größten_, mai _*am größsten_.\n\n**7. Pensar que _gut_ i _gern_ segueixen aquest patró.**\nSón els únics dos adjectius/adverbis totalment irregulars. _gut_ **no** fa _guter_ ni _am gutsten_ — fa **besser** i **am besten**. _gern_ no fa _gerner_ ni _am gernsten_ — fa **lieber** i **am liebsten**. Ho saps de l'**A1a-17**: són els irregulars emblemàtics que cal aprendre a banda."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-31-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-31-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-31-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-31-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi del tema\n\nSi et quedes amb aquestes idees, tens la gradació d'adjectius sota control:\n\n1. **El patró regular és simple**: **adjectiu + -er** per al comparatiu, **am + adjectiu + -sten** per al superlatiu. _schön → schöner → am schönsten_. Aquest és el patró per defecte de qualsevol adjectiu alemany.\n\n2. **_-e-_ eufònica al superlatiu** quan l'adjectiu acaba en _-t, -d, -s, -ß, -z_: _am ält**e**sten_, _am kürz**e**sten_, _am härt**e**sten_. Si no, _-sten_ directe.\n\n3. **Umlaut en molts monosíl·labs** amb _a/o/u_: _alt → älter_, _jung → jünger_, _lang → länger_, _kurz → kürzer_, _kalt → kälter_, _warm → wärmer_, _stark → stärker_. Són adjectius d'ús diari; aprén-los amb Umlaut de sèrie.\n\n4. **Petites irregularitats ortogràfiques** en un grapat d'adjectius: _hoch → höher → am höchsten_ (canvi _ch_/_h_), _teuer → teurer_ i _dunkel → dunkler_ (pèrdua de _-e-_ interna), _groß → größer → am größten_ (superlatiu sense duplicar _s_).\n\n5. **Estructures comparatives**: igualtat amb **_so X wie Y_**, desigualtat amb **_X-er als Y_**, superlatiu predicatiu amb **_am X-sten_**. No barregis _als_ i _wie_: _als_ = \"que\", _wie_ = \"com\".\n\n6. **Els dos irregulars totals ja els saps** de l'**A1a-17**: _gut → besser → am besten_ i _gern → lieber → am liebsten_. No segueixen aquest patró; són paquets tancats que cal memoritzar a part.\n\nAmb això ja pots comparar **qualsevol cosa**: pisos, preus, edats, temperatures, distàncies, gustos. És un dels recursos expressius més rendibles de l'A1: amb un sol patró desbloqueges centenars d'adjectius. Quan més endavant aprenguis a declinar adjectius atributius (_der schön**ere** Mann_ = \"l'home més bonic\"), aquest tema et serà la base. Però per ara, amb la gradació predicativa (_der Mann ist schöner_) ja tens tot el que necessites per comparar al dia a dia."
+        },
+        {
+          "type": "table",
+          "title": "31.1 El patró regular",
+          "headers": ["Grau", "Patró", "Exemple"],
+          "rows": [
+            ["Positiu", "adjectiu", "**schön**"],
+            ["Comparatiu", "adj + **-er**", "**schöner**"],
+            ["Superlatiu", "**am** + adj + **-(e)sten**", "**am schönsten** / **am ältesten**"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "31.2 Les quatre categories d'adjectius",
+          "headers": ["Tipus", "Exemple", "Comparatiu", "Superlatiu"],
+          "rows": [
+            ["Regular pur", "_schön_", "schöner", "am schönsten"],
+            ["Regular amb Umlaut", "_alt_", "älter", "am ältesten"],
+            ["Semi-irregular", "_hoch_ / _groß_", "höher / größer", "am höchsten / am größten"],
+            ["Totalment irregular (A1a-17)", "_gut_ / _gern_", "besser / lieber", "am besten / am liebsten"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "31.3 Les tres estructures",
+          "headers": ["Relació", "Estructura", "Marcador clau"],
+          "rows": [
+            ["Igualtat (A = B)", "_so adj **wie**_", "**wie** = com"],
+            ["Desigualtat (A > B)", "_adj-**er als**_", "**als** = que"],
+            ["Superlatiu (C = el més)", "_**am** adj-**sten**_", "**am** obligatori"]
+          ]
+        }
+      ]
+    }
+  ]
+}

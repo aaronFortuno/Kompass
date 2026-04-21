@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-31-ex-01",
+  "topicId": "A1a-31",
+  "title": "El patró regular pur",
+  "prompt": "Aplica el patró regular (**-er** per al comparatiu, **am ...-sten** per al superlatiu) a tres adjectius sense Umlaut ni irregularitats.",
+  "difficulty": 1,
+  "tags": ["comparatiu", "superlatiu", "regular", "typein", "quick-check"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. El comparatiu de _schön_ és: {{1}}\n2. El superlatiu de _billig_ és: {{2}}\n3. El comparatiu de _schnell_ és: {{3}}",
+    "blanks": [
+      { "id": "1", "label": "comparatiu de _schön_" },
+      { "id": "2", "label": "superlatiu de _billig_" },
+      { "id": "3", "label": "comparatiu de _schnell_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "schön + er" },
+      { "blankId": "2", "placeholder": "am …" },
+      { "blankId": "3", "placeholder": "schnell + er" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "schöner",
+      "2": "am billigsten",
+      "3": "schneller"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has aplicat el patró regular: **adjectiu + -er** per al comparatiu i **am + adjectiu + -sten** per al superlatiu. Aquest és el patró que funciona per a la gran majoria d'adjectius alemanys."
+    },
+    "incorrect": {
+      "default": "Recorda: comparatiu = **adjectiu + -er** (_schön → schöner_), superlatiu = **am + adjectiu + -sten** (_billig → am billigsten_). Cap d'aquests tres no pren Umlaut ni té canvis ortogràfics: són regulars purs."
+    }
+  }
+}
