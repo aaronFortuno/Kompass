@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-17",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 17,
+  "title": "Gut-besser-am besten / gern-lieber-am liebsten",
+  "shortTitle": "Gut/gern",
+  "description": "Els dos paradigmes irregulars emblemàtics del grau en alemany: _gut / besser / am besten_ (adjectiu de qualitat) i _gern / lieber / am liebsten_ (adverbi de plaer), amb les construccions típiques i el contrast qualitat-plaer.",
+  "axes": ["expressions-i-funcions"],
+  "prerequisites": ["A1a-16"],
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Context i motivació\n\nAl tema **A1a-16** vas aprendre a parlar de gustos i preferències amb estructures com _Ich lese **gern**_ (M'agrada llegir) o _Ich finde Filme **gut**_ (Els films em semblen bons). Amb això ja pots dir què t'agrada i què et sembla bé. Ara donarem **el pas natural següent**: comparar. Perquè en la vida real, parlar de gustos gairebé sempre porta a comparar-los.\n\n> _M'agrada llegir, **però m'agrada més encara** mirar sèries._\n> _Aquest restaurant és bo, **però el de la cantonada és millor**._\n> _De totes les pel·lícules de l'any, **la que més m'ha agradat** és aquesta._\n\nPer fer això, necessitarem els **comparatius** i els **superlatius** de dues paraules clau de l'alemany quotidià: **==gut==** (bé / bo) i **==gern==** (de gust). Són dues paraules que ja coneixes, i en aquest tema aprendràs com se'n fa la forma comparativa i superlativa.\n\n**La notícia important d'entrada:** totes dues són **irregulars**, com el _bé / millor / el millor_ del català o el _bueno / mejor / el mejor_ del castellà. Són irregulars en les tres llengües, i en les tres llengües funcionen pedagògicament com a primera presa de contacte amb la idea de \"grau\" (positiu → comparatiu → superlatiu). És a dir: en aquest tema no estàs aprenent una raresa, estàs aprenent un patró que ja t'és molt familiar, només que amb paraules alemanyes."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Què _no_ aprendràs aquí",
+          "body": "No veurem la formació regular del comparatiu i superlatiu d'adjectius (_schön → schöner → am schönsten_, amb _-er_ i _-sten_). Això arribarà més endavant. Aquest tema se centra en els dos **irregulars emblemàtics** que es fan servir des del primer dia."
+        }
+      ]
+    },
+    {
+      "id": "vocabulari-base",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Tres paraules que cal entendre\n\nAbans d'entrar al paradigma, posem nom a tres conceptes que faré servir tot el tema:\n\n**1. Grau positiu.** És la forma bàsica de l'adjectiu o adverbi, la que has anat veient fins ara. _gut_, _schnell_, _gern_ són formes en grau positiu. No comparen res, simplement descriuen o expressen gust.\n\n**2. Comparatiu.** És la forma que s'usa per **comparar dos elements**. En català: _millor_, _més ràpid_, _m'estimo més_. En alemany: _besser_, _schneller_, _lieber_. Típicament va acompanyat de la conjunció **_als_** (que correspon al nostre \"que\" comparatiu).\n\n> _Harry Potter ist **besser als** Der Herr der Ringe._\n> (Harry Potter és millor que El Senyor dels Anells.)\n\n**3. Superlatiu.** És la forma que s'usa per destacar **un element per damunt de tots els altres** del grup. En català: _el millor_, _el més ràpid_, _el que més m'estimo_. En alemany, per als casos d'aquest tema, pren una forma molt característica amb **_am_** davant i **_-sten_** al final: _am besten_, _am liebsten_.\n\n> _**Am besten** finde ich Fast and Furious._\n> (La que em sembla millor (de totes) és Fast and Furious.)\n\nTres graus, doncs: positiu, comparatiu, superlatiu. Aquest és l'esquelet que omplirem ara amb _gut_ i _gern_."
+        }
+      ]
+    },
+    {
+      "id": "gut-paradigma",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El paradigma **gut – besser – am besten**\n\nComencem per **_gut_**. Has de tenir clara una cosa d'entrada: _gut_ és un **==adjectiu==**. Vol dir \"bo\" o \"bé\" i descriu com és una cosa o com va una acció. Per això apareix molt sovint amb el verb **_sein_** (ésser) o amb verbs de percepció com **_finden_** (trobar, semblar):\n\n> _Das Buch ist **gut**._ (El llibre és bo.)\n> _Ich finde den Film **gut**._ (Em sembla bo el film. / El film m'agrada.)\n\nFixa-t'hi bé: les tres formes **no comparteixen arrel**. _gut_ fa _besser_ (no _guter_), i el superlatiu és _am besten_ (no _am gutsten_). Això és exactament el que passa en català (_bé_ → _millor_, no _beior_) i en castellà (_bueno_ → _mejor_, no _bueníor_). És un irregular heretat en moltes llengües indoeuropees, i val la pena **memoritzar la tríada sencera com un sol paquet**: _gut – besser – am besten_.\n\n**Exemples complets:**\n\n> _Herr der Ringe ist **gut**, aber Harry Potter ist **besser**._\n> (El Senyor dels Anells està bé, però Harry Potter és millor.)\n>\n> _**Am besten** finde ich Fast and Furious._\n> (La que trobo millor de totes és Fast and Furious.)"
+        },
+        {
+          "type": "table",
+          "title": "Paradigma de grau de _gut_",
+          "headers": ["Grau", "Forma", "Correspondència catalana / castellana"],
+          "rows": [
+            ["Positiu", "**gut**", "bé, bo / bien, bueno"],
+            ["Comparatiu", "**==besser==**", "millor / mejor"],
+            ["Superlatiu", "**==am besten==**", "el millor / el mejor"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pronunciació ràpida",
+          "body": "_besser_ es pronuncia ['bɛ.sɐ] — amb _e_ oberta i una _r_ final molt suau, quasi una _a_. _am besten_ és [am 'bɛs.tən]. No hi ha trampa fonètica; només cal parar atenció a la doble _s_ de _besser_, que marca que la _e_ anterior és breu i oberta."
+        }
+      ]
+    },
+    {
+      "id": "gern-paradigma",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El paradigma **gern – lieber – am liebsten**\n\nAra **_gern_**. Aquí tenim una diferència de categoria important: _gern_ **no** és un adjectiu, és un **==adverbi==**. No descriu com és una cosa, sinó **com es fa una acció**. Per això _gern_ sempre **acompanya un verb** i vol dir una cosa com \"amb gust\", \"a grat\". Ja ho vas veure a l'A1a-16:\n\n> _Ich lese **gern**._ (M'agrada llegir. / Literalment: Llegeixo amb gust.)\n> _Anna kocht **gern** italienisch._ (A l'Anna li agrada cuinar italià.)\n\nAquí també **les tres formes no comparteixen arrel**: _gern_ → _lieber_ → _am liebsten_. Com amb _gut_, aprèn la tríada com un **sol bloc**.\n\n**Exemples complets:**\n\n> _Die Deutschen lesen **gern**, aber sie surfen **lieber** im Internet._\n> (Als alemanys els agrada llegir, però els agrada més navegar per Internet.)\n>\n> _Die Deutschen sehen **am liebsten** fern._\n> (El que més els agrada als alemanys és mirar la tele.)"
+        },
+        {
+          "type": "table",
+          "title": "Paradigma de grau de _gern_",
+          "headers": ["Grau", "Forma", "Correspondència catalana"],
+          "rows": [
+            ["Positiu", "**gern**", "m'agrada (fer X)"],
+            ["Comparatiu", "**==lieber==**", "m'agrada més / m'estimo més"],
+            ["Superlatiu", "**==am liebsten==**", "el que més m'agrada / el que m'estimo més"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Una traducció que t'ajudarà",
+          "body": "_lieber_ encaixa molt bé amb el català **\"m'estimo més\"**. _Ich lese lieber_ → _M'estimo més llegir_. I _am liebsten_ amb **\"el que més m'estimo / el que més m'agrada (de tot)\"**. Aquesta connexió sentimental és literal: _lieb_ en alemany vol dir \"estimat, benvolgut\", igual que la nostra _estimar_ en _m'estimo més_."
+        }
+      ]
+    },
+    {
+      "id": "check-paradigmes",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-17-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "construccions-gut",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Construccions típiques amb _gut / besser / am besten_\n\nAra que tens el paradigma, mirem **com es fa servir** en frases reals. _gut_ funciona gairebé sempre amb els verbs **_sein_** i **_finden_**. Són les dues construccions que et donaran el 90% dels usos que necessitaràs a l'A1.\n\n**Construcció 1: _X ist gut / besser / am besten_.**\nDescriu com és una cosa fent servir el verb _sein_ (ésser).\n\n> _Das Restaurant ist **gut**._ (El restaurant és bo.)\n> _Das Restaurant an der Ecke ist **besser**._ (El restaurant de la cantonada és millor.)\n> _**Am besten** ist das Restaurant am Hauptplatz._ (El millor és el de la plaça major.)\n\nFixa-t'hi: al superlatiu, _am besten_ sovint va **al principi de la frase**, abans del verb. És una estructura molt alemanya, i recorda que **en alemany el verb va sempre en segona posició** (com ja saps). Per tant: _**Am besten** ist das Restaurant..._ — _am besten_ ocupa la posició 1, i _ist_ la 2.\n\n**Construcció 2: _Ich finde X gut / besser / am besten_.**\nExpressa l'opinió personal sobre alguna cosa. _finden_ vol dir literalment \"trobar\", i s'usa exactament com el català _trobar_ en frases com _trobo bo aquest llibre_.\n\n> _Ich finde das Buch **gut**._ (Trobo bo el llibre. / El llibre m'agrada.)\n> _Ich finde den Film **besser**._ (Trobo millor el film.)\n> _**Am besten** finde ich Fast and Furious._ (El que em sembla millor és Fast and Furious.)\n\nAquí també l'estructura del superlatiu sovint comença amb _am besten_ davant de tot i el verb _finde_ en segona posició. És el patró típic per dir \"el que em sembla millor (de tots) és...\"."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Atenció a la confusió catalana",
+          "body": "En català, _trobar_ s'usa també físicament (_He trobat les claus_) i això pot despistar. En alemany, _finden_ també té aquest sentit físic (_Ich finde meine Schlüssel nicht_ — No trobo les claus), però quan va amb un adjectiu com _gut / besser_, sempre és l'altre sentit: _opinar, semblar, considerar_."
+        }
+      ]
+    },
+    {
+      "id": "construccions-gern",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Construccions típiques amb _gern / lieber / am liebsten_\n\n_gern_ és un **adverbi**, i per tant no necessita _sein_ ni _finden_: s'enganxa **directament a un verb qualsevol** per dir que l'acció es fa amb gust. El patró bàsic el vas veure a l'A1a-16:\n\n> _**Ich** + verb conjugat + objectes + **gern**._\n> _Ich lese **gern** Bücher._ (M'agrada llegir llibres.)\n> _Anna kocht **gern** italienisch._ (A l'Anna li agrada cuinar italià.)\n\nLes tres graus actuen exactament al mateix lloc de la frase."
+        },
+        {
+          "type": "table",
+          "title": "Les tres graus de _gern_ en context",
+          "headers": ["Grau", "Exemple", "Traducció"],
+          "rows": [
+            ["Positiu", "_Ich spiele **gern** Fußball._", "M'agrada jugar a futbol."],
+            ["Comparatiu", "_Ich spiele **lieber** Basketball._", "M'agrada més jugar a bàsquet."],
+            ["Superlatiu", "_**Am liebsten** spiele ich Tennis._", "El que més m'agrada és jugar a tennis."]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Fixa-t'hi en dues coses:\n\n1. **Amb el superlatiu _am liebsten_**, molt sovint la frase comença per _am liebsten_ i el verb va just després, en segona posició. És exactament el mateix patró que amb _am besten_.\n\n2. **En posició normal** (dins de la frase, no al davant), _lieber_ i _am liebsten_ ocupen el mateix lloc que ocupava _gern_: després del verb conjugat i, si n'hi ha, després del subjecte pronominal. _Ich lese **gern / lieber / am liebsten**._ Totes tres són vàlides i gramaticalment idèntiques.\n\n**Exemple encadenat típic d'A1** (amb les tres formes a la mateixa situació):\n\n> _Ich trinke **gern** Kaffee, aber ich trinke **lieber** Tee. **Am liebsten** trinke ich heiße Schokolade._\n> (M'agrada el cafè, però m'estimo més el te. El que més m'agrada de tot és la xocolata calenta.)"
+        }
+      ]
+    },
+    {
+      "id": "contrast-gut-gern",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El contrast que no pots perdre: _gut_ vs _gern_\n\nAquesta és la distinció que més confusió causa, i val la pena fixar-la ara amb calma. **_gut_ i _gern_ no són intercanviables**, perquè no volen dir el mateix i no són la mateixa categoria gramatical.\n\n**_gut_ = qualitat.** Diu **com és** una cosa o **com surt** una acció. És un **adjectiu** (o, usat amb verbs, un adverbi qualitatiu).\n> _Ich koche **gut**._ → **Cuino bé.** (Sóc bon cuiner, tinc habilitat.)\n\n**_gern_ = plaer.** Diu **amb quin grat** es fa una acció. És un **adverbi** (modal, de plaer).\n> _Ich koche **gern**._ → **M'agrada cuinar.** (Em fa gust fer-ho, disfruto.)\n\nLes dues frases són gramaticalment correctes i totes dues parlen de \"cuinar\", però **volen dir coses completament diferents**. Una parla d'habilitat, l'altra parla de gust. En català fem la mateixa distinció amb paraules molt diferents (_bé_ vs _m'agrada_), de manera que aquí el problema no sol ser traduir, sinó no barrejar-los en alemany."
+        },
+        {
+          "type": "table",
+          "title": "Contrast _gut_ vs _gern_",
+          "headers": ["Dius en alemany", "Vol dir", "Categoria"],
+          "rows": [
+            ["_Ich tanze **gut**._", "Ballo bé (tinc habilitat).", "_gut_ = adjectiu/qualitat"],
+            ["_Ich tanze **gern**._", "M'agrada ballar.", "_gern_ = adverbi/plaer"],
+            ["_Ich finde Tanzen **gut**._", "El ball em sembla bo/positiu.", "_finden + gut_ = opinió"],
+            ["_Ich tanze **lieber** Salsa._", "M'estimo més ballar salsa.", "_lieber_ = gern comparatiu"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Prova dels tres",
+          "body": "Si pots substituir per \"**bé / bo / fet així**\" → és _gut_ (o _besser_, _am besten_). Si pots substituir per \"**amb gust / m'agrada / de grat**\" → és _gern_ (o _lieber_, _am liebsten_). Aquesta pregunta mental resol quasi totes les dubtes del tema."
+        }
+      ]
+    },
+    {
+      "id": "check-contrast",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-17-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals\n\n**1. Dir _guter_ en lloc de _besser_.**\nLa forma regular _-er_ del comparatiu alemany (_schnell → schneller_, _klein → kleiner_) no s'aplica a _gut_. _guter_ existeix, però és una forma declinada del positiu _gut_ (com a _ein guter Freund_ = un bon amic), no un comparatiu. El comparatiu és sempre _**besser**_, mai _**guter**_ ni _**gutter**_.\n\n**2. Dir _am gutsten_ en lloc de _am besten_.**\nDe la mateixa manera, el superlatiu regular amb _am + -sten_ (_am schnellsten_, _am kleinsten_) no funciona amb _gut_. El superlatiu és _**am besten**_, construït sobre l'arrel _best-_ (el mateix _best_ de l'anglès, per cert).\n\n**3. Confondre _gern_ i _gerne_.**\nPotser veuràs escrit _gerne_ en alguns llocs. Són la mateixa paraula: _gerne_ és una variant una mica més informal o col·loquial de _gern_, i el seu comportament gramatical és idèntic. Al curs utilitzarem _gern_ de manera sistemàtica, però si trobes _gerne_ no és un error.\n\n**4. Dir _gerner_ o _am gernsten_.**\nError clàssic. Al comparar _gern_, les formes són _**lieber**_ i _**am liebsten**_ — no existeix ni _gerner_ ni _am gernsten_. Són tan irregulars com les d'_gut_.\n\n**5. Oblidar _als_ al comparatiu.**\nEn alemany, \"que\" comparatiu és **_als_** (no _wie_, que és \"com\"). _Besser **als** das Buch_, _lieber **als** Kaffee_. Dir _besser **wie** das Buch_ és un error molt estès entre els propis alemanys col·loquials, però és incorrecte en llengua estàndard. Tu aprèn-ho amb _als_ des del principi.\n\n**6. Oblidar la _am_ del superlatiu.**\nLes formes superlatives d'aquest tema van **sempre** amb _am_ davant: _**am** besten_, _**am** liebsten_. Dir _besten finde ich..._ o _liebsten trinke ich..._ sense _am_ no és correcte a l'A1. És una construcció fixa; memoritza-la com un bloc de dues paraules."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Resum dels paranys",
+          "body": "No digui's _guter_ / _gutter_ / _am gutsten_ per a _gut_, ni _gerner_ / _am gernsten_ per a _gern_. Les formes correctes són irregulars i s'han de memoritzar com a tríades tancades: **gut / besser / am besten** i **gern / lieber / am liebsten**, amb **_als_** al comparatiu i **_am_** obligatori al superlatiu."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-17-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-17-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-17-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-17-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi del tema\n\nSi te'n portes aquestes idees, està fet:\n\n1. **Dues tríades irregulars emblemàtiques:** **gut → besser → am besten** (adjectiu, parla de **qualitat**) i **gern → lieber → am liebsten** (adverbi, parla de **plaer**). Les tres formes no comparteixen arrel; memoritza-les com un sol bloc, com fas amb _bé / millor / el millor_ en català.\n\n2. **Dues construccions típiques amb _gut_:** _X **ist** gut/besser/am besten_ (descripció amb _sein_) i _Ich **finde** X gut/besser/am besten_ (opinió amb _finden_). Amb aquestes dues estructures ja dius el 90% de les coses que diràs a l'A1 amb _gut_.\n\n3. **_gern_ s'enganxa directament al verb**, sense _sein_ ni _finden_: _Ich lese **gern** / **lieber** / **am liebsten**_. Continua el patró que ja vas aprendre a **A1a-16** per parlar de gustos.\n\n4. **_als_ al comparatiu, _am_ al superlatiu.** Són dos marcadors obligatoris i invisibles per al catalanoparlant, però no es poden ometre: _besser **als** das Buch_, _**am** besten_, _**am** liebsten_.\n\n5. **_gut_ ≠ _gern_.** La pregunta mental és sempre la mateixa: **qualitat** (com es fa, com és) → _gut / besser / am besten_; **plaer** (amb quin grat, quant m'agrada) → _gern / lieber / am liebsten_. No barregis les dues famílies.\n\nA partir d'aquí, ja pots comparar gustos i opinions amb naturalitat: _Ich lese gern, aber ich sehe lieber Filme. Am liebsten spiele ich aber Tennis_. Amb només sis formes has desbloquejat un recurs expressiu enorme."
+        },
+        {
+          "type": "table",
+          "title": "17.1 Les dues tríades",
+          "headers": ["Família", "Positiu", "Comparatiu", "Superlatiu"],
+          "rows": [
+            ["Qualitat (adj.)", "**gut**", "**besser**", "**am besten**"],
+            ["Plaer (adv.)", "**gern**", "**lieber**", "**am liebsten**"]
+          ],
+          "caption": "Les tres formes no comparteixen arrel: cal memoritzar cada tríada com un bloc."
+        },
+        {
+          "type": "table",
+          "title": "17.2 Construccions típiques",
+          "headers": ["Construcció", "Exemple", "Traducció"],
+          "rows": [
+            ["_X ist gut / besser_", "_Das Buch ist **besser** als der Film._", "El llibre és millor que el film."],
+            ["_Ich finde X gut / besser_", "_Ich finde den Film **gut**._", "El film em sembla bo."],
+            ["_Am besten_ + verb + …", "_**Am besten** ist das Restaurant am Hauptplatz._", "El millor és el restaurant de la plaça major."],
+            ["_Ich + verb + gern / lieber_", "_Ich trinke **lieber** Tee als Kaffee._", "M'estimo més el te que el cafè."],
+            ["_Am liebsten_ + verb + …", "_**Am liebsten** trinke ich Schokolade._", "El que més m'agrada de beure és xocolata."]
+          ]
+        }
+      ]
+    }
+  ]
+}

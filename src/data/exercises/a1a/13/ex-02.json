@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-13-ex-02",
+  "topicId": "A1a-13",
+  "title": "Del _nicht + adjectiu_ al prefix _un-_",
+  "prompt": "Escriu l'adjectiu equivalent amb prefix _un-_ per a cada frase sinònima.",
+  "difficulty": 1,
+  "tags": ["un-prefix", "adjectiu", "lexic"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Das Ergebnis ist nicht richtig. = Das Ergebnis ist {{1}}.\nDer Koffer ist nicht praktisch. = Der Koffer ist {{2}}.\nSein Verhalten ist nicht typisch. = Sein Verhalten ist {{3}}.",
+    "blanks": [
+      { "id": "1", "label": "equivalent de _nicht richtig_" },
+      { "id": "2", "label": "equivalent de _nicht praktisch_" },
+      { "id": "3", "label": "equivalent de _nicht typisch_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "un- + richtig" },
+      { "blankId": "2", "placeholder": "un- + praktisch" },
+      { "blankId": "3", "placeholder": "un- + typisch" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["unrichtig"],
+      "2": ["unpraktisch"],
+      "3": ["untypisch"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has aplicat el patró _un- + adjectiu_ per expressar el contrari d'una qualitat. És una drecera útil quan l'adjectiu admet aquest prefix.",
+      "references": ["A1a-13"]
+    },
+    "incorrect": {
+      "default": "Pista: agafa l'adjectiu afirmatiu (_richtig_, _praktisch_, _typisch_) i afegeix-hi **_un-_** al davant, sense cap guió ni espai: _unrichtig_, _unpraktisch_, _untypisch_."
+    }
+  },
+  "relatedTopicIds": ["A1a-13"]
+}

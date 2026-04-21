@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-17-ex-01",
+  "topicId": "A1a-17",
+  "title": "Les dues tríades de memòria",
+  "prompt": "Completa la forma que falta per a cada tríada. Recorda: _gut / besser / am besten_ (adjectiu, qualitat) i _gern / lieber / am liebsten_ (adverbi, plaer).",
+  "difficulty": 1,
+  "tags": ["comparatiu", "superlatiu", "gut", "gern", "paradigma"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. El comparatiu de _gut_ és: {{1}}\n2. El superlatiu de _gut_ és: {{2}}\n3. El comparatiu de _gern_ és: {{3}}\n4. El superlatiu de _gern_ és: {{4}}",
+    "blanks": [
+      { "id": "1", "label": "comparatiu de _gut_" },
+      { "id": "2", "label": "superlatiu de _gut_" },
+      { "id": "3", "label": "comparatiu de _gern_" },
+      { "id": "4", "label": "superlatiu de _gern_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "besser…" },
+      { "blankId": "2", "placeholder": "am …" },
+      { "blankId": "3", "placeholder": "lieber…" },
+      { "blankId": "4", "placeholder": "am …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "besser",
+      "2": "am besten",
+      "3": "lieber",
+      "4": "am liebsten"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Tens les dues tríades memoritzades: **gut → besser → am besten** (adjectiu) i **gern → lieber → am liebsten** (adverbi). Són irregulars emblemàtics que s'aprenen com un sol paquet, igual que _bé → millor → el millor_ en català."
+    },
+    "incorrect": {
+      "default": "Recorda que són **irregulars**: no comparteixen arrel amb la forma positiva. La tríada de l'adjectiu és **gut → besser → am besten** i la de l'adverbi és **gern → lieber → am liebsten**. El superlatiu porta sempre _am_ davant i _-sten_ al final."
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-13-ex-03",
+  "topicId": "A1a-13",
+  "title": "Diàleg: tria la negació adequada",
+  "prompt": "Completa el diàleg triant la negació correcta a cada buit. Combina _Nein_ (resposta), _nicht_ (partícula), _kein_ (substantiu amb _ein_) i la forma amb prefix _un-_.",
+  "difficulty": 3,
+  "tags": ["integration", "nein", "nicht", "kein", "un-prefix"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "— Ist der Koffer praktisch?\n— {{1}}, der Koffer ist {{2}}. Er ist zu klein.\n— Und die Tasche? Ist sie schön?\n— {{3}}, ich finde die Tasche {{4}} schön.\n— Hast du einen anderen Koffer?\n— Nein, ich habe {{5}} anderen Koffer.",
+    "blanks": [
+      { "id": "1", "label": "resposta a pregunta tancada" },
+      { "id": "2", "label": "adjectiu derivat amb _un-_" },
+      { "id": "3", "label": "resposta a pregunta tancada" },
+      { "id": "4", "label": "negació interna davant d'adjectiu" },
+      { "id": "5", "label": "negació del substantiu _Koffer_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Nein", "Nicht", "Kein"] },
+      { "blankId": "2", "options": ["unpraktisch", "nicht praktisch", "kein praktisch"] },
+      { "blankId": "3", "options": ["Nein", "Nicht", "Keine"] },
+      { "blankId": "4", "options": ["nicht", "kein", "un-"] },
+      { "blankId": "5", "options": ["nicht", "kein", "keine"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Nein",
+      "2": "unpraktisch",
+      "3": "Nein",
+      "4": "nicht",
+      "5": "kein"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has combinat els tres recursos: _Nein_ per respondre, _nicht_ per negar adjectius dins la frase, _un-_ com a alternativa lèxica, i _kein_ per al substantiu amb article indefinit en afirmatiu.",
+      "references": ["A1a-13"]
+    },
+    "incorrect": {
+      "default": "Repassa: (1, 3) _Nein_ inicia la resposta a una pregunta tancada; (2) _unpraktisch_ és un adjectiu derivat, escrit tot junt; (4) per negar _schön_ dins una frase usem _nicht_, no _un-_ (no existeix _*unschön_ com a adjectiu habitual); (5) _Koffer_ és masculí i en afirmatiu aniria amb _ein_, així que la negació és _kein_.",
+      "byResponse": [
+        {
+          "match": { "1": "Nicht" },
+          "message": "_nicht_ és partícula interna, no paraula-frase. Per respondre a una pregunta tancada fem servir **_Nein_**."
+        },
+        {
+          "match": { "1": "Kein" },
+          "message": "_kein_ nega substantius dins d'una frase; no serveix per encapçalar una resposta. La paraula de resposta és **_Nein_**."
+        },
+        {
+          "match": { "2": "kein praktisch" },
+          "message": "_kein_ només acompanya substantius, no adjectius. Amb _praktisch_ (adjectiu) cal **_unpraktisch_** (o _nicht praktisch_)."
+        },
+        {
+          "match": { "4": "kein" },
+          "message": "_schön_ és un adjectiu, no un substantiu: la negació interna és **_nicht_**, no _kein_."
+        },
+        {
+          "match": { "4": "un-" },
+          "message": "No tots els adjectius admeten _un-_: _*unschön_ no és habitual. Aquí la negació natural és **_nicht schön_**."
+        },
+        {
+          "match": { "5": "nicht" },
+          "message": "_Koffer_ és un substantiu que en afirmatiu portaria _ein_ (_einen anderen Koffer_): la negació és **_kein_**."
+        },
+        {
+          "match": { "5": "keine" },
+          "message": "_der Koffer_ és masculí singular: la forma correcta és **_kein_**, no _keine_."
+        }
+      ]
+    }
+  },
+  "relatedTopicIds": ["A1a-4", "A1a-13"]
+}

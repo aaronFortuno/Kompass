@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-17-ex-03",
+  "topicId": "A1a-17",
+  "title": "Completa les tríades",
+  "prompt": "Completa la forma que falta per a cada tríada. Has de saber recórrer-les tant de positiu a superlatiu com a l'inrevés.",
+  "difficulty": 2,
+  "tags": ["comparatiu", "superlatiu", "paradigma", "producció"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _gut_ → comparatiu: {{1}}\n2. _besser_ → superlatiu: {{2}}\n3. _gern_ → superlatiu: {{3}}\n4. _lieber_ → forma positiva (de base): {{4}}\n5. _am besten_ → forma positiva (de base): {{5}}",
+    "blanks": [
+      { "id": "1", "label": "comparatiu de _gut_" },
+      { "id": "2", "label": "superlatiu a partir de _besser_" },
+      { "id": "3", "label": "superlatiu a partir de _gern_" },
+      { "id": "4", "label": "positiu a partir de _lieber_" },
+      { "id": "5", "label": "positiu a partir de _am besten_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "forma comparativa" },
+      { "blankId": "2", "placeholder": "am …" },
+      { "blankId": "3", "placeholder": "am …" },
+      { "blankId": "4", "placeholder": "forma positiva" },
+      { "blankId": "5", "placeholder": "forma positiva" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "besser",
+      "2": "am besten",
+      "3": "am liebsten",
+      "4": "gern",
+      "5": "gut"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Tens les dues tríades dominades en totes direccions: sabries recórrer-les de positiu a superlatiu i a l'inrevés. Això és el que cal per poder comparar amb naturalitat quan parlis."
+    },
+    "incorrect": {
+      "default": "Repassa-les com un bloc: **gut → besser → am besten** (adjectiu, qualitat) i **gern → lieber → am liebsten** (adverbi, plaer). Recorda que _lieber_ ve de _gern_ (no de _lieb_ com a positiu aquí) i que el superlatiu sempre porta _am_ al davant i _-sten_ al final."
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-13-ex-01",
+  "topicId": "A1a-13",
+  "title": "_nicht_, _kein_ o _keine_?",
+  "prompt": "Tria la negació correcta per a cada frase. Mira bé si el substantiu porta article definit, possessiu o _ein/eine_.",
+  "difficulty": 2,
+  "tags": ["nicht", "kein", "possessiu", "article-definit"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Ich kenne {{1}} das Buch.\nWir haben {{2}} Zeit.\nDas ist {{3}} mein Auto.\nEr hat {{4}} Bruder.",
+    "blanks": [
+      { "id": "1", "label": "substantiu amb article definit _das_" },
+      { "id": "2", "label": "_die Zeit_ sense article en afirmatiu" },
+      { "id": "3", "label": "substantiu amb possessiu _mein_" },
+      { "id": "4", "label": "_der Bruder_, amb _ein_ en afirmatiu" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["nicht", "kein", "keine"] },
+      { "blankId": "2", "options": ["nicht", "kein", "keine"] },
+      { "blankId": "3", "options": ["nicht", "kein", "keine"] },
+      { "blankId": "4", "options": ["nicht", "kein", "keine"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "nicht", "2": "keine", "3": "nicht", "4": "kein" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has vist que _kein_ només entra si en afirmatiu hi hauria _ein/eine_ o res. Si hi ha article definit (_das_) o possessiu (_mein_), la negació és _nicht_.",
+      "references": ["A1a-4", "A1a-13"]
+    },
+    "incorrect": {
+      "default": "Pista: _kein/keine_ **substitueix** _ein_ o l'absència d'article. Si el substantiu ja porta _das_, _der_, _die_ o _mein/dein..._, la negació és _nicht_.",
+      "byResponse": [
+        {
+          "match": { "1": "kein" },
+          "message": "_Buch_ porta article definit _das_: amb articles definits la negació és **_nicht_**, no _kein_."
+        },
+        {
+          "match": { "1": "keine" },
+          "message": "_Buch_ és neutre i porta article definit _das_: la negació és **_nicht_**. _keine_ s'usa per a femenins i plurals sense article definit."
+        },
+        {
+          "match": { "2": "nicht" },
+          "message": "_Zeit_ és un substantiu femení sense article en afirmatiu (_Ich habe Zeit_). Per tant, la negació és **_keine_**, no _nicht_."
+        },
+        {
+          "match": { "2": "kein" },
+          "message": "_die Zeit_ és femení: la concordança demana **_keine_**, no _kein_."
+        },
+        {
+          "match": { "3": "kein" },
+          "message": "_Auto_ porta possessiu _mein_: amb possessiu la negació és **_nicht_**, no _kein_."
+        },
+        {
+          "match": { "3": "keine" },
+          "message": "_Auto_ porta possessiu _mein_: la negació és **_nicht_**. _keine_ no s'usa davant de possessius."
+        },
+        {
+          "match": { "4": "nicht" },
+          "message": "_Bruder_ és masculí i en afirmatiu portaria _ein_ (_Er hat einen Bruder_). Per tant, la negació és **_kein_**, no _nicht_."
+        },
+        {
+          "match": { "4": "keine" },
+          "message": "_der Bruder_ és masculí singular: la forma correcta és **_kein_**, no _keine_."
+        }
+      ]
+    }
+  },
+  "relatedTopicIds": ["A1a-4", "A1a-13"]
+}

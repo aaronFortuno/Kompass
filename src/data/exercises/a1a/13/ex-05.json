@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-13-ex-05",
+  "topicId": "A1a-13",
+  "title": "Un text sobre el senyor Müller",
+  "prompt": "Completa el text triant la negació adequada a cada buit.",
+  "difficulty": 3,
+  "tags": ["nicht", "kein", "text", "possessiu", "plural"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Herr Müller kommt aus Berlin, aber er wohnt {{1}} in Berlin.\nEr arbeitet in einer Schule, aber er ist {{2}} Lehrer; er ist Hausmeister.\nEr hat {{3}} Kinder, aber er hat einen Neffen.\nEr kennt {{4}} meine Adresse, ich muss sie ihm schicken.\nAm Sonntag arbeitet er {{5}}.",
+    "blanks": [
+      { "id": "1", "label": "lloc amb preposició _in Berlin_" },
+      { "id": "2", "label": "professió sense article" },
+      { "id": "3", "label": "plural sense article" },
+      { "id": "4", "label": "substantiu amb possessiu _meine_" },
+      { "id": "5", "label": "negació del verb sencer" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["nicht", "kein", "keine"] },
+      { "blankId": "2", "options": ["nicht", "kein", "keine"] },
+      { "blankId": "3", "options": ["nicht", "kein", "keine"] },
+      { "blankId": "4", "options": ["nicht", "kein", "keine"] },
+      { "blankId": "5", "options": ["nicht", "kein", "keine"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "nicht",
+      "2": "kein",
+      "3": "keine",
+      "4": "nicht",
+      "5": "nicht"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Impecable. Has distingit els cinc casos: lloc amb preposició (_nicht_ davant), professió sense article (_kein_), plural sense article (_keine_), substantiu amb possessiu (_nicht_), verb sencer (_nicht_ al final).",
+      "references": ["A1a-4", "A1a-13"]
+    },
+    "incorrect": {
+      "default": "Atenció sobretot al slot 4: _meine Adresse_ porta **possessiu**, així que la negació és _nicht_, no _keine_. _keine_ només entraria si en afirmatiu el substantiu no portés cap article, cosa que aquí no passa.",
+      "byResponse": [
+        {
+          "match": { "1": "kein" },
+          "message": "_in Berlin_ és un lloc amb preposició, no un substantiu amb _ein_. La negació és **_nicht_**, col·locada davant de la preposició."
+        },
+        {
+          "match": { "1": "keine" },
+          "message": "_Berlin_ no porta article: no és el cas de _kein/keine_. Per negar el lloc fem servir **_nicht_** davant de _in_."
+        },
+        {
+          "match": { "2": "nicht" },
+          "message": "_Lehrer_ és una professió i en afirmatiu va sense article: la negació és **_kein_**, no _nicht_."
+        },
+        {
+          "match": { "2": "keine" },
+          "message": "_Lehrer_ (en aquest context, masculí singular) demana **_kein_**, no _keine_. _keine_ s'utilitza per a femenins i plurals."
+        },
+        {
+          "match": { "3": "nicht" },
+          "message": "_Kinder_ és un substantiu plural sense article: la negació és **_keine_**, no _nicht_."
+        },
+        {
+          "match": { "3": "kein" },
+          "message": "_Kinder_ és plural: sempre **_keine_** en plural, siguin del gènere que siguin."
+        },
+        {
+          "match": { "4": "keine" },
+          "message": "_meine Adresse_ porta **possessiu**. Davant de possessius la negació sempre és **_nicht_**, mai _keine_."
+        },
+        {
+          "match": { "4": "kein" },
+          "message": "_meine Adresse_ porta possessiu: la negació és **_nicht_**, no _kein_."
+        },
+        {
+          "match": { "5": "kein" },
+          "message": "Aquí negues el verb _arbeiten_ sencer, no un substantiu. La negació és **_nicht_**, al final."
+        },
+        {
+          "match": { "5": "keine" },
+          "message": "No hi ha cap substantiu a negar aquí: es nega el verb _arbeiten_. La partícula correcta és **_nicht_**."
+        }
+      ]
+    }
+  },
+  "relatedTopicIds": ["A1a-4", "A1a-13"]
+}

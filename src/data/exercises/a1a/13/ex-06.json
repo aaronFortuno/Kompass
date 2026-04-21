@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-13-ex-06",
+  "topicId": "A1a-13",
+  "title": "Respostes curtes: escriu la negació",
+  "prompt": "Completa cada resposta escrivint la paraula de negació que hi correspon. Recorda que _Nein_ encapçala la resposta, _kein_ acompanya el substantiu amb _ein_ i _nicht_ nega adjectius i verbs.",
+  "difficulty": 3,
+  "tags": ["integration", "nein", "nicht", "kein", "produccio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "— Hast du ein Auto?\n— {{1}}, ich habe {{2}} Auto.\n— Bist du müde?\n— {{3}}, ich bin {{4}} müde.\n— Arbeitest du heute?\n— Nein, ich arbeite heute {{5}}.",
+    "blanks": [
+      { "id": "1", "label": "resposta a pregunta tancada" },
+      { "id": "2", "label": "_das Auto_, amb _ein_ en afirmatiu" },
+      { "id": "3", "label": "resposta a pregunta tancada" },
+      { "id": "4", "label": "negació davant d'adjectiu _müde_" },
+      { "id": "5", "label": "negació del verb _arbeiten_ al final" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "No" },
+      { "blankId": "2", "placeholder": "kein/keine…" },
+      { "blankId": "3", "placeholder": "No" },
+      { "blankId": "4", "placeholder": "nicht/un-…" },
+      { "blankId": "5", "placeholder": "nicht/kein…" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Nein"],
+      "2": ["kein"],
+      "3": ["Nein"],
+      "4": ["nicht"],
+      "5": ["nicht"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has combinat els tres mecanismes: _Nein_ per iniciar la resposta, _kein_ per al substantiu amb _ein_, _nicht_ per adjectiu i verb.",
+      "references": ["A1a-4", "A1a-13"]
+    },
+    "incorrect": {
+      "default": "Pistes: (1, 3) la resposta a una pregunta tancada comença amb **_Nein_** + coma (majúscula inicial). (2) _Auto_ és neutre i en afirmatiu portaria _ein_ → _kein_. (4) _müde_ és adjectiu → _nicht_. (5) _arbeiten_ és verb → _nicht_ al final, darrere l'adverbi _heute_.",
+      "byResponse": [
+        {
+          "match": { "1": "nein" },
+          "message": "_Nein_ va sempre amb **majúscula inicial** com a paraula de resposta a l'inici d'una frase."
+        },
+        {
+          "match": { "1": "nicht" },
+          "message": "_nicht_ és partícula interna, no paraula de resposta. Per respondre a una pregunta tancada escrivim **_Nein_**."
+        },
+        {
+          "match": { "2": "nicht" },
+          "message": "_Auto_ és un substantiu que en afirmatiu porta _ein_: la negació és **_kein_**, no _nicht_."
+        },
+        {
+          "match": { "2": "keine" },
+          "message": "_das Auto_ és neutre singular: la forma correcta és **_kein_**, no _keine_."
+        },
+        {
+          "match": { "3": "nein" },
+          "message": "_Nein_ va sempre amb **majúscula inicial** com a paraula de resposta a l'inici d'una frase."
+        },
+        {
+          "match": { "4": "kein" },
+          "message": "_müde_ és un adjectiu, no un substantiu: la negació és **_nicht_**, no _kein_."
+        },
+        {
+          "match": { "5": "kein" },
+          "message": "Aquí es nega el verb _arbeiten_, no un substantiu: la partícula correcta és **_nicht_**, al final."
+        }
+      ]
+    }
+  },
+  "relatedTopicIds": ["A1a-4", "A1a-13"]
+}

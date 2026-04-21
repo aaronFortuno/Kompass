@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-17-ex-02",
+  "topicId": "A1a-17",
+  "title": "Qualitat o plaer?",
+  "prompt": "Tria la forma correcta per a cada frase segons el sentit entre parèntesis. Recorda: _gut / besser_ parlen de **qualitat**; _gern / lieber_ parlen de **plaer**.",
+  "difficulty": 2,
+  "tags": ["comparatiu", "gut", "gern", "contrast"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich spiele sehr {{1}} Klavier._ (= toco molt **bé** el piano, habilitat)\n2. _Ich spiele {{2}} Klavier als Gitarre._ (= m'agrada **més** tocar el piano que la guitarra)\n3. _Das Konzert war {{3}} als das Buch._ (= el concert va ser **millor** que el llibre)",
+    "blanks": [
+      { "id": "1", "label": "forma adequada a la frase 1" },
+      { "id": "2", "label": "forma adequada a la frase 2" },
+      { "id": "3", "label": "forma adequada a la frase 3" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["gut", "gern", "lieber", "besser"] },
+      { "blankId": "2", "options": ["gut", "gern", "lieber", "besser"] },
+      { "blankId": "3", "options": ["gut", "gern", "lieber", "besser"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "gut",
+      "2": "lieber",
+      "3": "besser"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has distingit les dues famílies: _gut / besser_ parlen de **qualitat** (com es fa, com és una cosa) i _gern / lieber_ parlen de **plaer** (amb quin grat es fa). El context entre parèntesis t'ho deia: _habilitat_ → _gut_; _m'agrada més_ → _lieber_; _millor (qualitat)_ → _besser_."
+    },
+    "incorrect": {
+      "default": "Pregunta't sempre: parlem de **com de bé** ho faig (qualitat) o de **quant m'agrada** fer-ho (plaer)? Qualitat → _gut / besser / am besten_. Plaer → _gern / lieber / am liebsten_. A la 1 parla d'habilitat (_gut_), a la 2 de preferència personal (_lieber_), a la 3 de qualitat del concert (_besser_)."
+    }
+  }
+}

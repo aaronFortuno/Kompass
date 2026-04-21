@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-17-ex-06",
+  "topicId": "A1a-17",
+  "title": "Qualitat amb _sein_ i _finden_",
+  "prompt": "Escriu la forma correcta segons la traducció catalana entre parèntesis. Totes les frases parlen de **qualitat** i fan servir _sein_ o _finden_.",
+  "difficulty": 2,
+  "tags": ["superlatiu", "comparatiu", "gut", "finden", "sein"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich finde dieses Restaurant {{1}}._ (= Aquest restaurant em sembla bo.)\n2. _Dieses Restaurant ist {{2}} als das andere._ (= Aquest restaurant és millor que l'altre.)\n3. _{{3}} finde ich das neue italienische Restaurant._ (= El que em sembla millor de tots és el nou restaurant italià.)",
+    "blanks": [
+      { "id": "1", "label": "forma positiva de qualitat" },
+      { "id": "2", "label": "forma comparativa de qualitat" },
+      { "id": "3", "label": "forma superlativa de qualitat" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "forma positiva" },
+      { "blankId": "2", "placeholder": "forma comparativa" },
+      { "blankId": "3", "placeholder": "am …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "gut",
+      "2": "besser",
+      "3": "am besten"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Totes tres frases parlen de **qualitat** (no de plaer!), així que han d'anar amb la tríada _gut / besser / am besten_. Has aplicat bé els tres graus amb dues construccions típiques (_finden + adj_ i _sein + adj_)."
+    },
+    "incorrect": {
+      "default": "Fixa-t'hi: totes tres frases parlen de **qualitat** del restaurant (és **bo**, és **millor**, és **el millor**), no de gust personal. Per tant va la família _gut / besser / am besten_, no pas _gern / lieber / am liebsten_. Recorda també les dues construccions: _Ich **finde** X gut_ (opinió) i _X **ist** gut_ (descripció)."
+    }
+  }
+}

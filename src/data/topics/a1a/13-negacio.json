@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-13",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 13,
+  "title": "Die Negation — la negació (avançat)",
+  "shortTitle": "Negació",
+  "description": "Ampliació d'A1a-4: casos avançats de nicht vs kein (articles definits i possessius), la paraula de resposta Nein i el prefix un- per negar adjectius.",
+  "axes": ["sintaxi-ordre-paraules"],
+  "prerequisites": ["A1a-4"],
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Context i motivació\n\nAquest tema reprèn **la negació**, ja introduïda al tema **A1a-4** (_nicht_ vs _kein/keine_). Si encara tens dubtes sobre **quan triar una o altra** o **on col·locar _nicht_ a la frase**, revisa primer A1a-4: allà s'hi explica la regla bàsica amb exemples comentats.\n\nAquí no repetirem els fonaments. Ens centrarem en tres coses:\n\n- **==Consolidar==** la tria entre _nicht_ i _kein/keine_ amb exercicis més exigents, amb frases encadenades i distractors.\n- Introduir **_Nein_** com a paraula de **resposta** a preguntes tancades (diferent de _nicht_).\n- Conèixer el prefix **_un-_**, que permet negar **alguns adjectius** sense recórrer a _nicht_.\n\nAixí ampliem l'arsenal: no només sabràs dir \"no treballo\" o \"no tinc cotxe\", sinó també **respondre \"no\"** amb naturalitat i entendre paraules com _unpraktisch_ o _unrichtig_ quan te les trobis."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Recordatori ràpid (extret d'A1a-4)",
+          "body": "En alemany la negació d'una frase es fa de dues maneres:\n\n- **_kein / keine_**: nega substantius que en afirmatiu portarien _ein / eine_ o **cap article** (plurals, professions).\n  > _Ich habe **kein** Auto._ · _Ich habe **keine** Geschwister._\n- **_nicht_**: nega **tota la resta** (verbs, adjectius, adverbis, llocs amb preposició). Tendeix al final de la frase, però s'avança just **davant de l'element concret** que nega.\n  > _Ich arbeite **nicht**._ · _Ich bin **nicht** verheiratet._ · _Ich komme **nicht** aus Innsbruck._"
+        }
+      ]
+    },
+    {
+      "id": "recap-decision",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### La decisió _nicht_ vs _kein_: refresc amb mirada avançada\n\nAbans d'anar a novetats, reforcem el punt més delicat: **decidir quina negació fa falta**. El truc d'A1a-4 continua servint:\n\n> **Mira la frase afirmativa.** Si el que vols negar és un **substantiu amb _ein/eine_ o sense article** → _kein / keine_. Tota la resta → _nicht_.\n\nAra afegim una segona capa de matisos útils per no caure en paranys típics a l'A1:\n\n**1. _nicht_ pot negar també un substantiu, si aquest porta article definit o possessiu.**\n\nEl tema A1a-4 ja ho insinuava. Vegem-ho amb més detall:\n\n> _Ich kenne **das** Buch **nicht**._ (No conec el llibre.)\n> _Das ist **nicht mein** Auto._ (Aquest no és el meu cotxe.)\n\nAquí _Buch_ i _Auto_ són substantius, però **no** es neguen amb _kein_: porten article definit (_das_) o possessiu (_mein_), i això fa que s'entri al terreny de _nicht_. La regla de _kein_ només s'activa quan en afirmatiu hi hauria _ein/eine_ o res.\n\n**2. _nicht_ i _kein_ poden conviure a la mateixa frase.**\n\n> _Ich habe **keine** Zeit und ich arbeite heute **nicht**._\n> (No tinc temps i avui no treballo.)\n\nUna nega el substantiu _Zeit_ (femení, sense article en afirmatiu → _keine_), l'altra nega el verb _arbeiten_ → _nicht_ al final. Res de nou: **cada negació va amb la seva eina**.\n\n**3. Posició de _nicht_ amb múltiples elements.**\n\nQuan la frase té més d'un complement, _nicht_ continua anant **just davant** del que es nega:\n\n> _Ich fahre **nicht** mit dem Auto._ (No hi vaig en cotxe → nega el mitjà de transport.)\n> _Ich fahre mit dem Auto **nicht** nach Berlin._ (Hi vaig en cotxe, però no a Berlín → nega la destinació.)\n\nEl ==sentit canvia== segons on es posi _nicht_. En un text d'A1 ho trobaràs sovint al final (cas més general), però convé saber que la posició té significat."
+        }
+      ]
+    },
+    {
+      "id": "check-mixed",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-13-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "nein-reply",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### _Nein_: la paraula de resposta\n\nFins ara hem negat **frases**. Però si et pregunten una cosa i vols contestar directament \"no\", la paraula adequada és **_Nein_**, no _nicht_.\n\n> — _Findest du die Tasche schön?_ (Et sembla bonica la bossa?)\n> — **_Nein_**, ich finde die Tasche **nicht** schön. (No, no em sembla bonica.)\n\nFixa't en la doble estructura de la resposta completa:\n\n1. **_Nein_** → és la **paraula-frase** que respon a la pregunta (equivalent a \"no\" en català quan va sol).\n2. **_nicht_** → és la **negació interna** de la frase que ve després.\n\nLes dues poden conviure sense redundància. En català dius exactament igual: \"**No**, no em sembla bonica.\" — el primer \"no\" respon, el segon nega el verb.\n\n**Usos típics de _Nein_:**\n\n- Respondre negativament a una pregunta tancada (**Ja/Nein-Frage**):\n  > — _Bist du Student?_ — **_Nein_**, ich bin **kein** Student.\n- Encapçalar una resposta abans d'explicar:\n  > — _Kommst du aus Deutschland?_ — **_Nein_**, ich komme aus Spanien.\n- Pot anar **sol**, sense cap frase al darrere:\n  > — _Hast du Zeit?_ — **_Nein_**. (Prou, ja s'entén.)"
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Diferència clau",
+          "body": "_Nein_ és una **resposta** (equivalent a \"no\" com a paraula independent). _nicht_ és una **partícula** interna de la frase (equivalent al \"no\" que va davant del verb en català). Mai s'intercanvien: **_Ich Nein arbeite_** és incorrecte; és _Ich arbeite **nicht**_."
+        }
+      ]
+    },
+    {
+      "id": "un-prefix",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El prefix _un-_: negar adjectius sense _nicht_\n\nL'alemany té una eina addicional per negar **alguns adjectius**: afegir el prefix **_un-_** davant de l'adjectiu. El resultat és una paraula nova amb significat contrari.\n\n| Positiu | Amb _un-_ | Significat |\n|---|---|---|\n| **praktisch** | **unpraktisch** | pràctic → poc pràctic |\n| **richtig** | **unrichtig** | correcte → incorrecte (= _falsch_) |\n| **typisch** | **untypisch** | típic → atípic |\n| **freundlich** | **unfreundlich** | amable → antipàtic |\n| **bekannt** | **unbekannt** | conegut → desconegut |\n\n**Compara les dues maneres de negar un adjectiu:**\n\n> _Das ist **nicht** praktisch._ (Això no és pràctic.) — negació amb _nicht_.\n> _Das ist **unpraktisch**._ (Això és poc pràctic.) — adjectiu derivat amb _un-_.\n\nLes dues frases són correctes i el seu significat és molt semblant, però no exactament idèntic:\n\n- **_nicht + adjectiu_** → és una negació neutra, purament gramatical. Simplement dius que **no** es dóna la qualitat.\n- **_un- + adjectiu_** → és una paraula ja ==lexicalitzada==, amb significat propi, sovint més **contundent** o **valoratiu**. _unpraktisch_ no és només \"no pràctic\", és \"molestament poc pràctic\"."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Terminologia: lexicalitzada",
+          "body": "Quan diem que una paraula està **lexicalitzada**, volem dir que funciona com una entrada pròpia del diccionari, amb el seu significat fix, en comptes de construir-se cada vegada amb regles gramaticals."
+        },
+        {
+          "type": "explanation",
+          "body": "**Quan fer servir _un-_?**\n\nAl nivell A1 no cal que produeixis tu mateix adjectius amb _un-_: n'hi ha prou que **els reconeguis** quan els vegis. Els adjectius amb _un-_ es troben al diccionari com a paraules pròpies; si _X_ existeix amb _un-_, el diccionari t'ho dirà."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Avís important",
+          "body": "No tots els adjectius admeten _un-_. Es diu _**unfreundlich**_ però **no** _*ungut_ (es diu _schlecht_), ni _*unschön_ en el sentit \"lleig\" (es diu _hässlich_). Per tant: **dubtes? _nicht_ sempre funciona**. _un-_ és una drecera opcional que afegeix riquesa, no una obligació."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Contrast amb català",
+          "body": "El català té mecanismes paral·lels: _pràctic → impràctic_, _conegut → desconegut_, _amable → poc amable_. Però no tots són simètrics entre les dues llengües; per exemple, _untypisch_ és perfectament normal en alemany, mentre que en català diem més sovint _atípic_."
+        }
+      ]
+    },
+    {
+      "id": "check-un",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-13-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals (a part dels ja vistos a A1a-4)\n\n**1. Confondre _Nein_ i _nicht_.**\n\n> Incorrecte: _Ich **Nein** arbeite._\n> Correcte: _**Nein**, ich arbeite **nicht**._\n\n_Nein_ **no entra dins de la frase**: és una paraula independent que respon a la pregunta i sol anar seguida d'una coma.\n\n**2. Redundància _Nein_ + _nicht_: no existeix.**\n\nFer servir els dos en una resposta **no és redundant** en alemany, com tampoc ho és en català (\"No, no en tinc\"). De fet és la resposta natural i completa:\n\n> — _Hast du Kinder?_ — **_Nein_**, ich habe **keine** Kinder.\n\n**3. Inventar adjectius amb _un-_.**\n\nNo tots els adjectius admeten _un-_. Si no has vist mai _unschön_ ni _ungut_, **no els facis servir**: són poc o gens usuals. En cas de dubte, fes servir _nicht schön_, _nicht gut_ (o directament el seu antònim lexicalitzat: _hässlich_, _schlecht_).\n\n**4. Pensar que _un-_ i _nicht_ són **exactament** el mateix.**\n\nSón propers, però no idèntics. _unpraktisch_ implica una valoració (és molest, no funciona bé). _nicht praktisch_ és una descripció més neutra. Al diccionari trobaràs els adjectius amb _un-_ amb la seva pròpia entrada i matís.\n\n**5. Escriure _un-_ separat o amb guió.**\n\n> Incorrecte: _un praktisch_, _un-praktisch_.\n> Correcte: _**unpraktisch**_ (tot junt, sense guió).\n\nEn alemany, els prefixos com _un-_ s'uneixen directament a la paraula, com _mitbringen_ o _verstehen_."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-13-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-13-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-13-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-13-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi\n\nAquest tema amplia A1a-4 amb tres idees clau:\n\n- La tria **_nicht_ vs _kein/keine_** s'enriqueix amb casos avançats: **articles definits** (_das Buch_) i **possessius** (_mein Auto_) obliguen a _nicht_, encara que l'element negat sigui un substantiu.\n- **_Nein_** és la **paraula de resposta** a preguntes tancades, i conviu sense redundància amb _nicht_ o _kein_ dins la frase que l'acompanya.\n- El prefix **_un-_** genera adjectius amb significat contrari (_unpraktisch_, _unfreundlich_, _unbekannt_). És una alternativa **lexicalitzada** a _nicht + adjectiu_, més contundent però **no disponible per a tots** els adjectius.\n\nAmb això ja pots participar en diàlegs senzills de presentació i opinió amb una negació natural i variada. Si vols revisar les regles bàsiques de posició de _nicht_ o la concordança de _kein/keine_, torna a A1a-4 sempre que ho necessitis: aquest tema el pressuposa."
+        },
+        {
+          "type": "table",
+          "title": "13.1 Tres mecanismes de negació: quan fer servir cadascun",
+          "headers": ["Mecanisme", "Funció", "Exemple"],
+          "rows": [
+            ["**_nicht_**", "Partícula interna que nega verbs, adjectius, adverbis, llocs o substantius amb article definit/possessiu.", "Ich arbeite **nicht**. · Das ist **nicht mein** Auto."],
+            ["**_kein / keine_**", "Nega substantius que en afirmatiu portarien _ein/eine_ o cap article.", "Ich habe **kein** Auto. · Ich habe **keine** Kinder."],
+            ["**_Nein_**", "Paraula de resposta independent a una pregunta tancada. No entra dins la frase.", "— _Hast du Zeit?_ — **_Nein_**, ich habe **keine** Zeit."],
+            ["**Prefix _un-_**", "Genera un adjectiu lexicalitzat de sentit contrari. Opcional i només per a alguns adjectius.", "Das ist **unpraktisch**. (= nicht praktisch, més valoratiu)"]
+          ]
+        },
+        {
+          "title": "13.2 Casos avançats _nicht_ vs _kein_",
+          "type": "table",
+          "headers": ["Situació", "Tria", "Exemple"],
+          "rows": [
+            ["Substantiu amb article definit (_der/die/das_)", "_nicht_", "Ich kenne **das** Buch **nicht**."],
+            ["Substantiu amb possessiu (_mein, dein..._)", "_nicht_", "Das ist **nicht mein** Auto."],
+            ["Substantiu amb _ein/eine_ en afirmatiu", "_kein / keine_", "Ich habe **kein** Auto."],
+            ["Substantiu sense article (plural, professió)", "_kein / keine_", "Ich bin **kein** Lehrer."],
+            ["Verb, adjectiu, adverbi o lloc amb preposició", "_nicht_", "Ich komme **nicht** aus Berlin."],
+            ["Dues negacions en una mateixa frase", "cadascuna amb la seva eina", "Ich habe **keine** Zeit und ich arbeite heute **nicht**."]
+          ]
+        },
+        {
+          "title": "13.3 Adjectius freqüents amb prefix _un-_",
+          "type": "table",
+          "headers": ["Positiu", "Amb _un-_", "Traducció"],
+          "rows": [
+            ["praktisch", "**unpraktisch**", "pràctic → poc pràctic"],
+            ["richtig", "**unrichtig**", "correcte → incorrecte (= _falsch_)"],
+            ["typisch", "**untypisch**", "típic → atípic"],
+            ["freundlich", "**unfreundlich**", "amable → antipàtic"],
+            ["bekannt", "**unbekannt**", "conegut → desconegut"]
+          ],
+          "caption": "No tots els adjectius admeten _un-_: _*ungut_ i _*unschön_ no són habituals; es diu _schlecht_ i _hässlich_ respectivament."
+        }
+      ]
+    }
+  ]
+}
