@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-32-ex-04",
+  "topicId": "A1a-32",
+  "title": "Conjuga _gefallen_ i tria el pronom datiu",
+  "prompt": "Tradueix _A nosaltres ens agraden els quadres_. Recorda: el verb concorda amb _die Bilder_ (plural) i la persona va en **datiu** (no nominatiu).",
+  "difficulty": 2,
+  "tags": ["gefallen", "datiu", "concordança", "producció", "dropdownfill", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_{{1}} {{2}} die Bilder._ (A nosaltres ens agraden els quadres.)",
+    "blanks": [
+      { "id": "1", "label": "pronom datiu per _a nosaltres_" },
+      { "id": "2", "label": "forma de _gefallen_ que concordi amb _die Bilder_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Uns", "Wir", "Unser", "Euch"] },
+      { "blankId": "2", "options": ["gefallen", "gefällt", "gefalle", "gefällst"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Uns",
+      "2": "gefallen"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte: _Uns gefallen die Bilder._ Subjecte plural _die Bilder_ → verb **gefallen**. Persona _a nosaltres_ → datiu **uns**. (També és vàlid l'ordre _Die Bilder gefallen uns._)",
+      "references": ["A1a-32"]
+    },
+    "incorrect": {
+      "default": "Dos punts a repassar: (1) _wir_ és **nominatiu** (_nosaltres_ com a subjecte); aquí _nosaltres_ és la persona a qui agrada → datiu **uns**. (2) El subjecte és _die Bilder_ (plural) → verb en plural: **gefallen**, no _gefällt_."
+    }
+  }
+}

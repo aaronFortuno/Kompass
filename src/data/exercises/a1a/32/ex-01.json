@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-32-ex-01",
+  "topicId": "A1a-32",
+  "title": "Concordança de _gefallen_ amb el subjecte",
+  "prompt": "Tria la forma correcta de _gefallen_. Recorda: el verb concorda amb la cosa (subjecte), no amb la persona (datiu).",
+  "difficulty": 1,
+  "tags": ["gefallen", "concordança", "datiu", "singlechoice", "quick-check"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Die Bilder {{1}} mir sehr gut._ (Els quadres m'agraden molt.)",
+    "blanks": [
+      { "id": "1", "label": "forma de _gefallen_ que concordi amb _die Bilder_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["gefällt", "gefallen", "gefalle", "gefällst"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "gefallen"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. El subjecte és _die Bilder_ (plural) → verb en 3a persona plural: **gefallen**. _mir_ és la persona a qui agrada (datiu), no el subjecte.",
+      "references": ["A1a-32"]
+    },
+    "incorrect": {
+      "default": "Recorda: _gefallen_ concorda amb la **cosa** (subjecte), no amb la persona. _gefällt_ = 3a sg. (_das Bild_), _gefalle_ = 1a sg. (_ich_), _gefällst_ = 2a sg. (_du_). Amb _die Bilder_ (plural) cal **gefallen**."
+    }
+  }
+}

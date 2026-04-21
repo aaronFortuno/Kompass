@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-32-ex-06",
+  "topicId": "A1a-32",
+  "title": "Gustos, opinió i reacció: tria la traducció natural",
+  "prompt": "Quina és la traducció **més natural** de: _\"Aquesta cançó m'agrada molt. I què et sembla el grup? — Els trobo avorrits.\"_",
+  "difficulty": 3,
+  "tags": ["contrast", "gefallen", "finden", "moegen", "singlechoice", "assessment"],
+  "stimulus": {
+    "type": "text",
+    "content": "Tria la traducció **més natural** de: _\"Aquesta cançó m'agrada molt. I què et sembla el grup? — Els trobo avorrits.\"_"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "a", "label": "_Ich mag dieses Lied sehr. Und wie gefällst du die Gruppe? — Ich mag sie langweilig._" },
+      { "id": "b", "label": "_Dieses Lied gefällt mir sehr. Und wie findest du die Gruppe? — Ich finde sie langweilig._" },
+      { "id": "c", "label": "_Dieses Lied findet mich sehr. Und was magst du die Gruppe? — Sie gefallen langweilig._" },
+      { "id": "d", "label": "_Ich gefalle dieses Lied. Und wie magst du die Gruppe? — Ich finde sie._" }
+    ]
+  },
+  "validation": {
+    "type": "exactMatch",
+    "answer": "b"
+  },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. _Dieses Lied gefällt mir_ expressa una **reacció** a la cançó (m'agrada com sona). _Wie findest du…?_ és la pregunta estàndard per demanar **opinió valorada**. _Ich finde sie langweilig_ dóna l'adjectiu d'opinió.",
+      "references": ["A1a-32"]
+    },
+    "incorrect": {
+      "default": "(a) _gefallen_ demana **datiu** (_dir_, no _du_) i concorda amb el subjecte; i _mögen_ no porta adjectiu. (c) _finden_ no s'inverteix com _gefallen_; i _gefallen_ necessita datiu + nominatiu. (d) _Ich gefalle dieses Lied_ és impossible (seria _\"jo agrado la cançó\"_), i _finden_ sense adjectiu perd el sentit d'opinió. La correcta és (b)."
+    }
+  }
+}

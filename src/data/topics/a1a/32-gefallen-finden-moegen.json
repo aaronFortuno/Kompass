@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-32",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 32,
+  "title": "Die Verben 'gefallen', 'finden' und 'mögen'",
+  "shortTitle": "gefallen/finden/mögen",
+  "description": "Tres maneres d'expressar gustos i opinions en alemany: _mögen_ + acusatiu (preferència estable), _finden_ + acusatiu + adjectiu (opinió valorada) i _gefallen_ + datiu (reacció estètica, amb estructura paral·lela al català 'agradar'). S'introdueixen els pronoms datius imprescindibles (_mir, dir, ihm/ihr, uns, euch, ihnen/Ihnen_), la concordança del verb amb el subjecte-cosa, la pregunta típica _Wie findest du…?_ i els paranys de traducció literal. Es contrasten els usos típics per triar el verb més natural en cada context.",
+  "axes": ["pronoms-verbs", "expressions-i-funcions"],
+  "prerequisites": ["A1a-16", "A1a-19"],
+  "estimatedMinutes": 15,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Tres maneres de dir \"m'agrada\"\n\nA **A1a-16** vas aprendre a expressar gustos amb _mögen_ + substantiu (_Ich mag Pizza_) i amb _gern_ + verb (_Ich esse gern Pizza_). A **A1a-19** vas descobrir _mögen_ com a verb modal i la seva conjugació especial. Ara, a **A1a-32**, afegim dues eines més que conviuen amb _mögen_ i que el natiu utilitza contínuament:\n\n1. ==**mögen**== + Akkusativ → _Ich mag den Balkon._\n2. ==**finden**== + Akkusativ + **adjectiu** → _Ich finde den Balkon schön._\n3. ==**gefallen**== + Dativ → _Mir gefällt der Balkon._\n\nEls tres volen dir, aproximadament, **\"m'agrada\"**, però **funcionen de manera diferent** i no són del tot intercanviables. El més delicat per a nosaltres és _gefallen_, perquè es comporta exactament com el **català \"agradar\"** (i el castellà \"gustar\"): el que ens agrada és **subjecte**, i la persona a qui agrada va en **datiu**.\n\nAquesta lliçó dura uns 10-15 minuts. Cal tenir fresques les declinacions de **A1a-28 (acusatiu)** i els pronoms personals en datiu."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Avís",
+          "body": "Els temes de datiu els treballaràs a fons a A1b. Aquí només introduïm els pronoms datius imprescindibles per poder dir _mir gefällt_. No entrem en la declinació completa."
+        }
+      ]
+    },
+    {
+      "id": "gefallen-datiu",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### 1. _gefallen_ + datiu → com el català \"agradar\"\n\nEn català, quan dius **\"m'agrada la casa\"**, qui fa de **subjecte** és _la casa_ (és _la casa_ la que agrada), i _m'_ és el **complement indirecte** (a mi). Per això diem _m'agrad**en** les cases_ (plural), no _m'agrada les cases_: el verb concorda amb el subjecte, que és _les cases_.\n\nEn alemany, ==_gefallen_ funciona exactament igual==. És un verb **intransitiu** (no porta complement directe). L'estructura és:\n\n> ==Cosa que agrada (Nominatiu) + _gefallen_ + persona (Dativ)==\n> o, amb ordre invertit: ==Persona (Dativ) + _gefallen_ + cosa (Nominatiu)==\n\n**Beispiele:**\n\n- _Das Haus **gefällt** mir._ → ==La casa m'agrada.== (la casa = subjecte singular → _gefällt_)\n- _Die Bilder **gefallen** mir._ → ==Els quadres m'agraden.== (els quadres = subjecte plural → _gefallen_)\n- _Mir **gefällt** das Haus_ (_gut_). → M'agrada la casa.\n- _Mir **gefallen** die Bilder_ (_gut_). → M'agraden els quadres.\n\nFixa't que ==_gefallen_ concorda amb la cosa, no amb la persona==, exactament com en català.\n\nPodem afegir adverbis de grau: **gut** (bé), **sehr gut** (molt bé), **ausgezeichnet** (excel·lentment)."
+        },
+        {
+          "type": "table",
+          "title": "Pronoms datius per a _gefallen_",
+          "headers": ["Persona (a qui agrada)", "Pronom datiu"],
+          "rows": [
+            ["a mi", "**mir**"],
+            ["a tu", "**dir**"],
+            ["a ell / a ella / a allò", "**ihm / ihr / ihm**"],
+            ["a nosaltres", "**uns**"],
+            ["a vosaltres", "**euch**"],
+            ["a ells/elles / a vostè", "**ihnen / Ihnen**"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Contrast CA / ES / DE",
+          "body": "- CA: _A mi **m'agrada** la casa._ / _A mi **m'agraden** les cases._\n- ES: _A mí **me gusta** la casa._ / _A mí **me gustan** las casas._\n- DE: _Mir **gefällt** das Haus._ / _Mir **gefallen** die Häuser._\n\nEstructura idèntica. És dels pocs moments en què la intuïció romànica **juga a favor**."
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Vorsicht!",
+          "body": "No es pot dir ❌ _Ich gefalle das Haus_ ni ❌ _Ich gefalle dem Haus_. Seria com dir en català ❌ _\"Jo agrado a la casa\"_. No té sentit: qui agrada és **la casa**, no _jo_."
+        }
+      ]
+    },
+    {
+      "id": "check-gefallen",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-32-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "finden-acusatiu",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### 2. _finden_ + acusatiu + adjectiu → \"trobar (bonic/lleig/…)\"\n\nEl verb ==_finden_== literalment vol dir \"trobar\". Però en alemany s'utilitza moltíssim per **donar una opinió** sobre una cosa, i llavors es tradueix com _trobar que… és_ o fins i tot _m'agrada / no m'agrada_.\n\nÉs un verb **transitiu**: sempre porta un **complement directe en acusatiu**, i, per donar sentit a l'opinió, ==va acompanyat d'un **adjectiu**== que descriu com ho trobes.\n\n> ==Subjecte + _finden_ + Akkusativ + Adjektiv==\n\n**Beispiele:**\n\n- _Ich **finde** die Wohnung **schön**._ → Trobo el pis bonic. / M'agrada el pis.\n- _Ich **finde** das Bild **schön**._ → Trobo el quadre bonic.\n- _Ich **finde** den Balkon **toll**._ → Trobo el balcó genial.\n\nRecorda l'acusatiu (A1a-28): el **masculí singular** és l'únic que canvia visiblement (_der_ → _den_, _ein_ → _einen_).\n\n- _der Balkon_ → _Ich finde **den** Balkon schön._\n- _die Wohnung_ → _Ich finde **die** Wohnung schön._\n- _das Bild_ → _Ich finde **das** Bild schön._\n- _die Häuser_ → _Ich finde **die** Häuser schön._\n\n**Pregunta clau:** ==_Wie findest du…?_== → \"Com trobes…? / Què et sembla…?\"\n\n> _Wie findest du den Film?_ — _Ich finde ihn interessant._\n> (Com trobes la pel·lícula? — La trobo interessant.)\n\n==El _finden_ d'opinió **sempre demana adjectiu**==. Si dius _Ich finde den Film_, sense adjectiu, vol dir literalment \"trobo la pel·lícula\" (la busco i la localitzo), no \"m'agrada la pel·lícula\"."
+        }
+      ]
+    },
+    {
+      "id": "check-finden",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-32-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "mogen-acusatiu",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### 3. _mögen_ + acusatiu → \"m'agrada (una cosa)\"\n\nJa coneixes _mögen_ de **A1a-16** i **A1a-19**. Ara el mirem amb la lupa del **cas gramatical**: _mögen_ també és **transitiu** i demana ==acusatiu==, però **no porta adjectiu** (a diferència de _finden_).\n\n> ==Subjecte + _mögen_ + Akkusativ==\n\n**Beispiele:**\n\n- _Ich **mag** die Küche._ → M'agrada la cuina.\n- _Ich **mag** die Bilder._ → M'agraden els quadres.\n- _Ich **mag** den Balkon._ → M'agrada el balcó.\n\nRecorda la conjugació especial (A1a-19): _ich mag_, _du magst_, _er/sie mag_, _wir mögen_, _ihr mögt_, _sie/Sie mögen_.\n\nA diferència de _gefallen_, aquí ==**tu** ets el subjecte== (_ich mag…_), i la cosa que t'agrada és **complement directe**. És **al revés del català**."
+        }
+      ]
+    },
+    {
+      "id": "contrast-us",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Quan faig servir cada un?\n\nEls tres verbs són correctes en molts contextos, però hi ha matisos d'ús que els natius sí que fan."
+        },
+        {
+          "type": "table",
+          "headers": ["Verb", "Quan encaixa millor", "Matís"],
+          "rows": [
+            ["**mögen**", "Gustos estables, preferències generals, persones, menjar", "\"Tinc afecte per…\" / \"Em cau bé\""],
+            ["**finden** + adj.", "Opinió puntual sobre una cosa concreta (amb valoració explícita)", "\"Em sembla (bonic, interessant…)\""],
+            ["**gefallen**", "Impressió estètica o primera reacció; coses, llocs, aspectes visuals", "\"M'agrada (com es veu / com sona)\""]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Exemples típics:**\n\n- _Ich **mag** Kaffee._ → M'agrada el cafè (en general, de sempre).\n- _Wie **findest** du den neuen Film?_ — _Ich **finde** ihn langweilig._ → Què et sembla la pel·li nova? — La trobo avorrida. (opinió valorada)\n- _Das Kleid **gefällt** mir._ → Aquest vestit m'agrada. (reacció estètica: el veig i m'agrada)"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Regla pràctica",
+          "body": "Si pots substituir \"m'agrada\" per _\"em sembla + adjectiu\"_ → **finden**. Si parles d'una preferència de fons → **mögen**. Si parles d'una impressió visual o d'una primera reacció → **gefallen**."
+        }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys freqüents\n\n1. **Subjecte de _gefallen_.** ❌ _Ich gefalle das Haus._ ✅ _Das Haus gefällt mir._ En català no dius \"jo agrado la casa\", oi? En alemany, tampoc.\n2. **Concordança de _gefallen_.** El verb concorda amb **la cosa**, no amb la persona: _Die Bilder **gefallen** mir_ (no _gefällt_).\n3. **_finden_ sense adjectiu.** ❌ _Ich finde den Film._ (això vol dir \"localitzo la pel·lícula\"). ✅ _Ich finde den Film gut._\n4. **Cas de _finden_ i _mögen_.** Tots dos volen **acusatiu**, no datiu: ❌ _Ich finde dem Balkon schön._ ✅ _Ich finde **den** Balkon schön._\n5. **Pronom datiu confús.** _mir_ (a mi) no és igual que _ich_ (jo). A _Mir gefällt das Haus_, _mir_ és la persona a qui agrada, no el subjecte.\n6. **Traduir literalment.** _Mir gefällt das Haus_ ≠ \"A mi agrado la casa\". És literalment _\"a mi m'és plaent la casa\"_, és a dir, **la casa m'agrada**."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-32-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-32-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-32-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-32-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi\n\nHas après a dir **\"m'agrada\"** de tres maneres complementàries:\n\n- ==**mögen** + acusatiu== → preferència estable: _Ich mag den Balkon._\n- ==**finden** + acusatiu + adjectiu== → opinió valorada: _Ich finde den Balkon schön._\n- ==**gefallen** + datiu== → reacció estètica, estructura igual al català: _Der Balkon gefällt mir._\n\n**Regla pràctica per triar:**\n\n1. Si t'imagines dient _em sembla + adjectiu_ → **finden**.\n2. Si parles de gustos de fons (menjar, música, persones) → **mögen**.\n3. Si reacciones a una impressió (visual, auditiva) → **gefallen**.\n\n**Claus per no fallar amb _gefallen_:**\n\n- La **cosa** és el subjecte (nominatiu), concorda amb el verb.\n- La **persona** va en datiu: _mir, dir, ihm/ihr, uns, euch, ihnen/Ihnen_.\n- Estructura **idèntica al català \"agradar\"**: aprofita la intuïció.\n\n**Claus per no fallar amb _finden_:**\n\n- Sempre acusatiu (_den_ és l'única forma que canvia al masculí).\n- Sempre adjectiu darrere.\n- Pregunta típica: _Wie findest du…?_\n\nAmb aquests tres verbs, ja pots expressar gustos i opinions amb la mateixa flexibilitat que un natiu principiant. El pròxim pas (a A1b) serà ampliar el datiu a substantius complets (_dem Mann, der Frau, dem Kind_) i fer servir _gefallen_ amb subjectes més variats.\n\n_Fonts consultades: Deutsche Welle — \"Deutsch lernen\" (Nicos Weg A1, capítol sobre gustos), Goethe-Institut — materials A1, dwds.de (entrades de_ gefallen_,_ finden_,_ mögen_)._"
+        }
+      ]
+    }
+  ]
+}

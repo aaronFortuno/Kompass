@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-32-ex-05",
+  "topicId": "A1a-32",
+  "title": "Respon a _Wie findest du die Wohnung?_",
+  "prompt": "Ordena les peces per construir una resposta amb _finden_ + acusatiu + adjectiu. Pensa en l'estructura: _Subjecte + finden + Akkusativ + (sehr) + Adjektiv_.",
+  "difficulty": 2,
+  "tags": ["finden", "acusatiu", "adjectiu", "ordre", "dropdownfill", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Wie findest du die Wohnung?_ — Resposta:\n{{1}} {{2}} {{3}} {{4}} {{5}} {{6}}.",
+    "blanks": [
+      { "id": "1", "label": "posició 1" },
+      { "id": "2", "label": "posició 2" },
+      { "id": "3", "label": "posició 3" },
+      { "id": "4", "label": "posició 4" },
+      { "id": "5", "label": "posició 5" },
+      { "id": "6", "label": "posició 6" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Ich", "finde", "die", "Wohnung", "sehr", "schön"] },
+      { "blankId": "2", "options": ["Ich", "finde", "die", "Wohnung", "sehr", "schön"] },
+      { "blankId": "3", "options": ["Ich", "finde", "die", "Wohnung", "sehr", "schön"] },
+      { "blankId": "4", "options": ["Ich", "finde", "die", "Wohnung", "sehr", "schön"] },
+      { "blankId": "5", "options": ["Ich", "finde", "die", "Wohnung", "sehr", "schön"] },
+      { "blankId": "6", "options": ["Ich", "finde", "die", "Wohnung", "sehr", "schön"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Ich",
+      "2": "finde",
+      "3": "die",
+      "4": "Wohnung",
+      "5": "sehr",
+      "6": "schön"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé: _Ich finde die Wohnung sehr schön._ _Wohnung_ és femení (_die Wohnung_), i en femení l'acusatiu no canvia: _die Wohnung_. L'adjectiu _schön_ tanca la frase i dóna l'opinió; _sehr_ la intensifica.",
+      "references": ["A1a-32"]
+    },
+    "incorrect": {
+      "default": "Recorda l'estructura: _Subjecte (Ich) + finden (finde) + Akkusativ (die Wohnung) + (sehr) + Adjektiv (schön)_. En femení l'acusatiu coincideix amb el nominatiu: _die Wohnung_ → _die Wohnung_."
+    }
+  }
+}

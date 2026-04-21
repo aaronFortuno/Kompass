@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-32-ex-02",
+  "topicId": "A1a-32",
+  "title": "Construeix una frase amb _finden_",
+  "prompt": "Ordena les peces per traduir _Trobo el balcó genial_. Recorda l'estructura: _Subjecte + finden + Akkusativ + Adjektiv_. _Balkon_ és masculí.",
+  "difficulty": 1,
+  "tags": ["finden", "acusatiu", "adjectiu", "ordre", "quick-check"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Tradueix _Trobo el balcó genial_ triant la peça correcta a cada posició:\n{{1}} {{2}} {{3}} {{4}} {{5}}.",
+    "blanks": [
+      { "id": "1", "label": "posició 1" },
+      { "id": "2", "label": "posició 2" },
+      { "id": "3", "label": "posició 3" },
+      { "id": "4", "label": "posició 4" },
+      { "id": "5", "label": "posició 5" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Ich", "finde", "den", "Balkon", "toll"] },
+      { "blankId": "2", "options": ["Ich", "finde", "den", "Balkon", "toll"] },
+      { "blankId": "3", "options": ["Ich", "finde", "den", "Balkon", "toll"] },
+      { "blankId": "4", "options": ["Ich", "finde", "den", "Balkon", "toll"] },
+      { "blankId": "5", "options": ["Ich", "finde", "den", "Balkon", "toll"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Ich",
+      "2": "finde",
+      "3": "den",
+      "4": "Balkon",
+      "5": "toll"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte: _Ich finde den Balkon toll._ _finden_ porta **acusatiu** (_der Balkon_ → _den Balkon_) i **adjectiu** (_toll_) per donar l'opinió.",
+      "references": ["A1a-32"]
+    },
+    "incorrect": {
+      "default": "Estructura: _Subjecte (Ich) + finden (finde) + Akkusativ (den Balkon) + Adjektiv (toll)_. _Balkon_ és masculí → _der_ → **den** en acusatiu. Sense l'adjectiu _toll_, _finden_ perd el sentit d'opinió."
+    }
+  }
+}

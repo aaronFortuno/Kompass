@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-32-ex-03",
+  "topicId": "A1a-32",
+  "title": "_gefallen_, _finden_ o _mögen_? Tria el verb",
+  "prompt": "Quina forma encaixa millor per preguntar per una **preferència general** sobre el cafè?",
+  "difficulty": 2,
+  "tags": ["gefallen", "finden", "moegen", "contrast", "singlechoice", "assessment"],
+  "stimulus": {
+    "type": "text",
+    "content": "Completa amb la forma adequada de _gefallen_, _finden_ o _mögen_:\n\n_\"___ du Kaffee?\"_ (pregunta sobre preferència general)"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "a", "label": "_Gefällst_" },
+      { "id": "b", "label": "_Findest_" },
+      { "id": "c", "label": "_Magst_" },
+      { "id": "d", "label": "_Gefallen_" }
+    ]
+  },
+  "validation": {
+    "type": "exactMatch",
+    "answer": "c"
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Per preguntar per una **preferència general** (_t'agrada el cafè?_), _mögen_ és el verb natural: _Magst du Kaffee?_",
+      "references": ["A1a-32"]
+    },
+    "incorrect": {
+      "default": "_Gefällst_: _gefallen_ demana **datiu** (_Gefällt dir Kaffee?_) i s'usa més per reaccions estètiques, no per gustos alimentaris de fons. _Findest_: _finden_ hauria de portar adjectiu (_Wie findest du den Kaffee?_). _Gefallen_: amb _du_ la forma seria _gefällst_, i a més demana datiu. La resposta natural és _Magst du Kaffee?_"
+    }
+  }
+}
