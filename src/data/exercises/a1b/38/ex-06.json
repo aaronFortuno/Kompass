@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-38-ex-06",
+  "topicId": "A1b-38",
+  "title": "Tria el verb segons el patró",
+  "prompt": "Per a cada frase, tria el verb que ==**encaixa amb la forma del complement**== (datiu, acusatiu, preposició).",
+  "difficulty": 2,
+  "tags": ["contextualitzacio", "patrons", "produccio", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich_ {{1}} _dir einen Kaffee._\n\n2. _Die Jacke_ {{2}} _mir nicht._\n\n3. _Ich_ {{3}} _ein Buch._\n\n4. _Ich_ {{4}} _in Barcelona._\n\n5. _Das Bild_ {{5}} _mir sehr._\n\n6. _Ich_ {{6}} _meiner Mutter._",
+    "blanks": [
+      { "id": "1", "label": "1 · _dir_ (Dat) + _einen Kaffee_ (Akk)" },
+      { "id": "2", "label": "2 · _mir_ (Dat), cap Akk" },
+      { "id": "3", "label": "3 · _ein Buch_ (Akk)" },
+      { "id": "4", "label": "4 · _in Barcelona_ (Präp locativa)" },
+      { "id": "5", "label": "5 · _mir_ (Dat), _das Bild_ subjecte" },
+      { "id": "6", "label": "6 · _meiner Mutter_ (Dat), cap Akk" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["mache", "helfe", "wohne"] },
+      { "blankId": "2", "options": ["kauft", "passt", "liest"] },
+      { "blankId": "3", "options": ["kaufe", "helfe", "wohne"] },
+      { "blankId": "4", "options": ["schenke", "wohne", "höre"] },
+      { "blankId": "5", "options": ["sieht", "gefällt", "kauft"] },
+      { "blankId": "6", "options": ["sehe", "helfe", "kaufe"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "mache",
+      "2": "passt",
+      "3": "kaufe",
+      "4": "wohne",
+      "5": "gefällt",
+      "6": "helfe"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Fixa't en ==la forma del complement== donat: si hi ha un pronom datiu (_mir, dir_) sense acusatiu, el verb ha de ser de **datiu pur**. Si hi ha els dos (datiu + acusatiu), el verb és de **transferència**. Si hi ha una preposició locativa, el verb és **preposicional**.",
+      "references": ["A1b-38"]
+    },
+    "incorrect": {
+      "default": "Estratègia: (1) mira si hi ha ==un acusatiu==, ==un datiu==, ==els dos==, o ==una preposició==. (2) Tria el verb que encaixa amb aquesta configuració. _mache_ admet +Dat+Akk (_dir einen Kaffee_). _passt_ és +Dat. _kaufe_ és +Akk. _wohne_ és +Präp. _gefällt_ és +Dat. _helfe_ és +Dat.",
+      "byResponse": [
+        {
+          "match": { "1": "helfe" },
+          "message": "_Ich helfe dir **einen Kaffee**._ ❌ — _helfen_ és ==**+Dat sol**==, no accepta acusatiu. La forma correcta és _Ich ==**mache**== dir einen Kaffee_ (+Dat+Akk)."
+        },
+        {
+          "match": { "2": "kauft" },
+          "message": "_Die Jacke kauft **mir** nicht._ ❌ — _kaufen_ és +Akk, necessita una cosa comprada. Aquí el subjecte és _die Jacke_ i el complement és _mir_ (datiu): el verb ha de ser ==**passt**== (encaixar/anar bé a algú, +Dat)."
+        },
+        {
+          "match": { "3": "helfe" },
+          "message": "_Ich helfe **ein Buch**._ ❌ — _helfen_ regeix datiu, no acusatiu. Amb acusatiu _ein Buch_, el verb ha de ser ==**kaufe**== (+Akk)."
+        },
+        {
+          "match": { "4": "schenke" },
+          "message": "_Ich schenke in Barcelona._ ❌ — _schenken_ és +Dat+Akk, no preposicional. Amb _in Barcelona_ (locatiu) cal un verb +Präp: ==**wohne**==."
+        },
+        {
+          "match": { "5": "sieht" },
+          "message": "_Das Bild sieht mir sehr._ ❌ — no té sentit. Amb _mir_ com a datiu (l'afectat) i _das Bild_ com a subjecte, el verb és ==**gefällt**== (agradar, +Dat)."
+        },
+        {
+          "match": { "6": "sehe" },
+          "message": "_Ich sehe **meiner Mutter**._ ❌ — _sehen_ regeix acusatiu (_meine Mutter_). Amb datiu _meiner Mutter_, el verb ha de ser ==**helfe**== (+Dat)."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-38-ex-04",
+  "topicId": "A1b-38",
+  "title": "Pronom en acusatiu o datiu?",
+  "prompt": "Tria la forma del ==**pronom**== que exigeix el verb. Si el verb regeix **acusatiu**, tria _mich, dich, ihn, sie, uns, euch_. Si regeix **datiu**, tria _mir, dir, ihm, ihr, uns, euch_.",
+  "difficulty": 2,
+  "tags": ["pronoms", "acusatiu", "datiu", "produccio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich helfe_ {{1}} _._ (_du_)\n\n2. _Ich sehe_ {{2}} _._ (_du_)\n\n3. _Das Bild gefällt_ {{3}} _._ (_ich_)\n\n4. _Sie liebt_ {{4}} _._ (_er_)\n\n5. _Ich schenke_ {{5}} _eine Blume._ (_sie_, ella)\n\n6. _Ich höre_ {{6}} _nicht._ (_wir_)\n\n7. _Das Auto gehört_ {{7}} _._ (_er_)\n\n8. _Wir kochen_ {{8}} _eine Pizza._ (_ihr_)\n\n9. _Ich frage_ {{9}} _._ (_du_)\n\n10. _Der Schuh passt_ {{10}} _nicht._ (_ich_)",
+    "blanks": [
+      { "id": "1", "label": "1 · _helfen_ + _du_" },
+      { "id": "2", "label": "2 · _sehen_ + _du_" },
+      { "id": "3", "label": "3 · _gefallen_ + _ich_" },
+      { "id": "4", "label": "4 · _lieben_ + _er_" },
+      { "id": "5", "label": "5 · _schenken_ + _sie_ (destinatària)" },
+      { "id": "6", "label": "6 · _hören_ + _wir_" },
+      { "id": "7", "label": "7 · _gehören_ + _er_" },
+      { "id": "8", "label": "8 · _kochen_ + _ihr_ (destinataris)" },
+      { "id": "9", "label": "9 · _fragen_ + _du_" },
+      { "id": "10", "label": "10 · _passen_ + _ich_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["dich", "dir"] },
+      { "blankId": "2", "options": ["dich", "dir"] },
+      { "blankId": "3", "options": ["mich", "mir"] },
+      { "blankId": "4", "options": ["ihn", "ihm"] },
+      { "blankId": "5", "options": ["sie", "ihr"] },
+      { "blankId": "6", "options": ["uns", "wir"] },
+      { "blankId": "7", "options": ["ihn", "ihm"] },
+      { "blankId": "8", "options": ["euch", "ihr"] },
+      { "blankId": "9", "options": ["dich", "dir"] },
+      { "blankId": "10", "options": ["mich", "mir"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "dir",
+      "2": "dich",
+      "3": "mir",
+      "4": "ihn",
+      "5": "ihr",
+      "6": "uns",
+      "7": "ihm",
+      "8": "euch",
+      "9": "dich",
+      "10": "mir"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. ==Memoritza parelles verb-cas==. _helfen, gefallen, gehören, passen, schenken, kochen (per a algú)_ → **datiu**. _sehen, lieben, hören, fragen_ → **acusatiu**. No hi ha \"lògica semàntica\" transferible del català: són convencions del verb alemany.",
+      "references": ["A1b-38", "A1b-37"]
+    },
+    "incorrect": {
+      "default": "Repassa quin cas regeix cada verb. **+Dat:** _helfen, gefallen, gehören, passen, schmecken, schenken (destinatari), kochen (per a algú)_. **+Akk:** _sehen, hören (algú), lieben, fragen, kennen, verstehen_. Pronoms d'acusatiu: _mich, dich, ihn, sie, uns, euch_. Pronoms de datiu: _mir, dir, ihm, ihr, uns, euch_.",
+      "byResponse": [
+        {
+          "match": { "1": "dich" },
+          "message": "_helfen_ regeix ==**datiu**==: _Ich helfe ==dir==_ (no _~~dich~~_). Parany clàssic del catalanoparlant."
+        },
+        {
+          "match": { "3": "mich" },
+          "message": "_gefallen_ regeix ==**datiu**==: _Das Bild gefällt ==mir==_. El datiu és l'\"afectat\", el subjecte és la cosa que agrada."
+        },
+        {
+          "match": { "7": "ihn" },
+          "message": "_gehören_ regeix ==**datiu**==: _Das Auto gehört ==ihm==_ (a ell). _ihn_ és acusatiu."
+        },
+        {
+          "match": { "10": "mich" },
+          "message": "_passen_ regeix ==**datiu**==: _Der Schuh passt ==mir==_ (la sabata m'encaixa). Acusatiu _mich_ és incorrecte aquí."
+        },
+        {
+          "match": { "4": "ihm" },
+          "message": "_lieben_ regeix ==**acusatiu**==: _Sie liebt ==ihn==_ (_ihn_ = a ell, acusatiu). _ihm_ seria datiu."
+        },
+        {
+          "match": { "9": "dir" },
+          "message": "_fragen_ regeix ==**acusatiu**==: _Ich frage ==dich==_ (preguntar a algú = acusatiu en alemany, tot i que en català és indirecte)."
+        },
+        {
+          "match": { "5": "sie" },
+          "message": "_schenken_ és +Dat+Akk. _eine Blume_ ja és l'acusatiu; la destinatària va en ==**datiu**==: _ihr_ (no _sie_)."
+        },
+        {
+          "match": { "8": "ihr" },
+          "message": "_kochen_ aquí és +Dat+Akk (_eine Pizza_ = acusatiu). Els destinataris _ihr_ (vosaltres) van en ==**datiu**==: _euch_."
+        }
+      ]
+    }
+  }
+}

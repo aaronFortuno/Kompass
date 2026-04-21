@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-38-ex-07",
+  "topicId": "A1b-38",
+  "title": "Tradueix aplicant el patró de valència",
+  "prompt": "Tradueix del català. Recorda: **ajudar a algú** → _helfen_ +Dat (sense preposició!). **Agradar** → _gefallen_ +Dat (la cosa és subjecte). **Regalar/escriure a algú alguna cosa** → +Dat+Akk. **Viure a** → _wohnen in_ +Dat.",
+  "difficulty": 3,
+  "tags": ["traduccio", "produccio", "patrons", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. **Ajudo al meu germà.** → _Ich_ {{1}} _meinem Bruder._\n\n2. **Li regalo una flor a la Maria.** → _Ich schenke Maria_ {{2}} _._\n\n3. **Visc a Berlín.** → _Ich wohne_ {{3}} _._\n\n4. **Llegeixo un llibre.** → _Ich_ {{4}} _ein Buch._\n\n5. **M'agrada el quadre.** → _Das Bild gefällt_ {{5}} _._\n\n6. **Escric una carta al meu pare.** → _Ich schreibe_ {{6}} _einen Brief._",
+    "blanks": [
+      { "id": "1", "label": "1 · verb conjugat (1a persona) de _helfen_" },
+      { "id": "2", "label": "2 · acusatiu \"una flor\" (_eine Blume_)" },
+      { "id": "3", "label": "3 · \"a Berlín\" (preposició + ciutat)" },
+      { "id": "4", "label": "4 · verb conjugat (1a persona) de _lesen_" },
+      { "id": "5", "label": "5 · pronom datiu 1a persona (_a mi_)" },
+      { "id": "6", "label": "6 · datiu \"al meu pare\" (_mein Vater_)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "verb conjugat" },
+      { "blankId": "2", "placeholder": "article + substantiu (Akk)" },
+      { "blankId": "3", "placeholder": "prep. + ciutat" },
+      { "blankId": "4", "placeholder": "verb conjugat" },
+      { "blankId": "5", "placeholder": "pronom datiu" },
+      { "blankId": "6", "placeholder": "article + substantiu (Dat)" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["helfe"],
+      "2": ["eine Blume"],
+      "3": ["in Berlin"],
+      "4": ["lese"],
+      "5": ["mir"],
+      "6": ["meinem Vater"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Observa el contrast 4 vs 5: en català _llegeixo un llibre_ i _m'agrada el quadre_ semblen la mateixa estructura, però en alemany són ==dos patrons diferents==. _Lesen_ és **+Akk** (_ein Buch_ és complement); _gefallen_ és **+Dat** (_das Bild_ és subjecte, _mir_ és l'afectat).",
+      "references": ["A1b-38", "A1b-37"]
+    },
+    "incorrect": {
+      "default": "Patrons clau: (1) _helfen_ +Dat directe, sense preposició. (2) _schenken_ +Dat+Akk: el destinatari en datiu (_Maria_, sense article de persona), la cosa en acusatiu (_eine Blume_, femení acusatiu = femení nominatiu). (3) _wohnen in_ +Dat: _in Berlin_ (nom de ciutat no es declina). (4) _gefallen_ +Dat: l'afectat és _mir_. (5) _schreiben_ +Dat+Akk: _meinem Vater_ (masc. datiu = _-em_).",
+      "byResponse": [
+        {
+          "match": { "2": "einer Blume" },
+          "message": "_eine Blume_ és ==**acusatiu**== (femení = nominatiu). _einer Blume_ és datiu. _schenken_ regeix Dat+Akk: el destinatari (Maria) és Dat, la cosa regalada (_eine Blume_) és ==**acusatiu**==."
+        },
+        {
+          "match": { "3": "nach Berlin" },
+          "message": "_wohnen_ regeix ==**_in_ + Dat**== (estar en un lloc), no _nach_ (anar cap a). _nach Berlin_ serviria amb _fahren, gehen, fliegen_, no amb _wohnen_."
+        },
+        {
+          "match": { "5": "mich" },
+          "message": "_gefallen_ és ==**+Dat**==, no +Akk. L'afectat és _==mir==_ (datiu), no _mich_ (acusatiu). Parany clàssic del catalanoparlant."
+        },
+        {
+          "match": { "6": "meinen Vater" },
+          "message": "_meinen Vater_ és acusatiu. Aquí _schreiben_ és +Dat+Akk i el destinatari (pare) va en ==**datiu**==: _==meinem Vater==_. _einen Brief_ ja és l'acusatiu."
+        },
+        {
+          "match": { "1": "hilfe" },
+          "message": "La 1a persona de _helfen_ és _==**helfe**==_ (arrel _helf-_ + _-e_). _hilfe_ (amb _i_) només apareix a 2a i 3a persona sing.: _du hilfst, er hilft_."
+        }
+      ]
+    }
+  }
+}

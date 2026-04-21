@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-38",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 38,
+  "title": "Verben und Ergänzungen",
+  "shortTitle": "Verbs + compl.",
+  "description": "Cada verb alemany té una valència pròpia: dicta quants complements demana i en quin cas van. Obre el minibloc 38-41 sobre verbs i casos.",
+  "axes": ["pronoms-verbs", "casos"],
+  "prerequisites": ["A1a-27", "A1a-28", "A1b-6", "A1b-17", "A1b-36", "A1b-37"],
+  "estimatedMinutes": 25,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Què és una _Ergänzung_?\n\n==Ergänzung== vol dir literalment \"complement\" o \"allò que completa\". En gramàtica alemanya designa els elements que el verb **necessita** per formar una frase sencera, més enllà del subjecte. En una frase com _Ich kaufe ein Buch_ hi ha un subjecte (_ich_), un verb (_kaufen_) i un complement (_ein Buch_). La majoria dels verbs necessiten complements: de vegades un, de vegades diversos.\n\nLa idea central és aquesta:\n\n> ==És el verb qui determina com són els complements.== No triem el cas del complement \"pel sentit de la frase\"; el cas el ==dicta el verb==.\n\nAixò és una diferència important respecte del català, on normalment **la preposició** marca la funció (_penso **en** tu_, _escric **a** la Maria_). En alemany, moltes funcions es marquen ==amb el cas directament==, sense preposició, i és el verb qui decideix quin."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Analogia útil",
+          "body": "Pensa en el verb com si fos una ==enxufadora== amb un nombre i un tipus d'entrades fixes. _Leben_ té zero entrades obligatòries: _Ich lebe_ ja és frase completa. _Kaufen_ té una entrada d'acusatiu: cal dir què compres. _Schenken_ té dues entrades: acusatiu (el regal) i datiu (el destinatari). No pots endollar un cable de datiu a una entrada d'acusatiu: no funcionarà."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Enfoc d'aquesta lliçó",
+          "body": "Fins ara has après casos (**nominatiu, acusatiu, datiu, genitiu**) i declinacions (articles, adjectius, pronoms). Aquesta lliçó respon a la pregunta que ho connecta tot: ==qui decideix quin cas fa servir cada complement?== La resposta és ==el verb==. No introduïm paradigmes nous: introduïm ==la lògica== que governa els que ja tens. És la primera lliçó d'un minibloc de quatre (38→39→40→41) que sistematitza el tema."
+        }
+      ]
+    },
+    {
+      "id": "quantes-ergaenzungen",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Quants complements demana un verb?\n\nUn verb alemany pot tenir **zero, un o diversos** complements. Aquesta és la primera classificació:\n\n**==Sense complement== (_keine Ergänzung_)** — alguns verbs són autosuficients:\n\n- _==Ich lebe.==_ — Visc. (el verb sol ja fa frase)\n- _==Ich lese.==_ — Llegeixo. (sense especificar què)\n- _==Ich schlafe.==_ — Dormo.\n- _==Es regnet.==_ — Plou.\n\n**==Amb un complement== (_eine Ergänzung_)** — la majoria dels verbs:\n\n- _Ich lebe ==in Köln==._ — Visc a Colònia. (complement preposicional)\n- _Ich lese ==ein Buch==._ — Llegeixo un llibre. (acusatiu)\n- _Ich kaufe ==ein Buch==._ — Compro un llibre. (acusatiu)\n- _Die Suppe schmeckt ==mir==._ — La sopa em plau. (datiu)\n\n**==Amb dos complements== (_zwei Ergänzungen_)** — verbs més complexos:\n\n- _Ich lebe ==mit meiner Familie== ==in einem Haus==._ — Visc amb la meva família en una casa.\n- _Ich schenke ==dir== ==ein Buch==._ — Et regalo un llibre. (datiu + acusatiu)"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista de diccionari",
+          "body": "Quan consultis un diccionari seriós (DWDS, Duden, PONS), cada verb porta especificada la seva valència amb abreviatures: _jdn_ (_jemanden_ = acusatiu), _jdm_ (_jemandem_ = datiu), _etw_ (_etwas_ = cosa), _auf +Akk_, _mit +Dat_, etc. Aquestes marques són la descripció formal d'allò que aquí anomenem \"Ergänzungen\"."
+        }
+      ]
+    },
+    {
+      "id": "cinc-patrons",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Els cinc patrons bàsics de valència\n\nAquesta taula és la ==columna vertebral== del bloc 38-41:"
+        },
+        {
+          "type": "table",
+          "title": "38.1 Els cinc patrons de valència",
+          "headers": ["Patró", "Què demana el verb", "Exemples típics", "Quina lliçó l'aprofundeix"],
+          "rows": [
+            ["**Nominatiu sol**", "cap complement més enllà del subjecte", "_sein, werden, bleiben_", "(ja el coneixes)"],
+            ["==**+ Akkusativ**==", "un complement en acusatiu", "_haben, hören, lesen, lieben, mögen, lernen, studieren, kaufen, schreiben, kochen…_", "A1b-39"],
+            ["==**+ Dativ**==", "un complement en datiu", "_helfen, fehlen, zuhören, gehören, gefallen, schmecken, passen, Leid tun, weh tun…_", "A1b-40, A1b-41"],
+            ["==**+ Dativ + Akkusativ**==", "dos complements: un en datiu i un en acusatiu", "_schenken, zeigen, bringen, empfehlen, kaufen, schreiben, kochen…_", "A1b-39"],
+            ["==**+ Präposition**==", "un complement preposicional obligatori", "_arbeiten (bei), wohnen (in), gehen (zu/nach), fahren (nach), kommen (aus)…_", "A1b-1, A1b-19, A1b-20"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "A més, hi ha combinacions més complexes que pertanyen al 2n curs (A2):\n\n- **+ Akkusativ + Präposition** — _antworten auf etwas, fragen nach etwas…_\n- **+ Dativ + Präposition** — _sprechen mit jdm über etwas…_"
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "No t'amoïnis amb aquestes últimes combinacions ara",
+          "body": "Són la previsió que justifica per què el sistema d'A1b tanca amb 38-41: posar les bases perquè a A2 puguis afegir-hi més patrons sense confondre't."
+        }
+      ]
+    },
+    {
+      "id": "subjecte-no-es-ergaenzung",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Una precisió important: el subjecte no és una _Ergänzung_\n\nSi mires bé la classificació, hi ha un detall subtil: ==el subjecte (nominatiu) no es compta com a complement==. El subjecte és obligatori a gairebé totes les frases alemanyes (regla de la posició V2, A1b-30), però no forma part del \"règim\" del verb en el sentit estret.\n\nQuan diem \"verb sense complement\" volem dir ==sense complement més enllà del subjecte==. El verb _leben_ demana només un subjecte, i prou. El verb _kaufen_ demana subjecte **+ un acusatiu**. El verb _schenken_ demana subjecte **+ acusatiu + datiu**."
+        },
+        {
+          "type": "table",
+          "title": "38.2 Subjecte i Ergänzungen addicionals",
+          "headers": ["Verb", "Subjecte (sempre)", "Ergänzungen addicionals"],
+          "rows": [
+            ["_leben_", "_ich_", "cap"],
+            ["_lesen_", "_ich_", "acusatiu (opcional: _ein Buch_)"],
+            ["_kaufen_", "_ich_", "acusatiu obligatori (_ein Buch_)"],
+            ["_helfen_", "_ich_", "datiu (_dir_)"],
+            ["_schenken_", "_ich_", "datiu + acusatiu (_dir ein Buch_)"],
+            ["_wohnen_", "_ich_", "preposició locativa (_in Berlin_)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Excepció menor: frases impersonals",
+          "body": "Hi ha un grapat de frases alemanyes **sense subjecte explícit**: ==frases impersonals== com _==Mir== ist kalt_ (\"tinc fred\", lit. \"a mi és fred\") o _==Mich== friert_ (\"em glaço\"). Aquí el datiu o l'acusatiu fa la feina del subjecte psicològic, però gramaticalment el subjecte és un _es_ implícit. Les trobaràs sobretot amb verbs de sensacions. De moment, reconeix el patró; no cal que el produeixis."
+        }
+      ]
+    },
+    {
+      "id": "check-1-quantes",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-38-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "flexibilitat",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Un verb, diverses valències possibles\n\nAlguns verbs ==poden encaixar en més d'una categoria==. Els exemples clàssics són _kaufen_, _schreiben_, _kochen_.\n\nExemple amb _kaufen_:\n\n- _Ich kaufe ==ein Buch==._ (Akk) — Compro un llibre. **Patró: +Akk**\n- _Ich kaufe ==meiner Schwester== ==ein Buch==._ (Dat + Akk) — Li compro un llibre a la meva germana. **Patró: +Dat +Akk**\n\nEl mateix verb, dues valències. La segona amplia la primera afegint un ==destinatari== en datiu. Això passa amb molts verbs de **transferència** (donar, enviar, portar, regalar, mostrar, recomanar, escriure, cuinar, comprar, preparar…): gairebé tots admeten **+Akk** sol o **+Dat +Akk**.\n\nAltres exemples de la mateixa dualitat:\n\n- _Ich schreibe ==einen Brief==._ → _Ich schreibe ==meinem Vater== ==einen Brief==._\n- _Ich koche ==eine Suppe==._ → _Ich koche ==dir== ==eine Suppe==._\n- _Ich zeige ==ein Foto==._ → _Ich zeige ==dir== ==ein Foto==._"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Conseqüència pràctica",
+          "body": "Quan aprenguis un verb nou, no te'n basti amb saber què vol dir: apunta quins ==complements== demana. Un bon diccionari et dirà si és _etw. + jdm._ (acusatiu + datiu), _jdm._ (només datiu), _jdn._ (només acusatiu), etc. Aquesta informació és ==tan important com el significat=="
+        }
+      ]
+    },
+    {
+      "id": "check-2-match",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-38-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "contrast-catala",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Per què costa als catalanoparlants\n\nEn català, les funcions sintàctiques es marquen amb ==preposicions== o amb la ==posició== a la frase:\n\n- _Llegeixo un llibre._ (OD sense preposició, reconegut per la posició)\n- _Ajudo **a la** Maria._ (OI amb _a_)\n- _Penso **en** tu._ (complement preposicional amb _en_)\n\nEn alemany, moltes d'aquestes funcions es marquen **sense preposició**, directament amb el **cas** del substantiu/pronom:\n\n- _Ich lese ==ein Buch==._ (acusatiu, sense preposició)\n- _Ich helfe ==Maria==._ (datiu, sense preposició)\n- _Ich denke ==an dich==._ (preposició _an_ + acusatiu)\n\n**Els tres paranys típics:**\n\n**1. \"Traduir preposicions\" en lloc d'aprendre valències.** El calc _~~Ich helfe zu Maria~~_ (per \"_ajudo a la Maria_\") és error garantit. _Helfen_ demana ==datiu directe==, sense preposició.\n\n**2. Confondre acusatiu i datiu en verbs de \"donar\".** En català dius _Et dono el llibre_, amb dos clítics (_et_ = OI, _el_ = OD). En alemany és _==Ich gebe dir (Dat) das Buch (Akk).==_ L'ordre típic al Mittelfeld és ==datiu abans d'acusatiu== quan tots dos són substantius/pronoms sense èmfasi.\n\n**3. Oblidar que alguns verbs exigeixen preposició per valència, no per sentit lliure.** _Warten_ (esperar) no és _~~Ich warte dich~~_ ni _~~Ich warte dir~~_: és _==Ich warte auf dich.==_ La preposició _auf_ és ==part del verb==, com si fos _warten-auf_."
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Regla mnemotècnica",
+          "body": "Quan aprenguis un verb, ==memoritza el verb i la seva valència com a unitat==. No _helfen_, sinó _helfen ==+Dat==_. No _warten_, sinó _warten ==auf== +Akk_. No _fragen_, sinó _fragen ==+Akk== nach +Dat_. Aquesta disciplina ara t'estalvia centenars d'errors futurs."
+        }
+      ]
+    },
+    {
+      "id": "lectura-taula-nom-akk",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Com llegir la taula, verb per verb (I)\n\n**==Verben mit Nominativ==** (només nominatiu; són verbs copulatius o de transformació). El \"complement\" aquí és un ==atribut==, que també va en nominatiu (concorda amb el subjecte)."
+        },
+        {
+          "type": "table",
+          "title": "38.3 Verbs amb atribut en nominatiu",
+          "headers": ["Verb", "Traducció", "Frase model"],
+          "rows": [
+            ["_sein_", "ser/estar", "_Ich ==bin== müde._ (atribut)"],
+            ["_werden_", "fer-se/esdevenir", "_Er ==wird== Lehrer._ (atribut)"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**==Verben mit Akkusativ==** (un complement directe en acusatiu) — el grup més nombrós:"
+        },
+        {
+          "type": "table",
+          "title": "38.4 Verbs amb acusatiu",
+          "headers": ["Verb", "Traducció", "Frase model"],
+          "rows": [
+            ["_haben_", "tenir", "_Ich habe ==einen Bruder==._"],
+            ["_hören_", "sentir/escoltar", "_Ich höre ==Musik==._"],
+            ["_lesen_", "llegir", "_Ich lese ==ein Buch==._"],
+            ["_lieben_", "estimar", "_Ich liebe ==dich==._"],
+            ["_mögen_", "agradar (simpatia)", "_Ich mag ==Kaffee==._"],
+            ["_lernen_", "aprendre", "_Ich lerne ==Deutsch==._"],
+            ["_studieren_", "estudiar (universitat)", "_Ich studiere ==Medizin==._"],
+            ["_kaufen_", "comprar", "_Ich kaufe ==ein Buch==._"],
+            ["_schreiben_", "escriure", "_Ich schreibe ==einen Brief==._"],
+            ["_kochen_", "cuinar", "_Ich koche ==eine Suppe==._"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "check-3-cas",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-38-ex-03", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "lectura-taula-dat",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Com llegir la taula, verb per verb (II)\n\n**==Verben mit Dativ==** (un complement en datiu; el \"destinatari psicològic\" o \"l'afectat\"):"
+        },
+        {
+          "type": "table",
+          "title": "38.5 Verbs amb datiu",
+          "headers": ["Verb", "Traducció", "Frase model"],
+          "rows": [
+            ["_helfen_", "ajudar", "_Ich helfe ==dir==._"],
+            ["_fehlen_", "faltar/trobar a faltar", "_Du fehlst ==mir==._"],
+            ["_zuhören_", "escoltar (atentament)", "_Ich höre ==dir== zu._"],
+            ["_gehören_", "pertànyer", "_Das Buch gehört ==mir==._"],
+            ["_gefallen_", "agradar (estèticament)", "_Das Bild gefällt ==mir==._"],
+            ["_schmecken_", "tenir bon gust", "_Die Suppe schmeckt ==mir==._"],
+            ["_passen_", "encaixar/anar bé", "_Der Termin passt ==mir==._"],
+            ["_Leid tun_", "saber greu", "_Es tut ==mir== Leid._"],
+            ["_weh tun_", "fer mal", "_Der Kopf tut ==mir== weh._"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Atenció: inversió mental respecte del català",
+          "body": "En aquests verbs, ==el subjecte sovint no és la persona==, sinó la cosa: _El llibre em pertany_ (subjecte: _das Buch_; datiu: _mir_). La traducció al català sovint inverteix: \"a mi em pertany el llibre\". Aquesta inversió mental és clau per entendre _gefallen, schmecken, fehlen, passen, weh tun_."
+        },
+        {
+          "type": "explanation",
+          "body": "**==Verben mit Dativ und Akkusativ==** (verbs de transferència). ==Datiu = destinatari; acusatiu = cosa transferida.== La intuïció catalana sol funcionar bé aquí: qui rep la cosa → datiu; què reps → acusatiu."
+        },
+        {
+          "type": "table",
+          "title": "38.6 Verbs amb datiu + acusatiu",
+          "headers": ["Verb", "Traducció", "Frase model"],
+          "rows": [
+            ["_schenken_", "regalar", "_Ich schenke ==dir== ==ein Buch==._"],
+            ["_zeigen_", "mostrar", "_Ich zeige ==dir== ==das Foto==._"],
+            ["_bringen_", "portar", "_Ich bringe ==dir== ==den Kaffee==._"],
+            ["_empfehlen_", "recomanar", "_Ich empfehle ==dir== ==diesen Film==._"],
+            ["_kaufen_", "comprar (per a algú)", "_Ich kaufe ==meiner Schwester== ==ein Buch==._"],
+            ["_schreiben_", "escriure (a algú)", "_Ich schreibe ==dir== ==einen Brief==._"],
+            ["_kochen_", "cuinar (per a algú)", "_Ich koche ==dir== ==eine Suppe==._"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "check-4-pronom",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-38-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "lectura-taula-praep",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Com llegir la taula, verb per verb (III)\n\n**==Verben mit Präposition==** (la preposició és obligatòria i lexicalitzada):"
+        },
+        {
+          "type": "table",
+          "title": "38.7 Verbs amb preposició fixa",
+          "headers": ["Verb", "Preposició + cas", "Frase model"],
+          "rows": [
+            ["_arbeiten_", "_bei_ + Dat / _als_ + nom.", "_Ich arbeite ==bei Siemens== / ==als Lehrer==._"],
+            ["_wohnen_", "_in_ + Dat", "_Ich wohne ==in Berlin==._"],
+            ["_gehen_", "_zu_ + Dat / _nach_", "_Ich gehe ==zum Arzt== / ==nach Hause==._"],
+            ["_fahren_", "_nach/zu/in_", "_Ich fahre ==nach Italien==._"],
+            ["_kommen_", "_aus_ + Dat", "_Ich komme ==aus Katalonien==._"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "La bona notícia",
+          "body": "La categoria \"preposicional\" és heterogènia: unes preposicions regeixen datiu (_bei, aus, zu, mit, von_), d'altres acusatiu (_für, gegen, ohne_), i d'altres ambdós (A1b-19, A1b-20). ==La bona notícia==: la tria de **quina preposició** la dicta el verb; la tria de **quin cas** la dicta la preposició. Aprèn el parell _verb + preposició_ com a unitat."
+        }
+      ]
+    },
+    {
+      "id": "check-5-completesa",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-38-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-6-context",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-38-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-7-traduccio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-38-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-8-ordre",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-38-ex-08", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "full-ruta",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Full de ruta per les pròximes tres lliçons\n\nAra que tens el mapa de valència, aquí tens on anirà cada peça:"
+        },
+        {
+          "type": "table",
+          "title": "38.8 Què ve després",
+          "headers": ["Lliçó", "Títol", "Què hi treballaràs"],
+          "rows": [
+            ["**A1b-39**", "_Verben mit Akkusativ- und Dativergänzung_", "contrast operatiu: quins verbs són +Akk, quins +Dat, i quins admeten les dues combinacions (+Akk sol, +Dat +Akk). Pràctica de reconeixement i producció."],
+            ["**A1b-40**", "_Verben mit Dativergänzung_", "aprofundiment en els verbs que regeixen datiu **sol**, sovint poc intuïtius (_helfen, gefallen, schmecken, fehlen…_). Contrast sistemàtic amb el català."],
+            ["**A1b-41**", "_Gebrauch des Dativs_", "síntesi global del datiu: amb verbs, amb preposicions (A1b-20), amb possessió (\"el datiu de possessió\"), en expressions fixes. És la lliçó que tanca el bloc."]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Una cosa a la vegada",
+          "body": "Aquesta lliçó (38) estableix ==el marc conceptual==. Les tres següents ompliran caselles concretes. Si en algun moment dubtes, torna a la taula dels cinc patrons."
+        }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi\n\n**La idea d'aquesta lliçó, en una frase:**\n\n> ==Cada verb alemany dicta quins complements (Ergänzungen) necessita i en quin cas van.=="
+        },
+        {
+          "type": "table",
+          "title": "38.9 Els cinc patrons fonamentals · resum",
+          "headers": ["Patró", "Exemple canònic"],
+          "rows": [
+            ["**Sense Ergänzung**", "_Ich schlafe._"],
+            ["==**+ Akkusativ**==", "_Ich lese ==ein Buch==._"],
+            ["==**+ Dativ**==", "_Ich helfe ==dir==._"],
+            ["==**+ Dativ + Akkusativ**==", "_Ich schenke ==dir ein Buch==._"],
+            ["==**+ Präposition**==", "_Ich wohne ==in Berlin==._"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "38.10 Les quatre regles d'or",
+          "headers": ["Regla", "Contingut"],
+          "rows": [
+            ["**1. Verb + valència = unitat**", "Aprèn cada verb amb la seva valència com a unitat: no _helfen_, sinó _helfen +Dat_; no _warten_, sinó _warten auf +Akk_."],
+            ["**2. El cas el dicta el verb**", "No la \"lògica\" de la frase. _Lesen_ → acusatiu. _Helfen_ → datiu. Sense excepció."],
+            ["**3. El subjecte no és Ergänzung**", "Un verb \"sense complement\" en demana **un subjecte** i prou."],
+            ["**4. La preposició és part del verb**", "Quan el verb la regeix lexicalitzada (_warten auf, denken an, sprechen mit_). Memoritza el tàndem."]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Enllaços amb el que ja saps:**\n\n- **A1a-27** — **Acusatiu amb _haben_.** El primer cas de +Akk que vas veure.\n- **A1b-6** — **_gefallen, finden, mögen, möchten_.** Primers verbs de +Dat en acció.\n- **A1b-17** — **Genitiu.** L'altre cas, menys usat però present.\n- **A1b-36** — **Declinació de l'article.** Les formes que reomplen les caselles d'_Ergänzung_.\n- **A1b-37** — **Pronoms personals declinats.** _mir/dir/ihn/ihr_ són la cara visible dels casos."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista pràctica final",
+          "body": "Quan llegeixis un text alemany i t'aturi un cas que no saps explicar, pregunta't sempre primer: ==qui és el verb?== i ==quina és la seva valència?== La resposta quasi sempre viu allà. L'alemany no posa casos \"perquè sí\": cada cas obeeix un verb o una preposició. Aquest principi et portarà fins a B2 sense fallar."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Curiositat útil",
+          "body": "Els diccionaris alemanys seriosos (DWDS, Duden) porten la valència de cada verb al principi de l'entrada. Val la pena acostumar-se a llegir aquesta informació: ==jdm. etw. schenken== (datiu + acusatiu), ==jdm. helfen== (datiu), ==auf jdn./etw. warten== (preposició _auf_ + acusatiu). Aquestes marques són ==el DNI gramatical== de cada verb."
+        }
+      ]
+    }
+  ]
+}

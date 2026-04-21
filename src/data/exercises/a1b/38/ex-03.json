@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-38-ex-03",
+  "topicId": "A1b-38",
+  "title": "Identifica el cas del complement",
+  "prompt": "Per a cada complement ==**en negreta**==, tria el cas: **Nominatiu**, **Acusatiu** o **Datiu**.",
+  "difficulty": 2,
+  "tags": ["casos", "identificacio", "nominatiu", "acusatiu", "datiu"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich kaufe **einen Apfel**._ → {{1}}\n\n2. _Ich helfe **meinem Vater**._ → {{2}}\n\n3. _**Das Buch** gefällt mir._ → {{3}}\n\n4. _Ich schreibe **dir** einen Brief._ → {{4}}\n\n5. _Ich schreibe dir **einen Brief**._ → {{5}}\n\n6. _Die Suppe schmeckt **mir**._ → {{6}}\n\n7. _Ich bin **Lehrer**._ → {{7}}\n\n8. _Ich zeige **meiner Schwester** das Foto._ → {{8}}\n\n9. _Ich liebe **dich**._ → {{9}}\n\n10. _Das Buch gehört **dem Kind**._ → {{10}}",
+    "blanks": [
+      { "id": "1", "label": "1 · _einen Apfel_" },
+      { "id": "2", "label": "2 · _meinem Vater_" },
+      { "id": "3", "label": "3 · _Das Buch_" },
+      { "id": "4", "label": "4 · _dir_" },
+      { "id": "5", "label": "5 · _einen Brief_" },
+      { "id": "6", "label": "6 · _mir_" },
+      { "id": "7", "label": "7 · _Lehrer_" },
+      { "id": "8", "label": "8 · _meiner Schwester_" },
+      { "id": "9", "label": "9 · _dich_" },
+      { "id": "10", "label": "10 · _dem Kind_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Nominatiu", "Acusatiu", "Datiu"] },
+      { "blankId": "2", "options": ["Nominatiu", "Acusatiu", "Datiu"] },
+      { "blankId": "3", "options": ["Nominatiu", "Acusatiu", "Datiu"] },
+      { "blankId": "4", "options": ["Nominatiu", "Acusatiu", "Datiu"] },
+      { "blankId": "5", "options": ["Nominatiu", "Acusatiu", "Datiu"] },
+      { "blankId": "6", "options": ["Nominatiu", "Acusatiu", "Datiu"] },
+      { "blankId": "7", "options": ["Nominatiu", "Acusatiu", "Datiu"] },
+      { "blankId": "8", "options": ["Nominatiu", "Acusatiu", "Datiu"] },
+      { "blankId": "9", "options": ["Nominatiu", "Acusatiu", "Datiu"] },
+      { "blankId": "10", "options": ["Nominatiu", "Acusatiu", "Datiu"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Acusatiu",
+      "2": "Datiu",
+      "3": "Nominatiu",
+      "4": "Datiu",
+      "5": "Acusatiu",
+      "6": "Datiu",
+      "7": "Nominatiu",
+      "8": "Datiu",
+      "9": "Acusatiu",
+      "10": "Datiu"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Regla visual: mira ==la forma del determinant== o del pronom. _einen/den/ihn_ → **acusatiu**. _einem/dem/ihm/mir/dir_ → **datiu**. Si el complement és qui fa l'acció, és **nominatiu** (cas de _das Buch_ amb _gefallen_).",
+      "references": ["A1b-38", "A1b-36", "A1b-37"]
+    },
+    "incorrect": {
+      "default": "Tres pistes: (1) _einen, den, ihn, dich, mich_ → **acusatiu**. (2) _einem, dem, ihm, ihr, mir, dir_ → **datiu**. (3) Si el complement és el ==subjecte psicològic== (qui fa l'acció), és **nominatiu**, com _das Buch_ amb _gefallen_ o _Lehrer_ com a atribut amb _sein_.",
+      "byResponse": [
+        {
+          "match": { "3": "Acusatiu" },
+          "message": "_**Das Buch** gefällt mir._ — _das Buch_ no és complement; és el ==**subjecte**== (qui agrada). _Mir_ és el datiu. Resposta: ==**Nominatiu**==."
+        },
+        {
+          "match": { "3": "Datiu" },
+          "message": "_**Das Buch** gefällt mir._ — _das Buch_ és qui agrada (el subjecte), no el destinatari. Resposta: ==**Nominatiu**==. _Mir_ és el datiu."
+        },
+        {
+          "match": { "7": "Acusatiu" },
+          "message": "_Ich bin **Lehrer**._ — després de _sein_, l'atribut va en ==**nominatiu**== (no acusatiu). _Lehrer_ concorda amb _ich_."
+        },
+        {
+          "match": { "2": "Acusatiu" },
+          "message": "_helfen_ regeix ==**datiu**==: _meinem Vater_ (_meinem_ és datiu masculí, no acusatiu). Acusatiu seria _meinen Vater_."
+        },
+        {
+          "match": { "10": "Acusatiu" },
+          "message": "_gehören_ demana ==**datiu**==: _dem Kind_ (no _das Kind_). _Dem_ és la marca del datiu neutre."
+        },
+        {
+          "match": { "8": "Acusatiu" },
+          "message": "_meiner Schwester_ és ==**datiu**== femení (meiner / der / einer). Acusatiu femení seria _meine Schwester_."
+        }
+      ]
+    }
+  }
+}

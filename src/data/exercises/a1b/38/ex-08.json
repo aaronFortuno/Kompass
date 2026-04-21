@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-38-ex-08",
+  "topicId": "A1b-38",
+  "title": "Ordre al Mittelfeld: Dativ → Akkusativ",
+  "prompt": "Ordena les peces per formar una frase correcta. Regla d'or: quan hi ha **datiu + acusatiu** (tots dos substantius), l'ordre és ==**datiu abans que acusatiu**==. Escriu la frase completa amb majúscula inicial i punt final.",
+  "difficulty": 3,
+  "tags": ["mittelfeld", "ordre", "dat-akk", "produccio", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _schenke / ich / meinem Bruder / ein Buch_ → {{1}}\n\n2. _zeigt / sie / dem Gast / das Haus_ → {{2}}\n\n3. _kaufe / ich / meiner Mutter / Blumen_ → {{3}}\n\n4. _bringt / der Kellner / uns / die Speisekarte_ → {{4}}\n\n5. _empfehle / ich / meinem Freund / diesen Film_ → {{5}}",
+    "blanks": [
+      { "id": "1", "label": "1 · amb _schenken_" },
+      { "id": "2", "label": "2 · amb _zeigen_" },
+      { "id": "3", "label": "3 · amb _kaufen_ (+Dat+Akk)" },
+      { "id": "4", "label": "4 · amb _bringen_" },
+      { "id": "5", "label": "5 · amb _empfehlen_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Ich schenke …" },
+      { "blankId": "2", "placeholder": "Sie zeigt …" },
+      { "blankId": "3", "placeholder": "Ich kaufe …" },
+      { "blankId": "4", "placeholder": "Der Kellner bringt …" },
+      { "blankId": "5", "placeholder": "Ich empfehle …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Ich schenke meinem Bruder ein Buch."],
+      "2": ["Sie zeigt dem Gast das Haus."],
+      "3": ["Ich kaufe meiner Mutter Blumen."],
+      "4": ["Der Kellner bringt uns die Speisekarte."],
+      "5": ["Ich empfehle meinem Freund diesen Film."]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Ordre bàsic al Mittelfeld amb dos complements de tipus diferent: ==**Datiu → Akkusativ**==. L'excepció la veuràs més endavant: quan l'==acusatiu és un pronom== (_ihn, es, sie_), passa davant del datiu. Ho aprofundiràs a A1b-40.",
+      "references": ["A1b-38", "A1b-40"]
+    },
+    "incorrect": {
+      "default": "Dues pistes: (1) ==verb en 2a posició== sempre (regla V2). (2) Dins del Mittelfeld, amb Dat + Akk substantius: ==**primer datiu, després acusatiu**==. Exemples: _Ich schenke **meinem Bruder** (Dat) **ein Buch** (Akk)._ _Der Kellner bringt **uns** (Dat) **die Speisekarte** (Akk)._ No oblidis la majúscula inicial ni el punt final.",
+      "byResponse": [
+        {
+          "match": { "1": "Ich schenke ein Buch meinem Bruder." },
+          "message": "Ordre invertit. Amb substantius, ==**datiu primer**==: _Ich schenke ==**meinem Bruder**== ==**ein Buch**==._ (Dat → Akk)."
+        },
+        {
+          "match": { "2": "Sie zeigt das Haus dem Gast." },
+          "message": "Ordre invertit. _Sie zeigt ==**dem Gast**== (Dat) ==**das Haus**== (Akk)._ Datiu abans d'acusatiu."
+        },
+        {
+          "match": { "3": "Ich kaufe Blumen meiner Mutter." },
+          "message": "Ordre invertit. _Ich kaufe ==**meiner Mutter**== (Dat) ==**Blumen**== (Akk)._ Tot i que _Blumen_ no porta article, el patró Dat→Akk es manté."
+        },
+        {
+          "match": { "4": "Der Kellner bringt die Speisekarte uns." },
+          "message": "Ordre invertit. _Der Kellner bringt ==**uns**== (Dat pron.) ==**die Speisekarte**== (Akk)._ Els pronoms de datiu també van abans de l'acusatiu substantiu."
+        },
+        {
+          "match": { "5": "Ich empfehle diesen Film meinem Freund." },
+          "message": "Ordre invertit. _Ich empfehle ==**meinem Freund**== (Dat) ==**diesen Film**== (Akk)._ Datiu abans d'acusatiu."
+        }
+      ]
+    }
+  }
+}

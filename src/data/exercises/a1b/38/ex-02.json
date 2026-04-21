@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-38-ex-02",
+  "topicId": "A1b-38",
+  "title": "Verb ↔ patró de valència",
+  "prompt": "Per a cada verb, tria el ==**patró de valència**== principal. Els patrons són: **+Akk**, **+Dat**, **+Dat+Akk**, **+Präp** (preposició obligatòria).",
+  "difficulty": 2,
+  "tags": ["valencia", "patrons", "classificacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _**lesen**_ → {{1}}\n\n2. _**helfen**_ → {{2}}\n\n3. _**schenken**_ → {{3}}\n\n4. _**wohnen**_ (_in_) → {{4}}\n\n5. _**gefallen**_ → {{5}}\n\n6. _**zeigen**_ → {{6}}\n\n7. _**kommen**_ (_aus_) → {{7}}\n\n8. _**bringen**_ → {{8}}",
+    "blanks": [
+      { "id": "1", "label": "_lesen_" },
+      { "id": "2", "label": "_helfen_" },
+      { "id": "3", "label": "_schenken_" },
+      { "id": "4", "label": "_wohnen_" },
+      { "id": "5", "label": "_gefallen_" },
+      { "id": "6", "label": "_zeigen_" },
+      { "id": "7", "label": "_kommen_" },
+      { "id": "8", "label": "_bringen_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["+Akk", "+Dat", "+Dat+Akk", "+Präp"] },
+      { "blankId": "2", "options": ["+Akk", "+Dat", "+Dat+Akk", "+Präp"] },
+      { "blankId": "3", "options": ["+Akk", "+Dat", "+Dat+Akk", "+Präp"] },
+      { "blankId": "4", "options": ["+Akk", "+Dat", "+Dat+Akk", "+Präp"] },
+      { "blankId": "5", "options": ["+Akk", "+Dat", "+Dat+Akk", "+Präp"] },
+      { "blankId": "6", "options": ["+Akk", "+Dat", "+Dat+Akk", "+Präp"] },
+      { "blankId": "7", "options": ["+Akk", "+Dat", "+Dat+Akk", "+Präp"] },
+      { "blankId": "8", "options": ["+Akk", "+Dat", "+Dat+Akk", "+Präp"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "+Akk",
+      "2": "+Dat",
+      "3": "+Dat+Akk",
+      "4": "+Präp",
+      "5": "+Dat",
+      "6": "+Dat+Akk",
+      "7": "+Präp",
+      "8": "+Dat+Akk"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Si dubtes, pensa en la **frase canònica**: _Ich lese ==ein Buch==_ (+Akk), _Ich helfe ==dir==_ (+Dat), _Ich schenke ==dir ein Buch==_ (+Dat+Akk), _Ich wohne ==in Berlin==_ (+Präp).",
+      "references": ["A1b-38"]
+    },
+    "incorrect": {
+      "default": "Memoritza parelles verb-cas. _lesen, lieben, kaufen, hören, schreiben_ → **+Akk**. _helfen, gefallen, schmecken, gehören, passen_ → **+Dat**. _schenken, zeigen, bringen, empfehlen_ → **+Dat+Akk**. _wohnen (in), kommen (aus), fahren (nach)_ → **+Präp**.",
+      "byResponse": [
+        {
+          "match": { "2": "+Akk" },
+          "message": "_helfen_ demana ==**datiu**==, no acusatiu. _Ich helfe ==dir==_ (no _~~Ich helfe dich~~_). És un dels paranys clàssics per als catalanoparlants."
+        },
+        {
+          "match": { "5": "+Akk" },
+          "message": "_gefallen_ és ==**+Dat**==. El subjecte és la cosa que agrada; la persona va en datiu: _Das Bild gefällt ==mir==_ (no _~~Ich gefalle das Bild~~_)."
+        },
+        {
+          "match": { "3": "+Akk" },
+          "message": "_schenken_ és un verb de transferència: ==**+Dat+Akk**==. Destinatari en datiu (qui rep) + cosa en acusatiu (què es regala). _Ich schenke ==dir== ==ein Buch==_."
+        },
+        {
+          "match": { "4": "+Akk" },
+          "message": "_wohnen_ no demana acusatiu; demana una ==**preposició**== locativa: _Ich wohne ==in Berlin==_. És **+Präp**."
+        },
+        {
+          "match": { "7": "+Dat" },
+          "message": "_kommen_ no regeix datiu directe; demana ==**preposició**==: _Ich komme ==aus Katalonien==_. És **+Präp** (aus + Dat, però el patró és preposicional)."
+        }
+      ]
+    }
+  }
+}

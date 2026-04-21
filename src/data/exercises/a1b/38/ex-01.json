@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-38-ex-01",
+  "topicId": "A1b-38",
+  "title": "Quants complements demana la frase?",
+  "prompt": "Compta les _Ergänzungen_ de cada frase (==**sense comptar el subjecte**==). Tria **0**, **1** o **2**.",
+  "difficulty": 1,
+  "tags": ["valencia", "ergaenzungen", "identificacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich schlafe._ → {{1}}\n\n2. _Ich lese ein Buch._ → {{2}}\n\n3. _Ich schenke dir eine Blume._ → {{3}}\n\n4. _Es regnet._ → {{4}}\n\n5. _Ich wohne in Berlin._ → {{5}}\n\n6. _Ich helfe meiner Mutter._ → {{6}}\n\n7. _Ich schreibe meinem Bruder einen Brief._ → {{7}}\n\n8. _Die Suppe schmeckt mir._ → {{8}}",
+    "blanks": [
+      { "id": "1", "label": "Frase 1 · _Ich schlafe._" },
+      { "id": "2", "label": "Frase 2 · _Ich lese ein Buch._" },
+      { "id": "3", "label": "Frase 3 · _Ich schenke dir eine Blume._" },
+      { "id": "4", "label": "Frase 4 · _Es regnet._" },
+      { "id": "5", "label": "Frase 5 · _Ich wohne in Berlin._" },
+      { "id": "6", "label": "Frase 6 · _Ich helfe meiner Mutter._" },
+      { "id": "7", "label": "Frase 7 · _Ich schreibe meinem Bruder einen Brief._" },
+      { "id": "8", "label": "Frase 8 · _Die Suppe schmeckt mir._" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["0", "1", "2"] },
+      { "blankId": "2", "options": ["0", "1", "2"] },
+      { "blankId": "3", "options": ["0", "1", "2"] },
+      { "blankId": "4", "options": ["0", "1", "2"] },
+      { "blankId": "5", "options": ["0", "1", "2"] },
+      { "blankId": "6", "options": ["0", "1", "2"] },
+      { "blankId": "7", "options": ["0", "1", "2"] },
+      { "blankId": "8", "options": ["0", "1", "2"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "0",
+      "2": "1",
+      "3": "2",
+      "4": "0",
+      "5": "1",
+      "6": "1",
+      "7": "2",
+      "8": "1"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. ==El subjecte no es compta== com a Ergänzung. Compta només els complements que ==demana el verb== a més del subjecte. A la frase 8, _die Suppe_ és qui fa l'acció (tenir bon gust), no un complement.",
+      "references": ["A1b-38"]
+    },
+    "incorrect": {
+      "default": "Recorda: el ==subjecte no és Ergänzung==. Compta només els complements **a més** del subjecte. _Ich schlafe_ → 0 (subjecte sol). _Ich lese ein Buch_ → 1 (acusatiu). _Ich schenke dir eine Blume_ → 2 (datiu + acusatiu).",
+      "byResponse": [
+        {
+          "match": { "1": "1" },
+          "message": "_Ich schlafe._ — _schlafen_ no demana cap Ergänzung més enllà del subjecte. Resposta: ==**0**==."
+        },
+        {
+          "match": { "4": "1" },
+          "message": "_Es regnet._ — verb impersonal. _es_ és subjecte gramatical buit, no una Ergänzung. Resposta: ==**0**==."
+        },
+        {
+          "match": { "8": "2" },
+          "message": "_Die Suppe schmeckt mir._ — _die Suppe_ és el ==**subjecte**== (qui té bon gust), no una Ergänzung. Només _mir_ (datiu) compta. Resposta: ==**1**==."
+        },
+        {
+          "match": { "3": "1" },
+          "message": "_Ich schenke dir eine Blume._ — _schenken_ demana ==datiu== (_dir_) + ==acusatiu== (_eine Blume_). Són **2** Ergänzungen."
+        },
+        {
+          "match": { "7": "1" },
+          "message": "_Ich schreibe meinem Bruder einen Brief._ — datiu (_meinem Bruder_) + acusatiu (_einen Brief_) = **2**."
+        }
+      ]
+    }
+  }
+}

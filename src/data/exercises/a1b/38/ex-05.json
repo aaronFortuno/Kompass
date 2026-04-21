@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-38-ex-05",
+  "topicId": "A1b-38",
+  "title": "Frase completa o li falta l'Ergänzung?",
+  "prompt": "Indica si cada frase està ==**completa**== o ==**incompleta**== (li falta el complement obligatori que el verb exigeix).",
+  "difficulty": 2,
+  "tags": ["valencia", "completesa", "identificacio", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich lese._ → {{1}}\n\n2. _Ich kaufe._ → {{2}}\n\n3. _Ich helfe._ → {{3}}\n\n4. _Es regnet._ → {{4}}\n\n5. _Ich schenke dir._ → {{5}}\n\n6. _Ich wohne._ → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "1 · _Ich lese._" },
+      { "id": "2", "label": "2 · _Ich kaufe._" },
+      { "id": "3", "label": "3 · _Ich helfe._" },
+      { "id": "4", "label": "4 · _Es regnet._" },
+      { "id": "5", "label": "5 · _Ich schenke dir._" },
+      { "id": "6", "label": "6 · _Ich wohne._" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Completa", "Incompleta"] },
+      { "blankId": "2", "options": ["Completa", "Incompleta"] },
+      { "blankId": "3", "options": ["Completa", "Incompleta"] },
+      { "blankId": "4", "options": ["Completa", "Incompleta"] },
+      { "blankId": "5", "options": ["Completa", "Incompleta"] },
+      { "blankId": "6", "options": ["Completa", "Incompleta"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Completa",
+      "2": "Incompleta",
+      "3": "Incompleta",
+      "4": "Completa",
+      "5": "Incompleta",
+      "6": "Incompleta"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Alguns verbs són ==flexibles== (_lesen_ admet objecte o no). D'altres ==exigeixen== sempre el complement (_kaufen_ sense acusatiu és frase trencada). _Wohnen_ gairebé sempre va amb preposició locativa; _Ich wohne_ sol és estrany.",
+      "references": ["A1b-38"]
+    },
+    "incorrect": {
+      "default": "Pregunta't: \"què falta per entendre què diu el verb?\" _Ich lese_ (puc llegir en general, sense objecte concret) és acceptable. _Ich kaufe_ no — cal dir ==què== compres. _Ich helfe_ no — cal dir ==a qui== ajudes. _Ich schenke dir_ no — cal dir ==què== regales. _Ich wohne_ no — cal dir ==on==.",
+      "byResponse": [
+        {
+          "match": { "2": "Completa" },
+          "message": "_Ich kaufe._ — _kaufen_ exigeix un ==**acusatiu obligatori**==: cal dir què compres. _Ich kaufe ein Buch._ ==**Incompleta**==."
+        },
+        {
+          "match": { "3": "Completa" },
+          "message": "_Ich helfe._ — _helfen_ exigeix un ==**datiu**==: cal dir a qui ajudes. _Ich helfe dir._ ==**Incompleta**==."
+        },
+        {
+          "match": { "5": "Completa" },
+          "message": "_Ich schenke dir._ — tens el datiu, però _schenken_ és +Dat+Akk: falta l'==**acusatiu**==. _Ich schenke dir ein Buch._ ==**Incompleta**==."
+        },
+        {
+          "match": { "6": "Completa" },
+          "message": "_Ich wohne._ — _wohnen_ demana un complement ==**preposicional**== locatiu: _Ich wohne in Berlin._ Sense preposició, queda estranya. ==**Incompleta**==."
+        },
+        {
+          "match": { "1": "Incompleta" },
+          "message": "_Ich lese._ — _lesen_ és ==**flexible**==: pot anar amb acusatiu (_ein Buch_) o sense (_lesen_ com a activitat genèrica, \"llegir\"). Aquí és acceptable. ==**Completa**==."
+        },
+        {
+          "match": { "4": "Incompleta" },
+          "message": "_Es regnet._ — verb ==**impersonal**==. _es_ és subjecte gramatical, no cal cap Ergänzung. ==**Completa**==."
+        }
+      ]
+    }
+  }
+}
