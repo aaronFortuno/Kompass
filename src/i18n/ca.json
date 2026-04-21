@@ -77,5 +77,47 @@
   "common": {
     "openMenu": "Obre el menú",
     "closeMenu": "Tanca el menú"
+  },
+  "progress": {
+    "title": "Progrés",
+    "intro": "El teu progrés viu al navegador, vinculat a aquest dispositiu. Des d'aquí pots exportar-lo, importar-ne un de desat o començar de zero.",
+    "summary": {
+      "title": "Resum",
+      "topicsStarted": "Temes iniciats",
+      "topicsOutOf": "de {total}",
+      "exercisesCompleted": "Exercicis resolts",
+      "lastUpdated": "Darrera activitat",
+      "never": "Encara no hi ha activitat."
+    },
+    "export": {
+      "title": "Exportar progrés",
+      "description": "Descarrega una còpia de seguretat del teu progrés en un fitxer JSON. Pots portar-la a un altre dispositiu o desar-la per si de cas.",
+      "button": "Exportar progrés",
+      "empty": "Encara no tens progrés per exportar. Comença algun tema primer.",
+      "success": "S'ha descarregat el fitxer {filename}."
+    },
+    "import": {
+      "title": "Importar progrés",
+      "description": "Carrega un fitxer kompass-progress-*.json per restaurar un progrés desat. Reemplaçarà el progrés actual.",
+      "fileLabel": "Tria un fitxer JSON",
+      "button": "Importar",
+      "noFile": "Selecciona un fitxer abans d'importar.",
+      "confirmReplace": "Ja tens progrés local. Continuar reemplaçarà l'estat actual amb el del fitxer. Vols continuar?",
+      "success": "Progrés importat correctament.",
+      "errorInvalidJson": "El fitxer no és un JSON vàlid.",
+      "errorSchema": "El fitxer no té el format esperat: {detail}",
+      "errorRead": "No s'ha pogut llegir el fitxer."
+    },
+    "reset": {
+      "title": "Reiniciar progrés",
+      "description": "Esborra tot el teu progrés local de manera permanent. Aquesta acció no es pot desfer; assegura't de tenir-ne una còpia abans si la vols conservar.",
+      "button": "Reiniciar progrés",
+      "confirmNative": "Això esborrarà tot el progrés local de manera permanent. Continuar?",
+      "confirmTypeLabel": "Per confirmar, escriu «reinicia»:",
+      "confirmKeyword": "reinicia",
+      "confirmButton": "Confirmar reinici",
+      "cancel": "Cancel·lar",
+      "success": "Progrés reiniciat."
+    }
   }
 }

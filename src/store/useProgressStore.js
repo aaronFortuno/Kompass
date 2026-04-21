@@ -133,7 +133,50 @@ export const useProgressStore = create(
         });
       },
 
+      /*
+       * Reinicia el progrés. Buida tot l'estat persistit (topics,
+       * exercises, createdAt, lastUpdated) i també l'ephemeralResults
+       * perquè la UI no mostri feedback d'exercicis que ja no tenen
+       * registre. createdAt torna a null; s'assignarà la pròxima vegada
+       * que l'usuari generi activitat (veure markStepVisited /
+       * recordExerciseAttempt).
+       */
       reset: () => set({ ...INITIAL_STATE }),
+
+      /*
+       * Reemplaça tot l'estat persistit amb un progressData
+       * prèviament validat (veure deserializeProgress a
+       * src/lib/exportImport.js). `ephemeralResults` es buida perquè
+       * pertany a la sessió actual i no té sentit mantenir-lo després
+       * d'un import.
+       */
+      importProgress: (progressData) => {
+        if (!progressData || typeof progressData !== 'object') return;
+        set(() => ({
+          schemaVersion: 1,
+          createdAt: progressData.createdAt ?? null,
+          lastUpdated: progressData.lastUpdated ?? null,
+          topics: progressData.topics ?? {},
+          exercises: progressData.exercises ?? {},
+          ephemeralResults: {},
+        }));
+      },
+
+      /*
+       * Retorna una còpia plana del state persistit (sense
+       * ephemeralResults). Pensat per alimentar serializeProgress()
+       * a l'hora d'exportar.
+       */
+      exportSnapshot: () => {
+        const state = useProgressStore.getState();
+        return {
+          schemaVersion: state.schemaVersion,
+          createdAt: state.createdAt,
+          lastUpdated: state.lastUpdated,
+          topics: state.topics,
+          exercises: state.exercises,
+        };
+      },
     }),
     {
       name: 'kompass.progress.v1',

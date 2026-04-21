@@ -77,5 +77,47 @@
   "common": {
     "openMenu": "Abrir el menú",
     "closeMenu": "Cerrar el menú"
+  },
+  "progress": {
+    "title": "Progreso",
+    "intro": "Tu progreso vive en el navegador, vinculado a este dispositivo. Desde aquí puedes exportarlo, importar uno guardado o empezar de cero.",
+    "summary": {
+      "title": "Resumen",
+      "topicsStarted": "Temas iniciados",
+      "topicsOutOf": "de {total}",
+      "exercisesCompleted": "Ejercicios resueltos",
+      "lastUpdated": "Última actividad",
+      "never": "Aún no hay actividad."
+    },
+    "export": {
+      "title": "Exportar progreso",
+      "description": "Descarga una copia de seguridad de tu progreso en un archivo JSON. Puedes llevarla a otro dispositivo o guardarla por si acaso.",
+      "button": "Exportar progreso",
+      "empty": "Aún no tienes progreso para exportar. Empieza algún tema primero.",
+      "success": "Se ha descargado el archivo {filename}."
+    },
+    "import": {
+      "title": "Importar progreso",
+      "description": "Carga un archivo kompass-progress-*.json para restaurar un progreso guardado. Reemplazará el progreso actual.",
+      "fileLabel": "Elige un archivo JSON",
+      "button": "Importar",
+      "noFile": "Selecciona un archivo antes de importar.",
+      "confirmReplace": "Ya tienes progreso local. Continuar reemplazará el estado actual con el del archivo. ¿Quieres continuar?",
+      "success": "Progreso importado correctamente.",
+      "errorInvalidJson": "El archivo no es un JSON válido.",
+      "errorSchema": "El archivo no tiene el formato esperado: {detail}",
+      "errorRead": "No se ha podido leer el archivo."
+    },
+    "reset": {
+      "title": "Reiniciar progreso",
+      "description": "Borra todo tu progreso local de forma permanente. Esta acción no se puede deshacer; asegúrate de tener una copia antes si la quieres conservar.",
+      "button": "Reiniciar progreso",
+      "confirmNative": "Esto borrará todo el progreso local de forma permanente. ¿Continuar?",
+      "confirmTypeLabel": "Para confirmar, escribe «reinicia»:",
+      "confirmKeyword": "reinicia",
+      "confirmButton": "Confirmar reinicio",
+      "cancel": "Cancelar",
+      "success": "Progreso reiniciado."
+    }
   }
 }

@@ -6,6 +6,7 @@ import { HomePage } from '@/pages/HomePage.jsx';
 import { PlaceholderPage } from '@/pages/PlaceholderPage.jsx';
 import { TopicsIndexPage } from '@/pages/TopicsIndexPage.jsx';
 import { TopicPage } from '@/pages/TopicPage.jsx';
+import { ProgressPage } from '@/pages/ProgressPage.jsx';
 
 export default function App() {
   return (
@@ -19,7 +20,7 @@ export default function App() {
               <Route path="temes/:topicId" element={<TopicPage />} />
               <Route path="temes/:topicId/:stepId" element={<TopicPage />} />
               <Route path="rutes" element={<PlaceholderPage titleKey="nav.paths" />} />
-              <Route path="progres" element={<PlaceholderPage titleKey="nav.progress" />} />
+              <Route path="progres" element={<ProgressPage />} />
               <Route path="*" element={<PlaceholderPage />} />
             </Route>
           </Routes>
