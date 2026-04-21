@@ -486,7 +486,7 @@ function SynTableBeat({ beat, tableAnim }) {
   );
 }
 
-function ExerciseBeatCard({ beat, stepIdx, onFinish, peek = false }) {
+function ExerciseBeatCard({ beat, stepIdx, onFinish, peek = false, navRef = null }) {
   const { t } = useT();
   const exercise = useMemo(() => getExercise(beat.exerciseId), [beat.exerciseId]);
   if (!exercise) {
@@ -516,7 +516,7 @@ function ExerciseBeatCard({ beat, stepIdx, onFinish, peek = false }) {
           </span>
           <h3 className="kf-ex-title">{exercise.title}</h3>
         </div>
-        <ReaderExerciseEngine exercise={exercise} peek={peek} />
+        <ReaderExerciseEngine exercise={exercise} peek={peek} navRef={navRef} />
       </div>
     </div>
   );
@@ -697,6 +697,7 @@ function BeatStagePeek({
   settings,
   speed,
   fastMode,
+  exerciseNavRef,
 }) {
   return (
     <>
@@ -731,6 +732,7 @@ function BeatStagePeek({
               speed={speed}
               fastMode={isCurrent ? fastMode : true}
               isCurrent={isCurrent}
+              exerciseNavRef={isCurrent ? exerciseNavRef : null}
             />
           </div>
         );
@@ -749,6 +751,7 @@ function BeatBody({
   onFinishExercise,
   fastMode,
   isCurrent = true,
+  exerciseNavRef = null,
 }) {
   if (!beat) return null;
 
@@ -794,6 +797,7 @@ function BeatBody({
           stepIdx={stepIdx}
           onFinish={onFinishExercise}
           peek={!isCurrent}
+          navRef={exerciseNavRef}
         />
       );
     default:
@@ -825,6 +829,12 @@ export function FocusReader({ topic }) {
   // Drawer de settings (§79): s'obre amb "c" o el botó ⚙ del peu.
   const [drawerOpen, setDrawerOpen] = useState(false);
   const rootRef = useRef(null);
+  // Ref que l'exercici current escriu amb { handleArrow(d) }. El reader
+  // consulta aquesta ref abans de fer goBeat quan l'usuari prem ← / →
+  // fora d'un input: si l'exercici encara té preguntes pendents, gestiona
+  // la navegació internament i el beat no canvia. Si retorna false (cap
+  // gestió interna), el reader segueix amb goBeat.
+  const exerciseNavRef = useRef(null);
 
   const step = topic.steps[stepIdx];
   const totalSteps = topic.steps.length;
@@ -1043,6 +1053,11 @@ export function FocusReader({ topic }) {
       } else if (mod) {
         goStep(d);
       } else {
+        // Si l'exercici del beat actual té preguntes pendents, el deixem
+        // gestionar la navegació internament. Només fem goBeat si
+        // l'exercici retorna false (ja no li queda res per gestionar).
+        const handled = exerciseNavRef.current?.handleArrow?.(d);
+        if (handled) return;
         goBeat(d);
       }
     };
@@ -1147,6 +1162,7 @@ export function FocusReader({ topic }) {
               settings={settings}
               speed={speed}
               fastMode={fastMode}
+              exerciseNavRef={exerciseNavRef}
             />
             <BeatSidebar
               topic={topic}

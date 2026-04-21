@@ -330,7 +330,7 @@ function SingleChoiceRenderer({ exercise, response, onAnswer, revealed, onSubmit
 
 // —————— Engine principal ——————
 
-export function ReaderExerciseEngine({ exercise, peek = false }) {
+export function ReaderExerciseEngine({ exercise, peek = false, navRef = null }) {
   const { t } = useT();
   const recordExerciseAttempt = useProgressStore((s) => s.recordExerciseAttempt);
 
@@ -426,6 +426,67 @@ export function ReaderExerciseEngine({ exercise, peek = false }) {
     setFinished(false);
     attemptRecorded.current = false;
   };
+
+  // Quan un ítem es revela, desenfoquem el control actiu. Així el
+  // següent ← / → el captura el listener global del reader (via
+  // navRef.handleArrow), no un input/select disabled que es quedaria
+  // sense gestor i semblaria que la navegació no respon.
+  useEffect(() => {
+    if (!revealed) return;
+    const el = document.activeElement;
+    if (el && typeof el.blur === 'function') {
+      const tag = el.tagName?.toLowerCase();
+      if (['input', 'select', 'textarea', 'button'].includes(tag)) el.blur();
+    }
+  }, [revealed]);
+
+  // Exposem handleArrow via navRef perquè el FocusReader el consulti
+  // abans de fer goBeat. Cada render re-escriu la funció (captura l'estat
+  // actual). El cleanup neteja la ref si el component es desmunta (p.ex.
+  // canvi de beat).
+  useEffect(() => {
+    if (!navRef) return undefined;
+    navRef.current = {
+      handleArrow: (d) => {
+        if (d === 1) {
+          // Avançar
+          if (finished) return false; // ja acabat: deixem que el reader surti
+          if (!revealed) {
+            if (!hasAnswer()) return true; // estem a mitges, no sortim
+            setRevealedByItem((r) => ({ ...r, [currentItem.key]: true }));
+            return true;
+          }
+          // revealed
+          if (itemIdx < items.length - 1) {
+            setItemIdx(itemIdx + 1);
+            return true;
+          }
+          // última pregunta revealed → marquem com a finished però no
+          // sortim (l'usuari veurà el resum); el següent → el farà goBeat.
+          setFinished(true);
+          return true;
+        }
+        if (d === -1) {
+          if (finished) {
+            // Tornem a mode preguntes a l'última pregunta (per si vol
+            // repassar).
+            setFinished(false);
+            setItemIdx(items.length - 1);
+            return true;
+          }
+          if (itemIdx > 0) {
+            setItemIdx(itemIdx - 1);
+            return true;
+          }
+          return false; // primera pregunta: deixem sortir del beat
+        }
+        return false;
+      },
+    };
+    return () => {
+      if (navRef) navRef.current = null;
+    };
+  });
 
   // Quan finished, enregistrem l'attempt global una vegada.
   useEffect(() => {
@@ -601,16 +662,27 @@ export function ReaderExerciseEngine({ exercise, peek = false }) {
       ) : null}
 
       <div className="kf-rex-nav">
-        <button
-          type="button"
-          className="kf-rex-btn kf-rex-btn-icon"
-          onClick={back}
-          disabled={itemIdx === 0}
-          aria-label="Pregunta anterior"
-          title="Pregunta anterior"
-        >
-          <ArrowLeft size={14} aria-hidden="true" />
-        </button>
+        <div className="kf-rex-nav-left">
+          <button
+            type="button"
+            className="kf-rex-btn kf-rex-btn-icon"
+            onClick={back}
+            disabled={itemIdx === 0}
+            aria-label="Pregunta anterior"
+            title="Pregunta anterior (←)"
+          >
+            <ArrowLeft size={14} aria-hidden="true" />
+          </button>
+          <button
+            type="button"
+            className="kf-rex-btn kf-rex-btn-icon kf-rex-btn-ghost"
+            onClick={retry}
+            aria-label="Reiniciar exercici"
+            title="Reiniciar exercici"
+          >
+            <RotateCcw size={13} aria-hidden="true" />
+          </button>
+        </div>
         <div className="kf-rex-dots">
           {items.map((_, i) => {
             const r = revealedByItem[items[i].key];

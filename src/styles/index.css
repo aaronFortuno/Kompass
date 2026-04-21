@@ -1508,9 +1508,12 @@ html.dark .k-mark {
 }
 
 .kf-rex-sentence {
+  /* Variable heredada pels slots perquè el select/input renderitzi a la
+     mateixa mida que el text — alineat visualment. */
+  --kf-rex-size: calc(44px * var(--kf-type-scale, 1));
   font-family: 'Newsreader', serif;
   font-weight: 500;
-  font-size: calc(44px * var(--kf-type-scale, 1));
+  font-size: var(--kf-rex-size);
   line-height: 1.25;
   letter-spacing: -0.015em;
   color: rgb(var(--color-reader-ink));
@@ -1518,22 +1521,27 @@ html.dark .k-mark {
   display: block;
 }
 
-/* Slots (select i input) */
+/* Slots (select i input) — mida sincronitzada amb la sentence via
+   --kf-rex-size. Forcem font-size explícit i line-height ajustat perquè
+   els controls natius (iOS Safari entre d'altres) no imposin el seu
+   mínim de 16px i quedin descoordinats. */
 .kf-rex-slot {
   display: inline-block;
-  min-width: 110px;
-  padding: 2px 12px;
+  min-width: 2.8em;
+  padding: 0 10px;
   margin: 0 4px;
   border: none;
-  border-bottom: 2px solid rgb(var(--color-reader-ink));
+  border-bottom: 3px solid rgb(var(--color-reader-ink));
   background: rgb(var(--color-reader-paper-2));
   color: rgb(var(--color-reader-ink));
-  font: inherit;
-  font-weight: 500;
   font-family: 'Newsreader', serif;
-  font-size: inherit;
+  font-weight: 500;
+  font-size: var(--kf-rex-size);
+  line-height: 1.1;
+  letter-spacing: inherit;
   text-align: center;
   border-radius: 0;
+  vertical-align: baseline;
   cursor: pointer;
   transition:
     background-color var(--duration-fast) var(--ease-standard),
@@ -1546,7 +1554,8 @@ html.dark .k-mark {
 }
 .kf-rex-slot-input {
   text-align: left;
-  padding: 2px 10px;
+  padding: 0 10px;
+  min-width: 4em;
 }
 .kf-rex-slot.is-ok {
   color: rgb(var(--color-reader-ok));
@@ -1702,6 +1711,22 @@ html.dark .k-mark {
 .kf-rex-btn-icon {
   padding: 10px 12px;
   min-width: auto;
+}
+/* Variant discreta (reset): sense border, només hover */
+.kf-rex-btn-ghost {
+  border-color: rgb(var(--color-reader-rule));
+  color: rgb(var(--color-reader-muted));
+}
+.kf-rex-btn-ghost:hover:not(:disabled) {
+  background: transparent;
+  color: rgb(var(--color-reader-ink));
+  border-color: rgb(var(--color-reader-ink-2));
+}
+/* Grup esquerre del peu: prev + reset junts */
+.kf-rex-nav-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 /* Dots de progrés dins de l'exercici */
