@@ -528,6 +528,141 @@ function ExerciseBeatCard({ beat, stepIdx, onFinish }) {
 // ───────────────────────────────────────────── dispatcher
 
 /*
+ * Deriva un títol curt per a un beat, usat a la BeatSidebar com a label
+ * clicable. Prioritza la lectura curta — no és el contingut sencer.
+ */
+function beatLabel(beat, idx) {
+  if (!beat) return `Fragment ${idx + 1}`;
+  const cap = (s, n = 48) => {
+    const t = String(s || '').replace(/[*=_`]/g, '').trim();
+    return t.length > n ? t.slice(0, n).trimEnd() + '…' : t;
+  };
+  switch (beat.type) {
+    case 'heading':
+      return cap(beat.text, 42);
+    case 'lead':
+      return cap(beat.text, 48);
+    case 'body':
+      return cap(beat.text, 44);
+    case 'point':
+      return `Punt ${beat.idx} — ${cap(beat.text, 32)}`;
+    case 'rule':
+      return `Regla ${beat.idx}`;
+    case 'example':
+      return `Exemple ${beat.idx} — ${cap(beat.ex?.de, 28)}`;
+    case 'pron':
+      return beat.tab?.pron || 'Pronom';
+    case 'pair':
+      return `${beat.pair?.personal} → ${beat.pair?.possessive}`;
+    case 'callout':
+      return beat.callout?.title || 'Nota';
+    case 'compare':
+      return 'Comparativa';
+    case 'pitfall':
+      return `Parany ${beat.idx}`;
+    case 'syn-table':
+      return beat.table?.title || 'Taula';
+    case 'exercise':
+      return beat.variant === 'assessment' ? 'Avaluació' : 'Comprovació';
+    default:
+      return `Fragment ${idx + 1}`;
+  }
+}
+
+function stepLabel(step, i) {
+  if (!step) return `Pas ${i + 1}`;
+  if (step.heading) return step.heading;
+  if (step.id) return step.id;
+  return `Pas ${i + 1}`;
+}
+
+/*
+ * BeatSidebar · índex navegable a la dreta del body
+ *
+ * Llista de steps del topic; el step actual s'expandeix per mostrar els
+ * seus beats amb un títol curt. Clic = salta a l'step/beat (usa els
+ * mateixos handlers que el progress bar del header).
+ *
+ * S'amaga en viewports sota 1200 px per no envair l'espai del contingut.
+ */
+function BeatSidebar({
+  topic,
+  beats,
+  stepIdx,
+  beatIdx,
+  onJumpStep,
+  onJumpBeat,
+}) {
+  return (
+    <aside className="kf-sidebar" aria-label="Índex de la lliçó">
+      <div className="kf-sidebar-kicker">
+        <span>Capítol {String(stepIdx + 1).padStart(2, '0')}</span>
+        <span className="kf-sidebar-kicker-sep" />
+        <span>{topic.shortTitle || topic.title}</span>
+      </div>
+      <ol className="kf-sidebar-steps">
+        {topic.steps.map((s, i) => {
+          const isCurrent = i === stepIdx;
+          const isDone = i < stepIdx;
+          const label = stepLabel(s, i);
+          return (
+            <li
+              key={i}
+              className={[
+                'kf-sidebar-step',
+                isCurrent ? 'is-current' : '',
+                isDone ? 'is-done' : '',
+              ]
+                .filter(Boolean)
+                .join(' ')}
+            >
+              <button
+                type="button"
+                onClick={() => onJumpStep(i)}
+                title={label}
+              >
+                <span className="kf-sidebar-step-num">
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+                <span className="kf-sidebar-step-label">{label}</span>
+              </button>
+              {isCurrent && beats.length > 1 ? (
+                <ol className="kf-sidebar-beats">
+                  {beats.map((b, j) => {
+                    const beatIsCurrent = j === beatIdx;
+                    const beatIsDone = j < beatIdx;
+                    return (
+                      <li
+                        key={j}
+                        className={[
+                          'kf-sidebar-beat',
+                          beatIsCurrent ? 'is-current' : '',
+                          beatIsDone ? 'is-done' : '',
+                        ]
+                          .filter(Boolean)
+                          .join(' ')}
+                      >
+                        <button
+                          type="button"
+                          onClick={() => onJumpBeat(j)}
+                          title={beatLabel(b, j)}
+                        >
+                          {beatLabel(b, j)}
+                        </button>
+                      </li>
+                    );
+                  })}
+                </ol>
+              ) : null}
+            </li>
+          );
+        })}
+      </ol>
+    </aside>
+  );
+}
+
+/*
  * BeatStagePeek · §73
  *
  * En mode fragment, el focus està al beat actiu però l'usuari veu un
@@ -952,15 +1087,25 @@ export function FocusReader({ topic }) {
             ))}
           </div>
         ) : (
-          <BeatStagePeek
-            beats={beats}
-            beatIdx={beatIdx}
-            stepIdx={stepIdx}
-            step={step}
-            settings={settings}
-            speed={speed}
-            fastMode={fastMode}
-          />
+          <>
+            <BeatStagePeek
+              beats={beats}
+              beatIdx={beatIdx}
+              stepIdx={stepIdx}
+              step={step}
+              settings={settings}
+              speed={speed}
+              fastMode={fastMode}
+            />
+            <BeatSidebar
+              topic={topic}
+              beats={beats}
+              stepIdx={stepIdx}
+              beatIdx={beatIdx}
+              onJumpStep={jumpStep}
+              onJumpBeat={jumpBeat}
+            />
+          </>
         )}
       </div>
 
