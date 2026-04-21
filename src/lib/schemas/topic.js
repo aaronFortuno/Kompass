@@ -3,18 +3,121 @@ import { ContentBlockSchema } from './contentBlock.js';
 
 /*
  * Schema de Topic (DATA-MODEL §3.1).
- * Els temes s'organitzen en steps (píndoles) que el reproductor
- * presenta un per un (ARCHITECTURE §18).
+ *
+ * Els temes s'organitzen en steps (píndoles) que el Focus Reader
+ * presenta beat a beat (ARCHITECTURE §18). Cada step pot venir en dos
+ * formats durant el període de migració:
+ *
+ *   1. Format ric (preferent):  step.kind ∈ {narrative, synthesis, exercise}
+ *      amb camps plans per tipus (heading/lead/body/points/tabs/…).
+ *   2. Format llegat:  step.blocks[] amb ContentBlock[] (explanation,
+ *      table, exercise, callout). Suportat via adapter legacyBlocksToBeats.
+ *
+ * Un tema ha de ser tot d'un format o tot de l'altre.
  */
 
 const TOPIC_ID_REGEX = /^A\d[ab]-\d+$/;
-
 const STEP_ID_REGEX = /^[a-z0-9][a-z0-9-]*$/;
 
-const StepSchema = z.object({
+// ─────────────────────────────── format llegat
+
+const LegacyStepSchema = z.object({
   id: z.string().regex(STEP_ID_REGEX, 'kebab-case, comença amb alfanumèric').optional(),
   blocks: z.array(ContentBlockSchema).min(1),
 });
+
+// ─────────────────────────────── format ric: peces
+
+const ExampleSchema = z.object({
+  de: z.string(),
+  ca: z.string().optional(),
+  note: z.string().optional(),
+});
+
+const TabSchema = z.object({
+  pron: z.string(),
+  gloss: z.string().optional(),
+  note: z.string().optional(),
+  example: z
+    .object({
+      de: z.string(),
+      ca: z.string().optional(),
+    })
+    .optional(),
+});
+
+const PairSchema = z.object({
+  personal: z.string(),
+  possessive: z.string(),
+  gloss: z.string().optional(),
+});
+
+const CompareRowSchema = z.object({
+  es: z.string().optional(),
+  ca: z.string().optional(),
+  de: z.string().optional(),
+  en: z.string().optional(),
+});
+
+const PitfallSchema = z.object({
+  bad: z.string(),
+  good: z.string(),
+  why: z.string().optional(),
+});
+
+const RichCalloutSchema = z.object({
+  variant: z.enum(['info', 'tip', 'warning', 'danger', 'example']),
+  title: z.string().optional(),
+  body: z.string(),
+});
+
+// Cel·la d'una taula de síntesi al format ric: string o {text: string}
+const CellSchema = z.union([z.string(), z.object({ text: z.string() })]);
+const SynTableSchema = z.object({
+  title: z.string().optional(),
+  headers: z.array(CellSchema).optional(),
+  rows: z.array(z.array(CellSchema)).min(1),
+});
+
+// ─────────────────────────────── format ric: steps
+
+const RichExerciseStepSchema = z.object({
+  id: z.string().regex(STEP_ID_REGEX).optional(),
+  kind: z.literal('exercise'),
+  exerciseId: z.string(),
+  variant: z.enum(['quick-check', 'assessment']).optional(),
+});
+
+const RichContentStepSchema = z.object({
+  id: z.string().regex(STEP_ID_REGEX).optional(),
+  kind: z.enum(['narrative', 'synthesis']),
+  heading: z.string().optional(),
+  lead: z.string().optional(),
+  body: z.string().optional(),
+  points: z.array(z.string()).optional(),
+  examples: z.array(ExampleSchema).optional(),
+  tabs: z.array(TabSchema).optional(),
+  pairs: z.array(PairSchema).optional(),
+  rule: z.array(z.string()).optional(),
+  comparison: z.array(CompareRowSchema).optional(),
+  pitfalls: z.array(PitfallSchema).optional(),
+  callout: RichCalloutSchema.optional(),
+  tables: z.array(SynTableSchema).optional(),
+});
+
+/*
+ * Discriminated union fina: tot step ric té `kind`; el llegat no. Zod
+ * no suporta un discriminador "absent vs present" directament, així que
+ * usem un z.union amb refinements. El rendiment n'és el mateix en
+ * pràctica (validació pure-JS per lliçó, cops a l'any).
+ */
+const StepSchema = z.union([
+  RichExerciseStepSchema,
+  RichContentStepSchema,
+  LegacyStepSchema,
+]);
+
+// ─────────────────────────────── Topic
 
 export const TopicSchema = z
   .object({
@@ -32,6 +135,7 @@ export const TopicSchema = z
     steps: z.array(StepSchema).min(1),
   })
   .superRefine((topic, ctx) => {
+    // Ids d'step únics dins del tema.
     const seen = new Set();
     topic.steps.forEach((step, i) => {
       if (!step.id) return;
@@ -44,4 +148,17 @@ export const TopicSchema = z
       }
       seen.add(step.id);
     });
+
+    // Coherència de format: tots els steps del tema han de ser del mateix
+    // estil (tots rics o tots llegats).
+    const hasRich = topic.steps.some((s) => typeof s.kind === 'string');
+    const hasLegacy = topic.steps.some((s) => Array.isArray(s.blocks));
+    if (hasRich && hasLegacy) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        path: ['steps'],
+        message:
+          'Un tema no pot barrejar format ric (kind) i format llegat (blocks[]). Migra-ho tot a un sol format.',
+      });
+    }
   });
