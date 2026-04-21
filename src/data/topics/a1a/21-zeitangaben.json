@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-21",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 21,
+  "title": "Zeitangaben — Complements de temps",
+  "shortTitle": "Zeitangaben",
+  "description": "Complements temporals amb preposició (_um_, _am_, _im_, _in der_) per respondre _Wann?_ i _Von wann bis wann?_: hores, dies, parts del dia, mesos, estacions i intervals.",
+  "axes": ["expressions-i-funcions"],
+  "prerequisites": ["A1a-20"],
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Context i motivació\n\nA **A1a-20** vas conèixer els **adverbis temporals** que no necessiten cap preposició: _heute_, _morgen_, _oft_, _immer_, _jeden Tag_... Aquests són útils, però limitats: serveixen per dir _avui_, _sovint_, _cada dia_, però no per respondre preguntes com **_quin dia?_**, **_a quina hora?_**, **_en quin mes?_**. Per a això, l'alemany (com el català) fa servir **complements temporals amb preposició**.\n\nEn aquest tema introduïm les **tres preposicions temporals bàsiques** de l'A1: ==**an**== (dies i parts del dia), ==**in**== (mesos, estacions) i ==**um**== (hores). En la pràctica, gairebé sempre apareixen **contretes** amb l'article _dem_ del datiu: _**an dem** Montag_ → _**am** Montag_, _**in dem** Januar_ → _**im** Januar_.\n\nAquest tema cobreix:\n\n1. **La pregunta _Wann?_** i la variant _Von wann bis wann?_ per durades.\n2. **==um== + hora**: _um 8 Uhr, um halb zehn_ (la mecànica completa de les hores arribarà a **A1a-22**).\n3. **==am== + dia de la setmana / part del dia**: _am Montag, am Morgen, am Nachmittag_.\n4. **==im== + mes / estació**: _im Januar, im Sommer_.\n5. **==von... bis...==** per marcar inicis i finals: _von 9 bis 17 Uhr_."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Idea clau",
+          "body": "Un **complement temporal amb preposició** és un grup de paraules que respon a _Wann?_ (_quan?_) i que es construeix sempre igual: **preposició + (article) + substantiu temporal**. L'usuari catalanoparlant ha d'aprendre dues coses alhora: _quina_ preposició toca a cada cas (am/im/um) i que aquesta preposició, a l'alemany, regeix el ==datiu== (un cas gramatical que en català no existeix com a tal)."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Bona notícia catalanoparlant",
+          "body": "L'estructura global és **semblant** a la del català: _el dilluns_ ≈ _am Montag_, _al gener_ ≈ _im Januar_, _a les vuit_ ≈ _um acht_. El **que no coincideix** és la **tria** de la preposició: on el català posa _a_ gairebé per tot, l'alemany distingeix entre _an_ (→ _am_), _in_ (→ _im_) i _um_. És un error típic voler traduir literalment."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Mala notícia castellanoparlant",
+          "body": "En castellà molts complements temporals no porten preposició (_el lunes_, _en enero_, _a las ocho_). L'alemany en porta **sempre**: _am Montag_ (mai _~~Montag~~_ tot sol com a complement de temps), _im Januar_, _um acht_. No oblidis la preposició."
+        }
+      ]
+    },
+    {
+      "id": "pregunta-wann",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### La pregunta _Wann?_ i _Von wann bis wann?_\n\nTotes les expressions temporals d'aquest tema responen a dues preguntes germanes:\n\n- **==Wann?==** (_Quan?_) — demana **un moment concret** o una situació temporal.\n- **==Von wann bis wann?==** (_De quan a quan?_) — demana una **durada amb inici i final**.\n\n> _**Wann** arbeitest du?_ — _Ich arbeite **um** 9._ (Quan treballes? — Treballo a les 9.)\n> _**Von wann bis wann** arbeitest du?_ — _Ich arbeite **von** 9 **bis** 17._ (De quan a quan treballes? — Treballo de 9 a 17.)\n> _**Wann** bist du in der Schule?_ — _Ich bin **am** Montag in der Schule._\n\nFixa't en el patró de resposta: **_um_ per un punt en el temps**, **_von... bis..._ per un interval**. Això val igualment per a hores i per a dies:\n\n> _Ich lerne Deutsch **von** Montag **bis** Freitag._ (Estudio alemany de dilluns a divendres.)\n\n**Posició a la frase.** Com tots els complements temporals, poden anar a la posició **1** (amb inversió V2, com a A1a-20) o **després del verb**:\n\n> **Um 9** _beginnt_ der Kurs. / Der Kurs _beginnt_ **um 9**.\n> **Am Montag** _arbeite_ ich. / Ich _arbeite_ **am Montag**.\n\nMai entre subjecte i verb: ~~_Ich am Montag arbeite_~~ és incorrecte (trenca la regla V2)."
+        }
+      ]
+    },
+    {
+      "id": "um-hores",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### ==um== + hora: el moment del rellotge\n\nPer situar una acció **en un moment concret del rellotge**, l'alemany fa servir la preposició ==**um**==. És la preposició temporal més fàcil: **invariable**, sense article, i equivalent directe del català _a + hora_.\n\n**Estructura bàsica:**\n\n> **um** + [número] + (Uhr)\n> _um 8 Uhr_ (a les 8) · _um 9_ (a les 9, col·loquial) · _um 12 Uhr_ (a les 12)\n\n> _Wann beginnt der Kurs? — Der Kurs beginnt **um 9**._\n> _Wann bist du beim Arzt? — Ich bin **um 3** beim Arzt._\n\n**La paraula _Uhr_.** En el llenguatge **formal o escrit** s'afegeix _Uhr_ darrere del número (_um neun **Uhr**_, _um zwölf **Uhr**_). En el llenguatge **col·loquial** es pot ometre (_um neun_, _um zwölf_). Totes dues formes són correctes.\n\n> _Um **acht Uhr** beginnt die Schule._ (formal)\n> _Um **acht** beginnt die Schule._ (col·loquial)\n\n**Intervals: von... bis...** Quan hi ha un inici i un final, es combinen _von_ (des de) i _bis_ (fins):\n\n> _Ich arbeite **von 9 bis 17 Uhr**._ (Treballo de 9 a 17.)\n> _Der Supermarkt ist **von 8 bis 20 Uhr** geöffnet._"
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Formal vs informal: 12 o 24 hores",
+          "body": "En alemany **col·loquial**, la gent fa servir **només els números de l'1 al 12** per les hores del dia: _um **drei** Uhr_ tant pot ser \"a les 3 del matí\" com \"a les 3 de la tarda\" (el context aclareix). En el **llenguatge formal** (horaris, ràdio, anuncis) es fan servir les **24 hores**: _13 Uhr, 14 Uhr, 15 Uhr, 16 Uhr, 17 Uhr, 18 Uhr..._"
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Avís",
+          "body": "La **mecànica completa de dir l'hora** (_Viertel vor_, _halb_, minuts) la tractarem a **A1a-22 (Uhrzeit)**. Aquí n'hi ha prou amb _um + hora sencera_."
+        }
+      ]
+    },
+    {
+      "id": "am-dies",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### ==am== + dia de la setmana\n\nPer situar una acció en un **dia concret de la setmana**, l'alemany fa servir la preposició ==**an**== + article datiu _dem_, que sempre es **contreu** en ==**am**==:\n\n> **an + dem** = **==am==**\n\n**Estructura:**\n\n> **am** + [dia de la setmana]\n> _am Montag_ (el dilluns) · _am Samstag_ (el dissabte) · _am Wochenende_ (el cap de setmana)"
+        },
+        {
+          "type": "table",
+          "title": "Els set dies de la setmana (tots masculins → _am_)",
+          "headers": ["Alemany", "Català"],
+          "rows": [
+            ["Montag", "dilluns"],
+            ["Dienstag", "dimarts"],
+            ["Mittwoch", "dimecres"],
+            ["Donnerstag", "dijous"],
+            ["Freitag", "divendres"],
+            ["Samstag", "dissabte"],
+            ["Sonntag", "diumenge"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Exemples del llibre:**\n\n> _**Am Montag** kocht Lisa mit Nina._ (El dilluns la Lisa cuina amb la Nina.)\n> _**Am Dienstag** und **am Mittwoch** ist der Deutschkurs._ (El dimarts i el dimecres hi ha el curs d'alemany.)\n\n**Per què _am_ i no altra cosa?** Perquè _Montag_, _Dienstag_, etc. són tots substantius **masculins** (_der Montag_, _der Dienstag_...), i en datiu masculí l'article és _dem_. _an + dem Montag_ es contreu obligatòriament a _am Montag_. Mai ~~_an dem Montag_~~ en un text normal."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Extra útil: _am Wochenende_",
+          "body": "_das Wochenende_ (el cap de setmana) és neutre, però el datiu neutre també és _dem_, i per tant també es contreu a _am Wochenende_. Aquesta expressió és freqüentíssima."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Contrast català",
+          "body": "El català diu _el dilluns_ amb article, però sense preposició. L'alemany **sempre porta la preposició**: _am Montag_, no ~~_der Montag_~~ com a complement de temps. Traduir literalment \"el dilluns\" per _~~der Montag~~_ és un dels errors més habituals."
+        }
+      ]
+    },
+    {
+      "id": "am-parts-dia",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### ==am== / ==in== + part del dia\n\nPer situar una acció en una **part del dia** (matí, tarda, vespre...) també s'usa **==am==**, amb una **excepció important** per a la nit."
+        },
+        {
+          "type": "table",
+          "title": "Parts del dia",
+          "headers": ["Part del dia", "Preposició", "Català"],
+          "rows": [
+            ["==**am** Morgen==", "an + dem", "al matí (aviat)"],
+            ["==**am** Vormittag==", "an + dem", "al matí (entre 9 i 12)"],
+            ["==**am** Nachmittag==", "an + dem", "a la tarda"],
+            ["==**am** Abend==", "an + dem", "al vespre"],
+            ["==**in der** Nacht==", "in + der", "a la nit"],
+            ["==**zu** Mittag==", "_zu_ (sense article)", "al migdia (menjar)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Per què _in der Nacht_ i no _am Nacht_?",
+          "body": "Perquè _die Nacht_ és **femení**, i el datiu femení fa _der_. La contracció _**in der**_ **no es redueix a cap forma curta** en aquesta expressió (no hi ha _~~im~~_ per _in der_ femení). És l'excepció que cal memoritzar."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Excepció _zu Mittag_",
+          "body": "_Mittag_ (el migdia) és una mica especial: quan es refereix a l'àpat del migdia o al moment central del dia, es diu _**zu** Mittag_ (sense article). _Wir essen **zu Mittag**._ (Dinem.) En altres contextos pots trobar _am Mittag_, però l'expressió canònica és _**zu Mittag**_."
+        },
+        {
+          "type": "explanation",
+          "body": "**Exemples pràctics:**\n\n> _**Am Morgen** trinke ich Kaffee._ (Al matí bec cafè.)\n> _**Am Nachmittag** habe ich Deutschkurs._ (A la tarda tinc el curs d'alemany.)\n> _**Am Abend** sehe ich fern._ (Al vespre miro la televisió.)\n> _**In der Nacht** schlafe ich._ (A la nit dormo.)\n\n**Combinacions dia + part del dia.** Molt freqüents en alemany, s'escriuen en una sola paraula: _am **Montagmorgen**_ (dilluns al matí), _am **Freitagabend**_ (divendres al vespre)."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Contrast amb A1a-20: _am Abend_ vs _abends_",
+          "body": "_**am Abend**_ = \"al vespre\" d'un dia concret o en general. Pot combinar-se amb dies: _am Montagabend_ (el dilluns al vespre), _heute Abend_ (aquest vespre).\n_**abends**_ = \"cada vespre, els vespres\" com a rutina habitual.\nEls has de distingir clarament: _Ich arbeite **abends**_ (Treballo els vespres, rutina) ≠ _Ich arbeite **am Abend**_ (Treballo al vespre, moment general)."
+        }
+      ]
+    },
+    {
+      "id": "im-mesos-estacions",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### ==im== + mes / estació\n\nPer situar una acció en un **mes** o una **estació**, l'alemany fa servir la preposició ==**in**== + article datiu _dem_, que també es **contreu** en ==**im**==:\n\n> **in + dem** = **==im==**\n\n**Estructura:**\n\n> **im** + [mes / estació]\n> _im Januar_ (al gener) · _im Winter_ (a l'hivern)"
+        },
+        {
+          "type": "table",
+          "title": "Els dotze mesos (tots masculins → _im_)",
+          "headers": ["Alemany", "Català", "Alemany", "Català"],
+          "rows": [
+            ["Januar", "gener", "Juli", "juliol"],
+            ["Februar", "febrer", "August", "agost"],
+            ["März", "març", "September", "setembre"],
+            ["April", "abril", "Oktober", "octubre"],
+            ["Mai", "maig", "November", "novembre"],
+            ["Juni", "juny", "Dezember", "desembre"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Les quatre estacions (totes masculines → _im_)",
+          "headers": ["Alemany", "Català"],
+          "rows": [
+            ["der Frühling", "la primavera"],
+            ["der Sommer", "l'estiu"],
+            ["der Herbst", "la tardor"],
+            ["der Winter", "l'hivern"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Exemples:**\n\n> _**Im Januar** ist es kalt._ (Al gener fa fred.)\n> _**Im Juli** fahren wir nach Italien._ (Al juliol anem a Itàlia.)\n> _**Im Sommer** gehe ich oft schwimmen._ (A l'estiu vaig sovint a nedar.)\n> _**Im Winter** schneit es._ (A l'hivern neva.)"
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Contrast català i castellà",
+          "body": "En **català** diem _al gener_ (amb article), _a l'estiu_: preposició **a** + article, el mateix patró que el català fa per a molts complements.\nEn **castellà** es diu _en enero_ (sense article): preposició _en_ sense article. Tot i que l'estructura s'assembla més a l'alemany pel _en ≈ in_, el castellà no té la **contracció obligatòria** de l'alemany.\nEn **alemany** no es diu ~~_in Januar_~~: **sempre** _**im** Januar_. La contracció és obligatòria."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Truc de memòria: contenidor / superfície / punt",
+          "body": "Si la paraula temporal és **un punt del calendari llarg** (mes, estació), l'alemany veu el temps com un \"contenidor\" i fa servir _in_ (→ _im_). Si és un **dia o franja horària**, veu el temps com una \"superfície puntual\" i fa servir _an_ (→ _am_). Si és una **hora del rellotge**, fa servir _um_ (\"al voltant de\" aquell punt). Lògica geomètrica: contenidor (im), superfície (am), punt (um)."
+        }
+      ]
+    },
+    {
+      "id": "quadre-resum",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Quadre resum de les preposicions temporals A1\n\nAquesta taula és el **cor del tema**. Val la pena memoritzar-la:"
+        },
+        {
+          "type": "table",
+          "title": "Preposicions temporals A1",
+          "headers": ["Quan vull dir...", "Preposició", "Exemple", "Català"],
+          "rows": [
+            ["**hora del rellotge**", "**==um==**", "_um 8 (Uhr)_", "a les 8"],
+            ["**dia de la setmana**", "**==am==**", "_am Montag_", "el dilluns"],
+            ["**part del dia** (excepte nit)", "**==am==**", "_am Morgen_, _am Abend_", "al matí, al vespre"],
+            ["**nit**", "**==in der==**", "_in der Nacht_", "a la nit"],
+            ["**migdia (àpat/moment)**", "**==zu==**", "_zu Mittag_", "al migdia"],
+            ["**mes**", "**==im==**", "_im Januar_", "al gener"],
+            ["**estació**", "**==im==**", "_im Sommer_", "a l'estiu"],
+            ["**cap de setmana**", "**==am==**", "_am Wochenende_", "el cap de setmana"],
+            ["**interval (inici→final)**", "**==von... bis...==**", "_von 9 bis 17 Uhr_", "de 9 a 17"]
+          ],
+          "caption": "Repeteix-la en veu alta fins que et surti sola. La primera meitat d'A1a-22 (Uhrzeit) i bona part d'A2 es recolzaran en aquest quadre."
+        }
+      ]
+    },
+    {
+      "id": "check-am-im",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-21-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "check-um-vonbis",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-21-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals\n\n**1. Oblidar la preposició (calc del castellà).**\nEn castellà es diu _el lunes voy al médico_ sense preposició. En alemany **cal sempre** la preposició:\n\n> Incorrecte: **~~Montag gehe ich zum Arzt.~~**\n> Correcte: _**Am** Montag gehe ich zum Arzt._\n\n**2. Confondre _am_, _im_ i _um_.**\nSón tres preposicions temporals **diferents** i no intercanviables:\n\n> Incorrecte: **~~Im Montag~~** / **~~Am Januar~~** / **~~Am 8 Uhr~~**\n> Correcte: _**Am** Montag_ (dia), _**Im** Januar_ (mes), _**Um** 8 Uhr_ (hora).\n\n**3. Dir _am Nacht_.**\n_Nacht_ és **femení**, per tant no entra en la contracció _an + dem_. La forma correcta és _**in der** Nacht_.\n\n> Incorrecte: **~~Am Nacht schlafe ich.~~**\n> Correcte: _**In der** Nacht schlafe ich._\n\n**4. Confondre _am Abend_ amb _abends_.**\nTornem al parany d'A1a-20. _**abends**_ (amb _-s_, sense preposició) = \"els vespres, com a rutina\"; _**am Abend**_ (amb preposició) = \"al vespre\" (moment puntual o general).\n\n> _Ich gehe **abends** spazieren._ (Cada vespre vaig a passejar — rutina.)\n> _**Am Abend** gehe ich ins Kino._ (Al vespre vaig al cinema — moment.)\n\n**5. Barrejar _um_ i _von... bis..._.**\n_um_ = un sol moment. _von... bis..._ = un interval amb inici i final.\n\n> Incorrecte: **~~Ich arbeite um 9 bis 17.~~**\n> Correcte: _Ich arbeite **von** 9 **bis** 17._\n\n**6. Deixar l'article sense contreure.**\nEn alemany estàndard, _an dem Montag_ i _in dem Januar_ **no s'escriuen**: sempre la forma contreta _am_, _im_.\n\n> Incorrecte (en un text normal): **~~An dem Montag~~**, **~~In dem Sommer~~**.\n> Correcte: _**Am** Montag_, _**Im** Sommer_.\n\n**7. Posar el complement entre subjecte i verb (regla V2).**\nCom a A1a-20: els complements temporals van a la **posició 1** (amb inversió) o **després del verb**, mai entremig.\n\n> Incorrecte: **~~Ich am Montag arbeite.~~**\n> Correcte: _**Am Montag** arbeite ich._ / _Ich arbeite **am Montag**._"
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-21-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-21-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-21-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-21-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi del tema\n\nAmb A1a-21 has completat el **segon pilar** de les expressions temporals de l'A1a: els **complements amb preposició** que responen a _Wann?_ i _Von wann bis wann?_. Les peces clau són tres preposicions (==um== per a hores, ==am== per a dies i parts del dia, ==im== per a mesos i estacions), una excepció femenina (_in der Nacht_), una excepció lèxica (_zu Mittag_) i l'estructura d'interval _von... bis..._. Totes aquestes preposicions regeixen el **datiu**, però de moment les fas servir com a **fórmules contretes** (am, im) sense necessitat de conjugar l'article. La regla de posició V2 vista a A1a-20 segueix valent: complement a la posició 1 amb inversió, o després del verb. El pròxim tema, **A1a-22 (Uhrzeit)**, desgranarà el sistema complet per dir l'hora (_Viertel vor_, _halb_, _fünf nach..._) recolzant-se en aquest _um_ que has après aquí."
+        },
+        {
+          "type": "table",
+          "title": "21.1 Les preposicions temporals de l'A1a",
+          "headers": ["Tipus de complement", "Preposició", "Exemple"],
+          "rows": [
+            ["Hora del rellotge", "**==um==**", "_um 8 Uhr_"],
+            ["Dia de la setmana", "**==am==**", "_am Montag_"],
+            ["Part del dia (excepte nit)", "**==am==**", "_am Morgen_, _am Abend_"],
+            ["Nit", "**==in der==**", "_in der Nacht_"],
+            ["Migdia (àpat/moment)", "**==zu==**", "_zu Mittag_"],
+            ["Cap de setmana", "**==am==**", "_am Wochenende_"],
+            ["Mes", "**==im==**", "_im Januar_"],
+            ["Estació", "**==im==**", "_im Sommer_"],
+            ["Interval (inici → final)", "**==von... bis...==**", "_von 9 bis 17 Uhr_"]
+          ],
+          "caption": "Totes aquestes preposicions regeixen datiu; les formes _am_ i _im_ són contraccions obligatòries amb _dem_."
+        }
+      ]
+    }
+  ]
+}

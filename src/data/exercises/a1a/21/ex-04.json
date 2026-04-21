@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-21-ex-04",
+  "topicId": "A1a-21",
+  "title": "Veritat o fals sobre les preposicions temporals",
+  "prompt": "Marca si cada afirmació sobre les preposicions temporals alemanyes és certa o falsa.",
+  "difficulty": 2,
+  "tags": ["preposicions", "truefalse", "assessment", "contrast"],
+  "stimulus": {
+    "type": "text",
+    "content": "Decideix si cada afirmació és correcta (_true_) o incorrecta (_false_). Hi ha exemples bons i errors típics."
+  },
+  "interaction": {
+    "type": "trueFalse",
+    "statements": [
+      { "id": "1", "text": "_Ich gehe am Montag zum Arzt._ és correcte." },
+      { "id": "2", "text": "Per dir 'a la nit' en alemany es diu _am Nacht_." },
+      { "id": "3", "text": "_Im Januar_ significa 'al gener'." },
+      { "id": "4", "text": "Per dir 'a les 10' es diu _an 10 Uhr_." },
+      { "id": "5", "text": "_Am Wochenende_ vol dir 'el cap de setmana'." },
+      { "id": "6", "text": "Per dir 'de 8 a 16' s'usa _um 8 bis 16_." }
+    ]
+  },
+  "validation": {
+    "type": "truthMap",
+    "answers": {
+      "1": true,
+      "2": false,
+      "3": true,
+      "4": false,
+      "5": true,
+      "6": false
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has identificat les tres afirmacions correctes (_am Montag_, _im Januar_, _am Wochenende_) i les tres errònies: (2) _Nacht_ és femení → _in der Nacht_, no _am Nacht_; (4) per a hores s'usa _um_, no _an_; (6) un interval requereix _von... bis..._, no _um... bis..._."
+    },
+    "incorrect": {
+      "default": "Revisa: _am_ va amb dies (_am Montag_), parts del dia en general i cap de setmana (_am Wochenende_); _in der Nacht_ és l'excepció femenina; _im_ va amb mesos (_im Januar_) i estacions; _um_ va amb hores (_um 10 Uhr_); _von... bis..._ marca intervals."
+    }
+  }
+}

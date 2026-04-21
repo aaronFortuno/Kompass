@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-21-ex-01",
+  "topicId": "A1a-21",
+  "title": "_am_ o _im_?",
+  "prompt": "Tria la preposició temporal correcta per a cada frase. Recorda: _am_ (= _an dem_) per a dies i parts del dia; _im_ (= _in dem_) per a mesos i estacions.",
+  "difficulty": 1,
+  "tags": ["preposicions", "am", "im", "dies", "mesos", "estacions"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _{{1}} Montag gehe ich zur Arbeit._\n2. _{{2}} Januar ist es sehr kalt._\n3. _{{3}} Sommer fahren wir nach Griechenland._\n4. _{{4}} Abend sehe ich fern._",
+    "blanks": [
+      { "id": "1", "label": "preposició davant de _Montag_" },
+      { "id": "2", "label": "preposició davant de _Januar_" },
+      { "id": "3", "label": "preposició davant de _Sommer_" },
+      { "id": "4", "label": "preposició davant de _Abend_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Am", "Im", "Um", "In der"] },
+      { "blankId": "2", "options": ["Am", "Im", "Um", "In der"] },
+      { "blankId": "3", "options": ["Am", "Im", "Um", "In der"] },
+      { "blankId": "4", "options": ["Am", "Im", "Um", "In der"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Am",
+      "2": "Im",
+      "3": "Im",
+      "4": "Am"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has aplicat la regla: _am_ per dies (_am Montag_) i parts del dia (_am Abend_), _im_ per mesos (_im Januar_) i estacions (_im Sommer_). Recorda que tots dos surten de la contracció amb _dem_ (datiu masculí/neutre)."
+    },
+    "incorrect": {
+      "default": "Revisa: _am_ (= _an dem_) va amb **dies de la setmana** i **parts del dia** (excepte _in der Nacht_); _im_ (= _in dem_) va amb **mesos** i **estacions**; _um_ només amb **hores del rellotge**."
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-21-ex-05",
+  "topicId": "A1a-21",
+  "title": "Pregunta i resposta temporal",
+  "prompt": "Relaciona cada pregunta amb la resposta que porta la preposició temporal adequada.",
+  "difficulty": 2,
+  "tags": ["preposicions", "matchpairs", "wann", "assessment"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      {
+        "id": "q1",
+        "group": "Pregunta",
+        "content": { "type": "text", "content": "_Wann beginnt der Deutschkurs?_" }
+      },
+      {
+        "id": "q2",
+        "group": "Pregunta",
+        "content": { "type": "text", "content": "_Wann hast du Geburtstag?_" }
+      },
+      {
+        "id": "q3",
+        "group": "Pregunta",
+        "content": { "type": "text", "content": "_Von wann bis wann arbeitest du?_" }
+      },
+      {
+        "id": "q4",
+        "group": "Pregunta",
+        "content": { "type": "text", "content": "_Wann fährst du nach Spanien?_" }
+      },
+      {
+        "id": "q5",
+        "group": "Pregunta",
+        "content": { "type": "text", "content": "_Wann schläfst du?_" }
+      },
+      {
+        "id": "r-um",
+        "group": "Resposta",
+        "content": { "type": "text", "content": "_Um 18 Uhr._" }
+      },
+      {
+        "id": "r-juli",
+        "group": "Resposta",
+        "content": { "type": "text", "content": "_Im Juli._" }
+      },
+      {
+        "id": "r-vonbis",
+        "group": "Resposta",
+        "content": { "type": "text", "content": "_Von 9 bis 17 Uhr._" }
+      },
+      {
+        "id": "r-sommer",
+        "group": "Resposta",
+        "content": { "type": "text", "content": "_Im Sommer._" }
+      },
+      {
+        "id": "r-nacht",
+        "group": "Resposta",
+        "content": { "type": "text", "content": "_In der Nacht._" }
+      }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Pregunta",
+    "groupBLabel": "Resposta"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["q1", "r-um"],
+      ["q2", "r-juli"],
+      ["q3", "r-vonbis"],
+      ["q4", "r-sommer"],
+      ["q5", "r-nacht"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has casat cada pregunta amb la resposta que porta la preposició correcta: _Wann?_ → _um_ per hora, _im_ per mes/estació, _in der_ per la nit; _Von wann bis wann?_ → estructura _von... bis..._ amb horaris."
+    },
+    "incorrect": {
+      "default": "Repassa: _um + hora_ (18 Uhr), _im + mes/estació_ (Juli, Sommer), _in der Nacht_ (excepció femenina), i un interval sempre demana _von... bis..._. La pregunta _Von wann bis wann?_ només encaixa amb una resposta d'interval."
+    }
+  }
+}

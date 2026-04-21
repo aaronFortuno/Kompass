@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-21-ex-02",
+  "topicId": "A1a-21",
+  "title": "Un punt o un interval?",
+  "prompt": "Tria la frase correcta en alemany per expressar un interval horari.",
+  "difficulty": 1,
+  "tags": ["preposicions", "um", "von-bis", "interval"],
+  "stimulus": {
+    "type": "text",
+    "content": "Quina frase és correcta per dir _'Treballo de 9 a 17'_?"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "a", "label": "_Ich arbeite um 9 bis 17 Uhr._" },
+      { "id": "b", "label": "_Ich arbeite von 9 bis 17 Uhr._" },
+      { "id": "c", "label": "_Ich arbeite am 9 bis 17 Uhr._" },
+      { "id": "d", "label": "_Ich arbeite im 9 bis 17 Uhr._" }
+    ]
+  },
+  "validation": {
+    "type": "exactMatch",
+    "answer": "b"
+  },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. Per a un **interval** s'usa sempre el parell **_von... bis..._** (des de... fins a...). _um_ només serveix per marcar **un sol punt** horari (_um 9_ = a les 9)."
+    },
+    "incorrect": {
+      "default": "L'estructura és **_von + inici_ + _bis + final_**: _**von** 9 **bis** 17 Uhr_. No es pot dir _~~um 9 bis 17~~_: _um_ indica un sol moment, no un interval. _am_ va amb dies i _im_ amb mesos o estacions, no amb hores."
+    }
+  }
+}

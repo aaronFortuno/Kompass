@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-21-ex-06",
+  "topicId": "A1a-21",
+  "title": "La rutina d'en Markus",
+  "prompt": "Escriu la preposició correcta a cada buit. Aquest exercici integra totes les preposicions temporals del tema (_um_, _am_, _im_, _in der_, _zu_, _von... bis..._). Fixa't en majúscules al principi de frase.",
+  "difficulty": 3,
+  "tags": ["preposicions", "typein", "integrador", "assessment", "v2"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Hallo, ich heiße Markus. {{1}} Montag bis {{2}} Freitag arbeite ich {{3}} einer Schule.\nIch stehe {{4}} 6 Uhr auf und fahre {{5}} 7 Uhr mit dem Bus zur Arbeit.\n{{6}} Morgen trinke ich einen Kaffee, und {{7}} Mittag esse ich in der Mensa.\n{{8}} Wochenende treffe ich meine Freunde. {{9}} Nacht schlafe ich sehr gut.\n{{10}} Juli und {{11}} August habe ich Ferien: {{12}} Sommer fahre ich immer ans Meer.",
+    "blanks": [
+      { "id": "1", "label": "de dilluns (preposició)" },
+      { "id": "2", "label": "a divendres (preposició)" },
+      { "id": "3", "label": "(preposició + article femení datiu) una escola" },
+      { "id": "4", "label": "a les 6 (preposició)" },
+      { "id": "5", "label": "a les 7 (preposició)" },
+      { "id": "6", "label": "al matí (preposició contreta)" },
+      { "id": "7", "label": "al migdia (preposició sense article)" },
+      { "id": "8", "label": "el cap de setmana (preposició contreta)" },
+      { "id": "9", "label": "a la nit (preposició + article)" },
+      { "id": "10", "label": "al juliol (preposició contreta)" },
+      { "id": "11", "label": "a l'agost (preposició contreta)" },
+      { "id": "12", "label": "a l'estiu (preposició contreta)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Von…" },
+      { "blankId": "2", "placeholder": "bis…" },
+      { "blankId": "3", "placeholder": "in…" },
+      { "blankId": "4", "placeholder": "um…" },
+      { "blankId": "5", "placeholder": "um…" },
+      { "blankId": "6", "placeholder": "Am…" },
+      { "blankId": "7", "placeholder": "zu…" },
+      { "blankId": "8", "placeholder": "Am…" },
+      { "blankId": "9", "placeholder": "In der…" },
+      { "blankId": "10", "placeholder": "Im…" },
+      { "blankId": "11", "placeholder": "im…" },
+      { "blankId": "12", "placeholder": "Im…" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Von",
+      "2": "bis",
+      "3": "in",
+      "4": "um",
+      "5": "um",
+      "6": "Am",
+      "7": "zu",
+      "8": "Am",
+      "9": "In der",
+      "10": "Im",
+      "11": "im",
+      "12": "Im"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Impecable. Has integrat totes les peces del tema: (1) l'interval _von Montag bis Freitag_; (2) les hores amb _um_ (_um 6_, _um 7_); (3) les parts del dia amb _am_ (_am Morgen_) i l'excepció _zu Mittag_; (4) el cap de setmana _am Wochenende_ i l'excepció femenina _in der Nacht_; (5) mesos i estacions amb _im_ (_im Juli, im August, im Sommer_). Quan el complement obre la frase, majúscula i inversió V2 (_**Am Wochenende** treffe ich..._)."
+    },
+    "incorrect": {
+      "default": "Revisa el quadre resum: hores → _um_; interval → _von... bis..._; dies i parts del dia → _am_ (excepte _in der Nacht_ i _zu Mittag_); cap de setmana → _am Wochenende_; mesos i estacions → _im_. Al principi de frase, majúscula i verb a la posició 2."
+    }
+  }
+}

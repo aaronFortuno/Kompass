@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-21-ex-03",
+  "topicId": "A1a-21",
+  "title": "La setmana de l'Anna",
+  "prompt": "Completa el text amb la preposició correcta a cada buit. Vigila: hi ha hores, dies, parts del dia, mesos i estacions barrejats.",
+  "difficulty": 2,
+  "tags": ["preposicions", "am", "im", "um", "text", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Anna hat eine volle Woche. {{1}} Montag beginnt sie {{2}} 9 Uhr zu arbeiten.\n{{3}} Dienstag geht sie {{4}} Abend zum Deutschkurs.\n{{5}} Juli macht sie Urlaub: sie fährt {{6}} Sommer immer nach Italien.\n{{7}} Wochenende schläft sie lange.",
+    "blanks": [
+      { "id": "1", "label": "preposició davant de _Montag_" },
+      { "id": "2", "label": "preposició davant de _9 Uhr_" },
+      { "id": "3", "label": "preposició davant de _Dienstag_" },
+      { "id": "4", "label": "preposició davant de _Abend_" },
+      { "id": "5", "label": "preposició davant de _Juli_" },
+      { "id": "6", "label": "preposició davant de _Sommer_" },
+      { "id": "7", "label": "preposició davant de _Wochenende_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Am", "Im", "Um", "An"] },
+      { "blankId": "2", "options": ["am", "im", "um", "in"] },
+      { "blankId": "3", "options": ["Am", "Im", "Um", "In der"] },
+      { "blankId": "4", "options": ["am", "im", "um", "in der"] },
+      { "blankId": "5", "options": ["Am", "Im", "Um", "An dem"] },
+      { "blankId": "6", "options": ["am", "im", "um", "in der"] },
+      { "blankId": "7", "options": ["Am", "Im", "Um", "In der"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Am",
+      "2": "um",
+      "3": "Am",
+      "4": "am",
+      "5": "Im",
+      "6": "im",
+      "7": "Am"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has aplicat les tres regles: _am_ per dies i parts del dia (_am Montag_, _am Abend_, _am Wochenende_), _im_ per mesos i estacions (_im Juli_, _im Sommer_), _um_ per hores del rellotge (_um 9 Uhr_)."
+    },
+    "incorrect": {
+      "default": "Revisa el quadre resum: _am_ (= _an dem_) → dies + parts del dia; _im_ (= _in dem_) → mesos + estacions; _um_ → hores. I recorda que _an dem_ i _in dem_ **sempre** es contreuen a _am_ i _im_ en text normal."
+    }
+  }
+}
