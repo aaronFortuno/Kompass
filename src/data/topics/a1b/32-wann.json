@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-32",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 32,
+  "title": "Wann? — Preposicions temporals (consolidació i ampliació)",
+  "shortTitle": "Wann",
+  "description": "Consolidació d'_am / im / um_ (A1a-21) i ampliació amb _vor / nach_ + Dativ, _in_ + any, _zu_ + festes, i complement temporal en acusatiu sense preposició.",
+  "axes": ["expressions-i-funcions", "preposicions"],
+  "prerequisites": ["A1a-21"],
+  "estimatedMinutes": 30,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Context: què sabies i què aprens avui\n\nA **A1a-21** vas conèixer el nucli dur: tres preposicions temporals per a tres àmbits del calendari."
+        },
+        {
+          "type": "table",
+          "title": "32.1 El trio bàsic (A1a-21)",
+          "headers": ["Quan vull dir...", "Preposició", "Exemple"],
+          "rows": [
+            ["**hora del rellotge**", "==**um**==", "_um 8 Uhr_"],
+            ["**dia de la setmana**", "==**am**==", "_am Montag_"],
+            ["**part del dia** (no la nit)", "==**am**==", "_am Morgen_"],
+            ["**nit**", "==**in der**==", "_in der Nacht_"],
+            ["**mes**", "==**im**==", "_im Januar_"],
+            ["**estació**", "==**im**==", "_im Sommer_"],
+            ["**cap de setmana**", "==**am**==", "_am Wochenende_"],
+            ["**interval**", "==**von... bis...**==", "_von 9 bis 17 Uhr_"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Això continua sent el **cor** del sistema i no canvia. Ara, amb A1b-32, hi afegim peces noves que et caldran tan bon punt parlis del passat, de dates històriques o de celebracions:\n\n- ==**vor** + Dativ==: _abans de_ (un fet o una quantitat de temps enrere). _Ich bin **vor 15 Jahren** nach Deutschland gekommen._\n- ==**nach** + Dativ==: _després de_ (un esdeveniment o un moment). _Nach dem Frühstück gehe ich zur Arbeit._\n- ==**in** + any==: per a les dates històriques modernes. _Ich bin **im Jahr 1990** geboren_ (o simplement _1990_ sense preposició).\n- ==**zu** + festes==: _zu Weihnachten, zu Ostern_.\n- **Complement temporal sense preposició → acusatiu:** _Ich mache **dieses Jahr** mein Abitur._ (_diesen Monat, letzte Woche, nächsten Sommer_...)"
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Idea clau d'aquesta sessió",
+          "body": "Del PDF de l'IOC: _\"Amb la pregunta **Wann...?** preguntem per un moment concret o per la durada d'una acció.\"_ I una regla nova, silenciosa però importantíssima per al proper bloc: ==quan responem amb un complement que no porta preposició, aquest complement es declina en **acusatiu**==."
+        }
+      ]
+    },
+    {
+      "id": "repas-am-im-um",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Repàs ràpid: _am / im / um_ (A1a-21)\n\nAbans d'afegir res, verifica que tens sòlid el trio. Tres frases tipus, tres preposicions diferents:\n\n- _Wann beginnt der Kurs? — Der Kurs beginnt **um 9**._ → **um** + hora\n- _Wann arbeitest du? — Ich arbeite **von 9 bis 5**._ → **von... bis...** + interval\n- _Wann bist du beim Arzt? — Ich bin **um 3** beim Arzt._ → **um** + hora\n\nDies i parts del dia amb **am**:\n\n- _Ich habe **am Montag** Deutschkurs._ (dia)\n- _Ich trinke **am Morgen** Kaffee._ (part del dia)\n- _Ich arbeite **am Wochenende**._ (cap de setmana)\n\nMesos i estacions amb **im**:\n\n- _**Im Januar** ist es kalt._ (mes)\n- _**Im Sommer** fahren wir nach Italien._ (estació)\n\nL'excepció de la nit (_Nacht_ és femení → no contracció):\n\n- _Ich schlafe **in der Nacht**._\n\nI l'excepció lèxica: _zu Mittag essen_ (dinar), sense article."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Recorda el tret clau",
+          "body": "L'alemany **sempre** porta preposició amb aquests complements. Dir _~~Montag gehe ich zum Arzt~~_ (calc del castellà) és un dels errors més habituals. Cal ==_Am Montag_==."
+        }
+      ]
+    },
+    {
+      "id": "vor-dativ",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### ==**vor** + Dativ==: situar un fet en el passat\n\nEntrem en territori nou. La preposició ==**vor**== (literalment _davant de_) té també un **ús temporal** molt freqüent, sobretot amb el Perfekt que acabes de tancar a A1b-30. Significa ==**fa** (una quantitat de temps)== o ==**abans de** (un esdeveniment)==.\n\n**Estructura:** ==**vor** + Dativ== (un grup nominal en datiu).\n\n> _Ich bin **vor 15 Jahren** nach Deutschland gekommen._ (Vaig venir a Alemanya **fa 15 anys**.)\n\nObserva tres coses:\n\n1. El verb és en **Perfekt** (_bin... gekommen_) — típic. _vor_ + Dativ sol aparèixer amb el passat.\n2. El complement _vor 15 Jahren_ respon a ==**Wann?**== (_Wann bist du nach Deutschland gekommen? — Vor 15 Jahren._)\n3. _Jahren_ porta una ==**-n**== final. És el marcador del datiu plural: ==tots els substantius en datiu plural afegeixen **-n**== (si no la tenen ja). Així: _Jahr → Jahre → Jahren_, _Tag → Tage → Tagen_, _Monat → Monate → Monaten_, _Stunde → Stunden → Stunden_ (ja acaba en -n).\n\n**Més exemples bàsics (quantitat de temps):**\n\n- _Ich habe **vor einer Stunde** gegessen._ (Fa una hora que he menjat.) — _einer_ = datiu femení singular.\n- _Er ist **vor zwei Tagen** angekommen._ (Va arribar fa dos dies.)\n- _Wir haben uns **vor einem Monat** kennengelernt._ (Ens vam conèixer fa un mes.) — _einem_ = datiu masculí singular.\n- _Sie ist **vor drei Jahren** nach Berlin gezogen._ (Es va mudar a Berlín fa tres anys.)\n\n**Amb esdeveniment (no quantitat):**\n\n- _**Vor dem Essen** wasche ich mir die Hände._ (Abans de menjar em rento les mans.)\n- _**Vor dem Unterricht** trinke ich einen Kaffee._ (Abans de classe bec un cafè.)\n- _**Vor der Arbeit** gehe ich joggen._ (Abans de la feina vaig a córrer.)"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Truc de declinació ràpida (recordatori A1b)",
+          "body": "El datiu dels articles definits: **der→dem, die→der, das→dem, die (pl.)→den + -n**. El dels indefinits: **ein→einem, eine→einer, ein→einem**. Aquesta és la taula que repeteixes mentalment cada cop que veus _vor, nach, mit, von, zu, bei, aus, seit_ — totes les preposicions de **datiu pur** d'A1b."
+        },
+        {
+          "type": "explanation",
+          "body": "**Contrast català–alemany.** El català té una sola paraula: _fa_. L'alemany en té una: _vor + Dativ_. No hi ha _~~seit 15 Jahren~~_ per dir _fa 15 anys_ amb sentit de punt passat acabat: _seit_ significa **des de fa** (acció que dura fins ara). Distingeix-los:\n\n- _Ich bin **vor 15 Jahren** gekommen._ (Vaig venir fa 15 anys — el fet va passar i s'ha acabat.)\n- _Ich wohne **seit 15 Jahren** hier._ (Visc aquí des de fa 15 anys — continuo vivint-hi.)"
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Parany",
+          "body": "Els catalanoparlants sovint diuen _~~vor 15 Jahre~~_. No: datiu plural porta **-n**. És ==_vor 15 Jahren_=="
+        }
+      ]
+    },
+    {
+      "id": "nach-dativ",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### ==**nach** + Dativ==: situar un fet després d'un altre\n\nLa germana simètrica de _vor_ és ==**nach**==: _després de_. També regeix ==**Dativ**==.\n\n**Estructura:** ==**nach** + Dativ==.\n\n**Exemples:**\n\n- _**Nach dem Frühstück** gehe ich zur Arbeit._ (Després d'esmorzar vaig a la feina.)\n- _**Nach der Schule** spielen die Kinder im Park._ (Després de l'escola els nens juguen al parc.)\n- _**Nach dem Essen** trinken wir einen Kaffee._ (Després de menjar bevem un cafè.)\n- _**Nach dem Kurs** fahre ich nach Hause._ (Després del curs vaig cap a casa.)\n- _**Nach einer Stunde** war ich müde._ (Al cap d'una hora estava cansat.)\n\n**Parell simètric _vor / nach_**, molt útil per estructurar una narració:\n\n> _==Vor dem Essen== wasche ich mir die Hände. ==Nach dem Essen== trinke ich einen Kaffee._"
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Atenció al doble sentit de _nach_",
+          "body": "La mateixa preposició també serveix per a **direcció cap a una ciutat/país** (_ich fahre nach Berlin_). El context aclareix: si darrere hi ha una ciutat/país sense article (_nach Berlin, nach Italien_), és direccional; si hi ha un grup nominal amb article en datiu (_nach dem Essen, nach der Arbeit_), és temporal."
+        }
+      ]
+    },
+    {
+      "id": "in-any",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### ==**in** + any==: dates històriques\n\nPer a un **any concret** hi ha dues opcions en alemany, totes dues correctes i freqüents:\n\n1. ==**Any sol, sense preposició**== (el més habitual en registre estàndard):\n   _Ich bin **1990** geboren._ (Vaig néixer el 1990.)\n   _Die Mauer fiel **1989**._ (El mur va caure el 1989.)\n\n2. ==**_im Jahr(e)_ + any**== (registre una mica més formal o quan vols emfatitzar):\n   _Ich bin **im Jahr 1990** geboren._\n   _Goethe starb **im Jahre 1832**._"
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Parany important: l'anglicisme _in_ + any",
+          "body": "En alemany, a diferència de l'anglès o l'espanyol col·loquial, ==**NO es diu _~~in 1990~~_**== per dir _el 1990_. Això és un **anglicisme** que cal evitar. Les formes correctes són:\n\n- ✅ _1990_ (sol, sense preposició)\n- ✅ _im Jahr 1990_ / _im Jahre 1990_\n- ❌ _~~in 1990~~_"
+        },
+        {
+          "type": "explanation",
+          "body": "**Exemples contextualitzats:**\n\n- _Meine Eltern haben sich **1985** kennengelernt._ (Els meus pares es van conèixer el 1985.)\n- _Er ist **im Jahr 2001** nach Deutschland gekommen._ (Va venir a Alemanya l'any 2001.)\n- _Der Zweite Weltkrieg endete **1945**._ (La Segona Guerra Mundial va acabar el 1945.)"
+        }
+      ]
+    },
+    {
+      "id": "zu-festes",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### ==**zu** + festes==: celebracions i dates especials\n\nPer a les **festivitats** i algunes ocasions socials, l'alemany fa servir ==**zu**== + Dativ (sovint sense article quan el nom de la festa funciona com a nom propi)."
+        },
+        {
+          "type": "table",
+          "title": "32.2 Festes principals amb _zu_",
+          "headers": ["Alemany", "Català"],
+          "rows": [
+            ["**zu** Weihnachten", "per Nadal"],
+            ["**zu** Ostern", "per Pasqua"],
+            ["**zu** Silvester", "per Cap d'Any"],
+            ["**zu** Neujahr", "per Any Nou"],
+            ["**zu** Pfingsten", "per Pentecosta"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Exemples:**\n\n- _==Zu Weihnachten== fahre ich zu meiner Familie._ (Per Nadal vaig a casa de la família.)\n- _==Zu Ostern== gibt es Schokoladeneier._ (Per Pasqua hi ha ous de xocolata.)\n- _Was machst du ==zu Silvester==?_ (Què fas per Cap d'Any?)\n\n**També amb ocasions personals** (amb article en datiu):\n\n- _==Zum Geburtstag== schenke ich dir ein Buch._ (Pel teu aniversari et regalo un llibre.) — _zum = zu + dem_ (contracció obligatòria amb datiu masculí/neutre).\n- _==Zur Hochzeit== kamen viele Gäste._ (Al casament van venir molts convidats.) — _zur = zu + der_ (datiu femení)."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Alternativa regional: _an_",
+          "body": "A l'alemany del sud i Àustria també es pot sentir _an Weihnachten, an Ostern_. Totes dues formes són admissibles, però ==_zu_== és l'estàndard que recomanem aprendre primer."
+        }
+      ]
+    },
+    {
+      "id": "acusatiu-sense-preposicio",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Complement temporal **sense preposició** → ==Acusatiu==\n\nAquesta és la regla invisible més potent d'aquesta lliçó. Del PDF:\n\n> _\"Quan responem amb un complement que no porta preposició, aquest complement es declina en **acusatiu**.\"_\n>\n> Exemple: _Ich mache **dieses Jahr** mein Abitur._ (Aquest any em trec el batxillerat.)\n\n**Per què acusatiu?** Perquè el grup nominal _dieses Jahr_ no té cap preposició davant que el reculli. En alemany, un grup nominal **nu** que fa de complement temporal es marca morfològicament en ==acusatiu==. És un patró que veuràs moltes vegades."
+        },
+        {
+          "type": "table",
+          "title": "32.3 Els quatre determinants més freqüents a A1",
+          "headers": ["Període", "Masculí (_der Tag, der Monat_)", "Femení (_die Woche_)", "Neutre (_das Jahr_)", "Plural"],
+          "rows": [
+            ["**aquest/a**", "_diesen Tag / Monat_", "_diese Woche_", "_dieses Jahr_", "_diese Tage_"],
+            ["**següent**", "_nächsten Tag / Monat_", "_nächste Woche_", "_nächstes Jahr_", "_nächste Tage_"],
+            ["**passat/anterior**", "_letzten Tag / Monat_", "_letzte Woche_", "_letztes Jahr_", "_letzte Tage_"],
+            ["**cada**", "_jeden Tag / Monat_", "_jede Woche_", "_jedes Jahr_", "—"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Clau de memòria",
+          "body": "Els canvis respecte del nominatiu només afecten el **masculí**: ==_diesen, nächsten, letzten, jeden_== (amb _-en_). Femení, neutre i plural no varien visiblement respecte del nominatiu. És la típica asimetria d'acusatiu que ja coneixes d'A1b-7."
+        },
+        {
+          "type": "explanation",
+          "body": "**Exemples:**\n\n- _Ich fahre **nächstes Jahr** nach Spanien._ (L'any que ve vaig a Espanya.)\n- _==Letzten Monat== habe ich viel gearbeitet._ (El mes passat vaig treballar molt.)\n- _==Diese Woche== habe ich keinen Termin._ (Aquesta setmana no tinc cap cita.)\n- _Er lernt ==jeden Tag== Deutsch._ (Estudia alemany cada dia.)\n- _==Nächsten Sommer== fahren wir ans Meer._ (L'estiu que ve anem al mar.)"
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Contrast amb A1a-21",
+          "body": "Amb _im Sommer_ dius _a l'estiu_ en abstracte (qualsevol estiu, o un estiu concret pel context). Amb _nächsten Sommer_ dius **_l'estiu que ve_** — un punt concret del futur. No són intercanviables: cada una respon a una necessitat comunicativa diferent."
+        }
+      ]
+    },
+    {
+      "id": "von-bis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Refresc: ==**Von wann bis wann?**== i _von... bis..._\n\nJa surt a A1a-21, però val la pena confirmar-lo perquè forma part central del _Wann?_ ampliat. Per marcar un **interval** amb inici i final, l'estructura és:\n\n> ==**von** + [inici] + **bis** + [final]==\n\n**Hores:**\n- _Ich arbeite **von 9 bis 17 Uhr**._\n- _Der Supermarkt ist **von 8 bis 20 Uhr** geöffnet._\n\n**Dies:**\n- _Ich lerne Deutsch **von Montag bis Freitag**._\n- _Der Kurs geht **von September bis Juni**._\n\n**Anys:**\n- _Er hat **von 2015 bis 2020** in Berlin gewohnt._\n\n> _**Von wann bis wann** arbeitest du? — Ich arbeite **von 9 bis 5**._\n\nLa pregunta ==**Von wann bis wann?**== només demana **intervals**; amb un sol punt tornem a ==**Wann?**=="
+        }
+      ]
+    },
+    {
+      "id": "quadre-sintesi",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Quadre-síntesi definitiu (A1a-21 + A1b-32)\n\nAquesta taula és la **referència completa** per respondre _Wann?_ i _Von wann bis wann?_ al nivell A1. Interioritza-la bé: la major part d'A2 es construirà sobre aquest esquelet."
+        },
+        {
+          "type": "table",
+          "title": "32.4 Tot el sistema de _Wann?_ a A1",
+          "headers": ["Tipus de moment", "Preposició / cas", "Exemple"],
+          "rows": [
+            ["**hora**", "==**um**==", "_um 8 Uhr_"],
+            ["**dia de la setmana**", "==**am**==", "_am Montag_"],
+            ["**part del dia**", "==**am**== / ==_in der_== (nit)", "_am Morgen_, _in der Nacht_"],
+            ["**migdia (àpat)**", "==**zu**== (sense article)", "_zu Mittag essen_"],
+            ["**cap de setmana**", "==**am**==", "_am Wochenende_"],
+            ["**mes**", "==**im**==", "_im Januar_"],
+            ["**estació**", "==**im**==", "_im Sommer_"],
+            ["**any (data històrica)**", "==**∅**== o ==**im Jahr**==", "_1990_ / _im Jahr 1990_"],
+            ["**festa**", "==**zu**==", "_zu Weihnachten_"],
+            ["**quantitat enrere / abans de**", "==**vor**== + Dativ", "_vor 15 Jahren_, _vor dem Essen_"],
+            ["**després de**", "==**nach**== + Dativ", "_nach der Arbeit_"],
+            ["**interval**", "==**von... bis...**==", "_von 9 bis 17 Uhr_"],
+            ["**aquest/últim/proper/cada + període**", "==**∅**== + Akkusativ", "_dieses Jahr, letzte Woche, nächsten Sommer, jeden Tag_"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quick-check-prep",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-32-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "ampliacio-pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys específics d'A1b-32\n\n**1. Dir _~~in 1990~~_ per _el 1990_.**\nAnglicisme directe. En alemany no s'usa _in_ amb un any sol.\n\n> Incorrecte: ~~_Ich bin **in 1990** geboren._~~\n> Correcte: _Ich bin **1990** geboren._ / _Ich bin **im Jahr 1990** geboren._\n\n**2. Oblidar la _-n_ del datiu plural amb _vor_.**\nÉs la marca morfològica clau.\n\n> Incorrecte: ~~_vor 15 Jahre_~~\n> Correcte: _==vor 15 Jahren==_\n\nIgual amb _vor zwei Tagen, vor drei Monaten, vor vielen Stunden_.\n\n**3. Confondre _vor_ (fa) amb _seit_ (des de fa).**\nSón punts diferents del temps.\n\n> _==Vor 15 Jahren== bin ich gekommen._ — fet acabat, passat puntual.\n> _==Seit 15 Jahren== wohne ich hier._ — acció que dura fins ara.\n\n**4. Oblidar que _dieses/nächstes/letztes/jedes + període_ va en acusatiu, no en nominatiu.**\nL'única marca visible, recorda, és al **masculí**: _dies**en** Tag, nächst**en** Monat, letzt**en** Sommer, jed**en** Tag_.\n\n> Incorrecte: ~~_Ich fahre **nächster Sommer** nach Italien._~~\n> Correcte: _Ich fahre ==nächsten Sommer== nach Italien._\n\n**5. Posar una preposició quan el complement ja és en acusatiu nu.**\n_Dieses Jahr_ ja és un complement temporal complet. No hi va preposició.\n\n> Incorrecte: ~~_Im dieses Jahr mache ich mein Abitur._~~\n> Correcte: _==Dieses Jahr== mache ich mein Abitur._"
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Paranys 6, 7 i 8",
+          "body": "**6. Confondre _nach_ temporal amb _nach_ direccional.** Si va amb un grup nominal amb article (datiu), és temporal. Si va amb una ciutat o país sense article, és direccional: _==Nach dem Essen== trinken wir Kaffee_ (temporal) vs. _==Nach Berlin== fahren wir morgen_ (direccional).\n\n**7. Contraure _zu + dem_ / _zu + der_ incorrectament.** ==**zu + dem = zum**== (masculí/neutre): _zum Geburtstag_. ==**zu + der = zur**== (femení): _zur Hochzeit_. Amb noms de festes sol anar **sense article** (_zu Weihnachten_), però amb noms comuns amb article la contracció és obligatòria.\n\n**8. Posar el complement entre subjecte i verb (V2).** A la posició 1 (amb inversió) o després del verb, mai entremig. _==Vor 15 Jahren== bin ich gekommen._ / _Ich bin ==vor 15 Jahren== gekommen._"
+        }
+      ]
+    },
+    {
+      "id": "quick-check-akkusativ",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-32-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-32-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-32-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-32-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-32-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi\n\nAmb A1b-32 has **tancat el sistema complet** de resposta a la pregunta ==**Wann?**== al nivell A1. El trio d'A1a-21 (==**um** / **am** / **im**==) era el nucli operatiu del dia a dia (hores, dies, mesos, estacions); ara hi suma les peces que et calien per parlar del passat, de dates històriques i de celebracions."
+        },
+        {
+          "type": "table",
+          "title": "32.5 Les peces noves d'A1b-32",
+          "headers": ["Peça", "Funció", "Exemple"],
+          "rows": [
+            ["==**vor** + Dativ==", "_fa_ / _abans de_", "_vor 15 Jahren, vor dem Essen_"],
+            ["==**nach** + Dativ==", "_després de_", "_nach der Arbeit_"],
+            ["==**in** + any==", "data històrica (forma estàndard: any sol, o _im Jahr_ + any)", "_1990_ / _im Jahr 1990_"],
+            ["==**zu** + festes==", "celebració", "_zu Weihnachten, zu Ostern_"],
+            ["==**∅** + Akkusativ==", "complement temporal **sense preposició**", "_dieses Jahr, nächsten Sommer, letzte Woche, jeden Tag_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Tres punts de vigilància",
+          "body": "**(1)** El **datiu plural** de _vor_ porta sempre ==**-n**== final (_vor 15 Jahren_). **(2)** _vor_ (_fa_) i _seit_ (_des de fa_) NO són intercanviables: el primer és passat acabat, el segon és acció que dura. **(3)** Els complements en acusatiu nu només mostren el canvi visible al **masculí** (_-en_: _nächsten, diesen, letzten, jeden_); femení, neutre i plural no canvien."
+        },
+        {
+          "type": "explanation",
+          "body": "**Properes etapes.** A2 ampliarà el repertori amb _innerhalb, während, seit, ab, bis zu, gegen, zwischen_ i consolidarà l'ordre intern TeKaMoLo quan hi ha diversos complements temporals alhora. Amb el que tens ara ja pots explicar quan va passar una cosa, des de quan fins a quan dura, abans i després de quin esdeveniment, i quin any concret o quina festa marca el moment. El sistema _Wann?_ a A1 queda tancat."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-32-ex-04",
+  "topicId": "A1b-32",
+  "title": "vor vs. seit, nach + Dativ, zu + festes, acusatiu nu",
+  "prompt": "Tria la versió ==**correcta**== per a cada equivalència català → alemany. Aquest exercici integra cinc punts clau d'A1b-32.",
+  "difficulty": 3,
+  "tags": ["vor-vs-seit", "dativ", "zu-festes", "akkusativ-nu", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _\"Vaig arribar fa dos anys.\"_ → {{1}}\n\n2. _\"Visc a Berlín des de fa cinc anys.\"_ → {{2}}\n\n3. _\"Després de la feina vaig a córrer.\"_ → {{3}}\n\n4. _\"Pel meu aniversari.\"_ → {{4}}\n\n5. _\"L'any que ve aprenc italià.\"_ → {{5}}",
+    "blanks": [
+      { "id": "1", "label": "1. fa dos anys (passat acabat)" },
+      { "id": "2", "label": "2. des de fa cinc anys (acció en curs)" },
+      { "id": "3", "label": "3. després de la feina" },
+      { "id": "4", "label": "4. pel meu aniversari" },
+      { "id": "5", "label": "5. l'any que ve" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "1",
+        "options": [
+          "Ich bin seit zwei Jahren angekommen.",
+          "Ich bin vor zwei Jahre angekommen.",
+          "Ich bin vor zwei Jahren angekommen.",
+          "Ich bin in zwei Jahren angekommen."
+        ]
+      },
+      {
+        "blankId": "2",
+        "options": [
+          "Ich wohne vor fünf Jahren in Berlin.",
+          "Ich wohne seit fünf Jahren in Berlin.",
+          "Ich wohne nach fünf Jahren in Berlin.",
+          "Ich wohne in fünf Jahre in Berlin."
+        ]
+      },
+      {
+        "blankId": "3",
+        "options": [
+          "Vor der Arbeit gehe ich joggen.",
+          "Nach der Arbeit gehe ich joggen.",
+          "Nach die Arbeit gehe ich joggen.",
+          "Nach Arbeit gehe ich joggen."
+        ]
+      },
+      {
+        "blankId": "4",
+        "options": [
+          "zu mein Geburtstag",
+          "an meinem Geburtstag",
+          "zu meinem Geburtstag",
+          "im Geburtstag"
+        ]
+      },
+      {
+        "blankId": "5",
+        "options": [
+          "Im nächsten Jahr lerne ich Italienisch.",
+          "Nächster Jahr lerne ich Italienisch.",
+          "Nächstes Jahr lerne ich Italienisch.",
+          "An nächstes Jahr lerne ich Italienisch."
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Ich bin vor zwei Jahren angekommen.",
+      "2": "Ich wohne seit fünf Jahren in Berlin.",
+      "3": "Nach der Arbeit gehe ich joggen.",
+      "4": "zu meinem Geburtstag",
+      "5": "Nächstes Jahr lerne ich Italienisch."
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has distingit les cinc claus: (1) ==**_vor_ + Dativ**== amb plural _-en_ per a _fa X temps_ (passat acabat); (2) ==**_seit_**== (no _vor_) per a acció que continua fins ara; (3) ==**_nach_ + Dativ**== (_der Arbeit_, no _die_!); (4) ==**_zu mein**em** Geburtstag_**== (datiu masculí); (5) complement nu ==**_nächstes Jahr_**== en acusatiu neutre (sense preposició).",
+      "references": ["A1b-32"]
+    },
+    "incorrect": {
+      "default": "Repassa: _vor_ → passat acabat, _seit_ → acció en curs. _nach_ i _vor_ regeixen ==**Dativ**== (der→dem, die→der, pl. +n). Festes i aniversaris: _zu_ + Dativ. Períodes amb _nächstes/dieses/letztes_ → ==**acusatiu nu**==, sense preposició.",
+      "byResponse": [
+        {
+          "match": { "1": "Ich bin seit zwei Jahren angekommen." },
+          "message": "_seit_ vol dir _des de fa_ (acció en curs). _angekommen_ és un **fet puntual passat** → cal ==**vor**==: _Ich bin **vor** zwei Jahren angekommen._"
+        },
+        {
+          "match": { "1": "Ich bin vor zwei Jahre angekommen." },
+          "message": "==Error típic==: oblidar la _-n_ del **datiu plural**. _Jahre → Jahren_. Correcte: _vor zwei ==**Jahren**==_."
+        },
+        {
+          "match": { "1": "Ich bin in zwei Jahren angekommen." },
+          "message": "_in zwei Jahren_ vol dir _d'aquí a dos anys_ (futur). Per a _fa dos anys_ (passat) cal ==**vor zwei Jahren**==."
+        },
+        {
+          "match": { "2": "Ich wohne vor fünf Jahren in Berlin." },
+          "message": "_vor_ és passat acabat. _Ich wohne_ és acció que **continua fins ara** → cal ==**seit**==: _Ich wohne **seit** fünf Jahren in Berlin._"
+        },
+        {
+          "match": { "2": "Ich wohne nach fünf Jahren in Berlin." },
+          "message": "_nach fünf Jahren_ vol dir _al cap de cinc anys_ (des d'un punt donat), no _des de fa cinc anys_. Cal ==**seit**==."
+        },
+        {
+          "match": { "3": "Vor der Arbeit gehe ich joggen." },
+          "message": "_Vor der Arbeit_ significa _**abans** de la feina_. Si l'acció és **després**, cal ==**Nach der Arbeit**==."
+        },
+        {
+          "match": { "3": "Nach die Arbeit gehe ich joggen." },
+          "message": "_nach_ regeix ==**Dativ**==. _die Arbeit_ és femení; datiu femení → _der_. Correcte: _Nach ==**der**== Arbeit_."
+        },
+        {
+          "match": { "3": "Nach Arbeit gehe ich joggen." },
+          "message": "Falta l'article. _Arbeit_ és un substantiu comptable; cal datiu femení: _Nach ==**der**== Arbeit_."
+        },
+        {
+          "match": { "4": "zu mein Geburtstag" },
+          "message": "_zu_ regeix ==**Dativ**==. Possessiu masculí en datiu: _mein → mein**em**_. Correcte: _zu ==**meinem**== Geburtstag_."
+        },
+        {
+          "match": { "4": "im Geburtstag" },
+          "message": "_im Geburtstag_ no és natural. Per a aniversaris i ocasions personals cal ==**zu + Dativ**==: _zum Geburtstag_ (genèric) o _zu meinem Geburtstag_ (amb possessiu)."
+        },
+        {
+          "match": { "5": "Im nächsten Jahr lerne ich Italienisch." },
+          "message": "_Im nächsten Jahr_ no és incorrecte del tot, però l'estàndard A1 prefereix la forma **sense preposició** en acusatiu: ==**Nächstes Jahr**==. Aquí és l'opció canònica."
+        },
+        {
+          "match": { "5": "Nächster Jahr lerne ich Italienisch." },
+          "message": "_Jahr_ és **neutre** (_das Jahr_), no masculí. Acusatiu neutre → ==**Nächstes**== Jahr."
+        },
+        {
+          "match": { "5": "An nächstes Jahr lerne ich Italienisch." },
+          "message": "Amb el determinant _nächstes_, el complement ja és complet i va **sense preposició** (acusatiu nu): ==**Nächstes Jahr**==."
+        }
+      ]
+    }
+  }
+}

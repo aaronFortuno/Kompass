@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-32-ex-06",
+  "topicId": "A1b-32",
+  "title": "Biografia de Markus — producció integrada",
+  "prompt": "Reconstrueix la biografia de Markus escrivint la paraula que falta a cada buit. Integra tot el sistema _Wann?_: _vor_ + Dativ, preposicions contretes, intervals, parts del dia, acusatiu nu i festes. Fixa't en la ==**majúscula**== quan el complement obre la frase.",
+  "difficulty": 3,
+  "tags": ["biografia", "produccio", "typeIn", "integracio", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Markus ist 1985 in München geboren._\n\n_{{1}} zehn Jahren ist er nach Berlin gezogen._\n\n_Er arbeitet jetzt {{2}} einer großen Firma, {{3}} Montag {{4}} Freitag, {{5}} 8 Uhr {{6}} 17 Uhr._\n\n_{{7}} Morgen trinkt er einen Kaffee, und {{8}} Mittag isst er in der Kantine._\n\n_{{9}} der Arbeit geht er oft ins Fitnessstudio._\n\n_{{10}} Jahr macht er viele Reisen: {{11}} Sommer fährt er ans Meer, und {{12}} Weihnachten besucht er seine Familie in München._\n\n_{{13}} Woche hat er Urlaub, deshalb bleibt er zu Hause._",
+    "blanks": [
+      { "id": "1", "label": "1. fa deu anys (inici de frase)" },
+      { "id": "2", "label": "2. a (prep. + Dativ fem.)" },
+      { "id": "3", "label": "3. de dilluns" },
+      { "id": "4", "label": "4. a divendres" },
+      { "id": "5", "label": "5. a partir de les 8" },
+      { "id": "6", "label": "6. fins a les 17" },
+      { "id": "7", "label": "7. al matí (preposició contreta, inici)" },
+      { "id": "8", "label": "8. al migdia (preposició sense article)" },
+      { "id": "9", "label": "9. després de la feina (inici)" },
+      { "id": "10", "label": "10. aquest any (determinant, inici)" },
+      { "id": "11", "label": "11. a l'estiu (preposició contreta)" },
+      { "id": "12", "label": "12. per Nadal (preposició)" },
+      { "id": "13", "label": "13. aquesta setmana (determinant, inici)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "preposició (inici)" },
+      { "blankId": "2", "placeholder": "preposició" },
+      { "blankId": "3", "placeholder": "preposició" },
+      { "blankId": "4", "placeholder": "preposició" },
+      { "blankId": "5", "placeholder": "preposició" },
+      { "blankId": "6", "placeholder": "preposició" },
+      { "blankId": "7", "placeholder": "preposició contreta (inici)" },
+      { "blankId": "8", "placeholder": "preposició" },
+      { "blankId": "9", "placeholder": "preposició (inici)" },
+      { "blankId": "10", "placeholder": "determinant (inici)" },
+      { "blankId": "11", "placeholder": "preposició contreta" },
+      { "blankId": "12", "placeholder": "preposició" },
+      { "blankId": "13", "placeholder": "determinant (inici)" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Vor"],
+      "2": ["in"],
+      "3": ["von"],
+      "4": ["bis"],
+      "5": ["von"],
+      "6": ["bis"],
+      "7": ["Am"],
+      "8": ["zu"],
+      "9": ["Nach"],
+      "10": ["Dieses"],
+      "11": ["im"],
+      "12": ["zu"],
+      "13": ["Diese"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has integrat tot el sistema: _vor_ + **Dativ plural** amb _-n_ (_vor zehn Jahren_), _in einer Firma_ (lloc, Dativ femení), doble _von... bis..._ (dies i hores), _am Morgen_, _zu Mittag_ (excepció sense article), _nach der Arbeit_ (Dativ femení), ==**_dieses Jahr_**== i ==**_diese Woche_**== en acusatiu nu, _im Sommer_ i _zu Weihnachten_. Quan el complement obre la frase: **majúscula** i inversió V2.",
+      "references": ["A1b-32", "A1a-21"]
+    },
+    "incorrect": {
+      "default": "Revisa peça per peça: **any** → sol; ==**_vor/nach_ + Dativ**== (pl. _-n_); **interval** → _von... bis..._; **parts del dia** → _am_ (excepte _zu Mittag_); **mesos/estacions** → _im_; **festes** → _zu_; _dieses/diese + període_ → ==**acusatiu nu**==, sense preposició. I sempre verb a la posició 2.",
+      "byResponse": [
+        {
+          "match": { "1": "Seit" },
+          "message": "_Seit zehn Jahren_ vol dir _des de fa deu anys_ (acció en curs). Aquí _er ist gezogen_ és **fet acabat** → ==**Vor**== zehn Jahren."
+        },
+        {
+          "match": { "1": "Vor zehn" },
+          "message": "Només has d'escriure la **preposició** al buit, no el complement sencer. Escriu només _Vor_ — _zehn Jahren_ ja està al text."
+        },
+        {
+          "match": { "7": "Im" },
+          "message": "_im_ és per a mesos/estacions. Per a **parts del dia** cal ==**Am**== (_Am Morgen_)."
+        },
+        {
+          "match": { "8": "am" },
+          "message": "==Excepció lèxica==: _Mittag_ amb el sentit d'_hora de dinar_ va amb ==**zu Mittag**== (sense article), no _am Mittag_."
+        },
+        {
+          "match": { "9": "Vor" },
+          "message": "_Vor der Arbeit_ vol dir _abans de la feina_. Si va al gimnàs **després** de la feina, cal ==**Nach**==."
+        },
+        {
+          "match": { "10": "Diesen" },
+          "message": "_Jahr_ és **neutre** (_das Jahr_): acusatiu neutre → ==**Dieses**==, no _Diesen_ (que és masculí)."
+        },
+        {
+          "match": { "10": "Dieser" },
+          "message": "_Dieser_ és nominatiu masculí. _Jahr_ és neutre i va en **acusatiu nu**: ==**Dieses**==."
+        },
+        {
+          "match": { "11": "in" },
+          "message": "Amb **estació** la forma és ==**contreta**==: _in + dem = **im**_. _Sommer_ és masculí → _im Sommer_."
+        },
+        {
+          "match": { "11": "am" },
+          "message": "_am_ és per a dies i parts del dia. Per a **estacions** cal ==**im**==: _im Sommer_."
+        },
+        {
+          "match": { "12": "an" },
+          "message": "_an Weihnachten_ és regional. L'estàndard A1 és ==**zu Weihnachten**==."
+        },
+        {
+          "match": { "13": "Dieses" },
+          "message": "_Woche_ és **femení** (_die Woche_): acusatiu femení és ==**Diese**== (sense _-es_). _Dieses_ és per a neutres."
+        },
+        {
+          "match": { "13": "Diesen" },
+          "message": "_Diesen_ és acusatiu masculí. _Woche_ és femení → ==**Diese**==."
+        }
+      ]
+    }
+  }
+}

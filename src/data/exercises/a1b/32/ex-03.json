@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-32-ex-03",
+  "topicId": "A1b-32",
+  "title": "Biografia de Sofia — tria la preposició",
+  "prompt": "Completa la biografia triant la preposició temporal correcta (o el marcador **∅** per indicar _cap preposició_). El text integra tot el sistema: any sol, _vor_ + Dativ, ciutat amb _in_, interval amb _von... bis..._, parts del dia, acusatiu nu i festes.",
+  "difficulty": 3,
+  "tags": ["wann", "biografia", "integracio", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Hallo, ich heiße Sofia. Ich bin {{1}} 1998 geboren, {{2}} Barcelona. {{3}} drei Jahren bin ich nach Berlin gezogen. Jetzt arbeite ich {{4}} einer Schule, {{5}} Montag bis Freitag, {{6}} 9 {{7}} 17 Uhr. {{8}} Abend lerne ich Deutsch. {{9}} Woche habe ich keinen Kurs, aber {{10}} Sommer fahre ich oft nach Spanien. {{11}} Weihnachten besuche ich meine Familie._",
+    "blanks": [
+      { "id": "1", "label": "1. any de naixement" },
+      { "id": "2", "label": "2. ciutat" },
+      { "id": "3", "label": "3. quantitat enrere" },
+      { "id": "4", "label": "4. lloc (Dativ fem.)" },
+      { "id": "5", "label": "5. inici interval dies" },
+      { "id": "6", "label": "6. inici interval hores" },
+      { "id": "7", "label": "7. fi interval hores" },
+      { "id": "8", "label": "8. part del dia (inici)" },
+      { "id": "9", "label": "9. 'aquesta setmana' (inici)" },
+      { "id": "10", "label": "10. estació" },
+      { "id": "11", "label": "11. festa (inici)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["in", "im", "∅", "am"] },
+      { "blankId": "2", "options": ["in", "im", "an", "bei"] },
+      { "blankId": "3", "options": ["vor", "seit", "nach", "in"] },
+      { "blankId": "4", "options": ["an", "in", "bei", "zu"] },
+      { "blankId": "5", "options": ["von", "ab", "aus", "seit"] },
+      { "blankId": "6", "options": ["um", "am", "von", "im"] },
+      { "blankId": "7", "options": ["bis", "zu", "auf", "nach"] },
+      { "blankId": "8", "options": ["Am", "Im", "Um", "An"] },
+      { "blankId": "9", "options": ["Diese", "Dieser", "Dieses", "Diesen"] },
+      { "blankId": "10", "options": ["im", "am", "um", "in der"] },
+      { "blankId": "11", "options": ["Zu", "An", "Im", "Am"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "∅",
+      "2": "in",
+      "3": "vor",
+      "4": "in",
+      "5": "von",
+      "6": "von",
+      "7": "bis",
+      "8": "Am",
+      "9": "Diese",
+      "10": "im",
+      "11": "Zu"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Impecable. Has integrat tot el sistema: **any sol sense preposició** (_1998_), ciutat amb _in_, **quantitat enrere amb _vor_** + Dativ (_vor drei Jahren_), interval _von Montag bis Freitag_ i _von 9 bis 17 Uhr_, **part del dia amb _am_** (_am Abend_), **complement nu femení en acusatiu** (_diese Woche_), estació amb _im_ (_im Sommer_) i festa amb _zu_ (_zu Weihnachten_).",
+      "references": ["A1b-32", "A1a-21"]
+    },
+    "incorrect": {
+      "default": "Revisa les regles: **any** → sol, sense preposició; ==**_vor_ + Dativ**== (pl. _-n_!) per a quantitats enrere; ==**_von... bis..._**== per a intervals; _am_ per a parts del dia; ==**acusatiu nu**== en _diese Woche_; _im_ per a estacions; _zu_ per a festes.",
+      "byResponse": [
+        {
+          "match": { "1": "in" },
+          "message": "==Anglicisme==: _~~in 1998~~_ no es diu en alemany estàndard. L'any pot anar sol (_**∅** 1998_) o amb _**im Jahr** 1998_."
+        },
+        {
+          "match": { "1": "im" },
+          "message": "_im_ sol s'aplica a **mesos i estacions** (_im Januar, im Sommer_), no davant d'un any. Per a anys: any sol (_∅_) o _im Jahr_ + any."
+        },
+        {
+          "match": { "3": "seit" },
+          "message": "_seit_ significa _des de fa_ (acció en curs). _Ich bin nach Berlin gezogen_ és Perfekt (fet acabat) → cal ==**vor**== + Dativ: _vor drei Jahren_."
+        },
+        {
+          "match": { "3": "nach" },
+          "message": "_nach drei Jahren_ seria _al cap de tres anys_ (des d'un punt previ). Sofia diu _fa tres anys_ → ==**vor drei Jahren**==."
+        },
+        {
+          "match": { "5": "seit" },
+          "message": "_seit Montag_ seria _des de dilluns_ (durada oberta). Aquí tenim un **interval tancat** _...bis Freitag_ → cal ==**von... bis...**==."
+        },
+        {
+          "match": { "8": "Im" },
+          "message": "_im_ és per a mesos/estacions. Per a **parts del dia** (matí, tarda, vespre, nit-excepte) cal ==**am**==: _Am Abend_."
+        },
+        {
+          "match": { "9": "Dieses" },
+          "message": "_Woche_ és **femení** (_die Woche_): acusatiu femení és ==**Diese**== (sense _-es_). _Dieses_ és per a neutres (_Dieses Jahr_)."
+        },
+        {
+          "match": { "9": "Diesen" },
+          "message": "_Diesen_ és **acusatiu masculí** (_diesen Tag_). _Woche_ és femení → ==**Diese**==."
+        },
+        {
+          "match": { "10": "in der" },
+          "message": "_in der_ és l'excepció per a _Nacht_ (femení). _Sommer_ és masculí i contrau: ==**im Sommer**==."
+        },
+        {
+          "match": { "11": "Am" },
+          "message": "_Am Weihnachten_ és regional. L'estàndard per a festes és ==**Zu Weihnachten**==."
+        }
+      ]
+    }
+  }
+}

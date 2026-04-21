@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-32-ex-01",
+  "topicId": "A1b-32",
+  "title": "Tria la preposició temporal",
+  "prompt": "Tria la preposició temporal correcta per a cada buit segons el tipus de moment (==hora, mes, festa, quantitat enrere, 'després de', nit==).",
+  "difficulty": 1,
+  "tags": ["wann", "preposicions-temporals", "quick-check"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Der Film beginnt {{1}} 20 Uhr._\n\n2. _{{2}} Januar ist es kalt._\n\n3. _Wir fahren {{3}} Weihnachten zu meinen Eltern._\n\n4. _Ich bin {{4}} 15 Jahren nach Deutschland gekommen._\n\n5. _{{5}} der Arbeit gehe ich joggen._\n\n6. _Ich schlafe {{6}} Nacht sehr gut._",
+    "blanks": [
+      { "id": "1", "label": "1. hora" },
+      { "id": "2", "label": "2. mes (inici de frase)" },
+      { "id": "3", "label": "3. festa" },
+      { "id": "4", "label": "4. quantitat enrere" },
+      { "id": "5", "label": "5. 'després de' (inici de frase)" },
+      { "id": "6", "label": "6. nit" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["um", "am", "im", "in der", "vor", "nach", "zu"] },
+      { "blankId": "2", "options": ["Um", "Am", "Im", "In der", "Vor", "Nach", "Zu"] },
+      { "blankId": "3", "options": ["um", "am", "im", "in der", "vor", "nach", "zu"] },
+      { "blankId": "4", "options": ["um", "am", "im", "in der", "vor", "nach", "zu"] },
+      { "blankId": "5", "options": ["Um", "Am", "Im", "In der", "Vor", "Nach", "Zu"] },
+      { "blankId": "6", "options": ["um", "am", "im", "in der", "vor", "nach", "zu"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "um",
+      "2": "Im",
+      "3": "zu",
+      "4": "vor",
+      "5": "Nach",
+      "6": "in der"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has distingit correctament: ==**um**== per a hores (_um 20 Uhr_), ==**im**== per a mesos (_im Januar_), ==**zu**== per a festes (_zu Weihnachten_), ==**vor**== + Dativ per a una quantitat de temps enrere (_vor 15 Jahren_), ==**nach**== + Dativ per a _després de_ (_nach der Arbeit_) i ==**in der**== per a la nit (femení).",
+      "references": ["A1b-32", "A1a-21"]
+    },
+    "incorrect": {
+      "default": "Revisa el quadre-síntesi: el tipus de moment determina la preposició. Hora → _um_; mes/estació → _im_; festa → _zu_; quantitat enrere → _vor_ + Dativ (compte amb _-n_ del plural: _Jahren_); _després de_ → _nach_ + Dativ; nit → _in der_.",
+      "byResponse": [
+        {
+          "match": { "1": "am" },
+          "message": "_am_ serveix per a **dies** (_am Montag_) i **parts del dia** (_am Morgen_), no per a l'hora del rellotge. Per a hores, ==**um**==: _um 20 Uhr_."
+        },
+        {
+          "match": { "2": "Am" },
+          "message": "_am_ serveix per a dies i parts del dia. Per a **mesos** cal ==**im**==: _Im Januar ist es kalt_ (_im = in + dem_, datiu neutre)."
+        },
+        {
+          "match": { "3": "am" },
+          "message": "_am Weihnachten_ és regional (sud d'Alemanya, Àustria). L'estàndard és ==**zu Weihnachten**==, com _zu Ostern, zu Silvester_."
+        },
+        {
+          "match": { "4": "seit" },
+          "message": "Atenció: _seit 15 Jahren_ vol dir **_des de fa 15 anys_** (acció que dura fins ara). Per dir _fa 15 anys_ (fet passat acabat) cal ==**vor 15 Jahren**==."
+        },
+        {
+          "match": { "4": "nach" },
+          "message": "_nach 15 Jahren_ significaria _al cap de 15 anys_ (després d'un punt donat), no _fa 15 anys_. Per a _fa X temps_, ==**vor**== + Dativ: _vor 15 Jahren_."
+        },
+        {
+          "match": { "5": "Vor" },
+          "message": "_Vor der Arbeit_ significa _abans de la feina_. Si l'acció (_joggen_) és **posterior** a la feina, cal ==**Nach der Arbeit**==."
+        },
+        {
+          "match": { "6": "am" },
+          "message": "Amb _am_ dius _am Morgen, am Abend_... però _Nacht_ és **femení** (_die Nacht_), per això no contrau. Cal ==**in der Nacht**==."
+        },
+        {
+          "match": { "6": "im" },
+          "message": "_im_ és contracció de _in + dem_ (datiu masculí/neutre). _Nacht_ és femení: cal la forma no contreta ==**in der Nacht**==."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-32-ex-02",
+  "topicId": "A1b-32",
+  "title": "Complement temporal en acusatiu nu",
+  "prompt": "Escriu el determinant adequat en ==**acusatiu**== (_diesen, nächsten, letzten, jeden, diese, letzte, dieses, nächstes..._) sense preposició. Compte amb la majúscula quan el complement obre la frase.",
+  "difficulty": 2,
+  "tags": ["akkusativ", "complement-nu", "quick-check"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _{{1}} (proper) Sommer fahren wir ans Meer._\n\n2. _{{2}} (passat) Woche war ich krank._\n\n3. _Ich lerne {{3}} (cada) Tag Deutsch._\n\n4. _{{4}} (aquest) Jahr mache ich viele Reisen._",
+    "blanks": [
+      { "id": "1", "label": "1. 'proper' (masc. acus., inici)" },
+      { "id": "2", "label": "2. 'passat' (fem. acus., inici)" },
+      { "id": "3", "label": "3. 'cada' (masc. acus., interior)" },
+      { "id": "4", "label": "4. 'aquest' (neutre acus., inici)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "determinant (masc. acus.)" },
+      { "blankId": "2", "placeholder": "determinant (fem. acus.)" },
+      { "blankId": "3", "placeholder": "determinant (masc. acus.)" },
+      { "blankId": "4", "placeholder": "determinant (neutre acus.)" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Nächsten"],
+      "2": ["Letzte"],
+      "3": ["jeden"],
+      "4": ["Dieses"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Quan el complement temporal va **sense preposició**, el grup nominal es declina en ==**acusatiu**==: _nächsten Sommer_ (masc.), _letzte Woche_ (fem.), _jeden Tag_ (masc.), _dieses Jahr_ (neutre). Només el masculí canvia visiblement (_-en_).",
+      "references": ["A1b-32"]
+    },
+    "incorrect": {
+      "default": "Recorda la regla: complement temporal sense preposició → ==**acusatiu**==. Femení i neutre no canvien (_letzte Woche, dieses Jahr_). Masculí agafa _-en_ (_nächsten Sommer, jeden Tag, letzten Monat_). A principi de frase, majúscula.",
+      "byResponse": [
+        {
+          "match": { "1": "Nächster" },
+          "message": "_Nächster_ és **nominatiu** masculí. _Sommer_ aquí és **complement temporal sense preposició** → ==**acusatiu**==: ==**Nächsten**== Sommer."
+        },
+        {
+          "match": { "1": "Nächstes" },
+          "message": "_Sommer_ és **masculí** (_der Sommer_), no neutre. Acusatiu masculí → ==**Nächsten**== Sommer."
+        },
+        {
+          "match": { "1": "nächsten" },
+          "message": "La forma és correcta, però el complement obre la frase: cal majúscula inicial → ==**Nächsten**==."
+        },
+        {
+          "match": { "2": "Letzten" },
+          "message": "_Woche_ és **femení** (_die Woche_): acusatiu femení no afegeix _-en_. ==**Letzte**== Woche."
+        },
+        {
+          "match": { "2": "letzte" },
+          "message": "La forma és correcta, però obre la frase: ==**Letzte**== (amb majúscula)."
+        },
+        {
+          "match": { "3": "jedem" },
+          "message": "_jedem_ és **datiu**. Aquí no hi ha preposició → ==**acusatiu**==. Masculí acus. → ==**jeden**== Tag."
+        },
+        {
+          "match": { "3": "jeder" },
+          "message": "_jeder_ és **nominatiu** masculí o datiu femení. _Tag_ aquí és complement temporal → acusatiu masculí → ==**jeden**==."
+        },
+        {
+          "match": { "4": "Diesen" },
+          "message": "_Jahr_ és **neutre** (_das Jahr_): acusatiu neutre no afegeix _-en_. ==**Dieses**== Jahr."
+        },
+        {
+          "match": { "4": "Dieser" },
+          "message": "_Dieser_ és nominatiu masculí. _Jahr_ és neutre i va en acusatiu: ==**Dieses**== Jahr."
+        }
+      ]
+    }
+  }
+}

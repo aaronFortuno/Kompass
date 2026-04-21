@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-32-ex-05",
+  "topicId": "A1b-32",
+  "title": "Pregunta ↔ resposta temporal",
+  "prompt": "Aparella cada ==**pregunta**== amb la ==**resposta temporal**== que hi encaixa. Cada tipus de moment demana la seva preposició (any nu, _vor_, _im_, _zu_, _von... bis..._, _nach_).",
+  "difficulty": 2,
+  "tags": ["match", "wann", "integracio", "assessment"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "q1", "group": "pregunta", "content": { "type": "text", "content": "_**Wann** bist du geboren?_" } },
+      { "id": "q2", "group": "pregunta", "content": { "type": "text", "content": "_**Wann** bist du nach Deutschland gekommen?_" } },
+      { "id": "q3", "group": "pregunta", "content": { "type": "text", "content": "_**Wann** hast du Urlaub?_" } },
+      { "id": "q4", "group": "pregunta", "content": { "type": "text", "content": "_**Wann** besuchst du deine Eltern?_" } },
+      { "id": "q5", "group": "pregunta", "content": { "type": "text", "content": "_**Von wann bis wann** arbeitest du?_" } },
+      { "id": "q6", "group": "pregunta", "content": { "type": "text", "content": "_**Wann** gehst du joggen?_" } },
+      { "id": "r1", "group": "resposta", "content": { "type": "text", "content": "_==**1995.**==_" } },
+      { "id": "r2", "group": "resposta", "content": { "type": "text", "content": "_==**Vor zehn Jahren.**==_" } },
+      { "id": "r3", "group": "resposta", "content": { "type": "text", "content": "_==**Im August.**==_" } },
+      { "id": "r4", "group": "resposta", "content": { "type": "text", "content": "_==**Zu Weihnachten.**==_" } },
+      { "id": "r5", "group": "resposta", "content": { "type": "text", "content": "_==**Von 9 bis 17 Uhr.**==_" } },
+      { "id": "r6", "group": "resposta", "content": { "type": "text", "content": "_==**Nach der Arbeit.**==_" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Pregunta",
+    "groupBLabel": "Resposta temporal"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["q1", "r1"],
+      ["q2", "r2"],
+      ["q3", "r3"],
+      ["q4", "r4"],
+      ["q5", "r5"],
+      ["q6", "r6"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Cada tipus de moment demana la seva preposició: **any** → sol (_1995_); **quantitat enrere** → _vor_ + Dativ (_vor zehn Jahren_); **mes** → _im_ (_im August_); **festa** → _zu_ (_zu Weihnachten_); **interval** → _von... bis..._ (_von 9 bis 17 Uhr_); **després d'un fet** → _nach_ + Dativ (_nach der Arbeit_).",
+      "references": ["A1b-32", "A1a-21"]
+    },
+    "incorrect": {
+      "default": "Repassa el quadre-síntesi. La pregunta ==**_Von wann bis wann?_**== només accepta resposta d'**interval** (_von... bis..._); totes les altres són _Wann?_ amb preposició variable segons el moment (any nu, _vor_ + Dativ, _im_ + mes, _zu_ + festa, _nach_ + Dativ)."
+    }
+  }
+}
