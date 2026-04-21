@@ -88,7 +88,8 @@
       "themeLight": "Claro",
       "themeDark": "Oscuro",
       "textScale": "Tamaño del texto",
-      "textScaleHint": "Afecta la tipografía del Focus Reader al estudiar un tema."
+      "textScaleHint": "Afecta la tipografía del Focus Reader al estudiar un tema.",
+      "textScalePreview": "El texto se verá así mientras estudias."
     },
     "reading": {
       "title": "Lectura",
@@ -99,6 +100,11 @@
       "studyModeFullDesc": "Todos los fragmentos de un paso apilados. Útil para repaso.",
       "typewriter": "Efecto máquina de escribir",
       "typewriterDesc": "Muestra el texto progresivamente, carácter a carácter.",
+      "typewriterSpeed": "Velocidad del efecto",
+      "typewriterSpeedDesc": "Más rápido o más lento según el ritmo que prefieras.",
+      "typewriterSpeedFast": "Rápido",
+      "typewriterSpeedSlow": "Lento",
+      "typewriterPreview": "Así se verá el efecto typewriter en pantalla mientras lees la lección.",
       "tableAnim": "Animación de tablas",
       "tableAnimDesc": "Las filas aparecen una tras otra con un ligero efecto de revelación."
     },

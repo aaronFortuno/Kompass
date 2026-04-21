@@ -824,23 +824,25 @@ export function FocusReader({ topic }) {
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}
     >
-      {/* HEADER editorial */}
+      {/* HEADER editorial — 3 columnes: left (back+logo) · center (títol) · right (progress) */}
       <div className="kf-head">
-        <button
-          type="button"
-          className="kf-back"
-          onClick={closeReader}
-          aria-label={t('topic.backToIndex')}
-          title={t('topic.backToIndex')}
-        >
-          <ArrowLeft size={14} aria-hidden="true" />
-          <span>{t('topic.backToIndex')}</span>
-        </button>
+        <div className="kf-head-left">
+          <button
+            type="button"
+            className="kf-back"
+            onClick={closeReader}
+            aria-label={t('topic.backToIndex')}
+            title={t('topic.backToIndex')}
+          >
+            <ArrowLeft size={14} aria-hidden="true" />
+            <span>{t('topic.backToIndex')}</span>
+          </button>
 
-        <div className="kf-logo">
-          <Compass size={14} aria-hidden="true" />
-          <b>Kompass</b>
-          <span className="kf-muted">{topic.id}</span>
+          <div className="kf-logo">
+            <Compass size={16} aria-hidden="true" strokeWidth={1.75} />
+            <b>Kompass</b>
+            <span className="kf-muted">{topic.id}</span>
+          </div>
         </div>
 
         <div className="kf-title">

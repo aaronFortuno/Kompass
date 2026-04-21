@@ -93,7 +93,8 @@
       "themeLight": "Clar",
       "themeDark": "Fosc",
       "textScale": "Mida del text",
-      "textScaleHint": "Afecta la tipografia del Focus Reader en estudiar un tema."
+      "textScaleHint": "Afecta la tipografia del Focus Reader en estudiar un tema.",
+      "textScalePreview": "El text es llegirà així mentre estudies."
     },
     "reading": {
       "title": "Lectura",
@@ -104,6 +105,11 @@
       "studyModeFullDesc": "Tots els fragments d'un pas apilats. Útil per al repàs.",
       "typewriter": "Efecte màquina d'escriure",
       "typewriterDesc": "Mostra el text progressivament, caràcter a caràcter.",
+      "typewriterSpeed": "Velocitat de l'efecte",
+      "typewriterSpeedDesc": "Més ràpid o més lent segons el ritme que et vagi millor.",
+      "typewriterSpeedFast": "Ràpid",
+      "typewriterSpeedSlow": "Lent",
+      "typewriterPreview": "Així es veurà l'efecte typewriter en pantalla mentre llegeixes la lliçó.",
       "tableAnim": "Animació de taules",
       "tableAnimDesc": "Les files apareixen l'una rere l'altra amb un lleuger efecte de revelació."
     },

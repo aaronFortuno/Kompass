@@ -1,12 +1,25 @@
-import { Sun, Moon, Type, Film, Table2, RotateCcw, BookOpen, ScrollText } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import {
+  Sun,
+  Moon,
+  Type,
+  Film,
+  Table2,
+  RotateCcw,
+  BookOpen,
+  ScrollText,
+  Gauge,
+} from 'lucide-react';
 import { useT } from '@/i18n';
 import { useSettingsStore, TEXT_SCALE_VALUES } from '@/store/useSettingsStore';
+import { Typed } from '@/components/reader/Typed.jsx';
+import { resolveTypewriterSpeed } from '@/lib/reader/beatTransitions.js';
 
 /*
  * SettingsPage · ARCHITECTURE §17.8
  * Centralitza tots els controls d'ajustos: aparença (tema, mida del text),
- * lectura (mode d'estudi, typewriter, tableAnim) i reset. Els canvis
- * s'apliquen immediatament — no hi ha botó "Desar".
+ * lectura (mode d'estudi, typewriter + velocitat, tableAnim) i reset. Els
+ * canvis s'apliquen immediatament — no hi ha botó "Desar".
  */
 
 function SegmentedControl({ value, options, onChange, name }) {
@@ -26,7 +39,7 @@ function SegmentedControl({ value, options, onChange, name }) {
             aria-checked={active}
             onClick={() => onChange(opt.value)}
             className={[
-              'px-4 py-2 text-sm font-mono uppercase tracking-wider',
+              'px-3 py-1.5 text-[11px] font-mono uppercase tracking-[0.12em]',
               'transition-colors duration-fast ease-standard',
               active
                 ? 'bg-reader-ink text-reader-paper'
@@ -61,19 +74,25 @@ function Toggle({ checked, onChange, label, id }) {
         aria-hidden="true"
         className={[
           'pointer-events-none inline-block h-4 w-4 transform rounded-full',
-          'bg-reader-paper shadow',
+          'shadow',
           'transition-transform duration-fast ease-standard',
-          checked ? 'translate-x-6 bg-reader-paper' : 'translate-x-1',
-          checked ? '' : 'bg-reader-ink-2',
+          checked
+            ? 'translate-x-6 bg-reader-paper'
+            : 'translate-x-1 bg-reader-ink-2',
         ].join(' ')}
       />
     </button>
   );
 }
 
-function SettingRow({ icon: Icon, title, description, children, id }) {
+function SettingRow({ icon: Icon, title, description, children, id, disabled }) {
   return (
-    <div className="flex items-start gap-4 py-5 border-b border-reader-rule last:border-b-0">
+    <div
+      className={[
+        'flex items-start gap-4 py-5 border-b border-reader-rule last:border-b-0',
+        disabled ? 'opacity-50 pointer-events-none' : '',
+      ].join(' ')}
+    >
       <div className="flex-shrink-0 text-reader-ink-2 mt-1">
         {Icon ? <Icon size={20} aria-hidden="true" /> : null}
       </div>
@@ -98,18 +117,51 @@ function SectionHeading({ children }) {
   );
 }
 
+/*
+ * Preview que mostra l'efecte typewriter en viu amb la velocitat actual.
+ * Es re-monta (via key) cada cop que canvia la velocitat per reiniciar
+ * l'animació. Quan typewriter està desactivat, mostra el text estàtic.
+ */
+function TypewriterPreview({ active, speedLevel, text }) {
+  const [cycle, setCycle] = useState(0);
+  useEffect(() => {
+    setCycle((c) => c + 1);
+  }, [speedLevel, active]);
+
+  const speedMs = resolveTypewriterSpeed(speedLevel);
+  return (
+    <div className="mt-3 p-5 bg-reader-paper-2 border border-reader-rule">
+      <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-reader-muted mb-3">
+        Vista prèvia
+      </p>
+      <div className="font-serif text-xl text-reader-ink leading-snug min-h-[3.5em]">
+        <Typed
+          key={cycle}
+          text={text}
+          speed={speedMs}
+          startDelay={200}
+          active={active}
+          as="span"
+        />
+      </div>
+    </div>
+  );
+}
+
 export function SettingsPage() {
   const { t } = useT();
   const theme = useSettingsStore((s) => s.theme);
   const textScale = useSettingsStore((s) => s.textScale);
   const studyMode = useSettingsStore((s) => s.studyMode);
   const typewriter = useSettingsStore((s) => s.typewriter);
+  const typewriterSpeed = useSettingsStore((s) => s.typewriterSpeed);
   const tableAnim = useSettingsStore((s) => s.tableAnim);
 
   const setTheme = useSettingsStore((s) => s.setTheme);
   const setTextScale = useSettingsStore((s) => s.setTextScale);
   const setStudyMode = useSettingsStore((s) => s.setStudyMode);
   const setTypewriter = useSettingsStore((s) => s.setTypewriter);
+  const setTypewriterSpeed = useSettingsStore((s) => s.setTypewriterSpeed);
   const setTableAnim = useSettingsStore((s) => s.setTableAnim);
   const reset = useSettingsStore((s) => s.reset);
 
@@ -150,7 +202,6 @@ export function SettingsPage() {
           description={t('settings.appearance.textScaleHint')}
         >
           <div className="flex items-center gap-3">
-            <span className="font-mono text-xs text-reader-muted">Aa</span>
             <input
               type="range"
               min={TEXT_SCALE_VALUES[0]}
@@ -161,11 +212,24 @@ export function SettingsPage() {
               aria-labelledby="setting-textscale"
               className="w-40 accent-reader-ink"
             />
-            <span className="font-mono text-xs text-reader-ink-2 w-10 text-right">
+            <span className="font-mono text-[11px] text-reader-ink-2 w-10 text-right">
               {Math.round(textScale * 100)}%
             </span>
           </div>
         </SettingRow>
+
+        {/* Preview de la mida del text — s'escala amb --kf-type-scale */}
+        <div className="ml-9 pl-5 border-l-2 border-reader-rule mb-4">
+          <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-reader-muted mb-2">
+            Vista prèvia
+          </p>
+          <p
+            className="font-serif italic text-reader-ink"
+            style={{ fontSize: `calc(1.25rem * var(--kf-type-scale, 1))`, lineHeight: 1.4 }}
+          >
+            {t('settings.appearance.textScalePreview')}
+          </p>
+        </div>
       </section>
 
       <section className="mb-10">
@@ -205,6 +269,42 @@ export function SettingsPage() {
             id="setting-typewriter"
           />
         </SettingRow>
+
+        <SettingRow
+          id="setting-typewriter-speed"
+          icon={Gauge}
+          title={t('settings.reading.typewriterSpeed')}
+          description={t('settings.reading.typewriterSpeedDesc')}
+          disabled={!typewriter}
+        >
+          <div className="flex items-center gap-3">
+            <span className="font-mono text-[10px] text-reader-muted uppercase tracking-wider">
+              {t('settings.reading.typewriterSpeedFast')}
+            </span>
+            <input
+              type="range"
+              min={1}
+              max={5}
+              step={1}
+              value={typewriterSpeed}
+              onChange={(e) => setTypewriterSpeed(Number(e.target.value))}
+              aria-labelledby="setting-typewriter-speed"
+              className="w-32 accent-reader-ink"
+            />
+            <span className="font-mono text-[10px] text-reader-muted uppercase tracking-wider">
+              {t('settings.reading.typewriterSpeedSlow')}
+            </span>
+          </div>
+        </SettingRow>
+
+        {/* Preview del typewriter — remuntat cada cop que canvia speed */}
+        <div className="ml-9 pl-5 border-l-2 border-reader-rule mb-4">
+          <TypewriterPreview
+            active={typewriter}
+            speedLevel={typewriterSpeed}
+            text={t('settings.reading.typewriterPreview')}
+          />
+        </div>
 
         <SettingRow
           id="setting-tableanim"

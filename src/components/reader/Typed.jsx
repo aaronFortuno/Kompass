@@ -81,7 +81,10 @@ export function Typed({
 
   const visibleN = active ? n : total;
   const shown = renderTokensUpTo(tokens, visibleN);
-  const showCaret = active && !done;
+  // El caret es mostra mentre el Typed està "en mode typewriter" (active),
+  // no només durant l'animació: un cop acabat, segueix parpellejant al
+  // final del text com a senyal d'activitat del sistema.
+  const showCaret = active;
   const Tag = as;
 
   return (
