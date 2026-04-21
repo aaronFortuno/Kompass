@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-5-ex-04",
+  "topicId": "A1a-5",
+  "title": "Barreja de patrons: der, die o das",
+  "prompt": "Aplica les regles per reconèixer el gènere a partir de la terminació o del camp semàntic. Tria l'article correcte a cada buit.",
+  "difficulty": 2,
+  "tags": ["artikel", "integration", "terminacions"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "{{1}} Montag ist frei.\n{{2}} Prüfung ist schwer.\n{{3}} Museum ist offen.\n{{4}} Information ist neu.\n{{5}} Motor ist kaputt.",
+    "blanks": [
+      { "id": "1", "label": "dia de la setmana" },
+      { "id": "2", "label": "acaba en -ung" },
+      { "id": "3", "label": "acaba en -um" },
+      { "id": "4", "label": "acaba en -ion" },
+      { "id": "5", "label": "acaba en -or" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["der", "die", "das"] },
+      { "blankId": "2", "options": ["der", "die", "das"] },
+      { "blankId": "3", "options": ["der", "die", "das"] },
+      { "blankId": "4", "options": ["der", "die", "das"] },
+      { "blankId": "5", "options": ["der", "die", "das"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "der", "2": "die", "3": "das", "4": "die", "5": "der" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has barrejat bé les regles: dia de la setmana → _der_; _-ung_ i _-ion_ → _die_; _-um_ → _das_; _-or_ → _der_."
+    },
+    "incorrect": {
+      "default": "Repassa les terminacions: dies de la setmana i _-or_ → masculí (_der_). _-ung_ i _-ion_ → femení (_die_). _-um_ → neutre (_das_)."
+    }
+  }
+}

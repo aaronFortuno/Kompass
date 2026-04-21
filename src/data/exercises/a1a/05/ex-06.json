@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-5-ex-06",
+  "topicId": "A1a-5",
+  "title": "Escriu l'article",
+  "prompt": "Escriu l'article determinat (_der_, _die_ o _das_) a cada buit. Vigila el cas-parany del diminutiu i l'excepció neutra entre les begudes alcohòliques.",
+  "difficulty": 3,
+  "tags": ["artikel", "typein", "integration"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "{{1}} Vater arbeitet.\n{{2}} Lehrerin ist nett.\n{{3}} Mädchen lernt Deutsch.\n{{4}} Freundschaft ist wichtig.\n{{5}} Bier ist kalt.",
+    "blanks": [
+      { "id": "1", "label": "persona masculina" },
+      { "id": "2", "label": "-in (professió femenina)" },
+      { "id": "3", "label": "-chen (diminutiu)" },
+      { "id": "4", "label": "-schaft" },
+      { "id": "5", "label": "excepció neutra" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "der / die / das" },
+      { "blankId": "2", "placeholder": "der / die / das" },
+      { "blankId": "3", "placeholder": "der / die / das" },
+      { "blankId": "4", "placeholder": "der / die / das" },
+      { "blankId": "5", "placeholder": "der / die / das" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "der", "2": "die", "3": "das", "4": "die", "5": "das" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has fet servir la regla de sentit (pare, mestra), la regla de terminació (_-chen_, _-schaft_) i fins i tot l'excepció de _das Bier_."
+    },
+    "incorrect": {
+      "default": "Atenció: (1) _Vater_ home → _der_. (2) _Lehrerin_ acaba en _-in_ (forma femenina de professió) → _die_. (3) _Mädchen_ acaba en _-chen_ → sempre _das_, encara que sigui una noia. (4) _Freundschaft_ acaba en _-schaft_ → _die_. (5) _Bier_ és l'excepció neutre entre les begudes alcohòliques → _das_."
+    }
+  }
+}

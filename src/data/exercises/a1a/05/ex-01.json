@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-5-ex-01",
+  "topicId": "A1a-5",
+  "title": "Der, die o das?",
+  "prompt": "Tria l'article determinat correcte a cada buit. El gènere de cada substantiu està indicat entre parèntesis a la pista.",
+  "difficulty": 1,
+  "tags": ["artikel", "reconeixement"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "{{1}} Tisch ist neu.\n{{2}} Tasche ist hier.\n{{3}} Auto ist blau.\n{{4}} Kind ist klein.",
+    "blanks": [
+      { "id": "1", "label": "masculí" },
+      { "id": "2", "label": "femení" },
+      { "id": "3", "label": "neutre" },
+      { "id": "4", "label": "neutre" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["der", "die", "das"] },
+      { "blankId": "2", "options": ["der", "die", "das"] },
+      { "blankId": "3", "options": ["der", "die", "das"] },
+      { "blankId": "4", "options": ["der", "die", "das"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "der", "2": "die", "3": "das", "4": "das" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Masculí → _der_, femení → _die_, neutre → _das_. Amb aquesta tríada ja tens el mapa bàsic."
+    },
+    "incorrect": {
+      "default": "Recorda: masculí → _der_, femení → _die_, neutre → _das_. El plural també fa _die_, però aquí tots els substantius són en singular."
+    }
+  }
+}

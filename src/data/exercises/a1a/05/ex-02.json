@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-5-ex-02",
+  "topicId": "A1a-5",
+  "title": "Terminacions de femení",
+  "prompt": "Tria l'article correcte. Totes les paraules tenen una terminació que delata el gènere: fixa-t'hi.",
+  "difficulty": 1,
+  "tags": ["artikel", "femeni", "terminacions"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "{{1}} Übung ist wichtig.\n{{2}} Freiheit ist schön.\n{{3}} Universität ist groß.\n{{4}} Information ist neu.",
+    "blanks": [
+      { "id": "1", "label": "acaba en -ung" },
+      { "id": "2", "label": "acaba en -heit" },
+      { "id": "3", "label": "acaba en -tät" },
+      { "id": "4", "label": "acaba en -ion" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["der", "die", "das"] },
+      { "blankId": "2", "options": ["der", "die", "das"] },
+      { "blankId": "3", "options": ["der", "die", "das"] },
+      { "blankId": "4", "options": ["der", "die", "das"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "die", "2": "die", "3": "die", "4": "die" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Les terminacions _-ung, -heit, -tät, -ion_ són marca fiable de femení. Si les tens associades al color de _die_, guanyaràs vocabulari gratis."
+    },
+    "incorrect": {
+      "default": "Totes quatre són femenines per terminació. _-ung_ (Übung), _-heit_ (Freiheit), _-tät_ (Universität), _-ion_ (Information) → sempre _die_."
+    }
+  }
+}

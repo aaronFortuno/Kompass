@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-8-ex-02",
+  "topicId": "A1a-8",
+  "title": "Les cinc conjuncions en context",
+  "prompt": "Tria la conjunció coordinant adequada per a cada frase: _und_, _aber_, _sondern_, _oder_ o _denn_.",
+  "difficulty": 2,
+  "tags": ["konjunktionen", "integration"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Ich komme aus Katalonien, {{1}} ich wohne in Hamburg.\nTrinkst du Kaffee {{2}} Tee?\nDas ist nicht meine Tasche, {{3}} deine Tasche.\nIch bin glücklich, {{4}} ich lerne Deutsch.\nAnna {{5}} Markus wohnen in Berlin.",
+    "blanks": [
+      { "id": "1", "label": "contrast, afirmativa" },
+      { "id": "2", "label": "tria, sense coma" },
+      { "id": "3", "label": "negació + substitució" },
+      { "id": "4", "label": "causa" },
+      { "id": "5", "label": "suma, sense coma" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["und", "aber", "sondern", "oder", "denn"] },
+      { "blankId": "2", "options": ["und", "aber", "sondern", "oder", "denn"] },
+      { "blankId": "3", "options": ["und", "aber", "sondern", "oder", "denn"] },
+      { "blankId": "4", "options": ["und", "aber", "sondern", "oder", "denn"] },
+      { "blankId": "5", "options": ["und", "aber", "sondern", "oder", "denn"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "aber", "2": "oder", "3": "sondern", "4": "denn", "5": "und" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has identificat les cinc relacions lògiques bàsiques: suma (_und_), tria (_oder_), contrast (_aber_), correcció (_sondern_) i causa (_denn_)."
+    },
+    "incorrect": {
+      "default": "Per a cada frase, pregunta't quina relació hi ha entre les dues parts: sumen (_und_), ofereixen alternativa (_oder_), contrasten amb matís (_aber_), corregeixen una negació (_sondern_) o donen una causa (_denn_). Atenció especial a la frase 3: hi ha _nicht_ i la segona part substitueix directament l'element negat → _sondern_."
+    }
+  }
+}

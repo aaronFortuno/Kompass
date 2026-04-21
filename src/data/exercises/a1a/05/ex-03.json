@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-5-ex-03",
+  "topicId": "A1a-5",
+  "title": "Terminacions de neutre",
+  "prompt": "Tria l'article correcte. Fixa't en el cas de _Mädchen_: tot i que designa una noia, el diminutiu mana sobre la biologia.",
+  "difficulty": 1,
+  "tags": ["artikel", "neutre", "terminacions"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "{{1}} Mädchen ist jung.\n{{2}} Museum ist neu.\n{{3}} Dokument ist wichtig.\n{{4}} Lesen macht Spaß.",
+    "blanks": [
+      { "id": "1", "label": "acaba en -chen" },
+      { "id": "2", "label": "acaba en -um" },
+      { "id": "3", "label": "acaba en -ment" },
+      { "id": "4", "label": "infinitiu substantivat" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["der", "die", "das"] },
+      { "blankId": "2", "options": ["der", "die", "das"] },
+      { "blankId": "3", "options": ["der", "die", "das"] },
+      { "blankId": "4", "options": ["der", "die", "das"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "das", "2": "das", "3": "das", "4": "das" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Fixa't en el cas de _Mädchen_: tot i que designa una noia, el diminutiu _-chen_ imposa el neutre. La terminació mana sobre la biologia."
+    },
+    "incorrect": {
+      "default": "Tots quatre són neutres. Pistes: _-chen_ (Mädchen) i _-lein_ sempre neutres; _-um_ (Museum), _-ment_ (Dokument) neutres; i qualsevol **infinitiu usat com a substantiu** (Lesen, Schreiben) és també neutre."
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-8-ex-04",
+  "topicId": "A1a-8",
+  "title": "Ordre V2 després de la conjunció",
+  "prompt": "Escriu la forma verbal correcta darrere de la conjunció. Recorda: les conjuncions coordinants ocupen la posició 0, i la frase que ve després recomença amb el verb en 2a posició, conjugat segons el subjecte.",
+  "difficulty": 2,
+  "tags": ["konjunktionen", "v2", "conjugacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Ich wohne in Berlin, denn ich {{1}} hier.\nAnna ist müde, aber sie {{2}} Deutsch.\nIch komme nicht aus Spanien, sondern ich {{3}} aus Portugal.",
+    "blanks": [
+      { "id": "1", "label": "arbeiten, 1a sg." },
+      { "id": "2", "label": "lernen, 3a sg." },
+      { "id": "3", "label": "kommen, 1a sg." }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "verb conjugat" },
+      { "blankId": "2", "placeholder": "verb conjugat" },
+      { "blankId": "3", "placeholder": "verb conjugat" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "arbeite", "2": "lernt", "3": "komme" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has aplicat la regla clau: les conjuncions coordinants ocupen la posició 0, i la frase que ve darrere recomença amb el seu verb en 2a posició, conjugat segons el subjecte."
+    },
+    "incorrect": {
+      "default": "Recorda dues coses: (a) _und, aber, sondern, oder, denn_ **no compten** per l'ordre, o sigui que la frase de darrere comença de nou normalment; (b) el verb ha de concordar amb el subjecte (_ich arbeite_, _sie lernt_, _ich komme_). Si dubtes, revisa les desinències del present que vas veure en temes anteriors."
+    }
+  }
+}

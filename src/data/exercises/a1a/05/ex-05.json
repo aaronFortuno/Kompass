@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-5-ex-05",
+  "topicId": "A1a-5",
+  "title": "Article indeterminat: ein o eine?",
+  "prompt": "Tria l'article indeterminat correcte. Recorda que masculí i neutre comparteixen la forma _ein_; només el femení canvia a _eine_.",
+  "difficulty": 2,
+  "tags": ["artikel", "indeterminat"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Hier ist {{1}} Tisch.\nHier ist {{2}} Tasche.\nHier ist {{3}} Auto.",
+    "blanks": [
+      { "id": "1", "label": "der Tisch (m.)" },
+      { "id": "2", "label": "die Tasche (f.)" },
+      { "id": "3", "label": "das Auto (n.)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["ein", "eine"] },
+      { "blankId": "2", "options": ["ein", "eine"] },
+      { "blankId": "3", "options": ["ein", "eine"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "ein", "2": "eine", "3": "ein" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. En l'article indeterminat, **masculí i neutre es diuen igual (_ein_)**. Només el femení canvia a _eine_. És un dels pocs descansos que dóna l'alemany."
+    },
+    "incorrect": {
+      "default": "Recorda: _ein_ serveix per a **masculí i neutre** (_ein Tisch_, _ein Auto_); _eine_ només per a femení (_eine Tasche_). No hi ha _eine_ per al neutre."
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-8-ex-01",
+  "topicId": "A1a-8",
+  "title": "aber o sondern?",
+  "prompt": "Tria entre _aber_ i _sondern_ aplicant les dues condicions: (1) la primera part és negativa? (2) la segona part substitueix directament el que s'ha negat?",
+  "difficulty": 2,
+  "tags": ["konjunktionen", "aber-sondern"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Ich bin müde, {{1}} ich lerne Deutsch.\nDas ist nicht mein Buch, {{2}} dein Buch.\nMarkus wohnt nicht in Berlin, {{3}} in München.\nIch habe keinen Hund, {{4}} ich habe eine Katze.",
+    "blanks": [
+      { "id": "1", "label": "afirmativa" },
+      { "id": "2", "label": "negació + substitució" },
+      { "id": "3", "label": "negació + substitució" },
+      { "id": "4", "label": "negació + frase nova" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["aber", "sondern"] },
+      { "blankId": "2", "options": ["aber", "sondern"] },
+      { "blankId": "3", "options": ["aber", "sondern"] },
+      { "blankId": "4", "options": ["aber", "sondern"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "aber", "2": "sondern", "3": "sondern", "4": "aber" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has vist que _sondern_ exigeix **dues coses alhora**: negació prèvia i substitució directa de l'element negat."
+    },
+    "incorrect": {
+      "default": "Revisa cada frase amb dues preguntes: (1) La primera part és negativa (_nicht, kein_)? Si no → _aber_. (2) Si és negativa, la segona part substitueix exactament el que s'ha negat? Si sí → _sondern_; si només hi afegeix un matís o una frase nova → _aber_. La frase 4 és clau: hi ha _keinen_, però la segona part és una frase completa nova, no una substitució paral·lela."
+    }
+  }
+}

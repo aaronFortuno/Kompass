@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-5-ex-07",
+  "topicId": "A1a-5",
+  "title": "Sentit lèxic i terminacions alhora",
+  "prompt": "Tria l'article correcte. Cada substantiu respon a una regla diferent: sentit lèxic (_Tisch, Tasche, Auto_), terminacions (_-tät, -ment, -ling_).",
+  "difficulty": 3,
+  "tags": ["artikel", "integration", "synthesis"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "{{1}} Tisch\n{{2}} Universität\n{{3}} Dokument\n{{4}} Lehrling",
+    "blanks": [
+      { "id": "1", "label": "memòria lèxica" },
+      { "id": "2", "label": "-tät" },
+      { "id": "3", "label": "-ment" },
+      { "id": "4", "label": "-ling" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["der", "die", "das"] },
+      { "blankId": "2", "options": ["der", "die", "das"] },
+      { "blankId": "3", "options": ["der", "die", "das"] },
+      { "blankId": "4", "options": ["der", "die", "das"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "der", "2": "die", "3": "das", "4": "der" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Felicitats. Has aplicat totes les regles alhora: sentit lèxic (_der Tisch_) i terminacions (_-tät_ → femení, _-ment_ → neutre, _-ling_ → masculí)."
+    },
+    "incorrect": {
+      "default": "Repassa: _-tät_ (Universität) → _die_; _-ment_ (Dokument) → _das_; _-ling_ (Lehrling) → _der_. _Der Tisch_ és de memòria lèxica pura."
+    }
+  }
+}
