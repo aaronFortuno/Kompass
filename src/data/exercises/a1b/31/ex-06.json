@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-31-ex-06",
+  "topicId": "A1b-31",
+  "title": "Ordre de la frase amb complement temporal",
+  "prompt": "Tria l'opció **ben ordenada**. Recorda les regles: ==verb conjugat a la pos. 2==, ==temps abans de lloc==, i si hi ha dos complements temporals, ==general abans que específic== (dia → hora).",
+  "difficulty": 2,
+  "tags": ["ordre", "V2", "mittelfeld", "temps-abans-lloc"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Peces → frase correcta:\n\n1. _arbeite / ich / am Montag / in Berlin_ → {{1}}\n\n2. _fahren / wir / im Sommer / nach Italien_ → {{2}}\n\n3. _komme / ich / um acht / nach Hause_ → {{3}}\n\n4. _lernt / Anna / seit zwei Jahren / Deutsch_ → {{4}}\n\n5. _bin / ich / am Montag / um neun / im Büro_ → {{5}}",
+    "blanks": [
+      { "id": "1", "label": "1." },
+      { "id": "2", "label": "2." },
+      { "id": "3", "label": "3." },
+      { "id": "4", "label": "4." },
+      { "id": "5", "label": "5." }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "1",
+        "options": [
+          "Ich arbeite am Montag in Berlin.",
+          "Ich arbeite in Berlin am Montag.",
+          "Am Montag ich arbeite in Berlin."
+        ]
+      },
+      {
+        "blankId": "2",
+        "options": [
+          "Wir fahren im Sommer nach Italien.",
+          "Wir fahren nach Italien im Sommer.",
+          "Im Sommer wir fahren nach Italien."
+        ]
+      },
+      {
+        "blankId": "3",
+        "options": [
+          "Ich komme um acht nach Hause.",
+          "Ich komme nach Hause um acht.",
+          "Um acht ich komme nach Hause."
+        ]
+      },
+      {
+        "blankId": "4",
+        "options": [
+          "Anna lernt seit zwei Jahren Deutsch.",
+          "Anna lernt Deutsch seit zwei Jahren.",
+          "Seit zwei Jahren Anna lernt Deutsch."
+        ]
+      },
+      {
+        "blankId": "5",
+        "options": [
+          "Ich bin am Montag um neun im Büro.",
+          "Ich bin um neun am Montag im Büro.",
+          "Ich bin im Büro am Montag um neun."
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Ich arbeite am Montag in Berlin."],
+      "2": ["Wir fahren im Sommer nach Italien."],
+      "3": ["Ich komme um acht nach Hause."],
+      "4": ["Anna lernt seit zwei Jahren Deutsch.", "Anna lernt Deutsch seit zwei Jahren."],
+      "5": ["Ich bin am Montag um neun im Büro."]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Norma pràctica: ==**temps abans de lloc**== (_am Montag in Berlin_, no _~~in Berlin am Montag~~_), i si hi ha dos complements temporals, ==**general abans que específic**== (_am Montag um neun_, no _~~um neun am Montag~~_). El verb conjugat sempre a la 2, no negociable.",
+      "references": ["A1b-31", "A1b-30"]
+    },
+    "incorrect": {
+      "default": "Tres regles: (1) ==verb conjugat a la pos. 2== (si el subjecte és a la 1, verb darrere; si un complement obre la frase, subjecte a la 3); (2) ==temps abans de lloc== al Mittelfeld; (3) ==general abans que específic== (dia → hora).",
+      "byResponse": [
+        {
+          "match": { "1": "Ich arbeite in Berlin am Montag." },
+          "message": "==Temps abans de lloc==: _am Montag_ (temps) va **abans** de _in Berlin_ (lloc). El correcte: _Ich arbeite ==am Montag in Berlin==_."
+        },
+        {
+          "match": { "2": "Im Sommer wir fahren nach Italien." },
+          "message": "==Error de V2==: si _Im Sommer_ ocupa la pos. 1, el verb va a la 2 i el subjecte a la 3: _Im Sommer ==fahren wir== nach Italien._ (també és correcte _Wir fahren im Sommer nach Italien._)"
+        },
+        {
+          "match": { "3": "Ich komme nach Hause um acht." },
+          "message": "==Temps abans de lloc==: _um acht_ (temps) va abans de _nach Hause_ (lloc direccional)."
+        },
+        {
+          "match": { "5": "Ich bin um neun am Montag im Büro." },
+          "message": "==General → específic==: _am Montag_ (dia, més general) va abans d'_um neun_ (hora, específic). I temps abans de lloc (_im Büro_)."
+        }
+      ]
+    }
+  }
+}

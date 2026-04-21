@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-31-ex-01",
+  "topicId": "A1b-31",
+  "title": "Wann? o Wie lange?",
+  "prompt": "Classifica cada expressió temporal segons la **pregunta** a la qual respon: ==**Wann?**== (moment) o ==**Wie lange?**== (durada).",
+  "difficulty": 1,
+  "tags": ["wann", "wie-lange", "classificar", "mapa"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _um 8 Uhr_ → {{1}}\n2. _seit drei Jahren_ → {{2}}\n3. _am Montag_ → {{3}}\n4. _von 9 bis 17 Uhr_ → {{4}}\n5. _im Januar_ → {{5}}\n6. _vor zwei Tagen_ → {{6}}\n7. _für eine Woche_ → {{7}}\n8. _am Abend_ → {{8}}\n9. _zwei Stunden_ → {{9}}\n10. _im Sommer 2020_ → {{10}}",
+    "blanks": [
+      { "id": "1", "label": "um 8 Uhr" },
+      { "id": "2", "label": "seit drei Jahren" },
+      { "id": "3", "label": "am Montag" },
+      { "id": "4", "label": "von 9 bis 17 Uhr" },
+      { "id": "5", "label": "im Januar" },
+      { "id": "6", "label": "vor zwei Tagen" },
+      { "id": "7", "label": "für eine Woche" },
+      { "id": "8", "label": "am Abend" },
+      { "id": "9", "label": "zwei Stunden" },
+      { "id": "10", "label": "im Sommer 2020" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Wann?", "Wie lange?"] },
+      { "blankId": "2", "options": ["Wann?", "Wie lange?"] },
+      { "blankId": "3", "options": ["Wann?", "Wie lange?"] },
+      { "blankId": "4", "options": ["Wann?", "Wie lange?"] },
+      { "blankId": "5", "options": ["Wann?", "Wie lange?"] },
+      { "blankId": "6", "options": ["Wann?", "Wie lange?"] },
+      { "blankId": "7", "options": ["Wann?", "Wie lange?"] },
+      { "blankId": "8", "options": ["Wann?", "Wie lange?"] },
+      { "blankId": "9", "options": ["Wann?", "Wie lange?"] },
+      { "blankId": "10", "options": ["Wann?", "Wie lange?"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Wann?",
+      "2": "Wie lange?",
+      "3": "Wann?",
+      "4": "Wie lange?",
+      "5": "Wann?",
+      "6": "Wann?",
+      "7": "Wie lange?",
+      "8": "Wann?",
+      "9": "Wie lange?",
+      "10": "Wann?"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Fes la prova mental: _==Quan?==_ vs _==Quant temps?==_. _seit_ i _von… bis…_ són sempre **durada**. _für_ (previsió) i una durada nua en acusatiu (_zwei Stunden_) també. _am, im, um_ situen un **moment**. I _vor_ (moment passat) és enganyós: tradueix com a \"fa\" però és moment, no durada.",
+      "references": ["A1b-31"]
+    },
+    "incorrect": {
+      "default": "Torna a la taula del pas 2. ==_seit, von… bis…, für_ i acusatius nus (_zwei Stunden, einen Tag_)== responen a _Wie lange?_ La resta (_um, am, im, vor_) responen a _Wann?_",
+      "byResponse": [
+        {
+          "match": { "6": "Wie lange?" },
+          "message": "_vor zwei Tagen_ és ==moment passat==, no durada. Respon a _Wann?_ (\"fa dos dies\", puntual). El treballarem a A1b-34.",
+          "references": ["A1b-31"]
+        },
+        {
+          "match": { "9": "Wann?" },
+          "message": "_zwei Stunden_ (sense preposició, en acusatiu) és una ==durada== (\"dues hores\"). Respon a _Wie lange?_"
+        },
+        {
+          "match": { "2": "Wann?" },
+          "message": "_seit_ sempre indica ==durada== (\"des de fa…\"). Respon a _Wie lange?_, no a _Wann?_"
+        },
+        {
+          "match": { "7": "Wann?" },
+          "message": "_für eine Woche_ és una ==durada prevista== (\"durant una setmana\"). Respon a _Wie lange?_"
+        }
+      ]
+    }
+  }
+}

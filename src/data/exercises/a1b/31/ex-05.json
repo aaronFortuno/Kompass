@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-31-ex-05",
+  "topicId": "A1b-31",
+  "title": "Del català a l'alemany: el grup temporal",
+  "prompt": "Escriu el **grup temporal en alemany** (preposició + substantiu) que correspon a cada expressió catalana. Escriu-ho **en minúscules** tret del substantiu alemany, sense punt final.",
+  "difficulty": 2,
+  "tags": ["traduccio", "type-in", "grup-preposicional"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. \"el dilluns\" → {{1}}\n2. \"a l'estiu\" → {{2}}\n3. \"al matí\" → {{3}}\n4. \"a les vuit\" → {{4}}\n5. \"al gener\" → {{5}}\n6. \"de nou a cinc\" (_9_, _17 Uhr_) → {{6}}\n7. \"des de fa tres anys\" → {{7}}\n8. \"fa dos dies\" (moment passat) → {{8}}",
+    "blanks": [
+      { "id": "1", "label": "el dilluns" },
+      { "id": "2", "label": "a l'estiu" },
+      { "id": "3", "label": "al matí" },
+      { "id": "4", "label": "a les vuit" },
+      { "id": "5", "label": "al gener" },
+      { "id": "6", "label": "de nou a cinc" },
+      { "id": "7", "label": "des de fa tres anys" },
+      { "id": "8", "label": "fa dos dies" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "am …" },
+      { "blankId": "2", "placeholder": "im …" },
+      { "blankId": "3", "placeholder": "am …" },
+      { "blankId": "4", "placeholder": "um …" },
+      { "blankId": "5", "placeholder": "im …" },
+      { "blankId": "6", "placeholder": "von … bis …" },
+      { "blankId": "7", "placeholder": "seit …" },
+      { "blankId": "8", "placeholder": "vor …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["am Montag"],
+      "2": ["im Sommer"],
+      "3": ["am Morgen"],
+      "4": ["um acht", "um acht Uhr", "um 8", "um 8 Uhr"],
+      "5": ["im Januar"],
+      "6": ["von 9 bis 17 Uhr", "von neun bis siebzehn Uhr", "von 9 bis 17"],
+      "7": ["seit drei Jahren", "seit 3 Jahren"],
+      "8": ["vor zwei Tagen", "vor 2 Tagen"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Observa que ==_fa_== del català correspon a ==_seit_== (si l'acció dura fins ara) o ==_vor_== (si és un punt passat). _Seit drei Jahren_ (i encara hi sóc) vs _vor zwei Tagen_ (puntual, fa dos dies). Aquest contrast el treballarem a fons a A1b-34.",
+      "references": ["A1b-31", "A1b-34"]
+    },
+    "incorrect": {
+      "default": "Revisa les preposicions: dia → ==_am_==, estació/mes → ==_im_==, hora → ==_um_==, interval → ==_von… bis…_==, \"des de fa\" → ==_seit_== + datiu plural, \"fa (puntual)\" → ==_vor_== + datiu plural. Comprova la terminació _-n_ del plural datiu: _Jahren, Tagen_.",
+      "byResponse": [
+        {
+          "match": { "7": "vor drei Jahren" },
+          "message": "_vor drei Jahren_ = \"fa tres anys\" (moment puntual passat). Per a \"des de fa tres anys\" (durada fins ara), cal ==_seit drei Jahren_==.",
+          "references": ["A1b-34"]
+        },
+        {
+          "match": { "8": "seit zwei Tagen" },
+          "message": "_seit zwei Tagen_ = \"des de fa dos dies\" (i encara dura). Per al punt passat \"fa dos dies\", cal ==_vor zwei Tagen_==.",
+          "references": ["A1b-34"]
+        },
+        {
+          "match": { "7": "seit drei Jahre" },
+          "message": "Amb _seit_ cal **datiu plural**: _drei ==Jahren==_ (no _Jahre_). _Seit_ regeix sempre datiu."
+        },
+        {
+          "match": { "8": "vor zwei Tage" },
+          "message": "Amb _vor_ temporal cal **datiu plural**: _zwei ==Tagen==_ (no _Tage_). Afegeix la _-n_."
+        }
+      ]
+    }
+  }
+}

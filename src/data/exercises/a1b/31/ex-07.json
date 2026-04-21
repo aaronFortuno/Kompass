@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-31-ex-07",
+  "topicId": "A1b-31",
+  "title": "Troba l'error",
+  "prompt": "Per a cada frase, indica de quin **tipus d'error** es tracta: ==(a) preposició incorrecta==, ==(b) ordre incorrecte==, o ==(c) correcta==.",
+  "difficulty": 3,
+  "tags": ["error-spotting", "diagnostic", "sintesi"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich arbeite **in** Montag._ → {{1}}\n\n2. _**Am** Januar fahre ich nach Berlin._ → {{2}}\n\n3. _Ich wohne **vor** zwei Jahren in Berlin._ → {{3}}\n\n4. _Ich fahre **nach Berlin am Montag**._ → {{4}}\n\n5. _**Um acht Uhr ich komme** nach Hause._ → {{5}}\n\n6. _Seit 2020 lerne ich Deutsch._ → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "1." },
+      { "id": "2", "label": "2." },
+      { "id": "3", "label": "3." },
+      { "id": "4", "label": "4." },
+      { "id": "5", "label": "5." },
+      { "id": "6", "label": "6." }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["(a) preposició incorrecta", "(b) ordre incorrecte", "(c) correcta"] },
+      { "blankId": "2", "options": ["(a) preposició incorrecta", "(b) ordre incorrecte", "(c) correcta"] },
+      { "blankId": "3", "options": ["(a) preposició incorrecta", "(b) ordre incorrecte", "(c) correcta"] },
+      { "blankId": "4", "options": ["(a) preposició incorrecta", "(b) ordre incorrecte", "(c) correcta"] },
+      { "blankId": "5", "options": ["(a) preposició incorrecta", "(b) ordre incorrecte", "(c) correcta"] },
+      { "blankId": "6", "options": ["(a) preposició incorrecta", "(b) ordre incorrecte", "(c) correcta"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "(a) preposició incorrecta",
+      "2": "(a) preposició incorrecta",
+      "3": "(a) preposició incorrecta",
+      "4": "(b) ordre incorrecte",
+      "5": "(b) ordre incorrecte",
+      "6": "(c) correcta"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Els **tres errors més freqüents**: (1) triar _am_ on toca _im_ o viceversa, (2) confondre _seit_ i _vor_, (3) oblidar la inversió V2 quan el complement temporal obre la frase. Les correccions: 1 → _==am== Montag_; 2 → _==Im== Januar_; 3 → _==seit== zwei Jahren_ (durada fins ara); 4 → _==am Montag nach Berlin==_ (temps abans de lloc); 5 → _Um acht Uhr ==komme ich==_ (inversió).",
+      "references": ["A1b-31", "A1b-34", "A1b-30"]
+    },
+    "incorrect": {
+      "default": "Diagnòstic en dos passos: (1) la **preposició** encaixa amb el tipus de complement? (dia → _am_, mes/estació → _im_, hora → _um_, durada → _seit/für_, moment passat → _vor_). (2) L'**ordre** respecta V2 i temps-abans-de-lloc?",
+      "byResponse": [
+        {
+          "match": { "3": "(b) ordre incorrecte" },
+          "message": "L'ordre és bo. L'error és de ==preposició==: _Ich wohne_ descriu una **durada fins ara** (\"visc aquí des de fa dos anys\"), així que cal ==_seit_==, no _vor_. _vor zwei Jahren_ voldria dir \"fa dos anys\" (moment puntual passat, no compatible amb _wohne_ en present).",
+          "references": ["A1b-34"]
+        },
+        {
+          "match": { "4": "(a) preposició incorrecta" },
+          "message": "Les preposicions (_nach_, _am_) estan bé. L'error és d'==ordre==: ==temps abans de lloc==. El correcte: _Ich fahre ==am Montag nach Berlin==_."
+        },
+        {
+          "match": { "6": "(a) preposició incorrecta" },
+          "message": "_Seit 2020 lerne ich Deutsch_ és **correcta**. _seit + any_ és una durada que arriba fins al present, i la inversió _lerne ich_ és la correcta quan un complement ocupa la pos. 1."
+        },
+        {
+          "match": { "6": "(b) ordre incorrecte" },
+          "message": "L'ordre és bo: _Seit 2020_ ocupa la pos. 1, _lerne_ (V2) a la 2, _ich_ (subjecte) a la 3. Inversió perfecta."
+        },
+        {
+          "match": { "5": "(a) preposició incorrecta" },
+          "message": "_Um acht Uhr_ és correcte. L'error és d'==ordre==: falta la ==inversió V2==. _Um acht Uhr ==komme ich== nach Hause._"
+        }
+      ]
+    }
+  }
+}

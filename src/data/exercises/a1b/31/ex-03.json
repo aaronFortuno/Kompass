@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-31-ex-03",
+  "topicId": "A1b-31",
+  "title": "Pregunta ↔ resposta temporal",
+  "prompt": "Empareja cada **pregunta** amb la **resposta** adequada. Observa que _Wann?_ i _Wie lange?_ poden tenir respostes molt diverses: la pregunta determina la **categoria**, no la preposició concreta.",
+  "difficulty": 2,
+  "tags": ["match", "wann", "wie-lange", "pregunta-resposta"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "q1", "group": "preguntes", "content": { "type": "text", "content": "_Wann beginnt der Kurs?_" } },
+      { "id": "q2", "group": "preguntes", "content": { "type": "text", "content": "_Wie lange lernst du Deutsch?_" } },
+      { "id": "q3", "group": "preguntes", "content": { "type": "text", "content": "_Wann hast du Geburtstag?_" } },
+      { "id": "q4", "group": "preguntes", "content": { "type": "text", "content": "_Von wann bis wann arbeitest du?_" } },
+      { "id": "q5", "group": "preguntes", "content": { "type": "text", "content": "_Wann bist du nach Berlin gekommen?_" } },
+      { "id": "q6", "group": "preguntes", "content": { "type": "text", "content": "_Wie lange bleibst du in Spanien?_" } },
+      { "id": "r1", "group": "respostes", "content": { "type": "text", "content": "==**_Um neun Uhr._**==" } },
+      { "id": "r2", "group": "respostes", "content": { "type": "text", "content": "==**_Seit drei Jahren._**==" } },
+      { "id": "r3", "group": "respostes", "content": { "type": "text", "content": "==**_Am fünfzehnten Mai._**==" } },
+      { "id": "r4", "group": "respostes", "content": { "type": "text", "content": "==**_Von Montag bis Freitag._**==" } },
+      { "id": "r5", "group": "respostes", "content": { "type": "text", "content": "==**_Vor einem Jahr._**==" } },
+      { "id": "r6", "group": "respostes", "content": { "type": "text", "content": "==**_Für zwei Wochen._**==" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Preguntes",
+    "groupBLabel": "Respostes"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["q1", "r1"],
+      ["q2", "r2"],
+      ["q3", "r3"],
+      ["q4", "r4"],
+      ["q5", "r5"],
+      ["q6", "r6"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Observa com _==Wann?==_ pot tenir respostes molt diverses (hora, data, moment passat amb _vor_). _==Wie lange?==_ també en té moltes (durada amb _seit_, amb _für_, amb _von… bis…_ o sense preposició). ==La pregunta no determina la preposició; determina la categoria.==",
+      "references": ["A1b-31", "A1b-34"]
+    },
+    "incorrect": {
+      "default": "Classifica primer cada pregunta (_Wann?_ = moment / _Wie lange?_ = durada / _Von wann bis wann?_ = interval), després tria la resposta que encaixa amb aquell tipus. _seit, für, von… bis…_ sempre són durada; _um, am, vor_ sempre són moment."
+    }
+  }
+}

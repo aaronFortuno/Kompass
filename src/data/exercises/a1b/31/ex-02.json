@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-31-ex-02",
+  "topicId": "A1b-31",
+  "title": "Quina preposició?",
+  "prompt": "Tria la preposició correcta per a cada complement de moment. Recorda: ==_am_== per dies i parts del dia, ==_im_== per mesos, estacions i anys, ==_um_== per hores. Els adverbis (_heute, gestern, morgen_) no porten preposició.",
+  "difficulty": 1,
+  "tags": ["preposicio", "am", "im", "um", "moment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. ___ _Montag_ → {{1}}\n2. ___ _Januar_ → {{2}}\n3. ___ _8 Uhr_ → {{3}}\n4. ___ _Morgen_ → {{4}}\n5. ___ _Sommer_ → {{5}}\n6. ___ _Wochenende_ → {{6}}\n7. ___ _halb neun_ → {{7}}\n8. ___ _heute_ → {{8}}\n9. ___ _Jahr 2020_ → {{9}}\n10. ___ _Viertel vor zehn_ → {{10}}",
+    "blanks": [
+      { "id": "1", "label": "___ Montag" },
+      { "id": "2", "label": "___ Januar" },
+      { "id": "3", "label": "___ 8 Uhr" },
+      { "id": "4", "label": "___ Morgen" },
+      { "id": "5", "label": "___ Sommer" },
+      { "id": "6", "label": "___ Wochenende" },
+      { "id": "7", "label": "___ halb neun" },
+      { "id": "8", "label": "___ heute" },
+      { "id": "9", "label": "___ Jahr 2020" },
+      { "id": "10", "label": "___ Viertel vor zehn" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["am", "im", "um", "—"] },
+      { "blankId": "2", "options": ["am", "im", "um", "—"] },
+      { "blankId": "3", "options": ["am", "im", "um", "—"] },
+      { "blankId": "4", "options": ["am", "im", "um", "—"] },
+      { "blankId": "5", "options": ["am", "im", "um", "—"] },
+      { "blankId": "6", "options": ["am", "im", "um", "—"] },
+      { "blankId": "7", "options": ["am", "im", "um", "—"] },
+      { "blankId": "8", "options": ["am", "im", "um", "—"] },
+      { "blankId": "9", "options": ["am", "im", "um", "—"] },
+      { "blankId": "10", "options": ["am", "im", "um", "—"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "am",
+      "2": "im",
+      "3": "um",
+      "4": "am",
+      "5": "im",
+      "6": "am",
+      "7": "um",
+      "8": "—",
+      "9": "im",
+      "10": "um"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. La regla pràctica: ==_am_== per dies i parts del dia (_Montag, Morgen, Wochenende_), ==_im_== per mesos, estacions i anys (_Januar, Sommer, Jahr 2020_), ==_um_== per hores (_8 Uhr, halb neun_). Els adverbs com _heute, gestern, morgen_ **no porten preposició**: són temporals per si mateixos.",
+      "references": ["A1b-31"]
+    },
+    "incorrect": {
+      "default": "Classifica primer el substantiu: dia/part del dia → ==_am_==, mes/estació/any → ==_im_==, hora → ==_um_==. Si és un **adverbi temporal** (_heute, gestern, jetzt, bald_), no hi va res: trieu ==_—_==.",
+      "byResponse": [
+        {
+          "match": { "2": "am" },
+          "message": "_Januar_ és un **mes**, no un dia: correspon ==_im Januar_==."
+        },
+        {
+          "match": { "5": "am" },
+          "message": "_Sommer_ és una **estació**: ==_im Sommer_==, com _im Winter, im Frühling_."
+        },
+        {
+          "match": { "8": "am" },
+          "message": "_heute_ és un **adverbi temporal**: ja és temporal per si sol, no porta preposició. Trieu ==_—_==."
+        },
+        {
+          "match": { "1": "im" },
+          "message": "_Montag_ és un **dia de la setmana**: ==_am Montag_==. _im_ s'usa amb mesos i estacions."
+        },
+        {
+          "match": { "3": "am" },
+          "message": "Per a les **hores** del rellotge, sempre ==_um_==: _um 8 Uhr_."
+        }
+      ]
+    }
+  }
+}

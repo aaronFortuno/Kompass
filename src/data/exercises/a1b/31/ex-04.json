@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-31-ex-04",
+  "topicId": "A1b-31",
+  "title": "Completa el mapa temporal",
+  "prompt": "Omple les caselles que falten a la taula-mapa dels complements temporals A1. Aquesta és la taula que has de portar al cap cada cop que construeixis una expressió temporal.",
+  "difficulty": 2,
+  "tags": ["mapa", "preposicions", "sintesi"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "**Moment (Wann?)**\n· Hora:           {{1}} _8 Uhr_\n· Dia setmana:    {{2}} _Montag_\n· Mes:            {{3}} _Januar_\n· Estació:        {{4}} _Sommer_\n· Moment passat:  {{5}} _zwei Jahren_\n\n**Durada (Wie lange?)**\n· Des de:         {{6}} _2020_\n· Inici i final:  {{7}} _9_ {{8}} _17 Uhr_\n· Prevista:       _für eine Woche_",
+    "blanks": [
+      { "id": "1", "label": "hora" },
+      { "id": "2", "label": "dia de la setmana" },
+      { "id": "3", "label": "mes" },
+      { "id": "4", "label": "estació" },
+      { "id": "5", "label": "moment passat" },
+      { "id": "6", "label": "des de" },
+      { "id": "7", "label": "inici" },
+      { "id": "8", "label": "final" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["um", "am", "im", "vor", "seit", "von", "bis", "für"] },
+      { "blankId": "2", "options": ["um", "am", "im", "vor", "seit", "von", "bis", "für"] },
+      { "blankId": "3", "options": ["um", "am", "im", "vor", "seit", "von", "bis", "für"] },
+      { "blankId": "4", "options": ["um", "am", "im", "vor", "seit", "von", "bis", "für"] },
+      { "blankId": "5", "options": ["um", "am", "im", "vor", "seit", "von", "bis", "für"] },
+      { "blankId": "6", "options": ["um", "am", "im", "vor", "seit", "von", "bis", "für"] },
+      { "blankId": "7", "options": ["um", "am", "im", "vor", "seit", "von", "bis", "für"] },
+      { "blankId": "8", "options": ["um", "am", "im", "vor", "seit", "von", "bis", "für"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "um",
+      "2": "am",
+      "3": "im",
+      "4": "im",
+      "5": "vor",
+      "6": "seit",
+      "7": "von",
+      "8": "bis"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Tens el **mapa mínim**: ==_um_== amb hores; ==_am_== amb dies i parts del dia; ==_im_== amb mesos, estacions i anys; ==_vor_== per \"fa X\" (moment passat); ==_seit_== per \"des de fa X\" (durada fins ara); ==_von… bis…_== per intervals tancats.",
+      "references": ["A1b-31"]
+    },
+    "incorrect": {
+      "default": "Torna a la taula del pas 2. La regla curta: ==_um_== hora, ==_am_== dia, ==_im_== mes/estació/any, ==_vor_== moment passat, ==_seit_== des de, ==_von_== … ==_bis_== interval.",
+      "byResponse": [
+        {
+          "match": { "5": "seit" },
+          "message": "_vor zwei Jahren_ = \"fa dos anys\" (==moment passat==). _seit_ seria \"des de fa dos anys\" (durada). Són germans falsos: A1b-34.",
+          "references": ["A1b-34"]
+        },
+        {
+          "match": { "6": "vor" },
+          "message": "Per \"des de fa…\" (durada que dura fins ara), cal ==_seit_==. _vor_ és un moment puntual passat.",
+          "references": ["A1b-34"]
+        },
+        {
+          "match": { "4": "am" },
+          "message": "_Sommer_ és una **estació**: ==_im Sommer_==, no _am Sommer_."
+        }
+      ]
+    }
+  }
+}

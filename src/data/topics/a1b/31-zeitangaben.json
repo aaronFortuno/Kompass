@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-31",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 31,
+  "title": "Die Zeitangaben",
+  "shortTitle": "Zeitangaben",
+  "description": "El mapa global dels complements temporals: les dues preguntes Wann? (moment) i Wie lange? (durada) que organitzen tot el sistema.",
+  "axes": ["expressions-i-funcions", "preposicions"],
+  "prerequisites": ["A1a-20", "A1a-21"],
+  "estimatedMinutes": 25,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Dues preguntes governen tot el sistema\n\nEl PDF de l'IOC ho diu d'entrada, i és el missatge central del tema:\n\n> _Les expressions temporals poden indicar **durada o un moment concret**. Així, la informació temporal respon a dos tipus de preguntes:_\n>\n> 1. **==Wann?==** (Moment)\n> 2. **==Wie lange?==** (Durada)\n\n==Tota expressió temporal de l'alemany A1 encaixa en una d'aquestes dues categories.== Si davant d'una expressió no saps si toca _am_, _um_, _seit_, _für_ o res, la pregunta que t'has de fer primer no és \"quina preposició?\", sinó:\n\n- **Això respon a _Wann?_** → moment, instant, data, dia, hora. Preposicions candidates: ==_am, im, um_== (ja les coneixes) i, en passat, ==_vor_== (nova a A1b-34).\n- **Això respon a _Wie lange?_** → durada, període, interval. Preposicions candidates: ==_seit_== (des de quan), ==_von… bis…_== (de… a…), ==_für_== (durant, previst), i sense preposició amb acusatiu (_einen Tag, zwei Stunden…_)."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Bona notícia catalanoparlant",
+          "body": "En català també distingim _quan?_ (moment) i _quant temps?_ (durada). L'estructura mental és idèntica. La diferència és que l'alemany marca aquesta distinció amb **preposicions específiques**, mentre que el català fa servir majoritàriament _a_ i _durant_ per a tot."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Enfoc de la lliçó",
+          "body": "Aquesta lliçó no introdueix cap preposició nova ni cap regla nova: ==fa de **mapa**== del territori sencer dels complements temporals. Fins ara has anat acumulant peces soltes (_heute, am Montag, um acht, im Sommer, zuerst, schon…_). Aquí les organitzem sota dues preguntes que ho governen tot. Si et quedes amb la taula d'aquesta lliçó ben interioritzada, les properes (A1b-32 a A1b-35) seran només _omplir caselles_."
+        }
+      ]
+    },
+    {
+      "id": "mapa-global",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El mapa complet dels complements temporals A1\n\nAquesta és la taula que vertebra **totes** les lliçons d'aquest bloc. No cal que la memoritzis ara: l'aniràs omplint amb les lliçons següents. Però sí que convé que la vegis **sencera**, per entendre cap a on vas."
+        },
+        {
+          "type": "table",
+          "title": "31.1 Mapa complet dels complements temporals A1",
+          "headers": ["Pregunta", "Subtipus", "Preposició", "Cas", "Exemple", "Lliçó"],
+          "rows": [
+            [{ "text": "==**Wann?**== (moment)", "rowspan": 8 }, "hora", "**um**", "—", "_um 8 Uhr_", "A1a-22, A1b-32"],
+            ["dia de la setmana", "**am** (_an dem_)", "datiu", "_am Montag_", "A1a-21, A1b-32"],
+            ["part del dia", "**am** (_an dem_)", "datiu", "_am Morgen, am Abend_", "A1a-21, A1b-32"],
+            ["mes", "**im** (_in dem_)", "datiu", "_im Januar_", "A1a-21, A1b-32"],
+            ["estació", "**im** (_in dem_)", "datiu", "_im Sommer_", "A1a-21, A1b-32"],
+            ["any", "**im** (_in dem_) Jahr", "datiu", "_im Jahr 2020_", "A1b-32"],
+            ["data", "**am** + ordinal", "datiu", "_am 3. Mai_", "A1b-35"],
+            ["moment passat (_fa X_)", "**vor**", "datiu", "_vor zwei Jahren_", "A1b-34"],
+            [{ "text": "==**Wie lange?**== (durada)", "rowspan": 4 }, "des de quan (fins ara)", "**seit**", "datiu", "_seit 2020, seit drei Jahren_", "A1b-34"],
+            ["inici i final", "**von… bis…**", "datiu / —", "_von 9 bis 17 Uhr_", "A1b-33"],
+            ["durada prevista", "**für**", "acusatiu", "_für eine Woche_", "A1b-33"],
+            ["durada concreta", "— (sense prep.)", "acusatiu", "_einen Tag, zwei Stunden_", "A1b-33"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Llegeix la taula així:** la columna esquerra és la **pregunta** que faries a algú; la columna dreta és la **resposta típica**. Per exemple: _==Wann== arbeitest du?_ → _==Um 9 Uhr==_ / _==Am Montag==_ / _==Im Sommer==_. O bé: _==Wie lange== lernst du Deutsch?_ → _==Seit drei Jahren==_ / _==Von 2020 bis 2023==_ / _==Zwei Jahre==_."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Nota sobre el datiu",
+          "body": "Totes les preposicions de la taula que porten cas regeixen ==**datiu**==, sense excepció. _An, in_ i _vor_ poden regir acusatiu en altres contextos (direcció, posició), però com a **complements temporals són sempre datius**. _Seit_ i _von_ són datius sempre. _Für_ és sempre acusatiu. Això simplifica molt la tria."
+        }
+      ]
+    },
+    {
+      "id": "recap-a1a",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El que ja saps: repàs visual d'A1a\n\nAbans d'entrar en el territori nou d'A1b, consolidem les peces que ja tens a la maleta. Totes surten dels temes A1a-20 a A1a-24.\n\n**1. Adverbis temporals (A1a-20)** — invariables, sense preposició:\n\n> _heute_ (avui), _morgen_ (demà), _gestern_ (ahir), _jetzt_ (ara), _bald_ (aviat), _immer_ (sempre), _oft_ (sovint), _manchmal_ (a vegades), _nie_ (mai), _jeden Tag_ (cada dia).\n\n**2. Hora amb _um_ (A1a-21, A1a-22)** — moment puntual:\n\n> _==um== 8 Uhr, ==um== halb neun, ==um== Viertel vor zehn._\n> _==Wann== kommst du? — ==Um== acht._\n\n**3. _am_ + dia / part del dia (A1a-21)** — moment dins la setmana o el dia:\n\n> _==am== Montag, ==am== Wochenende, ==am== Morgen, ==am== Nachmittag, ==am== Abend._\n\n**4. _im_ + mes / estació (A1a-21)** — moment dins l'any:\n\n> _==im== Januar, ==im== Mai, ==im== Sommer, ==im== Winter._\n\n**5. _von… bis…_ (A1a-21)** — interval tancat:\n\n> _==von== 9 ==bis== 17 Uhr, ==von== Montag ==bis== Freitag._\n\n**6. Seqüenciadors (A1a-23)** — ordenen accions, no situen en el calendari:\n\n> _==Zuerst== stehe ich auf, ==dann== frühstücke ich, ==danach== gehe ich zur Arbeit._\n\n**7. Valoració temporal (A1a-24)** — qualifiquen la durada o el moment:\n\n> _==schon== drei Jahre_ (ja fa tres anys), _==erst== zwei Monate_ (només dos mesos), _==noch== nicht_ (encara no).\n\n==Totes aquestes peces continuen vives.== La lliçó d'avui i les quatre següents **no les substitueixen**: les **organitzen** i hi afegeixen casos que encara no has vist (_seit, vor, für_, dates completes)."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Excepció coneguda",
+          "body": "_==in der== Nacht_ (la nit va amb _in + der_, no _am_). És l'única part del dia que fuig del patró _am_."
+        }
+      ]
+    },
+    {
+      "id": "check-1-classificar",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-31-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "wann-vs-wielange",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### La prova del nou: _Wann?_ vs _Wie lange?_\n\nQuan sentis o llegeixis una expressió temporal, fes-te aquestes dues preguntes en ordre:\n\n1. **Hi ha un verb a la frase? Com situa l'acció?** Si situa un **instant** (_arribo, començo, neixo, em llevo_), és _Wann?_ Si descriu una **activitat sostinguda** (_visc, treballo, estudio, aprenc_), sovint és _Wie lange?_ (però també pot ser _Wann?_, amb el sentit de \"a quina hora comença\").\n2. **Puc canviar _quan?_ per _quant temps?_ sense perdre sentit?** Si la resposta encaixa amb _quan?_, és moment. Si encaixa amb _quant temps?_, és durada."
+        },
+        {
+          "type": "table",
+          "title": "31.2 Contrast Wann? / Wie lange?",
+          "headers": ["Frase alemanya", "Pregunta", "Categoria"],
+          "rows": [
+            ["_Ich komme **um acht Uhr**._", "Wann kommst du?", "moment (hora)"],
+            ["_Ich arbeite **acht Stunden**._", "Wie lange arbeitest du?", "durada"],
+            ["_Ich bin **am Montag** in Berlin._", "Wann bist du in Berlin?", "moment (dia)"],
+            ["_Ich bin **eine Woche** in Berlin._", "Wie lange bist du in Berlin?", "durada"],
+            ["_Ich wohne **seit 2020** hier._", "Wie lange wohnst du hier?", "durada (des de)"],
+            ["_Ich bin **vor zwei Jahren** gekommen._", "Wann bist du gekommen?", "moment (passat)"],
+            ["_Ich lerne Deutsch **im Sommer**._", "Wann lernst du Deutsch?", "moment (estació)"],
+            ["_Ich lerne Deutsch **für drei Monate**._", "Wie lange lernst du Deutsch?", "durada (prevista)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Parany clàssic catalanoparlant",
+          "body": "_Seit_ i _vor_ són **germans falsos** en la traducció. _Seit zwei Jahren_ (_==fa== dos anys… i encara hi sóc_) es tradueix al català amb \"_fa dos anys_\" però respon a _==Wie lange?==_ (durada). _Vor zwei Jahren_ (_==fa== dos anys, moment puntual passat_) també es tradueix amb \"_fa dos anys_\" però respon a _==Wann?==_ (moment). ==Mateixa traducció catalana, dues preposicions alemanyes diferents.== Això ho treballarem a fons a A1b-34."
+        }
+      ]
+    },
+    {
+      "id": "check-2-preposicio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-31-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "check-3-pregunta-resposta",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-31-ex-03", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "posicio-frase",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### On col·loques el complement temporal a la frase\n\nQualsevol expressió temporal (adverbi o grup preposicional) ocupa un dels dos llocs clàssics, tal com ja saps d'A1a-18 i A1b-30:\n\n**1. Posició 1 (Vorfeld)** — emfasitza el _quan_. El subjecte passa a la 3 (inversió, regla V2).\n\n> _==Am Montag== ==arbeite== ich bis 17 Uhr._\n> _==Seit 2020== ==wohne== ich in Berlin._\n> _==Vor zwei Jahren== ==bin== ich nach Deutschland ==gekommen==._\n\n**2. Al mig (Mittelfeld)** — ordre neutre, situa l'acció després del verb.\n\n> _Ich ==arbeite== **am Montag** bis 17 Uhr._\n> _Ich ==wohne== **seit 2020** in Berlin._\n> _Ich ==bin== **vor zwei Jahren** nach Deutschland ==gekommen==._\n\n**Regla d'or del Mittelfeld** (la reveuràs a A1b-32): quan hi ha **més d'un complement temporal**, l'ordre intern és de ==més general a més específic==:\n\n> _Ich arbeite **am Montag um neun Uhr**._ (dia → hora)\n> _Ich bin **im Sommer 2023 nach Berlin** gefahren._ (estació/any → destí)\n\nMai _~~um neun Uhr am Montag~~_ en ordre neutre: l'específic (hora) va **després** del general (dia)."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Norma TeKaMoLo",
+          "body": "Norma avançada, només com a apunt: l'ordre canònic del Mittelfeld és **TE**mps → **KA**usal → **MO**dal → **LO**cal. De moment et basta recordar: ==**temps abans de lloc**==. _Ich fahre ==am Montag nach Berlin==_, no _~~nach Berlin am Montag~~_."
+        }
+      ]
+    },
+    {
+      "id": "check-4-completar-mapa",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-31-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-5-traduccio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-31-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-6-ordre",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-31-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-7-error",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-31-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-8-produccio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-31-ex-08", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "full-ruta",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Full de ruta per les pròximes quatre lliçons\n\nAra que tens el mapa, aquí tens què farà cada lliçó del bloc:"
+        },
+        {
+          "type": "table",
+          "title": "31.3 Full de ruta A1b-32 → A1b-35",
+          "headers": ["Lliçó", "Títol", "Què hi treballaràs"],
+          "rows": [
+            ["**A1b-32**", "_Wann?_ — complements de moment", "sistematització de _am, im, um_, afegint _im Jahr_ (anys), combinació de complements, consolidació del datiu amb preposicions temporals"],
+            ["**A1b-33**", "_Wie lange?_ — complements de durada", "_von… bis…_, _für_ + acusatiu, durada sense preposició (_einen Tag, zwei Stunden_), contrast moment vs durada"],
+            ["**A1b-34**", "_seit_ / _vor_", "dues preposicions noves: _seit_ (durada amb present, \"des de fa\") vs _vor_ (moment puntual passat, \"fa X\"). El tàndem que més confon els catalanoparlants"],
+            ["**A1b-35**", "Das Datum (la data)", "dir dates completes: _am dritten Mai_, nombres ordinals aplicats a dates, formats escrit i oral"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Una cosa a la vegada",
+          "body": "Cada lliçó aprofundeix **una zona del mapa**. Si et perds en alguna, torna a la taula general del pas 2: situa la zona que estàs estudiant i t'orientarà."
+        }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi\n\n**Les dues preguntes que ho organitzen tot:**\n\n> _==Wann?==_ (moment) — quan passa l'acció en el calendari o rellotge.\n> _==Wie lange?==_ (durada) — quant temps dura l'acció, o des de quan."
+        },
+        {
+          "type": "table",
+          "title": "31.4 El mapa mínim que has de portar al cap",
+          "headers": ["Pregunta", "Preposicions candidates", "Cas"],
+          "rows": [
+            ["**Wann?**", "_um, am, im, vor_", "datiu (excepte _um_, que no regeix cas temporal)"],
+            ["**Wie lange?**", "_seit, von… bis…, für_ o sense preposició", "datiu (_seit, von_), acusatiu (_für_ i sense prep.)"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "31.5 Les tres regles d'or de col·locació",
+          "headers": ["Regla", "Contingut"],
+          "rows": [
+            ["**1. Posició 2**", "El **verb conjugat** sempre a la ==posició 2==. Si el complement temporal obre la frase, el **subjecte** passa a la ==3== (inversió)."],
+            ["**2. Temps abans de lloc**", "Al Mittelfeld: _am Montag nach Berlin_, no _~~nach Berlin am Montag~~_."],
+            ["**3. General → específic**", "Si hi ha **més d'un complement temporal**, l'ordre és **general → específic**: _am Montag um neun_, no _~~um neun am Montag~~_."]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista pràctica final",
+          "body": "Abans d'escriure o dir una expressió temporal, fes **dues preguntes mentals** en aquest ordre: (1) _==Això és moment o durada?==_ (2) _==Quin subtipus és (hora? dia? mes? des de? durant?)==_. Amb la resposta a aquestes dues preguntes, la preposició cau sola. La gramàtica temporal de l'alemany és ==regular==: només cal aplicar el mapa."
+        },
+        {
+          "type": "explanation",
+          "body": "**El que ve a continuació:**\n\n- **A1b-32** — aprofundim _Wann?_ i combinem complements.\n- **A1b-33** — tot el territori de _Wie lange?_ amb _von… bis…_, _für_ i durada sense preposició.\n- **A1b-34** — el tàndem _seit_ / _vor_, el més traïdor.\n- **A1b-35** — dir dates completes."
+        }
+      ]
+    }
+  ]
+}

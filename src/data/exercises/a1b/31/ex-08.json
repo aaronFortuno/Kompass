@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-31-ex-08",
+  "topicId": "A1b-31",
+  "title": "Completa amb el grup temporal correcte",
+  "prompt": "Completa cada frase amb el **grup temporal** (preposició + substantiu) que encaixa amb la pista entre parèntesis. Respecta el cas (datiu o acusatiu) i les terminacions de plural (_-n_ a _Jahren, Tagen, Monaten_).",
+  "difficulty": 3,
+  "tags": ["produccio", "type-in", "cas", "sintesi"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich schlafe lange_ {{1}} (_el cap de setmana_).\n\n2. _Ich frühstücke_ {{2}} (_a les set_).\n\n3. _Ich fahre Ski_ {{3}} (_a l'hivern_).\n\n4. _Ich wohne_ {{4}} _in Barcelona_ (_des de fa un any_).\n\n5. _Ich bin_ {{5}} _angekommen_ (_fa tres dies, moment puntual_).",
+    "blanks": [
+      { "id": "1", "label": "el cap de setmana" },
+      { "id": "2", "label": "a les set" },
+      { "id": "3", "label": "a l'hivern" },
+      { "id": "4", "label": "des de fa un any" },
+      { "id": "5", "label": "fa tres dies (puntual)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "am …" },
+      { "blankId": "2", "placeholder": "um …" },
+      { "blankId": "3", "placeholder": "im …" },
+      { "blankId": "4", "placeholder": "seit … (datiu)" },
+      { "blankId": "5", "placeholder": "vor … (datiu plural)" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["am Wochenende"],
+      "2": ["um sieben", "um sieben Uhr", "um 7", "um 7 Uhr"],
+      "3": ["im Winter"],
+      "4": ["seit einem Jahr", "seit 1 Jahr"],
+      "5": ["vor drei Tagen", "vor 3 Tagen"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has aplicat les cinc zones del mapa: ==_am_== per a parts de la setmana (_am Wochenende_), ==_um_== per a hores, ==_im_== per a estacions, ==_seit_== + datiu per a \"des de fa\" (amb masculí/neutre: _ein**em** Jahr_), i ==_vor_== + datiu plural per a \"fa X\" puntual (_drei Tag**en**_).",
+      "references": ["A1b-31", "A1b-34"]
+    },
+    "incorrect": {
+      "default": "Revisa dos aspectes: (1) la **preposició** correcta per al subtipus (part del dia/setmana → _am_; hora → _um_; estació → _im_; durada fins ara → _seit_; moment passat → _vor_); (2) el **cas** (tot datiu aquí): masculí/neutre singular _ein==em==_, plural amb _-n_ (_Jahr==en==, Tag==en==_).",
+      "byResponse": [
+        {
+          "match": { "4": "seit ein Jahr" },
+          "message": "_seit_ regeix **datiu**. Amb un masculí/neutre singular: _seit ein==em== Jahr_ (no _ein Jahr_ — això és acusatiu/nominatiu)."
+        },
+        {
+          "match": { "4": "vor einem Jahr" },
+          "message": "_vor einem Jahr_ voldria dir \"fa un any\" (moment puntual passat). Per a \"des de fa un any\" (durada fins ara), cal ==_seit einem Jahr_==.",
+          "references": ["A1b-34"]
+        },
+        {
+          "match": { "5": "vor drei Tage" },
+          "message": "Cal **datiu plural**: afegeix la _-n_ a _Tage_ → _vor drei Tag==en==_. Els plurals en datiu porten _-n_ sempre (tret dels que ja acaben en _-n_ o _-s_)."
+        },
+        {
+          "match": { "5": "seit drei Tagen" },
+          "message": "_seit drei Tagen_ = \"des de fa tres dies\" (durada). La pista marca \"moment puntual\", per tant cal ==_vor drei Tagen_==.",
+          "references": ["A1b-34"]
+        },
+        {
+          "match": { "3": "am Winter" },
+          "message": "Les **estacions** van amb ==_im_==: _im Winter_, _im Sommer_, _im Frühling_, _im Herbst_."
+        }
+      ]
+    }
+  }
+}
