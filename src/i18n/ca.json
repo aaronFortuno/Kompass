@@ -26,7 +26,13 @@
   "topics": {
     "title": "Temes",
     "intro": "Tots els temes disponibles agrupats per nivell. Tria'n un per començar.",
-    "empty": "Encara no hi ha temes publicats."
+    "empty": "Encara no hi ha temes publicats.",
+    "progress": {
+      "progressLabel": "{completed} / {total} exercicis",
+      "progressPct": "{pct}%",
+      "completed": "Completat",
+      "noExercises": "Tema de lectura"
+    }
   },
   "topic": {
     "backToIndex": "Torna als temes",

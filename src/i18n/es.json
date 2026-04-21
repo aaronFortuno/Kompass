@@ -26,7 +26,13 @@
   "topics": {
     "title": "Temas",
     "intro": "Todos los temas disponibles agrupados por nivel. Escoge uno para empezar.",
-    "empty": "Aún no hay temas publicados."
+    "empty": "Aún no hay temas publicados.",
+    "progress": {
+      "progressLabel": "{completed} / {total} ejercicios",
+      "progressPct": "{pct}%",
+      "completed": "Completado",
+      "noExercises": "Tema de lectura"
+    }
   },
   "topic": {
     "backToIndex": "Volver a los temas",
