@@ -3,12 +3,12 @@ import { useNavigate, useParams } from 'react-router-dom';
 import {
   ArrowLeft,
   ArrowRight,
-  X as CloseIcon,
   Compass,
   Dumbbell,
   Info,
   Lightbulb,
   AlertTriangle,
+  Settings as SettingsIcon,
 } from 'lucide-react';
 import { useT } from '@/i18n';
 import { useSettings } from '@/store/useSettingsStore.js';
@@ -23,6 +23,7 @@ import {
 } from '@/lib/reader/beatTransitions.js';
 import { parseInline } from '@/lib/reader/parseInline.js';
 import { Typed } from '@/components/reader/Typed.jsx';
+import { ReaderSettingsDrawer } from '@/components/reader/ReaderSettingsDrawer.jsx';
 import { ExerciseEngine } from '@/components/exercise/ExerciseEngine.jsx';
 
 /*
@@ -205,7 +206,7 @@ function Backdrop({ topic }) {
 function BeatKicker({ stepIdx, step, beatKicker }) {
   return (
     <div className="kf-chapter">
-      <span>Capítol {String(stepIdx + 1).padStart(2, '0')}</span>
+      <span>Pas {String(stepIdx + 1).padStart(2, '0')}</span>
       <span className="kf-sep" />
       <span>{beatKicker || step.id || ''}</span>
     </div>
@@ -217,7 +218,7 @@ function HeadingBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed 
     <>
       {showKicker ? (
         <div className="kf-chapter">
-          <span>{beat.kicker || step.id || `Capítol ${stepIdx + 1}`}</span>
+          <span>{beat.kicker || step.id || `Pas ${stepIdx + 1}`}</span>
         </div>
       ) : null}
       <Typed
@@ -506,7 +507,7 @@ function ExerciseBeatCard({ beat, stepIdx, onFinish }) {
         <Dumbbell size={12} aria-hidden="true" />
         <span>{label}</span>
         <span className="kf-sep" />
-        <span>Step {String(stepIdx + 1).padStart(2, '0')}</span>
+        <span>Pas {String(stepIdx + 1).padStart(2, '0')}</span>
       </div>
       <div className="kf-ex-card">
         <div className="kf-ex-header">
@@ -596,7 +597,7 @@ function BeatSidebar({
   return (
     <aside className="kf-sidebar" aria-label="Índex de la lliçó">
       <div className="kf-sidebar-kicker">
-        <span>Capítol {String(stepIdx + 1).padStart(2, '0')}</span>
+        <span>Pas {String(stepIdx + 1).padStart(2, '0')}</span>
         <span className="kf-sidebar-kicker-sep" />
         <span>{topic.shortTitle || topic.title}</span>
       </div>
@@ -686,19 +687,25 @@ function BeatSidebar({
  * complet, sense caret). El kicker de Capítol només es mostra al
  * current, perquè els peek queden atenuats.
  */
+/*
+ * Amb llista flat de beats del topic (cada entrada amb el seu stepIdx /
+ * beatIdx / step originals), la transició entre passos és igual que la
+ * transició entre beats dins d'un mateix pas: el darrer beat d'un pas
+ * passa a `prev`, el primer del pas següent passa a `current`, etc.
+ * Keys per posició global estable → React reconcilia els elements i
+ * les CSS transitions animen el canvi de rol.
+ */
 function BeatStagePeek({
-  beats,
-  beatIdx,
-  stepIdx,
-  step,
+  allBeats,
+  globalIdx,
   settings,
   speed,
   fastMode,
 }) {
   return (
     <>
-      {beats.map((b, i) => {
-        const delta = i - beatIdx;
+      {allBeats.map((entry, i) => {
+        const delta = i - globalIdx;
         let role;
         if (delta === 0) role = 'current';
         else if (delta === -1) role = 'prev';
@@ -709,14 +716,14 @@ function BeatStagePeek({
         const isCurrent = role === 'current';
         return (
           <div
-            key={`s${stepIdx}-b${i}`}
+            key={`s${entry.stepIdx}-b${entry.beatIdx}`}
             className={`kf-peek kf-peek-${role}`}
             aria-hidden={!isCurrent}
           >
             <BeatBody
-              beat={b}
-              step={step}
-              stepIdx={stepIdx}
+              beat={entry.beat}
+              step={entry.step}
+              stepIdx={entry.stepIdx}
               showKicker={isCurrent}
               settings={settings}
               speed={speed}
@@ -806,12 +813,36 @@ export function FocusReader({ topic }) {
   // actual. Si ja està actiu quan l'usuari torna a prémer ↓/↑, avança al
   // següent/anterior beat preservant fastMode (salt continu).
   const [fastMode, setFastMode] = useState(false);
+  // Drawer de settings (§79): s'obre amb "c" o el botó ⚙ del peu.
+  const [drawerOpen, setDrawerOpen] = useState(false);
   const rootRef = useRef(null);
 
   const step = topic.steps[stepIdx];
   const totalSteps = topic.steps.length;
   const beats = useMemo(() => stepToBeats(step), [step]);
   const beat = beats[Math.min(beatIdx, Math.max(beats.length - 1, 0))];
+
+  // Llista plana de beats del topic sencer — permet al peek animar les
+  // transicions entre passos de la mateixa manera que les transicions
+  // entre beats dins d'un pas (§73).
+  const allBeats = useMemo(() => {
+    const flat = [];
+    topic.steps.forEach((s, sIdx) => {
+      const sBeats = stepToBeats(s);
+      sBeats.forEach((b, bIdx) => {
+        flat.push({ beat: b, step: s, stepIdx: sIdx, beatIdx: bIdx });
+      });
+    });
+    return flat;
+  }, [topic]);
+
+  const globalIdx = useMemo(() => {
+    let idx = 0;
+    for (let i = 0; i < stepIdx; i++) {
+      idx += stepToBeats(topic.steps[i]).length;
+    }
+    return idx + Math.min(beatIdx, Math.max(beats.length - 1, 0));
+  }, [topic, stepIdx, beatIdx, beats.length]);
   const isFullMode = settings.studyMode === 'full';
   const blockStarts = useMemo(() => computeBlocks(topic.steps), [topic.steps]);
   const currentBlock = useMemo(() => {
@@ -957,6 +988,10 @@ export function FocusReader({ topic }) {
   // Teclat global.
   useEffect(() => {
     const onKey = (e) => {
+      // Si el drawer està obert, ignorem dreceres del reader (l'ESC
+      // el captura el drawer mateix en el seu propi handler).
+      if (drawerOpen) return;
+
       if (e.key === 'Escape') {
         e.preventDefault();
         closeReader();
@@ -965,6 +1000,15 @@ export function FocusReader({ topic }) {
 
       const tag = document.activeElement?.tagName?.toLowerCase();
       const inInput = ['input', 'textarea', 'select'].includes(tag);
+
+      // "c" per obrir el drawer de config (§79). Sense modificadors,
+      // ignora inputs perquè no trenquem l'escriptura d'exercicis.
+      if ((e.key === 'c' || e.key === 'C') && !e.ctrlKey && !e.metaKey && !e.altKey) {
+        if (inInput) return;
+        e.preventDefault();
+        setDrawerOpen(true);
+        return;
+      }
 
       // ↓ / ↑ : skip typewriter. Primer press revela el beat actual;
       // següents presses avancen mantenint el skip actiu.
@@ -995,7 +1039,7 @@ export function FocusReader({ topic }) {
     };
     window.addEventListener('keydown', onKey, true);
     return () => window.removeEventListener('keydown', onKey, true);
-  }, [closeReader, goBeat, goStep, goBlock, skipOrAdvance]);
+  }, [closeReader, goBeat, goStep, goBlock, skipOrAdvance, drawerOpen]);
 
   // Swipe tàctil.
   const touchRef = useRef({ x: 0, y: 0, t: 0, active: false });
@@ -1089,10 +1133,8 @@ export function FocusReader({ topic }) {
         ) : (
           <>
             <BeatStagePeek
-              beats={beats}
-              beatIdx={beatIdx}
-              stepIdx={stepIdx}
-              step={step}
+              allBeats={allBeats}
+              globalIdx={globalIdx}
               settings={settings}
               speed={speed}
               fastMode={fastMode}
@@ -1124,8 +1166,8 @@ export function FocusReader({ topic }) {
         <div className="kf-foot-mid">
           <span className="kf-foot-counter">
             {isFullMode
-              ? `Step ${String(stepIdx + 1).padStart(2, '0')} · Bloc ${String(currentBlock + 1).padStart(2, '0')}/${blockStarts.length}`
-              : `Step ${String(stepIdx + 1).padStart(2, '0')} · ${beatIdx + 1}/${beats.length}`}
+              ? `Pas ${String(stepIdx + 1).padStart(2, '0')} · Bloc ${String(currentBlock + 1).padStart(2, '0')}/${blockStarts.length}`
+              : `Pas ${String(stepIdx + 1).padStart(2, '0')} · ${beatIdx + 1}/${beats.length}`}
           </span>
           <span className="kf-keyhint">
             {!isFullMode ? (
@@ -1170,26 +1212,47 @@ export function FocusReader({ topic }) {
             </span>
             <span className="kf-sep" />
             <span className="kgroup">
+              <kbd>c</kbd>
+              <span className="lbl">config</span>
+            </span>
+            <span className="kf-sep" />
+            <span className="kgroup">
               <kbd>Esc</kbd>
               <span className="lbl">sortir</span>
             </span>
           </span>
         </div>
 
-        <button
-          type="button"
-          className="kf-btn kf-btn-primary"
-          onClick={() => goBeat(1)}
-          disabled={
-            isFullMode
-              ? stepIdx === totalSteps - 1
-              : stepIdx === totalSteps - 1 && beatIdx === beats.length - 1
-          }
-        >
-          <span>{t('step.next')}</span>
-          <ArrowRight size={12} aria-hidden="true" />
-        </button>
+        <div className="kf-foot-right">
+          <button
+            type="button"
+            className="kf-foot-icon"
+            onClick={() => setDrawerOpen(true)}
+            aria-label={t('nav.settings')}
+            title={t('nav.settings') + ' (c)'}
+          >
+            <SettingsIcon size={16} aria-hidden="true" strokeWidth={1.75} />
+          </button>
+          <button
+            type="button"
+            className="kf-btn kf-btn-primary"
+            onClick={() => goBeat(1)}
+            disabled={
+              isFullMode
+                ? stepIdx === totalSteps - 1
+                : stepIdx === totalSteps - 1 && beatIdx === beats.length - 1
+            }
+          >
+            <span>{t('step.next')}</span>
+            <ArrowRight size={12} aria-hidden="true" />
+          </button>
+        </div>
       </div>
+
+      <ReaderSettingsDrawer
+        open={drawerOpen}
+        onClose={() => setDrawerOpen(false)}
+      />
     </div>
   );
 }

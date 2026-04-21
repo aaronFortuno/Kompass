@@ -713,6 +713,89 @@
   padding-left: 8px;
 }
 
+/*
+ * Drawer de settings del reader · §79
+ * Panell lateral dret que llisca des de fora en obrir-se. Sobreescriu
+ * el contingut amb un backdrop fosc translúcid clicable per tancar.
+ */
+.kf-drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 60;
+  pointer-events: none;
+  transition: background-color 320ms var(--ease-standard);
+}
+.kf-drawer-backdrop.is-open {
+  background: rgba(0, 0, 0, 0.28);
+  pointer-events: auto;
+}
+.kf-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(420px, 92vw);
+  height: 100%;
+  background: rgb(var(--color-reader-paper));
+  border-left: 1px solid rgb(var(--color-reader-rule));
+  box-shadow: -12px 0 32px rgba(0, 0, 0, 0.12);
+  z-index: 61;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 360ms var(--ease-emphasized);
+  will-change: transform;
+  color: rgb(var(--color-reader-ink));
+}
+.kf-drawer.is-open {
+  transform: translateX(0);
+}
+.kf-drawer-header {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  border-bottom: 1px solid rgb(var(--color-reader-rule));
+}
+.kf-drawer-title {
+  font-family: 'Newsreader', serif;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
+  color: rgb(var(--color-reader-ink));
+}
+.kf-drawer-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgb(var(--color-reader-rule));
+  background: transparent;
+  color: rgb(var(--color-reader-ink-2));
+  cursor: pointer;
+  border-radius: 0;
+  transition: color var(--duration-fast) var(--ease-standard),
+    border-color var(--duration-fast) var(--ease-standard);
+}
+.kf-drawer-close:hover {
+  color: rgb(var(--color-reader-ink));
+  border-color: rgb(var(--color-reader-ink));
+}
+.kf-drawer-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px 24px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kf-drawer,
+  .kf-drawer-backdrop {
+    transition: none !important;
+  }
+}
+
 .kf-stage-full {
   gap: 40px;
   padding: 20px 0 40px;
@@ -953,9 +1036,9 @@
 .kf-beat-callout.variant-danger .kf-beat-callout-icon { color: rgb(var(--color-reader-bad)); }
 .kf-beat-callout.variant-tip .kf-beat-callout-icon { color: rgb(var(--color-reader-ok)); }
 .kf-beat-callout h4 {
-  margin: 0 0 8px;
+  margin: 0 0 10px;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: rgb(var(--color-reader-ink));
@@ -964,8 +1047,8 @@
 .kf-beat-callout p {
   margin: 0;
   font-family: 'Newsreader', serif;
-  font-size: 24px;
-  line-height: 1.4;
+  font-size: calc(30px * var(--kf-type-scale, 1));
+  line-height: 1.35;
   color: rgb(var(--color-reader-ink));
 }
 
@@ -1154,6 +1237,34 @@ html.dark .k-mark {
   justify-content: center;
 }
 .kf-foot-counter { font-size: 11px; }
+
+/* Cantonada dreta del peu: icona de config + botó Següent alineats */
+.kf-foot-right {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.kf-foot-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgb(var(--color-reader-rule));
+  background: transparent;
+  color: rgb(var(--color-reader-ink-2));
+  cursor: pointer;
+  border-radius: 0;
+  transition:
+    color var(--duration-fast) var(--ease-standard),
+    border-color var(--duration-fast) var(--ease-standard),
+    background-color var(--duration-fast) var(--ease-standard);
+}
+.kf-foot-icon:hover {
+  color: rgb(var(--color-reader-ink));
+  border-color: rgb(var(--color-reader-ink));
+  background: rgb(var(--color-reader-paper-2));
+}
 .kf-keyhint {
   display: inline-flex;
   align-items: center;
