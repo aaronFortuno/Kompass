@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-37-ex-02",
+  "topicId": "A1b-37",
+  "title": "Tria la forma correcta del pronom",
+  "prompt": "Omple cada buit amb la **forma correcta** del pronom indicat entre parèntesis. El verb o la preposició et marquen el cas.",
+  "difficulty": 2,
+  "tags": ["pronoms", "dropdownFill", "cas"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Er liebt {{1}}._ (jo)\n\n2. _Wir helfen {{2}}._ (tu)\n\n3. _Ich kenne {{3}}._ (ell)\n\n4. _Das gefällt {{4}}._ (nosaltres)\n\n5. _Ich danke {{5}}._ (vostè)\n\n6. _Siehst du {{6}}?_ (ella)\n\n7. _Das Buch ist für {{7}}._ (vosaltres)\n\n8. _Er wohnt bei {{8}}._ (ells)\n\n9. _Sie gibt {{9}} das Buch._ (a mi)\n\n10. _Ohne {{10}} gehen wir nicht._ (tu)",
+    "blanks": [
+      { "id": "1", "label": "1. (jo) — _lieben_ + acc." },
+      { "id": "2", "label": "2. (tu) — _helfen_ + dat." },
+      { "id": "3", "label": "3. (ell) — _kennen_ + acc." },
+      { "id": "4", "label": "4. (nosaltres) — _gefallen_ + dat." },
+      { "id": "5", "label": "5. (vostè) — _danken_ + dat." },
+      { "id": "6", "label": "6. (ella) — _sehen_ + acc." },
+      { "id": "7", "label": "7. (vosaltres) — _für_ + acc." },
+      { "id": "8", "label": "8. (ells) — _bei_ + dat." },
+      { "id": "9", "label": "9. (a mi) — _geben_ + dat. (destinatari)" },
+      { "id": "10", "label": "10. (tu) — _ohne_ + acc." }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["mich", "ich", "mir"] },
+      { "blankId": "2", "options": ["dir", "dich", "du"] },
+      { "blankId": "3", "options": ["ihn", "ihm", "er"] },
+      { "blankId": "4", "options": ["uns", "wir", "unser"] },
+      { "blankId": "5", "options": ["Ihnen", "Sie", "Ihr"] },
+      { "blankId": "6", "options": ["sie", "ihr", "ihn"] },
+      { "blankId": "7", "options": ["euch", "ihr", "euer"] },
+      { "blankId": "8", "options": ["ihnen", "sie", "Ihnen"] },
+      { "blankId": "9", "options": ["mir", "mich", "ich"] },
+      { "blankId": "10", "options": ["dich", "dir", "du"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "mich",
+      "2": "dir",
+      "3": "ihn",
+      "4": "uns",
+      "5": "Ihnen",
+      "6": "sie",
+      "7": "euch",
+      "8": "ihnen",
+      "9": "mir",
+      "10": "dich"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Dos automatismes: (1) després de preposició, ==**deixa que la preposició decideixi el cas**== (_für, ohne_ → acc.; _bei, mit_ → dat.); (2) amb verbs com _helfen, danken, gefallen, gehören_, ==**sempre datiu**==, encara que el català digui _et/em/li_.",
+      "references": ["A1b-37", "A1b-20", "A1b-21"]
+    },
+    "incorrect": {
+      "default": "Comprova dues coses: (a) quin **cas** demana el verb o la preposició, i (b) quina **forma** té el pronom en aquell cas. _ich_ (nom.) → _mich_ (acc.) / _mir_ (dat.); _du_ → _dich_ / _dir_; _er_ → _ihn_ / _ihm_; _sie_ (ella) → _sie_ / _ihr_; _wir_ → _uns_ / _uns_; _ihr_ → _euch_ / _euch_; _sie_ (ells) → _sie_ / _ihnen_; _Sie_ → _Sie_ / _Ihnen_.",
+      "byResponse": [
+        {
+          "match": { "2": "dich" },
+          "message": "_helfen_ regeix ==datiu==, no acusatiu. Correcte: _Wir helfen ==dir==._",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "4": "wir" },
+          "message": "_wir_ és la forma de **nominatiu** (subjecte). Amb _gefallen_ (+ dat.) necessites _==uns==_.",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "5": "Sie" },
+          "message": "_danken_ regeix ==datiu==. La forma de datiu de la cortesia _Sie_ és _==Ihnen==_ (amb majúscula).",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "6": "ihr" },
+          "message": "_ihr_ com a pronom objecte és ==datiu== (_a ella_). Amb _sehen_ (+ acc.) necessites _==sie==_: _Siehst du **sie**?_",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "7": "ihr" },
+          "message": "_ihr_ és el **nominatiu** plural (_vosaltres_). Després de _für_ (+ acc.) la forma és _==euch==_: _für **euch**_.",
+          "references": ["A1b-21", "A1b-37"]
+        },
+        {
+          "match": { "8": "sie" },
+          "message": "_bei_ regeix ==datiu==. La forma de datiu de _sie_ (3a plural) és _==ihnen==_: _bei **ihnen**_.",
+          "references": ["A1b-20", "A1b-37"]
+        },
+        {
+          "match": { "10": "dir" },
+          "message": "_ohne_ regeix ==acusatiu==. Correcte: _Ohne ==dich==_ (no _ohne dir_).",
+          "references": ["A1b-21"]
+        }
+      ]
+    }
+  }
+}

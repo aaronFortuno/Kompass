@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-37-ex-08",
+  "topicId": "A1b-37",
+  "title": "Empareja pregunta i resposta",
+  "prompt": "Empareja cada ==**pregunta**== amb la ==**resposta**== que fa servir el pronom correcte. Les preguntes amb _wer / wen / wem_ són la versió alemanya de _qui / a qui_, i ja contenen el cas que ha de fer servir la resposta.",
+  "difficulty": 2,
+  "tags": ["pronoms", "match", "wer-wen-wem", "assessment"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "q1", "group": "pregunta", "content": { "type": "text", "content": "_**Wem** hilfst du?_" } },
+      { "id": "q2", "group": "pregunta", "content": { "type": "text", "content": "_**Wen** siehst du?_" } },
+      { "id": "q3", "group": "pregunta", "content": { "type": "text", "content": "_**Für wen** ist das Geschenk?_" } },
+      { "id": "q4", "group": "pregunta", "content": { "type": "text", "content": "_**Mit wem** kommst du?_" } },
+      { "id": "q5", "group": "pregunta", "content": { "type": "text", "content": "_**Wer** wohnt hier?_" } },
+      { "id": "q6", "group": "pregunta", "content": { "type": "text", "content": "_**Wem** gehört das Buch?_" } },
+      { "id": "r1", "group": "resposta", "content": { "type": "text", "content": "_==**Ihm.**==_ (a ell — datiu)" } },
+      { "id": "r2", "group": "resposta", "content": { "type": "text", "content": "_==**Ihn.**==_ (a ell — acusatiu)" } },
+      { "id": "r3", "group": "resposta", "content": { "type": "text", "content": "_Für ==**dich**==._" } },
+      { "id": "r4", "group": "resposta", "content": { "type": "text", "content": "_Mit ==**ihnen**==._" } },
+      { "id": "r5", "group": "resposta", "content": { "type": "text", "content": "_==**Wir.**==_" } },
+      { "id": "r6", "group": "resposta", "content": { "type": "text", "content": "_==**Mir.**==_" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Pregunta",
+    "groupBLabel": "Resposta"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["q1", "r1"],
+      ["q2", "r2"],
+      ["q3", "r3"],
+      ["q4", "r4"],
+      ["q5", "r5"],
+      ["q6", "r6"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Les preguntes amb _wer / wen / wem_ són la versió alemanya de _qui / a qui_, i ja contenen el cas que ha de fer servir la resposta. ==_Wer?_ → nominatiu== · ==_Wen?_ → acusatiu== · ==_Wem?_ → datiu==. Si domines aquesta tríada interrogativa, trobes el cas a l'instant.",
+      "references": ["A1b-37"]
+    },
+    "incorrect": {
+      "default": "La clau és **la partícula interrogativa**: _==Wer?==_ → nominatiu (_wir_); _==Wen?==_ → acusatiu (_ihn_); _==Wem?==_ → datiu (_mir, ihm_). I quan la pregunta té **preposició** (_für wen?_, _mit wem?_), la resposta reprèn la mateixa preposició + pronom en el cas que li toca (_für_ + acus.; _mit_ + dat.)."
+    }
+  }
+}

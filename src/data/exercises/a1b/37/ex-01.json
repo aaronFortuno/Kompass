@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-37-ex-01",
+  "topicId": "A1b-37",
+  "title": "Identifica el cas del pronom",
+  "prompt": "Per a cada frase, indica si el pronom marcat està en ==**nominatiu**==, ==**acusatiu**== o ==**datiu**==.",
+  "difficulty": 1,
+  "tags": ["pronoms", "cas", "identificacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _**Ich** lerne Deutsch._ → {{1}}\n\n2. _Er sieht **mich**._ → {{2}}\n\n3. _Wir helfen **dir**._ → {{3}}\n\n4. _Das Geschenk ist für **euch**._ → {{4}}\n\n5. _**Ihnen** danke ich sehr._ → {{5}}\n\n6. _Kennst du **ihn**?_ → {{6}}\n\n7. _Das Buch gehört **mir**._ → {{7}}\n\n8. _**Sie** wohnt in Berlin._ → {{8}}",
+    "blanks": [
+      { "id": "1", "label": "1. _ich_" },
+      { "id": "2", "label": "2. _mich_" },
+      { "id": "3", "label": "3. _dir_" },
+      { "id": "4", "label": "4. _euch_ (després de _für_)" },
+      { "id": "5", "label": "5. _Ihnen_ (amb _danken_)" },
+      { "id": "6", "label": "6. _ihn_" },
+      { "id": "7", "label": "7. _mir_ (amb _gehören_)" },
+      { "id": "8", "label": "8. _sie_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["nominatiu", "acusatiu", "datiu"] },
+      { "blankId": "2", "options": ["nominatiu", "acusatiu", "datiu"] },
+      { "blankId": "3", "options": ["nominatiu", "acusatiu", "datiu"] },
+      { "blankId": "4", "options": ["nominatiu", "acusatiu", "datiu"] },
+      { "blankId": "5", "options": ["nominatiu", "acusatiu", "datiu"] },
+      { "blankId": "6", "options": ["nominatiu", "acusatiu", "datiu"] },
+      { "blankId": "7", "options": ["nominatiu", "acusatiu", "datiu"] },
+      { "blankId": "8", "options": ["nominatiu", "acusatiu", "datiu"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "nominatiu",
+      "2": "acusatiu",
+      "3": "datiu",
+      "4": "acusatiu",
+      "5": "datiu",
+      "6": "acusatiu",
+      "7": "datiu",
+      "8": "nominatiu"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Pista sòlida: **fixa't en el verb i en la preposició**. Verbs com _helfen, danken, gehören, gefallen_ imposen ==datiu==. Preposicions _für, ohne, gegen_ imposen ==acusatiu==; _mit, von, bei_ imposen ==datiu==. El subjecte (qui fa) sempre és ==nominatiu==.",
+      "references": ["A1b-37", "A1b-20", "A1b-21"]
+    },
+    "incorrect": {
+      "default": "Tres preguntes-guia: **(1)** el pronom és el **subjecte** (qui fa l'acció)? → nominatiu. **(2)** hi ha una **preposició** al davant? → la preposició decideix (_für, ohne, gegen_ → acus.; _mit, bei, von_ → dat.). **(3)** quin **verb** regeix el pronom? _helfen, danken, gehören, gefallen_ → datiu; _sehen, kennen, haben, lieben_ → acusatiu.",
+      "byResponse": [
+        {
+          "match": { "3": "acusatiu" },
+          "message": "_helfen_ és un verb de ==datiu==. Encara que en català diguem _\"t'ajudo\"_ (com si fos objecte directe), en alemany _dir_ és **datiu**.",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "4": "datiu" },
+          "message": "Després de _==für==_ sempre ==acusatiu==. _für euch_ = acusatiu plural.",
+          "references": ["A1b-21"]
+        },
+        {
+          "match": { "5": "acusatiu" },
+          "message": "_danken_ regeix ==datiu==: _Ihnen danke ich_ = _a vostè/vostès donc les gràcies_.",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "7": "acusatiu" },
+          "message": "_gehören_ regeix ==datiu==: _Das Buch gehört **mir**_ = _el llibre **em** pertany_.",
+          "references": ["A1b-37"]
+        }
+      ]
+    }
+  }
+}

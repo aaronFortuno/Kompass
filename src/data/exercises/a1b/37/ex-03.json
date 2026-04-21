@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-37-ex-03",
+  "topicId": "A1b-37",
+  "title": "Substitueix el complement per un pronom",
+  "prompt": "Reescriu cada frase substituint el ==**complement en negreta**== pel **pronom personal** correcte. Tres preguntes de supervivència: (a) **quin gènere** té el substantiu?, (b) **quin cas** demana el verb o la preposició?, (c) **singular o plural**?",
+  "difficulty": 3,
+  "tags": ["pronoms", "substitucio", "typeIn", "genere-cas"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich sehe **den Mann**._ → _Ich sehe {{1}}._\n\n2. _Er kennt **die Frau**._ → _Er kennt {{2}}._\n\n3. _Wir helfen **dem Kind**._ → _Wir helfen {{3}}._\n\n4. _Ihr liebt **die Kinder**._ → _Ihr liebt {{4}}._\n\n5. _Ich gebe **meinem Bruder** das Buch._ → _Ich gebe {{5}} das Buch._\n\n6. _Sie dankt **den Lehrern**._ → _Sie dankt {{6}}._\n\n7. _Das Geschenk ist für **meine Schwester**._ → _Das Geschenk ist für {{7}}._\n\n8. _Wir wohnen bei **unseren Freunden**._ → _Wir wohnen bei {{8}}._",
+    "blanks": [
+      { "id": "1", "label": "1. _den Mann_ (masc. acus.)" },
+      { "id": "2", "label": "2. _die Frau_ (fem. acus.)" },
+      { "id": "3", "label": "3. _dem Kind_ (neutre dat.)" },
+      { "id": "4", "label": "4. _die Kinder_ (plural acus.)" },
+      { "id": "5", "label": "5. _meinem Bruder_ (masc. dat.)" },
+      { "id": "6", "label": "6. _den Lehrern_ (plural dat.)" },
+      { "id": "7", "label": "7. _meine Schwester_ després de _für_" },
+      { "id": "8", "label": "8. _unseren Freunden_ després de _bei_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "pronom masc. acus." },
+      { "blankId": "2", "placeholder": "pronom fem. acus." },
+      { "blankId": "3", "placeholder": "pronom neutre dat." },
+      { "blankId": "4", "placeholder": "pronom pl. acus." },
+      { "blankId": "5", "placeholder": "pronom masc. dat." },
+      { "blankId": "6", "placeholder": "pronom pl. dat." },
+      { "blankId": "7", "placeholder": "für + ?" },
+      { "blankId": "8", "placeholder": "bei + ?" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["ihn"],
+      "2": ["sie"],
+      "3": ["ihm"],
+      "4": ["sie"],
+      "5": ["ihm"],
+      "6": ["ihnen"],
+      "7": ["sie"],
+      "8": ["ihnen"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Tres preguntes de supervivència quan substitueixes: **(a)** quin **gènere** té el substantiu? **(b)** quin **cas** demana el verb o la preposició? **(c)** és **singular o plural**? D'aquestes tres respostes surt el pronom correcte.",
+      "references": ["A1b-37"]
+    },
+    "incorrect": {
+      "default": "Comprova dues coses: (1) el **gènere** del substantiu original (_der Mann_ → _ihn_, _die Frau_ → _sie_, _das Kind_ → _ihm/es_); (2) el **cas** que imposa el verb o la preposició (_helfen_ → dat.; _für_ → acus.).",
+      "byResponse": [
+        {
+          "match": { "1": "es" },
+          "message": "_der Mann_ és ==masculí==. Acusatiu masculí singular és _==ihn==_ (no _es_, que és neutre nom./acus.).",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "3": "es" },
+          "message": "_dem Kind_ és ==datiu== (amb _helfen_). El datiu de _das Kind_ és _==ihm==_ (_es_ és només nom./acus. del neutre).",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "3": "ihn" },
+          "message": "_helfen_ regeix ==datiu==, no acusatiu. A més, _das Kind_ és neutre: datiu _==ihm==_.",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "5": "ihn" },
+          "message": "_geben_ + destinatari = ==datiu==. Masculí datiu singular = _==ihm==_ (no _ihn_, que és acusatiu).",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "6": "sie" },
+          "message": "_danken_ regeix ==datiu==. Plural datiu = _==ihnen==_ (no _sie_, que és nom./acus. plural).",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "7": "ihr" },
+          "message": "Després de _für_ (+ acus.), no datiu. Femení acusatiu = _==sie==_: _für **sie**_.",
+          "references": ["A1b-21", "A1b-37"]
+        },
+        {
+          "match": { "8": "sie" },
+          "message": "_bei_ regeix ==datiu==. Plural datiu = _==ihnen==_: _bei **ihnen**_.",
+          "references": ["A1b-20", "A1b-37"]
+        }
+      ]
+    }
+  }
+}

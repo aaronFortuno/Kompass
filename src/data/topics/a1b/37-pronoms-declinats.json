@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-37",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 37,
+  "title": "Deklination: Personalpronomen",
+  "shortTitle": "Pronoms declinats",
+  "description": "Les 27 formes del sistema pronominal: nominatiu, acusatiu i datiu dels nou pronoms personals, amb regles de cas, paranys i contrastos amb el català.",
+  "axes": ["pronoms-verbs", "casos"],
+  "prerequisites": ["A1a-1", "A1b-36"],
+  "estimatedMinutes": 30,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Enfoc: tanquem el quadre pronominal\n\nFins ara has vist els pronoms personals ==en nominatiu== (_ich, du, er, sie, es, wir, ihr, sie, Sie_ — A1a-1) i has començat a veure'n les formes d'objecte (A1b-36). Aquesta lliçó ==tanca el quadre==: **totes les formes, en els tres casos que domines ara mateix**. Nominatiu (subjecte), acusatiu (objecte directe), datiu (objecte indirecte).\n\nÉs una taula petita però ==la fas servir en pràcticament totes les frases==:\n\n- _Ich liebe ==dich==._ (acc.)\n- _Er hilft ==mir==._ (dat.)\n- _Wir sehen ==sie==._ (acc.)\n\nDominar-la és la diferència entre parlar d'estudi i parlar amb fluïdesa."
+        },
+        {
+          "type": "explanation",
+          "body": "##### Per què una lliçó dedicada a això\n\nA A1a-1 vas aprendre els **nou** pronoms personals en nominatiu: les formes que fas servir quan el pronom és ==el subjecte== de la frase (qui fa l'acció).\n\n- _==Ich== lerne Deutsch._ — Jo estudio alemany.\n- _==Sie== wohnt in Berlin._ — Ella viu a Berlín.\n\nA A1b-36 vas fer el primer tast de les formes que apareixen quan el pronom ==no és el subjecte==, sinó ==un objecte== del verb. L'alemany, a diferència del català modern, **declina els pronoms personals**: canvien de forma segons la funció sintàctica, igual que nosaltres distingim _jo / em / mi_ o _tu / et / tu_.\n\nAquesta lliçó fa ==tres coses==:\n\n1. Presenta la **taula completa** dels 9 pronoms × 3 casos = 27 formes.\n2. Connecta cada cas amb una **pregunta guia** (_wer?_, _wen?_, _wem?_) perquè sàpigues quan aplicar cada forma.\n3. Ressalta els paranys on els catalanoparlants ensopeguem."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Avís honest",
+          "body": "Dels tres casos, el que et costarà més ==és el datiu==. L'acusatiu tendeix a \"enganxar-se\" ràpid perquè molts verbs quotidians el fan servir (_haben, sehen, kennen, lieben…_). El datiu és més discret i només l'agafes quan reconeixes els verbs i preposicions que el demanen (A1b-20). Paciència: vindrà."
+        }
+      ]
+    },
+    {
+      "id": "la-taula",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### La taula canònica (novetat a memoritzar)\n\nAquesta és **la** taula. Val la pena aprendre-la de memòria, com una conjugació verbal."
+        },
+        {
+          "type": "table",
+          "title": "37.1 Pronoms personals: nominatiu, acusatiu, datiu",
+          "headers": [
+            "Persona",
+            "**Nominatiu** (_wer?_)",
+            "**Akkusativ** (_wen?_)",
+            "**Dativ** (_wem?_)"
+          ],
+          "rows": [
+            ["**1a sg**", "_ich_", "_==mich==_", "_==mir==_"],
+            ["**2a sg**", "_du_", "_==dich==_", "_==dir==_"],
+            ["**3a sg masc**", "_er_", "_==ihn==_", "_==ihm==_"],
+            ["**3a sg fem**", "_sie_", "_sie_", "_==ihr==_"],
+            ["**3a sg neutre**", "_es_", "_es_", "_==ihm==_"],
+            ["**1a pl**", "_wir_", "_==uns==_", "_==uns==_"],
+            ["**2a pl**", "_ihr_", "_==euch==_", "_==euch==_"],
+            ["**3a pl**", "_sie_", "_sie_", "_==ihnen==_"],
+            ["**Cortesia**", "_Sie_", "_Sie_", "_==Ihnen==_"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Observacions clau per no perdre el nord:**\n\n1. ==Algunes formes no canvien==. _sie_ (ella), _sie_ (ells/elles), _Sie_ (vostè/vostès) i _es_ mantenen la ==mateixa forma en nominatiu i acusatiu==. Ho distingirà el context i la posició.\n2. ==_uns_ i _euch_ serveixen per a dos casos==. No has de triar entre formes per a 1a pl i 2a pl: la mateixa paraula cobreix acusatiu i datiu.\n3. ==El datiu de _er_ i _es_ coincideix: _ihm_==. És una sola forma per als dos gèneres masculí/neutre.\n4. ==La cortesia _Ihnen_== sempre amb majúscula, com _Sie_, per marcar el tracte formal.\n5. ==L'acusatiu de _er_ és _ihn_== (amb _-n_). No confonguis amb _ihm_ (datiu) ni amb _ihnen_ (plural datiu). Tres formes amb _ih-_ que semblen iguals però no ho són."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Regla mnemotècnica per a l'acusatiu",
+          "body": "Les quatre formes noves d'acusatiu són: ==_mich, dich, ihn, uns, euch_==. Les altres (_sie, es, sie, Sie_) són iguals que en nominatiu. O sigui: només t'has de preocupar de cinc formes actives."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Regla mnemotècnica per al datiu",
+          "body": "Totes les formes de datiu acaben en ==_-r_, _-m_, _-n_ o _-s_==: _mir, dir, ihm, ihr, ihm, uns, euch, ihnen, Ihnen_. Cap acaba en vocal pura. És un reflex útil quan dubtes."
+        }
+      ]
+    },
+    {
+      "id": "check-taula",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-37-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "quan-acusatiu",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Quan fer servir l'acusatiu\n\nL'acusatiu apareix en tres grans situacions. Les has vist progressivament; aquí en fem síntesi.\n\n##### 1. Amb verbs transitius (objecte directe)\n\nLa majoria de verbs que prenen un complement directe demanen acusatiu: ==_haben, sehen, kennen, lieben, hören, finden, brauchen, fragen, besuchen_==…\n\n- _Ich liebe ==dich==._ — T'estimo.\n- _Siehst du ==ihn==?_ — El veus?\n- _Wir kennen ==euch== schon._ — Ja us coneixem.\n- _Ich besuche ==sie== morgen._ — Demà la visito (o les visito).\n- _==Mich== fragt er nie._ — A mi no em pregunta mai.\n\nPregunta guia: _==Wen== sehe ich? — Ich sehe **ihn**._ (A qui veig? — El veig a ell.)\n\n##### 2. Després de preposicions d'acusatiu\n\nLes preposicions _==durch, für, gegen, ohne, um==_ (A1b-21) sempre demanen acusatiu, també quan el complement és un pronom.\n\n- _Das Geschenk ist ==für dich==._ — El regal és per a tu.\n- _Ohne ==euch== gehen wir nicht._ — Sense vosaltres no hi anem.\n- _Ich habe nichts gegen ==ihn==._ — No tinc res en contra seva.\n\n##### 3. Amb preposicions _Wechselpräpositionen_ quan expressen direcció\n\nLes preposicions de dues cares (_in, an, auf, unter_…) porten acusatiu quan indiquen _cap a on?_.\n\n- _Er schaut ==mich== an._ — Em mira (_anschauen_, verb separable amb acusatiu).\n- _Sie denkt an ==dich==._ — Pensa en tu. (_an_ + acc. amb _denken_)"
+        }
+      ]
+    },
+    {
+      "id": "quan-datiu",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Quan fer servir el datiu\n\nEl datiu és el cas de l'objecte indirecte: ==**a qui**== es dóna, es diu, s'envia alguna cosa. També té un grup important de verbs i preposicions que el demanen \"per defecte\".\n\n##### 1. Amb verbs que fan servir datiu\n\nUn grup tancat de verbs molt freqüents demana datiu. Els més típics d'A1: ==_helfen, danken, gefallen, gehören, antworten, folgen, glauben_==…\n\n- _Ich helfe ==dir==._ — T'ajudo.\n- _Das gefällt ==mir==._ — M'agrada. (lit. \"Això em plau\")\n- _Wir danken ==euch==._ — Us donem les gràcies.\n- _Das Buch gehört ==ihm==._ — El llibre és seu (li pertany).\n- _Antworten Sie ==mir==, bitte!_ — Respongui'm, si us plau."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Parany freqüent",
+          "body": "_ich helfe **dich**_ ❌ → _ich helfe **dir**_ ✅. En català diem _t'ajudo_ com si fos objecte directe, i la temptació és agafar l'acusatiu. Però _helfen_ és dels verbs de datiu. ==A A1 convé memoritzar quins verbs van amb datiu== com si fos una llista tancada."
+        },
+        {
+          "type": "explanation",
+          "body": "##### 2. Amb verbs ditransitius (CI + CD)\n\nMolts verbs prenen ==dos complements==: un ==directe== (cosa) en acusatiu, i un ==indirecte== (persona) en datiu. Són els verbs de donar, dir, enviar, ensenyar, comprar, prestar…\n\n- _Ich gebe ==dir== das Buch._ — Et dono el llibre. (_dir_ = datiu, _das Buch_ = acusatiu)\n- _Er sagt ==mir== die Wahrheit._ — Em diu la veritat.\n- _Sie schenkt ==ihm== eine Uhr._ — Li regala un rellotge.\n- _Wir kaufen ==euch== Blumen._ — Us comprem flors."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Ordre habitual",
+          "body": "Pronom datiu **abans que** el substantiu acusatiu: _Ich gebe **dir** das Buch._ Però si tots dos són pronoms, **acusatiu abans**: _Ich gebe **es dir**._ Aquesta regla te la reprendrà una lliçó posterior; de moment, si tens dubte, posa primer el datiu."
+        },
+        {
+          "type": "explanation",
+          "body": "##### 3. Amb preposicions de datiu\n\nLes preposicions ==_aus, bei, mit, nach, seit, von, zu_== (A1b-20), i les contraccions _am, im, beim, zum, zur_ (A1b-14), demanen datiu. També quan el complement és un pronom:\n\n- _Kommst du ==mit mir==?_ — Véns amb mi?\n- _Ich wohne ==bei ihnen==._ — Visc a casa seva.\n- _Das ist ein Geschenk ==von dir==._ — És un regal teu (de part teva).\n- _==Nach ihm== kommt niemand._ — Darrere d'ell no ve ningú."
+        }
+      ]
+    },
+    {
+      "id": "check-casos",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-37-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "tres-ihs",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Les formes _ih-_: _ihn, ihm, ihr, ihnen_\n\nAquí ensopeguem tots. L'alemany té diverses formes que comencen per ==_ih-_==, pertanyen a persones gramaticals diferents i signifiquen coses diferents. Val la pena una mirada pausada."
+        },
+        {
+          "type": "table",
+          "title": "37.2 Les formes que comencen per _ih-_",
+          "headers": ["Forma", "Persona / cas", "Significat"],
+          "rows": [
+            ["_==ihn==_", "3a sg masc · **acusatiu**", "el (a ell)"],
+            ["_==ihm==_", "3a sg masc/neutre · **datiu**", "li (a ell/allò)"],
+            ["_==ihr==_ (pron.)", "3a sg fem · **datiu**", "li (a ella)"],
+            ["_==ihr==_ (pron.)", "2a pl · **nominatiu**", "vosaltres"],
+            ["_==ihnen==_", "3a pl · **datiu**", "els (a ells/elles)"],
+            ["_==Ihnen==_", "cortesia · **datiu**", "li / els (a vostè/vostès)"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Observa:\n\n- ==_ihr_== té **dos usos completament diferents** que el context desambigua: _vosaltres_ (subjecte plural informal) vs _a ella_ (datiu femení). Si és subjecte davant del verb, és _vosaltres_. Si és objecte darrere d'una forma verbal, sol ser _a ella_.\n- ==_ihnen_== (amb minúscula) és _a ells/elles_. ==_Ihnen_== (amb majúscula) és la cortesia, _a vostè_. El mateix joc que _sie / Sie_ en nominatiu.\n- ==_ihn_ vs _ihm_==: una sola lletra de diferència, dos casos. _Ich sehe **ihn**_ (el veig) vs _ich helfe **ihm**_ (l'ajudo, a ell)."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista de memòria",
+          "body": "Associa ==_-n_== al moviment, al ==viatge cap a l'objecte== (acusatiu, algú a qui _apuntes_), i ==_-m_== a la ==destinació estàtica==, al ==beneficiari== (datiu, algú que _rep_). És mig veritat, mig truc mnemotècnic — però funciona."
+        }
+      ]
+    },
+    {
+      "id": "contrastos",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Contrastos amb el català\n\nEl català té també pronoms febles diferents segons la funció (_el, la, els, les_ per a acusatiu; _li, els_ per a datiu), o sigui que conceptualment el salt no és gran. Però hi ha tres diferències que creen errors típics.\n\n##### 1. Alemany no \"clitza\"; el pronom va sol\n\nEn català fem _\"te la dono\"_ (dos pronoms febles enganxats al verb). En alemany, ==els pronoms personals són paraules senceres==, no clítics:\n\n- _Ich gebe ==sie dir==._ — Te la dono. (_sie_ = acusatiu fem. sg., _dir_ = datiu)\n- _Er sagt ==es mir==._ — M'ho diu.\n\nEl pronom s'apila en un ordre concret (acc. abans de dat. si tots dos són pronoms), sense enganxar-se al verb.\n\n##### 2. Alemany distingeix gènere i cas alhora\n\n_\"La veig\"_ en català pot ser _a ella_ o _a la cosa (la taula, la casa…)_. En alemany tries el pronom segons el ==gènere del substantiu==:\n\n- _Der Tisch_ (masc.) → _Ich sehe ==ihn==._\n- _Die Lampe_ (fem.) → _Ich sehe ==sie==._\n- _Das Buch_ (neutre) → _Ich sehe ==es==._\n\nÉs un reflex del gènere gramatical. Si dius _ich sehe ihn_ referint-te a una taula, és perfectament correcte (_der Tisch_ és masculí), encara que en català diríem _la veig_.\n\n##### 3. Alguns verbs \"vagin al revés\" del català\n\nEn català alguns verbs fan que la persona sigui subjecte (_estimo, veig, ajudo_) i la cosa objecte. En alemany, ==la cartografia no coincideix sempre==:"
+        },
+        {
+          "type": "table",
+          "title": "37.3 Verbs que \"inverteixen\" la perspectiva",
+          "headers": ["Català", "Alemany", "Cas"],
+          "rows": [
+            ["_M'agrada_", "_Es gefällt ==mir==._", "datiu"],
+            ["_Em falta_", "_Es fehlt ==mir==._", "datiu"],
+            ["_Em dol_", "_Es tut ==mir== leid / weh._", "datiu"],
+            ["_Li pertany_", "_Es gehört ==ihm / ihr==._", "datiu"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "La persona rep l'acció o el sentiment, i va en datiu. El \"subjecte\" gramatical és la cosa (_es_, _das Buch_…)."
+        }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys freqüents per a catalanoparlants\n\n**1. Confondre _mich_ i _mir_.**\n\nEl català _em_ és ambigu: pot ser _a mi_ (datiu) o _a mi com a objecte directe_ (acusatiu). En alemany són dues formes diferents.\n\n- _Em veu_ → _Er sieht ==mich==._ (_sehen_ + acusatiu)\n- _Em dóna el llibre_ → _Er gibt ==mir== das Buch._ (_geben_ + datiu per al destinatari)\n\nRegla de supervivència: ==si pots reformular amb _a mi_ i sona bé, és datiu==. Si ha de ser _em_ obligatori sense preposició, pensa si el verb és transitiu (acusatiu) o de datiu pur.\n\n**2. Oblidar que _helfen, danken, gefallen_ van amb datiu.**\n\n- _Ich helfe ==dich==._ ❌ → _Ich helfe ==dir==._ ✅\n- _Das gefällt ==mich==._ ❌ → _Das gefällt ==mir==._ ✅\n\nA A1 val la pena memoritzar aquesta llista curta.\n\n**3. Dir _ihn_ quan toca _ihm_, i al revés.**\n\n- _Ich helfe ==ihn==._ ❌ → _Ich helfe ==ihm==._ ✅\n- _Ich sehe ==ihm==._ ❌ → _Ich sehe ==ihn==._ ✅\n\nMnemo: acusatiu _ihn_ acaba en _-n_ com _mich, dich, euch, ihn_. Datiu _ihm_ acaba en _-m_ com _dem, einem_."
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Paranys 4, 5, 6 i 7",
+          "body": "**4. _ihr_ (vosaltres) quan toca _euch_.** _\"Us ajudo\"_ no és _Ich helfe **ihr**_ ❌ — _ihr_ en aquesta frase seria _a ella_! En acusatiu i datiu, ==el plural _ihr_ es converteix en _euch_==: _Ich helfe ==euch==._\n\n**5. _ihnen_ (a ells) vs _Ihnen_ (a vostè).** Totes dues formes sonen iguals; només canvia la majúscula. _Ich danke ==ihnen==_ (a ells) · _Ich danke ==Ihnen==_ (a vostè).\n\n**6. Oblidar que les preposicions manen.** Després d'una preposició de datiu, el pronom va en datiu encara que semànticament sigui \"objecte directe\" en català: _Kommst du ==mit mich==?_ ❌ → _Kommst du ==mit mir==?_ ✅\n\n**7. Dir _Das ist für ich_.** _Für_ demana acusatiu: _Das ist ==für mich==._ ✅"
+        }
+      ]
+    },
+    {
+      "id": "check-substitucio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-37-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-acusatiu",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-37-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-datiu",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-37-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-errors",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-37-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-missatge",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-37-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-emparella",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-37-ex-08", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi\n\n**El sistema pronominal complet, a l'ull:**\n\n> **Nom.** _ich · du · er · sie · es · wir · ihr · sie · Sie_\n>\n> **Acc.** _==mich== · ==dich== · ==ihn== · sie · es · ==uns== · ==euch== · sie · Sie_\n>\n> **Dat.** _==mir== · ==dir== · ==ihm== · ==ihr== · ==ihm== · ==uns== · ==euch== · ==ihnen== · ==Ihnen==_"
+        },
+        {
+          "type": "table",
+          "title": "37.4 Les sis regles clau",
+          "headers": ["Regla", "Contingut"],
+          "rows": [
+            ["**1. El cas el mana el verb o la preposició**", "No la intuïció del català. _Helfen_ → datiu. _Für_ → acusatiu. _Mit_ → datiu. Pensa sempre des del verb/preposició cap al pronom."],
+            ["**2. Tres preguntes-eina**", "==_wer?_== (nom.) · ==_wen?_== (acc.) · ==_wem?_== (dat.). Si saps a quina de les tres apunta la funció del pronom, tens el cas resolt."],
+            ["**3. Mnemo acusatiu**", "==Només cinc formes noves==: _mich, dich, ihn, uns, euch_. _sie, es, sie, Sie_ es queden igual."],
+            ["**4. Mnemo datiu**", "==Totes acaben en consonant== (_-r, -m, -n, -s_). Cap forma de datiu és una vocal pura."],
+            ["**5. Gènere abans que traducció**", "Per substituir un substantiu per un pronom, mira primer ==el gènere gramatical alemany==, no la traducció catalana. _Der Tisch_ → _ihn_, no _la_."],
+            ["**6. Cortesia amb majúscula**", "_Sie_ i _Ihnen_ sempre amb majúscula inicial, fins i tot al mig de frase."]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Enllaços amb el que ja saps:**\n\n- **A1a-1** — Pronoms en nominatiu. La base: _ich, du, er, sie, es, wir, ihr, sie, Sie_.\n- **A1b-36** — Primera vista d'acusatiu i datiu. Aquesta lliçó hi posa ordre i el quadre complet.\n- **A1b-20** — Preposicions de datiu (_aus, bei, mit, nach, seit, von, zu_). Després d'aquestes, pronoms en datiu.\n- **A1b-21** — Preposicions d'acusatiu (_durch, für, gegen, ohne, um_). Després d'aquestes, pronoms en acusatiu."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista pràctica final",
+          "body": "Quan parlis o escriguis, davant de cada pronom fes la pregunteta mínima: _aquí, sóc subjecte, objecte directe o indirecte?_ Els primers dies et pararàs; al cap d'una setmana el reflex ja funcionarà sol. La taula no és llarga (només 27 cel·les, amb moltes repeticions), però ==és potser la peça d'A1 que més fas servir en absolut==. Mereix els 20 minuts de memorització pura."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Curiositat útil",
+          "body": "En alemany antic i en alguns dialectes del sud encara existia un ==datiu \"fort\"==, diferent del que fem servir avui. Formes com _ihme_, _ihmer_ apareixen en textos de Goethe. El sistema s'ha simplificat amb el temps, i el que estudies ara és la síntesi moderna, estable i la mateixa a tota l'àrea germanoparlant estàndard."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-37-ex-04",
+  "topicId": "A1b-37",
+  "title": "Tradueix a l'alemany · acusatiu",
+  "prompt": "Tradueix cada frase a l'alemany. Totes fan servir pronoms en ==**acusatiu**==. Les formes noves d'acusatiu (diferents del nominatiu) són _==mich, dich, ihn, uns, euch==_.",
+  "difficulty": 3,
+  "tags": ["pronoms", "acusatiu", "traduccio", "typeIn"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _T'estimo._ → {{1}}\n\n2. _Ell em veu._ → {{2}}\n\n3. _Us coneixem._ → {{3}}\n\n4. _El regal és per a tu._ → {{4}}\n\n5. _El veus?_ (a ell) → {{5}}\n\n6. _Sense vosaltres no hi vaig._ → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "1. _T'estimo._" },
+      { "id": "2", "label": "2. _Ell em veu._" },
+      { "id": "3", "label": "3. _Us coneixem._" },
+      { "id": "4", "label": "4. _El regal és per a tu._" },
+      { "id": "5", "label": "5. _El veus?_ (a ell)" },
+      { "id": "6", "label": "6. _Sense vosaltres no hi vaig._" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Ich liebe …" },
+      { "blankId": "2", "placeholder": "Er sieht …" },
+      { "blankId": "3", "placeholder": "Wir kennen …" },
+      { "blankId": "4", "placeholder": "Das Geschenk ist …" },
+      { "blankId": "5", "placeholder": "Siehst du …?" },
+      { "blankId": "6", "placeholder": "Ohne … gehe ich nicht." }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": [
+        "Ich liebe dich.",
+        "Ich liebe dich"
+      ],
+      "2": [
+        "Er sieht mich.",
+        "Er sieht mich"
+      ],
+      "3": [
+        "Wir kennen euch.",
+        "Wir kennen euch"
+      ],
+      "4": [
+        "Das Geschenk ist für dich.",
+        "Das Geschenk ist für dich"
+      ],
+      "5": [
+        "Siehst du ihn?",
+        "Siehst du ihn"
+      ],
+      "6": [
+        "Ohne euch gehe ich nicht.",
+        "Ohne euch gehe ich nicht",
+        "Ich gehe ohne euch nicht.",
+        "Ich gehe ohne euch nicht"
+      ]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Les formes noves d'acusatiu que no coincideixen amb el nominatiu són exactament cinc: _==mich, dich, ihn, uns, euch==_. Les altres (_sie, es, sie, Sie_) no canvien respecte al nominatiu.",
+      "references": ["A1b-37"]
+    },
+    "incorrect": {
+      "default": "Tres comprovacions: (1) la **persona** que toca (1a, 2a, 3a; sg/pl); (2) la **forma d'acusatiu** d'aquell pronom; (3) l'**ortografia** (majúscula inicial, punt final).",
+      "byResponse": [
+        {
+          "match": { "1": "Ich liebe dir." },
+          "message": "_lieben_ regeix ==acusatiu==, no datiu. Correcte: _Ich liebe ==dich==._",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "2": "Er sieht mir." },
+          "message": "_sehen_ regeix ==acusatiu==. La forma acusativa de _ich_ és _==mich==_, no _mir_.",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "3": "Wir kennen ihr." },
+          "message": "_ihr_ com a pronom objecte seria ==datiu== (_a ella_), però aquí vols acusatiu plural (_us_). Acusatiu de _ihr_ (vosaltres) = _==euch==_.",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "4": "Das Geschenk ist für dir." },
+          "message": "_für_ regeix ==acusatiu==. Correcte: _für ==dich==_.",
+          "references": ["A1b-21"]
+        },
+        {
+          "match": { "5": "Siehst du ihm?" },
+          "message": "_sehen_ regeix ==acusatiu==. Masculí acusatiu = _==ihn==_ (_ihm_ és datiu).",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "6": "Ohne ihr gehe ich nicht." },
+          "message": "Després de _ohne_ (+ acus.) _ihr_ no serveix (seria nom. o datiu fem.). Plural acusatiu = _==euch==_.",
+          "references": ["A1b-21", "A1b-37"]
+        }
+      ]
+    }
+  }
+}

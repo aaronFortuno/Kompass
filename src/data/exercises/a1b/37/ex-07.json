@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-37-ex-07",
+  "topicId": "A1b-37",
+  "title": "Completa el missatge",
+  "prompt": "Completa el missatge amb el pronom correcte en cada buit. Aturat un segon abans de cada espai i pregunta't: **quin verb? quina preposició? quin cas demana?**",
+  "difficulty": 3,
+  "tags": ["pronoms", "missatge", "fill-in-the-blank", "produccio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "**Hallo Anna!**\n\nWie geht es {{1}}? Ich brauche {{2}} morgen. Kannst du {{3}} in der Bibliothek treffen? Mein Bruder kommt auch; kennst du {{4}} schon? Er ist sehr nett, er hilft {{5}} viel mit Mathe. Meine Eltern fragen immer nach {{6}} — sie mögen {{7}} wirklich. Antworte {{8}}, bitte, sobald du kannst!\n\nBis bald, Marc",
+    "blanks": [
+      { "id": "1", "label": "1. _Wie geht es …?_ (t'/et)" },
+      { "id": "2", "label": "2. _Ich brauche … morgen._ (et necessito)" },
+      { "id": "3", "label": "3. _Kannst du … treffen?_ (em)" },
+      { "id": "4", "label": "4. _Kennst du … schon?_ (el = mon germà)" },
+      { "id": "5", "label": "5. _Er hilft … viel._ (em)" },
+      { "id": "6", "label": "6. _Meine Eltern fragen nach …_ (per tu)" },
+      { "id": "7", "label": "7. _Sie mögen … wirklich._ (t'estimen)" },
+      { "id": "8", "label": "8. _Antworte …, bitte._ (respon-me)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "pronom" },
+      { "blankId": "2", "placeholder": "pronom" },
+      { "blankId": "3", "placeholder": "pronom" },
+      { "blankId": "4", "placeholder": "pronom" },
+      { "blankId": "5", "placeholder": "pronom" },
+      { "blankId": "6", "placeholder": "pronom" },
+      { "blankId": "7", "placeholder": "pronom" },
+      { "blankId": "8", "placeholder": "pronom" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["dir"],
+      "2": ["dich"],
+      "3": ["mich"],
+      "4": ["ihn"],
+      "5": ["mir"],
+      "6": ["dir"],
+      "7": ["dich"],
+      "8": ["mir"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Observa com, en un missatge real, els tres casos es barregen constantment. El reflex que has d'entrenar és ==**aturar-te un segon davant del pronom**== i preguntar-te: _quin verb? quina preposició? quin cas demana?_ Amb el temps el reflex es fa automàtic.",
+      "references": ["A1b-37"]
+    },
+    "incorrect": {
+      "default": "Pistes per buit: **(1)** _wie geht es_ + ==dat.==; **(2)** _brauchen_ + ==acus.==; **(3)** _treffen_ + ==acus.==; **(4)** _kennen_ + ==acus.==, _der Bruder_ = masc. → _ihn_; **(5)** _helfen_ + ==dat.==; **(6)** _nach_ + ==dat.==; **(7)** _mögen_ + ==acus.==; **(8)** _antworten_ + ==dat.==.",
+      "byResponse": [
+        {
+          "match": { "1": "dich" },
+          "message": "_Wie geht es …?_ és una expressió fixa amb ==datiu==: _Wie geht es ==dir==?_",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "2": "dir" },
+          "message": "_brauchen_ regeix ==acusatiu==. Correcte: _Ich brauche ==dich==_.",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "3": "mir" },
+          "message": "_treffen_ regeix ==acusatiu== (_trobar algú_). Correcte: _Kannst du ==mich== treffen?_",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "4": "ihm" },
+          "message": "_kennen_ regeix ==acusatiu==, no datiu. Masculí acus. = _==ihn==_ (_ihm_ és datiu).",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "5": "mich" },
+          "message": "_helfen_ regeix ==datiu==, no acusatiu. Correcte: _Er hilft ==mir==._",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "6": "dich" },
+          "message": "_nach_ regeix ==datiu==. Correcte: _nach ==dir==_ (no _nach dich_).",
+          "references": ["A1b-20"]
+        },
+        {
+          "match": { "7": "dir" },
+          "message": "_mögen_ regeix ==acusatiu== (_estimar/agradar algú_). Correcte: _Sie mögen ==dich==_.",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "8": "mich" },
+          "message": "_antworten_ regeix ==datiu==. Correcte: _Antworte ==mir==_.",
+          "references": ["A1b-37"]
+        }
+      ]
+    }
+  }
+}

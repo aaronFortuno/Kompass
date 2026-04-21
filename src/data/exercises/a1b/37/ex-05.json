@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-37-ex-05",
+  "topicId": "A1b-37",
+  "title": "Tradueix a l'alemany · datiu",
+  "prompt": "Tradueix cada frase a l'alemany. Totes fan servir pronoms en ==**datiu**==. Recorda: _helfen, danken, gefallen, gehören_ regeixen ==datiu== (encara que el català digui _t'/em/li_).",
+  "difficulty": 3,
+  "tags": ["pronoms", "datiu", "traduccio", "typeIn"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _T'ajudo._ → {{1}}\n\n2. _Ens agrada._ → {{2}}\n\n3. _Els dono les gràcies._ (a ells) → {{3}}\n\n4. _Vinc amb tu._ → {{4}}\n\n5. _Li pertany._ (a ella) → {{5}}\n\n6. _Li dono les gràcies, senyora._ → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "1. _T'ajudo._ (_helfen_ + dat.)" },
+      { "id": "2", "label": "2. _Ens agrada._ (_gefallen_ + dat.)" },
+      { "id": "3", "label": "3. _Els dono les gràcies._ (_danken_ + dat.)" },
+      { "id": "4", "label": "4. _Vinc amb tu._ (_mit_ + dat.)" },
+      { "id": "5", "label": "5. _Li pertany._ (_gehören_ + dat.)" },
+      { "id": "6", "label": "6. _Li dono les gràcies, senyora._ (cortesia)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Ich helfe …" },
+      { "blankId": "2", "placeholder": "Es gefällt …" },
+      { "blankId": "3", "placeholder": "Ich danke …" },
+      { "blankId": "4", "placeholder": "Ich komme mit …" },
+      { "blankId": "5", "placeholder": "Es gehört …" },
+      { "blankId": "6", "placeholder": "Ich danke …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": [
+        "Ich helfe dir.",
+        "Ich helfe dir"
+      ],
+      "2": [
+        "Es gefällt uns.",
+        "Es gefällt uns"
+      ],
+      "3": [
+        "Ich danke ihnen.",
+        "Ich danke ihnen"
+      ],
+      "4": [
+        "Ich komme mit dir.",
+        "Ich komme mit dir"
+      ],
+      "5": [
+        "Es gehört ihr.",
+        "Es gehört ihr"
+      ],
+      "6": [
+        "Ich danke Ihnen.",
+        "Ich danke Ihnen, Frau Müller.",
+        "Ich danke Ihnen"
+      ]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Els verbs de datiu purs més freqüents al teu nivell: _==helfen, danken, gefallen, gehören, antworten, folgen==_. Amb aquests, ==**sempre**== datiu. I recorda: _==Ihnen==_ (cortesia) amb majúscula sempre.",
+      "references": ["A1b-37"]
+    },
+    "incorrect": {
+      "default": "Tres comprovacions: **(1)** el **verb/preposició** regeix datiu? (_helfen, danken, gefallen, gehören_ + dat.; _mit, bei, von_ + dat.). **(2)** quina és la **forma de datiu** del pronom? (_ich_ → _mir_; _du_ → _dir_; _er/es_ → _ihm_; _sie_ ella → _ihr_; _wir_ → _uns_; _ihr_ → _euch_; _sie_ ells → _ihnen_; _Sie_ → _Ihnen_). **(3)** la cortesia _Ihnen_ sempre amb **majúscula**.",
+      "byResponse": [
+        {
+          "match": { "1": "Ich helfe dich." },
+          "message": "_helfen_ regeix ==datiu==, no acusatiu. Correcte: _Ich helfe ==dir==._",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "2": "Es gefällt wir." },
+          "message": "_wir_ és nominatiu. Amb _gefallen_ (+ dat.) cal la forma de datiu: _==uns==_.",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "3": "Ich danke Ihnen." },
+          "message": "Aquesta forma és **cortesia** (_a vostè_). _Els_ (a ells, pl.) és _==ihnen==_ amb **minúscula**.",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "3": "Ich danke sie." },
+          "message": "_danken_ regeix ==datiu==. Datiu plural de _sie_ = _==ihnen==_ (no _sie_, que és nom./acus.).",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "4": "Ich komme mit dich." },
+          "message": "_mit_ regeix ==datiu==. Correcte: _mit ==dir==_.",
+          "references": ["A1b-20"]
+        },
+        {
+          "match": { "5": "Es gehört sie." },
+          "message": "_gehören_ regeix ==datiu==. Femení datiu = _==ihr==_ (_sie_ és nom./acus.).",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "6": "Ich danke ihnen." },
+          "message": "Amb el tracte formal cal **majúscula**: _==Ihnen==_ (amb _I_ majúscula). _ihnen_ amb minúscula és _a ells/elles_.",
+          "references": ["A1b-37"]
+        }
+      ]
+    }
+  }
+}

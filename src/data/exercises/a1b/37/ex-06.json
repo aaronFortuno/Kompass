@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-37-ex-06",
+  "topicId": "A1b-37",
+  "title": "Troba l'error (o confirma que és correcta)",
+  "prompt": "Per a cada frase, identifica què hi passa: ==**(a) forma incorrecta del pronom**==, ==**(b) cas equivocat**== (acus./dat. invertits), ==**(c) gènere equivocat**==, o ==**(d) la frase és correcta**==.",
+  "difficulty": 3,
+  "tags": ["pronoms", "errors", "diagnostic"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich helfe **dich**._ → {{1}}\n\n2. _Er sieht **ihm**._ → {{2}}\n\n3. _Das Geschenk ist für **ich**._ → {{3}}\n\n4. _Die Lampe ist neu. Ich kaufe **ihn**._ → {{4}}\n\n5. _Wir kommen mit **euch** nicht._ → {{5}}\n\n6. _Ich danke **ihnen**, Herr Müller._ → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "1. _Ich helfe dich._" },
+      { "id": "2", "label": "2. _Er sieht ihm._" },
+      { "id": "3", "label": "3. _Das Geschenk ist für ich._" },
+      { "id": "4", "label": "4. _Die Lampe ist neu. Ich kaufe ihn._" },
+      { "id": "5", "label": "5. _Wir kommen mit euch nicht._" },
+      { "id": "6", "label": "6. _Ich danke ihnen, Herr Müller._" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "1",
+        "options": [
+          "(a) forma incorrecta del pronom",
+          "(b) cas equivocat (acus./dat. invertits)",
+          "(c) gènere equivocat",
+          "(d) correcta"
+        ]
+      },
+      {
+        "blankId": "2",
+        "options": [
+          "(a) forma incorrecta del pronom",
+          "(b) cas equivocat (acus./dat. invertits)",
+          "(c) gènere equivocat",
+          "(d) correcta"
+        ]
+      },
+      {
+        "blankId": "3",
+        "options": [
+          "(a) forma incorrecta del pronom",
+          "(b) cas equivocat (acus./dat. invertits)",
+          "(c) gènere equivocat",
+          "(d) correcta"
+        ]
+      },
+      {
+        "blankId": "4",
+        "options": [
+          "(a) forma incorrecta del pronom",
+          "(b) cas equivocat (acus./dat. invertits)",
+          "(c) gènere equivocat",
+          "(d) correcta"
+        ]
+      },
+      {
+        "blankId": "5",
+        "options": [
+          "(a) forma incorrecta del pronom",
+          "(b) cas equivocat (acus./dat. invertits)",
+          "(c) gènere equivocat",
+          "(d) correcta"
+        ]
+      },
+      {
+        "blankId": "6",
+        "options": [
+          "(a) forma incorrecta del pronom",
+          "(b) cas equivocat (acus./dat. invertits)",
+          "(c) gènere equivocat",
+          "(d) correcta"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "(b) cas equivocat (acus./dat. invertits)",
+      "2": "(b) cas equivocat (acus./dat. invertits)",
+      "3": "(a) forma incorrecta del pronom",
+      "4": "(c) gènere equivocat",
+      "5": "(d) correcta",
+      "6": "(a) forma incorrecta del pronom"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Els tres errors més freqüents: (1) aplicar el cas que sona bé ==en català== en lloc del que ==mana el verb alemany==; (2) usar _ihn_ o _ihm_ sense fixar-se en el ==**gènere**== del substantiu al qual substitueix; (3) oblidar la ==**majúscula**== d'_Ihnen_ en el tracte formal.",
+      "references": ["A1b-37"]
+    },
+    "incorrect": {
+      "default": "Dues comprovacions: (1) quin **cas** demana el verb o la preposició?, i (2) quina **forma** del pronom toca? (_ich/mich/mir_, _du/dich/dir_, _er/ihn/ihm_, etc.). La cortesia _Ihnen_ sempre amb **majúscula**.",
+      "byResponse": [
+        {
+          "match": { "1": "(a) forma incorrecta del pronom" },
+          "message": "_dich_ és una forma correcta del pronom (2a sg. acus.). El problema és el **cas**: _helfen_ regeix ==datiu==, no acusatiu. Correcte: _Ich helfe ==dir==._ Error **(b)**.",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "1": "(d) correcta" },
+          "message": "_helfen_ regeix ==datiu==, no acusatiu. Correcte: _Ich helfe ==dir==._ Error **(b)**.",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "2": "(a) forma incorrecta del pronom" },
+          "message": "_ihm_ és una forma correcta (masc./neutre dat.). El problema és el **cas**: _sehen_ regeix ==acusatiu==. Correcte: _Er sieht ==ihn==._ Error **(b)**.",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "3": "(b) cas equivocat (acus./dat. invertits)" },
+          "message": "El cas correcte és acusatiu (_für_ + acus.), però _ich_ **no és una forma vàlida** del pronom objecte: _ich_ només és nominatiu. Cal _==mich==_. Error **(a)**.",
+          "references": ["A1b-21", "A1b-37"]
+        },
+        {
+          "match": { "4": "(a) forma incorrecta del pronom" },
+          "message": "_ihn_ és correcte com a masculí acusatiu. El problema és el **gènere**: _die Lampe_ és ==femení==, no masculí. Cal _==sie==_. Error **(c)**.",
+          "references": ["A1b-37"]
+        },
+        {
+          "match": { "5": "(b) cas equivocat (acus./dat. invertits)" },
+          "message": "_mit_ regeix ==datiu==, i _euch_ **serveix** per a datiu plural (i també acusatiu). La frase és correcta. Resposta **(d)**.",
+          "references": ["A1b-20", "A1b-37"]
+        },
+        {
+          "match": { "6": "(d) correcta" },
+          "message": "Amb _Herr Müller_ (tracte formal, _Sie_), cal la cortesia ==_Ihnen_== amb **majúscula**. _ihnen_ minúscula és _a ells/elles_ (plural). Error **(a)**.",
+          "references": ["A1b-37"]
+        }
+      ]
+    }
+  }
+}
