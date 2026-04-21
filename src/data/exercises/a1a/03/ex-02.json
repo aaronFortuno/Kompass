@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-3-ex-02",
+  "topicId": "A1a-3",
+  "title": "Variants ortogràfiques: arbeiten, heißen, sprechen",
+  "prompt": "Escriu les lletres que falten a cada buit tenint en compte les tres variants: _-e-_ extra, _du_ sense _-s-_, canvi vocàlic _e → i_.",
+  "difficulty": 2,
+  "tags": ["konjugation", "varianten", "arbeiten", "heissen", "sprechen"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Du arbeit{{1}} in Hamburg.\nEr heiß{{2}} Markus.\nWie heiß{{3}} du?\nAnna spr{{4}}cht Deutsch.",
+    "blanks": [
+      { "id": "1", "label": "_du_ + arrel en _-t_" },
+      { "id": "2", "label": "3a sg." },
+      { "id": "3", "label": "2a sg., arrel en _-ß_" },
+      { "id": "4", "label": "3a sg., canvi e→i" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "lletra(es) que falten" },
+      { "blankId": "2", "placeholder": "lletra(es) que falten" },
+      { "blankId": "3", "placeholder": "lletra(es) que falten" },
+      { "blankId": "4", "placeholder": "lletra(es) que falten" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "est", "2": "t", "3": "t", "4": "i" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has aplicat les tres variants: _-e-_ extra amb _arbeiten_, _du heißt_ sense _-s-_, i _sprechen_ → _spricht_ amb canvi e→i."
+    },
+    "incorrect": {
+      "default": "Recorda: (1) arrel acabada en _-t_ → afegim _-e-_ extra (_arbeitest_); (2) arrel en _-ß/-s/-z_ → _du_ només porta _-t_ (_heißt_, no _heißst_); (3) _sprechen_ canvia _e → i_ a _du_ i a _er/sie/es_."
+    }
+  }
+}

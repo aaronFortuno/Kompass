@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-3-ex-07",
+  "topicId": "A1a-3",
+  "title": "Retrat d'una amiga",
+  "prompt": "Completa el microretrat de la Laura combinant _sein_, _haben_, _wohnen_, _sprechen_ i _lernen_ a les persones que toquen.",
+  "difficulty": 3,
+  "tags": ["integration", "sein", "haben", "sprechen", "wohnen", "lernen"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Das {{1}} meine Freundin Laura. Sie {{2}} 22 Jahre alt und {{3}} in Tarragona. Sie {{4}} zwei Brüder. Laura {{5}} Katalanisch, Spanisch und Englisch, aber sie {{6}} kein Deutsch. Darum {{7}} wir zusammen Deutsch.",
+    "blanks": [
+      { "id": "1", "label": "_sein_, 3a sg." },
+      { "id": "2", "label": "_sein_ per edat, 3a sg." },
+      { "id": "3", "label": "_wohnen_, 3a sg." },
+      { "id": "4", "label": "_haben_, 3a sg." },
+      { "id": "5", "label": "_sprechen_, 3a sg." },
+      { "id": "6", "label": "_sprechen_, 3a sg." },
+      { "id": "7", "label": "_lernen_, 1a pl." }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["ist", "bin", "sind"] },
+      { "blankId": "2", "options": ["hat", "ist", "habe"] },
+      { "blankId": "3", "options": ["wohnt", "wohnen", "wohne"] },
+      { "blankId": "4", "options": ["hat", "habe", "haben"] },
+      { "blankId": "5", "options": ["sprecht", "sprichst", "spricht"] },
+      { "blankId": "6", "options": ["sprecht", "spricht", "spreche"] },
+      { "blankId": "7", "options": ["lerne", "lernt", "lernen"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "ist",
+      "2": "ist",
+      "3": "wohnt",
+      "4": "hat",
+      "5": "spricht",
+      "6": "spricht",
+      "7": "lernen"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Impecable. Has integrat tot el tema: _sein_ per edat (_sie ist 22_), _haben_ per possessió (_sie hat zwei Brüder_), conjugació regular (_wohnt, lernen_) i canvi vocàlic (_spricht_). Ja pots descriure persones en alemany."
+    },
+    "incorrect": {
+      "default": "Revisa tres claus: (a) l'edat en alemany va amb _sein_ → _sie **ist** 22_, no _sie hat_; (b) _sprechen_ a 3a sg. fa _spricht_ (canvi _e → i_); (c) _wir_ demana _-en_ → _wir lernen_."
+    }
+  }
+}

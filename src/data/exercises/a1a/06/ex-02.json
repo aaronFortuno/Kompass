@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-6-ex-02",
+  "topicId": "A1a-6",
+  "title": "Ein o eine? Article indeterminat",
+  "prompt": "Tria l'article indeterminat correcte segons el gènere del substantiu.",
+  "difficulty": 1,
+  "tags": ["artikel", "unbestimmt", "nominativ"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Das ist {{1}} Frau.\nHier ist {{2}} Buch.\nDa kommt {{3}} Mann.",
+    "blanks": [
+      { "id": "1", "label": "die Frau (f.)" },
+      { "id": "2", "label": "das Buch (n.)" },
+      { "id": "3", "label": "der Mann (m.)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["ein", "eine"] },
+      { "blankId": "2", "options": ["ein", "eine"] },
+      { "blankId": "3", "options": ["ein", "eine"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "eine", "2": "ein", "3": "ein" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Recorda: femení → _eine_ (amb -e), masculí i neutre → _ein_ (forma curta), i el plural no porta article."
+    },
+    "incorrect": {
+      "default": "Fixa't en el gènere: _die Frau_ és femení → _eine_. _Das Buch_ és neutre → _ein_. _Der Mann_ és masculí → _ein_. Masculí i neutre es diuen igual en indeterminat."
+    }
+  }
+}

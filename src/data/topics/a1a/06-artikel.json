@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-6",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 6,
+  "title": "Article determinat i indeterminat",
+  "shortTitle": "Artikel",
+  "description": "Articles determinat (der, die, das), indeterminat (ein, eine) i negatiu (kein, keine) en nominatiu, amb concordança de gènere i nombre.",
+  "axes": ["generes-articles-declinacio"],
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Context i motivació\n\nCada cop que dius **el gat**, **un gat** o **cap gat** en català estàs fent servir un article. Els articles són aquelles paraules petites que van davant del nom i que diuen si en parlem de manera concreta (\"el gat que tinc a casa\"), de manera general (\"un gat qualsevol\") o si no n'hi ha (\"cap gat\"). En alemany passa igual, però amb una peça addicional: l'article no només marca si parlem de \"el\" o \"un\", sinó que també porta **informació de gènere** (masculí, femení o neutre) i **de funció a la frase** (subjecte, complement directe...).\n\nEn aquest tema aprendràs:\n\n- Els **articles determinats** (_der bestimmte Artikel_): **der, die, das, die**. Equivalen al català \"el / la / els / les\".\n- Els **articles indeterminats** (_der unbestimmte Artikel_): **ein, eine, ein**. Equivalen al català \"un / una\".\n- L'**article negatiu** (_der Negativartikel_): **kein, keine, kein, keine**. No té equivalent directe al català: és la forma unificada per dir \"cap\" o \"no … un/una\".\n\nAquí ens centrem només en la forma **en nominatiu**, és a dir, quan el substantiu fa de **subjecte** de la frase (_qui fa l'acció_, _de qui diem que és una cosa_). Els altres casos (acusatiu, datiu, genitiu) els treballaràs més endavant."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Substantius sempre en majúscula",
+          "body": "En alemany, **tots els substantius s'escriuen amb majúscula inicial**, sempre. Per això veuràs _der Mann_, _die Frau_, _das Kind_ amb majúscula. No és per rellevància: és convenció ortogràfica."
+        }
+      ]
+    },
+    {
+      "id": "que-es-declinar",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Què vol dir \"declinar\"?\n\nJa t'ho hauràs trobat escoltant parlar d'alemany: la paraula **declinar**. No és res exòtic. **Declinar** vol dir, bàsicament, que els articles (i els adjectius que acompanyen un substantiu) **canvien de forma segons tres factors**:\n\n1. El **gènere** del substantiu (masculí, femení, neutre).\n2. El **nombre** (singular o plural).\n3. La **funció** que fa el substantiu a la frase (subjecte, complement directe, etc.), que en alemany s'anomena **cas**.\n\nEl català també té una mica de declinació: _el_ es converteix en _la_ davant de femení, i en _els / les_ en plural. Però en alemany és un sistema més extens i sistemàtic: la mateixa paraula \"el\" pot ser _der_, _den_, _dem_ o _des_ segons el cas, i aquestes quatre formes són l'ADN de la gramàtica alemanya.\n\n**De moment, en aquest tema, només ens interessa el nominatiu**: la forma que fa servir l'article quan el substantiu és **subjecte** de la frase."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Com reconèixer el subjecte",
+          "body": "És qui fa l'acció o de qui es diu alguna cosa. A \"**El noi** menja una poma\", el noi és el subjecte. A \"**Die Frau** wohnt in Berlin\" (La dona viu a Berlín), _die Frau_ és el subjecte → nominatiu."
+        }
+      ]
+    },
+    {
+      "id": "determinat",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### L'article determinat: _der, die, das, die_\n\nL'article determinat s'utilitza quan parlem d'alguna cosa **concreta, coneguda o ja esmentada**. És l'equivalent del català \"el / la / els / les\". La forma en nominatiu és:"
+        },
+        {
+          "type": "table",
+          "headers": ["Gènere", "Article", "Exemple", "Traducció"],
+          "rows": [
+            ["Masculí", "**der**", "_der Mann_", "l'home"],
+            ["Femení", "**die**", "_die Frau_", "la dona"],
+            ["Neutre", "**das**", "_das Kind_", "el nen / la criatura"],
+            ["Plural", "**die**", "_die Kinder_", "els nens / les criatures"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Observa tres coses importants:\n\n- El plural fa servir **die** per a tots els gèneres. En plural, el gènere original del substantiu deixa de marcar-se a l'article: _der Mann_ → _die Männer_, _die Frau_ → _die Frauen_, _das Kind_ → _die Kinder_. Tots tres plurals porten _die_.\n- _die_ apareix dues vegades a la taula (femení singular i plural). Com ho distingim? Pel **substantiu** que acompanya i pel **verb**: _die Frau ist_ (la dona és) vs _die Frauen sind_ (les dones són).\n- El gènere alemany **no coincideix sempre amb el català**. _Das Mädchen_ (la noia) és **neutre** en alemany, tot i referir-se a una persona femenina. Per això cal aprendre cada substantiu **amb el seu article** des del dia u: no _Mädchen_, sinó _das Mädchen_."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Exemples en context",
+          "body": "**Der Mann heißt Thomas.** (L'home es diu Thomas.)\n\n**Die Frau wohnt in Hamburg.** (La dona viu a Hamburg.)\n\n**Das Buch ist neu.** (El llibre és nou.)\n\n**Die Kinder sind müde.** (Els nens estan cansats.)"
+        }
+      ]
+    },
+    {
+      "id": "check-determinat",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-6-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "indeterminat",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### L'article indeterminat: _ein, eine, ein_\n\nL'article indeterminat s'utilitza quan parlem d'alguna cosa **no especificada, desconeguda o introduïda per primera vegada**. Equival al català \"un / una\". La forma en nominatiu és:"
+        },
+        {
+          "type": "table",
+          "headers": ["Gènere", "Article", "Exemple", "Traducció"],
+          "rows": [
+            ["Masculí", "**ein**", "_ein Mann_", "un home"],
+            ["Femení", "**eine**", "_eine Frau_", "una dona"],
+            ["Neutre", "**ein**", "_ein Kind_", "un nen / una criatura"],
+            ["Plural", "**—**", "_Kinder_", "(uns) nens"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Tres observacions importants:\n\n- **Masculí i neutre comparteixen la mateixa forma**: _ein_. Això és una diferència clau respecte a l'article determinat, on sí que es distingien (_der_ vs _das_). Amb _ein_ només per l'article, no pots saber si el substantiu és masculí o neutre. Cal memoritzar-ho a part.\n- El femení porta una **-e** final: _eine_, igual que _die_.\n- **El plural no té article indeterminat**, perquè al català tampoc: no dius \"un gats\", sinó \"gats\" sense article. En alemany igual: _Kinder spielen im Garten_ (Els nens juguen al jardí / Uns nens juguen al jardí). Si vols marcar el plural indefinit, pots afegir paraules com _einige_ (alguns) o un nombre, però això ja no és un \"article\"."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Exemples",
+          "body": "**Ein Mann steht da.** (Un home és allà.)\n\n**Eine Frau kommt.** (Una dona ve.)\n\n**Ein Kind weint.** (Un nen plora.)"
+        },
+        {
+          "type": "explanation",
+          "body": "#### Quan determinat i quan indeterminat?\n\nLa regla general (amb moltes excepcions que ja aniràs veient): fes servir l'**indeterminat** quan introdueixes una cosa per primera vegada o parles d'ella de manera genèrica; fes servir el **determinat** quan la cosa ja és coneguda o ja s'ha esmentat."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Primera menció vs referència",
+          "body": "**Da ist ein Mann. Der Mann heißt Peter.**\n\n(Allà hi ha un home. L'home es diu Peter.) → Al primer cop, _ein_: el presentem. Al segon cop, _der_: ja és \"aquell home concret\"."
+        }
+      ]
+    },
+    {
+      "id": "check-indeterminat",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-6-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "negatiu",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### L'article negatiu: _kein, keine, kein, keine_\n\nAquí arribem a una peça que **no existeix en català** i que fa la vida molt més senzilla… un cop t'hi acostumes. El **Negativartikel** _kein-_ és la manera estàndard de negar un substantiu en alemany.\n\nEn català, per negar dius \"**no** tinc gos\" o \"no tinc **cap** gos\". En alemany tens una paraula única que ho fa tot: **kein**. La forma en nominatiu és:"
+        },
+        {
+          "type": "table",
+          "headers": ["Gènere", "Article", "Exemple", "Traducció"],
+          "rows": [
+            ["Masculí", "**kein**", "_kein Mann_", "cap home / no … un home"],
+            ["Femení", "**keine**", "_keine Frau_", "cap dona / no … una dona"],
+            ["Neutre", "**kein**", "_kein Kind_", "cap nen"],
+            ["Plural", "**keine**", "_keine Kinder_", "cap nen / no … nens"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Observa que **kein- es declina exactament igual que ein-**, amb una diferència important: **sí que té forma en plural** (_keine_). Ho pots recordar així:"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Mini-regla",
+          "body": "**_kein_ = _ein_ + negació**, però amb plural (_keine_)."
+        },
+        {
+          "type": "explanation",
+          "body": "**Quan fer servir _kein_?** Es fa servir per negar un substantiu que, en positiu, aniria amb **article indeterminat** o amb **cap article** (substantiu comptable indeterminat, plural sense article, noms incomptables)."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Afirmació → negació",
+          "body": "**Ich habe ==ein==en Hund.** → **Ich habe ==kein==en Hund.** (_En acusatiu, però la lògica és la mateixa._)\n\n**Ich habe ==Kinder==.** → **Ich habe ==keine== Kinder.**\n\n**Das ist ==ein== Buch.** → **Das ist ==kein== Buch.** (Això no és un llibre.)"
+        },
+        {
+          "type": "explanation",
+          "body": "Per negar un substantiu amb article determinat (_der, die, das_) o amb possessiu (_mein, dein_…), NO es fa servir _kein_, sinó la partícula **nicht** (que veuràs en un altre tema). Regla pràctica inicial:\n\n- Article indeterminat o cap article → negació amb **_kein-_**.\n- Article determinat o possessiu → negació amb **_nicht_**."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Kein vs nicht",
+          "body": "**Das ist kein Buch.** (Això no és un llibre — negant _ein Buch_.)\n\n**Das ist nicht das Buch.** (Això no és el llibre — negant _das Buch_, un concret.)"
+        }
+      ]
+    },
+    {
+      "id": "check-negatiu",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-6-ex-03", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "taula-global",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Visió global: les tres famílies en nominatiu\n\nAra que has vist les tres famílies per separat, aquesta taula resum et servirà de referència ràpida. Totes les formes són **nominatiu** (substantiu subjecte):"
+        },
+        {
+          "type": "table",
+          "headers": ["Gènere", "Determinat", "Indeterminat", "Negatiu"],
+          "rows": [
+            ["Masculí", "**der**", "**ein**", "**kein**"],
+            ["Femení", "**die**", "**eine**", "**keine**"],
+            ["Neutre", "**das**", "**ein**", "**kein**"],
+            ["Plural", "**die**", "—", "**keine**"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Dues pautes per interioritzar-la:\n\n- **Les terminacions es repeteixen**. Fixa't en el patró: femení i plural porten _-e_ (_die, eine → no existeix / keine_). Masculí i neutre es comporten igual a l'indeterminat i al negatiu (_ein, kein_), però es distingeixen al determinat (_der_ vs _das_).\n- **_kein-_ és _ein-_ amb plural**. Si ja saps l'indeterminat, saps el negatiu: només has d'afegir una _k-_ al davant i recordar que el plural és _keine_."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Memoritza amb article",
+          "body": "Cada cop que aprenguis un substantiu nou, **memoritza'l amb l'article determinat**: _der Tisch_ (la taula), _die Lampe_ (la làmpada), _das Fenster_ (la finestra). Amb el determinat a la memòria, els altres dos articles (indeterminat i negatiu) surten automàticament."
+        }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals\n\nAquests són els errors típics que fan els catalanoparlants en aquest tema.\n\n**1. Traduir el gènere del català.**\n_La lluna_ en català és femení, però _der Mond_ és **masculí** en alemany. _El sol_ és masculí en català, però _die Sonne_ és **femení**. _La nena_ és femení en català, però _das Mädchen_ és **neutre** en alemany. No et fiïs mai del català per endevinar el gènere alemany.\n\n> Incorrecte: **die Mond**.\n> Correcte: **der Mond**.\n\n**2. Confondre _die_ femení singular amb _die_ plural.**\nSón idèntics en forma, però el verb els distingeix sempre.\n\n> **Die Frau ist hier.** (La dona és aquí — singular.)\n> **Die Frauen sind hier.** (Les dones són aquí — plural.)\n\n**3. Oblidar que masculí i neutre comparteixen _ein_.**\nCom que a l'article determinat sí que es distingeixen (_der_ vs _das_), és fàcil voler fer-ho també amb l'indeterminat. Però no: _ein Mann_ i _ein Kind_ porten exactament el mateix article.\n\n**4. Fer servir _kein_ amb article determinat.**\n_Kein_ només nega substantius amb article indeterminat o sense article. Si vols negar una cosa concreta (amb _der/die/das_) o pròpia (amb _mein, dein_…), has de fer servir **_nicht_**.\n\n> Incorrecte: **Das ist kein der Mann.**\n> Correcte: **Das ist nicht der Mann.** (Aquell no és l'home.)\n\n**5. Posar article indeterminat en plural.**\nEn alemany, com en català, no hi ha article indeterminat en plural. Si vols dir \"uns nens\", dius simplement **Kinder**, sense article. _Ein_ no té forma plural, així com tampoc diem \"uns\" d'alguna manera.\n\n> Incorrecte: **Das sind eine Kinder.**\n> Correcte: **Das sind Kinder.** (Aquests són nens.) o **Das sind keine Kinder.** (Aquests no són nens.)\n\n**6. Oblidar la majúscula al substantiu.**\nSigui quin sigui l'article (_der, ein, kein_...), el substantiu que segueix sempre va amb **majúscula inicial**.\n\n> Incorrecte: **der mann, eine frau, kein buch**.\n> Correcte: **der Mann, eine Frau, kein Buch**.\n\n**7. Pensar que l'article canvia el gènere del substantiu.**\nL'article **reflecteix** el gènere del substantiu; no el canvia. _Der Mann_ és masculí perquè _Mann_ ho és. _Das Mädchen_ no és \"masculí o neutre segons et vingui de gust\": sempre és neutre, perquè _Mädchen_ ho és."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-6-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-6-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-6-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-6-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi del tema\n\nHas vist les tres famílies d'articles en nominatiu: determinat (_der, die, das, die_), indeterminat (_ein, eine, ein, —_) i negatiu (_kein, keine, kein, keine_). Aquest tema obre la porta a dues ampliacions naturals: (a) l'aprenentatge del gènere dels substantius bàsics amb el seu article, i (b) la introducció dels casos (acusatiu, datiu) que faran canviar aquests mateixos articles de forma."
+        },
+        {
+          "type": "table",
+          "title": "Articles en nominatiu — taula resum",
+          "headers": ["Gènere", "Determinat", "Indeterminat", "Negatiu"],
+          "rows": [
+            ["Masculí", "**der**", "**ein**", "**kein**"],
+            ["Femení", "**die**", "**eine**", "**keine**"],
+            ["Neutre", "**das**", "**ein**", "**kein**"],
+            ["Plural", "**die**", "—", "**keine**"]
+          ],
+          "caption": "Totes les formes corresponen al cas nominatiu (substantiu subjecte). Els altres casos es treballaran més endavant."
+        }
+      ]
+    }
+  ]
+}

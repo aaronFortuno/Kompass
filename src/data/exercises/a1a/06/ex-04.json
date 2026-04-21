@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-6-ex-04",
+  "topicId": "A1a-6",
+  "title": "Minidiàleg: presentació d'una família",
+  "prompt": "Completa el minidiàleg triant, a cada buit, l'article que correspon al context (presentació vs referència vs negació) i al gènere del substantiu.",
+  "difficulty": 2,
+  "tags": ["artikel", "integration", "nominativ"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "— Das ist {{1}} Mann. {{2}} Mann heißt Klaus.\n— Und ist das {{3}} Frau?\n— Nein, das ist {{4}} Frau. Das sind {{5}} Kinder von Klaus.",
+    "blanks": [
+      { "id": "1", "label": "primera menció (m.)" },
+      { "id": "2", "label": "referència, inici de frase (m.)" },
+      { "id": "3", "label": "pregunta oberta (f.)" },
+      { "id": "4", "label": "negació (f.)" },
+      { "id": "5", "label": "nens concrets de Klaus (pl.)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["der", "ein", "eine"] },
+      { "blankId": "2", "options": ["Der", "Ein", "Das"] },
+      { "blankId": "3", "options": ["die", "eine", "ein"] },
+      { "blankId": "4", "options": ["keine", "kein", "nicht"] },
+      { "blankId": "5", "options": ["die", "eine", "keine"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "ein", "2": "Der", "3": "eine", "4": "keine", "5": "die" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has fet servir l'indeterminat per introduir (_ein Mann_, _eine Frau_), el determinat per referir-te a coses ja conegudes o concretes (_Der Mann_, _die Kinder_), i el negatiu per negar un substantiu indeterminat (_keine Frau_)."
+    },
+    "incorrect": {
+      "default": "Tres pistes: (a) la primera vegada que presentem algú, fem servir l'indeterminat (_ein_/_eine_); (b) un cop ja s'ha esmentat, passem al determinat (_der_/_die_/_das_); (c) per negar un substantiu indeterminat fem servir _kein-_, no _nicht_. Atenció al gènere: _Mann_ masculí, _Frau_ femení, _Kinder_ plural."
+    }
+  }
+}

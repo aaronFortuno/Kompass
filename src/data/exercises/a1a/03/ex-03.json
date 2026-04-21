@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-3-ex-03",
+  "topicId": "A1a-3",
+  "title": "sein i haben a les persones més freqüents",
+  "prompt": "Tria la forma correcta de _sein_ o _haben_ per a cada frase de presentació.",
+  "difficulty": 1,
+  "tags": ["sein", "haben", "irregular"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Ich {{1}} Studentin.\nDu {{2}} zwei Schwestern.\nEr {{3}} aus Österreich.\nWir {{4}} Zeit.",
+    "blanks": [
+      { "id": "1", "label": "_sein_, 1a sg." },
+      { "id": "2", "label": "_haben_, 2a sg." },
+      { "id": "3", "label": "_sein_, 3a sg." },
+      { "id": "4", "label": "_haben_, 1a pl." }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["bin", "bist", "ist"] },
+      { "blankId": "2", "options": ["habe", "hast", "hat"] },
+      { "blankId": "3", "options": ["bin", "ist", "sind"] },
+      { "blankId": "4", "options": ["habe", "hast", "haben"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "bin", "2": "hast", "3": "ist", "4": "haben" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Ja tens les formes clau de _sein_ (_bin, ist, sind_) i de _haben_ (_habe, hast, hat, haben_) per presentar-te i descriure el teu entorn."
+    },
+    "incorrect": {
+      "default": "Torna a llegir les taules. Pistes: _sein_ → _ich **bin**, du **bist**, er **ist**, wir **sind**_. _haben_ → _ich **habe**, du **hast**, er **hat**, wir **haben**_."
+    }
+  }
+}

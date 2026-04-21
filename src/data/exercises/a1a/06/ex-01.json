@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-6-ex-01",
+  "topicId": "A1a-6",
+  "title": "Article determinat segons gènere i nombre",
+  "prompt": "Tria l'article determinat correcte (en nominatiu) per a cada frase.",
+  "difficulty": 1,
+  "tags": ["artikel", "bestimmt", "nominativ"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "{{1}} Mann ist Lehrer.\n{{2}} Frau heißt Sabine.\n{{3}} Kind spielt im Garten.\n{{4}} Kinder lernen Deutsch.",
+    "blanks": [
+      { "id": "1", "label": "der Mann (m.)" },
+      { "id": "2", "label": "die Frau (f.)" },
+      { "id": "3", "label": "das Kind (n.)" },
+      { "id": "4", "label": "die Kinder (pl.)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["der", "die", "das", "den"] },
+      { "blankId": "2", "options": ["der", "die", "das", "den"] },
+      { "blankId": "3", "options": ["der", "die", "das", "den"] },
+      { "blankId": "4", "options": ["der", "die", "das", "den"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "der", "2": "die", "3": "das", "4": "die" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has triat la forma nominativa correcta per a cada gènere. Fixa't que _die_ apareix dues vegades: femení singular i plural de tots els gèneres."
+    },
+    "incorrect": {
+      "default": "Recorda: masculí → _der_, femení → _die_, neutre → _das_, plural → _die_ (sigui quin sigui el gènere del substantiu). L'opció _den_ és l'acusatiu masculí, que veurem en temes posteriors."
+    }
+  }
+}

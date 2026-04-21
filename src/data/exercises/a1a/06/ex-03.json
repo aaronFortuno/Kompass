@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-6-ex-03",
+  "topicId": "A1a-6",
+  "title": "Kein o keine? Negació en nominatiu",
+  "prompt": "Nega cada frase triant la forma correcta de _kein-_ segons el gènere i el nombre.",
+  "difficulty": 1,
+  "tags": ["artikel", "negativ", "kein", "nominativ"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Das ist {{1}} Mann.\nDas ist {{2}} Frau.\nDas ist {{3}} Buch.\nDas sind {{4}} Kinder.",
+    "blanks": [
+      { "id": "1", "label": "negant ein Mann (m.)" },
+      { "id": "2", "label": "negant eine Frau (f.)" },
+      { "id": "3", "label": "negant ein Buch (n.)" },
+      { "id": "4", "label": "negant Kinder (pl.)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["kein", "keine"] },
+      { "blankId": "2", "options": ["kein", "keine"] },
+      { "blankId": "3", "options": ["kein", "keine"] },
+      { "blankId": "4", "options": ["kein", "keine"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "kein", "2": "keine", "3": "kein", "4": "keine" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. _Kein-_ es comporta com _ein-_ en singular (masculí i neutre iguals), però a més té plural: _keine_."
+    },
+    "incorrect": {
+      "default": "Pensa-ho com _ein-_ amb _k_ al davant: masculí i neutre → _kein_; femení → _keine_. I, a diferència d'_ein-_, el plural sí que existeix: _keine Kinder_."
+    }
+  }
+}

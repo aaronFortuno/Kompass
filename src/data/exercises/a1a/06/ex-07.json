@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-6-ex-07",
+  "topicId": "A1a-6",
+  "title": "A l'aula: identificar mobles",
+  "prompt": "Completa el minidiàleg a l'aula. Tria a cada buit l'article que combina el factor semàntic (presentació, negació, referència) i el factor gramatical (gènere i nombre).",
+  "difficulty": 3,
+  "tags": ["artikel", "integration", "context"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "— Entschuldigung, ist das {{1}} Stuhl oder {{2}} Tisch?\n— Das ist {{3}} Tisch. {{4}} Stuhl ist da drüben.",
+    "blanks": [
+      { "id": "1", "label": "identificació indefinida (m.)" },
+      { "id": "2", "label": "identificació indefinida (m.)" },
+      { "id": "3", "label": "negació (m.)" },
+      { "id": "4", "label": "referència concreta, inici de frase (m.)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["der", "ein", "kein"] },
+      { "blankId": "2", "options": ["der", "ein", "eine"] },
+      { "blankId": "3", "options": ["kein", "ein", "der"] },
+      { "blankId": "4", "options": ["Der", "Ein", "Kein"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "ein", "2": "ein", "3": "kein", "4": "Der" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé! Has distingit els tres usos: _ein_ per preguntar o identificar en general, _kein_ per negar aquesta identificació, i _der_ per referir-te a un objecte concret i localitzat."
+    },
+    "incorrect": {
+      "default": "Pistes: (a) quan preguntes 'és això una X?' sense saber-ho, fas servir l'indeterminat (_ein_); (b) per negar 'no és una X', fas servir _kein-_; (c) quan ja parles d'un objecte concret i localitzat ('la cadira és allà'), fas servir el determinat (_der_). Tots són masculins aquí perquè _Stuhl_ i _Tisch_ ho són."
+    }
+  }
+}

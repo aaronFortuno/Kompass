@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-3-ex-05",
+  "topicId": "A1a-3",
+  "title": "arbeiten i sprechen alhora",
+  "prompt": "Escriu la forma verbal completa que correspon a cada buit, alternant _arbeiten_ (amb _-e-_ extra) i _sprechen_ (amb canvi vocàlic). Respecta les majúscules: si el buit obre la frase, cal majúscula inicial.",
+  "difficulty": 3,
+  "tags": ["integration", "arbeiten", "sprechen", "varianten"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "— Was {{1}} ihr in Berlin?\n— Wir {{2}} bei Siemens. Anna {{3}} auch dort.\n— {{4}} du Deutsch?\n— Ja, ich {{5}} Deutsch und Katalanisch. Meine Schwester {{6}} nur Katalanisch.",
+    "blanks": [
+      { "id": "1", "label": "_arbeiten_, 2a pl." },
+      { "id": "2", "label": "_arbeiten_, 1a pl." },
+      { "id": "3", "label": "_arbeiten_, 3a sg." },
+      { "id": "4", "label": "_sprechen_, 2a sg., inici de frase" },
+      { "id": "5", "label": "_sprechen_, 1a sg." },
+      { "id": "6", "label": "_sprechen_, 3a sg." }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "arbeiten, 2a pl." },
+      { "blankId": "2", "placeholder": "arbeiten, 1a pl." },
+      { "blankId": "3", "placeholder": "arbeiten, 3a sg." },
+      { "blankId": "4", "placeholder": "sprechen, 2a sg." },
+      { "blankId": "5", "placeholder": "sprechen, 1a sg." },
+      { "blankId": "6", "placeholder": "sprechen, 3a sg." }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "arbeitet",
+      "2": "arbeiten",
+      "3": "arbeitet",
+      "4": "Sprichst",
+      "5": "spreche",
+      "6": "spricht"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has integrat les dues variants alhora: _arbeiten_ manté la _-e-_ extra a _ihr arbeitet_ i _sie arbeitet_, i _sprechen_ canvia _e → i_ a _du sprichst_ i _sie spricht_, però no a _ich spreche_."
+    },
+    "incorrect": {
+      "default": "Recorda: _arbeiten_ demana _-e-_ extra a _du, er/sie/es, ihr_ (_arbeitest, arbeitet, arbeitet_). _sprechen_ canvia a _spricht/sprichst_ només a _du_ i _er/sie/es_; a _ich_ es queda _spreche_. A inici de frase, el verb comença amb majúscula (**Sprichst**)."
+    }
+  }
+}

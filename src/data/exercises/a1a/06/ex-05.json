@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-6-ex-05",
+  "topicId": "A1a-6",
+  "title": "Escriu l'article exacte",
+  "prompt": "Escriu la forma exacta de l'article que correspon a cada frase. Respecta la majúscula inicial quan el mot obre la frase.",
+  "difficulty": 2,
+  "tags": ["artikel", "integration", "typein"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "{{1}} Buch ist neu.\nHier ist {{2}} Lampe.\nDas ist {{3}} Tisch, das ist ein Stuhl.\n{{4}} Kinder spielen.",
+    "blanks": [
+      { "id": "1", "label": "determinat; das Buch (n.), inici de frase" },
+      { "id": "2", "label": "indeterminat; die Lampe (f.)" },
+      { "id": "3", "label": "negatiu; der Tisch (m.)" },
+      { "id": "4", "label": "determinat; plural, inici de frase" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "determinat (n.)" },
+      { "blankId": "2", "placeholder": "indeterminat (f.)" },
+      { "blankId": "3", "placeholder": "negatiu (m.)" },
+      { "blankId": "4", "placeholder": "determinat (pl.)" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "Das", "2": "eine", "3": "kein", "4": "Die" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has escrit les tres famílies en nominatiu amb el gènere correcte i respectant la majúscula inicial al principi de frase."
+    },
+    "incorrect": {
+      "default": "Revisa el gènere i la família: (1) _das Buch_ neutre → determinat _das_ (amb majúscula perquè obre frase: **Das**); (2) _die Lampe_ femení → indeterminat _eine_; (3) _der Tisch_ masculí → negatiu _kein_; (4) plural → determinat _die_ (majúscula **Die**)."
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-3-ex-04",
+  "topicId": "A1a-3",
+  "title": "Minidiàleg de presentació",
+  "prompt": "Completa el diàleg entre dos estudiants que es coneixen per primer cop. Tria el verb i la forma que encaixen amb cada persona.",
+  "difficulty": 2,
+  "tags": ["integration", "heissen", "kommen", "haben"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "— Hallo! Wie {{1}} du?\n— Ich {{2}} Lukas. Und du?\n— Ich {{3}} Clara. Ich {{4}} aus Valencia.\n— Ich {{5}} aus München. Ich {{6}} einen Bruder und eine Schwester.",
+    "blanks": [
+      { "id": "1", "label": "_heißen_, 2a sg." },
+      { "id": "2", "label": "_heißen_, 1a sg." },
+      { "id": "3", "label": "_heißen_, 1a sg." },
+      { "id": "4", "label": "_kommen_, 1a sg." },
+      { "id": "5", "label": "_kommen_, 1a sg." },
+      { "id": "6", "label": "_haben_, 1a sg." }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["heiße", "heißt", "heißen"] },
+      { "blankId": "2", "options": ["heißen", "heiße", "heißt"] },
+      { "blankId": "3", "options": ["heißt", "heiße", "bin"] },
+      { "blankId": "4", "options": ["habe", "komme", "kommst"] },
+      { "blankId": "5", "options": ["bin", "komme", "kommt"] },
+      { "blankId": "6", "options": ["bin", "habe", "hast"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "heißt",
+      "2": "heiße",
+      "3": "heiße",
+      "4": "komme",
+      "5": "komme",
+      "6": "habe"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Domines ja les peces bàsiques: _heißen_ amb la variant ortogràfica _du heißt_, _kommen_ regular, i _haben_ irregular a la 1a sg. (_ich habe_)."
+    },
+    "incorrect": {
+      "default": "Revisa: (1) _du_ amb _heißen_ → _heißt_ (no _heißst_); (2) _ich_ amb verbs regulars → terminació _-e_ (_ich heiße, ich komme_); (3) _ich_ amb _haben_ → _habe_."
+    }
+  }
+}

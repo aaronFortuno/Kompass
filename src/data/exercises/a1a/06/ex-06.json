@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-6-ex-06",
+  "topicId": "A1a-6",
+  "title": "Ein → kein: afirmació a negació",
+  "prompt": "Transforma cada frase afirmativa en la seva versió negativa triant la forma correcta de _kein-_.",
+  "difficulty": 2,
+  "tags": ["artikel", "negativ", "ein-kein"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Das ist ein Hund. → Das ist {{1}} Hund.\nDas ist eine Katze. → Das ist {{2}} Katze.\nDas sind Bücher. → Das sind {{3}} Bücher.",
+    "blanks": [
+      { "id": "1", "label": "der Hund (m.)" },
+      { "id": "2", "label": "die Katze (f.)" },
+      { "id": "3", "label": "plural (die Bücher)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["kein", "keine", "nicht"] },
+      { "blankId": "2", "options": ["kein", "keine", "nicht"] },
+      { "blankId": "3", "options": ["kein", "keine", "nicht"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "kein", "2": "keine", "3": "keine" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has negat cada substantiu indeterminat o sense article amb la forma de _kein-_ que toca. Recorda que _kein-_ sí que té plural (_keine_), a diferència d'_ein-_."
+    },
+    "incorrect": {
+      "default": "Per negar substantius amb _ein-_ o sense article (plural, incomptables), fem servir _kein-_: masculí/neutre → _kein_; femení i plural → _keine_. _Nicht_ es reserva per negar altres coses (article determinat, possessius, verbs…), que veurem més endavant."
+    }
+  }
+}

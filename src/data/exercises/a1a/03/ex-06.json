@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-3-ex-06",
+  "topicId": "A1a-3",
+  "title": "A la recepció: tracte formal amb Sie",
+  "prompt": "Completa el diàleg a la recepció d'una universitat. Recorda que _Sie_ (cortesia) sempre porta la terminació _-en_, com a l'infinitiu.",
+  "difficulty": 3,
+  "tags": ["integration", "formal", "sie", "konjugation"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "— Guten Tag. Wie {{1}} Sie?\n— Ich {{2}} Frau Weber.\n— Woher {{3}} Sie?\n— Ich {{4}} aus Hamburg. Meine Kollegen und ich {{5}} bei der Universität.\n— Und {{6}} Sie Deutsch und Englisch?\n— Ja, natürlich.",
+    "blanks": [
+      { "id": "1", "label": "_heißen_ + Sie" },
+      { "id": "2", "label": "_heißen_, 1a sg." },
+      { "id": "3", "label": "_kommen_ + Sie" },
+      { "id": "4", "label": "_kommen_, 1a sg." },
+      { "id": "5", "label": "_arbeiten_, 1a pl." },
+      { "id": "6", "label": "_sprechen_ + Sie" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["heißt", "heißen", "heiße"] },
+      { "blankId": "2", "options": ["heiße", "heißt", "heißen"] },
+      { "blankId": "3", "options": ["kommst", "kommt", "kommen"] },
+      { "blankId": "4", "options": ["komme", "kommt", "bin"] },
+      { "blankId": "5", "options": ["arbeite", "arbeitet", "arbeiten"] },
+      { "blankId": "6", "options": ["sprichst", "sprechen", "spricht"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "heißen",
+      "2": "heiße",
+      "3": "kommen",
+      "4": "komme",
+      "5": "arbeiten",
+      "6": "sprechen"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Felicitats. Has aplicat correctament la regla clau de la cortesia: _Sie_ + verb → terminació **_-en_**, com a l'infinitiu (_heißen, kommen, sprechen_). I fixa't com _sprechen_ amb _Sie_ **no** canvia la vocal: el canvi _e → i_ només afecta _du_ i _er/sie/es_."
+    },
+    "incorrect": {
+      "default": "Pistes: (1) _Sie_ (cortesia) sempre porta la terminació _-en_, igual que l'infinitiu; (2) per a _ich_ la terminació és _-e_ (_heiße, komme_); (3) _sprechen_ amb _Sie_ és _sprechen_, sense canvi vocàlic."
+    }
+  }
+}

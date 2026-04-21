@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-3-ex-01",
+  "topicId": "A1a-3",
+  "title": "Les sis terminacions regulars del present",
+  "prompt": "Escriu la terminació que correspon al subjecte a cada buit. Només cal la terminació, sense l'arrel.",
+  "difficulty": 1,
+  "tags": ["konjugation", "regular", "endungen"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Ich wohn{{1}} in Girona.\nWo wohn{{2}} du?\nWir lern{{3}} Deutsch.\nAnna lern{{4}} Englisch.",
+    "blanks": [
+      { "id": "1", "label": "1a sg." },
+      { "id": "2", "label": "2a sg." },
+      { "id": "3", "label": "1a pl." },
+      { "id": "4", "label": "3a sg." }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "terminació" },
+      { "blankId": "2", "placeholder": "terminació" },
+      { "blankId": "3", "placeholder": "terminació" },
+      { "blankId": "4", "placeholder": "terminació" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "e", "2": "st", "3": "en", "4": "t" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Ja tens les quatre terminacions bàsiques del present: _-e, -st, -t, -en_."
+    },
+    "incorrect": {
+      "default": "Repassa la taula: _ich_ → **-e**, _du_ → **-st**, _er/sie/es_ i _ihr_ → **-t**, _wir_ i _sie/Sie_ → **-en**."
+    }
+  }
+}
