@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-12-ex-05",
+  "topicId": "A1b-12",
+  "title": "Suavitzar l'imperatiu amb partícules modals",
+  "prompt": "Reescriu cada frase afegint la partícula modal indicada a la posició correcta (just darrere del verb conjugat, o del pronom _Sie_ en l'imperatiu formal). Escriu la frase sencera.",
+  "difficulty": 3,
+  "tags": ["imperatiu", "doch", "mal", "doch-mal", "posicio", "avaluacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Iss weniger Zucker!_ + _mal_ → {{1}}\n2. _Mach Sport!_ + _doch_ → {{2}}\n3. _Geh früher ins Bett!_ + _doch mal_ → {{3}}\n4. _Rufen Sie morgen an!_ + _doch_ → {{4}}",
+    "blanks": [
+      { "id": "1", "label": "amb _mal_" },
+      { "id": "2", "label": "amb _doch_" },
+      { "id": "3", "label": "amb _doch mal_" },
+      { "id": "4", "label": "amb _doch_ (formal)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "frase sencera" },
+      { "blankId": "2", "placeholder": "frase sencera" },
+      { "blankId": "3", "placeholder": "frase sencera" },
+      { "blankId": "4", "placeholder": "frase sencera" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Iss mal weniger Zucker!",
+      "2": "Mach doch Sport!",
+      "3": "Geh doch mal früher ins Bett!",
+      "4": "Rufen Sie doch morgen an!"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has col·locat la partícula **just després del verb conjugat** (o després del pronom _Sie_ en l'imperatiu formal). Aquest és l'únic lloc on aquestes partícules sonen naturals en alemany.",
+      "references": ["A1b-12"]
+    },
+    "incorrect": {
+      "default": "_doch_ i _mal_ van sempre **just darrere del verb** en imperatiu informal (_Mach **doch** Sport!_) i **darrere del pronom _Sie_** en l'imperatiu formal (_Rufen Sie **doch** morgen an!_). No van mai al final ni a l'inici.",
+      "byResponse": [
+        {
+          "match": { "4": "Rufen doch Sie morgen an!" },
+          "message": "A l'imperatiu formal, la partícula va **després del pronom _Sie_**, no entre el verb i _Sie_: _**Rufen Sie doch** morgen an!_"
+        },
+        {
+          "match": { "2": "Doch mach Sport!" },
+          "message": "_doch_ no pot anar a l'inici de la frase imperativa. Va just darrere del verb: _**Mach doch** Sport!_"
+        }
+      ]
+    }
+  }
+}

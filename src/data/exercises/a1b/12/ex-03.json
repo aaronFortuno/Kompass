@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-12-ex-03",
+  "topicId": "A1b-12",
+  "title": "Partícules modals: doch, mal i doch mal",
+  "prompt": "Aparella cada imperatiu (amb o sense _doch/mal_) amb la seva intenció comunicativa.",
+  "difficulty": 2,
+  "tags": ["imperatiu", "doch", "mal", "partícules-modals", "registre"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "f1", "group": "frases", "content": { "type": "text", "content": "_Trink weniger Kaffee!_" } },
+      { "id": "f2", "group": "frases", "content": { "type": "text", "content": "_Trink **mal** weniger Kaffee!_" } },
+      { "id": "f3", "group": "frases", "content": { "type": "text", "content": "_Trink **doch** weniger Kaffee!_" } },
+      { "id": "f4", "group": "frases", "content": { "type": "text", "content": "_Trink **doch mal** weniger Kaffee!_" } },
+      { "id": "i1", "group": "intencions", "content": { "type": "text", "content": "Ordre directa, sense atenuació." } },
+      { "id": "i2", "group": "intencions", "content": { "type": "text", "content": "Suggeriment casual: \"prova-ho.\"" } },
+      { "id": "i3", "group": "intencions", "content": { "type": "text", "content": "Consell amb insistència amigable." } },
+      { "id": "i4", "group": "intencions", "content": { "type": "text", "content": "Proposta cortès combinada (el to més suau)." } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Frase",
+    "groupBLabel": "Intenció"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["f1", "i1"],
+      ["f2", "i2"],
+      ["f3", "i3"],
+      ["f4", "i4"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Les partícules modals són el termòmetre del to: sense partícula, sona sec; _mal_ afegeix casualitat; _doch_ afegeix insistència amable; _doch mal_ suma les dues i arriba al màxim de cortesia no formal.",
+      "references": ["A1b-12"]
+    },
+    "incorrect": {
+      "default": "Recorda: _mal_ = \"un moment / prova\"; _doch_ = \"(n'haig d'insistir-te perquè és obvi)\"; _doch mal_ = combinació suau d'ambdues. Sense cap de les dues, l'imperatiu sona directe, sense negociació."
+    }
+  }
+}

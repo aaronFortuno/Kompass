@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-12-ex-01",
+  "topicId": "A1b-12",
+  "title": "Ordre de paraules a l'imperatiu",
+  "prompt": "Per a cada frase, tria l'ordre de paraules correcte. Aplica les regles de sintaxi de l'imperatiu: verb a posició 1, pronom _Sie_ obligatori al formal, prefix separable al final.",
+  "difficulty": 2,
+  "tags": ["imperatiu", "sintaxi", "ordre-paraules", "separables"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. \"Obre la porta!\" (verb separable _aufmachen_, a un amic) → {{1}}\n2. \"Relaxi's!\" (verb separable _sich ausruhen_, formal) → {{2}}\n3. \"No beveu alcohol!\" (a un grup) → {{3}}",
+    "blanks": [
+      { "id": "1", "label": "imperatiu _du_ + separable" },
+      { "id": "2", "label": "imperatiu _Sie_ + reflexiu + separable" },
+      { "id": "3", "label": "imperatiu _ihr_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "1",
+        "options": [
+          "Aufmach die Tür!",
+          "Mach die Tür auf!",
+          "Die Tür mach auf!"
+        ]
+      },
+      {
+        "blankId": "2",
+        "options": [
+          "Ruhen Sie sich aus!",
+          "Ausruhen Sie sich!",
+          "Sie ruhen sich aus!"
+        ]
+      },
+      {
+        "blankId": "3",
+        "options": [
+          "Trinkt keinen Alkohol!",
+          "Ihr trinkt keinen Alkohol!",
+          "Keinen Alkohol trinkt!"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Mach die Tür auf!",
+      "2": "Ruhen Sie sich aus!",
+      "3": "Trinkt keinen Alkohol!"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Tres regles aplicades: (1) verb separable → arrel a posició 1, prefix al final (_**Mach**... **auf**!_); (2) formal → infinitiu + _Sie_ + pronom reflexiu + prefix final (_**Ruhen Sie** sich **aus**!_); (3) _ihr_ informal → sense pronom, verb a posició 1 (_**Trinkt** keinen Alkohol!_).",
+      "references": ["A1b-12"]
+    },
+    "incorrect": {
+      "default": "Repassa: verb sempre a posició 1, pronom _Sie_ obligatori a l'imperatiu formal, prefix separable al final. A _du_ i _ihr_ mai hi va el pronom personal.",
+      "byResponse": [
+        {
+          "match": { "1": "Aufmach die Tür!" },
+          "message": "El prefix _auf-_ se separa a l'imperatiu i va **al final**: _**Mach** die Tür **auf**!_, no \\*_Aufmach die Tür!_ (Satzklammer, A1a-22)."
+        },
+        {
+          "match": { "2": "Ausruhen Sie sich!" },
+          "message": "A l'imperatiu formal, el verb conjugat (no l'infinitiu complet) va a posició 1, i el prefix al final: _**Ruhen** Sie sich **aus**!_"
+        },
+        {
+          "match": { "3": "Ihr trinkt keinen Alkohol!" },
+          "message": "A l'imperatiu _ihr_ no hi ha pronom: _**Trinkt** keinen Alkohol!_, no \\*_Ihr trinkt..._"
+        }
+      ]
+    }
+  }
+}

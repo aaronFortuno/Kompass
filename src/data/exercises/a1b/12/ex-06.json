@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-12-ex-06",
+  "topicId": "A1b-12",
+  "title": "Ordena les paraules: separables, reflexius i sein",
+  "prompt": "Ordena les paraules per formar una frase imperativa correcta. Escriu-la sencera, amb la puntuació final.",
+  "difficulty": 3,
+  "tags": ["imperatiu", "ordre-paraules", "separables", "reflexius", "sein", "avaluacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _aus_ / _dich_ / _Ruh_ / _!_ _(a un amic: \"Relaxa't!\")_ → {{1}}\n2. _sich_ / _Ruhen_ / _aus_ / _Sie_ / _!_ _(formal: \"Relaxi's!\")_ → {{2}}\n3. _die Tür_ / _Macht_ / _auf_ / _!_ _(a un grup: \"Obriu la porta!\")_ → {{3}}\n4. _bitte_ / _Seien_ / _Sie_ / _geduldig_ / _!_ _(formal: \"Tingui paciència, si us plau!\")_ → {{4}}",
+    "blanks": [
+      { "id": "1", "label": "imperatiu _du_ reflexiu + separable" },
+      { "id": "2", "label": "imperatiu _Sie_ reflexiu + separable" },
+      { "id": "3", "label": "imperatiu _ihr_ + separable" },
+      { "id": "4", "label": "imperatiu _Sie_ de _sein_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "frase ordenada" },
+      { "blankId": "2", "placeholder": "frase ordenada" },
+      { "blankId": "3", "placeholder": "frase ordenada" },
+      { "blankId": "4", "placeholder": "frase ordenada" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Ruh dich aus!",
+      "2": "Ruhen Sie sich aus!",
+      "3": "Macht die Tür auf!",
+      "4": "Seien Sie bitte geduldig!"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Tres patrons respectats: (1) _du_ reflexiu separable → verb + reflexiu (_dich_) + complements + prefix (_aus_); (2) _Sie_ reflexiu separable → verb + _Sie_ + reflexiu (_sich_) + prefix; (3) _sein_ formal: _**Seien Sie**_ + complements.",
+      "references": ["A1b-12"]
+    },
+    "incorrect": {
+      "default": "Recorda: el verb va sempre a posició 1; després el pronom _Sie_ (si n'hi ha); després el reflexiu (_dich/euch/sich/uns_); el prefix separable va **al final**. _Seien Sie_ és la forma imperativa formal de _sein_ (obligatòria, irregular).",
+      "byResponse": [
+        {
+          "match": { "2": "Ruhen sich Sie aus!" },
+          "message": "A l'imperatiu formal, primer va el pronom _Sie_ i després el reflexiu: _Ruhen **Sie sich** aus!_, no a l'inrevés."
+        },
+        {
+          "match": { "3": "Auf macht die Tür!" },
+          "message": "El prefix separable (_auf_) va al **final** de la frase: _**Macht** die Tür **auf**!_ (Satzklammer, A1a-22)."
+        },
+        {
+          "match": { "4": "Sein Sie bitte geduldig!" },
+          "message": "L'imperatiu formal de _sein_ és **Seien Sie**, no \\*_Sein Sie_. És una forma única d'aquest temps."
+        }
+      ]
+    }
+  }
+}

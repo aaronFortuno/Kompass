@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-12-ex-02",
+  "topicId": "A1b-12",
+  "title": "Canvi de vocal a l'imperatiu de du",
+  "prompt": "Escriu l'imperatiu de _du_ per a cada verb, aplicant correctament les regles del canvi de vocal (_e → i/ie_ es conserva; _a → ä_ es perd).",
+  "difficulty": 2,
+  "tags": ["imperatiu", "du", "canvi-vocalic"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _sprechen_ → {{1}} langsam! _(Parla a poc a poc!)_\n2. _tragen_ → {{2}} die Tasche! _(Porta la bossa!)_\n3. _lesen_ → {{3}} das Buch! _(Llegeix el llibre!)_\n4. _schlafen_ → {{4}} gut! _(Dorm bé!)_",
+    "blanks": [
+      { "id": "1", "label": "imperatiu _du_ de _sprechen_" },
+      { "id": "2", "label": "imperatiu _du_ de _tragen_" },
+      { "id": "3", "label": "imperatiu _du_ de _lesen_" },
+      { "id": "4", "label": "imperatiu _du_ de _schlafen_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "imperatiu _du_" },
+      { "blankId": "2", "placeholder": "imperatiu _du_" },
+      { "blankId": "3", "placeholder": "imperatiu _du_" },
+      { "blankId": "4", "placeholder": "imperatiu _du_" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Sprich"],
+      "2": ["Trag", "Trage"],
+      "3": ["Lies"],
+      "4": ["Schlaf", "Schlafe"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has distingit els dos grups: (1) _e → i/ie_ es **conserva** → _sprichst_ → **Sprich**, _liest_ → **Lies**; (2) _a → ä_ es **perd** → _trägst_ → **Trag** (no \\*_Träg_), _schläfst_ → **Schlaf** (no \\*_Schläf_). Amb _Trag/Schlaf_ és opcional afegir -e (_Trage, Schlafe_), però amb _Sprich/Lies_ mai.",
+      "references": ["A1b-12"]
+    },
+    "incorrect": {
+      "default": "Repassa: amb canvi _e → i/ie_ **es manté** la vocal modificada (_Sprich, Lies_) i **no s'afegeix -e**. Amb canvi _a → ä_ **es torna a la _a_** (_Trag, Schlaf_) i **sí es pot afegir -e** (_Trage, Schlafe_).",
+      "byResponse": [
+        {
+          "match": { "1": "Sprech" },
+          "message": "_sprechen_ té canvi _e → i_ al present (_du sprichst_), i l'imperatiu el **conserva**: **Sprich**, no \\*_Sprech_."
+        },
+        {
+          "match": { "2": "Träg" },
+          "message": "Error molt comú: el canvi _a → ä_ **es perd** a l'imperatiu. Tornem a _a_ → **Trag**, no \\*_Träg_."
+        },
+        {
+          "match": { "3": "Les" },
+          "message": "_lesen_ té canvi _e → ie_ al present (_du liest_), i l'imperatiu el **conserva**: **Lies**, no \\*_Les_."
+        },
+        {
+          "match": { "4": "Schläf" },
+          "message": "El canvi _a → ä_ es **perd** a l'imperatiu: **Schlaf** (tornem a _a_), no \\*_Schläf_."
+        },
+        {
+          "match": { "1": "Spriche" },
+          "message": "Amb canvi _e → i/ie_ **no es pot afegir -e**: **Sprich** (no \\*_Spriche_)."
+        },
+        {
+          "match": { "3": "Liese" },
+          "message": "Amb canvi _e → ie_ **no es pot afegir -e**: **Lies** (no \\*_Liese_)."
+        }
+      ]
+    }
+  }
+}

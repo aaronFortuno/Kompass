@@ -1,0 +1,427 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-12",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 12,
+  "title": "Der Imperativ — l'imperatiu formalitzat",
+  "shortTitle": "Imperativ",
+  "description": "Formalització del sistema de l'imperatiu alemany: sintaxi amb verb a posició 1, les quatre formes (du, ihr, Sie, wir), els canvis vocàlics, el cas especial de sein i les partícules modals doch/mal.",
+  "axes": ["pronoms-verbs", "sintaxi-ordre-paraules"],
+  "prerequisites": ["A1b-9"],
+  "estimatedMinutes": 25,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Context i motivació\n\nA **A1b-9** (Ratschläge, Anweisungen und Empfehlungen) vas conèixer l'imperatiu com una de les eines per **donar consells, instruccions i recomanacions**. Vas veure les tres persones (_du_, _ihr_, _Sie_), la forma _wir_, els canvis de vocal i els atenuadors _bitte_, _mal_, _doch_, _am besten_. Aquella lliçó era _funcional_: l'objectiu era comunicatiu (aconsellar).\n\nAquesta lliçó és diferent: **formalitza** el sistema de l'imperatiu com a categoria gramatical pura. Mateixes formes, mirada més tècnica. Els objectius:\n\n1. Consolidar la ==**sintaxi de l'imperatiu**==: verb en posició 1, pronom segons la forma, prefix separable al final.\n2. Revisar sistemàticament la ==**conjugació**== de les quatre formes (_du_, _ihr_, _Sie_, _wir_) per a cada tipus de verb.\n3. Fixar les ==**particularitats**== clau: canvi _e → i/ie_ es conserva, canvi _a → ä_ es perd, _sein_ és irregular, _-e_ opcional a _du_ dels regulars.\n4. Introduir la distinció ==**doch / mal**== com a partícules modals que transformen una ordre en un consell amigable."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Relació amb A1b-9",
+          "body": "Si A1b-9 et va donar el \"què fer\" (consell, instrucció, recomanació), A1b-12 et dóna el \"com funciona\" (regles formals). Tots dos documents es complementen: un és pedagògic-comunicatiu, l'altre estructural-gramatical."
+        }
+      ]
+    },
+    {
+      "id": "sintaxi",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### La sintaxi: verb a posició 1\n\nEn una oració imperativa, el ==**verb va en primera posició**==. Això és el que fa que la frase soni com una ordre, un consell o una petició.\n\nAixò trenca amb la regla general de l'alemany declaratiu (verb a posició 2, A1a-12). L'imperatiu, com la pregunta total (A1a-15), ocupa la _posició 0/1_ amb el verb conjugat."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Regla fonamental",
+          "body": "A l'imperatiu alemany, el **verb conjugat ocupa sempre la primera posició** de la frase. El pronom (_Sie_, _wir_) va just darrere; a _du_ i _ihr_ no hi ha pronom; els prefixos separables van al final (Satzklammer)."
+        },
+        {
+          "type": "table",
+          "title": "12.1 Sintaxi de l'imperatiu",
+          "headers": ["Vorfeld / Konnektor", "Subjekt", "Verb1", "Subjekt", "Ergänzungen", "Verb2"],
+          "rows": [
+            ["—", "—", "**Mach**", "—", "Sport!", "—"],
+            ["—", "—", "**Gehen**", "Sie", "regelmäßig", "spazieren!"],
+            ["—", "—", "**Ruh**", "—", "dich", "aus!"],
+            ["Dann", "—", "**lern**", "—", "doch mit uns zusammen!", "—"],
+            ["—", "—", "**Esst**", "—", "nicht zu viele Bratwürste", "—"],
+            ["und", "—", "**trinkt**", "—", "keinen Alkohol!", "—"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Tres observacions importants:**\n\n1. A les formes ==**informals** (_du_, _ihr_) no hi ha pronom==: _Mach!_, _Esst!_ (no \\*_Du mach!_, no \\*_Ihr esst!_).\n2. A l'==**imperatiu formal** amb _Sie_==, el pronom es **manté obligatòriament** i va **just darrere del verb**: _Gehen **Sie** spazieren!_\n3. Els verbs ==**separables**== conserven la Satzklammer (A1a-22): l'arrel a posició 1, el prefix **al final** → _**Ruh** dich **aus**!_\n4. Les oracions imperatives solen acabar amb **signe d'exclamació** (_Rufzeichen_), encara que no és obligatori si el to és suau."
+        }
+      ]
+    },
+    {
+      "id": "check-sintaxi",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-12-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "du-regulars",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Imperatiu de _du_: verbs regulars\n\nTens dues maneres d'arribar a l'imperatiu de _du_ dels verbs regulars, i totes dues donen el mateix resultat."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Dues maneres d'arribar-hi",
+          "body": "(a) **Infinitiu sense -en**: _gehen → **Geh**_.\n\n(b) **Forma _du_ del present sense -st**: _du gehst → **Geh**_.\n\nTotes dues rutes arriben al mateix punt. Fes servir la que et resulti més còmoda."
+        },
+        {
+          "type": "table",
+          "title": "12.2 Imperatiu de du — regulars",
+          "headers": ["Infinitiu", "Imperatiu _du_", "Traducció"],
+          "rows": [
+            ["_gehen_", "**Geh!**", "Ves!"],
+            ["_machen_", "**Mach!**", "Fes!"],
+            ["_fahren_", "**Fahr!**", "Ves! _(amb vehicle)_"],
+            ["_arbeiten_", "**Arbeite!**", "Treballa!"],
+            ["_warten_", "**Warte!**", "Espera!"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**La -e opcional** (_Spezialfall_ de la font):\n\nAmb els verbs **regulars** i amb els verbs de canvi _a → ä_, es pot afegir una **-e** final a la segona persona imperativa. Això passa **de vegades**, especialment en **textos escrits**, i fa que l'imperatiu soni **una mica més formal**.\n\n> _Mach!_ / _Mache!_ · _Geh!_ / _Gehe!_ · _Wart!_ / _Warte!_ · _Fahr!_ / _Fahre!_\n\nAmb verbs acabats en _-t, -d, -ig, -m, -n_ precedits de consonant, la -e **és obligatòria** per raons fonètiques: \\*_Arbeit!_ és impronunciable, cal _**Arbeite!**_. Igual amb _öffne_, _rede_, _atme_."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Compte",
+          "body": "Aquesta -e **no es pot afegir als verbs amb canvi _e → i/ie_**. \\*_Isse!_, \\*_Gibe!_, \\*_Liese!_ són incorrectes. Per què? Perquè aquests verbs tenen una forma abreujada fixa que no accepta la -e retroactiva."
+        }
+      ]
+    },
+    {
+      "id": "du-canvi-vocal",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Imperatiu de _du_: verbs amb canvi de vocal\n\nAquí és on l'imperatiu deixa de ser \"mecànic\". Els verbs que canvien vocal en present tenen **comportament diferent** segons el tipus de canvi.\n\n**Cas 1: ==_e → i_ o _e → ie_== → es CONSERVA a l'imperatiu.**"
+        },
+        {
+          "type": "table",
+          "title": "12.3 Canvi e → i/ie: es conserva",
+          "headers": ["Infinitiu", "Present _du_", "Imperatiu _du_"],
+          "rows": [
+            ["_essen_", "du **i**sst", "**Iss!**"],
+            ["_nehmen_", "du n**i**mmst", "**Nimm!**"],
+            ["_geben_", "du g**i**bst", "**Gib!**"],
+            ["_lesen_", "du l**ie**st", "**Lies!**"],
+            ["_sehen_", "du s**ie**hst", "**Sieh!**"],
+            ["_sprechen_", "du spr**i**chst", "**Sprich!**"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "> **Mètode:** parteix de la forma de _du_ del present, **treu la -st**, i et queda l'imperatiu. **No afegeixis -e.**\n\n**Cas 2: ==_a → ä_== → es PERD a l'imperatiu.**"
+        },
+        {
+          "type": "table",
+          "title": "12.4 Canvi a → ä: es perd",
+          "headers": ["Infinitiu", "Present _du_", "Imperatiu _du_"],
+          "rows": [
+            ["_fahren_", "du f**ä**hrst", "**Fahr!**"],
+            ["_schlafen_", "du schl**ä**fst", "**Schlaf!**"],
+            ["_laufen_", "du l**äu**fst", "**Lauf!**"],
+            ["_tragen_", "du tr**ä**gst", "**Trag!**"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Esquema resum (memoritza'l)",
+          "body": "==_e → i/ie_ a l'imperatiu: SÍ (es conserva).==\n\n==_a → ä_ a l'imperatiu: NO (es perd).==\n\nI a més: _e → i/ie_ **no accepta** -e opcional; _a → ä_ **sí**."
+        }
+      ]
+    },
+    {
+      "id": "check-du",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-12-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "ihr",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Imperatiu de _ihr_: idèntic al present\n\n> **Regla:** l'imperatiu de _ihr_ = forma de present del _ihr_ **sense el pronom**.\n\nAquesta és la forma més fàcil de totes. No hi ha canvis de vocal, no hi ha -e opcional, no hi ha irregularitats (tret de _sein_)."
+        },
+        {
+          "type": "table",
+          "title": "12.5 Imperatiu de ihr",
+          "headers": ["Infinitiu", "Present _ihr_", "Imperatiu _ihr_"],
+          "rows": [
+            ["_machen_", "ihr macht", "**Macht!**"],
+            ["_fahren_", "ihr fahrt", "**Fahrt!**"],
+            ["_essen_", "ihr esst", "**Esst!**"],
+            ["_nehmen_", "ihr nehmt", "**Nehmt!**"],
+            ["_lesen_", "ihr lest", "**Lest!**"],
+            ["_arbeiten_", "ihr arbeitet", "**Arbeitet!**"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Per què és tan fàcil?",
+          "body": "Perquè el present de _ihr_ ja **no fa canvis de vocal** (ni _e → i/ie_ ni _a → ä_). Si la forma de present ja és \"neutra\", l'imperatiu també ho és. Aprendre A1a-14 bé t'estalvia feina aquí."
+        }
+      ]
+    },
+    {
+      "id": "sie",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Imperatiu de _Sie_: infinitiu + pronom\n\n> **Regla:** imperatiu de _Sie_ = ==**infinitiu + _Sie_**==, amb el verb a la primera posició."
+        },
+        {
+          "type": "table",
+          "title": "12.6 Imperatiu de Sie",
+          "headers": ["Infinitiu", "Imperatiu _Sie_"],
+          "rows": [
+            ["_machen_", "**Machen Sie!**"],
+            ["_fahren_", "**Fahren Sie!**"],
+            ["_essen_", "**Essen Sie!**"],
+            ["_nehmen_", "**Nehmen Sie!**"],
+            ["_kommen_", "**Kommen Sie!**"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Peculiaritats:**\n\n1. El pronom _Sie_ **és obligatori**: no es pot ometre. \\*_Machen!_ no és un imperatiu formal vàlid.\n2. _Sie_ va **immediatament després del verb**: _Kommen **Sie** bitte!_ (no \\*_Kommen bitte Sie!_).\n3. La forma coincideix amb l'infinitiu, que coincideix amb la 3a persona plural del present. La inversió verb-pronom és el que la marca com a imperatiu."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Contrast útil",
+          "body": "_Sie kommen_ (declaratiu: \"vostè ve\") → _Kommen Sie!_ (imperatiu: \"vingui!\"). Mateixes paraules, ordre invertit, funció completament diferent."
+        }
+      ]
+    },
+    {
+      "id": "wir",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Imperatiu de _wir_ (invitatiu)\n\n> **Regla:** imperatiu de _wir_ = ==**infinitiu + _wir_**==, a la primera posició. Equival al català _\"anem a...\"_."
+        },
+        {
+          "type": "table",
+          "title": "12.7 Imperatiu invitatiu de wir",
+          "headers": ["Infinitiu", "Imperatiu _wir_", "Traducció"],
+          "rows": [
+            ["_gehen_", "**Gehen wir!**", "Anem!"],
+            ["_essen_", "**Essen wir!**", "Mengem!"],
+            ["_fahren_", "**Fahren wir nach Berlin!**", "Anem a Berlín!"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Estructura simètrica al _Sie_: verb + pronom. La diferència és la intenció: _Sie_ és ordre formal, _wir_ és proposta inclusiva. Dóna't compte que **molts estudiants ometen aquesta forma** perquè sovint s'expressa amb _Wollen wir…?_ (\"Volem...?\") en conversa; però en textos escrits i convocatòries (_Feiern wir!_, _Tanzen wir!_) és habitual."
+        }
+      ]
+    },
+    {
+      "id": "verbs-prefix",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Verbs amb prefix separable\n\n> Com a les oracions declaratives, a l'imperatiu el ==**prefix separable va al final** de la frase==. La Satzklammer (A1a-22) es manté.\n\n**Exemple amb _sich ausruhen_ (relaxar-se, reflexiu):**"
+        },
+        {
+          "type": "table",
+          "title": "12.8 sich ausruhen a l'imperatiu",
+          "headers": ["Forma", "Imperatiu", "Traducció"],
+          "rows": [
+            ["_du_", "**Ruh dich aus!**", "Relaxa't!"],
+            ["_ihr_", "**Ruht euch aus!**", "Relaxeu-vos!"],
+            ["_Sie_", "**Ruhen Sie sich aus!**", "Relaxi's!"],
+            ["_wir_", "**Ruhen wir uns aus!**", "Relaxem-nos!"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Observacions:\n\n1. L'arrel del verb (_ruh-, ruht, ruhen_) va a **primera posició**.\n2. El prefix (_aus_) va **al final** de la frase.\n3. El **pronom reflexiu** (_dich, euch, sich, uns_) va just darrere del verb (o del pronom _Sie/wir_ si és formal/invitatiu)."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Atenció a l'ordre del reflexiu i el pronom personal",
+          "body": "A _Sie_: _Ruhen Sie **sich** aus!_ (primer _Sie_, després _sich_). A _wir_: _Ruhen wir **uns** aus!_ (primer _wir_, després _uns_). Mai a l'inrevés."
+        }
+      ]
+    },
+    {
+      "id": "sein",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El cas especial: _sein_\n\nEl verb _sein_ és **l'únic completament irregular** a l'imperatiu. Forma l'imperatiu a partir de l'arrel _sei-_, no del present."
+        },
+        {
+          "type": "table",
+          "title": "12.9 Imperatiu de sein",
+          "headers": ["Forma", "Imperatiu", "Traducció"],
+          "rows": [
+            ["_du_ (informal)", "**Sei fair!**", "Sigues just!"],
+            ["_ihr_ (informal)", "**Seid fair!**", "Sigueu justos!"],
+            ["_Sie_ (formal)", "**Seien Sie fair!**", "Sigui just!"],
+            ["_wir_ (invitatiu)", "**Seien wir fair!**", "Siguem justos!"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Atenció a l'ortografia",
+          "body": "_Seid_ porta **-d** final (com _ihr seid_ al present), no -t. _Seien_ (per a _Sie_ i _wir_) és una forma que només apareix aquí — no existeix al present indicatiu."
+        },
+        {
+          "type": "explanation",
+          "body": "**Combinacions freqüents:**\n\n> _**Sei** ruhig!_ — Estigues tranquil!\n> _**Sei** vorsichtig!_ — Vés amb compte!\n> _**Seid** nicht traurig!_ — No estigueu tristos!\n> _**Seien Sie** bitte geduldig._ — Tingui paciència, si us plau.\n\nMemoritza les quatre formes com un bloc tancat."
+        }
+      ]
+    },
+    {
+      "id": "doch-mal",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### _doch_ i _mal_: del mandat al consell\n\n> Les ==**partícules modals** _doch_ i _mal_== (i la combinació _doch mal_) **modifiquen l'imperatiu** i el fan **més amable, més proper, més cortès**. Una ordre o una prohibició es transforma en un consell o una proposta.\n\n**Comparació:**"
+        },
+        {
+          "type": "table",
+          "title": "12.10 Efecte de les partícules modals",
+          "headers": ["Amb imperatiu sec", "Amb partícula modal", "Efecte"],
+          "rows": [
+            ["_Trink weniger Bier!_", "_Trink **doch** weniger Bier!_", "Consell insistent amigable"],
+            ["_Trink weniger Bier!_", "_Trink **mal** weniger Bier!_", "Suggeriment casual (\"prova de...\")"],
+            ["_Trink weniger Bier!_", "_Trink **doch mal** weniger Bier!_", "Consell + proposta (el més suau)"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Amb _Sie_:** _Tun Sie **doch** etwas dagegen!_ (Faci alguna cosa al respecte!) · _Machen Sie **doch mal** Gymnastik!_ (Faci una mica de gimnàstica!)\n\n**Amb _du_:** _**Iss mal** weniger Süßigkeiten!_ (Menja menys dolços!) · _**Geht mal** am Anfang 3 Minuten, dann lauft 3 Minuten!_ (Camineu 3 minuts al començament, després correu 3 minuts!)"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Fórmula equivalent amb pregunta",
+          "body": "En català fem servir una **pregunta retòrica** (\"Per què no...?\") per suavitzar un consell. En alemany es pot fer amb _\"Warum... nicht?\"_:\n\n> _Trink doch mal weniger Bier!_ = _**Warum** trinkst du **nicht** weniger Bier?_ = \"Per què no beus menys cervesa?\"\n\n**Compte amb l'entonació** en alemany i en català: la melodia ha de **pujar** al final de la pregunta; si baixa, sona com un retret, no com un consell."
+        }
+      ]
+    },
+    {
+      "id": "check-doch-mal",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-12-ex-03", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "contrast-taula",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Taula de contrast: les quatre formes alhora\n\nAbans dels exercicis globals, revisa aquesta taula de referència que recull tot el que acabem d'estudiar."
+        },
+        {
+          "type": "table",
+          "title": "12.11 Les quatre formes per verb-tipus",
+          "headers": ["Verb", "_du_", "_ihr_", "_Sie_", "_wir_", "Tipus"],
+          "rows": [
+            ["_machen_", "Mach(e)!", "Macht!", "Machen Sie!", "Machen wir!", "regular"],
+            ["_gehen_", "Geh(e)!", "Geht!", "Gehen Sie!", "Gehen wir!", "regular"],
+            ["_arbeiten_", "**Arbeite!**", "Arbeitet!", "Arbeiten Sie!", "Arbeiten wir!", "regular amb -e obligatòria"],
+            ["_fahren_", "Fahr(e)!", "Fahrt!", "Fahren Sie!", "Fahren wir!", "canvi _a → ä_ (es perd)"],
+            ["_schlafen_", "Schlaf(e)!", "Schlaft!", "Schlafen Sie!", "Schlafen wir!", "canvi _a → ä_ (es perd)"],
+            ["_essen_", "**Iss!**", "Esst!", "Essen Sie!", "Essen wir!", "canvi _e → i_ (es conserva)"],
+            ["_nehmen_", "**Nimm!**", "Nehmt!", "Nehmen Sie!", "Nehmen wir!", "canvi _e → i_ (es conserva)"],
+            ["_lesen_", "**Lies!**", "Lest!", "Lesen Sie!", "Lesen wir!", "canvi _e → ie_ (es conserva)"],
+            ["_sprechen_", "**Sprich!**", "Sprecht!", "Sprechen Sie!", "Sprechen wir!", "canvi _e → i_ (es conserva)"],
+            ["_sich ausruhen_", "Ruh dich aus!", "Ruht euch aus!", "Ruhen Sie sich aus!", "Ruhen wir uns aus!", "separable + reflexiu"],
+            ["_sein_", "**Sei!**", "**Seid!**", "**Seien Sie!**", "**Seien wir!**", "completament irregular"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Les tres preguntes decisives",
+          "body": "1. **A qui parlo?** _du_ / _ihr_ / _Sie_ / _wir_.\n2. **És _sein_?** Formes memoritzades a banda.\n3. **És verb de canvi vocàlic?** _e → i/ie_ **es conserva** a _du_; _a → ä_ **es perd**."
+        }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals (recordatori condensat)\n\n1. ==Mantenir _a → ä_ a _du_==: \\*_Fähr!_ → cal _**Fahr!**_\n2. ==Perdre _e → i/ie_ a _du_==: \\*_Ess!_ → cal _**Iss!**_\n3. ==Ometre _Sie_ a l'imperatiu formal==: \\*_Kommen bitte!_ → cal _**Kommen Sie** bitte!_\n4. ==Posar pronom a _du_ o _ihr_==: \\*_Du komm!_, \\*_Ihr esst!_ → cal _**Komm!**_, _**Esst!**_\n5. ==Escriure _seit_ en comptes de _seid_== (imperatiu de _ihr_ per _sein_): cal _**Seid!**_ amb -d.\n6. ==Posar el prefix separable a l'inici==: \\*_Aufmach die Tür!_ → cal _**Mach** die Tür **auf**!_\n7. ==Intentar afegir -e a canvi _e → i/ie_==: \\*_Isse!_, \\*_Giebe!_ → cal _**Iss!**_, _**Gib!**_\n8. ==Oblidar el reflexiu a _sich ausruhen_==: \\*_Ruh aus!_ → cal _**Ruh dich aus!**_ (amb reflexiu obligatori)."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-12-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-12-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-12-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-12-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi\n\nAquest tema ha formalitzat el que A1b-9 et va presentar de manera funcional. El sistema complet de l'imperatiu alemany A1 està constituït per:\n\n1. **Sintaxi fixa:** verb sempre a **posició 1**, prefix separable al final, pronom _Sie/wir_ just darrere del verb (a _du_ i _ihr_ no hi ha pronom).\n2. **Quatre formes** (_du_, _ihr_, _Sie_, _wir_), amb regles de formació pròpies:\n    - _du_ = present sense -st (amb -e opcional als regulars / obligatòria a _-ten, -den, -nen_).\n    - _ihr_ = present de _ihr_ sense pronom.\n    - _Sie_ = infinitiu + _Sie_.\n    - _wir_ = infinitiu + _wir_.\n3. **Canvis vocàlics** a l'imperatiu de _du_:\n    - ==_e → i/ie_ es conserva== (_Iss, Gib, Lies, Sieh, Sprich_). Cap -e opcional.\n    - ==_a → ä_ es perd== (_Fahr, Schlaf, Lauf, Trag_). -e opcional.\n4. **_sein_ és l'únic completament irregular**: _**Sei / Seid / Seien Sie / Seien wir**_. Memoritza'ls com bloc.\n5. **Partícules modals** _doch_, _mal_, _doch mal_ → suavitzen l'imperatiu i el transformen en consell o proposta. Van **just darrere del verb** (o del pronom _Sie_).\n6. **Equivalència** amb pregunta retòrica: _Trink doch mal weniger Bier!_ = _Warum trinkst du nicht weniger Bier?_ Mateixa funció, to diferent."
+        },
+        {
+          "type": "table",
+          "title": "12.12 Connexions amb altres temes",
+          "headers": ["Tema", "Relació"],
+          "rows": [
+            ["A1b-9 (Ratschläge)", "Mateixes formes, enfocament comunicatiu. _Solltest_, _am besten_, _bitte_ són alternatives atenuades que aquí no hem revisat."],
+            ["A1a-14 (canvi vocàlic)", "Base de les regles de _du_ a l'imperatiu."],
+            ["A1a-22 (verbs separables)", "La Satzklammer s'aplica sense canvis a l'imperatiu."],
+            ["A1a-15 (pregunta total)", "Mateixa posició del verb (inicial) que a l'imperatiu."]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Producció natural",
+          "body": "Redacta un petit cartell per a la teva classe amb cinc consells de salut dirigits a _ihr_: per exemple, _**Trinkt** viel Wasser! **Schlaft** acht Stunden! **Esst doch mal** mehr Gemüse! **Seid** nicht zu streng mit euch! **Macht** Sport!_ Cinc imperatius, tres amb atenuadors, un amb _sein_. El sistema complet en una sola producció."
+        },
+        {
+          "type": "explanation",
+          "body": "**Recursos externs:** Deutsche Welle — sèrie _Nicos Weg A1_, episodis amb instruccions i consells; Goethe-Institut — fulls A1 d'exercicis d'imperatiu en contextos de recepta i rutina; dwds.de — fitxes verbals amb taules completes d'imperatiu per a verbs irregulars."
+        }
+      ]
+    }
+  ]
+}

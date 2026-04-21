@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-12-ex-07",
+  "topicId": "A1b-12",
+  "title": "Forma imperativa segons context",
+  "prompt": "Tria l'opció correcta per a cada context, distingint canvi vocàlic, forma de _sein_ i nivell formal.",
+  "difficulty": 3,
+  "tags": ["imperatiu", "contrast", "canvi-vocalic", "sein", "Sie", "wir", "avaluacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. A un nen (_du_) amb el verb _nehmen_: \"Agafa això!\" → {{1}}\n2. A un grup d'alumnes (_ihr_) amb el verb _sein_: \"Estigueu atents!\" _(aufmerksam)_ → {{2}}\n3. A un client (_Sie_) amb el verb _sprechen_: \"Parli a poc a poc!\" _(langsam)_ → {{3}}\n4. A nosaltres mateixos (_wir_) amb _essen_: \"Mengem alguna cosa!\" _(etwas)_ → {{4}}",
+    "blanks": [
+      { "id": "1", "label": "imperatiu _du_ de _nehmen_" },
+      { "id": "2", "label": "imperatiu _ihr_ de _sein_" },
+      { "id": "3", "label": "imperatiu _Sie_ de _sprechen_" },
+      { "id": "4", "label": "imperatiu _wir_ de _essen_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "1",
+        "options": [
+          "Nimm das!",
+          "Nehme das!",
+          "Nehm das!"
+        ]
+      },
+      {
+        "blankId": "2",
+        "options": [
+          "Sind aufmerksam!",
+          "Seid aufmerksam!",
+          "Seien aufmerksam!"
+        ]
+      },
+      {
+        "blankId": "3",
+        "options": [
+          "Sprich langsam!",
+          "Sprechen Sie langsam!",
+          "Sprechen langsam!"
+        ]
+      },
+      {
+        "blankId": "4",
+        "options": [
+          "Essen wir etwas!",
+          "Essen etwas!",
+          "Wir essen etwas!"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Nimm das!",
+      "2": "Seid aufmerksam!",
+      "3": "Sprechen Sie langsam!",
+      "4": "Essen wir etwas!"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has navegat les quatre particularitats: (1) _nehmen_ conserva _e → i_ a _du_ → **Nimm!**; (2) _sein_ a _ihr_ és **Seid** (no _sind_, que és indicatiu); (3) _Sie_ formal obliga a mantenir el pronom → **Sprechen Sie**; (4) _wir_ invitatiu = infinitiu + _wir_ → **Essen wir**.",
+      "references": ["A1b-12"]
+    },
+    "incorrect": {
+      "default": "Repassa: _nehmen_ és un verb _e → i_ que a _du_ fa **Nimm** (no _Nehme_); _sein_ té formes pròpies a l'imperatiu (_Sei, Seid, Seien Sie, Seien wir_), no les del present; a l'imperatiu formal el pronom _Sie_ **no s'omet mai**; i el _wir_ invitatiu demana el pronom just darrere del verb, no davant.",
+      "byResponse": [
+        {
+          "match": { "1": "Nehme das!" },
+          "message": "_nehmen_ conserva el canvi _e → i_ a l'imperatiu de _du_: **Nimm** (de _du nimmst_), no \\*_Nehme_."
+        },
+        {
+          "match": { "2": "Sind aufmerksam!" },
+          "message": "_sind_ és indicatiu (3a pl). A l'imperatiu de _ihr_, _sein_ fa **Seid**."
+        },
+        {
+          "match": { "3": "Sprechen langsam!" },
+          "message": "A l'imperatiu formal, el pronom _Sie_ és **obligatori**: _Sprechen **Sie** langsam!_"
+        },
+        {
+          "match": { "4": "Wir essen etwas!" },
+          "message": "A l'imperatiu _wir_ el verb va **abans** del pronom: _**Essen wir** etwas!_ (no declaratiu _Wir essen..._)."
+        }
+      ]
+    }
+  }
+}

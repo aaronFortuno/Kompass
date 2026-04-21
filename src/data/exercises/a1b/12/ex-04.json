@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-12-ex-04",
+  "topicId": "A1b-12",
+  "title": "Quatre formes, un verb cada vegada",
+  "prompt": "Completa la taula d'imperatius. Escriu només la forma imperativa amb pronom si cal (ex. \"Lesen Sie\", \"Fahren wir\").",
+  "difficulty": 3,
+  "tags": ["imperatiu", "du-ihr-Sie-wir", "contrast", "sein", "avaluacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _lesen_ — a un amic: {{1}} das Buch! _(du)_\n2. _lesen_ — a un grup informal: {{2}} das Buch! _(ihr)_\n3. _lesen_ — formal: {{3}} das Buch! _(Sie)_\n4. _fahren_ — a un amic: {{4}} vorsichtig! _(du)_\n5. _fahren_ — invitatiu: {{5}} zusammen nach Berlin! _(wir)_\n6. _sein_ — a un grup informal: {{6}} bitte leise! _(ihr)_",
+    "blanks": [
+      { "id": "1", "label": "imperatiu _du_ de _lesen_" },
+      { "id": "2", "label": "imperatiu _ihr_ de _lesen_" },
+      { "id": "3", "label": "imperatiu _Sie_ de _lesen_ (+ pronom)" },
+      { "id": "4", "label": "imperatiu _du_ de _fahren_" },
+      { "id": "5", "label": "imperatiu _wir_ de _fahren_ (+ pronom)" },
+      { "id": "6", "label": "imperatiu _ihr_ de _sein_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "imperatiu" },
+      { "blankId": "2", "placeholder": "imperatiu" },
+      { "blankId": "3", "placeholder": "imperatiu + pronom" },
+      { "blankId": "4", "placeholder": "imperatiu" },
+      { "blankId": "5", "placeholder": "imperatiu + pronom" },
+      { "blankId": "6", "placeholder": "imperatiu" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Lies"],
+      "2": ["Lest"],
+      "3": ["Lesen Sie"],
+      "4": ["Fahr", "Fahre"],
+      "5": ["Fahren wir"],
+      "6": ["Seid"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has aplicat totes les regles: (1) _du_ conserva _e → ie_ → **Lies**; (2) _ihr_ = present sense pronom → **Lest**; (3) _Sie_ = infinitiu + Sie → **Lesen Sie**; (4) _du_ **perd** _a → ä_ → **Fahr**; (5) _wir_ = infinitiu + wir → **Fahren wir**; (6) _sein_ a _ihr_ és irregular → **Seid** (amb -d).",
+      "references": ["A1b-12"]
+    },
+    "incorrect": {
+      "default": "Repassa cada tipus: _du_ + _e → i/ie_ → conserva (_Lies_); _du_ + _a → ä_ → perd (_Fahr_, no \\*_Fähr_); _ihr_ = present sense pronom; _Sie_ = infinitiu + _Sie_; _wir_ = infinitiu + _wir_; _sein_ té formes pròpies (_Sei, Seid, Seien Sie, Seien wir_).",
+      "byResponse": [
+        {
+          "match": { "1": "Les" },
+          "message": "_lesen_ conserva el canvi _e → ie_ a l'imperatiu de _du_: **Lies** (de _du liest_), no \\*_Les_."
+        },
+        {
+          "match": { "4": "Fähr" },
+          "message": "El canvi _a → ä_ es **perd** a l'imperatiu: **Fahr** (tornem a _a_), no \\*_Fähr_."
+        },
+        {
+          "match": { "6": "Seit" },
+          "message": "L'imperatiu de _ihr_ de _sein_ porta **-d** (com _ihr seid_): **Seid**, no \\*_Seit_."
+        },
+        {
+          "match": { "6": "Sind" },
+          "message": "_Sind_ és l'indicatiu (3a pl). A l'imperatiu de _ihr_, _sein_ fa **Seid**."
+        }
+      ]
+    }
+  }
+}
