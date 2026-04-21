@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-28-ex-02",
+  "topicId": "A1a-28",
+  "title": "Femení, neutre i plural: no canvien",
+  "prompt": "Decideix si cada afirmació sobre els articles en acusatiu és certa o falsa.",
+  "difficulty": 1,
+  "tags": ["articles", "acusatiu", "truefalse", "quick-check"],
+  "stimulus": {
+    "type": "text",
+    "content": "Llegeix cada afirmació i decideix si és certa o falsa."
+  },
+  "interaction": {
+    "type": "trueFalse",
+    "statements": [
+      { "id": "s1", "text": "_Die Frau_ (nominatiu) i _die Frau_ (acusatiu) s'escriuen igual." },
+      { "id": "s2", "text": "En acusatiu, _das Kind_ es converteix en _den Kind_." },
+      { "id": "s3", "text": "El plural _die Leute_ no canvia entre nominatiu i acusatiu." },
+      { "id": "s4", "text": "_Eine Katze_ (nominatiu) passa a _einen Katze_ en acusatiu." }
+    ]
+  },
+  "validation": {
+    "type": "truthMap",
+    "answers": {
+      "s1": true,
+      "s2": false,
+      "s3": true,
+      "s4": false
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Exacte! El femení, el neutre i el plural són ==idèntics== en nominatiu i acusatiu. El canvi afecta només el masculí singular: _der → den_, _ein → einen_.",
+      "references": ["A1a-28"]
+    },
+    "incorrect": {
+      "default": "Repassem: _das Kind_ no canvia (és neutre), segueix sent _das Kind_ en acusatiu. I _eine Katze_ tampoc: _Katze_ és femení. Només canvia el masculí: _der → den_, _ein → einen_, _kein → keinen_."
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-28-ex-05",
+  "topicId": "A1a-28",
+  "title": "Substantiu + article correcte",
+  "prompt": "Aparella cada substantiu amb la frase que completa la forma correcta de l'article en acusatiu.",
+  "difficulty": 2,
+  "tags": ["articles", "acusatiu", "gènere", "matchpairs", "assessment"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "c1", "group": "Substantiu", "content": { "type": "text", "content": "_Vater_ (pare, m.)" } },
+      { "id": "c3", "group": "Substantiu", "content": { "type": "text", "content": "_Mutter_ (mare, f.)" } },
+      { "id": "c5", "group": "Substantiu", "content": { "type": "text", "content": "_Auto_ (cotxe, n.)" } },
+      { "id": "c7", "group": "Substantiu", "content": { "type": "text", "content": "_Bruder_ (germà, m.) — indet." } },
+      { "id": "c2", "group": "Frase", "content": { "type": "text", "content": "_Ich sehe ==den== …_" } },
+      { "id": "c4", "group": "Frase", "content": { "type": "text", "content": "_Ich sehe ==die== …_" } },
+      { "id": "c6", "group": "Frase", "content": { "type": "text", "content": "_Ich kaufe ==das== …_" } },
+      { "id": "c8", "group": "Frase", "content": { "type": "text", "content": "_Ich habe ==einen== …_" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Substantiu",
+    "groupBLabel": "Frase"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["c1", "c2"],
+      ["c3", "c4"],
+      ["c5", "c6"],
+      ["c7", "c8"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent! Has aparellat: _den Vater_ (m. det.), _die Mutter_ (f. det., no canvia), _das Auto_ (n. det., no canvia), _einen Bruder_ (m. indet.). Tens la taula interioritzada.",
+      "references": ["A1a-28"]
+    },
+    "incorrect": {
+      "default": "Revisa els gèneres: _Vater_ i _Bruder_ són masculins → _den_, _einen_. _Mutter_ és femení → _die_. _Auto_ és neutre → _das_. Només els masculins canvien respecte al nominatiu."
+    }
+  }
+}

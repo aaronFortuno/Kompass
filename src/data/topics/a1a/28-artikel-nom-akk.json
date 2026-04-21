@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-28",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 28,
+  "title": "Artikel im Nominativ und Akkusativ",
+  "shortTitle": "Artikel Nom/Akk",
+  "description": "Taula de referència completa dels articles (determinats, indeterminats i negatius) en nominatiu i acusatiu per a masculí, femení, neutre i plural. La regla central: només canvia el masculí singular (der → den, ein → einen, kein → keinen). Avançament dels possessius com a família ein-Wörter.",
+  "axes": ["generes-articles-declinacio", "casos"],
+  "prerequisites": ["A1a-6", "A1a-27"],
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "A **A1a-6** vas conèixer els **articles en nominatiu** (_der, die, das_ / _ein, eine, ein_) i a **A1a-14** els **articles negatius** (_kein, keine, kein_). A **A1a-27** has descobert un fet nou: hi ha verbs que regeixen un **complement directe en acusatiu** (_Akkusativ_): _Ich habe ==einen== Hund._ _Ich sehe ==den== Lehrer._\n\nAllà ja has vist, de passada, la forma _einen_ i _den_. Ara toca aclarir d'on surten i quan apareixen. La lliçó d'avui és una **taula de referència**: reunim en un sol lloc **tots els articles** en nominatiu i acusatiu, determinats i indeterminats, positius i negatius, per masculí / femení / neutre / plural.\n\nLa **bona notícia** és enorme: ==l'acusatiu gairebé no canvia res respecte al nominatiu==. Només hi ha **una excepció**, i és sempre la mateixa: el **masculí singular**.\n\nSi interioritzes aquesta regla d'un sol canvi, tens l'acusatiu resolt per sempre."
+        }
+      ]
+    },
+    {
+      "id": "contrast-romaniques",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Una diferència gran respecte al català i el castellà\n\nEn **català** i en **castellà** (com en qualsevol llengua romànica), l'article **no canvia mai** segons la funció que faci el substantiu a la frase. _El gos_ és _el gos_ tant si és subjecte com si és complement directe:\n\n- CA: ==El gos== dorm. / Veig ==el gos==.\n- ES: ==El perro== duerme. / Veo ==al perro==.\n- DE: ==Der Hund== schläft. / Ich sehe ==den Hund==.\n\nFixa't que al castellà hi ha la preposició _a_ de l'\"a personal\", però l'article _el_ no canvia. En català, ni això.\n\nEn alemany, en canvi, ==l'article marca la funció==: _der Hund_ és subjecte (nominatiu), _den Hund_ és complement directe (acusatiu). És una informació que no va en l'ordre de les paraules, sinó **enganxada a l'article mateix**.\n\nAixò és nou per a nosaltres i costa una mica d'automatitzar. Però un cop t'hi acostumes, tens un avantatge: l'alemany **no necessita un ordre fix** (com el nostre subjecte-verb-complement) per entendre qui fa què. L'article ja ho diu."
+        }
+      ]
+    },
+    {
+      "id": "taula-determinats",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Articles determinats: _der, die, das_ (i _die_ plural)\n\nComencem pel cas central: els **articles determinats** (quan parles d'una cosa coneguda o concreta: _el gos_, _la dona_, _el llibre_)."
+        },
+        {
+          "type": "table",
+          "headers": ["Gènere", "**Nominatiu**", "**Acusatiu**"],
+          "rows": [
+            ["Masculí", "**der** Mann", "==**den** Mann=="],
+            ["Femení", "**die** Frau", "**die** Frau"],
+            ["Neutre", "**das** Kind", "**das** Kind"],
+            ["Plural", "**die** Leute", "**die** Leute"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "==Única casella que canvia: masculí singular _der_ → _den_.==\n\nLa resta és idèntica. Si tens dubtes amb el femení, el neutre o el plural, pots respirar: s'escriuen **exactament igual** en totes dues funcions.\n\n**Exemples contrastats:**\n\n- _==Der== Lehrer ist nett._ (nom.) → _Ich sehe ==den== Lehrer._ (ac.)\n  _El professor és agradable._ / _Veig el professor._\n- _==Die== Frau kommt._ (nom.) → _Ich sehe ==die== Frau._ (ac.) — **igual!**\n- _==Das== Buch ist neu._ (nom.) → _Ich lese ==das== Buch._ (ac.) — **igual!**\n- _==Die== Kinder spielen._ (nom.) → _Ich höre ==die== Kinder._ (ac.) — **igual!**"
+        }
+      ]
+    },
+    {
+      "id": "taula-indeterminats",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Articles indeterminats: _ein, eine, ein_\n\nEl mateix patró es repeteix amb els articles indeterminats (quan parles d'una cosa no especificada: _un gos_, _una dona_, _un llibre_)."
+        },
+        {
+          "type": "table",
+          "headers": ["Gènere", "**Nominatiu**", "**Acusatiu**"],
+          "rows": [
+            ["Masculí", "**ein** Mann", "==**einen** Mann=="],
+            ["Femení", "**eine** Frau", "**eine** Frau"],
+            ["Neutre", "**ein** Kind", "**ein** Kind"],
+            ["Plural", "— (no existeix)", "— (no existeix)"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Observa:\n\n1. ==Mateixa regla==: només canvia el masculí singular. _ein_ → **einen** (afegim _-en_).\n2. El plural **no existeix** amb article indeterminat (exactament com en català: no diem _\"uns llibres\"_ amb _un_ com a article; en alemany simplement no hi ha article).\n\n**Exemples contrastats:**\n\n- _==Ein== Hund schläft hier._ (nom.) → _Ich habe ==einen== Hund._ (ac.)\n  _Aquí dorm un gos._ / _Tinc un gos._\n- _==Eine== Katze wohnt im Haus._ (nom.) → _Ich sehe ==eine== Katze._ (ac.) — **igual!**\n- _==Ein== Buch liegt dort._ (nom.) → _Ich kaufe ==ein== Buch._ (ac.) — **igual!**\n\nConnexió directa amb A1a-27: quan allà vas aprendre _Ich habe ==einen== Bruder_, ja estaves aplicant l'acusatiu masculí sense saber-ho del tot. Ara ja tens la imatge completa."
+        }
+      ]
+    },
+    {
+      "id": "taula-negatius",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Articles negatius: _kein, keine, kein_\n\nA **A1a-14** vas aprendre que per negar un substantiu (un que aniria amb _ein_ o sense article), s'utilitza _kein_. El comportament de _kein_ davant de l'acusatiu és ==exactament el mateix== que el de _ein_: només canvia el masculí."
+        },
+        {
+          "type": "table",
+          "headers": ["Gènere", "**Nominatiu**", "**Acusatiu**"],
+          "rows": [
+            ["Masculí", "**kein** Mann", "==**keinen** Mann=="],
+            ["Femení", "**keine** Frau", "**keine** Frau"],
+            ["Neutre", "**kein** Kind", "**kein** Kind"],
+            ["Plural", "**keine** Leute", "**keine** Leute"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Diferència pràctica** respecte a _ein_: _kein_ **sí que té plural** (_keine_), perquè és la forma que necessites per negar substantius sense article o en plural.\n\n**Exemples contrastats:**\n\n- _==Kein== Hund bellt._ (nom.) → _Ich habe ==keinen== Hund._ (ac.)\n  _Cap gos borda._ / _No tinc [cap] gos._\n- _==Keine== Katze wohnt hier._ (nom.) → _Ich habe ==keine== Katze._ (ac.) — **igual!**\n- _==Kein== Kind weint._ (nom.) → _Ich sehe ==kein== Kind._ (ac.) — **igual!**\n- _==Keine== Bücher sind hier._ (nom.) → _Ich habe ==keine== Bücher._ (ac.) — **igual!**\n\n==Patró clar: _kein_ funciona com _ein_ + terminació única en masculí acusatiu (_-en_), més plural==."
+        }
+      ]
+    },
+    {
+      "id": "taula-possessius",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Un avançament: possessius (_mein, dein…_)\n\nEls **possessius** (_mein_ = el meu / la meva, _dein_ = el teu / la teva, etc.) segueixen ==exactament el mateix patró== que _ein_ i _kein_. És el que els gramàtics anomenen \"família dels _ein-Wörter_\"."
+        },
+        {
+          "type": "table",
+          "headers": ["Gènere", "**Nominatiu**", "**Acusatiu**"],
+          "rows": [
+            ["Masculí", "**mein** Bruder", "==**meinen** Bruder=="],
+            ["Femení", "**meine** Schwester", "**meine** Schwester"],
+            ["Neutre", "**mein** Kind", "**mein** Kind"],
+            ["Plural", "**meine** Eltern", "**meine** Eltern"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Exemples:**\n\n- _==Mein== Bruder ist hier._ (nom.) → _Ich sehe ==meinen== Bruder._ (ac.)\n  _El meu germà és aquí._ / _Veig el meu germà._\n- _Ich liebe ==meine== Schwester._ (ac. femení, igual que nominatiu)\n- _Ich suche ==mein== Handy._ (ac. neutre, igual que nominatiu)\n\nEt presentem els possessius ara només perquè vegis que ==la regla d'avui és molt poderosa==: aprendre \"masculí acusatiu = afegir _-en_\" t'obre la porta a tot un grup de paraules. Els possessius tindran la seva lliçó pròpia més endavant; aquí queda com a avançament."
+        }
+      ]
+    },
+    {
+      "id": "quick-check-masculi",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-28-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "quick-check-no-canvia",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-28-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. Oblidar-se del canvi en masculí.**\nÉs l'error més freqüent, perquè el nostre instint romànic diu \"l'article no canvia\". Davant d'un verb com _haben_, _sehen_, _kaufen_, _lesen_, _suchen_, para atenció: si el substantiu és **masculí**, l'article demana _-en_.\n\n- Incorrecte: _Ich habe ==ein== Bruder._ ❌\n- Correcte: _Ich habe ==einen== Bruder._ ✅\n\n**2. Canviar articles que no canvien.**\nL'error contrari: sobreaplicar la regla. _Die Frau_ no passa mai a _den Frau_ ni a _einen Frau_; només el masculí rep el canvi.\n\n- Incorrecte: _Ich sehe ==den== Frau._ ❌\n- Correcte: _Ich sehe ==die== Frau._ ✅\n\n**3. Confondre el gènere del substantiu.**\nPerquè l'acusatiu funcioni bé, necessites saber si el substantiu és _der_, _die_ o _das_ ==des del principi==. Si vas aprenent el vocabulari sense el gènere, l'acusatiu es col·lapsa. Consell: aprèn sempre _der Tisch_, _die Lampe_, _das Buch_, mai només _Tisch_, _Lampe_, _Buch_.\n\n**4. Tractar _kein_ com a invariable.**\nEn català \"cap\" no es flexiona (_cap gos_, _cap gossa_). En alemany _kein_ sí, i segueix el mateix patró que _ein_: _keinen_ en masculí acusatiu.\n\n- Incorrecte: _Ich habe ==kein== Hund._ ❌\n- Correcte: _Ich habe ==keinen== Hund._ ✅\n\n**5. Pensar que l'ordre de la frase n'és responsable.**\nL'article canvia **pel cas gramatical**, no per la posició. _Den Lehrer sehe ich._ i _Ich sehe den Lehrer._ tenen tots dos _den_ perquè _Lehrer_ és complement directe, passi el que passi amb l'ordre."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-28-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-28-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-28-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-28-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Resum visual\n\n**La taula completa (del PDF IOC):**"
+        },
+        {
+          "type": "table",
+          "headers": ["", "**Nominatiu**", "**Acusatiu**"],
+          "rows": [
+            ["Determinat m.", "der", "==**den**=="],
+            ["Determinat f.", "die", "die"],
+            ["Determinat n.", "das", "das"],
+            ["Determinat pl.", "die", "die"],
+            ["Indeterminat m.", "ein", "==**einen**=="],
+            ["Indeterminat f.", "eine", "eine"],
+            ["Indeterminat n.", "ein", "ein"],
+            ["Indeterminat pl.", "—", "—"],
+            ["Negatiu m.", "kein", "==**keinen**=="],
+            ["Negatiu f.", "keine", "keine"],
+            ["Negatiu n.", "kein", "kein"],
+            ["Negatiu pl.", "keine", "keine"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Tres idees per endur-te a casa:**\n\n1. **Una sola regla de canvi** — en l'acusatiu, ==només canvia el masculí singular==: _der → den_, _ein → einen_, _kein → keinen_, _mein → meinen_. Tot afegeix _-en_. Femení, neutre i plural són idèntics al nominatiu.\n2. **Necessites saber el gènere** — la regla només funciona si saps si el substantiu és _der_, _die_ o _das_. Aprèn sempre el vocabulari amb l'article; és la inversió més rendible del curs.\n3. **Els possessius segueixen el mateix patró** — _mein, dein, sein…_ es comporten com _ein_ i _kein_. Dominar l'acusatiu amb l'article indeterminat t'estalvia feina per al futur.\n\nConnexions: **A1a-6** (articles en nominatiu, determinats i indeterminats), **A1a-14** (articles negatius _kein_), **A1a-27** (verbs amb complement en acusatiu: _haben_, _sehen_, _kaufen_, _lesen_…). A **A1b** trobaràs el **datiu** (tercer cas), on l'article torna a canviar de forma més completa — però això serà una altra lliçó. De moment, quedat amb això: ==acusatiu = nominatiu, excepte el masculí==."
+        }
+      ]
+    }
+  ]
+}

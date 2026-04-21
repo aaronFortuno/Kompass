@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-28-ex-04",
+  "topicId": "A1a-28",
+  "title": "_ein/einen_ i _kein/keinen_ en masculí",
+  "prompt": "Completa les frases amb les formes correctes d'_ein_ i _kein_ en masculí acusatiu.",
+  "difficulty": 2,
+  "tags": ["articles", "indeterminat", "negatiu", "acusatiu", "masculí", "dropdownfill", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Ich habe {{1}} Hund, aber ich habe {{2}} Kater._ (_Tinc un gos, però no tinc [cap] gat [mascle]._)",
+    "blanks": [
+      { "id": "1", "label": "ein/einen masculí ac." },
+      { "id": "2", "label": "kein/keinen masculí ac." }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["ein", "einen", "eine"] },
+      { "blankId": "2", "options": ["kein", "keinen", "keine"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "einen",
+      "2": "keinen"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé! Tant _Hund_ com _Kater_ són masculins i són complement directe de _haben_. Per tant: _==einen== Hund_ (positiu) i _==keinen== Kater_ (negatiu). Ambdós afegeixen _-en_.",
+      "references": ["A1a-28"]
+    },
+    "incorrect": {
+      "default": "Pista: _haben_ és un dels verbs que demana acusatiu (A1a-27). _Hund_ i _Kater_ són masculins (_der Hund_, _der Kater_). En masculí acusatiu: _ein → einen_, _kein → keinen_."
+    }
+  }
+}

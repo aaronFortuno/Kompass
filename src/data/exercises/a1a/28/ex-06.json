@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-28-ex-06",
+  "topicId": "A1a-28",
+  "title": "Possessius en acusatiu (producció lliure)",
+  "prompt": "Escriu la forma correcta del possessiu _mein_ en acusatiu. Els possessius segueixen el mateix patró que _ein_ i _kein_.",
+  "difficulty": 2,
+  "tags": ["possessius", "acusatiu", "producció", "typein", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Ich liebe {{1}} Bruder und {{2}} Schwester._ (_Estimo el meu germà i la meva germana._)",
+    "blanks": [
+      { "id": "1", "label": "possessiu masculí ac." },
+      { "id": "2", "label": "possessiu femení ac." }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "possessiu (m., ac.)" },
+      { "blankId": "2", "placeholder": "possessiu (f., ac.)" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "meinen",
+      "2": "meine"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte! _Bruder_ és masculí → _mein → ==meinen==_ (afegim _-en_, com _einen_, _keinen_). _Schwester_ és femení → _meine_ no canvia. Has transferit la regla als possessius.",
+      "references": ["A1a-28"]
+    },
+    "incorrect": {
+      "default": "Recorda: els possessius (_mein_, _dein_…) es comporten com _ein_ i _kein_. Masculí acusatiu afegeix _-en_ → _meinen Bruder_. Femení no canvia → _meine Schwester_."
+    }
+  }
+}

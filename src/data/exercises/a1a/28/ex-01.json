@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-28-ex-01",
+  "topicId": "A1a-28",
+  "title": "Masculí en acusatiu: afegir -en",
+  "prompt": "Completa les frases amb l'article correcte. Tots dos substantius són masculins i fan de complement directe.",
+  "difficulty": 1,
+  "tags": ["articles", "acusatiu", "masculí", "dropdownfill", "quick-check"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Ich habe {{1}} Bruder und ich sehe {{2}} Lehrer._ (_Tinc un germà i veig el professor._)",
+    "blanks": [
+      { "id": "1", "label": "article indeterminat masculí acusatiu" },
+      { "id": "2", "label": "article determinat masculí acusatiu" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["ein", "einen", "eine"] },
+      { "blankId": "2", "options": ["der", "den", "das"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "einen",
+      "2": "den"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé! Tots dos substantius (_Bruder_, _Lehrer_) són masculins i fan de complement directe (acusatiu). Per això: _==einen== Bruder_ i _==den== Lehrer_.",
+      "references": ["A1a-28"]
+    },
+    "incorrect": {
+      "default": "Recorda: _Bruder_ i _Lehrer_ són masculins (_der Bruder_, _der Lehrer_). Com que fan de complement directe del verb, l'article canvia a l'acusatiu: _der → den_, _ein → einen_. Femení, neutre i plural no canviarien."
+    }
+  }
+}

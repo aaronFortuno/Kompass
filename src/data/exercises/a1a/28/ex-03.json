@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-28-ex-03",
+  "topicId": "A1a-28",
+  "title": "Determinat en acusatiu: tres gèneres",
+  "prompt": "Tria l'article determinat correcte en acusatiu per a cada substantiu.",
+  "difficulty": 2,
+  "tags": ["articles", "determinat", "acusatiu", "dropdownfill", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Ich sehe {{1}} Mann, {{2}} Frau und {{3}} Kind._ (_Veig l'home, la dona i el nen._)",
+    "blanks": [
+      { "id": "1", "label": "masculí ac." },
+      { "id": "2", "label": "femení ac." },
+      { "id": "3", "label": "neutre ac." }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["der", "den", "das"] },
+      { "blankId": "2", "options": ["die", "den", "das"] },
+      { "blankId": "3", "options": ["das", "den", "die"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "den",
+      "2": "die",
+      "3": "das"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte! _Mann_ és masculí → _der → ==den==_. _Frau_ és femení → es queda _die_. _Kind_ és neutre → es queda _das_. Només el masculí rep el canvi.",
+      "references": ["A1a-28"]
+    },
+    "incorrect": {
+      "default": "Repassem: _Mann_ (m.) → _den_; _Frau_ (f.) → _die_ (no canvia); _Kind_ (n.) → _das_ (no canvia). La regla és clara: només masculí _der → den_."
+    }
+  }
+}
