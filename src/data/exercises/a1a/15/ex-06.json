@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-15-ex-06",
+  "topicId": "A1a-15",
+  "title": "Perfil d'un amic: regulars i irregulars barrejats",
+  "prompt": "Completa la descripció de Tomas. Conviuen verbs regulars (del tema A1a-3) i verbs amb canvi vocàlic. Tots en 3a persona del singular.",
+  "difficulty": 3,
+  "tags": ["vokalwechsel", "integració", "regulars-vs-irregulars", "er-sie-es"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Das ist mein Freund Tomas. Er {{1}} in Hamburg und {{2}} bei Lufthansa.\nAm Wochenende {{3}} er gern Krimis und {{4}} alte Filme im Kino.\nEr {{5}} vier Sprachen: Deutsch, Englisch, Polnisch und Französisch.\nJeden Morgen {{6}} er um sechs Uhr auf und {{7}} eine halbe Stunde im Park.\nAm Sonntag {{8}} er lange — bis elf Uhr!",
+    "blanks": [
+      { "id": "1", "label": "_wohnen_, _er_ (regular)" },
+      { "id": "2", "label": "_arbeiten_, _er_ (regular)" },
+      { "id": "3", "label": "_lesen_, _er_" },
+      { "id": "4", "label": "_sehen_, _er_" },
+      { "id": "5", "label": "_sprechen_, _er_" },
+      { "id": "6", "label": "_steht … auf_ (de _aufstehen_), _er_" },
+      { "id": "7", "label": "_laufen_, _er_" },
+      { "id": "8", "label": "_schlafen_, _er_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["wohne", "wohnt", "wohnen"] },
+      { "blankId": "2", "options": ["arbeite", "arbeitet", "arbeiten"] },
+      { "blankId": "3", "options": ["lese", "liest", "lesen"] },
+      { "blankId": "4", "options": ["sehe", "sieht", "sehen"] },
+      { "blankId": "5", "options": ["spreche", "spricht", "sprechen"] },
+      { "blankId": "6", "options": ["stehe", "steht", "stehen"] },
+      { "blankId": "7", "options": ["laufe", "läuft", "laufen"] },
+      { "blankId": "8", "options": ["schlafe", "schläft", "schlafen"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "wohnt",
+      "2": "arbeitet",
+      "3": "liest",
+      "4": "sieht",
+      "5": "spricht",
+      "6": "steht",
+      "7": "läuft",
+      "8": "schläft"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Impecable. Has integrat tot el tema en un text real: verbs regulars (_wohnt, arbeitet, steht_) al costat de verbs amb canvi vocàlic a 3a sg. (_liest, sieht, spricht, läuft, schläft_). Ja pots descriure rutines de persones amb fluïdesa."
+    },
+    "incorrect": {
+      "default": "Revisa: amb _er_ (3a sg.), els verbs regulars afegeixen _-t_ a l'arrel sense tocar la vocal (_er wohnt_); els irregulars afegeixen _-t_ i **a més canvien la vocal** (_er liest, er sieht, er spricht, er läuft, er schläft_)."
+    }
+  }
+}

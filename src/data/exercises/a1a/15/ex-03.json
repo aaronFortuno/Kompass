@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-15-ex-03",
+  "topicId": "A1a-15",
+  "title": "Rutines matinals: esmorzar i transport",
+  "prompt": "Tria la forma correcta a cada buit. Fixa't bé en la persona: _ich_ no canvia la vocal; _du_ i _er/sie_ sí.",
+  "difficulty": 2,
+  "tags": ["vokalwechsel", "präsens", "diàleg", "persones-contrastades"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "— Was {{1}} du zum Frühstück?\n— Ich {{2}} meistens Müsli. Und mein Bruder {{3}} ein Ei.\n— Und dann? {{4}} du zur Arbeit?\n— Ja, ich {{5}} mit dem Fahrrad. Meine Schwester {{6}} mit dem Bus.",
+    "blanks": [
+      { "id": "1", "label": "_essen_, _du_" },
+      { "id": "2", "label": "_essen_, _ich_" },
+      { "id": "3", "label": "_essen_, _er_" },
+      { "id": "4", "label": "_fahren_, _du_ (inici de frase)" },
+      { "id": "5", "label": "_fahren_, _ich_" },
+      { "id": "6", "label": "_nehmen_, _sie_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["esse", "isst", "essen"] },
+      { "blankId": "2", "options": ["esse", "isst", "esst"] },
+      { "blankId": "3", "options": ["esse", "isst", "esst"] },
+      { "blankId": "4", "options": ["Fahre", "Fährst", "Fahrt"] },
+      { "blankId": "5", "options": ["fahre", "fährst", "fährt"] },
+      { "blankId": "6", "options": ["nehme", "nimmst", "nimmt"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "isst",
+      "2": "esse",
+      "3": "isst",
+      "4": "Fährst",
+      "5": "fahre",
+      "6": "nimmt"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has vist la lògica al detall: _ich_ conserva la vocal original (_esse, fahre_), però _du_ i _er/sie_ la canvien (_isst, fährst, nimmt_). Aquest és el cor del tema."
+    },
+    "incorrect": {
+      "default": "Recorda el principi clau: el canvi vocàlic **només afecta _du_ i _er/sie/es_**. Amb _ich_, els verbs irregulars tenen la mateixa forma que un regular (_ich esse, ich fahre, ich nehme_)."
+    }
+  }
+}

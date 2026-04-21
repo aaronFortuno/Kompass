@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-15-ex-05",
+  "topicId": "A1a-15",
+  "title": "Graella de classificació: forma de er",
+  "prompt": "Per a cada verb, escriu la forma de 3a persona del singular (_er_). Un verb de cada tipus de canvi vocàlic.",
+  "difficulty": 2,
+  "tags": ["vokalwechsel", "er-sie-es", "classificació"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "fahren      → er {{1}}\nessen       → er {{2}}\nlesen       → er {{3}}\nlaufen      → er {{4}}\nschlafen    → er {{5}}\nnehmen      → er {{6}}\nsehen       → er {{7}}\nsprechen    → er {{8}}",
+    "blanks": [
+      { "id": "1", "label": "_fahren_, 3a sg." },
+      { "id": "2", "label": "_essen_, 3a sg." },
+      { "id": "3", "label": "_lesen_, 3a sg." },
+      { "id": "4", "label": "_laufen_, 3a sg." },
+      { "id": "5", "label": "_schlafen_, 3a sg." },
+      { "id": "6", "label": "_nehmen_, 3a sg." },
+      { "id": "7", "label": "_sehen_, 3a sg." },
+      { "id": "8", "label": "_sprechen_, 3a sg." }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "forma _er_" },
+      { "blankId": "2", "placeholder": "forma _er_" },
+      { "blankId": "3", "placeholder": "forma _er_" },
+      { "blankId": "4", "placeholder": "forma _er_" },
+      { "blankId": "5", "placeholder": "forma _er_" },
+      { "blankId": "6", "placeholder": "forma _er_" },
+      { "blankId": "7", "placeholder": "forma _er_" },
+      { "blankId": "8", "placeholder": "forma _er_" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "fährt",
+      "2": "isst",
+      "3": "liest",
+      "4": "läuft",
+      "5": "schläft",
+      "6": "nimmt",
+      "7": "sieht",
+      "8": "spricht"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Felicitats. Tens el mapa clar: _a → ä_ (_fährt, schläft_), _e → i_ (_isst, nimmt, spricht_), _e → ie_ (_liest, sieht_), _au → äu_ (_läuft_). Aquestes són les formes més freqüents que trobaràs en textos reals."
+    },
+    "incorrect": {
+      "default": "Revisa les taules del tema. Els quatre tipus són: _a → ä_ (_fahren, schlafen_ → _fährt, schläft_); _e → i_ (_essen, nehmen, sprechen_ → _isst, nimmt, spricht_); _e → ie_ (_lesen, sehen_ → _liest, sieht_); _au → äu_ (_laufen_ → _läuft_)."
+    }
+  }
+}

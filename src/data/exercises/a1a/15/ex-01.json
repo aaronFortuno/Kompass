@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-15-ex-01",
+  "topicId": "A1a-15",
+  "title": "Vocal del canvi: a → ä i e → i",
+  "prompt": "Escriu la vocal que falta a cada buit. Pensa quin canvi vocàlic toca a cada verb (_a → ä_ amb _fahren, schlafen_; _e → i_ amb _essen, nehmen_).",
+  "difficulty": 1,
+  "tags": ["vokalwechsel", "präsens", "du", "er"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Du f{{1}}hrst nach München.\n2. Das Kind schl{{2}}ft.\n3. Er {{3}}sst ein Brot.\n4. Du n{{4}}mmst den Bus.",
+    "blanks": [
+      { "id": "1", "label": "_fahren_, 2a sg." },
+      { "id": "2", "label": "_schlafen_, 3a sg." },
+      { "id": "3", "label": "_essen_, 3a sg." },
+      { "id": "4", "label": "_nehmen_, 2a sg." }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "vocal" },
+      { "blankId": "2", "placeholder": "vocal" },
+      { "blankId": "3", "placeholder": "vocal" },
+      { "blankId": "4", "placeholder": "vocal" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "ä", "2": "ä", "3": "i", "4": "i" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has aplicat els dos canvis: _a → ä_ amb _fahren, schlafen_, i _e → i_ amb _essen, nehmen_. Recorda que aquests canvis només afecten _du_ i _er/sie/es_."
+    },
+    "incorrect": {
+      "default": "Revisa: (1) _fahren_ i _schlafen_ canvien _a → ä_ a _du_ i _er/sie/es_ (_du fährst, er schläft_); (2) _essen_ canvia _e → i_ (_er isst_); (3) _nehmen_ també (_du nimmst_, amb _h_ que cau i _m_ doblada)."
+    }
+  }
+}

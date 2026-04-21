@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-15",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 15,
+  "title": "Unregelmäßige Verben — Vokalwechsel im Präsens",
+  "shortTitle": "Vokalwechsel",
+  "description": "Els quatre patrons de canvi vocàlic del present alemany (a → ä, e → i, e → ie, au → äu) als verbs irregulars més freqüents de l'A1, aplicats exclusivament a du i er/sie/es.",
+  "axes": ["pronoms-verbs"],
+  "prerequisites": ["A1a-3"],
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Context i motivació\n\nAl tema **A1a-3** ja vas aprendre el patró regular del **Präsens**: agafes l'arrel d'un verb (_wohn-, komm-, lern-_) i hi afegeixes la terminació que toca a cada persona (_-e, -st, -t, -en_). Amb aquell patró ja pots conjugar centenars de verbs alemanys.\n\nAra bé, **l'alemany té un grupet de verbs que s'aparten de la regla**. Són els anomenats **==verbs irregulars amb canvi vocàlic==** (_unregelmäßige Verben mit Vokalwechsel_). No et preocupis: les terminacions segueixen sent exactament les mateixes que ja coneixes. L'única diferència és que, **a la 2a i 3a persona del singular** (_du_ i _er/sie/es_), **la vocal de l'arrel canvia**.\n\n> **ich fahre** (vaig, condueixo) → arrel regular _fahr-_\n> **du f==ä==hrst** (vas) → la _a_ es converteix en **_ä_**\n> **er f==ä==hrt** (va) → mateix canvi\n\nLa bona notícia: això no t'ha de sonar estrany. **El català i el castellà fan exactament el mateix**. Fixa't:\n\n> **tenir** → jo _tinc_, tu _tens_ (canvi _e → i_ i _e_!)\n> **poder** → jo _puc_, ell _pot_ (canvi _o → u_ i _o_!)\n> **tener** (cast.) → yo _tengo_, tú _t==ie==nes_ (canvi _e → ie_!)\n> **poder** (cast.) → yo _puedo_, él _p==ue==de_ (canvi _o → ue_!)\n\nLa idea és idèntica: l'arrel del verb canvia de vocal a algunes persones. L'única novetat és **quines persones** canvien (a l'alemany, només _du_ i _er/sie/es_) i **quins canvis** es donen.\n\nEn aquest tema aprendràs els **quatre tipus** de canvi vocàlic del present alemany:\n\n- **==a → ä==** (_fahren, schlafen_)\n- **==e → i==** (_essen, sprechen, nehmen_)\n- **==e → ie==** (_lesen, sehen_)\n- **==au → äu==** (_laufen_)\n\nAixò és tot. Ja saps conjugar verbs regulars; aquí només has de sumar-hi l'hàbit de canviar la vocal en dues persones concretes."
+        }
+      ]
+    },
+    {
+      "id": "same-endings",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Les terminacions no canvien\n\nAbans d'entrar als canvis vocàlics, fixa't bé en això, perquè és clau: **les sis terminacions del present són exactament les mateixes que vas aprendre al tema A1a-3**.\n\n- **ich** → arrel + **-e**\n- **du** → arrel + **-st**\n- **er / sie / es** → arrel + **-t**\n- **wir** → arrel + **-en**\n- **ihr** → arrel + **-t**\n- **sie / Sie** → arrel + **-en**\n\nEl que canvia no és la terminació, és **la vocal de l'arrel**. I només canvia a **dues persones**: _du_ i _er/sie/es_. La resta (_ich, wir, ihr, sie/Sie_) manté la vocal original, com si el verb fos regular."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Regla pràctica",
+          "body": "Per conjugar un verb irregular: (1) parteixes de la forma regular, (2) canvies la vocal de l'arrel a _du_ i _er/sie/es_, (3) afegeixes la terminació de sempre."
+        },
+        {
+          "type": "explanation",
+          "body": "Un apunt important: **aquests canvis no es poden endevinar mirant l'infinitiu**. _fahren_ té _a_ i canvia; _machen_ també té _a_ i **no** canvia. Has d'aprendre a poc a poc quins verbs pertanyen al grup dels irregulars. Al diccionari (o a apps com DWDS) hi apareixen marcats amb les formes _du_ i _er_ entre parèntesis. En aquest tema veuràs els més freqüents de l'A1."
+        }
+      ]
+    },
+    {
+      "id": "a-to-ae",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Canvi vocàlic **a → ä**\n\nEl primer tipus és el més visual: la **_a_** de l'arrel agafa un _Umlaut_ i es converteix en **==ä==** a _du_ i _er/sie/es_. Mirem **_fahren_** (anar en vehicle, conduir):\n\n> **ich f==a==hre** (vaig / condueixo)\n> **du f==ä==hrst** *(a → ä)*\n> **er/sie/es f==ä==hrt** *(a → ä)*\n> **wir f==a==hren**\n> **ihr f==a==hrt**\n> **sie / Sie f==a==hren**\n\nI ara **_schlafen_** (dormir), que segueix el mateix patró:\n\n> **ich schl==a==fe** (dormo)\n> **du schl==ä==fst** *(a → ä)*\n> **er/sie/es schl==ä==ft** *(a → ä)*\n> **wir schl==a==fen**\n> **ihr schl==a==ft**\n> **sie / Sie schl==a==fen**\n\n> **Ich fahre nach Berlin.** (Vaig a Berlín.)\n> **Der Zug fährt um acht Uhr.** (El tren surt a les vuit.)\n> **Das Kind schläft tief.** (El nen dorm profundament.)\n\nAltres verbs freqüents del grup _a → ä_: _tragen_ (portar, dur) → _du trägst, er trägt_; _waschen_ (rentar) → _du wäschst, er wäscht_."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Recorda",
+          "body": "L'_Umlaut_ (_ä_) **no és opcional** ni és una decoració: si escrius _du fahrst_ en lloc de _du fährst_, és un error gramatical. Si no tens el teclat configurat, pots escriure _ae_ en comptes de _ä_ (_du faehrst_), però la _ä_ és sempre preferible."
+        }
+      ]
+    },
+    {
+      "id": "e-to-i",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Canvi vocàlic **e → i**\n\nEl segon tipus és el més freqüent a l'A1. La **_e_** de l'arrel es converteix en **==i==** a _du_ i _er/sie/es_. Ja en vas veure un exemple al tema A1a-3: **_sprechen_** (parlar) → _du sprichst, er spricht_. Ara l'ampliem.\n\nMirem **_essen_** (menjar):\n\n> **ich ==e==sse** (menjo)\n> **du ==i==sst** *(e → i)*\n> **er/sie/es ==i==sst** *(e → i)*\n> **wir ==e==ssen**\n> **ihr ==e==sst**\n> **sie / Sie ==e==ssen**\n\nFixa't que _du isst_ i _er isst_ **són idèntics**. Això passa perquè l'arrel _ess-_ acaba en _-ss_, i llavors s'aplica la regla ortogràfica que ja coneixes del tema A1a-3: quan l'arrel acaba en _-s, -ss, -ß, -z_, la forma _du_ només porta **_-t_** en comptes de _-st_. Resultat: _du isst_ = _er isst_.\n\nAra **_nehmen_** (agafar, prendre), que té una petita sorpresa ortogràfica:\n\n> **ich n==e==hme** (agafo)\n> **du n==i==mmst** *(e → i, i a més la -h- cau i la -m- es dobla)*\n> **er/sie/es n==i==mmt** *(mateixa cosa)*\n> **wir n==e==hmen**\n> **ihr n==e==hmt**\n> **sie / Sie n==e==hmen**\n\n> **Ich esse einen Apfel.** (Menjo una poma.)\n> **Was isst du zum Frühstück?** (Què menges per esmorzar?)\n> **Er nimmt den Bus.** (Agafa l'autobús.)\n\nAltres verbs del grup _e → i_: _geben_ (donar) → _du gibst, er gibt_; _helfen_ (ajudar) → _du hilfst, er hilft_; _treffen_ (trobar-se amb) → _du triffst, er trifft_; _sprechen_ (parlar) → _du sprichst, er spricht_."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Contrast amb el català",
+          "body": "Aquest canvi _e → i_ és clavat al que fem amb **\"venir\"**: jo _vinc_ ve d'una arrel amb _i_, però _venim_, _veniu_ mantenen la _e_. En alemany passa el mateix però invertit: el canvi només toca _du_ i _er/sie/es_; _wir_ i _ihr_ mantenen la _e_ original (_wir essen, ihr esst_)."
+        }
+      ]
+    },
+    {
+      "id": "check-a-and-e",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-15-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "e-to-ie",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Canvi vocàlic **e → ie**\n\nEl tercer tipus és germà del segon, però la **_e_** no es converteix en _i_ curta sinó en **==ie==** (que sona com una _i_ llarga, tancada). Mirem **_lesen_** (llegir):\n\n> **ich l==e==se** (llegeixo)\n> **du l==ie==st** *(e → ie; i com que l'arrel acaba en -s, la forma du només porta -t)*\n> **er/sie/es l==ie==st** *(e → ie)*\n> **wir l==e==sen**\n> **ihr l==e==st**\n> **sie / Sie l==e==sen**\n\nFixa't que, com ja passava amb _essen_, aquí _du_ i _er_ també són idèntics (_du liest = er liest_): arrel _les-_ acabada en _-s_, per tant _du_ només porta _-t_.\n\nI ara **_sehen_** (veure):\n\n> **ich s==e==he** (veig)\n> **du s==ie==hst** *(e → ie)*\n> **er/sie/es s==ie==ht** *(e → ie)*\n> **wir s==e==hen**\n> **ihr s==e==ht**\n> **sie / Sie s==e==hen**\n\n> **Ich lese ein Buch.** (Llegeixo un llibre.)\n> **Was liest du?** (Què llegeixes?)\n> **Er sieht einen Film.** (Mira una pel·lícula.)"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Com distingir e → i de e → ie?",
+          "body": "No hi ha cap regla per deduir-ho a priori; cal aprendre-ho verb a verb. Pistes útils: si l'arrel té **una consonant sola** darrere de la _e_ (_les-, seh-_), el canvi sol ser _e → ie_ (llarga). Si la consonant és **doble** (_ess-, sprech-, nehm-_), el canvi sol ser _e → i_ (curta). No és infal·lible, però ajuda."
+        }
+      ]
+    },
+    {
+      "id": "au-to-aeu",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Canvi vocàlic **au → äu**\n\nEl quart tipus és el més rar, però hi ha un verb de l'A1 que el segueix: **_laufen_** (córrer, caminar ràpid). El diftong **_au_** es converteix en **==äu==** a _du_ i _er/sie/es_:\n\n> **ich l==au==fe** (corro)\n> **du l==äu==fst** *(au → äu)*\n> **er/sie/es l==äu==ft** *(au → äu)*\n> **wir l==au==fen**\n> **ihr l==au==ft**\n> **sie / Sie l==au==fen**\n\n> **Ich laufe jeden Morgen.** (Corro cada matí.)\n> **Sie läuft sehr schnell.** (Ella corre molt de pressa.)\n\nL'altre verb freqüent d'aquest grup és _saufen_ (beure, típicament per a animals, o informalment en contextos molt col·loquials), que no forma part de l'A1. A efectes pràctics, retén **_laufen_** i ja saps el patró _au → äu_."
+        }
+      ]
+    },
+    {
+      "id": "check-all-types",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-15-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals\n\n**1. Aplicar el canvi vocàlic a persones que no toca.**\nL'error més freqüent: canviar la vocal a _ich_, _wir_ o _ihr_. **No**. Només _du_ i _er/sie/es_ canvien.\n\n> Incorrecte: **Ich ==i==sse einen Apfel** / **Wir spr==i==chen Deutsch**.\n> Correcte: **Ich ==e==sse einen Apfel** / **Wir spr==e==chen Deutsch**.\n\n**2. Oblidar el canvi vocàlic a _du_ o _er/sie/es_.**\nEl mirall de l'error anterior: tractar el verb com si fos regular.\n\n> Incorrecte: **Du fahrst nach Berlin** / **Er lesst ein Buch**.\n> Correcte: **Du f==ä==hrst nach Berlin** / **Er l==ie==st ein Buch**.\n\n**3. Confondre _e → i_ amb _e → ie_.**\nSón fàcils de barrejar. Pista aproximada: consonant doble a l'arrel → _i_ curta (_isst, spricht, nimmt_); consonant simple → _ie_ llarga (_liest, sieht_).\n\n> Incorrecte: **Er liesst ein Buch** / **Du issest einen Apfel**.\n> Correcte: **Er liest ein Buch** / **Du isst einen Apfel**.\n\n**4. Oblidar la particularitat de _nehmen_.**\n_nehmen_ canvia _e → i_, però a més **la _-h-_ cau i la _-m-_ es dobla** a _du_ i _er/sie/es_:\n\n> Incorrecte: **Du nehmst den Bus** / **Er niht den Bus**.\n> Correcte: **Du n==i==mmst den Bus** / **Er n==i==mmt den Bus**.\n\n**5. Posar la terminació _-st_ sencera a _essen_ i _lesen_.**\nLes arrels _ess-_ i _les-_ acaben en _-ss_ i _-s_, respectivament. Per tant, a _du_ només s'afegeix **_-t_** (no _-st_), seguint la regla ortogràfica del tema A1a-3:\n\n> Incorrecte: **Du isstst einen Apfel** / **Du liesst ein Buch**.\n> Correcte: **Du isst einen Apfel** / **Du liest ein Buch**.\n\nResultat pràctic: _du isst = er isst_, i _du liest = er liest_.\n\n**6. Aplicar el canvi al tracte formal _Sie_.**\nRecorda que _Sie_ (cortesia) porta sempre la terminació _-en_ de l'infinitiu i **no** canvia la vocal, encara que el verb sigui irregular.\n\n> Incorrecte: **Sprichen Sie Deutsch?** / **Fähren Sie nach Berlin?**\n> Correcte: **Sprechen Sie Deutsch?** / **Fahren Sie nach Berlin?**\n\n**7. Escriure _ae_ quan es pot escriure _ä_.**\nSi tens teclat alemany configurat (o et saps les dreceres del teu sistema), escriu sempre _ä_ / _ö_ / _ü_. _ae, oe, ue_ són substituts acceptables quan no tens més remei (formularis antics, noms de domini), però a l'escriptura normal es considera poc acurat."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-15-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-15-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-15-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-15-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Recapitulem\n\nEn aquesta lliçó hem afegit una capa nova al que ja sabies del **Präsens regular** (A1a-3): un **grup de verbs freqüents** que, **només a _du_ i _er/sie/es_**, canvien la vocal de l'arrel. Les terminacions segueixen sent les de sempre; l'única novetat és la vocal.\n\nLes idees clau:\n\n1. ==**El canvi vocàlic només afecta _du_ i _er/sie/es_.**== A _ich, wir, ihr, sie/Sie_ el verb es comporta com un regular.\n2. Hi ha **quatre patrons**: _a → ä_ (_fahren, schlafen, tragen, waschen_), _e → i_ (_essen, nehmen, sprechen, geben, helfen, treffen_), _e → ie_ (_lesen, sehen_) i _au → äu_ (_laufen_).\n3. Dues regles ortogràfiques del tema A1a-3 segueixen vigents: (a) arrels acabades en _-s, -ss, -ß, -z_ fan _du_ només amb _-t_ (_du isst, du liest_); (b) _nehmen_ afegeix la seva pròpia sorpresa (_nimmst, nimmt_, amb _h_ que cau i _m_ doblada).\n4. **Els canvis vocàlics no es poden endevinar a partir de l'infinitiu.** S'han d'aprendre verb a verb, com passa amb el gènere dels substantius. Al diccionari, les formes irregulars apareixen entre parèntesis.\n5. El tracte formal _Sie_ **mai** canvia la vocal: _Sprechen Sie Deutsch?_, no _*Sprichen Sie_."
+        },
+        {
+          "type": "table",
+          "title": "15.1 Els quatre patrons de canvi vocàlic",
+          "headers": ["Patró", "Canvi", "Verb model", "du", "er/sie/es"],
+          "rows": [
+            ["①", "a → ä", "fahren", "du f**ä**hrst", "er f**ä**hrt"],
+            ["②", "e → i", "essen", "du **i**sst", "er **i**sst"],
+            ["③", "e → ie", "lesen", "du l**ie**st", "er l**ie**st"],
+            ["④", "au → äu", "laufen", "du l**äu**fst", "er l**äu**ft"]
+          ],
+          "caption": "El canvi només afecta du i er/sie/es. La resta de persones manté la vocal de l'infinitiu."
+        },
+        {
+          "type": "table",
+          "title": "15.2 Conjugació dels verbs treballats",
+          "headers": ["Infinitiu", "ich", "du", "er/sie/es", "wir", "ihr", "sie/Sie"],
+          "rows": [
+            ["fahren (a → ä)", "fahre", "f**ä**hrst", "f**ä**hrt", "fahren", "fahrt", "fahren"],
+            ["schlafen (a → ä)", "schlafe", "schl**ä**fst", "schl**ä**ft", "schlafen", "schlaft", "schlafen"],
+            ["essen (e → i)", "esse", "**i**sst", "**i**sst", "essen", "esst", "essen"],
+            ["nehmen (e → i)", "nehme", "n**i**mmst", "n**i**mmt", "nehmen", "nehmt", "nehmen"],
+            ["sprechen (e → i)", "spreche", "spr**i**chst", "spr**i**cht", "sprechen", "sprecht", "sprechen"],
+            ["lesen (e → ie)", "lese", "l**ie**st", "l**ie**st", "lesen", "lest", "lesen"],
+            ["sehen (e → ie)", "sehe", "s**ie**hst", "s**ie**ht", "sehen", "seht", "sehen"],
+            ["laufen (au → äu)", "laufe", "l**äu**fst", "l**äu**ft", "laufen", "lauft", "laufen"]
+          ],
+          "caption": "Observa com du i er/sie/es són les úniques columnes amb vocal modificada."
+        }
+      ]
+    }
+  ]
+}

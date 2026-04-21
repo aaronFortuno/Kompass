@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-15-ex-02",
+  "topicId": "A1a-15",
+  "title": "Els quatre canvis vocàlics de cop",
+  "prompt": "Escriu la vocal o diftong que falta. Un verb per cada tipus de canvi: _a → ä_, _e → i_, _e → ie_, _au → äu_.",
+  "difficulty": 1,
+  "tags": ["vokalwechsel", "präsens", "tots-els-tipus"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Anna schl{{1}}ft um zehn Uhr.\n2. Du spr{{2}}chst gut Deutsch.\n3. Er l{{3}}st die Zeitung.\n4. Das Kind l{{4}}ft im Park.",
+    "blanks": [
+      { "id": "1", "label": "_schlafen_, 3a sg. (a → ä)" },
+      { "id": "2", "label": "_sprechen_, 2a sg. (e → i)" },
+      { "id": "3", "label": "_lesen_, 3a sg. (e → ie)" },
+      { "id": "4", "label": "_laufen_, 3a sg. (au → äu)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "vocal o diftong" },
+      { "blankId": "2", "placeholder": "vocal o diftong" },
+      { "blankId": "3", "placeholder": "vocal o diftong" },
+      { "blankId": "4", "placeholder": "vocal o diftong" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "ä", "2": "i", "3": "ie", "4": "äu" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Ja distingeixes els quatre canvis vocàlics del present: _a → ä_ (_schläft_), _e → i_ (_sprichst_), _e → ie_ (_liest_) i _au → äu_ (_läuft_)."
+    },
+    "incorrect": {
+      "default": "Recorda els quatre patrons: _schlafen → schläft_ (_a → ä_); _sprechen → sprichst_ (_e → i_, curta); _lesen → liest_ (_e → ie_, llarga); _laufen → läuft_ (_au → äu_). Només afecten _du_ i _er/sie/es_."
+    }
+  }
+}
