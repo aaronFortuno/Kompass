@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-11-ex-05",
+  "topicId": "A1b-11",
+  "title": "Tradueix la frase de comparació a l'alemany",
+  "prompt": "Tradueix cada frase catalana a l'alemany utilitzant l'estructura de comparació adequada. Escriu la frase sencera.",
+  "difficulty": 3,
+  "tags": ["produccio", "traduccio", "comparacio", "sintesi"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) \"L'Anna és més jove que el Tom.\" _(Anna, Tom, jung)_ → {{1}}\nb) \"El cafè és tan bo com el te.\" _(Kaffee, Tee, gut)_ → {{2}}\nc) \"A l'hivern fa més fred que a la tardor.\" _(Winter, Herbst, kalt)_ → {{3}}\nd) \"El meu avi és el més vell de la família.\" _(mein Opa, die Familie, alt)_ → {{4}}\ne) \"Bec més aigua que llet.\" _(ich, Wasser, Milch, trinken)_ → {{5}}\nf) \"M'agrada més el te.\" _(ich, Tee, gern)_ → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "komparativ + als" },
+      { "id": "2", "label": "so gut wie" },
+      { "id": "3", "label": "komparativ d'hivern" },
+      { "id": "4", "label": "superlatiu (am ältesten)" },
+      { "id": "5", "label": "mehr + als" },
+      { "id": "6", "label": "lieber (komparativ de gern)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Anna ist jünger als Tom." },
+      { "blankId": "2", "placeholder": "Kaffee ist so gut wie Tee." },
+      { "blankId": "3", "placeholder": "Im Winter ist es kälter als im Herbst." },
+      { "blankId": "4", "placeholder": "Mein Opa ist am ältesten in der Familie." },
+      { "blankId": "5", "placeholder": "Ich trinke mehr Wasser als Milch." },
+      { "blankId": "6", "placeholder": "Ich trinke lieber Tee." }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": [
+        "Anna ist jünger als Tom.",
+        "Anna ist jünger als Tom",
+        "Anna ist juenger als Tom.",
+        "Anna ist juenger als Tom"
+      ],
+      "2": [
+        "Kaffee ist so gut wie Tee.",
+        "Kaffee ist so gut wie Tee",
+        "Der Kaffee ist so gut wie der Tee.",
+        "Der Kaffee ist so gut wie der Tee"
+      ],
+      "3": [
+        "Im Winter ist es kälter als im Herbst.",
+        "Im Winter ist es kälter als im Herbst",
+        "Im Winter ist es kaelter als im Herbst.",
+        "Im Winter ist es kaelter als im Herbst",
+        "Der Winter ist kälter als der Herbst.",
+        "Der Winter ist kälter als der Herbst",
+        "Der Winter ist kaelter als der Herbst.",
+        "Der Winter ist kaelter als der Herbst"
+      ],
+      "4": [
+        "Mein Opa ist am ältesten in der Familie.",
+        "Mein Opa ist am ältesten in der Familie",
+        "Mein Opa ist am aeltesten in der Familie.",
+        "Mein Opa ist am aeltesten in der Familie",
+        "Mein Opa ist der älteste in der Familie.",
+        "Mein Opa ist der älteste in der Familie",
+        "In der Familie ist mein Opa am ältesten.",
+        "In der Familie ist mein Opa am ältesten"
+      ],
+      "5": [
+        "Ich trinke mehr Wasser als Milch.",
+        "Ich trinke mehr Wasser als Milch"
+      ],
+      "6": [
+        "Ich trinke lieber Tee.",
+        "Ich trinke lieber Tee",
+        "Lieber trinke ich Tee.",
+        "Lieber trinke ich Tee",
+        "Tee trinke ich lieber.",
+        "Tee trinke ich lieber"
+      ]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has combinat les tres estructures (_als_, _so … wie_, _am …sten_) amb els irregulars (_mehr_, _lieber_) i els casos especials (_jünger_, _kälter_, _älter_ amb Umlaut). Aquesta és la síntesi completa del tema.",
+      "references": ["A1b-11", "A1a-17", "A1a-31"]
+    },
+    "incorrect": {
+      "default": "Revisa cada frase:\n\na) _Anna ist **jünger als** Tom._ (Umlaut al komparativ)\nb) _Kaffee ist **so gut wie** Tee._ (igualtat, positiu)\nc) _Im Winter ist es **kälter als** im Herbst._ (Umlaut + komparativ)\nd) _Mein Opa ist **am ältesten** in der Familie._ (superlatiu: Umlaut + _-e-_)\ne) _Ich trinke **mehr** Wasser **als** Milch._ (irregular _viel → mehr_)\nf) _Ich trinke **lieber** Tee._ (irregular _gern → lieber_)\n\nRecorda que _jung_, _alt_, _kalt_ prenen Umlaut al komparativ, que _alt_ també insereix _-e-_ al superlatiu (_am ältesten_), i que _viel_ i _gern_ són irregulars purs (_mehr_, _lieber_).",
+      "byResponse": [
+        {
+          "match": { "5": "Ich trinke viel Wasser als Milch." },
+          "message": "_viel_ és irregular: el komparativ és _**mehr**_, no _vieler_. _Ich trinke **mehr** Wasser **als** Milch._",
+          "references": ["A1b-11"]
+        },
+        {
+          "match": { "6": "Ich trinke gerner Tee." },
+          "message": "_gern_ és irregular: no fa _\\*gerner_ sinó _**lieber**_. _Ich trinke **lieber** Tee._",
+          "references": ["A1b-11"]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-11-ex-01",
+  "topicId": "A1b-11",
+  "title": "Taula mixta de Komparativ i Superlativ",
+  "prompt": "Completa la taula amb la forma correcta del komparativ o del superlatiu. Els adjectius barregen regulars, Umlaut, -t/-d/-z i irregulars.",
+  "difficulty": 2,
+  "tags": ["komparativ", "superlativ", "regular", "umlaut", "irregular"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) _schnell_ → komparativ: {{1}} — superlatiu: _am_ {{2}}\nb) _alt_ → komparativ: {{3}} — superlatiu: _am_ {{4}}\nc) _lang_ → komparativ: {{5}} — superlatiu: _am_ {{6}}\nd) _gut_ → komparativ: {{7}} — superlatiu: _am_ {{8}}\ne) _groß_ → komparativ: {{9}} — superlatiu: _am_ {{10}}",
+    "blanks": [
+      { "id": "1", "label": "komparativ de schnell" },
+      { "id": "2", "label": "superlatiu (…sten)" },
+      { "id": "3", "label": "komparativ d'alt" },
+      { "id": "4", "label": "superlatiu (…sten)" },
+      { "id": "5", "label": "komparativ de lang" },
+      { "id": "6", "label": "superlatiu (…sten)" },
+      { "id": "7", "label": "komparativ de gut" },
+      { "id": "8", "label": "superlatiu (…sten)" },
+      { "id": "9", "label": "komparativ de groß" },
+      { "id": "10", "label": "superlatiu (…sten)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "…er" },
+      { "blankId": "2", "placeholder": "…sten" },
+      { "blankId": "3", "placeholder": "…er" },
+      { "blankId": "4", "placeholder": "…sten" },
+      { "blankId": "5", "placeholder": "…er" },
+      { "blankId": "6", "placeholder": "…sten" },
+      { "blankId": "7", "placeholder": "irregular" },
+      { "blankId": "8", "placeholder": "irregular" },
+      { "blankId": "9", "placeholder": "…er" },
+      { "blankId": "10", "placeholder": "…ten" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["schneller"],
+      "2": ["schnellsten"],
+      "3": ["älter"],
+      "4": ["ältesten"],
+      "5": ["länger"],
+      "6": ["längsten"],
+      "7": ["besser"],
+      "8": ["besten"],
+      "9": ["größer", "groesser"],
+      "10": ["größten", "groessten"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has combinat la regla regular (_schneller_), els dos efectes de l'Umlaut + _-e-_ (_älter / am ältesten_), només Umlaut (_länger / am längsten_), l'irregular pur (_gut → besser → am besten_) i el cas especial de _groß_ sense _-s-_ (_am größten_).",
+      "references": ["A1b-11", "A1a-31"]
+    },
+    "incorrect": {
+      "default": "Revisa cada forma: _schnell_ és regular (_schneller / am schnellsten_); _alt_ combina Umlaut i _-e-_ (_älter / am ältesten_); _lang_ només Umlaut (_länger / am längsten_); _gut_ és irregular pur (_besser / am besten_); _groß_ fa superlatiu sense _-s-_ (_am größten_, no _am größsten_).",
+      "byResponse": [
+        {
+          "match": { "8": "gutsten" },
+          "message": "_gut_ és irregular: no fa _\\*gutsten_ sinó _am **besten**_. Memoritza el tripletes _gut → besser → am besten_.",
+          "references": ["A1b-11"]
+        },
+        {
+          "match": { "10": "größsten" },
+          "message": "_groß_ és l'únic adjectiu que perd la _-s-_ al superlatiu: _am **größten**_, no _\\*am größsten_.",
+          "references": ["A1b-11"]
+        },
+        {
+          "match": { "4": "altsten" },
+          "message": "_alt_ pren Umlaut **i** _-e-_ intermèdia: _am **ältesten**_, no _\\*altsten_.",
+          "references": ["A1b-11"]
+        }
+      ]
+    }
+  }
+}

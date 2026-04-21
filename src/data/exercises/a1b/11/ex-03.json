@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-11-ex-03",
+  "topicId": "A1b-11",
+  "title": "Tria l'estructura de comparació correcta",
+  "prompt": "Llegeix el context i tria la forma que completa la comparació (positiu + _wie_, komparativ + _als_, o superlatiu amb _am …sten_).",
+  "difficulty": 2,
+  "tags": ["comparacio", "als", "wie", "am-sten", "sintaxi"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) _Berlin hat 3,7 Millionen Einwohner, München 1,5 Millionen. → Berlin ist_ {{1}} _München._\nb) _Anna ist 1,70 m. Ihre Freundin Lisa ist auch 1,70 m. → Anna ist_ {{2}} _Lisa._\nc) _Der Mount Everest ist 8 849 m. Kein anderer Berg ist höher. → Der Mount Everest ist_ {{3}} _der Welt._\nd) _Ein Ferrari kostet 300 000 €, ein Fiat 15 000 €. → Der Ferrari ist viel_ {{4}} _der Fiat._\ne) _Im Sommer sind es 30°, im Winter −5°. → Der Winter ist_ {{5}} _der Sommer._\nf) _Deutsch hat 5 Millionen Wörter im Wortschatz, Katalanisch ungefähr gleich viel. → Deutsch ist_ {{6}} _Katalanisch._\ng) _Mein Vater isst gern Pizza, aber noch mehr mag er Pasta. Am meisten liebt er Sushi. → Sushi isst er_ {{7}} .\nh) _Der Januar hat 31 Tage, der Februar 28. Der Januar ist länger. → Der Februar ist_ {{8}} _der Januar._",
+    "blanks": [
+      { "id": "1", "label": "comparació superioritat" },
+      { "id": "2", "label": "comparació igualtat" },
+      { "id": "3", "label": "superlatiu absolut" },
+      { "id": "4", "label": "comparació superioritat" },
+      { "id": "5", "label": "comparació superioritat (kalt)" },
+      { "id": "6", "label": "comparació igualtat" },
+      { "id": "7", "label": "superlatiu (gern)" },
+      { "id": "8", "label": "comparació (curt)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["so groß wie", "größer als", "am größten"] },
+      { "blankId": "2", "options": ["so groß wie", "größer als", "am größten"] },
+      { "blankId": "3", "options": ["so hoch wie", "höher als", "am höchsten"] },
+      { "blankId": "4", "options": ["so teuer wie", "teurer als", "am teuersten"] },
+      { "blankId": "5", "options": ["so kalt wie", "kälter als", "am kältesten"] },
+      { "blankId": "6", "options": ["so reich wie", "reicher als", "am reichsten"] },
+      { "blankId": "7", "options": ["so gern wie alle", "lieber als alle", "am liebsten"] },
+      { "blankId": "8", "options": ["so kurz wie", "kürzer als", "am kürzesten"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "größer als",
+      "2": "so groß wie",
+      "3": "am höchsten",
+      "4": "teurer als",
+      "5": "kälter als",
+      "6": "so reich wie",
+      "7": "am liebsten",
+      "8": "kürzer als"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has aplicat correctament les tres estructures: _so … wie_ per a igualtat (frases b i f), komparativ + _als_ per a superioritat (a, d, e, h) i _am …sten_ per al màxim (c, g).",
+      "references": ["A1b-11"]
+    },
+    "incorrect": {
+      "default": "Recorda: **igualtat** → _so_ + positiu + _wie_; **superioritat** → komparativ + _als_; **màxim absolut** → _am_ + _…sten_. El context (\"kein anderer…\", \"viel…\", \"gleich viel\") indica quina relació s'expressa.",
+      "byResponse": [
+        {
+          "match": { "1": "so groß wie" },
+          "message": "Berlin té més població que München, per tant és **superioritat**: _größer **als**_, no _so groß wie_.",
+          "references": ["A1b-11"]
+        },
+        {
+          "match": { "3": "höher als" },
+          "message": "\"Kein anderer Berg ist höher\" indica que és el **màxim absolut**: _am höchsten_, no _höher als_ (que necessitaria un segon terme de comparació).",
+          "references": ["A1b-11"]
+        },
+        {
+          "match": { "6": "reicher als" },
+          "message": "\"Ungefähr gleich viel\" indica **igualtat**: _so reich **wie**_, no _reicher als_.",
+          "references": ["A1b-11"]
+        },
+        {
+          "match": { "7": "lieber als alle" },
+          "message": "\"Am meisten\" indica màxim absolut amb _gern_: la forma és _am **liebsten**_, no _lieber als alle_.",
+          "references": ["A1b-11"]
+        }
+      ]
+    }
+  }
+}

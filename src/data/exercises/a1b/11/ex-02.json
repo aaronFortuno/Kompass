@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-11-ex-02",
+  "topicId": "A1b-11",
+  "title": "Classifica cada adjectiu per categoria",
+  "prompt": "Per a cada adjectiu, tria a quina categoria pertany segons el seu patró de comparació.",
+  "difficulty": 2,
+  "tags": ["komparativ", "superlativ", "categoria", "classificacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) _schnell_ → {{schnell}}\nb) _lang_ → {{lang}}\nc) _alt_ → {{alt}}\nd) _teuer_ → {{teuer}}\ne) _hoch_ → {{hoch}}\nf) _groß_ → {{gross}}\ng) _gut_ → {{gut}}\nh) _viel_ → {{viel}}",
+    "blanks": [
+      { "id": "schnell", "label": "categoria de schnell" },
+      { "id": "lang", "label": "categoria de lang" },
+      { "id": "alt", "label": "categoria d'alt" },
+      { "id": "teuer", "label": "categoria de teuer" },
+      { "id": "hoch", "label": "categoria de hoch" },
+      { "id": "gross", "label": "categoria de groß" },
+      { "id": "gut", "label": "categoria de gut" },
+      { "id": "viel", "label": "categoria de viel" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "schnell",
+        "options": ["Regular", "Umlaut", "+ -e- al superlatiu", "Pèrdua de lletra", "Sense -s- (groß)", "Irregular"]
+      },
+      {
+        "blankId": "lang",
+        "options": ["Regular", "Umlaut", "+ -e- al superlatiu", "Pèrdua de lletra", "Sense -s- (groß)", "Irregular"]
+      },
+      {
+        "blankId": "alt",
+        "options": ["Regular", "Umlaut", "+ -e- al superlatiu", "Pèrdua de lletra", "Sense -s- (groß)", "Irregular"]
+      },
+      {
+        "blankId": "teuer",
+        "options": ["Regular", "Umlaut", "+ -e- al superlatiu", "Pèrdua de lletra", "Sense -s- (groß)", "Irregular"]
+      },
+      {
+        "blankId": "hoch",
+        "options": ["Regular", "Umlaut", "+ -e- al superlatiu", "Pèrdua de lletra", "Sense -s- (groß)", "Irregular"]
+      },
+      {
+        "blankId": "gross",
+        "options": ["Regular", "Umlaut", "+ -e- al superlatiu", "Pèrdua de lletra", "Sense -s- (groß)", "Irregular"]
+      },
+      {
+        "blankId": "gut",
+        "options": ["Regular", "Umlaut", "+ -e- al superlatiu", "Pèrdua de lletra", "Sense -s- (groß)", "Irregular"]
+      },
+      {
+        "blankId": "viel",
+        "options": ["Regular", "Umlaut", "+ -e- al superlatiu", "Pèrdua de lletra", "Sense -s- (groß)", "Irregular"]
+      }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "schnell": "Regular",
+      "lang": "Umlaut",
+      "alt": "+ -e- al superlatiu",
+      "teuer": "Pèrdua de lletra",
+      "hoch": "Pèrdua de lletra",
+      "gross": "Sense -s- (groß)",
+      "gut": "Irregular",
+      "viel": "Irregular"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has identificat cada patró: _schnell_ (regular), _lang_ (Umlaut), _alt_ (Umlaut + _-e-_ → classificat com a _-e-_), _teuer_ i _hoch_ (pèrdua de lletra), _groß_ (cas únic), _gut_ i _viel_ (irregulars purs).",
+      "references": ["A1b-11"]
+    },
+    "incorrect": {
+      "default": "Repassa la taula 11.3. Pista: _alt → älter → am ält**e**sten_ combina Umlaut i _-e-_, però el tret distintiu és la _-e-_ intermèdia al superlatiu (que apareix sempre amb terminacions -t/-d/-z). _teuer_ perd la _-e-_ (_teurer_) i _hoch_ perd la _-c-_ (_höher_): totes dues són pèrdua de lletra. _gut_ i _viel_ tenen formes sense cap relació amb el positiu, són irregulars purs.",
+      "byResponse": [
+        {
+          "match": { "gross": "Regular" },
+          "message": "_groß_ no és regular: el superlatiu és _am größ**t**en_, **sense la _-s-_**. És el cas únic.",
+          "references": ["A1b-11"]
+        },
+        {
+          "match": { "hoch": "Umlaut" },
+          "message": "_hoch_ sí que pren Umlaut (_höher_), però el tret que el fa especial és la **pèrdua de la _-c-_** al komparativ (_höher_, no _\\*hocher_).",
+          "references": ["A1b-11"]
+        },
+        {
+          "match": { "gut": "Regular" },
+          "message": "_gut_ no és regular: komparativ _besser_, superlatiu _am besten_. No hi ha cap relació amb _gut_. És irregular pur.",
+          "references": ["A1b-11"]
+        }
+      ]
+    }
+  }
+}

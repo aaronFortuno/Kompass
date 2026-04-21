@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-11",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 11,
+  "title": "Wiederholung: Komparativ und Superlativ",
+  "shortTitle": "Komparativ II",
+  "description": "Repàs consolidat del comparatiu i el superlatiu de l'adjectiu: regla bàsica, casos especials (Umlaut, -t/-d/-z, pèrdua de lletres, irregulars) i les tres estructures de comparació.",
+  "axes": ["expressions-i-funcions"],
+  "prerequisites": ["A1a-17", "A1a-31"],
+  "estimatedMinutes": 15,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Tornem al comparatiu i al superlatiu\n\nJa vas veure a **A1a-17** (adjectius descriptius) i a **A1a-31** (graus de l'adjectiu) que l'alemany té **tres formes** per graduar un adjectiu: la forma base (==Positiv==), la comparativa (==Komparativ==) i la superlativa (==Superlativ==). Aquesta lliçó és un repàs condensat de tota la maquinària, amb èmfasi en els casos especials que costen de recordar i en les tres estructures de comparació.\n\nL'objectiu és que, en acabar, puguis dir amb fluïdesa _Nico ist schneller als Tarek_, _Tarek ist am langsamsten_ o _Berlin ist so groß wie München_ sense dubtar de la forma correcta."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Què repassem",
+          "body": "1. La **regla bàsica**: _-er_ per al comparatiu, _am …sten_ per al superlatiu.\n2. Les **tres estructures de comparació**: _so … wie_ (igualtat), _… er als_ (superioritat), _am …sten_ (màxim).\n3. Els **casos especials**: Umlaut, _-t/-d/-z_ amb _-e-_ intermèdia, pèrdua de lletres, _groß_ sense _-s-_, i els **irregulars** (_gut, gern, viel_)."
+        }
+      ]
+    },
+    {
+      "id": "regla-basica",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Regla bàsica: el cas regular\n\nLa gran majoria d'adjectius segueixen una regla molt simple: afegir ==_-er_== per al comparatiu i ==_am …sten_== per al superlatiu. Sense tocar l'arrel, sense canvis vocàlics, sense sorpreses."
+        },
+        {
+          "type": "table",
+          "title": "11.1 Les tres formes (regulars)",
+          "headers": ["Positiv", "Komparativ", "Superlativ"],
+          "rows": [
+            ["_schnell_ (ràpid)", "_schnell**er**_", "_**am** schnell**sten**_"],
+            ["_wichtig_ (important)", "_wichtig**er**_", "_**am** wichtig**sten**_"],
+            ["_langsam_ (lent)", "_langsam**er**_", "_**am** langsam**sten**_"],
+            ["_billig_ (barat)", "_billig**er**_", "_**am** billig**sten**_"],
+            ["_interessant_ (interessant)", "_interessant**er**_", "_**am** interessant**esten**_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Memorització ràpida",
+          "body": "**Komparativ** = arrel + ==_-er_==. **Superlativ** = _am_ + arrel + ==_-sten_==. Dues peces per recordar i ja tens tota la base."
+        }
+      ]
+    },
+    {
+      "id": "tres-estructures",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Les tres estructures de comparació\n\nUn cop tens les tres formes, la **sintaxi de la comparació** funciona amb tres patrons diferents segons si compares igualtat, superioritat o màxim."
+        },
+        {
+          "type": "table",
+          "title": "11.2 Sintaxi de la comparació",
+          "headers": ["Relació", "Estructura", "Exemple"],
+          "rows": [
+            ["A = B (igualtat)", "**_so_** + positiv + **_wie_**", "_Nico ist **so** schnell **wie** Max._"],
+            ["A > B (superioritat)", "komparativ + **_als_**", "_Nico ist schneller **als** Tarek._"],
+            ["Màxim absolut", "**_am_** + superlativ", "_Tarek ist **am** langsam**sten**._"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Parany freqüent: _als_ vs _wie_",
+          "body": "En alemany estàndard, **_als_** només s'usa amb el ==**komparativ**== (_schneller **als**_), i **_wie_** només amb el positiu (_**so** schnell **wie**_). Barrejar-los (_\\*schneller wie Tarek_) és un error típic de parlants nadius en registre col·loquial, però **a l'examen i en escrit formal, sempre _als_ després del comparatiu**."
+        }
+      ]
+    },
+    {
+      "id": "check-regla",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-11-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "casos-especials",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Casos especials: les cinc famílies que cal memoritzar\n\nLa regla bàsica cobreix el 70% dels adjectius. El 30% restant es reparteix en **cinc grups** amb petites irregularitats previsibles. Val la pena tenir-les identificades perquè els adjectius que cauen en aquests grups són, precisament, els **més freqüents** del llenguatge diari (_alt_, _jung_, _groß_, _gut_…)."
+        },
+        {
+          "type": "table",
+          "title": "11.3 Cinc grups d'irregularitats",
+          "headers": ["Grup", "Patró", "Exemple"],
+          "rows": [
+            ["1. Umlaut", "monosíl·labs amb _a/o/u_ → afegeixen ==¨==", "_lang → l**ä**nger → am l**ä**ngsten_"],
+            ["2. -t / -d / -z", "terminació _-t/-d/-z_ → inserten ==_-e-_== al superlatiu", "_alt → älter → am ält**e**sten_"],
+            ["3. Pèrdua de lletra", "adjectius en _-er/-el_ i _hoch_ → perden una lletra", "_teuer → teu**r**er_, _dunkel → dun**k**ler_, _hoch → hö**h**er_"],
+            ["4. _groß_ especial", "l'únic adjectiu sense _-s-_ al superlatiu", "_groß → größer → am größ**t**en_"],
+            ["5. Irregulars purs", "tres formes completament diferents, cal memoritzar", "_gut → besser → am besten_"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "##### Grup 1 · Umlaut (vocal alterada)\n\nEls **monosíl·labs** (paraules d'una sola síl·laba) que contenen les vocals **_a_, _o_ o _u_** solen prendre ==Umlaut== (la dièresi ¨) al comparatiu i al superlatiu. No totes: és una llista que cal familiaritzar-se amb ella, però les més habituals segueixen el patró."
+        },
+        {
+          "type": "table",
+          "title": "11.4 Adjectius amb Umlaut",
+          "headers": ["Positiv", "Komparativ", "Superlativ"],
+          "rows": [
+            ["_lang_ (llarg)", "_l**ä**nger_", "_am l**ä**ngsten_"],
+            ["_jung_ (jove)", "_j**ü**nger_", "_am j**ü**ngsten_"],
+            ["_stark_ (fort)", "_st**ä**rker_", "_am st**ä**rksten_"],
+            ["_warm_ (calent)", "_w**ä**rmer_", "_am w**ä**rmsten_"],
+            ["_scharf_ (picant)", "_sch**ä**rfer_", "_am sch**ä**rfsten_"],
+            ["_hart_ (dur)", "_h**ä**rter_", "_am h**ä**rtesten_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Umlaut sí, Umlaut no",
+          "body": "Com a regla orientativa: **monosíl·labs amb _a/o/u_ → sovint Umlaut**. Però _voll_, _klar_ o _froh_ no el prenen. Si dubtes, consulta el diccionari (dwds.de és la referència estàndard). Amb l'ús, els quinze o vint adjectius clau d'aquesta llista es consoliden sols."
+        },
+        {
+          "type": "explanation",
+          "body": "##### Grup 2 · Terminació _-t_, _-d_ o _-z_ → _-e-_ intermèdia\n\nQuan l'arrel acaba en una de les consonants **_-t_, _-d_** o **_-z_**, el superlatiu insereix una ==_-e-_== entre l'arrel i _-sten_ per facilitar la pronunciació. Sense aquesta _-e-_, tindríem aglomeracions impossibles com _\\*altsten_ o _\\*kurzsten_."
+        },
+        {
+          "type": "table",
+          "title": "11.5 Adjectius amb _-e-_ al superlatiu",
+          "headers": ["Positiv", "Komparativ", "Superlativ"],
+          "rows": [
+            ["_alt_ (vell)", "_älter_", "_am ält**e**sten_"],
+            ["_kalt_ (fred)", "_kälter_", "_am kält**e**sten_"],
+            ["_kurz_ (curt)", "_kürzer_", "_am kürz**e**sten_"],
+            ["_hart_ (dur)", "_härter_", "_am härt**e**sten_"],
+            ["_laut_ (fort, sorollós)", "_lauter_", "_am laut**e**sten_"],
+            ["_nett_ (amable)", "_netter_", "_am nett**e**sten_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Dos efectes combinats",
+          "body": "Fixa't que _alt_, _kalt_, _kurz_ i _hart_ **tenen els dos efectes alhora**: Umlaut al komparativ **i** _-e-_ al superlatiu. Són els més freqüents i cal saber-los de memòria."
+        },
+        {
+          "type": "explanation",
+          "body": "##### Grup 3 · Pèrdua de lletres\n\nAlguns adjectius simplifiquen l'arrel al comparatiu o al superlatiu:\n\n- _teuer_ (car) → _teu**r**er_ (perd la _-e-_) → _am teuersten_\n- _dunkel_ (fosc) → _dun**k**ler_ (perd la _-e-_ entre _k_ i _l_) → _am dunkelsten_\n- _hoch_ (alt) → _hö**h**er_ (la _c_ final desapareix al komparativ) → _am höchsten_\n\nEl patró és previsible: adjectius en **_-er_** o **_-el_** perden la _-e-_ final per evitar una síl·laba massa pesada en afegir _-er_. _Hoch_ és un cas únic i cal memoritzar-lo."
+        },
+        {
+          "type": "explanation",
+          "body": "##### Grup 4 · _groß_ — l'únic sense _-s-_\n\n**_groß_** (gran) té un superlatiu especial: _am größ**t**en_, **sense la _-s-_ habitual**. És l'única excepció d'aquest tipus en tot el repertori dels adjectius A1. Cal memoritzar-la tal com és."
+        },
+        {
+          "type": "table",
+          "title": "11.6 _groß_",
+          "headers": ["Positiv", "Komparativ", "Superlativ"],
+          "rows": [
+            ["_groß_", "_größer_", "_am größ**t**en_"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "##### Grup 5 · Els tres irregulars purs\n\nTres adjectius (o formes adverbials) tenen **tres formes totalment diferents**, sense cap relació visible entre elles. No hi ha regla: són els irregulars \"purs\" que cal aprendre com es fa amb els verbs forts d'anglès (_go/went/gone_)."
+        },
+        {
+          "type": "table",
+          "title": "11.7 Els tres irregulars",
+          "headers": ["Positiv", "Komparativ", "Superlativ", "Significat"],
+          "rows": [
+            ["_gut_", "_besser_", "_am besten_", "bo / bé"],
+            ["_gern_", "_lieber_", "_am liebsten_", "de gust (verb modal adverbial)"],
+            ["_viel_", "_mehr_", "_am meisten_", "molt / molt de"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Memorització obligatòria",
+          "body": "Aquests tres **no es poden deduir**. _gut/besser/am besten_, _gern/lieber/am liebsten_, _viel/mehr/am meisten_. Aprèn-los com una cançó, perquè apareixen en cada conversa diària: _Ich esse **gern** Pizza, aber **lieber** Pasta. Am **liebsten** esse ich Sushi._"
+        }
+      ]
+    },
+    {
+      "id": "check-casos",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-11-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-11-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-11-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-11-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Recapitulem\n\nEl comparatiu i el superlatiu alemanys es basen en **dues peces mecàniques** (_-er_ i _am …sten_) i **tres patrons sintàctics** (_so … wie_, _… er als_, _am …sten_). Els casos especials es poden reduir a **cinc famílies** amb patrons previsibles, excepte els tres irregulars purs."
+        },
+        {
+          "type": "table",
+          "title": "11.8 Quadre-resum",
+          "headers": ["Categoria", "Patró", "Exemple"],
+          "rows": [
+            ["Regular", "+ _-er_ / _am …sten_", "_schnell → schneller → am schnellsten_"],
+            ["Umlaut", "a/o/u → ä/ö/ü", "_lang → länger → am längsten_"],
+            ["-t/-d/-z", "+ _-e-_ al superlatiu", "_alt → älter → am ält**e**sten_"],
+            ["Pèrdua de lletra", "cau _-e-_ o _-c-_", "_teuer → teurer_ / _hoch → höher_"],
+            ["_groß_", "superlatiu sense _-s-_", "_groß → größer → am größten_"],
+            ["Irregulars", "formes memoritzades", "_gut → besser → am besten_"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "11.9 Les tres estructures de comparació",
+          "headers": ["Relació", "Estructura", "Exemple"],
+          "rows": [
+            ["Igualtat", "_so_ + positiv + _wie_", "_Berlin ist **so** groß **wie** München._ (fals, però la forma serveix)"],
+            ["Superioritat", "komparativ + _als_", "_Berlin ist größer **als** München._"],
+            ["Màxim", "_am_ + superlativ", "_Berlin ist **am** größ**ten**._"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Connexions amb altres lliçons",
+          "body": "Aquesta lliçó consolida **A1a-17** (adjectius descriptius) i **A1a-31** (graus de l'adjectiu). El pas següent lògic seria la **declinació de l'adjectiu** en posició atributiva (p. ex. _der ==größere== Fluss_), que veuràs més endavant al curs. Per ara, amb les formes predicatives (_Berlin ist größer_) i les tres estructures de comparació, ja tens tot el que et cal per expressar comparacions en la vida diària."
+        },
+        {
+          "type": "explanation",
+          "body": "**Exemples finals per interioritzar:**\n\n- _München ist **schön**. Berlin ist **schöner**. Hamburg ist **am schönsten**._ (opinió personal, estructura regular)\n- _Tee ist **so gut wie** Kaffee, aber ich trinke **lieber** Kaffee. **Am liebsten** trinke ich Wasser._ (irregular _gern_)\n- _Der Winter ist **kälter als** der Herbst. Im Januar ist es **am kältesten**._ (Umlaut + _-e-_ al superlatiu)\n- _Dieses Auto ist **teurer als** jenes, aber das BMW ist **am teuersten**._ (pèrdua de _-e-_)"
+        }
+      ]
+    }
+  ]
+}
