@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-10-ex-03",
+  "topicId": "A1b-10",
+  "title": "Conjuga diversos verbs en -ieren al present",
+  "prompt": "Completa cada frase amb la forma correcta del verb entre parèntesis.",
+  "difficulty": 2,
+  "tags": ["conjugacio", "present", "ieren", "desinencies"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) Wir {{1}} einen Tisch im Restaurant. _(reservieren)_\nb) Du {{2}} Medizin in München. _(studieren)_\nc) Er {{3}} den Wein. _(probieren)_\nd) Ich {{4}} jeden Morgen. _(trainieren)_\ne) Das Handy {{5}} nicht. _(funktionieren)_",
+    "blanks": [
+      { "id": "1", "label": "wir + reservieren" },
+      { "id": "2", "label": "du + studieren" },
+      { "id": "3", "label": "er + probieren" },
+      { "id": "4", "label": "ich + trainieren" },
+      { "id": "5", "label": "es + funktionieren" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "forma de _reservieren_" },
+      { "blankId": "2", "placeholder": "forma de _studieren_" },
+      { "blankId": "3", "placeholder": "forma de _probieren_" },
+      { "blankId": "4", "placeholder": "forma de _trainieren_" },
+      { "blankId": "5", "placeholder": "forma de _funktionieren_" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["reservieren"],
+      "2": ["studierst"],
+      "3": ["probiert"],
+      "4": ["trainiere"],
+      "5": ["funktioniert"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has aplicat les desinències regulars (_-e, -st, -t, -en, -t, -en_) sobre l'arrel _-ier-_. Igual que qualsevol regular d'A1a-7.",
+      "references": ["A1b-10", "A1a-7"]
+    },
+    "incorrect": {
+      "default": "Recorda les desinències: _ich -e_, _du -st_, _er/sie/es -t_, _wir -en_, _ihr -t_, _sie/Sie -en_. L'arrel és el verb sense _-en_ final (_reservier-_, _studier-_, _probier-_, _trainier-_, _funktionier-_)."
+    }
+  }
+}

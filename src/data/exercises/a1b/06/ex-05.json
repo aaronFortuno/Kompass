@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-6-ex-05",
+  "topicId": "A1b-6",
+  "title": "Transforma la frase amb l'altre verb",
+  "prompt": "Reescriu cada frase amb el verb indicat, ajustant l'estructura (acusatiu ↔ datiu, adjectiu sí/no). Escriu la frase sencera tal com quedaria en alemany, amb majúscula inicial i punt final.",
+  "difficulty": 3,
+  "tags": ["transformacio", "estructura", "gefallen", "finden", "mogen", "mochten", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich mag den Dom._ → amb **finden** (+ adjectiu: _schön_):\n{{1}}\n\n2. _Ich finde die Musik toll._ → amb **gefallen**:\n{{2}}\n\n3. _Mir gefällt das Buch._ → amb **mögen**:\n{{3}}\n\n4. _Ich mag einen Kaffee._ (incorrecte contextualment) → amb **möchten** (al cafè):\n{{4}}",
+    "blanks": [
+      { "id": "1", "label": "finden + schön" },
+      { "id": "2", "label": "gefallen" },
+      { "id": "3", "label": "mögen" },
+      { "id": "4", "label": "möchten" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Ich finde …" },
+      { "blankId": "2", "placeholder": "Mir gefällt …" },
+      { "blankId": "3", "placeholder": "Ich mag …" },
+      { "blankId": "4", "placeholder": "Ich möchte …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Ich finde den Dom schön.", "ich finde den dom schön."],
+      "2": ["Mir gefällt die Musik.", "Die Musik gefällt mir.", "mir gefällt die musik.", "die musik gefällt mir."],
+      "3": ["Ich mag das Buch.", "ich mag das buch."],
+      "4": ["Ich möchte einen Kaffee.", "ich möchte einen kaffee."]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Impecable. Has fet tres operacions alhora: (a) canviar el verb, (b) ajustar el cas (acusatiu per _mögen/finden/möchten_, datiu de persona + nominatiu de cosa per _gefallen_), i (c) afegir o eliminar l'adjectiu segons el verb.",
+      "references": ["A1b-6"]
+    },
+    "incorrect": {
+      "default": "Regles operatives: _finden_ sempre porta adjectiu; _gefallen_ inverteix l'estructura (persona → datiu, cosa → nominatiu); _mögen_ i _möchten_ comparteixen estructura transitiva amb acusatiu. Comprova també majúscules, accents (_ä_, _ö_) i punt final."
+    }
+  }
+}

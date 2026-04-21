@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-10-ex-05",
+  "topicId": "A1b-10",
+  "title": "Corregeix el ge- indegut",
+  "prompt": "Cada frase té un participi **incorrecte** (amb _ge-_ indegut). Escriu la forma correcta del participi (sense _ge-_).",
+  "difficulty": 2,
+  "tags": ["participi", "ge-", "perfekt", "ieren", "correccio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) _Ich habe Medizin **gestudiert**._ → _Ich habe Medizin {{1}}._\nb) _Wir haben einen Tisch **gereserviert**._ → _Wir haben einen Tisch {{2}}._\nc) _Er hat das Auto **gekontrolliert**._ → _Er hat das Auto {{3}}._\nd) _Sie hat die Stadt **gefotografiert**._ → _Sie hat die Stadt {{4}}._",
+    "blanks": [
+      { "id": "1", "label": "participi sense ge-" },
+      { "id": "2", "label": "participi sense ge-" },
+      { "id": "3", "label": "participi sense ge-" },
+      { "id": "4", "label": "participi sense ge-" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "participi de _studieren_" },
+      { "blankId": "2", "placeholder": "participi de _reservieren_" },
+      { "blankId": "3", "placeholder": "participi de _kontrollieren_" },
+      { "blankId": "4", "placeholder": "participi de _fotografieren_" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["studiert"],
+      "2": ["reserviert"],
+      "3": ["kontrolliert"],
+      "4": ["fotografiert"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has aplicat la regla d'or: **cap verb en _-ieren_ porta _ge-_** al participi. Només _-t_ final sobre l'arrel.",
+      "references": ["A1b-10", "A1b-27"]
+    },
+    "incorrect": {
+      "default": "Elimina el _ge-_ i conserva la resta. _gestudiert → studiert_, _gereserviert → reserviert_, _gekontrolliert → kontrolliert_, _gefotografiert → fotografiert_. Aquesta regla la consolidaràs a A1b-27 (Perfekt)."
+    }
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-10",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 10,
+  "title": "Verben auf -ieren: els verbs \"fàcils\" de romanç",
+  "shortTitle": "-ieren",
+  "description": "La família de verbs alemanys acabats en -ieren: origen romànic, conjugació regular al present i avenç del participi sense ge-.",
+  "axes": ["pronoms-verbs"],
+  "prerequisites": ["A1a-3"],
+  "estimatedMinutes": 8,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Una família de verbs amiga del catalanoparlant\n\nL'alemany està ple de paraules importades d'altres idiomes. De totes, la família més simpàtica per a nosaltres és la dels **verbs acabats en ==_-ieren_==**: són paraules que vénen de l'anglès o de llengües romàniques (llatí, francès, italià), i que **tu ja entens abans d'estudiar-les**. _Studieren_? Estudiar. _Telefonieren_? Telefonar. _Funktionieren_? Funcionar. Una pista visual quasi infal·lible."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Un detall que fa somriure",
+          "body": "**Molts d'aquests verbs acaben en català en _-ar_**. _Studieren → estudiar_. _Probieren → provar_. _Kontrollieren → controlar_. _Realisieren → realitzar_. Coincidència? No: totes dues llengües han agafat el mateix verb llatí i l'han adaptat a la seva fonètica."
+        },
+        {
+          "type": "explanation",
+          "body": "Aquesta lliçó té tres objectius molt delimitats:\n\n1. Reconèixer la **família _-ieren_** com un bloc amb un mateix patró de conjugació.\n2. Conjugar-los al present sabent que són **verbs regulars** (com els que vas veure a A1a-7).\n3. Anticipar una particularitat que et servirà més endavant: el seu **participi no porta _ge-_**. (Això es desenvoluparà al tema A1b-27, Perfekt.)"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Temps estimat: 6-8 minuts",
+          "body": "És una lliçó curta i de baixa fricció: en acabar, tindràs ampliat el vocabulari actiu amb desenes de verbs \"gratis\"."
+        }
+      ]
+    },
+    {
+      "id": "famille",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### D'on vénen i com es reconeixen\n\nObserva aquesta llista: qualsevol catalanoparlant entén el significat sense diccionari."
+        },
+        {
+          "type": "table",
+          "title": "10.1 Verbs en -ieren transparents",
+          "headers": ["Verb alemany", "Origen", "Català"],
+          "rows": [
+            ["_studieren_", "llatí _studere_", "estudiar"],
+            ["_telefonieren_", "grec/llatí _telephonum_", "telefonar"],
+            ["_funktionieren_", "llatí _functio_", "funcionar"],
+            ["_probieren_", "llatí _probare_", "provar / intentar"],
+            ["_kontrollieren_", "francès _contrôler_", "controlar"],
+            ["_realisieren_", "llatí _realis_", "realitzar"],
+            ["_organisieren_", "llatí _organum_", "organitzar"],
+            ["_fotografieren_", "grec _photos + graphein_", "fotografiar"],
+            ["_reservieren_", "llatí _reservare_", "reservar"],
+            ["_diskutieren_", "llatí _discutere_", "discutir"],
+            ["_massieren_", "àrab/francès _masser_", "donar un massatge"],
+            ["_konjugieren_", "llatí _coniugare_", "conjugar"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Truc de reconeixement",
+          "body": "Si un verb alemany acaba en _-ieren_ i \"sona\" a una paraula internacional, gairebé segur que pots deduir-ne el significat. Aprofita-ho: és vocabulari regalat."
+        },
+        {
+          "type": "explanation",
+          "body": "La clau és que, encara que semblin exòtics per la grafia alemanya, **es comporten com qualsevol verb regular del tipus que ja coneixes**. No hi ha trampa."
+        }
+      ]
+    },
+    {
+      "id": "conjugacio",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Conjugació al present: regulars, sense sorpreses\n\nTots els verbs en _-ieren_ treuen l'arrel traient el _-en_ final (com els regulars d'A1a-7) i hi afegeixen les desinències habituals. Arrel de _trainieren_ → _trainier-_. Arrel de _studieren_ → _studier-_."
+        },
+        {
+          "type": "table",
+          "title": "10.2 Model: ==trainieren== (entrenar)",
+          "headers": ["Persona", "Forma"],
+          "rows": [
+            ["ich", "trainier**e**"],
+            ["du", "trainier**st**"],
+            ["er/sie/es", "trainier**t**"],
+            ["wir", "trainier**en**"],
+            ["ihr", "trainier**t**"],
+            ["sie/Sie", "trainier**en**"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "10.3 Segon model: ==studieren== (estudiar)",
+          "headers": ["Persona", "Forma"],
+          "rows": [
+            ["ich", "studier**e**"],
+            ["du", "studier**st**"],
+            ["er/sie/es", "studier**t**"],
+            ["wir", "studier**en**"],
+            ["ihr", "studier**t**"],
+            ["sie/Sie", "studier**en**"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Cap irregularitat",
+          "body": "Les desinències són exactament les mateixes que les de _machen_, _lernen_, _spielen_ (A1a-7). ==**Cap irregularitat, cap canvi vocàlic, cap separació.**== Si ja saps conjugar un verb regular, ja saps conjugar els 200+ verbs en _-ieren_ del lèxic alemany."
+        },
+        {
+          "type": "explanation",
+          "body": "**Pronúncia.** En _-ieren_, la _i_ i la _e_ es pronuncien per separat: _stu-di-e-ren_ (quatre síl·labes), no \"studjeren\". L'accent tònic cau sobre la ==**-ie-**==: **studíeren**, **telefoníeren**, **probíeren**. Això és útil perquè, en altres tipus de verbs, l'accent cau a l'arrel (_máchen_, _lérnen_); aquí s'hi desplaça. Si dius _studiéren_ en comptes de _stúdieren_ sonaràs alemany."
+        }
+      ]
+    },
+    {
+      "id": "check-conjug",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-10-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "exemples-frases",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Exemples en frases reals\n\nAmb això ja pots produir frases útils des del primer dia:\n\n- _Ich **studiere** Medizin in Berlin._ — Estudio medicina a Berlín.\n- _Wir **telefonieren** jeden Tag._ — Parlem per telèfon cada dia.\n- _Das Auto **funktioniert** nicht._ — El cotxe no funciona.\n- _Er **probiert** den Kuchen._ — Ell prova el pastís.\n- _Sie **fotografiert** die Stadt._ — Ella fotografia la ciutat.\n- _Wir **reservieren** einen Tisch._ — Reservem una taula.\n- _Ich **trainiere** dreimal pro Woche._ — Entreno tres cops per setmana."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Ordre normal de frase",
+          "body": "Observa que l'**ordre de la frase és el normal** del present: verb conjugat en segona posició, subjecte i complements a la resta. No hi ha cap Satzklammer (A1a-18) ni res de raro, perquè aquests verbs **no són separables** (no porten prefix separable del tipus _an-, auf-, aus-_, que veuràs a A1a-29)."
+        }
+      ]
+    },
+    {
+      "id": "avanc-perfekt",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Una particularitat per al futur: el seu participi **no porta _ge-_**\n\nEncara no has estudiat el Perfekt (temps compost), i ho faràs al **tema A1b-27**. Però val la pena que sàpigues ja ara una propietat curiosa d'aquesta família, per si la trobes \"en estat salvatge\" llegint o escoltant."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Regla universal",
+          "body": "Els verbs en _-ieren_ formen el **participi** simplement canviant _-en_ per ==**-t**==, **sense afegir _ge-_** al davant."
+        },
+        {
+          "type": "table",
+          "title": "10.4 Contrast participi: regulars vs -ieren",
+          "headers": ["Tipus", "Verb", "Participi"],
+          "rows": [
+            ["regular normal", "_machen_ (fer)", "**ge**mach**t**"],
+            ["regular normal", "_lernen_ (aprendre)", "**ge**lern**t**"],
+            ["regular normal", "_spielen_ (jugar)", "**ge**spiel**t**"],
+            ["en _-ieren_", "_studieren_ (estudiar)", "studier**t** (sense _ge-_)"],
+            ["en _-ieren_", "_probieren_ (provar)", "probier**t** (sense _ge-_)"],
+            ["en _-ieren_", "_telefonieren_", "telefonier**t** (sense _ge-_)"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Per tant, en Perfekt faràs _Ich **habe** studier**t**_ (no _gestudiert_), _Ich **habe** probier**t**_ (no _geprobiert_)."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Per què?",
+          "body": "Perquè el _-ieren_ ja marca per si sol que el verb ve de fora i és prou \"llarg\". Afegir-hi _ge-_ al davant sonaria pesat (_gestudiert_ no sona natural a cap parlant). És una regla universal: **cap verb en _-ieren_ porta _ge-_ al participi**. Cap."
+        },
+        {
+          "type": "explanation",
+          "body": "No cal que ara sàpigues conjugar tot el Perfekt: només recorda aquesta peça, perquè quan arribis a A1b-27 ja la tindràs interioritzada. És un estalvi de memòria, no una complicació."
+        }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys típics\n\n**1. Posar _ge-_ al participi.** — És l'error més previsible: per analogia amb _gemacht_, _gelernt_, l'estudiant escriu _gestudiert_, _getelefoniert_. No: els verbs en _-ieren_ **mai** porten _ge-_. Aquesta regla és absoluta, sense excepcions.\n- Incorrecte: _Ich habe **ge**studiert._\n- Correcte: _Ich habe studiert._\n\n**2. Accentuar malament la paraula.** — L'accent va sobre ==**-ie-**==: _stu-**die**-ren_, no _stú-di-e-ren_ ni _studi-**é**-ren_. Si dius _telefoníeren_, _probíeren_, _funktioníeren_ sonaràs natural.\n\n**3. Inventar-se verbs que no existeixen.** — No tot verb romànic té versió alemanya en _-ieren_. _Menjar_ no és _\"menschieren\"_: és _essen_. _Dormir_ no és _\"dormieren\"_: és _schlafen_. Fes servir el truc d'_-ieren_ només per **reconèixer** i **confirmar** al diccionari, no per inventar.\n\n**4. Pronunciar _-ieren_ com una sola síl·laba.** — En alemany, _-ieren_ es diu en dues síl·labes: **-ie-ren** (amb /iː/ llarga + /rən/). No és com l'anglès _-ier_ (\"-ir\"). _Studieren_ = _stu-di-e-ren_, quatre síl·labes.\n\n**5. Confondre'ls amb verbs separables.** — Els verbs en _-ieren_ **no són separables**, encara que comencin per síl·labes com _an-_, _aus-_, _vor-_ (p. ex. _anprobieren_, _ausprobieren_, _reservieren_). Hi ha alguns compostos (_anprobieren_: emprovar-se roba; _ausprobieren_: provar/testar) que **sí** se separen perquè tenen un prefix separable davant del verb en _-ieren_; però el verb _-ieren_ pur, sol, mai no es separa."
+        }
+      ]
+    },
+    {
+      "id": "check-participi",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-10-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-10-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-10-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-10-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-10-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Recapitulem\n\n**El que t'emportes d'aquesta lliçó:**\n\n1. Els verbs en ==**-ieren**== són una família nombrosa d'**origen romànic o internacional** (llatí, francès, anglès). Molts tenen una contrapart catalana en ==**-ar**==: _studieren ↔ estudiar_, _probieren ↔ provar_, _kontrollieren ↔ controlar_.\n2. Al **present** són **verbs regulars** idèntics als d'A1a-7: arrel = verb sense _-en_; desinències _-e, -st, -t, -en, -t, -en_.\n3. L'**accent** cau sobre la síl·laba ==**-ie-**==: _stu**die**ren_, _tele**fo**nieren_. Pronunciació en dues síl·labes _-ie-ren_.\n4. **Avenç cap al Perfekt (A1b-27):** el participi es forma amb _-t_ final **sense _ge-_** al davant → _studiert_, _probiert_, _telefoniert_. Cap excepció.\n5. **No són separables**: _Ich telefoniere mit dir_, no _\"Ich phon mit dir\"_."
+        },
+        {
+          "type": "table",
+          "title": "10.5 Taula de referència ràpida",
+          "headers": ["Aspecte", "Regla", "Exemple"],
+          "rows": [
+            ["Infinitiu", "arrel + _-ieren_", "_studieren_"],
+            ["Present (ich)", "arrel + _-e_", "_ich studiere_"],
+            ["Present (du)", "arrel + _-st_", "_du studierst_"],
+            ["Present (er/sie/es)", "arrel + _-t_", "_er studiert_"],
+            ["Present (wir/sie/Sie)", "arrel + _-en_", "_wir studieren_"],
+            ["Participi (avenç)", "arrel + _-t_ **sense _ge-_**", "_studiert_"],
+            ["Accent tònic", "sobre _-ie-_", "_stu**die**ren_"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Connexions amb altres lliçons:**\n\n- Es recolza en **A1a-7** (conjugació dels verbs regulars al present) — les desinències són exactament les mateixes.\n- Prepara **A1b-27** (Perfekt), on la regla del participi sense _ge-_ s'ampliarà i s'integrarà amb la resta de verbs.\n- Amplia el lèxic útil per als temes de **vida quotidiana, estudis, oci i professions** (_studieren, trainieren, fotografieren, organisieren, reservieren_)."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Repte final",
+          "body": "Fes una llista de 10 verbs catalans acabats en _-ar_ que creguis que podrien tenir versió alemanya en _-ieren_, i comprova-ho al diccionari (dict.cc, dwds.de). Quants has encertat? Ser bon endeví aquí et regala vocabulari per a tot el curs."
+        },
+        {
+          "type": "explanation",
+          "body": "Ara ja tens una família sencera de verbs pràctics dominats amb molt poc esforç. Aprofita-ho: _du studierst Deutsch, du telefonierst auf Deutsch, du trainierst Deutsch — und das funktioniert!_"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-6-ex-06",
+  "topicId": "A1b-6",
+  "title": "Diàleg: visita turística",
+  "prompt": "Anna i Tom visiten una ciutat i passen pel Dom. Completa el diàleg triant la forma correcta de _gefallen_, _finden_, _mögen_ o _möchten_.",
+  "difficulty": 3,
+  "tags": ["dialeg", "globalitzador", "gefallen", "finden", "mogen", "mochten", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "**Anna:** _Schau mal, der Dom! {{1}} dir das?_\n\n**Tom:** _Ja, {{2}} mir sehr. Ich {{3}} alte Kirchen._\n\n**Anna:** _Wie {{4}} du das Gebäude daneben?_\n\n**Tom:** _Ich {{5}} es zu modern. Aber komm, ich {{6}} jetzt einen Kaffee trinken._\n\n**Anna:** _Gute Idee. Ich {{7}} auch einen Tee. Und danach {{8}} ich ins Museum gehen._",
+    "blanks": [
+      { "id": "1", "label": "gefallen 2a sg." },
+      { "id": "2", "label": "gefallen 3a sg." },
+      { "id": "3", "label": "mögen 1a sg." },
+      { "id": "4", "label": "finden 2a sg." },
+      { "id": "5", "label": "finden 1a sg." },
+      { "id": "6", "label": "möchten 1a sg." },
+      { "id": "7", "label": "möchten 1a sg." },
+      { "id": "8", "label": "möchten 1a sg." }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Gefällt", "Gefällst", "Gefallen", "Mag"] },
+      { "blankId": "2", "options": ["gefalle", "gefällt", "gefallen", "mag"] },
+      { "blankId": "3", "options": ["mag", "magst", "möchte", "gefalle"] },
+      { "blankId": "4", "options": ["findest", "findet", "finde", "gefällt"] },
+      { "blankId": "5", "options": ["finde", "findet", "findest", "mag"] },
+      { "blankId": "6", "options": ["möchte", "möchtest", "mag", "magst"] },
+      { "blankId": "7", "options": ["möchte", "mag", "gefalle", "finde"] },
+      { "blankId": "8", "options": ["möchte", "mag", "finde", "gefalle"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Gefällt",
+      "2": "gefällt",
+      "3": "mag",
+      "4": "findest",
+      "5": "finde",
+      "6": "möchte",
+      "7": "möchte",
+      "8": "möchte"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Felicitats. Has navegat un diàleg autèntic amb els quatre verbs: _gefallen_ per reaccions estètiques davant el Dom, _mögen_ per al gust estable de Tom per les esglésies, _finden_ per al judici valorat sobre l'edifici modern, i _möchten_ tres cops per a desitjos puntuals (prendre un cafè, demanar un te, anar al museu). Aquesta barreja és exactament la que fa un parlant nadiu.",
+      "references": ["A1b-6"]
+    },
+    "incorrect": {
+      "default": "Tres preguntes per triar: (1) És una reacció estètica immediata? → _gefallen_ (amb datiu). (2) És un gust de sempre o una opinió valorada (amb adjectiu)? → _mögen_ o _finden_ segons hi hagi adjectiu. (3) És un desig puntual, una petició al cambrer, un pla? → _möchten_."
+    }
+  }
+}

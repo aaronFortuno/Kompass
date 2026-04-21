@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-6-ex-01",
+  "topicId": "A1b-6",
+  "title": "Els dos usos de _möchten_",
+  "prompt": "Empareja cada frase amb l'estructura sintàctica que utilitza (_möchten_ com a verb ple amb acusatiu, o _möchten_ com a modal amb infinitiu al final).",
+  "difficulty": 1,
+  "tags": ["mochten", "satzklammer", "quick-check"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "a", "group": "frases", "content": { "type": "text", "content": "_Ich möchte einen Tee._" } },
+      { "id": "b", "group": "frases", "content": { "type": "text", "content": "_Ich möchte einen Tee trinken._" } },
+      { "id": "acc", "group": "usos", "content": { "type": "text", "content": "acusatiu sol (verb ple)" } },
+      { "id": "mod", "group": "usos", "content": { "type": "text", "content": "modal + infinitiu (Satzklammer)" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Frase",
+    "groupBLabel": "Ús sintàctic"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["a", "acc"],
+      ["b", "mod"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. (A) usa _möchten_ com a verb ple (\"voldria un te\"); (B) l'usa com a modal i tanca la Satzklammer amb _trinken_ al final (\"voldria prendre un te\").",
+      "references": ["A1b-6", "A1a-18"]
+    },
+    "incorrect": {
+      "default": "Fixa't en si hi ha un segon verb a l'infinitiu al final. Si n'hi ha, _möchten_ funciona com a modal (Satzklammer). Si no, és un verb ple amb objecte directe."
+    }
+  }
+}

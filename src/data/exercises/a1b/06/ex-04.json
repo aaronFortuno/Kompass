@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-6-ex-04",
+  "topicId": "A1b-6",
+  "title": "Tria el verb segons el context",
+  "prompt": "Tria el verb més natural per a cada context (gust estable / opinió valorada / reacció estètica / desig puntual).",
+  "difficulty": 2,
+  "tags": ["matisos", "gefallen", "finden", "mogen", "mochten", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Al passar per davant d'una catedral impressionant: _\"{{1}} mir sehr!\"_\n2. A casa, explicant els teus gustos musicals: _\"Ich {{2}} klassische Musik.\"_\n3. Al restaurant, demanant una beguda: _\"Ich {{3}} einen Apfelsaft, bitte.\"_\n4. Donant la teva opinió sobre una pel·lícula: _\"Ich {{4}} den Film langweilig.\"_",
+    "blanks": [
+      { "id": "1", "label": "verb (reacció estètica)" },
+      { "id": "2", "label": "verb (gust estable)" },
+      { "id": "3", "label": "verb (petició educada)" },
+      { "id": "4", "label": "verb (opinió + adjectiu)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Gefällt", "Mag", "Findet", "Möchte"] },
+      { "blankId": "2", "options": ["gefalle", "mag", "finde", "möchte"] },
+      { "blankId": "3", "options": ["gefalle", "mag", "finde", "möchte"] },
+      { "blankId": "4", "options": ["gefalle", "mag", "finde", "möchte"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Gefällt",
+      "2": "mag",
+      "3": "möchte",
+      "4": "finde"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has associat cada verb al seu registre: (1) reacció estètica → _gefallen_; (2) gust estable → _mögen_; (3) petició educada → _möchten_; (4) opinió amb adjectiu → _finden_.",
+      "references": ["A1b-6"]
+    },
+    "incorrect": {
+      "default": "Revisa: davant d'una cosa impressionant (reacció) = _gefallen_; gustos de sempre = _mögen_; demanar al cambrer = _möchten_; opinió amb adjectiu = _finden_."
+    }
+  }
+}

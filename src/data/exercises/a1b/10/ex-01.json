@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-10-ex-01",
+  "topicId": "A1b-10",
+  "title": "Conjuga un verb en -ieren",
+  "prompt": "Completa la frase amb la forma correcta del verb _telefonieren_: _Ich ___ mit meiner Mutter._ (\"Parlo per telèfon amb la meva mare.\")",
+  "difficulty": 1,
+  "tags": ["conjugacio", "present", "ieren"],
+  "stimulus": {
+    "type": "text",
+    "content": "_Ich ___ mit meiner Mutter._"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "a", "label": "telefonieren" },
+      { "id": "b", "label": "telefoniere" },
+      { "id": "c", "label": "telefonierst" },
+      { "id": "d", "label": "telefoniert" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "b" },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. _Ich_ + arrel _telefonier-_ + desinència _-e_ → _telefoniere_. Com qualsevol regular.",
+      "references": ["A1b-10", "A1a-7"]
+    },
+    "incorrect": {
+      "default": "_Ich_ demana desinència _-e_ sobre l'arrel _telefonier-_ → _telefoniere_.",
+      "byResponse": [
+        {
+          "match": { "answer": "a" },
+          "message": "_telefonieren_ és l'infinitiu o les formes de _wir_/_sie_/_Sie_. Per a _ich_ cal _-e_ final: _telefoniere_."
+        },
+        {
+          "match": { "answer": "c" },
+          "message": "_-st_ és la desinència de _du_, no d'_ich_. _Ich telefoniere_, _du telefonierst_."
+        },
+        {
+          "match": { "answer": "d" },
+          "message": "_-t_ és la desinència d'_er/sie/es_ i d'_ihr_. Per a _ich_ → _telefoniere_."
+        }
+      ]
+    }
+  }
+}

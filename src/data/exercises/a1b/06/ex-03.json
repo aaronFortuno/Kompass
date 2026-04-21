@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-6-ex-03",
+  "topicId": "A1b-6",
+  "title": "Conjuga els quatre verbs",
+  "prompt": "Omple cada buit amb la forma correcta del verb indicat (conjugació en la persona de cada fila). Respecta majúscules i accents (_ä_, _ö_).",
+  "difficulty": 2,
+  "tags": ["conjugacio", "gefallen", "finden", "mogen", "mochten", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "**ich:** {{1}} (_gefallen_) — {{2}} (_finden_) — {{3}} (_mögen_) — {{4}} (_möchten_)\n\n**du:** {{5}} (_gefallen_) — {{6}} (_finden_) — {{7}} (_mögen_) — {{8}} (_möchten_)\n\n**er/sie/es:** {{9}} (_gefallen_) — {{10}} (_finden_) — {{11}} (_mögen_) — {{12}} (_möchten_)\n\n**wir:** _gefallen_ — _finden_ — _mögen_ — {{13}} (_möchten_)\n\n**ihr:** {{14}} (_gefallen_) — _findet_ — _mögt_ — _möchtet_",
+    "blanks": [
+      { "id": "1", "label": "gefallen / ich" },
+      { "id": "2", "label": "finden / ich" },
+      { "id": "3", "label": "mögen / ich" },
+      { "id": "4", "label": "möchten / ich" },
+      { "id": "5", "label": "gefallen / du" },
+      { "id": "6", "label": "finden / du" },
+      { "id": "7", "label": "mögen / du" },
+      { "id": "8", "label": "möchten / du" },
+      { "id": "9", "label": "gefallen / er" },
+      { "id": "10", "label": "finden / er" },
+      { "id": "11", "label": "mögen / er" },
+      { "id": "12", "label": "möchten / er" },
+      { "id": "13", "label": "möchten / wir" },
+      { "id": "14", "label": "gefallen / ihr" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "ich …" },
+      { "blankId": "2", "placeholder": "ich …" },
+      { "blankId": "3", "placeholder": "ich …" },
+      { "blankId": "4", "placeholder": "ich …" },
+      { "blankId": "5", "placeholder": "du …" },
+      { "blankId": "6", "placeholder": "du …" },
+      { "blankId": "7", "placeholder": "du …" },
+      { "blankId": "8", "placeholder": "du …" },
+      { "blankId": "9", "placeholder": "er …" },
+      { "blankId": "10", "placeholder": "er …" },
+      { "blankId": "11", "placeholder": "er …" },
+      { "blankId": "12", "placeholder": "er …" },
+      { "blankId": "13", "placeholder": "wir …" },
+      { "blankId": "14", "placeholder": "ihr …" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "gefalle",
+      "2": "finde",
+      "3": "mag",
+      "4": "möchte",
+      "5": "gefällst",
+      "6": "findest",
+      "7": "magst",
+      "8": "möchtest",
+      "9": "gefällt",
+      "10": "findet",
+      "11": "mag",
+      "12": "möchte",
+      "13": "möchten",
+      "14": "gefallt"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Fixa't en els tres patrons diferents: (a) _gefallen_ és regular amb canvi vocàlic a 2a i 3a sg. (_du gefällst, er gefällt_); (b) _mögen_ segueix patró modal (_ich mag = er mag_, sense -e); (c) _möchten_ té -e a 1a/3a sg. (_ich möchte = er möchte_).",
+      "references": ["A1b-6", "A1a-19"]
+    },
+    "incorrect": {
+      "default": "Tres pistes: (1) _gefallen_ al singular canvia a → ä a _du_ i _er/sie/es_, no al plural. (2) _mögen_ té _a_ al singular i _ö_ al plural, sense terminació a _ich/er_. (3) _möchten_ manté -e a _ich_ i _er/sie/es_, i afegeix -st, -t, -en, -et com qualsevol verb regular."
+    }
+  }
+}

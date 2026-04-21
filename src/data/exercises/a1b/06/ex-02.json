@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-6-ex-02",
+  "topicId": "A1b-6",
+  "title": "Al restaurant: quin verb?",
+  "prompt": "Al restaurant, el cambrer et pregunta què vols beure. Tria la resposta més natural.",
+  "difficulty": 1,
+  "tags": ["mochten", "mogen", "context", "quick-check"],
+  "stimulus": {
+    "type": "text",
+    "content": "Entres en un cafè i el cambrer et mira. Què li dius?"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "mag", "label": "_Ich mag einen Tee._" },
+      { "id": "gefaellt", "label": "_Mir gefällt ein Tee._" },
+      { "id": "finde", "label": "_Ich finde einen Tee gut._" },
+      { "id": "moechte", "label": "_Ich möchte einen Tee, bitte._" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "moechte" },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. Al restaurant/cafè, per demanar una cosa concreta ara, el verb natural és ==**möchten**==. És el registre educat per excel·lència.",
+      "references": ["A1b-6", "A1a-19"]
+    },
+    "incorrect": {
+      "default": "Al bar/cafè es demana sempre amb ==_möchten_== + acusatiu. Els altres verbs tenen altres usos.",
+      "byResponse": [
+        {
+          "match": { "response": "mag" },
+          "message": "_Ich mag einen Tee_ significa \"m'agrada un te\" en sentit general/filosòfic. El cambrer no sabria si demanes o comentes. Al bar: ==_Ich möchte einen Tee_==.",
+          "references": ["A1b-6"]
+        },
+        {
+          "match": { "response": "gefaellt" },
+          "message": "_gefallen_ és reacció estètica (t'agrada com es veu), no per demanar una beguda. Al bar: ==_Ich möchte einen Tee_==.",
+          "references": ["A1b-6"]
+        },
+        {
+          "match": { "response": "finde" },
+          "message": "_finden_ + adjectiu és opinió valorada, no petició. Al bar: ==_Ich möchte einen Tee_==.",
+          "references": ["A1b-6"]
+        }
+      ]
+    }
+  }
+}

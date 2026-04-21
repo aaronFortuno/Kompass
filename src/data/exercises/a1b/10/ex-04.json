@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-10-ex-04",
+  "topicId": "A1b-10",
+  "title": "Empareja cada verb en -ieren amb la seva traducció",
+  "prompt": "Aparella cada verb alemany amb la seva traducció catalana.",
+  "difficulty": 1,
+  "tags": ["vocabulari", "ieren", "transparencia", "traduccio"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "de1", "group": "de", "content": { "type": "text", "content": "diskutieren" } },
+      { "id": "de2", "group": "de", "content": { "type": "text", "content": "organisieren" } },
+      { "id": "de3", "group": "de", "content": { "type": "text", "content": "fotografieren" } },
+      { "id": "de4", "group": "de", "content": { "type": "text", "content": "massieren" } },
+      { "id": "de5", "group": "de", "content": { "type": "text", "content": "kontrollieren" } },
+      { "id": "ca1", "group": "ca", "content": { "type": "text", "content": "discutir" } },
+      { "id": "ca2", "group": "ca", "content": { "type": "text", "content": "organitzar" } },
+      { "id": "ca3", "group": "ca", "content": { "type": "text", "content": "fotografiar" } },
+      { "id": "ca4", "group": "ca", "content": { "type": "text", "content": "donar un massatge" } },
+      { "id": "ca5", "group": "ca", "content": { "type": "text", "content": "controlar" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Alemany",
+    "groupBLabel": "Català"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["de1", "ca1"],
+      ["de2", "ca2"],
+      ["de3", "ca3"],
+      ["de4", "ca4"],
+      ["de5", "ca5"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. El patró és clar: _-ieren_ alemany ↔ _-ar_ català, amb pocs ajustos fonètics. Aprofita aquesta regla sempre que trobis un verb nou en _-ieren_.",
+      "references": ["A1b-10"]
+    },
+    "incorrect": {
+      "default": "Compara la forma amb el seu cosí català. _Diskutieren_ ≈ _discutir_, _organisieren_ ≈ _organitzar_, _fotografieren_ ≈ _fotografiar_, _massieren_ ≈ _donar un massatge_, _kontrollieren_ ≈ _controlar_."
+    }
+  }
+}

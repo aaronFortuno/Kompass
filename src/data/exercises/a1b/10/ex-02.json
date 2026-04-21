@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-10-ex-02",
+  "topicId": "A1b-10",
+  "title": "Participi d'un verb en -ieren (sense ge-)",
+  "prompt": "Quina de les quatre formes és el **participi correcte** del verb _fotografieren_?",
+  "difficulty": 1,
+  "tags": ["participi", "ieren", "perfekt", "avanc"],
+  "stimulus": {
+    "type": "text",
+    "content": "Participi de _fotografieren_:"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "a", "label": "gefotografiert" },
+      { "id": "b", "label": "fotografiert" },
+      { "id": "c", "label": "gefotografieren" },
+      { "id": "d", "label": "fotografiere" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "b" },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. Els verbs en _-ieren_ formen el participi amb _-t_ final i **sense _ge-_**. _fotografieren → fotografiert_.",
+      "references": ["A1b-10", "A1b-27"]
+    },
+    "incorrect": {
+      "default": "Regla absoluta: cap verb en _-ieren_ porta _ge-_ al participi. _fotografieren → fotografiert_.",
+      "byResponse": [
+        {
+          "match": { "answer": "a" },
+          "message": "És l'error típic. Els verbs en _-ieren_ **mai** porten _ge-_ al participi. El correcte és _fotografiert_, sense prefix."
+        },
+        {
+          "match": { "answer": "c" },
+          "message": "_-en_ final és per a l'infinitiu, no per al participi; i tampoc no hi va _ge-_. Participi = _fotografiert_."
+        },
+        {
+          "match": { "answer": "d" },
+          "message": "_fotografiere_ és la forma d'_ich_ al present, no un participi. Participi = _fotografiert_."
+        }
+      ]
+    }
+  }
+}

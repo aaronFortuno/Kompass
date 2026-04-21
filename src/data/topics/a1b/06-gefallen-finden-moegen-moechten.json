@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-6",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 6,
+  "title": "Die Verben gefallen/finden/mögen/möchten",
+  "shortTitle": "gefallen/finden/mögen/möchten",
+  "description": "Col·loca junts els quatre verbs per expressar gustos, opinions i desitjos: gefallen (datiu, reacció estètica), finden (acusatiu + adjectiu, opinió valorada), mögen (acusatiu, gust estable) i möchten (acusatiu o + infinitiu, desig puntual / petició educada). Introdueix möchten al grup i refina la tria contextual.",
+  "axes": ["pronoms-verbs", "expressions-i-funcions"],
+  "prerequisites": ["A1a-32", "A1b-5"],
+  "estimatedMinutes": 15,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Context i motivació\n\nA **A1a-32** vas aprendre a distingir les tres grans maneres de dir \"m'agrada\" amb ==**mögen**== + acusatiu, ==**finden**== + acusatiu + adjectiu i ==**gefallen**== + datiu. A **A1a-19** vas conèixer _mögen_ com a verb modal, la seva conjugació especial (singular sense terminació, canvi ö → a), i vas saludar per primera vegada ==**möchte**==, la forma educada per demanar coses i expressar desitjos.\n\nAquesta lliçó **no reintrodueix** aquells verbs des de zero: els col·loca junts en una mateixa unitat per fer dues coses noves:\n\n1. **Afegir _möchten_** a la quadrícula de verbs de gust/desig i veure com encaixa amb _gefallen_, _finden_ i _mögen_.\n2. **Refinar la tria contextual** entre els quatre verbs, amb especial atenció als registres **estètic** (_gefallen_), **valoratiu** (_finden_), **afectiu estable** (_mögen_) i **volitiu puntual** (_möchten_)."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Idea clau",
+          "body": "En alemany real, dir \"m'agrada\" en català pot traduir-se a **quatre verbs diferents** segons el matís. Aquesta lliçó et dóna el mapa per triar el correcte en cada situació comunicativa."
+        },
+        {
+          "type": "explanation",
+          "body": "Al final podràs encadenar frases com: _Der Dom gefällt mir, aber ich finde ihn zu touristisch. Ich mag alte Kirchen, und heute möchte ich ins Museum gehen._ Quatre verbs, quatre matisos, una idea coherent.\n\nAquesta lliçó dura uns 12-15 minuts. Pressuposa que tens fresques **A1a-28** (acusatiu), **A1a-19** (patró modal de _mögen_/_möchte_) i **A1a-32** (contrast bàsic _gefallen_/_finden_/_mögen_)."
+        }
+      ]
+    },
+    {
+      "id": "overview",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Panorama: una taula de quatre entrades"
+        },
+        {
+          "type": "table",
+          "title": "6.1 Els quatre verbs en una taula",
+          "headers": ["Verb", "Estructura", "Matís", "Exemple"],
+          "rows": [
+            ["==**mögen**==", "Subjecte + Verb + **Akkusativ**", "Afecte estable, gust de fons", "_Ich **mag** den Dom._"],
+            ["==**finden**==", "Subjecte + Verb + **Akkusativ** + **Adjektiv**", "Opinió valorada, judici", "_Ich **finde** den Dom schön._"],
+            ["==**gefallen**==", "**Dativ** + Verb + **Subjekt** (cosa)", "Impressió estètica, reacció", "_Mir **gefällt** der Dom._"],
+            ["==**möchten**==", "Subjecte + Verb + (**Akkusativ** / **Infinitiv** al final)", "Desig puntual, petició educada", "_Ich **möchte** den Dom sehen._"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Els tres primers ja els coneixes de A1a-32. La novetat estructural d'aquesta lliçó és ==**möchten**== entrant al grup."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Regla mnemotècnica ràpida",
+          "body": "- _mögen_ → \"m'agrada, i ja fa temps\".\n- _finden_ → \"em sembla + adjectiu\".\n- _gefallen_ → \"em plau com es veu / com sona\".\n- _möchten_ → \"ara voldria\"."
+        }
+      ]
+    },
+    {
+      "id": "moechten-repaso",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### _möchten_: conjugació i doble ús\n\nA A1a-19 vas veure _möchte_ amb les seves sis formes. Aquí les recuperem **totes** i les posem al costat de les altres tres, perquè la lliçó original del curs IOC presenta les quatre taules alhora:"
+        },
+        {
+          "type": "table",
+          "title": "6.2 Conjugació de möchten",
+          "headers": ["Persona", "Forma"],
+          "rows": [
+            ["ich", "**möcht==e==**"],
+            ["du", "**möcht==est==**"],
+            ["er/sie/es", "**möcht==e==** _(igual que ich)_"],
+            ["wir", "**möcht==en==**"],
+            ["ihr", "**möcht==et==**"],
+            ["sie / Sie", "**möcht==en==**"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "_möchten_ té **dos comportaments sintàctics** que cal saber distingir, i és aquí on aprofundim respecte a A1a-19:\n\n**Ús 1 — Com a verb modal (amb infinitiu al final):**\n\n> _Ich **möchte** ins Kino **gehen**._ — Voldria anar al cinema.\n> _Wir **möchten** heute eine Pizza **essen**._ — Voldríem menjar una pizza avui.\n\nEl verb principal va a l'infinitiu, al final de la frase, formant la **Satzklammer** ja coneguda de A1a-18.\n\n**Ús 2 — Com a verb ple (amb complement directe en acusatiu, sense infinitiu):**\n\n> _Ich **möchte** einen Kaffee._ — Voldria un cafè.\n> _Sie **möchte** ein Stück Kuchen._ — Ella voldria un tall de pastís.\n\nAquí _möchten_ funciona com qualsevol verb transitiu: porta el seu objecte directe en acusatiu i no demana cap infinitiu. És l'ús típic del restaurant, la cafeteria i la botiga."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Per què això és diferent de l'A1a-19?",
+          "body": "A A1a-19 vèiem _möchte_ sobretot com a estratègia educada (\"voldria un cafè\"). Aquí el reenfoquem com un **verb amb dues estructures paral·leles**: o bé modal + infinitiu, o bé transitiu + acusatiu. Les dues són correctes; el context tria."
+        }
+      ]
+    },
+    {
+      "id": "check-moechten",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-6-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "fine-distinctions",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Distincions fines entre els quatre verbs\n\nA A1a-32 ja vas veure que _mögen_, _finden_ i _gefallen_ no són intercanviables. Aquí afegim _möchten_ i aprofundim. La clau: **cada verb té un domini comunicatiu predilecte**.\n\n**1. _gefallen_ vs. _finden_ — reacció vs. judici.**\n\n> _Mir **gefällt** das Kleid._ → Primera impressió estètica: el veig, m'entra pels ulls.\n> _Ich **finde** das Kleid schön._ → Judici raonat, opinió valorada amb adjectiu explícit.\n\nSovint conviuen: _Mir gefällt das Kleid, ich finde es elegant._ Primer reacciones, després valores.\n\n**2. _mögen_ vs. _gefallen_ — afecte estable vs. impressió puntual.**\n\n> _Ich **mag** Barock-Architektur._ → M'agrada de sempre, és una preferència meva.\n> _Mir **gefällt** diese Kirche._ → Aquesta església concreta em plau ara.\n\n_mögen_ parla de tu (el teu gust estable). _gefallen_ parla de la cosa (com t'arriba).\n\n**3. _mögen_ vs. _möchten_ — gust vs. desig.**\n\n> _Ich **mag** Kaffee._ → M'agrada el cafè (en general, sempre m'ha agradat).\n> _Ich **möchte** einen Kaffee._ → Ara voldria un cafè (desig concret, aquest moment).\n\nError clàssic: dir al cambrer _Ich mag einen Kaffee_. Sona filosòfic (\"m'agrada un cafè\"). El que vols és _Ich möchte einen Kaffee, bitte_.\n\n**4. _finden_ vs. _möchten_ — opinió vs. voluntat.**\n\n> _Ich **finde** das Museum interessant._ → Opinió sobre una cosa existent.\n> _Ich **möchte** ins Museum gehen._ → Intenció d'acció."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Test del dia",
+          "body": "Si vas a una exposició: a l'entrada dius _Ich möchte die Ausstellung sehen_ (desig). Davant d'un quadre: _Mir gefällt dieses Bild_ (reacció). Fent resum amb un amic: _Ich finde die Ausstellung gut_ (judici). A casa, al diari personal: _Ich mag moderne Kunst_ (afecte estable). **Quatre moments, quatre verbs.**"
+        }
+      ]
+    },
+    {
+      "id": "check-context",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-6-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys freqüents (en aquest nivell)\n\n1. **Confondre _mag_ i _möchte_ al restaurant.** ❌ _Ich mag einen Kaffee._ ✅ _Ich möchte einen Kaffee._ Repassat ja a A1a-19, però continua sent l'error número u.\n2. **_möchten_ amb infinitiu al mig.** ❌ _Ich möchte trinken einen Kaffee._ ✅ _Ich möchte einen Kaffee trinken._ L'infinitiu tanca la Satzklammer al final.\n3. **Barrejar estructures de _gefallen_ i _finden_.** ❌ _Ich gefalle den Dom schön._ ✅ _Mir gefällt der Dom_ (datiu + nominatiu, sense adjectiu obligatori) o _Ich finde den Dom schön_ (acusatiu + adjectiu).\n4. **Concordança de _gefallen_.** ❌ _Mir gefällt die Bilder._ ✅ _Mir **gefallen** die Bilder._ El verb concorda amb el subjecte (la cosa, plural aquí), no amb la persona.\n5. **_finden_ sense adjectiu.** ❌ _Ich finde den Film._ (= \"localitzo la pel·lícula\"). ✅ _Ich finde den Film gut._\n6. **Oblidar la -e de _möchte_ (1a/3a sg.).** ❌ _Ich möcht einen Kaffee._ ✅ _Ich möchte einen Kaffee._ A diferència de _mag_ (sense -e), _möchte_ sí que en porta."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Atenció: möchten ≠ wollen",
+          "body": "**Traduir _möchten_ per \"vull\"** és un matís important a evitar. _möchten_ és **educat i suau** (\"voldria\"); _wollen_ és **directe** (\"vull\"). A l'A1b-15/16 veuràs _wollen_ a fons."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-6-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-6-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-6-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-6-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi\n\nAmb aquesta lliçó tens el **quadre complet** dels quatre verbs per expressar gustos, opinions i desitjos a l'A1:\n\n- ==**mögen**== + acusatiu → **gust estable**: _Ich mag Jazz._\n- ==**finden**== + acusatiu + adjectiu → **opinió valorada**: _Ich finde den Film gut._\n- ==**gefallen**== + datiu → **reacció estètica**: _Mir gefällt die Stadt._\n- ==**möchten**== + acusatiu o + infinitiu → **desig puntual / petició educada**: _Ich möchte einen Kaffee_ / _Ich möchte ins Kino gehen._\n\n**Regla pràctica de tria:**\n1. _\"Em sembla + adjectiu\"_ → **finden**.\n2. _\"M'agrada de sempre\"_ → **mögen**.\n3. _\"Reacciono davant\"_ → **gefallen**.\n4. _\"Voldria / m'agradaria + ara / aquí\"_ → **möchten**."
+        },
+        {
+          "type": "table",
+          "title": "6.3 Conjugacions clau a memoritzar",
+          "headers": ["Verb", "Pista de conjugació"],
+          "rows": [
+            ["_gefallen_", "canvi a → ä a _du gefällst_, _er gefällt_ (com _fallen_)"],
+            ["_finden_", "regular, però _du findest_, _er findet_ (amb -e- intercalada)"],
+            ["_mögen_", "patró modal: _ich mag = er mag_ (sense terminació); plural recupera _ö_"],
+            ["_möchten_", "_ich möchte = er möchte_ (amb -e); _du möchtest_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pròxims passos",
+          "body": "A **A1b-7** ampliaràs el repertori amb més verbs i expressions de preferència (_interessieren_, _neugierig auf_, graduadors com _unbedingt_). A **A1b-15/16** aprofundiràs en la família modal sencera, incloent _wollen_ com a desig directe (contrastat amb _möchten_ com a desig suau)."
+        },
+        {
+          "type": "table",
+          "title": "6.4 Fonts consultades",
+          "headers": ["Font", "Ús"],
+          "rows": [
+            ["IOC – Grammatik A1b", "Capítol 6: quadre de quatre verbs i exercicis originals."],
+            ["Deutsche Welle \"Nicos Weg\" A1", "Episodis sobre gustos i demanar al restaurant."],
+            ["Goethe-Institut A1", "Materials de referència de nivell."],
+            ["dwds.de", "Entrades de _gefallen_, _finden_, _mögen_, _möchten_."]
+          ]
+        }
+      ]
+    }
+  ]
+}

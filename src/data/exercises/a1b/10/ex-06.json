@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-10-ex-06",
+  "topicId": "A1b-10",
+  "title": "Tradueix amb un verb en -ieren",
+  "prompt": "Tradueix cada frase a l'alemany utilitzant un verb en _-ieren_ al present. Escriu la **frase sencera**.",
+  "difficulty": 3,
+  "tags": ["produccio", "traduccio", "ieren", "present"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) \"Estudio alemany a Viena.\" _(Deutsch, Wien)_ → {{1}}\nb) \"Telefonem al meu pare.\" _(mit meinem Vater)_ → {{2}}\nc) \"El professor organitza una festa.\" _(der Lehrer, eine Party)_ → {{3}}\nd) \"Proves el pastís?\" _(du, den Kuchen)_ → {{4}}",
+    "blanks": [
+      { "id": "1", "label": "frase alemanya" },
+      { "id": "2", "label": "frase alemanya" },
+      { "id": "3", "label": "frase alemanya" },
+      { "id": "4", "label": "pregunta alemanya" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Ich studiere Deutsch in Wien." },
+      { "blankId": "2", "placeholder": "Wir telefonieren mit meinem Vater." },
+      { "blankId": "3", "placeholder": "Der Lehrer organisiert eine Party." },
+      { "blankId": "4", "placeholder": "Probierst du den Kuchen?" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Ich studiere Deutsch in Wien.", "Ich studiere Deutsch in Wien", "In Wien studiere ich Deutsch.", "In Wien studiere ich Deutsch"],
+      "2": ["Wir telefonieren mit meinem Vater.", "Wir telefonieren mit meinem Vater"],
+      "3": ["Der Lehrer organisiert eine Party.", "Der Lehrer organisiert eine Party"],
+      "4": ["Probierst du den Kuchen?", "Probierst du den Kuchen"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has triat el verb _-ieren_ adequat en cada cas i l'has conjugat amb la desinència correcta.",
+      "references": ["A1b-10", "A1a-7"]
+    },
+    "incorrect": {
+      "default": "Recorda les desinències regulars: _ich -e_, _du -st_, _er/sie/es -t_, _wir -en_. L'arrel sempre és el verb sense _-en_ final (_studier-_, _telefonier-_, _organisier-_, _probier-_). I a la pregunta total, el verb va en primera posició: _**Probierst** du den Kuchen?_ (no _Du probierst…?_)."
+    }
+  }
+}
