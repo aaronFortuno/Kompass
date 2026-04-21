@@ -24,6 +24,7 @@ export const DEFAULT_SETTINGS = {
   textScale: 1.0,
   studyMode: 'fragment',
   typewriter: true,
+  typewriterSpeed: 3, // 1 (ràpid) – 5 (lent); vegeu beatTransitions.js
   tableAnim: true,
 };
 
@@ -41,6 +42,10 @@ export const useSettingsStore = create(
       },
       setStudyMode: (studyMode) => set({ studyMode }),
       setTypewriter: (typewriter) => set({ typewriter }),
+      setTypewriterSpeed: (typewriterSpeed) => {
+        const n = Math.round(typewriterSpeed);
+        set({ typewriterSpeed: Math.min(5, Math.max(1, n)) });
+      },
       setTableAnim: (tableAnim) => set({ tableAnim }),
 
       update: (patch) => set(patch),
@@ -55,6 +60,7 @@ export const useSettingsStore = create(
         textScale: state.textScale,
         studyMode: state.studyMode,
         typewriter: state.typewriter,
+        typewriterSpeed: state.typewriterSpeed,
         tableAnim: state.tableAnim,
       }),
       onRehydrateStorage: () => (state) => {
@@ -81,6 +87,7 @@ export function useSettings() {
     textScale: s.textScale,
     studyMode: s.studyMode,
     typewriter: s.typewriter,
+    typewriterSpeed: s.typewriterSpeed,
     tableAnim: s.tableAnim,
   }));
 }

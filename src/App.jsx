@@ -15,19 +15,20 @@ export default function App() {
       <ThemeProvider>
         <HashRouter>
           <Routes>
+            {/*
+              El FocusReader ocupa la viewport sencera i no vol el shell
+              a sota, per això /temari/:topicId queda fora del grup AppShell.
+            */}
+            <Route path="temari/:topicId" element={<TopicPage />} />
+            <Route path="temari/:topicId/:stepId" element={<TopicPage />} />
+            <Route path="temes/:topicId" element={<TopicPage />} />
+            <Route path="temes/:topicId/:stepId" element={<TopicPage />} />
+
             <Route element={<AppShell />}>
               <Route index element={<HomePage />} />
               <Route path="home" element={<Navigate to="/" replace />} />
-
-              {/* Temari: nom canònic, §5 ARCHITECTURE. Mantenim /temes com
-                  a alias per no trencar bookmarks del període previ. */}
               <Route path="temari" element={<TopicsIndexPage />} />
-              <Route path="temari/:topicId" element={<TopicPage />} />
-              <Route path="temari/:topicId/:stepId" element={<TopicPage />} />
               <Route path="temes" element={<Navigate to="/temari" replace />} />
-              <Route path="temes/:topicId" element={<TopicPage />} />
-              <Route path="temes/:topicId/:stepId" element={<TopicPage />} />
-
               <Route path="rutes" element={<PlaceholderPage titleKey="nav.paths" />} />
               <Route path="progres" element={<ProgressPage />} />
               <Route path="settings" element={<SettingsPage />} />

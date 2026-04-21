@@ -2,21 +2,19 @@ import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { useTopic } from '@/hooks/useTopic.js';
 import { useT } from '@/i18n';
-import { StepViewer } from '@/components/topic/StepViewer.jsx';
+import { FocusReader } from '@/components/reader/FocusReader.jsx';
 
-function BackLink() {
-  const { t } = useT();
-  return (
-    <Link
-      to="/temes"
-      className="inline-flex items-center gap-1 text-sm text-content-muted hover:text-content motion-hover"
-    >
-      <ArrowLeft size={16} aria-hidden="true" />
-      <span>{t('topic.backToIndex')}</span>
-    </Link>
-  );
-}
-
+/*
+ * TopicPage · §18 ARCHITECTURE
+ *
+ * Punt d'entrada a un tema. Es renderitza fora de l'AppShell (vegeu
+ * src/App.jsx) per permetre que el FocusReader ocupi la viewport
+ * sencera sense el header/footer del shell.
+ *
+ * Si el topic no existeix, mostrem una pàgina d'error amb accés al
+ * temari. Es renderitza amb el fons paper i la mateixa tipografia
+ * editorial per coherència.
+ */
 export function TopicPage() {
   const { topicId } = useParams();
   const { t } = useT();
@@ -24,32 +22,25 @@ export function TopicPage() {
 
   if (!topic) {
     return (
-      <div className="section-gap max-w-content-read">
-        <BackLink />
-        <h1 className="text-3xl font-semibold text-content">
-          {t('topic.notFoundTitle')}
-        </h1>
-        <p className="text-content-muted">
-          {t('topic.notFoundBody', { id: topicId })}
-        </p>
+      <div className="min-h-screen bg-reader-paper text-reader-ink px-6 py-12">
+        <div className="max-w-content-read mx-auto section-gap">
+          <Link
+            to="/temari"
+            className="inline-flex items-center gap-1 font-mono text-[11px] uppercase tracking-[0.14em] text-reader-ink-2 hover:text-reader-ink transition-colors duration-fast ease-standard"
+          >
+            <ArrowLeft size={14} aria-hidden="true" />
+            <span>{t('topic.backToIndex')}</span>
+          </Link>
+          <h1 className="font-serif text-4xl font-medium text-reader-ink">
+            {t('topic.notFoundTitle')}
+          </h1>
+          <p className="font-serif text-reader-ink-2">
+            {t('topic.notFoundBody', { id: topicId })}
+          </p>
+        </div>
       </div>
     );
   }
 
-  return (
-    <article className="section-gap max-w-content-read">
-      <header className="space-y-3">
-        <BackLink />
-        <p className="text-sm uppercase tracking-wide text-content-muted">
-          {topic.id}
-        </p>
-        <h1 className="text-3xl sm:text-4xl font-semibold text-content">
-          {topic.title}
-        </h1>
-        <p className="text-content-muted">{topic.description}</p>
-      </header>
-
-      <StepViewer topic={topic} />
-    </article>
-  );
+  return <FocusReader topic={topic} />;
 }
