@@ -177,7 +177,7 @@ export function ReaderSettingsDrawer({ open, onClose }) {
             >
               <div className="flex items-center gap-2">
                 <span className="font-mono text-[9px] text-reader-muted uppercase tracking-wider">
-                  {t('settings.reading.typewriterSpeedFast')}
+                  {t('settings.reading.typewriterSpeedSlow')}
                 </span>
                 <input
                   type="range"
@@ -190,7 +190,7 @@ export function ReaderSettingsDrawer({ open, onClose }) {
                   className="w-24 accent-reader-ink"
                 />
                 <span className="font-mono text-[9px] text-reader-muted uppercase tracking-wider">
-                  {t('settings.reading.typewriterSpeedSlow')}
+                  {t('settings.reading.typewriterSpeedFast')}
                 </span>
               </div>
             </SettingRow>

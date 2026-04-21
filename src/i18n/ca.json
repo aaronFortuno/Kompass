@@ -8,7 +8,7 @@
     "topics": "Temari",
     "paths": "Rutes",
     "progress": "Progrés",
-    "settings": "Ajustos",
+    "settings": "Ajustaments",
     "about": "Sobre"
   },
   "home": {
@@ -85,7 +85,7 @@
     "dark": "Fosc"
   },
   "settings": {
-    "title": "Ajustos",
+    "title": "Ajustaments",
     "intro": "Personalitza l'experiència de lectura i d'estudi. Les preferències es desen al navegador i afecten immediatament la vista del temari.",
     "appearance": {
       "title": "Aparença",
@@ -99,9 +99,9 @@
     "reading": {
       "title": "Lectura",
       "studyMode": "Mode d'estudi",
-      "studyModeFragment": "Fragment a fragment",
+      "studyModeFragment": "Fragment",
       "studyModeFragmentDesc": "Una idea alhora, a pantalla gran. El ritme canònic.",
-      "studyModeFull": "Pas complet",
+      "studyModeFull": "Pas sencer",
       "studyModeFullDesc": "Tots els fragments d'un pas apilats. Útil per al repàs.",
       "typewriter": "Efecte màquina d'escriure",
       "typewriterDesc": "Mostra el text progressivament, caràcter a caràcter.",

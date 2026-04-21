@@ -94,9 +94,9 @@
     "reading": {
       "title": "Lectura",
       "studyMode": "Modo de estudio",
-      "studyModeFragment": "Fragmento a fragmento",
+      "studyModeFragment": "Fragmento",
       "studyModeFragmentDesc": "Una idea a la vez, en pantalla grande. El ritmo canónico.",
-      "studyModeFull": "Paso completo",
+      "studyModeFull": "Paso entero",
       "studyModeFullDesc": "Todos los fragmentos de un paso apilados. Útil para repaso.",
       "typewriter": "Efecto máquina de escribir",
       "typewriterDesc": "Muestra el texto progresivamente, carácter a carácter.",

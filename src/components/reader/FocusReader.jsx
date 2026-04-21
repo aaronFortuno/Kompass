@@ -1149,6 +1149,16 @@ export function FocusReader({ topic }) {
         return;
       }
 
+      // Barra d'espai: pausa/reprèn la barra d'auto-play (§87). Només
+      // activa quan autoPlay està encès i tenim la barra visible.
+      if ((e.key === ' ' || e.code === 'Space') && !e.ctrlKey && !e.metaKey && !e.altKey) {
+        if (inInput) return;
+        if (!settings.autoPlay) return;
+        e.preventDefault();
+        setAutoPlayPaused((v) => !v);
+        return;
+      }
+
       // ↓ / ↑ : skip typewriter. Primer press revela el beat actual;
       // següents presses avancen mantenint el skip actiu.
       if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
@@ -1218,48 +1228,52 @@ export function FocusReader({ topic }) {
   }, [goBeat]);
 
   /*
-   * Auto-play: avança automàticament al beat següent un cop ha passat el
-   * temps estimat de lectura + l'autoPlayDelay configurat (1-10 s). Les
-   * condicions que el pausen:
+   * Auto-play amb barra de progrés visible. Dues fases:
+   *   Fase 1 — lectura: esperem readMs (temps estimat del typewriter o
+   *     de l'animació del beat). Durant aquesta fase, la barra no és
+   *     visible.
+   *   Fase 2 — delay: mostrem la barra animada durant autoPlayDelay
+   *     segons. Al final de l'animació, avancem al beat següent.
+   *
+   * El flux es pausa amb barra d'espai (autoPlayPaused=true) → l'estat
+   * CSS animation-play-state:paused atura la barra mid-progress.
+   *
+   * Condicions que pausen totalment l'auto-play:
    *   - settings.autoPlay desactivat
-   *   - beat actual és exercici (esperem que l'usuari el resolgui)
-   *   - estem al mode studyMode=full (scroll natural)
+   *   - beat actual és exercici
+   *   - mode studyMode=full
    *   - splash o drawer oberts
-   *   - fi del topic (isAtEnd)
-   *   - fastMode: el timer s'escurça a només el delay pur (sense temps
-   *     de typewriter), per respectar que l'usuari vol anar ràpid.
+   *   - final del topic
    */
+  const [autoPlayBarActive, setAutoPlayBarActive] = useState(false);
+  const [autoPlayPaused, setAutoPlayPaused] = useState(false);
+
+  const autoPlayEligible =
+    settings.autoPlay &&
+    !isFullMode &&
+    !splashVisible &&
+    !drawerOpen &&
+    !!beat &&
+    beat.type !== 'exercise' &&
+    !isAtEnd;
+
   useEffect(() => {
-    if (!settings.autoPlay) return undefined;
-    if (isFullMode) return undefined;
-    if (splashVisible || drawerOpen) return undefined;
-    if (!beat) return undefined;
-    if (beat.type === 'exercise') return undefined;
-    if (isAtEnd) return undefined;
-
+    setAutoPlayBarActive(false);
+    setAutoPlayPaused(false);
+    if (!autoPlayEligible) return undefined;
     const readMs = fastMode
-      ? 400
+      ? 300
       : estimateBeatReadMs(beat, speed, settings.typewriter !== false);
-    const delayMs = Math.max(1, settings.autoPlayDelay || 3) * 1000;
-    const totalMs = readMs + delayMs;
-
-    const t = window.setTimeout(() => {
-      goBeatRef.current?.(1);
-    }, totalMs);
+    const t = window.setTimeout(() => setAutoPlayBarActive(true), readMs);
     return () => window.clearTimeout(t);
   }, [
     stepIdx,
     beatIdx,
     beat,
-    settings.autoPlay,
-    settings.autoPlayDelay,
-    settings.typewriter,
-    speed,
-    splashVisible,
-    drawerOpen,
-    isFullMode,
-    isAtEnd,
+    autoPlayEligible,
     fastMode,
+    speed,
+    settings.typewriter,
   ]);
 
   // Swipe tàctil.
@@ -1377,6 +1391,23 @@ export function FocusReader({ topic }) {
         )}
       </div>
 
+      {/* Barra de progrés de l'auto-play (§87). Entre body i foot, s'anima
+          d'esquerra a dreta durant autoPlayDelay segons; pot pausar-se
+          amb la barra d'espai. Al final, goBeat(1). */}
+      {autoPlayBarActive ? (
+        <div className="kf-autoplay-bar" aria-hidden="true">
+          <div
+            key={`${stepIdx}-${beatIdx}-${autoPlayPaused ? 'p' : 'r'}`}
+            className="kf-autoplay-bar-fill"
+            style={{
+              animationDuration: `${Math.max(1, settings.autoPlayDelay || 3)}s`,
+              animationPlayState: autoPlayPaused ? 'paused' : 'running',
+            }}
+            onAnimationEnd={() => goBeatRef.current?.(1)}
+          />
+        </div>
+      ) : null}
+
       {/* PEU */}
       <div className="kf-foot">
         <button
@@ -1439,10 +1470,18 @@ export function FocusReader({ topic }) {
             <span className="kf-sep" />
             <span
               className={'kgroup' + (settings.autoPlay ? ' kf-keyhint-active' : '')}
-              title={settings.autoPlay ? 'Auto-play actiu' : 'Activa l\'auto-play'}
+              title={
+                settings.autoPlay
+                  ? autoPlayPaused
+                    ? 'Auto-play pausat (espai reprèn)'
+                    : 'Auto-play actiu (espai pausa)'
+                  : 'Activa l\'auto-play'
+              }
             >
               <kbd>p</kbd>
-              <span className="lbl">{settings.autoPlay ? 'auto' : 'play'}</span>
+              <span className="lbl">
+                {settings.autoPlay ? (autoPlayPaused ? 'pausat' : 'auto') : 'play'}
+              </span>
             </span>
             <span className="kf-sep" />
             <span className="kgroup">

@@ -64,16 +64,16 @@ export function resolveTransition(beat, settings) {
 
 /*
  * Mapping velocitat typewriter (1-5) → ms/char.
- * 1: molt ràpid, 5: molt lent. Default: 3.
- * Nivell 1 és gairebé sense typewriter visible (streaming ràpid); el
- * nivell 5 convida a llegir amb pausa.
+ * 1: molt LENT, 5: molt RÀPID. Default: 3 (mig).
+ * El slider es visualitza esquerra=lent → dreta=ràpid per intuïció
+ * (valor numèric creixent = més ràpid).
  */
 export const TYPEWRITER_SPEED_MS = {
-  1: 15,
-  2: 26,
+  1: 85,
+  2: 62,
   3: 42,
-  4: 62,
-  5: 85,
+  4: 26,
+  5: 15,
 };
 
 export function resolveTypewriterSpeed(level = 3) {

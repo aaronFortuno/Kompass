@@ -25,7 +25,7 @@ export function SegmentedControl({ value, options, onChange, name }) {
             aria-checked={active}
             onClick={() => onChange(opt.value)}
             className={[
-              'px-3 py-1.5 text-[11px] font-mono uppercase tracking-[0.12em]',
+              'px-2.5 py-1 text-[10px] font-mono uppercase tracking-[0.08em]',
               'transition-colors duration-fast ease-standard',
               active
                 ? 'bg-reader-ink text-reader-paper'
@@ -75,14 +75,14 @@ export function SettingRow({ icon: Icon, title, description, children, id, disab
   return (
     <div
       className={[
-        'flex items-start gap-4 py-5 border-b border-reader-rule last:border-b-0',
+        'flex flex-wrap items-start gap-x-4 gap-y-3 py-5 border-b border-reader-rule last:border-b-0',
         disabled ? 'opacity-50 pointer-events-none' : '',
       ].join(' ')}
     >
       <div className="flex-shrink-0 text-reader-ink-2 mt-1">
         {Icon ? <Icon size={20} aria-hidden="true" /> : null}
       </div>
-      <div className="flex-1 min-w-0">
+      <div className="flex-1 min-w-[12rem]">
         <div id={id} className="font-serif text-lg text-reader-ink">
           {title}
         </div>
@@ -90,7 +90,7 @@ export function SettingRow({ icon: Icon, title, description, children, id, disab
           <p className="mt-1 text-sm text-reader-ink-2 font-serif">{description}</p>
         ) : null}
       </div>
-      <div className="flex-shrink-0 flex items-center pt-1">{children}</div>
+      <div className="flex-shrink-0 flex items-center pt-1 ml-auto">{children}</div>
     </div>
   );
 }
