@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-13",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 13,
+  "title": "Wiederholung - Plural der Substantive",
+  "shortTitle": "Plural II",
+  "description": "Repàs del plural alemany amb més exigència: les 6 terminacions, l'Umlaut i l'excepció dels femenins acabats en -el / -er.",
+  "axes": ["generes-articles-declinacio"],
+  "prerequisites": ["A1a-12"],
+  "estimatedMinutes": 15,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Context i motivació\n\nA A1a-12 vas veure que el plural alemany té **6 terminacions** possibles i que, a més, hi pot aparèixer **Umlaut**. En aquesta lliçó no aprens res del tot nou: **consolides**. Els exercicis són més exigents, amb més parany, i el PDF d'A1b hi afegeix un petit matís —una casuística al patró dels acabats en **-er/-el/-en**— que convé clavar ara que ja tens la base."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Objectiu d'aquesta lliçó",
+          "body": "Que quan et trobis un substantiu nou sàpigues (i) preveure raonablement el plural a partir del singular, (ii) reconèixer el patró imprevisible i memoritzar-lo, i (iii) no caure als paranys típics del catalanoparlant."
+        },
+        {
+          "type": "explanation",
+          "body": "La idea central segueix igual:"
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Recorda",
+          "body": "En alemany hi ha **6 terminacions** de plural (_-n_, _∅_, _-e_, _-er_, _-en_, _-s_), combinables amb **Umlaut** (_a→ä_, _o→ö_, _u→ü_, _au→äu_). La base és la **terminació del singular**."
+        }
+      ]
+    },
+    {
+      "id": "repas-taula",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Repàs ràpid: la taula de les 6 terminacions"
+        },
+        {
+          "type": "table",
+          "title": "13.1 Les 6 terminacions del plural",
+          "headers": ["#", "Singular acaba en…", "Plural", "Exemple", "Notes"],
+          "rows": [
+            ["①", "**-e**", "**-n**", "die Nas**e** → die Nas**en**", "Molts són femenins."],
+            ["②", "**-er, -el, -en**", "**∅** / Umlaut + ∅", "der Finger → die Finger; die Mutter → die M**ü**tter", "Vegeu excepció sota."],
+            ["③", "consonant", "**-e** / Umlaut + -e", "der Arm → die Arm**e**; die Hand → die H**ä**nd**e**", "—"],
+            ["④", "consonant", "**-er** / Umlaut + -er", "das Wort → die W**ö**rt**er**", "Sovint neutres."],
+            ["⑤", "consonant", "**-en**", "das Ohr → die Ohr**en**", "Patró femení per defecte."],
+            ["⑥", "_Fremdwort_", "**-s**", "der Popo → die Popo**s**", "Sovint neutres."]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Matís que aporta A1b-13 (patró ②)",
+          "body": "Els substantius **femenins** acabats en **-el** —i alguns en **-er**— **no** segueixen el patró ② (∅), sinó que fan el plural amb **-n**. Exemple canònic: _die **Schulter** → die **Schultern**_. Aquí es barreja amb la regla general: \"els femenins quasi sempre fan plural en _-(e)n_\"."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Tipp del llibre",
+          "body": "==Apunta cada substantiu amb gènere **i** plural: \"_der Hals, Hälse_\".== És l'única manera fiable de consolidar a llarg termini."
+        }
+      ]
+    },
+    {
+      "id": "check-repas",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-13-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "exception-femenins",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Zoom a l'excepció del patró ②\n\nEl patró ② diu que els acabats en **-er, -el, -en** no afegeixen res al plural. Però hi ha una excepció sistemàtica:"
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Excepció sistemàtica",
+          "body": "==Els substantius **femenins** acabats en **-el** (i alguns en **-er**) fan el plural amb **-n**, no ∅.=="
+        },
+        {
+          "type": "explanation",
+          "body": "Compara:\n\n- der Fing**er** → die Fing**er** (masc., patró ② ∅)\n- die Schult**er** → die Schult**ern** (fem., patró ①/⑤ amb -n)\n- der Onk**el** → die Onk**el** (masc., patró ② ∅)\n- die Reg**el** → die Reg**eln** (fem., plural en -n)\n- die Gab**el** → die Gab**eln** (fem., plural en -n)\n\nLa lògica: ==els femenins, gairebé sempre, fan el plural en **-(e)n**, encara que la terminació del singular suggereixi un altre patró.== El patró femení guanya."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Com decidir ràpid",
+          "body": "Davant d'un substantiu acabat en -el o -er: mira l'article. Si és _der_ o _das_, aplica patró ② (∅ o Umlaut+∅). Si és _die_, aplica plural en _-n_."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-13-ex-02", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-13-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-13-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Recapitulem\n\nAquesta lliçó era un **repàs amb més exigència** del plural alemany. Les sis terminacions ja les coneixies; el que calia era (i) interioritzar-les sense dubtar, (ii) identificar quan el gènere **trenca** el patró esperat, i (iii) produir plurals complets amb Umlaut correcte.\n\nClaus per retenir:\n\n1. ==**Article plural sempre _die_**, sigui quin sigui el gènere original.==\n2. La **terminació del singular** és la primera pista; el **gènere** pot anul·lar-la.\n3. ==Els **femenins** gairebé sempre fan plural en **-(e)n**==, fins i tot quan acaben en -el o -er (_die Schulter → die Schultern_).\n4. L'**Umlaut** (_a→ä_, _o→ö_, _u→ü_, _au→äu_) apareix imprevisiblement als patrons ②, ③ i ④; mai al ⑥.\n5. Les **_Fremdwörter_** (sovint neutres) fan plural en **-s**.\n6. ==**Apunta cada substantiu nou amb gènere i plural**== (_der Hals, Hälse_). És l'hàbit que salva.\n\nSi encara dubtes amb un substantiu concret, no l'endevinis: **consulta i memoritza**. Els patrons són probabilitat, no llei."
+        },
+        {
+          "type": "table",
+          "title": "13.2 Taula de referència ràpida",
+          "headers": ["Pista", "Regla", "Exemple"],
+          "rows": [
+            ["Singular en -e", "+ -n", "Nase → Nasen"],
+            ["Masc./neutre en -er/-el/-en", "∅, potser Umlaut", "Finger → Finger; Mutter → Mütter"],
+            ["Fem. en -el / -er", "+ -n (excepció)", "Schulter → Schultern; Regel → Regeln"],
+            ["Consonant (masc./neutre)", "+ -e, potser Umlaut", "Arm → Arme; Hand → Hände"],
+            ["Neutres curts", "+ -er, potser Umlaut", "Wort → Wörter"],
+            ["Femení en consonant", "+ -en", "Ohr → Ohren"],
+            ["Fremdwort", "+ -s", "Auto → Autos; Taxi → Taxis"]
+          ]
+        }
+      ]
+    }
+  ]
+}

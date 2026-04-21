@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-13-ex-02",
+  "topicId": "A1b-13",
+  "title": "Completa el plural. Atenció al gènere.",
+  "prompt": "Completa el plural de cada substantiu. Per a les terminacions, tria entre _-n_, _-e_, _-er_, _-s_ o _∅_. Per a les vocals, tria la correcta (amb o sense Umlaut).",
+  "difficulty": 2,
+  "tags": ["plural", "terminacions", "umlaut", "genere"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) der Knöchel → die Knöchel{{1}}\nb) die Schulter → die Schulter{{2}}\nc) der Ellbogen → die Ellb{{3}}gen\nd) das Augenlid → die Augenlid{{4}}\ne) die Hand → die H{{5}}nde\nf) der Popo → die Popo{{6}}",
+    "blanks": [
+      { "id": "1", "label": "masc. patró ② ∅" },
+      { "id": "2", "label": "fem. en -er → -n" },
+      { "id": "3", "label": "Umlaut patró ②" },
+      { "id": "4", "label": "patró ④ -er" },
+      { "id": "5", "label": "Umlaut patró ③" },
+      { "id": "6", "label": "Fremdwort ⑥" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["-n", "-e", "-er", "-s", "∅"] },
+      { "blankId": "2", "options": ["-n", "-e", "-er", "-s", "∅"] },
+      { "blankId": "3", "options": ["o", "ö", "a", "ä"] },
+      { "blankId": "4", "options": ["-n", "-e", "-er", "-s", "∅"] },
+      { "blankId": "5", "options": ["a", "ä", "e", "ö"] },
+      { "blankId": "6", "options": ["-n", "-e", "-er", "-s", "∅"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "∅",
+      "2": "-n",
+      "3": "ö",
+      "4": "-er",
+      "5": "ä",
+      "6": "-s"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has combinat tres coses: terminació del singular, gènere (_die Schulter_ és femení i per això -n) i Umlaut (_Ellbogen → Ellbögen_, _Hand → Hände_).",
+      "references": ["A1b-13", "A1a-12"]
+    },
+    "incorrect": {
+      "default": "Revisa l'excepció femenina (_die Schulter → die Schultern_) i els Umlauts dels patrons ② i ③. _Ellbogen_ és masculí però agafa Umlaut en plural.",
+      "byResponse": [
+        {
+          "match": { "2": "∅" },
+          "message": "_die Schulter_ és femení: l'excepció del patró ② fa que prengui _-n_ → _die Schultern_.",
+          "references": ["A1b-13"]
+        },
+        {
+          "match": { "3": "o" },
+          "message": "_der Ellbogen_ és masculí i del patró ② ∅, però amb **Umlaut**: _die Ellbögen_.",
+          "references": ["A1b-13"]
+        },
+        {
+          "match": { "5": "a" },
+          "message": "_die Hand_ és femení, patró ③ amb Umlaut: _die Hände_.",
+          "references": ["A1b-13", "A1a-12"]
+        }
+      ]
+    }
+  }
+}

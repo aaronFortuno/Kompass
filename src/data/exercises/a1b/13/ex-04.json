@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-13-ex-04",
+  "topicId": "A1b-13",
+  "title": "Singular o plural en context",
+  "prompt": "Llegeix cada frase i decideix si la paraula marcada està en singular o en plural.",
+  "difficulty": 2,
+  "tags": ["plural", "context", "article", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) **Der Finger** tut weh. (El dit em fa mal.) → {{1}}\nb) **Die Finger** tun weh. (Els dits em fan mal.) → {{2}}\nc) **Die Mütter** sind müde. (Les mares estan cansades.) → {{3}}\nd) **Die Schulter** schmerzt. (L'espatlla em fa mal.) → {{4}}\ne) **Die Schultern** schmerzen. (Les espatlles em fan mal.) → {{5}}\nf) **Die Wörter** sind neu. (Les paraules són noves.) → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "article + verb" },
+      { "id": "2", "label": "forma idèntica, canvia l'article" },
+      { "id": "3", "label": "Umlaut" },
+      { "id": "4", "label": "fem. _die_ singular" },
+      { "id": "5", "label": "-n final" },
+      { "id": "6", "label": "plural" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["singular", "plural"] },
+      { "blankId": "2", "options": ["singular", "plural"] },
+      { "blankId": "3", "options": ["singular", "plural"] },
+      { "blankId": "4", "options": ["singular", "plural"] },
+      { "blankId": "5", "options": ["singular", "plural"] },
+      { "blankId": "6", "options": ["singular", "plural"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "singular",
+      "2": "plural",
+      "3": "plural",
+      "4": "singular",
+      "5": "plural",
+      "6": "plural"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has usat tres pistes: article (_der/die_), Umlaut (_Mutter/Mütter_) i terminació (_Schulter/Schultern_). També el verb (_tut/tun_, _schmerzt/schmerzen_) t'hi ajuda.",
+      "references": ["A1b-13", "A1a-12"]
+    },
+    "incorrect": {
+      "default": "Recorda: _die Finger_ té la mateixa forma que _der Finger_; l'única pista és l'article. _Schulter_ (sg.) vs. _Schultern_ (pl.) es distingeixen per la -n final.",
+      "byResponse": [
+        {
+          "match": { "2": "singular" },
+          "message": "El substantiu _Finger_ té la mateixa forma en singular i plural (patró ② ∅). L'única pista és l'article: _die_ (pl.) vs _der_ (sg.), i el verb _tun_ (pl.).",
+          "references": ["A1b-13"]
+        },
+        {
+          "match": { "4": "plural" },
+          "message": "_die Schulter_ (sense -n) és el singular femení. El plural seria _die Schultern_ (amb -n).",
+          "references": ["A1b-13"]
+        }
+      ]
+    }
+  }
+}

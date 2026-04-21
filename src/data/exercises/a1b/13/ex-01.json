@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-13-ex-01",
+  "topicId": "A1b-13",
+  "title": "Associa singular i terminació de plural",
+  "prompt": "Associa cada singular amb la seva terminació de plural.",
+  "difficulty": 1,
+  "tags": ["plural", "terminacions", "repas"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) die Blume → die Blume{{1}}\nb) der Nacken → die Nacken{{2}}\nc) die Schulter → die Schulter{{3}}\nd) das Auto → die Auto{{4}}",
+    "blanks": [
+      { "id": "1", "label": "patró ①" },
+      { "id": "2", "label": "patró ② ∅" },
+      { "id": "3", "label": "excepció fem. en -er" },
+      { "id": "4", "label": "patró ⑥" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["-n", "-e", "-er", "-s", "∅"] },
+      { "blankId": "2", "options": ["-n", "-e", "-er", "-s", "∅"] },
+      { "blankId": "3", "options": ["-n", "-e", "-er", "-s", "∅"] },
+      { "blankId": "4", "options": ["-n", "-e", "-er", "-s", "∅"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "-n",
+      "2": "∅",
+      "3": "-n",
+      "4": "-s"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Recorda l'excepció: femenins en -el/-er no fan patró ②, van al plural en -n.",
+      "references": ["A1b-13", "A1a-12"]
+    },
+    "incorrect": {
+      "default": "Mira el gènere i la terminació del singular: _die Schulter_ és femení, per tant plural en _-n_, no ∅.",
+      "byResponse": [
+        {
+          "match": { "3": "∅" },
+          "message": "_die Schulter_ és femení: cau sota l'excepció. Els femenins en -el/-er fan plural en _-n_: _die Schultern_.",
+          "references": ["A1b-13"]
+        },
+        {
+          "match": { "2": "-n" },
+          "message": "_der Nacken_ és masculí acabat en -en: patró ② ∅. Plural: _die Nacken_ (forma igual al singular).",
+          "references": ["A1b-13"]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-13-ex-03",
+  "topicId": "A1b-13",
+  "title": "Escriu el plural complet",
+  "prompt": "Escriu el plural complet de cada substantiu. Inclou l'Umlaut si escau.",
+  "difficulty": 3,
+  "tags": ["plural", "umlaut", "typein", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) die Nase → die {{1}}\nb) der Fingernagel → die {{2}}\nc) die Mutter → die {{3}}\nd) das Wort → die {{4}}\ne) der Arm → die {{5}}\nf) die Schulter → die {{6}}\ng) das Ohr → die {{7}}\nh) das Taxi → die {{8}}",
+    "blanks": [
+      { "id": "1", "label": "patró ①" },
+      { "id": "2", "label": "patró ② Umlaut" },
+      { "id": "3", "label": "patró ② Umlaut" },
+      { "id": "4", "label": "patró ④ Umlaut" },
+      { "id": "5", "label": "patró ③" },
+      { "id": "6", "label": "excepció fem. en -er" },
+      { "id": "7", "label": "patró ⑤" },
+      { "id": "8", "label": "patró ⑥" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "plural de _Nase_" },
+      { "blankId": "2", "placeholder": "plural de _Fingernagel_" },
+      { "blankId": "3", "placeholder": "plural de _Mutter_" },
+      { "blankId": "4", "placeholder": "plural de _Wort_" },
+      { "blankId": "5", "placeholder": "plural de _Arm_" },
+      { "blankId": "6", "placeholder": "plural de _Schulter_" },
+      { "blankId": "7", "placeholder": "plural de _Ohr_" },
+      { "blankId": "8", "placeholder": "plural de _Taxi_" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Nasen"],
+      "2": ["Fingernägel"],
+      "3": ["Mütter"],
+      "4": ["Wörter"],
+      "5": ["Arme"],
+      "6": ["Schultern"],
+      "7": ["Ohren"],
+      "8": ["Taxis"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has cobert els 6 patrons més l'excepció femenina: _Schulter_ no segueix el patró ② perquè és femení.",
+      "references": ["A1b-13", "A1a-12"]
+    },
+    "incorrect": {
+      "default": "Fixa't en les vocals umlautades: _Fingernagel → Fingernägel_, _Mutter → Mütter_, _Wort → Wörter_. I recorda _Schultern_ amb -n, no ∅."
+    }
+  }
+}
