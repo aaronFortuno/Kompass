@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-39-ex-06",
+  "topicId": "A1b-39",
+  "title": "Tradueix: verbs amb datiu + acusatiu",
+  "prompt": "Tradueix cada frase. Aquests verbs (_geben, schenken, schreiben, bringen, schicken, erklären_) porten **dos objectes alhora**: ==**destinatari en datiu**== + ==**cosa en acusatiu**==. Ordre neutre: ==**Dat. → Akk.**==",
+  "difficulty": 3,
+  "tags": ["traduccio", "datiu-acusatiu", "typeIn", "produccio", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Dono un petó a la meva amiga._ → {{1}}\n\n2. _Regalo un rellotge al meu pare._ → {{2}}\n\n3. _Li escric una carta (a ell)._ → {{3}}\n\n4. _El cambrer ens porta el cafè._ → {{4}}\n\n5. _Envio una postal a la meva mare._ → {{5}}\n\n6. _El professor explica la gramàtica als alumnes._ → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "1. _geben_ + Dat. f. + Akk. m." },
+      { "id": "2", "label": "2. _schenken_ + Dat. m. + Akk. f." },
+      { "id": "3", "label": "3. _schreiben_ + pron. Dat. + Akk. m." },
+      { "id": "4", "label": "4. _bringen_ + pron. Dat. + Akk. m." },
+      { "id": "5", "label": "5. _schicken_ + Dat. f. + Akk. f." },
+      { "id": "6", "label": "6. _erklären_ + Dat. pl. (+ _-n_) + Akk. f." }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Ich gebe …" },
+      { "blankId": "2", "placeholder": "Ich schenke …" },
+      { "blankId": "3", "placeholder": "Ich schreibe ihm …" },
+      { "blankId": "4", "placeholder": "Der Kellner bringt …" },
+      { "blankId": "5", "placeholder": "Ich schicke …" },
+      { "blankId": "6", "placeholder": "Der Lehrer erklärt …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": [
+        "Ich gebe meiner Freundin einen Kuss.",
+        "Ich gebe meiner Freundin einen Kuss"
+      ],
+      "2": [
+        "Ich schenke meinem Vater eine Uhr.",
+        "Ich schenke meinem Vater eine Uhr"
+      ],
+      "3": [
+        "Ich schreibe ihm einen Brief.",
+        "Ich schreibe ihm einen Brief",
+        "Ich schreibe ihr einen Brief.",
+        "Ich schreibe ihr einen Brief"
+      ],
+      "4": [
+        "Der Kellner bringt uns den Kaffee.",
+        "Der Kellner bringt uns den Kaffee"
+      ],
+      "5": [
+        "Ich schicke meiner Mutter eine Postkarte.",
+        "Ich schicke meiner Mutter eine Postkarte"
+      ],
+      "6": [
+        "Der Lehrer erklärt den Schülern die Grammatik.",
+        "Der Lehrer erklärt den Schülern die Grammatik"
+      ]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. L'ordre neutre és ==**Dat. (persona) → Akk. (cosa)**==. Has aplicat correctament les terminacions del datiu (_-m, -r, -n_ de plural) i les de l'acusatiu (_-n_ masculí, sense canvi fem./neut.).",
+      "references": ["A1b-39", "A1b-36"]
+    },
+    "incorrect": {
+      "default": "Tres controls per verb de donació: (1) **ordre** Dat. → Akk. (2) **destinatari** amb terminació de datiu (_meinem, meiner, den…n_). (3) **cosa** amb terminació d'acusatiu (_einen_ masc., _eine_ fem., _ein_ neut.). No oblidis la ==_-n_ del plural datiu== (_Schülern, Kindern_).",
+      "byResponse": [
+        {
+          "match": { "6": "Der Lehrer erklärt die Schüler die Grammatik." },
+          "message": "_erklären_ = ==**dat. + akk.**==. _Schüler_ (pl.) → datiu plural: _den_ + _-n_ al substantiu → ==_den Schüler**n**_==. Correcte: _Der Lehrer erklärt ==den Schülern== die Grammatik._"
+        },
+        {
+          "match": { "6": "Der Lehrer erklärt den Schüler die Grammatik." },
+          "message": "Falta la ==_-n_ del plural datiu==: _den Schüler**n**_ (no _den Schüler_). Regla: tots els plurals datius afegeixen _-n_ al substantiu."
+        },
+        {
+          "match": { "1": "Ich gebe meine Freundin einen Kuss." },
+          "message": "La persona destinatària va en ==**datiu**==. Femení datiu: _meine_ → ==_meiner_==. _Ich gebe ==meiner== Freundin einen Kuss._"
+        },
+        {
+          "match": { "2": "Ich schenke meinen Vater eine Uhr." },
+          "message": "El destinatari va en datiu, no acusatiu. Masculí datiu: _meinen_ → ==_meinem_==. _Ich schenke ==meinem== Vater eine Uhr._"
+        },
+        {
+          "match": { "5": "Ich schicke meine Mutter eine Postkarte." },
+          "message": "La destinatària (la mare) va en datiu. Femení datiu: _meine_ → ==_meiner_==. _Ich schicke ==meiner== Mutter eine Postkarte._"
+        }
+      ]
+    }
+  }
+}

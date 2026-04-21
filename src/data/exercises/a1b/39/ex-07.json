@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-39-ex-07",
+  "topicId": "A1b-39",
+  "title": "Corregeix el cas",
+  "prompt": "Cada frase té un **error de cas**. Tria la forma correcta del mot ressaltat perquè la frase compleixi el règim del verb. Identifica primer si el verb demana ==acusatiu==, ==datiu== o ==dat. + akk.==, i després tria la terminació.",
+  "difficulty": 3,
+  "tags": ["correccio-errors", "casos", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich helfe {{1}} Bruder._ (_helfen_ + ?)\n\n2. _Das Buch gefällt {{2}}._ (_gefallen_ + pronom ?)\n\n3. _Ich besuche {{3}} Oma._ (_besuchen_ + ?)\n\n4. _Ich gebe {{4}} Lehrer das Heft._ (_geben_ — destinatari?)\n\n5. _Sie liest {{5}} Zeitung._ (_lesen_ + ?)\n\n6. _Ich danke {{6}}._ (_danken_ + pl. ?)",
+    "blanks": [
+      { "id": "1", "label": "1. _meinen_ ❌ / _meinem_ ✅ / _meine_ ❌" },
+      { "id": "2", "label": "2. _mich_ ❌ / _mir_ ✅" },
+      { "id": "3", "label": "3. _meiner_ ❌ / _meine_ ✅" },
+      { "id": "4", "label": "4. _den_ ❌ / _dem_ ✅" },
+      { "id": "5", "label": "5. _der_ ❌ / _die_ ✅" },
+      { "id": "6", "label": "6. _den Kinder_ ❌ / _den Kindern_ ✅" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["meinen", "meinem", "meine"] },
+      { "blankId": "2", "options": ["mich", "mir"] },
+      { "blankId": "3", "options": ["meiner", "meine", "meinen"] },
+      { "blankId": "4", "options": ["den", "dem", "der"] },
+      { "blankId": "5", "options": ["der", "die", "dem"] },
+      { "blankId": "6", "options": ["den Kinder", "den Kindern", "die Kinder"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "meinem",
+      "2": "mir",
+      "3": "meine",
+      "4": "dem",
+      "5": "die",
+      "6": "den Kindern"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Els errors clàssics són dos: (1) ==**donar acusatiu quan el verb vol datiu**== (_helfen, gefallen, danken_ → dat., no akk.), (2) ==**oblidar la _-n_ del plural datiu**== (_den Kinder**n**_).",
+      "references": ["A1b-39", "A1b-36", "A1b-37"]
+    },
+    "incorrect": {
+      "default": "Repassa el règim del verb abans de declinar. _helfen, gefallen, gehören, danken, gratulieren, schmecken_ → ==**datiu**== (mai acusatiu). _besuchen, lesen, lieben, haben_ → ==**acusatiu**==. _geben, schenken, schicken_ → ==**dat. + akk.**==. I sempre _-n_ al substantiu en plural datiu.",
+      "byResponse": [
+        {
+          "match": { "1": "meinen" },
+          "message": "_meinen_ seria **acusatiu**, però _helfen_ rigeix ==**datiu**==. Masculí datiu: ==_meinem_== Bruder."
+        },
+        {
+          "match": { "2": "mich" },
+          "message": "_mich_ és acusatiu. _gefallen_ rigeix ==**datiu**==: el pronom és ==_mir_==. _Das Buch gefällt ==mir==._"
+        },
+        {
+          "match": { "3": "meiner" },
+          "message": "_meiner_ seria **datiu**, però _besuchen_ és ==**acusatiu**==. Femení acusatiu = nominatiu: ==_meine_== Oma."
+        },
+        {
+          "match": { "4": "den" },
+          "message": "En _geben_ la **persona** (_Lehrer_) és destinatària i va en ==**datiu**==. Masculí datiu: _den_ → ==_dem_==. _Ich gebe ==dem== Lehrer das Heft._"
+        },
+        {
+          "match": { "5": "der" },
+          "message": "_der_ seria datiu femení, però _lesen_ és ==**acusatiu**==. Femení acusatiu = nominatiu: ==_die_== Zeitung."
+        },
+        {
+          "match": { "6": "den Kinder" },
+          "message": "_danken_ rigeix datiu — _den_ és correcte com a article de plural datiu, però falta la ==_-n_ del plural al substantiu==: ==_den Kinder**n**_==."
+        },
+        {
+          "match": { "6": "die Kinder" },
+          "message": "_danken_ rigeix ==**datiu**==, no acusatiu. Plural datiu: _die_ → _den_ **i** afegir _-n_ al substantiu → ==_den Kindern_==."
+        }
+      ]
+    }
+  }
+}

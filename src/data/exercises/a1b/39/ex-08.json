@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-39-ex-08",
+  "topicId": "A1b-39",
+  "title": "Diàleg integrador: el regal del dissabte",
+  "prompt": "Completa el diàleg triant la forma correcta. A cada buit hi ha tres candidats: determina el règim del verb (==acusatiu==, ==datiu==, ==dat. + akk.==) i tria. Vigila els pronoms: _mir/dir/ihm/ihr/uns/euch/ihnen_ (dat.) vs _mich/dich/ihn/sie/uns/euch/sie_ (akk.).",
+  "difficulty": 3,
+  "tags": ["dialeg", "integracio", "pronoms", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "**Anna:** Was machst du am Samstag?\n\n**Ben:** Ich kaufe {{1}} Mutter ein Geschenk.\n\n**Anna:** Ein Geschenk? {{2}} gefällt deiner Mutter denn?\n\n**Ben:** Bücher. Ich schenke {{3}} immer Romane.\n\n**Anna:** Gut. Und danach?\n\n**Ben:** Ich besuche {{4}} Großeltern. Ich helfe {{5}} im Garten.\n\n**Anna:** Hilfst du {{6}} oft?\n\n**Ben:** Ja, jeden Samstag. Ich liebe {{7}} sehr.\n\n**Anna:** Schön. Gib {{8}} einen Kuss von mir!",
+    "blanks": [
+      { "id": "1", "label": "1. _kaufen_ amb beneficiari (dat. f., \"a la meva mare\")" },
+      { "id": "2", "label": "2. subjecte de _gefallen_ (pregunta, cosa)" },
+      { "id": "3", "label": "3. pronom datiu \"a ella\" (la mare)" },
+      { "id": "4", "label": "4. _besuchen_ + Akk. pl. (possessiu)" },
+      { "id": "5", "label": "5. pronom datiu \"a ells\" (els avis, _helfen_)" },
+      { "id": "6", "label": "6. pronom datiu \"a ells\" (_helfen_)" },
+      { "id": "7", "label": "7. pronom acusatiu \"a ells\" (_lieben_)" },
+      { "id": "8", "label": "8. pronom datiu destinatari (_geben_ + Dat. + Akk.)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["meine", "meiner", "meinen"] },
+      { "blankId": "2", "options": ["Was", "Wem", "Wen"] },
+      { "blankId": "3", "options": ["sie", "ihr", "ihn"] },
+      { "blankId": "4", "options": ["meine", "meiner", "meinen"] },
+      { "blankId": "5", "options": ["sie", "ihnen", "ihr"] },
+      { "blankId": "6", "options": ["sie", "ihnen", "ihr"] },
+      { "blankId": "7", "options": ["sie", "ihnen", "ihr"] },
+      { "blankId": "8", "options": ["sie", "ihnen", "ihr"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "meiner",
+      "2": "Was",
+      "3": "ihr",
+      "4": "meine",
+      "5": "ihnen",
+      "6": "ihnen",
+      "7": "sie",
+      "8": "ihnen"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Observa com canvia el pronom segons el règim: _lieben_ → ==**akk. _sie_**==, _helfen_ → ==**dat. _ihnen_**==. Els pronoms de datiu (_mir, dir, ihm, ihr, uns, euch, ihnen_) són una peça clau que reprendràs a [A1b-37] i [A1b-41].",
+      "references": ["A1b-39", "A1b-37"]
+    },
+    "incorrect": {
+      "default": "Mètode: per cada buit, (1) identifica el verb i el seu règim. (2) Mira el gènere/nombre i si és persona/cosa. (3) Tria entre pronom acusatiu (_mich, dich, ihn, sie, uns, euch, sie_) o datiu (_mir, dir, ihm, ihr, uns, euch, ihnen_). _kaufen_ amb destinatari = dat. + akk. _besuchen/lieben_ = akk. _helfen/gefallen_ = dat.",
+      "byResponse": [
+        {
+          "match": { "1": "meine" },
+          "message": "_kaufen_ amb beneficiari = ==**dat. + akk.**==. La mare és la **beneficiària** (datiu), no la cosa comprada. Femení datiu: ==_meiner_== Mutter."
+        },
+        {
+          "match": { "1": "meinen" },
+          "message": "_meinen_ seria acusatiu masculí; _Mutter_ és femení, i a més és la **destinatària** del regal → ==**datiu femení**==: _meiner_."
+        },
+        {
+          "match": { "2": "Wem" },
+          "message": "_gefallen_ té **la cosa com a subjecte** (com _gustar_): la pregunta és \"quina cosa agrada?\" → ==_Was?_==. _Wem gefällt…_ voldria saber _a qui_ agrada (la mare, ja coneguda)."
+        },
+        {
+          "match": { "3": "sie" },
+          "message": "_schenken_ = dat. + akk. \"a ella\" (la mare) és el destinatari → pronom ==**datiu** femení==: _ihr_. _sie_ seria acusatiu femení (\"a ella\" amb un verb transitiu com _lieben_)."
+        },
+        {
+          "match": { "5": "sie" },
+          "message": "_helfen_ rigeix ==**datiu**==. Pronom datiu plural: ==_ihnen_==. _sie_ seria acusatiu."
+        },
+        {
+          "match": { "6": "sie" },
+          "message": "Mateix cas: _helfen_ + **datiu** → ==_ihnen_==, no _sie_."
+        },
+        {
+          "match": { "7": "ihnen" },
+          "message": "_lieben_ és ==**acusatiu**==: \"els estimo\" = ==_sie_== (acusatiu plural), no _ihnen_ (datiu)."
+        },
+        {
+          "match": { "8": "sie" },
+          "message": "_geben_ = dat. + akk. El destinatari (\"dona'ls un petó\") va en ==**datiu**==: ==_ihnen_==. _Gib ==ihnen== einen Kuss!_"
+        }
+      ]
+    }
+  }
+}

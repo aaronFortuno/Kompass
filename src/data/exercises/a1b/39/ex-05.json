@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-39-ex-05",
+  "topicId": "A1b-39",
+  "title": "Tradueix: verbs amb datiu",
+  "prompt": "Tradueix cada frase del català a l'alemany. **Tots** els verbs d'aquest exercici rigeixen ==**datiu**==: el complement respon a _Wem?_ i porta les terminacions _-m_ (masc./neut.), _-r_ (fem.), _-n_ (pl.).",
+  "difficulty": 2,
+  "tags": ["traduccio", "datiu", "typeIn", "produccio", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ajudo la meva mare._ → {{1}}\n\n2. _El llibre m'agrada._ → {{2}}\n\n3. _El cotxe és del meu pare._ → {{3}}\n\n4. _Felicito la meva amiga._ → {{4}}\n\n5. _La sopa li agrada al nen._ → {{5}}\n\n6. _Agraeixo al mestre._ → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "1. _helfen_ + Dat. f." },
+      { "id": "2", "label": "2. _gefallen_ + pronom Dat." },
+      { "id": "3", "label": "3. _gehören_ + Dat. m." },
+      { "id": "4", "label": "4. _gratulieren_ + Dat. f." },
+      { "id": "5", "label": "5. _schmecken_ + Dat. n." },
+      { "id": "6", "label": "6. _danken_ + Dat. m." }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Ich helfe …" },
+      { "blankId": "2", "placeholder": "Das Buch gefällt …" },
+      { "blankId": "3", "placeholder": "Das Auto gehört …" },
+      { "blankId": "4", "placeholder": "Ich gratuliere …" },
+      { "blankId": "5", "placeholder": "Die Suppe schmeckt …" },
+      { "blankId": "6", "placeholder": "Ich danke …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": [
+        "Ich helfe meiner Mutter.",
+        "Ich helfe meiner Mutter"
+      ],
+      "2": [
+        "Das Buch gefällt mir.",
+        "Das Buch gefällt mir",
+        "Mir gefällt das Buch.",
+        "Mir gefällt das Buch"
+      ],
+      "3": [
+        "Das Auto gehört meinem Vater.",
+        "Das Auto gehört meinem Vater"
+      ],
+      "4": [
+        "Ich gratuliere meiner Freundin.",
+        "Ich gratuliere meiner Freundin"
+      ],
+      "5": [
+        "Die Suppe schmeckt dem Kind.",
+        "Die Suppe schmeckt dem Kind"
+      ],
+      "6": [
+        "Ich danke dem Lehrer.",
+        "Ich danke dem Lehrer"
+      ]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. En aquests sis verbs, no hi ha cap acusatiu: el complement sempre és ==**datiu**== (responen a _Wem?_). Recorda: ==_helfen, gefallen, gehören, gratulieren, schmecken, danken_== → datiu.",
+      "references": ["A1b-39", "A1b-36", "A1b-37"]
+    },
+    "incorrect": {
+      "default": "Tres pistes ortogràfiques del datiu: ==_-m_ final== (masc./neut., _dem/einem/meinem_), ==_-r_ final== (fem., _der/einer/meiner_), ==_-n_ del plural==. I els pronoms: _mir, dir, ihm, ihr, uns, euch, ihnen_.",
+      "byResponse": [
+        {
+          "match": { "1": "Ich helfe meine Mutter." },
+          "message": "_helfen_ rigeix ==**datiu**==, no acusatiu. Femení datiu: _meine_ → ==_meiner_==. Correcte: _Ich helfe ==meiner== Mutter._"
+        },
+        {
+          "match": { "2": "Das Buch gefällt mich." },
+          "message": "_gefallen_ funciona com _gustar_: la persona va en **datiu**. El pronom datiu de _ich_ és ==_mir_==, no _mich_ (que és acusatiu). _Das Buch gefällt ==mir==._"
+        },
+        {
+          "match": { "3": "Das Auto gehört mein Vater." },
+          "message": "_gehören_ rigeix datiu. Masculí datiu: _mein_ → ==_meinem_==. _Das Auto gehört ==meinem== Vater._"
+        },
+        {
+          "match": { "4": "Ich gratuliere meine Freundin." },
+          "message": "_gratulieren_ rigeix datiu (com _danken_). Femení datiu: _meine_ → ==_meiner_==. _Ich gratuliere ==meiner== Freundin._"
+        },
+        {
+          "match": { "6": "Ich danke den Lehrer." },
+          "message": "_danke**n**_ rigeix **datiu**, no acusatiu. Masculí datiu: _den_ → ==_dem_==. _Ich danke ==dem== Lehrer._"
+        }
+      ]
+    }
+  }
+}

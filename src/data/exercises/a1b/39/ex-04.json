@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-39-ex-04",
+  "topicId": "A1b-39",
+  "title": "Tradueix: verbs amb acusatiu",
+  "prompt": "Tradueix cada frase del català a l'alemany. Tots els verbs d'aquest exercici són **transitius típics** → el complement va en ==**acusatiu**==. Vigila la terminació de l'article masculí (_der → den_, _ein → einen_).",
+  "difficulty": 2,
+  "tags": ["traduccio", "acusatiu", "typeIn", "produccio", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Tinc un germà._ → {{1}}\n\n2. _Compro un llibre._ → {{2}}\n\n3. _Llegim el diari._ → {{3}}\n\n4. _Visito la meva àvia._ → {{4}}\n\n5. _Entens la pregunta?_ → {{5}}\n\n6. _Ella estima el seu gos._ → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "1. _haben_ + Akk. m." },
+      { "id": "2", "label": "2. _kaufen_ + Akk. n." },
+      { "id": "3", "label": "3. _lesen_ + Akk. f." },
+      { "id": "4", "label": "4. _besuchen_ + Akk. f. (possessiu)" },
+      { "id": "5", "label": "5. _verstehen_ + Akk. f. (pregunta)" },
+      { "id": "6", "label": "6. _lieben_ + Akk. m. (possessiu)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Ich habe …" },
+      { "blankId": "2", "placeholder": "Ich kaufe …" },
+      { "blankId": "3", "placeholder": "Wir lesen …" },
+      { "blankId": "4", "placeholder": "Ich besuche …" },
+      { "blankId": "5", "placeholder": "Verstehst du …?" },
+      { "blankId": "6", "placeholder": "Sie liebt …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": [
+        "Ich habe einen Bruder.",
+        "Ich habe einen Bruder"
+      ],
+      "2": [
+        "Ich kaufe ein Buch.",
+        "Ich kaufe ein Buch"
+      ],
+      "3": [
+        "Wir lesen die Zeitung.",
+        "Wir lesen die Zeitung"
+      ],
+      "4": [
+        "Ich besuche meine Großmutter.",
+        "Ich besuche meine Oma.",
+        "Ich besuche meine Großmutter",
+        "Ich besuche meine Oma"
+      ],
+      "5": [
+        "Verstehst du die Frage?",
+        "Verstehst du die Frage"
+      ],
+      "6": [
+        "Sie liebt ihren Hund.",
+        "Sie liebt ihren Hund"
+      ]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Tots aquests verbs són transitius: el complement és ==**acusatiu**==. Senyals visuals: _einen, den, meinen, ihren_ (masc. akk., _-n_); _die, meine, ihre_ (fem. akk., sense canvi); _ein, das_ (neut. akk., sense canvi).",
+      "references": ["A1b-39", "A1a-26", "A1b-36"]
+    },
+    "incorrect": {
+      "default": "Fes la pregunta _Wen?_ (persona) o _Was?_ (cosa) — el complement que respon va en acusatiu. La terminació crítica és la del masculí: _der → ==den==_, _ein → ==einen==_, _mein → ==meinen==_, _ihr → ==ihren==_.",
+      "byResponse": [
+        {
+          "match": { "1": "Ich habe ein Bruder." },
+          "message": "_Bruder_ és masculí: _der Bruder_ → akk. ==_den Bruder_==. Amb article indefinit: _ein_ → ==_einen_==. La forma correcta és _Ich habe ==einen== Bruder._"
+        },
+        {
+          "match": { "6": "Sie liebt ihr Hund." },
+          "message": "_Hund_ és masculí. Posseessiu femení \"el seu\" (d'ella) + masculí acusatiu: _ihr_ → ==_ihren_==. _Sie liebt ==ihren== Hund._"
+        },
+        {
+          "match": { "4": "Ich besuche meiner Großmutter." },
+          "message": "Parany: _meiner_ seria datiu, però _besuchen_ és ==**acusatiu**==. Femení acusatiu = nominatiu: ==_meine_== Großmutter."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-39",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 39,
+  "title": "Verben mit Akkusativergänzung und Verben mit Dativergänzung",
+  "shortTitle": "Verbs Akk/Dat",
+  "description": "Els tres règims més freqüents a l'A1: verbs amb acusatiu (≈90%), verbs amb datiu (≈10%) i verbs amb datiu + acusatiu (verbs de donació).",
+  "axes": ["pronoms-verbs", "casos"],
+  "prerequisites": ["A1b-38"],
+  "estimatedMinutes": 30,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Transitius i intransitius: una definició precisa\n\nEn català sovint fem servir _transitiu_ i _intransitiu_ de manera difusa (\"porta complement\" / \"no porta complement\"). En alemany la terminologia és ==més estricta==:\n\n- **Verb transitiu** = verb que admet un ==complement directe en acusatiu== (_Akkusativergänzung_).\n- **Verb intransitiu** = verb que ==no admet acusatiu==. Pot tenir altres complements (datiu, preposició), però no objecte directe.\n\nAquesta distinció és crucial per una raó pràctica: ==aproximadament el 90% dels verbs alemanys són transitius==, és a dir, porten acusatiu. Quan apareix un verb nou, la hipòtesi per defecte és \"serà transitiu, amb acusatiu\". El 10% restant són intransitius amb datiu, i ==aquests sí que cal memoritzar-los un per un==."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Consell estratègic",
+          "body": "No intentis aprendre \"els verbs transitius\" com una llista: són la majoria. Concentra't a memoritzar ==la minoria de verbs amb datiu==. És la inversió més rendible d'hores d'estudi al nivell A1."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Enfoc de la lliçó",
+          "body": "Ens centrem en els **tres règims més freqüents a l'A1**: (1) verbs ==amb acusatiu== (_haben, kaufen, essen, lesen_…), (2) verbs ==amb datiu== (_helfen, gefallen, gehören_…) i (3) verbs ==amb datiu + acusatiu== (_geben, schicken, erklären_…). La idea clau és **terminològica i pràctica**: ==_transitiu_ vol dir \"que admet acusatiu\"==, no simplement \"que porta complement\"."
+        }
+      ]
+    },
+    {
+      "id": "akkusativ",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Verbs amb complement d'acusatiu (_Verben mit Akkusativergänzung_)\n\nSón els **transitius típics**. L'objecte directe respon a les preguntes ==_Wen?_== (a qui?, per a persones) o ==_Was?_== (què?, per a coses). L'article es declina segons la taula d'acusatiu: _den, die, das, die (pl.)_ · _einen, eine, ein_.\n\n##### Esquema\n\n> **Subjecte (Nom.) + Verb + Complement directe (Akk.)**\n\n- _==Ich== ==habe== ==einen Bruder==._ — _Tinc un germà._ (_Wen habe ich?_ → _einen Bruder_)\n- _==Ich== ==kaufe== ==ein Buch==._ — _Compro un llibre._ (_Was kaufe ich?_ → _ein Buch_)\n- _==Sie== ==liest== ==die Zeitung==._ — _Llegeix el diari._ (_Was liest sie?_ → _die Zeitung_)\n- _==Wir== ==besuchen== ==unsere Großmutter==._ — _Visitem la nostra àvia._ (_Wen besuchen wir?_ → _unsere Großmutter_)"
+        },
+        {
+          "type": "table",
+          "title": "39.1 Llista nuclear de verbs amb acusatiu (A1)",
+          "headers": ["Verb", "Significat", "Exemple"],
+          "rows": [
+            ["_haben_", "tenir", "_Ich habe ==einen Hund==._"],
+            ["_kaufen_", "comprar", "_Er kauft ==ein Auto==._"],
+            ["_essen_", "menjar", "_Wir essen ==einen Apfel==._"],
+            ["_trinken_", "beure", "_Sie trinkt ==einen Kaffee==._"],
+            ["_lesen_", "llegir", "_Ich lese ==das Buch==._"],
+            ["_sehen_", "veure", "_Wir sehen ==den Film==._"],
+            ["_hören_", "sentir / escoltar", "_Sie hört ==die Musik==._"],
+            ["_lieben_", "estimar", "_Ich liebe ==dich==._"],
+            ["_mögen_", "agradar (sentit fort)", "_Ich mag ==Schokolade==._"],
+            ["_lernen_", "aprendre", "_Wir lernen ==Deutsch==._"],
+            ["_studieren_", "estudiar (carrera)", "_Er studiert ==Medizin==._"],
+            ["_schreiben_", "escriure", "_Ich schreibe ==einen Brief==._"],
+            ["_suchen_", "buscar", "_Ich suche ==den Schlüssel==._"],
+            ["_finden_", "trobar", "_Sie findet ==die Lösung==._"],
+            ["_besuchen_", "visitar", "_Wir besuchen ==Anna==._"],
+            ["_nehmen_", "agafar", "_Ich nehme ==den Bus==._"],
+            ["_brauchen_", "necessitar", "_Er braucht ==einen Stift==._"],
+            ["_verstehen_", "entendre", "_Ich verstehe ==die Frage==._"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Atenció · _besuchen_",
+          "body": "Visitar ==_algú_== es diu amb acusatiu, no amb datiu, encara que el complement sigui una persona: _Ich besuche ==meine Freundin==._ (_Wen besuche ich?_ → _meine Freundin_). En català hi ha la temptació de pensar \"visito **a** la meva amiga\" (datiu), però en alemany _besuchen_ és transitiu pur."
+        }
+      ]
+    },
+    {
+      "id": "check-1-regim",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-39-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "dativ",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Verbs amb complement de datiu (_Verben mit Dativergänzung_)\n\nAquí som al ==10% intransitiu==. Aquests verbs ==no admeten acusatiu==: el seu complement va sempre en **datiu** i respon a la pregunta ==_Wem?_== (a qui?). L'article es declina segons la taula de datiu: _dem, der, dem, den (pl. + -n al substantiu)_ · _einem, einer, einem_.\n\n##### Esquema\n\n> **Subjecte (Nom.) + Verb + Complement (Dat.)**\n\n- _==Ich== ==helfe== ==meinem Bruder==._ — _Ajudo el meu germà._ (_Wem helfe ich?_ → _meinem Bruder_)\n- _==Das Buch== ==gefällt== ==mir==._ — _M'agrada el llibre._ (_Wem gefällt das Buch?_ → _mir_)\n- _==Das Auto== ==gehört== ==meiner Schwester==._ — _El cotxe és de la meva germana._\n- _==Die Suppe== ==schmeckt== ==dem Kind==._ — _A la canalla li agrada la sopa._"
+        },
+        {
+          "type": "table",
+          "title": "39.2 Llista nuclear de verbs amb datiu (A1)",
+          "headers": ["Verb", "Significat", "Qui va en datiu?"],
+          "rows": [
+            ["_helfen_", "ajudar", "la persona ajudada"],
+            ["_gefallen_", "agradar (estèticament)", "a qui li agrada"],
+            ["_gehören_", "pertànyer a", "el propietari"],
+            ["_schmecken_", "agradar (de gust)", "a qui li agrada"],
+            ["_passen_", "anar bé (roba, horari)", "a qui li va bé"],
+            ["_fehlen_", "faltar / trobar a faltar", "a qui li falta"],
+            ["_zuhören_", "escoltar (fer cas)", "qui és escoltat"],
+            ["_antworten_", "respondre", "qui rep la resposta"],
+            ["_danken_", "agrair", "qui és agraït"],
+            ["_gratulieren_", "felicitar", "qui és felicitat"],
+            ["_Leid tun_", "saber greu", "a qui li sap greu"],
+            ["_weh tun_", "fer mal", "a qui li fa mal"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Atenció · calcs del català",
+          "body": "Molts d'aquests verbs en català van amb acusatiu o sense preposició: _\"ajudo **el** meu germà\"_ (acusatiu en català), _\"felicito **la** meva amiga\"_. En alemany són ==sempre datius==, sense excepció. La pregunta mental que et salva: _==Wem?==_ (a qui?) → datiu."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Marcador pedagògic",
+          "body": "Aquests verbs estan marcats al diccionari amb _(j-m)_ o _(Dat.)_. Quan busquis _helfen_, trobaràs _\"j-m helfen\"_ (= _jemandem helfen_, \"ajudar algú\"). El ==-m de _jemandem_== és el senyal del datiu."
+        }
+      ]
+    },
+    {
+      "id": "check-2-pregunta",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-39-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "dativ-akkusativ",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Verbs amb datiu **i** acusatiu (_Verben mit Dativ- und Akkusativergänzung_)\n\nAquests verbs tenen ==dos objectes alhora==: un **directe** (la cosa donada, ensenyada, enviada…) en acusatiu, i un **indirecte** (la persona que rep) en datiu. És l'esquema clàssic de _geben_:\n\n> **Subjecte + Verb + Destinatari (Dat.) + Cosa (Akk.)**\n\n- _==Ich gebe meiner Freundin einen Kuss.==_ — _Faig un petó a la meva amiga._\n  - _Wem?_ → _meiner Freundin_ (Dat.)\n  - _Was?_ → _einen Kuss_ (Akk.)"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Regla mnemotècnica",
+          "body": "==**La cosa** (_Was?_) és l'objecte directe (Akk.). **La persona** (_Wem?_) és l'objecte indirecte (Dat.).==\n\nNomés és fiable amb ==verbs que admeten dos objectes==. Si el verb només en té un, no val: _besuchen_ té una persona com a objecte, però és acusatiu (_Wen?_, no _Wem?_)."
+        },
+        {
+          "type": "table",
+          "title": "39.3 Llista nuclear de verbs amb datiu + acusatiu (A1)",
+          "headers": ["Verb", "Significat", "Exemple"],
+          "rows": [
+            ["_geben_", "donar", "_Ich gebe ==dir== ==das Buch==._"],
+            ["_schenken_", "regalar", "_Sie schenkt ==ihrem Mann== ==eine Uhr==._"],
+            ["_zeigen_", "mostrar", "_Er zeigt ==mir== ==das Foto==._"],
+            ["_bringen_", "portar", "_Der Kellner bringt ==uns== ==den Kaffee==._"],
+            ["_schicken_", "enviar", "_Ich schicke ==meiner Mutter== ==eine Postkarte==._"],
+            ["_empfehlen_", "recomanar", "_Sie empfiehlt ==dem Gast== ==das Restaurant==._"],
+            ["_erklären_", "explicar", "_Der Lehrer erklärt ==den Schülern== ==die Grammatik==._"],
+            ["_kaufen\\*_", "comprar (per a algú)", "_Ich kaufe ==meinem Sohn== ==ein Spielzeug==._"],
+            ["_schreiben\\*_", "escriure (a algú)", "_Ich schreibe ==dir== ==einen Brief==._"],
+            ["_kochen\\*_", "cuinar (per a algú)", "_Er kocht ==uns== ==eine Suppe==._"]
+          ],
+          "caption": "\\* Aquests verbs són dobles: poden anar només amb acusatiu (_Ich kaufe ein Buch_) o amb datiu + acusatiu si apareix el beneficiari (_Ich kaufe meiner Mutter ein Buch_)."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Ordre dels objectes",
+          "body": "Quan tots dos són substantius, l'ordre habitual és ==**Datiu → Acusatiu**== (_Ich gebe ==meiner Freundin== ==einen Kuss==_). Quan hi ha pronoms, l'ordre pot variar — ho veuràs més endavant. De moment, **Dat + Akk** és la regla segura."
+        }
+      ]
+    },
+    {
+      "id": "contrast",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Contrast sistemàtic: un objecte vs dos\n\nCompara aquests parells. Mateix verb amb significats diferents segons el nombre d'objectes:\n\n**Només acusatiu:**\n\n- _Ich ==kaufe== ein Buch._ — _Compro un llibre._\n- _Ich ==schreibe== einen Brief._ — _Escric una carta._\n\n**Datiu + acusatiu:**\n\n- _Ich ==kaufe== **meiner Schwester** ein Buch._ — _Compro un llibre **per a la meva germana**._\n- _Ich ==schreibe== **dir** einen Brief._ — _T'escric una carta._\n\nEl datiu afegeix el ==beneficiari== (en alemany es coneix com _datiu de benefici_). No es diu en català amb _a_ directament (_\"escric a tu\"_ sona estrany): fem servir pronoms febles (_t'escric_) o preposicions (_per a tu_). En alemany, en canvi, és ==un datiu directe==, sense preposició."
+        }
+      ]
+    },
+    {
+      "id": "preguntes",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Les preguntes identificadores (_Wen? / Wem? / Was?_)\n\nAquesta és **l'eina diagnòstica** per saber quin cas porta un complement. Practica-la fins que sigui automàtica."
+        },
+        {
+          "type": "table",
+          "title": "39.4 Les tres preguntes clau",
+          "headers": ["Pregunta", "Cas", "Què busca"],
+          "rows": [
+            ["==_Wen?_==", "Acusatiu", "persona com a objecte directe"],
+            ["==_Was?_==", "Acusatiu (o Nom.)", "cosa com a objecte directe (o subjecte)"],
+            ["==_Wem?_==", "Datiu", "persona com a objecte indirecte"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Exemple treballat:** _Der Lehrer erklärt dem Schüler die Grammatik._\n\n- _==Wer== erklärt?_ → _der Lehrer_ (Nom. = subjecte)\n- _==Wem== erklärt er?_ → _dem Schüler_ (Dat. = a qui)\n- _==Was== erklärt er?_ → _die Grammatik_ (Akk. = què)\n\nCada pregunta \"atrapa\" un complement diferent. Si una frase té tres elements (subjecte + dos objectes), les tres preguntes han de tenir resposta. Si en falta alguna, algun complement està ocult o és el·líptic."
+        }
+      ]
+    },
+    {
+      "id": "check-3-articles",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-39-ex-03", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. Assumir que els verbs \"de persona\" van amb datiu.**\n\nEn català, molts verbs amb persona com a complement porten _a_: _\"ajudo **al** meu germà\"_, _\"visito **a** l'Anna\"_, _\"estimo **a** la Maria\"_. En alemany cal mirar ==el verb==, no el tipus de complement:\n\n- _Ich ==helfe meinem Bruder==._ (dat. — perquè _helfen_ pren datiu)\n- _Ich ==besuche Anna==._ (akk. — perquè _besuchen_ és transitiu)\n- _Ich ==liebe Maria==._ (akk. — perquè _lieben_ és transitiu)\n\n**2. Confondre _gefallen_ amb _mögen_.**\n\nTotes dues es tradueixen per _agradar_, però l'estructura és inversa:\n\n- ==_mögen_== = transitiu (akk.): _Ich ==mag das Lied==._ (\"M'agrada la cançó\" — **jo sóc el subjecte**)\n- ==_gefallen_== = intransitiu (dat.): _==Das Lied== ==gefällt mir==._ (\"La cançó m'agrada\" — **la cançó és el subjecte**)\n\nEstructuralment, _gefallen_ és idèntic al castellà/català _gustar_: _\"me gusta **la canción**\"_. És sovint el més fàcil dels verbs de datiu per a catalanoparlants, un cop l'identifiques.\n\n**3. Oblidar la _-n_ del plural en datiu.**\n\nEls plurals prenen _-n_ al substantiu en datiu, a banda de l'article:\n\n- _Ich helfe ==den Kinder**n**==._ (dat. pl. — _den Kinder**n**_)\n- Incorrecte: _Ich helfe den Kinder._ ❌\n\n**4. Calcar l'ordre del català en _geben_-verbs.**\n\nEn català, el pronom feble sovint va abans del verb: _\"et dono un llibre\"_ (datiu feble). En alemany, l'ordre canònic és ==Subjecte + Verb + Dat. + Akk.== i no hi ha pronoms \"febles\" moguts al davant:\n\n- _Ich ==gebe== ==dir== ==ein Buch==._ ✅\n- _Dir gebe ich ein Buch._ — és possible com a ==tematització==, però no és el neutre."
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Paranys 5 i 6",
+          "body": "**5. Fer servir acusatiu amb _helfen, gefallen, gehören_.** Aquest és l'error clàssic. Memoritza aquests tres com a ==trio== de datiu: _helfen, gefallen, gehören_. Si els interioritzes, evites el 80% dels errors de valència.\n\n- Incorrecte: _Ich helfe ==meinen== Bruder._ ❌\n- Correcte: _Ich helfe ==meinem== Bruder._ ✅\n\n**6. Pensar que \"tenir un complement\" = \"ser transitiu\".** Un verb pot ser intransitiu i tenir complement. _Helfen_ porta complement (_meinem Bruder_), però és intransitiu perquè ==aquest complement no és acusatiu==. Transitivitat = acusatiu, punt."
+        }
+      ]
+    },
+    {
+      "id": "check-4-trad-akk",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-39-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-5-trad-dat",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-39-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-6-trad-dat-akk",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-39-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-7-errors",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-39-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-8-dialeg",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-39-ex-08", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi\n\n**El sistema de valència verbal a l'A1, en una pàgina:**\n\n> **Acusatiu (≈ 90% dels verbs):** _haben, kaufen, lesen, sehen, lieben, besuchen…_ — pregunta ==_Wen? / Was?_==\n>\n> **Datiu (≈ 10% dels verbs):** _helfen, gefallen, gehören, schmecken, danken, gratulieren…_ — pregunta ==_Wem?_==\n>\n> **Datiu + Acusatiu (verbs de donació):** _geben, schenken, zeigen, bringen, schicken, erklären…_ — preguntes ==_Wem? + Was?_=="
+        },
+        {
+          "type": "table",
+          "title": "39.5 Les sis regles clau",
+          "headers": ["Regla", "Contingut"],
+          "rows": [
+            ["**1. Transitiu = acusatiu**", "\"Transitiu\" en alemany no vol dir genèricament \"porta complement\", sinó ==específicament \"admet acusatiu\"==."],
+            ["**2. Verbs de datiu = minoria**", "Memoritza'ls: _helfen, gefallen, gehören, schmecken, passen, fehlen, zuhören, antworten, danken, gratulieren, Leid tun, weh tun_."],
+            ["**3. Verbs de donació = Dat. + Akk.**", "La persona destinatària en datiu, la cosa en acusatiu. Ordre canònic: ==Dat → Akk==."],
+            ["**4. Diagnòstic amb preguntes**", "_Wer?_ (subj.) → _Wen?/Was?_ (akk.) → _Wem?_ (dat.). Cada pregunta \"atrapa\" un complement diferent."],
+            ["**5. _-n_ del plural datiu**", "Els substantius en plural datiu prenen ==_-n_==: _den Kindern, den Freunden, den Schülern_."],
+            ["**6. Verbs dobles**", "_kaufen, schreiben, kochen_ poden ser només akk. (_Ich kaufe ein Buch_) o dat. + akk. (_Ich kaufe meiner Mutter ein Buch_). El beneficiari opcional va en datiu."]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Com afecta això la teva manera d'aprendre verbs:**\n\n- Quan apuntis un verb nou al quadern, ==apunta també el règim==: _helfen + Dat._, _geben + Dat. + Akk._, _besuchen + Akk._ La informació de valència és tan important com el significat.\n- La regla d'or: si dubtes, ==prova acusatiu==. És la hipòtesi amb un 90% d'encerts.\n\n**Enllaços amb el que ja saps:**\n\n- **A1a-26** — **Acusatiu.** La base morfològica del primer objecte. _den, die, das, die / einen, eine, ein_.\n- **A1b-36** — **Declinació d'articles.** La taula completa amb acusatiu i datiu.\n- **A1b-37** — **Pronoms personals.** _mir, dir, ihm, ihr, uns, euch, ihnen_ — els que veus sovint amb verbs de datiu.\n- **A1b-38** — **Verbs i complements.** La classificació general; aquí aprofundim en tres casos concrets."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista pràctica final",
+          "body": "Quan veus una frase nova, ==aïlla el verb primer, després busca el règim==. _Ich ___ meinem Freund._ → si el verb és _helfen_ (dat.), _meinem_ és correcte. Si el verb fos _besuchen_ (akk.), caldria _meinen_. **El verb mana, el complement obeeix.**"
+        }
+      ]
+    }
+  ]
+}

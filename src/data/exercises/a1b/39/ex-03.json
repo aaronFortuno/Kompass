@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-39-ex-03",
+  "topicId": "A1b-39",
+  "title": "Tria l'article segons el règim del verb",
+  "prompt": "Selecciona l'article correcte segons el cas que demana el verb. Primer identifica el verb i el seu règim (==acusatiu==, ==datiu== o ==datiu + acusatiu==), després declina l'article.",
+  "difficulty": 2,
+  "tags": ["articles", "declinacio", "regim-verbal", "quick-check"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich habe {{1}} Bruder._ (_haben_)\n\n2. _Ich helfe {{2}} Bruder._ (_helfen_)\n\n3. _Das Buch gefällt {{3}} Frau._ (_gefallen_)\n\n4. _Er kauft {{4}} Frau Blumen._ (_kaufen_ amb beneficiari)\n\n5. _Sie liest {{5}} Zeitung._ (_lesen_)\n\n6. _Der Computer gehört {{6}} Kind._ (_gehören_)\n\n7. _Wir besuchen {{7}} Großmutter._ (_besuchen_)\n\n8. _Ich gebe {{8}} Lehrer das Heft._ (_geben_ — destinatari)\n\n9. _Ich gebe dem Lehrer {{9}} Heft._ (_geben_ — cosa donada)\n\n10. _Die Kinder danken {{10}} Eltern._ (_danken_, plural)",
+    "blanks": [
+      { "id": "1", "label": "1. _haben_ (akk. m.)" },
+      { "id": "2", "label": "2. _helfen_ (dat. m.)" },
+      { "id": "3", "label": "3. _gefallen_ (dat. f.)" },
+      { "id": "4", "label": "4. _kaufen_ amb beneficiari (dat. f.)" },
+      { "id": "5", "label": "5. _lesen_ (akk. f.)" },
+      { "id": "6", "label": "6. _gehören_ (dat. n.)" },
+      { "id": "7", "label": "7. _besuchen_ (akk. f., poss.)" },
+      { "id": "8", "label": "8. _geben_ destinatari (dat. m.)" },
+      { "id": "9", "label": "9. _geben_ cosa (akk. n.)" },
+      { "id": "10", "label": "10. _danken_ (dat. pl.)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["ein", "einen", "einem", "einer"] },
+      { "blankId": "2", "options": ["mein", "meinen", "meinem", "meiner"] },
+      { "blankId": "3", "options": ["die", "der", "den", "dem"] },
+      { "blankId": "4", "options": ["die", "der", "den", "dem"] },
+      { "blankId": "5", "options": ["die", "der", "den", "dem"] },
+      { "blankId": "6", "options": ["das", "dem", "den", "der"] },
+      { "blankId": "7", "options": ["unsere", "unseren", "unserer", "unserem"] },
+      { "blankId": "8", "options": ["der", "den", "dem", "das"] },
+      { "blankId": "9", "options": ["das", "dem", "den", "der"] },
+      { "blankId": "10", "options": ["die", "der", "den", "dem"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "einen",
+      "2": "meinem",
+      "3": "der",
+      "4": "der",
+      "5": "die",
+      "6": "dem",
+      "7": "unsere",
+      "8": "dem",
+      "9": "das",
+      "10": "den"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Cada verb té el seu règim. ==_haben, lesen, besuchen_== → **acusatiu**. ==_helfen, gefallen, gehören, danken_== → **datiu**. ==_geben, kaufen (amb beneficiari)_== → **datiu (persona) + acusatiu (cosa)**.",
+      "references": ["A1b-39", "A1b-36"]
+    },
+    "incorrect": {
+      "default": "El mètode: (1) identifica el verb i el seu règim. (2) Mira el gènere/nombre del substantiu. (3) Aplica la taula: masc. akk. _-n_; fem. akk. = nom.; neut. akk. = nom.; masc./neut. dat. _-m_; fem. dat. _-r_; pl. dat. _-n_.",
+      "byResponse": [
+        {
+          "match": { "2": "meinen" },
+          "message": "Parany clàssic: _helfen_ rigeix ==**datiu**==, no acusatiu. Masculí datiu: ==_meinem_== Bruder."
+        },
+        {
+          "match": { "3": "die" },
+          "message": "_gefallen_ rigeix **datiu**. Femení datiu: ==_der_== Frau (_die → der_ en datiu)."
+        },
+        {
+          "match": { "4": "die" },
+          "message": "_kaufen_ amb beneficiari = ==**dat. + akk.**==. La persona beneficiària (_Frau_) va en **datiu** femení: ==_der_== Frau."
+        },
+        {
+          "match": { "6": "das" },
+          "message": "_gehören_ rigeix **datiu**. Neutre datiu: _das → ==dem==_. _Der Computer gehört ==dem== Kind._"
+        },
+        {
+          "match": { "7": "unserer" },
+          "message": "_besuchen_ és **acusatiu** (no datiu!). Femení acusatiu = nominatiu: ==_unsere_== Großmutter."
+        },
+        {
+          "match": { "8": "den" },
+          "message": "_geben_ = **dat. + akk.**. La persona destinatària (_Lehrer_) va en **datiu** masculí: ==_dem_== Lehrer. El _den_ seria acusatiu."
+        },
+        {
+          "match": { "9": "dem" },
+          "message": "Aquí _Heft_ és la **cosa donada** → acusatiu. Neutre acusatiu = nominatiu: ==_das_== Heft."
+        },
+        {
+          "match": { "10": "die" },
+          "message": "_danken_ rigeix **datiu**. Plural datiu: ==_den_== (i _Eltern_ ja acaba en _-n_, per tant no canvia més)."
+        }
+      ]
+    }
+  }
+}

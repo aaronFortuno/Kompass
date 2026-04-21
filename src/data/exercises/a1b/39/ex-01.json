@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-39-ex-01",
+  "topicId": "A1b-39",
+  "title": "Identifica el règim del verb",
+  "prompt": "Per a cada verb, tria si porta ==**acusatiu**==, ==**datiu**== o ==**datiu + acusatiu**==. Recorda el repartiment: ≈90% acusatiu, el grup petit de datiu (_helfen, gefallen, gehören_ i companyia) i els verbs de donació amb dos objectes.",
+  "difficulty": 1,
+  "tags": ["valencia", "regim-verbal", "identificacio", "quick-check"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _**haben**_ (tenir) → {{1}}\n\n2. _**helfen**_ (ajudar) → {{2}}\n\n3. _**geben**_ (donar) → {{3}}\n\n4. _**gefallen**_ (agradar) → {{4}}\n\n5. _**lesen**_ (llegir) → {{5}}\n\n6. _**schenken**_ (regalar) → {{6}}\n\n7. _**gehören**_ (pertànyer) → {{7}}\n\n8. _**besuchen**_ (visitar) → {{8}}\n\n9. _**zeigen**_ (mostrar) → {{9}}\n\n10. _**schmecken**_ (agradar de gust) → {{10}}",
+    "blanks": [
+      { "id": "1", "label": "1. _haben_" },
+      { "id": "2", "label": "2. _helfen_" },
+      { "id": "3", "label": "3. _geben_" },
+      { "id": "4", "label": "4. _gefallen_" },
+      { "id": "5", "label": "5. _lesen_" },
+      { "id": "6", "label": "6. _schenken_" },
+      { "id": "7", "label": "7. _gehören_" },
+      { "id": "8", "label": "8. _besuchen_" },
+      { "id": "9", "label": "9. _zeigen_" },
+      { "id": "10", "label": "10. _schmecken_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["acusatiu", "datiu", "datiu + acusatiu"] },
+      { "blankId": "2", "options": ["acusatiu", "datiu", "datiu + acusatiu"] },
+      { "blankId": "3", "options": ["acusatiu", "datiu", "datiu + acusatiu"] },
+      { "blankId": "4", "options": ["acusatiu", "datiu", "datiu + acusatiu"] },
+      { "blankId": "5", "options": ["acusatiu", "datiu", "datiu + acusatiu"] },
+      { "blankId": "6", "options": ["acusatiu", "datiu", "datiu + acusatiu"] },
+      { "blankId": "7", "options": ["acusatiu", "datiu", "datiu + acusatiu"] },
+      { "blankId": "8", "options": ["acusatiu", "datiu", "datiu + acusatiu"] },
+      { "blankId": "9", "options": ["acusatiu", "datiu", "datiu + acusatiu"] },
+      { "blankId": "10", "options": ["acusatiu", "datiu", "datiu + acusatiu"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "acusatiu",
+      "2": "datiu",
+      "3": "datiu + acusatiu",
+      "4": "datiu",
+      "5": "acusatiu",
+      "6": "datiu + acusatiu",
+      "7": "datiu",
+      "8": "acusatiu",
+      "9": "datiu + acusatiu",
+      "10": "datiu"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Els tres verbs de datiu típics que has de recordar sí o sí: ==_helfen, gefallen, gehören_==. Els tres verbs de donació típics: ==_geben, schenken, zeigen_==. La resta és majoritàriament acusatiu.",
+      "references": ["A1b-39"]
+    },
+    "incorrect": {
+      "default": "Agrupa els verbs per tipus. ==**Datiu**== (el 10%): _helfen, gefallen, gehören, schmecken, danken, gratulieren…_ (respon a _Wem?_, sense cosa). ==**Dat. + Akk.**== (verbs de donació): _geben, schenken, zeigen, bringen, schicken, empfehlen, erklären_ (destinatari + cosa). La resta, ==**acusatiu**==.",
+      "byResponse": [
+        {
+          "match": { "2": "acusatiu" },
+          "message": "_helfen_ és un dels tres verbs clàssics de datiu. Memoritza el trio ==_helfen, gefallen, gehören_==: no admeten acusatiu mai."
+        },
+        {
+          "match": { "4": "acusatiu" },
+          "message": "_gefallen_ funciona com el castellà _gustar_: _Das Buch ==gefällt mir==_. El subjecte és la cosa (_Das Buch_) i la persona va en ==**datiu**==."
+        },
+        {
+          "match": { "7": "acusatiu" },
+          "message": "_gehören_ (pertànyer) sempre va amb ==**datiu**== del propietari: _Das Auto gehört ==meinem Vater==_."
+        },
+        {
+          "match": { "3": "acusatiu" },
+          "message": "_geben_ té **dos** complements: la cosa donada (Akk.) i el destinatari (Dat.) → ==**datiu + acusatiu**==: _Ich gebe ==dir== ==das Buch==_."
+        },
+        {
+          "match": { "8": "datiu" },
+          "message": "Parany clàssic: _besuchen_ porta una persona, però és ==**acusatiu**== (_Wen besuche ich?_). No confonguis amb el calc del català \"visito **a** l'Anna\"."
+        },
+        {
+          "match": { "10": "acusatiu" },
+          "message": "_schmecken_ funciona com _gefallen_: _Die Suppe schmeckt ==dem Kind==_. La cosa és subjecte, la persona va en ==**datiu**==."
+        },
+        {
+          "match": { "6": "acusatiu" },
+          "message": "_schenken_ (regalar) demana sempre destinatari: _Ich schenke ==meinem Vater== ==eine Uhr==_ → ==**datiu + acusatiu**==."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-39-ex-02",
+  "topicId": "A1b-39",
+  "title": "La pregunta correcta: _Wen? / Wem? / Was?_",
+  "prompt": "Tria la pregunta que \"atrapa\" cada complement ressaltat: ==_Wen?_== (persona en acusatiu), ==_Was?_== (cosa en acusatiu), ==_Wem?_== (persona en datiu). Fixa't en el **verb** i en **la forma de l'article**.",
+  "difficulty": 1,
+  "tags": ["wen-wem-was", "preguntes-diagnostiques", "quick-check"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich helfe **meiner Mutter**._ → {{1}}\n\n2. _Ich kaufe **ein Buch**._ → {{2}}\n\n3. _Ich besuche **Anna**._ → {{3}}\n\n4. _Das Auto gehört **meinem Vater**._ → {{4}}\n\n5. _Sie liest **die Zeitung**._ → {{5}}\n\n6. _Wir lieben **unseren Hund**._ → {{6}}\n\n7. _Die Suppe schmeckt **dem Kind**._ → {{7}}\n\n8. _Er schreibt **einen Brief**._ → {{8}}",
+    "blanks": [
+      { "id": "1", "label": "1. _meiner Mutter_" },
+      { "id": "2", "label": "2. _ein Buch_" },
+      { "id": "3", "label": "3. _Anna_" },
+      { "id": "4", "label": "4. _meinem Vater_" },
+      { "id": "5", "label": "5. _die Zeitung_" },
+      { "id": "6", "label": "6. _unseren Hund_" },
+      { "id": "7", "label": "7. _dem Kind_" },
+      { "id": "8", "label": "8. _einen Brief_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Wen?", "Wem?", "Was?"] },
+      { "blankId": "2", "options": ["Wen?", "Wem?", "Was?"] },
+      { "blankId": "3", "options": ["Wen?", "Wem?", "Was?"] },
+      { "blankId": "4", "options": ["Wen?", "Wem?", "Was?"] },
+      { "blankId": "5", "options": ["Wen?", "Wem?", "Was?"] },
+      { "blankId": "6", "options": ["Wen?", "Wem?", "Was?"] },
+      { "blankId": "7", "options": ["Wen?", "Wem?", "Was?"] },
+      { "blankId": "8", "options": ["Wen?", "Wem?", "Was?"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Wem?",
+      "2": "Was?",
+      "3": "Wen?",
+      "4": "Wem?",
+      "5": "Was?",
+      "6": "Wen?",
+      "7": "Wem?",
+      "8": "Was?"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. El sistema és simple: ==**Persona + acusatiu** → _Wen?_== · ==**Cosa + acusatiu** → _Was?_== · ==**Persona + datiu** → _Wem?_==. Si saps el cas, saps la pregunta, i a l'inrevés.",
+      "references": ["A1b-39"]
+    },
+    "incorrect": {
+      "default": "Dues pistes visuals: (1) article acabat en _-m_ (masc./neut.) o _-r_ (fem.) després del verb → ==**datiu**==, pregunta _Wem?_. (2) article en _-n_ o _-s_ o forma nominatival/acusatival → ==**acusatiu**==, pregunta _Wen?_ si és persona o _Was?_ si és cosa.",
+      "byResponse": [
+        {
+          "match": { "1": "Wen?" },
+          "message": "_meine**r** Mutter_ és **datiu** femení (_meiner_, no _meine_). _helfen_ rigeix datiu: la pregunta és ==_Wem?_==."
+        },
+        {
+          "match": { "3": "Wem?" },
+          "message": "_besuchen_ és transitiu pur (acusatiu), encara que el complement sigui una persona. Pregunta: ==_Wen?_== (a qui visito?)."
+        },
+        {
+          "match": { "4": "Wen?" },
+          "message": "_gehören_ rigeix **datiu**. _meine**m** Vater_ (_-m_ de datiu masculí). Pregunta: ==_Wem?_== (a qui pertany?)."
+        },
+        {
+          "match": { "6": "Wem?" },
+          "message": "_unsere**n** Hund_ és **acusatiu** masculí (_-en_). _lieben_ és transitiu. Com que és una criatura/persona, pregunta ==_Wen?_== (o _Was?_, també acceptable per a animal)."
+        },
+        {
+          "match": { "7": "Wen?" },
+          "message": "_de**m** Kind_ és **datiu** (neutre _dem_, no _das_). _schmecken_ funciona com _gefallen_: la persona va en datiu. Pregunta: ==_Wem?_==."
+        }
+      ]
+    }
+  }
+}
