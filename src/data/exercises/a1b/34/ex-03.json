@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-34-ex-03",
+  "topicId": "A1b-34",
+  "title": "Preposició i datiu",
+  "prompt": "Completa ==**dos buits**== per frase: (1) la preposició correcta (_seit_ o _vor_) i (2) la forma correcta del substantiu en ==datiu== (recorda la _-n_ al plural).",
+  "difficulty": 2,
+  "tags": ["seit-vor", "datiu", "datiu-plural", "dropdownFill"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Lukas wohnt {{1a}} drei {{1b}} in Hamburg._\n\n2. _Das Konzert hat {{2a}} zwei {{2b}} angefangen._\n\n3. _Ich kenne sie {{3a}} einem {{3b}}._\n\n4. _Er ist {{4a}} einer {{4b}} angekommen._\n\n5. _Wir wohnen {{5a}} 2020 zusammen._\n\n6. _{{6a}} wann lernst du Deutsch?_",
+    "blanks": [
+      { "id": "1a", "label": "1. preposició" },
+      { "id": "1b", "label": "1. substantiu (datiu pl.)" },
+      { "id": "2a", "label": "2. preposició" },
+      { "id": "2b", "label": "2. substantiu (datiu pl.)" },
+      { "id": "3a", "label": "3. preposició" },
+      { "id": "3b", "label": "3. substantiu (datiu sg.)" },
+      { "id": "4a", "label": "4. preposició" },
+      { "id": "4b", "label": "4. substantiu (datiu sg.)" },
+      { "id": "5a", "label": "5. preposició (+ any)" },
+      { "id": "6a", "label": "6. preposició interrogativa" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1a", "options": ["seit", "vor"] },
+      { "blankId": "1b", "options": ["Jahr", "Jahre", "Jahren"] },
+      { "blankId": "2a", "options": ["seit", "vor"] },
+      { "blankId": "2b", "options": ["Stunde", "Stunden"] },
+      { "blankId": "3a", "options": ["seit", "vor"] },
+      { "blankId": "3b", "options": ["Monat", "Monaten"] },
+      { "blankId": "4a", "options": ["seit", "vor"] },
+      { "blankId": "4b", "options": ["Woche", "Wochen"] },
+      { "blankId": "5a", "options": ["seit", "vor"] },
+      { "blankId": "6a", "options": ["Seit", "Vor"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1a": "seit",
+      "1b": "Jahren",
+      "2a": "vor",
+      "2b": "Stunden",
+      "3a": "seit",
+      "3b": "Monat",
+      "4a": "vor",
+      "4b": "Woche",
+      "5a": "seit",
+      "6a": "Seit"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Amb ==**plural + _seit_/_vor_**==, recorda la _-n_ del datiu: _Jahren, Monaten, Tagen, Stunden, Minuten_. Amb ==**singular**==, l'article va en datiu (_einem, einer_) i el substantiu **no canvia** (_einem Jahr, einer Woche, einem Monat_).",
+      "references": ["A1b-34", "A1b-20"]
+    },
+    "incorrect": {
+      "default": "Dos controls: (1) preposició — present vigent → _seit_, Perfekt acabat → _vor_; (2) ==**datiu plural = _-n_**== (_Jahren, Monaten, Tagen_) excepte quan el plural ja acaba en _-n_ (_Wochen, Stunden, Minuten_).",
+      "byResponse": [
+        {
+          "match": { "1b": "Jahre" },
+          "message": "Falta la _-n_ del datiu plural: ==**_Jahren_**==. Plural _die Jahre_ + datiu → _Jahr==n==_."
+        },
+        {
+          "match": { "1b": "Jahr" },
+          "message": "_drei_ demana plural. I en datiu plural, el substantiu acaba en _-n_: ==**_Jahren_**==."
+        },
+        {
+          "match": { "2b": "Stunde" },
+          "message": "_zwei_ demana plural: ==**_Stunden_**== (el plural ja acaba en _-n_, no cal afegir-ne una altra)."
+        },
+        {
+          "match": { "3b": "Monaten" },
+          "message": "_einem_ és datiu **singular**: el substantiu no canvia → ==**_einem Monat_**==."
+        },
+        {
+          "match": { "4b": "Wochen" },
+          "message": "_einer_ és datiu **singular**: ==**_einer Woche_**== (sense _-n_ final)."
+        },
+        {
+          "match": { "4a": "seit" },
+          "message": "_**ist angekommen**_ és Perfekt, moment puntual → ==**_vor_**== einer Woche."
+        },
+        {
+          "match": { "3a": "vor" },
+          "message": "_kenne_ és present: la coneixes ara mateix → durada que continua → ==**_seit_**== einem Monat."
+        }
+      ]
+    }
+  }
+}

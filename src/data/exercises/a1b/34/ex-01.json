@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-34-ex-01",
+  "topicId": "A1b-34",
+  "title": "Triar la preposició correcta",
+  "prompt": "Tria ==**_seit_**== o ==**_vor_**== segons el sentit de la frase. Mira el **verb** i decideix: durada que continua (_seit_) o moment del passat acabat (_vor_).",
+  "difficulty": 1,
+  "tags": ["seit-vor", "preposicions-temporals", "singleChoice"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Anna wohnt {{1}} fünf Jahren in München._\n\n2. _Markus ist {{2}} zwei Monaten nach Berlin gezogen._\n\n3. _Ich lerne {{3}} einem Jahr Deutsch._\n\n4. _Wir haben uns {{4}} drei Wochen kennengelernt._\n\n5. _{{5}} wann arbeitest du hier?_\n\n6. _{{6}} zehn Minuten hat das Kino angefangen._\n\n7. _Sie ist {{7}} gestern krank._\n\n8. _Das Paket ist {{8}} zwei Tagen angekommen._",
+    "blanks": [
+      { "id": "1", "label": "1. wohnt (present)" },
+      { "id": "2", "label": "2. ist gezogen (Perfekt)" },
+      { "id": "3", "label": "3. lerne (present)" },
+      { "id": "4", "label": "4. haben kennengelernt (Perfekt)" },
+      { "id": "5", "label": "5. arbeitest (present)" },
+      { "id": "6", "label": "6. hat angefangen (Perfekt)" },
+      { "id": "7", "label": "7. ist krank (estat vigent)" },
+      { "id": "8", "label": "8. ist angekommen (Perfekt)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["seit", "vor"] },
+      { "blankId": "2", "options": ["seit", "vor"] },
+      { "blankId": "3", "options": ["seit", "vor"] },
+      { "blankId": "4", "options": ["seit", "vor"] },
+      { "blankId": "5", "options": ["Seit", "Vor"] },
+      { "blankId": "6", "options": ["Seit", "Vor"] },
+      { "blankId": "7", "options": ["seit", "vor"] },
+      { "blankId": "8", "options": ["seit", "vor"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "seit",
+      "2": "vor",
+      "3": "seit",
+      "4": "vor",
+      "5": "Seit",
+      "6": "Vor",
+      "7": "seit",
+      "8": "vor"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Recorda: ==**present + durada que continua = _seit_**==; ==**Perfekt + moment acabat = _vor_**==.",
+      "references": ["A1b-34"]
+    },
+    "incorrect": {
+      "default": "Mira el **verb**: si està en ==present== i l'acció continua, és _seit_. Si està en ==Perfekt/Präteritum== i apunta a un moment del passat, és _vor_.",
+      "byResponse": [
+        {
+          "match": { "1": "vor" },
+          "message": "_Anna **wohnt**_ és present i l'Anna **encara hi viu**: durada que continua → ==**_seit_**== fünf Jahren."
+        },
+        {
+          "match": { "2": "seit" },
+          "message": "_**ist gezogen**_ és Perfekt, una acció acabada: moment passat → ==**_vor_**== zwei Monaten."
+        },
+        {
+          "match": { "4": "seit" },
+          "message": "_**haben kennengelernt**_ és Perfekt — el moment en què us vau conèixer → ==**_vor_**== drei Wochen. (_seit drei Wochen kennen wir uns_ voldria dir que encara us coneixeu, i per això necessitaria present.)"
+        },
+        {
+          "match": { "6": "Seit" },
+          "message": "_**hat angefangen**_ és Perfekt: un moment passat concret → ==**_Vor_**== zehn Minuten."
+        },
+        {
+          "match": { "7": "vor" },
+          "message": "_ist krank_ és un estat **vigent** (encara ho està). Durada que continua → ==**_seit_**== gestern."
+        },
+        {
+          "match": { "8": "seit" },
+          "message": "_**ist angekommen**_ és Perfekt, moment acabat: ==**_vor_**== zwei Tagen."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-34-ex-05",
+  "topicId": "A1b-34",
+  "title": "Tradueix del català",
+  "prompt": "Tradueix cada frase a l'alemany. Revisa tres coses: (1) la ==**preposició**== (durada vs moment), (2) el ==**temps verbal**== (present vs Perfekt), (3) el ==**datiu**== (_-n_ al plural: _Jahren, Monaten_). Escriu la frase sencera amb puntuació.",
+  "difficulty": 3,
+  "tags": ["seit-vor", "traduccio", "typeIn", "produccio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _\"Visc a Berlín des de fa dos anys.\"_ → {{1}}\n\n2. _\"Vaig arribar a Berlín fa dos anys.\"_ → {{2}}\n\n3. _\"Estudio alemany des de fa sis mesos.\"_ → {{3}}\n\n4. _\"El curs va començar fa sis mesos.\"_ → {{4}}\n\n5. _\"Des de quan vius aquí?\"_ → {{5}}\n\n6. _\"Ens coneixem des del 2019.\"_ → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "1. viure a Berlín (des de fa 2 anys)" },
+      { "id": "2", "label": "2. arribar a Berlín (fa 2 anys)" },
+      { "id": "3", "label": "3. estudiar alemany (des de fa 6 mesos)" },
+      { "id": "4", "label": "4. el curs començar (fa 6 mesos)" },
+      { "id": "5", "label": "5. pregunta: des de quan vius aquí?" },
+      { "id": "6", "label": "6. conèixer-se (des del 2019)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Ich wohne seit … / Seit …" },
+      { "blankId": "2", "placeholder": "Ich bin … / Vor …" },
+      { "blankId": "3", "placeholder": "Ich lerne seit … / Seit …" },
+      { "blankId": "4", "placeholder": "Der Kurs hat … / Vor …" },
+      { "blankId": "5", "placeholder": "Seit wann …?" },
+      { "blankId": "6", "placeholder": "Wir kennen uns …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": [
+        "Ich wohne seit zwei Jahren in Berlin.",
+        "Seit zwei Jahren wohne ich in Berlin.",
+        "Ich wohne seit zwei Jahren in Berlin",
+        "Seit zwei Jahren wohne ich in Berlin"
+      ],
+      "2": [
+        "Ich bin vor zwei Jahren nach Berlin gekommen.",
+        "Vor zwei Jahren bin ich nach Berlin gekommen.",
+        "Ich bin vor zwei Jahren nach Berlin gekommen",
+        "Vor zwei Jahren bin ich nach Berlin gekommen",
+        "Ich bin vor zwei Jahren in Berlin angekommen.",
+        "Vor zwei Jahren bin ich in Berlin angekommen.",
+        "Ich bin vor zwei Jahren in Berlin angekommen",
+        "Vor zwei Jahren bin ich in Berlin angekommen"
+      ],
+      "3": [
+        "Ich lerne seit sechs Monaten Deutsch.",
+        "Seit sechs Monaten lerne ich Deutsch.",
+        "Ich lerne seit sechs Monaten Deutsch",
+        "Seit sechs Monaten lerne ich Deutsch"
+      ],
+      "4": [
+        "Der Kurs hat vor sechs Monaten angefangen.",
+        "Vor sechs Monaten hat der Kurs angefangen.",
+        "Der Kurs hat vor sechs Monaten angefangen",
+        "Vor sechs Monaten hat der Kurs angefangen",
+        "Der Kurs hat vor sechs Monaten begonnen.",
+        "Vor sechs Monaten hat der Kurs begonnen.",
+        "Der Kurs hat vor sechs Monaten begonnen",
+        "Vor sechs Monaten hat der Kurs begonnen"
+      ],
+      "5": [
+        "Seit wann wohnst du hier?",
+        "Seit wann wohnst du hier",
+        "Seit wann lebst du hier?",
+        "Seit wann lebst du hier"
+      ],
+      "6": [
+        "Wir kennen uns seit 2019.",
+        "Wir kennen uns seit 2019"
+      ]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Tres comprovacions: (1) la ==**preposició**== correcta segons el verb i el sentit; (2) el ==**temps verbal**== (present amb _seit_, Perfekt amb _vor_); (3) el ==**datiu**== (_Jahren, Monaten_ amb _-n_ al plural; _einem, einer_ en singular).",
+      "references": ["A1b-34", "A1b-20"]
+    },
+    "incorrect": {
+      "default": "Comprova: (1) _\"des de fa\"_ → ==**_seit_**== + present; _\"fa\"_ puntual → ==**_vor_**== + Perfekt. (2) Datiu plural: _Jahren, Monaten_. (3) Ortografia, majúscules al substantiu i puntuació final.",
+      "byResponse": [
+        {
+          "match": { "1": "Ich wohne vor zwei Jahren in Berlin." },
+          "message": "_wohne_ és present i segueixes vivint-hi → durada que continua → ==**_seit_**== zwei Jahren."
+        },
+        {
+          "match": { "2": "Ich bin seit zwei Jahren nach Berlin gekommen." },
+          "message": "_**bin gekommen**_ és Perfekt, moment puntual → ==**_vor_**== zwei Jahren. _seit_ no encaixa amb Perfekt."
+        },
+        {
+          "match": { "3": "Ich lerne seit sechs Monate Deutsch." },
+          "message": "Datiu plural: falta la _-n_ → ==**_Monaten_**==."
+        },
+        {
+          "match": { "4": "Der Kurs hat seit sechs Monaten angefangen." },
+          "message": "_hat angefangen_ és Perfekt, moment puntual → ==**_vor_**== sechs Monaten."
+        },
+        {
+          "match": { "1": "Ich wohne seit zwei Jahre in Berlin." },
+          "message": "Datiu plural amb _-n_ → ==**_seit zwei Jahren_**==."
+        },
+        {
+          "match": { "5": "Seit wann wohnen du hier?" },
+          "message": "Conjugació: _du_ → _wohnst_, no _wohnen_. ==**_Seit wann wohnst du hier?_**==."
+        }
+      ]
+    }
+  }
+}

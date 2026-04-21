@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-34",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 34,
+  "title": "\"seit\" oder \"vor\"?",
+  "shortTitle": "seit/vor",
+  "description": "Dues preposicions temporals amb datiu que solen confondre's: seit marca una durada que continua fins ara; vor assenyala un moment puntual del passat.",
+  "axes": ["expressions-i-funcions", "preposicions"],
+  "prerequisites": ["A1b-33"],
+  "estimatedMinutes": 25,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Dues preposicions, dues preguntes diferents\n\nA A1b-32 i A1b-33 has après a distingir les dues preguntes temporals bàsiques:\n\n- **_Wann?_** → _quan?_ → demana un **moment**.\n- **_Wie lange?_** → _quant de temps?_ → demana una **durada**.\n\n==_seit_ i _vor_ es reparteixen exactament aquesta mateixa frontera:=="
+        },
+        {
+          "type": "table",
+          "title": "34.1 Seit vs vor · vista panoràmica",
+          "headers": ["Preposició", "Respon a", "Expressa", "Traducció catalana típica"],
+          "rows": [
+            ["**_seit_**", "_Wie lange?_", "durada que **continua** fins al present", "_des de fa…_"],
+            ["**_vor_**", "_Wann?_", "moment **acabat** al passat", "_fa…_"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Totes dues demanen **datiu**. I totes dues solen anar amb expressions de temps (_Jahren, Monaten, Wochen, Tagen, Stunden, Minuten…_)."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Enfoc de la lliçó",
+          "body": "Dues preposicions petites i traïdores: **_seit_** i **_vor_**. Totes dues van amb **datiu**. Totes dues tradueixen paraules catalanes molt properes — _des de_, _fa_ — i és fàcil confondre-les. La clau és **quin tipus de temps** expressen: ==_seit_ dibuixa una **durada** que comença al passat i **arriba fins ara**==; ==_vor_ assenyala un **moment puntual** del passat, ja acabat==. El parany estrella: _\"fa tres anys\"_ (punt passat) = _vor drei Jahren_, però _\"des de fa tres anys\"_ (durada que continua) = _seit drei Jahren_. No són intercanviables."
+        }
+      ]
+    },
+    {
+      "id": "seit",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### _seit_ — la durada que continua\n\n_seit_ marca el **punt d'inici** d'una situació que **encara dura ara mateix**. Per això acostuma a anar amb **verb en present** en alemany, encara que en català traduïm amb passat (_\"viu des de fa…\"_ o _\"fa… que viu…\"_).\n\n> Pensa-ho com una **fletxa horitzontal**: un punt al passat → una línia que arriba fins al moment en què parles.\n>\n> `─── seit 15 Jahren ──→ ●ara`"
+        },
+        {
+          "type": "table",
+          "title": "34.2 Exemples amb _seit_",
+          "headers": ["Alemany", "Català"],
+          "rows": [
+            ["Yara wohnt ==seit 15 Jahren== in Deutschland.", "La Yara viu ==des de fa 15 anys== a Alemanya."],
+            ["Nico ist ==seit ein paar Wochen== in Deutschland.", "En Nico és a Alemanya ==des de fa un parell de setmanes==."],
+            ["Ich lerne ==seit zwei Monaten== Deutsch.", "Estudio alemany ==des de fa dos mesos==."],
+            ["Wir kennen uns ==seit 2020==.", "Ens coneixem ==des del 2020==."]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Observa: el verb és **en present** (_wohnt, ist, lerne, kennen_) perquè l'acció **segueix vigent**. Si diguessis _\"La Yara va viure 15 anys a Alemanya\"_ (i ara ja no hi viu), això **no seria _seit_** — seria un altre tipus de durada."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pregunta de control",
+          "body": "_Wie lange wohnt Yara in Deutschland?_ → ==**Seit 15 Jahren.**== La resposta encaixa amb _Wie lange?_ perquè parlem d'una **durada** que continua."
+        }
+      ]
+    },
+    {
+      "id": "vor",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### _vor_ — el moment ja acabat\n\n_vor_ marca un **punt concret del passat**, mesurat \"cap enrere\" des d'ara. El verb que l'acompanya sol estar en **Perfekt** o **Präteritum**, perquè l'acció **ja ha passat i està tancada**.\n\n> Pensa-ho com una **fletxa cap enrere**: un salt al passat des d'ara, per caure en un **moment puntual**.\n>\n> `●passat ←── vor 15 Jahren ── ●ara`"
+        },
+        {
+          "type": "table",
+          "title": "34.3 Exemples amb _vor_",
+          "headers": ["Alemany", "Català"],
+          "rows": [
+            ["Yara ist ==vor 15 Jahren== in Deutschland angekommen.", "La Yara va arribar ==fa 15 anys== a Alemanya."],
+            ["Nico ist ==vor ein paar Wochen== in Deutschland angekommen.", "En Nico va arribar ==fa un parell de setmanes== a Alemanya."],
+            ["Ich habe ==vor zwei Monaten== angefangen, Deutsch zu lernen.", "Vaig començar a estudiar alemany ==fa dos mesos==."],
+            ["Wir haben uns ==vor fünf Jahren== kennengelernt.", "Ens vam conèixer ==fa cinc anys==."]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Observa: els verbs són en **Perfekt** (_ist angekommen, habe angefangen, haben kennengelernt_) — accions **acabades**."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pregunta de control",
+          "body": "_Wann ist Yara in Deutschland angekommen?_ → ==**Vor 15 Jahren.**== La resposta encaixa amb _Wann?_ perquè parlem d'un **moment** concret."
+        }
+      ]
+    },
+    {
+      "id": "check-1-triar",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-34-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "mateix-numero",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El parany: mateix número, significat oposat\n\nEl que fa que _seit_ i _vor_ siguin especialment traïdores és que ==sovint poden anar amb **exactament la mateixa expressió numèrica**==, però el sentit canvia radicalment."
+        },
+        {
+          "type": "table",
+          "title": "34.4 Mateix número, dos sentits",
+          "headers": ["Alemany", "Català", "Què vol dir"],
+          "rows": [
+            ["Yara wohnt **seit** 15 Jahren in Deutschland.", "La Yara viu des de fa 15 anys a Alemanya.", "==Hi viu. Ara mateix. Des del 2011 fins ara.=="],
+            ["Yara ist **vor** 15 Jahren in Deutschland angekommen.", "La Yara va arribar fa 15 anys a Alemanya.", "==Va arribar el 2011. Un dia puntual.=="]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Les dues frases poden ser compatibles: pots **arribar** en un moment (_vor_) i **viure-hi** des d'aquell moment fins ara (_seit_). Però descriuen **dues coses diferents** de la mateixa història.\n\n**Prova mental senzilla:**\n\n- Si pots parafrasejar amb _\"encara…\"_ o _\"continua…\"_ → ==**_seit_**==.\n  _La Yara **encara** viu a Alemanya._ → _seit 15 Jahren_\n- Si pots parafrasejar amb _\"va + infinitiu\"_ o _\"en aquell moment…\"_ → ==**_vor_**==.\n  _La Yara **va arribar** en un moment del passat._ → _vor 15 Jahren_"
+        }
+      ]
+    },
+    {
+      "id": "check-2-fa-vs-des",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-34-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "datiu",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Totes dues amb datiu\n\n_seit_ i _vor_ són preposicions de **datiu pur** (com _mit, bei, aus, von, zu, nach_ — A1b-20). Això vol dir que el substantiu que les segueix va en **datiu**.\n\nAmb expressions de temps en plural, la marca típica és **_-n_** al final del substantiu (datiu plural):"
+        },
+        {
+          "type": "table",
+          "title": "34.5 Datiu plural amb expressions de temps",
+          "headers": ["Singular → Plural", "Datiu plural"],
+          "rows": [
+            ["_das Jahr → die Jahre_", "seit / vor **drei Jahre==n==**"],
+            ["_der Monat → die Monate_", "seit / vor **zwei Monate==n==**"],
+            ["_die Woche → die Wochen_", "seit / vor **vier Wochen** _(ja acabava en -n)_"],
+            ["_der Tag → die Tage_", "seit / vor **fünf Tage==n==**"],
+            ["_die Stunde → die Stunden_", "seit / vor **zwei Stunden**"],
+            ["_die Minute → die Minuten_", "seit / vor **zehn Minuten**"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Regla mnemotècnica",
+          "body": "Amb _Jahren, Monaten, Tagen_ sempre acabes en ==**_-n_**==. És una marca que delata que hi ha datiu plural a sobre."
+        },
+        {
+          "type": "explanation",
+          "body": "En **singular** (menys freqüent amb aquestes preposicions), el datiu també es marca a l'article:\n\n- _seit ==einem== Jahr_ (des de fa un any)\n- _vor ==einer== Woche_ (fa una setmana)\n- _seit ==einem== Monat_ (des de fa un mes)"
+        }
+      ]
+    },
+    {
+      "id": "check-3-datiu",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-34-ex-03", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. Traduir _\"fa X temps\"_ sempre amb _seit_.**\nÉs l'error estrella. _\"Fa tres anys\"_ en català serveix tant per a un **moment puntual** (_fa tres anys que va morir_) com per a una **durada** (_fa tres anys que hi visc_). En alemany s'han de separar.\n\n- _Fa tres anys que la Yara va arribar a Alemanya._ → ==**_Vor_ drei Jahren**== ist Yara in Deutschland angekommen. (moment)\n- _Fa tres anys que la Yara viu a Alemanya._ → ==**_Seit_ drei Jahren**== wohnt Yara in Deutschland. (durada que continua)\n\nSi pots dir _\"des de fa X\"_ i té sentit → _seit_. Si és un punt passat i prou → _vor_.\n\n**2. Usar _seit_ amb verbs en Perfekt/Präteritum.**\n_seit_ vol **present** perquè la situació continua. Si poses un passat, xoca.\n\n- Incorrecte: _Ich habe seit zwei Jahren Deutsch gelernt._\n- Correcte: _Ich lerne ==**seit**== zwei Jahren Deutsch._ (i encara n'aprenc)\n\nSi realment vols dir _\"vaig estudiar alemany durant dos anys\"_ (acabat), no fas servir _seit_ — fas servir un altre tipus de complement de durada (_zwei Jahre lang_, que veuràs més endavant).\n\n**3. Usar _vor_ amb verbs en present.**\n_vor_ apunta a un moment **acabat**. El verb natural és Perfekt (o Präteritum amb auxiliars i modals).\n\n- Incorrecte: _Vor drei Jahren komme ich in Deutschland an._\n- Correcte: _==**Vor**== drei Jahren ==**bin**== ich in Deutschland ==**angekommen**==._"
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Paranys 4 i 5",
+          "body": "**4. Oblidar la _-n_ del datiu plural.** Amb _Jahre, Monate, Tage_, cal afegir _-n_.\n\n- Incorrecte: _seit drei Jahre_ / _vor zwei Monate_\n- Correcte: _seit drei Jahr==n==_ · _vor zwei Monat==en==_\n\n**5. Confondre _vor_ temporal amb _vor_ local.** _vor_ també pot ser preposició de **lloc** (\"davant de\", A1b-19), i allà pot anar amb datiu o acusatiu (Wechselpräposition). Amb temps, ==sempre és datiu pur==.\n\n- _Die Katze sitzt **vor** dem Haus._ (davant de la casa — local)\n- _Ich habe **vor** einem Jahr angefangen._ (fa un any — temporal)\n\nEl context distingeix un ús de l'altre sense problema."
+        }
+      ]
+    },
+    {
+      "id": "preguntes",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Preguntar amb _seit_ i _vor_\n\nTant _seit_ com _vor_ poden aparèixer a la **pregunta**, no només a la resposta.\n\n**Amb _seit_ — preguntar _\"des de quan?\"_:**\n\n- _==Seit wann== wohnst du in Berlin?_ → _Des de quan vius a Berlín?_\n  Resposta típica: _Seit 2020. / Seit drei Jahren._\n\n**Amb _vor_ — la pregunta sol ser _Wann?_ normal, i la resposta porta _vor_:**\n\n- _Wann bist du nach Berlin gekommen?_ → _Quan vas venir a Berlín?_\n  Resposta típica: _Vor drei Jahren._"
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Detall pràctic",
+          "body": "_seit wann?_ i _wie lange?_ són gairebé intercanviables en moltes situacions. La diferència de matís: _seit wann?_ convida a una **data** o un **punt inicial** (_seit 2020_), mentre que _wie lange?_ convida a una **quantitat de temps** (_seit drei Jahren_). Totes dues respostes comencen per _seit_."
+        }
+      ]
+    },
+    {
+      "id": "check-4-error",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-34-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-5-traduccio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-34-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-6-preguntes",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-34-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi\n\n**El contrast _seit_ / _vor_ en una imatge:**\n\n> ==**_seit_**== : ───● passat ─────────→ ● ara _(durada viva)_\n>\n> ==**_vor_**== : ● passat ←───── ● ara _(moment acabat)_"
+        },
+        {
+          "type": "table",
+          "title": "34.6 Les tres diferències clau",
+          "headers": ["", "**_seit_**", "**_vor_**"],
+          "rows": [
+            ["Respon a", "_Wie lange? / Seit wann?_", "_Wann?_"],
+            ["Expressa", "==durada== que arriba fins ara", "==moment== del passat, tancat"],
+            ["Verb típic", "**present**", "**Perfekt / Präteritum**"],
+            ["Català", "_des de (fa)_", "_fa_"],
+            ["Cas", "datiu", "datiu"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista pràctica final",
+          "body": "Quan vulguis dir _\"fa X temps\"_ en alemany, **mira primer el verb que ve a continuació**. Si el verb està en present i descriu una situació vigent, ves a ==**_seit_**==. Si el verb està en Perfekt i descriu un fet acabat, ves a ==**_vor_**==. El verb és la millor pista. I recorda: si pots dir _\"i encara…\"_, és _seit_; si és _\"i això ja s'ha acabat\"_, és _vor_."
+        },
+        {
+          "type": "explanation",
+          "body": "**Enllaços amb el que ja saps:**\n\n- **A1b-20** — preposicions amb datiu pur: _mit, bei, aus, von, zu, nach, **seit**, **vor**._\n- **A1b-32** — _Wann?_ → resposta amb _vor_ (entre altres).\n- **A1b-33** — _Wie lange?_ → resposta amb _seit_ (entre altres).\n- **A1b-26 / A1b-30** — Perfekt: el temps verbal natural per a _vor_."
+        }
+      ]
+    }
+  ]
+}

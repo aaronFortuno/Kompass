@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-34-ex-06",
+  "topicId": "A1b-34",
+  "title": "Respondre preguntes amb _seit_ o _vor_",
+  "prompt": "Respon cada pregunta amb la preposició correcta i la quantitat que et donem entre parèntesis, en ==datiu==. La pregunta et guia: _Wie lange? / Seit wann?_ → ==**_seit_**==; _Wann?_ → ==**_vor_**==. Escriu només la resposta curta (amb punt final).",
+  "difficulty": 2,
+  "tags": ["seit-vor", "preguntes", "typeIn", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Wie lange wohnst du in Barcelona?_ (8 anys) → {{1}}\n\n2. _Wann bist du nach Barcelona gezogen?_ (8 anys) → {{2}}\n\n3. _Seit wann lernst du Deutsch?_ (1 any) → {{3}}\n\n4. _Wann hat der Film angefangen?_ (20 minuts) → {{4}}\n\n5. _Wie lange bist du schon hier?_ (2 hores) → {{5}}",
+    "blanks": [
+      { "id": "1", "label": "1. Wie lange … (8 anys)" },
+      { "id": "2", "label": "2. Wann … (8 anys)" },
+      { "id": "3", "label": "3. Seit wann … (1 any)" },
+      { "id": "4", "label": "4. Wann … (20 minuts)" },
+      { "id": "5", "label": "5. Wie lange … (2 hores)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Seit … / Vor …" },
+      { "blankId": "2", "placeholder": "Seit … / Vor …" },
+      { "blankId": "3", "placeholder": "Seit … / Vor …" },
+      { "blankId": "4", "placeholder": "Seit … / Vor …" },
+      { "blankId": "5", "placeholder": "Seit … / Vor …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": [
+        "Seit acht Jahren.",
+        "Seit acht Jahren",
+        "Seit 8 Jahren.",
+        "Seit 8 Jahren"
+      ],
+      "2": [
+        "Vor acht Jahren.",
+        "Vor acht Jahren",
+        "Vor 8 Jahren.",
+        "Vor 8 Jahren"
+      ],
+      "3": [
+        "Seit einem Jahr.",
+        "Seit einem Jahr",
+        "Seit 1 Jahr.",
+        "Seit 1 Jahr"
+      ],
+      "4": [
+        "Vor zwanzig Minuten.",
+        "Vor zwanzig Minuten",
+        "Vor 20 Minuten.",
+        "Vor 20 Minuten"
+      ],
+      "5": [
+        "Seit zwei Stunden.",
+        "Seit zwei Stunden",
+        "Seit 2 Stunden.",
+        "Seit 2 Stunden"
+      ]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. La ==**pregunta et guia**==: _Wie lange? / Seit wann?_ → ==**_seit_**== (durada que continua); _Wann?_ → ==**_vor_**== (moment puntual). És la continuació directa del que vas veure a A1b-32 i A1b-33.",
+      "references": ["A1b-34", "A1b-32", "A1b-33"]
+    },
+    "incorrect": {
+      "default": "La pregunta mana: _**Wie lange?** / **Seit wann?**_ demanen durada → ==**_seit_**==. _**Wann?**_ demana moment → ==**_vor_**==. I vigila el datiu: plural amb _-n_ (_Jahren, Minuten, Stunden_), singular amb article (_einem Jahr, einer Woche_).",
+      "byResponse": [
+        {
+          "match": { "1": "Vor acht Jahren." },
+          "message": "La pregunta és _Wie lange_ (durada) → ==**_Seit_**== acht Jahren. _Vor_ respondria a _Wann?_."
+        },
+        {
+          "match": { "2": "Seit acht Jahren." },
+          "message": "La pregunta és _Wann_ (moment) + _**bist gezogen**_ (Perfekt) → ==**_Vor_**== acht Jahren."
+        },
+        {
+          "match": { "3": "Seit einen Jahr." },
+          "message": "_Jahr_ és neutre: datiu singular = ==**_einem Jahr_**== (no _einen_, que és acusatiu masculí)."
+        },
+        {
+          "match": { "3": "Seit ein Jahr." },
+          "message": "Datiu singular neutre: article ==**_einem_**==, no _ein_. → _Seit einem Jahr._"
+        },
+        {
+          "match": { "4": "Seit zwanzig Minuten." },
+          "message": "_**hat angefangen**_ és Perfekt, moment puntual → ==**_Vor_**== zwanzig Minuten."
+        },
+        {
+          "match": { "5": "Vor zwei Stunden." },
+          "message": "_Wie lange bist du schon hier?_ demana durada i _schon_ reforça que encara hi ets → ==**_Seit_**== zwei Stunden."
+        }
+      ]
+    }
+  }
+}

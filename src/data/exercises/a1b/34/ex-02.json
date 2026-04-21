@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-34-ex-02",
+  "topicId": "A1b-34",
+  "title": "\"fa X\" vs \"des de fa X\"",
+  "prompt": "Per a cada frase en català, tria la traducció alemanya correcta. Les dues opcions només es diferencien en ==**_seit_**== / ==**_vor_**==. La prova infal·lible: si pots afegir _\"i encara…\"_, és _seit_; si és un punt passat tancat, és _vor_.",
+  "difficulty": 2,
+  "tags": ["seit-vor", "traduccio", "parany-catala"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _\"Fa tres anys que vaig acabar l'escola.\"_ → {{1}}\n\n2. _\"Fa tres anys que treballo aquí.\"_ → {{2}}\n\n3. _\"Fa una setmana que estic malalt.\"_ → {{3}}\n\n4. _\"Fa una setmana em vaig posar malalt.\"_ → {{4}}\n\n5. _\"Ens vam conèixer fa deu anys.\"_ → {{5}}\n\n6. _\"Ens coneixem des de fa deu anys.\"_ → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "1. vaig acabar l'escola (fa 3 anys)" },
+      { "id": "2", "label": "2. treballo aquí (fa 3 anys)" },
+      { "id": "3", "label": "3. estic malalt (fa 1 setmana)" },
+      { "id": "4", "label": "4. em vaig posar malalt (fa 1 setmana)" },
+      { "id": "5", "label": "5. ens vam conèixer (fa 10 anys)" },
+      { "id": "6", "label": "6. ens coneixem (des de fa 10 anys)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "1",
+        "options": [
+          "Ich habe seit drei Jahren die Schule beendet.",
+          "Ich habe vor drei Jahren die Schule beendet."
+        ]
+      },
+      {
+        "blankId": "2",
+        "options": [
+          "Ich arbeite seit drei Jahren hier.",
+          "Ich arbeite vor drei Jahren hier."
+        ]
+      },
+      {
+        "blankId": "3",
+        "options": [
+          "Ich bin seit einer Woche krank.",
+          "Ich bin vor einer Woche krank."
+        ]
+      },
+      {
+        "blankId": "4",
+        "options": [
+          "Ich bin seit einer Woche krank geworden.",
+          "Ich bin vor einer Woche krank geworden."
+        ]
+      },
+      {
+        "blankId": "5",
+        "options": [
+          "Wir haben uns seit zehn Jahren kennengelernt.",
+          "Wir haben uns vor zehn Jahren kennengelernt."
+        ]
+      },
+      {
+        "blankId": "6",
+        "options": [
+          "Wir kennen uns seit zehn Jahren.",
+          "Wir kennen uns vor zehn Jahren."
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Ich habe vor drei Jahren die Schule beendet.",
+      "2": "Ich arbeite seit drei Jahren hier.",
+      "3": "Ich bin seit einer Woche krank.",
+      "4": "Ich bin vor einer Woche krank geworden.",
+      "5": "Wir haben uns vor zehn Jahren kennengelernt.",
+      "6": "Wir kennen uns seit zehn Jahren."
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. La prova infal·lible: si pots afegir ==_\"i encara…\"_== o ==_\"i continua…\"_==, és ==**_seit_**==. Si és un punt passat tancat (moment concret acabat), és ==**_vor_**==. El verb i el temps verbal t'ho confirmen.",
+      "references": ["A1b-34"]
+    },
+    "incorrect": {
+      "default": "Pregunta't: l'acció continua ara mateix (i encara…) o és un moment puntual del passat? Continua → ==**_seit_**==. Puntual i acabat → ==**_vor_**==.",
+      "byResponse": [
+        {
+          "match": { "1": "Ich habe seit drei Jahren die Schule beendet." },
+          "message": "_\"Vaig acabar l'escola\"_ és un moment puntual del passat → ==**_vor_**== drei Jahren. _seit_ amb Perfekt xoca: l'acció està tancada."
+        },
+        {
+          "match": { "2": "Ich arbeite vor drei Jahren hier." },
+          "message": "_\"Treballo aquí\"_ (present) vol dir que encara hi treballes → durada que continua → ==**_seit_**== drei Jahren."
+        },
+        {
+          "match": { "3": "Ich bin vor einer Woche krank." },
+          "message": "_\"Estic malalt\"_ ara mateix → estat vigent → ==**_seit_**== einer Woche."
+        },
+        {
+          "match": { "4": "Ich bin seit einer Woche krank geworden." },
+          "message": "_\"Em vaig posar malalt\"_ és el moment del canvi d'estat (_krank geworden_, Perfekt) → ==**_vor_**== einer Woche."
+        },
+        {
+          "match": { "5": "Wir haben uns seit zehn Jahren kennengelernt." },
+          "message": "_\"Ens vam conèixer\"_ (_kennenlernen_ en Perfekt) és el moment en què us vau trobar → ==**_vor_**== zehn Jahren. _kennenlernen_ = l'acte puntual de conèixer algú per primer cop."
+        },
+        {
+          "match": { "6": "Wir kennen uns vor zehn Jahren." },
+          "message": "_\"Ens coneixem\"_ (_kennen_ en present) descriu una relació que **continua** → ==**_seit_**== zehn Jahren. Fixa't en el matís: _kennen_ (coneixem, estat) vs. _kennenlernen_ (vam conèixer, moment)."
+        }
+      ]
+    }
+  }
+}
