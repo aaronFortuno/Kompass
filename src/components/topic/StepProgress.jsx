@@ -5,14 +5,17 @@ import { useProgressStore } from '@/store/useProgressStore.js';
 /*
  * Indicador de progrés híbrid · ARCHITECTURE §18
  *
- * Estats per step (consultats al UserProgress):
- *  - 'active'    : step actual (sempre preval visualment).
- *  - 'completed' : exercici amb lastAttemptCorrect === true.
- *  - 'errors'    : exercici amb lastAttemptCorrect === false
- *                  (consolidació pendent, opció B).
- *  - 'visited'   : step narratiu amb id a visitedStepIds.
- *  - 'pending'   : encara no visitat (narratiu) o no intentat
- *                  (exercici).
+ * Contenidor unificat (bg-surface + border): la barra fina superior
+ * i els ticks/dots inferiors formen un sol element visual perquè
+ * quedi clar que són l'element interactiu del reproductor.
+ *
+ * Ticks desktop i dots mòbil comparteixen la semàntica de color:
+ *  - active    : accent
+ *  - completed : success + icona Check
+ *  - errors    : warning
+ *  - pending exercici : bg-danger/10 amb border-danger
+ *  - pending narratiu : muted, semitransparent
+ *  - visited narratiu : bg-surface-raised
  */
 
 function stepKind(step) {
@@ -24,20 +27,7 @@ function stepKind(step) {
   };
 }
 
-function computeStatus({ kind, exerciseId }, isActive, topicProgress, exercisesState) {
-  if (isActive) return 'active';
-  if (kind === 'narrative') {
-    const visited = topicProgress?.visitedStepIds ?? [];
-    return visited.includes(this?.stepId) ? 'visited' : 'pending';
-  }
-  const entry = exerciseId ? exercisesState?.[exerciseId] : null;
-  if (!entry) return 'pending';
-  if (entry.lastAttemptCorrect === true) return 'completed';
-  if (entry.lastAttemptCorrect === false) return 'errors';
-  return 'pending';
-}
-
-function StepGlyph({ kind, index, status, size = 13 }) {
+function StepGlyph({ kind, index, status, size }) {
   if (kind === 'assessment') {
     return <GraduationCap size={size} aria-hidden="true" />;
   }
@@ -45,13 +35,12 @@ function StepGlyph({ kind, index, status, size = 13 }) {
     if (status === 'completed') return <Check size={size} aria-hidden="true" />;
     return <Dumbbell size={size} aria-hidden="true" />;
   }
-  return <span>{index + 1}</span>;
+  return <span className="text-[11px]">{index + 1}</span>;
 }
 
-// Classes per estat x posició (dots mobile). L'actiu sobreposa.
-function mobileDotClasses(status, kind) {
+function statusClasses(status, kind) {
   if (status === 'active') {
-    return 'bg-accent text-accent-content';
+    return 'bg-accent text-accent-content shadow-soft';
   }
   if (status === 'completed') {
     return 'bg-success text-accent-content';
@@ -59,21 +48,14 @@ function mobileDotClasses(status, kind) {
   if (status === 'errors') {
     return 'bg-warning text-accent-content';
   }
+  if (status === 'pending' && kind !== 'narrative') {
+    return 'bg-danger/10 text-danger border border-danger/40';
+  }
   if (status === 'pending') {
-    if (kind === 'narrative') return 'bg-border text-content-muted';
-    return 'border border-danger text-danger bg-surface';
+    return 'bg-transparent text-content-muted/60';
   }
   // visited narrative
-  return 'bg-content-muted/50 text-bg';
-}
-
-function desktopTickClasses(status, kind) {
-  if (status === 'active') return 'text-accent font-semibold';
-  if (status === 'completed') return 'text-success font-semibold';
-  if (status === 'errors') return 'text-warning font-semibold';
-  if (status === 'pending' && kind !== 'narrative') return 'text-danger';
-  if (status === 'pending') return 'text-content-muted/50';
-  return 'text-content-muted';
+  return 'bg-surface-raised text-content-muted';
 }
 
 export function StepProgress({ topicId, steps, currentIndex, onJump }) {
@@ -110,70 +92,53 @@ export function StepProgress({ topicId, steps, currentIndex, onJump }) {
 
   return (
     <div
-      className="space-y-2"
+      className="bg-surface border border-border rounded-md px-3 py-3 shadow-soft"
       aria-label={t('step.progress', {
         current: currentIndex + 1,
         total,
       })}
     >
-      {/* Mobile: dots amb icona si és exercici */}
-      <div className="flex md:hidden gap-2 items-center justify-center flex-wrap">
+      {/* Barra fina de progrés acumulat (només desktop) */}
+      <div className="hidden md:block relative h-1.5 bg-border/60 rounded-full overflow-hidden mb-3">
+        <div
+          className="absolute inset-y-0 left-0 bg-accent rounded-full transition-[width] duration-base ease-standard"
+          style={{ width: `${pct}%` }}
+        />
+      </div>
+
+      {/* Ticks/dots. Mateixa estructura de colors a ambdues mides;
+          els botons creixen a desktop i ocupen tot l'ample. */}
+      <div className="flex items-stretch justify-center md:justify-between gap-1.5 flex-wrap md:flex-nowrap">
         {steps.map((step, i) => {
           const { kind, status } = statusFor(step, i);
           const isExercise = kind !== 'narrative';
+          // Mida de la icona: més gran per exercicis.
+          const iconSize = isExercise ? 18 : 13;
           return (
             <button
               key={step.id ?? i}
               type="button"
               className={[
-                'motion-hover inline-flex items-center justify-center rounded-full',
-                'w-7 h-7 text-[11px] font-semibold',
-                mobileDotClasses(status, kind),
+                'motion-hover rounded-md flex items-center justify-center',
+                // Mobile: un cercle petit. Desktop: flex-1 + rectangle ample.
+                'w-8 h-8 md:w-auto md:h-10 md:flex-1 md:rounded-sm',
+                statusClasses(status, kind),
               ].join(' ')}
-              style={{ minHeight: '28px', minWidth: '28px' }}
+              style={{ minHeight: '32px', minWidth: '32px' }}
               aria-label={t('step.goToStep', { number: i + 1 })}
               aria-current={status === 'active' ? 'step' : undefined}
+              title={step.id ?? `${i + 1}`}
               onClick={() => onJump(i)}
             >
-              {isExercise ? (
-                <StepGlyph kind={kind} index={i} status={status} size={14} />
-              ) : status === 'active' || status === 'visited' ? (
-                <span className="block w-2 h-2 rounded-full bg-current" />
-              ) : null}
+              <StepGlyph
+                kind={kind}
+                index={i}
+                status={status}
+                size={iconSize}
+              />
             </button>
           );
         })}
-      </div>
-
-      {/* Desktop: barra amb ticks */}
-      <div className="hidden md:block">
-        <div className="relative h-1.5 bg-border rounded-full overflow-hidden">
-          <div
-            className="absolute inset-y-0 left-0 bg-accent rounded-full transition-[width] duration-base ease-standard"
-            style={{ width: `${pct}%` }}
-          />
-        </div>
-        <div className="flex justify-between mt-2 gap-1">
-          {steps.map((step, i) => {
-            const { kind, status } = statusFor(step, i);
-            return (
-              <button
-                key={step.id ?? i}
-                type="button"
-                className={[
-                  'flex-1 inline-flex items-center justify-center gap-1 py-1 rounded-sm motion-hover text-xs',
-                  desktopTickClasses(status, kind),
-                ].join(' ')}
-                aria-label={t('step.goToStep', { number: i + 1 })}
-                aria-current={status === 'active' ? 'step' : undefined}
-                title={step.id ?? `${i + 1}`}
-                onClick={() => onJump(i)}
-              >
-                <StepGlyph kind={kind} index={i} status={status} size={13} />
-              </button>
-            );
-          })}
-        </div>
       </div>
     </div>
   );
