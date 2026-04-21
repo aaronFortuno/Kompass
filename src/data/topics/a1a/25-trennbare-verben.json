@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-25",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 25,
+  "title": "Trennbare Verben",
+  "shortTitle": "Trennbare Verben",
+  "description": "Els verbs separables alemanys: un sol verb que es parteix en dues peces (arrel conjugada a la posició 2 i prefix volant al final de la frase). Aplicació paradigmàtica de la Satzklammer d'A1a-18, amb contrast amb els prefixos inseparables.",
+  "axes": ["pronoms-verbs", "sintaxi-ordre-paraules"],
+  "prerequisites": ["A1a-18"],
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "A la lliçó **A1a-18** vas conèixer la **Satzklammer**, els \"claudàtors de la frase\": un esquelet sintàctic on el verb conjugat es queda a la posició 2 i una segona peça verbal ==vola al final==. Allà vam veure que aquesta estructura apareix amb verbs modals, amb el Perfekt i — t'ho vam avançar — amb els **verbs separables**. Ara toca obrir aquella caixa.\n\nEls **trennbare Verben** (literalment \"verbs que es poden separar\") són una peculiaritat alemanya molt sorprenent per a un catalanoparlant: un mateix verb es parteix en dues meitats que se'n van a extrems oposats de la frase. El prefix, que al diccionari apareix enganxat al verb, se separa i marxa al final. Aquesta lliçó és l'**aplicació paradigmàtica** de la Satzklammer.\n\nLa bona notícia: si vas entendre A1a-18, ja tens la meitat de la feina feta. Aquí només cal posar-hi els detalls específics d'aquest tipus de verb."
+        }
+      ]
+    },
+    {
+      "id": "que-es",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Què és un verb separable?\n\nUn **verb separable** (_trennbares Verb_) és un verb format per dues peces:\n\n- **Prefix separable** — una partícula curta davant del verb: _auf_, _aus_, _ein_, _an_, _mit_, _fern_…\n- **Arrel verbal** — el verb de tota la vida (_stehen_, _schlafen_, _rufen_, _sehen_…).\n\nEl resultat és un verb nou, sovint amb un significat diferent del verb base:\n\n- _stehen_ = estar dret → _==auf==stehen_ = llevar-se\n- _rufen_ = cridar → _==an==rufen_ = trucar (per telèfon)\n- _sehen_ = veure → _==fern==sehen_ = mirar la tele\n- _schlafen_ = dormir → _==aus==schlafen_ = dormir fins que un té prou\n\nAls diccionaris alemanys, sovint trobaràs una ==línia vertical== que marca on es pot separar el verb:\n\n> ==auf==|stehen, ==an==|rufen, ==fern==|sehen, ==ein==|kaufen\n\nAquesta línia **no s'escriu** en textos normals; només és una ajuda visual del diccionari. A tu et servirà per saber, d'un cop d'ull, que un verb és separable.\n\n#### Un fenomen nou per a catalanoparlants\n\nEn català i en castellà aquest fenomen **no existeix**. Tenim verbs amb prefix (_tornar_, _desfer_, _recollir_), però aquests prefixos **no se separen mai** del verb:\n\n- CA: _Jo ==em llevo== a les set._ (_llevar-se_ és pronominal, però no hi ha cap prefix que marxi)\n- ES: _Yo ==me levanto== a las siete._\n- DE: _Ich ==stehe== um sieben Uhr ==auf==._ (_aufstehen_ es parteix en dos!)\n\nLa cosa més semblant que tenim a les llengües romàniques és la combinació \"verb + partícula\" en expressions com _me'n torno_ o _se'n va_, on hi ha un pronom que s'escapa. Però ni tan sols això és equivalent: en alemany, **el prefix és part del verb del diccionari**, no un pronom. Per això els catalanoparlants ens solem sorprendre el primer cop que veiem \"_Ich stehe um sieben Uhr ==auf==._\" i ens preguntem: \"què hi fa aquell _auf_ al final?\"."
+        }
+      ]
+    },
+    {
+      "id": "prefixos-frequents",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Prefixos separables freqüents a A1\n\nNo cal que te'ls aprenguis tots de memòria ara mateix; els aniràs trobant al llarg del curs. Aquests són els que sortiran més sovint al teu nivell:"
+        },
+        {
+          "type": "table",
+          "title": "Prefixos separables més freqüents a A1",
+          "headers": ["Prefix", "Exemples freqüents", "Significat aproximat"],
+          "rows": [
+            ["**an-**", "_==an==rufen_ (trucar), _==an==kommen_ (arribar), _==an==fangen_ (començar)", "acostar-se, contacte"],
+            ["**auf-**", "_==auf==stehen_ (llevar-se), _==auf==räumen_ (endreçar), _==auf==machen_ (obrir)", "obertura, cap amunt"],
+            ["**aus-**", "_==aus==gehen_ (sortir de festa), _==aus==schlafen_ (dormir bé), _==aus==machen_ (apagar)", "cap enfora, final"],
+            ["**ein-**", "_==ein==kaufen_ (fer la compra), _==ein==schlafen_ (adormir-se), _==ein==laden_ (convidar)", "cap endins"],
+            ["**mit-**", "_==mit==kommen_ (venir amb), _==mit==bringen_ (portar amb)", "acompanyament"],
+            ["**fern-**", "_==fern==sehen_ (mirar la tele)", "a distància"],
+            ["**vor-**", "_==vor==stellen_ (presentar)", "davant"],
+            ["**zu-**", "_==zu==machen_ (tancar), _==zu==hören_ (escoltar)", "cap a, tancament"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Observació pedagògica",
+          "body": "El prefix sovint matisa el significat del verb base, però la relació no sempre és transparent. _==fern==sehen_ (mirar la tele, literalment \"veure a distància\") té un cert sentit lògic; _==aus==schlafen_ (dormir fins a tenir prou son) ja costa més d'endevinar. No hi donis massa voltes: aprèn cada verb separable **com una unitat de vocabulari nova**."
+        }
+      ]
+    },
+    {
+      "id": "accent-tonic",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### L'accent tònic va sempre al prefix\n\nUna regla fonètica molt útil per reconèixer de seguida si un verb és separable:\n\n> ==En els verbs separables, la síl·laba tònica sempre és el prefix==.\n\nCompara:\n\n- _==kau==fen_ (comprar) — accent a l'arrel: **●**○\n- _==ein==kaufen_ (fer la compra) — accent al prefix: **●**○○"
+        },
+        {
+          "type": "table",
+          "title": "Verb base vs verb separable: on cau l'accent",
+          "headers": ["Accent a l'arrel (**●**○)", "Accent al prefix (**●**○○)"],
+          "rows": [
+            ["_gehen_", "_==aus==gehen_"],
+            ["_schlafen_", "_==aus==schlafen_"],
+            ["_rufen_", "_==an==rufen_"],
+            ["_sehen_", "_==fern==sehen_"],
+            ["_räumen_", "_==auf==räumen_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Per què et serveix",
+          "body": "Quan escoltis alemany, l'accent fort al principi del verb (_==AUS==gehen_, _==AN==rufen_) és una pista claríssima que el verb és separable. I quan el parlis tu, aquest èmfasi inicial et sonarà cada cop més natural."
+        }
+      ]
+    },
+    {
+      "id": "quick-check-prefixos",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-25-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "satzklammer-separables",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### A la frase: el prefix marxa al final\n\nAra ve el moment clau de la lliçó, i la connexió directa amb A1a-18. Quan fas servir un verb separable a una **frase enunciativa**, passa exactament això:\n\n1. L'**arrel** es conjuga i va a la **posició 2** (com qualsevol verb normal).\n2. El **prefix se separa** i ==vola al final de la frase==.\n3. Tota la resta d'informació viu **enmig** dels dos.\n\nÉs a dir: una **Satzklammer perfecta**. El verb conjugat obre el claudàtor a la 2, el prefix el tanca al final, i enmig hi ha tot el contingut.\n\n> [ ==arrel conjugada== … _complements_ … ==prefix== ]"
+        },
+        {
+          "type": "table",
+          "title": "Satzklammer amb verb separable (frase enunciativa)",
+          "headers": ["Posició 1", "Posició 2 (arrel)", "Mig", "Final (prefix)"],
+          "rows": [
+            ["_Ich_", "==wache==", "_um halb sieben_", "==auf==."],
+            ["_Du_", "==stehst==", "_um Viertel vor sieben_", "==auf==."],
+            ["_Sie_", "==räumt==", "_die Wohnung_", "==auf==."],
+            ["_Wir_", "==schlafen==", "_morgen_", "==aus==."],
+            ["_Ihr_", "==seht==", "_am Nachmittag_", "==fern==."],
+            ["_Sie_", "==rufen==", "_den Arzt_", "==an==."]
+          ],
+          "caption": "Traduccions: _Em desperto a dos quarts de set._ / _Et lleves a un quart de set._ / _(Ella) endreça el pis._ / _Demà dormirem bé._ / _A la tarda mireu la tele._ / _Truquen al metge._"
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Detall important",
+          "body": "**L'arrel es conjuga normalment**. _wachen_ fa _ich wache_; _schlafen_ fa _wir schlafen_; _sehen_ fa _ihr seht_. El prefix, al final, **mai no es conjuga** — apareix exactament igual que al diccionari."
+        }
+      ]
+    },
+    {
+      "id": "inversion-separables",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### I si comencem la frase per un complement?\n\nMateix truc que a A1a-18: la **inversió** no canvia res de la mecànica del verb separable. Si davant del verb (posició 1) hi posem un adverbi de temps, de lloc o un altre complement, el que passa és:\n\n1. El **verb conjugat** (l'arrel) es manté a la **posició 2**.\n2. El **subjecte** salta a la **posició 3** (verb i subjecte, sempre junts).\n3. El **prefix** continua **al final**."
+        },
+        {
+          "type": "table",
+          "title": "Inversió + Satzklammer amb verb separable",
+          "headers": ["Posició 1", "Posició 2 (arrel)", "Posició 3 (subjecte)", "Mig", "Final (prefix)"],
+          "rows": [
+            ["_Um sieben Uhr_", "==stehe==", "_ich_", "—", "==auf==."],
+            ["_Heute Abend_", "==rufe==", "_ich_", "_meine Mutter_", "==an==."],
+            ["_Am Wochenende_", "==schlafen==", "_wir_", "—", "==aus==."]
+          ],
+          "caption": "Traduccions: _A les set em llevo._ / _Aquest vespre truco a la meva mare._ / _El cap de setmana dormim bé._"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Regla d'or",
+          "body": "La regla és sempre la mateixa de A1a-18: ==verb i subjecte van junts==, la segona peça verbal (aquí, el prefix) es queda al final."
+        }
+      ]
+    },
+    {
+      "id": "quick-check-satzklammer",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-25-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "inseparables-contrast",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Atenció: no tots els prefixos se separen\n\nAquí ve un punt important que t'evitarà confusions més endavant. En alemany hi ha **dos tipus de prefixos verbals**:\n\n**1. Prefixos separables** (els d'aquesta lliçó): _an-, auf-, aus-, ein-, mit-, fern-, vor-, zu-_… Se separen a la frase i porten l'accent tònic.\n\n**2. Prefixos inseparables**: _be-, ge-, er-, ver-, zer-, ent-, emp-, miss-_. ==No se separen mai==. No porten accent tònic. El verb es comporta com qualsevol altre verb \"normal\"."
+        },
+        {
+          "type": "table",
+          "title": "Contrast separable vs inseparable",
+          "headers": ["Verb", "Separable?", "Accent", "Frase"],
+          "rows": [
+            ["_==auf==stehen_", "Sí", "al prefix (**●**○○)", "_Ich ==stehe== ==auf==._"],
+            ["_==be==suchen_ (visitar)", "**No**", "a l'arrel (○**●**○)", "_Ich ==besuche== meine Oma._"],
+            ["_==an==kommen_ (arribar)", "Sí", "al prefix (**●**○○)", "_Er ==kommt== ==an==._"],
+            ["_==ver==stehen_ (entendre)", "**No**", "a l'arrel (○**●**○)", "_Ich ==verstehe== das._"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista mnemotècnica",
+          "body": "Els prefixos inseparables són sempre **àtons** (no porten accent) i formen un grupet tancat i reduït:\n\n> **be-, ge-, er-, ver-, zer-, ent-, emp-, miss-**\n\nSi un prefix no és en aquesta llista curta, ==és separable==. De fet, el més pràctic és memoritzar els inseparables (són pocs) i donar per separables la resta."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "A ritme A1",
+          "body": "**No t'amoïnis** si ara no els distingeixes tots al vol: a nivell A1 aniràs trobant sobretot els separables. Els inseparables t'aniran sortint a mesura que aprenguis vocabulari nou i els integraràs a poc a poc."
+        }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. No separar el prefix.**\nÉs l'error més típic. L'instint ens diu de mantenir el verb tal com surt al diccionari, sencer.\n\n- Incorrecte: _Ich aufstehe um sieben Uhr._ ❌\n- Correcte: _Ich ==stehe== um sieben Uhr ==auf==._ ✅\n\n**2. Conjugar el prefix.**\nEl prefix és invariable: apareix sempre exactament igual que al diccionari, independentment del subjecte.\n\n- Incorrecte: _Er ruft seine Mutter ant._ ❌ (no s'afegeix cap terminació al prefix)\n- Correcte: _Er ==ruft== seine Mutter ==an==._ ✅\n\n**3. Posar el prefix al mig de la frase en comptes del final.**\nEl prefix ha d'anar **al final de tot**, després de tots els complements. No és una partícula que \"acompanya\" el verb; és la peça que **tanca el claudàtor**.\n\n- Incorrecte: _Ich ==stehe== ==auf== um sieben Uhr._ ❌\n- Correcte: _Ich ==stehe== um sieben Uhr ==auf==._ ✅\n\n**4. Confondre separables amb inseparables.**\nSi veus un verb que comença amb _be-, ver-, er-, ent-…_, ==no el separis==. _verstehen_ no és \"separable\", és _ich verstehe das_ (sencer, amb accent a _-steh-_).\n\n- Incorrecte: _Ich stehe das ver._ ❌\n- Correcte: _Ich ==verstehe== das._ ✅\n\n**5. Oblidar-se del prefix quan la frase és llarga.**\nQuan la frase té molts complements, és fàcil arribar al final i no recordar que havies de \"tancar el claudàtor\". Consell: quan comencis una frase amb un verb separable, ==pensa ja el prefix== abans de començar a parlar.\n\n- Incorrecte: _Ich rufe heute Abend meinen Bruder in München._ ❌ (falta _an_ al final)\n- Correcte: _Ich ==rufe== heute Abend meinen Bruder in München ==an==._ ✅"
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Resum dels paranys",
+          "body": "**(1)** El prefix **sempre se separa** en frase enunciativa. **(2)** El prefix és **invariable** (no es conjuga). **(3)** El prefix va **al final de tot**, no al mig. **(4)** Els prefixos **_be-, ver-, er-, ent-_…** **NO** se separen. **(5)** En frases llargues, ==recorda tancar el claudàtor==."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-25-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-25-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-25-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-25-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Resum visual\n\n**Tres idees per endur-te a casa:**\n\n1. **Un verb separable té dues peces** — un prefix (_auf, an, aus, ein, mit, fern…_) i una arrel verbal. Al diccionari apareixen juntes, sovint amb una línia vertical que marca la separació (_auf|stehen_).\n2. **A la frase es parteixen** — l'arrel es conjuga a la **posició 2**; el prefix ==vola al final==. És exactament la mateixa **Satzklammer** que vas veure a A1a-18, ara aplicada a un sol verb.\n3. **L'accent tònic sempre al prefix** — _==AUF==stehen_, _==AN==rufen_, _==FERN==sehen_. Aquesta és la pista fonètica que distingeix els separables dels inseparables (_ver-, be-, er-…_, que són àtons i no se separen mai)."
+        },
+        {
+          "type": "table",
+          "title": "25.1 Els dos tipus de prefix verbal",
+          "headers": ["Tipus", "Exemples", "Se separa?", "Accent"],
+          "rows": [
+            ["**Separables**", "_auf-, an-, aus-, ein-, mit-, fern-, vor-, zu-_", "Sí, vola al final", "al prefix (**●**○○)"],
+            ["**Inseparables**", "_be-, ge-, er-, ver-, zer-, ent-, emp-, miss-_", "**No**, sempre enganxat", "a l'arrel (○**●**○)"]
+          ],
+          "caption": "Si un prefix no és a la llista d'inseparables, considera'l separable."
+        },
+        {
+          "type": "table",
+          "title": "25.2 Satzklammer amb verb separable en una línia",
+          "headers": ["Posició 1", "Posició 2 (arrel)", "Mig", "Final (prefix)"],
+          "rows": [
+            ["_Ich_", "==stehe==", "_um 7 Uhr_", "==auf==."],
+            ["_Wir_", "==sehen==", "_am Abend_", "==fern==."],
+            ["_Sie_", "==rufen==", "_den Arzt_", "==an==."]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista pràctica",
+          "body": "Quan aprenguis un verb nou que comenci per _auf-, aus-, an-, ein-, mit-_…, apunta-t'ho mentalment com a separable i practica la frase sencera. _Ich stehe um 7 Uhr auf._ _Wir sehen am Abend fern._ _Sie rufen den Arzt an._ Repetir-ho en veu alta fa que el cervell s'acostumi a \"tancar el claudàtor\" sense esforç."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Connexions",
+          "body": "A1a-18 (Satzklammer, la mare de totes les estructures), A1a-19 i A1a-26 (verbs modals, que també formen Satzklammer). A A1b veuràs el **Perfekt**, on els verbs separables tenen una particularitat addicional (_aufgestanden_, _angerufen_…): el _ge-_ del participi es fica ==entre el prefix i l'arrel==. Però això és història per a una altra lliçó."
+        }
+      ]
+    }
+  ]
+}

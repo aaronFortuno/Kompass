@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-25-ex-04",
+  "topicId": "A1a-25",
+  "title": "Inversió + Satzklammer amb _aufräumen_",
+  "prompt": "La frase comença amb un complement de temps. Aplica inversió (verb a la 2, subjecte a la 3) i tanca la Satzklammer amb el prefix al final. Verb: _aufräumen_ (endreçar).",
+  "difficulty": 3,
+  "tags": ["satzklammer", "separables", "inversio", "assessment", "aufraeumen"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Am Samstag {{1}} {{2}} meine Wohnung {{3}}._ (El dissabte endreço el meu pis.)",
+    "blanks": [
+      { "id": "1", "label": "posició 2 — arrel conjugada" },
+      { "id": "2", "label": "posició 3 — subjecte" },
+      { "id": "3", "label": "final de la frase — prefix" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["räume", "aufräume", "räumt"] },
+      { "blankId": "2", "options": ["ich", "räume", "du"] },
+      { "blankId": "3", "options": ["auf", "aus", "an"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "räume",
+      "2": "ich",
+      "3": "auf"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte! Has combinat les dues regles d'A1a-18: inversió (_ich_ salta a la 3 perquè _Am Samstag_ ocupa la 1) + Satzklammer amb verb separable (_räume_ a la 2, _auf_ al final). _aufräumen_ és un separable de manual."
+    },
+    "incorrect": {
+      "default": "Repassem: posició 1 = _Am Samstag_; posició 2 = arrel conjugada (_räume_); posició 3 = subjecte (_ich_, perquè verb i subjecte sempre van junts); mig = _meine Wohnung_; final = prefix (_auf_).",
+      "byResponse": [
+        {
+          "match": { "1": "aufräume" },
+          "message": "Error típic: no es pot deixar el verb sencer. En frase enunciativa, _aufräumen_ **s'ha de partir**: _räume_ a la posició 2, _auf_ al final.",
+          "references": ["A1a-25"]
+        },
+        {
+          "match": { "2": "räume" },
+          "message": "Has posat el verb a la posició 3. La regla d'A1a-18 és que **verb i subjecte van junts**: verb a la 2 i subjecte a la 3.",
+          "references": ["A1a-18"]
+        },
+        {
+          "match": { "3": "aus" },
+          "message": "El prefix de _aufräumen_ és _auf_, no _aus_. Copia el prefix exactament com apareix al diccionari.",
+          "references": ["A1a-25"]
+        }
+      ]
+    }
+  }
+}

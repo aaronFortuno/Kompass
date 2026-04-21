@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-25-ex-05",
+  "topicId": "A1a-25",
+  "title": "Escriu el prefix de _anrufen_",
+  "prompt": "El verb _anrufen_ (trucar) és separable. Escriu el prefix que falta al final de la frase per tancar el claudàtor.",
+  "difficulty": 2,
+  "tags": ["separables", "anrufen", "typein", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Maria ruft ihre Schwester {{1}}._ (La Maria truca a la seva germana.)",
+    "blanks": [
+      { "id": "1", "label": "prefix final" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "prefix" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["an"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé! L'arrel _ruft_ (conjugada amb _Maria_ = ella) ocupa la posició 2; el prefix _an_ tanca la Satzklammer al final."
+    },
+    "incorrect": {
+      "default": "El prefix de _anrufen_ és _an_. Recorda que s'escriu tal com apareix al diccionari, sense cap terminació, i va al final de la frase."
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-25-ex-02",
+  "topicId": "A1a-25",
+  "title": "Satzklammer amb _aufstehen_",
+  "prompt": "Completa la frase posant cada peça al seu lloc. L'arrel va a la posició 2 (conjugada); el prefix tanca el claudàtor al final. Verb: _aufstehen_.",
+  "difficulty": 2,
+  "tags": ["satzklammer", "separables", "posicio-2", "final-frase"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Ich {{1}} um acht Uhr {{2}}._ (Em llevo a les vuit.)",
+    "blanks": [
+      { "id": "1", "label": "posició 2 — arrel conjugada" },
+      { "id": "2", "label": "final de la frase — prefix" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["stehe", "aufstehe", "auf"] },
+      { "blankId": "2", "options": ["auf", "aus", "an"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "stehe",
+      "2": "auf"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte! _stehe_ (arrel conjugada amb _ich_) obre el claudàtor a la posició 2; _auf_ (prefix) el tanca al final. És una Satzklammer de manual."
+    },
+    "incorrect": {
+      "default": "Recorda: l'arrel (_stehen_ → _stehe_) es conjuga i va a la 2; el prefix (_auf_) no es conjuga mai i marxa al final. No escriguis mai _ich aufstehe_ — el verb **s'ha de separar**.",
+      "byResponse": [
+        {
+          "match": { "1": "aufstehe" },
+          "message": "No: _ich aufstehe_ és l'error típic. En frase enunciativa el verb separable **s'ha de partir**: l'arrel _stehe_ va a la posició 2 i el prefix _auf_ vola al final.",
+          "references": ["A1a-25"]
+        },
+        {
+          "match": { "1": "auf" },
+          "message": "Has canviat els papers: _auf_ és el prefix i va al final. A la posició 2 hi va l'arrel conjugada (_stehe_).",
+          "references": ["A1a-25"]
+        }
+      ]
+    }
+  }
+}

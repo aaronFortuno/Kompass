@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-25-ex-01",
+  "topicId": "A1a-25",
+  "title": "Empareja verbs i prefixos",
+  "prompt": "Empareja cada verb amb el prefix separable que li correspon per reconstruir els quatre verbs complets. La traducció catalana et dona la pista.",
+  "difficulty": 1,
+  "tags": ["prefixos-separables", "reconeixement", "matchpairs"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "c1", "group": "Verb", "content": { "type": "text", "content": "_stehen_ (llevar-se)" } },
+      { "id": "c2", "group": "Prefix", "content": { "type": "text", "content": "**auf**" } },
+      { "id": "c3", "group": "Verb", "content": { "type": "text", "content": "_rufen_ (trucar)" } },
+      { "id": "c4", "group": "Prefix", "content": { "type": "text", "content": "**an**" } },
+      { "id": "c5", "group": "Verb", "content": { "type": "text", "content": "_sehen_ (mirar la tele)" } },
+      { "id": "c6", "group": "Prefix", "content": { "type": "text", "content": "**fern**" } },
+      { "id": "c7", "group": "Verb", "content": { "type": "text", "content": "_kaufen_ (fer la compra)" } },
+      { "id": "c8", "group": "Prefix", "content": { "type": "text", "content": "**ein**" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Verb",
+    "groupBLabel": "Prefix"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["c1", "c2"],
+      ["c3", "c4"],
+      ["c5", "c6"],
+      ["c7", "c8"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé! Has reconstruït els quatre verbs separables: _==auf==stehen_, _==an==rufen_, _==fern==sehen_, _==ein==kaufen_."
+    },
+    "incorrect": {
+      "default": "Revisa les pistes que dona la traducció catalana: _llevar-se_ → _aufstehen_; _trucar_ → _anrufen_; _mirar la tele_ → _fernsehen_; _fer la compra_ → _einkaufen_."
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-25-ex-06",
+  "topicId": "A1a-25",
+  "title": "Separables o inseparables?",
+  "prompt": "Indica si cada afirmació és certa o falsa. L'exercici posa a prova els punts clau del tema: separables vs inseparables, accent tònic i invariabilitat del prefix.",
+  "difficulty": 2,
+  "tags": ["separables", "inseparables", "truefalse", "assessment", "accent"],
+  "stimulus": {
+    "type": "text",
+    "content": "Llegeix cada afirmació i decideix si és certa (_richtig_) o falsa (_falsch_)."
+  },
+  "interaction": {
+    "type": "trueFalse",
+    "statements": [
+      { "id": "s1", "text": "El verb _aufstehen_ és separable: el prefix _auf_ se'n va al final de la frase." },
+      { "id": "s2", "text": "El verb _verstehen_ també és separable: podem dir _Ich stehe das ver_." },
+      { "id": "s3", "text": "En els verbs separables, l'accent tònic cau sempre al prefix: _==AUS==gehen_, _==AN==rufen_." },
+      { "id": "s4", "text": "El prefix d'un verb separable s'ha de conjugar segons el subjecte: _ich aufe_, _du aufst_." }
+    ]
+  },
+  "validation": {
+    "type": "truthMap",
+    "answers": {
+      "s1": true,
+      "s2": false,
+      "s3": true,
+      "s4": false
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé! Tens clars els punts clau: _aufstehen_ sí que es parteix, _verstehen_ no (és inseparable, amb _ver-_); l'accent dels separables va al prefix; i el prefix és invariable (no es conjuga mai)."
+    },
+    "incorrect": {
+      "default": "Repassem: _verstehen_ té _ver-_, que és **inseparable** (mai no es parteix). El prefix d'un separable és **invariable** (no té terminacions). I sí: l'accent dels separables cau sempre al prefix."
+    }
+  }
+}
