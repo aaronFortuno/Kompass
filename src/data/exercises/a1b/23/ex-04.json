@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-23-ex-04",
+  "topicId": "A1b-23",
+  "title": "Aplica el protocol sencer — escriu l'article",
+  "prompt": "Escriu **només l'article** (o la contracció, o la paraula indicada) al buit. La barreja dels tres grups és deliberada: força't a fer el pas 1 cada vegada. Els ítems 3 i 10 fan servir la **mateixa preposició** i el **mateix substantiu**, però tenen cas diferent perquè el verb canvia.",
+  "difficulty": 3,
+  "tags": ["protocol", "sintesi", "articles", "text-lliure"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich wohne bei {{1}} Tante._ _(die Tante)_\n2. _Wir gehen durch {{2}} Stadt._ _(die Stadt)_\n3. _Die Katze sitzt auf {{3}} Sofa._ _(das Sofa, estàtic)_\n4. _Er fährt nach {{4}}._ _(expressió fixa: \"a casa\")_\n5. _Das ist für {{5}} Vater._ _(der Vater)_\n6. _Ich fahre mit {{6}} Auto._ _(das Auto)_\n7. _Sie stellt die Tasche auf {{7}} Tisch._ _(der Tisch, moviment)_\n8. _Wir kommen aus {{8}} Türkei._ _(die Türkei)_\n9. _Ohne {{9}} Schlüssel gehe ich nicht._ _(der Schlüssel)_\n10. _Die Katze springt auf {{10}} Sofa._ _(das Sofa, moviment)_",
+    "blanks": [
+      { "id": "1", "label": "bei + die Tante (Dat-fix)" },
+      { "id": "2", "label": "durch + die Stadt (Akk-fix)" },
+      { "id": "3", "label": "auf + das Sofa (Wechsel + Wo?)" },
+      { "id": "4", "label": "nach Hause (expressió fixa)" },
+      { "id": "5", "label": "für + der Vater (Akk-fix)" },
+      { "id": "6", "label": "mit + das Auto (Dat-fix)" },
+      { "id": "7", "label": "auf + der Tisch (Wechsel + Wohin?)" },
+      { "id": "8", "label": "aus + die Türkei (Dat-fix)" },
+      { "id": "9", "label": "ohne + der Schlüssel (Akk-fix)" },
+      { "id": "10", "label": "auf + das Sofa (Wechsel + Wohin?)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "article" },
+      { "blankId": "2", "placeholder": "article" },
+      { "blankId": "3", "placeholder": "article" },
+      { "blankId": "4", "placeholder": "paraula fixa" },
+      { "blankId": "5", "placeholder": "article" },
+      { "blankId": "6", "placeholder": "article" },
+      { "blankId": "7", "placeholder": "article" },
+      { "blankId": "8", "placeholder": "article" },
+      { "blankId": "9", "placeholder": "article" },
+      { "blankId": "10", "placeholder": "article" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["der", "meiner"],
+      "2": ["die"],
+      "3": ["dem"],
+      "4": ["hause", "Hause"],
+      "5": ["den", "meinen"],
+      "6": ["dem"],
+      "7": ["den"],
+      "8": ["der"],
+      "9": ["den", "meinen"],
+      "10": ["das"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Impecable. Has resolt els 3 grups amb fluïdesa i, sobretot, has vist el contrast entre els ítems **3 i 10**: ==mateixa preposició (_auf_), mateix substantiu (_Sofa_), **cas diferent** perquè el verb canvia== (_sitzt_ estàtic → Dat vs. _springt_ moviment → Akk). És el cas puríssim de pas 2. La resta són pas 1 pur.",
+      "references": ["A1b-23", "A1b-21", "A1b-20"]
+    },
+    "incorrect": {
+      "default": "Protocol: **pas 1** (grup) → si és fixa, resolt; si és Wechsel, **pas 2** mirant el verb. Recorda: _bei, mit, aus_ → Dat-fix. _durch, für, ohne_ → Akk-fix. _auf_ → Wechsel (cas segons verb).",
+      "byResponse": [
+        {
+          "match": { "1": "die" },
+          "message": "_bei_ és Dat-fix. _die Tante_ femení → datiu ==_**der** Tante_==. _die_ seria nom./acus."
+        },
+        {
+          "match": { "2": "der" },
+          "message": "_durch_ és Akk-fix. _die Stadt_ femení → acusatiu; com que fem. acus. = fem. nom., s'escriu ==_**die** Stadt_==."
+        },
+        {
+          "match": { "3": "das" },
+          "message": "_auf_ és Wechsel. _sitzen_ és estàtic (Wo?) → ==**Dativ**== → _auf **dem** Sofa_. _das_ seria Wohin?, que contradiu _sitzen_."
+        },
+        {
+          "match": { "4": "haus" },
+          "message": "Expressió fixa: ==_nach **Hause**_== (amb **-e** final i majúscula). És un residu històric de datiu antic."
+        },
+        {
+          "match": { "5": "dem" },
+          "message": "_für_ és Akk-fix. Masc. → ==_**den** Vater_== (o _**meinen** Vater_). _dem_ seria datiu."
+        },
+        {
+          "match": { "6": "das" },
+          "message": "_mit_ és Dat-fix. _das Auto_ neut. → datiu ==_**dem** Auto_==. _das_ seria nom./acus."
+        },
+        {
+          "match": { "7": "dem" },
+          "message": "_auf_ és Wechsel. _stellen_ és moviment (Wohin?) → ==**Akkusativ**== → _auf **den** Tisch_. _dem_ seria Wo?, que contradiu _stellen_."
+        },
+        {
+          "match": { "8": "die" },
+          "message": "_aus_ és Dat-fix. _die Türkei_ fem. → datiu ==_aus **der** Türkei_==. _die_ seria nom./acus."
+        },
+        {
+          "match": { "9": "dem" },
+          "message": "_ohne_ és Akk-fix. Masc. → ==_**den** Schlüssel_== (o _**meinen** Schlüssel_). _dem_ seria datiu."
+        },
+        {
+          "match": { "10": "dem" },
+          "message": "_auf_ és Wechsel. _springen auf_ és moviment (Wohin?) → ==**Akkusativ**== → _auf **das** Sofa_. Contrast amb ítem 3: _sitzen_ (estàtic) → Dat; _springen_ (moviment) → Akk."
+        }
+      ]
+    }
+  }
+}

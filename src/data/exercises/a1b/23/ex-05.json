@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-23-ex-05",
+  "topicId": "A1b-23",
+  "title": "Reconèixer el parany — encerta o falla?",
+  "prompt": "Llegeix cada frase fixant-te en la preposició **en negreta** i aplica mentalment la **regla ingènua** (_Wo? → Dat, Wohin? → Akk_). Per a cada ítem, decideix si aquesta regla dona el resultat correcte **per casualitat** o si **falla**. Tingues en compte que \"encertar per casualitat\" també és perillós: reforça el mal hàbit.",
+  "difficulty": 3,
+  "tags": ["metacognicio", "parany", "regla-ingenua"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich bin **bei** meinen Eltern._ (Wo?) → {{1}}\n2. _Wir fliegen **nach** Italien._ (Wohin?) → {{2}}\n3. _Ich gehe **in** den Park._ (Wohin?) → {{3}}\n4. _Das Auto fährt **durch** den Tunnel._ (moviment) → {{4}}\n5. _Der Bus fährt **bis** Berlin._ (Wohin?) → {{5}}\n6. _Ich komme **aus** dem Haus._ (Woher?) → {{6}}\n7. _Sie sitzt **auf** dem Stuhl._ (Wo?) → {{7}}\n8. _Das Geschenk ist **für** dich._ (ni moviment ni ubicació) → {{8}}",
+    "blanks": [
+      { "id": "1", "label": "bei + Wo?" },
+      { "id": "2", "label": "nach + Wohin?" },
+      { "id": "3", "label": "in + Wohin?" },
+      { "id": "4", "label": "durch + moviment" },
+      { "id": "5", "label": "bis + Wohin?" },
+      { "id": "6", "label": "aus + Woher?" },
+      { "id": "7", "label": "auf + Wo?" },
+      { "id": "8", "label": "für (sense ubicació)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["encerta per casualitat", "falla"] },
+      { "blankId": "2", "options": ["encerta per casualitat", "falla"] },
+      { "blankId": "3", "options": ["encerta per casualitat", "falla"] },
+      { "blankId": "4", "options": ["encerta per casualitat", "falla"] },
+      { "blankId": "5", "options": ["encerta per casualitat", "falla"] },
+      { "blankId": "6", "options": ["encerta per casualitat", "falla"] },
+      { "blankId": "7", "options": ["encerta per casualitat", "falla"] },
+      { "blankId": "8", "options": ["encerta per casualitat", "falla"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "encerta per casualitat",
+      "2": "falla",
+      "3": "encerta per casualitat",
+      "4": "falla",
+      "5": "encerta per casualitat",
+      "6": "falla",
+      "7": "encerta per casualitat",
+      "8": "falla"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "==La regla ingènua encerta a vegades, i per això és perillosa. El protocol correcte encerta sempre.== Dels 8 ítems, 4 encerten per casualitat (coincidència de cas entre la regla falsa i la regla real) i 4 fallen o no apliquen. El teu objectiu és no confiar mai en l'encert casual: aplica sempre el pas 1.",
+      "references": ["A1b-23", "A1b-20"]
+    },
+    "incorrect": {
+      "default": "La regla ingènua \"encerta per casualitat\" quan la preposició fixa coincideix amb el cas que predeia (p. ex. _bei_ + Wo? → la regla diu Dat, la realitat també Dat). **Falla** quan la regla no aplica (Woher?, preposicions abstractes) o quan prediu un cas erroni (_nach_ → prediu Akk, real Dat).",
+      "byResponse": [
+        {
+          "match": { "1": "falla" },
+          "message": "_bei meinen Eltern_ és **Dat** (fix). La regla ingènua, davant de *Wo?*, també diu Dat. ==Coincideixen== → **encerta per casualitat**. El perill: l'estudiant pensa que la regla ha funcionat."
+        },
+        {
+          "match": { "2": "encerta per casualitat" },
+          "message": "_nach Italien_ és **Dat** (fix). La regla ingènua, davant de *Wohin?*, diu Akk. ==No coincideixen== → **falla**. És el parany més freqüent."
+        },
+        {
+          "match": { "3": "falla" },
+          "message": "_in den Park_ és **Akk**. La regla ingènua, davant de *Wohin?*, diu Akk. Coincideixen → **encerta**; però és coincidència estructural perquè _in_ sí que és Wechsel."
+        },
+        {
+          "match": { "4": "encerta per casualitat" },
+          "message": "_durch_ és fixa-Akk i _durch den Tunnel_ és Akk. La regla ingènua no sap què fer amb \"moviment sense Wo?/Wohin? clar\", i de tota manera aplicar-la a _durch_ no és vàlid → **falla** (la regla no aplica)."
+        },
+        {
+          "match": { "5": "falla" },
+          "message": "_bis Berlin_ és **Akk** (_bis_ és fixa-Akk). La regla ingènua, davant de *Wohin?*, diu Akk. Coincideixen → **encerta per casualitat**, però per raons estructurals diferents."
+        },
+        {
+          "match": { "6": "encerta per casualitat" },
+          "message": "_aus dem Haus_ és Dat. La regla ingènua només cobreix *Wo?/Wohin?*, no *Woher?* → la regla **no aplica** / **falla**."
+        },
+        {
+          "match": { "7": "falla" },
+          "message": "_auf dem Stuhl_ és Dat. La regla ingènua, davant de *Wo?*, diu Dat. Coincideixen → **encerta**. Però només perquè _auf_ és Wechsel i _sitzen_ és estàtic: pot semblar que la regla ha funcionat sense saber res més, i per això és enganyosa."
+        },
+        {
+          "match": { "8": "encerta per casualitat" },
+          "message": "_für dich_ és Akk. Aquí no hi ha ni *Wo?* ni *Wohin?* (no és local) → la regla ingènua no sap què dir → **falla** (no aplicable)."
+        }
+      ]
+    }
+  }
+}

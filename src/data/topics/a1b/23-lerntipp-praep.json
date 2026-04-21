@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-23",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 23,
+  "title": "Lerntipp: el protocol per triar el cas amb preposicions",
+  "shortTitle": "Lerntipp",
+  "description": "Consell d'aprenentatge (Lerntipp) per evitar el parany més típic de les preposicions: aplicar Wo?/Wohin? a totes. Protocol mental de dos passos.",
+  "axes": ["preposicions"],
+  "prerequisites": ["A1b-20"],
+  "estimatedMinutes": 20,
+  "steps": [
+    {
+      "id": "la-trampa",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### La trampa (*Vorsicht Falle!*)\n\nAquesta no és una lliçó gramatical nova: és un **Lerntipp**, un consell d'aprenentatge. Després de tres temes sobre preposicions locals (Wechselpräpositionen, fixes, verbs de moviment), el cervell tendeix a **sobregeneralitzar** la regla *Wo? → Dativ / Wohin? → Akkusativ* i aplicar-la a **totes** les preposicions.\n\nEl llibre de text comença amb la frase que sentiràs repetir a molts estudiants:\n\n> *\"Präpositionen sind leicht — Wo? → Dativ, Wohin? → Akkusativ.\"*\n\n==Aquesta regla és **falsa** si s'aplica a totes les preposicions.== Només funciona amb les **9 Wechselpräpositionen** (*in, an, auf, über, unter, vor, hinter, neben, zwischen*)."
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Per què la gent cau al parany?",
+          "body": "Perquè la regla *Wo? → Dat / Wohin? → Akk* és **elegant, simètrica i fàcil de memoritzar**. Però oblida que la majoria de preposicions tenen **cas fix** i no pregunten res. El fet que a vegades encerti per casualitat reforça el mal hàbit."
+        },
+        {
+          "type": "table",
+          "title": "23.1 Exemples que trenquen la regla ingènua",
+          "headers": ["Frase", "Pregunta", "Regla ingènua diria", "Realitat"],
+          "rows": [
+            ["_Ich fahre **nach** Berlin._", "Wohin?", "Akkusativ", "==**Dativ**== (_nach_ és fix-Dat)"],
+            ["_Wir gehen **durch** den Park._", "Wo? / Wohin?", "depèn?", "==**Akkusativ**== sempre (_durch_ és fix-Akk)"],
+            ["_Du kommst **aus** dem Haus._", "Woher?", "—", "==**Dativ**== sempre (_aus_ és fix-Dat)"],
+            ["_Er wohnt **bei** einem Freund._", "Wo?", "Dativ ✓", "**Dativ** (coincidència: _bei_ és fix-Dat)"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "El darrer cas és el que confon més: a vegades la regla ingènua **encerta per casualitat**, perquè una preposició fixa de datiu coincideix amb una pregunta *Wo?*. Aquest \"encert casual\" reforça el mal hàbit i fa que l'estudiant no s'adoni que aplica una regla equivocada."
+        }
+      ]
+    },
+    {
+      "id": "protocol",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El protocol correcte: dos passos, en aquest ordre\n\nEl *Lerntipp* del llibre és un **canvi d'ordre** de les preguntes mentals:\n\n> ❌ **NO preguntis primer:** *Wo? o Wohin?*\n>\n> ✅ **Pregunta PRIMER:** quina preposició és? → **a)** fixa-Dat, **b)** fixa-Akk, o **c)** Wechsel?\n>\n> ✅ **DESPRÉS, només si és Wechsel:** *Wo?* → Dativ, *Wohin?* → Akkusativ."
+        },
+        {
+          "type": "table",
+          "title": "23.2 Algorisme mental de dos passos",
+          "headers": ["Pas", "Acció", "Resultat"],
+          "rows": [
+            [{ "text": "**Pas 1**", "rowspan": 3 }, "Si és **fixa de Dativ** (_aus, bei, mit, nach, seit, von, zu_)", "==**Dativ**==, fi."],
+            ["Si és **fixa d'Akkusativ** (_durch, für, ohne, gegen, um, bis_)", "==**Akkusativ**==, fi."],
+            ["Si és **Wechsel** (_in, an, auf, über, unter, vor, hinter, neben, zwischen_)", "→ Pas 2"],
+            [{ "text": "**Pas 2**", "rowspan": 2 }, "*Wo?* (ubicació estàtica)", "==**Dativ**=="],
+            ["*Wohin?* (destinació, moviment)", "==**Akkusativ**=="]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "La clau: el pas 1 elimina el 60 % de la feina",
+          "body": "Només arribes al pas 2 si la preposició pertany a les **9 Wechsel**. Amb les altres 13 preposicions locals, la resposta és ==automàtica== un cop identifiques el grup. Per això val la pena memoritzar les dues cantarelles abans de res."
+        }
+      ]
+    },
+    {
+      "id": "check-1-regla-ingenua",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-23-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "estrategies-memoria",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Estratègies de memòria per automatitzar el pas 1\n\n**a) Les dues cantarelles.** Memoritza-les com dos \"versos\":\n\n> **Dativ-fix (7+1):** ==_aus – bei – mit – nach – seit – von – zu_== (+ _gegenüber_)\n>\n> **Akkusativ-fix (6):** ==_durch – für – ohne – gegen – um – bis_==\n\nEs poden cantar amb el ritme d'una cançó coneguda. Si les tens gravades, en sentir la preposició el cervell ja t'avisa \"aquesta és de la primera llista\" abans que puguis dubtar."
+        },
+        {
+          "type": "explanation",
+          "body": "**b) La llista visual de Wechsel.** Imagina una **pilota** i una **capsa**. Les 9 preposicions que descriuen la **posició relativa de la pilota respecte a la capsa** són les Wechsel:\n\n> ==_in, an, auf, über, unter, vor, hinter, neben, zwischen_==\n\nSón les úniques on després caldrà preguntar *Wo?/Wohin?*."
+        },
+        {
+          "type": "explanation",
+          "body": "**c) El verb com a pista (dins del pas 2).** Dins del pas 2, en comptes de preguntar *Wo?/Wohin?* (que pot ser abstracte), mira el **verb**:"
+        },
+        {
+          "type": "table",
+          "title": "23.3 El verb et dona el cas (només amb Wechsel)",
+          "headers": ["Tipus de verb", "Exemples", "Cas (amb Wechsel)"],
+          "rows": [
+            ["**Estàtics** (permanència)", "_sein, stehen, sitzen, liegen, hängen, wohnen, bleiben, sich befinden_", "==**Dativ**=="],
+            ["**De canvi de lloc** (moviment)", "_gehen, fahren, fliegen, laufen, reisen, kommen, stellen, setzen, legen, hängen (tr.)_", "==**Akkusativ**=="]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Si dubtes, el verb té la resposta abans que la pregunta",
+          "body": "A l'hora de triar el cas d'una Wechselpräposition, fixar-se en el verb sovint és més ràpid que fer-se la pregunta *Wo?/Wohin?* mentalment. _sitzen_ → estàtic → Dat. _gehen_ → moviment → Akk."
+        },
+        {
+          "type": "explanation",
+          "body": "**d) Les contraccions com a ancoratge.** Algunes contraccions només existeixen amb un cas concret: si reconeixes la contracció, el cas està resolt."
+        },
+        {
+          "type": "table",
+          "title": "23.4 Contraccions i cas implícit",
+          "headers": ["Contracció", "Ve de", "Cas", "Font"],
+          "rows": [
+            ["==_zum, zur, beim, vom_==", "_zu/bei/von + dem/der_", "sempre **Dativ**", "preposicions fixes-Dat"],
+            ["==_durchs, fürs, ums_==", "_durch/für/um + das_", "sempre **Akkusativ**", "preposicions fixes-Akk"],
+            ["==_im, am_==", "_in/an + dem_", "**Dativ**", "Wechsel + Wo?"],
+            ["==_ins, ans_==", "_in/an + das_", "**Akkusativ**", "Wechsel + Wohin?"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "check-2-classificar",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-23-ex-02", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-3-protocol-ordenat",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-23-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-4-protocol-sencer",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-23-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-5-reconeixer-parany",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-23-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi: la trampa, el protocol i les tres llistes\n\n**La trampa (*Vorsicht Falle!*):**\n\n> ❌ \"Wo? → Dativ, Wohin? → Akkusativ\" ==**NO és una regla universal**==.\n\n**El protocol (*Der Tipp*):**\n\n> ✅ **Pas 1 — IDENTIFICA el grup:** fixa-Dat · fixa-Akk · Wechsel.\n>\n> ✅ **Pas 2 — NOMÉS si és Wechsel:** *Wo?* → Dat · *Wohin?* → Akk."
+        },
+        {
+          "type": "table",
+          "title": "23.5 Les tres llistes per memoritzar",
+          "headers": ["Grup", "Membres", "Cas"],
+          "rows": [
+            ["**Fixa-Dativ**", "_aus, bei, mit, nach, seit, von, zu_ (+ _gegenüber_)", "==sempre Dat=="],
+            ["**Fixa-Akkusativ**", "_durch, für, ohne, gegen, um, bis_", "==sempre Akk=="],
+            ["**Wechsel**", "_in, an, auf, über, unter, vor, hinter, neben, zwischen_", "==Dat (Wo?) / Akk (Wohin?)=="]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Senyal d'alarma interna",
+          "body": "Cada vegada que veus una preposició, **abans de mirar el substantiu**, digues mentalment a quin grup pertany. Si no ho saps instantàniament, repassa la cantarella. Amb el temps, el pas 1 desapareix i només queda el pas 2 (que només afecta 9 preposicions)."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "L'objectiu d'aquest tema",
+          "body": "==La finalitat d'aquest tema no és saber més gramàtica — ja la saps —, sinó **automatitzar** l'ordre mental correcte per no caure en el parany.== Aquest tema tanca el bloc de preposicions locals d'A1b."
+        },
+        {
+          "type": "explanation",
+          "body": "**Connexions amb altres lliçons:**\n\n- **A1a-34** — dativ-fix original.\n- **A1b-18** — _Wo? / Woher? / Wohin?_\n- **A1b-19** — Wechselpräpositionen.\n- **A1b-20** — mapa complet dels tres grups.\n- **A1b-21** — verbs de moviment.\n- **A1b-22** — localització (lokalisierung)."
+        }
+      ]
+    }
+  ]
+}

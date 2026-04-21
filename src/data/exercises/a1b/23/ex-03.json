@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-23-ex-03",
+  "topicId": "A1b-23",
+  "title": "Aplica el protocol pas a pas",
+  "prompt": "Per a cada frase, tria **el raonament complet** que explica per què la preposició demana aquell cas. Has de combinar pas 1 (grup) i, si cal, pas 2 (*Wo?/Wohin?*). Si has saltat el pas 1, tornes a caure a la trampa.",
+  "difficulty": 2,
+  "tags": ["protocol", "raonament", "pas-1", "pas-2"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich gehe {{1}} Park._ (_der Park_)\n2. _Wir fahren {{2}} Berlin._\n3. _Das Buch ist {{3}} dich._\n4. _Die Lampe hängt {{4}} Tisch._ (_der Tisch_, verb estàtic)\n5. _Sie kommt {{5}} Schule._ (_die Schule_)",
+    "blanks": [
+      { "id": "1", "label": "in den / im — triar raonament" },
+      { "id": "2", "label": "nach — triar raonament" },
+      { "id": "3", "label": "für — triar raonament" },
+      { "id": "4", "label": "über dem / über den — triar raonament" },
+      { "id": "5", "label": "aus der — triar raonament" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "1",
+        "options": [
+          "in → Wechsel · gehen = moviment → Wohin? → Akk → in den Park",
+          "in → Wechsel · Wo? → Dat → im Park",
+          "in → fixa-Akk → Akk → in den Park",
+          "in → fixa-Dat → Dat → im Park"
+        ]
+      },
+      {
+        "blankId": "2",
+        "options": [
+          "nach → fixa-Dat → Dat → nach Berlin (sense article)",
+          "nach → Wechsel · Wohin? → Akk → nach Berlin",
+          "nach → fixa-Akk → Akk → nach Berlin",
+          "nach → Wechsel · Wo? → Dat → nach Berlin"
+        ]
+      },
+      {
+        "blankId": "3",
+        "options": [
+          "für → fixa-Akk → Akk → für dich",
+          "für → fixa-Dat → Dat → für dir",
+          "für → Wechsel · Wohin? → Akk → für dich",
+          "für → Wechsel · Wo? → Dat → für dir"
+        ]
+      },
+      {
+        "blankId": "4",
+        "options": [
+          "über → Wechsel · hängen (estàtic) = Wo? → Dat → über dem Tisch",
+          "über → Wechsel · Wohin? → Akk → über den Tisch",
+          "über → fixa-Dat → Dat → über dem Tisch",
+          "über → fixa-Akk → Akk → über den Tisch"
+        ]
+      },
+      {
+        "blankId": "5",
+        "options": [
+          "aus → fixa-Dat → Dat → aus der Schule",
+          "aus → Wechsel · Woher? → Dat → aus der Schule",
+          "aus → fixa-Akk → Akk → aus die Schule",
+          "aus → Wechsel · Wohin? → Akk → aus die Schule"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "in → Wechsel · gehen = moviment → Wohin? → Akk → in den Park",
+      "2": "nach → fixa-Dat → Dat → nach Berlin (sense article)",
+      "3": "für → fixa-Akk → Akk → für dich",
+      "4": "über → Wechsel · hängen (estàtic) = Wo? → Dat → über dem Tisch",
+      "5": "aus → fixa-Dat → Dat → aus der Schule"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has aplicat el protocol sencer: ==pas 1 primer== (grup), ==pas 2 només si és Wechsel==. Observa la diferència entre ítems 1 i 4 (tots dos Wechsel però un amb moviment i l'altre estàtic) i els ítems 2, 3, 5 (fixes, on el pas 2 ni tan sols es planteja).",
+      "references": ["A1b-23", "A1b-21", "A1b-20"]
+    },
+    "incorrect": {
+      "default": "Si has saltat el pas 1, tornes a caure a la trampa. ==Sempre: primer grup, després (si cal) pregunta.== Les fixes no pregunten *Wo?/Wohin?*.",
+      "byResponse": [
+        {
+          "match": { "1": "in → fixa-Akk → Akk → in den Park" },
+          "message": "El resultat (_in den Park_) és correcte, però el **raonament** és erroni. _in_ **no és** fixa-Akk: és **Wechsel**. El motiu de l'acusatiu és que _gehen_ indica moviment (Wohin?), no que _in_ sigui fix."
+        },
+        {
+          "match": { "2": "nach → Wechsel · Wohin? → Akk → nach Berlin" },
+          "message": "==Parany clàssic==. _nach_ **no és Wechsel**: és **fixa-Dat**. _nach Berlin_ és datiu encara que hi hagi direcció. Cantarella: _aus-bei-mit-**nach**-seit-von-zu_."
+        },
+        {
+          "match": { "2": "nach → fixa-Akk → Akk → nach Berlin" },
+          "message": "_nach_ és **fixa-Dat**, no fixa-Akk. Sempre datiu: _nach Berlin_ (sense article visible, però datiu estructural)."
+        },
+        {
+          "match": { "3": "für → Wechsel · Wohin? → Akk → für dich" },
+          "message": "El resultat és correcte, però _für_ **no és Wechsel**: és **fixa-Akk**. L'acusatiu és automàtic, no cal preguntar *Wohin?*."
+        },
+        {
+          "match": { "4": "über → Wechsel · Wohin? → Akk → über den Tisch" },
+          "message": "_hängen_ aquí és **estàtic** (la llàmpada està penjada, no la pengen). És Wo?, no Wohin? → ==**Dativ**==: _über **dem** Tisch_."
+        },
+        {
+          "match": { "4": "über → fixa-Dat → Dat → über dem Tisch" },
+          "message": "El resultat és correcte, però _über_ **no és fixa-Dat**: és **Wechsel**. El datiu ve del verb estàtic (_hängen_ = Wo?), no d'un cas fix."
+        },
+        {
+          "match": { "5": "aus → Wechsel · Woher? → Dat → aus der Schule" },
+          "message": "_aus_ **no és Wechsel**: és **fixa-Dat**. El datiu és automàtic, la pregunta *Woher?* no determina el cas."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-23-ex-01",
+  "topicId": "A1b-23",
+  "title": "Desmuntar la regla ingènua",
+  "prompt": "Afirmacions que circulen entre estudiants. Marca cadascuna com **certa** o **falsa** segons si descriu correctament el sistema de preposicions. Cal aprendre a rebutjar les que tot sonen bé però contradiuen el protocol.",
+  "difficulty": 1,
+  "tags": ["metacognicio", "regla-ingenua", "protocol"],
+  "stimulus": {
+    "type": "text",
+    "content": "Marca cada afirmació com **certa** o **falsa**."
+  },
+  "interaction": {
+    "type": "trueFalse",
+    "statements": [
+      { "id": "s1", "text": "\"Si pregunto *Wohin?*, sempre faig servir acusatiu.\"" },
+      { "id": "s2", "text": "\"_nach_ és una preposició d'acusatiu perquè indica direcció.\"" },
+      { "id": "s3", "text": "\"Les 9 Wechselpräpositionen canvien segons *Wo?* / *Wohin?*.\"" },
+      { "id": "s4", "text": "\"_durch_ porta datiu perquè no hi ha moviment.\"" },
+      { "id": "s5", "text": "\"_zu_ és fixa de datiu, encara que indiqui destinació.\"" },
+      { "id": "s6", "text": "\"Primer miro el verb, després la preposició.\"" }
+    ]
+  },
+  "validation": {
+    "type": "truthMap",
+    "answers": {
+      "s1": false,
+      "s2": false,
+      "s3": true,
+      "s4": false,
+      "s5": true,
+      "s6": false
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. La regla *Wohin? → Akk* només val per a **Wechsel**; fora d'aquestes 9 preposicions, la pregunta és irrellevant. ==El pas 1 sempre va primer: identifica el grup.== Després, només si és Wechsel, preguntes *Wo?* / *Wohin?*.",
+      "references": ["A1b-23", "A1b-20"]
+    },
+    "incorrect": {
+      "default": "Recorda el protocol: **Pas 1** — identifica el grup de la preposició (fixa-Dat, fixa-Akk o Wechsel). **Pas 2 (només si és Wechsel)** — *Wo?* → Dat, *Wohin?* → Akk. Les preposicions fixes no pregunten res.",
+      "byResponse": [
+        {
+          "match": { "s1": true },
+          "message": "Fals. _nach Berlin_ és ==**datiu**== (_nach_ és fix-Dat) malgrat ser *Wohin?*. La regla *Wohin? → Akk* només val per a **Wechsel**."
+        },
+        {
+          "match": { "s2": true },
+          "message": "Fals. _nach_ és **fix-Dat**, sempre datiu, independentment del significat. Pertany a la cantarella _aus-bei-mit-**nach**-seit-von-zu_."
+        },
+        {
+          "match": { "s3": false },
+          "message": "Cert: és el nucli del sistema. Les 9 Wechsel (_in, an, auf, über, unter, vor, hinter, neben, zwischen_) canvien **Dat/Akk** segons la pregunta."
+        },
+        {
+          "match": { "s4": true },
+          "message": "Fals. _durch_ és ==**fix-Akk**==, sempre acusatiu, fins i tot sense moviment direccional. Pertany a la cantarella _**durch**-für-ohne-gegen-um-bis_."
+        },
+        {
+          "match": { "s5": false },
+          "message": "Cert: _zu_ és **fix-Dat** encara que indiqui destinació. _Ich gehe **zum** Arzt_ → datiu. És el contraexemple perfecte a \"destinació = acusatiu\"."
+        },
+        {
+          "match": { "s6": true },
+          "message": "Ordre invertit. ==Primer identifica el **grup** de la preposició==; el verb només ajuda **dins** del grup Wechsel (per decidir Dat/Akk). Si la preposició és fixa, el verb és irrellevant."
+        }
+      ]
+    }
+  }
+}

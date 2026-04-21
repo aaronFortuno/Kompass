@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-23-ex-02",
+  "topicId": "A1b-23",
+  "title": "Pas 1 del protocol — classificar cada preposició",
+  "prompt": "Aplica **només el pas 1**: a quin grup pertany cada preposició? Tria entre **fixa-Dat**, **fixa-Akk** o **Wechsel**. Recita les dues cantarelles si dubtes: _aus-bei-mit-nach-seit-von-zu_ (Dat-fix) i _durch-für-ohne-gegen-um-bis_ (Akk-fix); la resta són Wechsel.",
+  "difficulty": 1,
+  "tags": ["classificacio", "pas-1", "cantarelles"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _für_ → {{1}}\n2. _in_ → {{2}}\n3. _nach_ → {{3}}\n4. _auf_ → {{4}}\n5. _ohne_ → {{5}}\n6. _bei_ → {{6}}\n7. _zwischen_ → {{7}}\n8. _durch_ → {{8}}\n9. _mit_ → {{9}}\n10. _an_ → {{10}}\n11. _zu_ → {{11}}\n12. _um_ → {{12}}",
+    "blanks": [
+      { "id": "1", "label": "für" },
+      { "id": "2", "label": "in" },
+      { "id": "3", "label": "nach" },
+      { "id": "4", "label": "auf" },
+      { "id": "5", "label": "ohne" },
+      { "id": "6", "label": "bei" },
+      { "id": "7", "label": "zwischen" },
+      { "id": "8", "label": "durch" },
+      { "id": "9", "label": "mit" },
+      { "id": "10", "label": "an" },
+      { "id": "11", "label": "zu" },
+      { "id": "12", "label": "um" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["fixa-Dat", "fixa-Akk", "Wechsel"] },
+      { "blankId": "2", "options": ["fixa-Dat", "fixa-Akk", "Wechsel"] },
+      { "blankId": "3", "options": ["fixa-Dat", "fixa-Akk", "Wechsel"] },
+      { "blankId": "4", "options": ["fixa-Dat", "fixa-Akk", "Wechsel"] },
+      { "blankId": "5", "options": ["fixa-Dat", "fixa-Akk", "Wechsel"] },
+      { "blankId": "6", "options": ["fixa-Dat", "fixa-Akk", "Wechsel"] },
+      { "blankId": "7", "options": ["fixa-Dat", "fixa-Akk", "Wechsel"] },
+      { "blankId": "8", "options": ["fixa-Dat", "fixa-Akk", "Wechsel"] },
+      { "blankId": "9", "options": ["fixa-Dat", "fixa-Akk", "Wechsel"] },
+      { "blankId": "10", "options": ["fixa-Dat", "fixa-Akk", "Wechsel"] },
+      { "blankId": "11", "options": ["fixa-Dat", "fixa-Akk", "Wechsel"] },
+      { "blankId": "12", "options": ["fixa-Dat", "fixa-Akk", "Wechsel"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "fixa-Akk",
+      "2": "Wechsel",
+      "3": "fixa-Dat",
+      "4": "Wechsel",
+      "5": "fixa-Akk",
+      "6": "fixa-Dat",
+      "7": "Wechsel",
+      "8": "fixa-Akk",
+      "9": "fixa-Dat",
+      "10": "Wechsel",
+      "11": "fixa-Dat",
+      "12": "fixa-Akk"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has completat el pas 1 sense dubtar. ==**Dat-fix**==: _nach, bei, mit, zu_. ==**Akk-fix**==: _für, ohne, durch, um_. ==**Wechsel**==: _in, auf, zwischen, an_. Amb les dues cantarelles gravades, aquest pas es fa en un segon.",
+      "references": ["A1b-23", "A1b-20", "A1a-34"]
+    },
+    "incorrect": {
+      "default": "Cantarelles: ==**Dat-fix**== _aus-bei-mit-nach-seit-von-zu_. ==**Akk-fix**== _durch-für-ohne-gegen-um-bis_. Tot el que no hi sigui i sigui local és **Wechsel** (_in, an, auf, über, unter, vor, hinter, neben, zwischen_).",
+      "byResponse": [
+        {
+          "match": { "3": "fixa-Akk" },
+          "message": "Parany clàssic. _nach_ **no** és fixa-Akk, encara que indiqui direcció. És de la cantarella _aus-bei-mit-**nach**-seit-von-zu_ → ==**fixa-Dat**==."
+        },
+        {
+          "match": { "3": "Wechsel" },
+          "message": "_nach_ no és Wechsel. És **fixa-Dat**: cantarella _aus-bei-mit-**nach**-seit-von-zu_. Sempre datiu."
+        },
+        {
+          "match": { "1": "Wechsel" },
+          "message": "_für_ no és Wechsel. És de la segona cantarella: _**für**-durch-ohne-gegen-um-bis_ → **fixa-Akk**."
+        },
+        {
+          "match": { "4": "fixa-Dat" },
+          "message": "_auf_ és **Wechsel**, no fixa. _auf dem Tisch_ (Wo?) és Dat, _auf den Tisch_ (Wohin?) és Akk."
+        },
+        {
+          "match": { "4": "fixa-Akk" },
+          "message": "_auf_ és **Wechsel**, no fixa. El cas depèn de la pregunta: *Wo?* → Dat, *Wohin?* → Akk."
+        },
+        {
+          "match": { "5": "fixa-Dat" },
+          "message": "_ohne_ és de la segona cantarella: _durch-für-**ohne**-gegen-um-bis_ → **fixa-Akk**."
+        },
+        {
+          "match": { "6": "fixa-Akk" },
+          "message": "_bei_ és de la primera cantarella: _aus-**bei**-mit-nach-seit-von-zu_ → **fixa-Dat**."
+        },
+        {
+          "match": { "7": "fixa-Dat" },
+          "message": "_zwischen_ és Wechsel (és de la llista de les 9: _in, an, auf, über, unter, vor, hinter, neben, **zwischen**_)."
+        },
+        {
+          "match": { "8": "Wechsel" },
+          "message": "_durch_ és **fixa-Akk**. Cantarella: _**durch**-für-ohne-gegen-um-bis_. Sempre acusatiu, fins i tot sense moviment direccional."
+        },
+        {
+          "match": { "10": "fixa-Dat" },
+          "message": "_an_ és **Wechsel**, no fixa. _am Tisch_ (Wo?) és Dat, _an die Tafel_ (Wohin?) és Akk."
+        },
+        {
+          "match": { "11": "fixa-Akk" },
+          "message": "_zu_ és **fixa-Dat** encara que indiqui destinació: _ich gehe **zum** Arzt_. Cantarella: _aus-bei-mit-nach-seit-von-**zu**_."
+        },
+        {
+          "match": { "12": "fixa-Dat" },
+          "message": "_um_ és **fixa-Akk**. Cantarella: _durch-für-ohne-gegen-**um**-bis_. _um den Tisch_, _um 8 Uhr_."
+        }
+      ]
+    }
+  }
+}
