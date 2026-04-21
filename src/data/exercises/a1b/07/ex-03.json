@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-7-ex-03",
+  "topicId": "A1b-7",
+  "title": "Datiu o acusatiu: _gefallen_ vs _interessieren_",
+  "prompt": "Completa cada frase amb el pronom correcte segons el verb. Recorda: _gefallen_ demana **datiu**, _interessieren_ demana **acusatiu**.",
+  "difficulty": 2,
+  "tags": ["gefallen", "interessieren", "datiu", "acusatiu", "contrast"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. {{1}} gefällt die Stadt. _(A mi m'agrada la ciutat.)_\n2. {{2}} interessiert die Geschichte. _(A mi m'interessa la història.)_\n3. {{3}} gefallen die Bilder. _(A tu t'agraden els quadres.)_\n4. {{4}} interessieren die Museen. _(A tu t'interessen els museus.)_",
+    "blanks": [
+      { "id": "1", "label": "pronom" },
+      { "id": "2", "label": "pronom" },
+      { "id": "3", "label": "pronom" },
+      { "id": "4", "label": "pronom" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Mir", "Mich", "Dir", "Dich"] },
+      { "blankId": "2", "options": ["Mir", "Mich", "Dir", "Dich"] },
+      { "blankId": "3", "options": ["Mir", "Mich", "Dir", "Dich"] },
+      { "blankId": "4", "options": ["Mir", "Mich", "Dir", "Dich"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Mir",
+      "2": "Mich",
+      "3": "Dir",
+      "4": "Dich"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has aplicat la distinció clau: _**gefallen** → **datiu**_ (_mir, dir_), _**interessieren** → **acusatiu**_ (_mich, dich_). Mateixa persona, diferent cas segons el verb.",
+      "references": ["A1b-7", "A1b-6"]
+    },
+    "incorrect": {
+      "default": "Memoritza les dues plantilles com un bloc: _**Mir** gefällt X_ (datiu) i _**Mich** interessiert X_ (acusatiu). El pronom depèn **només** del verb, no de la persona. Si és _gefallen_: _mir/dir/ihm/uns_... Si és _interessieren_: _mich/dich/ihn/uns_...",
+      "byResponse": [
+        {
+          "match": { "1": "Mich" },
+          "message": "_gefallen_ demana **datiu**, no acusatiu: _**Mir** gefällt die Stadt_. L'acusatiu (_mich_) és per a _interessieren_.",
+          "references": ["A1b-6"]
+        },
+        {
+          "match": { "2": "Mir" },
+          "message": "_interessieren_ demana **acusatiu**, no datiu: _**Mich** interessiert die Geschichte_. El datiu (_mir_) és per a _gefallen_.",
+          "references": ["A1b-7"]
+        }
+      ]
+    }
+  }
+}

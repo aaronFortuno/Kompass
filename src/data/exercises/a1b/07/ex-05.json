@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-7-ex-05",
+  "topicId": "A1b-7",
+  "title": "Expressions de graduació en mini-diàlegs",
+  "prompt": "Tria l'expressió de graduació (_auf keinen Fall_, _auf jeden Fall_, _unbedingt_) adequada a cada mini-diàleg segons el to i la intensitat.",
+  "difficulty": 2,
+  "tags": ["expressions", "graduacio", "dialeg"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. — Willst du ins Fußballstadion kommen? — {{1}} nicht! Ich hasse Fußball. _(Rebuig absolut.)_\n2. — Was möchtest du in Berlin sehen? — Ich möchte {{2}} den Reichstag besuchen! _(Desig personal intens.)_\n3. — Gehst du morgen zur Feier? — Ja, {{3}}! _(Afirmació segura.)_",
+    "blanks": [
+      { "id": "1", "label": "expressió" },
+      { "id": "2", "label": "expressió" },
+      { "id": "3", "label": "expressió" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["auf keinen Fall", "auf jeden Fall", "unbedingt"] },
+      { "blankId": "2", "options": ["auf keinen Fall", "auf jeden Fall", "unbedingt"] },
+      { "blankId": "3", "options": ["auf keinen Fall", "auf jeden Fall", "unbedingt"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "auf keinen Fall",
+      "2": "unbedingt",
+      "3": "auf jeden Fall"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has associat cada expressió al seu context natural: **rebuig absolut** amb _nicht_ intensificat → _auf keinen Fall_; **desig personal imprescindible** amb _möchten_ → _unbedingt_; **confirmació rotunda** com a resposta a una pregunta de sí/no → _auf jeden Fall_.",
+      "references": ["A1b-7"]
+    },
+    "incorrect": {
+      "default": "Pensa en el to: (1) _hasse_ indica rebuig absolut → _auf keinen Fall_; (2) _möchte_ + _sens falta_ és un desig personal intens → _unbedingt_ (pot anar amb _auf jeden Fall_ també, però _unbedingt_ és més natural amb _möchten_); (3) resposta afirmativa segura a una invitació → _auf jeden Fall_ = 'sens dubte, sí o sí'."
+    }
+  }
+}

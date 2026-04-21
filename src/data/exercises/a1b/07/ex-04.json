@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-7-ex-04",
+  "topicId": "A1b-7",
+  "title": "_neugierig auf_ + acusatiu: triar l'article correcte",
+  "prompt": "Completa cada frase amb l'article **acusatiu** correcte darrere de _neugierig auf_.",
+  "difficulty": 2,
+  "tags": ["neugierig-auf", "acusatiu", "articles"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Ich bin neugierig auf {{1}} Stadt. _(ciutat, femení)_\n2. Ich bin neugierig auf {{2}} Bruder. _(germà, masculí)_\n3. Wir sind neugierig auf {{3}} Konzert. _(concert, neutre)_\n4. Du bist neugierig auf {{4}} Museen. _(museus, plural)_",
+    "blanks": [
+      { "id": "1", "label": "article acusatiu" },
+      { "id": "2", "label": "article acusatiu" },
+      { "id": "3", "label": "article acusatiu" },
+      { "id": "4", "label": "article acusatiu" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["der", "den", "die", "das", "dem"] },
+      { "blankId": "2", "options": ["der", "den", "die", "das", "dem"] },
+      { "blankId": "3", "options": ["der", "den", "die", "das", "dem"] },
+      { "blankId": "4", "options": ["der", "den", "die", "das", "dem"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "die",
+      "2": "den",
+      "3": "das",
+      "4": "die"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has aplicat l'acusatiu darrere de _neugierig auf_: femení _die_, masculí _**den**_ (única forma visible diferent del nominatiu), neutre _das_, plural _die_. És l'acusatiu estàndard, no datiu.",
+      "references": ["A1b-7"]
+    },
+    "incorrect": {
+      "default": "_Neugierig auf_ regeix **acusatiu**. Articles: masc. _der → **den**_ (_auf **den** Bruder_), fem. _die → die_, neutre _das → das_, plural _die → die_. El trampós és el masculí, l'únic que canvia visiblement (_den_). Si posaves _dem_, anaves al datiu, que no correspon aquí.",
+      "byResponse": [
+        {
+          "match": { "2": "dem" },
+          "message": "_dem_ és **datiu** masculí. _Neugierig auf_ regeix acusatiu: _auf **den** Bruder_.",
+          "references": ["A1b-7"]
+        },
+        {
+          "match": { "2": "der" },
+          "message": "_der_ és el nominatiu masculí (o datiu femení). Aquí cal **acusatiu** masculí: _auf **den** Bruder_.",
+          "references": ["A1b-7"]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-7-ex-06",
+  "topicId": "A1b-7",
+  "title": "Micro-diàleg integrador: viatge a Berlín",
+  "prompt": "Completa el micro-diàleg sobre un viatge a Berlín integrant les tres novetats del tema: _interessieren_ (acusatiu), _neugierig auf_ (preposició), i les expressions de graduació.",
+  "difficulty": 3,
+  "tags": ["integracio", "interessieren", "neugierig-auf", "expressions", "dialeg"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. {{1}} interessiert die deutsche Geschichte. _(A mi m'interessa la història alemanya.)_\n2. Ich bin sehr neugierig {{2}} Berlin. _(Tinc moltes ganes de conèixer Berlín.)_\n3. Ich möchte {{3}} den Reichstag sehen! _(Vull veure el Reichstag sens falta.)_\n4. Aber {{4}} gehe ich ins Fußballstadion. _(Però de cap manera vaig a l'estadi de futbol.)_",
+    "blanks": [
+      { "id": "1", "label": "pronom" },
+      { "id": "2", "label": "preposició" },
+      { "id": "3", "label": "expressió de desig intens" },
+      { "id": "4", "label": "expressió de rebuig" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Mir", "Mich", "Ich"] },
+      { "blankId": "2", "options": ["für", "auf", "über"] },
+      { "blankId": "3", "options": ["unbedingt", "auf keinen Fall", "vielleicht"] },
+      { "blankId": "4", "options": ["auf keinen Fall", "auf jeden Fall", "unbedingt"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Mich",
+      "2": "auf",
+      "3": "unbedingt",
+      "4": "auf keinen Fall"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has integrat les tres novetats del tema: (1) _**Mich** interessiert_ (acusatiu, no datiu!); (2) _neugierig **auf**_ (preposició fixa, mai _für_ ni _über_); (3) _**unbedingt** sehen_ (desig intens amb _möchten_); (4) _**auf keinen Fall**_ (rebuig absolut). Ja tens el repertori complet del bloc Vorlieben.",
+      "references": ["A1b-7", "A1b-6", "A1b-5"]
+    },
+    "incorrect": {
+      "default": "Repassa les tres claus: (1) _interessieren_ demana **acusatiu** → _Mich_ (no _Mir_, que seria per a _gefallen_). (2) _neugierig_ sempre va amb **_auf_** + acusatiu, no _für_ ni _über_. (3) El desig personal intens amb _möchten_ sona millor amb _unbedingt_ que amb _auf jeden Fall_. (4) _Auf keinen Fall_ = rebuig total, contrari de _auf jeden Fall_.",
+      "byResponse": [
+        {
+          "match": { "1": "Mir" },
+          "message": "_Mir_ és datiu (per a _gefallen_). _Interessieren_ demana **acusatiu**: _**Mich** interessiert die Geschichte_.",
+          "references": ["A1b-7"]
+        },
+        {
+          "match": { "2": "für" },
+          "message": "Calc del català 'per'. La preposició fixa és _auf_: _neugierig **auf** Berlin_.",
+          "references": ["A1b-7"]
+        }
+      ]
+    }
+  }
+}

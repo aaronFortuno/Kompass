@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-7-ex-02",
+  "topicId": "A1b-7",
+  "title": "Expressions de graduació: _auf keinen Fall_ / _auf jeden Fall_ / _unbedingt_",
+  "prompt": "Tria l'expressió de graduació adequada segons la intenció comunicativa de cada frase.",
+  "difficulty": 1,
+  "tags": ["expressions", "graduacio", "auf-keinen-fall", "auf-jeden-fall", "unbedingt"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. {{1}} gehe ich ins Museum. Ich hasse Museen! _(De cap manera vaig al museu. Odio els museus!)_\n2. Ich möchte {{2}} den Dom sehen. Es ist mein Traum! _(Vull veure la catedral sens falta. És el meu somni!)_\n3. {{3}} besuchen wir Berlin. Das ist sicher. _(Sens dubte visitem Berlín. És segur.)_",
+    "blanks": [
+      { "id": "1", "label": "expressió" },
+      { "id": "2", "label": "expressió" },
+      { "id": "3", "label": "expressió" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["auf keinen Fall", "auf jeden Fall", "unbedingt"] },
+      { "blankId": "2", "options": ["auf keinen Fall", "auf jeden Fall", "unbedingt"] },
+      { "blankId": "3", "options": ["auf keinen Fall", "auf jeden Fall", "unbedingt"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "auf keinen Fall",
+      "2": "unbedingt",
+      "3": "auf jeden Fall"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has triat segons la intenció: **rebuig absolut** → _auf keinen Fall_; **desig intens personal** → _unbedingt_ (molt natural amb _möchten_); **afirmació segura** → _auf jeden Fall_.",
+      "references": ["A1b-7"]
+    },
+    "incorrect": {
+      "default": "Els matisos: (1) _auf keinen Fall_ = rebuig total (odio, mai, de cap manera). (2) _unbedingt_ = èmfasi personal ('sens falta, és imprescindible per a mi'); va molt sovint amb _möchten_. (3) _auf jeden Fall_ = afirmació segura ('sens dubte, segur que sí')."
+    }
+  }
+}

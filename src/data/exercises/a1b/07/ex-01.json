@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-7-ex-01",
+  "topicId": "A1b-7",
+  "title": "_interessieren_: pronom acusatiu + forma verbal",
+  "prompt": "Completa cada frase amb el **pronom acusatiu** correcte i la **forma verbal** de _interessieren_ que concordi amb el que interessa.",
+  "difficulty": 1,
+  "tags": ["interessieren", "acusatiu", "concordanca"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. {{1a}} {{1b}} der Dom. _(A mi m'interessa la catedral.)_\n2. {{2a}} {{2b}} die Museen. _(A tu t'interessen els museus.)_\n3. {{3a}} {{3b}} das Konzert. _(A ell li interessa el concert.)_",
+    "blanks": [
+      { "id": "1a", "label": "pronom acusatiu" },
+      { "id": "1b", "label": "forma de _interessieren_" },
+      { "id": "2a", "label": "pronom acusatiu" },
+      { "id": "2b", "label": "forma de _interessieren_" },
+      { "id": "3a", "label": "pronom acusatiu" },
+      { "id": "3b", "label": "forma de _interessieren_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1a", "options": ["Mich", "Dich", "Ihn"] },
+      { "blankId": "1b", "options": ["interessiert", "interessieren"] },
+      { "blankId": "2a", "options": ["Mich", "Dich", "Ihn"] },
+      { "blankId": "2b", "options": ["interessiert", "interessieren"] },
+      { "blankId": "3a", "options": ["Mich", "Dich", "Ihn"] },
+      { "blankId": "3b", "options": ["interessiert", "interessieren"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1a": "Mich",
+      "1b": "interessiert",
+      "2a": "Dich",
+      "2b": "interessieren",
+      "3a": "Ihn",
+      "3b": "interessiert"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has aplicat la regla de _interessieren_: pronom en **acusatiu** (_mich, dich, ihn_) per a la persona interessada, i verb concordant amb el que interessa (_der Dom_ → _interessiert_ singular; _die Museen_ → _interessieren_ plural).",
+      "references": ["A1b-7", "A1b-6"]
+    },
+    "incorrect": {
+      "default": "Dos passos: (1) pronom **acusatiu** per a qui s'interessa: _ich → mich_, _du → dich_, _er → ihn_. (No confonguis amb _gefallen_, que demana datiu: _mir, dir, ihm_.) (2) Verb concordant amb **el que interessa**: singular (_der Dom, das Konzert_) → _interessiert_; plural (_die Museen_) → _interessieren_."
+    }
+  }
+}
