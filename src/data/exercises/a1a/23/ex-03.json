@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-23-ex-03",
+  "topicId": "A1a-23",
+  "title": "Ordena la rutina matinal de la Lena",
+  "prompt": "Completa la rutina matinal de la Lena amb els tres connectors. Cada opció es fa servir **una sola vegada**.",
+  "difficulty": 2,
+  "tags": ["zuerst", "dann", "danach", "seqüència", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _{{1}} steht Lena auf._\n2. _{{2}} duscht sie._\n3. _{{3}} frühstückt sie._",
+    "blanks": [
+      { "id": "1", "label": "primera acció (obre la seqüència)" },
+      { "id": "2", "label": "segona acció" },
+      { "id": "3", "label": "tercera acció" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Zuerst", "Dann", "Danach"] },
+      { "blankId": "2", "options": ["Zuerst", "Dann", "Danach"] },
+      { "blankId": "3", "options": ["Zuerst", "Dann", "Danach"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Zuerst",
+      "2": "Dann",
+      "3": "Danach"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. La seqüència canònica és **_Zuerst → Dann → Danach_**: obre, continua, tanca."
+    },
+    "incorrect": {
+      "default": "Revisa: _Zuerst_ marca la primera acció; _Dann_ i _Danach_ són intercanviables per a les següents, però la convenció és _Dann_ al mig i _Danach_ al final."
+    }
+  }
+}

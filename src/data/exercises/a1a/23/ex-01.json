@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-23-ex-01",
+  "topicId": "A1a-23",
+  "title": "Quin connector obre la seqüència?",
+  "prompt": "Tria el connector que obre una seqüència (la **primera** acció).",
+  "difficulty": 1,
+  "tags": ["zuerst", "dann", "danach", "quick-check"],
+  "stimulus": {
+    "type": "text",
+    "content": "Completa la seqüència amb el connector adequat:\n\n_\\_\\_\\_ frühstücke ich. Dann gehe ich zur Arbeit._"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "a", "label": "_Zuerst_" },
+      { "id": "b", "label": "_Dann_" },
+      { "id": "c", "label": "_Danach_" }
+    ]
+  },
+  "validation": {
+    "type": "exactMatch",
+    "answer": "a"
+  },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. **_Zuerst_** marca l'inici de la seqüència: primer esmorzo, i llavors vaig a la feina."
+    },
+    "incorrect": {
+      "default": "_Dann_ i _danach_ connecten una acció *següent*, però no obren la seqüència. La primera acció demana **_zuerst_**."
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-23-ex-04",
+  "topicId": "A1a-23",
+  "title": "Escriu la frase amb inversió V2",
+  "prompt": "Tradueix \"Llavors em llevo\" a l'alemany. Usa **_Dann_** + _aufstehen_ (verb separable) + _ich_.",
+  "difficulty": 3,
+  "tags": ["v2", "inversió", "verb-separable", "aufstehen", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "\"Llavors em llevo.\" → {{answer}}",
+    "blanks": [
+      { "id": "answer", "label": "frase completa en alemany, amb puntuació" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "answer", "placeholder": "Dann ..." }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "answer": "Dann stehe ich auf."
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Verb conjugat **_stehe_** a la posició 2, subjecte **_ich_** després, i el prefix separable **_auf_** al final: _Dann stehe ich auf._"
+    },
+    "incorrect": {
+      "default": "Recorda: (1) _Dann_ és posició 1; (2) verb conjugat _stehe_ a la 2; (3) subjecte _ich_; (4) prefix _auf_ al final. Resultat: **_Dann stehe ich auf._**"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-23-ex-06",
+  "topicId": "A1a-23",
+  "title": "Connectors temporals vs causal",
+  "prompt": "Empareja cada paraula alemanya amb la seva equivalència i funció en català. Ull amb el fals amic _denn_!",
+  "difficulty": 2,
+  "tags": ["matchpairs", "dann-vs-denn", "temporals", "assessment"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "w-zuerst", "group": "Alemany", "content": { "type": "text", "content": "_zuerst_" } },
+      { "id": "w-dann", "group": "Alemany", "content": { "type": "text", "content": "_dann_" } },
+      { "id": "w-danach", "group": "Alemany", "content": { "type": "text", "content": "_danach_" } },
+      { "id": "w-denn", "group": "Alemany", "content": { "type": "text", "content": "_denn_" } },
+      { "id": "f-zuerst", "group": "Funció / català", "content": { "type": "text", "content": "primer de tot (obre seqüència)" } },
+      { "id": "f-dann", "group": "Funció / català", "content": { "type": "text", "content": "llavors, aleshores (connecta següent acció)" } },
+      { "id": "f-danach", "group": "Funció / català", "content": { "type": "text", "content": "després (d'això) (connecta següent acció)" } },
+      { "id": "f-denn", "group": "Funció / català", "content": { "type": "text", "content": "perquè (causal — ull, no és temporal!)" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Alemany",
+    "groupBLabel": "Funció / català"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["w-zuerst", "f-zuerst"],
+      ["w-dann", "f-dann"],
+      ["w-danach", "f-danach"],
+      ["w-denn", "f-denn"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has fixat els tres temporals (_zuerst_, _dann_, _danach_) i has desactivat el fals amic _denn_."
+    },
+    "incorrect": {
+      "default": "Revisa especialment _dann_ vs _denn_: sonen semblants però _dann_ és **temporal** (llavors) i _denn_ és **causal** (perquè). A A1a només necessites els tres temporals."
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-23-ex-02",
+  "topicId": "A1a-23",
+  "title": "V2 després del connector temporal",
+  "prompt": "Tria la frase que respecta la regla **V2**: connector a la posició 1, verb conjugat a la 2.",
+  "difficulty": 2,
+  "tags": ["v2", "inversió", "dann", "quick-check"],
+  "stimulus": {
+    "type": "text",
+    "content": "Quina de les tres frases és correcta?"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "a", "label": "_Dann ich mache Frühstück._" },
+      { "id": "b", "label": "_Dann mache ich Frühstück._" },
+      { "id": "c", "label": "_Dann ich Frühstück mache._" }
+    ]
+  },
+  "validation": {
+    "type": "exactMatch",
+    "answer": "b"
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Quan _Dann_ obre la frase, ocupa la posició 1; el verb **_mache_** va a la 2 i el subjecte **_ich_** passa al darrere."
+    },
+    "incorrect": {
+      "default": "Recorda la regla V2: el verb conjugat sempre a la segona posició. Si _Dann_ és posició 1, el verb ve immediatament, i el subjecte després. Resultat correcte: _Dann mache ich Frühstück._"
+    }
+  }
+}

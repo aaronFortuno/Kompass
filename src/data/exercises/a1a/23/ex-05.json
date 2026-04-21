@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-23-ex-05",
+  "topicId": "A1a-23",
+  "title": "Comprensió en context",
+  "prompt": "Llegeix la frase i decideix si cada afirmació és vertadera o falsa.",
+  "difficulty": 2,
+  "tags": ["comprensió", "v2", "dann-vs-denn", "truefalse", "assessment"],
+  "stimulus": {
+    "type": "text",
+    "content": "_Am Sonntag habe ich Zeit. **Zuerst** schlafe ich lange. **Dann** stehe ich auf und mache Frühstück._"
+  },
+  "interaction": {
+    "type": "trueFalse",
+    "statements": [
+      { "id": "a", "text": "L'acció de dormir passa **abans** que llevar-se." },
+      { "id": "b", "text": "_Zuerst_ ocupa la posició 1 i per això el verb _schlafe_ va a la 2." },
+      { "id": "c", "text": "_Dann_ aquí significa \"perquè\"." },
+      { "id": "d", "text": "Podríem substituir _Dann_ per _Danach_ sense canviar el significat." }
+    ]
+  },
+  "validation": {
+    "type": "truthMap",
+    "answers": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Domines el mecanisme: ordre temporal + V2 + diferència amb _denn_. _Dann_ i _Danach_ són intercanviables a A1 en aquest tipus de seqüència."
+    },
+    "incorrect": {
+      "default": "Revisa: (c) _Dann_ significa 'llavors, aleshores' (temporal), **no** 'perquè'. La paraula causal seria _denn_, que veuràs a A1b. (d) _Dann_ i _Danach_ són intercanviables a nivell A1."
+    }
+  }
+}
