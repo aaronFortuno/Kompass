@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-30-ex-01",
+  "topicId": "A1a-30",
+  "title": "Article d'acusatiu després de _es gibt_",
+  "prompt": "Tria l'article indefinit correcte per completar la frase.",
+  "difficulty": 1,
+  "tags": ["es-gibt", "acusatiu", "masculi", "quick-check"],
+  "stimulus": {
+    "type": "text",
+    "content": "Completa: _Es gibt ___ Hund im Garten._ (_der Hund_, masculí)"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "ein", "label": "_ein_" },
+      { "id": "einen", "label": "_einen_" },
+      { "id": "eine", "label": "_eine_" },
+      { "id": "einem", "label": "_einem_" }
+    ]
+  },
+  "validation": {
+    "type": "exactMatch",
+    "answer": "einen"
+  },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. _Hund_ és masculí i, després de _es gibt_, va en acusatiu → _==einen==_.",
+      "references": ["A1a-30", "A1a-28"]
+    },
+    "incorrect": {
+      "default": "Després de _es gibt_ sempre cal acusatiu. Amb un masculí com _Hund_, la forma és _einen_.",
+      "byResponse": [
+        {
+          "match": { "response": "ein" },
+          "message": "És l'error més freqüent. _Hund_ és masculí, però després de _es gibt_ necessitem acusatiu: _**einen** Hund_.",
+          "references": ["A1a-28"]
+        },
+        {
+          "match": { "response": "eine" },
+          "message": "_eine_ és femení. _Der Hund_ és masculí: necessites _einen_.",
+          "references": ["A1a-28"]
+        },
+        {
+          "match": { "response": "einem" },
+          "message": "_einem_ és datiu. Aquí cal acusatiu: _einen_.",
+          "references": ["A1a-28"]
+        }
+      ]
+    }
+  }
+}

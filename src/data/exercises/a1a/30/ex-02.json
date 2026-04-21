@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-30-ex-02",
+  "topicId": "A1a-30",
+  "title": "Inversió V2 amb _es gibt_",
+  "prompt": "Quina és la frase correcta començant per _Im Park_?",
+  "difficulty": 2,
+  "tags": ["es-gibt", "v2", "inversio", "quick-check"],
+  "stimulus": {
+    "type": "text",
+    "content": "Vols dir \"Al parc hi ha nens\" començant per _Im Park_. Quina de les opcions segueix la regla V2?"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "a", "label": "_Im Park gibt es Kinder._" },
+      { "id": "b", "label": "_Im Park es gibt Kinder._" },
+      { "id": "c", "label": "_Im Park Kinder gibt es._" },
+      { "id": "d", "label": "_Es gibt im Park Kinder._" }
+    ]
+  },
+  "validation": {
+    "type": "exactMatch",
+    "answer": "a"
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Quan un complement va al davant, el verb _gibt_ ocupa la segona posició i _es_ queda darrere: _Im Park **gibt es** Kinder_.",
+      "references": ["A1a-30", "A1a-11"]
+    },
+    "incorrect": {
+      "default": "Recorda la regla V2: el verb sempre ha d'anar a la segona posició. Si _Im Park_ ocupa la primera, _gibt_ ha de seguir immediatament.",
+      "byResponse": [
+        {
+          "match": { "response": "b" },
+          "message": "L'ordre alemany exigeix el verb a la **segona** posició. _Im Park_ ocupa la primera → el verb _gibt_ ha d'anar a la segona, i _es_ queda darrere: _Im Park **gibt es** Kinder_.",
+          "references": ["A1a-11"]
+        },
+        {
+          "match": { "response": "c" },
+          "message": "El verb ha d'anar a la segona posició, no al final. Ordre correcte: _Im Park **gibt es** Kinder_.",
+          "references": ["A1a-11"]
+        },
+        {
+          "match": { "response": "d" },
+          "message": "Aquesta frase també seria correcta (subjecte primer), però l'enunciat demana començar per _Im Park_. En aquest cas cal inversió: _Im Park **gibt es** Kinder_.",
+          "references": ["A1a-30"]
+        }
+      ]
+    }
+  }
+}

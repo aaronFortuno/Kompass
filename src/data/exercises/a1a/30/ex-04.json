@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-30-ex-04",
+  "topicId": "A1a-30",
+  "title": "Negació amb _kein_ després de _es gibt_",
+  "prompt": "Transforma cada frase afirmativa en negativa amb _kein_ en acusatiu. Escriu la frase sencera, p. ex.: _Es gibt keinen Tisch._",
+  "difficulty": 2,
+  "tags": ["es-gibt", "kein", "negacio", "acusatiu", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Es gibt einen Hund._ → {{1}}\n2. _Es gibt eine Katze._ → {{2}}\n3. _Es gibt ein Auto._ → {{3}}\n4. _Es gibt Bücher._ → {{4}}",
+    "blanks": [
+      { "id": "1", "label": "masc. Akk. negatiu" },
+      { "id": "2", "label": "fem. Akk. negatiu" },
+      { "id": "3", "label": "neutre Akk. negatiu" },
+      { "id": "4", "label": "plural Akk. negatiu" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Es gibt keinen …" },
+      { "blankId": "2", "placeholder": "Es gibt keine …" },
+      { "blankId": "3", "placeholder": "Es gibt kein …" },
+      { "blankId": "4", "placeholder": "Es gibt keine …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["es gibt keinen hund.", "es gibt keinen hund"],
+      "2": ["es gibt keine katze.", "es gibt keine katze"],
+      "3": ["es gibt kein auto.", "es gibt kein auto"],
+      "4": ["es gibt keine bücher.", "es gibt keine bücher", "es gibt keine buecher.", "es gibt keine buecher"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. _Kein_ segueix el mateix patró que _ein_: _einen/keinen_, _eine/keine_, _ein/kein_. En plural, sempre _keine_.",
+      "references": ["A1a-30", "A1a-22"]
+    },
+    "incorrect": {
+      "default": "Comprova: _Hund_ (masc.) → _keinen_; _Katze_ (fem.) → _keine_; _Auto_ (neutre) → _kein_; plural → _keine_. L'estructura és sempre _es gibt + kein- + substantiu_."
+    }
+  }
+}

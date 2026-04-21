@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-30-ex-06",
+  "topicId": "A1a-30",
+  "title": "Del català a l'alemany amb _es gibt_",
+  "prompt": "Tradueix cada frase a l'alemany. Combina _es gibt_ amb acusatiu, plural, negació i inversió quan calgui.",
+  "difficulty": 3,
+  "tags": ["es-gibt", "traduccio", "acusatiu", "inversio", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Hi ha una cadira a l'habitació. (_der Stuhl_, _das Zimmer_) → {{1}}\n2. No hi ha cap gos al jardí. (_der Hund_, _der Garten_) → {{2}}\n3. Al parc hi ha nens. (_der Park_) → {{3}}\n4. Sobre la taula hi ha un llibre. (_der Tisch_, _das Buch_) → {{4}}",
+    "blanks": [
+      { "id": "1", "label": "afirmativa, sing. masc." },
+      { "id": "2", "label": "negativa, sing. masc." },
+      { "id": "3", "label": "inversió + plural" },
+      { "id": "4", "label": "inversió + sing. neutre" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Es gibt einen …" },
+      { "blankId": "2", "placeholder": "Es gibt keinen …" },
+      { "blankId": "3", "placeholder": "Im Park gibt es …" },
+      { "blankId": "4", "placeholder": "Auf dem Tisch gibt es …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["es gibt einen stuhl im zimmer.", "es gibt einen stuhl im zimmer"],
+      "2": ["es gibt keinen hund im garten.", "es gibt keinen hund im garten"],
+      "3": ["im park gibt es kinder.", "im park gibt es kinder"],
+      "4": ["auf dem tisch gibt es ein buch.", "auf dem tisch gibt es ein buch"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has combinat _es gibt_ + acusatiu + (negació / inversió). Això és exactament el que caldrà per descriure llocs i espais.",
+      "references": ["A1a-30"]
+    },
+    "incorrect": {
+      "default": "Pistes generals: (1) _Stuhl_ és masculí → _einen Stuhl_. (2) _No hi ha cap_ → _es gibt kein-_; _Hund_ masc. → _keinen_. (3)-(4) El català comença amb _Al parc_ / _Sobre la taula_: en alemany, amb el complement al davant, cal inversió → _Im Park **gibt es**…_ / _Auf dem Tisch **gibt es**…_."
+    }
+  }
+}

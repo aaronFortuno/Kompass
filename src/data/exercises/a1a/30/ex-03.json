@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-30-ex-03",
+  "topicId": "A1a-30",
+  "title": "Articles indefinits en acusatiu després de _es gibt_",
+  "prompt": "Completa cada frase amb l'article correcte (_einen_, _eine_, _ein_ o res per al plural).",
+  "difficulty": 2,
+  "tags": ["es-gibt", "acusatiu", "article-indefinit", "plural", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Es gibt {{1}} Schrank im Zimmer. (_der Schrank_)\n2. Es gibt {{2}} Lampe auf dem Tisch. (_die Lampe_)\n3. Es gibt {{3}} Buch im Regal. (_das Buch_)\n4. Es gibt {{4}} Kinder im Park. (plural)",
+    "blanks": [
+      { "id": "1", "label": "masc. Akk." },
+      { "id": "2", "label": "fem. Akk." },
+      { "id": "3", "label": "neutre Akk." },
+      { "id": "4", "label": "plural" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["einen", "eine", "ein", "—"] },
+      { "blankId": "2", "options": ["einen", "eine", "ein", "—"] },
+      { "blankId": "3", "options": ["einen", "eine", "ein", "—"] },
+      { "blankId": "4", "options": ["einen", "eine", "ein", "—"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "einen",
+      "2": "eine",
+      "3": "ein",
+      "4": "—"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Recorda: el masculí és l'únic que canvia visualment (_ein → einen_). En plural indefinit no cal article.",
+      "references": ["A1a-30", "A1a-28"]
+    },
+    "incorrect": {
+      "default": "Revisa la taula del tema: masc. Akk. _einen_, fem. _eine_, neutre _ein_, plural sense article.",
+      "byResponse": [
+        {
+          "match": { "1": "ein" },
+          "message": "_Schrank_ és masculí → acusatiu _==einen==_. És el canvi més típic i també el que més es passa per alt.",
+          "references": ["A1a-28"]
+        },
+        {
+          "match": { "2": "einen" },
+          "message": "_Lampe_ és femení → _eine_ (el femení no canvia entre nominatiu i acusatiu).",
+          "references": ["A1a-28"]
+        },
+        {
+          "match": { "3": "einen" },
+          "message": "_Buch_ és neutre → _ein_ (el neutre tampoc no canvia). Però segueix essent acusatiu conceptualment.",
+          "references": ["A1a-28"]
+        },
+        {
+          "match": { "4": "eine" },
+          "message": "En plural indefinit **no** hi ha article: _es gibt Kinder_, no _~~es gibt eine Kinder~~_.",
+          "references": ["A1a-30"]
+        }
+      ]
+    }
+  }
+}

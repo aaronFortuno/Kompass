@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-30-ex-05",
+  "topicId": "A1a-30",
+  "title": "Inversió V2 amb complement de lloc",
+  "prompt": "Reescriu cada frase començant per l'element entre parèntesis. Recorda la regla V2: el verb _gibt_ a la segona posició.",
+  "difficulty": 2,
+  "tags": ["es-gibt", "v2", "inversio", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Es gibt einen Park in der Stadt._ (_In der Stadt_) → {{1}}\n2. _Es gibt ein Buch auf dem Tisch._ (_Auf dem Tisch_) → {{2}}\n3. _Es gibt Kinder im Garten._ (_Im Garten_) → {{3}}",
+    "blanks": [
+      { "id": "1", "label": "comença per _In der Stadt_" },
+      { "id": "2", "label": "comença per _Auf dem Tisch_" },
+      { "id": "3", "label": "comença per _Im Garten_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "In der Stadt gibt es …" },
+      { "blankId": "2", "placeholder": "Auf dem Tisch gibt es …" },
+      { "blankId": "3", "placeholder": "Im Garten gibt es …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["in der stadt gibt es einen park.", "in der stadt gibt es einen park"],
+      "2": ["auf dem tisch gibt es ein buch.", "auf dem tisch gibt es ein buch"],
+      "3": ["im garten gibt es kinder.", "im garten gibt es kinder"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Amb un complement al davant, l'ordre és **Complement + _gibt_ + _es_ + resta**. El verb sempre a la segona posició.",
+      "references": ["A1a-30", "A1a-11"]
+    },
+    "incorrect": {
+      "default": "Error típic: _~~In der Stadt es gibt einen Park~~_. L'ordre V2 no permet això: si _In der Stadt_ ocupa la posició 1, el verb _gibt_ ha d'ocupar la 2, i _es_ va a la 3. Revisa també l'acusatiu masculí: _einen Park_."
+    }
+  }
+}
