@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-2-ex-05",
+  "topicId": "A1a-2",
+  "title": "Tria el Fragewort segons la resposta",
+  "prompt": "Completa cada W-Frage amb el pronom interrogatiu adequat, segons la informació que demana la pregunta.",
+  "difficulty": 2,
+  "tags": ["w-frage", "fragewort", "wie", "wo", "woher", "was"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "(1) {{1}} heißt du? — Ich heiße Marc.\n(2) {{2}} wohnst du? — In Girona.\n(3) {{3}} kommst du? — Aus Katalonien.\n(4) {{4}} sind Sie von Beruf? — Ich bin Lehrer.",
+    "blanks": [
+      { "id": "1", "label": "nom" },
+      { "id": "2", "label": "lloc estàtic" },
+      { "id": "3", "label": "origen" },
+      { "id": "4", "label": "professió" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Wie", "Wo", "Woher", "Was"] },
+      { "blankId": "2", "options": ["Wie", "Wo", "Woher", "Was"] },
+      { "blankId": "3", "options": ["Wie", "Wo", "Woher", "Was"] },
+      { "blankId": "4", "options": ["Wie", "Wo", "Woher", "Was"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "Wie", "2": "Wo", "3": "Woher", "4": "Was" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé! Cada Fragewort demana un tipus diferent d'informació."
+    },
+    "incorrect": {
+      "default": "Pistes: el nom es pregunta amb **Wie** (literalment 'com'). **Wo** = lloc estàtic. **Woher** = origen. **Was** = què/cosa (també per a la professió: *Was sind Sie von Beruf?*)."
+    }
+  }
+}

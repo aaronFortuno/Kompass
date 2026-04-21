@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-2-ex-02",
+  "topicId": "A1a-2",
+  "title": "El Fragewort adequat",
+  "prompt": "Tria el pronom interrogatiu (Fragewort) que correspon a cada pregunta.",
+  "difficulty": 1,
+  "tags": ["w-frage", "fragewort", "wie", "woher"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "{{1}} heißt du? — Ich heiße Laura.\n{{2}} kommt er? — Er kommt aus Wien.",
+    "blanks": [
+      { "id": "1", "label": "pregunta pel nom" },
+      { "id": "2", "label": "pregunta per l'origen" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Wie", "Wo", "Was"] },
+      { "blankId": "2", "options": ["Wo", "Woher", "Wohin"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "Wie", "2": "Woher" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé! **Wie** pregunta pel nom o la manera; **Woher** pregunta per l'origen."
+    },
+    "incorrect": {
+      "default": "Atenció a la diferència: *Wo* = on (lloc estàtic), *Woher* = d'on (origen), *Wohin* = cap a on (destinació). Per preguntar el nom fem servir *Wie heißt du?* (literalment, 'com et dius')."
+    }
+  }
+}

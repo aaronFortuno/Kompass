@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-2-ex-07",
+  "topicId": "A1a-2",
+  "title": "Classifica el tipus d'oració",
+  "prompt": "Per a cada frase, identifica si és una declarativa, una W-Frage o una Ja/Nein-Frage.",
+  "difficulty": 3,
+  "tags": ["classificacio", "declarativa", "w-frage", "ja-nein-frage"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "(1) *Ich arbeite bei Audi.* → {{1}}\n(2) *Wo wohnst du?* → {{2}}\n(3) *Kommst du aus Hamburg?* → {{3}}\n(4) *Woher kommt er?* → {{4}}",
+    "blanks": [
+      { "id": "1", "label": "tipus d'oració" },
+      { "id": "2", "label": "tipus d'oració" },
+      { "id": "3", "label": "tipus d'oració" },
+      { "id": "4", "label": "tipus d'oració" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["declarativa", "W-Frage", "Ja/Nein-Frage"] },
+      { "blankId": "2", "options": ["declarativa", "W-Frage", "Ja/Nein-Frage"] },
+      { "blankId": "3", "options": ["declarativa", "W-Frage", "Ja/Nein-Frage"] },
+      { "blankId": "4", "options": ["declarativa", "W-Frage", "Ja/Nein-Frage"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "declarativa",
+      "2": "W-Frage",
+      "3": "Ja/Nein-Frage",
+      "4": "W-Frage"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Genial! Has identificat els tres tipus correctament: la **declarativa** té verb a la 2 sense Fragewort; la **W-Frage** comença per una paraula interrogativa; la **Ja/Nein-Frage** comença pel verb."
+    },
+    "incorrect": {
+      "default": "Pistes: si comença per un mot interrogatiu (*Wo, Wie, Was, Woher...*) → **W-Frage**. Si comença directament pel verb conjugat → **Ja/Nein-Frage**. Si comença pel subjecte (o complement) amb el verb a la posició 2 → **declarativa**."
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-2-ex-03",
+  "topicId": "A1a-2",
+  "title": "Ja/Nein-Frage: el verb primer",
+  "prompt": "Tria les paraules per formar una pregunta sí/no. Recorda: a la Satzfrage, el verb va a la posició 1 i el subjecte a la posició 2.",
+  "difficulty": 2,
+  "tags": ["ja-nein-frage", "satzfrage", "inversio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "{{1}} {{2}} eine Pizza? (Vols una pizza?)",
+    "blanks": [
+      { "id": "1", "label": "verb (posició 1)" },
+      { "id": "2", "label": "subjecte (posició 2)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Möchtest", "Du", "Was"] },
+      { "blankId": "2", "options": ["du", "ich", "er"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "Möchtest", "2": "du" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Exacte! En una pregunta sí/no, el **verb va primer** i el subjecte després."
+    },
+    "incorrect": {
+      "default": "Recorda: a les Satzfragen, l'ordre és **verb + subjecte + complements**. Una pregunta sí/no a l'alemany comença sempre pel verb."
+    }
+  }
+}

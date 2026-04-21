@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-2-ex-01",
+  "topicId": "A1a-2",
+  "title": "El verb a la posició 2",
+  "prompt": "Tria el verb correcte per a cada buit. Recorda: a la declarativa, el verb conjugat va sempre a la posició 2 i concorda amb el subjecte.",
+  "difficulty": 1,
+  "tags": ["declarativa", "verb-posicio-2", "concordanca"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Mein Name {{1}} Anna. Ich {{2}} aus Berlin.",
+    "blanks": [
+      { "id": "1", "label": "3a sg. (ell/ella) — sein" },
+      { "id": "2", "label": "1a sg. (jo) — kommen" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["ist", "bin", "sind"] },
+      { "blankId": "2", "options": ["komme", "kommt", "kommen"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "ist", "2": "komme" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte! El verb conjugat va sempre a la **posició 2** i concorda amb el subjecte."
+    },
+    "incorrect": {
+      "default": "Recorda: *Mein Name* (ell/ella) → *ist*; *Ich* (jo) → *komme*. El verb **canvia segons el subjecte**."
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-2",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 2,
+  "title": "Satzstruktur — sintaxi",
+  "shortTitle": "Satzstruktur",
+  "description": "L'ordre de paraules en alemany: la regla de la segona posició en declaratives, W-Fragen i Ja/Nein-Fragen.",
+  "axes": ["sintaxi-ordre-paraules"],
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "Quan comences amb l'alemany, una de les coses que més sorprèn és que **l'ordre de les paraules no és lliure**: hi ha una regla quasi màgica que governa gairebé totes les frases. Es diu la **regla de la segona posició**, i és el cor de la sintaxi alemanya.\n\nEn català i castellà tenim molta llibertat: \"Em dic Julia\", \"Julia em dic jo\", \"Jo em dic Julia\"... totes sonen més o menys naturals. En alemany, en canvi, el **verb conjugat té un lloc fix** a la frase, i tota la resta s'organitza al seu voltant.\n\nLa bona notícia: **són molt poques regles** i, un cop les interioritzes, pots construir centenars de frases. Aquesta lliçó et donarà les claus per a tres tipus bàsics d'oració:\n\n1. L'**oració declarativa** (*Aussagesatz*) — per dir coses.\n2. La **interrogativa parcial** (*W-Frage*) — per preguntar amb pronom interrogatiu.\n3. La **interrogativa total** (*Ja/No-Frage*) — per preguntar amb resposta sí/no.\n\nAgafa llapis i paper si et ve de gust: veuràs que tot gira al voltant de **on posem el verb**."
+        }
+      ]
+    },
+    {
+      "id": "positions",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Què vol dir \"posició\" en una frase?\n\nAbans d'entrar en matèria, fixem un concepte: quan parlem de \"posició\" en alemany, **no comptem paraules**, comptem **blocs d'informació** (o *elements*). Un bloc pot ser una sola paraula (*ich*) o un grup (*mein Name*, *zwei Kinder*).\n\nMira aquesta frase:\n\n> ==Mein Name== ==ist== ==Julia Schwaiger==.\n\nTenim tres blocs:\n\n- Posició 1: *Mein Name* (el subjecte — qui fa l'acció).\n- Posició 2: *ist* (el verb conjugat).\n- Posició 3+: *Julia Schwaiger* (la resta, els **complements** o *Ergänzungen*).\n\nEl **subjecte** (*Subjekt*) és qui fa l'acció del verb. El **verb conjugat** (*Verb*) és el que canvia segons qui parla (*ich bin*, *du bist*, *er ist*...). Els **complements** són tota la resta d'informació: on, quan, com, què, amb qui...\n\nRecorda aquesta idea: **en alemany no comptem paraules, comptem blocs**. Per això *Mein Name* ocupa una sola posició, encara que siguin dues paraules."
+        }
+      ]
+    },
+    {
+      "id": "declarative",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### L'oració declarativa: verb a la posició 2\n\nLa regla d'or de l'alemany declaratiu és tan simple com potent:\n\n> **El verb conjugat sempre va a la posició 2.**\n\nMira aquests exemples del llibre de text:\n\n| Konnektor | Subjekt | Verb | Ergänzungen |\n|---|---|---|---|\n| — | Ich | ==bin== | 36 Jahre alt. |\n| — | Ich | ==arbeite== | bei Audi. |\n| — | Meine Adresse | ==ist== | Jahnstraße 5, 85049 Ingolstadt. |\n| — | Das | ==ist== | in Bayern. |\n\nFixa't: sempre, sempre, **el verb ocupa el segon lloc**. El subjecte, normalment, va davant (posició 1), i els complements, darrere (posició 3 en endavant).\n\nEn català diríem *\"Treballo a Audi\"* (verb + complement, sense subjecte explícit). En alemany **el subjecte és gairebé sempre obligatori**: *Ich arbeite bei Audi* — \"Jo treballo a Audi\". No es pot dir *Arbeite bei Audi* en una frase normal.\n\n**Comparació ràpida:**\n\n- CA: *La meva adreça és Jahnstraße 5.* (subjecte — verb — complement)\n- ES: *Mi dirección es Jahnstraße 5.* (subjecte — verb — complement)\n- DE: *Meine Adresse ist Jahnstraße 5.* (==posició 1== — ==posició 2== — posició 3)\n\nSembla igual, oi? La diferència vindrà ara, quan vulguem començar la frase per un complement."
+        }
+      ]
+    },
+    {
+      "id": "quick-check-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-2-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "konnektor",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### I si començo per una altra cosa? La posició 1 no sempre és el subjecte\n\nAra ve una idea clau. La regla diu \"el verb a la posició 2\", però **no diu que el subjecte hagi d'anar a la posició 1**. De fet, a la posició 1 pot anar qualsevol bloc, i quan hi posem alguna cosa que no és el subjecte, el subjecte es desplaça a **la posició 3** (just darrere del verb).\n\nAixò s'anomena **inversió** (*Inversion*).\n\nMira aquest parell d'exemples del text:\n\n> Ich arbeite in Ingolstadt, ==aber== ich wohne in Regensburg.\n\nAquí *aber* (*però*) és un **connector** (*Konnektor*) que uneix dues frases. Però fixa't en una cosa curiosa: després d'*aber*, la frase torna a començar de zero. *Aber* ocupa la \"posició 0\" (és un connector, no compta); *ich* torna a la posició 1 i *wohne* a la posició 2.\n\nEls connectors **und** (*i*), **aber** (*però*) i **oder** (*o*) són \"neutres\": **no ocupen posició**, simplement uneixen. La frase que ve després continua amb la seva pròpia estructura: subjecte + verb + complements.\n\nAixò explica per què al text hem llegit:\n\n> ==und== (ich) komme aus Hof.\n\nEl subjecte entre parèntesis indica que sovint, en parla col·loquial, es pot ometre quan està claríssim pel context. Però l'estructura és la mateixa: *und* connecta, i la nova frase té el seu verb a la posició 2."
+        }
+      ]
+    },
+    {
+      "id": "wortfrage",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Interrogatives parcials: les W-Fragen\n\nUna **interrogativa parcial** (*W-Frage* o *Wortfrage*) és una pregunta que demana una informació concreta: on, com, qui, per què... En català, comença per un **pronom interrogatiu** (*què, on, com, quan...*); en alemany, per un **Fragewort**, i gairebé tots comencen per ==W==. Per això s'anomenen **W-Fragen**.\n\nEls més bàsics:\n\n- **Wer?** — Qui? (per persones)\n- **Was?** — Què?\n- **Wie?** — Com?\n- **Wo?** — On? (localització estàtica)\n- **Woher?** — D'on? (origen)\n- **Wohin?** — Cap a on? (destinació)\n\n**L'estructura** és gairebé idèntica a la declarativa, però amb una novetat a la posició 1:\n\n| Fragewort | Verb | Subjekt | Ergänzungen |\n|---|---|---|---|\n| ==Wie== | ==heißt== | du? | — |\n| ==Wo== | ==wohnst== | du? | — |\n| ==Woher== | ==kommt== | er? | — |\n| ==Was== | ==sind== | Sie | von Beruf? |\n\nTres coses a retenir:\n\n1. El **Fragewort** ocupa la **posició 1**.\n2. El **verb** continua a la **posició 2**. Sempre. No falla.\n3. El **subjecte** va a la **posició 3** (darrere del verb). És el que abans hem anomenat *inversió*.\n\nI, per descomptat, **al final sempre hi va un signe d'interrogació \"?\"** — a diferència del català i el castellà, en alemany **només es posa el de tancament**, mai el d'obertura."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Nota ortogràfica",
+          "body": "En castellà s'escriu *¿...?*, en català *?* al final (sense obertura, com l'alemany). O sigui, en aquest punt, l'alemany s'assembla al català."
+        }
+      ]
+    },
+    {
+      "id": "quick-check-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-2-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "satzfrage",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Interrogatives totals: les Ja/Nein-Fragen\n\nAra arriba l'estructura que més sorprèn els catalanoparlants. Una **interrogativa total** (o *Satzfrage*, també *Entscheidungsfrage*) és una pregunta que es respon amb **sí o no**. I aquí passa una cosa nova:\n\n> **El verb conjugat es col·loca a la posició 1.**\n\nSí, has llegit bé: el verb **passa davant de tot**. Sense Fragewort, sense subjecte al davant, sense res. Només el verb.\n\nMira els exemples del text:\n\n| Verb | Subjekt | Ergänzungen |\n|---|---|---|\n| ==Kommst== | du | aus Deutschland? |\n| ==Gibt== | es | eine Party? |\n| ==Geht== | es | Emma gut? |\n| ==Möchtest== | du | etwas trinken? |\n\nEn català, la diferència entre una afirmació i una pregunta sí/no és només l'**entonació** (i el signe d'interrogació escrit): *\"Véns d'Alemanya.\"* vs *\"Véns d'Alemanya?\"*. L'ordre de les paraules no canvia.\n\nEn alemany, en canvi, **l'ordre canvia físicament**. Compara:\n\n- Declarativa: *Du ==kommst== aus Deutschland.* → \"Véns d'Alemanya.\"\n- Pregunta sí/no: *==Kommst== du aus Deutschland?* → \"Véns d'Alemanya?\"\n\nAquest és un **mecanisme gramatical**, no només entonatiu. Sense canviar l'ordre, la frase no és una pregunta.\n\n**Regles per a les Satzfragen:**\n\n1. **No hi ha Fragewort** (cap *W-*, cap paraula interrogativa).\n2. El **verb** va a la **posició 1**.\n3. El **subjecte** va a la **posició 2** (just darrere del verb).\n4. Al final, signe d'interrogació **?**."
+        }
+      ]
+    },
+    {
+      "id": "quick-check-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-2-ex-03", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals per a catalanoparlants\n\nAquests són els errors que més es repeteixen quan partim del català o el castellà. Millor conèixer-los ara que tenir-los fossilitzats més endavant.\n\n**1. Oblidar el subjecte.**\nEn català diem *\"Treballo a Audi\"* sense dir *jo*. En alemany, **el subjecte és gairebé sempre obligatori**:\n- Incorrecte: *Arbeite bei Audi.*\n- Correcte: ==Ich== *arbeite bei Audi.*\n\n**2. Posar el verb a la posició 3 quan comences per un complement.**\nÉs el parany més típic. En català: *\"A Regensburg visc jo\"*. En alemany, el verb **no es mou**, continua a la 2:\n- Incorrecte: *In Regensburg ich wohne.*\n- Correcte: *In Regensburg ==wohne== ich.* (complement — verb — subjecte)\n\n**3. Fer preguntes sí/no amb ordre de declarativa.**\nEn català només cal canviar l'entonació. En alemany, no: **has de moure el verb al davant**.\n- Incorrecte: *Du kommst aus Deutschland?* (sona a confirmació, no és la forma estàndard de pregunta)\n- Correcte: *==Kommst== du aus Deutschland?*\n\n**4. Confondre *Wo* i *Woher*.**\n*Wo* és estàtic (on ets), *Woher* és origen (d'on vens), *Wohin* és destinació (cap a on vas). En català, totes tres es tradueixen sovint per \"on\", però l'alemany les distingeix sempre.\n- *==Wo== wohnst du?* — On vius? (lloc)\n- *==Woher== kommst du?* — D'on véns? (origen)\n\n**5. Oblidar que *und*, *aber*, *oder* no compten com a posició.**\nQuan uneixes dues frases amb *und*, *aber* o *oder*, la segona frase torna a començar de zero. El verb torna a la posició 2:\n- Correcte: *Ich arbeite in Ingolstadt, ==aber== ich ==wohne== in Regensburg.*\n\n**6. Posar signes d'interrogació d'obertura.**\nEn alemany, com en català, **només es posa el \"?\" final**, mai el \"¿\" inicial (només el castellà fa servir els dos)."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-2-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-2-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-2-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-2-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Resum visual\n\nLes taules següents comparen les tres estructures costat per costat. Si dubtes, pregunta't sempre el mateix: **on és el verb?** L'alemany t'ho agraeix.\n\n**Tres idees per endur-te a casa:**\n\n1. **Declarativa:** el verb sempre a la posició 2, comenci el que comenci la frase.\n2. **W-Frage:** Fragewort (1) — verb (2) — subjecte (3).\n3. **Ja/Nein-Frage:** verb (1) — subjecte (2) — complements."
+        },
+        {
+          "type": "table",
+          "title": "Les tres estructures bàsiques",
+          "headers": ["Tipus d'oració", "Posició 1", "Posició 2", "Posició 3+"],
+          "rows": [
+            ["Declarativa (*Aussagesatz*)", "Subjecte o complement", "**Verb conjugat**", "Resta (subjecte si s'ha invertit, complements)"],
+            ["W-Frage (parcial)", "**Fragewort** (*Wie, Wo, Was...*)", "**Verb conjugat**", "Subjecte + complements"],
+            ["Ja/Nein-Frage (total)", "**Verb conjugat**", "Subjecte", "Complements"]
+          ],
+          "caption": "La constant és el verb conjugat: sempre a la posició 2 en declaratives i W-Fragen, a la posició 1 en Ja/Nein-Fragen."
+        },
+        {
+          "type": "table",
+          "title": "Exemples comparats",
+          "headers": ["Declarativa", "W-Frage", "Ja/Nein-Frage"],
+          "rows": [
+            ["*Du ==kommst== aus Deutschland.*", "*Woher ==kommst== du?*", "*==Kommst== du aus Deutschland?*"],
+            ["*Er ==wohnt== in Berlin.*", "*Wo ==wohnt== er?*", "*==Wohnt== er in Berlin?*"],
+            ["*Sie ==heißt== Anna.*", "*Wie ==heißt== sie?*", "*==Heißt== sie Anna?*"]
+          ],
+          "caption": "Observa com el verb es manté en el seu lloc mentre la resta d'elements es reorganitzen segons el tipus d'oració."
+        }
+      ]
+    }
+  ]
+}
