@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-22",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 22,
+  "title": "Lokalisierung im Raum",
+  "shortTitle": "Lokalisierung",
+  "description": "Aplicació pràctica del sistema de preposicions locals per descriure escenes reals: adverbis espacials (_links, rechts, oben, unten, in der Mitte_...) combinats amb Wechsel + datiu i verbs específics d'ubicació.",
+  "axes": ["preposicions", "expressions-i-funcions"],
+  "prerequisites": ["A1b-19", "A1b-21"],
+  "estimatedMinutes": 18,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Descriure on són les coses: localitzar en un espai\n\nDesprés de dominar el sistema de preposicions locals (A1b-18 *Wo?/Woher?/Wohin?*, A1b-19 *Wechselpräpositionen*, A1b-20 mapa general, A1b-21 verbs d'ubicació i moviment), arriba el moment de **passar a la pràctica**: descriure escenes reals. Una habitació. Una taula parada. Una foto. Un quadre.\n\nAquesta lliçó no t'introdueix **cap regla nova**: és una **aplicació activa** del que ja saps, afegint un kit lèxic molt concret, els **adverbis de localització espacial**: *links, rechts, oben, unten, vorn, hinten, in der Mitte*..."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "L'objectiu pràctic",
+          "body": "En acabar, hauries de poder descriure una imatge d'una habitació amb 5-6 frases correctes, combinant adverbis d'ubicació amb preposicions locals (la majoria, Wechsel amb datiu perquè descrius estats estàtics → *Wo?*).\n\nTemps estimat: 15-20 minuts. Lliçó curta i pràctica."
+        }
+      ]
+    },
+    {
+      "id": "els-adverbis-espacials",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Els adverbis que orienten l'escena\n\nSón paraules que **no declinen**, no porten article darrere, i responen a la pregunta *Wo?*. Funcionen com a \"senyalitzadors\" dins l'espai que descrius."
+        },
+        {
+          "type": "table",
+          "title": "22.1 Els sis parells fonamentals",
+          "headers": ["Adverbi", "Significat", "Parella oposada"],
+          "rows": [
+            ["==**links**==", "a l'esquerra", "==**rechts**== (a la dreta)"],
+            ["==**oben**==", "a dalt", "==**unten**== (a baix)"],
+            ["==**vorn / vorne**==", "al davant", "==**hinten**== (al darrere)"],
+            ["==**innen**==", "dins, a dintre", "==**außen**== (fora)"],
+            ["==**hier**==", "aquí", "==**dort / da**== (allà)"],
+            ["==**drinnen**==", "dintre (col·loquial)", "==**draußen**== (fora)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "I una posició central clau",
+          "body": "==_**in der Mitte**_== = \"al mig, al centre\". No és un adverbi pur sinó un sintagma (_in_ + _die Mitte_ → datiu fem. → _der Mitte_). Però funciona com els adverbis: respon a *Wo?* i inicia frase fàcilment."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Vorn o vorne?",
+          "body": "_vorn_ i _vorne_ són ==la mateixa paraula==. _vorne_ és la variant alemanya estàndard més habitual avui; _vorn_ és una mica més formal/antiga però totalment correcta. Tria'n una i sigues coherent."
+        }
+      ]
+    },
+    {
+      "id": "estructura-de-la-frase",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Com es construeix una frase de localització\n\nLes frases de localització **comencen sovint per l'adverbi o el sintagma locatiu**, no pel subjecte. Això és molt alemany: posar la **informació espacial al davant** (posició I) i el **verb al segon lloc** (posició II, com sempre). El subjecte queda darrere del verb.\n\n**Esquema:**\n\n> ==**[Lloc] · [verb] · [subjecte] · (resta)**=="
+        },
+        {
+          "type": "table",
+          "title": "22.2 Exemples de referència",
+          "headers": ["Lloc (I)", "Verb (II)", "Subjecte", "Traducció"],
+          "rows": [
+            ["==**Links**==", "==**ist**==", "_ein Bild._", "A l'esquerra hi ha un quadre."],
+            ["==**Links an der Wand**==", "==**hängt**==", "_ein Bild._", "A l'esquerra a la paret penja un quadre."],
+            ["==**In der Mitte**==", "==**steht**==", "_ein Stuhl._", "Al mig hi ha una cadira."],
+            ["==**Rechts**==", "==**liegt**==", "_ein Teppich._", "A la dreta hi ha una estora."],
+            ["==**An der Wand rechts**==", "==**hängt**==", "_eine Uhr._", "A la paret de la dreta penja un rellotge."]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Observa dues coses importants",
+          "body": "**1.** L'**adverbi pot combinar-se amb un sintagma preposicional**: _links an der Wand_ = \"a l'esquerra, a la paret\". L'adverbi concreta quina part del mur.\n\n**2.** El verb **no és sempre _sein_**. De fet, els alemanys prefereixen **verbs específics** de posició: ==_**stehen**_== (ser dret), ==_**liegen**_== (ser ajagut), ==_**hängen**_== (estar penjat), ==_**sitzen**_== (estar assegut). Ja els vas veure a A1b-21. Aquí els fas servir a cor que vols."
+        }
+      ]
+    },
+    {
+      "id": "el-kit-de-verbs",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Triar el verb: una qüestió d'objecte\n\nRecorda la tria (A1b-21)."
+        },
+        {
+          "type": "table",
+          "title": "22.3 Quin verb per a quin objecte",
+          "headers": ["Objecte típic", "Verb natural", "Per què"],
+          "rows": [
+            ["una làmpada, un quadre, una cortina", "==**hängen**==", "penja de la paret o el sostre"],
+            ["una cadira, una taula, un gerro, una ampolla dreta", "==**stehen**==", "objecte vertical, té peus o base"],
+            ["una catifa, un llibre tombat, un coixí", "==**liegen**==", "objecte horitzontal o ajagut"],
+            ["una persona, un gat al sofà", "==**sitzen**==", "està assegut"],
+            ["(genèric, descripció neutra)", "==**sein**== / ==**es gibt**==", "\"hi ha\" sense precisar"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Truc pràctic",
+          "body": "Si dubtes, ==_**sein**_== sempre funciona: _Links **ist** ein Bild_. Però l'alemany educat tria el verb específic. L'equivalent català (_hi ha_) amaga aquesta distinció; l'alemany la força."
+        },
+        {
+          "type": "explanation",
+          "body": "==_**es gibt**_== (+ acusatiu) és útil per **introduir què hi ha a l'escena en general**, no per ubicar un objecte concret:\n\n> _In meinem Zimmer **gibt es** einen Schreibtisch, ein Bett und einen Schrank._\n\nDesprés, per ubicar cada cosa, tornes als verbs específics."
+        }
+      ]
+    },
+    {
+      "id": "check-1-adverbi",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-22-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "combinar-adverbi-i-preposicio",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Combinacions habituals: adverbi + preposició\n\nSovint un adverbi sol no diu prou. Es combina amb una preposició local (Wechsel amb datiu, perquè descrius estats → *Wo?*)."
+        },
+        {
+          "type": "table",
+          "title": "22.4 Adverbi + sintagma preposicional",
+          "headers": ["Construcció", "Exemple", "Traducció"],
+          "rows": [
+            ["==**links + an der Wand**==", "_Links an der Wand hängt ein Foto._", "A l'esquerra, a la paret, penja una foto."],
+            ["==**oben + auf dem Schrank**==", "_Oben auf dem Schrank steht eine Vase._", "A dalt de l'armari hi ha un gerro."],
+            ["==**unten + unter dem Tisch**==", "_Unten unter dem Tisch liegt ein Ball._", "A baix sota la taula hi ha una pilota."],
+            ["==**rechts + neben dem Bett**==", "_Rechts neben dem Bett steht eine Lampe._", "A la dreta del llit hi ha una làmpada."],
+            ["==**vorn + vor dem Fenster**==", "_Vorne vor dem Fenster steht ein Stuhl._", "Al davant, davant la finestra, hi ha una cadira."],
+            ["==**hinten + hinter der Tür**==", "_Hinten hinter der Tür hängt ein Mantel._", "Al darrere, darrere la porta, penja un abric."],
+            ["==**in der Mitte (+ von + Dat)**==", "_In der Mitte des Zimmers steht ein Tisch._", "Al mig (de l'habitació) hi ha una taula."]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Totes aquestes preposicions són Wechsel i van amb datiu",
+          "body": "Perquè són **descripcions estàtiques** (*Wo?*). Si estiguessis dient \"poso el gerro **sobre** l'armari\" (moviment → *Wohin?*) seria _auf **den** Schrank_ (Akk). Però aquí tot és estat → ==**datiu**==."
+        }
+      ]
+    },
+    {
+      "id": "vocabulari-d-habitacio",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Lèxic mínim: els mobles i els objectes bàsics\n\nPer poder practicar, necessites el vocabulari. Aquí el bàsic d'A1."
+        },
+        {
+          "type": "table",
+          "title": "22.5 Mobles (Möbel)",
+          "headers": ["Alemany", "Gènere", "Català"],
+          "rows": [
+            ["_der Tisch_", "m.", "la taula"],
+            ["_der Stuhl_", "m.", "la cadira"],
+            ["_das Bett_", "n.", "el llit"],
+            ["_der Schrank_", "m.", "l'armari"],
+            ["_das Sofa_", "n.", "el sofà"],
+            ["_der Sessel_", "m.", "la butaca"],
+            ["_der Schreibtisch_", "m.", "l'escriptori"],
+            ["_das Regal_", "n.", "l'estanteria"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "22.6 Objectes (Gegenstände)",
+          "headers": ["Alemany", "Gènere", "Català"],
+          "rows": [
+            ["_das Bild / das Foto_", "n.", "el quadre / la foto"],
+            ["_die Uhr_", "f.", "el rellotge"],
+            ["_die Lampe_", "f.", "la làmpada"],
+            ["_der Teppich_", "m.", "l'estora"],
+            ["_die Vase_", "f.", "el gerro"],
+            ["_das Buch_", "n.", "el llibre"],
+            ["_das Fenster_", "n.", "la finestra"],
+            ["_die Tür_", "f.", "la porta"],
+            ["_die Wand_", "f.", "la paret"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "check-2-verb-article",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-22-ex-02", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-3-verb-especific",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-22-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-4-ordre-frase",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-22-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-5-objecte-verb",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-22-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-6-descripcio-habitacio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-22-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi: tres ingredients per a tota frase de localització\n\n**1.** ==Un adverbi o sintagma locatiu al davant== (_links, rechts, oben, unten, vorn, hinten, in der Mitte_), sovint combinat amb una preposició (_links an der Wand_, _oben auf dem Schrank_).\n\n**2.** ==Un verb de posició a la segona posició== (_stehen, liegen, hängen, sitzen_), triat segons la forma/naturalesa de l'objecte. _sein_ sempre és una sortida segura però genèrica.\n\n**3.** ==Datiu, sempre==, perquè són descripcions estàtiques (*Wo?*). Les preposicions Wechsel només canvien a acusatiu si hi ha moviment direccional, cosa que aquí rarament passa."
+        },
+        {
+          "type": "table",
+          "title": "22.7 La fórmula completa",
+          "headers": ["[Adverbi + Prep + Dat]", "[Verb V2]", "[Subjekt Nominativ]"],
+          "rows": [
+            ["==_Links an der Wand_==", "==_hängt_==", "_ein Bild._"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Errors típics a evitar",
+          "body": "- ❌ _\"Links ein Bild hängt an der Wand\"_ → V3, mal. ✓ _\"Links hängt ein Bild an der Wand\"_ o _\"Links an der Wand hängt ein Bild\"_.\n- ❌ _\"Auf **den** Tisch steht eine Vase\"_ → acusatiu mal posat. ✓ _\"Auf **dem** Tisch steht eine Vase\"_ (Wo? → Dat).\n- ❌ _\"Das Bild **steht** an der Wand\"_ → el quadre penja, no està dret. ✓ _\"Das Bild **hängt** an der Wand\"_."
+        },
+        {
+          "type": "explanation",
+          "body": "**Enllaços:**\n\n- **A1b-18**: *Wo? / Woher? / Wohin?* (la pregunta que tria el cas).\n- **A1b-19**: *Wechselpräpositionen* (les 9 preposicions mixtes).\n- **A1b-20**: mapa general de preposicions locals.\n- **A1b-21**: verbs d'ubicació (_stehen/liegen/hängen/sitzen_) vs. moviment (_stellen/legen/hängen/setzen_).\n- Preparació per **A1b-23** (_Lerntipp_ síntesi final d'A1b)."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Consell pràctic",
+          "body": "Fes aquesta activitat **fora de l'app**: seu a qualsevol habitació i descriu-la en veu alta amb 8-10 frases. És l'exercici més útil d'aquest tema."
+        }
+      ]
+    }
+  ]
+}

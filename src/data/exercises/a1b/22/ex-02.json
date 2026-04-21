@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-22-ex-02",
+  "topicId": "A1b-22",
+  "title": "Verb d'ubicació + article datiu",
+  "prompt": "Omple cada buit amb **l'article en datiu** i el **verb d'ubicació** conjugat. Totes les frases descriuen escenes **estàtiques** → preposició Wechsel + **datiu**. Trieu el verb segons la naturalesa de l'objecte (dret = _stehen_, ajagut = _liegen_, penjat = _hängen_, assegut = _sitzen_).",
+  "difficulty": 2,
+  "tags": ["wechsel", "datiu", "verbs-ubicacio", "article"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Links an_ {{1a}} _Wand_ {{1b}} _ein Bild._ (_die Wand_)\n\n2. _In der Mitte von_ {{2a}} _Zimmer_ {{2b}} _ein großer Tisch._ (_das Zimmer_)\n\n3. _Rechts neben_ {{3a}} _Bett_ {{3b}} _eine Lampe._ (_das Bett_)\n\n4. _Unter_ {{4a}} _Tisch_ {{4b}} _ein Teppich._ (_der Tisch_)\n\n5. _Auf_ {{5a}} _Sofa_ {{5b}} _eine Katze._ (_das Sofa_)\n\n6. _Vor_ {{6a}} _Fenster_ {{6b}} _ein Stuhl._ (_das Fenster_)\n\n7. _Oben auf_ {{7a}} _Schrank_ {{7b}} _eine Vase._ (_der Schrank_)\n\n8. _Hinten an_ {{8a}} _Tür_ {{8b}} _ein Mantel._ (_die Tür_)",
+    "blanks": [
+      { "id": "1a", "label": "1a. article dat. fem." },
+      { "id": "1b", "label": "1b. verb: quadre a la paret" },
+      { "id": "2a", "label": "2a. article dat. neut." },
+      { "id": "2b", "label": "2b. verb: taula vertical" },
+      { "id": "3a", "label": "3a. article dat. neut." },
+      { "id": "3b", "label": "3b. verb: làmpada vertical" },
+      { "id": "4a", "label": "4a. article dat. masc." },
+      { "id": "4b", "label": "4b. verb: catifa ajaguda" },
+      { "id": "5a", "label": "5a. article dat. neut." },
+      { "id": "5b", "label": "5b. verb: gat assegut" },
+      { "id": "6a", "label": "6a. article dat. neut." },
+      { "id": "6b", "label": "6b. verb: cadira vertical" },
+      { "id": "7a", "label": "7a. article dat. masc." },
+      { "id": "7b", "label": "7b. verb: gerro vertical" },
+      { "id": "8a", "label": "8a. article dat. fem." },
+      { "id": "8b", "label": "8b. verb: abric penjat" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1a", "options": ["der", "die", "dem", "den"] },
+      { "blankId": "1b", "options": ["hängt", "steht", "liegt", "sitzt"] },
+      { "blankId": "2a", "options": ["der", "die", "dem", "den"] },
+      { "blankId": "2b", "options": ["hängt", "steht", "liegt", "sitzt"] },
+      { "blankId": "3a", "options": ["der", "die", "dem", "den"] },
+      { "blankId": "3b", "options": ["hängt", "steht", "liegt", "sitzt"] },
+      { "blankId": "4a", "options": ["der", "die", "dem", "den"] },
+      { "blankId": "4b", "options": ["hängt", "steht", "liegt", "sitzt"] },
+      { "blankId": "5a", "options": ["der", "die", "dem", "den"] },
+      { "blankId": "5b", "options": ["hängt", "steht", "liegt", "sitzt"] },
+      { "blankId": "6a", "options": ["der", "die", "dem", "den"] },
+      { "blankId": "6b", "options": ["hängt", "steht", "liegt", "sitzt"] },
+      { "blankId": "7a", "options": ["der", "die", "dem", "den"] },
+      { "blankId": "7b", "options": ["hängt", "steht", "liegt", "sitzt"] },
+      { "blankId": "8a", "options": ["der", "die", "dem", "den"] },
+      { "blankId": "8b", "options": ["hängt", "steht", "liegt", "sitzt"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1a": "der",
+      "1b": "hängt",
+      "2a": "dem",
+      "2b": "steht",
+      "3a": "dem",
+      "3b": "steht",
+      "4a": "dem",
+      "4b": "liegt",
+      "5a": "dem",
+      "5b": "sitzt",
+      "6a": "dem",
+      "6b": "steht",
+      "7a": "dem",
+      "7b": "steht",
+      "8a": "der",
+      "8b": "hängt"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Dos automatismes ben rodats: (a) Wechsel + descripció estàtica → ==**datiu**== (_dem_ masc./neut., _der_ fem.); (b) verb específic segons l'objecte: ==_hängt_== (penja), ==_steht_== (dret), ==_liegt_== (ajagut), ==_sitzt_== (assegut). Aquest és el cor de la lliçó.",
+      "references": ["A1b-22", "A1b-19", "A1b-21"]
+    },
+    "incorrect": {
+      "default": "Dos passos a cada buit: **article** (masc./neut. dat. = _dem_, fem. dat. = _der_) i **verb** (dret → _stehen_, ajagut → _liegen_, penjat → _hängen_, assegut → _sitzen_). Tot en datiu perquè són estats, no moviments.",
+      "byResponse": [
+        {
+          "match": { "1a": "die" },
+          "message": "_die Wand_ és femení, però _an_ aquí és **Wechsel + Wo?** → ==**datiu**==. Fem. dat. = ==_**der**_==, no _die_ (que seria nom./acus.)."
+        },
+        {
+          "match": { "1b": "steht" },
+          "message": "_Das Bild_ **no està dret**, ==**penja**== de la paret. Verb: ==_**hängt**_== (_hängen_)."
+        },
+        {
+          "match": { "2a": "das" },
+          "message": "_von_ és Dat-fix: sempre datiu. Neut. dat. = ==_**dem**_==, no _das_ (nom./acus.)."
+        },
+        {
+          "match": { "4a": "den" },
+          "message": "_unter_ és Wechsel. Aquí _der Teppich liegt_ = estat (Wo?) → ==**datiu**==. Masc. dat. = ==_**dem**_==, no _den_ (acus.)."
+        },
+        {
+          "match": { "4b": "steht" },
+          "message": "Una catifa **no està dreta**, ==**està ajaguda**== al terra. Verb: ==_**liegt**_== (_liegen_)."
+        },
+        {
+          "match": { "5b": "liegt" },
+          "message": "Un gat al sofà normalment ==**seu**==, no està ajagut. Verb: ==_**sitzt**_== (_sitzen_) per a persones i animals asseguts."
+        },
+        {
+          "match": { "7a": "den" },
+          "message": "_auf_ + Wo? (el gerro **és** a dalt, no s'hi posa ara) → ==**datiu**==. Masc. dat. = ==_**dem**_==, no _den_ (que seria Wohin? = acus.)."
+        },
+        {
+          "match": { "8a": "die" },
+          "message": "_an_ + Wo? (l'abric **penja**, no s'hi posa ara) → ==**datiu**==. Fem. dat. = ==_**der**_==, no _die_."
+        },
+        {
+          "match": { "8b": "steht" },
+          "message": "Un abric ==**penja**== del penjador, no està dret. Verb: ==_**hängt**_== (_hängen_)."
+        }
+      ]
+    }
+  }
+}

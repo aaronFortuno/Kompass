@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-22-ex-03",
+  "topicId": "A1b-22",
+  "title": "Tria el verb específic de posició",
+  "prompt": "Tria el verb de posició adequat a cada frase: ==_**stehen**_== (dret), ==_**liegen**_== (ajagut), ==_**hängen**_== (penjat), ==_**sitzen**_== (assegut).",
+  "difficulty": 2,
+  "tags": ["verbs-ubicacio", "stehen-liegen-haengen-sitzen"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Das Bild_ {{1}} _an der Wand._\n\n2. _Der Teppich_ {{2}} _auf dem Boden._\n\n3. _Die Lampe_ {{3}} _auf dem Tisch._\n\n4. _Das Kind_ {{4}} _auf dem Sofa._\n\n5. _Die Uhr_ {{5}} _über der Tür._\n\n6. _Das Buch_ {{6}} _neben dem Computer. (tombat al costat del teclat)_\n\n7. _Der Stuhl_ {{7}} _vor dem Schreibtisch._\n\n8. _Die Vase_ {{8}} _in der Mitte des Tisches._",
+    "blanks": [
+      { "id": "1", "label": "1. quadre a la paret" },
+      { "id": "2", "label": "2. catifa al terra" },
+      { "id": "3", "label": "3. làmpada sobre la taula" },
+      { "id": "4", "label": "4. nen al sofà" },
+      { "id": "5", "label": "5. rellotge sobre la porta" },
+      { "id": "6", "label": "6. llibre tombat" },
+      { "id": "7", "label": "7. cadira davant l'escriptori" },
+      { "id": "8", "label": "8. gerro al mig de la taula" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["steht", "liegt", "hängt", "sitzt"] },
+      { "blankId": "2", "options": ["steht", "liegt", "hängt", "sitzt"] },
+      { "blankId": "3", "options": ["steht", "liegt", "hängt", "sitzt"] },
+      { "blankId": "4", "options": ["steht", "liegt", "hängt", "sitzt"] },
+      { "blankId": "5", "options": ["steht", "liegt", "hängt", "sitzt"] },
+      { "blankId": "6", "options": ["steht", "liegt", "hängt", "sitzt"] },
+      { "blankId": "7", "options": ["steht", "liegt", "hängt", "sitzt"] },
+      { "blankId": "8", "options": ["steht", "liegt", "hängt", "sitzt"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["hängt"],
+      "2": ["liegt"],
+      "3": ["steht"],
+      "4": ["sitzt"],
+      "5": ["hängt"],
+      "6": ["liegt"],
+      "7": ["steht"],
+      "8": ["steht"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Regla mnemotècnica: ==dret → _stehen_==, ==ajagut → _liegen_==, ==penjat → _hängen_==, ==assegut → _sitzen_==. El verb et parla de la **forma** o **postura** de l'objecte, no només de la ubicació.",
+      "references": ["A1b-22", "A1b-21"]
+    },
+    "incorrect": {
+      "default": "Pensa en la postura de l'objecte: ==dret → _stehen_==, ==ajagut → _liegen_==, ==penjat (fixat a un suport vertical/horitzontal per la part superior) → _hängen_==, ==assegut → _sitzen_==.",
+      "byResponse": [
+        {
+          "match": { "1": "steht" },
+          "message": "El quadre **no està dret**, ==**penja**== d'un ganxo a la paret. Verb: ==_**hängt**_==."
+        },
+        {
+          "match": { "1": "liegt" },
+          "message": "El quadre **no està ajagut**, ==**penja**== de la paret (fixat per la part superior). Verb: ==_**hängt**_==."
+        },
+        {
+          "match": { "2": "steht" },
+          "message": "Una catifa està ==**plana al terra**==, ajaguda. Verb: ==_**liegt**_==, no _stehen_."
+        },
+        {
+          "match": { "3": "liegt" },
+          "message": "Una làmpada de taula és ==**vertical**== (té peu i pantalla a dalt). Verb: ==_**steht**_==, no _liegt_."
+        },
+        {
+          "match": { "4": "liegt" },
+          "message": "Una persona o un nen al sofà normalment hi és ==**assegut**==. Verb: ==_**sitzt**_==. _liegt_ seria si estigués estirat (dormint)."
+        },
+        {
+          "match": { "5": "steht" },
+          "message": "Un rellotge sobre la porta ==**penja**== de la paret/llinda. Verb: ==_**hängt**_==."
+        },
+        {
+          "match": { "8": "liegt" },
+          "message": "Un gerro és ==**vertical**==, té base: ==_**steht**_==. _liegt_ només si estigués caigut de costat."
+        }
+      ]
+    }
+  }
+}

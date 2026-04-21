@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-22-ex-04",
+  "topicId": "A1b-22",
+  "title": "Ordena la frase començant pel lloc",
+  "prompt": "Ordena cada grup de paraules per formar una frase correcta que **comenci pel lloc** (posició I) i respecti ==**V2**== (verb al segon lloc, subjecte després del verb). Escriu la frase completa, amb puntuació final (_._) i majúscula inicial.",
+  "difficulty": 3,
+  "tags": ["v2", "ordre-paraules", "sentence-order", "escriptura"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. **[ an der Wand · hängt · links · ein Foto ]**\n\n→ {{1}}\n\n2. **[ steht · in der Mitte · ein Tisch · des Zimmers ]**\n\n→ {{2}}\n\n3. **[ liegt · unter dem Bett · ein Koffer ]**\n\n→ {{3}}\n\n4. **[ eine Lampe · neben dem Sofa · rechts · steht ]**\n\n→ {{4}}\n\n5. **[ vor dem Fenster · ein Schreibtisch · steht ]**\n\n→ {{5}}\n\n6. **[ oben · eine Vase · auf dem Schrank · steht ]**\n\n→ {{6}}",
+    "blanks": [
+      { "id": "1", "label": "1. Escriu la frase completa (comença amb 'Links...')" },
+      { "id": "2", "label": "2. Comença amb 'In der Mitte...'" },
+      { "id": "3", "label": "3. Comença amb 'Unter dem Bett...'" },
+      { "id": "4", "label": "4. Comença amb 'Rechts...'" },
+      { "id": "5", "label": "5. Comença amb 'Vor dem Fenster...'" },
+      { "id": "6", "label": "6. Comença amb 'Oben...'" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Links an der Wand hängt ein Foto." },
+      { "blankId": "2", "placeholder": "In der Mitte..." },
+      { "blankId": "3", "placeholder": "Unter dem Bett..." },
+      { "blankId": "4", "placeholder": "Rechts neben dem Sofa..." },
+      { "blankId": "5", "placeholder": "Vor dem Fenster..." },
+      { "blankId": "6", "placeholder": "Oben auf dem Schrank..." }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": [
+        "Links an der Wand hängt ein Foto."
+      ],
+      "2": [
+        "In der Mitte des Zimmers steht ein Tisch.",
+        "In der Mitte steht ein Tisch."
+      ],
+      "3": [
+        "Unter dem Bett liegt ein Koffer."
+      ],
+      "4": [
+        "Rechts neben dem Sofa steht eine Lampe."
+      ],
+      "5": [
+        "Vor dem Fenster steht ein Schreibtisch."
+      ],
+      "6": [
+        "Oben auf dem Schrank steht eine Vase."
+      ]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has interioritzat el patró ==**[Lloc] · [verb] · [subjecte]**==: el lloc ocupa la posició I, el verb és V2 i el subjecte va **després** del verb (inversió). És el mecanisme clau per descriure escenes en alemany.\n\nPer al buit 2 s'acceptaven tant _In der Mitte des Zimmers steht ein Tisch._ (versió amb genitiu) com _In der Mitte steht ein Tisch._ (versió simplificada).",
+      "references": ["A1b-22"]
+    },
+    "incorrect": {
+      "default": "Esquema fix: ==**[Lloc · verb · subjecte · resta]**==. El verb sempre a la 2a posició (V2). Error típic: _\"Links ein Foto hängt an der Wand\"_ (V3 incorrecta). Comprova també **majúscula inicial** i **punt final**.\n\nFormats acceptats:\n1. _Links an der Wand hängt ein Foto._\n2. _In der Mitte des Zimmers steht ein Tisch._ / _In der Mitte steht ein Tisch._\n3. _Unter dem Bett liegt ein Koffer._\n4. _Rechts neben dem Sofa steht eine Lampe._\n5. _Vor dem Fenster steht ein Schreibtisch._\n6. _Oben auf dem Schrank steht eine Vase._"
+    }
+  }
+}

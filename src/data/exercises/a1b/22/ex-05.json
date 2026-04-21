@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-22-ex-05",
+  "topicId": "A1b-22",
+  "title": "Objecte ↔ verb de posició natural",
+  "prompt": "Empareja cada objecte amb el **verb de posició més típic**. Pensa en la forma i postura natural de cada cosa.",
+  "difficulty": 2,
+  "tags": ["match", "objecte-verb", "stehen-liegen-haengen-sitzen"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "obj1", "group": "obj", "content": { "type": "text", "content": "_das Bild_ (a la paret)" } },
+      { "id": "obj2", "group": "obj", "content": { "type": "text", "content": "_der Teppich_ (al terra)" } },
+      { "id": "obj3", "group": "obj", "content": { "type": "text", "content": "_die Lampe_ (de taula)" } },
+      { "id": "obj4", "group": "obj", "content": { "type": "text", "content": "_die Katze_ (al sofà)" } },
+      { "id": "obj5", "group": "obj", "content": { "type": "text", "content": "_die Uhr_ (sobre la porta)" } },
+      { "id": "obj6", "group": "obj", "content": { "type": "text", "content": "_das Buch_ (tombat a la taula)" } },
+      { "id": "obj7", "group": "obj", "content": { "type": "text", "content": "_der Stuhl_ (davant l'escriptori)" } },
+      { "id": "obj8", "group": "obj", "content": { "type": "text", "content": "_der Mantel_ (al penjador)" } },
+      { "id": "v1", "group": "verb", "content": { "type": "text", "content": "==_**hängt**_== _(quadre a la paret)_" } },
+      { "id": "v2", "group": "verb", "content": { "type": "text", "content": "==_**liegt**_== _(catifa al terra)_" } },
+      { "id": "v3", "group": "verb", "content": { "type": "text", "content": "==_**steht**_== _(làmpada de taula)_" } },
+      { "id": "v4", "group": "verb", "content": { "type": "text", "content": "==_**sitzt**_== _(gat al sofà)_" } },
+      { "id": "v5", "group": "verb", "content": { "type": "text", "content": "==_**hängt**_== _(rellotge sobre la porta)_" } },
+      { "id": "v6", "group": "verb", "content": { "type": "text", "content": "==_**liegt**_== _(llibre tombat)_" } },
+      { "id": "v7", "group": "verb", "content": { "type": "text", "content": "==_**steht**_== _(cadira davant la taula)_" } },
+      { "id": "v8", "group": "verb", "content": { "type": "text", "content": "==_**hängt**_== _(abric al penjador)_" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Objecte",
+    "groupBLabel": "Verb natural"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["obj1", "v1"],
+      ["obj2", "v2"],
+      ["obj3", "v3"],
+      ["obj4", "v4"],
+      ["obj5", "v5"],
+      ["obj6", "v6"],
+      ["obj7", "v7"],
+      ["obj8", "v8"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. El mapatge **objecte → verb** és el que distingeix la descripció natural de la genèrica. Quatre patrons que val la pena interioritzar: ==_penjar de paret/sostre → hängen_==, ==_tenir peus/base → stehen_==, ==_ser pla/horitzontal → liegen_==, ==_ser persona/animal assegut → sitzen_==.",
+      "references": ["A1b-22", "A1b-21"]
+    },
+    "incorrect": {
+      "default": "Pensa en la postura de cada objecte: el **quadre**, el **rellotge** i l'**abric al penjador** ==**pengen**== (_hängen_). La **catifa** i el **llibre tombat** ==**jeuen**== (_liegen_). La **làmpada** i la **cadira** ==**estan drets**== (_stehen_). El **gat al sofà** està ==**assegut**== (_sitzen_)."
+    }
+  }
+}

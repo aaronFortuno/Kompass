@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-22-ex-01",
+  "topicId": "A1b-22",
+  "title": "Tria l'adverbi espacial",
+  "prompt": "Llegeix la descripció en català i completa la frase alemanya triant l'**adverbi** (o la preposició locativa) que hi correspon. Tots els buits responen a *Wo?* → no hi ha canvi de cas, només has de triar la paraula correcta.",
+  "difficulty": 1,
+  "tags": ["adverbis-espacials", "wo", "links-rechts", "oben-unten", "draussen"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _La cadira està al costat esquerre de la taula._ → _Der Stuhl steht_ {{1}} _dem Tisch._\n\n2. _El quadre està a la part superior de la paret._ → _Das Bild hängt_ {{2}} _an der Wand._\n\n3. _La catifa està a terra, al centre de l'habitació._ → _Der Teppich liegt_ {{3}} _des Zimmers._\n\n4. _La làmpada està davant de la finestra._ → _Die Lampe steht_ {{4}} _dem Fenster._\n\n5. _El llibre està darrere del gerro._ → _Das Buch liegt_ {{5}} _der Vase._\n\n6. _A fora plou._ → {{6}} _regnet es._",
+    "blanks": [
+      { "id": "1", "label": "1. a l'esquerra de" },
+      { "id": "2", "label": "2. a dalt" },
+      { "id": "3", "label": "3. al mig" },
+      { "id": "4", "label": "4. davant de" },
+      { "id": "5", "label": "5. darrere de" },
+      { "id": "6", "label": "6. a fora (frase inicial)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["links von", "rechts von", "in der Mitte"] },
+      { "blankId": "2", "options": ["oben", "unten", "hinten"] },
+      { "blankId": "3", "options": ["oben", "in der Mitte", "außen"] },
+      { "blankId": "4", "options": ["hinter", "vor", "neben"] },
+      { "blankId": "5", "options": ["vor", "hinter", "auf"] },
+      { "blankId": "6", "options": ["Drinnen", "Draußen", "Oben"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "links von",
+      "2": "oben",
+      "3": "in der Mitte",
+      "4": "vor",
+      "5": "hinter",
+      "6": "Draußen"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Tens el kit bàsic: ==_links ↔ rechts_==, ==_oben ↔ unten_==, ==_vor ↔ hinter_==, ==_drinnen ↔ draußen_==, i el central ==_in der Mitte_==. Tots responen a *Wo?* → sense canvi de cas; només canvia la paraula.",
+      "references": ["A1b-22"]
+    },
+    "incorrect": {
+      "default": "Pensa en parelles oposades: _links ↔ rechts_, _oben ↔ unten_, _vor ↔ hinter_, _drinnen ↔ draußen_. Tots són adverbis de _Wo?_ (no hi ha moviment direccional).",
+      "byResponse": [
+        {
+          "match": { "1": "rechts von" },
+          "message": "_rechts_ = a la dreta, però la descripció diu \"al costat **esquerre**\". Necessites ==_**links von**_== (_links ↔ rechts_)."
+        },
+        {
+          "match": { "2": "unten" },
+          "message": "_unten_ = a baix. \"A la part **superior** de la paret\" és ==_**oben**_==. Parella: _oben ↔ unten_."
+        },
+        {
+          "match": { "3": "außen" },
+          "message": "_außen_ = \"per fora\". \"Al **centre** de l'habitació\" és ==_**in der Mitte**_== (_in_ + _die Mitte_ → datiu fem.)."
+        },
+        {
+          "match": { "4": "hinter" },
+          "message": "_hinter_ = darrere. \"**Davant** de la finestra\" és ==_**vor**_==. Parella: _vor ↔ hinter_."
+        },
+        {
+          "match": { "5": "vor" },
+          "message": "_vor_ = davant. \"**Darrere** del gerro\" és ==_**hinter**_==. Parella: _vor ↔ hinter_."
+        },
+        {
+          "match": { "6": "Drinnen" },
+          "message": "_Drinnen_ = dintre. \"A **fora** plou\" és ==_**Draußen**_== (_regnet es_: la pluja és fora). Parella: _drinnen ↔ draußen_."
+        },
+        {
+          "match": { "6": "Oben" },
+          "message": "_Oben_ = a dalt, no \"a fora\". Per a \"fora\" fes servir ==_**Draußen**_==."
+        }
+      ]
+    }
+  }
+}
