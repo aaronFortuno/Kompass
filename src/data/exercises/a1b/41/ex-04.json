@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-41-ex-04",
+  "topicId": "A1b-41",
+  "title": "Wechsel: acusatiu (Wohin?) o datiu (Wo?)",
+  "prompt": "Tria la forma correcta per a cada buit. Verb de ==moviment direccional== (_Wohin?_) → **acusatiu**. Verb d'==estat== (_Wo?_) → **datiu**.",
+  "difficulty": 2,
+  "tags": ["wechselpraepositionen", "datiu", "acusatiu", "dropdownFill"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich **gehe** in {{1}}._ (_die Küche_)\n\n2. _Ich **bin** in {{2}}._ (_die Küche_)\n\n3. _Das Buch **liegt** auf {{3}}._ (_der Tisch_)\n\n4. _Ich **lege** das Buch auf {{4}}._ (_der Tisch_)\n\n5. _Der Hund **schläft** unter {{5}}._ (_das Sofa_)\n\n6. _Wir **hängen** das Bild an {{6}}._ (_die Wand_)\n\n7. _Die Lampe **hängt** über {{7}}._ (_der Tisch_)\n\n8. _Er **stellt** die Vase zwischen {{8}}._ (_die Bücher_, pl.)",
+    "blanks": [
+      { "id": "1", "label": "1. _gehen in_" },
+      { "id": "2", "label": "2. _sein in_" },
+      { "id": "3", "label": "3. _liegen auf_" },
+      { "id": "4", "label": "4. _legen auf_" },
+      { "id": "5", "label": "5. _schlafen unter_" },
+      { "id": "6", "label": "6. _hängen an_ (acció)" },
+      { "id": "7", "label": "7. _hängen über_ (estat)" },
+      { "id": "8", "label": "8. _stellen zwischen_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["die Küche", "der Küche"] },
+      { "blankId": "2", "options": ["die Küche", "der Küche"] },
+      { "blankId": "3", "options": ["den Tisch", "dem Tisch"] },
+      { "blankId": "4", "options": ["den Tisch", "dem Tisch"] },
+      { "blankId": "5", "options": ["das Sofa", "dem Sofa"] },
+      { "blankId": "6", "options": ["die Wand", "der Wand"] },
+      { "blankId": "7", "options": ["den Tisch", "dem Tisch"] },
+      { "blankId": "8", "options": ["die Bücher", "den Büchern"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "die Küche",
+      "2": "der Küche",
+      "3": "dem Tisch",
+      "4": "den Tisch",
+      "5": "dem Sofa",
+      "6": "die Wand",
+      "7": "dem Tisch",
+      "8": "die Bücher"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Regla definitiva: verb de ==**moviment direccional**== (_gehen in, legen auf, stellen, hängen_ com a acció de penjar) + _Wohin?_ → ==**acusatiu**==. Verb d'==**estat**== (_sein, liegen, stehen, schlafen, hängen_ com a resultat estàtic) + _Wo?_ → ==**datiu**==.",
+      "references": ["A1b-41", "A1b-19"]
+    },
+    "incorrect": {
+      "default": "Mira el verb: indica ==un canvi de posició== (acusatiu) o ==una posició estable== (datiu)? _sein, liegen, stehen, schlafen, hängen_ (resultat) = datiu. _gehen, legen, stellen, hängen_ (acció de penjar) = acusatiu.",
+      "byResponse": [
+        {
+          "match": { "2": "die Küche" },
+          "message": "_Ich bin in…_ és ==estat== (_Wo?_) → ==**datiu**==: _in **der** Küche_."
+        },
+        {
+          "match": { "4": "dem Tisch" },
+          "message": "_legen_ és ==col·locar== (moviment direccional, _Wohin?_) → ==**acusatiu**==: _auf **den** Tisch_."
+        },
+        {
+          "match": { "3": "den Tisch" },
+          "message": "_liegen_ és ==estat== (el llibre hi és) → ==**datiu**==: _auf **dem** Tisch_."
+        },
+        {
+          "match": { "6": "der Wand" },
+          "message": "_hängen_ com a **acció de penjar** (amb subjecte que penja) = ==**acusatiu**==: _an **die** Wand_."
+        },
+        {
+          "match": { "8": "den Büchern" },
+          "message": "_stellen_ (col·locar) = moviment → ==**acusatiu**==: _zwischen **die** Bücher_ (no _den Büchern_)."
+        }
+      ]
+    }
+  }
+}

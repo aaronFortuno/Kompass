@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-41",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 41,
+  "title": "Gebrauch des Dativs",
+  "shortTitle": "Ús del Datiu",
+  "description": "Lliçó de síntesi final d'A1b: les sis portes d'entrada del datiu (preposicions fixes, Wechsel amb _Wo?_, objecte indirecte, verbs de datiu, expressions idiomàtiques, pronoms) amb una morfologia única.",
+  "axes": ["casos", "pronoms-verbs", "preposicions"],
+  "prerequisites": ["A1a-34", "A1b-19", "A1b-37", "A1b-40"],
+  "estimatedMinutes": 35,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Per què una lliçó síntesi sobre el datiu?\n\nAquesta és l'==última lliçó del curs d'A1b==. No hi ha gramàtica nova: és una ==síntesi== de tots els contextos en què apareix el datiu. Durant els últims blocs l'has vist entrar per diferents portes — preposicions fixes, preposicions mixtes, verbs amb datiu, objecte indirecte, pronoms, expressions idiomàtiques — i aquí el reunim en un sol mapa. L'objectiu: que, davant d'una frase qualsevol, sàpigues identificar el ==per què== del datiu i produir-lo sense dubtar.\n\nEl datiu és el cas que més tard apareix i que més costa d'automatitzar, perquè ==no respon a una sola funció==. En català no hi ha un cas \"datiu\" marcat morfològicament: ho resolem amb preposicions (_a_, _amb_, _per a_) o amb pronoms febles (_li, els hi_). En alemany, en canvi, el datiu s'activa per motius molt diferents que cal tenir presents tots alhora:\n\n1. Darrere d'una ==preposició fixa de datiu== (_mit, nach, aus, bei, von, zu, seit, gegenüber_).\n2. Darrere d'una ==preposició mixta== quan respon a ==**Wo?**== (ubicació, no moviment direccional).\n3. Com a ==objecte indirecte== d'un verb que en pren dos (_schenken, geben, zeigen, kaufen…_).\n4. Com a ==objecte únic== d'un ==verb de datiu== (_helfen, danken, gefallen, gehören, folgen…_).\n5. En ==expressions idiomàtiques== amb _sein_, _gehen_, _sein_ + adjectiu (_mir ist kalt_, _es geht mir gut_).\n6. Com a ==pronom personal== en totes aquestes situacions (_mir, dir, ihm, ihr, uns, euch, ihnen, Ihnen_)."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Una bona notícia enmig del laberint",
+          "body": "La mala notícia: són sis camins diferents. La bona: ==les terminacions del datiu són sempre les mateixes== (_dem, der, dem, den + -n_), tant si és el de darrere d'una preposició com si és l'objecte d'un verb. Així que ja saps la morfologia. El que queda per consolidar és la ==detecció==: per què aquesta frase demana datiu?"
+        }
+      ]
+    },
+    {
+      "id": "recordatori-morfologic",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Recordatori morfològic (un cop d'ull)\n\nAbans d'entrar en usos, repassem les formes. Si dubtes, torna a A1b-36 (declinació de l'article) i A1b-37 (pronoms personals)."
+        },
+        {
+          "type": "table",
+          "title": "41.1 Article definit en datiu",
+          "headers": ["Gènere", "Nominatiu", "Datiu"],
+          "rows": [
+            ["Masculí", "_der Mann_", "_==dem== Mann_"],
+            ["Neutre", "_das Kind_", "_==dem== Kind_"],
+            ["Femení", "_die Frau_", "_==der== Frau_"],
+            ["Plural", "_die Kinder_", "_==den== Kinder**n**_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Recordatori del plural",
+          "body": "El plural ==afegeix _-n_ al substantiu== (_den Kindern, den Frauen, den Männern_), excepte si el plural ja acaba en _-n_ o _-s_ (_den Autos_)."
+        },
+        {
+          "type": "table",
+          "title": "41.2 Article indefinit i possessius en datiu",
+          "headers": ["Gènere", "Nominatiu", "Datiu"],
+          "rows": [
+            ["Masculí", "_ein / mein Vater_", "_==einem / meinem== Vater_"],
+            ["Neutre", "_ein / mein Kind_", "_==einem / meinem== Kind_"],
+            ["Femení", "_eine / meine Mutter_", "_==einer / meiner== Mutter_"],
+            ["Plural", "_— / meine Kinder_", "_==— / meinen== Kinder**n**_"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "41.3 Pronoms personals en datiu",
+          "headers": ["Nominatiu", "_ich_", "_du_", "_er_", "_sie_", "_es_", "_wir_", "_ihr_", "_sie / Sie_"],
+          "rows": [
+            ["**Datiu**", "_==mir==_", "_==dir==_", "_==ihm==_", "_==ihr==_", "_==ihm==_", "_==uns==_", "_==euch==_", "_==ihnen / Ihnen==_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista de supervivència",
+          "body": "Si la paraula porta ==_-m_== (_dem, einem, meinem, ihm_) o ==_-r_== (_der, einer, meiner, mir, dir, ihr_) o és ==_-n_ plural== (_den Kindern_), probablement ets en datiu."
+        }
+      ]
+    },
+    {
+      "id": "us-1-preposicions-fixes",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Ús 1 · Preposicions que sempre demanen datiu\n\nSón el primer lloc on has trobat el datiu (A1a-34). El grup bàsic:\n\n> ==_**aus, bei, mit, nach, seit, von, zu, gegenüber**_==\n\n_(Regla mnemotècnica: \"==aus, bei, mit, nach, seit, von, zu==\" — es pot memoritzar com una frase cantada.)_\n\n- _Ich komme ==aus der Schweiz==._ — _Vinc de Suïssa._\n- _Ich wohne ==bei meinen Eltern==._ — _Visc a casa dels meus pares._\n- _Ich fahre ==mit dem Bus==._ — _Vaig amb autobús._\n- _==Nach dem Frühstück== gehe ich zur Arbeit._ — _Després d'esmorzar…_\n- _Ich lerne Deutsch ==seit einem Jahr==._ — _Aprenc alemany des de fa un any._\n- _Das ist ein Geschenk ==von meinem Freund==._ — _Això és un regal del meu xicot._\n- _Ich gehe ==zum Arzt==._ (_zu dem_) — _Vaig al metge._\n\nContraccions (A1b-14) habituals: ==_**beim**_== (_bei dem_), ==_**vom**_== (_von dem_), ==_**zum**_== (_zu dem_), ==_**zur**_== (_zu der_)."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Detecció automàtica",
+          "body": "Si la preposició és una d'aquestes ==vuit==, no cal pensar res més. ==**Datiu automàtic**==."
+        }
+      ]
+    },
+    {
+      "id": "us-2-wechsel",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Ús 2 · Preposicions mixtes amb _Wo?_ (A1b-19)\n\nLes ==nou _Wechselpräpositionen_==:\n\n> ==_**an, auf, hinter, in, neben, über, unter, vor, zwischen**_==\n\nAquestes preposicions regeixen ==acusatiu o datiu== segons el tipus de verb:\n\n- ==Moviment direccional== (cap a on? → _Wohin?_) → **acusatiu**\n- ==Ubicació estàtica== (on? → _Wo?_) → **datiu**\n\nEl datiu apareix quan l'acció es desenvolupa ==dins d'un lloc== sense canvi de posició."
+        },
+        {
+          "type": "table",
+          "title": "41.4 Acusatiu (Wohin?) vs Datiu (Wo?)",
+          "headers": ["Acusatiu (_Wohin?_)", "Datiu (_Wo?_)"],
+          "rows": [
+            ["_Ich lege das Buch ==auf den Tisch==._", "_Das Buch liegt ==auf dem Tisch==._"],
+            ["_Ich gehe ==in die Küche==._", "_Ich bin ==in der Küche==._"],
+            ["_Ich hänge das Bild ==an die Wand==._", "_Das Bild hängt ==an der Wand==._"],
+            ["_Der Hund läuft ==unter den Tisch==._", "_Der Hund schläft ==unter dem Tisch==._"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Detecció",
+          "body": "Contraccions típiques amb datiu: ==_**am**_== (_an dem_), ==_**im**_== (_in dem_). Si la preposició és una Wechsel i el verb descriu ==estar, viure, romandre, ser, trobar-se, treballar, dormir, llegir==… (sense canvi de lloc), ==**datiu**=="
+        }
+      ]
+    },
+    {
+      "id": "check-1-motiu",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-41-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "us-3-objecte-indirecte",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Ús 3 · Objecte indirecte (A1b-39)\n\nAlguns verbs admeten ==dos objectes==: un ==directe== (què?) en acusatiu i un ==indirecte== (a qui?) en datiu.\n\n> _Die Tochter schenkt ==ihrem Vater== ==ein Buch==._\n> _La filla regala al seu pare un llibre._\n\nAnàlisi:\n- _Wer?_ — ==_Die Tochter_== → subjecte, nominatiu.\n- _Wem?_ — ==_ihrem Vater_== → objecte indirecte, datiu.\n- _Was?_ — ==_ein Buch_== → objecte directe, acusatiu.\n\nVerbs típics que demanen aquesta estructura (==Akk. + Dat.==):\n\n> ==_**schenken, geben, zeigen, empfehlen, kaufen, erklären, bringen, schicken, schreiben, sagen**_==\n\n- _Ich ==gebe meinem Bruder== ==das Buch==._ — _Dono el llibre al meu germà._\n- _Er ==zeigt mir== ==seine Fotos==._ — _M'ensenya les seves fotos._\n- _Wir ==empfehlen euch== ==dieses Restaurant==._ — _Us recomanem aquest restaurant._\n- _Ich ==kaufe meiner Mutter== ==Blumen==._ — _Compro flors per a la meva mare._"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Detecció",
+          "body": "Si el verb té dos complements i ==un d'ells és un receptor/beneficiari== (a qui?), aquest va en ==**datiu**==."
+        }
+      ]
+    },
+    {
+      "id": "us-4-verbs-datiu",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Ús 4 · Verbs que regeixen datiu (A1b-40)\n\nAlguns verbs, tot i no tenir estructura d'objecte indirecte, ==demanen que el seu únic complement vagi en datiu==. No es poden deduir per lògica: s'aprenen com un paquet. Els més importants al teu nivell:\n\n> ==_**helfen, danken, gefallen, gehören, folgen, antworten, glauben** (a una persona)**, gratulieren, passen, schmecken, wehtun, fehlen**_==\n\n- _Ich ==helfe meiner Schwester==._ — _Ajudo la meva germana._\n- _Das Buch ==gefällt mir==._ — _El llibre m'agrada._\n- _Das Auto ==gehört meinem Vater==._ — _El cotxe és del meu pare._\n- _Ich ==danke dir==._ — _Et dono les gràcies._\n- _Die Suppe ==schmeckt den Kindern==._ — _La sopa agrada als nens._\n- _Der Kopf ==tut mir weh==._ — _Em fa mal el cap._"
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Detecció",
+          "body": "Si el verb és un d'aquesta llista, ==no et fiïs del català==. _Ajudar algú_ = _jemandem helfen_ (datiu), no _jemanden helfen_. Memoritza el verb amb la seva construcció."
+        }
+      ]
+    },
+    {
+      "id": "us-5-expressions",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Ús 5 · Expressions idiomàtiques amb datiu\n\nUn bloc d'expressions d'altíssima freqüència que ==els parlen sempre els nadius== i que cal saber reproduir sense pensar-les.\n\n##### Benestar físic i anímic\n\n- _Es ==geht mir== gut._ — _Estic bé._ (literal: \"em va bé\")\n- _Wie ==geht es dir==?_ — _Com estàs?_\n- _==Mir ist== kalt._ — _Tinc fred._ (literal: \"a mi és fred\")\n- _==Mir ist== warm / heiß._ — _Tinc calor._\n- _==Mir ist== schlecht._ — _Em trobo malament._\n\n##### Dolor i parts del cos\n\n- _Der Kopf ==tut mir weh==._ / _==Mir tut== der Kopf ==weh==._ — _Em fa mal el cap._\n- _==Mir tun== die Füße ==weh==._ — _Em fan mal els peus._\n\n##### Gustos i preferències\n\n- _Das Kleid ==gefällt mir==._ — _El vestit m'agrada._\n- _Der Kuchen ==schmeckt mir==._ — _El pastís em sembla bo / m'agrada._ (de gust)\n- _Das ==passt mir== nicht._ — _No em va bé_ (horari, roba, situació).\n\n##### Possessió i pertinença\n\n- _Das Buch ==gehört mir==._ — _El llibre és meu._\n- _==Dieses Auto== gehört meinem Nachbarn._ — _Aquest cotxe és del meu veí._"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Detecció",
+          "body": "Són ==expressions fixes==. La persona afectada (a qui li passa alguna cosa) va en datiu. El subjecte gramatical és l'estat, l'objecte o l'_es_ impersonal."
+        }
+      ]
+    },
+    {
+      "id": "us-6-pronoms",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Ús 6 · Pronoms personals en datiu (A1b-37)\n\nQualsevol dels cinc usos anteriors pot aparèixer ==amb pronom== en lloc de substantiu. I aquí és on el datiu es fa més freqüent en la parla real.\n\n- **Preposició fixa:** _Kommst du ==mit mir==?_ — _Véns amb mi?_\n- **Wechsel _Wo?_:** _Das Buch liegt ==neben dir==._ — _El llibre és al teu costat._\n- **Objecte indirecte:** _Ich schenke ==ihr== Blumen._ — _Li regalo flors._\n- **Verb de datiu:** _Ich helfe ==ihnen==._ — _Els ajudo._\n- **Expressió:** _Es geht ==uns== gut._ — _Estem bé._\n\n##### Ordre en la frase amb dos pronoms (repàs d'A1b-39)\n\nQuan hi ha pronom d'acusatiu + pronom de datiu, l'==acusatiu va primer==:\n\n> _Ich ==gebe== ==es== ==dir==._ — _T'ho dono._\n> _Er ==zeigt== ==sie== ==mir==._ — _Me'ls ensenya._\n\n(En canvi, amb substantiu + pronom, el pronom va primer: _Ich gebe **dir** **das Buch**._)"
+        }
+      ]
+    },
+    {
+      "id": "check-2-article",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-41-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "check-3-pronom",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-41-ex-03", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "diagnostic",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Diagnòstic ràpid: per què aquesta paraula va en datiu?\n\nQuan trobis un datiu en una frase, hauries de poder ==atribuir-lo a una de les sis raons==. Aquí tens un algorisme de butxaca:\n\n1. ==**Hi ha una preposició de datiu fixa?**== (_aus, bei, mit, nach, seit, von, zu, gegenüber_) → Sí: ús 1.\n2. ==**Hi ha una Wechselpräposition amb _Wo?_== (ubicació sense moviment)?== → Sí: ús 2.\n3. ==**El verb té dos complements (un directe i un receptor)?**== (_schenken, geben…_) → Sí: ús 3 (datiu per al receptor).\n4. ==**El verb n'és un de la llista de datiu?**== (_helfen, gefallen, gehören, danken…_) → Sí: ús 4.\n5. ==**És una expressió idiomàtica amb _es, sein, gehen, weh tun_?**== → Sí: ús 5.\n6. ==**És un pronom personal que compleix una de les funcions anteriors?**== → Sí: ús 6 (= un dels cinc amb pronom).\n\nSi cap de les sis raons encaixa: ==revisa==, probablement no és datiu, és acusatiu o nominatiu."
+        }
+      ]
+    },
+    {
+      "id": "check-4-wechsel",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-41-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. Confondre _helfen/gefallen_ amb verbs d'acusatiu.**\n\nEl català _ajudar algú_ fa pensar que el complement és directe. En alemany no: ==_jemandem helfen_==.\n\n- _Ich helfe ==meinen Bruder==._ ❌\n- _Ich helfe ==meinem Bruder==._ ✅\n\n**2. Oblidar la _-n_ del plural.**\n\nEl plural en datiu ==afegeix _-n_== al substantiu (si no l'acaba ja).\n\n- _Ich spiele mit ==den Kinder==._ ❌\n- _Ich spiele mit ==den Kindern==._ ✅\n\n**3. Calcar la preposició del català amb Wechsel.**\n\n_Sóc a la cuina_ pot fer triar _in_ + acusatiu (com _vaig a_). Però si el verb és ==estar==, és _Wo? → datiu_.\n\n- _Ich bin ==in die Küche==._ ❌\n- _Ich bin ==in der Küche==._ ✅\n\n**4. Ordre de pronoms.**\n\nEn català _t'ho dono_ és intuïtiu, però en alemany ==acusatiu abans de datiu== quan tots dos són pronoms.\n\n- _Ich gebe ==dir es==._ ❌\n- _Ich gebe ==es dir==._ ✅"
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Paranys 5 i 6",
+          "body": "**5. Dir _\"Ich bin kalt\"_.** És un error molt típic (calc de l'anglès/català _sóc fred_). En alemany la fórmula correcta és impersonal amb datiu.\n\n- _Ich bin kalt._ ❌ (vol dir _sóc fred_ com a persona)\n- ==_Mir ist kalt._== ✅ — _Tinc fred._\n\n**6. Oblidar la contracció.** _zu dem / zu der / bei dem / an dem / in dem / von dem_ es ==contrauen== sempre en el registre natural: _zum, zur, beim, am, im, vom_.\n\n- _Ich gehe ==zu dem== Arzt._ ❌ (formal, marcat)\n- _Ich gehe ==zum== Arzt._ ✅"
+        }
+      ]
+    },
+    {
+      "id": "check-5-completar",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-41-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-6-errors",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-41-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-7-traduccio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-41-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-8-text",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-41-ex-08", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi · El datiu en un sol mapa\n\n> Sis portes d'entrada, una sola morfologia. El cas dels ==receptors, els contenidors estàtics i els afectats==."
+        },
+        {
+          "type": "table",
+          "title": "41.5 Les sis raons per posar datiu (ordenades per freqüència)",
+          "headers": ["Raó", "Exemples"],
+          "rows": [
+            ["**1. Preposició fixa**", "_aus, bei, mit, nach, seit, von, zu, gegenüber_. Automàtic."],
+            ["**2. Wechsel + _Wo?_**", "ubicació sense moviment: _in der Küche, auf dem Tisch_."],
+            ["**3. Objecte indirecte (_Wem?_)**", "_Ich schenke meiner Mutter Blumen._"],
+            ["**4. Verb de datiu**", "_helfen, gefallen, gehören, danken, folgen, schmecken, wehtun, passen, gratulieren, antworten_."],
+            ["**5. Expressions idiomàtiques**", "_mir ist kalt, es geht mir gut, der Kopf tut mir weh, das gefällt mir_."],
+            ["**6. Pronom personal**", "_mir, dir, ihm, ihr, uns, euch, ihnen, Ihnen_ que cobreix una de les raons anteriors."]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**La morfologia, en un sol cop:**\n\n> Article: ==_dem_ (m/n)==, ==_der_ (f)==, ==_den + -n_ (pl.)==. Pronom: ==_mir, dir, ihm, ihr, uns, euch, ihnen, Ihnen_==.\n\n**El senyal visual:** si veus ==_-m_== o ==_-r_== com a terminació, o un ==plural amb _-n_ afegida==, probablement estàs davant d'un datiu.\n\n**Paranys del català:** _helfen, gehören, gefallen_ són verbs de datiu, no d'acusatiu. _Sóc a la cuina_ és _in der Küche_ (Wo?), no _in die Küche_. _Tinc fred_ és _Mir ist kalt_, no _Ich bin kalt_.\n\n**Enllaços amb tot el que has après:**\n\n- **A1a-34** — Preposicions fixes de datiu. Ús 1, la primera porta.\n- **A1b-14** — Contraccions _am, im, beim, vom, zum, zur_. El datiu en la parla natural.\n- **A1b-18**, **A1b-19** — _Wechselpräpositionen_ amb _Wo?_ Ús 2.\n- **A1b-37** — Pronoms personals en datiu. Ús 6.\n- **A1b-39** — Objecte indirecte. Ús 3.\n- **A1b-40** — Verbs de datiu. Ús 4.\n\n**Darrer consell pràctic.** Davant d'una frase, acostuma't a fer-te ==dues preguntes en cadena==:\n\n1. _Hi ha una preposició?_ → Mira la taula: fixa de datiu, fixa d'acusatiu, o Wechsel?\n2. _Quin és el verb?_ → Un dels de datiu? Té dos objectes? És una expressió fixa?\n\nAmb aquest doble filtre, en tres segons identifiques qualsevol datiu d'A1b."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Enhorabona: has acabat A1b",
+          "body": "Aquesta era ==la darrera lliçó d'A1b==. Has recorregut casos (nominatiu, acusatiu, datiu), verbs modals i separables, el perfet amb _haben_ i _sein_, les preposicions totals, els adjectius declinats, la comparació, els pronoms, el datiu complet. Ja tens la gramàtica bàsica d'A1 a la butxaca. Al començament de l'A2 trobaràs el genitiu, el passat simple (_Präteritum_), les oracions subordinades amb _weil, dass, wenn, ob_, i les terminacions avançades. Però ja no partiràs de zero: ara ja penses una mica en alemany. _**Viel Erfolg!**_"
+        }
+      ]
+    }
+  ]
+}

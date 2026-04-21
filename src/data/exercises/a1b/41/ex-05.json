@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-41-ex-05",
+  "topicId": "A1b-41",
+  "title": "Completa: verb conjugat + complement en datiu",
+  "prompt": "Completa cada frase amb ==el verb conjugat== i ==el complement declinat en datiu== (article/possessiu + substantiu, afegint la _-n_ del plural si cal).",
+  "difficulty": 3,
+  "tags": ["datiu", "produccio", "typeIn", "verbs-datiu"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich {{1a}} (helfen) {{1b}} (meine Mutter) in der Küche._\n\n2. _Das Auto {{2a}} (gehören) {{2b}} (mein Vater)._\n\n3. _Wir {{3a}} (danken) {{3b}} (die Lehrer, pl.) für ihre Hilfe._\n\n4. _Die Kinder {{4a}} (spielen) mit {{4b}} (der Hund)._\n\n5. _Ich {{5a}} (kaufen) {{5b}} (meine Freundin) einen Kaffee._\n\n6. _Das Kleid {{6a}} (gefallen) {{6b}} (ich) sehr._\n\n7. _Er {{7a}} (wohnen) bei {{7b}} (seine Eltern)._\n\n8. _Die Suppe {{8a}} (schmecken) {{8b}} (die Kinder, pl.) nicht._",
+    "blanks": [
+      { "id": "1a", "label": "1. _helfen_ (ich)" },
+      { "id": "1b", "label": "1. _meine Mutter_ (dat.)" },
+      { "id": "2a", "label": "2. _gehören_ (es)" },
+      { "id": "2b", "label": "2. _mein Vater_ (dat.)" },
+      { "id": "3a", "label": "3. _danken_ (wir)" },
+      { "id": "3b", "label": "3. _die Lehrer_ (dat. pl.)" },
+      { "id": "4a", "label": "4. _spielen_ (sie, pl.)" },
+      { "id": "4b", "label": "4. _der Hund_ (dat.)" },
+      { "id": "5a", "label": "5. _kaufen_ (ich)" },
+      { "id": "5b", "label": "5. _meine Freundin_ (dat.)" },
+      { "id": "6a", "label": "6. _gefallen_ (es, sg)" },
+      { "id": "6b", "label": "6. _ich_ (dat.)" },
+      { "id": "7a", "label": "7. _wohnen_ (er)" },
+      { "id": "7b", "label": "7. _seine Eltern_ (dat. pl.)" },
+      { "id": "8a", "label": "8. _schmecken_ (sg)" },
+      { "id": "8b", "label": "8. _die Kinder_ (dat. pl.)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1a", "placeholder": "conjugat" },
+      { "blankId": "1b", "placeholder": "article + nom en dat." },
+      { "blankId": "2a", "placeholder": "conjugat" },
+      { "blankId": "2b", "placeholder": "article + nom en dat." },
+      { "blankId": "3a", "placeholder": "conjugat" },
+      { "blankId": "3b", "placeholder": "article + nom en dat. pl." },
+      { "blankId": "4a", "placeholder": "conjugat" },
+      { "blankId": "4b", "placeholder": "article + nom en dat." },
+      { "blankId": "5a", "placeholder": "conjugat" },
+      { "blankId": "5b", "placeholder": "article + nom en dat." },
+      { "blankId": "6a", "placeholder": "conjugat" },
+      { "blankId": "6b", "placeholder": "pronom" },
+      { "blankId": "7a", "placeholder": "conjugat" },
+      { "blankId": "7b", "placeholder": "article + nom en dat. pl." },
+      { "blankId": "8a", "placeholder": "conjugat" },
+      { "blankId": "8b", "placeholder": "article + nom en dat. pl." }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1a": ["helfe"],
+      "1b": ["meiner Mutter"],
+      "2a": ["gehört"],
+      "2b": ["meinem Vater"],
+      "3a": ["danken"],
+      "3b": ["den Lehrern"],
+      "4a": ["spielen"],
+      "4b": ["dem Hund"],
+      "5a": ["kaufe"],
+      "5b": ["meiner Freundin"],
+      "6a": ["gefällt"],
+      "6b": ["mir"],
+      "7a": ["wohnt"],
+      "7b": ["seinen Eltern"],
+      "8a": ["schmeckt"],
+      "8b": ["den Kindern"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "En tots els casos has hagut d'escollir datiu ==per una raó diferent==: **verb de datiu** (_helfen, gehören, danken, gefallen, schmecken_), **preposició fixa** (_mit, bei_), **objecte indirecte** (_kaufen_). ==El datiu entra per moltes portes==, però la morfologia és sempre la mateixa.",
+      "references": ["A1b-41"]
+    },
+    "incorrect": {
+      "default": "Recorda: fem. sg dat. → ==_meiner_== (_-r_); masc. sg dat. → ==_meinem_== (_-m_); plural dat. → ==_den/seinen_ + _-n_ al nom==: _den Lehrern, seinen Eltern, den Kindern_."
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-41-ex-07",
+  "topicId": "A1b-41",
+  "title": "Tradueix: producció completa amb datiu",
+  "prompt": "Tradueix cada frase catalana a l'alemany. Cada ítem activa ==una de les sis raons== per posar datiu: preposició fixa, Wechsel amb _Wo?_, objecte indirecte, verb de datiu, expressió idiomàtica o pronom.",
+  "difficulty": 3,
+  "tags": ["datiu", "traduccio", "produccio", "typeIn"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. \"Ajudo la meva germana.\" → {{1}}\n\n2. \"Visc a casa dels meus pares.\" → {{2}}\n\n3. \"Regalo flors a la meva mare.\" → {{3}}\n\n4. \"El cotxe és del meu pare.\" → {{4}}\n\n5. \"Sóc a la cuina.\" → {{5}}\n\n6. \"Tinc fred.\" → {{6}}\n\n7. \"El llibre m'agrada molt.\" → {{7}}\n\n8. \"T'ho dono.\" (_es_, neut.) → {{8}}\n\n9. \"Em fa mal el cap.\" → {{9}}\n\n10. \"Vaig al metge amb la meva amiga.\" → {{10}}",
+    "blanks": [
+      { "id": "1", "label": "1. verb de datiu" },
+      { "id": "2", "label": "2. prep. fixa + plural _-n_" },
+      { "id": "3", "label": "3. objecte indirecte" },
+      { "id": "4", "label": "4. verb de datiu" },
+      { "id": "5", "label": "5. Wechsel _Wo?_" },
+      { "id": "6", "label": "6. expressió" },
+      { "id": "7", "label": "7. verb de datiu + pronom" },
+      { "id": "8", "label": "8. doble pronom, acus. + dat." },
+      { "id": "9", "label": "9. expressió (_weh tun_)" },
+      { "id": "10", "label": "10. dues prep. fixes" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Ich helfe…" },
+      { "blankId": "2", "placeholder": "Ich wohne bei…" },
+      { "blankId": "3", "placeholder": "Ich schenke…" },
+      { "blankId": "4", "placeholder": "Das Auto gehört…" },
+      { "blankId": "5", "placeholder": "Ich bin…" },
+      { "blankId": "6", "placeholder": "Mir…" },
+      { "blankId": "7", "placeholder": "Das Buch…" },
+      { "blankId": "8", "placeholder": "Ich gebe…" },
+      { "blankId": "9", "placeholder": "Der Kopf… / Mir…" },
+      { "blankId": "10", "placeholder": "Ich gehe mit… zu…" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Ich helfe meiner Schwester."],
+      "2": ["Ich wohne bei meinen Eltern."],
+      "3": ["Ich schenke meiner Mutter Blumen.", "Ich schenke Blumen meiner Mutter."],
+      "4": ["Das Auto gehört meinem Vater."],
+      "5": ["Ich bin in der Küche."],
+      "6": ["Mir ist kalt."],
+      "7": ["Das Buch gefällt mir sehr."],
+      "8": ["Ich gebe es dir."],
+      "9": ["Der Kopf tut mir weh.", "Mir tut der Kopf weh."],
+      "10": ["Ich gehe mit meiner Freundin zum Arzt.", "Ich gehe mit meiner Freundin zu dem Arzt."]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Cada frase activa ==una raó diferent== per posar el datiu: **verbs de datiu** (_helfen, gehören, gefallen_), **preposicions fixes** (_bei, mit, zu_), **Wechsel _Wo?_** (_in der Küche_), **objecte indirecte** (_schenken_), **expressions** (_mir ist kalt, der Kopf tut mir weh_), **doble pronom** (_es dir_, acus. + dat.). Si les tens totes clares, ==has superat l'A1b==.",
+      "references": ["A1b-41"]
+    },
+    "incorrect": {
+      "default": "Comprova el cas (datiu → _-m, -r, -n_ plural), el pronom datiu (_mir, dir, ihm/ihr_), la preposició (_bei, mit, zu_ fixes, _in_ Wechsel amb _Wo?_), i l'ordre amb doble pronom (==acusatiu abans de datiu==: _es dir_)."
+    }
+  }
+}

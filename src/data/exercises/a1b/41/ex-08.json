@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-41-ex-08",
+  "topicId": "A1b-41",
+  "title": "Text de síntesi: un dia qualsevol",
+  "prompt": "Completa el text amb la ==forma correcta== (article, pronom, contracció, _-n_ plural). Tot el programa d'A1b-Dativ en un sol paràgraf.",
+  "difficulty": 3,
+  "tags": ["datiu", "text", "sintesi", "dropdownFill", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Heute geht es {{1}} gut. Am Morgen habe ich mit {{2}} Bruder gefrühstückt. Er hat {{3}} einen Kaffee gemacht. Dann bin ich mit {{4}} Bus {{5}} Arbeit gefahren. {{6}} Büro habe ich {{7}} Kollegin geholfen. Nach {{8}} Arbeit bin ich {{9}} Arzt gegangen, weil der Kopf {{10}} wehtut._",
+    "blanks": [
+      { "id": "1", "label": "1. _ich_ (dat.)" },
+      { "id": "2", "label": "2. _mein Bruder_ (dat.)" },
+      { "id": "3", "label": "3. _ich_ (dat.)" },
+      { "id": "4", "label": "4. _der Bus_ (dat.)" },
+      { "id": "5", "label": "5. _zu die Arbeit_ (contracció)" },
+      { "id": "6", "label": "6. _in das Büro_ (contracció, Wo?)" },
+      { "id": "7", "label": "7. _meine Kollegin_ (dat.)" },
+      { "id": "8", "label": "8. _die Arbeit_ (dat.)" },
+      { "id": "9", "label": "9. _zu der Arzt_ (contracció)" },
+      { "id": "10", "label": "10. _ich_ (dat.)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["mir", "mich", "ich"] },
+      { "blankId": "2", "options": ["meinem", "meinen", "meiner"] },
+      { "blankId": "3", "options": ["mir", "mich", "ich"] },
+      { "blankId": "4", "options": ["dem", "den", "der"] },
+      { "blankId": "5", "options": ["zur", "zum", "zu die"] },
+      { "blankId": "6", "options": ["Im", "In die", "Ins"] },
+      { "blankId": "7", "options": ["meiner", "meinem", "meine"] },
+      { "blankId": "8", "options": ["der", "die", "dem"] },
+      { "blankId": "9", "options": ["zum", "zur", "zu den"] },
+      { "blankId": "10", "options": ["mir", "mich", "ich"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "mir",
+      "2": "meinem",
+      "3": "mir",
+      "4": "dem",
+      "5": "zur",
+      "6": "Im",
+      "7": "meiner",
+      "8": "der",
+      "9": "zum",
+      "10": "mir"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Has completat el mapa del datiu en un sol paràgraf: ==_mir_== (expressió _es geht mir_), ==_mit meinem Bruder_== (prep. fixa), ==_mir einen Kaffee gemacht_== (objecte indirecte), ==_mit dem Bus_== + ==_zur Arbeit_== (prep. fixes), ==_im Büro_== (Wechsel _Wo?_), ==_meiner Kollegin geholfen_== (verb de datiu), ==_nach der Arbeit_== (prep. fixa), ==_zum Arzt_== (prep. fixa), ==_tut mir weh_== (expressió). ==Tot el programa d'A1b en un sol paràgraf==.",
+      "references": ["A1b-41"]
+    },
+    "incorrect": {
+      "default": "Repassa cada buit amb la seva raó: (1, 3, 10) pronom datiu _mir_; (2, 7) poss. masc./fem. _meinem/meiner_; (4, 8) art. datiu _dem/der_; (5, 9) contraccions _zur/zum_; (6) _In dem_ → ==_Im_== (Wechsel _Wo?_, sóc dins el despatx).",
+      "byResponse": [
+        {
+          "match": { "6": "In die" },
+          "message": "_sein im Büro_ descriu ==ubicació== (_Wo?_ → datiu). _In dem_ es contrau en ==_Im_==. _In die_ seria acusatiu (moviment)."
+        },
+        {
+          "match": { "5": "zum" },
+          "message": "_Arbeit_ és ==femenina==: _zu der Arbeit_ → ==_zur_==. _zum_ = _zu dem_ (masc./neut.)."
+        },
+        {
+          "match": { "9": "zur" },
+          "message": "_Arzt_ és ==masculí==: _zu dem Arzt_ → ==_zum_==. _zur_ seria femení."
+        },
+        {
+          "match": { "7": "meinem" },
+          "message": "_Kollegin_ és ==femenina==. _helfen_ demana datiu → ==_meiner Kollegin_=="
+        }
+      ]
+    }
+  }
+}

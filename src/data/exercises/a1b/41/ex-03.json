@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-41-ex-03",
+  "topicId": "A1b-41",
+  "title": "Substitueix pel pronom personal en datiu",
+  "prompt": "Substitueix el sintagma subratllat pel ==pronom personal en datiu== corresponent. Recorda: masc./neut. → ==_ihm_==, fem. → ==_ihr_==, plural → ==_ihnen_==.",
+  "difficulty": 2,
+  "tags": ["datiu", "pronoms", "typeIn"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich helfe ==meinem Bruder==._ → _Ich helfe {{1}}._\n\n2. _Das Buch gehört ==meiner Schwester==._ → _Das Buch gehört {{2}}._\n\n3. _Wir schenken ==unseren Eltern== ein Foto._ → _Wir schenken {{3}} ein Foto._\n\n4. _Ich danke ==dem Lehrer==._ → _Ich danke {{4}}._\n\n5. _Er zeigt ==seiner Freundin== die Stadt._ → _Er zeigt {{5}} die Stadt._\n\n6. _Das Geschenk ist von ==meinem Vater==._ → _Das Geschenk ist von {{6}}._\n\n7. _Ich fahre mit ==meiner Kollegin== nach Berlin._ → _Ich fahre mit {{7}} nach Berlin._\n\n8. _Es geht ==den Kindern== gut._ → _Es geht {{8}} gut._",
+    "blanks": [
+      { "id": "1", "label": "1. masc. sg" },
+      { "id": "2", "label": "2. fem. sg" },
+      { "id": "3", "label": "3. pl." },
+      { "id": "4", "label": "4. masc. sg" },
+      { "id": "5", "label": "5. fem. sg" },
+      { "id": "6", "label": "6. masc. sg" },
+      { "id": "7", "label": "7. fem. sg" },
+      { "id": "8", "label": "8. pl." }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "pronom dat." },
+      { "blankId": "2", "placeholder": "pronom dat." },
+      { "blankId": "3", "placeholder": "pronom dat." },
+      { "blankId": "4", "placeholder": "pronom dat." },
+      { "blankId": "5", "placeholder": "pronom dat." },
+      { "blankId": "6", "placeholder": "pronom dat." },
+      { "blankId": "7", "placeholder": "pronom dat." },
+      { "blankId": "8", "placeholder": "pronom dat." }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["ihm"],
+      "2": ["ihr"],
+      "3": ["ihnen"],
+      "4": ["ihm"],
+      "5": ["ihr"],
+      "6": ["ihm"],
+      "7": ["ihr"],
+      "8": ["ihnen"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Repàs dels pronoms de datiu: ==_mir, dir, **ihm** (masc./neutre), **ihr** (fem.), uns, euch, **ihnen**/Ihnen_ (plural i cortesia)==. El pronom manté el cas del substantiu que substitueix: si era datiu, el pronom és datiu.",
+      "references": ["A1b-41", "A1b-37"]
+    },
+    "incorrect": {
+      "default": "Atenció a la ==3a persona==: masc./neut. sg → ==_ihm_== (acaba en _-m_, com _dem, einem_); fem. sg → ==_ihr_== (acaba en _-r_, com _der, einer_); plural → ==_ihnen_==. El gènere del substantiu original determina el pronom."
+    }
+  }
+}

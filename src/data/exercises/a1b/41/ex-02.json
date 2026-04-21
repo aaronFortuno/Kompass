@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-41-ex-02",
+  "topicId": "A1b-41",
+  "title": "Article o possessiu en datiu",
+  "prompt": "Completa cada frase amb l'==article o possessiu== correcte en ==**datiu**==. Recorda: **masc./neut.** → _dem/einem/meinem_, **fem.** → _der/einer/meiner_, **plural** → _den/meinen_ + _-n_ al substantiu.",
+  "difficulty": 2,
+  "tags": ["datiu", "articles", "possessius", "dropdownFill"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich komme aus {{1}} Schweiz._ (_die Schweiz_, fem.)\n\n2. _Er wohnt bei {{2}} Eltern._ (_seine Eltern_, pl.)\n\n3. _Ich fahre mit {{3}} Bus._ (_der Bus_, masc.)\n\n4. _Die Katze schläft unter {{4}} Tisch._ (_der Tisch_, masc. · Wo?)\n\n5. _Ich helfe {{5}} Frau._ (_die Frau_, fem.)\n\n6. _Das Geschenk ist von {{6}} Bruder._ (_mein Bruder_, masc.)\n\n7. _Wir danken {{7}} Lehrerin._ (_unsere Lehrerin_, fem.)\n\n8. _Das Buch gehört {{8}} Kindern._ (_die Kinder_, pl.)\n\n9. _Ich schicke {{9}} Vater eine E-Mail._ (_mein Vater_, masc.)\n\n10. _Die Blumen gefallen {{10}} Gästen._ (_die Gäste_, pl.)",
+    "blanks": [
+      { "id": "1", "label": "1. fem. sg" },
+      { "id": "2", "label": "2. poss. pl." },
+      { "id": "3", "label": "3. masc. sg" },
+      { "id": "4", "label": "4. masc. sg (Wo?)" },
+      { "id": "5", "label": "5. fem. sg" },
+      { "id": "6", "label": "6. poss. masc." },
+      { "id": "7", "label": "7. poss. fem." },
+      { "id": "8", "label": "8. pl." },
+      { "id": "9", "label": "9. poss. masc." },
+      { "id": "10", "label": "10. pl." }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["der", "die", "dem", "den"] },
+      { "blankId": "2", "options": ["seine", "seinen", "seinem", "seiner"] },
+      { "blankId": "3", "options": ["der", "den", "dem", "das"] },
+      { "blankId": "4", "options": ["der", "den", "dem", "das"] },
+      { "blankId": "5", "options": ["der", "die", "den", "dem"] },
+      { "blankId": "6", "options": ["meinem", "meinen", "meiner", "mein"] },
+      { "blankId": "7", "options": ["unsere", "unserer", "unseren", "unserem"] },
+      { "blankId": "8", "options": ["den", "dem", "der", "die"] },
+      { "blankId": "9", "options": ["meinem", "meinen", "meiner", "mein"] },
+      { "blankId": "10", "options": ["den", "dem", "der", "die"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "der",
+      "2": "seinen",
+      "3": "dem",
+      "4": "dem",
+      "5": "der",
+      "6": "meinem",
+      "7": "unserer",
+      "8": "den",
+      "9": "meinem",
+      "10": "den"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Les terminacions del datiu, en un sol cop: **masc./neut.** ==_-m_== (_dem, einem, meinem, ihm_), **fem.** ==_-r_== (_der, einer, meiner, ihr_), **plural** ==_-n_== (_den_ + substantiu amb _-n_: _den Kindern, den Frauen, den Gästen_).",
+      "references": ["A1b-41", "A1b-36"]
+    },
+    "incorrect": {
+      "default": "Repassa la taula 41.1/41.2: masc./neut. → _-m_ (_dem, meinem_); fem. → _-r_ (_der, meiner_); plural → _-n_ (_den, meinen_) + _-n_ al substantiu. _Die Schweiz_ és fem., _der Bus_ masc., _die Eltern_ plural.",
+      "byResponse": [
+        {
+          "match": { "1": "die" },
+          "message": "Després de _aus_ (preposició de datiu), _die Schweiz_ (fem.) passa a ==_**der** Schweiz_==."
+        },
+        {
+          "match": { "3": "den" },
+          "message": "Amb _mit_ (preposició fixa de datiu) i masc. sg, l'article és ==_dem_==, no _den_ (_den_ és acusatiu masc.)."
+        },
+        {
+          "match": { "5": "die" },
+          "message": "_helfen_ és ==**verb de datiu**==. Fem. sg → ==_der Frau_=="
+        },
+        {
+          "match": { "8": "die" },
+          "message": "_gehören_ demana datiu. Plural datiu → ==_den Kindern_==. _Kindern_ ja porta _-n_."
+        },
+        {
+          "match": { "2": "seine" },
+          "message": "_bei_ + plural datiu → ==_seinen Eltern_== (possessiu + _-n_ de datiu plural)."
+        }
+      ]
+    }
+  }
+}

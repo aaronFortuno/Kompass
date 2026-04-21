@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-41-ex-06",
+  "topicId": "A1b-41",
+  "title": "Troba i identifica l'error",
+  "prompt": "Cada frase conté ==**un error típic**==. Indica ==quin tipus d'error== és: cas equivocat, _-n_ plural oblidada, construcció incorrecta, ordre de pronoms, o calc del català.",
+  "difficulty": 3,
+  "tags": ["datiu", "diagnostic", "errors", "dropdownFill"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich helfe ==meinen Bruder==._ → Error: {{1}}\n\n2. _Ich spiele mit ==den Kinder==._ → Error: {{2}}\n\n3. _Ich bin ==in die Küche==._ → Error: {{3}}\n\n4. _==Ich bin kalt==._ → Error: {{4}}\n\n5. _Ich gebe ==dir es==._ → Error: {{5}}\n\n6. _Das Buch gehört ==mich==._ → Error: {{6}}",
+    "blanks": [
+      { "id": "1", "label": "1. _helfen_ + acus.?" },
+      { "id": "2", "label": "2. _mit den Kinder_" },
+      { "id": "3", "label": "3. _sein in + acus.?_" },
+      { "id": "4", "label": "4. _Ich bin kalt_" },
+      { "id": "5", "label": "5. _dir es_" },
+      { "id": "6", "label": "6. _gehören + mich_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["cas equivocat (ha de ser datiu)", "falta la -n del plural", "construcció incorrecta (calc del català)", "ordre de pronoms erroni"] },
+      { "blankId": "2", "options": ["cas equivocat (ha de ser datiu)", "falta la -n del plural", "construcció incorrecta (calc del català)", "ordre de pronoms erroni"] },
+      { "blankId": "3", "options": ["cas equivocat (ha de ser datiu)", "falta la -n del plural", "construcció incorrecta (calc del català)", "ordre de pronoms erroni"] },
+      { "blankId": "4", "options": ["cas equivocat (ha de ser datiu)", "falta la -n del plural", "construcció incorrecta (calc del català)", "ordre de pronoms erroni"] },
+      { "blankId": "5", "options": ["cas equivocat (ha de ser datiu)", "falta la -n del plural", "construcció incorrecta (calc del català)", "ordre de pronoms erroni"] },
+      { "blankId": "6", "options": ["cas equivocat (ha de ser datiu)", "falta la -n del plural", "construcció incorrecta (calc del català)", "ordre de pronoms erroni"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "cas equivocat (ha de ser datiu)",
+      "2": "falta la -n del plural",
+      "3": "cas equivocat (ha de ser datiu)",
+      "4": "construcció incorrecta (calc del català)",
+      "5": "ordre de pronoms erroni",
+      "6": "cas equivocat (ha de ser datiu)"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Els tres errors més freqüents dels catalanoparlants: (1) ==posar acusatiu amb verbs que demanen datiu== (_helfen, gehören, gefallen_), (2) ==oblidar la _-n_ plural== de datiu (_den Kindern_, no _den Kinder_), (3) ==calcar _estar a_ amb acusatiu== quan és ubicació. I dos més de bonus: **ordre de pronoms** (_es dir_, no _dir es_) i **_Ich bin kalt_** (→ _Mir ist kalt_).",
+      "references": ["A1b-41"]
+    },
+    "incorrect": {
+      "default": "Recorda les correccions: (1) _Ich helfe **meinem** Bruder_ (datiu), (2) _mit den Kinder**n**_ (_-n_ de plural), (3) _Ich bin **in der Küche**_ (Wo? datiu), (4) _**Mir ist kalt**_, (5) _Ich gebe **es dir**_ (acusatiu primer), (6) _Das Buch gehört **mir**_."
+    }
+  }
+}

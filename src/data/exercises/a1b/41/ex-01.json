@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-41-ex-01",
+  "topicId": "A1b-41",
+  "title": "Per què aquest datiu? Diagnòstic del motiu",
+  "prompt": "Per a cada frase, identifica la ==raó principal== per la qual l'element marcat està en datiu. Les sis opcions: **(a)** preposició fixa de datiu, **(b)** Wechsel amb _Wo?_, **(c)** objecte indirecte, **(d)** verb de datiu, **(e)** expressió idiomàtica.",
+  "difficulty": 2,
+  "tags": ["datiu", "diagnostic", "sintesi"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich komme ==aus der Schweiz==._ → {{1}}\n\n2. _Das Buch liegt ==auf dem Tisch==._ → {{2}}\n\n3. _Ich schenke ==meiner Mutter== Blumen._ → {{3}}\n\n4. _Das Auto gehört ==meinem Vater==._ → {{4}}\n\n5. _Es geht ==mir== gut._ → {{5}}\n\n6. _Kommst du ==mit mir==?_ → {{6}}\n\n7. _Ich helfe ==dir==._ → {{7}}\n\n8. _Das Bild hängt ==an der Wand==._ → {{8}}\n\n9. _==Mir== tut der Kopf weh._ → {{9}}\n\n10. _Ich fahre ==mit dem Bus== zur Arbeit._ → {{10}}",
+    "blanks": [
+      { "id": "1", "label": "1. _aus der Schweiz_" },
+      { "id": "2", "label": "2. _auf dem Tisch_" },
+      { "id": "3", "label": "3. _meiner Mutter_" },
+      { "id": "4", "label": "4. _meinem Vater_" },
+      { "id": "5", "label": "5. _mir_ (_es geht mir gut_)" },
+      { "id": "6", "label": "6. _mit mir_" },
+      { "id": "7", "label": "7. _dir_ (_helfen_)" },
+      { "id": "8", "label": "8. _an der Wand_" },
+      { "id": "9", "label": "9. _mir_ (_der Kopf tut weh_)" },
+      { "id": "10", "label": "10. _mit dem Bus_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["(a) prep. fixa", "(b) Wechsel + Wo?", "(c) objecte indirecte", "(d) verb de datiu", "(e) expressió idiomàtica"] },
+      { "blankId": "2", "options": ["(a) prep. fixa", "(b) Wechsel + Wo?", "(c) objecte indirecte", "(d) verb de datiu", "(e) expressió idiomàtica"] },
+      { "blankId": "3", "options": ["(a) prep. fixa", "(b) Wechsel + Wo?", "(c) objecte indirecte", "(d) verb de datiu", "(e) expressió idiomàtica"] },
+      { "blankId": "4", "options": ["(a) prep. fixa", "(b) Wechsel + Wo?", "(c) objecte indirecte", "(d) verb de datiu", "(e) expressió idiomàtica"] },
+      { "blankId": "5", "options": ["(a) prep. fixa", "(b) Wechsel + Wo?", "(c) objecte indirecte", "(d) verb de datiu", "(e) expressió idiomàtica"] },
+      { "blankId": "6", "options": ["(a) prep. fixa", "(b) Wechsel + Wo?", "(c) objecte indirecte", "(d) verb de datiu", "(e) expressió idiomàtica"] },
+      { "blankId": "7", "options": ["(a) prep. fixa", "(b) Wechsel + Wo?", "(c) objecte indirecte", "(d) verb de datiu", "(e) expressió idiomàtica"] },
+      { "blankId": "8", "options": ["(a) prep. fixa", "(b) Wechsel + Wo?", "(c) objecte indirecte", "(d) verb de datiu", "(e) expressió idiomàtica"] },
+      { "blankId": "9", "options": ["(a) prep. fixa", "(b) Wechsel + Wo?", "(c) objecte indirecte", "(d) verb de datiu", "(e) expressió idiomàtica"] },
+      { "blankId": "10", "options": ["(a) prep. fixa", "(b) Wechsel + Wo?", "(c) objecte indirecte", "(d) verb de datiu", "(e) expressió idiomàtica"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "(a) prep. fixa",
+      "2": "(b) Wechsel + Wo?",
+      "3": "(c) objecte indirecte",
+      "4": "(d) verb de datiu",
+      "5": "(e) expressió idiomàtica",
+      "6": "(a) prep. fixa",
+      "7": "(d) verb de datiu",
+      "8": "(b) Wechsel + Wo?",
+      "9": "(e) expressió idiomàtica",
+      "10": "(a) prep. fixa"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Reconèixer la raó del datiu és la meitat de la feina. Les ==cinc categories== (més la sisena, **pronom**, que s'hi superposa) cobreixen el ==100 %== dels casos d'A1b: **preposició fixa**, **Wechsel amb _Wo?_**, **objecte indirecte**, **verb de datiu**, **expressió idiomàtica**. Quan et surti una frase nova, passa-la pel filtre de les cinc preguntes.",
+      "references": ["A1b-41"]
+    },
+    "incorrect": {
+      "default": "Fes el diagnòstic en ordre: (1) ==hi ha preposició fixa== (_aus, bei, mit, nach, seit, von, zu, gegenüber_)? (2) ==Wechsel amb verb de permanència==? (3) ==verb amb dos objectes==? (4) ==verb de datiu== (_helfen, gefallen, gehören…_)? (5) ==expressió fixa== (_mir ist kalt, es geht mir gut_)?",
+      "byResponse": [
+        {
+          "match": { "7": "(c) objecte indirecte" },
+          "message": "_Ich helfe dir._ no té objecte directe: _helfen_ és un ==**verb de datiu**== (llista tancada A1b-40). Un sol complement, en datiu."
+        },
+        {
+          "match": { "4": "(c) objecte indirecte" },
+          "message": "_gehören_ no té objecte directe (cap _was?_). És un ==**verb de datiu**==: subjecte = cosa posseïda, datiu = propietari."
+        },
+        {
+          "match": { "3": "(d) verb de datiu" },
+          "message": "_schenken_ pren ==**dos complements**==: _Blumen_ (què, acusatiu) i _meiner Mutter_ (a qui, datiu). És un ==**objecte indirecte**==, no la llista de datiu."
+        },
+        {
+          "match": { "5": "(d) verb de datiu" },
+          "message": "_Es geht mir gut_ és una ==**expressió idiomàtica**==. El subjecte gramatical és _es_, no hi ha un verb de datiu pur."
+        },
+        {
+          "match": { "9": "(d) verb de datiu" },
+          "message": "_Der Kopf tut mir weh_ és una ==**locució fixa**== amb _weh tun_. La fórmula sencera és idiomàtica."
+        }
+      ]
+    }
+  }
+}
