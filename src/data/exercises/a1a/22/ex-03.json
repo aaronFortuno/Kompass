@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-22-ex-03",
+  "topicId": "A1a-22",
+  "title": "El sistema formal 24 h",
+  "prompt": "Escriu cada hora digital en forma **formal** (patró: _[hora 1–24] Uhr [minuts 0–59]_). Recorda que _Uhr_ va al mig i mai al final.",
+  "difficulty": 2,
+  "tags": ["formal", "24h", "uhr", "producció"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Es ist {{1}}._ (2:14)\n2. _Es ist {{2}}._ (13:14)\n3. _Es ist {{3}}._ (9:50)\n4. _Es ist {{4}}._ (21:50)",
+    "blanks": [
+      { "id": "1", "label": "forma formal 24 h de 2:14" },
+      { "id": "2", "label": "forma formal 24 h de 13:14" },
+      { "id": "3", "label": "forma formal 24 h de 9:50" },
+      { "id": "4", "label": "forma formal 24 h de 21:50" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "forma formal 24 h" },
+      { "blankId": "2", "placeholder": "forma formal 24 h" },
+      { "blankId": "3", "placeholder": "forma formal 24 h" },
+      { "blankId": "4", "placeholder": "forma formal 24 h" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "zwei Uhr vierzehn",
+      "2": "vierzehn Uhr vierzehn",
+      "3": "neun Uhr fünfzig",
+      "4": "einundzwanzig Uhr fünfzig"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has aplicat el patró formal: [número d'hora 1–24] + _Uhr_ + [número de minuts]. Nota la diferència entre 2:14 (_zwei Uhr..._) i 13:14 (_vierzehn Uhr..._): en informal serien iguals, en formal no. _Minuten_ al final és opcional."
+    },
+    "incorrect": {
+      "default": "El sistema formal és sempre: _hora_ (1–24) + **_Uhr_** + _minuts_ (0–59). _Uhr_ va al mig, mai al final ni absent. Per 21:50: _einundzwanzig (21) Uhr fünfzig (50)_. Recorda que els números alemanys d'un dígit i desena van al revés (_einundzwanzig_ = un-i-vint)."
+    }
+  }
+}

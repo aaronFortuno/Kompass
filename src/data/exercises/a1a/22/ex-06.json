@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-22-ex-06",
+  "topicId": "A1a-22",
+  "title": "Hores i franges del dia",
+  "prompt": "Decideix si cada afirmació sobre hores i franges del dia és certa o falsa.",
+  "difficulty": 2,
+  "tags": ["franges", "tageszeiten", "truefalse", "assessment"],
+  "stimulus": {
+    "type": "text",
+    "content": "Llegeix cada afirmació amb atenció. Recorda que les franges alemanyes del dia són sis: _Morgen_ 6–10, _Vormittag_ 10–12, _Mittag_ 12–14, _Nachmittag_ 14–18, _Abend_ 18–22, _Nacht_ 22–6."
+  },
+  "interaction": {
+    "type": "trueFalse",
+    "statements": [
+      { "id": "s1", "text": "_8:00 Uhr morgens_ i _acht Uhr morgens_ signifiquen el mateix." },
+      { "id": "s2", "text": "_halb zehn abends_ equival a les 21:30." },
+      { "id": "s3", "text": "_zwanzig Uhr_ vol dir \"les vuit del matí\" en format formal." },
+      { "id": "s4", "text": "_der Vormittag_ és la franja entre les 12 i les 14 h." },
+      { "id": "s5", "text": "_Viertel vor elf nachts_ equival a les 22:45." }
+    ]
+  },
+  "validation": {
+    "type": "truthMap",
+    "answers": {
+      "s1": true,
+      "s2": true,
+      "s3": false,
+      "s4": false,
+      "s5": true
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has integrat la lògica completa: (2) _halb zehn abends_ = 9:30 del vespre = 21:30 (8 informal = 20 formal, 9 informal = 21 formal, i _halb zehn_ = 30 minuts abans de les 10 = 21:30). (5) _Viertel vor elf_ = 22:45 perquè 11 informal nocturn = 23 formal i _vor_ resta 15 minuts → 22:45."
+    },
+    "incorrect": {
+      "default": "Revisa: (2) _halb zehn_ = 9:30; a la tarda l'hora oficial és 21:30. (3) _zwanzig Uhr_ = 20:00 = les 8 del VESPRE, no del matí (les 8 del matí són _acht Uhr morgens_ o _acht Uhr_). (4) Les franges del dia són: _Morgen_ 6–10, _Vormittag_ 10–12, _Mittag_ 12–14, _Nachmittag_ 14–18, _Abend_ 18–22, _Nacht_ 22–6. (5) _Viertel vor elf_ = 10:45; de nit és 22:45."
+    }
+  }
+}

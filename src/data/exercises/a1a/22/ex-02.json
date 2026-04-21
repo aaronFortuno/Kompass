@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-22-ex-02",
+  "topicId": "A1a-22",
+  "title": "Quarts, _vor_ i _nach_",
+  "prompt": "Associa cada hora digital amb la frase informal alemanya corresponent. Cobreix _Viertel_, _vor/nach_ i el salt conceptual a prop de :30.",
+  "difficulty": 2,
+  "tags": ["viertel", "vor", "nach", "informal", "matchpairs"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      {
+        "id": "h-10-15",
+        "group": "Hora",
+        "content": { "type": "text", "content": "**10:15**" }
+      },
+      {
+        "id": "h-10-45",
+        "group": "Hora",
+        "content": { "type": "text", "content": "**10:45**" }
+      },
+      {
+        "id": "h-10-25",
+        "group": "Hora",
+        "content": { "type": "text", "content": "**10:25**" }
+      },
+      {
+        "id": "h-10-40",
+        "group": "Hora",
+        "content": { "type": "text", "content": "**10:40**" }
+      },
+      {
+        "id": "h-10-05",
+        "group": "Hora",
+        "content": { "type": "text", "content": "**10:05**" }
+      },
+      {
+        "id": "f-fuenf-nach-zehn",
+        "group": "Frase alemanya",
+        "content": { "type": "text", "content": "_Es ist **fünf nach zehn**._" }
+      },
+      {
+        "id": "f-viertel-vor-elf",
+        "group": "Frase alemanya",
+        "content": { "type": "text", "content": "_Es ist **Viertel vor elf**._" }
+      },
+      {
+        "id": "f-viertel-nach-zehn",
+        "group": "Frase alemanya",
+        "content": { "type": "text", "content": "_Es ist **Viertel nach zehn**._" }
+      },
+      {
+        "id": "f-zwanzig-vor-elf",
+        "group": "Frase alemanya",
+        "content": { "type": "text", "content": "_Es ist **zwanzig vor elf**._" }
+      },
+      {
+        "id": "f-fuenf-vor-halb-elf",
+        "group": "Frase alemanya",
+        "content": { "type": "text", "content": "_Es ist **fünf vor halb elf**._" }
+      }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Hora digital",
+    "groupBLabel": "Frase alemanya"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["h-10-15", "f-viertel-nach-zehn"],
+      ["h-10-45", "f-viertel-vor-elf"],
+      ["h-10-25", "f-fuenf-vor-halb-elf"],
+      ["h-10-40", "f-zwanzig-vor-elf"],
+      ["h-10-05", "f-fuenf-nach-zehn"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has sabut distingir les quatre zones del rellotge informal: _nach_ (minuts 1–20), _halb_ i el seu voltant (25, 30, 35), i _vor_ (40–55). Fixa't especialment en 10:25 → _fünf vor halb elf_ (\"falten 5 per a la mitja de les 11\") i 10:40 → _zwanzig vor elf_ (\"falten 20 per les 11\")."
+    },
+    "incorrect": {
+      "default": "Recorda: _nach_ (1–20 minuts passats l'hora) i _vor_ (20 minuts abans de l'hora següent) sempre es compten des d'una hora en punt. A prop de :30, l'eix canvia a _halb_: 10:25 = \"cinc abans de mitja onze\" = _fünf vor halb elf_; 10:35 seria _fünf nach halb elf_. 10:15 = _Viertel nach zehn_, 10:45 = _Viertel vor elf_."
+    }
+  }
+}

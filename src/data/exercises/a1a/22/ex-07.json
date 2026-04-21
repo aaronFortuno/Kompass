@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-22-ex-07",
+  "topicId": "A1a-22",
+  "title": "Un dia sencer amb l'Anna",
+  "prompt": "Completa el relat del dia de l'Anna. Cada buit et dóna entre parèntesis l'hora digital i el registre que esperem (informal o formal).",
+  "difficulty": 3,
+  "tags": ["integració", "informal", "formal", "franges", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Anna hat einen langen Tag.\n\n1. {{1}} steht sie auf. _(7:00, informal + matí)_\n2. {{2}} trinkt sie einen Kaffee. _(7:30, informal)_\n3. Ihr Zug fährt um {{3}} ab. _(8:15, formal)_\n4. Sie kommt {{4}} im Büro an. _(9:45, informal)_\n5. Mittagspause: {{5}}. _(12:30, informal)_\n6. {{6}} geht sie nach Hause. _(17:50, informal + vespre)_\n7. {{7}} geht sie ins Bett. _(23:00, formal)_",
+    "blanks": [
+      { "id": "1", "label": "7:00 informal + matí" },
+      { "id": "2", "label": "7:30 informal" },
+      { "id": "3", "label": "8:15 formal" },
+      { "id": "4", "label": "9:45 informal" },
+      { "id": "5", "label": "12:30 informal" },
+      { "id": "6", "label": "17:50 informal + vespre" },
+      { "id": "7", "label": "23:00 formal" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "1",
+        "options": [
+          "Es ist sieben Uhr morgens",
+          "Es ist sieben Uhr abends",
+          "Es ist halb acht morgens",
+          "Es ist sieben Uhr nachts"
+        ]
+      },
+      {
+        "blankId": "2",
+        "options": [
+          "Es ist halb sieben",
+          "Es ist halb acht",
+          "Es ist sieben Uhr dreißig Minuten",
+          "Es ist Viertel nach sieben"
+        ]
+      },
+      {
+        "blankId": "3",
+        "options": [
+          "acht Uhr fünfzehn",
+          "acht Uhr fünfundzwanzig",
+          "Viertel nach acht",
+          "halb neun"
+        ]
+      },
+      {
+        "blankId": "4",
+        "options": [
+          "Es ist Viertel nach neun",
+          "Es ist Viertel vor zehn",
+          "Es ist neun Uhr fünfundvierzig Minuten",
+          "Es ist halb zehn"
+        ]
+      },
+      {
+        "blankId": "5",
+        "options": [
+          "Es ist halb zwölf",
+          "Es ist halb eins",
+          "Es ist zwölf Uhr dreißig",
+          "Es ist Viertel nach zwölf"
+        ]
+      },
+      {
+        "blankId": "6",
+        "options": [
+          "Es ist zehn vor sechs abends",
+          "Es ist zehn nach sechs abends",
+          "Es ist zehn vor fünf abends",
+          "Es ist halb sechs abends"
+        ]
+      },
+      {
+        "blankId": "7",
+        "options": [
+          "dreiundzwanzig Uhr",
+          "elf Uhr nachts",
+          "zwanzig Uhr",
+          "dreizehn Uhr"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Es ist sieben Uhr morgens",
+      "2": "Es ist halb acht",
+      "3": "acht Uhr fünfzehn",
+      "4": "Es ist Viertel vor zehn",
+      "5": "Es ist halb eins",
+      "6": "Es ist zehn vor sechs abends",
+      "7": "dreiundzwanzig Uhr"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Impecable. Has integrat tots els elements del tema: (1) hora en punt + franja del dia; (2) _halb + hora següent_ (7:30 = _halb acht_); (3) formal 24 h per a l'horari de tren; (4) _Viertel vor_ (9:45 = _Viertel vor zehn_); (5) _halb eins_ = 12:30 (mitja hora abans de l'1, ja que des de les 12 informal saltem a l'1); (6) _zehn vor sechs_ = 17:50 amb _abends_ per desambiguar (6 del vespre = 18h); (7) formal _dreiundzwanzig Uhr_ = 23h. Ja pots explicar un dia sencer en alemany."
+    },
+    "incorrect": {
+      "default": "Revisa: (2) 7:30 = _halb acht_ (pensa en les 8, no en les 7!); (5) 12:30 = _halb eins_ (en sistema 12h, després de les 12 tornes a comptar de l'1, no continues fins al 24); (6) 17:50 = _zehn vor sechs_ (_zehn Minuten vor 18h_, i 18h informal = 6 _abends_); (7) 23:00 formal = _dreiundzwanzig Uhr_ (23 = _dreiundzwanzig_, números al revés: tres-i-vint)."
+    }
+  }
+}

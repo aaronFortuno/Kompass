@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-22-ex-04",
+  "topicId": "A1a-22",
+  "title": "El sistema informal sencer",
+  "prompt": "Associa cada hora digital amb la seva frase informal. L'exercici cobreix hores en punt, quarts, mitja (amb el parany _halb_) i minuts amb _vor/nach_.",
+  "difficulty": 2,
+  "tags": ["informal", "halb", "viertel", "vor", "nach", "matchpairs", "assessment"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "h-8-00", "group": "Hora", "content": { "type": "text", "content": "**8:00**" } },
+      { "id": "h-8-15", "group": "Hora", "content": { "type": "text", "content": "**8:15**" } },
+      { "id": "h-8-30", "group": "Hora", "content": { "type": "text", "content": "**8:30**" } },
+      { "id": "h-8-45", "group": "Hora", "content": { "type": "text", "content": "**8:45**" } },
+      { "id": "h-8-10", "group": "Hora", "content": { "type": "text", "content": "**8:10**" } },
+      { "id": "h-8-50", "group": "Hora", "content": { "type": "text", "content": "**8:50**" } },
+      { "id": "f-acht", "group": "Frase informal", "content": { "type": "text", "content": "_Es ist **acht**._" } },
+      { "id": "f-viertel-nach-acht", "group": "Frase informal", "content": { "type": "text", "content": "_Es ist **Viertel nach acht**._" } },
+      { "id": "f-halb-neun", "group": "Frase informal", "content": { "type": "text", "content": "_Es ist **halb neun**._" } },
+      { "id": "f-viertel-vor-neun", "group": "Frase informal", "content": { "type": "text", "content": "_Es ist **Viertel vor neun**._" } },
+      { "id": "f-zehn-nach-acht", "group": "Frase informal", "content": { "type": "text", "content": "_Es ist **zehn nach acht**._" } },
+      { "id": "f-zehn-vor-neun", "group": "Frase informal", "content": { "type": "text", "content": "_Es ist **zehn vor neun**._" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Hora digital",
+    "groupBLabel": "Frase informal"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["h-8-00", "f-acht"],
+      ["h-8-15", "f-viertel-nach-acht"],
+      ["h-8-30", "f-halb-neun"],
+      ["h-8-45", "f-viertel-vor-neun"],
+      ["h-8-10", "f-zehn-nach-acht"],
+      ["h-8-50", "f-zehn-vor-neun"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Impecable. Has dominat tot el sistema informal. Fixa't especialment en 8:30 = _halb neun_ (NO _halb acht_!) i en la simetria 8:45 i 8:50: tots dos apunten a les 9, amb _vor_ (abans), però a distàncies diferents."
+    },
+    "incorrect": {
+      "default": "Revisa: 8:00 → _acht_; 8:15 → _Viertel nach acht_ (un quart passades les 8); 8:30 → _halb neun_ (mitja hora ABANS de les 9, NO de les 8!); 8:45 → _Viertel vor neun_ (un quart abans de les 9); 8:10 → _zehn nach acht_; 8:50 → _zehn vor neun_. A prop de les 9 (minuts 45–59), sempre _vor neun_."
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-22-ex-01",
+  "topicId": "A1a-22",
+  "title": "Mitges hores amb _halb_",
+  "prompt": "Tria la forma correcta amb _halb_ per a cada hora digital. Recorda: en alemany _halb + número_ significa \"falta mitja hora per arribar a aquest número\", NO \"X i mitja\".",
+  "difficulty": 2,
+  "tags": ["halb", "informal", "mitges-hores"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Es ist {{1}}._ (7:30)\n2. _Es ist {{2}}._ (14:30)\n3. _Es ist {{3}}._ (8:30)\n4. _Es ist {{4}}._ (11:30)",
+    "blanks": [
+      { "id": "1", "label": "forma amb _halb_ per a 7:30" },
+      { "id": "2", "label": "forma amb _halb_ per a 14:30" },
+      { "id": "3", "label": "forma amb _halb_ per a 8:30" },
+      { "id": "4", "label": "forma amb _halb_ per a 11:30" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["halb sieben", "halb acht", "halb neun", "halb sechs"] },
+      { "blankId": "2", "options": ["halb zwei", "halb drei", "halb vier", "halb fünf"] },
+      { "blankId": "3", "options": ["halb sieben", "halb acht", "halb neun", "halb zehn"] },
+      { "blankId": "4", "options": ["halb zehn", "halb elf", "halb zwölf", "halb eins"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "halb acht",
+      "2": "halb drei",
+      "3": "halb neun",
+      "4": "halb zwölf"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has aplicat la regla: _halb + hora següent_. 7:30 → mira al 8 → _halb acht_. 14:30 → mira al 3 (14 és equivalent informal a 2, i la següent és 3) → _halb drei_. 8:30 → _halb neun_. 11:30 → _halb zwölf_."
+    },
+    "incorrect": {
+      "default": "Recorda la regla clau: en alemany, _halb + número_ significa \"falta mitja hora per arribar a aquest número\". Així, 7:30 = _halb acht_ (no _halb sieben_!); 8:30 = _halb neun_ (no _halb acht_!). És l'oposat del sistema _les X i mitja_ del català i castellà."
+    }
+  }
+}

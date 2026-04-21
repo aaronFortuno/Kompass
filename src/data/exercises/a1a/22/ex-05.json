@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-22-ex-05",
+  "topicId": "A1a-22",
+  "title": "Conversió informal ↔ formal",
+  "prompt": "Reescriu cada hora en l'altre sistema. Quan convertiu de formal a informal, considera el matí per als casos 1–3 i 5. Manté la coherència dins d'un sol sistema per frase.",
+  "difficulty": 3,
+  "tags": ["informal", "formal", "conversió", "halb", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Informal: _Es ist halb acht._ → Formal: _Es ist {{1}}._ (matí)\n2. Formal: _Es ist vierzehn Uhr fünfzehn._ → Informal: _Es ist {{2}}._\n3. Informal: _Es ist Viertel vor neun._ → Formal: _Es ist {{3}}._ (matí)\n4. Formal: _Es ist einundzwanzig Uhr dreißig._ → Informal: _Es ist {{4}}._\n5. Informal: _Es ist zehn vor zwölf._ → Formal: _Es ist {{5}}._ (matí)",
+    "blanks": [
+      { "id": "1", "label": "forma formal de _halb acht_ (matí)" },
+      { "id": "2", "label": "forma informal de _vierzehn Uhr fünfzehn_" },
+      { "id": "3", "label": "forma formal de _Viertel vor neun_ (matí)" },
+      { "id": "4", "label": "forma informal de _einundzwanzig Uhr dreißig_" },
+      { "id": "5", "label": "forma formal de _zehn vor zwölf_ (matí)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "forma equivalent" },
+      { "blankId": "2", "placeholder": "forma equivalent" },
+      { "blankId": "3", "placeholder": "forma equivalent" },
+      { "blankId": "4", "placeholder": "forma equivalent" },
+      { "blankId": "5", "placeholder": "forma equivalent" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "sieben Uhr dreißig",
+      "2": "Viertel nach zwei",
+      "3": "acht Uhr fünfundvierzig",
+      "4": "halb zehn",
+      "5": "elf Uhr fünfzig"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Brillant. Has fet correctament les dues operacions més enganyoses: (1) _halb acht_ = 7:30 = formal _sieben Uhr dreißig_ (no _acht Uhr_!); (4) 21:30 = _halb zehn_ (mitja hora abans de les 10, i 10 informal = 22 formal). Dominar aquesta traducció mental és la prova que has entès la lògica de _halb_."
+    },
+    "incorrect": {
+      "default": "Tens dificultats amb _halb_. Recorda: _halb X_ = (X-1):30. Per tant _halb acht_ = 7:30 (**no** 8:30), i la formal és _sieben Uhr dreißig_. I a l'inrevés, 21:30 = mitja hora abans de les 10 del vespre = _halb zehn_. Per al 2: 14:15 en informal és _Viertel nach zwei_ (un quart passades les 2)."
+    }
+  }
+}
