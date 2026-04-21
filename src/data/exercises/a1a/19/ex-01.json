@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-19-ex-01",
+  "topicId": "A1a-19",
+  "title": "Conjuga _können_",
+  "prompt": "Tria la forma correcta de _können_ per a cada persona. Fixa't que _ich kann_ i _er kann_ són iguals, i que al plural torna la _ö_ de l'infinitiu.",
+  "difficulty": 1,
+  "tags": ["koennen", "conjugacio", "modal", "satzklammer"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Ich {{1}} gut Deutsch sprechen.\n2. {{2}} du Gitarre spielen?\n3. Er {{3}} heute nicht kommen.\n4. Wir {{4}} am Sonntag nach Berlin fahren.",
+    "blanks": [
+      { "id": "1", "label": "_können_, 1a sg." },
+      { "id": "2", "label": "_können_, 2a sg." },
+      { "id": "3", "label": "_können_, 3a sg." },
+      { "id": "4", "label": "_können_, 1a pl." }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["kann", "kannst", "kenne", "könne"] },
+      { "blankId": "2", "options": ["Kann", "Kannst", "Könnst", "Kannt"] },
+      { "blankId": "3", "options": ["kann", "kannt", "kannst", "könnt"] },
+      { "blankId": "4", "options": ["können", "kannen", "könnt", "kann"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "kann",
+      "2": "Kannst",
+      "3": "kann",
+      "4": "können"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has vist que _ich kann_ i _er kann_ són iguals (sense terminació!), i que al plural torna la _ö_ de l'infinitiu (_wir können_). A més, l'infinitiu (_sprechen, spielen, kommen, fahren_) sempre va al final: és la Satzklammer."
+    },
+    "incorrect": {
+      "default": "Revisa: (1) a _ich_ i _er/sie/es_, _können_ fa **kann** sense terminació; (2) _du_ fa **kannst**; (3) al plural recupera la _ö_: **wir können, ihr könnt, sie können**; (4) el segon verb (infinitiu) sempre tanca la frase."
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-19-ex-03",
+  "topicId": "A1a-19",
+  "title": "Perfils de Leo i Marta",
+  "prompt": "Completa el text sobre dos germans triant la forma correcta de _können_ o _mögen_ a cada buit. Fixa't en el patró modal: singular sense terminació.",
+  "difficulty": 2,
+  "tags": ["koennen", "moegen", "conjugacio", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Das sind Leo und Marta. Leo {{1}} gut Gitarre spielen und er {{2}} Jazz.\nSeine Schwester Marta {{3}} kein Instrument, aber sie {{4}} klassische Musik.\nIch {{5}} auch ein bisschen Klavier spielen, und ich {{6}} Rockmusik.\nUnd du? {{7}} du ein Instrument spielen? Welche Musik {{8}} du?",
+    "blanks": [
+      { "id": "1", "label": "_können_, 3a sg." },
+      { "id": "2", "label": "_mögen_, 3a sg." },
+      { "id": "3", "label": "_können_, 3a sg." },
+      { "id": "4", "label": "_mögen_, 3a sg." },
+      { "id": "5", "label": "_können_, 1a sg." },
+      { "id": "6", "label": "_mögen_, 1a sg." },
+      { "id": "7", "label": "_können_, 2a sg." },
+      { "id": "8", "label": "_mögen_, 2a sg." }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["kann", "kannt", "kannst", "können"] },
+      { "blankId": "2", "options": ["mag", "magt", "mögt", "magst"] },
+      { "blankId": "3", "options": ["kann", "könne", "kannt", "können"] },
+      { "blankId": "4", "options": ["mag", "magt", "mögt", "möge"] },
+      { "blankId": "5", "options": ["kann", "kanne", "könne", "kannst"] },
+      { "blankId": "6", "options": ["mag", "mage", "möge", "magst"] },
+      { "blankId": "7", "options": ["Kannst", "Kann", "Könnst", "Könnt"] },
+      { "blankId": "8", "options": ["magst", "Magst", "Mögst", "Mögt"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "kann",
+      "2": "mag",
+      "3": "kann",
+      "4": "mag",
+      "5": "kann",
+      "6": "mag",
+      "7": "Kannst",
+      "8": "Magst"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has vist el patró modal al complet al singular: _ich kann / er kann / ich mag / er mag_ (iguals, sense terminació), i _du kannst / du magst_ amb -st. Fixa't a més que l'infinitiu (_spielen_) sempre tanca la Satzklammer quan _können_ porta un segon verb."
+    },
+    "incorrect": {
+      "default": "Repassa el patró modal: (1) _ich_ i _er/sie/es_ no porten terminació → **kann, mag**; (2) _du_ porta -st → **kannst, magst**; (3) al singular, _können_ i _mögen_ canvien la _ö_ per _a_. No diguis mai _kanne, magt, mögst_ — són formes inexistents."
+    }
+  }
+}

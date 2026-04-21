@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-19-ex-05",
+  "topicId": "A1a-19",
+  "title": "Plans de cap de setmana: Satzklammer",
+  "prompt": "Completa les frases amb la forma correcta del modal (_können_ o _möchte_) i l'infinitiu al final de la frase. Recorda: verb modal a la posició 2, infinitiu tancant la Satzklammer.",
+  "difficulty": 2,
+  "tags": ["satzklammer", "koennen", "moechte", "infinitiu", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Am Wochenende möchte ich viele Sachen machen.\nAm Samstag {{1}} ich mit meinem Bruder Tennis {{2}}.\nAm Abend {{3}} wir einen Film im Kino {{4}}.\nAm Sonntag {{5}} meine Schwester nicht {{6}} — sie ist krank.\nAber ich {{7}} mit meinen Eltern ein bisschen {{8}}.",
+    "blanks": [
+      { "id": "1", "label": "_können_, 1a sg." },
+      { "id": "2", "label": "infinitiu \"jugar\"" },
+      { "id": "3", "label": "_möchte_, 1a pl." },
+      { "id": "4", "label": "infinitiu \"veure\"" },
+      { "id": "5", "label": "_können_, 3a sg." },
+      { "id": "6", "label": "infinitiu \"venir\"" },
+      { "id": "7", "label": "_möchte_, 1a sg." },
+      { "id": "8", "label": "infinitiu \"parlar\"" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["kann", "kannst", "können", "könnt"] },
+      { "blankId": "2", "options": ["spielen", "spielt", "spielst", "gespielt"] },
+      { "blankId": "3", "options": ["möchte", "möchten", "möchtest", "möchtet"] },
+      { "blankId": "4", "options": ["sehen", "siehst", "sieht", "gesehen"] },
+      { "blankId": "5", "options": ["kann", "kannst", "können", "könnt"] },
+      { "blankId": "6", "options": ["kommen", "kommt", "kommst", "gekommen"] },
+      { "blankId": "7", "options": ["möchte", "möchten", "möchtest", "möchtet"] },
+      { "blankId": "8", "options": ["sprechen", "spricht", "sprichst", "gesprochen"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "kann",
+      "2": "spielen",
+      "3": "möchten",
+      "4": "sehen",
+      "5": "kann",
+      "6": "kommen",
+      "7": "möchte",
+      "8": "sprechen"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Impecable. Has construït quatre Satzklammer perfectes: verb modal conjugat a la posició 2 (_kann, möchten, kann, möchte_) i infinitiu al final de la frase (_spielen, sehen, kommen, sprechen_). Aquesta és l'estructura que trobaràs en gairebé totes les frases amb modals."
+    },
+    "incorrect": {
+      "default": "Recorda dues coses alhora: (1) el modal es conjuga (_ich kann, wir möchten_…); (2) el segon verb sempre va a l'infinitiu (forma del diccionari, acabat en -en) al final de la frase, no conjugat. Mai _Ich kann spiele_ ni _Wir möchten sehen einen Film_."
+    }
+  }
+}

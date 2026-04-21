@@ -1,0 +1,316 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-19",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 19,
+  "title": "'können' i 'mögen'",
+  "shortTitle": "können i mögen",
+  "description": "Els dos primers verbs modals de l'A1: _können_ (poder/saber) i _mögen_ (agradar), amb la forma derivada _möchte_ (voldria). Conjugació modal especial al singular i Satzklammer amb infinitiu al final.",
+  "axes": ["pronoms-verbs"],
+  "prerequisites": ["A1a-3"],
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Context i motivació\n\nFins ara has vist verbs **plens**, és a dir, verbs que expressen una acció per si sols: _wohnen_ (viure), _arbeiten_ (treballar), _lesen_ (llegir), _fahren_ (anar en vehicle). Cadascun té el seu significat i pot ocupar tot sol el lloc de verb a la frase.\n\nEn aquest tema coneixeràs els teus **dos primers ==verbs modals==** (_Modalverben_): **==können==** (poder, saber) i **==mögen==** (agradar). Els verbs modals són una família especial que **matisen** un altre verb: no diuen _què_ fas, sinó _com_ ho fas (amb capacitat, amb gust, amb obligació…). Més endavant, a **A1a-26**, veuràs la família completa (_wollen, sollen, müssen, dürfen_). Aquí ens centrem en dos, els més freqüents i els més útils per parlar de tu mateix."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Per què \"modal\"?",
+          "body": "Perquè expressen un **mode** o actitud del parlant respecte a l'acció: _Ich spiele Gitarre_ (toco la guitarra, fet) vs. _Ich **kann** Gitarre spielen_ (**sé/puc** tocar la guitarra, capacitat)."
+        },
+        {
+          "type": "explanation",
+          "body": "Els verbs modals tenen **tres característiques** que els fan diferents de tot el que has vist fins ara:\n\n- **Conjugació especial al singular.** La 1a i la 3a persona (_ich_, _er/sie/es_) **són iguals** i **no porten terminació**. És un patró que ja no trobaràs enlloc més del Präsens.\n- **Sovint acompanyen un segon verb en infinitiu.** Quan això passa, l'infinitiu **va al final de la frase**, formant la famosa **==Satzklammer==** (abraçadora verbal) que ja vas treballar al tema **A1a-18**.\n- **Significat matisador.** No substitueixen el verb principal: l'acompanyen.\n\nUna particularitat només de **_mögen_**: a més del sentit general \"agradar\", té una forma derivada, **==möchte==** (\"voldria / m'agradaria\"), que aprendràs a distingir clarament. No són el mateix i confondre-les és un dels errors més típics dels estudiants catalanoparlants."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Atenció a la traducció",
+          "body": "En català, _können_ es tradueix de vegades per \"poder\" i de vegades per \"saber\", segons el context. En castellà passa el mateix: _poder_ vs. _saber_. I _mögen_ s'assembla al \"gustar\" castellà (\"me gusta\"), amb una construcció que trenca la intuïció catalana. En veurem els paranys a mesura que avancem."
+        }
+      ]
+    },
+    {
+      "id": "koennen-meaning",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Què vol dir **_können_**\n\n**_können_** és el verb modal que expressa **possibilitat** o **capacitat**. Cobreix dos matisos que en català es reparteixen entre **poder** i **saber**:\n\n- **Capacitat apresa** (tens l'habilitat): **_Ich kann Deutsch._** → \"==Sé== alemany.\" (No \"puc alemany\".)\n- **Capacitat física o permís** (és possible en aquest moment): **_Ich kann heute kommen._** → \"==Puc== venir avui.\""
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Contrast ES / CA / DE",
+          "body": "En **castellà** hi ha dos verbs: _saber_ (habilitat) vs. _poder_ (possibilitat).\n> _**Sé** hablar alemán._ / _**Puedo** venir hoy._\n\nEn **català** passa igual: _saber_ vs. _poder_.\n> _**Sé** parlar alemany._ / _**Puc** venir avui._\n\nEn **alemany**, en canvi, **_können_ cobreix tots dos casos**.\n> _Ich **kann** Deutsch sprechen._ (= sé + puc, segons context)"
+        },
+        {
+          "type": "explanation",
+          "body": "Aquesta és una de les causes d'error més habituals: un estudiant catalanoparlant tendeix a buscar un \"saber\" alemany (_wissen_) quan parla d'habilitats. **No ho facis.** Per a habilitats (idiomes, instruments, esports…) es fa servir _können_. _wissen_ es reserva per a \"saber informació\" (\"sé que plou\", \"sé la resposta\"), no \"saber fer alguna cosa\".\n\n> _Ich **weiß**, dass er kommt._ (Sé que ve.) → _wissen_, informació.\n> _Ich **kann** Gitarre spielen._ (Sé tocar la guitarra.) → _können_, habilitat."
+        }
+      ]
+    },
+    {
+      "id": "koennen-conjugation",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Conjugació de **_können_**\n\nAquí ve la sorpresa. El verb _können_ **no es conjuga com un verb regular normal**. Té dues particularitats:\n\n- **A _ich_ i _er/sie/es_ no hi ha cap terminació.** Són iguals: **kann**.\n- **La vocal de l'arrel canvia al singular**: l'infinitiu té **ö**, però el singular (ich/du/er) fa **a**. Al plural (wir/ihr/sie) torna la **ö** de l'infinitiu."
+        },
+        {
+          "type": "table",
+          "title": "Conjugació de _können_ (poder, saber)",
+          "headers": ["Persona", "Forma", "Nota"],
+          "rows": [
+            ["ich", "**k==a==nn**", "sense -e; vocal ö → a"],
+            ["du", "**k==a==nnst**", ""],
+            ["er/sie/es", "**k==a==nn**", "sense -t; igual que _ich_"],
+            ["wir", "**k==ö==nnen**", "recupera la ö de l'infinitiu"],
+            ["ihr", "**k==ö==nnt**", ""],
+            ["sie / Sie", "**k==ö==nnen**", ""]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Fixa-t'hi bé: **_ich kann_** i **_er kann_** són idèntics. No és una falta: és el patró normal dels modals. Al tema **A1a-26** veuràs que **tota la família modal fa el mateix** (_ich will = er will_, _ich muss = er muss_…)."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Ja he vist abans dues persones iguals?",
+          "body": "Sí, al tema A1a-15 vas veure que amb verbs com _essen_ o _lesen_ les formes de _du_ i _er_ coincideixen (_du isst = er isst_) per una regla ortogràfica. Aquí el parell que coincideix és diferent: **_ich_ i _er/sie/es_**, i no és ortografia, és morfologia modal."
+        },
+        {
+          "type": "explanation",
+          "body": "Exemples amb _können_ sol, sense segon verb:\n\n> _**Ich kann Deutsch.**_ (Sé alemany.)\n> _**Kannst du Englisch?**_ (Saps anglès?)\n> _**Er kann gut Gitarre.**_ (Toca bé la guitarra.)\n\nSovint, però, _können_ va **amb un segon verb** (_spielen, sprechen, kommen_…). Això ens porta a la Satzklammer."
+        }
+      ]
+    },
+    {
+      "id": "satzklammer",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### **_können_** + infinitiu: la Satzklammer\n\nQuan _können_ s'acompanya d'un altre verb, l'alemany aplica una regla que ja vas tocar al tema **A1a-18**: el verb conjugat (_kann, kannst_…) ocupa la **==posició 2==** de la frase, i el segon verb **va a l'infinitiu i salta al final**. Els dos verbs formen una **==Satzklammer==** (literalment, \"abraçadora de frase\") que encaixona tot el que hi ha al mig."
+        },
+        {
+          "type": "table",
+          "title": "Satzklammer amb _können_ + infinitiu",
+          "headers": ["Vorfeld", "Verb 1 (pos. 2)", "Mittelfeld", "Verb 2 (final)"],
+          "rows": [
+            ["Ich", "**kann**", "gut Gitarre", "**spielen**"],
+            ["Du", "**kannst**", "sehr gut Deutsch", "**sprechen**"],
+            ["Wir", "**können**", "am Wochenende nach Berlin", "**fahren**"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Tradueix la primera: \"Puc / sé tocar bé la guitarra.\" La lògica visual és: _kann_ obre la \"abraçadora\" a la posició 2; _spielen_ la tanca al final. Tot el que passa al mig (complements, adverbis, objectes) queda **dins** de l'abraçadora."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Per què aquest ordre?",
+          "body": "És una de les senyes d'identitat de l'alemany. El parlant diu aviat **qui fa què** (_ich kann_ = \"jo puc/sé…\") però **reserva el verb ple per al final**, com una mena de \"suspens gramatical\". Per això l'oient alemany està acostumat a escoltar fins a l'últim moment per saber de què va la cosa."
+        },
+        {
+          "type": "explanation",
+          "body": "Tres exemples més, amb complements variats:\n\n> _**Du kannst sehr gut Deutsch sprechen.**_ (Saps parlar molt bé alemany.)\n> _**Er kann morgen nicht kommen.**_ (No pot venir demà.)\n> _**Wir können am Samstag ins Kino gehen.**_ (Podem anar al cine dissabte.)\n\nEn tots tres, el verb modal (_kannst, kann, können_) és el segon element de la frase, i l'infinitiu (_sprechen, kommen, gehen_) tanca."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "I si la frase és una pregunta?",
+          "body": "Llavors, com vas veure a A1a-18, el Verb 1 salta al principi (posició 1), però el Verb 2 es queda igualment al final:\n> _**Kannst** du morgen **kommen**?_ (Pots venir demà?)"
+        }
+      ]
+    },
+    {
+      "id": "check-koennen",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-19-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "moegen-meaning",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Què vol dir **_mögen_**\n\n**_mögen_** expressa **agrado** o **preferència**. Es tradueix pel català **\"agradar\"** i pel castellà **\"gustar\"**, però amb una diferència estructural important que cal entendre bé."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Contrast CA / ES / DE",
+          "body": "En **català** i en **castellà**, \"agradar\" i \"gustar\" són verbs que funcionen **a l'inrevés** del subjecte habitual: la persona que gaudeix apareix en **complement indirecte**, i la cosa que agrada és el **subjecte**.\n> **M'**agraden les pel·lícules de terror. (_les pel·lícules_ = subjecte; _em_ = a qui agrada)\n> **Me** gustan las películas de terror.\n\nEn **alemany**, _mögen_ **no funciona així**. La persona que gaudeix és el **subjecte** normal (el \"jo\"), i la cosa que agrada és el **complement directe** (en acusatiu).\n> **Ich mag Horrorfilme.** (literalment: \"Jo agrado pel·lícules de terror\" — i sí, sona estrany traduït, però és exactament l'estructura alemanya.)"
+        },
+        {
+          "type": "explanation",
+          "body": "Memoritza-ho així: amb _mögen_, **el subjecte és qui gaudeix**, no la cosa gaudida. Aquesta lògica és més propera a l'anglès _I like_ que no pas al català _m'agrada_.\n\n> _**Ich mag Schokolade.**_ (M'agrada la xocolata. / Jo gaudeixo xocolata.)\n> _**Magst du Kaffee?**_ (T'agrada el cafè?)\n> _**Sabine mag Horrorfilme.**_ (A la Sabine li agraden les pel·lícules de terror.)\n\nA més, com que _mögen_ és un **verb transitiu** (necessita un complement directe), aquest complement va en **==acusatiu==**. Al tema **A1a-14** vas començar a veure la idea de declinació i cas; al tema **A1a-28** treballaràs l'acusatiu a fons. Per ara, amb noms sense article o amb articles que canvien poc (_Schokolade, Kaffee, Musik, Horrorfilme_) no notaràs gaires canvis morfològics."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Atenció",
+          "body": "_mögen_ fa servir l'estructura d'acusatiu tant si hi ha article com si no. No hi ha \"a\" com en castellà (\"a mí me gusta\"). És simplement: **subjecte + mag/magst/… + complement directe**."
+        }
+      ]
+    },
+    {
+      "id": "moegen-conjugation",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Conjugació de **_mögen_**\n\n_mögen_ segueix **exactament el mateix patró modal** que _können_: la 1a i la 3a persona del singular són iguals i no porten terminació, i hi ha canvi vocàlic al singular."
+        },
+        {
+          "type": "table",
+          "title": "Conjugació de _mögen_ (agradar)",
+          "headers": ["Persona", "Forma", "Nota"],
+          "rows": [
+            ["ich", "**m==a==g**", "sense -e; vocal ö → a"],
+            ["du", "**m==a==gst**", ""],
+            ["er/sie/es", "**m==a==g**", "sense -t; igual que _ich_"],
+            ["wir", "**m==ö==gen**", "recupera la ö de l'infinitiu"],
+            ["ihr", "**m==ö==gt**", ""],
+            ["sie / Sie", "**m==ö==gen**", ""]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Observa el paral·lelisme amb _können_: singular amb **a**, plural amb **ö**. És el mateix esquelet. Si memoritzes un patró, l'altre et surt gairebé sol.\n\nExemples:\n\n> _**Ich mag Tee.**_ (M'agrada el te.)\n> _**Magst du Jazz?**_ (T'agrada el jazz?)\n> _**Meine Eltern mögen Italien.**_ (Als meus pares els agrada Itàlia.)"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "_mögen_ + infinitiu? Normalment no",
+          "body": "A diferència de _können_, _mögen_ sol aparèixer **sol**, sense un segon verb. Diem \"m'agrada X\" (una cosa), no \"m'agrada fer X\" amb _mögen_. Si vols dir \"m'agrada fer alguna cosa\", a l'A1 s'aprèn una altra construcció: **_verb + gern_** (temes **A1a-16** i **A1a-17**).\n\n> _Ich spiele **gern** Fußball._ (M'agrada jugar a futbol.) — estructura amb _gern_\n> _Ich **mag** Fußball._ (M'agrada el futbol.) — estructura amb _mögen_ + complement\n\nCom que _mögen_ normalment no du infinitiu darrere, **sovint no hi ha Satzklammer**."
+        }
+      ]
+    },
+    {
+      "id": "moechte",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### **_möchte_**: \"m'agradaria / voldria\"\n\nAquí arriba una de les parts més útils de tot l'A1. **==möchte==** és una forma derivada de _mögen_ (tècnicament, és el subjuntiu II del verb, però això és vocabulari d'A2/B1 que no cal que recordis ara). El que sí que has de saber és **què significa** i **com es conjuga**.\n\n> **Significat.** _möchte_ = **\"voldria / m'agradaria\"**. Serveix per expressar desitjos de manera **educada**, especialment en botigues, restaurants, cafeteries i conversa quotidiana.\n\n> _mögen (present)_ → **mag** = \"m'agrada\" _(gust estable, afirmació)_\n> _möchten_ → **möchte** = \"voldria / m'agradaria\" _(desig puntual, educació)_"
+        },
+        {
+          "type": "table",
+          "title": "Conjugació de _möchte_ (voldria, m'agradaria)",
+          "headers": ["Persona", "Forma", "Nota"],
+          "rows": [
+            ["ich", "**möcht==e==**", "amb -e (a diferència de _mag_)"],
+            ["du", "**möcht==est==**", ""],
+            ["er/sie/es", "**möcht==e==**", "igual que _ich_"],
+            ["wir", "**möcht==en==**", ""],
+            ["ihr", "**möcht==et==**", ""],
+            ["sie / Sie", "**möcht==en==**", ""]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Fixa't que _ich möchte_ i _er möchte_ tornen a ser iguals (patró modal). La diferència amb _mag_ és que _möchte_ **sí que porta una -e** a la primera i tercera persona del singular. És un detall, però important per no confondre les formes.\n\n_möchte_ s'usa de dues maneres:\n\n**1. Amb un complement directe** (vull una cosa):\n\n> _**Ich möchte einen Kaffee, bitte.**_ (Voldria un cafè, si us plau.)\n> _**Möchtest du ein Stück Kuchen?**_ (Voldries un tall de pastís?)\n\n**2. Amb un infinitiu** (vull fer una cosa) — i aquí **sí que hi ha Satzklammer**:"
+        },
+        {
+          "type": "table",
+          "title": "Satzklammer amb _möchte_ + infinitiu",
+          "headers": ["Vorfeld", "Verb 1 (pos. 2)", "Mittelfeld", "Verb 2 (final)"],
+          "rows": [
+            ["Ich", "**möchte**", "nach Berlin", "**fahren**"],
+            ["Wir", "**möchten**", "einen Film", "**sehen**"],
+            ["Ich", "**möchte**", "Deutsch", "**lernen**"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Regla d'or",
+          "body": "Si vols dir \"**m'agrada**\" (gust habitual), fes servir **_mögen_** (_ich mag_). Si vols dir \"**voldria / m'agradaria**\" (desig concret, educat), fes servir **_möchte_** (_ich möchte_). Sonen semblants però fan feines diferents."
+        }
+      ]
+    },
+    {
+      "id": "check-moegen-moechte",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-19-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals\n\n**1. Posar terminació a _ich_ o _er/sie/es_ amb _können_ o _mögen_.**\nL'error més freqüent quan es comencen els modals: conjugar-los com si fossin regulars.\n\n> Incorrecte: _**Ich kanne Deutsch**_ / _**Er magt Schokolade**_ / _**Ich könne spielen**_.\n> Correcte: _**Ich kann Deutsch**_ / _**Er mag Schokolade**_ / _**Ich kann spielen**_.\n\nRecorda: _ich kann = er kann_, _ich mag = er mag_. Sense terminació, iguals.\n\n**2. Oblidar el canvi vocàlic al singular.**\nEl singular de _können_ fa **a** (no ö), i el de _mögen_ també fa **a** (no ö). És una de les poques peces que has de memoritzar de debò.\n\n> Incorrecte: _**Ich könn Deutsch**_ / _**Du möchst Kaffee**_ (confonent _magst_ i _möchtest_).\n> Correcte: _**Ich kann Deutsch**_ / _**Du magst Kaffee**_ (_mögen_) / _**Du möchtest Kaffee**_ (_möchte_).\n\n**3. Posar l'infinitiu al mig de la frase, no al final.**\nUna tendència molt catalana: dir _Ich kann sprechen Deutsch_ (calcant \"Puc parlar alemany\"). **No.** L'infinitiu tanca la Satzklammer.\n\n> Incorrecte: _**Ich kann sprechen Deutsch**_ / _**Er kann kommen morgen nicht**_.\n> Correcte: _**Ich kann Deutsch sprechen**_ / _**Er kann morgen nicht kommen**_.\n\n**4. Confondre _mag_ i _möchte_.**\nSón parents, però expressen coses diferents.\n\n> _Ich mag Kaffee._ = **Normalment em ve de gust el cafè.** (gust general)\n> _Ich möchte (einen) Kaffee._ = **Ara voldria un cafè.** (desig puntual, educat)\n\nSi al restaurant dius _Ich mag einen Kaffee_, el cambrer et miraria estrany: estàs dient \"m'agrada un cafè\" en un sentit filosòfic. El que vols és _Ich möchte einen Kaffee, bitte_.\n\n**5. Fer servir _wissen_ per a habilitats.**\nCalc del català/castellà: traduir \"sé parlar alemany\" per _Ich weiß Deutsch sprechen_. **Mai.**\n\n> Incorrecte: _**Ich weiß Gitarre spielen**_ / _**Weißt du Englisch?**_.\n> Correcte: _**Ich kann Gitarre spielen**_ / _**Kannst du Englisch?**_.\n\n_wissen_ = saber un fet, una informació. _können_ = saber fer, tenir l'habilitat.\n\n**6. Estructura de _mögen_ com si fos _agradar_ català.**\nTemptació: traduir \"m'agrada la música\" per _mir mag Musik_ (calcant \"a mi m'agrada\") o per _die Musik mag mich_. **No.** En alemany el subjecte és qui gaudeix.\n\n> Incorrecte: _**Mir mag Musik**_ / _**Die Musik mag mir**_.\n> Correcte: _**Ich mag Musik.**_ (literalment: \"Jo agrado música\".)\n\n**7. Fer servir _mögen_ amb infinitiu per dir \"m'agrada fer…\".**\nL'alemany col·loquial evita _Ich mag spielen_. Per a \"m'agrada jugar\", es fa servir **_verb + gern_** (tema A1a-16/17) o **_möchte_** si és un desig puntual.\n\n> Poc natural / dubtós: _**Ich mag Fußball spielen.**_\n> Natural: _**Ich spiele gern Fußball.**_ (M'agrada jugar a futbol, afició.)\n> Natural: _**Ich möchte Fußball spielen.**_ (Voldria jugar a futbol, ara.)"
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Els tres errors crítics",
+          "body": "(1) Mai posis -e o -t a _ich kann_, _er kann_, _ich mag_, _er mag_. (2) Mai usis _wissen_ per a habilitats (idiomes, instruments). (3) Mai posis l'infinitiu al mig: sempre al final de la frase, tancant la Satzklammer."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-19-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-19-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-19-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-19-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi del tema\n\nEls dos primers verbs modals de l'A1 (_können_ i _mögen_) comparteixen patró de conjugació: **singular sense terminació a _ich_ i _er/sie/es_** (_kann, mag_), **canvi vocàlic ö → a al singular** i recuperació de la _ö_ al plural (_können, mögen_).\n\n- **_können_** expressa possibilitat i habilitat (cobreix \"poder\" i \"saber\" del català; _wissen_ es reserva per a informació, no per a habilitats).\n- **_mögen_** expressa gust estable amb el subjecte-gaudidor a l'alemanya (_Ich mag Schokolade_).\n- **_möchte_** (derivat de _mögen_) expressa desig puntual i cortesia (_Ich möchte einen Kaffee_).\n\nQuan el modal acompanya un segon verb, aquest va a l'**infinitiu al final** de la frase, formant la **Satzklammer** ja vista a A1a-18. La família completa de modals (_wollen, sollen, müssen, dürfen_) s'integrarà al tema **A1a-26**."
+        },
+        {
+          "type": "table",
+          "title": "19.1 Les tres formes en un cop d'ull",
+          "headers": ["Forma", "Significat", "Exemple", "Satzklammer?"],
+          "rows": [
+            ["**_können_** (_kann, kannst_…)", "poder / saber fer (habilitat, possibilitat)", "_Ich **kann** Gitarre **spielen**._", "Sí, si hi ha 2n verb"],
+            ["**_mögen_** (_mag, magst_…)", "agradar (gust estable)", "_Ich **mag** Schokolade._", "Normalment no"],
+            ["**_möchte_** (_möchte, möchtest_…)", "voldria / m'agradaria (desig educat)", "_Ich **möchte** Deutsch **lernen**._", "Sí, si hi ha 2n verb"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "19.2 Paradigma comparat (_können_ / _mögen_ / _möchte_)",
+          "headers": ["Persona", "können", "mögen", "möchte"],
+          "rows": [
+            ["ich", "**kann**", "**mag**", "**möchte**"],
+            ["du", "**kannst**", "**magst**", "**möchtest**"],
+            ["er/sie/es", "**kann**", "**mag**", "**möchte**"],
+            ["wir", "**können**", "**mögen**", "**möchten**"],
+            ["ihr", "**könnt**", "**mögt**", "**möchtet**"],
+            ["sie / Sie", "**können**", "**mögen**", "**möchten**"]
+          ],
+          "caption": "Patró modal compartit: 1a i 3a pers. sing. iguals i sense terminació en _können_ i _mögen_; canvi vocàlic ö → a al singular."
+        }
+      ]
+    }
+  ]
+}

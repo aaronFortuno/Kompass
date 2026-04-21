@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-19-ex-02",
+  "topicId": "A1a-19",
+  "title": "_mögen_ o _möchte_?",
+  "prompt": "Escriu la forma verbal correcta. Decideix si és un **gust estable** (_mögen_: _mag, magst, mögen_…) o un **desig puntual / educat** (_möchte_: _möchte, möchtest, möchten_…).",
+  "difficulty": 2,
+  "tags": ["moegen", "moechte", "conjugacio", "typein"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Anna {{1}} klassische Musik. Sie hört jeden Tag Mozart.\n2. Im Café: — Ich {{2}} bitte einen Tee. — Sofort!\n3. {{3}} du Schokolade oder Vanille?\n4. Wir {{4}} am Wochenende ins Kino gehen.",
+    "blanks": [
+      { "id": "1", "label": "_mögen_, 3a sg. — gust estable" },
+      { "id": "2", "label": "_möchte_, 1a sg. — desig puntual" },
+      { "id": "3", "label": "_mögen_, 2a sg. — gust general" },
+      { "id": "4", "label": "_möchte_, 1a pl. — pla/desig" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "forma verbal" },
+      { "blankId": "2", "placeholder": "forma verbal" },
+      { "blankId": "3", "placeholder": "forma verbal" },
+      { "blankId": "4", "placeholder": "forma verbal" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "mag",
+      "2": "möchte",
+      "3": "Magst",
+      "4": "möchten"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has capturat la diferència: _mögen_ (**mag, magst**) per al gust de sempre; _möchte_ (**möchte, möchten**) per a un desig concret, sovint en situacions educades (botiga, restaurant) o plans puntuals."
+    },
+    "incorrect": {
+      "default": "Pistes: (1) _Anna escolta Mozart cada dia_ = gust estable → **mag**; (2) _al café, demanant un te_ = desig puntual educat → **möchte**; (3) preferència entre sabors = _mögen_ → **Magst**; (4) pla per al cap de setmana = desig → **möchten**. _mögen_ sense -e al singular; _möchte_ amb -e."
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-19-ex-06",
+  "topicId": "A1a-19",
+  "title": "Perfil per a una app d'intercanvi lingüístic",
+  "prompt": "Completa el perfil personal de Tom integrant _können_ (habilitat), _mögen_ (gust estable) i _möchte_ (desig puntual). Respecta la Satzklammer quan hi hagi un segon verb.",
+  "difficulty": 3,
+  "tags": ["koennen", "moegen", "moechte", "satzklammer", "assessment", "globalitzador"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Hallo! Ich heiße Tom und ich {{1}} Französisch und Italienisch.\nIn meiner Freizeit {{2}} ich gern Bücher.\nIch {{3}} besonders Krimis.\nIch {{4}} jetzt Deutsch {{5}}.\nUnd du? {{6}} du auch ein bisschen Deutsch?\nWelche Bücher {{7}} du?\n{{8}} du mit mir auf Deutsch {{9}}?",
+    "blanks": [
+      { "id": "1", "label": "_können_, 1a sg. — \"sé\"" },
+      { "id": "2", "label": "_lesen_, 1a sg." },
+      { "id": "3", "label": "_mögen_, 1a sg. — gust" },
+      { "id": "4", "label": "_möchte_, 1a sg." },
+      { "id": "5", "label": "infinitiu \"aprendre\"" },
+      { "id": "6", "label": "_können_, 2a sg. — \"saps\"" },
+      { "id": "7", "label": "_mögen_, 2a sg." },
+      { "id": "8", "label": "_möchte_, 2a sg." },
+      { "id": "9", "label": "infinitiu \"parlar\"" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["kann", "kenne", "mag", "möchte"] },
+      { "blankId": "2", "options": ["lese", "liest", "lest", "lesen"] },
+      { "blankId": "3", "options": ["mag", "möchte", "magst", "möchtest"] },
+      { "blankId": "4", "options": ["mag", "möchte", "kann", "will"] },
+      { "blankId": "5", "options": ["lerne", "lernen", "lernst", "lernt"] },
+      { "blankId": "6", "options": ["Kannst", "Magst", "Möchtest", "Weißt"] },
+      { "blankId": "7", "options": ["magst", "Magst", "möchtest", "Möchtest"] },
+      { "blankId": "8", "options": ["Kannst", "Magst", "Möchtest", "Willst"] },
+      { "blankId": "9", "options": ["sprechen", "spricht", "sprichst", "gesprochen"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "kann",
+      "2": "lese",
+      "3": "mag",
+      "4": "möchte",
+      "5": "lernen",
+      "6": "Kannst",
+      "7": "Magst",
+      "8": "Möchtest",
+      "9": "sprechen"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Felicitats. Tens el quadre complet: **_können_** per a habilitats (_ich kann Französisch, kannst du Deutsch_), **_mögen_** per a gustos (_ich mag Krimis, magst du_), **_möchte_** per a desitjos puntuals i educats (_ich möchte Deutsch lernen, möchtest du sprechen_). I la Satzklammer tanca sempre amb infinitiu al final (_lernen, sprechen_)."
+    },
+    "incorrect": {
+      "default": "Tres preguntes clau per triar: (1) **És una habilitat o una possibilitat?** → _können_ (_kann, kannst_). (2) **És un gust estable?** → _mögen_ (_mag, magst_). (3) **És un desig puntual, una petició educada, un pla?** → _möchte_ (_möchte, möchtest_). I si hi ha un segon verb, va a l'infinitiu i al final de la frase."
+    }
+  }
+}

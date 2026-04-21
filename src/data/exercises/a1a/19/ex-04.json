@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-19-ex-04",
+  "topicId": "A1a-19",
+  "title": "Al bar de l'estació",
+  "prompt": "Completa el diàleg al bar d'una estació triant _mögen_ o _möchte_ segons la intenció: **gust estable** vs. **desig puntual / cortesia**.",
+  "difficulty": 2,
+  "tags": ["moegen", "moechte", "dialog", "cortesia", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "— Guten Tag. Was {{1}} Sie trinken?\n— Ich {{2}} einen Kaffee, bitte. Und meine Freundin {{3}} einen Tee.\n— Sehr gern. {{4}} Sie auch etwas essen?\n— Nein, danke. Ich {{5}} keinen Kuchen heute.\n— Und du, Anna? {{6}} du ein Stück Kuchen?\n— Ja, gern. Ich {{7}} Schokoladenkuchen sehr.",
+    "blanks": [
+      { "id": "1", "label": "cambrer: desig — _möchte_, _Sie_" },
+      { "id": "2", "label": "desig puntual — _möchte_, 1a sg." },
+      { "id": "3", "label": "desig puntual — _möchte_, 3a sg." },
+      { "id": "4", "label": "cambrer: desig — _möchte_, _Sie_" },
+      { "id": "5", "label": "gust general (rebuig) — _mögen_, 1a sg." },
+      { "id": "6", "label": "desig puntual — _möchte_, 2a sg." },
+      { "id": "7", "label": "gust estable — _mögen_, 1a sg." }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["mögen", "möchten", "mag", "möchte"] },
+      { "blankId": "2", "options": ["mag", "möchte", "magst", "möchtest"] },
+      { "blankId": "3", "options": ["mag", "möchte", "mögen", "möchten"] },
+      { "blankId": "4", "options": ["Mögen", "Möchten", "Mag", "Möchte"] },
+      { "blankId": "5", "options": ["mag", "möchte", "magst", "möchtest"] },
+      { "blankId": "6", "options": ["Magst", "Möchtest", "Mag", "Möchte"] },
+      { "blankId": "7", "options": ["mag", "möchte", "magst", "möchtest"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "möchten",
+      "2": "möchte",
+      "3": "möchte",
+      "4": "Möchten",
+      "5": "mag",
+      "6": "Möchtest",
+      "7": "mag"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has separat amb claredat les dues funcions: **_möchte_** per demanar o oferir en un moment concret (desig puntual, cortesia), i **_mögen_** per parlar del que t'agrada o no com a preferència general (_Ich mag keinen Kuchen heute_ = no em ve de gust com a gust; _Ich mag Schokoladenkuchen sehr_ = m'agrada molt)."
+    },
+    "incorrect": {
+      "default": "Regla de tria: si pots substituir per _voldria / m'agradaria_ → **möchte**. Si pots substituir per _m'agrada (habitualment)_ → **mag**. Al bar i al restaurant, gairebé sempre és **möchte** (_Ich möchte einen Kaffee_); per parlar de gustos estables, és **mag** (_Ich mag Schokolade_)."
+    }
+  }
+}
