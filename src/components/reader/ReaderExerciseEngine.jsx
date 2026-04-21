@@ -330,7 +330,7 @@ function SingleChoiceRenderer({ exercise, response, onAnswer, revealed, onSubmit
 
 // —————— Engine principal ——————
 
-export function ReaderExerciseEngine({ exercise }) {
+export function ReaderExerciseEngine({ exercise, peek = false }) {
   const { t } = useT();
   const recordExerciseAttempt = useProgressStore((s) => s.recordExerciseAttempt);
 
@@ -534,7 +534,7 @@ export function ReaderExerciseEngine({ exercise }) {
           onAnswer={setBlankResponse}
           revealed={revealed}
           onSubmit={submit}
-          focusFirstInput={!revealed}
+          focusFirstInput={!peek && !revealed}
         />
       ) : currentItem.kind === 'statement' ? (
         <StatementRenderer

@@ -486,7 +486,7 @@ function SynTableBeat({ beat, tableAnim }) {
   );
 }
 
-function ExerciseBeatCard({ beat, stepIdx, onFinish }) {
+function ExerciseBeatCard({ beat, stepIdx, onFinish, peek = false }) {
   const { t } = useT();
   const exercise = useMemo(() => getExercise(beat.exerciseId), [beat.exerciseId]);
   if (!exercise) {
@@ -520,7 +520,7 @@ function ExerciseBeatCard({ beat, stepIdx, onFinish }) {
           </span>
           <h3 className="kf-ex-title">{exercise.title}</h3>
         </div>
-        <ReaderExerciseEngine exercise={exercise} />
+        <ReaderExerciseEngine exercise={exercise} peek={peek} />
       </div>
     </div>
   );
@@ -714,11 +714,17 @@ function BeatStagePeek({
         else role = 'next-far';
 
         const isCurrent = role === 'current';
+        // `inert` desactiva focus, clic i tab a tots els descendants del
+        // peek no-current. Així evitem que els inputs/selects dels beats
+        // d'exercici al peek-far agafin focus accidentalment (per ex.
+        // l'auto-focus del ReaderExerciseEngine), cosa que disparava un
+        // scroll cap a un element a 110vh i trencava el layout.
+        const peekProps = isCurrent ? {} : { inert: '' };
         return (
           <div
             key={`s${entry.stepIdx}-b${entry.beatIdx}`}
             className={`kf-peek kf-peek-${role}`}
-            aria-hidden={!isCurrent}
+            {...peekProps}
           >
             <BeatBody
               beat={entry.beat}
@@ -728,6 +734,7 @@ function BeatStagePeek({
               settings={settings}
               speed={speed}
               fastMode={isCurrent ? fastMode : true}
+              isCurrent={isCurrent}
             />
           </div>
         );
@@ -745,6 +752,7 @@ function BeatBody({
   speed,
   onFinishExercise,
   fastMode,
+  isCurrent = true,
 }) {
   if (!beat) return null;
 
@@ -785,7 +793,12 @@ function BeatBody({
       return <SynTableBeat beat={beat} tableAnim={tableAnim} />;
     case 'exercise':
       return (
-        <ExerciseBeatCard beat={beat} stepIdx={stepIdx} onFinish={onFinishExercise} />
+        <ExerciseBeatCard
+          beat={beat}
+          stepIdx={stepIdx}
+          onFinish={onFinishExercise}
+          peek={!isCurrent}
+        />
       );
     default:
       return null;
