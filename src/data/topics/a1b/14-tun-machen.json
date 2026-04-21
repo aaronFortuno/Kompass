@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-14",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 14,
+  "title": "Die Verben _tun_ und _machen_: dos \"fer\" que no són intercanviables",
+  "shortTitle": "tun/machen",
+  "description": "Els dos verbs alemanys que cobreixen el català _fer_: _machen_ (per defecte, ampli) i _tun_ (restringit, sobretot en _weh tun_).",
+  "axes": ["pronoms-verbs", "expressions-i-funcions"],
+  "prerequisites": ["A1a-7"],
+  "estimatedMinutes": 10,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Dos verbs, una trampa discreta\n\nEn català tenim un sol verb general per a l'acció inespecífica: **fer**. _Fer els deures, fer una pregunta, fer mal, fer un cafè, què fas?…_ tot és _fer_. En alemany, en canvi, l'espai semàntic d'aquest \"fer\" genèric es reparteix entre **dos verbs**: ==**machen**== i ==**tun**==.\n\nEl problema és que, a primera vista, semblen sinònims. Un diccionari bilingüe et dirà que tots dos signifiquen \"fer\" i ho deixarà aquí. Però un parlant natiu **no els usa indistintament**. _Machen_ és el verb de totes les feines; _tun_ és un verb més restringit, que viu sobretot en **expressions fixes** i en usos idiomàtics."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Paral·lel útil amb l'anglès",
+          "body": "_Machen_ ≈ _to make_ (produir, crear, dur a terme); _tun_ ≈ _to do_ (actuar, efectuar). Però el paral·lel no és perfecte: l'alemany tira molt més cap a _machen_ del que l'anglès tira cap a _make_."
+        },
+        {
+          "type": "explanation",
+          "body": "Objectius d'aquesta lliçó:\n\n1. **Conjugar _tun_** al present (és **irregular** i cal memoritzar-lo).\n2. **Triar** _machen_ o _tun_ segons el context, sense caure en la traducció literal des del català.\n3. Reconèixer les **expressions fixes amb _tun_** més habituals al nivell A1 (sobretot _weh tun_)."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Temps estimat: 8-10 minuts",
+          "body": "Lliçó curta però subtil: la dificultat no és de forma, sinó de tria lèxica."
+        }
+      ]
+    },
+    {
+      "id": "conjugacio-tun",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Conjugar _tun_: un verb curt i irregular\n\n_Machen_ ja el coneixes des d'A1a-7: és regular, sense sorpreses (_ich mache, du machst, er macht…_). _Tun_, en canvi, té la particularitat de ser **molt curt** (només dues lletres a l'arrel: _tu-_) i presenta algunes formes que no encaixen amb el patró dels regulars."
+        },
+        {
+          "type": "table",
+          "title": "14.1 Conjugació de ==_tun_== al present",
+          "headers": ["Persona", "Forma"],
+          "rows": [
+            ["ich", "**tue**"],
+            ["du", "**tust**"],
+            ["er/sie/es", "**tut**"],
+            ["wir", "**tun**"],
+            ["ihr", "**tut**"],
+            ["sie/Sie", "**tun**"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Dos detalls a observar",
+          "body": "(1) La forma d'infinitiu i les de _wir_/_sie_/_Sie_ acaben en **-n** sol, no en _-en_ (perquè l'arrel ja acaba en vocal). (2) _er/sie/es_ i _ihr_ comparteixen la mateixa forma **tut** (com passa amb molts verbs regulars, però aquí sense _-e-_ de suport)."
+        },
+        {
+          "type": "table",
+          "title": "14.2 Comparació _tun_ vs _machen_ (A1a-7)",
+          "headers": ["Persona", "_tun_", "_machen_"],
+          "rows": [
+            ["ich", "tue", "mache"],
+            ["du", "tust", "machst"],
+            ["er/sie/es", "tut", "macht"],
+            ["wir", "tun", "machen"],
+            ["ihr", "tut", "macht"],
+            ["sie/Sie", "tun", "machen"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Formalment, doncs, no és un verb difícil: és curt i regular en aparença. **La dificultat real ve de saber _quan_ fer-lo servir**, que és el que ve a continuació."
+        }
+      ]
+    },
+    {
+      "id": "machen-per-defecte",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### _Machen_: el \"fer\" de cada dia\n\nLa regla operativa és senzilla: **si dubtes, tria _machen_**. En el 90% dels casos on un catalanoparlant diria _fer_, l'alemany fa servir _machen_."
+        },
+        {
+          "type": "table",
+          "title": "14.3 Usos típics de _machen_",
+          "headers": ["Significat / context", "Exemple"],
+          "rows": [
+            ["Fer una feina, una tasca", "_Ich **mache** die Hausaufgaben._ (faig els deures)"],
+            ["Preparar menjar/beguda", "_Er **macht** einen Kaffee._ (fa un cafè)"],
+            ["Produir, crear, fabricar", "_Sie **macht** ein Foto._ (fa una foto)"],
+            ["Causar (soroll, bullici, problemes)", "_Das Kind **macht** Lärm._ (el nen fa soroll)"],
+            ["Activitats genèriques (\"què fas?\")", "_Was **machst** du?_ (què fas?)"],
+            ["Esports, activitats d'oci", "_Ich **mache** Sport._ (faig esport)"],
+            ["Càlculs, resultats", "_Das **macht** zehn Euro._ (això fa/són 10 €)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "_Was machst du?_, el bàsic absolut",
+          "body": "Tant si vol dir \"què fas (ara mateix)?\", \"a què et dediques?\" o \"què fas a la vida?\", es diu sempre amb _machen_, no amb _tun_."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Frase feta útil",
+          "body": "_Das macht nichts._ — \"No passa res / No hi fa res.\" És resposta típica quan algú es disculpa."
+        }
+      ]
+    },
+    {
+      "id": "tun-quan",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### _Tun_: usos restringits i expressions fixes\n\n_Tun_ no s'usa lliurement com _machen_. Viu sobretot en tres espais.\n\n**1. En expressions fixes amb parts del cos + dolor: _weh tun_** (fer mal).\n\nAquesta és la més important al nivell A1. La construcció és:\n\n> ==**[subjecte que fa mal] + tut/tun + weh**== (\"_[x] fa mal_\")\n\n- _Mein Fuß **tut weh**._ — Em fa mal el peu. (literalment: \"el meu peu fa mal\")\n- _Meine Augen **tun weh**._ — Em fan mal els ulls.\n- _Der Kopf **tut** mir **weh**._ — Em fa mal el cap."
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Atenció: català \"em fa mal\" ≠ alemany \"macht weh\"",
+          "body": "==No es diu mai _\"Mein Fuß **macht** weh\"_==. Aquí _machen_ no funciona. És _tun_ o res."
+        },
+        {
+          "type": "explanation",
+          "body": "**2. En la pregunta general \"què fas/fa?\"**, com a **variant sinònima** de _machen_:\n\n- _Was **machst** du?_ = _Was **tust** du?_ — \"Què fas?\"\n\nTotes dues són correctes, però _Was machst du?_ és la forma neutra i més freqüent en la llengua estàndard quotidiana. _Was tust du?_ sona més formal o emfàtic.\n\n**3. En expressions idiomàtiques heretades** (les aniràs trobant en nivells més alts): _jemandem Leid tun_ (\"saber greu a algú\"), _so tun als ob…_ (\"fer com si…\"), etc. Al nivell A1 no te les demanarem productivament, però ja les veuràs en textos."
+        }
+      ]
+    },
+    {
+      "id": "dolors-plural",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Un detall important: _Ich habe Schmerzen_\n\nQuan es vol dir que **una part del cos fa mal**, l'alemany té dues construccions que conviuen.\n\n**Opció A — amb _tun weh_** (la que acabem de veure):\n\n- _Mein Fuß **tut weh**._ — Em fa mal el peu.\n- _Meine Zähne **tun weh**._ — Em fan mal les dents.\n\n**Opció B — amb el substantiu ==_Schmerzen_== (dolors), sempre en plural:**\n\n- _Ich **habe Schmerzen**._ — Tinc dolor / em fa mal.\n- _Ich **habe Kopfschmerzen**._ — Em fa mal el cap. (literalment: \"tinc dolors-de-cap\")\n- _Ich **habe Zahnschmerzen**._ — Em fan mal les dents.\n- _Ich **habe Bauchschmerzen**._ — Em fa mal la panxa."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "_Schmerzen_ sempre en plural",
+          "body": "==_Schmerzen_== sempre va **en plural**, encara que el dolor sigui a un sol lloc. No hi ha _\"ein Schmerz\"_ en l'ús habitual. _Ich habe Kopfschmerz_ (singular) sona malament; sempre _Kopfschmerzen_."
+        },
+        {
+          "type": "explanation",
+          "body": "**Quina opció triar?** Totes dues són correctes i freqüents. L'opció B (amb _Schmerzen_) és lleugerament més típica quan es descriu un malestar com a estat; l'opció A (amb _weh tun_) és més directa i quotidiana, especialment quan es localitza el dolor en una part concreta del cos."
+        }
+      ]
+    },
+    {
+      "id": "check-tun-conjug",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-14-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys típics\n\n**1. Dir _\"Mein Fuß macht weh\"_.** — És l'error més clàssic per calc del català (_em fa mal_) o de l'anglès (_makes me hurt_). ==En alemany, l'expressió de dolor amb parts del cos s'articula sempre amb _tun_, no amb _machen_==.\n- Incorrecte: _Mein Fuß **macht** weh._\n- Correcte: _Mein Fuß **tut** weh._\n\n**2. Posar _Schmerz_ en singular.** — El substantiu _Schmerz_ pràcticament sempre apareix en **plural** quan parlem de mal físic quotidià.\n- Incorrecte: _Ich habe **Kopfschmerz**._\n- Correcte: _Ich habe **Kopfschmerzen**._\n\n**3. Traduir _fer_ automàticament per _tun_.** — El català _fer_ equival a _machen_ en la immensa majoria de casos. _Tun_ és l'excepció, no la regla. Si dubtes, posa _machen_.\n- Incorrecte: _Ich **tue** die Hausaufgaben._ (sona raro)\n- Correcte: _Ich **mache** die Hausaufgaben._\n\n**4. Conjugar _tun_ com un regular normal.** — L'arrel és _tu-_ (acaba en vocal), per tant les formes plurals són **tun** (no _\"tuen\"_), i _ich_ fa **tue** (no _\"tu\"_). Tingues present la petita irregularitat.\n- Incorrecte: _Wir **tuen** das._ / _Ich **tu** das._\n- Correcte: _Wir **tun** das._ / _Ich **tue** das._\n\n**5. Confondre _Was machst du?_ i _Was tust du?_** — Totes dues són gramaticalment correctes, però **la versió neutra i freqüent és _Was machst du?_**. _Was tust du?_ sona més formal, emfàtic o fins i tot retret (\"què estàs fent, exactament?\"). Per defecte, usa _machen_."
+        }
+      ]
+    },
+    {
+      "id": "check-tria",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-14-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-14-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-14-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-14-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-14-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Recapitulem\n\n**El que t'emportes d'aquesta lliçó:**\n\n1. El català _fer_ es reparteix en alemany entre **dos verbs**: _machen_ (per defecte, ampli) i _tun_ (restringit, en expressions fixes).\n2. ==_**Machen**_== cobreix el 90% dels casos: feines, preparacions, activitats, esports, _Was machst du?_, _Das macht nichts_.\n3. ==_**Tun**_== s'usa sobretot a l'expressió **_weh tun_** (\"fer mal\") i com a variant més formal de _machen_ a _Was tust du?_. Fora d'això, al nivell A1, apareix poc en producció.\n4. _Tun_ té conjugació una mica especial: _ich **tue**, du **tust**, er/sie/es **tut**, wir **tun**, ihr **tut**, sie/Sie **tun**_. Els plurals acaben en _-n_ sol (no _-en_), perquè l'arrel ja és una vocal.\n5. Alternativa productiva al _weh tun_: la construcció _==Ich habe [part-del-cos]schmerzen==_ (sempre plural). Les dues estructures coexisteixen."
+        },
+        {
+          "type": "table",
+          "title": "14.4 Taula de tria ràpida",
+          "headers": ["Vols dir…", "Usa"],
+          "rows": [
+            ["Fer una feina, tasca, activitat", "==_**machen**_== (_die Hausaufgaben machen_)"],
+            ["Preparar, produir, crear", "==_**machen**_== (_einen Kaffee machen_, _ein Foto machen_)"],
+            ["Què fas? (neutre)", "==_**machen**_== (_Was machst du?_)"],
+            ["Fer mal (part del cos)", "==_**tun**_== + _weh_ (_Mein Kopf tut weh_)"],
+            ["Tinc dolor de [part]", "_Ich habe [part]**schmerzen**_ (plural)"],
+            ["Fer esport, música, excursions", "==_**machen**_== (_Sport/Musik/Ausflüge machen_)"],
+            ["_No passa res / no hi fa res_", "_Das **macht** nichts._"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Connexions amb altres lliçons:**\n\n- Es recolza en **A1a-7** (conjugació al present de _machen_ i dels regulars).\n- Amplia el lèxic útil per al tema de **salut i parts del cos** (_Kopf, Fuß, Bauch, Rücken, Zahn, Auge, Hand_), que és un dels blocs lèxics forts d'A1b.\n- Contrast amb el català: és un bon exemple de com **no sempre una paraula nostra equival a una sola paraula alemanya**. La mateixa cosa passa amb _saber/conèixer → wissen/kennen_ (A1b) o _anar → gehen/fahren_ (A1a-19)."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Repte final",
+          "body": "Durant un dia sencer, cada cop que diguis o pensis \"faig…\" en català, prova de traduir-ho mentalment a l'alemany. _Faig un cafè → Ich mache einen Kaffee. Em fa mal el cap → Mein Kopf tut weh / Ich habe Kopfschmerzen. Què faig? → Was mache ich?_ El 95% serà _machen_; descobreix l'altre 5%."
+        },
+        {
+          "type": "explanation",
+          "body": "Ara ja saps que, entre dos \"fer\", n'hi ha un per a quasi tot i un altre per a (quasi) només una cosa: fer mal. _Was machst du jetzt? Du machst weiter mit A1b-15 — und wenn der Kopf weh tut, machst du eine Pause!_"
+        }
+      ]
+    }
+  ]
+}

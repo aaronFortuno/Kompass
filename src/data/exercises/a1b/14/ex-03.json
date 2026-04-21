@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-14-ex-03",
+  "topicId": "A1b-14",
+  "title": "Conjuga _tun_ per a totes les persones",
+  "prompt": "Completa cada frase amb la forma correcta de _tun_ al present.",
+  "difficulty": 2,
+  "tags": ["conjugacio", "present", "tun", "paradigma"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) _Ich {{1}} das gern._ (jo ho faig amb gust)\nb) _Was {{2}} du da?_ (què fas aquí?)\nc) _Mein Rücken {{3}} weh._ (em fa mal l'esquena)\nd) _Wir {{4}} nichts._ (no fem res)\ne) _Meine Füße {{5}} weh._ (em fan mal els peus)",
+    "blanks": [
+      { "id": "1", "label": "ich + tun" },
+      { "id": "2", "label": "du + tun" },
+      { "id": "3", "label": "er + tun" },
+      { "id": "4", "label": "wir + tun" },
+      { "id": "5", "label": "sie (pl) + tun" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "forma per a _ich_" },
+      { "blankId": "2", "placeholder": "forma per a _du_" },
+      { "blankId": "3", "placeholder": "forma per a _er/sie/es_" },
+      { "blankId": "4", "placeholder": "forma per a _wir_" },
+      { "blankId": "5", "placeholder": "forma per a _sie_ (pl)" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["tue"],
+      "2": ["tust"],
+      "3": ["tut"],
+      "4": ["tun"],
+      "5": ["tun"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has interioritzat el paradigma: _ich tue, du tust, er/sie/es tut, wir tun, ihr tut, sie/Sie tun_.",
+      "references": ["A1b-14"]
+    },
+    "incorrect": {
+      "default": "Paradigma de _tun_: _ich **tue**, du **tust**, er/sie/es **tut**, wir **tun**, ihr **tut**, sie/Sie **tun**_. _Mein Rücken_ i _Meine Füße_ demanen 3a persona (sg → _tut_, pl → _tun_)."
+    }
+  }
+}

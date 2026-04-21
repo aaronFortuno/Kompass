@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-14-ex-02",
+  "topicId": "A1b-14",
+  "title": "Tria entre _machen_ i _tun_ (dolor)",
+  "prompt": "Quina frase és la correcta per dir \"Em fan mal els ulls\"?",
+  "difficulty": 1,
+  "tags": ["weh-tun", "machen-vs-tun", "dolor"],
+  "stimulus": {
+    "type": "text",
+    "content": "\"Em fan mal els ulls\" en alemany:"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "a", "label": "Meine Augen machen weh." },
+      { "id": "b", "label": "Meine Augen tun weh." },
+      { "id": "c", "label": "Meine Augen haben weh." },
+      { "id": "d", "label": "Meine Augen sind weh." }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "b" },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. L'expressió fixa per a \"fer mal\" és sempre _weh tun_, mai _weh machen_. Com que _Augen_ és plural, va amb _tun_ (no _tut_).",
+      "references": ["A1b-14"]
+    },
+    "incorrect": {
+      "default": "L'estructura fixa és _[part del cos] + tun + weh_. Aquí: _Meine Augen **tun** weh_. Alternativa equivalent: _Ich habe Augenschmerzen_.",
+      "byResponse": [
+        {
+          "match": { "answer": "a" },
+          "message": "Calc del català _fer mal_. En alemany, el dolor es diu amb **_tun_**, no amb _machen_. El correcte és _Meine Augen **tun** weh_."
+        },
+        {
+          "match": { "answer": "c" },
+          "message": "_haben weh_ no és una construcció vàlida. L'estructura correcta és _[part del cos] + tun + weh_, o bé _Ich habe [part]schmerzen_."
+        },
+        {
+          "match": { "answer": "d" },
+          "message": "_sind weh_ tampoc no funciona. El verb fix per al dolor és _tun_: _Meine Augen **tun** weh_."
+        }
+      ]
+    }
+  }
+}

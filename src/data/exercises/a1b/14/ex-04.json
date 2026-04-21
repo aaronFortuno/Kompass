@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-14-ex-04",
+  "topicId": "A1b-14",
+  "title": "Tria _machen_ o _tun_ segons el context",
+  "prompt": "Per a cada frase, tria el verb correcte (_machen_ o _tun_) i conjuga'l en la forma adequada.",
+  "difficulty": 2,
+  "tags": ["machen-vs-tun", "conjugacio", "tria"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) _Ich {{1}} einen Kaffee für dich._ (preparar)\nb) _Mein Zahn {{2}} weh._ (fa mal)\nc) _Was {{3}} du am Wochenende?_ (què fas?)\nd) _Sie {{4}} Sport jeden Tag._ (fa esport cada dia)\ne) _Meine Hände {{5}} weh._ (em fan mal les mans)",
+    "blanks": [
+      { "id": "1", "label": "ich + preparar" },
+      { "id": "2", "label": "er + fer mal" },
+      { "id": "3", "label": "du + què fas?" },
+      { "id": "4", "label": "sie (sg) + esport" },
+      { "id": "5", "label": "sie (pl) + fer mal" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "verb conjugat" },
+      { "blankId": "2", "placeholder": "verb conjugat" },
+      { "blankId": "3", "placeholder": "verb conjugat" },
+      { "blankId": "4", "placeholder": "verb conjugat" },
+      { "blankId": "5", "placeholder": "verb conjugat" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["mache"],
+      "2": ["tut"],
+      "3": ["machst"],
+      "4": ["macht"],
+      "5": ["tun"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. La regla d'or funciona: per defecte _machen_; _tun_ només per a _weh tun_ i casos fixos.",
+      "references": ["A1b-14", "A1a-7"]
+    },
+    "incorrect": {
+      "default": "Per a activitats, preparació, esport o \"què fas?\", el verb és _machen_ (_ich **mache**, du **machst**, sie **macht**_). Per a dolor amb parts del cos, sempre _tun_ (_tut_ singular / _tun_ plural). _Machen weh_ no existeix."
+    }
+  }
+}

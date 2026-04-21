@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-14-ex-05",
+  "topicId": "A1b-14",
+  "title": "Reformula _weh tun_ ↔ _Schmerzen haben_",
+  "prompt": "Reescriu cada frase amb l'estructura alternativa. Si està amb _weh tun_, passa-la a _Schmerzen haben_; si està amb _Schmerzen_, passa-la a _weh tun_.",
+  "difficulty": 2,
+  "tags": ["weh-tun", "schmerzen", "reformulacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) _Mein Kopf tut weh._ → _Ich habe {{1}}._\nb) _Ich habe Bauchschmerzen._ → _Mein Bauch {{2}}._\nc) _Meine Zähne tun weh._ → _Ich habe {{3}}._\nd) _Ich habe Rückenschmerzen._ → _Mein Rücken {{4}}._",
+    "blanks": [
+      { "id": "1", "label": "substantiu de dolor" },
+      { "id": "2", "label": "_tut weh_ / _tun weh_" },
+      { "id": "3", "label": "substantiu de dolor" },
+      { "id": "4", "label": "_tut weh_ / _tun weh_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Kopf + Schmerzen" },
+      { "blankId": "2", "placeholder": "verb + weh" },
+      { "blankId": "3", "placeholder": "Zahn + Schmerzen" },
+      { "blankId": "4", "placeholder": "verb + weh" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Kopfschmerzen"],
+      "2": ["tut weh"],
+      "3": ["Zahnschmerzen"],
+      "4": ["tut weh"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Domines les dues construccions equivalents: _[part del cos] + tut/tun + weh_ ↔ _Ich habe [part-del-cos]schmerzen_.",
+      "references": ["A1b-14"]
+    },
+    "incorrect": {
+      "default": "El substantiu composat es forma amb _[part] + Schmerzen_ sempre en plural (_Kopfschmerzen_, _Zahnschmerzen_). Per al _weh tun_, _Mein Bauch_ i _Mein Rücken_ són singulars → _tut weh_."
+    }
+  }
+}

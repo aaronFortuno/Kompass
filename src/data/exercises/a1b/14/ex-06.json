@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-14-ex-06",
+  "topicId": "A1b-14",
+  "title": "Corregeix _machen weh_ → _tun weh_",
+  "prompt": "Cada frase conté un error en la tria del verb (_machen_ enlloc de _tun_). Reescriu-la correctament, conservant la resta de la frase.",
+  "difficulty": 3,
+  "tags": ["correccio", "weh-tun", "machen-weh-error"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) Error: _Mein Fuß **macht** weh._ → Correcte: {{1}}\nb) Error: _Meine Augen **machen** weh._ → Correcte: {{2}}\nc) Error: _Der Bauch **macht** ihm weh._ → Correcte: {{3}}",
+    "blanks": [
+      { "id": "1", "label": "frase corregida" },
+      { "id": "2", "label": "frase corregida" },
+      { "id": "3", "label": "frase corregida" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Mein Fuß … weh." },
+      { "blankId": "2", "placeholder": "Meine Augen … weh." },
+      { "blankId": "3", "placeholder": "Der Bauch … ihm weh." }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Mein Fuß tut weh.", "Mein Fuß tut weh"],
+      "2": ["Meine Augen tun weh.", "Meine Augen tun weh"],
+      "3": ["Der Bauch tut ihm weh.", "Der Bauch tut ihm weh"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. La construcció _weh tun_ no admet _machen_. Sempre _tun_, conjugat segons el subjecte (_tut_ singular / _tun_ plural).",
+      "references": ["A1b-14"]
+    },
+    "incorrect": {
+      "default": "Substitueix _machen_ per _tun_ i respecta la concordança de nombre: _Fuß_ (sg) → _tut_; _Augen_ (pl) → _tun_; _Bauch_ (sg) → _tut_. Escriu la frase sencera amb punt final."
+    }
+  }
+}

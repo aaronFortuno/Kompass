@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-14-ex-01",
+  "topicId": "A1b-14",
+  "title": "Conjuga _tun_ al present",
+  "prompt": "Completa la frase: _Mein Kopf ___ weh._ (\"Em fa mal el cap.\") Tria la forma correcta de _tun_.",
+  "difficulty": 1,
+  "tags": ["conjugacio", "present", "tun", "weh-tun"],
+  "stimulus": {
+    "type": "text",
+    "content": "_Mein Kopf ___ weh._"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "a", "label": "tue" },
+      { "id": "b", "label": "tust" },
+      { "id": "c", "label": "tut" },
+      { "id": "d", "label": "tun" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "c" },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. _Mein Kopf_ és 3a persona del singular (_er/sie/es_), i la forma corresponent de _tun_ és **tut**. Construcció fixa: _[part del cos] + tut + weh_.",
+      "references": ["A1b-14"]
+    },
+    "incorrect": {
+      "default": "_Mein Kopf_ és 3a persona singular → _tut_. Construcció: _[part del cos] + tut/tun + weh_.",
+      "byResponse": [
+        {
+          "match": { "answer": "a" },
+          "message": "_tue_ és la forma d'_ich_ (jo). Aquí el subjecte és _Mein Kopf_ (el meu cap, ell), no jo. La forma correcta és _tut_."
+        },
+        {
+          "match": { "answer": "b" },
+          "message": "_tust_ és la forma de _du_ (tu). El subjecte aquí és _Mein Kopf_ (3a persona), que vol _tut_."
+        },
+        {
+          "match": { "answer": "d" },
+          "message": "_tun_ és per a _wir_, _sie_, _Sie_ (plurals). _Mein Kopf_ és singular, per tant _tut_."
+        }
+      ]
+    }
+  }
+}
