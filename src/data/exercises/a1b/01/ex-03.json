@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-1-ex-03",
+  "topicId": "A1b-1",
+  "title": "in, an o auf: tria segons el tipus de lloc",
+  "prompt": "Completa amb *in*, *an* o *auf*.",
+  "difficulty": 2,
+  "tags": ["in-an-auf", "tipus-de-lloc"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1) Wir machen Urlaub {{1}} Rügen. (illa)\n2) Die Kinder spielen {{2}} dem Marienplatz.\n3) Meine Tante wohnt {{3}} der Schweiz.\n4) Das Restaurant liegt {{4}} der Nordsee.",
+    "blanks": [
+      { "id": "1", "label": "illa" },
+      { "id": "2", "label": "plaça oberta" },
+      { "id": "3", "label": "país amb article" },
+      { "id": "4", "label": "vora de mar" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["in", "an", "auf"] },
+      { "blankId": "2", "options": ["in", "an", "auf"] },
+      { "blankId": "3", "options": ["in", "an", "auf"] },
+      { "blankId": "4", "options": ["in", "an", "auf"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "auf", "2": "auf", "3": "in", "4": "an" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte: illa → *auf*, plaça → *auf*, país amb article → *in der*, vora d'aigua → *an der*."
+    },
+    "incorrect": {
+      "default": "Revisa: illes i places obertes = **auf**; països/regions = **in**; vores de mar/riu = **an**.",
+      "byResponse": [
+        {
+          "match": { "1": "in" },
+          "message": "Rügen és una **illa** → *auf Rügen*. Per a illes, sempre *auf*."
+        },
+        {
+          "match": { "2": "in" },
+          "message": "El Marienplatz és una **plaça oberta** → *auf dem Marienplatz*."
+        },
+        {
+          "match": { "3": "auf" },
+          "message": "Suïssa és un **país amb article** (die Schweiz) → *in der Schweiz*."
+        },
+        {
+          "match": { "4": "in" },
+          "message": "La Nordsee és una **vora d'aigua** → *an der Nordsee* (es diu estar *a la vora*, no dins)."
+        }
+      ]
+    }
+  }
+}

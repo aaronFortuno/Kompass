@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-1",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 1,
+  "title": "Lokale Präpositionen — preposicions locals (Wo?)",
+  "shortTitle": "Lokale Präpositionen",
+  "description": "Preposicions d'ubicació (in, an, auf, neben, in der Nähe von) responent a Wo? amb datiu.",
+  "axes": ["preposicions", "casos"],
+  "prerequisites": ["A1a-34"],
+  "estimatedMinutes": 15,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Preposicions locals: \"on ets?\"\n\nBenvingut a **A1b**. Aquesta primera lliçó amplia el que vas veure a A1a-34 (preposicions que sempre demanen datiu) cap a un ús molt concret: **indicar ubicació**, és a dir, respondre a la pregunta alemanya **==Wo?==** (\"on?\").\n\nAvui aprendràs les preposicions **==in==**, **==an==**, **==auf==**, **==neben==** i la locució **==in der Nähe von==**. Totes, quan responen a *Wo?*, van amb **datiu**.\n\n> Temps estimat: 10-15 minuts. Al final faràs 4 exercicis globals."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Nota important: Wechselpräpositionen",
+          "body": "*in*, *an* i *auf* són de fet **Wechselpräpositionen** (preposicions \"commutadores\"): poden anar amb datiu o acusatiu segons el significat. Aquí només veurem el cas **estàtic** (on és quelcom). La dinàmica (cap on va) es treballarà a **A1b-19**. De moment: si preguntem *Wo?* → **datiu**."
+        }
+      ]
+    },
+    {
+      "id": "articles-dativ",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Repàs llampec: articles en datiu\n\nAbans de res, recorda les formes del datiu (les vas veure a A1a-34)."
+        },
+        {
+          "type": "table",
+          "title": "Articles en datiu",
+          "headers": ["", "Maskulin", "Femenin", "Neutrum", "Plural"],
+          "rows": [
+            ["**Determinat**", "dem", "der", "dem", "den (+ -n al substantiu)"],
+            ["**Indeterminat**", "einem", "einer", "einem", "—"],
+            ["**Negatiu (kein-)**", "keinem", "keiner", "keinem", "keinen"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Els possessius (*mein-, dein-, sein-, ihr-, unser-, euer-, Ihr-*) es declinen com l'article indeterminat: *meinem, meiner, meinem, meinen*.\n\n**Contraccions molt freqüents** (obligatòries en la pràctica):\n\n- **an + dem → am** → *am Strand* (a la platja)\n- **in + dem → im** → *im Internet* (a Internet), *im Kino*"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Truc",
+          "body": "Si veus *am* o *im*, saps que dins hi ha un **dem** (masculí o neutre datiu)."
+        }
+      ]
+    },
+    {
+      "id": "wann-in-an-auf",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Quan fem servir *in*, *an* o *auf*?\n\nAquesta és la part que desconcerta el catalanoparlant: nosaltres diem *a* gairebé sempre (*a Berlín, a la platja, a l'illa*). L'alemany distingeix tres situacions:\n\n**==in== — \"dins de / a l'interior\"**\nPer edificis, ciutats, països, regions, muntanyes, paisatges:\n- *==in== der Schule* (a l'escola)\n- *==in== Deutschland* (a Alemanya)\n- *==in== der Schweiz* (a Suïssa — amb article!)\n- *==in== den Alpen* (als Alps — plural)\n\n**==auf== — \"sobre / en una superfície o espai obert\"**\nPer illes, edificis públics, places obertes:\n- *==auf== Rügen* (a l'illa de Rügen)\n- *==auf== dem Marienplatz* (a la plaça Marienplatz)\n- *==auf== dem Bahnhof* (a l'estació)\n\n**==an== — \"tocant / al costat de / a la vora de\"**\nPer fronteres naturals i llocs a la vora de l'aigua:\n- *==an== der Nordsee* (al mar del Nord)\n- *==am== Strand* (a la platja)\n- *==am== Rhein* (al Rin)\n- *==an== der Küste* (a la costa)"
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Contrast CA/ES",
+          "body": "Català i castellà fusionen tot això en *a / en*. L'alemany t'obliga a pensar **quina mena de lloc** és: interior, superfície o vora."
+        }
+      ]
+    },
+    {
+      "id": "cities-countries",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Ciutats i països: article o no?\n\nUna regla addicional molt útil:\n\n- **Ciutats i la majoria de països** → *in* + **sense article**: *in Berlin, in Wien, in Spanien, in Deutschland*.\n- **Països amb article** (pocs però freqüents) → *in* + **article en datiu**: *in **der** Schweiz, in **der** Türkei, in **den** USA, in **den** Niederlanden*."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Memorització mínima",
+          "body": "Només cal memoritzar els excepcionals. La resta van \"nus\"."
+        }
+      ]
+    },
+    {
+      "id": "quick-check-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-1-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "neben",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### *neben* — \"al costat de\"\n\nLa preposició **==neben==** significa **al costat de** (contacte o proximitat immediata, un al costat de l'altre). Quan respon a *Wo?*, va amb **datiu**.\n\n- *Die Lampe steht ==neben dem== Sofa.* (La làmpada és al costat del sofà.)\n- *Ich sitze ==neben meiner== Schwester.* (Sec al costat de la meva germana.)\n- *==Neben der== Schule ist ein Park.* (Al costat de l'escola hi ha un parc.)"
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "neben també és Wechselpräposition",
+          "body": "Aquí, com a lliçó d'ubicació estàtica, només la veurem amb datiu. La versió amb acusatiu (moviment cap a un costat) es tractarà a A1b-19."
+        }
+      ]
+    },
+    {
+      "id": "in-der-naehe-von",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### *in der Nähe von* — \"a prop de\"\n\nQuan alguna cosa **no és tocant** però sí **a prop**, fem servir la locució **==in der Nähe von==** (\"a la proximitat de\"). Sempre va amb **datiu** (perquè és *von* + datiu, i *von* sempre demana datiu; ho vas veure a A1a-34).\n\n- *Ich wohne ==in der Nähe von dem== Bahnhof.* → en la pràctica: *==in der Nähe vom== Bahnhof*. (Visc a prop de l'estació.)\n- *Das Hotel ist ==in der Nähe von der== Kirche.* (L'hotel és a prop de l'església.)\n- *Wir sind ==in der Nähe von== München.* (Som a prop de Munic — ciutat, sense article.)"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Contracció",
+          "body": "Recorda: **von + dem → vom**."
+        },
+        {
+          "type": "explanation",
+          "body": "**Diferència clau:**\n\n- *neben* = **just al costat**, tocant o en contacte visual immediat.\n- *in der Nähe von* = **a prop**, però no necessàriament tocant (pot ser a uns carrers, a uns km)."
+        }
+      ]
+    },
+    {
+      "id": "quick-check-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-1-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Errors típics del catalanoparlant\n\n1. **Dir *in* per tot** com fem amb *a* en català. Recorda: *auf der Insel* (a l'illa), *an der Küste* (a la costa), no *in*.\n2. **Oblidar l'article a països com Suïssa o Turquia**: és *in **der** Schweiz*, no *in Schweiz*.\n3. **No contraure** *an dem* / *in dem*: en alemany parlat i escrit estàndard són quasi sempre ==am== i ==im==.\n4. **Confondre *neben* i *bei***: *bei* ja el vas veure a A1a-34 (genèric: *a casa de, a l'empresa, prop de*). *neben* és més específic: **just al costat físic**.\n5. **Declinar malament el datiu femení**: *an **der** See* (no *an die See*, que seria acusatiu/direcció, tema A1b-19).\n6. **Plural sense -n**: *in den Alpen*, *in den USA*. El datiu plural afegeix **-n** al substantiu si no en té ja un."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-1-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-1-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-1-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-1-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Resum del que t'emportes\n\n- **in / an / auf** indiquen ubicació i van amb **datiu** quan responen a *Wo?*.\n  - **in** = interior (edificis, ciutats, països, regions).\n  - **auf** = superfície o espai obert (illes, places, edificis públics).\n  - **an** = tocant, vora (aigua, fronteres naturals).\n- **Contraccions obligatòries**: *an + dem = **am***, *in + dem = **im***, *von + dem = **vom***.\n- **Ciutats i països** sense article (*in Berlin*), llevat d'excepcions com *in der Schweiz, in den USA*.\n- **neben + datiu** = *al costat (tocant)*.\n- **in der Nähe von + datiu** = *a prop (no tocant)*.\n- Aquestes preposicions (excepte *in der Nähe von*) són **Wechselpräpositionen**: a A1b-19 veuràs què passa amb acusatiu (moviment/destinació)."
+        },
+        {
+          "type": "table",
+          "title": "Síntesi — Quan triar cada preposició (Wo?)",
+          "headers": ["Preposició", "Ús", "Exemple"],
+          "rows": [
+            ["**in** (+ datiu)", "Interior, ciutat, país, regió", "*==in== Berlin*, *==in== der Schule*"],
+            ["**auf** (+ datiu)", "Superfície, illa, plaça, edifici públic", "*==auf== Rügen*, *==auf== dem Marienplatz*"],
+            ["**an** (+ datiu)", "Tocant, vora d'aigua, frontera", "*==am== Strand*, *==an== der Nordsee*"],
+            ["**neben** (+ datiu)", "Just al costat (tocant)", "*==neben dem== Sofa*"],
+            ["**in der Nähe von** (+ datiu)", "A prop (no tocant)", "*==in der Nähe vom== Bahnhof*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Proper pas",
+          "body": "A **A1b-2** continuarem explorant preposicions i els seus casos. Mentrestant, intenta descriure on ets ara mateix en alemany: *Ich bin **im** Wohnzimmer, **neben dem** Fenster, **in der Nähe von** der Küche.*"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-1-ex-06",
+  "topicId": "A1b-1",
+  "title": "Wo? → datiu",
+  "prompt": "Indica si l'afirmació és certa o falsa.",
+  "difficulty": 1,
+  "tags": ["regla", "datiu", "wo"],
+  "stimulus": {
+    "type": "text",
+    "content": "Llegeix l'afirmació següent amb atenció:"
+  },
+  "interaction": {
+    "type": "trueFalse",
+    "statements": [
+      {
+        "id": "s1",
+        "text": "Quan *in*, *an* i *auf* responen a la pregunta *Wo?*, sempre van amb **datiu**."
+      }
+    ]
+  },
+  "validation": {
+    "type": "truthMap",
+    "answers": { "s1": true }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. *Wo? → datiu*. L'acusatiu amb aquestes preposicions apareix amb *Wohin?* (destinació), i això ho veuràs a A1b-19.",
+      "references": ["A1b-1"]
+    },
+    "incorrect": {
+      "default": "És **cert**. Recorda la regla d'aquesta lliçó: **Wo? → datiu**. Amb *Wohin?* (moviment/destinació) aquestes preposicions passen a acusatiu, però això és matèria d'A1b-19."
+    }
+  }
+}

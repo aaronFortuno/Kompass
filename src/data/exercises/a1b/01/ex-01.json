@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-1-ex-01",
+  "topicId": "A1b-1",
+  "title": "Ciutats: quina preposició?",
+  "prompt": "Tria la preposició correcta.",
+  "difficulty": 1,
+  "tags": ["in-an-auf", "ciutats"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Ich bin {{1}} Berlin.",
+    "blanks": [
+      { "id": "1", "label": "preposició" }
+    ]
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "in", "label": "in" },
+      { "id": "an", "label": "an" },
+      { "id": "auf", "label": "auf" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "in" },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. Les ciutats van sempre amb **in** i **sense article**."
+    },
+    "incorrect": {
+      "default": "Berlín és una ciutat → **in Berlin**. *an* és per a vores d'aigua, *auf* per a superfícies i illes.",
+      "byResponse": [
+        {
+          "match": { "response": "an" },
+          "message": "*an* marca la vora (aigua, frontera). Una ciutat no és una vora: *in Berlin*."
+        },
+        {
+          "match": { "response": "auf" },
+          "message": "*auf* és per a illes, places o superfícies. Berlín és una ciutat: *in Berlin*."
+        }
+      ]
+    }
+  }
+}

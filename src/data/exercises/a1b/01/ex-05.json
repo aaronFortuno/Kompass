@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-1-ex-05",
+  "topicId": "A1b-1",
+  "title": "Empareja l'expressió amb la seva traducció",
+  "prompt": "Empareja cada expressió alemanya amb la seva traducció catalana.",
+  "difficulty": 2,
+  "tags": ["traduccio", "repas"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "de1", "group": "de", "content": { "type": "text", "content": "am Strand" } },
+      { "id": "de2", "group": "de", "content": { "type": "text", "content": "in der Nähe vom Bahnhof" } },
+      { "id": "de3", "group": "de", "content": { "type": "text", "content": "neben der Schule" } },
+      { "id": "de4", "group": "de", "content": { "type": "text", "content": "auf der Insel" } },
+      { "id": "de5", "group": "de", "content": { "type": "text", "content": "in den Alpen" } },
+      { "id": "ca1", "group": "ca", "content": { "type": "text", "content": "a la platja" } },
+      { "id": "ca2", "group": "ca", "content": { "type": "text", "content": "a prop de l'estació" } },
+      { "id": "ca3", "group": "ca", "content": { "type": "text", "content": "al costat de l'escola" } },
+      { "id": "ca4", "group": "ca", "content": { "type": "text", "content": "a l'illa" } },
+      { "id": "ca5", "group": "ca", "content": { "type": "text", "content": "als Alps" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Alemany",
+    "groupBLabel": "Català"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["de1", "ca1"],
+      ["de2", "ca2"],
+      ["de3", "ca3"],
+      ["de4", "ca4"],
+      ["de5", "ca5"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Observa el patró: *an* = vora, *auf* = superfície/illa, *in* = interior/regió, *neben* = tocant, *in der Nähe von* = a prop."
+    },
+    "incorrect": {
+      "default": "Revisa quina mena de lloc (vora, superfície, interior, costat immediat, proximitat) descriu cada preposició: *am Strand* (vora de mar), *auf der Insel* (sobre l'illa), *in den Alpen* (dins la regió muntanyosa), *neben der Schule* (tocant l'escola), *in der Nähe vom Bahnhof* (a prop, no tocant)."
+    }
+  }
+}

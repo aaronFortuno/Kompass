@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-1-ex-02",
+  "topicId": "A1b-1",
+  "title": "neben o in der Nähe von?",
+  "prompt": "La meva casa és a uns 500 metres de l'estació. Quina frase alemanya ho expressa correctament?",
+  "difficulty": 2,
+  "tags": ["neben", "in-der-naehe-von"],
+  "stimulus": {
+    "type": "text",
+    "content": "La meva casa és a uns 500 metres de l'estació."
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "neben", "label": "Mein Haus ist **neben dem** Bahnhof." },
+      { "id": "naehe", "label": "Mein Haus ist **in der Nähe vom** Bahnhof." }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "naehe" },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. 500 m no és *tocant*, per tant **in der Nähe von** (+ contracció **vom**)."
+    },
+    "incorrect": {
+      "default": "*neben* implica *just al costat*. A 500 m fem servir **in der Nähe von**.",
+      "byResponse": [
+        {
+          "match": { "response": "neben" },
+          "message": "*neben dem Bahnhof* vol dir *tocant l'estació*. Si són 500 m, la distància no és immediata: **in der Nähe vom Bahnhof**."
+        }
+      ]
+    }
+  }
+}
