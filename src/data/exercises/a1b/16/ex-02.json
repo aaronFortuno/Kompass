@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-16-ex-02",
+  "topicId": "A1b-16",
+  "title": "Müssen o sollen? — font de l'obligació",
+  "prompt": "Tria el modal correcte segons l'origen de l'obligació: **müssen** si surt de l'interior del parlant; **sollen** si ve d'un tercer (persona, norma, autoritat). Fixa't en les pistes contextuals.",
+  "difficulty": 2,
+  "tags": ["sollen", "müssen", "obligacio", "font-externa", "singleChoice"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Der Arzt sagt, Nico {{1}} die Tabletten dreimal täglich nehmen._\n2. _Ich habe Kopfschmerzen. Ich {{2}} eine Tablette nehmen._\n3. _Meine Mutter sagt, ich {{3}} mehr Gemüse essen._\n4. _Es ist schon spät, wir {{4}} jetzt nach Hause gehen._\n5. _Der Chef sagt, wir {{5}} morgen früh kommen._",
+    "blanks": [
+      { "id": "1", "label": "context: consell del metge" },
+      { "id": "2", "label": "context: necessitat pròpia" },
+      { "id": "3", "label": "context: encàrrec de la mare" },
+      { "id": "4", "label": "context: decisió pròpia" },
+      { "id": "5", "label": "context: ordre del cap" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["muss", "soll", "will"] },
+      { "blankId": "2", "options": ["muss", "soll", "will"] },
+      { "blankId": "3", "options": ["muss", "soll", "will"] },
+      { "blankId": "4", "options": ["müssen", "sollen", "wollen"] },
+      { "blankId": "5", "options": ["müssen", "sollen", "wollen"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "soll",
+      "2": "muss",
+      "3": "soll",
+      "4": "müssen",
+      "5": "sollen"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has aplicat la diagnosi: si el context presenta una **font externa** (_Der Arzt sagt, meine Mutter sagt, der Chef sagt_), el modal natural és ==_sollen_==. Si l'obligació surt del propi parlant (mal de cap, sensació d'hora tardana), és ==_müssen_==. El català no distingeix; l'alemany sí, i la distinció és **viva i obligatòria**.",
+      "references": ["A1b-16", "A1a-26"]
+    },
+    "incorrect": {
+      "default": "==Pista diagnòstica==: pots afegir \"_…segons X_\" sense canviar el sentit? És **sollen**. La necessitat surt de dins sense intermediari? És **müssen**.",
+      "byResponse": [
+        {
+          "match": { "1": "muss" },
+          "message": "_Der Arzt sagt_ és una **font externa explícita**. Quan reportes una instrucció aliena, el modal natural és ==_sollen_== → _soll_."
+        },
+        {
+          "match": { "2": "soll" },
+          "message": "Aquí no hi ha ningú que hagi dit res: Nico té **mal de cap** i decideix prendre una pastilla. La necessitat és interna → ==_muss_==."
+        },
+        {
+          "match": { "3": "muss" },
+          "message": "_Meine Mutter sagt_ indica **encàrrec extern** → ==_soll_==."
+        },
+        {
+          "match": { "5": "müssen" },
+          "message": "_Der Chef sagt_ presenta l'obligació com a provinent del cap → ==_sollen_==, no _müssen_."
+        },
+        {
+          "match": { "4": "sollen" },
+          "message": "Aquí no hi ha cap \"algú altre\" que ho digui: el subjecte (_wir_) decideix anar cap a casa perquè **és tard**. Necessitat interna → ==_müssen_==."
+        }
+      ]
+    }
+  }
+}

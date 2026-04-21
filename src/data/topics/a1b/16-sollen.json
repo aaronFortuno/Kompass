@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-16",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 16,
+  "title": "Das Modalverb 'sollen'",
+  "shortTitle": "sollen",
+  "description": "Ampliació de sollen: obligació externa, oferta en pregunta i reproducció d'instruccions alienes, amb contrast fi respecte de müssen, sollten i l'imperatiu.",
+  "axes": ["pronoms-verbs", "expressions-i-funcions"],
+  "prerequisites": ["A1a-26", "A1b-15"],
+  "estimatedMinutes": 20,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Context i motivació\n\nJa coneixes _sollen_ des de **A1a-26** (on vas veure tota la família dels sis modals) i ho has repassat a **A1b-15** (_Wiederholung: die Modalverben_). I també apareix amagat a **A1b-9**, on vas fer servir la forma suavitzada ==_solltest_== per donar consells (\"_Du **solltest** mehr schlafen_\"). En totes aquelles aparicions, _sollen_ es traduïa aproximadament per \"haver de segons algú altre\" — un _müssen_ amb una font externa.\n\nAquesta lliçó aprofundeix _sollen_ i li dóna el que fins ara només havies vist a trossos: ==els seus **tres usos comunicatius reals**==, que conviuen en alemany quotidià i que cal saber distingir.\n\n1. **Obligació imposada per un tercer.** _Der Arzt sagt, ich **soll** mehr schlafen._ Algú altre — el metge, el cap, els pares, la llei — marca què has de fer.\n2. **Oferta o proposta en forma de pregunta.** _==Soll== ich dir etwas mitbringen?_ \"Vols que et porti alguna cosa?\" Aquest ús ja el vas veure a A1a-26, i és el més \"amigable\" de tots.\n3. **Reproduir una instrucció, ordre o recomanació aliena.** _Lisa diu: \"El metge m'ha dit que **haig de** descansar\"_ → en alemany es diu amb _sollen_: _Der Arzt sagt, ich **soll** mich ausruhen_."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "La idea que vertebra el tema",
+          "body": "_Sollen_ és el modal de la ==**veu d'altri**==. Quan l'uses, estàs dient: \"això no surt de mi; hi ha algú (o alguna cosa) darrere que m'ho demana, m'ho recomana o m'ho ordena.\"\n\nTemps estimat: 8-10 minuts. La conjugació ja la saps (és la més regular dels sis modals); aquí la feina és **semàntica i pragmàtica**."
+        }
+      ]
+    },
+    {
+      "id": "conjugacio",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Conjugació: el modal més regular\n\nRecorda de **A1a-26** / **A1b-15** que els modals tenen un patró estrany: _ich_ i _er/sie/es_ són idèntics i sense terminació, i gairebé tots canvien de vocal al singular. ==_Sollen_ és l'excepció==: **no canvia de vocal**. És el modal més regular."
+        },
+        {
+          "type": "table",
+          "title": "16.1 Conjugació de sollen",
+          "headers": ["Persona", "Forma"],
+          "rows": [
+            ["ich", "**soll**"],
+            ["du", "**sollst**"],
+            ["er/sie/es", "**soll**"],
+            ["wir", "**sollen**"],
+            ["ihr", "**sollt**"],
+            ["sie/Sie", "**sollen**"]
+          ],
+          "caption": "_ich soll = er soll_ (patró modal), però la vocal **o** es manté a totes sis persones. Cap Umlaut, cap canvi."
+        },
+        {
+          "type": "table",
+          "title": "16.2 Comparació amb els germans d'obligació",
+          "headers": ["Modal", "ich", "du", "er/sie/es", "Canvi vocàlic?"],
+          "rows": [
+            ["**sollen**", "soll", "sollst", "soll", "==No=="],
+            ["**müssen**", "muss", "musst", "muss", "Sí (ü→u)"],
+            ["**wollen**", "will", "willst", "will", "Sí (o→i)"],
+            ["**dürfen**", "darf", "darfst", "darf", "Sí (ü→a)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Sintaxi: Satzklammer",
+          "body": "La sintaxi també la domines: ==**Satzklammer**== d'A1a-18. Modal a la **posició 2**, infinitiu al **final**.\n\n- _Ich **soll** die Tabletten dreimal täglich **nehmen**._\n- _Du **sollst** dich **ausruhen**._"
+        }
+      ]
+    },
+    {
+      "id": "us-1-obligacio-externa",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Ús 1 · Obligació imposada per un tercer\n\nLa diferència nuclear entre _müssen_ i _sollen_ és l'==**origen de l'obligació**==:\n\n- ==**müssen**== → l'obligació surt de **dins** (necessitat pròpia, sentit comú, lleis de la natura).\n- ==**sollen**== → l'obligació ve de **fora** (una persona concreta, una norma, una autoritat).\n\n> _Ich **muss** zum Zahnarzt._ → \"He d'anar al dentista.\" _(Tinc mal de queixal. M'ho dicto jo.)_\n> _Ich **soll** zum Zahnarzt._ → \"Haig d'anar al dentista.\" _(El metge de capçalera m'hi ha enviat. M'ho diu algú altre.)_\n\nTots dos es tradueixen en català per \"haver de\". El català **no distingeix** l'origen de l'obligació; l'alemany sí, i és una distinció viva.\n\n**Exemples típics:**\n\n- _Ich **soll** mehr Gemüse essen._ → El metge m'ho ha dit.\n- _Du **sollst** pünktlich sein._ → El teu cap ho espera.\n- _Die Kinder **sollen** jetzt ins Bett gehen._ → Els pares ho decideixen.\n- _Wir **sollen** das Formular unterschreiben._ → Una oficina ho exigeix."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista diagnòstica",
+          "body": "Si pots afegir \"==_…segons X_==\" a la frase catalana sense canviar-ne el sentit (\"he de descansar **segons el metge**\"), és **sollen** en alemany. Si la frase perd sentit amb aquest \"_segons X_\" (\"he de respirar per viure _segons algú_\"), és **müssen**."
+        }
+      ]
+    },
+    {
+      "id": "us-2-oferta-proposta",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Ús 2 · _Soll ich…?_ — Oferta i proposta\n\nAquest ús ja el vas trobar a **A1a-26**. El repassem perquè és el més freqüent a la conversa quotidiana i té una **traducció no literal** al català que cal memoritzar.\n\nEn **preguntes amb _ich_ o _wir_** a primera posició, _sollen_ no expressa obligació: ==expressa una **oferta** o una **proposta**==. Es tradueix per \"_vols que…?_\" / \"_voleu que…?_\".\n\n> _**Soll** ich dir etwas mitbringen?_ → \"**Vols que** et porti alguna cosa?\"\n> _**Soll** ich das Fenster öffnen?_ → \"**Vols que** obri la finestra?\"\n> _**Sollen** wir ein Taxi nehmen?_ → \"**Voleu que** agafem un taxi?\" / \"Agafem un taxi?\""
+        },
+        {
+          "type": "table",
+          "title": "16.3 Contrastos en pregunta amb abholen",
+          "headers": ["Pregunta", "Lectura real"],
+          "rows": [
+            ["_==Muss== ich dich abholen?_", "\"He d'anar a buscar-te?\" _(càrrega: quina mandra)_"],
+            ["_==Soll== ich dich abholen?_", "\"**Vols que** et vingui a buscar?\" _(oferta amable)_"],
+            ["_==Kann== ich dich abholen?_", "\"**Puc** anar a buscar-te?\" _(demanar permís)_"],
+            ["_==Will== ich dich abholen?_", "Pregunta rara: \"És la meva voluntat anar a buscar-te?\" _(no és natural)_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Falsa amistat amb el castellà/català",
+          "body": "En català \"haig d'anar a buscar-te?\" sona com una queixa; en alemany _Soll ich...?_ és **neutre i educat**. No confonguis _sollen_ en pregunta amb obligació gruixuda. És el modal de la ==**cortesia proactiva**==."
+        }
+      ]
+    },
+    {
+      "id": "us-3-reproduir",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Ús 3 · Reproduir una ordre, consell o prohibició aliena\n\nAquest és el salt qualitatiu respecte d'A1a-26. Mira aquest triangle de comunicació:\n\n> **Arzt → Nico:** _\"Schlafen Sie viel!\"_ _(imperatiu directe, A1b-12)_\n> **Nico → Lisa:** _\"Ich **soll** viel **schlafen**.\"_\n\nNico no està rebent l'ordre ara mateix: ==**reporta**== el que el metge li va dir. L'alemany no fa servir un temps verbal especial per reportar (com l'anglès \"_he said I should sleep_\"); fa servir **sollen + infinitiu**. És el mecanisme pràctic del _discurs reportat_ d'instruccions a l'A1.\n\n**Tres casos que cal reconèixer:**\n\n**(a) Un imperatiu** (A1b-12) → _sollen_.\n\n> Metge: _\"Schlafen Sie viel!\"_\n> Reportat: _Ich **soll** viel **schlafen**._\n\n**(b) Un \"nicht dürfen\"** (prohibició, A1a-26) → _sollen ... nicht_.\n\n> Metge: _\"Sie **dürfen** Ihr Bein **nicht bewegen**!\"_\n> Reportat: _Ich **soll** mein Bein **nicht bewegen**._\n\n**(c) Un _müssen_** (obligació) → també _sollen_ quan el reporta un tercer.\n\n> Metge: _\"Sie **müssen** die Tabletten eine Woche lang **nehmen**.\"_\n> Inge pregunta: _\"Was sagt der Arzt?\"_\n> Lisa reporta: _\"Der Arzt sagt, ich **soll** die Tabletten eine Woche lang **nehmen**.\"_"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Regla pràctica",
+          "body": "==Quan algú et pregunta _\"Was sagt X?\"_ i respons amb instruccions, el modal natural per reportar-les és **sollen**==, encara que X hagués fet servir _müssen_, _dürfen nicht_ o un imperatiu."
+        },
+        {
+          "type": "explanation",
+          "body": "**Estructura freqüent amb _sagen_:**\n\n> _[Font] sagt, [subjecte] **soll** [complements] [infinitiu]._\n> _Lisa: \"Der Arzt sagt, du **sollst** dich **ausruhen**.\"_\n> _Meine Mutter sagt, ich **soll** weniger **fernsehen**._\n> _Der Chef sagt, wir **sollen** morgen früh **kommen**._\n\nFixa't que _sollen_ va després del verb _sagen_, no dins seu. L'alemany A1 no fa subordinada amb _dass_ aquí (això vindrà més endavant); es juxtaposen dues oracions principals."
+        }
+      ]
+    },
+    {
+      "id": "comparativa",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Comparativa fina: els tres \"haver de\"\n\nAixò és el que convé tenir clar en sortir de la lliçó:"
+        },
+        {
+          "type": "table",
+          "title": "16.4 Els tres haver de i l'imperatiu",
+          "headers": ["Font de l'obligació", "Modal", "Exemple"],
+          "rows": [
+            ["Interna, personal, natural", "==**müssen**==", "_Ich **muss** schlafen._ (estic cansat)"],
+            ["Externa, persona o autoritat", "==**sollen**==", "_Ich **soll** schlafen._ (el metge m'ho ha dit)"],
+            ["Consell suavitzat (Konjunktiv II)", "==**sollten**==", "_Du **solltest** schlafen._ (\"hauries de...\", A1b-9)"],
+            ["Ordre directa", "(sense modal)", "_Schlaf!_ / _Schlafen Sie!_ (A1b-12)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Les tres formes d'adreçar una instrucció",
+          "body": "1. **Directa:** _Schlaf mehr!_ _(imperatiu)_\n2. **Reportada d'altri:** _Du **sollst** mehr **schlafen**._ _(sollen + font externa)_\n3. **Consell cortès propi:** _Du **solltest** mehr **schlafen**._ _(sollten, A1b-9)_\n\nEntre (2) i (3), la diferència és qui dóna el consell: a (2) és un tercer; a (3) el dóno jo però suavitzat. En tots dos casos, la forma verbal parteix del mateix infinitiu _sollen_."
+        }
+      ]
+    },
+    {
+      "id": "paranys",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys típics del catalanoparlant\n\n**1. Traduir \"haver de\" sempre com a _müssen_.** És l'error nº1. Si la frase ve d'un consell mèdic, d'una ordre laboral o d'una norma dictada per algú concret, sovint toca _sollen_.\n\n> _El metge em diu que ==haig de== prendre les pastilles._\n> No: _Der Arzt sagt, ich ==muss== die Tabletten nehmen._ _(sona com si la necessitat fos meva sense intermediari)_\n> Sí: _Der Arzt sagt, ich ==soll== die Tabletten nehmen._\n\n**2. Pronunciar _sollst_ com _solst_.** La combinació **-llst-** és exigent: cal articular tant la _ll_ com la _st_. _Du ==sollst==_ → [zɔlst], no [zɔst].\n\n**3. Traduir _Soll ich…?_ com \"he de...?\".** És literal però falsa: en alemany sona com una oferta; en català com una queixa.\n\n> _==Soll== ich das Fenster öffnen?_ ≠ \"_He d'obrir la finestra?_\"\n> _==Soll== ich das Fenster öffnen?_ = \"**Vols que** obri la finestra?\"\n\n**4. Oblidar el _nicht_ quan reportes una prohibició.** Si la font ha dit \"no pot\", tu has de dir \"sollen + nicht\", no \"nicht dürfen\":\n\n> _Arzt: \"Sie dürfen nicht rauchen!\"_ → _Ich **soll nicht** rauchen._\n> Tècnicament també val _Ich darf nicht rauchen_ (A1a-26), però aleshores ja no és _reportat_, sinó afirmat per tu.\n\n**5. Posar l'infinitiu en segona posició.** Satzklammer, sempre. El modal conjugat a la posició 2; l'infinitiu, al final.\n\n> No: _Ich soll nehmen die Tabletten._\n> Sí: _Ich **soll** die Tabletten **nehmen**._"
+        }
+      ]
+    },
+    {
+      "id": "check-1-conjugacio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-16-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "check-2-mussen-sollen",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-16-ex-02", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-3-soll-ich",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-16-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-4-reportar-ordre",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-16-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-5-reordenar",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-16-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-6-reconeixer-matis",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-16-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-7-reportar-prohibicio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-16-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-8-sollen-sollten-mussen-imperatiu",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-16-ex-08", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi"
+        },
+        {
+          "type": "table",
+          "title": "16.5 Els punts clau de sollen",
+          "headers": ["Concepte", "Clau"],
+          "rows": [
+            ["Conjugació", "Regular, ==sense canvi de vocal==. _soll, sollst, soll, sollen, sollt, sollen_."],
+            ["Ús 1 — obligació externa", "==Algú altre== ho decideix. _Ich **soll** zum Arzt._"],
+            ["Ús 2 — oferta / proposta en pregunta", "_==Soll== ich…?_ = \"**Vols que** jo…?\""],
+            ["Ús 3 — reportar instruccions alienes", "_\"X sagt, [subj.] **soll** [inf.]\"_"],
+            ["Reportar prohibició", "_sollen + **nicht**_ (no _nicht dürfen_)"],
+            ["Forma suau (consell propi)", "==_solltest / sollte / sollten_== — vegeu A1b-9"],
+            ["Sintaxi", "Satzklammer: modal a 2, infinitiu al final"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Objectiu assolit si...",
+          "body": "Pots llegir _\"Der Arzt sagt, du sollst viel Wasser trinken\"_ i entendre'l com \"el metge diu que has de beure molta aigua (ell t'ho recomana)\", no com \"el metge diu que t'obligues a beure aigua\". Pots distingir-ho de _\"Du musst viel Wasser trinken\"_ (obligació sense font externa explicitada). I pots oferir ajuda amb _\"Soll ich dir Wasser bringen?\"_ sense traduir-ho literalment."
+        },
+        {
+          "type": "explanation",
+          "body": "**Connexions amb altres lliçons:**\n\n- **A1a-26** — primera presentació de _sollen_ dins la família dels sis modals.\n- **A1a-18** — Satzklammer (estructura que _sollen_ construeix amb l'infinitiu).\n- **A1b-9** — consells amb ==_solltest_== (Konjunktiv II de _sollen_).\n- **A1b-12** — Imperatiu directe; contrast amb el reportat via _sollen_.\n- **A1b-15** — repàs global dels sis modals en context comunicatiu."
+        }
+      ]
+    }
+  ]
+}

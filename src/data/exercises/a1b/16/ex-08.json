@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-16-ex-08",
+  "topicId": "A1b-16",
+  "title": "sollen vs. sollten vs. müssen vs. imperatiu",
+  "prompt": "Empareja cada **situació comunicativa** amb la **formulació adequada**. Quatre maneres d'adreçar una instrucció segons la font i el registre: imperatiu directe, obligació pròpia, encàrrec de tercer, consell suavitzat.",
+  "difficulty": 3,
+  "tags": ["sollen", "sollten", "müssen", "imperatiu", "sintesi", "matchPairs"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "sit1", "group": "situacio", "content": { "type": "text", "content": "**Consell cortès propi** (tu recomanes a un amic, de manera suavitzada, que dormi més)" } },
+      { "id": "form1", "group": "formulacio", "content": { "type": "text", "content": "_Du **solltest** mehr schlafen._ (A1b-9)" } },
+      { "id": "sit2", "group": "situacio", "content": { "type": "text", "content": "**Obligació personal sense font externa** (tu afirmes que l'amic necessita dormir més, sense citar ningú)" } },
+      { "id": "form2", "group": "formulacio", "content": { "type": "text", "content": "_Du **musst** mehr schlafen._ (A1a-26)" } },
+      { "id": "sit3", "group": "situacio", "content": { "type": "text", "content": "**Instrucció d'altri reportada** (tu reportes el que el metge li ha dit a l'amic)" } },
+      { "id": "form3", "group": "formulacio", "content": { "type": "text", "content": "_Der Arzt sagt, du **sollst** mehr schlafen._" } },
+      { "id": "sit4", "group": "situacio", "content": { "type": "text", "content": "**Ordre directa** (tu li parles a l'amic de tu a tu, sense modal)" } },
+      { "id": "form4", "group": "formulacio", "content": { "type": "text", "content": "_**Schlaf** mehr!_ (A1b-12)" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Situació",
+    "groupBLabel": "Formulació"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["sit1", "form1"],
+      ["sit2", "form2"],
+      ["sit3", "form3"],
+      ["sit4", "form4"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has distingit **quatre maneres d'adreçar una instrucció** amb el mateix contingut (\"dormir més\"): (1) ==_**solltest**_== = consell cortès propi (Konjunktiv II, A1b-9); (2) ==_**musst**_== = obligació sense font externa citada (A1a-26); (3) ==_**sollst**_== amb _sagt_ = reportar un encàrrec de tercer; (4) ==_**Schlaf!**_== = imperatiu directe, sense modal (A1b-12). La diferència no és gramatical sinó **pragmàtica**: qui parla, a qui, amb quin registre, i amb quina font.",
+      "references": ["A1b-16", "A1a-26", "A1b-9", "A1b-12", "A1b-15"]
+    },
+    "incorrect": {
+      "default": "==Quatre eixos==: (a) ==_sollten_ (solltest, sollte)_== = consell **propi** suavitzat (Konjunktiv II, A1b-9); (b) _müssen_ = obligació sense citar ningú; (c) _sollen_ amb font (_X sagt_) = reportar instrucció aliena; (d) imperatiu sense modal = ordre directa. Aquesta lliçó connecta A1a-26, A1b-9, A1b-12 i A1b-15."
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-16-ex-01",
+  "topicId": "A1b-16",
+  "title": "Conjugació de sollen — les sis persones",
+  "prompt": "Completa la taula de conjugació de _sollen_ en present. Recorda: **no hi ha canvi de vocal** (a diferència de _müssen_, _dürfen_, _wollen_) i _ich_ i _er/sie/es_ són iguals i sense terminació.",
+  "difficulty": 1,
+  "tags": ["sollen", "conjugacio", "present"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _ich {{1}}_\n2. _du {{2}}_\n3. _er/sie/es {{3}}_\n4. _wir {{4}}_\n5. _ihr {{5}}_\n6. _sie/Sie {{6}}_",
+    "blanks": [
+      { "id": "1", "label": "1ra sing." },
+      { "id": "2", "label": "2a sing." },
+      { "id": "3", "label": "3a sing." },
+      { "id": "4", "label": "1ra pl." },
+      { "id": "5", "label": "2a pl." },
+      { "id": "6", "label": "3a pl. / formal" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "forma d'ich" },
+      { "blankId": "2", "placeholder": "forma de du" },
+      { "blankId": "3", "placeholder": "forma d'er/sie/es" },
+      { "blankId": "4", "placeholder": "forma de wir" },
+      { "blankId": "5", "placeholder": "forma d'ihr" },
+      { "blankId": "6", "placeholder": "forma de sie/Sie" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "soll",
+      "2": "sollst",
+      "3": "soll",
+      "4": "sollen",
+      "5": "sollt",
+      "6": "sollen"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has aplicat les dues regles: (a) _sollen_ **no canvia de vocal** — és l'únic modal que no ho fa; (b) _ich_ i _er/sie/es_ són **iguals i sense terminació** (_soll_). Al plural, terminacions habituals: _-en, -t, -en_. És el modal més regular dels sis.",
+      "references": ["A1b-16", "A1a-26", "A1b-15"]
+    },
+    "incorrect": {
+      "default": "Revisa el patró: la vocal **o** es manté a totes sis persones (no hi ha canvi de vocal, a diferència de _müssen → muss_, _dürfen → darf_, _wollen → will_). _ich_ i _er/sie/es_ són idèntiques i sense terminació: _soll_. Al plural: _sollen, sollt, sollen_.",
+      "byResponse": [
+        {
+          "match": { "1": "solle" },
+          "message": "Atenció: els modals **no porten _-e_** a _ich_. És _ich **soll**_ (sense terminació), com _ich muss, ich kann, ich darf_."
+        },
+        {
+          "match": { "3": "sollt" },
+          "message": "_er/sie/es_ és **igual que _ich_** als modals: _er **soll**_ (sense _-t_)."
+        },
+        {
+          "match": { "2": "sollt" },
+          "message": "_du_ porta _-st_: _du **sollst**_. La forma _sollt_ és la d'_ihr_."
+        }
+      ]
+    }
+  }
+}

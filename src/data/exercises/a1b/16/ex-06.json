@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-16-ex-06",
+  "topicId": "A1b-16",
+  "title": "Reconèixer el matís de sollen",
+  "prompt": "Llegeix cada afirmació sobre l'ús de _sollen_ en una frase donada i decideix si és **certa** (richtig) o **falsa** (falsch). Pensa quin dels tres usos (obligació externa, oferta en pregunta, reportar instruccions) s'aplica en cada cas.",
+  "difficulty": 2,
+  "tags": ["sollen", "usos", "matis", "trueFalse"],
+  "stimulus": {
+    "type": "text",
+    "content": "Analitza l'ús de _sollen_ a cada frase i decideix si l'afirmació és certa o falsa."
+  },
+  "interaction": {
+    "type": "trueFalse",
+    "statements": [
+      { "id": "s1", "text": "A _\"**Soll** ich das Fenster öffnen?\"_, _sollen_ expressa una obligació personal del parlant." },
+      { "id": "s2", "text": "A _\"Der Arzt sagt, ich **soll** mehr schlafen\"_, el parlant reporta una instrucció d'un tercer." },
+      { "id": "s3", "text": "A _\"Ich **muss** zum Zahnarzt\"_ i _\"Ich **soll** zum Zahnarzt\"_, l'origen de l'obligació és el mateix." },
+      { "id": "s4", "text": "A _\"**Sollen** wir ein Taxi nehmen?\"_, el parlant fa una **proposta conjunta** (\"Què et sembla si agafem un taxi?\")." },
+      { "id": "s5", "text": "A _\"Du **sollst** pünktlich sein\"_, la puntualitat és una decisió pròpia del subjecte _du_ sense intervenció de ningú." },
+      { "id": "s6", "text": "A _\"Meine Mutter sagt, ich **soll** weniger fernsehen\"_, el modal _sollen_ és el natural per reportar l'encàrrec de la mare." }
+    ]
+  },
+  "validation": {
+    "type": "truthMap",
+    "answers": {
+      "s1": false,
+      "s2": true,
+      "s3": false,
+      "s4": true,
+      "s5": false,
+      "s6": true
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has distingit els **tres usos comunicatius** de _sollen_: (1) obligació externa (s5 és falsa perquè _sollst_ implica sempre font externa, no decisió pròpia); (2) oferta o proposta en pregunta (s1 falsa — és oferta; s4 certa); (3) reportar instruccions alienes (s2, s6 certes). També has captat el contrast _müssen_ ≠ _sollen_ (s3 falsa: l'origen de l'obligació és **diferent** — intern vs. extern).",
+      "references": ["A1b-16", "A1a-26"]
+    },
+    "incorrect": {
+      "default": "Repassa els **tres usos** de _sollen_: (1) obligació imposada per un tercer; (2) _Soll ich…?_ / _Sollen wir…?_ en pregunta = oferta o proposta (**no** obligació); (3) reportar ordres, consells o prohibicions alienes. I el contrast clau: _müssen_ = font interna, _sollen_ = font externa."
+    }
+  }
+}

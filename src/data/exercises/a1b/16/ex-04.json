@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-16-ex-04",
+  "topicId": "A1b-16",
+  "title": "Reportar una ordre amb sollen",
+  "prompt": "El metge dóna ordres en imperatiu a Nico. Ara Nico reporta el que li ha dit. Completa la forma reportada amb _sollen_ conjugat + infinitiu al final. Respecta la **Satzklammer** (A1a-18): modal a la posició 2, infinitiu al final.",
+  "difficulty": 3,
+  "tags": ["sollen", "discurs-reportat", "imperatiu", "satzklammer", "typeIn"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Arzt: \"Nehmen Sie die Tabletten!\"_ → _Nico: \"Ich {{1}} die Tabletten {{2}}.\"_\n2. _Arzt: \"Trinken Sie viel Wasser!\"_ → _Nico: \"Ich {{3}} viel Wasser {{4}}.\"_\n3. _Arzt: \"Schlafen Sie mindestens acht Stunden!\"_ → _Nico: \"Ich {{5}} mindestens acht Stunden {{6}}.\"_\n4. _Arzt: \"Ruhen Sie sich aus!\"_ → _Nico: \"Ich {{7}} mich {{8}}.\"_",
+    "blanks": [
+      { "id": "1", "label": "sollen conjugat (ich)" },
+      { "id": "2", "label": "infinitiu" },
+      { "id": "3", "label": "sollen conjugat (ich)" },
+      { "id": "4", "label": "infinitiu" },
+      { "id": "5", "label": "sollen conjugat (ich)" },
+      { "id": "6", "label": "infinitiu" },
+      { "id": "7", "label": "sollen conjugat (ich)" },
+      { "id": "8", "label": "infinitiu (separable)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "forma conjugada" },
+      { "blankId": "2", "placeholder": "infinitiu" },
+      { "blankId": "3", "placeholder": "forma conjugada" },
+      { "blankId": "4", "placeholder": "infinitiu" },
+      { "blankId": "5", "placeholder": "forma conjugada" },
+      { "blankId": "6", "placeholder": "infinitiu" },
+      { "blankId": "7", "placeholder": "forma conjugada" },
+      { "blankId": "8", "placeholder": "infinitiu sencer" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "soll",
+      "2": "nehmen",
+      "3": "soll",
+      "4": "trinken",
+      "5": "soll",
+      "6": "schlafen",
+      "7": "soll",
+      "8": "ausruhen"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has aplicat el mecanisme complet del discurs reportat A1: (a) l'imperatiu de tercers es reporta amb ==**sollen + infinitiu**==; (b) la ==**Satzklammer**== col·loca _soll_ a posició 2 i l'infinitiu al final; (c) els **verbs separables** (_sich **ausruhen**_) **no es parteixen** davant d'un modal, van sencers a l'infinitiu al final. Aquest és el patró bàsic per reportar instruccions mèdiques, ordres laborals i consells de tercers.",
+      "references": ["A1b-16", "A1b-12", "A1a-18", "A1a-25"]
+    },
+    "incorrect": {
+      "default": "Patró: _Ich **soll** [complements] [infinitiu]._ El modal _soll_ ocupa la posició 2 i l'infinitiu va al final (Satzklammer). Els verbs separables (_ausruhen, anrufen, aufstehen_) **no es parteixen** — van sencers a l'infinitiu al final.",
+      "byResponse": [
+        {
+          "match": { "8": "aus" },
+          "message": "Davant d'un modal, els **verbs separables no es parteixen**: escrius el verb sencer a l'infinitiu al final → _sich **ausruhen**_."
+        },
+        {
+          "match": { "8": "ruhen" },
+          "message": "Falta el prefix separable: l'infinitiu sencer és _**ausruhen**_ (no es parteix davant d'un modal)."
+        },
+        {
+          "match": { "1": "sollt" },
+          "message": "El subjecte és _ich_, no _ihr_: _ich **soll**_ (sense terminació, igual que _er/sie/es_)."
+        },
+        {
+          "match": { "1": "muss" },
+          "message": "Aquí **reportes** l'ordre del metge. El modal natural per reportar instruccions alienes és ==_sollen_==, no _müssen_."
+        }
+      ]
+    }
+  }
+}

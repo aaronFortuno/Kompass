@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-16-ex-05",
+  "topicId": "A1b-16",
+  "title": "Reconstrueix la frase reportada",
+  "prompt": "Ordena les paraules d'un banc desordenat i escriu la frase reportada completa. Respecta la **Satzklammer** (modal a posició 2, infinitiu al final) i l'estructura _[Font] sagt, [subjecte] soll [complements] [infinitiu]._ Inclou la coma i el punt final.",
+  "difficulty": 3,
+  "tags": ["sollen", "discurs-reportat", "satzklammer", "reordenar", "typeIn"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _sagt / Der Arzt / soll / ich / mich / ausruhen / , / ._ →\n{{1}}\n\n2. _sagt / Meine Mutter / soll / ich / weniger / fernsehen / , / ._ →\n{{2}}\n\n3. _sagt / Der Chef / sollen / wir / morgen / früh / kommen / , / ._ →\n{{3}}\n\n4. _sagt / Die Lehrerin / sollst / du / die Hausaufgaben / machen / , / ._ →\n{{4}}",
+    "blanks": [
+      { "id": "1", "label": "frase 1" },
+      { "id": "2", "label": "frase 2" },
+      { "id": "3", "label": "frase 3" },
+      { "id": "4", "label": "frase 4" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "frase completa amb coma i punt" },
+      { "blankId": "2", "placeholder": "frase completa amb coma i punt" },
+      { "blankId": "3", "placeholder": "frase completa amb coma i punt" },
+      { "blankId": "4", "placeholder": "frase completa amb coma i punt" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Der Arzt sagt, ich soll mich ausruhen."],
+      "2": ["Meine Mutter sagt, ich soll weniger fernsehen."],
+      "3": ["Der Chef sagt, wir sollen morgen früh kommen."],
+      "4": ["Die Lehrerin sagt, du sollst die Hausaufgaben machen."]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has reconstruït l'estructura canònica: ==_[Font] sagt, [subjecte] **soll** [complements] [infinitiu]._== Dues oracions principals juxtaposades amb coma (l'A1 no fa subordinades amb _dass_). La **Satzklammer** es manté: el modal ocupa la posició 2 de la segona oració i l'infinitiu tanca al final. Observa que _sollen_ es conjuga segons el subjecte reportat (_ich soll_, _wir sollen_, _du sollst_), no segons la font.",
+      "references": ["A1b-16", "A1a-18"]
+    },
+    "incorrect": {
+      "default": "Patró: ==_[Font] sagt, [subjecte] **soll** [complements] [infinitiu]._== El modal va **just després del subjecte** de la segona oració (posició 2), i l'infinitiu va al **final**. La coma separa les dues oracions. Atenció a la conjugació de _sollen_ segons el subjecte reportat: _ich **soll**_, _du **sollst**_, _wir **sollen**_. No oblidis el punt final."
+    }
+  }
+}

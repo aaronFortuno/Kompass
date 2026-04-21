@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-16-ex-03",
+  "topicId": "A1b-16",
+  "title": "Soll ich…? — oferta en context comunicatiu",
+  "prompt": "Completa cada mini-diàleg amb el modal adequat. Atenció: _Soll ich…?_ / _Sollen wir…?_ no expressen obligació sinó **oferta o proposta** (\"vols que…?\", \"què et sembla si…?\").",
+  "difficulty": 2,
+  "tags": ["sollen", "oferta", "pregunta", "cortesia", "dropdownFill"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _— Ich habe Kopfschmerzen. — {{1}} ich dir eine Tablette bringen?_\n2. _— Es ist kalt hier drin. — {{2}} ich das Fenster schließen?_\n3. _— Ich verstehe das nicht. — {{3}} ich es dir noch einmal erklären?_\n4. _— Wir haben Hunger. — {{4}} wir eine Pizza bestellen?_\n5. _— Entschuldigung, {{5}} ich hier fotografieren? — Ja, natürlich._",
+    "blanks": [
+      { "id": "1", "label": "oferta amable" },
+      { "id": "2", "label": "oferta amable" },
+      { "id": "3", "label": "oferta amable" },
+      { "id": "4", "label": "proposta conjunta" },
+      { "id": "5", "label": "demanar permís" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Soll", "Muss", "Will", "Darf"] },
+      { "blankId": "2", "options": ["Soll", "Muss", "Will", "Darf"] },
+      { "blankId": "3", "options": ["Soll", "Muss", "Will", "Darf"] },
+      { "blankId": "4", "options": ["Sollen", "Müssen", "Wollen", "Dürfen"] },
+      { "blankId": "5", "options": ["soll", "muss", "will", "darf"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Soll",
+      "2": "Soll",
+      "3": "Soll",
+      "4": "Sollen",
+      "5": "darf"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has distingit les tres funcions en pregunta: _**Soll ich…?**_ / _**Sollen wir…?**_ = ==**oferta o proposta**== (\"vols que…?\", \"què et sembla si…?\"); _**Darf ich…?**_ = ==**demanar permís**== (\"em permets…?\"). En el cas 5, el parlant demana autorització per fotografiar, no s'ofereix a ningú → _darf_. Aquesta distinció és clau en alemany quotidià.",
+      "references": ["A1b-16", "A1a-26"]
+    },
+    "incorrect": {
+      "default": "Recorda: _Soll ich…?_ **no** és \"he de…?\" sinó **\"vols que…?\"** (oferta amable). _Darf ich…?_ és demanar permís (\"em permets…?\"). _Muss ich…?_ sonaria com una queixa (\"haig de…?\").",
+      "byResponse": [
+        {
+          "match": { "1": "Muss" },
+          "message": "_Muss ich dir eine Tablette bringen?_ sonaria com \"Haig de portar-te una pastilla? Quin pal.\" L'oferta amable és ==_Soll ich…?_== = \"**Vols que** et porti una pastilla?\"."
+        },
+        {
+          "match": { "1": "Darf" },
+          "message": "_Darf ich…?_ demana permís (\"em permets portar-te-la?\"). Aquí el parlant **s'ofereix**, no demana autorització → ==_Soll_==."
+        },
+        {
+          "match": { "2": "Will" },
+          "message": "_Will ich…?_ seria \"És la meva voluntat tancar la finestra?\" — no té sentit en aquest context. L'oferta amable és ==_Soll_==."
+        },
+        {
+          "match": { "4": "Müssen" },
+          "message": "_Müssen wir…?_ sonaria com \"Haurem de demanar una pizza?\" (amb resignació). La proposta conjunta és ==_Sollen wir…?_== = \"Què et sembla si…?\"."
+        },
+        {
+          "match": { "5": "soll" },
+          "message": "Aquí el parlant **demana permís** per fotografiar (_Entschuldigung_ + resposta _Ja, natürlich_). No s'ofereix a ningú → ==_darf_==."
+        }
+      ]
+    }
+  }
+}

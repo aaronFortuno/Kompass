@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-16-ex-07",
+  "topicId": "A1b-16",
+  "title": "Reportar una prohibició: sollen + nicht",
+  "prompt": "Per a cada prohibició del metge en estil directe, tria la forma **reportada** correcta. Recorda: quan reportes una prohibició d'altri, el natural és ==_sollen + **nicht**_==, no _nicht dürfen_ (que seria una afirmació pròpia).",
+  "difficulty": 3,
+  "tags": ["sollen", "prohibicio", "discurs-reportat", "nicht", "singleChoice"],
+  "stimulus": {
+    "type": "text",
+    "content": "**Situació:** Nico surt de la consulta i explica a Lisa què li ha dit el metge.\n\n**Arzt:** _\"Sie dürfen Ihr Bein nicht bewegen!\"_\n\nQuina és la forma **reportada** correcta?"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "a", "label": "_Ich darf mein Bein nicht bewegen._" },
+      { "id": "b", "label": "_Ich soll mein Bein nicht bewegen._" },
+      { "id": "c", "label": "_Ich muss mein Bein nicht bewegen._" },
+      { "id": "d", "label": "_Ich will mein Bein nicht bewegen._" }
+    ]
+  },
+  "validation": {
+    "type": "exactMatch",
+    "answer": "b"
+  },
+  "feedback": {
+    "correct": {
+      "message": "Correcte. Quan **reportes** una prohibició dictada per un tercer, el modal natural és ==_**sollen + nicht**_== → _Ich **soll** mein Bein **nicht** bewegen._ Tècnicament _Ich darf mein Bein nicht bewegen_ també és gramatical, però ja no sona com a **reportat**: sona com si tu mateix afirmessis la prohibició. I _muss nicht_ voldria dir \"no cal\", no \"està prohibit\" (parany A1b-15).",
+      "references": ["A1b-16", "A1a-26", "A1b-15"]
+    },
+    "incorrect": {
+      "default": "==Regla clau==: per **reportar** una prohibició d'altri, fes servir _sollen + **nicht**_, no _nicht dürfen_. I mai _muss nicht_ — això voldria dir \"no cal\" (parany _nicht müssen_ ≠ _nicht dürfen_ d'A1b-15).",
+      "byResponse": [
+        {
+          "match": { "answer": "a" },
+          "message": "_Ich darf mein Bein nicht bewegen_ és gramatical, però sonaria com una **afirmació pròpia** (\"no puc moure'l\"), no com reportar el que ha dit el metge. Quan reportes, el natural és ==_soll + nicht_==."
+        },
+        {
+          "match": { "answer": "c" },
+          "message": "==Parany crític== (A1b-15): _muss nicht_ = \"**no cal**\" (no \"prohibit\"). _Ich muss mein Bein nicht bewegen_ voldria dir \"no cal que el mogui\" — absurd després d'una lesió. El correcte és ==_soll nicht_==."
+        },
+        {
+          "match": { "answer": "d" },
+          "message": "_will nicht_ expressaria **voluntat pròpia** (\"no vull moure'l\"). Aquí reportes la **prohibició del metge**, no la teva voluntat → ==_soll nicht_==."
+        }
+      ]
+    }
+  }
+}
