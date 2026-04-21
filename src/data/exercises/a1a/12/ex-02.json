@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-12-ex-02",
+  "topicId": "A1a-12",
+  "title": "Hi ha Umlaut o no?",
+  "prompt": "Escriu la vocal que falta al plural. Fixa't si la paraula agafa Umlaut o no.",
+  "difficulty": 2,
+  "tags": ["plural", "umlaut"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. der Sohn → die S{{1}}hne\n2. das Buch → die B{{2}}cher\n3. die Hand → die H{{3}}nde\n4. der Tisch → die Tisch{{4}}",
+    "blanks": [
+      { "id": "1", "label": "vocal de _Söhne_" },
+      { "id": "2", "label": "vocal de _Bücher_" },
+      { "id": "3", "label": "vocal de _Hände_" },
+      { "id": "4", "label": "terminació de _Tische_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "ö" },
+      { "blankId": "2", "placeholder": "ü" },
+      { "blankId": "3", "placeholder": "ä" },
+      { "blankId": "4", "placeholder": "e" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "ö", "2": "ü", "3": "ä", "4": "e" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has reconegut els Umlauts dels patrons ③ i ④ i no has caigut al parany del _Tisch_, que fa el plural regular en _-e_ sense canviar la vocal."
+    },
+    "incorrect": {
+      "default": "Recorda: Umlaut vol dir que la vocal de l'arrel canvia (_a → ä_, _o → ö_, _u → ü_). No tots els substantius l'agafen; s'aprèn cas a cas amb el vocabulari. _Tisch_ no fa Umlaut: _die Tisch**e**_."
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-12-ex-03",
+  "topicId": "A1a-12",
+  "title": "Els plurals a casa de la Sabine",
+  "prompt": "A casa de la Sabine hi ha moltes coses. Completa els plurals amb la terminació correcta.",
+  "difficulty": 2,
+  "tags": ["plural", "context", "endungen"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "In Sabines Wohnung gibt es zwei Tisch{{1}}, drei Lamp{{2}}, vier St**ü**hl{{3}} und ein Hotel{{4}} in der Nähe mit vielen Kamera{{5}}.",
+    "blanks": [
+      { "id": "1", "label": "plural de _Tisch_" },
+      { "id": "2", "label": "plural de _Lampe_" },
+      { "id": "3", "label": "plural de _Stuhl_ (ja amb Umlaut)" },
+      { "id": "4", "label": "plural de _Hotel_" },
+      { "id": "5", "label": "plural de _Kamera_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["e", "en", "er", "s", "∅"] },
+      { "blankId": "2", "options": ["e", "en", "er", "s", "∅"] },
+      { "blankId": "3", "options": ["e", "en", "er", "s", "∅"] },
+      { "blankId": "4", "options": ["e", "en", "er", "s", "∅"] },
+      { "blankId": "5", "options": ["e", "en", "er", "s", "∅"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "e", "2": "en", "3": "e", "4": "s", "5": "s" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has identificat tres patrons diferents: ③ (_Tische, Stühle_), ① (_Lampen_) i ⑥ (_Hotels, Kameras_)."
+    },
+    "incorrect": {
+      "default": "Revisa la terminació del singular: _-e_ → plural _-n_; consonant → sovint _-e_ (_Tisch, Stuhl_); paraules estrangeres (_Hotel, Kamera_) → _-s_."
+    }
+  }
+}

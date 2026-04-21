@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-12-ex-04",
+  "topicId": "A1a-12",
+  "title": "Escriu el plural complet",
+  "prompt": "Escriu la forma plural completa de cada substantiu. Atenció a l'Umlaut quan toqui.",
+  "difficulty": 2,
+  "tags": ["plural", "umlaut", "producció"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. der Sohn → die {{1}}\n2. das Kind → die {{2}}\n3. die Frau → die {{3}}\n4. das Auto → die {{4}}",
+    "blanks": [
+      { "id": "1", "label": "plural de _Sohn_" },
+      { "id": "2", "label": "plural de _Kind_" },
+      { "id": "3", "label": "plural de _Frau_" },
+      { "id": "4", "label": "plural de _Auto_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Söhne" },
+      { "blankId": "2", "placeholder": "Kinder" },
+      { "blankId": "3", "placeholder": "Frauen" },
+      { "blankId": "4", "placeholder": "Autos" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "Söhne", "2": "Kinder", "3": "Frauen", "4": "Autos" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has aplicat els quatre patrons: ③ amb Umlaut (_Söhne_), ④ sense Umlaut perquè _i_ no es pot umlautar (_Kinder_), ⑤ femení en _-en_ (_Frauen_), i ⑥ _Fremdwort_ (_Autos_)."
+    },
+    "incorrect": {
+      "default": "Recorda: _Sohn_ fa Umlaut (_Söhne_); _Kind_ agafa _-er_ sense Umlaut (_Kinder_); _Frau_ agafa _-en_, patró femení per defecte (_Frauen_); _Auto_ és paraula estrangera i fa _-s_ (_Autos_). Els substantius sempre amb majúscula inicial."
+    }
+  }
+}

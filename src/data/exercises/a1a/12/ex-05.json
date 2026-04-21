@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-12-ex-05",
+  "topicId": "A1a-12",
+  "title": "Singular o plural?",
+  "prompt": "Llegeix cada frase i decideix si la paraula marcada està en **singular** o en **plural**. Fixa't en l'article i en la forma.",
+  "difficulty": 2,
+  "tags": ["plural", "singular", "artikel", "context"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. **Die Mutter** kocht. → {{1}}\n2. **Die Mütter** sprechen. → {{2}}\n3. **Der Koffer** ist neu. → {{3}}\n4. **Die Koffer** sind neu. → {{4}}",
+    "blanks": [
+      { "id": "1", "label": "forma de _Mutter_" },
+      { "id": "2", "label": "forma de _Mütter_" },
+      { "id": "3", "label": "forma de _Koffer_ amb _der_" },
+      { "id": "4", "label": "forma de _Koffer_ amb _die_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["singular", "plural"] },
+      { "blankId": "2", "options": ["singular", "plural"] },
+      { "blankId": "3", "options": ["singular", "plural"] },
+      { "blankId": "4", "options": ["singular", "plural"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "singular", "2": "plural", "3": "singular", "4": "plural" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has usat dues pistes: l'Umlaut (_Mutter_ vs. _Mütter_) i l'article (_der_ vs. _die_ en _Koffer_), que és l'única pista quan la forma no canvia."
+    },
+    "incorrect": {
+      "default": "Recorda: _die Mütter_ porta Umlaut (plural); _die Koffer_ té la mateixa forma que _der Koffer_, però l'article _die_ en comptes de _der_ ens diu que és plural."
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-12-ex-01",
+  "topicId": "A1a-12",
+  "title": "Quina terminació de plural?",
+  "prompt": "Tria la terminació de plural que correspon a cada substantiu. Recorda: _-e_ → _-n_; _-er/-el/-en_ → sense terminació; consonant → _-e_ o _-en_; _Fremdwort_ → _-s_.",
+  "difficulty": 1,
+  "tags": ["plural", "endungen"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. die Lampe → die Lampe{{1}}\n2. der Koffer → die Koffer{{2}}\n3. das Hotel → die Hotel{{3}}\n4. die Uhr → die Uhr{{4}}",
+    "blanks": [
+      { "id": "1", "label": "plural de _Lampe_" },
+      { "id": "2", "label": "plural de _Koffer_" },
+      { "id": "3", "label": "plural de _Hotel_" },
+      { "id": "4", "label": "plural de _Uhr_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["-e", "-n", "-er", "-s", "∅"] },
+      { "blankId": "2", "options": ["-e", "-n", "-er", "-s", "∅"] },
+      { "blankId": "3", "options": ["-e", "-n", "-er", "-s", "∅"] },
+      { "blankId": "4", "options": ["-e", "-en", "-er", "-s", "∅"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "-n", "2": "∅", "3": "-s", "4": "-en" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Recorda els patrons: _-e_ → _-n_, _-er/-el/-en_ → sense terminació, consonant → _-e_ o _-en_, _Fremdwörter_ → _-s_."
+    },
+    "incorrect": {
+      "default": "Torna a la taula de les 6 terminacions. Mira bé com acaba la paraula en singular: la terminació del singular és la primera pista per endevinar el plural."
+    }
+  }
+}
