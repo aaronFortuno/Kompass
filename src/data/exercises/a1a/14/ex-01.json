@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-14-ex-01",
+  "topicId": "A1a-14",
+  "title": "Funció ↔ cas: la parella fonamental",
+  "prompt": "Completa cada afirmació triant l'opció correcta. Fixa la parella funció sintàctica ↔ cas que governa tota la declinació alemanya.",
+  "difficulty": 1,
+  "tags": ["casos", "funcio-sintactica", "conceptual"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. La funció de subjecte va sempre en cas: {{1}}\n2. La funció de complement directe va sempre en cas: {{2}}\n3. La funció de complement indirecte va sempre en cas: {{3}}\n4. En alemany, quan canvia el cas, el que canvia principalment és: {{4}}",
+    "blanks": [
+      { "id": "1", "label": "cas del subjecte" },
+      { "id": "2", "label": "cas del CD" },
+      { "id": "3", "label": "cas del CI" },
+      { "id": "4", "label": "element que es declina" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["nominatiu", "acusatiu", "datiu"] },
+      { "blankId": "2", "options": ["nominatiu", "acusatiu", "datiu"] },
+      { "blankId": "3", "options": ["nominatiu", "acusatiu", "datiu"] },
+      { "blankId": "4", "options": ["el substantiu", "l'article", "el verb"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "nominatiu",
+      "2": "acusatiu",
+      "3": "datiu",
+      "4": "l'article"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Tens la parella funció-cas clara (subjecte → nominatiu, CD → acusatiu, CI → datiu) i has retingut la idea central: en alemany, declinar vol dir **canviar l'article** (no el substantiu), segons la funció."
+    },
+    "incorrect": {
+      "default": "Torna a la secció anterior. Tres parelles: **subjecte → nominatiu**, **complement directe → acusatiu**, **complement indirecte → datiu**. I l'element que canvia de forma en la declinació és sobretot **l'article** que acompanya el substantiu.",
+      "byResponse": [
+        {
+          "match": { "4": "el substantiu" },
+          "message": "El substantiu alemany normalment **no canvia** de forma segons el cas (amb petites excepcions com el datiu plural o la n-Deklination). El pes de la declinació cau sobre **l'article**: _der → den → dem_."
+        },
+        {
+          "match": { "4": "el verb" },
+          "message": "El verb es conjuga (segons la persona i el temps), però això no és declinar. **Declinar** és canviar la forma de l'article (i més endavant de l'adjectiu) segons el cas que li toca."
+        }
+      ]
+    }
+  }
+}

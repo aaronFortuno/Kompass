@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-14-ex-02",
+  "topicId": "A1a-14",
+  "title": "De la funció catalana al cas alemany",
+  "prompt": "Llegeix cada frase catalana. Identifica la funció sintàctica de la part ressaltada i tria el cas en què aniria si la frase fos en alemany.",
+  "difficulty": 2,
+  "tags": ["casos", "funcio-sintactica", "analisi"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _**El professor** arriba tard_ → **el professor** és subjecte → cas: {{1}}\n2. _Em menjo **una poma**_ → **una poma** és complement directe → cas: {{2}}\n3. _Escric una carta **al meu amic**_ → **al meu amic** és complement indirecte → cas: {{3}}\n4. _**La Laura** és una mestra_ → **la Laura** és subjecte → cas: {{4}}",
+    "blanks": [
+      { "id": "1", "label": "cas de _el professor_" },
+      { "id": "2", "label": "cas de _una poma_" },
+      { "id": "3", "label": "cas de _al meu amic_" },
+      { "id": "4", "label": "cas de _la Laura_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["nominatiu", "acusatiu", "datiu"] },
+      { "blankId": "2", "options": ["nominatiu", "acusatiu", "datiu"] },
+      { "blankId": "3", "options": ["nominatiu", "acusatiu", "datiu"] },
+      { "blankId": "4", "options": ["nominatiu", "acusatiu", "datiu"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "nominatiu",
+      "2": "acusatiu",
+      "3": "datiu",
+      "4": "nominatiu"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has fet el pas clau del tema: identificar la **funció sintàctica** en català i mapejar-la al **cas** alemany corresponent. Això és el que faràs mentalment cada vegada que construeixis una frase en alemany."
+    },
+    "incorrect": {
+      "default": "Recorda les parelles: **subjecte → nominatiu**, **complement directe → acusatiu** (què o qui rep l'acció directament), **complement indirecte → datiu** (a qui va dirigida l'acció). Fixa't que tant a la 1 com a la 4 tenim subjectes, encara que un sigui persona i l'altre també —la funció és la mateixa, el cas també.",
+      "byResponse": [
+        {
+          "match": { "4": "acusatiu" },
+          "message": "_La Laura_ no rep l'acció d'un verb transitiu: amb _és_ (verb _ser_ / _sein_), el que ve davant és subjecte, i el que ve darrere és atribut. **Tots dos van en nominatiu.**"
+        },
+        {
+          "match": { "3": "acusatiu" },
+          "message": "_Al meu amic_ és a qui va dirigida la carta: és el **destinatari**, funció de complement indirecte → **datiu** en alemany."
+        }
+      ]
+    }
+  },
+  "relatedTopicIds": ["A1a-14"]
+}

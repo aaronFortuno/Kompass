@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-14-ex-03",
+  "topicId": "A1a-14",
+  "title": "Reconeix el cas de l'article alemany",
+  "prompt": "Cada frase alemanya té un article ressaltat. Llegeix la frase, identifica la funció del substantiu i tria el cas en què es troba l'article.",
+  "difficulty": 2,
+  "tags": ["casos", "articles", "reconeixement"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _**Der** Tisch ist groß._ — **der** està en cas: {{1}}\n2. _Ich esse **einen** Apfel._ — **einen** està en cas: {{2}}\n3. _Ich empfehle **meinem** Sohn das Buch._ — **meinem** està en cas: {{3}}\n4. _Ich sehe **den** Lehrer._ — **den** està en cas: {{4}}",
+    "blanks": [
+      { "id": "1", "label": "cas de _der_" },
+      { "id": "2", "label": "cas de _einen_" },
+      { "id": "3", "label": "cas de _meinem_" },
+      { "id": "4", "label": "cas de _den_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["nominatiu", "acusatiu", "datiu"] },
+      { "blankId": "2", "options": ["nominatiu", "acusatiu", "datiu"] },
+      { "blankId": "3", "options": ["nominatiu", "acusatiu", "datiu"] },
+      { "blankId": "4", "options": ["nominatiu", "acusatiu", "datiu"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "nominatiu",
+      "2": "acusatiu",
+      "3": "datiu",
+      "4": "acusatiu"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has llegit la frase, has identificat la funció del substantiu (subjecte, CD, CI, CD) i has deduït el cas. Fixa't que _der_ i _den_ són tots dos masculins, però el cas els distingeix: _der_ és nominatiu, _den_ és acusatiu. Aquesta és l'essència de la declinació."
+    },
+    "incorrect": {
+      "default": "Analitza cada frase pel verb: a la 1, _der Tisch_ és qui _és gran_ → subjecte → nominatiu. A la 2, _einen Apfel_ és el que _es menja_ → CD → acusatiu. A la 3, _meinem Sohn_ és a qui es _recomana_ el llibre → CI → datiu. A la 4, _den Lehrer_ és qui _es veu_ → CD → acusatiu. Les formes dels articles canvien segons el cas; això és declinar.",
+      "byResponse": [
+        {
+          "match": { "4": "nominatiu" },
+          "message": "_Den Lehrer_ no és subjecte: el subjecte és _ich_. _Den Lehrer_ és qui _és vist_, és complement directe → **acusatiu**. Fixa't que la forma masculina canvia de _der_ (nom.) a _den_ (ac.): és exactament el que significa declinar."
+        },
+        {
+          "match": { "3": "acusatiu" },
+          "message": "A _Ich empfehle meinem Sohn das Buch_, _das Buch_ és el CD (el que es recomana) i _meinem Sohn_ és el CI (a qui es recomana). Per tant _meinem_ va en **datiu**."
+        }
+      ]
+    }
+  },
+  "relatedTopicIds": ["A1a-14"]
+}
