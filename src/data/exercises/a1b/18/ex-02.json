@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-18-ex-02",
+  "topicId": "A1b-18",
+  "title": "A quina pregunta respon?",
+  "prompt": "A quina pregunta respon la frase *Ich fahre nach München*?",
+  "difficulty": 1,
+  "tags": ["wo", "woher", "wohin", "classificacio"],
+  "stimulus": {
+    "type": "text",
+    "content": "Llegeix la frase: *Ich fahre nach München.* A quina pregunta respon?"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "wo", "label": "Wo?" },
+      { "id": "woher", "label": "Woher?" },
+      { "id": "wohin", "label": "Wohin?" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "wohin" },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. *fahren + nach* indica destinació d'un moviment → **Wohin?**"
+    },
+    "incorrect": {
+      "default": "*fahren* és un verb de moviment i *nach München* és la destinació → la pregunta és **Wohin fährst du?**",
+      "byResponse": [
+        {
+          "match": { "response": "wo" },
+          "message": "*Wo?* demanaria un lloc estàtic. Aquí *fahren* implica moviment cap a un destí: **Wohin?**"
+        },
+        {
+          "match": { "response": "woher" },
+          "message": "*Woher?* demanaria l'origen. *nach München* marca la destinació, no la procedència: **Wohin?**"
+        }
+      ]
+    }
+  }
+}

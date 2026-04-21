@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-18-ex-03",
+  "topicId": "A1b-18",
+  "title": "Classifica cada frase",
+  "prompt": "Per a cada frase, tria la pregunta que li correspon.",
+  "difficulty": 2,
+  "tags": ["wo", "woher", "wohin", "dropdown"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1) *Ich komme aus Katalonien.* → {{1}}\n2) *Das Buch liegt auf dem Tisch.* → {{2}}\n3) *Wir fliegen nach Italien.* → {{3}}\n4) *Der Zug kommt vom Bahnhof.* → {{4}}\n5) *Die Kinder spielen im Garten.* → {{5}}\n6) *Ich gehe zum Supermarkt.* → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "frase 1" },
+      { "id": "2", "label": "frase 2" },
+      { "id": "3", "label": "frase 3" },
+      { "id": "4", "label": "frase 4" },
+      { "id": "5", "label": "frase 5" },
+      { "id": "6", "label": "frase 6" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Wo?", "Woher?", "Wohin?"] },
+      { "blankId": "2", "options": ["Wo?", "Woher?", "Wohin?"] },
+      { "blankId": "3", "options": ["Wo?", "Woher?", "Wohin?"] },
+      { "blankId": "4", "options": ["Wo?", "Woher?", "Wohin?"] },
+      { "blankId": "5", "options": ["Wo?", "Woher?", "Wohin?"] },
+      { "blankId": "6", "options": ["Wo?", "Woher?", "Wohin?"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Woher?",
+      "2": "Wo?",
+      "3": "Wohin?",
+      "4": "Woher?",
+      "5": "Wo?",
+      "6": "Wohin?"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has detectat els tres patrons: *kommen aus/von* → origen, *sein/liegen/spielen* → lloc, *fliegen/gehen* + destí → direcció."
+    },
+    "incorrect": {
+      "default": "Fixa't en el verb: *liegen, sein, spielen, wohnen* → **Wo?**; *kommen aus/von* → **Woher?**; *gehen, fahren, fliegen* cap a un destí → **Wohin?**",
+      "byResponse": [
+        {
+          "match": { "1": "Wo?" },
+          "message": "*aus Katalonien* marca l'origen → **Woher?**"
+        },
+        {
+          "match": { "1": "Wohin?" },
+          "message": "*aus Katalonien* marca d'on vens, no on vas → **Woher?**"
+        },
+        {
+          "match": { "2": "Woher?" },
+          "message": "*liegen auf dem Tisch* descriu una ubicació estàtica → **Wo?**"
+        },
+        {
+          "match": { "2": "Wohin?" },
+          "message": "*liegen* no és moviment. *auf dem Tisch* (datiu) marca posició → **Wo?**"
+        },
+        {
+          "match": { "3": "Wo?" },
+          "message": "*fliegen nach Italien* indica destinació d'un vol → **Wohin?**"
+        },
+        {
+          "match": { "3": "Woher?" },
+          "message": "*nach* marca destí, no origen → **Wohin?**"
+        },
+        {
+          "match": { "4": "Wo?" },
+          "message": "*kommt vom Bahnhof* indica d'on prové el tren → **Woher?**"
+        },
+        {
+          "match": { "4": "Wohin?" },
+          "message": "*vom Bahnhof* és origen (d'on ve), no destí → **Woher?**"
+        },
+        {
+          "match": { "5": "Woher?" },
+          "message": "*spielen im Garten* descriu on juguen, estàtic → **Wo?**"
+        },
+        {
+          "match": { "5": "Wohin?" },
+          "message": "*spielen* no marca trajecte. *im Garten* (datiu) és ubicació → **Wo?**"
+        },
+        {
+          "match": { "6": "Wo?" },
+          "message": "*gehen zum Supermarkt* implica moviment cap a un destí → **Wohin?**"
+        },
+        {
+          "match": { "6": "Woher?" },
+          "message": "*zum Supermarkt* marca destí, no origen → **Wohin?**"
+        }
+      ]
+    }
+  }
+}

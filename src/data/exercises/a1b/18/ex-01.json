@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-18-ex-01",
+  "topicId": "A1b-18",
+  "title": "Quina pregunta fas?",
+  "prompt": "Quina pregunta fas per saber *on viu* la teva germana?",
+  "difficulty": 1,
+  "tags": ["wo", "woher", "wohin", "identificacio"],
+  "stimulus": {
+    "type": "text",
+    "content": "Vols saber **on viu** la teva germana. Quina pregunta alemanya hi correspon?"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "wo", "label": "Wo?" },
+      { "id": "woher", "label": "Woher?" },
+      { "id": "wohin", "label": "Wohin?" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "wo" },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. *Viure* és una ubicació estàtica → **Wo wohnt deine Schwester?**"
+    },
+    "incorrect": {
+      "default": "*Viure en un lloc* no implica moviment. És ubicació → **Wo?**. *Woher?* seria d'on és originària; *Wohin?* cap a on es mou.",
+      "byResponse": [
+        {
+          "match": { "response": "woher" },
+          "message": "*Woher?* pregunta per l'origen (*d'on ve*). Per demanar el lloc on viu fem servir **Wo wohnt sie?**"
+        },
+        {
+          "match": { "response": "wohin" },
+          "message": "*Wohin?* pregunta per la destinació (*cap a on va*). Viure en un lloc no és moviment: **Wo wohnt sie?**"
+        }
+      ]
+    }
+  }
+}

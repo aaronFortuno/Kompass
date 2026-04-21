@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-18",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 18,
+  "title": "Wo? Woher? Wohin? — les tres preguntes locals",
+  "shortTitle": "Wo/Woher/Wohin",
+  "description": "Distinció fonamental entre Wo? (ubicació, datiu), Woher? (origen, aus/von + datiu) i Wohin? (direcció, acusatiu amb Wechselpräp. o datiu amb nach/zu). Base conceptual per a A1b-19.",
+  "axes": ["preposicions", "casos"],
+  "prerequisites": ["A1a-34", "A1b-1"],
+  "estimatedMinutes": 10,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### On? D'on? Cap a on?\n\nAbans d'endinsar-te a les **Wechselpräpositionen** (A1b-19), cal que tinguis absolutament clares les **tres preguntes** que organitzen tot el sistema de preposicions locals de l'alemany:"
+        },
+        {
+          "type": "table",
+          "headers": ["Pregunta", "Significat", "Descriu…"],
+          "rows": [
+            ["**==Wo?==**", "**on?**", "un **lloc** (ubicació estàtica)"],
+            ["**==Woher?==**", "**d'on?**", "la **procedència** (origen d'un moviment)"],
+            ["**==Wohin?==**", "**cap a on?**", "la **direcció** (destinació d'un moviment)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Imatge mental",
+          "body": "Visualment: *Woher?* → una fletxa que **ve cap a tu**. *Wo?* → una figura **quieta**. *Wohin?* → una fletxa que **surt de tu cap enfora**."
+        },
+        {
+          "type": "explanation",
+          "body": "Aquesta triple distinció no existeix com a tal en català (*on?* cobreix tant *wo* com *wohin* en el llenguatge col·loquial: \"on vas?\" = *wohin gehst du?*). En alemany, la pregunta t'obliga a triar **cas gramatical** i sovint **preposició**. Per això aquesta lliçó és tan curta de contingut però tan decisiva.\n\n> Temps estimat: 8-10 minuts. Al final faràs 4 exercicis."
+        }
+      ]
+    },
+    {
+      "id": "wo",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### *Wo?* — ubicació estàtica\n\n**==Wo?==** pregunta per un **lloc on alguna cosa és, està o passa**, sense moviment. La resposta descriu una **posició**.\n\n- *==Wo== bist du?* → *Ich bin **im** Wohnzimmer.* (al menjador)\n- *==Wo== wohnt Anna?* → *Sie wohnt **in** Berlin.* (a Berlín)\n- *==Wo== ist die Post?* → *Die Post ist **neben dem** Bahnhof.* (al costat de l'estació)\n\n**Característica clau:** les preposicions locals que responen a *Wo?* van amb **==datiu==**. Això ho vas veure a **A1b-1** (*in*, *an*, *auf*, *neben*, *in der Nähe von*) i el sistema general de preposicions fixes de datiu a **A1a-34**."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Regla mnemotècnica",
+          "body": "Pensa-ho així: si la figura **està quieta**, l'alemany \"congela\" la preposició en datiu."
+        }
+      ]
+    },
+    {
+      "id": "woher",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### *Woher?* — la procedència\n\n**==Woher?==** pregunta **d'on ve** alguna cosa o algú. La resposta descriu l'**origen** d'un trajecte o d'una persona.\n\nLes dues preposicions típiques són **==aus==** i **==von==**, totes dues amb **datiu** (A1a-34):\n\n- *==Woher== kommst du?* → *Ich komme **aus** Spanien.* (sóc d'Espanya — procedència general)\n- *==Woher== kommt der Bus?* → *Der Bus kommt **vom** Bahnhof.* (ve de l'estació — punt concret)\n- *==Woher== weißt du das?* → *Das weiß ich **von** meiner Mutter.* (ho sé per la meva mare)\n\n**Diferència *aus* / *von*** (ja vista a A1b-3):\n\n- **aus** = origen/procedència general (país, ciutat, edifici d'on surts).\n- **von** = punt de partida puntual d'un trajecte o font d'informació."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Contrast",
+          "body": "*Ich komme **aus** Barcelona* (hi he nascut) vs. *Ich komme **von** der Arbeit* (en vinc ara mateix)."
+        }
+      ]
+    },
+    {
+      "id": "wohin",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### *Wohin?* — la direcció\n\n**==Wohin?==** pregunta **cap a on** va alguna cosa o algú. La resposta descriu la **destinació** d'un moviment.\n\nLes preposicions típiques són **==nach==**, **==zu==** i **==in==** (aquesta última amb **acusatiu** quan marca direcció). Les vas introduir a **A1b-3**:\n\n- *==Wohin== gehst du?* → *Ich gehe **nach Hause**.* (cap a casa)\n- *==Wohin== fährst du?* → *Ich fahre **nach** Berlin.* (noms propis → *nach* + datiu)\n- *==Wohin== gehst du?* → *Ich gehe **zum** Arzt.* (noms comuns → *zu* + datiu)\n- *==Wohin== fliegt ihr?* → *Wir fliegen **in die** Schweiz.* (país amb article → *in* + **acusatiu**)\n\n**Característica clau:** quan *in*, *an*, *auf* (i les altres Wechselpräpositionen) responen a *Wohin?*, van amb **==acusatiu==**. Això és el gran salt que treballaràs a **A1b-19**."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Salt clau",
+          "body": "Ara tens la base conceptual: *Wohin?* → moviment → cas **acusatiu** (amb les Wechselpräpositionen)."
+        }
+      ]
+    },
+    {
+      "id": "quick-check-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-18-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "el-sistema",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El sistema complet en una sola taula\n\nAquesta és la taula que has de tenir gravada abans d'entrar a A1b-19:"
+        },
+        {
+          "type": "table",
+          "title": "18.1 Les tres preguntes locals",
+          "headers": ["Pregunta", "Significat", "Cas", "Preposicions típiques", "Exemple"],
+          "rows": [
+            ["**==Wo?==**", "on (estàtic)", "**datiu**", "*in, an, auf, neben, bei, vor, hinter, über, unter, zwischen*", "*Ich bin **im** Büro.*"],
+            ["**==Woher?==**", "d'on (origen)", "**datiu**", "*aus, von*", "*Ich komme **aus der** Schweiz.*"],
+            ["**==Wohin?==**", "cap a on (destí)", "**acusatiu** (amb Wechselpräp.) / **datiu** (amb *nach, zu*)", "*in, an, auf, nach, zu*", "*Ich fahre **in die** Stadt.*"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Dos contrasts que has de notar bé:**\n\n1. *Wo?* i *Wohin?* poden fer servir **la mateixa preposició** (*in*, *an*, *auf*…), però amb **cas diferent**:\n   - *Ich bin **im** Büro.* (*Wo?* → datiu)\n   - *Ich gehe **ins** Büro.* (*Wohin?* → acusatiu; *in + das* → *ins*)\n2. *Woher?* sempre demana datiu (*aus*, *von* són preposicions de datiu fixes, A1a-34). No canvia mai."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "El gran dilema A1",
+          "body": "El gran dilema pedagògic de l'alemany A1 és només aquest: **distingir *Wo?* de *Wohin?*** quan la preposició és la mateixa. Aquesta lliçó t'ensenya a fer la pregunta *abans* d'escriure la frase."
+        }
+      ]
+    },
+    {
+      "id": "estrategia",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Estratègia pràctica: pregunta't primer\n\nAbans d'escriure una frase amb preposició local, fes-te la pregunta:\n\n1. **Hi ha moviment?** Si **no** → és *Wo?* → datiu.\n2. Si sí, **d'on ve?** → *Woher?* → *aus* / *von* + datiu.\n3. Si sí, **cap a on va?** → *Wohin?* → *nach* / *zu* + datiu, **o** *in/an/auf* + **acusatiu**.\n\n**Exemples guiats:**\n\n- \"El llibre és damunt la taula.\" → *No hi ha moviment* → *Wo?* → *Das Buch ist **auf dem** Tisch.* (datiu)\n- \"Deixo el llibre damunt la taula.\" → *Hi ha moviment (poso alguna cosa)* → *Wohin?* → *Ich lege das Buch **auf den** Tisch.* (acusatiu)\n- \"Surto de l'oficina.\" → *Origen* → *Woher?* → *Ich komme **aus dem** Büro.*\n- \"Vaig a l'oficina.\" → *Destinació* (nom comú) → *Wohin?* → *Ich gehe **ins** Büro.* (*in + das* → *ins*)"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Truc de verbs",
+          "body": "Els verbs **sein, stehen, liegen, sitzen, wohnen, bleiben** acompanyen gairebé sempre *Wo?* (datiu). Els verbs **gehen, fahren, fliegen, kommen, laufen, legen, stellen, setzen** acompanyen gairebé sempre *Wohin?* o *Woher?*. Això ho aprofundiràs a A1b-21."
+        }
+      ]
+    },
+    {
+      "id": "quick-check-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-18-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Errors típics del catalanoparlant\n\n1. **Confondre \"on\" català amb *Wo?* alemany sempre.**\n   - \"On vas?\" NO es tradueix per *Wo gehst du?* sinó per ***Wohin** gehst du?* (hi ha moviment).\n   - \"On vius?\" → *Wo wohnst du?* (no hi ha moviment).\n2. **Oblidar el canvi de cas amb la mateixa preposició.**\n   - *Ich bin **in der** Schule* (*Wo?* → datiu femení) vs. *Ich gehe **in die** Schule* (*Wohin?* → acusatiu femení).\n3. **Barrejar *aus* i *von* en respostes a *Woher?*.**\n   - *Ich komme **aus** Deutschland* (nacionalitat/país) / *Ich komme **von** der Party* (punt concret).\n4. **Fer *nach* amb noms comuns** en respostes a *Wohin?* → error típic (vegeu A1b-3): *❌ nach dem Arzt* / *✅ zum Arzt*.\n5. **Traduir \"d'on\" per *wo* + *von* separats**: en alemany hi ha **una sola paraula**: ***woher***. Igual amb *wohin*."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-18-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-18-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-18-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-18-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Resum del que t'emportes\n\n- L'alemany distingeix **tres preguntes locals**: ==Wo?== (on, estàtic), ==Woher?== (d'on, origen), ==Wohin?== (cap a on, destinació).\n- Aquesta distinció determina el **cas gramatical**:\n  - *Wo?* → **datiu** (amb qualsevol preposició local, A1b-1, A1a-34).\n  - *Woher?* → **datiu** (*aus*, *von*; A1a-34, A1b-3).\n  - *Wohin?* → **acusatiu** amb Wechselpräpositionen (*in, an, auf*…); **datiu** amb *nach* i *zu* (A1b-3).\n- La **mateixa preposició** pot donar frases diferents: *im Büro* (datiu, estàtic) / *ins Büro* (acusatiu, direcció).\n- **Regla pràctica:** abans d'escriure, pregunta't primer *Wo?*, *Woher?* o *Wohin?*. La resposta a aquesta pregunta tria el cas."
+        },
+        {
+          "type": "table",
+          "title": "18.2 Síntesi — les tres preguntes",
+          "headers": ["Pregunta", "Cas", "Preposicions", "Exemple"],
+          "rows": [
+            ["**==Wo?==**", "datiu", "*in, an, auf, neben, bei, vor, hinter, über, unter, zwischen*", "*Ich bin **im** Büro.*"],
+            ["**==Woher?==**", "datiu", "*aus, von*", "*Ich komme **aus der** Schweiz.*"],
+            ["**==Wohin?==**", "acusatiu / datiu", "*in, an, auf* (+ ac.) · *nach, zu* (+ dat.)", "*Ich gehe **ins** Büro.*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Proper pas",
+          "body": "A **A1b-19** trobaràs les **Wechselpräpositionen** — les 9 preposicions (*in, an, auf, über, unter, vor, hinter, neben, zwischen*) que canvien entre datiu (*Wo?*) i acusatiu (*Wohin?*). Aquesta lliçó ja t'ha donat la pregunta; ara només caldrà aplicar el cas correcte.\n\n*Wo bist du jetzt? Woher kommst du? Wohin gehst du als nächstes?* — Si saps respondre aquestes tres preguntes, ja tens el mapa mental fet."
+        }
+      ]
+    }
+  ]
+}

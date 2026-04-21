@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-18-ex-06",
+  "topicId": "A1b-18",
+  "title": "Reconstrueix la pregunta",
+  "prompt": "Escriu la pregunta (*Wo*, *Woher* o *Wohin*) que correspon a cada resposta. No posis signe d'interrogació.",
+  "difficulty": 2,
+  "tags": ["wo", "woher", "wohin", "typein"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1) {{1}} fährt der Bus? — Nach Hamburg.\n2) {{2}} ist mein Handy? — Auf dem Sofa.\n3) {{3}} kommst du so spät? — Von der Arbeit.\n4) {{4}} gehen wir heute Abend? — Ins Kino.",
+    "blanks": [
+      { "id": "1", "label": "pregunta 1" },
+      { "id": "2", "label": "pregunta 2" },
+      { "id": "3", "label": "pregunta 3" },
+      { "id": "4", "label": "pregunta 4" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Wo / Woher / Wohin" },
+      { "blankId": "2", "placeholder": "Wo / Woher / Wohin" },
+      { "blankId": "3", "placeholder": "Wo / Woher / Wohin" },
+      { "blankId": "4", "placeholder": "Wo / Woher / Wohin" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Wohin"],
+      "2": ["Wo"],
+      "3": ["Woher"],
+      "4": ["Wohin"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has sabut reconstruir la pregunta partint del tipus de resposta: destinació (*nach*, *ins*) → *Wohin?*; lloc (*auf*) → *Wo?*; origen (*von*) → *Woher?*."
+    },
+    "incorrect": {
+      "default": "Mira la preposició i el verb de la resposta. *nach/zu/ins + moviment* → *Wohin?*. *auf/in/an + ser/estar* → *Wo?*. *aus/von + venir* → *Woher?*.",
+      "byResponse": [
+        {
+          "match": { "1": "Wo" },
+          "message": "*fahren nach Hamburg* és moviment cap a un destí → **Wohin** fährt der Bus?"
+        },
+        {
+          "match": { "1": "Woher" },
+          "message": "*nach Hamburg* marca destí, no origen → **Wohin** fährt der Bus?"
+        },
+        {
+          "match": { "2": "Wohin" },
+          "message": "*ist auf dem Sofa* és ubicació estàtica (datiu) → **Wo** ist mein Handy?"
+        },
+        {
+          "match": { "2": "Woher" },
+          "message": "*auf dem Sofa* descriu on és el mòbil, no d'on ve → **Wo** ist mein Handy?"
+        },
+        {
+          "match": { "3": "Wo" },
+          "message": "*von der Arbeit* indica origen d'un trajecte → **Woher** kommst du so spät?"
+        },
+        {
+          "match": { "3": "Wohin" },
+          "message": "*kommen von* marca procedència, no destí → **Woher** kommst du so spät?"
+        },
+        {
+          "match": { "4": "Wo" },
+          "message": "*ins Kino* és acusatiu, marca destinació d'un moviment → **Wohin** gehen wir?"
+        },
+        {
+          "match": { "4": "Woher" },
+          "message": "*ins Kino* marca cap a on anem, no d'on venim → **Wohin** gehen wir?"
+        }
+      ]
+    }
+  }
+}

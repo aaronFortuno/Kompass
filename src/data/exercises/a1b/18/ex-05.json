@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-18-ex-05",
+  "topicId": "A1b-18",
+  "title": "Pregunta i resposta",
+  "prompt": "Empareja cada pregunta amb la resposta adequada.",
+  "difficulty": 2,
+  "tags": ["wo", "woher", "wohin", "match"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "q1", "group": "q", "content": { "type": "text", "content": "Wo wohnst du?" } },
+      { "id": "q2", "group": "q", "content": { "type": "text", "content": "Woher kommst du?" } },
+      { "id": "q3", "group": "q", "content": { "type": "text", "content": "Wohin gehst du?" } },
+      { "id": "q4", "group": "q", "content": { "type": "text", "content": "Wo ist die Bank?" } },
+      { "id": "q5", "group": "q", "content": { "type": "text", "content": "Woher weißt du das?" } },
+      { "id": "a1", "group": "a", "content": { "type": "text", "content": "Ich wohne in Berlin." } },
+      { "id": "a2", "group": "a", "content": { "type": "text", "content": "Ich komme aus Polen." } },
+      { "id": "a3", "group": "a", "content": { "type": "text", "content": "Ich gehe nach Hause." } },
+      { "id": "a4", "group": "a", "content": { "type": "text", "content": "Neben dem Supermarkt." } },
+      { "id": "a5", "group": "a", "content": { "type": "text", "content": "Von meinem Bruder." } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Pregunta",
+    "groupBLabel": "Resposta"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["q1", "a1"],
+      ["q2", "a2"],
+      ["q3", "a3"],
+      ["q4", "a4"],
+      ["q5", "a5"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Observa el patró pregunta-resposta: cada *W*-paraula demana un tipus d'informació i una preposició concreta."
+    },
+    "incorrect": {
+      "default": "Associa cada pregunta al seu tipus: *Wo?* → lloc estàtic; *Woher?* → origen (*aus*/*von*); *Wohin?* → destinació (*nach*/*zu*/*in*+acusatiu)."
+    }
+  }
+}
