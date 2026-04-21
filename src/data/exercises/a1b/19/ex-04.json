@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-19-ex-04",
+  "topicId": "A1b-19",
+  "title": "Parelles de verbs: liegen/legen, stehen/stellen, sitzen/setzen",
+  "prompt": "Tria el verb correcte i el cas adequat. Recorda: posar (acció) = acusatiu; estar (estat) = datiu.",
+  "difficulty": 2,
+  "tags": ["wechselpraepositionen", "parelles-verbs", "liegen-legen"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1) *Ich {{1}} das Buch {{2}} Regal.* (posar, *das Regal* = neutre)\n2) *Das Buch {{3}} {{4}} Regal.* (es troba, ja hi és)\n3) *Sie {{5}} sich {{6}} Stuhl.* (asseure's, *der Stuhl*)\n4) *Sie {{7}} {{8}} Stuhl.* (està asseguda)",
+    "blanks": [
+      { "id": "1", "label": "verb (posar estirat)" },
+      { "id": "2", "label": "preposició + article" },
+      { "id": "3", "label": "verb (estar estirat)" },
+      { "id": "4", "label": "preposició + article" },
+      { "id": "5", "label": "verb (posar assegut)" },
+      { "id": "6", "label": "preposició + article" },
+      { "id": "7", "label": "verb (estar assegut)" },
+      { "id": "8", "label": "preposició + article" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["lege", "liege"] },
+      { "blankId": "2", "options": ["im", "ins"] },
+      { "blankId": "3", "options": ["legt", "liegt"] },
+      { "blankId": "4", "options": ["im", "ins"] },
+      { "blankId": "5", "options": ["setzt", "sitzt"] },
+      { "blankId": "6", "options": ["auf dem", "auf den"] },
+      { "blankId": "7", "options": ["setzt", "sitzt"] },
+      { "blankId": "8", "options": ["auf dem", "auf den"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "lege",
+      "2": "ins",
+      "3": "liegt",
+      "4": "im",
+      "5": "setzt",
+      "6": "auf den",
+      "7": "sitzt",
+      "8": "auf dem"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. ==*legen / stellen / setzen*== = acció de posar → **acusatiu**. ==*liegen / stehen / sitzen*== = estat resultant → **datiu**.",
+      "references": ["A1b-19"]
+    },
+    "incorrect": {
+      "default": "Parella difícil: el verb **transitiu** (*legen, stellen, setzen*) demana acusatiu perquè hi ha moviment. El verb **intransitiu** (*liegen, stehen, sitzen*) és estàtic → datiu. Frases completes: (1) *Ich **lege** das Buch **ins** Regal.* (2) *Das Buch **liegt im** Regal.* (3) *Sie **setzt** sich **auf den** Stuhl.* (4) *Sie **sitzt auf dem** Stuhl.*",
+      "byResponse": [
+        {
+          "match": { "1": "liege" },
+          "message": "*liegen* significa \"estar estirat\" (intransitiu, estat). Aquí vols dir \"jo **poso** el llibre al prestatge\" → *legen* → *Ich **lege** das Buch ins Regal.*"
+        },
+        {
+          "match": { "5": "sitzt" },
+          "message": "*sie sitzt sich* no existeix: *sitzen* no és reflexiu. Per \"asseure's\" es fa servir *sich setzen* (transitiu) → *Sie **setzt** sich auf den Stuhl.*"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-19-ex-03",
+  "topicId": "A1b-19",
+  "title": "Tria datiu o acusatiu segons Wo? / Wohin?",
+  "prompt": "Completa amb l'article (o contracció) adequat. Pensa: moviment o posició?",
+  "difficulty": 2,
+  "tags": ["wechselpraepositionen", "wo-wohin", "articles"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1) *Das Kind läuft {{1}} Garten.* (der Garten)\n2) *Die Blume steht {{2}} Fenster.* (das Fenster)\n3) *Wir fahren {{3}} Berge.* (die Berge, plural)\n4) *Der Hund schläft {{4}} Sofa.* (das Sofa)\n5) *Ich hänge das Poster {{5}} Wand.* (die Wand)\n6) *Die Brille liegt {{6}} Tisch.* (der Tisch)",
+    "blanks": [
+      { "id": "1", "label": "preposició + article" },
+      { "id": "2", "label": "preposició + article" },
+      { "id": "3", "label": "preposició + article" },
+      { "id": "4", "label": "preposició + article" },
+      { "id": "5", "label": "preposició + article" },
+      { "id": "6", "label": "preposició + article" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "ex: in den" },
+      { "blankId": "2", "placeholder": "ex: am" },
+      { "blankId": "3", "placeholder": "ex: in die" },
+      { "blankId": "4", "placeholder": "ex: auf dem" },
+      { "blankId": "5", "placeholder": "ex: an die" },
+      { "blankId": "6", "placeholder": "ex: auf dem" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["in den"],
+      "2": ["am", "an dem"],
+      "3": ["in die"],
+      "4": ["auf dem"],
+      "5": ["an die"],
+      "6": ["auf dem"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has detectat correctament moviment (1, 3, 5) vs. posició (2, 4, 6).",
+      "references": ["A1b-19"]
+    },
+    "incorrect": {
+      "default": "Revisa el verb de cada frase: *laufen, fahren, hängen* (transitiu) = **moviment** → acusatiu; *stehen, schlafen, liegen* = **posició** → datiu. Al (2) *am* és la contracció de *an dem*."
+    }
+  }
+}

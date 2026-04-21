@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-19-ex-02",
+  "topicId": "A1b-19",
+  "title": "Tria el cas segons el verb",
+  "prompt": "Completa: *Die Katze springt ____ Bett.* (*Bett* = *das*, neutre)",
+  "difficulty": 1,
+  "tags": ["wechselpraepositionen", "verbs-moviment", "akkusativ"],
+  "stimulus": {
+    "type": "text",
+    "content": "Fixa't bé en el verb. *springen* (saltar): descriu una posició o un moviment?"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "auf-dem", "label": "*auf dem* (datiu)" },
+      { "id": "auf-das", "label": "*auf das* (acusatiu)" },
+      { "id": "aufs", "label": "*aufs* (acusatiu, contret)" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "auf-das" },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. *springen* és **moviment** → *Wohin?* → ==acusatiu== → *auf das Bett*. La forma col·loquial *aufs Bett* també seria vàlida.",
+      "references": ["A1b-19"]
+    },
+    "incorrect": {
+      "default": "El gat **salta** → es mou → *Wohin?* → acusatiu. *auf dem Bett* voldria dir que **ja hi és** (Wo?).",
+      "byResponse": [
+        {
+          "match": { "response": "auf-dem" },
+          "message": "*auf dem Bett* és **datiu** (Wo?) i significaria \"el gat és/està sobre el llit\". Aquí el gat es mou cap al llit → *Wohin?* → acusatiu → *auf das Bett*."
+        },
+        {
+          "match": { "response": "aufs" },
+          "message": "El cas és correcte (acusatiu), però *aufs* és la **forma col·loquial** contreta. En un context neutre, la forma completa *auf das* és més segura. Igualment, si has triat *aufs*, pedagògicament vas pel bon camí."
+        }
+      ]
+    }
+  }
+}

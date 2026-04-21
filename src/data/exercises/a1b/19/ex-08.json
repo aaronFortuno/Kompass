@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-19-ex-08",
+  "topicId": "A1b-19",
+  "title": "Minidiàleg: on ets, cap on vas?",
+  "prompt": "Llegeix el diàleg i omple els buits triant preposició + article correctes.",
+  "difficulty": 3,
+  "tags": ["wechselpraepositionen", "dialog", "context-comunicatiu"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "**A:** *Wo bist du?*\n**B:** *Ich bin {{1}} Küche. Und du?* (*die Küche*)\n**A:** *Ich sitze {{2}} Garten, {{3}} einem Baum. Kommst du?* (*der Garten, der Baum*)\n**B:** *Ja, ich komme gleich {{4}} Garten.*\n**A:** *Bring bitte die Gläser! Sie stehen {{5}} Regal {{6}} Spüle.* (*das Regal, die Spüle*)\n**B:** *OK! Ich lege sie schnell {{7}} Tablett.* (*das Tablett*)",
+    "blanks": [
+      { "id": "1", "label": "Wo? → Küche" },
+      { "id": "2", "label": "Wo? → Garten" },
+      { "id": "3", "label": "Wo? → Baum" },
+      { "id": "4", "label": "Wohin? → Garten" },
+      { "id": "5", "label": "Wo? → Regal" },
+      { "id": "6", "label": "Wo? → Spüle" },
+      { "id": "7", "label": "Wohin? → Tablett" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["in der", "in die"] },
+      { "blankId": "2", "options": ["im", "in den"] },
+      { "blankId": "3", "options": ["unter", "über"] },
+      { "blankId": "4", "options": ["im", "in den"] },
+      { "blankId": "5", "options": ["im", "ins"] },
+      { "blankId": "6", "options": ["neben der", "neben die"] },
+      { "blankId": "7", "options": ["aufs", "auf dem"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "in der",
+      "2": "im",
+      "3": "unter",
+      "4": "in den",
+      "5": "im",
+      "6": "neben der",
+      "7": "aufs"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has seguit el fil *on ets? / cap on vas? / on hi ha / cap on ho poses*. ==*sein / sitzen / stehen*== → datiu (1, 2, 3, 5, 6); ==*kommen / legen*== → acusatiu (4, 7).",
+      "references": ["A1b-19"]
+    },
+    "incorrect": {
+      "default": "Reviseu pas a pas: (1) *Ich bin* → Wo? → *in der Küche* (fem. datiu). (2) *Ich sitze* → Wo? → *im Garten* (= *in dem*, masc. dat.). (3) *unter einem Baum* = sota un arbre (datiu, ubicació). (4) *komme in den Garten* → Wohin? (masc. ac.). (5) *stehen im Regal* → Wo? (6) *neben der Spüle* → Wo? (fem. dat.). (7) *lege aufs Tablett* → Wohin? (= *auf das*, neut. ac.)."
+    }
+  }
+}

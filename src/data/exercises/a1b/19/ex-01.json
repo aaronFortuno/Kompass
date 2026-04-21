@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-19-ex-01",
+  "topicId": "A1b-19",
+  "title": "Contraccions: datiu o acusatiu?",
+  "prompt": "En la frase *Ich gehe ins Theater*, quin cas hi ha amagat dins la contracció *ins*?",
+  "difficulty": 1,
+  "tags": ["wechselpraepositionen", "contraccions", "cas"],
+  "stimulus": {
+    "type": "text",
+    "content": "Recorda el truc: *ins* = *in* + article contret. Quin article?"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "dativ", "label": "Dativ (*dem*)" },
+      { "id": "akkusativ", "label": "Akkusativ (*das*)" },
+      { "id": "nominativ", "label": "Nominativ (*das*)" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "akkusativ" },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. ==*ins* = *in + das*== (acusatiu neutre). I com que indica direcció (*gehen* cap a un lloc), el cas ha de ser acusatiu.",
+      "references": ["A1b-19"]
+    },
+    "incorrect": {
+      "default": "*ins* conté *das*, no *dem*. A més, *Ich gehe…* indica **direcció** (Wohin?) → acusatiu.",
+      "byResponse": [
+        {
+          "match": { "response": "dativ" },
+          "message": "No. *im / am* contenen *dem* (datiu). ==*ins / ans / aufs*== contenen *das* (acusatiu). I *gehen* és moviment → Wohin? → acusatiu."
+        },
+        {
+          "match": { "response": "nominativ" },
+          "message": "El nominatiu no apareix mai darrere d'una preposició. Després d'una Wechselpräposition tens o bé **datiu** (Wo?) o bé **acusatiu** (Wohin?). Aquí, *gehen* = moviment → acusatiu."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-19",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 19,
+  "title": "Die lokalen Präpositionen — Wechselpräpositionen",
+  "shortTitle": "Wechselpräpositionen",
+  "description": "Les 9 preposicions \"commutadores\" que alternen datiu (Wo?) i acusatiu (Wohin?) segons el significat de la frase.",
+  "axes": ["preposicions", "casos"],
+  "prerequisites": ["A1b-1", "A1b-18", "A1a-28", "A1a-34"],
+  "estimatedMinutes": 25,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### La peça central d'A1b: preposicions que \"canvien\" de cas\n\nHem arribat al **tema clau de tot A1b**. Si entens aquesta lliçó, entens el 80% de la gramàtica local alemanya. Si no, tot el que vindrà després (rutes, indicacions, direccions) coixejarà. Així que: respira, no vagis ràpid, i torna-hi quan calgui.\n\nA **A1b-1** ja vas veure una part del pastís: *in*, *an*, *auf*, *neben* amb **datiu** quan responen a *Wo?* (\"on?\"). També a **A1a-34** vas aprendre preposicions que **sempre** demanen datiu (*mit*, *bei*, *aus*, *nach*, *von*, *zu*, *seit*). I a **A1b-18** les que **sempre** demanen acusatiu (*durch*, *für*, *gegen*, *ohne*, *um*).\n\nAvui toca un **tercer grup** de preposicions: les **==Wechselpräpositionen==** (\"preposicions commutadores\" o \"mixtes\"). Són **nou** i tenen una particularitat decisiva:\n\n> Poden anar amb **datiu** *o* amb **acusatiu**. El cas depèn del **significat** de la frase, no de la preposició.\n\nEn aquesta lliçó aprendràs:\n\n1. **Quines són les 9 Wechselpräpositionen** i què signifiquen.\n2. **Quan** fer servir datiu i **quan** acusatiu (regla **Wo? / Wohin?**).\n3. Les **contraccions** habituals (*im, am, ins, ans, aufs*).\n4. Verbs típics que t'orienten cap a l'un o l'altre cas."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Temps estimat",
+          "body": "20-25 minuts. Tema llarg. Si et canses, atura't després del step de *Wo? / Wohin?* i continua en una altra sessió."
+        }
+      ]
+    },
+    {
+      "id": "les-nou-preposicions",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Les nou Wechselpräpositionen\n\nMemoritza aquesta llista. L'ordre habitual dels llibres alemanys és aquest:"
+        },
+        {
+          "type": "table",
+          "title": "19.1 Les 9 Wechselpräpositionen",
+          "headers": ["Preposició", "Significat nuclear", "Traducció ràpida"],
+          "rows": [
+            ["**in**", "dins de, a l'interior", "a / dins"],
+            ["**an**", "tocant, a la vora de", "a / al costat de"],
+            ["**auf**", "sobre, damunt", "a / sobre"],
+            ["**vor**", "davant de", "davant (de)"],
+            ["**hinter**", "darrere de", "darrere (de)"],
+            ["**neben**", "al costat de", "al costat (de)"],
+            ["**unter**", "sota, per sota de", "sota"],
+            ["**über**", "per damunt, sobre (sense tocar)", "per sobre (de)"],
+            ["**zwischen**", "entre (dos o més)", "entre"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Mnemotècnic útil",
+          "body": "==**\"in an auf · vor hinter neben · unter über zwischen\"**==. Tres grups de tres. Memoritza'l com una cançoneta."
+        },
+        {
+          "type": "explanation",
+          "body": "Algunes ja les coneixes d'A1b-1 (*in*, *an*, *auf*, *neben*). Les cinc noves són *vor, hinter, unter, über, zwischen*.\n\n**Parells oposats útils:**\n\n- *vor* ↔ *hinter* (davant ↔ darrere)\n- *unter* ↔ *über* (sota ↔ sobre)\n- *in* ↔ *auf* (dins ↔ damunt) — no és oposició estricta, però contrasten espacialment."
+        }
+      ]
+    },
+    {
+      "id": "regla-wo-wohin",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### La regla que ho explica tot: ==Wo? → Dativ · Wohin? → Akkusativ==\n\nAquí ve el cor del tema. Les 9 Wechselpräpositionen tenen **dues funcions**:\n\n**1. Indicar ==ubicació== (estàtic).** On passa alguna cosa? On és alguna cosa? On es troba algú?\n→ Pregunta: **==Wo?==** (\"on?\")\n→ Cas: **==Dativ==**\n\n**2. Indicar ==direcció== (dinàmic).** Cap a on va algú? Cap a on es mou un objecte?\n→ Pregunta: **==Wohin?==** (\"cap on?\")\n→ Cas: **==Akkusativ==**"
+        },
+        {
+          "type": "table",
+          "title": "19.2 Contrast visual: Wo? vs. Wohin?",
+          "headers": ["Wo? (datiu — ubicació)", "Wohin? (acusatiu — direcció)"],
+          "rows": [
+            ["*Ich bin **im** Kino.* (sóc al cine)", "*Ich gehe **ins** Kino.* (vaig al cine)"],
+            ["*Das Buch liegt **auf dem** Tisch.*", "*Ich lege das Buch **auf den** Tisch.*"],
+            ["*Die Katze sitzt **unter dem** Bett.*", "*Die Katze läuft **unter das** Bett.*"],
+            ["*Er steht **vor der** Schule.*", "*Er geht **vor die** Schule.*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "La pregunta clau",
+          "body": "Davant de qualsevol frase amb una d'aquestes preposicions, pregunta't: *\"Això descriu ==on== és / passa alguna cosa, o descriu ==cap on== es mou?\"* Si *on* → **datiu**. Si *cap on* → **acusatiu**."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Contrast CA/ES",
+          "body": "En català diem *sóc **a** casa* i *vaig **a** casa* amb la mateixa preposició. L'alemany t'obliga a marcar la diferència **canviant el cas** (l'article)."
+        }
+      ]
+    },
+    {
+      "id": "articles-repas",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Repàs llampec: els articles en datiu i acusatiu\n\nJa que el cas és el que canvia, cal que els articles et surtin automàticament. Aquesta taula és la teva eina de treball d'avui (ja l'has vist a A1a-28 i A1a-34)."
+        },
+        {
+          "type": "table",
+          "title": "19.3 Articles determinats",
+          "headers": ["Cas", "Maskulin", "Femenin", "Neutrum", "Plural"],
+          "rows": [
+            ["**Dativ** (Wo?)", "de==m==", "de==r==", "de==m==", "de==n== (+ -n)"],
+            ["**Akkusativ** (Wohin?)", "de==n==", "di==e==", "da==s==", "di==e=="]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "19.4 Articles indeterminats",
+          "headers": ["Cas", "Maskulin", "Femenin", "Neutrum", "Plural"],
+          "rows": [
+            ["**Dativ**", "einem", "einer", "einem", "(keinen)"],
+            ["**Akkusativ**", "einen", "eine", "ein", "(keine)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Observació pràctica",
+          "body": "El canvi més visible és al **masculí** (*dem* → *den*) i al **neutre** (*dem* → *das*). Al femení, *der* → *die*. El plural datiu afegeix **-n** al substantiu (*den Häusern*, no *den Häuser*)."
+        }
+      ]
+    },
+    {
+      "id": "contraccions",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Contraccions: obligatòries o quasi\n\nL'alemany parlat i escrit estàndard fusiona algunes preposicions amb l'article següent. ==**No fer-ho sona antinatural.**==\n\n**Datiu (Wo?):**\n\n- **in + dem → ==im==** → *im Kino, im Haus, im Park*\n- **an + dem → ==am==** → *am Bahnhof, am Fenster*\n\n**Acusatiu (Wohin?):**\n\n- **in + das → ==ins==** → *ins Kino, ins Haus, ins Bett*\n- **an + das → ==ans==** → *ans Fenster, ans Meer*\n- **auf + das → ==aufs==** → *aufs Dach, aufs Sofa* (més informal; també és habitual *auf das*)"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Truc de detecció ràpida",
+          "body": "- Veus *im, am* → **datiu** (*dem* amagat) → probablement *Wo?*\n- Veus *ins, ans, aufs* → **acusatiu** (*das* amagat) → probablement *Wohin?*"
+        }
+      ]
+    },
+    {
+      "id": "quick-check-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-19-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "verbs-diagnostic",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Verbs que t'orienten: diagnòstic del cas\n\nUna tècnica més ràpida que pensar *Wo? / Wohin?* cada vegada és **fixar-se en el verb**. Hi ha dos grups.\n\n**Verbs de ==posició== (estàtic) → datiu.** Indiquen on és / on està / on passa alguna cosa:\n\n- ==**sein**== (ser, estar) — *Ich bin ==im== Büro.*\n- ==**liegen**== (estar estirat / situat) — *Das Buch liegt ==auf dem== Tisch.*\n- ==**stehen**== (estar dret) — *Die Lampe steht ==neben dem== Sofa.*\n- ==**sitzen**== (estar assegut) — *Ich sitze ==vor dem== Fernseher.*\n- ==**hängen**== (estar penjat) — *Das Bild hängt ==an der== Wand.*\n- ==**wohnen**== (viure, residir) — *Sie wohnt ==in der== Schweiz.*\n- ==**arbeiten**== — *Er arbeitet ==im== Krankenhaus.*\n\n**Verbs de ==moviment== (direcció) → acusatiu.** Indiquen cap on es mou algú o alguna cosa:\n\n- ==**gehen**== (anar a peu) — *Ich gehe ==ins== Kino.*\n- ==**fahren**== (anar en vehicle) — *Wir fahren ==an die== Nordsee.*\n- ==**fliegen**== — *Er fliegt ==in die== USA.*\n- ==**legen**== (posar estirat) — *Ich lege das Buch ==auf den== Tisch.*\n- ==**stellen**== (posar dret) — *Sie stellt die Lampe ==neben das== Sofa.*\n- ==**setzen**== (posar assegut / asseure) — *Ich setze mich ==auf den== Stuhl.*\n- ==**hängen**== (penjar — transitiu) — *Ich hänge das Bild ==an die== Wand.*\n- ==**kommen**== (en sentit direccional) — *Er kommt ==ins== Zimmer.*"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Parelles clau per memoritzar",
+          "body": "- *liegen* (estar estirat, Wo?) ↔ *legen* (posar estirat, Wohin?)\n- *stehen* (estar dret, Wo?) ↔ *stellen* (posar dret, Wohin?)\n- *sitzen* (estar assegut, Wo?) ↔ *setzen* (asseure, Wohin?)\n- *hängen* (estar penjat, Wo?) ↔ *hängen* (penjar, Wohin?) — ==ull!== La forma és idèntica, però el cas canvia."
+        }
+      ]
+    },
+    {
+      "id": "quick-check-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-19-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "exemples-contrast",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Les nou parelles de contrast\n\nMira aquesta taula amb calma. És la pedra angular del tema. Tens cada preposició en les dues \"cares\":"
+        },
+        {
+          "type": "table",
+          "title": "19.5 Les 9 preposicions en datiu i acusatiu",
+          "headers": ["Preposició", "Wo? (datiu)", "Wohin? (acusatiu)"],
+          "rows": [
+            ["**in**", "*Ich sitze **im** Flugzeug.*", "*Ich steige **ins** Flugzeug ein.*"],
+            ["**an**", "*Der Koffer ist **am** Gepäckband.*", "*Der Tourist fährt **an den** nächsten Ort.*"],
+            ["**auf**", "*Die Leute sind **auf dem** Flughafen.*", "*Die Leute fahren **auf den** Flughafen.*"],
+            ["**unter**", "*Die Frau steht **unter dem** Brandenburger Tor.*", "*Ich gehe **unter das** Brandenburger Tor.*"],
+            ["**über**", "*Wir sind im Fernsehturm **über der** Stadt.*", "*Der Ball fliegt **über die** Berliner Mauer.*"],
+            ["**vor**", "*Der Mann steht **vor dem** Museum.*", "*Gehen Sie bitte **vor das** Restaurant!*"],
+            ["**hinter**", "*Die Bushaltestelle ist **hinter dem** Reichstag.*", "*Gehen Sie bitte nicht **hinter die** Skulptur!*"],
+            ["**neben**", "*Der Ausgang ist **neben der** Information.*", "*Stell dich **neben die** Weltzeituhr!*"],
+            ["**zwischen**", "*Das Hotel liegt **zwischen einem** Restaurant und **einer** Bar.*", "*Du kannst dich **zwischen die** Italiener stellen.*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Observació sobre zwischen",
+          "body": "Amb *zwischen*, al datiu tens **dos** substantius regits (*einem Restaurant und einer Bar*, tots dos en datiu). La preposició regeix **els dos** grups nominals, no només el primer."
+        }
+      ]
+    },
+    {
+      "id": "casos-subtils",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Quan no és tan obvi: casos subtils\n\n**Cas 1: verbs que podrien ser totes dues coses.**\n\n*spielen* (jugar) és normalment estàtic (jugues *on* ets): *Die Kinder spielen **im** Garten.* (datiu).\n\nPerò pots dir *Die Kinder laufen **in den** Garten* (acusatiu): corren **cap al** jardí.\n\n**Cas 2: *arbeiten* i *wohnen*.** Sempre datiu, encara que en català semblin tenir moviment:\n\n- *Ich arbeite **in der** Bank.* (no *in die Bank*)\n- *Sie wohnt **in einem** kleinen Dorf.*\n\n**Cas 3: direcció metafòrica.** *Ich denke **an dich*** (penso en tu) — *an* aquí va amb **acusatiu**, però no pel moviment físic. Aquesta mena d'usos \"figurats\" són una categoria a part que veuràs més endavant. A A1b-19, centra't en l'espai físic.\n\n**Cas 4: *nach Hause* vs. *zu Hause*.** No són Wechselpräpositionen, però sí que et poden despistar per paral·lelisme:\n\n- *Ich bin ==zu Hause==* (sóc a casa — Wo?) — *zu* és sempre datiu (veure A1a-34).\n- *Ich gehe ==nach Hause==* (vaig a casa — Wohin?) — *nach* és sempre datiu també, però la forma *Hause* és fossilitzada."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Paral·lel conceptual",
+          "body": "*nach Hause* / *zu Hause* no són Wechselpräpositionen, però responen a la mateixa lògica **Wo?/Wohin?** amb preposicions diferents. Bonic paral·lel conceptual."
+        }
+      ]
+    },
+    {
+      "id": "errors-tipics",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Errors freqüents del catalanoparlant\n\n1. **Traduir automàticament *a → in***. Català *vaig a Berlín* → *Ich fahre **nach** Berlin* (*nach*, no *in*). Però *vaig al cine* → *Ich gehe **ins** Kino*. Cal distingir: **ciutats/països sense article** van amb *nach*; **edificis i interiors** van amb *in + acusatiu*.\n\n2. **No canviar de cas segons el verb**. L'error #1 és dir *Ich gehe **im** Kino* quan vols dir \"vaig al cine\". Correcte: *Ich gehe **ins** Kino*. *im Kino* = \"al cine\" (sóc dins).\n\n3. **Oblidar la contracció**. *in dem Haus* sona pedant. Digues sempre *im Haus*. Igual amb *ins, ans, am*.\n\n4. **Confondre *auf* i *an***. *auf* = sobre (contacte des de dalt); *an* = tocant (contacte lateral o indeterminat). *Das Bild hängt **an der** Wand* (penjat a la paret, tocant-la de costat), no *auf der Wand*.\n\n5. **Fer *über* amb datiu quan hi ha moviment travessant**. *Der Vogel fliegt **über die** Stadt* (l'ocell vola **per sobre** la ciutat — travessa-la) → acusatiu. Si diguessis *über der Stadt*, significaria que l'ocell està **suspès immòbil** damunt la ciutat. Subtil però real.\n\n6. **Plural datiu sense -n**. *Die Kinder spielen ==zwischen den Häusern==* (amb *-n* afegit!). Si *Häuser* no tingués *-n*, l'error seria visible.\n\n7. **Usar *nach* amb edificis**. *Ich gehe ==nach== Schule* és ==incorrecte==. El correcte és *Ich gehe ==in die== Schule* (acusatiu, Wohin?). *nach* només amb ciutats, països sense article, i punts cardinals (*nach Norden*)."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1-articles",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-19-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2-verb-parelles",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-19-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3-cas-context",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-19-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4-produccio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-19-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-5-correccio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-19-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-6-dialog",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-19-ex-08", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Resum del que t'emportes\n\n**Les 9 Wechselpräpositionen:** *in · an · auf · vor · hinter · neben · unter · über · zwischen*.\n\n**La regla d'or:**\n- **Wo?** (on és / on passa) → **Dativ** (dem, der, dem, den)\n- **Wohin?** (cap on es mou) → **Akkusativ** (den, die, das, die)"
+        },
+        {
+          "type": "table",
+          "title": "19.6 Síntesi — Verbs diagnòstic",
+          "headers": ["Grup", "Parella / llista", "Cas"],
+          "rows": [
+            ["**Estirat**", "*liegen* / *legen*", "datiu / acusatiu"],
+            ["**Dret**", "*stehen* / *stellen*", "datiu / acusatiu"],
+            ["**Assegut**", "*sitzen* / *setzen*", "datiu / acusatiu"],
+            ["**Penjat**", "*hängen* (intr.) / *hängen* (tr.)", "datiu / acusatiu"],
+            ["**Sempre Wo?**", "*sein, wohnen, arbeiten, spielen*", "datiu"],
+            ["**Sempre Wohin?**", "*gehen, fahren, fliegen, kommen*", "acusatiu"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "19.7 Contraccions obligatòries",
+          "headers": ["Cas", "Forma contreta", "Equivalent"],
+          "rows": [
+            ["**Dativ**", "==im==", "in + dem"],
+            ["**Dativ**", "==am==", "an + dem"],
+            ["**Akkusativ**", "==ins==", "in + das"],
+            ["**Akkusativ**", "==ans==", "an + das"],
+            ["**Akkusativ**", "==aufs==", "auf + das (col·loquial)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Paranys crítics",
+          "body": "- ==*Ich gehe ins Kino*== ≠ *Ich gehe im Kino* (aquest últim no té sentit).\n- ==*an der Wand*== (a la paret, penjat), no *auf der Wand*.\n- *nach* només amb ciutats/països sense article: ==*nach Berlin*==, però ==*in die Schule*==.\n- *über die Stadt* (travessa, acusatiu) ≠ *über der Stadt* (suspès, datiu)."
+        },
+        {
+          "type": "explanation",
+          "body": "**Connexions amb altres lliçons:**\n\n- **A1a-28** — articles nominatiu/acusatiu complets.\n- **A1a-34** — preposicions amb datiu: *mit, bei, aus, nach, von, zu, seit*.\n- **A1b-1** — lokale Präpositionen estàtiques, primera aproximació.\n- **A1b-18** — preposicions amb acusatiu fix: *durch, für, gegen, ohne, um*."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Proper pas (A1b-20)",
+          "body": "Continuarem amb preposicions locals aplicades a **indicacions de camí** (*geradeaus, links, rechts, über die Brücke, durch den Tunnel…*). Avui has après el sistema. A partir d'ara, cada vegada que vulguis dir *on* o *cap on*, et faràs aquesta pregunta mentalment i el cas sortirà sol.\n\n**Pràctica:** descriu en alemany la teva habitació (*Wo?*, datiu) i ara imagina que reorganitzes els mobles (*Wohin?*, acusatiu)."
+        }
+      ]
+    }
+  ]
+}
