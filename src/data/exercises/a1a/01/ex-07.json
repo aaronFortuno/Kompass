@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-1-ex-07",
+  "topicId": "A1a-1",
+  "title": "Formal vs informal: la mateixa situació, dos tractaments",
+  "prompt": "Completa les dues versions del mateix diàleg. A l'esquerra, dos desconeguts a una oficina (tracte formal _Sie_); a la dreta, dos amics a casa (tracte informal _du_). Tria a cada buit el pronom o possessiu que correspon al tracte i al gènere del substantiu.",
+  "difficulty": 3,
+  "tags": ["integration", "formal", "informal", "contrast"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Formal (a l'oficina):\n— Guten Tag! Wie heißen {{1}}?\n— Ich heiße Klaus Weber. Und wie ist {{2}} Name?\n— Mein Name ist Frau Schulz. Wie ist {{3}} Adresse, Herr Weber?\n— {{4}} Adresse ist Mozartstraße 9.\n\nInformal (a casa):\n— Hallo! Wie heißt {{5}}?\n— Ich heiße Klaus. Und wie ist {{6}} Name?\n— Mein Name ist Tina. Wie ist {{7}} Telefonnummer, Klaus?\n— {{8}} Telefonnummer ist 0151 22 33.",
+    "blanks": [
+      { "id": "1", "label": "formal, 2a persona de cortesia" },
+      { "id": "2", "label": "possessiu formal + der Name" },
+      { "id": "3", "label": "possessiu formal + die Adresse" },
+      { "id": "4", "label": "possessiu 1a sg. + die Adresse, inici de frase" },
+      { "id": "5", "label": "informal, 2a sg." },
+      { "id": "6", "label": "possessiu 2a sg. + der Name" },
+      { "id": "7", "label": "possessiu 2a sg. + die Telefonnummer" },
+      { "id": "8", "label": "possessiu 1a sg. + die Telefonnummer, inici de frase" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["du", "Sie", "ihr"] },
+      { "blankId": "2", "options": ["dein", "deine", "Ihr", "Ihre"] },
+      { "blankId": "3", "options": ["dein", "deine", "Ihr", "Ihre"] },
+      { "blankId": "4", "options": ["Mein", "Meine", "Ihr", "Ihre"] },
+      { "blankId": "5", "options": ["du", "Sie", "ihr"] },
+      { "blankId": "6", "options": ["dein", "deine", "Ihr", "Ihre"] },
+      { "blankId": "7", "options": ["dein", "deine", "Ihr", "Ihre"] },
+      { "blankId": "8", "options": ["Mein", "Meine", "Ihr", "Ihre"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Sie",
+      "2": "Ihr",
+      "3": "Ihre",
+      "4": "Meine",
+      "5": "du",
+      "6": "dein",
+      "7": "deine",
+      "8": "Meine"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent! Has integrat el sistema sencer: (a) _Sie/Ihr/Ihre_ sempre amb majúscula en tracte formal; (b) _du/dein/deine_ en minúscula en tracte informal; (c) la concordança m./f. que afegeix _-e_ davant _Adresse, Telefonnummer_."
+    },
+    "incorrect": {
+      "default": "Tres capes a comprovar: (1) tracte — formal = _Sie / Ihr / Ihre_ **sempre amb majúscula**; informal = _du / dein / deine_ en minúscula; (2) gènere — _der Name_ masculí → forma curta (_Ihr / dein_); _die Adresse, die Telefonnummer_ femenins → forma amb _-e_ (_Ihre / deine / Meine_); (3) posició — a inici de frase, tot pronom va amb majúscula (**Meine**)."
+    }
+  }
+}

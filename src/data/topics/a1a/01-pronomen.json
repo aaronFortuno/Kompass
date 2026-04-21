@@ -121,9 +121,27 @@
       ]
     },
     {
-      "id": "assessment",
+      "id": "assessment-1",
       "blocks": [
         { "type": "exercise", "exerciseId": "A1a-1-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-1-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-1-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-1-ex-07", "variant": "assessment" }
       ]
     },
     {

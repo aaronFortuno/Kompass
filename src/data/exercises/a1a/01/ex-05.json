@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-1-ex-05",
+  "topicId": "A1a-1",
+  "title": "Una conversa informal",
+  "prompt": "Completa el diàleg entre dos amics (tracte _du_) que parlen de si mateixos i d'una tercera persona.",
+  "difficulty": 2,
+  "tags": ["integration", "informal", "personalpronomen", "possessivpronomen"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "— Hallo! Wie heißt {{1}}?\n— {{2}} heiße Lena. Und wie ist {{3}} Name?\n— Mein Name ist Tim. Das da ist Paul, {{4}} Telefonnummer ist 0176 22 33.\n— Und wer ist die Frau?\n— Das ist Sara. {{5}} Adresse ist Goethestraße 3, und {{6}} Vorname ist Sara Meier.",
+    "blanks": [
+      { "id": "1", "label": "2a sg. informal (tu)" },
+      { "id": "2", "label": "1a sg. (jo), inici de frase" },
+      { "id": "3", "label": "possessiu 2a sg. + der Name" },
+      { "id": "4", "label": "possessiu d'ell (Paul) + die Telefonnummer" },
+      { "id": "5", "label": "possessiu d'ella (Sara) + die Adresse, inici de frase" },
+      { "id": "6", "label": "possessiu d'ella (Sara) + der Vorname" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["du", "Sie", "ihr"] },
+      { "blankId": "2", "options": ["Ich", "Du", "Er"] },
+      { "blankId": "3", "options": ["dein", "deine", "Ihr"] },
+      { "blankId": "4", "options": ["sein", "seine", "ihr", "ihre"] },
+      { "blankId": "5", "options": ["Sein", "Seine", "Ihr", "Ihre"] },
+      { "blankId": "6", "options": ["sein", "seine", "ihr", "ihre"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "du",
+      "2": "Ich",
+      "3": "dein",
+      "4": "seine",
+      "5": "Ihre",
+      "6": "ihr"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé! Has combinat personal i possessiu en tracte informal i has aplicat la doble concordança: _sein/ihr_ segons el posseïdor i _-e_ segons el gènere del substantiu."
+    },
+    "incorrect": {
+      "default": "Pistes: (a) entre amics, tracte **du** (sense majúscula); (b) _der Name, der Vorname_ són masculins → forma curta; _die Adresse, die Telefonnummer_ són femenins → forma amb _-e_; (c) el possessiu d'en Paul (home) és ==s==ein-, el de la Sara (dona) és i==hr==-; (d) a inici de frase tot pronom va amb majúscula, al mig de frase _ich_ és minúscula."
+    }
+  }
+}
