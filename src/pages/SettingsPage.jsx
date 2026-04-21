@@ -8,6 +8,8 @@ import {
   BookOpen,
   ScrollText,
   Gauge,
+  Play,
+  Timer,
 } from 'lucide-react';
 import { useT } from '@/i18n';
 import { useSettingsStore, TEXT_SCALE_VALUES } from '@/store/useSettingsStore';
@@ -37,6 +39,8 @@ export function SettingsPage() {
   const typewriter = useSettingsStore((s) => s.typewriter);
   const typewriterSpeed = useSettingsStore((s) => s.typewriterSpeed);
   const tableAnim = useSettingsStore((s) => s.tableAnim);
+  const autoPlay = useSettingsStore((s) => s.autoPlay);
+  const autoPlayDelay = useSettingsStore((s) => s.autoPlayDelay);
 
   const setTheme = useSettingsStore((s) => s.setTheme);
   const setTextScale = useSettingsStore((s) => s.setTextScale);
@@ -44,6 +48,8 @@ export function SettingsPage() {
   const setTypewriter = useSettingsStore((s) => s.setTypewriter);
   const setTypewriterSpeed = useSettingsStore((s) => s.setTypewriterSpeed);
   const setTableAnim = useSettingsStore((s) => s.setTableAnim);
+  const setAutoPlay = useSettingsStore((s) => s.setAutoPlay);
+  const setAutoPlayDelay = useSettingsStore((s) => s.setAutoPlayDelay);
   const reset = useSettingsStore((s) => s.reset);
 
   return (
@@ -198,6 +204,44 @@ export function SettingsPage() {
             label={t('settings.reading.tableAnim')}
             id="setting-tableanim"
           />
+        </SettingRow>
+
+        <SettingRow
+          id="setting-autoplay"
+          icon={Play}
+          title={t('settings.reading.autoPlay')}
+          description={t('settings.reading.autoPlayDesc')}
+        >
+          <Toggle
+            checked={autoPlay}
+            onChange={setAutoPlay}
+            label={t('settings.reading.autoPlay')}
+            id="setting-autoplay"
+          />
+        </SettingRow>
+
+        <SettingRow
+          id="setting-autoplay-delay"
+          icon={Timer}
+          title={t('settings.reading.autoPlayDelay')}
+          description={t('settings.reading.autoPlayDelayDesc')}
+          disabled={!autoPlay}
+        >
+          <div className="flex items-center gap-3">
+            <input
+              type="range"
+              min={1}
+              max={10}
+              step={1}
+              value={autoPlayDelay}
+              onChange={(e) => setAutoPlayDelay(Number(e.target.value))}
+              aria-labelledby="setting-autoplay-delay"
+              className="w-32 accent-reader-ink"
+            />
+            <span className="font-mono text-[11px] text-reader-ink-2 w-10 text-right">
+              {autoPlayDelay}s
+            </span>
+          </div>
         </SettingRow>
       </section>
 

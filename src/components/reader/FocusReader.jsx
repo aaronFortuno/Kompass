@@ -9,9 +9,11 @@ import {
   Lightbulb,
   AlertTriangle,
   Settings as SettingsIcon,
+  Play,
+  Pause,
 } from 'lucide-react';
 import { useT } from '@/i18n';
-import { useSettings } from '@/store/useSettingsStore.js';
+import { useSettings, useSettingsStore } from '@/store/useSettingsStore.js';
 import { useProgressStore } from '@/store/useProgressStore.js';
 import { getExercise, getTopicsByLevel } from '@/lib/dataLoader.js';
 import { buildBeats, isRichStep, stepKind } from '@/lib/reader/buildBeats.js';
@@ -68,6 +70,41 @@ function computeBlocks(steps) {
     if (kind !== 'exercise' && kind !== 'assessment') starts.push(i);
   });
   return starts;
+}
+
+/*
+ * Estima ms d'animació del beat (typewriter inclòs). Usat per l'auto-play
+ * per calcular quan pot avançar de manera que l'usuari tingui temps de
+ * llegir el contingut "típic" del beat abans del delay configurat.
+ * Beats sense text dinàmic (pair, compare, syn-table) retornen 0 + un
+ * petit marge per a la fade-in visual.
+ */
+function estimateBeatReadMs(beat, speedMs, typewriterOn) {
+  if (!beat) return 0;
+  if (!typewriterOn) return 400; // fade-in més marge
+  const pickText = () => {
+    switch (beat.type) {
+      case 'heading':
+      case 'lead':
+      case 'body':
+      case 'point':
+      case 'rule':
+        return beat.text || '';
+      case 'pitfall':
+        return beat.pit?.why || '';
+      case 'callout':
+        return beat.callout?.body || '';
+      case 'example':
+        return beat.ex?.de || '';
+      case 'pron':
+        return beat.tab?.note || '';
+      default:
+        return '';
+    }
+  };
+  const len = pickText().length;
+  if (!len) return 500; // beats estàtics amb petit marge
+  return len * speedMs + 220;
 }
 
 function resolveStepIndex(topic, stepId) {
@@ -1104,6 +1141,14 @@ export function FocusReader({ topic }) {
         return;
       }
 
+      // "p" toggle auto-play (§86).
+      if ((e.key === 'p' || e.key === 'P') && !e.ctrlKey && !e.metaKey && !e.altKey) {
+        if (inInput) return;
+        e.preventDefault();
+        useSettingsStore.getState().setAutoPlay(!settings.autoPlay);
+        return;
+      }
+
       // ↓ / ↑ : skip typewriter. Primer press revela el beat actual;
       // següents presses avancen mantenint el skip actiu.
       if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
@@ -1138,7 +1183,7 @@ export function FocusReader({ topic }) {
     };
     window.addEventListener('keydown', onKey, true);
     return () => window.removeEventListener('keydown', onKey, true);
-  }, [closeReader, goBeat, goStep, goBlock, skipOrAdvance, drawerOpen, splashVisible]);
+  }, [closeReader, goBeat, goStep, goBlock, skipOrAdvance, drawerOpen, splashVisible, settings.autoPlay]);
 
   // Navegació amb scroll del ratolí / trackpad. Cada scroll amunt/avall
   // equival a prémer ← / → (beat prev/next). Throttled per evitar que
@@ -1164,6 +1209,58 @@ export function FocusReader({ topic }) {
     },
     [splashVisible, drawerOpen, isFullMode, goBeat],
   );
+
+  // Ref estable a goBeat per cridar-lo des de timers/altres effects sense
+  // afegir deps que disparen re-execució contínua.
+  const goBeatRef = useRef(goBeat);
+  useEffect(() => {
+    goBeatRef.current = goBeat;
+  }, [goBeat]);
+
+  /*
+   * Auto-play: avança automàticament al beat següent un cop ha passat el
+   * temps estimat de lectura + l'autoPlayDelay configurat (1-10 s). Les
+   * condicions que el pausen:
+   *   - settings.autoPlay desactivat
+   *   - beat actual és exercici (esperem que l'usuari el resolgui)
+   *   - estem al mode studyMode=full (scroll natural)
+   *   - splash o drawer oberts
+   *   - fi del topic (isAtEnd)
+   *   - fastMode: el timer s'escurça a només el delay pur (sense temps
+   *     de typewriter), per respectar que l'usuari vol anar ràpid.
+   */
+  useEffect(() => {
+    if (!settings.autoPlay) return undefined;
+    if (isFullMode) return undefined;
+    if (splashVisible || drawerOpen) return undefined;
+    if (!beat) return undefined;
+    if (beat.type === 'exercise') return undefined;
+    if (isAtEnd) return undefined;
+
+    const readMs = fastMode
+      ? 400
+      : estimateBeatReadMs(beat, speed, settings.typewriter !== false);
+    const delayMs = Math.max(1, settings.autoPlayDelay || 3) * 1000;
+    const totalMs = readMs + delayMs;
+
+    const t = window.setTimeout(() => {
+      goBeatRef.current?.(1);
+    }, totalMs);
+    return () => window.clearTimeout(t);
+  }, [
+    stepIdx,
+    beatIdx,
+    beat,
+    settings.autoPlay,
+    settings.autoPlayDelay,
+    settings.typewriter,
+    speed,
+    splashVisible,
+    drawerOpen,
+    isFullMode,
+    isAtEnd,
+    fastMode,
+  ]);
 
   // Swipe tàctil.
   const touchRef = useRef({ x: 0, y: 0, t: 0, active: false });
@@ -1338,6 +1435,14 @@ export function FocusReader({ topic }) {
               <kbd>←</kbd>
               <kbd>→</kbd>
               <span className="lbl">bloc</span>
+            </span>
+            <span className="kf-sep" />
+            <span
+              className={'kgroup' + (settings.autoPlay ? ' kf-keyhint-active' : '')}
+              title={settings.autoPlay ? 'Auto-play actiu' : 'Activa l\'auto-play'}
+            >
+              <kbd>p</kbd>
+              <span className="lbl">{settings.autoPlay ? 'auto' : 'play'}</span>
             </span>
             <span className="kf-sep" />
             <span className="kgroup">

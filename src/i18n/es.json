@@ -106,7 +106,11 @@
       "typewriterSpeedSlow": "Lento",
       "typewriterPreview": "Así se verá el efecto typewriter en pantalla mientras lees la lección.",
       "tableAnim": "Animación de tablas",
-      "tableAnimDesc": "Las filas aparecen una tras otra con un ligero efecto de revelación."
+      "tableAnimDesc": "Las filas aparecen una tras otra con un ligero efecto de revelación.",
+      "autoPlay": "Modo automático",
+      "autoPlayDesc": "Una vez revelado un fragmento, avanza automáticamente al siguiente. Los ejercicios pausan hasta que los resuelves. Puedes alternarlo con la tecla «p».",
+      "autoPlayDelay": "Tiempo entre fragmentos",
+      "autoPlayDelayDesc": "Segundos de espera tras acabar el typewriter antes de avanzar al siguiente fragmento."
     },
     "reset": {
       "title": "Restaurar valores por defecto",

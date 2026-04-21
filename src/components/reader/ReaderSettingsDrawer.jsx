@@ -8,6 +8,8 @@ import {
   BookOpen,
   ScrollText,
   Gauge,
+  Play,
+  Timer,
   X as CloseIcon,
 } from 'lucide-react';
 import { useT } from '@/i18n';
@@ -40,6 +42,8 @@ export function ReaderSettingsDrawer({ open, onClose }) {
   const typewriter = useSettingsStore((s) => s.typewriter);
   const typewriterSpeed = useSettingsStore((s) => s.typewriterSpeed);
   const tableAnim = useSettingsStore((s) => s.tableAnim);
+  const autoPlay = useSettingsStore((s) => s.autoPlay);
+  const autoPlayDelay = useSettingsStore((s) => s.autoPlayDelay);
 
   const setTheme = useSettingsStore((s) => s.setTheme);
   const setTextScale = useSettingsStore((s) => s.setTextScale);
@@ -47,6 +51,8 @@ export function ReaderSettingsDrawer({ open, onClose }) {
   const setTypewriter = useSettingsStore((s) => s.setTypewriter);
   const setTypewriterSpeed = useSettingsStore((s) => s.setTypewriterSpeed);
   const setTableAnim = useSettingsStore((s) => s.setTableAnim);
+  const setAutoPlay = useSettingsStore((s) => s.setAutoPlay);
+  const setAutoPlayDelay = useSettingsStore((s) => s.setAutoPlayDelay);
 
   // Esc tanca el drawer (abans que el handler del reader tanqui tot)
   useEffect(() => {
@@ -200,6 +206,42 @@ export function ReaderSettingsDrawer({ open, onClose }) {
                 label={t('settings.reading.tableAnim')}
                 id="drawer-tableanim"
               />
+            </SettingRow>
+
+            <SettingRow
+              id="drawer-autoplay"
+              icon={Play}
+              title={t('settings.reading.autoPlay')}
+            >
+              <Toggle
+                checked={autoPlay}
+                onChange={setAutoPlay}
+                label={t('settings.reading.autoPlay')}
+                id="drawer-autoplay"
+              />
+            </SettingRow>
+
+            <SettingRow
+              id="drawer-autoplay-delay"
+              icon={Timer}
+              title={t('settings.reading.autoPlayDelay')}
+              disabled={!autoPlay}
+            >
+              <div className="flex items-center gap-2">
+                <input
+                  type="range"
+                  min={1}
+                  max={10}
+                  step={1}
+                  value={autoPlayDelay}
+                  onChange={(e) => setAutoPlayDelay(Number(e.target.value))}
+                  aria-labelledby="drawer-autoplay-delay"
+                  className="w-28 accent-reader-ink"
+                />
+                <span className="font-mono text-[10px] text-reader-ink-2 w-8 text-right">
+                  {autoPlayDelay}s
+                </span>
+              </div>
             </SettingRow>
           </section>
         </div>

@@ -26,6 +26,8 @@ export const DEFAULT_SETTINGS = {
   typewriter: true,
   typewriterSpeed: 3, // 1 (ràpid) – 5 (lent); vegeu beatTransitions.js
   tableAnim: true,
+  autoPlay: false,
+  autoPlayDelay: 3, // segons a esperar un cop revelat el beat
 };
 
 export const useSettingsStore = create(
@@ -47,6 +49,11 @@ export const useSettingsStore = create(
         set({ typewriterSpeed: Math.min(5, Math.max(1, n)) });
       },
       setTableAnim: (tableAnim) => set({ tableAnim }),
+      setAutoPlay: (autoPlay) => set({ autoPlay: Boolean(autoPlay) }),
+      setAutoPlayDelay: (autoPlayDelay) => {
+        const n = Number(autoPlayDelay);
+        set({ autoPlayDelay: Math.min(10, Math.max(1, isNaN(n) ? 3 : n)) });
+      },
 
       update: (patch) => set(patch),
       reset: () => set({ ...DEFAULT_SETTINGS }),
@@ -62,6 +69,8 @@ export const useSettingsStore = create(
         typewriter: state.typewriter,
         typewriterSpeed: state.typewriterSpeed,
         tableAnim: state.tableAnim,
+        autoPlay: state.autoPlay,
+        autoPlayDelay: state.autoPlayDelay,
       }),
       onRehydrateStorage: () => (state) => {
         // Notifica altres components que el hydrate s'ha completat per si
@@ -89,6 +98,8 @@ export function useSettings() {
     typewriter: s.typewriter,
     typewriterSpeed: s.typewriterSpeed,
     tableAnim: s.tableAnim,
+    autoPlay: s.autoPlay,
+    autoPlayDelay: s.autoPlayDelay,
   }));
 }
 

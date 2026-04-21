@@ -111,7 +111,11 @@
       "typewriterSpeedSlow": "Lent",
       "typewriterPreview": "Així es veurà l'efecte typewriter en pantalla mentre llegeixes la lliçó.",
       "tableAnim": "Animació de taules",
-      "tableAnimDesc": "Les files apareixen l'una rere l'altra amb un lleuger efecte de revelació."
+      "tableAnimDesc": "Les files apareixen l'una rere l'altra amb un lleuger efecte de revelació.",
+      "autoPlay": "Mode automàtic",
+      "autoPlayDesc": "Un cop revelat un fragment, avança automàticament al següent. Els exercicis fan pausa fins que els resols. Pots togglejar-ho amb la tecla «p».",
+      "autoPlayDelay": "Temps entre fragments",
+      "autoPlayDelayDesc": "Segons d'espera un cop acaba el typewriter abans d'avançar al fragment següent."
     },
     "reset": {
       "title": "Restaurar valors per defecte",
