@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-5-ex-01",
+  "topicId": "A1b-5",
+  "title": "Pronom datiu + forma de _gefallen_",
+  "prompt": "Completa cada frase amb el **pronom datiu** correcte i la **forma verbal** de _gefallen_ que concordi amb el que agrada.",
+  "difficulty": 1,
+  "tags": ["gefallen", "datiu", "concordanca"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. {{1a}} {{1b}} der Dom. _(A mi m'agrada la catedral.)_\n2. {{2a}} {{2b}} die Museen. _(A tu t'agraden els museus.)_\n3. {{3a}} {{3b}} das Buch. _(A ell li agrada el llibre.)_",
+    "blanks": [
+      { "id": "1a", "label": "pronom datiu" },
+      { "id": "1b", "label": "forma de _gefallen_" },
+      { "id": "2a", "label": "pronom datiu" },
+      { "id": "2b", "label": "forma de _gefallen_" },
+      { "id": "3a", "label": "pronom datiu" },
+      { "id": "3b", "label": "forma de _gefallen_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1a", "options": ["Mir", "Dir", "Ihm"] },
+      { "blankId": "1b", "options": ["gefällt", "gefallen"] },
+      { "blankId": "2a", "options": ["Mir", "Dir", "Ihm"] },
+      { "blankId": "2b", "options": ["gefällt", "gefallen"] },
+      { "blankId": "3a", "options": ["Mir", "Dir", "Ihm"] },
+      { "blankId": "3b", "options": ["gefällt", "gefallen"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1a": "Mir",
+      "1b": "gefällt",
+      "2a": "Dir",
+      "2b": "gefallen",
+      "3a": "Ihm",
+      "3b": "gefällt"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has aplicat la regla d'or de _gefallen_: el **datiu** marca qui té el gust (_mir, dir, ihm_), i el **verb** concorda amb el que agrada (_der Dom_ → _gefällt_; _die Museen_ → _gefallen_, plural!).",
+      "references": ["A1b-5"]
+    },
+    "incorrect": {
+      "default": "Dos passos: (1) el pronom és el **datiu** de la persona que té el gust: _ich → mir_, _du → dir_, _er → ihm_. (2) El verb concorda amb **el que agrada**, no amb la persona: singular (_der Dom, das Buch_) → _gefällt_; plural (_die Museen_) → _gefallen_. És com el castellà _me gusta / me gustan_."
+    }
+  }
+}

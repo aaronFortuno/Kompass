@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-5-ex-05",
+  "topicId": "A1b-5",
+  "title": "Completa: pronom + verb",
+  "prompt": "Escriu el **pronom** (datiu o acusatiu segons el verb) i la **forma correcta** de _gefallen_ o _interessieren_ en cada buit.",
+  "difficulty": 3,
+  "tags": ["gefallen", "interessieren", "datiu", "acusatiu", "concordanca", "produccio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. {{1a}} {{1b}} der Dom. _(A mi m'agrada la catedral — gefallen.)_\n2. {{2a}} {{2b}} die Museen. _(A mi m'interessen els museus — interessieren.)_\n3. {{3a}} {{3b}} die Bilder. _(A tu t'agraden els quadres — gefallen.)_\n4. {{4a}} {{4b}} die Geschichte. _(A tu t'interessa la història — interessieren.)_",
+    "blanks": [
+      { "id": "1a", "label": "pronom" },
+      { "id": "1b", "label": "verb" },
+      { "id": "2a", "label": "pronom" },
+      { "id": "2b", "label": "verb" },
+      { "id": "3a", "label": "pronom" },
+      { "id": "3b", "label": "verb" },
+      { "id": "4a", "label": "pronom" },
+      { "id": "4b", "label": "verb" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1a", "placeholder": "pronom" },
+      { "blankId": "1b", "placeholder": "verb" },
+      { "blankId": "2a", "placeholder": "pronom" },
+      { "blankId": "2b", "placeholder": "verb" },
+      { "blankId": "3a", "placeholder": "pronom" },
+      { "blankId": "3b", "placeholder": "verb" },
+      { "blankId": "4a", "placeholder": "pronom" },
+      { "blankId": "4b", "placeholder": "verb" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1a": ["Mir", "mir"],
+      "1b": ["gefällt"],
+      "2a": ["Mich", "mich"],
+      "2b": ["interessieren"],
+      "3a": ["Dir", "dir"],
+      "3b": ["gefallen"],
+      "4a": ["Dich", "dich"],
+      "4b": ["interessiert"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has aplicat dues regles alhora: (a) cas correcte segons el verb (_gefallen_ → datiu; _interessieren_ → acusatiu); (b) concordança del verb amb el subjecte, no amb la persona (_der Dom_ → _gefällt_ singular; _die Museen_ → _interessieren_ plural).",
+      "references": ["A1b-5"]
+    },
+    "incorrect": {
+      "default": "Dues preguntes per a cada frase: (1) quin verb és? → si és _gefallen_, pronom en **datiu** (_mir, dir, ihm_); si és _interessieren_, pronom en **acusatiu** (_mich, dich, ihn_). (2) El que agrada/interessa és singular o plural? → concordança del verb en conseqüència (_gefällt_ sg / _gefallen_ pl; _interessiert_ sg / _interessieren_ pl)."
+    }
+  }
+}

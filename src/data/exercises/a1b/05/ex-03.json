@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-5-ex-03",
+  "topicId": "A1b-5",
+  "title": "Datiu o acusatiu? gefallen vs interessieren",
+  "prompt": "Tria el pronom correcte segons el verb. Recorda: _gefallen_ → **datiu** (_mir, dir_); _interessieren_ → **acusatiu** (_mich, dich_).",
+  "difficulty": 2,
+  "tags": ["gefallen", "interessieren", "datiu", "acusatiu", "contrast"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. {{1}} gefällt die Stadt. _(A mi m'agrada la ciutat.)_\n2. {{2}} interessiert die Geschichte. _(A mi m'interessa la història.)_\n3. {{3}} gefallen die Bilder. _(A tu t'agraden els quadres.)_\n4. {{4}} interessieren die Museen. _(A tu t'interessen els museus.)_",
+    "blanks": [
+      { "id": "1", "label": "pronom" },
+      { "id": "2", "label": "pronom" },
+      { "id": "3", "label": "pronom" },
+      { "id": "4", "label": "pronom" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Mir", "Mich", "Dir", "Dich"] },
+      { "blankId": "2", "options": ["Mir", "Mich", "Dir", "Dich"] },
+      { "blankId": "3", "options": ["Mir", "Mich", "Dir", "Dich"] },
+      { "blankId": "4", "options": ["Mir", "Mich", "Dir", "Dich"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Mir",
+      "2": "Mich",
+      "3": "Dir",
+      "4": "Dich"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has aplicat la distinció clau: **gefallen → datiu** (_mir, dir_), **interessieren → acusatiu** (_mich, dich_). És la mateixa persona, però canvia el cas segons el verb.",
+      "references": ["A1b-5"]
+    },
+    "incorrect": {
+      "default": "La regla: _gefallen_ sempre **datiu** (_mir, dir, ihm, uns_...), _interessieren_ sempre **acusatiu** (_mich, dich, ihn, uns_...). Si dubtes, memoritza les dues plantilles: _**Mir** gefällt X_ / _**Mich** interessiert X_, i aplica-les per analogia.",
+      "byResponse": [
+        {
+          "match": { "1": "Mich" },
+          "message": "_gefallen_ demana **datiu**, no acusatiu. _Mir gefällt die Stadt_ (com el castellà _me gusta_)."
+        },
+        {
+          "match": { "2": "Mir" },
+          "message": "_interessieren_ demana **acusatiu**, no datiu. _Mich interessiert die Geschichte_."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-5-ex-06",
+  "topicId": "A1b-5",
+  "title": "Satzklammer amb möchten",
+  "prompt": "Reordena les paraules per formar cada frase en alemany. Recorda la Satzklammer: verb modal conjugat en segona posició, infinitiu al final.",
+  "difficulty": 2,
+  "tags": ["mochten", "satzklammer", "ordre-paraules", "modal"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Vull veure la catedral:_ {{1p1}} {{1p2}} {{1p3}} {{1p4}}.\n\nPeces disponibles: `Ich` / `möchte` / `den Dom` / `sehen`\n\n2. _Vull anar al cinema:_ {{2p1}} {{2p2}} {{2p3}} {{2p4}}.\n\nPeces disponibles: `Ich` / `möchte` / `ins Kino` / `gehen`\n\n3. _Volem aprendre alemany:_ {{3p1}} {{3p2}} {{3p3}} {{3p4}}.\n\nPeces disponibles: `Wir` / `möchten` / `Deutsch` / `lernen`",
+    "blanks": [
+      { "id": "1p1", "label": "posició 1" },
+      { "id": "1p2", "label": "posició 2" },
+      { "id": "1p3", "label": "posició 3" },
+      { "id": "1p4", "label": "posició 4" },
+      { "id": "2p1", "label": "posició 1" },
+      { "id": "2p2", "label": "posició 2" },
+      { "id": "2p3", "label": "posició 3" },
+      { "id": "2p4", "label": "posició 4" },
+      { "id": "3p1", "label": "posició 1" },
+      { "id": "3p2", "label": "posició 2" },
+      { "id": "3p3", "label": "posició 3" },
+      { "id": "3p4", "label": "posició 4" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1p1", "options": ["Ich", "möchte", "den Dom", "sehen"] },
+      { "blankId": "1p2", "options": ["Ich", "möchte", "den Dom", "sehen"] },
+      { "blankId": "1p3", "options": ["Ich", "möchte", "den Dom", "sehen"] },
+      { "blankId": "1p4", "options": ["Ich", "möchte", "den Dom", "sehen"] },
+      { "blankId": "2p1", "options": ["Ich", "möchte", "ins Kino", "gehen"] },
+      { "blankId": "2p2", "options": ["Ich", "möchte", "ins Kino", "gehen"] },
+      { "blankId": "2p3", "options": ["Ich", "möchte", "ins Kino", "gehen"] },
+      { "blankId": "2p4", "options": ["Ich", "möchte", "ins Kino", "gehen"] },
+      { "blankId": "3p1", "options": ["Wir", "möchten", "Deutsch", "lernen"] },
+      { "blankId": "3p2", "options": ["Wir", "möchten", "Deutsch", "lernen"] },
+      { "blankId": "3p3", "options": ["Wir", "möchten", "Deutsch", "lernen"] },
+      { "blankId": "3p4", "options": ["Wir", "möchten", "Deutsch", "lernen"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1p1": "Ich",
+      "1p2": "möchte",
+      "1p3": "den Dom",
+      "1p4": "sehen",
+      "2p1": "Ich",
+      "2p2": "möchte",
+      "2p3": "ins Kino",
+      "2p4": "gehen",
+      "3p1": "Wir",
+      "3p2": "möchten",
+      "3p3": "Deutsch",
+      "3p4": "lernen"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has respectat la Satzklammer (A1a-18): el verb conjugat (_möchte/möchten_) va en segona posició, i l'infinitiu (_sehen, gehen, lernen_) al final de la frase. Aquest és el patró de tots els modals.",
+      "references": ["A1b-5", "A1a-18"]
+    },
+    "incorrect": {
+      "default": "Recorda la Satzklammer dels modals: (1) subjecte en posició 1; (2) _möchte/möchten_ (conjugat) en posició 2; (3) complements al mig; (4) **infinitiu al final** (no just darrere del modal!). Dona: _Ich **möchte** den Dom **sehen**_, no \\*_Ich möchte sehen den Dom_.",
+      "byResponse": [
+        {
+          "match": { "1p3": "sehen" },
+          "message": "L'infinitiu va **al final**, no just darrere del modal. L'ordre correcte és _Ich möchte **den Dom** sehen_.",
+          "references": ["A1a-18"]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-5-ex-02",
+  "topicId": "A1b-5",
+  "title": "Quina construcció per a quina intenció?",
+  "prompt": "Per a cada intenció comunicativa, tria la construcció alemanya que la expressaria millor.",
+  "difficulty": 2,
+  "tags": ["mochten", "gefallen", "interessieren", "auf-keinen-fall", "matisos"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. \"Entrar a un bar i demanar un cafè educadament.\" → {{1}}\n2. \"Dir que un quadre et sembla bonic (primera impressió estètica).\" → {{2}}\n3. \"Dir que la història alemanya et crida l'atenció com a tema.\" → {{3}}\n4. \"Rebutjar rotundament anar al museu.\" → {{4}}",
+    "blanks": [
+      { "id": "1", "label": "construcció adequada" },
+      { "id": "2", "label": "construcció adequada" },
+      { "id": "3", "label": "construcció adequada" },
+      { "id": "4", "label": "construcció adequada" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "1",
+        "options": [
+          "Ich möchte einen Kaffee.",
+          "Mir gefällt das Bild.",
+          "Mich interessiert die deutsche Geschichte.",
+          "Auf keinen Fall gehe ich ins Museum."
+        ]
+      },
+      {
+        "blankId": "2",
+        "options": [
+          "Ich möchte einen Kaffee.",
+          "Mir gefällt das Bild.",
+          "Mich interessiert die deutsche Geschichte.",
+          "Auf keinen Fall gehe ich ins Museum."
+        ]
+      },
+      {
+        "blankId": "3",
+        "options": [
+          "Ich möchte einen Kaffee.",
+          "Mir gefällt das Bild.",
+          "Mich interessiert die deutsche Geschichte.",
+          "Auf keinen Fall gehe ich ins Museum."
+        ]
+      },
+      {
+        "blankId": "4",
+        "options": [
+          "Ich möchte einen Kaffee.",
+          "Mir gefällt das Bild.",
+          "Mich interessiert die deutsche Geschichte.",
+          "Auf keinen Fall gehe ich ins Museum."
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Ich möchte einen Kaffee.",
+      "2": "Mir gefällt das Bild.",
+      "3": "Mich interessiert die deutsche Geschichte.",
+      "4": "Auf keinen Fall gehe ich ins Museum."
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has associat cada intenció amb el recurs òptim: **desig cortès puntual** → _möchten_; **impressió estètica** → _gefallen_ (datiu); **interès intel·lectual** → _interessieren_ (acusatiu); **rebuig absolut** → _auf keinen Fall_.",
+      "references": ["A1b-5"]
+    },
+    "incorrect": {
+      "default": "Recorda els matisos: _möchten_ per a desigs concrets i educats (bar, botiga); _gefallen_ per a la impressió estètica (quadre, ciutat, roba); _interessieren_ per a l'interès intel·lectual (tema, àrea de coneixement); _auf keinen Fall / auf jeden Fall / unbedingt_ per graduar la intensitat."
+    }
+  }
+}

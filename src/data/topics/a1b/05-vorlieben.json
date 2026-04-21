@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-5",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 5,
+  "title": "Vorlieben ausdrücken — gefallen, möchten, interessieren i expressions de graduació",
+  "shortTitle": "Vorlieben",
+  "description": "Amplia el repertori per expressar preferències: gefallen (datiu), möchten per a desigs puntuals, interessieren i neugierig auf (acusatiu), i les expressions auf keinen Fall / auf jeden Fall / unbedingt.",
+  "axes": ["expressions-i-funcions", "pronoms-verbs"],
+  "prerequisites": ["A1a-16", "A1a-17"],
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Context i motivació\n\nJa saps parlar de gustos. A **A1a-16** vas aprendre a separar les dues grans eines: _mögen_ + substantiu (_Ich mag Pizza_) per a **coses**, i verb + _gern_ (_Ich koche gern_) per a **accions**. Més tard, a **A1a-17**, vas afegir una capa de graus: _gern → lieber → am liebsten_ per comparar preferències, i el paral·lel _gut → besser → am besten_ per comparar qualitats. Amb això ja pots dir **què** t'agrada i **quant** t'agrada en comparació amb altres coses.\n\nAra fem un pas més. En alemany real, quan expresses gustos i preferències, **no tens només dues eines: en tens un ventall**. I cada eina afegeix un matís diferent: de neutralitat, d'opinió, de desig, de curiositat, d'èmfasi. Aquest tema ampliarà la teva caixa d'eines per a **Vorlieben ausdrücken** (expressar preferències) amb quatre famílies noves que es complementen entre si:\n\n1. Un **tercer verb** de gust: ==**gefallen**==, que parla d'impressió estètica i funciona com el castellà _gustar_ (amb datiu!).\n2. Un **modal** per expressar desig puntual: ==**möchten**==, ja conegut, però aquí en el seu ús precís per a preferències.\n3. Un **verb d'interès** amb estructura especial: ==**interessieren**==, i l'adjectiu paral·lel ==**neugierig auf**==.\n4. Un **trio d'expressions** per graduar la intensitat: ==**auf keinen Fall**==, ==**auf jeden Fall**==, ==**unbedingt**==."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "La idea que vertebra tota la lliçó",
+          "body": "Expressar preferències no és només _agradar / no agradar_. És triar el registre adequat a la situació: neutre (_mag_), estètic (_gefällt_), volitiu (_möchte_), intel·lectual (_interessiert_), enfàtic (_unbedingt_). Aquest tema et dona eines per escollir."
+        },
+        {
+          "type": "explanation",
+          "body": "Al final tindràs un repertori ampliat amb què poder dir coses com _Mir gefällt der Dom, aber ich möchte ins Museum. Auf keinen Fall in die Kirche, die interessiert mich nicht_. Cinc matisos en dues frases: això és el nivell que busquem."
+        }
+      ]
+    },
+    {
+      "id": "panorama",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Panorama: els tres grans grups\n\nAbans d'entrar en els detalls, val la pena veure l'estructura global del tema. Els recursos per expressar preferències en alemany es poden agrupar en **tres famílies**:\n\n**Grup 1 — Verbs amb complement:**\n\n> _mögen_ (ja conegut, A1a-16) → _Ich **mag** den Dom._\n> _finden_ + adjectiu (ja conegut, A1a-16) → _Ich **finde** den Dom langweilig._\n> _gefallen_ (**nou**) → _Mir **gefällt** der Dom._\n> _interessieren_ (**nou**) → _Mich **interessiert** der Dom._\n\n**Grup 2 — Verb modal de desig:**\n\n> _möchten_ (ja conegut en altres contextos, A1a-19) → _Ich **möchte** einen Kaffee. / Ich **möchte** ins Kino gehen._\n\n**Grup 3 — Expressions de graduació:**\n\n> _auf keinen Fall_ (de cap manera) → rebuig absolut\n> _auf jeden Fall_ (sí o sí) → afirmació absoluta\n> _unbedingt_ (absolutament, imprescindiblement) → èmfasi\n\nLa novetat principal, doncs, és el **Grup 1 ampliat** (amb _gefallen_ i _interessieren_) i el **Grup 3** sencer. _Mögen_, _finden_ i _möchten_ ja els dominaves; aquí els reactivem i els poses al costat de les peces noves."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Per què tants recursos per a \"agradar\"?",
+          "body": "Perquè cada un porta un matís. _Ich mag den Dom_ és **descriptiu** (m'agrada, fet). _Mir gefällt der Dom_ és **estètic i receptiu** (em plau la vista). _Der Dom interessiert mich_ és **intel·lectual** (em desperta curiositat). _Ich möchte den Dom sehen_ és **volitiu** (vull fer-ho). Tots quatre poden traduir-se per \"m'agrada / em vol\", però un parlant nadiu els distingeix amb precisió."
+        }
+      ]
+    },
+    {
+      "id": "gefallen",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Novetat 1: ==gefallen== + datiu\n\nAquí arriba la peça més **gramaticalment diferent** del tema. _Gefallen_ vol dir \"agradar\", però la seva estructura **no és com la de _mögen_**: és com la del castellà _gustar_, i això t'ajudarà molt si has fet castellà abans."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Terme clau: gefallen",
+          "body": "**gefallen** és un verb que expressa agradament **estètic o impressiu**: el que t'agrada com es presenta, com es veu, com sona. En ell, **qui té el gust no és el subjecte, sinó l'objecte indirecte (datiu)**, i el que agrada és el subjecte gramatical."
+        },
+        {
+          "type": "explanation",
+          "body": "La fórmula canònica és:\n\n> **Datiu (a qui li agrada) + gefällt/gefallen (concordant amb el que agrada) + subjecte (el que agrada).**\n\nExemples bàsics:\n\n> **Mir** gefällt der Dom. — A mi m'agrada la catedral. (_Mir_ = datiu de _ich_.)\n> **Dir** gefällt die Musik. — A tu t'agrada la música.\n> **Ihm** gefällt das Buch. — A ell li agrada el llibre.\n> **Uns** gefallen die Bilder. — A nosaltres ens agraden els quadres. (Fixa't: _gefallen_ en plural, concordant amb _die Bilder_.)\n\nLa **concordança del verb** és amb **el que agrada**, no amb la persona que té el gust. Si el que agrada és una cosa (singular) → _gefällt_. Si són diverses coses (plural) → _gefallen_."
+        },
+        {
+          "type": "table",
+          "title": "5.1 Estructura de gefallen",
+          "headers": ["A qui li agrada (datiu)", "Verb (concorda amb el subjecte)", "El que agrada (subjecte)"],
+          "rows": [
+            ["Mir", "gefällt", "der Dom"],
+            ["Mir", "gefallen", "die Museen"],
+            ["Dir", "gefällt", "die Stadt"],
+            ["Ihm", "gefallen", "die Bilder"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**El paral·lelisme amb el castellà _gustar_:**\n\n> _**Me** gusta la catedral._ → _**Mir** gefällt der Dom._\n> _**Me** gustan los museos._ → _**Mir** gefallen die Museen._\n\nÉs **exactament** la mateixa estructura. Si fas servir aquest mirall, _gefallen_ deixa de ser estrany immediatament.\n\n**Quan triar _gefallen_ i no _mögen_?** La diferència és de matís:\n\n> _Ich **mag** den Dom._ → \"M'agrada la catedral\" en sentit general, afectiu, ampli. Pot incloure que hi vas sovint, que t'hi sents bé, que te l'estimes.\n> _**Mir gefällt** der Dom._ → \"La catedral **em plau** / **em resulta bonica**\". És més **estètic, visual, receptiu**. És la primera impressió davant d'una cosa.\n\nA la pràctica, davant d'una obra d'art, una ciutat vista per primera vegada, una peça de roba, un pis, la gent fa servir _gefallen_ molt més que _mögen_."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pronoms datiu bàsics a memoritzar (per a aquest tema)",
+          "body": "_ich_ → **mir** · _du_ → **dir** · _er/es_ → **ihm** · _sie (ella)_ → **ihr** · _wir_ → **uns** · _ihr_ → **euch** · _sie/Sie (ells/vostè)_ → **ihnen/Ihnen**.\n\nA1b hi dedicarà un tema específic (bloc 2), però per a _gefallen_ et caldran aquestes formes des d'ara."
+        }
+      ]
+    },
+    {
+      "id": "check-gefallen",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-5-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "mochten",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Novetat 2: ==möchten== per a preferències i desitjos\n\nJa coneixes _möchten_ de **A1a-19** (quan el vas veure al costat de _können_ i _mögen_). Aquí el recuperem **específicament com a recurs per expressar preferències i desitjos concrets**, que és un dels seus usos centrals."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Terme clau: möchten",
+          "body": "**möchten** és formalment el Konjunktiv II de _mögen_, però en A1 el tractem com un **verb modal independent** amb el significat de \"voler (cortès) / agradar (condicional)\". Es tradueix per \"vull\" amatent, \"m'agradaria\", \"voldria\"."
+        },
+        {
+          "type": "explanation",
+          "body": "Les dues construccions típiques per a preferències són:\n\n**Construcció A — _möchten_ + substantiu (acusatiu):**\n\n> _Ich **möchte** einen Kaffee._ — Vull un cafè. / Voldria un cafè.\n> _Ich **möchte** ein Glas Wasser._ — Voldria un got d'aigua.\n> _Du **möchtest** die Pizza._ — Tu vols la pizza.\n\nAquesta és la construcció del restaurant, del bar, de la botiga: demanes una cosa concreta.\n\n**Construcció B — _möchten_ + infinitiu (al final):**\n\n> _Ich **möchte** ins Kino **gehen**._ — Vull anar al cinema. / M'agradaria anar al cinema.\n> _Ich **möchte** den Dom **sehen**._ — Voldria veure la catedral.\n> _Wir **möchten** Deutsch **lernen**._ — Volem aprendre alemany.\n\nAquí _möchten_ es comporta com qualsevol verb modal: **es conjuga en segona posició** i **l'infinitiu del verb principal va al final** (Satzklammer, que vas veure a A1a-18)."
+        },
+        {
+          "type": "table",
+          "title": "5.2 Conjugació de möchten",
+          "headers": ["Persona", "Forma"],
+          "rows": [
+            ["ich", "**möchte**"],
+            ["du", "**möchtest**"],
+            ["er/sie/es", "**möchte**"],
+            ["wir", "**möchten**"],
+            ["ihr", "**möchtet**"],
+            ["sie/Sie", "**möchten**"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**_möchten_ vs _mögen_: la diferència clau.**\n\n> _Ich **mag** Kaffee._ → M'agrada el cafè (en general, com a persona).\n> _Ich **möchte** einen Kaffee._ → Vull un cafè (ara, en aquest moment concret).\n\n_Mögen_ descriu un gust estable. _Möchten_ expressa un desig concret, puntual, ara i aquí. Quan entres a un bar i demanes, dius _Ich möchte_, mai _Ich mag_."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista cultural",
+          "body": "_Möchten_ és **el verb de la cortesia** a Alemanya i a Àustria. _Ich möchte einen Kaffee, bitte_ és la forma estàndard, neutra i educada de demanar. _Ich will einen Kaffee_ (\"vull un cafè\", amb _wollen_) sona gairebé agressiva en context de servei. Com a nouvingut, fes servir sempre _möchten_ per demanar."
+        }
+      ]
+    },
+    {
+      "id": "interessieren-neugierig",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Novetat 3: ==interessieren== i ==neugierig auf==\n\nLa tercera família del tema gira al voltant de l'**interès intel·lectual** — quan alguna cosa no és que t'agradi (estèticament), sinó que **et crida l'atenció, et desperta curiositat**. Per a això l'alemany té dues eines:\n\n**A) El verb _interessieren_:**"
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Terme clau: interessieren",
+          "body": "**interessieren** s'usa en estructura invertida com _gefallen_: **la persona interessada va en acusatiu**, i **el que interessa és el subjecte**. És un verb de funcionament \"al revés\" en la lògica del catalanoparlant, i cal interioritzar-ho."
+        },
+        {
+          "type": "explanation",
+          "body": "Fórmula:\n\n> **Acusatiu (qui es mostra interessat) + interessiert/interessieren (concordant amb el subjecte) + subjecte (el que interessa).**\n\nExemples:\n\n> **Mich** interessiert der Dom. — La catedral m'interessa. (_Mich_ = acusatiu de _ich_.)\n> **Mich** interessieren die Museen. — Els museus m'interessen. (Plural → _interessieren_.)\n> **Dich** interessiert die Geschichte. — La història t'interessa."
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Compte amb el cas",
+          "body": "Amb _gefallen_ és **datiu** (_mir_), amb _interessieren_ és **acusatiu** (_mich_). Són dos verbs d'estructura similar però **amb cas diferent**. No els confonguis."
+        },
+        {
+          "type": "table",
+          "title": "5.3 Datiu vs acusatiu amb els dos verbs",
+          "headers": ["Verb", "Cas de la persona", "Pronom 1a pers.", "Exemple"],
+          "rows": [
+            ["_gefallen_", "**datiu**", "**mir**", "_**Mir** gefällt der Dom._"],
+            ["_interessieren_", "**acusatiu**", "**mich**", "_**Mich** interessiert der Dom._"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**B) L'adjectiu _neugierig auf_ + acusatiu:**\n\nUna alternativa més personal per dir que una cosa **t'intriga**, que **en tens ganes de conèixer-la**. _Neugierig_ vol dir \"curiós\" i va amb la preposició _auf_ + acusatiu.\n\n> _Ich bin **neugierig auf** die Stadt._ — Tinc curiositat per la ciutat.\n> _Ich bin **neugierig auf** deinen Bruder._ — Tinc curiositat pel teu germà.\n> _Ich bin **neugierig auf** das Konzert._ — Tinc curiositat pel concert.\n\nL'estructura és: **sein + neugierig auf + acusatiu**. _Auf_ regeix acusatiu en aquest ús (direccionalitat/objecte d'interès), no datiu."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Contrast útil",
+          "body": "_Mich interessiert X_ i _Ich bin neugierig auf X_ són pròxims però no idèntics. _Interessieren_ és més **neutre, intel·lectual, general** (\"això em crida l'atenció com a tema\"). _Neugierig auf_ és més **personal i anticipatòria** (\"tinc ganes de descobrir-ho\"). Si encara no has estat a Berlín, _Ich bin neugierig auf Berlin_. Si t'interessa la història de Berlín com a tema d'estudi, _Berlin interessiert mich_."
+        }
+      ]
+    },
+    {
+      "id": "expressions-graduacio",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Novetat 4: ==auf keinen Fall==, ==auf jeden Fall==, ==unbedingt==\n\nL'última família no són verbs sinó **expressions fixes** per **graduar la intensitat** de les teves preferències. Són tres, i són **totes adverbials** (no es conjuguen, no canvien de forma).\n\n**1. _auf keinen Fall_ — \"de cap manera, en absolut\".**\n\nExpressió de **rebuig absolut**. La fas servir quan vols deixar clar que una cosa no t'agrada gens, ni en broma, ni per casualitat.\n\n> _**Auf keinen Fall** gehe ich ins Museum._ — De cap manera vaig al museu.\n> _Ich trinke **auf keinen Fall** Bier._ — No bec cervesa en absolut.\n\n**2. _auf jeden Fall_ — \"sí o sí, en qualsevol cas, sens dubte\".**\n\nLa contrapartida positiva: **afirmació absoluta**. Vol dir que una cosa sí que la vols fer, sens falta.\n\n> _**Auf jeden Fall** besuche ich den Dom._ — Sens dubte visito la catedral.\n> _Wir gehen **auf jeden Fall** ins Kino._ — Sí o sí anem al cinema.\n\n**3. _unbedingt_ — \"absolutament, imprescindiblement, sens falta\".**\n\nÉs un **adverbi únic** (una sola paraula) que reforça que una cosa s'ha de fer o es vol fer amb gran intensitat. S'assembla molt a _auf jeden Fall_, però és d'una peça.\n\n> _Ich möchte **unbedingt** den Dom sehen._ — Vull veure la catedral sens falta.\n> _Du musst **unbedingt** nach Berlin fahren._ — Has d'anar a Berlín absolutament."
+        },
+        {
+          "type": "explanation",
+          "body": "**Posició a la frase:**\n\nAquestes tres expressions són **flexibles**. Poden anar:\n\n- **A l'inici** de la frase (amb inversió verb-subjecte, perquè el verb es manté en segona posició): _**Auf keinen Fall** gehe ich._ → _auf keinen Fall_ ocupa la posició 1, _gehe_ la 2, _ich_ la 3.\n- **Enmig de la frase**, típicament darrere del verb conjugat: _Ich gehe **auf keinen Fall**._, _Ich möchte **unbedingt** den Dom sehen._\n\nA l'A1 pots posicionar-les on et sigui més natural; totes dues posicions són correctes."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Combinable amb tot",
+          "body": "Aquestes expressions combinen amb **qualsevol** dels verbs del tema. _Mir gefällt **auf jeden Fall** der Dom_. _Ich möchte **unbedingt** ins Kino gehen_. _**Auf keinen Fall** interessiert mich Fußball_. És justament la seva utilitat: afegir intensitat a qualsevol frase de preferència."
+        }
+      ]
+    },
+    {
+      "id": "check-mapa",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-5-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "contrast-cases",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El contrast crític: _gefallen_ (datiu) vs _interessieren_ (acusatiu)\n\nLa confusió més habitual del tema, i la que més val la pena prevenir, és **barrejar els casos** de _gefallen_ i _interessieren_. Totes dues estructures inverteixen la lògica del català (la persona no és subjecte, sinó objecte), però **trien casos diferents**."
+        },
+        {
+          "type": "table",
+          "title": "5.4 Correcte vs incorrecte",
+          "headers": ["Frase catalana", "Alemany correcte", "Alemany incorrecte"],
+          "rows": [
+            ["_A mi m'agrada el Dom_", "**Mir** gefällt der Dom.", "\\*_Mich gefällt der Dom._"],
+            ["_A mi m'interessa el Dom_", "**Mich** interessiert der Dom.", "\\*_Mir interessiert der Dom._"],
+            ["_A tu t'agrada la ciutat_", "**Dir** gefällt die Stadt.", "\\*_Dich gefällt die Stadt._"],
+            ["_A tu t'interessa la ciutat_", "**Dich** interessiert die Stadt.", "\\*_Dir interessiert die Stadt._"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Regla pràctica mnemotècnica",
+          "body": "_gefallen_ → **gust, plaer** → **datiu** (com el castellà _me gusta_, dal. també implícit).\n\n_interessieren_ → **interès, atenció** → **acusatiu** (el subjecte \"m'atrapa\", m'afecta directament)."
+        },
+        {
+          "type": "explanation",
+          "body": "Una altra manera d'aprendre-ho, si et va millor, és memoritzar les **dues frases plantilla** i usar-les com a model per totes les altres:\n\n> _**Mir** gefällt der Dom._ (datiu)\n> _**Mich** interessiert der Dom._ (acusatiu)\n\nRecorda també que amb **tots dos verbs**, el **verb concorda amb el que agrada/interessa**, mai amb la persona:\n\n> _**Mir** gefäll**t** der Dom._ (singular) · _**Mir** gefall**en** die Museen._ (plural)\n> _**Mich** interessier**t** der Dom._ (singular) · _**Mich** interessier**en** die Museen._ (plural)"
+        }
+      ]
+    },
+    {
+      "id": "check-contrast",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-5-ex-03", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals\n\n**1. Usar _mich_ amb _gefallen_ (o _mir_ amb _interessieren_).**\nL'error més freqüent i el més important d'evitar. És \\*_**Mich** gefällt der Dom_ i \\*_**Mir** interessiert der Dom_. El correcte és **_Mir gefällt_** i **_Mich interessiert_**. Memoritza les dues plantilles com un bloc tancat.\n\n**2. Fer concordar _gefallen / interessieren_ amb la persona en comptes del subjecte.**\nCalc del català: \\*_Mir gefalle der Dom_ (pensant que _ich_ és el subjecte i per tant el verb ha d'anar en primera persona). No: el subjecte és _der Dom_, i el verb concorda amb ell: _Mir **gefällt** der Dom_ (3a persona singular). Amb plural: _Mir **gefallen** die Museen_ (3a persona plural).\n\n**3. Confondre _mögen_ i _möchten_.**\nSón el mateix verb en dues formes i registres diferents. _Ich mag Kaffee_ = gust general, estable. _Ich möchte einen Kaffee_ = desig ara i aquí, cortès. Al bar **sempre _möchten_**, mai _mögen_. _Ich mag einen Kaffee_ sona com un diagnòstic metafísic, no com una comanda.\n\n**4. Dir _Ich bin neugierig für_ calcant el català \"tinc curiositat per\".**\nLa preposició correcta és **_auf_** + **acusatiu**: _Ich bin neugierig **auf** die Stadt_. Ni _für_ ni _von_ ni _über_. _Auf_ i prou, i amb acusatiu (_auf die Stadt_, no _auf der Stadt_).\n\n**5. Posar _auf jeden Fall / auf keinen Fall_ al mig en posició incorrecta.**\nAquestes expressions són flexibles, però hi ha dues posicions naturals: al principi (_Auf keinen Fall gehe ich..._) o just darrere del verb conjugat (_Ich gehe auf keinen Fall..._). Evita posar-les entre el subjecte i el verb (\\*_Ich auf keinen Fall gehe_), que violaria la regla del verb en segona posició.\n\n**6. Conjugar _unbedingt_ com si fos un adjectiu.**\n_Unbedingt_ és un **adverbi invariable**. No té plural, ni gènere, ni declinació. No diguis \\*_unbedingte_ ni \\*_unbedingten_: només _unbedingt_, tal qual.\n\n**7. Traduir _möchten_ + infinitiu al revés (infinitiu al principi).**\nCom a verb modal, _möchten_ envia l'infinitiu **al final** de la frase (Satzklammer, A1a-18). \\*_Ich möchte sehen den Dom_ és incorrecte; el correcte és _Ich möchte den Dom **sehen**_. L'infinitiu tanca la frase.\n\n**8. Oblidar que _gefallen_ i _interessieren_ poden anar en plural.**\nSi el que agrada/interessa és plural, **el verb també ha d'anar en plural**: _Mir **gefallen** die Museen_, _Mich **interessieren** die Bilder_. És un error fàcil de cometre perquè l'estructura ja és contraintuïtiva per al catalanoparlant."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-5-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-5-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-5-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-5-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi del tema\n\nAmb aquesta lliçó has ampliat el repertori d'expressió de preferències amb **quatre famílies noves** que es complementen amb les que ja tenies d'A1a-16/17. Les idees clau per endur-se:\n\n1. **Cinc verbs per a \"agradar / interessar\", cada un amb un matís propi:**\n    - _mögen_ (gust general, A1a-16) → _Ich **mag** den Dom._\n    - _finden_ + adjectiu (valoració, A1a-16) → _Ich **finde** den Dom langweilig._\n    - _gefallen_ (impressió estètica, **datiu**) → _**Mir** gefällt der Dom._\n    - _interessieren_ (interès intel·lectual, **acusatiu**) → _**Mich** interessiert der Dom._\n    - _möchten_ (desig cortès puntual, sovint +infinitiu) → _Ich **möchte** den Dom sehen._\n\n2. **La gran distinció de cas: datiu vs acusatiu.** _Gefallen_ → **datiu** (_mir, dir, ihm, uns_...); _interessieren_ → **acusatiu** (_mich, dich, ihn, uns_...). Mateixa persona, diferent cas segons el verb. Memoritza les dues plantilles: _**Mir** gefällt X_ / _**Mich** interessiert X_, i aplica-les per analogia.\n\n3. **Concordança del verb amb el subjecte, no amb la persona.** A _gefallen_ i _interessieren_, el verb concorda amb **el que agrada/interessa** (_der Dom_ → _gefällt/interessiert_; _die Museen_ → _gefallen/interessieren_). És contraintuïtiu per al catalanoparlant, però és la clau.\n\n4. **_möchten_ és el verb de la cortesia.** Per demanar al bar, a la botiga, a l'hotel: sempre _Ich **möchte**_, mai _Ich mag_ ni _Ich will_. Amb infinitiu, l'infinitiu va al final (Satzklammer, A1a-18).\n\n5. **_neugierig auf_ + acusatiu** és un recurs alternatiu a _interessieren_, més personal i anticipatori: _Ich bin **neugierig auf** die Stadt_.\n\n6. **Tres expressions per graduar:** _**auf keinen Fall**_ (rebuig absolut), _**auf jeden Fall**_ (afirmació absoluta), _**unbedingt**_ (èmfasi). Totes tres són invariables i combinen amb qualsevol verb del tema."
+        },
+        {
+          "type": "table",
+          "title": "5.5 Els cinc recursos del tema",
+          "headers": ["Recurs", "Matís", "Cas de la persona", "Exemple"],
+          "rows": [
+            ["_mögen_ + subst.", "gust general (A1a-16)", "nominatiu (subjecte)", "_Ich mag den Dom._"],
+            ["_finden_ + adj.", "valoració (A1a-16)", "nominatiu (subjecte)", "_Ich finde den Dom langweilig._"],
+            ["_gefallen_", "impressió estètica", "**datiu**", "_**Mir** gefällt der Dom._"],
+            ["_interessieren_", "interès intel·lectual", "**acusatiu**", "_**Mich** interessiert der Dom._"],
+            ["_möchten_ (+ inf.)", "desig cortès puntual", "nominatiu (subjecte)", "_Ich möchte den Dom sehen._"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Prova de producció natural",
+          "body": "Descriu un viatge imaginari a Alemanya fent servir totes cinc construccions en cinc frases encadenades. Per exemple: _Ich möchte unbedingt nach Berlin fahren. Mir gefällt die Stadt auf jeden Fall. Mich interessiert besonders die Geschichte. Ich bin neugierig auf die Museen. Auf keinen Fall gehe ich zum Fußballspiel, Fußball mag ich nicht._ Cinc frases, cinc matisos, un paisatge expressiu complet."
+        },
+        {
+          "type": "table",
+          "title": "5.6 Recursos externs recomanats",
+          "headers": ["Recurs", "Per què"],
+          "rows": [
+            ["Nicos Weg A1 (Deutsche Welle)", "Episodis específics amb _möchten_ i _gefallen_ en diàlegs reals (bar, turisme)."],
+            ["Goethe-Institut A1", "Llistes de vocabulari A1 per àmbit (ciutat, menjar, oci) per combinar amb _gefällt_ i _interessiert_."],
+            ["dwds.de", "Comprovació en corpus real de _jemandem gefallen_ (datiu) i _jemanden interessieren_ (acusatiu)."]
+          ]
+        }
+      ]
+    }
+  ]
+}

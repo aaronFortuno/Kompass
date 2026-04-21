@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-5-ex-07",
+  "topicId": "A1b-5",
+  "title": "Un diàleg sobre Köln",
+  "prompt": "Completa el micro-diàleg sobre un viatge a Colònia. Cada buit integra una peça diferent del tema.",
+  "difficulty": 3,
+  "tags": ["integracio", "gefallen", "mochten", "interessieren", "auf-keinen-fall", "dialeg"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "— Wie findest du Köln?\n— {{1}} gefällt die Stadt sehr! _(A mi m'agrada molt la ciutat.)_\n\nIch {{2}} unbedingt den Dom sehen. _(Vull veure la catedral sens falta.)_\n\nMich {{3}} auch das Museum Ludwig. _(També m'interessa el museu Ludwig.)_\n\nAber {{4}} keinen Fall gehe ich zum Fußballspiel. _(Però de cap manera vaig al partit de futbol.)_",
+    "blanks": [
+      { "id": "1", "label": "pronom" },
+      { "id": "2", "label": "verb modal" },
+      { "id": "3", "label": "verb d'interès" },
+      { "id": "4", "label": "preposició de l'expressió fixa" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Mir", "Mich", "Ich"] },
+      { "blankId": "2", "options": ["mag", "möchte", "gefalle"] },
+      { "blankId": "3", "options": ["gefällt", "interessiert", "finde"] },
+      { "blankId": "4", "options": ["auf", "in", "mit"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Mir",
+      "2": "möchte",
+      "3": "interessiert",
+      "4": "auf"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has integrat les quatre peces del tema en un diàleg: (1) _**Mir** gefällt_ (datiu); (2) _Ich **möchte** sehen_ (modal de desig, amb _unbedingt_ per emfatitzar); (3) _**Mich** interessiert_ (acusatiu); (4) _**auf** keinen Fall_ (expressió fixa amb _auf_). Ja tens el repertori complet per parlar de preferències amb matís.",
+      "references": ["A1b-5"]
+    },
+    "incorrect": {
+      "default": "Repassa cada peça: (1) _gefallen_ demana **datiu** → _Mir_; (2) desig cortès concret → _möchte_ (modal, amb infinitiu al final); (3) _Mich_ ja hi és, el verb ha de ser de **acusatiu** → _interessiert_; (4) l'expressió fixa és _**auf** keinen Fall_ (amb _auf_, no _in_ ni _mit_).",
+      "byResponse": [
+        {
+          "match": { "1": "Mich" },
+          "message": "Amb _gefallen_ el pronom és **datiu**: _**Mir** gefällt_, no _Mich gefällt_."
+        },
+        {
+          "match": { "3": "gefällt" },
+          "message": "_Mich_ ja hi és: necessites un verb d'**acusatiu**. _Gefallen_ va amb datiu (_Mir_), aquí toca _interessiert_."
+        },
+        {
+          "match": { "4": "in" },
+          "message": "L'expressió fixa és _**auf** keinen Fall_ (amb _auf_), no _in_ ni _mit_. És invariable."
+        }
+      ]
+    }
+  }
+}

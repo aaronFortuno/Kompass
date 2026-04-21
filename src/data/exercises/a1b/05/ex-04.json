@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-5-ex-04",
+  "topicId": "A1b-5",
+  "title": "Tria el verb adequat al matís",
+  "prompt": "Completa cada frase amb el verb que millor reculli el matís indicat entre parèntesis. Tens cinc opcions: _mag, gefällt, interessiert, möchte, finde_.",
+  "difficulty": 2,
+  "tags": ["matisos", "mogen", "gefallen", "interessieren", "mochten", "finden"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Ich {{1}} den Dom. _(M'agrada la catedral, gust general.)_\n2. Mir {{2}} der Dom. _(Em plau la catedral, impressió estètica.)_\n3. Mich {{3}} der Dom. _(M'interessa la catedral, curiositat intel·lectual.)_\n4. Ich {{4}} einen Kaffee, bitte. _(Voldria un cafè, cortesia al bar.)_\n5. Ich {{5}} den Dom langweilig. _(Trobo avorrida la catedral, opinió amb adjectiu.)_",
+    "blanks": [
+      { "id": "1", "label": "verb" },
+      { "id": "2", "label": "verb" },
+      { "id": "3", "label": "verb" },
+      { "id": "4", "label": "verb" },
+      { "id": "5", "label": "verb" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["mag", "gefällt", "interessiert", "möchte", "finde"] },
+      { "blankId": "2", "options": ["mag", "gefällt", "interessiert", "möchte", "finde"] },
+      { "blankId": "3", "options": ["mag", "gefällt", "interessiert", "möchte", "finde"] },
+      { "blankId": "4", "options": ["mag", "gefällt", "interessiert", "möchte", "finde"] },
+      { "blankId": "5", "options": ["mag", "gefällt", "interessiert", "möchte", "finde"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "mag",
+      "2": "gefällt",
+      "3": "interessiert",
+      "4": "möchte",
+      "5": "finde"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has destriat els cinc matisos del tema: gust general (_mag_), impressió estètica amb datiu (_gefällt_), interès intel·lectual amb acusatiu (_interessiert_), desig cortès puntual (_möchte_), opinió amb adjectiu (_finde_).",
+      "references": ["A1b-5", "A1a-16"]
+    },
+    "incorrect": {
+      "default": "Pensa en el matís de cada frase: (1) gust general i estable → _mag_; (2) _Mir_ ja hi és → verb de datiu → _gefällt_; (3) _Mich_ ja hi és → verb d'acusatiu → _interessiert_; (4) demanda cortès al bar → _möchte_; (5) valoració amb adjectiu al final → _finde_ (A1a-16)."
+    }
+  }
+}
