@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-15-ex-01",
+  "topicId": "A1b-15",
+  "title": "Conjugació dels sis modals — casos clau",
+  "prompt": "Completa cada buit amb la forma correcta del verb modal indicat entre parèntesis. Atenció a _möchte_: és l'únic que trenca el patró \"ich sense terminació\".",
+  "difficulty": 1,
+  "tags": ["modalverben", "conjugacio", "present", "mochte"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _ich {{1}} heute früher gehen._ _(dürfen)_\n2. _du {{2}} immer nur Eis essen!_ _(wollen)_\n3. _er {{3}} mir helfen, sagt die Lehrerin._ _(sollen)_\n4. _wir {{4}} den Bericht bis Freitag fertig haben._ _(müssen)_\n5. _ihr {{5}} bitte einen Tisch für vier Personen._ _(möchten)_\n6. _sie {{6}} gut Spanisch sprechen._ _(können)_",
+    "blanks": [
+      { "id": "1", "label": "ich + dürfen" },
+      { "id": "2", "label": "du + wollen" },
+      { "id": "3", "label": "er + sollen" },
+      { "id": "4", "label": "wir + müssen" },
+      { "id": "5", "label": "ihr + möchten" },
+      { "id": "6", "label": "sie pl. + können" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "forma de _dürfen_" },
+      { "blankId": "2", "placeholder": "forma de _wollen_" },
+      { "blankId": "3", "placeholder": "forma de _sollen_" },
+      { "blankId": "4", "placeholder": "forma de _müssen_" },
+      { "blankId": "5", "placeholder": "forma de _möchten_" },
+      { "blankId": "6", "placeholder": "forma de _können_" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "darf",
+      "2": "willst",
+      "3": "soll",
+      "4": "müssen",
+      "5": "möchtet",
+      "6": "können"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has aplicat les dues regles: (a) al **singular** els modals canvien la vocal (_dürfen → darf, wollen → will, müssen → muss, können → kann_) **excepte _sollen_** (_ich/er soll_); (b) _ich_ i _er/sie/es_ són **iguals i sense terminació** (_ich darf = er darf_). L'excepció és _möchte_: _ich/er **möchte**_ (amb _-e_ final) i _ihr **möchtet**_.",
+      "references": ["A1b-15", "A1a-19", "A1a-26"]
+    },
+    "incorrect": {
+      "default": "Revisa el patró: singular canvia la vocal (_darf, will, muss, kann_) **menys _sollen_** (_soll_); _ich_ i _er/sie/es_ no porten terminació. _möchte_ és l'excepció que trenca el patró: _ich/er möchte_, _du möchtest_, _ihr möchtet_. Al plural, els modals tornen a la vocal de l'infinitiu i porten les terminacions habituals (_-en, -t, -en_)."
+    }
+  }
+}

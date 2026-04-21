@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-15-ex-06",
+  "topicId": "A1b-15",
+  "title": "_Soll ich…?_ en preguntes — emparella traduccions",
+  "prompt": "Empareja cada pregunta alemanya amb _sollen_ amb la seva traducció catalana correcta. Recorda: _Soll ich…?_ no és \"haig de…?\" sinó **\"vols que…?\"** (oferiment o demanda d'instrucció).",
+  "difficulty": 2,
+  "tags": ["modalverben", "sollen", "preguntes", "traduccio", "oferiment"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "de1", "group": "de", "content": { "type": "text", "content": "_Soll ich dich abholen?_" } },
+      { "id": "ca1", "group": "ca", "content": { "type": "text", "content": "Vols que vingui a buscar-te?" } },
+
+      { "id": "de2", "group": "de", "content": { "type": "text", "content": "_Soll ich das Fenster öffnen?_" } },
+      { "id": "ca2", "group": "ca", "content": { "type": "text", "content": "Vols que obri la finestra?" } },
+
+      { "id": "de3", "group": "de", "content": { "type": "text", "content": "_Sollen wir einen Kaffee trinken?_" } },
+      { "id": "ca3", "group": "ca", "content": { "type": "text", "content": "Què et sembla si fem un cafè?" } },
+
+      { "id": "de4", "group": "de", "content": { "type": "text", "content": "_Soll ich dir helfen?_" } },
+      { "id": "ca4", "group": "ca", "content": { "type": "text", "content": "Vols que t'ajudi?" } },
+
+      { "id": "de5", "group": "de", "content": { "type": "text", "content": "_Was soll ich mitbringen?_" } },
+      { "id": "ca5", "group": "ca", "content": { "type": "text", "content": "Què vols que porti?" } },
+
+      { "id": "de6", "group": "de", "content": { "type": "text", "content": "_Wohin sollen wir fahren?_" } },
+      { "id": "ca6", "group": "ca", "content": { "type": "text", "content": "On vols que anem?" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Alemany",
+    "groupBLabel": "Català"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["de1", "ca1"],
+      ["de2", "ca2"],
+      ["de3", "ca3"],
+      ["de4", "ca4"],
+      ["de5", "ca5"],
+      ["de6", "ca6"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has captat la clau: _**Soll ich…?**_ / _**Sollen wir…?**_ en **pregunta** no expressen obligació pròpia (\"haig de…?\"), sinó un **oferiment** o **demanda d'instrucció** al qui et parla (\"vols que…?\", \"què vols que…?\"). Aquesta és una de les construccions més útils de l'alemany quotidià: oferir ajuda, consultar instruccions, proposar plans.",
+      "references": ["A1b-15", "A1b-16"]
+    },
+    "incorrect": {
+      "default": "Pensa: _Soll ich…?_ en pregunta **mai** es tradueix \"haig de…?\". Sempre és una forma de demanar **instruccions o confirmació** a l'altre (\"vols que…?\", \"què et sembla si…?\", \"què vols que…?\"). _Sollen wir…?_ amb primera persona plural és una proposta conjunta: \"Què et sembla si…?\"."
+    }
+  }
+}

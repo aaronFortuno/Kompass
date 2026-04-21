@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-15",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 15,
+  "title": "Wiederholung: die Modalverben",
+  "shortTitle": "Modalverben II",
+  "description": "Consolidació dels sis verbs modals d'A1 amb contextos comunicatius reals (feina, família, restaurant, viatge) i distincions fines entre matisos propers.",
+  "axes": ["pronoms-verbs"],
+  "prerequisites": ["A1a-19", "A1a-26"],
+  "estimatedMinutes": 25,
+  "steps": [
+    {
+      "id": "mapa-significats",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Repàs: els sis verbs modals com a eina comunicativa\n\nA A1a-19 (_können, mögen, möchte_) i A1a-26 (_müssen, dürfen, wollen, sollen_) vas conèixer els **sis verbs modals** i la seva conjugació. Ara toca **consolidar-los** amb contextos reals: feina, família, restaurant, viatge. El focus canvia: ja no es tracta de _com es conjuguen_, sinó de _quan tries un o altre_.\n\nAquesta lliçó és una **píndola de repàs**, no un tema nou. Si veus que alguna cosa no et sona, torna un moment a A1a-19 o A1a-26."
+        },
+        {
+          "type": "table",
+          "title": "15.1 Mapa funcional dels modals",
+          "headers": ["Modal", "Matís", "Context típic", "Exemple"],
+          "rows": [
+            ["==_können_==", "capacitat, possibilitat", "feina, idiomes, habilitats", "_Ich **kann** Französisch sprechen._"],
+            ["==_müssen_==", "necessitat, obligació interna", "feina, salut, horaris", "_Ich **muss** heute Überstunden machen._"],
+            ["==_dürfen_==", "permís", "normes, infància, formal", "_Kinder **dürfen** hier spielen._"],
+            ["==_nicht dürfen_==", "prohibició", "rètols, regles", "_Hier **darf** man **nicht** rauchen._"],
+            ["==_wollen_==", "voluntat ferma, decisió", "plans, conviccions", "_Ich **will** Arzt werden._"],
+            ["==_sollen_==", "instrucció d'un tercer", "consells, ordres, propostes", "_Der Arzt sagt, ich **soll** mehr schlafen._"],
+            ["==_möchte_==", "desig educat, cortesia", "restaurant, botigues", "_Ich **möchte** einen Kaffee, bitte._"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Les dues regles que no canvien",
+          "body": "**1. Conjugació modal.** _ich_ i _er/sie/es_ són **iguals** i **sense terminació** (_ich kann = er kann_); canvi vocàlic al singular **excepte _sollen_**.\n\n**2. Satzklammer.** El modal va a **posició 2**, l'infinitiu al **final** de la frase. _Ich **muss** um sieben Uhr ins Büro **gehen**._"
+        }
+      ]
+    },
+    {
+      "id": "distincions-fines",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Parelles que causen errors\n\nEl problema no és saber què vol dir cada modal per separat, sinó **triar-ne el correcte** quan el català faria servir una sola paraula (\"haver de\", \"poder\", \"voler\"). Aquestes són les parelles crítiques:"
+        },
+        {
+          "type": "table",
+          "title": "15.2 Contrastos crítics",
+          "headers": ["Parella", "Exemple A", "Exemple B", "Distinció"],
+          "rows": [
+            ["==_müssen_ vs. _sollen_==", "_Ich **muss** zum Zahnarzt._", "_Ich **soll** zum Zahnarzt._", "Necessitat pròpia vs. encàrrec extern"],
+            ["==_nicht müssen_ vs. _nicht dürfen_==", "_Du **musst nicht** arbeiten._ (no cal)", "_Du **darfst nicht** arbeiten._ (prohibit)", "\"No cal\" **mai** és \"prohibit\""],
+            ["==_wollen_ vs. _möchte_==", "_Ich **will** einen Kaffee._ (sec, brusc)", "_Ich **möchte** einen Kaffee, bitte._ (educat)", "Voluntat ferma vs. cortesia"],
+            ["==_können_ vs. _dürfen_==", "_Ich **kann** schwimmen._ (sé)", "_Ich **darf** schwimmen._ (em deixen)", "Capacitat vs. permís"],
+            ["==_mögen_ vs. _möchte_==", "_Ich **mag** Kaffee._ (gust estable)", "_Ich **möchte** einen Kaffee._ (ara voldria)", "Gust general vs. desig puntual"],
+            ["==_Soll ich…?_ vs. _Muss ich…?_==", "_**Soll** ich dich abholen?_ (vols que…?)", "_**Muss** ich dich abholen?_ (haig de…?)", "Oferiment vs. obligació"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "El parany més greu: _nicht müssen_ ≠ _nicht dürfen_",
+          "body": "En català diem \"**no has de** treballar\" de manera ambigua: pot significar \"no cal\" o \"està prohibit\". En alemany **mai** són el mateix:\n\n- _Du **musst nicht** arbeiten._ = No cal que treballis. (pots si vols)\n- _Du **darfst nicht** arbeiten._ = No pots treballar. (prohibit)\n\nAquest error genera malentesos molt seriosos. ==Memoritza la distinció.=="
+        },
+        {
+          "type": "explanation",
+          "body": "#### Satzklammer amb verbs separables\n\nQuan un modal va amb un **verb separable** (_aufstehen, anrufen, einkaufen, mitkommen_), el separable ==**no es parteix**==: va **sencer a l'infinitiu al final**.\n\n- _Ich muss um sechs Uhr **aufstehen**._ — M'he de llevar a les sis.\n- _Kannst du mich heute **anrufen**?_ — Em pots trucar avui?\n- _Willst du am Samstag **mitkommen**?_ — Vols venir dissabte?\n\nSi recordes A1a-25 (verbs separables) i A1a-18 (Satzklammer), això és només la combinació de les dues regles."
+        }
+      ]
+    },
+    {
+      "id": "check-1-conjugacio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-15-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "check-2-feina",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-15-ex-02", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-3-familia-restaurant",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-15-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-4-parany-negacio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-15-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-5-satzklammer",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-15-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-6-soll-preguntes",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-15-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-7-sintesi-lliure",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-15-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Recapitulem: tres eixos de decisió\n\nDavant d'un context comunicatiu, pregunta't tres coses:"
+        },
+        {
+          "type": "table",
+          "title": "15.3 Mapa de decisió",
+          "headers": ["Eix", "Opcions"],
+          "rows": [
+            ["**Qui mana?**", "propi (==_müssen_==) · un tercer (==_sollen_==) · normes/lleis (==_dürfen_== + _nicht_)"],
+            ["**Com de fort?**", "suau/educat (==_möchte_==) · neutre (==_können_==) · ferm/decidit (==_wollen_==)"],
+            ["**Què hi ha?**", "capacitat (==_können_==) · permís (==_dürfen_==) · gust (==_mögen_==) · necessitat (==_müssen_==)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Paranys crítics per recordar",
+          "body": "- ==_nicht müssen_ ≠ _nicht dürfen_== → \"no cal\" ≠ \"prohibit\"\n- ==_Soll ich…?_== = \"vols que…?\" (**mai** \"haig de…?\")\n- _Ich **will** einen Kaffee_ sona **maleducat** al restaurant → fes servir _**möchte**_\n- Verbs separables davant d'un modal: ==**no es parteixen**==, van sencers a l'infinitiu al final"
+        },
+        {
+          "type": "explanation",
+          "body": "**Connexions amb altres lliçons:**\n\n- **A1a-18** (Satzklammer) — estructura base amb modal + infinitiu.\n- **A1a-19** (_können, mögen, möchte_) — primer bloc de modals.\n- **A1a-25** (verbs separables) — combinació crítica amb modals.\n- **A1a-26** (_müssen, dürfen, wollen, sollen_) — segon bloc.\n- **A1b-16** (_sollen_ a fons) — ampliació natural d'aquesta lliçó.\n\nAra tens els sis modals consolidats en contextos reals. La feina que queda és **pràctica**: cada cop que sentis o llegeixis un modal, pregunta't per què s'ha triat aquest i no un altre. Aquest reflex és el que et farà passar de correcte a natural."
+        }
+      ]
+    }
+  ]
+}

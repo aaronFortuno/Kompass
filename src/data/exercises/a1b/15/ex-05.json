@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-15-ex-05",
+  "topicId": "A1b-15",
+  "title": "Satzklammer: monta la frase sencera (viatge a Berlín)",
+  "prompt": "Ordena les paraules en una frase correcta. El modal va a **posició 2** (o 1 si és pregunta) i l'infinitiu al **final**. Escriu la frase completa amb puntuació final (punt o signe d'interrogació).",
+  "difficulty": 3,
+  "tags": ["satzklammer", "modalverben", "ordre-paraules", "viatge", "avaluacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _fahren | mit dem Zug | wir | nach Berlin | wollen_ → {{1}}\n2. _im Hotel | können | wir | frühstücken | ab 7 Uhr_ → {{2}}\n3. _man | im Museum | darf | nicht | fotografieren_ → {{3}}\n4. _einen Reisepass | du | mitnehmen | musst_ → {{4}}\n5. _am Flughafen | abholen | soll | ich | dich_ (pregunta) → {{5}}\n6. _gern | möchte | ich | in einem guten Restaurant | essen_ → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "1. amb _wollen_" },
+      { "id": "2", "label": "2. amb _können_" },
+      { "id": "3", "label": "3. amb _dürfen_ + _nicht_" },
+      { "id": "4", "label": "4. amb _müssen_" },
+      { "id": "5", "label": "5. pregunta amb _sollen_" },
+      { "id": "6", "label": "6. amb _möchten_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "frase completa amb punt final" },
+      { "blankId": "2", "placeholder": "frase completa amb punt final" },
+      { "blankId": "3", "placeholder": "frase completa amb punt final" },
+      { "blankId": "4", "placeholder": "frase completa amb punt final" },
+      { "blankId": "5", "placeholder": "pregunta amb signe final" },
+      { "blankId": "6", "placeholder": "frase completa amb punt final" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": [
+        "Wir wollen mit dem Zug nach Berlin fahren.",
+        "Mit dem Zug wollen wir nach Berlin fahren.",
+        "Nach Berlin wollen wir mit dem Zug fahren."
+      ],
+      "2": [
+        "Wir können ab 7 Uhr im Hotel frühstücken.",
+        "Ab 7 Uhr können wir im Hotel frühstücken.",
+        "Im Hotel können wir ab 7 Uhr frühstücken."
+      ],
+      "3": [
+        "Im Museum darf man nicht fotografieren.",
+        "Man darf im Museum nicht fotografieren."
+      ],
+      "4": [
+        "Du musst einen Reisepass mitnehmen.",
+        "Einen Reisepass musst du mitnehmen."
+      ],
+      "5": [
+        "Soll ich dich am Flughafen abholen?",
+        "Soll ich dich am Flughafen abholen"
+      ],
+      "6": [
+        "Ich möchte gern in einem guten Restaurant essen.",
+        "Gern möchte ich in einem guten Restaurant essen.",
+        "In einem guten Restaurant möchte ich gern essen."
+      ]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has aplicat correctament la **Satzklammer**: modal a posició 2 (o 1 en preguntes), infinitiu al final. La resta (subjecte, complements de temps, lloc, manera) s'ordena al Mittelfeld segons la regla **Te-Ka-Mo-Lo** (temps → causa → manera → lloc) o variants acceptables amb Vorfeld alternatiu.",
+      "references": ["A1b-15", "A1a-18"]
+    },
+    "incorrect": {
+      "default": "Revisa l'estructura de la Satzklammer:\n\n1. **Modal a posició 2** en afirmacions (o posició 1 en preguntes sí/no).\n2. **Infinitiu sencer al final** (verbs separables **no es parteixen**: _mitnehmen_, _abholen_, _frühstücken_ van sencers).\n3. El **Vorfeld** (primera posició) pot ser el subjecte o un complement; l'important és que just després vingui el modal.\n4. No oblidis la **puntuació final**: punt en afirmacions, signe d'interrogació en preguntes."
+    }
+  }
+}

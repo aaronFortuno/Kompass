@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-15-ex-03",
+  "topicId": "A1b-15",
+  "title": "Família i restaurant: registres de cortesia",
+  "prompt": "Tria el modal que s'adiu al grau de cortesia de cada situació. Atenció especial a _wollen_ vs. _möchte_ i a _Soll ich…?_ com a oferiment.",
+  "difficulty": 2,
+  "tags": ["modalverben", "context-restaurant", "context-familia", "wollen-mochte", "soll-oferiment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Al restaurant, a un cambrer: _Ich {{1}} bitte die Suppe._\n2. Un nen que pataleja: _Ich {{2}} ein Eis! Jetzt!_\n3. La mare al fill: _Du {{3}} deine Hausaufgaben machen, bevor du spielst._\n4. A la botiga: _{{4}} ich das Hemd anprobieren?_\n5. El metge al pacient: _Sie {{5}} weniger Salz essen._\n6. A casa, oferint-se: _{{6}} ich dir beim Kochen helfen?_\n7. Al restaurant, demanant la carta: _{{7}} ich die Karte sehen, bitte?_\n8. Plans familiars: _Meine Eltern {{8}} im August nach Italien fahren — sie haben schon gebucht._",
+    "blanks": [
+      { "id": "1", "label": "desig educat" },
+      { "id": "2", "label": "voluntat infantil ferma" },
+      { "id": "3", "label": "obligació materna" },
+      { "id": "4", "label": "permís educat" },
+      { "id": "5", "label": "consell mèdic" },
+      { "id": "6", "label": "oferiment" },
+      { "id": "7", "label": "permís educat" },
+      { "id": "8", "label": "decisió ferma" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["möchte", "will", "muss", "soll"] },
+      { "blankId": "2", "options": ["möchte", "will", "muss", "soll"] },
+      { "blankId": "3", "options": ["musst", "willst", "darfst", "kannst"] },
+      { "blankId": "4", "options": ["Darf", "Muss", "Will", "Soll"] },
+      { "blankId": "5", "options": ["sollen", "müssen", "wollen", "dürfen"] },
+      { "blankId": "6", "options": ["Soll", "Muss", "Will", "Darf"] },
+      { "blankId": "7", "options": ["Darf", "Muss", "Will", "Möchte"] },
+      { "blankId": "8", "options": ["wollen", "müssen", "sollen", "dürfen"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "möchte",
+      "2": "will",
+      "3": "musst",
+      "4": "Darf",
+      "5": "sollen",
+      "6": "Soll",
+      "7": "Darf",
+      "8": "wollen"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has controlat les distincions més subtils: al restaurant **sempre _möchte_** (1, 7) — _will_ sonaria **maleducat**; _will_ és de nen que pataleja (2); la mare imposa (_musst_: 3); _Darf ich…?_ per demanar permís amb educació (4); el metge **consella** (_sollen_: 5); _Soll ich…?_ és **\"vols que…?\"** (6); _wollen_ per decisions fermes ja preses (8).",
+      "references": ["A1b-15", "A1a-19", "A1a-26"]
+    },
+    "incorrect": {
+      "default": "Pensa en el registre: al restaurant fem servir **_möchte_** (_will_ sona brusc); el nen que pataleja usa _will_; _Soll ich…?_ no és \"haig de?\" sinó **\"vols que…?\"** (oferiment). _Darf ich…?_ és per demanar permís.",
+      "byResponse": [
+        {
+          "match": { "1": "will" },
+          "message": "_Ich will die Suppe_ sona com un nen que exigeix. Al restaurant **sempre** es diu _Ich **möchte**…, bitte_ — és la forma estàndard de cortesia."
+        },
+        {
+          "match": { "6": "Muss" },
+          "message": "_Muss ich dir helfen?_ sonaria com \"Haig d'ajudar-te? Quina mandra.\" Per a un **oferiment** (\"vols que t'ajudi?\") es fa servir _Soll ich…?_."
+        },
+        {
+          "match": { "8": "müssen" },
+          "message": "_müssen_ implicaria obligació; el context diu _sie haben schon gebucht_ (ja han reservat) → és una **decisió ferma** → _wollen_."
+        },
+        {
+          "match": { "5": "müssen" },
+          "message": "_müssen_ seria obligació. El metge dona un **consell** (no pot forçar-te) → _sollen_."
+        }
+      ]
+    }
+  }
+}

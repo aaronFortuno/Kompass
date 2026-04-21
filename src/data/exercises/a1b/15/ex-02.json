@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-15-ex-02",
+  "topicId": "A1b-15",
+  "title": "Modals a la feina: tria segons el context",
+  "prompt": "Tria el modal que millor s'ajusta al matís de cada situació d'oficina. Atenció a la distinció _müssen_ (necessitat pròpia) vs. _sollen_ (encàrrec d'un tercer).",
+  "difficulty": 2,
+  "tags": ["modalverben", "context-feina", "mussen-sollen", "darfen"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich {{1}} morgen früh um sieben im Büro sein — mein Chef hat es gesagt._\n2. _Mein Kollege ist krank. Ich {{2}} heute seine E-Mails beantworten._\n3. _{{3}} ich Ihnen einen Kaffee holen, Frau Müller?_\n4. _In diesem Raum {{4}} man nicht telefonieren._\n5. _Ich {{5}} im Sommer nach Berlin versetzt werden — es ist meine Entscheidung._\n6. _{{6}} ich heute früher gehen? Ich habe einen Arzttermin._\n7. _Nach drei Jahren Erfahrung {{7}} man selbstständig arbeiten._\n8. _Ich {{8}} diesen Bericht bis Freitag fertig haben, sagt die Chefin._",
+    "blanks": [
+      { "id": "1", "label": "encàrrec del cap" },
+      { "id": "2", "label": "necessitat pròpia" },
+      { "id": "3", "label": "oferiment educat" },
+      { "id": "4", "label": "prohibició" },
+      { "id": "5", "label": "decisió pròpia ferma" },
+      { "id": "6", "label": "demanar permís" },
+      { "id": "7", "label": "capacitat adquirida" },
+      { "id": "8", "label": "instrucció de la cap" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["soll", "muss", "will", "darf"] },
+      { "blankId": "2", "options": ["soll", "muss", "will", "darf"] },
+      { "blankId": "3", "options": ["Soll", "Muss", "Will", "Darf"] },
+      { "blankId": "4", "options": ["soll", "muss", "will", "darf"] },
+      { "blankId": "5", "options": ["soll", "muss", "will", "darf"] },
+      { "blankId": "6", "options": ["Soll", "Muss", "Will", "Darf"] },
+      { "blankId": "7", "options": ["kann", "muss", "will", "darf"] },
+      { "blankId": "8", "options": ["soll", "muss", "will", "darf"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "soll",
+      "2": "muss",
+      "3": "Soll",
+      "4": "darf",
+      "5": "will",
+      "6": "Darf",
+      "7": "kann",
+      "8": "soll"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has distingit els quatre matisos clau del context professional: **_sollen_** per a encàrrecs externs (1, 3, 8), **_müssen_** per a necessitat pròpia (2), **_nicht dürfen_** per a prohibicions (4), **_wollen_** per a decisions fermes (5), **_dürfen_** per a demanar permís (6), i **_können_** per a capacitat adquirida (7). El control del registre professional passa per triar bé aquests matisos.",
+      "references": ["A1b-15", "A1a-26"]
+    },
+    "incorrect": {
+      "default": "Recorda les distincions: **el cap mana** (_sollen_: 1, 3, 8); **necessitat teva** (_müssen_: 2); **norma que prohibeix** (_nicht dürfen_: 4); **la teva decisió** (_wollen_: 5); **demanar permís** (_dürfen_ en pregunta: 6); **capacitat adquirida** (_können_: 7).",
+      "byResponse": [
+        {
+          "match": { "1": "muss" },
+          "message": "_müssen_ expressaria necessitat **teva**, però aquí el matís és clar: _mein Chef hat es gesagt_ — és un **encàrrec extern** → _soll_."
+        },
+        {
+          "match": { "4": "muss" },
+          "message": "_muss nicht_ voldria dir \"no cal\", però aquí es tracta d'una **norma del lloc** (prohibició) → _darf nicht_."
+        },
+        {
+          "match": { "5": "muss" },
+          "message": "_müssen_ implicaria obligació externa; la frase diu _es ist meine Entscheidung_ (decisió teva ferma) → _will_."
+        },
+        {
+          "match": { "6": "Muss" },
+          "message": "_Muss ich…?_ expressaria una obligació que ja existeix. Aquí estàs **demanant permís** al cap → _Darf ich…?_."
+        }
+      ]
+    }
+  }
+}

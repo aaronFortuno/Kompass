@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-15-ex-07",
+  "topicId": "A1b-15",
+  "title": "Perfil professional — síntesi lliure de modals",
+  "prompt": "Laura es presenta a una entrevista de feina. Escriu la forma correcta del modal indicat entre parèntesis en cada buit. Atenció a les majúscules a principi de frase o de pregunta.",
+  "difficulty": 3,
+  "tags": ["modalverben", "sintesi", "perfil-professional", "avaluacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Hallo, ich heiße Laura. Ich {{1}} drei Sprachen sprechen: Spanisch, Englisch und ein bisschen Deutsch. Ich {{2}} jetzt in Berlin arbeiten. {{3}} Sie mir bei der Jobsuche helfen? Ich {{4}} in einem internationalen Büro arbeiten. Meine Eltern sagen, ich {{5}} auch einen Deutschkurs machen. Natürlich! In der neuen Firma {{6}} man nicht ohne Deutschkenntnisse arbeiten — sie sind Pflicht. Ich {{7}} also schnell lernen. {{8}} ich Ihnen meinen Lebenslauf schicken?_",
+    "blanks": [
+      { "id": "1", "label": "1. _können_ (capacitat)" },
+      { "id": "2", "label": "2. _wollen_ (decisió)" },
+      { "id": "3", "label": "3. _können_ (pregunta educada, 'Sie')" },
+      { "id": "4", "label": "4. _möchten_ (desig educat)" },
+      { "id": "5", "label": "5. _sollen_ (consell extern)" },
+      { "id": "6", "label": "6. _dürfen_ (prohibició)" },
+      { "id": "7", "label": "7. _müssen_ (necessitat)" },
+      { "id": "8", "label": "8. _sollen_ (oferiment, principi de pregunta)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "forma d'_ich_" },
+      { "blankId": "2", "placeholder": "forma d'_ich_" },
+      { "blankId": "3", "placeholder": "forma de _Sie_ (inici de pregunta)" },
+      { "blankId": "4", "placeholder": "forma d'_ich_" },
+      { "blankId": "5", "placeholder": "forma d'_ich_" },
+      { "blankId": "6", "placeholder": "forma de _man_" },
+      { "blankId": "7", "placeholder": "forma d'_ich_" },
+      { "blankId": "8", "placeholder": "forma d'_ich_ (inici de pregunta)" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["kann"],
+      "2": ["will"],
+      "3": ["Können"],
+      "4": ["möchte"],
+      "5": ["soll"],
+      "6": ["darf"],
+      "7": ["muss"],
+      "8": ["Soll"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has triat i conjugat tots vuit modals en un context comunicatiu real: **_kann_** (capacitat lingüística), **_will_** (decisió ferma de viure-hi), **_Können Sie…?_** (petició cortès amb _Sie_), **_möchte_** (desig educat de lloc de feina), **_soll_** (consell dels pares), **_darf nicht_** (prohibició de la normativa empresarial), **_muss_** (necessitat personal), **_Soll ich…?_** (oferiment). Aquest és el nivell de control que cal esperar en un context A1 → A2.",
+      "references": ["A1b-15", "A1a-19", "A1a-26"]
+    },
+    "incorrect": {
+      "default": "Repassa cada matís: (1) \"puc parlar\" → _kann_; (2) \"he decidit viure a Berlín\" → _will_; (3) petició a l'entrevistador amb _Sie_ → _Können Sie…?_ (amb majúscula); (4) \"voldria treballar\" (educat) → _möchte_; (5) \"els pares diuen que…\" (consell extern) → _soll_; (6) \"està prohibit sense alemany\" → _darf nicht_; (7) \"haig d'aprendre ràpid\" (necessitat pròpia) → _muss_; (8) \"vol que li enviï el CV?\" (oferiment) → _Soll ich…?_ (amb majúscula). Atenció a les majúscules a principi de pregunta.",
+      "byResponse": [
+        {
+          "match": { "2": "muss" },
+          "message": "_muss_ implicaria obligació externa; la frase presenta un **projecte personal** (decisió de Laura) → _will_."
+        },
+        {
+          "match": { "4": "will" },
+          "message": "En una entrevista de feina, _Ich will…_ sona massa brusc. El registre adequat és ==_**möchte**_==: \"voldria treballar\"."
+        },
+        {
+          "match": { "5": "muss" },
+          "message": "_muss_ seria necessitat interna; el context diu _meine Eltern sagen_ (els pares ho diuen) → **encàrrec extern** → _soll_."
+        },
+        {
+          "match": { "6": "muss" },
+          "message": "_man muss nicht_ voldria dir \"no cal\". Però la frase continua _sie sind Pflicht_ (són obligatoris): és una **prohibició** de treballar sense alemany → _darf nicht_."
+        },
+        {
+          "match": { "8": "Muss" },
+          "message": "_Muss ich…?_ sonaria com \"Haig de? Quin pal.\" En una entrevista és un **oferiment educat** (\"Vol que li enviï el CV?\") → _Soll ich…?_."
+        }
+      ]
+    }
+  }
+}
