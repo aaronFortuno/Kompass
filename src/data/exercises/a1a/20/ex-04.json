@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-20-ex-04",
+  "topicId": "A1a-20",
+  "title": "Els hàbits d'una família: X-mal i jeden/jede/jedes",
+  "prompt": "Tria la forma correcta del quantificador o de l'expressió _X-mal + període_ segons la pista en català.",
+  "difficulty": 2,
+  "tags": ["freqüència", "jeden", "jede", "jedes", "X-mal", "acusatiu"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Maria trainiert {{1}} Woche Yoga._ (dues vegades a la)\n2. _Ihr Sohn Max spielt {{2}} Tag Fußball._ (cada)\n3. _Sie fahren {{3}} Jahr nach Griechenland._ (una vegada a l')\n4. _Oma besucht sie {{4}} Monat._ (cada)",
+    "blanks": [
+      { "id": "1", "label": "dues vegades a la" },
+      { "id": "2", "label": "cada (masc.)" },
+      { "id": "3", "label": "una vegada a l'" },
+      { "id": "4", "label": "cada (masc.)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["einmal im", "zweimal in der", "dreimal am", "jede"] },
+      { "blankId": "2", "options": ["jeden", "jede", "jedes", "einmal im"] },
+      { "blankId": "3", "options": ["einmal im", "einmal in der", "einmal am", "jedes"] },
+      { "blankId": "4", "options": ["jeden", "jede", "jedes", "einmal im"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "zweimal in der",
+      "2": "jeden",
+      "3": "einmal im",
+      "4": "jeden"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has aplicat els dos patrons: _X-mal + període_ (_zweimal in der Woche_, _einmal im Jahr_) i _jed- + substantiu_ en acusatiu (_jeden Tag_, _jeden Monat_, masculins amb _-en_). Aquestes fórmules són freqüentíssimes."
+    },
+    "incorrect": {
+      "default": "Revisa: _Woche_ és femení → _in der Woche_; _Jahr_ i _Monat_ són masculí/neutre → _im Jahr, im Monat_; _Tag_ i _Monat_ són masculins, i _jed-_ davant d'un masculí en acusatiu fa _**jeden**_ (_jeden Tag, jeden Monat_)."
+    }
+  }
+}

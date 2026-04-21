@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-20-ex-03",
+  "topicId": "A1a-20",
+  "title": "Les rutines de Tomás",
+  "prompt": "Tria l'adverbi de freqüència adequat a partir de la pista entre parèntesis (descripció o percentatge).",
+  "difficulty": 2,
+  "tags": ["freqüència", "adverbis", "v2", "inversió"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Tomás ist Musiker. Er spielt {{1}} Gitarre (100 %) und singt {{2}} (a vegades).\nEr hört {{3}} klassische Musik (sovint), aber er hört {{4}} Rap (mai).\n{{5}} arbeitet er zu Hause. (La majoria de vegades)",
+    "blanks": [
+      { "id": "1", "label": "100 %" },
+      { "id": "2", "label": "a vegades" },
+      { "id": "3", "label": "sovint" },
+      { "id": "4", "label": "mai" },
+      { "id": "5", "label": "la majoria de vegades (posició 1)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["nie", "selten", "immer", "manchmal"] },
+      { "blankId": "2", "options": ["nie", "manchmal", "oft", "immer"] },
+      { "blankId": "3", "options": ["nie", "selten", "oft", "immer"] },
+      { "blankId": "4", "options": ["nie", "selten", "oft", "immer"] },
+      { "blankId": "5", "options": ["Nie", "Selten", "Manchmal", "Meistens"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "immer",
+      "2": "manchmal",
+      "3": "oft",
+      "4": "nie",
+      "5": "Meistens"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has associat correctament cada percentatge amb el seu adverbi i, al slot 5, has notat que quan l'adverbi va a la posició 1 de la frase s'escriu amb majúscula (i força la inversió verb-subjecte: _Meistens **arbeitet er**_)."
+    },
+    "incorrect": {
+      "default": "Recorda l'escala: _immer_ (100 %) > _meistens_ > _oft_ > _manchmal_ > _selten_ > _nie_ (0 %). I al slot 5, fixa't que l'adverbi obre la frase: s'escriu amb majúscula i el verb va just darrere (regla V2)."
+    }
+  }
+}

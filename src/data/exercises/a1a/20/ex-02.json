@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-20-ex-02",
+  "topicId": "A1a-20",
+  "title": "heute, morgen, morgens",
+  "prompt": "Escriu l'adverbi adequat segons la pista en català. Les frases comencen per l'adverbi, així que van en majúscula.",
+  "difficulty": 1,
+  "tags": ["adverbis", "moment", "morgen", "morgens"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _{{1}} lerne ich Deutsch._ (avui)\n2. _{{2}} gehe ich ins Kino._ (demà, un dia concret)\n3. _{{3}} trinke ich Kaffee._ (al matí, com a rutina)",
+    "blanks": [
+      { "id": "1", "label": "avui" },
+      { "id": "2", "label": "demà (dia concret)" },
+      { "id": "3", "label": "al matí (rutina)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "adverbi" },
+      { "blankId": "2", "placeholder": "adverbi" },
+      { "blankId": "3", "placeholder": "adverbi" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Heute",
+      "2": "Morgen",
+      "3": "Morgens"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has distingit els tres: _Heute_ (avui), _Morgen_ (demà, un dia concret) i _Morgens_ (al matí, com a rutina). Nota la majúscula inicial: tots tres van al principi de frase, així que s'escriuen amb majúscula."
+    },
+    "incorrect": {
+      "default": "Recorda: _heute_ = avui; _morgen_ (sense _-s_) = demà; _morgens_ (amb _-s_) = al matí habitualment. Al principi de frase s'escriuen amb majúscula, i el verb sempre va darrere (regla V2)."
+    }
+  }
+}

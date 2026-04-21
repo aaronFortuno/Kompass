@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-20-ex-01",
+  "topicId": "A1a-20",
+  "title": "L'escala de freqüència",
+  "prompt": "Tria l'adverbi de freqüència adequat per a cada buit segons la pista en català entre parèntesis.",
+  "difficulty": 1,
+  "tags": ["freqüència", "adverbis", "escala"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich trinke {{1}} Wein._ (mai)\n2. _Er geht {{2}} ins Kino._ (sovint)\n3. _Wir kochen {{3}} italienisch._ (a vegades)\n4. _Anna ist {{4}} pünktlich._ (sempre)",
+    "blanks": [
+      { "id": "1", "label": "mai" },
+      { "id": "2", "label": "sovint" },
+      { "id": "3", "label": "a vegades" },
+      { "id": "4", "label": "sempre" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["nie", "selten", "manchmal", "oft", "immer"] },
+      { "blankId": "2", "options": ["nie", "selten", "manchmal", "oft", "immer"] },
+      { "blankId": "3", "options": ["nie", "selten", "manchmal", "oft", "immer"] },
+      { "blankId": "4", "options": ["nie", "selten", "manchmal", "oft", "immer"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "nie",
+      "2": "oft",
+      "3": "manchmal",
+      "4": "immer"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has ordenat l'escala: _nie_ (0 %) → _manchmal_ (a vegades) → _oft_ (sovint) → _immer_ (100 %). Recorda que _nie_ ja porta la negació incorporada; no cal afegir _nicht_."
+    },
+    "incorrect": {
+      "default": "Revisa l'escala: _nie_ = mai (0 %), _selten_ = poques vegades, _manchmal_ = a vegades, _oft_ = sovint, _meistens_ = la majoria de vegades, _immer_ = sempre (100 %). Les pistes en català et donaven la traducció exacta."
+    }
+  }
+}

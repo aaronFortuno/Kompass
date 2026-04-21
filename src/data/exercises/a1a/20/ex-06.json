@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-20-ex-06",
+  "topicId": "A1a-20",
+  "title": "Les rutines de la Lea",
+  "prompt": "Completa el text autobiogràfic triant la forma correcta a cada buit. Integra adverbis de freqüència, adverbis de moment i expressions fixes.",
+  "difficulty": 3,
+  "tags": ["freqüència", "moment", "jeden", "X-mal", "v2", "integració"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Hallo! Ich heiße Lea.\n\n1. _{{1}} studiere ich an der Universität Berlin._ (avui, a l'inici)\n2. _Ich gehe {{2}} zur Uni._ (cada dia)\n3. _{{3}} habe ich Deutschkurs._ (dues vegades a la setmana, a l'inici)\n4. _Ich lerne {{4}} Deutsch, denn ich finde die Sprache schön._ (sovint)\n5. _{{5}} trinke ich einen Kaffee in der Mensa._ (al matí, com a rutina)\n6. _{{6}} bin ich in der Bibliothek._ (a la tarda, com a rutina)\n7. _Ich spreche {{7}} Spanisch zu Hause._ (sempre)\n8. _Und ich spreche {{8}} Französisch._ (mai)",
+    "blanks": [
+      { "id": "1", "label": "avui (posició 1)" },
+      { "id": "2", "label": "cada dia" },
+      { "id": "3", "label": "dues vegades a la setmana (posició 1)" },
+      { "id": "4", "label": "sovint" },
+      { "id": "5", "label": "al matí (rutina)" },
+      { "id": "6", "label": "a la tarda (rutina)" },
+      { "id": "7", "label": "sempre" },
+      { "id": "8", "label": "mai" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Heute", "Morgen", "Gestern", "Morgens"] },
+      { "blankId": "2", "options": ["jeder Tag", "jeden Tag", "jedes Tag", "jede Tag"] },
+      { "blankId": "3", "options": ["Einmal im Woche", "Zweimal im Woche", "Zweimal in der Woche", "Zweimal am Woche"] },
+      { "blankId": "4", "options": ["nie", "oft", "selten", "fast nie"] },
+      { "blankId": "5", "options": ["Morgen", "Morgens", "Heute", "Gestern"] },
+      { "blankId": "6", "options": ["Nachts", "Abends", "Nachmittags", "Mittags"] },
+      { "blankId": "7", "options": ["nie", "selten", "manchmal", "immer"] },
+      { "blankId": "8", "options": ["nie", "selten", "oft", "immer"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Heute",
+      "2": "jeden Tag",
+      "3": "Zweimal in der Woche",
+      "4": "oft",
+      "5": "Morgens",
+      "6": "Nachmittags",
+      "7": "immer",
+      "8": "nie"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Impecable. Has integrat tota la família: (1) adverbis de moment (_Heute, Morgens, Nachmittags_) amb inversió V2; (2) _jeden Tag_ en acusatiu masculí; (3) _zweimal in der Woche_ amb _Woche_ femení; (4) adverbis de freqüència (_oft, immer, nie_) a la posició B, just darrere del verb. Ja pots explicar una rutina sencera en alemany."
+    },
+    "incorrect": {
+      "default": "Revisa: (1) _heute_ = avui (un dia concret); _morgens_ amb _-s_ = al matí habitualment; (2) _Tag_ és masculí i _jed-_ en acusatiu masculí és _jeden_; (3) _Woche_ és femení → _in der Woche_; (4) quan l'adverbi obre la frase, majúscula i inversió verb-subjecte; quan va després del verb, minúscula."
+    }
+  }
+}

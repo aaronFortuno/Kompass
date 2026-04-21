@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-20-ex-05",
+  "topicId": "A1a-20",
+  "title": "Posició a la frase: V2 i inversió",
+  "prompt": "Escriu l'expressió temporal adequada a cada buit segons la pista en català. Fixa't en la majúscula quan l'adverbi obre la frase.",
+  "difficulty": 3,
+  "tags": ["v2", "inversió", "posició", "adverbis", "producció"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _{{1}} lerne ich Deutsch._ (avui, a l'inici)\n2. _Ich gehe {{2}} ins Kino._ (sovint, després del verb)\n3. _{{3}} spielt er Gitarre._ (cada dia, a l'inici)\n4. _Wir trainieren {{4}}._ (dues vegades a la setmana, al final)\n5. _{{5}} trinke ich Kaffee._ (al matí com a rutina, a l'inici)",
+    "blanks": [
+      { "id": "1", "label": "avui (posició 1)" },
+      { "id": "2", "label": "sovint (posició B)" },
+      { "id": "3", "label": "cada dia (posició 1)" },
+      { "id": "4", "label": "dues vegades a la setmana" },
+      { "id": "5", "label": "al matí, rutina (posició 1)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "avui" },
+      { "blankId": "2", "placeholder": "sovint" },
+      { "blankId": "3", "placeholder": "cada dia" },
+      { "blankId": "4", "placeholder": "dues vegades a la setmana" },
+      { "blankId": "5", "placeholder": "al matí (rutina)" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Heute",
+      "2": "oft",
+      "3": "Jeden Tag",
+      "4": "zweimal in der Woche",
+      "5": "Morgens"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has aplicat la regla V2: quan l'adverbi obre la frase (_Heute, Jeden Tag, Morgens_) s'escriu amb majúscula i el verb el segueix immediatament. A la posició B (slots 2 i 4) l'adverbi va darrere del verb, en minúscula."
+    },
+    "incorrect": {
+      "default": "Recorda: (1) adverbi a la posició 1 → majúscula inicial i verb just darrere (_Heute lerne ich..._, _Morgens trinke ich..._); (2) _Tag_ és masculí, i _jed-_ en acusatiu masculí fa _jeden_; (3) _Woche_ és femení, per tant _in der Woche_, no _im Woche_."
+    }
+  }
+}
