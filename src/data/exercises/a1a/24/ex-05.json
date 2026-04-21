@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-24-ex-05",
+  "topicId": "A1a-24",
+  "title": "Traduir el matís del català",
+  "prompt": "Tria l'adverbi alemany que tradueix el matís destacat en cada frase catalana.",
+  "difficulty": 2,
+  "tags": ["schon", "noch", "erst", "traducció", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) _La reunió (**encara**) dura._ → _Die Sitzung dauert {{a}}._\nb) _(**Tot just**) fa una setmana que sóc aquí._ → _Ich bin {{b}} eine Woche hier._\nc) _(**Ja**) són les deu!_ → _Es ist {{c}} zehn Uhr!_",
+    "blanks": [
+      { "id": "a", "label": "encara (continuïtat)" },
+      { "id": "b", "label": "tot just (durada curta)" },
+      { "id": "c", "label": "ja (hora, sorprenent)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "a", "options": ["schon", "noch", "erst"] },
+      { "blankId": "b", "options": ["schon", "noch", "erst"] },
+      { "blankId": "c", "options": ["schon", "noch", "erst"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "a": "noch",
+      "b": "erst",
+      "c": "schon"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. \"Encara\" → **_noch_**; \"tot just / només\" → **_erst_**; \"ja (abans / més del previst)\" → **_schon_**. Ja domines la correspondència principal entre el català i l'alemany."
+    },
+    "incorrect": {
+      "default": "Cadascun té un matís: **_noch_** = continuïtat (encara); **_erst_** = poc/tard (tot just, només, no... fins); **_schon_** = ja / molt / abans del previst."
+    }
+  }
+}

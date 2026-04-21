@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-24",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 24,
+  "title": "schon – noch – erst",
+  "shortTitle": "schon-noch-erst",
+  "description": "Tres adverbis temporals alemanys que expressen **valoracions subjectives** del temps: _schon_ (\"ja\", quelcom assolit o percebut com molt/d'hora), _noch_ (\"encara\", continuïtat) i _erst_ (\"només, tot just, no... fins\", quelcom percebut com poc o tard). Amb contrast explícit enfront del \"ya\" del castellà.",
+  "axes": ["expressions-i-funcions"],
+  "prerequisites": ["A1a-22"],
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Tres petites paraules, molts matisos\n\nL'alemany té tres adverbis temporals que en català tradueixes amb paraules molt diferents segons el context: **==schon==**, **==noch==** i **==erst==**. No són sinònims intercanviables: cadascun aporta una **valoració subjectiva del temps**.\n\n> _Diese Wörter geben Zeiträumen die Qualität \"kurz/lange\", \"früh/spät\" oder \"wenig/viel\" und sind immer relativ._\n>\n> Aquests adverbis donen als períodes de temps la qualitat de \"llarg/curt\", \"d'hora/tard\" o \"poc/molt\" i són **sempre relatius**."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Atenció castellanoparlants",
+          "body": "En castellà, \"**ya**\" sovint cobreix alhora **_schon_** i **_noch_** (en frases negatives: \"ya no\" = **_nicht mehr_**). Tradueix sempre pensant en el **matís**, no en l'equivalència directa."
+        }
+      ]
+    },
+    {
+      "id": "schon-erst-durades",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### _schon_ i _erst_ · durades (_kurz/lange_)\n\nQuan parlem de **quant de temps** fa que algú fa una cosa o té una edat, tenim dues perspectives oposades:\n\n- **==schon==** → la durada sembla ==llarga== (\"ja\", \"fins i tot\").\n- **==erst==** → la durada sembla ==curta== (\"només\", \"tot just\").\n\n#### Exemples\n\n> _Marina lebt **schon** 10 Jahre in Deutschland, Juan **erst** zwei Jahre._\n> Marina ja fa 10 anys que viu a Alemanya, Juan només en fa dos.\n\n> _Juan arbeitet **schon** zwei Jahre in Berlin, Zdenka **erst** fünf Monate._\n> Juan ja fa dos anys que treballa a Berlín, Zdenka només cinc mesos.\n\n> _Anna ist **schon** acht Jahre alt, ihr Bruder Hans ist **erst** fünf._\n> L'Anna ja té vuit anys, el seu germà Hans només en té cinc.\n\nEl parlant **compara** i **valora**: 10 anys semblen molts, 2 pocs. No és una qüestió objectiva; és la seva percepció."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Clau",
+          "body": "Amb durades, la mateixa xifra pot ser **_schon_** o **_erst_** segons què consideri el parlant: 2 anys viscuts a una ciutat poden ser molts (_schon zwei Jahre_) o pocs (_erst zwei Jahre_). El que compta és la **comparació implícita** que el parlant fa amb l'expectativa."
+        }
+      ]
+    },
+    {
+      "id": "schon-erst-hores",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### _schon_ i _erst_ · moments puntuals (_früh/spät_)\n\nQuan parlem d'una **hora concreta** (no d'una durada), la lògica canvia:\n\n- **==schon==** + hora → ==d'hora, abans de l'esperat== (\"ja\").\n- **==erst==** + hora → ==tard, més tard del que caldria== (\"no... fins\").\n\n#### Exemples\n\n> _Ich stehe **schon** um 6 Uhr auf, meine Schwester steht **erst** um 7 Uhr auf._\n> Jo m'aixeco (ja) a les 6, la meva germana no s'aixeca fins a les 7.\n\n> _Mein Bruder steht am Wochenende **schon** um 8 Uhr auf, meine Eltern **erst** um 10 Uhr._\n> El meu germà s'aixeca el cap de setmana (ja) a les 8, els meus pares no fins a les 10."
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Trampa",
+          "body": "Fixa't que **_erst_ + hora** no vol dir \"només\": vol dir ==no fins a==. En català no sempre cal traduir-lo amb un adverbi; el sentit ja s'entén pel context. I a la inversa: **_schon_ + hora** no vol dir \"ja fet\", vol dir \"ja a aquella hora (tan d'hora!)\"."
+        }
+      ]
+    },
+    {
+      "id": "schon-noch-continuitat",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### _schon_ i _noch_ · continuïtat (ja / encara)\n\nAquí entra **==noch==**, que indica que una acció o estat **encara continua**:\n\n- **_schon_** → ja passa / ja ha arribat a aquest punt.\n- **_noch_** → ==encara== dura / no s'ha acabat.\n\n#### Exemples\n\n> _Ich mache in der Arbeit **schon** um 17 Uhr Schluss, meine Kollegen arbeiten **noch** bis 18 Uhr._\n> Jo ja plego de la feina a les 17, els meus companys encara treballen fins a les 18.\n\n> _Anna hat heute Geburtstag. Sie ist **schon** acht Jahre alt. Ihre Freundin Miriam hat **erst** nächste Woche Geburtstag. Sie ist **noch** sieben._\n> L'Anna fa anys avui. Ja té vuit anys. La seva amiga Miriam no fa anys fins la setmana que ve. Encara en té set."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Observació",
+          "body": "Aquest darrer exemple combina els **tres adverbis** i mostra molt bé la tríada: un fet ja assolit (_**schon** acht_), un fet encara no arribat (_**erst** nächste Woche_) i una situació que continua (_**noch** sieben_)."
+        }
+      ]
+    },
+    {
+      "id": "contrast-global",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Taula de contrast\n\nAbans d'entrar a exercicis, una vista global que relaciona els tres adverbis amb els seus equivalents catalans i castellans:"
+        },
+        {
+          "type": "table",
+          "title": "Els tres adverbis en contrast",
+          "headers": ["Adverbi", "Matís", "Equivalent CA", "Trampa ES"],
+          "rows": [
+            ["_**schon**_", "abans / ja fet / molt", "ja", "\"ya\" sovint funciona"],
+            ["_**noch**_", "continua / encara no acabat", "encara", "\"todavía\" / \"aún\""],
+            ["_**erst**_", "poc / tard / tot just", "només, no... fins", "==NO és \"ya\"=="]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Com decidir ràpid",
+          "body": "Pregunta't, per aquest ordre:\n\n1. **La situació continua?** → **_noch_** (encara).\n2. **Ha passat abans / ja s'ha assolit / sembla molt?** → **_schon_** (ja).\n3. **Ha passat poc, tard, o és menys del que caldria?** → **_erst_** (només, tot just)."
+        }
+      ]
+    },
+    {
+      "id": "check-durada",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-24-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "check-hora",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-24-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "check-continuitat",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-24-ex-03", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfall-ya-castella",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Trampa: el \"ya\" del castellà\n\nUn castellanoparlant tendeix a posar **_schon_** a tot arreu on diria \"ya\". Però això falla en diversos casos:\n\n- _Ya no trabajo aquí_ → ==_**Ich arbeite nicht mehr hier**._== (no _schon_)\n- _Ya solo tengo 5 euros_ → ==_**Ich habe nur noch 5 Euro**._== (no _schon_)\n- _Solo llevo 2 días aquí_ → ==_**Ich bin erst zwei Tage hier**._== (no _schon_)"
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Regla pràctica",
+          "body": "Si el \"ya\" castellà va amb **negació** (\"ya no\") o amb matís de **\"només\"** (\"ya solo\"), probablement **NO** és _schon_. Pensa en _nicht mehr_, _nur noch_ o _erst_."
+        }
+      ]
+    },
+    {
+      "id": "pitfall-erst-dos-sentits",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Trampa: _erst_ té dos \"colors\"\n\n**_erst_** es tradueix de maneres diferents segons el context:\n\n1. **Amb durada** (_erst zwei Jahre_) → \"només\", \"tot just\".\n2. **Amb hora/data** (_erst um 8 Uhr_, _erst nächste Woche_) → \"no... fins\".\n\nNo és un error de l'alumne: és que el català utilitza **dues estructures diferents** per a la mateixa idea alemanya (\"poc, tard, menys del previst\")."
+        },
+        {
+          "type": "table",
+          "title": "_erst_ segons el context",
+          "headers": ["Context", "Frase alemanya", "Traducció catalana"],
+          "rows": [
+            ["Durada curta", "_Ich bin **erst** zwei Tage hier._", "Només fa dos dies que sóc aquí."],
+            ["Edat poca", "_Sie ist **erst** fünf Jahre alt._", "Només té cinc anys."],
+            ["Hora tardana", "_Ich stehe **erst** um 10 Uhr auf._", "No m'aixeco fins a les 10."],
+            ["Data futura", "_Miriam hat **erst** nächste Woche Geburtstag._", "Miriam no fa anys fins la setmana que ve."]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-24-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-24-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-24-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-24-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi del tema\n\n1. **_schon_**, **_noch_** i **_erst_** són adverbis ==subjectius==: expressen com el parlant valora el temps.\n2. **_schon_** = \"ja\" en sentit de ==molt / abans / d'hora==.\n3. **_noch_** = \"encara\", sempre que l'acció o estat ==continua==.\n4. **_erst_** = \"només / tot just / no... fins\", sempre que el parlant ho percep com ==poc o tard==.\n5. ==NO confonguis== **_schon_** amb el \"ya\" del castellà: no sempre és equivalent, sobretot en negacions (\"ya no\" = _nicht mehr_).\n6. La mateixa hora (p. ex. 8 h) pot ser **_schon_** per a una persona (d'hora) i **_erst_** per a una altra (tard): depèn de la referència."
+        },
+        {
+          "type": "table",
+          "title": "24.1 Els tres adverbis en una línia",
+          "headers": ["Adverbi", "Funció", "Exemple", "Traducció"],
+          "rows": [
+            ["_schon_", "assolit / molt / d'hora", "_Er ist **schon** da._", "Ja és aquí."],
+            ["_noch_", "continua / no acabat", "_Er arbeitet **noch**._", "Encara treballa."],
+            ["_erst_", "poc / tard / tot just", "_Er kommt **erst** morgen._", "No ve fins demà."]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Per continuar practicant",
+          "body": "Aquests tres adverbis tornaran a aparèixer a A1b i A2 combinats amb **_mehr_**, **_nicht mehr_**, **_erst... um/ab/in_** i construccions temporals més complexes. Fonts externes recomanades: Deutsche Welle (_Nicos Weg A1_), Goethe-Institut (_Grammatik A1_), _dwds.de_ (entrades _schon_, _noch_, _erst_)."
+        }
+      ]
+    }
+  ]
+}

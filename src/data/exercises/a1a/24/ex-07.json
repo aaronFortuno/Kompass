@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-24-ex-07",
+  "topicId": "A1a-24",
+  "title": "Emparellar frases DE amb traduccions CA",
+  "prompt": "Relaciona cada frase alemanya amb la seva traducció catalana. Fixa't en el matís que aporta _schon_, _noch_ o _erst_.",
+  "difficulty": 3,
+  "tags": ["schon", "noch", "erst", "matchpairs", "assessment"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      {
+        "id": "de-schon-muede",
+        "group": "Frase alemanya",
+        "content": { "type": "text", "content": "_Ich bin **schon** müde._" }
+      },
+      {
+        "id": "de-noch-muede",
+        "group": "Frase alemanya",
+        "content": { "type": "text", "content": "_Ich bin **noch** müde._" }
+      },
+      {
+        "id": "de-erst-zehn",
+        "group": "Frase alemanya",
+        "content": { "type": "text", "content": "_Ich stehe **erst** um 10 Uhr auf._" }
+      },
+      {
+        "id": "de-schon-sechs",
+        "group": "Frase alemanya",
+        "content": { "type": "text", "content": "_Ich arbeite **schon** um 6 Uhr._" }
+      },
+      {
+        "id": "ca-no-fins-deu",
+        "group": "Traducció catalana",
+        "content": { "type": "text", "content": "No em llevo fins a les 10." }
+      },
+      {
+        "id": "ca-ja-cansat",
+        "group": "Traducció catalana",
+        "content": { "type": "text", "content": "Ja estic cansat (abans del previst)." }
+      },
+      {
+        "id": "ca-ja-sis",
+        "group": "Traducció catalana",
+        "content": { "type": "text", "content": "Ja treballo a les 6 (d'hora)." }
+      },
+      {
+        "id": "ca-encara-cansat",
+        "group": "Traducció catalana",
+        "content": { "type": "text", "content": "Encara estic cansat." }
+      }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Frase alemanya",
+    "groupBLabel": "Traducció catalana"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["de-schon-muede", "ca-ja-cansat"],
+      ["de-noch-muede", "ca-encara-cansat"],
+      ["de-erst-zehn", "ca-no-fins-deu"],
+      ["de-schon-sechs", "ca-ja-sis"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Domines el contrast entre els tres adverbis en tots els contextos clau: _schon + estat_ (\"ja\", abans del previst), _noch + estat_ (\"encara\"), _erst + hora_ (\"no fins a\"), _schon + hora_ (\"ja a aquella hora\", d'hora)."
+    },
+    "incorrect": {
+      "default": "Repassa: _schon_ + estat/adjectiu = **ja** (abans del previst); _noch_ + estat/adjectiu = **encara**; _erst_ + hora = **no fins a**; _schon_ + hora = **ja a aquella hora** (d'hora)."
+    }
+  }
+}

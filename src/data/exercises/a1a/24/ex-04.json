@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-24-ex-04",
+  "topicId": "A1a-24",
+  "title": "Un text curt amb els tres adverbis",
+  "prompt": "Completa el text amb **_schon_**, **_noch_** o **_erst_** segons el matís de cada buit.",
+  "difficulty": 2,
+  "tags": ["schon", "noch", "erst", "integració", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Hallo! Ich heiße Lena und ich wohne {{1}} seit 15 Jahren in München. Mein Freund Paul wohnt {{2}} seit drei Monaten hier. Am Morgen stehe ich {{3}} um 6 Uhr auf, aber Paul schläft dann {{4}}._",
+    "blanks": [
+      { "id": "1", "label": "15 anys (durada llarga)" },
+      { "id": "2", "label": "3 mesos (durada curta)" },
+      { "id": "3", "label": "6 h (d'hora)" },
+      { "id": "4", "label": "continua dormint" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["schon", "noch", "erst"] },
+      { "blankId": "2", "options": ["schon", "noch", "erst"] },
+      { "blankId": "3", "options": ["schon", "noch", "erst"] },
+      { "blankId": "4", "options": ["schon", "noch", "erst"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "schon",
+      "2": "erst",
+      "3": "schon",
+      "4": "noch"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé! Has distingit els quatre usos: (1) 15 anys = durada llarga → _schon_; (2) 3 mesos = durada curta → _erst_; (3) 6 h = hora matinal (d'hora) → _schon_; (4) continua dormint → _noch_."
+    },
+    "incorrect": {
+      "default": "Revisa cada buit preguntant-te: és **durada**? (llarga → _schon_, curta → _erst_); és **hora**? (d'hora → _schon_, tard → _erst_); **continua** l'acció? (→ _noch_)."
+    }
+  }
+}

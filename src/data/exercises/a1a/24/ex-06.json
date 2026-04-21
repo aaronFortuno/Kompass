@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-24-ex-06",
+  "topicId": "A1a-24",
+  "title": "Vertader o fals?",
+  "prompt": "Valora si cada frase és correcta pel que fa a l'ús de **_schon_** / **_noch_** / **_erst_** en el context que es descriu.",
+  "difficulty": 2,
+  "tags": ["schon", "noch", "erst", "truefalse", "assessment"],
+  "stimulus": {
+    "type": "text",
+    "content": "Llegeix cada afirmació amb atenció i decideix si l'ús de l'adverbi **encaixa amb el context descrit**."
+  },
+  "interaction": {
+    "type": "trueFalse",
+    "statements": [
+      { "id": "s1", "text": "_Meine Tochter ist **schon** 2 Jahre alt_ (una mare orgullosa parla de la seva filla petita)." },
+      { "id": "s2", "text": "_Ich wohne **erst** 30 Jahre in dieser Stadt_ (la persona porta tota la vida adulta a la ciutat)." },
+      { "id": "s3", "text": "_Es ist 7 Uhr und ich schlafe **noch**_ (encara estic al llit)." },
+      { "id": "s4", "text": "_Miriam hat **schon** nächste Woche Geburtstag_ (avui encara no els fa, els farà més tard)." }
+    ]
+  },
+  "validation": {
+    "type": "truthMap",
+    "answers": {
+      "s1": true,
+      "s2": false,
+      "s3": true,
+      "s4": false
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Bé vist. L'ús depèn de la **percepció**: (s1) una mare pot trobar que 2 anys ja és molt → _schon_; (s2) 30 anys a la mateixa ciutat és una durada llarga → _schon_, no _erst_; (s3) seguir dormint és continuïtat → _noch_; (s4) si encara no ha arribat, no és _schon_ sinó _erst nächste Woche_ (\"no fins la setmana que ve\")."
+    },
+    "incorrect": {
+      "default": "Revisa: (s2) 30 anys és una **durada llarga** → cal **_schon_**, no _erst_. (s4) Si els aniversaris encara no han arribat, la frase demana **_erst_** (\"no fins...\"), no _schon_ (que implicaria un fet ja assolit)."
+    }
+  }
+}

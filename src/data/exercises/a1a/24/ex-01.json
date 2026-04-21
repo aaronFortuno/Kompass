@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-24-ex-01",
+  "topicId": "A1a-24",
+  "title": "Distingir _schon_ i _erst_ en durades",
+  "prompt": "Completa la frase amb **_schon_** o **_erst_** segons la valoració de la durada (llarga vs curta).",
+  "difficulty": 1,
+  "tags": ["schon", "erst", "durada", "quick-check"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Maria lebt {{1}} 20 Jahre in Hamburg, Tom {{2}} sechs Monate._",
+    "blanks": [
+      { "id": "1", "label": "20 anys (durada llarga)" },
+      { "id": "2", "label": "6 mesos (durada curta)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["schon", "erst", "noch"] },
+      { "blankId": "2", "options": ["schon", "erst", "noch"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "schon",
+      "2": "erst"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. 20 anys es percep com molt (**_schon_**); 6 mesos com poc (**_erst_**). La lògica del parlant és comparativa: compara una durada llarga amb una de curta."
+    },
+    "incorrect": {
+      "default": "Pensa en la **valoració subjectiva**: durada llarga → **_schon_**; durada curta → **_erst_**. _noch_ no encaixa aquí perquè no estem parlant de continuïtat sinó de comparació de durades."
+    }
+  }
+}

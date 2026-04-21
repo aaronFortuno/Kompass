@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-24-ex-03",
+  "topicId": "A1a-24",
+  "title": "Identificar _noch_ com a continuïtat",
+  "prompt": "Quin dels tres adverbis és el correcte per expressar que l'acció **encara continua** passades les 23 h?",
+  "difficulty": 1,
+  "tags": ["noch", "continuitat", "quick-check"],
+  "stimulus": {
+    "type": "text",
+    "content": "_Es ist 23 Uhr und mein Sohn arbeitet \\_\\_\\_ am Computer._\n\nQuin adverbi completa la frase per indicar que segueix treballant?"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "a", "label": "_schon_" },
+      { "id": "b", "label": "_noch_" },
+      { "id": "c", "label": "_erst_" }
+    ]
+  },
+  "validation": {
+    "type": "exactMatch",
+    "answer": "b"
+  },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. L'acció (treballar) **continua** passades les 23 h, i això en alemany es marca amb **_noch_** (encara)."
+    },
+    "incorrect": {
+      "default": "La frase diu que el fill **segueix treballant**. Per expressar continuïtat, la paraula és **_noch_** (encara). _schon_ marcaria un fet ja assolit i _erst_ una durada percebuda com poca, que no és el cas."
+    }
+  }
+}

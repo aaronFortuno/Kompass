@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-24-ex-02",
+  "topicId": "A1a-24",
+  "title": "_schon_ i _erst_ amb hores concretes",
+  "prompt": "Tria **_schon_** (d'hora) o **_erst_** (tard) segons com es percep cada hora.",
+  "difficulty": 1,
+  "tags": ["schon", "erst", "hora", "quick-check"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Mein Vater steht {{1}} um 5 Uhr auf. Ich stehe {{2}} um 9 Uhr auf._",
+    "blanks": [
+      { "id": "1", "label": "5 h (molt d'hora)" },
+      { "id": "2", "label": "9 h (tard)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["schon", "erst"] },
+      { "blankId": "2", "options": ["schon", "erst"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "schon",
+      "2": "erst"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Bé. Davant d'una hora concreta: aviat → **_schon_**; tard → **_erst_**. Les 5 h es perceben com molt d'hora, les 9 h com tard per aixecar-se."
+    },
+    "incorrect": {
+      "default": "Recorda: **_erst_ + hora** vol dir _\"no fins a\"_ (tard), no _\"només\"_. I **_schon_ + hora** vol dir _\"ja a aquella hora\"_ (sorprenentment d'hora). 5 h = d'hora → _schon_; 9 h = tard → _erst_."
+    }
+  }
+}
