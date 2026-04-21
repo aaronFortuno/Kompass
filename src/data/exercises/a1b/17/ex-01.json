@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-17-ex-01",
+  "topicId": "A1b-17",
+  "title": "L'article al genitiu: _die Schweiz_",
+  "prompt": "Tria l'article correcte del genitiu per completar la frase.",
+  "difficulty": 1,
+  "tags": ["genitiv", "article-definit", "femeni", "paisos-amb-article"],
+  "stimulus": {
+    "type": "text",
+    "content": "Completa: _Die Hauptstadt ___ Schweiz ist Bern._ (\"La capital de Suïssa és Berna.\")"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "des", "label": "des" },
+      { "id": "der", "label": "der" },
+      { "id": "dem", "label": "dem" },
+      { "id": "die", "label": "die" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "der" },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. _Die Schweiz_ és femení (i porta article), per tant al genitiu fa _der Schweiz_. Recorda: femení i plural = ==_**der**_== al genitiu.",
+      "references": ["A1b-17"]
+    },
+    "incorrect": {
+      "default": "Fixa't en el gènere i en el cas. _Die Schweiz_ és **femení singular**; al genitiu, femení i plural fan ==_**der**_==.",
+      "byResponse": [
+        {
+          "match": { "answer": "des" },
+          "message": "_des_ és per a **masculí i neutre** al genitiu. _Die Schweiz_ és femení → _der Schweiz_."
+        },
+        {
+          "match": { "answer": "dem" },
+          "message": "_dem_ és el **datiu** masculí/neutre, no el genitiu. Aquí vols genitiu femení: _der_."
+        },
+        {
+          "match": { "answer": "die" },
+          "message": "_die_ és nominatiu o acusatiu. Al genitiu femení és ==_**der**_==."
+        }
+      ]
+    }
+  }
+}

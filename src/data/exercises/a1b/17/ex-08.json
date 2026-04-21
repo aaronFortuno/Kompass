@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-17-ex-08",
+  "topicId": "A1b-17",
+  "title": "Analitza genitius en un text sobre Berlín",
+  "prompt": "Llegeix cada fragment i identifica el **gènere/nombre** del substantiu nuclear que regeix la forma genitiva ressaltada. Això t'ajuda a reconèixer per què porta la forma que porta (article _des_ o _der_, amb o sense _-s/-es_).",
+  "difficulty": 3,
+  "tags": ["genitiv", "lectura", "analisi", "berlin", "avaluacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Text: _1989 war der Fall **der Mauer**. Der Reichstag ist Sitz **des deutschen Parlaments**. Der Fernsehturm steht im Zentrum **Berlins**. Die Nikolaikirche bildet das Zentrum **des Nikolaiviertels**. Die fünf Museen **der Museumsinsel** Berlin sind sehr bekannt._\n\nIdentifica el gènere/nombre del substantiu nuclear de cada fragment en negreta:\n\na) _**der Mauer**_ → {{1}}\nb) _**des deutschen Parlaments**_ → {{2}}\nc) _**Berlins**_ → {{3}}\nd) _**des Nikolaiviertels**_ → {{4}}\ne) _**der Museumsinsel**_ → {{5}}",
+    "blanks": [
+      { "id": "1", "label": "_die Mauer_" },
+      { "id": "2", "label": "_das Parlament_" },
+      { "id": "3", "label": "_Berlin_ (ciutat)" },
+      { "id": "4", "label": "_das Nikolaiviertel_" },
+      { "id": "5", "label": "_die Museumsinsel_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "1",
+        "options": ["masculí", "femení", "neutre", "plural", "nom propi sense article"]
+      },
+      {
+        "blankId": "2",
+        "options": ["masculí", "femení", "neutre", "plural", "nom propi sense article"]
+      },
+      {
+        "blankId": "3",
+        "options": ["masculí", "femení", "neutre", "plural", "nom propi sense article"]
+      },
+      {
+        "blankId": "4",
+        "options": ["masculí", "femení", "neutre", "plural", "nom propi sense article"]
+      },
+      {
+        "blankId": "5",
+        "options": ["masculí", "femení", "neutre", "plural", "nom propi sense article"]
+      }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "femení",
+      "2": "neutre",
+      "3": "nom propi sense article",
+      "4": "neutre",
+      "5": "femení"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Saps **llegir genitius en context**, cosa molt més útil a A1 que produir-los lliurement. El patró identificat:\n\n- _**der Mauer**_ ← _die Mauer_ (fem.) → article _der_, substantiu invariable.\n- _**des deutschen Parlaments**_ ← _das Parlament_ (neu.) → article _des_ + _-s_ (i _deutschen_ també declina, però això és A2).\n- _**Berlins**_ ← _Berlin_ (nom propi sense article) → només _-s_.\n- _**des Nikolaiviertels**_ ← _das Nikolaiviertel_ (neu.) → article _des_ + _-s_.\n- _**der Museumsinsel**_ ← _die Museumsinsel_ (fem.) → article _der_, substantiu invariable.\n\nQuan vegis _des_ o _-s_ final sospitosa, pensa \"això és genitiu → busca el substantiu del qual depèn\".",
+      "references": ["A1b-17"]
+    },
+    "incorrect": {
+      "default": "Per identificar el gènere, mira el **nominatiu** del substantiu nuclear:\n\n- _**die** Mauer_ → fem.\n- _**das** Parlament_ → neu.\n- _Berlin_ (ciutat, sense article) → nom propi.\n- _**das** Nikolaiviertel_ → neu. (_das Viertel_ = barri).\n- _**die** Museumsinsel_ → fem. (_die Insel_ = illa).\n\nA partir del gènere, la forma del genitiu surt sola: _des_ + _-s/-es_ (masc./neu.) o _der_ invariable (fem./pl.) o només _-s_ (nom propi).",
+      "byResponse": [
+        {
+          "match": { "1": "masculí" },
+          "message": "(a) _die Mauer_ (el mur de Berlín) és **femení**. Al genitiu, _der_ + _Mauer_ (sense canvi al substantiu). _der Mauer_ femení ≠ _des Mauers_ (que seria masculí)."
+        },
+        {
+          "match": { "2": "masculí" },
+          "message": "(b) _das Parlament_ és **neutre** (_das_). Al genitiu neutre: _**des** Parlament**s**_."
+        },
+        {
+          "match": { "3": "neutre" },
+          "message": "(c) _Berlin_ és una **ciutat sense article**. Al genitiu no porta _des_, només _-s_: _**Berlins**_."
+        },
+        {
+          "match": { "4": "masculí" },
+          "message": "(d) _das Nikolaiviertel_ és **neutre** (_das Viertel_ = \"barri\"). Genitiu: _**des** Nikolaiviertels_."
+        },
+        {
+          "match": { "5": "plural" },
+          "message": "(e) _die Museumsinsel_ és **femení singular** (una sola illa, la _Museumsinsel_ de Berlín). _die Insel_ és femení. Al genitiu: _**der** Museumsinsel_."
+        },
+        {
+          "match": { "5": "neutre" },
+          "message": "(e) _die Museumsinsel_ és **femení**: _die Insel_ (\"l'illa\") és femení. Al genitiu: _**der** Museumsinsel_."
+        }
+      ]
+    }
+  }
+}

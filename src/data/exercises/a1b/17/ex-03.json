@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-17-ex-03",
+  "topicId": "A1b-17",
+  "title": "Terminació _-s_ o _-es_: _der Mann_",
+  "prompt": "Quina és la forma genitiva correcta de _der Mann_?",
+  "difficulty": 1,
+  "tags": ["genitiv", "terminacio", "masculi", "monosilabic"],
+  "stimulus": {
+    "type": "text",
+    "content": "Genitiu de _der Mann_ (home):"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "a", "label": "_des Mann_" },
+      { "id": "b", "label": "_des Manns_" },
+      { "id": "c", "label": "_des Mannes_" },
+      { "id": "d", "label": "_der Mannes_" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "c" },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. _Mann_ és masculí **monosil·làbic** → afegeix ==_**-es**_== (més fàcil de pronunciar que _-s_ sol). Article masculí genitiu: _**des**_. Forma completa: _**des Mannes**_.",
+      "references": ["A1b-17"]
+    },
+    "incorrect": {
+      "default": "Als masculins i neutres cal afegir una terminació al substantiu: _-s_ o _-es_. Als **monosil·làbics** es prefereix _-es_ (_des Mannes, des Kindes, des Tages_); als **polisil·làbics** sol anar bé _-s_.",
+      "byResponse": [
+        {
+          "match": { "answer": "a" },
+          "message": "_des Mann_ oblida la **terminació obligatòria**. L'article _des_ sempre demana _-s_ o _-es_ al substantiu. _Mann_ és monosil·làbic → _des Mann**es**_."
+        },
+        {
+          "match": { "answer": "b" },
+          "message": "_des Manns_ és gramaticalment defensable però fonèticament lleig. Als **monosil·làbics** es prefereix _-es_: _des Mannes, des Kindes, des Tages_."
+        },
+        {
+          "match": { "answer": "d" },
+          "message": "_der_ és femení/plural al genitiu. _Mann_ és masculí → article _**des**_, no _der_."
+        }
+      ]
+    }
+  }
+}

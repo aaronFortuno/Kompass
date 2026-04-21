@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-17-ex-04",
+  "topicId": "A1b-17",
+  "title": "Taula d'articles del genitiu",
+  "prompt": "Completa cada buit amb l'article correcte del genitiu (_der_ o _des_, minúscula). Fixa't en el gènere indicat entre parèntesis.",
+  "difficulty": 1,
+  "tags": ["genitiv", "articles", "avaluacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) _das Zentrum {{1}} Stadt_ (fem., \"de la ciutat\")\nb) _der Sitz {{2}} Parlaments_ (neu., \"del parlament\")\nc) _die Fenster {{3}} Hauses_ (neu., \"de la casa\")\nd) _die Hauptstadt {{4}} Niederlande_ (pl.)\ne) _das Symbol {{5}} Sozialismus_ (masc., \"del socialisme\")\nf) _der Fall {{6}} Mauer_ (fem., \"del mur\")",
+    "blanks": [
+      { "id": "1", "label": "article (fem. sing.)" },
+      { "id": "2", "label": "article (neu. sing.)" },
+      { "id": "3", "label": "article (neu. sing.)" },
+      { "id": "4", "label": "article (pl.)" },
+      { "id": "5", "label": "article (masc. sing.)" },
+      { "id": "6", "label": "article (fem. sing.)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "_der_ o _des_" },
+      { "blankId": "2", "placeholder": "_der_ o _des_" },
+      { "blankId": "3", "placeholder": "_der_ o _des_" },
+      { "blankId": "4", "placeholder": "_der_ o _des_" },
+      { "blankId": "5", "placeholder": "_der_ o _des_" },
+      { "blankId": "6", "placeholder": "_der_ o _des_" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "der",
+      "2": "des",
+      "3": "des",
+      "4": "der",
+      "5": "des",
+      "6": "der"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Tens interioritzada la **simetria** del genitiu: **masculí i neutre** = ==_**des**_==, **femení i plural** = ==_**der**_==. Aquesta és la base; la resta (_-s/-es_, noms propis) són afinaments damunt d'aquesta estructura.",
+      "references": ["A1b-17"]
+    },
+    "incorrect": {
+      "default": "Repassa la taula d'articles del genitiu:\n\n- **Masculí** singular → _**des**_ (+ _-s/-es_ al substantiu).\n- **Femení** singular → _**der**_ (substantiu invariable).\n- **Neutre** singular → _**des**_ (+ _-s/-es_ al substantiu).\n- **Plural** → _**der**_ (substantiu invariable; si hi ha _-n_ al plural, ja hi era).\n\nParany: _der_ apareix també al datiu femení (_der Frau_ = \"a la dona\"); el context desambigua.",
+      "byResponse": [
+        {
+          "match": { "1": "des" },
+          "message": "(a) _die Stadt_ és **femení singular** → genitiu _**der** Stadt_, no _des Stadt_."
+        },
+        {
+          "match": { "2": "der" },
+          "message": "(b) _das Parlament_ és **neutre** → genitiu _**des** Parlaments_ (article _des_ + _-s_ al substantiu)."
+        },
+        {
+          "match": { "4": "des" },
+          "message": "(d) _die Niederlande_ és **plural** → genitiu _**der** Niederlande_ (com tots els plurals)."
+        },
+        {
+          "match": { "6": "des" },
+          "message": "(f) _die Mauer_ és **femení singular** → genitiu _**der** Mauer_. El substantiu no canvia; només l'article."
+        }
+      ]
+    }
+  }
+}

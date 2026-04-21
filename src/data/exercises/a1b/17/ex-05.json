@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-17-ex-05",
+  "topicId": "A1b-17",
+  "title": "Terminació _-s_, _-es_ o res",
+  "prompt": "Completa cada substantiu amb la terminació correcta per al genitiu. Escriu només el que va al buit: _s_, _es_ o deixa'l **buit** (prem l'espai o no escriguis res) si el substantiu **no** afegeix res.",
+  "difficulty": 2,
+  "tags": ["genitiv", "terminacio", "s-vs-es", "femeni-invariable", "avaluacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) _das Zentrum des Berlin{{1}}._\nb) _der Sitz des Parlament{{2}}._\nc) _die Bomben des 2. Weltkrieg{{3}}._\nd) _die Hauptstadt der Schweiz{{4}}._\ne) _das Ufer der Spree{{5}}._\nf) _im Zentrum des Nikolaiviertel{{6}}._",
+    "blanks": [
+      { "id": "1", "label": "nom propi (ciutat)" },
+      { "id": "2", "label": "neutre polisil·làbic" },
+      { "id": "3", "label": "masculí polisil·làbic" },
+      { "id": "4", "label": "femení (amb article)" },
+      { "id": "5", "label": "femení (riu)" },
+      { "id": "6", "label": "neutre polisil·làbic" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["s", "es", "(res)"] },
+      { "blankId": "2", "options": ["s", "es", "(res)"] },
+      { "blankId": "3", "options": ["s", "es", "(res)"] },
+      { "blankId": "4", "options": ["s", "es", "(res)"] },
+      { "blankId": "5", "options": ["s", "es", "(res)"] },
+      { "blankId": "6", "options": ["s", "es", "(res)"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "s",
+      "2": "s",
+      "3": "s",
+      "4": "(res)",
+      "5": "(res)",
+      "6": "s"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has aplicat les tres regles: (i) **masculí/neutre polisil·làbic o nom propi** → _-s_ (_Berlins, Parlaments, Weltkriegs, Nikolaiviertels_); (ii) **femení singular i plural** → **res** (_der Schweiz, der Spree_); (iii) _-es_ es reserva als monosil·làbics i arrels que ho demanen fonèticament (_des Mannes, des Kindes, des Tages_).",
+      "references": ["A1b-17"]
+    },
+    "incorrect": {
+      "default": "Recorda:\n\n- **Masculí i neutre** → afegir _-s_ (polisil·làbic) o _-es_ (monosil·làbic/arrels difícils).\n- **Femení i plural** → **no s'afegeix res**. Només canvia l'article (_die → der_).\n- **Noms propis** (ciutats, països sense article, persones) → _-s_ sense article davant.",
+      "byResponse": [
+        {
+          "match": { "1": "es" },
+          "message": "_Berlin_ és nom propi polisil·làbic → _**Berlins**_ (_-s_ curta). _-es_ sonaria antic o forçat."
+        },
+        {
+          "match": { "1": "(res)" },
+          "message": "_Berlin_ com a nom propi **sí afegeix** _-s_ al genitiu (però sense article _des_ davant): _das Zentrum **Berlins**_."
+        },
+        {
+          "match": { "4": "s" },
+          "message": "_die Schweiz_ és femení → al genitiu **no afegeix res** al substantiu. Només canvia l'article: _die Schweiz → der Schweiz_."
+        },
+        {
+          "match": { "4": "es" },
+          "message": "_die Schweiz_ és femení → al genitiu **no afegeix res**. Forma correcta: _der Schweiz_ (només canvia l'article)."
+        },
+        {
+          "match": { "5": "s" },
+          "message": "_die Spree_ (el riu que travessa Berlín) és femení → genitiu _der Spree_, **sense** terminació al substantiu."
+        },
+        {
+          "match": { "2": "es" },
+          "message": "_Parlament_ és neutre **polisil·làbic** → _-s_ curt (_Parlaments_), no _-es_."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-17-ex-06",
+  "topicId": "A1b-17",
+  "title": "De _von_ + datiu al genitiu",
+  "prompt": "Reescriu només el **sintagma genitiu** (el que substitueix _von_ + datiu). Escriu l'article si en cal i el substantiu amb la terminació correcta. Sense _von_, sense majúscula inicial (tret que sigui nom propi).",
+  "difficulty": 3,
+  "tags": ["genitiv", "von-vs-genitiv", "transformacio", "registre-formal", "avaluacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) _Das Zentrum **von Berlin** ist sehr schön._ → _Das Zentrum {{1}} ist sehr schön._\nb) _Der Turm war ein Symbol **vom Sozialismus**._ → _Der Turm war ein Symbol {{2}}._\nc) _Die Hauptstadt **von der Schweiz** ist Bern._ → _Die Hauptstadt {{3}} ist Bern._\nd) _Die Bomben **vom 2. Weltkrieg** zerstörten die Stadt._ → _Die Bomben {{4}} zerstörten die Stadt._",
+    "blanks": [
+      { "id": "1", "label": "nom propi de ciutat" },
+      { "id": "2", "label": "masculí acabat en _-us_" },
+      { "id": "3", "label": "femení amb article" },
+      { "id": "4", "label": "masculí polisil·làbic" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "sintagma genitiu" },
+      { "blankId": "2", "placeholder": "sintagma genitiu" },
+      { "blankId": "3", "placeholder": "sintagma genitiu" },
+      { "blankId": "4", "placeholder": "sintagma genitiu" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Berlins", "berlins"],
+      "2": ["des Sozialismus"],
+      "3": ["der Schweiz"],
+      "4": ["des 2. Weltkriegs", "des zweiten Weltkriegs"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has fet el pas que més costa: passar del **registre col·loquial** (_von_ + datiu) al **registre formal escrit** (genitiu). Fixa't en els detalls: (a) _Berlin_ → _Berlins_ sense article; (b) _Sozialismus_ ja acaba en _-us_, no s'afegeix res més; (c) _die Schweiz_ (fem. amb article) → _der Schweiz_, sense _-s_; (d) _der 2. Weltkrieg_ → _des 2. Weltkriegs_ (masc. polisil·làbic).",
+      "references": ["A1b-17", "A1b-7"]
+    },
+    "incorrect": {
+      "default": "Recorda els quatre patrons:\n\n- **Nom propi sense article** (_Berlin, Deutschland_) → només afegir _-s_, sense _des_: _Berlins_.\n- **Femení amb article** (_die Schweiz_) → _der Schweiz_ (sense _-s_).\n- **Masculí/neutre amb article** → _des_ + substantiu + _-s/-es_: _des Parlaments, des Weltkriegs_.\n- Si el substantiu **ja acaba en _-s, -ss, -ß, -x, -tsch_** i és masculí (com _Sozialismus_), s'usa _des Sozialismus_ **sense** afegir res més.",
+      "byResponse": [
+        {
+          "match": { "1": "des Berlins" },
+          "message": "_Berlin_ és nom propi **sense article** → al genitiu no porta _des_ davant. Només _**Berlins**_."
+        },
+        {
+          "match": { "1": "von Berlin" },
+          "message": "L'exercici demana substituir _von_ + datiu pel **genitiu**. Amb un nom propi de ciutat, la forma genitiva és simplement _**Berlins**_."
+        },
+        {
+          "match": { "3": "der Schweizs" },
+          "message": "_die Schweiz_ és femení → al genitiu **no s'afegeix _-s_** al substantiu. Només canvia l'article: _**der Schweiz**_."
+        },
+        {
+          "match": { "3": "des Schweiz" },
+          "message": "_die Schweiz_ és femení → article _der_ al genitiu (no _des_): _**der Schweiz**_."
+        },
+        {
+          "match": { "2": "des Sozialismuses" },
+          "message": "_Sozialismus_ ja acaba en _-us_; al genitiu **no s'afegeix res més**: _**des Sozialismus**_. Mateix patró: _des Rhythmus, des Kapitalismus_."
+        },
+        {
+          "match": { "4": "des 2. Weltkrieg" },
+          "message": "_der 2. Weltkrieg_ és masculí polisil·làbic → al genitiu afegeix _-s_: _**des 2. Weltkriegs**_ (no només _Weltkrieg_)."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-17",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 17,
+  "title": "Der Genitiv",
+  "shortTitle": "Genitiv",
+  "description": "El quart cas de l'alemany: articles (des/der), terminació -s/-es al masculí i neutre, nom propi, països amb i sense article, i quan usar-lo com a alternativa formal a von + datiu.",
+  "axes": ["casos", "generes-articles-declinacio"],
+  "prerequisites": ["A1a-14", "A1a-28"],
+  "estimatedMinutes": 22,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El cas que et faltava\n\nFins ara has treballat tres casos en alemany: **nominatiu** (subjecte), **acusatiu** (complement directe) i **datiu** (complement indirecte i regit per preposicions com _mit, zu, bei_). Aquesta lliçó t'introdueix el quart i últim: el ==**genitiu**== (_der Genitiv_).\n\nEl genitiu és el cas de la **possessió** i de la **relació entre dos substantius**. En català l'expressem amb la preposició **de**: _el centre **de** Berlín, la caiguda **del** mur, la capital **d'**Alemanya_. En alemany, aquesta relació es pot expressar de dues maneres:\n\n1. Amb la preposició **==_von_== + datiu** (col·loquial, el que ja saps fer des d'A1b-7).\n2. Amb el **==genitiu==** (més formal, escrit, estàndard).\n\n> _Das Zentrum **von** Berlin_ = _Das Zentrum **Berlins**._  \n> _Der Turm war ein Symbol **vom** Sozialismus_ = _Der Turm war ein Symbol **des** Sozialismus._\n\nTotes dues frases signifiquen el mateix; la segona sona més culta i és la que trobes en textos escrits, rètols de museus, guies turístiques i manuals."
+        },
+        {
+          "type": "explanation",
+          "body": "**Objectius d'aquesta lliçó:**\n\n1. Reconèixer les **formes dels articles** al genitiu (_des, der, des, der_).\n2. Afegir correctament la ==**-s / -es**== als masculins i neutres.\n3. Entendre el cas especial dels **noms propis** (ciutats, països sense article).\n4. Distingir quan el genitiu és opcional (alternativa a _von_) i quan és obligatori (certes preposicions i expressions fixes).\n\n**Prerequisits:** A1a-14 (el concepte de declinar) i A1a-28 (nominatiu vs. acusatiu). Aquesta lliçó tanca el mapa dels quatre casos."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Temps estimat",
+          "body": "10-12 minuts. Lliçó d'introducció: no memoritzis tot el genitiu del món, només la forma bàsica que trobaràs a A1."
+        }
+      ]
+    },
+    {
+      "id": "articles-genitiu",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Els articles al genitiu\n\nLa bona notícia: la taula del genitiu és curta i té molta **simetria**."
+        },
+        {
+          "type": "table",
+          "title": "17.1 Articles definits al genitiu",
+          "headers": ["Gènere", "Article", "Exemple"],
+          "rows": [
+            ["masculí", "==**des**==", "_des Mann**es**_, _des Reichstag**s**_"],
+            ["femení", "==**der**==", "_der Frau_, _der Wiedervereinigung_"],
+            ["neutre", "==**des**==", "_des Kind**es**_, _des Parlament**s**_"],
+            ["plural", "==**der**==", "_der Kinder_, _der Niederlande_"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Les dues regles que has de recordar:**\n\n1. **Masculí i neutre** porten article ==_**des**_== i el substantiu afegeix ==**-s** (o **-es**)== al final.\n2. **Femení i plural** porten article ==_**der**_== i el substantiu **no canvia** (això ja t'hauria de sonar: _der_ apareix també al datiu femení i ja coneixes aquesta forma)."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Truc mnemotècnic",
+          "body": "Al genitiu, el masculí i el neutre \"paguen doble\": canvien l'article (_des_) **i** el substantiu (_-s/-es_). El femení i el plural, en canvi, només canvien l'article (_der_). És just al revés del que passa al datiu plural (on el substantiu afegeix _-n_ però l'article és _den_)."
+        },
+        {
+          "type": "table",
+          "title": "17.2 Els quatre casos: comparació d'articles definits",
+          "headers": ["Cas", "masculí", "femení", "neutre", "plural"],
+          "rows": [
+            ["Nominativ", "der", "die", "das", "die"],
+            ["Akkusativ", "**den**", "die", "das", "die"],
+            ["Dativ", "dem", "**der**", "dem", "**den** +-n"],
+            ["==Genitiv==", "==**des**== +-s", "==**der**==", "==**des**== +-s", "==**der**=="]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "_der_ apareix a tres caselles diferents",
+          "body": "Fixa't que _der_ apareix al nominatiu masculí, al datiu femení, al genitiu femení i al genitiu plural. No t'espantis: el context sempre desambiguarà."
+        }
+      ]
+    },
+    {
+      "id": "es-final",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Quan _-s_ i quan _-es_?\n\nEls substantius **masculins i neutres** afegeixen una terminació al genitiu. La tria entre **-s** i **-es** és en bona part fonètica (sonoritat, facilitat de pronúncia), no gramatical estricta. Aquestes són les pautes operatives al nivell A1:\n\n**Fes servir ==-es==:**\n\n- Quan el substantiu és **monosil·làbic** (una sola síl·laba): _der Mann → des **Mannes**_, _das Kind → des **Kindes**_, _der Tag → des **Tages**_.\n- Quan acaba en **-s, -ss, -ß, -x, -z, -tsch** (per poder-se pronunciar): _das Haus → des **Hauses**_, _der Fluss → des **Flusses**_, _der Platz → des **Platzes**_.\n\n**Fes servir ==-s==:**\n\n- Quan el substantiu és **polisil·làbic** i acaba en vocal o consonant \"normal\": _der Reichstag → des **Reichstags**_, _das Parlament → des **Parlaments**_, _der Sozialismus → des **Sozialismus**_ (ull! aquí ja acaba en -s, no afegim res).\n- Amb **noms propis** (ciutats, països sense article, persones): _Berlin → **Berlins**_, _Deutschland → **Deutschlands**_, _Beethoven → **Beethovens**_.\n\n**Casos on no s'afegeix res:**\n\n- Substantius que ja acaben en **-s** o **-ss** en forma culta (_des Sozialismus_).\n- Substantius femenins i plurals: **mai** afegeixen res al genitiu (_der Frau_, _der Kinder_)."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Criteri pràctic",
+          "body": "Si dubtes entre _-s_ i _-es_, pronuncia les dues opcions en veu alta. _Des Mannes_ sona bé; _des Manns_ raspa. _Des Reichstags_ sona natural; _des Reichstages_ és correcte però sona antic. En cas d'empat fonètic, el _-s_ curt és la tendència moderna."
+        },
+        {
+          "type": "explanation",
+          "body": "**Exemples contextuals (text de referència sobre Berlín):**\n\n- _1989 war der Fall **der Mauer**._ (femení → article _der_, substantiu sense canvi)\n- _Der Reichstag ist Sitz **des Deutschen Bundestages**._ (masculí monosil·làbic → _-es_)\n- _Der Fernsehturm steht im Zentrum **Berlins**._ (nom propi → _-s_)\n- _Die Bomben **des 2. Weltkriegs**._ (masculí polisil·làbic → _-s_)\n- _Die Nikolaikirche bildet das Zentrum **des Nikolaiviertels**._ (neutre polisil·làbic → _-s_)"
+        }
+      ]
+    },
+    {
+      "id": "check-article",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-17-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "noms-propis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El cas especial dels noms propis\n\nEls noms de **ciutats, països (sense article) i persones** formen el genitiu d'una manera particular: hi afegeixen simplement una ==**-s**==, sense article davant.\n\n**Estructura:** _[substantiu] + [nom propi]-s_\n\n- _München ist die Hauptstadt **Bayerns**._ (la capital de Baviera)\n- _Kreuzberg ist ein Viertel im Zentrum **Berlins**._ (al centre de Berlín)\n- _Die 9. Sinfonie **Beethovens**._ (la 9a simfonia de Beethoven)"
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Sense preposició!",
+          "body": "A diferència del català, aquí **no hi ha preposició**. Diem _Berlins Zentrum_ o _das Zentrum Berlins_ (dues ordres possibles), però **mai** _\"das Zentrum von Berlin\"_ en registre formal… tot i que _von_ és acceptable en llenguatge col·loquial."
+        },
+        {
+          "type": "explanation",
+          "body": "#### Excepció importantíssima: països i territoris amb article\n\nAlguns països porten article definit en alemany i, per tant, no segueixen la regla del nom propi: declinen normalment amb article al genitiu.\n\n**Singular femení** (la majoria d'aquests països són femenins):\n\n- ==_die Schweiz_== → _**der** Schweiz_: _Bern ist die Hauptstadt **der Schweiz**._\n- ==_die Türkei_== → _**der** Türkei_: _Ankara ist die Hauptstadt **der Türkei**._\n- ==_die Ukraine_==, ==_die Slowakei_==, ==_die Mongolei_==… totes segueixen aquest patró.\n\n**Plural** (països compostos, sempre amb article):\n\n- ==_die Vereinigten Staaten_== / ==_die USA_== → _**der** Vereinigten Staaten / **der** USA_: _Washington ist die Hauptstadt **der USA**._\n- ==_die Niederlande_== → _**der** Niederlande_: _Amsterdam ist die Hauptstadt **der Niederlande**._"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Regla operativa",
+          "body": "Si el país es diu amb _der/die/das_ davant (_die Schweiz, die Niederlande, der Iran, die USA_), fa genitiu amb article; si no (_Deutschland, Spanien, Frankreich, Berlin_), fa genitiu amb només _-s_."
+        }
+      ]
+    },
+    {
+      "id": "check-nom-propi",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-17-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "quan-usar",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Quan s'usa el genitiu?\n\nA A1 ens centrem en tres contextos principals.\n\n**1. Possessió i relació entre dos substantius** (el cas típic):\n\n- _das Zentrum **Berlins**_ (\"el centre de Berlín\")\n- _die Bomben **des 2. Weltkriegs**_ (\"les bombes de la Segona Guerra Mundial\")\n- _die Hauptstadt **der Schweiz**_ (\"la capital de Suïssa\")\n- _der Fall **der Mauer**_ (\"la caiguda del mur\")\n\nAquí el genitiu és **intercanviable amb _von_ + datiu**, però el genitiu sona més formal/culte. En textos escrits, guies, llibres d'història, museus i registres acadèmics → genitiu. En conversa quotidiana → _von_."
+        },
+        {
+          "type": "explanation",
+          "body": "**2. Noms geogràfics amb diferència de significat:** _im Norden Berlins_ vs. _südlich Berlins_.\n\n- _**im Norden Berlins**_ (o _**im Norden von Berlin**_) → \"al nord **de** Berlín\", és a dir, **dins** de la ciutat, a la part nord. _Man ist **in** Berlin._\n- _**südlich Berlins**_ (o _**südlich von Berlin**_) → \"al sud de Berlín\", és a dir, **fora** de la ciutat, en una regió que queda al sud. _Man ist **nicht** in Berlin, sondern in Brandenburg._"
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Dins o fora?",
+          "body": "La diferència no és de cas sinó de preposició: _**im**_ _Norden/Osten/Süden/Westen_ + genitiu localitza **dins**; _**nördlich/östlich/südlich/westlich**_ + genitiu localitza **fora**."
+        },
+        {
+          "type": "explanation",
+          "body": "**3. Expressions fixes temporals i formals:**\n\n- _seit Ende **des 12. Jahrhunderts**_ (\"des de finals del segle XII\")\n- _am 2. Oktober **des Jahres** 1990_ (\"el 2 d'octubre de l'any 1990\")\n- _die Straße **des 17. Juni**_ (\"l'avinguda del 17 de juny\", un carrer famós de Berlín)"
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Expectatives realistes a A1",
+          "body": "No cal que produeixis genitius complexos. N'hi ha prou que els **reconeguis** en textos i que sàpigues fer els més habituals (_des_ + nom propi-_s_, articles bàsics). La producció lliure del genitiu és un objectiu d'A2-B1."
+        }
+      ]
+    },
+    {
+      "id": "check-terminacio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-17-ex-03", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys típics\n\n**1. Oblidar la _-s/-es_ al masculí/neutre.** És l'error més freqüent al principi. L'article _des_ **sempre** va acompanyat de terminació al substantiu.\n\n- ==incorrecte==: _des Parlament_ → ==correcte==: _des Parlament**s**_\n- ==incorrecte==: _des Zentrum_ → ==correcte==: _des Zentrum**s**_\n\n**2. Afegir _-s_ al femení.** El femení **mai** canvia al genitiu. Només canvia l'article (_die → der_).\n\n- ==incorrecte==: _der Mauer**s**_ → ==correcte==: _der Mauer_\n- ==incorrecte==: _der Schweiz**s**_ → ==correcte==: _der Schweiz_\n\n**3. Posar article davant d'un nom propi de ciutat/país sense article.**\n\n- ==incorrecte==: _das Zentrum **des** Berlin**s**_ → ==correcte==: _das Zentrum **Berlins**_ (o _das Zentrum von Berlin_)\n- ==incorrecte==: _die Hauptstadt **des** Deutschland**s**_ → ==correcte==: _die Hauptstadt **Deutschlands**_"
+        },
+        {
+          "type": "explanation",
+          "body": "**4. _Von_ + nom propi en lloc del genitiu amb _-s_.** En registre formal, els noms propis prefereixen la forma amb _-s_.\n\n- Acceptable en oral: _das Zentrum **von Berlin**_\n- Preferit en escrit: _das Zentrum **Berlins**_\n\n**5. Confondre el genitiu amb el nominatiu quan coincideixen en _der_.** Al femení i al plural, _der_ apareix tant al datiu singular femení (_der Frau_) com al genitiu femení (_der Frau_) i genitiu plural (_der Kinder_). El context ho aclareix: si hi ha un substantiu davant que expressa possessió, és genitiu.\n\n- _Ich helfe **der Frau**._ → datiu (complement de _helfen_).\n- _Das Haus **der Frau** ist groß._ → genitiu (la casa de la dona).\n\n**6. Tractar _die Niederlande_ o _die USA_ com si no portessin article.**\n\n- ==incorrecte==: _die Hauptstadt **Niederlands**_ / _die Hauptstadt **USAs**_\n- ==correcte==: _die Hauptstadt **der Niederlande**_ / _die Hauptstadt **der USA**_"
+        }
+      ]
+    },
+    {
+      "id": "assessment-1-articles",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-17-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2-terminacio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-17-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3-von-a-genitiu",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-17-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4-paisos",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-17-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-5-lectura",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-17-ex-08", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Recapitulem\n\n**El que t'emportes d'aquesta lliçó:**\n\n1. El **genitiu** és el quart cas de l'alemany, usat per expressar **possessió i relació entre substantius** (equivalent al català \"de\" + substantiu).\n2. **Articles del genitiu:** masculí i neutre = ==_**des**_==; femení i plural = ==_**der**_==.\n3. Els **masculins i neutres** afegeixen ==**-s** o **-es**== al substantiu (monosil·làbics → _-es_; polisil·làbics → _-s_). Els **femenins i plurals** no canvien el substantiu.\n4. Els **noms propis de ciutat/país sense article** formen el genitiu amb només ==**-s**== (sense _des_): _Berlins, Deutschlands, Bayerns_.\n5. Els **països amb article** (_die Schweiz, die USA, die Niederlande_) segueixen la regla general: _der Schweiz, der USA, der Niederlande_.\n6. El genitiu és **alternativa formal** a _von_ + datiu. Tots dos són correctes; el genitiu és més culte/escrit, _von_ més col·loquial."
+        },
+        {
+          "type": "table",
+          "title": "17.3 Taula resum de butxaca",
+          "headers": ["Gènere", "Article", "Terminació substantiu", "Exemple"],
+          "rows": [
+            ["masculí", "==des==", "**-s / -es**", "_des Mannes, des Tages_"],
+            ["femení", "==der==", "(res)", "_der Frau, der Mauer_"],
+            ["neutre", "==des==", "**-s / -es**", "_des Kindes, des Parlaments_"],
+            ["plural", "==der==", "(res)", "_der Kinder, der USA_"],
+            ["nom propi sense article", "(cap)", "**-s**", "_Berlins, Deutschlands_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Paranys crítics per recordar",
+          "body": "- ==_des_ sempre demana **-s/-es** al substantiu== — no oblidis la terminació.\n- Femenins i plurals **mai** afegeixen _-s_ — només canvia l'article.\n- Noms propis sense article: **només _-s_**, sense _des_ davant.\n- _der Schweiz ≠ die Schweiz_: l'article ha canviat perquè és genitiu."
+        },
+        {
+          "type": "explanation",
+          "body": "**Connexions amb altres lliçons:**\n\n- Tanca el mapa dels casos iniciat a **A1a-14** (declinació) i **A1a-28** (nominatiu/acusatiu), amb el datiu cobert a **A1b-7** i A1b-8.\n- Complementa la preposició _von_ + datiu (A1b-7) com a alternativa col·loquial.\n- Anticipa A2: ús del genitiu amb **preposicions que el regeixen** (_während, trotz, wegen, statt_), que no entren a A1.\n- Útil per a la lectura de textos culturals, guies i descripcions històriques (estil Deutsche Welle, Goethe-Institut), on el genitiu és omnipresent."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Objectiu realista a A1",
+          "body": "Reconèixer el genitiu en lectura i saber-lo formar en els casos bàsics (possessió amb noms comuns i noms propis). La producció fluida del genitiu amb expressions preposicionals més complexes és feina d'A2-B1. Aquí n'has vist la mecànica; ja és prou.\n\n_Der Fall **der Mauer**, das Zentrum **Berlins**, die Sinfonie **Beethovens**_ — la gramàtica _**des Genitivs**_ és la porta d'accés al registre escrit estàndard. Willkommen im vierten Fall!"
+        }
+      ]
+    }
+  ]
+}

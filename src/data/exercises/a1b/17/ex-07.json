@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-17-ex-07",
+  "topicId": "A1b-17",
+  "title": "Capitals del món: països amb o sense article",
+  "prompt": "Completa la forma genitiva del país entre parèntesis. Escriu-ho tot (article + substantiu si cal). Respecta les majúscules dels noms propis.",
+  "difficulty": 2,
+  "tags": ["genitiv", "paisos", "noms-propis", "paisos-amb-article", "avaluacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) _Berlin ist die Hauptstadt {{1}}._ (_Deutschland_)\nb) _Bern ist die Hauptstadt {{2}}._ (_die Schweiz_)\nc) _Ankara ist die Hauptstadt {{3}}._ (_die Türkei_)\nd) _Madrid ist die Hauptstadt {{4}}._ (_Spanien_)\ne) _Washington ist die Hauptstadt {{5}}._ (_die USA_)\nf) _Amsterdam ist die Hauptstadt {{6}}._ (_die Niederlande_)",
+    "blanks": [
+      { "id": "1", "label": "sense article" },
+      { "id": "2", "label": "femení amb article" },
+      { "id": "3", "label": "femení amb article" },
+      { "id": "4", "label": "sense article" },
+      { "id": "5", "label": "plural amb article" },
+      { "id": "6", "label": "plural amb article" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "genitiu de _Deutschland_" },
+      { "blankId": "2", "placeholder": "genitiu de _die Schweiz_" },
+      { "blankId": "3", "placeholder": "genitiu de _die Türkei_" },
+      { "blankId": "4", "placeholder": "genitiu de _Spanien_" },
+      { "blankId": "5", "placeholder": "genitiu de _die USA_" },
+      { "blankId": "6", "placeholder": "genitiu de _die Niederlande_" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Deutschlands"],
+      "2": ["der Schweiz"],
+      "3": ["der Türkei"],
+      "4": ["Spaniens"],
+      "5": ["der USA"],
+      "6": ["der Niederlande"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. La regla és clara i simètrica: **país amb article** (_die Schweiz, die Türkei, die USA, die Niederlande_) → genitiu amb article _**der**_ (fem. o pl.); **país sense article** (_Deutschland, Spanien, Frankreich, Italien_) → només _**-s**_ final. Els noms propis mai porten _des_ davant.",
+      "references": ["A1b-17"]
+    },
+    "incorrect": {
+      "default": "Comprova si el país porta article en nominatiu:\n\n- _**die** Schweiz, **die** Türkei, **die** USA, **die** Niederlande_ → sí → genitiu: _**der**_ + substantiu invariable.\n- _Deutschland, Spanien, Frankreich, Italien, Österreich_ → no → genitiu: només _-s_ al final, **sense** article.",
+      "byResponse": [
+        {
+          "match": { "1": "des Deutschlands" },
+          "message": "_Deutschland_ és nom propi **sense article** → genitiu només amb _-s_ (_**Deutschlands**_), sense _des_ davant."
+        },
+        {
+          "match": { "2": "der Schweizs" },
+          "message": "_die Schweiz_ és femení → al genitiu **no** s'afegeix _-s_: _**der Schweiz**_."
+        },
+        {
+          "match": { "2": "des Schweiz" },
+          "message": "_die Schweiz_ és femení → article genitiu _der_, no _des_: _**der Schweiz**_."
+        },
+        {
+          "match": { "4": "des Spaniens" },
+          "message": "_Spanien_ és nom propi sense article → genitiu _**Spaniens**_ (només _-s_, sense _des_)."
+        },
+        {
+          "match": { "5": "der USAs" },
+          "message": "_die USA_ és **plural** → al genitiu plural **no** s'afegeix res al substantiu: _**der USA**_."
+        },
+        {
+          "match": { "5": "des USA" },
+          "message": "_die USA_ és plural → article genitiu plural _der_ (no _des_): _**der USA**_."
+        },
+        {
+          "match": { "6": "der Niederlandes" },
+          "message": "_die Niederlande_ és **plural** → al genitiu plural el substantiu no canvia: _**der Niederlande**_."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-17-ex-02",
+  "topicId": "A1b-17",
+  "title": "Països amb i sense article al genitiu",
+  "prompt": "Quina frase és correcta?",
+  "difficulty": 2,
+  "tags": ["genitiv", "noms-propis", "paisos", "deutschland"],
+  "stimulus": {
+    "type": "text",
+    "content": "Tria la frase gramaticalment correcta. Hauptstadt = \"capital\"."
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "a", "label": "_Berlin ist die Hauptstadt Deutschlands._" },
+      { "id": "b", "label": "_Berlin ist die Hauptstadt des Deutschlands._" },
+      { "id": "c", "label": "_Berlin ist die Hauptstadt der Deutschland._" },
+      { "id": "d", "label": "_Berlin ist die Hauptstadt von Deutschlands._" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "a" },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. _Deutschland_ no porta article, per tant al genitiu només afegeix ==_**-s**_== (sense _des_ davant). La forma correcta és _die Hauptstadt **Deutschlands**_.",
+      "references": ["A1b-17"]
+    },
+    "incorrect": {
+      "default": "Recorda la regla operativa: si el país porta article (_die Schweiz, die USA, die Niederlande_) → genitiu amb article (_der Schweiz_, etc.); si no en porta (_Deutschland, Spanien, Frankreich_) → només _-s_ final.",
+      "byResponse": [
+        {
+          "match": { "answer": "b" },
+          "message": "_des Deutschlands_ combina article **i** terminació: no es posa article davant dels països sense article. N'hi ha prou amb _-s_: _Deutschlands_."
+        },
+        {
+          "match": { "answer": "c" },
+          "message": "_der Deutschland_ seria si _Deutschland_ fos femení o plural, i no ho és. _Die Schweiz, die Türkei_ sí → _der Schweiz, der Türkei_. Però _Deutschland, Spanien, Frankreich_ no porten article."
+        },
+        {
+          "match": { "answer": "d" },
+          "message": "O _von Deutschland_ (amb datiu, sense _-s_) o _Deutschlands_ (genitiu, amb _-s_), però **mai** les dues coses alhora."
+        }
+      ]
+    }
+  }
+}
