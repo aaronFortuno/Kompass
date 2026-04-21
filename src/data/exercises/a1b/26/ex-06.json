@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-26-ex-06",
+  "topicId": "A1b-26",
+  "title": "Reescriu les frases en Perfekt",
+  "prompt": "Transforma cada frase de **present** a **Perfekt**. Escriu ==**només el que va al buit**==: l'auxiliar conjugat per a {{Na}} i el participi per a {{Nb}}. Tria _haben_ o _sein_ segons el verb.",
+  "difficulty": 2,
+  "tags": ["perfekt", "rewrite", "present-a-perfekt", "typeIn"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich esse eine Pizza._ → _Ich {{1a}} eine Pizza {{1b}}._\n2. _Wir gehen ins Kino._ → _Wir {{2a}} ins Kino {{2b}}._\n3. _Er kauft ein Buch._ → _Er {{3a}} ein Buch {{3b}}._\n4. _Du kommst nach Hause._ → _Du {{4a}} nach Hause {{4b}}._\n5. _Ihr spielt Fußball._ → _Ihr {{5a}} Fußball {{5b}}._\n6. _Sie (ella) schreibt einen Brief._ → _Sie {{6a}} einen Brief {{6b}}._",
+    "blanks": [
+      { "id": "1a", "label": "1a. aux. (essen, ich)" },
+      { "id": "1b", "label": "1b. part. (essen)" },
+      { "id": "2a", "label": "2a. aux. (gehen, wir)" },
+      { "id": "2b", "label": "2b. part. (gehen)" },
+      { "id": "3a", "label": "3a. aux. (kaufen, er)" },
+      { "id": "3b", "label": "3b. part. (kaufen)" },
+      { "id": "4a", "label": "4a. aux. (kommen, du)" },
+      { "id": "4b", "label": "4b. part. (kommen)" },
+      { "id": "5a", "label": "5a. aux. (spielen, ihr)" },
+      { "id": "5b", "label": "5b. part. (spielen)" },
+      { "id": "6a", "label": "6a. aux. (schreiben, sie sg.)" },
+      { "id": "6b", "label": "6b. part. (schreiben)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1a", "placeholder": "aux." },
+      { "blankId": "1b", "placeholder": "Partizip II" },
+      { "blankId": "2a", "placeholder": "aux." },
+      { "blankId": "2b", "placeholder": "Partizip II" },
+      { "blankId": "3a", "placeholder": "aux." },
+      { "blankId": "3b", "placeholder": "Partizip II" },
+      { "blankId": "4a", "placeholder": "aux." },
+      { "blankId": "4b", "placeholder": "Partizip II" },
+      { "blankId": "5a", "placeholder": "aux." },
+      { "blankId": "5b", "placeholder": "Partizip II" },
+      { "blankId": "6a", "placeholder": "aux." },
+      { "blankId": "6b", "placeholder": "Partizip II" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1a": ["habe"],
+      "1b": ["gegessen"],
+      "2a": ["sind"],
+      "2b": ["gegangen"],
+      "3a": ["hat"],
+      "3b": ["gekauft"],
+      "4a": ["bist"],
+      "4b": ["gekommen"],
+      "5a": ["habt"],
+      "5b": ["gespielt"],
+      "6a": ["hat"],
+      "6b": ["geschrieben"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has passat de present a Perfekt aplicant la regla sistemàticament: el verb conjugat del present esdevé ==**participi al final**==, i l'auxiliar (_haben_ o _sein_) ocupa la posició V2. La resta de la frase no canvia.",
+      "references": ["A1b-26"]
+    },
+    "incorrect": {
+      "default": "Tres passos per transformar present → Perfekt: (1) decideix l'auxiliar segons el verb. (2) Posa'l en V2 conjugat com al present. (3) Substitueix el verb principal pel seu Partizip II al final.",
+      "byResponse": [
+        {
+          "match": { "2a": "haben" },
+          "message": "_gehen_ és moviment → ==**_sein_**==. _wir_ + _sein_ = _**sind**_."
+        },
+        {
+          "match": { "4a": "hast" },
+          "message": "_kommen_ és moviment → ==**_sein_**==. _du_ + _sein_ = _**bist**_, no _hast_."
+        },
+        {
+          "match": { "4b": "gekommt" },
+          "message": "_kommen_ és irregular: participi ==**_gekommen_**== (amb _-en_, no _-t_)."
+        },
+        {
+          "match": { "3b": "gekauften" },
+          "message": "_kaufen_ és regular: participi ==**_gekauft_**== (_ge-_ + arrel + _-t_)."
+        },
+        {
+          "match": { "5b": "gespielen" },
+          "message": "_spielen_ és regular: participi ==**_gespielt_**== (_ge-_ + _spiel_ + _-t_)."
+        },
+        {
+          "match": { "6b": "geschriebt" },
+          "message": "_schreiben_ és irregular: participi ==**_geschrieben_**== (canvi _ei → ie_, _-en_)."
+        },
+        {
+          "match": { "1b": "geisst" },
+          "message": "_essen_ és irregular: participi ==**_gegessen_**== (amb doble _g_ a l'inici)."
+        }
+      ]
+    }
+  }
+}

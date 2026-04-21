@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-26-ex-04",
+  "topicId": "A1b-26",
+  "title": "_haben_ o _sein_? Tria l'auxiliar del verb",
+  "prompt": "Per a cada infinitiu, tria l'auxiliar que li correspon al Perfekt. Recorda: ==_sein_== per moviment amb canvi de lloc, canvi d'estat, i els dos especials (_sein, bleiben_). ==_haben_== per tota la resta.",
+  "difficulty": 1,
+  "tags": ["perfekt", "haben-sein", "auxiliar", "tria"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _essen_ → {{1}}\n2. _gehen_ → {{2}}\n3. _arbeiten_ → {{3}}\n4. _fahren_ → {{4}}\n5. _lesen_ → {{5}}\n6. _kommen_ → {{6}}\n7. _machen_ → {{7}}\n8. _bleiben_ → {{8}}\n9. _trinken_ → {{9}}\n10. _aufstehen_ → {{10}}",
+    "blanks": [
+      { "id": "1", "label": "1. menjar" },
+      { "id": "2", "label": "2. anar" },
+      { "id": "3", "label": "3. treballar" },
+      { "id": "4", "label": "4. viatjar/anar en vehicle" },
+      { "id": "5", "label": "5. llegir" },
+      { "id": "6", "label": "6. venir" },
+      { "id": "7", "label": "7. fer" },
+      { "id": "8", "label": "8. quedar-se" },
+      { "id": "9", "label": "9. beure" },
+      { "id": "10", "label": "10. llevar-se" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["haben", "sein"] },
+      { "blankId": "2", "options": ["haben", "sein"] },
+      { "blankId": "3", "options": ["haben", "sein"] },
+      { "blankId": "4", "options": ["haben", "sein"] },
+      { "blankId": "5", "options": ["haben", "sein"] },
+      { "blankId": "6", "options": ["haben", "sein"] },
+      { "blankId": "7", "options": ["haben", "sein"] },
+      { "blankId": "8", "options": ["haben", "sein"] },
+      { "blankId": "9", "options": ["haben", "sein"] },
+      { "blankId": "10", "options": ["haben", "sein"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "haben",
+      "2": "sein",
+      "3": "haben",
+      "4": "sein",
+      "5": "haben",
+      "6": "sein",
+      "7": "haben",
+      "8": "sein",
+      "9": "haben",
+      "10": "sein"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Els quatre verbs amb ==**_sein_**== són _gehen, fahren, kommen_ (moviment amb canvi de lloc), _aufstehen_ (canvi d'estat) i _bleiben_ (excepció especial). La resta (_essen, arbeiten, lesen, machen, trinken_) va amb ==**_haben_**==, com la gran majoria de verbs. A A1b-29 afinarem aquesta distinció.",
+      "references": ["A1b-26", "A1b-29"]
+    },
+    "incorrect": {
+      "default": "Els verbs amb ==_sein_== són els de **moviment amb canvi de lloc** (_gehen, fahren, kommen, fliegen, laufen_), els de **canvi d'estat** (_aufstehen, einschlafen_) i dos especials (_sein, bleiben_). Tota la resta → ==_haben_==.",
+      "byResponse": [
+        {
+          "match": { "1": "sein" },
+          "message": "_essen_ és un verb normal (no indica moviment ni canvi d'estat) → auxiliar ==**_haben_**==: _ich habe gegessen_."
+        },
+        {
+          "match": { "2": "haben" },
+          "message": "_gehen_ és moviment amb canvi de lloc → auxiliar ==**_sein_**==: _ich bin gegangen_."
+        },
+        {
+          "match": { "4": "haben" },
+          "message": "_fahren_ és moviment en vehicle → auxiliar ==**_sein_**==: _ich bin gefahren_."
+        },
+        {
+          "match": { "6": "haben" },
+          "message": "_kommen_ és moviment → auxiliar ==**_sein_**==: _ich bin gekommen_."
+        },
+        {
+          "match": { "8": "haben" },
+          "message": "_bleiben_ és una de les **excepcions especials** (sense moviment físic, però es conjuga amb _sein_ igualment): _ich bin geblieben_. Memoritza-ho."
+        },
+        {
+          "match": { "10": "haben" },
+          "message": "_aufstehen_ (llevar-se) és **canvi d'estat** → auxiliar ==**_sein_**==: _ich bin aufgestanden_."
+        },
+        {
+          "match": { "3": "sein" },
+          "message": "_arbeiten_ és verb normal → ==**_haben_**==: _ich habe gearbeitet_."
+        },
+        {
+          "match": { "5": "sein" },
+          "message": "_lesen_ és verb normal → ==**_haben_**==: _ich habe gelesen_."
+        },
+        {
+          "match": { "7": "sein" },
+          "message": "_machen_ és verb normal → ==**_haben_**==: _ich habe gemacht_."
+        },
+        {
+          "match": { "9": "sein" },
+          "message": "_trinken_ és verb normal → ==**_haben_**==: _ich habe getrunken_."
+        }
+      ]
+    }
+  }
+}

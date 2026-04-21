@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-27-ex-07",
+  "topicId": "A1b-27",
+  "title": "Detecta el Partizip II correcte",
+  "prompt": "Tria ==**l'única**== forma correctament construïda. Les altres contenen algun dels errors típics (_ge-_ de més, _ge-_ de menys, final equivocat).",
+  "difficulty": 2,
+  "tags": ["diagnostic", "partizip-ii", "singleChoice"],
+  "stimulus": {
+    "type": "text",
+    "content": "Quina d'aquestes formes de **Partizip II** està ben construïda?"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "a", "label": "==**_aufgestanden_**== (de _aufstehen_)" },
+      { "id": "b", "label": "_gebesucht_ (de _besuchen_)" },
+      { "id": "c", "label": "_einkauft_ (de _einkaufen_)" },
+      { "id": "d", "label": "_gegeht_ (de _gehen_)" },
+      { "id": "e", "label": "_gestudiert_ (de _studieren_)" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "a" },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. ==**_aufgestanden_**== té totes les peces ben col·locades: _auf_ (prefix separable) + _ge_ (==infixat==) + _stand_ (arrel irregular amb canvi _steh- → stand-_) + _-en_ (final d'irregular). Les altres quatre opcions il·lustren els quatre errors més comuns del tema.",
+      "references": ["A1b-27"]
+    },
+    "incorrect": {
+      "default": "Pregunta't si cada forma compleix les regles: inseparables sense _ge-_, separables amb _ge-_ infixat, _-ieren_ sense _ge-_, irregulars amb canvi d'arrel i final _-en_.",
+      "byResponse": [
+        {
+          "match": { "response": "b" },
+          "message": "==_be-_ és inseparable==, no admet _ge-_ al Partizip II. La forma correcta seria ==**_besucht_**==, no _gebesucht_."
+        },
+        {
+          "match": { "response": "c" },
+          "message": "_einkaufen_ és **separable regular**: necessita _ge-_ ==**infixat**==. La forma correcta és ==**_eingekauft_**==, no _einkauft_."
+        },
+        {
+          "match": { "response": "d" },
+          "message": "_gehen_ és ==irregular== i canvia radicalment d'arrel: _geh- → gang-_, amb final _-en_. La forma és ==**_gegangen_**==, no _gegeht_."
+        },
+        {
+          "match": { "response": "e" },
+          "message": "Els verbs en _-ieren_ ==**mai**== porten _ge-_. La forma correcta és ==**_studiert_**==, no _gestudiert_."
+        }
+      ]
+    }
+  }
+}

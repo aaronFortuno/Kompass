@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-30-ex-05",
+  "topicId": "A1b-30",
+  "title": "Troba l'error (o confirma que és correcta)",
+  "prompt": "Per a cada frase, identifica què hi passa: (a) l'**auxiliar no és a la posició 2** (falta la inversió), (b) el **participi no és al final**, o (c) la frase és ==**correcta**==.",
+  "difficulty": 3,
+  "tags": ["perfekt", "errors", "ordre", "inversio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Gestern ich habe Pizza gegessen._ → {{1}}\n\n2. _Ich habe gegessen gestern Pizza._ → {{2}}\n\n3. _Am Wochenende sind wir nach Berlin gefahren._ → {{3}}\n\n4. _Wir haben Pizza gegessen mit Anna._ → {{4}}\n\n5. _Heute habe ich Deutsch gelernt._ → {{5}}\n\n6. _Sie ist gegangen ins Kino gestern._ → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "Frase 1" },
+      { "id": "2", "label": "Frase 2" },
+      { "id": "3", "label": "Frase 3" },
+      { "id": "4", "label": "Frase 4" },
+      { "id": "5", "label": "Frase 5" },
+      { "id": "6", "label": "Frase 6" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "1",
+        "options": [
+          "(a) l'auxiliar no és a la posició 2",
+          "(b) el participi no és al final",
+          "(c) correcta"
+        ]
+      },
+      {
+        "blankId": "2",
+        "options": [
+          "(a) l'auxiliar no és a la posició 2",
+          "(b) el participi no és al final",
+          "(c) correcta"
+        ]
+      },
+      {
+        "blankId": "3",
+        "options": [
+          "(a) l'auxiliar no és a la posició 2",
+          "(b) el participi no és al final",
+          "(c) correcta"
+        ]
+      },
+      {
+        "blankId": "4",
+        "options": [
+          "(a) l'auxiliar no és a la posició 2",
+          "(b) el participi no és al final",
+          "(c) correcta"
+        ]
+      },
+      {
+        "blankId": "5",
+        "options": [
+          "(a) l'auxiliar no és a la posició 2",
+          "(b) el participi no és al final",
+          "(c) correcta"
+        ]
+      },
+      {
+        "blankId": "6",
+        "options": [
+          "(a) l'auxiliar no és a la posició 2",
+          "(b) el participi no és al final",
+          "(c) correcta"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "(a) l'auxiliar no és a la posició 2",
+      "2": "(b) el participi no és al final",
+      "3": "(c) correcta",
+      "4": "(b) el participi no és al final",
+      "5": "(c) correcta",
+      "6": "(b) el participi no és al final"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Els ==**dos errors rei del Perfekt**== són (1) no desplaçar el subjecte a la pos. 3 després d'un complement inicial (falla de V2), i (2) deixar el participi al mig en lloc del final. Vigila'ls — són els que més caçaran un examinador A1.",
+      "references": ["A1b-30"]
+    },
+    "incorrect": {
+      "default": "Mira on està l'auxiliar (ha de ser a la ==**posició 2**==, just després del primer element) i on està el participi (ha de ser al ==**final**==, després de tots els complements).",
+      "byResponse": [
+        {
+          "match": { "1": "(c) correcta" },
+          "message": "No és correcta: _*Gestern ich habe*_ posa l'auxiliar a la pos. 3. Com que _Gestern_ és a la pos. 1, cal inversió: _Gestern ==**habe ich**== Pizza gegessen._ Error tipus **(a)**."
+        },
+        {
+          "match": { "2": "(c) correcta" },
+          "message": "No és correcta: _gegessen_ hauria d'anar al **final**, no just darrere l'auxiliar. _Ich habe gestern Pizza ==**gegessen**==._ Error tipus **(b)**."
+        },
+        {
+          "match": { "3": "(a) l'auxiliar no és a la posició 2" },
+          "message": "_Am Wochenende_ (pos. 1) + _sind_ (pos. 2) + _wir_ (pos. 3) + _nach Berlin_ + _gefahren_ (final). La frase és **correcta** — és l'exemple perfecte d'inversió."
+        },
+        {
+          "match": { "3": "(b) el participi no és al final" },
+          "message": "_gefahren_ sí que és al final (després de _nach Berlin_). La frase és **correcta**."
+        },
+        {
+          "match": { "4": "(c) correcta" },
+          "message": "No és correcta: _gegessen_ va al final, després de tots els complements. _Wir haben Pizza mit Anna ==**gegessen**==._ Error tipus **(b)**."
+        },
+        {
+          "match": { "6": "(c) correcta" },
+          "message": "No és correcta: _gegangen_ hauria d'anar al final. _Sie ist gestern ins Kino ==**gegangen**==._ Error tipus **(b)**."
+        },
+        {
+          "match": { "6": "(a) l'auxiliar no és a la posició 2" },
+          "message": "L'auxiliar _ist_ sí que és a la pos. 2 (_Sie_ a la 1, _ist_ a la 2). El problema és que _gegangen_ està enmig, no al final. Error tipus **(b)**."
+        }
+      ]
+    }
+  }
+}

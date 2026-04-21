@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-28-ex-09",
+  "topicId": "A1b-28",
+  "title": "Diagnòstic: formes trampa — richtig o falsch?",
+  "prompt": "Per a cada afirmació, decideix si és **correcta** (richtig) o **incorrecta** (falsch). Són les trampes més típiques del Perfekt amb irregulars.",
+  "difficulty": 3,
+  "tags": ["trueFalse", "diagnostic", "trampes", "errors-tipics"],
+  "stimulus": {
+    "type": "text",
+    "content": "Formes i afirmacions sobre el Partizip II dels verbs irregulars d'A1. Pensa bé abans de decidir."
+  },
+  "interaction": {
+    "type": "trueFalse",
+    "statements": [
+      { "id": "s1", "text": "El Partizip II de _essen_ és ==_geesst_==." },
+      { "id": "s2", "text": "_Gegangen_ va amb l'auxiliar ==_sein_==." },
+      { "id": "s3", "text": "La forma _\"Ich habe geschlaft\"_ és correcta." },
+      { "id": "s4", "text": "_Geholfen_ és el Partizip II de _helfen_." },
+      { "id": "s5", "text": "La frase _\"Ich bin Bier getrunken\"_ és correcta." },
+      { "id": "s6", "text": "_Gewusst_ acaba en ==_-t_== com els verbs regulars (és Mischverb)." }
+    ]
+  },
+  "validation": {
+    "type": "truthMap",
+    "answers": {
+      "s1": false,
+      "s2": true,
+      "s3": false,
+      "s4": true,
+      "s5": false,
+      "s6": true
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has identificat els errors: (1) _essen_ fa ==_gegessen_==, no _geesst_ (trampa: la regularització no funciona amb verbs forts). (3) _schlafen_ és fort → ==_habe geschlafen_==, no _geschlaft_. (5) _trinken_ va amb ==_haben_==, no _sein_ → ==_habe getrunken_==. I has confirmat correctament (2), (4) i (6) — _gegangen_ amb _sein_, _geholfen_ correcte, i _gewusst_ com a Mischverb amb _-t_.",
+      "references": ["A1b-28", "A1b-27", "A1b-29"]
+    },
+    "incorrect": {
+      "default": "Repassa: (1) _essen_ → ==_gegessen_== (no _geesst_); (3) _schlafen_ → ==_geschlafen_== (no _geschlaft_); (5) _trinken_ va amb ==_haben_==; (6) _gewusst_ és Mischverb → _-t_ regular amb arrel canviada.",
+      "byResponse": [
+        {
+          "match": { "s1": true },
+          "message": "==Falsch.== _essen_ és verb fort: el Partizip és ==**_gegessen_**==, amb dues _g_ (prefix _ge-_ + arrel _-gess-_). _geesst_ no existeix."
+        },
+        {
+          "match": { "s2": false },
+          "message": "==Richtig.== _gegangen_ (de _gehen_, moviment) va amb ==**_sein_**==: _Ich bin gegangen_."
+        },
+        {
+          "match": { "s3": true },
+          "message": "==Falsch.== _schlafen_ és verb fort: Partizip ==**_geschlafen_**== (amb _-en_), no _geschlaft_ (que regularitzaria)."
+        },
+        {
+          "match": { "s4": false },
+          "message": "==Richtig.== _helfen_ fa ==**_geholfen_**== (patró _e–a–o_)."
+        },
+        {
+          "match": { "s5": true },
+          "message": "==Falsch.== _trinken_ és activitat sense moviment → auxiliar ==**_haben_**==: _Ich habe Bier getrunken_."
+        },
+        {
+          "match": { "s6": false },
+          "message": "==Richtig.== _wissen_ és **Mischverb**: arrel canviada (_wiss- → wuss-_) + terminació regular ==**_-t_**==. Així surt _gewusst_."
+        }
+      ]
+    }
+  }
+}

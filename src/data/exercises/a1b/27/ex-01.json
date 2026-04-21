@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-27-ex-01",
+  "topicId": "A1b-27",
+  "title": "Quick-check: separables i inseparables",
+  "prompt": "Tria el **Partizip II** correcte. Recorda: ==**separable** → _prefix + ge + arrel + -t_==; ==**inseparable** → _sense ge-_==.",
+  "difficulty": 1,
+  "tags": ["partizip-ii", "separables", "inseparables", "singleChoice"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _einkaufen_ → {{1}}\n\n2. _besuchen_ → {{2}}\n\n3. _aufmachen_ → {{3}}\n\n4. _verkaufen_ → {{4}}",
+    "blanks": [
+      { "id": "1", "label": "1. _einkaufen_ (separable reg.)" },
+      { "id": "2", "label": "2. _besuchen_ (inseparable reg.)" },
+      { "id": "3", "label": "3. _aufmachen_ (separable reg.)" },
+      { "id": "4", "label": "4. _verkaufen_ (inseparable reg.)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["eingekauft", "geeinkauft", "einkauft", "einkaufet"] },
+      { "blankId": "2", "options": ["besucht", "gebesucht", "besuchen", "gebesuchen"] },
+      { "blankId": "3", "options": ["aufgemacht", "geaufmacht", "aufmacht", "gemacht auf"] },
+      { "blankId": "4", "options": ["verkauft", "geverkauft", "verkauf", "verkaufen"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "eingekauft",
+      "2": "besucht",
+      "3": "aufgemacht",
+      "4": "verkauft"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Tens la regla bàsica dominada: ==**separable**== → el _ge-_ va **infixat** entre prefix i arrel (_ein**ge**kauft_, _auf**ge**macht_); ==**inseparable**== → _be-, ver-_ ja ocupen l'espai inicial, no hi cap un altre _ge-_ (_besucht_, _verkauft_).",
+      "references": ["A1b-27"]
+    },
+    "incorrect": {
+      "default": "Pregunta't: el prefix és **separable** (_ab-, an-, auf-, aus-, ein-, mit-…_) o **inseparable** (_be-, ver-, er-, ent-, zer-, ge-, emp-, miss-_)? Si és separable, el _ge-_ va al mig. Si és inseparable, **mai** _ge-_.",
+      "byResponse": [
+        {
+          "match": { "1": "geeinkauft" },
+          "message": "==Error típic==: el _ge-_ **no** va davant del prefix separable, sinó **entre** el prefix i l'arrel. _ein_ + _ge_ + _kauft_ → ==**_eingekauft_**==."
+        },
+        {
+          "match": { "1": "einkauft" },
+          "message": "T'has oblidat el _ge-_. Els verbs separables regulars **sí que porten _ge-_**, infixat: ==**_eingekauft_**==."
+        },
+        {
+          "match": { "2": "gebesucht" },
+          "message": "==Error clàssic==: _be-_ és **inseparable**, per tant ==**mai _ge-_**== al Partizip II. La forma correcta és ==**_besucht_**==, no _gebesucht_."
+        },
+        {
+          "match": { "3": "geaufmacht" },
+          "message": "El _ge-_ va **entre** el prefix separable (_auf_) i l'arrel (_mach_), no davant: ==**_aufgemacht_**==, no _geaufmacht_."
+        },
+        {
+          "match": { "3": "gemacht auf" },
+          "message": "El Partizip II és ==**una sola paraula**==: el prefix queda enganxat. Resultat: ==**_aufgemacht_**==."
+        },
+        {
+          "match": { "4": "geverkauft" },
+          "message": "==_ver-_ és inseparable==: no porta _ge-_ al participi. La forma és ==**_verkauft_**==."
+        }
+      ]
+    }
+  }
+}

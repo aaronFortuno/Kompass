@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-27",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 27,
+  "title": "Die Partizipien (Partizip II)",
+  "shortTitle": "Partizipien",
+  "description": "El Partizip II alemany: com es forma en verbs regulars, irregulars, mixtos, separables, inseparables i acabats en -ieren. La base per al Perfekt.",
+  "axes": ["temps-verbals", "pronoms-verbs"],
+  "prerequisites": ["A1b-26"],
+  "estimatedMinutes": 25,
+  "steps": [
+    {
+      "id": "introduccio",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Què és el _Partizip II_ i per què importa ara\n\nEl **Partizip II** (participi passat) és una forma verbal clau: la necessitarem per construir el **Perfekt** (el passat conversacional, que veurem a A1b-29/30) i el **Passiv**. ==En aquest tema només aprenem **com es forma**==; el seu ús complet vindrà després.\n\nEls participis alemanys es classifiquen en tres famílies segons el seu final:"
+        },
+        {
+          "type": "table",
+          "title": "27.1 Les tres famílies de Partizip II",
+          "headers": ["Família", "Final", "Exemple"],
+          "rows": [
+            ["**Regulars** (_schwache Verben_)", "==**-t**==", "_machen → **ge**mach**t**_"],
+            ["**Irregulars** (_starke Verben_)", "==**-en**==", "_lesen → **ge**les**en**_"],
+            ["**Mixtos** (_gemischte Verben_)", "==**-t**== + canvi d'arrel", "_denken → **ge**dach**t**_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Què entra a A1b-27",
+          "body": "Aquest tema cobreix **la formació** del Partizip II i les seves variants (separables, inseparables, _-ieren_). La **llista dels verbs irregulars** més freqüents la trobaràs a **A1b-28**. L'**ús en Perfekt** arriba a **A1b-29**."
+        }
+      ]
+    },
+    {
+      "id": "regulars",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### 1. Verbs regulars: ==**_ge-_ + arrel + _-t_**==\n\nLa fórmula més freqüent i la que hauràs d'aplicar per defecte. Agafes l'infinitiu, li treus el `-en`, afegeixes **_ge-_** al davant i **_-t_** al final. ==**Sense canvi vocàlic**==."
+        },
+        {
+          "type": "table",
+          "title": "27.2 Regulars (_schwache Verben_)",
+          "headers": ["Infinitiu", "Partizip II", "Significat"],
+          "rows": [
+            ["_lern-en_", "==**_gelernt_**==", "aprendre"],
+            ["_mach-en_", "==**_gemacht_**==", "fer"],
+            ["_koch-en_", "==**_gekocht_**==", "cuinar"],
+            ["_spiel-en_", "==**_gespielt_**==", "jugar"],
+            ["_hör-en_", "==**_gehört_**==", "escoltar"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Nota fonètica: ==_-et_== final",
+          "body": "Si l'arrel acaba en **_-t_**, **_-d_** o grup consonàntic difícil de pronunciar, s'afegeix ==**_-et_**== en comptes de _-t_, per facilitar la pronúncia: _arbeit**en** → **ge**arbeit**et**_, _red**en** → **ge**red**et**_, _öffn**en** → **ge**öffn**et**_."
+        }
+      ]
+    },
+    {
+      "id": "separables",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### 2. Verbs regulars **separables**: ==**prefix + _ge-_ + arrel + _-t_**==\n\nEls verbs separables (A1b vistos) ==**infixen**== el _ge-_ **entre** el prefix separable i l'arrel. El prefix queda sempre al davant, el _ge-_ al mig."
+        },
+        {
+          "type": "table",
+          "title": "27.3 Regulars separables",
+          "headers": ["Infinitiu", "Partizip II", "Significat"],
+          "rows": [
+            ["**_ein_**_kaufen_", "_ein_==**_ge_**==_kauft_", "fer la compra"],
+            ["**_ab_**_holen_", "_ab_==**_ge_**==_holt_", "anar a buscar"],
+            ["**_auf_**_machen_", "_auf_==**_ge_**==_macht_", "obrir"],
+            ["**_mit_**_spielen_", "_mit_==**_ge_**==_spielt_", "jugar amb"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Prefixos separables habituals",
+          "body": "_ab-, an-, auf-, aus-, ein-, mit-, nach-, vor-, zu-, weg-, zurück-…_ — són tònics i porten l'accent de la paraula."
+        }
+      ]
+    },
+    {
+      "id": "inseparables",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### 3. Verbs amb prefix **inseparable**: ==**sense _ge-_**==\n\nEls verbs amb prefix inseparable ==**no porten _ge-_**== al participi. Mantenen la resta del patró: _-t_ si són regulars, _-en_ si són irregulars."
+        },
+        {
+          "type": "table",
+          "title": "27.4 Prefixos inseparables",
+          "headers": ["Prefix", "Exemple (infinitiu)", "Partizip II"],
+          "rows": [
+            ["_**be-**_", "_**be**suchen_", "==_**besucht**_=="],
+            ["_**ver-**_", "_**ver**kaufen_", "==_**verkauft**_=="],
+            ["_**er-**_", "_**er**klären_", "==_**erklärt**_=="],
+            ["_**ent-**_", "_**ent**decken_", "==_**entdeckt**_=="],
+            ["_**zer-**_", "_**zer**stören_", "==_**zerstört**_=="],
+            ["_**ge-**_", "_**ge**hören_", "==_**gehört**_== (sense _ge-_ extra!)"],
+            ["_**emp-**_", "_**emp**fangen_", "==_**empfangen**_== (irreg.)"],
+            ["_**miss-**_", "_**miss**verstehen_", "==_**missverstanden**_== (irreg.)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Per què no _ge-_?",
+          "body": "Els prefixos inseparables són **àtons** (sense accent) i el _ge-_ del participi també és àton. L'alemany evita acumular dues síl·labes àtones a l'inici: seria pesat de pronunciar. Si veus un verb amb _be-, ver-, er-, ent-, zer-, ge-, emp-, miss-_ a l'inici → ==**mai posis _ge-_**== al participi."
+        }
+      ]
+    },
+    {
+      "id": "check-1-pattern",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-27-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "ieren",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### 4. Verbs acabats en **_-ieren_**: ==**sense _ge-_**==\n\nJa ho vam veure a **A1b-10**: els verbs amb sufix ==**_-ieren_**== tampoc porten _ge-_. Formen el participi afegint ==**només _-t_**==. Són sempre regulars."
+        },
+        {
+          "type": "table",
+          "title": "27.5 Verbs en _-ieren_",
+          "headers": ["Infinitiu", "Partizip II", "Significat"],
+          "rows": [
+            ["_studier-en_", "==**_studiert_**==", "estudiar"],
+            ["_telefonier-en_", "==**_telefoniert_**==", "telefonar"],
+            ["_fotografier-en_", "==**_fotografiert_**==", "fotografiar"],
+            ["_passier-en_", "==**_passiert_**==", "passar, ocórrer"],
+            ["_probier-en_", "==**_probiert_**==", "provar"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Per què tampoc _ge-_?",
+          "body": "Els verbs en _-ieren_ tenen l'accent a la síl·laba _-ie-_ (_studie**ren**_, _telefonie**ren**_). Com que ja són **àtons a l'inici**, tampoc admeten _ge-_. Regla pràctica: ==si acaba en _-ieren_, **mai** _ge-_==."
+        }
+      ]
+    },
+    {
+      "id": "check-2-ieren",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-27-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "irregulars",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### 5. Verbs irregulars: ==**_ge-_ + arrel (sovint canviada) + _-en_**==\n\nEls _starke Verben_ ==**conserven el sufix històric _-en_**== i molts canvien la vocal de l'arrel. ==**No hi ha manera de predir el canvi**==: s'han d'aprendre un per un (a A1b-28 en tens la llista)."
+        },
+        {
+          "type": "table",
+          "title": "27.6 Irregulars freqüents",
+          "headers": ["Infinitiu", "Partizip II", "Significat"],
+          "rows": [
+            ["_lesen_", "==**_gelesen_**==", "llegir"],
+            ["_kommen_", "==**_gekommen_**==", "venir"],
+            ["_gehen_", "==**_gegangen_**==", "anar"],
+            ["_fahren_", "==**_gefahren_**==", "conduir, anar (en vehicle)"],
+            ["_schreiben_", "==**_geschrieben_**==", "escriure"],
+            ["_essen_", "==**_gegessen_**==", "menjar"],
+            ["_trinken_", "==**_getrunken_**==", "beure"],
+            ["_sehen_", "==**_gesehen_**==", "veure"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Les **mateixes regles de prefix** que als regulars s'apliquen als irregulars:"
+        },
+        {
+          "type": "table",
+          "title": "27.7 Irregulars amb prefix",
+          "headers": ["Tipus", "Infinitiu", "Partizip II"],
+          "rows": [
+            ["Separable", "_**auf**stehen_", "==_**auf**_**_ge_**_standen_=="],
+            ["Separable", "_**ein**laden_", "==_**ein**_**_ge_**_laden_=="],
+            ["Separable", "_**an**kommen_", "==_**an**_**_ge_**_kommen_=="],
+            ["Inseparable", "_**be**kommen_", "==_**bekommen**_== (sense _ge-_)"],
+            ["Inseparable", "_**ver**stehen_", "==_**verstanden**_== (sense _ge-_)"],
+            ["Inseparable", "_**ver**gessen_", "==_**vergessen**_== (sense _ge-_)"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mixtos",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### 6. Verbs mixtos: ==**_ge-_ + arrel canviada + _-t_**==\n\nUn grup **petit però freqüent**. ==Combinen el final regular _-t_ amb un canvi d'arrel típic d'irregulars==. Són una classe tancada: memoritza'ls junts."
+        },
+        {
+          "type": "table",
+          "title": "27.8 Els mixtos més importants",
+          "headers": ["Infinitiu", "Partizip II", "Significat"],
+          "rows": [
+            ["_denken_", "==**_gedacht_**==", "pensar"],
+            ["_bringen_", "==**_gebracht_**==", "portar"],
+            ["_wissen_", "==**_gewusst_**==", "saber"],
+            ["_kennen_", "==**_gekannt_**==", "conèixer"],
+            ["_nennen_", "==**_genannt_**==", "anomenar"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "No confonguis",
+          "body": "Aquests verbs ==**acaben en _-t_**==, no en _-en_: _gedach**t**_, no _gedenken_; _gebrach**t**_, no _gebringen_. El canvi d'arrel (_denk- → dach-_, _bring- → brach-_, _wiss- → wuss-_, _kenn- → kann-_) els fa **sembla** irregulars, però el final és regular."
+        }
+      ]
+    },
+    {
+      "id": "sintesi-visual",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi visual: les 8 fórmules\n\nAbans d'anar als exercicis d'avaluació, ==**aquest és el quadre-mestre**== que resumeix tots els casos. Memoritza'l."
+        },
+        {
+          "type": "table",
+          "title": "27.9 Totes les fórmules de formació del Partizip II",
+          "headers": ["Tipus de verb", "Fórmula", "Exemple"],
+          "rows": [
+            ["Regular", "==**_ge-_ + arrel + _-t_**==", "_machen → **gemacht**_"],
+            ["Regular separable", "==**prefix + _ge-_ + arrel + _-t_**==", "_einkaufen → **eingekauft**_"],
+            ["Regular inseparable", "==**prefix + arrel + _-t_**==", "_besuchen → **besucht**_"],
+            ["_-ieren_", "==**arrel + _-t_**==", "_studieren → **studiert**_"],
+            ["Irregular", "==**_ge-_ + arrel\\* + _-en_**==", "_gehen → **gegangen**_"],
+            ["Irregular separable", "==**prefix + _ge-_ + arrel\\* + _-en_**==", "_aufstehen → **aufgestanden**_"],
+            ["Irregular inseparable", "==**prefix + arrel\\* + _-en_**==", "_verstehen → **verstanden**_"],
+            ["Mixt", "==**_ge-_ + arrel\\* + _-t_**==", "_denken → **gedacht**_"]
+          ],
+          "caption": "\\*arrel = la vocal pot canviar."
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Errors típics que cal evitar",
+          "body": "- ==**_ge-_ de més**== en inseparables: _\\*gebesucht_ → **_besucht_**\n- ==**_ge-_ de més**== en _-ieren_: _\\*gestudiert_ → **_studiert_**\n- ==**_ge-_ oblidat**== en separables: _\\*einkauft_ → **_eingekauft_**\n- ==**Final _-t_ en irregulars**==: _\\*gegeht_ → **_gegangen_**\n- ==**Final _-en_ en mixtos**==: _\\*gedenken_ → **_gedacht_**"
+        }
+      ]
+    },
+    {
+      "id": "check-3-typein",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-27-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-4-classificacio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-27-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-5-match",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-27-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-6-multichoice",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-27-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-7-correcte-incorrecte",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-27-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi final\n\nPer formar el **Partizip II** d'un verb desconegut, fes ==**tres preguntes en ordre**==:\n\n1. **Comença per prefix inseparable** (_be-, ver-, er-, ent-, zer-, ge-, emp-, miss-_)? → ==**sense _ge-_**==.\n2. **Acaba en _-ieren_**? → ==**sense _ge-_**==, final _-t_.\n3. **Altrament**: _ge-_ davant (entre prefix separable i arrel, si n'hi ha).\n\nDesprés tria el final: ==**_-t_ si és regular o mixt**==, ==**_-en_ si és irregular**==. La llista d'irregulars ve a A1b-28."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Consell pràctic (clau per a A1b-28+)",
+          "body": "==Cada cop que aprenguis un verb nou, memoritza'l sempre amb el seu **Partizip II** i el seu **auxiliar** (_haben_/_sein_)==. Escriu _\"gehen, ging, **ist gegangen**\"_ en comptes de només _\"gehen\"_. T'estalviaràs mesos de confusió quan arribis al Perfekt."
+        },
+        {
+          "type": "explanation",
+          "body": "**Connexions amb altres lliçons:**\n\n- **A1b-10** — verbs _-ieren_ (on ja vas veure que no duen _ge-_ al Perfekt).\n- **A1b-18** — verbs separables (prefix tònic que es separa).\n- **A1b-24** — _Vergangenheit_: visió general dels temps passats.\n- **A1b-26** — auxiliars _haben_/_sein_ amb Partizip II.\n- **A1b-28** — llista dels _starke Verben_ més freqüents amb les seves tres formes.\n- **A1b-29 / A1b-30** — el **Perfekt**: com combinar auxiliar + Partizip II per parlar del passat a l'oral."
+        }
+      ]
+    }
+  ]
+}

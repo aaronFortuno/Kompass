@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-28-ex-07",
+  "topicId": "A1b-28",
+  "title": "Construeix el Perfekt sencer",
+  "prompt": "Escriu la frase sencera en Perfekt a partir dels elements donats. Aux. (conjugat segons el subjecte) + complements + Partizip II al final (Satzklammer, A1b-26).",
+  "difficulty": 3,
+  "tags": ["typeIn", "perfekt", "construccio", "sintesi", "avaluacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _ich / trinken / Wasser_ → {{1}}\n2. _wir / gehen / ins Kino_ → {{2}}\n3. _er / schreiben / einen Brief_ → {{3}}\n4. _sie (ella) / aufstehen / um 6_ → {{4}}\n5. _ich / helfen / meiner Mutter_ → {{5}}\n6. _du / fahren / nach Hamburg_ → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "1. _ich / trinken / Wasser_" },
+      { "id": "2", "label": "2. _wir / gehen / ins Kino_" },
+      { "id": "3", "label": "3. _er / schreiben / einen Brief_" },
+      { "id": "4", "label": "4. _sie (ella) / aufstehen / um 6_" },
+      { "id": "5", "label": "5. _ich / helfen / meiner Mutter_" },
+      { "id": "6", "label": "6. _du / fahren / nach Hamburg_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Ich habe Wasser getrunken." },
+      { "blankId": "2", "placeholder": "Wir sind ins Kino gegangen." },
+      { "blankId": "3", "placeholder": "Er hat einen Brief geschrieben." },
+      { "blankId": "4", "placeholder": "Sie ist um 6 aufgestanden." },
+      { "blankId": "5", "placeholder": "Ich habe meiner Mutter geholfen." },
+      { "blankId": "6", "placeholder": "Du bist nach Hamburg gefahren." }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Ich habe Wasser getrunken.", "Ich habe Wasser getrunken"],
+      "2": ["Wir sind ins Kino gegangen.", "Wir sind ins Kino gegangen"],
+      "3": ["Er hat einen Brief geschrieben.", "Er hat einen Brief geschrieben"],
+      "4": ["Sie ist um 6 aufgestanden.", "Sie ist um 6 aufgestanden", "Sie ist um 6 Uhr aufgestanden.", "Sie ist um 6 Uhr aufgestanden"],
+      "5": ["Ich habe meiner Mutter geholfen.", "Ich habe meiner Mutter geholfen"],
+      "6": ["Du bist nach Hamburg gefahren.", "Du bist nach Hamburg gefahren"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "==**Excel·lent.**== Has compost 6 frases en Perfekt aplicant tots els components: (1) **auxiliar correcte** (_haben_/_sein_) conjugat segons el subjecte; (2) **complement** al mig; (3) **Partizip II fort** al final. Aquesta és la mecànica completa del Perfekt oral d'A1.",
+      "references": ["A1b-28", "A1b-26"]
+    },
+    "incorrect": {
+      "default": "Patrons a repassar: (1) **Satzklammer**: aux. conjugat en **2a posició** + Partizip **al final**. (2) **Auxiliar**: _gehen, aufstehen, fahren_ → _sein_; _trinken, schreiben, helfen_ → _haben_. (3) **Partizip fort**: vocal canviada + _-en_ (excepte Mischverben). Compara la teva resposta amb la forma esperada."
+    }
+  }
+}

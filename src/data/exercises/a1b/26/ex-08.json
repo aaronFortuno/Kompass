@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-26-ex-08",
+  "topicId": "A1b-26",
+  "title": "Preguntes i negació en Perfekt",
+  "prompt": "Completa els buits amb l'**auxiliar conjugat** o amb _**nicht**_, segons correspongui. Recorda: en preguntes tancades (Ja/Nein-Frage) l'auxiliar va a ==**V1**==; en preguntes amb partícula (Wohin, Was, Wann…) va a ==**V2**==. _Nicht_ es col·loca ==**just abans del participi**==.",
+  "difficulty": 2,
+  "tags": ["perfekt", "preguntes", "negacio", "typeIn", "satzklammer"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _{{1}} du schon Kaffee getrunken?_ (pregunta tancada, _du_)\n2. _Ich habe die Hausaufgaben {{2}} gemacht._ (negació)\n3. _Wohin {{3}} ihr am Wochenende gefahren?_ (pregunta amb _wohin_, _ihr_)\n4. _Wir sind gestern {{4}} ins Kino gegangen._ (negació)\n5. _{{5}} Sie gut geschlafen?_ (pregunta tancada formal, _Sie_)\n6. _Was {{6}} du gegessen?_ (pregunta amb _was_, _du_)\n7. _Er hat den Film {{7}} gesehen._ (negació)\n8. _Wann {{8}} ihr aufgestanden?_ (pregunta amb _wann_, _ihr_)",
+    "blanks": [
+      { "id": "1", "label": "1. auxiliar (trinken, du)" },
+      { "id": "2", "label": "2. partícula negativa" },
+      { "id": "3", "label": "3. auxiliar (fahren, ihr)" },
+      { "id": "4", "label": "4. partícula negativa" },
+      { "id": "5", "label": "5. auxiliar (schlafen, Sie)" },
+      { "id": "6", "label": "6. auxiliar (essen, du)" },
+      { "id": "7", "label": "7. partícula negativa" },
+      { "id": "8", "label": "8. auxiliar (aufstehen, ihr)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "aux." },
+      { "blankId": "2", "placeholder": "negació" },
+      { "blankId": "3", "placeholder": "aux." },
+      { "blankId": "4", "placeholder": "negació" },
+      { "blankId": "5", "placeholder": "aux." },
+      { "blankId": "6", "placeholder": "aux." },
+      { "blankId": "7", "placeholder": "negació" },
+      { "blankId": "8", "placeholder": "aux." }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["hast"],
+      "2": ["nicht"],
+      "3": ["seid"],
+      "4": ["nicht"],
+      "5": ["haben"],
+      "6": ["hast"],
+      "7": ["nicht"],
+      "8": ["seid"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has dominat les tres variants: **pregunta tancada** → auxiliar a V1 (_**Hast** du…?_, _**Haben** Sie…?_); **pregunta amb partícula** → auxiliar a V2 després del _wh-_ (_Wohin **seid**…?_, _Was **hast**…?_, _Wann **seid**…?_); **negació** → _nicht_ just abans del participi (_**nicht** gemacht_, _**nicht** gegangen_, _**nicht** gesehen_). La Satzklammer es manté en tots els casos.",
+      "references": ["A1b-26"]
+    },
+    "incorrect": {
+      "default": "Regles: (1) pregunta tancada → auxiliar V1. (2) pregunta amb _wh-_ → auxiliar V2 (just després de la partícula). (3) negació → _nicht_ davant del participi. L'auxiliar es tria segons el verb (_fahren, gehen, aufstehen_ → _sein_; la resta → _haben_).",
+      "byResponse": [
+        {
+          "match": { "3": "habt" },
+          "message": "_fahren_ és moviment → ==**_sein_**==. _ihr_ + _sein_ = _**seid**_."
+        },
+        {
+          "match": { "8": "habt" },
+          "message": "_aufstehen_ és canvi d'estat → ==**_sein_**==. _ihr_ + _sein_ = _**seid**_."
+        },
+        {
+          "match": { "5": "sind" },
+          "message": "_schlafen_ és verb normal (no és moviment amb canvi de lloc) → ==**_haben_**==. _Sie_ (formal) + _haben_ = _**haben**_."
+        },
+        {
+          "match": { "1": "bist" },
+          "message": "_trinken_ és verb normal → ==**_haben_**==. _du_ + _haben_ = _**hast**_."
+        },
+        {
+          "match": { "6": "bist" },
+          "message": "_essen_ és verb normal → ==**_haben_**==. _du_ + _haben_ = _**hast**_."
+        },
+        {
+          "match": { "2": "kein" },
+          "message": "_kein_ nega un substantiu amb article indefinit (_keine Hausaufgaben_ canviaria _die_ per _keine_). Aquí _die Hausaufgaben_ té article definit, així que es nega la frase amb ==**_nicht_**== just abans del participi."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-27-ex-03",
+  "topicId": "A1b-27",
+  "title": "Escriu el Partizip II (tots els tipus)",
+  "prompt": "Escriu el **Partizip II** de cada infinitiu. Barreja regulars, separables, inseparables, _-ieren_, irregulars i mixtos. Pensa a quin grup pertany abans de respondre.",
+  "difficulty": 2,
+  "tags": ["partizip-ii", "typeIn", "totes-famílies"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _machen_ → {{1}}\n2. _hören_ → {{2}}\n3. _einkaufen_ → {{3}}\n4. _besuchen_ → {{4}}\n5. _telefonieren_ → {{5}}\n6. _denken_ → {{6}}\n7. _bringen_ → {{7}}\n8. _arbeiten_ → {{8}}",
+    "blanks": [
+      { "id": "1", "label": "1. _machen_ (reg.)" },
+      { "id": "2", "label": "2. _hören_ (reg. amb Umlaut)" },
+      { "id": "3", "label": "3. _einkaufen_ (separable reg.)" },
+      { "id": "4", "label": "4. _besuchen_ (inseparable reg.)" },
+      { "id": "5", "label": "5. _telefonieren_ (_-ieren_)" },
+      { "id": "6", "label": "6. _denken_ (mixt)" },
+      { "id": "7", "label": "7. _bringen_ (mixt)" },
+      { "id": "8", "label": "8. _arbeiten_ (reg., arrel en _-t_)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "regular" },
+      { "blankId": "2", "placeholder": "regular" },
+      { "blankId": "3", "placeholder": "separable" },
+      { "blankId": "4", "placeholder": "inseparable" },
+      { "blankId": "5", "placeholder": "-ieren" },
+      { "blankId": "6", "placeholder": "mixt" },
+      { "blankId": "7", "placeholder": "mixt" },
+      { "blankId": "8", "placeholder": "regular + -et" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["gemacht"],
+      "2": ["gehört"],
+      "3": ["eingekauft"],
+      "4": ["besucht"],
+      "5": ["telefoniert"],
+      "6": ["gedacht"],
+      "7": ["gebracht"],
+      "8": ["gearbeitet"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has aplicat bé les sis fórmules: regular (_**gemacht**, **gehört**_), separable (_**eingekauft**_), inseparable (_**besucht**_), _-ieren_ (_**telefoniert**_), mixt amb canvi d'arrel (_**gedacht**, **gebracht**_), i la variant fonètica _-et_ quan l'arrel acaba en _-t_ (_**gearbeitet**_).",
+      "references": ["A1b-27"]
+    },
+    "incorrect": {
+      "default": "Repassa el quadre-mestre (taula 27.9). Pregunta't: el prefix és inseparable? Acaba en _-ieren_? És irregular o mixt? Si l'arrel acaba en _-t_ o _-d_ (com _arbeit-_, _red-_), afegeix _-et_ en lloc de _-t_.",
+      "byResponse": [
+        {
+          "match": { "3": "geeinkauft" },
+          "message": "==El _ge-_ va **infixat**==, no al davant: _ein_ + _ge_ + _kauft_ → ==**_eingekauft_**==."
+        },
+        {
+          "match": { "3": "einkauft" },
+          "message": "Els separables **sí que porten _ge-_**, però infixat: ==**_eingekauft_**==."
+        },
+        {
+          "match": { "4": "gebesucht" },
+          "message": "==_be-_ és inseparable==: ==**mai _ge-_**==. La forma és ==**_besucht_**==."
+        },
+        {
+          "match": { "5": "gestudiert" },
+          "message": "Atenció, el verb era _telefonieren_ → _telefoniert_. I recorda: ==els verbs en _-ieren_ mai porten _ge-_==."
+        },
+        {
+          "match": { "5": "getelefoniert" },
+          "message": "==Els verbs en _-ieren_ mai porten _ge-_==. La forma és ==**_telefoniert_**==."
+        },
+        {
+          "match": { "6": "gedenken" },
+          "message": "_denken_ és un verb **mixt**: ==canvia l'arrel (_denk- → dach-_) i acaba en _-t_==. Resultat: ==**_gedacht_**==, no _gedenken_."
+        },
+        {
+          "match": { "6": "gedenkt" },
+          "message": "Els mixtos ==**canvien la vocal de l'arrel**==: _denk-_ → _dach-_. La forma correcta és ==**_gedacht_**==."
+        },
+        {
+          "match": { "7": "gebringt" },
+          "message": "_bringen_ és mixt: arrel canviada _bring- → brach-_ + _-t_. Forma: ==**_gebracht_**==."
+        },
+        {
+          "match": { "7": "gebringen" },
+          "message": "Els mixtos acaben en ==**_-t_**==, no en _-en_. A més, canvien l'arrel: ==**_gebracht_**==."
+        },
+        {
+          "match": { "8": "gearbeitt" },
+          "message": "Quan l'arrel acaba en _-t_ o _-d_, s'afegeix ==**_-et_**== (no _-t_) per pronunciar-ho millor: ==**_gearbeitet_**==."
+        },
+        {
+          "match": { "8": "arbeitet" },
+          "message": "_arbeiten_ és regular: ==porta _ge-_==, i com que l'arrel acaba en _-t_, afegeix _-et_: ==**_gearbeitet_**==."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-30-ex-03",
+  "topicId": "A1b-30",
+  "title": "Construir frases en Perfekt (amb inversió)",
+  "prompt": "Cada frase comença per un **complement temporal o de lloc**. Tria la versió ==**correctament ordenada**== amb **inversió**: el subjecte salta a la ==**posició 3**==, l'auxiliar es queda a la 2, i el participi al final.",
+  "difficulty": 2,
+  "tags": ["perfekt", "inversio", "ordre", "V2"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Gestern · ich · habe · ein Buch · gelesen_ → {{1}}\n\n2. _Um acht Uhr · ich · bin · aufgestanden_ → {{2}}\n\n3. _In Berlin · wir · haben · viel · gesehen_ → {{3}}\n\n4. _Heute · er · ist · nach Hause · gefahren_ → {{4}}\n\n5. _Am Samstag · sie · sind · ins Restaurant · gegangen_ → {{5}}\n\n6. _Letztes Jahr · ich · habe · Deutsch · gelernt_ → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "1. Gestern …" },
+      { "id": "2", "label": "2. Um acht Uhr …" },
+      { "id": "3", "label": "3. In Berlin …" },
+      { "id": "4", "label": "4. Heute …" },
+      { "id": "5", "label": "5. Am Samstag …" },
+      { "id": "6", "label": "6. Letztes Jahr …" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "1",
+        "options": [
+          "Gestern habe ich ein Buch gelesen.",
+          "Gestern ich habe ein Buch gelesen.",
+          "Gestern habe ich gelesen ein Buch."
+        ]
+      },
+      {
+        "blankId": "2",
+        "options": [
+          "Um acht Uhr bin ich aufgestanden.",
+          "Um acht Uhr ich bin aufgestanden.",
+          "Um acht Uhr aufgestanden bin ich."
+        ]
+      },
+      {
+        "blankId": "3",
+        "options": [
+          "In Berlin haben wir viel gesehen.",
+          "In Berlin wir haben viel gesehen.",
+          "In Berlin haben gesehen wir viel."
+        ]
+      },
+      {
+        "blankId": "4",
+        "options": [
+          "Heute ist er nach Hause gefahren.",
+          "Heute er ist nach Hause gefahren.",
+          "Heute ist gefahren er nach Hause."
+        ]
+      },
+      {
+        "blankId": "5",
+        "options": [
+          "Am Samstag sind sie ins Restaurant gegangen.",
+          "Am Samstag sie sind ins Restaurant gegangen.",
+          "Am Samstag sind gegangen sie ins Restaurant."
+        ]
+      },
+      {
+        "blankId": "6",
+        "options": [
+          "Letztes Jahr habe ich Deutsch gelernt.",
+          "Letztes Jahr ich habe Deutsch gelernt.",
+          "Letztes Jahr habe gelernt ich Deutsch."
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Gestern habe ich ein Buch gelesen.",
+      "2": "Um acht Uhr bin ich aufgestanden.",
+      "3": "In Berlin haben wir viel gesehen.",
+      "4": "Heute ist er nach Hause gefahren.",
+      "5": "Am Samstag sind sie ins Restaurant gegangen.",
+      "6": "Letztes Jahr habe ich Deutsch gelernt."
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Amb ==**inversió**==: complement a la pos. 1, auxiliar a la pos. 2, subjecte a la pos. 3, i el **participi continua al final**, sempre. Verb conjugat i subjecte sempre junts.",
+      "references": ["A1b-30", "A1a-18"]
+    },
+    "incorrect": {
+      "default": "Recorda: quan el complement va a la pos. 1, el subjecte ==**salta a la 3**==. El verb (auxiliar) ==**no es mou**== de la 2. I el participi continua al final, sempre.",
+      "byResponse": [
+        {
+          "match": { "1": "Gestern ich habe ein Buch gelesen." },
+          "message": "==Error de V2==: _*Gestern ich habe*_ posa el verb a la posició 3. Si _Gestern_ ocupa V1, l'auxiliar ha d'anar immediatament després: _Gestern ==**habe**== ich ein Buch gelesen._"
+        },
+        {
+          "match": { "2": "Um acht Uhr ich bin aufgestanden." },
+          "message": "==Error de V2==: després de _Um acht Uhr_ (pos. 1), l'auxiliar va a la 2, no el subjecte: _Um acht Uhr ==**bin ich**== aufgestanden._"
+        },
+        {
+          "match": { "3": "In Berlin wir haben viel gesehen." },
+          "message": "==Error de V2==: _In Berlin_ ocupa la 1, per tant cal inversió. L'auxiliar _haben_ va a la 2, _wir_ a la 3: _In Berlin ==**haben wir**== viel gesehen._"
+        },
+        {
+          "match": { "4": "Heute er ist nach Hause gefahren." },
+          "message": "==Error de V2==: _Heute_ (pos. 1) exigeix inversió. _ist_ a la 2, _er_ a la 3: _Heute ==**ist er**== nach Hause gefahren._"
+        },
+        {
+          "match": { "5": "Am Samstag sie sind ins Restaurant gegangen." },
+          "message": "==Error de V2==: després d'_Am Samstag_ cal l'auxiliar a la 2. _Am Samstag ==**sind sie**== ins Restaurant gegangen._"
+        },
+        {
+          "match": { "6": "Letztes Jahr ich habe Deutsch gelernt." },
+          "message": "==Error de V2==: _Letztes Jahr_ ocupa la 1, per tant l'auxiliar va a la 2 i el subjecte a la 3: _Letztes Jahr ==**habe ich**== Deutsch gelernt._"
+        }
+      ]
+    }
+  }
+}

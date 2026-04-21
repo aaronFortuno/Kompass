@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-26-ex-10",
+  "topicId": "A1b-26",
+  "title": "Infinitiu ↔ Partizip II (tríada)",
+  "prompt": "Empareja cada **infinitiu alemany** amb el seu **Partizip II** (amb l'auxiliar entre parèntesis per recordar-lo). Aquesta és la memorització base del Perfekt a A1.",
+  "difficulty": 2,
+  "tags": ["perfekt", "match", "participis", "memoria", "triada"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "inf1", "group": "inf", "content": { "type": "text", "content": "_essen_" } },
+      { "id": "inf2", "group": "inf", "content": { "type": "text", "content": "_gehen_" } },
+      { "id": "inf3", "group": "inf", "content": { "type": "text", "content": "_arbeiten_" } },
+      { "id": "inf4", "group": "inf", "content": { "type": "text", "content": "_fahren_" } },
+      { "id": "inf5", "group": "inf", "content": { "type": "text", "content": "_lesen_" } },
+      { "id": "inf6", "group": "inf", "content": { "type": "text", "content": "_kommen_" } },
+      { "id": "inf7", "group": "inf", "content": { "type": "text", "content": "_machen_" } },
+      { "id": "inf8", "group": "inf", "content": { "type": "text", "content": "_bleiben_" } },
+      { "id": "inf9", "group": "inf", "content": { "type": "text", "content": "_trinken_" } },
+      { "id": "inf10", "group": "inf", "content": { "type": "text", "content": "_aufstehen_" } },
+      { "id": "part1", "group": "part", "content": { "type": "text", "content": "==**_gegessen_**== (haben)" } },
+      { "id": "part2", "group": "part", "content": { "type": "text", "content": "==**_gegangen_**== (sein)" } },
+      { "id": "part3", "group": "part", "content": { "type": "text", "content": "==**_gearbeitet_**== (haben)" } },
+      { "id": "part4", "group": "part", "content": { "type": "text", "content": "==**_gefahren_**== (sein)" } },
+      { "id": "part5", "group": "part", "content": { "type": "text", "content": "==**_gelesen_**== (haben)" } },
+      { "id": "part6", "group": "part", "content": { "type": "text", "content": "==**_gekommen_**== (sein)" } },
+      { "id": "part7", "group": "part", "content": { "type": "text", "content": "==**_gemacht_**== (haben)" } },
+      { "id": "part8", "group": "part", "content": { "type": "text", "content": "==**_geblieben_**== (sein)" } },
+      { "id": "part9", "group": "part", "content": { "type": "text", "content": "==**_getrunken_**== (haben)" } },
+      { "id": "part10", "group": "part", "content": { "type": "text", "content": "==**_aufgestanden_**== (sein)" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Infinitiu",
+    "groupBLabel": "Partizip II + auxiliar"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["inf1", "part1"],
+      ["inf2", "part2"],
+      ["inf3", "part3"],
+      ["inf4", "part4"],
+      ["inf5", "part5"],
+      ["inf6", "part6"],
+      ["inf7", "part7"],
+      ["inf8", "part8"],
+      ["inf9", "part9"],
+      ["inf10", "part10"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Tens la ==**tríada**== al cap: infinitiu + auxiliar + participi. _essen → gegessen_ (haben), _gehen → gegangen_ (sein), _arbeiten → gearbeitet_ (haben), _fahren → gefahren_ (sein), _lesen → gelesen_ (haben), _kommen → gekommen_ (sein), _machen → gemacht_ (haben), _bleiben → geblieben_ (sein), _trinken → getrunken_ (haben), _aufstehen → aufgestanden_ (sein). A A1b-27 aprendràs a **predir** el participi a partir de l'infinitiu.",
+      "references": ["A1b-26", "A1b-27"]
+    },
+    "incorrect": {
+      "default": "Paranys típics: ==_essen → gegessen_== (doble _g_), ==_gehen → gegangen_== (canvi _e → a_), ==_aufstehen → aufgestanden_== (_ge-_ entre prefix i arrel, _-e- → -a-_), ==_arbeiten → gearbeitet_== (amb _-et_ per _-t_ de l'arrel). Els verbs amb _sein_ aquí són: _gehen, fahren, kommen, bleiben, aufstehen_. La resta, _haben_."
+    }
+  }
+}

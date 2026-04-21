@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-28-ex-06",
+  "topicId": "A1b-28",
+  "title": "Auxiliar correcte: _haben_ o _sein_?",
+  "prompt": "Tria l'**auxiliar correcte** per a cada Perfekt. Regla simplificada: moviment o canvi d'estat → ==**_sein_**==; _bleiben, sein, werden_ → ==**_sein_**==; la resta → ==**_haben_**==.",
+  "difficulty": 2,
+  "tags": ["dropdownFill", "auxiliar", "haben-sein", "perfekt"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich {{1}} geschlafen._\n2. _Wir {{2}} gefahren._\n3. _Er {{3}} geholfen._\n4. _Sie {{4}} geblieben._\n5. _Ich {{5}} gegessen._\n6. _Du {{6}} aufgestanden._\n7. _Wir {{7}} getrunken._\n8. _Er {{8}} geworden._\n9. _Ich {{9}} gelesen._\n10. _Sie {{10}} gegangen._",
+    "blanks": [
+      { "id": "1", "label": "1. _schlafen_" },
+      { "id": "2", "label": "2. _fahren_" },
+      { "id": "3", "label": "3. _helfen_" },
+      { "id": "4", "label": "4. _bleiben_" },
+      { "id": "5", "label": "5. _essen_" },
+      { "id": "6", "label": "6. _aufstehen_" },
+      { "id": "7", "label": "7. _trinken_" },
+      { "id": "8", "label": "8. _werden_" },
+      { "id": "9", "label": "9. _lesen_" },
+      { "id": "10", "label": "10. _gehen_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["habe", "bin"] },
+      { "blankId": "2", "options": ["haben", "sind"] },
+      { "blankId": "3", "options": ["hat", "ist"] },
+      { "blankId": "4", "options": ["hat", "ist"] },
+      { "blankId": "5", "options": ["habe", "bin"] },
+      { "blankId": "6", "options": ["hast", "bist"] },
+      { "blankId": "7", "options": ["haben", "sind"] },
+      { "blankId": "8", "options": ["hat", "ist"] },
+      { "blankId": "9", "options": ["habe", "bin"] },
+      { "blankId": "10", "options": ["hat", "ist"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "habe",
+      "2": "sind",
+      "3": "hat",
+      "4": "ist",
+      "5": "habe",
+      "6": "bist",
+      "7": "haben",
+      "8": "ist",
+      "9": "habe",
+      "10": "ist"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has aplicat correctament la regla: _schlafen, helfen, essen, trinken, lesen_ → ==**_haben_**== (no hi ha desplaçament). _fahren, aufstehen, werden, gehen_ → ==**_sein_**== (moviment o canvi d'estat). _bleiben_ → ==**_sein_**== (excepció de memoritzar).",
+      "references": ["A1b-28", "A1b-29"]
+    },
+    "incorrect": {
+      "default": "Tres casos _sein_ a recordar: (1) **moviment/desplaçament** → _fahren, gehen, fliegen, laufen_. (2) **canvi d'estat** → _werden, aufstehen, sterben_. (3) **excepcions memoritzades** → _sein, bleiben_. Tota la resta: ==**_haben_**==.",
+      "byResponse": [
+        {
+          "match": { "2": "haben" },
+          "message": "_fahren_ és desplaçament → ==**_sein_**==. _Wir_ + _sein_ = ==**_sind_**==."
+        },
+        {
+          "match": { "4": "hat" },
+          "message": "_bleiben_ és **l'excepció clàssica**: sense moviment, però ==**sempre amb _sein_**==. _Sie_ (ella) → _ist_."
+        },
+        {
+          "match": { "6": "hast" },
+          "message": "_aufstehen_ és canvi d'estat (de dormir a llevat) → ==**_sein_**==. _Du_ + _sein_ = ==**_bist_**==."
+        },
+        {
+          "match": { "8": "hat" },
+          "message": "_werden_ és canvi d'estat per definició (\"esdevenir\") → ==**_sein_**==. _Er_ + _sein_ = ==**_ist_**==."
+        },
+        {
+          "match": { "10": "hat" },
+          "message": "_gehen_ és moviment → ==**_sein_**==. _Sie_ → _ist_."
+        },
+        {
+          "match": { "1": "bin" },
+          "message": "_schlafen_ no és moviment ni canvi d'estat: dormir és una activitat estàtica → ==**_haben_**==. _Ich_ → _habe_."
+        },
+        {
+          "match": { "3": "ist" },
+          "message": "_helfen_ té objecte (algú), no és moviment → ==**_haben_**==. _Er_ → _hat_."
+        }
+      ]
+    }
+  }
+}

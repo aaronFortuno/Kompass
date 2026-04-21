@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-28-ex-01",
+  "topicId": "A1b-28",
+  "title": "Infinitiu ↔ Partizip II",
+  "prompt": "Empareja cada **infinitiu** amb el seu **Partizip II**. Són els 8 verbs irregulars més freqüents del dia a dia: si els tens al cap, ja parles un alemany molt més natural.",
+  "difficulty": 2,
+  "tags": ["match", "partizip", "irregulars", "memoria"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "inf1", "group": "inf", "content": { "type": "text", "content": "_gehen_" } },
+      { "id": "inf2", "group": "inf", "content": { "type": "text", "content": "_essen_" } },
+      { "id": "inf3", "group": "inf", "content": { "type": "text", "content": "_trinken_" } },
+      { "id": "inf4", "group": "inf", "content": { "type": "text", "content": "_schreiben_" } },
+      { "id": "inf5", "group": "inf", "content": { "type": "text", "content": "_schlafen_" } },
+      { "id": "inf6", "group": "inf", "content": { "type": "text", "content": "_fahren_" } },
+      { "id": "inf7", "group": "inf", "content": { "type": "text", "content": "_sein_" } },
+      { "id": "inf8", "group": "inf", "content": { "type": "text", "content": "_helfen_" } },
+      { "id": "par1", "group": "par", "content": { "type": "text", "content": "==**_gegangen_**==" } },
+      { "id": "par2", "group": "par", "content": { "type": "text", "content": "==**_gegessen_**==" } },
+      { "id": "par3", "group": "par", "content": { "type": "text", "content": "==**_getrunken_**==" } },
+      { "id": "par4", "group": "par", "content": { "type": "text", "content": "==**_geschrieben_**==" } },
+      { "id": "par5", "group": "par", "content": { "type": "text", "content": "==**_geschlafen_**==" } },
+      { "id": "par6", "group": "par", "content": { "type": "text", "content": "==**_gefahren_**==" } },
+      { "id": "par7", "group": "par", "content": { "type": "text", "content": "==**_gewesen_**==" } },
+      { "id": "par8", "group": "par", "content": { "type": "text", "content": "==**_geholfen_**==" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Infinitiu",
+    "groupBLabel": "Partizip II"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["inf1", "par1"],
+      ["inf2", "par2"],
+      ["inf3", "par3"],
+      ["inf4", "par4"],
+      ["inf5", "par5"],
+      ["inf6", "par6"],
+      ["inf7", "par7"],
+      ["inf8", "par8"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Tens les 8 associacions clau: _gehen → **gegangen**_, _essen → **gegessen**_, _trinken → **getrunken**_, _schreiben → **geschrieben**_, _schlafen → **geschlafen**_, _fahren → **gefahren**_, _sein → **gewesen**_, _helfen → **geholfen**_. Aquest és el cor del Perfekt oral d'A1.",
+      "references": ["A1b-28", "A1b-27"]
+    },
+    "incorrect": {
+      "default": "Trampes típiques: ==_gegangen_== (no _gegeht_, no _geging_: l'arrel canvia totalment); ==_gegessen_== amb dues _g_ (prefix _ge-_ + arrel _-gess-_); ==_gewesen_== per _sein_ (no s'assembla a l'infinitiu). Torna a la taula 28.8 i repassa."
+    }
+  }
+}

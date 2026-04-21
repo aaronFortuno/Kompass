@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-30-ex-02",
+  "topicId": "A1b-30",
+  "title": "Construir frases en Perfekt (sense inversió)",
+  "prompt": "Tria la frase ==**correctament ordenada**==. Recorda: l'**auxiliar** va a la **posició 2** (just després del subjecte) i el **participi** va al **final** de la frase.",
+  "difficulty": 2,
+  "tags": ["perfekt", "ordre", "satzklammer", "V2"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _ich · habe · Pizza · gegessen · gestern_ → {{1}}\n\n2. _wir · sind · ins Kino · gegangen_ → {{2}}\n\n3. _Anna · hat · einen Kaffee · getrunken · im Bett_ → {{3}}\n\n4. _ich · bin · aufgestanden · um acht Uhr_ → {{4}}\n\n5. _meine Eltern · haben · ein Haus · gekauft · letztes Jahr_ → {{5}}\n\n6. _er · hat · mit seiner Schwester · telefoniert_ → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "1. ich + habe + gegessen" },
+      { "id": "2", "label": "2. wir + sind + gegangen" },
+      { "id": "3", "label": "3. Anna + hat + getrunken" },
+      { "id": "4", "label": "4. ich + bin + aufgestanden" },
+      { "id": "5", "label": "5. meine Eltern + haben + gekauft" },
+      { "id": "6", "label": "6. er + hat + telefoniert" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "1",
+        "options": [
+          "Ich habe gestern Pizza gegessen.",
+          "Ich habe gegessen gestern Pizza.",
+          "Ich gestern habe Pizza gegessen."
+        ]
+      },
+      {
+        "blankId": "2",
+        "options": [
+          "Wir sind ins Kino gegangen.",
+          "Wir sind gegangen ins Kino.",
+          "Wir ins Kino sind gegangen."
+        ]
+      },
+      {
+        "blankId": "3",
+        "options": [
+          "Anna hat einen Kaffee im Bett getrunken.",
+          "Anna hat getrunken einen Kaffee im Bett.",
+          "Anna einen Kaffee hat im Bett getrunken."
+        ]
+      },
+      {
+        "blankId": "4",
+        "options": [
+          "Ich bin um acht Uhr aufgestanden.",
+          "Ich bin aufgestanden um acht Uhr.",
+          "Ich um acht Uhr bin aufgestanden."
+        ]
+      },
+      {
+        "blankId": "5",
+        "options": [
+          "Meine Eltern haben letztes Jahr ein Haus gekauft.",
+          "Meine Eltern haben gekauft ein Haus letztes Jahr.",
+          "Meine Eltern letztes Jahr haben ein Haus gekauft."
+        ]
+      },
+      {
+        "blankId": "6",
+        "options": [
+          "Er hat mit seiner Schwester telefoniert.",
+          "Er hat telefoniert mit seiner Schwester.",
+          "Er mit seiner Schwester hat telefoniert."
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Ich habe gestern Pizza gegessen.",
+      "2": "Wir sind ins Kino gegangen.",
+      "3": "Anna hat einen Kaffee im Bett getrunken.",
+      "4": "Ich bin um acht Uhr aufgestanden.",
+      "5": "Meine Eltern haben letztes Jahr ein Haus gekauft.",
+      "6": "Er hat mit seiner Schwester telefoniert."
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Auxiliar a la **posició 2**, participi al **final**, tot el contingut al mig. Aquesta és l'arquitectura base del Perfekt — la mateixa Satzklammer que ja fas servir amb modals i separables.",
+      "references": ["A1b-30"]
+    },
+    "incorrect": {
+      "default": "Comprova dues coses: (1) l'auxiliar (_habe / hat / bin / sind..._) ha d'anar a la ==**posició 2**==, just després del subjecte; (2) el participi (_gegessen, gegangen, getrunken..._) ha d'anar al ==**final**== de la frase. Res de posar el participi enmig o darrere l'auxiliar.",
+      "byResponse": [
+        {
+          "match": { "1": "Ich habe gegessen gestern Pizza." },
+          "message": "==Error clàssic de catalanoparlant==: ajuntar auxiliar + participi. El participi va al **final**: _Ich habe gestern Pizza ==**gegessen**==._"
+        },
+        {
+          "match": { "2": "Wir sind gegangen ins Kino." },
+          "message": "El participi _gegangen_ va al **final de tot**, després del complement: _Wir sind ins Kino ==**gegangen**==._"
+        },
+        {
+          "match": { "3": "Anna hat getrunken einen Kaffee im Bett." },
+          "message": "_getrunken_ no pot anar just darrere l'auxiliar. Ha d'anar al final: _Anna hat einen Kaffee im Bett ==**getrunken**==._"
+        },
+        {
+          "match": { "4": "Ich um acht Uhr bin aufgestanden." },
+          "message": "==Error de V2==: l'auxiliar _bin_ ha d'anar a la posició 2, just després del subjecte: _Ich ==**bin**== um acht Uhr aufgestanden._"
+        },
+        {
+          "match": { "5": "Meine Eltern letztes Jahr haben ein Haus gekauft." },
+          "message": "==Error de V2==: _haben_ és el verb conjugat i ha d'anar a la posició 2, just després del subjecte _meine Eltern_: _Meine Eltern ==**haben**== letztes Jahr ein Haus gekauft._"
+        },
+        {
+          "match": { "6": "Er hat telefoniert mit seiner Schwester." },
+          "message": "_telefoniert_ va al **final**, després del complement: _Er hat mit seiner Schwester ==**telefoniert**==._"
+        }
+      ]
+    }
+  }
+}

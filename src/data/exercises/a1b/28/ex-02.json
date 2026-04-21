@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-28-ex-02",
+  "topicId": "A1b-28",
+  "title": "Tria el Partizip II correcte",
+  "prompt": "Per a cada infinitiu, tria el **Partizip II correcte**. Les opcions incorrectes inclouen la forma regular _ge-…-t_ (trampa clàssica) i formes amb vocal equivocada.",
+  "difficulty": 2,
+  "tags": ["singleChoice", "partizip", "irregulars", "trampes"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _lesen_ → {{1}}\n2. _gehen_ → {{2}}\n3. _trinken_ → {{3}}\n4. _fahren_ → {{4}}\n5. _schlafen_ → {{5}}\n6. _denken_ → {{6}}\n7. _bleiben_ → {{7}}\n8. _sein_ → {{8}}\n9. _werden_ → {{9}}\n10. _aufstehen_ → {{10}}",
+    "blanks": [
+      { "id": "1", "label": "1. _lesen_" },
+      { "id": "2", "label": "2. _gehen_" },
+      { "id": "3", "label": "3. _trinken_" },
+      { "id": "4", "label": "4. _fahren_" },
+      { "id": "5", "label": "5. _schlafen_" },
+      { "id": "6", "label": "6. _denken_" },
+      { "id": "7", "label": "7. _bleiben_" },
+      { "id": "8", "label": "8. _sein_" },
+      { "id": "9", "label": "9. _werden_" },
+      { "id": "10", "label": "10. _aufstehen_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["gelest", "gelesen", "gelasen"] },
+      { "blankId": "2", "options": ["gegeht", "geging", "gegangen"] },
+      { "blankId": "3", "options": ["getrinkt", "getrunken", "getrankt"] },
+      { "blankId": "4", "options": ["gefahrt", "gefuhren", "gefahren"] },
+      { "blankId": "5", "options": ["geschlaft", "geschlafen", "geschlieft"] },
+      { "blankId": "6", "options": ["gedenkt", "gedacht", "gedocht"] },
+      { "blankId": "7", "options": ["gebleibt", "geblieben", "gebliebt"] },
+      { "blankId": "8", "options": ["gesein", "gesint", "gewesen"] },
+      { "blankId": "9", "options": ["geworden", "gewerdet", "gewurdet"] },
+      { "blankId": "10", "options": ["aufgestanden", "geaufstanden", "aufgestehen"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "gelesen",
+      "2": "gegangen",
+      "3": "getrunken",
+      "4": "gefahren",
+      "5": "geschlafen",
+      "6": "gedacht",
+      "7": "geblieben",
+      "8": "gewesen",
+      "9": "geworden",
+      "10": "aufgestanden"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has esquivat les 10 trampes: formes regulars _-t_ (_gelest, getrinkt, geschlaft_), vocals canviades (_gelasen, gedocht_) i inversions de prefix (_geaufstanden_). ==La regla forta: _ge-__ + **arrel canviada** + _-en_==, amb excepcions mixtes (_gedacht_, _gewusst_).",
+      "references": ["A1b-28", "A1b-27"]
+    },
+    "incorrect": {
+      "default": "Errors típics: (1) **Regularitzar** verbs forts → _gelest, geschlaft, getrinkt_ no existeixen; sempre _-en_ amb arrel canviada. (2) **Oblidar que el prefix engoleix _ge-_** als separables: _aufgestanden_, no _geaufstanden_. (3) _sein_ no té forma derivable de l'infinitiu → memoritza ==_gewesen_== a part.",
+      "byResponse": [
+        {
+          "match": { "1": "gelest" },
+          "message": "_lesen_ és fort, no regular. No hi ha _gelest_: la forma correcta és ==**_gelesen_**== (_ge-_ + _les-_ + _-en_)."
+        },
+        {
+          "match": { "2": "gegeht" },
+          "message": "_gehen_ no es regularitza. La forma és ==**_gegangen_**==, amb arrel totalment canviada (_geh-_ → _gang-_)."
+        },
+        {
+          "match": { "2": "geging" },
+          "message": "_geging_ barreja Präteritum (_ging_) amb prefix. El Partizip II és ==**_gegangen_**==."
+        },
+        {
+          "match": { "3": "getrinkt" },
+          "message": "_trinken_ és fort: vocal _i → u_ al Partizip. ==**_getrunken_**==, no _getrinkt_."
+        },
+        {
+          "match": { "5": "geschlaft" },
+          "message": "_schlafen_ és fort i manté _a_: ==**_geschlafen_**== (amb _-en_, no _-t_)."
+        },
+        {
+          "match": { "6": "gedenkt" },
+          "message": "_denken_ és **Mischverb**: l'arrel canvia (_den- → dach-_) però la terminació és _-t_ regular. ==**_gedacht_**==."
+        },
+        {
+          "match": { "8": "gesein" },
+          "message": "_sein_ no deriva de l'infinitiu. La forma és completament diferent: ==**_gewesen_**==. Memoritza-la a part."
+        },
+        {
+          "match": { "10": "geaufstanden" },
+          "message": "El prefix separable _auf-_ ==**engoleix**== el _ge-_: s'insereix entre prefix i arrel → ==**_aufgestanden_**== (no _geaufstanden_)."
+        }
+      ]
+    }
+  }
+}

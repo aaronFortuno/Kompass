@@ -1,0 +1,363 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-28",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 28,
+  "title": "Wichtige unregelmässige Verben",
+  "shortTitle": "Verbs irregulars",
+  "description": "Els 17 verbs forts d'A1 amb el seu Partizip II i auxiliar, organitzats per patrons de canvi vocàlic (Ablautreihen).",
+  "axes": ["temps-verbals", "pronoms-verbs"],
+  "prerequisites": ["A1b-27"],
+  "estimatedMinutes": 30,
+  "steps": [
+    {
+      "id": "intro-per-que-llista",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Per què una lliçó de llista\n\nL'alemany té uns 200 verbs forts (_unregelmäßige Verben_ o _starke Verben_). La bona notícia: ==els més freqüents són pocs i es repeteixen constantment==. La mala: no hi ha cap regla universal per predir-ne la forma. El que sí existeix són **patrons de canvi vocàlic** (_Ablautreihen_) que agrupen famílies de verbs amb el mateix comportament. Aprendre'ls per famílies estalvia moltíssima memòria.\n\nEn aquesta lliçó tens els **17 verbs d'A1** que cal saber de memòria, organitzats per patró. Per a cada verb aprens:\n\n1. L'**infinitiu** (ja el coneixes del present).\n2. El **Präteritum de 3a persona** (_stand auf, half, ging…_). A A1 només reconeix-lo; a A2a el treballarem per conjugar-lo.\n3. El **Partizip II** (la peça que va al Perfekt: _aufgestanden, geholfen, gegangen…_).\n4. L'**auxiliar** (_haben_ o _sein_, vegeu A1b-29 per a la regla completa)."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Filosofia",
+          "body": "No memoritzis llistes alfabètiques. Memoritza **trios vocàlics**: _helfen–half–geholfen_ = ==**e–a–e**==. _Trinken–trank–getrunken_ = ==**i–a–u**==. Quan un verb nou respecta un patró que ja coneixes, el tens mig après."
+        }
+      ]
+    },
+    {
+      "id": "patro-e-a-e",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Patró ==**e–a–e**==: _helfen, essen, lesen_\n\nVerbs amb **vocal _e_** a l'infinitiu que fan _a_ al Präteritum i **tornen a _e_** al Partizip II. És el patró més productiu d'A1."
+        },
+        {
+          "type": "table",
+          "title": "28.1 Patró e–a–e",
+          "headers": ["Infinitiu", "Präteritum*", "Partizip II", "Auxiliar", "Significat"],
+          "rows": [
+            ["**h==e==lfen**", "_h==a==lf_", "_g==e==h==o==lfen_", "_haben_", "ajudar"],
+            ["**==e==ssen**", "_==a==ß_", "_g==e==g==e==ssen_", "_haben_", "menjar"],
+            ["**l==e==sen**", "_l==a==s_", "_g==e==l==e==sen_", "_haben_", "llegir"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Atenció — subfamília e–a–o",
+          "body": "_helfen_ fa ==**_geholfen_**== (amb _o_), no _geelfen_. Aquí el patró es trenca lleugerament: l'infinitiu porta _e_, el Präteritum _a_, però el Partizip té _o_. És una **subfamília _e–a–o_** que també agrupa _sprechen, treffen, nehmen_ (A2). Memoritza-ho com a excepció dins del patró."
+        },
+        {
+          "type": "explanation",
+          "body": "**Exemples al Perfekt:**\n\n- _Ich **habe** dir gestern **geholfen**._ (t'he ajudat / et vaig ajudar)\n- _Wir **haben** Pizza **gegessen**._ (hem menjat pizza)\n- _Sie **hat** das Buch **gelesen**._ (ella ha llegit el llibre)"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Truc mnemotècnic",
+          "body": "El Partizip II conserva la vocal de l'**infinitiu** (_e→e_), com si el verb \"tornés a casa\" després del Präteritum. Excepció: _helfen_ fuig cap a _o_."
+        }
+      ]
+    },
+    {
+      "id": "patro-ei-ie-ie",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Patró ==**ei–ie–ie**==: _bleiben, schreiben_\n\nVerbs amb el diftong **-ei-** que fa **-ie-** tant al Präteritum com al Partizip II. Patró extremadament regular i productiu."
+        },
+        {
+          "type": "table",
+          "title": "28.2 Patró ei–ie–ie",
+          "headers": ["Infinitiu", "Präteritum*", "Partizip II", "Auxiliar", "Significat"],
+          "rows": [
+            ["**bl==ei==ben**", "_bl==ie==b_", "_gebl==ie==ben_", "==_sein_==", "quedar-se"],
+            ["**schr==ei==ben**", "_schr==ie==b_", "_geschr==ie==ben_", "_haben_", "escriure"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Exemples al Perfekt:**\n\n- _Ich **bin** zu Hause **geblieben**._ (m'he quedat a casa) → _sein_ perquè és un estat/permanència.\n- _Er **hat** einen Brief **geschrieben**._ (ha escrit una carta) → _haben_ perquè hi ha objecte directe."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Nota d'auxiliar — bleiben",
+          "body": "==_bleiben_ és l'excepció clàssica a la regla \"_sein_ = moviment\"==: no hi ha moviment, però va amb _sein_ perquè indica **estat/permanència**. Memoritza aquest verb a banda. Vegeu A1b-29."
+        }
+      ]
+    },
+    {
+      "id": "patro-i-a-u",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Patró ==**i–a–u**==: _trinken_\n\nVerbs amb **-i-** + consonant nasal/líquida (_n, m, nd, nk_) que fan _i–a–u_. A A1 només en tenim un, però és un dels verbs més útils de la llengua:"
+        },
+        {
+          "type": "table",
+          "title": "28.3 Patró i–a–u",
+          "headers": ["Infinitiu", "Präteritum*", "Partizip II", "Auxiliar", "Significat"],
+          "rows": [
+            ["**tr==i==nken**", "_tr==a==nk_", "_getr==u==nken_", "_haben_", "beure"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Exemple al Perfekt:**\n\n- _Ich **habe** ein Bier **getrunken**._ (m'he begut / he begut una cervesa)"
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Amplia't gratis",
+          "body": "El mateix patró _i–a–u_ et regala _singen–sang–gesungen_ (cantar), _finden–fand–gefunden_ (trobar), _beginnen–begann–begonnen_ (gairebé). Són A2, però si tens A1 sòlid els reconeixeràs de seguida."
+        }
+      ]
+    },
+    {
+      "id": "patro-a-u-a",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Patró ==**a–u–a**==: _fahren, schlafen_\n\nVerbs amb **-a-** (sovint amb Umlaut en present: _du fährst, er schläft_) que fan _a–u–a_."
+        },
+        {
+          "type": "table",
+          "title": "28.4 Patró a–u–a",
+          "headers": ["Infinitiu", "Präteritum*", "Partizip II", "Auxiliar", "Significat"],
+          "rows": [
+            ["**f==a==hren**", "_f==u==hr_", "_gef==a==hren_", "==_sein_==", "anar (en vehicle)"],
+            ["**schl==a==fen**", "_schl==ie==f_", "_geschl==a==fen_", "_haben_", "dormir"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Compte — schlafen",
+          "body": "_schlafen_ trenca el patró al Präteritum (==_schlief_== amb _ie_, no _schlaf_), però recupera _a_ al Partizip (_geschlafen_). És una excepció lexical: memoritza _schlief_ com a cas únic."
+        },
+        {
+          "type": "explanation",
+          "body": "**Exemples al Perfekt:**\n\n- _Wir **sind** nach Berlin **gefahren**._ (hem anat a Berlín) → _sein_ (moviment).\n- _Ich **habe** acht Stunden **geschlafen**._ (he dormit 8 hores) → _haben_ (sense desplaçament)."
+        }
+      ]
+    },
+    {
+      "id": "check-1-patrons-basics",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-28-ex-05", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "irregulars-moviment",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Dos irregulars de moviment: _laufen, gehen_\n\nDos verbs de moviment que **no** encaixen en cap patró net i cal memoritzar aïlladament. Són dels verbs més freqüents de l'idioma, però precisament per això van conservar formes antigues."
+        },
+        {
+          "type": "table",
+          "title": "28.5 Irregulars totals de moviment",
+          "headers": ["Infinitiu", "Präteritum*", "Partizip II", "Auxiliar", "Significat"],
+          "rows": [
+            ["**l==au==fen**", "_l==ie==f_", "_gel==au==fen_", "==_sein_==", "córrer (o caminar)"],
+            ["**g==e==hen**", "_g==i==ng_", "_ge==ga==ngen_", "==_sein_==", "anar (a peu)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Worst offender — gegangen",
+          "body": "_gehen → **gegangen**_. L'arrel canvia totalment: _ge-_ (prefix) + _gang_ (arrel) + _-en_ (terminació). Res a veure amb l'infinitiu visualment. ==Memoritza-ho com una paraula nova==: _gegangen_ = \"anat\"."
+        },
+        {
+          "type": "explanation",
+          "body": "**Exemples al Perfekt:**\n\n- _Ich **bin** zum Bahnhof **gelaufen**._ (he corregut / he anat caminant).\n- _Wir **sind** ins Kino **gegangen**._ (hem anat al cinema)."
+        }
+      ]
+    },
+    {
+      "id": "super-irregulars",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Els súper-irregulars: _sein, werden, denken, wissen_\n\nAquests quatre no segueixen cap patró: cal memoritzar-los com a paraules independents. Són, però, dels més usats del dia a dia."
+        },
+        {
+          "type": "table",
+          "title": "28.6 Súper-irregulars",
+          "headers": ["Infinitiu", "Präteritum*", "Partizip II", "Auxiliar", "Significat"],
+          "rows": [
+            ["**_sein_**", "_war_", "_ge==w==esen_", "==_sein_==", "ser / estar"],
+            ["**_werden_**", "_wurde_", "_ge==w==orden_", "==_sein_==", "esdevenir"],
+            ["**_denken_**", "_dachte_", "_ge==da==cht_", "_haben_", "pensar"],
+            ["**_wissen_**", "_wusste_", "_ge==wu==sst_", "_haben_", "saber"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Mischverben — denken i wissen",
+          "body": "Són **verbs mixtos**: porten terminació ==**-t**== de verb regular (_gedacht, gewusst_) però amb l'arrel canviada com un verb fort (_den-→dach-_, _wiss-→wuss-_). Són l'excepció dins l'excepció."
+        },
+        {
+          "type": "explanation",
+          "body": "**Exemples al Perfekt:**\n\n- _Ich **bin** gestern krank **gewesen**._ (he estat malalt ahir). [A l'oral millor _war_, A1b-25]\n- _Er **ist** Arzt **geworden**._ (s'ha fet metge).\n- _Ich **habe** an dich **gedacht**._ (he pensat en tu).\n- _Sie **hat** die Antwort **gewusst**._ (ella ha sabut la resposta)."
+        }
+      ]
+    },
+    {
+      "id": "aufstehen-separable",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### _aufstehen_: verb separable fort\n\nUn verb separable (_auf-_) amb arrel forta (_stehen_). Segueix el patró de _stehen–stand–gestanden_, amb el prefix que es col·loca al davant del Partizip:"
+        },
+        {
+          "type": "table",
+          "title": "28.7 aufstehen",
+          "headers": ["Infinitiu", "Präteritum*", "Partizip II", "Auxiliar", "Significat"],
+          "rows": [
+            ["**aufst==e==hen**", "_stand auf_", "==_auf_==_gest==a==nden_", "==_sein_==", "aixecar-se"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Regla dels separables",
+          "body": "==Recorda la regla dels separables== (A1b-27): el prefix _auf-_ engoleix el _ge-_ del Partizip, que s'insereix entre el prefix i l'arrel: **auf** + _ge_ + _stand_ + _en_ = ==**_aufgestanden_**=="
+        },
+        {
+          "type": "explanation",
+          "body": "**Exemple al Perfekt:**\n\n- _Ich **bin** heute um 7 Uhr **aufgestanden**._ (m'he aixecat avui a les 7)."
+        }
+      ]
+    },
+    {
+      "id": "check-2-partizip",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-28-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "taula-sintesi-17",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Taula-síntesi: els 17 verbs d'A1\n\nEls 17 verbs irregulars d'A1 en una sola vista. Tornar a aquesta taula tantes vegades com calgui."
+        },
+        {
+          "type": "table",
+          "title": "28.8 Els 17 verbs irregulars d'A1",
+          "headers": ["Infinitiu", "Prät.*", "Partizip II", "Aux.", "Català"],
+          "rows": [
+            ["_aufstehen_", "_stand auf_", "==**_aufgestanden_**==", "_sein_", "aixecar-se"],
+            ["_helfen_", "_half_", "==**_geholfen_**==", "_haben_", "ajudar"],
+            ["_gehen_", "_ging_", "==**_gegangen_**==", "_sein_", "anar (a peu)"],
+            ["_fliegen_", "_flog_", "==**_geflogen_**==", "_sein_", "anar en avió"],
+            ["_fahren_", "_fuhr_", "==**_gefahren_**==", "_sein_", "anar en vehicle"],
+            ["_trinken_", "_trank_", "==**_getrunken_**==", "_haben_", "beure"],
+            ["_laufen_", "_lief_", "==**_gelaufen_**==", "_sein_", "córrer"],
+            ["_schlafen_", "_schlief_", "==**_geschlafen_**==", "_haben_", "dormir"],
+            ["_schreiben_", "_schrieb_", "==**_geschrieben_**==", "_haben_", "escriure"],
+            ["_werden_", "_wurde_", "==**_geworden_**==", "_sein_", "esdevenir"],
+            ["_lesen_", "_las_", "==**_gelesen_**==", "_haben_", "llegir"],
+            ["_essen_", "_aß_", "==**_gegessen_**==", "_haben_", "menjar"],
+            ["_denken_", "_dachte_", "==**_gedacht_**==", "_haben_", "pensar"],
+            ["_bleiben_", "_blieb_", "==**_geblieben_**==", "_sein_", "quedar-se"],
+            ["_wissen_", "_wusste_", "==**_gewusst_**==", "_haben_", "saber"],
+            ["_sein_", "_war_", "==**_gewesen_**==", "_sein_", "ser/estar"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Bonus: patró ie–o–o",
+          "body": "_fliegen → flog → geflogen / sein_ segueix el patró _ie–o–o_, idèntic a tota la família _fliegen, ziehen, biegen…_ (la resta és A2)."
+        }
+      ]
+    },
+    {
+      "id": "check-3-perfekt-complet",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-28-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-4-typein",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-28-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-5-auxiliar",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-28-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-6-construir",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-28-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-7-classificar",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-28-ex-08", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-8-trampes",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-28-ex-09", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-9-match-part",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-28-ex-01", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi\n\n**Els 17 irregulars d'A1, en 4 patrons + 1 sac d'excepcions:**"
+        },
+        {
+          "type": "table",
+          "title": "28.9 Patrons vocàlics d'A1",
+          "headers": ["Patró", "Verbs", "Memòria"],
+          "rows": [
+            ["==**e–a–e**== (o _e–a–o_)", "_lesen, essen, helfen_", "vocal torna a _e_ (o fuig a _o_)"],
+            ["==**ei–ie–ie**==", "_bleiben, schreiben_", "diftong _ei_ → _ie_ a Prät. i Part."],
+            ["==**i–a–u**==", "_trinken_", "nasal/líquida + _i–a–u_"],
+            ["==**a–u–a**==", "_fahren, schlafen_", "_a_ obre, _u_ al mig, _a_ torna"],
+            ["==**ie–o–o**==", "_fliegen_", "(bonus A2: _ziehen, biegen…_)"],
+            ["**Irregulars totals**", "_gehen, laufen, sein, werden, denken, wissen, aufstehen_", "memoritzar un per un"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Paranys crítics",
+          "body": "- ==_gegangen_== (no _gegeht_, no _geging_). **Worst offender**.\n- ==_gewesen_== (no _gesein_, no _geist_). El Partizip de _sein_ no s'hi assembla.\n- ==_gegessen_== amb dues _g_ (prefix _ge-_ + arrel _-gess-_). Excepció fonètica.\n- _denken → **gedacht**_ i _wissen → **gewusst**_: **Mischverben** (_-t_ regular + arrel forta).\n- Auxiliars clau: _bleiben, sein, werden_ amb ==**_sein_**== (no es mouen, però hi van)."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Llista per memoritzar com cançó",
+          "body": "==_war · hatte · ging · gegangen · gegessen · getrunken · geschlafen · geschrieben · gefahren · geflogen · geblieben · geworden · gedacht · gewusst · geholfen · gelesen · aufgestanden_=="
+        },
+        {
+          "type": "explanation",
+          "body": "**Connexions amb altres lliçons:**\n\n- **A1b-24** — mapa del passat.\n- **A1b-26** — formació del Perfekt.\n- **A1b-27** — formació del Partizip II regular + fort.\n- **A1b-29** — _haben_ vs. _sein_.\n- **A1b-30** — ordre a la frase.\n\n**Preparació per A2a** (Präteritum actiu): _ging, half, las, aß, trank, schlief, schrieb, fuhr, flog, blieb, wurde, dachte, wusste_."
+        }
+      ]
+    }
+  ]
+}

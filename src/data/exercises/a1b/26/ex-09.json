@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-26-ex-09",
+  "topicId": "A1b-26",
+  "title": "Un dia narrat en Perfekt",
+  "prompt": "Completa el relat del cap de setmana amb l'**auxiliar conjugat** i el **participi** de cada verb indicat entre parèntesis. Escriu ==només la forma verbal== a cada buit.",
+  "difficulty": 3,
+  "tags": ["perfekt", "narrativa", "sintesi", "avaluacio", "typeIn"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Am Samstag {{1a}} ich früh {{1b}}. (aufstehen, ich)_\n\n_Ich {{2a}} Kaffee {{2b}} und Brot {{3}}. (trinken, ich) + (essen — només participi)_\n\n_Dann {{4a}} ich in die Stadt {{4b}}. (fahren, ich)_\n\n_Ich {{5a}} ein Buch {{5b}}. (kaufen, ich)_\n\n_Am Abend {{6a}} ich einen Film {{6b}}. (sehen, ich)_\n\n_Und ich {{7a}} spät ins Bett {{7b}}. (gehen, ich)_",
+    "blanks": [
+      { "id": "1a", "label": "1a. aux. (aufstehen, ich)" },
+      { "id": "1b", "label": "1b. part. (aufstehen)" },
+      { "id": "2a", "label": "2a. aux. (trinken, ich)" },
+      { "id": "2b", "label": "2b. part. (trinken)" },
+      { "id": "3", "label": "3. part. (essen) — l'auxiliar _habe_ s'omet per coordinació" },
+      { "id": "4a", "label": "4a. aux. (fahren, ich)" },
+      { "id": "4b", "label": "4b. part. (fahren)" },
+      { "id": "5a", "label": "5a. aux. (kaufen, ich)" },
+      { "id": "5b", "label": "5b. part. (kaufen)" },
+      { "id": "6a", "label": "6a. aux. (sehen, ich)" },
+      { "id": "6b", "label": "6b. part. (sehen)" },
+      { "id": "7a", "label": "7a. aux. (gehen, ich)" },
+      { "id": "7b", "label": "7b. part. (gehen)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1a", "placeholder": "aux." },
+      { "blankId": "1b", "placeholder": "Partizip II" },
+      { "blankId": "2a", "placeholder": "aux." },
+      { "blankId": "2b", "placeholder": "Partizip II" },
+      { "blankId": "3", "placeholder": "Partizip II" },
+      { "blankId": "4a", "placeholder": "aux." },
+      { "blankId": "4b", "placeholder": "Partizip II" },
+      { "blankId": "5a", "placeholder": "aux." },
+      { "blankId": "5b", "placeholder": "Partizip II" },
+      { "blankId": "6a", "placeholder": "aux." },
+      { "blankId": "6b", "placeholder": "Partizip II" },
+      { "blankId": "7a", "placeholder": "aux." },
+      { "blankId": "7b", "placeholder": "Partizip II" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1a": ["bin"],
+      "1b": ["aufgestanden"],
+      "2a": ["habe"],
+      "2b": ["getrunken"],
+      "3": ["gegessen"],
+      "4a": ["bin"],
+      "4b": ["gefahren"],
+      "5a": ["habe"],
+      "5b": ["gekauft"],
+      "6a": ["habe"],
+      "6b": ["gesehen"],
+      "7a": ["bin"],
+      "7b": ["gegangen"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "==**Fantàstic!**== Has construït una narrativa fluida en Perfekt. Observa l'==**alternança _bin… habe… bin… habe…_**==: _bin aufgestanden / habe getrunken / gegessen / bin gefahren / habe gekauft / habe gesehen / bin gegangen_. Aquesta és exactament la melodia del passat oral alemany.",
+      "references": ["A1b-26"]
+    },
+    "incorrect": {
+      "default": "Tres verbs amb ==_sein_== (_aufstehen, fahren, gehen_ — canvi d'estat o moviment); la resta amb ==_haben_==. Tots els participis al final de la seva frase. _Am Samstag_, _Dann_, _Am Abend_ són complements temporals que ocupen V1; l'auxiliar queda en V2 (inversió).",
+      "byResponse": [
+        {
+          "match": { "1a": "habe" },
+          "message": "_aufstehen_ és canvi d'estat → ==**_sein_**==. _ich_ + _sein_ = _**bin**_."
+        },
+        {
+          "match": { "4a": "habe" },
+          "message": "_fahren_ és moviment → ==**_sein_**==. _ich_ + _sein_ = _**bin**_."
+        },
+        {
+          "match": { "7a": "habe" },
+          "message": "_gehen_ és moviment → ==**_sein_**==. _ich_ + _sein_ = _**bin**_."
+        },
+        {
+          "match": { "2a": "bin" },
+          "message": "_trinken_ és verb normal → ==**_haben_**==. _ich_ + _haben_ = _**habe**_."
+        },
+        {
+          "match": { "5a": "bin" },
+          "message": "_kaufen_ és verb normal → ==**_haben_**==. _ich_ + _haben_ = _**habe**_."
+        },
+        {
+          "match": { "1b": "aufstanden" },
+          "message": "Amb prefix separable (_auf-_), el _ge-_ va **entre** el prefix i l'arrel: ==**_aufgestanden_**==."
+        },
+        {
+          "match": { "7b": "gegehen" },
+          "message": "_gehen_ és irregular: participi ==**_gegangen_**== (canvi vocàlic _e → a_)."
+        },
+        {
+          "match": { "6b": "gesehn" },
+          "message": "Ortografia: ==**_gesehen_**== (amb _-e-_ entre _seh_ i _-en_)."
+        },
+        {
+          "match": { "3": "geessen" },
+          "message": "Error d'ortografia: ==**_gegessen_**== (amb doble _g_ a l'inici)."
+        }
+      ]
+    }
+  }
+}

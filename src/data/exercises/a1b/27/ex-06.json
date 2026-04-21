@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-27-ex-06",
+  "topicId": "A1b-27",
+  "title": "Verdader o fals: Partizip II correcte?",
+  "prompt": "Indica si cada forma de Partizip II és ==**correcta**== (_verdader_) o ==**incorrecta**== (_fals_). Concentra't en els paranys clàssics: _ge-_ de més, _ge-_ de menys, final equivocat.",
+  "difficulty": 2,
+  "tags": ["trueFalse", "diagnostic", "partizip-ii"],
+  "stimulus": {
+    "type": "text",
+    "content": "Per a cada parella _infinitiu → Partizip II_, decideix si la forma és correcta."
+  },
+  "interaction": {
+    "type": "trueFalse",
+    "statements": [
+      { "id": "s1", "text": "_lernen → **gelernt**_" },
+      { "id": "s2", "text": "_studieren → **gestudiert**_" },
+      { "id": "s3", "text": "_besuchen → **besucht**_" },
+      { "id": "s4", "text": "_einkaufen → **einkauft**_" },
+      { "id": "s5", "text": "_gehen → **gegeht**_" },
+      { "id": "s6", "text": "_denken → **gedacht**_" },
+      { "id": "s7", "text": "_verstehen → **verstanden**_" },
+      { "id": "s8", "text": "_bringen → **gebringt**_" },
+      { "id": "s9", "text": "_telefonieren → **telefoniert**_" },
+      { "id": "s10", "text": "_arbeiten → **gearbeitet**_" }
+    ]
+  },
+  "validation": {
+    "type": "truthMap",
+    "answers": {
+      "s1": true,
+      "s2": false,
+      "s3": true,
+      "s4": false,
+      "s5": false,
+      "s6": true,
+      "s7": true,
+      "s8": false,
+      "s9": true,
+      "s10": true
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Dominis ben les excepcions: ==**_studiert_**==, no _\\*gestudiert_ (cap _ge-_ en _-ieren_); ==**_eingekauft_**==, no _\\*einkauft_ (separable sí que porta _ge-_ infixat); ==**_gegangen_**==, no _\\*gegeht_ (irregular amb canvi d'arrel); ==**_gebracht_**==, no _\\*gebringt_ (mixt: canvia arrel i acaba en _-t_). I recorda: _arbeiten_ afegeix _-et_ en lloc de _-t_ per la pronunciació.",
+      "references": ["A1b-27"]
+    },
+    "incorrect": {
+      "default": "Repassa els 5 errors típics: (1) _ge-_ de més en _-ieren_ (_\\*gestudiert_); (2) _ge-_ de més en inseparables (_\\*gebesucht_); (3) _ge-_ oblidat en separables (_\\*einkauft_); (4) final _-t_ en irregulars (_\\*gegeht_); (5) final _-en_ en mixtos o arrel no canviada (_\\*gedenken_, _\\*gebringt_)."
+    }
+  }
+}

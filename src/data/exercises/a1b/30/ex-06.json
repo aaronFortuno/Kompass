@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-30-ex-06",
+  "topicId": "A1b-30",
+  "title": "Transforma: sense inversió → amb inversió",
+  "prompt": "Reescriu cada frase portant l'element ==**marcat en negreta**== a la **posició 1** i aplicant la **inversió**. Has de fer tres operacions alhora: (1) complement a la 1, (2) auxiliar a la 2, (3) subjecte a la 3. Escriu la frase sencera amb la puntuació final.",
+  "difficulty": 3,
+  "tags": ["perfekt", "inversio", "transformacio", "typeIn"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich habe **gestern** ein Buch gelesen._ → {{1}}\n\n2. _Wir sind **um acht Uhr** aufgestanden._ → {{2}}\n\n3. _Anna hat **in Berlin** gearbeitet._ → {{3}}\n\n4. _Er ist **heute** nach Hause gefahren._ → {{4}}\n\n5. _Die Kinder haben **am Samstag** Fußball gespielt._ → {{5}}\n\n6. _Ich habe **letztes Jahr** Deutsch gelernt._ → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "1. Gestern…" },
+      { "id": "2", "label": "2. Um acht Uhr…" },
+      { "id": "3", "label": "3. In Berlin…" },
+      { "id": "4", "label": "4. Heute…" },
+      { "id": "5", "label": "5. Am Samstag…" },
+      { "id": "6", "label": "6. Letztes Jahr…" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Gestern …" },
+      { "blankId": "2", "placeholder": "Um acht Uhr …" },
+      { "blankId": "3", "placeholder": "In Berlin …" },
+      { "blankId": "4", "placeholder": "Heute …" },
+      { "blankId": "5", "placeholder": "Am Samstag …" },
+      { "blankId": "6", "placeholder": "Letztes Jahr …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Gestern habe ich ein Buch gelesen.", "Gestern habe ich ein Buch gelesen"],
+      "2": ["Um acht Uhr sind wir aufgestanden.", "Um acht Uhr sind wir aufgestanden"],
+      "3": ["In Berlin hat Anna gearbeitet.", "In Berlin hat Anna gearbeitet"],
+      "4": ["Heute ist er nach Hause gefahren.", "Heute ist er nach Hause gefahren"],
+      "5": ["Am Samstag haben die Kinder Fußball gespielt.", "Am Samstag haben die Kinder Fußball gespielt"],
+      "6": ["Letztes Jahr habe ich Deutsch gelernt.", "Letztes Jahr habe ich Deutsch gelernt"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has fet ==**les tres operacions alhora**==: (1) complement a la pos. 1, (2) auxiliar a la pos. 2, (3) subjecte a la pos. 3. El participi no s'ha mogut — continua al final, sempre. Aquesta és l'automàtica que has de desenvolupar per parlar en passat amb fluïdesa.",
+      "references": ["A1b-30", "A1a-18"]
+    },
+    "incorrect": {
+      "default": "Recorda les tres operacions: (1) porta el complement marcat a la ==**pos. 1**==; (2) deixa l'auxiliar (_habe / hat / bin / sind..._) a la ==**pos. 2**==; (3) desplaça el subjecte a la ==**pos. 3**==. El participi no es mou mai. Revisa ortografia, punt final, majúscula inicial.",
+      "byResponse": [
+        {
+          "match": { "1": "Gestern ich habe ein Buch gelesen." },
+          "message": "==Error de V2==: després de _Gestern_ cal l'auxiliar, no el subjecte. _Gestern ==**habe ich**== ein Buch gelesen._"
+        },
+        {
+          "match": { "3": "In Berlin Anna hat gearbeitet." },
+          "message": "==Error de V2==: el subjecte _Anna_ no pot ocupar la pos. 2. L'auxiliar _hat_ va a la 2, _Anna_ a la 3: _In Berlin ==**hat Anna**== gearbeitet._"
+        },
+        {
+          "match": { "5": "Am Samstag die Kinder haben Fußball gespielt." },
+          "message": "==Error de V2==: l'auxiliar _haben_ va just després d'_Am Samstag_, i el subjecte _die Kinder_ després: _Am Samstag ==**haben die Kinder**== Fußball gespielt._"
+        }
+      ]
+    }
+  }
+}

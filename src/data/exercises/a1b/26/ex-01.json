@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-26-ex-01",
+  "topicId": "A1b-26",
+  "title": "Reconeix l'auxiliar del Perfekt",
+  "prompt": "Per a cada frase, identifica quin és l'**auxiliar del Perfekt**. Si la frase no és en Perfekt (té només **una** forma verbal, com _war_ o _hatte_), tria _cap dels dos_. Recorda: el Perfekt té **dues peces** (auxiliar conjugat + Partizip II al final).",
+  "difficulty": 1,
+  "tags": ["perfekt", "auxiliar", "contrast-prateritum", "reconeixement"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich habe Pizza gegessen._ → auxiliar: {{1}}\n2. _Wir sind nach Berlin gefahren._ → auxiliar: {{2}}\n3. _Ich war gestern krank._ → auxiliar: {{3}}\n4. _Sie hat viel gearbeitet._ → auxiliar: {{4}}\n5. _Er spielt Klavier._ → auxiliar: {{5}}\n6. _Du bist um acht gekommen._ → auxiliar: {{6}}\n7. _Ihr habt das Buch gelesen._ → auxiliar: {{7}}\n8. _Ich hatte Hunger._ → auxiliar: {{8}}",
+    "blanks": [
+      { "id": "1", "label": "1. Pizza gegessen" },
+      { "id": "2", "label": "2. nach Berlin gefahren" },
+      { "id": "3", "label": "3. gestern krank" },
+      { "id": "4", "label": "4. viel gearbeitet" },
+      { "id": "5", "label": "5. spielt Klavier" },
+      { "id": "6", "label": "6. um acht gekommen" },
+      { "id": "7", "label": "7. das Buch gelesen" },
+      { "id": "8", "label": "8. Hunger" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["haben", "sein", "cap dels dos"] },
+      { "blankId": "2", "options": ["haben", "sein", "cap dels dos"] },
+      { "blankId": "3", "options": ["haben", "sein", "cap dels dos"] },
+      { "blankId": "4", "options": ["haben", "sein", "cap dels dos"] },
+      { "blankId": "5", "options": ["haben", "sein", "cap dels dos"] },
+      { "blankId": "6", "options": ["haben", "sein", "cap dels dos"] },
+      { "blankId": "7", "options": ["haben", "sein", "cap dels dos"] },
+      { "blankId": "8", "options": ["haben", "sein", "cap dels dos"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "haben",
+      "2": "sein",
+      "3": "cap dels dos",
+      "4": "haben",
+      "5": "cap dels dos",
+      "6": "sein",
+      "7": "haben",
+      "8": "cap dels dos"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has reconegut que el Perfekt té ==**dues peces**==: _habe gegessen_, _sind gefahren_, _hat gearbeitet_, _bist gekommen_, _habt gelesen_. Les frases amb ==**una sola forma**== (_war, spielt, hatte_) **no** són Perfekt: _war_ i _hatte_ són **Präteritum** (A1b-25), i _spielt_ és **present**.",
+      "references": ["A1b-26", "A1b-25", "A1b-24"]
+    },
+    "incorrect": {
+      "default": "Regla: si hi ha **dues** formes verbals (una conjugada a V2 + un participi al final), és Perfekt → tria _haben_ o _sein_. Si hi ha **una sola** forma, no és Perfekt (pot ser present, Präteritum…) → _cap dels dos_.",
+      "byResponse": [
+        {
+          "match": { "3": "sein" },
+          "message": "_war_ és ==**Präteritum**== de _sein_ (una sola forma, no dues). Per ser Perfekt caldria _bin gewesen_. Resposta: _cap dels dos_."
+        },
+        {
+          "match": { "3": "haben" },
+          "message": "A _Ich war gestern krank_ no hi ha cap _haben_. _war_ és Präteritum de _sein_ (A1b-25), una forma única → _cap dels dos_."
+        },
+        {
+          "match": { "5": "haben" },
+          "message": "_spielt_ és **present** (una sola forma). El Perfekt seria _hat gespielt_. Com que no hi ha dues peces, _cap dels dos_."
+        },
+        {
+          "match": { "5": "sein" },
+          "message": "_spielen_ és un verb normal (faria _haben_, no _sein_), però aquí està en **present**, no en Perfekt. Resposta: _cap dels dos_."
+        },
+        {
+          "match": { "8": "haben" },
+          "message": "_hatte_ és ==**Präteritum**== de _haben_, no un auxiliar de Perfekt. Només hi ha una forma verbal → _cap dels dos_. El Perfekt de _haben_ seria _habe gehabt_."
+        },
+        {
+          "match": { "2": "haben" },
+          "message": "_fahren_ és un verb de moviment → auxiliar ==**_sein_**==: _sind gefahren_."
+        },
+        {
+          "match": { "6": "haben" },
+          "message": "_kommen_ és moviment → auxiliar ==**_sein_**==: _bist gekommen_."
+        }
+      ]
+    }
+  }
+}

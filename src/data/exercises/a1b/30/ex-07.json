@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-30-ex-07",
+  "topicId": "A1b-30",
+  "title": "Tradueix del català al Perfekt",
+  "prompt": "Tradueix cada frase a l'alemany en **Perfekt**, aplicant l'ordre correcte (auxiliar a V2, participi al final). ==**S'accepten les dues ordenacions**==: començar pel subjecte o pel complement temporal. Escriu la frase sencera amb puntuació.",
+  "difficulty": 3,
+  "tags": ["perfekt", "traduccio", "typeIn", "produccio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. \"Ahir vaig menjar pizza.\" → {{1}}\n\n2. \"Avui m'he llevat a les set.\" → {{2}}\n\n3. \"La setmana passada vam anar al cine.\" → {{3}}\n\n4. \"Anna ha comprat un llibre.\" → {{4}}\n\n5. \"A Berlín hem vist molt.\" → {{5}}\n\n6. \"Ahir no vaig treballar.\" → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "1. menjar pizza (ahir)" },
+      { "id": "2", "label": "2. llevar-se a les 7 (avui)" },
+      { "id": "3", "label": "3. anar al cine (la setmana passada)" },
+      { "id": "4", "label": "4. Anna, comprar un llibre" },
+      { "id": "5", "label": "5. veure molt (a Berlín)" },
+      { "id": "6", "label": "6. no treballar (ahir)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Gestern … / Ich …" },
+      { "blankId": "2", "placeholder": "Heute … / Ich …" },
+      { "blankId": "3", "placeholder": "Letzte Woche … / Wir …" },
+      { "blankId": "4", "placeholder": "Anna …" },
+      { "blankId": "5", "placeholder": "In Berlin … / Wir …" },
+      { "blankId": "6", "placeholder": "Gestern … / Ich …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": [
+        "Gestern habe ich Pizza gegessen.",
+        "Ich habe gestern Pizza gegessen.",
+        "Gestern habe ich Pizza gegessen",
+        "Ich habe gestern Pizza gegessen"
+      ],
+      "2": [
+        "Heute bin ich um sieben Uhr aufgestanden.",
+        "Ich bin heute um sieben Uhr aufgestanden.",
+        "Heute bin ich um sieben aufgestanden.",
+        "Ich bin heute um sieben aufgestanden.",
+        "Heute bin ich um 7 Uhr aufgestanden.",
+        "Ich bin heute um 7 Uhr aufgestanden."
+      ],
+      "3": [
+        "Letzte Woche sind wir ins Kino gegangen.",
+        "Wir sind letzte Woche ins Kino gegangen.",
+        "Letzte Woche sind wir ins Kino gegangen",
+        "Wir sind letzte Woche ins Kino gegangen"
+      ],
+      "4": [
+        "Anna hat ein Buch gekauft.",
+        "Anna hat ein Buch gekauft"
+      ],
+      "5": [
+        "In Berlin haben wir viel gesehen.",
+        "Wir haben in Berlin viel gesehen.",
+        "In Berlin haben wir viel gesehen",
+        "Wir haben in Berlin viel gesehen"
+      ],
+      "6": [
+        "Gestern habe ich nicht gearbeitet.",
+        "Ich habe gestern nicht gearbeitet.",
+        "Gestern habe ich nicht gearbeitet",
+        "Ich habe gestern nicht gearbeitet"
+      ]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. ==**S'accepten les dues ordenacions**== (subjecte a la 1 o complement a la 1) sempre que l'auxiliar estigui a la **pos. 2** i el participi al **final**. El més comú en context narratiu és començar pel complement temporal (_gestern, heute, letzte Woche_) per ancorar **quan** passa l'acció. Amb aquesta lliçó tens ja tot el que cal per explicar el teu dia en passat.",
+      "references": ["A1b-30", "A1b-26"]
+    },
+    "incorrect": {
+      "default": "Comprova: (1) auxiliar correcte (_haben_ vs. _sein_: moviment i canvi d'estat → _sein_; la resta → _haben_); (2) ==**auxiliar a la pos. 2**==, participi al ==**final**==; (3) majúscules, punt final, ortografia. Si comences per un complement temporal, cal **inversió**.",
+      "byResponse": [
+        {
+          "match": { "3": "Letzte Woche wir sind ins Kino gegangen." },
+          "message": "==Error de V2==: cal inversió. _Letzte Woche ==**sind wir**== ins Kino gegangen._"
+        },
+        {
+          "match": { "3": "Wir haben letzte Woche ins Kino gegangen." },
+          "message": "_gehen_ és verb de moviment → auxiliar ==**_sein_**==, no _haben_: _Wir **sind** letzte Woche ins Kino gegangen._"
+        },
+        {
+          "match": { "2": "Heute habe ich um sieben Uhr aufgestanden." },
+          "message": "_aufstehen_ és verb de canvi d'estat → auxiliar ==**_sein_**==: _Heute **bin** ich um sieben Uhr aufgestanden._"
+        },
+        {
+          "match": { "5": "In Berlin wir haben viel gesehen." },
+          "message": "==Error de V2==: després d'_In Berlin_ cal inversió. _In Berlin ==**haben wir**== viel gesehen._"
+        }
+      ]
+    }
+  }
+}

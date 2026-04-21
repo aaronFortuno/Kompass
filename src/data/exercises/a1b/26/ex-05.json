@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-26-ex-05",
+  "topicId": "A1b-26",
+  "title": "Auxiliar + Partizip II: completa la frase",
+  "prompt": "Cada frase té ==**dos buits**==: l'auxiliar (_haben_ o _sein_, conjugat) i el participi. Escriu les dues formes a partir de l'infinitiu entre parèntesis. Consulta el mini-vocabulari de participis si cal.",
+  "difficulty": 2,
+  "tags": ["perfekt", "auxiliar", "participi", "typeIn", "dos-buits"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. (_essen_) _Ich {{1a}} gestern eine Pizza {{1b}}._\n2. (_gehen_) _Wir {{2a}} am Sonntag ins Kino {{2b}}._\n3. (_arbeiten_) _Du {{3a}} zu viel {{3b}}._\n4. (_lesen_) _Er {{4a}} ein Buch {{4b}}._\n5. (_aufstehen_) _Ihr {{5a}} früh {{5b}}._\n6. (_trinken_) _Sie (ella) {{6a}} einen Kaffee {{6b}}._\n7. (_spielen_) _Die Kinder {{7a}} im Garten {{7b}}._\n8. (_fahren_) _Ich {{8a}} nach München {{8b}}._",
+    "blanks": [
+      { "id": "1a", "label": "1a. auxiliar (essen, ich)" },
+      { "id": "1b", "label": "1b. participi (essen)" },
+      { "id": "2a", "label": "2a. auxiliar (gehen, wir)" },
+      { "id": "2b", "label": "2b. participi (gehen)" },
+      { "id": "3a", "label": "3a. auxiliar (arbeiten, du)" },
+      { "id": "3b", "label": "3b. participi (arbeiten)" },
+      { "id": "4a", "label": "4a. auxiliar (lesen, er)" },
+      { "id": "4b", "label": "4b. participi (lesen)" },
+      { "id": "5a", "label": "5a. auxiliar (aufstehen, ihr)" },
+      { "id": "5b", "label": "5b. participi (aufstehen)" },
+      { "id": "6a", "label": "6a. auxiliar (trinken, sie sg.)" },
+      { "id": "6b", "label": "6b. participi (trinken)" },
+      { "id": "7a", "label": "7a. auxiliar (spielen, pl.)" },
+      { "id": "7b", "label": "7b. participi (spielen)" },
+      { "id": "8a", "label": "8a. auxiliar (fahren, ich)" },
+      { "id": "8b", "label": "8b. participi (fahren)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1a", "placeholder": "aux." },
+      { "blankId": "1b", "placeholder": "Partizip II" },
+      { "blankId": "2a", "placeholder": "aux." },
+      { "blankId": "2b", "placeholder": "Partizip II" },
+      { "blankId": "3a", "placeholder": "aux." },
+      { "blankId": "3b", "placeholder": "Partizip II" },
+      { "blankId": "4a", "placeholder": "aux." },
+      { "blankId": "4b", "placeholder": "Partizip II" },
+      { "blankId": "5a", "placeholder": "aux." },
+      { "blankId": "5b", "placeholder": "Partizip II" },
+      { "blankId": "6a", "placeholder": "aux." },
+      { "blankId": "6b", "placeholder": "Partizip II" },
+      { "blankId": "7a", "placeholder": "aux." },
+      { "blankId": "7b", "placeholder": "Partizip II" },
+      { "blankId": "8a", "placeholder": "aux." },
+      { "blankId": "8b", "placeholder": "Partizip II" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1a": ["habe"],
+      "1b": ["gegessen"],
+      "2a": ["sind"],
+      "2b": ["gegangen"],
+      "3a": ["hast"],
+      "3b": ["gearbeitet"],
+      "4a": ["hat"],
+      "4b": ["gelesen"],
+      "5a": ["seid"],
+      "5b": ["aufgestanden"],
+      "6a": ["hat"],
+      "6b": ["getrunken"],
+      "7a": ["haben"],
+      "7b": ["gespielt"],
+      "8a": ["bin"],
+      "8b": ["gefahren"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has integrat els tres passos: (1) triar auxiliar (_essen, arbeiten, lesen, trinken, spielen_ → _haben_; _gehen, aufstehen, fahren_ → _sein_), (2) conjugar-lo segons la persona, (3) posar el participi correcte al final. Aquesta és la mecànica completa del Perfekt.",
+      "references": ["A1b-26"]
+    },
+    "incorrect": {
+      "default": "Tres passos: (1) tria l'auxiliar segons el verb (moviment/canvi d'estat → _sein_; la resta → _haben_). (2) Conjuga l'auxiliar segons la persona. (3) El participi és **fix** (gramàtica A1b-27); memoritza'ls del glossari.",
+      "byResponse": [
+        {
+          "match": { "1b": "geessen" },
+          "message": "Error d'ortografia: _essen_ fa ==**_gegessen_**== (amb doble _g_ a l'inici: _ge-gessen_)."
+        },
+        {
+          "match": { "2a": "haben" },
+          "message": "_gehen_ és moviment → ==**_sein_**==. _wir_ + _sein_ = _**sind**_."
+        },
+        {
+          "match": { "2b": "gegehen" },
+          "message": "_gehen_ és irregular: el participi és ==**_gegangen_**== (canvi vocàlic _e → a_), no _gegehen_."
+        },
+        {
+          "match": { "5a": "habt" },
+          "message": "_aufstehen_ és canvi d'estat → auxiliar ==**_sein_**==. _ihr_ + _sein_ = _**seid**_."
+        },
+        {
+          "match": { "5b": "aufgestehen" },
+          "message": "_aufstehen_ té prefix separable: el _ge-_ va **entre** el prefix i l'arrel → ==**_aufgestanden_**== (amb canvi _e → a_)."
+        },
+        {
+          "match": { "8a": "habe" },
+          "message": "_fahren_ és moviment → ==**_sein_**==. _ich_ + _sein_ = _**bin**_."
+        },
+        {
+          "match": { "8b": "gefahrt" },
+          "message": "_fahren_ és irregular: participi ==**_gefahren_**== (_-en_, no _-t_)."
+        },
+        {
+          "match": { "4b": "gelest" },
+          "message": "_lesen_ és irregular: participi ==**_gelesen_**== (_-en_, no _-t_)."
+        },
+        {
+          "match": { "6b": "getrinkt" },
+          "message": "_trinken_ és irregular: participi ==**_getrunken_**== (canvi _i → u_, _-en_)."
+        },
+        {
+          "match": { "3b": "gearbeit" },
+          "message": "_arbeiten_ és regular amb terminació _-et_ (per _-t_ de l'arrel): ==**_gearbeitet_**==."
+        }
+      ]
+    }
+  }
+}

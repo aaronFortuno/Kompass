@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-27-ex-04",
+  "topicId": "A1b-27",
+  "title": "Classifica els verbs per tipus",
+  "prompt": "Per a cada verb, indica a **quin grup** pertany segons com forma el Partizip II. És la clau per aplicar la fórmula correcta.",
+  "difficulty": 2,
+  "tags": ["classificacio", "partizip-ii", "tipus-verbs"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _lernen_ → {{1}}\n2. _besuchen_ → {{2}}\n3. _telefonieren_ → {{3}}\n4. _einkaufen_ → {{4}}\n5. _gehen_ → {{5}}\n6. _denken_ → {{6}}\n7. _verstehen_ → {{7}}\n8. _aufstehen_ → {{8}}",
+    "blanks": [
+      { "id": "1", "label": "1. _lernen_" },
+      { "id": "2", "label": "2. _besuchen_" },
+      { "id": "3", "label": "3. _telefonieren_" },
+      { "id": "4", "label": "4. _einkaufen_" },
+      { "id": "5", "label": "5. _gehen_" },
+      { "id": "6", "label": "6. _denken_" },
+      { "id": "7", "label": "7. _verstehen_" },
+      { "id": "8", "label": "8. _aufstehen_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Regular", "Separable regular", "Inseparable", "-ieren", "Irregular", "Separable irregular", "Inseparable irregular", "Mixt"] },
+      { "blankId": "2", "options": ["Regular", "Separable regular", "Inseparable", "-ieren", "Irregular", "Separable irregular", "Inseparable irregular", "Mixt"] },
+      { "blankId": "3", "options": ["Regular", "Separable regular", "Inseparable", "-ieren", "Irregular", "Separable irregular", "Inseparable irregular", "Mixt"] },
+      { "blankId": "4", "options": ["Regular", "Separable regular", "Inseparable", "-ieren", "Irregular", "Separable irregular", "Inseparable irregular", "Mixt"] },
+      { "blankId": "5", "options": ["Regular", "Separable regular", "Inseparable", "-ieren", "Irregular", "Separable irregular", "Inseparable irregular", "Mixt"] },
+      { "blankId": "6", "options": ["Regular", "Separable regular", "Inseparable", "-ieren", "Irregular", "Separable irregular", "Inseparable irregular", "Mixt"] },
+      { "blankId": "7", "options": ["Regular", "Separable regular", "Inseparable", "-ieren", "Irregular", "Separable irregular", "Inseparable irregular", "Mixt"] },
+      { "blankId": "8", "options": ["Regular", "Separable regular", "Inseparable", "-ieren", "Irregular", "Separable irregular", "Inseparable irregular", "Mixt"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Regular",
+      "2": "Inseparable",
+      "3": "-ieren",
+      "4": "Separable regular",
+      "5": "Irregular",
+      "6": "Mixt",
+      "7": "Inseparable irregular",
+      "8": "Separable irregular"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has identificat bé els **vuit tipus**: _lernen_ → Regular (_gelernt_); _besuchen_ → Inseparable (_besucht_); _telefonieren_ → _-ieren_ (_telefoniert_); _einkaufen_ → Separable regular (_eingekauft_); _gehen_ → Irregular (_gegangen_); _denken_ → Mixt (_gedacht_); _verstehen_ → Inseparable irregular (_verstanden_); _aufstehen_ → Separable irregular (_aufgestanden_).",
+      "references": ["A1b-27"]
+    },
+    "incorrect": {
+      "default": "Per classificar un verb: (1) comença per prefix inseparable (_be-, ver-, er-, ent-, zer-, ge-, emp-, miss-_)? → Inseparable. (2) Acaba en _-ieren_? → _-ieren_. (3) Porta prefix separable (_ab-, an-, auf-, aus-, ein-, mit-, nach-, vor-, zu-, weg-, zurück-_)? → Separable. (4) És _denken/bringen/wissen/kennen/nennen_? → Mixt. (5) Si canvia arrel i acaba en _-en_ al participi → Irregular.",
+      "byResponse": [
+        {
+          "match": { "2": "Regular" },
+          "message": "_besuchen_ comença per _**be-**_, que és **inseparable**. Encara que formi el participi amb _-t_ (_besucht_), es classifica com a **Inseparable** perquè ==no porta _ge-_==."
+        },
+        {
+          "match": { "3": "Regular" },
+          "message": "_telefonieren_ té sufix _**-ieren**_, que és un cas especial: ==regular però sense _ge-_==. Pertany al grup ==**_-ieren_**==."
+        },
+        {
+          "match": { "6": "Regular" },
+          "message": "_denken_ és un dels **5 verbs mixtos** (_denken, bringen, wissen, kennen, nennen_): ==canvia arrel **i** acaba en _-t_==. No és un regular pur."
+        },
+        {
+          "match": { "6": "Irregular" },
+          "message": "Els mixtos canvien arrel com els irregulars, però ==acaben en _-t_, no en _-en_==. _denken → gedacht_ (_-t_, no _-en_)."
+        },
+        {
+          "match": { "7": "Inseparable" },
+          "message": "_verstehen_ comença per _ver-_ (inseparable), però _stehen_ és irregular (_gestanden_). Per tant: ==**Inseparable irregular**== → _verstanden_."
+        },
+        {
+          "match": { "8": "Separable regular" },
+          "message": "_stehen_ és irregular (_gestanden_), no regular. _auf_ + _stehen_ → ==**Separable irregular**== → _aufgestanden_ (no _\\*aufgestellt_)."
+        }
+      ]
+    }
+  }
+}

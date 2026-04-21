@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-28-ex-04",
+  "topicId": "A1b-28",
+  "title": "Escriu el Partizip II",
+  "prompt": "Escriu el **Partizip II** del verb entre parèntesis. Sense l'auxiliar — només la forma del participi. Respecta les vocals canviades i els prefixos separables.",
+  "difficulty": 3,
+  "tags": ["typeIn", "partizip", "irregulars", "mischverben", "separable"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich habe Kaffee {{1}}._ (_trinken_)\n2. _Er ist früh {{2}}._ (_aufstehen_)\n3. _Wir haben acht Stunden {{3}}._ (_schlafen_)\n4. _Sie ist nach Spanien {{4}}._ (_fliegen_)\n5. _Ich habe an dich {{5}}._ (_denken_)\n6. _Du hast die Antwort {{6}}._ (_wissen_)\n7. _Er ist Lehrer {{7}}._ (_werden_)\n8. _Ich bin müde {{8}}._ (_sein_)",
+    "blanks": [
+      { "id": "1", "label": "1. _trinken_" },
+      { "id": "2", "label": "2. _aufstehen_" },
+      { "id": "3", "label": "3. _schlafen_" },
+      { "id": "4", "label": "4. _fliegen_" },
+      { "id": "5", "label": "5. _denken_" },
+      { "id": "6", "label": "6. _wissen_" },
+      { "id": "7", "label": "7. _werden_" },
+      { "id": "8", "label": "8. _sein_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "trinken" },
+      { "blankId": "2", "placeholder": "aufstehen" },
+      { "blankId": "3", "placeholder": "schlafen" },
+      { "blankId": "4", "placeholder": "fliegen" },
+      { "blankId": "5", "placeholder": "denken" },
+      { "blankId": "6", "placeholder": "wissen" },
+      { "blankId": "7", "placeholder": "werden" },
+      { "blankId": "8", "placeholder": "sein" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["getrunken"],
+      "2": ["aufgestanden"],
+      "3": ["geschlafen"],
+      "4": ["geflogen"],
+      "5": ["gedacht"],
+      "6": ["gewusst"],
+      "7": ["geworden"],
+      "8": ["gewesen"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Tens ben fixats els patrons: _i–a–**u**_ → _getrunken_; _a–u–**a**_ → _geschlafen_; _ie–o–**o**_ → _geflogen_; separable → _**auf**gestanden_; Mischverben _denken → **gedacht**_, _wissen → **gewusst**_ (amb _-t_). Contrast clau: ==_gewusst_== (mixt, _-t_) vs. ==_gewesen_== (fort, _-en_).",
+      "references": ["A1b-28"]
+    },
+    "incorrect": {
+      "default": "Vigila: (1) _denken_ i _wissen_ són **Mischverben**: porten _-t_ regular però arrel canviada (_gedacht, gewusst_). (2) _sein_ és irregular total: ==_gewesen_==, amb _-en_ fort. (3) _aufstehen_ insereix el _ge-_ al mig: _**auf**gestanden_.",
+      "byResponse": [
+        {
+          "match": { "2": "geaufstanden" },
+          "message": "Amb verbs separables el _ge-_ s'insereix ==**entre el prefix i l'arrel**==: ==**_aufgestanden_**==, no _geaufstanden_."
+        },
+        {
+          "match": { "5": "gedenkt" },
+          "message": "_denken_ és Mischverb: arrel canvia _den-→dach-_ + terminació regular _-t_. ==**_gedacht_**==, no _gedenkt_."
+        },
+        {
+          "match": { "6": "gewisst" },
+          "message": "L'arrel canvia vocal _i → u_ + _-t_ regular (Mischverb): ==**_gewusst_**==, no _gewisst_."
+        },
+        {
+          "match": { "6": "gewissen" },
+          "message": "_wissen_ no fa _-en_ fort, és **Mischverb**: terminació _-t_. ==**_gewusst_**==."
+        },
+        {
+          "match": { "8": "gesein" },
+          "message": "_sein_ no deriva de l'infinitiu. Forma memoritzada: ==**_gewesen_**==, amb _-en_ fort."
+        },
+        {
+          "match": { "8": "gewest" },
+          "message": "_sein_ és **fort**, no mixt: acaba en _-en_. ==**_gewesen_**==, no _gewest_."
+        },
+        {
+          "match": { "7": "gewerdet" },
+          "message": "_werden_ és fort, vocal _e → o_: ==**_geworden_**==, no _gewerdet_ (que regularitzaria)."
+        },
+        {
+          "match": { "4": "gefliegt" },
+          "message": "_fliegen_ fa patró _ie–o–o_ → ==**_geflogen_**== (no _gefliegt_)."
+        },
+        {
+          "match": { "1": "getrinkt" },
+          "message": "_trinken_ és fort (_i–a–u_): ==**_getrunken_**==, no _getrinkt_."
+        }
+      ]
+    }
+  }
+}

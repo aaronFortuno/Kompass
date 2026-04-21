@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-30-ex-01",
+  "topicId": "A1b-30",
+  "title": "Identifica les dues peces de la Satzklammer",
+  "prompt": "Per a cada frase en Perfekt, identifica quin mot és el ==**Verb 1**== (auxiliar a la pos. 2) i quin és el ==**Verb 2**== (participi al final).",
+  "difficulty": 1,
+  "tags": ["perfekt", "satzklammer", "identificacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich habe gestern einen Film gesehen._\nV1 = {{1a}} · V2 = {{1b}}\n\n2. _Wir sind um acht Uhr aufgestanden._\nV1 = {{2a}} · V2 = {{2b}}\n\n3. _Anna hat mit ihrer Mutter telefoniert._\nV1 = {{3a}} · V2 = {{3b}}\n\n4. _Gestern bin ich ins Kino gegangen._\nV1 = {{4a}} · V2 = {{4b}}\n\n5. _Um vier haben wir Kaffee getrunken._\nV1 = {{5a}} · V2 = {{5b}}\n\n6. _Heute ist er nicht zur Arbeit gefahren._\nV1 = {{6a}} · V2 = {{6b}}",
+    "blanks": [
+      { "id": "1a", "label": "Frase 1 · auxiliar (V1)" },
+      { "id": "1b", "label": "Frase 1 · participi (V2)" },
+      { "id": "2a", "label": "Frase 2 · auxiliar (V1)" },
+      { "id": "2b", "label": "Frase 2 · participi (V2)" },
+      { "id": "3a", "label": "Frase 3 · auxiliar (V1)" },
+      { "id": "3b", "label": "Frase 3 · participi (V2)" },
+      { "id": "4a", "label": "Frase 4 · auxiliar (V1)" },
+      { "id": "4b", "label": "Frase 4 · participi (V2)" },
+      { "id": "5a", "label": "Frase 5 · auxiliar (V1)" },
+      { "id": "5b", "label": "Frase 5 · participi (V2)" },
+      { "id": "6a", "label": "Frase 6 · auxiliar (V1)" },
+      { "id": "6b", "label": "Frase 6 · participi (V2)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1a", "options": ["ich", "habe", "gestern", "gesehen"] },
+      { "blankId": "1b", "options": ["ich", "habe", "gestern", "gesehen"] },
+      { "blankId": "2a", "options": ["wir", "sind", "aufgestanden", "acht"] },
+      { "blankId": "2b", "options": ["wir", "sind", "aufgestanden", "acht"] },
+      { "blankId": "3a", "options": ["Anna", "hat", "telefoniert", "Mutter"] },
+      { "blankId": "3b", "options": ["Anna", "hat", "telefoniert", "Mutter"] },
+      { "blankId": "4a", "options": ["gestern", "bin", "gegangen", "Kino"] },
+      { "blankId": "4b", "options": ["gestern", "bin", "gegangen", "Kino"] },
+      { "blankId": "5a", "options": ["vier", "haben", "getrunken", "wir"] },
+      { "blankId": "5b", "options": ["vier", "haben", "getrunken", "wir"] },
+      { "blankId": "6a", "options": ["heute", "ist", "gefahren", "nicht"] },
+      { "blankId": "6b", "options": ["heute", "ist", "gefahren", "nicht"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1a": "habe",
+      "1b": "gesehen",
+      "2a": "sind",
+      "2b": "aufgestanden",
+      "3a": "hat",
+      "3b": "telefoniert",
+      "4a": "bin",
+      "4b": "gegangen",
+      "5a": "haben",
+      "5b": "getrunken",
+      "6a": "ist",
+      "6b": "gefahren"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. El ==**Verb 1**== és l'**auxiliar**, sempre a la **posició 2** i conjugat amb el subjecte (_habe / hast / hat / haben / habt / haben_ o _bin / bist / ist / sind / seid / sind_). El ==**Verb 2**== és el **participi**, sempre al **final** i **invariable**. Fixa't que a les frases 4-6 (amb inversió) l'auxiliar continua a V2 i el subjecte està a V3, però el patró auxiliar+participi es manté intacte.",
+      "references": ["A1b-30", "A1b-26"]
+    },
+    "incorrect": {
+      "default": "Busca dues peces: (1) ==una forma curta i conjugada==, sempre prop del principi (_habe, hat, bin, sind…_) — aquest és l'**auxiliar** (V1); (2) una forma llarga amb _ge-_ o acabada en _-t/-en_, sempre al **final** (_gesehen, aufgestanden, telefoniert…_) — aquest és el **participi** (V2).",
+      "byResponse": [
+        {
+          "match": { "4a": "gestern" },
+          "message": "_gestern_ és un complement temporal, no un verb. A _Gestern bin ich ins Kino gegangen_, el V1 és ==**_bin_**== (a la posició 2, just després de _gestern_)."
+        },
+        {
+          "match": { "6a": "heute" },
+          "message": "_heute_ ocupa la posició 1, però no és verb. El V1 és l'auxiliar conjugat: ==**_ist_**== (a la posició 2)."
+        },
+        {
+          "match": { "2b": "acht" },
+          "message": "_acht_ és un número. El participi és el mot amb _ge-_ + _-en_ al final de la frase: ==**_aufgestanden_**==."
+        }
+      ]
+    }
+  }
+}

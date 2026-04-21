@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-30-ex-04",
+  "topicId": "A1b-30",
+  "title": "Completa la Satzklammer",
+  "prompt": "Completa els ==**dos buits**== de cada frase: el primer és l'**auxiliar** (_haben_ o _sein_, conjugat amb el subjecte), el segon és el **participi**. Entre parèntesis tens el verb en infinitiu.",
+  "difficulty": 2,
+  "tags": ["perfekt", "satzklammer", "completar", "auxiliar", "participi"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich {{1a}} gestern Deutsch {{1b}}._ (_lernen_)\n\n2. _Wir {{2a}} um zehn Uhr {{2b}}._ (_aufstehen_)\n\n3. _Anna {{3a}} einen Kuchen {{3b}}._ (_backen_)\n\n4. _Gestern {{4a}} ich ins Kino {{4b}}._ (_gehen_)\n\n5. _Am Wochenende {{5a}} wir viel {{5b}}._ (_arbeiten_)\n\n6. _Heute {{6a}} er nicht zur Schule {{6b}}._ (_fahren_)\n\n7. _Letzte Woche {{7a}} ihr Pizza {{7b}}._ (_essen_)\n\n8. _Um vier {{8a}} sie mit ihrer Mutter {{8b}}._ (_telefonieren_)",
+    "blanks": [
+      { "id": "1a", "label": "1. auxiliar (ich, _lernen_)" },
+      { "id": "1b", "label": "1. participi (_lernen_)" },
+      { "id": "2a", "label": "2. auxiliar (wir, _aufstehen_)" },
+      { "id": "2b", "label": "2. participi (_aufstehen_)" },
+      { "id": "3a", "label": "3. auxiliar (Anna, _backen_)" },
+      { "id": "3b", "label": "3. participi (_backen_)" },
+      { "id": "4a", "label": "4. auxiliar (ich, _gehen_)" },
+      { "id": "4b", "label": "4. participi (_gehen_)" },
+      { "id": "5a", "label": "5. auxiliar (wir, _arbeiten_)" },
+      { "id": "5b", "label": "5. participi (_arbeiten_)" },
+      { "id": "6a", "label": "6. auxiliar (er, _fahren_)" },
+      { "id": "6b", "label": "6. participi (_fahren_)" },
+      { "id": "7a", "label": "7. auxiliar (ihr, _essen_)" },
+      { "id": "7b", "label": "7. participi (_essen_)" },
+      { "id": "8a", "label": "8. auxiliar (sie sg., _telefonieren_)" },
+      { "id": "8b", "label": "8. participi (_telefonieren_)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1a", "placeholder": "auxiliar" },
+      { "blankId": "1b", "placeholder": "participi" },
+      { "blankId": "2a", "placeholder": "auxiliar" },
+      { "blankId": "2b", "placeholder": "participi" },
+      { "blankId": "3a", "placeholder": "auxiliar" },
+      { "blankId": "3b", "placeholder": "participi" },
+      { "blankId": "4a", "placeholder": "auxiliar" },
+      { "blankId": "4b", "placeholder": "participi" },
+      { "blankId": "5a", "placeholder": "auxiliar" },
+      { "blankId": "5b", "placeholder": "participi" },
+      { "blankId": "6a", "placeholder": "auxiliar" },
+      { "blankId": "6b", "placeholder": "participi" },
+      { "blankId": "7a", "placeholder": "auxiliar" },
+      { "blankId": "7b", "placeholder": "participi" },
+      { "blankId": "8a", "placeholder": "auxiliar" },
+      { "blankId": "8b", "placeholder": "participi" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1a": ["habe"],
+      "1b": ["gelernt"],
+      "2a": ["sind"],
+      "2b": ["aufgestanden"],
+      "3a": ["hat"],
+      "3b": ["gebacken"],
+      "4a": ["bin"],
+      "4b": ["gegangen"],
+      "5a": ["haben"],
+      "5b": ["gearbeitet"],
+      "6a": ["ist"],
+      "6b": ["gefahren"],
+      "7a": ["habt"],
+      "7b": ["gegessen"],
+      "8a": ["hat"],
+      "8b": ["telefoniert"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has conjugat l'auxiliar amb el subjecte correcte (inclús quan hi ha ==**inversió**==: a les frases 4, 6, 7, 8 el subjecte és a la 3, però l'auxiliar es conjuga amb aquest subjecte, no amb l'element de la pos. 1). El participi, com sempre, és **invariable**.",
+      "references": ["A1b-30", "A1b-26"]
+    },
+    "incorrect": {
+      "default": "L'auxiliar es conjuga amb el **subjecte** de la frase. El participi és **invariable**. Si el subjecte és a la pos. 3 (inversió), ==conjuga igualment l'auxiliar amb aquest subjecte==, no amb l'element de la pos. 1.",
+      "byResponse": [
+        {
+          "match": { "2a": "haben" },
+          "message": "_aufstehen_ és verb de moviment/canvi d'estat → auxiliar ==**_sein_**==. Per _wir_: ==**_sind_**==."
+        },
+        {
+          "match": { "4a": "habe" },
+          "message": "_gehen_ és verb de moviment → auxiliar ==**_sein_**==. Per _ich_: ==**_bin_**==."
+        },
+        {
+          "match": { "6a": "hat" },
+          "message": "_fahren_ és verb de moviment → auxiliar ==**_sein_**==. Per _er_: ==**_ist_**==."
+        },
+        {
+          "match": { "7a": "haben" },
+          "message": "El subjecte és _ihr_ (no _wir_): terminació _-t_ → ==**_habt_**==."
+        },
+        {
+          "match": { "7a": "hat" },
+          "message": "El subjecte és _ihr_ (plural): ==**_habt_**==, no _hat_."
+        },
+        {
+          "match": { "3b": "gebackt" },
+          "message": "_backen_ és verb fort: el participi és ==**_gebacken_**== (no _gebackt_)."
+        },
+        {
+          "match": { "7b": "geessen" },
+          "message": "El participi d'_essen_ és ==**_gegessen_**== (dues _g_, és una de les formes irregulars més comunes)."
+        },
+        {
+          "match": { "8b": "getelefoniert" },
+          "message": "Els verbs acabats en _-ieren_ ==**no porten _ge-_**== al participi: ==**_telefoniert_**==."
+        }
+      ]
+    }
+  }
+}

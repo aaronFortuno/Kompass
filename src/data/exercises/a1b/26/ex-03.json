@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-26-ex-03",
+  "topicId": "A1b-26",
+  "title": "Ordena les frases (Satzklammer)",
+  "prompt": "Per a cada conjunt de paraules desordenades, tria la frase ==**correctament ordenada**==. Recorda: l'auxiliar va a ==**V2**== (o V1 si és pregunta tancada) i el participi va al ==**final absolut**==.",
+  "difficulty": 2,
+  "tags": ["perfekt", "order", "satzklammer", "sintaxi"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _gegessen · Pizza · ich · habe_ → {{1}}\n\n2. _bin · ich · nach Berlin · gefahren_ → {{2}}\n\n3. _wir · am Abend · einen Film · haben · gesehen_ → {{3}}\n\n4. _ist · sie · spät · gekommen · nach Hause_ → {{4}}\n\n5. _gelernt · Deutsch · ich · habe · viel_ → {{5}}\n\n6. _habt · ihr · das Buch · gelesen_ → {{6}}\n\n7. _hat · er · gekauft · einen Kaffee_ → {{7}}",
+    "blanks": [
+      { "id": "1", "label": "1. afirmativa bàsica" },
+      { "id": "2", "label": "2. afirmativa amb destinació" },
+      { "id": "3", "label": "3. afirmativa amb complements" },
+      { "id": "4", "label": "4. afirmativa amb dos complements" },
+      { "id": "5", "label": "5. afirmativa amb objecte" },
+      { "id": "6", "label": "6. pregunta tancada (Ja/Nein)" },
+      { "id": "7", "label": "7. afirmativa amb objecte" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "1",
+        "options": [
+          "Ich habe Pizza gegessen.",
+          "Ich habe gegessen Pizza.",
+          "Ich Pizza habe gegessen."
+        ]
+      },
+      {
+        "blankId": "2",
+        "options": [
+          "Ich bin nach Berlin gefahren.",
+          "Ich bin gefahren nach Berlin.",
+          "Nach Berlin ich bin gefahren."
+        ]
+      },
+      {
+        "blankId": "3",
+        "options": [
+          "Wir haben am Abend einen Film gesehen.",
+          "Wir haben gesehen am Abend einen Film.",
+          "Wir am Abend haben einen Film gesehen."
+        ]
+      },
+      {
+        "blankId": "4",
+        "options": [
+          "Sie ist spät nach Hause gekommen.",
+          "Sie ist gekommen spät nach Hause.",
+          "Sie spät ist nach Hause gekommen."
+        ]
+      },
+      {
+        "blankId": "5",
+        "options": [
+          "Ich habe viel Deutsch gelernt.",
+          "Ich habe gelernt viel Deutsch.",
+          "Ich viel Deutsch habe gelernt."
+        ]
+      },
+      {
+        "blankId": "6",
+        "options": [
+          "Habt ihr das Buch gelesen?",
+          "Ihr habt das Buch gelesen?",
+          "Habt ihr gelesen das Buch?"
+        ]
+      },
+      {
+        "blankId": "7",
+        "options": [
+          "Er hat einen Kaffee gekauft.",
+          "Er hat gekauft einen Kaffee.",
+          "Er einen Kaffee hat gekauft."
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Ich habe Pizza gegessen.",
+      "2": "Ich bin nach Berlin gefahren.",
+      "3": "Wir haben am Abend einen Film gesehen.",
+      "4": "Sie ist spät nach Hause gekommen.",
+      "5": "Ich habe viel Deutsch gelernt.",
+      "6": "Habt ihr das Buch gelesen?",
+      "7": "Er hat einen Kaffee gekauft."
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. En totes les frases has respectat la ==**Satzklammer**==: l'auxiliar (_habe, bin, haben, ist, habe, habt, hat_) en V2 (o V1 en la pregunta tancada _Habt ihr…?_), i el participi (_gegessen, gefahren, gesehen, gekommen, gelernt, gelesen, gekauft_) al ==**final absolut**==. Els complements al mig.",
+      "references": ["A1b-26"]
+    },
+    "incorrect": {
+      "default": "Regla d'or: ==l'auxiliar en V2==, ==el participi al final==, tota la resta al mig. Si escrius _ich habe gegessen Pizza_, el participi no està al final — és l'error típic de catalanoparlants.",
+      "byResponse": [
+        {
+          "match": { "1": "Ich habe gegessen Pizza." },
+          "message": "==Error típic==: el participi va al **final**, no just darrere l'auxiliar. En català diem _he menjat pizza_ (juntes), però en alemany: _Ich habe Pizza **gegessen**_."
+        },
+        {
+          "match": { "2": "Ich bin gefahren nach Berlin." },
+          "message": "_gefahren_ (participi) ha d'anar al ==**final absolut**==, no just darrere l'auxiliar: _Ich bin nach Berlin **gefahren**_."
+        },
+        {
+          "match": { "3": "Wir am Abend haben einen Film gesehen." },
+          "message": "==Error de V2==: _haben_ ha de ser el **segon** element. Correcte: _Wir **haben** am Abend einen Film gesehen_ (o _Am Abend **haben** wir einen Film gesehen_)."
+        },
+        {
+          "match": { "4": "Sie ist gekommen spät nach Hause." },
+          "message": "El participi ==**_gekommen_**== va al final absolut: _Sie ist spät nach Hause **gekommen**_."
+        },
+        {
+          "match": { "5": "Ich habe gelernt viel Deutsch." },
+          "message": "_gelernt_ al final absolut: _Ich habe viel Deutsch **gelernt**_."
+        },
+        {
+          "match": { "6": "Ihr habt das Buch gelesen?" },
+          "message": "En una pregunta tancada (Ja/Nein-Frage), l'auxiliar va a ==**posició 1**==: _**Habt** ihr das Buch gelesen?_ (amb entonació de pregunta)."
+        },
+        {
+          "match": { "6": "Habt ihr gelesen das Buch?" },
+          "message": "Encara que sigui pregunta, el participi es manté al final: _Habt ihr das Buch **gelesen**?_"
+        },
+        {
+          "match": { "7": "Er hat gekauft einen Kaffee." },
+          "message": "_gekauft_ al final: _Er hat einen Kaffee **gekauft**_."
+        }
+      ]
+    }
+  }
+}

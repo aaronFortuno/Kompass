@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-28-ex-05",
+  "topicId": "A1b-28",
+  "title": "Patró vocàlic ↔ verb exemplar",
+  "prompt": "Empareja cada **patró de canvi vocàlic** (_Ablautreihe_) amb un **verb exemplar** que el representa. Aquest és el truc per no memoritzar verbs aïlladament: reconèixer la família.",
+  "difficulty": 2,
+  "tags": ["match", "patrons", "ablautreihen", "metacognicio"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "pat1", "group": "pat", "content": { "type": "text", "content": "==**e–a–e**==" } },
+      { "id": "pat2", "group": "pat", "content": { "type": "text", "content": "==**ei–ie–ie**==" } },
+      { "id": "pat3", "group": "pat", "content": { "type": "text", "content": "==**i–a–u**==" } },
+      { "id": "pat4", "group": "pat", "content": { "type": "text", "content": "==**a–u–a**==" } },
+      { "id": "pat5", "group": "pat", "content": { "type": "text", "content": "==**ie–o–o**==" } },
+      { "id": "pat6", "group": "pat", "content": { "type": "text", "content": "**Irregular total**" } },
+      { "id": "verb1", "group": "verb", "content": { "type": "text", "content": "_lesen_ (_las, gelesen_)" } },
+      { "id": "verb2", "group": "verb", "content": { "type": "text", "content": "_schreiben_ (_schrieb, geschrieben_)" } },
+      { "id": "verb3", "group": "verb", "content": { "type": "text", "content": "_trinken_ (_trank, getrunken_)" } },
+      { "id": "verb4", "group": "verb", "content": { "type": "text", "content": "_fahren_ (_fuhr, gefahren_)" } },
+      { "id": "verb5", "group": "verb", "content": { "type": "text", "content": "_fliegen_ (_flog, geflogen_)" } },
+      { "id": "verb6", "group": "verb", "content": { "type": "text", "content": "_gehen_ (_ging, gegangen_)" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Patró vocàlic",
+    "groupBLabel": "Verb exemplar"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["pat1", "verb1"],
+      ["pat2", "verb2"],
+      ["pat3", "verb3"],
+      ["pat4", "verb4"],
+      ["pat5", "verb5"],
+      ["pat6", "verb6"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. ==Memoritzar **patrons** és més eficient que memoritzar **verbs un per un**==. _lesen_ representa _e–a–e_ (com _essen, geben, sehen…_); _schreiben_ → _ei–ie–ie_ (com _bleiben, steigen…_); _trinken_ → _i–a–u_ (com _singen, finden…_); _fahren_ → _a–u–a_ (com _schlafen, tragen…_); _fliegen_ → _ie–o–o_ (com _ziehen, biegen…_). _gehen_ és l'excepció total.",
+      "references": ["A1b-28"]
+    },
+    "incorrect": {
+      "default": "Revisa les taules 28.1–28.6. Cada patró té una vocal d'infinitiu característica: _e_ → patró _e–a–e_; diftong _ei_ → _ei–ie–ie_; _i_ + nasal → _i–a–u_; _a_ → _a–u–a_; _ie_ → _ie–o–o_. _gehen_ no encaixa enlloc: memoritza-ho a part."
+    }
+  }
+}

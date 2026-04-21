@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-27-ex-05",
+  "topicId": "A1b-27",
+  "title": "Aparella infinitiu ↔ Partizip II",
+  "prompt": "Empareja cada **infinitiu** amb el seu **Partizip II** correcte. Barreja verbs de totes les famílies.",
+  "difficulty": 2,
+  "tags": ["match", "partizip-ii", "memoria"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "inf1", "group": "inf", "content": { "type": "text", "content": "_machen_" } },
+      { "id": "inf2", "group": "inf", "content": { "type": "text", "content": "_studieren_" } },
+      { "id": "inf3", "group": "inf", "content": { "type": "text", "content": "_besuchen_" } },
+      { "id": "inf4", "group": "inf", "content": { "type": "text", "content": "_einkaufen_" } },
+      { "id": "inf5", "group": "inf", "content": { "type": "text", "content": "_denken_" } },
+      { "id": "inf6", "group": "inf", "content": { "type": "text", "content": "_gehen_" } },
+      { "id": "inf7", "group": "inf", "content": { "type": "text", "content": "_verstehen_" } },
+      { "id": "inf8", "group": "inf", "content": { "type": "text", "content": "_aufstehen_" } },
+      { "id": "par1", "group": "par", "content": { "type": "text", "content": "==**_gemacht_**==" } },
+      { "id": "par2", "group": "par", "content": { "type": "text", "content": "==**_studiert_**==" } },
+      { "id": "par3", "group": "par", "content": { "type": "text", "content": "==**_besucht_**==" } },
+      { "id": "par4", "group": "par", "content": { "type": "text", "content": "==**_eingekauft_**==" } },
+      { "id": "par5", "group": "par", "content": { "type": "text", "content": "==**_gedacht_**==" } },
+      { "id": "par6", "group": "par", "content": { "type": "text", "content": "==**_gegangen_**==" } },
+      { "id": "par7", "group": "par", "content": { "type": "text", "content": "==**_verstanden_**==" } },
+      { "id": "par8", "group": "par", "content": { "type": "text", "content": "==**_aufgestanden_**==" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Infinitiu",
+    "groupBLabel": "Partizip II"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["inf1", "par1"],
+      ["inf2", "par2"],
+      ["inf3", "par3"],
+      ["inf4", "par4"],
+      ["inf5", "par5"],
+      ["inf6", "par6"],
+      ["inf7", "par7"],
+      ["inf8", "par8"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Tens associades les vuit parelles prototípiques, una per cada família: regular (_machen → **gemacht**_), _-ieren_ (_studieren → **studiert**_), inseparable (_besuchen → **besucht**_), separable regular (_einkaufen → **eingekauft**_), mixt (_denken → **gedacht**_), irregular (_gehen → **gegangen**_), inseparable irregular (_verstehen → **verstanden**_), separable irregular (_aufstehen → **aufgestanden**_).",
+      "references": ["A1b-27"]
+    },
+    "incorrect": {
+      "default": "Paranys típics: _besuchen_ ==**no**== porta _ge-_ (_besucht_, no _\\*gebesucht_); _studieren_ ==**no**== porta _ge-_ (_studiert_, no _\\*gestudiert_); _denken_ és mixt, canvia arrel **i** acaba en _-t_ (_gedacht_); _gehen_ canvia radicalment l'arrel (_**gang**-_): _gegangen_; _aufstehen_ conserva el _ge-_ entre prefix i arrel perquè el prefix és separable."
+    }
+  }
+}

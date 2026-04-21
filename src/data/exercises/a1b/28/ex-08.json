@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-28-ex-08",
+  "topicId": "A1b-28",
+  "title": "Aquest Partizip va amb _sein_?",
+  "prompt": "Per a cada Partizip II, decideix si al Perfekt s'utilitza amb **_sein_** (richtig) o **no** (falsch, és a dir, va amb _haben_). Hi ha 12 verbs repartits entre els dos auxiliars.",
+  "difficulty": 2,
+  "tags": ["trueFalse", "classificacio", "auxiliar", "sein-haben"],
+  "stimulus": {
+    "type": "text",
+    "content": "Afirmació de base: _\"Aquest Partizip II forma el Perfekt amb **_sein_**\"._ Marca **richtig** si és cert, **falsch** si va amb _haben_."
+  },
+  "interaction": {
+    "type": "trueFalse",
+    "statements": [
+      { "id": "s1", "text": "_**getrunken**_ → va amb _sein_" },
+      { "id": "s2", "text": "_**gegangen**_ → va amb _sein_" },
+      { "id": "s3", "text": "_**geschrieben**_ → va amb _sein_" },
+      { "id": "s4", "text": "_**gefahren**_ → va amb _sein_" },
+      { "id": "s5", "text": "_**geholfen**_ → va amb _sein_" },
+      { "id": "s6", "text": "_**geblieben**_ → va amb _sein_" },
+      { "id": "s7", "text": "_**gelesen**_ → va amb _sein_" },
+      { "id": "s8", "text": "_**aufgestanden**_ → va amb _sein_" },
+      { "id": "s9", "text": "_**gegessen**_ → va amb _sein_" },
+      { "id": "s10", "text": "_**geworden**_ → va amb _sein_" },
+      { "id": "s11", "text": "_**gewusst**_ → va amb _sein_" },
+      { "id": "s12", "text": "_**gewesen**_ → va amb _sein_" }
+    ]
+  },
+  "validation": {
+    "type": "truthMap",
+    "answers": {
+      "s1": false,
+      "s2": true,
+      "s3": false,
+      "s4": true,
+      "s5": false,
+      "s6": true,
+      "s7": false,
+      "s8": true,
+      "s9": false,
+      "s10": true,
+      "s11": false,
+      "s12": true
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. La classificació final: \n\n- **Amb _sein_** (6 verbs): ==_gegangen, gefahren, geblieben, aufgestanden, geworden, gewesen_==.\n- **Amb _haben_** (6 verbs): ==_getrunken, geschrieben, geholfen, gelesen, gegessen, gewusst_==.\n\nPatró: moviment (_gehen, fahren, aufstehen_), canvi d'estat (_werden_), o excepcions fixes (_sein, bleiben_) → _sein_. La resta → _haben_.",
+      "references": ["A1b-28", "A1b-29"]
+    },
+    "incorrect": {
+      "default": "Tres categories de _sein_: (1) **moviment/desplaçament** → _gegangen, gefahren, aufgestanden_. (2) **canvi d'estat** → _geworden_. (3) **memoritzades** → _gewesen, geblieben_. La resta (_getrunken, geschrieben, geholfen, gelesen, gegessen, gewusst_) són activitats sense desplaçament → _haben_.",
+      "byResponse": [
+        {
+          "match": { "s6": false },
+          "message": "_bleiben_ és l'excepció clàssica: ==sense moviment però amb _sein_==. Cal memoritzar-la."
+        },
+        {
+          "match": { "s12": false },
+          "message": "_sein_ fa el seu propi Perfekt ==**amb _sein_**==: _ich bin gewesen_ (poc usat, a l'oral _ich war_)."
+        },
+        {
+          "match": { "s10": false },
+          "message": "_werden_ és canvi d'estat per essència → ==**_sein_**==: _er ist Arzt geworden_."
+        },
+        {
+          "match": { "s11": true },
+          "message": "_wissen_ no és moviment ni canvi d'estat → ==_haben_==: _ich habe gewusst_."
+        },
+        {
+          "match": { "s1": true },
+          "message": "_trinken_ és activitat sense desplaçament → ==_haben_==: _ich habe getrunken_."
+        },
+        {
+          "match": { "s5": true },
+          "message": "_helfen_ té objecte (persona), no és moviment → ==_haben_==: _ich habe geholfen_."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-26-ex-02",
+  "topicId": "A1b-26",
+  "title": "Conjuga l'auxiliar del Perfekt",
+  "prompt": "Escriu ==**només l'auxiliar conjugat**== (_haben_ o _sein_ en present) segons la persona. El participi ja ve donat a la frase.",
+  "difficulty": 1,
+  "tags": ["perfekt", "auxiliar", "conjugacio", "typeIn"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich {{1}} gestern viel gelernt._\n2. _Du {{2}} ins Kino gegangen._\n3. _Wir {{3}} eine Pizza gegessen._\n4. _Sie (ella) {{4}} nach Hause gekommen._\n5. _Ihr {{5}} die Hausaufgaben gemacht._\n6. _Er {{6}} einen Kaffee getrunken._\n7. _Die Kinder {{7}} im Park gespielt._\n8. _Ich {{8}} um sieben Uhr aufgestanden._\n9. _Sie (ells/elles) {{9}} das Buch gelesen._\n10. _Wir {{10}} mit dem Zug gefahren._",
+    "blanks": [
+      { "id": "1", "label": "1. _lernen_, _ich_" },
+      { "id": "2", "label": "2. _gehen_, _du_" },
+      { "id": "3", "label": "3. _essen_, _wir_" },
+      { "id": "4", "label": "4. _kommen_, _sie_ (ella)" },
+      { "id": "5", "label": "5. _machen_, _ihr_" },
+      { "id": "6", "label": "6. _trinken_, _er_" },
+      { "id": "7", "label": "7. _spielen_, _die Kinder_" },
+      { "id": "8", "label": "8. _aufstehen_, _ich_" },
+      { "id": "9", "label": "9. _lesen_, _sie_ (pl.)" },
+      { "id": "10", "label": "10. _fahren_, _wir_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "lernen, ich" },
+      { "blankId": "2", "placeholder": "gehen, du" },
+      { "blankId": "3", "placeholder": "essen, wir" },
+      { "blankId": "4", "placeholder": "kommen, sie (ella)" },
+      { "blankId": "5", "placeholder": "machen, ihr" },
+      { "blankId": "6", "placeholder": "trinken, er" },
+      { "blankId": "7", "placeholder": "spielen, die Kinder" },
+      { "blankId": "8", "placeholder": "aufstehen, ich" },
+      { "blankId": "9", "placeholder": "lesen, sie (pl.)" },
+      { "blankId": "10", "placeholder": "fahren, wir" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["habe"],
+      "2": ["bist"],
+      "3": ["haben"],
+      "4": ["ist"],
+      "5": ["habt"],
+      "6": ["hat"],
+      "7": ["haben"],
+      "8": ["bin"],
+      "9": ["haben"],
+      "10": ["sind"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has triat l'auxiliar ==segons el verb== (_gehen, kommen, aufstehen, fahren_ → _**sein**_; _lernen, essen, machen, trinken, spielen, lesen_ → _**haben**_) i l'has ==conjugat segons la persona==. L'auxiliar és simplement _haben_ o _sein_ en present.",
+      "references": ["A1b-26"]
+    },
+    "incorrect": {
+      "default": "Dos passos: (1) tria _haben_ o _sein_ segons el verb. Moviment/canvi d'estat (_gehen, kommen, fahren, aufstehen_) → _sein_. La resta → _haben_. (2) Conjuga l'auxiliar segons la persona (_ich bin/habe, du bist/hast, er ist/hat_…).",
+      "byResponse": [
+        {
+          "match": { "2": "hast" },
+          "message": "_gehen_ és moviment → auxiliar ==**_sein_**==. _du_ + _sein_ = _**bist**_, no _hast_."
+        },
+        {
+          "match": { "4": "hat" },
+          "message": "_kommen_ és moviment → auxiliar ==**_sein_**==. _sie_ (ella) + _sein_ = _**ist**_."
+        },
+        {
+          "match": { "8": "habe" },
+          "message": "_aufstehen_ és canvi d'estat → auxiliar ==**_sein_**==. _ich_ + _sein_ = _**bin**_."
+        },
+        {
+          "match": { "10": "haben" },
+          "message": "_fahren_ és moviment → auxiliar ==**_sein_**==. _wir_ + _sein_ = _**sind**_, no _haben_."
+        },
+        {
+          "match": { "3": "sind" },
+          "message": "_essen_ és verb normal → auxiliar ==**_haben_**==. _wir_ + _haben_ = _**haben**_, no _sind_."
+        },
+        {
+          "match": { "6": "ist" },
+          "message": "_trinken_ és verb normal → auxiliar ==**_haben_**==. _er_ + _haben_ = _**hat**_."
+        },
+        {
+          "match": { "1": "bin" },
+          "message": "_lernen_ és verb normal → auxiliar ==**_haben_**==. _ich_ + _haben_ = _**habe**_."
+        },
+        {
+          "match": { "5": "seid" },
+          "message": "_machen_ va amb _haben_: _ihr_ + _haben_ = _**habt**_."
+        }
+      ]
+    }
+  }
+}

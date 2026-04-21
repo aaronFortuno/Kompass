@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-27-ex-02",
+  "topicId": "A1b-27",
+  "title": "Quick-check: verbs en _-ieren_",
+  "prompt": "Tria el **Partizip II** correcte. Recorda: ==els verbs acabats en _-ieren_ **mai** porten _ge-_== i sempre formen el participi amb _-t_.",
+  "difficulty": 1,
+  "tags": ["partizip-ii", "ieren", "singleChoice"],
+  "stimulus": {
+    "type": "text",
+    "content": "Quin és el Partizip II de _**studieren**_?"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "a", "label": "==**_studiert_**==" },
+      { "id": "b", "label": "_gestudiert_" },
+      { "id": "c", "label": "_gestudieren_" },
+      { "id": "d", "label": "_studieren_" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "a" },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. ==_studieren_== és un verb en _-ieren_: ==**sense _ge-_**==, participi en _-t_ → ==**_studiert_**==. La mateixa regla val per a _telefoniert_, _fotografiert_, _passiert_, _probiert_…",
+      "references": ["A1b-27", "A1b-10"]
+    },
+    "incorrect": {
+      "default": "Els verbs en _-ieren_ són una excepció important: ==**no porten mai _ge-_**==. Només afegeixen _-t_ al final. Forma correcta: ==**_studiert_**==.",
+      "byResponse": [
+        {
+          "match": { "response": "b" },
+          "message": "==Error típic==: els verbs en _-ieren_ ==**mai**== porten _ge-_. _gestudiert_ és incorrecte; la forma és ==**_studiert_**=="
+        },
+        {
+          "match": { "response": "c" },
+          "message": "Doble error: ni porta _ge-_, ni acaba en _-en_. Els verbs en _-ieren_ són regulars i acaben en ==**_-t_**==. La forma és ==**_studiert_**==."
+        },
+        {
+          "match": { "response": "d" },
+          "message": "_studieren_ és l'**infinitiu**, no el Partizip II. Cal treure _-en_ i afegir _-t_: ==**_studiert_**=="
+        }
+      ]
+    }
+  }
+}

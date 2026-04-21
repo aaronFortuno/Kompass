@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-28-ex-03",
+  "topicId": "A1b-28",
+  "title": "Completa el Perfekt: auxiliar + Partizip",
+  "prompt": "Completa cada frase triant **l'auxiliar** (_haben_/_sein_) i el **Partizip II** correcte. Dos buits per frase: l'auxiliar va abans i el Partizip al final (Satzklammer, A1b-26).",
+  "difficulty": 3,
+  "tags": ["dropdownFill", "perfekt", "auxiliar", "partizip", "sintesi"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich {{1a}} gestern Pizza {{1b}}._\n2. _Wir {{2a}} nach Berlin {{2b}}._\n3. _Er {{3a}} einen Brief {{3b}}._\n4. _Sie {{4a}} um 7 Uhr {{4b}}._\n5. _Ich {{5a}} zu Hause {{5b}}._\n6. _Du {{6a}} das Buch {{6b}}?_\n7. _Wir {{7a}} ins Kino {{7b}}._\n8. _Sie {{8a}} mir {{8b}}._",
+    "blanks": [
+      { "id": "1a", "label": "1. aux." },
+      { "id": "1b", "label": "1. essen" },
+      { "id": "2a", "label": "2. aux." },
+      { "id": "2b", "label": "2. fahren" },
+      { "id": "3a", "label": "3. aux." },
+      { "id": "3b", "label": "3. schreiben" },
+      { "id": "4a", "label": "4. aux." },
+      { "id": "4b", "label": "4. aufstehen" },
+      { "id": "5a", "label": "5. aux." },
+      { "id": "5b", "label": "5. bleiben" },
+      { "id": "6a", "label": "6. aux." },
+      { "id": "6b", "label": "6. lesen" },
+      { "id": "7a", "label": "7. aux." },
+      { "id": "7b", "label": "7. gehen" },
+      { "id": "8a", "label": "8. aux." },
+      { "id": "8b", "label": "8. helfen" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1a", "options": ["habe", "bin"] },
+      { "blankId": "1b", "options": ["gegessen", "geesst", "geessen"] },
+      { "blankId": "2a", "options": ["haben", "sind"] },
+      { "blankId": "2b", "options": ["gefahren", "gefahrt", "gefuhren"] },
+      { "blankId": "3a", "options": ["hat", "ist"] },
+      { "blankId": "3b", "options": ["geschrieben", "geschreibt", "geschrieben sein"] },
+      { "blankId": "4a", "options": ["hat", "ist"] },
+      { "blankId": "4b", "options": ["aufgestanden", "geaufstanden", "aufgestehen"] },
+      { "blankId": "5a", "options": ["habe", "bin"] },
+      { "blankId": "5b", "options": ["geblieben", "gebleibt", "bleibt"] },
+      { "blankId": "6a", "options": ["hast", "bist"] },
+      { "blankId": "6b", "options": ["gelesen", "gelest", "gelasen"] },
+      { "blankId": "7a", "options": ["haben", "sind"] },
+      { "blankId": "7b", "options": ["gegangen", "gegeht", "geging"] },
+      { "blankId": "8a", "options": ["hat", "ist"] },
+      { "blankId": "8b", "options": ["geholfen", "gehelft", "gehelfen"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1a": "habe",
+      "1b": "gegessen",
+      "2a": "sind",
+      "2b": "gefahren",
+      "3a": "hat",
+      "3b": "geschrieben",
+      "4a": "ist",
+      "4b": "aufgestanden",
+      "5a": "bin",
+      "5b": "geblieben",
+      "6a": "hast",
+      "6b": "gelesen",
+      "7a": "sind",
+      "7b": "gegangen",
+      "8a": "hat",
+      "8b": "geholfen"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Impecable. Has triat bé l'auxiliar (regla simplificada: moviment / canvi d'estat / _sein-bleiben-werden_ → ==**_sein_**==; la resta → ==**_haben_**==) i els 8 Partizipien forts. Fixa't que _fahren, aufstehen, bleiben, gehen_ van amb _sein_; _essen, schreiben, lesen, helfen_ van amb _haben_.",
+      "references": ["A1b-28", "A1b-26", "A1b-29"]
+    },
+    "incorrect": {
+      "default": "Dos tipus d'error: (a) **auxiliar**: recorda que _fahren, gehen, aufstehen, bleiben_ porten _sein_; _essen, schreiben, lesen, helfen_ porten _haben_. (b) **Partizip**: són tots forts, acaben en _-en_ amb vocal canviada, i el separable _aufstehen_ fa ==_aufgestanden_== (no _geaufstanden_).",
+      "byResponse": [
+        {
+          "match": { "2a": "haben" },
+          "message": "_fahren_ és verb de moviment → auxiliar ==**_sein_**==. _Wir_ + _sein_ = ==**_sind_**==."
+        },
+        {
+          "match": { "4a": "hat" },
+          "message": "_aufstehen_ és canvi d'estat (de dormir a llevat) → ==**_sein_**==. _Sie_ (ella) + _sein_ = ==**_ist_**==."
+        },
+        {
+          "match": { "5a": "habe" },
+          "message": "_bleiben_ és excepció clàssica: sense moviment, però ==**sempre amb _sein_**==. _Ich_ + _sein_ = ==**_bin_**==."
+        },
+        {
+          "match": { "7a": "haben" },
+          "message": "_gehen_ és moviment → ==**_sein_**==. _Wir_ + _sein_ = ==**_sind_**==."
+        },
+        {
+          "match": { "1b": "geesst" },
+          "message": "_essen_ és fort: ==**_gegessen_**== (amb dues _g_: prefix _ge-_ + arrel _-gess-_). No existeix _geesst_."
+        },
+        {
+          "match": { "8b": "gehelft" },
+          "message": "_helfen_ és fort, vocal _e → o_ al Partizip: ==**_geholfen_**==, no _gehelft_."
+        },
+        {
+          "match": { "4b": "geaufstanden" },
+          "message": "Prefix separable _auf-_ engoleix el _ge-_: ==**_aufgestanden_**==, no _geaufstanden_."
+        }
+      ]
+    }
+  }
+}

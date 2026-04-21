@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-26-ex-07",
+  "topicId": "A1b-26",
+  "title": "Identifica les dues peces de la Satzklammer",
+  "prompt": "A cada frase hi ha una ==**Satzklammer**==: una peça verbal a V2 (o V1) i una al final. Identifica les dues. Escriu l'**auxiliar** per a {{Na}} i el **participi** per a {{Nb}}, tal com apareixen a la frase.",
+  "difficulty": 2,
+  "tags": ["perfekt", "satzklammer", "identificacio", "typeIn"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich habe gestern mit Maria im Restaurant Pizza gegessen._\n   → auxiliar: {{1a}} · participi: {{1b}}\n\n2. _Wir sind am Samstag mit dem Zug nach München gefahren._\n   → auxiliar: {{2a}} · participi: {{2b}}\n\n3. _Sie hat das Buch sehr schnell gelesen._\n   → auxiliar: {{3a}} · participi: {{3b}}\n\n4. _Am Abend bin ich mit meinen Freunden ins Kino gegangen._\n   → auxiliar: {{4a}} · participi: {{4b}}\n\n5. _Er hat heute Morgen einen Kaffee und ein Croissant gekauft._\n   → auxiliar: {{5a}} · participi: {{5b}}\n\n6. _Gestern habe ich drei Stunden für den Test gelernt._\n   → auxiliar: {{6a}} · participi: {{6b}}",
+    "blanks": [
+      { "id": "1a", "label": "1a. obertura" },
+      { "id": "1b", "label": "1b. tancament" },
+      { "id": "2a", "label": "2a. obertura" },
+      { "id": "2b", "label": "2b. tancament" },
+      { "id": "3a", "label": "3a. obertura" },
+      { "id": "3b", "label": "3b. tancament" },
+      { "id": "4a", "label": "4a. obertura" },
+      { "id": "4b", "label": "4b. tancament" },
+      { "id": "5a", "label": "5a. obertura" },
+      { "id": "5b", "label": "5b. tancament" },
+      { "id": "6a", "label": "6a. obertura" },
+      { "id": "6b", "label": "6b. tancament" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1a", "placeholder": "aux." },
+      { "blankId": "1b", "placeholder": "Partizip II" },
+      { "blankId": "2a", "placeholder": "aux." },
+      { "blankId": "2b", "placeholder": "Partizip II" },
+      { "blankId": "3a", "placeholder": "aux." },
+      { "blankId": "3b", "placeholder": "Partizip II" },
+      { "blankId": "4a", "placeholder": "aux." },
+      { "blankId": "4b", "placeholder": "Partizip II" },
+      { "blankId": "5a", "placeholder": "aux." },
+      { "blankId": "5b", "placeholder": "Partizip II" },
+      { "blankId": "6a", "placeholder": "aux." },
+      { "blankId": "6b", "placeholder": "Partizip II" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1a": ["habe"],
+      "1b": ["gegessen"],
+      "2a": ["sind"],
+      "2b": ["gefahren"],
+      "3a": ["hat"],
+      "3b": ["gelesen"],
+      "4a": ["bin"],
+      "4b": ["gegangen"],
+      "5a": ["hat"],
+      "5b": ["gekauft"],
+      "6a": ["habe"],
+      "6b": ["gelernt"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Has identificat correctament la ==**Satzklammer**== de cada frase: _habe…gegessen_, _sind…gefahren_, _hat…gelesen_, _bin…gegangen_, _hat…gekauft_, _habe…gelernt_. Observa que a les frases 4 i 6 la frase comença per un complement (_Am Abend_, _Gestern_), i l'auxiliar es manté en V2 amb inversió del subjecte.",
+      "references": ["A1b-26"]
+    },
+    "incorrect": {
+      "default": "La Satzklammer és la ==**grapa**== entre **auxiliar** (V2 o V1 en pregunta) i **participi** (final absolut). Tot el que hi ha al mig és contingut. Escriu només les dues peces verbals.",
+      "byResponse": [
+        {
+          "match": { "4a": "am" },
+          "message": "_Am Abend_ és un complement temporal, no l'auxiliar. L'auxiliar és ==**_bin_**== (V2, després del complement)."
+        },
+        {
+          "match": { "6a": "gestern" },
+          "message": "_Gestern_ és un complement temporal. L'auxiliar és ==**_habe_**== (V2, amb inversió)."
+        },
+        {
+          "match": { "1b": "pizza" },
+          "message": "_Pizza_ és l'objecte directe, no el participi. El participi està al final absolut: ==**_gegessen_**==."
+        }
+      ]
+    }
+  }
+}
