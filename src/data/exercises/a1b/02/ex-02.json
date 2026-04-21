@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-2-ex-02",
+  "topicId": "A1b-2",
+  "title": "Article en datiu després de _in_",
+  "prompt": "Tria la forma correcta d'article en datiu per a un carreró (_die Gasse_, femení).",
+  "difficulty": 1,
+  "tags": ["adresses", "datiu", "femeni", "singlechoice", "quick-check"],
+  "stimulus": {
+    "type": "text",
+    "content": "Completa: _Ich wohne ___ Blumengasse._ (_die Gasse_)"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "im", "label": "_im_" },
+      { "id": "in-die", "label": "_in die_" },
+      { "id": "in-der", "label": "_in der_" },
+      { "id": "in-dem", "label": "_in dem_" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "in-der" },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. _Gasse_ és femenina → datiu femení = _der_ → _==in der== Blumengasse_.",
+      "references": ["A1b-2", "A1a-34"]
+    },
+    "incorrect": {
+      "default": "_Gasse_ és femenina i responem a _Wo?_ (datiu). Datiu femení = _der_ → _==in der== Blumengasse_.",
+      "byResponse": [
+        {
+          "match": { "response": "im" },
+          "message": "_im_ = _in dem_ (masculí/neutre datiu). _Gasse_ és femenina, no masculí.",
+          "references": ["A1b-2"]
+        },
+        {
+          "match": { "response": "in-die" },
+          "message": "_die_ seria nominatiu o acusatiu. Per respondre a _Wo?_ cal datiu → _==der==_.",
+          "references": ["A1b-2", "A1a-34"]
+        },
+        {
+          "match": { "response": "in-dem" },
+          "message": "Gramaticalment _in dem_ seria masculí/neutre, i _Gasse_ és femenina. Caldria _==in der==_.",
+          "references": ["A1b-2"]
+        }
+      ]
+    }
+  }
+}

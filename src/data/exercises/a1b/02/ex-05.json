@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-2-ex-05",
+  "topicId": "A1b-2",
+  "title": "Traduir adreces al alemany",
+  "prompt": "Escriu només la combinació _preposició + article_ que falta a cada frase (per exemple: _in der_, _im_ o _am_).",
+  "difficulty": 3,
+  "tags": ["adresses", "traduccio", "typein", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) \"El museu és al carrer Goethe.\" → _Das Museum liegt {{1}} Goethestraße._\n\nb) \"L'hotel està al camí del bosc.\" → _Das Hotel liegt {{2}} Waldweg._\n\nc) \"La farmàcia és a la plaça de l'estació.\" → _Die Apotheke ist {{3}} Bahnhofsplatz._\n\nd) \"El meu pis és al carreró de la Lluna.\" → _Meine Wohnung ist {{4}} Mondgasse._",
+    "blanks": [
+      { "id": "1", "label": "_die Goethestraße_" },
+      { "id": "2", "label": "_der Waldweg_" },
+      { "id": "3", "label": "_der Bahnhofsplatz_" },
+      { "id": "4", "label": "_die Mondgasse_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "prep + art" },
+      { "blankId": "2", "placeholder": "prep + art" },
+      { "blankId": "3", "placeholder": "prep + art" },
+      { "blankId": "4", "placeholder": "prep + art" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["in der"],
+      "2": ["im"],
+      "3": ["am"],
+      "4": ["in der"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has triat bé preposició, contracció i forma d'article en cada cas.",
+      "references": ["A1b-2"]
+    },
+    "incorrect": {
+      "default": "Repassa la regla: _Straße/Gasse/Allee_ → _in der_; _Weg_ → _im_; _Platz_ → _am_. I recorda les contraccions obligatòries amb masculins.",
+      "byResponse": [
+        {
+          "match": { "2": "in dem" },
+          "message": "_Weg_ és masculí → _in + dem_ es contreu sempre a _==im==_. No escriguis _in dem Waldweg_.",
+          "references": ["A1b-2"]
+        },
+        {
+          "match": { "2": "am" },
+          "message": "_Weg_ porta _in_, no _an_. _an_ es reserva per a _Platz_. _in + dem = ==im==_ → _im Waldweg_.",
+          "references": ["A1b-2"]
+        },
+        {
+          "match": { "3": "an dem" },
+          "message": "_an + dem_ es contreu sempre a _==am==_. → _am Bahnhofsplatz_.",
+          "references": ["A1b-2"]
+        },
+        {
+          "match": { "3": "im" },
+          "message": "Per a _Platz_ cal _an_, no _in_. _an + dem = ==am==_ → _am Bahnhofsplatz_.",
+          "references": ["A1b-2"]
+        }
+      ]
+    }
+  }
+}

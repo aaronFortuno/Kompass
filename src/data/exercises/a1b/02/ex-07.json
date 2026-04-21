@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-2-ex-07",
+  "topicId": "A1b-2",
+  "title": "Mini-diàleg: buscant l'hotel",
+  "prompt": "Llegeix el diàleg i completa amb la forma correcta. Atenció: al buit (2) cal una preposició del grup datiu-fix d'A1a-34.",
+  "difficulty": 3,
+  "tags": ["adresses", "dialeg", "datiu", "von", "dropdownfill", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_— Entschuldigung, wo ist das Hotel Astoria?_\n\n_— Das Hotel liegt {{1}} Lindenallee, nicht weit {{2}} Bahnhof. Aber das Restaurant Schwan ist {{3}} Goetheplatz und die Bäckerei {{4}} Kurze Gasse._",
+    "blanks": [
+      { "id": "1", "label": "_die Allee_" },
+      { "id": "2", "label": "_der Bahnhof_ (A1a-34)" },
+      { "id": "3", "label": "_der Platz_" },
+      { "id": "4", "label": "_die Gasse_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["im", "am", "in der", "vom"] },
+      { "blankId": "2", "options": ["im", "am", "in der", "vom"] },
+      { "blankId": "3", "options": ["im", "am", "in der", "vom"] },
+      { "blankId": "4", "options": ["im", "am", "in der", "vom"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "in der",
+      "2": "vom",
+      "3": "am",
+      "4": "in der"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has integrat la nova regla (_in/an_ per a adreces) amb les preposicions fixes de datiu d'A1a-34 (_von_ → _==vom==_).",
+      "references": ["A1b-2", "A1a-34"]
+    },
+    "incorrect": {
+      "default": "Repassa: _-allee / -gasse_ → _in der_; _-platz_ → _am_. I per a _\"no lluny de l'estació\"_ cal _von + dem_ = _==vom==_.",
+      "byResponse": [
+        {
+          "match": { "2": "am" },
+          "message": "_nicht weit **vom** Bahnhof_ = \"no lluny **de** l'estació\". _von_ pertany al grup dativ-fix (A1a-34): _von + dem = ==vom==_.",
+          "references": ["A1a-34"]
+        },
+        {
+          "match": { "2": "im" },
+          "message": "_im Bahnhof_ voldria dir \"dins de l'estació\". Aquí fa falta _\"de l'estació\"_ → _von + dem = ==vom==_.",
+          "references": ["A1a-34"]
+        },
+        {
+          "match": { "2": "in der" },
+          "message": "_Bahnhof_ és masculí i a més aquí cal \"de\" (no \"dins\"): _von + dem = ==vom==_.",
+          "references": ["A1a-34"]
+        },
+        {
+          "match": { "3": "im" },
+          "message": "Per a _Platz_, sempre _an_ → _==am==_. Tot i que al text hi ha altres vies amb _in_, _Platz_ fa l'excepció.",
+          "references": ["A1b-2"]
+        }
+      ]
+    }
+  }
+}

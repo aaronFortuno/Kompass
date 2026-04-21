@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-2-ex-01",
+  "topicId": "A1b-2",
+  "title": "_in_ vs _an_ amb plaça",
+  "prompt": "Tria la forma correcta segons el tipus de via.",
+  "difficulty": 1,
+  "tags": ["adresses", "in-vs-an", "platz", "singlechoice", "quick-check"],
+  "stimulus": {
+    "type": "text",
+    "content": "Completa: _Die Bäckerei ist ___ Marktplatz._"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "im", "label": "_im_" },
+      { "id": "am", "label": "_am_" },
+      { "id": "in-der", "label": "_in der_" },
+      { "id": "an-der", "label": "_an der_" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "am" },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. _Platz_ (plaça) demana _an_, i _der Platz_ és masculí → _an + dem = ==am==_.",
+      "references": ["A1b-2"]
+    },
+    "incorrect": {
+      "default": "_Platz_ és masculí i demana _an_ (no _in_). _an + dem = ==am==_.",
+      "byResponse": [
+        {
+          "match": { "response": "im" },
+          "message": "_im_ (_in dem_) s'usa amb _Straße, Gasse, Allee, Weg_. Per a _Platz_ cal _an_ → _==am==_.",
+          "references": ["A1b-2"]
+        },
+        {
+          "match": { "response": "in-der" },
+          "message": "_in der_ s'usa amb vies femenines allargades (_Straße, Gasse, Allee_). _Platz_ és masculí i demana _an_ → _==am==_.",
+          "references": ["A1b-2"]
+        },
+        {
+          "match": { "response": "an-der" },
+          "message": "La preposició _an_ és correcta per a plaça, però _Platz_ és masculí, no femení. La forma és _==am==_ (= _an + dem_).",
+          "references": ["A1b-2"]
+        }
+      ]
+    }
+  }
+}

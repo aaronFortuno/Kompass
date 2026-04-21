@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-2-ex-04",
+  "topicId": "A1b-2",
+  "title": "Cinc adreces: _im_, _am_ o _in der_",
+  "prompt": "Completa cada frase amb _im_, _am_ o _in der_ segons el tipus de via.",
+  "difficulty": 2,
+  "tags": ["adresses", "datiu", "dropdownfill", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) _Die Apotheke ist {{1}} Rosenstraße._\n\nb) _Wir wohnen {{2}} Brunnenweg._\n\nc) _Das Rathaus liegt {{3}} Marktplatz._\n\nd) _Der Kindergarten ist {{4}} Blumengasse._\n\ne) _Das Denkmal steht {{5}} Friedensplatz._",
+    "blanks": [
+      { "id": "1", "label": "_Straße_ (f.)" },
+      { "id": "2", "label": "_Weg_ (m.)" },
+      { "id": "3", "label": "_Platz_ (m.)" },
+      { "id": "4", "label": "_Gasse_ (f.)" },
+      { "id": "5", "label": "_Platz_ (m.)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["im", "am", "in der"] },
+      { "blankId": "2", "options": ["im", "am", "in der"] },
+      { "blankId": "3", "options": ["im", "am", "in der"] },
+      { "blankId": "4", "options": ["im", "am", "in der"] },
+      { "blankId": "5", "options": ["im", "am", "in der"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "in der",
+      "2": "im",
+      "3": "am",
+      "4": "in der",
+      "5": "am"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has interioritzat la regla: _Straße/Gasse/Allee_ → _==in der==_; _Weg_ → _==im==_; _Platz_ → _==am==_.",
+      "references": ["A1b-2"]
+    },
+    "incorrect": {
+      "default": "Recorda: mira l'acabament del compost. _-straße/-gasse/-allee_ → _in der_; _-weg_ → _im_; _-platz_ → _am_.",
+      "byResponse": [
+        {
+          "match": { "3": "im" },
+          "message": "_Platz_ és l'única via que porta _an_ en comptes d'_in_. _an + dem Platz = ==am== Platz_.",
+          "references": ["A1b-2"]
+        },
+        {
+          "match": { "5": "im" },
+          "message": "_Platz_ és l'única via que porta _an_ en comptes d'_in_. _an + dem Platz = ==am== Platz_.",
+          "references": ["A1b-2"]
+        },
+        {
+          "match": { "2": "am" },
+          "message": "_Weg_ és masculí però porta _in_ (no _an_). _in + dem = ==im==_ → _im Brunnenweg_.",
+          "references": ["A1b-2"]
+        },
+        {
+          "match": { "2": "in der" },
+          "message": "_Weg_ és masculí, no femení. _in + dem = ==im==_ → _im Brunnenweg_.",
+          "references": ["A1b-2"]
+        }
+      ]
+    }
+  }
+}

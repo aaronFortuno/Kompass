@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-2",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 2,
+  "title": "Adressen: dir on és un lloc amb _in_ i _an_",
+  "shortTitle": "Adressen",
+  "description": "Com situar un lloc en una adreça (carrer, carreró, avinguda, camí, plaça) responent a _Wo?_: _in_ per a vies allargades (_Straße, Gasse, Allee, Weg_) i _an_ per a places (_Platz_), sempre amb datiu i les contraccions obligatòries _im_ i _am_.",
+  "axes": ["preposicions", "expressions-i-funcions"],
+  "prerequisites": ["A1b-1"],
+  "estimatedMinutes": 15,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Dir adreces en alemany\n\nImagina que busques l'hotel on s'allotja un amic i et responen: _Das Hotel liegt in der Rosenstraße._ Què ha passat? Per què _in_ i per què _der_, si _Straße_ és femenina i hauria de ser _die_?\n\nAvui aprendràs a **situar un lloc en una adreça** (carrer, carreró, avinguda, camí, plaça) responent a la pregunta ==**Wo?**== (\"On?\"). És una habilitat bàsica: dir on vius, on treballes, on és un hotel, on queda la farmàcia.\n\nEn català i castellà diem simplement \"a\" (\"visc **a** la Rambla\", \"vivo **en** la calle Mayor\"). **En alemany, en canvi, has de triar entre dues preposicions (_in_ o _an_) segons el tipus de via**, i a més els articles canvien de forma (**datiu**)."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Temps estimat",
+          "body": "10-12 minuts. Al final faràs 4 exercicis globals per consolidar."
+        },
+        {
+          "type": "explanation",
+          "body": "Aquesta lliçó es recolza directament en **A1a-34** (les preposicions que sempre van amb datiu: _aus, bei, mit, nach, seit, von, zu_). Avui hi afegeixes dues més, però amb una condició: _in_ i _an_ només porten datiu **quan responen a _Wo?_** — en altres contextos podrien portar acusatiu. Aquí, com que parlem d'ubicació estàtica, sempre serà datiu."
+        }
+      ]
+    },
+    {
+      "id": "the-question",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### La pregunta clau: _Wo ist das Hotel?_\n\nFixa't en aquestes cinc respostes possibles a la mateixa pregunta:\n\n_Wo ist das Hotel?_\n\n- _Das Hotel liegt **in der Rosenstraße**._ (al carrer de les Roses)\n- _Das Hotel liegt **in der Blumengasse**._ (al carreró de les Flors)\n- _Das Hotel liegt **in der Kastanienallee**._ (a l'avinguda dels Castanyers)\n- _Das Hotel liegt **im Brunnenweg**._ (al camí de la Font)\n- _Das Hotel liegt **am Friedensplatz**._ (a la plaça de la Pau)"
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Verbs per a ubicacions",
+          "body": "El verb _liegen_ (\"estar situat, jeure\") és molt típic per donar ubicacions. També pots fer servir _sein_: _Das Hotel ist in der Rosenstraße_."
+        },
+        {
+          "type": "explanation",
+          "body": "Quatre frases comencen amb _in_ (o la seva contracció _im_) i una amb _an_ (contreta com _am_). Per què?"
+        }
+      ]
+    },
+    {
+      "id": "in-vs-an",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Regla d'or: _in_ per a vies, _an_ per a places\n\nLa distribució és senzilla i **no admet excepcions** a l'A1:"
+        },
+        {
+          "type": "table",
+          "headers": ["Tipus de via", "Preposició", "Exemple"],
+          "rows": [
+            ["_die_ **Straße** (carrer)", "**in**", "_==in der== Straße_"],
+            ["_die_ **Gasse** (carreró)", "**in**", "_==in der== Gasse_"],
+            ["_die_ **Allee** (avinguda)", "**in**", "_==in der== Allee_"],
+            ["_der_ **Weg** (camí)", "**in**", "_==im== Weg_"],
+            ["_der_ **Platz** (plaça)", "**an**", "_==am== Platz_"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**La lògica intuïtiva:**\n\n- Els carrers, carrerons, avingudes i camins són espais **allargats, tancats entre edificis o arbres**: hi ets \"**dins**\" → _in_.\n- Les places són espais **oberts**, punts de referència: hi ets \"**al costat de**, **tocant a**\" → _an_."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Contrast CA / ES",
+          "body": "En català dius \"**al** carrer Major\" i també \"**a la** plaça Major\" amb la mateixa preposició _a_. En castellà igual (_en la calle_, _en la plaza_). **L'alemany distingeix**: allargat → _in_, obert → _an_. Aquesta és la primera cosa que cal interioritzar."
+        }
+      ]
+    },
+    {
+      "id": "dativ-reminder",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Per què els articles canvien: datiu (recordatori)\n\nTotes dues preposicions, **quan responen a _Wo?_**, van seguides de ==**datiu**==. Això vol dir que els articles es declinen així (ja ho vas veure a A1a-34):"
+        },
+        {
+          "type": "table",
+          "headers": ["", "Masculí", "Femení", "Neutre", "Plural"],
+          "rows": [
+            ["**Nominatiu**", "der", "die", "das", "die"],
+            ["==**Datiu**==", "==**dem**==", "==**der**==", "==**dem**==", "==**den** + -n=="]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Aplicat a les nostres vies:\n\n- _die Straße_ (femení) → _in ==der== Straße_\n- _die Gasse_ (femení) → _in ==der== Gasse_\n- _die Allee_ (femení) → _in ==der== Allee_\n- _der Weg_ (masculí) → _in ==dem== Weg_ → contracció → _==**im**== Weg_\n- _der Platz_ (masculí) → _an ==dem== Platz_ → contracció → _==**am**== Platz_\n\n**Les contraccions obligatòries** que ja coneixes:\n\n- _in_ + _dem_ = **im**\n- _an_ + _dem_ = **am**\n\n(Amb femení no es contrau: _in der_, _an der_ es mantenen separats.)"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista ràpida de gènere",
+          "body": "_Straße_, _Gasse_ i _Allee_ són **totes femenines** → sempre _in der_. _Weg_ i _Platz_ són **masculins** → _im_ i _am_ respectivament. Memoritzar el gènere de cada tipus de via et resol el 90 % dels casos."
+        }
+      ]
+    },
+    {
+      "id": "compound-words",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Noms compostos: _Rosenstraße_, _Friedensplatz_…\n\nEls noms de carrers i places en alemany s'escriuen sovint com una **sola paraula composta**: _Rosen + Straße = Rosenstraße_. El gènere el marca **l'última part**:\n\n- _Rosen**straße**_ → _die Straße_ → femení → _in ==der== Rosenstraße_\n- _Brunnen**weg**_ → _der Weg_ → masculí → _==im== Brunnenweg_\n- _Friedens**platz**_ → _der Platz_ → masculí → _==am== Friedensplatz_\n- _Kastanien**allee**_ → _die Allee_ → femení → _in ==der== Kastanienallee_"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Regla pràctica de la terminació",
+          "body": "**Mira les últimes lletres** del nom del carrer. Acaba en _-straße_, _-gasse_ o _-allee_? Femení, _in der_. Acaba en _-weg_? Masculí, _im_. Acaba en _-platz_? Masculí, però _an_ → _am_."
+        }
+      ]
+    },
+    {
+      "id": "check-in-or-an",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-2-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "check-article-form",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-2-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys típics de catalanoparlants\n\n**1. No traduïr _in_ ↔ _en_ mecànicament** — en català/castellà dius \"a la plaça\" o \"en la plaza\" amb la mateixa preposició que per a un carrer. En alemany **no**: plaça = _an_, carrer = _in_.\n\n- Incorrecte: _Ich wohne **in dem** Friedensplatz._\n- Correcte: _Ich wohne **am** Friedensplatz._\n\n**2. No confondre el gènere segons l'aparença del nom** — el gènere el dicta l'**últim component** del compost, no les primeres síl·labes:\n\n- _Rosen**straße**_ → femení (per _Straße_), no pel fet que _Rosen_ soni com vulgui.\n- Correcte: _in der Rosenstraße_. Incorrecte: _im Rosenstraße_.\n\n**3. Oblidar la contracció obligatòria amb masculins** — amb _Weg_ i _Platz_ (masculins) cal contreure sempre:\n\n- Incorrecte: _in dem Brunnenweg_ → Correcte: _im Brunnenweg_.\n- Incorrecte: _an dem Friedensplatz_ → Correcte: _am Friedensplatz_.\n- Amb femenins (_Straße, Gasse, Allee_) **no** hi ha contracció: _in der Rosenstraße_ és la forma normal."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "_Wo?_ → datiu, sempre",
+          "body": "Aquesta lliçó tracta només el cas \"on és un lloc\" (estàtic). Si més endavant veus _ich gehe **in die** Straße_ (acusatiu), és perquè respon a _Wohin?_ (\"cap a on vaig\"). Això ve a les **Wechselpräpositionen** més endavant."
+        },
+        {
+          "type": "explanation",
+          "body": "**Dir una adreça completa** — l'ordre alemany posa primer el carrer + número, i després el codi postal + ciutat:\n\n- _Ich wohne **in der** Rosenstraße **12**, **10115** Berlin._\n- En text parlat: _Meine Adresse ist Rosenstraße 12._ (sovint sense preposició, com un simple vocatiu)."
+        }
+      ]
+    },
+    {
+      "id": "check-compound",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-2-ex-03", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-2-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-2-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-2-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-2-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Recapitulem\n\n**El que t'emportes d'aquesta lliçó:**\n\n1. **Dues preposicions per a adreces**: ==_in_== per a _Straße, Gasse, Allee, Weg_; ==_an_== per a _Platz_.\n2. **Sempre datiu** quan respons a _Wo?_ (ubicació estàtica).\n3. **Contraccions obligatòries amb masculins**:\n   - _in + dem Weg_ → _==**im**== Weg_\n   - _an + dem Platz_ → _==**am**== Platz_\n4. **Femenins no es contrauen**: _in der Straße_, _in der Gasse_, _in der Allee_.\n5. **El gènere del compost el marca l'última part**: _Rosenstraße_ → femení (per _Straße_), _Brunnenweg_ → masculí (per _Weg_)."
+        },
+        {
+          "type": "table",
+          "title": "Taula síntesi: acabament → preposició + article",
+          "headers": ["Acabament", "Gènere", "Preposició + article"],
+          "rows": [
+            ["_-straße / -gasse / -allee_", "**die** (f.)", "==**in der**=="],
+            ["_-weg_", "**der** (m.)", "==**im**=="],
+            ["_-platz_", "**der** (m.)", "==**am**=="]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Connexions amb altres lliçons:**\n\n- Es recolza en **A1a-34** (preposicions sempre amb datiu: _aus, bei, mit, nach, seit, von, zu_), que dóna el marc d'articles datius.\n- Lliga amb **A1a-14** (gènere i article nominatiu) per reconèixer el gènere de _Straße, Weg, Platz_.\n- T'obre la porta a les **Wechselpräpositionen** completes (_in_, _an_, _auf_, _über_, _unter_, _vor_, _hinter_, _neben_, _zwischen_), on aprendràs que aquestes mateixes _in_ i _an_ poden anar amb **acusatiu** quan responen a _Wohin?_ (direcció) en comptes de _Wo?_ (ubicació)."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Repte final per a casa",
+          "body": "Busca a Google Maps 5 adreces reals de Berlín o Viena i escriu on es troba cada lloc. Exemple: _Das Brandenburger Tor steht am Pariser Platz. Das Goethe-Institut ist in der Friedrichstraße…_\n\nAra ja pots dir on vius, on treballes, i on queda el bar que t'agrada. Bona feina!"
+        }
+      ]
+    }
+  ]
+}

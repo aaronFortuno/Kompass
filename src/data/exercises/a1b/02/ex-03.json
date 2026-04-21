@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-2-ex-03",
+  "topicId": "A1b-2",
+  "title": "Detecta el gènere del compost",
+  "prompt": "Tria la forma correcta segons l'acabament del nom compost.",
+  "difficulty": 1,
+  "tags": ["adresses", "composts", "allee", "singlechoice", "quick-check"],
+  "stimulus": {
+    "type": "text",
+    "content": "Tria la forma correcta: _Das Café liegt ___ Kastanienallee._"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "im", "label": "_im_" },
+      { "id": "am", "label": "_am_" },
+      { "id": "in-der", "label": "_in der_" },
+      { "id": "an-der", "label": "_an der_" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "in-der" },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. _Kastanienallee_ acaba en _-allee_ → _die Allee_ (femení) → _==in der==_.",
+      "references": ["A1b-2"]
+    },
+    "incorrect": {
+      "default": "Mira l'acabament: _-allee_ → _die Allee_ (femení) → _==in der==_.",
+      "byResponse": [
+        {
+          "match": { "response": "im" },
+          "message": "_im_ és masculí/neutre. _Allee_ és femenina → _==in der==_.",
+          "references": ["A1b-2"]
+        },
+        {
+          "match": { "response": "am" },
+          "message": "_am_ s'usa només amb _Platz_. Per a _Allee_ (carrer ample amb arbres) → _==in der==_.",
+          "references": ["A1b-2"]
+        },
+        {
+          "match": { "response": "an-der" },
+          "message": "_an_ es reserva per a _Platz_. Amb _Allee_, com amb _Straße_ i _Gasse_, cal _==in==_ → _==in der==_.",
+          "references": ["A1b-2"]
+        }
+      ]
+    }
+  }
+}

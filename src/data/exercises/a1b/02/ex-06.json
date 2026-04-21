@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-2-ex-06",
+  "topicId": "A1b-2",
+  "title": "Empareja cada via amb la seva forma",
+  "prompt": "Relaciona cada nom de carrer o plaça amb la combinació _preposició + article_ correcta.",
+  "difficulty": 2,
+  "tags": ["adresses", "matchpairs", "composts", "assessment"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "v1", "group": "Via", "content": { "type": "text", "content": "_Rosenstraße_" } },
+      { "id": "v2", "group": "Via", "content": { "type": "text", "content": "_Friedensplatz_" } },
+      { "id": "v3", "group": "Via", "content": { "type": "text", "content": "_Brunnenweg_" } },
+      { "id": "v4", "group": "Via", "content": { "type": "text", "content": "_Kastanienallee_" } },
+      { "id": "v5", "group": "Via", "content": { "type": "text", "content": "_Blumengasse_" } },
+      { "id": "f1", "group": "Forma", "content": { "type": "text", "content": "_in der Rosenstraße_" } },
+      { "id": "f2", "group": "Forma", "content": { "type": "text", "content": "_am Friedensplatz_" } },
+      { "id": "f3", "group": "Forma", "content": { "type": "text", "content": "_im Brunnenweg_" } },
+      { "id": "f4", "group": "Forma", "content": { "type": "text", "content": "_in der Kastanienallee_" } },
+      { "id": "f5", "group": "Forma", "content": { "type": "text", "content": "_in der Blumengasse_" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Via",
+    "groupBLabel": "Forma"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["v1", "f1"],
+      ["v2", "f2"],
+      ["v3", "f3"],
+      ["v4", "f4"],
+      ["v5", "f5"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. _Straße_, _Gasse_ i _Allee_ comparteixen la mateixa forma (_==in der==_) perquè són totes femenines; _Weg_ → _==im==_ i _Platz_ → _==am==_.",
+      "references": ["A1b-2"]
+    },
+    "incorrect": {
+      "default": "Recorda el truc de la terminació: _-straße / -gasse / -allee_ → _in der_; _-weg_ → _im_; _-platz_ → _am_."
+    }
+  }
+}
