@@ -42,11 +42,20 @@ export function Typed({
   const [done, setDone] = useState(!active);
   const rafRef = useRef(null);
 
+  // Estabilitzem onDone en una ref perquè les arrow functions inline
+  // dels pares (p. ex. onDone={() => setX(true)}) no re-disparen l'effect
+  // a cada render — altrament el typewriter es reinicia cada cop que
+  // l'onDone canvia referencia, escrivint el text dues vegades.
+  const onDoneRef = useRef(onDone);
+  useEffect(() => {
+    onDoneRef.current = onDone;
+  }, [onDone]);
+
   useEffect(() => {
     if (!active) {
       setN(total);
       setDone(true);
-      if (onDone) onDone();
+      if (onDoneRef.current) onDoneRef.current();
       return undefined;
     }
     setN(0);
@@ -61,14 +70,14 @@ export function Typed({
         rafRef.current = requestAnimationFrame(step);
       } else {
         setDone(true);
-        if (onDone) onDone();
+        if (onDoneRef.current) onDoneRef.current();
       }
     };
     rafRef.current = requestAnimationFrame(step);
     return () => {
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
-  }, [tokens, total, speed, startDelay, active, onDone]);
+  }, [tokens, total, speed, startDelay, active]);
 
   const visibleN = active ? n : total;
   const shown = renderTokensUpTo(tokens, visibleN);
