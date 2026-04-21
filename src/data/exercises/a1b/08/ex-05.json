@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-8-ex-05",
+  "topicId": "A1b-8",
+  "title": "Ordena la frase amb Am liebsten al principi",
+  "prompt": "Completa cada frase triant la peça correcta per a cada posició. Recorda: si _Am liebsten_ obre la frase (posició 1), el **verb conjugat** va immediatament després (posició 2) i el **subjecte** al tercer lloc.",
+  "difficulty": 2,
+  "tags": ["am-liebsten", "inversio", "verb-segona-posicio", "a1a-18"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Am liebsten {{1v}} {{1s}} {{1c}}. _(El que més m'agrada és anar amb bici.)_\n2. Am liebsten {{2v}} {{2s}} {{2c}}. _(El que més ens agrada és escoltar música clàssica.)_\n3. Am liebsten {{3v}} {{3s}} {{3c}}. _(El que més m'agrada és aprendre idiomes.)_",
+    "blanks": [
+      { "id": "1v", "label": "verb (posició 2)" },
+      { "id": "1s", "label": "subjecte (posició 3)" },
+      { "id": "1c", "label": "complement" },
+      { "id": "2v", "label": "verb (posició 2)" },
+      { "id": "2s", "label": "subjecte (posició 3)" },
+      { "id": "2c", "label": "complement" },
+      { "id": "3v", "label": "verb (posició 2)" },
+      { "id": "3s", "label": "subjecte (posició 3)" },
+      { "id": "3c", "label": "complement" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1v", "options": ["fahre", "ich", "mit dem Fahrrad"] },
+      { "blankId": "1s", "options": ["fahre", "ich", "mit dem Fahrrad"] },
+      { "blankId": "1c", "options": ["fahre", "ich", "mit dem Fahrrad"] },
+      { "blankId": "2v", "options": ["hören", "wir", "klassische Musik"] },
+      { "blankId": "2s", "options": ["hören", "wir", "klassische Musik"] },
+      { "blankId": "2c", "options": ["hören", "wir", "klassische Musik"] },
+      { "blankId": "3v", "options": ["lerne", "ich", "Sprachen"] },
+      { "blankId": "3s", "options": ["lerne", "ich", "Sprachen"] },
+      { "blankId": "3c", "options": ["lerne", "ich", "Sprachen"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1v": "fahre",
+      "1s": "ich",
+      "1c": "mit dem Fahrrad",
+      "2v": "hören",
+      "2s": "wir",
+      "2c": "klassische Musik",
+      "3v": "lerne",
+      "3s": "ich",
+      "3c": "Sprachen"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has respectat la regla del verb en segona posició (A1a-18): _Am liebsten_ ocupa la posició 1, el verb conjugat la 2, el subjecte la 3, i els complements van al final.",
+      "references": ["A1b-8"]
+    },
+    "incorrect": {
+      "default": "Regla del verb en segona posició: si _Am liebsten_ obre la frase (posició 1), el **verb conjugat** ha d'anar immediatament després (posició 2), i el **subjecte** al tercer lloc. _**Am liebsten** [1] **fahre** [2] **ich** [3] mit dem Fahrrad_. No diguis \\*_Am liebsten ich fahre_.",
+      "byResponse": [
+        {
+          "match": { "1v": "ich" },
+          "message": "El subjecte (_ich_) no pot anar en posició 2. El verb conjugat (_fahre_) sí. Esquema: _Am liebsten [1] fahre [2] ich [3] mit dem Fahrrad_."
+        },
+        {
+          "match": { "2v": "wir" },
+          "message": "El subjecte (_wir_) no pot anar en posició 2. El verb conjugat (_hören_) sí. Esquema: _Am liebsten [1] hören [2] wir [3] klassische Musik_."
+        }
+      ]
+    }
+  }
+}

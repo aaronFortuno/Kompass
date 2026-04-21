@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-8-ex-02",
+  "topicId": "A1b-8",
+  "title": "Completa la tríada: pizza, pasta, sushi",
+  "prompt": "Completa cada frase amb la forma de la tríada (_gern / lieber / am liebsten_) que correspongui al grau indicat.",
+  "difficulty": 1,
+  "tags": ["trada", "gern", "lieber", "am-liebsten", "inversio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Ich esse {{1}} Pizza. _(M'agrada la pizza, positiu.)_\n2. Aber ich esse {{2}} Pasta als Pizza. _(M'agrada més la pasta que la pizza, comparatiu.)_\n3. {{3}} esse ich Sushi. _(El que més m'agrada és el sushi, superlatiu, inici de frase.)_",
+    "blanks": [
+      { "id": "1", "label": "forma positiva" },
+      { "id": "2", "label": "forma comparativa" },
+      { "id": "3", "label": "am ..." }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "forma positiva" },
+      { "blankId": "2", "placeholder": "forma comparativa" },
+      { "blankId": "3", "placeholder": "am ..." }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["gern", "gerne"],
+      "2": ["lieber"],
+      "3": ["Am liebsten", "am liebsten"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has encadenat la tríada sencera: **gern → lieber → am liebsten**. Fixa't que a la frase 3, com que _Am liebsten_ va al principi, el verb _esse_ continua en segona posició i _ich_ passa al tercer lloc (inversió, A1a-18).",
+      "references": ["A1b-8"]
+    },
+    "incorrect": {
+      "default": "La tríada de _gern_ és **gern → lieber → am liebsten**. Positiu: _Ich esse **gern** Pizza_ (sense _als_). Comparatiu: _Ich esse **lieber** X als Y_ (sempre amb _als_). Superlatiu: _**Am liebsten** esse ich Z_ (amb _am_ davant i, a l'inici, el verb va just després i el subjecte al tercer lloc)."
+    }
+  }
+}

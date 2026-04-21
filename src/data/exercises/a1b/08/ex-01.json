@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-8-ex-01",
+  "topicId": "A1b-8",
+  "title": "Quina eina del mapa de preferències?",
+  "prompt": "Per a cada idea en català, tria l'eina alemanya que l'expressaria. Pensa si el que agrada és una **cosa** (substantiu) o una **acció** (verb).",
+  "difficulty": 1,
+  "tags": ["mapa-preferencies", "gern", "mogen", "finden"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. \"M'agrada viatjar amb tren.\" → eina {{1}}\n2. \"M'agrada el tren com a mitjà de transport.\" → eina {{2}}\n3. \"M'agrada més anar a peu.\" → eina {{3}}\n4. \"El cafè em sembla deliciós.\" → eina {{4}}",
+    "blanks": [
+      { "id": "1", "label": "eina adequada" },
+      { "id": "2", "label": "eina adequada" },
+      { "id": "3", "label": "eina adequada" },
+      { "id": "4", "label": "eina adequada" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["verb + gern(e)", "mögen + substantiu", "verb + lieber", "finden + adjectiu"] },
+      { "blankId": "2", "options": ["verb + gern(e)", "mögen + substantiu", "verb + lieber", "finden + adjectiu"] },
+      { "blankId": "3", "options": ["verb + gern(e)", "mögen + substantiu", "verb + lieber", "finden + adjectiu"] },
+      { "blankId": "4", "options": ["verb + gern(e)", "mögen + substantiu", "verb + lieber", "finden + adjectiu"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "verb + gern(e)",
+      "2": "mögen + substantiu",
+      "3": "verb + lieber",
+      "4": "finden + adjectiu"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has aplicat la distinció fonamental: **acció** (_viatjar, anar_) → _gern / lieber_; **cosa** (_el tren_) → _mögen_; **valoració amb adjectiu** (_deliciós_) → _finden_. La presència de l'infinitiu en català és el teu indicador.",
+      "references": ["A1b-8", "A1b-5"]
+    },
+    "incorrect": {
+      "default": "La pregunta clau: m'agrada una **cosa** (substantiu) o una **acció** (verb)? (1) _viatjar_ = acció → _gern_. (2) _el tren_ = cosa → _mögen_. (3) _anar a peu_ = acció + comparació → _lieber_. (4) _deliciós_ és un adjectiu → _finden + adj_."
+    }
+  }
+}

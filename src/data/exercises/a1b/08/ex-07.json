@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-8-ex-07",
+  "topicId": "A1b-8",
+  "title": "Construeix una comparació amb lieber ... als",
+  "prompt": "Escriu una frase alemanya que digui **_M'estimo més beure te que cafè_** fent servir **_lieber_** i **_als_**. Comença per _Ich trinke_.",
+  "difficulty": 2,
+  "tags": ["produccio", "lieber", "als", "comparatiu"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "{{1}}",
+    "blanks": [
+      { "id": "1", "label": "frase sencera" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Ich trinke ..." }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": [
+        "Ich trinke lieber Tee als Kaffee.",
+        "Ich trinke lieber Tee als Kaffee",
+        "ich trinke lieber Tee als Kaffee.",
+        "ich trinke lieber Tee als Kaffee"
+      ]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has produït la comparació canònica: verb conjugat (_trinke_) + **_lieber_** + element preferit (_Tee_) + **_als_** + element comparat (_Kaffee_). És la plantilla que pots reutilitzar per a qualsevol comparació d'acció.",
+      "references": ["A1b-8"]
+    },
+    "incorrect": {
+      "default": "Plantilla: **_Ich + verb + lieber + X + als + Y_**. Per exemple: _Ich trinke **lieber** Tee **als** Kaffee_. Comprova que hi siguin les dues paraules clau: _lieber_ (comparatiu de _gern_) i _als_ (el 'que' comparatiu)."
+    }
+  }
+}

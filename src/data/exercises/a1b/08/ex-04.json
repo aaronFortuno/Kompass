@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-8-ex-04",
+  "topicId": "A1b-8",
+  "title": "Tríada o altres eines? Tria l'adequada",
+  "prompt": "Completa cada frase amb la paraula correcta. Decideix si cal la tríada de _gern_ o un altre recurs de preferència segons si el complement és una **cosa** o una **acció**.",
+  "difficulty": 2,
+  "tags": ["contrast", "mogen", "gefallen", "gern", "lieber"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Ich {{1}} Pizza. _(M'agrada la pizza, cosa.)_\n2. Ich esse {{2}} Pizza. _(M'agrada menjar pizza, acció.)_\n3. Mir {{3}} der Dom. _(Em plau la catedral, impressió estètica.)_\n4. Ich fahre {{4}} mit dem Zug als mit dem Auto. _(M'estimo més anar amb tren que amb cotxe.)_",
+    "blanks": [
+      { "id": "1", "label": "verb / adverbi" },
+      { "id": "2", "label": "verb / adverbi" },
+      { "id": "3", "label": "verb / adverbi" },
+      { "id": "4", "label": "verb / adverbi" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["mag", "gern", "gefällt"] },
+      { "blankId": "2", "options": ["mag", "gern", "gefällt"] },
+      { "blankId": "3", "options": ["mag", "gefällt", "interessiert"] },
+      { "blankId": "4", "options": ["gern", "lieber", "am liebsten"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "mag",
+      "2": "gern",
+      "3": "gefällt",
+      "4": "lieber"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has aplicat les distincions clau: (1) _Pizza_ cosa → _mag_; (2) _essen_ acció → _gern_; (3) _Mir_ (datiu) → _gefallen_ (impressió estètica); (4) comparació d'accions (_als_) → _lieber_.",
+      "references": ["A1b-8", "A1b-5"]
+    },
+    "incorrect": {
+      "default": "Pensa: (1) cosa sola → _mögen_; (2) verb + complement → _gern_ darrere del verb; (3) _Mir_ ja hi és → datiu → _gefallen_; (4) comparació amb _als_ d'una acció → _lieber_.",
+      "byResponse": [
+        {
+          "match": { "1": "gern" },
+          "message": "_gern_ no pot anar davant d'un substantiu sense verb. Per a una cosa sola, fes servir _mögen_: _Ich **mag** Pizza_."
+        },
+        {
+          "match": { "2": "mag" },
+          "message": "Aquí ja hi ha el verb _essen_ i un complement: és una **acció**. Usa la tríada: _Ich esse **gern** Pizza_."
+        },
+        {
+          "match": { "3": "mag" },
+          "message": "_Mir_ (datiu) demana un verb que funcioni amb datiu: _gefallen_. _mögen_ va amb subjecte nominatiu (_Ich mag_)."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-8-ex-03",
+  "topicId": "A1b-8",
+  "title": "Tríada sobre preferències musicals",
+  "prompt": "Completa cada frase amb la forma de la tríada que falta.",
+  "difficulty": 2,
+  "tags": ["trada", "musica", "gern", "lieber", "am-liebsten"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Ich höre {{1}} Pop. _(M'agrada escoltar pop, positiu.)_\n2. Aber ich höre {{2}} Jazz als Pop. _(M'agrada més el jazz que el pop, comparatiu.)_\n3. {{3}} höre ich klassische Musik. _(El que més m'agrada és la música clàssica, superlatiu amb inversió.)_",
+    "blanks": [
+      { "id": "1", "label": "forma positiva" },
+      { "id": "2", "label": "forma comparativa" },
+      { "id": "3", "label": "am ..." }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "forma positiva" },
+      { "blankId": "2", "placeholder": "forma comparativa" },
+      { "blankId": "3", "placeholder": "am ..." }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["gern", "gerne"],
+      "2": ["lieber"],
+      "3": ["Am liebsten", "am liebsten"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has encadenat la tríada: **gern → lieber → am liebsten**. A la frase 3, _Am liebsten_ va al principi i el verb _höre_ en segona posició (inversió).",
+      "references": ["A1b-8"]
+    },
+    "incorrect": {
+      "default": "Recorda: positiu _gern_, comparatiu _lieber_ (amb _als_), superlatiu _am liebsten_ (amb _am_ obligatori). Quan _Am liebsten_ obre la frase, el verb va just després i el subjecte al tercer lloc."
+    }
+  }
+}
