@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-16",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 16,
+  "title": "Gustos i preferències — mögen, gern, Lieblings-, finden",
+  "shortTitle": "Gustos",
+  "description": "Com dir què t'agrada (una cosa o una acció), què és el teu preferit i com valorar-ho en alemany: mögen + substantiu, verb + gern, Lieblings-, finden + adjectiu.",
+  "axes": ["expressions-i-funcions"],
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Context i motivació\n\nEn els temes anteriors has après a **presentar-te**, a **donar informació personal** i a construir frases simples amb verbs regulars. Ara fem un salt comunicatiu molt útil: **dir què t'agrada i què no**. Expressar gustos és dels primers actes de parla que es demanen en qualsevol conversa real (_M'agrada el cafè, no m'agrada el futbol, m'agrada llegir_...), i en alemany té una particularitat que cal tenir molt clara des del primer dia."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Idea clau",
+          "body": "En alemany **no hi ha un verb equivalent a \"agradar\"** que funcioni com en català. El que tenim són **dues construccions diferents** que trien una o l'altra segons si el que t'agrada és una **cosa** o una **acció**."
+        },
+        {
+          "type": "explanation",
+          "body": "Això és el que farem avui: separar les dues construccions, saber quan fer servir cadascuna, i dominar-les amb exemples reals.\n\n**Les dues eines que aprendràs:**\n\n1. El verb ==**mögen**== + **substantiu** (per dir que t'agrada **una cosa**): _Ich mag Pizza_.\n2. El verb corresponent + la partícula ==**gern(e)**== (per dir que t'agrada **fer una acció**): _Ich esse gern Pizza_.\n\nLa distinció cosa/acció és la clau de tot el tema. Si la tens clara, la resta és aplicar."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Nota sobre \"gern\" vs \"gerne\"",
+          "body": "Són **la mateixa paraula**. _Gerne_ és la forma completa, _gern_ n'és la reducció. Totes dues són correctes i es fan servir indistintament. En aquesta lliçó alternarem les dues, però tu pots triar la que et soni millor."
+        }
+      ]
+    },
+    {
+      "id": "construccio-mogen",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Construcció 1: ==mögen== + substantiu → \"m'agrada una cosa\"\n\nLa primera construcció és la més senzilla de paral·lelisme amb el català. Fem servir el **verb mögen** seguit d'un **substantiu** (un nom de cosa)."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Terme clau: mögen",
+          "body": "**mögen** és un verb que vol dir \"agradar (una cosa)\". S'acompanya sempre d'un **substantiu** que fa d'**objecte directe** (el que en gramàtica es diu _OD_: la cosa sobre la qual recau l'acció del verb)."
+        },
+        {
+          "type": "explanation",
+          "body": "La fórmula és:\n\n> **Subjecte + mögen (conjugat) + substantiu.**\n\nExemples:\n\n> Ich **mag** Pizza. — M'agrada la pizza.\n> Ich **mag** Kino. — M'agrada el cinema.\n> Ich **mag** Fußball. — M'agrada el futbol.\n> Ich **mag** Kaffee. — M'agrada el cafè.\n\nFixa't que _mögen_ es conjuga (aquí a la primera persona: _ich **mag**_) i el substantiu ve just darrere. És una estructura molt **directa** i cal interioritzar-la tal com és.\n\n#### Negació amb ==mögen==\n\nPer dir que **no** t'agrada una cosa, la manera més natural i freqüent en alemany A1 és fer servir **keine/kein** davant del substantiu, no _nicht_:\n\n> Ich **mag keine** Pizza. — No m'agrada la pizza.\n> Ich **mag keinen** Kaffee. — No m'agrada el cafè."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Per què _keine_ i no _nicht_?",
+          "body": "Perquè quan neguem un substantiu concret (en aquest cas l'objecte del verb), l'alemany prefereix **negar el substantiu directament** amb _kein-_. _Nicht_ es reserva per negar verbs, adjectius o frases senceres. A l'A1 pots quedar-te amb aquesta regla pràctica: **_mag_ + substantiu negat → _mag kein-_**."
+        },
+        {
+          "type": "explanation",
+          "body": "La concordança de _kein-_ amb el gènere i cas del substantiu la veuràs amb calma més endavant; de moment memoritza les formes dels exemples."
+        }
+      ]
+    },
+    {
+      "id": "construccio-gern",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Construcció 2: verb + ==gern(e)== → \"m'agrada fer una acció\"\n\nAra ve el canvi important. Si el que t'agrada **no és una cosa** sinó **fer alguna cosa** (llegir, ballar, cuinar, jugar...), **no pots fer servir _mögen_**. L'alemany fa una altra cosa."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Terme clau: gern(e)",
+          "body": "**gern** (o _gerne_) és una **partícula** —una paraula curta sense conjugació— que acompanya un **verb** i afegeix el significat de \"amb gust, de bon grat, agradablement\". En català la traduïm com \"m'agrada (fer)\"."
+        },
+        {
+          "type": "explanation",
+          "body": "La fórmula és:\n\n> **Subjecte + verb (conjugat) + gern(e) + resta de la frase.**\n\nExemples:\n\n> Ich **tanze gern**. — M'agrada ballar. (literalment: \"ballo amb gust\")\n> Ich **lese gern**. — M'agrada llegir.\n> Ich **koche gern**. — M'agrada cuinar.\n> Ich **spiele gern** Fußball. — M'agrada jugar a futbol."
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Parany principal del tema",
+          "body": "==**Compte: NO diem _Ich mag kochen_**== (calcant el català \"m'agrada cuinar\"). ==**Diem _Ich koche gern_**==. En alemany, quan l'objecte del gust és una acció, **el verb d'aquella acció va conjugat a la frase**, i és la partícula _gern_ la que afegeix la idea d'\"agradar\". No hi ha infinitiu darrere un verb que vulgui dir \"agradar\"."
+        },
+        {
+          "type": "explanation",
+          "body": "#### Posició de ==gern(e)==\n\nLa partícula té una posició fixa i previsible:\n\n> **_gern(e)_ va sempre darrere del verb conjugat.**\n\n> Ich **tanze gern**. — Ballo amb gust.\n> Ich **spiele gern** Fußball. — Jugo a futbol amb gust.\n> Du **kochst gern**. — Tu cuines amb gust.\n\nSi la frase té un objecte (com _Fußball_ a l'exemple), _gern_ s'intercala entre el verb i l'objecte. No diguis _Ich spiele Fußball gern_ com a norma: sona estrany. La versió natural és **verb + gern + objecte**.\n\n#### Preguntes amb ==gern==\n\nA les preguntes, el verb va al davant (inversió) i _gern_ es manté **darrere del verb**:\n\n> **Kochst du gern?** — T'agrada cuinar?\n> **Tanzt du gern?** — T'agrada ballar?\n> **Spielst du gern** Fußball? — T'agrada jugar a futbol?\n\n#### Negació amb ==gern==\n\nPer dir que **no** t'agrada fer una acció, fem servir _nicht_ davant de _gern_:\n\n> Ich tanze **nicht gern**. — No m'agrada ballar.\n> Ich lese **nicht gern**. — No m'agrada llegir.\n> Ich spiele **nicht gern** Fußball. — No m'agrada jugar a futbol.\n\nFixa't en la diferència amb _mögen_: allà neguem amb _kein-_ (perquè neguem un substantiu), aquí neguem amb _nicht_ (perquè neguem l'adverbi _gern_, que és el que expressa el gust)."
+        }
+      ]
+    },
+    {
+      "id": "contrast-llengues",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Contrast català / castellà / alemany\n\nAquest és un dels temes on el calc des del català o el castellà **no funciona**, i val la pena tenir-ho molt present. Compara:\n\n> **Català:** _M'agrada cuinar._ → Verb \"agradar\" + infinitiu (\"cuinar\").\n> **Castellà:** _Me gusta cocinar._ → Verb \"gustar\" + infinitiu (\"cocinar\").\n> **Alemany:** _Ich koche gern._ → Verb conjugat (\"koche\") + partícula (\"gern\"). **No hi ha infinitiu.**\n\nTres observacions:\n\n1. En català i castellà, el verb \"agradar/gustar\" és **el verb principal de la frase**, i l'acció que agrada va en **infinitiu** (_cuinar, cocinar_). En alemany, al contrari, **el verb de l'acció és el principal** i es conjuga (_ich koche_), i el \"agradar\" l'aporta una partícula que no es conjuga.\n2. En català i castellà, qui té el gust és **l'objecte indirecte** del verb (_m'_agrada, _me_ gusta). En alemany amb _gern_, qui té el gust és el **subjecte** normal de la frase (_ich_ koche gern).\n3. Amb _mögen_, l'estructura s'assembla més al català (\"jo\") (**ich** mag Pizza → **jo** estimo/vull la pizza), però amb un verb que no es tradueix per \"agradar\" sinó literalment per \"voler/estimar en sentit feble\"."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista mnemotècnica",
+          "body": "Si pots posar la paraula \"menjant/ballant/llegint...\" darrere d'\"m'agrada\" (és a dir, si el que agrada és una **acció**), en alemany has d'anar per **gern**. Si el que agrada és **una cosa** que pots assenyalar o posar en un plat (pizza, futbol, cinema, cafè), vas per **mögen**."
+        }
+      ]
+    },
+    {
+      "id": "check-distingir",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-16-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "lieblings",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Expressar preferències: ==Lieblings-==\n\nPer expressar no només que una cosa t'agrada, sinó que és **la teva preferida**, l'alemany té un recurs molt productiu: el prefix **Lieblings-** (literalment \"preferit/de predilecció\") que es pot enganxar davant de gairebé qualsevol substantiu."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Terme clau: Lieblings-",
+          "body": "**Lieblings-** és un **component** (no una paraula aïllada) que s'afegeix davant d'un substantiu per formar una paraula composta. El resultat significa \"el/la X preferit/a (meu/teva...)\"."
+        },
+        {
+          "type": "explanation",
+          "body": "Exemples:\n\n> **Lieblings**farbe — color preferit (_Farbe_ = color)\n> **Lieblings**essen — menjar preferit (_Essen_ = menjar)\n> **Lieblings**musik — música preferida (_Musik_ = música)\n> **Lieblings**film — pel·lícula preferida (_Film_ = pel·lícula)\n> **Lieblings**stadt — ciutat preferida (_Stadt_ = ciutat)\n\nFrases completes:\n\n> Meine **Lieblingsfarbe** ist blau. — El meu color preferit és el blau.\n> Pizza ist mein **Lieblingsessen**. — La pizza és el meu menjar preferit.\n\nDues coses a notar:\n\n1. En alemany escrit, les paraules compostes s'escriuen **totes juntes, sense guió**: _Lieblingsfarbe_, no _Lieblings-farbe_. Només separem amb guió en aquesta lliçó quan volem fer veure la composició.\n2. Tots els substantius en alemany s'escriuen amb **majúscula inicial**, inclosos els compostos: _Lieblingsfarbe_, _Lieblingsessen_."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista de producció",
+          "body": "_Lieblings-_ combina perfectament amb la construcció _mögen_: si m'agrada una cosa, sovint puc dir en lloc d'_Ich mag X_ alguna cosa com _X ist mein Lieblings-[categoria]_, que sona més natural i més rica. Per exemple: en lloc d'_Ich mag Pizza_ (que es queda una mica pla), _Pizza ist mein Lieblingsessen_ (més expressiu)."
+        }
+      ]
+    },
+    {
+      "id": "finden",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Valorar amb ==finden + adjectiu==\n\nL'última peça del tema és un recurs que obre moltes portes comunicatives: dir què et **sembla** alguna cosa (bonic, lleig, interessant, avorrit...). En alemany es fa amb el verb **finden** seguit d'un adjectiu."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Terme clau: finden",
+          "body": "**finden** literalment vol dir \"trobar\", però en aquest ús significa \"considerar, trobar que\" (igual que en català \"_trobo_ que aquesta pel·lícula és interessant\")."
+        },
+        {
+          "type": "explanation",
+          "body": "La fórmula és:\n\n> **Subjecte + finden (conjugat) + substantiu + adjectiu.**\n\nExemples:\n\n> Ich **finde** Pizza **lecker**. — Trobo (que) la pizza (és) deliciosa.\n> Ich **finde** Fußball **langweilig**. — Trobo (que) el futbol (és) avorrit.\n> Ich **finde** Berlin **interessant**. — Trobo (que) Berlín (és) interessant.\n> Ich **finde** Musik **schön**. — Trobo (que) la música (és) bonica.\n\nFixa't que l'**adjectiu va al final de la frase**, sense cap desinència, i sense cap verb \"ser\" entremig. És una estructura típicament alemanya: el català posa \"és\" (_trobo que la pizza **és** deliciosa_), l'alemany no."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Adjectius útils per a aquest tema (A1)",
+          "body": "_gut_ (bo), _schön_ (bonic), _interessant_ (interessant), _lecker_ (deliciós), _toll_ (genial), _super_ (súper), _langweilig_ (avorrit), _schlecht_ (dolent), _nicht schön_ (no bonic)."
+        },
+        {
+          "type": "explanation",
+          "body": "La construcció _finden + adjectiu_ és **complementària** a _mögen_ i _gern_: _mögen_ i _gern_ et diuen que **t'agrada**, _finden_ et diu **per què** o **com** el trobes. Combinades fan frases riques:\n\n> **Ich mag** Pizza. **Ich finde sie lecker.** — M'agrada la pizza. La trobo deliciosa.\n> **Ich spiele gern** Fußball. **Ich finde es toll.** — M'agrada jugar a futbol. Ho trobo genial.\n\n(L'ús de _sie_ i _es_ com a pronoms que substitueixen _Pizza_ i _Fußball_ el veuràs amb més detall al bloc de pronoms; de moment, queda't amb les frases com a models.)"
+        }
+      ]
+    },
+    {
+      "id": "check-produccio",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-16-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals\n\n**1. Dir \\*_Ich mag kochen_ calcant el català.**\nÉs l'error més freqüent i el més important d'evitar. En alemany **no es posa un infinitiu** darrere de _mögen_ per dir \"m'agrada fer X\". La construcció correcta és **_Ich koche gern_** (verb conjugat + _gern_). Recorda-ho: si el que t'agrada és una **acció**, hi ha d'haver un verb **conjugat** i la partícula _gern_.\n\n**2. Posar _gern_ en posició incorrecta.**\n_Gern_ va **just darrere del verb conjugat**, no al final de la frase ni davant del verb. Diem _Ich spiele **gern** Fußball_, no \\*_Ich spiele Fußball gern_ ni \\*_Ich gern spiele Fußball_. A les preguntes i negacions, la regla es manté: _Kochst du **gern**?_, _Ich tanze **nicht gern**_.\n\n**3. Negar _mögen_ amb _nicht_ per defecte.**\nEn principi, quan el que neguem és un substantiu concret (l'objecte de _mögen_), l'alemany prefereix **_kein-_**: _Ich mag **keine** Pizza_, no \\*_Ich mag Pizza nicht_. Pots arribar a trobar _nicht_ en alguns contextos, però a nivell A1 la versió amb _kein-_ és la segura.\n\n**4. Confondre _gern_ (partícula) amb un verb.**\n_Gern_ **no es conjuga mai**, no té persones ni temps. És una partícula invariable. No pots dir \\*_Ich gerne_ ni \\*_Du gernst_. Sempre acompanya un verb i el verb és el que es conjuga (_ich koche gern, du kochst gern, er kocht gern_).\n\n**5. Oblidar-se de conjugar el verb amb _gern_.**\nCom que _gern_ porta el significat de \"agradar\", pot donar la sensació que el verb d'acció és secundari, i es podria oblidar de conjugar-lo. No: el verb és el **nucli gramatical** de la frase i es conjuga com sempre. _Ich **tanze** gern_, _Du **tanzt** gern_, _Er **tanzt** gern_.\n\n**6. Pensar que _Lieblings-_ és una paraula aïllada.**\n_Lieblings-_ mai va sol. És un **component** que s'ha d'unir a un substantiu: _Lieblingsfarbe_, _Lieblingsessen_, _Lieblingsmusik_. No pots dir \\*_Meine Lieblings ist blau_; has de dir _Meine **Lieblingsfarbe** ist blau_.\n\n**7. Posar el verb \"ser\" entremig amb _finden_.**\nCalc del català: \\*_Ich finde Pizza ist lecker_. L'alemany és més econòmic: _Ich finde Pizza **lecker**_, sense cap _ist_. L'adjectiu s'uneix directament sense verb copulatiu."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-16-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-16-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-16-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-16-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Recapitulem\n\nQuatre idees clau per emportar-se:\n\n1. ==**Cosa → mögen + substantiu; acció → verb + gern.**== Aquesta és la distinció fonamental del tema. _Ich **mag** Pizza_ (cosa), _Ich koche **gern**_ (acció). Mai _Ich mag kochen_.\n2. **_gern(e)_ és una partícula invariable** que va **darrere del verb conjugat**. No es conjuga. La negació és _nicht gern_. La negació de _mögen_, en canvi, és _kein-_ davant del substantiu.\n3. **_Lieblings-_** s'enganxa davant d'un substantiu per dir \"preferit/-ida\": _Lieblingsfarbe, Lieblingsessen, Lieblingsmusik_. És una paraula composta, s'escriu tot junt i amb majúscula inicial.\n4. **_finden + substantiu + adjectiu_** permet **valorar** coses: _Ich finde Pizza **lecker**_. Sense _ist_ entremig. És el complement natural a _mögen_ i _gern_ per enriquir l'expressió d'opinions.\n\nPer practicar de forma natural, prova de descriure en una llibreta o en veu alta cinc coses que t'agraden (_mögen_), cinc coses que t'agrada fer (_gern_), el teu _Lieblings-X_ per a tres categories (color, menjar, música), i dona'n la teva valoració amb _finden_. És un exercici senzill que activa tot el tema."
+        },
+        {
+          "type": "table",
+          "title": "16.1 Les quatre construccions del tema",
+          "headers": ["Construcció", "Quan s'usa", "Exemple", "Negació"],
+          "rows": [
+            ["**mögen** + substantiu", "Ens agrada **una cosa**", "_Ich mag Pizza._", "_Ich mag **keine** Pizza._"],
+            ["verb + **gern(e)**", "Ens agrada **fer una acció**", "_Ich koche gern._", "_Ich koche **nicht** gern._"],
+            ["**Lieblings-** + substantiu", "Expressar **preferència màxima**", "_Meine Lieblingsfarbe ist blau._", "(no aplica)"],
+            ["**finden** + subst. + adj.", "**Valorar** una cosa", "_Ich finde Pizza lecker._", "_Ich finde Pizza **nicht** lecker._"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "16.2 Recursos externs recomanats",
+          "headers": ["Recurs", "Per què"],
+          "rows": [
+            ["Nicos Weg A1 (Deutsche Welle)", "Episodis amb diàlegs reals sobre gustos i preferències."],
+            ["Goethe-Institut A1", "Llistes de substantius i adjectius freqüents per a aquest àmbit."],
+            ["dwds.de", "Conjugació completa de _mögen_ i combinatòria típica de _gern_ amb verbs."]
+          ]
+        }
+      ]
+    }
+  ]
+}

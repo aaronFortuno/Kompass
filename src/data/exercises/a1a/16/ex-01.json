@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-16-ex-01",
+  "topicId": "A1a-16",
+  "title": "Cosa o acció?",
+  "prompt": "Llegeix la idea en català i tria la construcció alemanya que li correspon. Pregunta't: el que m'agrada, **és una cosa o una acció?**",
+  "difficulty": 1,
+  "tags": ["mogen", "gern", "distincio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. \"M'agrada la pizza.\" → construcció {{1}}\n2. \"M'agrada ballar.\" → construcció {{2}}\n3. \"M'agrada el cafè.\" → construcció {{3}}",
+    "blanks": [
+      { "id": "1", "label": "construcció per _M'agrada la pizza_" },
+      { "id": "2", "label": "construcció per _M'agrada ballar_" },
+      { "id": "3", "label": "construcció per _M'agrada el cafè_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["mögen + substantiu", "verb + gern"] },
+      { "blankId": "2", "options": ["mögen + substantiu", "verb + gern"] },
+      { "blankId": "3", "options": ["mögen + substantiu", "verb + gern"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "mögen + substantiu",
+      "2": "verb + gern",
+      "3": "mögen + substantiu"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. _Pizza_ i _cafè_ són **coses** (substantius), així que van amb **mögen**: _Ich mag Pizza_, _Ich mag Kaffee_. _Ballar_ és una **acció** (verb), així que va amb **gern**: _Ich tanze gern_."
+    },
+    "incorrect": {
+      "default": "Pregunta clau: el que m'agrada, **és una cosa o una acció?** Si és una cosa (pizza, cafè, futbol com a esport que segueixo...), vaig amb _mögen_. Si és una acció que jo faig (ballar, llegir, cuinar...), vaig amb _gern_."
+    }
+  }
+}

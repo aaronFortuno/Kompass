@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-16-ex-05",
+  "topicId": "A1a-16",
+  "title": "Integra les tres construccions",
+  "prompt": "Tria la paraula correcta per a cada frase. Reactives les tres construccions del tema (_mögen_, _gern_, _finden_) i el component _Lieblings-_.",
+  "difficulty": 3,
+  "tags": ["mag", "gern", "finde", "lieblings", "integracio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Ich {{1}} Kino. Ich gehe oft ins Kino. _(M'agrada el cinema. Hi vaig sovint.)_\n2. Ich {{2}} Fußball langweilig. _(Trobo el futbol avorrit.)_\n3. Ich spiele {{3}} Fußball. _(M'agrada jugar a futbol.)_\n4. Meine {{4}}farbe ist blau. _(El meu color preferit és el blau.)_",
+    "blanks": [
+      { "id": "1", "label": "verb/partícula" },
+      { "id": "2", "label": "verb/partícula" },
+      { "id": "3", "label": "verb/partícula" },
+      { "id": "4", "label": "prefix" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["mag", "gern", "finde"] },
+      { "blankId": "2", "options": ["mag", "gern", "finde"] },
+      { "blankId": "3", "options": ["mag", "gern", "finde"] },
+      { "blankId": "4", "options": ["Lieblings", "Liebling", "Lieblinge"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "mag", "2": "finde", "3": "gern", "4": "Lieblings" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has integrat les tres construccions: (1) _Kino_ és cosa → _mag_; (2) la frase valora (_langweilig_ és un adjectiu) → _finde_; (3) _spielen_ és una acció → _gern_; (4) el component de paraula composta és _**Lieblings-**_ amb _-s_ final."
+    },
+    "incorrect": {
+      "default": "Repassa les construccions: (1) _mögen_ per a substantius; (2) _finden_ + adjectiu per a valoracions; (3) verb + _gern_ per a accions; (4) _Lieblings-_ (sempre amb _-s_, en paraula composta) davant d'un substantiu.",
+      "byResponse": [
+        {
+          "match": { "4": "Liebling" },
+          "message": "El component per a paraules compostes és _**Lieblings-**_, amb una _-s_ final que uneix amb el substantiu següent. _Liebling_ aïllat significa \"preferit/a\" com a persona estimada, no es fa servir com a prefix."
+        },
+        {
+          "match": { "2": "mag" },
+          "message": "La frase porta un adjectiu (_langweilig_ = avorrit). Quan **valores** alguna cosa amb un adjectiu, la construcció és _**finden** + substantiu + adjectiu_, no _mögen_."
+        }
+      ]
+    }
+  }
+}

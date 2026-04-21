@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-16-ex-03",
+  "topicId": "A1a-16",
+  "title": "mag o gern?",
+  "prompt": "Completa cada frase amb _mag_ o _gern_ segons si el que agrada és una cosa o una acció. Fixa't bé en el verb ja present a la frase.",
+  "difficulty": 2,
+  "tags": ["mag", "gern", "distincio", "produccio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Ich {{1}} Pizza. _(M'agrada la pizza.)_\n2. Ich lese {{2}}. _(M'agrada llegir.)_\n3. Ich {{3}} Fußball. _(M'agrada el futbol.)_\n4. Ich koche {{4}}. _(M'agrada cuinar.)_\n5. Ich {{5}} Musik. _(M'agrada la música.)_",
+    "blanks": [
+      { "id": "1", "label": "paraula que falta" },
+      { "id": "2", "label": "paraula que falta" },
+      { "id": "3", "label": "paraula que falta" },
+      { "id": "4", "label": "paraula que falta" },
+      { "id": "5", "label": "paraula que falta" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["mag", "gern"] },
+      { "blankId": "2", "options": ["mag", "gern"] },
+      { "blankId": "3", "options": ["mag", "gern"] },
+      { "blankId": "4", "options": ["mag", "gern"] },
+      { "blankId": "5", "options": ["mag", "gern"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "mag", "2": "gern", "3": "mag", "4": "gern", "5": "mag" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has aplicat la regla: si el que m'agrada és un **substantiu** (_Pizza, Fußball, Musik_), el verb és **mögen** (→ _mag_). Si el que m'agrada és una **acció** ja expressada per un verb conjugat (_lese, koche_), la partícula és **gern**."
+    },
+    "incorrect": {
+      "default": "Torna-hi amb el criteri: (1) Pizza és cosa → _mag_. (2) _lese_ ja és un verb conjugat, no cal un altre verb → _gern_. (3) Fußball és cosa → _mag_. (4) _koche_ ja és verb conjugat → _gern_. (5) Musik és cosa → _mag_."
+    }
+  }
+}

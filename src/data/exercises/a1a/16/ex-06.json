@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-16-ex-06",
+  "topicId": "A1a-16",
+  "title": "Produeix les peces clau",
+  "prompt": "Escriu la paraula que falta a cada frase alemanya per expressar el que diu la versió catalana. Atenció a la majúscula quan toqui.",
+  "difficulty": 3,
+  "tags": ["mag", "finde", "lieblings", "produccio", "typeIn"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. M'agrada el cafè. → Ich {{1}} Kaffee. _(verb)_\n2. Trobo Berlín interessant. → Ich {{2}} Berlin interessant. _(verb)_\n3. La meva música preferida és el jazz. → Meine {{3}}musik ist Jazz. _(prefix)_",
+    "blanks": [
+      { "id": "1", "label": "paraula" },
+      { "id": "2", "label": "paraula" },
+      { "id": "3", "label": "paraula" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "mag" },
+      { "blankId": "2", "placeholder": "finde" },
+      { "blankId": "3", "placeholder": "Lieblings" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "mag", "2": "finde", "3": "Lieblings" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has produït les tres construccions actives del tema: **mag** (de _mögen_) per a coses, **finde** (de _finden_) per a valoracions amb adjectiu, i **Lieblings-** per a preferències. Amb aquestes tres peces, ja pots dir amb naturalitat què t'agrada, què et sembla i quin és el teu favorit."
+    },
+    "incorrect": {
+      "default": "Les tres formes clau del tema són: (1) _mag_ (1a persona de _mögen_); (2) _finde_ (1a persona de _finden_); (3) _Lieblings-_ (prefix de paraula composta, amb _-s_). Recorda que _Lieblings-_ forma part del substantiu compost _Lieblingsmusik_, i els substantius alemanys s'escriuen amb majúscula inicial."
+    }
+  }
+}

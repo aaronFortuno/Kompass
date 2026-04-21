@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-16-ex-02",
+  "topicId": "A1a-16",
+  "title": "mag, gern o finde?",
+  "prompt": "Completa cada frase amb la paraula correcta segons la construcció que hi apareix.",
+  "difficulty": 1,
+  "tags": ["mag", "gern", "finde", "construccions"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Ich {{1}} Kaffee. _(M'agrada el cafè.)_\n2. Ich tanze {{2}}. _(M'agrada ballar.)_\n3. Ich {{3}} Berlin interessant. _(Trobo Berlín interessant.)_",
+    "blanks": [
+      { "id": "1", "label": "paraula que falta" },
+      { "id": "2", "label": "paraula que falta" },
+      { "id": "3", "label": "paraula que falta" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["mag", "gern", "finde"] },
+      { "blankId": "2", "options": ["mag", "gern", "finde"] },
+      { "blankId": "3", "options": ["mag", "gern", "finde"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "mag", "2": "gern", "3": "finde" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. _Kaffee_ és una cosa → **mag** (_mögen_ + substantiu). _Tanzen_ és una acció → **gern** darrere del verb conjugat. _Berlin interessant_ és una valoració → **finde** + adjectiu al final."
+    },
+    "incorrect": {
+      "default": "Pensa en la construcció que correspon a cada frase: (1) m'agrada una **cosa** → _mag_ + substantiu; (2) m'agrada una **acció** → verb conjugat + _gern_; (3) dono una **opinió/valoració** → _finde_ + substantiu + adjectiu."
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-16-ex-04",
+  "topicId": "A1a-16",
+  "title": "gern en afirmacions, negacions i preguntes",
+  "prompt": "Escriu la paraula que falta a cada frase: la partícula _gern_ o el negador _nicht_ segons el sentit indicat.",
+  "difficulty": 2,
+  "tags": ["gern", "nicht", "negacio", "preguntes", "produccio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. M'agrada ballar. → Ich tanze {{1}}. _(partícula)_\n2. No m'agrada cuinar. → Ich koche {{2}} gern. _(negador)_\n3. T'agrada llegir? → Liest du {{3}}? _(partícula)_",
+    "blanks": [
+      { "id": "1", "label": "paraula" },
+      { "id": "2", "label": "paraula" },
+      { "id": "3", "label": "paraula" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "paraula" },
+      { "blankId": "2", "placeholder": "paraula" },
+      { "blankId": "3", "placeholder": "paraula" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["gern", "gerne"],
+      "2": ["nicht"],
+      "3": ["gern", "gerne"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. _Gern_ va darrere del verb conjugat en afirmacions i preguntes (_tanze gern, liest du gern_). Per negar, posem _**nicht**_ davant de _gern_ (_nicht gern_), seguint la regla que _nicht_ nega l'adverbi, no el verb. _Gerne_ també s'accepta com a equivalent de _gern_."
+    },
+    "incorrect": {
+      "default": "Recorda: (1) per dir que agrada una acció, la partícula és **gern** (o _gerne_); (2) per negar-ho, posem **nicht** davant de **gern** → _nicht gern_; (3) a les preguntes, _gern_ manté la posició darrere del verb conjugat: _Liest du **gern**?_"
+    }
+  }
+}
