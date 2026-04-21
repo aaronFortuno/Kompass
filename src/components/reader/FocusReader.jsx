@@ -24,7 +24,7 @@ import {
 import { parseInline } from '@/lib/reader/parseInline.js';
 import { Typed } from '@/components/reader/Typed.jsx';
 import { ReaderSettingsDrawer } from '@/components/reader/ReaderSettingsDrawer.jsx';
-import { ExerciseEngine } from '@/components/exercise/ExerciseEngine.jsx';
+import { ReaderExerciseEngine } from '@/components/reader/ReaderExerciseEngine.jsx';
 
 /*
  * Focus Reader · ARCHITECTURE §18
@@ -520,7 +520,7 @@ function ExerciseBeatCard({ beat, stepIdx, onFinish }) {
           </span>
           <h3 className="kf-ex-title">{exercise.title}</h3>
         </div>
-        <ExerciseEngine exercise={exercise} />
+        <ReaderExerciseEngine exercise={exercise} />
       </div>
     </div>
   );
