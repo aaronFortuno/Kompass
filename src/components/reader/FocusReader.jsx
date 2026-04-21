@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams, Link } from 'react-router-dom';
 import {
   ArrowLeft,
   ArrowRight,
@@ -569,7 +569,20 @@ function beatLabel(beat, idx) {
 function stepLabel(step, i) {
   if (!step) return `Pas ${i + 1}`;
   if (step.heading) return step.heading;
-  if (step.id) return step.id;
+  // Steps d'exercici no tenen heading propi: agafem el títol humà de
+  // l'exercici. Si tampoc hi és, caiem a l'etiqueta genèrica de variant.
+  if (step.kind === 'exercise' && step.exerciseId) {
+    const ex = getExercise(step.exerciseId);
+    if (ex?.title) return ex.title;
+    return step.variant === 'assessment' ? 'Avaluació' : 'Comprovació';
+  }
+  // Steps sense heading: transformem l'id kebab-case en quelcom llegible.
+  if (step.id) {
+    return step.id
+      .split('-')
+      .map((w) => (w ? w[0].toUpperCase() + w.slice(1) : w))
+      .join(' ');
+  }
   return `Pas ${i + 1}`;
 }
 
@@ -1108,16 +1121,19 @@ export function FocusReader({ topic }) {
             <span>{t('topic.backToIndex')}</span>
           </button>
 
-          <div className="kf-logo">
-            <Compass size={16} aria-hidden="true" strokeWidth={1.75} />
+          <Link
+            to="/"
+            className="kf-logo"
+            aria-label={t('app.name') + ' · anar a l\'inici'}
+            title={t('app.name') + ' · anar a l\'inici'}
+          >
+            <Compass size={22} aria-hidden="true" strokeWidth={1.75} />
             <b>Kompass</b>
-            <span className="kf-muted">{topic.id}</span>
-          </div>
+          </Link>
+          <span className="kf-muted kf-logo-id">{topic.id}</span>
         </div>
 
-        <div className="kf-title">
-          <i>{topic.title}</i>
-        </div>
+        <div className="kf-title">{topic.title}</div>
 
         <ProgressBar
           topic={topic}

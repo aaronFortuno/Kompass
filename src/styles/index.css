@@ -259,11 +259,11 @@
   flex-shrink: 0;
   min-height: 56px;
 }
-/* Columna esquerra: back + logo (inline, baseline plana) */
+/* Columna esquerra: back + logo + id (inline, baseline plana) */
 .kf-head-left {
   display: inline-flex;
   align-items: center;
-  gap: 18px;
+  gap: 16px;
   justify-self: start;
   line-height: 1;
 }
@@ -284,27 +284,55 @@
   transition: color var(--duration-fast) var(--ease-standard);
 }
 .kf-head .kf-back:hover { color: rgb(var(--color-reader-ink)); }
+
+/* Logo (Link to /) — interactiu: canvi de color i rotació suau a hover */
 .kf-head .kf-logo {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   color: rgb(var(--color-reader-ink));
   line-height: 1;
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+.kf-head .kf-logo svg {
+  transition: transform var(--duration-base) var(--ease-emphasized),
+              color var(--duration-fast) var(--ease-standard);
+}
+.kf-head .kf-logo:hover {
+  color: rgb(var(--color-reader-accent));
+}
+.kf-head .kf-logo:hover svg {
+  transform: rotate(-14deg);
+}
+.kf-head .kf-logo:focus-visible {
+  outline: 2px solid rgb(var(--color-reader-accent));
+  outline-offset: 3px;
 }
 .kf-head .kf-logo b {
   font-family: 'Newsreader', Georgia, serif;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 19px;
   letter-spacing: 0;
   text-transform: none;
   line-height: 1;
 }
 .kf-head .kf-muted { color: rgb(var(--color-reader-muted)); }
-/* Títol centrat (columna central del grid) */
+.kf-head .kf-logo-id {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  line-height: 1;
+}
+
+/* Títol centrat (columna central del grid) — lletra normal (no italic).
+   Afegim padding vertical discret per evitar que la "x-height" del
+   serif quedi visualment una mica per sobre del baseline del logo. */
 .kf-head .kf-title {
   font-family: 'Newsreader', Georgia, serif;
-  font-style: italic;
-  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
   text-transform: none;
   letter-spacing: 0;
   color: rgb(var(--color-reader-ink));
@@ -312,6 +340,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   justify-self: center;
+  align-self: center;
   text-align: center;
   line-height: 1;
   max-width: 100%;
@@ -1396,10 +1425,12 @@ html.dark .k-mark {
   margin: 0 0 18px;
 }
 
-/* Inputs / selects: serif, mida còmoda, hover subtil */
-.kf-ex-card input,
-.kf-ex-card select,
-.kf-ex-card textarea {
+/* Inputs / selects *no-slot* (p. ex. ExerciseEngine antic): serif, mida
+   còmoda. Els slots de l'engine paginat (.kf-rex-slot) tenen regles
+   pròpies i hereten la mida de la sentence — per això els excloem. */
+.kf-ex-card input:not(.kf-rex-slot),
+.kf-ex-card select:not(.kf-rex-slot),
+.kf-ex-card textarea:not(.kf-rex-slot) {
   font-family: 'Newsreader', serif;
   font-size: 18px;
   background: rgb(var(--color-reader-kbd-bg));
@@ -1407,9 +1438,9 @@ html.dark .k-mark {
   border-color: rgb(var(--color-reader-rule));
   border-radius: 0;
 }
-.kf-ex-card input:focus,
-.kf-ex-card select:focus,
-.kf-ex-card textarea:focus {
+.kf-ex-card input:not(.kf-rex-slot):focus,
+.kf-ex-card select:not(.kf-rex-slot):focus,
+.kf-ex-card textarea:not(.kf-rex-slot):focus {
   outline: 2px solid rgb(var(--color-reader-ink));
   outline-offset: 2px;
 }
