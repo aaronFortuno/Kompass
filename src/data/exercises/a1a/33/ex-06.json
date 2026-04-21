@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-33-ex-06",
+  "topicId": "A1a-33",
+  "title": "Traducció: ordinals, dates i declinació",
+  "prompt": "Tradueix cada frase a l'alemany combinant ordinals, dates i declinació acusativa.",
+  "difficulty": 3,
+  "tags": ["ordinalzahlen", "dates", "declinacio", "typein", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Avui és el 7 de març. (_März_) →\n{{1}}\n\nLlegeixo el segon llibre. (_das Buch_, _ich lese_) →\n{{2}}\n\nAgafo el primer tren. (_der Zug_, _ich nehme_) →\n{{3}}\n\nEl tercer dia és dimecres. (_der Tag_, _Mittwoch_) →\n{{4}}",
+    "blanks": [
+      { "id": "1", "label": "frase amb data" },
+      { "id": "2", "label": "acusatiu neutre" },
+      { "id": "3", "label": "acusatiu masculí" },
+      { "id": "4", "label": "nominatiu masculí" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Heute ist …" },
+      { "blankId": "2", "placeholder": "Ich lese …" },
+      { "blankId": "3", "placeholder": "Ich nehme …" },
+      { "blankId": "4", "placeholder": "Der … Tag …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Heute ist der siebte März.", "Heute ist der siebte März"],
+      "2": ["Ich lese das zweite Buch.", "Ich lese das zweite Buch"],
+      "3": ["Ich nehme den ersten Zug.", "Ich nehme den ersten Zug"],
+      "4": ["Der dritte Tag ist Mittwoch.", "Der dritte Tag ist Mittwoch"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has combinat: irregulars (==_siebte, ersten, dritte_==), regla _-te_, i declinació acusativa masculina (==_den ersten_==, amb _-en_).",
+      "references": ["A1a-33", "A1a-28"]
+    },
+    "incorrect": {
+      "default": "Revisa: (1) _7 → siebte_ (irregular). (2) _Buch_ és neutre: nom/acus coincideixen → _das zweite Buch_. (3) _Zug_ és masculí i _nehmen_ demana acusatiu → ==_den ersten_== (masc. acus. → _-en_). (4) _Tag_ és masculí, i aquí és subjecte → _der dritte Tag_.",
+      "byResponse": [
+        {
+          "match": { "3": "Ich nehme der erste Zug." },
+          "message": "_nehmen_ demana acusatiu. _Zug_ és masculí → ==_den ersten_== Zug (article _den_ i ordinal amb _-en_).",
+          "references": ["A1a-33", "A1a-28"]
+        },
+        {
+          "match": { "3": "Ich nehme den erste Zug." },
+          "message": "Has posat bé l'article (_den_), però l'ordinal també es declina: acusatiu masculí → ==_den ersten_== Zug.",
+          "references": ["A1a-33", "A1a-28"]
+        }
+      ]
+    }
+  }
+}

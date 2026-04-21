@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-35-ex-01",
+  "topicId": "A1a-35",
+  "title": "_groß_ o _hoch_? (alçada d'una muntanya)",
+  "prompt": "Tria l'adjectiu que encaixa per preguntar per l'alçada d'una muntanya.",
+  "difficulty": 1,
+  "tags": ["wie", "gross", "hoch", "contrast", "singlechoice", "quick-check"],
+  "stimulus": {
+    "type": "text",
+    "content": "Completa: _Wie ___ ist der Berg?_ (Com és d'alta la muntanya?)"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "a", "label": "_groß_" },
+      { "id": "b", "label": "_hoch_" },
+      { "id": "c", "label": "_lang_" },
+      { "id": "d", "label": "_weit_" }
+    ]
+  },
+  "validation": {
+    "type": "exactMatch",
+    "answer": "b"
+  },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. Per a l'alçada física d'una muntanya o un edifici, es fa servir _hoch_ (alt vertical), no _groß_.",
+      "references": ["A1a-35"]
+    },
+    "incorrect": {
+      "default": "Per a l'alçada vertical d'un objecte (muntanya, edifici, torre) sempre _hoch_. _groß_ seria mida general/superfície, _lang_ és longitud, _weit_ és distància.",
+      "byResponse": [
+        {
+          "match": { "response": "a" },
+          "message": "_groß_ és 'gran' en general (superfície, mida). Per a l'alçada vertical d'un objecte/muntanya s'usa _hoch_.",
+          "references": ["A1a-35"]
+        },
+        {
+          "match": { "response": "c" },
+          "message": "_lang_ vol dir 'llarg' (longitud o durada), no 'alt'. Per a l'alçada d'una muntanya: _hoch_.",
+          "references": ["A1a-35"]
+        },
+        {
+          "match": { "response": "d" },
+          "message": "_weit_ vol dir 'lluny' (distància), no 'alt'. Per a l'alçada d'una muntanya: _hoch_.",
+          "references": ["A1a-35"]
+        }
+      ]
+    }
+  }
+}

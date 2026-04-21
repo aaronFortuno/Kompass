@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-34-ex-02",
+  "topicId": "A1a-34",
+  "title": "Preposició i significat",
+  "prompt": "Relaciona cada preposició alemanya amb la seva traducció més habitual.",
+  "difficulty": 1,
+  "tags": ["datiu", "preposicions", "significat", "matchpairs", "quick-check"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "p1", "group": "Preposició", "content": { "type": "text", "content": "_aus_" } },
+      { "id": "p2", "group": "Preposició", "content": { "type": "text", "content": "_mit_" } },
+      { "id": "p3", "group": "Preposició", "content": { "type": "text", "content": "_nach_" } },
+      { "id": "p4", "group": "Preposició", "content": { "type": "text", "content": "_seit_" } },
+      { "id": "p5", "group": "Preposició", "content": { "type": "text", "content": "_von_" } },
+      { "id": "p6", "group": "Preposició", "content": { "type": "text", "content": "_zu_" } },
+      { "id": "p7", "group": "Preposició", "content": { "type": "text", "content": "_bei_" } },
+      { "id": "s1", "group": "Significat", "content": { "type": "text", "content": "de (origen)" } },
+      { "id": "s2", "group": "Significat", "content": { "type": "text", "content": "amb" } },
+      { "id": "s3", "group": "Significat", "content": { "type": "text", "content": "cap a (ciutats) / després de" } },
+      { "id": "s4", "group": "Significat", "content": { "type": "text", "content": "des de (fa...)" } },
+      { "id": "s5", "group": "Significat", "content": { "type": "text", "content": "de (procedència / agent)" } },
+      { "id": "s6", "group": "Significat", "content": { "type": "text", "content": "a / cap a (persona o institució)" } },
+      { "id": "s7", "group": "Significat", "content": { "type": "text", "content": "a casa de / a (empresa)" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Preposició",
+    "groupBLabel": "Significat"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["p1", "s1"],
+      ["p2", "s2"],
+      ["p3", "s3"],
+      ["p4", "s4"],
+      ["p5", "s5"],
+      ["p6", "s6"],
+      ["p7", "s7"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Aquestes set són el nucli dur (_aus-bei-mit-nach-seit-von-zu_); _gegenüber_ (davant de) completa el grup.",
+      "references": ["A1a-34"]
+    },
+    "incorrect": {
+      "default": "Repassa la taula inicial. _nach_ i _zu_ es confonen sovint: _nach_ + ciutat/país sense article; _zu_ + persona o institució. _bei_ vs _mit_: _bei_ és localització (\"a casa de\"), _mit_ és companyia (\"amb\")."
+    }
+  }
+}

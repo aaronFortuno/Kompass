@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-34-ex-05",
+  "topicId": "A1a-34",
+  "title": "Posa el sintagma en datiu",
+  "prompt": "Escriu el sintagma entre parèntesis en datiu. Inclou l'article (o el possessiu) i el substantiu, amb _-n_ al final si és plural.",
+  "difficulty": 3,
+  "tags": ["datiu", "producció", "declinació", "typein", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) _Ich spreche mit {{1}}._ (_der Lehrer_)\n\nb) _Das Buch ist von {{2}}._ (_meine Schwester_)\n\nc) _Er spielt mit {{3}}._ (_die Kinder_, plural)\n\nd) _Sie kommt aus {{4}}._ (_die Türkei_)",
+    "blanks": [
+      { "id": "1", "label": "masculí det." },
+      { "id": "2", "label": "femení poss." },
+      { "id": "3", "label": "plural" },
+      { "id": "4", "label": "femení det. (país)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "article + substantiu" },
+      { "blankId": "2", "placeholder": "possessiu + substantiu" },
+      { "blankId": "3", "placeholder": "article + substantiu (+n)" },
+      { "blankId": "4", "placeholder": "article + país" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["dem Lehrer"],
+      "2": ["meiner Schwester"],
+      "3": ["den Kindern"],
+      "4": ["der Türkei"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. (a) _==dem Lehrer==_ (m. dat.). (b) _==meiner Schwester==_ (f. dat., poss. com _einer_). (c) _==den Kindern==_ (plural amb _-n_). (d) _==der Türkei==_ (países com _die Türkei_ porten article fix).",
+      "references": ["A1a-34"]
+    },
+    "incorrect": {
+      "default": "Repassem les formes: masculí dat. → _dem_; femení dat. → _der_ (possessiu → _meiner_, _deiner_…); plural dat. → _den_ + substantiu amb _-n_; i alguns països porten article fix (_die Türkei_, _die Schweiz_, _die USA_, _der Iran_).",
+      "byResponse": [
+        {
+          "match": { "3": "den Kinder" },
+          "message": "Plural en datiu: no oblidis afegir _-n_ al substantiu. _die Kinder_ → _==den Kindern==_.",
+          "references": ["A1a-34"]
+        },
+        {
+          "match": { "4": "Türkei" },
+          "message": "_die Türkei_ porta article fix. _aus_ demana datiu → _==der Türkei==_.",
+          "references": ["A1a-34"]
+        },
+        {
+          "match": { "2": "meine Schwester" },
+          "message": "_meine_ seria nominatiu/acusatiu femení. En datiu femení els possessius es declinen com _einer_: _==meiner== Schwester_.",
+          "references": ["A1a-34"]
+        },
+        {
+          "match": { "1": "der Lehrer" },
+          "message": "_der_ seria nominatiu masculí. Amb _mit_ (datiu) i un masculí: _==dem== Lehrer_.",
+          "references": ["A1a-34"]
+        }
+      ]
+    }
+  }
+}

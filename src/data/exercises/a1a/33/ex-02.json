@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-33-ex-02",
+  "topicId": "A1a-33",
+  "title": "Regla -ste a partir del 20",
+  "prompt": "Escriu l'ordinal del cardinal **30** (_dreißig_).",
+  "difficulty": 1,
+  "tags": ["ordinalzahlen", "ste", "typein", "quick-check"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "30 → _der/die/das_ {{1}}",
+    "blanks": [
+      { "id": "1", "label": "ordinal de 30" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "ordinal en minúscula" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "dreißigste"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. A partir de 20 → ==_-ste_==. _dreißig_ + _ste_ = ==_dreißigste_==.",
+      "references": ["A1a-33"]
+    },
+    "incorrect": {
+      "default": "Recorda el tall al 20: a partir d'aquí és ==_-ste_==, no _-te_. I s'escriu amb ==ß==. Forma correcta: _dreißigste_.",
+      "byResponse": [
+        {
+          "match": { "1": "dreißigte" },
+          "message": "Recorda el tall al 20: a partir d'aquí és ==_-ste_==, no _-te_. Forma correcta: _dreißigste_.",
+          "references": ["A1a-33"]
+        },
+        {
+          "match": { "1": "dreissigste" },
+          "message": "Gairebé! En alemany estàndard s'escriu amb ==ß==: _dreißigste_ (a Suïssa seria _dreissigste_, però aquí seguim la norma alemanya).",
+          "references": ["A1a-33"]
+        }
+      ]
+    }
+  }
+}

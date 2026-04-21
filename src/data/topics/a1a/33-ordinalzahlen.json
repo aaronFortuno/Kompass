@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-33",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 33,
+  "title": "Die Ordinalzahlen",
+  "shortTitle": "Ordinals",
+  "description": "Els números ordinals alemanys (_erste, zweite, dritte…_). Regla general **-te** fins al 19 i **-ste** a partir del 20, amb les quatre úniques excepcions (_erste, dritte, siebte, achte_). Ús obligatori en dates (_der erste April_, escrit _1. April_), declinació com a adjectius (_der erste, den ersten_) i paranys típics (punt al número, tall al 20, doble _t_ a _dritte_).",
+  "axes": ["vocabulari-tematic"],
+  "prerequisites": ["A1a-28"],
+  "estimatedMinutes": 15,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Primer, segon, tercer...\n\nEn català dius **primer, segon, tercer, quart** sense pensar-hi. Són paraules diferents del número cardinal (_un, dos, tres, quatre_), igual que en alemany, però amb una diferència clau: ==l'alemany forma els ordinals amb una regla molt regular==, amb només quatre excepcions.\n\nEn aquesta lliçó (uns 10-15 minuts) aprendràs:\n\n1. La regla **+ te** fins al 19.\n2. La regla **+ ste** del 20 endavant.\n3. Les **quatre excepcions** (_erste, dritte, siebte, achte_).\n4. Com s'usen en **dates** (el context més freqüent).\n5. Com es **declinen** (perquè són adjectius, no números invariables)."
+        }
+      ]
+    },
+    {
+      "id": "rule-te",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### La regla general (1-19): cardinal + **te**\n\nDe l'1 al 19, l'ordinal es forma afegint ==**-te**== al número cardinal. Sense excepcions... llevat de quatre casos que veurem tot seguit."
+        },
+        {
+          "type": "table",
+          "title": "Ordinals regulars de l'1 al 19",
+          "headers": ["Cardinal", "Ordinal"],
+          "rows": [
+            ["vier (4)", "vier**te**"],
+            ["fünf (5)", "fünf**te**"],
+            ["sechs (6)", "sechs**te**"],
+            ["neun (9)", "neun**te**"],
+            ["zehn (10)", "zehn**te**"],
+            ["elf (11)", "elf**te**"],
+            ["zwölf (12)", "zwölf**te**"],
+            ["dreizehn (13)", "dreizehn**te**"],
+            ["vierzehn (14)", "vierzehn**te**"],
+            ["neunzehn (19)", "neunzehn**te**"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Com recordar-ho",
+          "body": "Si saps el cardinal, ja saps l'ordinal. Només cal afegir _-te_. Més fàcil que en català, on _dos → segon_ canvia completament la paraula."
+        }
+      ]
+    },
+    {
+      "id": "irregulars",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Les quatre excepcions (aprèn-les de memòria)\n\nHi ha només **quatre ordinals irregulars**, i són freqüents. Val la pena memoritzar-los ara."
+        },
+        {
+          "type": "table",
+          "title": "Els quatre ordinals irregulars",
+          "headers": ["Núm.", "Cardinal", "Ordinal (irregular)", "Regla que esperaries"],
+          "rows": [
+            ["1", "eins", "==**erste**==", "_einste_ ❌"],
+            ["3", "drei", "==**dritte**==", "_dreite_ ❌"],
+            ["7", "sieben", "==**siebte**==", "_siebente_ (també existeix, però _siebte_ és la forma estàndard)"],
+            ["8", "acht", "==**achte**==", "_achtte_ → només una _t_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Truc mnemotècnic",
+          "body": "_erste, dritte, siebte, achte_ → **1, 3, 7, 8**. Els altres (2, 4, 5, 6, 9, 10, 11...) són regulars."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Nota sobre el 8",
+          "body": "_acht_ ja acaba en _-t_, així que només s'afegeix _-e_ (no _-te_, que doblaria la _t_). Passa igual amb les desenes en _-ig_ més tard."
+        }
+      ]
+    },
+    {
+      "id": "check-basics",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-33-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "rule-ste",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### A partir del 20: cardinal + **ste**\n\nDel **20 endavant**, la regla canvia lleugerament: en lloc de _-te_, s'afegeix ==**-ste**==."
+        },
+        {
+          "type": "table",
+          "title": "Ordinals a partir del 20",
+          "headers": ["Cardinal", "Ordinal"],
+          "rows": [
+            ["zwanzig (20)", "zwanzig**ste**"],
+            ["einundzwanzig (21)", "einundzwanzig**ste**"],
+            ["dreißig (30)", "dreißig**ste**"],
+            ["vierzig (40)", "vierzig**ste**"],
+            ["hundert (100)", "hundert**ste**"],
+            ["tausend (1000)", "tausend**ste**"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Per què el canvi?** Fonèticament, els números a partir del 20 acaben en sons (_-zig_, _-ßig_, _-ert_, _-end_) que enllacen millor amb _-ste_ que amb _-te_. No cal memoritzar el perquè; cal memoritzar el **tall al 20**."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Regla resum",
+          "body": "- 1-19 → _-te_ (amb 4 excepcions)\n- 20+ → _-ste_ (sense excepcions)"
+        }
+      ]
+    },
+    {
+      "id": "check-ste",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-33-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "dates",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### L'ús més freqüent: **dates**\n\nOn trobaràs ordinals constantment és quan diguis **dates**. En alemany, igual que en català, els dies del mes s'expressen com a ordinals (\"el **primer** d'abril\", no \"_l'u d'abril_\"... bé, tret del català col·loquial).\n\n**Patró per preguntar i dir una data:**\n\n- _Der **Wievielte** ist heute?_ → Quin dia (quin número) és avui?\n- _Heute ist **der erste** April._ → Avui és l'u (el primer) d'abril.\n- _Heute ist **der dritte** Mai._ → Avui és el tres de maig.\n- _Heute ist **der einundzwanzigste** Juni._ → Avui és el 21 de juny.\n\n**En format escrit**, l'ordinal es marca amb un **punt** darrere del número (a diferència del català/espanyol, que usa º/ª):\n\n- **1. April** = _der erste April_\n- **3. Mai** = _der dritte Mai_\n- **21. Juni** = _der einundzwanzigste Juni_"
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Contrast ES/CA/DE",
+          "body": "- ES: _\"el 1 de abril\"_ (cardinal)\n- CA: _\"l'u d'abril\"_ o _\"el primer d'abril\"_ (els dos existeixen)\n- DE: ==_der erste April_== (ordinal obligatori)\n\nL'alemany no accepta _\"der eins April\"_. Sempre ordinal."
+        }
+      ]
+    },
+    {
+      "id": "declension",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Els ordinals es declinen (són adjectius)\n\nAixò és important: un ordinal alemany **no** és una paraula invariable. Es comporta com un **adjectiu** i es declina segons el cas, gènere i número del que acompanya.\n\nAl nivell A1 només necessites el patró més bàsic, amb l'article definit."
+        },
+        {
+          "type": "table",
+          "title": "Declinació bàsica amb article definit",
+          "headers": ["Cas", "Masculí", "Femení", "Neutre"],
+          "rows": [
+            ["Nominatiu", "der erst**e**", "die erst**e**", "das erst**e**"],
+            ["Acusatiu", "den erst**en**", "die erst**e**", "das erst**e**"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Beispiele:**\n\n- _==Der erste== Tag ist Montag._ → El primer dia és dilluns. (nominatiu, masculí)\n- _Ich lese ==das dritte== Buch._ → Llegeixo el tercer llibre. (acusatiu, neutre)\n- _Ich nehme ==den zweiten== Zug._ → Agafo el segon tren. (acusatiu, masculí → _-en_)"
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Atenció masculí acusatiu",
+          "body": "Igual que amb els adjectius i articles (**A1a-28**), el masculí canvia a _-en_ en acusatiu: _der erste → den ersten_. Si ja has treballat amb els adjectius predicatius, aquest patró t'és familiar.\n\nEn **dates**, la forma més habitual és amb _der_ + ordinal (_der erste_, _der dritte_...), perquè és el **subjecte** de la frase _Heute ist..._"
+        }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys i errors freqüents\n\n**1. Aplicar _-te_ a partir del 20.**\n\n❌ _zwanzigte_ → ✅ ==_zwanzigste_==. Pensa: 20 és el tall. A partir d'aquí, sempre _-ste_.\n\n**2. Fer regulars els irregulars.**\n\n❌ _einte, dreite, siebente, achtte_ → ✅ _erste, dritte, siebte, achte_. Només quatre, memoritza'ls: **1, 3, 7, 8**.\n\n**3. Oblidar el punt en format escrit.**\n\n❌ _Heute ist der 1 April._ → ✅ _Heute ist der ==1.== April._. El punt darrere del número és el que el converteix en ordinal en alemany escrit.\n\n**4. Usar cardinal en dates.**\n\n❌ _Heute ist der eins April._ → ✅ _Heute ist der **erste** April._. En dates, sempre ordinal (diferent del castellà _\"el uno de abril\"_).\n\n**5. No declinar l'ordinal.**\n\n❌ _Ich nehme den zweite Zug._ → ✅ _Ich nehme den zweit**en** Zug._. Són adjectius: acusatiu masculí → **-en**.\n\n**6. Confondre _siebte_ i _siebente_.**\n\nLes dues existeixen, però ==_siebte_== és la forma estàndard moderna. _Siebente_ encara s'escolta, sobretot en contextos formals o literaris. Al nivell A1, queda't amb _siebte_."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-33-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-33-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-33-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-33-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Recapitulem\n\nEls **Ordinalzahlen** alemanys són molt més regulars que en català. Has après:\n\n1. **Regla 1-19:** cardinal + ==_-te_== (_vierte, fünfte, zehnte, neunzehnte_).\n2. **Regla 20+:** cardinal + ==_-ste_== (_zwanzigste, dreißigste, hundertste_).\n3. **Quatre excepcions:** ==_erste, dritte, siebte, achte_== (1, 3, 7, 8).\n4. **Dates:** ordinal obligatori (_der erste April_), marcat amb punt en escrit (_1. April_).\n5. **Declinació:** són adjectius → _der erst**e**_, _den erst**en**_ (acusatiu masculí)."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "El reflex mental útil",
+          "body": "Quan vulguis dir un ordinal, pregunta't:\n- És 1, 3, 7 o 8? → Forma irregular.\n- És fins al 19? → _-te_.\n- És del 20 endavant? → _-ste_.\n- L'estic usant amb un substantiu? → Declina'l (_-e_ o _-en_)."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Exemple integrador",
+          "body": "_Heute ist der einundzwanzigste April. Es ist mein erster Deutschkurs im zweiten Semester. Der dritte Tag der Woche ist Mittwoch, und am achten Mai habe ich Geburtstag._\n\n→ Avui és 21 d'abril. És el meu primer curs d'alemany al segon semestre. El tercer dia de la setmana és dimecres, i el 8 de maig faig els anys."
+        },
+        {
+          "type": "table",
+          "title": "Síntesi · Regla general",
+          "headers": ["Rang", "Regla", "Excepcions"],
+          "rows": [
+            ["1-19", "cardinal + **-te**", "==erste== (1), ==dritte== (3), ==siebte== (7), ==achte== (8)"],
+            ["20+", "cardinal + **-ste**", "cap"]
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-34-ex-03",
+  "topicId": "A1a-34",
+  "title": "_nach_ o _zu_?",
+  "prompt": "Tria la preposició correcta.",
+  "difficulty": 2,
+  "tags": ["datiu", "nach", "zu", "singlechoice", "quick-check"],
+  "stimulus": {
+    "type": "text",
+    "content": "Completa: _Am Samstag fahre ich ___ Hamburg._ (_Dissabte vaig a Hamburg._)"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "nach", "label": "_nach_" },
+      { "id": "zu", "label": "_zu_" },
+      { "id": "zum", "label": "_zum_" },
+      { "id": "bei", "label": "_bei_" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "nach" },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. _Hamburg_ és una ciutat sense article → _==nach==_.",
+      "references": ["A1a-34"]
+    },
+    "incorrect": {
+      "default": "Recorda: _nach_ + ciutats i països sense article; _zu(m/r)_ + persones o institucions; _bei_ és localització (\"a casa de\"), no destinació.",
+      "byResponse": [
+        {
+          "match": { "response": "zu" },
+          "message": "_zu_ s'usa amb persones o institucions (_zum Arzt_, _zur Schule_). Amb ciutats i països sense article: _==nach==_.",
+          "references": ["A1a-34"]
+        },
+        {
+          "match": { "response": "zum" },
+          "message": "_zum_ (= _zu + dem_) necessita un substantiu masculí o neutre amb article (_zum Arzt_, _zum Bahnhof_). _Hamburg_ no en porta → _==nach== Hamburg_.",
+          "references": ["A1a-34"]
+        },
+        {
+          "match": { "response": "bei" },
+          "message": "_bei_ significa \"a casa de\" o \"a prop de\"; no indica destinació de viatge. Amb ciutats: _==nach==_.",
+          "references": ["A1a-34"]
+        }
+      ]
+    }
+  }
+}

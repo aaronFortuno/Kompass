@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-34-ex-04",
+  "topicId": "A1a-34",
+  "title": "Preposicions en un text: _Anna in Berlin_",
+  "prompt": "Llegeix el text i tria la preposició adequada per a cada buit.",
+  "difficulty": 2,
+  "tags": ["datiu", "preposicions", "text", "dropdownfill", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Anna kommt {{1}} Österreich. Sie wohnt jetzt {{2}} ihrer Tante in Berlin. Jeden Morgen fährt sie {{3}} dem Fahrrad {{4}} Universität. {{5}} drei Monaten lernt sie Spanisch._",
+    "blanks": [
+      { "id": "1", "label": "origen" },
+      { "id": "2", "label": "residència" },
+      { "id": "3", "label": "mitjà de transport" },
+      { "id": "4", "label": "destinació institucional" },
+      { "id": "5", "label": "durada" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["aus", "bei", "mit", "nach", "seit", "von", "zu", "zur"] },
+      { "blankId": "2", "options": ["aus", "bei", "mit", "nach", "seit", "von", "zu", "zur"] },
+      { "blankId": "3", "options": ["aus", "bei", "mit", "nach", "seit", "von", "zu", "zur"] },
+      { "blankId": "4", "options": ["aus", "bei", "mit", "nach", "seit", "von", "zu", "zur"] },
+      { "blankId": "5", "options": ["aus", "bei", "mit", "nach", "seit", "von", "zu", "zur"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "aus",
+      "2": "bei",
+      "3": "mit",
+      "4": "zur",
+      "5": "seit"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has distingit bé origen (_==aus==_), residència (_==bei==_), mitjà (_==mit==_), destinació (_==zur==_) i durada (_==seit==_).",
+      "references": ["A1a-34"]
+    },
+    "incorrect": {
+      "default": "Recorda: _aus_ = origen; _bei_ = \"a casa de\"; _mit_ = mitjà/companyia; _zur_ (= _zu + der_) davant _Universität_ femení; _seit_ = des de fa (acció que continua).",
+      "byResponse": [
+        {
+          "match": { "4": "nach" },
+          "message": "_nach_ només amb ciutats i països sense article. _die Universität_ és una institució femenina → _==zur== Universität_ (_zu + der_).",
+          "references": ["A1a-34"]
+        },
+        {
+          "match": { "4": "zu" },
+          "message": "_Universität_ és femenina i porta article, així que _zu_ contreu amb _der_ → _==zur== Universität_.",
+          "references": ["A1a-34"]
+        },
+        {
+          "match": { "5": "von" },
+          "message": "Per a \"fa X temps que…\" (acció que continua ara) s'usa _==seit==_ + datiu: _seit drei Monaten_.",
+          "references": ["A1a-34"]
+        },
+        {
+          "match": { "2": "mit" },
+          "message": "_mit ihrer Tante_ voldria dir \"amb la seva tieta\" (companyia). Aquí parlem d'on viu → _==bei== ihrer Tante_ (a casa de la seva tieta).",
+          "references": ["A1a-34"]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-33-ex-03",
+  "topicId": "A1a-33",
+  "title": "Ordinals 1-19: regulars i irregulars",
+  "prompt": "Escriu l'ordinal corresponent a cada número (en minúscula, només la forma base sense article).",
+  "difficulty": 2,
+  "tags": ["ordinalzahlen", "te", "irregulars", "typein", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "2 → {{1}}\n3 → {{2}}\n7 → {{3}}\n8 → {{4}}\n12 → {{5}}\n19 → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "ordinal de 2" },
+      { "id": "2", "label": "ordinal de 3" },
+      { "id": "3", "label": "ordinal de 7" },
+      { "id": "4", "label": "ordinal de 8" },
+      { "id": "5", "label": "ordinal de 12" },
+      { "id": "6", "label": "ordinal de 19" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "regular" },
+      { "blankId": "2", "placeholder": "irregular" },
+      { "blankId": "3", "placeholder": "irregular" },
+      { "blankId": "4", "placeholder": "irregular" },
+      { "blankId": "5", "placeholder": "regular" },
+      { "blankId": "6", "placeholder": "regular" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "zweite",
+      "2": "dritte",
+      "3": "siebte",
+      "4": "achte",
+      "5": "zwölfte",
+      "6": "neunzehnte"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has aplicat la regla _-te_ i reconegut les tres excepcions dins de l'1-19 (_dritte, siebte, achte_). _zweite_, _zwölfte_ i _neunzehnte_ segueixen la regla general.",
+      "references": ["A1a-33"]
+    },
+    "incorrect": {
+      "default": "Revisa: 2 → _zweite_ (regular), 3 → ==_dritte_== (irregular, doble _t_), 7 → ==_siebte_== (irregular), 8 → ==_achte_== (irregular, només una _t_), 12 → _zwölfte_ (regular), 19 → _neunzehnte_ (regular).",
+      "byResponse": [
+        {
+          "match": { "2": "dreite" },
+          "message": "_drei_ és irregular: ==_dritte_== (doble _t_, sense _-ei_).",
+          "references": ["A1a-33"]
+        },
+        {
+          "match": { "3": "siebente" },
+          "message": "_siebente_ encara s'escolta en registres formals, però la forma estàndard moderna és ==_siebte_==.",
+          "references": ["A1a-33"]
+        },
+        {
+          "match": { "4": "achtte" },
+          "message": "_acht_ ja acaba en _-t_, per això només afegim _-e_: ==_achte_==, no _achtte_.",
+          "references": ["A1a-33"]
+        }
+      ]
+    }
+  }
+}

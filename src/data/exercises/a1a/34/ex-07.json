@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-34-ex-07",
+  "topicId": "A1a-34",
+  "title": "Context → preposició alemanya",
+  "prompt": "Relaciona cada frase en català amb la preposició alemanya que caldria per traduir-la.",
+  "difficulty": 2,
+  "tags": ["datiu", "preposicions", "context", "matchpairs", "assessment"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "f1", "group": "Frase", "content": { "type": "text", "content": "Visc a casa dels meus avis." } },
+      { "id": "f2", "group": "Frase", "content": { "type": "text", "content": "Sóc de Barcelona." } },
+      { "id": "f3", "group": "Frase", "content": { "type": "text", "content": "Vaig cap a Viena." } },
+      { "id": "f4", "group": "Frase", "content": { "type": "text", "content": "Fa dues setmanes que estic malalt." } },
+      { "id": "f5", "group": "Frase", "content": { "type": "text", "content": "Parlo amb la meva mare." } },
+      { "id": "f6", "group": "Frase", "content": { "type": "text", "content": "El regal és de la meva tieta." } },
+      { "id": "f7", "group": "Frase", "content": { "type": "text", "content": "Vaig al metge." } },
+      { "id": "r1", "group": "Preposició", "content": { "type": "text", "content": "**bei** (_bei meinen Großeltern_)" } },
+      { "id": "r2", "group": "Preposició", "content": { "type": "text", "content": "**aus** (_aus Barcelona_)" } },
+      { "id": "r3", "group": "Preposició", "content": { "type": "text", "content": "**nach** (_nach Wien_)" } },
+      { "id": "r4", "group": "Preposició", "content": { "type": "text", "content": "**seit** (_seit zwei Wochen_)" } },
+      { "id": "r5", "group": "Preposició", "content": { "type": "text", "content": "**mit** (_mit meiner Mutter_)" } },
+      { "id": "r6", "group": "Preposició", "content": { "type": "text", "content": "**von** (_von meiner Tante_)" } },
+      { "id": "r7", "group": "Preposició", "content": { "type": "text", "content": "**zu** (_zum Arzt_)" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Frase",
+    "groupBLabel": "Preposició"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["f1", "r1"],
+      ["f2", "r2"],
+      ["f3", "r3"],
+      ["f4", "r4"],
+      ["f5", "r5"],
+      ["f6", "r6"],
+      ["f7", "r7"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Ja tens el mapa mental del grup dativ-fix: origen (_aus_), residència (_bei_), companyia (_mit_), destinació-ciutat (_nach_) vs destinació-institució (_zu_), durada (_seit_) i procedència/agent (_von_).",
+      "references": ["A1a-34"]
+    },
+    "incorrect": {
+      "default": "Torna a la taula inicial de la lliçó. El contrast més important és _nach_ (ciutats/països sense article) vs. _zu_ (persones/institucions), i _bei_ (a casa de / a l'empresa) vs. _mit_ (companyia)."
+    }
+  }
+}

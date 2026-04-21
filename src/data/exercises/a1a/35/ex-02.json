@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-35-ex-02",
+  "topicId": "A1a-35",
+  "title": "Tria l'adjectiu segons el context",
+  "prompt": "Completa cada pregunta amb l'adjectiu adequat. Llegeix la resposta per identificar de quina propietat es tracta.",
+  "difficulty": 2,
+  "tags": ["wie", "adjectiu", "contrast", "dropdownfill", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Wie {{1}} bist du?_ — _Ich bin 30 Jahre alt._\n2. _Wie {{2}} ist das Auto?_ — _15.000 Euro._\n3. _Wie {{3}} ist es von Barcelona nach München?_ — _Ungefähr 1.400 km._\n4. _Wie {{4}} ist der Fernsehturm?_ — _368 Meter._\n5. _Wie {{5}} gehst du ins Kino?_ — _Einmal pro Monat._",
+    "blanks": [
+      { "id": "1", "label": "propietat: edat" },
+      { "id": "2", "label": "propietat: preu d'un objecte" },
+      { "id": "3", "label": "propietat: distància" },
+      { "id": "4", "label": "propietat: alçada vertical" },
+      { "id": "5", "label": "propietat: freqüència" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["alt", "teuer", "hoch", "weit", "oft", "lang", "groß"] },
+      { "blankId": "2", "options": ["alt", "teuer", "hoch", "weit", "oft", "lang", "groß"] },
+      { "blankId": "3", "options": ["alt", "teuer", "hoch", "weit", "oft", "lang", "groß"] },
+      { "blankId": "4", "options": ["alt", "teuer", "hoch", "weit", "oft", "lang", "groß"] },
+      { "blankId": "5", "options": ["alt", "teuer", "hoch", "weit", "oft", "lang", "groß"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "alt",
+      "2": "teuer",
+      "3": "weit",
+      "4": "hoch",
+      "5": "oft"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has detectat bé la propietat que es pregunta a cada cas: edat → _alt_, preu d'objecte → _teuer_, distància → _weit_, alçada vertical → _hoch_, freqüència → _oft_.",
+      "references": ["A1a-35"]
+    },
+    "incorrect": {
+      "default": "Recorda les equivalències: edat → _alt_ (anys), preu d'objecte concret → _teuer_, distància entre llocs → _weit_ (km), alçada vertical → _hoch_ (metres), freqüència → _oft_.",
+      "byResponse": [
+        {
+          "match": { "2": "hoch" },
+          "message": "_Wie hoch_ funciona per a preus **abstractes** (lloguer, salari). Per al cost concret d'un objecte que compres, el natural és _wie teuer ist das Auto?_",
+          "references": ["A1a-35"]
+        },
+        {
+          "match": { "4": "groß" },
+          "message": "Per a l'alçada vertical d'una torre o edifici, sempre _hoch_. _groß_ seria mida general / superfície.",
+          "references": ["A1a-35"]
+        },
+        {
+          "match": { "3": "lang" },
+          "message": "La distància entre dos llocs és _wie weit_. _Wie lang_ seria per a la longitud física d'un objecte.",
+          "references": ["A1a-35"]
+        }
+      ]
+    }
+  }
+}

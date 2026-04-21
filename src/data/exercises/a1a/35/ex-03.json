@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-35-ex-03",
+  "topicId": "A1a-35",
+  "title": "Formula la pregunta que correspon a cada resposta",
+  "prompt": "Escriu la pregunta completa en alemany amb _wie + adjectiu_. Recorda: verb en segona posició i bloc _wie + adj._ en primera.",
+  "difficulty": 2,
+  "tags": ["wie", "produccio", "typein", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Die Wohnung ist 80 qm._ → {{1}}\n2. _Die Miete ist 500 Euro._ → {{2}}\n3. _Ich bin 28 Jahre alt._ → {{3}}\n4. _Der Film dauert zwei Stunden._ → {{4}}",
+    "blanks": [
+      { "id": "1", "label": "preguntar per la superfície del pis" },
+      { "id": "2", "label": "preguntar per l'import del lloguer" },
+      { "id": "3", "label": "preguntar per l'edat" },
+      { "id": "4", "label": "preguntar per la durada" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Wie groß …?" },
+      { "blankId": "2", "placeholder": "Wie hoch …?" },
+      { "blankId": "3", "placeholder": "Wie alt …?" },
+      { "blankId": "4", "placeholder": "Wie lange …?" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Wie groß ist die Wohnung?", "Wie groß ist die Wohnung"],
+      "2": ["Wie hoch ist die Miete?", "Wie hoch ist die Miete"],
+      "3": ["Wie alt bist du?", "Wie alt bist du", "Wie alt sind Sie?", "Wie alt sind Sie"],
+      "4": ["Wie lange dauert der Film?", "Wie lange dauert der Film"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has aplicat correctament la fórmula _wie + adjectiu + verb + subjecte_. El verb sempre en segona posició.",
+      "references": ["A1a-35"]
+    },
+    "incorrect": {
+      "default": "Recorda l'estructura _Wie + adj. + verb + subjecte + ...?_ i tria l'adjectiu segons la propietat: superfície → _groß_, lloguer (import) → _hoch_, edat → _alt_, durada → _lange_ (amb _-e_)."
+    }
+  }
+}

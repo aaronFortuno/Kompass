@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-34-ex-01",
+  "topicId": "A1a-34",
+  "title": "L'article en datiu després de _mit_",
+  "prompt": "Tria l'article correcte. _Zug_ és masculí (_der Zug_) i _mit_ sempre regeix datiu.",
+  "difficulty": 1,
+  "tags": ["datiu", "mit", "article", "masculí", "singlechoice", "quick-check"],
+  "stimulus": {
+    "type": "text",
+    "content": "Completa: _Ich fahre mit ___ Zug nach München._ (_Vaig en tren cap a Munic._)"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "den", "label": "_den_" },
+      { "id": "dem", "label": "_dem_" },
+      { "id": "der", "label": "_der_" },
+      { "id": "das", "label": "_das_" }
+    ]
+  },
+  "validation": { "type": "exactMatch", "answer": "dem" },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. _mit_ sempre demana datiu; masculí singular en datiu fa ==_dem_==. Per tant: _mit ==dem== Zug_.",
+      "references": ["A1a-34"]
+    },
+    "incorrect": {
+      "default": "Recorda: _mit_ sempre va amb datiu, i _Zug_ és masculí (_der Zug_). En datiu, masculí singular fa _==dem==_.",
+      "byResponse": [
+        {
+          "match": { "response": "den" },
+          "message": "_den_ és acusatiu masculí. _mit_ sempre va amb datiu → _==dem==_.",
+          "references": ["A1a-28", "A1a-34"]
+        },
+        {
+          "match": { "response": "der" },
+          "message": "_der_ seria nominatiu masculí (o datiu femení). Aquí _der Zug_ és masculí i necessitem el datiu masculí: _==dem==_.",
+          "references": ["A1a-34"]
+        },
+        {
+          "match": { "response": "das" },
+          "message": "_das_ és nominatiu/acusatiu neutre. Aquí cal datiu masculí: _==dem==_.",
+          "references": ["A1a-34"]
+        }
+      ]
+    }
+  }
+}

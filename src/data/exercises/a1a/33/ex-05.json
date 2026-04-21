@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-33-ex-05",
+  "topicId": "A1a-33",
+  "title": "Dates en alemany",
+  "prompt": "Completa cada data amb l'article i l'ordinal corresponents (forma parlada, començant per _Heute ist_).",
+  "difficulty": 2,
+  "tags": ["ordinalzahlen", "dates", "datum", "typein", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1 d'abril → _Heute ist_ {{1}} _April._\n3 de maig → _Heute ist_ {{2}} _Mai._\n8 de juny → _Heute ist_ {{3}} _Juni._\n21 de juliol → _Heute ist_ {{4}} _Juli._",
+    "blanks": [
+      { "id": "1", "label": "article + ordinal (1)" },
+      { "id": "2", "label": "article + ordinal (3)" },
+      { "id": "3", "label": "article + ordinal (8)" },
+      { "id": "4", "label": "article + ordinal (21)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "der …" },
+      { "blankId": "2", "placeholder": "der …" },
+      { "blankId": "3", "placeholder": "der …" },
+      { "blankId": "4", "placeholder": "der …" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "der erste",
+      "2": "der dritte",
+      "3": "der achte",
+      "4": "der einundzwanzigste"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has recordat l'article ==_der_== (masculí nominatiu, perquè _Tag_ és masculí i està el·lidit) i has declinat l'ordinal en _-e_: _der erste, der dritte, der achte, der einundzwanzigste_.",
+      "references": ["A1a-33"]
+    },
+    "incorrect": {
+      "default": "Les dates alemanyes necessiten l'article i l'ordinal declinat: ==_der_== + ordinal + _-e_. Repassa els irregulars (_erste_ per 1, _dritte_ per 3, _achte_ per 8).",
+      "byResponse": [
+        {
+          "match": { "1": "erste" },
+          "message": "Falta l'article. En alemany la data demana ==_der erste_== (no només _erste_).",
+          "references": ["A1a-33"]
+        },
+        {
+          "match": { "1": "der eins" },
+          "message": "En dates, l'alemany vol ordinal, no cardinal. _1 → erste_ (irregular): ==_der erste April_==.",
+          "references": ["A1a-33"]
+        },
+        {
+          "match": { "3": "der achtte" },
+          "message": "_acht_ ja acaba en _-t_: només una _t_. Forma correcta: ==_der achte_==.",
+          "references": ["A1a-33"]
+        }
+      ]
+    }
+  }
+}

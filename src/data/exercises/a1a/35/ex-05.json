@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-35-ex-05",
+  "topicId": "A1a-35",
+  "title": "Aparella preguntes i respostes (buscar un pis)",
+  "prompt": "Una persona pregunta sobre un pis en lloguer. Empareja cada pregunta amb la resposta que li correspon per unitat de mesura.",
+  "difficulty": 2,
+  "tags": ["wie", "contextual", "wohnung", "matchpairs", "assessment"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "q-gross", "group": "Preguntes", "content": { "type": "text", "content": "_Wie groß ist die Wohnung?_" } },
+      { "id": "q-hoch", "group": "Preguntes", "content": { "type": "text", "content": "_Wie hoch ist die Miete?_" } },
+      { "id": "q-alt", "group": "Preguntes", "content": { "type": "text", "content": "_Wie alt ist das Gebäude?_" } },
+      { "id": "q-weit", "group": "Preguntes", "content": { "type": "text", "content": "_Wie weit ist es bis zum Zentrum?_" } },
+      { "id": "r-qm", "group": "Respostes", "content": { "type": "text", "content": "_85 Quadratmeter._" } },
+      { "id": "r-euro", "group": "Respostes", "content": { "type": "text", "content": "_650 Euro pro Monat._" } },
+      { "id": "r-jahre", "group": "Respostes", "content": { "type": "text", "content": "_40 Jahre alt._" } },
+      { "id": "r-km", "group": "Respostes", "content": { "type": "text", "content": "_Ungefähr 2 Kilometer._" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Preguntes",
+    "groupBLabel": "Respostes"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["q-gross", "r-qm"],
+      ["q-hoch", "r-euro"],
+      ["q-alt", "r-jahre"],
+      ["q-weit", "r-km"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has identificat bé cada propietat: _groß_ → superfície (qm), _hoch_ → preu del lloguer (euro), _alt_ → edat (anys), _weit_ → distància (km).",
+      "references": ["A1a-35"]
+    },
+    "incorrect": {
+      "default": "Recorda les unitats típiques per a cada adjectiu: _wie groß_ → m² / qm (superfície), _wie hoch (die Miete)_ → euros (import), _wie alt_ → anys (edat), _wie weit_ → km o minuts (distància)."
+    }
+  }
+}

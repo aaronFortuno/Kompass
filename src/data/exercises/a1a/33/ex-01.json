@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-33-ex-01",
+  "topicId": "A1a-33",
+  "title": "Regulars vs irregulars (1-10)",
+  "prompt": "Quin és l'ordinal correcte per al número **3**?",
+  "difficulty": 1,
+  "tags": ["ordinalzahlen", "irregulars", "singlechoice", "quick-check"],
+  "stimulus": {
+    "type": "text",
+    "content": "Tria la forma correcta de l'ordinal que correspon al cardinal _drei_."
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "a", "label": "_dreite_" },
+      { "id": "b", "label": "_drite_" },
+      { "id": "c", "label": "_dritte_" },
+      { "id": "d", "label": "_dreiste_" }
+    ]
+  },
+  "validation": {
+    "type": "exactMatch",
+    "answer": "c"
+  },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. ==_Dritte_== és una de les quatre excepcions: _erste, dritte, siebte, achte_.",
+      "references": ["A1a-33"]
+    },
+    "incorrect": {
+      "default": "_Drei_ és una de les quatre excepcions. La forma correcta és ==_dritte_== (amb doble _t_ i sense _-ei_).",
+      "byResponse": [
+        {
+          "match": { "response": "a" },
+          "message": "Seria la forma regular (_drei_ + _te_), però _drei_ és irregular: ==_dritte_== (amb doble _t_ i sense _-ei_).",
+          "references": ["A1a-33"]
+        },
+        {
+          "match": { "response": "b" },
+          "message": "Falta una _t_: _==dritte==_ s'escriu amb doble _t_.",
+          "references": ["A1a-33"]
+        },
+        {
+          "match": { "response": "d" },
+          "message": "_dreist_ significa \"descarat\" en alemany — no té res a veure amb l'ordinal. La forma correcta és ==_dritte_==.",
+          "references": ["A1a-33"]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-34-ex-06",
+  "topicId": "A1a-34",
+  "title": "Contraccions obligatòries",
+  "prompt": "Escriu la contracció de _preposició + article_ que apareix entre claus.",
+  "difficulty": 2,
+  "tags": ["datiu", "contraccions", "typein", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "a) _Ich gehe {{1}} Bahnhof._ (_zu dem_)\n\nb) _Die Uhr ist {{2}} Opa._ (_von dem_)\n\nc) _Wir sind {{3}} Arzt._ (_bei dem_)\n\nd) _Er fährt {{4}} Schule._ (_zu der_)",
+    "blanks": [
+      { "id": "1", "label": "zu + dem" },
+      { "id": "2", "label": "von + dem" },
+      { "id": "3", "label": "bei + dem" },
+      { "id": "4", "label": "zu + der" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "contracció" },
+      { "blankId": "2", "placeholder": "contracció" },
+      { "blankId": "3", "placeholder": "contracció" },
+      { "blankId": "4", "placeholder": "contracció" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["zum"],
+      "2": ["vom"],
+      "3": ["beim"],
+      "4": ["zur"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Recorda: _zu + dem = ==zum==_, _zu + der = ==zur==_, _bei + dem = ==beim==_, _von + dem = ==vom==_, _an + dem = ==am==_, _in + dem = ==im==_.",
+      "references": ["A1a-34"]
+    },
+    "incorrect": {
+      "default": "En alemany parlat, no contreure aquestes formes sona estrany. Fes-ho sempre, tret que vulguis emfatitzar el substantiu concret."
+    }
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-34",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 34,
+  "title": "Präpositionen mit Dativ",
+  "shortTitle": "Präp + Dat",
+  "description": "El grup de preposicions que sempre regeixen datiu (aus, bei, mit, nach, seit, von, zu, gegenüber), la forma dels articles en datiu (dem/der/dem/den + -n), les contraccions obligatòries (am, im, beim, vom, zum, zur) i els paranys típics per a catalanoparlants (nach vs zu, seit amb present, plural amb -n).",
+  "axes": ["preposicions", "casos"],
+  "prerequisites": ["A1a-14", "A1a-28"],
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Preposicions que sempre porten datiu\n\nFins ara has vist com els articles canvien entre **nominatiu** (subjecte, A1a-14) i **acusatiu** (complement directe, A1a-28). Avui entres a un nou territori: el ==datiu==.\n\nEn aquesta lliçó no treballarem _tot_ el datiu (això vindrà amb els pronoms i els verbs que el demanen), sinó un cas molt concret i molt freqüent: hi ha un **grup de preposicions que sempre, sense excepció, van seguides de datiu**.\n\nSón poques, però surten a cada frase: _amb_, _de_, _cap a_, _des de_… Memoritzar-les és rendible."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Temps estimat",
+          "body": "12-15 minuts. Al final faràs 4 exercicis globals per consolidar."
+        },
+        {
+          "type": "explanation",
+          "body": "Aquesta lliçó et prepara també per A1b, on descobriràs les **Wechselpräpositionen** (preposicions que canvien entre datiu i acusatiu segons el significat). Primer cal dominar aquestes, que són \"fixes\"."
+        }
+      ]
+    },
+    {
+      "id": "the-list",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### La llista que has de memoritzar\n\nLes preposicions que **sempre** demanen datiu són:"
+        },
+        {
+          "type": "table",
+          "headers": ["Preposició", "Significat principal", "Exemple"],
+          "rows": [
+            ["**aus**", "de (origen, procedència, material)", "_Ich komme ==aus der== Schweiz._"],
+            ["**bei**", "a casa de / a (empresa) / prop de", "_Ich wohne ==bei meinen== Eltern._"],
+            ["**mit**", "amb (companyia, instrument, mitjà)", "_Ich fahre ==mit dem== Bus._"],
+            ["**nach**", "cap a (ciutats/països sense article) / després de", "_Wir fliegen ==nach== Berlin._"],
+            ["**seit**", "des de (fa...) — temps continu", "_Ich lerne ==seit einem== Jahr Deutsch._"],
+            ["**von**", "de (procedència, agent, possessió)", "_Das ist ein Geschenk ==von meiner== Mutter._"],
+            ["**zu**", "a / cap a (destinació, persona o lloc)", "_Ich gehe ==zum== Arzt._"],
+            ["**gegenüber**", "davant de / enfront de", "_Die Bank ist ==dem Park== gegenüber._"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Regla mnemotècnica",
+          "body": "Memoritza-les com una cantarella: **_aus-bei-mit-nach-seit-von-zu_**. Digue-la en veu alta fins que et surti sola. Moltes gramàtiques alemanyes la canten com una sèrie de set paraules encadenades."
+        }
+      ]
+    },
+    {
+      "id": "dativ-articles",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Com queden els articles en datiu\n\nQuan una d'aquestes preposicions va seguida d'un substantiu amb article, l'article **canvia de forma** (es declina). Aquí tens la taula completa:"
+        },
+        {
+          "type": "table",
+          "headers": ["", "Masculí", "Femení", "Neutre", "Plural"],
+          "rows": [
+            ["**Nominatiu**", "der / ein", "die / eine", "das / ein", "die / —"],
+            ["**Acusatiu**", "**den** / **einen**", "die / eine", "das / ein", "die / —"],
+            ["==**Datiu**==", "==**dem**== / **einem**", "==**der**== / **einer**", "==**dem**== / **einem**", "==**den** + -n== / —"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Observa bé:\n\n- **Masculí i neutre comparteixen forma en datiu**: tots dos fan ==**dem**==.\n- **El femení és la forma _der_**, que en nominatiu era masculí — compte amb la confusió.\n- **El plural afegeix _-n_ al final del substantiu** (a més de l'article _den_): _die Kinder_ → ==_den Kindern_==. Si el substantiu ja acaba en _-n_ o _-s_, no se'n posa un altre.\n\n**Beispiele:**\n\n- _mit ==dem== Auto_ (el cotxe, neutre)\n- _mit ==der== Freundin_ (l'amiga, femení)\n- _mit ==dem== Bus_ (el bus, masculí)\n- _mit ==den== Freunden_ (els amics, plural → _Freunde_ + _-n_)"
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Contrast CA / ES / DE",
+          "body": "En català i castellà no declinem articles, així que aquesta marca sembla \"redundant\". En alemany, en canvi, **la forma de l'article t'avisa del cas** abans fins i tot d'escoltar el substantiu."
+        }
+      ]
+    },
+    {
+      "id": "contractions",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Contraccions obligatòries: am, zum, zur, beim, vom\n\nAlgunes combinacions preposició + article es **contrauen** de manera gairebé obligatòria (en el registre parlat, sempre). Apreneu-les com una sola paraula:"
+        },
+        {
+          "type": "table",
+          "headers": ["Expansió", "Contracció", "Exemple"],
+          "rows": [
+            ["_an + dem_", "**am**", "_==am== Bahnhof_ (a l'estació)"],
+            ["_in + dem_", "**im**", "_==im== Supermarkt_"],
+            ["_bei + dem_", "**beim**", "_==beim== Arzt_"],
+            ["_von + dem_", "**vom**", "_==vom== Vater_"],
+            ["_zu + dem_", "**zum**", "_==zum== Arzt_"],
+            ["_zu + der_", "**zur**", "_==zur== Schule_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "_an_ i _in_",
+          "body": "_an_ i _in_ pertanyen al grup de les **Wechselpräpositionen** (A1b): aquí només les veus quan funcionen amb datiu (lloc estàtic, _wo?_)."
+        },
+        {
+          "type": "explanation",
+          "body": "**Quan NO contreure?** Si vols **emfatitzar** el substantiu concret: _Ich gehe zu dem Arzt, den du mir empfohlen hast._ (\"a aquell metge que em vas recomanar\"). En el dia a dia, contreu sempre."
+        }
+      ]
+    },
+    {
+      "id": "check-article",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-34-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "check-prep-meaning",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-34-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys típics de catalanoparlants\n\n**1. _nach_ vs. _zu_** — tots dos es tradueixen sovint per \"a / cap a\", però es reparteixen la feina:\n\n- _nach_ + ciutats, països (sense article), punts cardinals, _Hause_: _nach Berlin_, _nach Spanien_, _nach Hause_.\n- _zu_ + persones o institucions: _zum Arzt_, _zur Schule_, _zu meinem Freund_.\n- Incorrecte: _Ich gehe ==nach== dem Arzt._ → Correcte: _Ich gehe ==zum== Arzt._\n\n**2. _seit_ no és \"desde hace\" amb pretèrit** — en alemany, _seit_ + datiu s'usa amb **present** per a accions que continuen:\n\n- Correcte: _Ich lerne ==seit zwei Jahren== Deutsch._ (Fa dos anys que aprenc…)\n- Incorrecte: _Ich habe seit zwei Jahren Deutsch gelernt._ (això vol dir \"ho vaig aprendre durant dos anys\", ja no ho faig).\n\n**3. _mit_ inclou el mitjà de transport** — en català dius \"vaig **en** tren\"; en alemany: _Ich fahre ==mit dem== Zug._\n\n**4. Plural amb _-n_** — no t'oblidis d'afegir _-n_ al substantiu plural en datiu si no l'acaba ja:\n\n- _die Kinder_ → _mit den Kinder==n==_\n- _die Freunde_ → _bei den Freunde==n==_"
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "_bei_ no és _mit_",
+          "body": "_bei_ és localització (\"a casa de\", \"a l'empresa X\"); _mit_ és companyia.\n\n- _Ich wohne **bei** meinen Eltern._ (visc a casa dels pares)\n- _Ich wohne **mit** meinen Eltern._ (visc amb els pares — convivència, pot ser a qualsevol lloc)"
+        },
+        {
+          "type": "explanation",
+          "body": "**Recordatori plural _-n_**: excepcions a la marca de plural en datiu són els plurals en _-s_ o en _-n_: _mit den Autos_ (no \"Autosn\"), _mit den Frauen_ (ja acaba en _-n_)."
+        }
+      ]
+    },
+    {
+      "id": "check-nach-zu",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-34-ex-03", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-34-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-34-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-34-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-34-ex-07", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Recapitulem\n\n**El que t'emportes d'aquesta lliçó:**\n\n1. **Hi ha 8 preposicions que SEMPRE porten datiu**: _aus, bei, mit, nach, seit, von, zu_ (+ _gegenüber_). Memoritza-les com una cantarella.\n2. **Els articles en datiu**: masculí/neutre → ==**dem**==, femení → ==**der**==, plural → ==**den**== + _-n_ al substantiu.\n3. **Contraccions obligatòries**: ==**am, im, beim, vom, zum, zur**==.\n4. **Paranys principals**: _nach_ (ciutats/països sense article) vs. _zu_ (persones/institucions); _seit_ + present (no passat) per a durada contínua; plural en datiu amb _-n_ final al substantiu."
+        },
+        {
+          "type": "table",
+          "title": "Taula síntesi: articles en datiu",
+          "headers": ["", "**Masculí**", "**Femení**", "**Neutre**", "**Plural**"],
+          "rows": [
+            ["Determinat", "==**dem**==", "==**der**==", "==**dem**==", "==**den**== + _-n_"],
+            ["Indeterminat", "**einem**", "**einer**", "**einem**", "— / _-n_"],
+            ["Exemple", "_mit dem Mann_", "_mit der Frau_", "_mit dem Kind_", "_mit den Kindern_"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "**Connexions amb altres lliçons:**\n\n- Prové de **A1a-14** (com es declinen els articles) i **A1a-28** (nominatiu / acusatiu).\n- Et prepara per **A1b – Wechselpräpositionen** (_in, an, auf, über, unter, vor, hinter, neben, zwischen_): aquestes sí que canvien entre datiu i acusatiu segons si responen a _wo?_ (ubicació, datiu) o _wohin?_ (direcció, acusatiu)."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Repte final per a casa",
+          "body": "Escriu 5 frases sobre el teu dia a dia fent servir almenys 5 preposicions diferents del grup dativ. Exemple: _Ich fahre ==mit dem== Bus ==zur== Arbeit. ==Nach der== Arbeit gehe ich ==zu meinem== Freund. ==Seit einem== Jahr wohne ich ==bei meinen== Eltern…_\n\nQuan dominis aquestes 8, el datiu ja no et farà por."
+        }
+      ]
+    }
+  ]
+}
