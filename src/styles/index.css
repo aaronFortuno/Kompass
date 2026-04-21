@@ -926,7 +926,14 @@ html.dark .k-mark {
   font-size: 9px;
 }
 
-/* Wrapper per l'exercici al reader (Fase 4 el farà més editorial) */
+/* ───── Exercise Card · editorial (Fase 4) ─────
+ * El card redefineix les CSS vars del sistema UI perquè apuntin a la
+ * família reader-*. Així les classes Tailwind del ExerciseEngine i els
+ * seus renderers (bg-surface, text-content, border-border, btn-primary,
+ * text-success/danger...) es veuen immediatament editorialitzades sense
+ * haver de tocar l'engine. Completat amb overrides puntuals per a
+ * tipografia, botons i capçalera.
+ */
 .kf-ex-wrap {
   width: 100%;
   max-width: 820px;
@@ -935,9 +942,154 @@ html.dark .k-mark {
   gap: 16px;
 }
 .kf-ex-card {
+  /* Overrides de tokens UI → editorial */
+  --color-surface: var(--color-reader-kbd-bg);
+  --color-surface-raised: var(--color-reader-paper-2);
+  --color-content: var(--color-reader-ink);
+  --color-content-muted: var(--color-reader-ink-2);
+  --color-border: var(--color-reader-rule);
+  --color-accent: var(--color-reader-ink);
+  --color-accent-content: var(--color-reader-paper);
+  --color-success: var(--color-reader-ok);
+  --color-danger: var(--color-reader-bad);
+  --shadow-soft: none;
+  --shadow-raised: none;
+
   background: rgb(var(--color-reader-kbd-bg));
   border: 1px solid rgb(var(--color-reader-rule));
   padding: 28px 32px;
+  font-family: 'Newsreader', Georgia, serif;
+  color: rgb(var(--color-reader-ink));
+}
+
+/* Capçalera del card: chip + títol */
+.kf-ex-header {
+  margin: 0 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgb(var(--color-reader-rule));
+}
+.kf-ex-chip {
+  display: inline-flex;
+  align-self: flex-start;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgb(var(--color-reader-muted));
+  padding: 2px 8px;
+  border: 1px solid rgb(var(--color-reader-rule));
+}
+.kf-ex-chip-assessment {
+  color: rgb(var(--color-reader-ink));
+  border-color: rgb(var(--color-reader-ink));
+}
+.kf-ex-title {
+  font-family: 'Newsreader', serif;
+  font-weight: 500;
+  font-size: calc(32px * var(--kf-type-scale, 1));
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  margin: 0;
+  color: rgb(var(--color-reader-ink));
+}
+
+/* Prompt (el text-content font-medium del form) */
+.kf-ex-card form > p:first-child {
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.45;
+  color: rgb(var(--color-reader-ink-2));
+  margin: 0 0 18px;
+}
+
+/* Inputs / selects: serif, mida còmoda, hover subtil */
+.kf-ex-card input,
+.kf-ex-card select,
+.kf-ex-card textarea {
+  font-family: 'Newsreader', serif;
+  font-size: 18px;
+  background: rgb(var(--color-reader-kbd-bg));
+  color: rgb(var(--color-reader-ink));
+  border-color: rgb(var(--color-reader-rule));
+  border-radius: 0;
+}
+.kf-ex-card input:focus,
+.kf-ex-card select:focus,
+.kf-ex-card textarea:focus {
+  outline: 2px solid rgb(var(--color-reader-ink));
+  outline-offset: 2px;
+}
+
+/* Botons: mono-caps rectangulars (no rounded-md del btn) */
+.kf-ex-card .btn,
+.kf-ex-card .btn-primary,
+.kf-ex-card .btn-ghost {
+  border-radius: 0;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 500;
+  min-height: 40px;
+  min-width: 40px;
+  padding: 10px 18px;
+}
+.kf-ex-card .btn-primary {
+  background: rgb(var(--color-reader-ink));
+  color: rgb(var(--color-reader-paper));
+}
+.kf-ex-card .btn-primary:hover { opacity: 0.9; }
+.kf-ex-card .btn-ghost {
+  background: transparent;
+  color: rgb(var(--color-reader-ink));
+  border: 1px solid rgb(var(--color-reader-ink));
+}
+.kf-ex-card .btn-ghost:hover {
+  background: rgb(var(--color-reader-ink));
+  color: rgb(var(--color-reader-paper));
+}
+
+/* Opcions (SingleChoice) — tarjetons més editorials */
+.kf-ex-card [role="radiogroup"] li button,
+.kf-ex-card [role="radiogroup"] button[role="radio"] {
+  font-family: 'Newsreader', serif;
+  font-size: 18px;
+  border-radius: 0;
+  padding: 14px 18px;
+}
+
+/* Feedback banner (usa .card) — fons pla sense ombra ni radius */
+.kf-ex-card .card {
+  background: rgb(var(--color-reader-paper-2));
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Títol del feedback banner (statusLabel) en serif */
+.kf-ex-card .card span.block.text-lg {
+  font-family: 'Newsreader', serif;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+/* Llista d'errors: fons subtil, borders discrets */
+.kf-ex-card .card ul li {
+  background: rgb(var(--color-reader-paper)) !important;
+  border-radius: 0;
+}
+
+/* Prefilled banner: línia inferior en to editorial */
+.kf-ex-card form > div.flex.items-center.gap-2 {
+  background: rgb(var(--color-reader-paper-2));
+  border-radius: 0;
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-size: 15px;
 }
 
 /* Mode full: tipografies una mica menors (aprox. 80% del fragment) */

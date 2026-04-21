@@ -497,17 +497,28 @@ function ExerciseBeatCard({ beat, stepIdx, onFinish }) {
     );
   }
   const isAssessment = beat.variant === 'assessment';
+  const label = isAssessment
+    ? t('exercise.variantAssessment')
+    : t('exercise.variantQuickCheck');
   return (
     <div className="kf-ex-wrap">
       <div className="kf-chapter">
         <Dumbbell size={12} aria-hidden="true" />
-        <span>
-          {isAssessment ? t('exercise.variantAssessment') : t('exercise.variantQuickCheck')}
-        </span>
+        <span>{label}</span>
         <span className="kf-sep" />
         <span>Step {String(stepIdx + 1).padStart(2, '0')}</span>
       </div>
       <div className="kf-ex-card">
+        <div className="kf-ex-header">
+          <span
+            className={
+              'kf-ex-chip ' + (isAssessment ? 'kf-ex-chip-assessment' : '')
+            }
+          >
+            {label}
+          </span>
+          <h3 className="kf-ex-title">{exercise.title}</h3>
+        </div>
         <ExerciseEngine exercise={exercise} />
       </div>
     </div>
