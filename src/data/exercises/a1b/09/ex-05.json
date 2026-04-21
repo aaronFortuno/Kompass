@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-9-ex-05",
+  "topicId": "A1b-9",
+  "title": "Del present a l'imperatiu",
+  "prompt": "Transforma cada frase del present a l'imperatiu corresponent (_du_, _ihr_ o _Sie_), aplicant tots els canvis formals necessaris.",
+  "difficulty": 3,
+  "tags": ["imperatiu", "transformacio", "du-ihr-Sie", "avaluacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Du isst langsam._ → A un amic: {{1}} langsam!\n2. _Ihr kommt pünktlich._ → A un grup de nens: {{2}} pünktlich!\n3. _Sie lesen das Buch._ → Ordre formal: {{3}} das Buch!\n4. _Du fährst vorsichtig._ → A un amic: {{4}} vorsichtig!\n5. _Du bist ruhig._ → A un amic: {{5}} ruhig!",
+    "blanks": [
+      { "id": "1", "label": "imperatiu _du_" },
+      { "id": "2", "label": "imperatiu _ihr_" },
+      { "id": "3", "label": "imperatiu _Sie_ (+ pronom)" },
+      { "id": "4", "label": "imperatiu _du_" },
+      { "id": "5", "label": "imperatiu _du_ de _sein_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "forma d'imperatiu" },
+      { "blankId": "2", "placeholder": "forma d'imperatiu" },
+      { "blankId": "3", "placeholder": "forma d'imperatiu + pronom" },
+      { "blankId": "4", "placeholder": "forma d'imperatiu" },
+      { "blankId": "5", "placeholder": "forma d'imperatiu" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Iss",
+      "2": "Kommt",
+      "3": "Lesen Sie",
+      "4": "Fahr",
+      "5": "Sei"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has aplicat totes les regles: (1) _essen_ conserva _e → i_ → **Iss**; (2) _ihr_ = present sense pronom → **Kommt**; (3) _Sie_ manté pronom + infinitiu → **Lesen Sie**; (4) _fahren_ **perd** _a → ä_ → **Fahr** (no \\*_Fähr_); (5) _sein_ és irregular → **Sei**.",
+      "references": ["A1b-9"]
+    },
+    "incorrect": {
+      "default": "Repassa cada regla: (1) _du_ + canvi _e → i/ie_: es **manté** → _du isst_ → **Iss**. (2) _ihr_: idèntic al present sense pronom → **Kommt**. (3) _Sie_: infinitiu + _Sie_ → **Lesen Sie** (amb pronom obligatori). (4) _du_ + canvi _a → ä_: es **perd** → **Fahr** (torna a _a_). (5) _sein_ és un cas a part: _du_ → **Sei**.",
+      "byResponse": [
+        {
+          "match": { "1": "Ess" },
+          "message": "_essen_ té canvi de vocal _e → i_ al present (_du isst_), i l'imperatiu el conserva: **Iss**, no \\*_Ess_."
+        },
+        {
+          "match": { "4": "Fähr" },
+          "message": "Error molt comú: el canvi _a → ä_ **es perd** a l'imperatiu. Tornem a _a_ → **Fahr**, no \\*_Fähr_."
+        },
+        {
+          "match": { "5": "Bist" },
+          "message": "_sein_ no es conjuga amb _bist_ a l'imperatiu. La forma de _du_ és irregular: **Sei**."
+        }
+      ]
+    }
+  }
+}

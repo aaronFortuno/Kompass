@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-9-ex-01",
+  "topicId": "A1b-9",
+  "title": "Imperatiu de du — regulars, canvis de vocal i sein",
+  "prompt": "Escriu l'imperatiu de _du_ per a cada verb, aplicant les tres regles (regular, canvi _e → i/ie_, canvi _a → ä_, i el cas especial de _sein_).",
+  "difficulty": 1,
+  "tags": ["imperatiu", "du", "canvi-vocalic", "sein"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. {{1}} hierher! _(Vine aquí! — kommen)_\n2. {{2}} mehr Gemüse! _(Menja més verdura! — essen)_\n3. {{3}} langsam! _(Condueix a poc a poc! — fahren)_\n4. {{4}} ruhig! _(Estigues tranquil! — sein)_",
+    "blanks": [
+      { "id": "1", "label": "imperatiu de _kommen_" },
+      { "id": "2", "label": "imperatiu de _essen_" },
+      { "id": "3", "label": "imperatiu de _fahren_" },
+      { "id": "4", "label": "imperatiu de _sein_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "imperatiu" },
+      { "blankId": "2", "placeholder": "imperatiu" },
+      { "blankId": "3", "placeholder": "imperatiu" },
+      { "blankId": "4", "placeholder": "imperatiu" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Komm",
+      "2": "Iss",
+      "3": "Fahr",
+      "4": "Sei"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has aplicat les tres regles: (1) verbs regulars perden la -st del present (_kommst_ → **Komm**); (2) canvi _e → i/ie_ es conserva (_isst_ → **Iss**); (3) canvi _a → ä_ es perd (_fährst_ → **Fahr**, no \\*_Fähr_); i (4) _sein_ té forma especial: **sei**.",
+      "references": ["A1b-9"]
+    },
+    "incorrect": {
+      "default": "Repassa cada tipus: (1) regulars → forma de _du_ sense -st, i en general sense -e: _kommst_ → **Komm**. (2) canvi _e → i/ie_ es manté: _isst_ → **Iss**, _gibst_ → **Gib**. (3) canvi _a → ä_ desapareix: _fährst_ → **Fahr** (tornem a _a_). (4) _sein_ → **sei** (forma única que cal memoritzar)."
+    }
+  }
+}

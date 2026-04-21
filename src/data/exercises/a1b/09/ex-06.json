@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-9-ex-06",
+  "topicId": "A1b-9",
+  "title": "Escollir registre segons relació",
+  "prompt": "Per a cada situació, tria la formulació que millor s'adiu al grau de cortesia necessari.",
+  "difficulty": 3,
+  "tags": ["registre", "imperatiu", "solltest", "am-besten", "avaluacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Un professor a un alumne que fa soroll: neutre però directe. → {{1}}\n2. Un amic a un altre que està cansat: consell suau. → {{2}}\n3. Un guia turístic a un grup: suggeriment amable. → {{3}}\n4. Una mare a un fill petit, estricta. → {{4}}",
+    "blanks": [
+      { "id": "1", "label": "neutre/directe" },
+      { "id": "2", "label": "consell suau" },
+      { "id": "3", "label": "suggeriment amable" },
+      { "id": "4", "label": "estricta" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "1",
+        "options": [
+          "Sei bitte leise.",
+          "Du solltest dich ausruhen.",
+          "Am besten besucht ihr zuerst den Dom.",
+          "Iss dein Gemüse!"
+        ]
+      },
+      {
+        "blankId": "2",
+        "options": [
+          "Sei bitte leise.",
+          "Du solltest dich ausruhen.",
+          "Am besten besucht ihr zuerst den Dom.",
+          "Iss dein Gemüse!"
+        ]
+      },
+      {
+        "blankId": "3",
+        "options": [
+          "Sei bitte leise.",
+          "Du solltest dich ausruhen.",
+          "Am besten besucht ihr zuerst den Dom.",
+          "Iss dein Gemüse!"
+        ]
+      },
+      {
+        "blankId": "4",
+        "options": [
+          "Sei bitte leise.",
+          "Du solltest dich ausruhen.",
+          "Am besten besucht ihr zuerst den Dom.",
+          "Iss dein Gemüse!"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Sei bitte leise.",
+      "2": "Du solltest dich ausruhen.",
+      "3": "Am besten besucht ihr zuerst den Dom.",
+      "4": "Iss dein Gemüse!"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent anàlisi sociolingüística. Has triat el registre exacte: (1) professor-alumne → imperatiu amb _bitte_ (directe però cortès); (2) consell entre amics → **_solltest_** (suau, empàtic); (3) guia professional → **_am besten_** (amable, sense pressió); (4) mare a fill petit → imperatiu pur (autoritat, claredat).",
+      "references": ["A1b-9"]
+    },
+    "incorrect": {
+      "default": "Pensa en la relació de poder i la distància: ordre directa d'autoritat → imperatiu (amb _bitte_ si cal cortesia institucional); consell entre iguals → _solltest_; recomanació de servei → _am besten_; ordre sense negociació → imperatiu pur, sense atenuadors."
+    }
+  }
+}

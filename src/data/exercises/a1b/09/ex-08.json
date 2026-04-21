@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-9-ex-08",
+  "topicId": "A1b-9",
+  "title": "Diàleg mèdic: integració de registres",
+  "prompt": "Completa el diàleg entre metge i pacient integrant imperatius, alternatives atenuades i fórmules de cortesia.",
+  "difficulty": 3,
+  "tags": ["dialeg", "integracio", "imperatiu", "solltest", "am-besten", "avaluacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "**Metge al pacient (formal, cortesia):**\n\n_{{1}} Sie bitte tief Luft!_ _(Respiri fondo, si us plau.)_\n\n**Metge (consell formal):**\n\n_Sie {{2}} weniger Kaffee trinken._ _(Hauria de beure menys cafè.)_\n\n**Metge (recomanació):**\n\n_{{3}} besten gehen Sie früher ins Bett._ _(El millor és que se'n vagi al llit més d'hora.)_\n\n**Pacient al seu amic després (informal):**\n\n_Mein Arzt sagt, du {{4}} auch weniger Kaffee trinken._ _(El meu metge diu que tu també hauries de beure menys cafè.)_",
+    "blanks": [
+      { "id": "1", "label": "imperatiu formal de _atmen_" },
+      { "id": "2", "label": "forma de _sollte-_ per a _Sie_" },
+      { "id": "3", "label": "expressió fixa" },
+      { "id": "4", "label": "forma de _sollte-_ per a _du_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Atme", "Atmet", "Atmen"] },
+      { "blankId": "2", "options": ["sollst", "sollten", "sollt"] },
+      { "blankId": "3", "options": ["Am", "Im", "Beim"] },
+      { "blankId": "4", "options": ["sollst", "solltest", "sollt"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Atmen",
+      "2": "sollten",
+      "3": "Am",
+      "4": "solltest"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has integrat quatre registres al mateix diàleg: (1) imperatiu formal → **_Atmen_** Sie (infinitiu + _Sie_); (2) consell formal atenuat → **_sollten_** (_Sie_ plural/formal); (3) recomanació amable → **_Am_** besten; (4) consell entre amics → **_solltest_** (_du_ + Konjunktiv II). Un diàleg, quatre graus de cortesia.",
+      "references": ["A1b-9"]
+    },
+    "incorrect": {
+      "default": "Repassa cada peça: (1) imperatiu formal de _atmen_: infinitiu + _Sie_ → **Atmen Sie**. (2) _Sie_ formal com a 'vostè' → Konjunktiv II de _sollen_ 3a pl → **sollten**. (3) Expressió fixa 'el millor és' → **Am** besten (sempre _am_, no _im_). (4) Consell a un _du_ → **solltest** (2a pers sg del Konjunktiv II de _sollen_).",
+      "byResponse": [
+        {
+          "match": { "2": "sollst" },
+          "message": "Per a _Sie_ (formal), la forma del Konjunktiv II és **sollten** (3a persona plural), no _sollst_ (2a sg)."
+        },
+        {
+          "match": { "3": "Im" },
+          "message": "L'expressió fixa és **Am besten**, sempre amb _am_ (contracció de _an dem_), no _im_."
+        },
+        {
+          "match": { "4": "sollst" },
+          "message": "_sollst_ és imposició (\"has de\"). Per a un consell amigable cal el Konjunktiv II: **solltest** (\"hauries de\")."
+        }
+      ]
+    }
+  }
+}

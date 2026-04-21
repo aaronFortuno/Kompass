@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-9-ex-04",
+  "topicId": "A1b-9",
+  "title": "Un verb, tres imperatius (lesen)",
+  "prompt": "Completa la mateixa frase amb el verb _lesen_ (\"llegir\") en les tres formes d'imperatiu, segons l'interlocutor.",
+  "difficulty": 2,
+  "tags": ["imperatiu", "contrast", "lesen", "du-ihr-Sie"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. A un amic: {{1}} das Buch! _(Llegeix el llibre!)_\n2. A diversos amics: {{2}} das Buch! _(Llegiu el llibre!)_\n3. A un professor: {{3}} das Buch! _(Llegeixi el llibre!)_",
+    "blanks": [
+      { "id": "1", "label": "imperatiu _du_" },
+      { "id": "2", "label": "imperatiu _ihr_" },
+      { "id": "3", "label": "imperatiu _Sie_ (+ pronom)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "imperatiu (sense pronom)" },
+      { "blankId": "2", "placeholder": "imperatiu (sense pronom)" },
+      { "blankId": "3", "placeholder": "imperatiu + pronom" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Lies",
+      "2": "Lest",
+      "3": "Lesen Sie"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has aplicat les tres regles: _du_ conserva el canvi _e → ie_ → **Lies** (de _du liest_, sense -st); _ihr_ = forma de present sense pronom → **Lest**; _Sie_ = infinitiu + Sie → **Lesen Sie** (pronom conservat). Un sol verb, tres formes segons interlocutor.",
+      "references": ["A1b-9"]
+    },
+    "incorrect": {
+      "default": "Pensa en cada interlocutor: (1) _du_ (amic) → forma de _du_ sense -st, però **es conserva** el canvi _e → ie_ → _du liest_ → **Lies**. (2) _ihr_ (grup informal) → present de _ihr_ sense pronom → _ihr lest_ → **Lest**. (3) _Sie_ (formal) → infinitiu + _Sie_ → **Lesen Sie** (amb pronom conservat, verb en primera posició)."
+    }
+  }
+}

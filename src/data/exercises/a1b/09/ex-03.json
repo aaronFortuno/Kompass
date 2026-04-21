@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-9-ex-03",
+  "topicId": "A1b-9",
+  "title": "Registre apropiat: imperatiu, solltest, am besten o Sie + bitte",
+  "prompt": "Per a cada context comunicatiu, tria la formulació amb el registre més adequat.",
+  "difficulty": 2,
+  "tags": ["registre", "solltest", "am-besten", "imperatiu", "cortesia"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Una instrucció d'una recepta de cuina: \"Talla la ceba.\" → {{1}}\n2. Un consell a un amic cansat: \"Hauries de descansar.\" → {{2}}\n3. Un suggeriment a un turista: \"El millor és que agafis el metro.\" → {{3}}\n4. Una petició formal al metge: \"Truqui'm demà, si us plau.\" → {{4}}",
+    "blanks": [
+      { "id": "1", "label": "instrucció neutra" },
+      { "id": "2", "label": "consell suau" },
+      { "id": "3", "label": "recomanació amable" },
+      { "id": "4", "label": "petició formal" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "1",
+        "options": [
+          "Schneide die Zwiebel.",
+          "Du solltest dich ausruhen.",
+          "Am besten nimmst du die U-Bahn.",
+          "Rufen Sie mich bitte morgen an."
+        ]
+      },
+      {
+        "blankId": "2",
+        "options": [
+          "Schneide die Zwiebel.",
+          "Du solltest dich ausruhen.",
+          "Am besten nimmst du die U-Bahn.",
+          "Rufen Sie mich bitte morgen an."
+        ]
+      },
+      {
+        "blankId": "3",
+        "options": [
+          "Schneide die Zwiebel.",
+          "Du solltest dich ausruhen.",
+          "Am besten nimmst du die U-Bahn.",
+          "Rufen Sie mich bitte morgen an."
+        ]
+      },
+      {
+        "blankId": "4",
+        "options": [
+          "Schneide die Zwiebel.",
+          "Du solltest dich ausruhen.",
+          "Am besten nimmst du die U-Bahn.",
+          "Rufen Sie mich bitte morgen an."
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Schneide die Zwiebel.",
+      "2": "Du solltest dich ausruhen.",
+      "3": "Am besten nimmst du die U-Bahn.",
+      "4": "Rufen Sie mich bitte morgen an."
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has associat cada context amb el registre apropiat: (1) recepta → **imperatiu pur** (_Schneide_, instrucció neutra); (2) consell personal entre iguals → **_solltest_** (suau); (3) suggeriment pràctic → **_am besten_** (recomanació elegant); (4) context formal → **_Sie + bitte_** (cortesia obligatòria).",
+      "references": ["A1b-9"]
+    },
+    "incorrect": {
+      "default": "Recorda els criteris: instruccions objectives i neutres (receptes, manuals) → imperatiu pur; consells personals → _solltest_; suggeriments racionals → _am besten_; context formal o amb desconeguts → _Sie + bitte_."
+    }
+  }
+}

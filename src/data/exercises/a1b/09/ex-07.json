@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-9-ex-07",
+  "topicId": "A1b-9",
+  "title": "Construcció de frases: separables i Satzklammer",
+  "prompt": "Completa cada frase amb la paraula correcta per construir correctament l'imperatiu de verbs separables i el modal _solltest_ amb Satzklammer.",
+  "difficulty": 3,
+  "tags": ["imperatiu", "separables", "solltest", "satzklammer", "avaluacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. \"Obre la porta!\" (verb separable _aufmachen_) → {{1}} die Tür {{2}}!\n2. \"Hauries d'anar-te'n al llit més aviat.\" (modal _solltest_ + Satzklammer) → Du {{3}} früher ins Bett {{4}}.\n3. \"Passi, si us plau!\" (formal, _hereinkommen_) → {{5}} Sie bitte {{6}}!",
+    "blanks": [
+      { "id": "1", "label": "base de l'imperatiu" },
+      { "id": "2", "label": "prefix separable" },
+      { "id": "3", "label": "modal conjugat (_du_)" },
+      { "id": "4", "label": "infinitiu final" },
+      { "id": "5", "label": "infinitiu (imperatiu formal)" },
+      { "id": "6", "label": "prefix separable" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Mach", "Aufmach", "Mache"] },
+      { "blankId": "2", "options": ["auf", "an", "zu"] },
+      { "blankId": "3", "options": ["sollst", "solltest", "willst"] },
+      { "blankId": "4", "options": ["gehen", "geht", "gehst"] },
+      { "blankId": "5", "options": ["Kommen", "Komm", "Hereinkommen"] },
+      { "blankId": "6", "options": ["herein", "hinein", "hin"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Mach",
+      "2": "auf",
+      "3": "solltest",
+      "4": "gehen",
+      "5": "Kommen",
+      "6": "herein"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has respectat les tres estructures: (1) imperatiu de verb separable → base del verb en posició 1 (_Mach_), prefix al final (_auf_); (2) modal _solltest_ amb Satzklammer → modal conjugat (_solltest_) + infinitiu al final (_gehen_); (3) imperatiu formal amb verb separable → infinitiu + _Sie_ + complements + prefix (_Kommen Sie bitte **herein**!_).",
+      "references": ["A1b-9"]
+    },
+    "incorrect": {
+      "default": "Tres patrons clau: (1) verb separable a imperatiu → base primer, prefix al final (_**Mach** die Tür **auf**!_, no \\*_Aufmach die Tür!_). (2) _solltest_ com a modal → _du_ + _solltest_ + complements + **infinitiu final** (_Du solltest früher ins Bett **gehen**._). (3) _Sie_ formal: verb en primera posició, _Sie_ just darrere, separable al final (_**Kommen Sie** bitte **herein**!_).",
+      "byResponse": [
+        {
+          "match": { "3": "sollst" },
+          "message": "_sollst_ és imposició (\"has de\"). Per a un **consell** cal el Konjunktiv II: _solltest_ (\"hauries de\")."
+        },
+        {
+          "match": { "1": "Aufmach" },
+          "message": "El prefix _auf-_ se separa a l'imperatiu i va al final: _**Mach** die Tür **auf**!_, no \\*_Aufmach die Tür_."
+        }
+      ]
+    }
+  }
+}

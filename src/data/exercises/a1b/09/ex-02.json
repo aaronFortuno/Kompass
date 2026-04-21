@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-9-ex-02",
+  "topicId": "A1b-9",
+  "title": "A qui parlem? Tria la forma d'imperatiu",
+  "prompt": "Per a cada situació comunicativa, tria la versió alemanya amb la forma d'imperatiu adequada (_du_, _ihr_, _Sie_ o _wir_).",
+  "difficulty": 2,
+  "tags": ["imperatiu", "du", "ihr", "Sie", "wir", "registre"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. A un amic: \"Vine aquí!\" → {{1}}\n2. A uns nens: \"Veniu aquí!\" → {{2}}\n3. A un desconegut al carrer: \"Vingui, si us plau!\" → {{3}}\n4. Al teu grup d'amics, proposant: \"Anem al cinema!\" → {{4}}",
+    "blanks": [
+      { "id": "1", "label": "forma per a _du_" },
+      { "id": "2", "label": "forma per a _ihr_" },
+      { "id": "3", "label": "forma per a _Sie_" },
+      { "id": "4", "label": "forma per a _wir_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "1",
+        "options": [
+          "Komm hierher!",
+          "Kommt hierher!",
+          "Kommen Sie bitte!",
+          "Gehen wir ins Kino!"
+        ]
+      },
+      {
+        "blankId": "2",
+        "options": [
+          "Komm hierher!",
+          "Kommt hierher!",
+          "Kommen Sie bitte!",
+          "Gehen wir ins Kino!"
+        ]
+      },
+      {
+        "blankId": "3",
+        "options": [
+          "Komm hierher!",
+          "Kommt hierher!",
+          "Kommen Sie bitte!",
+          "Gehen wir ins Kino!"
+        ]
+      },
+      {
+        "blankId": "4",
+        "options": [
+          "Komm hierher!",
+          "Kommt hierher!",
+          "Kommen Sie bitte!",
+          "Gehen wir ins Kino!"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Komm hierher!",
+      "2": "Kommt hierher!",
+      "3": "Kommen Sie bitte!",
+      "4": "Gehen wir ins Kino!"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has triat la forma adequada a cada interlocutor: (1) _du_ (amic, informal singular) → **Komm!**; (2) _ihr_ (grup informal) → **Kommt!**; (3) _Sie_ (formal, amb _bitte_) → **Kommen Sie bitte!**; (4) _wir_ (proposta inclusiva) → **Gehen wir!**.",
+      "references": ["A1b-9"]
+    },
+    "incorrect": {
+      "default": "Cada forma té el seu context: _du_ per a una persona que tutejaries (**-st** del present fora, en general); _ihr_ per a un grup informal (idèntic al present de _ihr_); _Sie_ per a formal, amb pronom conservat i sovint amb _bitte_; _wir_ per a propostes inclusives 'anem a...'."
+    }
+  }
+}
