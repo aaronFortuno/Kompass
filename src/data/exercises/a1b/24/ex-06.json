@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-24-ex-06",
+  "topicId": "A1b-24",
+  "title": "Triar el temps: oral + excepcions + escrit",
+  "prompt": "Aplica el mapa de decisió complet. Fes-te dues preguntes en ordre: **(1) És escrit formal o oral?** Si escrit → Präteritum. **(2) Si és oral, el verb és del grup excepcional (_sein, haben_, modal, _es gibt_)?** Si sí → Präteritum. Si no → Perfekt.",
+  "difficulty": 3,
+  "tags": ["mapa-decisio", "sintesi", "avaluacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _(xat amb un amic)_ \"Ahir vaig llegir un llibre interessant.\" → {{1}}\n2. _(xat)_ \"Aquest matí estava cansat.\" → {{2}}\n3. _(novel·la)_ \"El protagonista entrà a la casa i va veure un gat negre.\" → {{3}}\n4. _(conversa)_ \"De petit no podia dormir sense llum.\" → {{4}}\n5. _(email informal)_ \"La setmana passada vam fer una festa.\" → {{5}}\n6. _(biografia)_ \"Va néixer el 1920 i va morir el 2005.\" → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "oral + lesen (verb normal)" },
+      { "id": "2", "label": "oral + sein (excepció)" },
+      { "id": "3", "label": "escrit (novel·la)" },
+      { "id": "4", "label": "oral + können (modal, excepció)" },
+      { "id": "5", "label": "oral + machen (verb normal)" },
+      { "id": "6", "label": "escrit (biografia)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Perfekt", "Präteritum"] },
+      { "blankId": "2", "options": ["Perfekt", "Präteritum"] },
+      { "blankId": "3", "options": ["Perfekt", "Präteritum"] },
+      { "blankId": "4", "options": ["Perfekt", "Präteritum"] },
+      { "blankId": "5", "options": ["Perfekt", "Präteritum"] },
+      { "blankId": "6", "options": ["Perfekt", "Präteritum"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Perfekt",
+      "2": "Präteritum",
+      "3": "Präteritum",
+      "4": "Präteritum",
+      "5": "Perfekt",
+      "6": "Präteritum"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Has aplicat el mapa complet. ==**Escrits**== (3: novel·la, 6: biografia) → **Präteritum** per a tot. ==**Oral + excepció**== (2: _sein_, 4: _können_) → **Präteritum**. ==**Oral + verb normal**== (1: _lesen_, 5: _machen_) → **Perfekt**. Les solucions completes serien: _Ich habe gestern ein interessantes Buch gelesen_ (1); _Heute Morgen war ich müde_ (2); _Er trat ins Haus und sah eine schwarze Katze_ (3); _Als Kind konnte ich ohne Licht nicht schlafen_ (4); _Letzte Woche haben wir eine Party gemacht_ (5); _Er wurde 1920 geboren und starb 2005_ (6).",
+      "references": ["A1b-24", "A1a-26", "A1b-15"]
+    },
+    "incorrect": {
+      "default": "==Dues preguntes en ordre.== **(1) Oral o escrit?** Si escrit → Präteritum per a tot. **(2) Si oral, és _sein, haben_, modal, _es gibt_?** Si sí → Präteritum. Si no → Perfekt.",
+      "byResponse": [
+        {
+          "match": { "1": "Präteritum" },
+          "message": "Context oral (xat) + _lesen_ (verb normal, no excepció) → ==**Perfekt**==: _Ich habe gestern ein Buch gelesen_. _Ich las_ sonaria llibresc."
+        },
+        {
+          "match": { "2": "Perfekt" },
+          "message": "Oral + _sein_ (\"estar cansat\" = _müde sein_): _sein_ és excepció → ==**Präteritum**==: _Heute Morgen war ich müde_. _Ich bin müde gewesen_ sonaria rar."
+        },
+        {
+          "match": { "3": "Perfekt" },
+          "message": "Context **escrit narratiu** (novel·la) → ==**Präteritum**== per a tot, inclús per a _treten_ (entrar) i _sehen_ (veure). _Er trat ins Haus und sah eine schwarze Katze_."
+        },
+        {
+          "match": { "4": "Perfekt" },
+          "message": "Oral + _können_ (verb modal, excepció) → ==**Präteritum**==: _Als Kind konnte ich ohne Licht nicht schlafen_. _Ich habe nicht schlafen können_ és possible però molt rar."
+        },
+        {
+          "match": { "5": "Präteritum" },
+          "message": "Email informal (= registre oral) + _machen_ (verb normal) → ==**Perfekt**==: _Letzte Woche haben wir eine Party gemacht_. _Wir machten eine Party_ sonaria massa formal."
+        },
+        {
+          "match": { "6": "Perfekt" },
+          "message": "Context **biogràfic formal escrit** → ==**Präteritum**== per a tot: _Er wurde 1920 geboren und starb 2005_. El Perfekt aquí sonaria fora de registre."
+        }
+      ]
+    }
+  }
+}

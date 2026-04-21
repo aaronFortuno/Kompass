@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-24",
+  "level": "A1",
+  "sublevel": "b",
+  "number": 24,
+  "title": "Vergangenheit: expressar el passat en alemany",
+  "shortTitle": "Vergangenheit",
+  "description": "Mapa conceptual del passat alemany: Perfekt (oral) i Präteritum (escrit), amb l'excepció dels verbs sein, haben, modals i es gibt. Porta d'entrada al bloc A1b-24 → A1b-30.",
+  "axes": ["temps-verbals"],
+  "prerequisites": ["A1a-3", "A1a-26", "A1b-15"],
+  "estimatedMinutes": 15,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Benvingut al bloc del passat\n\nFins ara tot el que has dit en alemany ha passat al **present**: _Ich wohne in Barcelona. Ich lerne Deutsch. Ich esse Brot_. Però la vida passada també existeix, i comunicar-la és essencial: explicar què vas fer ahir, on vas néixer, què vas menjar, amb qui vas parlar.\n\nEn els propers **set temes** (A1b-24 fins A1b-30) aprendràs a expressar el passat. Aquesta primera lliçó és un **mapa**: et presenta els dos temps verbals que fa servir l'alemany i, sobretot, ==**quan cal fer servir cadascun**==. Les lliçons següents aniran a la mecànica (formes, participis, auxiliars, ordre de paraules).\n\n**Enfoc d'aquesta lliçó.** No t'ensenya a **formar** cap temps verbal: t'ensenya a **orientar-te** dins del sistema alemany del passat. La idea nuclear: ==l'alemany té dos temps bàsics per al passat, **Perfekt** i **Präteritum**, que no es reparteixen per matisos temporals (com en català) sinó per **registre** (oral vs. escrit)==. Un cop tinguis aquest mapa al cap, les lliçons següents tenen sentit."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Temps estimat: 10-15 minuts",
+          "body": "És una lliçó curta i conceptual. No hi ha gaire per memoritzar, però sí per **entendre bé**, perquè és la base de tot el bloc.\n\n**En aquesta lliçó aprendràs:**\n\n1. Que l'alemany té **dos temps de passat bàsics**: _Perfekt_ i _Präteritum_.\n2. Que un sol temps alemany pot traduir-se amb **tres** temps catalans diferents.\n3. Quin temps es fa servir en llengua **oral** i quin en llengua **escrita**.\n4. Quins verbs són l'excepció: sempre _Präteritum_, també quan parles."
+        }
+      ]
+    },
+    {
+      "id": "perfekt-temps-per-defecte",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El Perfekt: el temps per defecte quan parles\n\nEn alemany, quan parles amb algú, expliques una anècdota, o escrius un missatge informal, el temps que fas servir per al passat és el **==Perfekt==** (també anomenat _pretèrit perfet compost_).\n\n> _Auf Deutsch benutzt man meistens die Zeitform \"Perfekt\", um über die Vergangenheit zu sprechen._\n> (En alemany es fa servir majoritàriament el _Perfekt_ per parlar del passat.)\n\n**Exemples:**\n\n- _Ich **habe** Deutsch **gelernt**._\n- _Ich **bin** ins Kino **gegangen**._\n- _Ich **habe** viel **gearbeitet**._\n\nObserva l'estructura: **auxiliar conjugat** (_habe / bin_) + **participi al final** (_gelernt, gegangen, gearbeitet_). És una construcció en dues peces, com el català \"he estudiat / he anat / he treballat\". D'això ja en parlarem en detall a A1b-26."
+        },
+        {
+          "type": "explanation",
+          "body": "#### Un temps alemany = tres temps catalans\n\nAra vé el punt important per a un catalanoparlant. Quan un alemany diu _Ich habe Deutsch gelernt_, aquesta **única forma** pot significar tres coses diferents en català segons el context:"
+        },
+        {
+          "type": "table",
+          "title": "24.1 Un Perfekt, tres traduccions catalanes",
+          "headers": ["Alemany (Perfekt)", "Català (tres traduccions possibles)"],
+          "rows": [
+            [
+              { "text": "_Ich habe Deutsch gelernt_", "rowspan": 3 },
+              "**He estudiat alemany.** (avui, acció recent)"
+            ],
+            ["**Vaig estudiar alemany.** (ahir, acció acabada)"],
+            ["**Estudiava alemany.** (abans, acció habitual/durativa)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Vorsicht! Un temps alemany, tres catalans",
+          "body": "==**L'alemany no distingeix** entre el que has fet avui, el que vas fer ahir i el que feies abans. Un mateix _Perfekt_ ho cobreix tot.== És el context (_heute, gestern, früher, als Kind…_) qui precisa el matís temporal.\n\n**Conseqüència pràctica:** quan passis del català a l'alemany, **no busquis** l'equivalent exacte del \"vaig fer\" o del \"feia\". Fes servir _Perfekt_ i deixa que el marcador temporal (_gestern, letzte Woche, als ich Kind war_) faci la feina."
+        },
+        {
+          "type": "explanation",
+          "body": "**Observa el contrast amb el marcador temporal:**\n\n- _**Gestern** habe ich viel gearbeitet._ → Ahir **vaig treballar** molt. _(acció acabada)_\n- _**Heute** habe ich viel gearbeitet._ → Avui **he treballat** molt. _(acció recent)_\n- _**Als Kind** habe ich viel gearbeitet._ → De petit **treballava** molt. _(hàbit)_\n\nMateixa estructura alemanya, tres traduccions catalanes. És així de pràctic."
+        }
+      ]
+    },
+    {
+      "id": "check-1-un-temps-tres-catalans",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-24-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "praeteritum-temps-escrit",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El Präteritum: el temps del text escrit\n\nAl costat del _Perfekt_ existeix un segon temps de passat: el **==Präteritum==** (també anomenat _imperfekt_ o _simple past_ en anglès).\n\n> _Eine andere Vergangenheitsform ist das Präteritum. Das Präteritum benutzt man hauptsächlich in der geschriebenen Sprache._\n> (Una altra forma de passat és el _Präteritum_. Es fa servir sobretot en llengua escrita.)\n\nEl _Präteritum_ és el temps de:\n\n- **Narrativa escrita:** novel·les, contes, biografies.\n- **Notícies i premsa:** diaris, reportatges.\n- **Textos formals i acadèmics.**\n\nEn conversa normal, un alemany **no** dirà habitualment _Ich ging ins Kino_ (\"vaig anar al cine\"), sinó _Ich bin ins Kino gegangen_ (_Perfekt_). Si ho sent, sona llibresc o literari."
+        },
+        {
+          "type": "table",
+          "title": "24.2 El mateix fet en dos registres",
+          "headers": ["Registre", "Forma", "Temps"],
+          "rows": [
+            ["**Oral** (conversa)", "_Ich **habe** viel **gearbeitet**._", "Perfekt"],
+            ["**Escrit** (narrativa)", "_Ich **arbeitete** viel._", "Präteritum"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Aquesta divisió (oral → _Perfekt_, escrit → _Präteritum_) és una **convenció** molt sòlida de l'alemany estàndard. Hi ha matisos regionals (al sud d'Alemanya i a Àustria es fa encara més _Perfekt_ que al nord), però com a regla d'A1 funciona perfectament."
+        }
+      ]
+    },
+    {
+      "id": "excepcions-praeteritum-oral",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### L'excepció importantíssima: verbs que sempre van en Präteritum\n\nSi tot fos tan senzill com \"oral = Perfekt, escrit = Präteritum\", no caldria complicar-ho. Però hi ha una **excepció crucial** que has de saber d'entrada:\n\n> ==Alguns verbs molt freqüents es fan servir en **Präteritum també quan parles**. Són els verbs bàsics de l'alemany.=="
+        },
+        {
+          "type": "table",
+          "title": "24.3 Els quatre grups excepcionals (Präteritum també en oral)",
+          "headers": ["Verb", "Präteritum (formes bàsiques)"],
+          "rows": [
+            ["==_sein_== (\"ser/estar\")", "_war, warst, war, waren…_"],
+            ["==_haben_== (\"haver/tenir\")", "_hatte, hattest, hatte, hatten…_"],
+            ["==verbs modals== (_können, müssen, wollen, sollen, dürfen, mögen_)", "_konnte, musste, wollte, sollte, durfte, mochte_"],
+            ["==_es gibt_== (\"hi ha\")", "_es gab_"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Per tant, fins i tot en una conversa informal, un alemany dirà:\n\n- _Es **war** sonnig._ → Ha fet sol / Va fer sol / Feia sol.\n- _Ich **hatte** Hunger._ → He tingut gana / Vaig tenir gana / Tenia gana.\n- _Es **gab** viele Leute._ → Hi ha hagut / Hi va haver / Hi havia molta gent.\n- _Ich **wollte** nicht kommen._ → No he volgut / No vaig voler / No volia venir."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Vorsicht! Excepcions al Perfekt oral",
+          "body": "Els verbs _**sein**_, _**haben**_, els **modals** i l'expressió _**es gibt**_ es fan servir en **Präteritum** per parlar del passat ==**també en conversa**==."
+        },
+        {
+          "type": "explanation",
+          "body": "**Per què aquesta excepció?** Per economia: dir _Ich bin gewesen_ (Perfekt de _sein_) és més llarg i feixuc que dir _Ich war_. Amb els verbs que es fan servir molt, l'alemany prefereix la forma curta.\n\n**Conseqüència pràctica per a tu, ara:**\n\n- Per a _sein, haben, modals, es gibt_ → aprendràs la forma _Präteritum_ i la faràs servir sempre (oral i escrit).\n- Per a **tots els altres verbs** → aprendràs la forma _Perfekt_ i la faràs servir per parlar. El _Präteritum_ d'aquests verbs l'aprendràs més endavant (A1b-25) i només serà útil per llegir textos escrits."
+        }
+      ]
+    },
+    {
+      "id": "check-2-perfekt-vs-praeteritum",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-24-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "check-3-verbs-grup",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-24-ex-03", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "mapa-decisio",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El mapa de decisió: quin temps fer servir\n\nPosem-ho tot junt. Davant d'una situació en passat, aquesta és la decisió:"
+        },
+        {
+          "type": "table",
+          "title": "24.4 Mapa de decisió",
+          "headers": ["Situació", "Temps a fer servir"],
+          "rows": [
+            ["**Conversa / xat / missatge informal**, verb _ser, tenir, modal, hi ha_", "==**Präteritum**== (_war, hatte, konnte, gab_)"],
+            ["**Conversa / xat / missatge informal**, qualsevol altre verb", "==**Perfekt**== (_habe/bin_ + participi)"],
+            ["**Text escrit**: novel·la, conte, article, notícia", "==**Präteritum**== (tots els verbs)"],
+            ["**Text formal, biografia, currículum**", "==**Präteritum**== (tots els verbs)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Les dues preguntes que ho determinen tot",
+          "body": "==**La pregunta que t'has de fer primer és: \"això ho dic o ho escric?\"**==\n\n**Si és escrit** → Präteritum per a tot.\n\n**Si és oral** → és un dels quatre verbs especials (_sein, haben, modal, es gibt_)? Si sí → Präteritum. Si no → Perfekt."
+        },
+        {
+          "type": "explanation",
+          "body": "**Exemples d'aplicació:**\n\n- _\"Ahir vaig anar al cine i feia fred.\"_ (conversa amb un amic)\n  → _Gestern **bin** ich ins Kino **gegangen** und es **war** kalt._\n  → _anar_ és verb normal → Perfekt. _fer (fred)_ = _sein_ → Präteritum.\n\n- _\"Va néixer el 1850, va escriure tres novel·les i va morir pobre.\"_ (text biogràfic)\n  → _Er **wurde** 1850 **geboren**, **schrieb** drei Romane und **starb** arm._\n  → Narrativa escrita → tot Präteritum.\n\n- _\"Aquest matí he esmorzat tard perquè tenia son.\"_ (xat amb un company)\n  → _Heute Morgen **habe** ich spät **gefrühstückt**, weil ich müde **war**._\n  → _esmorzar_ normal → Perfekt. _tenir son_ (_müde sein_) = _sein_ → Präteritum."
+        }
+      ]
+    },
+    {
+      "id": "check-4-oral-o-escrit",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-24-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-5-traduccio-catalana",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-24-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "check-6-triar-temps",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1b-24-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "que-ve-despres",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Què aprendràs a les properes lliçons\n\nAra que tens el mapa, aquí tens la **ruta** del bloc:"
+        },
+        {
+          "type": "table",
+          "title": "24.5 El bloc del passat (A1b-24 → A1b-30)",
+          "headers": ["Lliçó", "Tema"],
+          "rows": [
+            ["**A1b-25**", "**Präteritum**: com es formen les formes de _sein, haben, modals, es gibt_"],
+            ["**A1b-26**", "**Perfekt**: estructura _haben/sein_ + participi"],
+            ["**A1b-27**", "**Partizipien**: com es formen els participis (regulars, irregulars, _ge-_ o no)"],
+            ["**A1b-28**", "**Verbs irregulars importants** i les seves formes de participi"],
+            ["**A1b-29**", "**Haben o sein?**: com triar l'auxiliar del Perfekt"],
+            ["**A1b-30**", "**Ordre de paraules al Perfekt**: on va el participi a la frase"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Expectativa realista",
+          "body": "Acabar aquest bloc no vol dir dominar el passat, sinó **poder explicar el cap de setmana, la teva biografia bàsica i entendre textos senzills en passat**. El domini ple arriba amb la pràctica."
+        }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi: el mapa del passat en alemany\n\n**Dos temps:** _Perfekt_ (_ich habe gemacht_) i _Präteritum_ (_ich machte_).\n\n**Repartiment principal:** Perfekt = conversa · Präteritum = text escrit.\n\n**Excepció crucial:** _sein, haben_, verbs modals, _es gibt_ → sempre Präteritum, fins i tot quan parles."
+        },
+        {
+          "type": "table",
+          "title": "24.6 Síntesi: quin temps i per què",
+          "headers": ["Cas", "Temps", "Forma"],
+          "rows": [
+            ["Oral, verb normal", "==Perfekt==", "_habe/bin_ + participi"],
+            ["Oral, _sein_", "==Präteritum==", "_war, warst, war, waren_…"],
+            ["Oral, _haben_", "==Präteritum==", "_hatte, hattest, hatte, hatten_…"],
+            ["Oral, modal", "==Präteritum==", "_konnte, musste, wollte, sollte, durfte, mochte_"],
+            ["Oral, _es gibt_", "==Präteritum==", "_es gab_"],
+            ["Escrit (narrativa, notícia, biografia)", "==Präteritum==", "tots els verbs"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Idea nuclear per a un catalanoparlant",
+          "body": "==**Un temps alemany = tres temps catalans.**== _Ich habe gelernt_ pot ser \"he estudiat\", \"vaig estudiar\" o \"estudiava\". El matís el dona el context temporal (_heute, gestern, früher, als Kind_), no la forma verbal.\n\nPer tant, quan passis del català a l'alemany, **no intentis triar** entre Perfekt i Präteritum segons el matís català: tria segons la regla **oral/escrit + excepcions**."
+        },
+        {
+          "type": "explanation",
+          "body": "**Què ve ara:** A1b-25 t'ensenyarà com es formen exactament aquestes formes de Präteritum. A1b-26 ensenyarà el Perfekt (auxiliar + participi). A1b-27 entrarà als participis. Ara tens el **per què**; les pròximes lliçons et donaran el **com**.\n\n**Enllaços amb el que ja saps:** A1a-3 (verbs en present, amb _haben/sein_), A1a-26 (modals en present), A1b-15 i A1b-16 (repàs i ampliació de modals). Tots aquests verbs ara els tornaràs a veure, però en la seva forma de passat."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-24-ex-03",
+  "topicId": "A1b-24",
+  "title": "Quin temps en oral: Perfekt o Präteritum?",
+  "prompt": "Per a cada verb, indica en quin temps el faries servir **quan parles** (conversa informal). Recorda el grup petit d'excepcions: ==_sein, haben_, els 6 modals (_können, müssen, wollen, sollen, dürfen, mögen_), _es gibt_==. La resta → Perfekt en oral.",
+  "difficulty": 2,
+  "tags": ["classificacio", "excepcions", "perfekt", "praeteritum"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _sein_ → {{1}}\n2. _arbeiten_ → {{2}}\n3. _haben_ → {{3}}\n4. _lernen_ → {{4}}\n5. _können_ → {{5}}\n6. _gehen_ → {{6}}\n7. _wollen_ → {{7}}\n8. _essen_ → {{8}}\n9. _müssen_ → {{9}}\n10. _lesen_ → {{10}}",
+    "blanks": [
+      { "id": "1", "label": "sein" },
+      { "id": "2", "label": "arbeiten" },
+      { "id": "3", "label": "haben" },
+      { "id": "4", "label": "lernen" },
+      { "id": "5", "label": "können" },
+      { "id": "6", "label": "gehen" },
+      { "id": "7", "label": "wollen" },
+      { "id": "8", "label": "essen" },
+      { "id": "9", "label": "müssen" },
+      { "id": "10", "label": "lesen" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Perfekt en oral", "Präteritum també en oral"] },
+      { "blankId": "2", "options": ["Perfekt en oral", "Präteritum també en oral"] },
+      { "blankId": "3", "options": ["Perfekt en oral", "Präteritum també en oral"] },
+      { "blankId": "4", "options": ["Perfekt en oral", "Präteritum també en oral"] },
+      { "blankId": "5", "options": ["Perfekt en oral", "Präteritum també en oral"] },
+      { "blankId": "6", "options": ["Perfekt en oral", "Präteritum també en oral"] },
+      { "blankId": "7", "options": ["Perfekt en oral", "Präteritum també en oral"] },
+      { "blankId": "8", "options": ["Perfekt en oral", "Präteritum també en oral"] },
+      { "blankId": "9", "options": ["Perfekt en oral", "Präteritum també en oral"] },
+      { "blankId": "10", "options": ["Perfekt en oral", "Präteritum també en oral"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Präteritum també en oral",
+      "2": "Perfekt en oral",
+      "3": "Präteritum també en oral",
+      "4": "Perfekt en oral",
+      "5": "Präteritum també en oral",
+      "6": "Perfekt en oral",
+      "7": "Präteritum també en oral",
+      "8": "Perfekt en oral",
+      "9": "Präteritum també en oral",
+      "10": "Perfekt en oral"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. L'excepció és sempre el mateix **grup petit**: ==_sein, haben_, els 6 modals (_können, müssen, wollen, sollen, dürfen, mögen_), _es gibt_==. Tota la resta (_arbeiten, lernen, gehen, essen, lesen_…) → **Perfekt** quan parles.",
+      "references": ["A1b-24"]
+    },
+    "incorrect": {
+      "default": "Els excepcionals són només aquests: ==_sein, haben_, els 6 modals, _es gibt_==. La resta de verbs, absolutament tots → **Perfekt** en conversa.",
+      "byResponse": [
+        {
+          "match": { "1": "Perfekt en oral" },
+          "message": "_sein_ és del grup excepcional: ==**Präteritum**== també en oral (_ich war_). _Ich bin gewesen_ sonaria rar."
+        },
+        {
+          "match": { "3": "Perfekt en oral" },
+          "message": "_haben_ és del grup excepcional: ==**Präteritum**== també en oral (_ich hatte_). _Ich habe gehabt_ sonaria rar."
+        },
+        {
+          "match": { "5": "Perfekt en oral" },
+          "message": "_können_ és un **modal**: ==**Präteritum**== també en oral (_ich konnte_)."
+        },
+        {
+          "match": { "7": "Perfekt en oral" },
+          "message": "_wollen_ és un **modal**: ==**Präteritum**== també en oral (_ich wollte_)."
+        },
+        {
+          "match": { "9": "Perfekt en oral" },
+          "message": "_müssen_ és un **modal**: ==**Präteritum**== també en oral (_ich musste_)."
+        },
+        {
+          "match": { "2": "Präteritum també en oral" },
+          "message": "_arbeiten_ és un verb normal, no excepcional. En oral → ==**Perfekt**== (_ich habe gearbeitet_)."
+        },
+        {
+          "match": { "4": "Präteritum també en oral" },
+          "message": "_lernen_ és un verb normal. En oral → ==**Perfekt**== (_ich habe gelernt_)."
+        },
+        {
+          "match": { "6": "Präteritum també en oral" },
+          "message": "_gehen_ és un verb normal (tot i que és irregular). En oral → ==**Perfekt**== (_ich bin gegangen_). _Ich ging_ és registre escrit."
+        },
+        {
+          "match": { "8": "Präteritum també en oral" },
+          "message": "_essen_ és un verb normal (tot i que és irregular). En oral → ==**Perfekt**== (_ich habe gegessen_)."
+        },
+        {
+          "match": { "10": "Präteritum també en oral" },
+          "message": "_lesen_ és un verb normal (tot i que és irregular). En oral → ==**Perfekt**== (_ich habe gelesen_)."
+        }
+      ]
+    }
+  }
+}

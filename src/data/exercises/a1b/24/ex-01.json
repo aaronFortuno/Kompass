@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-24-ex-01",
+  "topicId": "A1b-24",
+  "title": "Un Perfekt, tres catalans",
+  "prompt": "Per a cada frase alemanya en _Perfekt_, decideix si la traducció catalana pot ser correcta segons el context adequat. Recorda que un sol _Perfekt_ cobreix **he fet**, **vaig fer** i **feia**: totes tres són traduccions vàlides si el context ho demana.",
+  "difficulty": 1,
+  "tags": ["perfekt", "traduccio", "un-temps-tres-catalans"],
+  "stimulus": {
+    "type": "text",
+    "content": "Cada afirmació presenta una frase alemanya en _Perfekt_ seguida d'una traducció catalana. Marca si la traducció pot ser correcta donat el context adequat."
+  },
+  "interaction": {
+    "type": "trueFalse",
+    "statements": [
+      { "id": "s1", "text": "_Ich habe Pizza gegessen_ → **He menjat pizza**." },
+      { "id": "s2", "text": "_Ich habe Pizza gegessen_ → **Vaig menjar pizza**." },
+      { "id": "s3", "text": "_Ich habe Pizza gegessen_ → **Menjava pizza**." },
+      { "id": "s4", "text": "_Wir sind nach Berlin gefahren_ → **Hem anat a Berlín**." },
+      { "id": "s5", "text": "_Wir sind nach Berlin gefahren_ → **Vam anar a Berlín**." },
+      { "id": "s6", "text": "_Wir sind nach Berlin gefahren_ → **Anàvem a Berlín**." },
+      { "id": "s7", "text": "_Sie hat viel gelesen_ → **Ha llegit molt**." },
+      { "id": "s8", "text": "_Sie hat viel gelesen_ → **Va llegir molt**." },
+      { "id": "s9", "text": "_Sie hat viel gelesen_ → **Llegia molt**." },
+      { "id": "s10", "text": "_Er hat ein Buch geschrieben_ → **Ha escrit un llibre**." },
+      { "id": "s11", "text": "_Er hat ein Buch geschrieben_ → **Va escriure un llibre**." },
+      { "id": "s12", "text": "_Er hat ein Buch geschrieben_ → **Escrivia un llibre**." }
+    ]
+  },
+  "validation": {
+    "type": "truthMap",
+    "answers": {
+      "s1": true,
+      "s2": true,
+      "s3": true,
+      "s4": true,
+      "s5": true,
+      "s6": true,
+      "s7": true,
+      "s8": true,
+      "s9": true,
+      "s10": true,
+      "s11": true,
+      "s12": true
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. En alemany **una sola forma** (_Perfekt_) cobreix el que en català reparteixes entre ==_he fet_ / _vaig fer_ / _feia_==. És el **marcador temporal** (_heute, gestern, früher…_) qui precisa el matís. No cerquis un \"Präteritum per al _vaig fer_ i un Perfekt per al _he fet_\": no existeix.",
+      "references": ["A1b-24"]
+    },
+    "incorrect": {
+      "default": "Totes les traduccions són vàlides segons el context. L'alemany **no distingeix** entre acció recent (_he fet_), acció acabada (_vaig fer_) i hàbit (_feia_): un sol _Perfekt_ les cobreix totes tres. El matís no el dona la forma verbal alemanya, sinó el marcador temporal que l'acompanya (_heute, gestern, als Kind, früher_).",
+      "byResponse": [
+        {
+          "match": { "s3": false },
+          "message": "Sí que és vàlida. _Ich habe Pizza gegessen_ pot ser \"menjava pizza\" si el context és habitual: _Als ich klein war, habe ich jeden Sonntag Pizza gegessen_ → \"De petit, menjava pizza cada diumenge\"."
+        },
+        {
+          "match": { "s6": false },
+          "message": "Sí que és vàlida. _Wir sind nach Berlin gefahren_ pot ser \"anàvem a Berlín\" si el context és repetit: _Jedes Jahr sind wir nach Berlin gefahren_ → \"Cada any anàvem a Berlín\"."
+        },
+        {
+          "match": { "s12": false },
+          "message": "Sí que és vàlida. _Er hat ein Buch geschrieben_ pot ser \"escrivia un llibre\" en un context duratiu o interromput: _Als ich ankam, hat er gerade ein Buch geschrieben_."
+        },
+        {
+          "match": { "s2": false },
+          "message": "Sí que és vàlida. Amb _gestern_ implícit, _Ich habe Pizza gegessen_ és exactament \"Vaig menjar pizza\"."
+        }
+      ]
+    }
+  }
+}

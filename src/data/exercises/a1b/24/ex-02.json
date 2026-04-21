@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-24-ex-02",
+  "topicId": "A1b-24",
+  "title": "Perfekt o Präteritum segons el verb",
+  "prompt": "Totes les frases són de **conversa informal** (xat, oral). Per a cada una, indica si el verb ha d'anar en **Perfekt** o en **Präteritum**, sense haver-lo de formar. Recorda els quatre grups excepcionals: ==_sein, haben_, modals, _es gibt_== → sempre Präteritum. La resta → Perfekt.",
+  "difficulty": 1,
+  "tags": ["perfekt", "praeteritum", "excepcions", "classificacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ahir (anar) al supermercat._ → {{1}}\n2. _Ahir (fer) molt de fred._ → {{2}}\n3. _Aquest matí (tenir) gana._ → {{3}}\n4. _La setmana passada (treballar) molt._ → {{4}}\n5. _De petit no (poder) nedar._ → {{5}}\n6. _Abans (haver-hi) més botigues al barri._ → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "_gehen_ (verb normal)" },
+      { "id": "2", "label": "_sein_ (\"fer fred\" = _kalt sein_)" },
+      { "id": "3", "label": "_haben_ (\"tenir gana\" = _Hunger haben_)" },
+      { "id": "4", "label": "_arbeiten_ (verb normal)" },
+      { "id": "5", "label": "_können_ (verb modal)" },
+      { "id": "6", "label": "_es gibt_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Perfekt", "Präteritum"] },
+      { "blankId": "2", "options": ["Perfekt", "Präteritum"] },
+      { "blankId": "3", "options": ["Perfekt", "Präteritum"] },
+      { "blankId": "4", "options": ["Perfekt", "Präteritum"] },
+      { "blankId": "5", "options": ["Perfekt", "Präteritum"] },
+      { "blankId": "6", "options": ["Perfekt", "Präteritum"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Perfekt",
+      "2": "Präteritum",
+      "3": "Präteritum",
+      "4": "Perfekt",
+      "5": "Präteritum",
+      "6": "Präteritum"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has identificat els quatre grups excepcionals: ==_sein_== (frase 2), ==_haben_== (3), ==_können_== (5, és modal), ==_es gibt_== (6) → tots **Präteritum** també en oral. Els altres verbs (_gehen_, _arbeiten_) → **Perfekt** en conversa.",
+      "references": ["A1b-24"]
+    },
+    "incorrect": {
+      "default": "Recorda els quatre grups especials: ==_sein, haben_, modals, _es gibt_== → sempre **Präteritum**, també quan parles. Tots els altres verbs → **Perfekt** en conversa.",
+      "byResponse": [
+        {
+          "match": { "2": "Perfekt" },
+          "message": "_sein_ (\"ser/fer\" en \"fer fred\") és excepcional: sempre ==**Präteritum**== (_es war kalt_), també en oral. _Es ist kalt gewesen_ sonaria estranyíssim."
+        },
+        {
+          "match": { "3": "Perfekt" },
+          "message": "_haben_ (\"tenir\") és excepcional: sempre ==**Präteritum**== (_ich hatte Hunger_), també en oral. _Ich habe Hunger gehabt_ sonaria estranyíssim."
+        },
+        {
+          "match": { "5": "Perfekt" },
+          "message": "_können_ és un **verb modal**, i tots els modals van en ==**Präteritum**== en oral (_ich konnte nicht schwimmen_). _Ich habe nicht schwimmen können_ existeix però és rar i feixuc."
+        },
+        {
+          "match": { "6": "Perfekt" },
+          "message": "_es gibt_ és excepcional: sempre ==**Präteritum**== → _es gab mehr Läden_, també en oral."
+        },
+        {
+          "match": { "1": "Präteritum" },
+          "message": "_gehen_ és un verb normal. En conversa → ==**Perfekt**==: _Ich bin gestern zum Supermarkt gegangen_. _Ich ging_ sonaria llibresc."
+        },
+        {
+          "match": { "4": "Präteritum" },
+          "message": "_arbeiten_ és un verb normal. En conversa → ==**Perfekt**==: _Ich habe letzte Woche viel gearbeitet_. _Ich arbeitete viel_ és de registre escrit."
+        }
+      ]
+    }
+  }
+}

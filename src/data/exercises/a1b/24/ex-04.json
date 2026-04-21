@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-24-ex-04",
+  "topicId": "A1b-24",
+  "title": "Oral o escrit? Identifica el registre",
+  "prompt": "Per a cada fragment, tria si el registre és **oral** (conversa, xat informal) o **escrit formal** (novel·la, biografia, notícia, article). Fixa't en la forma verbal: _Perfekt_ (_habe/bin_ + participi) sona a conversa; _Präteritum_ sona a text escrit. ==**Excepció**==: _ich war, ich hatte_ i els modals en Präteritum són també conversa normal.",
+  "difficulty": 2,
+  "tags": ["registre", "oral-vs-escrit", "identificacio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ich bin gestern ins Kino gegangen._ → {{1}}\n2. _Goethe schrieb den Faust und starb in Weimar._ → {{2}}\n3. _Hast du schon gegessen?_ → {{3}}\n4. _Der Präsident reiste nach Paris und traf den Minister._ → {{4}}\n5. _Wir haben ein neues Auto gekauft._ → {{5}}\n6. _Sie wohnte zehn Jahre in Berlin und arbeitete als Lehrerin._ → {{6}}\n7. _Ich war müde und hatte Hunger._ → {{7}}\n8. _Als er aufwachte, regnete es._ → {{8}}",
+    "blanks": [
+      { "id": "1", "label": "Perfekt (gehen)" },
+      { "id": "2", "label": "Präteritum narratiu (schreiben, sterben)" },
+      { "id": "3", "label": "Perfekt (essen, pregunta)" },
+      { "id": "4", "label": "Präteritum (reisen, treffen)" },
+      { "id": "5", "label": "Perfekt (kaufen)" },
+      { "id": "6", "label": "Präteritum (wohnen, arbeiten)" },
+      { "id": "7", "label": "Präteritum de sein + haben (excepcions)" },
+      { "id": "8", "label": "Präteritum (aufwachen, regnen)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Oral", "Escrit formal"] },
+      { "blankId": "2", "options": ["Oral", "Escrit formal"] },
+      { "blankId": "3", "options": ["Oral", "Escrit formal"] },
+      { "blankId": "4", "options": ["Oral", "Escrit formal"] },
+      { "blankId": "5", "options": ["Oral", "Escrit formal"] },
+      { "blankId": "6", "options": ["Oral", "Escrit formal"] },
+      { "blankId": "7", "options": ["Oral", "Escrit formal"] },
+      { "blankId": "8", "options": ["Oral", "Escrit formal"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Oral",
+      "2": "Escrit formal",
+      "3": "Oral",
+      "4": "Escrit formal",
+      "5": "Oral",
+      "6": "Escrit formal",
+      "7": "Oral",
+      "8": "Escrit formal"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Fixa't en el patró: _ich bin gegangen, hast du gegessen, wir haben gekauft_ (Perfekt) → ==**oral**==. _schrieb, starb, reiste, wohnte, arbeitete, aufwachte, regnete_ (Präteritum de verbs normals) → ==**escrit**==. Però _ich war, ich hatte_ (frase 7) són Präteritum **en oral** perquè són excepcions. Aquest contrast és el cor de la lliçó.",
+      "references": ["A1b-24"]
+    },
+    "incorrect": {
+      "default": "Regla: _Perfekt_ (_habe/bin_ + participi) → conversa. _Präteritum_ de verbs normals (_schrieb, reiste, wohnte_…) → text escrit. **Excepcions**: _war, hatte, konnte, musste, wollte, gab_ → també es fan servir en oral.",
+      "byResponse": [
+        {
+          "match": { "2": "Oral" },
+          "message": "_schrieb_ i _starb_ són Präteritum de verbs normals (no excepcionals). En conversa ningú no diria això; sona a biografia o narrativa. → ==**Escrit formal**==."
+        },
+        {
+          "match": { "4": "Oral" },
+          "message": "_reiste_ i _traf_ són Präteritum de verbs normals. Típic de la premsa i notícies. → ==**Escrit formal**==."
+        },
+        {
+          "match": { "6": "Oral" },
+          "message": "_wohnte_ i _arbeitete_ són Präteritum de verbs normals. Aquest és el to d'una biografia. → ==**Escrit formal**==."
+        },
+        {
+          "match": { "7": "Escrit formal" },
+          "message": "Parany típic. _war_ i _hatte_ són Präteritum, **sí**, però de _sein_ i _haben_: verbs **excepcionals** que es fan servir en Präteritum **també en oral**. → ==**Oral**==, és conversa normal."
+        },
+        {
+          "match": { "1": "Escrit formal" },
+          "message": "_bin gegangen_ és **Perfekt**, la forma típica de conversa. → ==**Oral**==."
+        },
+        {
+          "match": { "3": "Escrit formal" },
+          "message": "_hast du gegessen_ és Perfekt + pregunta directa. Això és **conversa pura**. → ==**Oral**==."
+        },
+        {
+          "match": { "5": "Escrit formal" },
+          "message": "_haben gekauft_ és Perfekt. Conversa normal. → ==**Oral**==."
+        },
+        {
+          "match": { "8": "Oral" },
+          "message": "_aufwachte_ i _regnete_ són Präteritum de verbs normals (no són excepcions). Sona a narrativa literària: _Als er aufwachte…_ és típic de ficció. → ==**Escrit formal**==."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "A1b-24-ex-05",
+  "topicId": "A1b-24",
+  "title": "Quina traducció catalana demana el context?",
+  "prompt": "Per a cada frase alemanya, tria la traducció catalana **més natural** donat el marcador temporal (_heute, gestern, als Kind, früher_…). La forma alemanya **no canvia**; el que canvia és el matís català, imposat pel context.",
+  "difficulty": 2,
+  "tags": ["traduccio", "marcadors-temporals", "matis-catala"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _**Heute** habe ich viel gearbeitet._ → {{1}}\n2. _**Gestern** habe ich viel gearbeitet._ → {{2}}\n3. _**Als Kind** habe ich viel gearbeitet._ → {{3}}\n4. _**Letzte Woche** bin ich nach Berlin gefahren._ → {{4}}\n5. _**Heute Morgen** habe ich einen Kaffee getrunken._ → {{5}}\n6. _**Früher** hatten wir einen Hund._ → {{6}}",
+    "blanks": [
+      { "id": "1", "label": "heute → avui" },
+      { "id": "2", "label": "gestern → ahir" },
+      { "id": "3", "label": "als Kind → de petit (hàbit)" },
+      { "id": "4", "label": "letzte Woche → la setmana passada" },
+      { "id": "5", "label": "heute Morgen → aquest matí" },
+      { "id": "6", "label": "früher → abans (hàbit); hatten = Präteritum de haben (excepció)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["He treballat molt", "Vaig treballar molt", "Treballava molt"] },
+      { "blankId": "2", "options": ["He treballat molt", "Vaig treballar molt", "Treballava molt"] },
+      { "blankId": "3", "options": ["He treballat molt", "Vaig treballar molt", "Treballava molt"] },
+      { "blankId": "4", "options": ["He anat a Berlín", "Vaig anar a Berlín", "Anava a Berlín"] },
+      { "blankId": "5", "options": ["He pres un cafè", "Vaig prendre un cafè", "Prenia un cafè"] },
+      { "blankId": "6", "options": ["Hem tingut un gos", "Vam tenir un gos", "Teníem un gos"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "He treballat molt",
+      "2": "Vaig treballar molt",
+      "3": "Treballava molt",
+      "4": "Vaig anar a Berlín",
+      "5": "He pres un cafè",
+      "6": "Teníem un gos"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. La forma alemanya (_habe gearbeitet_, _bin gefahren_, _hatten_) **no canvia**. El que canvia és el català, perquè el marcador temporal (_heute, gestern, als Kind, letzte Woche, heute Morgen, früher_) demana un temps concret. ==Quan tradueixis del català a l'alemany, oblida't de triar entre _he fet / vaig fer / feia_==: tot va a Perfekt (o a Präteritum si és verb excepcional).",
+      "references": ["A1b-24"]
+    },
+    "incorrect": {
+      "default": "El marcador temporal català et dicta el temps. **Avui, aquest matí** → perfet compost (_he fet_). **Ahir, la setmana passada** → passat simple (_vaig fer_). **De petit, abans, sempre** → imperfet (_feia, teníem_). La forma alemanya és la mateixa en els tres casos.",
+      "byResponse": [
+        {
+          "match": { "1": "Vaig treballar molt" },
+          "message": "Amb _heute_ (\"avui\") el català demana **he + participi** (\"he treballat\"), no _vaig treballar_. _Vaig treballar_ va amb _gestern_."
+        },
+        {
+          "match": { "3": "Vaig treballar molt" },
+          "message": "_Als Kind_ (\"de petit\") és un context d'**hàbit**, que en català demana imperfet: \"**treballava** molt\". _Vaig treballar_ seria un episodi puntual."
+        },
+        {
+          "match": { "3": "He treballat molt" },
+          "message": "_Als Kind_ (\"de petit\") no és avui: no pot ser \"he treballat\". És un **hàbit del passat** → imperfet: \"**treballava** molt\"."
+        },
+        {
+          "match": { "4": "He anat a Berlín" },
+          "message": "_Letzte Woche_ (\"la setmana passada\") demana passat simple en català: \"**vaig anar** a Berlín\". _He anat_ aniria amb _heute_ o _diese Woche_."
+        },
+        {
+          "match": { "5": "Vaig prendre un cafè" },
+          "message": "_Heute Morgen_ (\"aquest matí\") encara és dins de \"avui\": el català demana **he + participi**: \"**he pres** un cafè\"."
+        },
+        {
+          "match": { "6": "Vam tenir un gos" },
+          "message": "_Früher_ (\"abans\") és context d'**hàbit**, demana imperfet: \"**teníem** un gos\". Nota lateral: _hatten_ és Präteritum de _haben_ perquè _haben_ és excepció, no perquè el català sigui imperfet."
+        },
+        {
+          "match": { "6": "Hem tingut un gos" },
+          "message": "_Früher_ (\"abans\") no és recent: no encaixa amb perfet compost. Context d'hàbit → imperfet: \"**teníem** un gos\"."
+        },
+        {
+          "match": { "2": "He treballat molt" },
+          "message": "_Gestern_ (\"ahir\") demana passat simple en català: \"**vaig treballar** molt\", no \"he treballat\"."
+        }
+      ]
+    }
+  }
+}
