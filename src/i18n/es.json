@@ -5,9 +5,10 @@
   },
   "nav": {
     "home": "Inicio",
-    "topics": "Temas",
+    "topics": "Temario",
     "paths": "Rutas",
     "progress": "Progreso",
+    "settings": "Ajustes",
     "about": "Acerca de"
   },
   "home": {
@@ -76,6 +77,35 @@
     "pairing": {
       "pair": "Emparejar",
       "unpair": "Desemparejar"
+    }
+  },
+  "settings": {
+    "title": "Ajustes",
+    "intro": "Personaliza la experiencia de lectura y estudio. Las preferencias se guardan en el navegador y afectan al Focus Reader al instante.",
+    "appearance": {
+      "title": "Apariencia",
+      "theme": "Tema",
+      "themeLight": "Claro",
+      "themeDark": "Oscuro",
+      "textScale": "Tamaño del texto",
+      "textScaleHint": "Afecta la tipografía del Focus Reader al estudiar un tema."
+    },
+    "reading": {
+      "title": "Lectura",
+      "studyMode": "Modo de estudio",
+      "studyModeFragment": "Fragmento a fragmento",
+      "studyModeFragmentDesc": "Una idea a la vez, en pantalla grande. El ritmo canónico.",
+      "studyModeFull": "Paso completo",
+      "studyModeFullDesc": "Todos los fragmentos de un paso apilados. Útil para repaso.",
+      "typewriter": "Efecto máquina de escribir",
+      "typewriterDesc": "Muestra el texto progresivamente, carácter a carácter.",
+      "tableAnim": "Animación de tablas",
+      "tableAnimDesc": "Las filas aparecen una tras otra con un ligero efecto de revelación."
+    },
+    "reset": {
+      "title": "Restaurar valores por defecto",
+      "description": "Vuelve a los valores recomendados para todos los ajustes.",
+      "button": "Restaurar"
     }
   },
   "theme": {

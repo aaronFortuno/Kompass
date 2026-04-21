@@ -29,6 +29,29 @@
   --shadow-soft: 0 1px 2px rgba(20, 20, 30, 0.04), 0 2px 6px rgba(20, 20, 30, 0.04);
   --shadow-raised: 0 6px 20px rgba(20, 20, 30, 0.08);
 
+  /*
+   * Família Editorial (Reader) · §17.1
+   * Paper/ink càlid inspirat en tipografia editorial. S'usa a tot el shell
+   * reescrit (header, home, temari, settings) i al Focus Reader.
+   * Format "r g b" per a alpha-value dinàmic de Tailwind (bg-reader-paper/50…).
+   */
+  --color-reader-paper: 246 242 234;
+  --color-reader-paper-2: 236 229 214;
+  --color-reader-ink: 27 29 34;
+  --color-reader-ink-2: 75 79 88;
+  --color-reader-muted: 139 142 149;
+  --color-reader-rule: 217 208 189;
+  --color-reader-mark: 232 211 106;
+  --color-reader-editorial-accent: 58 46 31;
+  --color-reader-ok: 31 106 58;
+  --color-reader-bad: 139 42 30;
+  --color-reader-ok-bg: 232 245 234;
+  --color-reader-bad-bg: 252 232 228;
+  --color-reader-kbd-bg: 255 255 255;
+
+  /* Escala tipogràfica del reader · controlable via setting textScale (§17.8) */
+  --kf-type-scale: 1;
+
   /* Motion tokens · §17.6 */
   --duration-fast: 120ms;
   --duration-base: 220ms;
@@ -52,6 +75,21 @@
   --color-danger: 255 109 109;
   --color-warning: 232 166 77;
 
+  /* Família Editorial · versió fosca (biblioteca a mitja llum) */
+  --color-reader-paper: 20 18 16;
+  --color-reader-paper-2: 29 26 22;
+  --color-reader-ink: 241 236 224;
+  --color-reader-ink-2: 200 194 178;
+  --color-reader-muted: 133 129 119;
+  --color-reader-rule: 58 52 42;
+  --color-reader-mark: 214 181 58;
+  --color-reader-editorial-accent: 232 217 184;
+  --color-reader-ok: 111 187 126;
+  --color-reader-bad: 232 128 111;
+  --color-reader-ok-bg: 26 42 30;
+  --color-reader-bad-bg: 42 26 22;
+  --color-reader-kbd-bg: 29 26 22;
+
   --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.35);
   --shadow-raised: 0 6px 20px rgba(0, 0, 0, 0.5);
 }
@@ -61,8 +99,8 @@
     color-scheme: light dark;
   }
   body {
-    @apply bg-bg text-content font-sans antialiased;
-    font-feature-settings: 'cv11', 'ss01';
+    @apply bg-reader-paper text-reader-ink font-serif antialiased;
+    font-feature-settings: 'onum', 'pnum', 'kern';
   }
   /*
    * Transició suau del tema clar↔fosc · §17.2 + §17.6

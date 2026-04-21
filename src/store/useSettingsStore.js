@@ -1,0 +1,99 @@
+import { create } from 'zustand';
+import { persist } from 'zustand/middleware';
+
+/*
+ * Settings globals · ARCHITECTURE §17.8
+ *
+ * Persistit a localStorage sota la clau 'kompass.settings'.
+ * Gestiona les preferències que afecten el reader i la UI: mode de tema,
+ * escala tipogràfica, mode d'estudi (fragment vs full), typewriter i
+ * animació de taules.
+ *
+ * Sincronització cross-pestanya: emetem un CustomEvent cada vegada que
+ * canviem l'estat, i escoltem l'event 'storage' per reaccionar a canvis
+ * d'altres pestanyes (Zustand persist no ho fa sol).
+ */
+
+const SCHEMA_VERSION = 1;
+
+export const TEXT_SCALE_VALUES = [0.85, 0.9, 0.95, 1.0, 1.05, 1.1, 1.15, 1.2, 1.25];
+
+export const DEFAULT_SETTINGS = {
+  schemaVersion: SCHEMA_VERSION,
+  theme: 'light',
+  textScale: 1.0,
+  studyMode: 'fragment',
+  typewriter: true,
+  tableAnim: true,
+};
+
+export const useSettingsStore = create(
+  persist(
+    (set) => ({
+      ...DEFAULT_SETTINGS,
+
+      setTheme: (theme) => set({ theme }),
+      setTextScale: (textScale) => {
+        const clamped = TEXT_SCALE_VALUES.includes(textScale)
+          ? textScale
+          : Math.min(Math.max(textScale, 0.85), 1.25);
+        set({ textScale: clamped });
+      },
+      setStudyMode: (studyMode) => set({ studyMode }),
+      setTypewriter: (typewriter) => set({ typewriter }),
+      setTableAnim: (tableAnim) => set({ tableAnim }),
+
+      update: (patch) => set(patch),
+      reset: () => set({ ...DEFAULT_SETTINGS }),
+    }),
+    {
+      name: 'kompass.settings',
+      version: SCHEMA_VERSION,
+      partialize: (state) => ({
+        schemaVersion: state.schemaVersion,
+        theme: state.theme,
+        textScale: state.textScale,
+        studyMode: state.studyMode,
+        typewriter: state.typewriter,
+        tableAnim: state.tableAnim,
+      }),
+      onRehydrateStorage: () => (state) => {
+        // Notifica altres components que el hydrate s'ha completat per si
+        // depenen de valors reals (p. ex. aplicar data-theme immediatament).
+        if (typeof window !== 'undefined' && state) {
+          window.dispatchEvent(
+            new CustomEvent('kompass-settings-change', { detail: state }),
+          );
+        }
+      },
+    },
+  ),
+);
+
+/*
+ * Hook de conveniència: retorna només l'objecte de valors (sense setters)
+ * per al consum a components de només-lectura. Els setters es recuperen
+ * amb useSettingsStore.getState().setFoo() o useSettingsStore((s) => s.setFoo).
+ */
+export function useSettings() {
+  return useSettingsStore((s) => ({
+    theme: s.theme,
+    textScale: s.textScale,
+    studyMode: s.studyMode,
+    typewriter: s.typewriter,
+    tableAnim: s.tableAnim,
+  }));
+}
+
+/*
+ * Subscripció a canvis per sincronitzar-los amb `document.documentElement`
+ * (data-theme, dark class, --kf-type-scale) + dispatchEvent.
+ * Es crida una sola vegada des de <AppShell> via useEffect.
+ */
+export function applySettingsToDOM(settings) {
+  if (typeof document === 'undefined') return;
+  const root = document.documentElement;
+  root.setAttribute('data-theme', settings.theme);
+  root.classList.toggle('dark', settings.theme === 'dark');
+  root.style.setProperty('--kf-type-scale', String(settings.textScale));
+}

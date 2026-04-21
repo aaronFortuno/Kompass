@@ -16,6 +16,20 @@ export default {
         success: 'rgb(var(--color-success) / <alpha-value>)',
         danger: 'rgb(var(--color-danger) / <alpha-value>)',
         warning: 'rgb(var(--color-warning) / <alpha-value>)',
+        // Família Editorial (Reader) · §17.1
+        'reader-paper': 'rgb(var(--color-reader-paper) / <alpha-value>)',
+        'reader-paper-2': 'rgb(var(--color-reader-paper-2) / <alpha-value>)',
+        'reader-ink': 'rgb(var(--color-reader-ink) / <alpha-value>)',
+        'reader-ink-2': 'rgb(var(--color-reader-ink-2) / <alpha-value>)',
+        'reader-muted': 'rgb(var(--color-reader-muted) / <alpha-value>)',
+        'reader-rule': 'rgb(var(--color-reader-rule) / <alpha-value>)',
+        'reader-mark': 'rgb(var(--color-reader-mark) / <alpha-value>)',
+        'reader-accent': 'rgb(var(--color-reader-editorial-accent) / <alpha-value>)',
+        'reader-ok': 'rgb(var(--color-reader-ok) / <alpha-value>)',
+        'reader-bad': 'rgb(var(--color-reader-bad) / <alpha-value>)',
+        'reader-ok-bg': 'rgb(var(--color-reader-ok-bg) / <alpha-value>)',
+        'reader-bad-bg': 'rgb(var(--color-reader-bad-bg) / <alpha-value>)',
+        'reader-kbd-bg': 'rgb(var(--color-reader-kbd-bg) / <alpha-value>)',
       },
       fontFamily: {
         sans: [
@@ -27,6 +41,8 @@ export default {
           'Roboto',
           'sans-serif',
         ],
+        serif: ['Newsreader', 'Georgia', 'Cambria', 'Times New Roman', 'serif'],
+        mono: ['"IBM Plex Mono"', 'ui-monospace', 'Menlo', 'Consolas', 'monospace'],
       },
       borderRadius: {
         sm: 'var(--radius-sm)',

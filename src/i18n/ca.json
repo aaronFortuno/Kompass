@@ -5,9 +5,10 @@
   },
   "nav": {
     "home": "Inici",
-    "topics": "Temes",
+    "topics": "Temari",
     "paths": "Rutes",
     "progress": "Progrés",
+    "settings": "Ajustos",
     "about": "Sobre"
   },
   "home": {
@@ -82,6 +83,35 @@
     "label": "Tema",
     "light": "Clar",
     "dark": "Fosc"
+  },
+  "settings": {
+    "title": "Ajustos",
+    "intro": "Personalitza l'experiència de lectura i d'estudi. Les preferències es desen al navegador i afecten immediatament la vista del temari.",
+    "appearance": {
+      "title": "Aparença",
+      "theme": "Tema",
+      "themeLight": "Clar",
+      "themeDark": "Fosc",
+      "textScale": "Mida del text",
+      "textScaleHint": "Afecta la tipografia del Focus Reader en estudiar un tema."
+    },
+    "reading": {
+      "title": "Lectura",
+      "studyMode": "Mode d'estudi",
+      "studyModeFragment": "Fragment a fragment",
+      "studyModeFragmentDesc": "Una idea alhora, a pantalla gran. El ritme canònic.",
+      "studyModeFull": "Pas complet",
+      "studyModeFullDesc": "Tots els fragments d'un pas apilats. Útil per al repàs.",
+      "typewriter": "Efecte màquina d'escriure",
+      "typewriterDesc": "Mostra el text progressivament, caràcter a caràcter.",
+      "tableAnim": "Animació de taules",
+      "tableAnimDesc": "Les files apareixen l'una rere l'altra amb un lleuger efecte de revelació."
+    },
+    "reset": {
+      "title": "Restaurar valors per defecte",
+      "description": "Torna tots els ajustos als valors recomanats.",
+      "button": "Restaurar"
+    }
   },
   "locale": {
     "label": "Idioma",

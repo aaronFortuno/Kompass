@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { CheckCircle2 } from 'lucide-react';
+import { Check } from 'lucide-react';
 import { useT } from '@/i18n';
 import { getAllLevelKeys, getTopicsByLevel } from '@/lib/dataLoader.js';
 import { useProgressStore } from '@/store/useProgressStore.js';
@@ -12,21 +12,30 @@ export function TopicsIndexPage() {
 
   return (
     <div className="section-gap max-w-content-list">
-      <header className="space-y-2">
-        <h1 className="text-3xl font-semibold text-content">{t('topics.title')}</h1>
-        <p className="text-content-muted">{t('topics.intro')}</p>
+      <header className="space-y-3 mb-8">
+        <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-reader-muted">
+          Temari
+        </p>
+        <h1 className="font-serif font-medium text-4xl sm:text-5xl tracking-tight text-reader-ink">
+          {t('topics.title')}
+        </h1>
+        <p className="font-serif italic text-lg text-reader-ink-2 max-w-prose">
+          {t('topics.intro')}
+        </p>
       </header>
 
       {levelKeys.length === 0 && (
-        <p className="text-content-muted">{t('topics.empty')}</p>
+        <p className="font-serif text-reader-ink-2">{t('topics.empty')}</p>
       )}
 
       {levelKeys.map((levelKey) => {
         const topics = getTopicsByLevel(levelKey);
         return (
-          <section key={levelKey} className="space-y-3">
-            <h2 className="text-xl font-semibold text-content">{levelKey.toUpperCase()}</h2>
-            <ul className="grid gap-3 sm:grid-cols-2">
+          <section key={levelKey} className="space-y-4 mt-10 first:mt-0">
+            <h2 className="font-mono text-xs uppercase tracking-[0.22em] text-reader-ink border-b border-reader-rule pb-2">
+              {levelKey.toUpperCase()}
+            </h2>
+            <ul className="grid gap-0 divide-y divide-reader-rule">
               {topics.map((topic) => {
                 const { total, completed, pct, allDone } =
                   computeTopicProgress(topic, exercisesState);
@@ -34,57 +43,58 @@ export function TopicsIndexPage() {
                 return (
                   <li key={topic.id}>
                     <Link
-                      to={`/temes/${topic.id}`}
-                      className="card block hover:border-accent"
+                      to={`/temari/${topic.id}`}
+                      className={[
+                        'group flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6',
+                        'py-5 px-2 -mx-2',
+                        'hover:bg-reader-paper-2',
+                        'transition-colors duration-fast ease-standard',
+                      ].join(' ')}
                     >
-                      <span className="block text-xs uppercase tracking-wide text-content-muted">
+                      <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-reader-muted sm:w-20 flex-shrink-0">
                         {topic.id}
                       </span>
-                      <span className="block text-lg font-semibold text-content mt-1">
-                        {topic.shortTitle}
-                      </span>
-                      <span className="block text-sm text-content-muted mt-1">
-                        {topic.description}
+                      <span className="flex-1 min-w-0">
+                        <span className="block font-serif text-xl text-reader-ink group-hover:text-reader-ink tracking-tight">
+                          {topic.shortTitle}
+                        </span>
+                        <span className="block font-serif italic text-sm text-reader-ink-2 mt-1">
+                          {topic.description}
+                        </span>
                       </span>
 
-                      {hasExercises ? (
-                        <div className="mt-3 space-y-1.5">
-                          <div
-                            className="h-1.5 bg-border rounded-full overflow-hidden"
-                            role="progressbar"
-                            aria-valuemin={0}
-                            aria-valuemax={100}
-                            aria-valuenow={pct}
-                          >
+                      <span className="flex-shrink-0 sm:w-32 flex items-center gap-2">
+                        {hasExercises ? (
+                          <>
                             <div
-                              className={[
-                                'h-full rounded-full transition-[width] duration-base ease-standard',
-                                allDone ? 'bg-success' : 'bg-accent',
-                              ].join(' ')}
-                              style={{ width: `${pct}%` }}
-                            />
-                          </div>
-                          {allDone ? (
-                            <span className="flex items-center gap-1 text-xs text-success">
-                              <CheckCircle2 size={14} aria-hidden="true" />
-                              {t('topics.progress.completed')}
-                            </span>
-                          ) : (
-                            <span className="block text-xs text-content-muted">
-                              {t('topics.progress.progressLabel', {
-                                completed,
-                                total,
-                              })}
-                              {' — '}
-                              {t('topics.progress.progressPct', { pct })}
-                            </span>
-                          )}
-                        </div>
-                      ) : (
-                        <span className="block mt-3 text-xs text-content-muted">
-                          {t('topics.progress.noExercises')}
-                        </span>
-                      )}
+                              className="h-[2px] flex-1 bg-reader-rule overflow-hidden"
+                              role="progressbar"
+                              aria-valuemin={0}
+                              aria-valuemax={100}
+                              aria-valuenow={pct}
+                            >
+                              <div
+                                className={[
+                                  'h-full transition-[width] duration-base ease-standard',
+                                  allDone ? 'bg-reader-ok' : 'bg-reader-ink',
+                                ].join(' ')}
+                                style={{ width: `${pct}%` }}
+                              />
+                            </div>
+                            {allDone ? (
+                              <Check size={14} className="text-reader-ok" aria-hidden="true" />
+                            ) : (
+                              <span className="font-mono text-[10px] text-reader-muted w-8 text-right">
+                                {pct}%
+                              </span>
+                            )}
+                          </>
+                        ) : (
+                          <span className="font-mono text-[10px] uppercase tracking-wider text-reader-muted">
+                            {t('topics.progress.noExercises')}
+                          </span>
+                        )}
+                      </span>
                     </Link>
                   </li>
                 );

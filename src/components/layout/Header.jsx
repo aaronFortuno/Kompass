@@ -1,16 +1,19 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Settings as SettingsIcon } from 'lucide-react';
 import { useT } from '@/i18n';
-import { ThemeToggle } from '@/components/ui/ThemeToggle.jsx';
 import { Logo } from '@/components/ui/Logo.jsx';
-// LocaleSwitcher retirat temporalment mentre només tenim contingut en
-// català. El component i el hook d'i18n segueixen al projecte; es pot
-// retornar el selector quan s'afegeixi contingut en un altre locale.
+
+/*
+ * Header editorial · §17.1 + §5 ARCHITECTURE
+ * Logo serif a l'esquerra, navegació al centre en mode mono-caps,
+ * enllaç a /settings a la dreta. El theme toggle ja NO viu al header —
+ * ara només a /settings (decisió intencional).
+ */
 
 const NAV_ITEMS = [
   { to: '/', key: 'nav.home', end: true },
-  { to: '/temes', key: 'nav.topics' },
+  { to: '/temari', key: 'nav.topics' },
   { to: '/rutes', key: 'nav.paths' },
   { to: '/progres', key: 'nav.progress' },
 ];
@@ -21,15 +24,27 @@ export function Header() {
 
   const linkClass = ({ isActive }) =>
     [
-      'px-3 py-2 rounded-sm text-sm',
-      'motion-hover',
-      isActive ? 'text-accent font-medium' : 'text-content-muted hover:text-content',
+      'px-3 py-2 font-mono text-[11px] uppercase tracking-[0.14em]',
+      'transition-colors duration-fast ease-standard',
+      isActive
+        ? 'text-reader-ink'
+        : 'text-reader-muted hover:text-reader-ink-2',
+    ].join(' ');
+
+  const settingsClass = ({ isActive }) =>
+    [
+      'inline-flex items-center justify-center w-8 h-8 rounded-full',
+      'border border-reader-rule',
+      'transition-colors duration-fast ease-standard',
+      isActive
+        ? 'bg-reader-ink text-reader-paper border-reader-ink'
+        : 'text-reader-ink-2 hover:text-reader-ink hover:border-reader-ink-2',
     ].join(' ');
 
   const ToggleIcon = menuOpen ? X : Menu;
 
   return (
-    <header className="sticky top-0 z-20 bg-surface/90 backdrop-blur border-b border-border">
+    <header className="sticky top-0 z-20 bg-reader-paper/90 backdrop-blur border-b border-reader-rule">
       <div className="page-gutter max-w-content-list mx-auto flex items-center justify-between gap-4 py-3">
         <Link to="/" className="inline-flex items-center" aria-label={t('app.name')}>
           <Logo />
@@ -43,13 +58,23 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden md:flex items-center gap-1">
-          <ThemeToggle />
+        <div className="hidden md:flex items-center gap-2">
+          <NavLink
+            to="/settings"
+            className={settingsClass}
+            aria-label={t('nav.settings')}
+            title={t('nav.settings')}
+          >
+            <SettingsIcon size={16} aria-hidden="true" strokeWidth={1.75} />
+          </NavLink>
         </div>
 
         <button
           type="button"
-          className="md:hidden btn-ghost p-2 rounded-sm"
+          className={[
+            'md:hidden p-2 rounded-sm text-reader-ink-2',
+            'hover:text-reader-ink transition-colors duration-fast ease-standard',
+          ].join(' ')}
           aria-expanded={menuOpen}
           aria-controls="mobile-menu"
           onClick={() => setMenuOpen((v) => !v)}
@@ -76,7 +101,7 @@ export function Header() {
             : 'grid-rows-[0fr] opacity-0 pointer-events-none',
         ].join(' ')}
       >
-        <div className="overflow-hidden min-h-0 border-t border-border bg-surface">
+        <div className="overflow-hidden min-h-0 border-t border-reader-rule bg-reader-paper">
           <nav
             className="page-gutter max-w-content-list mx-auto py-3 flex flex-col gap-1"
             aria-label="primary-mobile"
@@ -92,9 +117,13 @@ export function Header() {
                 {t(item.key)}
               </NavLink>
             ))}
-            <div className="flex items-center gap-1 pt-3 mt-2 border-t border-border">
-              <ThemeToggle />
-            </div>
+            <NavLink
+              to="/settings"
+              className={linkClass}
+              onClick={() => setMenuOpen(false)}
+            >
+              {t('nav.settings')}
+            </NavLink>
           </nav>
         </div>
       </div>
