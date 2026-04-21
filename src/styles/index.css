@@ -519,7 +519,7 @@
   font-family: 'Newsreader', serif;
   font-weight: 400;
   font-style: italic;
-  font-size: calc(42px * var(--kf-type-scale, 1));
+  font-size: calc(50px * var(--kf-type-scale, 1));
   line-height: 1.22;
   color: rgb(var(--color-reader-ink));
   margin: 0;
@@ -530,21 +530,21 @@
 .kf-beat-body {
   font-family: 'Newsreader', serif;
   font-weight: 400;
-  font-size: calc(30px * var(--kf-type-scale, 1));
-  line-height: 1.38;
+  font-size: calc(44px * var(--kf-type-scale, 1));
+  line-height: 1.3;
   color: rgb(var(--color-reader-ink));
   margin: 0;
-  max-width: 26ch;
+  max-width: 24ch;
   letter-spacing: -0.005em;
 }
 .kf-beat-point {
   font-family: 'Newsreader', serif;
-  font-size: calc(34px * var(--kf-type-scale, 1));
-  line-height: 1.3;
+  font-size: calc(44px * var(--kf-type-scale, 1));
+  line-height: 1.28;
   letter-spacing: -0.01em;
   color: rgb(var(--color-reader-ink));
   margin: 0;
-  max-width: 24ch;
+  max-width: 22ch;
 }
 
 .kf-beat-ex { display: flex; flex-direction: column; gap: 14px; width: 100%; }
@@ -933,14 +933,14 @@
   padding: 28px 32px;
 }
 
-/* Mode full: tipografies una mica menors */
+/* Mode full: tipografies una mica menors (aprox. 80% del fragment) */
 .kf-stage-full .kf-beat-heading { font-size: calc(54px * var(--kf-type-scale, 1)); }
-.kf-stage-full .kf-beat-lead { font-size: calc(34px * var(--kf-type-scale, 1)); }
-.kf-stage-full .kf-beat-body { font-size: calc(24px * var(--kf-type-scale, 1)); }
+.kf-stage-full .kf-beat-lead { font-size: calc(40px * var(--kf-type-scale, 1)); }
+.kf-stage-full .kf-beat-body { font-size: calc(34px * var(--kf-type-scale, 1)); }
 .kf-stage-full .kf-beat-ex-de { font-size: calc(40px * var(--kf-type-scale, 1)); }
 .kf-stage-full .kf-beat-pron-huge { font-size: calc(96px * var(--kf-type-scale, 1)); }
 .kf-stage-full .kf-beat-pair-poss { font-size: calc(56px * var(--kf-type-scale, 1)); }
-.kf-stage-full .kf-beat-point { font-size: calc(26px * var(--kf-type-scale, 1)); }
+.kf-stage-full .kf-beat-point { font-size: calc(34px * var(--kf-type-scale, 1)); }
 
 /* Responsiu */
 @media (max-width: 720px) {

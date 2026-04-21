@@ -779,12 +779,6 @@ export function FocusReader({ topic }) {
 
         <div className="kf-title">
           <i>{topic.title}</i>
-          {topic.description ? (
-            <>
-              {' '}
-              <span className="kf-muted">— {topic.description}</span>
-            </>
-          ) : null}
         </div>
 
         <ProgressBar
