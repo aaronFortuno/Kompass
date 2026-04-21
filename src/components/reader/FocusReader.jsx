@@ -80,10 +80,14 @@ function resolveStepIndex(topic, stepId) {
  * Troba el topic següent al mateix sublevel (A1a-1 → A1a-2 → …). Si no
  * queda cap topic més al sublevel, retorna null. El fan servir el flux
  * d'exit del reader per encadenar lliçons.
+ *
+ * IMPORTANT: el dataLoader indexa els levels amb la forma canònica tal
+ * com apareix al JSON (p. ex. "A1" + "a" → "A1a"), no normalitzada. Cap
+ * toLowerCase, o no troba el bucket.
  */
 function findNextTopic(topic) {
   if (!topic || !topic.level) return null;
-  const levelKey = `${topic.level.toLowerCase()}${topic.sublevel || ''}`;
+  const levelKey = `${topic.level}${topic.sublevel || ''}`;
   const topics = getTopicsByLevel(levelKey) || [];
   const idx = topics.findIndex((t) => t.id === topic.id);
   if (idx < 0 || idx >= topics.length - 1) return null;
@@ -1326,7 +1330,7 @@ export function FocusReader({ topic }) {
           {isAtEnd && readyToExit ? (
             <div className="kf-next-lesson" role="status" aria-live="polite">
               <span className="kf-next-kicker">
-                {nextTopic ? 'Pròxima lliçó' : 'Has acabat'}
+                {nextTopic ? 'Propera lliçó' : 'Has acabat'}
               </span>
               <span className="kf-next-title">
                 {nextTopic
