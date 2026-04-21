@@ -527,11 +527,23 @@ function ExerciseBeatCard({ beat, stepIdx, onFinish }) {
 
 // ───────────────────────────────────────────── dispatcher
 
-function BeatBody({ beat, step, stepIdx, showKicker, settings, speed, onFinishExercise }) {
+function BeatBody({
+  beat,
+  step,
+  stepIdx,
+  showKicker,
+  settings,
+  speed,
+  onFinishExercise,
+  fastMode,
+}) {
   if (!beat) return null;
 
   const tx = resolveTransition(beat, settings);
-  const typewriterActive = tx === 'typewriter';
+  // fastMode (↑/↓) força la revelació immediata: desactiva el typewriter
+  // i la reveal-clip de taules per a aquest beat.
+  const typewriterActive = tx === 'typewriter' && !fastMode;
+  const tableAnim = tx === 'reveal-clip' && !fastMode;
 
   switch (beat.type) {
     case 'heading':
@@ -553,7 +565,7 @@ function BeatBody({ beat, step, stepIdx, showKicker, settings, speed, onFinishEx
     case 'compare':
       return (
         <CompareBeat
-          {...{ beat, step, stepIdx, showKicker, tableAnim: tx === 'reveal-clip' }}
+          {...{ beat, step, stepIdx, showKicker, tableAnim }}
         />
       );
     case 'pitfall':
@@ -561,7 +573,7 @@ function BeatBody({ beat, step, stepIdx, showKicker, settings, speed, onFinishEx
     case 'callout':
       return <CalloutBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed }} />;
     case 'syn-table':
-      return <SynTableBeat beat={beat} tableAnim={tx === 'reveal-clip'} />;
+      return <SynTableBeat beat={beat} tableAnim={tableAnim} />;
     case 'exercise':
       return (
         <ExerciseBeatCard beat={beat} stepIdx={stepIdx} onFinish={onFinishExercise} />
@@ -588,6 +600,10 @@ export function FocusReader({ topic }) {
 
   const [stepIdx, setStepIdx] = useState(() => resolveStepIndex(topic, stepId));
   const [beatIdx, setBeatIdx] = useState(0);
+  // fastMode: activat amb ↓/↑. Força la revelació instantània del beat
+  // actual. Si ja està actiu quan l'usuari torna a prémer ↓/↑, avança al
+  // següent/anterior beat preservant fastMode (salt continu).
+  const [fastMode, setFastMode] = useState(false);
   const rootRef = useRef(null);
 
   const step = topic.steps[stepIdx];
@@ -639,8 +655,8 @@ export function FocusReader({ topic }) {
     if (step?.id) markStepVisited(topic.id, step.id);
   }, [markStepVisited, topic.id, step?.id]);
 
-  // Navegació: beat, step, bloc.
-  const goBeat = useCallback(
+  // Helper internat: moure un beat (o step en mode full). No toca fastMode.
+  const moveBeat = useCallback(
     (d) => {
       if (isFullMode) {
         const next = Math.max(0, Math.min(totalSteps - 1, stepIdx + d));
@@ -667,8 +683,18 @@ export function FocusReader({ topic }) {
     [beatIdx, beats.length, stepIdx, totalSteps, topic.steps, isFullMode],
   );
 
+  // Navegació normal: reseteja fastMode (el typewriter torna al ritme habitual).
+  const goBeat = useCallback(
+    (d) => {
+      setFastMode(false);
+      moveBeat(d);
+    },
+    [moveBeat],
+  );
+
   const goStep = useCallback(
     (d) => {
+      setFastMode(false);
       const next = Math.max(0, Math.min(totalSteps - 1, stepIdx + d));
       if (next === stepIdx) return;
       setStepIdx(next);
@@ -679,6 +705,7 @@ export function FocusReader({ topic }) {
 
   const goBlock = useCallback(
     (d) => {
+      setFastMode(false);
       if (d > 0) {
         const next = blockStarts[currentBlock + 1];
         if (next != null) {
@@ -697,13 +724,29 @@ export function FocusReader({ topic }) {
   );
 
   const jumpStep = useCallback((i) => {
+    setFastMode(false);
     setStepIdx(i);
     setBeatIdx(0);
   }, []);
 
   const jumpBeat = useCallback((j) => {
+    setFastMode(false);
     setBeatIdx(j);
   }, []);
+
+  // Skip/advance ràpid amb ↑/↓: primer press revela instantàniament el beat;
+  // segon press (o més) avança al següent/anterior mantenint fastMode=true
+  // perquè els següents beats també es revelin sense typewriter.
+  const skipOrAdvance = useCallback(
+    (d) => {
+      if (!fastMode) {
+        setFastMode(true);
+        return;
+      }
+      moveBeat(d);
+    },
+    [fastMode, moveBeat],
+  );
 
   const closeReader = useCallback(() => {
     navigate('/temari');
@@ -717,9 +760,21 @@ export function FocusReader({ topic }) {
         closeReader();
         return;
       }
-      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+
       const tag = document.activeElement?.tagName?.toLowerCase();
       const inInput = ['input', 'textarea', 'select'].includes(tag);
+
+      // ↓ / ↑ : skip typewriter. Primer press revela el beat actual;
+      // següents presses avancen mantenint el skip actiu.
+      if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+        if (inInput) return;
+        e.preventDefault();
+        e.stopPropagation();
+        skipOrAdvance(e.key === 'ArrowDown' ? 1 : -1);
+        return;
+      }
+
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
       const mod = e.ctrlKey || e.metaKey;
 
       // Dins d'un input sense modificador: cedim el control al cursor.
@@ -738,7 +793,7 @@ export function FocusReader({ topic }) {
     };
     window.addEventListener('keydown', onKey, true);
     return () => window.removeEventListener('keydown', onKey, true);
-  }, [closeReader, goBeat, goStep, goBlock]);
+  }, [closeReader, goBeat, goStep, goBlock, skipOrAdvance]);
 
   // Swipe tàctil.
   const touchRef = useRef({ x: 0, y: 0, t: 0, active: false });
@@ -822,6 +877,7 @@ export function FocusReader({ topic }) {
                   showKicker={i === 0}
                   settings={settings}
                   speed={speed}
+                  fastMode={fastMode}
                 />
               </div>
             ))}
@@ -835,6 +891,7 @@ export function FocusReader({ topic }) {
               showKicker={true}
               settings={settings}
               speed={speed}
+              fastMode={fastMode}
             />
           </div>
         )}
@@ -865,6 +922,19 @@ export function FocusReader({ topic }) {
                   <kbd>←</kbd>
                   <kbd>→</kbd>
                   <span className="lbl">fragment</span>
+                </span>
+                <span className="kf-sep" />
+                <span
+                  className={'kgroup' + (fastMode ? ' kf-keyhint-active' : '')}
+                  title={
+                    fastMode
+                      ? 'Salt actiu — el contingut es revela instantàniament'
+                      : 'Salta el typewriter i avança'
+                  }
+                >
+                  <kbd>↑</kbd>
+                  <kbd>↓</kbd>
+                  <span className="lbl">{fastMode ? 'saltant' : 'saltar'}</span>
                 </span>
                 <span className="kf-sep" />
               </>
