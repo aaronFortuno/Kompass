@@ -273,21 +273,31 @@ Patró d'URLs (amb hash routing):
 
 | Ruta                             | Component           | Descripció                                   |
 | -------------------------------- | ------------------- | -------------------------------------------- |
-| `/`                              | `HomePage`          | Benvinguda, mode continuar, enllaços ràpids. |
-| `/temes`                         | `TopicsByLevelPage` | Index per A1a / A1b.                         |
+| `/` (o `/home`)                  | `HomePage`          | Benvinguda, mode continuar, enllaços ràpids. |
+| `/temari`                        | `SyllabusPage`      | Índex del temari (per nivell i capítol).     |
+| `/temari/:chapterId`             | `ChapterPage`       | Vista d'un capítol amb la llista de temes.   |
+| `/temari/:topicId`               | `TopicPage` (+ overlay `FocusReader`) | Vista del tema. **Obre el Focus Reader** com a overlay fullscreen (§18). |
 | `/eixos`                         | `TopicsByAxisPage`  | Index per eix temàtic.                       |
-| `/temes/:topicId`                | `TopicPage`         | Vista del tema (contingut + exercicis).      |
 | `/temes/:topicId/ex/:exerciseId` | `ExercisePage`      | Exercici individual (full-screen).           |
 | `/rutes`                         | `PathsPage`         | Llista de rutes.                             |
 | `/rutes/:pathId`                 | `PathPage`          | Vista d'una ruta.                            |
 | `/progres`                       | `ProgressPage`      | Progrés global, export/import.               |
+| `/settings`                      | `SettingsPage`      | Settings globals (tema, textScale, studyMode, typewriter, tableAnim). Vegeu §17.8. |
 | `/about`                         | `AboutPage`         | Sobre el projecte.                           |
 | `*`                              | `NotFoundPage`      | 404.                                         |
+
+**Notes de routing:**
+
+- `/temari/:topicId` i `/temari/:chapterId` són la mateixa ruta parametritzada: el router decideix quin component renderitzar comprovant si l'id existeix com a capítol o com a topic a l'índex.
+- El Focus Reader és un **overlay fullscreen**, no una pàgina independent. Tècnicament és un component muntat per sobre del shell quan la ruta coincideix amb `/temari/:topicId`. En sortir (`Esc` o botó "← Tornar"), la URL torna al capítol (`/temari/:chapterId`).
+- Deep-linking a un step concret dins del reader: `/temari/:topicId/:stepId` (opcional). Si no hi ha `stepId` vàlid, fallback al primer step.
+- Hash routing: base path de GitHub Pages `/Kompass/` + `#/<ruta>`. Així totes les rutes funcionen amb l'SPA estàtica.
 
 **Navegació contextual:**
 
 - Quan l'usuari té una ruta activa, a qualsevol pàgina hi ha un botó "Següent pas" visible que el porta al següent tema/exercici de la ruta.
 - Quan està en mode lliure, no apareix aquest botó.
+- El toggle de tema (claro/fosc) **només viu a `/settings`**. El shell no hi té un botó accessible directe — és una decisió intencional: canviar de tema és una preferència, no una acció freqüent, i alliberar l'espai al header guanya serenitat editorial.
 
 ---
 
@@ -645,7 +655,7 @@ Aquesta secció cobreix quatre transversals de presentació que afecten tots els
 
 **Categories de tokens:**
 
-- **Color (semàntic, no literal):**
+- **Color — família "UI" (semàntic, no literal):**
   
   - `bg` — fons de pàgina.
   - `surface` — fons de targetes i panells.
@@ -657,11 +667,35 @@ Aquesta secció cobreix quatre transversals de presentació que afecten tots els
   - `accent-content` — text sobre fons `accent`.
   - `success`, `danger`, `warning` — feedback d'exercici (correcte, error, avís).
 
-- **Tipografia:** `fontFamily.sans` (stack amb Inter + system fallback), escala `fontSize` estàndard de Tailwind (`xs / sm / base / lg / xl / 2xl / 3xl / 4xl`).
+- **Color — família "Editorial" (paper/ink, específica del Focus Reader):**
+  
+  El reader d'estudi té el seu propi dialecte cromàtic càlid, inspirat en tipografia editorial de paper + tinta. **No substitueix** la família UI: conviu amb ella. La família UI vesteix shell, llistes i pàgines d'administració; la família Editorial vesteix el reader i qualsevol vista on la immersió lectora sigui l'objectiu principal.
+  
+  - `paper` — fons principal. Tema clar: càlid crema (`#f6f2ea`). Tema fosc: negre càlid biblioteca (`#141210`).
+  - `paper-2` — variant una mica més densa per a targetes i blocs. Tema clar: `#ece5d6`. Tema fosc: `#1d1a16`.
+  - `ink` — text principal. Tema clar: negre càlid `#1b1d22`. Tema fosc: crema tinta `#f1ece0`.
+  - `ink-2` — text secundari, anotacions. Tema clar: `#4b4f58`. Tema fosc: `#c8c2b2`.
+  - `muted` — kickers, metadades, línies fines. Tema clar: `#8b8e95`. Tema fosc: `#858177`.
+  - `rule` — línies divisòries sobre paper. Tema clar: `#d9d0bd`. Tema fosc: `#3a342a`.
+  - `mark` — highlight groc/ambre per a `==text==`. Tema clar: `#e8d36a`. Tema fosc: `#d6b53a`.
+  - `editorial-accent` — accent tipogràfic càlid (capitulars, kickers destacats). Tema clar: `#3a2e1f`. Tema fosc: `#e8d9b8`.
+  - `ok`, `bad` — feedback d'exercici dins el reader. Tema clar: verd `#1f6a3a` / terracota `#8b2a1e`. Tema fosc: verd suau `#6fbb7e` / càlid coral `#e8806f`.
+  - `ok-bg`, `bad-bg` — fons de banners de feedback.
 
-- **Radis:** `radius.sm` (2px), `radius.md` (8px), `radius.lg` (16px).
+  Tots els valors es declaren a `src/styles/index.css` com a variables CSS (també amb format `r g b` triplet per suportar els opacity modifiers de Tailwind) i es mapegen a `tailwind.config.js` amb prefix `reader-` (`bg-reader-paper`, `text-reader-ink`, `border-reader-rule`, `bg-reader-mark`…). Els components del reader **només usen prefix `reader-`**, no es barreja amb `bg-surface` ni `text-content`.
 
-- **Ombres:** `shadow.soft`, `shadow.raised`.
+- **Tipografia — UI:** `fontFamily.sans` (stack amb Inter + system fallback). Usat a tota l'aplicació fora del reader.
+
+- **Tipografia — Editorial (només reader):**
+  
+  - `fontFamily.serif` → `Newsreader, Georgia, serif`. Per a titulars, lead, body, exemples — qualsevol contingut d'estudi llegible a gran mida.
+  - `fontFamily.mono` → `'IBM Plex Mono', ui-monospace, monospace`. Per a kickers, metadades, marcadors ("Punt 1 de 3"), codi inline, comptadors.
+  - Càrrega via Google Fonts a `index.html` (`<link rel="preconnect">` i `<link rel="stylesheet">` amb subset llatí, pesos 400/500 serif + 400 mono).
+  - Escala tipogràfica del reader: valors explícits en els CSS del component (`calc(68px * var(--kf-scale))` per a headings, escalable via setting `textScale` — vegeu §17.8). No s'usa l'escala de Tailwind al reader.
+
+- **Radis:** `radius.sm` (2px), `radius.md` (8px), `radius.lg` (16px). El reader, per preferència editorial, utilitza cantonades **rectes** (`rounded-none`) per a targetes d'exercici i taules; només els `callout` tenen un subtil `radius.sm`.
+
+- **Ombres:** `shadow.soft`, `shadow.raised`. El reader **no usa ombres** — la jerarquia es marca amb espai, tipografia i línies fines (`border-reader-rule`).
 
 - **Espaiat:** es manté l'escala estàndard de Tailwind (0, 0.5, 1, 2, 3, 4…). Per a patrons repetits (gutter de pàgina, gap entre seccions de tema) es defineixen classes `@apply` reutilitzables a `src/styles/index.css` (p. ex. `.page-gutter`, `.section-gap`).
 
@@ -776,6 +810,36 @@ Mapejats a Tailwind com a `transition-duration`, `transition-timing-function` i 
 
 Components d'exercici amb feedback (correcte/incorrecte) usen els mateixos tokens — això també garanteix que la resposta pedagògica se senti integrada, no un afegitó tècnic.
 
+**Transicions de beat (específiques del Focus Reader):**
+
+El reader té un vocabulari d'animacions propi, **registrat per tipus de beat** amb possibilitat d'override per beat individual. Aquest sistema permet que un `heading` faci typewriter mentre un `compare` reveli files amb clip-path i un `pron` entri amb fade — cadascun amb el ritme que millor li convé.
+
+**Registre de transicions** (`src/lib/reader/beatTransitions.js`):
+
+| Transició      | Efecte                                               | Ús pedagògic                                            |
+| -------------- | ---------------------------------------------------- | ------------------------------------------------------- |
+| `typewriter`   | Caràcter a caràcter, ~42 ms/char, caret parpellejant. Només `opacity` no: el contingut apareix progressiu. | Text que mereix pausa (heading, lead, body, point, rule, pitfall.why). Transmet presència i permet llegir a ritme. |
+| `fade-in`      | `opacity 0→1` amb `slide-up` de 8 px. `duration-base ease-enter`. | Elements visuals (pronoms destacats, parelles, exemples un cop escrits). Apareixen simultàniament, no es lletregen. |
+| `reveal-clip`  | `clip-path: inset(0 100% 0 0) → inset(0 0 0 0)` fila a fila, 80-90 ms d'stagger. | Taules (comparació, síntesi). Deixa llegir columna esquerra primer. |
+| `slide-up`     | `translateY(14px) → 0` + `opacity`. `duration-slow ease-enter`. | Pas al mode `studyMode: "full"` on tots els beats d'un step es revelen en cascada. |
+| `none`         | Sense animació; el contingut apareix directament.    | Beats `exercise` (el xrome intern de l'exercici ja anima). Fallback per a `prefers-reduced-motion: reduce`. |
+
+**Mapa per defecte tipus → transició** (ho defineix `getDefaultTransitionForBeat(type)` i està documentat a DATA-MODEL §3.8, columna "Transició per defecte").
+
+**Override per beat:** qualsevol beat pot portar el camp opcional `transition: "fade-in"` (o qualsevol altre valor del registre) per saltar-se el default. Això permet a l'autor d'una lliçó decidir, per exemple, que un `heading` concret aparegui amb `fade-in` en lloc de typewriter (per mantenir el ritme ràpid en un step de transició curta).
+
+**Setting global `typewriter`:** quan és `false`, *totes* les transicions `typewriter` cauen automàticament a `fade-in`. És la palanca d'accessibilitat i preferència individual. La resta de transicions (`fade-in`, `reveal-clip`...) no es veuen afectades per aquest toggle.
+
+**Setting global `tableAnim`:** quan és `false`, `reveal-clip` es degrada a `none` a les taules. L'usuari que prefereixi dades immediates pot desactivar-ho.
+
+**`prefers-reduced-motion: reduce`:** supera els settings; força `none` a totes les transicions del reader (excepte un fade curt de 120 ms per evitar flashes abruptes).
+
+**Regles vinculants específiques del reader:**
+
+1. Mai s'usen `duration`/`easing` literals als components del reader — sempre via el registre.
+2. Afegir un nou tipus de transició requereix: (a) entrada a la taula de sobre, (b) CSS al layer `reader` de `styles/index.css`, (c) mapping a `getDefaultTransitionForBeat` si esdevé default d'algun tipus. Un sol lloc.
+3. Les transicions **només s'apliquen a l'aparició del beat**. No s'anima la sortida (el beat simplement és reemplaçat pel següent a l'intercanvi de `stepIdx`/`beatIdx`). Això és intencional: el Focus Reader tracta cada beat com un moment tancat.
+
 ### 17.7 Claus de `localStorage` (taula completa)
 
 | Clau                  | Contingut                 | Esquema                      |
@@ -783,39 +847,203 @@ Components d'exercici amb feedback (correcte/incorrecte) usen els mateixos token
 | `kompass.progress.v1` | Progrés d'usuari          | `UserProgress` (DM §3.5)     |
 | `kompass.theme`       | Preferència de tema       | `"light" \| "dark"`          |
 | `kompass.locale`      | Idioma de la UI           | `"ca" \| "es"`               |
+| `kompass.settings`    | Settings globals del reader i la UI | `Settings` (§17.8)  |
 
 Qualsevol canvi al `schemaVersion` d'alguna d'aquestes claus requereix migració (vegeu §2 de DATA-MODEL).
 
+### 17.8 Settings globals (`kompass.settings`)
+
+**Concepte:** Kompass té un conjunt de preferències que afecten el reader i la UI. Viuen centralitzades a un sol objecte persistit a `localStorage.kompass.settings`. Es gestionen via hook `useSettings()` (`src/store/useSettingsStore.js`) construït amb Zustand + `persist`.
+
+**Schema:**
+
+```js
+{
+  schemaVersion: 1,
+  theme: "light" | "dark",               // també es guarda a kompass.theme per compat
+  textScale: 0.85 | 0.9 | 0.95 | 1.0 | 1.05 | 1.1 | 1.15 | 1.2 | 1.25,
+  studyMode: "fragment" | "full",
+  typewriter: boolean,
+  tableAnim: boolean,
+}
+```
+
+**Valors per defecte:**
+
+```js
+{
+  schemaVersion: 1,
+  theme: "light",
+  textScale: 1.0,
+  studyMode: "fragment",
+  typewriter: true,
+  tableAnim: true,
+}
+```
+
+**Semàntica per setting:**
+
+- `theme` — mode clar/fosc. Continua compatible amb la clau independent `kompass.theme` (mirror) per raons històriques. El togge únic viu a `/settings` (vegeu §5).
+- `textScale` — multiplicador de la mida tipogràfica editorial al Focus Reader. Exposat com a CSS var `--kf-type-scale` a l'arrel del reader. Rang discret 0.85-1.25 en passos de 0.05, presentat com a slider a Settings.
+- `studyMode` — `"fragment"` mostra un beat alhora (l'experiència canònica pausada). `"full"` apila tots els beats d'un step i el lector fa scroll — pensat per a repàs ràpid.
+- `typewriter` — activa/desactiva la transició typewriter globalment (§17.6). Els beats amb `transition: "typewriter"` cauen a `fade-in` quan és `false`.
+- `tableAnim` — activa/desactiva `reveal-clip` a taules. Quan és `false`, les files apareixen totes alhora (`none`).
+
+**Sincronització entre pestanyes:** el hook emet un `CustomEvent("kompass-settings-change")` a `window` cada vegada que l'estat canvia. Altres components que tinguin el hook muntat reben l'event i refresquen. També escolta `window.addEventListener("storage")` per captar canvis des d'una altra pestanya.
+
+**Interacció amb `prefers-reduced-motion`:** si el sistema demana reduir motion, el reader sobreescriu `typewriter=false` i `tableAnim=false` en runtime (sense modificar les settings persistides — és un override contextual).
+
+**UI:** la pàgina `/settings` mostra tots els controls amb `t('settings.*')` per i18n. Els canvis s'apliquen immediatament (no hi ha botó "Desar"). Hi ha un botó "Restaurar valors per defecte" al peu.
+
+**Migració:** si al llegir `kompass.settings` el `schemaVersion` no coincideix, s'aplica `migrateSettings(raw)` a `src/lib/migrations/settings.js`. En no-trobar-la, es reinicia als defaults sense perdre `kompass.theme` ni `kompass.progress.v1`.
+
 ---
 
-## 18. Reproductor del tema (UX)
+## 18. Focus Reader del tema (UX)
 
-Els temes es presenten com a **reproductor de steps**, no com a document scrolling lineal. Cada step (definit al Topic — vegeu DATA-MODEL §3.1) és una pantalla; l'usuari avança amb "Següent →" / "← Anterior".
+Els temes es presenten dins un **Focus Reader** editorial: overlay fullscreen que convida a l'estudi pausat, una idea alhora, tipografia gran. Substitueix el "reproductor d'steps" original (que encara és el label informal, però la interfície és substancialment diferent). Els dos punts innegociables són: **zero distraccions** i **un beat = una idea**.
 
-**Principis:**
+### 18.1 Tres nivells de navegació: beat, step, bloc
 
-- **Navegació lliure.** L'usuari pot avançar sempre, encara que hi hagi un exercici al step actual no completat. No bloquegem; la pedagogia és amable.
-- **Recordatori d'exercicis pendents.** Quan l'usuari arriba a l'últim step, si queden exercicis sense respondre correctament, es mostra un avís amb la llista de quins falten i enllaç directe a cada un.
-- **Deep-linking.** URL `/temes/:topicId` entra al primer step; `/temes/:topicId/:stepId` entra directament al step amb aquell `id`. Si no hi ha `stepId` vàlid, fallback al primer step amb un warn a consola en dev.
-- **Progrés visible** en format híbrid:
-  - A **mòbil** (< `md`): dots, un per step, sota el títol; l'actiu es destaca en color `accent`, els visitats amb variant muted. Mida tàctil generosa (≥ 24 px).
-  - A **desktop** (`md+`): barra fina amb tick marks per cada step i un fill progressiu fins al step actual. Tooltip amb el títol/id al passar el ratolí.
-- **Teclat:**
-  - `→` / `PageDown` → següent step.
-  - `←` / `PageUp` → anterior step.
-  - `Home` → primer step; `End` → últim.
-  - El handler ignora les tecles dins de camps de formulari (`<input>`, `<select>`, `<textarea>`) per no entrar en conflicte amb inputs d'exercici.
-- **Transicions animades** entre steps amb tokens de motion (§17.6): `opacity` + desplaçament lateral lleuger (`translateX(8px)` en entrada, `translateX(-8px)` en sortida, invertit si es retrocedeix). Duració `--duration-base`, easing `--ease-standard`.
-- **Sense persistència d'step actual.** `UserProgress` només desa els exercicis completats correctament (§3.5 DATA-MODEL), no el step actiu. Cada entrada al tema comença al primer step tret que hi hagi deep-link.
+El reader té una **jerarquia** de tres granularitats, totes navegables independentment:
 
-**Components:**
+- **Beat** — unitat mínima de presentació. Una idea a la pantalla: un heading, una frase, un exemple, un pronom, una taula. Generats per `buildBeats(step)` (vegeu DATA-MODEL §3.8).
+- **Step** — agrupació conceptual de beats, definida al JSON del tema. Un step narratiu és una "secció" (p. ex. "Introducció al plural"); un step exercise és una comprovació puntual.
+- **Bloc** — agrupació superior: un step narratiu/synthesis + tots els steps exercise que el segueixen fins al proper narratiu. Correspon a una unitat pedagògica tancada ("concepte + comprovació").
 
-- `src/components/topic/StepViewer.jsx` — orquestra la navegació, anima transicions, publica l'step actual al URL.
-- `src/components/topic/StepProgress.jsx` — indicador de progrés (dots a mòbil, barra a desktop).
-- `src/components/topic/blocks/ExerciseBlock.jsx` — renderer del bloc `exercise`; amb chip "Comprovació ràpida" o "Avaluació" segons `variant`.
-- `src/components/topic/PendingExercisesNotice.jsx` — l'avís al final del tema, només si n'hi ha de pendents.
+**Teclat:**
 
-**Mode "lectura llarga" (no MVP):** es preveu afegir en un futur un toggle per presentar tots els blocs del tema en scroll continu (útil per al repàs). Quan s'implementi, serà un wrapper alternatiu al mateix Topic sense canviar el schema.
+| Combinació                      | Acció                                  |
+| ------------------------------- | -------------------------------------- |
+| `→` / `←`                       | Beat següent / anterior                |
+| `Ctrl`/`⌘` + `→` / `←`          | Step següent / anterior (salta a la primera beat) |
+| `Ctrl`/`⌘` + `⇧` + `→` / `←`    | Bloc següent / anterior                |
+| `Esc`                           | Tanca el reader i torna al capítol     |
+| `Home` / `End`                  | Primer beat / últim beat del tema (MVP opcional) |
+
+El handler s'afegeix amb `capture: true` a `window` per tenir precedència sobre altres listeners. Dins d'inputs (`<input>`, `<textarea>`), les fletxes sense modificador segueixen movent el cursor; només actuen com a navegació si es prem `Ctrl`/`⌘`. Excepció: dins del camp `typeIn` d'un exercici, `→` al final del text (cursor `atEnd`) vale com a "avançar" — és l'afine que el handoff va validar com a gest natural.
+
+**Tàctil (mòbil / tablet):**
+
+- Swipe horitzontal a l'àrea de contingut navega per **beat**. Mínim 50 px, dominant horitzontal, durada < 800 ms.
+- El swipe s'ignora si comença dins d'un camp d'entrada actiu.
+- No hi ha swipe vertical (el reader no fa scroll en mode fragment).
+- Al mode `studyMode: "full"` l'àrea és scrollable i el swipe horitzontal es desactiva; la navegació per step es fa amb els botons del peu.
+
+**Ratolí/tap:** botons "Anterior" i "Següent" al peu (visibles sempre), i tots els glyphs de la barra de progrés són clicables.
+
+### 18.2 Indicador de progrés
+
+Dues files al cantó superior dret:
+
+1. **Fila de steps** (només en `md+`): un glyph per step, amb forma semàntica segons `kind` i `variant`:
+   - **Cercle** (`●`): `kind: "narrative"` o `kind: "synthesis"`.
+   - **Triangle** (`▲`): `kind: "exercise", variant: "quick-check"`.
+   - **Rombe** (`◆`): `kind: "exercise", variant: "assessment"`.
+   
+   Estats: `pending` (muted), `active` (ink, més gran), `done` (ink-2), `status-ok` / `status-err` (ok / bad, derivats del progrés si l'exercici ja s'ha completat). Hover mostra tooltip amb títol + `sub` (id o `exerciseId`). Els glyphs es separen en **blocs** amb una fina línia vertical (`block-sep`) entre el darrer exercise d'un bloc i el primer narratiu del següent.
+
+2. **Fila de beats**: una sèrie de barretes primes (4 px d'alçada) amb un segment per beat del step actual. L'activa és ink, les passades ink-2, les pendents rule. Clic salta al beat.
+
+A **mòbil** (< 720 px) la fila de steps queda oculta i només es mostra la fila de beats (més compacta, 3 px) + un comptador textual al peu ("Step 03 · 2/5").
+
+### 18.3 Layout i estructura
+
+El reader és un component full-height amb tres àrees fixes:
+
+- **Header** (`kf-head`): logo Kompass + id ("A1a · 01"), títol del tema en cursiva, progrés (fila steps + fila beats).
+- **Body** (`kf-body`): àrea central centrada. Fons càlid paper amb un *backdrop* tipogràfic molt difuminat (opacity 5%) que mostra el text sencer del tema en tres columnes a mode de vel editorial. El beat actiu es pinta per sobre a una `max-width: 880px` amb tipografia gran.
+- **Foot** (`kf-foot`): botons Anterior/Següent + comptador "Step 03 · 2/5 · Bloc 02/04" + llegenda de tecles de navegació (amaga a mòbil).
+
+**Fora del reader:**
+
+- **Botó "← Tornar"** a la cantonada superior esquerra absoluta (sobre el header del reader), amb estil ghost. Tanca l'overlay.
+- **Hint "⎋ Esc per sortir"** a la cantonada inferior dreta absoluta. Apareix els primers 3 segons i fa fade out.
+
+### 18.4 Modes d'estudi (`studyMode`)
+
+- **`"fragment"`** (per defecte): un beat alhora, tipografia gegant, animació per beat (vegeu §17.6). És l'experiència canònica.
+- **`"full"`**: tots els beats del step actual apilats verticalment, tipografies reduïdes (`heading` passa de 68px a 54px, etc.), animació `slide-up` en cascada (60ms d'stagger per beat). Els beats exercise continuen essent un sol beat ocupant tot l'espai. La navegació per beat es desactiva: `←` `→` salten de step a step. Útil per a repàs o per a usuaris que prefereixin ritme més propi.
+
+El canvi entre modes és immediat i no persisteix posició: el step actual es manté, el beat actiu passa al primer del step quan es canvia a `full`.
+
+### 18.5 Adaptador per al format llegat
+
+Les 77 lliçons existents (format `blocks[]`) es renderitzen al mateix Focus Reader via `legacyBlocksToBeats(step)` (vegeu DATA-MODEL §3.8). El resultat és usable però menys pausat que una lliçó rica:
+
+- Un `explanation` llarg es fragmenta via frases automàticament. Si una frase és massa llarga (> 200 chars), l'adapter la parteix per `;` o `,`.
+- Un `callout` es tradueix directament a beat `callout`.
+- Una `table` es tradueix a beat `syn-table` (o `compare` si detecta estructura es/ca/de/en).
+- Un `exercise` es tradueix a beat `exercise`.
+
+**Nota de migració:** durant el període de transició, `TopicPage` detecta si l'step actual és ric o llegat (`"kind" in step`) i dispatcha al builder corresponent. Idealment al final, tot és ric i `legacyBlocksToBeats` queda deprecat (però no eliminat, per suport a exports antics de comunitat).
+
+### 18.6 Interacció amb UserProgress
+
+- **Exercicis.** Cada intent (correcte o incorrecte) es registra a `userProgress.exercises[exerciseId].attempts[]` (DM §3.5). El `firstCorrectAt` es fixa la primera vegada que es resol correctament. El glyph del step exercise al progrés reflecteix aquest estat (`status-ok` / `status-err`).
+- **Steps visitats.** Cada cop que l'usuari arriba per primera vegada a un step, s'afegeix `topics[topicId].stepsVisited[]` (si no hi és). Permet mostrar "% completat" al llistat del capítol.
+- **Cap persistència de `stepIdx`/`beatIdx`.** Entrar a un tema comença sempre al primer beat tret que hi hagi deep-link `/:stepId`. És intencional: la immersió és breu, no calen "continueu on vau deixar-ho" en aquest nivell.
+
+### 18.7 Exercicis dins del reader
+
+L'engine d'exercicis (§9) manté tota la riquesa actual: `dropdownFill`, `matchPairs`, `typeIn`, feedback per blank, feedback diagnòstic de `feedback.byResponse`. Només canvia la **presentació**:
+
+- Cada exercici ocupa un beat sencer, amb card d'aspecte editorial (`kf-ex-card`): fons `paper-2`, sense ombra, vora subtil, cantonades rectes.
+- Les preguntes d'un exercici multi-ítem es presenten **una a una**, amb dots de progrés al peu. La fletxa `→` valida la pregunta actual i avança a la següent (o, si ja és l'última i no hi ha errors, surt al següent step).
+- Després d'errar, l'usuari pot: repetir l'exercici des de zero (`Repetir exercici`), o, si vol saltar-lo, prémer `→` dues vegades (safety-net anti-accidents, tal com proposa el handoff).
+- Els missatges de feedback usen `reader-ok` / `reader-bad` + tipografia editorial. Els `byResponse` matches continuen funcionant, amb l'aspecte visual del banner adaptat.
+
+### 18.8 Fitxers del reader
+
+```
+src/
+├── components/
+│   └── reader/
+│       ├── FocusReader.jsx              # Component arrel, orquestració
+│       ├── FocusReaderHeader.jsx        # Header amb progrés
+│       ├── FocusReaderFoot.jsx          # Peu amb controls
+│       ├── FocusReaderBackdrop.jsx      # Vel tipogràfic al fons
+│       ├── beats/
+│       │   ├── BeatBody.jsx             # Dispatcher per tipus de beat
+│       │   ├── HeadingBeat.jsx
+│       │   ├── LeadBeat.jsx
+│       │   ├── BodyBeat.jsx
+│       │   ├── PointBeat.jsx
+│       │   ├── ExampleBeat.jsx
+│       │   ├── PronBeat.jsx
+│       │   ├── PairBeat.jsx
+│       │   ├── RuleBeat.jsx
+│       │   ├── CompareBeat.jsx
+│       │   ├── PitfallBeat.jsx
+│       │   ├── CalloutBeat.jsx
+│       │   ├── SynTableBeat.jsx
+│       │   └── ExerciseBeat.jsx         # Wrapper de l'ExerciseEngine adaptat
+│       ├── transitions/
+│       │   ├── Typed.jsx                # Typewriter reutilitzable (parseInline + caret)
+│       │   └── beatTransitions.js       # Registre i resolució (§17.6)
+│       └── progress/
+│           ├── StepGlyphs.jsx           # Fila de glyphs (cercle/triangle/rombe)
+│           └── BeatSegments.jsx         # Fila de barretes
+├── lib/
+│   └── reader/
+│       ├── buildBeats.js                # Format ric → Beat[]
+│       ├── legacyBlocksToBeats.js       # Format llegat → Beat[]
+│       └── parseInline.js               # Parser de **/==/_/`
+└── hooks/
+    ├── useSettings.js                   # §17.8
+    ├── useKeyboardNavigation.js         # Teclat del reader
+    └── useTouchSwipe.js                 # Swipe tàctil
+```
+
+`parseInline.js` substitueix l'ús actual de `react-markdown` dins del reader (els textos dels beats són curts i admeten només la sintaxi de DM §3.6). `react-markdown` continua usant-se a la resta de l'app si cal.
+
+### 18.9 Notes d'accessibilitat
+
+- `aria-label` a cada glyph de progrés (`"step 03 de 12"`).
+- Focus ring visible a tots els botons (incloent els glyphs clicables).
+- Quan el reader obre, es fa focus al botó "← Tornar" per permetre sortir amb Tab → Enter.
+- `aria-live="polite"` al container del beat actiu — els lectors de pantalla anuncien el canvi.
+- `prefers-reduced-motion` força `transition: "none"` global (§17.6).
 
 ---
 

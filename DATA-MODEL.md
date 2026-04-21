@@ -43,20 +43,140 @@ Quan el schema evolucioni, cal mantenir una funció de migració `migrate(data, 
 
 ### 3.1. `Topic`
 
-Un tema del curs. Correspon a una unitat de la taula de continguts.
+Un tema del curs. Correspon a una unitat de la taula de continguts. Els camps metadades (id, nivell, títol, eixos...) són comuns; el cos del tema viu dins `steps[]` i admet **dos formats** que coexisteixen durant la migració: el **format ric** (preferent, `kind` + camps plans per al reader Focus) i el **format llegat** (`blocks[]`, encara operatiu per a lliçons no migrades).
 
 ```json
 {
-  "id": "A1b-19",
+  "id": "A1a-1",
   "level": "A1",
-  "sublevel": "b",
-  "number": 19,
-  "title": "Die lokalen Präpositionen: Wechselpräpositionen",
-  "shortTitle": "Wechselpräpositionen",
-  "description": "Les nou preposicions que canvien de cas segons Wo? o Wohin?",
-  "axes": ["preposicions", "casos"],
-  "prerequisites": ["A1a-28", "A1a-34", "A1b-18"],
-  "estimatedMinutes": 25,
+  "sublevel": "a",
+  "number": 1,
+  "title": "Pronomen",
+  "shortTitle": "Pronoms personals i possessius",
+  "description": "El sistema de pronoms personals i possessius en present.",
+  "axes": ["pronoms-verbs"],
+  "prerequisites": [],
+  "estimatedMinutes": 18,
+  "steps": [ /* format ric o format llegat, vegeu sota */ ]
+}
+```
+
+**Camps metadades:**
+
+- `id` *(string, únic)*: identificador canònic. Format `{level}{sublevel}-{number}`.
+- `level` *(string)*: `"A1"`, `"A2"`, `"B1"`…
+- `sublevel` *(string)*: `"a"`, `"b"`. Opcional si el nivell no se subdivideix.
+- `number` *(integer)*: número d'ordre dins el sublevel.
+- `title` *(string)*: títol oficial del tema, tal com apareix a la taula de continguts.
+- `shortTitle` *(string)*: versió curta per a navegació i breadcrumbs.
+- `description` *(string)*: resum d'una frase per a vista d'índex i tooltips.
+- `axes` *(string[])*: eixos temàtics transversals als quals pertany (per a la vista "per eix"). Vegeu §4.
+- `prerequisites` *(string[])*: ids de temes que convé haver vist abans. No bloqueja l'accés, només es mostra com a suggeriment.
+- `estimatedMinutes` *(integer)*: temps estimat per completar el tema. Usat per mostrar a l'UI i calcular progrés de rutes.
+- `steps` *(RichStep[] | LegacyStep[])*: seqüència ordenada de píndoles. Tots els steps d'un mateix tema han de seguir el mateix format; no es barregen els dos dins d'un sol topic. Vegeu §3.1.1 i §3.1.2.
+- **Derivats:** els `exerciseIds` que formen part del tema s'obtenen recorrent els steps. Al format ric, són els `exerciseId` dels steps amb `kind: "exercise"`; al format llegat, els blocs de tipus `exercise` dins `blocks[]`. No es desen explícitament al JSON.
+
+#### 3.1.1. Format ric (preferent)
+
+Cada step declara una **classe** (`kind`) i porta camps plans específics segons aquesta classe. El reader fragmenta el step en **beats** (§3.8) aplicant `buildBeats(step)`. Aquest format permet un recorregut narratiu pausat — una idea per beat, tipografia gran, transicions assignables per tipus.
+
+**Classes de step:**
+
+| `kind`        | Paper pedagògic                                                                                  |
+| ------------- | ------------------------------------------------------------------------------------------------ |
+| `narrative`   | Contingut explicatiu: obre una idea, la desenvolupa, la il·lustra amb exemples o patrons.        |
+| `synthesis`   | Tancament o recapitulació: sol incloure taules de síntesi (típic últim step d'un bloc temàtic).  |
+| `exercise`    | Comprovació o avaluació: referencia un `Exercise` per id (§3.3). No porta text propi.            |
+
+**Camps comuns a tot step ric:**
+
+- `id` *(string, opcional)*: identificador estable del step per a deep-linking (`#/temari/{topicId}/{stepId}`).
+- `kind` *(string, obligatori)*: una de les tres classes anteriors.
+
+**Camps específics per classe:**
+
+*Narrative i synthesis comparteixen molts camps; la taula indica quins són habituals per a cada un (tots són opcionals; un step pot combinar-ne els que li convinguin).*
+
+| Camp          | Tipus                     | Admet en `narrative` | Admet en `synthesis` | Descripció                                                                  |
+| ------------- | ------------------------- | -------------------- | -------------------- | --------------------------------------------------------------------------- |
+| `heading`     | string (inline rich)      | ✓                    | ✓                    | Títol del step. Produeix un beat `heading`.                                 |
+| `lead`        | string (inline rich)      | ✓                    | —                    | Frase-guia en cursiva gran. Un beat `lead`.                                 |
+| `body`        | string (inline rich)      | ✓                    | —                    | Cos narratiu. Es fragmenta frase a frase (splits `.!?`) en beats `body`.    |
+| `points`      | string[] (inline rich)    | ✓                    | —                    | Llista de punts numerats ("Punt 1 de N"). Un beat `point` per ítem.         |
+| `examples`    | `{ de, ca, note? }[]`      | ✓                    | —                    | Exemples bilingües alemany/català. Un beat `example` per ítem.              |
+| `tabs`        | `{ pron, gloss, note, example: { de, ca } }[]` | ✓  | —                    | Pronoms destacats amb glossa i exemple. Un beat `pron` per ítem.            |
+| `pairs`       | `{ personal, possessive, gloss }[]` | ✓          | —                    | Parelles pronom personal → possessiu. Un beat `pair` per ítem.              |
+| `rule`        | string[] (inline rich)    | ✓                    | —                    | Regles numerades. Un beat `rule` per ítem (com `point` però marcat "Regla").|
+| `comparison`  | `{ es, ca, de, en }[]`     | ✓                    | —                    | Taula comparativa entre llengües. Un únic beat `compare`.                   |
+| `pitfalls`    | `{ bad, good, why }[]`     | ✓                    | —                    | Errors freqüents contrastats amb la forma correcta. Un beat `pitfall` per ítem. |
+| `callout`     | `{ variant, title, body }` | ✓                    | ✓                    | Advertència / truc / nota. Un beat `callout`.                               |
+| `tables`      | `{ title, headers, rows }[]` | —                 | ✓                    | Taules de síntesi. Un beat `syn-table` per taula.                           |
+
+*(Al format ric les taules de síntesi no porten cel·les fusionades; cada fila és un array de strings amb inline rich. Si es necessita una taula amb rowspan/colspan s'utilitza el format llegat puntualment o es divideix en taules més petites.)*
+
+**Camps específics per `kind: "exercise"`:**
+
+- `exerciseId` *(string, obligatori)*: id d'un Exercise (§3.3).
+- `variant` *(string, opcional)*: `"quick-check"` (per defecte) o `"assessment"`. Afecta l'etiqueta visual i el glyph de progrés (triangle vs rombe — vegeu ARCHITECTURE §18).
+
+**Exemple mínim (narrative + synthesis + exercise):**
+
+```json
+{
+  "steps": [
+    {
+      "id": "intro",
+      "kind": "narrative",
+      "heading": "Pronomen",
+      "lead": "Les paraules que **substitueixen** un nom.",
+      "body": "En alemany els pronoms personals marquen persona i nombre. També el cas, com els articles.",
+      "points": [
+        "Hi ha ==sis== persones al singular i al plural.",
+        "El pronom ==Sie== formal s'escriu sempre amb majúscula."
+      ]
+    },
+    {
+      "id": "tabs-singular",
+      "kind": "narrative",
+      "heading": "El singular",
+      "tabs": [
+        { "pron": "ich", "gloss": "jo", "note": "Primera persona. En alemany mai majúscula (excepte inici).",
+          "example": { "de": "==Ich== heiße Anna.", "ca": "Em dic Anna." } }
+      ]
+    },
+    {
+      "id": "check-1",
+      "kind": "exercise",
+      "exerciseId": "A1a-1-ex-01",
+      "variant": "quick-check"
+    },
+    {
+      "id": "syn",
+      "kind": "synthesis",
+      "heading": "Síntesi: pronoms personals",
+      "tables": [
+        {
+          "title": "Singular i plural",
+          "headers": ["Persona", "Singular", "Plural"],
+          "rows": [
+            ["1a", "ich", "wir"],
+            ["2a informal", "du", "ihr"],
+            ["3a", "er / sie / es", "sie"],
+            ["2a formal", "Sie", "Sie"]
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+#### 3.1.2. Format llegat (`blocks[]`)
+
+Cada step porta una llista de `blocks[]` heterogenis (explanation, table, exercise, callout) que es renderitzen apilats. És el format amb què es van escriure les 77 lliçons d'A1a/A1b originals. Continua essent vàlid i suportat pel reader via un **adapter** (`legacyBlocksToBeats(step)`, vegeu §3.8 i ARCHITECTURE §18) que el converteix en beats en runtime.
+
+```json
+{
   "steps": [
     {
       "id": "intro",
@@ -76,39 +196,18 @@ Un tema del curs. Correspon a una unitat de la taula de continguts.
       "blocks": [
         { "type": "exercise", "exerciseId": "A1b-19-ex-01" }
       ]
-    },
-    {
-      "id": "synthesis",
-      "blocks": [
-        { "type": "table", "title": "Síntesi", "rows": [ [ "…" ] ] }
-      ]
     }
   ]
 }
 ```
 
-**Camps:**
+Regles de l'adapter:
 
-- `id` *(string, únic)*: identificador canònic. Format `{level}{sublevel}-{number}`.
-- `level` *(string)*: `"A1"`, `"A2"`, `"B1"`…
-- `sublevel` *(string)*: `"a"`, `"b"`. Opcional si el nivell no se subdivideix.
-- `number` *(integer)*: número d'ordre dins el sublevel.
-- `title` *(string)*: títol oficial del tema, tal com apareix a la taula de continguts.
-- `shortTitle` *(string)*: versió curta per a navegació i breadcrumbs.
-- `description` *(string)*: resum d'una frase per a vista d'índex i tooltips.
-- `axes` *(string[])*: eixos temàtics transversals als quals pertany (per a la vista "per eix"). Vegeu §4.
-- `prerequisites` *(string[])*: ids de temes que convé haver vist abans. No bloqueja l'accés, només es mostra com a suggeriment.
-- `estimatedMinutes` *(integer)*: temps estimat per completar el tema. Usat per mostrar a l'UI i calcular progrés de rutes.
-- `steps` *(Step[])*: seqüència ordenada de píndoles que l'estudiant recorre amb el reproductor (vegeu ARCHITECTURE §18). Cada Step té la forma següent:
+- Un step amb un únic bloc `exercise` es tracta com un step de `kind: "exercise"`.
+- Un step que només conté `table`s (o `table`s + `explanation` curta) s'interpreta com a `synthesis`.
+- La resta es tracta com a `narrative`; els `explanation` es fragmenten via frases/markdown, els `table` esdevenen `syn-table` intercalats, els `callout` es traslladen directament.
 
-  ```json
-  { "id": "optional-step-id", "blocks": [ /* ContentBlock[] */ ] }
-  ```
-  
-  - `id` *(string, opcional)*: identificador estable del pas. Útil per a deep-linking (URL `/temes/{topicId}/{stepId}`). Únic dins del tema. Si no es dona, es referencia per posició (1-based).
-  - `blocks` *(ContentBlock[])*: un o més blocs que es renderitzen apilats dins del pas. Pot barrejar `explanation`, `table` i `exercise` (vegeu §3.2). Un sol pas pot ser exclusivament un `exercise` — és el patró per a "comprovacions ràpides" integrades al recorregut.
-
-- **Derivats:** els `exerciseIds` que formen part del tema s'obtenen recorrent `steps[*].blocks` filtrant els de tipus `exercise`. No es desen explícitament.
+**Política de migració:** les lliçons noves s'escriuen directament en format ric. Les 77 antigues es migren progressivament (agents en segon pla) sense urgència; el fallback garanteix que la UX del reader sigui homogènia durant tot el període de transició.
 
 ### 3.2. `ContentBlock`
 
@@ -428,17 +527,20 @@ Qualsevol camp de text de contingut teòric (cel·les de taula, cos d'explicacio
 **Sintaxi admesa:**
 
 - `**text**` → `<strong>` — èmfasi fort, general. Negreta.
-- `==text==` → destacat cromàtic amb color `accent`. Ús: marcar patrons, arrels, lletres clau. És la sintaxi per a l'èmfasi pedagògic que el PDF font sovint representa en color.
+- `==text==` → destacat cromàtic amb color `accent` (o `mark` al Focus Reader). Ús: marcar patrons, arrels, lletres clau. És la sintaxi per a l'èmfasi pedagògic que el PDF font sovint representa en color.
+- `_text_` → `<em>` — cursiva. Ús: matisos, títols en llengua estrangera dins d'una frase, èmfasi suau.
+- `` `text` `` → `<code>` — codi inline. Ús: terminacions (`-en`), lletres concretes (`ß`), formes verbals citades (`sein`), qualsevol fragment que convé separar tipogràficament de la resta.
 
-**No admès a l'MVP:** cursiva, subratllat, codi inline, enllaços, imatges. Si calen, es consideren via blocs dedicats (`example`, `explanation` amb Markdown complet més endavant) o extensió explícita d'aquest schema.
+**No admès a l'MVP:** subratllat, enllaços, imatges. Si calen, es consideren via blocs dedicats (`example`, `explanation` amb Markdown complet més endavant) o extensió explícita d'aquest schema.
 
-**Escapament:** per literalitzar `**` o `==`, precedir amb `\` (`\*\*`, `\=\=`). Un `\` literal s'escriu `\\`.
+**Escapament:** per literalitzar `**`, `==`, `_` o `` ` ``, precedir amb `\` (`\*\*`, `\=\=`, `\_`, `` \` ``). Un `\` literal s'escriu `\\`.
 
 **Regles d'aplicació:**
 
 1. Aquesta sintaxi **només** és vàlida dins de camps marcats com a "admet inline rich text". La resta de camps (ids, tipus, urls…) són text pla.
 2. El renderer aplica la transformació al client; el JSON guarda la notació en cru.
-3. Aplicable en: cel·les de `table`, `text` d'examples, `message` de `feedback`, `body` d'`explanation` (on ja conviu amb Markdown complet — la subsintaxi és compatible).
+3. Aplicable en: cel·les de `table` (llegat i ric), `text` d'examples, `message` de `feedback`, `body` d'`explanation` (on ja conviu amb Markdown complet — la subsintaxi és compatible), i tots els camps textuals del format ric `narrative` i `synthesis` (`heading`, `lead`, `body`, `points`, `tabs.*`, `pairs.*`, `rule`, `comparison.*`, `pitfalls.*`, `callout.*`, `tables.*`).
+4. Els quatre operadors poden anidar-se sempre que els delimitadors no se superposin: `**==text==**` (negreta amb destacat) és vàlid; `**=_=**` no.
 
 ### 3.7. `ExportFile`
 
@@ -455,6 +557,69 @@ Format del fitxer d'exportació/importació que l'usuari pot descarregar.
 ```
 
 Import: valida `schemaVersion`, aplica migracions si cal, substitueix el `UserProgress` actual (amb confirmació prèvia de l'usuari si ja hi ha progrés guardat).
+
+### 3.8. `Beat`
+
+Un **beat** és la unitat atòmica que el Focus Reader pinta a la pantalla: una idea a la vegada, tipografia gran, animació assignada. Els beats **no** es persisteixen al JSON del tema; es generen en runtime a partir del step (sigui ric o llegat) via `buildBeats(step)` o `legacyBlocksToBeats(step)`.
+
+**Principi:** el JSON descriu el contingut (*què*); el beat descriu com es presenta (*com*). El mateix step pot donar N beats diferents segons la configuració de l'usuari (`studyMode: "fragment"` → un beat alhora; `"full"` → tots els beats del step apilats).
+
+**Forma:**
+
+```js
+{ type: "heading", text: "Pronomen", kicker: "A1a-1", transition?: "typewriter" }
+```
+
+- `type` *(string, obligatori)*: categoria del beat. Determina el component renderer i l'animació per defecte.
+- `transition` *(string, opcional)*: sobreescriu l'animació per defecte d'aquell tipus (vegeu ARCHITECTURE §17.6). Valors possibles: `"typewriter"`, `"fade-in"`, `"reveal-clip"`, `"slide-up"`, `"none"`.
+- Camps addicionals específics per tipus.
+
+**Catàleg de tipus de beat:**
+
+| Tipus        | Origen (camps de step ric)          | Transició per defecte | Forma addicional                                                  |
+| ------------ | ----------------------------------- | --------------------- | ----------------------------------------------------------------- |
+| `heading`    | `heading` (un per step)             | `typewriter` lenta    | `{ text, kicker? }`                                               |
+| `lead`       | `lead`                              | `typewriter`          | `{ text }`                                                        |
+| `body`       | cada frase de `body` (split `.!?`)  | `typewriter`          | `{ text }`                                                        |
+| `point`      | cada ítem de `points[]`             | `typewriter`          | `{ text, idx, total }`                                            |
+| `example`    | cada ítem de `examples[]`           | `typewriter` al DE    | `{ ex: { de, ca, note? }, idx, total }`                           |
+| `pron`       | cada ítem de `tabs[]`               | `fade-in` + typewriter nota | `{ tab: { pron, gloss, note, example } }`                   |
+| `pair`       | cada ítem de `pairs[]`              | `fade-in`             | `{ pair: { personal, possessive, gloss }, idx, total }`           |
+| `rule`       | cada ítem de `rule[]`               | `typewriter`          | `{ text, idx, total }`                                            |
+| `compare`    | `comparison` (un sol beat)          | `reveal-clip` fila a fila | `{ rows: [{ es, ca, de, en }] }`                              |
+| `pitfall`    | cada ítem de `pitfalls[]`           | `typewriter` al `why` | `{ pit: { bad, good, why }, idx, total }`                         |
+| `callout`    | `callout`                           | `typewriter` al body  | `{ callout: { variant, title, body } }`                           |
+| `syn-table`  | cada ítem de `tables[]` (synthesis) | `reveal-clip` fila a fila | `{ table: { title, headers, rows } }`                         |
+| `exercise`   | step amb `kind: "exercise"`         | `none` (porta el seu propi chrome) | `{ exerciseId, variant? }`                           |
+
+**`buildBeats(step)`** — contracte:
+
+```js
+/**
+ * Converteix un step en format ric a una llista ordenada de beats.
+ * @param {RichStep} step
+ * @returns {Beat[]}
+ */
+function buildBeats(step) { /* … */ }
+```
+
+Regles:
+
+1. L'ordre dels beats segueix l'ordre dels camps a la taula anterior: primer `heading`, després `lead`, després `body`, després `points`, després `examples`, etc. L'autor d'una lliçó confia que aquest ordre és pedagògicament sensat.
+2. Un step sense cap camp aprofitable produeix un únic beat `heading` amb el seu `id` com a text (garantia de no-zero).
+3. Un step `kind: "exercise"` produeix exactament un beat `exercise`.
+4. `buildBeats` és pura: mateix input → mateix output. No llegeix `settings`.
+
+**`legacyBlocksToBeats(step)`** — adapter per a steps en format llegat. Inspeccióna `step.blocks[]` i emet beats equivalents:
+
+- Un bloc `explanation` amb markdown es fragmenta via frases (`.split(/(?<=[.!?])\s+/)`) i genera beats `body` (o `heading` si coincideix amb un encapçalament `###`).
+- Un bloc `table` genera un beat `syn-table` (o `compare` si detecta estructura es/ca/de/en).
+- Un bloc `callout` genera un beat `callout`.
+- Un bloc `exercise` genera un beat `exercise`.
+
+El resultat és pragmàtic, no ideal — l'experiència pausada completa només s'assoleix amb lliçons migrades al format ric. L'adapter garanteix que cap lliçó quedi trencada durant la migració gradual.
+
+**Ubicació al codi:** `src/lib/reader/buildBeats.js` (pura, testable) + `src/lib/reader/legacyBlocksToBeats.js`. Vegeu ARCHITECTURE §18.
 
 ---
 
