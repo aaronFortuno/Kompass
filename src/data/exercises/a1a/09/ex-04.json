@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-9-ex-04",
+  "topicId": "A1a-9",
+  "title": "Descompon i endevina",
+  "prompt": "Relaciona cada compost alemany amb la seva traducció catalana. Aplica el truc de llegir _de darrere cap endavant_ amb un \"de\" al mig.",
+  "difficulty": 2,
+  "tags": ["komposita", "lectura", "matchpairs", "assessment"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      {
+        "id": "zahnarzt",
+        "group": "Alemany",
+        "content": {
+          "type": "text",
+          "content": "der **Zahnarzt** (_der Zahn_ = dent, _der Arzt_ = metge)"
+        }
+      },
+      {
+        "id": "fahrrad",
+        "group": "Alemany",
+        "content": {
+          "type": "text",
+          "content": "das **Fahrrad** (_fahren_ = anar en vehicle, _das Rad_ = roda)"
+        }
+      },
+      {
+        "id": "muttersprache",
+        "group": "Alemany",
+        "content": {
+          "type": "text",
+          "content": "die **Muttersprache** (_die Mutter_ = mare, _die Sprache_ = llengua)"
+        }
+      },
+      {
+        "id": "tischfussball",
+        "group": "Alemany",
+        "content": {
+          "type": "text",
+          "content": "der **Tischfußball** (_der Tisch_ = taula, _der Fußball_ = futbol)"
+        }
+      },
+      {
+        "id": "dentista",
+        "group": "Català",
+        "content": { "type": "text", "content": "dentista" }
+      },
+      {
+        "id": "bicicleta",
+        "group": "Català",
+        "content": { "type": "text", "content": "bicicleta" }
+      },
+      {
+        "id": "llengua-materna",
+        "group": "Català",
+        "content": { "type": "text", "content": "llengua materna" }
+      },
+      {
+        "id": "futboli",
+        "group": "Català",
+        "content": { "type": "text", "content": "futbolí" }
+      }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Compost alemany",
+    "groupBLabel": "Traducció catalana"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["zahnarzt", "dentista"],
+      ["fahrrad", "bicicleta"],
+      ["muttersprache", "llengua-materna"],
+      ["tischfussball", "futboli"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé! Has aplicat el truc de llegir _de darrere cap endavant_ amb un \"de\" al mig: Zahnarzt = \"metge de dent\" → dentista; Fahrrad = \"roda de rodar\" → bicicleta; Muttersprache = \"llengua de mare\" → llengua materna; Tischfußball = \"futbol de taula\" → futbolí. Aquest reflex et servirà per entendre centenars de paraules sense diccionari."
+    },
+    "incorrect": {
+      "default": "Torna a l'última paraula de cada compost — és el nucli del significat. _Arzt_ = metge, _Rad_ = roda, _Sprache_ = llengua, _Fußball_ = futbol. Les peces del davant només hi afegeixen matís."
+    }
+  }
+}

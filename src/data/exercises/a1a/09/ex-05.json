@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-9-ex-05",
+  "topicId": "A1a-9",
+  "title": "Construeix el compost",
+  "prompt": "Escriu la paraula composta que correspon a cada context. Sense espais ni guionets, amb majúscula inicial.",
+  "difficulty": 3,
+  "tags": ["komposita", "construccio", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Al matí em pentino els cabells amb… (_die Haare_ 'cabells' + _die Bürste_ 'raspall') → die {{1}}\n2. Quan plou al carrer agafo… (_der Regen_ 'pluja' + _der Schirm_ 'paraigua/parasol') → der {{2}}\n3. Els estudiants aprenen llengua a l'escola, concretament a… (_die Sprache_ 'llengua' + _die Schule_ 'escola') → die {{3}}\n4. Per anar de vacances a l'estiu demano… (_der Sommer_ 'estiu' + _der Urlaub_ 'vacances') → der {{4}}",
+    "blanks": [
+      { "id": "1", "label": "compost: Haare + Bürste" },
+      { "id": "2", "label": "compost: Regen + Schirm" },
+      { "id": "3", "label": "compost: Sprache + Schule" },
+      { "id": "4", "label": "compost: Sommer + Urlaub" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "compost complet" },
+      { "blankId": "2", "placeholder": "compost complet" },
+      { "blankId": "3", "placeholder": "compost complet" },
+      { "blankId": "4", "placeholder": "compost complet" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Haarbürste",
+      "2": "Regenschirm",
+      "3": "Sprachschule",
+      "4": "Sommerurlaub"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent construcció. Tot enganxat, majúscula inicial, i l'última peça mana: _Bürste_ → die Haarbürste, _Schirm_ → der Regenschirm, _Schule_ → die Sprachschule, _Urlaub_ → der Sommerurlaub."
+    },
+    "incorrect": {
+      "default": "Recorda les tres regles: (a) sense espais ni guionets — una sola paraula. (b) Majúscula només a la primera lletra (és un substantiu). (c) El gènere l'hereta de l'última peça. Per al cas 3, _Sprache_ perd la _-e_ final davant d'_Schule_ (cau una lletra per fluïdesa): _Sprache_ + _Schule_ → **Sprachschule**."
+    }
+  }
+}

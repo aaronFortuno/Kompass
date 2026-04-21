@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-9-ex-06",
+  "topicId": "A1a-9",
+  "title": "De quin tipus és cada compost?",
+  "prompt": "Classifica cada compost segons la primera peça: _Nomen+Nomen_ (N+N), _Adjektiv+Nomen_ (Adj+N) o _Verb+Nomen_ (V+N).",
+  "difficulty": 2,
+  "tags": ["komposita", "classificacio", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. **Hochhaus** (gratacels) — _hoch_ (alt) + _Haus_ (casa) → tipus: {{1}}\n2. **Lesebuch** (llibre de lectura) — _lesen_ (llegir) + _Buch_ (llibre) → tipus: {{2}}\n3. **Kindergarten** (parvulari) — _Kinder_ (nens) + _Garten_ (jardí) → tipus: {{3}}\n4. **Kühlschrank** (nevera) — _kühl_ (fresc, fred) + _Schrank_ (armari) → tipus: {{4}}",
+    "blanks": [
+      { "id": "1", "label": "tipus de _Hochhaus_" },
+      { "id": "2", "label": "tipus de _Lesebuch_" },
+      { "id": "3", "label": "tipus de _Kindergarten_" },
+      { "id": "4", "label": "tipus de _Kühlschrank_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "1",
+        "options": ["Nomen+Nomen", "Adjektiv+Nomen", "Verb+Nomen"]
+      },
+      {
+        "blankId": "2",
+        "options": ["Nomen+Nomen", "Adjektiv+Nomen", "Verb+Nomen"]
+      },
+      {
+        "blankId": "3",
+        "options": ["Nomen+Nomen", "Adjektiv+Nomen", "Verb+Nomen"]
+      },
+      {
+        "blankId": "4",
+        "options": ["Nomen+Nomen", "Adjektiv+Nomen", "Verb+Nomen"]
+      }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Adjektiv+Nomen",
+      "2": "Verb+Nomen",
+      "3": "Nomen+Nomen",
+      "4": "Adjektiv+Nomen"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Ja distingeixes els tres motlles: _hoch_ i _kühl_ són adjectius (qualitats); _lesen_ és verb (amb la _-en_ que cau); _Kinder_ és un nom en plural. La regla d'or es manté: en tots quatre, el gènere el dóna la segona peça (_das Haus, das Buch, der Garten, der Schrank_)."
+    },
+    "incorrect": {
+      "default": "Mira la **primera peça** de cada compost: si descriu una qualitat (gran, petit, ràpid, fred) → _Adjektiv+Nomen_. Si és una acció amb _-en_ a l'infinitiu → _Verb+Nomen_ (i es queda sense _-en_ en el compost). Si és una cosa o un ésser → _Nomen+Nomen_."
+    }
+  }
+}

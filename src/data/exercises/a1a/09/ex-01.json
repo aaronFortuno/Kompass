@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-9-ex-01",
+  "topicId": "A1a-9",
+  "title": "Quin article porta el compost?",
+  "prompt": "Tria l'article definit (_der / die / das_) que correspon a cada compost. Recorda la regla d'or: mana l'última peça.",
+  "difficulty": 1,
+  "tags": ["komposita", "artikel", "regla-dor"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. der Sommer (estiu) + der Urlaub (vacances) → {{1}} Sommerurlaub\n2. die Hand (mà) + der Schuh (sabata) → {{2}} Handschuh\n3. das Haus (casa) + die Aufgabe (tasca) → {{3}} Hausaufgabe\n4. der Apfel (poma) + der Saft (suc) → {{4}} Apfelsaft",
+    "blanks": [
+      { "id": "1", "label": "article de _Sommerurlaub_" },
+      { "id": "2", "label": "article de _Handschuh_" },
+      { "id": "3", "label": "article de _Hausaufgabe_" },
+      { "id": "4", "label": "article de _Apfelsaft_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["der", "die", "das"] },
+      { "blankId": "2", "options": ["der", "die", "das"] },
+      { "blankId": "3", "options": ["der", "die", "das"] },
+      { "blankId": "4", "options": ["der", "die", "das"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "der", "2": "der", "3": "die", "4": "der" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has aplicat la regla d'or: l'article del compost = l'article de l'última peça. _Urlaub, Schuh, Saft_ són masculins → **der**; _Aufgabe_ és femení → **die**."
+    },
+    "incorrect": {
+      "default": "Torna a l'última paraula de cada compost i mira'n l'article: _der Urlaub_ → der Sommerurlaub; _der Schuh_ → der Handschuh; _die Aufgabe_ → die Hausaufgabe; _der Saft_ → der Apfelsaft. Les peces del davant no canvien el gènere."
+    }
+  }
+}

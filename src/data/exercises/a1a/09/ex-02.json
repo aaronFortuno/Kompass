@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-9-ex-02",
+  "topicId": "A1a-9",
+  "title": "Construeix el compost verb + nom",
+  "prompt": "Escriu la paraula composta completa, incloent l'article. Recorda: (a) el verb perd la terminació _-en_, (b) tot junt sense espais, (c) l'article el dóna l'última peça.",
+  "difficulty": 2,
+  "tags": ["komposita", "verb-nomen", "construccio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. wohn**en** (viure) + das Zimmer (habitació) → {{1}} (sala d'estar)\n2. schreib**en** (escriure) + der Tisch (taula) → {{2}} (escriptori)\n3. wasch**en** (rentar) + die Maschine (màquina) → {{3}} (rentadora)",
+    "blanks": [
+      { "id": "1", "label": "article + compost" },
+      { "id": "2", "label": "article + compost" },
+      { "id": "3", "label": "article + compost" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "article + compost" },
+      { "blankId": "2", "placeholder": "article + compost" },
+      { "blankId": "3", "placeholder": "article + compost" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "das Wohnzimmer",
+      "2": "der Schreibtisch",
+      "3": "die Waschmaschine"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has eliminat la terminació _-en_ del verb, has enganxat el nom, has mantingut la majúscula al substantiu compost i has triat l'article de la darrera peça."
+    },
+    "incorrect": {
+      "default": "Tres passos: (1) treu el _-en_ del verb (_wohnen_ → _wohn-_). (2) Enganxa-hi el nom sencer sense espais. (3) L'article és el de l'última paraula: _das Zimmer_ → **das Wohnzimmer**, _der Tisch_ → **der Schreibtisch**, _die Maschine_ → **die Waschmaschine**."
+    }
+  }
+}

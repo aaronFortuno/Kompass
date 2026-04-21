@@ -1,0 +1,256 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-9",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 9,
+  "title": "Komposita — paraules compostes",
+  "shortTitle": "Komposita",
+  "description": "Substantius compostos en alemany: tipus (N+N, Adj+N, V+N), regla d'or del gènere i els Fugenelemente.",
+  "axes": ["vocabulari-tematic"],
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Context i motivació\n\nSi obres qualsevol diari, menú o caixa de cereals en alemany, topes amb paraules llarguíssimes que semblen impossibles: _Hausaufgabe_, _Erdbeermarmelade_, _Kindergarten_, _Handschuh_… No són errors de picatge: són **==Komposita==**, **paraules compostes**. L'alemany adora enganxar paraules per fabricar-ne de noves, i ho fa amb una facilitat que al català ens sorprèn.\n\nEn català també tenim compostos (_escura-xemeneies_, _para-sol_, _guarda-roba_), però són pocs, sovint porten guionet i poques vegades superen les tres peces. En alemany, en canvi, **qualsevol parlant pot inventar un compost nou al vol** i la resta l'entendrà a l'instant.\n\nUn exemple divertit:\n\n> **der Handschuh** = _die Hand_ (la mà) + _der Schuh_ (la sabata) → literalment **\"sabata de mà\"** = **guant**.\n\nEncantador, oi? L'alemany mira el guant i veu \"una sabateta per a la mà\". Això de descriure el món enganxant peces petites és la gràcia dels Komposita, i és també la **millor drecera de vocabulari que tens a A1**: si saps _Haus_ (casa) i _Aufgabe_ (tasca), entens _Hausaufgabe_ (deure escolar) sense obrir el diccionari.\n\nEn aquest tema aprendràs:\n\n- Quins **tres tipus** de compostos hi ha (nom+nom, adjectiu+nom, verb+nom).\n- La **regla d'or** del gènere i el nombre.\n- Què són els **==Fugenelemente==** (les lletretes d'unió) i per què apareixen.\n- Com **descompondre** un compost llarg per endevinar-ne el significat."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Nota terminològica",
+          "body": "_Komposita_ és el plural de _Kompositum_ (llatinisme gramatical). També ho trobaràs com _zusammengesetzte Substantive_ (\"substantius compostos\"). Aquí farem servir **Komposita** perquè és la paraula que veuràs a totes les gramàtiques."
+        }
+      ]
+    },
+    {
+      "id": "rule-of-gold",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### La regla d'or: mana la **==darrera==** paraula\n\nAbans de veure els tres tipus, interioritza aquesta regla perquè és la més important de tot el tema:\n\n> **En un compost alemany, l'última paraula determina el gènere i el nombre. Les peces anteriors només hi afegeixen matís.**\n\nAixò vol dir dues coses pràctiques:\n\n1. **El gènere del compost = el gènere de la darrera peça.**\n   - _der **Tisch**_ (la taula, masculí) + _das Bein_ (la cama, neutre) = **der Tischbein**? No! → **das Tischbein** (la pota de la taula, neutre), perquè _Bein_ mana. _(Ull: l'ordre és al revés del que sembla en català.)_\n   - _die Hand_ (la mà, femení) + _der **Schuh**_ (la sabata, masculí) = **der Handschuh** (el guant, masculí), perquè _Schuh_ mana.\n\n2. **El significat principal = el de la darrera peça.** Les peces anteriors només especifiquen _de quin tipus_ és.\n   - _der **Wein**_ = vi. _der Rot**wein**_ = un tipus de vi (concretament, vi negre).\n   - _das **Geschirr**_ = vaixella. _das Koch**geschirr**_ = un tipus de vaixella (concretament, la de cuinar).\n\nAl català funciona **al revés**: diem \"vi negre\", \"pota de taula\", \"sabata de mà\" — la paraula principal va **davant** i el matís va **darrere**. En alemany, el nucli va **al final**."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Truc mental per llegir compostos",
+          "body": "Llegeix el compost **de darrere cap endavant**, posant-hi un \"de\" enmig:\n\n- **Hausaufgabe** → _Aufgabe_ + _Haus_ → \"tasca de casa\" → deures.\n- **Zahnbürste** → _Bürste_ + _Zahn_ → \"raspall de dent\" → raspall de dents.\n- **Sommerurlaub** → _Urlaub_ + _Sommer_ → \"vacances d'estiu\".\n\nAquest truc et salvarà moltíssim a les lectures."
+        }
+      ]
+    },
+    {
+      "id": "nomen-nomen",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Tipus 1: **==Nomen + Nomen==** (nom + nom)\n\nÉs el més freqüent. Dues (o més!) paraules enganxades, sempre amb **majúscula a la primera lletra** del conjunt (perquè el resultat és un substantiu). Al PDF del teu curs hi ha tres subcasos que cal distingir.\n\n**a) Sense cap element d'unió** — les peces s'enganxen tal qual:"
+        },
+        {
+          "type": "table",
+          "headers": ["Peça 1", "Peça 2", "Compost"],
+          "rows": [
+            ["der Computer", "das **Spiel** (joc)", "das Computer**spiel** (videojoc)"],
+            ["der Tisch", "das **Bein** (cama)", "das Tisch**bein** (pota de taula)"],
+            ["das Zimmer (habitació)", "die **Pflanze** (planta)", "die Zimmer**pflanze** (planta d'interior)"],
+            ["die Angst (por)", "der **Hase** (llebre)", "der Angst**hase** (cagat, poruc)"],
+            ["die Kinder (nens, plural)", "der **Garten** (jardí)", "der Kinder**garten** (parvulari)"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Fixa't en **_Angsthase_**: literalment \"llebre de la por\". És un insult afectuós que es diu a algú espantadís. I **_Kindergarten_** és literalment \"jardí dels nens\" — és una paraula alemanya que ha viatjat al món sencer sense traduir-se.\n\n**b) Amb ==Fugenelement== (element d'unió)**\n\nDe vegades, per pronunciar millor, entre les dues peces s'hi cola una lletreta: pot ser **-e-**, **-en-**, **-er-**, **-es-** o **-s-**. Aquesta lletra no significa res per si mateixa: és pura fluïdesa."
+        },
+        {
+          "type": "table",
+          "headers": ["Peça 1", "+ _Fuge_", "Peça 2", "Compost"],
+          "rows": [
+            ["der Tag", "-**e**-", "das Buch", "das Tag**e**buch (diari personal)"],
+            ["das Jahr", "-**es**-", "der Bericht (informe)", "der Jahr**es**bericht (informe anual)"],
+            ["die Wirtschaft (economia)", "-**s**-", "die Krise (crisi)", "die Wirtschaft**s**krise (crisi econòmica)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Com ho sé en cada cas?",
+          "body": "A A1 **no has de predir** quin _Fugenelement_ porta cada paraula. Simplement l'aprens amb el compost sencer, com qui aprèn el gènere. Amb el temps, notaràs patrons (_-s-_ és el més comú després de paraules femenines acabades en _-ung, -heit, -keit, -schaft_)."
+        },
+        {
+          "type": "explanation",
+          "body": "**c) De vegades es perd una lletra**"
+        },
+        {
+          "type": "table",
+          "headers": ["Peça 1", "Peça 2", "Compost"],
+          "rows": [
+            ["die Erdbeer**e** (maduixa)", "das Eis (gelat)", "das Erdbeer~~e~~**eis** (gelat de maduixa)"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "La _-e_ final de _Erdbeere_ cau perquè la següent paraula comença per _e_ i seria lletja de dir. És el mateix instint que tenim al català amb \"l'home\" en lloc de \"el home\"."
+        }
+      ]
+    },
+    {
+      "id": "check-nomen-nomen",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-9-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "adjektiv-nomen",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Tipus 2: **==Adjektiv + Nomen==** (adjectiu + nom)\n\nUn adjectiu + un substantiu fusionats en una sola paraula. El resultat és **sempre un substantiu** (majúscula, i gènere del nom)."
+        },
+        {
+          "type": "table",
+          "headers": ["Adjectiu", "+ Nom", "= Compost"],
+          "rows": [
+            ["**rot** (vermell)", "der Wein (vi)", "der **Rot**wein (vi negre)"],
+            ["**schnell** (ràpid)", "der Imbiss (mos, refrigeri)", "der **Schnell**imbiss (menjar ràpid / restaurant de _fast food_)"],
+            ["**groß** (gran)", "die Stadt (ciutat)", "die **Groß**stadt (gran ciutat, metròpoli)"],
+            ["**hoch** (alt)", "das Haus (casa)", "das **Hoch**haus (gratacels)"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Compte amb una subtilesa de vocabulari: **_Rotwein_ és el que nosaltres anomenem \"vi negre\"** (tot i que literalment sigui \"vi vermell\"). Cada llengua mira el món amb ulls propis."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Pista pedagògica",
+          "body": "Aquesta construcció és paral·lela al que faries dient _un vi-que-és-vermell_ convertit en una sola paraula. En català mai diríem \"vermellvi\", però l'alemany sí: compacta \"adjectiu + nom\" en un bloc únic quan la combinació s'ha lexicalitzat (és a dir, quan s'ha fixat com a concepte propi)."
+        }
+      ]
+    },
+    {
+      "id": "verb-nomen",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Tipus 3: **==Verb + Nomen==** (verb + nom)\n\nAquí hi ha un detall important: **el verb perd la seva terminació**. A l'infinitiu, els verbs alemanys acaben en _-en_ (_kochen_, _schwimmen_, _essen_). Quan el verb entra en un compost, aquesta terminació **cau** i només en queda l'arrel."
+        },
+        {
+          "type": "table",
+          "headers": ["Verb (infinitiu)", "Arrel", "+ Nom", "= Compost"],
+          "rows": [
+            ["koch**en** (cuinar)", "koch-", "das Geschirr (vaixella)", "das **Koch**geschirr (estris de cuina)"],
+            ["schwimm**en** (nedar)", "schwimm-", "das Bad (bany)", "das **Schwimm**bad (piscina)"],
+            ["ess**en** (menjar)", "ess-", "der Löffel (cullera)", "der **Ess**löffel (cullera de menjar, cullera sopera)"]
+          ]
+        },
+        {
+          "type": "explanation",
+          "body": "Així, un **Schwimmbad** és literalment \"bany de nedar\" → una piscina. Un **Esslöffel** és una \"cullera de menjar\" (per contrast amb _Teelöffel_, \"cullera de te\" = cullereta). Tornant a la regla d'or: el gènere sempre és el del nom final (_das Bad_ → _das Schwimmbad_; _der Löffel_ → _der Esslöffel_)."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Connexió amb altres temes",
+          "body": "Aquest patró \"arrel de verb + nom\" te'l tornaràs a trobar quan estudiïs els **==verbs separables==** (A1a-25): allà, en comptes d'un nom, el que s'enganxa davant del verb és una preposició o adverbi. És el mateix esperit: l'alemany construeix paraules noves per agregació."
+        }
+      ]
+    },
+    {
+      "id": "check-verb-nomen",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-9-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys habituals\n\n**1. Fer concordar l'article amb la primera paraula.**\nÉs l'error més típic entre catalanoparlants, perquè en català pensem primer el \"nucli\" i després el matís.\n\n> Incorrecte: **die Handschuh** (perquè _die Hand_ és femení).\n> Correcte: **der Handschuh** (perquè _der Schuh_ mana, i és masculí).\n\n**2. Deixar la terminació _-en_ del verb.**\n\n> Incorrecte: **das Kochengeschirr**.\n> Correcte: **das Kochgeschirr**. (Cau la _-en_ de _kochen_.)\n\n**3. Separar el compost amb espais o guionets.**\nL'alemany escriu els compostos **com una sola paraula**, sense espais ni guionets (llevat d'algun cas molt marcat). No és com en anglès, que separa molts compostos amb espai (_post office, swimming pool_).\n\n> Incorrecte: **Schwimm Bad**, **Schwimm-Bad**.\n> Correcte: **Schwimmbad**.\n\n**4. Perdre's amb els _Fugenelemente_ a A1.**\nNo intentis predir si cal _-s-_, _-es-_ o _-en-_. A A1, **aprèn cada compost com un tot**, amb el seu article i les seves lletretes d'unió si en porta.\n\n**5. Oblidar la majúscula del compost sencer.**\nEl compost és un substantiu → **majúscula a la primera lletra**, encara que la peça inicial fos un verb o un adjectiu. _kochen_ (minúscula, perquè és verb) → _Kochgeschirr_ (majúscula, perquè ja és substantiu).\n\n**6. Traduir literalment peça per peça i trobar el resultat estrany.**\n**_Handschuh_** no és \"sabata de mà\", és **guant**. **_Rotwein_** no és \"vi vermell\", és **vi negre**. Un cop lexicalitzats, els compostos tenen un significat propi que no sempre coincideix amb la suma de les peces. Descompon per endevinar, però accepta el significat real quan el diccionari et corregeix."
+        }
+      ]
+    },
+    {
+      "id": "assessment-intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### A posar-ho a prova\n\nAra posem a prova tot el tema amb quatre exercicis globalitzadors."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-9-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-9-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-9-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-9-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Síntesi del tema\n\nAquestes taules compacten tot el que has vist: els tres motlles, els _Fugenelemente_ més freqüents i una tria de compostos útils a A1 per endur-te."
+        },
+        {
+          "type": "table",
+          "title": "9.1 Els tres tipus de Komposita",
+          "headers": ["Tipus", "Patró", "Exemple", "Literalment"],
+          "rows": [
+            ["**Nomen + Nomen**", "substantiu + substantiu", "der **Handschuh**", "\"sabata de mà\" = guant"],
+            ["**Adjektiv + Nomen**", "adjectiu + substantiu", "der **Rotwein**", "\"vi vermell\" = vi negre"],
+            ["**Verb + Nomen**", "arrel verbal (sense _-en_) + substantiu", "das **Schwimmbad**", "\"bany de nedar\" = piscina"]
+          ],
+          "caption": "En tots tres tipus, la regla d'or es manté: el gènere del compost = el gènere de l'última peça."
+        },
+        {
+          "type": "table",
+          "title": "9.2 Fugenelemente més freqüents",
+          "headers": ["Element", "Exemple", "Compost"],
+          "rows": [
+            ["-**e**-", "der Tag + das Buch", "das Tag**e**buch (diari personal)"],
+            ["-**es**-", "das Jahr + der Bericht", "der Jahr**es**bericht (informe anual)"],
+            ["-**s**-", "die Wirtschaft + die Krise", "die Wirtschaft**s**krise (crisi econòmica)"],
+            ["-**en**-", "der Herr + das Haus", "das Herr**en**haus (casa senyorial)"],
+            ["-**er**-", "das Kind + der Garten", "der Kind**er**garten (parvulari, amb plural _Kinder_)"]
+          ],
+          "caption": "A A1 no cal predir-los: aprèn-los amb el compost sencer, com qui aprèn el gènere."
+        },
+        {
+          "type": "table",
+          "title": "9.3 Compostos útils d'A1",
+          "headers": ["Compost", "Peces", "Traducció"],
+          "rows": [
+            ["die **Hausaufgabe**", "das Haus + die Aufgabe", "els deures"],
+            ["der **Kindergarten**", "die Kinder + der Garten", "parvulari"],
+            ["das **Schwimmbad**", "schwimmen + das Bad", "piscina"],
+            ["der **Handschuh**", "die Hand + der Schuh", "guant"],
+            ["die **Zahnbürste**", "der Zahn + die Bürste", "raspall de dents"],
+            ["der **Regenschirm**", "der Regen + der Schirm", "paraigua"],
+            ["der **Sommerurlaub**", "der Sommer + der Urlaub", "vacances d'estiu"],
+            ["die **Muttersprache**", "die Mutter + die Sprache", "llengua materna"]
+          ]
+        }
+      ]
+    }
+  ]
+}

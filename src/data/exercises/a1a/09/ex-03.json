@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-9-ex-03",
+  "topicId": "A1a-9",
+  "title": "La regla d'or en acció",
+  "prompt": "Tria l'article correcte a cada frase. Recorda que el gènere del compost = el gènere de la seva última peça, independentment del tipus de compost (N+N, Adj+N o V+N).",
+  "difficulty": 2,
+  "tags": ["komposita", "artikel", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. Das ist {{1}} Rotwein. (_rot_ + _der_ Wein)\n2. {{2}} Schwimmbad ist neu. (_schwimmen_ + _das_ Bad)\n3. Wo ist {{3}} Handschuh? (_die_ Hand + _der_ Schuh)\n4. {{4}} Wirtschaftskrise ist ernst. (_die_ Wirtschaft + _die_ Krise)",
+    "blanks": [
+      { "id": "1", "label": "article de _Rotwein_, mig de frase" },
+      { "id": "2", "label": "article de _Schwimmbad_, inici de frase" },
+      { "id": "3", "label": "article de _Handschuh_, mig de frase" },
+      { "id": "4", "label": "article de _Wirtschaftskrise_, inici de frase" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["der", "die", "das"] },
+      { "blankId": "2", "options": ["Der", "Die", "Das"] },
+      { "blankId": "3", "options": ["der", "die", "das"] },
+      { "blankId": "4", "options": ["Der", "Die", "Das"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "der", "2": "Das", "3": "der", "4": "Die" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has mirat sempre l'última peça: _der Wein_ → der Rotwein; _das Bad_ → das Schwimmbad; _der Schuh_ → der Handschuh; _die Krise_ → die Wirtschaftskrise. La peça del davant (adjectiu, verb o nom) no canvia mai el gènere."
+    },
+    "incorrect": {
+      "default": "La regla d'or: el gènere del compost = el gènere de l'última paraula. Ignora el que hi ha al davant. _Wein_ és masculí, _Bad_ és neutre, _Schuh_ és masculí, _Krise_ és femení."
+    }
+  }
+}
