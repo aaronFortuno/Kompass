@@ -1140,6 +1140,31 @@ export function FocusReader({ topic }) {
     return () => window.removeEventListener('keydown', onKey, true);
   }, [closeReader, goBeat, goStep, goBlock, skipOrAdvance, drawerOpen, splashVisible]);
 
+  // Navegació amb scroll del ratolí / trackpad. Cada scroll amunt/avall
+  // equival a prémer ← / → (beat prev/next). Throttled per evitar que
+  // un swipe de trackpad dispari 10 beats de cop.
+  const wheelTsRef = useRef(0);
+  const onWheel = useCallback(
+    (e) => {
+      if (splashVisible || drawerOpen) return;
+      if (isFullMode) return; // al mode full, el scroll natural del contingut manda
+      const tag = document.activeElement?.tagName?.toLowerCase();
+      // Dins d'un input/textarea no interceptem (podrien voler seleccionar text)
+      if (['input', 'textarea'].includes(tag)) return;
+      const now = performance.now();
+      if (now - wheelTsRef.current < 380) return;
+      const dy = e.deltaY;
+      if (Math.abs(dy) < 10) return;
+      wheelTsRef.current = now;
+      const d = dy > 0 ? 1 : -1;
+      // Primer donem oportunitat a l'exercici current de gestionar-ho
+      const handled = exerciseNavRef.current?.handleArrow?.(d);
+      if (handled) return;
+      goBeat(d);
+    },
+    [splashVisible, drawerOpen, isFullMode, goBeat],
+  );
+
   // Swipe tàctil.
   const touchRef = useRef({ x: 0, y: 0, t: 0, active: false });
   const onTouchStart = (e) => {
@@ -1168,6 +1193,7 @@ export function FocusReader({ topic }) {
       ref={rootRef}
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}
+      onWheel={onWheel}
     >
       {/* HEADER editorial — 3 columnes: left (back+logo) · center (títol) · right (progress) */}
       <div className="kf-head">

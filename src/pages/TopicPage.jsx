@@ -42,5 +42,11 @@ export function TopicPage() {
     );
   }
 
-  return <FocusReader topic={topic} />;
+  // Key={topic.id}: quan l'usuari salta d'una lliçó a l'altra
+  // (navigate('/temari/A1a-2') des del final d'A1a-1), forcem un re-mount
+  // complet del reader. Així tot l'estat intern (stepIdx, beatIdx,
+  // splashVisible, readyToExit, fastMode…) es reseteja de cop i evitem
+  // loops d'updates entre renders intermedis on el topic és nou però
+  // els states encara vells.
+  return <FocusReader topic={topic} key={topic.id} />;
 }
