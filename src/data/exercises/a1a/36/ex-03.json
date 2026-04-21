@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-36-ex-03",
+  "topicId": "A1a-36",
+  "title": "Empareja 8 abreviatures d'habitatge amb la forma completa",
+  "prompt": "Associa cada abreviatura amb el **mot alemany complet**. Hi ha tipus de pis, parts, equipaments i condicions.",
+  "difficulty": 2,
+  "tags": ["habitatge", "abreviatures", "matchpairs", "assessment"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "a-zi", "group": "Abreviatura", "content": { "type": "text", "content": "**Zi**" } },
+      { "id": "a-blk", "group": "Abreviatura", "content": { "type": "text", "content": "**Blk**" } },
+      { "id": "a-kue", "group": "Abreviatura", "content": { "type": "text", "content": "**Kü**" } },
+      { "id": "a-og", "group": "Abreviatura", "content": { "type": "text", "content": "**OG**" } },
+      { "id": "a-ab", "group": "Abreviatura", "content": { "type": "text", "content": "**AB**" } },
+      { "id": "a-ww", "group": "Abreviatura", "content": { "type": "text", "content": "**WW**" } },
+      { "id": "a-moebl", "group": "Abreviatura", "content": { "type": "text", "content": "**möbl.**" } },
+      { "id": "a-inkl", "group": "Abreviatura", "content": { "type": "text", "content": "**inkl.**" } },
+      { "id": "b-zimmer", "group": "Forma completa", "content": { "type": "text", "content": "_Zimmer_" } },
+      { "id": "b-balkon", "group": "Forma completa", "content": { "type": "text", "content": "_Balkon_" } },
+      { "id": "b-kueche", "group": "Forma completa", "content": { "type": "text", "content": "_Küche_" } },
+      { "id": "b-obergeschoss", "group": "Forma completa", "content": { "type": "text", "content": "_Obergeschoss_" } },
+      { "id": "b-altbau", "group": "Forma completa", "content": { "type": "text", "content": "_Altbau_" } },
+      { "id": "b-warmwasser", "group": "Forma completa", "content": { "type": "text", "content": "_Warmwasser_" } },
+      { "id": "b-moebliert", "group": "Forma completa", "content": { "type": "text", "content": "_möbliert_" } },
+      { "id": "b-inklusive", "group": "Forma completa", "content": { "type": "text", "content": "_inklusive_" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Abreviatura",
+    "groupBLabel": "Forma completa"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["a-zi", "b-zimmer"],
+      ["a-blk", "b-balkon"],
+      ["a-kue", "b-kueche"],
+      ["a-og", "b-obergeschoss"],
+      ["a-ab", "b-altbau"],
+      ["a-ww", "b-warmwasser"],
+      ["a-moebl", "b-moebliert"],
+      ["a-inkl", "b-inklusive"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Ja reconeixes les peces bàsiques. Amb aquestes pots entendre la **descripció** (no encara el preu) de pràcticament qualsevol anunci d'habitatge alemany.",
+      "references": ["A1a-36"]
+    },
+    "incorrect": {
+      "default": "Parany fàcil: _OG_ (==Obergeschoss==, pis superior en general) vs. _DG_ (==Dachgeschoss==, àtic sota la teulada). Un altre: _Blk_ = _Balkon_ (balcó), però _BK_ = _Betriebskosten_ (despeses). Fixa't si hi ha una 'l' enmig."
+    }
+  }
+}

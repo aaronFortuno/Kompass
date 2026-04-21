@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-36-ex-05",
+  "topicId": "A1a-36",
+  "title": "Desxifra un anunci: ja o nein?",
+  "prompt": "Llegeix l'anunci i decideix si cada afirmació és **certa** (_ja_) o **falsa** (_nein_). Si una característica no apareix, assumeix que no hi és.",
+  "difficulty": 2,
+  "tags": ["habitatge", "lectura", "abreviatures", "truefalse", "assessment"],
+  "stimulus": {
+    "type": "text",
+    "content": "_**2-ZKB-Whg im DG, 55 qm, möbl., EBK, ZH, WW inkl., KM 620 €, NK 140 €, NR, ab sofort.**_"
+  },
+  "interaction": {
+    "type": "trueFalse",
+    "statements": [
+      { "id": "s1", "text": "El pis té balcó." },
+      { "id": "s2", "text": "El pis està moblat." },
+      { "id": "s3", "text": "El pis és a la planta baixa." },
+      { "id": "s4", "text": "Es permeten fumadors." },
+      { "id": "s5", "text": "Hi ha cuina integrada." }
+    ]
+  },
+  "validation": {
+    "type": "truthMap",
+    "answers": {
+      "s1": false,
+      "s2": true,
+      "s3": false,
+      "s4": false,
+      "s5": true
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Ja saps extreure informació rellevant d'un anunci **sense llegir-ne ni una frase sencera**. Habilitat real de supervivència lingüística: _möbl._ = moblat, _DG_ = àtic (no planta baixa), _NR_ = només no fumadors, _EBK_ = cuina integrada. _Blk_ no hi apareix → no té balcó.",
+      "references": ["A1a-36"]
+    },
+    "incorrect": {
+      "default": "Repassa: (1) _Blk_ no apareix → **no** té balcó (si no hi és, assumeix que no n'hi ha). (2) _möbl._ = moblat → **sí**. (3) _DG_ = ==Dachgeschoss== = àtic, sota la teulada, tot el contrari de planta baixa (_EG_, _Erdgeschoss_). (4) _NR_ = ==Nichtraucher== → el llogater **ha de ser no fumador**. (5) _EBK_ = cuina integrada → **sí**."
+    }
+  }
+}

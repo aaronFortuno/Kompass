@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-36",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 36,
+  "title": "Abkürzungen (in Anzeigen)",
+  "shortTitle": "Abkürzungen",
+  "description": "Lliçó lèxica de tancament d'A1a: reconèixer les abreviatures més freqüents dels anuncis alemanys, sobretot de **pisos de lloguer**. S'agrupen per blocs funcionals (tipus i parts d'habitatge, situació, equipaments, preus i condicions), es contrasten conceptes delicats per al catalanoparlant (_Kaltmiete_ vs. _Warmmiete_, _OG_ vs. _DG_, recompte d'habitacions al sistema alemany) i es practica la lectura d'anuncis reals aplicant el patró fix _tipus + superfície + equipaments + preu + condicions_. L'objectiu és reconèixer, no memoritzar cegament: habilitat real de supervivència lingüística quotidiana.",
+  "axes": ["vocabulari-tematic"],
+  "prerequisites": ["A1a-29"],
+  "estimatedMinutes": 12,
+  "steps": [
+    {
+      "id": "intro",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### El llenguatge telegràfic dels anuncis\n\nSi obres un diari alemany o una web immobiliària, veuràs frases com aquesta:\n\n> _2-ZKB-Whg, 60 qm, EBK, Blk, ZH, NK 120 €, KM 550 €, ab sofort, NR._\n\nA primera vista sembla un codi secret. De fet, ho és: un codi pràctic per estalviar espai (i diners: els anuncis tradicionals es pagaven per paraula). Les ==**Abkürzungen**== (abreviatures) són molt freqüents en anuncis de **pisos de lloguer**, **feina** i **cotxes de segona mà**.\n\nAquesta lliçó és **lèxica**, no gramatical. L'objectiu és **reconèixer**, no memoritzar cegament. La lliçó és curta (~10-15 min) i tanca el bloc A1a. Llegir un anunci sencer sense quedar-te encallat és una habilitat real d'alemany quotidià."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Estratègia",
+          "body": "Els anuncis alemanys tenen un **patró fix**: primer la descripció del pis, després la superfície, després els equipaments, després els preus, i finalment les condicions. Si reconeixes el patró, el context t'omple els buits que no recordis."
+        }
+      ]
+    },
+    {
+      "id": "housing-core",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Habitatge: tipus i parts (les imprescindibles)\n\nLa majoria d'abreviatures d'A1 provenen d'anuncis de pisos. Les agrupem per blocs."
+        },
+        {
+          "type": "table",
+          "title": "Tipus i parts de l'habitatge",
+          "headers": ["Abreviatura", "Forma completa", "Significat"],
+          "rows": [
+            ["**Whg**", "_Wohnung_", "pis, habitatge"],
+            ["**Zi**", "_Zimmer_", "habitació"],
+            ["**ZKB**", "_Zimmer, Küche, Bad_", "habitacions, cuina, bany"],
+            ["**Kü**", "_Küche_", "cuina"],
+            ["**EBK**", "==_Einbauküche_==", "cuina integrada (fixa)"],
+            ["**Blk**", "_Balkon_", "balcó"],
+            ["**OG**", "_Obergeschoss_", "pis superior (planta alta)"],
+            ["**DG**", "_Dachgeschoss_", "àtic (sota la teulada)"],
+            ["**AB**", "_Altbau_", "edifici antic (normalment pre-1949)"],
+            ["**ABW**", "_Altbauwohnung_", "pis en edifici antic"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Compte amb les habitacions",
+          "body": "_2-ZKB-Whg_ vol dir **\"pis de 2 habitacions amb cuina i bany\"**. El número davant de _ZKB_ sempre és el nombre d'habitacions **sense comptar cuina ni bany**, a diferència del sistema català. _2-ZKB_ no són 4 peces: són 2 estances habitables (sala + dormitoris) + cuina + bany."
+        }
+      ]
+    },
+    {
+      "id": "housing-costs",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Habitatge: preu i serveis\n\nEls **costos** són on més confusió hi ha per al catalanoparlant, perquè l'alemany distingeix coses que nosaltres juntem."
+        },
+        {
+          "type": "table",
+          "title": "Preu i serveis",
+          "headers": ["Abreviatura", "Forma completa", "Significat"],
+          "rows": [
+            ["**KM**", "==_Kaltmiete_==", "lloguer \"fred\" (només pis, sense despeses)"],
+            ["**WM**", "==_Warmmiete_==", "lloguer \"calent\" (amb despeses incloses)"],
+            ["**NK**", "_Nebenkosten_", "despeses comunitàries / serveis"],
+            ["**BK**", "_Betriebskosten_", "despeses operatives (sinònim proper de _NK_)"],
+            ["**WW**", "_Warmwasser_", "aigua calenta"],
+            ["**ZH**", "_Zentralheizung_", "calefacció central"],
+            ["**möbl.**", "_möbliert_", "moblat"],
+            ["**inkl.**", "_inklusive_", "inclòs"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "_Kaltmiete_ vs. _Warmmiete_",
+          "body": "_Kalt_ (fred) i _warm_ (calent) aquí **no parlen de temperatura**, sinó de si el preu **inclou** (_warm_) o **no** (_kalt_) les despeses de calefacció, aigua, escombraries, etc. Un anunci honest et diu _KM 550 € + NK 120 €_ → total real **670 €**."
+        },
+        {
+          "type": "explanation",
+          "body": "**Altres freqüents:**\n\n- ==**NR**== → _Nichtraucher_ (no fumador; el llogater ha de ser no fumador).\n- Superfície: sovint en **m²** o **qm** (= _Quadratmeter_, metres quadrats)."
+        }
+      ]
+    },
+    {
+      "id": "check-housing",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-36-ex-01", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "read-ad",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Llegir un anunci de debò\n\nAra torna a mirar l'anunci del començament, **traduït abreviatura a abreviatura**:\n\n> _2-ZKB-Whg, 60 qm, EBK, Blk, ZH, NK 120 €, KM 550 €, ab sofort, NR._\n\n**Desxifrat:**\n\n- **2-ZKB-Whg** → pis de 2 habitacions + cuina + bany\n- **60 qm** → 60 metres quadrats\n- **EBK** → amb cuina integrada\n- **Blk** → amb balcó\n- **ZH** → calefacció central\n- **NK 120 €** → despeses: 120 € / mes\n- **KM 550 €** → lloguer fred: 550 € / mes\n- **ab sofort** → disponible immediatament (no és abreviatura, però surt sempre)\n- **NR** → només no fumadors\n\nTotal real (_Warmmiete_ aproximada): ==**670 €**==."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "No et quedis bloquejat",
+          "body": "No intentis recordar cada abreviatura paraula a paraula. Busca el **patró**: _tipus + superfície + equipaments + preu + condicions_. Aquest ordre és gairebé sempre el mateix, i et permet extreure la informació crítica (preu real, mida, accessibilitat) encara que no reconeguis cada abreviatura."
+        }
+      ]
+    },
+    {
+      "id": "check-matching",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-36-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Paranys freqüents\n\n1. **Confondre _KM_ i _WM_.** _Kaltmiete_ (_KM_) = lloguer **sense** despeses. _Warmmiete_ (_WM_) = **amb** despeses incloses. Si només veus _KM_, busca sempre _NK_ o _BK_ al costat per saber el preu real.\n2. **Pensar que _NK_ i _BK_ són coses diferents.** Col·loquialment són **sinònims**: despeses d'escala, escombraries, aigua, neteja de zones comunes. Tècnicament _BK_ (_Betriebskosten_) és un subconjunt de _NK_ (_Nebenkosten_), però en anuncis normals **pots tractar-los com equivalents**.\n3. **Comptar malament les habitacions.** _2-ZKB_ → 2 habitacions **a més de** la cuina i el bany. **No són 4 peces.** El sistema alemany compta només les estances habitables (sala + dormitoris).\n4. **Ignorar _NR_ o _möbl._** Són **condicions**: _NR_ (no fumador) pot ser excloent, i _möbl._ (moblat) implica preu més alt però gens de feina d'instal·lació.\n5. **Barrejar _OG_ i _DG_.** _OG_ = un pis superior qualsevol (_2. OG_ = segona planta). _DG_ = específicament l'últim, sota la teulada. Un _DG_ pot ser bonic però calorós a l'estiu.\n6. **Pronunciar les abreviatures.** Normalment es llegeixen **lletra a lletra** (_EBK_ = \"E-Be-Ka\"), no com una paraula. _qm_ es diu _Quadratmeter_ sencer."
+        }
+      ]
+    },
+    {
+      "id": "assessment-1",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-36-ex-03", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-36-ex-04", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-36-ex-05", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "blocks": [
+        { "type": "exercise", "exerciseId": "A1a-36-ex-06", "variant": "assessment" }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Recapitulem\n\nHas fet el pas de **text xifrat** a **text llegible**. Repàs del que cal retenir:\n\n1. **Tipus de pis:** _Whg_ (pis), _Zi_ (habitació), _ZKB_ (habitacions+cuina+bany), _EBK_ (cuina integrada), _Blk_ (balcó).\n2. **Situació:** _OG_ (pis superior), _DG_ (àtic), _AB_ (edifici antic).\n3. **Equipaments:** _ZH_ (calefacció central), _WW_ (aigua calenta), _möbl._ (moblat), _inkl._ (inclòs).\n4. **Preus:** _KM_ (lloguer sense despeses) **+** _NK_ o _BK_ (despeses) **=** _WM_ (lloguer total real).\n5. **Condicions:** _NR_ (no fumador), _qm_ / _m²_ (metres quadrats)."
+        },
+        {
+          "type": "table",
+          "title": "Síntesi: 5 blocs funcionals",
+          "headers": ["Bloc", "Abreviatures clau"],
+          "rows": [
+            ["**Tipus / parts**", "_Whg, Zi, ZKB, EBK, Blk, Kü_"],
+            ["**Situació**", "_OG, DG, AB, ABW_"],
+            ["**Equipaments**", "_ZH, WW, möbl., inkl._"],
+            ["**Preus**", "==_KM + NK (o BK) = WM_=="],
+            ["**Condicions**", "_NR, qm / m², ab sofort_"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Estratègia duradora",
+          "body": "Quan vegis un anunci alemany, no tradueixis paraula a paraula. Busca el patró: _tipus + superfície + equipaments + preu + condicions_. Aquest ordre és gairebé sempre el mateix."
+        },
+        {
+          "type": "explanation",
+          "body": "Amb aquesta lliçó **tanques A1a**. La lògica d'anuncis la reprendràs a A1b, on veuràs també vocabulari de **feina** (_gesucht, m/w/d, VZ, TZ_) i **transport**. Per ara, quan passis pel costat d'una finestra amb _Zu vermieten_, ja saps què vol dir.\n\n_Viel Erfolg und bis bald in A1b!_\n\n_Fonts consultades: ImmobilienScout24 (glossari d'abreviatures), Deutsche Welle — \"Deutsch lernen\" (Nicos Weg A1, capítol sobre habitatge), Goethe-Institut — materials A1, dwds.de (entrades de _Kaltmiete_, _Nebenkosten_, _Dachgeschoss_)._"
+        }
+      ]
+    }
+  ]
+}

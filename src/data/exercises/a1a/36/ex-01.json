@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-36-ex-01",
+  "topicId": "A1a-36",
+  "title": "Kaltmiete + Nebenkosten: quant pagues de debò?",
+  "prompt": "En un anunci hi diu _KM 500 €, NK 150 €_. Quant pagues **de debò** cada mes?",
+  "difficulty": 1,
+  "tags": ["habitatge", "kaltmiete", "nebenkosten", "singlechoice", "quick-check"],
+  "stimulus": {
+    "type": "text",
+    "content": "Un anunci de pis diu: _KM 500 €, NK 150 €_. Quant pagues **cada mes en total**?"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "a", "label": "500 €" },
+      { "id": "b", "label": "650 €" },
+      { "id": "c", "label": "150 €" },
+      { "id": "d", "label": "350 €" }
+    ]
+  },
+  "validation": {
+    "type": "exactMatch",
+    "answer": "b"
+  },
+  "feedback": {
+    "correct": {
+      "message": "Exacte. _KM_ (==Kaltmiete==) és només el pis sense despeses; cal sumar-hi les _NK_ (==Nebenkosten==) per saber el preu real: **500 + 150 = 650 €**. Si fos _Warmmiete_ (_WM_), ja ho inclouria tot.",
+      "references": ["A1a-36"]
+    },
+    "incorrect": {
+      "default": "Recorda: _KM_ i _NK_ se **sumen** (no es resten). _KM_ = lloguer fred (només el pis); _NK_ = despeses (escombraries, aigua, zones comunes). Total real: **500 + 150 = 650 €**. Només 500 seria la _Kaltmiete_; només 150 són les _Nebenkosten_."
+    }
+  }
+}

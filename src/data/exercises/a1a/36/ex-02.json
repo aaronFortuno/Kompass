@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-36-ex-02",
+  "topicId": "A1a-36",
+  "title": "Empareja abreviatura i significat (bàsiques d'habitatge)",
+  "prompt": "Associa cada abreviatura amb la seva **forma completa alemanya**. Són les 5 que apareixen més sovint als anuncis.",
+  "difficulty": 1,
+  "tags": ["habitatge", "abreviatures", "matchpairs", "quick-check"],
+  "stimulus": {
+    "type": "cardSet",
+    "cards": [
+      { "id": "a-whg", "group": "Abreviatura", "content": { "type": "text", "content": "**Whg**" } },
+      { "id": "a-ebk", "group": "Abreviatura", "content": { "type": "text", "content": "**EBK**" } },
+      { "id": "a-dg", "group": "Abreviatura", "content": { "type": "text", "content": "**DG**" } },
+      { "id": "a-nk", "group": "Abreviatura", "content": { "type": "text", "content": "**NK**" } },
+      { "id": "a-zh", "group": "Abreviatura", "content": { "type": "text", "content": "**ZH**" } },
+      { "id": "b-wohnung", "group": "Forma completa", "content": { "type": "text", "content": "_Wohnung_" } },
+      { "id": "b-einbaukueche", "group": "Forma completa", "content": { "type": "text", "content": "_Einbauküche_" } },
+      { "id": "b-dachgeschoss", "group": "Forma completa", "content": { "type": "text", "content": "_Dachgeschoss_" } },
+      { "id": "b-nebenkosten", "group": "Forma completa", "content": { "type": "text", "content": "_Nebenkosten_" } },
+      { "id": "b-zentralheizung", "group": "Forma completa", "content": { "type": "text", "content": "_Zentralheizung_" } }
+    ]
+  },
+  "interaction": {
+    "type": "matchPairs",
+    "groupALabel": "Abreviatura",
+    "groupBLabel": "Forma completa"
+  },
+  "validation": {
+    "type": "pairMap",
+    "pairs": [
+      ["a-whg", "b-wohnung"],
+      ["a-ebk", "b-einbaukueche"],
+      ["a-dg", "b-dachgeschoss"],
+      ["a-nk", "b-nebenkosten"],
+      ["a-zh", "b-zentralheizung"]
+    ]
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Aquestes 5 cobreixen el 80% dels anuncis que veuràs a portals com _ImmobilienScout24_: _Whg_ (el pis genèric), _EBK_ (cuina integrada), _DG_ (àtic), _NK_ (despeses), _ZH_ (calefacció central).",
+      "references": ["A1a-36"]
+    },
+    "incorrect": {
+      "default": "Revisa: _Whg_ és _Wohnung_ (pis, mot genèric), _EBK_ és _Einbauküche_ (cuina integrada, fixa), _DG_ és _Dachgeschoss_ (àtic, sota la teulada), _NK_ és _Nebenkosten_ (despeses), _ZH_ és _Zentralheizung_ (calefacció central)."
+    }
+  }
+}

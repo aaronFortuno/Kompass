@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-36-ex-04",
+  "topicId": "A1a-36",
+  "title": "Calcula el preu real d'un anunci",
+  "prompt": "Llegeix l'anunci i respon: quant pagaràs **cada mes en total** (arrodonit)?",
+  "difficulty": 2,
+  "tags": ["habitatge", "kaltmiete", "nebenkosten", "singlechoice", "assessment"],
+  "stimulus": {
+    "type": "text",
+    "content": "_3-Zi-Whg, 70 qm, EBK, Blk, **KM 680 €**, **NK 180 €**, WW inkl._\n\nQuant pagaràs **cada mes en total** (arrodonit)?"
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "a", "label": "680 €" },
+      { "id": "b", "label": "860 €" },
+      { "id": "c", "label": "180 €" },
+      { "id": "d", "label": "500 €" }
+    ]
+  },
+  "validation": {
+    "type": "exactMatch",
+    "answer": "b"
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. _KM_ (680) + _NK_ (180) = **860 €**. A més, _WW inkl._ vol dir que l'==aigua calenta== ja entra dins les _Nebenkosten_, no és un cost a part.",
+      "references": ["A1a-36"]
+    },
+    "incorrect": {
+      "default": "Recorda: _KM_ i _NK_ **se sumen**, no es resten. 680 € és només la _Kaltmiete_; 180 € són només les _Nebenkosten_. Total real = 680 + 180 = **860 €**. _WW inkl._ només vol dir que l'aigua calenta ja va inclosa dins les _NK_, no descompta res."
+    }
+  }
+}

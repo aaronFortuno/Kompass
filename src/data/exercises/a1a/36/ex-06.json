@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-36-ex-06",
+  "topicId": "A1a-36",
+  "title": "Escriu la forma completa alemanya",
+  "prompt": "Escriu la **forma completa alemanya** de cada abreviatura. Recorda: en alemany tots els substantius van amb majúscula inicial i l'ortografia ha de ser exacta (_ü_, no _u_).",
+  "difficulty": 2,
+  "tags": ["habitatge", "abreviatures", "produccio", "typein", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Whg_ → {{1}}\n2. _EBK_ → {{2}}\n3. _KM_ → {{3}}\n4. _ZH_ → {{4}}\n5. _qm_ → {{5}}",
+    "blanks": [
+      { "id": "1", "label": "forma completa de _Whg_" },
+      { "id": "2", "label": "forma completa de _EBK_" },
+      { "id": "3", "label": "forma completa de _KM_" },
+      { "id": "4", "label": "forma completa de _ZH_" },
+      { "id": "5", "label": "forma completa de _qm_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "Wohn…" },
+      { "blankId": "2", "placeholder": "Einbau…" },
+      { "blankId": "3", "placeholder": "Kalt…" },
+      { "blankId": "4", "placeholder": "Zentral…" },
+      { "blankId": "5", "placeholder": "Quadrat…" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Wohnung",
+      "2": "Einbauküche",
+      "3": "Kaltmiete",
+      "4": "Zentralheizung",
+      "5": "Quadratmeter"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has passat del codi a la llengua completa: _Wohnung_, _Einbauküche_, _Kaltmiete_, _Zentralheizung_, _Quadratmeter_. Tots els substantius, com cal, amb **majúscula inicial**.",
+      "references": ["A1a-36"]
+    },
+    "incorrect": {
+      "default": "Revisa: (1) ==Wohnung== (majúscula, com tot substantiu). (2) ==Einbauküche==, amb una sola 'u' i amb _ü_ (no _Einbauchküche_). (3) ==Kaltmiete==, el lloguer \"fred\" (només pis). (4) ==Zentralheizung==, calefacció central. (5) _qm_ és l'abreviatura; la forma completa és ==Quadratmeter== (metres quadrats)."
+    }
+  }
+}
