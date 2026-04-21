@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-10-ex-06",
+  "topicId": "A1a-10",
+  "title": "Escriu la síl·laba tònica",
+  "prompt": "Escriu la síl·laba tònica de cada paraula (tal com apareix a la paraula, amb majúscula inicial si és un substantiu). Entre parèntesis tens les síl·labes possibles.",
+  "difficulty": 3,
+  "tags": ["wortakzent", "produccio", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _arbeiten_ (ar / bei / ten). Síl·laba tònica: {{1}}\n2. _Freiheit_ (Frei / heit). Síl·laba tònica: {{2}}\n3. _ankommen_ (an / kom / men). Síl·laba tònica: {{3}}\n4. _Baustelle_ (Bau / stel / le). Síl·laba tònica: {{4}}",
+    "blanks": [
+      { "id": "1", "label": "síl·laba tònica de _arbeiten_" },
+      { "id": "2", "label": "síl·laba tònica de _Freiheit_" },
+      { "id": "3", "label": "síl·laba tònica de _ankommen_" },
+      { "id": "4", "label": "síl·laba tònica de _Baustelle_" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "síl·laba" },
+      { "blankId": "2", "placeholder": "síl·laba" },
+      { "blankId": "3", "placeholder": "síl·laba" },
+      { "blankId": "4", "placeholder": "síl·laba" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "ar", "2": "Frei", "3": "an", "4": "Bau" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has fet servir les tres regles de memòria i has respectat les majúscules inicials dels substantius (_Frei_-, _Bau_-). Això últim és un detall ortogràfic que sempre convé conservar."
+    },
+    "incorrect": {
+      "default": "Pistes: _arbeiten_ és paraula bàsica → primera síl·laba; _Freiheit_ té sufix _-heit_ (no accentuat) → accent a l'arrel _Frei_; _ankommen_ té prefix _an-_ (accentuat, separable) → accent al prefix; _Baustelle_ és compost → accent a l'esquerra. I fixa't que _Frei_ i _Bau_ porten majúscula inicial perquè són l'inici de paraules que són substantius."
+    }
+  },
+  "hint": "El format òptim seria auditiu (sentir i identificar); aquí treballes la regla escrivint la síl·laba directament."
+}

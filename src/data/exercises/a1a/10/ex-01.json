@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-10-ex-01",
+  "topicId": "A1a-10",
+  "title": "On cau l'accent? Paraules bàsiques",
+  "prompt": "Cada paraula està tallada en síl·labes. Tria la síl·laba tònica de cadascuna. Aplica la regla general (paraula bàsica → primera síl·laba) i recorda que la flexió no mou l'accent.",
+  "difficulty": 1,
+  "tags": ["wortakzent", "grundwoerter", "flexio"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Ta-sche_ (la bossa) → accent a: {{1}}\n2. _woh-nen_ (viure) → accent a: {{2}}\n3. _ar-bei-test_ (treballes, forma conjugada) → accent a: {{3}}\n4. _Ta-schen_ (bosses, plural) → accent a: {{4}}",
+    "blanks": [
+      { "id": "1", "label": "síl·laba tònica de _Tasche_" },
+      { "id": "2", "label": "síl·laba tònica de _wohnen_" },
+      { "id": "3", "label": "síl·laba tònica de _arbeitest_" },
+      { "id": "4", "label": "síl·laba tònica de _Taschen_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Ta", "sche"] },
+      { "blankId": "2", "options": ["woh", "nen"] },
+      { "blankId": "3", "options": ["ar", "bei", "test"] },
+      { "blankId": "4", "options": ["Ta", "schen"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "Ta", "2": "woh", "3": "ar", "4": "Ta" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. La regla per defecte funciona: paraula bàsica → primera síl·laba. I la flexió (_arbeitest, Taschen_) no mou l'accent."
+    },
+    "incorrect": {
+      "default": "Recorda la regla general: les paraules bàsiques alemanyes porten l'accent a la **primera síl·laba**, i la flexió (plural, conjugació) no el canvia de lloc."
+    }
+  },
+  "hint": "Versió textual del check: idealment aniria acompanyada d'àudio, però la regla es pot aplicar també reconeixent el patró."
+}

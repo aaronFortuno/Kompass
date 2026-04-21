@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-10-ex-03",
+  "topicId": "A1a-10",
+  "title": "Accent en paraules compostes",
+  "prompt": "Aplica la regla dels compostos (accent a la paraula esquerra) i recorda l'excepció numèrica amb _Jahr-_. Tria la síl·laba tònica de cada compost.",
+  "difficulty": 2,
+  "tags": ["wortakzent", "komposita", "excepcions"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Wohn-zimmer_ (el saló) → accent a: {{1}}\n2. _Bau-stelle_ (l'obra) → accent a: {{2}}\n3. _Jahr-hun-dert_ (el segle) → accent a: {{3}}\n4. _Te-le-fon-num-mer_ (el telèfon) → accent a: {{4}}",
+    "blanks": [
+      { "id": "1", "label": "síl·laba tònica de _Wohnzimmer_" },
+      { "id": "2", "label": "síl·laba tònica de _Baustelle_" },
+      { "id": "3", "label": "síl·laba tònica de _Jahrhundert_" },
+      { "id": "4", "label": "síl·laba tònica de _Telefonnummer_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Wohn", "zimmer"] },
+      { "blankId": "2", "options": ["Bau", "stelle"] },
+      { "blankId": "3", "options": ["Jahr", "hun", "dert"] },
+      { "blankId": "4", "options": ["Te", "le", "fon", "num", "mer"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "Wohn", "2": "Bau", "3": "hun", "4": "Te" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Has aplicat la regla general (compost → paraula esquerra) i has recordat l'excepció de _Jahrhundert_. Fixa't també que dins de _Telefon_, l'accent segueix la regla de paraula bàsica: primera síl·laba."
+    },
+    "incorrect": {
+      "default": "Recorda: en un compost, l'accent va a la paraula de l'**esquerra** (_**Wohn**zimmer, **Bau**stelle, **Telefon**nummer_). L'excepció són els compostos numèrics amb _Jahr-_: _Jahr**hun**dert, Jahr**tau**send, Jahr**zehnt**_."
+    }
+  }
+}

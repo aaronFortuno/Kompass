@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-10-ex-07",
+  "topicId": "A1a-10",
+  "title": "Parelles mínimes: prefix accentuat vs no accentuat",
+  "prompt": "Distingeix parelles de verbs que comparteixen arrel però difereixen pel prefix. Tria la síl·laba tònica de cadascun.",
+  "difficulty": 3,
+  "tags": ["wortakzent", "parelles-minimes", "separable", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _bekommen_ (rebre) → accent a: {{1}}\n2. _ankommen_ (arribar) → accent a: {{2}}\n3. _verstehen_ (entendre) → accent a: {{3}}\n4. _aufstehen_ (aixecar-se) → accent a: {{4}}",
+    "blanks": [
+      { "id": "1", "label": "síl·laba tònica de _bekommen_" },
+      { "id": "2", "label": "síl·laba tònica de _ankommen_" },
+      { "id": "3", "label": "síl·laba tònica de _verstehen_" },
+      { "id": "4", "label": "síl·laba tònica de _aufstehen_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["be", "kom", "men"] },
+      { "blankId": "2", "options": ["an", "kom", "men"] },
+      { "blankId": "3", "options": ["ver", "ste", "hen"] },
+      { "blankId": "4", "options": ["auf", "ste", "hen"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "kom", "2": "an", "3": "ste", "4": "auf" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has vist la distinció que hi ha darrere aquestes parelles: _be-/ver-_ són prefixos no accentuats i inseparables; _an-/auf-_ són accentuats i separables. Quan comencis a fer frases amb verbs separables, aquesta pista auditiva et serà la guia principal."
+    },
+    "incorrect": {
+      "default": "Compara les parelles: _bekommen_ vs _ankommen_ (mateixa arrel _kommen_, prefixos diferents). _be-_ és del grup no accentuat → accent a _kom_. _an-_ és del grup accentuat → accent a _an_. Igual passa amb _verstehen_ (accent a _ste_) i _aufstehen_ (accent a _auf_)."
+    }
+  },
+  "hint": "L'ideal seria un exercici d'oïda amb dues pistes i triar quina correspon a cada significat; aquí s'aplica la regla per escrit."
+}

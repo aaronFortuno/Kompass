@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-10-ex-04",
+  "topicId": "A1a-10",
+  "title": "Integració: les tres regles en una tanda",
+  "prompt": "Aplica cadascuna de les tres regles vistes (paraula bàsica, prefix accentuat/no accentuat, compost) per trobar la síl·laba tònica de cada paraula.",
+  "difficulty": 2,
+  "tags": ["wortakzent", "integration", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Na-me_ (el nom, paraula bàsica) → accent a: {{1}}\n2. _be-kom-men_ (rebre, prefix no accentuat) → accent a: {{2}}\n3. _auf-ste-hen_ (aixecar-se, prefix accentuat) → accent a: {{3}}\n4. _Fa-mi-li-en-na-me_ (el cognom, compost) → accent a: {{4}}\n5. _Jahr-tau-send_ (el mil·lenni, excepció) → accent a: {{5}}",
+    "blanks": [
+      { "id": "1", "label": "síl·laba tònica de _Name_" },
+      { "id": "2", "label": "síl·laba tònica de _bekommen_" },
+      { "id": "3", "label": "síl·laba tònica de _aufstehen_" },
+      { "id": "4", "label": "síl·laba tònica de _Familienname_" },
+      { "id": "5", "label": "síl·laba tònica de _Jahrtausend_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Na", "me"] },
+      { "blankId": "2", "options": ["be", "kom", "men"] },
+      { "blankId": "3", "options": ["auf", "ste", "hen"] },
+      { "blankId": "4", "options": ["Fa", "mi", "li", "en", "na", "me"] },
+      { "blankId": "5", "options": ["Jahr", "tau", "send"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "Na", "2": "kom", "3": "auf", "4": "Fa", "5": "tau" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has tocat les tres regles: (1) _Name_ → primera síl·laba per defecte; (2) _bekommen_ → prefix _be-_ no accentuat, accent al verb; (3) _aufstehen_ → prefix _auf-_ accentuat, accent al prefix; (4) _Familienname_ → compost, accent a l'esquerra; (5) _Jahrtausend_ → excepció, accent al contrast numèric."
+    },
+    "incorrect": {
+      "default": "Repassa cada cas: (1) paraula simple → primera síl·laba; (2) _be-_ és prefix no accentuat → l'accent es queda al verb; (3) _auf-_ és prefix separable/accentuat → l'accent va al prefix; (4) _Familienname_ és un compost (_Familie_ + _Name_) → accent a la paraula esquerra; (5) _Jahrtausend_ és una de les excepcions numèriques → accent a _tausend_."
+    }
+  },
+  "hint": "La versió òptima seria auditiva; aquí el check aplica les regles sobre la forma escrita."
+}

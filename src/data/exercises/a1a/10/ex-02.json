@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-10-ex-02",
+  "topicId": "A1a-10",
+  "title": "Prefixos accentuats o no accentuats?",
+  "prompt": "Classifica els prefixos dels verbs: uns porten l'accent, uns altres el deixen al verb. Tria a cada buit la síl·laba tònica.",
+  "difficulty": 2,
+  "tags": ["wortakzent", "praefixe", "separable"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _be-kommen_ (rebre) → accent a: {{1}}\n2. _weg-fahren_ (marxar en vehicle) → accent a: {{2}}\n3. _ver-stehen_ (entendre) → accent a: {{3}}\n4. _ein-kaufen_ (fer la compra) → accent a: {{4}}",
+    "blanks": [
+      { "id": "1", "label": "síl·laba tònica de _bekommen_" },
+      { "id": "2", "label": "síl·laba tònica de _wegfahren_" },
+      { "id": "3", "label": "síl·laba tònica de _verstehen_" },
+      { "id": "4", "label": "síl·laba tònica de _einkaufen_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["be", "kom"] },
+      { "blankId": "2", "options": ["weg", "fah"] },
+      { "blankId": "3", "options": ["ver", "ste"] },
+      { "blankId": "4", "options": ["ein", "kau"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "kom", "2": "weg", "3": "ste", "4": "ein" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. Has distingit els dos grups: _be-_ i _ver-_ són prefixos no accentuats (l'accent es queda al verb); _weg-_ i _ein-_ són prefixos accentuats (l'accent salta al prefix). Aquesta mateixa distinció et dirà més endavant si un verb és separable o no."
+    },
+    "incorrect": {
+      "default": "Revisa els dos grups. **No accentuats** (prefix sense força): _be-, ge-, ver-, er-, ent-, emp-, miss-, zer-_ → l'accent es queda al verb. **Accentuats** (prefix amb significat propi, separable): _ab-, an-, auf-, aus-, ein-, mit-, vor-, weg-, zu-_ → l'accent salta al prefix."
+    }
+  },
+  "hint": "Versió textual: idealment aniria acompanyada d'àudio per identificar la síl·laba tònica a l'oïda; aquí s'aplica la regla per escrit."
+}

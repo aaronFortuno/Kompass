@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-11-ex-01",
+  "topicId": "A1a-11",
+  "title": "Èmfasi a les W-Fragen neutres",
+  "prompt": "A cada _W-Frage_ en versió neutra, tria la paraula que porta l'èmfasi principal.",
+  "difficulty": 1,
+  "tags": ["intonation", "w-frage", "emfasi"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Wo {{1}} du? (↓)\nWie {{2}} Sie? (↓)\nWas {{3}} du? (↓)",
+    "blanks": [
+      { "id": "1", "label": "paraula accentuada (on vius?)" },
+      { "id": "2", "label": "paraula accentuada (com es diu?)" },
+      { "id": "3", "label": "paraula accentuada (què fas?)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Wo", "wohnst", "du"] },
+      { "blankId": "2", "options": ["Wie", "heißen", "Sie"] },
+      { "blankId": "3", "options": ["Was", "machst", "du"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "wohnst", "2": "heißen", "3": "machst" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. A les _W-Fragen_ neutres, l'èmfasi recau sobre el **verb**, que és el que porta la informació clau sobre la qual preguntes. I totes tres frases acaben amb melodia **descendent** (↓)."
+    },
+    "incorrect": {
+      "default": "Recorda la regla per defecte de les _W-Fragen_: l'èmfasi va al **verb** (_wohnst, heißen, machst_), no a la paraula interrogativa ni al pronom. La paraula interrogativa només s'emfatitza si la fas servir com a represa (_**Wie** heißen Sie?_). Nota: aquest check, sense àudio, es basa en la regla neutra; la versió òptima seria auditiva."
+    }
+  }
+}

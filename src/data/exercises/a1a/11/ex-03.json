@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-11-ex-03",
+  "topicId": "A1a-11",
+  "title": "Sèrie mixta: melodia final",
+  "prompt": "Indica la melodia final esperada de cadascuna d'aquestes cinc frases.",
+  "difficulty": 2,
+  "tags": ["intonation", "melodia-final", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Ich heiße Anna._ → melodia {{1}}\n_Wohnst du in Berlin?_ → melodia {{2}}\n_Was machst du?_ → melodia {{3}}\n_Bist du Lehrer?_ → melodia {{4}}\n_Wie heißt du?_ → melodia {{5}}",
+    "blanks": [
+      { "id": "1", "label": "declaració" },
+      { "id": "2", "label": "Satzfrage" },
+      { "id": "3", "label": "W-Frage" },
+      { "id": "4", "label": "Satzfrage" },
+      { "id": "5", "label": "W-Frage" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["descendent (↓)", "ascendent (↑)"] },
+      { "blankId": "2", "options": ["descendent (↓)", "ascendent (↑)"] },
+      { "blankId": "3", "options": ["descendent (↓)", "ascendent (↑)"] },
+      { "blankId": "4", "options": ["descendent (↓)", "ascendent (↑)"] },
+      { "blankId": "5", "options": ["descendent (↓)", "ascendent (↑)"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "descendent (↓)",
+      "2": "ascendent (↑)",
+      "3": "descendent (↓)",
+      "4": "ascendent (↑)",
+      "5": "descendent (↓)"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has aplicat el criteri clau: si hi ha paraula interrogativa o és declaració, **baixa**; si és _Satzfrage_ (sense interrogatiu), **puja**. Aquest esquema cobreix la gran majoria de situacions d'A1."
+    },
+    "incorrect": {
+      "default": "Torna-hi amb el criteri: declaracions (_Ich heiße_, _Ich wohne_...) → baixen; _W-Fragen_ (amb _was, wie, wo_...) → baixen també; _Satzfragen_ (sense interrogatiu, verb al davant: _Bist du_, _Wohnst du_) → pugen. Nota: sense àudio, la classificació es fa a partir del tipus sintàctic; la versió òptima seria auditiva."
+    }
+  }
+}

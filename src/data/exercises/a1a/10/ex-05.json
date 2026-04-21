@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-10-ex-05",
+  "topicId": "A1a-10",
+  "title": "Metacognició: quina regla s'hi aplica?",
+  "prompt": "Classifica cada paraula segons la **regla d'accent** que en determina la pronúncia. No es tracta només d'encertar on cau l'accent, sinó de saber per què.",
+  "difficulty": 2,
+  "tags": ["wortakzent", "metacognicio", "classificacio", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "1. _Tasche_ → regla: {{1}}\n2. _einkaufen_ → regla: {{2}}\n3. _Wohnzimmer_ → regla: {{3}}\n4. _verstehen_ → regla: {{4}}",
+    "blanks": [
+      { "id": "1", "label": "regla aplicable a _Tasche_" },
+      { "id": "2", "label": "regla aplicable a _einkaufen_" },
+      { "id": "3", "label": "regla aplicable a _Wohnzimmer_" },
+      { "id": "4", "label": "regla aplicable a _verstehen_" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "1",
+        "options": [
+          "paraula bàsica (primera síl·laba)",
+          "prefix accentuat (salta al prefix)",
+          "prefix no accentuat (es queda al verb)",
+          "paraula composta (paraula esquerra)"
+        ]
+      },
+      {
+        "blankId": "2",
+        "options": [
+          "paraula bàsica (primera síl·laba)",
+          "prefix accentuat (salta al prefix)",
+          "prefix no accentuat (es queda al verb)",
+          "paraula composta (paraula esquerra)"
+        ]
+      },
+      {
+        "blankId": "3",
+        "options": [
+          "paraula bàsica (primera síl·laba)",
+          "prefix accentuat (salta al prefix)",
+          "prefix no accentuat (es queda al verb)",
+          "paraula composta (paraula esquerra)"
+        ]
+      },
+      {
+        "blankId": "4",
+        "options": [
+          "paraula bàsica (primera síl·laba)",
+          "prefix accentuat (salta al prefix)",
+          "prefix no accentuat (es queda al verb)",
+          "paraula composta (paraula esquerra)"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "paraula bàsica (primera síl·laba)",
+      "2": "prefix accentuat (salta al prefix)",
+      "3": "paraula composta (paraula esquerra)",
+      "4": "prefix no accentuat (es queda al verb)"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. No només saps on cau l'accent, sinó també per què. Aquesta classificació et permetrà deduir l'accent de paraules noves amb estructura similar."
+    },
+    "incorrect": {
+      "default": "Mira l'estructura: _Tasche_ és una paraula simple; _einkaufen_ té el prefix _ein-_ (accentuat, separable); _Wohnzimmer_ està format per dos substantius (_Wohn_ + _Zimmer_); _verstehen_ té el prefix _ver-_ (no accentuat, no separable)."
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-11-ex-05",
+  "topicId": "A1a-11",
+  "title": "Paraula accentuada a les W-Fragen",
+  "prompt": "Escriu la paraula que porta l'èmfasi principal a cada _W-Frage_ en versió neutra.",
+  "difficulty": 2,
+  "tags": ["intonation", "w-frage", "emfasi", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Wo wohnst du?_ → paraula accentuada: {{1}}\n_Wie heißen Sie?_ → paraula accentuada: {{2}}\n_Was machst du?_ → paraula accentuada: {{3}}",
+    "blanks": [
+      { "id": "1", "label": "paraula" },
+      { "id": "2", "label": "paraula" },
+      { "id": "3", "label": "paraula" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "paraula" },
+      { "blankId": "2", "placeholder": "paraula" },
+      { "blankId": "3", "placeholder": "paraula" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "wohnst", "2": "heißen", "3": "machst" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Molt bé. A les _W-Fragen_ neutres, el **verb** és el que carrega l'èmfasi. Recorda que aquesta és la versió per defecte; el parlant pot desplaçar l'èmfasi a la paraula interrogativa (repregunta) o al pronom (contrast) per matisar la intenció."
+    },
+    "incorrect": {
+      "default": "La regla per defecte a les _W-Fragen_ és: èmfasi al **verb**. Per tant, _**wohnst**_, _**heißen**_, _**machst**_. Accentuar el _wie_ o el _wo_ només té sentit com a represa o contrast, no com a pregunta neutra. Nota: sense àudio, l'exercici es basa en la regla; l'ideal seria identificar el pic d'èmfasi a partir d'un enregistrament."
+    }
+  }
+}

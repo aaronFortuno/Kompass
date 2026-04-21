@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-11-ex-06",
+  "topicId": "A1a-11",
+  "title": "Tipus i melodia alhora",
+  "prompt": "Per a cada frase, indica **a la vegada** el tipus estructural i la melodia final esperada.",
+  "difficulty": 3,
+  "tags": ["intonation", "tipus-frase", "melodia-final", "assessment"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "_Heißt du Peter?_ → tipus {{1}} / melodia {{2}}\n_Ich komme aus Spanien._ → tipus {{3}} / melodia {{4}}\n_Woher kommst du?_ → tipus {{5}} / melodia {{6}}",
+    "blanks": [
+      { "id": "1", "label": "tipus" },
+      { "id": "2", "label": "melodia" },
+      { "id": "3", "label": "tipus" },
+      { "id": "4", "label": "melodia" },
+      { "id": "5", "label": "tipus" },
+      { "id": "6", "label": "melodia" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      {
+        "blankId": "1",
+        "options": [
+          "declaració (Aussage)",
+          "pregunta amb interrogatiu (W-Frage)",
+          "pregunta sí/no (Satzfrage)"
+        ]
+      },
+      { "blankId": "2", "options": ["descendent (↓)", "ascendent (↑)"] },
+      {
+        "blankId": "3",
+        "options": [
+          "declaració (Aussage)",
+          "pregunta amb interrogatiu (W-Frage)",
+          "pregunta sí/no (Satzfrage)"
+        ]
+      },
+      { "blankId": "4", "options": ["descendent (↓)", "ascendent (↑)"] },
+      {
+        "blankId": "5",
+        "options": [
+          "declaració (Aussage)",
+          "pregunta amb interrogatiu (W-Frage)",
+          "pregunta sí/no (Satzfrage)"
+        ]
+      },
+      { "blankId": "6", "options": ["descendent (↓)", "ascendent (↑)"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "pregunta sí/no (Satzfrage)",
+      "2": "ascendent (↑)",
+      "3": "declaració (Aussage)",
+      "4": "descendent (↓)",
+      "5": "pregunta amb interrogatiu (W-Frage)",
+      "6": "descendent (↓)"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Excel·lent. Has vist el sistema sencer: _Heißt du Peter?_ → Satzfrage → puja; _Ich komme aus Spanien._ → declaració → baixa; _Woher kommst du?_ → W-Frage (amb _woher_) → baixa. Ara ja pots predir la melodia de qualsevol frase d'A1 a partir de la seva estructura."
+    },
+    "incorrect": {
+      "default": "Decideix primer el tipus (hi ha paraula interrogativa? és una afirmació? comença pel verb?) i després aplica el patró: W-Frage i declaració → baixen; Satzfrage → puja. _Heißt du Peter?_ no té _W-_ inicial → Satzfrage → ascendent. _Woher_ sí que és interrogatiu (d'on) → W-Frage → descendent."
+    }
+  }
+}
