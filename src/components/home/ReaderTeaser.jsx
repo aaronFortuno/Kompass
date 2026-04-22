@@ -127,17 +127,20 @@ export function ReaderTeaser() {
           <div className="space-y-4">
             {reducedMotion ? (
               <h3 className="font-serif font-medium text-reader-ink text-4xl sm:text-5xl leading-[1.04] tracking-tight max-w-[18ch]">
-                {beat.de}
+                <SpeakableText text={beat.de}>{beat.de}</SpeakableText>
               </h3>
             ) : (
-              <Typed
-                as="h3"
-                text={beat.de}
-                speed={52}
-                startDelay={120}
-                active
-                className="font-serif font-medium text-reader-ink text-4xl sm:text-5xl leading-[1.04] tracking-tight max-w-[18ch] block"
-              />
+              <h3 className="font-serif font-medium text-reader-ink text-4xl sm:text-5xl leading-[1.04] tracking-tight max-w-[18ch]">
+                <SpeakableText text={beat.de}>
+                  <Typed
+                    as="span"
+                    text={beat.de}
+                    speed={52}
+                    startDelay={120}
+                    active
+                  />
+                </SpeakableText>
+              </h3>
             )}
             <p className="font-serif italic text-lg text-reader-ink-2">
               {beat.gloss}
