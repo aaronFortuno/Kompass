@@ -59,8 +59,14 @@ export function stripRichMarkers(text) {
   return out;
 }
 
+// Nota: el patró `!!...!!` prohibeix `!` dins del cos per evitar
+// backtracking catastròfic amb regex (un text ple de `!` pot
+// disparar explosió exponencial amb alternatives tipus `[^!]|!(?!!)`).
+// A la pràctica els strings alemanys que volem fer pronunciar no
+// contenen `!` enmig (només al final: "Hallo!"). Si calgués
+// literalitzar un `!` dins, s'usa l'escapament `\!`.
 const TOKEN_RE =
-  /(\\[\\*=_`!])|(!!(?:[^!]|!(?!!))+!!)|(\*\*(?:[^*]|\*(?!\*))+\*\*)|(==[^=]+==)|(_[^_]+_)|(`[^`]+`)/g;
+  /(\\[\\*=_`!])|(!![^!]+!!)|(\*\*(?:[^*]|\*(?!\*))+\*\*)|(==[^=]+==)|(_[^_]+_)|(`[^`]+`)/g;
 
 // Profunditat màxima de la recursió per render. Els casos didàctics
 // reals usen com a molt 2 nivells (p. ex. `_wohn**en**_` o

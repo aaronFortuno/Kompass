@@ -12,7 +12,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "validate-content": "node scripts/validateAllContent.js",
-    "add-image": "node scripts/add-image.js"
+    "add-image": "node scripts/add-image.js",
+    "scan-audio": "node scripts/scan-audio-strings.js"
   },
   "dependencies": {
     "lucide-react": "^1.8.0",

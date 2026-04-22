@@ -1,0 +1,2079 @@
+{
+  "generatedAt": "2026-04-22T17:21:07.529Z",
+  "totalStrings": 202,
+  "totalChars": 3136,
+  "entries": [
+    {
+      "hash": "032d90688980e75f2f4f8af58dd7e2e31a51d700",
+      "text": "fotografieren",
+      "sources": [
+        {
+          "topic": "A1b-10",
+          "path": "steps[1].blocks[1].rows[7][0]"
+        }
+      ]
+    },
+    {
+      "hash": "05cd8410136b43a9b1382870542acdf52ffa5465",
+      "text": "das Gramm",
+      "sources": [
+        {
+          "topic": "A1a-29",
+          "path": "steps[2].blocks[1].rows[0][1]"
+        }
+      ]
+    },
+    {
+      "hash": "05d1f50ed8bf99a23a9ab62f32adfa54049d5526",
+      "text": "Mich interessiert der Dom.",
+      "sources": [
+        {
+          "topic": "A1b-5",
+          "path": "steps[8].blocks[1].rows[1][1]"
+        },
+        {
+          "topic": "A1b-7",
+          "path": "steps[6].blocks[1].rows[1][1]"
+        }
+      ]
+    },
+    {
+      "hash": "0648712263a09827075ffa65aa21edc6eb67ac2c",
+      "text": "Ich mag Tennis.",
+      "sources": [
+        {
+          "topic": "A1b-8",
+          "path": "steps[8].blocks[1].rows[4][0]"
+        }
+      ]
+    },
+    {
+      "hash": "08ebc48d52797cd1fde4ad3445a3e6d3941c8cd1",
+      "text": "das Buch",
+      "sources": [
+        {
+          "topic": "A1b-22",
+          "path": "steps[6].blocks[2].rows[5][0]"
+        }
+      ]
+    },
+    {
+      "hash": "09cd68a2a77b22a312dded612dd0d9988685189f",
+      "text": "es",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[1].tabs[4].pron"
+        }
+      ]
+    },
+    {
+      "hash": "0a4b420ef112ff954e794c0624374e6f65bc6b4f",
+      "text": "Sie (Vostè)",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[4].pairs[4].personal"
+        }
+      ]
+    },
+    {
+      "hash": "0a7fe3ed0fd43d1e903ba5afb942f307a48d5727",
+      "text": "telefonieren",
+      "sources": [
+        {
+          "topic": "A1b-10",
+          "path": "steps[1].blocks[1].rows[1][0]"
+        }
+      ]
+    },
+    {
+      "hash": "0aa058265ea79a3d0c5b58325cf1a82242f760f0",
+      "text": "Estudiava alemany. (abans, acció habitual/durativa)",
+      "sources": [
+        {
+          "topic": "A1b-24",
+          "path": "steps[1].blocks[2].rows[2][0]"
+        }
+      ]
+    },
+    {
+      "hash": "0aab21a14dd720082e12a1f48cd086c1adca13be",
+      "text": "probieren",
+      "sources": [
+        {
+          "topic": "A1b-10",
+          "path": "steps[1].blocks[1].rows[3][0]"
+        }
+      ]
+    },
+    {
+      "hash": "0b30c927854e68b46970843747ed5d6bb0b8689e",
+      "text": "März",
+      "sources": [
+        {
+          "topic": "A1a-21",
+          "path": "steps[5].blocks[1].rows[2][0]"
+        }
+      ]
+    },
+    {
+      "hash": "0b9784255393b24ccfbc6f01dbf1cf72f006fe8e",
+      "text": "Bist du Student? — Ja.",
+      "sources": [
+        {
+          "topic": "A1a-0",
+          "path": "steps[8].tabs[4].example.de"
+        }
+      ]
+    },
+    {
+      "hash": "0c1615f6df713ffc92393054fc2400ad20750af2",
+      "text": "sein-",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[4].pairs[2].possessive"
+        }
+      ]
+    },
+    {
+      "hash": "0ca5853904f5678cfa4a3d47e6bd21e389008fcc",
+      "text": "Freitag",
+      "sources": [
+        {
+          "topic": "A1a-21",
+          "path": "steps[3].blocks[1].rows[4][0]"
+        }
+      ]
+    },
+    {
+      "hash": "0ff24f0531d232a8edb002a6d146905eb44768dc",
+      "text": "Nico ist seit ein paar Wochen in Deutschland.",
+      "sources": [
+        {
+          "topic": "A1b-34",
+          "path": "steps[1].blocks[1].rows[1][0]"
+        }
+      ]
+    },
+    {
+      "hash": "1131da9c2c4abf33e9dc16be32e1dc2ddf59989b",
+      "text": "halb acht",
+      "sources": [
+        {
+          "topic": "A1a-22",
+          "path": "steps[3].blocks[3].rows[0][2]"
+        }
+      ]
+    },
+    {
+      "hash": "11bb1271141a275bb57922ce842ad23a15eb6f2a",
+      "text": "Ich habe vor zwei Monaten angefangen, Deutsch zu lernen.",
+      "sources": [
+        {
+          "topic": "A1b-34",
+          "path": "steps[2].blocks[1].rows[2][0]"
+        }
+      ]
+    },
+    {
+      "hash": "120174679ae4fd0bad89d8f4ca6c9a65b9505688",
+      "text": "reservieren",
+      "sources": [
+        {
+          "topic": "A1b-10",
+          "path": "steps[1].blocks[1].rows[8][0]"
+        }
+      ]
+    },
+    {
+      "hash": "13c6af1c2f7dfc590ef0ede37231ebafe143851a",
+      "text": "wir",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[2].tabs[0].pron"
+        }
+      ]
+    },
+    {
+      "hash": "14822ff50126edc1afa09710c227c388d1267b49",
+      "text": "Nominatiu",
+      "sources": [
+        {
+          "topic": "A1a-14",
+          "path": "steps[10].blocks[1].rows[0][1]"
+        }
+      ]
+    },
+    {
+      "hash": "14a1bc80e7649e831c5768893a3a98d31eae580e",
+      "text": "ihr",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[2].tabs[1].pron"
+        }
+      ]
+    },
+    {
+      "hash": "1558fe5a10bf50e04e16633069468b05bac7f0b5",
+      "text": "Ich folge dem Reiseführer",
+      "sources": [
+        {
+          "topic": "A1b-40",
+          "path": "steps[0].blocks[1].rows[4][1]"
+        }
+      ]
+    },
+    {
+      "hash": "17142f12071b15aa1bcc07e2b895bb4bae6cefd6",
+      "text": "Woher?",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[6].tabs[4].pron"
+        }
+      ]
+    },
+    {
+      "hash": "1b9a2ca3ca34cdf051aafafb911da209dde683b1",
+      "text": "massieren",
+      "sources": [
+        {
+          "topic": "A1b-10",
+          "path": "steps[1].blocks[1].rows[10][0]"
+        }
+      ]
+    },
+    {
+      "hash": "1c972739c3b39334d3d33b693eeffbc1e4393523",
+      "text": "Wo?",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[6].tabs[3].pron"
+        }
+      ]
+    },
+    {
+      "hash": "1f212b77e4209287fea8a3b599b7d7fba677faa8",
+      "text": "Wo wohnst du?",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[6].tabs[3].example.de"
+        }
+      ]
+    },
+    {
+      "hash": "2022d39607483d5a376d7e55a4229b43b399b95c",
+      "text": "ihr Name",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[6].comparison[1].de"
+        }
+      ]
+    },
+    {
+      "hash": "20cc0b6866c528e9a88465a3b58c116a1c854ccc",
+      "text": "Wie heißen Sie?",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[2].tabs[3].example.de"
+        }
+      ]
+    },
+    {
+      "hash": "20fc3740b9a4ed897c69dbb648f1fc9dc0065f5a",
+      "text": "Du kommst aus Deutschland?",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[10].pitfalls[2].bad"
+        }
+      ]
+    },
+    {
+      "hash": "21005d20625a666badcd91673586074382f50a9c",
+      "text": "zu Pfingsten",
+      "sources": [
+        {
+          "topic": "A1b-32",
+          "path": "steps[5].blocks[1].rows[4][0]"
+        }
+      ]
+    },
+    {
+      "hash": "21901404eab3f130ca16d84a656faa41a5e83b79",
+      "text": "Sie",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[2].tabs[3].pron"
+        }
+      ]
+    },
+    {
+      "hash": "233d67b1b5a4f61998be1271bcf9c04a2c1fbf35",
+      "text": "der Nordwesten",
+      "sources": [
+        {
+          "topic": "A1b-4",
+          "path": "steps[1].blocks[5].rows[1][0]"
+        }
+      ]
+    },
+    {
+      "hash": "250be29b02b4723e94665c9c7ed4e7a90d37f9c0",
+      "text": "die Tür",
+      "sources": [
+        {
+          "topic": "A1b-22",
+          "path": "steps[6].blocks[2].rows[7][0]"
+        }
+      ]
+    },
+    {
+      "hash": "25d57dde748ce985ef1beb1337c16ec4b3cda43c",
+      "text": "zu Silvester",
+      "sources": [
+        {
+          "topic": "A1b-32",
+          "path": "steps[5].blocks[1].rows[2][0]"
+        }
+      ]
+    },
+    {
+      "hash": "25ec89a3d4b1c366f742c88f04e262abe2359957",
+      "text": "Gibt es eine Party?",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[8].examples[1].de"
+        }
+      ]
+    },
+    {
+      "hash": "26a7b216b7057a5f8c9043c6118ba6f51e849f0e",
+      "text": "Anna und ihr Name",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[8].pitfalls[0].good"
+        }
+      ]
+    },
+    {
+      "hash": "2715b44ea5b3df78c4266d08c0d19991d20a8b06",
+      "text": "der Tisch",
+      "sources": [
+        {
+          "topic": "A1b-22",
+          "path": "steps[6].blocks[1].rows[0][0]"
+        }
+      ]
+    },
+    {
+      "hash": "278b6b7ff2467d63c3245c93467c546c79162721",
+      "text": "der Südwesten",
+      "sources": [
+        {
+          "topic": "A1b-4",
+          "path": "steps[1].blocks[5].rows[3][0]"
+        }
+      ]
+    },
+    {
+      "hash": "27efb21b5a45b2ecac6554f02ad0a83de97fff4e",
+      "text": "Du kommst aus Deutschland.",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[8].comparison[0].de"
+        }
+      ]
+    },
+    {
+      "hash": "27f4dd6a2c58b94fc9c3169bf6e486fab11b465e",
+      "text": "kontrollieren",
+      "sources": [
+        {
+          "topic": "A1b-10",
+          "path": "steps[1].blocks[1].rows[4][0]"
+        }
+      ]
+    },
+    {
+      "hash": "283c735c8901fb2d4af6e619fe339fab53087ad1",
+      "text": "Ja",
+      "sources": [
+        {
+          "topic": "A1a-0",
+          "path": "steps[8].tabs[4].pron"
+        }
+      ]
+    },
+    {
+      "hash": "2934eca16b566e1b34eed347a8fef65b4e986507",
+      "text": "Sie wohnen in München.",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[2].tabs[2].example.de"
+        }
+      ]
+    },
+    {
+      "hash": "29b2a91af032262d62498f341dafa6f95350be4b",
+      "text": "Meine Adresse · ist · Jahnstraße 5.",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[2].examples[2].de"
+        }
+      ]
+    },
+    {
+      "hash": "2b9fb0eccdc90bb796c64b6001705c23d104b08b",
+      "text": "ihr-",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[4].pairs[3].possessive"
+        }
+      ]
+    },
+    {
+      "hash": "2cd3eb8290c105a8ce4d949c73e7067c0c01b077",
+      "text": "dann",
+      "sources": [
+        {
+          "topic": "A1a-23",
+          "path": "steps[1].blocks[1].rows[1][0]"
+        }
+      ]
+    },
+    {
+      "hash": "2d3fab78d6d1c442c17b37140394e1e269ab4f0e",
+      "text": "zu Ostern",
+      "sources": [
+        {
+          "topic": "A1b-32",
+          "path": "steps[5].blocks[1].rows[1][0]"
+        }
+      ]
+    },
+    {
+      "hash": "2ee02d56ca81c08d9ca2d94c34cb68fea5c4ef90",
+      "text": "der Südosten",
+      "sources": [
+        {
+          "topic": "A1b-4",
+          "path": "steps[1].blocks[5].rows[2][0]"
+        }
+      ]
+    },
+    {
+      "hash": "2fa520b64e6bdf3b6dddb97aa468af2cd4bc373d",
+      "text": "Arbeite bei Audi.",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[10].pitfalls[0].bad"
+        }
+      ]
+    },
+    {
+      "hash": "314c4b34edfe8288faf9bd1a663175d8621c3d6b",
+      "text": "der Winter",
+      "sources": [
+        {
+          "topic": "A1a-21",
+          "path": "steps[5].blocks[2].rows[3][0]"
+        }
+      ]
+    },
+    {
+      "hash": "32906a6c65228a010f5ee2b9cc21656381a9f44f",
+      "text": "der Teppich",
+      "sources": [
+        {
+          "topic": "A1b-22",
+          "path": "steps[6].blocks[2].rows[3][0]"
+        }
+      ]
+    },
+    {
+      "hash": "347cda532a6ebd0e6bac03631ca92c2837c1ab50",
+      "text": "Das · ist · in Bayern.",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[2].examples[3].de"
+        }
+      ]
+    },
+    {
+      "hash": "3512c331ba6d46556795cab075354158571904f5",
+      "text": "das Bett",
+      "sources": [
+        {
+          "topic": "A1b-22",
+          "path": "steps[6].blocks[1].rows[2][0]"
+        }
+      ]
+    },
+    {
+      "hash": "3737661dea9547a83cd5493e508711ceb21c8900",
+      "text": "du hast gearbeitet",
+      "sources": [
+        {
+          "topic": "A1b-26",
+          "path": "steps[0].blocks[1].rows[2][1]"
+        }
+      ]
+    },
+    {
+      "hash": "375822a704732c85dc5aafdedb6026c920623b48",
+      "text": "Es gefällt mir.",
+      "sources": [
+        {
+          "topic": "A1b-37",
+          "path": "steps[7].blocks[1].rows[0][1]"
+        }
+      ]
+    },
+    {
+      "hash": "38011ae74a7fe47cb96eda0bbb9faf2c828334d9",
+      "text": "Ich antworte dem Lehrer",
+      "sources": [
+        {
+          "topic": "A1b-40",
+          "path": "steps[0].blocks[1].rows[1][1]"
+        }
+      ]
+    },
+    {
+      "hash": "38bd762ad79206a221793b7ce7978e4d23198d8e",
+      "text": "Yara ist vor 15 Jahren in Deutschland angekommen.",
+      "sources": [
+        {
+          "topic": "A1b-34",
+          "path": "steps[2].blocks[1].rows[0][0]"
+        },
+        {
+          "topic": "A1b-34",
+          "path": "steps[4].blocks[1].rows[1][0]"
+        }
+      ]
+    },
+    {
+      "hash": "391c6fd30bf922fc0e11f899b9934eddbe47bf0a",
+      "text": "Ich · arbeite · bei Audi.",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[2].examples[1].de"
+        }
+      ]
+    },
+    {
+      "hash": "3aa8906f7c843a0d459bcc55e0bbad19c9a9308a",
+      "text": "Vaig estudiar alemany. (ahir, acció acabada)",
+      "sources": [
+        {
+          "topic": "A1b-24",
+          "path": "steps[1].blocks[2].rows[1][0]"
+        }
+      ]
+    },
+    {
+      "hash": "3c9c772e174585191bc1e55ebc1635b029c1eba7",
+      "text": "Ich helfe meiner Schwester",
+      "sources": [
+        {
+          "topic": "A1b-40",
+          "path": "steps[0].blocks[1].rows[0][1]"
+        }
+      ]
+    },
+    {
+      "hash": "3e8091d6e21ce762b99c33cbb6f763c9b798e7cc",
+      "text": "Nico ist vor ein paar Wochen in Deutschland angekommen.",
+      "sources": [
+        {
+          "topic": "A1b-34",
+          "path": "steps[2].blocks[1].rows[1][0]"
+        }
+      ]
+    },
+    {
+      "hash": "407a9cbaadcd1b3229989497004871be9c588e2a",
+      "text": "In Regensburg ich wohne.",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[10].pitfalls[1].bad"
+        }
+      ]
+    },
+    {
+      "hash": "437005ede5449c378b5343c6b25245533e0b1ed7",
+      "text": "mein-",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[4].pairs[0].possessive"
+        }
+      ]
+    },
+    {
+      "hash": "444455f14b3cc55084b115bfd3bc55eae02230cb",
+      "text": "Sie wohnt in Barcelona.",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[1].tabs[3].example.de"
+        }
+      ]
+    },
+    {
+      "hash": "446198760a3853c92b283bbf94a58cd4afad60e9",
+      "text": "Ich vertraue dir. (sense preposició!)",
+      "sources": [
+        {
+          "topic": "A1b-40",
+          "path": "steps[6].blocks[1].rows[6][1]"
+        }
+      ]
+    },
+    {
+      "hash": "44c21a071ef75cb4d4ccf45977d49b2783c42970",
+      "text": "Ich gratuliere dem Hans.",
+      "sources": [
+        {
+          "topic": "A1b-40",
+          "path": "steps[6].blocks[1].rows[1][1]"
+        }
+      ]
+    },
+    {
+      "hash": "44e91ba6b79ea0aad119a77e19928f773464335d",
+      "text": "Ich trinke einen Saft.",
+      "sources": [
+        {
+          "topic": "A1a-27",
+          "path": "steps[1].blocks[2].rows[0][2]"
+        }
+      ]
+    },
+    {
+      "hash": "4523106b976fe6c028ce892af28d18b334ead7b5",
+      "text": "Wohin?",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[6].tabs[5].pron"
+        }
+      ]
+    },
+    {
+      "hash": "459d1fef5e36215d080f6f4047c7c465fceab5fd",
+      "text": "Danke für die Hilfe.",
+      "sources": [
+        {
+          "topic": "A1a-0",
+          "path": "steps[8].tabs[2].example.de"
+        }
+      ]
+    },
+    {
+      "hash": "46b46bff74f77502f47df8a6f7fc8c87af679b94",
+      "text": "der Herbst",
+      "sources": [
+        {
+          "topic": "A1a-21",
+          "path": "steps[5].blocks[2].rows[2][0]"
+        }
+      ]
+    },
+    {
+      "hash": "46c528e8368df99897b05f23e942302c75e453d8",
+      "text": "Bitte, kommen Sie herein.",
+      "sources": [
+        {
+          "topic": "A1a-0",
+          "path": "steps[8].tabs[3].example.de"
+        }
+      ]
+    },
+    {
+      "hash": "46dcde40ab93c9f2792890dee4fc5c03072f01ad",
+      "text": "Wir kaufen einen Apfel.",
+      "sources": [
+        {
+          "topic": "A1a-27",
+          "path": "steps[1].blocks[2].rows[2][2]"
+        }
+      ]
+    },
+    {
+      "hash": "47014e6a27f0bebb57409bed92742d0ab1e36c0d",
+      "text": "Wir haben uns vor fünf Jahren kennengelernt.",
+      "sources": [
+        {
+          "topic": "A1b-34",
+          "path": "steps[2].blocks[1].rows[3][0]"
+        }
+      ]
+    },
+    {
+      "hash": "47133782350055a10b5c2e7d32008f0b8f90d4f4",
+      "text": "Ich · bin · 36 Jahre alt.",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[2].examples[0].de"
+        }
+      ]
+    },
+    {
+      "hash": "479a9c2bbbf378837fc6ccc6bed7f79866cbcc7d",
+      "text": "funktionieren",
+      "sources": [
+        {
+          "topic": "A1b-10",
+          "path": "steps[1].blocks[1].rows[2][0]"
+        }
+      ]
+    },
+    {
+      "hash": "4b2e2d5ece290e384afde4f8d942641fdd8ad35d",
+      "text": "realisieren",
+      "sources": [
+        {
+          "topic": "A1b-10",
+          "path": "steps[1].blocks[1].rows[5][0]"
+        }
+      ]
+    },
+    {
+      "hash": "4ce188861b280c36513d5f9830fda02eb0500b1f",
+      "text": "Ich helfe der Maria.",
+      "sources": [
+        {
+          "topic": "A1b-40",
+          "path": "steps[6].blocks[1].rows[0][1]"
+        }
+      ]
+    },
+    {
+      "hash": "4d853a7032055d7264ad5686a5495d204002ded6",
+      "text": "Kommst du aus Deutschland?",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[10].pitfalls[2].good"
+        },
+        {
+          "topic": "A1a-2",
+          "path": "steps[8].comparison[1].de"
+        },
+        {
+          "topic": "A1a-2",
+          "path": "steps[8].examples[0].de"
+        }
+      ]
+    },
+    {
+      "hash": "559e631c28cbc5638cf0c0725e64ff8b50494445",
+      "text": "der Norden",
+      "sources": [
+        {
+          "topic": "A1b-4",
+          "path": "steps[1].blocks[1].rows[0][0]"
+        }
+      ]
+    },
+    {
+      "hash": "581b3a264d0231a1f3e2bd9634d718d191a4c3ad",
+      "text": "ich habe gegessen",
+      "sources": [
+        {
+          "topic": "A1b-26",
+          "path": "steps[0].blocks[1].rows[0][1]"
+        }
+      ]
+    },
+    {
+      "hash": "599209e1e6b5b5cf7f0ce563c8bbf861124d7b72",
+      "text": "Tschüss, bis morgen!",
+      "sources": [
+        {
+          "topic": "A1a-0",
+          "path": "steps[8].tabs[1].example.de"
+        }
+      ]
+    },
+    {
+      "hash": "59d9a6df06b9f610f7db8e036896ed03662d168f",
+      "text": "Hallo",
+      "sources": [
+        {
+          "topic": "A1a-0",
+          "path": "steps[8].tabs[0].pron"
+        }
+      ]
+    },
+    {
+      "hash": "602c57ffb51af99d6f3b54c0ee9587bb110fb990",
+      "text": "er",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[1].tabs[2].pron"
+        },
+        {
+          "topic": "A1a-1",
+          "path": "steps[4].pairs[2].personal"
+        }
+      ]
+    },
+    {
+      "hash": "6244fc18e66a390a0ded3b41a1c3cf5d536941ca",
+      "text": "zu Neujahr",
+      "sources": [
+        {
+          "topic": "A1b-32",
+          "path": "steps[5].blocks[1].rows[3][0]"
+        }
+      ]
+    },
+    {
+      "hash": "626267415e7c19948d0a18f4dccf159a7e41ffad",
+      "text": "Januar",
+      "sources": [
+        {
+          "topic": "A1a-21",
+          "path": "steps[5].blocks[1].rows[0][0]"
+        }
+      ]
+    },
+    {
+      "hash": "64f8c5a125c02d44a1a76c91713135b8f4dde5bd",
+      "text": "der Süden",
+      "sources": [
+        {
+          "topic": "A1b-4",
+          "path": "steps[1].blocks[1].rows[1][0]"
+        }
+      ]
+    },
+    {
+      "hash": "6881d5c0cc049319c084c5839bd5d233647710b0",
+      "text": "Ich mag Pizza.",
+      "sources": [
+        {
+          "topic": "A1b-8",
+          "path": "steps[8].blocks[1].rows[0][0]"
+        }
+      ]
+    },
+    {
+      "hash": "6c2c9b33093e6047bfcce4e787751d40bf3ca5c2",
+      "text": "Ich habe Deutsch gelernt",
+      "sources": [
+        {
+          "topic": "A1b-24",
+          "path": "steps[1].blocks[2].rows[0][0]"
+        }
+      ]
+    },
+    {
+      "hash": "6d749538077b5b34b4a9e03f354c7f03107356a7",
+      "text": "Meine Adresse ist…",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[4].examples[1].de"
+        }
+      ]
+    },
+    {
+      "hash": "70bb813787b6edbddbc06663378b7376fc5d0372",
+      "text": "Nein",
+      "sources": [
+        {
+          "topic": "A1a-0",
+          "path": "steps[8].tabs[5].pron"
+        }
+      ]
+    },
+    {
+      "hash": "72277e4bf975325a4e5d29e818a8df23afd2b397",
+      "text": "Wir kennen uns seit 2020.",
+      "sources": [
+        {
+          "topic": "A1b-34",
+          "path": "steps[1].blocks[1].rows[3][0]"
+        }
+      ]
+    },
+    {
+      "hash": "73805bb0c4b2dafe99b1fb17ef71604528bc1cec",
+      "text": "der Osten",
+      "sources": [
+        {
+          "topic": "A1b-4",
+          "path": "steps[1].blocks[1].rows[2][0]"
+        }
+      ]
+    },
+    {
+      "hash": "75baa9c4fc5ae8c24833f3a7943765593cacf5e7",
+      "text": "Wohin gehst du?",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[6].tabs[5].example.de"
+        }
+      ]
+    },
+    {
+      "hash": "7959114b9d5d6da59670d54ebd9958b3fe8c9e80",
+      "text": "die Uhr",
+      "sources": [
+        {
+          "topic": "A1b-22",
+          "path": "steps[6].blocks[2].rows[1][0]"
+        }
+      ]
+    },
+    {
+      "hash": "7aa3bea1b10539dc2f94309fae8155755e176b69",
+      "text": "ihre Adresse",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[6].comparison[3].de"
+        }
+      ]
+    },
+    {
+      "hash": "7b9fb96306ad8765333bc89a15663ea68eb2b1d8",
+      "text": "das Bild / das Foto",
+      "sources": [
+        {
+          "topic": "A1b-22",
+          "path": "steps[6].blocks[2].rows[0][0]"
+        }
+      ]
+    },
+    {
+      "hash": "7c3df2c5fe250e885aed2099080e572cad74466d",
+      "text": "Donnerstag",
+      "sources": [
+        {
+          "topic": "A1a-21",
+          "path": "steps[3].blocks[1].rows[3][0]"
+        }
+      ]
+    },
+    {
+      "hash": "7e1115bd02bb3ab255a9d7e85eb95f6f3d56b1b2",
+      "text": "Juni",
+      "sources": [
+        {
+          "topic": "A1a-21",
+          "path": "steps[5].blocks[1].rows[5][0]"
+        }
+      ]
+    },
+    {
+      "hash": "7f523a0a8ef27f67ff317c718ea328bc4a70e1a0",
+      "text": "die Lampe",
+      "sources": [
+        {
+          "topic": "A1b-22",
+          "path": "steps[6].blocks[2].rows[2][0]"
+        }
+      ]
+    },
+    {
+      "hash": "8107b7d460e70e5f192d0d9cb2096ed82a8d6580",
+      "text": "meine Name",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[8].pitfalls[2].bad"
+        }
+      ]
+    },
+    {
+      "hash": "81904823d0abac9f61fa83931d06a1fc405ebbae",
+      "text": "Heute bin Ich müde.",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[8].pitfalls[3].bad"
+        }
+      ]
+    },
+    {
+      "hash": "82d593c84f50b20ad50f95e847cf3e6104e1cdba",
+      "text": "sein Name",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[6].comparison[0].de"
+        }
+      ]
+    },
+    {
+      "hash": "84072b16bad90ecdcb234737725185db231f26d9",
+      "text": "Woher kommst du?",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[10].pitfalls[3].good"
+        },
+        {
+          "topic": "A1a-2",
+          "path": "steps[6].tabs[4].example.de"
+        }
+      ]
+    },
+    {
+      "hash": "85ad5644425c425f697e3824263836cd1bcc6b33",
+      "text": "Samstag",
+      "sources": [
+        {
+          "topic": "A1a-21",
+          "path": "steps[3].blocks[1].rows[5][0]"
+        }
+      ]
+    },
+    {
+      "hash": "85cb6fe7e3ff4caba3300a59368c21658602583f",
+      "text": "Heute bin ich müde.",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[8].pitfalls[3].good"
+        }
+      ]
+    },
+    {
+      "hash": "86811bc06e27dfef8fa10e490aa2a835f97c93fd",
+      "text": "Bitte",
+      "sources": [
+        {
+          "topic": "A1a-0",
+          "path": "steps[8].tabs[3].pron"
+        }
+      ]
+    },
+    {
+      "hash": "8737be1776f26a2ef88146959d6a3816cc75bace",
+      "text": "mein Adresse",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[8].pitfalls[1].bad"
+        }
+      ]
+    },
+    {
+      "hash": "888d82266f6779d0997987395a46abbbdb6fd6a8",
+      "text": "Danke",
+      "sources": [
+        {
+          "topic": "A1a-0",
+          "path": "steps[8].tabs[2].pron"
+        }
+      ]
+    },
+    {
+      "hash": "897c78af25a3685f302053ad9a56340dafea662c",
+      "text": "der Sommer",
+      "sources": [
+        {
+          "topic": "A1a-21",
+          "path": "steps[5].blocks[2].rows[1][0]"
+        }
+      ]
+    },
+    {
+      "hash": "8b2275b762fe39b2611def797ab13c90fe8c378a",
+      "text": "der Nordosten",
+      "sources": [
+        {
+          "topic": "A1b-4",
+          "path": "steps[1].blocks[5].rows[0][0]"
+        }
+      ]
+    },
+    {
+      "hash": "8bb0f19f592e3f165d79beaedd296f8ade5d027e",
+      "text": "Montag",
+      "sources": [
+        {
+          "topic": "A1a-21",
+          "path": "steps[3].blocks[1].rows[0][0]"
+        }
+      ]
+    },
+    {
+      "hash": "8d78e8e14999aab8750ff749dea9dd7da234bb7a",
+      "text": "sie",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[1].tabs[3].pron"
+        },
+        {
+          "topic": "A1a-1",
+          "path": "steps[2].tabs[2].pron"
+        }
+      ]
+    },
+    {
+      "hash": "8ddd610a9725cda5686bf2556a8daa726c5725e1",
+      "text": "Ihr seid jung.",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[2].tabs[1].example.de"
+        }
+      ]
+    },
+    {
+      "hash": "8ef87af9ff7d888a1da1fed16cda19656a56d4c5",
+      "text": "Ich danke dem Vater",
+      "sources": [
+        {
+          "topic": "A1b-40",
+          "path": "steps[0].blocks[1].rows[3][1]"
+        }
+      ]
+    },
+    {
+      "hash": "8f8b88d6e2e282b88eca9fdb283f3dab8c20f63c",
+      "text": "das Kilogramm (col·loquial: das Kilo)",
+      "sources": [
+        {
+          "topic": "A1a-29",
+          "path": "steps[2].blocks[1].rows[1][1]"
+        }
+      ]
+    },
+    {
+      "hash": "95be2fc4588743cea461e1a17828e94198db0a5a",
+      "text": "Ich tanze gern.",
+      "sources": [
+        {
+          "topic": "A1a-17",
+          "path": "steps[7].blocks[1].rows[1][0]"
+        }
+      ]
+    },
+    {
+      "hash": "962b2450da926e82b2d7ec1e8483febd72da3573",
+      "text": "zu Weihnachten",
+      "sources": [
+        {
+          "topic": "A1b-32",
+          "path": "steps[5].blocks[1].rows[0][0]"
+        }
+      ]
+    },
+    {
+      "hash": "96b0dee1d97b0f53c964d2851b7a482989fbb58f",
+      "text": "Dir gefällt die Stadt.",
+      "sources": [
+        {
+          "topic": "A1b-5",
+          "path": "steps[8].blocks[1].rows[2][1]"
+        },
+        {
+          "topic": "A1b-7",
+          "path": "steps[6].blocks[1].rows[2][1]"
+        }
+      ]
+    },
+    {
+      "hash": "97251647970e9e13f538ba09535c1b51464e12b5",
+      "text": "Ich spiele gern Tennis.",
+      "sources": [
+        {
+          "topic": "A1b-8",
+          "path": "steps[8].blocks[1].rows[5][0]"
+        }
+      ]
+    },
+    {
+      "hash": "9737966bd0a54c59ed87c55da2b1daaa5cee8d89",
+      "text": "Ich mag Berlin.",
+      "sources": [
+        {
+          "topic": "A1b-8",
+          "path": "steps[8].blocks[1].rows[2][0]"
+        }
+      ]
+    },
+    {
+      "hash": "9aaceea74e57e7d2a1ab5d34ab38f63d15bbab55",
+      "text": "Februar",
+      "sources": [
+        {
+          "topic": "A1a-21",
+          "path": "steps[5].blocks[1].rows[1][0]"
+        }
+      ]
+    },
+    {
+      "hash": "9bc990b4c5edbdfc5a8f8469752d39d2ea3f4df3",
+      "text": "Ich folge dem Reiseführer.",
+      "sources": [
+        {
+          "topic": "A1b-40",
+          "path": "steps[6].blocks[1].rows[4][1]"
+        }
+      ]
+    },
+    {
+      "hash": "9c4d32d9555f6bf391907c8e101df6d54b308838",
+      "text": "Ich tanze gut.",
+      "sources": [
+        {
+          "topic": "A1a-17",
+          "path": "steps[7].blocks[1].rows[0][0]"
+        }
+      ]
+    },
+    {
+      "hash": "9e2e066b519605026630ff7140019fab65e557c4",
+      "text": "Ich gratuliere dem Thomas",
+      "sources": [
+        {
+          "topic": "A1b-40",
+          "path": "steps[0].blocks[1].rows[2][1]"
+        }
+      ]
+    },
+    {
+      "hash": "9ff40cb7e50a8ac73edf4c279965f1af1943fa23",
+      "text": "die Vase",
+      "sources": [
+        {
+          "topic": "A1b-22",
+          "path": "steps[6].blocks[2].rows[4][0]"
+        }
+      ]
+    },
+    {
+      "hash": "a0393902db1f516ef5f95f6830938558a88fb23c",
+      "text": "April",
+      "sources": [
+        {
+          "topic": "A1a-21",
+          "path": "steps[5].blocks[1].rows[3][0]"
+        }
+      ]
+    },
+    {
+      "hash": "a13287b694f81aa1bf30548bc04a661f4153a0fe",
+      "text": "der Schrank",
+      "sources": [
+        {
+          "topic": "A1b-22",
+          "path": "steps[6].blocks[1].rows[3][0]"
+        }
+      ]
+    },
+    {
+      "hash": "a1521d8617e7e30d755c4ee89c25aa4149b520a2",
+      "text": "Wo kommst du?",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[10].pitfalls[3].bad"
+        }
+      ]
+    },
+    {
+      "hash": "a3f0ca3f2b5d4a00b329356063f734497b55c6e3",
+      "text": "Wie heißt du?",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[6].tabs[2].example.de"
+        }
+      ]
+    },
+    {
+      "hash": "a4137cf840a8cffc0dcc5f0c4225834789902fff",
+      "text": "Anna und sein Name",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[8].pitfalls[0].bad"
+        }
+      ]
+    },
+    {
+      "hash": "a58f6e3564ac2d5b4ad32446fe9e37138b65b4e4",
+      "text": "Mein Name · ist · Julia Schwaiger.",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[1].examples[0].de"
+        }
+      ]
+    },
+    {
+      "hash": "a64917b75c9c76a6319b5a403d4f1fd37c7425fc",
+      "text": "Ich arbeite bei Audi.",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[10].pitfalls[0].good"
+        }
+      ]
+    },
+    {
+      "hash": "a68a13a2de6fde3e8eeb5fc6cc4d51824a434c5d",
+      "text": "seine Adresse",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[6].comparison[2].de"
+        }
+      ]
+    },
+    {
+      "hash": "a6ff7c6e8ae738571716d523fb0e156100bc0dbd",
+      "text": "das Sofa",
+      "sources": [
+        {
+          "topic": "A1b-22",
+          "path": "steps[6].blocks[1].rows[4][0]"
+        }
+      ]
+    },
+    {
+      "hash": "a78168682e081a5fcee92cd888af50000df81c0f",
+      "text": "Ich arbeite in Ingolstadt, aber ich wohne in Regensburg.",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[5].examples[0].de"
+        }
+      ]
+    },
+    {
+      "hash": "a8da86e28f3085985c0c8570c36670ce71e77e5d",
+      "text": "sie (ella)",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[4].pairs[3].personal"
+        }
+      ]
+    },
+    {
+      "hash": "a969f34fcd3d1e1402ffdae97c3a9f07fa203de7",
+      "text": "Es gehört ihm / ihr.",
+      "sources": [
+        {
+          "topic": "A1b-37",
+          "path": "steps[7].blocks[1].rows[3][1]"
+        }
+      ]
+    },
+    {
+      "hash": "aa196176db6c431983ae61e2ea54892890ed07a9",
+      "text": "Hallo, ich bin Anna.",
+      "sources": [
+        {
+          "topic": "A1a-0",
+          "path": "steps[8].tabs[0].example.de"
+        }
+      ]
+    },
+    {
+      "hash": "aab8a194ec6f9870ec8698b2b3f6b71fefcc92b5",
+      "text": "organisieren",
+      "sources": [
+        {
+          "topic": "A1b-10",
+          "path": "steps[1].blocks[1].rows[6][0]"
+        }
+      ]
+    },
+    {
+      "hash": "ac97098edb2ecfc49e999643b23692c4c1c70ed3",
+      "text": "ich",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[1].tabs[0].pron"
+        },
+        {
+          "topic": "A1a-1",
+          "path": "steps[4].pairs[0].personal"
+        }
+      ]
+    },
+    {
+      "hash": "ae3fe0588dfa48e9e36eb3a0213c5c4beb5d7031",
+      "text": "Acusatiu",
+      "sources": [
+        {
+          "topic": "A1a-14",
+          "path": "steps[10].blocks[1].rows[1][1]"
+        }
+      ]
+    },
+    {
+      "hash": "afe526a6c998b1326890e25c04e3a011a77d0c4f",
+      "text": "Mai",
+      "sources": [
+        {
+          "topic": "A1a-21",
+          "path": "steps[5].blocks[1].rows[4][0]"
+        }
+      ]
+    },
+    {
+      "hash": "b2ce6b5d7cb1fdb8fb8115c5f539756cd24fd427",
+      "text": "Dienstag",
+      "sources": [
+        {
+          "topic": "A1a-21",
+          "path": "steps[3].blocks[1].rows[1][0]"
+        }
+      ]
+    },
+    {
+      "hash": "b8e6065aca70cc891c4ccd76383eaf9dd90343a3",
+      "text": "das Fenster",
+      "sources": [
+        {
+          "topic": "A1b-22",
+          "path": "steps[6].blocks[2].rows[6][0]"
+        }
+      ]
+    },
+    {
+      "hash": "b9730732b2e7c62bbf2e3502a8582c90f8e62e65",
+      "text": "Datiu",
+      "sources": [
+        {
+          "topic": "A1a-14",
+          "path": "steps[10].blocks[1].rows[2][1]"
+        }
+      ]
+    },
+    {
+      "hash": "b9de39d8ada0afdd5951b14b999fcf20c07ef6a2",
+      "text": "danach",
+      "sources": [
+        {
+          "topic": "A1a-23",
+          "path": "steps[1].blocks[1].rows[2][0]"
+        }
+      ]
+    },
+    {
+      "hash": "bac35a220aac6855ba8136b657e8d10228aaf377",
+      "text": "Was?",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[6].tabs[1].pron"
+        }
+      ]
+    },
+    {
+      "hash": "bbaf964376c1290cdc53b0467155c200d131a1ce",
+      "text": "Ich finde Tanzen gut.",
+      "sources": [
+        {
+          "topic": "A1a-17",
+          "path": "steps[7].blocks[1].rows[2][0]"
+        }
+      ]
+    },
+    {
+      "hash": "bdd05be98673bc7cdc34dec0b493ab49aa3a323f",
+      "text": "der Frühling",
+      "sources": [
+        {
+          "topic": "A1a-21",
+          "path": "steps[5].blocks[2].rows[0][0]"
+        }
+      ]
+    },
+    {
+      "hash": "be6ec2650625079e2c471e96eff2d7742acbbfbb",
+      "text": "mein Name",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[8].pitfalls[2].good"
+        }
+      ]
+    },
+    {
+      "hash": "beaaf30cf441d34e6f785dd809a0ce1c717b8a0c",
+      "text": "Möchtest du etwas trinken?",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[8].examples[2].de"
+        }
+      ]
+    },
+    {
+      "hash": "bf2898cbcd2daf7bfaa8206a463848968467994e",
+      "text": "Wer?",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[6].tabs[0].pron"
+        }
+      ]
+    },
+    {
+      "hash": "bfe7e2a0fe90f48d48c30e71c0d12124d6ac0814",
+      "text": "Tschüss",
+      "sources": [
+        {
+          "topic": "A1a-0",
+          "path": "steps[8].tabs[1].pron"
+        }
+      ]
+    },
+    {
+      "hash": "c04a60af4d81cbd28b4b1858464edc77b113de67",
+      "text": "Er kommt aus Berlin.",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[1].tabs[2].example.de"
+        }
+      ]
+    },
+    {
+      "hash": "c04abdca0d6e71e91abc0c60245df7ca042c31c0",
+      "text": "der Milliliter",
+      "sources": [
+        {
+          "topic": "A1a-29",
+          "path": "steps[2].blocks[1].rows[3][1]"
+        }
+      ]
+    },
+    {
+      "hash": "c181f2fbd9d3327a6cf3d7add15c1b036328d5fd",
+      "text": "der Westen",
+      "sources": [
+        {
+          "topic": "A1b-4",
+          "path": "steps[1].blocks[1].rows[3][0]"
+        }
+      ]
+    },
+    {
+      "hash": "c2784e117e0da5a16f3b4af5e029309b94706aac",
+      "text": "ich bin gegangen",
+      "sources": [
+        {
+          "topic": "A1b-26",
+          "path": "steps[0].blocks[1].rows[1][1]"
+        }
+      ]
+    },
+    {
+      "hash": "c38406e5ff5351d615a71f2062ef5c1ae3a94b1a",
+      "text": "Ich verzeihe dir.",
+      "sources": [
+        {
+          "topic": "A1b-40",
+          "path": "steps[6].blocks[1].rows[7][1]"
+        }
+      ]
+    },
+    {
+      "hash": "c430fdf421c0d543e79615a78af32a9feec92f50",
+      "text": "studieren",
+      "sources": [
+        {
+          "topic": "A1b-10",
+          "path": "steps[1].blocks[1].rows[0][0]"
+        }
+      ]
+    },
+    {
+      "hash": "c62ae55f129502ff35fd9c78ff804f22c08ca523",
+      "text": "Wir lernen Deutsch.",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[2].tabs[0].example.de"
+        }
+      ]
+    },
+    {
+      "hash": "c65f6cc8b0f35d09f01295e4488dba4205a97bb3",
+      "text": "das Regal",
+      "sources": [
+        {
+          "topic": "A1b-22",
+          "path": "steps[6].blocks[1].rows[7][0]"
+        }
+      ]
+    },
+    {
+      "hash": "c7af265f2ad3feb26c858efa2ad27174336aefc4",
+      "text": "Genitiu",
+      "sources": [
+        {
+          "topic": "A1a-14",
+          "path": "steps[10].blocks[1].rows[3][1]"
+        }
+      ]
+    },
+    {
+      "hash": "c7dc54e190031121d061451ebf7d048e6bae86ba",
+      "text": "Wie ist Ihre Telefonnummer?",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[0].examples[2].de"
+        }
+      ]
+    },
+    {
+      "hash": "c8c14fefeadf31df319f295760ba9aa0e334dd1e",
+      "text": "Ich lerne seit zwei Monaten Deutsch.",
+      "sources": [
+        {
+          "topic": "A1b-34",
+          "path": "steps[1].blocks[1].rows[2][0]"
+        }
+      ]
+    },
+    {
+      "hash": "c91b5a16c8d5c3606b610e42eb2debfa7bb5128c",
+      "text": "Ihr-",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[4].pairs[4].possessive"
+        }
+      ]
+    },
+    {
+      "hash": "cc53c1a2c34e7c9544c97e5a1a7b7c0b2f1318ab",
+      "text": "Ich wohne gern in Berlin.",
+      "sources": [
+        {
+          "topic": "A1b-8",
+          "path": "steps[8].blocks[1].rows[3][0]"
+        }
+      ]
+    },
+    {
+      "hash": "d02c8b45d3e449618503e31bd5be41e6d20eef79",
+      "text": "meine Adresse",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[8].pitfalls[1].good"
+        }
+      ]
+    },
+    {
+      "hash": "d09614b1764ff61626fb97f355827efda1b86b64",
+      "text": "der Stuhl",
+      "sources": [
+        {
+          "topic": "A1b-22",
+          "path": "steps[6].blocks[1].rows[1][0]"
+        }
+      ]
+    },
+    {
+      "hash": "d099a25e6fe7f2b84ba4c84405f7c38c3026d31f",
+      "text": "die Wand",
+      "sources": [
+        {
+          "topic": "A1b-22",
+          "path": "steps[6].blocks[2].rows[8][0]"
+        }
+      ]
+    },
+    {
+      "hash": "d15af94d944dd1c5e6c7ab2892db341d16567634",
+      "text": "Was ist das?",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[6].tabs[1].example.de"
+        }
+      ]
+    },
+    {
+      "hash": "d21dbac9cb2d5983d808c14c00222ec42b05e3df",
+      "text": "dein-",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[4].pairs[1].possessive"
+        }
+      ]
+    },
+    {
+      "hash": "d3578f82c29bc0ec675c9bffb7c997079fad2fd9",
+      "text": "der Liter",
+      "sources": [
+        {
+          "topic": "A1a-29",
+          "path": "steps[2].blocks[1].rows[2][1]"
+        }
+      ]
+    },
+    {
+      "hash": "d4ccbe61d55637653f94aae7803397a46e499276",
+      "text": "Mir gefällt der Dom.",
+      "sources": [
+        {
+          "topic": "A1b-5",
+          "path": "steps[8].blocks[1].rows[0][1]"
+        },
+        {
+          "topic": "A1b-7",
+          "path": "steps[6].blocks[1].rows[0][1]"
+        }
+      ]
+    },
+    {
+      "hash": "d9237b7424b0d71c6b0f99738820082fec181e92",
+      "text": "Ich höre der Sara zu.",
+      "sources": [
+        {
+          "topic": "A1b-40",
+          "path": "steps[6].blocks[1].rows[5][1]"
+        }
+      ]
+    },
+    {
+      "hash": "da60ecdd0271f4028f30c7c55956f6eec3cbad04",
+      "text": "Wer ist das?",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[6].tabs[0].example.de"
+        }
+      ]
+    },
+    {
+      "hash": "dad62a6c94b4fff1194202e752e714b8eafa35f2",
+      "text": "Yara wohnt seit 15 Jahren in Deutschland.",
+      "sources": [
+        {
+          "topic": "A1b-34",
+          "path": "steps[1].blocks[1].rows[0][0]"
+        },
+        {
+          "topic": "A1b-34",
+          "path": "steps[4].blocks[1].rows[0][0]"
+        }
+      ]
+    },
+    {
+      "hash": "dc41d2a7ba9e7e62e90fa227a0054241806d7cd0",
+      "text": "Meine Adresse ist Jahnstraße 5.",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[3].comparison[0].de"
+        }
+      ]
+    },
+    {
+      "hash": "dcbc1449eaf58bf0bac02d1281988c74a0aa667b",
+      "text": "In Regensburg wohne ich.",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[10].pitfalls[1].good"
+        }
+      ]
+    },
+    {
+      "hash": "dd3318e4ac213d43c3b475a561d8dd7cf240d35b",
+      "text": "Ich antworte dem Vater.",
+      "sources": [
+        {
+          "topic": "A1b-40",
+          "path": "steps[6].blocks[1].rows[3][1]"
+        }
+      ]
+    },
+    {
+      "hash": "dea8551b8cbc53442541b6f1ad84ce95848ae01b",
+      "text": "zuerst",
+      "sources": [
+        {
+          "topic": "A1a-23",
+          "path": "steps[1].blocks[1].rows[0][0]"
+        }
+      ]
+    },
+    {
+      "hash": "e18aaf05fa45a0bcbc70360293a267e8cf1131d5",
+      "text": "Ich esse gern Pizza.",
+      "sources": [
+        {
+          "topic": "A1b-8",
+          "path": "steps[8].blocks[1].rows[1][0]"
+        }
+      ]
+    },
+    {
+      "hash": "e2a7c47dc8b1a1def1a533994aac16b5ca62de83",
+      "text": "Dich interessiert die Stadt.",
+      "sources": [
+        {
+          "topic": "A1b-5",
+          "path": "steps[8].blocks[1].rows[3][1]"
+        },
+        {
+          "topic": "A1b-7",
+          "path": "steps[6].blocks[1].rows[3][1]"
+        }
+      ]
+    },
+    {
+      "hash": "e4b6c6bc0d703892249d3cfdd327a7589bd30f5c",
+      "text": "Mein Name ist Marc.",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[0].examples[1].de"
+        }
+      ]
+    },
+    {
+      "hash": "e5d96d890e5ab68ddf5244fe02d8a0d56debd844",
+      "text": "Ich tanze lieber Salsa.",
+      "sources": [
+        {
+          "topic": "A1a-17",
+          "path": "steps[7].blocks[1].rows[3][0]"
+        }
+      ]
+    },
+    {
+      "hash": "e67207966faf3ab557fcaf304a4874819c356e84",
+      "text": "diskutieren",
+      "sources": [
+        {
+          "topic": "A1b-10",
+          "path": "steps[1].blocks[1].rows[9][0]"
+        }
+      ]
+    },
+    {
+      "hash": "e682603ff4e0f9fb38d64d7204374b58409daacf",
+      "text": "Ich sehe den Marc.",
+      "sources": [
+        {
+          "topic": "A1a-27",
+          "path": "steps[1].blocks[2].rows[1][2]"
+        }
+      ]
+    },
+    {
+      "hash": "e81ca4f641912c96a5dc3cce28e3349cdbc0bc4f",
+      "text": "Es tut mir leid / weh.",
+      "sources": [
+        {
+          "topic": "A1b-37",
+          "path": "steps[7].blocks[1].rows[2][1]"
+        }
+      ]
+    },
+    {
+      "hash": "e934f707c56bc4c0a0bcf63986b873f342119a7c",
+      "text": "Wie?",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[6].tabs[2].pron"
+        }
+      ]
+    },
+    {
+      "hash": "ea35525261341bb8a7369266e1442e216bee6543",
+      "text": "Mittwoch",
+      "sources": [
+        {
+          "topic": "A1a-21",
+          "path": "steps[3].blocks[1].rows[2][0]"
+        }
+      ]
+    },
+    {
+      "hash": "ea6aaaa2cc894d0f1ca9cd8940714a9fb98855a2",
+      "text": "der Schreibtisch",
+      "sources": [
+        {
+          "topic": "A1b-22",
+          "path": "steps[6].blocks[1].rows[6][0]"
+        }
+      ]
+    },
+    {
+      "hash": "ea7d88999aabf0de376d0ef4d85570e392ea91af",
+      "text": "Mein Name ist Anna.",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[4].examples[0].de"
+        }
+      ]
+    },
+    {
+      "hash": "eb5960c7de8867920340ecd656d92939039d346c",
+      "text": "halb neun",
+      "sources": [
+        {
+          "topic": "A1a-22",
+          "path": "steps[3].blocks[3].rows[1][2]"
+        }
+      ]
+    },
+    {
+      "hash": "edb0b1678c0541ad368920d8e581df2cfe7d977f",
+      "text": "Ich danke dem Peter.",
+      "sources": [
+        {
+          "topic": "A1b-40",
+          "path": "steps[6].blocks[1].rows[2][1]"
+        }
+      ]
+    },
+    {
+      "hash": "f18a88d454cbc02f78d22ba8d7a45ec846273446",
+      "text": "der Sessel",
+      "sources": [
+        {
+          "topic": "A1b-22",
+          "path": "steps[6].blocks[1].rows[5][0]"
+        }
+      ]
+    },
+    {
+      "hash": "f3056c653e572ca8e5b7d09e0096e9e95b758104",
+      "text": "Ich bin Student.",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[1].tabs[0].example.de"
+        }
+      ]
+    },
+    {
+      "hash": "f39bc8d9550c24bbd9e2e660b7f542eb4207e3e7",
+      "text": "Du heißt Anna.",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[1].tabs[1].example.de"
+        }
+      ]
+    },
+    {
+      "hash": "f3c19626302f273c8eba043c5b717733b6cf4b24",
+      "text": "Ich heiße Marc.",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[0].examples[0].de"
+        }
+      ]
+    },
+    {
+      "hash": "f44835f6e000a3e6bb9d708aaa3df8c2ffd9f8f1",
+      "text": "Es fehlt mir.",
+      "sources": [
+        {
+          "topic": "A1b-37",
+          "path": "steps[7].blocks[1].rows[1][1]"
+        }
+      ]
+    },
+    {
+      "hash": "f8e9c756eaa2f8e3b6b12eca79b37e21217cf909",
+      "text": "Sonntag",
+      "sources": [
+        {
+          "topic": "A1a-21",
+          "path": "steps[3].blocks[1].rows[6][0]"
+        }
+      ]
+    },
+    {
+      "hash": "fa114377ef35b25ecaa4d57e5084641543e02588",
+      "text": "du",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[1].tabs[1].pron"
+        },
+        {
+          "topic": "A1a-1",
+          "path": "steps[4].pairs[1].personal"
+        }
+      ]
+    },
+    {
+      "hash": "fba13c7174204845242a56e6c44dd2b874031dca",
+      "text": "Bist du müde? — Nein.",
+      "sources": [
+        {
+          "topic": "A1a-0",
+          "path": "steps[8].tabs[5].example.de"
+        }
+      ]
+    },
+    {
+      "hash": "fd804bd607b6c966430e8f06e40106765376ee1c",
+      "text": "konjugieren",
+      "sources": [
+        {
+          "topic": "A1b-10",
+          "path": "steps[1].blocks[1].rows[11][0]"
+        }
+      ]
+    },
+    {
+      "hash": "feaf8a99b212ad151d4a6fcf454bcbbfa27b8c48",
+      "text": "Es ist neu.",
+      "sources": [
+        {
+          "topic": "A1a-1",
+          "path": "steps[1].tabs[4].example.de"
+        }
+      ]
+    }
+  ]
+}
