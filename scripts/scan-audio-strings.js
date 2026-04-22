@@ -243,6 +243,18 @@ function addStringOrInline(map, topicId, jsonPath, rawText) {
   if (typeof rawText !== 'string') return;
   if (rawText.includes('!!')) {
     addInlineSpeakables(map, topicId, jsonPath, rawText);
+    // §98: a més dels pills individuals, també generem àudio de la
+    // FRASE SENCERA (sense markers ni separadors visuals "·") perquè
+    // l'usuari pugui escoltar-la fluida al final. Això dobla entries
+    // però el TTS aplica millor prosòdia a una frase completa que a
+    // segments aïllats. El client combinarà pills + frase sencera.
+    const cleaned = stripRichMarkers(rawText)
+      .replace(/\s*·\s*/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+    if (cleaned) {
+      addString(map, topicId, `${jsonPath}#whole`, cleaned);
+    }
   } else {
     addString(map, topicId, jsonPath, rawText);
   }

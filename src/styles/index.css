@@ -1170,6 +1170,33 @@
   color: rgb(var(--color-reader-muted));
   margin: 0;
 }
+/* Pill de frase sencera · §98 polit
+   Cloenda audible sota l'exemple partit: permet escoltar la frase
+   fluida amb prosòdia natural després dels fragments. Apareix només
+   quan l'exemple té pills `!!...!!` interiors. */
+.kf-beat-ex-whole {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px dashed rgb(var(--color-reader-rule));
+  max-width: 100%;
+}
+.kf-beat-ex-whole-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: var(--kf-meta);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgb(var(--color-reader-muted));
+  flex-shrink: 0;
+}
+.kf-beat-ex-whole .kf-speak {
+  font-family: 'Newsreader', serif;
+  font-size: var(--kf-body);
+  font-style: italic;
+  color: rgb(var(--color-reader-ink-2));
+}
 
 .kf-beat-pron { display: flex; flex-direction: column; gap: 16px; width: 100%; }
 .kf-beat-pron-huge {

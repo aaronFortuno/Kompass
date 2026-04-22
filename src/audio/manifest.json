@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-22T20:38:23.997Z",
-  "totalStrings": 676,
-  "totalChars": 9739,
+  "generatedAt": "2026-04-22T20:48:39.079Z",
+  "totalStrings": 679,
+  "totalChars": 9808,
   "entries": [
     {
       "hash": "00268fc866fb94c359219a52a1110a667583166d",
@@ -820,6 +820,16 @@
       ]
     },
     {
+      "hash": "1ce2b92378e0865ffdd79da63e0fd997f2c8ebe6",
+      "text": "Das ist in Bayern.",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[2].examples[3].de#whole"
+        }
+      ]
+    },
+    {
       "hash": "1ef7f79d3ca7fae053b3c4edc1b5bd2a514e717a",
       "text": "heißen",
       "sources": [
@@ -1002,6 +1012,16 @@
         {
           "topic": "A1a-5",
           "path": "steps[1].blocks[0].body#inline[7]"
+        }
+      ]
+    },
+    {
+      "hash": "225d3bf97c352fef745d29d21f6afe4e4be51cdb",
+      "text": "Mein Name ist Julia Schwaiger.",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[1].examples[0].de#whole"
         }
       ]
     },
@@ -4894,6 +4914,10 @@
         {
           "topic": "A1a-2",
           "path": "steps[10].pitfalls[0].good"
+        },
+        {
+          "topic": "A1a-2",
+          "path": "steps[2].examples[1].de#whole"
         }
       ]
     },
@@ -6627,6 +6651,10 @@
       "sources": [
         {
           "topic": "A1a-2",
+          "path": "steps[2].examples[2].de#whole"
+        },
+        {
+          "topic": "A1a-2",
           "path": "steps[3].comparison[0].de"
         }
       ]
@@ -7194,6 +7222,16 @@
         {
           "topic": "A1a-3",
           "path": "steps[4].blocks[0].body#inline[8]"
+        }
+      ]
+    },
+    {
+      "hash": "ec9280bab07bbf236c581b4101e70d4759ac12d0",
+      "text": "Ich bin 36 Jahre alt.",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[2].examples[0].de#whole"
         }
       ]
     },

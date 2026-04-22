@@ -600,6 +600,18 @@ function ExampleBeat({
   useEffect(() => { setDeDone(!typewriterActive); }, [typewriterActive, beat]);
   const hasPills = hasInlineSpeakable(beat.ex.de);
   const containerRef = useRef(null);
+  const fullAudioRef = useRef(null);
+  // Text net de la frase sencera (sense markers ni "·") per a la
+  // lectura final: primer l'usuari sent les peces, després la frase
+  // completa amb prosòdia natural. §98 polit. Només per exemples
+  // partits amb pills — els wrapper-only ja reprodueixen la frase.
+  const cleanFullText = useMemo(() => {
+    if (!hasPills || !beat.ex?.de) return null;
+    return stripRichMarkers(beat.ex.de)
+      .replace(/\s*·\s*/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }, [beat.ex?.de, hasPills]);
 
   /*
    * Integració typewriter + àudio (§98 polit):
@@ -667,9 +679,37 @@ function ExampleBeat({
             speed={speed + 4}
             onDone={() => {
               setDeDone(true);
-              // Si hi ha hagut audio integrat al typewriter, avisa al
-              // reader que pot començar el temporitzador de canvi.
-              if (audioAutoplay && hasPills) {
+              // Després dels pills, reproduïm la frase sencera com a
+              // cloenda — so natural i prosòdia correcta. Quan acaba,
+              // avisem al reader perquè comenci el temporitzador de
+              // canvi de beat. Si no hi ha pills, el timer s'activa
+              // directament al final del typewriter.
+              if (audioAutoplay && hasPills && fullAudioRef.current) {
+                window.setTimeout(() => {
+                  const pill = fullAudioRef.current?.querySelector('.kf-speak');
+                  if (!pill) {
+                    window.dispatchEvent(
+                      new CustomEvent('kompass:beat-audio-complete'),
+                    );
+                    return;
+                  }
+                  markNextSpeakableClickProgrammatic();
+                  pill.click();
+                  const onEnd = () => {
+                    window.removeEventListener('kompass:speakable-ended', onEnd);
+                    window.dispatchEvent(
+                      new CustomEvent('kompass:beat-audio-complete'),
+                    );
+                  };
+                  window.addEventListener('kompass:speakable-ended', onEnd);
+                  window.setTimeout(() => {
+                    window.removeEventListener('kompass:speakable-ended', onEnd);
+                    window.dispatchEvent(
+                      new CustomEvent('kompass:beat-audio-complete'),
+                    );
+                  }, 6000);
+                }, 400);
+              } else if (audioAutoplay && hasPills) {
                 window.dispatchEvent(
                   new CustomEvent('kompass:beat-audio-complete'),
                 );
@@ -685,6 +725,22 @@ function ExampleBeat({
         ) : null}
         {deDone && beat.ex.note ? (
           <p className="kf-beat-ex-note kf-fade-in">{parseInline(beat.ex.note)}</p>
+        ) : null}
+        {/* Pill de la frase sencera (§98 polit). Només apareix quan
+            l'exemple té pills i ja s'ha mostrat tot el text. Visual
+            discret: etiqueta mono "Sencera" + pill audible amb el text
+            net. Viu en un contenidor separat amb fullAudioRef perquè
+            l'orquestrador d'autoplay el pugui invocar després dels
+            pills individuals sense barrejar-lo al querySelectorAll
+            del contenidor principal. */}
+        {deDone && hasPills && cleanFullText ? (
+          <div
+            className="kf-beat-ex-whole kf-fade-in"
+            ref={fullAudioRef}
+          >
+            <span className="kf-beat-ex-whole-label">Sencera</span>
+            <SpeakableText text={cleanFullText}>{cleanFullText}</SpeakableText>
+          </div>
         ) : null}
       </div>
     </>
