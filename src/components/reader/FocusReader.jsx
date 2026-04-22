@@ -673,14 +673,31 @@ function beatLabel(beat, idx) {
 function stepLabel(step, i) {
   if (!step) return `Pas ${i + 1}`;
   if (step.heading) return step.heading;
-  // Steps d'exercici no tenen heading propi: agafem el títol humà de
-  // l'exercici. Si tampoc hi és, caiem a l'etiqueta genèrica de variant.
+  // Format ric · exercici amb exerciseId al mateix step
   if (step.kind === 'exercise' && step.exerciseId) {
     const ex = getExercise(step.exerciseId);
     if (ex?.title) return ex.title;
     return step.variant === 'assessment' ? 'Avaluació' : 'Comprovació';
   }
-  // Steps sense heading: transformem l'id kebab-case en quelcom llegible.
+  // Format llegat · intentem derivar un label humà:
+  //   1. Si conté un bloc exercise → títol humà de l'exercici.
+  //   2. Si conté un bloc explanation → primer encapçalament ### o ####.
+  //   3. Fallback final: id kebab-case → Title Case (última defensa).
+  if (Array.isArray(step.blocks)) {
+    const exBlock = step.blocks.find((b) => b?.type === 'exercise');
+    if (exBlock?.exerciseId) {
+      const ex = getExercise(exBlock.exerciseId);
+      if (ex?.title) return ex.title;
+      return exBlock.variant === 'assessment' ? 'Avaluació' : 'Comprovació';
+    }
+    const explBlock = step.blocks.find(
+      (b) => b?.type === 'explanation' && typeof b.body === 'string',
+    );
+    if (explBlock) {
+      const m = /^#{3,4}\s+(.+)$/m.exec(explBlock.body);
+      if (m) return m[1].replace(/\*\*|==|_|`/g, '').trim();
+    }
+  }
   if (step.id) {
     return step.id
       .split('-')

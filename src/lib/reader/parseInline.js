@@ -66,15 +66,24 @@ export function visibleLength(tokens) {
 }
 
 function renderToken(tok, content, key) {
+  // `code` es tracta com a literal: dins seu no s'interpreten altres
+  // operadors (convenció monospace — `_wohn_` dins backticks és literal).
+  if (tok.type === 'code') {
+    return createElement('code', { key }, content);
+  }
+  // Per a la resta, parsem recursivament perquè els anidaments es
+  // renderitzin bé. Exemples pràctics:
+  //   _wohn**en**_  → italic amb 'en' bold+italic.
+  //   **_wohn-_**   → bold amb 'wohn-' italic+bold.
+  //   ==_data_==    → highlight amb contingut italic.
+  const children = parseInline(content);
   switch (tok.type) {
     case 'strong':
-      return createElement('strong', { key }, content);
+      return createElement('strong', { key }, children);
     case 'em':
-      return createElement('em', { key }, content);
+      return createElement('em', { key }, children);
     case 'mark':
-      return createElement('mark', { key, className: 'k-mark' }, content);
-    case 'code':
-      return createElement('code', { key }, content);
+      return createElement('mark', { key, className: 'k-mark' }, children);
     default:
       return content;
   }
