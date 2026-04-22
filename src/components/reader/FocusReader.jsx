@@ -1272,6 +1272,25 @@ export function FocusReader({ topic }) {
     return () => window.removeEventListener('keydown', onKey, true);
   }, [closeReader, goBeat, goStep, goBlock, skipOrAdvance, drawerOpen, splashVisible, settings.autoPlay]);
 
+  // Tap/clic a l'àrea de contingut (fora de botons i pills interactives):
+  // acaba el typewriter del beat actual i pausa l'autoplay. Un gest
+  // natural per "deixem de llegir en cadena".
+  const onContentClick = useCallback(
+    (e) => {
+      if (splashVisible || drawerOpen) return;
+      const el = e.target;
+      if (!el || typeof el.closest !== 'function') return;
+      // Respecta clics a elements interactius: botons, inputs, selects,
+      // enllaços, pills speakable, i qualsevol altre marcador.
+      if (el.closest('button, a, input, select, textarea, .kf-speak, .kf-step, .kf-seg, .kf-rex-dot, .kf-rex-choice, .kf-sidebar')) {
+        return;
+      }
+      setFastMode(true);
+      if (settings.autoPlay) setAutoPlayPaused(true);
+    },
+    [splashVisible, drawerOpen, settings.autoPlay],
+  );
+
   // Navegació amb scroll del ratolí / trackpad. Cada scroll amunt/avall
   // equival a prémer ← / → (beat prev/next). Throttled per evitar que
   // un swipe de trackpad dispari 10 beats de cop.
@@ -1423,7 +1442,11 @@ export function FocusReader({ topic }) {
       </div>
 
       {/* BODY */}
-      <div className="kf-body" data-mode={isFullMode ? 'full' : 'peek'}>
+      <div
+        className="kf-body"
+        data-mode={isFullMode ? 'full' : 'peek'}
+        onClick={onContentClick}
+      >
         <Backdrop topic={topic} />
 
         {isFullMode ? (

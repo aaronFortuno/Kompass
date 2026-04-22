@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 
 /*
  * useSpeak · Fase 1 Web Speech API · §92
@@ -51,16 +51,27 @@ export function useSpeak() {
     [voices],
   );
 
+  // Detecta si hi ha una veu alemanya real disponible. Si no n'hi ha,
+  // val més no reproduir res que reproduir amb una veu d'un altre idioma
+  // que sintetitza text alemany amb la seva fonètica (p. ex. Chrome amb
+  // locale català pronuncia l'alemany com si fos català — ridícul).
+  const hasGermanVoice = useMemo(
+    () => Boolean(pickVoice('de-DE')),
+    [pickVoice],
+  );
+
   const speak = useCallback(
     (text, lang = 'de-DE', opts = {}) => {
       if (!isSupported || !text) return;
+      const voice = pickVoice(lang);
+      // Guarda estricta: sense veu alemanya, no reproduïm. Evita la
+      // "veu catalana" llegint alemany.
+      if (!voice) return;
       const syn = window.speechSynthesis;
-      // Talla qualsevol reproducció en curs abans d'iniciar-ne una nova.
       syn.cancel();
       const u = new SpeechSynthesisUtterance(text);
       u.lang = lang;
-      const voice = pickVoice(lang);
-      if (voice) u.voice = voice;
+      u.voice = voice;
       u.rate = opts.rate ?? 0.95;
       u.pitch = opts.pitch ?? 1.0;
       u.volume = opts.volume ?? 1.0;
@@ -73,5 +84,6 @@ export function useSpeak() {
     speak,
     isReady: voices.length > 0,
     isSupported,
+    hasGermanVoice,
   };
 }

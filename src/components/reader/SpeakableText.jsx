@@ -18,10 +18,14 @@ import { parseInline } from '@/lib/reader/parseInline.js';
  * (**, ==, _, `) continuïn renderitzant-se correctament dins del pill.
  */
 export function SpeakableText({ text, as: Tag = 'span', className }) {
-  const { speak, isSupported } = useSpeak();
+  const { speak, isSupported, hasGermanVoice } = useSpeak();
   const [active, setActive] = useState(false);
 
-  if (!isSupported) {
+  // Si no hi ha Web Speech API, o no hi ha veu alemanya disponible al
+  // sistema, renderitzem com a text pla — millor cap pill interactiva
+  // que una pill que reproduiria alemany amb fonètica errònia (p. ex.
+  // veu catalana llegint "Ich heiße Marc").
+  if (!isSupported || !hasGermanVoice) {
     return <Tag className={className}>{parseInline(text)}</Tag>;
   }
 
