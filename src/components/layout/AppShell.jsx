@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import { Compass } from 'lucide-react';
 import { Header } from '@/components/layout/Header.jsx';
 import { RouteTransition } from '@/components/layout/RouteTransition.jsx';
+import { AboutModal } from '@/components/layout/AboutModal.jsx';
 import { useT } from '@/i18n';
 import pkg from '../../../package.json';
 
@@ -18,6 +20,7 @@ const APP_VERSION = pkg.version ?? '0.0.0';
 
 export function AppShell() {
   const { t } = useT();
+  const [aboutOpen, setAboutOpen] = useState(false);
 
   return (
     <div className="min-h-screen flex flex-col bg-reader-paper text-reader-ink">
@@ -51,15 +54,34 @@ export function AppShell() {
             </span>
           </Link>
 
-          {/* Dreta: versió visible */}
-          <span
-            className="font-mono text-[11px] uppercase tracking-[0.16em] text-reader-ink-2"
-            aria-label={`${t('footer.versionLabel')} ${APP_VERSION}`}
-          >
-            v{APP_VERSION}
-          </span>
+          {/* Dreta: "Qui sóc" + versió */}
+          <div className="flex items-center gap-4">
+            <button
+              type="button"
+              onClick={() => setAboutOpen(true)}
+              className={[
+                'font-mono text-[11px] uppercase tracking-[0.16em]',
+                'text-reader-ink-2 hover:text-reader-ink',
+                'transition-colors duration-fast ease-standard',
+                'border-b border-transparent hover:border-reader-ink-2',
+                'pb-0.5',
+              ].join(' ')}
+              aria-haspopup="dialog"
+              aria-expanded={aboutOpen}
+            >
+              Qui sóc
+            </button>
+            <span
+              className="font-mono text-[11px] uppercase tracking-[0.16em] text-reader-ink-2"
+              aria-label={`${t('footer.versionLabel')} ${APP_VERSION}`}
+            >
+              v{APP_VERSION}
+            </span>
+          </div>
         </div>
       </footer>
+
+      <AboutModal open={aboutOpen} onClose={() => setAboutOpen(false)} />
     </div>
   );
 }
