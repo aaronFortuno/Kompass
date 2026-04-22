@@ -15,20 +15,27 @@
     "kicker": "Alemán A1 · A1a + A1b",
     "welcome": "Kompass",
     "lead": "Aprende alemán con calma, sin prisas, a ritmo editorial.",
-    "intro": "Un viaje lento por las formas básicas de la lengua: los pronombres, los verbos, los casos, el orden de las palabras. Cada lección dividida en fragmentos cortos — uno por pantalla — para que puedas leer con atención. Tu progreso vive en el navegador; no hace falta inicio de sesión ni cuenta.",
     "ctaStart": "Empezar con la bienvenida",
-    "ctaSyllabus": "Ver todo el temario",
-    "howTitle": "Cómo funciona",
-    "howBeatTitle": "Fragmentos cortos",
-    "howBeatText": "Cada lección se presenta fragmento a fragmento, una idea a la vez. Sin bloques largos de texto.",
-    "howExerciseTitle": "Ejercicios intercalados",
-    "howExerciseText": "Cada bloque conceptual se cierra con una comprobación corta. Feedback inmediato, pregunta a pregunta.",
-    "howOfflineTitle": "Todo local",
-    "howOfflineText": "Sin servidores ni registros. Tu progreso vive en el navegador, exportable a un archivo cuando quieras.",
-    "statsTitle": "El curso",
+    "ctaSyllabus": "Todo el temario",
+    "ctaContinueKicker": "Continúa donde lo dejaste",
+    "readerKicker": "El reader",
+    "readerTitle": "Una idea en pantalla, a ritmo de papel.",
+    "readerBody": "Cada lección se abre en un reader editorial inmersivo: un solo fragmento a la vez, tipografía serif, pills de audio para escuchar cada ejemplo alemán. Haz clic en cualquier palabra destacada de la derecha para oírla.",
+    "teaserAria": "Demostración del Focus Reader",
+    "teaserKicker": "Willkommen · A1a",
+    "pillarsTitle": "Qué hace Kompass",
+    "pillarReadTitle": "Lectura pausada",
+    "pillarReadText": "El contenido se presenta fragmento a fragmento, una idea por pantalla. Sin muros de texto.",
+    "pillarAudioTitle": "Audio nativo",
+    "pillarAudioText": "Cada ejemplo alemán tiene pronunciación grabada. Escúchala con un clic, tantas veces como quieras.",
+    "pillarFreeTitle": "A tu aire",
+    "pillarFreeText": "Sigue el temario de principio a fin o salta al tema que te convenga. No hay orden obligatorio.",
+    "pillarLocalTitle": "Todo local",
+    "pillarLocalText": "Sin servidor ni cuenta. El progreso vive en el navegador y lo puedes exportar a un archivo.",
+    "footerNavAria": "Navegación de la página de inicio",
     "statsLessons": "{count} lecciones",
     "statsExercises": "{count} ejercicios",
-    "statsHours": "~{count} horas"
+    "statsHours": "~{count} h"
   },
   "placeholder": {
     "title": "Página en construcción",
@@ -144,15 +151,51 @@
     "closeMenu": "Cerrar el menú"
   },
   "progress": {
+    "kicker": "Tu recorrido",
     "title": "Progreso",
-    "intro": "Tu progreso vive en el navegador, vinculado a este dispositivo. Desde aquí puedes exportarlo, importar uno guardado o empezar de cero.",
+    "intro": "Lo que has leído, lo que has resuelto y lo que te queda por repasar. Todo el registro vive en el navegador — no sale de aquí.",
+    "empty": {
+      "title": "Aún no has empezado",
+      "body": "Cuando abras el primer tema, aquí aparecerán los temas que llevas entre manos, los que vas dominando y los que quizás conviene repasar. De momento, el cuaderno está en blanco.",
+      "cta": "Abrir el temario"
+    },
     "summary": {
       "title": "Resumen",
-      "topicsStarted": "Temas iniciados",
+      "topicsStarted": "Temas empezados",
       "topicsOutOf": "de {total}",
       "exercisesCompleted": "Ejercicios resueltos",
+      "exercisesConsolidated": "Ejercicios consolidados",
+      "consolidatedHint": "Resueltos correctamente en el último intento.",
+      "lastActivity": "Última sesión",
       "lastUpdated": "Última actividad",
+      "today": "Hoy",
+      "yesterday": "Ayer",
+      "daysAgo": "Hace {count} días",
+      "journey": "Desde que empezaste",
+      "journeyToday": "Hoy mismo",
+      "journeyDays": "{count} días",
+      "startedOn": "Abriste el cuaderno el {date}.",
       "never": "Aún no hay actividad."
+    },
+    "byLevel": {
+      "title": "Por nivel",
+      "fraction": "{completed} / {total} completados",
+      "startedLine": "Has empezado {started} de {total} temas."
+    },
+    "inProgress": {
+      "title": "Entre manos",
+      "intro": "Temas en los que te quedaste a medias. Retómalos justo donde los dejaste.",
+      "metaExercises": "{completed} / {total} ejercicios consolidados",
+      "metaSteps": "{visited} / {total} fragmentos leídos"
+    },
+    "review": {
+      "title": "Para volver",
+      "intro": "Temas con ejercicios que últimamente han fallado. Volver con calma suele bastar.",
+      "meta": "{count} ejercicios pendientes de consolidar"
+    },
+    "actions": {
+      "title": "Copias y reinicio",
+      "intro": "El progreso vive solo en este navegador. Si cambias de dispositivo o quieres un respaldo, expórtalo en un archivo. Puedes volver a cargarlo más tarde."
     },
     "export": {
       "title": "Exportar progreso",
