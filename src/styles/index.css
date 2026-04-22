@@ -222,6 +222,45 @@
   .animate-step-enter-back {
     animation: step-enter-back var(--duration-base) var(--ease-standard);
   }
+
+  /*
+   * Fade-in d'entrada de ruta · wrapper <RouteTransition>.
+   * Remuntat a cada canvi de pathname (key={pathname}) perquè
+   * l'animació es dispari de nou. Opacity + translateY mínim.
+   */
+  @keyframes route-fade-in-kf {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .route-fade-in {
+    animation: route-fade-in-kf var(--duration-base) var(--ease-enter) both;
+  }
+
+  /*
+   * Stagger de files a ProgressPage · apareix quan el <details> s'obre.
+   * Opacity + translateY subtle; cada fila calcula el delay inline via
+   * style (animationDelay) segons el seu índex. Duració fixada via
+   * token de motion.
+   */
+  @keyframes progress-row-reveal-kf {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .progress-row-reveal {
+    animation: progress-row-reveal-kf var(--duration-base) var(--ease-enter) both;
+  }
 }
 
 /* Respecta prefers-reduced-motion · §17.6 regla 3 */

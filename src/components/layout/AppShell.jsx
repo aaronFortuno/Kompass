@@ -1,6 +1,7 @@
 import { Link, Outlet } from 'react-router-dom';
 import { Compass } from 'lucide-react';
 import { Header } from '@/components/layout/Header.jsx';
+import { RouteTransition } from '@/components/layout/RouteTransition.jsx';
 import { useT } from '@/i18n';
 import pkg from '../../../package.json';
 
@@ -26,7 +27,9 @@ export function AppShell() {
         id="main"
         className="flex-1 page-gutter max-w-content-list mx-auto w-full py-6 sm:py-10"
       >
-        <Outlet />
+        <RouteTransition>
+          <Outlet />
+        </RouteTransition>
       </main>
 
       <footer className="border-t border-reader-rule mt-10">

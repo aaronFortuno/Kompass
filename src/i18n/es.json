@@ -46,9 +46,15 @@
     "backHome": "Volver al inicio"
   },
   "topics": {
+    "kicker": "Temario",
     "title": "Temas",
     "intro": "Todos los temas disponibles agrupados por nivel. Escoge uno para empezar.",
     "empty": "Aún no hay temas publicados.",
+    "emptyForSearch": "Ningún tema coincide con esta búsqueda.",
+    "searchLabel": "Busca un tema",
+    "searchPlaceholder": "Busca por título o id…",
+    "searchClear": "Borra la búsqueda",
+    "levelCount": "{shown} / {total}",
     "progress": {
       "progressLabel": "{completed} / {total} ejercicios",
       "progressPct": "{pct}%",

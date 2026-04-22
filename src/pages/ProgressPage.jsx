@@ -257,8 +257,11 @@ function StatusBadge({ status, t }) {
   );
 }
 
-/* Fila densa (navegador): id · títol · estat · barra · percentatge/check. */
-function BrowseRow({ state, t }) {
+/* Fila densa (navegador): id · títol · estat · barra · percentatge/check.
+ * `revealIndex` dispara un stagger subtle a l'aparició de la fila (quan el
+ * <details> s'obre, tipus reader-row-reveal). Capem el delay perquè nivells
+ * amb moltes files (A1b = 42) no allarguin la revelació més enllà de ~1.2s. */
+function BrowseRow({ state, t, revealIndex = 0 }) {
   const { topic, status, totalEx, completedEx, pct, allDone, failedEx } = state;
   const hasExercises = totalEx > 0;
   let meta = null;
@@ -272,8 +275,12 @@ function BrowseRow({ state, t }) {
       total: totalEx,
     });
   }
+  const delayMs = revealIndex < 30 ? revealIndex * 40 : 0;
   return (
-    <li>
+    <li
+      className="progress-row-reveal"
+      style={{ animationDelay: `${delayMs}ms` }}
+    >
       <Link
         to={`/temari/${topic.id}`}
         aria-label={t('progress.browse.openTopic', { id: topic.id })}
@@ -372,8 +379,8 @@ function LevelSection({ levelKey, states, t, defaultOpen }) {
           </p>
         ) : (
           <ul className="divide-y divide-reader-rule border-t border-reader-rule">
-            {states.filter((s) => s.__shown).map((state) => (
-              <BrowseRow key={state.topic.id} state={state} t={t} />
+            {states.filter((s) => s.__shown).map((state, i) => (
+              <BrowseRow key={state.topic.id} state={state} t={t} revealIndex={i} />
             ))}
           </ul>
         )}
@@ -407,7 +414,7 @@ function FilterChip({ label, count, active, onClick }) {
 }
 
 /* Fila compacta per al mini-league "Entre les mans". */
-function MiniLeagueRow({ state, t }) {
+function MiniLeagueRow({ state, t, revealIndex = 0 }) {
   const { topic, totalEx, completedEx, pct, totalSteps, visitedCount } = state;
   const hasExercises = totalEx > 0;
   const meta = hasExercises
@@ -419,8 +426,12 @@ function MiniLeagueRow({ state, t }) {
         visited: visitedCount,
         total: totalSteps,
       });
+  const delayMs = revealIndex * 60;
   return (
-    <li>
+    <li
+      className="progress-row-reveal"
+      style={{ animationDelay: `${delayMs}ms` }}
+    >
       <Link
         to={`/temari/${topic.id}`}
         className={[
@@ -822,8 +833,8 @@ export function ProgressPage() {
             {t('progress.inProgress.intro')}
           </p>
           <ul className="divide-y divide-reader-rule border-t border-b border-reader-rule">
-            {inProgressLeague.map((state) => (
-              <MiniLeagueRow key={state.topic.id} state={state} t={t} />
+            {inProgressLeague.map((state, i) => (
+              <MiniLeagueRow key={state.topic.id} state={state} t={t} revealIndex={i} />
             ))}
           </ul>
         </section>

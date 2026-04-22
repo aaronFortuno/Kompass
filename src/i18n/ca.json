@@ -46,9 +46,15 @@
     "backHome": "Torna a l'inici"
   },
   "topics": {
+    "kicker": "Temari",
     "title": "Temes",
     "intro": "Tots els temes disponibles agrupats per nivell. Tria'n un per començar.",
     "empty": "Encara no hi ha temes publicats.",
+    "emptyForSearch": "Cap tema coincideix amb aquesta cerca.",
+    "searchLabel": "Cerca un tema",
+    "searchPlaceholder": "Cerca per títol o id…",
+    "searchClear": "Esborra la cerca",
+    "levelCount": "{shown} / {total}",
     "progress": {
       "progressLabel": "{completed} / {total} exercicis",
       "progressPct": "{pct}%",
