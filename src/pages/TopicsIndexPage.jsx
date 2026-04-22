@@ -137,8 +137,8 @@ function TopicRow({ topic, progress, t, isFocus, focusRef, revealIndex }) {
       ref={isFocus ? focusRef : null}
       to={`/temari/${topic.id}`}
       className={[
-        'group flex items-baseline gap-2.5',
-        'py-1.5 px-2 -mx-2',
+        'group flex items-baseline gap-3',
+        'py-2.5 px-2 -mx-2',
         'hover:bg-reader-paper-2',
         'transition-colors duration-fast ease-standard',
         'progress-row-reveal',
@@ -146,16 +146,16 @@ function TopicRow({ topic, progress, t, isFocus, focusRef, revealIndex }) {
       ].join(' ')}
       style={{ animationDelay: `${delayMs}ms` }}
     >
-      <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-reader-muted w-12 flex-shrink-0">
+      <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-reader-muted w-7 flex-shrink-0 text-right">
         {topic.id.replace(/^A1[ab]-/, '')}
       </span>
-      <span className="flex-1 min-w-0 font-serif text-sm text-reader-ink tracking-tight truncate group-hover:text-reader-ink">
+      <span className="flex-1 min-w-0 font-serif text-base text-reader-ink tracking-tight truncate">
         {topic.shortTitle}
       </span>
       <span className="flex-shrink-0">
         {hasExercises ? (
           allDone ? (
-            <Check size={13} className="text-reader-ok" aria-hidden="true" />
+            <Check size={14} className="text-reader-ok" aria-hidden="true" />
           ) : pct > 0 ? (
             <span className="font-mono text-[10px] text-reader-muted">
               {pct}%
@@ -171,9 +171,10 @@ function TopicRow({ topic, progress, t, isFocus, focusRef, revealIndex }) {
   );
 }
 
-/* Card temàtica: títol curt + llista de temes. Viu dins d'un grid de
- * 3 columnes a lg. Border discret, paper-2 de fons. */
-function GroupCard({
+/* Bloc temàtic editorial: títol curt (mono kicker) + border-top + llista
+ * de temes amb divisions horitzontals. Sense card box — estil obert,
+ * coherent amb els blocs de /progres. Viu dins d'un grid de 3 col. */
+function GroupBlock({
   group,
   topics,
   exercisesState,
@@ -183,22 +184,16 @@ function GroupCard({
   startIndex,
 }) {
   return (
-    <div
-      className={[
-        'bg-reader-paper-2 border border-reader-rule',
-        'p-4',
-        'flex flex-col',
-      ].join(' ')}
-    >
-      <h3 className="font-mono text-[10px] uppercase tracking-[0.2em] text-reader-muted mb-3">
+    <div className="flex flex-col">
+      <h3 className="font-mono text-[11px] uppercase tracking-[0.22em] text-reader-muted pt-4 pb-3 border-t-2 border-reader-rule">
         {group.title}
       </h3>
-      <ul className="flex flex-col -mx-2">
+      <ul className="flex flex-col">
         {topics.map((topic, i) => {
           const progress = computeTopicProgress(topic, exercisesState);
           const isFocus = topic.id === focusId;
           return (
-            <li key={topic.id}>
+            <li key={topic.id} className="border-b border-reader-rule last:border-b-0">
               <TopicRow
                 topic={topic}
                 progress={progress}
@@ -271,9 +266,10 @@ function LevelSection({
             {t('topics.emptyForSearch')}
           </p>
         ) : (
-          // Temes agrupats temàticament. 3 columnes a desktop, 2 a tablet,
-          // 1 a mòbil. Cada card conté els seus temes compactes.
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          // Temes agrupats temàticament en blocs editorials (sense
+          // card box). 3 columnes a desktop amb prou aire; 2 a tablet,
+          // 1 a mòbil. Gap generós per separar visualment els blocs.
+          <div className="grid gap-x-10 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
             {(() => {
               const groups = groupTopics(levelKey, topics);
               let cum = 0;
@@ -281,7 +277,7 @@ function LevelSection({
                 const startIndex = cum;
                 cum += entry.topics.length;
                 return (
-                  <GroupCard
+                  <GroupBlock
                     key={entry.group.id}
                     group={entry.group}
                     topics={entry.topics}
@@ -424,56 +420,65 @@ export function TopicsIndexPage() {
 
   return (
     <div className="section-gap max-w-content-list">
-      {/* Capçalera: kicker "Temes" a l'esquerra + cerca a la dreta.
-          No h1 "Temari" (era redundant amb el kicker). */}
-      <header className="mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-        <p className="font-mono text-xs uppercase tracking-[0.24em] text-reader-ink">
+      {/* Capçalera editorial com a ProgressPage: kicker mono + h1 serif
+          + subtítol italic. La cerca s'alinea a la dreta del h1 per
+          estalviar una fila i mantenir l'estructura ordenada. */}
+      <header className="mb-8">
+        <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-reader-muted">
           {t('topics.kicker')}
         </p>
-        {levelKeys.length > 0 && (
-          <div className="relative flex items-center w-full sm:w-auto sm:min-w-[320px]">
-            <Search
-              size={14}
-              className="absolute left-3 text-reader-muted pointer-events-none"
-              aria-hidden="true"
-            />
-            <label htmlFor="topics-search" className="sr-only">
-              {t('topics.searchLabel')}
-            </label>
-            <input
-              id="topics-search"
-              type="search"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder={t('topics.searchPlaceholder')}
-              autoComplete="off"
-              spellCheck={false}
-              className={[
-                'w-full',
-                'pl-9 pr-9 py-2',
-                'bg-transparent border border-reader-rule rounded-sm',
-                'font-serif text-sm text-reader-ink',
-                'placeholder:text-reader-muted placeholder:italic',
-                'focus:outline-none focus:border-reader-ink',
-                'transition-colors duration-fast ease-standard',
-              ].join(' ')}
-            />
-            {query && (
-              <button
-                type="button"
-                onClick={() => setQuery('')}
-                aria-label={t('topics.searchClear')}
+        <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <h1 className="font-serif font-medium text-4xl sm:text-5xl tracking-tight text-reader-ink">
+            {t('topics.title')}
+          </h1>
+          {levelKeys.length > 0 && (
+            <div className="relative flex items-center w-full sm:w-auto sm:min-w-[320px]">
+              <Search
+                size={14}
+                className="absolute left-3 text-reader-muted pointer-events-none"
+                aria-hidden="true"
+              />
+              <label htmlFor="topics-search" className="sr-only">
+                {t('topics.searchLabel')}
+              </label>
+              <input
+                id="topics-search"
+                type="search"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder={t('topics.searchPlaceholder')}
+                autoComplete="off"
+                spellCheck={false}
                 className={[
-                  'absolute right-2 p-1',
-                  'text-reader-muted hover:text-reader-ink',
+                  'w-full',
+                  'pl-9 pr-9 py-2',
+                  'bg-transparent border border-reader-rule rounded-sm',
+                  'font-serif text-sm text-reader-ink',
+                  'placeholder:text-reader-muted placeholder:italic',
+                  'focus:outline-none focus:border-reader-ink',
                   'transition-colors duration-fast ease-standard',
                 ].join(' ')}
-              >
-                <X size={14} aria-hidden="true" />
-              </button>
-            )}
-          </div>
-        )}
+              />
+              {query && (
+                <button
+                  type="button"
+                  onClick={() => setQuery('')}
+                  aria-label={t('topics.searchClear')}
+                  className={[
+                    'absolute right-2 p-1',
+                    'text-reader-muted hover:text-reader-ink',
+                    'transition-colors duration-fast ease-standard',
+                  ].join(' ')}
+                >
+                  <X size={14} aria-hidden="true" />
+                </button>
+              )}
+            </div>
+          )}
+        </div>
+        <p className="mt-4 font-serif italic text-lg text-reader-ink-2 max-w-prose">
+          {t('topics.intro')}
+        </p>
       </header>
 
       {levelKeys.length === 0 && (
