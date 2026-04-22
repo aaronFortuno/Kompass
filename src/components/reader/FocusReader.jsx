@@ -1292,13 +1292,17 @@ export function FocusReader({ topic }) {
   // Tap/clic a l'àrea de contingut (fora de botons i pills interactives):
   // acaba el typewriter del beat actual i pausa l'autoplay. Un gest
   // natural per "deixem de llegir en cadena".
+  // A mobile (touch), el onTouchEnd gestiona zones; aquest handler
+  // s'aplica només als clics de ratolí reals. Per evitar doble
+  // processament dels clicks "synthetic" post-tap, ignorem si el darrer
+  // touchEnd és més recent que 400 ms.
+  const lastTouchRef = useRef(0);
   const onContentClick = useCallback(
     (e) => {
       if (splashVisible || drawerOpen) return;
+      if (Date.now() - lastTouchRef.current < 400) return;
       const el = e.target;
       if (!el || typeof el.closest !== 'function') return;
-      // Respecta clics a elements interactius: botons, inputs, selects,
-      // enllaços, pills speakable, i qualsevol altre marcador.
       if (el.closest('button, a, input, select, textarea, .kf-speak, .kf-step, .kf-seg, .kf-rex-dot, .kf-rex-choice, .kf-sidebar')) {
         return;
       }
@@ -1395,7 +1399,21 @@ export function FocusReader({ topic }) {
     settings.typewriter,
   ]);
 
-  // Swipe tàctil.
+  // Gest tàctil · §96
+  //
+  // Desambiguem entre dos gestos:
+  //   - Tap (dx, dy < 10 px, dt < 300 ms) → zones verticals:
+  //       top 33%   → goBeat(-1)
+  //       middle    → skip typewriter + pausa autoplay (equivalent al clic)
+  //       bottom 33% → goBeat(+1)
+  //   - Swipe horitzontal (|dx| > 50, dominant, dt < 800) → beat prev/next.
+  //
+  // S'aplica al .kf-body (no al .kf-root), perquè els taps a header/peu
+  // no han d'activar cap zona. En mode full, deixem el scroll natural.
+  //
+  // Després d'un tap processat, marquem lastTouchRef perquè el synthetic
+  // click post-tap que dispara el browser no es processi dues vegades
+  // a onContentClick.
   const touchRef = useRef({ x: 0, y: 0, t: 0, active: false });
   const onTouchStart = (e) => {
     if (e.touches.length !== 1) return;
@@ -1405,14 +1423,46 @@ export function FocusReader({ topic }) {
   const onTouchEnd = (e) => {
     if (!touchRef.current.active) return;
     touchRef.current.active = false;
+    if (splashVisible || drawerOpen) return;
     const t0 = e.changedTouches[0];
     const dx = t0.clientX - touchRef.current.x;
     const dy = t0.clientY - touchRef.current.y;
     const dt = Date.now() - touchRef.current.t;
-    if (Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy) * 1.2 || dt > 800) return;
     const tag = document.activeElement?.tagName?.toLowerCase();
     if (['input', 'textarea', 'select'].includes(tag)) return;
+
+    const isTap = Math.abs(dx) < 10 && Math.abs(dy) < 10 && dt < 300;
+    if (isTap) {
+      // En mode full, el scroll natural del contingut té prioritat; no
+      // apliquem zones perquè l'usuari podria estar intentant desplaçar-se.
+      if (isFullMode) return;
+      // Protegim els mateixos elements interactius que onContentClick
+      // (botons, pills de àudio, sidebar, dots d'exercici…).
+      const el = e.target;
+      if (el && typeof el.closest === 'function') {
+        if (el.closest('button, a, input, select, textarea, .kf-speak, .kf-step, .kf-seg, .kf-rex-dot, .kf-rex-choice, .kf-sidebar')) {
+          return;
+        }
+      }
+      const vh = window.innerHeight || 0;
+      const y = t0.clientY;
+      if (y < vh * 0.33) {
+        goBeat(-1);
+      } else if (y > vh * 0.67) {
+        goBeat(1);
+      } else {
+        // Zona central: equivalent al clic al contingut.
+        setFastMode(true);
+        if (settings.autoPlay) setAutoPlayPaused(true);
+      }
+      lastTouchRef.current = Date.now();
+      return;
+    }
+
+    // Swipe horitzontal.
+    if (Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy) * 1.2 || dt > 800) return;
     goBeat(dx < 0 ? 1 : -1);
+    lastTouchRef.current = Date.now();
   };
 
   const reduced = prefersReducedMotion();
@@ -1421,8 +1471,6 @@ export function FocusReader({ topic }) {
     <div
       className="kf-root"
       ref={rootRef}
-      onTouchStart={onTouchStart}
-      onTouchEnd={onTouchEnd}
       onWheel={onWheel}
     >
       {/* HEADER editorial — 3 columnes: left (back+logo) · center (títol) · right (progress) */}
@@ -1469,6 +1517,8 @@ export function FocusReader({ topic }) {
         className="kf-body"
         data-mode={isFullMode ? 'full' : 'peek'}
         onClick={onContentClick}
+        onTouchStart={onTouchStart}
+        onTouchEnd={onTouchEnd}
       >
         <Backdrop topic={topic} />
 
