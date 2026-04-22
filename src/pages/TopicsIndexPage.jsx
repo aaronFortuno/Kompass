@@ -7,26 +7,81 @@ import { useProgressStore } from '@/store/useProgressStore.js';
 import { computeTopicProgress } from '@/lib/topicProgress.js';
 
 /*
- * TopicsIndexPage · temari com a navegador d'un cop d'ull.
+ * TopicsIndexPage · temari com a navegador temàtic.
  *
- * Inspirat en ProgressPage v2 (chips + <details> per nivell) però
- * orientat a navegació pura: id + shortTitle + barra de progrés.
+ * Layout: dos nivells (A1a, A1b) com a seccions <details>. Dins de cada
+ * nivell, els temes s'agrupen en CARDS TEMÀTIQUES (p. ex. "Primeres
+ * frases", "Gèneres i articles"…) que es disposen en un grid de 3
+ * columnes a desktop. Cada card conté els seus temes com a files
+ * compactes amb id mono + shortTitle + barra de progrés.
+ *
+ * Objectiu: d'un cop d'ull poder veure l'estructura temàtica del nivell
+ * sense scroll infinit, amb la lògica narrativa del curs preservada.
  *
  * Decisions:
- *   - Seccions <details>/<summary> natives, un per nivell. Accessibilitat
- *     gratuïta i sense JS de col·lapse. S'obre per defecte només la secció
- *     que conté el "tema actual" (l'últim visitat no completat) o, si no
- *     n'hi ha, el primer nivell. Si la URL porta ?focus=<id>, s'obre la
- *     secció que conté aquest tema (prioritat sobre "actual").
- *   - Cada nivell mostra comptador "X / Y" al summary: X = visibles segons
- *     filtre de cerca, Y = total del nivell.
- *   - Graella 2 col·lumnes a lg+; cards fines amb id mono + shortTitle +
- *     barra de progrés. Al mòbil, 1 col·lumna.
- *   - Cerca: input de text a dalt que filtra per id o shortTitle. Cada
- *     secció mostra la quantitat filtrada; es col·lapsa automàticament
- *     quan el seu contingut buit si hi ha query.
- *   - A1a-0 està exclòs del temari regular (lliçó d'onboarding).
+ *   - Agrupacions definides per ranges d'id al fitxer (TOPIC_GROUPS).
+ *     Canviar l'agrupació = editar la constant; no cal tocar JSON.
+ *   - Títols dels grups en català, curts, editorials.
+ *   - Cerca: input al costat del kicker "Temes" (dreta), no al mig.
+ *   - h1 "Temari" suprimit per evitar redundància amb el kicker.
+ *   - A1a-0 està exclòs (onboarding, viu a la landing).
  */
+
+/*
+ * Agrupacions temàtiques per nivell. Range és [inicio, fi] inclusiu
+ * per id numèric (extret de "A1a-N"). Un tema pot quedar fora d'un
+ * grup i anar a un grup "Altres" automàtic (no hauria de passar amb
+ * el corpus actual, però defensiu).
+ */
+const TOPIC_GROUPS = {
+  A1a: [
+    { id: 'primers', title: 'Primeres frases', range: [1, 4] },
+    { id: 'generes', title: 'Gèneres, articles i possessius', range: [5, 9] },
+    { id: 'fonetica', title: 'Fonètica, plurals i declinació', range: [10, 14] },
+    { id: 'variants', title: 'Variants verbals i expressions', range: [15, 19] },
+    { id: 'temps', title: 'Temps i seqüències', range: [20, 24] },
+    { id: 'modals', title: 'Modals i casos bàsics', range: [25, 30] },
+    { id: 'compar', title: 'Comparatives i vocabulari útil', range: [31, 36] },
+  ],
+  A1b: [
+    { id: 'preposicions', title: 'Preposicions de lloc', range: [1, 4] },
+    { id: 'preferences', title: 'Preferències i emocions', range: [5, 9] },
+    { id: 'imperatiu', title: 'Imperatiu i modals II', range: [10, 16] },
+    { id: 'genitiu', title: 'Genitiu i Wechselpräp', range: [17, 23] },
+    { id: 'passat', title: 'Temps verbals del passat', range: [24, 30] },
+    { id: 'durada', title: 'Durada i dates', range: [31, 35] },
+    { id: 'datiu', title: 'Declinació i Datiu', range: [36, 41] },
+  ],
+};
+
+/* Extreu el número de la id d'un topic (A1a-12 → 12). */
+function topicNumber(topic) {
+  const m = /-([\d]+)$/.exec(topic.id || '');
+  return m ? parseInt(m[1], 10) : NaN;
+}
+
+/* Agrupa una llista de temes segons els TOPIC_GROUPS del nivell.
+ * Retorna [{ group, topics: [...] }, ...]. Els temes sense grup van a
+ * una entrada final "Altres" (no hauria de passar ara; defensiu). */
+function groupTopics(levelKey, topics) {
+  const groups = TOPIC_GROUPS[levelKey] || [];
+  const buckets = groups.map((g) => ({ group: g, topics: [] }));
+  const orphans = [];
+  for (const topic of topics) {
+    const n = topicNumber(topic);
+    if (Number.isNaN(n)) { orphans.push(topic); continue; }
+    const idx = groups.findIndex(
+      (g) => n >= g.range[0] && n <= g.range[1],
+    );
+    if (idx === -1) orphans.push(topic);
+    else buckets[idx].topics.push(topic);
+  }
+  const out = buckets.filter((b) => b.topics.length > 0);
+  if (orphans.length) {
+    out.push({ group: { id: 'altres', title: 'Altres' }, topics: orphans });
+  }
+  return out;
+}
 
 /* Troba el topic "actual" de l'usuari: visitat, no completat, amb
  * l'activitat més recent (via firstVisitedAt — no existeix lastVisitedAt
@@ -69,22 +124,21 @@ function topicMatchesQuery(topic, q) {
   );
 }
 
-/* Card densa d'un tema: id · shortTitle · barra de progrés. */
-function TopicCard({ topic, progress, t, isFocus, focusRef, revealIndex }) {
+/* Fila compacta d'un tema dins d'una card temàtica.
+ * id · shortTitle · indicador final (% o check). Sense barra.
+ * El fons mosquetejat al hover indica interactivitat; el pct es
+ * manté discret en mono a la dreta. */
+function TopicRow({ topic, progress, t, isFocus, focusRef, revealIndex }) {
   const { total, pct, allDone } = progress;
   const hasExercises = total > 0;
-  // Stagger de revel: cada card es revela amb un petit retard respecte
-  // la seva posició al grid. Limitem el delay màxim per no allargar la
-  // revelació del nivell sencer.
-  const delayMs = Math.min(revealIndex * 40, 600);
+  const delayMs = Math.min(revealIndex * 35, 500);
   return (
     <Link
       ref={isFocus ? focusRef : null}
       to={`/temari/${topic.id}`}
       className={[
-        'group flex items-baseline gap-3',
-        'py-3 px-3 -mx-3',
-        'border-b border-reader-rule',
+        'group flex items-baseline gap-2.5',
+        'py-1.5 px-2 -mx-2',
         'hover:bg-reader-paper-2',
         'transition-colors duration-fast ease-standard',
         'progress-row-reveal',
@@ -92,45 +146,72 @@ function TopicCard({ topic, progress, t, isFocus, focusRef, revealIndex }) {
       ].join(' ')}
       style={{ animationDelay: `${delayMs}ms` }}
     >
-      <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-reader-muted w-14 flex-shrink-0">
-        {topic.id}
+      <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-reader-muted w-12 flex-shrink-0">
+        {topic.id.replace(/^A1[ab]-/, '')}
       </span>
-      <span className="flex-1 min-w-0 font-serif text-base text-reader-ink tracking-tight truncate">
+      <span className="flex-1 min-w-0 font-serif text-sm text-reader-ink tracking-tight truncate group-hover:text-reader-ink">
         {topic.shortTitle}
       </span>
-      <span className="flex-shrink-0 w-24 sm:w-28 flex items-center gap-2">
+      <span className="flex-shrink-0">
         {hasExercises ? (
-          <>
-            <div
-              className="h-[2px] flex-1 bg-reader-rule overflow-hidden"
-              role="progressbar"
-              aria-valuemin={0}
-              aria-valuemax={100}
-              aria-valuenow={pct}
-            >
-              <div
-                className={[
-                  'h-full transition-[width] duration-base ease-standard',
-                  allDone ? 'bg-reader-ok' : 'bg-reader-ink',
-                ].join(' ')}
-                style={{ width: `${pct}%` }}
-              />
-            </div>
-            {allDone ? (
-              <Check size={14} className="text-reader-ok flex-shrink-0" aria-hidden="true" />
-            ) : (
-              <span className="font-mono text-[10px] text-reader-muted w-8 text-right flex-shrink-0">
-                {pct}%
-              </span>
-            )}
-          </>
+          allDone ? (
+            <Check size={13} className="text-reader-ok" aria-hidden="true" />
+          ) : pct > 0 ? (
+            <span className="font-mono text-[10px] text-reader-muted">
+              {pct}%
+            </span>
+          ) : (
+            <span className="font-mono text-[10px] text-reader-muted">·</span>
+          )
         ) : (
-          <span className="font-mono text-[10px] uppercase tracking-wider text-reader-muted">
-            {t('topics.progress.noExercises')}
-          </span>
+          <span className="font-mono text-[10px] text-reader-muted">—</span>
         )}
       </span>
     </Link>
+  );
+}
+
+/* Card temàtica: títol curt + llista de temes. Viu dins d'un grid de
+ * 3 columnes a lg. Border discret, paper-2 de fons. */
+function GroupCard({
+  group,
+  topics,
+  exercisesState,
+  t,
+  focusId,
+  focusRef,
+  startIndex,
+}) {
+  return (
+    <div
+      className={[
+        'bg-reader-paper-2 border border-reader-rule',
+        'p-4',
+        'flex flex-col',
+      ].join(' ')}
+    >
+      <h3 className="font-mono text-[10px] uppercase tracking-[0.2em] text-reader-muted mb-3">
+        {group.title}
+      </h3>
+      <ul className="flex flex-col -mx-2">
+        {topics.map((topic, i) => {
+          const progress = computeTopicProgress(topic, exercisesState);
+          const isFocus = topic.id === focusId;
+          return (
+            <li key={topic.id}>
+              <TopicRow
+                topic={topic}
+                progress={progress}
+                t={t}
+                isFocus={isFocus}
+                focusRef={focusRef}
+                revealIndex={startIndex + i}
+              />
+            </li>
+          );
+        })}
+      </ul>
+    </div>
   );
 }
 
@@ -184,30 +265,36 @@ function LevelSection({
         </span>
       </summary>
 
-      <div className="pb-4 pt-1">
+      <div className="pb-5 pt-3">
         {shownCount === 0 ? (
           <p className="font-serif italic text-sm text-reader-ink-2 px-2 py-4">
             {t('topics.emptyForSearch')}
           </p>
         ) : (
-          <ul className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 border-t border-reader-rule">
-            {topics.map((topic, i) => {
-              const progress = computeTopicProgress(topic, exercisesState);
-              const isFocus = topic.id === focusId;
-              return (
-                <li key={topic.id} className="contents">
-                  <TopicCard
-                    topic={topic}
-                    progress={progress}
+          // Temes agrupats temàticament. 3 columnes a desktop, 2 a tablet,
+          // 1 a mòbil. Cada card conté els seus temes compactes.
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {(() => {
+              const groups = groupTopics(levelKey, topics);
+              let cum = 0;
+              return groups.map((entry) => {
+                const startIndex = cum;
+                cum += entry.topics.length;
+                return (
+                  <GroupCard
+                    key={entry.group.id}
+                    group={entry.group}
+                    topics={entry.topics}
+                    exercisesState={exercisesState}
                     t={t}
-                    isFocus={isFocus}
+                    focusId={focusId}
                     focusRef={focusRef}
-                    revealIndex={i}
+                    startIndex={startIndex}
                   />
-                </li>
-              );
-            })}
-          </ul>
+                );
+              });
+            })()}
+          </div>
         )}
       </div>
     </details>
@@ -337,30 +424,22 @@ export function TopicsIndexPage() {
 
   return (
     <div className="section-gap max-w-content-list">
-      <header className="space-y-3 mb-8">
-        <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-reader-muted">
+      {/* Capçalera: kicker "Temes" a l'esquerra + cerca a la dreta.
+          No h1 "Temari" (era redundant amb el kicker). */}
+      <header className="mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <p className="font-mono text-xs uppercase tracking-[0.24em] text-reader-ink">
           {t('topics.kicker')}
         </p>
-        <h1 className="font-serif font-medium text-4xl sm:text-5xl tracking-tight text-reader-ink">
-          {t('topics.title')}
-        </h1>
-        <p className="font-serif italic text-lg text-reader-ink-2 max-w-prose">
-          {t('topics.intro')}
-        </p>
-      </header>
-
-      {/* Cerca — filtra per id o shortTitle. */}
-      {levelKeys.length > 0 && (
-        <div className="mb-6">
-          <label htmlFor="topics-search" className="sr-only">
-            {t('topics.searchLabel')}
-          </label>
-          <div className="relative flex items-center">
+        {levelKeys.length > 0 && (
+          <div className="relative flex items-center w-full sm:w-auto sm:min-w-[320px]">
             <Search
               size={14}
               className="absolute left-3 text-reader-muted pointer-events-none"
               aria-hidden="true"
             />
+            <label htmlFor="topics-search" className="sr-only">
+              {t('topics.searchLabel')}
+            </label>
             <input
               id="topics-search"
               type="search"
@@ -370,7 +449,7 @@ export function TopicsIndexPage() {
               autoComplete="off"
               spellCheck={false}
               className={[
-                'w-full sm:max-w-md',
+                'w-full',
                 'pl-9 pr-9 py-2',
                 'bg-transparent border border-reader-rule rounded-sm',
                 'font-serif text-sm text-reader-ink',
@@ -394,8 +473,8 @@ export function TopicsIndexPage() {
               </button>
             )}
           </div>
-        </div>
-      )}
+        )}
+      </header>
 
       {levelKeys.length === 0 && (
         <p className="font-serif text-reader-ink-2">{t('topics.empty')}</p>
