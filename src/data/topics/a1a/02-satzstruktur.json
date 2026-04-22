@@ -30,7 +30,7 @@
       "body": "Un bloc pot ser una sola paraula (_ich_) o un grup (_mein Name_, _zwei Kinder_). Aquest concepte és clau per entendre tota la lliçó.",
       "examples": [
         {
-          "de": "**Mein Name** · **ist** · **Julia Schwaiger**.",
+          "de": "**!!Mein Name!!** · **!!ist!!** · **!!Julia Schwaiger!!**.",
           "ca": "Tres blocs: subjecte · verb · complement.",
           "note": "_Mein Name_ ocupa una sola posició encara que siguin dues paraules."
         }
@@ -48,10 +48,10 @@
       "lead": "==El verb conjugat sempre va a la posició 2==.",
       "body": "El subjecte, normalment, va davant (posició 1), i els complements darrere (3+). El verb no es mou mai.",
       "examples": [
-        { "de": "==Ich== · ==bin== · 36 Jahre alt.", "ca": "Jo tinc 36 anys." },
-        { "de": "==Ich== · ==arbeite== · bei Audi.", "ca": "Treballo a Audi." },
-        { "de": "==Meine Adresse== · ==ist== · Jahnstraße 5.", "ca": "La meva adreça és Jahnstraße 5." },
-        { "de": "==Das== · ==ist== · in Bayern.", "ca": "Això és a Baviera." }
+        { "de": "==!!Ich!!== · ==!!bin!!== · !!36 Jahre alt!!.", "ca": "Jo tinc 36 anys." },
+        { "de": "==!!Ich!!== · ==!!arbeite!!== · !!bei Audi!!.", "ca": "Treballo a Audi." },
+        { "de": "==!!Meine Adresse!!== · ==!!ist!!== · !!Jahnstraße 5!!.", "ca": "La meva adreça és Jahnstraße 5." },
+        { "de": "==!!Das!!== · ==!!ist!!== · !!in Bayern!!.", "ca": "Això és a Baviera." }
       ],
       "callout": {
         "variant": "warning",

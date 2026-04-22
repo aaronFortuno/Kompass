@@ -62,6 +62,20 @@ function stepToBeats(step) {
   return legacyBlocksToBeats(step);
 }
 
+/*
+ * Helper: detecta si un text alemany ja conté pills audibles internes
+ * (marcadors `!!...!!`). En aquest cas, el render del beat NO ha
+ * d'envoltar el conjunt amb un wrapper SpeakableText extern — els
+ * pills interiors ja són autònoms i fer-ne un wrapper provocaria doble
+ * reproducció (event bubbling) i un àudio sencer de la frase amb
+ * separadors "·" pronunciats literalment. Quan no hi ha pills
+ * interiors, mantenim el comportament clàssic (wrapper per tota la
+ * frase). §98 polit.
+ */
+function hasInlineSpeakable(text) {
+  return typeof text === 'string' && text.includes('!!');
+}
+
 function computeBlocks(steps) {
   // Un "bloc" pedagògic = un narrative o synthesis que obre una secció
   // nova (primer del topic, o vingut després d'un exercise) + tots els
@@ -360,11 +374,15 @@ function ExampleBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed 
       <div className="kf-beat-ex">
         <span className="kf-marker">Exemple {beat.idx} / {beat.total}</span>
         {deDone ? (
-          <p className="kf-beat-ex-de">
-            <SpeakableText text={stripRichMarkers(beat.ex.de)}>
-              {parseInline(beat.ex.de)}
-            </SpeakableText>
-          </p>
+          hasInlineSpeakable(beat.ex.de) ? (
+            <p className="kf-beat-ex-de">{parseInline(beat.ex.de)}</p>
+          ) : (
+            <p className="kf-beat-ex-de">
+              <SpeakableText text={stripRichMarkers(beat.ex.de)}>
+                {parseInline(beat.ex.de)}
+              </SpeakableText>
+            </p>
+          )
         ) : (
           <Typed
             text={beat.ex.de}
@@ -414,9 +432,13 @@ function PronBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed }) 
         {noteDone && tab.example ? (
           <div className="kf-beat-pron-ex kf-fade-in">
             <div className="de">
-              <SpeakableText text={stripRichMarkers(tab.example.de)}>
-                {parseInline(tab.example.de)}
-              </SpeakableText>
+              {hasInlineSpeakable(tab.example.de) ? (
+                parseInline(tab.example.de)
+              ) : (
+                <SpeakableText text={stripRichMarkers(tab.example.de)}>
+                  {parseInline(tab.example.de)}
+                </SpeakableText>
+              )}
             </div>
             {tab.example.ca ? <div className="ca">{parseInline(tab.example.ca)}</div> : null}
           </div>
@@ -467,9 +489,13 @@ function CompareBeat({ beat, step, stepIdx, showKicker, tableAnim }) {
                 <td>{r.es}</td>
                 <td>{r.ca}</td>
                 <td className="de">
-                  <SpeakableText text={stripRichMarkers(r.de)}>
-                    {parseInline(r.de)}
-                  </SpeakableText>
+                  {hasInlineSpeakable(r.de) ? (
+                    parseInline(r.de)
+                  ) : (
+                    <SpeakableText text={stripRichMarkers(r.de)}>
+                      {parseInline(r.de)}
+                    </SpeakableText>
+                  )}
                 </td>
                 <td>{r.en}</td>
               </tr>

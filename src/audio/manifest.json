@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-22T17:25:14.392Z",
-  "totalStrings": 202,
-  "totalChars": 3136,
+  "generatedAt": "2026-04-22T18:13:42.112Z",
+  "totalStrings": 209,
+  "totalChars": 3092,
   "entries": [
     {
       "hash": "032d90688980e75f2f4f8af58dd7e2e31a51d700",
@@ -144,6 +144,16 @@
         {
           "topic": "A1a-21",
           "path": "steps[3].blocks[1].rows[4][0]"
+        }
+      ]
+    },
+    {
+      "hash": "0f69d4b6f61aee7f0ce84616ee8b385d0f95dcce",
+      "text": "Meine Adresse",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[2].examples[2].de#inline[0]"
         }
       ]
     },
@@ -428,16 +438,6 @@
       ]
     },
     {
-      "hash": "29b2a91af032262d62498f341dafa6f95350be4b",
-      "text": "Meine Adresse · ist · Jahnstraße 5.",
-      "sources": [
-        {
-          "topic": "A1a-2",
-          "path": "steps[2].examples[2].de"
-        }
-      ]
-    },
-    {
       "hash": "2b9fb0eccdc90bb796c64b6001705c23d104b08b",
       "text": "ihr-",
       "sources": [
@@ -508,16 +508,6 @@
       ]
     },
     {
-      "hash": "347cda532a6ebd0e6bac03631ca92c2837c1ab50",
-      "text": "Das · ist · in Bayern.",
-      "sources": [
-        {
-          "topic": "A1a-2",
-          "path": "steps[2].examples[3].de"
-        }
-      ]
-    },
-    {
       "hash": "3512c331ba6d46556795cab075354158571904f5",
       "text": "das Bett",
       "sources": [
@@ -572,16 +562,6 @@
       ]
     },
     {
-      "hash": "391c6fd30bf922fc0e11f899b9934eddbe47bf0a",
-      "text": "Ich · arbeite · bei Audi.",
-      "sources": [
-        {
-          "topic": "A1a-2",
-          "path": "steps[2].examples[1].de"
-        }
-      ]
-    },
-    {
       "hash": "3aa8906f7c843a0d459bcc55e0bbad19c9a9308a",
       "text": "Vaig estudiar alemany. (ahir, acció acabada)",
       "sources": [
@@ -598,6 +578,20 @@
         {
           "topic": "A1b-40",
           "path": "steps[0].blocks[1].rows[0][1]"
+        }
+      ]
+    },
+    {
+      "hash": "3de9f109e39e2a496541eb2b36eb478b772d6597",
+      "text": "Ich",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[2].examples[0].de#inline[0]"
+        },
+        {
+          "topic": "A1a-2",
+          "path": "steps[2].examples[1].de#inline[0]"
         }
       ]
     },
@@ -732,16 +726,6 @@
       ]
     },
     {
-      "hash": "47133782350055a10b5c2e7d32008f0b8f90d4f4",
-      "text": "Ich · bin · 36 Jahre alt.",
-      "sources": [
-        {
-          "topic": "A1a-2",
-          "path": "steps[2].examples[0].de"
-        }
-      ]
-    },
-    {
       "hash": "479a9c2bbbf378837fc6ccc6bed7f79866cbcc7d",
       "text": "funktionieren",
       "sources": [
@@ -768,6 +752,16 @@
         {
           "topic": "A1b-40",
           "path": "steps[6].blocks[1].rows[0][1]"
+        }
+      ]
+    },
+    {
+      "hash": "4d2228eec970c9de46dcc387eb2bd461e437f318",
+      "text": "bei Audi",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[2].examples[1].de#inline[2]"
         }
       ]
     },
@@ -844,6 +838,24 @@
       ]
     },
     {
+      "hash": "60ae1b3bb0312cc62002df81b235875d2499dcc3",
+      "text": "ist",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[1].examples[0].de#inline[1]"
+        },
+        {
+          "topic": "A1a-2",
+          "path": "steps[2].examples[2].de#inline[1]"
+        },
+        {
+          "topic": "A1a-2",
+          "path": "steps[2].examples[3].de#inline[1]"
+        }
+      ]
+    },
+    {
       "hash": "6244fc18e66a390a0ded3b41a1c3cf5d536941ca",
       "text": "zu Neujahr",
       "sources": [
@@ -854,12 +866,42 @@
       ]
     },
     {
+      "hash": "6246fe61b07093a7fc70860ee7ea3bacd631421e",
+      "text": "36 Jahre alt",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[2].examples[0].de#inline[2]"
+        }
+      ]
+    },
+    {
       "hash": "626267415e7c19948d0a18f4dccf159a7e41ffad",
       "text": "Januar",
       "sources": [
         {
           "topic": "A1a-21",
           "path": "steps[5].blocks[1].rows[0][0]"
+        }
+      ]
+    },
+    {
+      "hash": "62da382ca25b802e1d15c8c2f00d6f279664fe95",
+      "text": "arbeite",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[2].examples[1].de#inline[1]"
+        }
+      ]
+    },
+    {
+      "hash": "648a1da3faf6368d65b795facdb1cf8af58834d8",
+      "text": "in Bayern",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[2].examples[3].de#inline[2]"
         }
       ]
     },
@@ -960,6 +1002,16 @@
         {
           "topic": "A1a-1",
           "path": "steps[6].comparison[3].de"
+        }
+      ]
+    },
+    {
+      "hash": "7ac8c4aa30fba6eb2ec92ef3ff81b7f24159a82a",
+      "text": "Mein Name",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[1].examples[0].de#inline[0]"
         }
       ]
     },
@@ -1226,6 +1278,16 @@
       ]
     },
     {
+      "hash": "9a5d56716d566997fa290054d161af96305aff9a",
+      "text": "bin",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[2].examples[0].de#inline[1]"
+        }
+      ]
+    },
+    {
       "hash": "9aaceea74e57e7d2a1ab5d34ab38f63d15bbab55",
       "text": "Februar",
       "sources": [
@@ -1322,16 +1384,6 @@
         {
           "topic": "A1a-1",
           "path": "steps[8].pitfalls[0].bad"
-        }
-      ]
-    },
-    {
-      "hash": "a58f6e3564ac2d5b4ad32446fe9e37138b65b4e4",
-      "text": "Mein Name · ist · Julia Schwaiger.",
-      "sources": [
-        {
-          "topic": "A1a-2",
-          "path": "steps[1].examples[0].de"
         }
       ]
     },
@@ -1690,6 +1742,16 @@
       ]
     },
     {
+      "hash": "ce7b9f5f9e16befd010dfae00fa468009386d4c6",
+      "text": "Jahnstraße 5",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[2].examples[2].de#inline[2]"
+        }
+      ]
+    },
+    {
       "hash": "d02c8b45d3e449618503e31bd5be41e6d20eef79",
       "text": "meine Adresse",
       "sources": [
@@ -1972,6 +2034,16 @@
       ]
     },
     {
+      "hash": "f0ff7ab28e95aa697927d2c60e24cdc40a3841d9",
+      "text": "Das",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[2].examples[3].de#inline[0]"
+        }
+      ]
+    },
+    {
       "hash": "f18a88d454cbc02f78d22ba8d7a45ec846273446",
       "text": "der Sessel",
       "sources": [
@@ -2018,6 +2090,16 @@
         {
           "topic": "A1b-37",
           "path": "steps[7].blocks[1].rows[1][1]"
+        }
+      ]
+    },
+    {
+      "hash": "f8766a4450d9abb8a073a1d3104d779260d5e2ad",
+      "text": "Julia Schwaiger",
+      "sources": [
+        {
+          "topic": "A1a-2",
+          "path": "steps[1].examples[0].de#inline[2]"
         }
       ]
     },

@@ -233,6 +233,22 @@ function addInlineSpeakables(map, topicId, jsonPath, rawText) {
 }
 
 /**
+ * Camps "estructurats" alemanys (example.de, tab.example.de, pair.*,
+ * comparison.de, etc.): si el dev ha partit el contingut amb spans
+ * `!!...!!`, extreu cada span individualment; si no, extreu la cadena
+ * sencera. Aquest dual-mode casa amb el render del FocusReader, que
+ * tampoc posa wrapper SpeakableText extern quan hi ha pills interiors.
+ */
+function addStringOrInline(map, topicId, jsonPath, rawText) {
+  if (typeof rawText !== 'string') return;
+  if (rawText.includes('!!')) {
+    addInlineSpeakables(map, topicId, jsonPath, rawText);
+  } else {
+    addString(map, topicId, jsonPath, rawText);
+  }
+}
+
+/**
  * Retorna el text d'una cel·la de taula (llegat o ric): admet string
  * directe o objecte { text }.
  */
@@ -326,9 +342,9 @@ function visitStep(map, topicId, step, stepIdx) {
     // Pronoms destacats (tabs): camp `pron` + exemples
     if (Array.isArray(step.tabs)) {
       step.tabs.forEach((tab, i) => {
-        addString(map, topicId, `${base}.tabs[${i}].pron`, tab.pron);
+        addStringOrInline(map, topicId, `${base}.tabs[${i}].pron`, tab.pron);
         if (tab.example && typeof tab.example.de === 'string') {
-          addString(
+          addStringOrInline(
             map,
             topicId,
             `${base}.tabs[${i}].example.de`,
@@ -343,8 +359,13 @@ function visitStep(map, topicId, step, stepIdx) {
     // Parelles pronom→possessiu
     if (Array.isArray(step.pairs)) {
       step.pairs.forEach((pair, i) => {
-        addString(map, topicId, `${base}.pairs[${i}].personal`, pair.personal);
-        addString(
+        addStringOrInline(
+          map,
+          topicId,
+          `${base}.pairs[${i}].personal`,
+          pair.personal
+        );
+        addStringOrInline(
           map,
           topicId,
           `${base}.pairs[${i}].possessive`,
@@ -356,14 +377,24 @@ function visitStep(map, topicId, step, stepIdx) {
     // Exemples bilingües
     if (Array.isArray(step.examples)) {
       step.examples.forEach((ex, i) => {
-        addString(map, topicId, `${base}.examples[${i}].de`, ex.de);
+        addStringOrInline(
+          map,
+          topicId,
+          `${base}.examples[${i}].de`,
+          ex.de
+        );
       });
     }
 
     // Taula comparativa es/ca/de/en: columna `de`
     if (Array.isArray(step.comparison)) {
       step.comparison.forEach((row, i) => {
-        addString(map, topicId, `${base}.comparison[${i}].de`, row.de);
+        addStringOrInline(
+          map,
+          topicId,
+          `${base}.comparison[${i}].de`,
+          row.de
+        );
       });
     }
 
