@@ -3,7 +3,7 @@
   "id": "A1a-3-ex-03",
   "topicId": "A1a-3",
   "title": "sein i haben a les persones més freqüents",
-  "prompt": "Tria la forma correcta de _sein_ o _haben_ per a cada frase de presentació.",
+  "prompt": "Tria la forma correcta de _sein_ o _haben_ per a cada oració de presentació.",
   "difficulty": 1,
   "tags": ["sein", "haben", "irregular"],
   "stimulus": {

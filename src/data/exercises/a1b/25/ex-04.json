@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "A1b-25-ex-04",
   "topicId": "A1b-25",
-  "title": "Construir frases en Präteritum (ordre V2)",
-  "prompt": "Per a cada conjunt de paraules desordenades, tria la frase ==**correctament ordenada**==. Recorda: el verb conjugat (_war, hatte, konnte…_) sempre ocupa la ==**segona posició**== (V2). Si comences per un complement temporal, el subjecte va després del verb (inversió).",
+  "title": "Construir oracions en Präteritum (ordre V2)",
+  "prompt": "Per a cada conjunt de paraules desordenades, tria l'oració ==**correctament ordenada**==. Recorda: el verb conjugat (_war, hatte, konnte…_) sempre ocupa la ==**segona posició**== (V2). Si comences per un complement temporal, el subjecte va després del verb (inversió).",
   "difficulty": 2,
   "tags": ["order", "sintaxi", "V2", "prateritum"],
   "stimulus": {
@@ -84,7 +84,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Perfecte. En totes les frases has col·locat el verb conjugat en ==**V2**==: _war, hatten, konnte, gab, musste, warst_. Quan comences per un complement (_Als Kind_, _Im Park_, _Wo_), la **inversió** posa el subjecte just després del verb (V3). Amb verbs modals (_musste arbeiten_), el Präteritum està en V2 i l'infinitiu tanca la frase al final (Satzklammer).",
+      "message": "Perfecte. En totes les oracions has col·locat el verb conjugat en ==**V2**==: _war, hatten, konnte, gab, musste, warst_. Quan comences per un complement (_Als Kind_, _Im Park_, _Wo_), la **inversió** posa el subjecte just després del verb (V3). Amb verbs modals (_musste arbeiten_), el Präteritum està en V2 i l'infinitiu tanca l'oració al final (Satzklammer).",
       "references": ["A1b-25"]
     },
     "incorrect": {
@@ -108,7 +108,7 @@
         },
         {
           "match": { "5": "Sie musste lange arbeiten gestern." },
-          "message": "Amb modals, l'**infinitiu tanca la frase** (Satzklammer): _musste … arbeiten_. _gestern_ va **entre** el modal i l'infinitiu, no al final: _Sie musste **gestern** lange arbeiten._"
+          "message": "Amb modals, l'**infinitiu tanca l'oració** (Satzklammer): _musste … arbeiten_. _gestern_ va **entre** el modal i l'infinitiu, no al final: _Sie musste **gestern** lange arbeiten._"
         },
         {
           "match": { "6": "Wo du warst am Samstag?" },

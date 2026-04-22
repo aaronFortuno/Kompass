@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "A1b-26-ex-05",
   "topicId": "A1b-26",
-  "title": "Auxiliar + Partizip II: completa la frase",
-  "prompt": "Cada frase té ==**dos buits**==: l'auxiliar (_haben_ o _sein_, conjugat) i el participi. Escriu les dues formes a partir de l'infinitiu entre parèntesis. Consulta el mini-vocabulari de participis si cal.",
+  "title": "Auxiliar + Partizip II: completa l'oració",
+  "prompt": "Cada oració té ==**dos buits**==: l'auxiliar (_haben_ o _sein_, conjugat) i el participi. Escriu les dues formes a partir de l'infinitiu entre parèntesis. Consulta el mini-vocabulari de participis si cal.",
   "difficulty": 2,
   "tags": ["perfekt", "auxiliar", "participi", "typeIn", "dos-buits"],
   "stimulus": {

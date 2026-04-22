@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "id": "A1b-19-ex-06",
   "topicId": "A1b-19",
-  "title": "Produeix frases senceres",
-  "prompt": "Forma una frase amb els elements donats. Tria tu la preposició adequada, conjuga el verb i aplica contraccions quan calgui.",
+  "title": "Produeix oracions senceres",
+  "prompt": "Forma una oració amb els elements donats. Tria tu la preposició adequada, conjuga el verb i aplica contraccions quan calgui.",
   "difficulty": 3,
   "tags": ["wechselpraepositionen", "produccio", "contraccions"],
   "stimulus": {
     "type": "textWithBlanks",
     "template": "1) *Ich / gehen / Kino* (vaig al cine) →\n{{1}}\n\n2) *Das Auto / stehen / Parkplatz* (el cotxe és al pàrquing — *der Parkplatz*) →\n{{2}}\n\n3) *Die Kinder / spielen / Park* (els nens juguen al parc — *der Park*) →\n{{3}}\n\n4) *Er / legen / Brief / Tisch* (ell posa la carta sobre la taula) →\n{{4}}\n\n5) *Die Katze / sitzen / Stuhl / und / Sofa* (el gat és entre la cadira i el sofà) →\n{{5}}",
     "blanks": [
-      { "id": "1", "label": "frase 1" },
-      { "id": "2", "label": "frase 2" },
-      { "id": "3", "label": "frase 3" },
-      { "id": "4", "label": "frase 4" },
-      { "id": "5", "label": "frase 5" }
+      { "id": "1", "label": "oració 1" },
+      { "id": "2", "label": "oració 2" },
+      { "id": "3", "label": "oració 3" },
+      { "id": "4", "label": "oració 4" },
+      { "id": "5", "label": "oració 5" }
     ]
   },
   "interaction": {
@@ -45,7 +45,7 @@
       "references": ["A1b-19"]
     },
     "incorrect": {
-      "default": "Revisa: (1) *gehen* → acusatiu + contracció ==*ins*==; (2, 3) *stehen / spielen* estàtic → datiu (*auf dem*, *im*); (4) *legen* → acusatiu (*auf den*); (5) *zwischen* amb **dos datius coordinats** (*dem Stuhl und dem Sofa*). Frases correctes: *Ich gehe ins Kino. / Das Auto steht auf dem Parkplatz. / Die Kinder spielen im Park. / Er legt den Brief auf den Tisch. / Die Katze sitzt zwischen dem Stuhl und dem Sofa.*"
+      "default": "Revisa: (1) *gehen* → acusatiu + contracció ==*ins*==; (2, 3) *stehen / spielen* estàtic → datiu (*auf dem*, *im*); (4) *legen* → acusatiu (*auf den*); (5) *zwischen* amb **dos datius coordinats** (*dem Stuhl und dem Sofa*). Oracions correctes: *Ich gehe ins Kino. / Das Auto steht auf dem Parkplatz. / Die Kinder spielen im Park. / Er legt den Brief auf den Tisch. / Die Katze sitzt zwischen dem Stuhl und dem Sofa.*"
     }
   }
 }

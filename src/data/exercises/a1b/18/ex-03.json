@@ -2,20 +2,20 @@
   "schemaVersion": 1,
   "id": "A1b-18-ex-03",
   "topicId": "A1b-18",
-  "title": "Classifica cada frase",
-  "prompt": "Per a cada frase, tria la pregunta que li correspon.",
+  "title": "Classifica cada oració",
+  "prompt": "Per a cada oració, tria la pregunta que li correspon.",
   "difficulty": 2,
   "tags": ["wo", "woher", "wohin", "dropdown"],
   "stimulus": {
     "type": "textWithBlanks",
     "template": "1) *Ich komme aus Katalonien.* → {{1}}\n2) *Das Buch liegt auf dem Tisch.* → {{2}}\n3) *Wir fliegen nach Italien.* → {{3}}\n4) *Der Zug kommt vom Bahnhof.* → {{4}}\n5) *Die Kinder spielen im Garten.* → {{5}}\n6) *Ich gehe zum Supermarkt.* → {{6}}",
     "blanks": [
-      { "id": "1", "label": "frase 1" },
-      { "id": "2", "label": "frase 2" },
-      { "id": "3", "label": "frase 3" },
-      { "id": "4", "label": "frase 4" },
-      { "id": "5", "label": "frase 5" },
-      { "id": "6", "label": "frase 6" }
+      { "id": "1", "label": "oració 1" },
+      { "id": "2", "label": "oració 2" },
+      { "id": "3", "label": "oració 3" },
+      { "id": "4", "label": "oració 4" },
+      { "id": "5", "label": "oració 5" },
+      { "id": "6", "label": "oració 6" }
     ]
   },
   "interaction": {

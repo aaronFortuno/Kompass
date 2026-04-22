@@ -3,7 +3,7 @@
   "id": "A1b-28-ex-07",
   "topicId": "A1b-28",
   "title": "Construeix el Perfekt sencer",
-  "prompt": "Escriu la frase sencera en Perfekt a partir dels elements donats. Aux. (conjugat segons el subjecte) + complements + Partizip II al final (Satzklammer, A1b-26).",
+  "prompt": "Escriu l'oració sencera en Perfekt a partir dels elements donats. Aux. (conjugat segons el subjecte) + complements + Partizip II al final (Satzklammer, A1b-26).",
   "difficulty": 3,
   "tags": ["typeIn", "perfekt", "construccio", "sintesi", "avaluacio"],
   "stimulus": {
@@ -44,7 +44,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "==**Excel·lent.**== Has compost 6 frases en Perfekt aplicant tots els components: (1) **auxiliar correcte** (_haben_/_sein_) conjugat segons el subjecte; (2) **complement** al mig; (3) **Partizip II fort** al final. Aquesta és la mecànica completa del Perfekt oral d'A1.",
+      "message": "==**Excel·lent.**== Has compost 6 oracions en Perfekt aplicant tots els components: (1) **auxiliar correcte** (_haben_/_sein_) conjugat segons el subjecte; (2) **complement** al mig; (3) **Partizip II fort** al final. Aquesta és la mecànica completa del Perfekt oral d'A1.",
       "references": ["A1b-28", "A1b-26"]
     },
     "incorrect": {

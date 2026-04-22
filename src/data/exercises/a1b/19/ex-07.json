@@ -3,17 +3,17 @@
   "id": "A1b-19-ex-07",
   "topicId": "A1b-19",
   "title": "Corregeix els errors típics",
-  "prompt": "Cada frase té **un error** (cas equivocat o preposició inadequada). Escriu la frase correcta sencera.",
+  "prompt": "Cada oració té **un error** (cas equivocat o preposició inadequada). Escriu l'oració correcta sencera.",
   "difficulty": 3,
   "tags": ["wechselpraepositionen", "correccio", "errors-tipics"],
   "stimulus": {
     "type": "textWithBlanks",
     "template": "1) *Ich gehe im Supermarkt.* (vull dir: vaig al super) →\n{{1}}\n\n2) *Das Bild hängt auf der Wand.* →\n{{2}}\n\n3) *Er fährt nach die Schule.* →\n{{3}}\n\n4) *Die Tasse steht auf den Tisch.* (està sobre la taula) →\n{{4}}",
     "blanks": [
-      { "id": "1", "label": "frase corregida" },
-      { "id": "2", "label": "frase corregida" },
-      { "id": "3", "label": "frase corregida" },
-      { "id": "4", "label": "frase corregida" }
+      { "id": "1", "label": "oració corregida" },
+      { "id": "2", "label": "oració corregida" },
+      { "id": "3", "label": "oració corregida" },
+      { "id": "4", "label": "oració corregida" }
     ]
   },
   "interaction": {

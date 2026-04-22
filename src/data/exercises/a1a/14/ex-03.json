@@ -3,7 +3,7 @@
   "id": "A1a-14-ex-03",
   "topicId": "A1a-14",
   "title": "Reconeix el cas de l'article alemany",
-  "prompt": "Cada frase alemanya té un article ressaltat. Llegeix la frase, identifica la funció del substantiu i tria el cas en què es troba l'article.",
+  "prompt": "Cada oració alemanya té un article ressaltat. Llegeix l'oració, identifica la funció del substantiu i tria el cas en què es troba l'article.",
   "difficulty": 2,
   "tags": ["casos", "articles", "reconeixement"],
   "stimulus": {
@@ -36,10 +36,10 @@
   },
   "feedback": {
     "correct": {
-      "message": "Excel·lent. Has llegit la frase, has identificat la funció del substantiu (subjecte, CD, CI, CD) i has deduït el cas. Fixa't que _der_ i _den_ són tots dos masculins, però el cas els distingeix: _der_ és nominatiu, _den_ és acusatiu. Aquesta és l'essència de la declinació."
+      "message": "Excel·lent. Has llegit l'oració, has identificat la funció del substantiu (subjecte, CD, CI, CD) i has deduït el cas. Fixa't que _der_ i _den_ són tots dos masculins, però el cas els distingeix: _der_ és nominatiu, _den_ és acusatiu. Aquesta és l'essència de la declinació."
     },
     "incorrect": {
-      "default": "Analitza cada frase pel verb: a la 1, _der Tisch_ és qui _és gran_ → subjecte → nominatiu. A la 2, _einen Apfel_ és el que _es menja_ → CD → acusatiu. A la 3, _meinem Sohn_ és a qui es _recomana_ el llibre → CI → datiu. A la 4, _den Lehrer_ és qui _es veu_ → CD → acusatiu. Les formes dels articles canvien segons el cas; això és declinar.",
+      "default": "Analitza cada oració pel verb: a la 1, _der Tisch_ és qui _és gran_ → subjecte → nominatiu. A la 2, _einen Apfel_ és el que _es menja_ → CD → acusatiu. A la 3, _meinem Sohn_ és a qui es _recomana_ el llibre → CI → datiu. A la 4, _den Lehrer_ és qui _es veu_ → CD → acusatiu. Les formes dels articles canvien segons el cas; això és declinar.",
       "byResponse": [
         {
           "match": { "4": "nominatiu" },

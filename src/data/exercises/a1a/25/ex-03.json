@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "A1a-25-ex-03",
   "topicId": "A1a-25",
-  "title": "Construeix la frase amb _ausgehen_",
-  "prompt": "Col·loca l'arrel conjugada a la posició 2 i el prefix al final de la frase. Verb: _ausgehen_ (sortir de festa).",
+  "title": "Construeix l'oració amb _ausgehen_",
+  "prompt": "Col·loca l'arrel conjugada a la posició 2 i el prefix al final de l'oració. Verb: _ausgehen_ (sortir de festa).",
   "difficulty": 2,
   "tags": ["satzklammer", "separables", "assessment", "ausgehen"],
   "stimulus": {
@@ -11,7 +11,7 @@
     "template": "_Wir {{1}} heute Abend {{2}}._ (Aquest vespre sortim [de festa].)",
     "blanks": [
       { "id": "1", "label": "posició 2 — arrel conjugada amb _wir_" },
-      { "id": "2", "label": "final de la frase — prefix" }
+      { "id": "2", "label": "final de l'oració — prefix" }
     ]
   },
   "interaction": {
@@ -33,11 +33,11 @@
       "message": "Exacte! _gehen_ (arrel conjugada amb _wir_) va a la posició 2; _aus_ (prefix) tanca el claudàtor al final. _ausgehen_ s'ha partit en dues peces, com tots els separables."
     },
     "incorrect": {
-      "default": "Revisa: l'arrel _gehen_ es conjuga amb _wir_ (→ _gehen_, amb -en); el prefix _aus_ va al final de la frase, no enganxat al verb ni al mig.",
+      "default": "Revisa: l'arrel _gehen_ es conjuga amb _wir_ (→ _gehen_, amb -en); el prefix _aus_ va al final de l'oració, no enganxat al verb ni al mig.",
       "byResponse": [
         {
           "match": { "1": "ausgehen" },
-          "message": "El verb separable s'ha de partir en frase enunciativa. No es pot dir _wir ausgehen_: s'ha de separar en _wir ==gehen== … ==aus==_.",
+          "message": "El verb separable s'ha de partir en oració enunciativa. No es pot dir _wir ausgehen_: s'ha de separar en _wir ==gehen== … ==aus==_.",
           "references": ["A1a-25"]
         },
         {

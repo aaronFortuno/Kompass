@@ -3,7 +3,7 @@
   "id": "A1b-3-ex-06",
   "topicId": "A1b-3",
   "title": "Traduir amb _von_, _nach_, _zu_ i l'excepció",
-  "prompt": "Completa cada frase en alemany escrivint només la preposició (amb article o contracció si cal) que falta.",
+  "prompt": "Completa cada oració en alemany escrivint només la preposició (amb article o contracció si cal) que falta.",
   "difficulty": 3,
   "tags": ["wegrichtung", "von", "nach", "zu", "in-akk", "typein", "assessment"],
   "stimulus": {

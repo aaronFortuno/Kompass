@@ -3,12 +3,12 @@
   "id": "A1b-17-ex-02",
   "topicId": "A1b-17",
   "title": "Països amb i sense article al genitiu",
-  "prompt": "Quina frase és correcta?",
+  "prompt": "Quina oració és correcta?",
   "difficulty": 2,
   "tags": ["genitiv", "noms-propis", "paisos", "deutschland"],
   "stimulus": {
     "type": "text",
-    "content": "Tria la frase gramaticalment correcta. Hauptstadt = \"capital\"."
+    "content": "Tria l'oració gramaticalment correcta. Hauptstadt = \"capital\"."
   },
   "interaction": {
     "type": "singleChoice",

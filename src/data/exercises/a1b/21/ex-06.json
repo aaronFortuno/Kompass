@@ -3,17 +3,17 @@
   "id": "A1b-21-ex-06",
   "topicId": "A1b-21",
   "title": "Corregeix el verb inadequat",
-  "prompt": "Cada frase té **un verb mal escollit**. Escriu la frase corregida.",
+  "prompt": "Cada oració té **un verb mal escollit**. Escriu l'oració corregida.",
   "difficulty": 3,
   "tags": ["correccio", "errors-tipics", "parelles-posicio", "wohnen-ziehen"],
   "stimulus": {
     "type": "textWithBlanks",
     "template": "1) *Ich ==liege== das Buch auf den Tisch.* (vull dir: poso el llibre) →\n{{1}}\n\n2) *Er ==setzt== auf dem Stuhl.* (vull dir: està assegut) →\n{{2}}\n\n3) *Die Lampe ==stellt== auf dem Schreibtisch.* (vull dir: la làmpada hi és) →\n{{3}}\n\n4) *Wir ==wohnen== nach Hamburg.* (vull dir: ens mudem a Hamburg) →\n{{4}}",
     "blanks": [
-      { "id": "1", "label": "frase corregida" },
-      { "id": "2", "label": "frase corregida" },
-      { "id": "3", "label": "frase corregida" },
-      { "id": "4", "label": "frase corregida" }
+      { "id": "1", "label": "oració corregida" },
+      { "id": "2", "label": "oració corregida" },
+      { "id": "3", "label": "oració corregida" },
+      { "id": "4", "label": "oració corregida" }
     ]
   },
   "interaction": {

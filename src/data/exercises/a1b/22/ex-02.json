@@ -3,7 +3,7 @@
   "id": "A1b-22-ex-02",
   "topicId": "A1b-22",
   "title": "Verb d'ubicació + article datiu",
-  "prompt": "Omple cada buit amb **l'article en datiu** i el **verb d'ubicació** conjugat. Totes les frases descriuen escenes **estàtiques** → preposició Wechsel + **datiu**. Trieu el verb segons la naturalesa de l'objecte (dret = _stehen_, ajagut = _liegen_, penjat = _hängen_, assegut = _sitzen_).",
+  "prompt": "Omple cada buit amb **l'article en datiu** i el **verb d'ubicació** conjugat. Totes les oracions descriuen escenes **estàtiques** → preposició Wechsel + **datiu**. Trieu el verb segons la naturalesa de l'objecte (dret = _stehen_, ajagut = _liegen_, penjat = _hängen_, assegut = _sitzen_).",
   "difficulty": 2,
   "tags": ["wechsel", "datiu", "verbs-ubicacio", "article"],
   "stimulus": {

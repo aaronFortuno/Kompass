@@ -32,7 +32,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Perfecte. Ja saps extreure informació rellevant d'un anunci **sense llegir-ne ni una frase sencera**. Habilitat real de supervivència lingüística: _möbl._ = moblat, _DG_ = àtic (no planta baixa), _NR_ = només no fumadors, _EBK_ = cuina integrada. _Blk_ no hi apareix → no té balcó.",
+      "message": "Perfecte. Ja saps extreure informació rellevant d'un anunci **sense llegir-ne ni una oració sencera**. Habilitat real de supervivència lingüística: _möbl._ = moblat, _DG_ = àtic (no planta baixa), _NR_ = només no fumadors, _EBK_ = cuina integrada. _Blk_ no hi apareix → no té balcó.",
       "references": ["A1a-36"]
     },
     "incorrect": {

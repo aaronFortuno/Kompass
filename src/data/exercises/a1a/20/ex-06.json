@@ -51,7 +51,7 @@
       "message": "Impecable. Has integrat tota la família: (1) adverbis de moment (_Heute, Morgens, Nachmittags_) amb inversió V2; (2) _jeden Tag_ en acusatiu masculí; (3) _zweimal in der Woche_ amb _Woche_ femení; (4) adverbis de freqüència (_oft, immer, nie_) a la posició B, just darrere del verb. Ja pots explicar una rutina sencera en alemany."
     },
     "incorrect": {
-      "default": "Revisa: (1) _heute_ = avui (un dia concret); _morgens_ amb _-s_ = al matí habitualment; (2) _Tag_ és masculí i _jed-_ en acusatiu masculí és _jeden_; (3) _Woche_ és femení → _in der Woche_; (4) quan l'adverbi obre la frase, majúscula i inversió verb-subjecte; quan va després del verb, minúscula."
+      "default": "Revisa: (1) _heute_ = avui (un dia concret); _morgens_ amb _-s_ = al matí habitualment; (2) _Tag_ és masculí i _jed-_ en acusatiu masculí és _jeden_; (3) _Woche_ és femení → _in der Woche_; (4) quan l'adverbi obre l'oració, majúscula i inversió verb-subjecte; quan va després del verb, minúscula."
     }
   }
 }

@@ -3,17 +3,17 @@
   "id": "A1a-9-ex-03",
   "topicId": "A1a-9",
   "title": "La regla d'or en acció",
-  "prompt": "Tria l'article correcte a cada frase. Recorda que el gènere del compost = el gènere de la seva última peça, independentment del tipus de compost (N+N, Adj+N o V+N).",
+  "prompt": "Tria l'article correcte a cada oració. Recorda que el gènere del compost = el gènere de la seva última peça, independentment del tipus de compost (N+N, Adj+N o V+N).",
   "difficulty": 2,
   "tags": ["komposita", "artikel", "assessment"],
   "stimulus": {
     "type": "textWithBlanks",
     "template": "1. Das ist {{1}} Rotwein. (_rot_ + _der_ Wein)\n2. {{2}} Schwimmbad ist neu. (_schwimmen_ + _das_ Bad)\n3. Wo ist {{3}} Handschuh? (_die_ Hand + _der_ Schuh)\n4. {{4}} Wirtschaftskrise ist ernst. (_die_ Wirtschaft + _die_ Krise)",
     "blanks": [
-      { "id": "1", "label": "article de _Rotwein_, mig de frase" },
-      { "id": "2", "label": "article de _Schwimmbad_, inici de frase" },
-      { "id": "3", "label": "article de _Handschuh_, mig de frase" },
-      { "id": "4", "label": "article de _Wirtschaftskrise_, inici de frase" }
+      { "id": "1", "label": "article de _Rotwein_, mig de oració" },
+      { "id": "2", "label": "article de _Schwimmbad_, inici de oració" },
+      { "id": "3", "label": "article de _Handschuh_, mig de oració" },
+      { "id": "4", "label": "article de _Wirtschaftskrise_, inici de oració" }
     ]
   },
   "interaction": {

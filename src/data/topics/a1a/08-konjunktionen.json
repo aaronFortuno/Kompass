@@ -14,13 +14,13 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Context i motivació\n\nFins ara has après a construir frases senzilles: _Ich heiße Anna. Ich komme aus Barcelona. Ich wohne in Berlin._ Però una conversa real no és una llista de frases aïllades: és un flux en què **unim idees**. \"Em dic Anna **i** vinc de Barcelona.\" \"Estudio alemany, **però** també parlo anglès.\" \"Vaig al cinema, **o bé** em quedo a casa.\"\n\nLes paraules que fan aquesta feina es diuen **conjuncions**, i en aquest tema veurem les cinc més bàsiques de l'alemany: **_und, aber, sondern, oder, denn_**.\n\nEn aquest tema aprendràs:\n\n- **Quin significat té cada conjunció** i com triar entre _aber_ i _sondern_ (el punt més delicat).\n- **Com es puntuen**: quan cal coma i quan no.\n- **Per què no afecten l'ordre del verb**: un detall tècnic que et pot salvar moltes frases.\n\nAmb aquestes cinc paraules ja podràs construir discurs connectat, no només frases soltes. És un salt qualitatiu important."
+          "body": "#### Context i motivació\n\nFins ara has après a construir oracions senzilles: _Ich heiße Anna. Ich komme aus Barcelona. Ich wohne in Berlin._ Però una conversa real no és una llista de oracions aïllades: és un flux en què **unim idees**. \"Em dic Anna **i** vinc de Barcelona.\" \"Estudio alemany, **però** també parlo anglès.\" \"Vaig al cinema, **o bé** em quedo a casa.\"\n\nLes paraules que fan aquesta feina es diuen **conjuncions**, i en aquest tema veurem les cinc més bàsiques de l'alemany: **_und, aber, sondern, oder, denn_**.\n\nEn aquest tema aprendràs:\n\n- **Quin significat té cada conjunció** i com triar entre _aber_ i _sondern_ (el punt més delicat).\n- **Com es puntuen**: quan cal coma i quan no.\n- **Per què no afecten l'ordre del verb**: un detall tècnic que et pot salvar moltes oracions.\n\nAmb aquestes cinc paraules ja podràs construir discurs connectat, no només oracions soltes. És un salt qualitatiu important."
         },
         {
           "type": "callout",
           "variant": "info",
           "title": "Què vol dir \"coordinant\"?",
-          "body": "Una conjunció és ==coordinant== quan uneix dos elements del **mateix nivell gramatical**: dos substantius (_ein Haus **und** ein Garten_), dues frases principals (_Ich bin müde, **aber** ich lerne Deutsch_), dos adjectius (_jung **und** nett_). No introdueix una frase subordinada: les dues parts tenen el mateix pes."
+          "body": "Una conjunció és ==coordinant== quan uneix dos elements del **mateix nivell gramatical**: dos substantius (_ein Haus **und** ein Garten_), dues oracions principals (_Ich bin müde, **aber** ich lerne Deutsch_), dos adjectius (_jung **und** nett_). No introdueix una oració subordinada: les dues parts tenen el mateix pes."
         }
       ]
     },
@@ -29,13 +29,13 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### _und_ i _oder_: sumar i triar\n\nLes dues conjuncions més senzilles són **_und_** (\"i\") i **_oder_** (\"o, o bé\"). Funcionen exactament com en català: _und_ **suma** dos elements, _oder_ n'**ofereix una tria**.\n\n> **Ich lerne Deutsch ==und== Englisch.** (Estudio alemany i anglès.)\n> **Kaffee ==oder== Tee?** (Cafè o te?)\n> **Anna ==und== Markus wohnen in Berlin.** (L'Anna i en Markus viuen a Berlín.)\n> **Kommst du heute ==oder== morgen?** (Véns avui o demà?)\n\n**La regla de coma.** Quan _und_ i _oder_ uneixen només **complements** (substantius, adjectius, sintagmes curts), **no porten coma** al davant, a diferència del que podrien suggerir hàbits del català escrit.\n\n> **Ich habe ein Haus ==und== einen Garten.** (Tinc una casa i un jardí.) — sense coma.\n> **Trinkst du Wasser ==oder== Saft?** (Beus aigua o suc?) — sense coma.\n\nSi, en canvi, darrere de _und_ o _oder_ comença una **frase nova completa** (amb el seu propi verb i subjecte), **sí que posem coma**:\n\n> **Ich komme aus Spanien, ==und== meine Frau kommt aus Deutschland.** (Sóc d'Espanya, i la meva dona és d'Alemanya.)\n> **Bleibst du zu Hause, ==oder== gehst du ins Kino?** (Et quedes a casa, o vas al cinema?)"
+          "body": "#### _und_ i _oder_: sumar i triar\n\nLes dues conjuncions més senzilles són **_und_** (\"i\") i **_oder_** (\"o, o bé\"). Funcionen exactament com en català: _und_ **suma** dos elements, _oder_ n'**ofereix una tria**.\n\n> **Ich lerne Deutsch ==und== Englisch.** (Estudio alemany i anglès.)\n> **Kaffee ==oder== Tee?** (Cafè o te?)\n> **Anna ==und== Markus wohnen in Berlin.** (L'Anna i en Markus viuen a Berlín.)\n> **Kommst du heute ==oder== morgen?** (Véns avui o demà?)\n\n**La regla de coma.** Quan _und_ i _oder_ uneixen només **complements** (substantius, adjectius, sintagmes curts), **no porten coma** al davant, a diferència del que podrien suggerir hàbits del català escrit.\n\n> **Ich habe ein Haus ==und== einen Garten.** (Tinc una casa i un jardí.) — sense coma.\n> **Trinkst du Wasser ==oder== Saft?** (Beus aigua o suc?) — sense coma.\n\nSi, en canvi, darrere de _und_ o _oder_ comença una **oració nova completa** (amb el seu propi verb i subjecte), **sí que posem coma**:\n\n> **Ich komme aus Spanien, ==und== meine Frau kommt aus Deutschland.** (Sóc d'Espanya, i la meva dona és d'Alemanya.)\n> **Bleibst du zu Hause, ==oder== gehst du ins Kino?** (Et quedes a casa, o vas al cinema?)"
         },
         {
           "type": "callout",
           "variant": "info",
           "title": "Contrast amb el català i el castellà",
-          "body": "En català escrit modern, abans d'_i_ i _o_ normalment no posem coma (_Jo estudio i treballo_). En alemany, la norma és similar per a complements, **però obligatòria** quan el que segueix és una frase sencera amb subjecte i verb propis. És un detall ortogràfic, no un canvi de significat."
+          "body": "En català escrit modern, abans d'_i_ i _o_ normalment no posem coma (_Jo estudio i treballo_). En alemany, la norma és similar per a complements, **però obligatòria** quan el que segueix és una oració sencera amb subjecte i verb propis. És un detall ortogràfic, no un canvi de significat."
         }
       ]
     },
@@ -44,7 +44,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### _aber_ vs _sondern_: el \"però\" que es parteix en dos\n\nAquí arriba el punt més característic del tema. En català tenim una única paraula per expressar contrast: **_però_**. En castellà també n'hi ha bàsicament una: _pero_ (amb _sino_ en casos molt específics). L'alemany, en canvi, **parteix aquesta funció en dues conjuncions**, i cal triar bé:\n\n- **_aber_** = **però** (contrast, matís, restricció). Correspon a _pero_ en castellà.\n- **_sondern_** = **sinó** (correcció d'una negació). Correspon a _sino_ en castellà.\n\n**La regla pràctica**: fes servir _sondern_ **només** quan es compleixen **dues condicions alhora**:\n\n1. La primera part de la frase és ==negativa== (conté _nicht_, _kein_, _nie_…).\n2. La segona part **corregeix o substitueix** el que s'ha negat, amb un element del mateix tipus.\n\nSi falla qualsevol de les dues condicions, la paraula correcta és **_aber_**.\n\nExemples contrastats:\n\n> **Ich komme nicht aus Spanien, ==sondern== aus Portugal.**\n> (No vinc d'Espanya, **sinó** de Portugal.)\n> — Primera part negativa (_nicht_), segona part substitueix (Portugal en lloc d'Espanya) → _sondern_.\n\n> **Ich komme aus Spanien, ==aber== ich wohne in Berlin.**\n> (Vinc d'Espanya, **però** visc a Berlín.)\n> — Primera part afirmativa → _aber_.\n\n> **Anna ist nicht müde, ==sondern== krank.**\n> (L'Anna no està cansada, **sinó** malalta.) — Negació + substitució → _sondern_.\n\n> **Anna ist müde, ==aber== sie lernt Deutsch.**\n> (L'Anna està cansada, **però** estudia alemany.) — Afirmativa → _aber_.\n\n> **Ich bin nicht reich, ==aber== ich bin glücklich.**\n> (No sóc ric, **però** sóc feliç.)\n> — Atenció: tot i que la primera part és negativa, la segona **no substitueix** \"ric\" per \"feliç\" (no diu \"sóc feliç en lloc de ric\"), sinó que hi afegeix un matís contrastiu → _aber_.\n\nEl tercer exemple és el que fa ensopegar els catalanoparlants: **no n'hi ha prou que la primera frase sigui negativa**, també cal que la segona substitueixi o corregeixi el que s'ha negat. En català diríem \"però\" en tots tres casos; en alemany, els dos primers demanen _sondern_ i el tercer _aber_.\n\n**Coma obligatòria.** Davant de _aber_ i _sondern_ **sempre hi va coma**, perquè darrere hi ve sempre una frase o un element contrastiu que cal separar gràficament."
+          "body": "#### _aber_ vs _sondern_: el \"però\" que es parteix en dos\n\nAquí arriba el punt més característic del tema. En català tenim una única paraula per expressar contrast: **_però_**. En castellà també n'hi ha bàsicament una: _pero_ (amb _sino_ en casos molt específics). L'alemany, en canvi, **parteix aquesta funció en dues conjuncions**, i cal triar bé:\n\n- **_aber_** = **però** (contrast, matís, restricció). Correspon a _pero_ en castellà.\n- **_sondern_** = **sinó** (correcció d'una negació). Correspon a _sino_ en castellà.\n\n**La regla pràctica**: fes servir _sondern_ **només** quan es compleixen **dues condicions alhora**:\n\n1. La primera part de l'oració és ==negativa== (conté _nicht_, _kein_, _nie_…).\n2. La segona part **corregeix o substitueix** el que s'ha negat, amb un element del mateix tipus.\n\nSi falla qualsevol de les dues condicions, la paraula correcta és **_aber_**.\n\nExemples contrastats:\n\n> **Ich komme nicht aus Spanien, ==sondern== aus Portugal.**\n> (No vinc d'Espanya, **sinó** de Portugal.)\n> — Primera part negativa (_nicht_), segona part substitueix (Portugal en lloc d'Espanya) → _sondern_.\n\n> **Ich komme aus Spanien, ==aber== ich wohne in Berlin.**\n> (Vinc d'Espanya, **però** visc a Berlín.)\n> — Primera part afirmativa → _aber_.\n\n> **Anna ist nicht müde, ==sondern== krank.**\n> (L'Anna no està cansada, **sinó** malalta.) — Negació + substitució → _sondern_.\n\n> **Anna ist müde, ==aber== sie lernt Deutsch.**\n> (L'Anna està cansada, **però** estudia alemany.) — Afirmativa → _aber_.\n\n> **Ich bin nicht reich, ==aber== ich bin glücklich.**\n> (No sóc ric, **però** sóc feliç.)\n> — Atenció: tot i que la primera part és negativa, la segona **no substitueix** \"ric\" per \"feliç\" (no diu \"sóc feliç en lloc de ric\"), sinó que hi afegeix un matís contrastiu → _aber_.\n\nEl tercer exemple és el que fa ensopegar els catalanoparlants: **no n'hi ha prou que la primera oració sigui negativa**, també cal que la segona substitueixi o corregeixi el que s'ha negat. En català diríem \"però\" en tots tres casos; en alemany, els dos primers demanen _sondern_ i el tercer _aber_.\n\n**Coma obligatòria.** Davant de _aber_ i _sondern_ **sempre hi va coma**, perquè darrere hi ve sempre una oració o un element contrastiu que cal separar gràficament."
         },
         {
           "type": "callout",
@@ -65,13 +65,13 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### _denn_: donar una causa\n\nLa cinquena conjunció és **_denn_**, que expressa **causa**: introdueix la raó o el motiu del que s'ha dit abans. En català es tradueix per \"ja que\", \"perquè\" o \"ja que resulta que\", i en castellà per \"pues\" o \"porque\".\n\n> **Ich lerne Deutsch, ==denn== ich wohne in Berlin.**\n> (Estudio alemany, **ja que** visc a Berlín.)\n\n> **Anna ist müde, ==denn== sie arbeitet viel.**\n> (L'Anna està cansada, **ja que** treballa molt.)\n\n**Coma obligatòria**, com amb _aber_ i _sondern_: darrere de _denn_ hi ve sempre una frase sencera nova."
+          "body": "#### _denn_: donar una causa\n\nLa cinquena conjunció és **_denn_**, que expressa **causa**: introdueix la raó o el motiu del que s'ha dit abans. En català es tradueix per \"ja que\", \"perquè\" o \"ja que resulta que\", i en castellà per \"pues\" o \"porque\".\n\n> **Ich lerne Deutsch, ==denn== ich wohne in Berlin.**\n> (Estudio alemany, **ja que** visc a Berlín.)\n\n> **Anna ist müde, ==denn== sie arbeitet viel.**\n> (L'Anna està cansada, **ja que** treballa molt.)\n\n**Coma obligatòria**, com amb _aber_ i _sondern_: darrere de _denn_ hi ve sempre una oració sencera nova."
         },
         {
           "type": "callout",
           "variant": "warning",
           "title": "_denn_ i _weil_ no són el mateix",
-          "body": "Potser ja has sentit _weil_ (\"perquè\") en converses o cançons. Tant _denn_ com _weil_ expressen causa, però **gramaticalment es comporten molt diferent**: _denn_ és **coordinant** i manté el verb en 2a posició (com veurem al pas següent), mentre que _weil_ és **subordinant** i envia el verb al final de la frase. A l'A1a només treballem _denn_; _weil_ arriba més endavant. Si veus una frase amb el verb al final, no és _denn_."
+          "body": "Potser ja has sentit _weil_ (\"perquè\") en converses o cançons. Tant _denn_ com _weil_ expressen causa, però **gramaticalment es comporten molt diferent**: _denn_ és **coordinant** i manté el verb en 2a posició (com veurem al pas següent), mentre que _weil_ és **subordinant** i envia el verb al final de l'oració. A l'A1a només treballem _denn_; _weil_ arriba més endavant. Si veus una oració amb el verb al final, no és _denn_."
         }
       ]
     },
@@ -80,13 +80,13 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Un detall tècnic: aquestes conjuncions **no compten** per l'ordre del verb\n\nRecorda una regla bàsica que has vist abans: en una frase alemanya afirmativa, **el verb conjugat va sempre en segona posició** (la famosa regla V2). La primera posició la pot ocupar el subjecte, un complement de temps, de lloc, etc.\n\n> **Ich** lerne Deutsch. (posició 1 = _ich_, posició 2 = _lerne_.)\n> **Heute** lerne ich Deutsch. (posició 1 = _heute_, posició 2 = _lerne_.)\n\nQuan connectes dues frases amb _und, aber, sondern, oder, denn_, **la conjunció no ocupa cap posició**. Se sol dir que està en \"**posició 0**\". Això vol dir que la frase que ve després es compta com si comencés de nou: el seu verb ha d'anar en **segona posició** com sempre.\n\n> **Ich bin müde, aber ==ich== ==lerne== Deutsch.**\n> (Darrere d'_aber_: posició 1 = _ich_, posició 2 = _lerne_. Correcte.)\n\n> **Ich wohne in Berlin, denn ==ich== ==arbeite== hier.**\n> (Darrere de _denn_: posició 1 = _ich_, posició 2 = _arbeite_. Correcte.)\n\nCompara-ho amb l'error típic d'inversió:\n\n> Incorrecte: *Ich bin müde, aber lerne ich Deutsch.*\n> Correcte: **Ich bin müde, aber ich lerne Deutsch.**"
+          "body": "#### Un detall tècnic: aquestes conjuncions **no compten** per l'ordre del verb\n\nRecorda una regla bàsica que has vist abans: en una oració alemanya afirmativa, **el verb conjugat va sempre en segona posició** (la famosa regla V2). La primera posició la pot ocupar el subjecte, un complement de temps, de lloc, etc.\n\n> **Ich** lerne Deutsch. (posició 1 = _ich_, posició 2 = _lerne_.)\n> **Heute** lerne ich Deutsch. (posició 1 = _heute_, posició 2 = _lerne_.)\n\nQuan connectes dues oracions amb _und, aber, sondern, oder, denn_, **la conjunció no ocupa cap posició**. Se sol dir que està en \"**posició 0**\". Això vol dir que l'oració que ve després es compta com si comencés de nou: el seu verb ha d'anar en **segona posició** com sempre.\n\n> **Ich bin müde, aber ==ich== ==lerne== Deutsch.**\n> (Darrere d'_aber_: posició 1 = _ich_, posició 2 = _lerne_. Correcte.)\n\n> **Ich wohne in Berlin, denn ==ich== ==arbeite== hier.**\n> (Darrere de _denn_: posició 1 = _ich_, posició 2 = _arbeite_. Correcte.)\n\nCompara-ho amb l'error típic d'inversió:\n\n> Incorrecte: *Ich bin müde, aber lerne ich Deutsch.*\n> Correcte: **Ich bin müde, aber ich lerne Deutsch.**"
         },
         {
           "type": "callout",
           "variant": "tip",
           "title": "Regla mnemònica",
-          "body": "Després de _und, aber, sondern, oder, denn_ **la frase torna a començar** des de zero. Subjecte primer (si no hi ha un altre element que ocupi la posició 1), verb segon."
+          "body": "Després de _und, aber, sondern, oder, denn_ **l'oració torna a començar** des de zero. Subjecte primer (si no hi ha un altre element que ocupi la posició 1), verb segon."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Paranys habituals\n\n**1. Traduir sempre \"però\" per _aber_.**\nÉs la trampa número u per a catalanoparlants. Recorda: si la primera part té _nicht_ o _kein_ i la segona hi posa l'alternativa correcta, és _sondern_.\n\n> Incorrecte: **Das ist nicht Bier, ==aber== Wein.**\n> Correcte: **Das ist nicht Bier, ==sondern== Wein.**\n\n**2. Posar coma davant de _und_ o _oder_ quan uneixen només complements.**\nEn alemany, _Kaffee und Tee_ (cafè i te), _ein Buch oder ein Heft_ (un llibre o una llibreta), van **sense coma**.\n\n> Incorrecte: *Ich trinke Kaffee, und Tee.*\n> Correcte: **Ich trinke Kaffee und Tee.**\n\n**3. Oblidar la coma davant de _aber, sondern, denn_.**\nAquestes tres **sempre** porten coma al davant, perquè darrere hi ve sempre material que cal separar.\n\n> Incorrecte: *Ich bin müde aber ich lerne Deutsch.*\n> Correcte: **Ich bin müde, aber ich lerne Deutsch.**\n\n**4. Invertir el verb després de la conjunció.**\nUn reflex típic d'estudiants que han sentit dir que \"en alemany el verb va al final\" o que \"canvia l'ordre\". No: després d'una coordinant, la frase torna a començar amb ordre normal.\n\n> Incorrecte: *Ich wohne in Berlin, denn arbeite ich hier.*\n> Correcte: **Ich wohne in Berlin, denn ich arbeite hier.**\n\n**5. Confondre _denn_ amb _dann_.**\n_Denn_ = \"ja que\" (causa). _Dann_ = \"llavors, després\" (temps). Són dues paraules diferents, amb vocal diferent (_e_ vs _a_), i no es poden intercanviar.\n\n> **Ich lerne jetzt, ==dann== schlafe ich.** (Estudio ara, després dormo. — temps, no causa.)\n> **Ich lerne viel, ==denn== ich habe bald eine Prüfung.** (Estudio molt, ja que aviat tinc un examen. — causa.)\n\n**6. Fer servir _sondern_ en frases afirmatives.**\n_Sondern_ és exclusiu per corregir una negació prèvia. Si no hi ha _nicht_ o _kein_ a la primera part, ja pots descartar _sondern_ d'entrada."
+          "body": "#### Paranys habituals\n\n**1. Traduir sempre \"però\" per _aber_.**\nÉs la trampa número u per a catalanoparlants. Recorda: si la primera part té _nicht_ o _kein_ i la segona hi posa l'alternativa correcta, és _sondern_.\n\n> Incorrecte: **Das ist nicht Bier, ==aber== Wein.**\n> Correcte: **Das ist nicht Bier, ==sondern== Wein.**\n\n**2. Posar coma davant de _und_ o _oder_ quan uneixen només complements.**\nEn alemany, _Kaffee und Tee_ (cafè i te), _ein Buch oder ein Heft_ (un llibre o una llibreta), van **sense coma**.\n\n> Incorrecte: *Ich trinke Kaffee, und Tee.*\n> Correcte: **Ich trinke Kaffee und Tee.**\n\n**3. Oblidar la coma davant de _aber, sondern, denn_.**\nAquestes tres **sempre** porten coma al davant, perquè darrere hi ve sempre material que cal separar.\n\n> Incorrecte: *Ich bin müde aber ich lerne Deutsch.*\n> Correcte: **Ich bin müde, aber ich lerne Deutsch.**\n\n**4. Invertir el verb després de la conjunció.**\nUn reflex típic d'estudiants que han sentit dir que \"en alemany el verb va al final\" o que \"canvia l'ordre\". No: després d'una coordinant, l'oració torna a començar amb ordre normal.\n\n> Incorrecte: *Ich wohne in Berlin, denn arbeite ich hier.*\n> Correcte: **Ich wohne in Berlin, denn ich arbeite hier.**\n\n**5. Confondre _denn_ amb _dann_.**\n_Denn_ = \"ja que\" (causa). _Dann_ = \"llavors, després\" (temps). Són dues paraules diferents, amb vocal diferent (_e_ vs _a_), i no es poden intercanviar.\n\n> **Ich lerne jetzt, ==dann== schlafe ich.** (Estudio ara, després dormo. — temps, no causa.)\n> **Ich lerne viel, ==denn== ich habe bald eine Prüfung.** (Estudio molt, ja que aviat tinc un examen. — causa.)\n\n**6. Fer servir _sondern_ en oracions afirmatives.**\n_Sondern_ és exclusiu per corregir una negació prèvia. Si no hi ha _nicht_ o _kein_ a la primera part, ja pots descartar _sondern_ d'entrada."
         }
       ]
     },
@@ -129,8 +129,8 @@
           "title": "8.1 Les cinc conjuncions coordinants",
           "headers": ["Conjunció", "Significat", "Funció", "Coma al davant?"],
           "rows": [
-            ["**und**", "i", "suma", "Només si hi ha frase nova completa"],
-            ["**oder**", "o, o bé", "tria", "Només si hi ha frase nova completa"],
+            ["**und**", "i", "suma", "Només si hi ha oració nova completa"],
+            ["**oder**", "o, o bé", "tria", "Només si hi ha oració nova completa"],
             ["**aber**", "però", "contrast, matís", "Sempre"],
             ["**sondern**", "sinó", "correcció d'una negació prèvia", "Sempre"],
             ["**denn**", "ja que, perquè", "causa", "Sempre"]
@@ -143,7 +143,7 @@
           "rows": [
             ["Primera part afirmativa", "sí", "no"],
             ["Primera part negativa + substitució directa", "no", "sí"],
-            ["Primera part negativa + frase nova amb matís", "sí", "no"],
+            ["Primera part negativa + oració nova amb matís", "sí", "no"],
             ["Traducció castellana natural", "pero", "sino"]
           ],
           "caption": "Només quan es compleixen **les dues** condicions (negació + substitució paral·lela) escollim _sondern_."
@@ -153,11 +153,11 @@
           "title": "8.3 Posició 0 i ordre V2",
           "headers": ["Element", "Posició", "Verb va en…"],
           "rows": [
-            ["und, aber, sondern, oder, denn", "0 (no compta)", "2a posició de la nova frase"],
+            ["und, aber, sondern, oder, denn", "0 (no compta)", "2a posició de la nova oració"],
             ["Subjecte o complement inicial", "1", "2a posició"],
             ["Verb conjugat", "2", "—"]
           ],
-          "caption": "Després d'una coordinant, la frase recomença com si fos una oració nova: subjecte (o complement) + verb en 2a posició."
+          "caption": "Després d'una coordinant, l'oració recomença com si fos una oració nova: subjecte (o complement) + verb en 2a posició."
         }
       ]
     }

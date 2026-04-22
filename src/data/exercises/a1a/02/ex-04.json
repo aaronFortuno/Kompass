@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "id": "A1a-2-ex-04",
   "topicId": "A1a-2",
-  "title": "Ordena la frase declarativa",
-  "prompt": "Ordena els elements per construir una frase declarativa correcta. Disposes de les paraules: aus, komme, ich, Barcelona. Tria a cada posició la paraula que toca.",
+  "title": "Ordena l'oració declarativa",
+  "prompt": "Ordena els elements per construir una oració declarativa correcta. Disposes de les paraules: aus, komme, ich, Barcelona. Tria a cada posició la paraula que toca.",
   "difficulty": 2,
   "tags": ["declarativa", "ordre-paraules", "verb-posicio-2"],
   "stimulus": {
     "type": "textWithBlanks",
-    "template": "Ordena la frase amb els elements [aus / komme / ich / Barcelona]:\n{{1}} {{2}} {{3}} {{4}}.",
+    "template": "Ordena l'oració amb els elements [aus / komme / ich / Barcelona]:\n{{1}} {{2}} {{3}} {{4}}.",
     "blanks": [
       { "id": "1", "label": "posició 1 (subjecte)" },
       { "id": "2", "label": "posició 2 (verb)" },
@@ -34,7 +34,7 @@
       "message": "Perfecte: **subjecte (1) — verb (2) — complement (3+)**."
     },
     "incorrect": {
-      "default": "Pista: el verb *komme* ha d'anar a la **posició 2**. *Ich* és el subjecte i comença la frase. *aus Barcelona* és el complement d'origen."
+      "default": "Pista: el verb *komme* ha d'anar a la **posició 2**. *Ich* és el subjecte i comença l'oració. *aus Barcelona* és el complement d'origen."
     }
   }
 }

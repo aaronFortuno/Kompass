@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "A1b-11-ex-04",
   "topicId": "A1b-11",
-  "title": "Ordena les paraules per construir una frase de comparació",
-  "prompt": "Reordena els elements per formar una frase correcta. Escriu la frase sencera amb majúscules, punt final i signe d'interrogació quan calgui.",
+  "title": "Ordena les paraules per construir una oració de comparació",
+  "prompt": "Reordena els elements per formar una oració correcta. Escriu l'oració sencera amb majúscules, punt final i signe d'interrogació quan calgui.",
   "difficulty": 3,
   "tags": ["ordre-paraules", "comparacio", "produccio"],
   "stimulus": {
@@ -74,7 +74,7 @@
       "references": ["A1b-11", "A1a-18"]
     },
     "incorrect": {
-      "default": "Recorda: en una frase enunciativa alemanya, el **verb conjugat va en segona posició**. Les construccions de comparació (_am liebsten_, _schneller als Tom_, _so groß wie München_) funcionen com a blocs o sintagmes i ocupen el lloc del complement o del predicat.\n\nSolucions:\na) _Ich trinke am liebsten Tee._\nb) _Max läuft schneller als Tom._\nc) _Der Winter ist am kältesten._\nd) _Köln ist so groß wie München._\ne) _Ich spreche Deutsch besser als Englisch._"
+      "default": "Recorda: en una oració enunciativa alemanya, el **verb conjugat va en segona posició**. Les construccions de comparació (_am liebsten_, _schneller als Tom_, _so groß wie München_) funcionen com a blocs o sintagmes i ocupen el lloc del complement o del predicat.\n\nSolucions:\na) _Ich trinke am liebsten Tee._\nb) _Max läuft schneller als Tom._\nc) _Der Winter ist am kältesten._\nd) _Köln ist so groß wie München._\ne) _Ich spreche Deutsch besser als Englisch._"
     }
   }
 }

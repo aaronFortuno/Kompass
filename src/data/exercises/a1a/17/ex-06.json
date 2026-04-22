@@ -3,7 +3,7 @@
   "id": "A1a-17-ex-06",
   "topicId": "A1a-17",
   "title": "Qualitat amb _sein_ i _finden_",
-  "prompt": "Escriu la forma correcta segons la traducció catalana entre parèntesis. Totes les frases parlen de **qualitat** i fan servir _sein_ o _finden_.",
+  "prompt": "Escriu la forma correcta segons la traducció catalana entre parèntesis. Totes les oracions parlen de **qualitat** i fan servir _sein_ o _finden_.",
   "difficulty": 2,
   "tags": ["superlatiu", "comparatiu", "gut", "finden", "sein"],
   "stimulus": {
@@ -35,10 +35,10 @@
   },
   "feedback": {
     "correct": {
-      "message": "Perfecte. Totes tres frases parlen de **qualitat** (no de plaer!), així que han d'anar amb la tríada _gut / besser / am besten_. Has aplicat bé els tres graus amb dues construccions típiques (_finden + adj_ i _sein + adj_)."
+      "message": "Perfecte. Totes tres oracions parlen de **qualitat** (no de plaer!), així que han d'anar amb la tríada _gut / besser / am besten_. Has aplicat bé els tres graus amb dues construccions típiques (_finden + adj_ i _sein + adj_)."
     },
     "incorrect": {
-      "default": "Fixa-t'hi: totes tres frases parlen de **qualitat** del restaurant (és **bo**, és **millor**, és **el millor**), no de gust personal. Per tant va la família _gut / besser / am besten_, no pas _gern / lieber / am liebsten_. Recorda també les dues construccions: _Ich **finde** X gut_ (opinió) i _X **ist** gut_ (descripció)."
+      "default": "Fixa-t'hi: totes tres oracions parlen de **qualitat** del restaurant (és **bo**, és **millor**, és **el millor**), no de gust personal. Per tant va la família _gut / besser / am besten_, no pas _gern / lieber / am liebsten_. Recorda també les dues construccions: _Ich **finde** X gut_ (opinió) i _X **ist** gut_ (descripció)."
     }
   }
 }

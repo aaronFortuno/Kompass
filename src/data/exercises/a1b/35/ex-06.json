@@ -3,7 +3,7 @@
   "id": "A1b-35-ex-06",
   "topicId": "A1b-35",
   "title": "Troba l'error (o confirma que és correcta)",
-  "prompt": "Per a cada frase, identifica què hi passa: ==**(a) falta o sobra preposició**==, ==**(b) terminació incorrecta**==, o ==**(c) la frase és correcta**==.",
+  "prompt": "Per a cada oració, identifica què hi passa: ==**(a) falta o sobra preposició**==, ==**(b) terminació incorrecta**==, o ==**(c) l'oració és correcta**==.",
   "difficulty": 3,
   "tags": ["datum", "errors", "diagnostic"],
   "stimulus": {
@@ -108,11 +108,11 @@
         },
         {
           "match": { "4": "(a) preposició sobrant o que falta" },
-          "message": "_10.5.2024_ és el format alemany correcte (DD.MM.AAAA). Es llegeix _der zehnte Mai zweitausendvierundzwanzig_. La frase és **correcta**."
+          "message": "_10.5.2024_ és el format alemany correcte (DD.MM.AAAA). Es llegeix _der zehnte Mai zweitausendvierundzwanzig_. L'oració és **correcta**."
         },
         {
           "match": { "4": "(b) terminació incorrecta" },
-          "message": "El format numèric _10.5.2024_ és correcte (DD.MM.AAAA alemany). La frase és **correcta**."
+          "message": "El format numèric _10.5.2024_ és correcte (DD.MM.AAAA alemany). L'oració és **correcta**."
         },
         {
           "match": { "5": "(b) terminació incorrecta" },

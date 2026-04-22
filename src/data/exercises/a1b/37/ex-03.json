@@ -3,7 +3,7 @@
   "id": "A1b-37-ex-03",
   "topicId": "A1b-37",
   "title": "Substitueix el complement per un pronom",
-  "prompt": "Reescriu cada frase substituint el ==**complement en negreta**== pel **pronom personal** correcte. Tres preguntes de supervivència: (a) **quin gènere** té el substantiu?, (b) **quin cas** demana el verb o la preposició?, (c) **singular o plural**?",
+  "prompt": "Reescriu cada oració substituint el ==**complement en negreta**== pel **pronom personal** correcte. Tres preguntes de supervivència: (a) **quin gènere** té el substantiu?, (b) **quin cas** demana el verb o la preposició?, (c) **singular o plural**?",
   "difficulty": 3,
   "tags": ["pronoms", "substitucio", "typeIn", "genere-cas"],
   "stimulus": {

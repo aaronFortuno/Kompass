@@ -3,7 +3,7 @@
   "id": "A1b-9-ex-04",
   "topicId": "A1b-9",
   "title": "Un verb, tres imperatius (lesen)",
-  "prompt": "Completa la mateixa frase amb el verb _lesen_ (\"llegir\") en les tres formes d'imperatiu, segons l'interlocutor.",
+  "prompt": "Completa la mateixa oració amb el verb _lesen_ (\"llegir\") en les tres formes d'imperatiu, segons l'interlocutor.",
   "difficulty": 2,
   "tags": ["imperatiu", "contrast", "lesen", "du-ihr-Sie"],
   "stimulus": {

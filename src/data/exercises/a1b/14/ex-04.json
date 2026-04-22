@@ -3,7 +3,7 @@
   "id": "A1b-14-ex-04",
   "topicId": "A1b-14",
   "title": "Tria _machen_ o _tun_ segons el context",
-  "prompt": "Per a cada frase, tria el verb correcte (_machen_ o _tun_) i conjuga'l en la forma adequada.",
+  "prompt": "Per a cada oració, tria el verb correcte (_machen_ o _tun_) i conjuga'l en la forma adequada.",
   "difficulty": 2,
   "tags": ["machen-vs-tun", "conjugacio", "tria"],
   "stimulus": {

@@ -3,7 +3,7 @@
   "id": "A1b-34-ex-03",
   "topicId": "A1b-34",
   "title": "Preposició i datiu",
-  "prompt": "Completa ==**dos buits**== per frase: (1) la preposició correcta (_seit_ o _vor_) i (2) la forma correcta del substantiu en ==datiu== (recorda la _-n_ al plural).",
+  "prompt": "Completa ==**dos buits**== per oració: (1) la preposició correcta (_seit_ o _vor_) i (2) la forma correcta del substantiu en ==datiu== (recorda la _-n_ al plural).",
   "difficulty": 2,
   "tags": ["seit-vor", "datiu", "datiu-plural", "dropdownFill"],
   "stimulus": {

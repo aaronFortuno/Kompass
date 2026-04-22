@@ -39,10 +39,10 @@
   },
   "feedback": {
     "correct": {
-      "message": "Molt bé. Has associat correctament cada percentatge amb el seu adverbi i, al slot 5, has notat que quan l'adverbi va a la posició 1 de la frase s'escriu amb majúscula (i força la inversió verb-subjecte: _Meistens **arbeitet er**_)."
+      "message": "Molt bé. Has associat correctament cada percentatge amb el seu adverbi i, al slot 5, has notat que quan l'adverbi va a la posició 1 de l'oració s'escriu amb majúscula (i força la inversió verb-subjecte: _Meistens **arbeitet er**_)."
     },
     "incorrect": {
-      "default": "Recorda l'escala: _immer_ (100 %) > _meistens_ > _oft_ > _manchmal_ > _selten_ > _nie_ (0 %). I al slot 5, fixa't que l'adverbi obre la frase: s'escriu amb majúscula i el verb va just darrere (regla V2)."
+      "default": "Recorda l'escala: _immer_ (100 %) > _meistens_ > _oft_ > _manchmal_ > _selten_ > _nie_ (0 %). I al slot 5, fixa't que l'adverbi obre l'oració: s'escriu amb majúscula i el verb va just darrere (regla V2)."
     }
   }
 }

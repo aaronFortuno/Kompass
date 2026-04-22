@@ -3,12 +3,12 @@
   "id": "A1b-40-ex-06",
   "topicId": "A1b-40",
   "title": "Troba l'error: correcta o incorrecta?",
-  "prompt": "Per a cada frase, decideix si és ==**correcta**== (_verdader_) o ==**incorrecta**== (_fals_). Busca errors típics: cas equivocat, terminació, pronom, preposició de més.",
+  "prompt": "Per a cada oració, decideix si és ==**correcta**== (_verdader_) o ==**incorrecta**== (_fals_). Busca errors típics: cas equivocat, terminació, pronom, preposició de més.",
   "difficulty": 2,
   "tags": ["verbs-datiu", "trueFalse", "diagnostic"],
   "stimulus": {
     "type": "text",
-    "content": "Llegeix cada frase amb atenció i decideix si hi ha algun error de cas, pronom, terminació o preposició."
+    "content": "Llegeix cada oració amb atenció i decideix si hi ha algun error de cas, pronom, terminació o preposició."
   },
   "interaction": {
     "type": "trueFalse",
@@ -42,7 +42,7 @@
       "references": ["A1b-40"]
     },
     "incorrect": {
-      "default": "Recorda la rutina: identifica el verb → si és de la llista de datiu, complement en ==_dem/der/den-n_== o pronom ==_mir/dir/ihm…_==, ==sense preposició==. Repassa cada frase buscant un d'aquests errors típics."
+      "default": "Recorda la rutina: identifica el verb → si és de la llista de datiu, complement en ==_dem/der/den-n_== o pronom ==_mir/dir/ihm…_==, ==sense preposició==. Repassa cada oració buscant un d'aquests errors típics."
     }
   }
 }

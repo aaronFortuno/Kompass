@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "id": "A1a-11-ex-04",
   "topicId": "A1a-11",
-  "title": "Tipus de frase: Aussage, W-Frage o Satzfrage?",
-  "prompt": "Classifica cada frase segons el seu tipus estructural. És el pas previ per predir-ne la melodia.",
+  "title": "Tipus de oració: Aussage, W-Frage o Satzfrage?",
+  "prompt": "Classifica cada oració segons el seu tipus estructural. És el pas previ per predir-ne la melodia.",
   "difficulty": 2,
-  "tags": ["intonation", "tipus-frase", "assessment"],
+  "tags": ["intonation", "tipus-oració", "assessment"],
   "stimulus": {
     "type": "textWithBlanks",
     "template": "_Ich wohne in Berlin._ → tipus: {{1}}\n_Wo wohnst du?_ → tipus: {{2}}\n_Bist du Lehrer?_ → tipus: {{3}}\n_Wie heißen Sie?_ → tipus: {{4}}",
@@ -64,10 +64,10 @@
   },
   "feedback": {
     "correct": {
-      "message": "Perfecte. Ara ja no depens de l'oïda per decidir la melodia: pots mirar l'estructura de la frase (té paraula interrogativa? comença pel verb?) i deduir el patró. _Aussage_ i _W-Frage_ baixen; _Satzfrage_ puja."
+      "message": "Perfecte. Ara ja no depens de l'oïda per decidir la melodia: pots mirar l'estructura de l'oració (té paraula interrogativa? comença pel verb?) i deduir el patró. _Aussage_ i _W-Frage_ baixen; _Satzfrage_ puja."
     },
     "incorrect": {
-      "default": "Mira les pistes estructurals: si la frase comença per _wer, was, wo, wie, wann, warum_..., és una **W-Frage**. Si comença pel verb sense interrogatiu (_Bist, Wohnst, Heißt_...), és una **Satzfrage**. Si té l'ordre subjecte + verb normal i acaba en punt, és una **declaració**."
+      "default": "Mira les pistes estructurals: si l'oració comença per _wer, was, wo, wie, wann, warum_..., és una **W-Frage**. Si comença pel verb sense interrogatiu (_Bist, Wohnst, Heißt_...), és una **Satzfrage**. Si té l'ordre subjecte + verb normal i acaba en punt, és una **declaració**."
     }
   }
 }

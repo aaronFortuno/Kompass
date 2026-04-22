@@ -3,7 +3,7 @@
   "id": "A1a-24-ex-01",
   "topicId": "A1a-24",
   "title": "Distingir _schon_ i _erst_ en durades",
-  "prompt": "Completa la frase amb **_schon_** o **_erst_** segons la valoració de la durada (llarga vs curta).",
+  "prompt": "Completa l'oració amb **_schon_** o **_erst_** segons la valoració de la durada (llarga vs curta).",
   "difficulty": 1,
   "tags": ["schon", "erst", "durada", "quick-check"],
   "stimulus": {

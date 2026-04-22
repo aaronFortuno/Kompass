@@ -3,7 +3,7 @@
   "id": "A1a-22-ex-02",
   "topicId": "A1a-22",
   "title": "Quarts, _vor_ i _nach_",
-  "prompt": "Associa cada hora digital amb la frase informal alemanya corresponent. Cobreix _Viertel_, _vor/nach_ i el salt conceptual a prop de :30.",
+  "prompt": "Associa cada hora digital amb l'oració informal alemanya corresponent. Cobreix _Viertel_, _vor/nach_ i el salt conceptual a prop de :30.",
   "difficulty": 2,
   "tags": ["viertel", "vor", "nach", "informal", "matchpairs"],
   "stimulus": {
@@ -36,27 +36,27 @@
       },
       {
         "id": "f-fuenf-nach-zehn",
-        "group": "Frase alemanya",
+        "group": "Oració alemanya",
         "content": { "type": "text", "content": "_Es ist **fünf nach zehn**._" }
       },
       {
         "id": "f-viertel-vor-elf",
-        "group": "Frase alemanya",
+        "group": "Oració alemanya",
         "content": { "type": "text", "content": "_Es ist **Viertel vor elf**._" }
       },
       {
         "id": "f-viertel-nach-zehn",
-        "group": "Frase alemanya",
+        "group": "Oració alemanya",
         "content": { "type": "text", "content": "_Es ist **Viertel nach zehn**._" }
       },
       {
         "id": "f-zwanzig-vor-elf",
-        "group": "Frase alemanya",
+        "group": "Oració alemanya",
         "content": { "type": "text", "content": "_Es ist **zwanzig vor elf**._" }
       },
       {
         "id": "f-fuenf-vor-halb-elf",
-        "group": "Frase alemanya",
+        "group": "Oració alemanya",
         "content": { "type": "text", "content": "_Es ist **fünf vor halb elf**._" }
       }
     ]
@@ -64,7 +64,7 @@
   "interaction": {
     "type": "matchPairs",
     "groupALabel": "Hora digital",
-    "groupBLabel": "Frase alemanya"
+    "groupBLabel": "Oració alemanya"
   },
   "validation": {
     "type": "pairMap",

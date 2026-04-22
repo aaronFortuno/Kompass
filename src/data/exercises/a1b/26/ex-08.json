@@ -78,7 +78,7 @@
         },
         {
           "match": { "2": "kein" },
-          "message": "_kein_ nega un substantiu amb article indefinit (_keine Hausaufgaben_ canviaria _die_ per _keine_). Aquí _die Hausaufgaben_ té article definit, així que es nega la frase amb ==**_nicht_**== just abans del participi."
+          "message": "_kein_ nega un substantiu amb article indefinit (_keine Hausaufgaben_ canviaria _die_ per _keine_). Aquí _die Hausaufgaben_ té article definit, així que es nega l'oració amb ==**_nicht_**== just abans del participi."
         }
       ]
     }

@@ -3,21 +3,21 @@
   "id": "A1b-35-ex-01",
   "topicId": "A1b-35",
   "title": "Identifica el cas: nominatiu o datiu?",
-  "prompt": "Per a cada frase, marca si la data està en ==**nominatiu**== (subjecte/atribut, _der… -e_) o en ==**datiu**== (complement de temps, _am… -en_).",
+  "prompt": "Per a cada oració, marca si la data està en ==**nominatiu**== (subjecte/atribut, _der… -e_) o en ==**datiu**== (complement de temps, _am… -en_).",
   "difficulty": 1,
   "tags": ["datum", "nominatiu", "datiu", "identificacio"],
   "stimulus": {
     "type": "textWithBlanks",
     "template": "1. _Heute ist **der fünfte Oktober**._ → {{1}}\n\n2. _Wir treffen uns **am zehnten Mai**._ → {{2}}\n\n3. _**Am ersten Januar** ist Neujahr._ → {{3}}\n\n4. _**Der dritte Oktober** ist ein Feiertag._ → {{4}}\n\n5. _Ich habe **am zwölften April** Geburtstag._ → {{5}}\n\n6. _Morgen ist **der siebte Juni**._ → {{6}}\n\n7. _**Am einunddreißigsten Dezember** feiern wir Silvester._ → {{7}}\n\n8. _**Der vierzehnte Februar** ist der Valentinstag._ → {{8}}",
     "blanks": [
-      { "id": "1", "label": "Frase 1 · _der fünfte Oktober_" },
-      { "id": "2", "label": "Frase 2 · _am zehnten Mai_" },
-      { "id": "3", "label": "Frase 3 · _am ersten Januar_" },
-      { "id": "4", "label": "Frase 4 · _der dritte Oktober_" },
-      { "id": "5", "label": "Frase 5 · _am zwölften April_" },
-      { "id": "6", "label": "Frase 6 · _der siebte Juni_" },
-      { "id": "7", "label": "Frase 7 · _am einunddreißigsten Dezember_" },
-      { "id": "8", "label": "Frase 8 · _der vierzehnte Februar_" }
+      { "id": "1", "label": "Oració 1 · _der fünfte Oktober_" },
+      { "id": "2", "label": "Oració 2 · _am zehnten Mai_" },
+      { "id": "3", "label": "Oració 3 · _am ersten Januar_" },
+      { "id": "4", "label": "Oració 4 · _der dritte Oktober_" },
+      { "id": "5", "label": "Oració 5 · _am zwölften April_" },
+      { "id": "6", "label": "Oració 6 · _der siebte Juni_" },
+      { "id": "7", "label": "Oració 7 · _am einunddreißigsten Dezember_" },
+      { "id": "8", "label": "Oració 8 · _der vierzehnte Februar_" }
     ]
   },
   "interaction": {

@@ -3,14 +3,14 @@
   "id": "A1b-8-ex-07",
   "topicId": "A1b-8",
   "title": "Construeix una comparació amb lieber ... als",
-  "prompt": "Escriu una frase alemanya que digui **_M'estimo més beure te que cafè_** fent servir **_lieber_** i **_als_**. Comença per _Ich trinke_.",
+  "prompt": "Escriu una oració alemanya que digui **_M'estimo més beure te que cafè_** fent servir **_lieber_** i **_als_**. Comença per _Ich trinke_.",
   "difficulty": 2,
   "tags": ["produccio", "lieber", "als", "comparatiu"],
   "stimulus": {
     "type": "textWithBlanks",
     "template": "{{1}}",
     "blanks": [
-      { "id": "1", "label": "frase sencera" }
+      { "id": "1", "label": "oració sencera" }
     ]
   },
   "interaction": {

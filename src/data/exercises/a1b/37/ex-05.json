@@ -3,7 +3,7 @@
   "id": "A1b-37-ex-05",
   "topicId": "A1b-37",
   "title": "Tradueix a l'alemany · datiu",
-  "prompt": "Tradueix cada frase a l'alemany. Totes fan servir pronoms en ==**datiu**==. Recorda: _helfen, danken, gefallen, gehören_ regeixen ==datiu== (encara que el català digui _t'/em/li_).",
+  "prompt": "Tradueix cada oració a l'alemany. Totes fan servir pronoms en ==**datiu**==. Recorda: _helfen, danken, gefallen, gehören_ regeixen ==datiu== (encara que el català digui _t'/em/li_).",
   "difficulty": 3,
   "tags": ["pronoms", "datiu", "traduccio", "typeIn"],
   "stimulus": {

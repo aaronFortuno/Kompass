@@ -3,7 +3,7 @@
   "id": "A1b-8-ex-04",
   "topicId": "A1b-8",
   "title": "Tríada o altres eines? Tria l'adequada",
-  "prompt": "Completa cada frase amb la paraula correcta. Decideix si cal la tríada de _gern_ o un altre recurs de preferència segons si el complement és una **cosa** o una **acció**.",
+  "prompt": "Completa cada oració amb la paraula correcta. Decideix si cal la tríada de _gern_ o un altre recurs de preferència segons si el complement és una **cosa** o una **acció**.",
   "difficulty": 2,
   "tags": ["contrast", "mogen", "gefallen", "gern", "lieber"],
   "stimulus": {

@@ -3,7 +3,7 @@
   "id": "A1a-16-ex-04",
   "topicId": "A1a-16",
   "title": "gern en afirmacions, negacions i preguntes",
-  "prompt": "Escriu la paraula que falta a cada frase: la partícula _gern_ o el negador _nicht_ segons el sentit indicat.",
+  "prompt": "Escriu la paraula que falta a cada oració: la partícula _gern_ o el negador _nicht_ segons el sentit indicat.",
   "difficulty": 2,
   "tags": ["gern", "nicht", "negacio", "preguntes", "produccio"],
   "stimulus": {

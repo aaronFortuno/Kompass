@@ -42,7 +42,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Molt bé: _Ich finde die Wohnung sehr schön._ _Wohnung_ és femení (_die Wohnung_), i en femení l'acusatiu no canvia: _die Wohnung_. L'adjectiu _schön_ tanca la frase i dóna l'opinió; _sehr_ la intensifica.",
+      "message": "Molt bé: _Ich finde die Wohnung sehr schön._ _Wohnung_ és femení (_die Wohnung_), i en femení l'acusatiu no canvia: _die Wohnung_. L'adjectiu _schön_ tanca l'oració i dóna l'opinió; _sehr_ la intensifica.",
       "references": ["A1a-32"]
     },
     "incorrect": {

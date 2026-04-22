@@ -126,7 +126,7 @@
         {
           "type": "table",
           "title": "20.5 Mateix verb, preposicions diferents",
-          "headers": ["Frase", "Preposició", "Cas", "Per què"],
+          "headers": ["Oració", "Preposició", "Cas", "Per què"],
           "rows": [
             ["_Ich gehe **in den** Park._", "_in_", "Akk (Wohin?)", "Wechselpräposition → depèn de la pregunta"],
             ["_Ich gehe **durch den** Park._", "_durch_", "Akk (fix)", "Fixa d'acusatiu, **sempre** Akk"],

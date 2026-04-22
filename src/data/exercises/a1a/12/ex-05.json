@@ -3,7 +3,7 @@
   "id": "A1a-12-ex-05",
   "topicId": "A1a-12",
   "title": "Singular o plural?",
-  "prompt": "Llegeix cada frase i decideix si la paraula marcada està en **singular** o en **plural**. Fixa't en l'article i en la forma.",
+  "prompt": "Llegeix cada oració i decideix si la paraula marcada està en **singular** o en **plural**. Fixa't en l'article i en la forma.",
   "difficulty": 2,
   "tags": ["plural", "singular", "artikel", "context"],
   "stimulus": {

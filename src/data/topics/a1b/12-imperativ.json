@@ -31,13 +31,13 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### La sintaxi: verb a posició 1\n\nEn una oració imperativa, el ==**verb va en primera posició**==. Això és el que fa que la frase soni com una ordre, un consell o una petició.\n\nAixò trenca amb la regla general de l'alemany declaratiu (verb a posició 2, A1a-12). L'imperatiu, com la pregunta total (A1a-15), ocupa la _posició 0/1_ amb el verb conjugat."
+          "body": "#### La sintaxi: verb a posició 1\n\nEn una oració imperativa, el ==**verb va en primera posició**==. Això és el que fa que l'oració soni com una ordre, un consell o una petició.\n\nAixò trenca amb la regla general de l'alemany declaratiu (verb a posició 2, A1a-12). L'imperatiu, com la pregunta total (A1a-15), ocupa la _posició 0/1_ amb el verb conjugat."
         },
         {
           "type": "callout",
           "variant": "info",
           "title": "Regla fonamental",
-          "body": "A l'imperatiu alemany, el **verb conjugat ocupa sempre la primera posició** de la frase. El pronom (_Sie_, _wir_) va just darrere; a _du_ i _ihr_ no hi ha pronom; els prefixos separables van al final (Satzklammer)."
+          "body": "A l'imperatiu alemany, el **verb conjugat ocupa sempre la primera posició** de l'oració. El pronom (_Sie_, _wir_) va just darrere; a _du_ i _ihr_ no hi ha pronom; els prefixos separables van al final (Satzklammer)."
         },
         {
           "type": "table",
@@ -237,7 +237,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Verbs amb prefix separable\n\n> Com a les oracions declaratives, a l'imperatiu el ==**prefix separable va al final** de la frase==. La Satzklammer (A1a-22) es manté.\n\n**Exemple amb _sich ausruhen_ (relaxar-se, reflexiu):**"
+          "body": "#### Verbs amb prefix separable\n\n> Com a les oracions declaratives, a l'imperatiu el ==**prefix separable va al final** de l'oració==. La Satzklammer (A1a-22) es manté.\n\n**Exemple amb _sich ausruhen_ (relaxar-se, reflexiu):**"
         },
         {
           "type": "table",
@@ -252,7 +252,7 @@
         },
         {
           "type": "explanation",
-          "body": "Observacions:\n\n1. L'arrel del verb (_ruh-, ruht, ruhen_) va a **primera posició**.\n2. El prefix (_aus_) va **al final** de la frase.\n3. El **pronom reflexiu** (_dich, euch, sich, uns_) va just darrere del verb (o del pronom _Sie/wir_ si és formal/invitatiu)."
+          "body": "Observacions:\n\n1. L'arrel del verb (_ruh-, ruht, ruhen_) va a **primera posició**.\n2. El prefix (_aus_) va **al final** de l'oració.\n3. El **pronom reflexiu** (_dich, euch, sich, uns_) va just darrere del verb (o del pronom _Sie/wir_ si és formal/invitatiu)."
         },
         {
           "type": "callout",

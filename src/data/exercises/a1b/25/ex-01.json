@@ -3,7 +3,7 @@
   "id": "A1b-25-ex-01",
   "topicId": "A1b-25",
   "title": "Präteritum o Perfekt? Tria la forma natural a l'oral",
-  "prompt": "Per a cada frase, tria la forma **natural en l'oral**. Recorda la regla d'or: ==_sein, haben_, modals i _es gibt_== → **Präteritum**. La resta de verbs → **Perfekt**.",
+  "prompt": "Per a cada oració, tria la forma **natural en l'oral**. Recorda la regla d'or: ==_sein, haben_, modals i _es gibt_== → **Präteritum**. La resta de verbs → **Perfekt**.",
   "difficulty": 2,
   "tags": ["prateritum", "perfekt", "contrast", "tria"],
   "stimulus": {
@@ -62,7 +62,7 @@
       "byResponse": [
         {
           "match": { "1": "bin" },
-          "message": "_bin_ és **present**, però la frase parla de _gestern_ (ahir). Amb _sein_ + passat a l'oral → ==**_war_**== (Präteritum), no _bin gewesen_."
+          "message": "_bin_ és **present**, però l'oració parla de _gestern_ (ahir). Amb _sein_ + passat a l'oral → ==**_war_**== (Präteritum), no _bin gewesen_."
         },
         {
           "match": { "1": "bin gewesen" },
@@ -94,7 +94,7 @@
         },
         {
           "match": { "9": "müssen" },
-          "message": "_müssen_ és l'infinitiu/present. La frase parla de quan erem petits → ==**_mussten_**== (Präteritum, _wir_)."
+          "message": "_müssen_ és l'infinitiu/present. L'oració parla de quan erem petits → ==**_mussten_**== (Präteritum, _wir_)."
         },
         {
           "match": { "9": "haben gemusst" },

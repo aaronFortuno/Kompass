@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "A1b-11-ex-05",
   "topicId": "A1b-11",
-  "title": "Tradueix la frase de comparació a l'alemany",
-  "prompt": "Tradueix cada frase catalana a l'alemany utilitzant l'estructura de comparació adequada. Escriu la frase sencera.",
+  "title": "Tradueix l'oració de comparació a l'alemany",
+  "prompt": "Tradueix cada oració catalana a l'alemany utilitzant l'estructura de comparació adequada. Escriu l'oració sencera.",
   "difficulty": 3,
   "tags": ["produccio", "traduccio", "comparacio", "sintesi"],
   "stimulus": {
@@ -86,7 +86,7 @@
       "references": ["A1b-11", "A1a-17", "A1a-31"]
     },
     "incorrect": {
-      "default": "Revisa cada frase:\n\na) _Anna ist **jünger als** Tom._ (Umlaut al komparativ)\nb) _Kaffee ist **so gut wie** Tee._ (igualtat, positiu)\nc) _Im Winter ist es **kälter als** im Herbst._ (Umlaut + komparativ)\nd) _Mein Opa ist **am ältesten** in der Familie._ (superlatiu: Umlaut + _-e-_)\ne) _Ich trinke **mehr** Wasser **als** Milch._ (irregular _viel → mehr_)\nf) _Ich trinke **lieber** Tee._ (irregular _gern → lieber_)\n\nRecorda que _jung_, _alt_, _kalt_ prenen Umlaut al komparativ, que _alt_ també insereix _-e-_ al superlatiu (_am ältesten_), i que _viel_ i _gern_ són irregulars purs (_mehr_, _lieber_).",
+      "default": "Revisa cada oració:\n\na) _Anna ist **jünger als** Tom._ (Umlaut al komparativ)\nb) _Kaffee ist **so gut wie** Tee._ (igualtat, positiu)\nc) _Im Winter ist es **kälter als** im Herbst._ (Umlaut + komparativ)\nd) _Mein Opa ist **am ältesten** in der Familie._ (superlatiu: Umlaut + _-e-_)\ne) _Ich trinke **mehr** Wasser **als** Milch._ (irregular _viel → mehr_)\nf) _Ich trinke **lieber** Tee._ (irregular _gern → lieber_)\n\nRecorda que _jung_, _alt_, _kalt_ prenen Umlaut al komparativ, que _alt_ també insereix _-e-_ al superlatiu (_am ältesten_), i que _viel_ i _gern_ són irregulars purs (_mehr_, _lieber_).",
       "byResponse": [
         {
           "match": { "5": "Ich trinke viel Wasser als Milch." },

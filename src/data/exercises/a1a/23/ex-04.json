@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "A1a-23-ex-04",
   "topicId": "A1a-23",
-  "title": "Escriu la frase amb inversió V2",
+  "title": "Escriu l'oració amb inversió V2",
   "prompt": "Tradueix \"Llavors em llevo\" a l'alemany. Usa **_Dann_** + _aufstehen_ (verb separable) + _ich_.",
   "difficulty": 3,
   "tags": ["v2", "inversió", "verb-separable", "aufstehen", "assessment"],
@@ -10,7 +10,7 @@
     "type": "textWithBlanks",
     "template": "\"Llavors em llevo.\" → {{answer}}",
     "blanks": [
-      { "id": "answer", "label": "frase completa en alemany, amb puntuació" }
+      { "id": "answer", "label": "oració completa en alemany, amb puntuació" }
     ]
   },
   "interaction": {

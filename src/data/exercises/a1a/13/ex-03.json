@@ -39,19 +39,19 @@
   },
   "feedback": {
     "correct": {
-      "message": "Molt bé. Has combinat els tres recursos: _Nein_ per respondre, _nicht_ per negar adjectius dins la frase, _un-_ com a alternativa lèxica, i _kein_ per al substantiu amb article indefinit en afirmatiu.",
+      "message": "Molt bé. Has combinat els tres recursos: _Nein_ per respondre, _nicht_ per negar adjectius dins l'oració, _un-_ com a alternativa lèxica, i _kein_ per al substantiu amb article indefinit en afirmatiu.",
       "references": ["A1a-13"]
     },
     "incorrect": {
-      "default": "Repassa: (1, 3) _Nein_ inicia la resposta a una pregunta tancada; (2) _unpraktisch_ és un adjectiu derivat, escrit tot junt; (4) per negar _schön_ dins una frase usem _nicht_, no _un-_ (no existeix _*unschön_ com a adjectiu habitual); (5) _Koffer_ és masculí i en afirmatiu aniria amb _ein_, així que la negació és _kein_.",
+      "default": "Repassa: (1, 3) _Nein_ inicia la resposta a una pregunta tancada; (2) _unpraktisch_ és un adjectiu derivat, escrit tot junt; (4) per negar _schön_ dins una oració usem _nicht_, no _un-_ (no existeix _*unschön_ com a adjectiu habitual); (5) _Koffer_ és masculí i en afirmatiu aniria amb _ein_, així que la negació és _kein_.",
       "byResponse": [
         {
           "match": { "1": "Nicht" },
-          "message": "_nicht_ és partícula interna, no paraula-frase. Per respondre a una pregunta tancada fem servir **_Nein_**."
+          "message": "_nicht_ és partícula interna, no paraula-oració. Per respondre a una pregunta tancada fem servir **_Nein_**."
         },
         {
           "match": { "1": "Kein" },
-          "message": "_kein_ nega substantius dins d'una frase; no serveix per encapçalar una resposta. La paraula de resposta és **_Nein_**."
+          "message": "_kein_ nega substantius dins d'una oració; no serveix per encapçalar una resposta. La paraula de resposta és **_Nein_**."
         },
         {
           "match": { "2": "kein praktisch" },

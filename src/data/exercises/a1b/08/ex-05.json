@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "A1b-8-ex-05",
   "topicId": "A1b-8",
-  "title": "Ordena la frase amb Am liebsten al principi",
-  "prompt": "Completa cada frase triant la peça correcta per a cada posició. Recorda: si _Am liebsten_ obre la frase (posició 1), el **verb conjugat** va immediatament després (posició 2) i el **subjecte** al tercer lloc.",
+  "title": "Ordena l'oració amb Am liebsten al principi",
+  "prompt": "Completa cada oració triant la peça correcta per a cada posició. Recorda: si _Am liebsten_ obre l'oració (posició 1), el **verb conjugat** va immediatament després (posició 2) i el **subjecte** al tercer lloc.",
   "difficulty": 2,
   "tags": ["am-liebsten", "inversio", "verb-segona-posicio", "a1a-18"],
   "stimulus": {
@@ -55,7 +55,7 @@
       "references": ["A1b-8"]
     },
     "incorrect": {
-      "default": "Regla del verb en segona posició: si _Am liebsten_ obre la frase (posició 1), el **verb conjugat** ha d'anar immediatament després (posició 2), i el **subjecte** al tercer lloc. _**Am liebsten** [1] **fahre** [2] **ich** [3] mit dem Fahrrad_. No diguis \\*_Am liebsten ich fahre_.",
+      "default": "Regla del verb en segona posició: si _Am liebsten_ obre l'oració (posició 1), el **verb conjugat** ha d'anar immediatament després (posició 2), i el **subjecte** al tercer lloc. _**Am liebsten** [1] **fahre** [2] **ich** [3] mit dem Fahrrad_. No diguis \\*_Am liebsten ich fahre_.",
       "byResponse": [
         {
           "match": { "1v": "ich" },

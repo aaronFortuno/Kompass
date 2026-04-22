@@ -30,7 +30,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Molt bé! _drei ==Flaschen== Cola_ (envàs → plural normal) i _zwei ==Kilo== Orangen_ (mesura → singular invariable). Les dues regles combinades en una mateixa frase.",
+      "message": "Molt bé! _drei ==Flaschen== Cola_ (envàs → plural normal) i _zwei ==Kilo== Orangen_ (mesura → singular invariable). Les dues regles combinades en una mateixa oració.",
       "references": ["A1a-29"]
     },
     "incorrect": {

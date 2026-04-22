@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "A1a-29-ex-06",
   "topicId": "A1a-29",
-  "title": "Corregeix: frases amb errors típics",
-  "prompt": "Per a cada frase, digues si és correcta o conté un error típic (preposició sobrera o plural mal aplicat).",
+  "title": "Corregeix: oracions amb errors típics",
+  "prompt": "Per a cada oració, digues si és correcta o conté un error típic (preposició sobrera o plural mal aplicat).",
   "difficulty": 2,
   "tags": ["mengenangaben", "errors", "truefalse", "assessment"],
   "stimulus": {

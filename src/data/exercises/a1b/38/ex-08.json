@@ -3,7 +3,7 @@
   "id": "A1b-38-ex-08",
   "topicId": "A1b-38",
   "title": "Ordre al Mittelfeld: Dativ → Akkusativ",
-  "prompt": "Ordena les peces per formar una frase correcta. Regla d'or: quan hi ha **datiu + acusatiu** (tots dos substantius), l'ordre és ==**datiu abans que acusatiu**==. Escriu la frase completa amb majúscula inicial i punt final.",
+  "prompt": "Ordena les peces per formar una oració correcta. Regla d'or: quan hi ha **datiu + acusatiu** (tots dos substantius), l'ordre és ==**datiu abans que acusatiu**==. Escriu l'oració completa amb majúscula inicial i punt final.",
   "difficulty": 3,
   "tags": ["mittelfeld", "ordre", "dat-akk", "produccio", "assessment"],
   "stimulus": {

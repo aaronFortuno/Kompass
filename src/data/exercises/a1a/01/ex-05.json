@@ -11,10 +11,10 @@
     "template": "— Hallo! Wie heißt {{1}}?\n— {{2}} heiße Lena. Und wie ist {{3}} Name?\n— Mein Name ist Tim. Das da ist Paul, {{4}} Telefonnummer ist 0176 22 33.\n— Und wer ist die Frau?\n— Das ist Sara. {{5}} Adresse ist Goethestraße 3, und {{6}} Vorname ist Sara Meier.",
     "blanks": [
       { "id": "1", "label": "2a sg. informal (tu)" },
-      { "id": "2", "label": "1a sg. (jo), inici de frase" },
+      { "id": "2", "label": "1a sg. (jo), inici de oració" },
       { "id": "3", "label": "possessiu 2a sg. + der Name" },
       { "id": "4", "label": "possessiu d'ell (Paul) + die Telefonnummer" },
-      { "id": "5", "label": "possessiu d'ella (Sara) + die Adresse, inici de frase" },
+      { "id": "5", "label": "possessiu d'ella (Sara) + die Adresse, inici de oració" },
       { "id": "6", "label": "possessiu d'ella (Sara) + der Vorname" }
     ]
   },
@@ -45,7 +45,7 @@
       "message": "Molt bé! Has combinat personal i possessiu en tracte informal i has aplicat la doble concordança: _sein/ihr_ segons el posseïdor i _-e_ segons el gènere del substantiu."
     },
     "incorrect": {
-      "default": "Pistes: (a) entre amics, tracte **du** (sense majúscula); (b) _der Name, der Vorname_ són masculins → forma curta; _die Adresse, die Telefonnummer_ són femenins → forma amb _-e_; (c) el possessiu d'en Paul (home) és ==s==ein-, el de la Sara (dona) és i==hr==-; (d) a inici de frase tot pronom va amb majúscula, al mig de frase _ich_ és minúscula."
+      "default": "Pistes: (a) entre amics, tracte **du** (sense majúscula); (b) _der Name, der Vorname_ són masculins → forma curta; _die Adresse, die Telefonnummer_ són femenins → forma amb _-e_; (c) el possessiu d'en Paul (home) és ==s==ein-, el de la Sara (dona) és i==hr==-; (d) a inici de oració tot pronom va amb majúscula, al mig de oració _ich_ és minúscula."
     }
   }
 }

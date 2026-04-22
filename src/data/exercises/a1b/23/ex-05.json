@@ -3,7 +3,7 @@
   "id": "A1b-23-ex-05",
   "topicId": "A1b-23",
   "title": "Reconèixer el parany — encerta o falla?",
-  "prompt": "Llegeix cada frase fixant-te en la preposició **en negreta** i aplica mentalment la **regla ingènua** (_Wo? → Dat, Wohin? → Akk_). Per a cada ítem, decideix si aquesta regla dona el resultat correcte **per casualitat** o si **falla**. Tingues en compte que \"encertar per casualitat\" també és perillós: reforça el mal hàbit.",
+  "prompt": "Llegeix cada oració fixant-te en la preposició **en negreta** i aplica mentalment la **regla ingènua** (_Wo? → Dat, Wohin? → Akk_). Per a cada ítem, decideix si aquesta regla dona el resultat correcte **per casualitat** o si **falla**. Tingues en compte que \"encertar per casualitat\" també és perillós: reforça el mal hàbit.",
   "difficulty": 3,
   "tags": ["metacognicio", "parany", "regla-ingenua"],
   "stimulus": {

@@ -3,7 +3,7 @@
   "id": "A1b-15-ex-07",
   "topicId": "A1b-15",
   "title": "Perfil professional — síntesi lliure de modals",
-  "prompt": "Laura es presenta a una entrevista de feina. Escriu la forma correcta del modal indicat entre parèntesis en cada buit. Atenció a les majúscules a principi de frase o de pregunta.",
+  "prompt": "Laura es presenta a una entrevista de feina. Escriu la forma correcta del modal indicat entre parèntesis en cada buit. Atenció a les majúscules a principi de oració o de pregunta.",
   "difficulty": 3,
   "tags": ["modalverben", "sintesi", "perfil-professional", "avaluacio"],
   "stimulus": {
@@ -58,7 +58,7 @@
       "byResponse": [
         {
           "match": { "2": "muss" },
-          "message": "_muss_ implicaria obligació externa; la frase presenta un **projecte personal** (decisió de Laura) → _will_."
+          "message": "_muss_ implicaria obligació externa; l'oració presenta un **projecte personal** (decisió de Laura) → _will_."
         },
         {
           "match": { "4": "will" },
@@ -70,7 +70,7 @@
         },
         {
           "match": { "6": "muss" },
-          "message": "_man muss nicht_ voldria dir \"no cal\". Però la frase continua _sie sind Pflicht_ (són obligatoris): és una **prohibició** de treballar sense alemany → _darf nicht_."
+          "message": "_man muss nicht_ voldria dir \"no cal\". Però l'oració continua _sie sind Pflicht_ (són obligatoris): és una **prohibició** de treballar sense alemany → _darf nicht_."
         },
         {
           "match": { "8": "Muss" },

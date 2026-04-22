@@ -3,7 +3,7 @@
   "id": "A1a-25-ex-04",
   "topicId": "A1a-25",
   "title": "Inversió + Satzklammer amb _aufräumen_",
-  "prompt": "La frase comença amb un complement de temps. Aplica inversió (verb a la 2, subjecte a la 3) i tanca la Satzklammer amb el prefix al final. Verb: _aufräumen_ (endreçar).",
+  "prompt": "L'oració comença amb un complement de temps. Aplica inversió (verb a la 2, subjecte a la 3) i tanca la Satzklammer amb el prefix al final. Verb: _aufräumen_ (endreçar).",
   "difficulty": 3,
   "tags": ["satzklammer", "separables", "inversio", "assessment", "aufraeumen"],
   "stimulus": {
@@ -12,7 +12,7 @@
     "blanks": [
       { "id": "1", "label": "posició 2 — arrel conjugada" },
       { "id": "2", "label": "posició 3 — subjecte" },
-      { "id": "3", "label": "final de la frase — prefix" }
+      { "id": "3", "label": "final de l'oració — prefix" }
     ]
   },
   "interaction": {
@@ -40,7 +40,7 @@
       "byResponse": [
         {
           "match": { "1": "aufräume" },
-          "message": "Error típic: no es pot deixar el verb sencer. En frase enunciativa, _aufräumen_ **s'ha de partir**: _räume_ a la posició 2, _auf_ al final.",
+          "message": "Error típic: no es pot deixar el verb sencer. En oració enunciativa, _aufräumen_ **s'ha de partir**: _räume_ a la posició 2, _auf_ al final.",
           "references": ["A1a-25"]
         },
         {

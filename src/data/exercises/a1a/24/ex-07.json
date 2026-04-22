@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "A1a-24-ex-07",
   "topicId": "A1a-24",
-  "title": "Emparellar frases DE amb traduccions CA",
-  "prompt": "Relaciona cada frase alemanya amb la seva traducció catalana. Fixa't en el matís que aporta _schon_, _noch_ o _erst_.",
+  "title": "Emparellar oracions DE amb traduccions CA",
+  "prompt": "Relaciona cada oració alemanya amb la seva traducció catalana. Fixa't en el matís que aporta _schon_, _noch_ o _erst_.",
   "difficulty": 3,
   "tags": ["schon", "noch", "erst", "matchpairs", "assessment"],
   "stimulus": {
@@ -11,22 +11,22 @@
     "cards": [
       {
         "id": "de-schon-muede",
-        "group": "Frase alemanya",
+        "group": "Oració alemanya",
         "content": { "type": "text", "content": "_Ich bin **schon** müde._" }
       },
       {
         "id": "de-noch-muede",
-        "group": "Frase alemanya",
+        "group": "Oració alemanya",
         "content": { "type": "text", "content": "_Ich bin **noch** müde._" }
       },
       {
         "id": "de-erst-zehn",
-        "group": "Frase alemanya",
+        "group": "Oració alemanya",
         "content": { "type": "text", "content": "_Ich stehe **erst** um 10 Uhr auf._" }
       },
       {
         "id": "de-schon-sechs",
-        "group": "Frase alemanya",
+        "group": "Oració alemanya",
         "content": { "type": "text", "content": "_Ich arbeite **schon** um 6 Uhr._" }
       },
       {
@@ -53,7 +53,7 @@
   },
   "interaction": {
     "type": "matchPairs",
-    "groupALabel": "Frase alemanya",
+    "groupALabel": "Oració alemanya",
     "groupBLabel": "Traducció catalana"
   },
   "validation": {

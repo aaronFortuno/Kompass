@@ -10,10 +10,10 @@
     "type": "textWithBlanks",
     "template": "1. _Ich schwimme {{1}}, aber ich laufe lieber._ (= Nedo amb gust, però…)\n2. _Der Film ist {{2}} als das Buch._ (= El film és millor que el llibre.)\n3. _{{3}} höre ich klassische Musik. Rock mag ich nicht so sehr._ (= El que més m'agrada és escoltar música clàssica.)\n4. _{{4}} finde ich Pizza. Pasta finde ich auch gut, aber Pizza ist Nummer eins._ (= La que em sembla millor de totes és la pizza.)",
     "blanks": [
-      { "id": "1", "label": "forma adequada a la frase 1" },
-      { "id": "2", "label": "forma adequada a la frase 2" },
-      { "id": "3", "label": "forma adequada a la frase 3" },
-      { "id": "4", "label": "forma adequada a la frase 4" }
+      { "id": "1", "label": "forma adequada a l'oració 1" },
+      { "id": "2", "label": "forma adequada a l'oració 2" },
+      { "id": "3", "label": "forma adequada a l'oració 3" },
+      { "id": "4", "label": "forma adequada a l'oració 4" }
     ]
   },
   "interaction": {
@@ -39,7 +39,7 @@
       "message": "Excel·lent. Has encertat les quatre distincions clau del tema: (1) plaer positiu → _gern_; (2) qualitat comparativa → _besser_ (amb _als_!); (3) plaer superlatiu → _am liebsten_; (4) qualitat superlativa → _am besten_. Això és el que necessites per comparar en alemany al dia a dia."
     },
     "incorrect": {
-      "default": "Fes dues preguntes a cada frase: (a) parlem de **qualitat** (_gut / besser / am besten_) o de **plaer** (_gern / lieber / am liebsten_)? (b) és grau **positiu** (fet sec), **comparatiu** (amb _als_, dos elements) o **superlatiu** (amb _am_, un d'elegit entre tots)? A la 1 el context diu 'amb gust' → plaer positiu → _gern_. A la 2 hi ha _als_ → comparatiu de qualitat → _besser_. A la 3 i 4, 'el que més / la que em sembla millor' → superlatius, un de plaer (_am liebsten_) i un de qualitat (_am besten_)."
+      "default": "Fes dues preguntes a cada oració: (a) parlem de **qualitat** (_gut / besser / am besten_) o de **plaer** (_gern / lieber / am liebsten_)? (b) és grau **positiu** (fet sec), **comparatiu** (amb _als_, dos elements) o **superlatiu** (amb _am_, un d'elegit entre tots)? A la 1 el context diu 'amb gust' → plaer positiu → _gern_. A la 2 hi ha _als_ → comparatiu de qualitat → _besser_. A la 3 i 4, 'el que més / la que em sembla millor' → superlatius, un de plaer (_am liebsten_) i un de qualitat (_am besten_)."
     }
   }
 }

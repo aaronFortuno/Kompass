@@ -3,7 +3,7 @@
   "id": "A1b-41-ex-05",
   "topicId": "A1b-41",
   "title": "Completa: verb conjugat + complement en datiu",
-  "prompt": "Completa cada frase amb ==el verb conjugat== i ==el complement declinat en datiu== (article/possessiu + substantiu, afegint la _-n_ del plural si cal).",
+  "prompt": "Completa cada oració amb ==el verb conjugat== i ==el complement declinat en datiu== (article/possessiu + substantiu, afegint la _-n_ del plural si cal).",
   "difficulty": 3,
   "tags": ["datiu", "produccio", "typeIn", "verbs-datiu"],
   "stimulus": {

@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "A1b-25-ex-06",
   "topicId": "A1b-25",
-  "title": "Reescriu les frases en passat (Präteritum)",
-  "prompt": "Reescriu cada verb en **Präteritum**. Totes les frases porten _sein, haben_, un modal o _es gibt_, així que toca Präteritum (no Perfekt). Escriu ==**només la forma verbal**==, mantenint la mateixa persona.",
+  "title": "Reescriu les oracions en passat (Präteritum)",
+  "prompt": "Reescriu cada verb en **Präteritum**. Totes les oracions porten _sein, haben_, un modal o _es gibt_, així que toca Präteritum (no Perfekt). Escriu ==**només la forma verbal**==, mantenint la mateixa persona.",
   "difficulty": 2,
   "tags": ["rewrite", "prateritum", "conjugacio", "typeIn"],
   "stimulus": {

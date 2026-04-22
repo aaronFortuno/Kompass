@@ -16,11 +16,11 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Enfoc: tanquem el quadre pronominal\n\nFins ara has vist els pronoms personals ==en nominatiu== (_ich, du, er, sie, es, wir, ihr, sie, Sie_ — A1a-1) i has començat a veure'n les formes d'objecte (A1b-36). Aquesta lliçó ==tanca el quadre==: **totes les formes, en els tres casos que domines ara mateix**. Nominatiu (subjecte), acusatiu (objecte directe), datiu (objecte indirecte).\n\nÉs una taula petita però ==la fas servir en pràcticament totes les frases==:\n\n- _Ich liebe ==dich==._ (acc.)\n- _Er hilft ==mir==._ (dat.)\n- _Wir sehen ==sie==._ (acc.)\n\nDominar-la és la diferència entre parlar d'estudi i parlar amb fluïdesa."
+          "body": "#### Enfoc: tanquem el quadre pronominal\n\nFins ara has vist els pronoms personals ==en nominatiu== (_ich, du, er, sie, es, wir, ihr, sie, Sie_ — A1a-1) i has començat a veure'n les formes d'objecte (A1b-36). Aquesta lliçó ==tanca el quadre==: **totes les formes, en els tres casos que domines ara mateix**. Nominatiu (subjecte), acusatiu (objecte directe), datiu (objecte indirecte).\n\nÉs una taula petita però ==la fas servir en pràcticament totes les oracions==:\n\n- _Ich liebe ==dich==._ (acc.)\n- _Er hilft ==mir==._ (dat.)\n- _Wir sehen ==sie==._ (acc.)\n\nDominar-la és la diferència entre parlar d'estudi i parlar amb fluïdesa."
         },
         {
           "type": "explanation",
-          "body": "##### Per què una lliçó dedicada a això\n\nA A1a-1 vas aprendre els **nou** pronoms personals en nominatiu: les formes que fas servir quan el pronom és ==el subjecte== de la frase (qui fa l'acció).\n\n- _==Ich== lerne Deutsch._ — Jo estudio alemany.\n- _==Sie== wohnt in Berlin._ — Ella viu a Berlín.\n\nA A1b-36 vas fer el primer tast de les formes que apareixen quan el pronom ==no és el subjecte==, sinó ==un objecte== del verb. L'alemany, a diferència del català modern, **declina els pronoms personals**: canvien de forma segons la funció sintàctica, igual que nosaltres distingim _jo / em / mi_ o _tu / et / tu_.\n\nAquesta lliçó fa ==tres coses==:\n\n1. Presenta la **taula completa** dels 9 pronoms × 3 casos = 27 formes.\n2. Connecta cada cas amb una **pregunta guia** (_wer?_, _wen?_, _wem?_) perquè sàpigues quan aplicar cada forma.\n3. Ressalta els paranys on els catalanoparlants ensopeguem."
+          "body": "##### Per què una lliçó dedicada a això\n\nA A1a-1 vas aprendre els **nou** pronoms personals en nominatiu: les formes que fas servir quan el pronom és ==el subjecte== de l'oració (qui fa l'acció).\n\n- _==Ich== lerne Deutsch._ — Jo estudio alemany.\n- _==Sie== wohnt in Berlin._ — Ella viu a Berlín.\n\nA A1b-36 vas fer el primer tast de les formes que apareixen quan el pronom ==no és el subjecte==, sinó ==un objecte== del verb. L'alemany, a diferència del català modern, **declina els pronoms personals**: canvien de forma segons la funció sintàctica, igual que nosaltres distingim _jo / em / mi_ o _tu / et / tu_.\n\nAquesta lliçó fa ==tres coses==:\n\n1. Presenta la **taula completa** dels 9 pronoms × 3 casos = 27 formes.\n2. Connecta cada cas amb una **pregunta guia** (_wer?_, _wen?_, _wem?_) perquè sàpigues quan aplicar cada forma.\n3. Ressalta els paranys on els catalanoparlants ensopeguem."
         },
         {
           "type": "callout",
@@ -193,7 +193,7 @@
           "type": "callout",
           "variant": "danger",
           "title": "Paranys 4, 5, 6 i 7",
-          "body": "**4. _ihr_ (vosaltres) quan toca _euch_.** _\"Us ajudo\"_ no és _Ich helfe **ihr**_ ❌ — _ihr_ en aquesta frase seria _a ella_! En acusatiu i datiu, ==el plural _ihr_ es converteix en _euch_==: _Ich helfe ==euch==._\n\n**5. _ihnen_ (a ells) vs _Ihnen_ (a vostè).** Totes dues formes sonen iguals; només canvia la majúscula. _Ich danke ==ihnen==_ (a ells) · _Ich danke ==Ihnen==_ (a vostè).\n\n**6. Oblidar que les preposicions manen.** Després d'una preposició de datiu, el pronom va en datiu encara que semànticament sigui \"objecte directe\" en català: _Kommst du ==mit mich==?_ ❌ → _Kommst du ==mit mir==?_ ✅\n\n**7. Dir _Das ist für ich_.** _Für_ demana acusatiu: _Das ist ==für mich==._ ✅"
+          "body": "**4. _ihr_ (vosaltres) quan toca _euch_.** _\"Us ajudo\"_ no és _Ich helfe **ihr**_ ❌ — _ihr_ en aquesta oració seria _a ella_! En acusatiu i datiu, ==el plural _ihr_ es converteix en _euch_==: _Ich helfe ==euch==._\n\n**5. _ihnen_ (a ells) vs _Ihnen_ (a vostè).** Totes dues formes sonen iguals; només canvia la majúscula. _Ich danke ==ihnen==_ (a ells) · _Ich danke ==Ihnen==_ (a vostè).\n\n**6. Oblidar que les preposicions manen.** Després d'una preposició de datiu, el pronom va en datiu encara que semànticament sigui \"objecte directe\" en català: _Kommst du ==mit mich==?_ ❌ → _Kommst du ==mit mir==?_ ✅\n\n**7. Dir _Das ist für ich_.** _Für_ demana acusatiu: _Das ist ==für mich==._ ✅"
         }
       ]
     },
@@ -250,7 +250,7 @@
             ["**3. Mnemo acusatiu**", "==Només cinc formes noves==: _mich, dich, ihn, uns, euch_. _sie, es, sie, Sie_ es queden igual."],
             ["**4. Mnemo datiu**", "==Totes acaben en consonant== (_-r, -m, -n, -s_). Cap forma de datiu és una vocal pura."],
             ["**5. Gènere abans que traducció**", "Per substituir un substantiu per un pronom, mira primer ==el gènere gramatical alemany==, no la traducció catalana. _Der Tisch_ → _ihn_, no _la_."],
-            ["**6. Cortesia amb majúscula**", "_Sie_ i _Ihnen_ sempre amb majúscula inicial, fins i tot al mig de frase."]
+            ["**6. Cortesia amb majúscula**", "_Sie_ i _Ihnen_ sempre amb majúscula inicial, fins i tot al mig de oració."]
           ]
         },
         {

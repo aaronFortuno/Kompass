@@ -3,7 +3,7 @@
   "id": "A1b-34-ex-05",
   "topicId": "A1b-34",
   "title": "Tradueix del català",
-  "prompt": "Tradueix cada frase a l'alemany. Revisa tres coses: (1) la ==**preposició**== (durada vs moment), (2) el ==**temps verbal**== (present vs Perfekt), (3) el ==**datiu**== (_-n_ al plural: _Jahren, Monaten_). Escriu la frase sencera amb puntuació.",
+  "prompt": "Tradueix cada oració a l'alemany. Revisa tres coses: (1) la ==**preposició**== (durada vs moment), (2) el ==**temps verbal**== (present vs Perfekt), (3) el ==**datiu**== (_-n_ al plural: _Jahren, Monaten_). Escriu l'oració sencera amb puntuació.",
   "difficulty": 3,
   "tags": ["seit-vor", "traduccio", "typeIn", "produccio"],
   "stimulus": {

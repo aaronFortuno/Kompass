@@ -3,7 +3,7 @@
   "id": "A1b-2-ex-04",
   "topicId": "A1b-2",
   "title": "Cinc adreces: _im_, _am_ o _in der_",
-  "prompt": "Completa cada frase amb _im_, _am_ o _in der_ segons el tipus de via.",
+  "prompt": "Completa cada oració amb _im_, _am_ o _in der_ segons el tipus de via.",
   "difficulty": 2,
   "tags": ["adresses", "datiu", "dropdownfill", "assessment"],
   "stimulus": {

@@ -54,7 +54,7 @@
       "references": ["A1b-5"]
     },
     "incorrect": {
-      "default": "Dues preguntes per a cada frase: (1) quin verb és? → si és _gefallen_, pronom en **datiu** (_mir, dir, ihm_); si és _interessieren_, pronom en **acusatiu** (_mich, dich, ihn_). (2) El que agrada/interessa és singular o plural? → concordança del verb en conseqüència (_gefällt_ sg / _gefallen_ pl; _interessiert_ sg / _interessieren_ pl)."
+      "default": "Dues preguntes per a cada oració: (1) quin verb és? → si és _gefallen_, pronom en **datiu** (_mir, dir, ihm_); si és _interessieren_, pronom en **acusatiu** (_mich, dich, ihn_). (2) El que agrada/interessa és singular o plural? → concordança del verb en conseqüència (_gefällt_ sg / _gefallen_ pl; _interessiert_ sg / _interessieren_ pl)."
     }
   }
 }

@@ -15,7 +15,7 @@
       { "id": "3", "label": "_sprechen_, 3a sg." },
       { "id": "4", "label": "_lesen_, 2a sg." },
       { "id": "5", "label": "_lesen_, 1a sg." },
-      { "id": "6", "label": "_sprechen_, 2a sg. (inici de frase)" }
+      { "id": "6", "label": "_sprechen_, 2a sg. (inici de oració)" }
     ]
   },
   "interaction": {

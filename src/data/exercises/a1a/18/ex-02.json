@@ -33,7 +33,7 @@
       "message": "Perfecte! _kann_ obre el claudàtor a la posició 2 (conjugat amb _ich_); _kommen_ el tanca al final (en infinitiu, invariable)."
     },
     "incorrect": {
-      "default": "Recorda: el verb **modal** es conjuga amb el subjecte (_ich kann_), i el verb **principal** es queda en infinitiu al final de la frase (_kommen_).",
+      "default": "Recorda: el verb **modal** es conjuga amb el subjecte (_ich kann_), i el verb **principal** es queda en infinitiu al final de l'oració (_kommen_).",
       "byResponse": [
         {
           "match": { "2": "komme" },

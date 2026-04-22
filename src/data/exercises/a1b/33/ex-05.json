@@ -3,7 +3,7 @@
   "id": "A1b-33-ex-05",
   "topicId": "A1b-33",
   "title": "Tradueix del català a l'alemany",
-  "prompt": "Tradueix cada frase a l'alemany. ==**Tres verificacions**== abans d'escriure: (1) durada pura → **acusatiu sense preposició**; (2) _seit_ → **datiu + Präsens**; (3) interval → **_von… bis…_**. Escriu la frase sencera amb puntuació final.",
+  "prompt": "Tradueix cada oració a l'alemany. ==**Tres verificacions**== abans d'escriure: (1) durada pura → **acusatiu sense preposició**; (2) _seit_ → **datiu + Präsens**; (3) interval → **_von… bis…_**. Escriu l'oració sencera amb puntuació final.",
   "difficulty": 3,
   "tags": ["traduccio", "typeIn", "produccio", "wie-lange"],
   "stimulus": {

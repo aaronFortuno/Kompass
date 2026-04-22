@@ -3,19 +3,19 @@
   "id": "A1b-30-ex-05",
   "topicId": "A1b-30",
   "title": "Troba l'error (o confirma que és correcta)",
-  "prompt": "Per a cada frase, identifica què hi passa: (a) l'**auxiliar no és a la posició 2** (falta la inversió), (b) el **participi no és al final**, o (c) la frase és ==**correcta**==.",
+  "prompt": "Per a cada oració, identifica què hi passa: (a) l'**auxiliar no és a la posició 2** (falta la inversió), (b) el **participi no és al final**, o (c) l'oració és ==**correcta**==.",
   "difficulty": 3,
   "tags": ["perfekt", "errors", "ordre", "inversio"],
   "stimulus": {
     "type": "textWithBlanks",
     "template": "1. _Gestern ich habe Pizza gegessen._ → {{1}}\n\n2. _Ich habe gegessen gestern Pizza._ → {{2}}\n\n3. _Am Wochenende sind wir nach Berlin gefahren._ → {{3}}\n\n4. _Wir haben Pizza gegessen mit Anna._ → {{4}}\n\n5. _Heute habe ich Deutsch gelernt._ → {{5}}\n\n6. _Sie ist gegangen ins Kino gestern._ → {{6}}",
     "blanks": [
-      { "id": "1", "label": "Frase 1" },
-      { "id": "2", "label": "Frase 2" },
-      { "id": "3", "label": "Frase 3" },
-      { "id": "4", "label": "Frase 4" },
-      { "id": "5", "label": "Frase 5" },
-      { "id": "6", "label": "Frase 6" }
+      { "id": "1", "label": "Oració 1" },
+      { "id": "2", "label": "Oració 2" },
+      { "id": "3", "label": "Oració 3" },
+      { "id": "4", "label": "Oració 4" },
+      { "id": "5", "label": "Oració 5" },
+      { "id": "6", "label": "Oració 6" }
     ]
   },
   "interaction": {
@@ -100,11 +100,11 @@
         },
         {
           "match": { "3": "(a) l'auxiliar no és a la posició 2" },
-          "message": "_Am Wochenende_ (pos. 1) + _sind_ (pos. 2) + _wir_ (pos. 3) + _nach Berlin_ + _gefahren_ (final). La frase és **correcta** — és l'exemple perfecte d'inversió."
+          "message": "_Am Wochenende_ (pos. 1) + _sind_ (pos. 2) + _wir_ (pos. 3) + _nach Berlin_ + _gefahren_ (final). L'oració és **correcta** — és l'exemple perfecte d'inversió."
         },
         {
           "match": { "3": "(b) el participi no és al final" },
-          "message": "_gefahren_ sí que és al final (després de _nach Berlin_). La frase és **correcta**."
+          "message": "_gefahren_ sí que és al final (després de _nach Berlin_). L'oració és **correcta**."
         },
         {
           "match": { "4": "(c) correcta" },

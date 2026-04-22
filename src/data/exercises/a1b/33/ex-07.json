@@ -3,7 +3,7 @@
   "id": "A1b-33-ex-07",
   "topicId": "A1b-33",
   "title": "Troba l'error (o confirma que és correcta)",
-  "prompt": "Per a cada frase, identifica què hi passa: (a) ==**cas equivocat**==, (b) ==**preposició sobrant**==, (c) ==**temps verbal equivocat**==, o (d) ==**correcta**==.",
+  "prompt": "Per a cada oració, identifica què hi passa: (a) ==**cas equivocat**==, (b) ==**preposició sobrant**==, (c) ==**temps verbal equivocat**==, o (d) ==**correcta**==.",
   "difficulty": 3,
   "tags": ["errors", "seit", "acusatiu", "perfekt", "wie-lange"],
   "stimulus": {
@@ -90,7 +90,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Perfecte. ==**Els tres errors rei**==: (1) _seit_ sempre amb **datiu**, inclòs el _-n_ del datiu plural; (2) amb _seit_ es fa servir **Präsens**, no Perfekt; (3) la durada nua va en **acusatiu** (_einen Monat_, no _ein Monat_). La frase 1 (_für einen Monat_) tècnicament existeix, però a A1 el patró net és acusatiu sol.",
+      "message": "Perfecte. ==**Els tres errors rei**==: (1) _seit_ sempre amb **datiu**, inclòs el _-n_ del datiu plural; (2) amb _seit_ es fa servir **Präsens**, no Perfekt; (3) la durada nua va en **acusatiu** (_einen Monat_, no _ein Monat_). L'oració 1 (_für einen Monat_) tècnicament existeix, però a A1 el patró net és acusatiu sol.",
       "references": ["A1b-33"]
     },
     "incorrect": {

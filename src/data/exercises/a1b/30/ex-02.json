@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "A1b-30-ex-02",
   "topicId": "A1b-30",
-  "title": "Construir frases en Perfekt (sense inversió)",
-  "prompt": "Tria la frase ==**correctament ordenada**==. Recorda: l'**auxiliar** va a la **posició 2** (just després del subjecte) i el **participi** va al **final** de la frase.",
+  "title": "Construir oracions en Perfekt (sense inversió)",
+  "prompt": "Tria l'oració ==**correctament ordenada**==. Recorda: l'**auxiliar** va a la **posició 2** (just després del subjecte) i el **participi** va al **final** de l'oració.",
   "difficulty": 2,
   "tags": ["perfekt", "ordre", "satzklammer", "V2"],
   "stimulus": {
@@ -88,7 +88,7 @@
       "references": ["A1b-30"]
     },
     "incorrect": {
-      "default": "Comprova dues coses: (1) l'auxiliar (_habe / hat / bin / sind..._) ha d'anar a la ==**posició 2**==, just després del subjecte; (2) el participi (_gegessen, gegangen, getrunken..._) ha d'anar al ==**final**== de la frase. Res de posar el participi enmig o darrere l'auxiliar.",
+      "default": "Comprova dues coses: (1) l'auxiliar (_habe / hat / bin / sind..._) ha d'anar a la ==**posició 2**==, just després del subjecte; (2) el participi (_gegessen, gegangen, getrunken..._) ha d'anar al ==**final**== de l'oració. Res de posar el participi enmig o darrere l'auxiliar.",
       "byResponse": [
         {
           "match": { "1": "Ich habe gegessen gestern Pizza." },

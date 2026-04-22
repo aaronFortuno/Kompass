@@ -3,7 +3,7 @@
   "id": "A1b-41-ex-02",
   "topicId": "A1b-41",
   "title": "Article o possessiu en datiu",
-  "prompt": "Completa cada frase amb l'==article o possessiu== correcte en ==**datiu**==. Recorda: **masc./neut.** → _dem/einem/meinem_, **fem.** → _der/einer/meiner_, **plural** → _den/meinen_ + _-n_ al substantiu.",
+  "prompt": "Completa cada oració amb l'==article o possessiu== correcte en ==**datiu**==. Recorda: **masc./neut.** → _dem/einem/meinem_, **fem.** → _der/einer/meiner_, **plural** → _den/meinen_ + _-n_ al substantiu.",
   "difficulty": 2,
   "tags": ["datiu", "articles", "possessius", "dropdownFill"],
   "stimulus": {

@@ -14,7 +14,7 @@
       { "id": "2", "label": "posseïdor _du_ (al Marco), das Buch (neutre)" },
       { "id": "3", "label": "resposta en 1a sg. (_ich_), das Buch (neutre)" },
       { "id": "4", "label": "posseïdor _ihr_ vosaltres (a l'Anna i la Lisa), die Stifte (plural)" },
-      { "id": "5", "label": "resposta en 1a pl. (_wir_, l'Anna i la Lisa), die Stifte (plural), inici de frase" },
+      { "id": "5", "label": "resposta en 1a pl. (_wir_, l'Anna i la Lisa), die Stifte (plural), inici de oració" },
       { "id": "6", "label": "cortesia al Sr. Müller, die Adresse (fem.)" }
     ]
   },
@@ -62,7 +62,7 @@
         },
         {
           "match": { "5": "Unser" },
-          "message": "_die Stifte_ és plural. Cal _-e_: _Unsere_ (inici de frase, per això va en majúscula)."
+          "message": "_die Stifte_ és plural. Cal _-e_: _Unsere_ (inici de oració, per això va en majúscula)."
         }
       ]
     }

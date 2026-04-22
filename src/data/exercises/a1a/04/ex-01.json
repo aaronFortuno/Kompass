@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "A1a-4-ex-01",
   "topicId": "A1a-4",
-  "title": "On va _nicht_ a la frase?",
+  "title": "On va _nicht_ a l'oració?",
   "prompt": "Tria en quin dels dos buits va _nicht_. L'altre buit queda com `—` (buit).",
   "difficulty": 1,
   "tags": ["nicht", "posicio"],
@@ -10,14 +10,14 @@
     "type": "textWithBlanks",
     "template": "Ich {{1a}} arbeite {{1b}}.\nIch bin {{2a}} verheiratet {{2b}}.\nWir leben {{3a}} zusammen {{3b}}.\nIch komme {{4a}} aus Berlin {{4b}}.",
     "blanks": [
-      { "id": "1a", "label": "frase 1 · abans del verb" },
-      { "id": "1b", "label": "frase 1 · després del verb" },
-      { "id": "2a", "label": "frase 2 · abans de _verheiratet_" },
-      { "id": "2b", "label": "frase 2 · després de _verheiratet_" },
-      { "id": "3a", "label": "frase 3 · abans de _zusammen_" },
-      { "id": "3b", "label": "frase 3 · després de _zusammen_" },
-      { "id": "4a", "label": "frase 4 · abans de _aus Berlin_" },
-      { "id": "4b", "label": "frase 4 · després de _aus Berlin_" }
+      { "id": "1a", "label": "oració 1 · abans del verb" },
+      { "id": "1b", "label": "oració 1 · després del verb" },
+      { "id": "2a", "label": "oració 2 · abans de _verheiratet_" },
+      { "id": "2b", "label": "oració 2 · després de _verheiratet_" },
+      { "id": "3a", "label": "oració 3 · abans de _zusammen_" },
+      { "id": "3b", "label": "oració 3 · després de _zusammen_" },
+      { "id": "4a", "label": "oració 4 · abans de _aus Berlin_" },
+      { "id": "4b", "label": "oració 4 · després de _aus Berlin_" }
     ]
   },
   "interaction": {

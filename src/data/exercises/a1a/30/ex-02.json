@@ -3,7 +3,7 @@
   "id": "A1a-30-ex-02",
   "topicId": "A1a-30",
   "title": "Inversió V2 amb _es gibt_",
-  "prompt": "Quina és la frase correcta començant per _Im Park_?",
+  "prompt": "Quina és l'oració correcta començant per _Im Park_?",
   "difficulty": 2,
   "tags": ["es-gibt", "v2", "inversio", "quick-check"],
   "stimulus": {
@@ -43,7 +43,7 @@
         },
         {
           "match": { "response": "d" },
-          "message": "Aquesta frase també seria correcta (subjecte primer), però l'enunciat demana començar per _Im Park_. En aquest cas cal inversió: _Im Park **gibt es** Kinder_.",
+          "message": "Aquesta oració també seria correcta (subjecte primer), però l'enunciat demana començar per _Im Park_. En aquest cas cal inversió: _Im Park **gibt es** Kinder_.",
           "references": ["A1a-30"]
         }
       ]

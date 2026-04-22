@@ -3,16 +3,16 @@
   "id": "A1a-17-ex-02",
   "topicId": "A1a-17",
   "title": "Qualitat o plaer?",
-  "prompt": "Tria la forma correcta per a cada frase segons el sentit entre parèntesis. Recorda: _gut / besser_ parlen de **qualitat**; _gern / lieber_ parlen de **plaer**.",
+  "prompt": "Tria la forma correcta per a cada oració segons el sentit entre parèntesis. Recorda: _gut / besser_ parlen de **qualitat**; _gern / lieber_ parlen de **plaer**.",
   "difficulty": 2,
   "tags": ["comparatiu", "gut", "gern", "contrast"],
   "stimulus": {
     "type": "textWithBlanks",
     "template": "1. _Ich spiele sehr {{1}} Klavier._ (= toco molt **bé** el piano, habilitat)\n2. _Ich spiele {{2}} Klavier als Gitarre._ (= m'agrada **més** tocar el piano que la guitarra)\n3. _Das Konzert war {{3}} als das Buch._ (= el concert va ser **millor** que el llibre)",
     "blanks": [
-      { "id": "1", "label": "forma adequada a la frase 1" },
-      { "id": "2", "label": "forma adequada a la frase 2" },
-      { "id": "3", "label": "forma adequada a la frase 3" }
+      { "id": "1", "label": "forma adequada a l'oració 1" },
+      { "id": "2", "label": "forma adequada a l'oració 2" },
+      { "id": "3", "label": "forma adequada a l'oració 3" }
     ]
   },
   "interaction": {

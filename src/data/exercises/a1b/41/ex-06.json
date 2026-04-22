@@ -3,7 +3,7 @@
   "id": "A1b-41-ex-06",
   "topicId": "A1b-41",
   "title": "Troba i identifica l'error",
-  "prompt": "Cada frase conté ==**un error típic**==. Indica ==quin tipus d'error== és: cas equivocat, _-n_ plural oblidada, construcció incorrecta, ordre de pronoms, o calc del català.",
+  "prompt": "Cada oració conté ==**un error típic**==. Indica ==quin tipus d'error== és: cas equivocat, _-n_ plural oblidada, construcció incorrecta, ordre de pronoms, o calc del català.",
   "difficulty": 3,
   "tags": ["datiu", "diagnostic", "errors", "dropdownFill"],
   "stimulus": {

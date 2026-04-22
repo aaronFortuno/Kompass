@@ -16,7 +16,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### La trampa (*Vorsicht Falle!*)\n\nAquesta no és una lliçó gramatical nova: és un **Lerntipp**, un consell d'aprenentatge. Després de tres temes sobre preposicions locals (Wechselpräpositionen, fixes, verbs de moviment), el cervell tendeix a **sobregeneralitzar** la regla *Wo? → Dativ / Wohin? → Akkusativ* i aplicar-la a **totes** les preposicions.\n\nEl llibre de text comença amb la frase que sentiràs repetir a molts estudiants:\n\n> *\"Präpositionen sind leicht — Wo? → Dativ, Wohin? → Akkusativ.\"*\n\n==Aquesta regla és **falsa** si s'aplica a totes les preposicions.== Només funciona amb les **9 Wechselpräpositionen** (*in, an, auf, über, unter, vor, hinter, neben, zwischen*)."
+          "body": "#### La trampa (*Vorsicht Falle!*)\n\nAquesta no és una lliçó gramatical nova: és un **Lerntipp**, un consell d'aprenentatge. Després de tres temes sobre preposicions locals (Wechselpräpositionen, fixes, verbs de moviment), el cervell tendeix a **sobregeneralitzar** la regla *Wo? → Dativ / Wohin? → Akkusativ* i aplicar-la a **totes** les preposicions.\n\nEl llibre de text comença amb l'oració que sentiràs repetir a molts estudiants:\n\n> *\"Präpositionen sind leicht — Wo? → Dativ, Wohin? → Akkusativ.\"*\n\n==Aquesta regla és **falsa** si s'aplica a totes les preposicions.== Només funciona amb les **9 Wechselpräpositionen** (*in, an, auf, über, unter, vor, hinter, neben, zwischen*)."
         },
         {
           "type": "callout",
@@ -27,7 +27,7 @@
         {
           "type": "table",
           "title": "23.1 Exemples que trenquen la regla ingènua",
-          "headers": ["Frase", "Pregunta", "Regla ingènua diria", "Realitat"],
+          "headers": ["Oració", "Pregunta", "Regla ingènua diria", "Realitat"],
           "rows": [
             ["_Ich fahre **nach** Berlin._", "Wohin?", "Akkusativ", "==**Dativ**== (_nach_ és fix-Dat)"],
             ["_Wir gehen **durch** den Park._", "Wo? / Wohin?", "depèn?", "==**Akkusativ**== sempre (_durch_ és fix-Akk)"],

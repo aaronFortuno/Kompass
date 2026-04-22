@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "A1b-9-ex-07",
   "topicId": "A1b-9",
-  "title": "Construcció de frases: separables i Satzklammer",
-  "prompt": "Completa cada frase amb la paraula correcta per construir correctament l'imperatiu de verbs separables i el modal _solltest_ amb Satzklammer.",
+  "title": "Construcció de oracions: separables i Satzklammer",
+  "prompt": "Completa cada oració amb la paraula correcta per construir correctament l'imperatiu de verbs separables i el modal _solltest_ amb Satzklammer.",
   "difficulty": 3,
   "tags": ["imperatiu", "separables", "solltest", "satzklammer", "avaluacio"],
   "stimulus": {

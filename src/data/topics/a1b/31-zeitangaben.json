@@ -96,12 +96,12 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### La prova del nou: _Wann?_ vs _Wie lange?_\n\nQuan sentis o llegeixis una expressió temporal, fes-te aquestes dues preguntes en ordre:\n\n1. **Hi ha un verb a la frase? Com situa l'acció?** Si situa un **instant** (_arribo, començo, neixo, em llevo_), és _Wann?_ Si descriu una **activitat sostinguda** (_visc, treballo, estudio, aprenc_), sovint és _Wie lange?_ (però també pot ser _Wann?_, amb el sentit de \"a quina hora comença\").\n2. **Puc canviar _quan?_ per _quant temps?_ sense perdre sentit?** Si la resposta encaixa amb _quan?_, és moment. Si encaixa amb _quant temps?_, és durada."
+          "body": "#### La prova del nou: _Wann?_ vs _Wie lange?_\n\nQuan sentis o llegeixis una expressió temporal, fes-te aquestes dues preguntes en ordre:\n\n1. **Hi ha un verb a l'oració? Com situa l'acció?** Si situa un **instant** (_arribo, començo, neixo, em llevo_), és _Wann?_ Si descriu una **activitat sostinguda** (_visc, treballo, estudio, aprenc_), sovint és _Wie lange?_ (però també pot ser _Wann?_, amb el sentit de \"a quina hora comença\").\n2. **Puc canviar _quan?_ per _quant temps?_ sense perdre sentit?** Si la resposta encaixa amb _quan?_, és moment. Si encaixa amb _quant temps?_, és durada."
         },
         {
           "type": "table",
           "title": "31.2 Contrast Wann? / Wie lange?",
-          "headers": ["Frase alemanya", "Pregunta", "Categoria"],
+          "headers": ["Oració alemanya", "Pregunta", "Categoria"],
           "rows": [
             ["_Ich komme **um acht Uhr**._", "Wann kommst du?", "moment (hora)"],
             ["_Ich arbeite **acht Stunden**._", "Wie lange arbeitest du?", "durada"],
@@ -134,11 +134,11 @@
       ]
     },
     {
-      "id": "posicio-frase",
+      "id": "posicio-oracio",
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### On col·loques el complement temporal a la frase\n\nQualsevol expressió temporal (adverbi o grup preposicional) ocupa un dels dos llocs clàssics, tal com ja saps d'A1a-18 i A1b-30:\n\n**1. Posició 1 (Vorfeld)** — emfasitza el _quan_. El subjecte passa a la 3 (inversió, regla V2).\n\n> _==Am Montag== ==arbeite== ich bis 17 Uhr._\n> _==Seit 2020== ==wohne== ich in Berlin._\n> _==Vor zwei Jahren== ==bin== ich nach Deutschland ==gekommen==._\n\n**2. Al mig (Mittelfeld)** — ordre neutre, situa l'acció després del verb.\n\n> _Ich ==arbeite== **am Montag** bis 17 Uhr._\n> _Ich ==wohne== **seit 2020** in Berlin._\n> _Ich ==bin== **vor zwei Jahren** nach Deutschland ==gekommen==._\n\n**Regla d'or del Mittelfeld** (la reveuràs a A1b-32): quan hi ha **més d'un complement temporal**, l'ordre intern és de ==més general a més específic==:\n\n> _Ich arbeite **am Montag um neun Uhr**._ (dia → hora)\n> _Ich bin **im Sommer 2023 nach Berlin** gefahren._ (estació/any → destí)\n\nMai _~~um neun Uhr am Montag~~_ en ordre neutre: l'específic (hora) va **després** del general (dia)."
+          "body": "#### On col·loques el complement temporal a l'oració\n\nQualsevol expressió temporal (adverbi o grup preposicional) ocupa un dels dos llocs clàssics, tal com ja saps d'A1a-18 i A1b-30:\n\n**1. Posició 1 (Vorfeld)** — emfasitza el _quan_. El subjecte passa a la 3 (inversió, regla V2).\n\n> _==Am Montag== ==arbeite== ich bis 17 Uhr._\n> _==Seit 2020== ==wohne== ich in Berlin._\n> _==Vor zwei Jahren== ==bin== ich nach Deutschland ==gekommen==._\n\n**2. Al mig (Mittelfeld)** — ordre neutre, situa l'acció després del verb.\n\n> _Ich ==arbeite== **am Montag** bis 17 Uhr._\n> _Ich ==wohne== **seit 2020** in Berlin._\n> _Ich ==bin== **vor zwei Jahren** nach Deutschland ==gekommen==._\n\n**Regla d'or del Mittelfeld** (la reveuràs a A1b-32): quan hi ha **més d'un complement temporal**, l'ordre intern és de ==més general a més específic==:\n\n> _Ich arbeite **am Montag um neun Uhr**._ (dia → hora)\n> _Ich bin **im Sommer 2023 nach Berlin** gefahren._ (estació/any → destí)\n\nMai _~~um neun Uhr am Montag~~_ en ordre neutre: l'específic (hora) va **després** del general (dia)."
         },
         {
           "type": "callout",
@@ -225,7 +225,7 @@
           "title": "31.5 Les tres regles d'or de col·locació",
           "headers": ["Regla", "Contingut"],
           "rows": [
-            ["**1. Posició 2**", "El **verb conjugat** sempre a la ==posició 2==. Si el complement temporal obre la frase, el **subjecte** passa a la ==3== (inversió)."],
+            ["**1. Posició 2**", "El **verb conjugat** sempre a la ==posició 2==. Si el complement temporal obre l'oració, el **subjecte** passa a la ==3== (inversió)."],
             ["**2. Temps abans de lloc**", "Al Mittelfeld: _am Montag nach Berlin_, no _~~nach Berlin am Montag~~_."],
             ["**3. General → específic**", "Si hi ha **més d'un complement temporal**, l'ordre és **general → específic**: _am Montag um neun_, no _~~um neun am Montag~~_."]
           ]

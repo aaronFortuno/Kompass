@@ -3,7 +3,7 @@
   "id": "A1b-5-ex-06",
   "topicId": "A1b-5",
   "title": "Satzklammer amb möchten",
-  "prompt": "Reordena les paraules per formar cada frase en alemany. Recorda la Satzklammer: verb modal conjugat en segona posició, infinitiu al final.",
+  "prompt": "Reordena les paraules per formar cada oració en alemany. Recorda la Satzklammer: verb modal conjugat en segona posició, infinitiu al final.",
   "difficulty": 2,
   "tags": ["mochten", "satzklammer", "ordre-paraules", "modal"],
   "stimulus": {
@@ -60,7 +60,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Perfecte. Has respectat la Satzklammer (A1a-18): el verb conjugat (_möchte/möchten_) va en segona posició, i l'infinitiu (_sehen, gehen, lernen_) al final de la frase. Aquest és el patró de tots els modals.",
+      "message": "Perfecte. Has respectat la Satzklammer (A1a-18): el verb conjugat (_möchte/möchten_) va en segona posició, i l'infinitiu (_sehen, gehen, lernen_) al final de l'oració. Aquest és el patró de tots els modals.",
       "references": ["A1b-5", "A1a-18"]
     },
     "incorrect": {

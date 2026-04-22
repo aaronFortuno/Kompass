@@ -3,7 +3,7 @@
   "id": "A1a-30-ex-05",
   "topicId": "A1a-30",
   "title": "Inversió V2 amb complement de lloc",
-  "prompt": "Reescriu cada frase començant per l'element entre parèntesis. Recorda la regla V2: el verb _gibt_ a la segona posició.",
+  "prompt": "Reescriu cada oració començant per l'element entre parèntesis. Recorda la regla V2: el verb _gibt_ a la segona posició.",
   "difficulty": 2,
   "tags": ["es-gibt", "v2", "inversio", "assessment"],
   "stimulus": {

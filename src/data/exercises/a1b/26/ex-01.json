@@ -3,7 +3,7 @@
   "id": "A1b-26-ex-01",
   "topicId": "A1b-26",
   "title": "Reconeix l'auxiliar del Perfekt",
-  "prompt": "Per a cada frase, identifica quin és l'**auxiliar del Perfekt**. Si la frase no és en Perfekt (té només **una** forma verbal, com _war_ o _hatte_), tria _cap dels dos_. Recorda: el Perfekt té **dues peces** (auxiliar conjugat + Partizip II al final).",
+  "prompt": "Per a cada oració, identifica quin és l'**auxiliar del Perfekt**. Si l'oració no és en Perfekt (té només **una** forma verbal, com _war_ o _hatte_), tria _cap dels dos_. Recorda: el Perfekt té **dues peces** (auxiliar conjugat + Partizip II al final).",
   "difficulty": 1,
   "tags": ["perfekt", "auxiliar", "contrast-prateritum", "reconeixement"],
   "stimulus": {
@@ -48,7 +48,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Molt bé. Has reconegut que el Perfekt té ==**dues peces**==: _habe gegessen_, _sind gefahren_, _hat gearbeitet_, _bist gekommen_, _habt gelesen_. Les frases amb ==**una sola forma**== (_war, spielt, hatte_) **no** són Perfekt: _war_ i _hatte_ són **Präteritum** (A1b-25), i _spielt_ és **present**.",
+      "message": "Molt bé. Has reconegut que el Perfekt té ==**dues peces**==: _habe gegessen_, _sind gefahren_, _hat gearbeitet_, _bist gekommen_, _habt gelesen_. Les oracions amb ==**una sola forma**== (_war, spielt, hatte_) **no** són Perfekt: _war_ i _hatte_ són **Präteritum** (A1b-25), i _spielt_ és **present**.",
       "references": ["A1b-26", "A1b-25", "A1b-24"]
     },
     "incorrect": {

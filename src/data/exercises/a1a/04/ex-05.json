@@ -33,7 +33,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Molt bé. Has produït les quatre formes de memòria i al lloc correcte de la frase."
+      "message": "Molt bé. Has produït les quatre formes de memòria i al lloc correcte de l'oració."
     },
     "incorrect": {
       "default": "Pistes: (1) _verheiratet_ és adjectiu → _nicht_ davant. (2) _Bruder_ és masculí singular que en afirmatiu portaria _ein_ → _kein_. (3) _Geschwister_ és plural → _keine_. (4) _arbeitet heute_ és verb amb adverbi temporal → _nicht_ al final."

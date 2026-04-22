@@ -3,7 +3,7 @@
   "id": "A1b-37-ex-04",
   "topicId": "A1b-37",
   "title": "Tradueix a l'alemany · acusatiu",
-  "prompt": "Tradueix cada frase a l'alemany. Totes fan servir pronoms en ==**acusatiu**==. Les formes noves d'acusatiu (diferents del nominatiu) són _==mich, dich, ihn, uns, euch==_.",
+  "prompt": "Tradueix cada oració a l'alemany. Totes fan servir pronoms en ==**acusatiu**==. Les formes noves d'acusatiu (diferents del nominatiu) són _==mich, dich, ihn, uns, euch==_.",
   "difficulty": 3,
   "tags": ["pronoms", "acusatiu", "traduccio", "typeIn"],
   "stimulus": {

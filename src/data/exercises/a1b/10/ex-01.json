@@ -3,7 +3,7 @@
   "id": "A1b-10-ex-01",
   "topicId": "A1b-10",
   "title": "Conjuga un verb en -ieren",
-  "prompt": "Completa la frase amb la forma correcta del verb _telefonieren_: _Ich ___ mit meiner Mutter._ (\"Parlo per telèfon amb la meva mare.\")",
+  "prompt": "Completa l'oració amb la forma correcta del verb _telefonieren_: _Ich ___ mit meiner Mutter._ (\"Parlo per telèfon amb la meva mare.\")",
   "difficulty": 1,
   "tags": ["conjugacio", "present", "ieren"],
   "stimulus": {

@@ -3,7 +3,7 @@
   "id": "A1b-23-ex-03",
   "topicId": "A1b-23",
   "title": "Aplica el protocol pas a pas",
-  "prompt": "Per a cada frase, tria **el raonament complet** que explica per què la preposició demana aquell cas. Has de combinar pas 1 (grup) i, si cal, pas 2 (*Wo?/Wohin?*). Si has saltat el pas 1, tornes a caure a la trampa.",
+  "prompt": "Per a cada oració, tria **el raonament complet** que explica per què la preposició demana aquell cas. Has de combinar pas 1 (grup) i, si cal, pas 2 (*Wo?/Wohin?*). Si has saltat el pas 1, tornes a caure a la trampa.",
   "difficulty": 2,
   "tags": ["protocol", "raonament", "pas-1", "pas-2"],
   "stimulus": {

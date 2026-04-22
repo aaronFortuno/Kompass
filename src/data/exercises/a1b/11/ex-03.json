@@ -48,7 +48,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Excel·lent. Has aplicat correctament les tres estructures: _so … wie_ per a igualtat (frases b i f), komparativ + _als_ per a superioritat (a, d, e, h) i _am …sten_ per al màxim (c, g).",
+      "message": "Excel·lent. Has aplicat correctament les tres estructures: _so … wie_ per a igualtat (oracions b i f), komparativ + _als_ per a superioritat (a, d, e, h) i _am …sten_ per al màxim (c, g).",
       "references": ["A1b-11"]
     },
     "incorrect": {

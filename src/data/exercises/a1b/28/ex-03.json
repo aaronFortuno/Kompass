@@ -3,7 +3,7 @@
   "id": "A1b-28-ex-03",
   "topicId": "A1b-28",
   "title": "Completa el Perfekt: auxiliar + Partizip",
-  "prompt": "Completa cada frase triant **l'auxiliar** (_haben_/_sein_) i el **Partizip II** correcte. Dos buits per frase: l'auxiliar va abans i el Partizip al final (Satzklammer, A1b-26).",
+  "prompt": "Completa cada oració triant **l'auxiliar** (_haben_/_sein_) i el **Partizip II** correcte. Dos buits per oració: l'auxiliar va abans i el Partizip al final (Satzklammer, A1b-26).",
   "difficulty": 3,
   "tags": ["dropdownFill", "perfekt", "auxiliar", "partizip", "sintesi"],
   "stimulus": {

@@ -3,12 +3,12 @@
   "id": "A1b-16-ex-06",
   "topicId": "A1b-16",
   "title": "Reconèixer el matís de sollen",
-  "prompt": "Llegeix cada afirmació sobre l'ús de _sollen_ en una frase donada i decideix si és **certa** (richtig) o **falsa** (falsch). Pensa quin dels tres usos (obligació externa, oferta en pregunta, reportar instruccions) s'aplica en cada cas.",
+  "prompt": "Llegeix cada afirmació sobre l'ús de _sollen_ en una oració donada i decideix si és **certa** (richtig) o **falsa** (falsch). Pensa quin dels tres usos (obligació externa, oferta en pregunta, reportar instruccions) s'aplica en cada cas.",
   "difficulty": 2,
   "tags": ["sollen", "usos", "matis", "trueFalse"],
   "stimulus": {
     "type": "text",
-    "content": "Analitza l'ús de _sollen_ a cada frase i decideix si l'afirmació és certa o falsa."
+    "content": "Analitza l'ús de _sollen_ a cada oració i decideix si l'afirmació és certa o falsa."
   },
   "interaction": {
     "type": "trueFalse",

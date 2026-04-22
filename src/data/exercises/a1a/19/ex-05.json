@@ -3,7 +3,7 @@
   "id": "A1a-19-ex-05",
   "topicId": "A1a-19",
   "title": "Plans de cap de setmana: Satzklammer",
-  "prompt": "Completa les frases amb la forma correcta del modal (_können_ o _möchte_) i l'infinitiu al final de la frase. Recorda: verb modal a la posició 2, infinitiu tancant la Satzklammer.",
+  "prompt": "Completa les oracions amb la forma correcta del modal (_können_ o _möchte_) i l'infinitiu al final de l'oració. Recorda: verb modal a la posició 2, infinitiu tancant la Satzklammer.",
   "difficulty": 2,
   "tags": ["satzklammer", "koennen", "moechte", "infinitiu", "assessment"],
   "stimulus": {
@@ -48,10 +48,10 @@
   },
   "feedback": {
     "correct": {
-      "message": "Impecable. Has construït quatre Satzklammer perfectes: verb modal conjugat a la posició 2 (_kann, möchten, kann, möchte_) i infinitiu al final de la frase (_spielen, sehen, kommen, sprechen_). Aquesta és l'estructura que trobaràs en gairebé totes les frases amb modals."
+      "message": "Impecable. Has construït quatre Satzklammer perfectes: verb modal conjugat a la posició 2 (_kann, möchten, kann, möchte_) i infinitiu al final de l'oració (_spielen, sehen, kommen, sprechen_). Aquesta és l'estructura que trobaràs en gairebé totes les oracions amb modals."
     },
     "incorrect": {
-      "default": "Recorda dues coses alhora: (1) el modal es conjuga (_ich kann, wir möchten_…); (2) el segon verb sempre va a l'infinitiu (forma del diccionari, acabat en -en) al final de la frase, no conjugat. Mai _Ich kann spiele_ ni _Wir möchten sehen einen Film_."
+      "default": "Recorda dues coses alhora: (1) el modal es conjuga (_ich kann, wir möchten_…); (2) el segon verb sempre va a l'infinitiu (forma del diccionari, acabat en -en) al final de l'oració, no conjugat. Mai _Ich kann spiele_ ni _Wir möchten sehen einen Film_."
     }
   }
 }

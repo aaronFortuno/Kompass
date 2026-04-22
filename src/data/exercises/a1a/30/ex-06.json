@@ -3,7 +3,7 @@
   "id": "A1a-30-ex-06",
   "topicId": "A1a-30",
   "title": "Del català a l'alemany amb _es gibt_",
-  "prompt": "Tradueix cada frase a l'alemany. Combina _es gibt_ amb acusatiu, plural, negació i inversió quan calgui.",
+  "prompt": "Tradueix cada oració a l'alemany. Combina _es gibt_ amb acusatiu, plural, negació i inversió quan calgui.",
   "difficulty": 3,
   "tags": ["es-gibt", "traduccio", "acusatiu", "inversio", "assessment"],
   "stimulus": {

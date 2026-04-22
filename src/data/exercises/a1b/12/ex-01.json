@@ -3,7 +3,7 @@
   "id": "A1b-12-ex-01",
   "topicId": "A1b-12",
   "title": "Ordre de paraules a l'imperatiu",
-  "prompt": "Per a cada frase, tria l'ordre de paraules correcte. Aplica les regles de sintaxi de l'imperatiu: verb a posició 1, pronom _Sie_ obligatori al formal, prefix separable al final.",
+  "prompt": "Per a cada oració, tria l'ordre de paraules correcte. Aplica les regles de sintaxi de l'imperatiu: verb a posició 1, pronom _Sie_ obligatori al formal, prefix separable al final.",
   "difficulty": 2,
   "tags": ["imperatiu", "sintaxi", "ordre-paraules", "separables"],
   "stimulus": {

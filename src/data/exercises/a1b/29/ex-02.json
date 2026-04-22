@@ -3,7 +3,7 @@
   "id": "A1b-29-ex-02",
   "topicId": "A1b-29",
   "title": "Tria l'auxiliar: _haben_ o _sein_?",
-  "prompt": "Completa cada frase triant l'auxiliar correcte. Pregunta't si el verb és ==moviment/canvi d'estat== (_sein_) o ==transitiu/reflexiu/la resta== (_haben_).",
+  "prompt": "Completa cada oració triant l'auxiliar correcte. Pregunta't si el verb és ==moviment/canvi d'estat== (_sein_) o ==transitiu/reflexiu/la resta== (_haben_).",
   "difficulty": 2,
   "tags": ["haben", "sein", "perfekt", "auxiliar", "dropdownFill"],
   "stimulus": {

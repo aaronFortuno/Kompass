@@ -21,7 +21,7 @@
           "type": "callout",
           "variant": "warning",
           "title": "Atenció castellanoparlants",
-          "body": "En castellà, \"**ya**\" sovint cobreix alhora **_schon_** i **_noch_** (en frases negatives: \"ya no\" = **_nicht mehr_**). Tradueix sempre pensant en el **matís**, no en l'equivalència directa."
+          "body": "En castellà, \"**ya**\" sovint cobreix alhora **_schon_** i **_noch_** (en oracions negatives: \"ya no\" = **_nicht mehr_**). Tradueix sempre pensant en el **matís**, no en l'equivalència directa."
         }
       ]
     },
@@ -138,7 +138,7 @@
         {
           "type": "table",
           "title": "_erst_ segons el context",
-          "headers": ["Context", "Frase alemanya", "Traducció catalana"],
+          "headers": ["Context", "Oració alemanya", "Traducció catalana"],
           "rows": [
             ["Durada curta", "_Ich bin **erst** zwei Tage hier._", "Només fa dos dies que sóc aquí."],
             ["Edat poca", "_Sie ist **erst** fünf Jahre alt._", "Només té cinc anys."],

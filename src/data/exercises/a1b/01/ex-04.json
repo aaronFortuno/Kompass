@@ -3,14 +3,14 @@
   "id": "A1b-1-ex-04",
   "topicId": "A1b-1",
   "title": "Aplica la contracció am / im",
-  "prompt": "Reescriu la frase fent la contracció obligatòria. Escriu la frase sencera.",
+  "prompt": "Reescriu l'oració fent la contracció obligatòria. Escriu l'oració sencera.",
   "difficulty": 2,
   "tags": ["contraccio", "im", "am"],
   "stimulus": {
     "type": "textWithBlanks",
     "template": "Original: *Ich arbeite in dem Büro.*\n\nAmb contracció: {{1}}",
     "blanks": [
-      { "id": "1", "label": "frase amb contracció" }
+      { "id": "1", "label": "oració amb contracció" }
     ]
   },
   "interaction": {
@@ -32,7 +32,7 @@
       "message": "Molt bé. *in + dem* es contrau obligatòriament en **im** en llenguatge normal."
     },
     "incorrect": {
-      "default": "Recorda: **in + dem → im**. *Büro* és neutre (das Büro) → datiu *dem Büro* → *im Büro*. La frase completa: **Ich arbeite im Büro.**"
+      "default": "Recorda: **in + dem → im**. *Büro* és neutre (das Büro) → datiu *dem Büro* → *im Büro*. L'oració completa: **Ich arbeite im Büro.**"
     }
   }
 }

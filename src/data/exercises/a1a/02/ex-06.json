@@ -3,7 +3,7 @@
   "id": "A1a-2-ex-06",
   "topicId": "A1a-2",
   "title": "De declarativa a Ja/Nein-Frage",
-  "prompt": "Transforma la frase declarativa 'Du wohnst in Berlin.' en una pregunta sí/no. Escriu les dues primeres paraules de la nova frase.",
+  "prompt": "Transforma l'oració declarativa 'Du wohnst in Berlin.' en una pregunta sí/no. Escriu les dues primeres paraules de la nova oració.",
   "difficulty": 2,
   "tags": ["transformacio", "declarativa", "satzfrage", "inversio"],
   "stimulus": {

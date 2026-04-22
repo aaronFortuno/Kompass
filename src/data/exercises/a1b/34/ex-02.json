@@ -3,7 +3,7 @@
   "id": "A1b-34-ex-02",
   "topicId": "A1b-34",
   "title": "\"fa X\" vs \"des de fa X\"",
-  "prompt": "Per a cada frase en català, tria la traducció alemanya correcta. Les dues opcions només es diferencien en ==**_seit_**== / ==**_vor_**==. La prova infal·lible: si pots afegir _\"i encara…\"_, és _seit_; si és un punt passat tancat, és _vor_.",
+  "prompt": "Per a cada oració en català, tria la traducció alemanya correcta. Les dues opcions només es diferencien en ==**_seit_**== / ==**_vor_**==. La prova infal·lible: si pots afegir _\"i encara…\"_, és _seit_; si és un punt passat tancat, és _vor_.",
   "difficulty": 2,
   "tags": ["seit-vor", "traduccio", "parany-catala"],
   "stimulus": {

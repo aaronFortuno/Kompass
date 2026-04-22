@@ -3,7 +3,7 @@
   "id": "A1b-36-ex-02",
   "topicId": "A1b-36",
   "title": "Possessius: triar la forma correcta",
-  "prompt": "Completa cada frase amb la forma correcta del possessiu. Es dóna el posseïdor entre parèntesis i el gènere/nombre del substantiu posseït en context.",
+  "prompt": "Completa cada oració amb la forma correcta del possessiu. Es dóna el posseïdor entre parèntesis i el gènere/nombre del substantiu posseït en context.",
   "difficulty": 2,
   "tags": ["possessiu", "mein", "dein", "sein", "ihr", "unser", "euer"],
   "stimulus": {

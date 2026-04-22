@@ -3,7 +3,7 @@
   "id": "A1b-30-ex-06",
   "topicId": "A1b-30",
   "title": "Transforma: sense inversió → amb inversió",
-  "prompt": "Reescriu cada frase portant l'element ==**marcat en negreta**== a la **posició 1** i aplicant la **inversió**. Has de fer tres operacions alhora: (1) complement a la 1, (2) auxiliar a la 2, (3) subjecte a la 3. Escriu la frase sencera amb la puntuació final.",
+  "prompt": "Reescriu cada oració portant l'element ==**marcat en negreta**== a la **posició 1** i aplicant la **inversió**. Has de fer tres operacions alhora: (1) complement a la 1, (2) auxiliar a la 2, (3) subjecte a la 3. Escriu l'oració sencera amb la puntuació final.",
   "difficulty": 3,
   "tags": ["perfekt", "inversio", "transformacio", "typeIn"],
   "stimulus": {

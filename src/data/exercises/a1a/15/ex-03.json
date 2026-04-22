@@ -13,7 +13,7 @@
       { "id": "1", "label": "_essen_, _du_" },
       { "id": "2", "label": "_essen_, _ich_" },
       { "id": "3", "label": "_essen_, _er_" },
-      { "id": "4", "label": "_fahren_, _du_ (inici de frase)" },
+      { "id": "4", "label": "_fahren_, _du_ (inici de oració)" },
       { "id": "5", "label": "_fahren_, _ich_" },
       { "id": "6", "label": "_nehmen_, _sie_" }
     ]

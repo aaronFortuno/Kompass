@@ -54,7 +54,7 @@
       "message": "Felicitats. Tens el quadre complet: **_können_** per a habilitats (_ich kann Französisch, kannst du Deutsch_), **_mögen_** per a gustos (_ich mag Krimis, magst du_), **_möchte_** per a desitjos puntuals i educats (_ich möchte Deutsch lernen, möchtest du sprechen_). I la Satzklammer tanca sempre amb infinitiu al final (_lernen, sprechen_)."
     },
     "incorrect": {
-      "default": "Tres preguntes clau per triar: (1) **És una habilitat o una possibilitat?** → _können_ (_kann, kannst_). (2) **És un gust estable?** → _mögen_ (_mag, magst_). (3) **És un desig puntual, una petició educada, un pla?** → _möchte_ (_möchte, möchtest_). I si hi ha un segon verb, va a l'infinitiu i al final de la frase."
+      "default": "Tres preguntes clau per triar: (1) **És una habilitat o una possibilitat?** → _können_ (_kann, kannst_). (2) **És un gust estable?** → _mögen_ (_mag, magst_). (3) **És un desig puntual, una petició educada, un pla?** → _möchte_ (_möchte, möchtest_). I si hi ha un segon verb, va a l'infinitiu i al final de l'oració."
     }
   }
 }

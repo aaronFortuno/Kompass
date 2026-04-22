@@ -3,7 +3,7 @@
   "id": "A1a-8-ex-04",
   "topicId": "A1a-8",
   "title": "Ordre V2 després de la conjunció",
-  "prompt": "Escriu la forma verbal correcta darrere de la conjunció. Recorda: les conjuncions coordinants ocupen la posició 0, i la frase que ve després recomença amb el verb en 2a posició, conjugat segons el subjecte.",
+  "prompt": "Escriu la forma verbal correcta darrere de la conjunció. Recorda: les conjuncions coordinants ocupen la posició 0, i l'oració que ve després recomença amb el verb en 2a posició, conjugat segons el subjecte.",
   "difficulty": 2,
   "tags": ["konjunktionen", "v2", "conjugacio"],
   "stimulus": {
@@ -31,10 +31,10 @@
   },
   "feedback": {
     "correct": {
-      "message": "Perfecte. Has aplicat la regla clau: les conjuncions coordinants ocupen la posició 0, i la frase que ve darrere recomença amb el seu verb en 2a posició, conjugat segons el subjecte."
+      "message": "Perfecte. Has aplicat la regla clau: les conjuncions coordinants ocupen la posició 0, i l'oració que ve darrere recomença amb el seu verb en 2a posició, conjugat segons el subjecte."
     },
     "incorrect": {
-      "default": "Recorda dues coses: (a) _und, aber, sondern, oder, denn_ **no compten** per l'ordre, o sigui que la frase de darrere comença de nou normalment; (b) el verb ha de concordar amb el subjecte (_ich arbeite_, _sie lernt_, _ich komme_). Si dubtes, revisa les desinències del present que vas veure en temes anteriors."
+      "default": "Recorda dues coses: (a) _und, aber, sondern, oder, denn_ **no compten** per l'ordre, o sigui que l'oració de darrere comença de nou normalment; (b) el verb ha de concordar amb el subjecte (_ich arbeite_, _sie lernt_, _ich komme_). Si dubtes, revisa les desinències del present que vas veure en temes anteriors."
     }
   }
 }

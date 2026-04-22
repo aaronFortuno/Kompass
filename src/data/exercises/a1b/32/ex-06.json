@@ -3,14 +3,14 @@
   "id": "A1b-32-ex-06",
   "topicId": "A1b-32",
   "title": "Biografia de Markus — producció integrada",
-  "prompt": "Reconstrueix la biografia de Markus escrivint la paraula que falta a cada buit. Integra tot el sistema _Wann?_: _vor_ + Dativ, preposicions contretes, intervals, parts del dia, acusatiu nu i festes. Fixa't en la ==**majúscula**== quan el complement obre la frase.",
+  "prompt": "Reconstrueix la biografia de Markus escrivint la paraula que falta a cada buit. Integra tot el sistema _Wann?_: _vor_ + Dativ, preposicions contretes, intervals, parts del dia, acusatiu nu i festes. Fixa't en la ==**majúscula**== quan el complement obre l'oració.",
   "difficulty": 3,
   "tags": ["biografia", "produccio", "typeIn", "integracio", "assessment"],
   "stimulus": {
     "type": "textWithBlanks",
     "template": "_Markus ist 1985 in München geboren._\n\n_{{1}} zehn Jahren ist er nach Berlin gezogen._\n\n_Er arbeitet jetzt {{2}} einer großen Firma, {{3}} Montag {{4}} Freitag, {{5}} 8 Uhr {{6}} 17 Uhr._\n\n_{{7}} Morgen trinkt er einen Kaffee, und {{8}} Mittag isst er in der Kantine._\n\n_{{9}} der Arbeit geht er oft ins Fitnessstudio._\n\n_{{10}} Jahr macht er viele Reisen: {{11}} Sommer fährt er ans Meer, und {{12}} Weihnachten besucht er seine Familie in München._\n\n_{{13}} Woche hat er Urlaub, deshalb bleibt er zu Hause._",
     "blanks": [
-      { "id": "1", "label": "1. fa deu anys (inici de frase)" },
+      { "id": "1", "label": "1. fa deu anys (inici de oració)" },
       { "id": "2", "label": "2. a (prep. + Dativ fem.)" },
       { "id": "3", "label": "3. de dilluns" },
       { "id": "4", "label": "4. a divendres" },
@@ -65,7 +65,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Excel·lent. Has integrat tot el sistema: _vor_ + **Dativ plural** amb _-n_ (_vor zehn Jahren_), _in einer Firma_ (lloc, Dativ femení), doble _von... bis..._ (dies i hores), _am Morgen_, _zu Mittag_ (excepció sense article), _nach der Arbeit_ (Dativ femení), ==**_dieses Jahr_**== i ==**_diese Woche_**== en acusatiu nu, _im Sommer_ i _zu Weihnachten_. Quan el complement obre la frase: **majúscula** i inversió V2.",
+      "message": "Excel·lent. Has integrat tot el sistema: _vor_ + **Dativ plural** amb _-n_ (_vor zehn Jahren_), _in einer Firma_ (lloc, Dativ femení), doble _von... bis..._ (dies i hores), _am Morgen_, _zu Mittag_ (excepció sense article), _nach der Arbeit_ (Dativ femení), ==**_dieses Jahr_**== i ==**_diese Woche_**== en acusatiu nu, _im Sommer_ i _zu Weihnachten_. Quan el complement obre l'oració: **majúscula** i inversió V2.",
       "references": ["A1b-32", "A1a-21"]
     },
     "incorrect": {

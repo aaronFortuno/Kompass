@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "id": "A1b-31-ex-06",
   "topicId": "A1b-31",
-  "title": "Ordre de la frase amb complement temporal",
+  "title": "Ordre de l'oració amb complement temporal",
   "prompt": "Tria l'opció **ben ordenada**. Recorda les regles: ==verb conjugat a la pos. 2==, ==temps abans de lloc==, i si hi ha dos complements temporals, ==general abans que específic== (dia → hora).",
   "difficulty": 2,
   "tags": ["ordre", "V2", "mittelfeld", "temps-abans-lloc"],
   "stimulus": {
     "type": "textWithBlanks",
-    "template": "Peces → frase correcta:\n\n1. _arbeite / ich / am Montag / in Berlin_ → {{1}}\n\n2. _fahren / wir / im Sommer / nach Italien_ → {{2}}\n\n3. _komme / ich / um acht / nach Hause_ → {{3}}\n\n4. _lernt / Anna / seit zwei Jahren / Deutsch_ → {{4}}\n\n5. _bin / ich / am Montag / um neun / im Büro_ → {{5}}",
+    "template": "Peces → oració correcta:\n\n1. _arbeite / ich / am Montag / in Berlin_ → {{1}}\n\n2. _fahren / wir / im Sommer / nach Italien_ → {{2}}\n\n3. _komme / ich / um acht / nach Hause_ → {{3}}\n\n4. _lernt / Anna / seit zwei Jahren / Deutsch_ → {{4}}\n\n5. _bin / ich / am Montag / um neun / im Büro_ → {{5}}",
     "blanks": [
       { "id": "1", "label": "1." },
       { "id": "2", "label": "2." },
@@ -78,7 +78,7 @@
       "references": ["A1b-31", "A1b-30"]
     },
     "incorrect": {
-      "default": "Tres regles: (1) ==verb conjugat a la pos. 2== (si el subjecte és a la 1, verb darrere; si un complement obre la frase, subjecte a la 3); (2) ==temps abans de lloc== al Mittelfeld; (3) ==general abans que específic== (dia → hora).",
+      "default": "Tres regles: (1) ==verb conjugat a la pos. 2== (si el subjecte és a la 1, verb darrere; si un complement obre l'oració, subjecte a la 3); (2) ==temps abans de lloc== al Mittelfeld; (3) ==general abans que específic== (dia → hora).",
       "byResponse": [
         {
           "match": { "1": "Ich arbeite in Berlin am Montag." },

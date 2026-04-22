@@ -3,7 +3,7 @@
   "id": "A1b-35-ex-07",
   "topicId": "A1b-35",
   "title": "Tradueix del català a l'alemany",
-  "prompt": "Tradueix cada frase a l'alemany. Decideix si la data és ==**nominatiu**== (_der + -e_) o ==**datiu**== (_am + -en_). Els **anys** van sense preposició (o amb _im Jahr_). Escriu la frase sencera amb puntuació.",
+  "prompt": "Tradueix cada oració a l'alemany. Decideix si la data és ==**nominatiu**== (_der + -e_) o ==**datiu**== (_am + -en_). Els **anys** van sense preposició (o amb _im Jahr_). Escriu l'oració sencera amb puntuació.",
   "difficulty": 3,
   "tags": ["datum", "traduccio", "typeIn", "produccio"],
   "stimulus": {

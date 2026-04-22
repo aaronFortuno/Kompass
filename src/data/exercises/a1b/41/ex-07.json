@@ -3,7 +3,7 @@
   "id": "A1b-41-ex-07",
   "topicId": "A1b-41",
   "title": "Tradueix: producció completa amb datiu",
-  "prompt": "Tradueix cada frase catalana a l'alemany. Cada ítem activa ==una de les sis raons== per posar datiu: preposició fixa, Wechsel amb _Wo?_, objecte indirecte, verb de datiu, expressió idiomàtica o pronom.",
+  "prompt": "Tradueix cada oració catalana a l'alemany. Cada ítem activa ==una de les sis raons== per posar datiu: preposició fixa, Wechsel amb _Wo?_, objecte indirecte, verb de datiu, expressió idiomàtica o pronom.",
   "difficulty": 3,
   "tags": ["datiu", "traduccio", "produccio", "typeIn"],
   "stimulus": {
@@ -56,7 +56,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Cada frase activa ==una raó diferent== per posar el datiu: **verbs de datiu** (_helfen, gehören, gefallen_), **preposicions fixes** (_bei, mit, zu_), **Wechsel _Wo?_** (_in der Küche_), **objecte indirecte** (_schenken_), **expressions** (_mir ist kalt, der Kopf tut mir weh_), **doble pronom** (_es dir_, acus. + dat.). Si les tens totes clares, ==has superat l'A1b==.",
+      "message": "Cada oració activa ==una raó diferent== per posar el datiu: **verbs de datiu** (_helfen, gehören, gefallen_), **preposicions fixes** (_bei, mit, zu_), **Wechsel _Wo?_** (_in der Küche_), **objecte indirecte** (_schenken_), **expressions** (_mir ist kalt, der Kopf tut mir weh_), **doble pronom** (_es dir_, acus. + dat.). Si les tens totes clares, ==has superat l'A1b==.",
       "references": ["A1b-41"]
     },
     "incorrect": {

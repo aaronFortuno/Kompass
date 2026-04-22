@@ -2,22 +2,22 @@
   "schemaVersion": 1,
   "id": "A1b-38-ex-01",
   "topicId": "A1b-38",
-  "title": "Quants complements demana la frase?",
-  "prompt": "Compta les _Ergänzungen_ de cada frase (==**sense comptar el subjecte**==). Tria **0**, **1** o **2**.",
+  "title": "Quants complements demana l'oració?",
+  "prompt": "Compta les _Ergänzungen_ de cada oració (==**sense comptar el subjecte**==). Tria **0**, **1** o **2**.",
   "difficulty": 1,
   "tags": ["valencia", "ergaenzungen", "identificacio"],
   "stimulus": {
     "type": "textWithBlanks",
     "template": "1. _Ich schlafe._ → {{1}}\n\n2. _Ich lese ein Buch._ → {{2}}\n\n3. _Ich schenke dir eine Blume._ → {{3}}\n\n4. _Es regnet._ → {{4}}\n\n5. _Ich wohne in Berlin._ → {{5}}\n\n6. _Ich helfe meiner Mutter._ → {{6}}\n\n7. _Ich schreibe meinem Bruder einen Brief._ → {{7}}\n\n8. _Die Suppe schmeckt mir._ → {{8}}",
     "blanks": [
-      { "id": "1", "label": "Frase 1 · _Ich schlafe._" },
-      { "id": "2", "label": "Frase 2 · _Ich lese ein Buch._" },
-      { "id": "3", "label": "Frase 3 · _Ich schenke dir eine Blume._" },
-      { "id": "4", "label": "Frase 4 · _Es regnet._" },
-      { "id": "5", "label": "Frase 5 · _Ich wohne in Berlin._" },
-      { "id": "6", "label": "Frase 6 · _Ich helfe meiner Mutter._" },
-      { "id": "7", "label": "Frase 7 · _Ich schreibe meinem Bruder einen Brief._" },
-      { "id": "8", "label": "Frase 8 · _Die Suppe schmeckt mir._" }
+      { "id": "1", "label": "Oració 1 · _Ich schlafe._" },
+      { "id": "2", "label": "Oració 2 · _Ich lese ein Buch._" },
+      { "id": "3", "label": "Oració 3 · _Ich schenke dir eine Blume._" },
+      { "id": "4", "label": "Oració 4 · _Es regnet._" },
+      { "id": "5", "label": "Oració 5 · _Ich wohne in Berlin._" },
+      { "id": "6", "label": "Oració 6 · _Ich helfe meiner Mutter._" },
+      { "id": "7", "label": "Oració 7 · _Ich schreibe meinem Bruder einen Brief._" },
+      { "id": "8", "label": "Oració 8 · _Die Suppe schmeckt mir._" }
     ]
   },
   "interaction": {
@@ -48,7 +48,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Perfecte. ==El subjecte no es compta== com a Ergänzung. Compta només els complements que ==demana el verb== a més del subjecte. A la frase 8, _die Suppe_ és qui fa l'acció (tenir bon gust), no un complement.",
+      "message": "Perfecte. ==El subjecte no es compta== com a Ergänzung. Compta només els complements que ==demana el verb== a més del subjecte. A l'oració 8, _die Suppe_ és qui fa l'acció (tenir bon gust), no un complement.",
       "references": ["A1b-38"]
     },
     "incorrect": {

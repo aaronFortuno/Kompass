@@ -3,18 +3,18 @@
   "id": "A1b-21-ex-05",
   "topicId": "A1b-21",
   "title": "Completa amb verb i cas coherents",
-  "prompt": "Completa cada frase amb el verb adequat **i** l'article al cas correcte. Escriu la frase sencera.",
+  "prompt": "Completa cada oració amb el verb adequat **i** l'article al cas correcte. Escriu l'oració sencera.",
   "difficulty": 3,
   "tags": ["verbs-moviment", "hängen", "produccio", "cas"],
   "stimulus": {
     "type": "textWithBlanks",
     "template": "1) *Ich ____ das Bild ____ Wand.* (penjar, la paret) →\n{{1}}\n\n2) *Das Bild ____ ____ Wand.* (està penjat) →\n{{2}}\n\n3) *Wir ____ ____ Supermarkt.* (anar, el supermercat) →\n{{3}}\n\n4) *Sie ____ sich ____ Sofa.* (ella s'asseu, el sofà) →\n{{4}}\n\n5) *Das Auto ____ ____ Parkplatz.* (està aparcat, *der Parkplatz*) →\n{{5}}",
     "blanks": [
-      { "id": "1", "label": "frase 1" },
-      { "id": "2", "label": "frase 2" },
-      { "id": "3", "label": "frase 3" },
-      { "id": "4", "label": "frase 4" },
-      { "id": "5", "label": "frase 5" }
+      { "id": "1", "label": "oració 1" },
+      { "id": "2", "label": "oració 2" },
+      { "id": "3", "label": "oració 3" },
+      { "id": "4", "label": "oració 4" },
+      { "id": "5", "label": "oració 5" }
     ]
   },
   "interaction": {

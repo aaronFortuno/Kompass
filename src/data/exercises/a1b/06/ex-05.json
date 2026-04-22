@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "A1b-6-ex-05",
   "topicId": "A1b-6",
-  "title": "Transforma la frase amb l'altre verb",
-  "prompt": "Reescriu cada frase amb el verb indicat, ajustant l'estructura (acusatiu ↔ datiu, adjectiu sí/no). Escriu la frase sencera tal com quedaria en alemany, amb majúscula inicial i punt final.",
+  "title": "Transforma l'oració amb l'altre verb",
+  "prompt": "Reescriu cada oració amb el verb indicat, ajustant l'estructura (acusatiu ↔ datiu, adjectiu sí/no). Escriu l'oració sencera tal com quedaria en alemany, amb majúscula inicial i punt final.",
   "difficulty": 3,
   "tags": ["transformacio", "estructura", "gefallen", "finden", "mogen", "mochten", "assessment"],
   "stimulus": {

@@ -11,7 +11,7 @@
     "template": "— Das ist {{1}} Mann. {{2}} Mann heißt Klaus.\n— Und ist das {{3}} Frau?\n— Nein, das ist {{4}} Frau. Das sind {{5}} Kinder von Klaus.",
     "blanks": [
       { "id": "1", "label": "primera menció (m.)" },
-      { "id": "2", "label": "referència, inici de frase (m.)" },
+      { "id": "2", "label": "referència, inici de oració (m.)" },
       { "id": "3", "label": "pregunta oberta (f.)" },
       { "id": "4", "label": "negació (f.)" },
       { "id": "5", "label": "nens concrets de Klaus (pl.)" }

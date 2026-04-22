@@ -15,7 +15,7 @@
       "kind": "narrative",
       "heading": "Context i motivació",
       "lead": "En alemany, ==l'ordre de les paraules no és lliure==.",
-      "body": "Hi ha una regla quasi màgica que governa gairebé totes les frases: la regla de la segona posició, el cor de la sintaxi alemanya. En català i castellà tenim molta llibertat — «Em dic Julia», «Julia em dic jo» — però en alemany el verb conjugat té un lloc fix i tota la resta s'organitza al seu voltant. La bona notícia: són molt poques regles.",
+      "body": "Hi ha una regla quasi màgica que governa gairebé totes les oracions: la regla de la segona posició, el cor de la sintaxi alemanya. En català i castellà tenim molta llibertat — «Em dic Julia», «Julia em dic jo» — però en alemany el verb conjugat té un lloc fix i tota la resta s'organitza al seu voltant. La bona notícia: són molt poques regles.",
       "points": [
         "L'**oració declarativa** (_Aussagesatz_): per dir coses.",
         "La **interrogativa parcial** (_W-Frage_): per preguntar amb pronom interrogatiu.",
@@ -87,12 +87,12 @@
       "body": "A la posició 1 pot anar qualsevol bloc. Quan hi posem alguna cosa que no és el subjecte, el subjecte es desplaça a la posició 3. Això s'anomena **inversió** (_Inversion_).",
       "rule": [
         "Els connectors **und** (_i_), **aber** (_però_) i **oder** (_o_) són ==neutres==: no ocupen posició, simplement uneixen.",
-        "Després d'un connector, la nova frase torna a començar de zero: subjecte (1) + verb (2) + complements."
+        "Després d'un connector, la nova oració torna a començar de zero: subjecte (1) + verb (2) + complements."
       ],
       "examples": [
         {
           "de": "Ich arbeite in Ingolstadt, **aber** ich wohne in Regensburg.",
-          "ca": "Després d'_aber_, la frase torna a començar: _ich_ (1) + _wohne_ (2) + _in Regensburg_ (3)."
+          "ca": "Després d'_aber_, l'oració torna a començar: _ich_ (1) + _wohne_ (2) + _in Regensburg_ (3)."
         }
       ]
     },
@@ -223,7 +223,7 @@
       "heading": "Síntesi",
       "visuals": [
         {
-          "alt": "Diagrama de les tres estructures de frase alemanyes: declarativa, W-Frage i Ja/Nein-Frage. El verb conjugat ocupa la posició 2 en les dues primeres i la posició 1 en la tercera.",
+          "alt": "Diagrama de les tres estructures de oració alemanyes: declarativa, W-Frage i Ja/Nein-Frage. El verb conjugat ocupa la posició 2 en les dues primeres i la posició 1 en la tercera.",
           "caption": "La posició del **verb conjugat** és la marca de cada tipus d'oració.",
           "width": 720,
           "svg": "<svg viewBox='0 0 720 320' xmlns='http://www.w3.org/2000/svg' role='img'><style>.lbl{font:500 11px 'IBM Plex Mono',monospace;letter-spacing:.18em;text-transform:uppercase;fill:currentColor;opacity:.55}.pos{font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.14em;text-transform:uppercase;fill:currentColor;opacity:.45}.slot{font:500 18px 'Newsreader',serif;fill:currentColor}.verb{font:600 20px 'Newsreader',serif;fill:currentColor}.box{fill:none;stroke:currentColor;stroke-width:1}.verbox{fill:currentColor;opacity:.08}.vline{stroke:currentColor;stroke-width:1.5;opacity:.6}</style><g transform='translate(0,12)'><text class='lbl' x='0' y='0'>Declarativa</text><text class='pos' x='40' y='28'>1</text><rect class='box' x='30' y='38' width='180' height='44'/><text class='slot' x='120' y='65' text-anchor='middle'>Subjecte</text><text class='pos' x='245' y='28'>2</text><rect class='box verbox' x='225' y='38' width='120' height='44'/><text class='verb' x='285' y='66' text-anchor='middle'>Verb</text><text class='pos' x='395' y='28'>3+</text><rect class='box' x='365' y='38' width='220' height='44'/><text class='slot' x='475' y='65' text-anchor='middle'>Complements</text><line class='vline' x1='285' y1='92' x2='285' y2='104'/></g><g transform='translate(0,122)'><text class='lbl' x='0' y='0'>W-Frage (parcial)</text><text class='pos' x='40' y='28'>1</text><rect class='box' x='30' y='38' width='180' height='44'/><text class='slot' x='120' y='65' text-anchor='middle'>Fragewort</text><text class='pos' x='245' y='28'>2</text><rect class='box verbox' x='225' y='38' width='120' height='44'/><text class='verb' x='285' y='66' text-anchor='middle'>Verb</text><text class='pos' x='395' y='28'>3+</text><rect class='box' x='365' y='38' width='220' height='44'/><text class='slot' x='475' y='65' text-anchor='middle'>Subjecte + compl.</text><line class='vline' x1='285' y1='92' x2='285' y2='104'/></g><g transform='translate(0,232)'><text class='lbl' x='0' y='0'>Ja/Nein-Frage (total)</text><text class='pos' x='40' y='28'>1</text><rect class='box verbox' x='30' y='38' width='180' height='44'/><text class='verb' x='120' y='66' text-anchor='middle'>Verb</text><text class='pos' x='245' y='28'>2</text><rect class='box' x='225' y='38' width='120' height='44'/><text class='slot' x='285' y='65' text-anchor='middle'>Subjecte</text><text class='pos' x='395' y='28'>3+</text><rect class='box' x='365' y='38' width='220' height='44'/><text class='slot' x='475' y='65' text-anchor='middle'>Complements</text><line class='vline' x1='120' y1='92' x2='120' y2='104'/></g></svg>"

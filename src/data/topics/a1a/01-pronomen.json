@@ -15,7 +15,7 @@
       "kind": "narrative",
       "heading": "Context i motivació",
       "lead": "Els pronoms són, literalment, les paraules que fem servir **en lloc del nom**.",
-      "body": "Quan vols dir «jo em dic Anna», «tu ets estudiant» o «ella viu a Berlín», el pronom (jo, tu, ella) és la primera peça de la frase. Per això, si comences a aprendre alemany, els pronoms són ==l'eina número u==: sense ells, no pots ni presentar-te ni parlar d'algú altre.",
+      "body": "Quan vols dir «jo em dic Anna», «tu ets estudiant» o «ella viu a Berlín», el pronom (jo, tu, ella) és la primera peça de l'oració. Per això, si comences a aprendre alemany, els pronoms són ==l'eina número u==: sense ells, no pots ni presentar-te ni parlar d'algú altre.",
       "points": [
         "**Pronoms personals** (_Personalpronomen_): _ich, du, er, sie, es, wir, ihr, sie, Sie_. Indiquen **qui** fa o és alguna cosa.",
         "**Pronoms possessius** (_Possessivpronomen_): _mein, dein, sein, ihr…_ Indiquen **de qui** és alguna cosa."
@@ -28,7 +28,7 @@
       "callout": {
         "variant": "info",
         "title": "Substantius en majúscula",
-        "body": "En alemany, **tots els substantius** s'escriuen amb majúscula inicial, sempre, estiguin on estiguin de la frase. Per això veuràs _Name_, _Adresse_, _Telefonnummer_ amb majúscula. No és que siguin noms propis: és una convenció ortogràfica de la llengua."
+        "body": "En alemany, **tots els substantius** s'escriuen amb majúscula inicial, sempre, estiguin on estiguin de l'oració. Per això veuràs _Name_, _Adresse_, _Telefonnummer_ amb majúscula. No és que siguin noms propis: és una convenció ortogràfica de la llengua."
       }
     },
     {
@@ -41,7 +41,7 @@
         {
           "pron": "ich",
           "gloss": "jo",
-          "note": "A diferència del català (_jo_) o del castellà (_yo_), **_ich_ s'escriu sempre en minúscula**, fins i tot al mig de la frase. Només va en majúscula si comença una oració.",
+          "note": "A diferència del català (_jo_) o del castellà (_yo_), **_ich_ s'escriu sempre en minúscula**, fins i tot al mig de l'oració. Només va en majúscula si comença una oració.",
           "example": { "de": "==Ich== bin Student.", "ca": "Sóc estudiant." }
         },
         {
@@ -199,7 +199,7 @@
         {
           "bad": "Heute bin **Ich** müde.",
           "good": "Heute bin **ich** müde.",
-          "why": "_ich_ sempre minúscula al mig de frase."
+          "why": "_ich_ sempre minúscula al mig de oració."
         }
       ]
     },

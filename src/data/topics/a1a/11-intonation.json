@@ -6,7 +6,7 @@
   "number": 11,
   "title": "Phonetik — Intonation",
   "shortTitle": "Intonation",
-  "description": "Melodia final de la frase (Satzmelodie): declaracions i W-Fragen baixen, Satzfragen i Rückfragen pugen. A més, a les W-Fragen l'èmfasi recau sobre el verb.",
+  "description": "Melodia final de l'oració (Satzmelodie): declaracions i W-Fragen baixen, Satzfragen i Rückfragen pugen. A més, a les W-Fragen l'èmfasi recau sobre el verb.",
   "axes": ["fonetica"],
   "steps": [
     {
@@ -14,17 +14,17 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Context i motivació\n\nAl tema anterior vam veure on cau l'**accent dins d'una paraula**: quina síl·laba es diu més forta. Ara pugem un esglaó i mirem un fenomen paral·lel però a nivell de frase: la **melodia de l'oració** (en alemany _Satzmelodie_), és a dir, la **intonació**. És el moviment de to —si la veu puja o baixa— al llarg de la frase, i sobretot al seu final.\n\nLa intonació no és un adorn. En alemany fa una feina molt concreta: **distingeix tipus de frase**. Si dius _Wo wohnst du_ amb to descendent, estàs preguntant on viu l'altre. Si dius _Bist du Lehrer_ amb to ascendent, estàs preguntant si és mestre. Canvia el to i canvia la funció comunicativa."
+          "body": "#### Context i motivació\n\nAl tema anterior vam veure on cau l'**accent dins d'una paraula**: quina síl·laba es diu més forta. Ara pugem un esglaó i mirem un fenomen paral·lel però a nivell de oració: la **melodia de l'oració** (en alemany _Satzmelodie_), és a dir, la **intonació**. És el moviment de to —si la veu puja o baixa— al llarg de l'oració, i sobretot al seu final.\n\nLa intonació no és un adorn. En alemany fa una feina molt concreta: **distingeix tipus de oració**. Si dius _Wo wohnst du_ amb to descendent, estàs preguntant on viu l'altre. Si dius _Bist du Lehrer_ amb to ascendent, estàs preguntant si és mestre. Canvia el to i canvia la funció comunicativa."
         },
         {
           "type": "callout",
           "variant": "info",
           "title": "La melodia fa feina gramatical",
-          "body": "En alemany, la **melodia final de la frase** marca si és una declaració, una pregunta amb paraula interrogativa, o una pregunta de sí/no. És una pista essencial, tant per parlar com per entendre."
+          "body": "En alemany, la **melodia final de l'oració** marca si és una declaració, una pregunta amb paraula interrogativa, o una pregunta de sí/no. És una pista essencial, tant per parlar com per entendre."
         },
         {
           "type": "explanation",
-          "body": "Això no t'hauria de sorprendre del tot: el català i el castellà també fan servir la intonació per preguntar (_Vius a Barcelona?_ vs _Vius a Barcelona._). La diferència és que en alemany el **patró és molt més sistemàtic** i lligat al tipus de frase, no a l'expressivitat del moment.\n\nEn aquest tema veurem **dos grans patrons** de melodia final i una **regla d'accentuació dins la frase** (quina paraula es prem més fort a les preguntes amb interrogatiu):\n\n1. Melodia **descendent** (↓): declaracions i preguntes amb paraula interrogativa (_W-Fragen_).\n2. Melodia **ascendent** (↑): preguntes de sí/no (_Satzfragen_) i repreguntes (_Rückfragen_).\n3. A les _W-Fragen_, **el verb és la paraula que es remarca** per defecte; però el parlant pot desplaçar l'èmfasi segons la intenció."
+          "body": "Això no t'hauria de sorprendre del tot: el català i el castellà també fan servir la intonació per preguntar (_Vius a Barcelona?_ vs _Vius a Barcelona._). La diferència és que en alemany el **patró és molt més sistemàtic** i lligat al tipus de oració, no a l'expressivitat del moment.\n\nEn aquest tema veurem **dos grans patrons** de melodia final i una **regla d'accentuació dins l'oració** (quina paraula es prem més fort a les preguntes amb interrogatiu):\n\n1. Melodia **descendent** (↓): declaracions i preguntes amb paraula interrogativa (_W-Fragen_).\n2. Melodia **ascendent** (↑): preguntes de sí/no (_Satzfragen_) i repreguntes (_Rückfragen_).\n3. A les _W-Fragen_, **el verb és la paraula que es remarca** per defecte; però el parlant pot desplaçar l'èmfasi segons la intenció."
         },
         {
           "type": "callout",
@@ -39,7 +39,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Patró 1: declaracions i W-Fragen → melodia descendent (↓)\n\nComencem pel patró més freqüent. En dos tipus de frase, la veu **baixa** al final:\n\n- Les **oracions declaratives** (_Aussagen_) —les que donen informació— acaben amb **melodia descendent**.\n- Les **preguntes amb paraula interrogativa** (_Wortfragen_ o _W-Fragen_: _wo, was, wer, wie, wann, warum_...) **també** acaben amb melodia descendent.\n\nExemples:\n\n> _Ich wohne in Barcelona._ (↓) — Visc a Barcelona.\n> _Wo wohnst du?_ (↓) — On vius?\n> _Was machst du?_ (↓) — Què fas?\n\nQue una pregunta acabi baixant pot xocar si véns del català o del castellà, perquè en aquestes llengües les preguntes tendim a sentir-les amb una corba ascendent. Però pensa-ho així: quan la pregunta ja conté una **paraula interrogativa** (_wo, was, wer_...), la funció interrogativa ja està marcada lèxicament. La frase no necessita que la melodia també la marqui, i per defecte segueix el patró declaratiu, que baixa."
+          "body": "#### Patró 1: declaracions i W-Fragen → melodia descendent (↓)\n\nComencem pel patró més freqüent. En dos tipus de oració, la veu **baixa** al final:\n\n- Les **oracions declaratives** (_Aussagen_) —les que donen informació— acaben amb **melodia descendent**.\n- Les **preguntes amb paraula interrogativa** (_Wortfragen_ o _W-Fragen_: _wo, was, wer, wie, wann, warum_...) **també** acaben amb melodia descendent.\n\nExemples:\n\n> _Ich wohne in Barcelona._ (↓) — Visc a Barcelona.\n> _Wo wohnst du?_ (↓) — On vius?\n> _Was machst du?_ (↓) — Què fas?\n\nQue una pregunta acabi baixant pot xocar si véns del català o del castellà, perquè en aquestes llengües les preguntes tendim a sentir-les amb una corba ascendent. Però pensa-ho així: quan la pregunta ja conté una **paraula interrogativa** (_wo, was, wer_...), la funció interrogativa ja està marcada lèxicament. L'oració no necessita que la melodia també la marqui, i per defecte segueix el patró declaratiu, que baixa."
         },
         {
           "type": "callout",
@@ -49,7 +49,7 @@
         },
         {
           "type": "explanation",
-          "body": "#### A les W-Fragen, el verb és la paraula que es remarca\n\nDins d'una _W-Frage_, no totes les paraules sonen igual. Hi ha una síl·laba que rep més força que les altres, i és la que dona l'**èmfasi principal** de la frase. Per defecte, a les preguntes amb paraula interrogativa, **normalment s'accentua el verb**.\n\n> Wie **heißen** Sie? — Com es diu (vostè)?\n> Wo **wohnst** du? — On vius?\n> Was **machst** du? — Què fas?\n\nEl verb és el que transporta la informació nova sobre la qual es pregunta (com, on, què fa el subjecte), i per això se'n porta el pes prosòdic.\n\n#### Però l'èmfasi es pot desplaçar\n\nAquesta regla de \"èmfasi al verb\" no és rígida. El parlant pot **moure l'accent** a una altra paraula de la frase per matisar la intenció comunicativa. Fixa't:\n\n> Wie **heißen** Sie? — pregunta neutra: vull saber el seu nom.\n> **Wie** heißen Sie? — pregunta com a represa: \"com diu que es diu?\" (potser no ho he sentit bé, o la repeteixo després d'haver preguntat una altra cosa).\n> Wie heißen **Sie**? — pregunta contrastiva: ja he preguntat el nom a una altra persona, i ara vull saber el d'aquest interlocutor concret (\"i vostè, com es diu?\").\n\nTres frases amb les mateixes paraules i el mateix ordre, però **tres intencions diferents** segons quina síl·laba carrega l'èmfasi. Aquest mecanisme —moure l'accent per canviar el matís, sense canviar les paraules— és molt productiu en alemany i val la pena tenir-lo al radar des d'ara, encara que a l'A1 només en facis servir la versió per defecte (èmfasi al verb)."
+          "body": "#### A les W-Fragen, el verb és la paraula que es remarca\n\nDins d'una _W-Frage_, no totes les paraules sonen igual. Hi ha una síl·laba que rep més força que les altres, i és la que dona l'**èmfasi principal** de l'oració. Per defecte, a les preguntes amb paraula interrogativa, **normalment s'accentua el verb**.\n\n> Wie **heißen** Sie? — Com es diu (vostè)?\n> Wo **wohnst** du? — On vius?\n> Was **machst** du? — Què fas?\n\nEl verb és el que transporta la informació nova sobre la qual es pregunta (com, on, què fa el subjecte), i per això se'n porta el pes prosòdic.\n\n#### Però l'èmfasi es pot desplaçar\n\nAquesta regla de \"èmfasi al verb\" no és rígida. El parlant pot **moure l'accent** a una altra paraula de l'oració per matisar la intenció comunicativa. Fixa't:\n\n> Wie **heißen** Sie? — pregunta neutra: vull saber el seu nom.\n> **Wie** heißen Sie? — pregunta com a represa: \"com diu que es diu?\" (potser no ho he sentit bé, o la repeteixo després d'haver preguntat una altra cosa).\n> Wie heißen **Sie**? — pregunta contrastiva: ja he preguntat el nom a una altra persona, i ara vull saber el d'aquest interlocutor concret (\"i vostè, com es diu?\").\n\nTres oracions amb les mateixes paraules i el mateix ordre, però **tres intencions diferents** segons quina síl·laba carrega l'èmfasi. Aquest mecanisme —moure l'accent per canviar el matís, sense canviar les paraules— és molt productiu en alemany i val la pena tenir-lo al radar des d'ara, encara que a l'A1 només en facis servir la versió per defecte (èmfasi al verb)."
         }
       ]
     },
@@ -64,7 +64,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Patró 2: Satzfragen i Rückfragen → melodia ascendent (↑)\n\nPassem al segon patró. Hi ha dos tipus de frase on la veu **puja** al final:\n\n- Les **preguntes de sí/no** (_Satzfragen_ o _Ja/Nein-Fragen_) acaben amb **melodia ascendent**.\n- Les **repreguntes** (_Rückfragen_) —quan repeteixes una cosa que no has entès o que vols confirmar— **també** acaben amb melodia ascendent.\n\nLes _Satzfragen_ són preguntes sense paraula interrogativa. Es formen posant el verb al davant (inversió), i el que les marca com a pregunta és precisament **la melodia**:\n\n> _Bist du Lehrer?_ (↑) — Ets mestre?\n> _Wohnst du in Berlin?_ (↑) — Vius a Berlín?\n> _Heißt du Anna?_ (↑) — Et dius Anna?\n\nAquí la diferència amb les _W-Fragen_ és crucial. Com que no hi ha cap _was, wo, wer_... que identifiqui la frase com a pregunta, la funció interrogativa **l'ha de carregar la intonació sola**. I per això puja: la pujada és el senyal.\n\nLes _Rückfragen_, per la seva banda, són preguntes curtes que reformulen o reprenen una cosa que l'interlocutor acaba de dir, normalment per confirmar-la:\n\n> _Und, wo wohnst du?_ (↑) — I tu, on vius?\n\nEncara que _wo wohnst du_ aïlladament seria una _W-Frage_ que baixa, quan la fem servir com a **repregunta** (després d'haver-ho preguntat a una altra persona, per exemple), la melodia puja. El gir ascendent marca que estem reprenent la conversa, no obrint-ne una de nova."
+          "body": "#### Patró 2: Satzfragen i Rückfragen → melodia ascendent (↑)\n\nPassem al segon patró. Hi ha dos tipus de oració on la veu **puja** al final:\n\n- Les **preguntes de sí/no** (_Satzfragen_ o _Ja/Nein-Fragen_) acaben amb **melodia ascendent**.\n- Les **repreguntes** (_Rückfragen_) —quan repeteixes una cosa que no has entès o que vols confirmar— **també** acaben amb melodia ascendent.\n\nLes _Satzfragen_ són preguntes sense paraula interrogativa. Es formen posant el verb al davant (inversió), i el que les marca com a pregunta és precisament **la melodia**:\n\n> _Bist du Lehrer?_ (↑) — Ets mestre?\n> _Wohnst du in Berlin?_ (↑) — Vius a Berlín?\n> _Heißt du Anna?_ (↑) — Et dius Anna?\n\nAquí la diferència amb les _W-Fragen_ és crucial. Com que no hi ha cap _was, wo, wer_... que identifiqui l'oració com a pregunta, la funció interrogativa **l'ha de carregar la intonació sola**. I per això puja: la pujada és el senyal.\n\nLes _Rückfragen_, per la seva banda, són preguntes curtes que reformulen o reprenen una cosa que l'interlocutor acaba de dir, normalment per confirmar-la:\n\n> _Und, wo wohnst du?_ (↑) — I tu, on vius?\n\nEncara que _wo wohnst du_ aïlladament seria una _W-Frage_ que baixa, quan la fem servir com a **repregunta** (després d'haver-ho preguntat a una altra persona, per exemple), la melodia puja. El gir ascendent marca que estem reprenent la conversa, no obrint-ne una de nova."
         },
         {
           "type": "callout",
@@ -122,8 +122,8 @@
         },
         {
           "type": "table",
-          "title": "Tipus de frase × melodia final",
-          "headers": ["Tipus de frase", "Melodia final", "Exemple"],
+          "title": "Tipus de oració × melodia final",
+          "headers": ["Tipus de oració", "Melodia final", "Exemple"],
           "rows": [
             ["Aussage (declaració)", "descendent (↓)", "_Ich wohne in Barcelona._ (↓)"],
             ["W-Frage (amb interrogatiu)", "descendent (↓)", "_Wo wohnst du?_ (↓)"],

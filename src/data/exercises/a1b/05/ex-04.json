@@ -3,7 +3,7 @@
   "id": "A1b-5-ex-04",
   "topicId": "A1b-5",
   "title": "Tria el verb adequat al matís",
-  "prompt": "Completa cada frase amb el verb que millor reculli el matís indicat entre parèntesis. Tens cinc opcions: _mag, gefällt, interessiert, möchte, finde_.",
+  "prompt": "Completa cada oració amb el verb que millor reculli el matís indicat entre parèntesis. Tens cinc opcions: _mag, gefällt, interessiert, möchte, finde_.",
   "difficulty": 2,
   "tags": ["matisos", "mogen", "gefallen", "interessieren", "mochten", "finden"],
   "stimulus": {
@@ -43,7 +43,7 @@
       "references": ["A1b-5", "A1a-16"]
     },
     "incorrect": {
-      "default": "Pensa en el matís de cada frase: (1) gust general i estable → _mag_; (2) _Mir_ ja hi és → verb de datiu → _gefällt_; (3) _Mich_ ja hi és → verb d'acusatiu → _interessiert_; (4) demanda cortès al bar → _möchte_; (5) valoració amb adjectiu al final → _finde_ (A1a-16)."
+      "default": "Pensa en el matís de cada oració: (1) gust general i estable → _mag_; (2) _Mir_ ja hi és → verb de datiu → _gefällt_; (3) _Mich_ ja hi és → verb d'acusatiu → _interessiert_; (4) demanda cortès al bar → _möchte_; (5) valoració amb adjectiu al final → _finde_ (A1a-16)."
     }
   }
 }

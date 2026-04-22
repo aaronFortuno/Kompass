@@ -3,19 +3,19 @@
   "id": "A1a-34-ex-07",
   "topicId": "A1a-34",
   "title": "Context → preposició alemanya",
-  "prompt": "Relaciona cada frase en català amb la preposició alemanya que caldria per traduir-la.",
+  "prompt": "Relaciona cada oració en català amb la preposició alemanya que caldria per traduir-la.",
   "difficulty": 2,
   "tags": ["datiu", "preposicions", "context", "matchpairs", "assessment"],
   "stimulus": {
     "type": "cardSet",
     "cards": [
-      { "id": "f1", "group": "Frase", "content": { "type": "text", "content": "Visc a casa dels meus avis." } },
-      { "id": "f2", "group": "Frase", "content": { "type": "text", "content": "Sóc de Barcelona." } },
-      { "id": "f3", "group": "Frase", "content": { "type": "text", "content": "Vaig cap a Viena." } },
-      { "id": "f4", "group": "Frase", "content": { "type": "text", "content": "Fa dues setmanes que estic malalt." } },
-      { "id": "f5", "group": "Frase", "content": { "type": "text", "content": "Parlo amb la meva mare." } },
-      { "id": "f6", "group": "Frase", "content": { "type": "text", "content": "El regal és de la meva tieta." } },
-      { "id": "f7", "group": "Frase", "content": { "type": "text", "content": "Vaig al metge." } },
+      { "id": "f1", "group": "Oració", "content": { "type": "text", "content": "Visc a casa dels meus avis." } },
+      { "id": "f2", "group": "Oració", "content": { "type": "text", "content": "Sóc de Barcelona." } },
+      { "id": "f3", "group": "Oració", "content": { "type": "text", "content": "Vaig cap a Viena." } },
+      { "id": "f4", "group": "Oració", "content": { "type": "text", "content": "Fa dues setmanes que estic malalt." } },
+      { "id": "f5", "group": "Oració", "content": { "type": "text", "content": "Parlo amb la meva mare." } },
+      { "id": "f6", "group": "Oració", "content": { "type": "text", "content": "El regal és de la meva tieta." } },
+      { "id": "f7", "group": "Oració", "content": { "type": "text", "content": "Vaig al metge." } },
       { "id": "r1", "group": "Preposició", "content": { "type": "text", "content": "**bei** (_bei meinen Großeltern_)" } },
       { "id": "r2", "group": "Preposició", "content": { "type": "text", "content": "**aus** (_aus Barcelona_)" } },
       { "id": "r3", "group": "Preposició", "content": { "type": "text", "content": "**nach** (_nach Wien_)" } },
@@ -27,7 +27,7 @@
   },
   "interaction": {
     "type": "matchPairs",
-    "groupALabel": "Frase",
+    "groupALabel": "Oració",
     "groupBLabel": "Preposició"
   },
   "validation": {

@@ -3,7 +3,7 @@
   "id": "A1b-40-ex-05",
   "topicId": "A1b-40",
   "title": "Tradueix del català a l'alemany",
-  "prompt": "Tradueix cada frase. Recorda: la **llista de datiu** (_helfen, danken, gefallen, gehören, passen, schmecken, gratulieren, antworten, folgen, vertrauen, verzeihen, zuhören_) → pronom en ==**datiu**== (_mir, dir, ihm, ihr, uns, euch, ihnen_), ==**sense preposició**==.",
+  "prompt": "Tradueix cada oració. Recorda: la **llista de datiu** (_helfen, danken, gefallen, gehören, passen, schmecken, gratulieren, antworten, folgen, vertrauen, verzeihen, zuhören_) → pronom en ==**datiu**== (_mir, dir, ihm, ihr, uns, euch, ihnen_), ==**sense preposició**==.",
   "difficulty": 3,
   "tags": ["verbs-datiu", "traduccio", "produccio", "typeIn"],
   "stimulus": {

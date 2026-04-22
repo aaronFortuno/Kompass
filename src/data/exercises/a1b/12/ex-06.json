@@ -3,7 +3,7 @@
   "id": "A1b-12-ex-06",
   "topicId": "A1b-12",
   "title": "Ordena les paraules: separables, reflexius i sein",
-  "prompt": "Ordena les paraules per formar una frase imperativa correcta. Escriu-la sencera, amb la puntuació final.",
+  "prompt": "Ordena les paraules per formar una oració imperativa correcta. Escriu-la sencera, amb la puntuació final.",
   "difficulty": 3,
   "tags": ["imperatiu", "ordre-paraules", "separables", "reflexius", "sein", "avaluacio"],
   "stimulus": {
@@ -19,10 +19,10 @@
   "interaction": {
     "type": "typeIn",
     "slots": [
-      { "blankId": "1", "placeholder": "frase ordenada" },
-      { "blankId": "2", "placeholder": "frase ordenada" },
-      { "blankId": "3", "placeholder": "frase ordenada" },
-      { "blankId": "4", "placeholder": "frase ordenada" }
+      { "blankId": "1", "placeholder": "oració ordenada" },
+      { "blankId": "2", "placeholder": "oració ordenada" },
+      { "blankId": "3", "placeholder": "oració ordenada" },
+      { "blankId": "4", "placeholder": "oració ordenada" }
     ],
     "caseSensitive": false,
     "trimWhitespace": true
@@ -50,7 +50,7 @@
         },
         {
           "match": { "3": "Auf macht die Tür!" },
-          "message": "El prefix separable (_auf_) va al **final** de la frase: _**Macht** die Tür **auf**!_ (Satzklammer, A1a-22)."
+          "message": "El prefix separable (_auf_) va al **final** de l'oració: _**Macht** die Tür **auf**!_ (Satzklammer, A1a-22)."
         },
         {
           "match": { "4": "Sein Sie bitte geduldig!" },

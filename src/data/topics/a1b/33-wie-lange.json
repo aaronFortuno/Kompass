@@ -157,7 +157,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Resum comparatiu: _Wann?_ vs _Wie lange?_\n\nEls dos sistemes conviuen i sovint es barregen en una mateixa frase. Taula mestra:"
+          "body": "#### Resum comparatiu: _Wann?_ vs _Wie lange?_\n\nEls dos sistemes conviuen i sovint es barregen en una mateixa oració. Taula mestra:"
         },
         {
           "type": "table",
@@ -173,7 +173,7 @@
         },
         {
           "type": "explanation",
-          "body": "**Frases amb totes dues preguntes alhora:**\n\n- _==Am Montag== arbeite ich ==acht Stunden==._ — Dilluns treballo vuit hores. (_wann_ → _am Montag_; _wie lange_ → _acht Stunden_)\n- _==Seit Januar== lerne ich ==jeden Tag eine Stunde== Deutsch._ — Des del gener, estudio alemany cada dia una hora. (_seit_ introdueix el període; _eine Stunde_ és durada en acusatiu)"
+          "body": "**Oracions amb totes dues preguntes alhora:**\n\n- _==Am Montag== arbeite ich ==acht Stunden==._ — Dilluns treballo vuit hores. (_wann_ → _am Montag_; _wie lange_ → _acht Stunden_)\n- _==Seit Januar== lerne ich ==jeden Tag eine Stunde== Deutsch._ — Des del gener, estudio alemany cada dia una hora. (_seit_ introdueix el període; _eine Stunde_ és durada en acusatiu)"
         }
       ]
     },
@@ -253,7 +253,7 @@
         },
         {
           "type": "explanation",
-          "body": "**Contrast _Wann?_ vs _Wie lange?_:**\n\n- _Wann?_ → moment (_am Montag, um 8 Uhr_). Veure A1b-32.\n- _Wie lange?_ → durada. Aquesta lliçó.\n- _Seit wann?_ → des de quan (respon amb _seit_ + data/moment: _seit Januar, seit 2020_).\n\n**Enllaços amb el que ja saps:**\n\n- **A1a-7, A1b-17** — casos i articles: acusatiu i datiu ja els coneixes; aquí els apliques a temporals.\n- **A1a-2, A1a-18, A1b-30** — posició 2 i inversió: quan el complement temporal obre la frase, aplica la inversió.\n- **A1b-32** — _wann?_ i moments puntuals. Contrast amb aquesta lliçó.\n\n**Preview A1b-34.** La lliçó següent explora el contrast ==_seit_ (període que continua) vs _vor_ (moment passat acabat)==. _Seit drei Tagen_ = fa tres dies i continua. _Vor drei Tagen_ = fa tres dies, ja va acabar."
+          "body": "**Contrast _Wann?_ vs _Wie lange?_:**\n\n- _Wann?_ → moment (_am Montag, um 8 Uhr_). Veure A1b-32.\n- _Wie lange?_ → durada. Aquesta lliçó.\n- _Seit wann?_ → des de quan (respon amb _seit_ + data/moment: _seit Januar, seit 2020_).\n\n**Enllaços amb el que ja saps:**\n\n- **A1a-7, A1b-17** — casos i articles: acusatiu i datiu ja els coneixes; aquí els apliques a temporals.\n- **A1a-2, A1a-18, A1b-30** — posició 2 i inversió: quan el complement temporal obre l'oració, aplica la inversió.\n- **A1b-32** — _wann?_ i moments puntuals. Contrast amb aquesta lliçó.\n\n**Preview A1b-34.** La lliçó següent explora el contrast ==_seit_ (període que continua) vs _vor_ (moment passat acabat)==. _Seit drei Tagen_ = fa tres dies i continua. _Vor drei Tagen_ = fa tres dies, ja va acabar."
         },
         {
           "type": "callout",

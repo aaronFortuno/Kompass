@@ -51,7 +51,7 @@
       "references": ["A1b-33"]
     },
     "incorrect": {
-      "default": "Les claus del diàleg: (1) per preguntar per la durada que continua, _==Wie lange==_ o _==Seit wann==_; (2) _seit_ sempre amb ==datiu== (_einer Woche, zwei Jahren_); (3) durada nua en ==acusatiu== (_einen Monat_); (4) _von… bis…_ amb majúscula inicial quan obre la frase.",
+      "default": "Les claus del diàleg: (1) per preguntar per la durada que continua, _==Wie lange==_ o _==Seit wann==_; (2) _seit_ sempre amb ==datiu== (_einer Woche, zwei Jahren_); (3) durada nua en ==acusatiu== (_einen Monat_); (4) _von… bis…_ amb majúscula inicial quan obre l'oració.",
       "byResponse": [
         {
           "match": { "2": "seit eine Woche" },
@@ -67,11 +67,11 @@
         },
         {
           "match": { "7": "seit zwei Jahren." },
-          "message": "Molt a prop — sobra el punt final (aquí el buit és enmig de la frase). _seit zwei Jahren_ sense punt."
+          "message": "Molt a prop — sobra el punt final (aquí el buit és enmig de l'oració). _seit zwei Jahren_ sense punt."
         },
         {
           "match": { "5": "von Montag bis Freitag" },
-          "message": "Obre la frase → majúscula inicial: _==Von== Montag bis Freitag_."
+          "message": "Obre l'oració → majúscula inicial: _==Von== Montag bis Freitag_."
         }
       ]
     }

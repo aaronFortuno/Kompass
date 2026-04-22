@@ -3,7 +3,7 @@
   "id": "A1a-28-ex-01",
   "topicId": "A1a-28",
   "title": "Masculí en acusatiu: afegir -en",
-  "prompt": "Completa les frases amb l'article correcte. Tots dos substantius són masculins i fan de complement directe.",
+  "prompt": "Completa les oracions amb l'article correcte. Tots dos substantius són masculins i fan de complement directe.",
   "difficulty": 1,
   "tags": ["articles", "acusatiu", "masculí", "dropdownfill", "quick-check"],
   "stimulus": {

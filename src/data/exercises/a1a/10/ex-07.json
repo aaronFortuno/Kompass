@@ -31,7 +31,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Excel·lent. Has vist la distinció que hi ha darrere aquestes parelles: _be-/ver-_ són prefixos no accentuats i inseparables; _an-/auf-_ són accentuats i separables. Quan comencis a fer frases amb verbs separables, aquesta pista auditiva et serà la guia principal."
+      "message": "Excel·lent. Has vist la distinció que hi ha darrere aquestes parelles: _be-/ver-_ són prefixos no accentuats i inseparables; _an-/auf-_ són accentuats i separables. Quan comencis a fer oracions amb verbs separables, aquesta pista auditiva et serà la guia principal."
     },
     "incorrect": {
       "default": "Compara les parelles: _bekommen_ vs _ankommen_ (mateixa arrel _kommen_, prefixos diferents). _be-_ és del grup no accentuat → accent a _kom_. _an-_ és del grup accentuat → accent a _an_. Igual passa amb _verstehen_ (accent a _ste_) i _aufstehen_ (accent a _auf_)."

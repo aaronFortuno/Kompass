@@ -3,12 +3,12 @@
   "id": "A1b-22-ex-06",
   "topicId": "A1b-22",
   "title": "Descripció d'una habitació — text lliure",
-  "prompt": "Tens l'**inventari d'una habitació** amb la ubicació de cada objecte. Escriu **una frase completa** per a cada element seguint l'esquema ==**[Lloc] [verb V2] [subjecte]**==, amb majúscula inicial, verb específic de posició i article en datiu. Es valida (a) ordre V2, (b) cas datiu, (c) verb de posició. _S'accepten variants raonables; la solució guia és la més natural._",
+  "prompt": "Tens l'**inventari d'una habitació** amb la ubicació de cada objecte. Escriu **una oració completa** per a cada element seguint l'esquema ==**[Lloc] [verb V2] [subjecte]**==, amb majúscula inicial, verb específic de posició i article en datiu. Es valida (a) ordre V2, (b) cas datiu, (c) verb de posició. _S'accepten variants raonables; la solució guia és la més natural._",
   "difficulty": 3,
   "tags": ["sintesi", "text-lliure", "descripcio", "v2", "datiu"],
   "stimulus": {
     "type": "textWithBlanks",
-    "template": "**Inventari de l'habitació:**\n\n- _links an der Wand_ → _das Bild_ (quadre)\n- _in der Mitte_ → _der Tisch_ (taula)\n- _auf dem Tisch_ → _die Vase_ (gerro)\n- _rechts neben dem Tisch_ → _der Stuhl_ (cadira)\n- _unter dem Tisch_ → _der Teppich_ (estora)\n- _vor dem Fenster_ → _die Lampe_ (làmpada)\n\n**Escriu 6 frases, una per objecte:**\n\n1. (quadre, esquerra-paret) → {{1}}\n\n2. (taula, centre) → {{2}}\n\n3. (gerro, sobre la taula) → {{3}}\n\n4. (cadira, dreta-taula) → {{4}}\n\n5. (estora, sota la taula) → {{5}}\n\n6. (làmpada, davant finestra) → {{6}}",
+    "template": "**Inventari de l'habitació:**\n\n- _links an der Wand_ → _das Bild_ (quadre)\n- _in der Mitte_ → _der Tisch_ (taula)\n- _auf dem Tisch_ → _die Vase_ (gerro)\n- _rechts neben dem Tisch_ → _der Stuhl_ (cadira)\n- _unter dem Tisch_ → _der Teppich_ (estora)\n- _vor dem Fenster_ → _die Lampe_ (làmpada)\n\n**Escriu 6 oracions, una per objecte:**\n\n1. (quadre, esquerra-paret) → {{1}}\n\n2. (taula, centre) → {{2}}\n\n3. (gerro, sobre la taula) → {{3}}\n\n4. (cadira, dreta-taula) → {{4}}\n\n5. (estora, sota la taula) → {{5}}\n\n6. (làmpada, davant finestra) → {{6}}",
     "blanks": [
       { "id": "1", "label": "1. Comença amb 'Links an der Wand...'" },
       { "id": "2", "label": "2. Comença amb 'In der Mitte...'" },
@@ -63,11 +63,11 @@
   },
   "feedback": {
     "correct": {
-      "message": "Excel·lent. Has produït **sis frases completes** que combinen: ==lloc al davant==, ==verb V2 específic==, ==datiu correcte==, i article indefinit al subjecte. Aquest és l'objectiu pràctic del tema. _S'accepten les formes amb _ist_ però el verb específic (_hängt, steht, liegt_) és sempre millor._",
+      "message": "Excel·lent. Has produït **sis oracions completes** que combinen: ==lloc al davant==, ==verb V2 específic==, ==datiu correcte==, i article indefinit al subjecte. Aquest és l'objectiu pràctic del tema. _S'accepten les formes amb _ist_ però el verb específic (_hängt, steht, liegt_) és sempre millor._",
       "references": ["A1b-22", "A1b-21", "A1b-19"]
     },
     "incorrect": {
-      "default": "Comprova els tres criteris a cada frase:\n\n1. ==**Ordre V2**==: el verb ha de ser la **segona** unitat (el lloc és la primera; el subjecte va després del verb).\n2. ==**Cas datiu**==: _an **der** Wand_, _auf **dem** Tisch_, _neben **dem** Tisch_, _unter **dem** Tisch_, _vor **dem** Fenster_ (tot Wechsel + Wo? → Dat).\n3. ==**Verb específic**==: _Bild → hängt_; _Tisch/Vase/Stuhl/Lampe → steht_; _Teppich → liegt_.\n\nSolució guia:\n1. _Links an der Wand hängt ein Bild._\n2. _In der Mitte steht ein Tisch._\n3. _Auf dem Tisch steht eine Vase._\n4. _Rechts neben dem Tisch steht ein Stuhl._\n5. _Unter dem Tisch liegt ein Teppich._\n6. _Vor dem Fenster steht eine Lampe._\n\n_Si has usat _ist_ sistemàticament, s'accepta però prova de practicar amb els verbs específics._"
+      "default": "Comprova els tres criteris a cada oració:\n\n1. ==**Ordre V2**==: el verb ha de ser la **segona** unitat (el lloc és la primera; el subjecte va després del verb).\n2. ==**Cas datiu**==: _an **der** Wand_, _auf **dem** Tisch_, _neben **dem** Tisch_, _unter **dem** Tisch_, _vor **dem** Fenster_ (tot Wechsel + Wo? → Dat).\n3. ==**Verb específic**==: _Bild → hängt_; _Tisch/Vase/Stuhl/Lampe → steht_; _Teppich → liegt_.\n\nSolució guia:\n1. _Links an der Wand hängt ein Bild._\n2. _In der Mitte steht ein Tisch._\n3. _Auf dem Tisch steht eine Vase._\n4. _Rechts neben dem Tisch steht ein Stuhl._\n5. _Unter dem Tisch liegt ein Teppich._\n6. _Vor dem Fenster steht eine Lampe._\n\n_Si has usat _ist_ sistemàticament, s'accepta però prova de practicar amb els verbs específics._"
     }
   }
 }

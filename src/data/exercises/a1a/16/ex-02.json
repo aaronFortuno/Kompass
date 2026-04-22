@@ -3,7 +3,7 @@
   "id": "A1a-16-ex-02",
   "topicId": "A1a-16",
   "title": "mag, gern o finde?",
-  "prompt": "Completa cada frase amb la paraula correcta segons la construcció que hi apareix.",
+  "prompt": "Completa cada oració amb la paraula correcta segons la construcció que hi apareix.",
   "difficulty": 1,
   "tags": ["mag", "gern", "finde", "construccions"],
   "stimulus": {
@@ -32,7 +32,7 @@
       "message": "Molt bé. _Kaffee_ és una cosa → **mag** (_mögen_ + substantiu). _Tanzen_ és una acció → **gern** darrere del verb conjugat. _Berlin interessant_ és una valoració → **finde** + adjectiu al final."
     },
     "incorrect": {
-      "default": "Pensa en la construcció que correspon a cada frase: (1) m'agrada una **cosa** → _mag_ + substantiu; (2) m'agrada una **acció** → verb conjugat + _gern_; (3) dono una **opinió/valoració** → _finde_ + substantiu + adjectiu."
+      "default": "Pensa en la construcció que correspon a cada oració: (1) m'agrada una **cosa** → _mag_ + substantiu; (2) m'agrada una **acció** → verb conjugat + _gern_; (3) dono una **opinió/valoració** → _finde_ + substantiu + adjectiu."
     }
   }
 }

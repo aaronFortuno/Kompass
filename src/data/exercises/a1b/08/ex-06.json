@@ -3,7 +3,7 @@
   "id": "A1b-8-ex-06",
   "topicId": "A1b-8",
   "title": "Els alemanys i els mitjans de transport",
-  "prompt": "Completa el micro-text sobre hàbits de mobilitat triant a cada frase la forma de la tríada adequada.",
+  "prompt": "Completa el micro-text sobre hàbits de mobilitat triant a cada oració la forma de la tríada adequada.",
   "difficulty": 2,
   "tags": ["integracio", "mobilitat", "gern", "lieber", "am-liebsten"],
   "stimulus": {
@@ -33,11 +33,11 @@
   },
   "feedback": {
     "correct": {
-      "message": "Perfecte. Has reproduït l'exemple canònic del tema: _gern → lieber → am liebsten_ aplicat a un mateix camp (mobilitat). Fixa't que a la tercera frase, _am liebsten_ no va al principi sinó darrere del verb (posició estàndard), i és igualment correcte.",
+      "message": "Perfecte. Has reproduït l'exemple canònic del tema: _gern → lieber → am liebsten_ aplicat a un mateix camp (mobilitat). Fixa't que a la tercera oració, _am liebsten_ no va al principi sinó darrere del verb (posició estàndard), i és igualment correcte.",
       "references": ["A1b-8"]
     },
     "incorrect": {
-      "default": "Els tres graus, en ordre: (1) simplement _gern_; (2) comparació amb _als_... implícit o explícit → _lieber_; (3) el màxim, amb _am_ obligatori → _am liebsten_. Totes tres formes van al mateix lloc sintàctic (darrere del verb conjugat), tret que vulguis obrir la frase amb _Am liebsten_ per emfatitzar."
+      "default": "Els tres graus, en ordre: (1) simplement _gern_; (2) comparació amb _als_... implícit o explícit → _lieber_; (3) el màxim, amb _am_ obligatori → _am liebsten_. Totes tres formes van al mateix lloc sintàctic (darrere del verb conjugat), tret que vulguis obrir l'oració amb _Am liebsten_ per emfatitzar."
     }
   }
 }

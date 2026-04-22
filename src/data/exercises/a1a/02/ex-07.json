@@ -3,7 +3,7 @@
   "id": "A1a-2-ex-07",
   "topicId": "A1a-2",
   "title": "Classifica el tipus d'oració",
-  "prompt": "Per a cada frase, identifica si és una declarativa, una W-Frage o una Ja/Nein-Frage.",
+  "prompt": "Per a cada oració, identifica si és una declarativa, una W-Frage o una Ja/Nein-Frage.",
   "difficulty": 3,
   "tags": ["classificacio", "declarativa", "w-frage", "ja-nein-frage"],
   "stimulus": {

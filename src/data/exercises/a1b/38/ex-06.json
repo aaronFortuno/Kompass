@@ -3,7 +3,7 @@
   "id": "A1b-38-ex-06",
   "topicId": "A1b-38",
   "title": "Tria el verb segons el patró",
-  "prompt": "Per a cada frase, tria el verb que ==**encaixa amb la forma del complement**== (datiu, acusatiu, preposició).",
+  "prompt": "Per a cada oració, tria el verb que ==**encaixa amb la forma del complement**== (datiu, acusatiu, preposició).",
   "difficulty": 2,
   "tags": ["contextualitzacio", "patrons", "produccio", "assessment"],
   "stimulus": {

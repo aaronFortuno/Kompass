@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "A1b-26-ex-03",
   "topicId": "A1b-26",
-  "title": "Ordena les frases (Satzklammer)",
-  "prompt": "Per a cada conjunt de paraules desordenades, tria la frase ==**correctament ordenada**==. Recorda: l'auxiliar va a ==**V2**== (o V1 si és pregunta tancada) i el participi va al ==**final absolut**==.",
+  "title": "Ordena les oracions (Satzklammer)",
+  "prompt": "Per a cada conjunt de paraules desordenades, tria l'oració ==**correctament ordenada**==. Recorda: l'auxiliar va a ==**V2**== (o V1 si és pregunta tancada) i el participi va al ==**final absolut**==.",
   "difficulty": 2,
   "tags": ["perfekt", "order", "satzklammer", "sintaxi"],
   "stimulus": {
@@ -94,7 +94,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Perfecte. En totes les frases has respectat la ==**Satzklammer**==: l'auxiliar (_habe, bin, haben, ist, habe, habt, hat_) en V2 (o V1 en la pregunta tancada _Habt ihr…?_), i el participi (_gegessen, gefahren, gesehen, gekommen, gelernt, gelesen, gekauft_) al ==**final absolut**==. Els complements al mig.",
+      "message": "Perfecte. En totes les oracions has respectat la ==**Satzklammer**==: l'auxiliar (_habe, bin, haben, ist, habe, habt, hat_) en V2 (o V1 en la pregunta tancada _Habt ihr…?_), i el participi (_gegessen, gefahren, gesehen, gekommen, gelernt, gelesen, gekauft_) al ==**final absolut**==. Els complements al mig.",
       "references": ["A1b-26"]
     },
     "incorrect": {

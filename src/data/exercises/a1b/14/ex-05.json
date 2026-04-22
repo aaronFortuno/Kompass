@@ -3,7 +3,7 @@
   "id": "A1b-14-ex-05",
   "topicId": "A1b-14",
   "title": "Reformula _weh tun_ ↔ _Schmerzen haben_",
-  "prompt": "Reescriu cada frase amb l'estructura alternativa. Si està amb _weh tun_, passa-la a _Schmerzen haben_; si està amb _Schmerzen_, passa-la a _weh tun_.",
+  "prompt": "Reescriu cada oració amb l'estructura alternativa. Si està amb _weh tun_, passa-la a _Schmerzen haben_; si està amb _Schmerzen_, passa-la a _weh tun_.",
   "difficulty": 2,
   "tags": ["weh-tun", "schmerzen", "reformulacio"],
   "stimulus": {

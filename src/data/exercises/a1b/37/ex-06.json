@@ -3,7 +3,7 @@
   "id": "A1b-37-ex-06",
   "topicId": "A1b-37",
   "title": "Troba l'error (o confirma que és correcta)",
-  "prompt": "Per a cada frase, identifica què hi passa: ==**(a) forma incorrecta del pronom**==, ==**(b) cas equivocat**== (acus./dat. invertits), ==**(c) gènere equivocat**==, o ==**(d) la frase és correcta**==.",
+  "prompt": "Per a cada oració, identifica què hi passa: ==**(a) forma incorrecta del pronom**==, ==**(b) cas equivocat**== (acus./dat. invertits), ==**(c) gènere equivocat**==, o ==**(d) l'oració és correcta**==.",
   "difficulty": 3,
   "tags": ["pronoms", "errors", "diagnostic"],
   "stimulus": {
@@ -123,7 +123,7 @@
         },
         {
           "match": { "5": "(b) cas equivocat (acus./dat. invertits)" },
-          "message": "_mit_ regeix ==datiu==, i _euch_ **serveix** per a datiu plural (i també acusatiu). La frase és correcta. Resposta **(d)**.",
+          "message": "_mit_ regeix ==datiu==, i _euch_ **serveix** per a datiu plural (i també acusatiu). L'oració és correcta. Resposta **(d)**.",
           "references": ["A1b-20", "A1b-37"]
         },
         {

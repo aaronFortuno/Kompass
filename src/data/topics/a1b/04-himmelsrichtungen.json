@@ -163,13 +163,13 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Altres fórmules geogràfiques útils\n\nAquestes expressions acompanyen els cardinals en descripcions reals i t'estalvien frases llargues.\n\n**1. in der Nähe von + Dativ** → \"a prop de\"\n\n- _Potsdam liegt ==in der Nähe von Berlin==._ → Potsdam és a prop de Berlín.\n\n**2. nicht weit von + Dativ** → \"no lluny de\"\n\n- _Wiesbaden liegt ==nicht weit von Frankfurt==._ → Wiesbaden no és lluny de Frankfurt.\n\n**3. im Bundesland + nom** → \"a l'estat federal de…\"\n\n- _München liegt ==im Bundesland Bayern==._ → Munic és a l'estat federal de Baviera.\n- Alemanya té 16 ==_Bundesländer_== (estats federats). Alguns que veuràs: _Bayern, Sachsen, Hessen, Nordrhein-Westfalen, Baden-Württemberg_.\n\n**4. an einem Fluss** → \"a un riu\"\n\n- _Köln liegt ==am Rhein==._ → Colònia és al Rin. (_an dem → am_)\n- _Dresden liegt ==an der Elbe==._ → Dresden és a l'Elba.\n\n**5. an der Grenze (zu…)** → \"a la frontera (amb…)\"\n\n- _Flensburg liegt ==an der Grenze zu Dänemark==._ → Flensburg és a la frontera amb Dinamarca.\n- També: _an der dänischen Grenze_ (a la frontera danesa)."
+          "body": "#### Altres fórmules geogràfiques útils\n\nAquestes expressions acompanyen els cardinals en descripcions reals i t'estalvien oracions llargues.\n\n**1. in der Nähe von + Dativ** → \"a prop de\"\n\n- _Potsdam liegt ==in der Nähe von Berlin==._ → Potsdam és a prop de Berlín.\n\n**2. nicht weit von + Dativ** → \"no lluny de\"\n\n- _Wiesbaden liegt ==nicht weit von Frankfurt==._ → Wiesbaden no és lluny de Frankfurt.\n\n**3. im Bundesland + nom** → \"a l'estat federal de…\"\n\n- _München liegt ==im Bundesland Bayern==._ → Munic és a l'estat federal de Baviera.\n- Alemanya té 16 ==_Bundesländer_== (estats federats). Alguns que veuràs: _Bayern, Sachsen, Hessen, Nordrhein-Westfalen, Baden-Württemberg_.\n\n**4. an einem Fluss** → \"a un riu\"\n\n- _Köln liegt ==am Rhein==._ → Colònia és al Rin. (_an dem → am_)\n- _Dresden liegt ==an der Elbe==._ → Dresden és a l'Elba.\n\n**5. an der Grenze (zu…)** → \"a la frontera (amb…)\"\n\n- _Flensburg liegt ==an der Grenze zu Dänemark==._ → Flensburg és a la frontera amb Dinamarca.\n- També: _an der dänischen Grenze_ (a la frontera danesa)."
         },
         {
           "type": "callout",
           "variant": "example",
           "title": "Patró combinat típic",
-          "body": "_München liegt im Süden Deutschlands, im Bundesland Bayern, nicht weit von der Grenze zu Österreich._ Una sola frase, tres fórmules, tota una localització."
+          "body": "_München liegt im Süden Deutschlands, im Bundesland Bayern, nicht weit von der Grenze zu Österreich._ Una sola oració, tres fórmules, tota una localització."
         }
       ]
     },
@@ -222,8 +222,8 @@
         {
           "type": "callout",
           "variant": "example",
-          "title": "Frase-tipus que ho concentra tot",
-          "body": "_Freiburg liegt ==im Südwesten== Deutschlands, ==im Bundesland== Baden-Württemberg, ==nicht weit von der Grenze zu== Frankreich und der Schweiz._\n\nUna sola frase, quatre fórmules, localització total."
+          "title": "Oració-tipus que ho concentra tot",
+          "body": "_Freiburg liegt ==im Südwesten== Deutschlands, ==im Bundesland== Baden-Württemberg, ==nicht weit von der Grenze zu== Frankreich und der Schweiz._\n\nUna sola oració, quatre fórmules, localització total."
         },
         {
           "type": "callout",

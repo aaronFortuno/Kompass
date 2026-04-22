@@ -115,7 +115,7 @@
           "type": "callout",
           "variant": "warning",
           "title": "El gran dilema A1",
-          "body": "El gran dilema pedagògic de l'alemany A1 és només aquest: **distingir *Wo?* de *Wohin?*** quan la preposició és la mateixa. Aquesta lliçó t'ensenya a fer la pregunta *abans* d'escriure la frase."
+          "body": "El gran dilema pedagògic de l'alemany A1 és només aquest: **distingir *Wo?* de *Wohin?*** quan la preposició és la mateixa. Aquesta lliçó t'ensenya a fer la pregunta *abans* d'escriure l'oració."
         }
       ]
     },
@@ -124,7 +124,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Estratègia pràctica: pregunta't primer\n\nAbans d'escriure una frase amb preposició local, fes-te la pregunta:\n\n1. **Hi ha moviment?** Si **no** → és *Wo?* → datiu.\n2. Si sí, **d'on ve?** → *Woher?* → *aus* / *von* + datiu.\n3. Si sí, **cap a on va?** → *Wohin?* → *nach* / *zu* + datiu, **o** *in/an/auf* + **acusatiu**.\n\n**Exemples guiats:**\n\n- \"El llibre és damunt la taula.\" → *No hi ha moviment* → *Wo?* → *Das Buch ist **auf dem** Tisch.* (datiu)\n- \"Deixo el llibre damunt la taula.\" → *Hi ha moviment (poso alguna cosa)* → *Wohin?* → *Ich lege das Buch **auf den** Tisch.* (acusatiu)\n- \"Surto de l'oficina.\" → *Origen* → *Woher?* → *Ich komme **aus dem** Büro.*\n- \"Vaig a l'oficina.\" → *Destinació* (nom comú) → *Wohin?* → *Ich gehe **ins** Büro.* (*in + das* → *ins*)"
+          "body": "#### Estratègia pràctica: pregunta't primer\n\nAbans d'escriure una oració amb preposició local, fes-te la pregunta:\n\n1. **Hi ha moviment?** Si **no** → és *Wo?* → datiu.\n2. Si sí, **d'on ve?** → *Woher?* → *aus* / *von* + datiu.\n3. Si sí, **cap a on va?** → *Wohin?* → *nach* / *zu* + datiu, **o** *in/an/auf* + **acusatiu**.\n\n**Exemples guiats:**\n\n- \"El llibre és damunt la taula.\" → *No hi ha moviment* → *Wo?* → *Das Buch ist **auf dem** Tisch.* (datiu)\n- \"Deixo el llibre damunt la taula.\" → *Hi ha moviment (poso alguna cosa)* → *Wohin?* → *Ich lege das Buch **auf den** Tisch.* (acusatiu)\n- \"Surto de l'oficina.\" → *Origen* → *Woher?* → *Ich komme **aus dem** Büro.*\n- \"Vaig a l'oficina.\" → *Destinació* (nom comú) → *Wohin?* → *Ich gehe **ins** Büro.* (*in + das* → *ins*)"
         },
         {
           "type": "callout",
@@ -178,7 +178,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Resum del que t'emportes\n\n- L'alemany distingeix **tres preguntes locals**: ==Wo?== (on, estàtic), ==Woher?== (d'on, origen), ==Wohin?== (cap a on, destinació).\n- Aquesta distinció determina el **cas gramatical**:\n  - *Wo?* → **datiu** (amb qualsevol preposició local, A1b-1, A1a-34).\n  - *Woher?* → **datiu** (*aus*, *von*; A1a-34, A1b-3).\n  - *Wohin?* → **acusatiu** amb Wechselpräpositionen (*in, an, auf*…); **datiu** amb *nach* i *zu* (A1b-3).\n- La **mateixa preposició** pot donar frases diferents: *im Büro* (datiu, estàtic) / *ins Büro* (acusatiu, direcció).\n- **Regla pràctica:** abans d'escriure, pregunta't primer *Wo?*, *Woher?* o *Wohin?*. La resposta a aquesta pregunta tria el cas."
+          "body": "#### Resum del que t'emportes\n\n- L'alemany distingeix **tres preguntes locals**: ==Wo?== (on, estàtic), ==Woher?== (d'on, origen), ==Wohin?== (cap a on, destinació).\n- Aquesta distinció determina el **cas gramatical**:\n  - *Wo?* → **datiu** (amb qualsevol preposició local, A1b-1, A1a-34).\n  - *Woher?* → **datiu** (*aus*, *von*; A1a-34, A1b-3).\n  - *Wohin?* → **acusatiu** amb Wechselpräpositionen (*in, an, auf*…); **datiu** amb *nach* i *zu* (A1b-3).\n- La **mateixa preposició** pot donar oracions diferents: *im Büro* (datiu, estàtic) / *ins Büro* (acusatiu, direcció).\n- **Regla pràctica:** abans d'escriure, pregunta't primer *Wo?*, *Woher?* o *Wohin?*. La resposta a aquesta pregunta tria el cas."
         },
         {
           "type": "table",

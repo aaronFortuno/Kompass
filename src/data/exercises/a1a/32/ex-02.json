@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "A1a-32-ex-02",
   "topicId": "A1a-32",
-  "title": "Construeix una frase amb _finden_",
+  "title": "Construeix una oració amb _finden_",
   "prompt": "Ordena les peces per traduir _Trobo el balcó genial_. Recorda l'estructura: _Subjecte + finden + Akkusativ + Adjektiv_. _Balkon_ és masculí.",
   "difficulty": 1,
   "tags": ["finden", "acusatiu", "adjectiu", "ordre", "quick-check"],

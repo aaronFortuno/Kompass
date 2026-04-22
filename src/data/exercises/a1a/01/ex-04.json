@@ -36,7 +36,7 @@
       "message": "Felicitats! Has integrat tot el tema: cortesia **Sie**, possessiu formal **Ihre**, primera persona **Ich** i la concordança femenina amb _Adresse_ i _Telefonnummer_."
     },
     "incorrect": {
-      "default": "Tres pistes: (a) a una oficina amb un client desconegut el tracte és _Sie_, i el possessiu corresponent és _Ihr / Ihre_ sempre amb majúscula; (b) _Adresse_ i _Telefonnummer_ són femenins, per tant demanen forma amb _-e_; (c) el possessiu de l'Anna (3a sg. f.) és l'arrel _ihr-_; aquí a inici de frase s'escriu **Ihre** amb majúscula i la _-e_ per concordar amb _Telefonnummer_."
+      "default": "Tres pistes: (a) a una oficina amb un client desconegut el tracte és _Sie_, i el possessiu corresponent és _Ihr / Ihre_ sempre amb majúscula; (b) _Adresse_ i _Telefonnummer_ són femenins, per tant demanen forma amb _-e_; (c) el possessiu de l'Anna (3a sg. f.) és l'arrel _ihr-_; aquí a inici de oració s'escriu **Ihre** amb majúscula i la _-e_ per concordar amb _Telefonnummer_."
     }
   }
 }

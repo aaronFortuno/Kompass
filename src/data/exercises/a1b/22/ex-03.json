@@ -3,7 +3,7 @@
   "id": "A1b-22-ex-03",
   "topicId": "A1b-22",
   "title": "Tria el verb específic de posició",
-  "prompt": "Tria el verb de posició adequat a cada frase: ==_**stehen**_== (dret), ==_**liegen**_== (ajagut), ==_**hängen**_== (penjat), ==_**sitzen**_== (assegut).",
+  "prompt": "Tria el verb de posició adequat a cada oració: ==_**stehen**_== (dret), ==_**liegen**_== (ajagut), ==_**hängen**_== (penjat), ==_**sitzen**_== (assegut).",
   "difficulty": 2,
   "tags": ["verbs-ubicacio", "stehen-liegen-haengen-sitzen"],
   "stimulus": {

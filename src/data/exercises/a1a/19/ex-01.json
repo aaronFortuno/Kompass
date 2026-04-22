@@ -39,7 +39,7 @@
       "message": "Molt bé. Has vist que _ich kann_ i _er kann_ són iguals (sense terminació!), i que al plural torna la _ö_ de l'infinitiu (_wir können_). A més, l'infinitiu (_sprechen, spielen, kommen, fahren_) sempre va al final: és la Satzklammer."
     },
     "incorrect": {
-      "default": "Revisa: (1) a _ich_ i _er/sie/es_, _können_ fa **kann** sense terminació; (2) _du_ fa **kannst**; (3) al plural recupera la _ö_: **wir können, ihr könnt, sie können**; (4) el segon verb (infinitiu) sempre tanca la frase."
+      "default": "Revisa: (1) a _ich_ i _er/sie/es_, _können_ fa **kann** sense terminació; (2) _du_ fa **kannst**; (3) al plural recupera la _ö_: **wir können, ihr könnt, sie können**; (4) el segon verb (infinitiu) sempre tanca l'oració."
     }
   }
 }

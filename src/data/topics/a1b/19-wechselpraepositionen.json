@@ -6,7 +6,7 @@
   "number": 19,
   "title": "Die lokalen Präpositionen — Wechselpräpositionen",
   "shortTitle": "Wechselpräpositionen",
-  "description": "Les 9 preposicions \"commutadores\" que alternen datiu (Wo?) i acusatiu (Wohin?) segons el significat de la frase.",
+  "description": "Les 9 preposicions \"commutadores\" que alternen datiu (Wo?) i acusatiu (Wohin?) segons el significat de l'oració.",
   "axes": ["preposicions", "casos"],
   "prerequisites": ["A1b-1", "A1b-18", "A1a-28", "A1a-34"],
   "estimatedMinutes": 25,
@@ -16,7 +16,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### La peça central d'A1b: preposicions que \"canvien\" de cas\n\nHem arribat al **tema clau de tot A1b**. Si entens aquesta lliçó, entens el 80% de la gramàtica local alemanya. Si no, tot el que vindrà després (rutes, indicacions, direccions) coixejarà. Així que: respira, no vagis ràpid, i torna-hi quan calgui.\n\nA **A1b-1** ja vas veure una part del pastís: *in*, *an*, *auf*, *neben* amb **datiu** quan responen a *Wo?* (\"on?\"). També a **A1a-34** vas aprendre preposicions que **sempre** demanen datiu (*mit*, *bei*, *aus*, *nach*, *von*, *zu*, *seit*). I a **A1b-18** les que **sempre** demanen acusatiu (*durch*, *für*, *gegen*, *ohne*, *um*).\n\nAvui toca un **tercer grup** de preposicions: les **==Wechselpräpositionen==** (\"preposicions commutadores\" o \"mixtes\"). Són **nou** i tenen una particularitat decisiva:\n\n> Poden anar amb **datiu** *o* amb **acusatiu**. El cas depèn del **significat** de la frase, no de la preposició.\n\nEn aquesta lliçó aprendràs:\n\n1. **Quines són les 9 Wechselpräpositionen** i què signifiquen.\n2. **Quan** fer servir datiu i **quan** acusatiu (regla **Wo? / Wohin?**).\n3. Les **contraccions** habituals (*im, am, ins, ans, aufs*).\n4. Verbs típics que t'orienten cap a l'un o l'altre cas."
+          "body": "#### La peça central d'A1b: preposicions que \"canvien\" de cas\n\nHem arribat al **tema clau de tot A1b**. Si entens aquesta lliçó, entens el 80% de la gramàtica local alemanya. Si no, tot el que vindrà després (rutes, indicacions, direccions) coixejarà. Així que: respira, no vagis ràpid, i torna-hi quan calgui.\n\nA **A1b-1** ja vas veure una part del pastís: *in*, *an*, *auf*, *neben* amb **datiu** quan responen a *Wo?* (\"on?\"). També a **A1a-34** vas aprendre preposicions que **sempre** demanen datiu (*mit*, *bei*, *aus*, *nach*, *von*, *zu*, *seit*). I a **A1b-18** les que **sempre** demanen acusatiu (*durch*, *für*, *gegen*, *ohne*, *um*).\n\nAvui toca un **tercer grup** de preposicions: les **==Wechselpräpositionen==** (\"preposicions commutadores\" o \"mixtes\"). Són **nou** i tenen una particularitat decisiva:\n\n> Poden anar amb **datiu** *o* amb **acusatiu**. El cas depèn del **significat** de l'oració, no de la preposició.\n\nEn aquesta lliçó aprendràs:\n\n1. **Quines són les 9 Wechselpräpositionen** i què signifiquen.\n2. **Quan** fer servir datiu i **quan** acusatiu (regla **Wo? / Wohin?**).\n3. Les **contraccions** habituals (*im, am, ins, ans, aufs*).\n4. Verbs típics que t'orienten cap a l'un o l'altre cas."
         },
         {
           "type": "callout",
@@ -83,7 +83,7 @@
           "type": "callout",
           "variant": "tip",
           "title": "La pregunta clau",
-          "body": "Davant de qualsevol frase amb una d'aquestes preposicions, pregunta't: *\"Això descriu ==on== és / passa alguna cosa, o descriu ==cap on== es mou?\"* Si *on* → **datiu**. Si *cap on* → **acusatiu**."
+          "body": "Davant de qualsevol oració amb una d'aquestes preposicions, pregunta't: *\"Això descriu ==on== és / passa alguna cosa, o descriu ==cap on== es mou?\"* Si *on* → **datiu**. Si *cap on* → **acusatiu**."
         },
         {
           "type": "callout",

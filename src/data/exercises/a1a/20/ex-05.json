@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "A1a-20-ex-05",
   "topicId": "A1a-20",
-  "title": "Posició a la frase: V2 i inversió",
-  "prompt": "Escriu l'expressió temporal adequada a cada buit segons la pista en català. Fixa't en la majúscula quan l'adverbi obre la frase.",
+  "title": "Posició a l'oració: V2 i inversió",
+  "prompt": "Escriu l'expressió temporal adequada a cada buit segons la pista en català. Fixa't en la majúscula quan l'adverbi obre l'oració.",
   "difficulty": 3,
   "tags": ["v2", "inversió", "posició", "adverbis", "producció"],
   "stimulus": {
@@ -41,7 +41,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Perfecte. Has aplicat la regla V2: quan l'adverbi obre la frase (_Heute, Jeden Tag, Morgens_) s'escriu amb majúscula i el verb el segueix immediatament. A la posició B (slots 2 i 4) l'adverbi va darrere del verb, en minúscula."
+      "message": "Perfecte. Has aplicat la regla V2: quan l'adverbi obre l'oració (_Heute, Jeden Tag, Morgens_) s'escriu amb majúscula i el verb el segueix immediatament. A la posició B (slots 2 i 4) l'adverbi va darrere del verb, en minúscula."
     },
     "incorrect": {
       "default": "Recorda: (1) adverbi a la posició 1 → majúscula inicial i verb just darrere (_Heute lerne ich..._, _Morgens trinke ich..._); (2) _Tag_ és masculí, i _jed-_ en acusatiu masculí fa _jeden_; (3) _Woche_ és femení, per tant _in der Woche_, no _im Woche_."

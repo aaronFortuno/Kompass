@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "A1b-15-ex-05",
   "topicId": "A1b-15",
-  "title": "Satzklammer: monta la frase sencera (viatge a Berlín)",
-  "prompt": "Ordena les paraules en una frase correcta. El modal va a **posició 2** (o 1 si és pregunta) i l'infinitiu al **final**. Escriu la frase completa amb puntuació final (punt o signe d'interrogació).",
+  "title": "Satzklammer: monta l'oració sencera (viatge a Berlín)",
+  "prompt": "Ordena les paraules en una oració correcta. El modal va a **posició 2** (o 1 si és pregunta) i l'infinitiu al **final**. Escriu l'oració completa amb puntuació final (punt o signe d'interrogació).",
   "difficulty": 3,
   "tags": ["satzklammer", "modalverben", "ordre-paraules", "viatge", "avaluacio"],
   "stimulus": {
@@ -21,12 +21,12 @@
   "interaction": {
     "type": "typeIn",
     "slots": [
-      { "blankId": "1", "placeholder": "frase completa amb punt final" },
-      { "blankId": "2", "placeholder": "frase completa amb punt final" },
-      { "blankId": "3", "placeholder": "frase completa amb punt final" },
-      { "blankId": "4", "placeholder": "frase completa amb punt final" },
+      { "blankId": "1", "placeholder": "oració completa amb punt final" },
+      { "blankId": "2", "placeholder": "oració completa amb punt final" },
+      { "blankId": "3", "placeholder": "oració completa amb punt final" },
+      { "blankId": "4", "placeholder": "oració completa amb punt final" },
       { "blankId": "5", "placeholder": "pregunta amb signe final" },
-      { "blankId": "6", "placeholder": "frase completa amb punt final" }
+      { "blankId": "6", "placeholder": "oració completa amb punt final" }
     ],
     "caseSensitive": false,
     "trimWhitespace": true

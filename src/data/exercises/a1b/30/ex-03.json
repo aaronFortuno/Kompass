@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "A1b-30-ex-03",
   "topicId": "A1b-30",
-  "title": "Construir frases en Perfekt (amb inversió)",
-  "prompt": "Cada frase comença per un **complement temporal o de lloc**. Tria la versió ==**correctament ordenada**== amb **inversió**: el subjecte salta a la ==**posició 3**==, l'auxiliar es queda a la 2, i el participi al final.",
+  "title": "Construir oracions en Perfekt (amb inversió)",
+  "prompt": "Cada oració comença per un **complement temporal o de lloc**. Tria la versió ==**correctament ordenada**== amb **inversió**: el subjecte salta a la ==**posició 3**==, l'auxiliar es queda a la 2, i el participi al final.",
   "difficulty": 2,
   "tags": ["perfekt", "inversio", "ordre", "V2"],
   "stimulus": {

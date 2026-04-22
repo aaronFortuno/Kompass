@@ -3,7 +3,7 @@
   "id": "A1a-6-ex-01",
   "topicId": "A1a-6",
   "title": "Article determinat segons gènere i nombre",
-  "prompt": "Tria l'article determinat correcte (en nominatiu) per a cada frase.",
+  "prompt": "Tria l'article determinat correcte (en nominatiu) per a cada oració.",
   "difficulty": 1,
   "tags": ["artikel", "bestimmt", "nominativ"],
   "stimulus": {

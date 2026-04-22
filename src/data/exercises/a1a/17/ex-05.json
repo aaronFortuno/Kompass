@@ -35,10 +35,10 @@
   },
   "feedback": {
     "correct": {
-      "message": "Molt bé! Has encadenat la tríada sencera en context: _gern → lieber → am liebsten_. Aquest és exactament el tipus de frase que faràs a diari quan comparis gustos (menjar, música, esports, activitats)."
+      "message": "Molt bé! Has encadenat la tríada sencera en context: _gern → lieber → am liebsten_. Aquest és exactament el tipus de oració que faràs a diari quan comparis gustos (menjar, música, esports, activitats)."
     },
     "incorrect": {
-      "default": "La tríada de _gern_ és **gern → lieber → am liebsten**. Positiu: _Ich esse **gern** Pizza_ (sense _als_). Comparatiu: _Ich esse **lieber** X als Y_ (sempre amb _als_). Superlatiu: _**Am liebsten** esse ich Z_ (amb _am_ davant i sovint al principi de la frase)."
+      "default": "La tríada de _gern_ és **gern → lieber → am liebsten**. Positiu: _Ich esse **gern** Pizza_ (sense _als_). Comparatiu: _Ich esse **lieber** X als Y_ (sempre amb _als_). Superlatiu: _**Am liebsten** esse ich Z_ (amb _am_ davant i sovint al principi de l'oració)."
     }
   }
 }

@@ -3,7 +3,7 @@
   "id": "A1a-11-ex-02",
   "topicId": "A1a-11",
   "title": "Descendent o ascendent?",
-  "prompt": "Classifica cada frase segons la melodia final esperada.",
+  "prompt": "Classifica cada oració segons la melodia final esperada.",
   "difficulty": 1,
   "tags": ["intonation", "melodia-final", "classificacio"],
   "stimulus": {
@@ -39,7 +39,7 @@
       "message": "Molt bé. Has distingit els dos patrons: (1) declaració → baixa; (2) _Satzfrage_ sense interrogatiu → puja; (3) _W-Frage_ amb _wo_ → baixa; (4) _Satzfrage_ → puja. La presència o absència d'un _W-_ inicial és la pista clau."
     },
     "incorrect": {
-      "default": "Pista: si la frase té una paraula interrogativa al davant (_wo, was, wie_...), la funció pregunta ja està marcada lèxicament i la melodia **baixa**. Si no hi ha cap paraula interrogativa, la melodia ha de marcar la funció pregunta i **puja**. Les declaracions sempre baixen."
+      "default": "Pista: si l'oració té una paraula interrogativa al davant (_wo, was, wie_...), la funció pregunta ja està marcada lèxicament i la melodia **baixa**. Si no hi ha cap paraula interrogativa, la melodia ha de marcar la funció pregunta i **puja**. Les declaracions sempre baixen."
     }
   }
 }

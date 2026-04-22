@@ -3,7 +3,7 @@
   "id": "A1b-33-ex-06",
   "topicId": "A1b-33",
   "title": "Ordena les paraules (posició 2 + inversió)",
-  "prompt": "Ordena els fragments per formar una frase correcta amb ==**verb conjugat a la posició 2**==. Si el complement temporal va a la **pos. 1**, aplica la **inversió** (subjecte a la 3). Escriu la frase sencera amb majúscula inicial i punt final.",
+  "prompt": "Ordena els fragments per formar una oració correcta amb ==**verb conjugat a la posició 2**==. Si el complement temporal va a la **pos. 1**, aplica la **inversió** (subjecte a la 3). Escriu l'oració sencera amb majúscula inicial i punt final.",
   "difficulty": 3,
   "tags": ["ordre-paraules", "inversio", "typeIn", "wie-lange"],
   "stimulus": {
@@ -62,7 +62,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Perfecte. Quan el complement temporal va a la **posició 1** (frases 3 i 5), aplica la ==**inversió**==: verb conjugat a la 2, subjecte a la 3. És la mateixa regla que vas veure a A1a-18 i A1b-30, ara amb complements temporals de durada.",
+      "message": "Perfecte. Quan el complement temporal va a la **posició 1** (oracions 3 i 5), aplica la ==**inversió**==: verb conjugat a la 2, subjecte a la 3. És la mateixa regla que vas veure a A1a-18 i A1b-30, ara amb complements temporals de durada.",
       "references": ["A1b-33", "A1a-18", "A1b-30"]
     },
     "incorrect": {

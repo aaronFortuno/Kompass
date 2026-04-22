@@ -3,7 +3,7 @@
   "id": "A1a-16-ex-05",
   "topicId": "A1a-16",
   "title": "Integra les tres construccions",
-  "prompt": "Tria la paraula correcta per a cada frase. Reactives les tres construccions del tema (_mögen_, _gern_, _finden_) i el component _Lieblings-_.",
+  "prompt": "Tria la paraula correcta per a cada oració. Reactives les tres construccions del tema (_mögen_, _gern_, _finden_) i el component _Lieblings-_.",
   "difficulty": 3,
   "tags": ["mag", "gern", "finde", "lieblings", "integracio"],
   "stimulus": {
@@ -31,7 +31,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Excel·lent. Has integrat les tres construccions: (1) _Kino_ és cosa → _mag_; (2) la frase valora (_langweilig_ és un adjectiu) → _finde_; (3) _spielen_ és una acció → _gern_; (4) el component de paraula composta és _**Lieblings-**_ amb _-s_ final."
+      "message": "Excel·lent. Has integrat les tres construccions: (1) _Kino_ és cosa → _mag_; (2) l'oració valora (_langweilig_ és un adjectiu) → _finde_; (3) _spielen_ és una acció → _gern_; (4) el component de paraula composta és _**Lieblings-**_ amb _-s_ final."
     },
     "incorrect": {
       "default": "Repassa les construccions: (1) _mögen_ per a substantius; (2) _finden_ + adjectiu per a valoracions; (3) verb + _gern_ per a accions; (4) _Lieblings-_ (sempre amb _-s_, en paraula composta) davant d'un substantiu.",
@@ -42,7 +42,7 @@
         },
         {
           "match": { "2": "mag" },
-          "message": "La frase porta un adjectiu (_langweilig_ = avorrit). Quan **valores** alguna cosa amb un adjectiu, la construcció és _**finden** + substantiu + adjectiu_, no _mögen_."
+          "message": "L'oració porta un adjectiu (_langweilig_ = avorrit). Quan **valores** alguna cosa amb un adjectiu, la construcció és _**finden** + substantiu + adjectiu_, no _mögen_."
         }
       ]
     }

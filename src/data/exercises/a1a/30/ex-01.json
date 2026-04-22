@@ -3,7 +3,7 @@
   "id": "A1a-30-ex-01",
   "topicId": "A1a-30",
   "title": "Article d'acusatiu després de _es gibt_",
-  "prompt": "Tria l'article indefinit correcte per completar la frase.",
+  "prompt": "Tria l'article indefinit correcte per completar l'oració.",
   "difficulty": 1,
   "tags": ["es-gibt", "acusatiu", "masculi", "quick-check"],
   "stimulus": {

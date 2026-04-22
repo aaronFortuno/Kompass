@@ -3,7 +3,7 @@
   "id": "A1b-32-ex-02",
   "topicId": "A1b-32",
   "title": "Complement temporal en acusatiu nu",
-  "prompt": "Escriu el determinant adequat en ==**acusatiu**== (_diesen, nächsten, letzten, jeden, diese, letzte, dieses, nächstes..._) sense preposició. Compte amb la majúscula quan el complement obre la frase.",
+  "prompt": "Escriu el determinant adequat en ==**acusatiu**== (_diesen, nächsten, letzten, jeden, diese, letzte, dieses, nächstes..._) sense preposició. Compte amb la majúscula quan el complement obre l'oració.",
   "difficulty": 2,
   "tags": ["akkusativ", "complement-nu", "quick-check"],
   "stimulus": {
@@ -42,7 +42,7 @@
       "references": ["A1b-32"]
     },
     "incorrect": {
-      "default": "Recorda la regla: complement temporal sense preposició → ==**acusatiu**==. Femení i neutre no canvien (_letzte Woche, dieses Jahr_). Masculí agafa _-en_ (_nächsten Sommer, jeden Tag, letzten Monat_). A principi de frase, majúscula.",
+      "default": "Recorda la regla: complement temporal sense preposició → ==**acusatiu**==. Femení i neutre no canvien (_letzte Woche, dieses Jahr_). Masculí agafa _-en_ (_nächsten Sommer, jeden Tag, letzten Monat_). A principi de oració, majúscula.",
       "byResponse": [
         {
           "match": { "1": "Nächster" },
@@ -54,7 +54,7 @@
         },
         {
           "match": { "1": "nächsten" },
-          "message": "La forma és correcta, però el complement obre la frase: cal majúscula inicial → ==**Nächsten**==."
+          "message": "La forma és correcta, però el complement obre l'oració: cal majúscula inicial → ==**Nächsten**==."
         },
         {
           "match": { "2": "Letzten" },
@@ -62,7 +62,7 @@
         },
         {
           "match": { "2": "letzte" },
-          "message": "La forma és correcta, però obre la frase: ==**Letzte**== (amb majúscula)."
+          "message": "La forma és correcta, però obre l'oració: ==**Letzte**== (amb majúscula)."
         },
         {
           "match": { "3": "jedem" },

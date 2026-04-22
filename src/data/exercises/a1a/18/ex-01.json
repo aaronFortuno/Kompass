@@ -3,7 +3,7 @@
   "id": "A1a-18-ex-01",
   "topicId": "A1a-18",
   "title": "Inversió amb complement temporal",
-  "prompt": "La frase comença per un complement (_Heute_). Tria la forma correcta per a cada buit. Recorda: verb i subjecte sempre junts, en aquest ordre.",
+  "prompt": "L'oració comença per un complement (_Heute_). Tria la forma correcta per a cada buit. Recorda: verb i subjecte sempre junts, en aquest ordre.",
   "difficulty": 1,
   "tags": ["inversio", "posicio-verb", "declarativa"],
   "stimulus": {

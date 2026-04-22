@@ -3,7 +3,7 @@
   "id": "A1b-39-ex-05",
   "topicId": "A1b-39",
   "title": "Tradueix: verbs amb datiu",
-  "prompt": "Tradueix cada frase del català a l'alemany. **Tots** els verbs d'aquest exercici rigeixen ==**datiu**==: el complement respon a _Wem?_ i porta les terminacions _-m_ (masc./neut.), _-r_ (fem.), _-n_ (pl.).",
+  "prompt": "Tradueix cada oració del català a l'alemany. **Tots** els verbs d'aquest exercici rigeixen ==**datiu**==: el complement respon a _Wem?_ i porta les terminacions _-m_ (masc./neut.), _-r_ (fem.), _-n_ (pl.).",
   "difficulty": 2,
   "tags": ["traduccio", "datiu", "typeIn", "produccio", "assessment"],
   "stimulus": {

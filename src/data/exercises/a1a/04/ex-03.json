@@ -3,7 +3,7 @@
   "id": "A1a-4-ex-03",
   "topicId": "A1a-4",
   "title": "_nicht_, _kein_ o _keine_?",
-  "prompt": "Decideix quina forma de negació encaixa a cada frase segons què es nega.",
+  "prompt": "Decideix quina forma de negació encaixa a cada oració segons què es nega.",
   "difficulty": 2,
   "tags": ["nicht", "kein", "contrast"],
   "stimulus": {

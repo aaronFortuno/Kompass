@@ -3,19 +3,19 @@
   "id": "A1a-1-ex-06",
   "topicId": "A1a-1",
   "title": "Completa el perfil",
-  "prompt": "Emplena la targeta de presentació escrivint el pronom correcte (personal o possessiu) a cada buit. Respecta les majúscules: _ich_ és minúscula al mig de frase; a inici de frase, tot pronom va amb majúscula.",
+  "prompt": "Emplena la targeta de presentació escrivint el pronom correcte (personal o possessiu) a cada buit. Respecta les majúscules: _ich_ és minúscula al mig de oració; a inici de oració, tot pronom va amb majúscula.",
   "difficulty": 2,
   "tags": ["integration", "possessivpronomen", "typein"],
   "stimulus": {
     "type": "textWithBlanks",
     "template": "Hallo, {{1}} heiße Marta. {{2}} Vorname ist Marta und {{3}} Familienname ist Roca.\n{{4}} wohne in Berlin, und {{5}} Adresse ist Lindenstraße 14.\n{{6}} Telefonnummer ist 030 55 66 77.",
     "blanks": [
-      { "id": "1", "label": "1a sg. personal, al mig de frase" },
-      { "id": "2", "label": "possessiu 1a sg. + der Vorname, inici de frase" },
-      { "id": "3", "label": "possessiu 1a sg. + der Familienname, al mig de frase" },
-      { "id": "4", "label": "1a sg. personal, inici de frase" },
-      { "id": "5", "label": "possessiu 1a sg. + die Adresse, al mig de frase" },
-      { "id": "6", "label": "possessiu 1a sg. + die Telefonnummer, inici de frase" }
+      { "id": "1", "label": "1a sg. personal, al mig de oració" },
+      { "id": "2", "label": "possessiu 1a sg. + der Vorname, inici de oració" },
+      { "id": "3", "label": "possessiu 1a sg. + der Familienname, al mig de oració" },
+      { "id": "4", "label": "1a sg. personal, inici de oració" },
+      { "id": "5", "label": "possessiu 1a sg. + die Adresse, al mig de oració" },
+      { "id": "6", "label": "possessiu 1a sg. + die Telefonnummer, inici de oració" }
     ]
   },
   "interaction": {
@@ -44,10 +44,10 @@
   },
   "feedback": {
     "correct": {
-      "message": "Perfecte! Dominis en joc: (a) **ich** en minúscula al mig de frase i **Ich** amb majúscula a inici; (b) concordança _mein_ (m.: _Vorname, Familienname_) vs _meine_ (f.: _Adresse, Telefonnummer_); (c) majúscula inicial sempre que el pronom obri la frase."
+      "message": "Perfecte! Dominis en joc: (a) **ich** en minúscula al mig de oració i **Ich** amb majúscula a inici; (b) concordança _mein_ (m.: _Vorname, Familienname_) vs _meine_ (f.: _Adresse, Telefonnummer_); (c) majúscula inicial sempre que el pronom obri l'oració."
     },
     "incorrect": {
-      "default": "Revisa tres coses alhora: (1) _ich_ és minúscula al mig de frase, però va amb majúscula (**Ich**) a inici; (2) _der Vorname, der Familienname_ són masculins → **mein**; _die Adresse, die Telefonnummer_ són femenins → **meine**; (3) si el pronom obre la frase, va amb majúscula (Mein/Meine)."
+      "default": "Revisa tres coses alhora: (1) _ich_ és minúscula al mig de oració, però va amb majúscula (**Ich**) a inici; (2) _der Vorname, der Familienname_ són masculins → **mein**; _die Adresse, die Telefonnummer_ són femenins → **meine**; (3) si el pronom obre l'oració, va amb majúscula (Mein/Meine)."
     }
   }
 }

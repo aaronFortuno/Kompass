@@ -6,7 +6,7 @@
   "number": 30,
   "title": "Es gibt",
   "shortTitle": "Es gibt",
-  "description": "L'expressió impersonal _es gibt_ com a equivalent alemany de _hi ha_. Es presenta la construcció fixa amb subjecte impersonal _es_ + 3a persona singular de _geben_, la conseqüència gramatical clau per al catalanoparlant (el que ve darrere és complement directe i va en ==acusatiu==, amb el canvi visible al masculí _ein → einen_), el comportament amb plural i incomptables (sense article indefinit, verb invariable _gibt_), la negació amb _kein_ en acusatiu (_keinen, keine, kein, keine_), l'aplicació de l'ordre V2 amb inversió quan la frase comença amb un complement de lloc o temps (_Im Park gibt es Kinder_), i els paranys més freqüents (oblidar l'acusatiu masculí, concordar el verb amb el plural, trencar la V2, confondre _es gibt_ amb _ist/sind da_). Pressuposa que l'alumne domina els articles indefinits en acusatiu (A1a-28) i la regla V2 (A1a-11).",
+  "description": "L'expressió impersonal _es gibt_ com a equivalent alemany de _hi ha_. Es presenta la construcció fixa amb subjecte impersonal _es_ + 3a persona singular de _geben_, la conseqüència gramatical clau per al catalanoparlant (el que ve darrere és complement directe i va en ==acusatiu==, amb el canvi visible al masculí _ein → einen_), el comportament amb plural i incomptables (sense article indefinit, verb invariable _gibt_), la negació amb _kein_ en acusatiu (_keinen, keine, kein, keine_), l'aplicació de l'ordre V2 amb inversió quan l'oració comença amb un complement de lloc o temps (_Im Park gibt es Kinder_), i els paranys més freqüents (oblidar l'acusatiu masculí, concordar el verb amb el plural, trencar la V2, confondre _es gibt_ amb _ist/sind da_). Pressuposa que l'alumne domina els articles indefinits en acusatiu (A1a-28) i la regla V2 (A1a-11).",
   "axes": ["expressions-i-funcions", "casos"],
   "prerequisites": ["A1a-28"],
   "estimatedMinutes": 15,
@@ -40,7 +40,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### El gran detall: acusatiu obligatori\n\nCom que **es** ja és el subjecte de la frase, el que ve darrere (el que \"hi ha\") és el **complement directe**. I ja saps què implica això: ==va en acusatiu==."
+          "body": "#### El gran detall: acusatiu obligatori\n\nCom que **es** ja és el subjecte de l'oració, el que ve darrere (el que \"hi ha\") és el **complement directe**. I ja saps què implica això: ==va en acusatiu==."
         },
         {
           "type": "table",
@@ -100,7 +100,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Ordre de paraules\n\nPots començar la frase de dues maneres, i el verb **_gibt_** sempre ha d'ocupar la **segona posició** (regla V2, A1a-11):\n\n**Opció A — subjecte primer:**\n\n- _Es gibt Kinder im Park._\n- _Es gibt einen Schrank in meinem Zimmer._\n\n**Opció B — complement de lloc/temps primer:**\n\nSi comences amb un complement (lloc, temps...), el subjecte **_es_** passa darrere del verb:\n\n- _==Im Park== gibt **es** Kinder._\n- _==Auf dem Tisch== gibt **es** ein Buch._\n- _==In meinem Zimmer== gibt **es** einen Schrank._"
+          "body": "#### Ordre de paraules\n\nPots començar l'oració de dues maneres, i el verb **_gibt_** sempre ha d'ocupar la **segona posició** (regla V2, A1a-11):\n\n**Opció A — subjecte primer:**\n\n- _Es gibt Kinder im Park._\n- _Es gibt einen Schrank in meinem Zimmer._\n\n**Opció B — complement de lloc/temps primer:**\n\nSi comences amb un complement (lloc, temps...), el subjecte **_es_** passa darrere del verb:\n\n- _==Im Park== gibt **es** Kinder._\n- _==Auf dem Tisch== gibt **es** ein Buch._\n- _==In meinem Zimmer== gibt **es** einen Schrank._"
         },
         {
           "type": "callout",

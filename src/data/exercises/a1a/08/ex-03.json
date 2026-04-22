@@ -3,7 +3,7 @@
   "id": "A1a-8-ex-03",
   "topicId": "A1a-8",
   "title": "aber vs sondern amb negació",
-  "prompt": "Totes aquestes frases comencen amb negació (_nicht_ o _kein_). Tria _aber_ o _sondern_ segons si la segona part substitueix directament l'element negat o hi afegeix una frase nova.",
+  "prompt": "Totes aquestes oracions comencen amb negació (_nicht_ o _kein_). Tria _aber_ o _sondern_ segons si la segona part substitueix directament l'element negat o hi afegeix una oració nova.",
   "difficulty": 3,
   "tags": ["konjunktionen", "aber-sondern", "negacio"],
   "stimulus": {
@@ -11,9 +11,9 @@
     "template": "Ich bin nicht aus Berlin, {{1}} aus Hamburg.\nIch bin nicht reich, {{2}} ich bin zufrieden.\nDas Kind trinkt keine Milch, {{3}} Wasser.\nIch habe kein Auto, {{4}} ich fahre gern Fahrrad.",
     "blanks": [
       { "id": "1", "label": "Hamburg en lloc de Berlín" },
-      { "id": "2", "label": "frase nova amb matís" },
+      { "id": "2", "label": "oració nova amb matís" },
       { "id": "3", "label": "aigua en lloc de llet" },
-      { "id": "4", "label": "frase nova amb verb propi" }
+      { "id": "4", "label": "oració nova amb verb propi" }
     ]
   },
   "interaction": {
@@ -31,10 +31,10 @@
   },
   "feedback": {
     "correct": {
-      "message": "Excel·lent. Has vist que la negació a la primera part **no n'hi ha prou**: cal que la segona part substitueixi exactament l'element negat (normalment un sintagma curt, no una frase sencera nova)."
+      "message": "Excel·lent. Has vist que la negació a la primera part **no n'hi ha prou**: cal que la segona part substitueixi exactament l'element negat (normalment un sintagma curt, no una oració sencera nova)."
     },
     "incorrect": {
-      "default": "Pista: mira què hi ha darrere del buit. Si hi ha **només un element** del mateix tipus que el negat (_Hamburg_, _Wasser_) → _sondern_. Si hi ha **una frase nova completa** amb el seu subjecte i verb propis (_ich bin zufrieden_, _ich fahre gern Fahrrad_) → _aber_."
+      "default": "Pista: mira què hi ha darrere del buit. Si hi ha **només un element** del mateix tipus que el negat (_Hamburg_, _Wasser_) → _sondern_. Si hi ha **una oració nova completa** amb el seu subjecte i verb propis (_ich bin zufrieden_, _ich fahre gern Fahrrad_) → _aber_."
     }
   }
 }

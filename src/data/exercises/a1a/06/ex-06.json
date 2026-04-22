@@ -3,7 +3,7 @@
   "id": "A1a-6-ex-06",
   "topicId": "A1a-6",
   "title": "Ein → kein: afirmació a negació",
-  "prompt": "Transforma cada frase afirmativa en la seva versió negativa triant la forma correcta de _kein-_.",
+  "prompt": "Transforma cada oració afirmativa en la seva versió negativa triant la forma correcta de _kein-_.",
   "difficulty": 2,
   "tags": ["artikel", "negativ", "ein-kein"],
   "stimulus": {

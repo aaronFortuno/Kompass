@@ -3,7 +3,7 @@
   "id": "A1b-39-ex-06",
   "topicId": "A1b-39",
   "title": "Tradueix: verbs amb datiu + acusatiu",
-  "prompt": "Tradueix cada frase. Aquests verbs (_geben, schenken, schreiben, bringen, schicken, erklären_) porten **dos objectes alhora**: ==**destinatari en datiu**== + ==**cosa en acusatiu**==. Ordre neutre: ==**Dat. → Akk.**==",
+  "prompt": "Tradueix cada oració. Aquests verbs (_geben, schenken, schreiben, bringen, schicken, erklären_) porten **dos objectes alhora**: ==**destinatari en datiu**== + ==**cosa en acusatiu**==. Ordre neutre: ==**Dat. → Akk.**==",
   "difficulty": 3,
   "tags": ["traduccio", "datiu-acusatiu", "typeIn", "produccio", "assessment"],
   "stimulus": {

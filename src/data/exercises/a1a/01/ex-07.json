@@ -13,11 +13,11 @@
       { "id": "1", "label": "formal, 2a persona de cortesia" },
       { "id": "2", "label": "possessiu formal + der Name" },
       { "id": "3", "label": "possessiu formal + die Adresse" },
-      { "id": "4", "label": "possessiu 1a sg. + die Adresse, inici de frase" },
+      { "id": "4", "label": "possessiu 1a sg. + die Adresse, inici de oració" },
       { "id": "5", "label": "informal, 2a sg." },
       { "id": "6", "label": "possessiu 2a sg. + der Name" },
       { "id": "7", "label": "possessiu 2a sg. + die Telefonnummer" },
-      { "id": "8", "label": "possessiu 1a sg. + die Telefonnummer, inici de frase" }
+      { "id": "8", "label": "possessiu 1a sg. + die Telefonnummer, inici de oració" }
     ]
   },
   "interaction": {
@@ -51,7 +51,7 @@
       "message": "Excel·lent! Has integrat el sistema sencer: (a) _Sie/Ihr/Ihre_ sempre amb majúscula en tracte formal; (b) _du/dein/deine_ en minúscula en tracte informal; (c) la concordança m./f. que afegeix _-e_ davant _Adresse, Telefonnummer_."
     },
     "incorrect": {
-      "default": "Tres capes a comprovar: (1) tracte — formal = _Sie / Ihr / Ihre_ **sempre amb majúscula**; informal = _du / dein / deine_ en minúscula; (2) gènere — _der Name_ masculí → forma curta (_Ihr / dein_); _die Adresse, die Telefonnummer_ femenins → forma amb _-e_ (_Ihre / deine / Meine_); (3) posició — a inici de frase, tot pronom va amb majúscula (**Meine**)."
+      "default": "Tres capes a comprovar: (1) tracte — formal = _Sie / Ihr / Ihre_ **sempre amb majúscula**; informal = _du / dein / deine_ en minúscula; (2) gènere — _der Name_ masculí → forma curta (_Ihr / dein_); _die Adresse, die Telefonnummer_ femenins → forma amb _-e_ (_Ihre / deine / Meine_); (3) posició — a inici de oració, tot pronom va amb majúscula (**Meine**)."
     }
   }
 }

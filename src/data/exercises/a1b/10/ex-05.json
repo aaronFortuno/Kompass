@@ -3,7 +3,7 @@
   "id": "A1b-10-ex-05",
   "topicId": "A1b-10",
   "title": "Corregeix el ge- indegut",
-  "prompt": "Cada frase té un participi **incorrecte** (amb _ge-_ indegut). Escriu la forma correcta del participi (sense _ge-_).",
+  "prompt": "Cada oració té un participi **incorrecte** (amb _ge-_ indegut). Escriu la forma correcta del participi (sense _ge-_).",
   "difficulty": 2,
   "tags": ["participi", "ge-", "perfekt", "ieren", "correccio"],
   "stimulus": {

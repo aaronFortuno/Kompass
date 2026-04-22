@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "A1b-38-ex-05",
   "topicId": "A1b-38",
-  "title": "Frase completa o li falta l'Ergänzung?",
-  "prompt": "Indica si cada frase està ==**completa**== o ==**incompleta**== (li falta el complement obligatori que el verb exigeix).",
+  "title": "Oració completa o li falta l'Ergänzung?",
+  "prompt": "Indica si cada oració està ==**completa**== o ==**incompleta**== (li falta el complement obligatori que el verb exigeix).",
   "difficulty": 2,
   "tags": ["valencia", "completesa", "identificacio", "assessment"],
   "stimulus": {
@@ -42,7 +42,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Molt bé. Alguns verbs són ==flexibles== (_lesen_ admet objecte o no). D'altres ==exigeixen== sempre el complement (_kaufen_ sense acusatiu és frase trencada). _Wohnen_ gairebé sempre va amb preposició locativa; _Ich wohne_ sol és estrany.",
+      "message": "Molt bé. Alguns verbs són ==flexibles== (_lesen_ admet objecte o no). D'altres ==exigeixen== sempre el complement (_kaufen_ sense acusatiu és oració trencada). _Wohnen_ gairebé sempre va amb preposició locativa; _Ich wohne_ sol és estrany.",
       "references": ["A1b-38"]
     },
     "incorrect": {

@@ -3,7 +3,7 @@
   "id": "A1b-24-ex-05",
   "topicId": "A1b-24",
   "title": "Quina traducció catalana demana el context?",
-  "prompt": "Per a cada frase alemanya, tria la traducció catalana **més natural** donat el marcador temporal (_heute, gestern, als Kind, früher_…). La forma alemanya **no canvia**; el que canvia és el matís català, imposat pel context.",
+  "prompt": "Per a cada oració alemanya, tria la traducció catalana **més natural** donat el marcador temporal (_heute, gestern, als Kind, früher_…). La forma alemanya **no canvia**; el que canvia és el matís català, imposat pel context.",
   "difficulty": 2,
   "tags": ["traduccio", "marcadors-temporals", "matis-catala"],
   "stimulus": {

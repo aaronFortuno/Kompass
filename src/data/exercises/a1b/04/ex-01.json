@@ -8,7 +8,7 @@
   "tags": ["himmelsrichtungen", "im", "contraccio", "datiu", "singlechoice", "quick-check"],
   "stimulus": {
     "type": "text",
-    "content": "Completa la frase: _Hamburg liegt ___ Norden Deutschlands._"
+    "content": "Completa l'oració: _Hamburg liegt ___ Norden Deutschlands._"
   },
   "interaction": {
     "type": "singleChoice",

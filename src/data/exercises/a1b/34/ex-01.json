@@ -3,7 +3,7 @@
   "id": "A1b-34-ex-01",
   "topicId": "A1b-34",
   "title": "Triar la preposició correcta",
-  "prompt": "Tria ==**_seit_**== o ==**_vor_**== segons el sentit de la frase. Mira el **verb** i decideix: durada que continua (_seit_) o moment del passat acabat (_vor_).",
+  "prompt": "Tria ==**_seit_**== o ==**_vor_**== segons el sentit de l'oració. Mira el **verb** i decideix: durada que continua (_seit_) o moment del passat acabat (_vor_).",
   "difficulty": 1,
   "tags": ["seit-vor", "preposicions-temporals", "singleChoice"],
   "stimulus": {

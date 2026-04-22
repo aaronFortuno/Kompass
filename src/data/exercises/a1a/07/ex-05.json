@@ -46,11 +46,11 @@
         },
         {
           "match": { "3": "ihre" },
-          "message": "Tracte formal → _Ihre_ amb **majúscula obligatòria**, vagi on vagi a la frase."
+          "message": "Tracte formal → _Ihre_ amb **majúscula obligatòria**, vagi on vagi a l'oració."
         },
         {
           "match": { "4": "ihr" },
-          "message": "Tracte formal → _Ihr_ amb **majúscula obligatòria**, vagi on vagi a la frase."
+          "message": "Tracte formal → _Ihr_ amb **majúscula obligatòria**, vagi on vagi a l'oració."
         },
         {
           "match": { "1": "eure" },

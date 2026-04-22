@@ -3,12 +3,12 @@
   "id": "A1a-27-ex-01",
   "topicId": "A1a-27",
   "title": "Nominatiu o acusatiu? El verb decideix",
-  "prompt": "Per a cada frase, digues si el substantiu en negreta és subjecte (nominatiu) o complement directe (acusatiu). Recorda: _sein_ no demana acusatiu.",
+  "prompt": "Per a cada oració, digues si el substantiu en negreta és subjecte (nominatiu) o complement directe (acusatiu). Recorda: _sein_ no demana acusatiu.",
   "difficulty": 1,
   "tags": ["nominatiu", "acusatiu", "sein", "quick-check"],
   "stimulus": {
     "type": "text",
-    "content": "Llegeix cada frase i decideix si l'afirmació sobre el cas del substantiu és certa o falsa."
+    "content": "Llegeix cada oració i decideix si l'afirmació sobre el cas del substantiu és certa o falsa."
   },
   "interaction": {
     "type": "trueFalse",

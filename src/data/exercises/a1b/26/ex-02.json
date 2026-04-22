@@ -3,7 +3,7 @@
   "id": "A1b-26-ex-02",
   "topicId": "A1b-26",
   "title": "Conjuga l'auxiliar del Perfekt",
-  "prompt": "Escriu ==**només l'auxiliar conjugat**== (_haben_ o _sein_ en present) segons la persona. El participi ja ve donat a la frase.",
+  "prompt": "Escriu ==**només l'auxiliar conjugat**== (_haben_ o _sein_ en present) segons la persona. El participi ja ve donat a l'oració.",
   "difficulty": 1,
   "tags": ["perfekt", "auxiliar", "conjugacio", "typeIn"],
   "stimulus": {

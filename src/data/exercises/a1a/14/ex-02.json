@@ -3,7 +3,7 @@
   "id": "A1a-14-ex-02",
   "topicId": "A1a-14",
   "title": "De la funció catalana al cas alemany",
-  "prompt": "Llegeix cada frase catalana. Identifica la funció sintàctica de la part ressaltada i tria el cas en què aniria si la frase fos en alemany.",
+  "prompt": "Llegeix cada oració catalana. Identifica la funció sintàctica de la part ressaltada i tria el cas en què aniria si l'oració fos en alemany.",
   "difficulty": 2,
   "tags": ["casos", "funcio-sintactica", "analisi"],
   "stimulus": {
@@ -36,7 +36,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Molt bé. Has fet el pas clau del tema: identificar la **funció sintàctica** en català i mapejar-la al **cas** alemany corresponent. Això és el que faràs mentalment cada vegada que construeixis una frase en alemany."
+      "message": "Molt bé. Has fet el pas clau del tema: identificar la **funció sintàctica** en català i mapejar-la al **cas** alemany corresponent. Això és el que faràs mentalment cada vegada que construeixis una oració en alemany."
     },
     "incorrect": {
       "default": "Recorda les parelles: **subjecte → nominatiu**, **complement directe → acusatiu** (què o qui rep l'acció directament), **complement indirecte → datiu** (a qui va dirigida l'acció). Fixa't que tant a la 1 com a la 4 tenim subjectes, encara que un sigui persona i l'altre també —la funció és la mateixa, el cas també.",

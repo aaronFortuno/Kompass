@@ -3,7 +3,7 @@
   "id": "A1a-6-ex-03",
   "topicId": "A1a-6",
   "title": "Kein o keine? Negació en nominatiu",
-  "prompt": "Nega cada frase triant la forma correcta de _kein-_ segons el gènere i el nombre.",
+  "prompt": "Nega cada oració triant la forma correcta de _kein-_ segons el gènere i el nombre.",
   "difficulty": 1,
   "tags": ["artikel", "negativ", "kein", "nominativ"],
   "stimulus": {

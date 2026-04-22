@@ -3,7 +3,7 @@
   "id": "A1a-23-ex-05",
   "topicId": "A1a-23",
   "title": "Comprensió en context",
-  "prompt": "Llegeix la frase i decideix si cada afirmació és vertadera o falsa.",
+  "prompt": "Llegeix l'oració i decideix si cada afirmació és vertadera o falsa.",
   "difficulty": 2,
   "tags": ["comprensió", "v2", "dann-vs-denn", "truefalse", "assessment"],
   "stimulus": {

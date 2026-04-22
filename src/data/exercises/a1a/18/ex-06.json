@@ -3,7 +3,7 @@
   "id": "A1a-18-ex-06",
   "topicId": "A1a-18",
   "title": "Satzklammer amb verb separable",
-  "prompt": "El verb _aufstehen_ (llevar-se) és separable: l'arrel es conjuga a la 2 i el prefix vola al final. Escriu la paraula que falta al final de la frase.",
+  "prompt": "El verb _aufstehen_ (llevar-se) és separable: l'arrel es conjuga a la 2 i el prefix vola al final. Escriu la paraula que falta al final de l'oració.",
   "difficulty": 2,
   "tags": ["satzklammer", "verbs-separables", "prefix"],
   "stimulus": {
@@ -29,7 +29,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Exacte! Els verbs separables funcionen com una Satzklammer: l'arrel (_stehe_) es conjuga a la 2, i el prefix (_auf_) ==vola al final== de la frase."
+      "message": "Exacte! Els verbs separables funcionen com una Satzklammer: l'arrel (_stehe_) es conjuga a la 2, i el prefix (_auf_) ==vola al final== de l'oració."
     },
     "incorrect": {
       "default": "Els verbs separables (com _aufstehen_) es parteixen en dos: l'arrel es conjuga a la posició 2 (_stehe_), i el prefix (_auf_) marxa al final. Ho treballaràs amb més deteniment a la lliçó **A1a-25**."

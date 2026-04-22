@@ -29,7 +29,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Perfecte. A les _W-Fragen_ neutres, l'èmfasi recau sobre el **verb**, que és el que porta la informació clau sobre la qual preguntes. I totes tres frases acaben amb melodia **descendent** (↓)."
+      "message": "Perfecte. A les _W-Fragen_ neutres, l'èmfasi recau sobre el **verb**, que és el que porta la informació clau sobre la qual preguntes. I totes tres oracions acaben amb melodia **descendent** (↓)."
     },
     "incorrect": {
       "default": "Recorda la regla per defecte de les _W-Fragen_: l'èmfasi va al **verb** (_wohnst, heißen, machst_), no a la paraula interrogativa ni al pronom. La paraula interrogativa només s'emfatitza si la fas servir com a represa (_**Wie** heißen Sie?_). Nota: aquest check, sense àudio, es basa en la regla neutra; la versió òptima seria auditiva."

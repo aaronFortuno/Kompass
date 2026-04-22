@@ -3,16 +3,16 @@
   "id": "A1b-14-ex-06",
   "topicId": "A1b-14",
   "title": "Corregeix _machen weh_ → _tun weh_",
-  "prompt": "Cada frase conté un error en la tria del verb (_machen_ enlloc de _tun_). Reescriu-la correctament, conservant la resta de la frase.",
+  "prompt": "Cada oració conté un error en la tria del verb (_machen_ enlloc de _tun_). Reescriu-la correctament, conservant la resta de l'oració.",
   "difficulty": 3,
   "tags": ["correccio", "weh-tun", "machen-weh-error"],
   "stimulus": {
     "type": "textWithBlanks",
     "template": "a) Error: _Mein Fuß **macht** weh._ → Correcte: {{1}}\nb) Error: _Meine Augen **machen** weh._ → Correcte: {{2}}\nc) Error: _Der Bauch **macht** ihm weh._ → Correcte: {{3}}",
     "blanks": [
-      { "id": "1", "label": "frase corregida" },
-      { "id": "2", "label": "frase corregida" },
-      { "id": "3", "label": "frase corregida" }
+      { "id": "1", "label": "oració corregida" },
+      { "id": "2", "label": "oració corregida" },
+      { "id": "3", "label": "oració corregida" }
     ]
   },
   "interaction": {
@@ -39,7 +39,7 @@
       "references": ["A1b-14"]
     },
     "incorrect": {
-      "default": "Substitueix _machen_ per _tun_ i respecta la concordança de nombre: _Fuß_ (sg) → _tut_; _Augen_ (pl) → _tun_; _Bauch_ (sg) → _tut_. Escriu la frase sencera amb punt final."
+      "default": "Substitueix _machen_ per _tun_ i respecta la concordança de nombre: _Fuß_ (sg) → _tut_; _Augen_ (pl) → _tun_; _Bauch_ (sg) → _tut_. Escriu l'oració sencera amb punt final."
     }
   }
 }

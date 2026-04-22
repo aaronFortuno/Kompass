@@ -3,7 +3,7 @@
   "id": "A1b-26-ex-07",
   "topicId": "A1b-26",
   "title": "Identifica les dues peces de la Satzklammer",
-  "prompt": "A cada frase hi ha una ==**Satzklammer**==: una peça verbal a V2 (o V1) i una al final. Identifica les dues. Escriu l'**auxiliar** per a {{Na}} i el **participi** per a {{Nb}}, tal com apareixen a la frase.",
+  "prompt": "A cada oració hi ha una ==**Satzklammer**==: una peça verbal a V2 (o V1) i una al final. Identifica les dues. Escriu l'**auxiliar** per a {{Na}} i el **participi** per a {{Nb}}, tal com apareixen a l'oració.",
   "difficulty": 2,
   "tags": ["perfekt", "satzklammer", "identificacio", "typeIn"],
   "stimulus": {
@@ -62,7 +62,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Has identificat correctament la ==**Satzklammer**== de cada frase: _habe…gegessen_, _sind…gefahren_, _hat…gelesen_, _bin…gegangen_, _hat…gekauft_, _habe…gelernt_. Observa que a les frases 4 i 6 la frase comença per un complement (_Am Abend_, _Gestern_), i l'auxiliar es manté en V2 amb inversió del subjecte.",
+      "message": "Has identificat correctament la ==**Satzklammer**== de cada oració: _habe…gegessen_, _sind…gefahren_, _hat…gelesen_, _bin…gegangen_, _hat…gekauft_, _habe…gelernt_. Observa que a les oracions 4 i 6 l'oració comença per un complement (_Am Abend_, _Gestern_), i l'auxiliar es manté en V2 amb inversió del subjecte.",
       "references": ["A1b-26"]
     },
     "incorrect": {

@@ -3,18 +3,18 @@
   "id": "A1b-34-ex-04",
   "topicId": "A1b-34",
   "title": "Troba l'error (o confirma que és correcta)",
-  "prompt": "Per a cada frase, decideix què passa amb la preposició: (a) ==**_seit_ hauria de ser _vor_**==, (b) ==**_vor_ hauria de ser _seit_**==, o (c) la frase és ==**correcta**==. Mira el **verb** i el **temps verbal**.",
+  "prompt": "Per a cada oració, decideix què passa amb la preposició: (a) ==**_seit_ hauria de ser _vor_**==, (b) ==**_vor_ hauria de ser _seit_**==, o (c) l'oració és ==**correcta**==. Mira el **verb** i el **temps verbal**.",
   "difficulty": 3,
   "tags": ["seit-vor", "errors", "assessment"],
   "stimulus": {
     "type": "textWithBlanks",
     "template": "1. _Ich habe seit drei Jahren Deutsch gelernt._ → {{1}}\n\n2. _Anna wohnt vor fünf Jahren in Berlin._ → {{2}}\n\n3. _Wir haben uns vor zehn Jahren kennengelernt._ → {{3}}\n\n4. _Er ist seit einer Stunde angekommen._ → {{4}}\n\n5. _Ich bin seit gestern müde._ → {{5}}",
     "blanks": [
-      { "id": "1", "label": "Frase 1" },
-      { "id": "2", "label": "Frase 2" },
-      { "id": "3", "label": "Frase 3" },
-      { "id": "4", "label": "Frase 4" },
-      { "id": "5", "label": "Frase 5" }
+      { "id": "1", "label": "Oració 1" },
+      { "id": "2", "label": "Oració 2" },
+      { "id": "3", "label": "Oració 3" },
+      { "id": "4", "label": "Oració 4" },
+      { "id": "5", "label": "Oració 5" }
     ]
   },
   "interaction": {
@@ -86,7 +86,7 @@
         },
         {
           "match": { "1": "(b) vor hauria de ser seit" },
-          "message": "L'error és a l'inrevés: el verb _**habe gelernt**_ (Perfekt) vol ==**_vor_**==. La frase parla d'un moment passat."
+          "message": "L'error és a l'inrevés: el verb _**habe gelernt**_ (Perfekt) vol ==**_vor_**==. L'oració parla d'un moment passat."
         },
         {
           "match": { "2": "(c) correcta" },
@@ -94,11 +94,11 @@
         },
         {
           "match": { "3": "(a) seit hauria de ser vor" },
-          "message": "La frase ja té _vor_: _vor zehn Jahren haben wir uns kennengelernt_ és exactament la forma correcta. És ==**correcta**==."
+          "message": "L'oració ja té _vor_: _vor zehn Jahren haben wir uns kennengelernt_ és exactament la forma correcta. És ==**correcta**==."
         },
         {
           "match": { "3": "(b) vor hauria de ser seit" },
-          "message": "_**haben kennengelernt**_ és Perfekt, moment puntual → ==**_vor_**== és correcte. _kennenlernen_ = l'acte de conèixer algú (puntual). La frase és ==**correcta**==."
+          "message": "_**haben kennengelernt**_ és Perfekt, moment puntual → ==**_vor_**== és correcte. _kennenlernen_ = l'acte de conèixer algú (puntual). L'oració és ==**correcta**==."
         },
         {
           "match": { "4": "(c) correcta" },
@@ -106,7 +106,7 @@
         },
         {
           "match": { "5": "(a) seit hauria de ser vor" },
-          "message": "_bin müde_ és un estat **vigent** (encara ho està) → durada que continua → ==**_seit_**== gestern. La frase és ==**correcta**==."
+          "message": "_bin müde_ és un estat **vigent** (encara ho està) → durada que continua → ==**_seit_**== gestern. L'oració és ==**correcta**==."
         }
       ]
     }

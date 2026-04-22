@@ -48,7 +48,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Satzklammer impecable. El modal conjugat (_müssen, dürfen, sollen_) obre el claudàtor a la posició 2; l'infinitiu (_aufstehen, schwimmen, gehen, machen_) el tanca al final. Fixa't també que _aufstehen_, que és un verb separable (A1a-25), ==es manté sencer== a l'infinitiu al final de la frase modal: no es parteix quan va acompanyant un modal."
+      "message": "Satzklammer impecable. El modal conjugat (_müssen, dürfen, sollen_) obre el claudàtor a la posició 2; l'infinitiu (_aufstehen, schwimmen, gehen, machen_) el tanca al final. Fixa't també que _aufstehen_, que és un verb separable (A1a-25), ==es manté sencer== a l'infinitiu al final de l'oració modal: no es parteix quan va acompanyant un modal."
     },
     "incorrect": {
       "default": "Dues regles alhora: (1) el modal es conjuga al plural amb la vocal de l'infinitiu (_müssen, dürfen, sollen_); (2) el segon verb va a l'infinitiu (forma del diccionari, acabada en -en) al final. Nota: quan un verb separable (_aufstehen_) acompanya un modal, NO es parteix — apareix sencer al final: _müssen aufstehen_."

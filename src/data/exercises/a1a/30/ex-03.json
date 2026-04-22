@@ -3,7 +3,7 @@
   "id": "A1a-30-ex-03",
   "topicId": "A1a-30",
   "title": "Articles indefinits en acusatiu després de _es gibt_",
-  "prompt": "Completa cada frase amb l'article correcte (_einen_, _eine_, _ein_ o res per al plural).",
+  "prompt": "Completa cada oració amb l'article correcte (_einen_, _eine_, _ein_ o res per al plural).",
   "difficulty": 2,
   "tags": ["es-gibt", "acusatiu", "article-indefinit", "plural", "assessment"],
   "stimulus": {

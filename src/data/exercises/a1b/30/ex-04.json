@@ -3,7 +3,7 @@
   "id": "A1b-30-ex-04",
   "topicId": "A1b-30",
   "title": "Completa la Satzklammer",
-  "prompt": "Completa els ==**dos buits**== de cada frase: el primer és l'**auxiliar** (_haben_ o _sein_, conjugat amb el subjecte), el segon és el **participi**. Entre parèntesis tens el verb en infinitiu.",
+  "prompt": "Completa els ==**dos buits**== de cada oració: el primer és l'**auxiliar** (_haben_ o _sein_, conjugat amb el subjecte), el segon és el **participi**. Entre parèntesis tens el verb en infinitiu.",
   "difficulty": 2,
   "tags": ["perfekt", "satzklammer", "completar", "auxiliar", "participi"],
   "stimulus": {
@@ -74,11 +74,11 @@
   },
   "feedback": {
     "correct": {
-      "message": "Molt bé. Has conjugat l'auxiliar amb el subjecte correcte (inclús quan hi ha ==**inversió**==: a les frases 4, 6, 7, 8 el subjecte és a la 3, però l'auxiliar es conjuga amb aquest subjecte, no amb l'element de la pos. 1). El participi, com sempre, és **invariable**.",
+      "message": "Molt bé. Has conjugat l'auxiliar amb el subjecte correcte (inclús quan hi ha ==**inversió**==: a les oracions 4, 6, 7, 8 el subjecte és a la 3, però l'auxiliar es conjuga amb aquest subjecte, no amb l'element de la pos. 1). El participi, com sempre, és **invariable**.",
       "references": ["A1b-30", "A1b-26"]
     },
     "incorrect": {
-      "default": "L'auxiliar es conjuga amb el **subjecte** de la frase. El participi és **invariable**. Si el subjecte és a la pos. 3 (inversió), ==conjuga igualment l'auxiliar amb aquest subjecte==, no amb l'element de la pos. 1.",
+      "default": "L'auxiliar es conjuga amb el **subjecte** de l'oració. El participi és **invariable**. Si el subjecte és a la pos. 3 (inversió), ==conjuga igualment l'auxiliar amb aquest subjecte==, no amb l'element de la pos. 1.",
       "byResponse": [
         {
           "match": { "2a": "haben" },

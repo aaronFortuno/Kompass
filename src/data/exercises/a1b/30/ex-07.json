@@ -3,7 +3,7 @@
   "id": "A1b-30-ex-07",
   "topicId": "A1b-30",
   "title": "Tradueix del català al Perfekt",
-  "prompt": "Tradueix cada frase a l'alemany en **Perfekt**, aplicant l'ordre correcte (auxiliar a V2, participi al final). ==**S'accepten les dues ordenacions**==: començar pel subjecte o pel complement temporal. Escriu la frase sencera amb puntuació.",
+  "prompt": "Tradueix cada oració a l'alemany en **Perfekt**, aplicant l'ordre correcte (auxiliar a V2, participi al final). ==**S'accepten les dues ordenacions**==: començar pel subjecte o pel complement temporal. Escriu l'oració sencera amb puntuació.",
   "difficulty": 3,
   "tags": ["perfekt", "traduccio", "typeIn", "produccio"],
   "stimulus": {

@@ -3,7 +3,7 @@
   "id": "A1a-28-ex-05",
   "topicId": "A1a-28",
   "title": "Substantiu + article correcte",
-  "prompt": "Aparella cada substantiu amb la frase que completa la forma correcta de l'article en acusatiu.",
+  "prompt": "Aparella cada substantiu amb l'oració que completa la forma correcta de l'article en acusatiu.",
   "difficulty": 2,
   "tags": ["articles", "acusatiu", "gènere", "matchpairs", "assessment"],
   "stimulus": {
@@ -13,16 +13,16 @@
       { "id": "c3", "group": "Substantiu", "content": { "type": "text", "content": "_Mutter_ (mare, f.)" } },
       { "id": "c5", "group": "Substantiu", "content": { "type": "text", "content": "_Auto_ (cotxe, n.)" } },
       { "id": "c7", "group": "Substantiu", "content": { "type": "text", "content": "_Bruder_ (germà, m.) — indet." } },
-      { "id": "c2", "group": "Frase", "content": { "type": "text", "content": "_Ich sehe ==den== …_" } },
-      { "id": "c4", "group": "Frase", "content": { "type": "text", "content": "_Ich sehe ==die== …_" } },
-      { "id": "c6", "group": "Frase", "content": { "type": "text", "content": "_Ich kaufe ==das== …_" } },
-      { "id": "c8", "group": "Frase", "content": { "type": "text", "content": "_Ich habe ==einen== …_" } }
+      { "id": "c2", "group": "Oració", "content": { "type": "text", "content": "_Ich sehe ==den== …_" } },
+      { "id": "c4", "group": "Oració", "content": { "type": "text", "content": "_Ich sehe ==die== …_" } },
+      { "id": "c6", "group": "Oració", "content": { "type": "text", "content": "_Ich kaufe ==das== …_" } },
+      { "id": "c8", "group": "Oració", "content": { "type": "text", "content": "_Ich habe ==einen== …_" } }
     ]
   },
   "interaction": {
     "type": "matchPairs",
     "groupALabel": "Substantiu",
-    "groupBLabel": "Frase"
+    "groupBLabel": "Oració"
   },
   "validation": {
     "type": "pairMap",

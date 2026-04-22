@@ -3,7 +3,7 @@
   "id": "A1b-8-ex-03",
   "topicId": "A1b-8",
   "title": "Tríada sobre preferències musicals",
-  "prompt": "Completa cada frase amb la forma de la tríada que falta.",
+  "prompt": "Completa cada oració amb la forma de la tríada que falta.",
   "difficulty": 2,
   "tags": ["trada", "musica", "gern", "lieber", "am-liebsten"],
   "stimulus": {
@@ -35,11 +35,11 @@
   },
   "feedback": {
     "correct": {
-      "message": "Excel·lent. Has encadenat la tríada: **gern → lieber → am liebsten**. A la frase 3, _Am liebsten_ va al principi i el verb _höre_ en segona posició (inversió).",
+      "message": "Excel·lent. Has encadenat la tríada: **gern → lieber → am liebsten**. A l'oració 3, _Am liebsten_ va al principi i el verb _höre_ en segona posició (inversió).",
       "references": ["A1b-8"]
     },
     "incorrect": {
-      "default": "Recorda: positiu _gern_, comparatiu _lieber_ (amb _als_), superlatiu _am liebsten_ (amb _am_ obligatori). Quan _Am liebsten_ obre la frase, el verb va just després i el subjecte al tercer lloc."
+      "default": "Recorda: positiu _gern_, comparatiu _lieber_ (amb _als_), superlatiu _am liebsten_ (amb _am_ obligatori). Quan _Am liebsten_ obre l'oració, el verb va just després i el subjecte al tercer lloc."
     }
   }
 }

@@ -30,7 +30,7 @@
         },
         {
           "type": "explanation",
-          "body": "Hi ha ==**dues peces**==: un verb auxiliar conjugat + una forma fixa del verb principal que en català en diem _participi_ i en alemany es diu ==**Partizip II**==.\n\nEn aquesta lliçó aprendràs:\n\n1. La **fórmula** del Perfekt: _haben_ o _sein_ + Partizip II.\n2. Com es **conjuga l'auxiliar** (igual que en present: _ich habe, du hast, ich bin, du bist_…).\n3. On va cada peça a la frase (el concepte de ==**Satzklammer**==, \"parèntesi verbal\").\n4. Una llista bàsica de participis freqüents per poder construir frases.\n5. Una primera intuïció sobre quan va _haben_ i quan va _sein_ (anticipació a A1b-29)."
+          "body": "Hi ha ==**dues peces**==: un verb auxiliar conjugat + una forma fixa del verb principal que en català en diem _participi_ i en alemany es diu ==**Partizip II**==.\n\nEn aquesta lliçó aprendràs:\n\n1. La **fórmula** del Perfekt: _haben_ o _sein_ + Partizip II.\n2. Com es **conjuga l'auxiliar** (igual que en present: _ich habe, du hast, ich bin, du bist_…).\n3. On va cada peça a l'oració (el concepte de ==**Satzklammer**==, \"parèntesi verbal\").\n4. Una llista bàsica de participis freqüents per poder construir oracions.\n5. Una primera intuïció sobre quan va _haben_ i quan va _sein_ (anticipació a A1b-29)."
         },
         {
           "type": "callout",
@@ -139,7 +139,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Pas 2: on va cada peça — el Satzklammer\n\nAquesta és ==la idea més important de la lliçó==, i una de les més característiques de l'alemany.\n\n**En català** les dues peces del perfet compost van **juntes**: _he menjat pizza_ (auxiliar i participi un al costat de l'altre).\n\n**En alemany no.** L'auxiliar va a la posició ==**V2**== (la segona posició de la frase, com ja saps) i el participi va al ==**final absolut**==. Entre els dos, tot els altres elements:\n\n> _Ich **habe** gestern mit Maria im Restaurant Pizza **gegessen**._\n> (Vaig menjar pizza amb Maria al restaurant ahir.)\n\nVisualment, l'auxiliar i el participi formen una mena de \"parèntesi\" que ==**tanca** la frase entre les dues peces verbals==. Això es diu ==**Satzklammer**== (literalment \"grapa de la frase\")."
+          "body": "#### Pas 2: on va cada peça — el Satzklammer\n\nAquesta és ==la idea més important de la lliçó==, i una de les més característiques de l'alemany.\n\n**En català** les dues peces del perfet compost van **juntes**: _he menjat pizza_ (auxiliar i participi un al costat de l'altre).\n\n**En alemany no.** L'auxiliar va a la posició ==**V2**== (la segona posició de l'oració, com ja saps) i el participi va al ==**final absolut**==. Entre els dos, tot els altres elements:\n\n> _Ich **habe** gestern mit Maria im Restaurant Pizza **gegessen**._\n> (Vaig menjar pizza amb Maria al restaurant ahir.)\n\nVisualment, l'auxiliar i el participi formen una mena de \"parèntesi\" que ==**tanca** l'oració entre les dues peces verbals==. Això es diu ==**Satzklammer**== (literalment \"grapa de l'oració\")."
         },
         {
           "type": "table",
@@ -160,7 +160,7 @@
         },
         {
           "type": "explanation",
-          "body": "**Regla pràctica per construir una frase en Perfekt:**\n\n1. Decideix l'auxiliar (_haben_ o _sein_).\n2. Posa-l'hi conjugat a la posició V2.\n3. Escriu tots els complements (temps, manera, lloc, objectes).\n4. Acaba amb el participi."
+          "body": "**Regla pràctica per construir una oració en Perfekt:**\n\n1. Decideix l'auxiliar (_haben_ o _sein_).\n2. Posa-l'hi conjugat a la posició V2.\n3. Escriu tots els complements (temps, manera, lloc, objectes).\n4. Acaba amb el participi."
         }
       ]
     },
@@ -175,7 +175,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Preguntes i negació en Perfekt\n\nLa fórmula és la mateixa; només canvia la **posició de l'auxiliar** segons el tipus de frase (com ja saps del present).\n\n**Pregunta amb partícula interrogativa (W-Frage):** auxiliar a V2, participi al final.\n\n- _**Was hast** du gestern **gegessen**?_ — Què vas menjar ahir?\n- _**Wohin seid** ihr am Sonntag **gefahren**?_ — On vau anar diumenge?\n- _**Wann ist** sie nach Hause **gekommen**?_ — Quan va arribar a casa?\n\n**Pregunta tancada (Ja/Nein-Frage):** auxiliar a ==**posició 1**==, participi al final.\n\n- _**Hast** du schon Kaffee **getrunken**?_ — Ja has pres cafè?\n- _**Bist** du gestern ins Kino **gegangen**?_ — Vas anar al cine ahir?\n- _**Habt** ihr viel **gearbeitet**?_ — Heu treballat molt?\n\n**Negació:** _nicht_ es col·loca ==**just abans del participi**== (o davant del complement negat, però la regla segura al nivell A1 és _\"abans del Partizip II\"_).\n\n- _Ich **habe** die Hausaufgaben **nicht gemacht**._ — No he fet els deures.\n- _Wir **sind** gestern **nicht ins Kino gegangen**._ — Ahir no vam anar al cine.\n- _Er **hat** den Film **nicht gesehen**._ — No ha vist la pel·lícula."
+          "body": "#### Preguntes i negació en Perfekt\n\nLa fórmula és la mateixa; només canvia la **posició de l'auxiliar** segons el tipus de oració (com ja saps del present).\n\n**Pregunta amb partícula interrogativa (W-Frage):** auxiliar a V2, participi al final.\n\n- _**Was hast** du gestern **gegessen**?_ — Què vas menjar ahir?\n- _**Wohin seid** ihr am Sonntag **gefahren**?_ — On vau anar diumenge?\n- _**Wann ist** sie nach Hause **gekommen**?_ — Quan va arribar a casa?\n\n**Pregunta tancada (Ja/Nein-Frage):** auxiliar a ==**posició 1**==, participi al final.\n\n- _**Hast** du schon Kaffee **getrunken**?_ — Ja has pres cafè?\n- _**Bist** du gestern ins Kino **gegangen**?_ — Vas anar al cine ahir?\n- _**Habt** ihr viel **gearbeitet**?_ — Heu treballat molt?\n\n**Negació:** _nicht_ es col·loca ==**just abans del participi**== (o davant del complement negat, però la regla segura al nivell A1 és _\"abans del Partizip II\"_).\n\n- _Ich **habe** die Hausaufgaben **nicht gemacht**._ — No he fet els deures.\n- _Wir **sind** gestern **nicht ins Kino gegangen**._ — Ahir no vam anar al cine.\n- _Er **hat** den Film **nicht gesehen**._ — No ha vist la pel·lícula."
         },
         {
           "type": "callout",
@@ -282,7 +282,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Exemples en context: un dia explicat en Perfekt\n\nVegem com es veu tot plegat encadenat, com si expliquessis el teu cap de setmana a algú:\n\n> _Am Samstag **bin** ich früh **aufgestanden**. Ich **habe** Kaffee **getrunken** und Brot **gegessen**. Dann **bin** ich in die Stadt **gefahren** und **habe** ein Buch **gekauft**. Am Abend **habe** ich einen Film **gesehen** und **bin** spät ins Bett **gegangen**._\n\n(Dissabte em vaig llevar d'hora. Vaig prendre cafè i vaig menjar pa. Després vaig anar a la ciutat i vaig comprar un llibre. Al vespre vaig veure una pel·lícula i me'n vaig anar al llit tard.)\n\nObserva:\n\n- _aufstehen, fahren, gehen_ → auxiliar ==**_bin_**== (moviment/canvi d'estat).\n- _trinken, essen, kaufen, sehen_ → auxiliar ==**_habe_**== (normals).\n- ==**Tots**== els participis al ==**final**== de la seva frase.\n- L'auxiliar a ==**V2**== de la seva frase (posició 1 si comença amb complement: _Am Samstag bin ich_…).\n\n==Aquesta és la melodia del passat oral alemany==: _bin… gegangen_, _habe… gegessen_, _sind… gefahren_. L'auxiliar obre, el participi tanca."
+          "body": "#### Exemples en context: un dia explicat en Perfekt\n\nVegem com es veu tot plegat encadenat, com si expliquessis el teu cap de setmana a algú:\n\n> _Am Samstag **bin** ich früh **aufgestanden**. Ich **habe** Kaffee **getrunken** und Brot **gegessen**. Dann **bin** ich in die Stadt **gefahren** und **habe** ein Buch **gekauft**. Am Abend **habe** ich einen Film **gesehen** und **bin** spät ins Bett **gegangen**._\n\n(Dissabte em vaig llevar d'hora. Vaig prendre cafè i vaig menjar pa. Després vaig anar a la ciutat i vaig comprar un llibre. Al vespre vaig veure una pel·lícula i me'n vaig anar al llit tard.)\n\nObserva:\n\n- _aufstehen, fahren, gehen_ → auxiliar ==**_bin_**== (moviment/canvi d'estat).\n- _trinken, essen, kaufen, sehen_ → auxiliar ==**_habe_**== (normals).\n- ==**Tots**== els participis al ==**final**== de la seva oració.\n- L'auxiliar a ==**V2**== de la seva oració (posició 1 si comença amb complement: _Am Samstag bin ich_…).\n\n==Aquesta és la melodia del passat oral alemany==: _bin… gegangen_, _habe… gegessen_, _sind… gefahren_. L'auxiliar obre, el participi tanca."
         }
       ]
     },
@@ -333,7 +333,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Síntesi\n\n**La fórmula central de la lliçó:**\n\n> ==**Perfekt = _haben_ / _sein_ (V2) + Partizip II (final)**==\n\n**Les tres peces claus:**\n\n1. ==**L'auxiliar**== és _haben_ o _sein_, conjugat en **present** segons el subjecte. Va a la **posició V2** (o posició 1 en pregunta tancada).\n2. ==**El Partizip II**== és una forma **fixa** del verb principal. No es conjuga. Va al **final absolut** de la frase.\n3. Entre l'auxiliar i el participi es tanquen tots els altres elements: això és la ==**Satzklammer**==, la \"grapa verbal\" de l'alemany."
+          "body": "#### Síntesi\n\n**La fórmula central de la lliçó:**\n\n> ==**Perfekt = _haben_ / _sein_ (V2) + Partizip II (final)**==\n\n**Les tres peces claus:**\n\n1. ==**L'auxiliar**== és _haben_ o _sein_, conjugat en **present** segons el subjecte. Va a la **posició V2** (o posició 1 en pregunta tancada).\n2. ==**El Partizip II**== és una forma **fixa** del verb principal. No es conjuga. Va al **final absolut** de l'oració.\n3. Entre l'auxiliar i el participi es tanquen tots els altres elements: això és la ==**Satzklammer**==, la \"grapa verbal\" de l'alemany."
         },
         {
           "type": "table",
@@ -351,7 +351,7 @@
           "type": "callout",
           "variant": "danger",
           "title": "Paranys crítics per a catalanoparlants",
-          "body": "- ==**El participi va SEMPRE al final**, no juntament amb l'auxiliar==. No _\"ich habe gegessen Pizza\"_, sinó _\"ich habe Pizza gegessen\"_.\n- **El participi no es conjuga.** _gelernt_ és _gelernt_ per a tothom: qui canvia és l'auxiliar.\n- _haben_ i _sein_ com a auxiliars ==no signifiquen \"tenir\" ni \"ser\"==: són només peces gramaticals, com el català \"he/has/ha\".\n- En frases negatives, ==**_nicht_ va just abans del participi**==, no darrere."
+          "body": "- ==**El participi va SEMPRE al final**, no juntament amb l'auxiliar==. No _\"ich habe gegessen Pizza\"_, sinó _\"ich habe Pizza gegessen\"_.\n- **El participi no es conjuga.** _gelernt_ és _gelernt_ per a tothom: qui canvia és l'auxiliar.\n- _haben_ i _sein_ com a auxiliars ==no signifiquen \"tenir\" ni \"ser\"==: són només peces gramaticals, com el català \"he/has/ha\".\n- En oracions negatives, ==**_nicht_ va just abans del participi**==, no darrere."
         },
         {
           "type": "table",

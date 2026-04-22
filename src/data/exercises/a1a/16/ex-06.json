@@ -3,7 +3,7 @@
   "id": "A1a-16-ex-06",
   "topicId": "A1a-16",
   "title": "Produeix les peces clau",
-  "prompt": "Escriu la paraula que falta a cada frase alemanya per expressar el que diu la versió catalana. Atenció a la majúscula quan toqui.",
+  "prompt": "Escriu la paraula que falta a cada oració alemanya per expressar el que diu la versió catalana. Atenció a la majúscula quan toqui.",
   "difficulty": 3,
   "tags": ["mag", "finde", "lieblings", "produccio", "typeIn"],
   "stimulus": {

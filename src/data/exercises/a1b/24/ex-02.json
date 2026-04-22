@@ -3,7 +3,7 @@
   "id": "A1b-24-ex-02",
   "topicId": "A1b-24",
   "title": "Perfekt o Präteritum segons el verb",
-  "prompt": "Totes les frases són de **conversa informal** (xat, oral). Per a cada una, indica si el verb ha d'anar en **Perfekt** o en **Präteritum**, sense haver-lo de formar. Recorda els quatre grups excepcionals: ==_sein, haben_, modals, _es gibt_== → sempre Präteritum. La resta → Perfekt.",
+  "prompt": "Totes les oracions són de **conversa informal** (xat, oral). Per a cada una, indica si el verb ha d'anar en **Perfekt** o en **Präteritum**, sense haver-lo de formar. Recorda els quatre grups excepcionals: ==_sein, haben_, modals, _es gibt_== → sempre Präteritum. La resta → Perfekt.",
   "difficulty": 1,
   "tags": ["perfekt", "praeteritum", "excepcions", "classificacio"],
   "stimulus": {
@@ -42,7 +42,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Molt bé. Has identificat els quatre grups excepcionals: ==_sein_== (frase 2), ==_haben_== (3), ==_können_== (5, és modal), ==_es gibt_== (6) → tots **Präteritum** també en oral. Els altres verbs (_gehen_, _arbeiten_) → **Perfekt** en conversa.",
+      "message": "Molt bé. Has identificat els quatre grups excepcionals: ==_sein_== (oració 2), ==_haben_== (3), ==_können_== (5, és modal), ==_es gibt_== (6) → tots **Präteritum** també en oral. Els altres verbs (_gehen_, _arbeiten_) → **Perfekt** en conversa.",
       "references": ["A1b-24"]
     },
     "incorrect": {

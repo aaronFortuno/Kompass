@@ -13,7 +13,7 @@
       { "id": "1", "label": "afirmativa" },
       { "id": "2", "label": "negació + substitució" },
       { "id": "3", "label": "negació + substitució" },
-      { "id": "4", "label": "negació + frase nova" }
+      { "id": "4", "label": "negació + oració nova" }
     ]
   },
   "interaction": {
@@ -34,7 +34,7 @@
       "message": "Perfecte. Has vist que _sondern_ exigeix **dues coses alhora**: negació prèvia i substitució directa de l'element negat."
     },
     "incorrect": {
-      "default": "Revisa cada frase amb dues preguntes: (1) La primera part és negativa (_nicht, kein_)? Si no → _aber_. (2) Si és negativa, la segona part substitueix exactament el que s'ha negat? Si sí → _sondern_; si només hi afegeix un matís o una frase nova → _aber_. La frase 4 és clau: hi ha _keinen_, però la segona part és una frase completa nova, no una substitució paral·lela."
+      "default": "Revisa cada oració amb dues preguntes: (1) La primera part és negativa (_nicht, kein_)? Si no → _aber_. (2) Si és negativa, la segona part substitueix exactament el que s'ha negat? Si sí → _sondern_; si només hi afegeix un matís o una oració nova → _aber_. L'oració 4 és clau: hi ha _keinen_, però la segona part és una oració completa nova, no una substitució paral·lela."
     }
   }
 }

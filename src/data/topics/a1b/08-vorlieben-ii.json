@@ -6,7 +6,7 @@
   "number": 8,
   "title": "Vorlieben (repàs): gern / lieber / am liebsten en aplicació",
   "shortTitle": "Vorlieben II",
-  "description": "Reforç focalitzat de la tríada gern / lieber / am liebsten: col·locació sintàctica, contrast amb mögen / gefallen / möchten / finden, i producció de frases encadenades amb graus de preferència.",
+  "description": "Reforç focalitzat de la tríada gern / lieber / am liebsten: col·locació sintàctica, contrast amb mögen / gefallen / möchten / finden, i producció de oracions encadenades amb graus de preferència.",
   "axes": ["expressions-i-funcions"],
   "prerequisites": ["A1b-5"],
   "steps": [
@@ -25,7 +25,7 @@
         },
         {
           "type": "explanation",
-          "body": "En aquesta lliçó:\n\n1. **Repassem el paradigma** (molt ràpid, ja el saps) i la idea de grau.\n2. **Aprofundim en la col·locació sintàctica** de la tríada: on va exactament dins de frases reals, com interactua amb objectes, complements de lloc, temps, i com es combina amb la Satzklammer (A1a-18).\n3. **Ampliem el vocabulari d'aplicació** amb verbs d'activitat quotidiana on la tríada es fa servir de manera natural: _reisen, fahren, essen, trinken, hören, spielen_.\n4. **Netegem contrastos** amb els altres recursos del tema de preferències per evitar barrejar construccions.\n\nAl final de la lliçó hauries de poder construir frases com _Die Deutschen machen gern Reisen mit dem Zug, aber sie fahren lieber mit dem Fahrrad. Am liebsten fahren sie mit dem Auto_ sense dubtar ni de les formes ni de la posició de cada peça."
+          "body": "En aquesta lliçó:\n\n1. **Repassem el paradigma** (molt ràpid, ja el saps) i la idea de grau.\n2. **Aprofundim en la col·locació sintàctica** de la tríada: on va exactament dins de oracions reals, com interactua amb objectes, complements de lloc, temps, i com es combina amb la Satzklammer (A1a-18).\n3. **Ampliem el vocabulari d'aplicació** amb verbs d'activitat quotidiana on la tríada es fa servir de manera natural: _reisen, fahren, essen, trinken, hören, spielen_.\n4. **Netegem contrastos** amb els altres recursos del tema de preferències per evitar barrejar construccions.\n\nAl final de la lliçó hauries de poder construir oracions com _Die Deutschen machen gern Reisen mit dem Zug, aber sie fahren lieber mit dem Fahrrad. Am liebsten fahren sie mit dem Auto_ sense dubtar ni de les formes ni de la posició de cada peça."
         }
       ]
     },
@@ -107,7 +107,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Sintaxi: on col·loco _gern / lieber / am liebsten_\n\nAquesta és la part central i realment nova de la lliçó. A A1a-16 i A1a-17 et vam dir que _gern_ \"va darrere del verb conjugat\". Això és cert, però no és tota la veritat. A les frases reals, amb més d'un complement, cal afinar."
+          "body": "#### Sintaxi: on col·loco _gern / lieber / am liebsten_\n\nAquesta és la part central i realment nova de la lliçó. A A1a-16 i A1a-17 et vam dir que _gern_ \"va darrere del verb conjugat\". Això és cert, però no és tota la veritat. A les oracions reals, amb més d'un complement, cal afinar."
         },
         {
           "type": "callout",
@@ -121,13 +121,13 @@
         },
         {
           "type": "explanation",
-          "body": "**Patró amb el superlatiu _am liebsten_:**\n\nAquí ve un matís típicament alemany. _Am liebsten_ **pot anar al mateix lloc** que _gern / lieber_, **però molt sovint s'avança al principi de la frase** per emfatitzar-lo. Quan això passa, el verb continua en **segona posició** (regla bàsica de l'alemany, A1a-18) i el subjecte va al **tercer lloc** (inversió).\n\n> _Ich fahre **am liebsten** mit dem Fahrrad._ (posició estàndard) ≈\n> _**Am liebsten** fahre ich mit dem Fahrrad._ (amb inversió, més enfàtic)\n\nTotes dues frases són correctes i volen dir el mateix: \"El que més m'agrada és anar amb bicicleta\". La segona és la més habitual en alemany parlat i escrit quan vols destacar aquest \"el que més m'agrada de tot\"."
+          "body": "**Patró amb el superlatiu _am liebsten_:**\n\nAquí ve un matís típicament alemany. _Am liebsten_ **pot anar al mateix lloc** que _gern / lieber_, **però molt sovint s'avança al principi de l'oració** per emfatitzar-lo. Quan això passa, el verb continua en **segona posició** (regla bàsica de l'alemany, A1a-18) i el subjecte va al **tercer lloc** (inversió).\n\n> _Ich fahre **am liebsten** mit dem Fahrrad._ (posició estàndard) ≈\n> _**Am liebsten** fahre ich mit dem Fahrrad._ (amb inversió, més enfàtic)\n\nTotes dues oracions són correctes i volen dir el mateix: \"El que més m'agrada és anar amb bicicleta\". La segona és la més habitual en alemany parlat i escrit quan vols destacar aquest \"el que més m'agrada de tot\"."
         },
         {
           "type": "callout",
           "variant": "warning",
           "title": "Regla d'or de la inversió",
-          "body": "Si comences la frase amb _Am liebsten_, el verb va **immediatament** després (posició 2), i el subjecte després del verb (posició 3): _**Am liebsten** [1] **fahre** [2] **ich** [3] mit dem Fahrrad_. No diguis \\*_Am liebsten ich fahre_, que violaria la regla del verb en segona posició."
+          "body": "Si comences l'oració amb _Am liebsten_, el verb va **immediatament** després (posició 2), i el subjecte després del verb (posició 3): _**Am liebsten** [1] **fahre** [2] **ich** [3] mit dem Fahrrad_. No diguis \\*_Am liebsten ich fahre_, que violaria la regla del verb en segona posició."
         }
       ]
     },
@@ -142,7 +142,7 @@
           "type": "callout",
           "variant": "example",
           "title": "Prova de substitució",
-          "body": "Si aquest esquema te l'aprens com a plantilla, pots generar dotzenes de frases canviant el verb i els complements. _Ich esse **gern** Pizza, aber ich esse **lieber** Pasta. **Am liebsten** esse ich Sushi_. _Wir hören **gern** Rock, aber wir hören **lieber** Jazz. **Am liebsten** hören wir klassische Musik_. És la plantilla, i és teva."
+          "body": "Si aquest esquema te l'aprens com a plantilla, pots generar dotzenes de oracions canviant el verb i els complements. _Ich esse **gern** Pizza, aber ich esse **lieber** Pasta. **Am liebsten** esse ich Sushi_. _Wir hören **gern** Rock, aber wir hören **lieber** Jazz. **Am liebsten** hören wir klassische Musik_. És la plantilla, i és teva."
         }
       ]
     },
@@ -157,7 +157,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Vocabulari útil: verbs d'activitat que casen bé amb la tríada\n\nA l'A1, la tríada _gern / lieber / am liebsten_ s'acompanya quasi sempre d'un grup reduït de verbs d'activitat quotidiana. Et donem una llista de referència perquè puguis construir frases de seguida:\n\n**Mobilitat i viatges:**\n> _reisen_ (viatjar) → _Ich reise **gern** mit dem Zug._\n> _fahren_ (anar/conduir) → _Ich fahre **lieber** mit dem Fahrrad._\n> _fliegen_ (volar) → _**Am liebsten** fliege ich nach Griechenland._\n> _gehen_ (anar a peu) → _Ich gehe **gern** spazieren._ (fer un passeig)\n\n**Menjar i beure:**\n> _essen_ → _Ich esse **gern** italienisch._\n> _trinken_ → _Ich trinke **lieber** Tee als Kaffee._\n> _kochen_ → _**Am liebsten** koche ich asiatisch._\n\n**Oci i cultura:**\n> _lesen_ → _Ich lese **gern** Krimis._ (novel·les policíaques)\n> _hören_ (escoltar) → _Wir hören **gern** klassische Musik._\n> _sehen / anschauen_ → _Ich sehe **lieber** Serien als Filme._\n> _spielen_ → _Er spielt **gern** Tennis._\n\n**Vida quotidiana:**\n> _arbeiten_ → _Sie arbeitet **gern** am Morgen._\n> _wohnen_ (viure, residir) → _Wir wohnen **gern** in Berlin._\n> _lernen_ → _Ich lerne **am liebsten** Sprachen._"
+          "body": "#### Vocabulari útil: verbs d'activitat que casen bé amb la tríada\n\nA l'A1, la tríada _gern / lieber / am liebsten_ s'acompanya quasi sempre d'un grup reduït de verbs d'activitat quotidiana. Et donem una llista de referència perquè puguis construir oracions de seguida:\n\n**Mobilitat i viatges:**\n> _reisen_ (viatjar) → _Ich reise **gern** mit dem Zug._\n> _fahren_ (anar/conduir) → _Ich fahre **lieber** mit dem Fahrrad._\n> _fliegen_ (volar) → _**Am liebsten** fliege ich nach Griechenland._\n> _gehen_ (anar a peu) → _Ich gehe **gern** spazieren._ (fer un passeig)\n\n**Menjar i beure:**\n> _essen_ → _Ich esse **gern** italienisch._\n> _trinken_ → _Ich trinke **lieber** Tee als Kaffee._\n> _kochen_ → _**Am liebsten** koche ich asiatisch._\n\n**Oci i cultura:**\n> _lesen_ → _Ich lese **gern** Krimis._ (novel·les policíaques)\n> _hören_ (escoltar) → _Wir hören **gern** klassische Musik._\n> _sehen / anschauen_ → _Ich sehe **lieber** Serien als Filme._\n> _spielen_ → _Er spielt **gern** Tennis._\n\n**Vida quotidiana:**\n> _arbeiten_ → _Sie arbeitet **gern** am Morgen._\n> _wohnen_ (viure, residir) → _Wir wohnen **gern** in Berlin._\n> _lernen_ → _Ich lerne **am liebsten** Sprachen._"
         },
         {
           "type": "callout",
@@ -200,7 +200,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Paranys habituals (d'aquest reforç)\n\n**1. Oblidar _als_ al comparatiu.**\nCalc del català \"que\": \\*_Ich fahre lieber mit dem Zug **wie** mit dem Auto_. Incorrecte. El \"que\" comparatiu en alemany és **==als==**: _lieber mit dem Zug **als** mit dem Auto_. (Pot ser que sentis _wie_ a l'alemany col·loquial; no ho imitis.)\n\n**2. Oblidar _am_ al superlatiu.**\n\\*_Liebsten trinke ich Tee_ és incorrecte. La forma és una **construcció fixa de dues paraules**: **_am liebsten_**. Apren-la com un bloc tancat i escriu-la sempre sencera.\n\n**3. No fer la inversió quan _Am liebsten_ va al principi.**\n\\*_Am liebsten ich fahre mit dem Auto_. Incorrecte: viola la regla del verb en segona posició (A1a-18). El correcte és _**Am liebsten** fahre ich mit dem Auto_ (verb en posició 2, subjecte en posició 3).\n\n**4. Posar la tríada al final de la frase com si fos un adverbi de temps o de lloc.**\n\\*_Ich fahre mit dem Zug gern_ sona estrany en alemany estàndard. La posició natural és **darrere del verb conjugat** i **abans dels complements**: _Ich fahre **gern** mit dem Zug_. Aquesta regla val per a les tres formes."
+          "body": "#### Paranys habituals (d'aquest reforç)\n\n**1. Oblidar _als_ al comparatiu.**\nCalc del català \"que\": \\*_Ich fahre lieber mit dem Zug **wie** mit dem Auto_. Incorrecte. El \"que\" comparatiu en alemany és **==als==**: _lieber mit dem Zug **als** mit dem Auto_. (Pot ser que sentis _wie_ a l'alemany col·loquial; no ho imitis.)\n\n**2. Oblidar _am_ al superlatiu.**\n\\*_Liebsten trinke ich Tee_ és incorrecte. La forma és una **construcció fixa de dues paraules**: **_am liebsten_**. Apren-la com un bloc tancat i escriu-la sempre sencera.\n\n**3. No fer la inversió quan _Am liebsten_ va al principi.**\n\\*_Am liebsten ich fahre mit dem Auto_. Incorrecte: viola la regla del verb en segona posició (A1a-18). El correcte és _**Am liebsten** fahre ich mit dem Auto_ (verb en posició 2, subjecte en posició 3).\n\n**4. Posar la tríada al final de l'oració com si fos un adverbi de temps o de lloc.**\n\\*_Ich fahre mit dem Zug gern_ sona estrany en alemany estàndard. La posició natural és **darrere del verb conjugat** i **abans dels complements**: _Ich fahre **gern** mit dem Zug_. Aquesta regla val per a les tres formes."
         },
         {
           "type": "explanation",
@@ -243,7 +243,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Síntesi del tema\n\nA1b-8 ha estat un reforç d'aplicació de la tríada **==gern – lieber – am liebsten==** que ja coneixies d'A1a-17 i havies integrat al mapa d'A1b-5. Les idees que cal endur-se:\n\n1. **La tríada és l'eina específica per a preferències sobre accions.** Si el que t'agrada és **un verb** (viatjar, cuinar, anar amb tren, escoltar música), vas per _gern / lieber / am liebsten_. Si és **un substantiu**, vas per les altres eines d'A1b-5 (_mögen, gefallen, interessieren, möchten, finden_).\n\n2. **Marcadors obligatoris:** **==als==** al comparatiu (_lieber X **als** Y_), **==am==** al superlatiu (_**am** liebsten_). No s'ometen mai.\n\n3. **Posició sintàctica estàndard:** darrere del **verb conjugat i del subjecte**, abans dels complements. Val per a les tres formes: _Ich fahre **gern / lieber / am liebsten** mit dem Zug_.\n\n4. **Inversió amb _Am liebsten_ al principi:** _Am liebsten_ sovint s'avança per emfatitzar-lo. Aleshores es manté la regla del verb en segona posició (A1a-18): _**Am liebsten** [1] **fahre** [2] **ich** [3] mit dem Auto_. No \\*_Am liebsten ich fahre_.\n\n5. **Invariabilitat absoluta:** la tríada no es conjuga. Només es conjuga el **verb** que l'acompanya.\n\n6. **Prova de producció natural:** construeix una seqüència de tres frases sobre un mateix camp (menjar, música, transport, oci) encadenant la tríada amb _aber_. Exemple: _Ich spiele gern Fußball, aber ich spiele lieber Tennis. Am liebsten spiele ich Basketball_. Aquest patró és la plantilla més productiva del tema, i amb ell pots generar desenes de frases canviant només el verb i els complements."
+          "body": "#### Síntesi del tema\n\nA1b-8 ha estat un reforç d'aplicació de la tríada **==gern – lieber – am liebsten==** que ja coneixies d'A1a-17 i havies integrat al mapa d'A1b-5. Les idees que cal endur-se:\n\n1. **La tríada és l'eina específica per a preferències sobre accions.** Si el que t'agrada és **un verb** (viatjar, cuinar, anar amb tren, escoltar música), vas per _gern / lieber / am liebsten_. Si és **un substantiu**, vas per les altres eines d'A1b-5 (_mögen, gefallen, interessieren, möchten, finden_).\n\n2. **Marcadors obligatoris:** **==als==** al comparatiu (_lieber X **als** Y_), **==am==** al superlatiu (_**am** liebsten_). No s'ometen mai.\n\n3. **Posició sintàctica estàndard:** darrere del **verb conjugat i del subjecte**, abans dels complements. Val per a les tres formes: _Ich fahre **gern / lieber / am liebsten** mit dem Zug_.\n\n4. **Inversió amb _Am liebsten_ al principi:** _Am liebsten_ sovint s'avança per emfatitzar-lo. Aleshores es manté la regla del verb en segona posició (A1a-18): _**Am liebsten** [1] **fahre** [2] **ich** [3] mit dem Auto_. No \\*_Am liebsten ich fahre_.\n\n5. **Invariabilitat absoluta:** la tríada no es conjuga. Només es conjuga el **verb** que l'acompanya.\n\n6. **Prova de producció natural:** construeix una seqüència de tres oracions sobre un mateix camp (menjar, música, transport, oci) encadenant la tríada amb _aber_. Exemple: _Ich spiele gern Fußball, aber ich spiele lieber Tennis. Am liebsten spiele ich Basketball_. Aquest patró és la plantilla més productiva del tema, i amb ell pots generar desenes de oracions canviant només el verb i els complements."
         },
         {
           "type": "table",

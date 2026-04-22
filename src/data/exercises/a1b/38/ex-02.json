@@ -48,7 +48,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Molt bé. Si dubtes, pensa en la **frase canònica**: _Ich lese ==ein Buch==_ (+Akk), _Ich helfe ==dir==_ (+Dat), _Ich schenke ==dir ein Buch==_ (+Dat+Akk), _Ich wohne ==in Berlin==_ (+Präp).",
+      "message": "Molt bé. Si dubtes, pensa en la **oració canònica**: _Ich lese ==ein Buch==_ (+Akk), _Ich helfe ==dir==_ (+Dat), _Ich schenke ==dir ein Buch==_ (+Dat+Akk), _Ich wohne ==in Berlin==_ (+Präp).",
       "references": ["A1b-38"]
     },
     "incorrect": {

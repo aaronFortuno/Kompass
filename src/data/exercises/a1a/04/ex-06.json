@@ -3,18 +3,18 @@
   "id": "A1a-4-ex-06",
   "topicId": "A1a-4",
   "title": "Posició de _nicht_ i el parany de la professió",
-  "prompt": "Col·loca la negació correcta a cada frase. Atenció: una d'aquestes frases no demana _nicht_, sinó una altra forma.",
+  "prompt": "Col·loca la negació correcta a cada oració. Atenció: una d'aquestes oracions no demana _nicht_, sinó una altra forma.",
   "difficulty": 3,
   "tags": ["nicht", "posicio", "trampa", "professio"],
   "stimulus": {
     "type": "textWithBlanks",
     "template": "Ich wohne {{1a}} in {{1b}} Berlin.\nSie ist {{2}} Studentin.\nEr kommt heute {{3a}} zur Arbeit {{3b}}.",
     "blanks": [
-      { "id": "1a", "label": "frase 1 · abans de _in_" },
-      { "id": "1b", "label": "frase 1 · entre _in_ i _Berlin_" },
-      { "id": "2", "label": "frase 2 · davant de _Studentin_ (parany)" },
-      { "id": "3a", "label": "frase 3 · abans de _zur Arbeit_" },
-      { "id": "3b", "label": "frase 3 · després de _zur Arbeit_" }
+      { "id": "1a", "label": "oració 1 · abans de _in_" },
+      { "id": "1b", "label": "oració 1 · entre _in_ i _Berlin_" },
+      { "id": "2", "label": "oració 2 · davant de _Studentin_ (parany)" },
+      { "id": "3a", "label": "oració 3 · abans de _zur Arbeit_" },
+      { "id": "3b", "label": "oració 3 · després de _zur Arbeit_" }
     ]
   },
   "interaction": {

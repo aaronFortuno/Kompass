@@ -3,7 +3,7 @@
   "id": "A1b-9-ex-05",
   "topicId": "A1b-9",
   "title": "Del present a l'imperatiu",
-  "prompt": "Transforma cada frase del present a l'imperatiu corresponent (_du_, _ihr_ o _Sie_), aplicant tots els canvis formals necessaris.",
+  "prompt": "Transforma cada oració del present a l'imperatiu corresponent (_du_, _ihr_ o _Sie_), aplicant tots els canvis formals necessaris.",
   "difficulty": 3,
   "tags": ["imperatiu", "transformacio", "du-ihr-Sie", "avaluacio"],
   "stimulus": {

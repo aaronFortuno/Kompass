@@ -6,7 +6,7 @@
   "number": 23,
   "title": "Temporale Sequenzen — Seqüències temporals",
   "shortTitle": "Sequenzen",
-  "description": "Ordenar accions en el temps amb els tres connectors bàsics d'A1: _zuerst_ (obre la seqüència), _dann_ i _danach_ (continuen). Inclou la regla **V2** d'inversió quan el connector obre la frase, el comportament amb verbs separables i el fals amic _denn_ (causal, no temporal).",
+  "description": "Ordenar accions en el temps amb els tres connectors bàsics d'A1: _zuerst_ (obre la seqüència), _dann_ i _danach_ (continuen). Inclou la regla **V2** d'inversió quan el connector obre l'oració, el comportament amb verbs separables i el fals amic _denn_ (causal, no temporal).",
   "axes": ["expressions-i-funcions"],
   "prerequisites": ["A1a-22"],
   "steps": [
@@ -15,7 +15,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Context i motivació\n\nQuan expliquem el que hem fet al matí, receptes de cuina o els passos d'un pla, necessitem **ordenar accions en el temps**. En català ho fem amb _primer... després... finalment..._; en alemany hi ha tres paraules bàsiques que cobreixen aquesta funció a nivell A1: ==**zuerst**==, ==**dann**== i ==**danach**==.\n\nAquesta lliçó continua la família temporal que vas començar amb les hores (A1a-15), els dies (A1a-20), _am / um / im_ (A1a-21) i els adverbis com _heute_, _morgen_, _jetzt_. Ara no situem una acció en un moment concret, sinó **en relació amb una altra acció**: què va abans i què va després.\n\n**Objectius d'aquesta sessió (~10-15 min):**\n\n- Reconèixer i usar _zuerst_, _dann_, _danach_ per ordenar dues o tres accions.\n- Col·locar aquests connectors correctament a la frase (regla **V2**).\n- Evitar els errors típics de catalanoparlants quan tradueixen \"primer / després\"."
+          "body": "#### Context i motivació\n\nQuan expliquem el que hem fet al matí, receptes de cuina o els passos d'un pla, necessitem **ordenar accions en el temps**. En català ho fem amb _primer... després... finalment..._; en alemany hi ha tres paraules bàsiques que cobreixen aquesta funció a nivell A1: ==**zuerst**==, ==**dann**== i ==**danach**==.\n\nAquesta lliçó continua la família temporal que vas començar amb les hores (A1a-15), els dies (A1a-20), _am / um / im_ (A1a-21) i els adverbis com _heute_, _morgen_, _jetzt_. Ara no situem una acció en un moment concret, sinó **en relació amb una altra acció**: què va abans i què va després.\n\n**Objectius d'aquesta sessió (~10-15 min):**\n\n- Reconèixer i usar _zuerst_, _dann_, _danach_ per ordenar dues o tres accions.\n- Col·locar aquests connectors correctament a l'oració (regla **V2**).\n- Evitar els errors típics de catalanoparlants quan tradueixen \"primer / després\"."
         }
       ]
     },
@@ -53,7 +53,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Posició a la frase: la regla V2\n\nAquesta és la part crítica i on els catalanoparlants ens equivoquem més. En alemany, el **verb conjugat sempre va a la segona posició** (regla V2, ja vista a A1a-8). Si comencem la frase amb _zuerst_, _dann_ o _danach_, ==el verb ve immediatament després i el subjecte va darrere del verb==."
+          "body": "#### Posició a l'oració: la regla V2\n\nAquesta és la part crítica i on els catalanoparlants ens equivoquem més. En alemany, el **verb conjugat sempre va a la segona posició** (regla V2, ja vista a A1a-8). Si comencem l'oració amb _zuerst_, _dann_ o _danach_, ==el verb ve immediatament després i el subjecte va darrere del verb==."
         },
         {
           "type": "table",
@@ -72,11 +72,11 @@
           "type": "callout",
           "variant": "warning",
           "title": "Regla pràctica",
-          "body": "Quan el connector temporal obre la frase, **inverteix** verb i subjecte. En català diem _**Després** l'Emma es troba malament_ (subjecte manté posició); en alemany cal dir _**Danach** geht es Emma schlecht_ (verb abans del subjecte)."
+          "body": "Quan el connector temporal obre l'oració, **inverteix** verb i subjecte. En català diem _**Després** l'Emma es troba malament_ (subjecte manté posició); en alemany cal dir _**Danach** geht es Emma schlecht_ (verb abans del subjecte)."
         },
         {
           "type": "explanation",
-          "body": "**Els connectors també poden anar dins la frase**, sense inversió, quan no obren la frase:\n\n> _Ich komme um sechs nach Hause. Dann koche ich, danach räume ich die Küche auf._\n\nAquí cada oració comença amb _dann_ / _danach_ i aplica la inversió. Però també seria possible:\n\n> _Ich koche dann._ → _dann_ al mig, sense inversió, subjecte en posició 1.\n\nA nivell A1, ==la construcció més habitual i segura és posar el connector al principi i aplicar la inversió==."
+          "body": "**Els connectors també poden anar dins l'oració**, sense inversió, quan no obren l'oració:\n\n> _Ich komme um sechs nach Hause. Dann koche ich, danach räume ich die Küche auf._\n\nAquí cada oració comença amb _dann_ / _danach_ i aplica la inversió. Però també seria possible:\n\n> _Ich koche dann._ → _dann_ al mig, sense inversió, subjecte en posició 1.\n\nA nivell A1, ==la construcció més habitual i segura és posar el connector al principi i aplicar la inversió==."
         }
       ]
     },
@@ -154,7 +154,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Què t'emportes\n\n- ==Per ordenar accions== en alemany a nivell A1: **_zuerst_** (obre) — **_dann_** / **_danach_** (continuen).\n- Amb dues accions: _zuerst ... dann ..._ o _zuerst ... danach ..._\n- Amb tres accions: _zuerst ... dann ... danach ..._\n- ==Quan el connector obre la frase==, aplica **V2**: connector + **verb conjugat** + subjecte + resta. _Dann stehe ich auf._\n- Si el verb és separable, el **prefix va al final**: _Zuerst kauft er ein._\n- Compte amb _dann_ (temporal, \"llavors\") vs _denn_ (causal, \"perquè\")."
+          "body": "#### Què t'emportes\n\n- ==Per ordenar accions== en alemany a nivell A1: **_zuerst_** (obre) — **_dann_** / **_danach_** (continuen).\n- Amb dues accions: _zuerst ... dann ..._ o _zuerst ... danach ..._\n- Amb tres accions: _zuerst ... dann ... danach ..._\n- ==Quan el connector obre l'oració==, aplica **V2**: connector + **verb conjugat** + subjecte + resta. _Dann stehe ich auf._\n- Si el verb és separable, el **prefix va al final**: _Zuerst kauft er ein._\n- Compte amb _dann_ (temporal, \"llavors\") vs _denn_ (causal, \"perquè\")."
         },
         {
           "type": "callout",
@@ -166,7 +166,7 @@
           "type": "callout",
           "variant": "tip",
           "title": "Microrepte de fixació",
-          "body": "Aquesta nit, abans de dormir, verbalitza en veu alta la teva rutina matinal en tres frases: _Zuerst ... Dann ... Danach ..._ Si et travessa la inversió V2, repeteix-les demà. La memòria muscular val més que mil taules."
+          "body": "Aquesta nit, abans de dormir, verbalitza en veu alta la teva rutina matinal en tres oracions: _Zuerst ... Dann ... Danach ..._ Si et travessa la inversió V2, repeteix-les demà. La memòria muscular val més que mil taules."
         }
       ]
     }

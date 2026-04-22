@@ -2,27 +2,27 @@
   "schemaVersion": 1,
   "id": "A1b-16-ex-05",
   "topicId": "A1b-16",
-  "title": "Reconstrueix la frase reportada",
-  "prompt": "Ordena les paraules d'un banc desordenat i escriu la frase reportada completa. Respecta la **Satzklammer** (modal a posició 2, infinitiu al final) i l'estructura _[Font] sagt, [subjecte] soll [complements] [infinitiu]._ Inclou la coma i el punt final.",
+  "title": "Reconstrueix l'oració reportada",
+  "prompt": "Ordena les paraules d'un banc desordenat i escriu l'oració reportada completa. Respecta la **Satzklammer** (modal a posició 2, infinitiu al final) i l'estructura _[Font] sagt, [subjecte] soll [complements] [infinitiu]._ Inclou la coma i el punt final.",
   "difficulty": 3,
   "tags": ["sollen", "discurs-reportat", "satzklammer", "reordenar", "typeIn"],
   "stimulus": {
     "type": "textWithBlanks",
     "template": "1. _sagt / Der Arzt / soll / ich / mich / ausruhen / , / ._ →\n{{1}}\n\n2. _sagt / Meine Mutter / soll / ich / weniger / fernsehen / , / ._ →\n{{2}}\n\n3. _sagt / Der Chef / sollen / wir / morgen / früh / kommen / , / ._ →\n{{3}}\n\n4. _sagt / Die Lehrerin / sollst / du / die Hausaufgaben / machen / , / ._ →\n{{4}}",
     "blanks": [
-      { "id": "1", "label": "frase 1" },
-      { "id": "2", "label": "frase 2" },
-      { "id": "3", "label": "frase 3" },
-      { "id": "4", "label": "frase 4" }
+      { "id": "1", "label": "oració 1" },
+      { "id": "2", "label": "oració 2" },
+      { "id": "3", "label": "oració 3" },
+      { "id": "4", "label": "oració 4" }
     ]
   },
   "interaction": {
     "type": "typeIn",
     "slots": [
-      { "blankId": "1", "placeholder": "frase completa amb coma i punt" },
-      { "blankId": "2", "placeholder": "frase completa amb coma i punt" },
-      { "blankId": "3", "placeholder": "frase completa amb coma i punt" },
-      { "blankId": "4", "placeholder": "frase completa amb coma i punt" }
+      { "blankId": "1", "placeholder": "oració completa amb coma i punt" },
+      { "blankId": "2", "placeholder": "oració completa amb coma i punt" },
+      { "blankId": "3", "placeholder": "oració completa amb coma i punt" },
+      { "blankId": "4", "placeholder": "oració completa amb coma i punt" }
     ],
     "caseSensitive": false,
     "trimWhitespace": true

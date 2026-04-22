@@ -3,12 +3,12 @@
   "id": "A1b-24-ex-01",
   "topicId": "A1b-24",
   "title": "Un Perfekt, tres catalans",
-  "prompt": "Per a cada frase alemanya en _Perfekt_, decideix si la traducció catalana pot ser correcta segons el context adequat. Recorda que un sol _Perfekt_ cobreix **he fet**, **vaig fer** i **feia**: totes tres són traduccions vàlides si el context ho demana.",
+  "prompt": "Per a cada oració alemanya en _Perfekt_, decideix si la traducció catalana pot ser correcta segons el context adequat. Recorda que un sol _Perfekt_ cobreix **he fet**, **vaig fer** i **feia**: totes tres són traduccions vàlides si el context ho demana.",
   "difficulty": 1,
   "tags": ["perfekt", "traduccio", "un-temps-tres-catalans"],
   "stimulus": {
     "type": "text",
-    "content": "Cada afirmació presenta una frase alemanya en _Perfekt_ seguida d'una traducció catalana. Marca si la traducció pot ser correcta donat el context adequat."
+    "content": "Cada afirmació presenta una oració alemanya en _Perfekt_ seguida d'una traducció catalana. Marca si la traducció pot ser correcta donat el context adequat."
   },
   "interaction": {
     "type": "trueFalse",

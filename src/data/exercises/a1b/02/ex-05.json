@@ -3,7 +3,7 @@
   "id": "A1b-2-ex-05",
   "topicId": "A1b-2",
   "title": "Traduir adreces al alemany",
-  "prompt": "Escriu només la combinació _preposició + article_ que falta a cada frase (per exemple: _in der_, _im_ o _am_).",
+  "prompt": "Escriu només la combinació _preposició + article_ que falta a cada oració (per exemple: _in der_, _im_ o _am_).",
   "difficulty": 3,
   "tags": ["adresses", "traduccio", "typein", "assessment"],
   "stimulus": {

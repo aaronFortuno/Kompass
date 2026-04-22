@@ -3,7 +3,7 @@
   "id": "A1b-36-ex-01",
   "topicId": "A1b-36",
   "title": "Identificar el cas d'una forma d'article",
-  "prompt": "Cada frase conté un sintagma amb un article o possessiu. Indica en quin cas està.",
+  "prompt": "Cada oració conté un sintagma amb un article o possessiu. Indica en quin cas està.",
   "difficulty": 2,
   "tags": ["deklination", "cas", "article-definit", "article-indefinit", "possessiu"],
   "stimulus": {

@@ -3,7 +3,7 @@
   "id": "A1a-24-ex-06",
   "topicId": "A1a-24",
   "title": "Vertader o fals?",
-  "prompt": "Valora si cada frase és correcta pel que fa a l'ús de **_schon_** / **_noch_** / **_erst_** en el context que es descriu.",
+  "prompt": "Valora si cada oració és correcta pel que fa a l'ús de **_schon_** / **_noch_** / **_erst_** en el context que es descriu.",
   "difficulty": 2,
   "tags": ["schon", "noch", "erst", "truefalse", "assessment"],
   "stimulus": {
@@ -33,7 +33,7 @@
       "message": "Bé vist. L'ús depèn de la **percepció**: (s1) una mare pot trobar que 2 anys ja és molt → _schon_; (s2) 30 anys a la mateixa ciutat és una durada llarga → _schon_, no _erst_; (s3) seguir dormint és continuïtat → _noch_; (s4) si encara no ha arribat, no és _schon_ sinó _erst nächste Woche_ (\"no fins la setmana que ve\")."
     },
     "incorrect": {
-      "default": "Revisa: (s2) 30 anys és una **durada llarga** → cal **_schon_**, no _erst_. (s4) Si els aniversaris encara no han arribat, la frase demana **_erst_** (\"no fins...\"), no _schon_ (que implicaria un fet ja assolit)."
+      "default": "Revisa: (s2) 30 anys és una **durada llarga** → cal **_schon_**, no _erst_. (s4) Si els aniversaris encara no han arribat, l'oració demana **_erst_** (\"no fins...\"), no _schon_ (que implicaria un fet ja assolit)."
     }
   }
 }

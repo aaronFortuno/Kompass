@@ -191,7 +191,7 @@
         },
         {
           "type": "explanation",
-          "body": "**Exemple treballat:** _Der Lehrer erklärt dem Schüler die Grammatik._\n\n- _==Wer== erklärt?_ → _der Lehrer_ (Nom. = subjecte)\n- _==Wem== erklärt er?_ → _dem Schüler_ (Dat. = a qui)\n- _==Was== erklärt er?_ → _die Grammatik_ (Akk. = què)\n\nCada pregunta \"atrapa\" un complement diferent. Si una frase té tres elements (subjecte + dos objectes), les tres preguntes han de tenir resposta. Si en falta alguna, algun complement està ocult o és el·líptic."
+          "body": "**Exemple treballat:** _Der Lehrer erklärt dem Schüler die Grammatik._\n\n- _==Wer== erklärt?_ → _der Lehrer_ (Nom. = subjecte)\n- _==Wem== erklärt er?_ → _dem Schüler_ (Dat. = a qui)\n- _==Was== erklärt er?_ → _die Grammatik_ (Akk. = què)\n\nCada pregunta \"atrapa\" un complement diferent. Si una oració té tres elements (subjecte + dos objectes), les tres preguntes han de tenir resposta. Si en falta alguna, algun complement està ocult o és el·líptic."
         }
       ]
     },
@@ -274,7 +274,7 @@
           "type": "callout",
           "variant": "tip",
           "title": "Pista pràctica final",
-          "body": "Quan veus una frase nova, ==aïlla el verb primer, després busca el règim==. _Ich ___ meinem Freund._ → si el verb és _helfen_ (dat.), _meinem_ és correcte. Si el verb fos _besuchen_ (akk.), caldria _meinen_. **El verb mana, el complement obeeix.**"
+          "body": "Quan veus una oració nova, ==aïlla el verb primer, després busca el règim==. _Ich ___ meinem Freund._ → si el verb és _helfen_ (dat.), _meinem_ és correcte. Si el verb fos _besuchen_ (akk.), caldria _meinen_. **El verb mana, el complement obeeix.**"
         }
       ]
     }

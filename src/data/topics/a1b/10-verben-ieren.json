@@ -126,17 +126,17 @@
       ]
     },
     {
-      "id": "exemples-frases",
+      "id": "exemples-oracions",
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Exemples en frases reals\n\nAmb això ja pots produir frases útils des del primer dia:\n\n- _Ich **studiere** Medizin in Berlin._ — Estudio medicina a Berlín.\n- _Wir **telefonieren** jeden Tag._ — Parlem per telèfon cada dia.\n- _Das Auto **funktioniert** nicht._ — El cotxe no funciona.\n- _Er **probiert** den Kuchen._ — Ell prova el pastís.\n- _Sie **fotografiert** die Stadt._ — Ella fotografia la ciutat.\n- _Wir **reservieren** einen Tisch._ — Reservem una taula.\n- _Ich **trainiere** dreimal pro Woche._ — Entreno tres cops per setmana."
+          "body": "#### Exemples en oracions reals\n\nAmb això ja pots produir oracions útils des del primer dia:\n\n- _Ich **studiere** Medizin in Berlin._ — Estudio medicina a Berlín.\n- _Wir **telefonieren** jeden Tag._ — Parlem per telèfon cada dia.\n- _Das Auto **funktioniert** nicht._ — El cotxe no funciona.\n- _Er **probiert** den Kuchen._ — Ell prova el pastís.\n- _Sie **fotografiert** die Stadt._ — Ella fotografia la ciutat.\n- _Wir **reservieren** einen Tisch._ — Reservem una taula.\n- _Ich **trainiere** dreimal pro Woche._ — Entreno tres cops per setmana."
         },
         {
           "type": "callout",
           "variant": "info",
-          "title": "Ordre normal de frase",
-          "body": "Observa que l'**ordre de la frase és el normal** del present: verb conjugat en segona posició, subjecte i complements a la resta. No hi ha cap Satzklammer (A1a-18) ni res de raro, perquè aquests verbs **no són separables** (no porten prefix separable del tipus _an-, auf-, aus-_, que veuràs a A1a-29)."
+          "title": "Ordre normal de oració",
+          "body": "Observa que l'**ordre de l'oració és el normal** del present: verb conjugat en segona posició, subjecte i complements a la resta. No hi ha cap Satzklammer (A1a-18) ni res de raro, perquè aquests verbs **no són separables** (no porten prefix separable del tipus _an-, auf-, aus-_, que veuràs a A1a-29)."
         }
       ]
     },

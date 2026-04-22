@@ -33,10 +33,10 @@
   },
   "feedback": {
     "correct": {
-      "message": "Perfecte. Fixa't que **Sie** (Vostè) és l'únic que sempre porta majúscula, encara que vagi al mig de la frase."
+      "message": "Perfecte. Fixa't que **Sie** (Vostè) és l'únic que sempre porta majúscula, encara que vagi al mig de l'oració."
     },
     "incorrect": {
-      "default": "Revisa la persona i el nombre a cada frase. Pistes: _ich_ és minúscula al mig de frase; per a 'ella' → _sie_; per a 'Vostè' → **Sie** sempre amb majúscula; per a 'nosaltres' → _wir_."
+      "default": "Revisa la persona i el nombre a cada oració. Pistes: _ich_ és minúscula al mig de oració; per a 'ella' → _sie_; per a 'Vostè' → **Sie** sempre amb majúscula; per a 'nosaltres' → _wir_."
     }
   }
 }

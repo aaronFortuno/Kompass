@@ -9,10 +9,10 @@
   "stimulus": {
     "type": "cardSet",
     "cards": [
-      { "id": "f1", "group": "frases", "content": { "type": "text", "content": "_Trink weniger Kaffee!_" } },
-      { "id": "f2", "group": "frases", "content": { "type": "text", "content": "_Trink **mal** weniger Kaffee!_" } },
-      { "id": "f3", "group": "frases", "content": { "type": "text", "content": "_Trink **doch** weniger Kaffee!_" } },
-      { "id": "f4", "group": "frases", "content": { "type": "text", "content": "_Trink **doch mal** weniger Kaffee!_" } },
+      { "id": "f1", "group": "oracions", "content": { "type": "text", "content": "_Trink weniger Kaffee!_" } },
+      { "id": "f2", "group": "oracions", "content": { "type": "text", "content": "_Trink **mal** weniger Kaffee!_" } },
+      { "id": "f3", "group": "oracions", "content": { "type": "text", "content": "_Trink **doch** weniger Kaffee!_" } },
+      { "id": "f4", "group": "oracions", "content": { "type": "text", "content": "_Trink **doch mal** weniger Kaffee!_" } },
       { "id": "i1", "group": "intencions", "content": { "type": "text", "content": "Ordre directa, sense atenuació." } },
       { "id": "i2", "group": "intencions", "content": { "type": "text", "content": "Suggeriment casual: \"prova-ho.\"" } },
       { "id": "i3", "group": "intencions", "content": { "type": "text", "content": "Consell amb insistència amigable." } },
@@ -21,7 +21,7 @@
   },
   "interaction": {
     "type": "matchPairs",
-    "groupALabel": "Frase",
+    "groupALabel": "Oració",
     "groupBLabel": "Intenció"
   },
   "validation": {

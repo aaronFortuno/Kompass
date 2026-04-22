@@ -11,10 +11,10 @@
     "template": "1. _Der Film beginnt {{1}} 20 Uhr._\n\n2. _{{2}} Januar ist es kalt._\n\n3. _Wir fahren {{3}} Weihnachten zu meinen Eltern._\n\n4. _Ich bin {{4}} 15 Jahren nach Deutschland gekommen._\n\n5. _{{5}} der Arbeit gehe ich joggen._\n\n6. _Ich schlafe {{6}} Nacht sehr gut._",
     "blanks": [
       { "id": "1", "label": "1. hora" },
-      { "id": "2", "label": "2. mes (inici de frase)" },
+      { "id": "2", "label": "2. mes (inici de oració)" },
       { "id": "3", "label": "3. festa" },
       { "id": "4", "label": "4. quantitat enrere" },
-      { "id": "5", "label": "5. 'després de' (inici de frase)" },
+      { "id": "5", "label": "5. 'després de' (inici de oració)" },
       { "id": "6", "label": "6. nit" }
     ]
   },

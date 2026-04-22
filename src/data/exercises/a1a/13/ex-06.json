@@ -49,7 +49,7 @@
       "byResponse": [
         {
           "match": { "1": "nein" },
-          "message": "_Nein_ va sempre amb **majúscula inicial** com a paraula de resposta a l'inici d'una frase."
+          "message": "_Nein_ va sempre amb **majúscula inicial** com a paraula de resposta a l'inici d'una oració."
         },
         {
           "match": { "1": "nicht" },
@@ -65,7 +65,7 @@
         },
         {
           "match": { "3": "nein" },
-          "message": "_Nein_ va sempre amb **majúscula inicial** com a paraula de resposta a l'inici d'una frase."
+          "message": "_Nein_ va sempre amb **majúscula inicial** com a paraula de resposta a l'inici d'una oració."
         },
         {
           "match": { "4": "kein" },

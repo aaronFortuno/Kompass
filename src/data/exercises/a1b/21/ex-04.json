@@ -3,7 +3,7 @@
   "id": "A1b-21-ex-04",
   "topicId": "A1b-21",
   "title": "liegen/legen, stehen/stellen, sitzen/setzen",
-  "prompt": "Tria el verb adequat per a cada frase segons si hi ha acció (amb objecte directe) o estat.",
+  "prompt": "Tria el verb adequat per a cada oració segons si hi ha acció (amb objecte directe) o estat.",
   "difficulty": 2,
   "tags": ["parelles-posicio", "liegen-legen", "sitzen-setzen", "stehen-stellen"],
   "stimulus": {

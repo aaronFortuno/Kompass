@@ -3,15 +3,15 @@
   "id": "A1a-25-ex-02",
   "topicId": "A1a-25",
   "title": "Satzklammer amb _aufstehen_",
-  "prompt": "Completa la frase posant cada peça al seu lloc. L'arrel va a la posició 2 (conjugada); el prefix tanca el claudàtor al final. Verb: _aufstehen_.",
+  "prompt": "Completa l'oració posant cada peça al seu lloc. L'arrel va a la posició 2 (conjugada); el prefix tanca el claudàtor al final. Verb: _aufstehen_.",
   "difficulty": 2,
-  "tags": ["satzklammer", "separables", "posicio-2", "final-frase"],
+  "tags": ["satzklammer", "separables", "posicio-2", "final-oració"],
   "stimulus": {
     "type": "textWithBlanks",
     "template": "_Ich {{1}} um acht Uhr {{2}}._ (Em llevo a les vuit.)",
     "blanks": [
       { "id": "1", "label": "posició 2 — arrel conjugada" },
-      { "id": "2", "label": "final de la frase — prefix" }
+      { "id": "2", "label": "final de l'oració — prefix" }
     ]
   },
   "interaction": {
@@ -37,7 +37,7 @@
       "byResponse": [
         {
           "match": { "1": "aufstehe" },
-          "message": "No: _ich aufstehe_ és l'error típic. En frase enunciativa el verb separable **s'ha de partir**: l'arrel _stehe_ va a la posició 2 i el prefix _auf_ vola al final.",
+          "message": "No: _ich aufstehe_ és l'error típic. En oració enunciativa el verb separable **s'ha de partir**: l'arrel _stehe_ va a la posició 2 i el prefix _auf_ vola al final.",
           "references": ["A1a-25"]
         },
         {

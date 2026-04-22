@@ -60,7 +60,7 @@
         {
           "type": "table",
           "title": "Hores en punt amb franja del dia",
-          "headers": ["Hora oficial", "Frase informal", "Traducció"],
+          "headers": ["Hora oficial", "Oració informal", "Traducció"],
           "rows": [
             ["8:00", "_Es ist acht Uhr **morgens**._", "Són les vuit del matí."],
             ["10:00", "_Es ist zehn Uhr **vormittags**._", "Són les deu del matí (tard)."],
@@ -88,7 +88,7 @@
         {
           "type": "table",
           "title": "Mitges hores amb _halb_",
-          "headers": ["Hora", "Frase alemanya", "Traducció catalana", "Equivalent erroni que NO diem"],
+          "headers": ["Hora", "Oració alemanya", "Traducció catalana", "Equivalent erroni que NO diem"],
           "rows": [
             ["7:30", "_Es ist **halb acht**._", "Dos quarts de vuit.", "~~Es ist halb sieben~~ (això són les 6:30!)"],
             ["14:30", "_Es ist **halb drei**._", "Dos quarts de tres.", "~~halb vier~~ (això seria 15:30)"],
@@ -130,7 +130,7 @@
         {
           "type": "table",
           "title": "Quarts amb _Viertel_",
-          "headers": ["Hora", "Frase alemanya", "Traducció catalana"],
+          "headers": ["Hora", "Oració alemanya", "Traducció catalana"],
           "rows": [
             ["14:15", "_Es ist **Viertel nach zwei**._", "Un quart de tres. / Les dues i quart."],
             ["14:45", "_Es ist **Viertel vor drei**._", "Tres quarts de tres. / Les tres menys quart."],
@@ -162,7 +162,7 @@
         {
           "type": "table",
           "title": "Taula completa de 14:00 a 15:00",
-          "headers": ["Hora", "Frase alemanya", "Minuts", "Referència"],
+          "headers": ["Hora", "Oració alemanya", "Minuts", "Referència"],
           "rows": [
             ["14:00", "_Es ist zwei._ / _Es ist zwei Uhr._", "0", "hora en punt"],
             ["14:05", "_Es ist **fünf nach zwei**._", "5", "les 2 + 5"],
@@ -208,7 +208,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### L'hora formal (5): sistema 24 h\n\nEl **sistema formal** és el que trobaràs a horaris de trens, aeroports, programes de televisió, ràdio i situacions administratives. És **molt més regular** i, un cop dominat, molt més fàcil que l'informal.\n\n**Regla:**\n\n- **Números: 1–24** (i 0–59 per als minuts).\n- **_Uhr_ és obligatori** (no opcional!).\n- El patró fix és: _Es ist_ + **hora** + _**Uhr**_ + **minuts** (opcionalment + _Minuten_).\n\n> _Es ist **zwei Uhr vierzehn** (Minuten)._ → **2:14**\n> _Es ist **vierzehn Uhr vierzehn** (Minuten)._ → **14:14**\n> _Es ist **neun Uhr fünfzig**._ → **9:50**\n> _Es ist **einundzwanzig Uhr fünfzig**._ → **21:50**\n> _Es ist **siebzehn Uhr drei**._ → **17:03**\n\n**Observacions clau:**\n\n1. **_Uhr_ va entre l'hora i els minuts**, no al final: _vierzehn **Uhr** fünfzig_, no _~~vierzehn fünfzig Uhr~~_.\n2. **_Minuten_ és opcional.** Pots tancar amb _Minuten_ per claredat en contextos molt formals, però en el 90 % dels casos no cal: _Es ist neun Uhr fünfzig_ ja és perfecte.\n3. **Els números alemanys de dos dígits van \"al revés\"** (unitats abans que desenes, com vas veure a A1a-7): 21 = _ein**und**zwanzig_, 50 = _fünfzig_, 14 = _vier**zehn**. Això fa que frases llargues com _einundzwanzig Uhr fünfzig_ semblin difícils al principi, però són només càlcul rutinari.\n4. **Cap preposició:** no es diu _~~vor~~_ ni _~~nach~~_ ni _~~halb~~_ en el sistema formal. Tot són números."
+          "body": "#### L'hora formal (5): sistema 24 h\n\nEl **sistema formal** és el que trobaràs a horaris de trens, aeroports, programes de televisió, ràdio i situacions administratives. És **molt més regular** i, un cop dominat, molt més fàcil que l'informal.\n\n**Regla:**\n\n- **Números: 1–24** (i 0–59 per als minuts).\n- **_Uhr_ és obligatori** (no opcional!).\n- El patró fix és: _Es ist_ + **hora** + _**Uhr**_ + **minuts** (opcionalment + _Minuten_).\n\n> _Es ist **zwei Uhr vierzehn** (Minuten)._ → **2:14**\n> _Es ist **vierzehn Uhr vierzehn** (Minuten)._ → **14:14**\n> _Es ist **neun Uhr fünfzig**._ → **9:50**\n> _Es ist **einundzwanzig Uhr fünfzig**._ → **21:50**\n> _Es ist **siebzehn Uhr drei**._ → **17:03**\n\n**Observacions clau:**\n\n1. **_Uhr_ va entre l'hora i els minuts**, no al final: _vierzehn **Uhr** fünfzig_, no _~~vierzehn fünfzig Uhr~~_.\n2. **_Minuten_ és opcional.** Pots tancar amb _Minuten_ per claredat en contextos molt formals, però en el 90 % dels casos no cal: _Es ist neun Uhr fünfzig_ ja és perfecte.\n3. **Els números alemanys de dos dígits van \"al revés\"** (unitats abans que desenes, com vas veure a A1a-7): 21 = _ein**und**zwanzig_, 50 = _fünfzig_, 14 = _vier**zehn**. Això fa que oracions llargues com _einundzwanzig Uhr fünfzig_ semblin difícils al principi, però són només càlcul rutinari.\n4. **Cap preposició:** no es diu _~~vor~~_ ni _~~nach~~_ ni _~~halb~~_ en el sistema formal. Tot són números."
         },
         {
           "type": "callout",
@@ -260,7 +260,7 @@
           "type": "callout",
           "variant": "warning",
           "title": "Parany de majúscules",
-          "body": "Els **substantius** van amb majúscula (_der **M**orgen_, _der **A**bend_), però els **adverbis en _-s_** van amb minúscula (_morgens_, _abends_) **excepte** si obren una frase, com tot adverbi (_**M**orgens trinke ich Kaffee._). Ho has vist al tema A1a-20."
+          "body": "Els **substantius** van amb majúscula (_der **M**orgen_, _der **A**bend_), però els **adverbis en _-s_** van amb minúscula (_morgens_, _abends_) **excepte** si obren una oració, com tot adverbi (_**M**orgens trinke ich Kaffee._). Ho has vist al tema A1a-20."
         },
         {
           "type": "callout",
@@ -275,13 +275,13 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Paranys habituals\n\n**1. ==halb acht ≠ les vuit i mitja.==**\nL'error **més crític** del tema, i el més freqüent en catalanoparlants (i encara més en castellanoparlants). _halb acht_ = **7:30**, no 8:30. Pensa en _halb_ com \"**falta mitja hora per arribar a les X**\".\n\n> Incorrecte: **~~Es ist halb neun~~** per dir 9:30. (Això serien 8:30!)\n> Correcte: _Es ist **halb zehn**_ per dir 9:30. (Falta mitja hora per les 10.)\n\n**2. Confondre _vor_ i _nach_.**\n_vor_ = **abans** (l'hora encara no ha arribat). _nach_ = **després** (l'hora ja ha passat). Truc: _**n**ach_ → _**n**eben_/_**n**ext_ → cap endavant; _**v**or_ → _**v**or-_ (pre-) → cap enrere en el temps, encara falta.\n\n> Incorrecte: **~~Es ist Viertel vor zwei~~** per dir 2:15. (Això seria 1:45!)\n> Correcte: _Es ist **Viertel nach zwei**_ (2:15).\n\n**3. Fer servir _Uhr_ on no toca (i viceversa).**\n**Informal:**\n- Hora en punt: _Uhr_ **opcional** (_Es ist acht_ o _Es ist acht Uhr_).\n- Amb _halb_, _Viertel_, _vor/nach_: **sense _Uhr_**. _Es ist ~~halb acht Uhr~~_ és incorrecte.\n\n**Formal:**\n- Sempre amb _Uhr_ al mig: _Es ist neun Uhr fünfzig_. Mai _Es ist ~~neun fünfzig~~_ sol.\n\n**4. Posar preposició davant del número.**\nEn alemany no es diu _~~es ist um sieben~~_ per dir \"són les set\". _um_ només apareix amb verbs (_Ich komme **um** sieben_ = \"vinc a les set\"). Per dir l'hora sola: _Es ist sieben_, sense preposició.\n\n**5. Usar plural (com el català).**\nEl català diu _**són** les set_ (plural). L'alemany diu _**es ist** sieben_ (literalment \"és set\", singular). Tot i ser les 10, no es diu _~~sind zehn~~_ sinó **_ist zehn_**.\n\n**6. Barrejar els dos sistemes.**\nTria'n un i mantén-lo dins la mateixa frase. No es diu _~~Es ist Viertel nach vierzehn~~_ (barreja informal _Viertel_ amb número 24h _vierzehn_). Correcte: _Es ist Viertel nach zwei_ (informal) **o** _Es ist vierzehn Uhr fünfzehn_ (formal).\n\n**7. Oblidar els números alemanys al revés.**\n21:50 = _**einundzwanzig** Uhr **fünfzig**_. No _~~zwanzigeins~~_ ni similars. Repassa A1a-7 si et fallen els números.\n\n**8. Confondre _Viertel_ amb _viert-_.**\n_Viertel_ (un quart, 15 min) és **substantiu** (majúscula). _der vierte_ seria \"el quart\" (ordinal, una altra cosa). Per a l'hora només importa _Viertel_."
+          "body": "#### Paranys habituals\n\n**1. ==halb acht ≠ les vuit i mitja.==**\nL'error **més crític** del tema, i el més freqüent en catalanoparlants (i encara més en castellanoparlants). _halb acht_ = **7:30**, no 8:30. Pensa en _halb_ com \"**falta mitja hora per arribar a les X**\".\n\n> Incorrecte: **~~Es ist halb neun~~** per dir 9:30. (Això serien 8:30!)\n> Correcte: _Es ist **halb zehn**_ per dir 9:30. (Falta mitja hora per les 10.)\n\n**2. Confondre _vor_ i _nach_.**\n_vor_ = **abans** (l'hora encara no ha arribat). _nach_ = **després** (l'hora ja ha passat). Truc: _**n**ach_ → _**n**eben_/_**n**ext_ → cap endavant; _**v**or_ → _**v**or-_ (pre-) → cap enrere en el temps, encara falta.\n\n> Incorrecte: **~~Es ist Viertel vor zwei~~** per dir 2:15. (Això seria 1:45!)\n> Correcte: _Es ist **Viertel nach zwei**_ (2:15).\n\n**3. Fer servir _Uhr_ on no toca (i viceversa).**\n**Informal:**\n- Hora en punt: _Uhr_ **opcional** (_Es ist acht_ o _Es ist acht Uhr_).\n- Amb _halb_, _Viertel_, _vor/nach_: **sense _Uhr_**. _Es ist ~~halb acht Uhr~~_ és incorrecte.\n\n**Formal:**\n- Sempre amb _Uhr_ al mig: _Es ist neun Uhr fünfzig_. Mai _Es ist ~~neun fünfzig~~_ sol.\n\n**4. Posar preposició davant del número.**\nEn alemany no es diu _~~es ist um sieben~~_ per dir \"són les set\". _um_ només apareix amb verbs (_Ich komme **um** sieben_ = \"vinc a les set\"). Per dir l'hora sola: _Es ist sieben_, sense preposició.\n\n**5. Usar plural (com el català).**\nEl català diu _**són** les set_ (plural). L'alemany diu _**es ist** sieben_ (literalment \"és set\", singular). Tot i ser les 10, no es diu _~~sind zehn~~_ sinó **_ist zehn_**.\n\n**6. Barrejar els dos sistemes.**\nTria'n un i mantén-lo dins la mateixa oració. No es diu _~~Es ist Viertel nach vierzehn~~_ (barreja informal _Viertel_ amb número 24h _vierzehn_). Correcte: _Es ist Viertel nach zwei_ (informal) **o** _Es ist vierzehn Uhr fünfzehn_ (formal).\n\n**7. Oblidar els números alemanys al revés.**\n21:50 = _**einundzwanzig** Uhr **fünfzig**_. No _~~zwanzigeins~~_ ni similars. Repassa A1a-7 si et fallen els números.\n\n**8. Confondre _Viertel_ amb _viert-_.**\n_Viertel_ (un quart, 15 min) és **substantiu** (majúscula). _der vierte_ seria \"el quart\" (ordinal, una altra cosa). Per a l'hora només importa _Viertel_."
         },
         {
           "type": "callout",
           "variant": "warning",
           "title": "Resum dels paranys",
-          "body": "**(1)** _halb X_ = (X-1):30, mai \"X i mitja\". **(2)** _nach_ = després, _vor_ = abans. **(3)** _Uhr_ obligatori al formal, prohibit amb _halb/Viertel/vor/nach_. **(4)** No _um_ davant del número quan dius l'hora sola. **(5)** _es ist_ sempre en singular. **(6)** Un sistema per frase, no barrejar. **(7)** Números alemanys al revés (_einundzwanzig_). **(8)** _Viertel_ amb majúscula."
+          "body": "**(1)** _halb X_ = (X-1):30, mai \"X i mitja\". **(2)** _nach_ = després, _vor_ = abans. **(3)** _Uhr_ obligatori al formal, prohibit amb _halb/Viertel/vor/nach_. **(4)** No _um_ davant del número quan dius l'hora sola. **(5)** _es ist_ sempre en singular. **(6)** Un sistema per oració, no barrejar. **(7)** Números alemanys al revés (_einundzwanzig_). **(8)** _Viertel_ amb majúscula."
         }
       ]
     },

@@ -3,7 +3,7 @@
   "id": "A1a-18-ex-03",
   "topicId": "A1a-18",
   "title": "Inversió amb complement de temps",
-  "prompt": "Aplica la inversió: la frase comença per un complement temporal. Tria la forma correcta per a cada buit.",
+  "prompt": "Aplica la inversió: l'oració comença per un complement temporal. Tria la forma correcta per a cada buit.",
   "difficulty": 2,
   "tags": ["inversio", "posicio-verb", "complement-temps"],
   "stimulus": {

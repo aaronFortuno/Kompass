@@ -3,7 +3,7 @@
   "id": "A1b-40-ex-04",
   "topicId": "A1b-40",
   "title": "Conjuga i completa amb pronom datiu",
-  "prompt": "Construeix la frase sencera amb el verb ==conjugat== i el pronom personal en ==**datiu**==. Vigila el canvi _e → i_ de _helfen_ en 2a i 3a del singular (_du hilfst, er hilft_).",
+  "prompt": "Construeix l'oració sencera amb el verb ==conjugat== i el pronom personal en ==**datiu**==. Vigila el canvi _e → i_ de _helfen_ en 2a i 3a del singular (_du hilfst, er hilft_).",
   "difficulty": 2,
   "tags": ["verbs-datiu", "conjugacio", "produccio", "typeIn"],
   "stimulus": {

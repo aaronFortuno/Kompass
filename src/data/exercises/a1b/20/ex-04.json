@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "A1b-20-ex-04",
   "topicId": "A1b-20",
-  "title": "Fix + Wechsel a la mateixa frase",
-  "prompt": "Cada frase barreja una preposició **fixa** i una **Wechselpräposition**. Tria l'article correcte a cada buit. Identifica primer el grup de cada preposició; després, si és Wechsel, pregunta't *Wo?* o *Wohin?*.",
+  "title": "Fix + Wechsel a la mateixa oració",
+  "prompt": "Cada oració barreja una preposició **fixa** i una **Wechselpräposition**. Tria l'article correcte a cada buit. Identifica primer el grup de cada preposició; després, si és Wechsel, pregunta't *Wo?* o *Wohin?*.",
   "difficulty": 3,
   "tags": ["fix-vs-wechsel", "articles", "contrast", "avaluacio"],
   "stimulus": {

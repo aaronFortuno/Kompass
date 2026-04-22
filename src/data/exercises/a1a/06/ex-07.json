@@ -13,7 +13,7 @@
       { "id": "1", "label": "identificació indefinida (m.)" },
       { "id": "2", "label": "identificació indefinida (m.)" },
       { "id": "3", "label": "negació (m.)" },
-      { "id": "4", "label": "referència concreta, inici de frase (m.)" }
+      { "id": "4", "label": "referència concreta, inici de oració (m.)" }
     ]
   },
   "interaction": {

@@ -69,7 +69,7 @@
       "references": ["A1b-26"]
     },
     "incorrect": {
-      "default": "Tres verbs amb ==_sein_== (_aufstehen, fahren, gehen_ — canvi d'estat o moviment); la resta amb ==_haben_==. Tots els participis al final de la seva frase. _Am Samstag_, _Dann_, _Am Abend_ són complements temporals que ocupen V1; l'auxiliar queda en V2 (inversió).",
+      "default": "Tres verbs amb ==_sein_== (_aufstehen, fahren, gehen_ — canvi d'estat o moviment); la resta amb ==_haben_==. Tots els participis al final de la seva oració. _Am Samstag_, _Dann_, _Am Abend_ són complements temporals que ocupen V1; l'auxiliar queda en V2 (inversió).",
       "byResponse": [
         {
           "match": { "1a": "habe" },

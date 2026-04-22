@@ -3,7 +3,7 @@
   "id": "A1b-41-ex-01",
   "topicId": "A1b-41",
   "title": "Per què aquest datiu? Diagnòstic del motiu",
-  "prompt": "Per a cada frase, identifica la ==raó principal== per la qual l'element marcat està en datiu. Les sis opcions: **(a)** preposició fixa de datiu, **(b)** Wechsel amb _Wo?_, **(c)** objecte indirecte, **(d)** verb de datiu, **(e)** expressió idiomàtica.",
+  "prompt": "Per a cada oració, identifica la ==raó principal== per la qual l'element marcat està en datiu. Les sis opcions: **(a)** preposició fixa de datiu, **(b)** Wechsel amb _Wo?_, **(c)** objecte indirecte, **(d)** verb de datiu, **(e)** expressió idiomàtica.",
   "difficulty": 2,
   "tags": ["datiu", "diagnostic", "sintesi"],
   "stimulus": {
@@ -54,7 +54,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Reconèixer la raó del datiu és la meitat de la feina. Les ==cinc categories== (més la sisena, **pronom**, que s'hi superposa) cobreixen el ==100 %== dels casos d'A1b: **preposició fixa**, **Wechsel amb _Wo?_**, **objecte indirecte**, **verb de datiu**, **expressió idiomàtica**. Quan et surti una frase nova, passa-la pel filtre de les cinc preguntes.",
+      "message": "Reconèixer la raó del datiu és la meitat de la feina. Les ==cinc categories== (més la sisena, **pronom**, que s'hi superposa) cobreixen el ==100 %== dels casos d'A1b: **preposició fixa**, **Wechsel amb _Wo?_**, **objecte indirecte**, **verb de datiu**, **expressió idiomàtica**. Quan et surti una oració nova, passa-la pel filtre de les cinc preguntes.",
       "references": ["A1b-41"]
     },
     "incorrect": {

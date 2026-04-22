@@ -3,7 +3,7 @@
   "id": "A1b-33-ex-02",
   "topicId": "A1b-33",
   "title": "Tria el patró: acusatiu, von…bis… o seit",
-  "prompt": "Tria el patró correcte per a cada frase segons el significat: ==**acusatiu sol**== (durada nua), ==**_von… bis…_**== (interval) o ==**_seit_**== (fins ara).",
+  "prompt": "Tria el patró correcte per a cada oració segons el significat: ==**acusatiu sol**== (durada nua), ==**_von… bis…_**== (interval) o ==**_seit_**== (fins ara).",
   "difficulty": 2,
   "tags": ["wie-lange", "patrons", "acusatiu", "seit", "von-bis"],
   "stimulus": {
@@ -72,11 +72,11 @@
   },
   "feedback": {
     "correct": {
-      "message": "Excel·lent. ==**Tres patrons, tres usos**==: durada nua (acusatiu, sense preposició), interval tancat (_von… bis…_), període que continua (_seit_ + datiu). Si la frase diu \"fa X temps que\" o \"des de fa\" → _seit_. Si diu \"de X a Y\" → _von… bis…_. La resta (duració pura) → acusatiu sol.",
+      "message": "Excel·lent. ==**Tres patrons, tres usos**==: durada nua (acusatiu, sense preposició), interval tancat (_von… bis…_), període que continua (_seit_ + datiu). Si l'oració diu \"fa X temps que\" o \"des de fa\" → _seit_. Si diu \"de X a Y\" → _von… bis…_. La resta (duració pura) → acusatiu sol.",
       "references": ["A1b-33"]
     },
     "incorrect": {
-      "default": "Pregunta't què expressa la frase: **quant dura** (acusatiu sol), **de quan a quan** (_von… bis…_), o **des de fa quant i encara continua** (_seit_ + datiu).",
+      "default": "Pregunta't què expressa l'oració: **quant dura** (acusatiu sol), **de quan a quan** (_von… bis…_), o **des de fa quant i encara continua** (_seit_ + datiu).",
       "byResponse": [
         {
           "match": { "1": "seit einem Monat" },
@@ -84,7 +84,7 @@
         },
         {
           "match": { "3": "Ein Jahr" },
-          "message": "La frase vol dir \"fa un any que estudio alemany\" — acció que **continua**. Cal ==_seit_ + datiu==: _Seit einem Jahr_."
+          "message": "L'oració vol dir \"fa un any que estudio alemany\" — acció que **continua**. Cal ==_seit_ + datiu==: _Seit einem Jahr_."
         },
         {
           "match": { "4": "Januar bis März" },

@@ -22,7 +22,7 @@
           "type": "callout",
           "variant": "info",
           "title": "L'objectiu pràctic",
-          "body": "En acabar, hauries de poder descriure una imatge d'una habitació amb 5-6 frases correctes, combinant adverbis d'ubicació amb preposicions locals (la majoria, Wechsel amb datiu perquè descrius estats estàtics → *Wo?*).\n\nTemps estimat: 15-20 minuts. Lliçó curta i pràctica."
+          "body": "En acabar, hauries de poder descriure una imatge d'una habitació amb 5-6 oracions correctes, combinant adverbis d'ubicació amb preposicions locals (la majoria, Wechsel amb datiu perquè descrius estats estàtics → *Wo?*).\n\nTemps estimat: 15-20 minuts. Lliçó curta i pràctica."
         }
       ]
     },
@@ -50,7 +50,7 @@
           "type": "callout",
           "variant": "tip",
           "title": "I una posició central clau",
-          "body": "==_**in der Mitte**_== = \"al mig, al centre\". No és un adverbi pur sinó un sintagma (_in_ + _die Mitte_ → datiu fem. → _der Mitte_). Però funciona com els adverbis: respon a *Wo?* i inicia frase fàcilment."
+          "body": "==_**in der Mitte**_== = \"al mig, al centre\". No és un adverbi pur sinó un sintagma (_in_ + _die Mitte_ → datiu fem. → _der Mitte_). Però funciona com els adverbis: respon a *Wo?* i inicia oració fàcilment."
         },
         {
           "type": "callout",
@@ -61,11 +61,11 @@
       ]
     },
     {
-      "id": "estructura-de-la-frase",
+      "id": "estructura-de-la-oracio",
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Com es construeix una frase de localització\n\nLes frases de localització **comencen sovint per l'adverbi o el sintagma locatiu**, no pel subjecte. Això és molt alemany: posar la **informació espacial al davant** (posició I) i el **verb al segon lloc** (posició II, com sempre). El subjecte queda darrere del verb.\n\n**Esquema:**\n\n> ==**[Lloc] · [verb] · [subjecte] · (resta)**=="
+          "body": "#### Com es construeix una oració de localització\n\nLes oracions de localització **comencen sovint per l'adverbi o el sintagma locatiu**, no pel subjecte. Això és molt alemany: posar la **informació espacial al davant** (posició I) i el **verb al segon lloc** (posició II, com sempre). El subjecte queda darrere del verb.\n\n**Esquema:**\n\n> ==**[Lloc] · [verb] · [subjecte] · (resta)**=="
         },
         {
           "type": "table",
@@ -206,7 +206,7 @@
       ]
     },
     {
-      "id": "check-4-ordre-frase",
+      "id": "check-4-ordre-oracio",
       "blocks": [
         { "type": "exercise", "exerciseId": "A1b-22-ex-04", "variant": "assessment" }
       ]
@@ -228,7 +228,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Síntesi: tres ingredients per a tota frase de localització\n\n**1.** ==Un adverbi o sintagma locatiu al davant== (_links, rechts, oben, unten, vorn, hinten, in der Mitte_), sovint combinat amb una preposició (_links an der Wand_, _oben auf dem Schrank_).\n\n**2.** ==Un verb de posició a la segona posició== (_stehen, liegen, hängen, sitzen_), triat segons la forma/naturalesa de l'objecte. _sein_ sempre és una sortida segura però genèrica.\n\n**3.** ==Datiu, sempre==, perquè són descripcions estàtiques (*Wo?*). Les preposicions Wechsel només canvien a acusatiu si hi ha moviment direccional, cosa que aquí rarament passa."
+          "body": "#### Síntesi: tres ingredients per a tota oració de localització\n\n**1.** ==Un adverbi o sintagma locatiu al davant== (_links, rechts, oben, unten, vorn, hinten, in der Mitte_), sovint combinat amb una preposició (_links an der Wand_, _oben auf dem Schrank_).\n\n**2.** ==Un verb de posició a la segona posició== (_stehen, liegen, hängen, sitzen_), triat segons la forma/naturalesa de l'objecte. _sein_ sempre és una sortida segura però genèrica.\n\n**3.** ==Datiu, sempre==, perquè són descripcions estàtiques (*Wo?*). Les preposicions Wechsel només canvien a acusatiu si hi ha moviment direccional, cosa que aquí rarament passa."
         },
         {
           "type": "table",
@@ -252,7 +252,7 @@
           "type": "callout",
           "variant": "tip",
           "title": "Consell pràctic",
-          "body": "Fes aquesta activitat **fora de l'app**: seu a qualsevol habitació i descriu-la en veu alta amb 8-10 frases. És l'exercici més útil d'aquest tema."
+          "body": "Fes aquesta activitat **fora de l'app**: seu a qualsevol habitació i descriu-la en veu alta amb 8-10 oracions. És l'exercici més útil d'aquest tema."
         }
       ]
     }

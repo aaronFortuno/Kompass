@@ -3,7 +3,7 @@
   "id": "A1b-39-ex-04",
   "topicId": "A1b-39",
   "title": "Tradueix: verbs amb acusatiu",
-  "prompt": "Tradueix cada frase del català a l'alemany. Tots els verbs d'aquest exercici són **transitius típics** → el complement va en ==**acusatiu**==. Vigila la terminació de l'article masculí (_der → den_, _ein → einen_).",
+  "prompt": "Tradueix cada oració del català a l'alemany. Tots els verbs d'aquest exercici són **transitius típics** → el complement va en ==**acusatiu**==. Vigila la terminació de l'article masculí (_der → den_, _ein → einen_).",
   "difficulty": 2,
   "tags": ["traduccio", "acusatiu", "typeIn", "produccio", "assessment"],
   "stimulus": {

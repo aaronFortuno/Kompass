@@ -3,16 +3,16 @@
   "id": "A1b-10-ex-06",
   "topicId": "A1b-10",
   "title": "Tradueix amb un verb en -ieren",
-  "prompt": "Tradueix cada frase a l'alemany utilitzant un verb en _-ieren_ al present. Escriu la **frase sencera**.",
+  "prompt": "Tradueix cada oració a l'alemany utilitzant un verb en _-ieren_ al present. Escriu la **oració sencera**.",
   "difficulty": 3,
   "tags": ["produccio", "traduccio", "ieren", "present"],
   "stimulus": {
     "type": "textWithBlanks",
     "template": "a) \"Estudio alemany a Viena.\" _(Deutsch, Wien)_ → {{1}}\nb) \"Telefonem al meu pare.\" _(mit meinem Vater)_ → {{2}}\nc) \"El professor organitza una festa.\" _(der Lehrer, eine Party)_ → {{3}}\nd) \"Proves el pastís?\" _(du, den Kuchen)_ → {{4}}",
     "blanks": [
-      { "id": "1", "label": "frase alemanya" },
-      { "id": "2", "label": "frase alemanya" },
-      { "id": "3", "label": "frase alemanya" },
+      { "id": "1", "label": "oració alemanya" },
+      { "id": "2", "label": "oració alemanya" },
+      { "id": "3", "label": "oració alemanya" },
       { "id": "4", "label": "pregunta alemanya" }
     ]
   },

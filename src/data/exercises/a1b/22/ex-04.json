@@ -2,15 +2,15 @@
   "schemaVersion": 1,
   "id": "A1b-22-ex-04",
   "topicId": "A1b-22",
-  "title": "Ordena la frase començant pel lloc",
-  "prompt": "Ordena cada grup de paraules per formar una frase correcta que **comenci pel lloc** (posició I) i respecti ==**V2**== (verb al segon lloc, subjecte després del verb). Escriu la frase completa, amb puntuació final (_._) i majúscula inicial.",
+  "title": "Ordena l'oració començant pel lloc",
+  "prompt": "Ordena cada grup de paraules per formar una oració correcta que **comenci pel lloc** (posició I) i respecti ==**V2**== (verb al segon lloc, subjecte després del verb). Escriu l'oració completa, amb puntuació final (_._) i majúscula inicial.",
   "difficulty": 3,
   "tags": ["v2", "ordre-paraules", "sentence-order", "escriptura"],
   "stimulus": {
     "type": "textWithBlanks",
     "template": "1. **[ an der Wand · hängt · links · ein Foto ]**\n\n→ {{1}}\n\n2. **[ steht · in der Mitte · ein Tisch · des Zimmers ]**\n\n→ {{2}}\n\n3. **[ liegt · unter dem Bett · ein Koffer ]**\n\n→ {{3}}\n\n4. **[ eine Lampe · neben dem Sofa · rechts · steht ]**\n\n→ {{4}}\n\n5. **[ vor dem Fenster · ein Schreibtisch · steht ]**\n\n→ {{5}}\n\n6. **[ oben · eine Vase · auf dem Schrank · steht ]**\n\n→ {{6}}",
     "blanks": [
-      { "id": "1", "label": "1. Escriu la frase completa (comença amb 'Links...')" },
+      { "id": "1", "label": "1. Escriu l'oració completa (comença amb 'Links...')" },
       { "id": "2", "label": "2. Comença amb 'In der Mitte...'" },
       { "id": "3", "label": "3. Comença amb 'Unter dem Bett...'" },
       { "id": "4", "label": "4. Comença amb 'Rechts...'" },

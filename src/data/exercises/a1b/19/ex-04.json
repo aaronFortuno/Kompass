@@ -52,7 +52,7 @@
       "references": ["A1b-19"]
     },
     "incorrect": {
-      "default": "Parella difícil: el verb **transitiu** (*legen, stellen, setzen*) demana acusatiu perquè hi ha moviment. El verb **intransitiu** (*liegen, stehen, sitzen*) és estàtic → datiu. Frases completes: (1) *Ich **lege** das Buch **ins** Regal.* (2) *Das Buch **liegt im** Regal.* (3) *Sie **setzt** sich **auf den** Stuhl.* (4) *Sie **sitzt auf dem** Stuhl.*",
+      "default": "Parella difícil: el verb **transitiu** (*legen, stellen, setzen*) demana acusatiu perquè hi ha moviment. El verb **intransitiu** (*liegen, stehen, sitzen*) és estàtic → datiu. Oracions completes: (1) *Ich **lege** das Buch **ins** Regal.* (2) *Das Buch **liegt im** Regal.* (3) *Sie **setzt** sich **auf den** Stuhl.* (4) *Sie **sitzt auf dem** Stuhl.*",
       "byResponse": [
         {
           "match": { "1": "liege" },

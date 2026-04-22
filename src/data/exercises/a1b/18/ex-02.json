@@ -3,12 +3,12 @@
   "id": "A1b-18-ex-02",
   "topicId": "A1b-18",
   "title": "A quina pregunta respon?",
-  "prompt": "A quina pregunta respon la frase *Ich fahre nach München*?",
+  "prompt": "A quina pregunta respon l'oració *Ich fahre nach München*?",
   "difficulty": 1,
   "tags": ["wo", "woher", "wohin", "classificacio"],
   "stimulus": {
     "type": "text",
-    "content": "Llegeix la frase: *Ich fahre nach München.* A quina pregunta respon?"
+    "content": "Llegeix l'oració: *Ich fahre nach München.* A quina pregunta respon?"
   },
   "interaction": {
     "type": "singleChoice",

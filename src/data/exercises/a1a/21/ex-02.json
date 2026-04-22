@@ -3,12 +3,12 @@
   "id": "A1a-21-ex-02",
   "topicId": "A1a-21",
   "title": "Un punt o un interval?",
-  "prompt": "Tria la frase correcta en alemany per expressar un interval horari.",
+  "prompt": "Tria l'oració correcta en alemany per expressar un interval horari.",
   "difficulty": 1,
   "tags": ["preposicions", "um", "von-bis", "interval"],
   "stimulus": {
     "type": "text",
-    "content": "Quina frase és correcta per dir _'Treballo de 9 a 17'_?"
+    "content": "Quina oració és correcta per dir _'Treballo de 9 a 17'_?"
   },
   "interaction": {
     "type": "singleChoice",

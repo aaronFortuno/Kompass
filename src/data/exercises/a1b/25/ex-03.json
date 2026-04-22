@@ -3,7 +3,7 @@
   "id": "A1b-25-ex-03",
   "topicId": "A1b-25",
   "title": "Tria el modal en Präteritum segons el context",
-  "prompt": "Tria el modal en Präteritum que s'ajusta al **significat** de la frase. Recorda els matisos: _konnte_ (capacitat), _musste_ (necessitat), _wollte_ (voluntat), _sollte_ (obligació externa), _durfte_ (permís), _mochte_ (m'agradava).",
+  "prompt": "Tria el modal en Präteritum que s'ajusta al **significat** de l'oració. Recorda els matisos: _konnte_ (capacitat), _musste_ (necessitat), _wollte_ (voluntat), _sollte_ (obligació externa), _durfte_ (permís), _mochte_ (m'agradava).",
   "difficulty": 2,
   "tags": ["modals", "prateritum", "context", "tria"],
   "stimulus": {
@@ -56,7 +56,7 @@
       "byResponse": [
         {
           "match": { "1": "wollte" },
-          "message": "_wollte_ seria \"no volia\". La frase diu \"tenia massa feina\" → no era **possible**, no una qüestió de voluntat. El correcte és ==**_konnte_**==."
+          "message": "_wollte_ seria \"no volia\". L'oració diu \"tenia massa feina\" → no era **possible**, no una qüestió de voluntat. El correcte és ==**_konnte_**==."
         },
         {
           "match": { "2": "wollte" },
@@ -64,11 +64,11 @@
         },
         {
           "match": { "3": "wollten" },
-          "message": "\"_wollten_\" seria \"volíem\" (voluntat). La frase diu \"era la regla\" → obligació externa → ==**_sollten_**==."
+          "message": "\"_wollten_\" seria \"volíem\" (voluntat). L'oració diu \"era la regla\" → obligació externa → ==**_sollten_**==."
         },
         {
           "match": { "3": "konnten" },
-          "message": "\"_konnten_\" seria capacitat, però la frase parla de una **regla** imposada. Regla externa → ==**_sollten_**==."
+          "message": "\"_konnten_\" seria capacitat, però l'oració parla de una **regla** imposada. Regla externa → ==**_sollten_**==."
         },
         {
           "match": { "4": "durfte" },

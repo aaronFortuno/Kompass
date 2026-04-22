@@ -48,7 +48,7 @@
       "references": ["A1b-19"]
     },
     "incorrect": {
-      "default": "Revisa el verb de cada frase: *laufen, fahren, hängen* (transitiu) = **moviment** → acusatiu; *stehen, schlafen, liegen* = **posició** → datiu. Al (2) *am* és la contracció de *an dem*."
+      "default": "Revisa el verb de cada oració: *laufen, fahren, hängen* (transitiu) = **moviment** → acusatiu; *stehen, schlafen, liegen* = **posició** → datiu. Al (2) *am* és la contracció de *an dem*."
     }
   }
 }

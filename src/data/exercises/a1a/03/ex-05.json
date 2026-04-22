@@ -3,7 +3,7 @@
   "id": "A1a-3-ex-05",
   "topicId": "A1a-3",
   "title": "arbeiten i sprechen alhora",
-  "prompt": "Escriu la forma verbal completa que correspon a cada buit, alternant _arbeiten_ (amb _-e-_ extra) i _sprechen_ (amb canvi vocàlic). Respecta les majúscules: si el buit obre la frase, cal majúscula inicial.",
+  "prompt": "Escriu la forma verbal completa que correspon a cada buit, alternant _arbeiten_ (amb _-e-_ extra) i _sprechen_ (amb canvi vocàlic). Respecta les majúscules: si el buit obre l'oració, cal majúscula inicial.",
   "difficulty": 3,
   "tags": ["integration", "arbeiten", "sprechen", "varianten"],
   "stimulus": {
@@ -13,7 +13,7 @@
       { "id": "1", "label": "_arbeiten_, 2a pl." },
       { "id": "2", "label": "_arbeiten_, 1a pl." },
       { "id": "3", "label": "_arbeiten_, 3a sg." },
-      { "id": "4", "label": "_sprechen_, 2a sg., inici de frase" },
+      { "id": "4", "label": "_sprechen_, 2a sg., inici de oració" },
       { "id": "5", "label": "_sprechen_, 1a sg." },
       { "id": "6", "label": "_sprechen_, 3a sg." }
     ]
@@ -47,7 +47,7 @@
       "message": "Molt bé. Has integrat les dues variants alhora: _arbeiten_ manté la _-e-_ extra a _ihr arbeitet_ i _sie arbeitet_, i _sprechen_ canvia _e → i_ a _du sprichst_ i _sie spricht_, però no a _ich spreche_."
     },
     "incorrect": {
-      "default": "Recorda: _arbeiten_ demana _-e-_ extra a _du, er/sie/es, ihr_ (_arbeitest, arbeitet, arbeitet_). _sprechen_ canvia a _spricht/sprichst_ només a _du_ i _er/sie/es_; a _ich_ es queda _spreche_. A inici de frase, el verb comença amb majúscula (**Sprichst**)."
+      "default": "Recorda: _arbeiten_ demana _-e-_ extra a _du, er/sie/es, ihr_ (_arbeitest, arbeitet, arbeitet_). _sprechen_ canvia a _spricht/sprichst_ només a _du_ i _er/sie/es_; a _ich_ es queda _spreche_. A inici de oració, el verb comença amb majúscula (**Sprichst**)."
     }
   }
 }

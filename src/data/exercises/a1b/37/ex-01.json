@@ -3,7 +3,7 @@
   "id": "A1b-37-ex-01",
   "topicId": "A1b-37",
   "title": "Identifica el cas del pronom",
-  "prompt": "Per a cada frase, indica si el pronom marcat està en ==**nominatiu**==, ==**acusatiu**== o ==**datiu**==.",
+  "prompt": "Per a cada oració, indica si el pronom marcat està en ==**nominatiu**==, ==**acusatiu**== o ==**datiu**==.",
   "difficulty": 1,
   "tags": ["pronoms", "cas", "identificacio"],
   "stimulus": {

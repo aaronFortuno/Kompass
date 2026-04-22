@@ -3,14 +3,14 @@
   "id": "A1a-33-ex-06",
   "topicId": "A1a-33",
   "title": "Traducció: ordinals, dates i declinació",
-  "prompt": "Tradueix cada frase a l'alemany combinant ordinals, dates i declinació acusativa.",
+  "prompt": "Tradueix cada oració a l'alemany combinant ordinals, dates i declinació acusativa.",
   "difficulty": 3,
   "tags": ["ordinalzahlen", "dates", "declinacio", "typein", "assessment"],
   "stimulus": {
     "type": "textWithBlanks",
     "template": "Avui és el 7 de març. (_März_) →\n{{1}}\n\nLlegeixo el segon llibre. (_das Buch_, _ich lese_) →\n{{2}}\n\nAgafo el primer tren. (_der Zug_, _ich nehme_) →\n{{3}}\n\nEl tercer dia és dimecres. (_der Tag_, _Mittwoch_) →\n{{4}}",
     "blanks": [
-      { "id": "1", "label": "frase amb data" },
+      { "id": "1", "label": "oració amb data" },
       { "id": "2", "label": "acusatiu neutre" },
       { "id": "3", "label": "acusatiu masculí" },
       { "id": "4", "label": "nominatiu masculí" }

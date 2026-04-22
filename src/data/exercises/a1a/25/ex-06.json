@@ -13,7 +13,7 @@
   "interaction": {
     "type": "trueFalse",
     "statements": [
-      { "id": "s1", "text": "El verb _aufstehen_ és separable: el prefix _auf_ se'n va al final de la frase." },
+      { "id": "s1", "text": "El verb _aufstehen_ és separable: el prefix _auf_ se'n va al final de l'oració." },
       { "id": "s2", "text": "El verb _verstehen_ també és separable: podem dir _Ich stehe das ver_." },
       { "id": "s3", "text": "En els verbs separables, l'accent tònic cau sempre al prefix: _==AUS==gehen_, _==AN==rufen_." },
       { "id": "s4", "text": "El prefix d'un verb separable s'ha de conjugar segons el subjecte: _ich aufe_, _du aufst_." }

@@ -3,7 +3,7 @@
   "id": "A1a-20-ex-02",
   "topicId": "A1a-20",
   "title": "heute, morgen, morgens",
-  "prompt": "Escriu l'adverbi adequat segons la pista en català. Les frases comencen per l'adverbi, així que van en majúscula.",
+  "prompt": "Escriu l'adverbi adequat segons la pista en català. Les oracions comencen per l'adverbi, així que van en majúscula.",
   "difficulty": 1,
   "tags": ["adverbis", "moment", "morgen", "morgens"],
   "stimulus": {
@@ -35,10 +35,10 @@
   },
   "feedback": {
     "correct": {
-      "message": "Perfecte. Has distingit els tres: _Heute_ (avui), _Morgen_ (demà, un dia concret) i _Morgens_ (al matí, com a rutina). Nota la majúscula inicial: tots tres van al principi de frase, així que s'escriuen amb majúscula."
+      "message": "Perfecte. Has distingit els tres: _Heute_ (avui), _Morgen_ (demà, un dia concret) i _Morgens_ (al matí, com a rutina). Nota la majúscula inicial: tots tres van al principi de oració, així que s'escriuen amb majúscula."
     },
     "incorrect": {
-      "default": "Recorda: _heute_ = avui; _morgen_ (sense _-s_) = demà; _morgens_ (amb _-s_) = al matí habitualment. Al principi de frase s'escriuen amb majúscula, i el verb sempre va darrere (regla V2)."
+      "default": "Recorda: _heute_ = avui; _morgen_ (sense _-s_) = demà; _morgens_ (amb _-s_) = al matí habitualment. Al principi de oració s'escriuen amb majúscula, i el verb sempre va darrere (regla V2)."
     }
   }
 }

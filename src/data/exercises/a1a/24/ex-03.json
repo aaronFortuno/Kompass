@@ -8,7 +8,7 @@
   "tags": ["noch", "continuitat", "quick-check"],
   "stimulus": {
     "type": "text",
-    "content": "_Es ist 23 Uhr und mein Sohn arbeitet \\_\\_\\_ am Computer._\n\nQuin adverbi completa la frase per indicar que segueix treballant?"
+    "content": "_Es ist 23 Uhr und mein Sohn arbeitet \\_\\_\\_ am Computer._\n\nQuin adverbi completa l'oració per indicar que segueix treballant?"
   },
   "interaction": {
     "type": "singleChoice",
@@ -27,7 +27,7 @@
       "message": "Exacte. L'acció (treballar) **continua** passades les 23 h, i això en alemany es marca amb **_noch_** (encara)."
     },
     "incorrect": {
-      "default": "La frase diu que el fill **segueix treballant**. Per expressar continuïtat, la paraula és **_noch_** (encara). _schon_ marcaria un fet ja assolit i _erst_ una durada percebuda com poca, que no és el cas."
+      "default": "L'oració diu que el fill **segueix treballant**. Per expressar continuïtat, la paraula és **_noch_** (encara). _schon_ marcaria un fet ja assolit i _erst_ una durada percebuda com poca, que no és el cas."
     }
   }
 }

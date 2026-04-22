@@ -16,13 +16,13 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Què és una _Ergänzung_?\n\n==Ergänzung== vol dir literalment \"complement\" o \"allò que completa\". En gramàtica alemanya designa els elements que el verb **necessita** per formar una frase sencera, més enllà del subjecte. En una frase com _Ich kaufe ein Buch_ hi ha un subjecte (_ich_), un verb (_kaufen_) i un complement (_ein Buch_). La majoria dels verbs necessiten complements: de vegades un, de vegades diversos.\n\nLa idea central és aquesta:\n\n> ==És el verb qui determina com són els complements.== No triem el cas del complement \"pel sentit de la frase\"; el cas el ==dicta el verb==.\n\nAixò és una diferència important respecte del català, on normalment **la preposició** marca la funció (_penso **en** tu_, _escric **a** la Maria_). En alemany, moltes funcions es marquen ==amb el cas directament==, sense preposició, i és el verb qui decideix quin."
+          "body": "#### Què és una _Ergänzung_?\n\n==Ergänzung== vol dir literalment \"complement\" o \"allò que completa\". En gramàtica alemanya designa els elements que el verb **necessita** per formar una oració sencera, més enllà del subjecte. En una oració com _Ich kaufe ein Buch_ hi ha un subjecte (_ich_), un verb (_kaufen_) i un complement (_ein Buch_). La majoria dels verbs necessiten complements: de vegades un, de vegades diversos.\n\nLa idea central és aquesta:\n\n> ==És el verb qui determina com són els complements.== No triem el cas del complement \"pel sentit de l'oració\"; el cas el ==dicta el verb==.\n\nAixò és una diferència important respecte del català, on normalment **la preposició** marca la funció (_penso **en** tu_, _escric **a** la Maria_). En alemany, moltes funcions es marquen ==amb el cas directament==, sense preposició, i és el verb qui decideix quin."
         },
         {
           "type": "callout",
           "variant": "tip",
           "title": "Analogia útil",
-          "body": "Pensa en el verb com si fos una ==enxufadora== amb un nombre i un tipus d'entrades fixes. _Leben_ té zero entrades obligatòries: _Ich lebe_ ja és frase completa. _Kaufen_ té una entrada d'acusatiu: cal dir què compres. _Schenken_ té dues entrades: acusatiu (el regal) i datiu (el destinatari). No pots endollar un cable de datiu a una entrada d'acusatiu: no funcionarà."
+          "body": "Pensa en el verb com si fos una ==enxufadora== amb un nombre i un tipus d'entrades fixes. _Leben_ té zero entrades obligatòries: _Ich lebe_ ja és oració completa. _Kaufen_ té una entrada d'acusatiu: cal dir què compres. _Schenken_ té dues entrades: acusatiu (el regal) i datiu (el destinatari). No pots endollar un cable de datiu a una entrada d'acusatiu: no funcionarà."
         },
         {
           "type": "callout",
@@ -37,7 +37,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Quants complements demana un verb?\n\nUn verb alemany pot tenir **zero, un o diversos** complements. Aquesta és la primera classificació:\n\n**==Sense complement== (_keine Ergänzung_)** — alguns verbs són autosuficients:\n\n- _==Ich lebe.==_ — Visc. (el verb sol ja fa frase)\n- _==Ich lese.==_ — Llegeixo. (sense especificar què)\n- _==Ich schlafe.==_ — Dormo.\n- _==Es regnet.==_ — Plou.\n\n**==Amb un complement== (_eine Ergänzung_)** — la majoria dels verbs:\n\n- _Ich lebe ==in Köln==._ — Visc a Colònia. (complement preposicional)\n- _Ich lese ==ein Buch==._ — Llegeixo un llibre. (acusatiu)\n- _Ich kaufe ==ein Buch==._ — Compro un llibre. (acusatiu)\n- _Die Suppe schmeckt ==mir==._ — La sopa em plau. (datiu)\n\n**==Amb dos complements== (_zwei Ergänzungen_)** — verbs més complexos:\n\n- _Ich lebe ==mit meiner Familie== ==in einem Haus==._ — Visc amb la meva família en una casa.\n- _Ich schenke ==dir== ==ein Buch==._ — Et regalo un llibre. (datiu + acusatiu)"
+          "body": "#### Quants complements demana un verb?\n\nUn verb alemany pot tenir **zero, un o diversos** complements. Aquesta és la primera classificació:\n\n**==Sense complement== (_keine Ergänzung_)** — alguns verbs són autosuficients:\n\n- _==Ich lebe.==_ — Visc. (el verb sol ja fa oració)\n- _==Ich lese.==_ — Llegeixo. (sense especificar què)\n- _==Ich schlafe.==_ — Dormo.\n- _==Es regnet.==_ — Plou.\n\n**==Amb un complement== (_eine Ergänzung_)** — la majoria dels verbs:\n\n- _Ich lebe ==in Köln==._ — Visc a Colònia. (complement preposicional)\n- _Ich lese ==ein Buch==._ — Llegeixo un llibre. (acusatiu)\n- _Ich kaufe ==ein Buch==._ — Compro un llibre. (acusatiu)\n- _Die Suppe schmeckt ==mir==._ — La sopa em plau. (datiu)\n\n**==Amb dos complements== (_zwei Ergänzungen_)** — verbs més complexos:\n\n- _Ich lebe ==mit meiner Familie== ==in einem Haus==._ — Visc amb la meva família en una casa.\n- _Ich schenke ==dir== ==ein Buch==._ — Et regalo un llibre. (datiu + acusatiu)"
         },
         {
           "type": "callout",
@@ -83,7 +83,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Una precisió important: el subjecte no és una _Ergänzung_\n\nSi mires bé la classificació, hi ha un detall subtil: ==el subjecte (nominatiu) no es compta com a complement==. El subjecte és obligatori a gairebé totes les frases alemanyes (regla de la posició V2, A1b-30), però no forma part del \"règim\" del verb en el sentit estret.\n\nQuan diem \"verb sense complement\" volem dir ==sense complement més enllà del subjecte==. El verb _leben_ demana només un subjecte, i prou. El verb _kaufen_ demana subjecte **+ un acusatiu**. El verb _schenken_ demana subjecte **+ acusatiu + datiu**."
+          "body": "#### Una precisió important: el subjecte no és una _Ergänzung_\n\nSi mires bé la classificació, hi ha un detall subtil: ==el subjecte (nominatiu) no es compta com a complement==. El subjecte és obligatori a gairebé totes les oracions alemanyes (regla de la posició V2, A1b-30), però no forma part del \"règim\" del verb en el sentit estret.\n\nQuan diem \"verb sense complement\" volem dir ==sense complement més enllà del subjecte==. El verb _leben_ demana només un subjecte, i prou. El verb _kaufen_ demana subjecte **+ un acusatiu**. El verb _schenken_ demana subjecte **+ acusatiu + datiu**."
         },
         {
           "type": "table",
@@ -101,8 +101,8 @@
         {
           "type": "callout",
           "variant": "info",
-          "title": "Excepció menor: frases impersonals",
-          "body": "Hi ha un grapat de frases alemanyes **sense subjecte explícit**: ==frases impersonals== com _==Mir== ist kalt_ (\"tinc fred\", lit. \"a mi és fred\") o _==Mich== friert_ (\"em glaço\"). Aquí el datiu o l'acusatiu fa la feina del subjecte psicològic, però gramaticalment el subjecte és un _es_ implícit. Les trobaràs sobretot amb verbs de sensacions. De moment, reconeix el patró; no cal que el produeixis."
+          "title": "Excepció menor: oracions impersonals",
+          "body": "Hi ha un grapat de oracions alemanyes **sense subjecte explícit**: ==oracions impersonals== com _==Mir== ist kalt_ (\"tinc fred\", lit. \"a mi és fred\") o _==Mich== friert_ (\"em glaço\"). Aquí el datiu o l'acusatiu fa la feina del subjecte psicològic, però gramaticalment el subjecte és un _es_ implícit. Les trobaràs sobretot amb verbs de sensacions. De moment, reconeix el patró; no cal que el produeixis."
         }
       ]
     },
@@ -138,7 +138,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Per què costa als catalanoparlants\n\nEn català, les funcions sintàctiques es marquen amb ==preposicions== o amb la ==posició== a la frase:\n\n- _Llegeixo un llibre._ (OD sense preposició, reconegut per la posició)\n- _Ajudo **a la** Maria._ (OI amb _a_)\n- _Penso **en** tu._ (complement preposicional amb _en_)\n\nEn alemany, moltes d'aquestes funcions es marquen **sense preposició**, directament amb el **cas** del substantiu/pronom:\n\n- _Ich lese ==ein Buch==._ (acusatiu, sense preposició)\n- _Ich helfe ==Maria==._ (datiu, sense preposició)\n- _Ich denke ==an dich==._ (preposició _an_ + acusatiu)\n\n**Els tres paranys típics:**\n\n**1. \"Traduir preposicions\" en lloc d'aprendre valències.** El calc _~~Ich helfe zu Maria~~_ (per \"_ajudo a la Maria_\") és error garantit. _Helfen_ demana ==datiu directe==, sense preposició.\n\n**2. Confondre acusatiu i datiu en verbs de \"donar\".** En català dius _Et dono el llibre_, amb dos clítics (_et_ = OI, _el_ = OD). En alemany és _==Ich gebe dir (Dat) das Buch (Akk).==_ L'ordre típic al Mittelfeld és ==datiu abans d'acusatiu== quan tots dos són substantius/pronoms sense èmfasi.\n\n**3. Oblidar que alguns verbs exigeixen preposició per valència, no per sentit lliure.** _Warten_ (esperar) no és _~~Ich warte dich~~_ ni _~~Ich warte dir~~_: és _==Ich warte auf dich.==_ La preposició _auf_ és ==part del verb==, com si fos _warten-auf_."
+          "body": "#### Per què costa als catalanoparlants\n\nEn català, les funcions sintàctiques es marquen amb ==preposicions== o amb la ==posició== a l'oració:\n\n- _Llegeixo un llibre._ (OD sense preposició, reconegut per la posició)\n- _Ajudo **a la** Maria._ (OI amb _a_)\n- _Penso **en** tu._ (complement preposicional amb _en_)\n\nEn alemany, moltes d'aquestes funcions es marquen **sense preposició**, directament amb el **cas** del substantiu/pronom:\n\n- _Ich lese ==ein Buch==._ (acusatiu, sense preposició)\n- _Ich helfe ==Maria==._ (datiu, sense preposició)\n- _Ich denke ==an dich==._ (preposició _an_ + acusatiu)\n\n**Els tres paranys típics:**\n\n**1. \"Traduir preposicions\" en lloc d'aprendre valències.** El calc _~~Ich helfe zu Maria~~_ (per \"_ajudo a la Maria_\") és error garantit. _Helfen_ demana ==datiu directe==, sense preposició.\n\n**2. Confondre acusatiu i datiu en verbs de \"donar\".** En català dius _Et dono el llibre_, amb dos clítics (_et_ = OI, _el_ = OD). En alemany és _==Ich gebe dir (Dat) das Buch (Akk).==_ L'ordre típic al Mittelfeld és ==datiu abans d'acusatiu== quan tots dos són substantius/pronoms sense èmfasi.\n\n**3. Oblidar que alguns verbs exigeixen preposició per valència, no per sentit lliure.** _Warten_ (esperar) no és _~~Ich warte dich~~_ ni _~~Ich warte dir~~_: és _==Ich warte auf dich.==_ La preposició _auf_ és ==part del verb==, com si fos _warten-auf_."
         },
         {
           "type": "callout",
@@ -158,7 +158,7 @@
         {
           "type": "table",
           "title": "38.3 Verbs amb atribut en nominatiu",
-          "headers": ["Verb", "Traducció", "Frase model"],
+          "headers": ["Verb", "Traducció", "Oració model"],
           "rows": [
             ["_sein_", "ser/estar", "_Ich ==bin== müde._ (atribut)"],
             ["_werden_", "fer-se/esdevenir", "_Er ==wird== Lehrer._ (atribut)"]
@@ -171,7 +171,7 @@
         {
           "type": "table",
           "title": "38.4 Verbs amb acusatiu",
-          "headers": ["Verb", "Traducció", "Frase model"],
+          "headers": ["Verb", "Traducció", "Oració model"],
           "rows": [
             ["_haben_", "tenir", "_Ich habe ==einen Bruder==._"],
             ["_hören_", "sentir/escoltar", "_Ich höre ==Musik==._"],
@@ -203,7 +203,7 @@
         {
           "type": "table",
           "title": "38.5 Verbs amb datiu",
-          "headers": ["Verb", "Traducció", "Frase model"],
+          "headers": ["Verb", "Traducció", "Oració model"],
           "rows": [
             ["_helfen_", "ajudar", "_Ich helfe ==dir==._"],
             ["_fehlen_", "faltar/trobar a faltar", "_Du fehlst ==mir==._"],
@@ -229,7 +229,7 @@
         {
           "type": "table",
           "title": "38.6 Verbs amb datiu + acusatiu",
-          "headers": ["Verb", "Traducció", "Frase model"],
+          "headers": ["Verb", "Traducció", "Oració model"],
           "rows": [
             ["_schenken_", "regalar", "_Ich schenke ==dir== ==ein Buch==._"],
             ["_zeigen_", "mostrar", "_Ich zeige ==dir== ==das Foto==._"],
@@ -258,7 +258,7 @@
         {
           "type": "table",
           "title": "38.7 Verbs amb preposició fixa",
-          "headers": ["Verb", "Preposició + cas", "Frase model"],
+          "headers": ["Verb", "Preposició + cas", "Oració model"],
           "rows": [
             ["_arbeiten_", "_bei_ + Dat / _als_ + nom.", "_Ich arbeite ==bei Siemens== / ==als Lehrer==._"],
             ["_wohnen_", "_in_ + Dat", "_Ich wohne ==in Berlin==._"],
@@ -329,7 +329,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Síntesi\n\n**La idea d'aquesta lliçó, en una frase:**\n\n> ==Cada verb alemany dicta quins complements (Ergänzungen) necessita i en quin cas van.=="
+          "body": "#### Síntesi\n\n**La idea d'aquesta lliçó, en una oració:**\n\n> ==Cada verb alemany dicta quins complements (Ergänzungen) necessita i en quin cas van.=="
         },
         {
           "type": "table",
@@ -349,7 +349,7 @@
           "headers": ["Regla", "Contingut"],
           "rows": [
             ["**1. Verb + valència = unitat**", "Aprèn cada verb amb la seva valència com a unitat: no _helfen_, sinó _helfen +Dat_; no _warten_, sinó _warten auf +Akk_."],
-            ["**2. El cas el dicta el verb**", "No la \"lògica\" de la frase. _Lesen_ → acusatiu. _Helfen_ → datiu. Sense excepció."],
+            ["**2. El cas el dicta el verb**", "No la \"lògica\" de l'oració. _Lesen_ → acusatiu. _Helfen_ → datiu. Sense excepció."],
             ["**3. El subjecte no és Ergänzung**", "Un verb \"sense complement\" en demana **un subjecte** i prou."],
             ["**4. La preposició és part del verb**", "Quan el verb la regeix lexicalitzada (_warten auf, denken an, sprechen mit_). Memoritza el tàndem."]
           ]

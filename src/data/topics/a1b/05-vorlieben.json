@@ -25,7 +25,7 @@
         },
         {
           "type": "explanation",
-          "body": "Al final tindràs un repertori ampliat amb què poder dir coses com _Mir gefällt der Dom, aber ich möchte ins Museum. Auf keinen Fall in die Kirche, die interessiert mich nicht_. Cinc matisos en dues frases: això és el nivell que busquem."
+          "body": "Al final tindràs un repertori ampliat amb què poder dir coses com _Mir gefällt der Dom, aber ich möchte ins Museum. Auf keinen Fall in die Kirche, die interessiert mich nicht_. Cinc matisos en dues oracions: això és el nivell que busquem."
         }
       ]
     },
@@ -185,13 +185,13 @@
         },
         {
           "type": "explanation",
-          "body": "**Posició a la frase:**\n\nAquestes tres expressions són **flexibles**. Poden anar:\n\n- **A l'inici** de la frase (amb inversió verb-subjecte, perquè el verb es manté en segona posició): _**Auf keinen Fall** gehe ich._ → _auf keinen Fall_ ocupa la posició 1, _gehe_ la 2, _ich_ la 3.\n- **Enmig de la frase**, típicament darrere del verb conjugat: _Ich gehe **auf keinen Fall**._, _Ich möchte **unbedingt** den Dom sehen._\n\nA l'A1 pots posicionar-les on et sigui més natural; totes dues posicions són correctes."
+          "body": "**Posició a l'oració:**\n\nAquestes tres expressions són **flexibles**. Poden anar:\n\n- **A l'inici** de l'oració (amb inversió verb-subjecte, perquè el verb es manté en segona posició): _**Auf keinen Fall** gehe ich._ → _auf keinen Fall_ ocupa la posició 1, _gehe_ la 2, _ich_ la 3.\n- **Enmig de l'oració**, típicament darrere del verb conjugat: _Ich gehe **auf keinen Fall**._, _Ich möchte **unbedingt** den Dom sehen._\n\nA l'A1 pots posicionar-les on et sigui més natural; totes dues posicions són correctes."
         },
         {
           "type": "callout",
           "variant": "example",
           "title": "Combinable amb tot",
-          "body": "Aquestes expressions combinen amb **qualsevol** dels verbs del tema. _Mir gefällt **auf jeden Fall** der Dom_. _Ich möchte **unbedingt** ins Kino gehen_. _**Auf keinen Fall** interessiert mich Fußball_. És justament la seva utilitat: afegir intensitat a qualsevol frase de preferència."
+          "body": "Aquestes expressions combinen amb **qualsevol** dels verbs del tema. _Mir gefällt **auf jeden Fall** der Dom_. _Ich möchte **unbedingt** ins Kino gehen_. _**Auf keinen Fall** interessiert mich Fußball_. És justament la seva utilitat: afegir intensitat a qualsevol oració de preferència."
         }
       ]
     },
@@ -211,7 +211,7 @@
         {
           "type": "table",
           "title": "5.4 Correcte vs incorrecte",
-          "headers": ["Frase catalana", "Alemany correcte", "Alemany incorrecte"],
+          "headers": ["Oració catalana", "Alemany correcte", "Alemany incorrecte"],
           "rows": [
             ["_A mi m'agrada el Dom_", "**Mir** gefällt der Dom.", "\\*_Mich gefällt der Dom._"],
             ["_A mi m'interessa el Dom_", "**Mich** interessiert der Dom.", "\\*_Mir interessiert der Dom._"],
@@ -227,7 +227,7 @@
         },
         {
           "type": "explanation",
-          "body": "Una altra manera d'aprendre-ho, si et va millor, és memoritzar les **dues frases plantilla** i usar-les com a model per totes les altres:\n\n> _**Mir** gefällt der Dom._ (datiu)\n> _**Mich** interessiert der Dom._ (acusatiu)\n\nRecorda també que amb **tots dos verbs**, el **verb concorda amb el que agrada/interessa**, mai amb la persona:\n\n> _**Mir** gefäll**t** der Dom._ (singular) · _**Mir** gefall**en** die Museen._ (plural)\n> _**Mich** interessier**t** der Dom._ (singular) · _**Mich** interessier**en** die Museen._ (plural)"
+          "body": "Una altra manera d'aprendre-ho, si et va millor, és memoritzar les **dues oracions plantilla** i usar-les com a model per totes les altres:\n\n> _**Mir** gefällt der Dom._ (datiu)\n> _**Mich** interessiert der Dom._ (acusatiu)\n\nRecorda també que amb **tots dos verbs**, el **verb concorda amb el que agrada/interessa**, mai amb la persona:\n\n> _**Mir** gefäll**t** der Dom._ (singular) · _**Mir** gefall**en** die Museen._ (plural)\n> _**Mich** interessier**t** der Dom._ (singular) · _**Mich** interessier**en** die Museen._ (plural)"
         }
       ]
     },
@@ -242,7 +242,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Paranys habituals\n\n**1. Usar _mich_ amb _gefallen_ (o _mir_ amb _interessieren_).**\nL'error més freqüent i el més important d'evitar. És \\*_**Mich** gefällt der Dom_ i \\*_**Mir** interessiert der Dom_. El correcte és **_Mir gefällt_** i **_Mich interessiert_**. Memoritza les dues plantilles com un bloc tancat.\n\n**2. Fer concordar _gefallen / interessieren_ amb la persona en comptes del subjecte.**\nCalc del català: \\*_Mir gefalle der Dom_ (pensant que _ich_ és el subjecte i per tant el verb ha d'anar en primera persona). No: el subjecte és _der Dom_, i el verb concorda amb ell: _Mir **gefällt** der Dom_ (3a persona singular). Amb plural: _Mir **gefallen** die Museen_ (3a persona plural).\n\n**3. Confondre _mögen_ i _möchten_.**\nSón el mateix verb en dues formes i registres diferents. _Ich mag Kaffee_ = gust general, estable. _Ich möchte einen Kaffee_ = desig ara i aquí, cortès. Al bar **sempre _möchten_**, mai _mögen_. _Ich mag einen Kaffee_ sona com un diagnòstic metafísic, no com una comanda.\n\n**4. Dir _Ich bin neugierig für_ calcant el català \"tinc curiositat per\".**\nLa preposició correcta és **_auf_** + **acusatiu**: _Ich bin neugierig **auf** die Stadt_. Ni _für_ ni _von_ ni _über_. _Auf_ i prou, i amb acusatiu (_auf die Stadt_, no _auf der Stadt_).\n\n**5. Posar _auf jeden Fall / auf keinen Fall_ al mig en posició incorrecta.**\nAquestes expressions són flexibles, però hi ha dues posicions naturals: al principi (_Auf keinen Fall gehe ich..._) o just darrere del verb conjugat (_Ich gehe auf keinen Fall..._). Evita posar-les entre el subjecte i el verb (\\*_Ich auf keinen Fall gehe_), que violaria la regla del verb en segona posició.\n\n**6. Conjugar _unbedingt_ com si fos un adjectiu.**\n_Unbedingt_ és un **adverbi invariable**. No té plural, ni gènere, ni declinació. No diguis \\*_unbedingte_ ni \\*_unbedingten_: només _unbedingt_, tal qual.\n\n**7. Traduir _möchten_ + infinitiu al revés (infinitiu al principi).**\nCom a verb modal, _möchten_ envia l'infinitiu **al final** de la frase (Satzklammer, A1a-18). \\*_Ich möchte sehen den Dom_ és incorrecte; el correcte és _Ich möchte den Dom **sehen**_. L'infinitiu tanca la frase.\n\n**8. Oblidar que _gefallen_ i _interessieren_ poden anar en plural.**\nSi el que agrada/interessa és plural, **el verb també ha d'anar en plural**: _Mir **gefallen** die Museen_, _Mich **interessieren** die Bilder_. És un error fàcil de cometre perquè l'estructura ja és contraintuïtiva per al catalanoparlant."
+          "body": "#### Paranys habituals\n\n**1. Usar _mich_ amb _gefallen_ (o _mir_ amb _interessieren_).**\nL'error més freqüent i el més important d'evitar. És \\*_**Mich** gefällt der Dom_ i \\*_**Mir** interessiert der Dom_. El correcte és **_Mir gefällt_** i **_Mich interessiert_**. Memoritza les dues plantilles com un bloc tancat.\n\n**2. Fer concordar _gefallen / interessieren_ amb la persona en comptes del subjecte.**\nCalc del català: \\*_Mir gefalle der Dom_ (pensant que _ich_ és el subjecte i per tant el verb ha d'anar en primera persona). No: el subjecte és _der Dom_, i el verb concorda amb ell: _Mir **gefällt** der Dom_ (3a persona singular). Amb plural: _Mir **gefallen** die Museen_ (3a persona plural).\n\n**3. Confondre _mögen_ i _möchten_.**\nSón el mateix verb en dues formes i registres diferents. _Ich mag Kaffee_ = gust general, estable. _Ich möchte einen Kaffee_ = desig ara i aquí, cortès. Al bar **sempre _möchten_**, mai _mögen_. _Ich mag einen Kaffee_ sona com un diagnòstic metafísic, no com una comanda.\n\n**4. Dir _Ich bin neugierig für_ calcant el català \"tinc curiositat per\".**\nLa preposició correcta és **_auf_** + **acusatiu**: _Ich bin neugierig **auf** die Stadt_. Ni _für_ ni _von_ ni _über_. _Auf_ i prou, i amb acusatiu (_auf die Stadt_, no _auf der Stadt_).\n\n**5. Posar _auf jeden Fall / auf keinen Fall_ al mig en posició incorrecta.**\nAquestes expressions són flexibles, però hi ha dues posicions naturals: al principi (_Auf keinen Fall gehe ich..._) o just darrere del verb conjugat (_Ich gehe auf keinen Fall..._). Evita posar-les entre el subjecte i el verb (\\*_Ich auf keinen Fall gehe_), que violaria la regla del verb en segona posició.\n\n**6. Conjugar _unbedingt_ com si fos un adjectiu.**\n_Unbedingt_ és un **adverbi invariable**. No té plural, ni gènere, ni declinació. No diguis \\*_unbedingte_ ni \\*_unbedingten_: només _unbedingt_, tal qual.\n\n**7. Traduir _möchten_ + infinitiu al revés (infinitiu al principi).**\nCom a verb modal, _möchten_ envia l'infinitiu **al final** de l'oració (Satzklammer, A1a-18). \\*_Ich möchte sehen den Dom_ és incorrecte; el correcte és _Ich möchte den Dom **sehen**_. L'infinitiu tanca l'oració.\n\n**8. Oblidar que _gefallen_ i _interessieren_ poden anar en plural.**\nSi el que agrada/interessa és plural, **el verb també ha d'anar en plural**: _Mir **gefallen** die Museen_, _Mich **interessieren** die Bilder_. És un error fàcil de cometre perquè l'estructura ja és contraintuïtiva per al catalanoparlant."
         }
       ]
     },
@@ -293,7 +293,7 @@
           "type": "callout",
           "variant": "example",
           "title": "Prova de producció natural",
-          "body": "Descriu un viatge imaginari a Alemanya fent servir totes cinc construccions en cinc frases encadenades. Per exemple: _Ich möchte unbedingt nach Berlin fahren. Mir gefällt die Stadt auf jeden Fall. Mich interessiert besonders die Geschichte. Ich bin neugierig auf die Museen. Auf keinen Fall gehe ich zum Fußballspiel, Fußball mag ich nicht._ Cinc frases, cinc matisos, un paisatge expressiu complet."
+          "body": "Descriu un viatge imaginari a Alemanya fent servir totes cinc construccions en cinc oracions encadenades. Per exemple: _Ich möchte unbedingt nach Berlin fahren. Mir gefällt die Stadt auf jeden Fall. Mich interessiert besonders die Geschichte. Ich bin neugierig auf die Museen. Auf keinen Fall gehe ich zum Fußballspiel, Fußball mag ich nicht._ Cinc oracions, cinc matisos, un paisatge expressiu complet."
         },
         {
           "type": "table",

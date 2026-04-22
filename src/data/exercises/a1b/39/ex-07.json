@@ -3,7 +3,7 @@
   "id": "A1b-39-ex-07",
   "topicId": "A1b-39",
   "title": "Corregeix el cas",
-  "prompt": "Cada frase té un **error de cas**. Tria la forma correcta del mot ressaltat perquè la frase compleixi el règim del verb. Identifica primer si el verb demana ==acusatiu==, ==datiu== o ==dat. + akk.==, i després tria la terminació.",
+  "prompt": "Cada oració té un **error de cas**. Tria la forma correcta del mot ressaltat perquè l'oració compleixi el règim del verb. Identifica primer si el verb demana ==acusatiu==, ==datiu== o ==dat. + akk.==, i després tria la terminació.",
   "difficulty": 3,
   "tags": ["correccio-errors", "casos", "assessment"],
   "stimulus": {

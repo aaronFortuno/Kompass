@@ -3,7 +3,7 @@
   "id": "A1b-31-ex-08",
   "topicId": "A1b-31",
   "title": "Completa amb el grup temporal correcte",
-  "prompt": "Completa cada frase amb el **grup temporal** (preposició + substantiu) que encaixa amb la pista entre parèntesis. Respecta el cas (datiu o acusatiu) i les terminacions de plural (_-n_ a _Jahren, Tagen, Monaten_).",
+  "prompt": "Completa cada oració amb el **grup temporal** (preposició + substantiu) que encaixa amb la pista entre parèntesis. Respecta el cas (datiu o acusatiu) i les terminacions de plural (_-n_ a _Jahren, Tagen, Monaten_).",
   "difficulty": 3,
   "tags": ["produccio", "type-in", "cas", "sintesi"],
   "stimulus": {

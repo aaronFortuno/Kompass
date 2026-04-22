@@ -3,7 +3,7 @@
   "id": "A1b-22-ex-01",
   "topicId": "A1b-22",
   "title": "Tria l'adverbi espacial",
-  "prompt": "Llegeix la descripció en català i completa la frase alemanya triant l'**adverbi** (o la preposició locativa) que hi correspon. Tots els buits responen a *Wo?* → no hi ha canvi de cas, només has de triar la paraula correcta.",
+  "prompt": "Llegeix la descripció en català i completa l'oració alemanya triant l'**adverbi** (o la preposició locativa) que hi correspon. Tots els buits responen a *Wo?* → no hi ha canvi de cas, només has de triar la paraula correcta.",
   "difficulty": 1,
   "tags": ["adverbis-espacials", "wo", "links-rechts", "oben-unten", "draussen"],
   "stimulus": {
@@ -15,7 +15,7 @@
       { "id": "3", "label": "3. al mig" },
       { "id": "4", "label": "4. davant de" },
       { "id": "5", "label": "5. darrere de" },
-      { "id": "6", "label": "6. a fora (frase inicial)" }
+      { "id": "6", "label": "6. a fora (oració inicial)" }
     ]
   },
   "interaction": {

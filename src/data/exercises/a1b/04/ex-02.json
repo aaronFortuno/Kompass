@@ -3,12 +3,12 @@
   "id": "A1b-4-ex-02",
   "topicId": "A1b-4",
   "title": "Posició o moviment: _im_ vs _nach_",
-  "prompt": "Tria la frase correcta per expressar \"Viatgem cap al nord\".",
+  "prompt": "Tria l'oració correcta per expressar \"Viatgem cap al nord\".",
   "difficulty": 1,
   "tags": ["himmelsrichtungen", "im", "nach", "posicio-moviment", "singlechoice", "quick-check"],
   "stimulus": {
     "type": "text",
-    "content": "Tria la frase correcta per a: **\"Viatgem cap al nord.\"**"
+    "content": "Tria l'oració correcta per a: **\"Viatgem cap al nord.\"**"
   },
   "interaction": {
     "type": "singleChoice",

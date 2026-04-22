@@ -19,7 +19,7 @@
       { "id": "7", "label": "7. _haben_, _du_" },
       { "id": "8", "label": "8. _haben_, _ich_" },
       { "id": "9", "label": "9. _sein_, _sie_ (ella)" },
-      { "id": "10", "label": "10. _sein_, _ihr_ (a l'inici de frase, amb majúscula)" }
+      { "id": "10", "label": "10. _sein_, _ihr_ (a l'inici de oració, amb majúscula)" }
     ]
   },
   "interaction": {
@@ -104,7 +104,7 @@
         },
         {
           "match": { "10": "wart ihr" },
-          "message": "Escriu **només el verb** al buit: ==**_Wart_**==. _ihr_ ja ve donat a la frase."
+          "message": "Escriu **només el verb** al buit: ==**_Wart_**==. _ihr_ ja ve donat a l'oració."
         }
       ]
     }

@@ -3,7 +3,7 @@
   "id": "A1b-31-ex-07",
   "topicId": "A1b-31",
   "title": "Troba l'error",
-  "prompt": "Per a cada frase, indica de quin **tipus d'error** es tracta: ==(a) preposició incorrecta==, ==(b) ordre incorrecte==, o ==(c) correcta==.",
+  "prompt": "Per a cada oració, indica de quin **tipus d'error** es tracta: ==(a) preposició incorrecta==, ==(b) ordre incorrecte==, o ==(c) correcta==.",
   "difficulty": 3,
   "tags": ["error-spotting", "diagnostic", "sintesi"],
   "stimulus": {
@@ -42,7 +42,7 @@
   },
   "feedback": {
     "correct": {
-      "message": "Perfecte. Els **tres errors més freqüents**: (1) triar _am_ on toca _im_ o viceversa, (2) confondre _seit_ i _vor_, (3) oblidar la inversió V2 quan el complement temporal obre la frase. Les correccions: 1 → _==am== Montag_; 2 → _==Im== Januar_; 3 → _==seit== zwei Jahren_ (durada fins ara); 4 → _==am Montag nach Berlin==_ (temps abans de lloc); 5 → _Um acht Uhr ==komme ich==_ (inversió).",
+      "message": "Perfecte. Els **tres errors més freqüents**: (1) triar _am_ on toca _im_ o viceversa, (2) confondre _seit_ i _vor_, (3) oblidar la inversió V2 quan el complement temporal obre l'oració. Les correccions: 1 → _==am== Montag_; 2 → _==Im== Januar_; 3 → _==seit== zwei Jahren_ (durada fins ara); 4 → _==am Montag nach Berlin==_ (temps abans de lloc); 5 → _Um acht Uhr ==komme ich==_ (inversió).",
       "references": ["A1b-31", "A1b-34", "A1b-30"]
     },
     "incorrect": {

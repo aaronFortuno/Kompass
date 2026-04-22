@@ -3,7 +3,7 @@
   "id": "A1a-30-ex-04",
   "topicId": "A1a-30",
   "title": "Negació amb _kein_ després de _es gibt_",
-  "prompt": "Transforma cada frase afirmativa en negativa amb _kein_ en acusatiu. Escriu la frase sencera, p. ex.: _Es gibt keinen Tisch._",
+  "prompt": "Transforma cada oració afirmativa en negativa amb _kein_ en acusatiu. Escriu l'oració sencera, p. ex.: _Es gibt keinen Tisch._",
   "difficulty": 2,
   "tags": ["es-gibt", "kein", "negacio", "acusatiu", "assessment"],
   "stimulus": {
