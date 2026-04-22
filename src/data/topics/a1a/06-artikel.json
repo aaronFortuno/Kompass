@@ -14,7 +14,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Context i motivació\n\nCada cop que dius **el gat**, **un gat** o **cap gat** en català estàs fent servir un article. Els articles són aquelles paraules petites que van davant del nom i que diuen si en parlem de manera concreta (\"el gat que tinc a casa\"), de manera general (\"un gat qualsevol\") o si no n'hi ha (\"cap gat\"). En alemany passa igual, però amb una peça addicional: l'article no només marca si parlem de \"el\" o \"un\", sinó que també porta **informació de gènere** (masculí, femení o neutre) i **de funció a l'oració** (subjecte, complement directe...).\n\nEn aquest tema aprendràs:\n\n- Els **articles determinats** (_der bestimmte Artikel_): **der, die, das, die**. Equivalen al català \"el / la / els / les\".\n- Els **articles indeterminats** (_der unbestimmte Artikel_): **ein, eine, ein**. Equivalen al català \"un / una\".\n- L'**article negatiu** (_der Negativartikel_): **kein, keine, kein, keine**. No té equivalent directe al català: és la forma unificada per dir \"cap\" o \"no … un/una\".\n\nAquí ens centrem només en la forma **en nominatiu**, és a dir, quan el substantiu fa de **subjecte** de l'oració (_qui fa l'acció_, _de qui diem que és una cosa_). Els altres casos (acusatiu, datiu, genitiu) els treballaràs més endavant."
+          "body": "#### Context i motivació\n\nCada cop que dius **el gat**, **un gat** o **cap gat** en català estàs fent servir un article. Els articles són aquelles paraules petites que van davant del nom i que diuen si en parlem de manera concreta (\"el gat que tinc a casa\"), de manera general (\"un gat qualsevol\") o si no n'hi ha (\"cap gat\"). En alemany passa igual, però amb una peça addicional: l'article no només marca si parlem de \"el\" o \"un\", sinó que també porta **informació de gènere** (masculí, femení o neutre) i **de funció a l'oració** (subjecte, complement directe...).\n\nEn aquest tema aprendràs:\n\n- Els **articles determinats** (_der bestimmte Artikel_): **!!der, die, das, die!!**. Equivalen al català \"el / la / els / les\".\n- Els **articles indeterminats** (_der unbestimmte Artikel_): **!!ein, eine, ein!!**. Equivalen al català \"un / una\".\n- L'**article negatiu** (_der Negativartikel_): **!!kein, keine, kein, keine!!**. No té equivalent directe al català: és la forma unificada per dir \"cap\" o \"no … un/una\".\n\nAquí ens centrem només en la forma **en nominatiu**, és a dir, quan el substantiu fa de **subjecte** de l'oració (_qui fa l'acció_, _de qui diem que és una cosa_). Els altres casos (acusatiu, datiu, genitiu) els treballaràs més endavant."
         },
         {
           "type": "callout",
@@ -35,7 +35,7 @@
           "type": "callout",
           "variant": "tip",
           "title": "Com reconèixer el subjecte",
-          "body": "És qui fa l'acció o de qui es diu alguna cosa. A \"**El noi** menja una poma\", el noi és el subjecte. A \"**Die Frau** wohnt in Berlin\" (La dona viu a Berlín), _die Frau_ és el subjecte → nominatiu."
+          "body": "És qui fa l'acció o de qui es diu alguna cosa. A \"**El noi** menja una poma\", el noi és el subjecte. A \"**!!Die Frau wohnt in Berlin.!!**\" (La dona viu a Berlín), _!!die Frau!!_ és el subjecte → nominatiu."
         }
       ]
     },
@@ -50,21 +50,21 @@
           "type": "table",
           "headers": ["Gènere", "Article", "Exemple", "Traducció"],
           "rows": [
-            ["Masculí", "**der**", "_der Mann_", "l'home"],
-            ["Femení", "**die**", "_die Frau_", "la dona"],
-            ["Neutre", "**das**", "_das Kind_", "el nen / la criatura"],
-            ["Plural", "**die**", "_die Kinder_", "els nens / les criatures"]
+            ["Masculí", "!!**der**!!", "_!!der Mann!!_", "l'home"],
+            ["Femení", "!!**die**!!", "_!!die Frau!!_", "la dona"],
+            ["Neutre", "!!**das**!!", "_!!das Kind!!_", "el nen / la criatura"],
+            ["Plural", "!!**die**!!", "_!!die Kinder!!_", "els nens / les criatures"]
           ]
         },
         {
           "type": "explanation",
-          "body": "Observa tres coses importants:\n\n- El plural fa servir **die** per a tots els gèneres. En plural, el gènere original del substantiu deixa de marcar-se a l'article: _der Mann_ → _die Männer_, _die Frau_ → _die Frauen_, _das Kind_ → _die Kinder_. Tots tres plurals porten _die_.\n- _die_ apareix dues vegades a la taula (femení singular i plural). Com ho distingim? Pel **substantiu** que acompanya i pel **verb**: _die Frau ist_ (la dona és) vs _die Frauen sind_ (les dones són).\n- El gènere alemany **no coincideix sempre amb el català**. _Das Mädchen_ (la noia) és **neutre** en alemany, tot i referir-se a una persona femenina. Per això cal aprendre cada substantiu **amb el seu article** des del dia u: no _Mädchen_, sinó _das Mädchen_."
+          "body": "Observa tres coses importants:\n\n- El plural fa servir **die** per a tots els gèneres. En plural, el gènere original del substantiu deixa de marcar-se a l'article: _!!der Mann!!_ → _!!die Männer!!_, _!!die Frau!!_ → _!!die Frauen!!_, _!!das Kind!!_ → _!!die Kinder!!_. Tots tres plurals porten _die_.\n- _die_ apareix dues vegades a la taula (femení singular i plural). Com ho distingim? Pel **substantiu** que acompanya i pel **verb**: _!!die Frau ist!!_ (la dona és) vs _!!die Frauen sind!!_ (les dones són).\n- El gènere alemany **no coincideix sempre amb el català**. _!!Das Mädchen!!_ (la noia) és **neutre** en alemany, tot i referir-se a una persona femenina. Per això cal aprendre cada substantiu **amb el seu article** des del dia u: no _Mädchen_, sinó _das Mädchen_."
         },
         {
           "type": "callout",
           "variant": "example",
           "title": "Exemples en context",
-          "body": "**Der Mann heißt Thomas.** (L'home es diu Thomas.)\n\n**Die Frau wohnt in Hamburg.** (La dona viu a Hamburg.)\n\n**Das Buch ist neu.** (El llibre és nou.)\n\n**Die Kinder sind müde.** (Els nens estan cansats.)"
+          "body": "**!!Der Mann heißt Thomas.!!** (L'home es diu Thomas.)\n\n**!!Die Frau wohnt in Hamburg.!!** (La dona viu a Hamburg.)\n\n**!!Das Buch ist neu.!!** (El llibre és nou.)\n\n**!!Die Kinder sind müde.!!** (Els nens estan cansats.)"
         }
       ]
     },
@@ -85,10 +85,10 @@
           "type": "table",
           "headers": ["Gènere", "Article", "Exemple", "Traducció"],
           "rows": [
-            ["Masculí", "**ein**", "_ein Mann_", "un home"],
-            ["Femení", "**eine**", "_eine Frau_", "una dona"],
-            ["Neutre", "**ein**", "_ein Kind_", "un nen / una criatura"],
-            ["Plural", "**—**", "_Kinder_", "(uns) nens"]
+            ["Masculí", "!!**ein**!!", "_!!ein Mann!!_", "un home"],
+            ["Femení", "!!**eine**!!", "_!!eine Frau!!_", "una dona"],
+            ["Neutre", "!!**ein**!!", "_!!ein Kind!!_", "un nen / una criatura"],
+            ["Plural", "**—**", "_!!Kinder!!_", "(uns) nens"]
           ]
         },
         {
@@ -99,7 +99,7 @@
           "type": "callout",
           "variant": "example",
           "title": "Exemples",
-          "body": "**Ein Mann steht da.** (Un home és allà.)\n\n**Eine Frau kommt.** (Una dona ve.)\n\n**Ein Kind weint.** (Un nen plora.)"
+          "body": "**!!Ein Mann steht da.!!** (Un home és allà.)\n\n**!!Eine Frau kommt.!!** (Una dona ve.)\n\n**!!Ein Kind weint.!!** (Un nen plora.)"
         },
         {
           "type": "explanation",
@@ -109,7 +109,7 @@
           "type": "callout",
           "variant": "example",
           "title": "Primera menció vs referència",
-          "body": "**Da ist ein Mann. Der Mann heißt Peter.**\n\n(Allà hi ha un home. L'home es diu Peter.) → Al primer cop, _ein_: el presentem. Al segon cop, _der_: ja és \"aquell home concret\"."
+          "body": "**!!Da ist ein Mann. Der Mann heißt Peter.!!**\n\n(Allà hi ha un home. L'home es diu Peter.) → Al primer cop, _ein_: el presentem. Al segon cop, _der_: ja és \"aquell home concret\"."
         }
       ]
     },
@@ -130,10 +130,10 @@
           "type": "table",
           "headers": ["Gènere", "Article", "Exemple", "Traducció"],
           "rows": [
-            ["Masculí", "**kein**", "_kein Mann_", "cap home / no … un home"],
-            ["Femení", "**keine**", "_keine Frau_", "cap dona / no … una dona"],
-            ["Neutre", "**kein**", "_kein Kind_", "cap nen"],
-            ["Plural", "**keine**", "_keine Kinder_", "cap nen / no … nens"]
+            ["Masculí", "!!**kein**!!", "_!!kein Mann!!_", "cap home / no … un home"],
+            ["Femení", "!!**keine**!!", "_!!keine Frau!!_", "cap dona / no … una dona"],
+            ["Neutre", "!!**kein**!!", "_!!kein Kind!!_", "cap nen"],
+            ["Plural", "!!**keine**!!", "_!!keine Kinder!!_", "cap nen / no … nens"]
           ]
         },
         {
@@ -154,7 +154,7 @@
           "type": "callout",
           "variant": "example",
           "title": "Afirmació → negació",
-          "body": "**Ich habe ==ein==en Hund.** → **Ich habe ==kein==en Hund.** (_En acusatiu, però la lògica és la mateixa._)\n\n**Ich habe ==Kinder==.** → **Ich habe ==keine== Kinder.**\n\n**Das ist ==ein== Buch.** → **Das ist ==kein== Buch.** (Això no és un llibre.)"
+          "body": "**!!Ich habe ==ein==en Hund.!!** → **!!Ich habe ==kein==en Hund.!!** (_En acusatiu, però la lògica és la mateixa._)\n\n**!!Ich habe ==Kinder==.!!** → **!!Ich habe ==keine== Kinder.!!**\n\n**!!Das ist ==ein== Buch.!!** → **!!Das ist ==kein== Buch.!!** (Això no és un llibre.)"
         },
         {
           "type": "explanation",
@@ -164,7 +164,7 @@
           "type": "callout",
           "variant": "example",
           "title": "Kein vs nicht",
-          "body": "**Das ist kein Buch.** (Això no és un llibre — negant _ein Buch_.)\n\n**Das ist nicht das Buch.** (Això no és el llibre — negant _das Buch_, un concret.)"
+          "body": "**!!Das ist kein Buch.!!** (Això no és un llibre — negant _ein Buch_.)\n\n**!!Das ist nicht das Buch.!!** (Això no és el llibre — negant _das Buch_, un concret.)"
         }
       ]
     },
@@ -208,7 +208,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Paranys habituals\n\nAquests són els errors típics que fan els catalanoparlants en aquest tema.\n\n**1. Traduir el gènere del català.**\n_La lluna_ en català és femení, però _der Mond_ és **masculí** en alemany. _El sol_ és masculí en català, però _die Sonne_ és **femení**. _La nena_ és femení en català, però _das Mädchen_ és **neutre** en alemany. No et fiïs mai del català per endevinar el gènere alemany.\n\n> Incorrecte: **die Mond**.\n> Correcte: **der Mond**.\n\n**2. Confondre _die_ femení singular amb _die_ plural.**\nSón idèntics en forma, però el verb els distingeix sempre.\n\n> **Die Frau ist hier.** (La dona és aquí — singular.)\n> **Die Frauen sind hier.** (Les dones són aquí — plural.)\n\n**3. Oblidar que masculí i neutre comparteixen _ein_.**\nCom que a l'article determinat sí que es distingeixen (_der_ vs _das_), és fàcil voler fer-ho també amb l'indeterminat. Però no: _ein Mann_ i _ein Kind_ porten exactament el mateix article.\n\n**4. Fer servir _kein_ amb article determinat.**\n_Kein_ només nega substantius amb article indeterminat o sense article. Si vols negar una cosa concreta (amb _der/die/das_) o pròpia (amb _mein, dein_…), has de fer servir **_nicht_**.\n\n> Incorrecte: **Das ist kein der Mann.**\n> Correcte: **Das ist nicht der Mann.** (Aquell no és l'home.)\n\n**5. Posar article indeterminat en plural.**\nEn alemany, com en català, no hi ha article indeterminat en plural. Si vols dir \"uns nens\", dius simplement **Kinder**, sense article. _Ein_ no té forma plural, així com tampoc diem \"uns\" d'alguna manera.\n\n> Incorrecte: **Das sind eine Kinder.**\n> Correcte: **Das sind Kinder.** (Aquests són nens.) o **Das sind keine Kinder.** (Aquests no són nens.)\n\n**6. Oblidar la majúscula al substantiu.**\nSigui quin sigui l'article (_der, ein, kein_...), el substantiu que segueix sempre va amb **majúscula inicial**.\n\n> Incorrecte: **der mann, eine frau, kein buch**.\n> Correcte: **der Mann, eine Frau, kein Buch**.\n\n**7. Pensar que l'article canvia el gènere del substantiu.**\nL'article **reflecteix** el gènere del substantiu; no el canvia. _Der Mann_ és masculí perquè _Mann_ ho és. _Das Mädchen_ no és \"masculí o neutre segons et vingui de gust\": sempre és neutre, perquè _Mädchen_ ho és."
+          "body": "#### Paranys habituals\n\nAquests són els errors típics que fan els catalanoparlants en aquest tema.\n\n**1. Traduir el gènere del català.**\n_La lluna_ en català és femení, però _!!der Mond!!_ és **masculí** en alemany. _El sol_ és masculí en català, però _!!die Sonne!!_ és **femení**. _La nena_ és femení en català, però _!!das Mädchen!!_ és **neutre** en alemany. No et fiïs mai del català per endevinar el gènere alemany.\n\n> Incorrecte: **!!die Mond!!**.\n> Correcte: **!!der Mond!!**.\n\n**2. Confondre _die_ femení singular amb _die_ plural.**\nSón idèntics en forma, però el verb els distingeix sempre.\n\n> **!!Die Frau ist hier.!!** (La dona és aquí — singular.)\n> **!!Die Frauen sind hier.!!** (Les dones són aquí — plural.)\n\n**3. Oblidar que masculí i neutre comparteixen _ein_.**\nCom que a l'article determinat sí que es distingeixen (_der_ vs _das_), és fàcil voler fer-ho també amb l'indeterminat. Però no: _!!ein Mann!!_ i _!!ein Kind!!_ porten exactament el mateix article.\n\n**4. Fer servir _kein_ amb article determinat.**\n_Kein_ només nega substantius amb article indeterminat o sense article. Si vols negar una cosa concreta (amb _der/die/das_) o pròpia (amb _mein, dein_…), has de fer servir **_nicht_**.\n\n> Incorrecte: **!!Das ist kein der Mann.!!**\n> Correcte: **!!Das ist nicht der Mann.!!** (Aquell no és l'home.)\n\n**5. Posar article indeterminat en plural.**\nEn alemany, com en català, no hi ha article indeterminat en plural. Si vols dir \"uns nens\", dius simplement **Kinder**, sense article. _Ein_ no té forma plural, així com tampoc diem \"uns\" d'alguna manera.\n\n> Incorrecte: **!!Das sind eine Kinder.!!**\n> Correcte: **!!Das sind Kinder.!!** (Aquests són nens.) o **!!Das sind keine Kinder.!!** (Aquests no són nens.)\n\n**6. Oblidar la majúscula al substantiu.**\nSigui quin sigui l'article (_der, ein, kein_...), el substantiu que segueix sempre va amb **majúscula inicial**.\n\n> Incorrecte: **!!der mann, eine frau, kein buch!!**.\n> Correcte: **!!der Mann, eine Frau, kein Buch!!**.\n\n**7. Pensar que l'article canvia el gènere del substantiu.**\nL'article **reflecteix** el gènere del substantiu; no el canvia. _!!Der Mann!!_ és masculí perquè _Mann_ ho és. _!!Das Mädchen!!_ no és \"masculí o neutre segons et vingui de gust\": sempre és neutre, perquè _Mädchen_ ho és."
         }
       ]
     },
