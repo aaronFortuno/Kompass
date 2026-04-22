@@ -25,7 +25,10 @@ import {
 } from '@/lib/reader/beatTransitions.js';
 import { parseInline, stripRichMarkers } from '@/lib/reader/parseInline.js';
 import { Typed } from '@/components/reader/Typed.jsx';
-import { SpeakableText } from '@/components/reader/SpeakableText.jsx';
+import {
+  SpeakableText,
+  markNextSpeakableClickProgrammatic,
+} from '@/components/reader/SpeakableText.jsx';
 import { ReaderSettingsDrawer } from '@/components/reader/ReaderSettingsDrawer.jsx';
 import { ReaderExerciseEngine } from '@/components/reader/ReaderExerciseEngine.jsx';
 import { ReaderEntrySplash } from '@/components/reader/ReaderEntrySplash.jsx';
@@ -188,6 +191,10 @@ function useBeatAutoPlaySequence(containerRef, shouldStart, gapMs = 400) {
       await wait(250);
       for (let i = 0; i < pills.length; i++) {
         if (cancelled) return;
+        // Marquem el click com a programàtic perquè el listener global
+        // de 'kompass:speakable-activated' al FocusReader no ens pausi
+        // l'autoplay timer.
+        markNextSpeakableClickProgrammatic();
         pills[i].click();
         await waitForEnded();
         if (cancelled) return;
@@ -528,6 +535,8 @@ function ExampleBeat({
     const pills = containerRef.current?.querySelectorAll('.kf-speak');
     const pill = pills && pills[idx];
     if (!pill) return;
+    // Click programàtic — el listener del reader no pausarà l'autoplay.
+    markNextSpeakableClickProgrammatic();
     pill.click();
     await new Promise((resolve) => {
       let done = false;
@@ -1657,11 +1666,13 @@ export function FocusReader({ topic }) {
   }, [stepIdx, beatIdx]);
 
   // Si l'usuari clica un pill audible (dispara kompass:speakable-activated),
-  // pausem l'autoplay — té sentit: està intentant llegir/escoltar en lloc
-  // d'avançar. Abans l'usuari havia de fer clic al pill + un altre clic a
-  // la interfície perquè es detectés com a "pause global".
+  // pausem l'autoplay — està intentant llegir/escoltar en lloc d'avançar.
+  // IMPORTANT: ignorem els clicks disparats per l'orquestrador d'autoplay
+  // (detail.programmatic === true); si no, l'autoplay es pausaria a si
+  // mateix just quan fa sonar el primer pill i el timer mai avança.
   useEffect(() => {
-    const onSpeak = () => {
+    const onSpeak = (e) => {
+      if (e && e.detail && e.detail.programmatic) return;
       if (settings.autoPlay) setAutoPlayPaused(true);
     };
     window.addEventListener('kompass:speakable-activated', onSpeak);

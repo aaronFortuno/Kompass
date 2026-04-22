@@ -9,6 +9,7 @@ import {
   X,
   ArrowRight,
   Compass,
+  ChevronDown,
 } from 'lucide-react';
 import { useT } from '@/i18n';
 import { useProgressStore } from '@/store/useProgressStore.js';
@@ -18,7 +19,6 @@ import {
   getTopicsByLevel,
   getTopic,
 } from '@/lib/dataLoader.js';
-import { computeTopicProgress } from '@/lib/topicProgress.js';
 import {
   serializeProgress,
   deserializeProgress,
@@ -28,11 +28,28 @@ import {
 import pkg from '../../package.json';
 
 /*
- * Pàgina /progres · ARCHITECTURE §15 (MVP) + §17 (tokens) + DATA-MODEL §3.5 i §3.7.
- * Dues meitats: (1) visualització honesta del progrés acumulat i (2) accions
- * de backup (export/import/reset), preservant la lògica existent intacta.
- * Tota la visualització deriva del store (topics + exercises) i de
- * `computeTopicProgress` — no hi ha càlculs nous rellevants que no visquin ja a lib/.
+ * Pàgina /progres v2 · ARCHITECTURE §15 (MVP) + §17 (tokens) + DATA-MODEL §3.5 i §3.7.
+ *
+ * Tres blocs verticals:
+ *   (1) Resum editorial (Stats globals) — igual que v1.
+ *   (2) "Entre les mans" — top 3 de temes en curs (col·lapsat si n=0).
+ *   (3) Navegador tot-el-temari amb filtre per estat i nivells col·lapsables.
+ *   (4) Accions de backup (export/import/reset) — igual que v1.
+ *
+ * Decisions de càlcul (problema #1 de la v1):
+ *   - Ignorem `lastVisitedAt` (no existeix al store). L'ordenació "en curs"
+ *     passa a ser per `visitedStepIds.length` descendent, i després id asc.
+ *   - "En curs" = visitedStepIds.length > 0 && !allDone.
+ *   - "Per consolidar" = topic amb algun exercici amb lastAttemptCorrect=false.
+ *   - "Completat" = allDone (tots els exercicis amb lastAttemptCorrect=true).
+ *   - "No començat" = cap visita.
+ *
+ * Nota: `computeTopicProgress` (lib/topicProgress.js) encara no suporta el
+ * format ric de steps (`kind: "exercise"` amb `exerciseId` pla). Aquesta
+ * pàgina usa un helper local `collectExerciseIdsForTopic` que sí el cobreix,
+ * perquè els temes migrats (A1a-1, A1a-2) apareguin amb progrés real. Quan
+ * es corregeixi topicProgress.js (afecta també TopicsIndexPage), aquest
+ * helper local es pot eliminar.
  */
 
 const APP_VERSION = pkg.version ?? '0.0.1';
@@ -71,8 +88,6 @@ function daysSince(iso) {
   return Math.floor(diffMs / 86_400_000);
 }
 
-/* Format humà per al stat "darrera activitat". Retorna un string pel value
- * del Stat: "Avui", "Ahir" o "Fa N dies". Em / si no hi ha dada. */
 function formatLastActivity(t, days) {
   if (days == null) return '—';
   if (days === 0) return t('progress.summary.today');
@@ -80,79 +95,78 @@ function formatLastActivity(t, days) {
   return t('progress.summary.daysAgo', { count: days });
 }
 
-/* Format humà pel stat "des que vas començar". */
 function formatJourney(t, days) {
   if (days == null) return '—';
   if (days === 0) return t('progress.summary.journeyToday');
   return t('progress.summary.journeyDays', { count: days });
 }
 
-/* Compta blocs d'exercici del corpus, per mostrar "X / Y" al resum. */
-function countTotalExercises(topics) {
-  let n = 0;
-  for (const topic of topics) {
-    for (const step of topic.steps ?? []) {
-      for (const block of step.blocks ?? []) {
-        if (block?.type === 'exercise' && block.exerciseId) n += 1;
-      }
-    }
-  }
-  return n;
-}
-
-/* Llista d'exerciseIds referenciats per un tema (en ordre d'aparició). */
-function collectExerciseIds(topic) {
+/* Recull exerciseIds d'un topic cobrint els dos formats de steps:
+ *  - Llegat: step.blocks[] amb type === 'exercise'.
+ *  - Ric: step.kind === 'exercise' amb exerciseId pla.
+ */
+function collectExerciseIdsForTopic(topic) {
   const ids = [];
   for (const step of topic?.steps ?? []) {
+    if (step?.kind === 'exercise' && step.exerciseId) {
+      ids.push(step.exerciseId);
+      continue;
+    }
     for (const block of step?.blocks ?? []) {
-      if (block?.type === 'exercise' && block.exerciseId) ids.push(block.exerciseId);
+      if (block?.type === 'exercise' && block.exerciseId) {
+        ids.push(block.exerciseId);
+      }
     }
   }
   return ids;
 }
 
-/* Clau d'ordenació d'un topic: el camp més recent disponible al store.
- * `lastVisitedAt` és futur-compatible; avui només hi ha `firstVisitedAt`. */
-function topicSortKey(entry) {
-  return entry?.lastVisitedAt || entry?.firstVisitedAt || '';
+/* Compta tots els blocs/steps d'exercici del corpus, per al stat "X / Y". */
+function countTotalExercises(topics) {
+  let n = 0;
+  for (const topic of topics) n += collectExerciseIdsForTopic(topic).length;
+  return n;
 }
 
-/* Temes "en curs": visitats però no completats, ordenats recent → antic. */
-function deriveInProgressTopics(topicsProgress, exercisesState, max) {
-  const enriched = [];
-  for (const [topicId, entry] of Object.entries(topicsProgress ?? {})) {
-    const topic = getTopic(topicId);
-    if (!topic) continue;
-    if ((entry?.visitedStepIds?.length ?? 0) === 0) continue;
-    const progress = computeTopicProgress(topic, exercisesState);
-    if (progress.allDone) continue;
-    enriched.push({ topic, entry, progress, sortKey: topicSortKey(entry) });
+/* Estat sintètic d'un topic donat el seu progrés. Retorna suficient
+ * metadata per a render + filtratge. */
+function deriveTopicState(topic, topicsProgress, exercisesState) {
+  const entry = topicsProgress?.[topic.id] ?? null;
+  const visitedCount = entry?.visitedStepIds?.length ?? 0;
+  const ids = collectExerciseIdsForTopic(topic);
+  const totalEx = ids.length;
+  let completedEx = 0;
+  let failedEx = 0;
+  for (const id of ids) {
+    const ex = exercisesState?.[id];
+    if (ex?.lastAttemptCorrect === true) completedEx += 1;
+    else if (ex?.lastAttemptCorrect === false) failedEx += 1;
   }
-  enriched.sort((a, b) => (a.sortKey > b.sortKey ? -1 : a.sortKey < b.sortKey ? 1 : 0));
-  return enriched.slice(0, max);
-}
+  const allDone = totalEx > 0 && completedEx === totalEx;
+  const pct = totalEx === 0 ? null : Math.round((completedEx / totalEx) * 100);
 
-/* Temes a repassar: els que tenen algun exercici amb lastAttemptCorrect === false. */
-function deriveReviewTopics(topicsProgress, exercisesState, max) {
-  const list = [];
-  for (const [topicId, entry] of Object.entries(topicsProgress ?? {})) {
-    const topic = getTopic(topicId);
-    if (!topic) continue;
-    let pending = 0;
-    for (const id of collectExerciseIds(topic)) {
-      if (exercisesState?.[id]?.lastAttemptCorrect === false) pending += 1;
-    }
-    if (pending === 0) continue;
-    list.push({ topic, pending, sortKey: topicSortKey(entry) });
-  }
-  list.sort((a, b) => (a.sortKey > b.sortKey ? -1 : a.sortKey < b.sortKey ? 1 : 0));
-  return list.slice(0, max);
+  // status per filtre. Ordre de precedència:
+  //   completed > review > inProgress > notStarted
+  let status = 'notStarted';
+  if (allDone) status = 'completed';
+  else if (failedEx > 0) status = 'review';
+  else if (visitedCount > 0) status = 'inProgress';
+
+  return {
+    topic,
+    status,
+    visitedCount,
+    totalSteps: topic.steps?.length ?? 0,
+    totalEx,
+    completedEx,
+    failedEx,
+    pct,
+    allDone,
+  };
 }
 
 // ─── Subcomponents editorials ───────────────────────────────────────────
 
-/* Encapçalament de secció (mono uppercase tracking-wide), mateix patró
- * que SectionHeading de settings/controls però autònom aquí. */
 function SectionHeading({ children, id }) {
   return (
     <h2
@@ -164,8 +178,6 @@ function SectionHeading({ children, id }) {
   );
 }
 
-/* Stat gran: nombre + denominador + label + peu opcional. Border-top
- * editorial, sense cards ni ombres. */
 function Stat({ label, value, denominator, foot }) {
   return (
     <div className="border-t border-reader-rule pt-4">
@@ -189,7 +201,6 @@ function Stat({ label, value, denominator, foot }) {
   );
 }
 
-/* Barra de progrés discreta (mateix look que TopicsIndexPage). */
 function ThinBar({ pct, done }) {
   const width = Math.max(0, Math.min(100, pct ?? 0));
   return (
@@ -211,15 +222,210 @@ function ThinBar({ pct, done }) {
   );
 }
 
-/* Fila clickable d'un tema (mateix patró que TopicsIndexPage). */
-function TopicRow({ topic, meta, pct, done }) {
+/* Badge d'estat de tema (tokens de color únics per status). */
+function StatusBadge({ status, t }) {
+  const map = {
+    completed: {
+      label: t('progress.browse.statusCompleted'),
+      className: 'text-reader-ok border-reader-ok',
+    },
+    review: {
+      label: t('progress.browse.statusReview'),
+      className: 'text-reader-bad border-reader-bad',
+    },
+    inProgress: {
+      label: t('progress.browse.statusInProgress'),
+      className: 'text-reader-ink border-reader-ink',
+    },
+    notStarted: {
+      label: t('progress.browse.statusNotStarted'),
+      className: 'text-reader-muted border-reader-rule',
+    },
+  };
+  const cfg = map[status] ?? map.notStarted;
+  return (
+    <span
+      className={[
+        'inline-block border px-2 py-[2px]',
+        'font-mono text-[10px] uppercase tracking-[0.15em]',
+        'transition-colors duration-fast ease-standard',
+        cfg.className,
+      ].join(' ')}
+    >
+      {cfg.label}
+    </span>
+  );
+}
+
+/* Fila densa (navegador): id · títol · estat · barra · percentatge/check. */
+function BrowseRow({ state, t }) {
+  const { topic, status, totalEx, completedEx, pct, allDone, failedEx } = state;
+  const hasExercises = totalEx > 0;
+  let meta = null;
+  if (!hasExercises) {
+    meta = t('progress.browse.metaNoExercises');
+  } else if (status === 'review') {
+    meta = t('progress.browse.pendingHint', { count: failedEx });
+  } else {
+    meta = t('progress.browse.metaExercises', {
+      completed: completedEx,
+      total: totalEx,
+    });
+  }
+  return (
+    <li>
+      <Link
+        to={`/temari/${topic.id}`}
+        aria-label={t('progress.browse.openTopic', { id: topic.id })}
+        className={[
+          'group grid gap-3 py-3 px-2 -mx-2',
+          'grid-cols-[4.5rem_1fr] sm:grid-cols-[4.5rem_1fr_7rem_9rem]',
+          'sm:items-center',
+          'hover:bg-reader-paper-2',
+          'transition-colors duration-fast ease-standard',
+        ].join(' ')}
+      >
+        <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-reader-muted self-start sm:self-center">
+          {topic.id}
+        </span>
+        <span className="min-w-0">
+          <span className="block font-serif text-base text-reader-ink tracking-tight truncate">
+            {topic.shortTitle}
+          </span>
+          <span className="block sm:hidden font-mono text-[10px] uppercase tracking-[0.15em] text-reader-ink-2 mt-1">
+            {meta}
+          </span>
+        </span>
+        <span className="hidden sm:block font-mono text-[10px] uppercase tracking-[0.15em] text-reader-ink-2 truncate">
+          {meta}
+        </span>
+        <span className="col-span-2 sm:col-span-1 flex items-center gap-2">
+          <StatusBadge status={status} t={t} />
+          {hasExercises && (
+            <span className="flex-1 flex items-center gap-2 min-w-0">
+              <ThinBar pct={pct} done={allDone} />
+              {allDone ? (
+                <Check size={12} className="text-reader-ok flex-shrink-0" aria-hidden="true" />
+              ) : (
+                <span className="font-mono text-[10px] text-reader-muted w-8 text-right flex-shrink-0">
+                  {pct}%
+                </span>
+              )}
+            </span>
+          )}
+        </span>
+      </Link>
+    </li>
+  );
+}
+
+/* Secció col·lapsable per nivell. Usa <details>/<summary> natius:
+ * accessibilitat gratuïta, sense JS de col·lapse. Els canvis d'estat
+ * entren al transition global definit a @media reduced-motion al CSS. */
+function LevelSection({ levelKey, states, t, defaultOpen }) {
+  const total = states.length;
+  const shown = states.filter((s) => s.__shown).length;
+  const completed = states.filter((s) => s.status === 'completed').length;
+
+  return (
+    <details
+      open={defaultOpen}
+      className={[
+        'group border-t border-reader-rule',
+        'transition-colors duration-fast ease-standard',
+      ].join(' ')}
+    >
+      <summary
+        className={[
+          'flex items-center justify-between gap-4',
+          'py-3 px-2 -mx-2 cursor-pointer list-none',
+          'hover:bg-reader-paper-2',
+          'transition-colors duration-fast ease-standard',
+          // Oculta el marcador per defecte a Safari/Firefox.
+          '[&::-webkit-details-marker]:hidden',
+        ].join(' ')}
+      >
+        <span className="flex items-baseline gap-3">
+          <ChevronDown
+            size={14}
+            aria-hidden="true"
+            className={[
+              'text-reader-muted flex-shrink-0',
+              'transition-transform duration-base ease-standard',
+              'group-open:rotate-0 -rotate-90',
+            ].join(' ')}
+          />
+          <span className="font-mono text-xs uppercase tracking-[0.22em] text-reader-ink">
+            {levelKey.toUpperCase()}
+          </span>
+        </span>
+        <span className="font-mono text-[11px] text-reader-ink-2">
+          {t('progress.browse.levelCount', { shown, total, completed })}
+        </span>
+      </summary>
+
+      {/* Panell obert: llista densa. */}
+      <div className="pb-4">
+        {shown === 0 ? (
+          <p className="font-serif italic text-sm text-reader-ink-2 px-2 py-4">
+            {t('progress.browse.emptyForFilter')}
+          </p>
+        ) : (
+          <ul className="divide-y divide-reader-rule border-t border-reader-rule">
+            {states.filter((s) => s.__shown).map((state) => (
+              <BrowseRow key={state.topic.id} state={state} t={t} />
+            ))}
+          </ul>
+        )}
+      </div>
+    </details>
+  );
+}
+
+/* Chip de filtre — inspirat en tabs editorials, tipografia mono. Actiu porta
+ * sublínia negra; la resta son gris. */
+function FilterChip({ label, count, active, onClick }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      aria-pressed={active}
+      className={[
+        'inline-flex items-baseline gap-2 px-3 py-2',
+        'font-mono text-[11px] uppercase tracking-[0.18em]',
+        'border-b-2',
+        'transition-colors duration-fast ease-standard',
+        active
+          ? 'border-reader-ink text-reader-ink'
+          : 'border-transparent text-reader-muted hover:text-reader-ink',
+      ].join(' ')}
+    >
+      <span>{label}</span>
+      <span className="font-mono text-[10px] text-reader-ink-2">{count}</span>
+    </button>
+  );
+}
+
+/* Fila compacta per al mini-league "Entre les mans". */
+function MiniLeagueRow({ state, t }) {
+  const { topic, totalEx, completedEx, pct, totalSteps, visitedCount } = state;
+  const hasExercises = totalEx > 0;
+  const meta = hasExercises
+    ? t('progress.inProgress.metaExercises', {
+        completed: completedEx,
+        total: totalEx,
+      })
+    : t('progress.inProgress.metaSteps', {
+        visited: visitedCount,
+        total: totalSteps,
+      });
   return (
     <li>
       <Link
         to={`/temari/${topic.id}`}
         className={[
           'group flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6',
-          'py-4 px-2 -mx-2',
+          'py-3 px-2 -mx-2',
           'hover:bg-reader-paper-2',
           'transition-colors duration-fast ease-standard',
         ].join(' ')}
@@ -228,25 +434,19 @@ function TopicRow({ topic, meta, pct, done }) {
           {topic.id}
         </span>
         <span className="flex-1 min-w-0">
-          <span className="block font-serif text-lg text-reader-ink tracking-tight">
+          <span className="block font-serif text-base text-reader-ink tracking-tight">
             {topic.shortTitle}
           </span>
-          {meta && (
-            <span className="block font-serif italic text-sm text-reader-ink-2 mt-1">
-              {meta}
-            </span>
-          )}
+          <span className="block font-serif italic text-sm text-reader-ink-2 mt-0.5">
+            {meta}
+          </span>
         </span>
-        {pct != null && (
+        {hasExercises && (
           <span className="flex-shrink-0 sm:w-32 flex items-center gap-2">
-            <ThinBar pct={pct} done={done} />
-            {done ? (
-              <Check size={14} className="text-reader-ok" aria-hidden="true" />
-            ) : (
-              <span className="font-mono text-[10px] text-reader-muted w-8 text-right">
-                {pct}%
-              </span>
-            )}
+            <ThinBar pct={pct} done={false} />
+            <span className="font-mono text-[10px] text-reader-muted w-8 text-right">
+              {pct}%
+            </span>
           </span>
         )}
       </Link>
@@ -254,38 +454,8 @@ function TopicRow({ topic, meta, pct, done }) {
   );
 }
 
-/* Resum per nivell: etiqueta + barra fina + fracció completats + línia
- * "has encetat N de M". Els topics arriben decorats amb `_started` per
- * no tornar a tocar el store des d'aquí. */
-function LevelSummaryRow({ levelKey, topics, exercisesState, t }) {
-  let completed = 0;
-  let started = 0;
-  for (const topic of topics) {
-    if (topic._started) started += 1;
-    const { allDone } = computeTopicProgress(topic, exercisesState);
-    if (allDone) completed += 1;
-  }
-  const total = topics.length;
-  const pct = total === 0 ? 0 : Math.round((completed / total) * 100);
-  return (
-    <div className="border-t border-reader-rule pt-4 pb-2">
-      <div className="flex items-baseline justify-between gap-4 mb-2">
-        <span className="font-mono text-xs uppercase tracking-[0.22em] text-reader-ink">
-          {levelKey.toUpperCase()}
-        </span>
-        <span className="font-mono text-[11px] text-reader-ink-2">
-          {t('progress.byLevel.fraction', { completed, total })}
-        </span>
-      </div>
-      <ThinBar pct={pct} done={total > 0 && completed === total} />
-      <p className="mt-2 font-serif italic text-sm text-reader-ink-2">
-        {t('progress.byLevel.startedLine', { started, total })}
-      </p>
-    </div>
-  );
-}
+// ─── Accions ────────────────────────────────────────────────────────────
 
-/* Botó editorial (4 looks). Tailwind JIT necessita classes literals. */
 const BUTTON_BASE =
   'inline-flex items-center gap-2 px-4 py-2 rounded-sm font-mono text-xs uppercase tracking-wider transition-colors duration-fast ease-standard disabled:opacity-40 disabled:pointer-events-none';
 
@@ -320,7 +490,6 @@ function EditorialButton({
   );
 }
 
-/* Capçalera repetitiva d'acció (títol h3 serif + descripció italic). */
 function ActionTitle({ title, description, tone = 'ink' }) {
   const titleColor = tone === 'bad' ? 'text-reader-bad' : 'text-reader-ink';
   return (
@@ -333,7 +502,6 @@ function ActionTitle({ title, description, tone = 'ink' }) {
   );
 }
 
-/* Missatge inline amb icona ok/ko, reutilitzat per les 3 accions. */
 function InlineMessage({ message }) {
   if (!message) return null;
   const isOk = message.kind === 'success';
@@ -357,6 +525,8 @@ function InlineMessage({ message }) {
 
 // ─── Component principal ────────────────────────────────────────────────
 
+const FILTER_ORDER = ['all', 'inProgress', 'review', 'completed', 'notStarted'];
+
 export function ProgressPage() {
   const { t, locale } = useT();
 
@@ -369,22 +539,28 @@ export function ProgressPage() {
   const resetProgress = useProgressStore((s) => s.reset);
 
   // Corpus (estàtic)
-  const topics = useMemo(() => getAllTopics(), []);
+  const allTopics = useMemo(() => getAllTopics(), []);
   const levelKeys = useMemo(() => getAllLevelKeys(), []);
-  const totalTopics = topics.length;
-  const totalExercises = useMemo(() => countTotalExercises(topics), [topics]);
+  const totalTopics = allTopics.length;
+  const totalExercises = useMemo(() => countTotalExercises(allTopics), [allTopics]);
 
-  // Derivades del progrés
-  const topicsStarted = useMemo(
-    () =>
-      Object.values(topicsProgress ?? {}).filter(
-        (entry) => (entry?.visitedStepIds?.length ?? 0) > 0
-      ).length,
-    [topicsProgress]
-  );
+  // Estat derivat de tots els topics (un sol passada). És la base tant
+  // dels comptadors de chips com del navegador i el mini-league.
+  const allStates = useMemo(() => {
+    return allTopics.map((topic) =>
+      deriveTopicState(topic, topicsProgress, exercisesProgress)
+    );
+  }, [allTopics, topicsProgress, exercisesProgress]);
 
-  // "Consolidat": firstCorrectAt present i l'últim intent no ha fallat.
-  // Coherent amb el matís del store: reintentar i fallar treu la consolidació.
+  // Comptadors per filtre
+  const counts = useMemo(() => {
+    const c = { all: allStates.length, inProgress: 0, review: 0, completed: 0, notStarted: 0 };
+    for (const s of allStates) c[s.status] += 1;
+    return c;
+  }, [allStates]);
+
+  // Stats per al resum editorial.
+  const topicsStarted = counts.inProgress + counts.review + counts.completed;
   const exercisesConsolidated = useMemo(
     () =>
       Object.values(exercisesProgress ?? {}).filter(
@@ -399,19 +575,41 @@ export function ProgressPage() {
     Boolean(lastUpdated) ||
     Object.keys(exercisesProgress ?? {}).length > 0;
 
-  const inProgressList = useMemo(
-    () => deriveInProgressTopics(topicsProgress, exercisesProgress, 5),
-    [topicsProgress, exercisesProgress]
-  );
-
-  const reviewList = useMemo(
-    () => deriveReviewTopics(topicsProgress, exercisesProgress, 5),
-    [topicsProgress, exercisesProgress]
-  );
+  // Mini-league "Entre les mans": top 3 per visitedStepIds desc, id asc.
+  const inProgressLeague = useMemo(() => {
+    return allStates
+      .filter((s) => s.status === 'inProgress' || s.status === 'review')
+      // Només els que l'usuari ha encetat (visitat algun step).
+      .filter((s) => s.visitedCount > 0 && !s.allDone)
+      .sort((a, b) => {
+        if (b.visitedCount !== a.visitedCount) return b.visitedCount - a.visitedCount;
+        return a.topic.id < b.topic.id ? -1 : a.topic.id > b.topic.id ? 1 : 0;
+      })
+      .slice(0, 3);
+  }, [allStates]);
 
   // Dies des de l'inici del curs i des de l'última activitat.
   const daysSinceStart = daysSince(createdAt);
   const daysSinceLast = daysSince(lastUpdated);
+
+  // ─── Filtre del navegador ───────────────────────────────────────
+  const [filter, setFilter] = useState('all');
+
+  // Map topicId → shown booleà, segons filtre. Marquem l'estat amb __shown
+  // per a LevelSection. L'ordre del nivell és el de dataLoader (per number).
+  const statesByLevel = useMemo(() => {
+    const map = new Map();
+    for (const levelKey of levelKeys) {
+      const topicsInLevel = getTopicsByLevel(levelKey);
+      const list = topicsInLevel.map((topic) => {
+        const state = allStates.find((s) => s.topic.id === topic.id);
+        const shown = filter === 'all' || state.status === filter;
+        return Object.assign({}, state, { __shown: shown });
+      });
+      map.set(levelKey, list);
+    }
+    return map;
+  }, [allStates, levelKeys, filter]);
 
   // ─── Export ─────────────────────────────────────────────────────
   const [exportMessage, setExportMessage] = useState(null);
@@ -509,6 +707,14 @@ export function ProgressPage() {
 
   // ─────────────────────────────────────────────────────────────────
 
+  const chipLabels = {
+    all: t('progress.browse.filterAll'),
+    inProgress: t('progress.browse.filterInProgress'),
+    review: t('progress.browse.filterReview'),
+    completed: t('progress.browse.filterCompleted'),
+    notStarted: t('progress.browse.filterNotStarted'),
+  };
+
   return (
     <div className="max-w-content-list">
       {/* ── Capçalera editorial ────────────────────────────────── */}
@@ -524,7 +730,7 @@ export function ProgressPage() {
         </p>
       </header>
 
-      {/* ── Si no hi ha cap progrés, mostrem l'empty state càlid ── */}
+      {/* ── Empty state ─────────────────────────────────────────── */}
       {!hasProgress && (
         <section className="mb-12" aria-labelledby="progress-empty-heading">
           <div className="border-t border-reader-rule pt-6 flex flex-col sm:flex-row gap-6 items-start">
@@ -596,93 +802,71 @@ export function ProgressPage() {
         </section>
       )}
 
-      {/* ── Per nivell ─────────────────────────────────────────── */}
-      {hasProgress && levelKeys.length > 0 && (
-        <section className="mb-12" aria-labelledby="progress-bylevel-heading">
-          <SectionHeading id="progress-bylevel-heading">
-            {t('progress.byLevel.title')}
-          </SectionHeading>
-          <div className="space-y-2">
-            {levelKeys.map((levelKey) => {
-              const levelTopics = getTopicsByLevel(levelKey);
-              // Decorem cada topic amb `_started` perquè LevelSummaryRow
-              // pugui comptar-ho sense accedir al store.
-              const decorated = levelTopics.map((topic) => {
-                const entry = topicsProgress?.[topic.id];
-                const started = (entry?.visitedStepIds?.length ?? 0) > 0;
-                return Object.assign({}, topic, { _started: started });
-              });
-              return (
-                <LevelSummaryRow
-                  key={levelKey}
-                  levelKey={levelKey}
-                  topics={decorated}
-                  exercisesState={exercisesProgress}
-                  t={t}
-                />
-              );
-            })}
-          </div>
-        </section>
-      )}
-
-      {/* ── Temes en curs ─────────────────────────────────────── */}
-      {inProgressList.length > 0 && (
-        <section className="mb-12" aria-labelledby="progress-inprogress-heading">
-          <SectionHeading id="progress-inprogress-heading">
+      {/* ── Entre les mans (top 3, només si hi ha) ─────────────── */}
+      {hasProgress && inProgressLeague.length > 0 && (
+        <section className="mb-12" aria-labelledby="progress-league-heading">
+          <SectionHeading id="progress-league-heading">
             {t('progress.inProgress.title')}
           </SectionHeading>
           <p className="font-serif italic text-sm text-reader-ink-2 mb-4 max-w-prose">
             {t('progress.inProgress.intro')}
           </p>
           <ul className="divide-y divide-reader-rule border-t border-b border-reader-rule">
-            {inProgressList.map(({ topic, progress }) => {
-              const hasExercises = progress.total > 0;
-              const stepsCount = topic.steps?.length ?? 0;
-              const visited =
-                topicsProgress?.[topic.id]?.visitedStepIds?.length ?? 0;
-              const metaLine = hasExercises
-                ? t('progress.inProgress.metaExercises', {
-                    completed: progress.completed,
-                    total: progress.total,
-                  })
-                : t('progress.inProgress.metaSteps', {
-                    visited,
-                    total: stepsCount,
-                  });
-              return (
-                <TopicRow
-                  key={topic.id}
-                  topic={topic}
-                  meta={metaLine}
-                  pct={hasExercises ? progress.pct : null}
-                  done={false}
-                />
-              );
-            })}
+            {inProgressLeague.map((state) => (
+              <MiniLeagueRow key={state.topic.id} state={state} t={t} />
+            ))}
           </ul>
         </section>
       )}
 
-      {/* ── Temes a repassar ──────────────────────────────────── */}
-      {reviewList.length > 0 && (
-        <section className="mb-12" aria-labelledby="progress-review-heading">
-          <SectionHeading id="progress-review-heading">
-            {t('progress.review.title')}
+      {/* ── Navegador tot-el-temari ────────────────────────────── */}
+      {levelKeys.length > 0 && (
+        <section className="mb-12" aria-labelledby="progress-browse-heading">
+          <SectionHeading id="progress-browse-heading">
+            {t('progress.browse.title')}
           </SectionHeading>
           <p className="font-serif italic text-sm text-reader-ink-2 mb-4 max-w-prose">
-            {t('progress.review.intro')}
+            {t('progress.browse.intro')}
           </p>
-          <ul className="divide-y divide-reader-rule border-t border-b border-reader-rule">
-            {reviewList.map(({ topic, pending }) => (
-              <TopicRow
-                key={topic.id}
-                topic={topic}
-                meta={t('progress.review.meta', { count: pending })}
-                pct={null}
+
+          {/* Filtre per estat — tabs planes amb underline del actiu. */}
+          <div
+            role="tablist"
+            aria-label={t('progress.browse.filterAriaLabel')}
+            className="flex flex-wrap gap-x-1 gap-y-0 border-b border-reader-rule mb-2"
+          >
+            {FILTER_ORDER.map((key) => (
+              <FilterChip
+                key={key}
+                label={chipLabels[key]}
+                count={counts[key]}
+                active={filter === key}
+                onClick={() => setFilter(key)}
               />
             ))}
-          </ul>
+          </div>
+
+          {/* Seccions col·lapsables per nivell. Per defecte obertes si el
+           * filtre actiu té matches al nivell; si n=0 al nivell, tancat. */}
+          <div className="mt-0">
+            {levelKeys.map((levelKey) => {
+              const states = statesByLevel.get(levelKey) ?? [];
+              const shownCount = states.filter((s) => s.__shown).length;
+              // Per defecte obert si hi ha matches o si filter === 'all'.
+              const defaultOpen = shownCount > 0;
+              return (
+                <LevelSection
+                  key={levelKey}
+                  levelKey={levelKey}
+                  states={states}
+                  t={t}
+                  defaultOpen={defaultOpen}
+                />
+              );
+            })}
+            {/* Bottom rule per tancar visualment la taula. */}
+            <div className="border-t border-reader-rule" />
+          </div>
         </section>
       )}
 
@@ -755,7 +939,7 @@ export function ProgressPage() {
           <InlineMessage message={importMessage} />
         </div>
 
-        {/* Reiniciar — matís de perill, sense card ni fons farcit. */}
+        {/* Reiniciar */}
         <div className="py-6 border-t border-reader-rule">
           <div className="flex flex-wrap items-start gap-x-6 gap-y-3">
             <div className="flex-shrink-0 text-reader-bad mt-1">

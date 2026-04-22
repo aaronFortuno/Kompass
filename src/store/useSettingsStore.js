@@ -96,6 +96,15 @@ export const useSettingsStore = create(
         tableAnim: state.tableAnim,
         autoPlay: state.autoPlay,
         autoPlayDelay: state.autoPlayDelay,
+        // §98: els nous settings d'àudio també han de persistir entre
+        // sessions. Abans es perdien a cada reload perquè no figuraven a
+        // l'allowlist del partialize i Zustand només persisteix el que
+        // aquest retorna.
+        audioAutoplay: state.audioAutoplay,
+        audioSpeed: state.audioSpeed,
+        audioVoice: state.audioVoice,
+        // §103: el mode focus també persistit per consistència.
+        focusMode: state.focusMode,
       }),
       onRehydrateStorage: () => (state) => {
         // Notifica altres components que el hydrate s'ha completat per si

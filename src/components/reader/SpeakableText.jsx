@@ -5,6 +5,18 @@ import { useSpeakerDiscovered } from '@/lib/audio/useSpeakerDiscovered.js';
 import { useSettings } from '@/store/useSettingsStore.js';
 
 /*
+ * Flag singleton per distingir clicks programàtics (orquestrador
+ * d'autoplay) de clicks reals d'usuari. Els primers no han de pausar
+ * el temporitzador de canvi de beat (altrament un autoplay en dispara
+ * la pausa a si mateix i queda encallat). El flag es consum a la
+ * primera propagació de l'event i s'auto-reinicia.
+ */
+let programmaticClickFlag = false;
+export function markNextSpeakableClickProgrammatic() {
+  programmaticClickFlag = true;
+}
+
+/*
  * SpeakableText · §92 + §98
  *
  * Envolta un text alemany amb un wrapper clickable (pill editorial)
@@ -179,8 +191,16 @@ export function SpeakableText({
     // Senyalitzem al reader que l'usuari ha interactuat amb un pill
     // audible perquè pausi el temporitzador de canvi de beat (§98 polit).
     // Evita haver de fer clic al pill + un segon clic a la interfície.
+    // Si el clic ve de l'orquestrador (autoplay seqüencial), NO pausem
+    // perquè el propi flux d'autoplay s'estaria aturant a si mateix.
+    const wasProgrammatic = programmaticClickFlag;
+    programmaticClickFlag = false;
     if (typeof window !== 'undefined') {
-      window.dispatchEvent(new CustomEvent('kompass:speakable-activated'));
+      window.dispatchEvent(
+        new CustomEvent('kompass:speakable-activated', {
+          detail: { programmatic: wasProgrammatic },
+        }),
+      );
     }
   };
 
