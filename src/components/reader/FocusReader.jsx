@@ -63,12 +63,20 @@ function stepToBeats(step) {
 }
 
 function computeBlocks(steps) {
-  // Un "bloc" comença a cada step no-exercice. Inclou els exercicis
-  // que segueixen fins al proper narrative/synthesis.
+  // Un "bloc" pedagògic = un narrative o synthesis que obre una secció
+  // nova (primer del topic, o vingut després d'un exercise) + tots els
+  // steps que el segueixen fins al proper bloc. Això casa amb el
+  // separador visual del progress bar: cada glyph amb línia és inici de
+  // bloc. Ctrl+⇧+←→ salta entre aquests punts, no step per step.
   const starts = [];
   steps.forEach((s, i) => {
     const kind = stepKind(s);
-    if (kind !== 'exercise' && kind !== 'assessment') starts.push(i);
+    if (kind === 'exercise' || kind === 'assessment') return;
+    const prev = i > 0 ? steps[i - 1] : null;
+    const prevKind = prev ? stepKind(prev) : null;
+    const isBlockStart =
+      i === 0 || prevKind === 'exercise' || prevKind === 'assessment';
+    if (isBlockStart) starts.push(i);
   });
   return starts;
 }
@@ -1236,6 +1244,15 @@ export function FocusReader({ topic }) {
         return;
       }
 
+      // "t" surt del reader cap al temari sencer. Gest ràpid per
+      // explorar altres lliçons sense haver de passar per Esc → ratolí.
+      if ((e.key === 't' || e.key === 'T') && !e.ctrlKey && !e.metaKey && !e.altKey) {
+        if (inInput) return;
+        e.preventDefault();
+        navigate('/temari');
+        return;
+      }
+
       // ↓ / ↑ : skip typewriter. Primer press revela el beat actual;
       // següents presses avancen mantenint el skip actiu.
       if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
@@ -1527,71 +1544,101 @@ export function FocusReader({ topic }) {
               : `Pas ${String(stepIdx + 1).padStart(2, '0')} · ${beatIdx + 1}/${beats.length}`}
           </span>
           <span className="kf-keyhint">
+            {/* Columna 1 · navegació direccional (fletxes ←→) */}
             {!isFullMode ? (
-              <>
+              <span className="kf-keyhint-col">
                 <span className="kgroup">
                   <kbd>←</kbd>
                   <kbd>→</kbd>
                   <span className="lbl">fragment</span>
                 </span>
-                <span className="kf-sep" />
-                <span
-                  className={'kgroup' + (fastMode ? ' kf-keyhint-active' : '')}
-                  title={
-                    fastMode
-                      ? 'Salt actiu — el contingut es revela instantàniament'
-                      : 'Salta el typewriter i avança'
-                  }
-                >
-                  <kbd>↑</kbd>
-                  <kbd>↓</kbd>
-                  <span className="lbl">{fastMode ? 'saltant' : 'saltar'}</span>
+                <span className="kgroup">
+                  <kbd>{MODKEY}</kbd>
+                  <span className="plus">+</span>
+                  <kbd>←</kbd>
+                  <kbd>→</kbd>
+                  <span className="lbl">pas</span>
                 </span>
-                <span className="kf-sep" />
-              </>
-            ) : null}
-            <span className="kgroup">
-              <kbd>{MODKEY}</kbd>
-              <span className="plus">+</span>
-              <kbd>←</kbd>
-              <kbd>→</kbd>
-              <span className="lbl">pas</span>
-            </span>
-            <span className="kf-sep" />
-            <span className="kgroup">
-              <kbd>{MODKEY}</kbd>
-              <span className="plus">+</span>
-              <kbd>⇧</kbd>
-              <span className="plus">+</span>
-              <kbd>←</kbd>
-              <kbd>→</kbd>
-              <span className="lbl">bloc</span>
-            </span>
-            <span className="kf-sep" />
-            <span
-              className={'kgroup' + (settings.autoPlay ? ' kf-keyhint-active' : '')}
-              title={
-                settings.autoPlay
-                  ? autoPlayPaused
-                    ? 'Auto-play pausat (espai reprèn)'
-                    : 'Auto-play actiu (espai pausa)'
-                  : 'Activa l\'auto-play'
-              }
-            >
-              <kbd>p</kbd>
-              <span className="lbl">
-                {settings.autoPlay ? (autoPlayPaused ? 'pause' : 'auto') : 'play'}
+                <span className="kgroup">
+                  <kbd>{MODKEY}</kbd>
+                  <span className="plus">+</span>
+                  <kbd>⇧</kbd>
+                  <span className="plus">+</span>
+                  <kbd>←</kbd>
+                  <kbd>→</kbd>
+                  <span className="lbl">bloc</span>
+                </span>
+              </span>
+            ) : (
+              <span className="kf-keyhint-col">
+                <span className="kgroup">
+                  <kbd>{MODKEY}</kbd>
+                  <span className="plus">+</span>
+                  <kbd>←</kbd>
+                  <kbd>→</kbd>
+                  <span className="lbl">pas</span>
+                </span>
+                <span className="kgroup">
+                  <kbd>{MODKEY}</kbd>
+                  <span className="plus">+</span>
+                  <kbd>⇧</kbd>
+                  <span className="plus">+</span>
+                  <kbd>←</kbd>
+                  <kbd>→</kbd>
+                  <span className="lbl">bloc</span>
+                </span>
+              </span>
+            )}
+
+            {/* Columna 2 · control de ritme (saltar + auto/pause) */}
+            <span className="kf-keyhint-col">
+              <span
+                className={'kgroup' + (fastMode ? ' kf-keyhint-active' : '')}
+                title={
+                  fastMode
+                    ? 'Salt actiu — el contingut es revela instantàniament'
+                    : 'Salta el typewriter i avança'
+                }
+              >
+                <kbd>↑</kbd>
+                <kbd>↓</kbd>
+                <span className="lbl">{fastMode ? 'saltant' : 'saltar'}</span>
+              </span>
+              <span
+                className={'kgroup' + (settings.autoPlay ? ' kf-keyhint-active' : '')}
+                title={
+                  settings.autoPlay
+                    ? autoPlayPaused
+                      ? 'Auto-play pausat (espai reprèn)'
+                      : 'Auto-play actiu (espai pausa)'
+                    : 'Activa l\'auto-play'
+                }
+              >
+                <kbd>p</kbd>
+                <span className="lbl">
+                  {settings.autoPlay
+                    ? autoPlayPaused
+                      ? 'pause'
+                      : 'auto'
+                    : 'play'}
+                </span>
               </span>
             </span>
-            <span className="kf-sep" />
-            <span className="kgroup">
-              <kbd>c</kbd>
-              <span className="lbl">config</span>
-            </span>
-            <span className="kf-sep" />
-            <span className="kgroup">
-              <kbd>Esc</kbd>
-              <span className="lbl">sortir</span>
+
+            {/* Columna 3 · utilitats (config + temari + sortir) */}
+            <span className="kf-keyhint-col">
+              <span className="kgroup">
+                <kbd>c</kbd>
+                <span className="lbl">config</span>
+              </span>
+              <span className="kgroup">
+                <kbd>t</kbd>
+                <span className="lbl">temari</span>
+              </span>
+              <span className="kgroup">
+                <kbd>Esc</kbd>
+                <span className="lbl">sortir</span>
+              </span>
             </span>
           </span>
         </div>

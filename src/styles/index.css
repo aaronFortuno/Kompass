@@ -1517,11 +1517,11 @@ html.dark .k-mark {
 .kf-foot-mid {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 18px;
   flex-wrap: wrap;
   justify-content: center;
 }
-.kf-foot-counter { font-size: 11px; }
+.kf-foot-counter { font-size: 11px; flex-shrink: 0; }
 
 /* Cantonada dreta del peu: icona de config + botó Següent alineats */
 .kf-foot-right {
@@ -1631,16 +1631,22 @@ html.dark .k-mark {
 }
 .kf-keyhint {
   display: inline-flex;
-  align-items: center;
-  gap: 6px;
+  align-items: stretch;
+  gap: 18px;
   color: rgb(var(--color-reader-ink-2));
   font-size: 10px;
 }
-.kf-keyhint .kf-sep {
-  width: 1px;
-  height: 10px;
-  background: rgb(var(--color-reader-rule));
-  margin: 0 4px;
+/* Columnes semàntiques (navegació, ritme, utilitats). Cada columna
+   és un flex vertical amb les dreceres apilades. El separador entre
+   columnes és un border left del second+ -child. */
+.kf-keyhint-col {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.kf-keyhint-col + .kf-keyhint-col {
+  padding-left: 18px;
+  border-left: 1px solid rgb(var(--color-reader-rule));
 }
 .kf-keyhint kbd {
   font-family: 'IBM Plex Mono', monospace;
@@ -1654,7 +1660,11 @@ html.dark .k-mark {
   text-align: center;
   line-height: 1.3;
 }
-.kf-keyhint .kgroup { display: inline-flex; align-items: center; gap: 2px; }
+.kf-keyhint .kgroup {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
 /* Estat actiu (fastMode, autoPlay): canvi subtil — mateixa mida i
    estil general que els altres chips, però border + label una mica
    més pronunciats perquè l'ull detecti que és un mode active. Sense
