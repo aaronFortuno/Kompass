@@ -1,7 +1,7 @@
 {
   "app": {
     "name": "Kompass",
-    "tagline": "Aprende alemán A1 a tu ritmo"
+    "tagline": "Aprende alemán a tu ritmo"
   },
   "nav": {
     "home": "Inicio",
@@ -32,10 +32,13 @@
     "pillarFreeText": "Sigue el temario de principio a fin o salta al tema que te convenga. No hay orden obligatorio.",
     "pillarLocalTitle": "Todo local",
     "pillarLocalText": "Sin servidor ni cuenta. El progreso vive en el navegador y lo puedes exportar a un archivo.",
-    "footerNavAria": "Navegación de la página de inicio",
     "statsLessons": "{count} lecciones",
     "statsExercises": "{count} ejercicios",
     "statsHours": "~{count} h"
+  },
+  "footer": {
+    "navAria": "Navegación del pie",
+    "versionLabel": "Versión"
   },
   "placeholder": {
     "title": "Página en construcción",
@@ -186,12 +189,37 @@
       "title": "Entre manos",
       "intro": "Temas en los que te quedaste a medias. Retómalos justo donde los dejaste.",
       "metaExercises": "{completed} / {total} ejercicios consolidados",
-      "metaSteps": "{visited} / {total} fragmentos leídos"
+      "metaSteps": "{visited} / {total} fragmentos leídos",
+      "empty": "Ahora mismo no tienes ningún tema a medias."
     },
     "review": {
       "title": "Para volver",
       "intro": "Temas con ejercicios que últimamente han fallado. Volver con calma suele bastar.",
       "meta": "{count} ejercicios pendientes de consolidar"
+    },
+    "browse": {
+      "title": "Todo el temario",
+      "intro": "El curso completo agrupado por nivel. Filtra por estado, o despliega cada nivel para ver sus temas.",
+      "filterAll": "Todos",
+      "filterInProgress": "En curso",
+      "filterReview": "Por consolidar",
+      "filterCompleted": "Completados",
+      "filterNotStarted": "No empezados",
+      "filterAriaLabel": "Filtra el temario por estado",
+      "levelCount": "{shown} de {total} · {completed} completados",
+      "expandAll": "Desplegar todo",
+      "collapseAll": "Plegar todo",
+      "emptyForFilter": "Ningún tema coincide con este filtro.",
+      "statusNotStarted": "No empezado",
+      "statusInProgress": "En curso",
+      "statusReview": "Por consolidar",
+      "statusCompleted": "Completado",
+      "statusReading": "Lectura",
+      "openTopic": "Abrir el tema {id}",
+      "metaExercises": "{completed} / {total} ejercicios",
+      "metaSteps": "{visited} / {total} fragmentos",
+      "metaNoExercises": "Tema de lectura",
+      "pendingHint": "{count} por consolidar"
     },
     "actions": {
       "title": "Copias y reinicio",

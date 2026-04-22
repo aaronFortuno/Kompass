@@ -1,7 +1,7 @@
 {
   "app": {
     "name": "Kompass",
-    "tagline": "Aprèn alemany A1 al teu ritme"
+    "tagline": "Aprèn alemany al teu ritme"
   },
   "nav": {
     "home": "Inici",
@@ -32,10 +32,13 @@
     "pillarFreeText": "Segueix el temari de cap a peus o salta al tema que et convé. No hi ha ordre obligatori.",
     "pillarLocalTitle": "Tot local",
     "pillarLocalText": "Sense servidor ni compte. El progrés viu al navegador i el pots exportar a un fitxer.",
-    "footerNavAria": "Navegació de la pàgina d'inici",
     "statsLessons": "{count} lliçons",
     "statsExercises": "{count} exercicis",
     "statsHours": "~{count} h"
+  },
+  "footer": {
+    "navAria": "Navegació del peu",
+    "versionLabel": "Versió"
   },
   "placeholder": {
     "title": "Pàgina en construcció",
@@ -186,12 +189,37 @@
       "title": "Entre les mans",
       "intro": "Temes on t'has quedat a mig. Continua just on vas deixar-ho.",
       "metaExercises": "{completed} / {total} exercicis consolidats",
-      "metaSteps": "{visited} / {total} fragments llegits"
+      "metaSteps": "{visited} / {total} fragments llegits",
+      "empty": "Ara mateix no tens cap tema a mig."
     },
     "review": {
       "title": "Per tornar-hi",
       "intro": "Temes amb exercicis que últimament han fallat. Tornar-hi amb tranquil·litat sol ser suficient.",
       "meta": "{count} exercicis pendents de consolidar"
+    },
+    "browse": {
+      "title": "Tot el temari",
+      "intro": "El curs sencer agrupat per nivell. Filtra per estat, o desplega cada nivell per veure els temes.",
+      "filterAll": "Tots",
+      "filterInProgress": "En curs",
+      "filterReview": "Per consolidar",
+      "filterCompleted": "Completats",
+      "filterNotStarted": "No començats",
+      "filterAriaLabel": "Filtra el temari per estat",
+      "levelCount": "{shown} de {total} · {completed} completats",
+      "expandAll": "Desplega-ho tot",
+      "collapseAll": "Plega-ho tot",
+      "emptyForFilter": "Cap tema coincideix amb aquest filtre.",
+      "statusNotStarted": "No començat",
+      "statusInProgress": "En curs",
+      "statusReview": "Per consolidar",
+      "statusCompleted": "Completat",
+      "statusReading": "Lectura",
+      "openTopic": "Obrir el tema {id}",
+      "metaExercises": "{completed} / {total} exercicis",
+      "metaSteps": "{visited} / {total} fragments",
+      "metaNoExercises": "Tema de lectura",
+      "pendingHint": "{count} per consolidar"
     },
     "actions": {
       "title": "Còpies i reinici",

@@ -94,8 +94,8 @@ export function ReaderTeaser() {
       className={[
         'kf-teaser-frame',
         'bg-reader-paper-2 border border-reader-rule',
-        'px-6 py-10 sm:px-12 sm:py-14',
-        'min-h-[420px] sm:min-h-[520px]',
+        'px-6 py-8 sm:px-10 sm:py-10',
+        'min-h-[340px] sm:min-h-[400px]',
         'flex flex-col',
       ].join(' ')}
       aria-label={t('home.teaserAria')}
