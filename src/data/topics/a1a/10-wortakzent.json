@@ -29,7 +29,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Regla 1: paraules bàsiques → accent a la primera síl·laba\n\nLa regla més general i més útil de l'alemany és aquesta:\n\n> **Les paraules bàsiques del vocabulari alemany porten l'accent a la primera síl·laba.**\n\nAixò cobreix la gran majoria del vocabulari que has après fins ara. Pensa en noms, verbs, adjectius comuns: l'accent va al principi.\n\n> **Ta**sche (la bossa)\n> **Na**me (el nom)\n> **wohn**en (viure)\n> **ar**beiten (treballar)\n> **Vor**name (el nom de pila) — encara que sembli compost, funciona com a paraula bàsica en aquesta regla, ja ho refinarem.\n\nAquesta regla és una bona notícia: quan trobis una paraula nova i no sàpigues on accentuar-la, **la primera síl·laba és l'aposta per defecte** i encertaràs la majoria de vegades.\n\n#### La flexió no mou l'accent\n\nUn punt tranquil·litzador: quan una paraula canvia de forma (plural del substantiu, conjugació del verb, declinació de l'adjectiu), **l'accent es queda on era**. No es mou de lloc com a vegades passa en castellà (_régimen_ → _regímenes_).\n\n> **Ta**sche → **Ta**schen (singular i plural, mateix accent)\n> **ar**beiten → **ar**beitest, **ar**beitet (conjugació, mateix accent)\n\nAixò val la pena recordar-ho: un cop has après on cau l'accent d'un verb en infinitiu, ja saps on caurà en totes les seves formes conjugades."
+          "body": "#### Regla 1: paraules bàsiques → accent a la primera síl·laba\n\nLa regla més general i més útil de l'alemany és aquesta:\n\n> **Les paraules bàsiques del vocabulari alemany porten l'accent a la primera síl·laba.**\n\nAixò cobreix la gran majoria del vocabulari que has après fins ara. Pensa en noms, verbs, adjectius comuns: l'accent va al principi.\n\n> !!**Ta**sche!! (la bossa)\n> !!**Na**me!! (el nom)\n> !!**wohn**en!! (viure)\n> !!**ar**beiten!! (treballar)\n> **Vor**name (el nom de pila) — encara que sembli compost, funciona com a paraula bàsica en aquesta regla, ja ho refinarem.\n\nAquesta regla és una bona notícia: quan trobis una paraula nova i no sàpigues on accentuar-la, **la primera síl·laba és l'aposta per defecte** i encertaràs la majoria de vegades.\n\n#### La flexió no mou l'accent\n\nUn punt tranquil·litzador: quan una paraula canvia de forma (plural del substantiu, conjugació del verb, declinació de l'adjectiu), **l'accent es queda on era**. No es mou de lloc com a vegades passa en castellà (_régimen_ → _regímenes_).\n\n> !!**Ta**sche!! → !!**Ta**schen!! (singular i plural, mateix accent)\n> !!**ar**beiten!! → !!**ar**beitest!!, !!**ar**beitet!! (conjugació, mateix accent)\n\nAixò val la pena recordar-ho: un cop has après on cau l'accent d'un verb en infinitiu, ja saps on caurà en totes les seves formes conjugades."
         },
         {
           "type": "callout",
@@ -50,7 +50,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Regla 2a: prefixos i sufixos **no accentuats**\n\nLes paraules derivades (_Ableitungen_) es formen afegint un prefix o un sufix a una paraula base. La pregunta clau és: **aquest afegit s'emporta l'accent, o el deixa on era?**\n\nHi ha dos grups clars. Comencem pel més senzill: els prefixos i sufixos **no accentuats** (_akzentlos_), que **no toquen l'accent**. Queda a la síl·laba on ja era a la paraula base.\n\n**Prefixos no accentuats:** _be-, ge-, ver-, er-, ent-, emp-, miss-, zer-_.\n\n> **frei** (lliure) → **Frei**heit (la llibertat) — afegim el sufix _-heit_, l'accent es queda a _Frei_.\n> **kom**men (venir) → be**kom**men (rebre) — afegim el prefix _be-_, però l'accent es queda a _kom_.\n\n**Sufixos no accentuats:** _-ig, -bar, -keit, -heit, -ung, -lich, -sam_.\n\n> **wich**tig (important) — sufix _-ig_, accent a _wich_.\n> **Wohn**ung (el pis) — del verb _wohnen_, sufix _-ung_, accent a _Wohn_.\n> **frag**lich (qüestionable) — del verb _fragen_, sufix _-lich_, accent a _frag_.\n\nLa intuïció és aquesta: aquests prefixos i sufixos són \"peces gramaticals\" sense càrrega semàntica forta, i per això no es guanyen l'accent. Fan feina de modificació (converteixen un adjectiu en substantiu, un verb en una altra cosa), però no criden l'atenció a la pronúncia."
+          "body": "#### Regla 2a: prefixos i sufixos **no accentuats**\n\nLes paraules derivades (_Ableitungen_) es formen afegint un prefix o un sufix a una paraula base. La pregunta clau és: **aquest afegit s'emporta l'accent, o el deixa on era?**\n\nHi ha dos grups clars. Comencem pel més senzill: els prefixos i sufixos **no accentuats** (_akzentlos_), que **no toquen l'accent**. Queda a la síl·laba on ja era a la paraula base.\n\n**Prefixos no accentuats:** _be-, ge-, ver-, er-, ent-, emp-, miss-, zer-_.\n\n> !!**frei**!! (lliure) → !!**Frei**heit!! (la llibertat) — afegim el sufix _-heit_, l'accent es queda a _Frei_.\n> !!**kom**men!! (venir) → !!be**kom**men!! (rebre) — afegim el prefix _be-_, però l'accent es queda a _kom_.\n\n**Sufixos no accentuats:** _-ig, -bar, -keit, -heit, -ung, -lich, -sam_.\n\n> !!**wich**tig!! (important) — sufix _-ig_, accent a _wich_.\n> !!**Wohn**ung!! (el pis) — del verb _wohnen_, sufix _-ung_, accent a _Wohn_.\n> !!**frag**lich!! (qüestionable) — del verb _fragen_, sufix _-lich_, accent a _frag_.\n\nLa intuïció és aquesta: aquests prefixos i sufixos són \"peces gramaticals\" sense càrrega semàntica forta, i per això no es guanyen l'accent. Fan feina de modificació (converteixen un adjectiu en substantiu, un verb en una altra cosa), però no criden l'atenció a la pronúncia."
         },
         {
           "type": "callout",
@@ -65,13 +65,13 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Regla 2b: prefixos **accentuats** (_trennbare Präfixe_)\n\nAra l'altre cas, i aquest és important per a l'A1 perquè toca els **verbs separables**, un tema que veuràs molt aviat.\n\nAlguns prefixos **sí que s'emporten l'accent**. Quan els afegim al verb o al substantiu base, **l'accent es mou** del lloc original al prefix nou.\n\n**Prefixos accentuats:** _ab-, an-, auf-, aus-, bei-, ein-, mit-, nach-, vor-, weg-, zu-, zurück-, hin-, her-_.\n\n> **fah**ren (anar, en vehicle) → **weg**fahren (marxar, sortir en vehicle)\n> **kau**fen (comprar) → **ein**kaufen (fer la compra)\n> **kom**men (venir) → **an**kommen (arribar)\n> **ste**hen (estar dret) → **auf**stehen (aixecar-se)\n\nObserva el canvi: a _fahren_ l'accent és a _fah-_; a _wegfahren_, l'accent salta cap a _weg-_, perquè el prefix _weg-_ és accentuat. El verb base conserva la seva força relativa, però la síl·laba principal de la paraula ja és el prefix.\n\nAquesta regla no és un capritx fonètic: marca una diferència **gramatical real**. Els prefixos accentuats són també els **prefixos separables**, els que en una oració conjugada se'n van al final:\n\n> Infinitiu: **ein**kaufen.\n> Oració conjugada: _Ich **kau**fe am Samstag **ein**._ (Faig la compra el dissabte.)\n\nA l'oral, l'accent fort al prefix t'ajuda a sentir-lo quan va separat al final de l'oració. No és casualitat que siguin els prefixos amb \"cos\" semàntic (direcció, moviment, posició: _ab_ \"fora\", _ein_ \"dins\", _auf_ \"amunt\", _mit_ \"amb\"): tenen significat propi, i per això es guanyen l'accent."
+          "body": "#### Regla 2b: prefixos **accentuats** (_trennbare Präfixe_)\n\nAra l'altre cas, i aquest és important per a l'A1 perquè toca els **verbs separables**, un tema que veuràs molt aviat.\n\nAlguns prefixos **sí que s'emporten l'accent**. Quan els afegim al verb o al substantiu base, **l'accent es mou** del lloc original al prefix nou.\n\n**Prefixos accentuats:** _ab-, an-, auf-, aus-, bei-, ein-, mit-, nach-, vor-, weg-, zu-, zurück-, hin-, her-_.\n\n> !!**fah**ren!! (anar, en vehicle) → !!**weg**fahren!! (marxar, sortir en vehicle)\n> !!**kau**fen!! (comprar) → !!**ein**kaufen!! (fer la compra)\n> !!**kom**men!! (venir) → !!**an**kommen!! (arribar)\n> !!**ste**hen!! (estar dret) → !!**auf**stehen!! (aixecar-se)\n\nObserva el canvi: a _fahren_ l'accent és a _fah-_; a _wegfahren_, l'accent salta cap a _weg-_, perquè el prefix _weg-_ és accentuat. El verb base conserva la seva força relativa, però la síl·laba principal de la paraula ja és el prefix.\n\nAquesta regla no és un capritx fonètic: marca una diferència **gramatical real**. Els prefixos accentuats són també els **prefixos separables**, els que en una oració conjugada se'n van al final:\n\n> Infinitiu: !!**ein**kaufen!!.\n> Oració conjugada: _!!Ich **kau**fe am Samstag **ein**.!!_ (Faig la compra el dissabte.)\n\nA l'oral, l'accent fort al prefix t'ajuda a sentir-lo quan va separat al final de l'oració. No és casualitat que siguin els prefixos amb \"cos\" semàntic (direcció, moviment, posició: _ab_ \"fora\", _ein_ \"dins\", _auf_ \"amunt\", _mit_ \"amb\"): tenen significat propi, i per això es guanyen l'accent."
         },
         {
           "type": "callout",
           "variant": "warning",
           "title": "Contrast crucial",
-          "body": "Parella de germans que sonen diferent i signifiquen diferent:\n\n- be**kom**men (rebre) → prefix _be-_ **no accentuat**, prefix **no separable**, accent al verb.\n- **an**kommen (arribar) → prefix _an-_ **accentuat**, prefix **separable**, accent al prefix.\n\nQuan més endavant estudiem els verbs separables, aquesta distinció de l'accent serà la teva pista auditiva principal."
+          "body": "Parella de germans que sonen diferent i signifiquen diferent:\n\n- !!be**kom**men!! (rebre) → prefix _be-_ **no accentuat**, prefix **no separable**, accent al verb.\n- !!**an**kommen!! (arribar) → prefix _an-_ **accentuat**, prefix **separable**, accent al prefix.\n\nQuan més endavant estudiem els verbs separables, aquesta distinció de l'accent serà la teva pista auditiva principal."
         }
       ]
     },
@@ -86,13 +86,13 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Regla 3: paraules compostes → accent a la paraula de l'esquerra\n\nL'alemany és famós per les seves **paraules compostes** (_Komposita_): ajuntar dues o més paraules per formar-ne una de sola. Ja n'has trobat alguna: _Vorname, Familienname, Telefonnummer_.\n\nLa regla aquí és neta:\n\n> **En un compost, l'accent principal va a la primera paraula (la de l'esquerra).**\n\n> die **Bau**stelle (l'obra, el solar en construcció) — de _Bau_ (construcció) + _Stelle_ (lloc).\n> das **Wohn**zimmer (el saló) — de _wohnen_ (viure) + _Zimmer_ (habitació).\n> **him**melblau (blau cel) — de _Himmel_ (cel) + _blau_ (blau).\n\nEl motiu té sentit: la paraula de l'esquerra és la que **especifica** i aporta la informació nova; la de la dreta és la **categoria general**. Un _Wohnzimmer_ és un _Zimmer_ (habitació), però concretament d'un tipus: on es viu. L'accent cau on hi ha la informació distintiva.\n\nAquesta regla et serà molt útil quan sentis paraules compostes llargues per primer cop: pots buscar mentalment on comença el compost i accentuar el principi.\n\n#### Excepcions: compostos amb _Jahr-_\n\nHi ha un grupet d'excepcions que convé memoritzar perquè sonen a tot arreu. Són compostos amb _Jahr_ (any) en què l'accent **no** cau sobre _Jahr_ sinó sobre la segona part:\n\n> das Jahr**hun**dert (el segle) — literalment \"any-centena\".\n> das Jahr**tau**send (el mil·lenni) — literalment \"any-miler\".\n> das Jahr**zehnt** (la dècada) — literalment \"any-desena\".\n\nPer què? Perquè la informació rellevant per distingir aquests tres conceptes no és _Jahr_ (tots tres són \"anys\"), sinó **la quantitat**: _hundert_ (cent), _tausend_ (mil), _zehn_ (deu). És coherent amb la filosofia general: l'accent cau on hi ha el contrast de significat."
+          "body": "#### Regla 3: paraules compostes → accent a la paraula de l'esquerra\n\nL'alemany és famós per les seves **paraules compostes** (_Komposita_): ajuntar dues o més paraules per formar-ne una de sola. Ja n'has trobat alguna: _Vorname, Familienname, Telefonnummer_.\n\nLa regla aquí és neta:\n\n> **En un compost, l'accent principal va a la primera paraula (la de l'esquerra).**\n\n> !!die **Bau**stelle!! (l'obra, el solar en construcció) — de _Bau_ (construcció) + _Stelle_ (lloc).\n> !!das **Wohn**zimmer!! (el saló) — de _wohnen_ (viure) + _Zimmer_ (habitació).\n> !!**him**melblau!! (blau cel) — de _Himmel_ (cel) + _blau_ (blau).\n\nEl motiu té sentit: la paraula de l'esquerra és la que **especifica** i aporta la informació nova; la de la dreta és la **categoria general**. Un _Wohnzimmer_ és un _Zimmer_ (habitació), però concretament d'un tipus: on es viu. L'accent cau on hi ha la informació distintiva.\n\nAquesta regla et serà molt útil quan sentis paraules compostes llargues per primer cop: pots buscar mentalment on comença el compost i accentuar el principi.\n\n#### Excepcions: compostos amb _Jahr-_\n\nHi ha un grupet d'excepcions que convé memoritzar perquè sonen a tot arreu. Són compostos amb _Jahr_ (any) en què l'accent **no** cau sobre _Jahr_ sinó sobre la segona part:\n\n> !!das Jahr**hun**dert!! (el segle) — literalment \"any-centena\".\n> !!das Jahr**tau**send!! (el mil·lenni) — literalment \"any-miler\".\n> !!das Jahr**zehnt**!! (la dècada) — literalment \"any-desena\".\n\nPer què? Perquè la informació rellevant per distingir aquests tres conceptes no és _Jahr_ (tots tres són \"anys\"), sinó **la quantitat**: _hundert_ (cent), _tausend_ (mil), _zehn_ (deu). És coherent amb la filosofia general: l'accent cau on hi ha el contrast de significat."
         },
         {
           "type": "callout",
           "variant": "info",
           "title": "Nota",
-          "body": "Altres compostos corrents amb _Jahr_ sí que segueixen la regla general: _**Jahr**eszeit_ (estació de l'any), _**Jahr**gang_ (promoció, lleva). Les excepcions són específiques dels compostos amb valor numèric."
+          "body": "Altres compostos corrents amb _Jahr_ sí que segueixen la regla general: _!!**Jahr**eszeit!!_ (estació de l'any), _!!**Jahr**gang!!_ (promoció, lleva). Les excepcions són específiques dels compostos amb valor numèric."
         }
       ]
     },
@@ -147,14 +147,14 @@
           "title": "10.1 Prefixos no accentuats (inseparables)",
           "headers": ["Prefix", "Exemple", "Accent"],
           "rows": [
-            ["**be-**", "be**kom**men (rebre)", "al verb"],
-            ["**ge-**", "ge**hö**ren (pertànyer)", "al verb"],
-            ["**ver-**", "ver**ste**hen (entendre)", "al verb"],
-            ["**er-**", "er**zäh**len (explicar)", "al verb"],
-            ["**ent-**", "ent**schul**digen (disculpar)", "al verb"],
-            ["**emp-**", "emp**feh**len (recomanar)", "al verb"],
+            ["**be-**", "!!be**kom**men!! (rebre)", "al verb"],
+            ["**ge-**", "!!ge**hö**ren!! (pertànyer)", "al verb"],
+            ["**ver-**", "!!ver**ste**hen!! (entendre)", "al verb"],
+            ["**er-**", "!!er**zäh**len!! (explicar)", "al verb"],
+            ["**ent-**", "!!ent**schul**digen!! (disculpar)", "al verb"],
+            ["**emp-**", "!!emp**feh**len!! (recomanar)", "al verb"],
             ["**miss-**", "missver**ste**hen (malentendre)", "al verb"],
-            ["**zer-**", "zer**stö**ren (destruir)", "al verb"]
+            ["**zer-**", "!!zer**stö**ren!! (destruir)", "al verb"]
           ],
           "caption": "Aquests prefixos són **inseparables** i deixen l'accent a l'arrel del verb."
         },
@@ -163,16 +163,16 @@
           "title": "10.2 Prefixos accentuats (separables)",
           "headers": ["Prefix", "Exemple", "Accent"],
           "rows": [
-            ["**ab-**", "**ab**fahren (marxar)", "al prefix"],
-            ["**an-**", "**an**kommen (arribar)", "al prefix"],
-            ["**auf-**", "**auf**stehen (aixecar-se)", "al prefix"],
-            ["**aus-**", "**aus**gehen (sortir)", "al prefix"],
-            ["**ein-**", "**ein**kaufen (fer la compra)", "al prefix"],
-            ["**mit-**", "**mit**kommen (venir amb algú)", "al prefix"],
-            ["**nach-**", "**nach**fragen (tornar a preguntar)", "al prefix"],
-            ["**vor-**", "**vor**stellen (presentar)", "al prefix"],
-            ["**weg-**", "**weg**fahren (marxar en vehicle)", "al prefix"],
-            ["**zu-**", "**zu**hören (escoltar)", "al prefix"]
+            ["**ab-**", "!!**ab**fahren!! (marxar)", "al prefix"],
+            ["**an-**", "!!**an**kommen!! (arribar)", "al prefix"],
+            ["**auf-**", "!!**auf**stehen!! (aixecar-se)", "al prefix"],
+            ["**aus-**", "!!**aus**gehen!! (sortir)", "al prefix"],
+            ["**ein-**", "!!**ein**kaufen!! (fer la compra)", "al prefix"],
+            ["**mit-**", "!!**mit**kommen!! (venir amb algú)", "al prefix"],
+            ["**nach-**", "!!**nach**fragen!! (tornar a preguntar)", "al prefix"],
+            ["**vor-**", "!!**vor**stellen!! (presentar)", "al prefix"],
+            ["**weg-**", "!!**weg**fahren!! (marxar en vehicle)", "al prefix"],
+            ["**zu-**", "!!**zu**hören!! (escoltar)", "al prefix"]
           ],
           "caption": "Aquests prefixos són **separables**: a l'oració conjugada se'n van al final, i atrauen l'accent."
         },
@@ -181,13 +181,13 @@
           "title": "10.3 Sufixos no accentuats",
           "headers": ["Sufix", "Exemple", "Accent"],
           "rows": [
-            ["**-ig**", "**wich**tig (important)", "a l'arrel"],
-            ["**-bar**", "**mach**bar (factible)", "a l'arrel"],
-            ["**-keit**", "**Mög**lichkeit (possibilitat)", "a l'arrel"],
-            ["**-heit**", "**Frei**heit (llibertat)", "a l'arrel"],
-            ["**-ung**", "**Wohn**ung (pis)", "a l'arrel"],
-            ["**-lich**", "**frag**lich (qüestionable)", "a l'arrel"],
-            ["**-sam**", "**lang**sam (lent)", "a l'arrel"]
+            ["**-ig**", "!!**wich**tig!! (important)", "a l'arrel"],
+            ["**-bar**", "!!**mach**bar!! (factible)", "a l'arrel"],
+            ["**-keit**", "!!**Mög**lichkeit!! (possibilitat)", "a l'arrel"],
+            ["**-heit**", "!!**Frei**heit!! (llibertat)", "a l'arrel"],
+            ["**-ung**", "!!**Wohn**ung!! (pis)", "a l'arrel"],
+            ["**-lich**", "!!**frag**lich!! (qüestionable)", "a l'arrel"],
+            ["**-sam**", "!!**lang**sam!! (lent)", "a l'arrel"]
           ]
         },
         {
@@ -195,13 +195,13 @@
           "title": "10.4 Compostos: regla i excepcions",
           "headers": ["Compost", "Peces", "Accent"],
           "rows": [
-            ["das **Wohn**zimmer", "wohnen + Zimmer", "a l'esquerra (regla)"],
-            ["die **Bau**stelle", "Bau + Stelle", "a l'esquerra (regla)"],
+            ["!!das **Wohn**zimmer!!", "wohnen + Zimmer", "a l'esquerra (regla)"],
+            ["!!die **Bau**stelle!!", "Bau + Stelle", "a l'esquerra (regla)"],
             ["der Fa**mi**lienname", "Familie + Name", "a l'esquerra (sobre _Familie_)"],
             ["die Tele**fon**nummer", "Telefon + Nummer", "a l'esquerra (sobre _Telefon_)"],
-            ["das Jahr**hun**dert", "Jahr + hundert", "a la dreta (excepció numèrica)"],
-            ["das Jahr**tau**send", "Jahr + tausend", "a la dreta (excepció numèrica)"],
-            ["das Jahr**zehnt**", "Jahr + zehn", "a la dreta (excepció numèrica)"]
+            ["!!das Jahr**hun**dert!!", "Jahr + hundert", "a la dreta (excepció numèrica)"],
+            ["!!das Jahr**tau**send!!", "Jahr + tausend", "a la dreta (excepció numèrica)"],
+            ["!!das Jahr**zehnt**!!", "Jahr + zehn", "a la dreta (excepció numèrica)"]
           ],
           "caption": "Regla general: accent a la paraula esquerra. Excepcions: compostos numèrics amb _Jahr-_."
         }
