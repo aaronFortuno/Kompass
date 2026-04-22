@@ -1,7 +1,7 @@
 /*
  * Parser d'inline rich text · DATA-MODEL §3.6
  *
- * Admet quatre operadors (no anidats amb superposició):
+ * Admet quatre operadors (amb anidament bàsic):
  *   **text**   → <strong>
  *   ==text==   → <mark class="k-mark">       (highlight cromàtic)
  *   _text_     → <em>
@@ -9,25 +9,32 @@
  *
  * Escapament: \**  \==  \_  \`  \\
  *
- * Aquest mòdul exposa dues capes:
- *   1. `tokenizeInline(text)` → retorna una llista de tokens
- *      `{ type, content }` on type ∈ {text|strong|em|mark|code}.
+ * Aquest mòdul exposa:
+ *   1. `tokenizeInline(text)` → retorna una llista plana de tokens
+ *      `{ type, content }` del nivell més extern (sense recursió).
  *      Aquesta és la representació "de seguiment": el typewriter itera
- *      sobre els caràcters _visibles_ (ja sense els delimitadors markdown).
- *   2. `parseInline(text)` → retorna un array de fills React llestos per
- *      renderitzar. Utilitza tokenizeInline internament.
+ *      sobre els caràcters _visibles_ (ja sense els delimitadors).
+ *   2. `parseInline(text)` → retorna un array de fills React amb
+ *      anidament (els `content` de strong/em/mark tornen a passar per
+ *      parseInline, limitat a 6 nivells de profunditat com a defensa).
  *   3. `renderTokensUpTo(tokens, n)` → renderitza només els primers `n`
- *      caràcters visibles, preservant el format a cada segment. S'usa
- *      al component <Typed /> per escriure text formatat progressivament
- *      sense mostrar mai els símbols de sintaxi.
+ *      caràcters visibles. S'usa al component <Typed /> per escriure
+ *      text formatat progressivament sense mostrar els símbols de
+ *      sintaxi.
  *
- * Pure functions. Els tests viuen a tests/parseInline.test.js.
+ * Pure functions.
  */
 
 import { createElement } from 'react';
 
 const TOKEN_RE =
   /(\\[\\*=_`])|(\*\*(?:[^*]|\*(?!\*))+\*\*)|(==[^=]+==)|(_[^_]+_)|(`[^`]+`)/g;
+
+// Profunditat màxima de la recursió per render. Els casos didàctics
+// reals usen com a molt 2 nivells (p. ex. `_wohn**en**_` o
+// `**_wohn-_**`). 6 dóna marge ampli i evita stack overflow si hi ha
+// un patró inesperat al contingut autoral.
+const MAX_DEPTH = 6;
 
 export function tokenizeInline(text) {
   if (!text) return [];
@@ -65,18 +72,28 @@ export function visibleLength(tokens) {
   return len;
 }
 
-function renderToken(tok, content, key) {
+function renderTokenDepth(tok, content, key, depth) {
   // `code` es tracta com a literal: dins seu no s'interpreten altres
-  // operadors (convenció monospace — `_wohn_` dins backticks és literal).
+  // operadors.
   if (tok.type === 'code') {
     return createElement('code', { key }, content);
   }
-  // Per a la resta, parsem recursivament perquè els anidaments es
-  // renderitzin bé. Exemples pràctics:
-  //   _wohn**en**_  → italic amb 'en' bold+italic.
-  //   **_wohn-_**   → bold amb 'wohn-' italic+bold.
-  //   ==_data_==    → highlight amb contingut italic.
-  const children = parseInline(content);
+  // Si el content coincideix amb si mateix (protecció idempotent) o
+  // hem excedit la profunditat màxima, retornem text literal.
+  const recurseContent = depth < MAX_DEPTH ? content : null;
+  let children = content;
+  if (recurseContent != null) {
+    const subTokens = tokenizeInline(recurseContent);
+    // Protecció: si el tokenitzador retorna un únic token idèntic al
+    // passat (ex: un token sospitós que no redueix el text), tallem.
+    const sameAsSelf =
+      subTokens.length === 1 &&
+      subTokens[0].type !== 'text' &&
+      subTokens[0].content === tok.content;
+    if (!sameAsSelf) {
+      children = renderTokensDepth(subTokens, Number.POSITIVE_INFINITY, depth + 1);
+    }
+  }
   switch (tok.type) {
     case 'strong':
       return createElement('strong', { key }, children);
@@ -89,7 +106,7 @@ function renderToken(tok, content, key) {
   }
 }
 
-export function renderTokensUpTo(tokens, n) {
+function renderTokensDepth(tokens, n, depth) {
   const out = [];
   let acc = 0;
   let key = 0;
@@ -97,12 +114,16 @@ export function renderTokensUpTo(tokens, n) {
     const len = tok.content.length;
     if (acc >= n) break;
     const visibleHere = acc + len <= n ? tok.content : tok.content.slice(0, n - acc);
-    out.push(renderToken(tok, visibleHere, key++));
+    out.push(renderTokenDepth(tok, visibleHere, key++, depth));
     acc += len;
   }
   return out;
 }
 
+export function renderTokensUpTo(tokens, n) {
+  return renderTokensDepth(tokens, n, 0);
+}
+
 export function parseInline(text) {
-  return renderTokensUpTo(tokenizeInline(text), Number.POSITIVE_INFINITY);
+  return renderTokensDepth(tokenizeInline(text), Number.POSITIVE_INFINITY, 0);
 }

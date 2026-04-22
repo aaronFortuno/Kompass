@@ -15,7 +15,16 @@
       "kind": "narrative",
       "heading": "Willkommen",
       "lead": "Si has arribat fins aquí és que **vols aprendre alemany**. Això ja és mitja victòria.",
-      "body": "L'alemany té fama de difícil. És una llengua que s'assembla poc al que has sentit tota la vida: sonoritats fortes, paraules llargues, una gramàtica que demana atenció. Però té una cosa a favor seu: és ==profundament lògica==. Cap particularitat és aleatòria; cada regla té una raó, i la majoria de regles són poques però fortes."
+      "body": "L'alemany té fama de difícil. És una llengua que s'assembla poc al que has sentit tota la vida: sonoritats fortes, paraules llargues, una gramàtica que demana atenció. Però té una cosa a favor seu: és ==profundament lògica==. Cap particularitat és aleatòria; cada regla té una raó, i la majoria de regles són poques però fortes.",
+      "visuals": [
+        {
+          "svg": "<svg viewBox='0 0 320 320' xmlns='http://www.w3.org/2000/svg' aria-hidden='true'><g fill='none' stroke='currentColor' stroke-width='0.6'><circle cx='160' cy='160' r='150' opacity='0.22'/><circle cx='160' cy='160' r='120' opacity='0.35'/><circle cx='160' cy='160' r='72' opacity='0.48'/></g><g fill='currentColor'><polygon points='160,22 150,152 160,160' opacity='0.85'/><polygon points='160,22 170,152 160,160' opacity='0.28'/><polygon points='160,298 170,168 160,160' opacity='0.28'/><polygon points='160,298 150,168 160,160' opacity='0.58'/><polygon points='298,160 168,150 160,160' opacity='0.28'/><polygon points='298,160 168,170 160,160' opacity='0.58'/><polygon points='22,160 152,170 160,160' opacity='0.85'/><polygon points='22,160 152,150 160,160' opacity='0.28'/><circle cx='160' cy='160' r='3.5'/></g><g font-family='Newsreader, serif' font-size='12' font-style='italic' fill='currentColor' opacity='0.6'><text x='160' y='14' text-anchor='middle'>N</text><text x='160' y='316' text-anchor='middle'>S</text><text x='312' y='164' text-anchor='end'>E</text><text x='8' y='164' text-anchor='start'>O</text></g></svg>",
+          "alt": "Una rosa dels vents — il·lustració decorativa del mètode Kompass",
+          "caption": "Un instrument per orientar-se.",
+          "credit": "Imatge provisional · SVG inline",
+          "width": 280
+        }
+      ]
     },
     {
       "id": "why-german",

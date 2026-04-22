@@ -577,14 +577,20 @@
     opacity 380ms var(--ease-standard),
     filter 480ms var(--ease-standard);
 }
+/* Apilament explícit perquè el beat actiu sempre quedi damunt dels
+   peeks atenuats (prev/next) i dels far (invisibles). Sense aquest
+   z-index manual, l'ordre del DOM feia que beats molt alts — p. ex.
+   taules de síntesi grans — tapessin el current. */
 .kf-peek-prev-far {
   transform: translate(-50%, -30vh) scale(0.5);
   opacity: 0;
   pointer-events: none;
+  z-index: 1;
 }
 .kf-peek-prev {
   transform: translate(-50%, 2vh) scale(0.62);
   pointer-events: none;
+  z-index: 3;
 }
 .kf-peek-prev .kf-peek-content {
   opacity: 0.28;
@@ -592,10 +598,12 @@
 }
 .kf-peek-current {
   transform: translate(-50%, 22vh) scale(1);
+  z-index: 5;
 }
 .kf-peek-next {
   transform: translate(-50%, 70vh) scale(0.62);
   pointer-events: none;
+  z-index: 3;
 }
 .kf-peek-next .kf-peek-content {
   opacity: 0.28;
@@ -605,6 +613,7 @@
   transform: translate(-50%, 110vh) scale(0.5);
   opacity: 0;
   pointer-events: none;
+  z-index: 1;
 }
 
 /*
