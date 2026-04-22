@@ -7,7 +7,9 @@
   "title": "Satzstruktur — sintaxi",
   "shortTitle": "Satzstruktur",
   "description": "L'ordre de paraules en alemany: la regla de la segona posició en declaratives, W-Fragen i Ja/Nein-Fragen.",
-  "axes": ["sintaxi-ordre-paraules"],
+  "axes": [
+    "sintaxi-ordre-paraules"
+  ],
   "estimatedMinutes": 22,
   "steps": [
     {
@@ -47,10 +49,22 @@
       "lead": "==El verb conjugat sempre va a la posició 2==.",
       "body": "El subjecte, normalment, va davant (posició 1), i els complements darrere (3+). El verb no es mou mai.",
       "examples": [
-        { "de": "==!!Ich!!== · ==!!bin!!== · !!36 Jahre alt!!.", "ca": "Jo tinc 36 anys." },
-        { "de": "==!!Ich!!== · ==!!arbeite!!== · !!bei Audi!!.", "ca": "Treballo a Audi." },
-        { "de": "==!!Meine Adresse!!== · ==!!ist!!== · !!Jahnstraße 5!!.", "ca": "La meva adreça és Jahnstraße 5." },
-        { "de": "==!!Das!!== · ==!!ist!!== · !!in Bayern!!.", "ca": "Això és a Baviera." }
+        {
+          "de": "==!!Ich!!== · ==!!bin!!== · !!36 Jahre alt!!.",
+          "ca": "Jo tinc 36 anys."
+        },
+        {
+          "de": "==!!Ich!!== · ==!!arbeite!!== · !!bei Audi!!.",
+          "ca": "Treballo a Audi."
+        },
+        {
+          "de": "==!!Meine Adresse!!== · ==!!ist!!== · !!Jahnstraße 5!!.",
+          "ca": "La meva adreça és Jahnstraße 5."
+        },
+        {
+          "de": "==!!Das!!== · ==!!ist!!== · !!in Bayern!!.",
+          "ca": "Això és a Baviera."
+        }
       ],
       "callout": {
         "variant": "warning",
@@ -102,12 +116,60 @@
       "lead": "Demanen una informació concreta. Comencen per un ==Fragewort== que gairebé sempre comença per **W**.",
       "body": "L'estructura és idèntica a la declarativa però amb un Fragewort a la posició 1.",
       "tabs": [
-        { "pron": "Wer?", "gloss": "Qui?", "note": "Per a persones.", "example": { "de": "==Wer== ist das?", "ca": "Qui és?" } },
-        { "pron": "Was?", "gloss": "Què?", "note": "Per a coses o conceptes.", "example": { "de": "==Was== ist das?", "ca": "Què és?" } },
-        { "pron": "Wie?", "gloss": "Com?", "note": "Per a la manera o el nom.", "example": { "de": "==Wie== heißt du?", "ca": "Com et dius?" } },
-        { "pron": "Wo?", "gloss": "On?", "note": "Localització estàtica (on ets).", "example": { "de": "==Wo== wohnst du?", "ca": "On vius?" } },
-        { "pron": "Woher?", "gloss": "D'on?", "note": "Origen (d'on vens).", "example": { "de": "==Woher== kommst du?", "ca": "D'on véns?" } },
-        { "pron": "Wohin?", "gloss": "Cap a on?", "note": "Destinació (cap a on vas).", "example": { "de": "==Wohin== gehst du?", "ca": "Cap a on vas?" } }
+        {
+          "pron": "Wer?",
+          "gloss": "Qui?",
+          "note": "Per a persones.",
+          "example": {
+            "de": "==Wer== ist das?",
+            "ca": "Qui és?"
+          }
+        },
+        {
+          "pron": "Was?",
+          "gloss": "Què?",
+          "note": "Per a coses o conceptes.",
+          "example": {
+            "de": "==Was== ist das?",
+            "ca": "Què és?"
+          }
+        },
+        {
+          "pron": "Wie?",
+          "gloss": "Com?",
+          "note": "Per a la manera o el nom.",
+          "example": {
+            "de": "==Wie== heißt du?",
+            "ca": "Com et dius?"
+          }
+        },
+        {
+          "pron": "Wo?",
+          "gloss": "On?",
+          "note": "Localització estàtica (on ets).",
+          "example": {
+            "de": "==Wo== wohnst du?",
+            "ca": "On vius?"
+          }
+        },
+        {
+          "pron": "Woher?",
+          "gloss": "D'on?",
+          "note": "Origen (d'on vens).",
+          "example": {
+            "de": "==Woher== kommst du?",
+            "ca": "D'on véns?"
+          }
+        },
+        {
+          "pron": "Wohin?",
+          "gloss": "Cap a on?",
+          "note": "Destinació (cap a on vas).",
+          "example": {
+            "de": "==Wohin== gehst du?",
+            "ca": "Cap a on vas?"
+          }
+        }
       ],
       "rule": [
         "**Fragewort** ocupa la **posició 1**.",
@@ -134,9 +196,18 @@
       "lead": "==El verb conjugat es col·loca a la posició 1==.",
       "body": "Sí, el verb passa davant de tot. Sense Fragewort, sense subjecte al davant, sense res. Només el verb. L'ordre canvia físicament — no és només entonació com en català.",
       "examples": [
-        { "de": "==Kommst== du aus Deutschland?", "ca": "Véns d'Alemanya?" },
-        { "de": "==Gibt== es eine Party?", "ca": "Hi ha una festa?" },
-        { "de": "==Möchtest== du etwas trinken?", "ca": "Vols beure alguna cosa?" }
+        {
+          "de": "==Kommst== du aus Deutschland?",
+          "ca": "Véns d'Alemanya?"
+        },
+        {
+          "de": "==Gibt== es eine Party?",
+          "ca": "Hi ha una festa?"
+        },
+        {
+          "de": "==Möchtest== du etwas trinken?",
+          "ca": "Vols beure alguna cosa?"
+        }
       ],
       "comparison": [
         {
@@ -171,23 +242,23 @@
       "lead": "Errors típics dels catalanoparlants. Millor conèixer-los ara.",
       "pitfalls": [
         {
-          "bad": "Arbeite bei Audi.",
-          "good": "**Ich** arbeite bei Audi.",
+          "bad": "!!Arbeite bei Audi.!!",
+          "good": "!!**Ich** arbeite bei Audi.!!",
           "why": "El subjecte és gairebé sempre obligatori en alemany."
         },
         {
-          "bad": "In Regensburg **ich wohne**.",
-          "good": "In Regensburg **wohne ich**.",
+          "bad": "!!In Regensburg **ich wohne**.!!",
+          "good": "!!In Regensburg **wohne ich**.!!",
           "why": "Si comences per un complement, el verb no es mou de la posició 2; és el subjecte qui es desplaça."
         },
         {
-          "bad": "Du **kommst** aus Deutschland?",
-          "good": "**Kommst** du aus Deutschland?",
+          "bad": "!!Du **kommst** aus Deutschland?!!",
+          "good": "!!**Kommst** du aus Deutschland?!!",
           "why": "Per a preguntes sí/no, el verb ha d'anar al davant. No només entonació."
         },
         {
-          "bad": "**Wo** kommst du?",
-          "good": "**Woher** kommst du?",
+          "bad": "!!**Wo** kommst du?!!",
+          "good": "!!**Woher** kommst du?!!",
           "why": "_Wo_ és localització estàtica; _Woher_ és origen; _Wohin_ és destinació."
         }
       ]
@@ -231,20 +302,56 @@
       "tables": [
         {
           "title": "Les tres estructures bàsiques",
-          "headers": ["Tipus", "Posició 1", "Posició 2", "Posició 3+"],
+          "headers": [
+            "Tipus",
+            "Posició 1",
+            "Posició 2",
+            "Posició 3+"
+          ],
           "rows": [
-            ["Declarativa", "Subjecte o complement", "**Verb**", "Resta"],
-            ["W-Frage (parcial)", "**Fragewort** (_Wie, Wo, Was…_)", "**Verb**", "Subjecte + complements"],
-            ["Ja/Nein-Frage (total)", "**Verb**", "Subjecte", "Complements"]
+            [
+              "Declarativa",
+              "Subjecte o complement",
+              "**Verb**",
+              "Resta"
+            ],
+            [
+              "W-Frage (parcial)",
+              "**Fragewort** (_Wie, Wo, Was…_)",
+              "**Verb**",
+              "Subjecte + complements"
+            ],
+            [
+              "Ja/Nein-Frage (total)",
+              "**Verb**",
+              "Subjecte",
+              "Complements"
+            ]
           ]
         },
         {
           "title": "Exemples comparats",
-          "headers": ["Declarativa", "W-Frage", "Ja/Nein-Frage"],
+          "headers": [
+            "Declarativa",
+            "W-Frage",
+            "Ja/Nein-Frage"
+          ],
           "rows": [
-            ["Du ==kommst== aus Deutschland.", "Woher ==kommst== du?", "==Kommst== du aus Deutschland?"],
-            ["Er ==wohnt== in Berlin.", "Wo ==wohnt== er?", "==Wohnt== er in Berlin?"],
-            ["Sie ==heißt== Anna.", "Wie ==heißt== sie?", "==Heißt== sie Anna?"]
+            [
+              "Du ==kommst== aus Deutschland.",
+              "Woher ==kommst== du?",
+              "==Kommst== du aus Deutschland?"
+            ],
+            [
+              "Er ==wohnt== in Berlin.",
+              "Wo ==wohnt== er?",
+              "==Wohnt== er in Berlin?"
+            ],
+            [
+              "Sie ==heißt== Anna.",
+              "Wie ==heißt== sie?",
+              "==Heißt== sie Anna?"
+            ]
           ]
         }
       ],

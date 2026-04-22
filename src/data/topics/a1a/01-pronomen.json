@@ -7,7 +7,9 @@
   "title": "Pronomen — pronoms",
   "shortTitle": "Pronomen",
   "description": "Pronoms personals (ich, du, er…) i possessius (mein, dein, sein…) amb comparativa ES/CA/DE/EN.",
-  "axes": ["pronoms-verbs"],
+  "axes": [
+    "pronoms-verbs"
+  ],
   "estimatedMinutes": 18,
   "steps": [
     {
@@ -20,9 +22,18 @@
         "**Pronoms possessius** (_Possessivpronomen_): _mein, dein, sein, ihr…_ Indiquen **de qui** és alguna cosa."
       ],
       "examples": [
-        { "de": "Ich heiße Marc.", "ca": "Em dic Marc." },
-        { "de": "Mein Name ist Marc.", "ca": "El meu nom és Marc." },
-        { "de": "Wie ist Ihre Telefonnummer?", "ca": "Quin és el seu telèfon, de Vostè?" }
+        {
+          "de": "Ich heiße Marc.",
+          "ca": "Em dic Marc."
+        },
+        {
+          "de": "Mein Name ist Marc.",
+          "ca": "El meu nom és Marc."
+        },
+        {
+          "de": "Wie ist Ihre Telefonnummer?",
+          "ca": "Quin és el seu telèfon, de Vostè?"
+        }
       ],
       "callout": {
         "variant": "info",
@@ -41,31 +52,46 @@
           "pron": "ich",
           "gloss": "jo",
           "note": "A diferència del català (_jo_) o del castellà (_yo_), **_ich_ s'escriu sempre en minúscula**, fins i tot al mig de l'oració. Només va en majúscula si comença una oració.",
-          "example": { "de": "==Ich== bin Student.", "ca": "Sóc estudiant." }
+          "example": {
+            "de": "==Ich== bin Student.",
+            "ca": "Sóc estudiant."
+          }
         },
         {
           "pron": "du",
           "gloss": "tu",
           "note": "És el tracte **informal**: el que fas servir amb amics, família, companys joves, nens. En alemany la distinció formal/informal és viva i important.",
-          "example": { "de": "==Du== heißt Anna.", "ca": "Et dius Anna." }
+          "example": {
+            "de": "==Du== heißt Anna.",
+            "ca": "Et dius Anna."
+          }
         },
         {
           "pron": "er",
           "gloss": "ell",
           "note": "Masculí. L'alemany **sí que distingeix gènere** a la 3a persona singular, igual que el català.",
-          "example": { "de": "==Er== kommt aus Berlin.", "ca": "Ell ve de Berlín." }
+          "example": {
+            "de": "==Er== kommt aus Berlin.",
+            "ca": "Ell ve de Berlín."
+          }
         },
         {
           "pron": "sie",
           "gloss": "ella",
           "note": "Femení. No confondre amb _sie_ «ells/elles» ni _Sie_ «Vostè». El verb i el context ho aclareixen.",
-          "example": { "de": "==Sie== wohnt in Barcelona.", "ca": "Ella viu a Barcelona." }
+          "example": {
+            "de": "==Sie== wohnt in Barcelona.",
+            "ca": "Ella viu a Barcelona."
+          }
         },
         {
           "pron": "es",
           "gloss": "això",
           "note": "Neutre. L'alemany té **tres gèneres**: _es_ s'usa per a substantius neutres com _das Kind_ o _das Buch_.",
-          "example": { "de": "==Es== ist neu.", "ca": "És nou. (referit a _das Buch_, per exemple)" }
+          "example": {
+            "de": "==Es== ist neu.",
+            "ca": "És nou. (referit a _das Buch_, per exemple)"
+          }
         }
       ],
       "callout": {
@@ -85,25 +111,37 @@
           "pron": "wir",
           "gloss": "nosaltres",
           "note": "Sense distinció de gènere (a diferència del castellà _nosotros/nosotras_).",
-          "example": { "de": "==Wir== lernen Deutsch.", "ca": "Estudiem alemany." }
+          "example": {
+            "de": "==Wir== lernen Deutsch.",
+            "ca": "Estudiem alemany."
+          }
         },
         {
           "pron": "ihr",
           "gloss": "vosaltres",
           "note": "Plural **informal** de _du_: el «vosaltres» que fas servir amb un grup d'amics.",
-          "example": { "de": "==Ihr== seid jung.", "ca": "Sou joves." }
+          "example": {
+            "de": "==Ihr== seid jung.",
+            "ca": "Sou joves."
+          }
         },
         {
           "pron": "sie",
           "gloss": "ells / elles",
           "note": "Sense distinció de gènere. Coincideix amb _sie_ (ella) i _Sie_ (Vostè); el verb ho desambigua.",
-          "example": { "de": "==Sie== wohnen in München.", "ca": "Viuen a Munic." }
+          "example": {
+            "de": "==Sie== wohnen in München.",
+            "ca": "Viuen a Munic."
+          }
         },
         {
           "pron": "Sie",
           "gloss": "Vostè / Vostès",
           "note": "Forma de **cortesia**. **Sempre amb majúscula inicial**. Val tant si parles amb una persona com amb diverses: singular i plural no es distingeixen.",
-          "example": { "de": "Wie heißen ==Sie==?", "ca": "Com es diu, Vostè? (o Vostès?)" }
+          "example": {
+            "de": "Wie heißen ==Sie==?",
+            "ca": "Com es diu, Vostè? (o Vostès?)"
+          }
         }
       ],
       "callout": {
@@ -125,19 +163,45 @@
       "lead": "El possessiu alemany concorda amb el **substantiu posseït**, no només amb el posseïdor.",
       "body": "Cada pronom personal té el seu possessiu corresponent. Aquí la correspondència principal:",
       "pairs": [
-        { "personal": "ich", "possessive": "mein-", "gloss": "el meu / la meva" },
-        { "personal": "du", "possessive": "dein-", "gloss": "el teu / la teva" },
-        { "personal": "er", "possessive": "sein-", "gloss": "el seu / la seva (d'ell)" },
-        { "personal": "sie (ella)", "possessive": "ihr-", "gloss": "el seu / la seva (d'ella)" },
-        { "personal": "Sie (Vostè)", "possessive": "Ihr-", "gloss": "el seu / la seva (de Vostè)" }
+        {
+          "personal": "ich",
+          "possessive": "mein-",
+          "gloss": "el meu / la meva"
+        },
+        {
+          "personal": "du",
+          "possessive": "dein-",
+          "gloss": "el teu / la teva"
+        },
+        {
+          "personal": "er",
+          "possessive": "sein-",
+          "gloss": "el seu / la seva (d'ell)"
+        },
+        {
+          "personal": "sie (ella)",
+          "possessive": "ihr-",
+          "gloss": "el seu / la seva (d'ella)"
+        },
+        {
+          "personal": "Sie (Vostè)",
+          "possessive": "Ihr-",
+          "gloss": "el seu / la seva (de Vostè)"
+        }
       ],
       "rule": [
         "Davant de substantiu **masculí** o **neutre** → forma curta: _mein, dein, sein, ihr, Ihr_.",
         "Davant de substantiu **femení** → forma amb ==-e==: _meine, deine, seine, ihre, Ihre_."
       ],
       "examples": [
-        { "de": "==Mein== Name ist Anna.", "ca": "(_der Name_, masculí → forma curta)" },
-        { "de": "==Meine== Adresse ist…", "ca": "(_die Adresse_, femení → forma amb -e)" }
+        {
+          "de": "==Mein== Name ist Anna.",
+          "ca": "(_der Name_, masculí → forma curta)"
+        },
+        {
+          "de": "==Meine== Adresse ist…",
+          "ca": "(_die Adresse_, femení → forma amb -e)"
+        }
       ]
     },
     {
@@ -153,10 +217,30 @@
       "lead": "En català, «el seu nom» no distingeix posseïdor. **L'alemany sí.**",
       "body": "Per això cal fixar-se en _qui_ posseeix abans d'escriure el possessiu. Observa la comparativa:",
       "comparison": [
-        { "es": "su nombre (de él)", "ca": "el seu nom (d'ell)", "de": "==s==ein Name", "en": "his name" },
-        { "es": "su nombre (de ella)", "ca": "el seu nom (d'ella)", "de": "i==hr== Name", "en": "her name" },
-        { "es": "su dirección (de él)", "ca": "la seva adreça (d'ell)", "de": "==s==eine Adresse", "en": "his address" },
-        { "es": "su dirección (de ella)", "ca": "la seva adreça (d'ella)", "de": "i==hr==e Adresse", "en": "her address" }
+        {
+          "es": "su nombre (de él)",
+          "ca": "el seu nom (d'ell)",
+          "de": "==s==ein Name",
+          "en": "his name"
+        },
+        {
+          "es": "su nombre (de ella)",
+          "ca": "el seu nom (d'ella)",
+          "de": "i==hr== Name",
+          "en": "her name"
+        },
+        {
+          "es": "su dirección (de él)",
+          "ca": "la seva adreça (d'ell)",
+          "de": "==s==eine Adresse",
+          "en": "his address"
+        },
+        {
+          "es": "su dirección (de ella)",
+          "ca": "la seva adreça (d'ella)",
+          "de": "i==hr==e Adresse",
+          "en": "her address"
+        }
       ],
       "rule": [
         "La ==s== inicial de _sein_ marca «d'ell».",
@@ -181,23 +265,23 @@
       "lead": "Errors típics dels catalanoparlants. Coneix-los per avançat.",
       "pitfalls": [
         {
-          "bad": "Anna und **sein** Name",
-          "good": "Anna und **ihr** Name",
+          "bad": "!!Anna und **sein** Name!!",
+          "good": "!!Anna und **ihr** Name!!",
           "why": "Anna és dona → _ihr_."
         },
         {
-          "bad": "**mein** Adresse",
-          "good": "**meine** Adresse",
+          "bad": "!!**mein** Adresse!!",
+          "good": "!!**meine** Adresse!!",
           "why": "_die Adresse_ és femení → cal _-e_."
         },
         {
-          "bad": "**meine** Name",
-          "good": "**mein** Name",
+          "bad": "!!**meine** Name!!",
+          "good": "!!**mein** Name!!",
           "why": "_der Name_ és masculí → forma curta sense _-e_."
         },
         {
-          "bad": "Heute bin **Ich** müde.",
-          "good": "Heute bin **ich** müde.",
+          "bad": "!!Heute bin **Ich** müde.!!",
+          "good": "!!Heute bin **ich** müde.!!",
           "why": "_ich_ sempre minúscula al mig de oració."
         }
       ]
@@ -215,26 +299,74 @@
       "tables": [
         {
           "title": "Personalpronomen",
-          "headers": ["Persona", "Pronom"],
+          "headers": [
+            "Persona",
+            "Pronom"
+          ],
           "rows": [
-            ["1a sg.", "**ich**"],
-            ["2a sg. informal", "**du**"],
-            ["3a sg. (m. / f. / n.)", "**er / sie / es**"],
-            ["1a pl.", "**wir**"],
-            ["2a pl. informal", "**ihr**"],
-            ["3a pl.", "**sie**"],
-            ["Cortesia (sg. i pl.)", "**Sie**"]
+            [
+              "1a sg.",
+              "**ich**"
+            ],
+            [
+              "2a sg. informal",
+              "**du**"
+            ],
+            [
+              "3a sg. (m. / f. / n.)",
+              "**er / sie / es**"
+            ],
+            [
+              "1a pl.",
+              "**wir**"
+            ],
+            [
+              "2a pl. informal",
+              "**ihr**"
+            ],
+            [
+              "3a pl.",
+              "**sie**"
+            ],
+            [
+              "Cortesia (sg. i pl.)",
+              "**Sie**"
+            ]
           ]
         },
         {
           "title": "Possessivpronomen",
-          "headers": ["Persona", "Masculí / Neutre", "Femení"],
+          "headers": [
+            "Persona",
+            "Masculí / Neutre",
+            "Femení"
+          ],
           "rows": [
-            ["1a sg.", "**mein**", "**meine**"],
-            ["2a sg.", "**dein**", "**deine**"],
-            ["3a sg. m.", "**sein**", "**seine**"],
-            ["3a sg. f.", "**ihr**", "**ihre**"],
-            ["Cortesia", "**Ihr**", "**Ihre**"]
+            [
+              "1a sg.",
+              "**mein**",
+              "**meine**"
+            ],
+            [
+              "2a sg.",
+              "**dein**",
+              "**deine**"
+            ],
+            [
+              "3a sg. m.",
+              "**sein**",
+              "**seine**"
+            ],
+            [
+              "3a sg. f.",
+              "**ihr**",
+              "**ihre**"
+            ],
+            [
+              "Cortesia",
+              "**Ihr**",
+              "**Ihre**"
+            ]
           ]
         }
       ]

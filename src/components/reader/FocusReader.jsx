@@ -1873,20 +1873,12 @@ export function FocusReader({ topic }) {
       ref={rootRef}
       onWheel={onWheel}
     >
-      {/* HEADER editorial — 3 columnes: left (back+logo) · center (títol) · right (progress) */}
+      {/* HEADER editorial — 3 columnes: left (logo) · center (títol) · right (progress).
+          El botó "← TORNA AL TEMARI" s'ha eliminat perquè el clic al títol
+          central ja porta al temari amb focus a la lliçó actual; la navegació
+          redundant desordenava la cantonada esquerra. §103 polit. */}
       <div className="kf-head">
         <div className="kf-head-left">
-          <button
-            type="button"
-            className="kf-back"
-            onClick={closeReader}
-            aria-label={t('topic.backToIndex')}
-            title={t('topic.backToIndex')}
-          >
-            <ArrowLeft size={14} aria-hidden="true" />
-            <span>{t('topic.backToIndex')}</span>
-          </button>
-
           <Link
             to="/"
             className="kf-logo"
