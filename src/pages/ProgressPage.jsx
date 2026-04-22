@@ -538,8 +538,13 @@ export function ProgressPage() {
   const importProgress = useProgressStore((s) => s.importProgress);
   const resetProgress = useProgressStore((s) => s.reset);
 
-  // Corpus (estàtic)
-  const allTopics = useMemo(() => getAllTopics(), []);
+  // Corpus (estàtic). Excloem A1a-0 (onboarding de benvinguda) perquè
+  // no és una lliçó de contingut amb exercicis avaluables, i distorsiona
+  // els totals/percentatges del progrés regular.
+  const allTopics = useMemo(
+    () => getAllTopics().filter((t) => t.id !== 'A1a-0'),
+    [],
+  );
   const levelKeys = useMemo(() => getAllLevelKeys(), []);
   const totalTopics = allTopics.length;
   const totalExercises = useMemo(() => countTotalExercises(allTopics), [allTopics]);
@@ -600,7 +605,12 @@ export function ProgressPage() {
   const statesByLevel = useMemo(() => {
     const map = new Map();
     for (const levelKey of levelKeys) {
-      const topicsInLevel = getTopicsByLevel(levelKey);
+      // A1a-0 és la lliçó d'onboarding (benvinguda). No la mostrem al
+      // progrés regular — viu només a la landing fins que l'usuari la
+      // completa la primera vegada.
+      const topicsInLevel = getTopicsByLevel(levelKey).filter(
+        (t) => t.id !== 'A1a-0',
+      );
       const list = topicsInLevel.map((topic) => {
         const state = allStates.find((s) => s.topic.id === topic.id);
         const shown = filter === 'all' || state.status === filter;

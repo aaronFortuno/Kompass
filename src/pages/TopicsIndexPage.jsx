@@ -45,7 +45,10 @@ export function TopicsIndexPage() {
       )}
 
       {levelKeys.map((levelKey) => {
-        const topics = getTopicsByLevel(levelKey);
+        // A1a-0 és el tema d'onboarding: viu només a la landing
+        // (primera entrada o post-reset). No l'ensenyem al temari
+        // regular — no és una lliçó amb contingut lingüístic.
+        const topics = getTopicsByLevel(levelKey).filter((t) => t.id !== 'A1a-0');
         return (
           <section key={levelKey} className="space-y-4 mt-10 first:mt-0">
             <h2 className="font-mono text-xs uppercase tracking-[0.22em] text-reader-ink border-b border-reader-rule pb-2">

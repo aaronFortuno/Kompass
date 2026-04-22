@@ -88,18 +88,21 @@ export function SettingRow({
     return (
       <div
         className={[
-          'flex items-center gap-3 py-2.5 border-b border-reader-rule last:border-b-0',
+          'flex items-center gap-3 py-3.5 border-b border-reader-rule last:border-b-0',
           disabled ? 'opacity-50 pointer-events-none' : '',
         ].join(' ')}
       >
         {Icon ? (
           <Icon
-            size={16}
+            size={18}
             aria-hidden="true"
             className="flex-shrink-0 text-reader-ink-2"
           />
         ) : null}
-        <div id={id} className="font-serif text-sm text-reader-ink flex-1 min-w-0 truncate">
+        <div
+          id={id}
+          className="font-serif text-[15px] text-reader-ink flex-1 min-w-0 truncate"
+        >
           {title}
         </div>
         <div className="flex-shrink-0 flex items-center">{children}</div>

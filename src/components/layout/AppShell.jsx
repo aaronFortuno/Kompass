@@ -1,4 +1,4 @@
-import { Link, NavLink, Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import { Compass } from 'lucide-react';
 import { Header } from '@/components/layout/Header.jsx';
 import { useT } from '@/i18n';
@@ -6,31 +6,17 @@ import pkg from '../../../package.json';
 
 /*
  * AppShell editorial · §17.1 ARCHITECTURE
- * Fons reader-paper + tipografia serif al body. El footer global integra
- * brandmark + tagline (esquerra), navegació secundària (centre/flow) i
- * versió del package.json (dreta) — un sol bloc net que evita haver de
- * duplicar informació a cada pàgina.
+ * Fons reader-paper + tipografia serif al body. El footer global
+ * integra brandmark + tagline (esquerra) i versió (dreta). La
+ * navegació secundària vivia abans també aquí però duplicava la del
+ * header; s'ha traslladat tota al header perquè sigui l'únic punt
+ * d'entrada a les seccions — més consistent (§103).
  */
 
 const APP_VERSION = pkg.version ?? '0.0.0';
 
-const FOOTER_NAV = [
-  { to: '/temari', key: 'nav.topics' },
-  { to: '/progres', key: 'nav.progress' },
-  { to: '/settings', key: 'nav.settings' },
-];
-
 export function AppShell() {
   const { t } = useT();
-
-  const footerLinkClass = ({ isActive }) =>
-    [
-      'font-mono text-[11px] uppercase tracking-[0.16em]',
-      'transition-colors duration-fast ease-standard',
-      isActive
-        ? 'text-reader-ink'
-        : 'text-reader-ink-2 hover:text-reader-ink',
-    ].join(' ');
 
   return (
     <div className="min-h-screen flex flex-col bg-reader-paper text-reader-ink">
@@ -61,18 +47,6 @@ export function AppShell() {
               </span>
             </span>
           </Link>
-
-          {/* Centre: navegació secundària */}
-          <nav
-            aria-label={t('footer.navAria')}
-            className="flex flex-wrap items-center gap-x-6 gap-y-2"
-          >
-            {FOOTER_NAV.map((item) => (
-              <NavLink key={item.to} to={item.to} className={footerLinkClass}>
-                {t(item.key)}
-              </NavLink>
-            ))}
-          </nav>
 
           {/* Dreta: versió visible */}
           <span

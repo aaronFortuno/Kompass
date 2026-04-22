@@ -16,6 +16,7 @@ const NAV_ITEMS = [
   { to: '/temari', key: 'nav.topics' },
   { to: '/rutes', key: 'nav.paths' },
   { to: '/progres', key: 'nav.progress' },
+  { to: '/settings', key: 'nav.settings' },
 ];
 
 export function Header() {
