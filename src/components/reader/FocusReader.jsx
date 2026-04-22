@@ -1370,9 +1370,15 @@ export function FocusReader({ topic }) {
     beat.type !== 'exercise' &&
     !isAtEnd;
 
+  // Reset de l'estat pausat només quan canvia de beat (no quan canvia
+  // fastMode). Així l'usuari pot fer setAutoPlayPaused(true) via click o
+  // barra d'espai i no queda anul·lat pel fastMode-toggle.
+  useEffect(() => {
+    setAutoPlayPaused(false);
+  }, [stepIdx, beatIdx]);
+
   useEffect(() => {
     setAutoPlayBarActive(false);
-    setAutoPlayPaused(false);
     if (!autoPlayEligible) return undefined;
     const readMs = fastMode
       ? 300
@@ -1544,54 +1550,67 @@ export function FocusReader({ topic }) {
               : `Pas ${String(stepIdx + 1).padStart(2, '0')} · ${beatIdx + 1}/${beats.length}`}
           </span>
           <span className="kf-keyhint">
-            {/* Columna 1 · navegació direccional (fletxes ←→) */}
+            {/* Columna 1 · navegació direccional (fletxes ←→). Grid
+                intern: kbds a l'esquerra alineats a la dreta, labels a
+                la dreta alineats a l'esquerra. Això posa les tres
+                fletxes en la mateixa vertical i les tres paraules també. */}
             {!isFullMode ? (
-              <span className="kf-keyhint-col">
+              <span className="kf-keyhint-col kf-keyhint-col-grid">
                 <span className="kgroup">
-                  <kbd>←</kbd>
-                  <kbd>→</kbd>
+                  <span className="kgroup-keys">
+                    <kbd>←</kbd>
+                    <kbd>→</kbd>
+                  </span>
                   <span className="lbl">fragment</span>
                 </span>
                 <span className="kgroup">
-                  <kbd>{MODKEY}</kbd>
-                  <span className="plus">+</span>
-                  <kbd>←</kbd>
-                  <kbd>→</kbd>
+                  <span className="kgroup-keys">
+                    <kbd>{MODKEY}</kbd>
+                    <span className="plus">+</span>
+                    <kbd>←</kbd>
+                    <kbd>→</kbd>
+                  </span>
                   <span className="lbl">pas</span>
                 </span>
                 <span className="kgroup">
-                  <kbd>{MODKEY}</kbd>
-                  <span className="plus">+</span>
-                  <kbd>⇧</kbd>
-                  <span className="plus">+</span>
-                  <kbd>←</kbd>
-                  <kbd>→</kbd>
+                  <span className="kgroup-keys">
+                    <kbd>{MODKEY}</kbd>
+                    <span className="plus">+</span>
+                    <kbd>⇧</kbd>
+                    <span className="plus">+</span>
+                    <kbd>←</kbd>
+                    <kbd>→</kbd>
+                  </span>
                   <span className="lbl">bloc</span>
                 </span>
               </span>
             ) : (
-              <span className="kf-keyhint-col">
+              <span className="kf-keyhint-col kf-keyhint-col-grid">
                 <span className="kgroup">
-                  <kbd>{MODKEY}</kbd>
-                  <span className="plus">+</span>
-                  <kbd>←</kbd>
-                  <kbd>→</kbd>
+                  <span className="kgroup-keys">
+                    <kbd>{MODKEY}</kbd>
+                    <span className="plus">+</span>
+                    <kbd>←</kbd>
+                    <kbd>→</kbd>
+                  </span>
                   <span className="lbl">pas</span>
                 </span>
                 <span className="kgroup">
-                  <kbd>{MODKEY}</kbd>
-                  <span className="plus">+</span>
-                  <kbd>⇧</kbd>
-                  <span className="plus">+</span>
-                  <kbd>←</kbd>
-                  <kbd>→</kbd>
+                  <span className="kgroup-keys">
+                    <kbd>{MODKEY}</kbd>
+                    <span className="plus">+</span>
+                    <kbd>⇧</kbd>
+                    <span className="plus">+</span>
+                    <kbd>←</kbd>
+                    <kbd>→</kbd>
+                  </span>
                   <span className="lbl">bloc</span>
                 </span>
               </span>
             )}
 
             {/* Columna 2 · control de ritme (saltar + auto/pause) */}
-            <span className="kf-keyhint-col">
+            <span className="kf-keyhint-col kf-keyhint-col-grid">
               <span
                 className={'kgroup' + (fastMode ? ' kf-keyhint-active' : '')}
                 title={
@@ -1600,8 +1619,10 @@ export function FocusReader({ topic }) {
                     : 'Salta el typewriter i avança'
                 }
               >
-                <kbd>↑</kbd>
-                <kbd>↓</kbd>
+                <span className="kgroup-keys">
+                  <kbd>↑</kbd>
+                  <kbd>↓</kbd>
+                </span>
                 <span className="lbl">{fastMode ? 'saltant' : 'saltar'}</span>
               </span>
               <span
@@ -1614,7 +1635,9 @@ export function FocusReader({ topic }) {
                     : 'Activa l\'auto-play'
                 }
               >
-                <kbd>p</kbd>
+                <span className="kgroup-keys">
+                  <kbd>p</kbd>
+                </span>
                 <span className="lbl">
                   {settings.autoPlay
                     ? autoPlayPaused
@@ -1626,17 +1649,23 @@ export function FocusReader({ topic }) {
             </span>
 
             {/* Columna 3 · utilitats (config + temari + sortir) */}
-            <span className="kf-keyhint-col">
+            <span className="kf-keyhint-col kf-keyhint-col-grid">
               <span className="kgroup">
-                <kbd>c</kbd>
+                <span className="kgroup-keys">
+                  <kbd>c</kbd>
+                </span>
                 <span className="lbl">config</span>
               </span>
               <span className="kgroup">
-                <kbd>t</kbd>
+                <span className="kgroup-keys">
+                  <kbd>t</kbd>
+                </span>
                 <span className="lbl">temari</span>
               </span>
               <span className="kgroup">
-                <kbd>Esc</kbd>
+                <span className="kgroup-keys">
+                  <kbd>Esc</kbd>
+                </span>
                 <span className="lbl">sortir</span>
               </span>
             </span>

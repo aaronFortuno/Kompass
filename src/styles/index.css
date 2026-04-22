@@ -1636,13 +1636,34 @@ html.dark .k-mark {
   color: rgb(var(--color-reader-ink-2));
   font-size: 10px;
 }
-/* Columnes semàntiques (navegació, ritme, utilitats). Cada columna
-   és un flex vertical amb les dreceres apilades. El separador entre
-   columnes és un border left del second+ -child. */
+/* Columnes semàntiques (navegació, ritme, utilitats). Cada columna té
+   un grid intern 2×N: les tecles alineades al centre (sub-columna
+   esquerra) i els labels alineats a l'esquerra (sub-columna dreta).
+   Això posa totes les ←→ / ↑↓ / lletres en la mateixa vertical i tots
+   els labels també, a totes les columnes. */
 .kf-keyhint-col {
   display: inline-flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 5px;
+}
+.kf-keyhint-col-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+  row-gap: 5px;
+  align-items: center;
+}
+.kf-keyhint-col-grid .kgroup {
+  display: contents; /* els fills (kgroup-keys + lbl) entren al grid */
+}
+.kf-keyhint-col-grid .kgroup-keys {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  justify-self: end; /* tecles alineades a la dreta de la seva sub-columna */
+}
+.kf-keyhint-col-grid .lbl {
+  justify-self: start; /* labels alineats a l'esquerra de la seva sub-columna */
 }
 .kf-keyhint-col + .kf-keyhint-col {
   padding-left: 18px;
@@ -1654,9 +1675,12 @@ html.dark .k-mark {
   border: 1px solid rgb(var(--color-reader-rule));
   padding: 1px 6px;
   border-radius: 3px;
-  background: rgb(var(--color-reader-kbd-bg));
-  color: rgb(var(--color-reader-ink));
-  min-width: 18px;
+  /* Fons transparent per no destacar sobre el paper del peu — uniforme
+     amb el to subtil del keyhint general. Un cop ressaltat amb
+     kf-keyhint-active, el border canvia a ink sense canviar el fons. */
+  background: transparent;
+  color: rgb(var(--color-reader-ink-2));
+  min-width: 20px;
   text-align: center;
   line-height: 1.3;
 }
@@ -1664,18 +1688,6 @@ html.dark .k-mark {
   display: inline-flex;
   align-items: center;
   gap: 2px;
-}
-/* Estat actiu (fastMode, autoPlay): canvi subtil — mateixa mida i
-   estil general que els altres chips, però border + label una mica
-   més pronunciats perquè l'ull detecti que és un mode active. Sense
-   invertir colors: coherent amb la resta del keyhint. */
-.kf-keyhint .kf-keyhint-active kbd {
-  border-color: rgb(var(--color-reader-ink));
-  color: rgb(var(--color-reader-ink));
-}
-.kf-keyhint .kf-keyhint-active .lbl {
-  color: rgb(var(--color-reader-ink));
-  font-weight: 500;
 }
 .kf-keyhint .plus {
   color: rgb(var(--color-reader-muted));
@@ -1688,6 +1700,18 @@ html.dark .k-mark {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-size: 9px;
+}
+/* Estat actiu (fastMode, autoPlay): canvi subtil — mateixa mida i
+   estil general que els altres chips, però border + label una mica
+   més pronunciats perquè l'ull detecti que és un mode active. Sense
+   invertir colors: coherent amb la resta del keyhint. */
+.kf-keyhint .kf-keyhint-active kbd {
+  border-color: rgb(var(--color-reader-ink));
+  color: rgb(var(--color-reader-ink));
+}
+.kf-keyhint .kf-keyhint-active .lbl {
+  color: rgb(var(--color-reader-ink));
+  font-weight: 500;
 }
 
 /* ───── Exercise Card · editorial (Fase 4) ─────
