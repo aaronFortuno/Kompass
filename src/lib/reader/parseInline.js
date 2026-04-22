@@ -74,6 +74,32 @@ const TOKEN_RE =
 // un patró inesperat al contingut autoral.
 const MAX_DEPTH = 6;
 
+/*
+ * Elimina l'últim marcador orfe d'un tipus (sense parell de tancament)
+ * del text. S'usa durant el typewriter: mentre un token s'escriu
+ * caràcter a caràcter, el contingut partial pot tenir un `!!` (o `**`,
+ * `==`) d'obertura pendent de tancar-se. Si no el despullem, el
+ * tokenitzador el rendereix com a text literal i l'usuari veu els
+ * símbols uns mil·lisegons fins al tancament. La funció només treu
+ * l'últim orfe; els parells complets ja formats es conserven.
+ */
+export function stripOrphanMarkers(text) {
+  if (!text || typeof text !== 'string') return text;
+  let out = text;
+  for (const marker of ['!!', '**', '==']) {
+    const parts = out.split(marker);
+    // parts.length === occurrences + 1.
+    // Si el nombre d'ocurrències és senar → últim orfe.
+    const count = parts.length - 1;
+    if (count % 2 === 1) {
+      const last = parts.pop();
+      parts[parts.length - 1] += last;
+      out = parts.join(marker);
+    }
+  }
+  return out;
+}
+
 export function tokenizeInline(text) {
   if (!text) return [];
   const out = [];
@@ -123,15 +149,23 @@ function renderTokenDepth(tok, content, key, depth) {
   const recurseContent = depth < MAX_DEPTH ? content : null;
   let children = content;
   if (recurseContent != null) {
-    const subTokens = tokenizeInline(recurseContent);
-    // Protecció: si el tokenitzador retorna un únic token idèntic al
-    // passat (ex: un token sospitós que no redueix el text), tallem.
+    // Fix §98: mentre el typewriter escriu un token que conté operadors
+    // niats (p. ex. `==!!Ich!!==` o `**!!Mein Name!!**`), el partial
+    // mid-typing pot tenir un `!!`, `**` o `==` orfe (obertura sense
+    // tancament). Re-tokenitzar-lo literalment feia veure els marcadors
+    // durant uns instants fins a revelar el tancament. Els despullem
+    // abans de passar-los al tokenitzador perquè la vista intermèdia
+    // no mostri símbols que mai haurien de ser visibles.
+    const stripped = stripOrphanMarkers(recurseContent);
+    const subTokens = tokenizeInline(stripped);
     const sameAsSelf =
       subTokens.length === 1 &&
       subTokens[0].type !== 'text' &&
       subTokens[0].content === tok.content;
     if (!sameAsSelf) {
       children = renderTokensDepth(subTokens, Number.POSITIVE_INFINITY, depth + 1);
+    } else {
+      children = stripped;
     }
   }
   switch (tok.type) {

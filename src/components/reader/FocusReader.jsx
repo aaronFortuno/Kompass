@@ -497,7 +497,7 @@ function Backdrop({ topic }) {
         });
       }
     });
-    return parts.join(' ¶ ').replace(/[*=_`]+/g, '');
+    return parts.join(' ¶ ').replace(/[*=_`!]+/g, '');
   }, [topic]);
   return <div className="kf-backdrop" aria-hidden="true">{txt}</div>;
 }
@@ -985,7 +985,7 @@ function ExerciseBeatCard({ beat, stepIdx, onFinish, peek = false, navRef = null
 function beatLabel(beat, idx) {
   if (!beat) return `Fragment ${idx + 1}`;
   const cap = (s, n = 48) => {
-    const t = String(s || '').replace(/[*=_`]/g, '').trim();
+    const t = String(s || '').replace(/[*=_`!]/g, '').trim();
     return t.length > n ? t.slice(0, n).trimEnd() + '…' : t;
   };
   switch (beat.type) {
