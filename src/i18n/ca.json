@@ -34,7 +34,10 @@
     "pillarLocalText": "Sense servidor ni compte. El progrés viu al navegador i el pots exportar a un fitxer.",
     "statsLessons": "{count} lliçons",
     "statsExercises": "{count} exercicis",
-    "statsHours": "~{count} h"
+    "statsHours": "~{count} h",
+    "statsLessonsLabel": "Lliçons",
+    "statsExercisesLabel": "Exercicis",
+    "statsHoursLabel": "Estudi estimat"
   },
   "footer": {
     "navAria": "Navegació del peu",

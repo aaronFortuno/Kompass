@@ -1,7 +1,7 @@
 {
   "name": "kompass",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.1.0",
   "type": "module",
   "description": "Web d'autoaprenentatge d'alemany A1 per a catalanoparlants",
   "license": "MIT",

@@ -54,17 +54,17 @@ export function AppShell() {
             </span>
           </Link>
 
-          {/* Dreta: "Qui sóc" + versió */}
-          <div className="flex items-center gap-4">
+          {/* Dreta: "Qui sóc" + versió, alineats a la mateixa baseline */}
+          <div className="flex items-baseline gap-4 leading-none">
             <button
               type="button"
               onClick={() => setAboutOpen(true)}
               className={[
                 'font-mono text-[11px] uppercase tracking-[0.16em]',
                 'text-reader-ink-2 hover:text-reader-ink',
+                'hover:underline underline-offset-4 decoration-reader-ink-2',
                 'transition-colors duration-fast ease-standard',
-                'border-b border-transparent hover:border-reader-ink-2',
-                'pb-0.5',
+                'bg-transparent p-0',
               ].join(' ')}
               aria-haspopup="dialog"
               aria-expanded={aboutOpen}

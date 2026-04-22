@@ -77,6 +77,11 @@ function pickContinueTopic(topicsProgress, exercisesProgress) {
   if (!topicsProgress) return null;
   const candidates = [];
   for (const [topicId, tp] of Object.entries(topicsProgress)) {
+    // A1a-0 és la lliçó de benvinguda (onboarding). Un cop visitada,
+    // no volem seguir proposant-la com a "continua on vas parar":
+    // l'usuari ja ha acabat l'onboarding, el següent "continua" ha
+    // de ser una lliçó de contingut real (A1a-1 en endavant).
+    if (topicId === 'A1a-0') continue;
     const topic = getTopic(topicId);
     if (!topic) continue;
     const { allDone, total } = computeTopicProgress(topic, exercisesProgress);
@@ -84,11 +89,20 @@ function pickContinueTopic(topicsProgress, exercisesProgress) {
     // curs" si apareix al store: l'usuari l'ha obert i probablement
     // vol tornar-hi.
     if (total > 0 && allDone) continue;
-    candidates.push({ topic, firstVisitedAt: tp?.firstVisitedAt ?? '' });
+    // Per ordenar pel que l'usuari va tocar l'últim, usem el nombre
+    // d'steps visitats com a proxy de "avançat" i el firstVisitedAt
+    // com a desempat. No tenim lastVisitedAt encara al store, però
+    // amb aquest criteri el cas típic (últim tema obert = més avançat)
+    // queda millor que el pur firstVisitedAt desc.
+    candidates.push({
+      topic,
+      visitedCount: tp?.visitedStepIds?.length ?? 0,
+      firstVisitedAt: tp?.firstVisitedAt ?? '',
+    });
   }
   if (candidates.length === 0) return null;
   candidates.sort((a, b) => {
-    // Ordre descendent per firstVisitedAt (ISO string comparable).
+    if (b.visitedCount !== a.visitedCount) return b.visitedCount - a.visitedCount;
     if (a.firstVisitedAt > b.firstVisitedAt) return -1;
     if (a.firstVisitedAt < b.firstVisitedAt) return 1;
     return 0;
@@ -178,18 +192,9 @@ export function HomePage() {
                     <span>{continueTopic.shortTitle}</span>
                     <ArrowRight size={18} aria-hidden="true" strokeWidth={1.75} />
                   </Link>
-                  <Link
-                    to="/temari"
-                    className={[
-                      'inline-flex items-center gap-2 px-4 py-3 rounded-none',
-                      'border border-reader-ink text-reader-ink',
-                      'font-mono text-[11px] uppercase tracking-[0.14em]',
-                      'hover:bg-reader-ink hover:text-reader-paper',
-                      'transition-colors duration-fast ease-standard',
-                    ].join(' ')}
-                  >
-                    {t('home.ctaSyllabus')}
-                  </Link>
+                  {/* "Tot el temari" secundari s'omet quan l'usuari ja
+                      té progrés: la navegació al temari ja viu al
+                      header global, no cal duplicar-la aquí. */}
                 </div>
               </div>
             ) : (
@@ -228,18 +233,11 @@ export function HomePage() {
         <ReaderTeaser />
       </section>
 
-      {/* ── 2. Pillars + strip d'estadístiques ────────────────── */}
+      {/* ── 2. Pillars "Què fa Kompass" ───────────────────────── */}
       <section className="mt-12 lg:mt-16 pt-8 border-t border-reader-rule">
-        <div className="flex items-baseline justify-between gap-4 mb-6">
-          <h2 className="font-mono text-xs uppercase tracking-[0.22em] text-reader-muted">
-            {t('home.pillarsTitle')}
-          </h2>
-          <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-reader-muted">
-            {t('home.statsLessons', { count: stats.lessons })} ·{' '}
-            {t('home.statsExercises', { count: stats.exercises })} ·{' '}
-            {t('home.statsHours', { count: stats.hours })}
-          </span>
-        </div>
+        <h2 className="font-mono text-xs uppercase tracking-[0.22em] text-reader-muted mb-6">
+          {t('home.pillarsTitle')}
+        </h2>
         <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-4">
           <Pillar
             icon={BookOpen}
@@ -261,6 +259,39 @@ export function HomePage() {
             title={t('home.pillarLocalTitle')}
             text={t('home.pillarLocalText')}
           />
+        </div>
+      </section>
+
+      {/* ── 3. Estadístiques · fila pròpia amb protagonisme ────
+          Tres xifres grans del curs (lliçons · exercicis · hores)
+          presentades com a stats editorials, no com a strip discret. */}
+      <section className="mt-10 lg:mt-12 pt-8 border-t border-reader-rule">
+        <div className="grid grid-cols-3 gap-6 sm:gap-10">
+          <div>
+            <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-reader-muted mb-2">
+              {t('home.statsLessonsLabel')}
+            </p>
+            <p className="font-serif font-medium text-4xl sm:text-5xl tracking-tight text-reader-ink leading-none">
+              {stats.lessons}
+            </p>
+          </div>
+          <div>
+            <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-reader-muted mb-2">
+              {t('home.statsExercisesLabel')}
+            </p>
+            <p className="font-serif font-medium text-4xl sm:text-5xl tracking-tight text-reader-ink leading-none">
+              {stats.exercises}
+            </p>
+          </div>
+          <div>
+            <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-reader-muted mb-2">
+              {t('home.statsHoursLabel')}
+            </p>
+            <p className="font-serif font-medium text-4xl sm:text-5xl tracking-tight text-reader-ink leading-none">
+              {stats.hours}
+              <span className="ml-2 font-mono text-sm text-reader-ink-2">h</span>
+            </p>
+          </div>
         </div>
       </section>
     </div>

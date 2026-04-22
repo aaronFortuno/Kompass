@@ -34,7 +34,10 @@
     "pillarLocalText": "Sin servidor ni cuenta. El progreso vive en el navegador y lo puedes exportar a un archivo.",
     "statsLessons": "{count} lecciones",
     "statsExercises": "{count} ejercicios",
-    "statsHours": "~{count} h"
+    "statsHours": "~{count} h",
+    "statsLessonsLabel": "Lecciones",
+    "statsExercisesLabel": "Ejercicios",
+    "statsHoursLabel": "Estudio estimado"
   },
   "footer": {
     "navAria": "Navegación del pie",
