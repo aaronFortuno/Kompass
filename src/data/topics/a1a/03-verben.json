@@ -14,7 +14,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Context i motivació\n\nSi els pronoms són la primera peça d'una oració, els **verbs** en són el motor. Amb un verb pots expressar què fas, com et dius, d'on véns o on vius. En alemany, cada vegada que utilitzes un verb has de fer una petita operació: **canviar la terminació** perquè lligui amb el subjecte. Aquesta operació s'anomena **conjugació**.\n\n> **Ich wohne in Barcelona.** (Visc a Barcelona.)\n> **Du wohnst in Berlin.** (Vius a Berlín.)\n> **Wir wohnen in München.** (Vivim a Munic.)\n\nFixa't que la part inicial _wohn-_ es manté, però el final canvia (_-e, -st, -en_). Això és conjugar.\n\nEn aquest tema aprendràs:\n\n- El patró **regular** de la conjugació present (_wohnen_, _kommen_, _lernen_…).\n- Els dos verbs **irregulars** més importants del curs: **_sein_** (ser/estar) i **_haben_** (tenir).\n- Petites variants ortogràfiques per a verbs com **_arbeiten_** i **_heißen_**.\n- Un primer verb amb **canvi de vocal**: **_sprechen_** (parlar).\n\nAmb això ja pots construir oracions reals. No cal que ho memoritzis en un sol dia: torna-hi quan calgui i practica amb els exercicis."
+          "body": "#### Context i motivació\n\nSi els pronoms són la primera peça d'una oració, els **verbs** en són el motor. Amb un verb pots expressar què fas, com et dius, d'on véns o on vius. En alemany, cada vegada que utilitzes un verb has de fer una petita operació: **canviar la terminació** perquè lligui amb el subjecte. Aquesta operació s'anomena **conjugació**.\n\n> **!!Ich wohne in Barcelona.!!** (Visc a Barcelona.)\n> **!!Du wohnst in Berlin.!!** (Vius a Berlín.)\n> **!!Wir wohnen in München.!!** (Vivim a Munic.)\n\nFixa't que la part inicial _wohn-_ es manté, però el final canvia (_-e, -st, -en_). Això és conjugar.\n\nEn aquest tema aprendràs:\n\n- El patró **regular** de la conjugació present (_!!wohnen!!_, _!!kommen!!_, _!!lernen!!_…).\n- Els dos verbs **irregulars** més importants del curs: **_!!sein!!_** (ser/estar) i **_!!haben!!_** (tenir).\n- Petites variants ortogràfiques per a verbs com **_!!arbeiten!!_** i **_!!heißen!!_**.\n- Un primer verb amb **canvi de vocal**: **_!!sprechen!!_** (parlar).\n\nAmb això ja pots construir oracions reals. No cal que ho memoritzis en un sol dia: torna-hi quan calgui i practica amb els exercicis."
         },
         {
           "type": "callout",
@@ -29,7 +29,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Què vol dir conjugar un verb\n\nLa **conjugació** és el canvi que pateix un verb segons qui faci l'acció. No és res nou per a tu: en català ja ho fas cada dia, encara que sense pensar-hi.\n\n> **Jo visc** a Barcelona. **Tu vius** a Berlín. **Ella viu** a París.\n\nLa paraula base \"viure\" s'adapta: _visc, vius, viu_. L'alemany fa exactament el mateix, però amb un patró molt més regular.\n\nCada verb té dues parts:\n\n- L'**arrel** (_Stamm_), que és la part que **no canvia** i porta el significat.\n- La **terminació** (_Endung_), que és la part que **canvia** segons el subjecte.\n\nPer trobar l'arrel d'un verb alemany, agafa la seva forma de diccionari (l'**infinitiu**) i treu-li la _-en_ final:\n\n- _wohn**en**_ (viure/habitar) → arrel **_wohn-_**\n- _komm**en**_ (venir) → arrel **_komm-_**\n- _lern**en**_ (estudiar/aprendre) → arrel **_lern-_**\n- _heiß**en**_ (dir-se) → arrel **_heiß-_**\n\nA partir d'aquí, conjugar és tan fàcil com **afegir la terminació que toca** a cada persona."
+          "body": "#### Què vol dir conjugar un verb\n\nLa **conjugació** és el canvi que pateix un verb segons qui faci l'acció. No és res nou per a tu: en català ja ho fas cada dia, encara que sense pensar-hi.\n\n> **Jo visc** a Barcelona. **Tu vius** a Berlín. **Ella viu** a París.\n\nLa paraula base \"viure\" s'adapta: _visc, vius, viu_. L'alemany fa exactament el mateix, però amb un patró molt més regular.\n\nCada verb té dues parts:\n\n- L'**arrel** (_!!Stamm!!_), que és la part que **no canvia** i porta el significat.\n- La **terminació** (_!!Endung!!_), que és la part que **canvia** segons el subjecte.\n\nPer trobar l'arrel d'un verb alemany, agafa la seva forma de diccionari (l'**infinitiu**) i treu-li la _-en_ final:\n\n- _!!wohn**en**!!_ (viure/habitar) → arrel **_wohn-_**\n- _!!komm**en**!!_ (venir) → arrel **_komm-_**\n- _!!lern**en**!!_ (estudiar/aprendre) → arrel **_lern-_**\n- _!!heiß**en**!!_ (dir-se) → arrel **_heiß-_**\n\nA partir d'aquí, conjugar és tan fàcil com **afegir la terminació que toca** a cada persona."
         },
         {
           "type": "callout",
@@ -44,7 +44,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Les terminacions regulars del present\n\nAquestes són les sis terminacions que toquen a cada persona en **present d'indicatiu**. Són les mateixes per a pràcticament tots els verbs regulars del curs:\n\n- **ich** → arrel + **-e**\n- **du** → arrel + **-st**\n- **er / sie / es** → arrel + **-t**\n- **wir** → arrel + **-en**\n- **ihr** → arrel + **-t**\n- **sie / Sie** → arrel + **-en**\n\nAgafem el verb **_wohnen_** (viure) i apliquem-ho pas a pas:\n\n> **ich wohn==e==** (visc)\n> **du wohn==st==** (vius)\n> **er/sie/es wohn==t==** (viu)\n> **wir wohn==en==** (vivim)\n> **ihr wohn==t==** (viviu)\n> **sie / Sie wohn==en==** (viuen / viu Vostè)\n\nFixa't en dos detalls importants:\n\n1. **_wir_** i **_sie/Sie_** tenen la **mateixa forma** que l'infinitiu (_wohnen_). No és casualitat: és una regularitat que es manté amb gairebé tots els verbs.\n2. **_er/sie/es_** i **_ihr_** també coincideixen entre si (_wohnt_). El que els distingeix és el **pronom** que porten davant."
+          "body": "#### Les terminacions regulars del present\n\nAquestes són les sis terminacions que toquen a cada persona en **present d'indicatiu**. Són les mateixes per a pràcticament tots els verbs regulars del curs:\n\n- **ich** → arrel + **-e**\n- **du** → arrel + **-st**\n- **er / sie / es** → arrel + **-t**\n- **wir** → arrel + **-en**\n- **ihr** → arrel + **-t**\n- **sie / Sie** → arrel + **-en**\n\nAgafem el verb **_!!wohnen!!_** (viure) i apliquem-ho pas a pas:\n\n> **!!ich wohn==e==!!** (visc)\n> **!!du wohn==st==!!** (vius)\n> **!!er/sie/es wohn==t==!!** (viu)\n> **!!wir wohn==en==!!** (vivim)\n> **!!ihr wohn==t==!!** (viviu)\n> **!!sie / Sie wohn==en==!!** (viuen / viu Vostè)\n\nFixa't en dos detalls importants:\n\n1. **_wir_** i **_sie/Sie_** tenen la **mateixa forma** que l'infinitiu (_wohnen_). No és casualitat: és una regularitat que es manté amb gairebé tots els verbs.\n2. **_er/sie/es_** i **_ihr_** també coincideixen entre si (_wohnt_). El que els distingeix és el **pronom** que porten davant."
         },
         {
           "type": "callout",
@@ -54,7 +54,7 @@
         },
         {
           "type": "explanation",
-          "body": "Fem-ho amb **_kommen_** (venir), un altre verb regular:\n\n> **ich komm==e==** (vinc)\n> **du komm==st==** (véns)\n> **er/sie/es komm==t==** (ve)\n> **wir komm==en==** (venim)\n> **ihr komm==t==** (veniu)\n> **sie / Sie komm==en==** (vénen / ve Vostè)\n\n> **Ich komme aus Spanien.** (Vinc d'Espanya.)\n> **Woher kommst du?** (D'on véns?)\n\nSi ja tens interioritzat aquest patró, ja saps conjugar centenars de verbs alemanys. De debò."
+          "body": "Fem-ho amb **_!!kommen!!_** (venir), un altre verb regular:\n\n> **!!ich komm==e==!!** (vinc)\n> **!!du komm==st==!!** (véns)\n> **!!er/sie/es komm==t==!!** (ve)\n> **!!wir komm==en==!!** (venim)\n> **!!ihr komm==t==!!** (veniu)\n> **!!sie / Sie komm==en==!!** (vénen / ve Vostè)\n\n> **!!Ich komme aus Spanien.!!** (Vinc d'Espanya.)\n> **!!Woher kommst du?!!** (D'on véns?)\n\nSi ja tens interioritzat aquest patró, ja saps conjugar centenars de verbs alemanys. De debò."
         }
       ]
     },
@@ -69,7 +69,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Petites variants ortogràfiques\n\nLes terminacions són sempre les mateixes, però hi ha **tres casos** en què la grafia s'ajusta una mica per raons de pronunciació. No són excepcions noves: són **ajustos** de la regla general.\n\n#### Cas 1: arrels acabades en _-t_ o _-d_ → afegim una _-e-_ extra\n\nMira què passa amb **_arbeiten_** (treballar). L'arrel és _arbeit-_, acabada en **_t_**. Si apliquéssim la regla mecànicament, obtindríem _du arbeit-st_ → _arbeitst_, gairebé impronunciable. Per facilitar-ho, l'alemany insereix una **_-e-_ extra** abans de la terminació en tres persones:\n\n> **ich arbeit==e==** (treballo)\n> **du arbeit==e==st** *(amb -e- extra)*\n> **er/sie/es arbeit==e==t** *(amb -e- extra)*\n> **wir arbeit==en==**\n> **ihr arbeit==e==t** *(amb -e- extra)*\n> **sie / Sie arbeit==en==**\n\nLa mateixa regla s'aplica a verbs com _finden_ (trobar), _antworten_ (respondre), _kosten_ (costar), _reden_ (parlar).\n\n> **Du arbeitest in Berlin.** (Treballes a Berlín.)\n> **Es kostet zehn Euro.** (Costa deu euros.)\n\n#### Cas 2: arrels acabades en _-ß_, _-s_, _-z_ → la _du_ perd la _-s-_\n\nMira ara **_heißen_** (dir-se). L'arrel _heiß-_ acaba en **_ß_** (que ja sona \"s\"). Si afegíssim _-st_ tindríem _heißst_, amb un so _s-s_ redundant. La solució: a la forma _du_, **només afegim _-t_** en comptes de _-st_:\n\n> **ich heiß==e==**\n> **du heiß==t==** *(no _heißst_)*\n> **er/sie/es heiß==t==**\n> **wir heiß==en==**\n> **ihr heiß==t==**\n> **sie / Sie heiß==en==**\n\nEl resultat curiós és que **_du heißt_** i **_er heißt_** coincideixen. Passa el mateix amb verbs com _reisen_ (viatjar) → _du reist_, _tanzen_ (ballar) → _du tanzt_, _sitzen_ (seure) → _du sitzt_.\n\n> **Wie heißt du?** (Com et dius?)\n> **Wie heißen Sie?** (Com es diu, Vostè?)\n\n#### Cas 3: canvi de vocal a la 2a i 3a persona singular\n\nAlguns verbs canvien la **vocal de l'arrel** quan els conjuguem amb _du_ i amb _er/sie/es_. Són els anomenats **verbs de canvi vocàlic** (_Vokalwechsel_). El canvi més freqüent és **==e → i==**. Mira **_sprechen_** (parlar):\n\n> **ich spr==e==ch==e==**\n> **du spr==i==ch==st==** *(e → i)*\n> **er/sie/es spr==i==ch==t==** *(e → i)*\n> **wir spr==e==ch==en==**\n> **ihr spr==e==ch==t==**\n> **sie / Sie spr==e==ch==en==**\n\nNomés canvia la vocal a les dues persones del mig (_du, er/sie/es_). La resta manté la _e_ original. Altres verbs del mateix grup: _essen_ (menjar) → _du isst, er isst_; _geben_ (donar) → _du gibst, er gibt_; _nehmen_ (agafar) → _du nimmst, er nimmt_.\n\n> **Ich spreche Katalanisch.** (Parlo català.)\n> **Sprichst du Deutsch?** (Parles alemany?)\n\nAquests canvis vocàlics **no es poden deduir** mirant l'infinitiu: has d'aprendre cada verb sabent que els pertany el canvi. Al diccionari hi apareixen marcats. En aquest tema només te'n demanem un: _sprechen_."
+          "body": "#### Petites variants ortogràfiques\n\nLes terminacions són sempre les mateixes, però hi ha **tres casos** en què la grafia s'ajusta una mica per raons de pronunciació. No són excepcions noves: són **ajustos** de la regla general.\n\n#### Cas 1: arrels acabades en _-t_ o _-d_ → afegim una _-e-_ extra\n\nMira què passa amb **_!!arbeiten!!_** (treballar). L'arrel és _arbeit-_, acabada en **_t_**. Si apliquéssim la regla mecànicament, obtindríem _du arbeit-st_ → _arbeitst_, gairebé impronunciable. Per facilitar-ho, l'alemany insereix una **_-e-_ extra** abans de la terminació en tres persones:\n\n> **!!ich arbeit==e==!!** (treballo)\n> **!!du arbeit==e==st!!** *(amb -e- extra)*\n> **!!er/sie/es arbeit==e==t!!** *(amb -e- extra)*\n> **!!wir arbeit==en==!!**\n> **!!ihr arbeit==e==t!!** *(amb -e- extra)*\n> **!!sie / Sie arbeit==en==!!**\n\nLa mateixa regla s'aplica a verbs com _!!finden!!_ (trobar), _!!antworten!!_ (respondre), _!!kosten!!_ (costar), _!!reden!!_ (parlar).\n\n> **!!Du arbeitest in Berlin.!!** (Treballes a Berlín.)\n> **!!Es kostet zehn Euro.!!** (Costa deu euros.)\n\n#### Cas 2: arrels acabades en _-ß_, _-s_, _-z_ → la _du_ perd la _-s-_\n\nMira ara **_!!heißen!!_** (dir-se). L'arrel _heiß-_ acaba en **_ß_** (que ja sona \"s\"). Si afegíssim _-st_ tindríem _heißst_, amb un so _s-s_ redundant. La solució: a la forma _du_, **només afegim _-t_** en comptes de _-st_:\n\n> **!!ich heiß==e==!!**\n> **!!du heiß==t==!!** *(no _heißst_)*\n> **!!er/sie/es heiß==t==!!**\n> **!!wir heiß==en==!!**\n> **!!ihr heiß==t==!!**\n> **!!sie / Sie heiß==en==!!**\n\nEl resultat curiós és que **_du heißt_** i **_er heißt_** coincideixen. Passa el mateix amb verbs com _!!reisen!!_ (viatjar) → _!!du reist!!_, _!!tanzen!!_ (ballar) → _!!du tanzt!!_, _!!sitzen!!_ (seure) → _!!du sitzt!!_.\n\n> **!!Wie heißt du?!!** (Com et dius?)\n> **!!Wie heißen Sie?!!** (Com es diu, Vostè?)\n\n#### Cas 3: canvi de vocal a la 2a i 3a persona singular\n\nAlguns verbs canvien la **vocal de l'arrel** quan els conjuguem amb _du_ i amb _er/sie/es_. Són els anomenats **verbs de canvi vocàlic** (_Vokalwechsel_). El canvi més freqüent és **==e → i==**. Mira **_!!sprechen!!_** (parlar):\n\n> **!!ich spr==e==ch==e==!!**\n> **!!du spr==i==ch==st==!!** *(e → i)*\n> **!!er/sie/es spr==i==ch==t==!!** *(e → i)*\n> **!!wir spr==e==ch==en==!!**\n> **!!ihr spr==e==ch==t==!!**\n> **!!sie / Sie spr==e==ch==en==!!**\n\nNomés canvia la vocal a les dues persones del mig (_du, er/sie/es_). La resta manté la _e_ original. Altres verbs del mateix grup: _!!essen!!_ (menjar) → _!!du isst, er isst!!_; _!!geben!!_ (donar) → _!!du gibst, er gibt!!_; _!!nehmen!!_ (agafar) → _!!du nimmst, er nimmt!!_.\n\n> **!!Ich spreche Katalanisch.!!** (Parlo català.)\n> **!!Sprichst du Deutsch?!!** (Parles alemany?)\n\nAquests canvis vocàlics **no es poden deduir** mirant l'infinitiu: has d'aprendre cada verb sabent que els pertany el canvi. Al diccionari hi apareixen marcats. En aquest tema només te'n demanem un: _sprechen_."
         }
       ]
     },
@@ -84,13 +84,13 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Els dos verbs essencials: _sein_ i _haben_\n\nFins ara hem mirat verbs **regulars**. Però hi ha dos verbs que **no segueixen cap patró** i que apareixen pertot arreu en alemany: **_sein_** (ser/estar) i **_haben_** (tenir). Són els dos verbs més freqüents de la llengua, i cal aprendre'ls de memòria.\n\n#### _sein_ — ser, estar\n\nEl català distingeix _ser_ i _estar_; l'alemany fa servir **un sol verb** (_sein_) per totes dues coses. _Ich bin müde_ pot voler dir \"sóc cansat/da\" (no té gaire sentit) o \"estic cansat/da\" (sí). El context mana.\n\n> **ich ==bin==** (sóc / estic)\n> **du ==bist==** (ets / estàs)\n> **er/sie/es ==ist==** (és / està)\n> **wir ==sind==** (som / estem)\n> **ihr ==seid==** (sou / esteu)\n> **sie / Sie ==sind==** (són / estan / és Vostè)\n\nFixa't que no reconeixeràs l'arrel _sein-_ enlloc: les formes (_bin, bist, ist, sind, seid_) són totalment diferents. Això passa també en català (_sóc, ets, és_) i en castellà (_soy, eres, es_): els verbs \"ser\" tendeixen a ser irregulars arreu del món perquè es fan servir tantíssim que el desgast els ha transformat.\n\n> **Ich bin Student.** (Sóc estudiant.)\n> **Wir sind aus Spanien.** (Som d'Espanya.)\n> **Bist du müde?** (Estàs cansat/da?)\n\n#### _haben_ — tenir\n\n> **ich ==habe==** (tinc)\n> **du ==hast==** (tens)\n> **er/sie/es ==hat==** (té)\n> **wir ==haben==** (tenim)\n> **ihr ==habt==** (teniu)\n> **sie / Sie ==haben==** (tenen / té Vostè)\n\n_haben_ és una mica més amable que _sein_: s'endevina una arrel _hab-_ que es veu a _habe, haben, habt_. Però a _du hast_, _er hat_ la _b_ cau. Considera-ho una petita irregularitat que cal memoritzar.\n\n> **Ich habe zwei Brüder.** (Tinc dos germans.)\n> **Hast du Zeit?** (Tens temps?)\n> **Er hat einen Hund.** (Té un gos.)"
+          "body": "#### Els dos verbs essencials: _sein_ i _haben_\n\nFins ara hem mirat verbs **regulars**. Però hi ha dos verbs que **no segueixen cap patró** i que apareixen pertot arreu en alemany: **_!!sein!!_** (ser/estar) i **_!!haben!!_** (tenir). Són els dos verbs més freqüents de la llengua, i cal aprendre'ls de memòria.\n\n#### _sein_ — ser, estar\n\nEl català distingeix _ser_ i _estar_; l'alemany fa servir **un sol verb** (_sein_) per totes dues coses. _Ich bin müde_ pot voler dir \"sóc cansat/da\" (no té gaire sentit) o \"estic cansat/da\" (sí). El context mana.\n\n> **!!ich ==bin==!!** (sóc / estic)\n> **!!du ==bist==!!** (ets / estàs)\n> **!!er/sie/es ==ist==!!** (és / està)\n> **!!wir ==sind==!!** (som / estem)\n> **!!ihr ==seid==!!** (sou / esteu)\n> **!!sie / Sie ==sind==!!** (són / estan / és Vostè)\n\nFixa't que no reconeixeràs l'arrel _sein-_ enlloc: les formes (_bin, bist, ist, sind, seid_) són totalment diferents. Això passa també en català (_sóc, ets, és_) i en castellà (_soy, eres, es_): els verbs \"ser\" tendeixen a ser irregulars arreu del món perquè es fan servir tantíssim que el desgast els ha transformat.\n\n> **!!Ich bin Student.!!** (Sóc estudiant.)\n> **!!Wir sind aus Spanien.!!** (Som d'Espanya.)\n> **!!Bist du müde?!!** (Estàs cansat/da?)\n\n#### _haben_ — tenir\n\n> **!!ich ==habe==!!** (tinc)\n> **!!du ==hast==!!** (tens)\n> **!!er/sie/es ==hat==!!** (té)\n> **!!wir ==haben==!!** (tenim)\n> **!!ihr ==habt==!!** (teniu)\n> **!!sie / Sie ==haben==!!** (tenen / té Vostè)\n\n_haben_ és una mica més amable que _sein_: s'endevina una arrel _hab-_ que es veu a _habe, haben, habt_. Però a _du hast_, _er hat_ la _b_ cau. Considera-ho una petita irregularitat que cal memoritzar.\n\n> **!!Ich habe zwei Brüder.!!** (Tinc dos germans.)\n> **!!Hast du Zeit?!!** (Tens temps?)\n> **!!Er hat einen Hund.!!** (Té un gos.)"
         },
         {
           "type": "callout",
           "variant": "tip",
           "title": "Per què són tan importants?",
-          "body": "Perquè _sein_ i _haben_ són la porta d'entrada a moltes coses més grans: descriure com ets (_Ich bin Lehrer_), dir d'on véns (_Wir sind aus Barcelona_), dir quina edat tens (_Ich bin 25 Jahre alt_ — amb _sein_!), dir què posseeixes (_Ich habe ein Auto_) i més endavant, formar el passat (_Ich habe gelernt_). No t'esforcis a \"entendre'ls\"; simplement **repeteix-los fins que surtin sols**."
+          "body": "Perquè _sein_ i _haben_ són la porta d'entrada a moltes coses més grans: descriure com ets (_!!Ich bin Lehrer.!!_), dir d'on véns (_!!Wir sind aus Barcelona.!!_), dir quina edat tens (_!!Ich bin 25 Jahre alt.!!_ — amb _sein_!), dir què posseeixes (_!!Ich habe ein Auto.!!_) i més endavant, formar el passat (_!!Ich habe gelernt.!!_). No t'esforcis a \"entendre'ls\"; simplement **repeteix-los fins que surtin sols**."
         }
       ]
     },
@@ -105,7 +105,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Paranys habituals\n\n**1. Oblidar canviar la terminació del verb.**\nÉs l'error número u dels catalanoparlants: traduir mentalment l'oració i deixar el verb en infinitiu o amb una terminació que no toca.\n\n> Incorrecte: **Ich wohnen in Barcelona.**\n> Correcte: **Ich wohne in Barcelona.** (1a sg. → _-e_.)\n\n**2. Barrejar _sein_ i _haben_.**\nEn català diem \"**tinc** 25 anys\", però en alemany es diu \"**sóc** 25 anys\" → **_Ich bin 25 Jahre alt_**. L'edat, la nacionalitat i la professió van sempre amb _sein_. En canvi, la fam (_Ich habe Hunger_ = lit. \"tinc fam\") i la set (_Ich habe Durst_) s'expressen amb _haben_. És qüestió de memòria i de no traduir automàticament.\n\n**3. Oblidar la _-e-_ extra en verbs com _arbeiten_, _finden_.**\n\n> Incorrecte: **Du arbeitst** / **er findt**.\n> Correcte: **Du arbeit==e==st** / **er find==e==t**.\n\n**4. Posar _-st_ sencer a verbs com _heißen_, _tanzen_.**\n\n> Incorrecte: **Du heißst** / **du tanzst**.\n> Correcte: **Du heißt** / **du tanzt**. (arrel en _-ß_ o _-z_ → només _-t_.)\n\n**5. Oblidar el canvi vocàlic.**\n\n> Incorrecte: **Du sprechst Deutsch** / **Anna sprecht Englisch**.\n> Correcte: **Du spr==i==chst Deutsch** / **Anna spr==i==cht Englisch**.\n\nEl canvi _e → i_ només afecta _du_ i _er/sie/es_. _Wir_ i _ihr_ mantenen la _e_: _wir sprechen, ihr sprecht_.\n\n**6. Confondre les formes iguals.**\nEn alemany _er wohnt_ i _ihr wohnt_ són idèntics, igual que _wir wohnen_ i _sie wohnen_. No hi ha error: el que desambigua és el **pronom** davant del verb. No intentis trobar \"la diferència\" a la terminació: no n'hi ha.\n\n**7. Escriure _ich_ o el verb amb majúscula innecessària.**\nNomés van en majúscula: (a) la paraula que inicia l'oració; (b) els **substantius**; (c) les formes de cortesia _Sie / Ihr / Ihre_. Un verb al mig de oració és sempre minúscula, fins i tot _sein_ o _haben_."
+          "body": "#### Paranys habituals\n\n**1. Oblidar canviar la terminació del verb.**\nÉs l'error número u dels catalanoparlants: traduir mentalment l'oració i deixar el verb en infinitiu o amb una terminació que no toca.\n\n> Incorrecte: **!!Ich wohnen in Barcelona.!!**\n> Correcte: **!!Ich wohne in Barcelona.!!** (1a sg. → _-e_.)\n\n**2. Barrejar _sein_ i _haben_.**\nEn català diem \"**tinc** 25 anys\", però en alemany es diu \"**sóc** 25 anys\" → **_!!Ich bin 25 Jahre alt.!!_**. L'edat, la nacionalitat i la professió van sempre amb _sein_. En canvi, la fam (_!!Ich habe Hunger.!!_ = lit. \"tinc fam\") i la set (_!!Ich habe Durst.!!_) s'expressen amb _haben_. És qüestió de memòria i de no traduir automàticament.\n\n**3. Oblidar la _-e-_ extra en verbs com _arbeiten_, _finden_.**\n\n> Incorrecte: **!!Du arbeitst!!** / **!!er findt!!**.\n> Correcte: **!!Du arbeit==e==st!!** / **!!er find==e==t!!**.\n\n**4. Posar _-st_ sencer a verbs com _heißen_, _tanzen_.**\n\n> Incorrecte: **!!Du heißst!!** / **!!du tanzst!!**.\n> Correcte: **!!Du heißt!!** / **!!du tanzt!!**. (arrel en _-ß_ o _-z_ → només _-t_.)\n\n**5. Oblidar el canvi vocàlic.**\n\n> Incorrecte: **!!Du sprechst Deutsch!!** / **!!Anna sprecht Englisch!!**.\n> Correcte: **!!Du spr==i==chst Deutsch!!** / **!!Anna spr==i==cht Englisch!!**.\n\nEl canvi _e → i_ només afecta _du_ i _er/sie/es_. _Wir_ i _ihr_ mantenen la _e_: _!!wir sprechen, ihr sprecht!!_.\n\n**6. Confondre les formes iguals.**\nEn alemany _er wohnt_ i _ihr wohnt_ són idèntics, igual que _wir wohnen_ i _sie wohnen_. No hi ha error: el que desambigua és el **pronom** davant del verb. No intentis trobar \"la diferència\" a la terminació: no n'hi ha.\n\n**7. Escriure _ich_ o el verb amb majúscula innecessària.**\nNomés van en majúscula: (a) la paraula que inicia l'oració; (b) els **substantius**; (c) les formes de cortesia _Sie / Ihr / Ihre_. Un verb al mig de oració és sempre minúscula, fins i tot _sein_ o _haben_."
         }
       ]
     },
@@ -143,42 +143,42 @@
         {
           "type": "table",
           "title": "3.1 Regelmäßige Konjugation — Conjugació regular (present)",
-          "headers": ["Person", "wohnen", "kommen", "lernen"],
+          "headers": ["Person", "!!wohnen!!", "!!kommen!!", "!!lernen!!"],
           "rows": [
-            ["ich", "wohn**e**", "komm**e**", "lern**e**"],
-            ["du", "wohn**st**", "komm**st**", "lern**st**"],
-            ["er / sie / es", "wohn**t**", "komm**t**", "lern**t**"],
-            ["wir", "wohn**en**", "komm**en**", "lern**en**"],
-            ["ihr", "wohn**t**", "komm**t**", "lern**t**"],
-            ["sie / Sie", "wohn**en**", "komm**en**", "lern**en**"]
+            ["ich", "!!wohn**e**!!", "!!komm**e**!!", "!!lern**e**!!"],
+            ["du", "!!wohn**st**!!", "!!komm**st**!!", "!!lern**st**!!"],
+            ["er / sie / es", "!!wohn**t**!!", "!!komm**t**!!", "!!lern**t**!!"],
+            ["wir", "!!wohn**en**!!", "!!komm**en**!!", "!!lern**en**!!"],
+            ["ihr", "!!wohn**t**!!", "!!komm**t**!!", "!!lern**t**!!"],
+            ["sie / Sie", "!!wohn**en**!!", "!!komm**en**!!", "!!lern**en**!!"]
           ],
           "caption": "Les quatre terminacions visibles del present: _-e, -st, -t, -en_."
         },
         {
           "type": "table",
           "title": "3.2 Orthografische Varianten — Variants ortogràfiques",
-          "headers": ["Person", "arbeiten (arrel en -t)", "heißen (arrel en -ß)", "sprechen (canvi e→i)"],
+          "headers": ["Person", "!!arbeiten!! (arrel en -t)", "!!heißen!! (arrel en -ß)", "!!sprechen!! (canvi e→i)"],
           "rows": [
-            ["ich", "arbeit**e**", "heiß**e**", "spr**e**ch**e**"],
-            ["du", "arbeit**est**", "heiß**t**", "spr**i**ch**st**"],
-            ["er / sie / es", "arbeit**et**", "heiß**t**", "spr**i**ch**t**"],
-            ["wir", "arbeit**en**", "heiß**en**", "spr**e**ch**en**"],
-            ["ihr", "arbeit**et**", "heiß**t**", "spr**e**ch**t**"],
-            ["sie / Sie", "arbeit**en**", "heiß**en**", "spr**e**ch**en**"]
+            ["ich", "!!arbeit**e**!!", "!!heiß**e**!!", "!!spr**e**ch**e**!!"],
+            ["du", "!!arbeit**est**!!", "!!heiß**t**!!", "!!spr**i**ch**st**!!"],
+            ["er / sie / es", "!!arbeit**et**!!", "!!heiß**t**!!", "!!spr**i**ch**t**!!"],
+            ["wir", "!!arbeit**en**!!", "!!heiß**en**!!", "!!spr**e**ch**en**!!"],
+            ["ihr", "!!arbeit**et**!!", "!!heiß**t**!!", "!!spr**e**ch**t**!!"],
+            ["sie / Sie", "!!arbeit**en**!!", "!!heiß**en**!!", "!!spr**e**ch**en**!!"]
           ],
           "caption": "Tres ajustos de la regla general: _-e-_ extra, _du_ sense _-s-_ i canvi vocàlic _e → i_ a _du_ i _er/sie/es_."
         },
         {
           "type": "table",
           "title": "3.3 sein und haben — Els dos irregulars clau",
-          "headers": ["Person", "sein (ser/estar)", "haben (tenir)"],
+          "headers": ["Person", "!!sein!! (ser/estar)", "!!haben!! (tenir)"],
           "rows": [
-            ["ich", "**bin**", "**habe**"],
-            ["du", "**bist**", "**hast**"],
-            ["er / sie / es", "**ist**", "**hat**"],
-            ["wir", "**sind**", "**haben**"],
-            ["ihr", "**seid**", "**habt**"],
-            ["sie / Sie", "**sind**", "**haben**"]
+            ["ich", "!!**bin**!!", "!!**habe**!!"],
+            ["du", "!!**bist**!!", "!!**hast**!!"],
+            ["er / sie / es", "!!**ist**!!", "!!**hat**!!"],
+            ["wir", "!!**sind**!!", "!!**haben**!!"],
+            ["ihr", "!!**seid**!!", "!!**habt**!!"],
+            ["sie / Sie", "!!**sind**!!", "!!**haben**!!"]
           ],
           "caption": "_sein_ no deixa veure l'arrel; _haben_ perd la _b_ a _du_ i _er/sie/es_."
         }
