@@ -148,6 +148,12 @@ export function SpeakableText({
     }
     // Reset del marcador visual "is-playing" després d'un temps estimat.
     window.setTimeout(() => setActive(false), Math.min(200 * text.length, 6000));
+    // Senyalitzem al reader que l'usuari ha interactuat amb un pill
+    // audible perquè pausi el temporitzador de canvi de beat (§98 polit).
+    // Evita haver de fer clic al pill + un segon clic a la interfície.
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new CustomEvent('kompass:speakable-activated'));
+    }
   };
 
   /*

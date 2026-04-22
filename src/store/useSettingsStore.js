@@ -118,6 +118,9 @@ export function useSettings() {
     tableAnim: s.tableAnim,
     autoPlay: s.autoPlay,
     autoPlayDelay: s.autoPlayDelay,
+    audioAutoplay: s.audioAutoplay,
+    audioSpeed: s.audioSpeed,
+    audioVoice: s.audioVoice,
   }));
 }
 

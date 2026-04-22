@@ -1452,6 +1452,18 @@ export function FocusReader({ topic }) {
     setAutoPlayPaused(false);
   }, [stepIdx, beatIdx]);
 
+  // Si l'usuari clica un pill audible (dispara kompass:speakable-activated),
+  // pausem l'autoplay — té sentit: està intentant llegir/escoltar en lloc
+  // d'avançar. Abans l'usuari havia de fer clic al pill + un altre clic a
+  // la interfície perquè es detectés com a "pause global".
+  useEffect(() => {
+    const onSpeak = () => {
+      if (settings.autoPlay) setAutoPlayPaused(true);
+    };
+    window.addEventListener('kompass:speakable-activated', onSpeak);
+    return () => window.removeEventListener('kompass:speakable-activated', onSpeak);
+  }, [settings.autoPlay]);
+
   useEffect(() => {
     setAutoPlayBarActive(false);
     if (!autoPlayEligible) return undefined;
@@ -1642,6 +1654,16 @@ export function FocusReader({ topic }) {
         )}
       </div>
 
+      {/* Counter flotant "Pas 09 · 5/9" a la cantonada inferior esquerra
+          del body (§98). Abans vivia al peu; mou-lo al body perquè
+          sempre estigui a la mateixa posició i serveixi de referència
+          per detectar i comentar errors sense dependre del footer. */}
+      <div className="kf-body-counter" aria-live="polite">
+        {isFullMode
+          ? `Pas ${String(stepIdx + 1).padStart(2, '0')} · Bloc ${String(currentBlock + 1).padStart(2, '0')}/${blockStarts.length}`
+          : `Pas ${String(stepIdx + 1).padStart(2, '0')} · ${beatIdx + 1}/${beats.length}`}
+      </div>
+
       {/* Barra de progrés de l'auto-play (§87). Entre body i foot, s'anima
           d'esquerra a dreta durant autoPlayDelay segons; pot pausar-se
           amb la barra d'espai. Al final, goBeat(1). */}
@@ -1672,11 +1694,6 @@ export function FocusReader({ topic }) {
         </button>
 
         <div className="kf-foot-mid">
-          <span className="kf-foot-counter">
-            {isFullMode
-              ? `Pas ${String(stepIdx + 1).padStart(2, '0')} · Bloc ${String(currentBlock + 1).padStart(2, '0')}/${blockStarts.length}`
-              : `Pas ${String(stepIdx + 1).padStart(2, '0')} · ${beatIdx + 1}/${beats.length}`}
-          </span>
           <span className="kf-keyhint">
             {/* Columna 1 · navegació direccional.
                 Grid intern de 4 columnes: [mod] [shift] [fletxes] [label].
