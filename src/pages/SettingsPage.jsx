@@ -10,6 +10,10 @@ import {
   Gauge,
   Play,
   Timer,
+  Volume2,
+  Mic,
+  Rabbit,
+  Focus,
 } from 'lucide-react';
 import { useT } from '@/i18n';
 import { useSettingsStore, TEXT_SCALE_VALUES } from '@/store/useSettingsStore';
@@ -41,6 +45,10 @@ export function SettingsPage() {
   const tableAnim = useSettingsStore((s) => s.tableAnim);
   const autoPlay = useSettingsStore((s) => s.autoPlay);
   const autoPlayDelay = useSettingsStore((s) => s.autoPlayDelay);
+  const audioAutoplay = useSettingsStore((s) => s.audioAutoplay);
+  const audioSpeed = useSettingsStore((s) => s.audioSpeed);
+  const audioVoice = useSettingsStore((s) => s.audioVoice);
+  const focusMode = useSettingsStore((s) => s.focusMode);
 
   const setTheme = useSettingsStore((s) => s.setTheme);
   const setTextScale = useSettingsStore((s) => s.setTextScale);
@@ -50,6 +58,10 @@ export function SettingsPage() {
   const setTableAnim = useSettingsStore((s) => s.setTableAnim);
   const setAutoPlay = useSettingsStore((s) => s.setAutoPlay);
   const setAutoPlayDelay = useSettingsStore((s) => s.setAutoPlayDelay);
+  const setAudioAutoplay = useSettingsStore((s) => s.setAudioAutoplay);
+  const setAudioSpeed = useSettingsStore((s) => s.setAudioSpeed);
+  const setAudioVoice = useSettingsStore((s) => s.setAudioVoice);
+  const setFocusMode = useSettingsStore((s) => s.setFocusMode);
   const reset = useSettingsStore((s) => s.reset);
 
   return (
@@ -144,6 +156,20 @@ export function SettingsPage() {
         </SettingRow>
 
         <SettingRow
+          id="setting-focus-mode"
+          icon={Focus}
+          title="Mode focus"
+          description="Amaga capçalera, peu i índex al reader per concentrar-te només en el contingut. Drecera: tecla f."
+        >
+          <Toggle
+            checked={focusMode}
+            onChange={setFocusMode}
+            label="Mode focus"
+            id="setting-focus-mode"
+          />
+        </SettingRow>
+
+        <SettingRow
           id="setting-typewriter"
           icon={Film}
           title={t('settings.reading.typewriter')}
@@ -228,20 +254,83 @@ export function SettingsPage() {
           disabled={!autoPlay}
         >
           <div className="flex items-center gap-3">
+            <span className="font-mono text-[10px] text-reader-muted uppercase tracking-wider">
+              {t('settings.reading.typewriterSpeedFast')}
+            </span>
             <input
               type="range"
               min={1}
-              max={10}
+              max={5}
               step={1}
               value={autoPlayDelay}
               onChange={(e) => setAutoPlayDelay(Number(e.target.value))}
               aria-labelledby="setting-autoplay-delay"
               className="w-32 accent-reader-ink"
             />
-            <span className="font-mono text-[11px] text-reader-ink-2 w-10 text-right">
-              {autoPlayDelay}s
+            <span className="font-mono text-[10px] text-reader-muted uppercase tracking-wider">
+              {t('settings.reading.typewriterSpeedSlow')}
             </span>
           </div>
+        </SettingRow>
+      </section>
+
+      {/* Secció Àudio · §98 — mateixos controls que al drawer del reader */}
+      <section className="mb-10">
+        <SectionHeading>Àudio</SectionHeading>
+
+        <SettingRow
+          id="setting-audio-autoplay"
+          icon={Volume2}
+          title="Reproduir automàticament"
+          description="Reprodueix el pill principal del beat en acabar el typewriter, amb pausa entre pills per deixar-te assimilar cada so."
+        >
+          <Toggle
+            checked={audioAutoplay}
+            onChange={setAudioAutoplay}
+            label="Reproduir automàticament"
+            id="setting-audio-autoplay"
+          />
+        </SettingRow>
+
+        <SettingRow
+          id="setting-audio-speed"
+          icon={Rabbit}
+          title="Velocitat de l'àudio"
+          description="Escala la reproducció dels MP3 (0.8× ≈ més lent · 1.2× ≈ més ràpid). Fora d'aquest rang els MP3 comencen a sonar estranys."
+        >
+          <div className="flex items-center gap-3">
+            <input
+              type="range"
+              min={0.8}
+              max={1.2}
+              step={0.05}
+              value={audioSpeed}
+              onChange={(e) => setAudioSpeed(Number(e.target.value))}
+              aria-labelledby="setting-audio-speed"
+              className="w-32 accent-reader-ink"
+            />
+            <span className="font-mono text-[11px] text-reader-ink-2 w-10 text-right">
+              {audioSpeed.toFixed(2)}×
+            </span>
+          </div>
+        </SettingRow>
+
+        <SettingRow
+          id="setting-audio-voice"
+          icon={Mic}
+          title="Veu"
+          description="Veu de síntesi per a la pronúncia alemanya. Aviat: més veus (Florian, Katja)."
+        >
+          <select
+            id="setting-audio-voice"
+            value={audioVoice}
+            onChange={(e) => setAudioVoice(e.target.value)}
+            className="font-mono text-[11px] bg-reader-paper border border-reader-rule text-reader-ink px-3 py-1.5 rounded-sm"
+          >
+            <option value="seraphina">Seraphina (càlida · actual)</option>
+            <option value="florian" disabled>Florian (aviat)</option>
+            <option value="katja" disabled>Katja (aviat)</option>
+          </select>
         </SettingRow>
       </section>
 

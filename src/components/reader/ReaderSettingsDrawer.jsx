@@ -111,6 +111,7 @@ export function ReaderSettingsDrawer({ open, onClose }) {
             <SectionHeading>{t('settings.appearance.title')}</SectionHeading>
 
             <SettingRow
+              compact
               id="drawer-theme"
               icon={theme === 'dark' ? Moon : Sun}
               title={t('settings.appearance.theme')}
@@ -127,6 +128,7 @@ export function ReaderSettingsDrawer({ open, onClose }) {
             </SettingRow>
 
             <SettingRow
+              compact
               id="drawer-textscale"
               icon={Type}
               title={t('settings.appearance.textScale')}
@@ -153,6 +155,7 @@ export function ReaderSettingsDrawer({ open, onClose }) {
             <SectionHeading>{t('settings.reading.title')}</SectionHeading>
 
             <SettingRow
+              compact
               id="drawer-studymode"
               icon={studyMode === 'fragment' ? BookOpen : ScrollText}
               title={t('settings.reading.studyMode')}
@@ -169,6 +172,7 @@ export function ReaderSettingsDrawer({ open, onClose }) {
             </SettingRow>
 
             <SettingRow
+              compact
               id="drawer-focus-mode"
               icon={Focus}
               title="Mode focus"
@@ -183,6 +187,7 @@ export function ReaderSettingsDrawer({ open, onClose }) {
             </SettingRow>
 
             <SettingRow
+              compact
               id="drawer-typewriter"
               icon={Film}
               title={t('settings.reading.typewriter')}
@@ -196,6 +201,7 @@ export function ReaderSettingsDrawer({ open, onClose }) {
             </SettingRow>
 
             <SettingRow
+              compact
               id="drawer-speed"
               icon={Gauge}
               title={t('settings.reading.typewriterSpeed')}
@@ -222,6 +228,7 @@ export function ReaderSettingsDrawer({ open, onClose }) {
             </SettingRow>
 
             <SettingRow
+              compact
               id="drawer-tableanim"
               icon={Table2}
               title={t('settings.reading.tableAnim')}
@@ -235,6 +242,7 @@ export function ReaderSettingsDrawer({ open, onClose }) {
             </SettingRow>
 
             <SettingRow
+              compact
               id="drawer-autoplay"
               icon={Play}
               title={t('settings.reading.autoPlay')}
@@ -248,6 +256,7 @@ export function ReaderSettingsDrawer({ open, onClose }) {
             </SettingRow>
 
             <SettingRow
+              compact
               id="drawer-autoplay-delay"
               icon={Timer}
               title={t('settings.reading.autoPlayDelay')}
@@ -279,6 +288,7 @@ export function ReaderSettingsDrawer({ open, onClose }) {
             <SectionHeading>Àudio</SectionHeading>
 
             <SettingRow
+              compact
               id="drawer-audio-autoplay"
               icon={Volume2}
               title="Reproduir automàticament"
@@ -293,6 +303,7 @@ export function ReaderSettingsDrawer({ open, onClose }) {
             </SettingRow>
 
             <SettingRow
+              compact
               id="drawer-audio-speed"
               icon={Rabbit}
               title="Velocitat de l'àudio"
@@ -315,6 +326,7 @@ export function ReaderSettingsDrawer({ open, onClose }) {
             </SettingRow>
 
             <SettingRow
+              compact
               id="drawer-audio-voice"
               icon={Mic}
               title="Veu"

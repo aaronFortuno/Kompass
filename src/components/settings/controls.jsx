@@ -71,7 +71,41 @@ export function Toggle({ checked, onChange, label, id }) {
   );
 }
 
-export function SettingRow({ icon: Icon, title, description, children, id, disabled }) {
+export function SettingRow({
+  icon: Icon,
+  title,
+  description,
+  children,
+  id,
+  disabled,
+  compact = false,
+}) {
+  if (compact) {
+    // Variant compacta (drawer del reader §98): un únic flex en fila
+    // amb icona + títol a l'esquerra i el control a la dreta. Ometem
+    // la descripció per estalviar espai vertical — el títol ha de ser
+    // autoexplicatiu en aquest context.
+    return (
+      <div
+        className={[
+          'flex items-center gap-3 py-2.5 border-b border-reader-rule last:border-b-0',
+          disabled ? 'opacity-50 pointer-events-none' : '',
+        ].join(' ')}
+      >
+        {Icon ? (
+          <Icon
+            size={16}
+            aria-hidden="true"
+            className="flex-shrink-0 text-reader-ink-2"
+          />
+        ) : null}
+        <div id={id} className="font-serif text-sm text-reader-ink flex-1 min-w-0 truncate">
+          {title}
+        </div>
+        <div className="flex-shrink-0 flex items-center">{children}</div>
+      </div>
+    );
+  }
   return (
     <div
       className={[
