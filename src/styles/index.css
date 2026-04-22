@@ -505,7 +505,7 @@
   font-size: 12px;
   line-height: 1.8;
   color: rgb(var(--color-reader-ink));
-  opacity: 0.05;
+  opacity: 0.04;
   pointer-events: none;
   user-select: none;
   column-count: 3;
@@ -551,6 +551,26 @@
     opacity 380ms var(--ease-standard),
     filter 480ms var(--ease-standard);
   will-change: transform, opacity;
+}
+/*
+ * "Coixí" de paper darrere de cada beat — un gradient radial centrat
+ * que és opac al mig i fa fade-out a les vores. Esborra localment el
+ * backdrop textual del reader perquè el text del beat es pugui llegir
+ * sempre bé, sense línia dura que talli la decoració tipogràfica del
+ * fons.
+ */
+.kf-peek::before {
+  content: '';
+  position: absolute;
+  inset: -30px -30px -40px -30px;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 78% 88% at center,
+    rgb(var(--color-reader-paper)) 38%,
+    rgb(var(--color-reader-paper) / 0.92) 62%,
+    rgb(var(--color-reader-paper) / 0) 100%
+  );
 }
 .kf-peek-prev-far {
   transform: translate(-50%, -30vh) scale(0.5);
