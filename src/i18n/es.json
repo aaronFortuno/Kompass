@@ -12,12 +12,23 @@
     "about": "Acerca de"
   },
   "home": {
-    "welcome": "Bienvenido a Kompass",
-    "intro": "Una web para estudiar alemán A1 sin inicio de sesión, sin fronteras y a tu ritmo. Tu progreso vive en el navegador y puedes exportarlo cuando quieras.",
-    "ctaStart": "Explora los temas",
-    "ctaPaths": "Ver rutas",
-    "statusTitle": "Estado actual",
-    "statusScaffold": "Estamos en fase de scaffold visual. Pronto habrá contenido real."
+    "kicker": "Alemán A1 · A1a + A1b",
+    "welcome": "Kompass",
+    "lead": "Aprende alemán con calma, sin prisas, a ritmo editorial.",
+    "intro": "Un viaje lento por las formas básicas de la lengua: los pronombres, los verbos, los casos, el orden de las palabras. Cada lección dividida en fragmentos cortos — uno por pantalla — para que puedas leer con atención. Tu progreso vive en el navegador; no hace falta inicio de sesión ni cuenta.",
+    "ctaStart": "Empezar con la bienvenida",
+    "ctaSyllabus": "Ver todo el temario",
+    "howTitle": "Cómo funciona",
+    "howBeatTitle": "Fragmentos cortos",
+    "howBeatText": "Cada lección se presenta fragmento a fragmento, una idea a la vez. Sin bloques largos de texto.",
+    "howExerciseTitle": "Ejercicios intercalados",
+    "howExerciseText": "Cada bloque conceptual se cierra con una comprobación corta. Feedback inmediato, pregunta a pregunta.",
+    "howOfflineTitle": "Todo local",
+    "howOfflineText": "Sin servidores ni registros. Tu progreso vive en el navegador, exportable a un archivo cuando quieras.",
+    "statsTitle": "El curso",
+    "statsLessons": "{count} lecciones",
+    "statsExercises": "{count} ejercicios",
+    "statsHours": "~{count} horas"
   },
   "placeholder": {
     "title": "Página en construcción",

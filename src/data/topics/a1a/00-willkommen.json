@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-0",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 0,
+  "title": "Willkommen",
+  "shortTitle": "Willkommen",
+  "description": "Benvinguda al curs d'alemany A1. El mètode, el ritme i les primeres paraules.",
+  "axes": [],
+  "estimatedMinutes": 6,
+  "steps": [
+    {
+      "id": "welcome",
+      "kind": "narrative",
+      "heading": "Willkommen",
+      "lead": "Si has arribat fins aquí és que **vols aprendre alemany**. Això ja és mitja victòria.",
+      "body": "L'alemany té fama de difícil. És una llengua que s'assembla poc al que has sentit tota la vida: sonoritats fortes, paraules llargues, una gramàtica que demana atenció. Però té una cosa a favor seu: és ==profundament lògica==. Cap particularitat és aleatòria; cada regla té una raó, i la majoria de regles són poques però fortes."
+    },
+    {
+      "id": "why-german",
+      "kind": "narrative",
+      "heading": "Per què val la pena",
+      "lead": "Uns 100 milions de persones parlen alemany com a llengua materna, i uns altres 80 milions l'aprenen com a segona llengua.",
+      "body": "És la llengua de la primera economia d'Europa, d'una tradició filosòfica, científica i literària que val la pena conèixer, i d'unes quantes sèries, pel·lícules i cançons que no sonen igual traduïdes. A nivell pràctic: si mai has de treballar, estudiar o fer turisme a Alemanya, Àustria, Suïssa o qualsevol racó de centreuropa, amb un A1 ja no ets un turista mut — pots presentar-te, demanar informació, entendre un menú i fer petites converses.",
+      "points": [
+        "És **lògica**: les regles són poques, però fortes. Un cop les interioritzes, les apliques a centenars de casos.",
+        "Està **emparentada** amb el català, el castellà i l'anglès més del que sembla: molts cognats et sorprendran.",
+        "Amb unes **30 hores ben invertides** (el que dura A1), pots mantenir una conversa simple. És assolible."
+      ]
+    },
+    {
+      "id": "the-method",
+      "kind": "narrative",
+      "heading": "El mètode Kompass",
+      "lead": "Cada lliçó té forma de ==viatge pausat==: una idea per pantalla, sense presses.",
+      "body": "No trobaràs aquí llargs blocs de text a escroll continu. El contingut s'ha partit en **fragments curts** — un per pantalla, amb una sola idea a vegada. Avances quan vols, amb les fletxes del teclat, el scroll del ratolí, o el mode automàtic si prefereixes que el curs et porti.",
+      "points": [
+        "**Narrativa pausada**: cada idea a pantalla plena, amb temps de llegir i assimilar.",
+        "**Exercicis intercalats**: cada bloc conceptual es tanca amb una comprovació curta. Si t'equivoques, cap problema — són per reforçar, no per jutjar.",
+        "**Tot local**: el teu progrés viu al navegador. Sense servidors, sense login, sense dades que viatgin enlloc. Si vols canviar de dispositiu, pots exportar-lo a un fitxer."
+      ]
+    },
+    {
+      "id": "mindset",
+      "kind": "narrative",
+      "heading": "El teu ritme",
+      "lead": "No hi ha ritme \"correcte\". Hi ha el teu.",
+      "body": "Alguns dies tindràs ganes de fer dues lliçons seguides. Altres, només una frase abans d'anar a dormir. Totes dues estones compten. L'important és ==tornar-hi==: el cervell consolida amb la repetició, no amb la pressa.",
+      "callout": {
+        "variant": "tip",
+        "title": "Els errors són part del mètode",
+        "body": "Si t'equivoques a un exercici, **cap alarma**. Les respostes correctes es mostren al costat per poder contrastar. Repeteix l'exercici quan vulguis — cada intent consolida una mica més el patró."
+      }
+    },
+    {
+      "id": "first-words",
+      "kind": "narrative",
+      "heading": "Les primeres paraules",
+      "lead": "Ja coneixes més alemany del que et penses. Comencem per coses senzilles.",
+      "body": "Aquestes sis paraules et permeten començar i acabar una conversa simple. Sentiràs la pronunciació clicant sobre cada exemple.",
+      "tabs": [
+        {
+          "pron": "Hallo",
+          "gloss": "Hola",
+          "note": "Saludar. Serveix per a tot tipus de context, formal o informal.",
+          "example": { "de": "==Hallo==, ich bin Anna.", "ca": "Hola, sóc Anna." }
+        },
+        {
+          "pron": "Tschüss",
+          "gloss": "Adéu",
+          "note": "Acomiadament informal. La doble «s» (ß) sona com una «s» llarga.",
+          "example": { "de": "==Tschüss==, bis morgen!", "ca": "Adéu, fins demà!" }
+        },
+        {
+          "pron": "Danke",
+          "gloss": "Gràcies",
+          "note": "Universal. Pot acompanyar-se amb _schön_ (==danke schön==) o _sehr_ per èmfasi.",
+          "example": { "de": "==Danke== für die Hilfe.", "ca": "Gràcies per l'ajuda." }
+        },
+        {
+          "pron": "Bitte",
+          "gloss": "Si us plau / De res",
+          "note": "Significa \"si us plau\" com a petició, i també \"de res\" com a resposta a _danke_.",
+          "example": { "de": "==Bitte==, kommen Sie herein.", "ca": "Si us plau, passi." }
+        },
+        {
+          "pron": "Ja",
+          "gloss": "Sí",
+          "note": "Pronunciat com \"ia\" català. Curt i directe.",
+          "example": { "de": "Bist du Student? — ==Ja==.", "ca": "Ets estudiant? — Sí." }
+        },
+        {
+          "pron": "Nein",
+          "gloss": "No",
+          "note": "Pronunciat com \"nain\". La combinació _ei_ es llegeix sempre \"ai\".",
+          "example": { "de": "Bist du müde? — ==Nein==.", "ca": "Estàs cansat? — No." }
+        }
+      ]
+    },
+    {
+      "id": "begin",
+      "kind": "narrative",
+      "heading": "Comencem",
+      "lead": "La primera lliçó real comença on acaba aquesta: els ==pronoms personals==.",
+      "body": "Els pronoms — jo, tu, ella, nosaltres — són la primera eina de l'alemany parlat. Amb ells podràs presentar-te i començar a parlar de qualsevol persona. Tot comença per _Ich bin_… (\"Jo sóc…\").",
+      "callout": {
+        "variant": "info",
+        "title": "Què ve ara",
+        "body": "A continuació: **A1a-1 Pronomen**. És una lliçó curta, molt visual. Prem la fletxa dreta quan estiguis preparat o preparada."
+      }
+    }
+  ]
+}

@@ -139,7 +139,7 @@ export const TopicSchema = z
     id: z.string().regex(TOPIC_ID_REGEX, 'Format esperat: A1a-14, A1b-19…'),
     level: z.string(),
     sublevel: z.string().optional(),
-    number: z.number().int().min(1),
+    number: z.number().int().min(0),
     title: z.string(),
     shortTitle: z.string(),
     description: z.string(),

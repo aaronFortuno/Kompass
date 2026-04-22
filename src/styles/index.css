@@ -967,10 +967,20 @@
 }
 
 .kf-stage-full {
-  gap: 40px;
-  padding: 20px 0 40px;
+  gap: 56px;
+  padding: 20px 0 60px;
   overflow-y: auto;
   max-height: 100%;
+  width: 100%;
+  max-width: 760px;
+}
+.kf-stage-full > .kf-full-beat,
+.kf-stage-full > .kf-full-beat-static {
+  width: 100%;
+}
+.kf-full-beat-static {
+  /* Versió sense animació (prefers-reduced-motion) */
+  opacity: 1;
 }
 .kf-full-beat {
   animation: kf-full-in 0.45s var(--ease-standard) both;
@@ -2141,14 +2151,24 @@ html.dark .k-mark {
   font-size: 15px;
 }
 
-/* Mode full: tipografies una mica menors (aprox. 80% del fragment) */
-.kf-stage-full .kf-beat-heading { font-size: calc(54px * var(--kf-type-scale, 1)); }
-.kf-stage-full .kf-beat-lead { font-size: calc(40px * var(--kf-type-scale, 1)); }
-.kf-stage-full .kf-beat-body { font-size: calc(34px * var(--kf-type-scale, 1)); }
-.kf-stage-full .kf-beat-ex-de { font-size: calc(40px * var(--kf-type-scale, 1)); }
-.kf-stage-full .kf-beat-pron-huge { font-size: calc(96px * var(--kf-type-scale, 1)); }
-.kf-stage-full .kf-beat-pair-poss { font-size: calc(56px * var(--kf-type-scale, 1)); }
-.kf-stage-full .kf-beat-point { font-size: calc(34px * var(--kf-type-scale, 1)); }
+/* Mode full: tipografies reduïdes clarament per fer viable l'apilat
+   vertical de 5-15 beats per pas. Pensat per una lectura tranquil·la
+   amb scroll vertical natural. */
+.kf-stage-full .kf-beat-heading { font-size: calc(40px * var(--kf-type-scale, 1)); }
+.kf-stage-full .kf-beat-lead { font-size: calc(26px * var(--kf-type-scale, 1)); }
+.kf-stage-full .kf-beat-body { font-size: calc(22px * var(--kf-type-scale, 1)); max-width: 40ch; }
+.kf-stage-full .kf-beat-point { font-size: calc(22px * var(--kf-type-scale, 1)); max-width: 40ch; }
+.kf-stage-full .kf-beat-ex-de { font-size: calc(30px * var(--kf-type-scale, 1)); }
+.kf-stage-full .kf-beat-ex-ca { font-size: calc(18px * var(--kf-type-scale, 1)); }
+.kf-stage-full .kf-beat-pron-huge { font-size: calc(68px * var(--kf-type-scale, 1)); }
+.kf-stage-full .kf-beat-pron-note { font-size: calc(18px * var(--kf-type-scale, 1)); }
+.kf-stage-full .kf-beat-pair-poss { font-size: calc(42px * var(--kf-type-scale, 1)); }
+.kf-stage-full .kf-beat-pit-bad { font-size: 28px; }
+.kf-stage-full .kf-beat-pit-good { font-size: 32px; }
+.kf-stage-full .kf-beat-callout p { font-size: calc(20px * var(--kf-type-scale, 1)); }
+/* El caret del typewriter no s'ha de veure al mode full (ja forcem
+   fastMode a true, però per si un Typed queda amb caret momentàniament) */
+.kf-stage-full .kf-caret::after { display: none; }
 
 /* Responsiu */
 @media (max-width: 720px) {

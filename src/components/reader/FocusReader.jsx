@@ -1426,8 +1426,8 @@ export function FocusReader({ topic }) {
             {beats.map((b, i) => (
               <div
                 key={i}
-                className={reduced ? '' : 'kf-full-beat'}
-                style={reduced ? undefined : { animationDelay: `${i * 60}ms` }}
+                className={reduced ? 'kf-full-beat-static' : 'kf-full-beat'}
+                style={reduced ? undefined : { animationDelay: `${i * 80}ms` }}
               >
                 <BeatBody
                   beat={b}
@@ -1436,7 +1436,7 @@ export function FocusReader({ topic }) {
                   showKicker={i === 0}
                   settings={settings}
                   speed={speed}
-                  fastMode={fastMode}
+                  fastMode={true}
                 />
               </div>
             ))}

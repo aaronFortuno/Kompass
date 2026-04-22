@@ -12,12 +12,23 @@
     "about": "Sobre"
   },
   "home": {
-    "welcome": "Benvingut a Kompass",
-    "intro": "Una web per a estudiar alemany A1 sense login, sense fronteres i al teu ritme. El teu progrés viu al navegador i el pots exportar quan vulguis.",
-    "ctaStart": "Explora els temes",
-    "ctaPaths": "Veure rutes",
-    "statusTitle": "Estat actual",
-    "statusScaffold": "Estem en fase d'scaffold visual. Aviat hi haurà contingut real."
+    "kicker": "Alemany A1 · A1a + A1b",
+    "welcome": "Kompass",
+    "lead": "Aprèn alemany amb calma, sense presses, a ritme editorial.",
+    "intro": "Un viatge lent per les formes bàsiques de la llengua: els pronoms, els verbs, els casos, l'ordre de les paraules. Cada lliçó partida en fragments curts — un per pantalla — perquè puguis llegir amb atenció. El teu progrés viu al navegador; no cal login ni compte.",
+    "ctaStart": "Començar amb la benvinguda",
+    "ctaSyllabus": "Veure tot el temari",
+    "howTitle": "Com funciona",
+    "howBeatTitle": "Fragments curts",
+    "howBeatText": "Cada lliçó es presenta fragment a fragment, una idea a la vegada. Sense blocs llargs de text.",
+    "howExerciseTitle": "Exercicis intercalats",
+    "howExerciseText": "Cada bloc conceptual es tanca amb una comprovació curta. Feedback immediat, pregunta a pregunta.",
+    "howOfflineTitle": "Tot local",
+    "howOfflineText": "Sense servidors ni registres. El teu progrés viu al navegador, exportable a un fitxer quan vulguis.",
+    "statsTitle": "El curs",
+    "statsLessons": "{count} lliçons",
+    "statsExercises": "{count} exercicis",
+    "statsHours": "~{count} hores"
   },
   "placeholder": {
     "title": "Pàgina en construcció",
