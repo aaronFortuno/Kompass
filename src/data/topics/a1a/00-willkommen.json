@@ -6,7 +6,7 @@
   "number": 0,
   "title": "Willkommen",
   "shortTitle": "Willkommen",
-  "description": "Benvinguda al curs d'alemany A1. El mètode, el ritme i les primeres paraules.",
+  "description": "Benvinguda al curs d'alemany A1. Com s'organitza, a quin ritme i les primeres paraules.",
   "axes": [],
   "estimatedMinutes": 6,
   "steps": [
@@ -15,11 +15,11 @@
       "kind": "narrative",
       "heading": "Willkommen",
       "lead": "Si has arribat fins aquí és que **vols aprendre alemany**. Això ja és mitja victòria.",
-      "body": "L'alemany té fama de difícil. És una llengua que s'assembla poc al que has sentit tota la vida: sonoritats fortes, paraules llargues, una gramàtica que demana atenció. Però té una cosa a favor seu: és ==profundament lògica==. Cap particularitat és aleatòria; cada regla té una raó, i la majoria de regles són poques però fortes.",
+      "body": "L'alemany té fama de difícil. Té sonoritats fortes i paraules llargues. Però també té una cosa a favor seu: és ==profundament lògica==.",
       "visuals": [
         {
           "svg": "<svg viewBox='0 0 320 320' xmlns='http://www.w3.org/2000/svg' aria-hidden='true'><g fill='none' stroke='currentColor' stroke-width='0.6'><circle cx='160' cy='160' r='150' opacity='0.22'/><circle cx='160' cy='160' r='120' opacity='0.35'/><circle cx='160' cy='160' r='72' opacity='0.48'/></g><g fill='currentColor'><polygon points='160,22 150,152 160,160' opacity='0.85'/><polygon points='160,22 170,152 160,160' opacity='0.28'/><polygon points='160,298 170,168 160,160' opacity='0.28'/><polygon points='160,298 150,168 160,160' opacity='0.58'/><polygon points='298,160 168,150 160,160' opacity='0.28'/><polygon points='298,160 168,170 160,160' opacity='0.58'/><polygon points='22,160 152,170 160,160' opacity='0.85'/><polygon points='22,160 152,150 160,160' opacity='0.28'/><circle cx='160' cy='160' r='3.5'/></g><g font-family='Newsreader, serif' font-size='12' font-style='italic' fill='currentColor' opacity='0.6'><text x='160' y='14' text-anchor='middle'>N</text><text x='160' y='316' text-anchor='middle'>S</text><text x='312' y='164' text-anchor='end'>E</text><text x='8' y='164' text-anchor='start'>O</text></g></svg>",
-          "alt": "Una rosa dels vents — il·lustració decorativa del mètode Kompass",
+          "alt": "Una rosa dels vents — il·lustració d'obertura del curs.",
           "caption": "Un instrument per orientar-se.",
           "credit": "Imatge provisional · SVG inline",
           "width": 280
@@ -27,27 +27,20 @@
       ]
     },
     {
-      "id": "why-german",
+      "id": "why-german-1",
       "kind": "narrative",
       "heading": "Per què val la pena",
-      "lead": "Uns 100 milions de persones parlen alemany com a llengua materna, i uns altres 80 milions l'aprenen com a segona llengua.",
-      "body": "És la llengua de la primera economia d'Europa, d'una tradició filosòfica, científica i literària que val la pena conèixer, i d'unes quantes sèries, pel·lícules i cançons que no sonen igual traduïdes. A nivell pràctic: si mai has de treballar, estudiar o fer turisme a Alemanya, Àustria, Suïssa o qualsevol racó de Centreeuropa, amb un A1 ja no ets un turista mut — pots presentar-te, demanar informació, entendre un menú i fer petites converses.",
-      "points": [
-        "És **lògica**: les regles són poques, però fortes. Un cop les interioritzes, les apliques a centenars de casos.",
-        "Està **emparentada** amb el català, el castellà i l'anglès més del que sembla: molts cognats et sorprendran.",
-        "Amb unes **30 hores ben invertides** (el que dura A1), pots mantenir una conversa simple. És assolible."
-      ]
+      "lead": "Uns 100 milions de persones parlen alemany com a llengua materna. Uns altres 80 milions l'aprenen.",
+      "body": "És la llengua de la primera economia d'Europa i d'una llarga tradició filosòfica, científica i literària. I al dia a dia: et deixa passar de turista mut a poder-te presentar i demanar informació."
     },
     {
-      "id": "the-method",
+      "id": "why-german-2",
       "kind": "narrative",
-      "heading": "El mètode Kompass",
-      "lead": "Cada lliçó té forma de ==viatge pausat==: una idea per pantalla, sense presses.",
-      "body": "No trobaràs aquí llargs blocs de text a escroll continu. El contingut s'ha partit en **fragments curts** — un per pantalla, amb una sola idea a vegada. Avances quan vols, amb les fletxes del teclat, el scroll del ratolí, o el mode automàtic si prefereixes que el curs et porti.",
+      "heading": "Tres coses a favor seu",
       "points": [
-        "**Narrativa pausada**: cada idea a pantalla plena, amb temps de llegir i assimilar.",
-        "**Exercicis intercalats**: cada bloc conceptual es tanca amb una comprovació curta. Si t'equivoques, cap problema — són per reforçar, no per jutjar.",
-        "**Tot local**: el teu progrés viu al navegador. Sense servidors, sense login, sense dades que viatgin enlloc. Si vols canviar de dispositiu, pots exportar-lo a un fitxer."
+        "És **lògica**: poques regles, però fortes. Les aprens un cop i les apliques a centenars de casos.",
+        "Està **emparentada** amb el català, el castellà i l'anglès més del que sembla. Trobaràs molts cognats.",
+        "Amb ==30 hores ben invertides== (el que dura A1) pots mantenir una conversa simple. És assolible."
       ]
     },
     {
@@ -55,19 +48,46 @@
       "kind": "narrative",
       "heading": "El teu ritme",
       "lead": "No hi ha ritme \"correcte\". Hi ha el teu.",
-      "body": "Alguns dies tindràs ganes de fer dues lliçons seguides. Altres, només una oració abans d'anar a dormir. Totes dues estones compten. L'important és ==tornar-hi==: el cervell consolida amb la repetició, no amb la pressa.",
+      "body": "Alguns dies faràs dues lliçons seguides. Altres, només una oració abans d'anar a dormir. Totes dues estones compten. L'important és ==tornar-hi==.",
       "callout": {
         "variant": "tip",
-        "title": "Els errors són part del mètode",
-        "body": "Si t'equivoques a un exercici, **cap alarma**. Les respostes correctes es mostren al costat per poder contrastar. Repeteix l'exercici quan vulguis — cada intent consolida una mica més el patró."
+        "title": "Els errors són part del camí",
+        "body": "Si t'equivoques a un exercici, **cap alarma**. La resposta correcta es mostra al costat per contrastar. Repeteix l'exercici quan vulguis."
       }
+    },
+    {
+      "id": "pivot",
+      "kind": "narrative",
+      "heading": "I tu, com ho faràs aquí?",
+      "lead": "Fins aquí el per què. Ara, el com."
+    },
+    {
+      "id": "how-it-works",
+      "kind": "narrative",
+      "heading": "Fragments curts, una idea cada cop",
+      "lead": "Cada lliçó està partida en petits passos. Una pantalla, una idea.",
+      "body": "Avances quan vols amb les fletxes del teclat, el clic o el dit. Si prefereixes escoltar sense tocar res, pots activar el mode automàtic."
+    },
+    {
+      "id": "exercises",
+      "kind": "narrative",
+      "heading": "Exercicis pel camí",
+      "lead": "Cada bloc conceptual es tanca amb una comprovació curta.",
+      "body": "No són per jutjar-te. Són per fixar el que acabes de veure. Si en falles un, el pots repetir tantes vegades com vulguis."
+    },
+    {
+      "id": "local-first",
+      "kind": "narrative",
+      "heading": "Tot viu al teu navegador",
+      "lead": "Sense servidors. Sense login. Sense dades que viatgin enlloc.",
+      "body": "El teu progrés es guarda local, al navegador. Si vols canviar de dispositiu o fer còpia de seguretat, pots exportar-lo a un fitxer."
     },
     {
       "id": "first-words",
       "kind": "narrative",
       "heading": "Les primeres paraules",
-      "lead": "Ja coneixes més alemany del que et penses. Comencem per coses senzilles.",
-      "body": "Aquestes sis paraules et permeten començar i acabar una conversa simple. Sentiràs la pronunciació clicant sobre cada exemple.",
+      "lead": "Ja coneixes més alemany del que et penses. Comencem per sis mots.",
+      "body": "Aquestes sis paraules et permeten començar i acabar una conversa simple.",
       "tabs": [
         {
           "pron": "Hallo",
@@ -112,11 +132,11 @@
       "kind": "narrative",
       "heading": "Comencem",
       "lead": "La primera lliçó real comença on acaba aquesta: els ==pronoms personals==.",
-      "body": "Els pronoms — jo, tu, ella, nosaltres — són la primera eina de l'alemany parlat. Amb ells podràs presentar-te i començar a parlar de qualsevol persona. Tot comença per _Ich bin_… (\"Jo sóc…\").",
+      "body": "Amb jo, tu, ella, nosaltres… podràs presentar-te i parlar de qualsevol persona. Tot comença per _Ich bin_ (\"Jo sóc\").",
       "callout": {
         "variant": "info",
         "title": "Què ve ara",
-        "body": "A continuació: **A1a-1 Pronomen**. És una lliçó curta, molt visual. Prem la fletxa dreta quan estiguis preparat o preparada."
+        "body": "A continuació: **A1a-1 Pronomen**. Una lliçó curta i molt visual. Prem la fletxa dreta quan estiguis preparat o preparada."
       }
     }
   ]
