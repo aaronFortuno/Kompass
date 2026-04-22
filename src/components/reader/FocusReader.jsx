@@ -1246,10 +1246,13 @@ export function FocusReader({ topic }) {
 
       // "t" surt del reader cap al temari sencer. Gest ràpid per
       // explorar altres lliçons sense haver de passar per Esc → ratolí.
+      // Passem ?focus=<id> perquè la pàgina del temari hi posicioni
+      // aquesta lliçó al terç superior i la ressalti — igual que el
+      // clic al títol del reader.
       if ((e.key === 't' || e.key === 'T') && !e.ctrlKey && !e.metaKey && !e.altKey) {
         if (inInput) return;
         e.preventDefault();
-        navigate('/temari');
+        navigate(`/temari?focus=${topic.id}`);
         return;
       }
 
@@ -1287,7 +1290,7 @@ export function FocusReader({ topic }) {
     };
     window.addEventListener('keydown', onKey, true);
     return () => window.removeEventListener('keydown', onKey, true);
-  }, [closeReader, goBeat, goStep, goBlock, skipOrAdvance, drawerOpen, splashVisible, settings.autoPlay]);
+  }, [closeReader, goBeat, goStep, goBlock, skipOrAdvance, drawerOpen, splashVisible, settings.autoPlay, navigate, topic.id]);
 
   // Tap/clic a l'àrea de contingut (fora de botons i pills interactives):
   // acaba el typewriter del beat actual i pausa l'autoplay. Un gest
@@ -1499,7 +1502,14 @@ export function FocusReader({ topic }) {
           <span className="kf-muted kf-logo-id">{topic.id}</span>
         </div>
 
-        <div className="kf-title">{topic.title}</div>
+        <button
+          type="button"
+          className="kf-title kf-title-btn"
+          onClick={() => navigate(`/temari?focus=${topic.id}`)}
+          title="Obre l'índex del temari"
+        >
+          {topic.title}
+        </button>
 
         <ProgressBar
           topic={topic}
@@ -1600,62 +1610,87 @@ export function FocusReader({ topic }) {
               : `Pas ${String(stepIdx + 1).padStart(2, '0')} · ${beatIdx + 1}/${beats.length}`}
           </span>
           <span className="kf-keyhint">
-            {/* Columna 1 · navegació direccional (fletxes ←→). Grid
-                intern: kbds a l'esquerra alineats a la dreta, labels a
-                la dreta alineats a l'esquerra. Això posa les tres
-                fletxes en la mateixa vertical i les tres paraules també. */}
+            {/* Columna 1 · navegació direccional.
+                Grid intern de 4 columnes: [mod] [shift] [fletxes] [label].
+                Cada fila té sempre els 4 slots; els no aplicables es
+                marquen .is-empty per mantenir la mesura i que les fletxes
+                quedin alineades verticalment entre files (v. §96-97). */}
             {!isFullMode ? (
-              <span className="kf-keyhint-col kf-keyhint-col-grid">
-                <span className="kgroup">
-                  <span className="kgroup-keys">
-                    <kbd>←</kbd>
-                    <kbd>→</kbd>
-                  </span>
-                  <span className="lbl">fragment</span>
+              <span className="kf-keyhint-col kf-keyhint-col-nav">
+                {/* fragment · sense modificadors */}
+                <span className="k-mod is-empty" aria-hidden="true">
+                  <kbd>{MODKEY}</kbd>
+                  <span className="plus">+</span>
                 </span>
-                <span className="kgroup">
-                  <span className="kgroup-keys">
-                    <kbd>{MODKEY}</kbd>
-                    <span className="plus">+</span>
-                    <kbd>←</kbd>
-                    <kbd>→</kbd>
-                  </span>
-                  <span className="lbl">pas</span>
+                <span className="k-shift is-empty" aria-hidden="true">
+                  <kbd>⇧</kbd>
+                  <span className="plus">+</span>
                 </span>
-                <span className="kgroup">
-                  <span className="kgroup-keys">
-                    <kbd>{MODKEY}</kbd>
-                    <span className="plus">+</span>
-                    <kbd>⇧</kbd>
-                    <span className="plus">+</span>
-                    <kbd>←</kbd>
-                    <kbd>→</kbd>
-                  </span>
-                  <span className="lbl">bloc</span>
+                <span className="k-arrows">
+                  <kbd>←</kbd>
+                  <kbd>→</kbd>
                 </span>
+                <span className="lbl">fragment</span>
+
+                {/* pas · mod + fletxes */}
+                <span className="k-mod">
+                  <kbd>{MODKEY}</kbd>
+                  <span className="plus">+</span>
+                </span>
+                <span className="k-shift is-empty" aria-hidden="true">
+                  <kbd>⇧</kbd>
+                  <span className="plus">+</span>
+                </span>
+                <span className="k-arrows">
+                  <kbd>←</kbd>
+                  <kbd>→</kbd>
+                </span>
+                <span className="lbl">pas</span>
+
+                {/* bloc · mod + shift + fletxes */}
+                <span className="k-mod">
+                  <kbd>{MODKEY}</kbd>
+                  <span className="plus">+</span>
+                </span>
+                <span className="k-shift">
+                  <kbd>⇧</kbd>
+                  <span className="plus">+</span>
+                </span>
+                <span className="k-arrows">
+                  <kbd>←</kbd>
+                  <kbd>→</kbd>
+                </span>
+                <span className="lbl">bloc</span>
               </span>
             ) : (
-              <span className="kf-keyhint-col kf-keyhint-col-grid">
-                <span className="kgroup">
-                  <span className="kgroup-keys">
-                    <kbd>{MODKEY}</kbd>
-                    <span className="plus">+</span>
-                    <kbd>←</kbd>
-                    <kbd>→</kbd>
-                  </span>
-                  <span className="lbl">pas</span>
+              <span className="kf-keyhint-col kf-keyhint-col-nav">
+                <span className="k-mod">
+                  <kbd>{MODKEY}</kbd>
+                  <span className="plus">+</span>
                 </span>
-                <span className="kgroup">
-                  <span className="kgroup-keys">
-                    <kbd>{MODKEY}</kbd>
-                    <span className="plus">+</span>
-                    <kbd>⇧</kbd>
-                    <span className="plus">+</span>
-                    <kbd>←</kbd>
-                    <kbd>→</kbd>
-                  </span>
-                  <span className="lbl">bloc</span>
+                <span className="k-shift is-empty" aria-hidden="true">
+                  <kbd>⇧</kbd>
+                  <span className="plus">+</span>
                 </span>
+                <span className="k-arrows">
+                  <kbd>←</kbd>
+                  <kbd>→</kbd>
+                </span>
+                <span className="lbl">pas</span>
+
+                <span className="k-mod">
+                  <kbd>{MODKEY}</kbd>
+                  <span className="plus">+</span>
+                </span>
+                <span className="k-shift">
+                  <kbd>⇧</kbd>
+                  <span className="plus">+</span>
+                </span>
+                <span className="k-arrows">
+                  <kbd>←</kbd>
+                  <kbd>→</kbd>
+                </span>
+                <span className="lbl">bloc</span>
               </span>
             )}
 

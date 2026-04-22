@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import { useEffect, useRef } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
 import { Check } from 'lucide-react';
 import { useT } from '@/i18n';
 import { getAllLevelKeys, getTopicsByLevel } from '@/lib/dataLoader.js';
@@ -9,6 +10,21 @@ export function TopicsIndexPage() {
   const { t } = useT();
   const levelKeys = getAllLevelKeys();
   const exercisesState = useProgressStore((s) => s.exercises);
+
+  // Enllaç contextual des del reader: el títol del reader navega aquí
+  // amb ?focus=<topicId>. Posicionem el tema al terç superior de la
+  // finestra i hi apliquem una marca visual temporal — així l'usuari
+  // veu exactament on està dins del temari quan surt del reader.
+  const [searchParams] = useSearchParams();
+  const focusId = searchParams.get('focus');
+  const focusRef = useRef(null);
+  useEffect(() => {
+    if (!focusId || !focusRef.current) return;
+    const el = focusRef.current;
+    const rect = el.getBoundingClientRect();
+    const target = window.scrollY + rect.top - window.innerHeight / 3;
+    window.scrollTo({ top: Math.max(0, target), behavior: 'smooth' });
+  }, [focusId]);
 
   return (
     <div className="section-gap max-w-content-list">
@@ -40,8 +56,13 @@ export function TopicsIndexPage() {
                 const { total, completed, pct, allDone } =
                   computeTopicProgress(topic, exercisesState);
                 const hasExercises = total > 0;
+                const isFocus = topic.id === focusId;
                 return (
-                  <li key={topic.id}>
+                  <li
+                    key={topic.id}
+                    ref={isFocus ? focusRef : null}
+                    className={isFocus ? 'topics-focus' : ''}
+                  >
                     <Link
                       to={`/temari/${topic.id}`}
                       className={[

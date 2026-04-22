@@ -361,6 +361,25 @@
   line-height: 1;
   max-width: 100%;
 }
+/* Variant botó: clicable porta al temari amb el topic en scroll
+   posicionat al terç superior (§98 · enllaç contextual). Mantenim
+   l'aparença de text pur; el hover i el focus afegeixen subratllat
+   discret per indicar l'affordance. */
+.kf-head .kf-title-btn {
+  background: transparent;
+  border: 0;
+  padding: 2px 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+.kf-head .kf-title-btn:hover,
+.kf-head .kf-title-btn:focus-visible {
+  text-decoration: underline;
+  text-decoration-color: rgb(var(--color-reader-rule));
+  text-underline-offset: 4px;
+  outline: none;
+}
 
 /* Progress */
 .kf-progress {
@@ -1675,6 +1694,37 @@ html.dark .k-mark {
 .kf-keyhint-col-grid .lbl {
   justify-self: start; /* labels alineats a l'esquerra de la seva sub-columna */
 }
+/*
+ * Variant "nav" · quatre sub-columnes per alinear verticalment les
+ * modificadors (mod · shift · fletxes · label). Cada fila té sempre
+ * quatre cel·les; les que no s'apliquen es mantenen amb els mateixos
+ * fills però amb visibility:hidden (.is-empty), així el grid les
+ * mesura igual que les visibles i les tres fletxes queden perfectament
+ * alineades entre si, com també el "+" i els "Ctrl" de les files amb
+ * modificador.
+ */
+.kf-keyhint-col-nav {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 4px;
+  row-gap: 5px;
+  align-items: center;
+}
+.kf-keyhint-col-nav .k-mod,
+.kf-keyhint-col-nav .k-shift,
+.kf-keyhint-col-nav .k-arrows {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  justify-self: end;
+}
+.kf-keyhint-col-nav .lbl {
+  justify-self: start;
+  margin-left: 8px;
+}
+.kf-keyhint-col-nav .is-empty {
+  visibility: hidden;
+}
 .kf-keyhint-col + .kf-keyhint-col {
   padding-left: 18px;
   border-left: 1px solid rgb(var(--color-reader-rule));
@@ -2257,4 +2307,35 @@ html.dark .k-mark {
 @media (max-width: 420px) {
   .kf-head .kf-title { display: none; }
   .kf-body { padding: 8px 12px; }
+}
+
+/*
+ * Topics index · highlight del tema destacat via ?focus=<id> des del
+ * títol del reader. Línia lateral esquerra accent + pulse subtle al
+ * moment del mount perquè l'ull sàpiga on mirar. L'animació dura
+ * uns quants segons i després es queda amb el barrot discret.
+ */
+.topics-focus {
+  position: relative;
+  animation: topics-focus-pulse 2.4s var(--ease-standard) 0.1s 1 both;
+}
+.topics-focus::before {
+  content: '';
+  position: absolute;
+  left: -14px;
+  top: 8px;
+  bottom: 8px;
+  width: 3px;
+  background: rgb(var(--color-reader-ink));
+}
+@keyframes topics-focus-pulse {
+  0% { background: transparent; }
+  20% { background: rgb(var(--color-reader-paper-2)); }
+  60% { background: rgb(var(--color-reader-paper-2)); }
+  100% { background: transparent; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .topics-focus {
+    animation: none;
+  }
 }
