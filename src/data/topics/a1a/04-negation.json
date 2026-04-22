@@ -14,13 +14,13 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Context i motivació\n\nDir **no** és tan bàsic com dir sí. A la vida real, bona part del que fem servir per presentar-nos o descriure la nostra situació és **negació**: _no estic casat/da_, _no tinc germans_, _no visc a Berlín_, _no treballo els diumenges_. Si només saps fer oracions afirmatives, et quedes a mig parlar.\n\nEn català i en castellà la negació és còmoda: tens **un** mot màgic, _no_, i el poses davant del verb. Fi de la història.\n\n> _No treballo._ / _No trabajo._\n\nEn alemany, en canvi, la negació té **dues eines** diferents, i triar-ne l'una o l'altra depèn **del que estàs negant**:\n\n- **_nicht_** → nega **verbs**, **adjectius**, o elements concrets de l'oració (un lloc, un moment, una qualitat).\n- **_kein / keine_** → nega **substantius** que, en afirmatiu, portarien _ein / eine_ o cap article (és a dir, \"no tenir cap X\", \"no ser cap X\").\n\nNo és difícil, però és una decisió que cal fer cada cop. En aquesta lliçó aprendràs **quan triar cadascuna** i **on col·locar-les** dins l'oració. Amb això cobreixes el 95% de les negacions que necessitaràs a l'A1."
+          "body": "#### Context i motivació\n\nDir **no** és tan bàsic com dir sí. A la vida real, bona part del que fem servir per presentar-nos o descriure la nostra situació és **negació**: _no estic casat/da_, _no tinc germans_, _no visc a Berlín_, _no treballo els diumenges_. Si només saps fer oracions afirmatives, et quedes a mig parlar.\n\nEn català i en castellà la negació és còmoda: tens **un** mot màgic, _no_, i el poses davant del verb. Fi de la història.\n\n> _No treballo._ / _No trabajo._\n\nEn alemany, en canvi, la negació té **dues eines** diferents, i triar-ne l'una o l'altra depèn **del que estàs negant**:\n\n- **_!!nicht!!_** → nega **verbs**, **adjectius**, o elements concrets de l'oració (un lloc, un moment, una qualitat).\n- **_!!kein / keine!!_** → nega **substantius** que, en afirmatiu, portarien _ein / eine_ o cap article (és a dir, \"no tenir cap X\", \"no ser cap X\").\n\nNo és difícil, però és una decisió que cal fer cada cop. En aquesta lliçó aprendràs **quan triar cadascuna** i **on col·locar-les** dins l'oració. Amb això cobreixes el 95% de les negacions que necessitaràs a l'A1."
         },
         {
           "type": "callout",
           "variant": "info",
           "title": "Nota sobre la terminologia",
-          "body": "En alemany, _nicht_ vol dir literalment \"no\", i _kein/keine_ es podrien traduir com \"cap\". Però aquesta traducció (\"cap\") sona rara en oracions com _Ich habe keine Kinder_, que en català diem naturalment com \"No tinc fills\" (no \"No tinc cap fill\"). Pensa-ho així: _kein_ és \"no + un\" fos en una sola paraula."
+          "body": "En alemany, _nicht_ vol dir literalment \"no\", i _kein/keine_ es podrien traduir com \"cap\". Però aquesta traducció (\"cap\") sona rara en oracions com _!!Ich habe keine Kinder.!!_, que en català diem naturalment com \"No tinc fills\" (no \"No tinc cap fill\"). Pensa-ho així: _kein_ és \"no + un\" fos en una sola paraula."
         }
       ]
     },
@@ -29,13 +29,13 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### _nicht_: la negació per defecte del verb\n\nComencem pel cas més simple. Si vols negar el verb de l'oració (no fer una acció, no ser una cosa, no estar en algun lloc), fas servir **_nicht_**.\n\n| Afirmatiu | Negatiu |\n|---|---|\n| Ich arbeite. | Ich arbeite **nicht**. |\n| Ich bin verheiratet. | Ich bin **nicht** verheiratet. |\n| Wir leben zusammen. | Wir leben **nicht** zusammen. |\n| Ich wohne in Stuttgart. | Ich wohne **nicht** in Stuttgart. |\n\nObserva què està passant:\n\n- _Ich arbeite nicht._ → No treballo. (Es nega **el verb _arbeiten_**.)\n- _Ich bin nicht verheiratet._ → No estic casat/da. (Es nega **l'adjectiu _verheiratet_**.)\n- _Wir leben nicht zusammen._ → No vivim junts/es. (Es nega **l'adverbi _zusammen_**.)\n- _Ich wohne nicht in Stuttgart._ → No visc a Stuttgart. (Es nega **el lloc _in Stuttgart_**.)\n\nEn tots quatre casos hi ha **un verb conjugat** (_arbeite, bin, leben, wohne_) i **un _nicht_** al costat. El verb conjugat, com ja saps del tema de les oracions enunciatives, ocupa la **segona posició** de l'oració. El _nicht_ **no desplaça mai el verb**: s'hi afegeix on toca segons la regla que veurem ara."
+          "body": "#### _nicht_: la negació per defecte del verb\n\nComencem pel cas més simple. Si vols negar el verb de l'oració (no fer una acció, no ser una cosa, no estar en algun lloc), fas servir **_!!nicht!!_**.\n\n| Afirmatiu | Negatiu |\n|---|---|\n| !!Ich arbeite.!! | !!Ich arbeite **nicht**.!! |\n| !!Ich bin verheiratet.!! | !!Ich bin **nicht** verheiratet.!! |\n| !!Wir leben zusammen.!! | !!Wir leben **nicht** zusammen.!! |\n| !!Ich wohne in Stuttgart.!! | !!Ich wohne **nicht** in Stuttgart.!! |\n\nObserva què està passant:\n\n- _!!Ich arbeite nicht.!!_ → No treballo. (Es nega **el verb _arbeiten_**.)\n- _!!Ich bin nicht verheiratet.!!_ → No estic casat/da. (Es nega **l'adjectiu _verheiratet_**.)\n- _!!Wir leben nicht zusammen.!!_ → No vivim junts/es. (Es nega **l'adverbi _zusammen_**.)\n- _!!Ich wohne nicht in Stuttgart.!!_ → No visc a Stuttgart. (Es nega **el lloc _in Stuttgart_**.)\n\nEn tots quatre casos hi ha **un verb conjugat** (_arbeite, bin, leben, wohne_) i **un _nicht_** al costat. El verb conjugat, com ja saps del tema de les oracions enunciatives, ocupa la **segona posició** de l'oració. El _nicht_ **no desplaça mai el verb**: s'hi afegeix on toca segons la regla que veurem ara."
         },
         {
           "type": "callout",
           "variant": "warning",
           "title": "Pista important",
-          "body": "_nicht_ **mai** va davant d'un verb conjugat. En català diem \"**no** treballo\" (el \"no\" davant del verb), però en alemany la traducció literal seria _Ich **nicht** arbeite_, i això és **incorrecte**. L'ordre correcte és _Ich arbeite **nicht**_."
+          "body": "_nicht_ **mai** va davant d'un verb conjugat. En català diem \"**no** treballo\" (el \"no\" davant del verb), però en alemany la traducció literal seria _!!Ich **nicht** arbeite.!!_, i això és **incorrecte**. L'ordre correcte és _!!Ich arbeite **nicht**.!!_"
         }
       ]
     },
@@ -44,7 +44,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### On col·loco _nicht_? La regla pràctica\n\nL'alemany té una regla consistent sobre la posició de _nicht_ que es pot resumir així:\n\n> **_nicht_ va darrere del verb conjugat i tendeix cap al final de l'oració, però s'avança just davant de l'element concret que nega.**\n\nVegem-ho en tres patrons típics:\n\n**1. Si _nicht_ nega el verb sencer** (una acció que simplement no fem), va **al final**:\n\n> _Ich arbeite **nicht**._ (No treballo.)\n> _Er kommt **nicht**._ (No ve.)\n\n**2. Si _nicht_ nega un adjectiu o un complement concret**, va **just davant d'aquest element**:\n\n> _Ich bin **nicht** verheiratet._ (No estic casat/da.) — nega l'adjectiu _verheiratet_.\n> _Ich komme **nicht** aus Innsbruck._ (No vinc d'Innsbruck.) — nega el lloc.\n> _Ich bin **nicht** Lehrer von Beruf._ (No sóc mestre de professió.) — nega la professió.\n\n**3. Si hi ha un lloc introduït per preposició** (_in Stuttgart_, _aus Berlin_), _nicht_ es col·loca **davant de la preposició**, no després:\n\n> _Ich wohne **nicht** in Stuttgart._ (No visc a Stuttgart.) ✓\n> _Ich wohne in Stuttgart **nicht**._ ✗ (poc natural a l'A1)\n\nLa manera més senzilla d'aprendre-ho al començament és aquesta: **pensa què vols negar, i posa _nicht_ just davant.** Si només vols negar el verb, com que no hi ha res més concret, _nicht_ acaba naturalment al final."
+          "body": "#### On col·loco _nicht_? La regla pràctica\n\nL'alemany té una regla consistent sobre la posició de _nicht_ que es pot resumir així:\n\n> **_nicht_ va darrere del verb conjugat i tendeix cap al final de l'oració, però s'avança just davant de l'element concret que nega.**\n\nVegem-ho en tres patrons típics:\n\n**1. Si _nicht_ nega el verb sencer** (una acció que simplement no fem), va **al final**:\n\n> _!!Ich arbeite **nicht**.!!_ (No treballo.)\n> _!!Er kommt **nicht**.!!_ (No ve.)\n\n**2. Si _nicht_ nega un adjectiu o un complement concret**, va **just davant d'aquest element**:\n\n> _!!Ich bin **nicht** verheiratet.!!_ (No estic casat/da.) — nega l'adjectiu _verheiratet_.\n> _!!Ich komme **nicht** aus Innsbruck.!!_ (No vinc d'Innsbruck.) — nega el lloc.\n> _!!Ich bin **nicht** Lehrer von Beruf.!!_ (No sóc mestre de professió.) — nega la professió.\n\n**3. Si hi ha un lloc introduït per preposició** (_in Stuttgart_, _aus Berlin_), _nicht_ es col·loca **davant de la preposició**, no després:\n\n> _!!Ich wohne **nicht** in Stuttgart.!!_ (No visc a Stuttgart.) ✓\n> _!!Ich wohne in Stuttgart **nicht**.!!_ ✗ (poc natural a l'A1)\n\nLa manera més senzilla d'aprendre-ho al començament és aquesta: **pensa què vols negar, i posa _nicht_ just davant.** Si només vols negar el verb, com que no hi ha res més concret, _nicht_ acaba naturalment al final."
         },
         {
           "type": "callout",
@@ -65,7 +65,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### _kein / keine_: la negació dels substantius\n\nAra la segona eina. Observa aquests parells:\n\n| Afirmatiu | Negatiu |\n|---|---|\n| Ich habe **ein** Auto. | Ich habe **kein** Auto. |\n| Ich habe **eine** Schwester. | Ich habe **keine** Schwester. |\n| Ich habe Kinder. | Ich habe **keine** Kinder. |\n| Ich bin Lehrer. | Ich bin **kein** Lehrer. |\n\nFixa't en què tenen en comú els afirmatius:\n\n- _ein Auto_ (un cotxe) → article indefinit **_ein_**.\n- _eine Schwester_ (una germana) → article indefinit **_eine_**.\n- _Kinder_ (fills) → plural **sense article**.\n- _Lehrer_ (mestre) → substantiu de professió, **sense article**.\n\nQuan el substantiu afirmatiu porta _ein/eine_, **o bé no porta cap article** (plural indefinit, professions, nacionalitats...), la negació es fa **amb _kein / keine_**, no amb _nicht_."
+          "body": "#### _kein / keine_: la negació dels substantius\n\nAra la segona eina. Observa aquests parells:\n\n| Afirmatiu | Negatiu |\n|---|---|\n| !!Ich habe **ein** Auto.!! | !!Ich habe **kein** Auto.!! |\n| !!Ich habe **eine** Schwester.!! | !!Ich habe **keine** Schwester.!! |\n| !!Ich habe Kinder.!! | !!Ich habe **keine** Kinder.!! |\n| !!Ich bin Lehrer.!! | !!Ich bin **kein** Lehrer.!! |\n\nFixa't en què tenen en comú els afirmatius:\n\n- _!!ein Auto!!_ (un cotxe) → article indefinit **_ein_**.\n- _!!eine Schwester!!_ (una germana) → article indefinit **_eine_**.\n- _!!Kinder!!_ (fills) → plural **sense article**.\n- _!!Lehrer!!_ (mestre) → substantiu de professió, **sense article**.\n\nQuan el substantiu afirmatiu porta _ein/eine_, **o bé no porta cap article** (plural indefinit, professions, nacionalitats...), la negació es fa **amb _kein / keine_**, no amb _nicht_."
         },
         {
           "type": "callout",
@@ -75,7 +75,7 @@
         },
         {
           "type": "explanation",
-          "body": "**Formes bàsiques:**\n\n- **_kein_** → davant de substantius **masculins** o **neutres** en singular.\n  > _kein Auto_ (_das Auto_, neutre), _kein Bruder_ (_der Bruder_, masculí).\n- **_keine_** → davant de substantius **femenins** en singular **i davant de qualsevol plural**.\n  > _keine Schwester_ (_die Schwester_, femení singular), _keine Kinder_ (plural de tots els gèneres), _keine Brüder_ (plural masculí).\n\nÉs la mateixa lògica de concordança que ja vas veure amb _mein / meine_ al tema 1: forma curta per a masculí/neutre singular, forma amb **-e** per a femení singular i per a plurals.\n\n**Dos usos que poden sorprendre:**\n\n> _Ich habe **keine** Kinder._ (No tinc fills.) — plural.\n> _Ich bin **kein** Lehrer._ (No sóc mestre.) — professió sense article.\n\nEl PDF del curs recorda que, per parlar de no tenir descendència, **és més natural el plural** (_keine Kinder_) que el singular (_kein Kind_). En alemany \"no tinc fills\" es diu així, encara que literalment en català seria \"cap fill\"."
+          "body": "**Formes bàsiques:**\n\n- **_!!kein!!_** → davant de substantius **masculins** o **neutres** en singular.\n  > _!!kein Auto!!_ (_!!das Auto!!_, neutre), _!!kein Bruder!!_ (_!!der Bruder!!_, masculí).\n- **_!!keine!!_** → davant de substantius **femenins** en singular **i davant de qualsevol plural**.\n  > _!!keine Schwester!!_ (_!!die Schwester!!_, femení singular), _!!keine Kinder!!_ (plural de tots els gèneres), _!!keine Brüder!!_ (plural masculí).\n\nÉs la mateixa lògica de concordança que ja vas veure amb _mein / meine_ al tema 1: forma curta per a masculí/neutre singular, forma amb **-e** per a femení singular i per a plurals.\n\n**Dos usos que poden sorprendre:**\n\n> _!!Ich habe **keine** Kinder.!!_ (No tinc fills.) — plural.\n> _!!Ich bin **kein** Lehrer.!!_ (No sóc mestre.) — professió sense article.\n\nEl PDF del curs recorda que, per parlar de no tenir descendència, **és més natural el plural** (_!!keine Kinder!!_) que el singular (_!!kein Kind!!_). En alemany \"no tinc fills\" es diu així, encara que literalment en català seria \"cap fill\"."
         }
       ]
     },
@@ -90,7 +90,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### La decisió clau: _nicht_ o _kein_?\n\nJa tens les dues eines. Ara toca saber **quan triar-ne una i quan l'altra**. La regla decisiva és aquesta:\n\n> **Fes servir _kein / keine_ si en l'oració afirmativa el substantiu portaria _ein/eine_ o cap article. En qualsevol altre cas, fes servir _nicht_.**\n\nComparem tres parells reveladors:\n\n**1. Substantiu amb _ein_ → _kein_**\n\n> _Ich habe **ein** Auto._ → _Ich habe **kein** Auto._\n> (Tinc un cotxe. → No tinc cap cotxe.)\n\n**2. Substantiu sense article (plural o professió) → _kein_**\n\n> _Ich habe Kinder._ → _Ich habe **keine** Kinder._\n> _Ich bin Lehrer._ → _Ich bin **kein** Lehrer._\n\n**3. Tot el que no entra al cas anterior → _nicht_**\n\nAixò inclou:\n\n- **Verbs** (_arbeiten, kommen, wohnen_):\n  > _Ich arbeite **nicht**._\n- **Adjectius** (_verheiratet, müde, neu_):\n  > _Ich bin **nicht** verheiratet._\n- **Llocs concrets amb preposició** (_in Berlin, aus Innsbruck_):\n  > _Ich komme **nicht** aus Innsbruck._\n- **Substantius amb article _definit_** (_der, die, das_) — això ho veuràs més endavant, però val la pena saber que _das Auto_ \"el cotxe\" (concret) es nega amb _nicht_, no amb _kein_.\n\n**Truc mental de tres passos:**\n\n1. Miro l'oració afirmativa: què hi ha al lloc on vull dir \"no\"?\n2. Si és un **substantiu que porta _ein/eine_ o cap article** → _kein / keine_.\n3. Si és un **verb, un adjectiu, un adverbi, un lloc, o un substantiu amb article definit** → _nicht_."
+          "body": "#### La decisió clau: _nicht_ o _kein_?\n\nJa tens les dues eines. Ara toca saber **quan triar-ne una i quan l'altra**. La regla decisiva és aquesta:\n\n> **Fes servir _kein / keine_ si en l'oració afirmativa el substantiu portaria _ein/eine_ o cap article. En qualsevol altre cas, fes servir _nicht_.**\n\nComparem tres parells reveladors:\n\n**1. Substantiu amb _ein_ → _kein_**\n\n> _!!Ich habe **ein** Auto.!!_ → _!!Ich habe **kein** Auto.!!_\n> (Tinc un cotxe. → No tinc cap cotxe.)\n\n**2. Substantiu sense article (plural o professió) → _kein_**\n\n> _!!Ich habe Kinder.!!_ → _!!Ich habe **keine** Kinder.!!_\n> _!!Ich bin Lehrer.!!_ → _!!Ich bin **kein** Lehrer.!!_\n\n**3. Tot el que no entra al cas anterior → _nicht_**\n\nAixò inclou:\n\n- **Verbs** (_arbeiten, kommen, wohnen_):\n  > _!!Ich arbeite **nicht**.!!_\n- **Adjectius** (_verheiratet, müde, neu_):\n  > _!!Ich bin **nicht** verheiratet.!!_\n- **Llocs concrets amb preposició** (_in Berlin, aus Innsbruck_):\n  > _!!Ich komme **nicht** aus Innsbruck.!!_\n- **Substantius amb article _definit_** (_der, die, das_) — això ho veuràs més endavant, però val la pena saber que _das Auto_ \"el cotxe\" (concret) es nega amb _nicht_, no amb _kein_.\n\n**Truc mental de tres passos:**\n\n1. Miro l'oració afirmativa: què hi ha al lloc on vull dir \"no\"?\n2. Si és un **substantiu que porta _ein/eine_ o cap article** → _kein / keine_.\n3. Si és un **verb, un adjectiu, un adverbi, un lloc, o un substantiu amb article definit** → _nicht_."
         },
         {
           "type": "callout",
@@ -111,7 +111,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Paranys habituals\n\n**1. Calcar l'ordre del català/castellà i posar _nicht_ davant del verb.**\n\n> Incorrecte: _Ich **nicht** arbeite._\n> Correcte: _Ich arbeite **nicht**._\n\nEn alemany el verb conjugat **no es mou** de la segona posició. _nicht_ s'acomoda al seu voltant.\n\n**2. Fer servir _nicht_ amb un substantiu que en afirmatiu portaria _ein_.**\n\n> Incorrecte: _Ich habe **nicht** ein Auto._\n> Correcte: _Ich habe **kein** Auto._\n\nLa combinació _nicht + ein_ no existeix a l'alemany estàndard: es fon en _kein_.\n\n**3. Oblidar la concordança de _kein/keine_.**\n\n> Incorrecte: _Ich habe **kein** Schwester._\n> Correcte: _Ich habe **keine** Schwester._ (_die Schwester_ és femení.)\n\nÉs la mateixa lògica que _mein/meine_ del tema 1. Si el substantiu és femení singular o plural, sempre **-e**.\n\n**4. Dir _kein Kind_ quan et refereixes a no tenir fills en general.**\n\n> Menys natural: _Ich habe **kein** Kind._\n> Més natural: _Ich habe **keine** Kinder._\n\nEl PDF del curs ho marca explícitament: per a la situació familiar (no tenir descendència), **l'alemany prefereix el plural**. El singular _kein Kind_ no és agramatical, però sona com si parlessis d'un fill específic que no tens.\n\n**5. Col·locar _nicht_ després d'un complement de lloc amb preposició.**\n\n> Poc natural: _Ich wohne in Stuttgart **nicht**._\n> Natural: _Ich wohne **nicht** in Stuttgart._\n\nQuan negues el lloc, _nicht_ va davant de la preposició, no al final.\n\n**6. Traduir literalment _kein_ com a \"cap\" en català.**\n\n_Ich habe keine Kinder_ no es diu en català \"No tinc cap fill\" (això seria un èmfasi especial), sinó simplement \"No tinc fills\". _kein_ no sempre demana \"cap\" a la traducció; moltes vegades n'hi ha prou amb \"no\" + substantiu plural."
+          "body": "#### Paranys habituals\n\n**1. Calcar l'ordre del català/castellà i posar _nicht_ davant del verb.**\n\n> Incorrecte: _!!Ich **nicht** arbeite.!!_\n> Correcte: _!!Ich arbeite **nicht**.!!_\n\nEn alemany el verb conjugat **no es mou** de la segona posició. _nicht_ s'acomoda al seu voltant.\n\n**2. Fer servir _nicht_ amb un substantiu que en afirmatiu portaria _ein_.**\n\n> Incorrecte: _!!Ich habe **nicht** ein Auto.!!_\n> Correcte: _!!Ich habe **kein** Auto.!!_\n\nLa combinació _nicht + ein_ no existeix a l'alemany estàndard: es fon en _kein_.\n\n**3. Oblidar la concordança de _kein/keine_.**\n\n> Incorrecte: _!!Ich habe **kein** Schwester.!!_\n> Correcte: _!!Ich habe **keine** Schwester.!!_ (_die Schwester_ és femení.)\n\nÉs la mateixa lògica que _mein/meine_ del tema 1. Si el substantiu és femení singular o plural, sempre **-e**.\n\n**4. Dir _kein Kind_ quan et refereixes a no tenir fills en general.**\n\n> Menys natural: _!!Ich habe **kein** Kind.!!_\n> Més natural: _!!Ich habe **keine** Kinder.!!_\n\nEl PDF del curs ho marca explícitament: per a la situació familiar (no tenir descendència), **l'alemany prefereix el plural**. El singular _kein Kind_ no és agramatical, però sona com si parlessis d'un fill específic que no tens.\n\n**5. Col·locar _nicht_ després d'un complement de lloc amb preposició.**\n\n> Poc natural: _!!Ich wohne in Stuttgart **nicht**.!!_\n> Natural: _!!Ich wohne **nicht** in Stuttgart.!!_\n\nQuan negues el lloc, _nicht_ va davant de la preposició, no al final.\n\n**6. Traduir literalment _kein_ com a \"cap\" en català.**\n\n_!!Ich habe keine Kinder.!!_ no es diu en català \"No tinc cap fill\" (això seria un èmfasi especial), sinó simplement \"No tinc fills\". _kein_ no sempre demana \"cap\" a la traducció; moltes vegades n'hi ha prou amb \"no\" + substantiu plural."
         }
       ]
     },
@@ -151,11 +151,11 @@
           "title": "4.1 Negació amb _nicht_: contrast afirmatiu / negatiu",
           "headers": ["Afirmatiu", "Negatiu", "Què es nega"],
           "rows": [
-            ["Ich arbeite.", "Ich arbeite **nicht**.", "verb (al final)"],
-            ["Ich bin verheiratet.", "Ich bin **nicht** verheiratet.", "adjectiu (davant)"],
-            ["Wir leben zusammen.", "Wir leben **nicht** zusammen.", "adverbi (davant)"],
-            ["Ich wohne in Stuttgart.", "Ich wohne **nicht** in Stuttgart.", "lloc amb preposició (davant de la preposició)"],
-            ["Er kommt heute zur Arbeit.", "Er kommt heute **nicht** zur Arbeit.", "complement (davant)"]
+            ["!!Ich arbeite.!!", "!!Ich arbeite **nicht**.!!", "verb (al final)"],
+            ["!!Ich bin verheiratet.!!", "!!Ich bin **nicht** verheiratet.!!", "adjectiu (davant)"],
+            ["!!Wir leben zusammen.!!", "!!Wir leben **nicht** zusammen.!!", "adverbi (davant)"],
+            ["!!Ich wohne in Stuttgart.!!", "!!Ich wohne **nicht** in Stuttgart.!!", "lloc amb preposició (davant de la preposició)"],
+            ["!!Er kommt heute zur Arbeit.!!", "!!Er kommt heute **nicht** zur Arbeit.!!", "complement (davant)"]
           ]
         },
         {
@@ -163,11 +163,11 @@
           "title": "4.2 Negació amb _kein / keine_: concordança amb el substantiu",
           "headers": ["Gènere / nombre", "Forma", "Exemple afirmatiu", "Exemple negatiu"],
           "rows": [
-            ["Masculí singular", "**kein**", "Das ist **ein** Bruder.", "Das ist **kein** Bruder."],
-            ["Neutre singular", "**kein**", "Ich habe **ein** Auto.", "Ich habe **kein** Auto."],
-            ["Femení singular", "**keine**", "Ich habe **eine** Schwester.", "Ich habe **keine** Schwester."],
-            ["Plural (qualsevol gènere)", "**keine**", "Ich habe Kinder.", "Ich habe **keine** Kinder."],
-            ["Professió / nacionalitat (sg., sense article)", "**kein / keine**", "Ich bin Lehrer. / Ich bin Lehrerin.", "Ich bin **kein** Lehrer. / Ich bin **keine** Lehrerin."]
+            ["Masculí singular", "!!**kein**!!", "!!Das ist **ein** Bruder.!!", "!!Das ist **kein** Bruder.!!"],
+            ["Neutre singular", "!!**kein**!!", "!!Ich habe **ein** Auto.!!", "!!Ich habe **kein** Auto.!!"],
+            ["Femení singular", "!!**keine**!!", "!!Ich habe **eine** Schwester.!!", "!!Ich habe **keine** Schwester.!!"],
+            ["Plural (qualsevol gènere)", "!!**keine**!!", "!!Ich habe Kinder.!!", "!!Ich habe **keine** Kinder.!!"],
+            ["Professió / nacionalitat (sg., sense article)", "!!**kein / keine**!!", "!!Ich bin Lehrer.!! / !!Ich bin Lehrerin.!!", "!!Ich bin **kein** Lehrer.!! / !!Ich bin **keine** Lehrerin.!!"]
           ],
           "caption": "A l'A1 es treballa sobretot el nominatiu: kein (m./n.) vs keine (f./pl.). La declinació completa de kein s'introdueix amb els casos."
         },
@@ -176,13 +176,13 @@
           "title": "4.3 _nicht_ o _kein_? Tria ràpida",
           "headers": ["Què vols negar", "Tria", "Exemple"],
           "rows": [
-            ["Un verb sencer (una acció)", "_nicht_ (al final)", "Ich arbeite **nicht**."],
-            ["Un adjectiu", "_nicht_ (davant)", "Ich bin **nicht** müde."],
-            ["Un adverbi o complement", "_nicht_ (davant)", "Wir leben **nicht** zusammen."],
-            ["Un lloc amb preposició", "_nicht_ (davant de la preposició)", "Ich komme **nicht** aus Berlin."],
-            ["Un substantiu que en afirmatiu portaria _ein/eine_", "_kein / keine_", "Ich habe **kein** Auto."],
-            ["Un substantiu sense article (plural, professió)", "_kein / keine_", "Ich habe **keine** Kinder."],
-            ["Un substantiu amb article definit (_der/die/das_)", "_nicht_", "Ich sehe das Buch **nicht**."]
+            ["Un verb sencer (una acció)", "_!!nicht!!_ (al final)", "!!Ich arbeite **nicht**.!!"],
+            ["Un adjectiu", "_!!nicht!!_ (davant)", "!!Ich bin **nicht** müde.!!"],
+            ["Un adverbi o complement", "_!!nicht!!_ (davant)", "!!Wir leben **nicht** zusammen.!!"],
+            ["Un lloc amb preposició", "_!!nicht!!_ (davant de la preposició)", "!!Ich komme **nicht** aus Berlin.!!"],
+            ["Un substantiu que en afirmatiu portaria _ein/eine_", "_!!kein / keine!!_", "!!Ich habe **kein** Auto.!!"],
+            ["Un substantiu sense article (plural, professió)", "_!!kein / keine!!_", "!!Ich habe **keine** Kinder.!!"],
+            ["Un substantiu amb article definit (_der/die/das_)", "_!!nicht!!_", "!!Ich sehe das Buch **nicht**.!!"]
           ]
         }
       ]
