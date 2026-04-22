@@ -25,6 +25,7 @@ import {
 } from '@/lib/reader/beatTransitions.js';
 import { parseInline } from '@/lib/reader/parseInline.js';
 import { Typed } from '@/components/reader/Typed.jsx';
+import { SpeakableText } from '@/components/reader/SpeakableText.jsx';
 import { ReaderSettingsDrawer } from '@/components/reader/ReaderSettingsDrawer.jsx';
 import { ReaderExerciseEngine } from '@/components/reader/ReaderExerciseEngine.jsx';
 import { ReaderEntrySplash } from '@/components/reader/ReaderEntrySplash.jsx';
@@ -350,14 +351,20 @@ function ExampleBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed 
       {showKicker ? <BeatKicker step={step} stepIdx={stepIdx} beatKicker={step.id} /> : null}
       <div className="kf-beat-ex">
         <span className="kf-marker">Exemple {beat.idx} / {beat.total}</span>
-        <Typed
-          text={beat.ex.de}
-          as="p"
-          className="kf-beat-ex-de"
-          active={typewriterActive}
-          speed={speed + 4}
-          onDone={() => setDeDone(true)}
-        />
+        {deDone ? (
+          <p className="kf-beat-ex-de">
+            <SpeakableText text={beat.ex.de} />
+          </p>
+        ) : (
+          <Typed
+            text={beat.ex.de}
+            as="p"
+            className="kf-beat-ex-de"
+            active={typewriterActive}
+            speed={speed + 4}
+            onDone={() => setDeDone(true)}
+          />
+        )}
         {deDone && beat.ex.ca ? (
           <p className="kf-beat-ex-ca kf-fade-in">{parseInline(beat.ex.ca)}</p>
         ) : null}
@@ -378,7 +385,9 @@ function PronBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed }) 
       {showKicker ? <BeatKicker step={step} stepIdx={stepIdx} beatKicker={step.id} /> : null}
       <div className="kf-beat-pron">
         <span className="kf-marker">Pronom</span>
-        <h2 className="kf-beat-pron-huge">{tab.pron}</h2>
+        <h2 className="kf-beat-pron-huge">
+          <SpeakableText text={tab.pron} />
+        </h2>
         {tab.gloss ? <p className="kf-beat-pron-gloss">= {parseInline(tab.gloss)}</p> : null}
         {tab.note ? (
           <Typed
@@ -392,7 +401,7 @@ function PronBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed }) 
         ) : null}
         {noteDone && tab.example ? (
           <div className="kf-beat-pron-ex kf-fade-in">
-            <div className="de">{parseInline(tab.example.de)}</div>
+            <div className="de"><SpeakableText text={tab.example.de} /></div>
             {tab.example.ca ? <div className="ca">{parseInline(tab.example.ca)}</div> : null}
           </div>
         ) : null}
@@ -441,7 +450,7 @@ function CompareBeat({ beat, step, stepIdx, showKicker, tableAnim }) {
               >
                 <td>{r.es}</td>
                 <td>{r.ca}</td>
-                <td className="de">{parseInline(r.de)}</td>
+                <td className="de"><SpeakableText text={r.de} /></td>
                 <td>{r.en}</td>
               </tr>
             ))}
@@ -831,17 +840,22 @@ function BeatStagePeek({
             className={`kf-peek kf-peek-${role}`}
             {...peekProps}
           >
-            <BeatBody
-              beat={entry.beat}
-              step={entry.step}
-              stepIdx={entry.stepIdx}
-              showKicker={isCurrent}
-              settings={settings}
-              speed={speed}
-              fastMode={isCurrent ? fastMode : true}
-              isCurrent={isCurrent}
-              exerciseNavRef={isCurrent ? exerciseNavRef : null}
-            />
+            {/* Coixí de paper al darrere, independent de l'opacity del
+                content perquè funcioni tant al current com al prev/next. */}
+            <div className="kf-peek-bg" aria-hidden="true" />
+            <div className="kf-peek-content">
+              <BeatBody
+                beat={entry.beat}
+                step={entry.step}
+                stepIdx={entry.stepIdx}
+                showKicker={isCurrent}
+                settings={settings}
+                speed={speed}
+                fastMode={isCurrent ? fastMode : true}
+                isCurrent={isCurrent}
+                exerciseNavRef={isCurrent ? exerciseNavRef : null}
+              />
+            </div>
           </div>
         );
       })}

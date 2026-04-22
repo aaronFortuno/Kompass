@@ -539,28 +539,21 @@
   top: 0;
   width: 100%;
   max-width: 880px;
-  padding: 0 40px;
   z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
   transform-origin: center top;
   transition:
     transform 480ms var(--ease-standard),
-    opacity 380ms var(--ease-standard),
     filter 480ms var(--ease-standard);
-  will-change: transform, opacity;
+  will-change: transform;
 }
 /*
- * "Coixí" de paper darrere de cada beat — un gradient radial centrat
- * que és opac al mig i fa fade-out a les vores. Esborra localment el
- * backdrop textual del reader perquè el text del beat es pugui llegir
- * sempre bé, sense línia dura que talli la decoració tipogràfica del
- * fons.
+ * Coixí de paper (layer independent): gradient radial centrat, opac al
+ * mig i amb fade a les vores. Situat en una capa pròpia (no pseudo-
+ * element) perquè el text del peek pugui atenuar-se via `.kf-peek-
+ * content` sense atenuar alhora el coixí. Així el fons queda estable
+ * i el text prev/next continua atenuat per profunditat.
  */
-.kf-peek::before {
-  content: '';
+.kf-peek-bg {
   position: absolute;
   inset: -30px -30px -40px -30px;
   z-index: -1;
@@ -572,6 +565,18 @@
     rgb(var(--color-reader-paper) / 0) 100%
   );
 }
+/* Contingut del peek: aquí sí que aplica l'opacity per a l'atenuació
+   visual del text del prev/next. El flex per alinear els sub-beats. */
+.kf-peek-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 0 40px;
+  transition:
+    opacity 380ms var(--ease-standard),
+    filter 480ms var(--ease-standard);
+}
 .kf-peek-prev-far {
   transform: translate(-50%, -30vh) scale(0.5);
   opacity: 0;
@@ -579,19 +584,22 @@
 }
 .kf-peek-prev {
   transform: translate(-50%, 2vh) scale(0.62);
-  opacity: 0.18;
   pointer-events: none;
-  filter: blur(0.4px);
+}
+.kf-peek-prev .kf-peek-content {
+  opacity: 0.28;
+  filter: blur(0.3px);
 }
 .kf-peek-current {
   transform: translate(-50%, 22vh) scale(1);
-  opacity: 1;
 }
 .kf-peek-next {
   transform: translate(-50%, 70vh) scale(0.62);
-  opacity: 0.18;
   pointer-events: none;
-  filter: blur(0.4px);
+}
+.kf-peek-next .kf-peek-content {
+  opacity: 0.28;
+  filter: blur(0.3px);
 }
 .kf-peek-next-far {
   transform: translate(-50%, 110vh) scale(0.5);
@@ -1313,6 +1321,50 @@
   margin: 0;
   text-align: center;
   max-width: 34em;
+}
+
+/*
+ * SpeakableText — pill clickable per escoltar text alemany via Web
+ * Speech API. Discret: subtle underline amb guió baix + icona speaker
+ * xicoteta al final. Hover/focus destaca la pill sense canviar la
+ * composició del text.
+ */
+.kf-speak {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+  padding: 0 0.18em 0.05em;
+  margin: 0 -0.02em;
+  border-radius: 0.25em;
+  background: rgb(var(--color-reader-paper-2) / 0.55);
+  box-shadow: inset 0 -2px 0 rgb(var(--color-reader-ink-2) / 0.35);
+  transition:
+    background-color var(--duration-fast) var(--ease-standard),
+    box-shadow var(--duration-fast) var(--ease-standard);
+}
+.kf-speak:hover,
+.kf-speak:focus-visible {
+  background: rgb(var(--color-reader-mark) / 0.35);
+  box-shadow: inset 0 -2px 0 rgb(var(--color-reader-ink));
+  outline: none;
+}
+.kf-speak.is-playing {
+  background: rgb(var(--color-reader-mark) / 0.55);
+  box-shadow: inset 0 -2px 0 rgb(var(--color-reader-ink));
+}
+.kf-speak .kf-speak-icon {
+  display: inline;
+  vertical-align: -0.12em;
+  margin-left: 0.3em;
+  opacity: 0.55;
+  transition: opacity var(--duration-fast) var(--ease-standard);
+}
+.kf-speak:hover .kf-speak-icon,
+.kf-speak.is-playing .kf-speak-icon {
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .kf-speak { transition: none !important; }
 }
 
 /* Highlight (==text==) */
