@@ -460,7 +460,47 @@ function ExampleBeat({
   useEffect(() => { setDeDone(!typewriterActive); }, [typewriterActive, beat]);
   const hasPills = hasInlineSpeakable(beat.ex.de);
   const containerRef = useRef(null);
-  useBeatAutoPlaySequence(containerRef, audioAutoplay && deDone);
+
+  /*
+   * Integració typewriter + àudio (§98 polit):
+   *   - Si audioAutoplay i la frase té pills `!!...!!`, el typewriter
+   *     para a cada fi de pill, reprodueix l'àudio, espera 200ms i
+   *     continua. Flux exacte demanat per l'usuari.
+   *   - Si no té pills però sí wrapper, al final de tot s'executa el
+   *     fallback (useBeatAutoPlaySequence iterant l'únic .kf-speak
+   *     del contenidor).
+   *   - Si audioAutoplay desactivat, tot manual com abans.
+   */
+  const handleSpeakable = useCallback(async (idx) => {
+    const pills = containerRef.current?.querySelectorAll('.kf-speak');
+    const pill = pills && pills[idx];
+    if (!pill) return;
+    pill.click();
+    await new Promise((resolve) => {
+      let done = false;
+      const onEnd = () => {
+        if (done) return;
+        done = true;
+        window.removeEventListener('kompass:speakable-ended', onEnd);
+        resolve();
+      };
+      window.addEventListener('kompass:speakable-ended', onEnd);
+      // Salvaguarda per Web Speech fallback que no emet 'ended'.
+      window.setTimeout(() => {
+        if (done) return;
+        done = true;
+        window.removeEventListener('kompass:speakable-ended', onEnd);
+        resolve();
+      }, 6000);
+    });
+    await new Promise((r) => window.setTimeout(r, 200));
+  }, []);
+
+  // Per al cas wrapper (frase sencera sense pills), seguim usant
+  // l'orquestrador seqüencial — no hi ha fase "typewriter dins d'audio",
+  // simplement reproduïm tot al final.
+  useBeatAutoPlaySequence(containerRef, audioAutoplay && deDone && !hasPills);
+
   return (
     <>
       {showKicker ? <BeatKicker step={step} stepIdx={stepIdx} beatKicker={step.id} /> : null}
@@ -484,6 +524,9 @@ function ExampleBeat({
             active={typewriterActive}
             speed={speed + 4}
             onDone={() => setDeDone(true)}
+            onSpeakableReached={
+              audioAutoplay && hasPills ? handleSpeakable : undefined
+            }
           />
         )}
         {deDone && beat.ex.ca ? (

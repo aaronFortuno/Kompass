@@ -6,26 +6,31 @@ import {
 } from '@/lib/reader/parseInline.js';
 
 /*
- * Typed · typewriter reutilitzable · ARCHITECTURE §17.6
+ * Typed · typewriter reutilitzable · ARCHITECTURE §17.6 + §98 (audio)
  *
  * Escriu `text` caràcter a caràcter aplicant el format inline ja des del
- * primer caràcter. El component mai mostra els símbols de sintaxi
- * markdown (**, ==, _, `) mentre va escrivint; els caràcters formatats
- * apareixen directament amb el seu estil final (negreta, cursiva,
- * highlight o codi). Això evita el "redibuixat" que es produïa abans,
- * quan el delimitador de tancament feia desaparèixer els símbols ja
- * escrits.
+ * primer caràcter. Integració àudio: si es passa `onSpeakableReached`,
+ * el typewriter fa una pausa al final de cada span `!!...!!` i deixa
+ * que el caller reprodueixi l'àudio; retornant una Promise, el caller
+ * controla quan el typewriter continua. Així una frase tipus
+ * "!!Mein Name!! · !!ist!! · !!Julia Schwaiger!!" s'escriu fins a la
+ * primera pill, sona, pausa 200ms, segueix fins a la segona, sona,
+ * etc. §98 polit del reader.
  *
  * Props:
- *   - text: string (amb inline rich text markup)
- *   - speed: ms per caràcter _visible_ (42 per defecte, resol-se amb
- *     resolveTypewriterSpeed(settings.typewriterSpeed))
- *   - startDelay: ms abans de començar
- *   - active: si false, mostra el text complet immediatament (equival a
- *     la transició fade-in)
+ *   - text: string (amb inline rich text markup).
+ *   - speed: ms per caràcter _visible_ (42 per defecte).
+ *   - startDelay: ms abans de començar.
+ *   - active: si false, mostra el text complet immediatament.
  *   - as: tag HTML de l'arrel ('p', 'h1', 'span'…). Per defecte 'span'.
- *   - className: classes extra per a l'arrel
- *   - onDone: callback opcional quan acaba l'animació
+ *   - className: classes extra per a l'arrel.
+ *   - onDone: callback opcional quan acaba l'animació (incloent-hi
+ *     àudios intermedis).
+ *   - onSpeakableReached: (idx, totalSpeakables) => Promise<void> |
+ *     void. Invocat quan el typewriter acaba d'escriure el pill
+ *     audible número `idx` (0-indexat). El typewriter pausa fins que
+ *     la Promise retornada es resol. Si el callback no es passa, el
+ *     typewriter no fa cap pausa especial.
  */
 export function Typed({
   text = '',
@@ -35,21 +40,39 @@ export function Typed({
   as = 'span',
   className,
   onDone,
+  onSpeakableReached,
 }) {
   const tokens = useMemo(() => tokenizeInline(text), [text]);
   const total = useMemo(() => visibleLength(tokens), [tokens]);
+
+  // Calcula els punts d'aturada: per cada speakable token, la posició
+  // `atN` en què s'ha acabat d'escriure i l'índex del speakable (0,1,2...).
+  // Només considerem speakables de primer nivell — anidats no els
+  // despleguem aquí (la UX és massa complexa). A la pràctica els spans
+  // `!!...!!` viuen al nivell de primer ordre.
+  const stopPoints = useMemo(() => {
+    const sp = [];
+    let cum = 0;
+    let sIdx = 0;
+    for (const tok of tokens) {
+      cum += tok.content.length;
+      if (tok.type === 'speakable') {
+        sp.push({ atN: cum, idx: sIdx });
+        sIdx++;
+      }
+    }
+    return sp;
+  }, [tokens]);
+
   const [n, setN] = useState(active ? 0 : total);
   const [done, setDone] = useState(!active);
-  const rafRef = useRef(null);
 
-  // Estabilitzem onDone en una ref perquè les arrow functions inline
-  // dels pares (p. ex. onDone={() => setX(true)}) no re-disparen l'effect
-  // a cada render — altrament el typewriter es reinicia cada cop que
-  // l'onDone canvia referencia, escrivint el text dues vegades.
+  // Estabilitzem callbacks en refs per evitar re-executar el loop a cada
+  // render. onDone arriba sovint com a arrow inline (canvia referencia).
   const onDoneRef = useRef(onDone);
-  useEffect(() => {
-    onDoneRef.current = onDone;
-  }, [onDone]);
+  const onSpeakableRef = useRef(onSpeakableReached);
+  useEffect(() => { onDoneRef.current = onDone; }, [onDone]);
+  useEffect(() => { onSpeakableRef.current = onSpeakableReached; }, [onSpeakableReached]);
 
   useEffect(() => {
     if (!active) {
@@ -60,24 +83,47 @@ export function Typed({
     }
     setN(0);
     setDone(false);
-    let start = null;
-    const step = (t) => {
-      if (!start) start = t + startDelay;
-      const elapsed = Math.max(0, t - start);
-      const c = Math.min(total, Math.floor(elapsed / speed));
-      setN(c);
-      if (c < total) {
-        rafRef.current = requestAnimationFrame(step);
-      } else {
-        setDone(true);
-        if (onDoneRef.current) onDoneRef.current();
+
+    let cancelled = false;
+    function sleep(ms) {
+      return new Promise((resolve) => window.setTimeout(resolve, ms));
+    }
+
+    async function run() {
+      await sleep(startDelay);
+      if (cancelled) return;
+      let c = 0;
+      let nextStop = 0; // índex dins de stopPoints
+      while (c < total) {
+        if (cancelled) return;
+        c += 1;
+        setN(c);
+        // Si tenim un callback de speakable i hem arribat al final
+        // d'un `!!...!!`, pausem i esperem que el caller digui
+        // "continua" (la Promise es resol).
+        if (
+          onSpeakableRef.current
+          && nextStop < stopPoints.length
+          && stopPoints[nextStop].atN === c
+        ) {
+          try {
+            await Promise.resolve(
+              onSpeakableRef.current(stopPoints[nextStop].idx, stopPoints.length),
+            );
+          } catch { /* silenci */ }
+          if (cancelled) return;
+          nextStop += 1;
+        } else {
+          await sleep(speed);
+        }
       }
-    };
-    rafRef.current = requestAnimationFrame(step);
-    return () => {
-      if (rafRef.current) cancelAnimationFrame(rafRef.current);
-    };
-  }, [tokens, total, speed, startDelay, active]);
+      setDone(true);
+      if (onDoneRef.current) onDoneRef.current();
+    }
+
+    run();
+    return () => { cancelled = true; };
+  }, [tokens, total, speed, startDelay, active, stopPoints]);
 
   const visibleN = active ? n : total;
   const shown = renderTokensUpTo(tokens, visibleN);
