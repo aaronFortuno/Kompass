@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Menu, X, Settings as SettingsIcon } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useT } from '@/i18n';
 import { Logo } from '@/components/ui/Logo.jsx';
 
@@ -31,15 +31,6 @@ export function Header() {
         : 'text-reader-muted hover:text-reader-ink-2',
     ].join(' ');
 
-  const settingsClass = ({ isActive }) =>
-    [
-      'inline-flex items-center justify-center w-8 h-8 rounded-full',
-      'border border-reader-rule',
-      'transition-colors duration-fast ease-standard',
-      isActive
-        ? 'bg-reader-ink text-reader-paper border-reader-ink'
-        : 'text-reader-ink-2 hover:text-reader-ink hover:border-reader-ink-2',
-    ].join(' ');
 
   const ToggleIcon = menuOpen ? X : Menu;
 
@@ -58,16 +49,9 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden md:flex items-center gap-2">
-          <NavLink
-            to="/settings"
-            className={settingsClass}
-            aria-label={t('nav.settings')}
-            title={t('nav.settings')}
-          >
-            <SettingsIcon size={16} aria-hidden="true" strokeWidth={1.75} />
-          </NavLink>
-        </div>
+        {/* La icona circular de Settings s'ha mogut al footer global
+            per coherència visual — tot el header és quadrat/editorial
+            i l'icona gear desentonava. Vegeu AppShell footer. §103 polit. */}
 
         <button
           type="button"

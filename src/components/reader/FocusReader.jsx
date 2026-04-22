@@ -128,6 +128,76 @@ function countSpeakablesInBeat(beat) {
 }
 
 /*
+ * Estima caràcters "visibles" del contingut principal del beat, net de
+ * markers rich. S'usa per escalar la durada del temporitzador d'autoplay
+ * (§87/§98): un beat de 20 chars no mereix els mateixos segons que un
+ * de 200. Usem 50 chars com a referència neutra — a aquesta llargada
+ * el delay és el que marca el setting. Els beats més curts van més
+ * ràpid, els més llargs més lents.
+ */
+function estimateBeatChars(beat) {
+  if (!beat) return 0;
+  const clean = (s) => {
+    if (typeof s !== 'string') return '';
+    return s.replace(/\*\*|==|_|`|!!/g, '').trim();
+  };
+  const len = (s) => clean(s).length;
+  switch (beat.type) {
+    case 'heading':
+    case 'lead':
+    case 'body':
+    case 'point':
+    case 'rule':
+      return len(beat.text);
+    case 'example':
+      return len(beat.ex?.de) + len(beat.ex?.ca) + len(beat.ex?.note);
+    case 'pron':
+      return len(beat.tab?.pron) + len(beat.tab?.gloss) + len(beat.tab?.note)
+        + len(beat.tab?.example?.de) + len(beat.tab?.example?.ca);
+    case 'pair':
+      return len(beat.pair?.personal) + len(beat.pair?.possessive)
+        + len(beat.pair?.gloss);
+    case 'pitfall':
+      return len(beat.pit?.bad) + len(beat.pit?.good) + len(beat.pit?.why);
+    case 'callout':
+      return len(beat.callout?.title) + len(beat.callout?.body);
+    case 'compare': {
+      let n = 0;
+      (beat.rows || []).forEach((r) => {
+        n += len(r.de) + len(r.ca) + len(r.es) + len(r.en);
+      });
+      return n;
+    }
+    case 'syn-table': {
+      let n = len(beat.table?.title);
+      (beat.table?.rows || []).forEach((row) => {
+        row.forEach((cell) => {
+          n += typeof cell === 'object' ? len(cell.text) : len(cell);
+        });
+      });
+      return n;
+    }
+    default:
+      return len(beat.text) + len(beat.body) + len(beat.lead);
+  }
+}
+
+/*
+ * Calcula la durada real de l'animació del temporitzador d'auto-advance.
+ * Pren el setting autoPlayDelay com a referència per a un beat "típic"
+ * de 50 caràcters, i escala linealment segons els caràcters reals.
+ * Clamp a [1.2s, 12s] perquè un beat buit no avanci instantani i un de
+ * molt llarg no s'aturi eternament (l'usuari pot prémer espai/fletxa).
+ */
+function computeAutoPlayDuration(beat, baseSeconds) {
+  const chars = estimateBeatChars(beat);
+  if (!chars) return Math.max(1.2, baseSeconds);
+  const factor = chars / 50;
+  const scaled = baseSeconds * factor;
+  return Math.min(12, Math.max(1.2, scaled));
+}
+
+/*
  * Hook d'orquestració d'autoplay seqüencial de pills dins d'un beat.
  * §98 polit (refactor autoplay).
  *
@@ -1910,7 +1980,12 @@ export function FocusReader({ topic }) {
             key={`${stepIdx}-${beatIdx}-${autoPlayPaused ? 'p' : 'r'}`}
             className="kf-autoplay-bar-fill"
             style={{
-              animationDuration: `${Math.max(1, settings.autoPlayDelay || 3)}s`,
+              // Durada escalada per la llargada del beat (§87/§98 polit).
+              // Un beat "típic" de 50 chars triga autoPlayDelay segons;
+              // un de 20 chars va proporcionalment més ràpid, un de 150
+              // més lent. Això fa que el ritme del curs s'adapti al
+              // contingut en lloc de ser constant.
+              animationDuration: `${computeAutoPlayDuration(beat, settings.autoPlayDelay || 3)}s`,
               animationPlayState: autoPlayPaused ? 'paused' : 'running',
             }}
             onAnimationEnd={() => goBeatRef.current?.(1)}

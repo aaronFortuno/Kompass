@@ -14,6 +14,14 @@
 function collectExerciseIds(topic) {
   const ids = [];
   for (const step of topic?.steps ?? []) {
+    // Format ric (§66): step.kind === 'exercise' amb exerciseId pla.
+    // Sense això, els temes en format ric (p. ex. A1a-1, A1a-2) no
+    // exposaven cap exercici i el progrés sortia a 0 a tot arreu.
+    if (step?.kind === 'exercise' && step.exerciseId) {
+      ids.push(step.exerciseId);
+      continue;
+    }
+    // Format llegat: step.blocks[*].type === 'exercise'.
     for (const block of step?.blocks ?? []) {
       if (block?.type === 'exercise' && block.exerciseId) {
         ids.push(block.exerciseId);
