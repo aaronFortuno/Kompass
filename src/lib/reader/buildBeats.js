@@ -39,6 +39,9 @@ export function buildBeats(step) {
     if (step.heading) {
       beats.push({ type: 'heading', text: step.heading, kicker: step.id || 'Síntesi' });
     }
+    (step.visuals || []).forEach((v, i) =>
+      beats.push({ type: 'visual', visual: v, idx: i + 1, total: step.visuals.length }),
+    );
     (step.tables || []).forEach((t) => beats.push({ type: 'syn-table', table: t }));
     if (step.callout) {
       beats.push({ type: 'callout', callout: step.callout });
@@ -91,6 +94,11 @@ export function buildBeats(step) {
   }
   if (step.callout) {
     beats.push({ type: 'callout', callout: step.callout });
+  }
+  if (Array.isArray(step.visuals) && step.visuals.length) {
+    step.visuals.forEach((v, i) => {
+      beats.push({ type: 'visual', visual: v, idx: i + 1, total: step.visuals.length });
+    });
   }
 
   if (beats.length === 0) {

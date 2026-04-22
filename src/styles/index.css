@@ -1255,6 +1255,46 @@
   color: rgb(var(--color-reader-ink));
 }
 
+/* Visual beat (§77) — imatge o SVG inline centrat amb caption italic.
+   currentColor per al SVG perquè els diagrames inline heretin el to
+   del reader (funcionen tant en light com en dark). */
+.kf-beat-visual {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 720px;
+  gap: 14px;
+}
+.kf-beat-visual-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgb(var(--color-reader-rule));
+}
+.kf-beat-visual-svg {
+  display: block;
+  width: 100%;
+  color: rgb(var(--color-reader-ink));
+}
+.kf-beat-visual-svg svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 60vh;
+}
+.kf-beat-visual-caption {
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-size: calc(18px * var(--kf-type-scale, 1));
+  line-height: 1.4;
+  color: rgb(var(--color-reader-ink-2));
+  margin: 0;
+  text-align: center;
+  max-width: 34em;
+}
+
 /* Highlight (==text==) */
 .k-mark {
   background: rgb(var(--color-reader-mark));

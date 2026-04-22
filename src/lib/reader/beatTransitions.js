@@ -30,6 +30,7 @@ export const DEFAULT_TRANSITION_BY_BEAT_TYPE = {
   pitfall: 'typewriter',
   callout: 'typewriter',
   'syn-table': 'reveal-clip',
+  visual: 'fade-in',
   exercise: 'none',
 };
 

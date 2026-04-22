@@ -79,6 +79,19 @@ const SynTableSchema = z.object({
   rows: z.array(z.array(CellSchema)).min(1),
 });
 
+// Element visual (imatge o SVG inline) · DATA-MODEL §3.9
+const VisualSchema = z
+  .object({
+    src: z.string().optional(),
+    svg: z.string().optional(),
+    alt: z.string(),
+    caption: z.string().optional(),
+    width: z.number().int().positive().optional(),
+  })
+  .refine((v) => Boolean(v.src) || Boolean(v.svg), {
+    message: 'Visual ha de tenir `src` o `svg` (un dels dos).',
+  });
+
 // ─────────────────────────────── format ric: steps
 
 const RichExerciseStepSchema = z.object({
@@ -103,6 +116,7 @@ const RichContentStepSchema = z.object({
   pitfalls: z.array(PitfallSchema).optional(),
   callout: RichCalloutSchema.optional(),
   tables: z.array(SynTableSchema).optional(),
+  visuals: z.array(VisualSchema).optional(),
 });
 
 /*

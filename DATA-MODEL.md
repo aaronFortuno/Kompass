@@ -111,6 +111,7 @@ Cada step declara una **classe** (`kind`) i porta camps plans específics segons
 | `pitfalls`    | `{ bad, good, why }[]`     | ✓                    | —                    | Errors freqüents contrastats amb la forma correcta. Un beat `pitfall` per ítem. |
 | `callout`     | `{ variant, title, body }` | ✓                    | ✓                    | Advertència / truc / nota. Un beat `callout`.                               |
 | `tables`      | `{ title, headers, rows }[]` | —                 | ✓                    | Taules de síntesi. Un beat `syn-table` per taula.                           |
+| `visuals`     | `Visual[]` (vegeu §3.9)   | ✓                    | ✓                    | Imatges i/o infografies SVG. Un beat `visual` per element.                 |
 
 *(Al format ric les taules de síntesi no porten cel·les fusionades; cada fila és un array de strings amb inline rich. Si es necessita una taula amb rowspan/colspan s'utilitza el format llegat puntualment o es divideix en taules més petites.)*
 
@@ -590,6 +591,7 @@ Un **beat** és la unitat atòmica que el Focus Reader pinta a la pantalla: una 
 | `pitfall`    | cada ítem de `pitfalls[]`           | `typewriter` al `why` | `{ pit: { bad, good, why }, idx, total }`                         |
 | `callout`    | `callout`                           | `typewriter` al body  | `{ callout: { variant, title, body } }`                           |
 | `syn-table`  | cada ítem de `tables[]` (synthesis) | `reveal-clip` fila a fila | `{ table: { title, headers, rows } }`                         |
+| `visual`     | cada ítem de `visuals[]`            | `fade-in`             | `{ visual: { src?, svg?, alt, caption?, width? }, idx, total }` |
 | `exercise`   | step amb `kind: "exercise"`         | `none` (porta el seu propi chrome) | `{ exerciseId, variant? }`                           |
 
 **`buildBeats(step)`** — contracte:
@@ -620,6 +622,50 @@ Regles:
 El resultat és pragmàtic, no ideal — l'experiència pausada completa només s'assoleix amb lliçons migrades al format ric. L'adapter garanteix que cap lliçó quedi trencada durant la migració gradual.
 
 **Ubicació al codi:** `src/lib/reader/buildBeats.js` (pura, testable) + `src/lib/reader/legacyBlocksToBeats.js`. Vegeu ARCHITECTURE §18.
+
+### 3.9. `Visual`
+
+Element visual incrustable al reader (fotografia, il·lustració, infografia). Es mostra com un beat propi (`type: "visual"`) centrat i atenuat-editorial, amb caption opcional en italic sota.
+
+**Dues formes:**
+
+```json
+{
+  "src": "/Kompass/images/a1a/05/schloss.webp",
+  "alt": "Un castell alemany al nord de Baviera",
+  "caption": "Neuschwanstein (Bayern).",
+  "width": 520
+}
+```
+
+```json
+{
+  "svg": "<svg viewBox='0 0 800 240' xmlns='http://www.w3.org/2000/svg'>…</svg>",
+  "alt": "Diagrama de les tres estructures de frase alemanyes",
+  "caption": "La posició del verb marca el tipus d'oració.",
+  "width": 720
+}
+```
+
+**Camps:**
+
+- `src` *(string, opcional)*: URL relativa o absoluta a la imatge raster (WebP/PNG/JPG recomanat WebP). Convenció de carpetes: `public/Kompass/images/{nivell}/{número}/{slug}.webp`.
+- `svg` *(string, opcional)*: SVG inline sencer (incloent `<svg …>`). Es renderitza via `dangerouslySetInnerHTML`. Com que el contingut ve del JSON autoral del projecte, no hi ha risc d'injecció — tot i així, cal que el SVG sigui *self-contained* (no scripts, no imports externs).
+- `alt` *(string, obligatori)*: text alternatiu per a accessibilitat. Sempre requerit.
+- `caption` *(string, opcional)*: peu de text en italic, admet inline rich text (§3.6).
+- `width` *(integer, opcional)*: amplada màxima en px. Si no es defineix, el visual ocupa fins a la màxima amplada del stage (≈ 720 px).
+
+**Restriccions:**
+
+- Cal proporcionar **o bé `src` o bé `svg`** (no els dos alhora; si els dos es donen, `svg` té preferència).
+- El `src` ha de ser una ruta dins de `public/Kompass/images/` per al deploy de GitHub Pages. Imatges externes es desaconsellen (CSP, offline, privacitat).
+- Les imatges raster han de ser optimitzades abans de commit (WebP qualitat 80, objectiu ~100 kB per imatge). En el futur hi haurà un script `npm run add-image` que automatitza la conversió.
+
+**Ús típic:**
+
+- **Vocabulari temàtic** (A1a-5+): fotos d'objectes/escenes amb el seu nom en alemany com a caption.
+- **Infografies gramaticals**: diagrames SVG de casos, Satzklammer, concordança, timelines, etc. SVG inline permet heretar el color actual (`currentColor`) i re-tematitzar automàticament segons el tema light/dark.
+- **Exercicis amb imatge**: el schema `stimulus.image` de `Exercise` (§5.4) segueix sent independent d'aquest beat — són usos diferents. El beat `visual` és per a contingut narratiu/synthesis; el `stimulus.image` és per a exercicis.
 
 ---
 

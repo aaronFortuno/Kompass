@@ -510,6 +510,45 @@ function CalloutBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed 
   );
 }
 
+/*
+ * VisualBeat · §77
+ * Un beat que mostra una imatge (raster via src) o un SVG inline (via
+ * svg). Caption opcional en italic sota. SVG inline s'injecta amb
+ * dangerouslySetInnerHTML (el contingut ve del JSON controlat del
+ * projecte); usa currentColor per heretar la tinta del reader.
+ */
+function VisualBeat({ beat, step, stepIdx, showKicker }) {
+  const v = beat.visual;
+  const style = v.width ? { maxWidth: v.width + 'px' } : undefined;
+  return (
+    <>
+      {showKicker ? <BeatKicker step={step} stepIdx={stepIdx} beatKicker={step.id} /> : null}
+      <figure className="kf-beat-visual kf-fade-in" style={style}>
+        {v.svg ? (
+          <div
+            className="kf-beat-visual-svg"
+            role="img"
+            aria-label={v.alt}
+            dangerouslySetInnerHTML={{ __html: v.svg }}
+          />
+        ) : v.src ? (
+          <img
+            className="kf-beat-visual-img"
+            src={v.src}
+            alt={v.alt}
+            loading="lazy"
+          />
+        ) : null}
+        {v.caption ? (
+          <figcaption className="kf-beat-visual-caption">
+            {parseInline(v.caption)}
+          </figcaption>
+        ) : null}
+      </figure>
+    </>
+  );
+}
+
 function SynTableBeat({ beat, tableAnim }) {
   const table = beat.table;
   return (
@@ -859,6 +898,8 @@ function BeatBody({
       return <CalloutBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed }} />;
     case 'syn-table':
       return <SynTableBeat beat={beat} tableAnim={tableAnim} />;
+    case 'visual':
+      return <VisualBeat {...{ beat, step, stepIdx, showKicker }} />;
     case 'exercise':
       return (
         <ExerciseBeatCard
