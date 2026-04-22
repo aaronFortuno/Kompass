@@ -1384,10 +1384,14 @@
 }
 
 /*
- * SpeakableText — pill clickable per escoltar text alemany via Web
- * Speech API. Discret: subtle underline amb guió baix + icona speaker
- * xicoteta al final. Hover/focus destaca la pill sense canviar la
- * composició del text.
+ * SpeakableText — pill clickable per escoltar text alemany.
+ * §98: un cop l'usuari descobreix la interactivitat, la icona del
+ * speaker desapareix i la pill queda com a únic senyal persistent.
+ * Per això el fons és una mica més present que una simple destaca
+ * "subtle": ha de ser visible sense dominar la composició tipogràfica.
+ * Degradat editorial paper-2 + subratllat fi ink-2 per marcar
+ * clicabilitat. Hover/focus passa a mark (amber càlid) amb línia
+ * inferior en ink, mantenint el contrast AA.
  */
 .kf-speak {
   position: relative;
@@ -1396,8 +1400,8 @@
   padding: 0 0.18em 0.05em;
   margin: 0 -0.02em;
   border-radius: 0.25em;
-  background: rgb(var(--color-reader-paper-2) / 0.55);
-  box-shadow: inset 0 -2px 0 rgb(var(--color-reader-ink-2) / 0.35);
+  background: rgb(var(--color-reader-paper-2) / 0.75);
+  box-shadow: inset 0 -2px 0 rgb(var(--color-reader-ink-2) / 0.5);
   transition:
     background-color var(--duration-fast) var(--ease-standard),
     box-shadow var(--duration-fast) var(--ease-standard);

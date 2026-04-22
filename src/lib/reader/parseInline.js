@@ -1,13 +1,14 @@
 /*
  * Parser d'inline rich text · DATA-MODEL §3.6
  *
- * Admet quatre operadors (amb anidament bàsic):
+ * Admet cinc operadors (amb anidament bàsic):
  *   **text**   → <strong>
  *   ==text==   → <mark class="k-mark">       (highlight cromàtic)
  *   _text_     → <em>
  *   `text`     → <code>
+ *   !!text!!   → <SpeakableText>             (àudio alemany · §98)
  *
- * Escapament: \**  \==  \_  \`  \\
+ * Escapament: \**  \==  \_  \`  \!  \\
  *
  * Aquest mòdul exposa:
  *   1. `tokenizeInline(text)` → retorna una llista plana de tokens
@@ -21,14 +22,45 @@
  *      caràcters visibles. S'usa al component <Typed /> per escriure
  *      text formatat progressivament sense mostrar els símbols de
  *      sintaxi.
+ *   4. `stripRichMarkers(text)` → elimina els delimitadors rich del text
+ *      i retorna la cadena neta. S'usa sobretot per al `text` prop de
+ *      SpeakableText (el motor TTS ha de rebre alemany net, no **bold**).
  *
  * Pure functions.
  */
 
 import { createElement } from 'react';
+import { SpeakableText } from '@/components/reader/SpeakableText.jsx';
+
+/*
+ * Elimina els delimitadors d'inline rich text del text donat, retornant
+ * una cadena neta. Útil per:
+ *   - passar el text al motor TTS (el Web Speech i l'MP3 prerecorded han
+ *     de rebre alemany net, sense markers).
+ *   - generar aria-labels o hashes deterministes a partir del contingut.
+ *
+ * No intenta validar la sintaxi: aplica les mateixes regex que el
+ * tokenitzador i descarta tant els delimitadors com les barres
+ * d'escapament.
+ */
+export function stripRichMarkers(text) {
+  if (!text) return '';
+  const tokens = tokenizeInline(text);
+  let out = '';
+  for (const tok of tokens) {
+    if (tok.type === 'text' || tok.type === 'code') {
+      out += tok.content;
+    } else if (tok.type === 'speakable') {
+      out += stripRichMarkers(tok.content);
+    } else {
+      out += stripRichMarkers(tok.content);
+    }
+  }
+  return out;
+}
 
 const TOKEN_RE =
-  /(\\[\\*=_`])|(\*\*(?:[^*]|\*(?!\*))+\*\*)|(==[^=]+==)|(_[^_]+_)|(`[^`]+`)/g;
+  /(\\[\\*=_`!])|(!!(?:[^!]|!(?!!))+!!)|(\*\*(?:[^*]|\*(?!\*))+\*\*)|(==[^=]+==)|(_[^_]+_)|(`[^`]+`)/g;
 
 // Profunditat màxima de la recursió per render. Els casos didàctics
 // reals usen com a molt 2 nivells (p. ex. `_wohn**en**_` o
@@ -49,6 +81,8 @@ export function tokenizeInline(text) {
     const tok = m[0];
     if (tok.startsWith('\\')) {
       out.push({ type: 'text', content: tok.slice(1) });
+    } else if (tok.startsWith('!!')) {
+      out.push({ type: 'speakable', content: tok.slice(2, -2) });
     } else if (tok.startsWith('**')) {
       out.push({ type: 'strong', content: tok.slice(2, -2) });
     } else if (tok.startsWith('==')) {
@@ -101,6 +135,14 @@ function renderTokenDepth(tok, content, key, depth) {
       return createElement('em', { key }, children);
     case 'mark':
       return createElement('mark', { key, className: 'k-mark' }, children);
+    case 'speakable':
+      // El TTS ha de rebre text net (sense **, ==, _, `); els `children`,
+      // en canvi, mantenen el format visual intern (ex: bold dins del pill).
+      return createElement(
+        SpeakableText,
+        { key, text: stripRichMarkers(tok.content) },
+        children
+      );
     default:
       return content;
   }
