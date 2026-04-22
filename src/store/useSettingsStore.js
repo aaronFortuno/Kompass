@@ -28,6 +28,17 @@ export const DEFAULT_SETTINGS = {
   tableAnim: true,
   autoPlay: false,
   autoPlayDelay: 3, // segons a esperar un cop revelat el beat
+  // Configs d'àudio · §98
+  // audioAutoplay: reprodueix automàticament l'àudio alemany dels
+  //   beats a mesura que apareixen (pendent wiring sequencial amb el
+  //   typewriter per beats multi-pill; el single-pill ja funciona).
+  // audioSpeed: velocitat de reproducció de l'MP3 (0.8 → 1.2). Passa
+  //   directament a audio.playbackRate sense re-encoding.
+  // audioVoice: per un futur selector quan hi hagi més d'una veu.
+  //   De moment només 'seraphina'.
+  audioAutoplay: false,
+  audioSpeed: 1.0,
+  audioVoice: 'seraphina',
 };
 
 export const useSettingsStore = create(
@@ -54,6 +65,13 @@ export const useSettingsStore = create(
         const n = Number(autoPlayDelay);
         set({ autoPlayDelay: Math.min(10, Math.max(1, isNaN(n) ? 3 : n)) });
       },
+      setAudioAutoplay: (audioAutoplay) =>
+        set({ audioAutoplay: Boolean(audioAutoplay) }),
+      setAudioSpeed: (audioSpeed) => {
+        const n = Number(audioSpeed);
+        set({ audioSpeed: Math.min(1.2, Math.max(0.8, isNaN(n) ? 1.0 : n)) });
+      },
+      setAudioVoice: (audioVoice) => set({ audioVoice: String(audioVoice) }),
 
       update: (patch) => set(patch),
       reset: () => set({ ...DEFAULT_SETTINGS }),

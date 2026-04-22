@@ -365,20 +365,36 @@ function RuleBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed }) 
   );
 }
 
-function ExampleBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed }) {
+function ExampleBeat({
+  beat,
+  step,
+  stepIdx,
+  showKicker,
+  typewriterActive,
+  speed,
+  audioAutoplay = false,
+}) {
   const [deDone, setDeDone] = useState(!typewriterActive);
   useEffect(() => { setDeDone(!typewriterActive); }, [typewriterActive, beat]);
+  const hasPills = hasInlineSpeakable(beat.ex.de);
+  // Autoplay del wrapper: quan el typewriter acaba i l'usuari té el
+  // setting actiu, disparem la reproducció. Només aplicable si NO hi ha
+  // pills interiors (multi-pill seria simultani i soroll).
+  const triggerAutoPlay = audioAutoplay && deDone && !hasPills;
   return (
     <>
       {showKicker ? <BeatKicker step={step} stepIdx={stepIdx} beatKicker={step.id} /> : null}
       <div className="kf-beat-ex">
         <span className="kf-marker">Exemple {beat.idx} / {beat.total}</span>
         {deDone ? (
-          hasInlineSpeakable(beat.ex.de) ? (
+          hasPills ? (
             <p className="kf-beat-ex-de">{parseInline(beat.ex.de)}</p>
           ) : (
             <p className="kf-beat-ex-de">
-              <SpeakableText text={stripRichMarkers(beat.ex.de)}>
+              <SpeakableText
+                text={stripRichMarkers(beat.ex.de)}
+                autoPlay={triggerAutoPlay}
+              >
                 {parseInline(beat.ex.de)}
               </SpeakableText>
             </p>
@@ -404,17 +420,31 @@ function ExampleBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed 
   );
 }
 
-function PronBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed }) {
+function PronBeat({
+  beat,
+  step,
+  stepIdx,
+  showKicker,
+  typewriterActive,
+  speed,
+  audioAutoplay = false,
+}) {
   const tab = beat.tab;
   const [noteDone, setNoteDone] = useState(!typewriterActive);
   useEffect(() => { setNoteDone(!typewriterActive); }, [typewriterActive, beat]);
+  // Autoplay del pronom "gran": es dispara quan entra al beat. L'exemple
+  // queda amb clic manual per no sobrecarregar acústicament l'usuari.
+  const pronAutoPlay = audioAutoplay && !hasInlineSpeakable(tab.pron);
   return (
     <>
       {showKicker ? <BeatKicker step={step} stepIdx={stepIdx} beatKicker={step.id} /> : null}
       <div className="kf-beat-pron">
         <span className="kf-marker">Pronom</span>
         <h2 className="kf-beat-pron-huge">
-          <SpeakableText text={stripRichMarkers(tab.pron)}>
+          <SpeakableText
+            text={stripRichMarkers(tab.pron)}
+            autoPlay={pronAutoPlay}
+          >
             {parseInline(tab.pron)}
           </SpeakableText>
         </h2>
@@ -963,9 +993,9 @@ function BeatBody({
     case 'rule':
       return <RuleBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed }} />;
     case 'example':
-      return <ExampleBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed }} />;
+      return <ExampleBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay: settings.audioAutoplay }} />;
     case 'pron':
-      return <PronBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed }} />;
+      return <PronBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay: settings.audioAutoplay }} />;
     case 'pair':
       return <PairBeat {...{ beat, step, stepIdx, showKicker }} />;
     case 'compare':

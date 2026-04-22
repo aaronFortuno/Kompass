@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Volume2 } from 'lucide-react';
 import { useSpeak } from '@/lib/audio/useSpeak.js';
 import { useSpeakerDiscovered } from '@/lib/audio/useSpeakerDiscovered.js';
+import { useSettings } from '@/store/useSettingsStore.js';
 
 /*
  * SpeakableText · §92 + §98
@@ -36,9 +37,11 @@ export function SpeakableText({
   children,
   as: Tag = 'span',
   className,
+  autoPlay = false, // Si true, reprodueix automàticament un cop muntat
 }) {
   const { speak, isSupported, hasGermanVoice } = useSpeak();
   const { discovered, markDiscovered } = useSpeakerDiscovered();
+  const settings = useSettings();
   const [active, setActive] = useState(false);
   const [hash, setHash] = useState(null);
   const [audioUrl, setAudioUrl] = useState(null); // null = no provat, '' = provat i no existeix
@@ -116,6 +119,9 @@ export function SpeakableText({
         audioRef.current = new Audio(audioUrl);
       }
       audioRef.current.currentTime = 0;
+      // Velocitat de reproducció controlada pel slider a Settings (§98).
+      // Rang 0.8–1.2; fora d'aquest marge el MP3 comença a sonar estrany.
+      audioRef.current.playbackRate = settings.audioSpeed || 1.0;
       const p = audioRef.current.play();
       if (p && typeof p.catch === 'function') {
         p.catch(() => {
@@ -143,6 +149,31 @@ export function SpeakableText({
     // Reset del marcador visual "is-playing" després d'un temps estimat.
     window.setTimeout(() => setActive(false), Math.min(200 * text.length, 6000));
   };
+
+  /*
+   * Autoplay single-pill (§98): quan el parent passa autoPlay=true
+   * (p. ex. ExampleBeat amb deDone=true + settings.audioAutoplay), el
+   * pill es reprodueix automàticament 200ms després d'haver-se muntat
+   * o del probe de l'MP3. Es dispara un cop per combinació text+autoPlay
+   * per evitar bucles quan canvien les dependències.
+   */
+  const autoPlayedRef = useRef(false);
+  useEffect(() => {
+    if (!autoPlay) {
+      autoPlayedRef.current = false;
+      return undefined;
+    }
+    if (autoPlayedRef.current) return undefined;
+    // Esperem que mp3Probed o canFallbackToSpeech tinguin algun valor
+    // vàlid (si cap dels dos, no podem fer res i saltem).
+    if (!hasPrerecorded && !canFallbackToSpeech && mp3Probed) return undefined;
+    const t = window.setTimeout(() => {
+      autoPlayedRef.current = true;
+      onActivate();
+    }, 200);
+    return () => window.clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [autoPlay, hasPrerecorded, canFallbackToSpeech, mp3Probed]);
 
   return (
     <Tag

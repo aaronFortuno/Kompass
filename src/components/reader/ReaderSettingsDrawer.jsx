@@ -10,6 +10,9 @@ import {
   Gauge,
   Play,
   Timer,
+  Volume2,
+  Mic,
+  Rabbit,
   X as CloseIcon,
 } from 'lucide-react';
 import { useT } from '@/i18n';
@@ -44,6 +47,9 @@ export function ReaderSettingsDrawer({ open, onClose }) {
   const tableAnim = useSettingsStore((s) => s.tableAnim);
   const autoPlay = useSettingsStore((s) => s.autoPlay);
   const autoPlayDelay = useSettingsStore((s) => s.autoPlayDelay);
+  const audioAutoplay = useSettingsStore((s) => s.audioAutoplay);
+  const audioSpeed = useSettingsStore((s) => s.audioSpeed);
+  const audioVoice = useSettingsStore((s) => s.audioVoice);
 
   const setTheme = useSettingsStore((s) => s.setTheme);
   const setTextScale = useSettingsStore((s) => s.setTextScale);
@@ -53,6 +59,9 @@ export function ReaderSettingsDrawer({ open, onClose }) {
   const setTableAnim = useSettingsStore((s) => s.setTableAnim);
   const setAutoPlay = useSettingsStore((s) => s.setAutoPlay);
   const setAutoPlayDelay = useSettingsStore((s) => s.setAutoPlayDelay);
+  const setAudioAutoplay = useSettingsStore((s) => s.setAudioAutoplay);
+  const setAudioSpeed = useSettingsStore((s) => s.setAudioSpeed);
+  const setAudioVoice = useSettingsStore((s) => s.setAudioVoice);
 
   // Esc tanca el drawer (abans que el handler del reader tanqui tot)
   useEffect(() => {
@@ -242,6 +251,65 @@ export function ReaderSettingsDrawer({ open, onClose }) {
                   {autoPlayDelay}s
                 </span>
               </div>
+            </SettingRow>
+          </section>
+
+          {/* Secció Àudio · §98 */}
+          <section className="mt-6">
+            <SectionHeading>Àudio</SectionHeading>
+
+            <SettingRow
+              id="drawer-audio-autoplay"
+              icon={Volume2}
+              title="Reproduir automàticament"
+              help="Reprodueix el pill principal del beat en acabar el typewriter."
+            >
+              <Toggle
+                checked={audioAutoplay}
+                onChange={setAudioAutoplay}
+                label="Reproduir automàticament"
+                id="drawer-audio-autoplay"
+              />
+            </SettingRow>
+
+            <SettingRow
+              id="drawer-audio-speed"
+              icon={Rabbit}
+              title="Velocitat de l'àudio"
+            >
+              <div className="flex items-center gap-2">
+                <input
+                  type="range"
+                  min={0.8}
+                  max={1.2}
+                  step={0.05}
+                  value={audioSpeed}
+                  onChange={(e) => setAudioSpeed(Number(e.target.value))}
+                  aria-labelledby="drawer-audio-speed"
+                  className="w-28 accent-reader-ink"
+                />
+                <span className="font-mono text-[10px] text-reader-ink-2 w-10 text-right">
+                  {audioSpeed.toFixed(2)}×
+                </span>
+              </div>
+            </SettingRow>
+
+            <SettingRow
+              id="drawer-audio-voice"
+              icon={Mic}
+              title="Veu"
+              help="Aviat: més veus alemanyes per triar."
+            >
+              <select
+                id="drawer-audio-voice"
+                value={audioVoice}
+                onChange={(e) => setAudioVoice(e.target.value)}
+                className="font-mono text-[11px] bg-reader-paper border border-reader-rule text-reader-ink px-2 py-1 rounded"
+              >
+                <option value="seraphina">Seraphina (càlida · actual)</option>
+                <option value="florian" disabled>Florian (aviat)</option>
+                <option value="katja" disabled>Katja (aviat)</option>
+              </select>
             </SettingRow>
           </section>
         </div>
