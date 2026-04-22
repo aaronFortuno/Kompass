@@ -35,8 +35,8 @@ export function AppShell() {
         </RouteTransition>
       </main>
 
-      <footer className="border-t border-reader-rule mt-10">
-        <div className="page-gutter max-w-content-list mx-auto py-8 flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+      <footer className="border-t border-reader-rule mt-8">
+        <div className="page-gutter max-w-content-list mx-auto py-4 sm:py-5 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           {/* Esquerra: brandmark + tagline */}
           <Link
             to="/"

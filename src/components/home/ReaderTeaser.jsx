@@ -95,7 +95,7 @@ export function ReaderTeaser() {
         'kf-teaser-frame',
         'bg-reader-paper-2 border border-reader-rule',
         'px-6 py-7 sm:px-10 sm:py-8',
-        'min-h-[300px] sm:min-h-[340px]',
+        'min-h-[320px] sm:min-h-[380px]',
         'flex flex-col',
       ].join(' ')}
       aria-label={t('home.teaserAria')}

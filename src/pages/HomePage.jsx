@@ -73,41 +73,69 @@ function courseStats(topics) {
  *     l'indicador més proper al "tema en què estava treballant".
  *   - Torna null si no n'hi ha cap candidat.
  */
+/*
+ * Retorna el topic que ofereix com a "següent pas" de l'usuari a la
+ * landing. Tres casos, en aquest ordre de prioritat:
+ *
+ *   1. Un tema VISITAT i ENCARA NO COMPLETAT — cal acabar-lo abans
+ *      d'avançar. Ordre: més avançat primer (visitedStepIds desc)
+ *      amb firstVisitedAt com a desempat.
+ *   2. El PRIMER TEMA NO VISITAT que segueix la progressió del curs
+ *      (ignorant A1a-0, que és onboarding). Això cobreix el cas
+ *      "tinc A1a-1 i A1a-2 completats, què faig ara?" → A1a-3.
+ *   3. null només si l'usuari no ha iniciat cap cosa i no hi ha cap
+ *      tema pendent al corpus; la landing proposarà el benvingut
+ *      A1a-0.
+ *
+ * Amb aquest criteri, un cop l'usuari ha vist A1a-0, la home mai
+ * torna a oferir-lo com a "continua".
+ */
 function pickContinueTopic(topicsProgress, exercisesProgress) {
-  if (!topicsProgress) return null;
-  const candidates = [];
-  for (const [topicId, tp] of Object.entries(topicsProgress)) {
-    // A1a-0 és la lliçó de benvinguda (onboarding). Un cop visitada,
-    // no volem seguir proposant-la com a "continua on vas parar":
-    // l'usuari ja ha acabat l'onboarding, el següent "continua" ha
-    // de ser una lliçó de contingut real (A1a-1 en endavant).
-    if (topicId === 'A1a-0') continue;
-    const topic = getTopic(topicId);
-    if (!topic) continue;
+  const allTopics = getAllTopics()
+    .filter((t) => t.id !== 'A1a-0')
+    .sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+
+  const hasAnyProgress = topicsProgress
+    && Object.keys(topicsProgress).some((id) => id !== 'A1a-0');
+  if (!hasAnyProgress) {
+    // Sense activitat (o només A1a-0 visitat) → la landing canvia de
+    // branca: "Comença amb la benvinguda" + "Explora el temari".
+    return null;
+  }
+
+  // 1. Tema en curs (visitat, no allDone).
+  const inProgress = [];
+  for (const topic of allTopics) {
+    const tp = topicsProgress?.[topic.id];
+    if (!tp || !(tp.visitedStepIds?.length > 0)) continue;
     const { allDone, total } = computeTopicProgress(topic, exercisesProgress);
-    // Un tema sense exercicis (total === 0) també el considerem "en
-    // curs" si apareix al store: l'usuari l'ha obert i probablement
-    // vol tornar-hi.
     if (total > 0 && allDone) continue;
-    // Per ordenar pel que l'usuari va tocar l'últim, usem el nombre
-    // d'steps visitats com a proxy de "avançat" i el firstVisitedAt
-    // com a desempat. No tenim lastVisitedAt encara al store, però
-    // amb aquest criteri el cas típic (últim tema obert = més avançat)
-    // queda millor que el pur firstVisitedAt desc.
-    candidates.push({
+    inProgress.push({
       topic,
-      visitedCount: tp?.visitedStepIds?.length ?? 0,
-      firstVisitedAt: tp?.firstVisitedAt ?? '',
+      visitedCount: tp.visitedStepIds.length,
+      firstVisitedAt: tp.firstVisitedAt ?? '',
     });
   }
-  if (candidates.length === 0) return null;
-  candidates.sort((a, b) => {
-    if (b.visitedCount !== a.visitedCount) return b.visitedCount - a.visitedCount;
-    if (a.firstVisitedAt > b.firstVisitedAt) return -1;
-    if (a.firstVisitedAt < b.firstVisitedAt) return 1;
-    return 0;
-  });
-  return candidates[0].topic;
+  if (inProgress.length > 0) {
+    inProgress.sort((a, b) => {
+      if (b.visitedCount !== a.visitedCount) return b.visitedCount - a.visitedCount;
+      if (a.firstVisitedAt > b.firstVisitedAt) return -1;
+      if (a.firstVisitedAt < b.firstVisitedAt) return 1;
+      return 0;
+    });
+    return inProgress[0].topic;
+  }
+
+  // 2. Primer tema no visitat en ordre natural del corpus.
+  for (const topic of allTopics) {
+    const tp = topicsProgress?.[topic.id];
+    const visited = tp?.visitedStepIds?.length > 0;
+    if (!visited) return topic;
+  }
+
+  // 3. Tot completat i tot visitat. Cas rar — simplement null i la
+  // landing farà "Tot el temari" + "Comença A1a-0" com a refugi.
+  return null;
 }
 
 // Pilar individual "Què fa Kompass". Text curt, kicker mono, icona Lucide.
