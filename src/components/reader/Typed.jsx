@@ -45,21 +45,31 @@ export function Typed({
   const tokens = useMemo(() => tokenizeInline(text), [text]);
   const total = useMemo(() => visibleLength(tokens), [tokens]);
 
-  // Calcula els punts d'aturada: per cada speakable token, la posició
-  // `atN` en què s'ha acabat d'escriure i l'índex del speakable (0,1,2...).
-  // Només considerem speakables de primer nivell — anidats no els
-  // despleguem aquí (la UX és massa complexa). A la pràctica els spans
-  // `!!...!!` viuen al nivell de primer ordre.
+  // Calcula els punts d'aturada: per cada speakable, la posició `atN`
+  // en què s'ha acabat d'escriure. Els speakables poden viure a primer
+  // nivell (`!!X!!`) o dins d'un altre operador (`**!!X!!**`,
+  // `==!!X!!==`, etc.). Busquem els dos casos:
+  //   - top-level: tok.type === 'speakable' → atN = cum + tok.content.length.
+  //   - nested: cerquem `!!...!!` amb regex dins del contingut dels
+  //     tokens de tipus strong/mark/em i calculem la posició relativa.
   const stopPoints = useMemo(() => {
     const sp = [];
     let cum = 0;
     let sIdx = 0;
     for (const tok of tokens) {
-      cum += tok.content.length;
+      const len = tok.content.length;
       if (tok.type === 'speakable') {
-        sp.push({ atN: cum, idx: sIdx });
+        sp.push({ atN: cum + len, idx: sIdx });
         sIdx++;
+      } else if (tok.type !== 'text' && tok.type !== 'code') {
+        const re = /!!([^!]+?)!!/g;
+        let m;
+        while ((m = re.exec(tok.content))) {
+          sp.push({ atN: cum + m.index + m[0].length, idx: sIdx });
+          sIdx++;
+        }
       }
+      cum += len;
     }
     return sp;
   }, [tokens]);

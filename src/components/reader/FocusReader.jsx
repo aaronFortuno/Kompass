@@ -77,6 +77,54 @@ function hasInlineSpeakable(text) {
 }
 
 /*
+ * Compta els pills audibles d'un beat per fer una estimació del temps
+ * d'àudio (timer de canvi de beat). Mira els camps del beat rellevants
+ * segons el tipus i compta tant els `!!...!!` inline com els camps
+ * estructurats que el wrapper acabaria convertint en pill.
+ */
+function countSpeakablesInBeat(beat) {
+  if (!beat) return 0;
+  let n = 0;
+  const countInline = (s) => {
+    if (typeof s !== 'string') return 0;
+    const m = s.match(/!!([^!]+?)!!/g);
+    return m ? m.length : 0;
+  };
+  switch (beat.type) {
+    case 'example':
+      if (beat.ex?.de) {
+        const inline = countInline(beat.ex.de);
+        n += inline > 0 ? inline : 1; // wrapper = 1 pill
+      }
+      break;
+    case 'pron':
+      n += 1; // tab.pron sempre pill
+      if (beat.tab?.example?.de) {
+        const inline = countInline(beat.tab.example.de);
+        n += inline > 0 ? inline : 1;
+      }
+      if (beat.tab?.note) n += countInline(beat.tab.note);
+      break;
+    case 'compare':
+      (beat.rows || []).forEach((r) => {
+        if (r.de) {
+          const inline = countInline(r.de);
+          n += inline > 0 ? inline : 1;
+        }
+      });
+      break;
+    default:
+      // Beats narratius, si mai porten !!...!! al body, lead, points, etc.
+      n += countInline(beat.text);
+      n += countInline(beat.body);
+      n += countInline(beat.lead);
+      if (Array.isArray(beat.points)) beat.points.forEach((p) => { n += countInline(p); });
+      if (beat.callout?.body) n += countInline(beat.callout.body);
+  }
+  return n;
+}
+
+/*
  * Hook d'orquestració d'autoplay seqüencial de pills dins d'un beat.
  * §98 polit (refactor autoplay).
  *
@@ -144,6 +192,11 @@ function useBeatAutoPlaySequence(containerRef, shouldStart, gapMs = 400) {
         await waitForEnded();
         if (cancelled) return;
         if (i < pills.length - 1) await wait(gapMs);
+      }
+      // Tots els pills reproduïts: avisa al reader que pot disparar el
+      // temporitzador de canvi de beat (si autoPlay també està actiu).
+      if (!cancelled) {
+        window.dispatchEvent(new CustomEvent('kompass:beat-audio-complete'));
       }
     })();
 
@@ -523,7 +576,16 @@ function ExampleBeat({
             className="kf-beat-ex-de"
             active={typewriterActive}
             speed={speed + 4}
-            onDone={() => setDeDone(true)}
+            onDone={() => {
+              setDeDone(true);
+              // Si hi ha hagut audio integrat al typewriter, avisa al
+              // reader que pot començar el temporitzador de canvi.
+              if (audioAutoplay && hasPills) {
+                window.dispatchEvent(
+                  new CustomEvent('kompass:beat-audio-complete'),
+                );
+              }
+            }}
             onSpeakableReached={
               audioAutoplay && hasPills ? handleSpeakable : undefined
             }
@@ -1604,8 +1666,29 @@ export function FocusReader({ topic }) {
     const readMs = fastMode
       ? 300
       : estimateBeatReadMs(beat, speed, settings.typewriter !== false);
-    const t = window.setTimeout(() => setAutoPlayBarActive(true), readMs);
-    return () => window.clearTimeout(t);
+    let started = false;
+    const startBar = () => {
+      if (started) return;
+      started = true;
+      setAutoPlayBarActive(true);
+    };
+    // Si l'usuari té audioAutoplay actiu, esperem l'event explícit
+    // que dispara el beat quan tota l'àudio s'ha reproduit (§98 polit).
+    // Alternativament, un timer fallback amb estimació que inclou el
+    // temps estimat dels pills per si l'event mai arribés (p. ex.
+    // beat sense pills però audioAutoplay on, o error de reproducció).
+    const onAudioDone = () => startBar();
+    window.addEventListener('kompass:beat-audio-complete', onAudioDone);
+    // Comptatge aproximat de pills al beat (spans `!!...!!` al text).
+    const speakableCount = countSpeakablesInBeat(beat);
+    const audioExtraMs = settings.audioAutoplay && speakableCount > 0
+      ? speakableCount * 2400 + (speakableCount - 1) * 200
+      : 0;
+    const t = window.setTimeout(startBar, readMs + audioExtraMs);
+    return () => {
+      window.removeEventListener('kompass:beat-audio-complete', onAudioDone);
+      window.clearTimeout(t);
+    };
   }, [
     stepIdx,
     beatIdx,
@@ -1614,6 +1697,7 @@ export function FocusReader({ topic }) {
     fastMode,
     speed,
     settings.typewriter,
+    settings.audioAutoplay,
   ]);
 
   // Gest tàctil · §96
