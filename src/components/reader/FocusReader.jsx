@@ -544,6 +544,8 @@ function VisualBeat({ beat, step, stepIdx, showKicker }) {
           <img
             className="kf-beat-visual-img"
             src={v.src}
+            {...(v.srcset ? { srcSet: v.srcset } : {})}
+            {...(v.sizes ? { sizes: v.sizes } : {})}
             alt={v.alt}
             loading="lazy"
           />
@@ -552,6 +554,9 @@ function VisualBeat({ beat, step, stepIdx, showKicker }) {
           <figcaption className="kf-beat-visual-caption">
             {parseInline(v.caption)}
           </figcaption>
+        ) : null}
+        {v.credit ? (
+          <small className="kf-beat-visual-credit">{parseInline(v.credit)}</small>
         ) : null}
       </figure>
     </>

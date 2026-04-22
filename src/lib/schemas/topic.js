@@ -83,9 +83,12 @@ const SynTableSchema = z.object({
 const VisualSchema = z
   .object({
     src: z.string().optional(),
+    srcset: z.string().optional(),
+    sizes: z.string().optional(),
     svg: z.string().optional(),
     alt: z.string(),
     caption: z.string().optional(),
+    credit: z.string().optional(),
     width: z.number().int().positive().optional(),
   })
   .refine((v) => Boolean(v.src) || Boolean(v.svg), {

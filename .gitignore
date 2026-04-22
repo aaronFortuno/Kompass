@@ -45,3 +45,6 @@ coverage/
 
 # Esborranys de lliçons en revisió (abans d'integrar-los al JSON)
 .drafts/
+
+# Imatges temporals abans del processament amb npm run add-image
+.tmp-images/
