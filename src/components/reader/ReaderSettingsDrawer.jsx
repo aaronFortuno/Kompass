@@ -13,6 +13,7 @@ import {
   Volume2,
   Mic,
   Rabbit,
+  Focus,
   X as CloseIcon,
 } from 'lucide-react';
 import { useT } from '@/i18n';
@@ -50,6 +51,7 @@ export function ReaderSettingsDrawer({ open, onClose }) {
   const audioAutoplay = useSettingsStore((s) => s.audioAutoplay);
   const audioSpeed = useSettingsStore((s) => s.audioSpeed);
   const audioVoice = useSettingsStore((s) => s.audioVoice);
+  const focusMode = useSettingsStore((s) => s.focusMode);
 
   const setTheme = useSettingsStore((s) => s.setTheme);
   const setTextScale = useSettingsStore((s) => s.setTextScale);
@@ -62,6 +64,7 @@ export function ReaderSettingsDrawer({ open, onClose }) {
   const setAudioAutoplay = useSettingsStore((s) => s.setAudioAutoplay);
   const setAudioSpeed = useSettingsStore((s) => s.setAudioSpeed);
   const setAudioVoice = useSettingsStore((s) => s.setAudioVoice);
+  const setFocusMode = useSettingsStore((s) => s.setFocusMode);
 
   // Esc tanca el drawer (abans que el handler del reader tanqui tot)
   useEffect(() => {
@@ -292,6 +295,20 @@ export function ReaderSettingsDrawer({ open, onClose }) {
                   {audioSpeed.toFixed(2)}×
                 </span>
               </div>
+            </SettingRow>
+
+            <SettingRow
+              id="drawer-focus-mode"
+              icon={Focus}
+              title="Mode focus"
+              help="Amaga capçalera, peu i índex. Drecera: tecla f."
+            >
+              <Toggle
+                checked={focusMode}
+                onChange={setFocusMode}
+                label="Mode focus"
+                id="drawer-focus-mode"
+              />
             </SettingRow>
 
             <SettingRow

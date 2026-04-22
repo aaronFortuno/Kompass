@@ -1567,7 +1567,9 @@ html.dark .k-mark {
 .kf-body-counter {
   position: fixed;
   left: 20px;
-  bottom: 72px;
+  /* Separat del peu i de la barra d'auto-play (§98 polit). Abans queia
+     just sobre la línia de temporitzador, que el solapava visualment. */
+  bottom: 96px;
   z-index: 4;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 10px;
@@ -1584,9 +1586,55 @@ html.dark .k-mark {
 @media (max-width: 720px) {
   .kf-body-counter {
     left: 12px;
-    bottom: 64px;
+    bottom: 88px;
     font-size: 9px;
   }
+}
+
+/*
+ * Mode focus · §103
+ *
+ * Amaga header, peu, sidebar, counter i barra d'autoplay — només
+ * queda el contingut central del reader. Activable amb la tecla "f"
+ * o el toggle del drawer. Per mantenir l'usuari informat que encara
+ * pot navegar, deixem una petita tira de hint a baix; Esc i "f"
+ * tornen al mode normal.
+ */
+.kf-root.kf-focus-mode .kf-head,
+.kf-root.kf-focus-mode .kf-foot,
+.kf-root.kf-focus-mode .kf-sidebar,
+.kf-root.kf-focus-mode .kf-body-counter,
+.kf-root.kf-focus-mode .kf-autoplay-bar {
+  display: none !important;
+}
+.kf-root.kf-focus-mode .kf-body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.kf-focus-hint {
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgb(var(--color-reader-muted));
+  opacity: 0.45;
+  pointer-events: none;
+  user-select: none;
+  z-index: 5;
+  transition: opacity var(--duration-base) var(--ease-standard);
+}
+.kf-focus-hint kbd {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  border: 1px solid rgb(var(--color-reader-rule));
+  padding: 1px 6px;
+  border-radius: 3px;
+  color: rgb(var(--color-reader-ink-2));
+  margin: 0 3px;
 }
 
 /* Cantonada dreta del peu: icona de config + botó Següent alineats */
@@ -1648,18 +1696,27 @@ html.dark .k-mark {
  */
 .kf-autoplay-bar {
   position: relative;
-  height: 2px;
-  width: 100%;
-  background: rgb(var(--color-reader-rule) / 0.4);
+  height: 1px;
+  /* Barra centrada i curta: ~40% del viewport, separada dels marges.
+     Polit §98: abans era full-width i molt visible, dominava sota el
+     body. Ara és una senyal discreta del compte enrere abans del
+     canvi de beat. */
+  width: 40%;
+  max-width: 520px;
+  margin: 0 auto;
+  background: rgb(var(--color-reader-rule) / 0.35);
   overflow: hidden;
   flex-shrink: 0;
   z-index: 3;
+  border-radius: 1px;
 }
 .kf-autoplay-bar-fill {
   display: block;
   height: 100%;
   width: 0%;
-  background: rgb(var(--color-reader-ink));
+  /* Color més suau: ink-2 amb opacitat, no ink pur — senyal discreta
+     que no competeixi amb el contingut llegible. */
+  background: rgb(var(--color-reader-ink-2) / 0.55);
   animation-name: kf-autoplay-fill;
   animation-timing-function: linear;
   animation-fill-mode: forwards;

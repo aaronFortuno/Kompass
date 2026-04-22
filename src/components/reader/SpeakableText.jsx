@@ -122,6 +122,14 @@ export function SpeakableText({
       // Velocitat de reproducció controlada pel slider a Settings (§98).
       // Rang 0.8–1.2; fora d'aquest marge el MP3 comença a sonar estrany.
       audioRef.current.playbackRate = settings.audioSpeed || 1.0;
+      // Emet 'ended' quan acaba perquè l'orquestrador del beat sàpiga
+      // quan avançar al pill següent (§98 polit · autoplay seqüencial).
+      audioRef.current.onended = () => {
+        setActive(false);
+        if (typeof window !== 'undefined') {
+          window.dispatchEvent(new CustomEvent('kompass:speakable-ended'));
+        }
+      };
       const p = audioRef.current.play();
       if (p && typeof p.catch === 'function') {
         p.catch(() => {
@@ -137,6 +145,26 @@ export function SpeakableText({
       if (canFallbackToSpeech) speak(text);
     }
   };
+
+  /*
+   * Stop global (§98 polit): una altra part del reader pot demanar
+   * que tots els àudios en reproducció s'aturin (p. ex. l'usuari ha
+   * premut espai durant un autoplay seqüencial). Escoltem l'event
+   * i pausem el nostre <audio> si n'estem reproduint.
+   */
+  useEffect(() => {
+    const onStop = () => {
+      if (audioRef.current) {
+        try {
+          audioRef.current.pause();
+          audioRef.current.currentTime = 0;
+        } catch { /* noop */ }
+      }
+      setActive(false);
+    };
+    window.addEventListener('kompass:speak-stop', onStop);
+    return () => window.removeEventListener('kompass:speak-stop', onStop);
+  }, []);
 
   const onActivate = () => {
     setActive(true);
@@ -157,29 +185,15 @@ export function SpeakableText({
   };
 
   /*
-   * Autoplay single-pill (§98): quan el parent passa autoPlay=true
-   * (p. ex. ExampleBeat amb deDone=true + settings.audioAutoplay), el
-   * pill es reprodueix automàticament 200ms després d'haver-se muntat
-   * o del probe de l'MP3. Es dispara un cop per combinació text+autoPlay
-   * per evitar bucles quan canvien les dependències.
+   * L'autoplay per pill individual s'ha retirat: provocava que TOTS
+   * els SpeakableText renderitzats a la pàgina (inclosos els peek i
+   * els futurs beats) disparessin els seus setTimeout simultàniament.
+   * En lloc d'això, l'orquestrador del beat (al FocusReader) fa un
+   * DOM-dispatch de clicks seqüencials amb pausa entre pills — així
+   * només sona el pill del beat actiu, i quan hi ha més d'un, en
+   * ordre. §98 polit.
    */
-  const autoPlayedRef = useRef(false);
-  useEffect(() => {
-    if (!autoPlay) {
-      autoPlayedRef.current = false;
-      return undefined;
-    }
-    if (autoPlayedRef.current) return undefined;
-    // Esperem que mp3Probed o canFallbackToSpeech tinguin algun valor
-    // vàlid (si cap dels dos, no podem fer res i saltem).
-    if (!hasPrerecorded && !canFallbackToSpeech && mp3Probed) return undefined;
-    const t = window.setTimeout(() => {
-      autoPlayedRef.current = true;
-      onActivate();
-    }, 200);
-    return () => window.clearTimeout(t);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [autoPlay, hasPrerecorded, canFallbackToSpeech, mp3Probed]);
+  void autoPlay; // Prop reservada per si es vol tornar a una UX single-pill
 
   return (
     <Tag

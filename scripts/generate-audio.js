@@ -152,10 +152,13 @@ function escapeXml(text) {
 }
 
 function buildSSML(text) {
-  // Per a veus Dragon HD, no cal embolcallar amb prosody — el motor ja fa
-  // una cadència expressiva per si mateix. Si més endavant volem aferir
-  // ritme (p. ex. frenar per A1 principiants), afegim <prosody rate="0.92">.
-  return `<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="de-DE"><voice name="${VOICE}">${escapeXml(text)}</voice></speak>`;
+  // Per a veus Dragon HD multilingües (Seraphina:DragonHDLatestNeural),
+  // cal un <lang xml:lang="de-DE"> explícit dins del <voice>; si no,
+  // el motor detecta idioma automàticament i en strings curts i
+  // ambigus (p. ex. "Was?", que en anglès existeix com a past de "to be")
+  // aplica fonètica anglesa. Forçar-ho garanteix pronúncia alemanya.
+  // Ref: https://learn.microsoft.com/azure/ai-services/speech-service/speech-synthesis-markup-voice#adjust-speaking-languages
+  return `<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="de-DE"><voice name="${VOICE}"><lang xml:lang="de-DE">${escapeXml(text)}</lang></voice></speak>`;
 }
 
 // ─── Crida Azure REST ─────────────────────────────────────────────────────

@@ -76,6 +76,88 @@ function hasInlineSpeakable(text) {
   return typeof text === 'string' && text.includes('!!');
 }
 
+/*
+ * Hook d'orquestració d'autoplay seqüencial de pills dins d'un beat.
+ * §98 polit (refactor autoplay).
+ *
+ * Quan `shouldStart` passa a true, cerca els elements `.kf-speak` dins
+ * del containerRef i els reprodueix **seqüencialment**: clica el primer,
+ * espera l'event `kompass:speakable-ended` o un timeout de seguretat,
+ * fa pausa de `gapMs` ms, i continua. Entre pills fem una pausa més
+ * generosa (per defecte 400 ms) perquè l'usuari pugui digerir cada un.
+ *
+ * Es cancel·la automàticament si:
+ *   - shouldStart passa a false (beat deixa de ser current, es canvia
+ *     de beat, el settings canvia).
+ *   - El component es desmunta.
+ *   - Arriba un event `kompass:speak-stop` global (p. ex. barra d'espai).
+ */
+function useBeatAutoPlaySequence(containerRef, shouldStart, gapMs = 400) {
+  useEffect(() => {
+    if (!shouldStart) return undefined;
+    const container = containerRef.current;
+    if (!container) return undefined;
+    const pills = Array.from(container.querySelectorAll('.kf-speak'));
+    if (pills.length === 0) return undefined;
+
+    let cancelled = false;
+    const onStop = () => { cancelled = true; };
+    window.addEventListener('kompass:speak-stop', onStop);
+
+    function wait(ms) {
+      return new Promise((resolve) => {
+        const t = window.setTimeout(resolve, ms);
+        // Si cancel·lem, resolgues immediatament
+        const cancel = () => { window.clearTimeout(t); resolve(); };
+        if (cancelled) cancel();
+      });
+    }
+
+    function waitForEnded() {
+      return new Promise((resolve) => {
+        let done = false;
+        const onEnd = () => {
+          if (done) return;
+          done = true;
+          window.removeEventListener('kompass:speakable-ended', onEnd);
+          resolve();
+        };
+        window.addEventListener('kompass:speakable-ended', onEnd);
+        // Salvaguarda: si per algun motiu l'event no arriba (p. ex. el
+        // fallback de Web Speech, que no emet 'ended'), resolgues al cap
+        // d'un temps raonable. Mai quedem enganxats.
+        window.setTimeout(() => {
+          if (done) return;
+          done = true;
+          window.removeEventListener('kompass:speakable-ended', onEnd);
+          resolve();
+        }, 6000);
+      });
+    }
+
+    (async () => {
+      // Delay inicial perquè l'usuari vegi el beat abans que comenci a sonar.
+      await wait(250);
+      for (let i = 0; i < pills.length; i++) {
+        if (cancelled) return;
+        pills[i].click();
+        await waitForEnded();
+        if (cancelled) return;
+        if (i < pills.length - 1) await wait(gapMs);
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+      window.removeEventListener('kompass:speak-stop', onStop);
+      // Dispara un stop perquè si hi havia un àudio sonant, es pausi.
+      window.dispatchEvent(new CustomEvent('kompass:speak-stop'));
+    };
+    // containerRef és un ref; no cal ser dependència.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [shouldStart, gapMs]);
+}
+
 function computeBlocks(steps) {
   // Un "bloc" pedagògic = un narrative o synthesis que obre una secció
   // nova (primer del topic, o vingut després d'un exercise) + tots els
@@ -377,24 +459,19 @@ function ExampleBeat({
   const [deDone, setDeDone] = useState(!typewriterActive);
   useEffect(() => { setDeDone(!typewriterActive); }, [typewriterActive, beat]);
   const hasPills = hasInlineSpeakable(beat.ex.de);
-  // Autoplay del wrapper: quan el typewriter acaba i l'usuari té el
-  // setting actiu, disparem la reproducció. Només aplicable si NO hi ha
-  // pills interiors (multi-pill seria simultani i soroll).
-  const triggerAutoPlay = audioAutoplay && deDone && !hasPills;
+  const containerRef = useRef(null);
+  useBeatAutoPlaySequence(containerRef, audioAutoplay && deDone);
   return (
     <>
       {showKicker ? <BeatKicker step={step} stepIdx={stepIdx} beatKicker={step.id} /> : null}
-      <div className="kf-beat-ex">
+      <div className="kf-beat-ex" ref={containerRef}>
         <span className="kf-marker">Exemple {beat.idx} / {beat.total}</span>
         {deDone ? (
           hasPills ? (
             <p className="kf-beat-ex-de">{parseInline(beat.ex.de)}</p>
           ) : (
             <p className="kf-beat-ex-de">
-              <SpeakableText
-                text={stripRichMarkers(beat.ex.de)}
-                autoPlay={triggerAutoPlay}
-              >
+              <SpeakableText text={stripRichMarkers(beat.ex.de)}>
                 {parseInline(beat.ex.de)}
               </SpeakableText>
             </p>
@@ -432,19 +509,17 @@ function PronBeat({
   const tab = beat.tab;
   const [noteDone, setNoteDone] = useState(!typewriterActive);
   useEffect(() => { setNoteDone(!typewriterActive); }, [typewriterActive, beat]);
-  // Autoplay del pronom "gran": es dispara quan entra al beat. L'exemple
-  // queda amb clic manual per no sobrecarregar acústicament l'usuari.
-  const pronAutoPlay = audioAutoplay && !hasInlineSpeakable(tab.pron);
+  const containerRef = useRef(null);
+  // L'autoplay del beat de pronom inclou tots els pills del contenidor
+  // (pron + example si ja és visible), en ordre seqüencial amb pausa.
+  useBeatAutoPlaySequence(containerRef, audioAutoplay && noteDone);
   return (
     <>
       {showKicker ? <BeatKicker step={step} stepIdx={stepIdx} beatKicker={step.id} /> : null}
-      <div className="kf-beat-pron">
+      <div className="kf-beat-pron" ref={containerRef}>
         <span className="kf-marker">Pronom</span>
         <h2 className="kf-beat-pron-huge">
-          <SpeakableText
-            text={stripRichMarkers(tab.pron)}
-            autoPlay={pronAutoPlay}
-          >
+          <SpeakableText text={stripRichMarkers(tab.pron)}>
             {parseInline(tab.pron)}
           </SpeakableText>
         </h2>
@@ -993,9 +1068,9 @@ function BeatBody({
     case 'rule':
       return <RuleBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed }} />;
     case 'example':
-      return <ExampleBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay: settings.audioAutoplay }} />;
+      return <ExampleBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay: isCurrent && settings.audioAutoplay }} />;
     case 'pron':
-      return <PronBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay: settings.audioAutoplay }} />;
+      return <PronBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay: isCurrent && settings.audioAutoplay }} />;
     case 'pair':
       return <PairBeat {...{ beat, step, stepIdx, showKicker }} />;
     case 'compare':
@@ -1278,6 +1353,12 @@ export function FocusReader({ topic }) {
 
       if (e.key === 'Escape') {
         e.preventDefault();
+        // Si som a focus mode, Esc el desactiva en comptes de tancar
+        // el reader — l'usuari veu de nou la UI sense perdre la lliçó.
+        if (settings.focusMode) {
+          useSettingsStore.getState().setFocusMode(false);
+          return;
+        }
         closeReader();
         return;
       }
@@ -1302,13 +1383,14 @@ export function FocusReader({ topic }) {
         return;
       }
 
-      // Barra d'espai: pausa/reprèn la barra d'auto-play (§87). Només
-      // activa quan autoPlay està encès i tenim la barra visible.
+      // Barra d'espai: pausa/reprèn la barra d'auto-play (§87) i
+      // atura qualsevol àudio en reproducció (§98 polit). Quan autoPlay
+      // no està encès, l'únic que fa l'espai és aturar l'àudio.
       if ((e.key === ' ' || e.code === 'Space') && !e.ctrlKey && !e.metaKey && !e.altKey) {
         if (inInput) return;
-        if (!settings.autoPlay) return;
         e.preventDefault();
-        setAutoPlayPaused((v) => !v);
+        window.dispatchEvent(new CustomEvent('kompass:speak-stop'));
+        if (settings.autoPlay) setAutoPlayPaused((v) => !v);
         return;
       }
 
@@ -1321,6 +1403,15 @@ export function FocusReader({ topic }) {
         if (inInput) return;
         e.preventDefault();
         navigate(`/temari?focus=${topic.id}`);
+        return;
+      }
+
+      // "f" toggle mode focus/no distraccions (§103). Amaga header, peu,
+      // sidebar, counter i barra d'autoplay perquè només resti el contingut.
+      if ((e.key === 'f' || e.key === 'F') && !e.ctrlKey && !e.metaKey && !e.altKey) {
+        if (inInput) return;
+        e.preventDefault();
+        useSettingsStore.getState().toggleFocusMode();
         return;
       }
 
@@ -1552,7 +1643,7 @@ export function FocusReader({ topic }) {
 
   return (
     <div
-      className="kf-root"
+      className={`kf-root${settings.focusMode ? ' kf-focus-mode' : ''}`}
       ref={rootRef}
       onWheel={onWheel}
     >
@@ -1880,6 +1971,12 @@ export function FocusReader({ topic }) {
           </button>
         </div>
       </div>
+
+      {settings.focusMode ? (
+        <div className="kf-focus-hint" aria-hidden="true">
+          Mode focus · <kbd>f</kbd> o <kbd>Esc</kbd> per sortir
+        </div>
+      ) : null}
 
       <ReaderSettingsDrawer
         open={drawerOpen}

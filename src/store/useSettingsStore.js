@@ -39,6 +39,10 @@ export const DEFAULT_SETTINGS = {
   audioAutoplay: false,
   audioSpeed: 1.0,
   audioVoice: 'seraphina',
+  // Focus mode · §103: oculta header, peu, sidebar, counter i barra
+  // d'autoplay — només resta el contingut central. Toggle amb "f" o al
+  // drawer de Settings.
+  focusMode: false,
 };
 
 export const useSettingsStore = create(
@@ -72,6 +76,9 @@ export const useSettingsStore = create(
         set({ audioSpeed: Math.min(1.2, Math.max(0.8, isNaN(n) ? 1.0 : n)) });
       },
       setAudioVoice: (audioVoice) => set({ audioVoice: String(audioVoice) }),
+      setFocusMode: (focusMode) => set({ focusMode: Boolean(focusMode) }),
+      toggleFocusMode: () =>
+        set((s) => ({ focusMode: !s.focusMode })),
 
       update: (patch) => set(patch),
       reset: () => set({ ...DEFAULT_SETTINGS }),
@@ -121,6 +128,7 @@ export function useSettings() {
     audioAutoplay: s.audioAutoplay,
     audioSpeed: s.audioSpeed,
     audioVoice: s.audioVoice,
+    focusMode: s.focusMode,
   }));
 }
 
