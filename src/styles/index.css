@@ -1397,11 +1397,17 @@
   position: relative;
   display: inline;
   cursor: pointer;
-  padding: 0 0.18em 0.05em;
+  /* Padding simètric vertical perquè el pill quedi centrat respecte les
+     lletres altes (el 0.05em inicial només per sota desequilibrava el
+     conjunt). Les ascendents i descendents ara respiren igual. */
+  padding: 0.08em 0.18em;
   margin: 0 -0.02em;
   border-radius: 0.25em;
   background: rgb(var(--color-reader-paper-2) / 0.75);
-  box-shadow: inset 0 -2px 0 rgb(var(--color-reader-ink-2) / 0.5);
+  /* Subratllat discret · §98 polit: opacitat reduïda 0.5 → 0.22 perquè
+     no domini el text. Un cop hi fas hover, puja a ink (1.0) i es fa
+     clarament visible. */
+  box-shadow: inset 0 -2px 0 rgb(var(--color-reader-ink-2) / 0.22);
   transition:
     background-color var(--duration-fast) var(--ease-standard),
     box-shadow var(--duration-fast) var(--ease-standard);

@@ -23,7 +23,7 @@ import {
   resolveTypewriterSpeed,
   prefersReducedMotion,
 } from '@/lib/reader/beatTransitions.js';
-import { parseInline } from '@/lib/reader/parseInline.js';
+import { parseInline, stripRichMarkers } from '@/lib/reader/parseInline.js';
 import { Typed } from '@/components/reader/Typed.jsx';
 import { SpeakableText } from '@/components/reader/SpeakableText.jsx';
 import { ReaderSettingsDrawer } from '@/components/reader/ReaderSettingsDrawer.jsx';
@@ -361,7 +361,9 @@ function ExampleBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed 
         <span className="kf-marker">Exemple {beat.idx} / {beat.total}</span>
         {deDone ? (
           <p className="kf-beat-ex-de">
-            <SpeakableText text={beat.ex.de} />
+            <SpeakableText text={stripRichMarkers(beat.ex.de)}>
+              {parseInline(beat.ex.de)}
+            </SpeakableText>
           </p>
         ) : (
           <Typed
@@ -394,7 +396,9 @@ function PronBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed }) 
       <div className="kf-beat-pron">
         <span className="kf-marker">Pronom</span>
         <h2 className="kf-beat-pron-huge">
-          <SpeakableText text={tab.pron} />
+          <SpeakableText text={stripRichMarkers(tab.pron)}>
+            {parseInline(tab.pron)}
+          </SpeakableText>
         </h2>
         {tab.gloss ? <p className="kf-beat-pron-gloss">= {parseInline(tab.gloss)}</p> : null}
         {tab.note ? (
@@ -409,7 +413,11 @@ function PronBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed }) 
         ) : null}
         {noteDone && tab.example ? (
           <div className="kf-beat-pron-ex kf-fade-in">
-            <div className="de"><SpeakableText text={tab.example.de} /></div>
+            <div className="de">
+              <SpeakableText text={stripRichMarkers(tab.example.de)}>
+                {parseInline(tab.example.de)}
+              </SpeakableText>
+            </div>
             {tab.example.ca ? <div className="ca">{parseInline(tab.example.ca)}</div> : null}
           </div>
         ) : null}
@@ -458,7 +466,11 @@ function CompareBeat({ beat, step, stepIdx, showKicker, tableAnim }) {
               >
                 <td>{r.es}</td>
                 <td>{r.ca}</td>
-                <td className="de"><SpeakableText text={r.de} /></td>
+                <td className="de">
+                  <SpeakableText text={stripRichMarkers(r.de)}>
+                    {parseInline(r.de)}
+                  </SpeakableText>
+                </td>
                 <td>{r.en}</td>
               </tr>
             ))}
