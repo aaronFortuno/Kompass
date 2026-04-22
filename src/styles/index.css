@@ -1594,22 +1594,34 @@ html.dark .k-mark {
 /*
  * Mode focus · §103
  *
- * Amaga header, peu, sidebar, counter i barra d'autoplay — només
- * queda el contingut central del reader. Activable amb la tecla "f"
- * o el toggle del drawer. Per mantenir l'usuari informat que encara
- * pot navegar, deixem una petita tira de hint a baix; Esc i "f"
- * tornen al mode normal.
+ * Amaga header, peu, sidebar, counter i barra d'autoplay amb una
+ * transició suau (opacity + pointer-events + visibility) perquè
+ * l'entrada i la sortida del mode siguin fade-like en comptes del
+ * display:none abrupt d'abans. Activable amb la tecla "f" o el toggle
+ * del drawer. Esc i "f" tornen al mode normal.
  */
+.kf-head,
+.kf-foot,
+.kf-sidebar,
+.kf-body-counter,
+.kf-autoplay-bar {
+  transition:
+    opacity var(--duration-base) var(--ease-standard),
+    visibility var(--duration-base) var(--ease-standard);
+}
 .kf-root.kf-focus-mode .kf-head,
 .kf-root.kf-focus-mode .kf-foot,
 .kf-root.kf-focus-mode .kf-sidebar,
 .kf-root.kf-focus-mode .kf-body-counter,
 .kf-root.kf-focus-mode .kf-autoplay-bar {
-  display: none !important;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 .kf-root.kf-focus-mode .kf-body {
   padding-top: 40px;
   padding-bottom: 40px;
+  transition: padding var(--duration-base) var(--ease-standard);
 }
 .kf-focus-hint {
   position: fixed;

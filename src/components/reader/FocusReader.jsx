@@ -1632,8 +1632,16 @@ export function FocusReader({ topic }) {
   const [autoPlayBarActive, setAutoPlayBarActive] = useState(false);
   const [autoPlayPaused, setAutoPlayPaused] = useState(false);
 
+  // §98 polit: si l'usuari té audioAutoplay on i el beat actual conté
+  // àudio, l'auto-advance del beat és la continuació natural del flux
+  // (l'usuari espera que, un cop sonat tot, es passi sol al pas
+  // següent). Així no cal tenir autoPlay explícit encès en paral·lel —
+  // es deriva automàticament quan hi ha contingut audible.
+  const beatHasAudio =
+    settings.audioAutoplay && countSpeakablesInBeat(beat) > 0;
+  const effectiveAutoPlay = settings.autoPlay || beatHasAudio;
   const autoPlayEligible =
-    settings.autoPlay &&
+    effectiveAutoPlay &&
     !isFullMode &&
     !splashVisible &&
     !drawerOpen &&
@@ -2049,6 +2057,15 @@ export function FocusReader({ topic }) {
                   <kbd>t</kbd>
                 </span>
                 <span className="lbl">temari</span>
+              </span>
+              <span
+                className={'kgroup' + (settings.focusMode ? ' kf-keyhint-active' : '')}
+                title={settings.focusMode ? 'Mode focus activat (f o Esc per sortir)' : 'Mode focus · amaga UI'}
+              >
+                <span className="kgroup-keys">
+                  <kbd>f</kbd>
+                </span>
+                <span className="lbl">{settings.focusMode ? 'focus' : 'focus'}</span>
               </span>
               <span className="kgroup">
                 <span className="kgroup-keys">

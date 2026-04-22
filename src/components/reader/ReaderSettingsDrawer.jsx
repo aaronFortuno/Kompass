@@ -169,6 +169,20 @@ export function ReaderSettingsDrawer({ open, onClose }) {
             </SettingRow>
 
             <SettingRow
+              id="drawer-focus-mode"
+              icon={Focus}
+              title="Mode focus"
+              help="Amaga capçalera, peu i índex. Drecera: tecla f."
+            >
+              <Toggle
+                checked={focusMode}
+                onChange={setFocusMode}
+                label="Mode focus"
+                id="drawer-focus-mode"
+              />
+            </SettingRow>
+
+            <SettingRow
               id="drawer-typewriter"
               icon={Film}
               title={t('settings.reading.typewriter')}
@@ -295,20 +309,6 @@ export function ReaderSettingsDrawer({ open, onClose }) {
                   {audioSpeed.toFixed(2)}×
                 </span>
               </div>
-            </SettingRow>
-
-            <SettingRow
-              id="drawer-focus-mode"
-              icon={Focus}
-              title="Mode focus"
-              help="Amaga capçalera, peu i índex. Drecera: tecla f."
-            >
-              <Toggle
-                checked={focusMode}
-                onChange={setFocusMode}
-                label="Mode focus"
-                id="drawer-focus-mode"
-              />
             </SettingRow>
 
             <SettingRow

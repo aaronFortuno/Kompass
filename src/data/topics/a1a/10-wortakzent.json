@@ -107,7 +107,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Paranys habituals\n\n**1. Buscar un accent escrit que no hi és.**\nA diferència del català i el castellà, l'alemany no marca mai l'accent ortogràficament. No perdis el temps buscant tildes: no n'hi ha. Has de confiar en les regles i l'exposició.\n\n**2. Traslladar l'accent castellà / català a l'alemany.**\nParaules que s'assemblen a paraules romàniques poden fer-te caure: _Telefon_ no s'accentua com _teléfono_ (esdrúixol en castellà, pla en català), sinó a la darrera síl·laba en alemany (Tele**fon**). És un préstec grecollatí i manté l'accent original sobre _-fon_. De fet, la regla general (primera síl·laba) aplica a la majoria de paraules alemanyes d'origen germànic. Per a préstecs recents (llatinismes, anglicismes), hi ha més variabilitat.\n\n**3. Accentuar els prefixos no accentuats.**\nDir _**be**kommen_ o _**ver**stehen_ és un error clàssic. El prefix _be-, ge-, ver-_ i companyia és sempre una síl·laba feble. L'accent es queda al verb: be**kom**men, ver**ste**hen.\n\n**4. No accentuar els prefixos separables.**\nL'altre error de sentit contrari: pronunciar _ein**kau**fen_ amb l'accent al verb. Els prefixos separables (_ab-, an-, auf-, ein-, mit-, vor-, weg-_...) **sí** porten l'accent: **ein**kaufen, **an**kommen.\n\n**5. Accentuar el final del compost.**\nLa temptació de dir _Wohn**zim**mer_ o _Bau**stel**le_ és real, sobretot perquè el segon element sona com una paraula \"completa\". En alemany la força va a l'esquerra: **Wohn**zimmer, **Bau**stelle.\n\n**6. Creure que la flexió mou l'accent.**\n_Ich arbeite_ o _du arbeitest_ tenen l'accent al mateix lloc que _arbeiten_: a **ar-**. No és com el castellà _trabajo, trabajamos_, on la vocal tònica canvia de posició. En alemany, un cop saps l'accent del verb base, ja el tens per tota la conjugació."
+          "body": "#### Paranys habituals\n\n**1. Buscar un accent escrit que no hi és.**\nA diferència del català i el castellà, l'alemany no marca mai l'accent ortogràficament. No perdis el temps buscant tildes: no n'hi ha. Has de confiar en les regles i l'exposició.\n\n**2. Traslladar l'accent castellà / català a l'alemany.**\nParaules que s'assemblen a paraules romàniques poden fer-te caure: _Telefon_ no s'accentua com _teléfono_ (esdrúixol en castellà, pla en català), sinó a la darrera síl·laba en alemany (!!Tele**fon**!!). És un préstec grecollatí i manté l'accent original sobre _-fon_. De fet, la regla general (primera síl·laba) aplica a la majoria de paraules alemanyes d'origen germànic. Per a préstecs recents (llatinismes, anglicismes), hi ha més variabilitat.\n\n**3. Accentuar els prefixos no accentuats.**\nDir _**be**kommen_ o _**ver**stehen_ és un error clàssic. El prefix _be-, ge-, ver-_ i companyia és sempre una síl·laba feble. L'accent es queda al verb: be**kom**men, ver**ste**hen.\n\n**4. No accentuar els prefixos separables.**\nL'altre error de sentit contrari: pronunciar _ein**kau**fen_ amb l'accent al verb. Els prefixos separables (_ab-, an-, auf-, ein-, mit-, vor-, weg-_...) **sí** porten l'accent: **ein**kaufen, **an**kommen.\n\n**5. Accentuar el final del compost.**\nLa temptació de dir _Wohn**zim**mer_ o _Bau**stel**le_ és real, sobretot perquè el segon element sona com una paraula \"completa\". En alemany la força va a l'esquerra: **Wohn**zimmer, **Bau**stelle.\n\n**6. Creure que la flexió mou l'accent.**\n_Ich arbeite_ o _du arbeitest_ tenen l'accent al mateix lloc que _arbeiten_: a **ar-**. No és com el castellà _trabajo, trabajamos_, on la vocal tònica canvia de posició. En alemany, un cop saps l'accent del verb base, ja el tens per tota la conjugació."
         }
       ]
     },
@@ -153,7 +153,7 @@
             ["**er-**", "!!er**zäh**len!! (explicar)", "al verb"],
             ["**ent-**", "!!ent**schul**digen!! (disculpar)", "al verb"],
             ["**emp-**", "!!emp**feh**len!! (recomanar)", "al verb"],
-            ["**miss-**", "missver**ste**hen (malentendre)", "al verb"],
+            ["**miss-**", "!!missver**ste**hen!! (malentendre)", "al verb"],
             ["**zer-**", "!!zer**stö**ren!! (destruir)", "al verb"]
           ],
           "caption": "Aquests prefixos són **inseparables** i deixen l'accent a l'arrel del verb."
@@ -197,8 +197,8 @@
           "rows": [
             ["!!das **Wohn**zimmer!!", "wohnen + Zimmer", "a l'esquerra (regla)"],
             ["!!die **Bau**stelle!!", "Bau + Stelle", "a l'esquerra (regla)"],
-            ["der Fa**mi**lienname", "Familie + Name", "a l'esquerra (sobre _Familie_)"],
-            ["die Tele**fon**nummer", "Telefon + Nummer", "a l'esquerra (sobre _Telefon_)"],
+            ["!!der Fa**mi**lienname!!", "Familie + Name", "a l'esquerra (sobre _Familie_)"],
+            ["!!die Tele**fon**nummer!!", "Telefon + Nummer", "a l'esquerra (sobre _Telefon_)"],
             ["!!das Jahr**hun**dert!!", "Jahr + hundert", "a la dreta (excepció numèrica)"],
             ["!!das Jahr**tau**send!!", "Jahr + tausend", "a la dreta (excepció numèrica)"],
             ["!!das Jahr**zehnt**!!", "Jahr + zehn", "a la dreta (excepció numèrica)"]

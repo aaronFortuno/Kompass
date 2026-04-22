@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-22T19:00:42.931Z",
-  "totalStrings": 672,
-  "totalChars": 9686,
+  "generatedAt": "2026-04-22T19:29:17.885Z",
+  "totalStrings": 676,
+  "totalChars": 9739,
   "entries": [
     {
       "hash": "00268fc866fb94c359219a52a1110a667583166d",
@@ -914,6 +914,16 @@
         {
           "topic": "A1a-9",
           "path": "steps[1].blocks[0].body#inline[3]"
+        }
+      ]
+    },
+    {
+      "hash": "20ac1df7ce2adaf7a434f778fe619b014b7deac8",
+      "text": "die Telefonnummer",
+      "sources": [
+        {
+          "topic": "A1a-10",
+          "path": "steps[13].blocks[4].rows[3][0]#inline[0]"
         }
       ]
     },
@@ -1846,6 +1856,16 @@
         {
           "topic": "A1a-6",
           "path": "steps[6].blocks[5].body#inline[0]"
+        }
+      ]
+    },
+    {
+      "hash": "40314f882822f7fccd78a36ac4c977000e334136",
+      "text": "Telefon",
+      "sources": [
+        {
+          "topic": "A1a-10",
+          "path": "steps[8].blocks[0].body#inline[0]"
         }
       ]
     },
@@ -7490,6 +7510,16 @@
       ]
     },
     {
+      "hash": "f8883e53b2118ec1c978f46993a6d34c77db10df",
+      "text": "missverstehen",
+      "sources": [
+        {
+          "topic": "A1a-10",
+          "path": "steps[13].blocks[1].rows[6][1]#inline[0]"
+        }
+      ]
+    },
+    {
       "hash": "f8e9c756eaa2f8e3b6b12eca79b37e21217cf909",
       "text": "Sonntag",
       "sources": [
@@ -7644,6 +7674,16 @@
         {
           "topic": "A1a-4",
           "path": "steps[8].blocks[0].body#inline[2]"
+        }
+      ]
+    },
+    {
+      "hash": "fe0c849b29594c500da17aae5563c233b7c32d94",
+      "text": "der Familienname",
+      "sources": [
+        {
+          "topic": "A1a-10",
+          "path": "steps[13].blocks[4].rows[2][0]#inline[0]"
         }
       ]
     },

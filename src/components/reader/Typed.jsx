@@ -116,6 +116,12 @@ export function Typed({
           && nextStop < stopPoints.length
           && stopPoints[nextStop].atN === c
         ) {
+          // Cedim un tick al loop d'esdeveniments perquè React commiti
+          // el render pendent (setN acabat de fer) abans que el caller
+          // intenti llegir el DOM. Sense això, el pill pot no existir
+          // encara quan es vol clicar i la cadena d'àudios es perd.
+          await sleep(16);
+          if (cancelled) return;
           try {
             await Promise.resolve(
               onSpeakableRef.current(stopPoints[nextStop].idx, stopPoints.length),
