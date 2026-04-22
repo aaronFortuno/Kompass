@@ -478,8 +478,13 @@ export function ReaderExerciseEngine({ exercise, peek = false, navRef = null }) 
         if (d === -1) {
           if (finished) {
             // Tornem a mode preguntes a l'última pregunta (per si vol
-            // repassar).
+            // repassar). IMPORTANT: reiniciem attemptRecorded perquè,
+            // si l'usuari modifica la resposta i torna a acabar,
+            // l'attempt s'ha de registrar de nou (si no, el store
+            // quedava congelat amb l'intent anterior, fent que es
+            // "perdés" o aparegués inconsistent el progrés).
             setFinished(false);
+            attemptRecorded.current = false;
             setItemIdx(items.length - 1);
             return true;
           }

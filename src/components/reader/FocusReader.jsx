@@ -184,12 +184,22 @@ function estimateBeatChars(beat) {
 
 /*
  * Calcula la durada real de l'animació del temporitzador d'auto-advance.
- * Pren el setting autoPlayDelay com a referència per a un beat "típic"
- * de 50 caràcters, i escala linealment segons els caràcters reals.
- * Clamp a [1.2s, 12s] perquè un beat buit no avanci instantani i un de
- * molt llarg no s'aturi eternament (l'usuari pot prémer espai/fletxa).
+ *
+ * El setting autoPlayDelay és ara un NIVELL 1–5 (ràpid–lent) coherent
+ * amb el slider del typewriter. Aquí el convertim a segons base per a
+ * un beat "típic" de 50 caràcters i escalem linealment segons els
+ * caràcters reals. Clamp a [1.2s, 12s] perquè un beat buit no avanci
+ * instantani i un de molt llarg no s'aturi eternament.
  */
-function computeAutoPlayDuration(beat, baseSeconds) {
+const AUTOPLAY_LEVEL_SECONDS = {
+  1: 1.8,
+  2: 2.4,
+  3: 3.0,
+  4: 4.0,
+  5: 5.5,
+};
+function computeAutoPlayDuration(beat, level) {
+  const baseSeconds = AUTOPLAY_LEVEL_SECONDS[level] ?? 3.0;
   const chars = estimateBeatChars(beat);
   if (!chars) return Math.max(1.2, baseSeconds);
   const factor = chars / 50;

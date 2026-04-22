@@ -254,18 +254,21 @@ export function ReaderSettingsDrawer({ open, onClose }) {
               disabled={!autoPlay}
             >
               <div className="flex items-center gap-2">
+                <span className="font-mono text-[9px] text-reader-muted uppercase tracking-wider">
+                  {t('settings.reading.typewriterSpeedFast')}
+                </span>
                 <input
                   type="range"
                   min={1}
-                  max={10}
+                  max={5}
                   step={1}
                   value={autoPlayDelay}
                   onChange={(e) => setAutoPlayDelay(Number(e.target.value))}
                   aria-labelledby="drawer-autoplay-delay"
-                  className="w-28 accent-reader-ink"
+                  className="w-24 accent-reader-ink"
                 />
-                <span className="font-mono text-[10px] text-reader-ink-2 w-8 text-right">
-                  {autoPlayDelay}s
+                <span className="font-mono text-[9px] text-reader-muted uppercase tracking-wider">
+                  {t('settings.reading.typewriterSpeedSlow')}
                 </span>
               </div>
             </SettingRow>

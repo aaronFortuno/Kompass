@@ -13,7 +13,6 @@
     {
       "id": "intro",
       "kind": "narrative",
-      "heading": "Context i motivació",
       "lead": "En alemany, ==l'ordre de les paraules no és lliure==.",
       "body": "Hi ha una regla quasi màgica que governa gairebé totes les oracions: la regla de la segona posició, el cor de la sintaxi alemanya. En català i castellà tenim molta llibertat — «Em dic Julia», «Julia em dic jo» — però en alemany el verb conjugat té un lloc fix i tota la resta s'organitza al seu voltant. La bona notícia: són molt poques regles.",
       "points": [

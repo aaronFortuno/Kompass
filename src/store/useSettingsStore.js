@@ -27,7 +27,10 @@ export const DEFAULT_SETTINGS = {
   typewriterSpeed: 3, // 1 (ràpid) – 5 (lent); vegeu beatTransitions.js
   tableAnim: true,
   autoPlay: false,
-  autoPlayDelay: 3, // segons a esperar un cop revelat el beat
+  // Velocitat base d'auto-advance, 1 (ràpid) – 5 (lent). El FocusReader
+  // escala amb la llargada del beat: el nivell fixa el temps d'un beat
+  // "típic" de 50 chars. Nivell 3 = ~3s/50chars (mitjà).
+  autoPlayDelay: 3,
   // Configs d'àudio · §98
   // audioAutoplay: reprodueix automàticament l'àudio alemany dels
   //   beats a mesura que apareixen (pendent wiring sequencial amb el
@@ -66,8 +69,8 @@ export const useSettingsStore = create(
       setTableAnim: (tableAnim) => set({ tableAnim }),
       setAutoPlay: (autoPlay) => set({ autoPlay: Boolean(autoPlay) }),
       setAutoPlayDelay: (autoPlayDelay) => {
-        const n = Number(autoPlayDelay);
-        set({ autoPlayDelay: Math.min(10, Math.max(1, isNaN(n) ? 3 : n)) });
+        const n = Math.round(Number(autoPlayDelay));
+        set({ autoPlayDelay: Math.min(5, Math.max(1, isNaN(n) ? 3 : n)) });
       },
       setAudioAutoplay: (audioAutoplay) =>
         set({ audioAutoplay: Boolean(audioAutoplay) }),
