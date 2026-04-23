@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-V6",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 6,
+  "category": "vocabulary",
+  "title": "Essen und Trinken — menjar i beure",
+  "shortTitle": "Essen+Trinken",
+  "description": "Catàleg lèxic d'aliments, begudes i àpats. Verbs _essen_/_trinken_ i la fórmula _Ich möchte..._ per demanar al cafè o al restaurant.",
+  "axes": ["vocabulari-tematic"],
+  "estimatedMinutes": 15,
+  "steps": [
+    {
+      "id": "intro",
+      "kind": "narrative",
+      "heading": "Menjar i beure",
+      "lead": "Al cafè, a la fleca, al supermercat, al restaurant: totes les converses passen per aquest vocabulari.",
+      "body": "Trenta paraules ben triades et permeten ==demanar un esmorzar==, ==dir el que t'agrada== i ==comprar a la fleca==. I ja en coneixes moltes: _Brot, Käse, Kaffee_ no són gaire diferents del català.",
+      "callout": {
+        "variant": "info",
+        "title": "Reutilitzem el que saps",
+        "body": "Els verbs _mögen_ (vist abans) i _essen/trinken_ els combinem amb el vocabulari nou: _Ich esse gern Käse_ (M'agrada menjar formatge). No cal gramàtica nova, només ampliar el dipòsit lèxic."
+      }
+    },
+    {
+      "id": "alimentos-base",
+      "kind": "narrative",
+      "heading": "Aliments bàsics (I)",
+      "lead": "Pa, ous, làctics: els pilars de la cuina alemanya.",
+      "tabs": [
+        { "pron": "das Brot", "gloss": "el pa", "note": "Neutre. L'alemany té centenars de tipus de pa; aquí la paraula genèrica.", "example": { "de": "Ich esse Brot zum Frühstück.", "ca": "Menjo pa per esmorzar." }, "image": { "src": "/Kompass/images/a1a/V6/brot-640.webp", "srcset": "/Kompass/images/a1a/V6/brot-640.webp 640w, /Kompass/images/a1a/V6/brot-1280.webp 1280w", "sizes": "(max-width: 640px) 50vw, 200px", "alt": "Un pa rústic alemany sobre fusta", "width": 200, "credit": "Monika Grabkowska · Unsplash · Unsplash License" } },
+        { "pron": "das Brötchen", "gloss": "el panet", "note": "Neutre. Diminutiu de _Brot_ (amb _-chen_, sempre neutre). És el \"panet\" que demanes a la fleca.", "example": { "de": "Zwei Brötchen, bitte.", "ca": "Dos panets, si us plau." } },
+        { "pron": "der Käse", "gloss": "el formatge", "note": "Masculí. No té plural habitual (es compta amb _Sorten_: tipus de formatge).", "example": { "de": "Der Käse ist aus Bayern.", "ca": "El formatge és de Baviera." }, "image": { "src": "/Kompass/images/a1a/V6/kaese-640.webp", "srcset": "/Kompass/images/a1a/V6/kaese-640.webp 640w, /Kompass/images/a1a/V6/kaese-1280.webp 1280w", "sizes": "(max-width: 640px) 50vw, 200px", "alt": "Tascons de formatge sobre fusta", "width": 200, "credit": "Paolo Boaretto · Unsplash · Unsplash License" } },
+        { "pron": "die Butter", "gloss": "la mantega", "note": "Femení. Sense plural en ús normal.", "example": { "de": "Butter auf das Brot, bitte.", "ca": "Mantega al pa, si us plau." } },
+        { "pron": "das Ei", "gloss": "l'ou", "note": "Neutre. Plural irregular: _die Eier_ (pronunciat \"aier\").", "example": { "de": "Zwei Eier, bitte.", "ca": "Dos ous, si us plau." } },
+        { "pron": "der Joghurt", "gloss": "el iogurt", "note": "Masculí (també de vegades neutre a Àustria). Préstec del turc via anglès.", "example": { "de": "Ich esse einen Joghurt.", "ca": "Menjo un iogurt." } },
+        { "pron": "die Wurst", "gloss": "la salsitxa", "note": "Femení. Plural irregular _die Würste_ (amb umlaut).", "example": { "de": "Die Wurst ist lecker.", "ca": "La salsitxa és deliciosa." }, "image": { "src": "/Kompass/images/a1a/V6/wurst-640.webp", "srcset": "/Kompass/images/a1a/V6/wurst-640.webp 640w, /Kompass/images/a1a/V6/wurst-1280.webp 1280w", "sizes": "(max-width: 640px) 50vw, 200px", "alt": "Dues salsitxes alemanyes amb mostassa", "width": 200, "credit": "Louis Hansel · Unsplash · Unsplash License" } },
+        { "pron": "der Apfel", "gloss": "la poma", "note": "Masculí. Plural irregular _die Äpfel_ (amb umlaut).", "example": { "de": "Ich esse einen Apfel jeden Tag.", "ca": "Menjo una poma cada dia." }, "image": { "src": "/Kompass/images/a1a/V6/apfel-essen-640.webp", "srcset": "/Kompass/images/a1a/V6/apfel-essen-640.webp 640w, /Kompass/images/a1a/V6/apfel-essen-1280.webp 1280w", "sizes": "(max-width: 640px) 50vw, 200px", "alt": "Una poma vermella sobre fons blanc", "width": 200, "credit": "Tobi · Unsplash · Unsplash License" } }
+      ]
+    },
+    {
+      "id": "alimentos-mas",
+      "kind": "narrative",
+      "heading": "Aliments bàsics (II)",
+      "lead": "Carn, peix, verdures, dolços.",
+      "tabs": [
+        { "pron": "das Fleisch", "gloss": "la carn", "note": "Neutre. Singular només (la carn genèrica).", "example": { "de": "Ich esse kein Fleisch.", "ca": "No menjo carn." } },
+        { "pron": "der Fisch", "gloss": "el peix", "note": "Masculí. Plural _die Fische_.", "example": { "de": "Fisch ist gesund.", "ca": "El peix és saludable." } },
+        { "pron": "das Gemüse", "gloss": "la verdura", "note": "Neutre. Singular col·lectiu: no es diu _die Gemüse_ per \"les verdures\", sinó _viel Gemüse_ (molta verdura).", "example": { "de": "Ich kaufe Gemüse auf dem Markt.", "ca": "Compro verdura al mercat." } },
+        { "pron": "das Obst", "gloss": "la fruita", "note": "Neutre. **Important**: _Obst_ és el **col·lectiu**, no s'usa per a una peça (per això es diu _ein Apfel_, no _ein Obst_).", "example": { "de": "Obst ist gut für die Gesundheit.", "ca": "La fruita és bona per a la salut." } },
+        { "pron": "der Reis", "gloss": "l'arròs", "note": "Masculí. Sense plural en ús normal. Pronunciat \"rais\".", "example": { "de": "Reis mit Gemüse.", "ca": "Arròs amb verdura." } },
+        { "pron": "die Nudeln", "gloss": "els fideus / la pasta", "note": "**Plural only**. Per una sola, es diu _eine Nudel_, però la versió de plat és sempre plural.", "example": { "de": "Ich liebe Nudeln mit Tomatensoße.", "ca": "M'encanten els fideus amb salsa de tomàquet." } },
+        { "pron": "der Kuchen", "gloss": "el pastís", "note": "Masculí. Plural _die Kuchen_ (igual, sense umlaut).", "example": { "de": "Oma macht den besten Kuchen.", "ca": "L'àvia fa el millor pastís." } },
+        { "pron": "der Zucker", "gloss": "el sucre", "note": "Masculí. Sense plural.", "example": { "de": "Kaffee ohne Zucker, bitte.", "ca": "Cafè sense sucre, si us plau." } },
+        { "pron": "das Salz", "gloss": "la sal", "note": "Neutre. Sense plural.", "example": { "de": "Das Essen braucht Salz.", "ca": "El menjar necessita sal." } }
+      ]
+    },
+    {
+      "id": "bebidas",
+      "kind": "narrative",
+      "heading": "Begudes",
+      "lead": "Què et poso?",
+      "tabs": [
+        { "pron": "das Wasser", "gloss": "l'aigua", "note": "Neutre. Sense plural en ús normal (_Wässer_ existeix però és poc freqüent).", "example": { "de": "Ein Glas Wasser, bitte.", "ca": "Un got d'aigua, si us plau." }, "image": { "src": "/Kompass/images/a1a/V6/wasser-640.webp", "srcset": "/Kompass/images/a1a/V6/wasser-640.webp 640w, /Kompass/images/a1a/V6/wasser-1280.webp 1280w", "sizes": "(max-width: 640px) 50vw, 200px", "alt": "Un got transparent ple d'aigua", "width": 200, "credit": "manu schwendener · Unsplash · Unsplash License" } },
+        { "pron": "der Kaffee", "gloss": "el cafè", "note": "Masculí. Plural _die Kaffees_ (tasses).", "example": { "de": "Zwei Kaffee, bitte.", "ca": "Dos cafès, si us plau." }, "image": { "src": "/Kompass/images/a1a/V6/kaffee-640.webp", "srcset": "/Kompass/images/a1a/V6/kaffee-640.webp 640w, /Kompass/images/a1a/V6/kaffee-1280.webp 1280w", "sizes": "(max-width: 640px) 50vw, 200px", "alt": "Una tassa blanca de cafè negre", "width": 200, "credit": "Nathan Dumlao · Unsplash · Unsplash License" } },
+        { "pron": "der Tee", "gloss": "el te", "note": "Masculí. Plural _die Tees_. Pronunciat \"tee\" (llarg).", "example": { "de": "Möchtest du Tee oder Kaffee?", "ca": "Vols te o cafè?" }, "image": { "src": "/Kompass/images/a1a/V6/tee-640.webp", "srcset": "/Kompass/images/a1a/V6/tee-640.webp 640w, /Kompass/images/a1a/V6/tee-1280.webp 1280w", "sizes": "(max-width: 640px) 50vw, 200px", "alt": "Una tassa de te calent amb llimona", "width": 200, "credit": "Dana Ciurumelea · Unsplash · Unsplash License" } },
+        { "pron": "die Milch", "gloss": "la llet", "note": "Femení. Sense plural habitual.", "example": { "de": "Kaffee mit Milch.", "ca": "Cafè amb llet." }, "image": { "src": "/Kompass/images/a1a/V6/milch-640.webp", "srcset": "/Kompass/images/a1a/V6/milch-640.webp 640w, /Kompass/images/a1a/V6/milch-1280.webp 1280w", "sizes": "(max-width: 640px) 50vw, 200px", "alt": "Un got transparent ple de llet", "width": 200, "credit": "Kim Leary · Unsplash · Unsplash License" } },
+        { "pron": "der Saft", "gloss": "el suc", "note": "Masculí. Plural _die Säfte_ (amb umlaut).", "example": { "de": "Ein Orangensaft, bitte.", "ca": "Un suc de taronja, si us plau." } },
+        { "pron": "das Bier", "gloss": "la cervesa", "note": "Neutre. Plural _die Biere_ (tipus de cervesa o gots).", "example": { "de": "Zwei Bier, bitte.", "ca": "Dues cerveses, si us plau." }, "image": { "src": "/Kompass/images/a1a/V6/bier-640.webp", "srcset": "/Kompass/images/a1a/V6/bier-640.webp 640w, /Kompass/images/a1a/V6/bier-1280.webp 1280w", "sizes": "(max-width: 640px) 50vw, 200px", "alt": "Un got de cervesa daurada amb escuma", "width": 200, "credit": "Gerrie van der Walt · Unsplash · Unsplash License" } },
+        { "pron": "der Wein", "gloss": "el vi", "note": "Masculí. Plural _die Weine_.", "example": { "de": "Rotwein oder Weißwein?", "ca": "Vi negre o vi blanc?" }, "image": { "src": "/Kompass/images/a1a/V6/wein-640.webp", "srcset": "/Kompass/images/a1a/V6/wein-640.webp 640w, /Kompass/images/a1a/V6/wein-1280.webp 1280w", "sizes": "(max-width: 640px) 50vw, 200px", "alt": "Una copa de vi negre sobre taula", "width": 200, "credit": "Moses Sichach · Unsplash · Unsplash License" } },
+        { "pron": "die Cola", "gloss": "la coca-cola", "note": "Femení. Invariable. També es diu _das Cola_ a Àustria.", "example": { "de": "Eine Cola, bitte.", "ca": "Una coca-cola, si us plau." } }
+      ]
+    },
+    {
+      "id": "mahlzeiten",
+      "kind": "synthesis",
+      "heading": "Els tres àpats",
+      "lead": "L'alemany té un àpat per a cada moment del dia.",
+      "body": "Els tres són **neutres** (tots porten _das_). Comparteixen l'element _-essen_ o, al primer, _-stück_ (un \"tros\" de matí). També hi ha el verb _frühstücken_ (esmorzar), un verb format a partir del substantiu.",
+      "tables": [
+        {
+          "title": "Els àpats",
+          "headers": ["Alemany", "Català", "Moment"],
+          "rows": [
+            ["!!das Frühstück!!", "l'esmorzar", "al matí"],
+            ["!!das Mittagessen!!", "el dinar", "al migdia"],
+            ["!!das Abendessen!!", "el sopar", "al vespre"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "essen-trinken-verben",
+      "kind": "narrative",
+      "heading": "Els verbs _essen_ i _trinken_",
+      "lead": "Dos verbs imprescindibles. Un té canvi vocàlic, l'altre no.",
+      "body": "_essen_ (menjar) té **canvi vocàlic** _e → i_ a 2a i 3a del singular. _trinken_ (beure) és regular.",
+      "tables": [
+        {
+          "title": "_essen_ i _trinken_ en present",
+          "headers": ["Persona", "essen", "trinken"],
+          "rows": [
+            ["ich", "!!esse!!", "!!trinke!!"],
+            ["du", "!!isst!!", "!!trinkst!!"],
+            ["er / sie / es", "!!isst!!", "!!trinkt!!"],
+            ["wir", "!!essen!!", "!!trinken!!"],
+            ["ihr", "!!esst!!", "!!trinkt!!"],
+            ["sie / Sie", "!!essen!!", "!!trinken!!"]
+          ]
+        }
+      ],
+      "callout": {
+        "variant": "warning",
+        "title": "_du isst_ i _du ist_: diferents",
+        "body": "_Du **isst**_ (amb dues _s_ i doble _t_) vol dir \"tu menges\". _Du **ist**_ no existeix, seria \"tu és\". Compte amb la diferència quan escrius!"
+      }
+    },
+    {
+      "id": "check-frases",
+      "kind": "exercise",
+      "exerciseId": "A1a-V6-ex-01",
+      "variant": "quick-check"
+    },
+    {
+      "id": "was-moechten",
+      "kind": "narrative",
+      "heading": "_Was möchten Sie?_",
+      "lead": "La pregunta que escoltaràs a cada mostrador d'Alemanya.",
+      "body": "_möchten_ és la forma cortès per \"voler\". Per ara, només cal saber respondre.",
+      "examples": [
+        { "de": "Was möchten Sie? — Ich möchte einen Kaffee, bitte.", "ca": "— Què desitja? — Voldria un cafè, si us plau.", "note": "Formal: la cambrera s'adreça amb _Sie_." },
+        { "de": "Was möchtest du? — Ich möchte einen Tee.", "ca": "— Què vols? — Voldria un te.", "note": "Informal entre amics." },
+        { "de": "Sonst noch etwas? — Nein, danke.", "ca": "— Res més? — No, gràcies.", "note": "Pregunta típica per saber si vols afegir alguna cosa a l'ordre." }
+      ],
+      "callout": {
+        "variant": "tip",
+        "title": "Plantilla per demanar",
+        "body": "**Ich möchte + [article + substantiu en acusatiu] + bitte**. Exemple: _Ich möchte **einen** Kaffee, bitte_ (masculí → _einen_). _Ich möchte **eine** Cola, bitte_ (femení → _eine_). _Ich möchte **ein** Bier, bitte_ (neutre → _ein_)."
+      }
+    },
+    {
+      "id": "pitfalls",
+      "kind": "narrative",
+      "heading": "Paranys freqüents",
+      "pitfalls": [
+        { "bad": "die Obst (les fruites)", "good": "!!das Obst!! (col·lectiu singular)", "why": "_Obst_ és sempre neutre i sempre singular. Per una fruita concreta, usa el seu nom (_Apfel, Banane_...)." },
+        { "bad": "ein Nudel (un fideu)", "good": "!!Nudeln!! (plural col·lectiu)", "why": "Els fideus/pasta s'expressen en plural: _Nudeln_. _Eine Nudel_ és una unitat, gramaticalment vàlid però absurd al plat." },
+        { "bad": "Ich esse gern der Käse", "good": "Ich esse gern !!Käse!!", "why": "Amb _gern_ + aliment genèric, **sense article**. L'article només apareix si es refereix a una porció concreta." },
+        { "bad": "du esst", "good": "!!du isst!!", "why": "_essen_ té canvi vocàlic _e → i_ a 2a i 3a del singular. 2a plural és _ihr esst_ (sense canvi)." },
+        { "bad": "Ich möchte ein Kaffee", "good": "Ich möchte !!einen Kaffee!!", "why": "_Kaffee_ és masculí. A l'acusatiu, _ein → einen_." },
+        { "bad": "Zwei Kaffees bitte", "good": "Zwei !!Kaffee!!, bitte", "why": "Plural normal per a \"dos cafès\": _zwei Kaffee_ (sense -s). _Kaffees_ existeix però indica varietats, no quantitat." }
+      ]
+    },
+    {
+      "id": "check-final",
+      "kind": "exercise",
+      "exerciseId": "A1a-V6-ex-02",
+      "variant": "assessment"
+    },
+    {
+      "id": "synthesis",
+      "kind": "synthesis",
+      "heading": "Síntesi: menjar i beure",
+      "tables": [
+        {
+          "title": "Aliments",
+          "headers": ["Alemany", "Català", "Plural"],
+          "rows": [
+            ["!!das Brot!!", "el pa", "die Brote"],
+            ["!!das Brötchen!!", "el panet", "die Brötchen"],
+            ["!!der Käse!!", "el formatge", "—"],
+            ["!!die Butter!!", "la mantega", "—"],
+            ["!!das Ei!!", "l'ou", "die !!Eier!!"],
+            ["!!die Wurst!!", "la salsitxa", "die !!Würste!!"],
+            ["!!der Apfel!!", "la poma", "die !!Äpfel!!"],
+            ["!!das Fleisch!!", "la carn", "—"],
+            ["!!der Fisch!!", "el peix", "die Fische"],
+            ["!!das Gemüse!!", "la verdura", "—"],
+            ["!!das Obst!!", "la fruita", "—"],
+            ["!!der Reis!!", "l'arròs", "—"],
+            ["!!die Nudeln!!", "els fideus", "(pl.)"],
+            ["!!der Kuchen!!", "el pastís", "die Kuchen"]
+          ]
+        },
+        {
+          "title": "Begudes",
+          "headers": ["Alemany", "Català"],
+          "rows": [
+            ["!!das Wasser!!", "l'aigua"],
+            ["!!der Kaffee!!", "el cafè"],
+            ["!!der Tee!!", "el te"],
+            ["!!die Milch!!", "la llet"],
+            ["!!der Saft!!", "el suc"],
+            ["!!das Bier!!", "la cervesa"],
+            ["!!der Wein!!", "el vi"],
+            ["!!die Cola!!", "la coca-cola"]
+          ]
+        }
+      ]
+    }
+  ]
+}

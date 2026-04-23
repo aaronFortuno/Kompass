@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-V6-ex-01",
+  "topicId": "A1a-V6",
+  "title": "Menjar i beure en context",
+  "prompt": "Escriu el verb o el substantiu que falta a cada frase. Recorda la conjugació d'_essen_ (canvi vocàlic) i de _trinken_ (regular).",
+  "difficulty": 1,
+  "tags": ["essen", "trinken", "vokabular"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Ich {{1}} gern Brot.\nAnna {{2}} Wasser.\nWir essen Nudeln zum Mittagessen.\n{{3}} du Fleisch?",
+    "blanks": [
+      { "id": "1", "label": "1a sg. de _essen_" },
+      { "id": "2", "label": "3a sg. de _trinken_" },
+      { "id": "3", "label": "2a sg. de _essen_ (inici de frase)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "verb" },
+      { "blankId": "2", "placeholder": "verb" },
+      { "blankId": "3", "placeholder": "verb" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["esse"],
+      "2": ["trinkt"],
+      "3": ["Isst"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Ben fet. Recorda els dos canvis clau: _ich esse_ → _du/er **isst**_ (amb canvi vocàlic _e → i_), i _trinken_ és regular: _ich trinke, du trinkst, er trinkt_. La 2a sg. d'_essen_ coincideix amb la 3a sg.: totes dues són _isst_."
+    },
+    "incorrect": {
+      "default": "Dues claus: (a) _essen_ té **canvi vocàlic** a 2a i 3a del singular — _du **isst**, er **isst**_, no _du esst_; (b) _Isst_ a inici de frase porta majúscula, però el canvi vocàlic és el mateix. _Trinken_ és regular: cap parany aquí."
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-V6-ex-02",
+  "topicId": "A1a-V6",
+  "title": "Diàleg al cafè",
+  "prompt": "Tu ets al cafè i demanes l'esmorzar. Tria l'article correcte a cada buit (segons gènere i cas; alguns aliments no porten article).",
+  "difficulty": 2,
+  "tags": ["integration", "moechten", "akkusativ"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "— Guten Tag, was möchten Sie?\n— Ich möchte {{1}} Kaffee und {{2}} Brötchen mit {{3}} Butter, bitte.\n— Sonst noch etwas?\n— Ja, {{4}} Orangensaft.\n— Das sind 5,80 Euro.",
+    "blanks": [
+      { "id": "1", "label": "der Kaffee" },
+      { "id": "2", "label": "das Brötchen" },
+      { "id": "3", "label": "die Butter (no comptable)" },
+      { "id": "4", "label": "der Saft" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["einen", "eine", "ein", "—"] },
+      { "blankId": "2", "options": ["einen", "eine", "ein", "—"] },
+      { "blankId": "3", "options": ["einen", "eine", "ein", "—"] },
+      { "blankId": "4", "options": ["einen", "eine", "ein", "—"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "einen", "2": "ein", "3": "—", "4": "einen" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Tres idees clau: (a) l'acusatiu canvia _ein_ del masculí → _einen_ (_Kaffee_ i _Saft_ porten _einen_); (b) neutre i femení no canvien: _ein Brötchen_; (c) la mantega aquí no és una unitat sinó una porció genèrica, sense article. Aquest és el patró estàndard quan demanes al cafè."
+    },
+    "incorrect": {
+      "default": "Dues pistes: (a) _Kaffee_ i _Saft_ són **masculins**; a l'acusatiu _ein → einen_ (_einen Kaffee, einen Saft_). (b) _Brötchen_ és **neutre** (tots els _-chen_ ho són), l'acusatiu manté _ein_. (c) _Butter_ com a porció d'untar no és comptable, no porta article: _Brötchen mit Butter_."
+    }
+  }
+}
