@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-V4-ex-02",
+  "topicId": "A1a-V4",
+  "title": "La presentació de la Laura",
+  "prompt": "Laura ve d'Àustria, és austríaca i parla alemany, anglès i una mica d'espanyol. Omple la seva autopresentació en alemany.",
+  "difficulty": 2,
+  "tags": ["integration", "laender", "nationalitaet", "sprachen"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Hallo! Ich heiße Laura.\nIch komme aus {{1}}.\nIch bin {{2}}.\nIch spreche {{3}}, {{4}} und ein bisschen {{5}}.",
+    "blanks": [
+      { "id": "1", "label": "Àustria" },
+      { "id": "2", "label": "austríaca" },
+      { "id": "3", "label": "alemany" },
+      { "id": "4", "label": "anglès" },
+      { "id": "5", "label": "espanyol" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "país" },
+      { "blankId": "2", "placeholder": "nacionalitat" },
+      { "blankId": "3", "placeholder": "llengua" },
+      { "blankId": "4", "placeholder": "llengua" },
+      { "blankId": "5", "placeholder": "llengua" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Österreich"],
+      "2": ["Österreicherin"],
+      "3": ["Deutsch"],
+      "4": ["Englisch"],
+      "5": ["Spanisch"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Les tres estructures ja et surten: **_Ich komme aus + [país]_**, **_Ich bin + [nacionalitat sense article]_**, **_Ich spreche + [llengua]_**. Fixa't en la majúscula: _Österreich, Österreicherin, Deutsch, Englisch, Spanisch_ — tots substantius (o gentilicis en funció de nom), tots amb majúscula."
+    },
+    "incorrect": {
+      "default": "Tres claus: (a) en alemany els substantius van sempre amb **majúscula** — _Österreich_, _Österreicherin_, _Deutsch_, no _österreich_ ni _deutsch_; (b) _Österreich_ és neutre sense article, res a afegir; (c) la nacionalitat femenina acaba en **_-erin_**: _Österreicherin_, no _Österreicher_."
+    }
+  }
+}

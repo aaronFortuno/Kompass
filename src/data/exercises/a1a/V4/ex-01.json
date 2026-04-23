@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-V4-ex-01",
+  "topicId": "A1a-V4",
+  "title": "Aus + país",
+  "prompt": "Omple el buit amb l'article corresponent. Si el país no en porta, tria el guió (—).",
+  "difficulty": 1,
+  "tags": ["laender", "aus-dativ"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Ich komme aus {{1}} Deutschland.\nAnna kommt aus {{2}} Schweiz.\nWir kommen aus {{3}} USA.\nMarco kommt aus {{4}} Italien.",
+    "blanks": [
+      { "id": "1", "label": "Deutschland (neutre, sense article)" },
+      { "id": "2", "label": "die Schweiz (f. → datiu)" },
+      { "id": "3", "label": "die USA (pl. → datiu)" },
+      { "id": "4", "label": "Italien (neutre, sense article)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["—", "der", "dem", "den"] },
+      { "blankId": "2", "options": ["—", "der", "dem", "den"] },
+      { "blankId": "3", "options": ["—", "der", "dem", "den"] },
+      { "blankId": "4", "options": ["—", "der", "dem", "den"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "—", "2": "der", "3": "den", "4": "—" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "La regla queda fixada: _aus + [país sense article]_ no demana res; _aus + [país amb article]_ demana datiu (femení _die → der_, plural _die → den_, masculí _der → dem_)."
+    },
+    "incorrect": {
+      "default": "Tres idees: (a) _Deutschland_ i _Italien_ són neutres sense article, no afegeixes res; (b) _die Schweiz_ femení → a datiu _der_ (_aus der Schweiz_); (c) _die USA_ plural → a datiu _den_ (_aus den USA_)."
+    }
+  }
+}

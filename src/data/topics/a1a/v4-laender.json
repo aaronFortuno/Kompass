@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-V4",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 4,
+  "category": "vocabulary",
+  "title": "Länder — països, nacionalitats i llengües",
+  "shortTitle": "Länder",
+  "description": "Les tres frases clau d'autopresentació (_Ich komme aus..._, _Ich bin..._, _Ich spreche..._) amb el vocabulari de països amb/sense article, nacionalitats masculí/femení i llengües.",
+  "axes": ["vocabulari-tematic"],
+  "estimatedMinutes": 12,
+  "steps": [
+    {
+      "id": "intro",
+      "kind": "narrative",
+      "heading": "Països, nacionalitats i llengües",
+      "lead": "Les primeres preguntes que et faran: ==**d'on véns**, **què ets** i **quines llengües parles**==.",
+      "body": "Amb tres frases fixes ho tens cobert: _Ich komme aus..., Ich bin..., Ich spreche..._. El que canvia és el que hi poses al final.",
+      "callout": {
+        "variant": "info",
+        "title": "Estructura del tema",
+        "body": "Primer els **països** (amb o sense article). Després les **nacionalitats** (home/dona). Finalment les **llengües** (les més probables a l'A1). Una lliçó curta però imprescindible."
+      }
+    },
+    {
+      "id": "paises-base",
+      "kind": "narrative",
+      "heading": "Països sense article",
+      "lead": "La majoria de països alemanys ==no porten article==.",
+      "body": "Van directes: _Deutschland, Spanien, Italien_. Són neutres però aquesta neutralitat no es veu perquè l'article _das_ no apareix.",
+      "tabs": [
+        { "pron": "Deutschland", "gloss": "Alemanya", "note": "Neutre. Sense article. Capital: _Berlin_.", "example": { "de": "Ich wohne in Deutschland.", "ca": "Visc a Alemanya." } },
+        { "pron": "Österreich", "gloss": "Àustria", "note": "Neutre. Sense article. Capital: _Wien_ (Viena).", "example": { "de": "Mozart kommt aus Österreich.", "ca": "Mozart ve d'Àustria." } },
+        { "pron": "Spanien", "gloss": "Espanya", "note": "Neutre. Sense article. La ==i== es pronuncia \"ii\" llarga.", "example": { "de": "Ich komme aus Spanien.", "ca": "Vinc d'Espanya." } },
+        { "pron": "Frankreich", "gloss": "França", "note": "Neutre. Sense article. Literalment \"regne dels francs\".", "example": { "de": "Paris liegt in Frankreich.", "ca": "París és a França." } },
+        { "pron": "Italien", "gloss": "Itàlia", "note": "Neutre. Sense article.", "example": { "de": "Rom ist die Hauptstadt von Italien.", "ca": "Roma és la capital d'Itàlia." } },
+        { "pron": "Portugal", "gloss": "Portugal", "note": "Neutre. Sense article. Pronúncia pròxima al català, amb _u_ al final tancada.", "example": { "de": "Lissabon liegt in Portugal.", "ca": "Lisboa és a Portugal." } },
+        { "pron": "Polen", "gloss": "Polònia", "note": "Neutre. Sense article.", "example": { "de": "Warschau ist in Polen.", "ca": "Varsòvia és a Polònia." } },
+        { "pron": "China", "gloss": "la Xina", "note": "Neutre. Sense article en alemany (al contrari del català).", "example": { "de": "Sie kommt aus China.", "ca": "Ella ve de la Xina." } },
+        { "pron": "Japan", "gloss": "el Japó", "note": "Neutre. Sense article.", "example": { "de": "Tokio ist in Japan.", "ca": "Tòquio és al Japó." } },
+        { "pron": "Großbritannien", "gloss": "Gran Bretanya", "note": "Neutre. Sense article. El Regne Unit com a estat es diu _das Vereinigte Königreich_, menys freqüent.", "example": { "de": "London ist in Großbritannien.", "ca": "Londres és a Gran Bretanya." } }
+      ]
+    },
+    {
+      "id": "paises-article",
+      "kind": "synthesis",
+      "heading": "Països amb article obligatori",
+      "lead": "Una llista tancada: ==**femenins** o **plurals**==, porten sempre article.",
+      "body": "No és un capritx: aquests països tenen gènere femení (la majoria acaben en _-ei_, _-ie_) o són plurals (_die USA_). L'article forma part del seu nom.",
+      "tables": [
+        {
+          "title": "Països amb article",
+          "headers": ["País", "Gènere", "Català"],
+          "rows": [
+            ["!!die Schweiz!!", "f.", "Suïssa"],
+            ["!!die Türkei!!", "f.", "Turquia"],
+            ["!!die Slowakei!!", "f.", "Eslovàquia"],
+            ["!!die Ukraine!!", "f.", "Ucraïna"],
+            ["!!die USA!!", "pl.", "els EUA"],
+            ["!!die Niederlande!!", "pl.", "els Països Baixos"],
+            ["!!der Iran!!", "m.", "l'Iran"],
+            ["!!der Irak!!", "m.", "l'Iraq"]
+          ]
+        }
+      ],
+      "callout": {
+        "variant": "tip",
+        "title": "Regla pràctica",
+        "body": "Quan vegis un país acabat en **_-ei_**, **_-ie_**, **_-land_** plural, o en **_-Staaten_**, espera article. _die Türkei, die Mongolei, die USA (abreviació de die Vereinigten Staaten)_."
+      }
+    },
+    {
+      "id": "kommen-aus",
+      "kind": "narrative",
+      "heading": "_Ich komme aus..._",
+      "lead": "La frase que respon a _Woher kommst du?_ (D'on véns?).",
+      "body": "La preposició **_aus_** sempre regeix datiu. Si el país no porta article, no cal fer res: _aus Deutschland_. Si porta article, canvies al datiu: _aus der Schweiz_, _aus dem Iran_.",
+      "examples": [
+        { "de": "Ich komme aus Spanien.", "ca": "Vinc d'Espanya.", "note": "Sense article: res no canvia." },
+        { "de": "Ich komme aus der Schweiz.", "ca": "Vinc de Suïssa.", "note": "_die Schweiz_ femení → _aus der Schweiz_ (datiu: _die → der_)." },
+        { "de": "Ich komme aus den USA.", "ca": "Vinc dels EUA.", "note": "Plural → datiu plural _den_." },
+        { "de": "Ich komme aus dem Iran.", "ca": "Vinc de l'Iran.", "note": "_der Iran_ masculí → _aus dem Iran_ (datiu: _der → dem_)." }
+      ],
+      "callout": {
+        "variant": "warning",
+        "title": "No et sorprenguis ara",
+        "body": "Els canvis _die → der_, _der → dem_, _die (pl.) → den_ són el sistema de casos (datiu), que encara no has treballat a fons. Si no els domines, limita't als països sense article — el 90% dels que faràs servir."
+      }
+    },
+    {
+      "id": "check-paises",
+      "kind": "exercise",
+      "exerciseId": "A1a-V4-ex-01",
+      "variant": "quick-check"
+    },
+    {
+      "id": "nacionalitats",
+      "kind": "narrative",
+      "heading": "Nacionalitats: home i dona",
+      "lead": "Patró general: ==**-er** per masculí, **-erin** per femení==.",
+      "body": "Es forma a partir de la base del país: _Spanien → Spanier/Spanierin_, _Italien → Italiener/Italienerin_. Amb unes poques excepcions notables.",
+      "tables": [
+        {
+          "title": "Nacionalitats (patró regular)",
+          "headers": ["País", "Masculí", "Femení"],
+          "rows": [
+            ["Spanien", "!!der Spanier!!", "!!die Spanierin!!"],
+            ["Italien", "!!der Italiener!!", "!!die Italienerin!!"],
+            ["England", "!!der Engländer!!", "!!die Engländerin!!"],
+            ["Österreich", "!!der Österreicher!!", "!!die Österreicherin!!"],
+            ["USA", "!!der Amerikaner!!", "!!die Amerikanerin!!"]
+          ]
+        }
+      ],
+      "pitfalls": [
+        { "bad": "der Deutscher (per \"l'alemany\")", "good": "!!der Deutsche!! / !!die Deutsche!!", "why": "_Deutsch_ és un adjectiu substantivat: _ein Deutscher_, _der Deutsche_. Segueix la declinació adjectiva." },
+        { "bad": "der Franzer / Franzerin", "good": "!!der Franzose!! / !!die Französin!!", "why": "Patró **-ose/-ösin**. Cal memoritzar-lo: _Franzose, Französin_." },
+        { "bad": "der Griecher", "good": "!!der Grieche!! / !!die Griechin!!", "why": "Patró **-e/-in**: _Grieche, Griechin_ (grec/grega)." }
+      ],
+      "callout": {
+        "variant": "info",
+        "title": "Ich bin _sense article_",
+        "body": "Peculiaritat alemanya: quan dius la teva nacionalitat (o professió), ==**no es posa article**==: _Ich bin Spanier_ (Sóc espanyol), _Ich bin Spanierin_, no _~~Ich bin ein Spanier~~_. Mateixa regla que _Ich bin Lehrer_ (sóc mestre)."
+      }
+    },
+    {
+      "id": "llengues",
+      "kind": "narrative",
+      "heading": "Les llengües",
+      "lead": "Un nom per a cada llengua. Sempre neutre i sense article quan el dius com a llengua.",
+      "body": "El nom de la llengua és el gentilici neutre: _Deutsch, Spanisch, Englisch, Französisch_. Serveix per a _Ich spreche..._ o _Ich lerne..._",
+      "tabs": [
+        { "pron": "Deutsch", "gloss": "alemany", "note": "Majúscula (és nom, no adjectiu). Sense article: _Ich spreche Deutsch_.", "example": { "de": "Ich lerne Deutsch.", "ca": "Aprenc alemany." } },
+        { "pron": "Englisch", "gloss": "anglès", "note": "Pronúncia alemanya: la _E_ tancada i la _lisch_ al final.", "example": { "de": "Er spricht sehr gut Englisch.", "ca": "Parla molt bé l'anglès." } },
+        { "pron": "Spanisch", "gloss": "espanyol", "note": "La _sch_ es pronuncia \"x\" catalana (_sha_).", "example": { "de": "Wir lernen Spanisch in der Schule.", "ca": "Aprenem espanyol a l'escola." } },
+        { "pron": "Französisch", "gloss": "francès", "note": "La _ö_ com _u_ francesa. Porta umlaut perquè ve de _Franzose_.", "example": { "de": "Französisch ist schön, aber schwierig.", "ca": "El francès és bonic, però difícil." } },
+        { "pron": "Italienisch", "gloss": "italià", "note": "Cinc síl·labes: _i-ta-li-e-nisch_.", "example": { "de": "Sie spricht Italienisch.", "ca": "Ella parla italià." } },
+        { "pron": "Katalanisch", "gloss": "català", "note": "Existeix i és el nom oficial. Apte per a _Ich spreche Katalanisch_.", "example": { "de": "Meine Muttersprache ist Katalanisch.", "ca": "La meva llengua materna és el català." } }
+      ],
+      "callout": {
+        "variant": "warning",
+        "title": "Llengua vs adjectiu",
+        "body": "_Deutsch_ amb majúscula inicial (_Ich spreche Deutsch_) és el **nom de la llengua**. _deutsch_ amb minúscula (_ein deutsches Buch_) és l'adjectiu \"alemany\". No confonguis: al mig d'una frase, majúscula = llengua, minúscula = adjectiu."
+      }
+    },
+    {
+      "id": "tres-frases",
+      "kind": "narrative",
+      "heading": "Les tres frases clau",
+      "lead": "Ja tens tot el que et cal. Un país, una nacionalitat, una llengua.",
+      "rule": [
+        "**Origen**: _==Ich komme aus [país]==_. (Vinc de...)",
+        "**Nacionalitat**: _==Ich bin [nacionalitat sense article]==_. (Sóc...)",
+        "**Llengua**: _==Ich spreche [llengua]==_. (Parlo...)"
+      ],
+      "examples": [
+        { "de": "Ich komme aus Spanien. Ich bin Spanier. Ich spreche Spanisch und Katalanisch.", "ca": "Vinc d'Espanya. Sóc espanyol. Parlo castellà i català." },
+        { "de": "Sie kommt aus der Schweiz. Sie ist Schweizerin. Sie spricht Deutsch und Französisch.", "ca": "Ella ve de Suïssa. És suïssa. Parla alemany i francès." }
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "kind": "narrative",
+      "heading": "Paranys freqüents",
+      "pitfalls": [
+        { "bad": "Ich komme aus die Schweiz", "good": "Ich komme aus !!der Schweiz!!", "why": "_aus_ regeix datiu. Femení _die → der_ en datiu." },
+        { "bad": "Ich bin ein Deutscher", "good": "Ich bin !!Deutscher!!", "why": "Amb nacionalitats, **sense article**. _Ich bin Deutscher_, com _Ich bin Lehrer_." },
+        { "bad": "Ich spreche die deutsch", "good": "Ich spreche !!Deutsch!!", "why": "Les llengües van sense article. I amb **majúscula** (és un nom, no un adjectiu)." },
+        { "bad": "Ich bin von Spanien", "good": "Ich komme aus Spanien", "why": "Per origen s'usa **_kommen aus_**, no _sein von_. _Von_ amb persones o institucions." },
+        { "bad": "Ich spreche sehr gut den Englisch", "good": "Ich spreche sehr gut !!Englisch!!", "why": "No es pot posar article a una llengua quan és complement de _sprechen_. És el nom d'una llengua, tractat com a abstracte." }
+      ]
+    },
+    {
+      "id": "check-final",
+      "kind": "exercise",
+      "exerciseId": "A1a-V4-ex-02",
+      "variant": "assessment"
+    },
+    {
+      "id": "synthesis",
+      "kind": "synthesis",
+      "heading": "Síntesi: països, gent i llengües",
+      "tables": [
+        {
+          "title": "Selecció A1 de països, nacionalitats i llengües",
+          "headers": ["País", "Home", "Dona", "Llengua"],
+          "rows": [
+            ["Deutschland", "!!der Deutsche!!", "!!die Deutsche!!", "!!Deutsch!!"],
+            ["Österreich", "!!Österreicher!!", "!!Österreicherin!!", "!!Deutsch!!"],
+            ["!!die Schweiz!!", "!!Schweizer!!", "!!Schweizerin!!", "!!Deutsch!! / !!Französisch!! / !!Italienisch!!"],
+            ["Spanien", "!!Spanier!!", "!!Spanierin!!", "!!Spanisch!!"],
+            ["Frankreich", "!!Franzose!!", "!!Französin!!", "!!Französisch!!"],
+            ["Italien", "!!Italiener!!", "!!Italienerin!!", "!!Italienisch!!"],
+            ["Großbritannien", "!!Engländer!!", "!!Engländerin!!", "!!Englisch!!"],
+            ["!!die USA!!", "!!Amerikaner!!", "!!Amerikanerin!!", "!!Englisch!!"],
+            ["Polen", "!!Pole!!", "!!Polin!!", "!!Polnisch!!"],
+            ["China", "!!Chinese!!", "!!Chinesin!!", "!!Chinesisch!!"]
+          ]
+        },
+        {
+          "title": "Les tres frases clau",
+          "headers": ["Estructura", "Exemple"],
+          "rows": [
+            ["Origen", "!!Ich komme aus!! [país]"],
+            ["Nacionalitat", "!!Ich bin!! [nacionalitat sense article]"],
+            ["Llengua", "!!Ich spreche!! [llengua]"]
+          ]
+        }
+      ]
+    }
+  ]
+}
