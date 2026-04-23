@@ -10,6 +10,7 @@
   "description": "Nombres cardinals: nucli 0–12, teens, desenes, regla unitats+und+desenes, hundert/tausend/Million, convenció punt/coma i lectura de telèfons.",
   "axes": ["vocabulari-tematic"],
   "estimatedMinutes": 14,
+  "reviewed": true,
   "steps": [
     {
       "id": "intro",

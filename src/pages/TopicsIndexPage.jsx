@@ -98,6 +98,15 @@ function TopicRow({ topic, progress, t, isFocus, focusRef, revealIndex }) {
       </span>
       <span className="flex-1 min-w-0 font-serif text-base text-reader-ink tracking-tight truncate topic-row-title">
         {topic.shortTitle}
+        {topic.reviewed ? null : (
+          <span
+            className="topic-provisional-badge"
+            title="Capítol provisional, encara no revisat pedagògicament"
+            aria-label="provisional"
+          >
+            provisional
+          </span>
+        )}
       </span>
       <span className="flex-shrink-0">
         {hasExercises ? (

@@ -407,6 +407,34 @@
   line-height: 1;
 }
 
+/* Badge "provisional" · §113
+   Apareix al header del reader quan el tema no té `reviewed: true`.
+   Monoespai, curt, amb fons amber lleu perquè faci d'avís sense
+   saturar. Es reutilitza a TopicsIndexPage amb el mateix look. */
+.kf-provisional-badge,
+.topic-provisional-badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgb(var(--color-reader-ink));
+  background: rgb(var(--color-reader-mark) / 0.45);
+  padding: 2px 6px;
+  border-radius: 2px;
+  line-height: 1.3;
+  margin-left: 4px;
+  white-space: nowrap;
+  cursor: help;
+}
+html.dark .kf-provisional-badge,
+html.dark .topic-provisional-badge {
+  background: rgb(var(--color-reader-mark) / 0.22);
+  color: rgb(var(--color-reader-ink));
+}
+
 /* Títol centrat (columna central del grid) — lletra normal (no italic).
    Afegim padding vertical discret per evitar que la "x-height" del
    serif quedi visualment una mica per sobre del baseline del logo. */

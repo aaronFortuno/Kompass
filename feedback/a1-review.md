@@ -115,9 +115,22 @@ per endavant — només les que tinguin feedback real.)
 - **Contingut:**
   - [A1a-V1 · teens · 1/6] aquí la paraula "teens" com que és alemany en una frase en català, posem-ho en cursiva
   - [A1a-V1 · decenas · 3/5] posem àudio de zwanzig, vierzig i fünfzig aquí
+  - [A1a-V1 · check-und · 1/1] el nombre 37 si l'escrius com siebenunddreissig apareix com a tatxat-incorrecte però el label diu tick-correcte en verd. Entenc que correcte seria amb eszett ß però és un caràcter inexistent als teclats castellans-catalans així que no serà fàcil de gestionar. En qualsevol cas no pot ser correcte i incorrecte a la vegada.
+  - [A1a-V1 · punto-miles · 5/6] No és correcte que en castella el 1000 s'escrigui 1,000 i en català tam´be 1,000. En anglès ho desconec però aquí l'agent s'hi ha inventat. 3,5 euros és tant en castellà com en català. O sigui, alemany castellà i català utilitzem el mateix sistema. També tenim un problema amb el renderitzat en català de 1000, que apareix com ~~ 1,000 ~~
+  - [A1a-V1 · punto-miles · 6/6] jo aquí posaria l'èmfasi en que la coma i el punt s'utilitzen igual que en català o castellà, per separar decimals i milers respectivament. No tant com "al revès que en anglès", que és una mica absurd des del nostre punt de vista catalanoparlant
+  - [A1a-V1 · telefon · 8/8] aquí és la segona vegada que ens parla de "zwo" en comptes de zwei, però no en posa cap exemple audible, diu que és una convenció però no sé si cal insistir-hi gaire, i en qualsevol cas ens faltaria un exemple audible per fer-nos una idea de com sona això.
+  - [A1a-V1 · pitfalls · 4/6] aquesta diapositiva és una liada, sincerament. 
+  - [A1a-V1 · pitfalls · 5/6] Aquí l'exemple pitfall no té sentit, perquè diu "ein Euro (per dir 1)", però és que "ein Euro" crec que seria correcte, no? En canvi, per dir "1" sí seria "eins". Vull dir, que compara dues coses diferents. Crec que s'ha de revisar o aclarir que parlem de la diferència entre article i numeral.
+  - [A1a-V1 · pitfalls · 6/6] aquí potser faltaria audio, no?
+  - [A1a-V1 · check-final · 1/1] aquí compte amb l'exemple de Die Postleitzahl perquè es pot inferir que és com el Telefonnummer però no apareix explicitat, així que potser no és fàcil saber com dir aquest número
+  - [A1a-V1 · synthesis · 2/3] aquesta taula és enorme, i quan fem scroll/fletxa ens fa saltar al següent beat en comptes de permetre'ns moure per aquí. S'ha de revisar el layout i presentació perquè es vegi millor. Crec que a 3-4 columnes hi cabrà bé si apropem el numeral i el com es diu.
+  - [A1a-V1 · synthesis · 3/3] igual que l'anterior
 - **Tècnic:**
+  - [A1a-V1 · check-und · 1/1] al títol apareix "La regla *und*" sense parejar el _ ... _
+  - [A1a-V1 · synthesis · 2/3] aquí tenim 20 àudios, estaria bé tenir un botonet per reproduir-los tots si volem
+  - [A1a-V1 · synthesis · 3/3] igual que l'anterior
 - **Estructural:**
-  - Quan presentem teens i desenes ens falta sentir-les totes: dreizehn, vierzehn, fünfzehn... dreissig, vierzig, fünfzig... no només un parell d'exemples, fem-les totes, potser en una taula a 5 files
+  - Quan presentem teens i desenes ens falta sentir-les totes: dreizehn, vierzehn, fünfzehn... dreissig, vierzig, fünfzig... no només un parell d'exemples, fem-les totes, potser en una taula a 5 files. Sé que hi ha unes taules al final (A1a-V1 · synthesis · 2/3) però crec que és vàlid mostar-les també abans.
 
 ### A1a-V2 · Alphabet
 
@@ -192,7 +205,9 @@ format ric.)*
 
 ### Estructural
 
-Segons la lliçó i segons l'agent que l'ha fet les rutes de url són en anglès, en català o fins i tot en castellà (desconec si alguna pot ser fins i tot en alemany). Cal homogeneïtzar-ho i que sigui consistent, ara és molt inconsistent.
+- Segons la lliçó i segons l'agent que l'ha fet les rutes de url són en anglès, en català o fins i tot en castellà (desconec si alguna pot ser fins i tot en alemany). Cal homogeneïtzar-ho i que sigui consistent, ara és molt inconsistent.
+
+- Alguns exercicis (com per exemple els de V1-Zahlen), en comptes de mostrar-nos sempre els mateixos nombres estaria bé disposar d'una bateria més àmplia de possibilitats i que aparegueissin aleatòriament. O si més no disposar d'un mode d'activitat "repàs" o "matxacar" que servís per fer molts exercicis d'un mateix tipus. Així que ens faltarà material aquí per tenir major diversitat.
 
 ---
 

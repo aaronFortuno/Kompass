@@ -2327,6 +2327,14 @@ export function FocusReader({ topic }) {
             <b>Kompass</b>
           </Link>
           <span className="kf-muted kf-logo-id">{topic.id}</span>
+          {topic.reviewed ? null : (
+            <span
+              className="kf-provisional-badge"
+              title="Capítol encara no revisat pedagògicament — pot tenir errors o ajustos pendents."
+            >
+              provisional
+            </span>
+          )}
         </div>
 
         <button

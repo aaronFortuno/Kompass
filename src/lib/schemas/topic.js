@@ -169,6 +169,11 @@ export const TopicSchema = z
     category: z.enum(['grammar', 'vocabulary']).optional(),
     prerequisites: z.array(z.string().regex(TOPIC_ID_REGEX)).optional(),
     estimatedMinutes: z.number().int().min(1).optional(),
+    // §113: marca de revisió pedagògica finalitzada. Quan no hi és o
+    // val false, el reader mostra un avís "provisional · en revisió"
+    // i el temari afegeix un badge discret al títol. Només es marca
+    // a true quan l'Aarón ha validat el capítol sencer.
+    reviewed: z.boolean().optional(),
     steps: z.array(StepSchema).min(1),
   })
   .superRefine((topic, ctx) => {
