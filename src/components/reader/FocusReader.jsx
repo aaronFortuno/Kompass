@@ -873,14 +873,19 @@ function TabImage({ image, variant = 'side', context = null }) {
 
 /*
  * TabImageLightbox · modal d'ampliació d'una TabImage.
- * Mostra la variant més gran disponible (via srcset + sizes=100vw) i
- * el context textual associat — pron, exemple DE/CA i nota — perquè
+ * Patró sempre-muntat (com AboutModal): el modal viu al DOM amb
+ * opacity 0 i pointer-events none quan està tancat; `is-open` activa
+ * la transició d'opacitat i escala. Tant l'obertura com el tancament
+ * passen pel mateix fade suau, consistent amb la resta de modals del
+ * projecte. Mostra la variant més gran disponible (via srcset) i el
+ * context textual associat — pron, exemple DE/CA i nota — perquè
  * l'usuari pugui llegir el vocabulari al costat de la imatge quan
  * aquesta és una descripció d'escena o similar.
  * Es tanca amb Esc, clic al backdrop o al botó ✕.
  */
-function TabImageLightbox({ image, context, onClose }) {
+function TabImageLightbox({ state, open, onClose }) {
   useEffect(() => {
+    if (!open) return undefined;
     const onKey = (e) => {
       if (e.key === 'Escape') {
         e.preventDefault();
@@ -895,59 +900,70 @@ function TabImageLightbox({ image, context, onClose }) {
       window.removeEventListener('keydown', onKey, true);
       document.body.style.overflow = prev;
     };
-  }, [onClose]);
+  }, [open, onClose]);
+
+  // Quan encara no s'ha obert cap imatge, renderitzem un shell buit
+  // perquè el component estigui muntat (així la primera obertura també
+  // té transició) però sense contingut que carregui recursos.
+  const image = state?.image || null;
+  const context = state?.context || null;
 
   return (
     <>
       <div
-        className="kf-img-lightbox-backdrop is-open"
+        className={['kf-img-lightbox-backdrop', open ? 'is-open' : ''].join(' ')}
         onClick={onClose}
         aria-hidden="true"
       />
       <div
-        className="kf-img-lightbox is-open"
+        className={['kf-img-lightbox', open ? 'is-open' : ''].join(' ')}
         role="dialog"
-        aria-modal="true"
-        aria-label={image.alt}
+        aria-modal={open}
+        aria-hidden={!open}
+        aria-label={image?.alt || ''}
         onClick={(e) => e.stopPropagation()}
       >
-        <button
-          type="button"
-          className="kf-img-lightbox-close"
-          onClick={onClose}
-          aria-label="Tancar"
-        >
-          <CloseIcon size={18} aria-hidden="true" />
-        </button>
-        <div className="kf-img-lightbox-media">
-          <img
-            className="kf-img-lightbox-img"
-            src={image.src}
-            {...(image.srcset ? { srcSet: image.srcset } : {})}
-            sizes="(min-width: 900px) 60vw, 90vw"
-            alt={image.alt}
-          />
-        </div>
-        <aside className="kf-img-lightbox-aside">
-          {context?.title ? (
-            <h3 className="kf-img-lightbox-title">{parseInline(context.title)}</h3>
-          ) : null}
-          {context?.de ? (
-            <p className="kf-img-lightbox-de">{parseInline(context.de)}</p>
-          ) : null}
-          {context?.ca ? (
-            <p className="kf-img-lightbox-ca">{parseInline(context.ca)}</p>
-          ) : null}
-          {context?.note ? (
-            <p className="kf-img-lightbox-note">{parseInline(context.note)}</p>
-          ) : null}
-          {image.caption ? (
-            <p className="kf-img-lightbox-caption">{parseInline(image.caption)}</p>
-          ) : null}
-          {image.credit ? (
-            <p className="kf-img-lightbox-credit">{image.credit}</p>
-          ) : null}
-        </aside>
+        {image ? (
+          <>
+            <button
+              type="button"
+              className="kf-img-lightbox-close"
+              onClick={onClose}
+              aria-label="Tancar"
+            >
+              <CloseIcon size={18} aria-hidden="true" />
+            </button>
+            <div className="kf-img-lightbox-media">
+              <img
+                className="kf-img-lightbox-img"
+                src={image.src}
+                {...(image.srcset ? { srcSet: image.srcset } : {})}
+                sizes="(min-width: 900px) 60vw, 90vw"
+                alt={image.alt}
+              />
+            </div>
+            <aside className="kf-img-lightbox-aside">
+              {context?.title ? (
+                <h3 className="kf-img-lightbox-title">{parseInline(context.title)}</h3>
+              ) : null}
+              {context?.de ? (
+                <p className="kf-img-lightbox-de">{parseInline(context.de)}</p>
+              ) : null}
+              {context?.ca ? (
+                <p className="kf-img-lightbox-ca">{parseInline(context.ca)}</p>
+              ) : null}
+              {context?.note ? (
+                <p className="kf-img-lightbox-note">{parseInline(context.note)}</p>
+              ) : null}
+              {image.caption ? (
+                <p className="kf-img-lightbox-caption">{parseInline(image.caption)}</p>
+              ) : null}
+              {image.credit ? (
+                <p className="kf-img-lightbox-credit">{image.credit}</p>
+              ) : null}
+            </aside>
+          </>
+        ) : null}
       </div>
     </>
   );
@@ -1595,8 +1611,14 @@ export function FocusReader({ topic }) {
   const [drawerOpen, setDrawerOpen] = useState(false);
   // Lightbox singleton · §110 polit. Centralitzem l'estat aquí perquè
   // cada TabImage (n'hi ha tantes com tabs al topic, rendertzades via
-  // BeatStagePeek) no en pugui obrir una còpia pròpia.
+  // BeatStagePeek) no en pugui obrir una còpia pròpia. Dos estats:
+  //   - lightboxState: { image, context } actuals. Persistents entre
+  //     obertures per mantenir el contingut DURANT el fade-out.
+  //   - lightboxOpen: booleà que controla la classe `is-open` al modal
+  //     perquè tant l'obertura com el tancament passin per una transició
+  //     CSS suau d'opacitat i escala.
   const [lightboxState, setLightboxState] = useState(null);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
   // Splash d'entrada a una nova lliçó (§80). Es mostra la primera vegada
   // que es munta aquest reader per a un topic.id concret; auto-dismiss
   // després de 2 s o bé amb tecla d'acció / clic.
@@ -1696,15 +1718,20 @@ export function FocusReader({ topic }) {
   }, [topic.id]);
 
   // Lightbox d'imatge · singleton. TabImage dispara `kompass:open-lightbox`
-  // amb { image, context }; aquí registrem l'estat i el tanquem en
-  // canviar de beat perquè no quedin modals "orfes" quan l'usuari navega.
+  // amb { image, context }; aquí registrem l'estat + obrim amb fade.
+  // No netejem el state en tancar — només togglem lightboxOpen perquè
+  // la transició CSS d'opacitat puguí fer el fade-out amb el contingut
+  // encara visible. El següent open el substituirà.
   useEffect(() => {
-    const onOpen = (e) => setLightboxState(e.detail || null);
+    const onOpen = (e) => {
+      setLightboxState(e.detail || null);
+      setLightboxOpen(true);
+    };
     window.addEventListener('kompass:open-lightbox', onOpen);
     return () => window.removeEventListener('kompass:open-lightbox', onOpen);
   }, []);
   useEffect(() => {
-    setLightboxState(null);
+    setLightboxOpen(false);
   }, [stepIdx, beatIdx, topic.id]);
 
   // Si l'usuari surt del darrer beat (amb ←, clic al sidebar…), tornem a
@@ -2521,13 +2548,12 @@ export function FocusReader({ topic }) {
         onClose={() => setDrawerOpen(false)}
       />
 
-      {lightboxState ? (
-        <TabImageLightbox
-          image={lightboxState.image}
-          context={lightboxState.context}
-          onClose={() => setLightboxState(null)}
-        />
-      ) : null}
+      <TabImageLightbox
+        state={lightboxState}
+        open={lightboxOpen}
+        onClose={() => setLightboxOpen(false)}
+      />
+
 
       {splashVisible ? (
         <ReaderEntrySplash
