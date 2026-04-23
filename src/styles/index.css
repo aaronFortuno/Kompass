@@ -1631,7 +1631,9 @@ html.dark .k-mark {
 /* Counter fixat a la cantonada inferior esquerra del body · §98.
    Sempre visible, fora del flux del contingut, perquè serveixi com a
    referència estable per comentar i discutir errors per posició.
-   Pointer-events none per no bloquejar clics a contingut de sota. */
+   El contenidor té pointer-events none perquè no bloquegi clics al
+   contingut de sota, però el text és seleccionable i el botó de
+   copiar té pointer-events auto per poder-se clicar. */
 .kf-body-counter {
   position: fixed;
   left: 20px;
@@ -1639,17 +1641,46 @@ html.dark .k-mark {
      just sobre la línia de temporitzador, que el solapava visualment. */
   bottom: 96px;
   z-index: 4;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 10px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: rgb(var(--color-reader-muted));
-  background: rgb(var(--color-reader-paper) / 0.7);
-  padding: 4px 8px;
+  background: rgb(var(--color-reader-paper) / 0.85);
+  padding: 4px 6px 4px 8px;
   border: 1px solid rgb(var(--color-reader-rule));
   border-radius: 2px;
   pointer-events: none;
-  user-select: none;
+}
+.kf-body-counter-label {
+  user-select: text;
+  pointer-events: auto;
+}
+.kf-body-counter-copy {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  color: rgb(var(--color-reader-muted));
+  cursor: pointer;
+  pointer-events: auto;
+  transition: color var(--duration-fast) var(--ease-standard),
+    background-color var(--duration-fast) var(--ease-standard);
+}
+.kf-body-counter-copy:hover {
+  color: rgb(var(--color-reader-ink));
+  background: rgb(var(--color-reader-paper-2));
+}
+.kf-body-counter-copy:focus-visible {
+  outline: 1px solid rgb(var(--color-reader-ink));
+  outline-offset: 1px;
 }
 @media (max-width: 720px) {
   .kf-body-counter {

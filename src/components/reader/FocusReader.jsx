@@ -11,6 +11,8 @@ import {
   Settings as SettingsIcon,
   Play,
   Pause,
+  Copy,
+  Check,
 } from 'lucide-react';
 import { useT } from '@/i18n';
 import { useSettings, useSettingsStore } from '@/store/useSettingsStore.js';
@@ -479,6 +481,62 @@ function ProgressBar({ topic, stepIdx, beatIdx, beats, onJumpStep, onJumpBeat, e
           />
         ))}
       </div>
+    </div>
+  );
+}
+
+/*
+ * Counter flotant de la cantonada inferior esquerra del body (§98).
+ * Mostra "Pas N · M/T" i un botó de copiar que escriu al clipboard una
+ * referència interna del format `A1a-2 · declarative · 5/9` — pensada
+ * perquè l'usuari l'enganxi quan vulgui notificar un error a un punt
+ * concret del curs. Al clic, l'icona es torna un check temporal.
+ *
+ * El contenidor té `pointer-events: none` perquè no bloquegi el clic
+ * al contingut del body, però el botó té `pointer-events: auto` per
+ * rebre hover/clic. El text és seleccionable (user-select: text).
+ */
+function BodyCounter({
+  topic,
+  step,
+  stepIdx,
+  beatIdx,
+  beatsCount,
+  currentBlock,
+  blockStartsCount,
+  isFullMode,
+}) {
+  const [copied, setCopied] = useState(false);
+  const label = isFullMode
+    ? `Pas ${String(stepIdx + 1).padStart(2, '0')} · Bloc ${String(currentBlock + 1).padStart(2, '0')}/${blockStartsCount}`
+    : `Pas ${String(stepIdx + 1).padStart(2, '0')} · ${beatIdx + 1}/${beatsCount}`;
+  const reference = `${topic.id} · ${step?.id || `pas-${stepIdx + 1}`} · ${beatIdx + 1}/${beatsCount}`;
+  const onCopy = async (e) => {
+    e.stopPropagation();
+    try {
+      await navigator.clipboard.writeText(reference);
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 1800);
+    } catch {
+      // Silenci: el text també és al label i selcionable.
+    }
+  };
+  return (
+    <div className="kf-body-counter" aria-live="polite">
+      <span className="kf-body-counter-label">{label}</span>
+      <button
+        type="button"
+        className="kf-body-counter-copy"
+        onClick={onCopy}
+        title={copied ? `Copiat: ${reference}` : `Copiar referència — ${reference}`}
+        aria-label="Copia la referència del beat per notificar un error"
+      >
+        {copied ? (
+          <Check size={11} aria-hidden="true" />
+        ) : (
+          <Copy size={11} aria-hidden="true" />
+        )}
+      </button>
     </div>
   );
 }
@@ -2022,12 +2080,19 @@ export function FocusReader({ topic }) {
       {/* Counter flotant "Pas 09 · 5/9" a la cantonada inferior esquerra
           del body (§98). Abans vivia al peu; mou-lo al body perquè
           sempre estigui a la mateixa posició i serveixi de referència
-          per detectar i comentar errors sense dependre del footer. */}
-      <div className="kf-body-counter" aria-live="polite">
-        {isFullMode
-          ? `Pas ${String(stepIdx + 1).padStart(2, '0')} · Bloc ${String(currentBlock + 1).padStart(2, '0')}/${blockStarts.length}`
-          : `Pas ${String(stepIdx + 1).padStart(2, '0')} · ${beatIdx + 1}/${beats.length}`}
-      </div>
+          per detectar i comentar errors sense dependre del footer.
+          Inclou un botó de copiar la referència interna (topic · step ·
+          beat) per facilitar notificar errors amb precisió. */}
+      <BodyCounter
+        topic={topic}
+        step={step}
+        stepIdx={stepIdx}
+        beatIdx={beatIdx}
+        beatsCount={beats.length}
+        currentBlock={currentBlock}
+        blockStartsCount={blockStarts.length}
+        isFullMode={isFullMode}
+      />
 
       {/* Barra de progrés de l'auto-play (§87). Entre body i foot, s'anima
           d'esquerra a dreta durant autoPlayDelay segons; pot pausar-se
