@@ -40,14 +40,14 @@
           "type": "table",
           "headers": ["Preposició", "Significat principal", "Exemple"],
           "rows": [
-            ["**aus**", "de (origen, procedència, material)", "_Ich komme ==aus der== Schweiz._"],
-            ["**bei**", "a casa de / a (empresa) / prop de", "_Ich wohne ==bei meinen== Eltern._"],
-            ["**mit**", "amb (companyia, instrument, mitjà)", "_Ich fahre ==mit dem== Bus._"],
-            ["**nach**", "cap a (ciutats/països sense article) / després de", "_Wir fliegen ==nach== Berlin._"],
-            ["**seit**", "des de (fa...) — temps continu", "_Ich lerne ==seit einem== Jahr Deutsch._"],
-            ["**von**", "de (procedència, agent, possessió)", "_Das ist ein Geschenk ==von meiner== Mutter._"],
-            ["**zu**", "a / cap a (destinació, persona o lloc)", "_Ich gehe ==zum== Arzt._"],
-            ["**gegenüber**", "davant de / enfront de", "_Die Bank ist ==dem Park== gegenüber._"]
+            ["!!**aus**!!", "de (origen, procedència, material)", "_!!Ich komme ==aus der== Schweiz.!!_"],
+            ["!!**bei**!!", "a casa de / a (empresa) / prop de", "_!!Ich wohne ==bei meinen== Eltern.!!_"],
+            ["!!**mit**!!", "amb (companyia, instrument, mitjà)", "_!!Ich fahre ==mit dem== Bus.!!_"],
+            ["!!**nach**!!", "cap a (ciutats/països sense article) / després de", "_!!Wir fliegen ==nach== Berlin.!!_"],
+            ["!!**seit**!!", "des de (fa...) — temps continu", "_!!Ich lerne ==seit einem== Jahr Deutsch.!!_"],
+            ["!!**von**!!", "de (procedència, agent, possessió)", "_!!Das ist ein Geschenk ==von meiner== Mutter.!!_"],
+            ["!!**zu**!!", "a / cap a (destinació, persona o lloc)", "_!!Ich gehe ==zum== Arzt.!!_"],
+            ["!!**gegenüber**!!", "davant de / enfront de", "_!!Die Bank ist ==dem Park== gegenüber.!!_"]
           ]
         },
         {
@@ -76,7 +76,7 @@
         },
         {
           "type": "explanation",
-          "body": "Observa bé:\n\n- **Masculí i neutre comparteixen forma en datiu**: tots dos fan ==**dem**==.\n- **El femení és la forma _der_**, que en nominatiu era masculí — compte amb la confusió.\n- **El plural afegeix _-n_ al final del substantiu** (a més de l'article _den_): _die Kinder_ → ==_den Kindern_==. Si el substantiu ja acaba en _-n_ o _-s_, no se'n posa un altre.\n\n**Beispiele:**\n\n- _mit ==dem== Auto_ (el cotxe, neutre)\n- _mit ==der== Freundin_ (l'amiga, femení)\n- _mit ==dem== Bus_ (el bus, masculí)\n- _mit ==den== Freunden_ (els amics, plural → _Freunde_ + _-n_)"
+          "body": "Observa bé:\n\n- **Masculí i neutre comparteixen forma en datiu**: tots dos fan ==**dem**==.\n- **El femení és la forma _der_**, que en nominatiu era masculí — compte amb la confusió.\n- **El plural afegeix _-n_ al final del substantiu** (a més de l'article _den_): _die Kinder_ → ==_den Kindern_==. Si el substantiu ja acaba en _-n_ o _-s_, no se'n posa un altre.\n\n**Beispiele:**\n\n- _!!mit ==dem== Auto!!_ (el cotxe, neutre)\n- _!!mit ==der== Freundin!!_ (l'amiga, femení)\n- _!!mit ==dem== Bus!!_ (el bus, masculí)\n- _!!mit ==den== Freunden!!_ (els amics, plural → _Freunde_ + _-n_)"
         },
         {
           "type": "callout",
@@ -97,12 +97,12 @@
           "type": "table",
           "headers": ["Expansió", "Contracció", "Exemple"],
           "rows": [
-            ["_an + dem_", "**am**", "_==am== Bahnhof_ (a l'estació)"],
-            ["_in + dem_", "**im**", "_==im== Supermarkt_"],
-            ["_bei + dem_", "**beim**", "_==beim== Arzt_"],
-            ["_von + dem_", "**vom**", "_==vom== Vater_"],
-            ["_zu + dem_", "**zum**", "_==zum== Arzt_"],
-            ["_zu + der_", "**zur**", "_==zur== Schule_"]
+            ["_an + dem_", "!!**am**!!", "_!!==am== Bahnhof!!_ (a l'estació)"],
+            ["_in + dem_", "!!**im**!!", "_!!==im== Supermarkt!!_"],
+            ["_bei + dem_", "!!**beim**!!", "_!!==beim== Arzt!!_"],
+            ["_von + dem_", "!!**vom**!!", "_!!==vom== Vater!!_"],
+            ["_zu + dem_", "!!**zum**!!", "_!!==zum== Arzt!!_"],
+            ["_zu + der_", "!!**zur**!!", "_!!==zur== Schule!!_"]
           ]
         },
         {
@@ -134,17 +134,17 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Paranys típics de catalanoparlants\n\n**1. _nach_ vs. _zu_** — tots dos es tradueixen sovint per \"a / cap a\", però es reparteixen la feina:\n\n- _nach_ + ciutats, països (sense article), punts cardinals, _Hause_: _nach Berlin_, _nach Spanien_, _nach Hause_.\n- _zu_ + persones o institucions: _zum Arzt_, _zur Schule_, _zu meinem Freund_.\n- Incorrecte: _Ich gehe ==nach== dem Arzt._ → Correcte: _Ich gehe ==zum== Arzt._\n\n**2. _seit_ no és \"desde hace\" amb pretèrit** — en alemany, _seit_ + datiu s'usa amb **present** per a accions que continuen:\n\n- Correcte: _Ich lerne ==seit zwei Jahren== Deutsch._ (Fa dos anys que aprenc…)\n- Incorrecte: _Ich habe seit zwei Jahren Deutsch gelernt._ (això vol dir \"ho vaig aprendre durant dos anys\", ja no ho faig).\n\n**3. _mit_ inclou el mitjà de transport** — en català dius \"vaig **en** tren\"; en alemany: _Ich fahre ==mit dem== Zug._\n\n**4. Plural amb _-n_** — no t'oblidis d'afegir _-n_ al substantiu plural en datiu si no l'acaba ja:\n\n- _die Kinder_ → _mit den Kinder==n==_\n- _die Freunde_ → _bei den Freunde==n==_"
+          "body": "#### Paranys típics de catalanoparlants\n\n**1. _nach_ vs. _zu_** — tots dos es tradueixen sovint per \"a / cap a\", però es reparteixen la feina:\n\n- _nach_ + ciutats, països (sense article), punts cardinals, _Hause_: _!!nach Berlin!!_, _!!nach Spanien!!_, _!!nach Hause!!_.\n- _zu_ + persones o institucions: _!!zum Arzt!!_, _!!zur Schule!!_, _!!zu meinem Freund!!_.\n- Incorrecte: _Ich gehe ==nach== dem Arzt._ → Correcte: _!!Ich gehe ==zum== Arzt.!!_\n\n**2. _seit_ no és \"desde hace\" amb pretèrit** — en alemany, _seit_ + datiu s'usa amb **present** per a accions que continuen:\n\n- Correcte: _!!Ich lerne ==seit zwei Jahren== Deutsch.!!_ (Fa dos anys que aprenc…)\n- Incorrecte: _Ich habe seit zwei Jahren Deutsch gelernt._ (això vol dir \"ho vaig aprendre durant dos anys\", ja no ho faig).\n\n**3. _mit_ inclou el mitjà de transport** — en català dius \"vaig **en** tren\"; en alemany: _!!Ich fahre ==mit dem== Zug.!!_\n\n**4. Plural amb _-n_** — no t'oblidis d'afegir _-n_ al substantiu plural en datiu si no l'acaba ja:\n\n- _die Kinder_ → _!!mit den Kinder==n==!!_\n- _die Freunde_ → _!!bei den Freunde==n==!!_"
         },
         {
           "type": "callout",
           "variant": "warning",
           "title": "_bei_ no és _mit_",
-          "body": "_bei_ és localització (\"a casa de\", \"a l'empresa X\"); _mit_ és companyia.\n\n- _Ich wohne **bei** meinen Eltern._ (visc a casa dels pares)\n- _Ich wohne **mit** meinen Eltern._ (visc amb els pares — convivència, pot ser a qualsevol lloc)"
+          "body": "_bei_ és localització (\"a casa de\", \"a l'empresa X\"); _mit_ és companyia.\n\n- _!!Ich wohne **bei** meinen Eltern.!!_ (visc a casa dels pares)\n- _!!Ich wohne **mit** meinen Eltern.!!_ (visc amb els pares — convivència, pot ser a qualsevol lloc)"
         },
         {
           "type": "explanation",
-          "body": "**Recordatori plural _-n_**: excepcions a la marca de plural en datiu són els plurals en _-s_ o en _-n_: _mit den Autos_ (no \"Autosn\"), _mit den Frauen_ (ja acaba en _-n_)."
+          "body": "**Recordatori plural _-n_**: excepcions a la marca de plural en datiu són els plurals en _-s_ o en _-n_: _!!mit den Autos!!_ (no \"Autosn\"), _!!mit den Frauen!!_ (ja acaba en _-n_)."
         }
       ]
     },
@@ -190,9 +190,9 @@
           "title": "Taula síntesi: articles en datiu",
           "headers": ["", "**Masculí**", "**Femení**", "**Neutre**", "**Plural**"],
           "rows": [
-            ["Determinat", "==**dem**==", "==**der**==", "==**dem**==", "==**den**== + _-n_"],
-            ["Indeterminat", "**einem**", "**einer**", "**einem**", "— / _-n_"],
-            ["Exemple", "_mit dem Mann_", "_mit der Frau_", "_mit dem Kind_", "_mit den Kindern_"]
+            ["Determinat", "!!==**dem**==!!", "!!==**der**==!!", "!!==**dem**==!!", "!!==**den**== + _-n_!!"],
+            ["Indeterminat", "!!**einem**!!", "!!**einer**!!", "!!**einem**!!", "— / _-n_"],
+            ["Exemple", "_!!mit dem Mann!!_", "_!!mit der Frau!!_", "_!!mit dem Kind!!_", "_!!mit den Kindern!!_"]
           ]
         },
         {
@@ -203,7 +203,7 @@
           "type": "callout",
           "variant": "tip",
           "title": "Repte final per a casa",
-          "body": "Escriu 5 oracions sobre el teu dia a dia fent servir almenys 5 preposicions diferents del grup dativ. Exemple: _Ich fahre ==mit dem== Bus ==zur== Arbeit. ==Nach der== Arbeit gehe ich ==zu meinem== Freund. ==Seit einem== Jahr wohne ich ==bei meinen== Eltern…_\n\nQuan dominis aquestes 8, el datiu ja no et farà por."
+          "body": "Escriu 5 oracions sobre el teu dia a dia fent servir almenys 5 preposicions diferents del grup dativ. Exemple: _!!Ich fahre ==mit dem== Bus ==zur== Arbeit. ==Nach der== Arbeit gehe ich ==zu meinem== Freund. ==Seit einem== Jahr wohne ich ==bei meinen== Eltern.!!_\n\nQuan dominis aquestes 8, el datiu ja no et farà por."
         }
       ]
     }
