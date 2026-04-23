@@ -30,7 +30,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### _schon_ i _erst_ · durades (_kurz/lange_)\n\nQuan parlem de **quant de temps** fa que algú fa una cosa o té una edat, tenim dues perspectives oposades:\n\n- **==schon==** → la durada sembla ==llarga== (\"ja\", \"fins i tot\").\n- **==erst==** → la durada sembla ==curta== (\"només\", \"tot just\").\n\n#### Exemples\n\n> _Marina lebt **schon** 10 Jahre in Deutschland, Juan **erst** zwei Jahre._\n> Marina ja fa 10 anys que viu a Alemanya, Juan només en fa dos.\n\n> _Juan arbeitet **schon** zwei Jahre in Berlin, Zdenka **erst** fünf Monate._\n> Juan ja fa dos anys que treballa a Berlín, Zdenka només cinc mesos.\n\n> _Anna ist **schon** acht Jahre alt, ihr Bruder Hans ist **erst** fünf._\n> L'Anna ja té vuit anys, el seu germà Hans només en té cinc.\n\nEl parlant **compara** i **valora**: 10 anys semblen molts, 2 pocs. No és una qüestió objectiva; és la seva percepció."
+          "body": "#### _schon_ i _erst_ · durades (_kurz/lange_)\n\nQuan parlem de **quant de temps** fa que algú fa una cosa o té una edat, tenim dues perspectives oposades:\n\n- **==schon==** → la durada sembla ==llarga== (\"ja\", \"fins i tot\").\n- **==erst==** → la durada sembla ==curta== (\"només\", \"tot just\").\n\n#### Exemples\n\n> _!!Marina lebt **schon** 10 Jahre in Deutschland, Juan **erst** zwei Jahre.!!_\n> Marina ja fa 10 anys que viu a Alemanya, Juan només en fa dos.\n\n> _!!Juan arbeitet **schon** zwei Jahre in Berlin, Zdenka **erst** fünf Monate.!!_\n> Juan ja fa dos anys que treballa a Berlín, Zdenka només cinc mesos.\n\n> _!!Anna ist **schon** acht Jahre alt, ihr Bruder Hans ist **erst** fünf.!!_\n> L'Anna ja té vuit anys, el seu germà Hans només en té cinc.\n\nEl parlant **compara** i **valora**: 10 anys semblen molts, 2 pocs. No és una qüestió objectiva; és la seva percepció."
         },
         {
           "type": "callout",
@@ -45,7 +45,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### _schon_ i _erst_ · moments puntuals (_früh/spät_)\n\nQuan parlem d'una **hora concreta** (no d'una durada), la lògica canvia:\n\n- **==schon==** + hora → ==d'hora, abans de l'esperat== (\"ja\").\n- **==erst==** + hora → ==tard, més tard del que caldria== (\"no... fins\").\n\n#### Exemples\n\n> _Ich stehe **schon** um 6 Uhr auf, meine Schwester steht **erst** um 7 Uhr auf._\n> Jo m'aixeco (ja) a les 6, la meva germana no s'aixeca fins a les 7.\n\n> _Mein Bruder steht am Wochenende **schon** um 8 Uhr auf, meine Eltern **erst** um 10 Uhr._\n> El meu germà s'aixeca el cap de setmana (ja) a les 8, els meus pares no fins a les 10."
+          "body": "#### _schon_ i _erst_ · moments puntuals (_früh/spät_)\n\nQuan parlem d'una **hora concreta** (no d'una durada), la lògica canvia:\n\n- **==schon==** + hora → ==d'hora, abans de l'esperat== (\"ja\").\n- **==erst==** + hora → ==tard, més tard del que caldria== (\"no... fins\").\n\n#### Exemples\n\n> _!!Ich stehe **schon** um 6 Uhr auf, meine Schwester steht **erst** um 7 Uhr auf.!!_\n> Jo m'aixeco (ja) a les 6, la meva germana no s'aixeca fins a les 7.\n\n> _!!Mein Bruder steht am Wochenende **schon** um 8 Uhr auf, meine Eltern **erst** um 10 Uhr.!!_\n> El meu germà s'aixeca el cap de setmana (ja) a les 8, els meus pares no fins a les 10."
         },
         {
           "type": "callout",
@@ -60,7 +60,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### _schon_ i _noch_ · continuïtat (ja / encara)\n\nAquí entra **==noch==**, que indica que una acció o estat **encara continua**:\n\n- **_schon_** → ja passa / ja ha arribat a aquest punt.\n- **_noch_** → ==encara== dura / no s'ha acabat.\n\n#### Exemples\n\n> _Ich mache in der Arbeit **schon** um 17 Uhr Schluss, meine Kollegen arbeiten **noch** bis 18 Uhr._\n> Jo ja plego de la feina a les 17, els meus companys encara treballen fins a les 18.\n\n> _Anna hat heute Geburtstag. Sie ist **schon** acht Jahre alt. Ihre Freundin Miriam hat **erst** nächste Woche Geburtstag. Sie ist **noch** sieben._\n> L'Anna fa anys avui. Ja té vuit anys. La seva amiga Miriam no fa anys fins la setmana que ve. Encara en té set."
+          "body": "#### _schon_ i _noch_ · continuïtat (ja / encara)\n\nAquí entra **==noch==**, que indica que una acció o estat **encara continua**:\n\n- **_schon_** → ja passa / ja ha arribat a aquest punt.\n- **_noch_** → ==encara== dura / no s'ha acabat.\n\n#### Exemples\n\n> _!!Ich mache in der Arbeit **schon** um 17 Uhr Schluss, meine Kollegen arbeiten **noch** bis 18 Uhr.!!_\n> Jo ja plego de la feina a les 17, els meus companys encara treballen fins a les 18.\n\n> _!!Anna hat heute Geburtstag. Sie ist **schon** acht Jahre alt. Ihre Freundin Miriam hat **erst** nächste Woche Geburtstag. Sie ist **noch** sieben.!!_\n> L'Anna fa anys avui. Ja té vuit anys. La seva amiga Miriam no fa anys fins la setmana que ve. Encara en té set."
         },
         {
           "type": "callout",
@@ -82,9 +82,9 @@
           "title": "Els tres adverbis en contrast",
           "headers": ["Adverbi", "Matís", "Equivalent CA", "Trampa ES"],
           "rows": [
-            ["_**schon**_", "abans / ja fet / molt", "ja", "\"ya\" sovint funciona"],
-            ["_**noch**_", "continua / encara no acabat", "encara", "\"todavía\" / \"aún\""],
-            ["_**erst**_", "poc / tard / tot just", "només, no... fins", "==NO és \"ya\"=="]
+            ["_!!**schon**!!_", "abans / ja fet / molt", "ja", "\"ya\" sovint funciona"],
+            ["_!!**noch**!!_", "continua / encara no acabat", "encara", "\"todavía\" / \"aún\""],
+            ["_!!**erst**!!_", "poc / tard / tot just", "només, no... fins", "==NO és \"ya\"=="]
           ]
         },
         {
@@ -118,7 +118,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Trampa: el \"ya\" del castellà\n\nUn castellanoparlant tendeix a posar **_schon_** a tot arreu on diria \"ya\". Però això falla en diversos casos:\n\n- _Ya no trabajo aquí_ → ==_**Ich arbeite nicht mehr hier**._== (no _schon_)\n- _Ya solo tengo 5 euros_ → ==_**Ich habe nur noch 5 Euro**._== (no _schon_)\n- _Solo llevo 2 días aquí_ → ==_**Ich bin erst zwei Tage hier**._== (no _schon_)"
+          "body": "#### Trampa: el \"ya\" del castellà\n\nUn castellanoparlant tendeix a posar **_schon_** a tot arreu on diria \"ya\". Però això falla en diversos casos:\n\n- _Ya no trabajo aquí_ → ==_!!**Ich arbeite nicht mehr hier.**!!_== (no _schon_)\n- _Ya solo tengo 5 euros_ → ==_!!**Ich habe nur noch 5 Euro.**!!_== (no _schon_)\n- _Solo llevo 2 días aquí_ → ==_!!**Ich bin erst zwei Tage hier.**!!_== (no _schon_)"
         },
         {
           "type": "callout",
@@ -140,10 +140,10 @@
           "title": "_erst_ segons el context",
           "headers": ["Context", "Oració alemanya", "Traducció catalana"],
           "rows": [
-            ["Durada curta", "_Ich bin **erst** zwei Tage hier._", "Només fa dos dies que sóc aquí."],
-            ["Edat poca", "_Sie ist **erst** fünf Jahre alt._", "Només té cinc anys."],
-            ["Hora tardana", "_Ich stehe **erst** um 10 Uhr auf._", "No m'aixeco fins a les 10."],
-            ["Data futura", "_Miriam hat **erst** nächste Woche Geburtstag._", "Miriam no fa anys fins la setmana que ve."]
+            ["Durada curta", "_!!Ich bin **erst** zwei Tage hier.!!_", "Només fa dos dies que sóc aquí."],
+            ["Edat poca", "_!!Sie ist **erst** fünf Jahre alt.!!_", "Només té cinc anys."],
+            ["Hora tardana", "_!!Ich stehe **erst** um 10 Uhr auf.!!_", "No m'aixeco fins a les 10."],
+            ["Data futura", "_!!Miriam hat **erst** nächste Woche Geburtstag.!!_", "Miriam no fa anys fins la setmana que ve."]
           ]
         }
       ]
@@ -184,9 +184,9 @@
           "title": "24.1 Els tres adverbis en una línia",
           "headers": ["Adverbi", "Funció", "Exemple", "Traducció"],
           "rows": [
-            ["_schon_", "assolit / molt / d'hora", "_Er ist **schon** da._", "Ja és aquí."],
-            ["_noch_", "continua / no acabat", "_Er arbeitet **noch**._", "Encara treballa."],
-            ["_erst_", "poc / tard / tot just", "_Er kommt **erst** morgen._", "No ve fins demà."]
+            ["_schon_", "assolit / molt / d'hora", "_!!Er ist **schon** da.!!_", "Ja és aquí."],
+            ["_noch_", "continua / no acabat", "_!!Er arbeitet **noch**.!!_", "Encara treballa."],
+            ["_erst_", "poc / tard / tot just", "_!!Er kommt **erst** morgen.!!_", "No ve fins demà."]
           ]
         },
         {
