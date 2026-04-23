@@ -10,8 +10,10 @@ import { RichStringSchema } from './richText.js';
  * Els altres tipus s'afegiran a mesura que toquin.
  */
 
-const EXERCISE_ID_REGEX = /^A\d[ab]-\d+-ex-\d+$/;
-const TOPIC_ID_REGEX = /^A\d[ab]-\d+$/;
+// Accepta tant ids de gramàtica (A1a-14-ex-02) com de vocabulari
+// (A1a-V3-ex-01). El prefix `V` distingeix temes lèxics.
+const EXERCISE_ID_REGEX = /^A\d[ab]-(V?\d+)-ex-\d+$/;
+const TOPIC_ID_REGEX = /^A\d[ab]-(V?\d+)$/;
 
 // ─── Stimulus ────────────────────────────────────────────────
 

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-V3-ex-02",
+  "topicId": "A1a-V3",
+  "title": "La família de la Lisa",
+  "prompt": "Completa la presentació amb el possessiu correcte o el vocabulari familiar que hi falta.",
+  "difficulty": 2,
+  "tags": ["integration", "possessivpronomen", "familie"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Ich heiße Lisa.\n{{1}} Vater heißt Klaus.\n{{2}} Mutter heißt Anna.\nIch habe einen {{3}} (germà). Er heißt Max.\nIch habe auch eine {{4}} (germana). Sie heißt Sara.\n{{5}} Oma wohnt in Berlin. Sie ist {{6}} (viuda).",
+    "blanks": [
+      { "id": "1", "label": "el meu (majúscula a inici)" },
+      { "id": "2", "label": "la meva (majúscula a inici)" },
+      { "id": "3", "label": "germà (de.)" },
+      { "id": "4", "label": "germana (de.)" },
+      { "id": "5", "label": "la meva (majúscula a inici)" },
+      { "id": "6", "label": "viuda (adj. invariable)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "possessiu" },
+      { "blankId": "2", "placeholder": "possessiu" },
+      { "blankId": "3", "placeholder": "membre" },
+      { "blankId": "4", "placeholder": "membre" },
+      { "blankId": "5", "placeholder": "possessiu" },
+      { "blankId": "6", "placeholder": "estat civil" }
+    ],
+    "caseSensitive": true,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Mein"],
+      "2": ["Meine"],
+      "3": ["Bruder"],
+      "4": ["Schwester"],
+      "5": ["Meine"],
+      "6": ["verwitwet"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Ja pots parlar de la teva família. Fixa't en dos punts: _Vater_ i _Oma_ són dues paraules molt diferents en gènere, però les dues formes possessives segueixen la regla d'arrel + terminació. _verwitwet_ és l'adjectiu; _Witwe_ seria el substantiu.",
+      "references": ["A1a-7"]
+    },
+    "incorrect": {
+      "default": "Tres claus: (a) a inici de oració el possessiu sempre va en **majúscula**; (b) _Bruder_ i _Schwester_ comencen també en majúscula perquè són substantius alemanys; (c) l'estat civil \"viuda\" és _verwitwet_, amb **ver-** (no _geheiratet_ ni _Witwe_)."
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-V3-ex-01",
+  "topicId": "A1a-V3",
+  "title": "Possessius amb membres de la família",
+  "prompt": "Tria el possessiu correcte segons el gènere i el nombre del membre familiar.",
+  "difficulty": 1,
+  "tags": ["possessivpronomen", "familie"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Das ist {{1}} Vater.\nDas ist {{2}} Mutter.\nDas sind {{3}} Kinder.\nDas ist {{4}} Bruder.\nDas sind {{5}} Eltern.",
+    "blanks": [
+      { "id": "1", "label": "el meu (masc.)" },
+      { "id": "2", "label": "la meva (fem.)" },
+      { "id": "3", "label": "els meus (pl.)" },
+      { "id": "4", "label": "el meu (masc.)" },
+      { "id": "5", "label": "els meus (pl.)" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["mein", "meine"] },
+      { "blankId": "2", "options": ["mein", "meine"] },
+      { "blankId": "3", "options": ["mein", "meine"] },
+      { "blankId": "4", "options": ["mein", "meine"] },
+      { "blankId": "5", "options": ["mein", "meine"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": { "1": "mein", "2": "meine", "3": "meine", "4": "mein", "5": "meine" }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Perfecte. Recorda: _mein_ davant masculí i neutre, _meine_ davant femení i plural. _Vater_ és masculí → _mein_; _Mutter_ és femení → _meine_; _Kinder_ i _Eltern_ són plurals → _meine_."
+    },
+    "incorrect": {
+      "default": "Revisa el gènere: _der Vater_ (m.) i _der Bruder_ (m.) → **mein**. _die Mutter_ (f.) → **meine**. _die Kinder_ i _die Eltern_ són **plurals** → **meine**."
+    }
+  }
+}

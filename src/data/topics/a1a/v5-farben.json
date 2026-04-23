@@ -99,6 +99,12 @@
       ]
     },
     {
+      "id": "check-colors",
+      "kind": "exercise",
+      "exerciseId": "A1a-V5-ex-01",
+      "variant": "quick-check"
+    },
+    {
       "id": "atributivo-nota",
       "kind": "narrative",
       "heading": "Un tast d'allò que ve després",
@@ -123,6 +129,12 @@
         { "bad": "!!die Tasche ist schwarze!!", "good": "!!die Tasche ist schwarz!!", "why": "Mateix error: forma predicativa = forma bàsica, sense terminació." },
         { "bad": "Welche Farbe ist das Auto?", "good": "!!Welche Farbe hat das Auto?!!", "why": "La pregunta canònica usa _haben_ (tenir): \"Quin color té...?\". Fàcil confondre amb _sein_." }
       ]
+    },
+    {
+      "id": "check-final",
+      "kind": "exercise",
+      "exerciseId": "A1a-V5-ex-02",
+      "variant": "assessment"
     },
     {
       "id": "synthesis",

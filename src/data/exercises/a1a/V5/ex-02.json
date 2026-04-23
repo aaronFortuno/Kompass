@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-V5-ex-02",
+  "topicId": "A1a-V5",
+  "title": "Descripció d'una casa",
+  "prompt": "Completa la descripció amb els colors adequats, en forma predicativa (darrere del verb).",
+  "difficulty": 2,
+  "tags": ["farben", "integration"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Ich habe ein Haus.\nMein Hund ist {{1}} (marró).\nMeine Katze ist {{2}} (negra).\nMein Auto ist {{3}} (vermell).\nDer Himmel heute ist {{4}} (gris).\nDie Blumen im Garten sind {{5}} (grogues).",
+    "blanks": [
+      { "id": "1", "label": "marró" },
+      { "id": "2", "label": "negra" },
+      { "id": "3", "label": "vermell" },
+      { "id": "4", "label": "gris" },
+      { "id": "5", "label": "grogues" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "color" },
+      { "blankId": "2", "placeholder": "color" },
+      { "blankId": "3", "placeholder": "color" },
+      { "blankId": "4", "placeholder": "color" },
+      { "blankId": "5", "placeholder": "color" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["braun"],
+      "2": ["schwarz"],
+      "3": ["rot"],
+      "4": ["grau"],
+      "5": ["gelb"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Integració completa. Tres idees clau: (a) la forma predicativa del color **mai no canvia**, ni per singular/plural (_Blumen sind gelb_, no _gelbe_); (b) _weiß_ s'escriu amb **ß** a Alemanya, _weiss_ només a Suïssa; (c) la pregunta que engega tot això és **_Welche Farbe hat...?_**"
+    },
+    "incorrect": {
+      "default": "Dues claus: (a) darrere del verb el color no porta terminació — _ist rot_, no _ist rote_; (b) en plural canvia el verb (_sind_) però **no el color**: _Die Blumen sind gelb_, no _gelbe_."
+    }
+  }
+}

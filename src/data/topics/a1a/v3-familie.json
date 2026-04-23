@@ -59,6 +59,12 @@
       }
     },
     {
+      "id": "check-nuclear",
+      "kind": "exercise",
+      "exerciseId": "A1a-V3-ex-01",
+      "variant": "quick-check"
+    },
+    {
       "id": "extensa",
       "kind": "narrative",
       "heading": "La família extensa",
@@ -130,6 +136,12 @@
         { "bad": "!!Ich habe eine Geschwister!!", "good": "!!Ich habe einen Bruder!!", "why": "_Geschwister_ és plural: no es pot dir \"una germana/germà\" amb aquesta paraula. Per a un sol membre, fes servir _Bruder_ o _Schwester_." },
         { "bad": "!!Ich bin geheiratet!!", "good": "!!Ich bin verheiratet!!", "why": "El participi d'estat és _verheiratet_ (amb _ver-_). _Geheiratet_ existeix però és el Perfekt del verb (\"he casat algú\"), no l'estat civil." }
       ]
+    },
+    {
+      "id": "check-final",
+      "kind": "exercise",
+      "exerciseId": "A1a-V3-ex-02",
+      "variant": "assessment"
     },
     {
       "id": "synthesis",

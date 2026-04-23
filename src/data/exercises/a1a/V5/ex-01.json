@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-V5-ex-01",
+  "topicId": "A1a-V5",
+  "title": "Quin color tenen?",
+  "prompt": "Completa cada frase amb el color correcte en alemany.",
+  "difficulty": 1,
+  "tags": ["farben", "predicative"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Der Apfel ist {{1}} (vermell).\nDie Banane ist {{2}} (groga).\nDer Himmel ist {{3}} (blau).\nDas Gras ist {{4}} (verd).\nDie Schokolade ist {{5}} (marró)."
+  , "blanks": [
+      { "id": "1", "label": "vermell" },
+      { "id": "2", "label": "groga" },
+      { "id": "3", "label": "blau" },
+      { "id": "4", "label": "verd" },
+      { "id": "5", "label": "marró" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "color" },
+      { "blankId": "2", "placeholder": "color" },
+      { "blankId": "3", "placeholder": "color" },
+      { "blankId": "4", "placeholder": "color" },
+      { "blankId": "5", "placeholder": "color" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["rot"],
+      "2": ["gelb"],
+      "3": ["blau"],
+      "4": ["grün", "gruen"],
+      "5": ["braun"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Tots ben dits. Fixa't que el color va **darrere del verb** i no canvia mai: _Der Apfel ist rot_, _Die Banane ist gelb_ — sempre la forma bàsica."
+    },
+    "incorrect": {
+      "default": "Recorda la regla predicativa: el color darrere del verb _ist / sind_ **no té terminació**. _rote_ només apareix davant del substantiu (_das rote Auto_, A2). Aquí sempre forma bàsica: _rot, gelb, blau, grün, braun_."
+    }
+  }
+}
