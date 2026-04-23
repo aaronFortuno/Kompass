@@ -25,7 +25,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### L'estructura: Wie + Adjektiv/Adverb\n\nLa fórmula és sempre la mateixa:\n\n> **Wie** + **adjectiu/adverbi** + **verb** + **subjecte** + ...?\n\n**Beispiele:**\n\n- _==Wie alt== **bist du**?_ → Quants anys tens? (literalment: \"com de vell ets?\")\n- _==Wie groß== **ist die Wohnung**?_ → Com és de gran el pis?\n- _==Wie teuer== **ist der Computer**?_ → Quant val l'ordinador?\n\nFixa't que en alemany ==l'adjectiu va just després de _wie_==, sense canviar de forma (és la forma predicativa, invariable). No hi ha declinació ni concordança: sempre _wie alt_, _wie groß_, _wie teuer_, per a qualsevol substantiu."
+          "body": "#### L'estructura: Wie + Adjektiv/Adverb\n\nLa fórmula és sempre la mateixa:\n\n> **Wie** + **adjectiu/adverbi** + **verb** + **subjecte** + ...?\n\n**Beispiele:**\n\n- _!!==Wie alt== **bist du**?!!_ → Quants anys tens? (literalment: \"com de vell ets?\")\n- _!!==Wie groß== **ist die Wohnung**?!!_ → Com és de gran el pis?\n- _!!==Wie teuer== **ist der Computer**?!!_ → Quant val l'ordinador?\n\nFixa't que en alemany ==l'adjectiu va just després de _wie_==, sense canviar de forma (és la forma predicativa, invariable). No hi ha declinació ni concordança: sempre _wie alt_, _wie groß_, _wie teuer_, per a qualsevol substantiu."
         },
         {
           "type": "callout",
@@ -47,15 +47,15 @@
           "title": "Catàleg de _wie + adjectiu_ (A1)",
           "headers": ["Wie + ...", "Traducció", "Propietat"],
           "rows": [
-            ["**wie alt**", "quants anys / quina edat", "edat"],
-            ["**wie groß**", "com de gran / quina mida", "mida general, alçada persones"],
-            ["**wie hoch**", "com d'alt / quant (imports)", "alçada objectes, preus abstractes"],
-            ["**wie teuer**", "quant val / quant costa", "preu concret"],
-            ["**wie lang(e)**", "quant temps / com de llarg", "durada o longitud"],
-            ["**wie weit**", "a quina distància", "distància"],
-            ["**wie oft**", "amb quina freqüència", "freqüència"],
-            ["**wie spät**", "quina hora és", "hora"],
-            ["**wie viel / wie viele**", "quant / quants", "quantitat"]
+            ["!!**wie alt**!!", "quants anys / quina edat", "edat"],
+            ["!!**wie groß**!!", "com de gran / quina mida", "mida general, alçada persones"],
+            ["!!**wie hoch**!!", "com d'alt / quant (imports)", "alçada objectes, preus abstractes"],
+            ["!!**wie teuer**!!", "quant val / quant costa", "preu concret"],
+            ["!!**wie lang(e)**!!", "quant temps / com de llarg", "durada o longitud"],
+            ["!!**wie weit**!!", "a quina distància", "distància"],
+            ["!!**wie oft**!!", "amb quina freqüència", "freqüència"],
+            ["!!**wie spät**!!", "quina hora és", "hora"],
+            ["!!**wie viel**!! / !!**wie viele**!!", "quant / quants", "quantitat"]
           ]
         },
         {
@@ -77,7 +77,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Pregunta i resposta\n\nUn patró molt útil: la **resposta** sol acabar amb ==la mesura + l'adjectiu== (o només la mesura, en contextos clars).\n\n**Edat:**\n- _Frage:_ _Wie alt bist du?_\n- _Antwort:_ _Ich bin **25 Jahre alt**._ / _Ich bin 25._\n\n**Superfície (pis):**\n- _Frage:_ _Wie groß ist die Wohnung?_\n- _Antwort:_ _Die Wohnung ist **100 qm** (Quadratmeter)._\n\n**Lloguer (preu abstracte):**\n- _Frage:_ _Wie hoch ist die Miete?_\n- _Antwort:_ _Die Miete ist **300 Euro**._\n\n**Preu concret d'un objecte:**\n- _Frage:_ _Wie teuer ist der Computer?_\n- _Antwort:_ _Der Computer kostet **800 Euro**._ / _Er ist **800 Euro teuer**._\n\n**Durada:**\n- _Frage:_ _Wie lange bleibst du in Deutschland?_\n- _Antwort:_ _Ich bleibe **drei Monate**._\n\n**Distància:**\n- _Frage:_ _Wie weit ist es von Hamburg nach Berlin?_\n- _Antwort:_ _Es sind **ungefähr 290 km**._\n\n**Freqüència:**\n- _Frage:_ _Wie oft spielst du Tennis?_\n- _Antwort:_ _Ich spiele **zweimal pro Woche** Tennis._"
+          "body": "#### Pregunta i resposta\n\nUn patró molt útil: la **resposta** sol acabar amb ==la mesura + l'adjectiu== (o només la mesura, en contextos clars).\n\n**Edat:**\n- _Frage:_ _!!Wie alt bist du?!!_\n- _Antwort:_ _!!Ich bin **25 Jahre alt**.!!_ / _!!Ich bin 25.!!_\n\n**Superfície (pis):**\n- _Frage:_ _!!Wie groß ist die Wohnung?!!_\n- _Antwort:_ _!!Die Wohnung ist **100 qm** Quadratmeter.!!_\n\n**Lloguer (preu abstracte):**\n- _Frage:_ _!!Wie hoch ist die Miete?!!_\n- _Antwort:_ _!!Die Miete ist **300 Euro**.!!_\n\n**Preu concret d'un objecte:**\n- _Frage:_ _!!Wie teuer ist der Computer?!!_\n- _Antwort:_ _!!Der Computer kostet **800 Euro**.!!_ / _!!Er ist **800 Euro teuer**.!!_\n\n**Durada:**\n- _Frage:_ _!!Wie lange bleibst du in Deutschland?!!_\n- _Antwort:_ _!!Ich bleibe **drei Monate**.!!_\n\n**Distància:**\n- _Frage:_ _!!Wie weit ist es von Hamburg nach Berlin?!!_\n- _Antwort:_ _!!Es sind **ungefähr 290 Kilometer**.!!_\n\n**Freqüència:**\n- _Frage:_ _!!Wie oft spielst du Tennis?!!_\n- _Antwort:_ _!!Ich spiele **zweimal pro Woche** Tennis.!!_"
         },
         {
           "type": "callout",
@@ -99,10 +99,10 @@
           "title": "Posicions sintàctiques",
           "headers": ["Posició 1", "Posició 2 (verb)", "Posició 3+"],
           "rows": [
-            ["Wie alt", "bist", "du?"],
-            ["Wie groß", "ist", "die Wohnung?"],
-            ["Wie hoch", "ist", "die Miete?"],
-            ["Wie oft", "spielst", "du Tennis?"]
+            ["!!Wie alt!!", "!!bist!!", "!!du?!!"],
+            ["!!Wie groß!!", "!!ist!!", "!!die Wohnung?!!"],
+            ["!!Wie hoch!!", "!!ist!!", "!!die Miete?!!"],
+            ["!!Wie oft!!", "!!spielst!!", "!!du Tennis?!!"]
           ]
         },
         {
@@ -118,7 +118,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Pitfalls i errors freqüents\n\n**1. Confondre _groß_ i _hoch_.**\nIncorrecte: _Wie groß ist der Berg?_ (per a una muntanya).\nCorrecte: _Wie hoch ist der Berg?_\nRecorda: _groß_ = mida general / superfície / alçada de persones. _hoch_ = alçada vertical d'objectes o imports abstractes (preu, lloguer).\n\n**2. Confondre _hoch_ i _teuer_ per a preus.**\nTots dos es fan servir, però amb matisos:\n- ==_Wie hoch ist die Miete / der Preis?_== → per a imports abstractes (lloguer, preu oficial, salari).\n- ==_Wie teuer ist der Computer / das Auto?_== → per al cost concret d'un objecte que compres.\n\n**3. Separar _wie_ de l'adjectiu.**\nIncorrecte: _Wie bist du alt?_\nCorrecte: _Wie alt bist du?_\nEl bloc _wie + adjectiu_ és inseparable en la pregunta.\n\n**4. Oblidar la _-e_ a _wie lange_.**\n- ==_Wie lang_== → per a longitud física (_com de llarg és el riu?_).\n- ==_Wie lange_== → per a durada (_quant temps?_).\nAl dubte, si parles de temps, posa-hi la _-e_: _wie lange_.\n\n**5. Traduir literalment del català.**\nEl català diu _quants anys tens?_ (amb \"quants\"). L'alemany ==no compta els anys==, descriu l'edat com una propietat: _wie alt bist du?_ → \"com de vell ets?\". Canvi de perspectiva.\n\n**6. _viel_ vs. _viele_.**\n- ==_Wie viel_== (sense _-e_) → per a quantitats incomptables: _Wie viel Milch?_, _Wie viel kostet das?_\n- ==_Wie viele_== (amb _-e_) → per a comptables en plural: _Wie viele Kinder hast du?_"
+          "body": "#### Pitfalls i errors freqüents\n\n**1. Confondre _groß_ i _hoch_.**\nIncorrecte: _Wie groß ist der Berg?_ (per a una muntanya).\nCorrecte: _!!Wie hoch ist der Berg?!!_\nRecorda: _groß_ = mida general / superfície / alçada de persones. _hoch_ = alçada vertical d'objectes o imports abstractes (preu, lloguer).\n\n**2. Confondre _hoch_ i _teuer_ per a preus.**\nTots dos es fan servir, però amb matisos:\n- ==_!!Wie hoch ist die Miete?!! / !!Wie hoch ist der Preis?!!_== → per a imports abstractes (lloguer, preu oficial, salari).\n- ==_!!Wie teuer ist der Computer?!! / !!Wie teuer ist das Auto?!!_== → per al cost concret d'un objecte que compres.\n\n**3. Separar _wie_ de l'adjectiu.**\nIncorrecte: _Wie bist du alt?_\nCorrecte: _!!Wie alt bist du?!!_\nEl bloc _wie + adjectiu_ és inseparable en la pregunta.\n\n**4. Oblidar la _-e_ a _wie lange_.**\n- ==_Wie lang_== → per a longitud física (_com de llarg és el riu?_).\n- ==_Wie lange_== → per a durada (_quant temps?_).\nAl dubte, si parles de temps, posa-hi la _-e_: _wie lange_.\n\n**5. Traduir literalment del català.**\nEl català diu _quants anys tens?_ (amb \"quants\"). L'alemany ==no compta els anys==, descriu l'edat com una propietat: _!!wie alt bist du?!!_ → \"com de vell ets?\". Canvi de perspectiva.\n\n**6. _viel_ vs. _viele_.**\n- ==_!!Wie viel!!_== (sense _-e_) → per a quantitats incomptables: _!!Wie viel Milch?!!_, _!!Wie viel kostet das?!!_\n- ==_!!Wie viele!!_== (amb _-e_) → per a comptables en plural: _!!Wie viele Kinder hast du?!!_"
         }
       ]
     },
@@ -151,7 +151,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Recapitulem\n\nHas vist que a l'alemany es pot preguntar per propietats concretes amb la fórmula ==**wie + adjectiu/adverbi**==. És un sistema molt regular:\n\n1. **Estructura fixa:** _Wie + adjectiu + verb + subjecte + ...?_\n2. **L'adjectiu no es declina:** sempre en forma bàsica (_alt_, _groß_, _hoch_, _teuer_...).\n3. **El bloc _wie + adj_ és inseparable** i va en primera posició; el verb en segona (V2).\n4. **Cada propietat té el seu adjectiu:** edat → _alt_, superfície → _groß_, alçada/import → _hoch_, preu d'objecte → _teuer_, durada → _lange_, distància → _weit_, freqüència → _oft_.\n5. **La resposta** sol tenir format _número + unitat_ (+ adjectiu repetit opcionalment: _25 Jahre **alt**_, _800 Euro **teuer**_).\n\nEl punt crític per al catalanoparlant és **triar l'adjectiu correcte**, especialment:\n\n- ==_groß_ vs _hoch_== (mida general vs alçada vertical / imports).\n- ==_hoch_ vs _teuer_== (import abstracte vs cost concret).\n- ==_lang_ vs _lange_== (longitud vs durada).\n\nAmb aquesta eina ja pots sobreviure a situacions pràctiques molt habituals: llogar un pis, comprar en una botiga, demanar informació turística, parlar d'edats i distàncies.\n\n**Exemple integrador — buscar pis:**\n\n> _— Hallo! Ich suche eine Wohnung. **Wie groß** ist sie? **Wie hoch** ist die Miete? Und **wie weit** ist es bis zum Zentrum?_\n> _— Die Wohnung ist 70 qm, die Miete ist 550 Euro und es sind nur 10 Minuten zu Fuß bis zum Zentrum._\n\nA les pròximes lliçons continuaràs expandint el repertori d'estructures per desenvolupar-te en contextos quotidians.\n\n_Fonts consultades: Deutsche Welle — \"Deutsch lernen\" (Nicos Weg A1), Goethe-Institut — materials A1, dwds.de (entrades de_ hoch_,_ teuer_,_ lang_/_lange_)._"
+          "body": "#### Recapitulem\n\nHas vist que a l'alemany es pot preguntar per propietats concretes amb la fórmula ==**wie + adjectiu/adverbi**==. És un sistema molt regular:\n\n1. **Estructura fixa:** _Wie + adjectiu + verb + subjecte + ...?_\n2. **L'adjectiu no es declina:** sempre en forma bàsica (_alt_, _groß_, _hoch_, _teuer_...).\n3. **El bloc _wie + adj_ és inseparable** i va en primera posició; el verb en segona (V2).\n4. **Cada propietat té el seu adjectiu:** edat → _alt_, superfície → _groß_, alçada/import → _hoch_, preu d'objecte → _teuer_, durada → _lange_, distància → _weit_, freqüència → _oft_.\n5. **La resposta** sol tenir format _número + unitat_ (+ adjectiu repetit opcionalment: _25 Jahre **alt**_, _800 Euro **teuer**_).\n\nEl punt crític per al catalanoparlant és **triar l'adjectiu correcte**, especialment:\n\n- ==_groß_ vs _hoch_== (mida general vs alçada vertical / imports).\n- ==_hoch_ vs _teuer_== (import abstracte vs cost concret).\n- ==_lang_ vs _lange_== (longitud vs durada).\n\nAmb aquesta eina ja pots sobreviure a situacions pràctiques molt habituals: llogar un pis, comprar en una botiga, demanar informació turística, parlar d'edats i distàncies.\n\n**Exemple integrador — buscar pis:**\n\n> _!!— Hallo! Ich suche eine Wohnung. **Wie groß** ist sie? **Wie hoch** ist die Miete? Und **wie weit** ist es bis zum Zentrum?!!_\n> _!!— Die Wohnung ist 70 qm, die Miete ist 550 Euro und es sind nur 10 Minuten zu Fuß bis zum Zentrum.!!_\n\nA les pròximes lliçons continuaràs expandint el repertori d'estructures per desenvolupar-te en contextos quotidians.\n\n_Fonts consultades: Deutsche Welle — \"Deutsch lernen\" (Nicos Weg A1), Goethe-Institut — materials A1, dwds.de (entrades de_ hoch_,_ teuer_,_ lang_/_lange_)._"
         }
       ]
     }
