@@ -1,34 +1,43 @@
 # Música de fons — atribucions
 
-Totes les pistes són de domini públic (CC0) o amb llicència Creative Commons. Es guarden a `public/music/` i es serveixen com a estàtics sota `/Kompass/music/<slug>.mp3`. Els originals sense tocar es conserven a `downloaded-music/` (ignorat per git).
+Totes les pistes són CC0 / Pixabay License (ús comercial lliure, sense atribució requerida). Es guarden a `public/music/` i es serveixen com a estàtics sota `/Kompass/music/<slug>.mp3`. Els originals sense tocar es conserven a `downloaded-music-v2/` (ignorat per git).
 
-> **Nota sobre mides:** Free Music Archive només ofereix les pistes en MP3 320 kbps, per això els fitxers pesen entre 5-6 MB enlloc dels ~3 MB objectiu a 128 kbps. Si calgués reduir pes, es podrien transcodificar a 128 kbps amb `ffmpeg` (no disponible en aquest entorn). Tot i així, són pistes curtes (2-3 min) pensades per fer loop.
+> **Nota:** Pixabay Music serveix MP3 a 256 kbps. Els fitxers pesen entre 3,5 i 8 MB per pistes de 2-4 min. Si calgués reduir pes, es podrien transcodificar a 128 kbps amb `ffmpeg` (no disponible en aquest entorn). Tot i així, són pistes curtes pensades per fer loop.
 
 ---
 
+## ocean1
+- **Title**: Ocean wave loops
+- **Source**: https://pixabay.com/music/upbeat-ocean-wave-loops-377890/
+- **Author**: DesiFreeMusic (https://pixabay.com/users/desifreemusic-28163210/)
+- **License**: Pixabay License (Free for commercial and non-commercial use, no attribution required)
+- **Duration**: 4:00
+- **Size**: 7,5 MB
+- **Saved as**: public/music/ocean1.mp3
+
+## ocean2
+- **Title**: Ocean wave loops (electronic)
+- **Source**: https://pixabay.com/music/electronic-ocean-wave-loops-377887/
+- **Author**: DesiFreeMusic (https://pixabay.com/users/desifreemusic-28163210/)
+- **License**: Pixabay License (Free for commercial and non-commercial use, no attribution required)
+- **Duration**: 4:00
+- **Size**: 7,5 MB
+- **Saved as**: public/music/ocean2.mp3
+
 ## lofi
-- **Title**: Calm Currents ( Lofi, Relax, Calm )
-- **Source**: https://freemusicarchive.org/music/holiznacc0/public-domain-lofi/calm-currents-lofi-relax-calm/
-- **Author**: HoliznaCC0
-- **License**: CC0 1.0 Universal (Public Domain — no attribution required)
-- **Duration**: 2:27
-- **Size**: 5.6 MB (320 kbps)
+- **Title**: Soft Aesthetic Glow Lofi Background Music for Relax and Study
+- **Source**: https://pixabay.com/music/beats-soft-aesthetic-glow-lofi-background-music-for-relax-and-study-509719/
+- **Author**: DesiFreeMusic (https://pixabay.com/users/desifreemusic-28163210/)
+- **License**: Pixabay License (Free for commercial and non-commercial use, no attribution required)
+- **Duration**: 1:51
+- **Size**: 3,5 MB
 - **Saved as**: public/music/lofi.mp3
 
-## ambient
-- **Title**: Lullabies For The End Of The World #2
-- **Source**: https://freemusicarchive.org/music/holiznacc0/lullabies-for-the-end-of-the-world/lullabies-for-the-end-of-the-world-2/
-- **Author**: HoliznaCC0
-- **License**: CC0 1.0 Universal (Public Domain — no attribution required)
-- **Duration**: 2:23
-- **Size**: 5.5 MB (320 kbps)
-- **Saved as**: public/music/ambient.mp3
-
-## focus
-- **Title**: Theta Frequency ( Lofi, Chill, Calm )
-- **Source**: https://freemusicarchive.org/music/holiznacc0/public-domain-lofi/theta-frequency-lofi-chill-calm/
-- **Author**: HoliznaCC0
-- **License**: CC0 1.0 Universal (Public Domain — no attribution required)
-- **Duration**: 2:06
-- **Size**: 4.8 MB (320 kbps)
-- **Saved as**: public/music/focus.mp3
+## village
+- **Title**: Quiet Evening in the Village – Peaceful Rural Ambience
+- **Source**: https://pixabay.com/music/celtic-quiet-evening-in-the-village-peaceful-rural-ambience-510903/
+- **Author**: DesiFreeMusic (https://pixabay.com/users/desifreemusic-28163210/)
+- **License**: Pixabay License (Free for commercial and non-commercial use, no attribution required)
+- **Duration**: 4:17
+- **Size**: 8,0 MB
+- **Saved as**: public/music/village.mp3

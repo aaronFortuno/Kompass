@@ -1,31 +1,40 @@
 {
   "tracks": [
     {
+      "id": "ocean1",
+      "title": "Onades, primer loop",
+      "description": "Bucle ambiental d'ones del mar, relaxant i estable per fer fons.",
+      "src": "/Kompass/music/ocean1.mp3",
+      "durationSec": 240,
+      "sizeKB": 7500,
+      "credit": "DesiFreeMusic · Pixabay Music · Pixabay License"
+    },
+    {
+      "id": "ocean2",
+      "title": "Onades, segon loop",
+      "description": "Variació electrònica suau del bucle d'ones, textura ambient per concentrar-se.",
+      "src": "/Kompass/music/ocean2.mp3",
+      "durationSec": 240,
+      "sizeKB": 7500,
+      "credit": "DesiFreeMusic · Pixabay Music · Pixabay License"
+    },
+    {
       "id": "lofi",
-      "title": "Corrents calmes",
-      "description": "Lofi suau amb piano i ritmes subtils, ambient de cafeteria per concentrar-se.",
+      "title": "Brillantor suau",
+      "description": "Lofi aesthetic amb textures càlides, pensat per relaxar-se i estudiar.",
       "src": "/Kompass/music/lofi.mp3",
-      "durationSec": 147,
-      "sizeKB": 5769,
-      "credit": "HoliznaCC0 · Free Music Archive · CC0 1.0 Public Domain"
+      "durationSec": 111,
+      "sizeKB": 3469,
+      "credit": "DesiFreeMusic · Pixabay Music · Pixabay License"
     },
     {
-      "id": "ambient",
-      "title": "Cançó de bressol",
-      "description": "Ambient meditatiu amb pianos i capes suaus, sense ritme, flux tranquil.",
-      "src": "/Kompass/music/ambient.mp3",
-      "durationSec": 143,
-      "sizeKB": 5626,
-      "credit": "HoliznaCC0 · Free Music Archive · CC0 1.0 Public Domain"
-    },
-    {
-      "id": "focus",
-      "title": "Freqüència theta",
-      "description": "Electrònica minimalista amb pols subtil, pensada per la concentració profunda.",
-      "src": "/Kompass/music/focus.mp3",
-      "durationSec": 127,
-      "sizeKB": 4956,
-      "credit": "HoliznaCC0 · Free Music Archive · CC0 1.0 Public Domain"
+      "id": "village",
+      "title": "Vespre al poble",
+      "description": "Ambient rural calmat amb aires celtes, vespre tranquil per concentrar-se.",
+      "src": "/Kompass/music/village.mp3",
+      "durationSec": 257,
+      "sizeKB": 8036,
+      "credit": "DesiFreeMusic · Pixabay Music · Pixabay License"
     }
   ]
 }
