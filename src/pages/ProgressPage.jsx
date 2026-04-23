@@ -775,21 +775,23 @@ export function ProgressPage() {
   const [selectedFile, setSelectedFile] = useState(null);
   const [importMessage, setImportMessage] = useState(null);
 
-  function handleFileChange(event) {
-    const file = event.target.files?.[0] ?? null;
-    setSelectedFile(file);
+  // El botó 'Importar' dispara el file input ocult. Quan l'usuari
+  // tria un fitxer, importem automàticament sense demanar un segon
+  // clic — simplifica la UX a un sol gest per importar.
+  function triggerImportPicker() {
     setImportMessage(null);
+    if (fileInputRef.current) fileInputRef.current.click();
   }
 
-  async function handleImport() {
-    if (!selectedFile) {
-      setImportMessage({ kind: 'error', text: t('progress.import.noFile') });
-      return;
-    }
+  async function handleFileChange(event) {
+    const file = event.target.files?.[0] ?? null;
+    if (!file) return;
+    setSelectedFile(file);
+    setImportMessage(null);
 
     let text;
     try {
-      text = await selectedFile.text();
+      text = await file.text();
     } catch {
       setImportMessage({ kind: 'error', text: t('progress.import.errorRead') });
       return;
@@ -1003,7 +1005,11 @@ export function ProgressPage() {
         </section>
       )}
 
-      {/* ── Accions (backup) ─────────────────────────────────── */}
+      {/* ── Accions (backup) ─────────────────────────────────────────
+          Una sola fila amb Exportar / Importar / Reiniciar. Cada botó
+          fa tota la feina en un sol clic (l'Importar obre el selector
+          de fitxer natiu i importa automàticament al escollir-lo).
+          Reiniciar desplega la confirmació inline amb paraula clau. */}
       <section
         className="mt-16 pt-10 border-t-2 border-reader-rule"
         aria-labelledby="progress-actions-heading"
@@ -1011,127 +1017,102 @@ export function ProgressPage() {
         <SectionHeading id="progress-actions-heading">
           {t('progress.actions.title')}
         </SectionHeading>
-        <p className="font-serif italic text-reader-ink-2 max-w-prose mb-8">
+        <p className="font-serif italic text-reader-ink-2 max-w-prose mb-6">
           {t('progress.actions.intro')}
         </p>
 
-        {/* Exportar */}
-        <div className="py-6 border-t border-reader-rule">
-          <div className="flex flex-wrap items-start gap-x-6 gap-y-3">
-            <ActionTitle
-              title={t('progress.export.title')}
-              description={t('progress.export.description')}
-            />
+        {/* File input ocult per l'acció d'importar */}
+        <input
+          ref={fileInputRef}
+          type="file"
+          accept=".json,application/json"
+          onChange={handleFileChange}
+          className="sr-only"
+          aria-hidden="true"
+          tabIndex={-1}
+        />
+
+        <div className="flex flex-wrap items-center gap-3 pt-4 border-t border-reader-rule">
+          <EditorialButton
+            onClick={handleExport}
+            disabled={!hasProgress}
+            icon={Download}
+          >
+            {t('progress.export.button')}
+          </EditorialButton>
+
+          <EditorialButton
+            onClick={triggerImportPicker}
+            icon={Upload}
+          >
+            {t('progress.import.button')}
+          </EditorialButton>
+
+          {!resetConfirming && (
             <EditorialButton
-              onClick={handleExport}
+              onClick={startResetFlow}
               disabled={!hasProgress}
-              icon={Download}
+              look="badOutline"
+              icon={Trash2}
             >
-              {t('progress.export.button')}
+              {t('progress.reset.button')}
             </EditorialButton>
-          </div>
-          {!hasProgress && (
-            <p className="mt-3 font-serif italic text-sm text-reader-muted">
-              {t('progress.export.empty')}
-            </p>
           )}
-          <InlineMessage message={exportMessage} />
+
+          <span className="font-serif italic text-sm text-reader-muted ml-auto">
+            {hasProgress
+              ? t('progress.export.description')
+              : t('progress.export.empty')}
+          </span>
         </div>
 
-        {/* Importar */}
-        <div className="py-6 border-t border-reader-rule">
-          <div className="flex flex-wrap items-start gap-x-6 gap-y-3 mb-3">
-            <ActionTitle
-              title={t('progress.import.title')}
-              description={t('progress.import.description')}
-            />
-          </div>
-          <div className="space-y-3">
-            <label
-              htmlFor="progress-import-file"
-              className="block font-mono text-[11px] uppercase tracking-[0.18em] text-reader-muted"
-            >
-              {t('progress.import.fileLabel')}
-            </label>
-            <input
-              id="progress-import-file"
-              ref={fileInputRef}
-              type="file"
-              accept=".json,application/json"
-              onChange={handleFileChange}
-              className="block w-full text-sm text-reader-ink font-serif file:mr-3 file:rounded-sm file:border file:border-reader-rule file:bg-reader-paper file:text-reader-ink file:px-3 file:py-2 file:font-mono file:text-[11px] file:uppercase file:tracking-wider hover:file:bg-reader-paper-2 file:transition-colors file:duration-fast file:ease-standard"
-            />
-            <EditorialButton
-              onClick={handleImport}
-              disabled={!selectedFile}
-              icon={Upload}
-            >
-              {t('progress.import.button')}
-            </EditorialButton>
-          </div>
-          <InlineMessage message={importMessage} />
-        </div>
-
-        {/* Reiniciar */}
-        <div className="py-6 border-t border-reader-rule">
-          <div className="flex flex-wrap items-start gap-x-6 gap-y-3">
-            <div className="flex-shrink-0 text-reader-bad mt-1">
-              <AlertTriangle size={20} aria-hidden="true" />
-            </div>
-            <ActionTitle
-              title={t('progress.reset.title')}
-              description={t('progress.reset.description')}
-              tone="bad"
-            />
-            {!resetConfirming && (
-              <EditorialButton
-                onClick={startResetFlow}
-                disabled={!hasProgress}
-                look="badOutline"
-                icon={Trash2}
-              >
-                {t('progress.reset.button')}
-              </EditorialButton>
-            )}
-          </div>
-
-          {resetConfirming && (
-            <div className="mt-4 space-y-3">
-              <label
-                htmlFor="progress-reset-keyword"
-                className="block font-mono text-[11px] uppercase tracking-[0.18em] text-reader-muted"
-              >
-                {t('progress.reset.confirmTypeLabel')}
-              </label>
-              <input
-                id="progress-reset-keyword"
-                type="text"
-                value={resetKeyword}
-                onChange={(e) => setResetKeyword(e.target.value)}
-                autoComplete="off"
-                autoCapitalize="none"
-                spellCheck={false}
-                className="block w-full sm:max-w-xs rounded-sm border border-reader-rule bg-reader-paper text-reader-ink font-serif px-3 py-2 text-sm focus:outline-none focus:border-reader-bad transition-colors duration-fast ease-standard"
-                placeholder={expectedKeyword}
-              />
-              <div className="flex flex-wrap gap-2">
-                <EditorialButton
-                  onClick={confirmReset}
-                  disabled={!resetKeywordOk}
-                  look="badSolid"
-                  icon={Trash2}
+        {/* Confirmació del reset (paraula clau) */}
+        {resetConfirming && (
+          <div className="mt-4 p-4 border border-reader-bad rounded-sm bg-reader-bad-bg/40">
+            <div className="flex items-start gap-3">
+              <AlertTriangle size={18} className="text-reader-bad flex-shrink-0 mt-0.5" aria-hidden="true" />
+              <div className="flex-1 min-w-0">
+                <p className="font-serif text-reader-ink mb-3">
+                  {t('progress.reset.description')}
+                </p>
+                <label
+                  htmlFor="progress-reset-keyword"
+                  className="block font-mono text-[11px] uppercase tracking-[0.18em] text-reader-muted mb-2"
                 >
-                  {t('progress.reset.confirmButton')}
-                </EditorialButton>
-                <EditorialButton onClick={cancelResetFlow} look="ghost">
-                  {t('progress.reset.cancel')}
-                </EditorialButton>
+                  {t('progress.reset.confirmTypeLabel')}
+                </label>
+                <div className="flex flex-wrap gap-2 items-center">
+                  <input
+                    id="progress-reset-keyword"
+                    type="text"
+                    value={resetKeyword}
+                    onChange={(e) => setResetKeyword(e.target.value)}
+                    autoComplete="off"
+                    autoCapitalize="none"
+                    spellCheck={false}
+                    className="rounded-sm border border-reader-rule bg-reader-paper text-reader-ink font-serif px-3 py-2 text-sm focus:outline-none focus:border-reader-bad transition-colors duration-fast ease-standard min-w-[16rem]"
+                    placeholder={expectedKeyword}
+                  />
+                  <EditorialButton
+                    onClick={confirmReset}
+                    disabled={!resetKeywordOk}
+                    look="badSolid"
+                    icon={Trash2}
+                  >
+                    {t('progress.reset.confirmButton')}
+                  </EditorialButton>
+                  <EditorialButton onClick={cancelResetFlow} look="ghost">
+                    {t('progress.reset.cancel')}
+                  </EditorialButton>
+                </div>
               </div>
             </div>
-          )}
+          </div>
+        )}
 
-          <InlineMessage message={resetMessage} />
-        </div>
+        <InlineMessage message={exportMessage} />
+        <InlineMessage message={importMessage} />
+        <InlineMessage message={resetMessage} />
       </section>
     </div>
   );
