@@ -1271,13 +1271,27 @@
 /* TabImage · DATA-MODEL §3.10
    Miniatura il·lustrativa inline per a tabs i exemples. Es col·loca
    flotant a la dreta del text en desktop (≥640px) i apilada sobre el
-   text en mòbil. Caption petita en italic sota la imatge. */
+   text en mòbil. Caption petita en italic sota la imatge. Clicable:
+   mostra un badge de zoom i obre un lightbox amb la variant més gran
+   + context textual associat. */
 .kf-tab-image {
   margin: 0;
   display: flex;
   flex-direction: column;
   gap: 6px;
   width: auto;
+  position: relative;
+  cursor: zoom-in;
+  border-radius: var(--radius-md);
+  transition: transform var(--duration-fast) var(--ease-standard);
+}
+.kf-tab-image:hover,
+.kf-tab-image:focus-visible {
+  transform: scale(1.015);
+  outline: none;
+}
+.kf-tab-image:focus-visible .kf-tab-image-img {
+  box-shadow: 0 0 0 2px rgb(var(--color-reader-accent));
 }
 .kf-tab-image-img {
   display: block;
@@ -1286,6 +1300,28 @@
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-soft);
   background: rgb(var(--color-reader-paper));
+}
+.kf-tab-image-zoom {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: rgb(var(--color-reader-paper) / 0.85);
+  color: rgb(var(--color-reader-ink));
+  backdrop-filter: blur(4px);
+  box-shadow: var(--shadow-soft);
+  opacity: 0;
+  transition: opacity var(--duration-fast) var(--ease-standard);
+  pointer-events: none;
+}
+.kf-tab-image:hover .kf-tab-image-zoom,
+.kf-tab-image:focus-visible .kf-tab-image-zoom {
+  opacity: 1;
 }
 .kf-tab-image-caption {
   font-family: 'Newsreader', serif;
@@ -2636,6 +2672,164 @@ html.dark .k-mark {
 }
 
 /* ───── AboutModal · "Qui sóc" · §103 polit ─────────────────────────── */
+
+/* Image lightbox · §110
+   Modal d'ampliació d'una TabImage. Mostra la variant més gran a
+   màxim ~85vh d'alçada amb el context textual associat (pron, de/ca,
+   nota) a sota — perquè l'usuari pugui llegir el vocabulari al costat
+   de la imatge en alta resolució.*/
+.kf-img-lightbox-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgb(0 0 0 / 0.72);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--duration-base) var(--ease-standard);
+  z-index: 80;
+}
+.kf-img-lightbox-backdrop.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.kf-img-lightbox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.96);
+  width: min(1040px, 96vw);
+  max-height: 94vh;
+  display: flex;
+  flex-direction: column;
+  background: rgb(var(--color-reader-paper));
+  border: 1px solid rgb(var(--color-reader-rule));
+  border-radius: var(--radius-lg);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 81;
+  transition:
+    opacity var(--duration-base) var(--ease-standard),
+    transform var(--duration-base) var(--ease-emphasized);
+  color: rgb(var(--color-reader-ink));
+  overflow: hidden;
+}
+.kf-img-lightbox.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+.kf-img-lightbox-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 999px;
+  background: rgb(var(--color-reader-paper) / 0.92);
+  color: rgb(var(--color-reader-ink));
+  cursor: pointer;
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(4px);
+  transition: background-color var(--duration-fast) var(--ease-standard),
+              transform var(--duration-fast) var(--ease-standard);
+}
+.kf-img-lightbox-close:hover,
+.kf-img-lightbox-close:focus-visible {
+  background: rgb(var(--color-reader-paper));
+  transform: scale(1.06);
+  outline: none;
+}
+.kf-img-lightbox-figure {
+  margin: 0;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  max-height: 94vh;
+  overflow: hidden;
+}
+.kf-img-lightbox-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 72vh;
+  object-fit: contain;
+  background: rgb(var(--color-reader-rule) / 0.1);
+}
+.kf-img-lightbox-context {
+  padding: 20px 28px 22px;
+  border-top: 1px solid rgb(var(--color-reader-rule));
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.kf-img-lightbox-title {
+  font-family: 'Newsreader', serif;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 0 0 4px;
+  color: rgb(var(--color-reader-ink));
+}
+.kf-img-lightbox-de {
+  font-family: 'Newsreader', serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.25;
+  margin: 0;
+  color: rgb(var(--color-reader-ink));
+}
+.kf-img-lightbox-ca {
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.35;
+  margin: 0;
+  color: rgb(var(--color-reader-ink-2));
+}
+.kf-img-lightbox-note,
+.kf-img-lightbox-caption {
+  font-family: 'Newsreader', serif;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 8px 0 0;
+  color: rgb(var(--color-reader-muted));
+}
+.kf-img-lightbox-credit {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: rgb(var(--color-reader-muted));
+  margin: 10px 0 0;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+@media (max-width: 640px) {
+  .kf-img-lightbox {
+    width: 100vw;
+    max-height: 100vh;
+    border-radius: 0;
+    border: none;
+    top: 0;
+    left: 0;
+    transform: scale(0.98);
+  }
+  .kf-img-lightbox.is-open {
+    transform: scale(1);
+  }
+  .kf-img-lightbox-img {
+    max-height: 55vh;
+  }
+  .kf-img-lightbox-context {
+    padding: 16px 18px;
+  }
+  .kf-img-lightbox-title { font-size: 22px; }
+  .kf-img-lightbox-de { font-size: 17px; }
+}
 
 .about-backdrop {
   position: fixed;
