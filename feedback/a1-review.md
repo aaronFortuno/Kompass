@@ -35,22 +35,21 @@ comptador del reader (p. ex. `A1a-5 · synthesis · 3/4`).
 ### A1a-0 · Benvinguda
 
 - **Contingut:** 
-  - [✓] [A1a-0 · welcome · 5/6] "és profundament lògica." -> "és profundament lògic." (parla de l'idioma)
-  - [✓] [A1a-0 · welcome · 6/6] el dibuix de la brúixola no té gaire sentit. De fet el footer ja ho diu "Imatge provisional"  — *fet: visual eliminat*
-  - [✓] [A1a-0 · why-german-2 · 3/4] surt per primera vegada la paraula "cognat". No és una paraula molt habitual al vocabulari català comú, així que tenint en compte que la fem servir en força ocasions posteriorment crec que aquí afegeria una anotació al peu que ens digui que és un cognat. O això o un beat que ho aclareixi  — *fet: callout info "Què és un cognat?" afegit*
-  - [✓] [A1a-0 · mindset · 7/7] revisar si "a un exercici" és correcte o hauria de ser "en un exercici". Tinc dubtes sobre la forma més correcta d'expressar-ho  — *fet: canviat a "en un exercici"*
-  - [✓] [A1a-0 · pivot · 1/2] Aquesta pregunta juntament amb la següent costa una mica de veure-les enllaçades: I tu com ho faràs aquí? Fins aquí el per què. Ara, el com. Potser es pot reescriure d'una forma una mica més clara.  — *fet: heading "Com funciona Kompass" + lead més explícit sobre ritme/exercicis/progrés*
   - [A1a-0 · how-it-works · 3/4] aquí seria genial un svg animat de les fletxes del teclat o el swipe del dit al mòbil, ens mostraria claríssimament les eines de navegació. Si necessitem algun pas extra per parlar del mode autoplay, de l'efecte typewriter i les 3 coses més rellevants a nivell de settings val la pena aturar-s'hi. És l'onboarding tècnic i ho podem fer molt amable.  — *pendent: SVG animats requereixen sessió dedicada*
-  - [A1a-0 · local-first · 4/4] aquí i en el punt anterior també trobo a faltar alguns svg animats blanc-negre- fons transparent  que il·lustrin això: dades locals, exportació, etc.  — *pendent: agrupat amb l'anterior en una sessió d'SVG animats per A1a-0*
-  - [✓] [A1a-0 · begin · 5/6] Fem el "ich bin" que sigui audible (la gravació ja deu existir, suposo)  — *fet: `!!Ich bin!!` audible; si cal, el manifest el regenera automàticament*
-  - [✓] [A1a-0 · begin · 6/6] No és només "la fletxa dreta", ja que tenim opció de clic a mòbil, o swipe, revisar-ho.  — *fet: "avança amb la fletxa dreta del teclat, un clic a la pantalla o un swipe cap amunt (a mòbil)"*
+  - [A1a-0 · local-first · 4/4] aquí i en el punt anterior també trobo a faltar alguns svg animats blanc-negre- fons transparent  que il·lustrin això: dades locals, exportació, etc.  — *pendent: agrupat amb l'anterior en una sessió d'SVG animats per A1a-0**
 - **Tècnic:**
 - **Estructural:**
 
 ### A1a-1 · Pronomen
 
 - **Contingut:**
+  - [A1a-1 · intro · 6/9] i [A1a-1 · intro · 7/9]: acabem de dir que hi ha pronoms personals i pronoms possessius i posem aquests dos bons exemples seguits però sense ressaltar i connectar amb la idea de que un és personal i l'altre és possessiu. Seria interessant afegir un subtítol o anotació tipus "Aquí parles de tu, de qui ets", "I aquí parles del *teu* nom (possessió)" o similar.
+  - [A1a-1 · personal-singular · 3/10] aquí fem referència a que són 7, igual que en català, doncs posem-los com a anotació inferior, entre parèntesi o d'alguna forma visible per començar a connectar-ho. (Per cert, són 7 però per a 3a singular tenim er/sie/es, que estrictament són llavors 9... no? No sé gaire de gramàtica així que no sé si el que dic és correcte o no, no t'ho prenguis com una font de veritat per part meva)
+  - [A1a-1 · possessive-concordance · 4/13] se'ns presenta "Aquí la correspondència principal:", però al següent beat tenim "Mein Name ist Anna" (cap correspondència). Revisar com ho expressem perquè no té lògica si parlem de les correspondències no anar-les presentant una a una o en una taula inicial. Crec que el que faria seria o bé replantejar el text d'aquest beat o bé moure els de Mein Name ist i Meine Adresse ist a sota de la presentació i correspondència que es fa just a continuació amb ich -> mein, du -> dein... Seria més lògic si primer veig la correspondència (que és el que m'has anunciat) i després veig un exemple pràctic
 - **Tècnic:**
+  - [A1a-1 · personal-plural · 5/8] el so de "ihr" s'ha de generar de nou, perquè aquest conté un "clic" al final una mica estrany
+  - [A1a-1 · sein-vs-ihr · 7/8] te quatre frases però no es reprodueixen automàticament quan tenim l'autoplay. Crec que passa a més llocs, no sé si s'ha fet expressament perquè no es vol saturar d'àudios, però com a mínim siguem conscients i que no sigui una cosa que se'ns ha escapat
+  - [A1a-1 · pitfalls · 3/6] aquí també tenim àudios que s'haurien de reproduir automàticament i no ho fa
 - **Estructural:**
 
 ### A1a-2 · Satzstruktur
@@ -110,7 +109,25 @@ per endavant — només les que tinguin feedback real.)
 
 ## A1a · Vocabulari
 
+### A1a-V1 · Zahlen
+
+- **Contingut:**
+- **Tècnic:**
+- **Estructural:**
+
+### A1a-V2 · Alphabet
+
+- **Contingut:**
+- **Tècnic:**
+- **Estructural:**
+
 ### A1a-V3 · Familie
+
+- **Contingut:**
+- **Tècnic:**
+- **Estructural:**
+
+### A1a-V4 · Länder
 
 - **Contingut:**
 - **Tècnic:**
@@ -122,8 +139,17 @@ per endavant — només les que tinguin feedback real.)
 - **Tècnic:**
 - **Estructural:**
 
-(V1 Zahlen, V2 Alphabet, V4 Länder, V6 Essen+Trinken, V7 Tagesablauf
-s'afegiran a mesura que els integrem.)
+### A1a-V6 · Essen und Trinken
+
+- **Contingut:**
+- **Tècnic:**
+- **Estructural:**
+
+### A1a-V7 · Tagesablauf
+
+- **Contingut:**
+- **Tècnic:**
+- **Estructural:**
 
 ---
 
@@ -140,19 +166,25 @@ format ric.)*
 ### Reader
 
 - **Bug:** 
-  - [✓] En algunes situacions desactivem el mode automàtic a /settings però igualment arrenca el temporitzador per passar de pàgina. Crecq ue té a veure amb els àudios: esbrinar si és possible que encara uqe tinguem el mode automàtic de navegació entre beats, si hi ha un àudio que acaba de reproduir-se pot estar llançant un trigger que posa en marxa el temporitzador.  — *fet: derivada treta. `settings.autoPlay` és ara l'única font de veritat per l'auto-advance; `audioAutoplay` només reprodueix àudio*
-  - [✓] En algunes ocasions el temporitzador automàtic es posa en marxa i encara que fem clic a la pantalla no s'atura. Quan la diapositiva següent no té àudios, si la config global és no mode automàtic llavors no actua el temporitzador. És estrany, sembla que hi ha alguna cosa lògica mal connectada en algun punt  — *fet: mateixa causa que l'anterior; amb la simplificació, el gate del click ara coincideix amb el gate del timer*
+  - Detectat a [A1a-1 · intro · 3/9] però comú en totes les paraules ressaltades. En aquestc cas és "l'eina número u": el text ressaltat té menys zona superior ressaltada que la inferior; el ressaltat acaba just on acaben les lletres altes o les titlles, sense marge, i es veu lleugerament desequilibrat. Cal donar una mica més d'altura a la banda superior als subratllats per equilibrar-ho. No és greu.
 - **Polit:**
+  - Hem de decidir a les pàgines de parany com [A1a-1 · pitfalls · 3/6] si volem generar i reproduir àudios erronis o no, però fer-ho o mai o sempre. En aquesta lliçó tenim àudios d'exemples incorrectes, però en altres pitfalls no els tenim, pedagògicament no sé què val més la pena.
 
 ### Temari / Progrés / Home
 
 - **Bug:**
+  - Si tenim el typewriter desactivat i premem fletxa dreta llavors això ens mou de beat, però si després premem fletxa avall "no fa res", només activa els botons de "saltant" del footer, i necessitem un segon fletxa avall per passar de pàgina. És una mica estrany
 - **Polit:**
+  - Detectat a [A1a-1 · check-personal · 1/1] però aplica a més exercicis. Els exercicis d'escriure una paraula sovint deixen un espai lliure enorme. En aquest cas tenim "Hallo, ___ heisse Marc." però l'espai lliure és tan llarg com dues vegades la frase i això fa que se'ns mostri en dues files. És absolutament innecessari. Podríem deixar un espai mínim de 5-10 caràcters i si la paraula és més llarga que el text posterior s'ajusti automàticament, però no fer aquests salts tan grans
+  - També aquí a [A1a-1 · check-personal · 1/1]: quan se'ns indica que és correcte el layout queda així: "Hallo         (tick) Correcte -al final de línia // ich // heisse Marc.", en tres línies. La comprovació de si és correcte o no l'únic que hauria de fer és mostrar en verd-vermell un camp (ja entrarem en si taronja com "parcialment vàlid", "vigila!" o "millorable", en estadis posteriors) però en cap cas és alterar el layout. El "tick- correcte" no hauria de desplaçar ni modificar el contingut o posicionat de l'exercici.
+  - Si estem navegant pels beats amb fletxa avall - fletxa avall... quan arribem a un exercici amb múltiples preguntes, "fletxa avall" ens porta al següent beat en comptes de la següent pregunta. El comportament dins d'un exercici amb múltiples preguntes hauria de ser "següent pregunta". Fletxa avall també hauria de servir per l'acció de validar (ara ho fem amb enter o fletxa dreta)
+  - A l'índex del sidebar, les icones d'exercici: alienar-les verticalment amb les xifres del pas. I ara el layout de l'índex és a 2 "columnes", una amb les xifres de nombre de pas, i l'altra amb el nom del capítol. Crec que les separaria una mica entre elles i posaria una segona columna precisament amb la icona d'exercici, perquè quedaria més visible que com està ara. En capítols que tenen dues files la icona queda en una posició estranya, potser així ho podem resoldre elegantment (si no ja ho canviarem)
 
 ### Accessibilitat / mobile
 
 - **Bug:**
 - **Polit:**
+  - El flow per resoldre exercicis dropdown és una mica confús en general, sobretot quan venim de moure'ns amb teclat. Cal fer un plantejament de com ho volem fer perquè sigui intuïtiu. Ara mateix no ho definiria com intuïtiu, sincerament. No és que sigui molt difícil, però tampoc surt espontàniament. Bàsicament és tema de tabuladors, focus, funcionalitat de fletxes, etc. No sé com ho hem de resoldre, potser cal investigar com ho solucionen altres plataformes reconegudes.
 
 ---
 
