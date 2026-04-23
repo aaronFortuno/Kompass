@@ -36,17 +36,17 @@
         { "pron": "vier", "gloss": "quatre", "note": "Pronuncia'l \"fiir\". La _v_ en alemany sona com la _f_ catalana.", "example": { "de": "Vier Uhr nachmittags.", "ca": "Les quatre de la tarda." } },
         { "pron": "fünf", "gloss": "cinc", "note": "La _ü_ es pronuncia com la _u_ francesa: posa llavis de _u_ i digues _i_.", "example": { "de": "Fünf Euro, bitte.", "ca": "Cinc euros, si us plau." } },
         { "pron": "sechs", "gloss": "sis", "note": "La combinació _chs_ sona \"ks\": \"zeks\".", "example": { "de": "Es ist sechs Uhr.", "ca": "Són les sis." } },
-        { "pron": "sieben", "gloss": "set", "note": "Al telèfon sovint s'evita confondre amb altres números per la seva sonoritat llarga.", "example": { "de": "Ich komme um sieben.", "ca": "Vinc a les set." } },
-        { "pron": "acht", "gloss": "vuit", "note": "Atenció a la terminació _-cht_: aspiració forta.", "example": { "de": "Ich arbeite acht Stunden.", "ca": "Treballo vuit hores." } },
+        { "pron": "sieben", "gloss": "set", "note": "Pronunciat \"zííben\" (la _s_ inicial sona com a \"z\"; la _ie_ és \"ii\" llarga). Al telèfon de vegades es prefereix dir-lo amb cura per no confondre'l amb altres xifres curtes.", "example": { "de": "Ich komme um sieben.", "ca": "Vinc a les set." } },
+        { "pron": "acht", "gloss": "vuit", "note": "La terminació _-cht_ sona amb una fricció guttural (com la _j_ castellana però més suau).", "example": { "de": "Ich arbeite acht Stunden.", "ca": "Treballo vuit hores." } },
         { "pron": "neun", "gloss": "nou", "note": "Pronuncia'l \"noin\". La _eu_ es llegeix \"oi\".", "example": { "de": "Neun Uhr morgens.", "ca": "Les nou del matí." } },
         { "pron": "zehn", "gloss": "deu", "note": "La _z_ alemanya sona sempre com a \"ts\" catalana de _pots_.", "example": { "de": "Zehn Minuten.", "ca": "Deu minuts." } },
-        { "pron": "elf", "gloss": "onze", "note": "Curt i a part del patró. Igual de curt que en català (_onze_).", "example": { "de": "Es ist elf.", "ca": "Són les onze." } },
-        { "pron": "zwölf", "gloss": "dotze", "note": "La _ö_ es pronuncia com una _e_ amb llavis de _o_. Típica del rellotge.", "example": { "de": "Zwölf Uhr mittags.", "ca": "Les dotze del migdia." } }
+        { "pron": "elf", "gloss": "onze", "note": "Fora del patró: no deriva d'_ein-_. Pronunciat amb _e_ oberta i _f_ final clara.", "example": { "de": "Es ist elf.", "ca": "Són les onze." } },
+        { "pron": "zwölf", "gloss": "dotze", "note": "La _ö_ es pronuncia amb llavis de _o_ i llengua en posició d'_e_. Sovint és la primera paraula \"amb umlaut\" que memoritzes de veritat, perquè es diu molt al rellotge.", "example": { "de": "Zwölf Uhr mittags.", "ca": "Les dotze del migdia." } }
       ],
       "callout": {
         "variant": "warning",
         "title": "Pronúncia clau",
-        "body": "**_z_ = \"ts\"** (_zehn_ \"tsen\"), **_v_ = \"f\"** (_vier_ \"fiir\"), **_ei_ = \"ai\"** (_drei_ \"drai\"), **_eu_ = \"oi\"** (_neun_ \"noin\"). Aquestes quatre regles resolen la meitat de la pronúncia dels nombres."
+        "body": "**_z_ = \"ts\"** (!!zehn!! \"tsen\"), **_v_ = \"f\"** (!!vier!! \"fiir\"), **_ei_ = \"ai\"** (!!drei!! \"drai\"), **_eu_ = \"oi\"** (!!neun!! \"noin\"). Aquestes quatre regles resolen la meitat de la pronúncia dels nombres."
       }
     },
     {

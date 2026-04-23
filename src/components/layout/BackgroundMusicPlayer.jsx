@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { useSettings, useSettingsStore } from '@/store/useSettingsStore.js';
+import { useSettings } from '@/store/useSettingsStore.js';
 import musicManifest from '@/audio/music-manifest.json';
 
 /*
@@ -95,43 +95,20 @@ export function BackgroundMusicPlayer() {
     }
   }, [settings.bgMusicVolume]);
 
-  // Arranca/atura segons bgMusicEnabled.
+  // Arranca/atura segons bgMusicEnabled. Si l'autoplay està bloquejat
+  // pel navegador, no desactivem el toggle — ens enganxem al proper
+  // pointerdown/keydown/touchstart global per reintentar el play.
+  // Així l'usuari no perd la intenció i la música arrenca en el
+  // proper gest que faci a la pàgina.
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio || !track) return undefined;
 
-    if (settings.bgMusicEnabled) {
-      // Arrencar amb fade-in.
-      audio.loop = true;
-      audio.volume = 0;
-      const playPromise = audio.play();
-      if (playPromise && typeof playPromise.then === 'function') {
-        playPromise
-          .then(() => {
-            if (cancelFadeRef.current) cancelFadeRef.current();
-            cancelFadeRef.current = animateVolume(
-              audio,
-              0,
-              targetVolumeRef.current,
-              FADE_MS,
-            );
-          })
-          .catch(() => {
-            // Autoplay bloquejat — apaguem el flag per forçar que
-            // l'usuari torni a prémer el toggle (que serà un gest vàlid).
-            useSettingsStore.getState().setBgMusicEnabled(false);
-          });
-      }
-    } else {
-      // Aturar amb fade-out i pause al final.
+    if (!settings.bgMusicEnabled) {
+      // Fade-out + pause
       if (!audio.paused) {
         if (cancelFadeRef.current) cancelFadeRef.current();
-        cancelFadeRef.current = animateVolume(
-          audio,
-          audio.volume,
-          0,
-          FADE_MS,
-        );
+        cancelFadeRef.current = animateVolume(audio, audio.volume, 0, FADE_MS);
         const stopTimer = window.setTimeout(() => {
           try {
             audio.pause();
@@ -141,8 +118,64 @@ export function BackgroundMusicPlayer() {
         }, FADE_MS + 30);
         return () => window.clearTimeout(stopTimer);
       }
+      return undefined;
     }
-    return undefined;
+
+    audio.loop = true;
+    let cancelled = false;
+    let retryListener = null;
+
+    const fadeIn = () => {
+      if (cancelFadeRef.current) cancelFadeRef.current();
+      cancelFadeRef.current = animateVolume(
+        audio,
+        audio.volume,
+        targetVolumeRef.current,
+        FADE_MS,
+      );
+    };
+
+    const attemptPlay = () => {
+      if (cancelled) return;
+      // Només arrenquem si encara està pausat (un reintent anterior
+      // podria haver funcionat).
+      if (!audio.paused) return;
+      audio.volume = 0;
+      const p = audio.play();
+      if (p && typeof p.then === 'function') {
+        p.then(() => {
+          if (!cancelled) fadeIn();
+        }).catch(() => {
+          // Bloquejat. Registrem listener one-shot per reintentar al
+          // proper gest de l'usuari.
+          if (cancelled || retryListener) return;
+          retryListener = () => {
+            window.removeEventListener('pointerdown', retryListener);
+            window.removeEventListener('keydown', retryListener);
+            window.removeEventListener('touchstart', retryListener);
+            retryListener = null;
+            attemptPlay();
+          };
+          window.addEventListener('pointerdown', retryListener, { once: true });
+          window.addEventListener('keydown', retryListener, { once: true });
+          window.addEventListener('touchstart', retryListener, { once: true });
+        });
+      } else {
+        // Navegadors molt antics sense Promise a .play() — assumim èxit.
+        fadeIn();
+      }
+    };
+
+    attemptPlay();
+
+    return () => {
+      cancelled = true;
+      if (retryListener) {
+        window.removeEventListener('pointerdown', retryListener);
+        window.removeEventListener('keydown', retryListener);
+        window.removeEventListener('touchstart', retryListener);
+      }
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [settings.bgMusicEnabled, track?.id]);
 

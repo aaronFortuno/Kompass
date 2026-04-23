@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-23T18:08:33.911Z",
+  "generatedAt": "2026-04-23T19:01:20.164Z",
   "totalStrings": 2220,
   "totalChars": 35961,
   "entries": [
@@ -12571,6 +12571,10 @@
         },
         {
           "topic": "A1a-V1",
+          "path": "steps[1].callout.body#inline[1]"
+        },
+        {
+          "topic": "A1a-V1",
           "path": "steps[1].tabs[4].pron"
         }
       ]
@@ -12702,6 +12706,10 @@
         {
           "topic": "A1a-V1",
           "path": "steps[11].tables[0].rows[3][1]#inline[0]"
+        },
+        {
+          "topic": "A1a-V1",
+          "path": "steps[1].callout.body#inline[2]"
         },
         {
           "topic": "A1a-V1",
@@ -19245,6 +19253,10 @@
         },
         {
           "topic": "A1a-V1",
+          "path": "steps[1].callout.body#inline[0]"
+        },
+        {
+          "topic": "A1a-V1",
           "path": "steps[1].tabs[10].pron"
         }
       ]
@@ -23066,6 +23078,10 @@
         {
           "topic": "A1a-V1",
           "path": "steps[11].tables[0].rows[9][1]#inline[0]"
+        },
+        {
+          "topic": "A1a-V1",
+          "path": "steps[1].callout.body#inline[3]"
         },
         {
           "topic": "A1a-V1",

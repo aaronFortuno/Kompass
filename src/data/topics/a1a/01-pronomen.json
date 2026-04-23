@@ -24,15 +24,18 @@
       "examples": [
         {
           "de": "Ich heiße Marc.",
-          "ca": "Em dic Marc."
+          "ca": "Em dic Marc.",
+          "note": "Personal · parles de tu (_Ich_ = jo)."
         },
         {
           "de": "Mein Name ist Marc.",
-          "ca": "El meu nom és Marc."
+          "ca": "El meu nom és Marc.",
+          "note": "Possessiu · parles del **teu** nom (_Mein_ = el meu)."
         },
         {
           "de": "Wie ist Ihre Telefonnummer?",
-          "ca": "Quin és el seu telèfon, de Vostè?"
+          "ca": "Quin és el seu telèfon, de Vostè?",
+          "note": "Possessiu formal · el telèfon **de Vostè** (_Ihre_ amb majúscula)."
         }
       ],
       "callout": {
@@ -46,7 +49,7 @@
       "kind": "narrative",
       "heading": "Singular: jo, tu, ell/ella/això",
       "lead": "La persona gramatical indica de qui parlem. Primera persona = jo. Segona = tu. Tercera = algú altre.",
-      "body": "Els pronoms personals alemanys són set formes, igual que en català. Aquí els cinc del singular.",
+      "body": "Els pronoms personals alemanys són **set** formes, igual que en català (jo, tu, ell, ella, nosaltres, vosaltres, ells/elles). Hi ha una particularitat a la 3a singular: l'alemany desdobla _ell/ella_ en tres formes segons el gènere (_er/sie/es_). Per això, comptats un per un, veuràs **nou formes al quadre**, però són **set persones** gramaticals. Aquí les del singular.",
       "tabs": [
         {
           "pron": "ich",
@@ -161,7 +164,7 @@
       "kind": "narrative",
       "heading": "Els possessius: doble concordança",
       "lead": "El possessiu alemany concorda amb el **substantiu posseït**, no només amb el posseïdor.",
-      "body": "Cada pronom personal té el seu possessiu corresponent. Aquí la correspondència principal:",
+      "body": "Cada pronom personal té el seu possessiu corresponent. Primer mira dos exemples ràpids que avancen la idea; després ve la taula de correspondències completa i la regla pràctica.",
       "pairs": [
         {
           "personal": "ich",

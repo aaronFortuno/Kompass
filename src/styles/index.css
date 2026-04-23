@@ -1788,12 +1788,18 @@
   .kf-speak { transition: none !important; }
 }
 
-/* Highlight (==text==) */
+/* Highlight (==text==) — padding vertical asimètric per compensar
+   el fet que el background només es dibuixa fins als ascendents
+   visibles. Una mica més amunt que a sota per equilibrar visualment. */
 .k-mark {
   background: rgb(var(--color-reader-mark));
-  padding: 0 4px;
+  padding: 0.14em 4px 0.06em;
   border-radius: 2px;
   color: rgb(var(--color-reader-ink));
+  /* box-decoration-break perquè el padding es respecti encara que el
+     ressaltat caigui en múltiples línies. */
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 /* En mode fosc el groc saturat sobre paper tenyit queda massa dominant;
    l'apliquem amb alpha per aconseguir un glow amber que no foragiti el

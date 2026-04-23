@@ -15,6 +15,7 @@ import {
   Rabbit,
   Focus,
   Music2,
+  ListMusic,
   X as CloseIcon,
 } from 'lucide-react';
 import musicManifest from '@/audio/music-manifest.json';
@@ -378,7 +379,7 @@ export function ReaderSettingsDrawer({ open, onClose }) {
                   <SettingRow
                     compact
                     id="drawer-bgmusic-track"
-                    icon={Music2}
+                    icon={ListMusic}
                     title="Pista"
                   >
                     <select

@@ -1054,11 +1054,13 @@ function PairBeat({ beat, step, stepIdx, showKicker }) {
   );
 }
 
-function CompareBeat({ beat, step, stepIdx, showKicker, tableAnim }) {
+function CompareBeat({ beat, step, stepIdx, showKicker, tableAnim, audioAutoplay = false }) {
+  const containerRef = useRef(null);
+  useBeatAutoPlaySequence(containerRef, audioAutoplay);
   return (
     <>
       {showKicker ? <BeatKicker step={step} stepIdx={stepIdx} beatKicker={step.id} /> : null}
-      <div className="kf-beat-compare">
+      <div className="kf-beat-compare" ref={containerRef}>
         <div className="kf-marker">Comparativa entre llengües</div>
         <table>
           <thead>
@@ -1097,12 +1099,21 @@ function CompareBeat({ beat, step, stepIdx, showKicker, tableAnim }) {
   );
 }
 
-function PitfallBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed }) {
+function PitfallBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay = false }) {
   const pit = beat.pit;
+  const containerRef = useRef(null);
+  // Els àudios del pitfall (bad + good) només s'autoreprodueixen quan
+  // acaba el typewriter del "why" — així no comencen a sonar mentre
+  // encara s'està escrivint la justificació.
+  const [whyDone, setWhyDone] = useState(!typewriterActive || !pit.why);
+  useEffect(() => {
+    setWhyDone(!typewriterActive || !pit.why);
+  }, [typewriterActive, pit.why, beat]);
+  useBeatAutoPlaySequence(containerRef, audioAutoplay && whyDone);
   return (
     <>
       {showKicker ? <BeatKicker step={step} stepIdx={stepIdx} beatKicker={step.id} /> : null}
-      <div className="kf-beat-pitfall">
+      <div className="kf-beat-pitfall" ref={containerRef}>
         <span className="kf-marker">Error freqüent {beat.idx} / {beat.total}</span>
         <div className="kf-beat-pit-bad">{parseInline(pit.bad)}</div>
         <div className="kf-beat-pit-arrow">→</div>
@@ -1114,6 +1125,7 @@ function PitfallBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed 
             className="kf-beat-pit-why"
             active={typewriterActive}
             speed={speed - 10}
+            onDone={() => setWhyDone(true)}
           />
         ) : null}
       </div>
@@ -1609,11 +1621,11 @@ function BeatBody({
     case 'compare':
       return (
         <CompareBeat
-          {...{ beat, step, stepIdx, showKicker, tableAnim }}
+          {...{ beat, step, stepIdx, showKicker, tableAnim, audioAutoplay: isCurrent && settings.audioAutoplay }}
         />
       );
     case 'pitfall':
-      return <PitfallBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed }} />;
+      return <PitfallBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay: isCurrent && settings.audioAutoplay }} />;
     case 'callout':
       return <CalloutBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed }} />;
     case 'syn-table':
@@ -1911,13 +1923,16 @@ export function FocusReader({ topic }) {
   // perquè els següents beats també es revelin sense typewriter.
   const skipOrAdvance = useCallback(
     (d) => {
-      if (!fastMode) {
-        setFastMode(true);
+      // Si ja estem en fastMode o el typewriter està globalment
+      // desactivat (no hi ha res a saltar), avancem directament. Si no,
+      // el primer ↓ acaba el typewriter i el segon avança.
+      if (fastMode || settings.typewriter === false) {
+        moveBeat(d);
         return;
       }
-      moveBeat(d);
+      setFastMode(true);
     },
-    [fastMode, moveBeat],
+    [fastMode, moveBeat, settings.typewriter],
   );
 
   const closeReader = useCallback(() => {
