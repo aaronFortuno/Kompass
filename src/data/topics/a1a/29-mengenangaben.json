@@ -14,7 +14,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "Anar a comprar en alemany és un dels moments on més clar se't fa que la llengua funciona amb una lògica diferent. En català dius _un quilo **de** patates_, _una ampolla **d'**aigua_, _dos paquets **de** fideus_: la preposició ==**de**== enllaça sempre la mesura o l'envàs amb el producte. En alemany, aquesta preposició senzillament **no hi és**.\n\n> _un quilo **de** patates_ → _ein Kilo ==∅== Kartoffeln_\n> _una ampolla **d'**aigua_ → _eine Flasche ==∅== Wasser_\n> _un paquet **de** fideus_ → _eine Packung ==∅== Nudeln_\n\nAquesta lliçó cobreix les **Mengenangaben** (expressions de quantitat): els envasos (_Verpackungen_), les mesures i pesos (_Maße und Gewichte_), i la regla que governa com s'enganxen al producte. És una lliçó curta però amb molt ús pràctic: sense aquestes paraules no pots fer la compra ni llegir una recepta."
+          "body": "Anar a comprar en alemany és un dels moments on més clar se't fa que la llengua funciona amb una lògica diferent. En català dius _un quilo **de** patates_, _una ampolla **d'**aigua_, _dos paquets **de** fideus_: la preposició ==**de**== enllaça sempre la mesura o l'envàs amb el producte. En alemany, aquesta preposició senzillament **no hi és**.\n\n> _un quilo **de** patates_ → _!!ein Kilo ==∅== Kartoffeln!!_\n> _una ampolla **d'**aigua_ → _!!eine Flasche ==∅== Wasser!!_\n> _un paquet **de** fideus_ → _!!eine Packung ==∅== Nudeln!!_\n\nAquesta lliçó cobreix les **Mengenangaben** (expressions de quantitat): els envasos (_Verpackungen_), les mesures i pesos (_Maße und Gewichte_), i la regla que governa com s'enganxen al producte. És una lliçó curta però amb molt ús pràctic: sense aquestes paraules no pots fer la compra ni llegir una recepta."
         }
       ]
     },
@@ -29,19 +29,19 @@
           "type": "table",
           "headers": ["Singular", "Plural", "Català"],
           "rows": [
-            ["_das ==Stück==_", "_die Stücke_", "la peça, el tros"],
-            ["_die ==Schachtel==_", "_die Schachteln_", "la capsa"],
-            ["_das ==Paket==_ / _die ==Packung==_", "_die Pakete_ / _die Packungen_", "el paquet"],
-            ["_der ==Beutel==_", "_die Beutel_", "la bossa"],
-            ["_der ==Becher==_", "_die Becher_", "la terrina, el got (de iogurt)"],
-            ["_das ==Glas==_", "_die Gläser_", "el pot (de vidre)"],
-            ["_die ==Flasche==_", "_die Flaschen_", "l'ampolla"],
-            ["_die ==Dose==_", "_die Dosen_", "la llauna"],
-            ["_die ==Tasse==_", "_die Tassen_", "la tassa"],
-            ["_das ==Netz==_", "_die Netze_", "la xarxa (p. ex. de taronges)"],
-            ["_der ==Bund==_", "_die Bund_", "el manat (d'herbes)"],
-            ["_die ==Tafel==_", "_die Tafeln_", "la tauleta (de xocolata)"],
-            ["_die ==Tube==_", "_die Tuben_", "el tub (mostassa, pasta de dents…)"]
+            ["_!!das ==Stück==!!_", "_!!die Stücke!!_", "la peça, el tros"],
+            ["_!!die ==Schachtel==!!_", "_!!die Schachteln!!_", "la capsa"],
+            ["_!!das ==Paket==!!_ / _!!die ==Packung==!!_", "_!!die Pakete!!_ / _!!die Packungen!!_", "el paquet"],
+            ["_!!der ==Beutel==!!_", "_!!die Beutel!!_", "la bossa"],
+            ["_!!der ==Becher==!!_", "_!!die Becher!!_", "la terrina, el got (de iogurt)"],
+            ["_!!das ==Glas==!!_", "_!!die Gläser!!_", "el pot (de vidre)"],
+            ["_!!die ==Flasche==!!_", "_!!die Flaschen!!_", "l'ampolla"],
+            ["_!!die ==Dose==!!_", "_!!die Dosen!!_", "la llauna"],
+            ["_!!die ==Tasse==!!_", "_!!die Tassen!!_", "la tassa"],
+            ["_!!das ==Netz==!!_", "_!!die Netze!!_", "la xarxa (p. ex. de taronges)"],
+            ["_!!der ==Bund==!!_", "_!!die Bund!!_", "el manat (d'herbes)"],
+            ["_!!die ==Tafel==!!_", "_!!die Tafeln!!_", "la tauleta (de xocolata)"],
+            ["_!!die ==Tube==!!_", "_!!die Tuben!!_", "el tub (mostassa, pasta de dents…)"]
           ]
         },
         {
@@ -63,10 +63,10 @@
           "type": "table",
           "headers": ["Abreviatura", "Substantiu alemany", "Català"],
           "rows": [
-            ["**g**", "_das ==Gramm==_", "gram"],
-            ["**kg**", "_das ==Kilogramm==_ (col·loquial: _das Kilo_)", "quilogram / quilo"],
-            ["**l**", "_der ==Liter==_", "litre"],
-            ["**ml**", "_der ==Milliliter==_", "mil·lilitre"]
+            ["**g**", "_!!das ==Gramm==!!_", "gram"],
+            ["**kg**", "_!!das ==Kilogramm==!!_ (col·loquial: _!!das Kilo!!_)", "quilogram / quilo"],
+            ["**l**", "_!!der ==Liter==!!_", "litre"],
+            ["**ml**", "_!!der ==Milliliter==!!_", "mil·lilitre"]
           ]
         },
         {
@@ -82,11 +82,11 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### La regla clau: **sense preposició**\n\nAquí és on l'alemany i el català divergeixen de manera espectacular. Quan combines un envàs, una mesura o un pes amb un producte, en alemany ==**no hi ha cap preposició entremig**==. Simplement poses un substantiu al costat de l'altre.\n\n> **CA:** _un paquet **de** fideus_\n> **ES:** _un paquete **de** fideos_\n> **DE:** _eine Packung ==∅== Nudeln_\n\n> **CA:** _un quilo **de** patates_\n> **ES:** _un kilo **de** patatas_\n> **DE:** _ein Kilo ==∅== Kartoffeln_\n\nEn altres paraules: la fórmula alemanya és simplement\n\n> [ **quantitat + envàs/mesura** ] + [ **producte** ]\n\nsense res que les uneixi. El producte apareix ==directament== darrere de l'envàs o la mesura."
+          "body": "#### La regla clau: **sense preposició**\n\nAquí és on l'alemany i el català divergeixen de manera espectacular. Quan combines un envàs, una mesura o un pes amb un producte, en alemany ==**no hi ha cap preposició entremig**==. Simplement poses un substantiu al costat de l'altre.\n\n> **CA:** _un paquet **de** fideus_\n> **ES:** _un paquete **de** fideos_\n> **DE:** _!!eine Packung ==∅== Nudeln!!_\n\n> **CA:** _un quilo **de** patates_\n> **ES:** _un kilo **de** patatas_\n> **DE:** _!!ein Kilo ==∅== Kartoffeln!!_\n\nEn altres paraules: la fórmula alemanya és simplement\n\n> [ **quantitat + envàs/mesura** ] + [ **producte** ]\n\nsense res que les uneixi. El producte apareix ==directament== darrere de l'envàs o la mesura."
         },
         {
           "type": "explanation",
-          "body": "**Més exemples (del material IOC):**\n\n- _eine ==Schachtel== Petersilie_ — una capsa de julivert\n- _ein ==Paket== Reis_ — un paquet d'arròs\n- _eine ==Packung== Nudeln_ — una bossa/paquet de fideus\n- _ein ==Beutel== Karotten_ — una bossa de pastanagues\n- _ein ==Becher== Joghurt_ — una terrina de iogurt\n- _ein ==Glas== Marmelade_ — un pot de melmelada\n- _eine ==Flasche== Bier_ — una ampolla de cervesa\n- _eine ==Dose== Tomaten_ — una llauna de tomàquet\n- _eine ==Tasse== Champignons_ — una tassa de xampinyons\n- _ein ==Netz== Kartoffeln_ — una xarxa de patates\n- _eine ==Tafel== Schokolade_ — una tauleta de xocolata\n- _eine ==Tube== Senf_ — un tub de mostassa\n- _500 ==Gramm== Nudeln_ — 500 grams de fideus\n- _ein ==Liter== Milch_ — un litre de llet\n\nCom pots comprovar: mai no apareix _von_, _aus_ ni cap altra preposició entre l'envàs i el producte. ==És aposició pura==."
+          "body": "**Més exemples (del material IOC):**\n\n- _!!eine ==Schachtel== Petersilie!!_ — una capsa de julivert\n- _!!ein ==Paket== Reis!!_ — un paquet d'arròs\n- _!!eine ==Packung== Nudeln!!_ — una bossa/paquet de fideus\n- _!!ein ==Beutel== Karotten!!_ — una bossa de pastanagues\n- _!!ein ==Becher== Joghurt!!_ — una terrina de iogurt\n- _!!ein ==Glas== Marmelade!!_ — un pot de melmelada\n- _!!eine ==Flasche== Bier!!_ — una ampolla de cervesa\n- _!!eine ==Dose== Tomaten!!_ — una llauna de tomàquet\n- _!!eine ==Tasse== Champignons!!_ — una tassa de xampinyons\n- _!!ein ==Netz== Kartoffeln!!_ — una xarxa de patates\n- _!!eine ==Tafel== Schokolade!!_ — una tauleta de xocolata\n- _!!eine ==Tube== Senf!!_ — un tub de mostassa\n- _!!500 ==Gramm== Nudeln!!_ — 500 grams de fideus\n- _!!ein ==Liter== Milch!!_ — un litre de llet\n\nCom pots comprovar: mai no apareix _von_, _aus_ ni cap altra preposició entre l'envàs i el producte. ==És aposició pura==."
         }
       ]
     },
@@ -101,7 +101,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Les mesures i els pesos **no fan plural**\n\nAquí hi ha una segona regla que pot sorprendre. Les paraules _Stück_, _Bund_, _Gramm_, _Kilo(gramm)_, _Liter_, _Milliliter_ — quan van acompanyades d'un número més gran d'1 — ==es mantenen en singular==.\n\n> _ein ==Stück== Gurke_ → _vier ==Stück== Gurken_ (**no** _vier Stücke Gurken_)\n> _ein ==Bund== Suppengrün_ → _zwei ==Bund== Suppengrün_\n> _ein ==Kilo== Apfel_ → _zwei ==Kilo== Orangen_ (**no** _zwei Kilos_)\n> _ein ==Liter== Milch_ → _zwei ==Liter== Saft_\n\nFixa't en el contrast amb el **producte**: _Gurke_ → _Gurken_ (plural normal, perquè hi ha diverses cogombres). El que no canvia és la **unitat de mesura**.\n\n**Exemples complets del material IOC:**\n\n- _ein ==Stück== Gurke, vier ==Stück== Gurken_\n- _500 ==Gramm== Nudeln_\n- _ein ==Kilogramm== Äpfel, zwei ==Kilogramm== Orangen, fünf ==Kilo== Kartoffeln_\n- _ein ==Liter== Milch, zwei ==Liter== Saft_\n- _250 ==Milliliter== Ketchup_"
+          "body": "#### Les mesures i els pesos **no fan plural**\n\nAquí hi ha una segona regla que pot sorprendre. Les paraules _Stück_, _Bund_, _Gramm_, _Kilo(gramm)_, _Liter_, _Milliliter_ — quan van acompanyades d'un número més gran d'1 — ==es mantenen en singular==.\n\n> _!!ein ==Stück== Gurke!!_ → _!!vier ==Stück== Gurken!!_ (**no** _vier Stücke Gurken_)\n> _!!ein ==Bund== Suppengrün!!_ → _!!zwei ==Bund== Suppengrün!!_\n> _!!ein ==Kilo== Apfel!!_ → _!!zwei ==Kilo== Orangen!!_ (**no** _zwei Kilos_)\n> _!!ein ==Liter== Milch!!_ → _!!zwei ==Liter== Saft!!_\n\nFixa't en el contrast amb el **producte**: _Gurke_ → _Gurken_ (plural normal, perquè hi ha diverses cogombres). El que no canvia és la **unitat de mesura**.\n\n**Exemples complets del material IOC:**\n\n- _!!ein ==Stück== Gurke!!, !!vier ==Stück== Gurken!!_\n- _!!500 ==Gramm== Nudeln!!_\n- _!!ein ==Kilogramm== Äpfel!!, !!zwei ==Kilogramm== Orangen!!, !!fünf ==Kilo== Kartoffeln!!_\n- _!!ein ==Liter== Milch!!, !!zwei ==Liter== Saft!!_\n- _!!250 ==Milliliter== Ketchup!!_"
         },
         {
           "type": "explanation",
@@ -111,18 +111,18 @@
           "type": "table",
           "headers": ["Singular", "Plural amb número"],
           "rows": [
-            ["_eine ==Schachtel== Petersilie_", "_zwei ==Schachteln== Spinat_"],
-            ["_ein ==Paket== Reis_", "_zwei ==Pakete== Nudeln_"],
-            ["_eine ==Packung== Nudeln_", "_drei ==Packungen== Reis_"],
-            ["_ein ==Beutel== Karotten_", "_zwei ==Beutel== Kartoffeln_"],
-            ["_ein ==Becher== Joghurt_", "_fünf ==Becher== Erdbeerjoghurt_"],
-            ["_ein ==Glas== Marmelade_", "_drei ==Gläser== Bolognesesauce_"],
-            ["_eine ==Flasche== Bier_", "_vier ==Flaschen== Cola_"],
-            ["_eine ==Dose== Tomaten_", "_zwei ==Dosen== Limonade_"],
-            ["_eine ==Tasse== Champignons_", "_zwei ==Tassen== Zwiebeln_"],
-            ["_ein ==Netz== Kartoffeln_", "_zwei ==Netze== Orangen_"],
-            ["_eine ==Tafel== Schokolade_", "_drei ==Tafeln== Schokolade_"],
-            ["_eine ==Tube== Senf_", "_zwei ==Tuben== Mayonäse_"]
+            ["_!!eine ==Schachtel== Petersilie!!_", "_!!zwei ==Schachteln== Spinat!!_"],
+            ["_!!ein ==Paket== Reis!!_", "_!!zwei ==Pakete== Nudeln!!_"],
+            ["_!!eine ==Packung== Nudeln!!_", "_!!drei ==Packungen== Reis!!_"],
+            ["_!!ein ==Beutel== Karotten!!_", "_!!zwei ==Beutel== Kartoffeln!!_"],
+            ["_!!ein ==Becher== Joghurt!!_", "_!!fünf ==Becher== Erdbeerjoghurt!!_"],
+            ["_!!ein ==Glas== Marmelade!!_", "_!!drei ==Gläser== Bolognesesauce!!_"],
+            ["_!!eine ==Flasche== Bier!!_", "_!!vier ==Flaschen== Cola!!_"],
+            ["_!!eine ==Dose== Tomaten!!_", "_!!zwei ==Dosen== Limonade!!_"],
+            ["_!!eine ==Tasse== Champignons!!_", "_!!zwei ==Tassen== Zwiebeln!!_"],
+            ["_!!ein ==Netz== Kartoffeln!!_", "_!!zwei ==Netze== Orangen!!_"],
+            ["_!!eine ==Tafel== Schokolade!!_", "_!!drei ==Tafeln== Schokolade!!_"],
+            ["_!!eine ==Tube== Senf!!_", "_!!zwei ==Tuben== Mayonäse!!_"]
           ]
         },
         {
@@ -144,7 +144,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. Afegir-hi _von_ o _aus_ per \"traduir\" el _de_.**\nÉs l'error número u. L'instint romànic demana una preposició d'enllaç, però en alemany no hi va.\n\n- Incorrecte: _eine Flasche ==von== Wasser_ ❌\n- Incorrecte: _ein Kilo ==aus== Kartoffeln_ ❌\n- Correcte: _eine Flasche ==∅== Wasser_ ✅\n- Correcte: _ein Kilo ==∅== Kartoffeln_ ✅\n\n**2. Posar _Kilos_, _Liters_, _Gramms_ en plural.**\nLes unitats de mesura no fan plural. El número ja indica la quantitat; la paraula es queda igual.\n\n- Incorrecte: _zwei ==Kilos== Orangen_ ❌\n- Incorrecte: _drei ==Liters== Saft_ ❌\n- Correcte: _zwei ==Kilo== Orangen_ ✅\n- Correcte: _drei ==Liter== Saft_ ✅\n\n**3. No fer plural l'envàs quan toca.**\nAquest és l'error contrari: per excés de prudència, algú pot deixar _Flasche_ o _Dose_ en singular amb número plural. Però els envasos **sí que** fan plural normal.\n\n- Incorrecte: _zwei ==Flasche== Cola_ ❌\n- Correcte: _zwei ==Flaschen== Cola_ ✅\n\n**4. Posar l'article del producte enmig.**\nEn alemany, el producte darrere d'una expressió de quantitat ==no porta article==. No es diu _eine Flasche **das** Wasser_ ni _ein Kilo **die** Kartoffeln_. El producte apareix \"pelat\".\n\n- Incorrecte: _eine Tasse ==der== Kaffee_ ❌\n- Correcte: _eine Tasse ==∅== Kaffee_ ✅\n\n**5. Confondre _Glas_ / _Becher_ / _Tasse_.**\nEls tres es poden traduir per \"got\" o \"tassa\" en moments diferents, però a la pràctica són envasos molt distints. _==Glas==_ és vidre (pot de melmelada, got de beure); _==Becher==_ és terrina o got de plàstic (iogurt, gelat); _==Tasse==_ és la tassa amb nansa (cafè, te). Aprèn cada paraula lligada al seu producte prototípic."
+          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. Afegir-hi _von_ o _aus_ per \"traduir\" el _de_.**\nÉs l'error número u. L'instint romànic demana una preposició d'enllaç, però en alemany no hi va.\n\n- Incorrecte: _eine Flasche ==von== Wasser_ ❌\n- Incorrecte: _ein Kilo ==aus== Kartoffeln_ ❌\n- Correcte: _!!eine Flasche ==∅== Wasser!!_ ✅\n- Correcte: _!!ein Kilo ==∅== Kartoffeln!!_ ✅\n\n**2. Posar _Kilos_, _Liters_, _Gramms_ en plural.**\nLes unitats de mesura no fan plural. El número ja indica la quantitat; la paraula es queda igual.\n\n- Incorrecte: _zwei ==Kilos== Orangen_ ❌\n- Incorrecte: _drei ==Liters== Saft_ ❌\n- Correcte: _!!zwei ==Kilo== Orangen!!_ ✅\n- Correcte: _!!drei ==Liter== Saft!!_ ✅\n\n**3. No fer plural l'envàs quan toca.**\nAquest és l'error contrari: per excés de prudència, algú pot deixar _Flasche_ o _Dose_ en singular amb número plural. Però els envasos **sí que** fan plural normal.\n\n- Incorrecte: _zwei ==Flasche== Cola_ ❌\n- Correcte: _!!zwei ==Flaschen== Cola!!_ ✅\n\n**4. Posar l'article del producte enmig.**\nEn alemany, el producte darrere d'una expressió de quantitat ==no porta article==. No es diu _eine Flasche **das** Wasser_ ni _ein Kilo **die** Kartoffeln_. El producte apareix \"pelat\".\n\n- Incorrecte: _eine Tasse ==der== Kaffee_ ❌\n- Correcte: _!!eine Tasse ==∅== Kaffee!!_ ✅\n\n**5. Confondre _Glas_ / _Becher_ / _Tasse_.**\nEls tres es poden traduir per \"got\" o \"tassa\" en moments diferents, però a la pràctica són envasos molt distints. _==Glas==_ és vidre (pot de melmelada, got de beure); _==Becher==_ és terrina o got de plàstic (iogurt, gelat); _==Tasse==_ és la tassa amb nansa (cafè, te). Aprèn cada paraula lligada al seu producte prototípic."
         },
         {
           "type": "callout",
