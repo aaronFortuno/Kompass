@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-23T07:51:33.835Z",
+  "generatedAt": "2026-04-23T12:49:10.122Z",
   "totalStrings": 1901,
-  "totalChars": 30304,
+  "totalChars": 30305,
   "entries": [
     {
       "hash": "00083a6e13bccdb336bccc13c4a6a13ddced3cf2",
@@ -43,11 +43,11 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[7].pron"
+          "path": "steps[4].tabs[7].pron"
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[1].rows[7][0]#inline[0]"
+          "path": "steps[9].tables[1].rows[7][0]#inline[0]"
         }
       ]
     },
@@ -179,7 +179,7 @@
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[0].rows[8][0]#inline[0]"
+          "path": "steps[9].tables[0].rows[8][0]#inline[0]"
         }
       ]
     },
@@ -239,11 +239,11 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[5].comparison[1].de"
+          "path": "steps[6].comparison[1].de"
         },
         {
           "topic": "A1a-V5",
-          "path": "steps[6].pitfalls[0].good"
+          "path": "steps[7].pitfalls[0].good"
         }
       ]
     },
@@ -563,7 +563,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[6].pitfalls[1].bad"
+          "path": "steps[7].pitfalls[1].bad"
         }
       ]
     },
@@ -771,7 +771,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[5].tabs[1].example.de"
+          "path": "steps[6].tabs[1].example.de"
         }
       ]
     },
@@ -955,7 +955,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[1].example.de"
+          "path": "steps[4].tabs[1].example.de"
         }
       ]
     },
@@ -1053,11 +1053,11 @@
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[5].pron"
+          "path": "steps[4].tabs[5].pron"
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[1].rows[5][0]#inline[0]"
+          "path": "steps[9].tables[1].rows[5][0]#inline[0]"
         }
       ]
     },
@@ -2251,7 +2251,7 @@
         },
         {
           "topic": "A1a-V5",
-          "path": "steps[7].tables[0].rows[3][0]#inline[0]"
+          "path": "steps[9].tables[0].rows[3][0]#inline[0]"
         }
       ]
     },
@@ -2885,11 +2885,11 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[0].pron"
+          "path": "steps[4].tabs[0].pron"
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[1].rows[0][0]#inline[0]"
+          "path": "steps[9].tables[1].rows[0][0]#inline[0]"
         }
       ]
     },
@@ -3263,7 +3263,7 @@
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[0].rows[0][0]#inline[0]"
+          "path": "steps[9].tables[0].rows[0][0]#inline[0]"
         }
       ]
     },
@@ -3560,6 +3560,16 @@
         {
           "topic": "A1a-35",
           "path": "steps[6].blocks[0].body#inline[1]"
+        }
+      ]
+    },
+    {
+      "hash": "21b21c074acaf59bd5280efd65c65f4fbddad2e8",
+      "text": "Die Banane ist gelb.",
+      "sources": [
+        {
+          "topic": "A1a-V5",
+          "path": "steps[1].tabs[3].example.de"
         }
       ]
     },
@@ -3955,7 +3965,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[5].example.de"
+          "path": "steps[4].tabs[5].example.de"
         }
       ]
     },
@@ -3989,7 +3999,7 @@
         },
         {
           "topic": "A1a-V5",
-          "path": "steps[7].tables[0].rows[1][0]#inline[0]"
+          "path": "steps[9].tables[0].rows[1][0]#inline[0]"
         }
       ]
     },
@@ -4039,11 +4049,11 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[8].pron"
+          "path": "steps[4].tabs[8].pron"
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[1].rows[8][0]#inline[0]"
+          "path": "steps[9].tables[1].rows[8][0]#inline[0]"
         }
       ]
     },
@@ -4497,7 +4507,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[6].pitfalls[3].bad"
+          "path": "steps[7].pitfalls[3].bad"
         }
       ]
     },
@@ -4781,11 +4791,11 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[5].tabs[3].pron"
+          "path": "steps[6].tabs[3].pron"
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[2].rows[3][0]#inline[0]"
+          "path": "steps[9].tables[2].rows[3][0]#inline[0]"
         }
       ]
     },
@@ -4961,7 +4971,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[3].example.de"
+          "path": "steps[4].tabs[3].example.de"
         }
       ]
     },
@@ -5701,7 +5711,7 @@
         },
         {
           "topic": "A1a-V5",
-          "path": "steps[7].tables[0].rows[5][0]#inline[0]"
+          "path": "steps[9].tables[0].rows[5][0]#inline[0]"
         }
       ]
     },
@@ -5861,7 +5871,7 @@
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[0].rows[3][0]#inline[0]"
+          "path": "steps[9].tables[0].rows[3][0]#inline[0]"
         }
       ]
     },
@@ -6011,7 +6021,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[4].tables[0].rows[2][0]#inline[0]"
+          "path": "steps[5].tables[0].rows[2][0]#inline[0]"
         }
       ]
     },
@@ -6207,11 +6217,11 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[2].pron"
+          "path": "steps[4].tabs[2].pron"
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[1].rows[2][0]#inline[0]"
+          "path": "steps[9].tables[1].rows[2][0]#inline[0]"
         }
       ]
     },
@@ -7215,11 +7225,11 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[5].tabs[2].pron"
+          "path": "steps[6].tabs[2].pron"
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[2].rows[2][0]#inline[0]"
+          "path": "steps[9].tables[2].rows[2][0]#inline[0]"
         }
       ]
     },
@@ -7279,7 +7289,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[5].comparison[0].de"
+          "path": "steps[6].comparison[0].de"
         }
       ]
     },
@@ -7579,7 +7589,7 @@
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[0].rows[6][0]#inline[0]"
+          "path": "steps[9].tables[0].rows[6][0]#inline[0]"
         }
       ]
     },
@@ -8259,7 +8269,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[6].pitfalls[0].bad"
+          "path": "steps[7].pitfalls[0].bad"
         }
       ]
     },
@@ -8341,11 +8351,11 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[6].pron"
+          "path": "steps[4].tabs[6].pron"
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[1].rows[6][0]#inline[0]"
+          "path": "steps[9].tables[1].rows[6][0]#inline[0]"
         }
       ]
     },
@@ -8453,7 +8463,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[4].tables[0].rows[6][0]#inline[0]"
+          "path": "steps[5].tables[0].rows[6][0]#inline[0]"
         }
       ]
     },
@@ -8473,11 +8483,11 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[3].pron"
+          "path": "steps[4].tabs[3].pron"
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[1].rows[3][0]#inline[0]"
+          "path": "steps[9].tables[1].rows[3][0]#inline[0]"
         }
       ]
     },
@@ -8643,7 +8653,7 @@
         },
         {
           "topic": "A1a-V5",
-          "path": "steps[7].tables[0].rows[9][0]#inline[0]"
+          "path": "steps[9].tables[0].rows[9][0]#inline[0]"
         }
       ]
     },
@@ -8681,7 +8691,7 @@
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[0].rows[1][0]#inline[0]"
+          "path": "steps[9].tables[0].rows[1][0]#inline[0]"
         }
       ]
     },
@@ -8931,11 +8941,11 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[6].pitfalls[2].good"
+          "path": "steps[7].pitfalls[2].good"
         },
         {
           "topic": "A1a-V5",
-          "path": "steps[7].tables[1].rows[2][1]#inline[0]"
+          "path": "steps[9].tables[1].rows[2][1]#inline[0]"
         }
       ]
     },
@@ -8949,7 +8959,7 @@
         },
         {
           "topic": "A1a-V5",
-          "path": "steps[7].tables[0].rows[8][0]#inline[0]"
+          "path": "steps[9].tables[0].rows[8][0]#inline[0]"
         }
       ]
     },
@@ -9009,7 +9019,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[6].pitfalls[3].good"
+          "path": "steps[7].pitfalls[3].good"
         }
       ]
     },
@@ -9445,7 +9455,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[4].tables[0].rows[3][0]#inline[0]"
+          "path": "steps[5].tables[0].rows[3][0]#inline[0]"
         }
       ]
     },
@@ -9489,7 +9499,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[6].pitfalls[2].bad"
+          "path": "steps[7].pitfalls[2].bad"
         }
       ]
     },
@@ -9847,7 +9857,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[6].pitfalls[0].bad"
+          "path": "steps[7].pitfalls[0].bad"
         }
       ]
     },
@@ -10001,7 +10011,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[6].pitfalls[1].good"
+          "path": "steps[7].pitfalls[1].good"
         }
       ]
     },
@@ -10215,7 +10225,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[5].tabs[2].example.de"
+          "path": "steps[6].tabs[2].example.de"
         }
       ]
     },
@@ -10579,7 +10589,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[4].tables[0].rows[5][0]#inline[0]"
+          "path": "steps[5].tables[0].rows[5][0]#inline[0]"
         }
       ]
     },
@@ -11073,7 +11083,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[6].example.de"
+          "path": "steps[4].tabs[6].example.de"
         }
       ]
     },
@@ -11223,7 +11233,7 @@
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[0].rows[2][0]#inline[0]"
+          "path": "steps[9].tables[0].rows[2][0]#inline[0]"
         }
       ]
     },
@@ -11409,11 +11419,11 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[5].tabs[1].pron"
+          "path": "steps[6].tabs[1].pron"
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[2].rows[1][0]#inline[0]"
+          "path": "steps[9].tables[2].rows[1][0]#inline[0]"
         }
       ]
     },
@@ -11977,11 +11987,11 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[1].pron"
+          "path": "steps[4].tabs[1].pron"
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[1].rows[1][0]#inline[0]"
+          "path": "steps[9].tables[1].rows[1][0]#inline[0]"
         }
       ]
     },
@@ -12181,7 +12191,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[1].rows[1][0]#inline[1]"
+          "path": "steps[9].tables[1].rows[1][0]#inline[1]"
         }
       ]
     },
@@ -12487,7 +12497,7 @@
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[0].rows[7][0]#inline[0]"
+          "path": "steps[9].tables[0].rows[7][0]#inline[0]"
         }
       ]
     },
@@ -12527,11 +12537,11 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[5].tabs[0].pron"
+          "path": "steps[6].tabs[0].pron"
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[2].rows[0][0]#inline[0]"
+          "path": "steps[9].tables[2].rows[0][0]#inline[0]"
         }
       ]
     },
@@ -12747,7 +12757,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[4].tables[0].rows[0][0]#inline[0]"
+          "path": "steps[5].tables[0].rows[0][0]#inline[0]"
         }
       ]
     },
@@ -12853,7 +12863,7 @@
         },
         {
           "topic": "A1a-V5",
-          "path": "steps[7].tables[0].rows[4][0]#inline[0]"
+          "path": "steps[9].tables[0].rows[4][0]#inline[0]"
         }
       ]
     },
@@ -12867,7 +12877,7 @@
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[0].rows[9][0]#inline[0]"
+          "path": "steps[9].tables[0].rows[9][0]#inline[0]"
         }
       ]
     },
@@ -12891,7 +12901,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[7].example.de"
+          "path": "steps[4].tabs[7].example.de"
         }
       ]
     },
@@ -12901,7 +12911,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[2].example.de"
+          "path": "steps[4].tabs[2].example.de"
         }
       ]
     },
@@ -13585,7 +13595,7 @@
         },
         {
           "topic": "A1a-V5",
-          "path": "steps[7].tables[1].rows[1][1]#inline[0]"
+          "path": "steps[9].tables[1].rows[1][1]#inline[0]"
         }
       ]
     },
@@ -13675,7 +13685,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[6].pitfalls[2].bad"
+          "path": "steps[7].pitfalls[2].bad"
         }
       ]
     },
@@ -14311,7 +14321,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[1].rows[0][0]#inline[1]"
+          "path": "steps[9].tables[1].rows[0][0]#inline[1]"
         }
       ]
     },
@@ -14617,7 +14627,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[5].tabs[0].example.de"
+          "path": "steps[6].tabs[0].example.de"
         }
       ]
     },
@@ -15205,11 +15215,11 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[4].pron"
+          "path": "steps[4].tabs[4].pron"
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[1].rows[4][0]#inline[0]"
+          "path": "steps[9].tables[1].rows[4][0]#inline[0]"
         }
       ]
     },
@@ -16033,7 +16043,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[4].tables[0].rows[1][0]#inline[0]"
+          "path": "steps[5].tables[0].rows[1][0]#inline[0]"
         }
       ]
     },
@@ -16427,7 +16437,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[5].tabs[3].example.de"
+          "path": "steps[6].tabs[3].example.de"
         }
       ]
     },
@@ -16797,7 +16807,7 @@
         },
         {
           "topic": "A1a-V5",
-          "path": "steps[7].tables[0].rows[2][0]#inline[0]"
+          "path": "steps[9].tables[0].rows[2][0]#inline[0]"
         }
       ]
     },
@@ -17319,7 +17329,7 @@
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[0].rows[4][0]#inline[0]"
+          "path": "steps[9].tables[0].rows[4][0]#inline[0]"
         }
       ]
     },
@@ -17373,7 +17383,7 @@
         },
         {
           "topic": "A1a-V5",
-          "path": "steps[7].tables[0].rows[10][0]#inline[0]"
+          "path": "steps[9].tables[0].rows[10][0]#inline[0]"
         }
       ]
     },
@@ -17765,7 +17775,7 @@
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[6].pitfalls[1].good"
+          "path": "steps[7].pitfalls[1].good"
         }
       ]
     },
@@ -17815,7 +17825,7 @@
         },
         {
           "topic": "A1a-V3",
-          "path": "steps[7].tables[0].rows[5][0]#inline[0]"
+          "path": "steps[9].tables[0].rows[5][0]#inline[0]"
         }
       ]
     },
@@ -18187,7 +18197,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[6].pitfalls[1].bad"
+          "path": "steps[7].pitfalls[1].bad"
         }
       ]
     },
@@ -18241,7 +18251,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[6].pitfalls[2].good"
+          "path": "steps[7].pitfalls[2].good"
         }
       ]
     },
@@ -18483,7 +18493,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[4].tables[0].rows[7][0]#inline[0]"
+          "path": "steps[5].tables[0].rows[7][0]#inline[0]"
         }
       ]
     },
@@ -18633,7 +18643,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[7].tables[1].rows[0][1]#inline[0]"
+          "path": "steps[9].tables[1].rows[0][1]#inline[0]"
         }
       ]
     },
@@ -18644,16 +18654,6 @@
         {
           "topic": "A1a-12",
           "path": "steps[1].blocks[2].body#inline[5]"
-        }
-      ]
-    },
-    {
-      "hash": "cd9dd06567f9290f0a39dbd8886c9dab761aa97d",
-      "text": "Die Sonne ist gelb.",
-      "sources": [
-        {
-          "topic": "A1a-V5",
-          "path": "steps[1].tabs[3].example.de"
         }
       ]
     },
@@ -18697,7 +18697,7 @@
         },
         {
           "topic": "A1a-V5",
-          "path": "steps[7].tables[0].rows[6][0]#inline[0]"
+          "path": "steps[9].tables[0].rows[6][0]#inline[0]"
         }
       ]
     },
@@ -19795,7 +19795,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[8].example.de"
+          "path": "steps[4].tabs[8].example.de"
         }
       ]
     },
@@ -20037,7 +20037,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[6].pitfalls[0].good"
+          "path": "steps[7].pitfalls[0].good"
         }
       ]
     },
@@ -20119,7 +20119,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[4].tables[0].rows[4][0]#inline[0]"
+          "path": "steps[5].tables[0].rows[4][0]#inline[0]"
         }
       ]
     },
@@ -20555,7 +20555,7 @@
         },
         {
           "topic": "A1a-V5",
-          "path": "steps[7].tables[0].rows[0][0]#inline[0]"
+          "path": "steps[9].tables[0].rows[0][0]#inline[0]"
         }
       ]
     },
@@ -21933,7 +21933,7 @@
         },
         {
           "topic": "A1a-V5",
-          "path": "steps[7].tables[0].rows[7][0]#inline[0]"
+          "path": "steps[9].tables[0].rows[7][0]#inline[0]"
         }
       ]
     },
@@ -23111,7 +23111,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[4].example.de"
+          "path": "steps[4].tabs[4].example.de"
         }
       ]
     },
@@ -23233,7 +23233,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[0].example.de"
+          "path": "steps[4].tabs[0].example.de"
         }
       ]
     },
