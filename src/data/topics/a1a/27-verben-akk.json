@@ -24,7 +24,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Què és l'acusatiu?\n\nL'**acusatiu** (_Akkusativ_, abreujat _Akk_) és el cas del **complement directe**: el substantiu que rep directament l'acció del verb.\n\nLa pregunta que el delata és senzilla:\n\n> ==Wen?== (a qui?) / ==Was?== (què?)\n\nSi darrere d'un verb pots preguntar _Wen?_ o _Was?_ i obtens una resposta, aquesta resposta va en **acusatiu**.\n\n**Exemples (amb la pregunta diagnòstica):**\n\n- _Ich trinke **einen Apfelsaft**._ → _Was trinke ich?_ → _einen Apfelsaft._ ✅ Acusatiu.\n- _Er kauft **ein Buch**._ → _Was kauft er?_ → _ein Buch._ ✅ Acusatiu.\n- _Wir sehen **den Film**._ → _Was sehen wir?_ → _den Film._ ✅ Acusatiu."
+          "body": "#### Què és l'acusatiu?\n\nL'**acusatiu** (_Akkusativ_, abreujat _Akk_) és el cas del **complement directe**: el substantiu que rep directament l'acció del verb.\n\nLa pregunta que el delata és senzilla:\n\n> ==Wen?== (a qui?) / ==Was?== (què?)\n\nSi darrere d'un verb pots preguntar _Wen?_ o _Was?_ i obtens una resposta, aquesta resposta va en **acusatiu**.\n\n**Exemples (amb la pregunta diagnòstica):**\n\n- _!!Ich trinke **einen Apfelsaft**.!!_ → _!!Was trinke ich?!!_ → _!!einen Apfelsaft.!!_ ✅ Acusatiu.\n- _!!Er kauft **ein Buch**.!!_ → _!!Was kauft er?!!_ → _!!ein Buch.!!_ ✅ Acusatiu.\n- _!!Wir sehen **den Film**.!!_ → _!!Was sehen wir?!!_ → _!!den Film.!!_ ✅ Acusatiu."
         },
         {
           "type": "explanation",
@@ -34,9 +34,9 @@
           "type": "table",
           "headers": ["Català", "Castellà", "Alemany"],
           "rows": [
-            ["Jo bec **un suc**.", "Yo bebo **un zumo**.", "_Ich trinke **einen Saft**._"],
-            ["Veig **el Marc**.", "Veo **a Marcos**.", "_Ich sehe **den Marc**._"],
-            ["Comprem **una poma**.", "Compramos **una manzana**.", "_Wir kaufen **einen Apfel**._"]
+            ["Jo bec **un suc**.", "Yo bebo **un zumo**.", "_!!Ich trinke **einen Saft**.!!_"],
+            ["Veig **el Marc**.", "Veo **a Marcos**.", "_!!Ich sehe **den Marc**.!!_"],
+            ["Comprem **una poma**.", "Compramos **una manzana**.", "_!!Wir kaufen **einen Apfel**.!!_"]
           ]
         },
         {
@@ -56,11 +56,11 @@
           "type": "table",
           "headers": ["Subjecte (Nom)", "Verb", "Objecte directe (Akk)"],
           "rows": [
-            ["_Ich_", "_habe_", "_einen Hund._"],
-            ["_Du_", "_kaufst_", "_ein Brot._"],
-            ["_Er_", "_isst_", "_einen Apfel._"],
-            ["_Wir_", "_sehen_", "_den Film._"],
-            ["_Sie_", "_liest_", "_die Zeitung._"]
+            ["_!!Ich!!_", "_!!habe!!_", "_!!einen Hund.!!_"],
+            ["_!!Du!!_", "_!!kaufst!!_", "_!!ein Brot.!!_"],
+            ["_!!Er!!_", "_!!isst!!_", "_!!einen Apfel.!!_"],
+            ["_!!Wir!!_", "_!!sehen!!_", "_!!den Film.!!_"],
+            ["_!!Sie!!_", "_!!liest!!_", "_!!die Zeitung.!!_"]
           ]
         },
         {
@@ -86,26 +86,26 @@
           "type": "table",
           "headers": ["Verb", "Significat", "Exemple"],
           "rows": [
-            ["**haben**", "tenir", "_Ich habe ==einen Bruder==._"],
-            ["**kaufen**", "comprar", "_Sie kauft ==ein Kleid==._"],
-            ["**essen**", "menjar", "_Er isst ==einen Apfel==._"],
-            ["**trinken**", "beure", "_Wir trinken ==einen Kaffee==._"],
-            ["**nehmen**", "agafar, prendre", "_Ich nehme ==die Suppe==._"],
-            ["**sehen**", "veure", "_Ihr seht ==den Film==._"],
-            ["**lesen**", "llegir", "_Du liest ==ein Buch==._"],
-            ["**bekommen**", "rebre, obtenir", "_Er bekommt ==ein Geschenk==._"],
-            ["**bezahlen**", "pagar", "_Ich bezahle ==die Rechnung==._"],
-            ["**suchen**", "buscar", "_Wir suchen ==die Adresse==._"],
-            ["**brauchen**", "necessitar", "_Ich brauche ==einen Stift==._"],
-            ["**machen**", "fer", "_Sie macht ==die Hausaufgaben==._"],
-            ["**möchten**", "voldria", "_Ich möchte ==eine Pizza==._"]
+            ["!!**haben**!!", "tenir", "_!!Ich habe ==einen Bruder==.!!_"],
+            ["!!**kaufen**!!", "comprar", "_!!Sie kauft ==ein Kleid==.!!_"],
+            ["!!**essen**!!", "menjar", "_!!Er isst ==einen Apfel==.!!_"],
+            ["!!**trinken**!!", "beure", "_!!Wir trinken ==einen Kaffee==.!!_"],
+            ["!!**nehmen**!!", "agafar, prendre", "_!!Ich nehme ==die Suppe==.!!_"],
+            ["!!**sehen**!!", "veure", "_!!Ihr seht ==den Film==.!!_"],
+            ["!!**lesen**!!", "llegir", "_!!Du liest ==ein Buch==.!!_"],
+            ["!!**bekommen**!!", "rebre, obtenir", "_!!Er bekommt ==ein Geschenk==.!!_"],
+            ["!!**bezahlen**!!", "pagar", "_!!Ich bezahle ==die Rechnung==.!!_"],
+            ["!!**suchen**!!", "buscar", "_!!Wir suchen ==die Adresse==.!!_"],
+            ["!!**brauchen**!!", "necessitar", "_!!Ich brauche ==einen Stift==.!!_"],
+            ["!!**machen**!!", "fer", "_!!Sie macht ==die Hausaufgaben==.!!_"],
+            ["!!**möchten**!!", "voldria", "_!!Ich möchte ==eine Pizza==.!!_"]
           ]
         },
         {
           "type": "callout",
           "variant": "warning",
           "title": "Fals amic: _bekommen_",
-          "body": "_bekommen_ **no** vol dir \"esdevenir\" (això és _werden_). Vol dir **rebre, obtenir** —en una situació de restaurant, per exemple, _Ich bekomme ein Rindersteak_ vol dir \"jo prenc / per a mi el bistec de vedella\". És un fals amic clàssic amb l'anglès _to become_."
+          "body": "_bekommen_ **no** vol dir \"esdevenir\" (això és _werden_). Vol dir **rebre, obtenir** —en una situació de restaurant, per exemple, _!!Ich bekomme ein Rindersteak.!!_ vol dir \"jo prenc / per a mi el bistec de vedella\". És un fals amic clàssic amb l'anglès _to become_."
         },
         {
           "type": "callout",
@@ -126,10 +126,10 @@
           "type": "table",
           "headers": ["Verb", "Cas del substantiu després", "Exemple"],
           "rows": [
-            ["**sein** (ser)", "**Nominatiu**", "_Das ist ==ein== Apfel._"],
-            ["**essen** (menjar)", "**Acusatiu**", "_Ich esse ==einen== Apfel._"],
-            ["**heißen** (dir-se)", "**Nominatiu**", "_Er ist ==ein== Lehrer._ (també amb _sein_)"],
-            ["**haben** (tenir)", "**Acusatiu**", "_Ich habe ==einen== Bruder._"]
+            ["!!**sein**!! (ser)", "**Nominatiu**", "_!!Das ist ==ein== Apfel.!!_"],
+            ["!!**essen**!! (menjar)", "**Acusatiu**", "_!!Ich esse ==einen== Apfel.!!_"],
+            ["!!**heißen**!! (dir-se)", "**Nominatiu**", "_!!Er ist ==ein== Lehrer.!!_ (també amb _sein_)"],
+            ["!!**haben**!! (tenir)", "**Acusatiu**", "_!!Ich habe ==einen== Bruder.!!_"]
           ]
         },
         {
@@ -155,7 +155,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. Creure que \"l'article no canvia\" perquè en català no canvia.**\nL'instint romànic és mantenir _ein Apfel_ sempre igual. Però en acusatiu masculí, ==_ein_ es converteix en _einen_==, i _der_ es converteix en ==_den_==. La sorpresa més gran ve amb el masculí; els detalls concrets els treballes a **A1a-28**.\n\n- Incorrecte: _Ich habe **ein** Bruder._ ❌\n- Correcte: _Ich habe ==einen== Bruder._ ✅\n\n**2. Confondre _sein_ amb verbs d'acció.**\nSi l'oració és _Das ist…_, el substantiu va en **nominatiu** (_Das ist ein Apfel_). Només si el verb fa una acció sobre l'objecte (_essen, kaufen, haben…_) entra l'acusatiu.\n\n- Incorrecte: _Das ist einen Apfel._ ❌\n- Correcte: _Das ist ==ein== Apfel._ / _Ich esse ==einen== Apfel._ ✅\n\n**3. El fals amic _bekommen_.**\n_bekommen_ no vol dir \"esdevenir, tornar-se\". Vol dir **rebre**. A la pregunta _Was bekommen Sie?_ del cambrer, la resposta és _Ich bekomme ein Steak_ (\"per a mi, un bistec\"), no \"jo em converteixo en bistec\".\n\n**4. Oblidar que el plural no té article indeterminat.**\nEn plural, _ein_ simplement **desapareix**: _Das sind Pommes frites_ → _Ich nehme Pommes frites._ El negatiu, en canvi, sí que hi és: _==keine== Pommes frites_. Això ja ho tens treballat a la família de _kein_.\n\n**5. Col·locar el complement directe abans del verb sense pensar-ho.**\nEn alemany pots dir _Einen Apfel esse ich_ (amb èmfasi), però l'oració neutra és _Ich esse einen Apfel_. De moment, mantén l'ordre **subjecte – verb – objecte** i fixa't en l'**article**, no en l'ordre."
+          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. Creure que \"l'article no canvia\" perquè en català no canvia.**\nL'instint romànic és mantenir _ein Apfel_ sempre igual. Però en acusatiu masculí, ==_ein_ es converteix en _einen_==, i _der_ es converteix en ==_den_==. La sorpresa més gran ve amb el masculí; els detalls concrets els treballes a **A1a-28**.\n\n- Incorrecte: _Ich habe **ein** Bruder._ ❌\n- Correcte: _!!Ich habe ==einen== Bruder.!!_ ✅\n\n**2. Confondre _sein_ amb verbs d'acció.**\nSi l'oració és _Das ist…_, el substantiu va en **nominatiu** (_Das ist ein Apfel_). Només si el verb fa una acció sobre l'objecte (_essen, kaufen, haben…_) entra l'acusatiu.\n\n- Incorrecte: _Das ist einen Apfel._ ❌\n- Correcte: _!!Das ist ==ein== Apfel.!!_ / _!!Ich esse ==einen== Apfel.!!_ ✅\n\n**3. El fals amic _bekommen_.**\n_bekommen_ no vol dir \"esdevenir, tornar-se\". Vol dir **rebre**. A la pregunta _Was bekommen Sie?_ del cambrer, la resposta és _Ich bekomme ein Steak_ (\"per a mi, un bistec\"), no \"jo em converteixo en bistec\".\n\n**4. Oblidar que el plural no té article indeterminat.**\nEn plural, _ein_ simplement **desapareix**: _Das sind Pommes frites_ → _Ich nehme Pommes frites._ El negatiu, en canvi, sí que hi és: _==keine== Pommes frites_. Això ja ho tens treballat a la família de _kein_.\n\n**5. Col·locar el complement directe abans del verb sense pensar-ho.**\nEn alemany pots dir _Einen Apfel esse ich_ (amb èmfasi), però l'oració neutra és _Ich esse einen Apfel_. De moment, mantén l'ordre **subjecte – verb – objecte** i fixa't en l'**article**, no en l'ordre."
         },
         {
           "type": "callout",
