@@ -28,6 +28,14 @@
       "kind": "narrative",
       "heading": "La família nuclear",
       "lead": "Pares, fills, germans. Tretze paraules bàsiques i ja pots descriure casa teva.",
+      "visuals": [
+        {
+          "svg": "<svg viewBox='0 0 520 320' xmlns='http://www.w3.org/2000/svg' aria-hidden='true'><g stroke='currentColor' stroke-opacity='0.45' fill='none' stroke-width='1.2'><line x1='222' y1='40' x2='298' y2='40'/><line x1='260' y1='40' x2='260' y2='140'/><line x1='222' y1='170' x2='298' y2='170'/><line x1='260' y1='170' x2='260' y2='220'/><line x1='120' y1='220' x2='400' y2='220'/><line x1='120' y1='220' x2='120' y2='262'/><line x1='260' y1='220' x2='260' y2='262'/><line x1='400' y1='220' x2='400' y2='262'/></g><g font-family='Newsreader, serif' font-size='15' font-style='italic' fill='currentColor' text-anchor='middle'><g transform='translate(180 40)'><rect x='-42' y='-16' width='84' height='32' rx='6' stroke='currentColor' stroke-opacity='0.3' fill='none'/><text dy='5'>Opa</text></g><g transform='translate(340 40)'><rect x='-42' y='-16' width='84' height='32' rx='6' stroke='currentColor' stroke-opacity='0.3' fill='none'/><text dy='5'>Oma</text></g><g transform='translate(180 170)'><rect x='-48' y='-16' width='96' height='32' rx='6' stroke='currentColor' stroke-opacity='0.3' fill='none'/><text dy='5'>Vater</text></g><g transform='translate(340 170)'><rect x='-48' y='-16' width='96' height='32' rx='6' stroke='currentColor' stroke-opacity='0.3' fill='none'/><text dy='5'>Mutter</text></g><g transform='translate(120 278)'><rect x='-50' y='-16' width='100' height='32' rx='6' stroke='currentColor' stroke-opacity='0.3' fill='none'/><text dy='5'>Bruder</text></g><g transform='translate(260 278)'><rect x='-36' y='-16' width='72' height='32' rx='6' stroke='currentColor' stroke-opacity='0.55' stroke-width='1.6' fill='none'/><text dy='5' font-weight='500'>ich</text></g><g transform='translate(400 278)'><rect x='-58' y='-16' width='116' height='32' rx='6' stroke='currentColor' stroke-opacity='0.3' fill='none'/><text dy='5'>Schwester</text></g></g></svg>",
+          "alt": "Arbre genealògic de tres generacions: Opa i Oma al capdamunt, Vater i Mutter al mig, Bruder, ich i Schwester a baix.",
+          "caption": "Tres generacions, la paraula *ich* al centre com a punt de referència.",
+          "width": 480
+        }
+      ],
       "tabs": [
         { "pron": "der Vater", "gloss": "el pare", "note": "Masculí. Col·loquial: _Papa_, _Papi_.", "example": { "de": "Mein Vater heißt Klaus.", "ca": "El meu pare es diu Klaus." } },
         { "pron": "die Mutter", "gloss": "la mare", "note": "Femení. Col·loquial: _Mama_, _Mami_.", "example": { "de": "Meine Mutter ist Lehrerin.", "ca": "La meva mare és mestra." } },
