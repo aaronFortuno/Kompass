@@ -740,10 +740,19 @@
  * Es mostra a la dreta del body a partir de 1200 px d'amplada. A sota
  * queda oculta perquè no envaeixi l'espai del contingut central.
  */
+/* Tres modes segons amplada:
+   - ≥1500px  pinned   · sidebar sempre visible, flotant a la dreta.
+   - 900-1499 drawer   · amb tirador + backdrop; s'anima cap a dins/fora.
+   - <900px   ocult    · sense handle tampoc (la navegació és via header).
+*/
 .kf-sidebar {
   display: none;
 }
-@media (min-width: 1200px) {
+.kf-sidebar-handle { display: none; }
+.kf-sidebar-backdrop { display: none; }
+
+/* Mode pinned · ≥1500px */
+@media (min-width: 1500px) {
   .kf-sidebar {
     display: block;
     position: absolute;
@@ -755,6 +764,86 @@
     padding: 0;
     z-index: 4;
     font-family: 'IBM Plex Mono', monospace;
+    pointer-events: auto;
+  }
+}
+
+/* Mode drawer · 900-1499px
+   El sidebar és fixed, amagat fora del viewport a la dreta, i es
+   desplaça cap dins amb transform quan rep .is-drawer-open. Un
+   backdrop difumina i bloqueja l'interacció amb el reader de fons.
+   El tirador roman sempre visible a la vora dreta i es mou amb
+   el drawer perquè sempre sigui accessible per tancar-lo. */
+@media (min-width: 900px) and (max-width: 1499.98px) {
+  .kf-sidebar {
+    display: block;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 280px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    padding: 22px 24px;
+    background: rgb(var(--color-reader-paper));
+    border: 1px solid rgb(var(--color-reader-rule));
+    border-right: none;
+    border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+    box-shadow: -12px 0 32px rgba(0, 0, 0, 0.14);
+    z-index: 41;
+    font-family: 'IBM Plex Mono', monospace;
+    transform: translateX(calc(100% + 24px));
+    transition: transform var(--duration-base) var(--ease-emphasized);
+    pointer-events: auto;
+  }
+  .kf-sidebar.is-drawer-open {
+    transform: translateX(0);
+  }
+  .kf-sidebar-handle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: calc(50% - 26px);
+    right: 0;
+    width: 34px;
+    height: 52px;
+    background: rgb(var(--color-reader-paper));
+    color: rgb(var(--color-reader-ink-2));
+    border: 1px solid rgb(var(--color-reader-rule));
+    border-right: none;
+    border-radius: var(--radius-md) 0 0 var(--radius-md);
+    cursor: pointer;
+    z-index: 42;
+    box-shadow: -6px 0 16px rgba(0, 0, 0, 0.12);
+    transition:
+      transform var(--duration-base) var(--ease-emphasized),
+      color var(--duration-fast) var(--ease-standard),
+      background-color var(--duration-fast) var(--ease-standard);
+  }
+  .kf-sidebar-handle:hover,
+  .kf-sidebar-handle:focus-visible {
+    color: rgb(var(--color-reader-ink));
+    background: rgb(var(--color-reader-paper));
+    outline: none;
+  }
+  /* Quan el drawer s'obre, el tirador el segueix amunt perquè sempre
+     hi hagi una arrel visible del botó, també útil com a close. */
+  .kf-sidebar.is-drawer-open ~ .kf-sidebar-handle,
+  .kf-sidebar-handle.is-open {
+    transform: translateX(-280px);
+  }
+  .kf-sidebar-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgb(0 0 0 / 0.32);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--duration-base) var(--ease-standard);
+    z-index: 40;
+  }
+  .kf-sidebar-backdrop.is-open {
+    opacity: 1;
     pointer-events: auto;
   }
 }

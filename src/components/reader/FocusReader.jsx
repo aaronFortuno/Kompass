@@ -15,6 +15,7 @@ import {
   Check,
   X as CloseIcon,
   ZoomIn,
+  List as ListIcon,
 } from 'lucide-react';
 import { useT } from '@/i18n';
 import { useSettings, useSettingsStore } from '@/store/useSettingsStore.js';
@@ -1363,9 +1364,45 @@ function BeatSidebar({
   beatIdx,
   onJumpStep,
   onJumpBeat,
+  isOpen = false,
+  onToggle = () => {},
+  onClose = () => {},
 }) {
+  // A amples mitjans, clicar qualsevol ítem tanca el drawer després
+  // de navegar: l'usuari ja ha fet la tria i vol tornar al contingut.
+  // A ≥1500px el sidebar és pinned i el flag no afecta res visual.
+  const jumpStepAndClose = (i) => {
+    onJumpStep(i);
+    onClose();
+  };
+  const jumpBeatAndClose = (j) => {
+    onJumpBeat(j);
+    onClose();
+  };
   return (
-    <aside className="kf-sidebar" aria-label="Índex de la lliçó">
+    <>
+      <button
+        type="button"
+        className={`kf-sidebar-handle${isOpen ? ' is-open' : ''}`}
+        onClick={onToggle}
+        aria-label={isOpen ? 'Amagar índex de la lliçó' : 'Mostrar índex de la lliçó'}
+        aria-expanded={isOpen}
+        title={isOpen ? 'Amagar índex' : 'Índex de la lliçó'}
+      >
+        <ListIcon size={18} aria-hidden="true" strokeWidth={1.75} />
+      </button>
+      <div
+        className={`kf-sidebar-backdrop${isOpen ? ' is-open' : ''}`}
+        onClick={(e) => {
+          e.stopPropagation();
+          onClose();
+        }}
+        aria-hidden="true"
+      />
+      <aside
+        className={`kf-sidebar${isOpen ? ' is-drawer-open' : ''}`}
+        aria-label="Índex de la lliçó"
+      >
       <div className="kf-sidebar-kicker">
         <span>Pas {String(stepIdx + 1).padStart(2, '0')}</span>
         <span className="kf-sidebar-kicker-sep" />
@@ -1392,7 +1429,7 @@ function BeatSidebar({
             >
               <button
                 type="button"
-                onClick={() => onJumpStep(i)}
+                onClick={() => jumpStepAndClose(i)}
                 title={isExerciseKind
                   ? `${kind === 'assessment' ? 'Avaluació' : 'Exercici'} · ${label}`
                   : label}
@@ -1426,7 +1463,7 @@ function BeatSidebar({
                       >
                         <button
                           type="button"
-                          onClick={() => onJumpBeat(j)}
+                          onClick={() => jumpBeatAndClose(j)}
                           title={beatLabel(b, j)}
                         >
                           {beatLabel(b, j)}
@@ -1440,7 +1477,8 @@ function BeatSidebar({
           );
         })}
       </ol>
-    </aside>
+      </aside>
+    </>
   );
 }
 
@@ -1620,6 +1658,11 @@ export function FocusReader({ topic }) {
   const [fastMode, setFastMode] = useState(false);
   // Drawer de settings (§79): s'obre amb "c" o el botó ⚙ del peu.
   const [drawerOpen, setDrawerOpen] = useState(false);
+  // Sidebar (índex de la lliçó) · a ≥1500px és pinned a la dreta; entre
+  // 900-1499px funciona com a drawer amb tirador i backdrop — evita que
+  // es solapi amb el backdrop del beat a amples mitjans. Sota 900px
+  // roman ocult. Estat mantingut aquí perquè BeatSidebar és pur.
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   // Lightbox singleton · §110 polit. Centralitzem l'estat aquí perquè
   // cada TabImage (n'hi ha tantes com tabs al topic, rendertzades via
   // BeatStagePeek) no en pugui obrir una còpia pròpia. Dos estats:
@@ -1744,6 +1787,21 @@ export function FocusReader({ topic }) {
   useEffect(() => {
     setLightboxOpen(false);
   }, [stepIdx, beatIdx, topic.id]);
+
+  // Esc tanca el sidebar-drawer quan està obert (només afecta el rang
+  // mig d'amplada; en pinned no hi ha "obert/tancat" visual).
+  useEffect(() => {
+    if (!sidebarOpen) return undefined;
+    const onKey = (e) => {
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        e.stopPropagation();
+        setSidebarOpen(false);
+      }
+    };
+    window.addEventListener('keydown', onKey, true);
+    return () => window.removeEventListener('keydown', onKey, true);
+  }, [sidebarOpen]);
 
   // Si l'usuari surt del darrer beat (amb ←, clic al sidebar…), tornem a
   // deixar readyToExit a fals perquè el seu proper → al final torni a
@@ -2295,6 +2353,9 @@ export function FocusReader({ topic }) {
               beatIdx={beatIdx}
               onJumpStep={jumpStep}
               onJumpBeat={jumpBeat}
+              isOpen={sidebarOpen}
+              onToggle={() => setSidebarOpen((v) => !v)}
+              onClose={() => setSidebarOpen(false)}
             />
           </>
         )}
