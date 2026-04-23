@@ -46,6 +46,17 @@ export const DEFAULT_SETTINGS = {
   // d'autoplay — només resta el contingut central. Toggle amb "f" o al
   // drawer de Settings.
   focusMode: false,
+  // Música ambient de fons · §111. Off per defecte; quan s'activa
+  // requereix un gest d'usuari per arrencar (autoplay policy del
+  // navegador). Volum 0-1. Track apunta a un id del music-manifest.
+  //   - bgMusicEnabled: boolean
+  //   - bgMusicVolume: 0..1 (volum "normal" — es baixa a 0.15 durant
+  //     reproducció d'àudio de veu i es restaura automàticament).
+  //   - bgMusicTrack: id del track (p. ex. 'lofi', 'ambient', 'focus').
+  //     Si és null, es tria la primera pista disponible del manifest.
+  bgMusicEnabled: false,
+  bgMusicVolume: 0.35,
+  bgMusicTrack: null,
 };
 
 export const useSettingsStore = create(
@@ -82,6 +93,13 @@ export const useSettingsStore = create(
       setFocusMode: (focusMode) => set({ focusMode: Boolean(focusMode) }),
       toggleFocusMode: () =>
         set((s) => ({ focusMode: !s.focusMode })),
+      setBgMusicEnabled: (v) => set({ bgMusicEnabled: Boolean(v) }),
+      setBgMusicVolume: (v) => {
+        const n = Number(v);
+        set({ bgMusicVolume: Math.min(1, Math.max(0, isNaN(n) ? 0.35 : n)) });
+      },
+      setBgMusicTrack: (track) =>
+        set({ bgMusicTrack: track == null ? null : String(track) }),
 
       update: (patch) => set(patch),
       reset: () => set({ ...DEFAULT_SETTINGS }),
@@ -108,6 +126,10 @@ export const useSettingsStore = create(
         audioVoice: state.audioVoice,
         // §103: el mode focus també persistit per consistència.
         focusMode: state.focusMode,
+        // §111: música ambient.
+        bgMusicEnabled: state.bgMusicEnabled,
+        bgMusicVolume: state.bgMusicVolume,
+        bgMusicTrack: state.bgMusicTrack,
       }),
       onRehydrateStorage: () => (state) => {
         // Notifica altres components que el hydrate s'ha completat per si
@@ -141,6 +163,9 @@ export function useSettings() {
     audioSpeed: s.audioSpeed,
     audioVoice: s.audioVoice,
     focusMode: s.focusMode,
+    bgMusicEnabled: s.bgMusicEnabled,
+    bgMusicVolume: s.bgMusicVolume,
+    bgMusicTrack: s.bgMusicTrack,
   }));
 }
 

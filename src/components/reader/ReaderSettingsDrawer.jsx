@@ -14,8 +14,10 @@ import {
   Mic,
   Rabbit,
   Focus,
+  Music2,
   X as CloseIcon,
 } from 'lucide-react';
+import musicManifest from '@/audio/music-manifest.json';
 import { useT } from '@/i18n';
 import { useSettingsStore, TEXT_SCALE_VALUES } from '@/store/useSettingsStore';
 import {
@@ -52,6 +54,9 @@ export function ReaderSettingsDrawer({ open, onClose }) {
   const audioSpeed = useSettingsStore((s) => s.audioSpeed);
   const audioVoice = useSettingsStore((s) => s.audioVoice);
   const focusMode = useSettingsStore((s) => s.focusMode);
+  const bgMusicEnabled = useSettingsStore((s) => s.bgMusicEnabled);
+  const bgMusicVolume = useSettingsStore((s) => s.bgMusicVolume);
+  const bgMusicTrack = useSettingsStore((s) => s.bgMusicTrack);
 
   const setTheme = useSettingsStore((s) => s.setTheme);
   const setTextScale = useSettingsStore((s) => s.setTextScale);
@@ -65,6 +70,9 @@ export function ReaderSettingsDrawer({ open, onClose }) {
   const setAudioSpeed = useSettingsStore((s) => s.setAudioSpeed);
   const setAudioVoice = useSettingsStore((s) => s.setAudioVoice);
   const setFocusMode = useSettingsStore((s) => s.setFocusMode);
+  const setBgMusicEnabled = useSettingsStore((s) => s.setBgMusicEnabled);
+  const setBgMusicVolume = useSettingsStore((s) => s.setBgMusicVolume);
+  const setBgMusicTrack = useSettingsStore((s) => s.setBgMusicTrack);
 
   // Esc tanca el drawer (abans que el handler del reader tanqui tot)
   useEffect(() => {
@@ -344,6 +352,75 @@ export function ReaderSettingsDrawer({ open, onClose }) {
               </select>
             </SettingRow>
           </section>
+
+          {/* Secció Música · §111 */}
+          {Array.isArray(musicManifest?.tracks) && musicManifest.tracks.length > 0 ? (
+            <section className="mt-6">
+              <SectionHeading>Música ambient</SectionHeading>
+
+              <SettingRow
+                compact
+                id="drawer-bgmusic-enabled"
+                icon={Music2}
+                title="Música de fons"
+                help="S'atenua automàticament quan sona un àudio de veu."
+              >
+                <Toggle
+                  checked={bgMusicEnabled}
+                  onChange={setBgMusicEnabled}
+                  label="Música de fons"
+                  id="drawer-bgmusic-enabled"
+                />
+              </SettingRow>
+
+              {bgMusicEnabled ? (
+                <>
+                  <SettingRow
+                    compact
+                    id="drawer-bgmusic-track"
+                    icon={Music2}
+                    title="Pista"
+                  >
+                    <select
+                      id="drawer-bgmusic-track"
+                      value={bgMusicTrack || musicManifest.tracks[0].id}
+                      onChange={(e) => setBgMusicTrack(e.target.value)}
+                      className="font-mono text-[11px] bg-reader-paper border border-reader-rule text-reader-ink px-2 py-1 rounded"
+                    >
+                      {musicManifest.tracks.map((tr) => (
+                        <option key={tr.id} value={tr.id}>
+                          {tr.title || tr.id}
+                        </option>
+                      ))}
+                    </select>
+                  </SettingRow>
+
+                  <SettingRow
+                    compact
+                    id="drawer-bgmusic-volume"
+                    icon={Gauge}
+                    title="Volum"
+                  >
+                    <div className="flex items-center gap-2">
+                      <input
+                        type="range"
+                        min={0}
+                        max={1}
+                        step={0.05}
+                        value={bgMusicVolume}
+                        onChange={(e) => setBgMusicVolume(Number(e.target.value))}
+                        aria-labelledby="drawer-bgmusic-volume"
+                        className="w-28 accent-reader-ink"
+                      />
+                      <span className="font-mono text-[10px] text-reader-ink-2 w-10 text-right">
+                        {Math.round(bgMusicVolume * 100)}%
+                      </span>
+                    </div>
+                  </SettingRow>
+                </>
+              ) : null}
+            </section>
+          ) : null}
         </div>
       </aside>
     </>
