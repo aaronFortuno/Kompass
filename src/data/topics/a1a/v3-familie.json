@@ -7,7 +7,7 @@
   "category": "vocabulary",
   "title": "Familie — la família",
   "shortTitle": "Familie",
-  "description": "Vocabulari familiar (nuclear, extensa, política) + consolidació dels possessius d'A1a-7 + estat civil.",
+  "description": "Vocabulari familiar (nuclear, extensa, política) + consolidació dels possessius + estat civil.",
   "axes": ["vocabulari-tematic"],
   "estimatedMinutes": 14,
   "steps": [
@@ -16,7 +16,7 @@
       "kind": "narrative",
       "heading": "La família",
       "lead": "Presentar la pròpia família és una de les primeres coses que et demanaran a qualsevol conversa d'alemany.",
-      "body": "En català diem _el meu pare, la meva mare, els meus germans_. L'alemany fa ==el mateix però canvia la terminació segons el gènere i el nombre==. Ja ho saps: és l'aplicació directa d'A1a-7.",
+      "body": "En català diem _el meu pare, la meva mare, els meus germans_. L'alemany fa ==el mateix però canvia la terminació segons el gènere i el nombre==. És l'aplicació directa dels possessius que ja has vist.",
       "callout": {
         "variant": "info",
         "title": "Per què aquesta lliçó és útil",
@@ -29,22 +29,22 @@
       "heading": "La família nuclear",
       "lead": "Pares, fills, germans. Tretze paraules bàsiques i ja pots descriure casa teva.",
       "tabs": [
-        { "pron": "der Vater", "gloss": "el pare", "note": "Masculí. Col·loquial: _Papa_, _Papi_.", "example": { "de": "!!Mein Vater heißt Klaus.!!", "ca": "El meu pare es diu Klaus." } },
-        { "pron": "die Mutter", "gloss": "la mare", "note": "Femení. Col·loquial: _Mama_, _Mami_.", "example": { "de": "!!Meine Mutter ist Lehrerin.!!", "ca": "La meva mare és mestra." } },
-        { "pron": "die Eltern", "gloss": "els pares (tots dos)", "note": "**Plural only**: no existeix _der Elter_ en ús normal. Sempre _die Eltern_.", "example": { "de": "!!Meine Eltern wohnen in Berlin.!!", "ca": "Els meus pares viuen a Berlín." } },
-        { "pron": "der Sohn", "gloss": "el fill", "note": "Masculí. Plural: _die Söhne_ (amb umlaut).", "example": { "de": "!!Ich habe einen Sohn.!!", "ca": "Tinc un fill." } },
-        { "pron": "die Tochter", "gloss": "la filla", "note": "Femení. Plural: _die Töchter_ (amb umlaut).", "example": { "de": "!!Meine Tochter ist drei Jahre alt.!!", "ca": "La meva filla té tres anys." } },
-        { "pron": "das Kind", "gloss": "el fill / el nen (neutre!)", "note": "==Neutre==: _das Kind_. Plural: _die Kinder_. Cobreix fill i filla quan no especifiques sexe.", "example": { "de": "!!Wir haben zwei Kinder.!!", "ca": "Tenim dos fills." } },
-        { "pron": "der Bruder", "gloss": "el germà", "note": "Masculí. Plural: _die Brüder_ (amb umlaut).", "example": { "de": "!!Mein Bruder ist älter.!!", "ca": "El meu germà és més gran." } },
-        { "pron": "die Schwester", "gloss": "la germana", "note": "Femení. Plural: _die Schwestern_.", "example": { "de": "!!Meine Schwester wohnt in München.!!", "ca": "La meva germana viu a Munic." } },
-        { "pron": "die Geschwister", "gloss": "els germans (en general)", "note": "**Plural only** i de gènere base neutre (_das Geschwister_ és rar). Cobreix germans i germanes junts.", "example": { "de": "!!Ich habe zwei Geschwister.!!", "ca": "Tinc dos germans (d'ambdós sexes o sense especificar)." } }
+        { "pron": "der Vater", "gloss": "el pare", "note": "Masculí. Col·loquial: _Papa_, _Papi_.", "example": { "de": "Mein Vater heißt Klaus.", "ca": "El meu pare es diu Klaus." } },
+        { "pron": "die Mutter", "gloss": "la mare", "note": "Femení. Col·loquial: _Mama_, _Mami_.", "example": { "de": "Meine Mutter ist Lehrerin.", "ca": "La meva mare és mestra." } },
+        { "pron": "die Eltern", "gloss": "els pares (tots dos)", "note": "**Plural only**: no existeix _der Elter_ en ús normal. Sempre _die Eltern_.", "example": { "de": "Meine Eltern wohnen in Berlin.", "ca": "Els meus pares viuen a Berlín." } },
+        { "pron": "der Sohn", "gloss": "el fill", "note": "Masculí. Plural: _die Söhne_ (amb umlaut).", "example": { "de": "Ich habe einen Sohn.", "ca": "Tinc un fill." } },
+        { "pron": "die Tochter", "gloss": "la filla", "note": "Femení. Plural: _die Töchter_ (amb umlaut).", "example": { "de": "Meine Tochter ist drei Jahre alt.", "ca": "La meva filla té tres anys." } },
+        { "pron": "das Kind", "gloss": "el fill / el nen (neutre!)", "note": "==Neutre==: _das Kind_. Plural: _die Kinder_. Cobreix fill i filla quan no especifiques sexe.", "example": { "de": "Wir haben zwei Kinder.", "ca": "Tenim dos fills." } },
+        { "pron": "der Bruder", "gloss": "el germà", "note": "Masculí. Plural: _die Brüder_ (amb umlaut).", "example": { "de": "Mein Bruder ist älter.", "ca": "El meu germà és més gran." } },
+        { "pron": "die Schwester", "gloss": "la germana", "note": "Femení. Plural: _die Schwestern_.", "example": { "de": "Meine Schwester wohnt in München.", "ca": "La meva germana viu a Munic." } },
+        { "pron": "die Geschwister", "gloss": "els germans (en general)", "note": "**Plural only** i de gènere base neutre (_das Geschwister_ és rar). Cobreix germans i germanes junts.", "example": { "de": "Ich habe zwei Geschwister.", "ca": "Tinc dos germans (d'ambdós sexes o sense especificar)." } }
       ]
     },
     {
       "id": "possessius-recap",
       "kind": "narrative",
       "heading": "Aplicant els possessius",
-      "lead": "Recorda la regla d'A1a-7: forma curta davant masculí/neutre, _-e_ davant femení/plural.",
+      "lead": "Recorda la regla dels possessius: forma curta davant masculí/neutre, _-e_ davant femení/plural.",
       "pairs": [
         { "personal": "ich", "possessive": "**mein** Vater / **meine** Mutter", "gloss": "el meu pare / la meva mare" },
         { "personal": "du", "possessive": "**dein** Bruder / **deine** Schwester", "gloss": "el teu germà / la teva germana" },
@@ -55,7 +55,7 @@
       "callout": {
         "variant": "tip",
         "title": "Veure-ho sistemàtic",
-        "body": "El mateix patró d'**arrel + terminació** que vas veure a A1a-7, aplicat aquí a paraules que ja tenen sentit emocional. _sein Vater_ (el seu pare d'ell) i _ihr Vater_ (el seu pare d'ella) són la mateixa forma arrel-terminació."
+        "body": "El mateix patró d'**arrel + terminació** que vas veure al capítol de possessius, aplicat aquí a paraules que ja tenen sentit emocional. _sein Vater_ (el seu pare d'ell) i _ihr Vater_ (el seu pare d'ella) són la mateixa forma arrel-terminació."
       }
     },
     {
@@ -64,15 +64,15 @@
       "heading": "La família extensa",
       "lead": "Avis, tiets, cosins. El vocabulari creix però els patrons es mantenen.",
       "tabs": [
-        { "pron": "der Großvater", "gloss": "l'avi", "note": "Col·loquial: _der Opa_ (molt més freqüent en conversa).", "example": { "de": "!!Mein Opa wohnt auf dem Land.!!", "ca": "El meu avi viu al camp." } },
-        { "pron": "die Großmutter", "gloss": "l'àvia", "note": "Col·loquial: _die Oma_.", "example": { "de": "!!Meine Oma kocht sehr gut.!!", "ca": "La meva àvia cuina molt bé." } },
-        { "pron": "die Großeltern", "gloss": "els avis", "note": "**Plural only**, igual que _Eltern_.", "example": { "de": "!!Meine Großeltern sind aus Hamburg.!!", "ca": "Els meus avis són d'Hamburg." } },
-        { "pron": "der Enkel", "gloss": "el nét", "note": "Masculí. Plural: _die Enkel_.", "example": { "de": "!!Oma hat drei Enkel.!!", "ca": "L'àvia té tres néts." } },
-        { "pron": "die Enkelin", "gloss": "la néta", "note": "Patró **-in** per femení: _Enkel → Enkelin_. Plural _Enkelinnen_.", "example": { "de": "!!Seine Enkelin ist fünf.!!", "ca": "La seva néta (d'ell) té cinc anys." } },
-        { "pron": "der Onkel", "gloss": "el tiet", "note": "Masculí. No es diu _der Tiet_; sempre _Onkel_.", "example": { "de": "!!Mein Onkel Peter ist lustig.!!", "ca": "El meu tiet Peter és divertit." } },
-        { "pron": "die Tante", "gloss": "la tieta", "note": "Femení. Del francès _tante_.", "example": { "de": "!!Meine Tante Lisa ist Ärztin.!!", "ca": "La meva tieta Lisa és metgessa." } },
-        { "pron": "der Cousin", "gloss": "el cosí", "note": "Masculí. Préstec del francès. Es pronuncia \"ku-**=sen=**\", no a l'alemanya.", "example": { "de": "!!Mein Cousin lebt in Berlin.!!", "ca": "El meu cosí viu a Berlín." } },
-        { "pron": "die Cousine", "gloss": "la cosina", "note": "Femení. També s'escriu _Kusine_ (forma germanitzada, menys freqüent).", "example": { "de": "!!Meine Cousine ist aus Österreich.!!", "ca": "La meva cosina és d'Àustria." } }
+        { "pron": "der Großvater", "gloss": "l'avi", "note": "Col·loquial: _der Opa_ (molt més freqüent en conversa).", "example": { "de": "Mein Opa wohnt auf dem Land.", "ca": "El meu avi viu al camp." } },
+        { "pron": "die Großmutter", "gloss": "l'àvia", "note": "Col·loquial: _die Oma_.", "example": { "de": "Meine Oma kocht sehr gut.", "ca": "La meva àvia cuina molt bé." } },
+        { "pron": "die Großeltern", "gloss": "els avis", "note": "**Plural only**, igual que _Eltern_.", "example": { "de": "Meine Großeltern sind aus Hamburg.", "ca": "Els meus avis són d'Hamburg." } },
+        { "pron": "der Enkel", "gloss": "el nét", "note": "Masculí. Plural: _die Enkel_.", "example": { "de": "Oma hat drei Enkel.", "ca": "L'àvia té tres néts." } },
+        { "pron": "die Enkelin", "gloss": "la néta", "note": "Patró **-in** per femení: _Enkel → Enkelin_. Plural _Enkelinnen_.", "example": { "de": "Seine Enkelin ist fünf.", "ca": "La seva néta (d'ell) té cinc anys." } },
+        { "pron": "der Onkel", "gloss": "el tiet", "note": "Masculí. No es diu _der Tiet_; sempre _Onkel_.", "example": { "de": "Mein Onkel Peter ist lustig.", "ca": "El meu tiet Peter és divertit." } },
+        { "pron": "die Tante", "gloss": "la tieta", "note": "Femení. Del francès _tante_.", "example": { "de": "Meine Tante Lisa ist Ärztin.", "ca": "La meva tieta Lisa és metgessa." } },
+        { "pron": "der Cousin", "gloss": "el cosí", "note": "Masculí. Préstec del francès. Es pronuncia \"ku-**=sen=**\", no a l'alemanya.", "example": { "de": "Mein Cousin lebt in Berlin.", "ca": "El meu cosí viu a Berlín." } },
+        { "pron": "die Cousine", "gloss": "la cosina", "note": "Femení. També s'escriu _Kusine_ (forma germanitzada, menys freqüent).", "example": { "de": "Meine Cousine ist aus Österreich.", "ca": "La meva cosina és d'Àustria." } }
       ]
     },
     {
@@ -109,10 +109,10 @@
       "heading": "Estat civil",
       "lead": "Quatre adjectius per respondre \"Estàs casat/da?\"",
       "tabs": [
-        { "pron": "verheiratet", "gloss": "casat / casada", "note": "Invariable darrere del verb: _Ich bin verheiratet_. Prové del verb _heiraten_ (casar-se).", "example": { "de": "!!Ich bin seit zehn Jahren verheiratet.!!", "ca": "Fa deu anys que sóc casat/da." } },
-        { "pron": "ledig", "gloss": "solter / soltera", "note": "Neutre i formal. També es diu _Single_ (anglicisme, molt usat).", "example": { "de": "!!Mein Bruder ist ledig.!!", "ca": "El meu germà és solter." } },
-        { "pron": "geschieden", "gloss": "divorciat / divorciada", "note": "Del verb _sich scheiden lassen_ (divorciar-se).", "example": { "de": "!!Meine Tante ist geschieden.!!", "ca": "La meva tieta és divorciada." } },
-        { "pron": "verwitwet", "gloss": "viudo / viuda", "note": "Del substantiu _Witwe_ (viuda) / _Witwer_ (viudo).", "example": { "de": "!!Meine Oma ist verwitwet.!!", "ca": "La meva àvia és viuda." } }
+        { "pron": "verheiratet", "gloss": "casat / casada", "note": "Invariable darrere del verb: _Ich bin verheiratet_. Prové del verb _heiraten_ (casar-se).", "example": { "de": "Ich bin seit zehn Jahren verheiratet.", "ca": "Fa deu anys que sóc casat/da." } },
+        { "pron": "ledig", "gloss": "solter / soltera", "note": "Neutre i formal. També es diu _Single_ (anglicisme, molt usat).", "example": { "de": "Mein Bruder ist ledig.", "ca": "El meu germà és solter." } },
+        { "pron": "geschieden", "gloss": "divorciat / divorciada", "note": "Del verb _sich scheiden lassen_ (divorciar-se).", "example": { "de": "Meine Tante ist geschieden.", "ca": "La meva tieta és divorciada." } },
+        { "pron": "verwitwet", "gloss": "viudo / viuda", "note": "Del substantiu _Witwe_ (viuda) / _Witwer_ (viudo).", "example": { "de": "Meine Oma ist verwitwet.", "ca": "La meva àvia és viuda." } }
       ],
       "callout": {
         "variant": "tip",

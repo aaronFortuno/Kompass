@@ -1367,7 +1367,16 @@
   font-weight: 500;
 }
 
-.kf-beat-syn { width: 100%; }
+/* Sinopsi: contenidor de taules del beat. Permet scroll vertical
+   intern si la taula és molt alta (>7 files) perquè mai no trenqui
+   el layout del reader. A pantalles grans rarament s'usa; a portàtils
+   de 768px d'alçada es nota. §99 polit. */
+.kf-beat-syn {
+  width: 100%;
+  max-height: 64vh;
+  overflow-y: auto;
+  padding-right: 4px;
+}
 .kf-beat-syn-title {
   font-family: 'Newsreader', serif;
   font-weight: 500;

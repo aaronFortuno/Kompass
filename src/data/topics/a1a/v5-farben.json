@@ -17,6 +17,14 @@
       "heading": "Els colors",
       "lead": "Onze paraules per descriure el món que veus.",
       "body": "Els colors són **adjectius** en alemany, però en aquesta lliçó els fem servir de la forma més senzilla: darrere del verb _sein_. _Das Auto ist rot_ = _El cotxe és vermell_.",
+      "visuals": [
+        {
+          "svg": "<svg viewBox='0 0 420 280' xmlns='http://www.w3.org/2000/svg' aria-hidden='true'><g font-family='Newsreader, serif' font-size='12' font-style='italic' text-anchor='middle' fill='currentColor'><circle cx='55' cy='45' r='26' fill='#dc2626' stroke='currentColor' stroke-opacity='0.15'/><text x='55' y='92'>rot</text><circle cx='145' cy='45' r='26' fill='#2563eb' stroke='currentColor' stroke-opacity='0.15'/><text x='145' y='92'>blau</text><circle cx='235' cy='45' r='26' fill='#16a34a' stroke='currentColor' stroke-opacity='0.15'/><text x='235' y='92'>grün</text><circle cx='325' cy='45' r='26' fill='#eab308' stroke='currentColor' stroke-opacity='0.15'/><text x='325' y='92'>gelb</text><circle cx='55' cy='140' r='26' fill='#1a1a1a' stroke='currentColor' stroke-opacity='0.2'/><text x='55' y='187'>schwarz</text><circle cx='145' cy='140' r='26' fill='#fafafa' stroke='currentColor' stroke-opacity='0.55'/><text x='145' y='187'>weiß</text><circle cx='235' cy='140' r='26' fill='#9ca3af' stroke='currentColor' stroke-opacity='0.2'/><text x='235' y='187'>grau</text><circle cx='325' cy='140' r='26' fill='#f97316' stroke='currentColor' stroke-opacity='0.15'/><text x='325' y='187'>orange</text><circle cx='100' cy='235' r='26' fill='#ec4899' stroke='currentColor' stroke-opacity='0.15'/><text x='100' y='275' dy='7'>rosa</text><circle cx='190' cy='235' r='26' fill='#8b5cf6' stroke='currentColor' stroke-opacity='0.15'/><text x='190' y='275' dy='7'>lila</text><circle cx='280' cy='235' r='26' fill='#78350f' stroke='currentColor' stroke-opacity='0.15'/><text x='280' y='275' dy='7'>braun</text></g></svg>",
+          "alt": "Paleta dels onze colors bàsics de la lliçó",
+          "caption": "Els onze colors d'aquesta lliçó — clica cada tab més endavant per sentir-los.",
+          "width": 360
+        }
+      ],
       "callout": {
         "variant": "info",
         "title": "L'ús que tractem aquí",
@@ -29,13 +37,13 @@
       "heading": "Els set colors fonamentals",
       "lead": "Els que no poden faltar.",
       "tabs": [
-        { "pron": "rot", "gloss": "vermell", "note": "Pronunciat \"rot\" amb _o_ tancada. Cognat amb l'anglès _red_.", "example": { "de": "Der Apfel ist !!rot!!.", "ca": "La poma és vermella." } },
-        { "pron": "blau", "gloss": "blau", "note": "Pronunciat \"blau\" (el diftong _au_ sona com en català). Cognat directe.", "example": { "de": "Der Himmel ist !!blau!!.", "ca": "El cel és blau." } },
-        { "pron": "grün", "gloss": "verd", "note": "La _ü_ és la _u_ francesa. Cognat amb l'anglès _green_.", "example": { "de": "Das Gras ist !!grün!!.", "ca": "L'herba és verda." } },
-        { "pron": "gelb", "gloss": "groc", "note": "Pronunciat \"gelp\" (la _b_ final sona com _p_ al final de paraula).", "example": { "de": "Die Sonne ist !!gelb!!.", "ca": "El sol és groc." } },
-        { "pron": "schwarz", "gloss": "negre", "note": "La _schw_ inicial: _sh_ + _v_ catalana. La _z_ final sona \"ts\".", "example": { "de": "Die Nacht ist !!schwarz!!.", "ca": "La nit és negra." } },
-        { "pron": "weiß", "gloss": "blanc", "note": "Escrit amb **ß** a Alemanya i Àustria. A Suïssa s'escriu _weiss_.", "example": { "de": "Der Schnee ist !!weiß!!.", "ca": "La neu és blanca." } },
-        { "pron": "grau", "gloss": "gris", "note": "Diftong _au_ \"au\". Cognat amb l'anglès _gray/grey_.", "example": { "de": "Der Himmel ist heute !!grau!!.", "ca": "El cel és gris avui." } }
+        { "pron": "rot", "gloss": "vermell", "note": "Pronunciat \"rot\" amb _o_ tancada. Cognat amb l'anglès _red_.", "example": { "de": "Der Apfel ist rot.", "ca": "La poma és vermella." } },
+        { "pron": "blau", "gloss": "blau", "note": "Pronunciat \"blau\" (el diftong _au_ sona com en català). Cognat directe.", "example": { "de": "Der Himmel ist blau.", "ca": "El cel és blau." } },
+        { "pron": "grün", "gloss": "verd", "note": "La _ü_ és la _u_ francesa. Cognat amb l'anglès _green_.", "example": { "de": "Das Gras ist grün.", "ca": "L'herba és verda." } },
+        { "pron": "gelb", "gloss": "groc", "note": "Pronunciat \"gelp\" (la _b_ final sona com _p_ al final de paraula).", "example": { "de": "Die Sonne ist gelb.", "ca": "El sol és groc." } },
+        { "pron": "schwarz", "gloss": "negre", "note": "La _schw_ inicial: _sh_ + _v_ catalana. La _z_ final sona \"ts\".", "example": { "de": "Die Nacht ist schwarz.", "ca": "La nit és negra." } },
+        { "pron": "weiß", "gloss": "blanc", "note": "Escrit amb **ß** a Alemanya i Àustria. A Suïssa s'escriu _weiss_.", "example": { "de": "Der Schnee ist weiß.", "ca": "La neu és blanca." } },
+        { "pron": "grau", "gloss": "gris", "note": "Diftong _au_ \"au\". Cognat amb l'anglès _gray/grey_.", "example": { "de": "Der Himmel ist heute grau.", "ca": "El cel és gris avui." } }
       ],
       "callout": {
         "variant": "tip",
@@ -49,10 +57,10 @@
       "heading": "Quatre colors més",
       "lead": "Per a tot el que no és fonamental.",
       "tabs": [
-        { "pron": "orange", "gloss": "taronja", "note": "Préstec del francès. Es pronuncia a la francesa: \"o-ranzh\". Invariable.", "example": { "de": "Die Karotte ist !!orange!!.", "ca": "La pastanaga és taronja." } },
-        { "pron": "rosa", "gloss": "rosa", "note": "Del llatí, igual que en català. Invariable com a color.", "example": { "de": "Das Kleid ist !!rosa!!.", "ca": "El vestit és rosa." } },
-        { "pron": "lila", "gloss": "lila / morat", "note": "Del persa/àrab. També invariable. Alternativa culta: _violett_.", "example": { "de": "Die Blume ist !!lila!!.", "ca": "La flor és lila." } },
-        { "pron": "braun", "gloss": "marró", "note": "Pronunciat \"braun\". Diftong _au_ normal.", "example": { "de": "Die Schokolade ist !!braun!!.", "ca": "La xocolata és marró." } }
+        { "pron": "orange", "gloss": "taronja", "note": "Préstec del francès. Es pronuncia a la francesa: \"o-ranzh\". Invariable.", "example": { "de": "Die Karotte ist orange.", "ca": "La pastanaga és taronja." } },
+        { "pron": "rosa", "gloss": "rosa", "note": "Del llatí, igual que en català. Invariable com a color.", "example": { "de": "Das Kleid ist rosa.", "ca": "El vestit és rosa." } },
+        { "pron": "lila", "gloss": "lila / morat", "note": "Del persa/àrab. També invariable. Alternativa culta: _violett_.", "example": { "de": "Die Blume ist lila.", "ca": "La flor és lila." } },
+        { "pron": "braun", "gloss": "marró", "note": "Pronunciat \"braun\". Diftong _au_ normal.", "example": { "de": "Die Schokolade ist braun.", "ca": "La xocolata és marró." } }
       ],
       "callout": {
         "variant": "warning",
@@ -67,10 +75,10 @@
       "lead": "Estructura: ==**[substantiu] + ist + [color]**==. Invariable, sempre.",
       "body": "Dius el substantiu (amb el seu article si cal), el verb _ist_ o _sind_, i el color. El color no canvia per gènere ni nombre.",
       "examples": [
-        { "de": "Der Hund ist !!braun!!.", "ca": "El gos és marró.", "note": "Masculí, singular, color invariable." },
-        { "de": "Die Katze ist !!schwarz!!.", "ca": "El gat és negre.", "note": "Femení, singular, color invariable." },
-        { "de": "Das Haus ist !!weiß!!.", "ca": "La casa és blanca.", "note": "Neutre, singular, color invariable." },
-        { "de": "Die Blumen sind !!rot!!.", "ca": "Les flors són vermelles.", "note": "Plural → verb _sind_, però el color no canvia." }
+        { "de": "Der Hund ist braun.", "ca": "El gos és marró.", "note": "Masculí, singular, color invariable." },
+        { "de": "Die Katze ist schwarz.", "ca": "El gat és negre.", "note": "Femení, singular, color invariable." },
+        { "de": "Das Haus ist weiß.", "ca": "La casa és blanca.", "note": "Neutre, singular, color invariable." },
+        { "de": "Die Blumen sind rot.", "ca": "Les flors són vermelles.", "note": "Plural → verb _sind_, però el color no canvia." }
       ],
       "callout": {
         "variant": "tip",
@@ -85,9 +93,9 @@
       "lead": "La pregunta que dispara les respostes que acabes d'aprendre.",
       "body": "_Welche Farbe hat [substantiu en acusatiu]?_ literalment \"Quin color té...?\". La resposta es construeix amb _ist_ o directament amb _[substantiu] ist [color]_.",
       "examples": [
-        { "de": "!!Welche Farbe hat das Auto?!! — Das Auto ist !!rot!!.", "ca": "De quin color és el cotxe? — El cotxe és vermell." },
-        { "de": "!!Welche Farbe hat deine Tasche?!! — Sie ist !!schwarz!!.", "ca": "De quin color és la teva bossa? — És negra.", "note": "_Sie_ aquí és \"ella\" gramatical, referint-se a _die Tasche_ (femení)." },
-        { "de": "!!Welche Farbe haben deine Augen?!! — Sie sind !!blau!!.", "ca": "De quin color són els teus ulls? — Són blaus.", "note": "Plural: _haben_ i _sind_." }
+        { "de": "Welche Farbe hat das Auto? — Das Auto ist rot.", "ca": "De quin color és el cotxe? — El cotxe és vermell." },
+        { "de": "Welche Farbe hat deine Tasche? — Sie ist schwarz.", "ca": "De quin color és la teva bossa? — És negra.", "note": "_Sie_ aquí és \"ella\" gramatical, referint-se a _die Tasche_ (femení)." },
+        { "de": "Welche Farbe haben deine Augen? — Sie sind blau.", "ca": "De quin color són els teus ulls? — Són blaus.", "note": "Plural: _haben_ i _sind_." }
       ]
     },
     {

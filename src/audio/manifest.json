@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-23T07:37:58.152Z",
-  "totalStrings": 1903,
-  "totalChars": 30365,
+  "generatedAt": "2026-04-23T07:51:33.835Z",
+  "totalStrings": 1901,
+  "totalChars": 30304,
   "entries": [
     {
       "hash": "00083a6e13bccdb336bccc13c4a6a13ddced3cf2",
@@ -771,11 +771,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[5].tabs[1].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V3",
-          "path": "steps[5].tabs[1].example.de#whole"
+          "path": "steps[5].tabs[1].example.de"
         }
       ]
     },
@@ -959,11 +955,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[1].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V3",
-          "path": "steps[3].tabs[1].example.de#whole"
+          "path": "steps[3].tabs[1].example.de"
         }
       ]
     },
@@ -1817,7 +1809,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[4].examples[2].de#whole"
+          "path": "steps[4].examples[2].de"
         }
       ]
     },
@@ -2177,7 +2169,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[1].tabs[2].example.de#whole"
+          "path": "steps[1].tabs[2].example.de"
         }
       ]
     },
@@ -2253,10 +2245,6 @@
       "hash": "14d8bb1fad86dcac8d2dcb64bf2610bc12ce6294",
       "text": "gelb",
       "sources": [
-        {
-          "topic": "A1a-V5",
-          "path": "steps[1].tabs[3].example.de#inline[0]"
-        },
         {
           "topic": "A1a-V5",
           "path": "steps[1].tabs[3].pron"
@@ -2644,16 +2632,6 @@
         {
           "topic": "A1a-26",
           "path": "steps[3].blocks[2].body#inline[3]"
-        }
-      ]
-    },
-    {
-      "hash": "1a5584c08fc187579d6d92c00b532a49074292b4",
-      "text": "Welche Farbe hat deine Tasche?",
-      "sources": [
-        {
-          "topic": "A1a-V5",
-          "path": "steps[4].examples[1].de#inline[0]"
         }
       ]
     },
@@ -3407,11 +3385,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[1].tabs[0].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V3",
-          "path": "steps[1].tabs[0].example.de#whole"
+          "path": "steps[1].tabs[0].example.de"
         }
       ]
     },
@@ -3715,7 +3689,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[3].examples[0].de#whole"
+          "path": "steps[3].examples[0].de"
         }
       ]
     },
@@ -3981,11 +3955,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[5].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V3",
-          "path": "steps[3].tabs[5].example.de#whole"
+          "path": "steps[3].tabs[5].example.de"
         }
       ]
     },
@@ -4015,15 +3985,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[1].tabs[1].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V5",
           "path": "steps[1].tabs[1].pron"
-        },
-        {
-          "topic": "A1a-V5",
-          "path": "steps[4].examples[2].de#inline[1]"
         },
         {
           "topic": "A1a-V5",
@@ -4563,7 +4525,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[1].tabs[4].example.de#whole"
+          "path": "steps[1].tabs[4].example.de"
         }
       ]
     },
@@ -4611,11 +4573,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[1].tabs[7].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V3",
-          "path": "steps[1].tabs[7].example.de#whole"
+          "path": "steps[1].tabs[7].example.de"
         }
       ]
     },
@@ -4983,21 +4941,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[1].tabs[8].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V3",
-          "path": "steps[1].tabs[8].example.de#whole"
-        }
-      ]
-    },
-    {
-      "hash": "30a5d5a3230ff1d8fff2aa6017784662aaa578c6",
-      "text": "Welche Farbe haben deine Augen?",
-      "sources": [
-        {
-          "topic": "A1a-V5",
-          "path": "steps[4].examples[2].de#inline[0]"
+          "path": "steps[1].tabs[8].example.de"
         }
       ]
     },
@@ -5017,11 +4961,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[3].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V3",
-          "path": "steps[3].tabs[3].example.de#whole"
+          "path": "steps[3].tabs[3].example.de"
         }
       ]
     },
@@ -5757,15 +5697,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[1].tabs[5].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V5",
           "path": "steps[1].tabs[5].pron"
-        },
-        {
-          "topic": "A1a-V5",
-          "path": "steps[3].examples[2].de#inline[0]"
         },
         {
           "topic": "A1a-V5",
@@ -6411,11 +6343,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[1].tabs[2].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V3",
-          "path": "steps[1].tabs[2].example.de#whole"
+          "path": "steps[1].tabs[2].example.de"
         }
       ]
     },
@@ -7321,11 +7249,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[1].tabs[4].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V3",
-          "path": "steps[1].tabs[4].example.de#whole"
+          "path": "steps[1].tabs[4].example.de"
         }
       ]
     },
@@ -7819,7 +7743,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[2].tabs[0].example.de#whole"
+          "path": "steps[2].tabs[0].example.de"
         }
       ]
     },
@@ -8099,7 +8023,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[4].examples[0].de#whole"
+          "path": "steps[4].examples[0].de"
         }
       ]
     },
@@ -8695,7 +8619,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[1].tabs[0].example.de#whole"
+          "path": "steps[1].tabs[0].example.de"
         }
       ]
     },
@@ -8713,10 +8637,6 @@
       "hash": "5efc86ca883e265ab0bf38d45731d8612695cafa",
       "text": "rosa",
       "sources": [
-        {
-          "topic": "A1a-V5",
-          "path": "steps[2].tabs[1].example.de#inline[0]"
-        },
         {
           "topic": "A1a-V5",
           "path": "steps[2].tabs[1].pron"
@@ -9011,10 +8931,6 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[4].examples[0].de#inline[0]"
-        },
-        {
-          "topic": "A1a-V5",
           "path": "steps[6].pitfalls[2].good"
         },
         {
@@ -9027,10 +8943,6 @@
       "hash": "6101d347feb0332253b5ececd8cd328d548f2541",
       "text": "lila",
       "sources": [
-        {
-          "topic": "A1a-V5",
-          "path": "steps[2].tabs[2].example.de#inline[0]"
-        },
         {
           "topic": "A1a-V5",
           "path": "steps[2].tabs[2].pron"
@@ -9543,7 +9455,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[3].examples[1].de#whole"
+          "path": "steps[3].examples[1].de"
         }
       ]
     },
@@ -9631,11 +9543,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[1].tabs[1].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V3",
-          "path": "steps[1].tabs[1].example.de#whole"
+          "path": "steps[1].tabs[1].example.de"
         }
       ]
     },
@@ -9707,11 +9615,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[1].tabs[5].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V3",
-          "path": "steps[1].tabs[5].example.de#whole"
+          "path": "steps[1].tabs[5].example.de"
         }
       ]
     },
@@ -10311,11 +10215,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[5].tabs[2].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V3",
-          "path": "steps[5].tabs[2].example.de#whole"
+          "path": "steps[5].tabs[2].example.de"
         }
       ]
     },
@@ -11173,11 +11073,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[6].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V3",
-          "path": "steps[3].tabs[6].example.de#whole"
+          "path": "steps[3].tabs[6].example.de"
         }
       ]
     },
@@ -12953,19 +12849,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[1].tabs[4].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V5",
           "path": "steps[1].tabs[4].pron"
-        },
-        {
-          "topic": "A1a-V5",
-          "path": "steps[3].examples[1].de#inline[0]"
-        },
-        {
-          "topic": "A1a-V5",
-          "path": "steps[4].examples[1].de#inline[1]"
         },
         {
           "topic": "A1a-V5",
@@ -13007,11 +12891,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[7].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V3",
-          "path": "steps[3].tabs[7].example.de#whole"
+          "path": "steps[3].tabs[7].example.de"
         }
       ]
     },
@@ -13021,11 +12901,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[2].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V3",
-          "path": "steps[3].tabs[2].example.de#whole"
+          "path": "steps[3].tabs[2].example.de"
         }
       ]
     },
@@ -13169,7 +13045,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[1].tabs[5].example.de#whole"
+          "path": "steps[1].tabs[5].example.de"
         }
       ]
     },
@@ -13705,7 +13581,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[3].examples[3].de#whole"
+          "path": "steps[3].examples[3].de"
         },
         {
           "topic": "A1a-V5",
@@ -14741,11 +14617,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[5].tabs[0].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V3",
-          "path": "steps[5].tabs[0].example.de#whole"
+          "path": "steps[5].tabs[0].example.de"
         }
       ]
     },
@@ -16555,11 +16427,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[5].tabs[3].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V3",
-          "path": "steps[5].tabs[3].example.de#whole"
+          "path": "steps[5].tabs[3].example.de"
         }
       ]
     },
@@ -16925,10 +16793,6 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[1].tabs[2].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V5",
           "path": "steps[1].tabs[2].pron"
         },
         {
@@ -17039,7 +16903,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[4].examples[1].de#whole"
+          "path": "steps[4].examples[1].de"
         }
       ]
     },
@@ -17505,15 +17369,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[2].tabs[3].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V5",
           "path": "steps[2].tabs[3].pron"
-        },
-        {
-          "topic": "A1a-V5",
-          "path": "steps[3].examples[0].de#inline[0]"
         },
         {
           "topic": "A1a-V5",
@@ -18425,7 +18281,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[1].tabs[6].example.de#whole"
+          "path": "steps[1].tabs[6].example.de"
         }
       ]
     },
@@ -18797,7 +18653,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[1].tabs[3].example.de#whole"
+          "path": "steps[1].tabs[3].example.de"
         }
       ]
     },
@@ -18835,10 +18691,6 @@
       "hash": "ce14e8b84975e1f2d542524c748360964f7d892e",
       "text": "grau",
       "sources": [
-        {
-          "topic": "A1a-V5",
-          "path": "steps[1].tabs[6].example.de#inline[0]"
-        },
         {
           "topic": "A1a-V5",
           "path": "steps[1].tabs[6].pron"
@@ -19943,11 +19795,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[8].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V3",
-          "path": "steps[3].tabs[8].example.de#whole"
+          "path": "steps[3].tabs[8].example.de"
         }
       ]
     },
@@ -19957,7 +19805,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[2].tabs[1].example.de#whole"
+          "path": "steps[2].tabs[1].example.de"
         }
       ]
     },
@@ -20059,11 +19907,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[1].tabs[3].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V3",
-          "path": "steps[1].tabs[3].example.de#whole"
+          "path": "steps[1].tabs[3].example.de"
         }
       ]
     },
@@ -20707,19 +20551,7 @@
         },
         {
           "topic": "A1a-V5",
-          "path": "steps[1].tabs[0].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V5",
           "path": "steps[1].tabs[0].pron"
-        },
-        {
-          "topic": "A1a-V5",
-          "path": "steps[3].examples[3].de#inline[0]"
-        },
-        {
-          "topic": "A1a-V5",
-          "path": "steps[4].examples[0].de#inline[1]"
         },
         {
           "topic": "A1a-V5",
@@ -20757,7 +20589,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[3].examples[2].de#whole"
+          "path": "steps[3].examples[2].de"
         }
       ]
     },
@@ -21673,7 +21505,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[2].tabs[3].example.de#whole"
+          "path": "steps[2].tabs[3].example.de"
         }
       ]
     },
@@ -22097,10 +21929,6 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[2].tabs[0].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V5",
           "path": "steps[2].tabs[0].pron"
         },
         {
@@ -22189,7 +22017,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[2].tabs[2].example.de#whole"
+          "path": "steps[2].tabs[2].example.de"
         }
       ]
     },
@@ -22409,11 +22237,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[1].tabs[6].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V3",
-          "path": "steps[1].tabs[6].example.de#whole"
+          "path": "steps[1].tabs[6].example.de"
         }
       ]
     },
@@ -23287,11 +23111,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[4].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V3",
-          "path": "steps[3].tabs[4].example.de#whole"
+          "path": "steps[3].tabs[4].example.de"
         }
       ]
     },
@@ -23379,7 +23199,7 @@
       "sources": [
         {
           "topic": "A1a-V5",
-          "path": "steps[1].tabs[1].example.de#whole"
+          "path": "steps[1].tabs[1].example.de"
         }
       ]
     },
@@ -23413,11 +23233,7 @@
       "sources": [
         {
           "topic": "A1a-V3",
-          "path": "steps[3].tabs[0].example.de#inline[0]"
-        },
-        {
-          "topic": "A1a-V3",
-          "path": "steps[3].tabs[0].example.de#whole"
+          "path": "steps[3].tabs[0].example.de"
         }
       ]
     },
