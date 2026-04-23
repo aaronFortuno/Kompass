@@ -60,7 +60,12 @@ async function main() {
     die(`slug invàlid: ${slug}. Ha de ser kebab-case ([a-z0-9-]).`);
   }
 
-  const outDir = path.join('public', 'Kompass', 'images', levelDir, numberStr);
+  // Les imatges viuen sota public/images/... El base '/Kompass/' de Vite
+  // ja anteposa el segment del repo GitHub Pages a les URLs servides —
+  // si poséssim els fitxers a public/Kompass/images/ el deploy final
+  // seria a /Kompass/Kompass/images/ (un segment de més) i els 'src'
+  // acabarien donant 404.
+  const outDir = path.join('public', 'images', levelDir, numberStr);
   fs.mkdirSync(outDir, { recursive: true });
 
   // Llegim metadades de la imatge original per saber la mida real.

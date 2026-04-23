@@ -649,7 +649,7 @@ Element visual incrustable al reader (fotografia, il·lustració, infografia). E
 
 **Camps:**
 
-- `src` *(string, opcional)*: URL relativa o absoluta a la imatge raster (WebP/PNG/JPG recomanat WebP). Convenció de carpetes: `public/Kompass/images/{nivell}/{número}/{slug}.webp`.
+- `src` *(string, opcional)*: URL relativa o absoluta a la imatge raster (WebP/PNG/JPG recomanat WebP). Convenció de carpetes: els fitxers viuen a `public/images/{nivell}/{número}/{slug}.webp`, i el `src` al JSON s'escriu com a `/Kompass/images/…` perquè Vite afegeix el `/Kompass/` del base al deploy.
 - `svg` *(string, opcional)*: SVG inline sencer (incloent `<svg …>`). Es renderitza via `dangerouslySetInnerHTML`. Com que el contingut ve del JSON autoral del projecte, no hi ha risc d'injecció — tot i així, cal que el SVG sigui *self-contained* (no scripts, no imports externs).
 - `alt` *(string, obligatori)*: text alternatiu per a accessibilitat. Sempre requerit.
 - `caption` *(string, opcional)*: peu de text en italic, admet inline rich text (§3.6).
@@ -658,7 +658,7 @@ Element visual incrustable al reader (fotografia, il·lustració, infografia). E
 **Restriccions:**
 
 - Cal proporcionar **o bé `src` o bé `svg`** (no els dos alhora; si els dos es donen, `svg` té preferència).
-- El `src` ha de ser una ruta dins de `public/Kompass/images/` per al deploy de GitHub Pages. Imatges externes es desaconsellen (CSP, offline, privacitat).
+- El fitxer viu dins de `public/images/` (no dins de `public/Kompass/`, que duplicaria el segment de base i donaria 404 a GitHub Pages). Imatges externes es desaconsellen (CSP, offline, privacitat).
 - Les imatges raster han de ser optimitzades abans de commit (WebP qualitat 80, objectiu ~100 kB per imatge). En el futur hi haurà un script `npm run add-image` que automatitza la conversió.
 
 **Ús típic:**
@@ -688,7 +688,7 @@ Imatge petita incrustada en un beat `pron` (`tab.image`) o `example` (`examples[
 
 **Camps:**
 
-- `src` *(string, obligatori)*: URL relativa a la variant base (normalment la de 640w). Convenció de carpetes: `public/Kompass/images/{nivell}/{número}/{slug}-{width}.webp`. Per vocabulari, el número pot portar prefix `V` (p. ex. `V5/`).
+- `src` *(string, obligatori)*: URL relativa a la variant base (normalment la de 640w). Els fitxers viuen a `public/images/{nivell}/{número}/{slug}-{width}.webp` i el `src` al JSON s'escriu com a `/Kompass/images/{nivell}/{número}/…` (Vite hi afegeix el `/Kompass/` del base). Per vocabulari, el número pot portar prefix `V` (p. ex. `V5/`).
 - `srcset` *(string, opcional)*: cadena `<url> <width>w, …` per a imatges responsives. Generada per `npm run add-image`.
 - `sizes` *(string, opcional)*: hint de mida al navegador; per defecte el render les mostra entre ~160 i ~280 px.
 - `alt` *(string, obligatori)*: text alternatiu sempre requerit, en català.
@@ -705,7 +705,7 @@ Imatge petita incrustada en un beat `pron` (`tab.image`) o `example` (`examples[
 
 **Restriccions:**
 
-- `src` ha de ser una ruta dins de `public/Kompass/images/`. Imatges externes es desaconsellen (CSP, offline, privacitat).
+- El fitxer viu dins de `public/images/` (no dins de `public/Kompass/`). Imatges externes es desaconsellen (CSP, offline, privacitat).
 - Les imatges han de ser optimitzades abans de commit. El pipeline `npm run add-image -- <topicId> <sourceFile> <slug>` genera les tres variants responsives i imprimeix el JSON snippet corresponent. Accepta `topicId` de gramàtica (`A1a-5`) i de vocabulari (`A1a-V5`).
 
 ---
