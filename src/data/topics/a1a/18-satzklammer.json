@@ -33,27 +33,27 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### La inversió: quan el subjecte s'aparta\n\nFins ara, les oracions que has vist solien començar pel subjecte:\n\n> _==Ich== ==spiele== manchmal Fußball._ — _Jo jugo a futbol de vegades._\n\nPerò l'alemany permet, i de fet fomenta, **començar per un complement** per donar-li èmfasi o per lligar amb el que s'ha dit abans. I aquí ve el truc: **el verb no es mou**, continua a la posició 2. L'únic que canvia és el subjecte, que **s'aparta a la posició 3**."
+          "body": "#### La inversió: quan el subjecte s'aparta\n\nFins ara, les oracions que has vist solien començar pel subjecte:\n\n> _!!==Ich== ==spiele== manchmal Fußball.!!_ — _Jo jugo a futbol de vegades._\n\nPerò l'alemany permet, i de fet fomenta, **començar per un complement** per donar-li èmfasi o per lligar amb el que s'ha dit abans. I aquí ve el truc: **el verb no es mou**, continua a la posició 2. L'únic que canvia és el subjecte, que **s'aparta a la posició 3**."
         },
         {
           "type": "table",
           "title": "Inversió: verb i subjecte, sempre junts",
           "headers": ["Posició 1", "Posició 2", "Posició 3", "Posició 4+"],
           "rows": [
-            ["_Ich_", "**==spiele==**", "—", "_manchmal Fußball._"],
-            ["_Manchmal_", "**==spiele==**", "_ich_", "_Fußball._"],
-            ["_Am Wochenende_", "**==spiele==**", "_ich_", "_Fußball mit Anna._"]
+            ["_!!Ich!!_", "!!**==spiele==**!!", "—", "_!!manchmal Fußball.!!_"],
+            ["_!!Manchmal!!_", "!!**==spiele==**!!", "_!!ich!!_", "_!!Fußball.!!_"],
+            ["_!!Am Wochenende!!_", "!!**==spiele==**!!", "_!!ich!!_", "_!!Fußball mit Anna.!!_"]
           ]
         },
         {
           "type": "explanation",
-          "body": "Les tres oracions volen dir pràcticament el mateix, però canvia l'èmfasi. Posar _Manchmal_ o _Am Wochenende_ a la posició 1 destaca **quan** passa l'acció. És com si en català diguéssim \"_De vegades, jo jugo a futbol_\" vs \"_Jo jugo a futbol de vegades_\".\n\n**La regla d'or que has de retenir:**\n\n> ==Verb i subjecte sempre van junts==. Si el subjecte no és a la 1, anirà **just darrere del verb**, a la posició 3.\n\n**Comparació trilingüe:**\n\n- CA: _Els caps de setmana jo jugo a futbol._ (ordre flexible)\n- ES: _Los fines de semana yo juego al fútbol._ (ordre flexible)\n- DE: _Am Wochenende ==spiele== ==ich== Fußball._ (==complement== — ==verb== — ==subjecte==)"
+          "body": "Les tres oracions volen dir pràcticament el mateix, però canvia l'èmfasi. Posar _Manchmal_ o _Am Wochenende_ a la posició 1 destaca **quan** passa l'acció. És com si en català diguéssim \"_De vegades, jo jugo a futbol_\" vs \"_Jo jugo a futbol de vegades_\".\n\n**La regla d'or que has de retenir:**\n\n> ==Verb i subjecte sempre van junts==. Si el subjecte no és a la 1, anirà **just darrere del verb**, a la posició 3.\n\n**Comparació trilingüe:**\n\n- CA: _Els caps de setmana jo jugo a futbol._ (ordre flexible)\n- ES: _Los fines de semana yo juego al fútbol._ (ordre flexible)\n- DE: _!!Am Wochenende ==spiele== ==ich== Fußball.!!_ (==complement== — ==verb== — ==subjecte==)"
         },
         {
           "type": "callout",
           "variant": "danger",
           "title": "Error típic de catalanoparlant",
-          "body": "En català, darrere d'un complement inicial, sol venir el subjecte abans que el verb. En alemany **és al revés**: el verb **sempre** primer.\n\n- Incorrecte: _Am Wochenende ich spiele Fußball._\n- Correcte: _Am Wochenende **spiele ich** Fußball._"
+          "body": "En català, darrere d'un complement inicial, sol venir el subjecte abans que el verb. En alemany **és al revés**: el verb **sempre** primer.\n\n- Incorrecte: _Am Wochenende ich spiele Fußball._\n- Correcte: _!!Am Wochenende **spiele ich** Fußball.!!_"
         }
       ]
     },
@@ -68,14 +68,14 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### La Satzklammer: els \"claudàtors de l'oració\"\n\nAquí ve una de les construccions **més característiques** de l'alemany, i una de les que més despista els catalanoparlants. En català i castellà, quan un verb té dues parts (auxiliar + infinitiu, auxiliar + participi), les posem **juntes**:\n\n- CA: _==Puc== ==ballar== tango molt bé._\n- ES: _==Puedo== ==bailar== tango muy bien._\n\nL'alemany fa una cosa radicalment diferent. Les dues parts del verb **se separen**, i es col·loquen als extrems de l'oració. El **verb conjugat** (el que canvia segons la persona) es queda a la posició 2; la **segona peça verbal** (infinitiu, participi, o prefix separable) ==vola al final de l'oració==. I tot el que no és verb queda enmig, ==tancat== entre les dues peces.\n\nAquesta estructura s'anomena **Satzklammer**, que es tradueix literalment com \"**claudàtors de l'oració**\" o \"**parèntesi verbal**\". És molt útil pensar-ho així: imagina que el verb conjugat és un **claudàtor obert** i la segona peça verbal un **claudàtor tancat**, i que tota la informació viu a dins.\n\n> [ ==verb conjugat== … _complements_ … ==2a peça verbal== ]"
+          "body": "#### La Satzklammer: els \"claudàtors de l'oració\"\n\nAquí ve una de les construccions **més característiques** de l'alemany, i una de les que més despista els catalanoparlants. En català i castellà, quan un verb té dues parts (auxiliar + infinitiu, auxiliar + participi), les posem **juntes**:\n\n- CA: _==Puc== ==ballar== tango molt bé._\n- ES: _==Puedo== ==bailar== tango muy bien._\n- DE: _!!Sie ==kann== sehr gut Tango ==tanzen==.!!_ (Ella sap ballar tango molt bé.)\n\nL'alemany fa una cosa radicalment diferent. Les dues parts del verb **se separen**, i es col·loquen als extrems de l'oració. El **verb conjugat** (el que canvia segons la persona) es queda a la posició 2; la **segona peça verbal** (infinitiu, participi, o prefix separable) ==vola al final de l'oració==. I tot el que no és verb queda enmig, ==tancat== entre les dues peces.\n\nAquesta estructura s'anomena **Satzklammer**, que es tradueix literalment com \"**claudàtors de l'oració**\" o \"**parèntesi verbal**\". És molt útil pensar-ho així: imagina que el verb conjugat és un **claudàtor obert** i la segona peça verbal un **claudàtor tancat**, i que tota la informació viu a dins.\n\n> [ ==verb conjugat== … _complements_ … ==2a peça verbal== ]"
         },
         {
           "type": "table",
           "title": "Exemple bàsic de Satzklammer",
           "headers": ["Posició 1", "Posició 2 (Verb 1)", "Posició 3", "Mig", "Final (Verb 2)"],
           "rows": [
-            ["_Sie_", "**==kann==**", "—", "_sehr gut Tango_", "**==tanzen.==**"]
+            ["_!!Sie!!_", "!!**==kann==**!!", "—", "_!!sehr gut Tango!!_", "!!**==tanzen.==**!!"]
           ]
         },
         {
@@ -89,7 +89,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Quan apareix la Satzklammer?\n\nLa Satzklammer no és una excepció rara: apareix en **moltes** estructures habituals de l'alemany. A nivell A1 en veuràs tres de principals (les treballaràs amb més profunditat en lliçons futures; aquí només les introduïm):\n\n**1. Verbs modals (A1a-19, A1a-26)**\n\nUn verb modal (_können_, _möchten_, _müssen_, _wollen_…) es conjuga a la posició 2; l'**infinitiu** del verb principal va al final.\n\n> _Ich ==möchte== ein Bier ==trinken==._ — _Voldria beure una cervesa._\n\n**2. Verbs separables (A1a-25)**\n\nAlguns verbs alemanys tenen un **prefix que se separa** en present. L'arrel es conjuga a la 2, i el prefix ==marxa al final==.\n\n> _aufstehen_ (llevar-se) → _Ich ==stehe== um 7 Uhr ==auf==._ — _Em llevo a les 7._\n\n**3. Perfekt (ja ho veuràs a A1b)**\n\nEl passat compost de l'alemany fa servir un auxiliar (_haben_ o _sein_) a la 2, i el **participi** al final.\n\n> _Ich ==habe== gestern Tango ==getanzt==._ — _Ahir vaig ballar tango._\n\nEn els tres casos, el patró és idèntic: ==verb conjugat a la 2, segona peça al final==, tota la resta enmig. És la **mateixa estructura**, el mateix esquelet."
+          "body": "#### Quan apareix la Satzklammer?\n\nLa Satzklammer no és una excepció rara: apareix en **moltes** estructures habituals de l'alemany. A nivell A1 en veuràs tres de principals (les treballaràs amb més profunditat en lliçons futures; aquí només les introduïm):\n\n**1. Verbs modals (A1a-19, A1a-26)**\n\nUn verb modal (_können_, _möchten_, _müssen_, _wollen_…) es conjuga a la posició 2; l'**infinitiu** del verb principal va al final.\n\n> _!!Ich ==möchte== ein Bier ==trinken==.!!_ — _Voldria beure una cervesa._\n\n**2. Verbs separables (A1a-25)**\n\nAlguns verbs alemanys tenen un **prefix que se separa** en present. L'arrel es conjuga a la 2, i el prefix ==marxa al final==.\n\n> _!!aufstehen!!_ (llevar-se) → _!!Ich ==stehe== um 7 Uhr ==auf==.!!_ — _Em llevo a les 7._\n\n**3. Perfekt (ja ho veuràs a A1b)**\n\nEl passat compost de l'alemany fa servir un auxiliar (_haben_ o _sein_) a la 2, i el **participi** al final.\n\n> _!!Ich ==habe== gestern Tango ==getanzt==.!!_ — _Ahir vaig ballar tango._\n\nEn els tres casos, el patró és idèntic: ==verb conjugat a la 2, segona peça al final==, tota la resta enmig. És la **mateixa estructura**, el mateix esquelet."
         },
         {
           "type": "callout",
@@ -117,7 +117,7 @@
           "title": "Satzklammer + inversió",
           "headers": ["Posició 1", "Posició 2 (Verb 1)", "Posició 3", "Mig", "Final (Verb 2)"],
           "rows": [
-            ["_Tango_", "**==kann==**", "_sie_", "_sehr gut_", "**==tanzen.==**"]
+            ["_!!Tango!!_", "!!**==kann==**!!", "_!!sie!!_", "_!!sehr gut!!_", "!!**==tanzen.==**!!"]
           ]
         },
         {
@@ -131,7 +131,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. Posar el verb a la posició 3 després d'un complement inicial.**\nÉs l'error rei. En català l'ordre \"complement + subjecte + verb\" sona natural. En alemany, **no existeix**: el verb es manté a la 2.\n\n- Incorrecte: _Am Wochenende ich spiele Fußball._\n- Correcte: _Am Wochenende ==spiele ich== Fußball._\n\n**2. Ajuntar les dues peces verbals.**\nPer influència del català/castellà, costa acceptar que _kann_ i _tanzen_ van separats. L'instint ens diu \"_kann tanzen_\" tot junt.\n\n- Incorrecte: _Sie kann tanzen sehr gut Tango._\n- Correcte: _Sie ==kann== sehr gut Tango ==tanzen==._\n\n**3. Conjugar la segona peça verbal.**\nEl verb principal d'una Satzklammer va en **infinitiu** (o participi, o com a prefix); ==mai no es conjuga==. El que es conjuga és el modal o l'auxiliar.\n\n- Incorrecte: _Ich möchte ein Bier trinke._\n- Correcte: _Ich möchte ein Bier ==trinken==._ (infinitiu)\n\n**4. Oblidar separar el prefix dels verbs separables.**\nVerbs com _aufstehen_, _ankommen_, _einkaufen_ **se separen** en present (ho veuràs a **A1a-25**). El prefix marxa al final.\n\n- Incorrecte: _Ich aufstehe um 7 Uhr._\n- Correcte: _Ich ==stehe== um 7 Uhr ==auf==._\n\n**5. Tenir por del \"final\" de l'oració.**\nA l'inici fa vertigen: \"i si m'oblido del verb del final?\" Passa a tothom. Consell: quan comencis una oració amb un modal o un auxiliar, **tingues ja pensat el verb principal**. Amb temps es fa automàtic."
+          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. Posar el verb a la posició 3 després d'un complement inicial.**\nÉs l'error rei. En català l'ordre \"complement + subjecte + verb\" sona natural. En alemany, **no existeix**: el verb es manté a la 2.\n\n- Incorrecte: _Am Wochenende ich spiele Fußball._\n- Correcte: _Am Wochenende ==spiele ich== Fußball._\n\n**2. Ajuntar les dues peces verbals.**\nPer influència del català/castellà, costa acceptar que _kann_ i _tanzen_ van separats. L'instint ens diu \"_kann tanzen_\" tot junt.\n\n- Incorrecte: _Sie kann tanzen sehr gut Tango._\n- Correcte: _!!Sie ==kann== sehr gut Tango ==tanzen==.!!_\n\n**3. Conjugar la segona peça verbal.**\nEl verb principal d'una Satzklammer va en **infinitiu** (o participi, o com a prefix); ==mai no es conjuga==. El que es conjuga és el modal o l'auxiliar.\n\n- Incorrecte: _Ich möchte ein Bier trinke._\n- Correcte: _!!Ich möchte ein Bier ==trinken==.!!_ (infinitiu)\n\n**4. Oblidar separar el prefix dels verbs separables.**\nVerbs com _aufstehen_, _ankommen_, _einkaufen_ **se separen** en present (ho veuràs a **A1a-25**). El prefix marxa al final.\n\n- Incorrecte: _Ich aufstehe um 7 Uhr._\n- Correcte: _!!Ich ==stehe== um 7 Uhr ==auf==.!!_\n\n**5. Tenir por del \"final\" de l'oració.**\nA l'inici fa vertigen: \"i si m'oblido del verb del final?\" Passa a tothom. Consell: quan comencis una oració amb un modal o un auxiliar, **tingues ja pensat el verb principal**. Amb temps es fa automàtic."
         },
         {
           "type": "callout",
@@ -177,9 +177,9 @@
           "title": "18.1 Inversió (una peça verbal)",
           "headers": ["Posició 1", "Posició 2 (verb)", "Posició 3 (subjecte)", "Resta"],
           "rows": [
-            ["_Ich_", "**spiele**", "—", "_manchmal Fußball._"],
-            ["_Manchmal_", "**spiele**", "_ich_", "_Fußball._"],
-            ["_Am Wochenende_", "**spiele**", "_ich_", "_Fußball mit Anna._"]
+            ["_!!Ich!!_", "!!**spiele**!!", "—", "_!!manchmal Fußball.!!_"],
+            ["_!!Manchmal!!_", "!!**spiele**!!", "_!!ich!!_", "_!!Fußball.!!_"],
+            ["_!!Am Wochenende!!_", "!!**spiele**!!", "_!!ich!!_", "_!!Fußball mit Anna.!!_"]
           ],
           "caption": "Amb una sola peça verbal: el verb es queda a la 2 i el subjecte salta a la 3 quan la 1 està ocupada."
         },
@@ -188,10 +188,10 @@
           "title": "18.2 Satzklammer (dues peces verbals)",
           "headers": ["Posició 1", "Verb 1 (conjugat)", "Posició 3", "Mig", "Final (Verb 2)"],
           "rows": [
-            ["_Sie_", "**kann**", "—", "_sehr gut Tango_", "**tanzen.**"],
-            ["_Ich_", "**möchte**", "—", "_ein Bier_", "**trinken.**"],
-            ["_Ich_", "**stehe**", "—", "_um 7 Uhr_", "**auf.**"],
-            ["_Am Wochenende_", "**möchte**", "_sie_", "_Tango_", "**tanzen.**"]
+            ["_!!Sie!!_", "!!**kann**!!", "—", "_!!sehr gut Tango!!_", "!!**tanzen.**!!"],
+            ["_!!Ich!!_", "!!**möchte**!!", "—", "_!!ein Bier!!_", "!!**trinken.**!!"],
+            ["_!!Ich!!_", "!!**stehe**!!", "—", "_!!um 7 Uhr!!_", "!!**auf.**!!"],
+            ["_!!Am Wochenende!!_", "!!**möchte**!!", "_!!sie!!_", "_!!Tango!!_", "!!**tanzen.**!!"]
           ],
           "caption": "Modal + infinitiu, arrel + prefix separable, auxiliar + participi: sempre el mateix esquelet."
         }
