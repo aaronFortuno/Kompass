@@ -24,7 +24,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Què és un verb separable?\n\nUn **verb separable** (_trennbares Verb_) és un verb format per dues peces:\n\n- **Prefix separable** — una partícula curta davant del verb: _auf_, _aus_, _ein_, _an_, _mit_, _fern_…\n- **Arrel verbal** — el verb de tota la vida (_stehen_, _schlafen_, _rufen_, _sehen_…).\n\nEl resultat és un verb nou, sovint amb un significat diferent del verb base:\n\n- _stehen_ = estar dret → _==auf==stehen_ = llevar-se\n- _rufen_ = cridar → _==an==rufen_ = trucar (per telèfon)\n- _sehen_ = veure → _==fern==sehen_ = mirar la tele\n- _schlafen_ = dormir → _==aus==schlafen_ = dormir fins que un té prou\n\nAls diccionaris alemanys, sovint trobaràs una ==línia vertical== que marca on es pot separar el verb:\n\n> ==auf==|stehen, ==an==|rufen, ==fern==|sehen, ==ein==|kaufen\n\nAquesta línia **no s'escriu** en textos normals; només és una ajuda visual del diccionari. A tu et servirà per saber, d'un cop d'ull, que un verb és separable.\n\n#### Un fenomen nou per a catalanoparlants\n\nEn català i en castellà aquest fenomen **no existeix**. Tenim verbs amb prefix (_tornar_, _desfer_, _recollir_), però aquests prefixos **no se separen mai** del verb:\n\n- CA: _Jo ==em llevo== a les set._ (_llevar-se_ és pronominal, però no hi ha cap prefix que marxi)\n- ES: _Yo ==me levanto== a las siete._\n- DE: _Ich ==stehe== um sieben Uhr ==auf==._ (_aufstehen_ es parteix en dos!)\n\nLa cosa més semblant que tenim a les llengües romàniques és la combinació \"verb + partícula\" en expressions com _me'n torno_ o _se'n va_, on hi ha un pronom que s'escapa. Però ni tan sols això és equivalent: en alemany, **el prefix és part del verb del diccionari**, no un pronom. Per això els catalanoparlants ens solem sorprendre el primer cop que veiem \"_Ich stehe um sieben Uhr ==auf==._\" i ens preguntem: \"què hi fa aquell _auf_ al final?\"."
+          "body": "#### Què és un verb separable?\n\nUn **verb separable** (_trennbares Verb_) és un verb format per dues peces:\n\n- **Prefix separable** — una partícula curta davant del verb: _auf_, _aus_, _ein_, _an_, _mit_, _fern_…\n- **Arrel verbal** — el verb de tota la vida (_stehen_, _schlafen_, _rufen_, _sehen_…).\n\nEl resultat és un verb nou, sovint amb un significat diferent del verb base:\n\n- _!!stehen!!_ = estar dret → _!!==auf==stehen!!_ = llevar-se\n- _!!rufen!!_ = cridar → _!!==an==rufen!!_ = trucar (per telèfon)\n- _!!sehen!!_ = veure → _!!==fern==sehen!!_ = mirar la tele\n- _!!schlafen!!_ = dormir → _!!==aus==schlafen!!_ = dormir fins que un té prou\n\nAls diccionaris alemanys, sovint trobaràs una ==línia vertical== que marca on es pot separar el verb:\n\n> ==auf==|stehen, ==an==|rufen, ==fern==|sehen, ==ein==|kaufen\n\nAquesta línia **no s'escriu** en textos normals; només és una ajuda visual del diccionari. A tu et servirà per saber, d'un cop d'ull, que un verb és separable.\n\n#### Un fenomen nou per a catalanoparlants\n\nEn català i en castellà aquest fenomen **no existeix**. Tenim verbs amb prefix (_tornar_, _desfer_, _recollir_), però aquests prefixos **no se separen mai** del verb:\n\n- CA: _Jo ==em llevo== a les set._ (_llevar-se_ és pronominal, però no hi ha cap prefix que marxi)\n- ES: _Yo ==me levanto== a las siete._\n- DE: _!!Ich ==stehe== um sieben Uhr ==auf==.!!_ (_aufstehen_ es parteix en dos!)\n\nLa cosa més semblant que tenim a les llengües romàniques és la combinació \"verb + partícula\" en expressions com _me'n torno_ o _se'n va_, on hi ha un pronom que s'escapa. Però ni tan sols això és equivalent: en alemany, **el prefix és part del verb del diccionari**, no un pronom. Per això els catalanoparlants ens solem sorprendre el primer cop que veiem \"_!!Ich stehe um sieben Uhr ==auf==.!!_\" i ens preguntem: \"què hi fa aquell _auf_ al final?\"."
         }
       ]
     },
@@ -40,14 +40,14 @@
           "title": "Prefixos separables més freqüents a A1",
           "headers": ["Prefix", "Exemples freqüents", "Significat aproximat"],
           "rows": [
-            ["**an-**", "_==an==rufen_ (trucar), _==an==kommen_ (arribar), _==an==fangen_ (començar)", "acostar-se, contacte"],
-            ["**auf-**", "_==auf==stehen_ (llevar-se), _==auf==räumen_ (endreçar), _==auf==machen_ (obrir)", "obertura, cap amunt"],
-            ["**aus-**", "_==aus==gehen_ (sortir de festa), _==aus==schlafen_ (dormir bé), _==aus==machen_ (apagar)", "cap enfora, final"],
-            ["**ein-**", "_==ein==kaufen_ (fer la compra), _==ein==schlafen_ (adormir-se), _==ein==laden_ (convidar)", "cap endins"],
-            ["**mit-**", "_==mit==kommen_ (venir amb), _==mit==bringen_ (portar amb)", "acompanyament"],
-            ["**fern-**", "_==fern==sehen_ (mirar la tele)", "a distància"],
-            ["**vor-**", "_==vor==stellen_ (presentar)", "davant"],
-            ["**zu-**", "_==zu==machen_ (tancar), _==zu==hören_ (escoltar)", "cap a, tancament"]
+            ["**an-**", "_!!==an==rufen!!_ (trucar), _!!==an==kommen!!_ (arribar), _!!==an==fangen!!_ (començar)", "acostar-se, contacte"],
+            ["**auf-**", "_!!==auf==stehen!!_ (llevar-se), _!!==auf==räumen!!_ (endreçar), _!!==auf==machen!!_ (obrir)", "obertura, cap amunt"],
+            ["**aus-**", "_!!==aus==gehen!!_ (sortir de festa), _!!==aus==schlafen!!_ (dormir bé), _!!==aus==machen!!_ (apagar)", "cap enfora, final"],
+            ["**ein-**", "_!!==ein==kaufen!!_ (fer la compra), _!!==ein==schlafen!!_ (adormir-se), _!!==ein==laden!!_ (convidar)", "cap endins"],
+            ["**mit-**", "_!!==mit==kommen!!_ (venir amb), _!!==mit==bringen!!_ (portar amb)", "acompanyament"],
+            ["**fern-**", "_!!==fern==sehen!!_ (mirar la tele)", "a distància"],
+            ["**vor-**", "_!!==vor==stellen!!_ (presentar)", "davant"],
+            ["**zu-**", "_!!==zu==machen!!_ (tancar), _!!==zu==hören!!_ (escoltar)", "cap a, tancament"]
           ]
         },
         {

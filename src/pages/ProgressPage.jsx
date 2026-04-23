@@ -25,6 +25,7 @@ import {
   downloadJson,
   buildExportFilename,
 } from '@/lib/exportImport.js';
+import { groupTopics } from '@/lib/topicGroups.js';
 import pkg from '../../package.json';
 
 /*
@@ -371,21 +372,143 @@ function LevelSection({ levelKey, states, t, defaultOpen }) {
         </span>
       </summary>
 
-      {/* Panell obert: llista densa. */}
-      <div className="pb-4">
+      {/* Panell obert: GRID de cards temàtiques. */}
+      <div className="pt-3 pb-4">
         {shown === 0 ? (
           <p className="font-serif italic text-sm text-reader-ink-2 px-2 py-4">
             {t('progress.browse.emptyForFilter')}
           </p>
         ) : (
-          <ul className="divide-y divide-reader-rule border-t border-reader-rule">
-            {states.filter((s) => s.__shown).map((state, i) => (
-              <BrowseRow key={state.topic.id} state={state} t={t} revealIndex={i} />
-            ))}
-          </ul>
+          <div className="grid gap-x-10 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
+            {(() => {
+              const visibleStates = states.filter((s) => s.__shown);
+              // Agrupem per TOPIC_GROUPS (mateix mapa que TopicsIndex).
+              // Mantenim l'estat de cada state dins del seu grup.
+              const topics = visibleStates.map((s) => s.topic);
+              const buckets = groupTopics(levelKey, topics);
+              let cum = 0;
+              return buckets.map((entry) => {
+                const groupStates = entry.topics.map((topic) =>
+                  visibleStates.find((s) => s.topic.id === topic.id),
+                );
+                const startIndex = cum;
+                cum += groupStates.length;
+                return (
+                  <GroupBlockCard
+                    key={entry.group.id}
+                    group={entry.group}
+                    states={groupStates}
+                    t={t}
+                    startIndex={startIndex}
+                  />
+                );
+              });
+            })()}
+          </div>
         )}
       </div>
     </details>
+  );
+}
+
+/* Card temàtica del navegador de progrés: títol del grup + xifra
+ * agregada de compleció + llista compacta dels temes del grup amb el
+ * seu estat individual.
+ *
+ * Càlcul del progrés del bloc:
+ *   - Compleció per exercicis: suma de completedEx / suma de totalEx.
+ *     Si el bloc no té exercicis, mostrem només els temes començats
+ *     sobre el total.
+ */
+function GroupBlockCard({ group, states, t, startIndex }) {
+  let totalEx = 0;
+  let completedEx = 0;
+  let allDoneCount = 0;
+  let startedCount = 0;
+  for (const s of states) {
+    if (!s) continue;
+    totalEx += s.totalEx || 0;
+    completedEx += s.completedEx || 0;
+    if (s.status === 'completed') allDoneCount += 1;
+    if (s.status !== 'notStarted') startedCount += 1;
+  }
+  const blockPct = totalEx === 0 ? null : Math.round((completedEx / totalEx) * 100);
+  const total = states.length;
+
+  return (
+    <div className="flex flex-col">
+      {/* Capçalera del bloc · títol + % compleció. */}
+      <div className="flex items-baseline justify-between gap-3 border-t-2 border-reader-rule pt-4 pb-3">
+        <h3 className="font-mono text-[11px] uppercase tracking-[0.22em] text-reader-muted">
+          {group.title}
+        </h3>
+        <span className="font-mono text-[10px] text-reader-ink-2 flex-shrink-0">
+          {blockPct != null
+            ? `${blockPct}% · ${allDoneCount}/${total}`
+            : `${startedCount}/${total}`}
+        </span>
+      </div>
+      {/* Barra fina que agrega compleció del bloc. */}
+      <ThinBar pct={blockPct ?? 0} done={allDoneCount === total && total > 0} />
+      {/* Llista compacta de temes del grup. */}
+      <ul className="flex flex-col mt-1">
+        {states.map((state, i) => {
+          if (!state) return null;
+          return (
+            <li key={state.topic.id} className="border-b border-reader-rule last:border-b-0">
+              <BrowseCompactRow state={state} t={t} revealIndex={startIndex + i} />
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+}
+
+/* Fila compacta d'un tema dins d'una card de bloc: id · shortTitle · estat.
+ * Tipografia més petita que el BrowseRow original — les cards ja són
+ * contextualitzades pel títol del grup, no cal repetir metadata. */
+function BrowseCompactRow({ state, t, revealIndex = 0 }) {
+  const { topic, status, pct, allDone, totalEx } = state;
+  const hasExercises = totalEx > 0;
+  const delayMs = Math.min(revealIndex * 35, 500);
+  const to = `/temari/${topic.id}`;
+  return (
+    <Link
+      to={to}
+      className={[
+        'group flex items-baseline gap-3',
+        'py-2 px-2 -mx-2',
+        'hover:bg-reader-paper-2',
+        'transition-colors duration-fast ease-standard',
+        'progress-row-reveal',
+      ].join(' ')}
+      style={{ animationDelay: `${delayMs}ms` }}
+    >
+      <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-reader-muted w-7 flex-shrink-0 text-right">
+        {topic.id.replace(/^A1[ab]-/, '')}
+      </span>
+      <span className="flex-1 min-w-0 font-serif text-sm text-reader-ink tracking-tight truncate">
+        {topic.shortTitle}
+      </span>
+      <span className="flex-shrink-0 flex items-center gap-1.5">
+        {hasExercises ? (
+          allDone ? (
+            <Check size={13} className="text-reader-ok" aria-hidden="true" />
+          ) : status === 'review' ? (
+            <AlertTriangle size={12} className="text-reader-bad" aria-hidden="true" />
+          ) : (
+            <span className="font-mono text-[10px] text-reader-muted">
+              {pct != null && pct > 0 ? `${pct}%` : '·'}
+            </span>
+          )
+        ) : (
+          <span className="font-mono text-[10px] text-reader-muted">
+            {status === 'notStarted' ? '·' : '—'}
+          </span>
+        )}
+      </span>
+    </Link>
   );
 }
 
@@ -738,18 +861,49 @@ export function ProgressPage() {
 
   return (
     <div className="max-w-content-list">
-      {/* ── Capçalera editorial ────────────────────────────────── */}
-      <header className="space-y-3 mb-10">
-        <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-reader-muted">
-          {t('progress.kicker')}
-        </p>
-        <h1 className="font-serif font-medium text-4xl sm:text-5xl tracking-tight text-reader-ink">
-          {t('progress.title')}
-        </h1>
-        <p className="font-serif italic text-lg text-reader-ink-2 max-w-prose">
-          {t('progress.intro')}
-        </p>
-      </header>
+      {/* ── Capçalera + resum en 2 columnes ────────────────────── */}
+      <section className="mb-10 grid gap-8 lg:grid-cols-[1.1fr_1fr] lg:gap-12 lg:items-start">
+        <header className="space-y-3">
+          <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-reader-muted">
+            {t('progress.kicker')}
+          </p>
+          <h1 className="font-serif font-medium text-4xl sm:text-5xl tracking-tight text-reader-ink">
+            {t('progress.title')}
+          </h1>
+          <p className="font-serif italic text-lg text-reader-ink-2 max-w-prose">
+            {t('progress.intro')}
+          </p>
+        </header>
+        {hasProgress && (
+          // Resum global compactat com a segona columna. A desktop
+          // viu al costat del header; a mòbil cau sota en col·lumna.
+          <div aria-labelledby="progress-summary-heading">
+            <SectionHeading id="progress-summary-heading">
+              {t('progress.summary.title')}
+            </SectionHeading>
+            <div className="grid grid-cols-2 gap-x-6 gap-y-5">
+              <Stat
+                label={t('progress.summary.topicsStarted')}
+                value={topicsStarted}
+                denominator={totalTopics}
+              />
+              <Stat
+                label={t('progress.summary.exercisesConsolidated')}
+                value={exercisesConsolidated}
+                denominator={totalExercises}
+              />
+              <Stat
+                label={t('progress.summary.lastActivity')}
+                value={formatLastActivity(t, daysSinceLast)}
+              />
+              <Stat
+                label={t('progress.summary.journey')}
+                value={formatJourney(t, daysSinceStart)}
+              />
+            </div>
+          </div>
+        )}
+      </section>
 
       {/* ── Empty state ─────────────────────────────────────────── */}
       {!hasProgress && (
@@ -776,49 +930,6 @@ export function ProgressPage() {
                 <ArrowRight size={14} aria-hidden="true" />
               </Link>
             </div>
-          </div>
-        </section>
-      )}
-
-      {/* ── Resum global ───────────────────────────────────────── */}
-      {hasProgress && (
-        <section className="mb-12" aria-labelledby="progress-summary-heading">
-          <SectionHeading id="progress-summary-heading">
-            {t('progress.summary.title')}
-          </SectionHeading>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Stat
-              label={t('progress.summary.topicsStarted')}
-              value={topicsStarted}
-              denominator={totalTopics}
-            />
-            <Stat
-              label={t('progress.summary.exercisesConsolidated')}
-              value={exercisesConsolidated}
-              denominator={totalExercises}
-              foot={
-                exercisesConsolidated > 0
-                  ? t('progress.summary.consolidatedHint')
-                  : null
-              }
-            />
-            <Stat
-              label={t('progress.summary.lastActivity')}
-              value={formatLastActivity(t, daysSinceLast)}
-              foot={lastUpdated ? formatDateTime(lastUpdated, locale) : null}
-            />
-            <Stat
-              label={t('progress.summary.journey')}
-              value={formatJourney(t, daysSinceStart)}
-              foot={
-                createdAt
-                  ? t('progress.summary.startedOn', {
-                      date: formatDate(createdAt, locale),
-                    })
-                  : null
-              }
-            />
           </div>
         </section>
       )}
