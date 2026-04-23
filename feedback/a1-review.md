@@ -35,8 +35,9 @@ comptador del reader (p. ex. `A1a-5 · synthesis · 3/4`).
 ### A1a-0 · Benvinguda
 
 - **Contingut:** 
-  - [A1a-0 · how-it-works · 3/4] aquí seria genial un svg animat de les fletxes del teclat o el swipe del dit al mòbil, ens mostraria claríssimament les eines de navegació. Si necessitem algun pas extra per parlar del mode autoplay, de l'efecte typewriter i les 3 coses més rellevants a nivell de settings val la pena aturar-s'hi. És l'onboarding tècnic i ho podem fer molt amable.  — *pendent: SVG animats requereixen sessió dedicada*
-  - [A1a-0 · local-first · 4/4] aquí i en el punt anterior també trobo a faltar alguns svg animats blanc-negre- fons transparent  que il·lustrin això: dades locals, exportació, etc.  — *pendent: agrupat amb l'anterior en una sessió d'SVG animats per A1a-0**
+  - [✓] [A1a-0 · how-it-works · 3/4] aquí seria genial un svg animat de les fletxes del teclat o el swipe del dit al mòbil, ens mostraria claríssimament les eines de navegació.  — *fet: SVG amb 3 glyphs animats (tecla de fletxa pulsant, cursor+ripple, swipe amunt al mòbil). Els 3 camps de navegació en un cop d'ull.*
+  - [✓] [A1a-0 · local-first · 4/4] aquí i en el punt anterior també trobo a faltar alguns svg animats blanc-negre- fons transparent  que il·lustrin això: dades locals, exportació, etc.  — *fet: SVG amb finestra de navegador (chrome + candau pulsant + barres de dades) → fletxa d'exportació animada → icona de fitxer. Tot en `currentColor` per al tema.*
+  - [pendent secundari] A1a-0 en general: el suggeriment d'afegir un pas sobre autoplay, typewriter i 3 settings rellevants com a onboarding tècnic queda anotat com a feina futura.
 - **Tècnic:**
 - **Estructural:**
 
