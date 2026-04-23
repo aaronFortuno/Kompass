@@ -109,25 +109,38 @@ export function SettingRow({
       </div>
     );
   }
+  // Layout de dues files:
+  //   Row 1: [icon] [title] ───── [control]
+  //   Row 2: (indentat amb ml-9)  [description]
+  // Abans era flex-wrap, cosa que a columnes mitjanes feia tres files
+  // (títol / desc / slider). Ara títol i control sempre conviuen a la
+  // mateixa línia; la descripció va a sota alineada amb el títol.
   return (
     <div
       className={[
-        'flex flex-wrap items-start gap-x-4 gap-y-3 py-5 border-b border-reader-rule last:border-b-0',
+        'py-5 border-b border-reader-rule last:border-b-0',
         disabled ? 'opacity-50 pointer-events-none' : '',
       ].join(' ')}
     >
-      <div className="flex-shrink-0 text-reader-ink-2 mt-1">
-        {Icon ? <Icon size={20} aria-hidden="true" /> : null}
-      </div>
-      <div className="flex-1 min-w-[12rem]">
-        <div id={id} className="font-serif text-lg text-reader-ink">
+      <div className="flex items-center gap-4">
+        {Icon ? (
+          <Icon
+            size={20}
+            aria-hidden="true"
+            className="flex-shrink-0 text-reader-ink-2"
+          />
+        ) : null}
+        <div
+          id={id}
+          className="font-serif text-lg text-reader-ink flex-1 min-w-0"
+        >
           {title}
         </div>
-        {description ? (
-          <p className="mt-1 text-sm text-reader-ink-2 font-serif">{description}</p>
-        ) : null}
+        <div className="flex-shrink-0 flex items-center">{children}</div>
       </div>
-      <div className="flex-shrink-0 flex items-center pt-1 ml-auto">{children}</div>
+      {description ? (
+        <p className="mt-1 ml-9 text-sm text-reader-ink-2 font-serif">{description}</p>
+      ) : null}
     </div>
   );
 }
