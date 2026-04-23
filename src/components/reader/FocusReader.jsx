@@ -2351,7 +2351,7 @@ export function FocusReader({ topic }) {
               className="kf-provisional-badge"
               title="Capítol encara no revisat pedagògicament — pot tenir errors o ajustos pendents."
             >
-              provisional
+              prov
             </span>
           )}
         </div>

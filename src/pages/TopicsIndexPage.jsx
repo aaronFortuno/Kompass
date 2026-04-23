@@ -104,7 +104,7 @@ function TopicRow({ topic, progress, t, isFocus, focusRef, revealIndex }) {
             title="Capítol provisional, encara no revisat pedagògicament"
             aria-label="provisional"
           >
-            provisional
+            prov
           </span>
         )}
       </span>
@@ -434,6 +434,18 @@ export function TopicsIndexPage() {
         </div>
         <p className="mt-4 font-serif italic text-lg text-reader-ink-2 max-w-prose">
           {t('topics.intro')}
+        </p>
+        <p className="mt-3 font-serif text-sm text-reader-ink-2 max-w-prose flex items-start gap-2">
+          <span className="topic-provisional-badge flex-shrink-0 mt-0.5" aria-hidden="true">
+            prov
+          </span>
+          <span>
+            Pàgina en <b>construcció i revisió</b>. El temari segueix els
+            programes oficials d'A1, però ara mateix ens trobem fent una
+            revisió pedagògica manual de cada lliçó — les que no porten
+            aquesta etiqueta encara poden contenir errors o ajustaments
+            pendents.
+          </span>
         </p>
       </header>
 
