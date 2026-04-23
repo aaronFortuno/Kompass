@@ -4,7 +4,6 @@ import { Compass } from 'lucide-react';
 import { Header } from '@/components/layout/Header.jsx';
 import { RouteTransition } from '@/components/layout/RouteTransition.jsx';
 import { AboutModal } from '@/components/layout/AboutModal.jsx';
-import { BackgroundMusicPlayer } from '@/components/layout/BackgroundMusicPlayer.jsx';
 import { useT } from '@/i18n';
 import pkg from '../../../package.json';
 
@@ -83,9 +82,6 @@ export function AppShell() {
       </footer>
 
       <AboutModal open={aboutOpen} onClose={() => setAboutOpen(false)} />
-
-      {/* Reproductor de música ambient · §111. Sobreviu a navegació. */}
-      <BackgroundMusicPlayer />
     </div>
   );
 }

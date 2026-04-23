@@ -2,6 +2,7 @@ import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { ThemeProvider } from '@/theme';
 import { I18nProvider } from '@/i18n';
 import { AppShell } from '@/components/layout/AppShell.jsx';
+import { BackgroundMusicPlayer } from '@/components/layout/BackgroundMusicPlayer.jsx';
 import { HomePage } from '@/pages/HomePage.jsx';
 import { PlaceholderPage } from '@/pages/PlaceholderPage.jsx';
 import { TopicsIndexPage } from '@/pages/TopicsIndexPage.jsx';
@@ -14,6 +15,14 @@ export default function App() {
     <I18nProvider>
       <ThemeProvider>
         <HashRouter>
+          {/*
+            BackgroundMusicPlayer muntat a nivell de Router perquè
+            sobrevisqui a qualsevol canvi de ruta — incloses les rutes
+            `/temari/:topicId` que estan fora d'AppShell (la reader
+            ocupa la viewport sencera). Si es muntés dins AppShell,
+            la música s'aturaria en entrar a una lliçó. §111 fix.
+          */}
+          <BackgroundMusicPlayer />
           <Routes>
             {/*
               El FocusReader ocupa la viewport sencera i no vol el shell

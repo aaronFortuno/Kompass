@@ -38,6 +38,11 @@ import musicManifest from '@/audio/music-manifest.json';
 const DUCK_RATIO = 0.3; // Volum durant audio de veu (×volumeTarget)
 const FADE_MS = 400;    // Durada del fade-in/out general
 const DUCK_MS = 180;    // Transició ràpida al baixar/pujar volum
+// Escalat global del volum efectiu vs el valor UI. Les pistes CC0
+// són lluït bastant, per això el 100% d'UI equival només al 50% real
+// de l'element <audio>. Així el slider té un rang de volum còmode
+// (30% UI = 15% real, natural per estudi).
+const VOLUME_SCALE = 0.5;
 
 function pickTrack(preferredId) {
   const tracks = Array.isArray(musicManifest?.tracks) ? musicManifest.tracks : [];
@@ -72,26 +77,29 @@ export function BackgroundMusicPlayer() {
   const settings = useSettings();
   const audioRef = useRef(null);
   const cancelFadeRef = useRef(null);
-  // Volum "target" de fons (configurat per l'usuari). Es baixa durant
-  // àudio de veu però aquest valor es manté perquè sabem a què tornar.
-  const targetVolumeRef = useRef(settings.bgMusicVolume);
+  // Volum "target" de fons: el valor UI escalat per VOLUME_SCALE.
+  // Es baixa durant àudio de veu però aquest valor es manté perquè
+  // sabem a què tornar.
+  const targetVolumeRef = useRef(settings.bgMusicVolume * VOLUME_SCALE);
   // Flag: estem "amagats" per àudio de veu.
   const isDuckedRef = useRef(false);
 
   const track = pickTrack(settings.bgMusicTrack);
 
-  // Mantenim targetVolumeRef sincronitzat amb settings.
+  // Mantenim targetVolumeRef sincronitzat amb settings, aplicant
+  // l'escalat global.
   useEffect(() => {
-    targetVolumeRef.current = settings.bgMusicVolume;
+    const effectiveTarget = settings.bgMusicVolume * VOLUME_SCALE;
+    targetVolumeRef.current = effectiveTarget;
     const audio = audioRef.current;
     if (!audio) return;
     // Si no estem ducked, apliquem el volum target directament (sense
     // fade perquè és una acció explícita de l'usuari al slider).
     if (!isDuckedRef.current) {
-      audio.volume = settings.bgMusicVolume;
+      audio.volume = effectiveTarget;
     } else {
       // Si estem ducked, ajustem el nivell ducked també.
-      audio.volume = settings.bgMusicVolume * DUCK_RATIO;
+      audio.volume = effectiveTarget * DUCK_RATIO;
     }
   }, [settings.bgMusicVolume]);
 

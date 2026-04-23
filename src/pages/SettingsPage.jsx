@@ -14,9 +14,12 @@ import {
   Mic,
   Rabbit,
   Focus,
+  Music2,
+  ListMusic,
 } from 'lucide-react';
 import { useT } from '@/i18n';
 import { useSettingsStore, TEXT_SCALE_VALUES } from '@/store/useSettingsStore';
+import musicManifest from '@/audio/music-manifest.json';
 import {
   SegmentedControl,
   Toggle,
@@ -49,6 +52,9 @@ export function SettingsPage() {
   const audioSpeed = useSettingsStore((s) => s.audioSpeed);
   const audioVoice = useSettingsStore((s) => s.audioVoice);
   const focusMode = useSettingsStore((s) => s.focusMode);
+  const bgMusicEnabled = useSettingsStore((s) => s.bgMusicEnabled);
+  const bgMusicVolume = useSettingsStore((s) => s.bgMusicVolume);
+  const bgMusicTrack = useSettingsStore((s) => s.bgMusicTrack);
 
   const setTheme = useSettingsStore((s) => s.setTheme);
   const setTextScale = useSettingsStore((s) => s.setTextScale);
@@ -62,6 +68,9 @@ export function SettingsPage() {
   const setAudioSpeed = useSettingsStore((s) => s.setAudioSpeed);
   const setAudioVoice = useSettingsStore((s) => s.setAudioVoice);
   const setFocusMode = useSettingsStore((s) => s.setFocusMode);
+  const setBgMusicEnabled = useSettingsStore((s) => s.setBgMusicEnabled);
+  const setBgMusicVolume = useSettingsStore((s) => s.setBgMusicVolume);
+  const setBgMusicTrack = useSettingsStore((s) => s.setBgMusicTrack);
   const reset = useSettingsStore((s) => s.reset);
 
   return (
@@ -333,6 +342,73 @@ export function SettingsPage() {
           </select>
         </SettingRow>
       </section>
+
+      {Array.isArray(musicManifest?.tracks) && musicManifest.tracks.length > 0 ? (
+        <section className="pt-6 border-t border-reader-rule">
+          <SectionHeading>Música ambient</SectionHeading>
+
+          <SettingRow
+            id="setting-bgmusic-enabled"
+            icon={Music2}
+            title="Música de fons"
+            description="Pistes instrumentals CC0 per sessions d'estudi. S'atenua automàticament quan sona un àudio de veu."
+          >
+            <Toggle
+              checked={bgMusicEnabled}
+              onChange={setBgMusicEnabled}
+              label="Música de fons"
+              id="setting-bgmusic-enabled"
+            />
+          </SettingRow>
+
+          {bgMusicEnabled ? (
+            <>
+              <SettingRow
+                id="setting-bgmusic-track"
+                icon={ListMusic}
+                title="Pista"
+                description="Tres moods CC0 per triar segons la sessió."
+              >
+                <select
+                  id="setting-bgmusic-track"
+                  value={bgMusicTrack || musicManifest.tracks[0].id}
+                  onChange={(e) => setBgMusicTrack(e.target.value)}
+                  className="font-mono text-[11px] bg-reader-paper border border-reader-rule text-reader-ink px-3 py-1.5 rounded-sm"
+                >
+                  {musicManifest.tracks.map((tr) => (
+                    <option key={tr.id} value={tr.id}>
+                      {tr.title || tr.id}
+                    </option>
+                  ))}
+                </select>
+              </SettingRow>
+
+              <SettingRow
+                id="setting-bgmusic-volume"
+                icon={Gauge}
+                title="Volum"
+                description="El 100% correspon a un volum mig real — pensat per estudi, no per escoltar música."
+              >
+                <div className="flex items-center gap-3">
+                  <input
+                    type="range"
+                    min={0}
+                    max={1}
+                    step={0.05}
+                    value={bgMusicVolume}
+                    onChange={(e) => setBgMusicVolume(Number(e.target.value))}
+                    aria-labelledby="setting-bgmusic-volume"
+                    className="w-40 accent-reader-ink"
+                  />
+                  <span className="font-mono text-[11px] text-reader-ink-2 w-10 text-right">
+                    {Math.round(bgMusicVolume * 100)}%
+                  </span>
+                </div>
+              </SettingRow>
+            </>
+          ) : null}
+        </section>
+      ) : null}
 
       <section className="pt-6 border-t border-reader-rule">
         <SectionHeading>{t('settings.reset.title')}</SectionHeading>
