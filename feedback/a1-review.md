@@ -166,6 +166,7 @@ format ric.)*
   - *
 - **Polit:**
   - Hem de decidir a les pàgines de parany com [A1a-1 · pitfalls · 3/6] si volem generar i reproduir àudios erronis o no, però fer-ho o mai o sempre. En aquesta lliçó tenim àudios d'exemples incorrectes, però en altres pitfalls no els tenim, pedagògicament no sé què val més la pena.  — *pendent de decisió teva*
+  - **Lightbox d'imatge ampliada** (`TabImageLightbox`): (a) el text del context lateral hauria de ser més gran — ara és petit i costa de llegir un cop obert el modal; (b) si el context porta pills audibles (`!!...!!`) s'haurien de poder clicar per reproduir-los, igual que al beat original. Actualment el text del lightbox passa per `parseInline` però els SpeakableText no actuen com a clicables allà.
 
 ### Temari / Progrés / Home
 
