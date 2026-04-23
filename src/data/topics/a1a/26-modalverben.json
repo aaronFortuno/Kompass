@@ -34,21 +34,21 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### **_müssen_** — necessitat i obligació\n\n**_müssen_** expressa **==necessitat==** o **==obligació==**. Es tradueix per **\"haver de\"** en català, o **\"deber / tener que\"** en castellà.\n\n> **_Ich muss auch nachts arbeiten._** → \"He de treballar també de nits.\"\n> **_Die Texte müssen fertig sein._** → \"Els textos han d'estar llestos.\"\n> **_Du musst das Buch lesen._** → \"Has de llegir el llibre.\"\n\nFins aquí, una correspondència clara: _müssen_ = _haver de_. Però hi ha un parany important que cal veure d'entrada."
+          "body": "#### **_müssen_** — necessitat i obligació\n\n**_müssen_** expressa **==necessitat==** o **==obligació==**. Es tradueix per **\"haver de\"** en català, o **\"deber / tener que\"** en castellà.\n\n> _!!**Ich muss auch nachts arbeiten.**!!_ → \"He de treballar també de nits.\"\n> _!!**Die Texte müssen fertig sein.**!!_ → \"Els textos han d'estar llestos.\"\n> _!!**Du musst das Buch lesen.**!!_ → \"Has de llegir el llibre.\"\n\nFins aquí, una correspondència clara: _müssen_ = _haver de_. Però hi ha un parany important que cal veure d'entrada."
         },
         {
           "type": "explanation",
-          "body": "#### El doble sentit perillós: _müssen_ + _nicht_\n\nEn **afirmativa**, _müssen_ expressa obligació: _Ich muss arbeiten_ (he de treballar). En **negativa**, l'instint del catalanoparlant és traduir _nicht müssen_ per \"no haver de = estar prohibit\". **==Error típic.==**\n\n> **_Ich muss nicht arbeiten._** → **\"No cal que treballi\"** / \"No estic obligat a treballar.\" *(No vol dir \"no he de treballar\" en el sentit de prohibició.)*\n\nÉs a dir: **_nicht müssen_ = absència d'obligació**, no prohibició. Per dir \"no ho puc fer\" en sentit de prohibició, s'usa **_nicht dürfen_** (ho veuràs al pròxim apartat)."
+          "body": "#### El doble sentit perillós: _müssen_ + _nicht_\n\nEn **afirmativa**, _müssen_ expressa obligació: _Ich muss arbeiten_ (he de treballar). En **negativa**, l'instint del catalanoparlant és traduir _nicht müssen_ per \"no haver de = estar prohibit\". **==Error típic.==**\n\n> _!!**Ich muss nicht arbeiten.**!!_ → **\"No cal que treballi\"** / \"No estic obligat a treballar.\" *(No vol dir \"no he de treballar\" en el sentit de prohibició.)*\n\nÉs a dir: **_nicht müssen_ = absència d'obligació**, no prohibició. Per dir \"no ho puc fer\" en sentit de prohibició, s'usa **_nicht dürfen_** (ho veuràs al pròxim apartat)."
         },
         {
           "type": "callout",
           "variant": "warning",
           "title": "Contrast CA/ES/DE",
-          "body": "CA: _No has de fumar aquí_ (ambigu: pot ser \"no cal\" o \"està prohibit\").\nES: _No tienes que fumar aquí_ (no cal) vs. _No puedes fumar aquí_ (prohibit).\nDE: **_Du musst hier nicht rauchen_** = no cal que fumis (ningú t'obliga) / **_Du darfst hier nicht rauchen_** = està prohibit fumar aquí.\n\nAquest contrast és una de les causes principals d'error a l'A1. ==Memoritza-ho bé==: si vols expressar **prohibició**, no fas servir _müssen_; fas servir _dürfen + nicht_."
+          "body": "CA: _No has de fumar aquí_ (ambigu: pot ser \"no cal\" o \"està prohibit\").\nES: _No tienes que fumar aquí_ (no cal) vs. _No puedes fumar aquí_ (prohibit).\nDE: _!!**Du musst hier nicht rauchen.**!!_ = no cal que fumis (ningú t'obliga) / _!!**Du darfst hier nicht rauchen.**!!_ = està prohibit fumar aquí.\n\nAquest contrast és una de les causes principals d'error a l'A1. ==Memoritza-ho bé==: si vols expressar **prohibició**, no fas servir _müssen_; fas servir _dürfen + nicht_."
         },
         {
           "type": "explanation",
-          "body": "#### Exemples\n\n> **_Ich muss zum Arzt gehen._** (He d'anar al metge.)\n> **_Musst du heute arbeiten?_** (Has de treballar avui?)\n> **_Kinder müssen viel schlafen._** (Els nens han de dormir molt.)\n\nFixa't que sempre hi ha un segon verb a l'infinitiu al final (_gehen, arbeiten, schlafen_): la Satzklammer de sempre."
+          "body": "#### Exemples\n\n> _!!**Ich muss zum Arzt gehen.**!!_ (He d'anar al metge.)\n> _!!**Musst du heute arbeiten?**!!_ (Has de treballar avui?)\n> _!!**Kinder müssen viel schlafen.**!!_ (Els nens han de dormir molt.)\n\nFixa't que sempre hi ha un segon verb a l'infinitiu al final (_gehen, arbeiten, schlafen_): la Satzklammer de sempre."
         }
       ]
     },
@@ -57,11 +57,11 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### **_dürfen_** — permís i prohibició\n\n**_dürfen_** és el verb modal del **==permís==**. Es tradueix per **\"poder\"** en català i castellà, però **només en el sentit d'_estar permès_**, no en el sentit de _ser capaç_ (aquest ja saps que és _können_).\n\n> **_Erst danach darf man mit den Lokomotiven fahren._** → \"Només després es pot conduir locomotores.\" *(permís formal)*\n> **_Darf ich das Fenster öffnen?_** → \"Puc obrir la finestra?\" *(demanar permís)*\n> **_Hier darf man parken._** → \"Aquí es pot aparcar.\" *(està permès)*"
+          "body": "#### **_dürfen_** — permís i prohibició\n\n**_dürfen_** és el verb modal del **==permís==**. Es tradueix per **\"poder\"** en català i castellà, però **només en el sentit d'_estar permès_**, no en el sentit de _ser capaç_ (aquest ja saps que és _können_).\n\n> _!!**Erst danach darf man mit den Lokomotiven fahren.**!!_ → \"Només després es pot conduir locomotores.\" *(permís formal)*\n> _!!**Darf ich das Fenster öffnen?**!!_ → \"Puc obrir la finestra?\" *(demanar permís)*\n> _!!**Hier darf man parken.**!!_ → \"Aquí es pot aparcar.\" *(està permès)*"
         },
         {
           "type": "explanation",
-          "body": "#### _dürfen_ + _nicht_ = prohibició\n\nQuan _dürfen_ s'acompanya de **_nicht_** (o d'un quantificador negatiu com _kein_), deixa de significar \"no tenir permís\" i passa a expressar **==prohibició directa==**.\n\n> **_Lokführer dürfen im Dienst keinen Alkohol trinken._** → \"Els maquinistes no poden beure alcohol en servei.\" *(prohibit)*\n> **_Hier darf man nicht rauchen._** → \"Aquí no s'hi pot fumar.\" *(prohibit)*\n> **_Du darfst das nicht machen._** → \"No pots fer això.\" *(prohibit)*"
+          "body": "#### _dürfen_ + _nicht_ = prohibició\n\nQuan _dürfen_ s'acompanya de **_nicht_** (o d'un quantificador negatiu com _kein_), deixa de significar \"no tenir permís\" i passa a expressar **==prohibició directa==**.\n\n> _!!**Lokführer dürfen im Dienst keinen Alkohol trinken.**!!_ → \"Els maquinistes no poden beure alcohol en servei.\" *(prohibit)*\n> _!!**Hier darf man nicht rauchen.**!!_ → \"Aquí no s'hi pot fumar.\" *(prohibit)*\n> _!!**Du darfst das nicht machen.**!!_ → \"No pots fer això.\" *(prohibit)*"
         },
         {
           "type": "callout",
@@ -71,7 +71,7 @@
         },
         {
           "type": "explanation",
-          "body": "#### _können_ vs. _dürfen_: capacitat vs. permís\n\nUna distinció fina que cal tenir al cap. En català col·loquial, \"puc?\" serveix per demanar permís _i_ per parlar de capacitat. En alemany, s'especialitza:\n\n- **_können_** = tenir la capacitat / la possibilitat (_sé, soc capaç, puc_).\n- **_dürfen_** = tenir el permís (_m'està permès_).\n\n> **_Ich kann schwimmen._** (Sé nedar — capacitat.)\n> **_Ich darf schwimmen._** (Em deixen nedar / està permès — permís.)\n\nA la pràctica, molts nadius fan servir **_können_** de manera informal per demanar permís (_Kann ich das Fenster öffnen?_), i és acceptable. Però la forma **correcta i precisa** segueix sent **_dürfen_** (_Darf ich das Fenster öffnen?_). Si dubtes, tria _dürfen_ per al permís."
+          "body": "#### _können_ vs. _dürfen_: capacitat vs. permís\n\nUna distinció fina que cal tenir al cap. En català col·loquial, \"puc?\" serveix per demanar permís _i_ per parlar de capacitat. En alemany, s'especialitza:\n\n- **_können_** = tenir la capacitat / la possibilitat (_sé, soc capaç, puc_).\n- **_dürfen_** = tenir el permís (_m'està permès_).\n\n> _!!**Ich kann schwimmen.**!!_ (Sé nedar — capacitat.)\n> _!!**Ich darf schwimmen.**!!_ (Em deixen nedar / està permès — permís.)\n\nA la pràctica, molts nadius fan servir **_können_** de manera informal per demanar permís (_!!Kann ich das Fenster öffnen?!!_), i és acceptable. Però la forma **correcta i precisa** segueix sent **_dürfen_** (_!!Darf ich das Fenster öffnen?!!_). Si dubtes, tria _dürfen_ per al permís."
         }
       ]
     },
@@ -80,17 +80,17 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### **_wollen_** — voluntat ferma\n\n**_wollen_** expressa **==voluntat==** o **==intenció decidida==**. És un verb **fort**: marca una decisió clara, no una cortesia.\n\n> **_Viele wollen als Fotograf Karriere machen._** → \"Molts volen fer carrera com a fotògrafs.\"\n> **_Ich will deshalb lieber freiberuflich arbeiten._** → \"Per això prefereixo (= vull) treballar com a autònom.\"\n> **_Was willst du trinken?_** → \"Què vols beure?\" *(directe, entre amics)*"
+          "body": "#### **_wollen_** — voluntat ferma\n\n**_wollen_** expressa **==voluntat==** o **==intenció decidida==**. És un verb **fort**: marca una decisió clara, no una cortesia.\n\n> _!!**Viele wollen als Fotograf Karriere machen.**!!_ → \"Molts volen fer carrera com a fotògrafs.\"\n> _!!**Ich will deshalb lieber freiberuflich arbeiten.**!!_ → \"Per això prefereixo (= vull) treballar com a autònom.\"\n> _!!**Was willst du trinken?**!!_ → \"Què vols beure?\" *(directe, entre amics)*"
         },
         {
           "type": "callout",
           "variant": "warning",
           "title": "_wollen_ vs. _möchte_: fort vs. suau",
-          "body": "Aquí ve una distinció crucial que el catalanoparlant no sempre intueix. **_wollen_ NO és equivalent al nostre \"voler\" neutre**. És més contundent.\n\n**Contrast CA/ES/DE.**\nCA: \"Vull un cafè\" pot sonar natural o una mica brusc segons el to.\nDE: **_Ich will einen Kaffee_** sona ==bastant sec==, fins i tot maleducat en un restaurant. El cambrer pensaria \"aquest està enfadat?\".\nDE: **_Ich möchte einen Kaffee, bitte_** = \"Voldria un cafè, si us plau.\" *(educat, la forma normal per demanar)*"
+          "body": "Aquí ve una distinció crucial que el catalanoparlant no sempre intueix. **_wollen_ NO és equivalent al nostre \"voler\" neutre**. És més contundent.\n\n**Contrast CA/ES/DE.**\nCA: \"Vull un cafè\" pot sonar natural o una mica brusc segons el to.\nDE: _!!**Ich will einen Kaffee.**!!_ sona ==bastant sec==, fins i tot maleducat en un restaurant. El cambrer pensaria \"aquest està enfadat?\".\nDE: _!!**Ich möchte einen Kaffee, bitte.**!!_ = \"Voldria un cafè, si us plau.\" *(educat, la forma normal per demanar)*"
         },
         {
           "type": "explanation",
-          "body": "Regla pràctica:\n\n> **_möchte_** = ==desig educat==, cortesia, demanar coses (botigues, restaurants, oficines).\n> **_wollen_** = ==voluntat ferma==, plans decidits, convicció (\"el que jo vull és...\"), infantil (\"però jo vull!\").\n\nExemples que il·lustren la diferència:\n\n> **_Ich möchte Deutsch lernen._** (M'agradaria aprendre alemany — bona intenció, possibilitat.)\n> **_Ich will Deutsch lernen._** (Vull aprendre alemany — decisió ferma, \"m'hi he posat\".)\n>\n> **_Möchtest du ins Kino gehen?_** (T'agradaria anar al cine? — convit educat.)\n> **_Willst du ins Kino gehen?_** (Vols anar al cine? — directe, entre amics propers.)\n\nEntre amics o en família, _wollen_ és perfectament normal. En contextos formals o amb desconeguts, **per defecte usa _möchte_**."
+          "body": "Regla pràctica:\n\n> **_möchte_** = ==desig educat==, cortesia, demanar coses (botigues, restaurants, oficines).\n> **_wollen_** = ==voluntat ferma==, plans decidits, convicció (\"el que jo vull és...\"), infantil (\"però jo vull!\").\n\nExemples que il·lustren la diferència:\n\n> _!!**Ich möchte Deutsch lernen.**!!_ (M'agradaria aprendre alemany — bona intenció, possibilitat.)\n> _!!**Ich will Deutsch lernen.**!!_ (Vull aprendre alemany — decisió ferma, \"m'hi he posat\".)\n>\n> _!!**Möchtest du ins Kino gehen?**!!_ (T'agradaria anar al cine? — convit educat.)\n> _!!**Willst du ins Kino gehen?**!!_ (Vols anar al cine? — directe, entre amics propers.)\n\nEntre amics o en família, _wollen_ és perfectament normal. En contextos formals o amb desconeguts, **per defecte usa _möchte_**."
         }
       ]
     },
@@ -103,7 +103,7 @@
         },
         {
           "type": "explanation",
-          "body": "#### 1. Instrucció o encàrrec extern\n\nAlgú (un metge, el cap, la mare, la llei) diu què has de fer:\n\n> **_Du sollst mehr Wasser trinken._** → \"Has de beure més aigua.\" *(m'ho ha dit el metge)*\n> **_Ich soll um 9 im Büro sein._** → \"He de ser a l'oficina a les 9.\" *(ho ha dit el cap)*\n\nLa diferència amb _müssen_ és de matís: _müssen_ és una necessitat interna o objectiva (\"és imprescindible\"); _sollen_ remet a **una tercera persona** que ho diu."
+          "body": "#### 1. Instrucció o encàrrec extern\n\nAlgú (un metge, el cap, la mare, la llei) diu què has de fer:\n\n> _!!**Du sollst mehr Wasser trinken.**!!_ → \"Has de beure més aigua.\" *(m'ho ha dit el metge)*\n> _!!**Ich soll um 9 im Büro sein.**!!_ → \"He de ser a l'oficina a les 9.\" *(ho ha dit el cap)*\n\nLa diferència amb _müssen_ és de matís: _müssen_ és una necessitat interna o objectiva (\"és imprescindible\"); _sollen_ remet a **una tercera persona** que ho diu."
         },
         {
           "type": "callout",
@@ -113,7 +113,7 @@
         },
         {
           "type": "explanation",
-          "body": "#### 3. Fer propostes (interrogativa total)\n\nAquesta és **la funció estrella de _sollen_ a l'A1**. En una pregunta de sí/no, _sollen_ significa **\"Vols que...?\"** o **\"Et sembla bé que...?\"**.\n\n> **_Soll ich dich abholen?_** → \"Vols que vingui a buscar-te?\"\n> **_Soll ich dir auch eine Karte besorgen?_** → \"Vols que et compri també una entrada?\"\n> **_Sollen wir einen Kaffee trinken?_** → \"Què et sembla si prenem un cafè?\""
+          "body": "#### 3. Fer propostes (interrogativa total)\n\nAquesta és **la funció estrella de _sollen_ a l'A1**. En una pregunta de sí/no, _sollen_ significa **\"Vols que...?\"** o **\"Et sembla bé que...?\"**.\n\n> _!!**Soll ich dich abholen?**!!_ → \"Vols que vingui a buscar-te?\"\n> _!!**Soll ich dir auch eine Karte besorgen?**!!_ → \"Vols que et compri també una entrada?\"\n> _!!**Sollen wir einen Kaffee trinken?**!!_ → \"Què et sembla si prenem un cafè?\""
         },
         {
           "type": "callout",
@@ -141,12 +141,12 @@
           "title": "Paradigma complet dels cinc modals amb canvi vocàlic (i _sollen_)",
           "headers": ["Persona", "_können_", "_müssen_", "_dürfen_", "_wollen_", "_sollen_"],
           "rows": [
-            ["ich", "k==a==nn", "m==u==ss", "d==a==rf", "w==i==ll", "s==o==ll"],
-            ["du", "k==a==nnst", "m==u==sst", "d==a==rfst", "w==i==llst", "s==o==llst"],
-            ["er/sie/es", "k==a==nn", "m==u==ss", "d==a==rf", "w==i==ll", "s==o==ll"],
-            ["wir", "k==ö==nnen", "m==ü==ssen", "d==ü==rfen", "w==o==llen", "s==o==llen"],
-            ["ihr", "k==ö==nnt", "m==ü==sst", "d==ü==rft", "w==o==llt", "s==o==llt"],
-            ["sie / Sie", "k==ö==nnen", "m==ü==ssen", "d==ü==rfen", "w==o==llen", "s==o==llen"]
+            ["ich", "!!k==a==nn!!", "!!m==u==ss!!", "!!d==a==rf!!", "!!w==i==ll!!", "!!s==o==ll!!"],
+            ["du", "!!k==a==nnst!!", "!!m==u==sst!!", "!!d==a==rfst!!", "!!w==i==llst!!", "!!s==o==llst!!"],
+            ["er/sie/es", "!!k==a==nn!!", "!!m==u==ss!!", "!!d==a==rf!!", "!!w==i==ll!!", "!!s==o==ll!!"],
+            ["wir", "!!k==ö==nnen!!", "!!m==ü==ssen!!", "!!d==ü==rfen!!", "!!w==o==llen!!", "!!s==o==llen!!"],
+            ["ihr", "!!k==ö==nnt!!", "!!m==ü==sst!!", "!!d==ü==rft!!", "!!w==o==llt!!", "!!s==o==llt!!"],
+            ["sie / Sie", "!!k==ö==nnen!!", "!!m==ü==ssen!!", "!!d==ü==rfen!!", "!!w==o==llen!!", "!!s==o==llen!!"]
           ]
         },
         {
@@ -173,23 +173,23 @@
           "title": "Satzklammer amb modals",
           "headers": ["Vorfeld", "Verb 1 (modal)", "Mittelfeld", "Verb 2 (infinitiu)"],
           "rows": [
-            ["Als Lokführer", "**muss**", "man Interesse an der Technik", "**haben**"],
-            ["Erst danach", "**darf**", "man mit den Lokomotiven", "**fahren**"],
-            ["Lokführer", "**dürfen**", "im Dienst keinen Alkohol", "**trinken**"],
-            ["Ich", "**muss**", "auch nachts", "**arbeiten**"],
-            ["Viele", "**wollen**", "als Fotograf Karriere", "**machen**"],
-            ["Danach", "**kann**", "ich immer noch in meiner Heimat", "**arbeiten**"]
+            ["!!Als Lokführer!!", "!!**muss**!!", "!!man Interesse an der Technik!!", "!!**haben**!!"],
+            ["!!Erst danach!!", "!!**darf**!!", "!!man mit den Lokomotiven!!", "!!**fahren**!!"],
+            ["!!Lokführer!!", "!!**dürfen**!!", "!!im Dienst keinen Alkohol!!", "!!**trinken**!!"],
+            ["!!Ich!!", "!!**muss**!!", "!!auch nachts!!", "!!**arbeiten**!!"],
+            ["!!Viele!!", "!!**wollen**!!", "!!als Fotograf Karriere!!", "!!**machen**!!"],
+            ["!!Danach!!", "!!**kann**!!", "!!ich immer noch in meiner Heimat!!", "!!**arbeiten**!!"]
           ]
         },
         {
           "type": "explanation",
-          "body": "#### En preguntes totals (sí/no)\n\nCom a A1a-19: el modal salta a la **posició 1**, l'infinitiu queda al final.\n\n> **_Musst du heute arbeiten?_** (Has de treballar avui?)\n> **_Darf ich hier parken?_** (Puc aparcar aquí?)\n> **_Willst du einen Kaffee trinken?_** (Vols prendre un cafè?)\n> **_Soll ich dich abholen?_** (Vols que vingui a buscar-te?)"
+          "body": "#### En preguntes totals (sí/no)\n\nCom a A1a-19: el modal salta a la **posició 1**, l'infinitiu queda al final.\n\n> _!!**Musst du heute arbeiten?**!!_ (Has de treballar avui?)\n> _!!**Darf ich hier parken?**!!_ (Puc aparcar aquí?)\n> _!!**Willst du einen Kaffee trinken?**!!_ (Vols prendre un cafè?)\n> _!!**Soll ich dich abholen?**!!_ (Vols que vingui a buscar-te?)"
         },
         {
           "type": "callout",
           "variant": "info",
           "title": "Quan es pot ometre l'infinitiu",
-          "body": "En alguns casos, l'infinitiu es pot **sobreentendre i ometre**, especialment amb verbs de moviment (_gehen, fahren_) o amb _haben_ o _essen_ si el context és clar:\n\n> **_Ich muss nach Berlin._** (He d'anar a Berlín.) *(s'omet _fahren_)*\n> **_Ich will einen Kaffee._** (Vull un cafè.) *(s'omet _haben_ o _trinken_)*\n> **_Ich möchte einen Kaffee._** (Voldria un cafè.) *(igual, s'omet _haben_)*\n\nPer a l'A1 pots **sempre escriure l'infinitiu**, que és més segur. Però és bo saber que quan el sentis omès, no és cap error: és una el·lipsi freqüent."
+          "body": "En alguns casos, l'infinitiu es pot **sobreentendre i ometre**, especialment amb verbs de moviment (_gehen, fahren_) o amb _haben_ o _essen_ si el context és clar:\n\n> _!!**Ich muss nach Berlin.**!!_ (He d'anar a Berlín.) *(s'omet _fahren_)*\n> _!!**Ich will einen Kaffee.**!!_ (Vull un cafè.) *(s'omet _haben_ o _trinken_)*\n> _!!**Ich möchte einen Kaffee.**!!_ (Voldria un cafè.) *(igual, s'omet _haben_)*\n\nPer a l'A1 pots **sempre escriure l'infinitiu**, que és més segur. Però és bo saber que quan el sentis omès, no és cap error: és una el·lipsi freqüent."
         }
       ]
     },
@@ -210,23 +210,23 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Paranys habituals\n\n**1. Traduir _nicht müssen_ per \"no poder\" (prohibició).**\nÉs l'error estrella. _Ich muss nicht arbeiten_ ==NO== vol dir \"no puc treballar\"; vol dir \"no cal que treballi\".\n\n> Incorrecte: **_Du musst hier nicht rauchen_** amb la intenció de \"no pots fumar aquí\".\n> Correcte per expressar prohibició: **_Du darfst hier nicht rauchen_**.\n> _Du musst hier nicht rauchen_ només vol dir \"no cal que fumis aquí\", que sona absurd en un rètol.\n\nRegla d'or: **==prohibició = _dürfen + nicht_==**. Sempre."
+          "body": "#### Paranys habituals\n\n**1. Traduir _nicht müssen_ per \"no poder\" (prohibició).**\nÉs l'error estrella. _Ich muss nicht arbeiten_ ==NO== vol dir \"no puc treballar\"; vol dir \"no cal que treballi\".\n\n> Incorrecte: _!!**Du musst hier nicht rauchen.**!!_ amb la intenció de \"no pots fumar aquí\".\n> Correcte per expressar prohibició: _!!**Du darfst hier nicht rauchen.**!!_.\n> _Du musst hier nicht rauchen_ només vol dir \"no cal que fumis aquí\", que sona absurd en un rètol.\n\nRegla d'or: **==prohibició = _dürfen + nicht_==**. Sempre."
         },
         {
           "type": "explanation",
-          "body": "**2. Usar _wollen_ on tocaria _möchte_.**\nUn alemany no demana el cafè amb _Ich will einen Kaffee_ tret que estigui molt enfadat o sigui un nen de cinc anys. La forma educada és _Ich möchte einen Kaffee, bitte_.\n\n> Brusc / maleducat: **_Ich will einen Tee._** (a un cambrer desconegut)\n> Correcte: **_Ich möchte einen Tee, bitte._**\n\nRegla pràctica: si hi ha un _bitte_ a prop, hi ha _möchte_. Si hi ha un _!_ molt fort, potser hi ha _wollen_."
+          "body": "**2. Usar _wollen_ on tocaria _möchte_.**\nUn alemany no demana el cafè amb _Ich will einen Kaffee_ tret que estigui molt enfadat o sigui un nen de cinc anys. La forma educada és _Ich möchte einen Kaffee, bitte_.\n\n> Brusc / maleducat: _!!**Ich will einen Tee.**!!_ (a un cambrer desconegut)\n> Correcte: _!!**Ich möchte einen Tee, bitte.**!!_\n\nRegla pràctica: si hi ha un _bitte_ a prop, hi ha _möchte_. Si hi ha un _!_ molt fort, potser hi ha _wollen_."
         },
         {
           "type": "explanation",
-          "body": "**3. Confondre _können_ (capacitat) i _dürfen_ (permís).**\n_Ich kann schwimmen_ = sé nedar. _Ich darf schwimmen_ = em deixen nedar. No són el mateix.\n\n> Ambigu (col·loquial): **_Kann ich rauchen?_** (normalment s'entén com a permís, però literalment és \"sé fumar?\").\n> Precís: **_Darf ich rauchen?_** (Em permets fumar?)."
+          "body": "**3. Confondre _können_ (capacitat) i _dürfen_ (permís).**\n_Ich kann schwimmen_ = sé nedar. _Ich darf schwimmen_ = em deixen nedar. No són el mateix.\n\n> Ambigu (col·loquial): _!!**Kann ich rauchen?**!!_ (normalment s'entén com a permís, però literalment és \"sé fumar?\").\n> Precís: _!!**Darf ich rauchen?**!!_ (Em permets fumar?)."
         },
         {
           "type": "explanation",
-          "body": "**4. Traduir _Soll ich...?_ per \"Haig de...?\".**\n_Soll ich dich abholen?_ **no** és \"Haig de venir a buscar-te?\" (que seria _Muss ich dich abholen?_, com si fos una obligació pesada). És **\"Vols que vingui a buscar-te?\"**, un oferiment educat.\n\n> _Soll ich dir helfen?_ = Vols que t'ajudi? *(oferiment)*\n> _Muss ich dir helfen?_ = Haig d'ajudar-te? *(obligació: no em ve de gust, però cal?)*\n\nSón preguntes molt diferents socialment. No les confonguis."
+          "body": "**4. Traduir _Soll ich...?_ per \"Haig de...?\".**\n_Soll ich dich abholen?_ **no** és \"Haig de venir a buscar-te?\" (que seria _Muss ich dich abholen?_, com si fos una obligació pesada). És **\"Vols que vingui a buscar-te?\"**, un oferiment educat.\n\n> _!!Soll ich dir helfen?!!_ = Vols que t'ajudi? *(oferiment)*\n> _!!Muss ich dir helfen?!!_ = Haig d'ajudar-te? *(obligació: no em ve de gust, però cal?)*\n\nSón preguntes molt diferents socialment. No les confonguis."
         },
         {
           "type": "explanation",
-          "body": "**5. Oblidar la Satzklammer.**\nCalcar el català \"he de treballar a les nits\" posant l'infinitiu al mig: _Ich muss arbeiten nachts_. ==No==. L'infinitiu va al final: _Ich muss nachts arbeiten_.\n\n> Incorrecte: **_Ich will machen eine Reise._**\n> Correcte: **_Ich will eine Reise machen._**\n\n**6. Posar terminació al singular dels modals.**\nLa temptació de \"regularitzar-los\" és forta: _ich musse, er willt, ich darfe_. ==No existeixen==. Singular dels modals = sense -e a _ich_, sense -t a _er/sie/es_. Iguals.\n\n> Incorrecte: **_Ich musse_, _er willt_, _ich solle_**.\n> Correcte: **_Ich muss, er will, ich soll_**.\n\n**7. Afegir vocal ü/ö als verbs que no canvien.**\n_sollen_ no té canvi vocàlic: _ich soll_ (amb _o_, no _ö_). Tampoc l'imperatiu infantil afegeix -ö a _wollen_: _ich will_ sempre.\n\n> Incorrecte: **_Ich söll, ich wöll_**.\n> Correcte: **_Ich soll, ich will_**."
+          "body": "**5. Oblidar la Satzklammer.**\nCalcar el català \"he de treballar a les nits\" posant l'infinitiu al mig: _Ich muss arbeiten nachts_. ==No==. L'infinitiu va al final: _Ich muss nachts arbeiten_.\n\n> Incorrecte: **_Ich will machen eine Reise._**\n> Correcte: _!!**Ich will eine Reise machen.**!!_\n\n**6. Posar terminació al singular dels modals.**\nLa temptació de \"regularitzar-los\" és forta: _ich musse, er willt, ich darfe_. ==No existeixen==. Singular dels modals = sense -e a _ich_, sense -t a _er/sie/es_. Iguals.\n\n> Incorrecte: **_Ich musse_, _er willt_, _ich solle_**.\n> Correcte: _!!**Ich muss, er will, ich soll.**!!_\n\n**7. Afegir vocal ü/ö als verbs que no canvien.**\n_sollen_ no té canvi vocàlic: _ich soll_ (amb _o_, no _ö_). Tampoc l'imperatiu infantil afegeix -ö a _wollen_: _ich will_ sempre.\n\n> Incorrecte: **_Ich söll, ich wöll_**.\n> Correcte: _!!**Ich soll, ich will.**!!_"
         },
         {
           "type": "callout",
@@ -278,12 +278,12 @@
           "title": "26.1 Els sis modals en un cop d'ull",
           "headers": ["Modal", "Significat nuclear", "Traducció aproximada", "Exemple"],
           "rows": [
-            ["**_können_**", "capacitat, possibilitat", "poder, saber", "_Ich kann schwimmen._"],
-            ["**_müssen_**", "necessitat, obligació", "haver de", "_Ich muss arbeiten._"],
-            ["**_dürfen_**", "permís; _+nicht_ = prohibició", "poder (permís)", "_Darf ich rauchen?_ / _Man darf nicht rauchen._"],
-            ["**_wollen_**", "voluntat ferma", "voler (fort, directe)", "_Ich will Arzt werden._"],
-            ["**_sollen_**", "instrucció externa; en preguntes = proposta", "haver de (segons algú) / \"vols que...?\"", "_Du sollst mehr schlafen._ / _Soll ich dich abholen?_"],
-            ["**_mögen / möchte_**", "gust estable / desig educat", "agradar / voldria", "_Ich mag Kaffee._ / _Ich möchte einen Kaffee._"]
+            ["**_können_**", "capacitat, possibilitat", "poder, saber", "_!!Ich kann schwimmen.!!_"],
+            ["**_müssen_**", "necessitat, obligació", "haver de", "_!!Ich muss arbeiten.!!_"],
+            ["**_dürfen_**", "permís; _+nicht_ = prohibició", "poder (permís)", "_!!Darf ich rauchen?!!_ / _!!Man darf nicht rauchen.!!_"],
+            ["**_wollen_**", "voluntat ferma", "voler (fort, directe)", "_!!Ich will Arzt werden.!!_"],
+            ["**_sollen_**", "instrucció externa; en preguntes = proposta", "haver de (segons algú) / \"vols que...?\"", "_!!Du sollst mehr schlafen.!!_ / _!!Soll ich dich abholen?!!_"],
+            ["**_mögen / möchte_**", "gust estable / desig educat", "agradar / voldria", "_!!Ich mag Kaffee.!!_ / _!!Ich möchte einen Kaffee.!!_"]
           ]
         },
         {
