@@ -14,13 +14,13 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "Quan aprens un substantiu nou en alemany, no en tens prou amb saber-ne el gènere (_der, die, das_): també has de saber com es fa el **plural**. I aquí ve una sorpresa per a qui ve del català o del castellà: en alemany **no hi ha una regla única** per fer el plural. Hi ha **sis terminacions possibles** i, per a molts substantius, l'única manera segura de saber quina els toca és memoritzar-ho amb la paraula.\n\nEn català i en castellà el plural és quasi sempre una qüestió de posar una **-s** al final (_casa → cases_, _casa → casas_), amb algunes variants (_llapis → llapis_, _pez → peces_). Senzill. En alemany, en canvi, el plural pot aparèixer com:\n\n- sense canvi (_der Koffer → die Koffer_),\n- afegint **-e** (_der Tisch → die Tische_),\n- afegint **-er** (_das Kind → die Kinder_),\n- afegint **-(e)n** (_die Lampe → die Lampen_),\n- afegint **-s** (_das Hotel → die Hotels_),\n- i a més amb **==Umlaut==** (dièresi: _a → ä_, _o → ö_, _u → ü_) sobre la vocal de l'arrel.\n\n==En plural, l'article determinat sempre és **die**, sigui quin sigui el gènere del singular.== És l'única bona notícia gratuïta d'aquesta lliçó.\n\nEn aquesta lliçó veurem les **6 terminacions** del plural, quan aplica cadascuna i quina pista et dóna el singular."
+          "body": "Quan aprens un substantiu nou en alemany, no en tens prou amb saber-ne el gènere (_der, die, das_): també has de saber com es fa el **plural**. I aquí ve una sorpresa per a qui ve del català o del castellà: en alemany **no hi ha una regla única** per fer el plural. Hi ha **sis terminacions possibles** i, per a molts substantius, l'única manera segura de saber quina els toca és memoritzar-ho amb la paraula.\n\nEn català i en castellà el plural és quasi sempre una qüestió de posar una **-s** al final (_casa → cases_, _casa → casas_), amb algunes variants (_llapis → llapis_, _pez → peces_). Senzill. En alemany, en canvi, el plural pot aparèixer com:\n\n- sense canvi (_!!der Koffer!! → !!die Koffer!!_),\n- afegint **-e** (_!!der Tisch!! → !!die Tische!!_),\n- afegint **-er** (_!!das Kind!! → !!die Kinder!!_),\n- afegint **-(e)n** (_!!die Lampe!! → !!die Lampen!!_),\n- afegint **-s** (_!!das Hotel!! → !!die Hotels!!_),\n- i a més amb **==Umlaut==** (dièresi: _a → ä_, _o → ö_, _u → ü_) sobre la vocal de l'arrel.\n\n==En plural, l'article determinat sempre és **die**, sigui quin sigui el gènere del singular.== És l'única bona notícia gratuïta d'aquesta lliçó.\n\nEn aquesta lliçó veurem les **6 terminacions** del plural, quan aplica cadascuna i quina pista et dóna el singular."
         },
         {
           "type": "callout",
           "variant": "info",
           "title": "Terme clau: Umlaut",
-          "body": "Són els dos puntets sobre una vocal (_ä, ö, ü_). En alemany canvien el so de la vocal i, en el plural, a vegades **apareixen de cop** encara que al singular no hi fossin: _die Mutter → die **Mü**tter_, _der Apfel → die **Ä**pfel_."
+          "body": "Són els dos puntets sobre una vocal (_!!ä!!, !!ö!!, !!ü!!_). En alemany canvien el so de la vocal i, en el plural, a vegades **apareixen de cop** encara que al singular no hi fossin: _!!die Mutter!! → !!die **Mü**tter!!_, _!!der Apfel!! → !!die **Ä**pfel!!_."
         },
         {
           "type": "callout",
@@ -35,7 +35,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Les 6 terminacions del plural\n\nL'alemany té **sis patrons** de plural. Els podem ordenar segons en què acaba la paraula en singular, perquè això dóna pistes (no garanties) sobre quin plural li tocarà.\n\n**① Singular en -e → plural en -n**\n\nSi la paraula acaba en **-e** al singular, el plural afegeix una **-n** al final.\n\n> die Lamp**e** → die Lamp**en**\n> die Tass**e** → die Tass**en** (la tassa)\n> die Blum**e** → die Blum**en** (la flor)"
+          "body": "#### Les 6 terminacions del plural\n\nL'alemany té **sis patrons** de plural. Els podem ordenar segons en què acaba la paraula en singular, perquè això dóna pistes (no garanties) sobre quin plural li tocarà.\n\n**① Singular en -e → plural en -n**\n\nSi la paraula acaba en **-e** al singular, el plural afegeix una **-n** al final.\n\n> !!die Lamp**e**!! → !!die Lamp**en**!!\n> !!die Tass**e**!! → !!die Tass**en**!! (la tassa)\n> !!die Blum**e**!! → !!die Blum**en**!! (la flor)"
         },
         {
           "type": "callout",
@@ -45,17 +45,17 @@
         },
         {
           "type": "explanation",
-          "body": "**② Singular en -er, -el, -en → sense terminació (a vegades amb Umlaut)**\n\nSi la paraula acaba en **-er**, **-el** o **-en** al singular, el plural **no afegeix res**. La forma singular i plural sonen igual; només canvia l'article (_der/das → die_). A vegades, però, la vocal de l'arrel agafa **Umlaut**.\n\n> der Koffer → die Koffer (la maleta, sense canvi)\n> der Onkel → die Onkel (l'oncle, sense canvi)\n> das Zeichen → die Zeichen (el signe, sense canvi)\n> die Mutter → die M**ü**tter (amb Umlaut: u → ü)\n> der Apfel → die **Ä**pfel (amb Umlaut: a → ä)\n> der Boden → die B**ö**den (el terra, amb Umlaut: o → ö)"
+          "body": "**② Singular en -er, -el, -en → sense terminació (a vegades amb Umlaut)**\n\nSi la paraula acaba en **-er**, **-el** o **-en** al singular, el plural **no afegeix res**. La forma singular i plural sonen igual; només canvia l'article (_der/das → die_). A vegades, però, la vocal de l'arrel agafa **Umlaut**.\n\n> !!der Koffer!! → !!die Koffer!! (la maleta, sense canvi)\n> !!der Onkel!! → !!die Onkel!! (l'oncle, sense canvi)\n> !!das Zeichen!! → !!die Zeichen!! (el signe, sense canvi)\n> !!die Mutter!! → !!die M**ü**tter!! (amb Umlaut: u → ü)\n> !!der Apfel!! → !!die **Ä**pfel!! (amb Umlaut: a → ä)\n> !!der Boden!! → !!die B**ö**den!! (el terra, amb Umlaut: o → ö)"
         },
         {
           "type": "callout",
           "variant": "warning",
           "title": "Excepció important",
-          "body": "Els substantius **femenins** acabats en **-el** fan el plural amb **-n**, no sense terminació: _die Regel → die Regel**n**_ (la regla), _die Gabel → die Gabel**n**_ (la forquilla). És a dir: si és femení i acaba en -el, va al patró ①."
+          "body": "Els substantius **femenins** acabats en **-el** fan el plural amb **-n**, no sense terminació: _!!die Regel!! → !!die Regel**n**!!_ (la regla), _!!die Gabel!! → !!die Gabel**n**!!_ (la forquilla). És a dir: si és femení i acaba en -el, va al patró ①."
         },
         {
           "type": "explanation",
-          "body": "**③ Consonant → plural en -e (a vegades amb Umlaut)**\n\nSi la paraula acaba en **consonant** al singular, el plural més freqüent és afegir **-e**. A vegades, a més, la vocal de l'arrel agafa Umlaut.\n\n> der Tisch → die Tisch**e** (la taula, sense Umlaut)\n> der Sohn → die S**ö**hn**e** (el fill, amb Umlaut: o → ö)\n> der Hund → die Hund**e** (el gos, sense Umlaut)\n> die Hand → die H**ä**nd**e** (la mà, amb Umlaut)\n\n**④ Consonant → plural en -er (gairebé sempre amb Umlaut)**\n\nAlguns substantius que acaben en consonant fan el plural amb **-er**, i la vocal de l'arrel agafa Umlaut si la té (_a, o, u, au_).\n\n> das Kind → die Kind**er** (el nen, sense Umlaut perquè _i_ no es pot umlautar)\n> das Wort → die W**ö**rt**er** (la paraula)\n> das Buch → die B**ü**ch**er** (el llibre)\n> das Haus → die H**äu**s**er** (la casa: _au_ → _äu_)"
+          "body": "**③ Consonant → plural en -e (a vegades amb Umlaut)**\n\nSi la paraula acaba en **consonant** al singular, el plural més freqüent és afegir **-e**. A vegades, a més, la vocal de l'arrel agafa Umlaut.\n\n> !!der Tisch!! → !!die Tisch**e**!! (la taula, sense Umlaut)\n> !!der Sohn!! → !!die S**ö**hn**e**!! (el fill, amb Umlaut: o → ö)\n> !!der Hund!! → !!die Hund**e**!! (el gos, sense Umlaut)\n> !!die Hand!! → !!die H**ä**nd**e**!! (la mà, amb Umlaut)\n\n**④ Consonant → plural en -er (gairebé sempre amb Umlaut)**\n\nAlguns substantius que acaben en consonant fan el plural amb **-er**, i la vocal de l'arrel agafa Umlaut si la té (_a, o, u, au_).\n\n> !!das Kind!! → !!die Kind**er**!! (el nen, sense Umlaut perquè _i_ no es pot umlautar)\n> !!das Wort!! → !!die W**ö**rt**er**!! (la paraula)\n> !!das Buch!! → !!die B**ü**ch**er**!! (el llibre)\n> !!das Haus!! → !!die H**äu**s**er**!! (la casa: _au_ → _äu_)"
         },
         {
           "type": "callout",
@@ -65,7 +65,7 @@
         },
         {
           "type": "explanation",
-          "body": "**⑤ Consonant → plural en -en**\n\nUn altre grup de substantius acabats en consonant fan el plural amb **-en** (sense Umlaut).\n\n> die Uhr → die Uhr**en** (el rellotge)\n> die Frau → die Frau**en** (la dona)\n> die Zeitung → die Zeitung**en** (el diari)"
+          "body": "**⑤ Consonant → plural en -en**\n\nUn altre grup de substantius acabats en consonant fan el plural amb **-en** (sense Umlaut).\n\n> !!die Uhr!! → !!die Uhr**en**!! (el rellotge)\n> !!die Frau!! → !!die Frau**en**!! (la dona)\n> !!die Zeitung!! → !!die Zeitung**en**!! (el diari)"
         },
         {
           "type": "callout",
@@ -75,7 +75,7 @@
         },
         {
           "type": "explanation",
-          "body": "**⑥ Paraules estrangeres (_Fremdwörter_) → plural en -s**\n\nLes paraules que l'alemany ha manllevat d'altres llengües —sovint anglès, francès, italià— fan el plural amb **-s**, com en català o castellà.\n\n> das Hotel → die Hotel**s**\n> das Taxi → die Taxi**s**\n> die Kamera → die Kamera**s**\n> das Auto → die Auto**s**\n> das Café → die Café**s**"
+          "body": "**⑥ Paraules estrangeres (_Fremdwörter_) → plural en -s**\n\nLes paraules que l'alemany ha manllevat d'altres llengües —sovint anglès, francès, italià— fan el plural amb **-s**, com en català o castellà.\n\n> !!das Hotel!! → !!die Hotel**s**!!\n> !!das Taxi!! → !!die Taxi**s**!!\n> !!die Kamera!! → !!die Kamera**s**!!\n> !!das Auto!! → !!die Auto**s**!!\n> !!das Café!! → !!die Café**s**!!"
         },
         {
           "type": "callout",
@@ -96,7 +96,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Mirada específica a l'Umlaut en plural\n\nL'_Umlaut_ és una de les coses que més desconcerta inicialment: una paraula que al singular no tenia puntets, al plural apareix amb puntets. Per què?\n\nL'_Umlaut_ en el plural és una **herència històrica** de l'alemany antic. Avui ja no segueix regles predictibles al 100%: alguns substantius l'agafen i altres que s'hi assemblen no. **S'ha de memoritzar cas a cas.**\n\nLes vocals que es poden umlautar són:\n\n- **a → ä** (_der Apfel → die Äpfel_)\n- **o → ö** (_der Sohn → die Söhne_)\n- **u → ü** (_die Mutter → die Mütter_)\n- **au → äu** (_das Haus → die Häuser_)\n\nLes altres vocals (_e, i_) no tenen forma umlautada, o sigui que si la paraula té _e_ o _i_ a l'arrel, ja pots descartar l'Umlaut."
+          "body": "#### Mirada específica a l'Umlaut en plural\n\nL'_Umlaut_ és una de les coses que més desconcerta inicialment: una paraula que al singular no tenia puntets, al plural apareix amb puntets. Per què?\n\nL'_Umlaut_ en el plural és una **herència històrica** de l'alemany antic. Avui ja no segueix regles predictibles al 100%: alguns substantius l'agafen i altres que s'hi assemblen no. **S'ha de memoritzar cas a cas.**\n\nLes vocals que es poden umlautar són:\n\n- **a → ä** (_!!der Apfel!! → !!die Äpfel!!_)\n- **o → ö** (_!!der Sohn!! → !!die Söhne!!_)\n- **u → ü** (_!!die Mutter!! → !!die Mütter!!_)\n- **au → äu** (_!!das Haus!! → !!die Häuser!!_)\n\nLes altres vocals (_e, i_) no tenen forma umlautada, o sigui que si la paraula té _e_ o _i_ a l'arrel, ja pots descartar l'Umlaut."
         },
         {
           "type": "callout",
@@ -106,7 +106,7 @@
         },
         {
           "type": "explanation",
-          "body": "**Contrast amb català/castellà.** En català i castellà, el plural mai altera la vocal de l'arrel: _casa → cases_, no _*ceses_. En alemany sí: _Mann → **Mä**nner_, _Hand → **Hä**nde_. És una cosa que costa d'interioritzar per a un catalanoparlant. ==Cal entrenar l'orella perquè _Männer_ soni diferent de _Manner_.=="
+          "body": "**Contrast amb català/castellà.** En català i castellà, el plural mai altera la vocal de l'arrel: _casa → cases_, no _*ceses_. En alemany sí: _!!Mann!! → !!**Mä**nner!!_, _!!Hand!! → !!**Hä**nde!!_. És una cosa que costa d'interioritzar per a un catalanoparlant. ==Cal entrenar l'orella perquè _!!Männer!!_ soni diferent de _!!Manner!!_.=="
         }
       ]
     },
@@ -121,7 +121,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Paranys freqüents per a catalanoparlants\n\n**1. No tot plural alemany acaba en -s.**\n\nEl reflex catalanoparlant és afegir -s a tot: *_die Tischs_, *_die Lampes_. És **gairebé sempre incorrecte**. La terminació _-s_ en alemany es reserva per a paraules estrangeres modernes. Per a paraules alemanyes de soca-rel, oblida la -s.\n\n**2. L'article plural és sempre _die_, però això no vol dir femení.**\n\n_Die Tische_ no són femenines: _der Tisch_ és masculí. El que passa és que **en plural es neutralitza el gènere** i tots els substantius comparteixen article _die_. No confonguis _die_ singular (femení) amb _die_ plural (qualsevol gènere).\n\n> der Tisch (masc.) → **die** Tische\n> das Buch (neutre) → **die** Bücher\n> die Lampe (fem.) → **die** Lampen\n\n**3. El plural pot ser igual al singular.**\n\nEl patró ② (acabats en -er, -el, -en) sovint no afegeix res. Això vol dir que _der Koffer_ i _die Koffer_ tenen la mateixa forma. ==L'única manera de saber si és singular o plural és l'article (_der_ vs. _die_) o el context de l'oració.== Si veus _die Koffer_, és plural; si veus _der Koffer_, és singular.\n\n**4. L'Umlaut no avisa.**\n\nQuan veus _der Apfel_, res al singular no et diu que el plural serà _die Äpfel_ amb dièresi. Per això és tan important **memoritzar el plural amb cada paraula nova**, no només endevinar-lo.\n\n**5. Al diccionari, el plural s'abrevia.**\n\nQuan consultis un diccionari o llibre de text, el plural es dóna en forma abreujada després del substantiu:\n\n> der Tisch, **-e** → plural _die Tische_\n> die Mutter, **¨** → plural _die Mütter_ (només Umlaut, sense terminació)\n> das Kind, **-er** → plural _die Kinder_\n> das Hotel, **-s** → plural _die Hotels_\n> der Koffer, **-** → plural _die Koffer_ (ratlla = sense canvi)\n\nAprendre a llegir aquesta notació et farà independent amb el diccionari."
+          "body": "#### Paranys freqüents per a catalanoparlants\n\n**1. No tot plural alemany acaba en -s.**\n\nEl reflex catalanoparlant és afegir -s a tot: *_die Tischs_, *_die Lampes_. És **gairebé sempre incorrecte**. La terminació _-s_ en alemany es reserva per a paraules estrangeres modernes. Per a paraules alemanyes de soca-rel, oblida la -s.\n\n**2. L'article plural és sempre _die_, però això no vol dir femení.**\n\n_Die Tische_ no són femenines: _der Tisch_ és masculí. El que passa és que **en plural es neutralitza el gènere** i tots els substantius comparteixen article _die_. No confonguis _die_ singular (femení) amb _die_ plural (qualsevol gènere).\n\n> !!der Tisch!! (masc.) → !!**die** Tische!!\n> !!das Buch!! (neutre) → !!**die** Bücher!!\n> !!die Lampe!! (fem.) → !!**die** Lampen!!\n\n**3. El plural pot ser igual al singular.**\n\nEl patró ② (acabats en -er, -el, -en) sovint no afegeix res. Això vol dir que _der Koffer_ i _die Koffer_ tenen la mateixa forma. ==L'única manera de saber si és singular o plural és l'article (_der_ vs. _die_) o el context de l'oració.== Si veus _die Koffer_, és plural; si veus _der Koffer_, és singular.\n\n**4. L'Umlaut no avisa.**\n\nQuan veus _der Apfel_, res al singular no et diu que el plural serà _die Äpfel_ amb dièresi. Per això és tan important **memoritzar el plural amb cada paraula nova**, no només endevinar-lo.\n\n**5. Al diccionari, el plural s'abrevia.**\n\nQuan consultis un diccionari o llibre de text, el plural es dóna en forma abreujada després del substantiu:\n\n> !!der Tisch!!, **-e** → plural _!!die Tische!!_\n> !!die Mutter!!, **¨** → plural _!!die Mütter!!_ (només Umlaut, sense terminació)\n> !!das Kind!!, **-er** → plural _!!die Kinder!!_\n> !!das Hotel!!, **-s** → plural _!!die Hotels!!_\n> !!der Koffer!!, **-** → plural _!!die Koffer!!_ (ratlla = sense canvi)\n\nAprendre a llegir aquesta notació et farà independent amb el diccionari."
         }
       ]
     },
@@ -155,12 +155,12 @@
           "title": "12.1 Les 6 terminacions del plural",
           "headers": ["Patró", "Terminació singular", "Terminació plural", "Exemple"],
           "rows": [
-            ["①", "-e", "-n", "die Lampe → die Lampe**n**"],
-            ["②", "-er, -el, -en", "sense terminació (± Umlaut)", "der Koffer → die Koffer / die Mutter → die M**ü**tter"],
-            ["③", "consonant", "-e (± Umlaut)", "der Tisch → die Tisch**e** / der Sohn → die S**ö**hn**e**"],
-            ["④", "consonant", "-er (± Umlaut)", "das Kind → die Kind**er** / das Buch → die B**ü**ch**er**"],
-            ["⑤", "consonant", "-en", "die Uhr → die Uhr**en** / die Frau → die Frau**en**"],
-            ["⑥", "Fremdwort", "-s", "das Hotel → die Hotel**s** / das Auto → die Auto**s**"]
+            ["①", "-e", "-n", "!!die Lampe!! → !!die Lampe**n**!!"],
+            ["②", "-er, -el, -en", "sense terminació (± Umlaut)", "!!der Koffer!! → !!die Koffer!! / !!die Mutter!! → !!die M**ü**tter!!"],
+            ["③", "consonant", "-e (± Umlaut)", "!!der Tisch!! → !!die Tisch**e**!! / !!der Sohn!! → !!die S**ö**hn**e**!!"],
+            ["④", "consonant", "-er (± Umlaut)", "!!das Kind!! → !!die Kind**er**!! / !!das Buch!! → !!die B**ü**ch**er**!!"],
+            ["⑤", "consonant", "-en", "!!die Uhr!! → !!die Uhr**en**!! / !!die Frau!! → !!die Frau**en**!!"],
+            ["⑥", "Fremdwort", "-s", "!!das Hotel!! → !!die Hotel**s**!! / !!das Auto!! → !!die Auto**s**!!"]
           ]
         },
         {
@@ -168,11 +168,11 @@
           "title": "12.2 L'Umlaut en plural",
           "headers": ["Vocal singular", "Vocal plural", "Exemple"],
           "rows": [
-            ["a", "ä", "der Apfel → die **Ä**pfel"],
-            ["o", "ö", "der Sohn → die S**ö**hne"],
-            ["u", "ü", "die Mutter → die M**ü**tter"],
-            ["au", "äu", "das Haus → die H**äu**ser"],
-            ["e, i", "(no es pot)", "das Kind → die Kinder (sense Umlaut)"]
+            ["a", "ä", "!!der Apfel!! → !!die **Ä**pfel!!"],
+            ["o", "ö", "!!der Sohn!! → !!die S**ö**hne!!"],
+            ["u", "ü", "!!die Mutter!! → !!die M**ü**tter!!"],
+            ["au", "äu", "!!das Haus!! → !!die H**äu**ser!!"],
+            ["e, i", "(no es pot)", "!!das Kind!! → !!die Kinder!! (sense Umlaut)"]
           ],
           "caption": "Només es poden umlautar a, o, u, au. Si la vocal de l'arrel és e o i, no hi haurà Umlaut."
         }
