@@ -15,7 +15,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "A l'**A1a-17** vas memoritzar dues tríades irregulars emblemàtiques: **gut → besser → am besten** i **gern → lieber → am liebsten**. Allà te les vaig presentar com un **bloc tancat**, un paquet que calia aprendre sencer, i vaig deixar una promesa: \"més endavant veuràs com es formen els comparatius i superlatius **regulars** de qualsevol adjectiu\".\n\nAquest tema és aquesta promesa feta realitat. Anirem a l'altra cara de la moneda: **la formació regular** del comparatiu i superlatiu per a **qualsevol adjectiu** alemany. Són els patrons que aplicaràs a **_schön_**, **_billig_**, **_schnell_**, **_klein_** i centenars més. És la gradació de l'adjectiu sencera, **_die Steigerung des Adjektivs_**.\n\n> _Die Wohnung A ist **schön**. Die Wohnung B ist **schöner**. Die Wohnung C ist **am schönsten**._\n> (El pis A és bonic. El pis B és més bonic. El pis C és el més bonic.)\n\n**La bona notícia:** el patró és **molt regular i molt senzill**. Afegeixes **==-er==** per al comparatiu i **==am ...-(e)sten==** per al superlatiu. Res de formes noves sense arrel: l'adjectiu positiu ja et dóna el 80% de la feina feta.\n\n**La notícia amb asterisc:** un grupet d'adjectius molt freqüents prenen **Umlaut** a les vocals (_alt → älter_) i alguns tenen petites irregularitats ortogràfiques. Són pocs, però cal coneixe'ls perquè apareixen cada dia.\n\nAquest tema **amplia** l'A1a-17, no el substitueix. Les dues tríades irregulars d'allà continuen sent irregulars; aquí aprens el patró que segueixen **tots els altres adjectius**."
+          "body": "A l'**A1a-17** vas memoritzar dues tríades irregulars emblemàtiques: **gut → besser → am besten** i **gern → lieber → am liebsten**. Allà te les vaig presentar com un **bloc tancat**, un paquet que calia aprendre sencer, i vaig deixar una promesa: \"més endavant veuràs com es formen els comparatius i superlatius **regulars** de qualsevol adjectiu\".\n\nAquest tema és aquesta promesa feta realitat. Anirem a l'altra cara de la moneda: **la formació regular** del comparatiu i superlatiu per a **qualsevol adjectiu** alemany. Són els patrons que aplicaràs a **_schön_**, **_billig_**, **_schnell_**, **_klein_** i centenars més. És la gradació de l'adjectiu sencera, **_die Steigerung des Adjektivs_**.\n\n> _!!Die Wohnung A ist **schön**. Die Wohnung B ist **schöner**. Die Wohnung C ist **am schönsten**.!!_\n> (El pis A és bonic. El pis B és més bonic. El pis C és el més bonic.)\n\n**La bona notícia:** el patró és **molt regular i molt senzill**. Afegeixes **==-er==** per al comparatiu i **==am ...-(e)sten==** per al superlatiu. Res de formes noves sense arrel: l'adjectiu positiu ja et dóna el 80% de la feina feta.\n\n**La notícia amb asterisc:** un grupet d'adjectius molt freqüents prenen **Umlaut** a les vocals (_alt → älter_) i alguns tenen petites irregularitats ortogràfiques. Són pocs, però cal coneixe'ls perquè apareixen cada dia.\n\nAquest tema **amplia** l'A1a-17, no el substitueix. Les dues tríades irregulars d'allà continuen sent irregulars; aquí aprens el patró que segueixen **tots els altres adjectius**."
         }
       ]
     },
@@ -31,14 +31,14 @@
           "title": "Patró regular de gradació",
           "headers": ["Grau", "Patró", "Exemple _schön_"],
           "rows": [
-            ["Positiu", "adjectiu tal com és", "**schön**"],
-            ["Comparatiu", "adjectiu + **==-er==**", "**schöner**"],
-            ["Superlatiu", "**==am==** + adjectiu + **==-sten==**", "**am schönsten**"]
+            ["Positiu", "adjectiu tal com és", "!!**schön**!!"],
+            ["Comparatiu", "adjectiu + **==-er==**", "!!**schöner**!!"],
+            ["Superlatiu", "**==am==** + adjectiu + **==-sten==**", "!!**am schönsten**!!"]
           ]
         },
         {
           "type": "explanation",
-          "body": "**El comparatiu.** Agafes l'adjectiu i li enganxes **_-er_** al final. Així de simple:\n\n> _schön_ (bonic) → _**schöner**_ (més bonic)\n> _billig_ (barat) → _**billiger**_ (més barat)\n> _schnell_ (ràpid) → _**schneller**_ (més ràpid)\n> _klein_ (petit) → _**kleiner**_ (més petit)\n\n**El superlatiu.** Aquí hi ha **dues peces fixes** al voltant de l'adjectiu: un **_am_** davant i un **_-sten_** al final.\n\n> _schön_ → _**am schönsten**_ (el més bonic)\n> _billig_ → _**am billigsten**_ (el més barat)\n> _schnell_ → _**am schnellsten**_ (el més ràpid)"
+          "body": "**El comparatiu.** Agafes l'adjectiu i li enganxes **_-er_** al final. Així de simple:\n\n> _!!schön!!_ (bonic) → _!!**schöner**!!_ (més bonic)\n> _!!billig!!_ (barat) → _!!**billiger**!!_ (més barat)\n> _!!schnell!!_ (ràpid) → _!!**schneller**!!_ (més ràpid)\n> _!!klein!!_ (petit) → _!!**kleiner**!!_ (més petit)\n\n**El superlatiu.** Aquí hi ha **dues peces fixes** al voltant de l'adjectiu: un **_am_** davant i un **_-sten_** al final.\n\n> _!!schön!!_ → _!!**am schönsten**!!_ (el més bonic)\n> _!!billig!!_ → _!!**am billigsten**!!_ (el més barat)\n> _!!schnell!!_ → _!!**am schnellsten**!!_ (el més ràpid)"
         },
         {
           "type": "callout",
@@ -60,10 +60,10 @@
           "title": "Superlatius amb _-e-_ eufònica",
           "headers": ["Adjectiu", "Superlatiu", "Motiu"],
           "rows": [
-            ["**alt** (vell)", "**am ältesten**", "acaba en _-t_"],
-            ["**hart** (dur)", "**am härtesten**", "acaba en _-t_"],
-            ["**kalt** (fred)", "**am kältesten**", "acaba en _-t_"],
-            ["**kurz** (curt)", "**am kürzesten**", "acaba en _-z_"]
+            ["!!**alt**!! (vell)", "!!**am ältesten**!!", "acaba en _-t_"],
+            ["!!**hart**!! (dur)", "!!**am härtesten**!!", "acaba en _-t_"],
+            ["!!**kalt**!! (fred)", "!!**am kältesten**!!", "acaba en _-t_"],
+            ["!!**kurz**!! (curt)", "!!**am kürzesten**!!", "acaba en _-z_"]
           ]
         },
         {
@@ -90,14 +90,14 @@
           "title": "Adjectius amb Umlaut",
           "headers": ["Positiu", "Comparatiu", "Superlatiu"],
           "rows": [
-            ["**alt** (vell)", "**==älter==**", "**am ältesten**"],
-            ["**jung** (jove)", "**==jünger==**", "**am jüngsten**"],
-            ["**lang** (llarg)", "**==länger==**", "**am längsten**"],
-            ["**kurz** (curt)", "**==kürzer==**", "**am kürzesten**"],
-            ["**kalt** (fred)", "**==kälter==**", "**am kältesten**"],
-            ["**warm** (calent)", "**==wärmer==**", "**am wärmsten**"],
-            ["**stark** (fort)", "**==stärker==**", "**am stärksten**"],
-            ["**scharf** (picant)", "**==schärfer==**", "**am schärfsten**"]
+            ["!!**alt**!! (vell)", "!!**==älter==**!!", "!!**am ältesten**!!"],
+            ["!!**jung**!! (jove)", "!!**==jünger==**!!", "!!**am jüngsten**!!"],
+            ["!!**lang**!! (llarg)", "!!**==länger==**!!", "!!**am längsten**!!"],
+            ["!!**kurz**!! (curt)", "!!**==kürzer==**!!", "!!**am kürzesten**!!"],
+            ["!!**kalt**!! (fred)", "!!**==kälter==**!!", "!!**am kältesten**!!"],
+            ["!!**warm**!! (calent)", "!!**==wärmer==**!!", "!!**am wärmsten**!!"],
+            ["!!**stark**!! (fort)", "!!**==stärker==**!!", "!!**am stärksten**!!"],
+            ["!!**scharf**!! (picant)", "!!**==schärfer==**!!", "!!**am schärfsten**!!"]
           ]
         },
         {
@@ -126,8 +126,8 @@
           "title": "Pèrdua de _-e-_ interna",
           "headers": ["Positiu", "Comparatiu", "Superlatiu"],
           "rows": [
-            ["**teuer** (car)", "**teurer**", "**am teuersten**"],
-            ["**dunkel** (fosc)", "**dunkler**", "**am dunkelsten**"]
+            ["!!**teuer**!! (car)", "!!**teurer**!!", "!!**am teuersten**!!"],
+            ["!!**dunkel**!! (fosc)", "!!**dunkler**!!", "!!**am dunkelsten**!!"]
           ]
         },
         {
@@ -139,7 +139,7 @@
           "title": "Irregularitat de _hoch_",
           "headers": ["Positiu", "Comparatiu", "Superlatiu"],
           "rows": [
-            ["**hoch** (alt)", "**==höher==** (sense _ch_)", "**am höchsten** (amb _ch_)"]
+            ["!!**hoch**!! (alt)", "!!**==höher==**!! (sense _ch_)", "!!**am höchsten**!! (amb _ch_)"]
           ]
         },
         {
@@ -151,7 +151,7 @@
           "title": "Irregularitat de _groß_",
           "headers": ["Positiu", "Comparatiu", "Superlatiu"],
           "rows": [
-            ["**groß** (gran)", "**größer**", "**==am größten==** (no _am größsten_)"]
+            ["!!**groß**!! (gran)", "!!**größer**!!", "!!**==am größten==**!! (no _am größsten_)"]
           ]
         },
         {
@@ -172,8 +172,8 @@
           "title": "Els dos irregulars totals (A1a-17)",
           "headers": ["Positiu", "Comparatiu", "Superlatiu"],
           "rows": [
-            ["**gut** (bo)", "**besser**", "**am besten**"],
-            ["**gern** (de gust)", "**lieber**", "**am liebsten**"]
+            ["!!**gut**!! (bo)", "!!**besser**!!", "!!**am besten**!!"],
+            ["!!**gern**!! (de gust)", "!!**lieber**!!", "!!**am liebsten**!!"]
           ]
         },
         {
@@ -193,16 +193,16 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### La construcció del comparatiu: **als**\n\nJa ho vas veure a l'A1a-17, però val la pena repetir-ho perquè ara l'aplicaràs a qualsevol adjectiu. Per comparar **dos elements** en alemany, la conjunció és **==als==**, no _wie_.\n\n> _Die Wohnung A ist **schöner als** die Wohnung B._\n> (El pis A és més bonic que el pis B.)\n>\n> _Mein Bruder ist **älter als** ich._\n> (El meu germà és més gran que jo.)\n>\n> _Das Auto ist **schneller als** das Fahrrad._\n> (El cotxe és més ràpid que la bicicleta.)\n\n**Tres estructures fonamentals** que apareixeran constantment:"
+          "body": "#### La construcció del comparatiu: **als**\n\nJa ho vas veure a l'A1a-17, però val la pena repetir-ho perquè ara l'aplicaràs a qualsevol adjectiu. Per comparar **dos elements** en alemany, la conjunció és **==als==**, no _wie_.\n\n> _!!Die Wohnung A ist **schöner als** die Wohnung B.!!_\n> (El pis A és més bonic que el pis B.)\n>\n> _!!Mein Bruder ist **älter als** ich.!!_\n> (El meu germà és més gran que jo.)\n>\n> _!!Das Auto ist **schneller als** das Fahrrad.!!_\n> (El cotxe és més ràpid que la bicicleta.)\n\n**Tres estructures fonamentals** que apareixeran constantment:"
         },
         {
           "type": "table",
           "title": "Les tres estructures comparatives",
           "headers": ["Relació", "Estructura", "Exemple"],
           "rows": [
-            ["**A = B**", "_A ist **so** adj **wie** B_", "_Die Wohnung A ist **so schön wie** die Wohnung B._"],
-            ["**A > B**", "_A ist adj-**er als** B_", "_Die Wohnung A ist **schöner als** die Wohnung B._"],
-            ["**C = el més**", "_C ist **am** adj-**sten**_", "_Die Wohnung C ist **am schönsten**._"]
+            ["**A = B**", "_A ist **so** adj **wie** B_", "_!!Die Wohnung A ist **so schön wie** die Wohnung B.!!_"],
+            ["**A > B**", "_A ist adj-**er als** B_", "_!!Die Wohnung A ist **schöner als** die Wohnung B.!!_"],
+            ["**C = el més**", "_C ist **am** adj-**sten**_", "_!!Die Wohnung C ist **am schönsten**.!!_"]
           ]
         },
         {
@@ -270,9 +270,9 @@
           "title": "31.1 El patró regular",
           "headers": ["Grau", "Patró", "Exemple"],
           "rows": [
-            ["Positiu", "adjectiu", "**schön**"],
-            ["Comparatiu", "adj + **-er**", "**schöner**"],
-            ["Superlatiu", "**am** + adj + **-(e)sten**", "**am schönsten** / **am ältesten**"]
+            ["Positiu", "adjectiu", "!!**schön**!!"],
+            ["Comparatiu", "adj + **-er**", "!!**schöner**!!"],
+            ["Superlatiu", "**am** + adj + **-(e)sten**", "!!**am schönsten**!! / !!**am ältesten**!!"]
           ]
         },
         {
@@ -280,10 +280,10 @@
           "title": "31.2 Les quatre categories d'adjectius",
           "headers": ["Tipus", "Exemple", "Comparatiu", "Superlatiu"],
           "rows": [
-            ["Regular pur", "_schön_", "schöner", "am schönsten"],
-            ["Regular amb Umlaut", "_alt_", "älter", "am ältesten"],
-            ["Semi-irregular", "_hoch_ / _groß_", "höher / größer", "am höchsten / am größten"],
-            ["Totalment irregular (A1a-17)", "_gut_ / _gern_", "besser / lieber", "am besten / am liebsten"]
+            ["Regular pur", "_!!schön!!_", "!!schöner!!", "!!am schönsten!!"],
+            ["Regular amb Umlaut", "_!!alt!!_", "!!älter!!", "!!am ältesten!!"],
+            ["Semi-irregular", "_!!hoch!!_ / _!!groß!!_", "!!höher!! / !!größer!!", "!!am höchsten!! / !!am größten!!"],
+            ["Totalment irregular (A1a-17)", "_!!gut!!_ / _!!gern!!_", "!!besser!! / !!lieber!!", "!!am besten!! / !!am liebsten!!"]
           ]
         },
         {
