@@ -31,14 +31,14 @@
           "title": "Els tres connectors temporals d'A1",
           "headers": ["Alemany", "Català", "Castellà", "Ús típic"],
           "rows": [
-            ["**_zuerst_**", "primer (de tot)", "primero", "obre la seqüència: la primera acció"],
-            ["**_dann_**", "llavors, aleshores", "luego, entonces", "connecta la següent acció"],
-            ["**_danach_**", "després (d'això)", "después", "connecta la següent acció (intercanviable amb _dann_)"]
+            ["!!**_zuerst_**!!", "primer (de tot)", "primero", "obre la seqüència: la primera acció"],
+            ["!!**_dann_**!!", "llavors, aleshores", "luego, entonces", "connecta la següent acció"],
+            ["!!**_danach_**!!", "després (d'això)", "después", "connecta la següent acció (intercanviable amb _dann_)"]
           ]
         },
         {
           "type": "explanation",
-          "body": "==Per a dues accions== fem servir un parell:\n\n- _**Zuerst** — **dann**_\n- _**Zuerst** — **danach**_\n\nTots dos parells són correctes i intercanviables. Exemple:\n\n> _**Am Sonntag habe ich Zeit. Zuerst schlafe ich lange. Dann stehe ich auf und mache Frühstück.**_\n> El diumenge tinc temps. Primer dormo molt. Llavors em llevo i esmorzo.\n\n==Per a tres accions== podem encadenar-los amb l'ordre canònic:\n\n> _**Zuerst** ... **dann** ... **danach** ..._\n\nExemple:\n\n> _**Am Samstag fängt das Wochenende an und Sebastian arbeitet nicht. Zuerst kauft er ein, dann geht er aus, danach schläft er viel.**_\n> El dissabte comença el cap de setmana i en Sebastian no treballa. Primer va a comprar, llavors surt, després dorm molt."
+          "body": "==Per a dues accions== fem servir un parell:\n\n- _**Zuerst** — **dann**_\n- _**Zuerst** — **danach**_\n\nTots dos parells són correctes i intercanviables. Exemple:\n\n> _!!**Am Sonntag habe ich Zeit. Zuerst schlafe ich lange. Dann stehe ich auf und mache Frühstück.**!!_\n> El diumenge tinc temps. Primer dormo molt. Llavors em llevo i esmorzo.\n\n==Per a tres accions== podem encadenar-los amb l'ordre canònic:\n\n> _**Zuerst** ... **dann** ... **danach** ..._\n\nExemple:\n\n> _!!**Am Samstag fängt das Wochenende an und Sebastian arbeitet nicht. Zuerst kauft er ein, dann geht er aus, danach schläft er viel.**!!_\n> El dissabte comença el cap de setmana i en Sebastian no treballa. Primer va a comprar, llavors surt, després dorm molt."
         },
         {
           "type": "callout",
@@ -60,23 +60,23 @@
           "title": "Inversió V2 amb connectors temporals",
           "headers": ["Posició 1", "Posició 2 (verb)", "Resta"],
           "rows": [
-            ["_**Ich**_", "_schlafe_", "_zuerst lange._"],
-            ["_**Zuerst**_", "_schlafe_", "_**ich** lange._"],
-            ["_**Emma**_", "_isst_", "_zu viel Eis._"],
-            ["_**Danach**_", "_geht_", "_**es** Emma schlecht._"],
-            ["_**Ich**_", "_koche_", "_dann._"],
-            ["_**Dann**_", "_koche_", "_**ich**._"]
+            ["_!!**Ich**!!_", "_!!schlafe!!_", "_!!zuerst lange.!!_"],
+            ["_!!**Zuerst**!!_", "_!!schlafe!!_", "_!!**ich** lange.!!_"],
+            ["_!!**Emma**!!_", "_!!isst!!_", "_!!zu viel Eis.!!_"],
+            ["_!!**Danach**!!_", "_!!geht!!_", "_!!**es** Emma schlecht.!!_"],
+            ["_!!**Ich**!!_", "_!!koche!!_", "_!!dann.!!_"],
+            ["_!!**Dann**!!_", "_!!koche!!_", "_!!**ich**.!!_"]
           ]
         },
         {
           "type": "callout",
           "variant": "warning",
           "title": "Regla pràctica",
-          "body": "Quan el connector temporal obre l'oració, **inverteix** verb i subjecte. En català diem _**Després** l'Emma es troba malament_ (subjecte manté posició); en alemany cal dir _**Danach** geht es Emma schlecht_ (verb abans del subjecte)."
+          "body": "Quan el connector temporal obre l'oració, **inverteix** verb i subjecte. En català diem _**Després** l'Emma es troba malament_ (subjecte manté posició); en alemany cal dir _!!**Danach** geht es Emma schlecht.!!_ (verb abans del subjecte)."
         },
         {
           "type": "explanation",
-          "body": "**Els connectors també poden anar dins l'oració**, sense inversió, quan no obren l'oració:\n\n> _Ich komme um sechs nach Hause. Dann koche ich, danach räume ich die Küche auf._\n\nAquí cada oració comença amb _dann_ / _danach_ i aplica la inversió. Però també seria possible:\n\n> _Ich koche dann._ → _dann_ al mig, sense inversió, subjecte en posició 1.\n\nA nivell A1, ==la construcció més habitual i segura és posar el connector al principi i aplicar la inversió==."
+          "body": "**Els connectors també poden anar dins l'oració**, sense inversió, quan no obren l'oració:\n\n> _!!Ich komme um sechs nach Hause. Dann koche ich, danach räume ich die Küche auf.!!_\n\nAquí cada oració comença amb _dann_ / _danach_ i aplica la inversió. Però també seria possible:\n\n> _!!Ich koche dann.!!_ → _dann_ al mig, sense inversió, subjecte en posició 1.\n\nA nivell A1, ==la construcció més habitual i segura és posar el connector al principi i aplicar la inversió==."
         }
       ]
     },
@@ -103,7 +103,7 @@
           "type": "callout",
           "variant": "danger",
           "title": "Parany 1 · Traduir \"després\" com si no passés res",
-          "body": "En català dir _Després l'Emma es troba malament_ no altera l'ordre subjecte-verb. En alemany, si comences amb _Danach_, ==obligatòriament== cal inversió:\n\n- Incorrecte: _~~Danach Emma geht es schlecht.~~_\n- Correcte: _**Danach geht es Emma schlecht.**_"
+          "body": "En català dir _Després l'Emma es troba malament_ no altera l'ordre subjecte-verb. En alemany, si comences amb _Danach_, ==obligatòriament== cal inversió:\n\n- Incorrecte: _~~Danach Emma geht es schlecht.~~_\n- Correcte: _!!**Danach geht es Emma schlecht.**!!_"
         },
         {
           "type": "callout",
@@ -115,13 +115,13 @@
           "type": "callout",
           "variant": "warning",
           "title": "Parany 3 · _zuerst_ vs. _erst_",
-          "body": "- **_zuerst_** = primer (obrir seqüència)\n- **_erst_** = només, no fins... (temporal, però diferent significat)\n\n> _**Zuerst** esse ich._ (Primer menjo.)\n> _Ich esse **erst** um neun._ (No menjo fins a les nou.)\n\nA nivell A1, limita't a _zuerst_ per a seqüències."
+          "body": "- **_zuerst_** = primer (obrir seqüència)\n- **_erst_** = només, no fins... (temporal, però diferent significat)\n\n> _!!**Zuerst** esse ich.!!_ (Primer menjo.)\n> _!!Ich esse **erst** um neun.!!_ (No menjo fins a les nou.)\n\nA nivell A1, limita't a _zuerst_ per a seqüències."
         },
         {
           "type": "callout",
           "variant": "info",
           "title": "Parany 4 · Posició del verb separable",
-          "body": "Si el verb té prefix separable (p. ex. _aufstehen_, _einkaufen_), el prefix va al final i el verb conjugat a la posició 2:\n\n- _**Dann stehe ich auf.**_ (no _~~Dann ich aufstehe.~~_)\n- _**Zuerst kauft er ein.**_ (no _~~Zuerst er einkauft.~~_)\n\nJa ho has vist a A1a-18 (_Satzklammer_)."
+          "body": "Si el verb té prefix separable (p. ex. _aufstehen_, _einkaufen_), el prefix va al final i el verb conjugat a la posició 2:\n\n- _!!**Dann stehe ich auf.**!!_ (no _~~Dann ich aufstehe.~~_)\n- _!!**Zuerst kauft er ein.**!!_ (no _~~Zuerst er einkauft.~~_)\n\nJa ho has vist a A1a-18 (_Satzklammer_)."
         }
       ]
     },
