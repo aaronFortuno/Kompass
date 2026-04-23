@@ -85,52 +85,9 @@ export function SettingsBody() {
 
   return (
     <div className="settings-grid">
-      {/* Columna 1 · Aparença + Lectura */}
+      {/* Columna 1 · només Lectura (prou llarg per omplir el seu espai) */}
       <div className="settings-col">
         <section>
-          <SectionHeading>{t('settings.appearance.title')}</SectionHeading>
-
-          <SettingRow
-            id="setting-theme"
-            icon={theme === 'dark' ? Moon : Sun}
-            title={t('settings.appearance.theme')}
-          >
-            <SegmentedControl
-              name={t('settings.appearance.theme')}
-              value={theme}
-              onChange={setTheme}
-              options={[
-                { value: 'light', label: t('settings.appearance.themeLight') },
-                { value: 'dark', label: t('settings.appearance.themeDark') },
-              ]}
-            />
-          </SettingRow>
-
-          <SettingRow
-            id="setting-textscale"
-            icon={Type}
-            title={t('settings.appearance.textScale')}
-            description={t('settings.appearance.textScaleHint')}
-          >
-            <div className="flex items-center gap-3">
-              <input
-                type="range"
-                min={TEXT_SCALE_VALUES[0]}
-                max={TEXT_SCALE_VALUES[TEXT_SCALE_VALUES.length - 1]}
-                step={0.05}
-                value={textScale}
-                onChange={(e) => setTextScale(Number(e.target.value))}
-                aria-labelledby="setting-textscale"
-                className="w-44 accent-reader-ink"
-              />
-              <span className="font-mono text-[11px] text-reader-ink-2 w-10 text-right">
-                {Math.round(textScale * 100)}%
-              </span>
-            </div>
-          </SettingRow>
-        </section>
-
-        <section className="mt-10">
           <SectionHeading>{t('settings.reading.title')}</SectionHeading>
 
           <SettingRow
@@ -274,9 +231,52 @@ export function SettingsBody() {
         </section>
       </div>
 
-      {/* Columna 2 · Àudio + Música + Reset */}
+      {/* Columna 2 · Aparença → Àudio (+Música integrada) → Reset */}
       <div className="settings-col">
         <section>
+          <SectionHeading>{t('settings.appearance.title')}</SectionHeading>
+
+          <SettingRow
+            id="setting-theme"
+            icon={theme === 'dark' ? Moon : Sun}
+            title={t('settings.appearance.theme')}
+          >
+            <SegmentedControl
+              name={t('settings.appearance.theme')}
+              value={theme}
+              onChange={setTheme}
+              options={[
+                { value: 'light', label: t('settings.appearance.themeLight') },
+                { value: 'dark', label: t('settings.appearance.themeDark') },
+              ]}
+            />
+          </SettingRow>
+
+          <SettingRow
+            id="setting-textscale"
+            icon={Type}
+            title={t('settings.appearance.textScale')}
+            description={t('settings.appearance.textScaleHint')}
+          >
+            <div className="flex items-center gap-3">
+              <input
+                type="range"
+                min={TEXT_SCALE_VALUES[0]}
+                max={TEXT_SCALE_VALUES[TEXT_SCALE_VALUES.length - 1]}
+                step={0.05}
+                value={textScale}
+                onChange={(e) => setTextScale(Number(e.target.value))}
+                aria-labelledby="setting-textscale"
+                className="w-44 accent-reader-ink"
+              />
+              <span className="font-mono text-[11px] text-reader-ink-2 w-10 text-right">
+                {Math.round(textScale * 100)}%
+              </span>
+            </div>
+          </SettingRow>
+        </section>
+
+        <section className="mt-10">
           <SectionHeading>Àudio</SectionHeading>
 
           <SettingRow
@@ -333,22 +333,19 @@ export function SettingsBody() {
               <option value="katja" disabled>Katja (aviat)</option>
             </select>
           </SettingRow>
-        </section>
 
-        {hasMusic ? (
-          <section className="mt-10">
-            <SectionHeading>Música ambient</SectionHeading>
-
+          {hasMusic ? (
+          <>
             <SettingRow
               id="setting-bgmusic-enabled"
               icon={Music2}
-              title="Música de fons"
+              title="Música ambient de fons"
               description="Pistes instrumentals CC0 per a sessions d'estudi. S'atenua quan sona un àudio de veu."
             >
               <Toggle
                 checked={bgMusicEnabled}
                 onChange={setBgMusicEnabled}
-                label="Música de fons"
+                label="Música ambient de fons"
                 id="setting-bgmusic-enabled"
               />
             </SettingRow>
@@ -377,7 +374,7 @@ export function SettingsBody() {
                 <SettingRow
                   id="setting-bgmusic-volume"
                   icon={Gauge}
-                  title="Volum"
+                  title="Volum música"
                   description="El 100% és volum mig real — pensat per a estudi, no primer pla."
                 >
                   <div className="flex items-center gap-3">
@@ -398,8 +395,9 @@ export function SettingsBody() {
                 </SettingRow>
               </>
             ) : null}
-          </section>
+          </>
         ) : null}
+        </section>
 
         <section className="mt-12 pt-8 border-t border-reader-rule">
           <SectionHeading>{t('settings.reset.title')}</SectionHeading>
