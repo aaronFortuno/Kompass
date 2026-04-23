@@ -821,51 +821,53 @@ function ExampleBeat({
 /*
  * TabImage · DATA-MODEL §3.10
  * Miniatura il·lustrativa inline per a tabs i exemples. Render petit
- * amb badge de zoom; al clicar, obre un lightbox amb la variant més
- * gran i el context associat (pron, exemple DE/CA, nota). Sempre raster
- * — les infografies van en un beat Visual propi.
+ * amb badge de zoom visible; al clicar publica un event
+ * `kompass:open-lightbox` amb la imatge i el context. Un singleton
+ * a nivell de FocusReader renderitza un únic modal — així, quan
+ * l'usuari canvia de beat, el reader tanca el modal sense que cada
+ * TabImage mantingui estat propi.
  */
 function TabImage({ image, variant = 'side', context = null }) {
-  const [open, setOpen] = useState(false);
   if (!image) return null;
   const width = image.width || 200;
   const style = { maxWidth: width + 'px' };
+  const triggerOpen = () => {
+    if (typeof window === 'undefined') return;
+    window.dispatchEvent(
+      new CustomEvent('kompass:open-lightbox', { detail: { image, context } }),
+    );
+  };
   return (
-    <>
-      <figure
-        className={`kf-tab-image kf-tab-image--${variant} kf-fade-in`}
-        style={style}
-        role="button"
-        tabIndex={0}
-        onClick={() => setOpen(true)}
-        onKeyDown={(e) => {
-          if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            setOpen(true);
-          }
-        }}
-        aria-label={`Ampliar imatge: ${image.alt}`}
-        title="Clic per ampliar"
-      >
-        <img
-          className="kf-tab-image-img"
-          src={image.src}
-          {...(image.srcset ? { srcSet: image.srcset } : {})}
-          {...(image.sizes ? { sizes: image.sizes } : {})}
-          alt={image.alt}
-          loading="lazy"
-        />
-        <span className="kf-tab-image-zoom" aria-hidden="true">
-          <ZoomIn size={14} strokeWidth={2} />
-        </span>
-        {image.caption ? (
-          <figcaption className="kf-tab-image-caption">{parseInline(image.caption)}</figcaption>
-        ) : null}
-      </figure>
-      {open ? (
-        <TabImageLightbox image={image} context={context} onClose={() => setOpen(false)} />
+    <figure
+      className={`kf-tab-image kf-tab-image--${variant} kf-fade-in`}
+      style={style}
+      role="button"
+      tabIndex={0}
+      onClick={triggerOpen}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          triggerOpen();
+        }
+      }}
+      aria-label={`Ampliar imatge: ${image.alt}`}
+      title="Clic per ampliar"
+    >
+      <img
+        className="kf-tab-image-img"
+        src={image.src}
+        {...(image.srcset ? { srcSet: image.srcset } : {})}
+        {...(image.sizes ? { sizes: image.sizes } : {})}
+        alt={image.alt}
+        loading="lazy"
+      />
+      <span className="kf-tab-image-zoom" aria-hidden="true">
+        <ZoomIn size={14} strokeWidth={2} />
+      </span>
+      {image.caption ? (
+        <figcaption className="kf-tab-image-caption">{parseInline(image.caption)}</figcaption>
       ) : null}
-    </>
+    </figure>
   );
 }
 
@@ -907,6 +909,7 @@ function TabImageLightbox({ image, context, onClose }) {
         role="dialog"
         aria-modal="true"
         aria-label={image.alt}
+        onClick={(e) => e.stopPropagation()}
       >
         <button
           type="button"
@@ -916,37 +919,35 @@ function TabImageLightbox({ image, context, onClose }) {
         >
           <CloseIcon size={18} aria-hidden="true" />
         </button>
-        <figure className="kf-img-lightbox-figure">
+        <div className="kf-img-lightbox-media">
           <img
             className="kf-img-lightbox-img"
             src={image.src}
             {...(image.srcset ? { srcSet: image.srcset } : {})}
-            sizes="90vw"
+            sizes="(min-width: 900px) 60vw, 90vw"
             alt={image.alt}
           />
-          {(context?.title || context?.de || context?.ca || context?.note || image.caption) ? (
-            <figcaption className="kf-img-lightbox-context">
-              {context?.title ? (
-                <h3 className="kf-img-lightbox-title">{parseInline(context.title)}</h3>
-              ) : null}
-              {context?.de ? (
-                <p className="kf-img-lightbox-de">{parseInline(context.de)}</p>
-              ) : null}
-              {context?.ca ? (
-                <p className="kf-img-lightbox-ca">{parseInline(context.ca)}</p>
-              ) : null}
-              {context?.note ? (
-                <p className="kf-img-lightbox-note">{parseInline(context.note)}</p>
-              ) : null}
-              {image.caption ? (
-                <p className="kf-img-lightbox-caption">{parseInline(image.caption)}</p>
-              ) : null}
-              {image.credit ? (
-                <p className="kf-img-lightbox-credit">{image.credit}</p>
-              ) : null}
-            </figcaption>
+        </div>
+        <aside className="kf-img-lightbox-aside">
+          {context?.title ? (
+            <h3 className="kf-img-lightbox-title">{parseInline(context.title)}</h3>
           ) : null}
-        </figure>
+          {context?.de ? (
+            <p className="kf-img-lightbox-de">{parseInline(context.de)}</p>
+          ) : null}
+          {context?.ca ? (
+            <p className="kf-img-lightbox-ca">{parseInline(context.ca)}</p>
+          ) : null}
+          {context?.note ? (
+            <p className="kf-img-lightbox-note">{parseInline(context.note)}</p>
+          ) : null}
+          {image.caption ? (
+            <p className="kf-img-lightbox-caption">{parseInline(image.caption)}</p>
+          ) : null}
+          {image.credit ? (
+            <p className="kf-img-lightbox-credit">{image.credit}</p>
+          ) : null}
+        </aside>
       </div>
     </>
   );
@@ -1592,6 +1593,10 @@ export function FocusReader({ topic }) {
   const [fastMode, setFastMode] = useState(false);
   // Drawer de settings (§79): s'obre amb "c" o el botó ⚙ del peu.
   const [drawerOpen, setDrawerOpen] = useState(false);
+  // Lightbox singleton · §110 polit. Centralitzem l'estat aquí perquè
+  // cada TabImage (n'hi ha tantes com tabs al topic, rendertzades via
+  // BeatStagePeek) no en pugui obrir una còpia pròpia.
+  const [lightboxState, setLightboxState] = useState(null);
   // Splash d'entrada a una nova lliçó (§80). Es mostra la primera vegada
   // que es munta aquest reader per a un topic.id concret; auto-dismiss
   // després de 2 s o bé amb tecla d'acció / clic.
@@ -1689,6 +1694,18 @@ export function FocusReader({ topic }) {
     setSplashVisible(true);
     setReadyToExit(false);
   }, [topic.id]);
+
+  // Lightbox d'imatge · singleton. TabImage dispara `kompass:open-lightbox`
+  // amb { image, context }; aquí registrem l'estat i el tanquem en
+  // canviar de beat perquè no quedin modals "orfes" quan l'usuari navega.
+  useEffect(() => {
+    const onOpen = (e) => setLightboxState(e.detail || null);
+    window.addEventListener('kompass:open-lightbox', onOpen);
+    return () => window.removeEventListener('kompass:open-lightbox', onOpen);
+  }, []);
+  useEffect(() => {
+    setLightboxState(null);
+  }, [stepIdx, beatIdx, topic.id]);
 
   // Si l'usuari surt del darrer beat (amb ←, clic al sidebar…), tornem a
   // deixar readyToExit a fals perquè el seu proper → al final torni a
@@ -2503,6 +2520,14 @@ export function FocusReader({ topic }) {
         open={drawerOpen}
         onClose={() => setDrawerOpen(false)}
       />
+
+      {lightboxState ? (
+        <TabImageLightbox
+          image={lightboxState.image}
+          context={lightboxState.context}
+          onClose={() => setLightboxState(null)}
+        />
+      ) : null}
 
       {splashVisible ? (
         <ReaderEntrySplash

@@ -1283,11 +1283,12 @@
   position: relative;
   cursor: zoom-in;
   border-radius: var(--radius-md);
-  transition: transform var(--duration-fast) var(--ease-standard);
+  transition: transform var(--duration-base) var(--ease-emphasized);
+  transform-origin: center;
 }
 .kf-tab-image:hover,
 .kf-tab-image:focus-visible {
-  transform: scale(1.015);
+  transform: scale(1.04);
   outline: none;
 }
 .kf-tab-image:focus-visible .kf-tab-image-img {
@@ -1300,7 +1301,13 @@
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-soft);
   background: rgb(var(--color-reader-paper));
+  transition: box-shadow var(--duration-base) var(--ease-standard);
 }
+.kf-tab-image:hover .kf-tab-image-img {
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+}
+/* Icona de zoom sempre visible (sense cercle): és la pista persistent
+   de que la imatge és clicable. A hover guanya opacitat. */
 .kf-tab-image-zoom {
   position: absolute;
   top: 8px;
@@ -1308,16 +1315,11 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
-  border-radius: 999px;
-  background: rgb(var(--color-reader-paper) / 0.85);
-  color: rgb(var(--color-reader-ink));
-  backdrop-filter: blur(4px);
-  box-shadow: var(--shadow-soft);
-  opacity: 0;
-  transition: opacity var(--duration-fast) var(--ease-standard);
+  color: rgb(var(--color-reader-paper));
+  opacity: 0.72;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.45));
   pointer-events: none;
+  transition: opacity var(--duration-fast) var(--ease-standard);
 }
 .kf-tab-image:hover .kf-tab-image-zoom,
 .kf-tab-image:focus-visible .kf-tab-image-zoom {
@@ -2696,10 +2698,11 @@ html.dark .k-mark {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.96);
-  width: min(1040px, 96vw);
-  max-height: 94vh;
-  display: flex;
-  flex-direction: column;
+  width: min(1180px, 94vw);
+  max-width: 94vw;
+  max-height: 90vh;
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
   background: rgb(var(--color-reader-paper));
   border: 1px solid rgb(var(--color-reader-rule));
   border-radius: var(--radius-lg);
@@ -2730,7 +2733,7 @@ html.dark .k-mark {
   height: 36px;
   border: none;
   border-radius: 999px;
-  background: rgb(var(--color-reader-paper) / 0.92);
+  background: rgb(var(--color-reader-paper) / 0.94);
   color: rgb(var(--color-reader-ink));
   cursor: pointer;
   box-shadow: var(--shadow-soft);
@@ -2741,62 +2744,64 @@ html.dark .k-mark {
 .kf-img-lightbox-close:hover,
 .kf-img-lightbox-close:focus-visible {
   background: rgb(var(--color-reader-paper));
-  transform: scale(1.06);
+  transform: scale(1.08);
   outline: none;
 }
-.kf-img-lightbox-figure {
-  margin: 0;
-  display: grid;
-  grid-template-rows: minmax(0, 1fr) auto;
-  max-height: 94vh;
+.kf-img-lightbox-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(var(--color-reader-rule) / 0.15);
   overflow: hidden;
+  min-width: 0;
 }
 .kf-img-lightbox-img {
   display: block;
-  width: 100%;
-  height: 100%;
-  max-height: 72vh;
+  max-width: 100%;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
   object-fit: contain;
-  background: rgb(var(--color-reader-rule) / 0.1);
 }
-.kf-img-lightbox-context {
-  padding: 20px 28px 22px;
-  border-top: 1px solid rgb(var(--color-reader-rule));
+.kf-img-lightbox-aside {
+  padding: 26px 24px;
+  border-left: 1px solid rgb(var(--color-reader-rule));
   overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 6px;
+  max-height: 90vh;
 }
 .kf-img-lightbox-title {
   font-family: 'Newsreader', serif;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 500;
-  line-height: 1.1;
-  margin: 0 0 4px;
+  line-height: 1.15;
+  margin: 0 0 6px;
   color: rgb(var(--color-reader-ink));
 }
 .kf-img-lightbox-de {
   font-family: 'Newsreader', serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 1.25;
+  line-height: 1.3;
   margin: 0;
   color: rgb(var(--color-reader-ink));
 }
 .kf-img-lightbox-ca {
   font-family: 'Newsreader', serif;
   font-style: italic;
-  font-size: 16px;
-  line-height: 1.35;
+  font-size: 14px;
+  line-height: 1.4;
   margin: 0;
   color: rgb(var(--color-reader-ink-2));
 }
 .kf-img-lightbox-note,
 .kf-img-lightbox-caption {
   font-family: 'Newsreader', serif;
-  font-size: 14px;
-  line-height: 1.4;
-  margin: 8px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 10px 0 0;
   color: rgb(var(--color-reader-muted));
 }
 .kf-img-lightbox-credit {
@@ -2804,13 +2809,18 @@ html.dark .k-mark {
   font-size: 10px;
   letter-spacing: 0.08em;
   color: rgb(var(--color-reader-muted));
-  margin: 10px 0 0;
+  margin: auto 0 0;
+  padding-top: 16px;
   text-transform: uppercase;
-  opacity: 0.75;
+  opacity: 0.7;
 }
-@media (max-width: 640px) {
+/* Mòbil / viewport estret: apilat vertical (imatge a dalt, text a baix). */
+@media (max-width: 768px) {
   .kf-img-lightbox {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(0, 1fr) auto;
     width: 100vw;
+    max-width: 100vw;
     max-height: 100vh;
     border-radius: 0;
     border: none;
@@ -2822,13 +2832,16 @@ html.dark .k-mark {
     transform: scale(1);
   }
   .kf-img-lightbox-img {
-    max-height: 55vh;
+    max-height: 58vh;
   }
-  .kf-img-lightbox-context {
-    padding: 16px 18px;
+  .kf-img-lightbox-aside {
+    border-left: none;
+    border-top: 1px solid rgb(var(--color-reader-rule));
+    padding: 18px 20px;
+    max-height: 40vh;
   }
-  .kf-img-lightbox-title { font-size: 22px; }
-  .kf-img-lightbox-de { font-size: 17px; }
+  .kf-img-lightbox-title { font-size: 18px; }
+  .kf-img-lightbox-de { font-size: 15px; }
 }
 
 .about-backdrop {
