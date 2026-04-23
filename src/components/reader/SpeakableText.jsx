@@ -108,6 +108,31 @@ export function SpeakableText({
     };
   }, [hash]);
 
+  /*
+   * Stop global (§98 polit): una altra part del reader pot demanar
+   * que tots els àudios en reproducció s'aturin (p. ex. l'usuari ha
+   * premut espai durant un autoplay seqüencial). Escoltem l'event
+   * i pausem el nostre <audio> si n'estem reproduint.
+   * IMPORTANT: aquest useEffect va abans del possible early return
+   * més avall. Si el posem després, un render que retorni aviat
+   * (`cannotPlay = true`) farà saltar el hook → React error #300
+   * "Rendered fewer hooks than expected" quan, per exemple, la probe
+   * MP3 retorna 404 i el navegador no té veu alemanya disponible.
+   */
+  useEffect(() => {
+    const onStop = () => {
+      if (audioRef.current) {
+        try {
+          audioRef.current.pause();
+          audioRef.current.currentTime = 0;
+        } catch { /* noop */ }
+      }
+      setActive(false);
+    };
+    window.addEventListener('kompass:speak-stop', onStop);
+    return () => window.removeEventListener('kompass:speak-stop', onStop);
+  }, []);
+
   // Si no hi ha cap manera de reproduir àudio (ni Web Speech ni possible
   // MP3), renderitzem com a text pla. Tanmateix, com que el hash + fetch
   // és async, per defecte assumim que pot arribar àudio i NO bloquegem
@@ -157,26 +182,6 @@ export function SpeakableText({
       if (canFallbackToSpeech) speak(text);
     }
   };
-
-  /*
-   * Stop global (§98 polit): una altra part del reader pot demanar
-   * que tots els àudios en reproducció s'aturin (p. ex. l'usuari ha
-   * premut espai durant un autoplay seqüencial). Escoltem l'event
-   * i pausem el nostre <audio> si n'estem reproduint.
-   */
-  useEffect(() => {
-    const onStop = () => {
-      if (audioRef.current) {
-        try {
-          audioRef.current.pause();
-          audioRef.current.currentTime = 0;
-        } catch { /* noop */ }
-      }
-      setActive(false);
-    };
-    window.addEventListener('kompass:speak-stop', onStop);
-    return () => window.removeEventListener('kompass:speak-stop', onStop);
-  }, []);
 
   const onActivate = () => {
     setActive(true);
