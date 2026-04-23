@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-V1",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 1,
+  "category": "vocabulary",
+  "title": "Zahlen — els nombres",
+  "shortTitle": "Zahlen",
+  "description": "Nombres cardinals: nucli 0–12, teens, desenes, regla unitats+und+desenes, hundert/tausend/Million, convenció punt/coma i lectura de telèfons.",
+  "axes": ["vocabulari-tematic"],
+  "estimatedMinutes": 14,
+  "steps": [
+    {
+      "id": "intro",
+      "kind": "narrative",
+      "heading": "Els nombres",
+      "lead": "Sense nombres no pots dir una hora, un preu, una data ni un telèfon. Són l'andami del dia a dia.",
+      "body": "Bona notícia: l'alemany forma els nombres amb ==molt poques peces==. Dominar-ne una dotzena et dóna accés a tota la sèrie fins al milió.",
+      "callout": {
+        "variant": "tip",
+        "title": "Què aprendràs",
+        "body": "El nucli de 0 a 12, els \"teens\" (13–19), les desenes, la regla curiosa de les dues xifres (**unitats _und_ desenes**), i com es diuen els nombres grans."
+      }
+    },
+    {
+      "id": "nucleo-0-12",
+      "kind": "narrative",
+      "heading": "El nucli de memòria (0–12)",
+      "lead": "Com en català, els primers dotze nombres són irregulars. Cal saber-los de memòria.",
+      "tabs": [
+        { "pron": "null", "gloss": "zero", "note": "Usat també al futbol (2:0 → zwei zu null).", "example": { "de": "Das Spiel ist null zu null.", "ca": "El partit va zero a zero." } },
+        { "pron": "eins", "gloss": "un", "note": "Compte: davant de substantiu perd la -s i es declina (!!ein Mann!!, !!eine Frau!!).", "example": { "de": "Ich habe eins, du hast zwei.", "ca": "En tinc un, tu en tens dos." } },
+        { "pron": "zwei", "gloss": "dos", "note": "Al telèfon de vegades es diu _zwo_ per distingir-lo de _drei_.", "example": { "de": "Zwei Kaffee, bitte.", "ca": "Dos cafès, si us plau." } },
+        { "pron": "drei", "gloss": "tres", "note": "Pronuncia'l \"drai\". La _ei_ es llegeix sempre \"ai\".", "example": { "de": "Ich habe drei Kinder.", "ca": "Tinc tres fills." } },
+        { "pron": "vier", "gloss": "quatre", "note": "Pronuncia'l \"fiir\". La _v_ en alemany sona com la _f_ catalana.", "example": { "de": "Vier Uhr nachmittags.", "ca": "Les quatre de la tarda." } },
+        { "pron": "fünf", "gloss": "cinc", "note": "La _ü_ es pronuncia com la _u_ francesa: posa llavis de _u_ i digues _i_.", "example": { "de": "Fünf Euro, bitte.", "ca": "Cinc euros, si us plau." } },
+        { "pron": "sechs", "gloss": "sis", "note": "La combinació _chs_ sona \"ks\": \"zeks\".", "example": { "de": "Es ist sechs Uhr.", "ca": "Són les sis." } },
+        { "pron": "sieben", "gloss": "set", "note": "Al telèfon sovint s'evita confondre amb altres números per la seva sonoritat llarga.", "example": { "de": "Ich komme um sieben.", "ca": "Vinc a les set." } },
+        { "pron": "acht", "gloss": "vuit", "note": "Atenció a la terminació _-cht_: aspiració forta.", "example": { "de": "Ich arbeite acht Stunden.", "ca": "Treballo vuit hores." } },
+        { "pron": "neun", "gloss": "nou", "note": "Pronuncia'l \"noin\". La _eu_ es llegeix \"oi\".", "example": { "de": "Neun Uhr morgens.", "ca": "Les nou del matí." } },
+        { "pron": "zehn", "gloss": "deu", "note": "La _z_ alemanya sona sempre com a \"ts\" catalana de _pots_.", "example": { "de": "Zehn Minuten.", "ca": "Deu minuts." } },
+        { "pron": "elf", "gloss": "onze", "note": "Curt i a part del patró. Igual de curt que en català (_onze_).", "example": { "de": "Es ist elf.", "ca": "Són les onze." } },
+        { "pron": "zwölf", "gloss": "dotze", "note": "La _ö_ es pronuncia com una _e_ amb llavis de _o_. Típica del rellotge.", "example": { "de": "Zwölf Uhr mittags.", "ca": "Les dotze del migdia." } }
+      ],
+      "callout": {
+        "variant": "warning",
+        "title": "Pronúncia clau",
+        "body": "**_z_ = \"ts\"** (_zehn_ \"tsen\"), **_v_ = \"f\"** (_vier_ \"fiir\"), **_ei_ = \"ai\"** (_drei_ \"drai\"), **_eu_ = \"oi\"** (_neun_ \"noin\"). Aquestes quatre regles resolen la meitat de la pronúncia dels nombres."
+      }
+    },
+    {
+      "id": "teens",
+      "kind": "narrative",
+      "heading": "Els teens: 13–19",
+      "lead": "Com en anglès (_thirteen_, _fourteen_…), l'alemany fa servir un patró transparent.",
+      "body": "Es forma afegint **_zehn_** (deu) després de la unitat: _dreizehn_ = 3 + 10, _vierzehn_ = 4 + 10. L'única cosa delicada és la pronúncia de _sechzehn_ i _siebzehn_, que perden una síl·laba.",
+      "tables": [
+        {
+          "title": "Teens 13–19",
+          "headers": ["Xifra", "Alemany", "Descomposició"],
+          "rows": [
+            ["13", "!!dreizehn!!", "drei + zehn"],
+            ["14", "!!vierzehn!!", "vier + zehn"],
+            ["15", "!!fünfzehn!!", "fünf + zehn"],
+            ["16", "!!sechzehn!!", "==sech== + zehn (cau la -s de sechs)"],
+            ["17", "!!siebzehn!!", "==sieb== + zehn (cau la -en de sieben)"],
+            ["18", "!!achtzehn!!", "acht + zehn"],
+            ["19", "!!neunzehn!!", "neun + zehn"]
+          ]
+        }
+      ],
+      "pitfalls": [
+        { "bad": "sechszehn", "good": "!!sechzehn!!", "why": "Davant de _-zehn_ la unitat 6 perd la _-s_." },
+        { "bad": "siebenzehn", "good": "!!siebzehn!!", "why": "Davant de _-zehn_ la unitat 7 perd la _-en_." }
+      ]
+    },
+    {
+      "id": "decenas",
+      "kind": "narrative",
+      "heading": "Les desenes (20–90)",
+      "lead": "Les desenes es formen amb el sufix ==**-zig**== afegit a la unitat.",
+      "body": "_zwanzig_ (20), _vierzig_ (40), _fünfzig_ (50)... La lògica és la mateixa que en els teens però amb _-zig_ en comptes de _-zehn_.",
+      "tables": [
+        {
+          "title": "Desenes",
+          "headers": ["Xifra", "Alemany", "Nota"],
+          "rows": [
+            ["20", "!!zwanzig!!", "Arrel irregular: _zwan-_ (no _zwei-_)."],
+            ["30", "!!dreißig!!", "**Única excepció**: _-ßig_ en comptes de _-zig_."],
+            ["40", "!!vierzig!!", "Regular."],
+            ["50", "!!fünfzig!!", "Regular."],
+            ["60", "!!sechzig!!", "Cau la _-s_ (igual que _sechzehn_)."],
+            ["70", "!!siebzig!!", "Cau la _-en_ (igual que _siebzehn_)."],
+            ["80", "!!achtzig!!", "Regular."],
+            ["90", "!!neunzig!!", "Regular."]
+          ]
+        }
+      ],
+      "callout": {
+        "variant": "warning",
+        "title": "L'excepció de 30",
+        "body": "_==dreißig==_ és l'única desena que s'escriu amb **_-ßig_** (amb eszett) en comptes de _-zig_. La pronúncia, però, és la mateixa que la resta de desenes."
+      }
+    },
+    {
+      "id": "und",
+      "kind": "narrative",
+      "heading": "La regla estrella: unitats _und_ desenes",
+      "lead": "Per dir 21, l'alemany diu literalment ==**u-i-vint**==: _!!einundzwanzig!!_.",
+      "body": "L'ordre és invers al català. Primer la unitat, després _und_ (i), i al final la desena. Tot junt, en una sola paraula.",
+      "examples": [
+        { "de": "einundzwanzig", "ca": "21 (u-i-vint)", "note": "Ull: davant d'_und_ el \"1\" perd la -s (_ein_, no _eins_)." },
+        { "de": "zweiundzwanzig", "ca": "22 (dos-i-vint)" },
+        { "de": "dreiundvierzig", "ca": "43 (tres-i-quaranta)" },
+        { "de": "siebenundneunzig", "ca": "97 (set-i-noranta)" }
+      ],
+      "callout": {
+        "variant": "tip",
+        "title": "Truc per no perdre's",
+        "body": "Quan escoltis un nombre, anota primer la **unitat** que escoltes i deixa un espai al davant. La desena ve després i ocupa el lloc que has deixat."
+      }
+    },
+    {
+      "id": "check-und",
+      "kind": "exercise",
+      "exerciseId": "A1a-V1-ex-01",
+      "variant": "quick-check"
+    },
+    {
+      "id": "grandes",
+      "kind": "narrative",
+      "heading": "Els nombres grans",
+      "lead": "Cent, mil, un milió. Tres paraules noves i ja pots dir qualsevol preu.",
+      "tabs": [
+        { "pron": "hundert", "gloss": "cent", "note": "_einhundert_ = 100 (l'_ein-_ és opcional però freqüent). No porta article en aquest ús.", "example": { "de": "Das kostet hundert Euro.", "ca": "Això costa cent euros." } },
+        { "pron": "tausend", "gloss": "mil", "note": "_eintausend_ = 1.000. Com _hundert_, sense article com a nombre.", "example": { "de": "Zweitausend Menschen.", "ca": "Dos mil persones." } },
+        { "pron": "die Million", "gloss": "un milió", "note": "Substantiu femení real (article _die_). Plural _Millionen_. Amb majúscula perquè és un nom.", "example": { "de": "Eine Million Euro.", "ca": "Un milió d'euros." } }
+      ],
+      "pitfalls": [
+        { "bad": "die Hundert", "good": "!!hundert!!", "why": "Com a nombre es diu sense article. Només s'escriu amb majúscula quan es substantiva (_die Hundert_ = el número cent)." },
+        { "bad": "ein Million", "good": "!!eine Million!!", "why": "_Million_ és femení: _eine Million_, mai _ein Million_." }
+      ]
+    },
+    {
+      "id": "punto-miles",
+      "kind": "narrative",
+      "heading": "Un punt per als milers",
+      "lead": "En alemany **els milers es marquen amb un punt**, no amb una coma.",
+      "body": "_1.000_ (mil), _10.000_ (deu mil), _1.000.000_ (un milió). La coma, al contrari, es reserva per als **decimals**: _3,5_ = tres coma cinc.",
+      "comparison": [
+        { "es": "1,000 personas", "ca": "~~1,000 persones~~", "de": "==1.000== Menschen", "en": "1,000 people" },
+        { "es": "3.5 euros", "ca": "3,5 euros", "de": "==3,5== Euro", "en": "3.5 euros" }
+      ],
+      "callout": {
+        "variant": "warning",
+        "title": "És a l'inrevés de l'anglès",
+        "body": "En anglès _1,000_ són mil i _3.5_ és tres i mig. En alemany (i català) és **exactament a l'inrevés**: _1.000_ són mil i _3,5_ és tres i mig."
+      }
+    },
+    {
+      "id": "telefon",
+      "kind": "narrative",
+      "heading": "Dir un número de telèfon",
+      "lead": "Els telèfons es diuen ==xifra per xifra==, o en parelles de dues.",
+      "body": "No es diu \"noranta-tres, dos-cents trenta...\". Es lletreja: _zwei_, _drei_, _eins_... per evitar confusions.",
+      "examples": [
+        { "de": "neun drei drei eins zwei vier fünf sechs sieben", "ca": "933 12 45 67 — xifra per xifra" },
+        { "de": "null drei null zwölf vierunddreißig sechsundfünfzig", "ca": "030 / 12 34 56 — en parelles: zero tres zero, dotze, trenta-quatre, cinquanta-sis" }
+      ],
+      "callout": {
+        "variant": "tip",
+        "title": "Truc: _zwo_ en lloc de _zwei_",
+        "body": "Al telèfon sentiràs sovint **_zwo_** en comptes de _zwei_, perquè _zwei_ i _drei_ es confonen. És una convenció universal: tu també pots dir-ho."
+      }
+    },
+    {
+      "id": "pitfalls",
+      "kind": "narrative",
+      "heading": "Paranys freqüents",
+      "pitfalls": [
+        { "bad": "zwanzigund eins (21)", "good": "!!einundzwanzig!!", "why": "L'ordre és invers: primer unitat, després desena. Sempre en una sola paraula." },
+        { "bad": "drei und zwanzig", "good": "!!dreiundzwanzig!!", "why": "S'escriu tot junt, sense espais, fins i tot quan el nombre és llarg: _einhundertdreiundzwanzig_." },
+        { "bad": "sechsundzwanzig pronunciat \"sekhs...\"", "good": "pronunciat \"zeks-unt-tsvantsikh\"", "why": "La _chs_ sona \"ks\", la _z_ sona \"ts\"." },
+        { "bad": "ein Euro (per dir 1)", "good": "!!eins!!", "why": "_ein_ és article (un _home_); com a nombre aïllat és _eins_ (\"un, dos, tres...\" = \"eins, zwei, drei...\")." },
+        { "bad": "1,000 Menschen (mil persones)", "good": "==1.000== Menschen", "why": "El separador de milers és el punt. La coma és per als decimals." }
+      ]
+    },
+    {
+      "id": "check-final",
+      "kind": "exercise",
+      "exerciseId": "A1a-V1-ex-02",
+      "variant": "assessment"
+    },
+    {
+      "id": "synthesis",
+      "kind": "synthesis",
+      "heading": "Síntesi dels nombres",
+      "tables": [
+        {
+          "title": "0–20 en un cop d'ull",
+          "headers": ["#", "Alemany"],
+          "rows": [
+            ["0", "!!null!!"],
+            ["1", "!!eins!!"],
+            ["2", "!!zwei!!"],
+            ["3", "!!drei!!"],
+            ["4", "!!vier!!"],
+            ["5", "!!fünf!!"],
+            ["6", "!!sechs!!"],
+            ["7", "!!sieben!!"],
+            ["8", "!!acht!!"],
+            ["9", "!!neun!!"],
+            ["10", "!!zehn!!"],
+            ["11", "!!elf!!"],
+            ["12", "!!zwölf!!"],
+            ["13", "!!dreizehn!!"],
+            ["14", "!!vierzehn!!"],
+            ["15", "!!fünfzehn!!"],
+            ["16", "!!sechzehn!!"],
+            ["17", "!!siebzehn!!"],
+            ["18", "!!achtzehn!!"],
+            ["19", "!!neunzehn!!"],
+            ["20", "!!zwanzig!!"]
+          ]
+        },
+        {
+          "title": "Desenes i grans",
+          "headers": ["#", "Alemany"],
+          "rows": [
+            ["20", "!!zwanzig!!"],
+            ["30", "!!dreißig!!"],
+            ["40", "!!vierzig!!"],
+            ["50", "!!fünfzig!!"],
+            ["60", "!!sechzig!!"],
+            ["70", "!!siebzig!!"],
+            ["80", "!!achtzig!!"],
+            ["90", "!!neunzig!!"],
+            ["100", "!!hundert!!"],
+            ["1.000", "!!tausend!!"],
+            ["1.000.000", "!!eine Million!!"]
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-V1-ex-02",
+  "topicId": "A1a-V1",
+  "title": "Nombres del dia a dia",
+  "prompt": "Completa aquestes frases de la vida quotidiana amb els nombres escrits en alemany. Fixa't en les xifres entre parèntesis.",
+  "difficulty": 2,
+  "tags": ["integration", "zahlen"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Der Zug fährt um {{1}} (7) Uhr.\nDie Fahrkarte kostet {{2}} (45) Euro.\nWir sind {{3}} (23) Personen.\nDie Postleitzahl ist {{4}} (10115).",
+    "blanks": [
+      { "id": "1", "label": "7" },
+      { "id": "2", "label": "45" },
+      { "id": "3", "label": "23" },
+      { "id": "4", "label": "10115 (xifra per xifra)" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "nombre" },
+      { "blankId": "2", "placeholder": "nombre" },
+      { "blankId": "3", "placeholder": "nombre" },
+      { "blankId": "4", "placeholder": "xifra per xifra" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["sieben"],
+      "2": ["fünfundvierzig", "fuenfundvierzig"],
+      "3": ["dreiundzwanzig"],
+      "4": ["eins null eins eins fünf", "eins null eins eins fuenf"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Has integrat les tres regles: unitats soles (_sieben_), regla _und_ per dues xifres (_fünfundvierzig_, _dreiundzwanzig_) i lectura xifra-per-xifra al codi postal. En contextos quotidians els codis postals, telèfons i números d'hotel sempre es llegeixen xifra per xifra."
+    },
+    "incorrect": {
+      "default": "Tres claus: (a) els nombres de dues xifres s'escriuen tot junt amb _und_ al mig (_fünfundvierzig_, no _fünf und vierzig_); (b) al codi postal es lletregen les xifres separades; (c) vigila la _ü_ de _fünf_ i els dígrafs: _sieben_ amb _sie-_, no _si-_."
+    }
+  }
+}

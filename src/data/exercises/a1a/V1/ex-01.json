@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-V1-ex-01",
+  "topicId": "A1a-V1",
+  "title": "La regla _und_: unitats + desenes",
+  "prompt": "Escriu en alemany aquests nombres de dues xifres. Recorda: unitat + _und_ + desena, tot junt.",
+  "difficulty": 1,
+  "tags": ["zahlen", "und-rule"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "24 = {{1}}\n37 = {{2}}\n58 = {{3}}\n91 = {{4}}",
+    "blanks": [
+      { "id": "1", "label": "vint-i-quatre" },
+      { "id": "2", "label": "trenta-set" },
+      { "id": "3", "label": "cinquanta-vuit" },
+      { "id": "4", "label": "noranta-u" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "nombre" },
+      { "blankId": "2", "placeholder": "nombre" },
+      { "blankId": "3", "placeholder": "nombre" },
+      { "blankId": "4", "placeholder": "nombre" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["vierundzwanzig"],
+      "2": ["siebenunddreißig", "siebenunddreissig"],
+      "3": ["achtundfünfzig", "achtundfuenfzig"],
+      "4": ["einundneunzig"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Ordre invers, tot junt, una paraula. Així funciona l'alemany: _vier + und + zwanzig_ = 24. Fixa't que al 91 l'1 perd la _-s_: _ein_ i no _eins_."
+    },
+    "incorrect": {
+      "default": "Tres pistes: (a) ordre invers respecte al català — primer la **unitat**, després _und_, després la **desena**; (b) tot en una paraula, sense espais; (c) al 91, _ein_ (sense _-s_), no _eins_. Si has escrit _dreizig_: la desena 30 és l'única excepció, s'escriu **dreißig** amb _-ßig_."
+    }
+  }
+}
