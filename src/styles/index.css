@@ -817,6 +817,42 @@
 .kf-sidebar-step.is-current .kf-sidebar-step-num {
   opacity: 1;
 }
+/* Glyph d'exercici · mirror petit del progress bar del header.
+   Triangle per quick-check, rombe per assessment. Hereten currentColor
+   de la tinta del botó, així es tenyeixen automàticament amb l'estat
+   (muted → ink-2 a done/hover → ink a current). */
+.kf-sidebar-step-glyph {
+  display: inline-block;
+  flex-shrink: 0;
+  opacity: 0.55;
+  align-self: center;
+  transition: opacity var(--duration-fast) var(--ease-standard),
+              transform var(--duration-fast) var(--ease-standard);
+}
+.kf-sidebar-step.is-current .kf-sidebar-step-glyph,
+.kf-sidebar-step.is-done .kf-sidebar-step-glyph {
+  opacity: 0.85;
+}
+.kf-sidebar-step.is-current .kf-sidebar-step-glyph {
+  opacity: 1;
+}
+.kf-sidebar-step-glyph.kind-exercise {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 7px solid currentColor;
+}
+.kf-sidebar-step-glyph.kind-assessment {
+  width: 7px;
+  height: 7px;
+  background: currentColor;
+  border-radius: 1px;
+  transform: rotate(45deg);
+}
+.kf-sidebar-step > button:hover .kf-sidebar-step-glyph {
+  opacity: 1;
+}
 .kf-sidebar-step-label {
   font-family: 'Newsreader', serif;
   font-size: 13px;

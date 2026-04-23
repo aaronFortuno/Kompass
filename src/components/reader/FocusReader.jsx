@@ -1376,11 +1376,14 @@ function BeatSidebar({
           const isCurrent = i === stepIdx;
           const isDone = i < stepIdx;
           const label = stepLabel(s, i);
+          const kind = stepKind(s);
+          const isExerciseKind = kind === 'exercise' || kind === 'assessment';
           return (
             <li
               key={i}
               className={[
                 'kf-sidebar-step',
+                `kind-${kind}`,
                 isCurrent ? 'is-current' : '',
                 isDone ? 'is-done' : '',
               ]
@@ -1390,11 +1393,19 @@ function BeatSidebar({
               <button
                 type="button"
                 onClick={() => onJumpStep(i)}
-                title={label}
+                title={isExerciseKind
+                  ? `${kind === 'assessment' ? 'Avaluació' : 'Exercici'} · ${label}`
+                  : label}
               >
                 <span className="kf-sidebar-step-num">
                   {String(i + 1).padStart(2, '0')}
                 </span>
+                {isExerciseKind ? (
+                  <span
+                    className={`kf-sidebar-step-glyph kind-${kind}`}
+                    aria-hidden="true"
+                  />
+                ) : null}
                 <span className="kf-sidebar-step-label">{label}</span>
               </button>
               {isCurrent && beats.length > 1 ? (
