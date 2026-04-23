@@ -121,7 +121,7 @@ export function SettingsBody() {
                 value={textScale}
                 onChange={(e) => setTextScale(Number(e.target.value))}
                 aria-labelledby="setting-textscale"
-                className="w-32 accent-reader-ink"
+                className="w-44 accent-reader-ink"
               />
               <span className="font-mono text-[11px] text-reader-ink-2 w-10 text-right">
                 {Math.round(textScale * 100)}%
@@ -130,7 +130,7 @@ export function SettingsBody() {
           </SettingRow>
         </section>
 
-        <section className="mt-6">
+        <section className="mt-10">
           <SectionHeading>{t('settings.reading.title')}</SectionHeading>
 
           <SettingRow
@@ -200,7 +200,7 @@ export function SettingsBody() {
                 value={typewriterSpeed}
                 onChange={(e) => setTypewriterSpeed(Number(e.target.value))}
                 aria-labelledby="setting-typewriter-speed"
-                className="w-20 accent-reader-ink"
+                className="w-32 accent-reader-ink"
               />
               <span className="font-mono text-[9px] text-reader-muted uppercase tracking-wider">
                 {t('settings.reading.typewriterSpeedFast')}
@@ -264,7 +264,7 @@ export function SettingsBody() {
                 value={autoPlayDelay}
                 onChange={(e) => setAutoPlayDelay(Number(e.target.value))}
                 aria-labelledby="setting-autoplay-delay"
-                className="w-20 accent-reader-ink"
+                className="w-32 accent-reader-ink"
               />
               <span className="font-mono text-[9px] text-reader-muted uppercase tracking-wider">
                 {t('settings.reading.typewriterSpeedSlow')}
@@ -308,7 +308,7 @@ export function SettingsBody() {
                 value={audioSpeed}
                 onChange={(e) => setAudioSpeed(Number(e.target.value))}
                 aria-labelledby="setting-audio-speed"
-                className="w-28 accent-reader-ink"
+                className="w-40 accent-reader-ink"
               />
               <span className="font-mono text-[11px] text-reader-ink-2 w-10 text-right">
                 {audioSpeed.toFixed(2)}×
@@ -336,7 +336,7 @@ export function SettingsBody() {
         </section>
 
         {hasMusic ? (
-          <section className="mt-6">
+          <section className="mt-10">
             <SectionHeading>Música ambient</SectionHeading>
 
             <SettingRow
@@ -389,7 +389,7 @@ export function SettingsBody() {
                       value={bgMusicVolume}
                       onChange={(e) => setBgMusicVolume(Number(e.target.value))}
                       aria-labelledby="setting-bgmusic-volume"
-                      className="w-28 accent-reader-ink"
+                      className="w-40 accent-reader-ink"
                     />
                     <span className="font-mono text-[11px] text-reader-ink-2 w-10 text-right">
                       {Math.round(bgMusicVolume * 100)}%
@@ -401,7 +401,7 @@ export function SettingsBody() {
           </section>
         ) : null}
 
-        <section className="mt-6 pt-5 border-t border-reader-rule">
+        <section className="mt-12 pt-8 border-t border-reader-rule">
           <SectionHeading>{t('settings.reset.title')}</SectionHeading>
           <div className="flex items-center justify-between gap-4">
             <p className="font-serif text-sm text-reader-ink-2 max-w-[28ch]">
