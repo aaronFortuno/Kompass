@@ -340,6 +340,33 @@
 }
 .kf-head .kf-back:hover { color: rgb(var(--color-reader-ink)); }
 
+/* Botó d'eixida del reader (mobile-first).
+   A desktop ja hi ha el clic al títol per tornar al temari, però a
+   mòbil el títol s'encongeix o es treu — cal una icona explícita.
+   Ocult per defecte (desktop); visible a ≤720px. */
+.kf-head .kf-head-exit {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: rgb(var(--color-reader-ink-2));
+  cursor: pointer;
+  padding: 0;
+  min-width: 44px;
+  min-height: 44px;
+  margin-left: -8px;
+  border-radius: var(--radius-md);
+  transition: color var(--duration-fast) var(--ease-standard),
+              background-color var(--duration-fast) var(--ease-standard);
+}
+.kf-head .kf-head-exit:hover,
+.kf-head .kf-head-exit:focus-visible {
+  color: rgb(var(--color-reader-ink));
+  background-color: rgb(var(--color-reader-rule) / 0.4);
+  outline: none;
+}
+
 /* Logo (Link to /) — interactiu: canvi de color i rotació suau a hover */
 .kf-head .kf-logo {
   display: inline-flex;
@@ -2588,6 +2615,7 @@ html.dark .k-mark {
     font-size: 10px;
   }
   .kf-head .kf-logo { display: none; }
+  .kf-head .kf-head-exit { display: inline-flex; }
   .kf-head .kf-title { font-size: 12px; }
   .kf-progress { flex-direction: row; align-items: center; gap: 8px; }
   .kf-row-steps { display: none; }

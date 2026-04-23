@@ -2021,6 +2021,15 @@ export function FocusReader({ topic }) {
           redundant desordenava la cantonada esquerra. §103 polit. */}
       <div className="kf-head">
         <div className="kf-head-left">
+          <button
+            type="button"
+            className="kf-head-exit"
+            onClick={() => navigate(`/temari?focus=${topic.id}`)}
+            aria-label="Tornar al temari"
+            title="Tornar al temari"
+          >
+            <ArrowLeft size={22} aria-hidden="true" strokeWidth={1.75} />
+          </button>
           <Link
             to="/"
             className="kf-logo"
