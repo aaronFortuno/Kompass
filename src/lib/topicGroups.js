@@ -18,6 +18,7 @@ export const TOPIC_GROUPS = {
     { id: 'temps', title: 'Temps i seqüències', range: [20, 24] },
     { id: 'modals', title: 'Modals i casos bàsics', range: [25, 30] },
     { id: 'compar', title: 'Comparatives i vocabulari útil', range: [31, 36] },
+    { id: 'vocab', title: 'Vocabulari temàtic', range: [37, 43] },
   ],
   A1b: [
     { id: 'preposicions', title: 'Preposicions de lloc', range: [1, 4] },
