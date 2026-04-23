@@ -442,7 +442,7 @@ export function TopicsIndexPage() {
           <span>
             Pàgina en <b>construcció i revisió</b>. El temari segueix els
             programes oficials d'A1, però ara mateix ens trobem fent una
-            revisió pedagògica manual de cada lliçó — les que no porten
+            revisió pedagògica manual de cada lliçó — les que porten
             aquesta etiqueta encara poden contenir errors o ajustaments
             pendents.
           </span>
