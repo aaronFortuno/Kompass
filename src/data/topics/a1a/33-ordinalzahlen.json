@@ -32,16 +32,16 @@
           "title": "Ordinals regulars de l'1 al 19",
           "headers": ["Cardinal", "Ordinal"],
           "rows": [
-            ["vier (4)", "vier**te**"],
-            ["fünf (5)", "fünf**te**"],
-            ["sechs (6)", "sechs**te**"],
-            ["neun (9)", "neun**te**"],
-            ["zehn (10)", "zehn**te**"],
-            ["elf (11)", "elf**te**"],
-            ["zwölf (12)", "zwölf**te**"],
-            ["dreizehn (13)", "dreizehn**te**"],
-            ["vierzehn (14)", "vierzehn**te**"],
-            ["neunzehn (19)", "neunzehn**te**"]
+            ["!!vier!! (4)", "!!vier**te**!!"],
+            ["!!fünf!! (5)", "!!fünf**te**!!"],
+            ["!!sechs!! (6)", "!!sechs**te**!!"],
+            ["!!neun!! (9)", "!!neun**te**!!"],
+            ["!!zehn!! (10)", "!!zehn**te**!!"],
+            ["!!elf!! (11)", "!!elf**te**!!"],
+            ["!!zwölf!! (12)", "!!zwölf**te**!!"],
+            ["!!dreizehn!! (13)", "!!dreizehn**te**!!"],
+            ["!!vierzehn!! (14)", "!!vierzehn**te**!!"],
+            ["!!neunzehn!! (19)", "!!neunzehn**te**!!"]
           ]
         },
         {
@@ -64,10 +64,10 @@
           "title": "Els quatre ordinals irregulars",
           "headers": ["Núm.", "Cardinal", "Ordinal (irregular)", "Regla que esperaries"],
           "rows": [
-            ["1", "eins", "==**erste**==", "_einste_ ❌"],
-            ["3", "drei", "==**dritte**==", "_dreite_ ❌"],
-            ["7", "sieben", "==**siebte**==", "_siebente_ (també existeix, però _siebte_ és la forma estàndard)"],
-            ["8", "acht", "==**achte**==", "_achtte_ → només una _t_"]
+            ["1", "!!eins!!", "!!==**erste**==!!", "_einste_ ❌"],
+            ["3", "!!drei!!", "!!==**dritte**==!!", "_dreite_ ❌"],
+            ["7", "!!sieben!!", "!!==**siebte**==!!", "_siebente_ (també existeix, però _siebte_ és la forma estàndard)"],
+            ["8", "!!acht!!", "!!==**achte**==!!", "_achtte_ → només una _t_"]
           ]
         },
         {
@@ -102,12 +102,12 @@
           "title": "Ordinals a partir del 20",
           "headers": ["Cardinal", "Ordinal"],
           "rows": [
-            ["zwanzig (20)", "zwanzig**ste**"],
-            ["einundzwanzig (21)", "einundzwanzig**ste**"],
-            ["dreißig (30)", "dreißig**ste**"],
-            ["vierzig (40)", "vierzig**ste**"],
-            ["hundert (100)", "hundert**ste**"],
-            ["tausend (1000)", "tausend**ste**"]
+            ["!!zwanzig!! (20)", "!!zwanzig**ste**!!"],
+            ["!!einundzwanzig!! (21)", "!!einundzwanzig**ste**!!"],
+            ["!!dreißig!! (30)", "!!dreißig**ste**!!"],
+            ["!!vierzig!! (40)", "!!vierzig**ste**!!"],
+            ["!!hundert!! (100)", "!!hundert**ste**!!"],
+            ["!!tausend!! (1000)", "!!tausend**ste**!!"]
           ]
         },
         {
@@ -133,13 +133,13 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### L'ús més freqüent: **dates**\n\nOn trobaràs ordinals constantment és quan diguis **dates**. En alemany, igual que en català, els dies del mes s'expressen com a ordinals (\"el **primer** d'abril\", no \"_l'u d'abril_\"... bé, tret del català col·loquial).\n\n**Patró per preguntar i dir una data:**\n\n- _Der **Wievielte** ist heute?_ → Quin dia (quin número) és avui?\n- _Heute ist **der erste** April._ → Avui és l'u (el primer) d'abril.\n- _Heute ist **der dritte** Mai._ → Avui és el tres de maig.\n- _Heute ist **der einundzwanzigste** Juni._ → Avui és el 21 de juny.\n\n**En format escrit**, l'ordinal es marca amb un **punt** darrere del número (a diferència del català/espanyol, que usa º/ª):\n\n- **1. April** = _der erste April_\n- **3. Mai** = _der dritte Mai_\n- **21. Juni** = _der einundzwanzigste Juni_"
+          "body": "#### L'ús més freqüent: **dates**\n\nOn trobaràs ordinals constantment és quan diguis **dates**. En alemany, igual que en català, els dies del mes s'expressen com a ordinals (\"el **primer** d'abril\", no \"_l'u d'abril_\"... bé, tret del català col·loquial).\n\n**Patró per preguntar i dir una data:**\n\n- _!!Der **Wievielte** ist heute?!!_ → Quin dia (quin número) és avui?\n- _!!Heute ist **der erste** April.!!_ → Avui és l'u (el primer) d'abril.\n- _!!Heute ist **der dritte** Mai.!!_ → Avui és el tres de maig.\n- _!!Heute ist **der einundzwanzigste** Juni.!!_ → Avui és el 21 de juny.\n\n**En format escrit**, l'ordinal es marca amb un **punt** darrere del número (a diferència del català/espanyol, que usa º/ª):\n\n- **1. April** = _!!der erste April!!_\n- **3. Mai** = _!!der dritte Mai!!_\n- **21. Juni** = _!!der einundzwanzigste Juni!!_"
         },
         {
           "type": "callout",
           "variant": "info",
           "title": "Contrast ES/CA/DE",
-          "body": "- ES: _\"el 1 de abril\"_ (cardinal)\n- CA: _\"l'u d'abril\"_ o _\"el primer d'abril\"_ (els dos existeixen)\n- DE: ==_der erste April_== (ordinal obligatori)\n\nL'alemany no accepta _\"der eins April\"_. Sempre ordinal."
+          "body": "- ES: _\"el 1 de abril\"_ (cardinal)\n- CA: _\"l'u d'abril\"_ o _\"el primer d'abril\"_ (els dos existeixen)\n- DE: !!==_der erste April_==!! (ordinal obligatori)\n\nL'alemany no accepta _\"der eins April\"_. Sempre ordinal."
         }
       ]
     },
@@ -155,13 +155,13 @@
           "title": "Declinació bàsica amb article definit",
           "headers": ["Cas", "Masculí", "Femení", "Neutre"],
           "rows": [
-            ["Nominatiu", "der erst**e**", "die erst**e**", "das erst**e**"],
-            ["Acusatiu", "den erst**en**", "die erst**e**", "das erst**e**"]
+            ["Nominatiu", "!!der erst**e**!!", "!!die erst**e**!!", "!!das erst**e**!!"],
+            ["Acusatiu", "!!den erst**en**!!", "!!die erst**e**!!", "!!das erst**e**!!"]
           ]
         },
         {
           "type": "explanation",
-          "body": "**Beispiele:**\n\n- _==Der erste== Tag ist Montag._ → El primer dia és dilluns. (nominatiu, masculí)\n- _Ich lese ==das dritte== Buch._ → Llegeixo el tercer llibre. (acusatiu, neutre)\n- _Ich nehme ==den zweiten== Zug._ → Agafo el segon tren. (acusatiu, masculí → _-en_)"
+          "body": "**Beispiele:**\n\n- _!!==Der erste== Tag ist Montag.!!_ → El primer dia és dilluns. (nominatiu, masculí)\n- _!!Ich lese ==das dritte== Buch.!!_ → Llegeixo el tercer llibre. (acusatiu, neutre)\n- _!!Ich nehme ==den zweiten== Zug.!!_ → Agafo el segon tren. (acusatiu, masculí → _-en_)"
         },
         {
           "type": "callout",
@@ -221,14 +221,14 @@
           "type": "callout",
           "variant": "example",
           "title": "Exemple integrador",
-          "body": "_Heute ist der einundzwanzigste April. Es ist mein erster Deutschkurs im zweiten Semester. Der dritte Tag der Woche ist Mittwoch, und am achten Mai habe ich Geburtstag._\n\n→ Avui és 21 d'abril. És el meu primer curs d'alemany al segon semestre. El tercer dia de la setmana és dimecres, i el 8 de maig faig els anys."
+          "body": "_!!Heute ist der einundzwanzigste April. Es ist mein erster Deutschkurs im zweiten Semester. Der dritte Tag der Woche ist Mittwoch, und am achten Mai habe ich Geburtstag.!!_\n\n→ Avui és 21 d'abril. És el meu primer curs d'alemany al segon semestre. El tercer dia de la setmana és dimecres, i el 8 de maig faig els anys."
         },
         {
           "type": "table",
           "title": "Síntesi · Regla general",
           "headers": ["Rang", "Regla", "Excepcions"],
           "rows": [
-            ["1-19", "cardinal + **-te**", "==erste== (1), ==dritte== (3), ==siebte== (7), ==achte== (8)"],
+            ["1-19", "cardinal + **-te**", "!!==erste==!! (1), !!==dritte==!! (3), !!==siebte==!! (7), !!==achte==!! (8)"],
             ["20+", "cardinal + **-ste**", "cap"]
           ]
         }
