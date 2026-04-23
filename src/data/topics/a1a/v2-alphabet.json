@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-V2",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 2,
+  "category": "vocabulary",
+  "title": "Alphabet — les lletres",
+  "shortTitle": "Alphabet",
+  "description": "Les 26 lletres llatines pel seu nom + els quatre convidats alemanys (Ä, Ö, Ü, ß). Focus: saber lletrejar el propi nom i respondre a \"Wie schreibt man das?\".",
+  "axes": ["vocabulari-tematic", "fonetica"],
+  "estimatedMinutes": 12,
+  "steps": [
+    {
+      "id": "intro",
+      "kind": "narrative",
+      "heading": "L'alfabet alemany",
+      "lead": "Les mateixes 26 lletres que el català, però amb quatre convidats més: **Ä, Ö, Ü i ß**.",
+      "body": "Saber-les dir per nom no és per exhibicionisme: ho necessites quan has de reservar taula per telèfon, donar el teu nom a una oficina o demanar com s'escriu una paraula nova.",
+      "callout": {
+        "variant": "info",
+        "title": "La frase que ho canvia tot",
+        "body": "**!!Wie schreibt man das?!!** (Com s'escriu això?) — **!!Wie buchstabiert man das?!!** (Com es lletreja?). Aquestes dues preguntes són les més rendibles d'A1; serveixen per desencallar qualsevol conversa amb una paraula nova."
+      }
+    },
+    {
+      "id": "alfabet-1",
+      "kind": "narrative",
+      "heading": "Les lletres A–L",
+      "lead": "Cada lletra té un ==nom== propi, que és el que dius quan lletreges.",
+      "tabs": [
+        { "pron": "A", "gloss": "a", "note": "Es pronuncia \"a\" oberta, com la _a_ catalana.", "example": { "de": "Anna: A – N – N – A", "ca": "El nom Anna, lletrejat." } },
+        { "pron": "B", "gloss": "be", "note": "Pronunciat \"be\" llarg.", "example": { "de": "Berlin: B – E – R – L – I – N", "ca": "" } },
+        { "pron": "C", "gloss": "ce", "note": "Pronunciat \"tse\". Poc freqüent en alemany sol (apareix sobretot en préstecs i als dígrafs _ch_, _sch_).", "example": { "de": "Café: C – A – F – É", "ca": "" } },
+        { "pron": "D", "gloss": "de", "note": "Pronunciat \"de\" llarg.", "example": { "de": "Dortmund: D – O – R – T – M – U – N – D", "ca": "" } },
+        { "pron": "E", "gloss": "e", "note": "Pronunciada \"ee\" (llarga i tancada). **No confondre amb la _i_** com passa en francès.", "example": { "de": "Eins: E – I – N – S", "ca": "" } },
+        { "pron": "F", "gloss": "ef", "note": "Pronunciat \"ef\".", "example": { "de": "Frankfurt: F – R – A – N – K – F – U – R – T", "ca": "" } },
+        { "pron": "G", "gloss": "ge", "note": "Pronunciat \"gee\" (amb _g_ dura, com a _gat_).", "example": { "de": "Gut: G – U – T", "ca": "" } },
+        { "pron": "H", "gloss": "ha", "note": "Pronunciat \"ha\" (aspirat lleu). Molt diferent del silenci català.", "example": { "de": "Hallo: H – A – L – L – O", "ca": "" } },
+        { "pron": "I", "gloss": "i", "note": "Pronunciat \"ii\" (llarg).", "example": { "de": "Ich: I – C – H", "ca": "" } },
+        { "pron": "J", "gloss": "jot", "note": "Pronunciat \"iot\". **Compte**: en alemany _J_ sona com la _i_ consonant catalana (com a _iode_).", "example": { "de": "Ja: J – A", "ca": "" } },
+        { "pron": "K", "gloss": "ka", "note": "Pronunciat \"ka\". Molt freqüent.", "example": { "de": "Kaffee: K – A – F – F – E – E", "ca": "" } },
+        { "pron": "L", "gloss": "el", "note": "Pronunciat \"el\".", "example": { "de": "Leipzig: L – E – I – P – Z – I – G", "ca": "" } }
+      ],
+      "callout": {
+        "variant": "warning",
+        "title": "Atenció al J",
+        "body": "La **J** alemanya es diu \"iot\" i sona com la _i_ de _iode_, no com la _j_ catalana ni com l'_h_ castellana. _Ja_ = \"ia\", no \"khá\"."
+      }
+    },
+    {
+      "id": "alfabet-2",
+      "kind": "narrative",
+      "heading": "Les lletres M–Z",
+      "tabs": [
+        { "pron": "M", "gloss": "em", "note": "Pronunciat \"em\".", "example": { "de": "München: M – Ü – N – C – H – E – N", "ca": "" } },
+        { "pron": "N", "gloss": "en", "note": "Pronunciat \"en\".", "example": { "de": "Nein: N – E – I – N", "ca": "" } },
+        { "pron": "O", "gloss": "o", "note": "Pronunciada \"oo\" tancada i llarga.", "example": { "de": "Oma: O – M – A", "ca": "" } },
+        { "pron": "P", "gloss": "pe", "note": "Pronunciat \"pe\".", "example": { "de": "Paul: P – A – U – L", "ca": "" } },
+        { "pron": "Q", "gloss": "ku", "note": "Pronunciat \"ku\" (vocal llarga). Gairebé sempre seguida de _u_.", "example": { "de": "Qualität: Q – U – A – L – I – T – Ä – T", "ca": "" } },
+        { "pron": "R", "gloss": "er", "note": "Pronunciat \"er\". En paraula, la _r_ alemanya és gutural (com la _r_ francesa), però en lletrejar es diu \"er\".", "example": { "de": "Rot: R – O – T", "ca": "" } },
+        { "pron": "S", "gloss": "es", "note": "Pronunciat \"es\". Davant vocal sona \"z\" catalana (com a _casa_).", "example": { "de": "Sonne: S – O – N – N – E", "ca": "" } },
+        { "pron": "T", "gloss": "te", "note": "Pronunciat \"te\".", "example": { "de": "Tee: T – E – E", "ca": "" } },
+        { "pron": "U", "gloss": "u", "note": "Pronunciada \"uu\" (com la _u_ catalana).", "example": { "de": "Uwe: U – W – E", "ca": "" } },
+        { "pron": "V", "gloss": "fau", "note": "Pronunciat \"fau\". **Compte**: la _V_ alemanya sona com la _f_ catalana, no com la _v_.", "example": { "de": "Vater: V – A – T – E – R", "ca": "" } },
+        { "pron": "W", "gloss": "ve", "note": "Pronunciat \"ve\". **Compte**: la _W_ alemanya sona com la _v_ catalana (la labiodental).", "example": { "de": "Wasser: W – A – S – S – E – R", "ca": "" } },
+        { "pron": "X", "gloss": "iks", "note": "Pronunciat \"iks\". Lletra rara en alemany (sobretot en préstecs).", "example": { "de": "Taxi: T – A – X – I", "ca": "" } },
+        { "pron": "Y", "gloss": "üpsilon", "note": "Pronunciat \"üpsilon\". Apareix en préstecs grecs.", "example": { "de": "Physik: P – H – Y – S – I – K", "ca": "" } },
+        { "pron": "Z", "gloss": "tset", "note": "Pronunciat \"tset\". **Compte**: la _Z_ alemanya sona \"ts\" (com a _pots_ català).", "example": { "de": "Zeit: Z – E – I – T", "ca": "" } }
+      ],
+      "callout": {
+        "variant": "warning",
+        "title": "V i W: l'inrevés",
+        "body": "La **V** alemanya sona com la _f_ catalana (_Vater_ = \"fater\") i la **W** sona com la _v_ catalana (_Wasser_ = \"vaser\"). És el parany més típic per a un estudiant romànic."
+      }
+    },
+    {
+      "id": "umlauts",
+      "kind": "narrative",
+      "heading": "Ä, Ö, Ü: els umlauts",
+      "lead": "Tres vocals \"amb ulleres\", tres sons diferents.",
+      "body": "No són simples decoracions: canvien la pronúncia i moltes vegades també el significat (_Mutter_ = mare, _Mütter_ = mares).",
+      "tabs": [
+        { "pron": "Ä", "gloss": "a-umlaut (ä)", "note": "Pronunciada com una _e_ oberta catalana (com la _e_ de _terra_). En lletrejar: \"a-umlaut\" o \"ä\".", "example": { "de": "Käse: K – Ä – S – E", "ca": "formatge" } },
+        { "pron": "Ö", "gloss": "o-umlaut (ö)", "note": "Posa la boca com per dir _o_ i pronuncia _e_. En francès és el so de _peur_.", "example": { "de": "Österreich: Ö – S – T – E – R – R – E – I – C – H", "ca": "Àustria" } },
+        { "pron": "Ü", "gloss": "u-umlaut (ü)", "note": "Posa la boca com per dir _u_ i pronuncia _i_. En francès és el so de _tu_.", "example": { "de": "München: M – Ü – N – C – H – E – N", "ca": "Munic" } }
+      ],
+      "callout": {
+        "variant": "tip",
+        "title": "Alternativa quan no tens el teclat",
+        "body": "Si no pots escriure els umlauts (teclats vells, SMS d'urgència...), pots substituir-los per **ae**, **oe**, **ue**: _Müller_ → _Mueller_, _Österreich_ → _Oesterreich_. És la convenció oficial i universalment acceptada."
+      }
+    },
+    {
+      "id": "eszett",
+      "kind": "narrative",
+      "heading": "ß: l'_scharfes S_ o _eszett_",
+      "lead": "Una lletra que no té bessona en cap altre alfabet llatí occidental.",
+      "body": "Es pronuncia com una **\"s\" sorda doble** (com la _ss_ de _pass_). El nom oficial és _Eszett_ (lletra _S_ + lletra _Z_, pel seu origen). També se'n diu _scharfes S_ (\"s aguda\").",
+      "tabs": [
+        { "pron": "ß", "gloss": "es-tset (ß)", "note": "Pronunciada \"estset\" quan lletreges. Sona com una _ss_ sorda.", "example": { "de": "Straße: S – T – R – A – ß – E", "ca": "carrer" } }
+      ],
+      "callout": {
+        "variant": "warning",
+        "title": "Ortografia: quan ß i quan ss?",
+        "body": "**Després de vocal llarga o diftong**: _Straße, heißen, Fuß_ → amb **ß**. **Després de vocal curta**: _Wasser, muss, Schloss_ → amb **ss**. No t'hi amoïnis ara: memoritza cada paraula tal com la veus i ja et sortirà amb la pràctica."
+      }
+    },
+    {
+      "id": "check-spell",
+      "kind": "exercise",
+      "exerciseId": "A1a-V2-ex-01",
+      "variant": "quick-check"
+    },
+    {
+      "id": "wie-schreibt",
+      "kind": "narrative",
+      "heading": "Lletrejar a la pràctica",
+      "lead": "Dos patrons per memoritzar.",
+      "examples": [
+        { "de": "Wie heißt du? — Ich heiße Müller. Wie schreibt man das? — M – Ü – L – L – E – R.", "ca": "— Com et dius? — Em dic Müller. — Com s'escriu? — M-Ü-L-L-E-R." },
+        { "de": "Wie ist Ihr Name? — Mein Name ist Schmidt. Wie buchstabieren Sie das? — S – C – H – M – I – D – T.", "ca": "— Com es diu? — El meu nom és Schmidt. — Com ho lletreja? — S-C-H-M-I-D-T." }
+      ],
+      "rule": [
+        "Quan lletreges, ==fas una petita pausa entre cada lletra==. No cal exagerar-la; és com llegir una contrasenya.",
+        "Si has de repetir una lletra doble, pots dir \"doppel L\" en comptes de \"L – L\" (Müller → M – Ü – **doppel L** – E – R). Opcional però molt freqüent."
+      ]
+    },
+    {
+      "id": "pitfalls",
+      "kind": "narrative",
+      "heading": "Paranys freqüents",
+      "pitfalls": [
+        { "bad": "E llegit \"e\" com en català de _era_", "good": "E llegit \"ee\" (llarg i tancat)", "why": "La _E_ alemanya és més tancada que la _E_ oberta catalana." },
+        { "bad": "J pronunciat com la _J_ catalana (jota)", "good": "J pronunciat \"iot\", com la _i_ consonant", "why": "L'alemany no té jota castellana ni anglosaxona; la _J_ és la _i_ de _iode_." },
+        { "bad": "V i W intercanviades", "good": "==V== = \"fau\" (sona /f/), ==W== = \"ve\" (sona /v/)", "why": "A l'inrevés del castellà i del català: la _V_ alemanya és sorda, la _W_ és sonora." },
+        { "bad": "Z pronunciat \"zeta\"", "good": "Z pronunciat \"tset\", sona \"ts\"", "why": "La _Z_ alemanya sempre sona com la _ts_ de _pots_. Mai com la _z_ catalana ni castellana." },
+        { "bad": "Ü llegit com una _u_ normal", "good": "Ü pronunciada com _u_ francesa", "why": "Llavis de _u_, llengua en posició de _i_. El contrast _Mutter/Mütter_ depèn d'això." }
+      ]
+    },
+    {
+      "id": "check-final",
+      "kind": "exercise",
+      "exerciseId": "A1a-V2-ex-02",
+      "variant": "assessment"
+    },
+    {
+      "id": "synthesis",
+      "kind": "synthesis",
+      "heading": "Síntesi de l'alfabet",
+      "tables": [
+        {
+          "title": "A–Z",
+          "headers": ["Lletra", "Nom en lletrejar"],
+          "rows": [
+            ["A", "a"], ["B", "be"], ["C", "ce (tse)"], ["D", "de"], ["E", "e (ee llarga)"],
+            ["F", "ef"], ["G", "ge"], ["H", "ha"], ["I", "i (ii llarga)"], ["J", "jot (\"iot\")"],
+            ["K", "ka"], ["L", "el"], ["M", "em"], ["N", "en"], ["O", "o (oo llarga)"],
+            ["P", "pe"], ["Q", "ku"], ["R", "er"], ["S", "es"], ["T", "te"],
+            ["U", "u (uu)"], ["V", "==fau==  (sona /f/)"], ["W", "==ve==  (sona /v/)"],
+            ["X", "iks"], ["Y", "üpsilon"], ["Z", "==tset==  (sona /ts/)"]
+          ]
+        },
+        {
+          "title": "Extres alemanys",
+          "headers": ["Lletra", "Nom", "Pronúncia", "Substitut"],
+          "rows": [
+            ["Ä", "a-umlaut", "_e_ oberta", "ae"],
+            ["Ö", "o-umlaut", "entre _o_ i _e_", "oe"],
+            ["Ü", "u-umlaut", "_u_ francesa", "ue"],
+            ["ß", "es-tset / eszett", "_s_ sorda doble", "ss"]
+          ]
+        }
+      ]
+    }
+  ]
+}

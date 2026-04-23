@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-V2-ex-01",
+  "topicId": "A1a-V2",
+  "title": "Un nom lletrejat",
+  "prompt": "A la recepció de l'hotel senties: **M – A – R – I – A – (espai) – L – Ö – F – F – L – E – R**. Com s'escriu el cognom?",
+  "difficulty": 1,
+  "tags": ["alphabet", "buchstabieren"],
+  "stimulus": {
+    "type": "text",
+    "content": "Tria la grafia correcta que coincideix amb el lletreig."
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "a", "label": "Maria Löffler" },
+      { "id": "b", "label": "Maria Loeffler" },
+      { "id": "c", "label": "Maria Löfler" },
+      { "id": "d", "label": "Marja Löffler" }
+    ]
+  },
+  "validation": {
+    "type": "exactMatch",
+    "answer": "a"
+  },
+  "feedback": {
+    "correct": {
+      "message": "Correcte. Al lletreig has sentit **L – Ö – F – F – L – E – R**: la Ö és explícita (no _oe_) i les dues F dobles s'han de mantenir. Recorda el truc _doppel F_ que també es diu sovint al lletrejar."
+    },
+    "incorrect": {
+      "default": "Dues claus: (a) _Loeffler_ amb **oe** és la forma quan no es disposa del caràcter Ö, però al lletreig senties una **Ö** explícita, per tant la grafia correcta la manté; (b) dues F seguides al lletreig volen dir dues F a la paraula (_Löffler_, no _Löfler_)."
+    }
+  }
+}

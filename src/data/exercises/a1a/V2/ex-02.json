@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-V2-ex-02",
+  "topicId": "A1a-V2",
+  "title": "El carrer correcte",
+  "prompt": "L'empleat del banc escriu al formulari: **B – E – C – K – E – R – (espai) – S – T – R – A – ß – E**. Quina és la grafia correcta del carrer?",
+  "difficulty": 2,
+  "tags": ["alphabet", "buchstabieren", "eszett"],
+  "stimulus": {
+    "type": "text",
+    "content": "Fixa't en cada lletra del lletreig, especialment la **ß** al final."
+  },
+  "interaction": {
+    "type": "singleChoice",
+    "options": [
+      { "id": "a", "label": "Becker Strasse" },
+      { "id": "b", "label": "Becker Straße" },
+      { "id": "c", "label": "Becher Straße" },
+      { "id": "d", "label": "Beker Straße" }
+    ]
+  },
+  "validation": {
+    "type": "exactMatch",
+    "answer": "b"
+  },
+  "feedback": {
+    "correct": {
+      "message": "Tal com l'has sentit: _B – E – C – K – E – R_ es reflecteix a la paraula amb les dues consonants _CK_ juntes (molt típic en alemany) i el carrer es tanca amb **ß** — no _ss_. La forma _Strasse_ només s'usa a Suïssa."
+    },
+    "incorrect": {
+      "default": "Tres pistes: (a) el lletreig deia _ß_ (es-tset), no _s-s_, per tant la grafia és **Straße**; (b) l'empleat ha lletrejat _B-E-C-K-E-R_ (no _B-E-C-H-E-R_, que seria un nom diferent); (c) dues consonants seguides en alemany es mantenen — _CK_, _TT_, _NN_."
+    }
+  }
+}
