@@ -2187,15 +2187,19 @@ export function FocusReader({ topic }) {
 
   // Gest tàctil · §96
   //
-  // Desambiguem entre dos gestos:
+  // Desambiguem entre tres gestos:
   //   - Tap (dx, dy < 10 px, dt < 300 ms) → zones verticals:
   //       top 33%   → goBeat(-1)
   //       middle    → skip typewriter + pausa autoplay (equivalent al clic)
   //       bottom 33% → goBeat(+1)
+  //   - Swipe vertical (|dy| > 50, dominant, dt < 800) → infinite-scroll
+  //     típic de mòbil: amunt = beat següent, avall = beat anterior.
   //   - Swipe horitzontal (|dx| > 50, dominant, dt < 800) → beat prev/next.
   //
   // S'aplica al .kf-body (no al .kf-root), perquè els taps a header/peu
-  // no han d'activar cap zona. En mode full, deixem el scroll natural.
+  // no han d'activar cap zona. En mode full, deixem el scroll natural
+  // (desactivem la detecció vertical; els swipes horitzontals segueixen
+  // funcionant perquè no entren en conflicte amb el scroll natural).
   //
   // Després d'un tap processat, marquem lastTouchRef perquè el synthetic
   // click post-tap que dispara el browser no es processi dues vegades
@@ -2245,10 +2249,28 @@ export function FocusReader({ topic }) {
       return;
     }
 
-    // Swipe horitzontal.
-    if (Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy) * 1.2 || dt > 800) return;
-    goBeat(dx < 0 ? 1 : -1);
-    lastTouchRef.current = Date.now();
+    // Swipe · desambiguem l'eix dominant. Llindar mínim 50 px, ratio
+    // 1.2 sobre l'altre eix per evitar que diagonals ambigües disparin
+    // res, i dt < 800 ms per considerar-ho un gest ràpid.
+    if (dt > 800) return;
+    const absDx = Math.abs(dx);
+    const absDy = Math.abs(dy);
+    if (Math.max(absDx, absDy) < 50) return;
+    const isVertical = absDy > absDx * 1.2;
+    const isHorizontal = absDx > absDy * 1.2;
+    // Swipe vertical: amunt (dy < 0) → beat següent, avall → beat
+    // anterior. Patró clàssic d'scroll infinit a mòbil. En isFullMode
+    // el scroll natural del contingut té prioritat i no interceptem.
+    if (isVertical && !isFullMode) {
+      goBeat(dy < 0 ? 1 : -1);
+      lastTouchRef.current = Date.now();
+      return;
+    }
+    // Swipe horitzontal: esquerra (dx < 0) → següent, dreta → anterior.
+    if (isHorizontal) {
+      goBeat(dx < 0 ? 1 : -1);
+      lastTouchRef.current = Date.now();
+    }
   };
 
   const reduced = prefersReducedMotion();
