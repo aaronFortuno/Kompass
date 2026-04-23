@@ -63,18 +63,18 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### L'accent tònic va sempre al prefix\n\nUna regla fonètica molt útil per reconèixer de seguida si un verb és separable:\n\n> ==En els verbs separables, la síl·laba tònica sempre és el prefix==.\n\nCompara:\n\n- _==kau==fen_ (comprar) — accent a l'arrel: **●**○\n- _==ein==kaufen_ (fer la compra) — accent al prefix: **●**○○"
+          "body": "#### L'accent tònic va sempre al prefix\n\nUna regla fonètica molt útil per reconèixer de seguida si un verb és separable:\n\n> ==En els verbs separables, la síl·laba tònica sempre és el prefix==.\n\nCompara:\n\n- _!!==kau==fen!!_ (comprar) — accent a l'arrel: **●**○\n- _!!==ein==kaufen!!_ (fer la compra) — accent al prefix: **●**○○"
         },
         {
           "type": "table",
           "title": "Verb base vs verb separable: on cau l'accent",
           "headers": ["Accent a l'arrel (**●**○)", "Accent al prefix (**●**○○)"],
           "rows": [
-            ["_gehen_", "_==aus==gehen_"],
-            ["_schlafen_", "_==aus==schlafen_"],
-            ["_rufen_", "_==an==rufen_"],
-            ["_sehen_", "_==fern==sehen_"],
-            ["_räumen_", "_==auf==räumen_"]
+            ["_!!gehen!!_", "_!!==aus==gehen!!_"],
+            ["_!!schlafen!!_", "_!!==aus==schlafen!!_"],
+            ["_!!rufen!!_", "_!!==an==rufen!!_"],
+            ["_!!sehen!!_", "_!!==fern==sehen!!_"],
+            ["_!!räumen!!_", "_!!==auf==räumen!!_"]
           ]
         },
         {
@@ -103,12 +103,12 @@
           "title": "Satzklammer amb verb separable (oració enunciativa)",
           "headers": ["Posició 1", "Posició 2 (arrel)", "Mig", "Final (prefix)"],
           "rows": [
-            ["_Ich_", "==wache==", "_um halb sieben_", "==auf==."],
-            ["_Du_", "==stehst==", "_um Viertel vor sieben_", "==auf==."],
-            ["_Sie_", "==räumt==", "_die Wohnung_", "==auf==."],
-            ["_Wir_", "==schlafen==", "_morgen_", "==aus==."],
-            ["_Ihr_", "==seht==", "_am Nachmittag_", "==fern==."],
-            ["_Sie_", "==rufen==", "_den Arzt_", "==an==."]
+            ["_!!Ich!!_", "!!==wache==!!", "_!!um halb sieben!!_", "!!==auf==.!!"],
+            ["_!!Du!!_", "!!==stehst==!!", "_!!um Viertel vor sieben!!_", "!!==auf==.!!"],
+            ["_!!Sie!!_", "!!==räumt==!!", "_!!die Wohnung!!_", "!!==auf==.!!"],
+            ["_!!Wir!!_", "!!==schlafen==!!", "_!!morgen!!_", "!!==aus==.!!"],
+            ["_!!Ihr!!_", "!!==seht==!!", "_!!am Nachmittag!!_", "!!==fern==.!!"],
+            ["_!!Sie!!_", "!!==rufen==!!", "_!!den Arzt!!_", "!!==an==.!!"]
           ],
           "caption": "Traduccions: _Em desperto a dos quarts de set._ / _Et lleves a un quart de set._ / _(Ella) endreça el pis._ / _Demà dormirem bé._ / _A la tarda mireu la tele._ / _Truquen al metge._"
         },
@@ -132,9 +132,9 @@
           "title": "Inversió + Satzklammer amb verb separable",
           "headers": ["Posició 1", "Posició 2 (arrel)", "Posició 3 (subjecte)", "Mig", "Final (prefix)"],
           "rows": [
-            ["_Um sieben Uhr_", "==stehe==", "_ich_", "—", "==auf==."],
-            ["_Heute Abend_", "==rufe==", "_ich_", "_meine Mutter_", "==an==."],
-            ["_Am Wochenende_", "==schlafen==", "_wir_", "—", "==aus==."]
+            ["_!!Um sieben Uhr!!_", "!!==stehe==!!", "_!!ich!!_", "—", "!!==auf==.!!"],
+            ["_!!Heute Abend!!_", "!!==rufe==!!", "_!!ich!!_", "_!!meine Mutter!!_", "!!==an==.!!"],
+            ["_!!Am Wochenende!!_", "!!==schlafen==!!", "_!!wir!!_", "—", "!!==aus==.!!"]
           ],
           "caption": "Traduccions: _A les set em llevo._ / _Aquest vespre truco a la meva mare._ / _El cap de setmana dormim bé._"
         },
@@ -164,10 +164,10 @@
           "title": "Contrast separable vs inseparable",
           "headers": ["Verb", "Separable?", "Accent", "Oració"],
           "rows": [
-            ["_==auf==stehen_", "Sí", "al prefix (**●**○○)", "_Ich ==stehe== ==auf==._"],
-            ["_==be==suchen_ (visitar)", "**No**", "a l'arrel (○**●**○)", "_Ich ==besuche== meine Oma._"],
-            ["_==an==kommen_ (arribar)", "Sí", "al prefix (**●**○○)", "_Er ==kommt== ==an==._"],
-            ["_==ver==stehen_ (entendre)", "**No**", "a l'arrel (○**●**○)", "_Ich ==verstehe== das._"]
+            ["_!!==auf==stehen!!_", "Sí", "al prefix (**●**○○)", "_!!Ich ==stehe== ==auf==.!!_"],
+            ["_!!==be==suchen!!_ (visitar)", "**No**", "a l'arrel (○**●**○)", "_!!Ich ==besuche== meine Oma.!!_"],
+            ["_!!==an==kommen!!_ (arribar)", "Sí", "al prefix (**●**○○)", "_!!Er ==kommt== ==an==.!!_"],
+            ["_!!==ver==stehen!!_ (entendre)", "**No**", "a l'arrel (○**●**○)", "_!!Ich ==verstehe== das.!!_"]
           ]
         },
         {
@@ -189,7 +189,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. No separar el prefix.**\nÉs l'error més típic. L'instint ens diu de mantenir el verb tal com surt al diccionari, sencer.\n\n- Incorrecte: _Ich aufstehe um sieben Uhr._ ❌\n- Correcte: _Ich ==stehe== um sieben Uhr ==auf==._ ✅\n\n**2. Conjugar el prefix.**\nEl prefix és invariable: apareix sempre exactament igual que al diccionari, independentment del subjecte.\n\n- Incorrecte: _Er ruft seine Mutter ant._ ❌ (no s'afegeix cap terminació al prefix)\n- Correcte: _Er ==ruft== seine Mutter ==an==._ ✅\n\n**3. Posar el prefix al mig de l'oració en comptes del final.**\nEl prefix ha d'anar **al final de tot**, després de tots els complements. No és una partícula que \"acompanya\" el verb; és la peça que **tanca el claudàtor**.\n\n- Incorrecte: _Ich ==stehe== ==auf== um sieben Uhr._ ❌\n- Correcte: _Ich ==stehe== um sieben Uhr ==auf==._ ✅\n\n**4. Confondre separables amb inseparables.**\nSi veus un verb que comença amb _be-, ver-, er-, ent-…_, ==no el separis==. _verstehen_ no és \"separable\", és _ich verstehe das_ (sencer, amb accent a _-steh-_).\n\n- Incorrecte: _Ich stehe das ver._ ❌\n- Correcte: _Ich ==verstehe== das._ ✅\n\n**5. Oblidar-se del prefix quan l'oració és llarga.**\nQuan l'oració té molts complements, és fàcil arribar al final i no recordar que havies de \"tancar el claudàtor\". Consell: quan comencis una oració amb un verb separable, ==pensa ja el prefix== abans de començar a parlar.\n\n- Incorrecte: _Ich rufe heute Abend meinen Bruder in München._ ❌ (falta _an_ al final)\n- Correcte: _Ich ==rufe== heute Abend meinen Bruder in München ==an==._ ✅"
+          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. No separar el prefix.**\nÉs l'error més típic. L'instint ens diu de mantenir el verb tal com surt al diccionari, sencer.\n\n- Incorrecte: _Ich aufstehe um sieben Uhr._ ❌\n- Correcte: _!!Ich ==stehe== um sieben Uhr ==auf==.!!_ ✅\n\n**2. Conjugar el prefix.**\nEl prefix és invariable: apareix sempre exactament igual que al diccionari, independentment del subjecte.\n\n- Incorrecte: _Er ruft seine Mutter ant._ ❌ (no s'afegeix cap terminació al prefix)\n- Correcte: _!!Er ==ruft== seine Mutter ==an==.!!_ ✅\n\n**3. Posar el prefix al mig de l'oració en comptes del final.**\nEl prefix ha d'anar **al final de tot**, després de tots els complements. No és una partícula que \"acompanya\" el verb; és la peça que **tanca el claudàtor**.\n\n- Incorrecte: _Ich ==stehe== ==auf== um sieben Uhr._ ❌\n- Correcte: _!!Ich ==stehe== um sieben Uhr ==auf==.!!_ ✅\n\n**4. Confondre separables amb inseparables.**\nSi veus un verb que comença amb _be-, ver-, er-, ent-…_, ==no el separis==. _verstehen_ no és \"separable\", és _ich verstehe das_ (sencer, amb accent a _-steh-_).\n\n- Incorrecte: _Ich stehe das ver._ ❌\n- Correcte: _!!Ich ==verstehe== das.!!_ ✅\n\n**5. Oblidar-se del prefix quan l'oració és llarga.**\nQuan l'oració té molts complements, és fàcil arribar al final i no recordar que havies de \"tancar el claudàtor\". Consell: quan comencis una oració amb un verb separable, ==pensa ja el prefix== abans de començar a parlar.\n\n- Incorrecte: _Ich rufe heute Abend meinen Bruder in München._ ❌ (falta _an_ al final)\n- Correcte: _!!Ich ==rufe== heute Abend meinen Bruder in München ==an==.!!_ ✅"
         },
         {
           "type": "callout",
@@ -245,16 +245,16 @@
           "title": "25.2 Satzklammer amb verb separable en una línia",
           "headers": ["Posició 1", "Posició 2 (arrel)", "Mig", "Final (prefix)"],
           "rows": [
-            ["_Ich_", "==stehe==", "_um 7 Uhr_", "==auf==."],
-            ["_Wir_", "==sehen==", "_am Abend_", "==fern==."],
-            ["_Sie_", "==rufen==", "_den Arzt_", "==an==."]
+            ["_!!Ich!!_", "!!==stehe==!!", "_!!um 7 Uhr!!_", "!!==auf==.!!"],
+            ["_!!Wir!!_", "!!==sehen==!!", "_!!am Abend!!_", "!!==fern==.!!"],
+            ["_!!Sie!!_", "!!==rufen==!!", "_!!den Arzt!!_", "!!==an==.!!"]
           ]
         },
         {
           "type": "callout",
           "variant": "tip",
           "title": "Pista pràctica",
-          "body": "Quan aprenguis un verb nou que comenci per _auf-, aus-, an-, ein-, mit-_…, apunta-t'ho mentalment com a separable i practica l'oració sencera. _Ich stehe um 7 Uhr auf._ _Wir sehen am Abend fern._ _Sie rufen den Arzt an._ Repetir-ho en veu alta fa que el cervell s'acostumi a \"tancar el claudàtor\" sense esforç."
+          "body": "Quan aprenguis un verb nou que comenci per _auf-, aus-, an-, ein-, mit-_…, apunta-t'ho mentalment com a separable i practica l'oració sencera. _!!Ich stehe um 7 Uhr auf.!!_ _!!Wir sehen am Abend fern.!!_ _!!Sie rufen den Arzt an.!!_ Repetir-ho en veu alta fa que el cervell s'acostumi a \"tancar el claudàtor\" sense esforç."
         },
         {
           "type": "callout",
