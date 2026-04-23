@@ -48,3 +48,5 @@ coverage/
 
 # Imatges temporals abans del processament amb npm run add-image
 .tmp-images/
+downloaded-farben/
+downloaded-*/
