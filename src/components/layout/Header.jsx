@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Settings as SettingsIcon } from 'lucide-react';
 import { useT } from '@/i18n';
 import { Logo } from '@/components/ui/Logo.jsx';
+import { useSettingsStore } from '@/store/useSettingsStore.js';
 
 /*
  * Header editorial · §17.1 + §5 ARCHITECTURE
@@ -11,17 +12,19 @@ import { Logo } from '@/components/ui/Logo.jsx';
  * ara només a /settings (decisió intencional).
  */
 
+// §112: settings no és un NavLink; és un botó que obre el modal. La
+// resta de nav items van a rutes com abans.
 const NAV_ITEMS = [
   { to: '/', key: 'nav.home', end: true },
   { to: '/temari', key: 'nav.topics' },
   { to: '/rutes', key: 'nav.paths' },
   { to: '/progres', key: 'nav.progress' },
-  { to: '/settings', key: 'nav.settings' },
 ];
 
 export function Header() {
   const { t } = useT();
   const [menuOpen, setMenuOpen] = useState(false);
+  const openSettings = useSettingsStore((s) => s.setSettingsOpen);
 
   const linkClass = ({ isActive }) =>
     [
@@ -48,11 +51,22 @@ export function Header() {
               {t(item.key)}
             </NavLink>
           ))}
+          <button
+            type="button"
+            onClick={() => openSettings(true)}
+            className={[
+              'px-3 py-2 font-mono text-[11px] uppercase tracking-[0.14em]',
+              'text-reader-muted hover:text-reader-ink-2',
+              'transition-colors duration-fast ease-standard',
+              'inline-flex items-center gap-1.5 bg-transparent border-0',
+            ].join(' ')}
+            aria-label={t('nav.settings')}
+            title={t('nav.settings')}
+          >
+            <SettingsIcon size={14} aria-hidden="true" strokeWidth={1.75} />
+            <span>{t('nav.settings')}</span>
+          </button>
         </nav>
-
-        {/* La icona circular de Settings s'ha mogut al footer global
-            per coherència visual — tot el header és quadrat/editorial
-            i l'icona gear desentonava. Vegeu AppShell footer. §103 polit. */}
 
         <button
           type="button"
@@ -102,13 +116,22 @@ export function Header() {
                 {t(item.key)}
               </NavLink>
             ))}
-            <NavLink
-              to="/settings"
-              className={linkClass}
-              onClick={() => setMenuOpen(false)}
+            <button
+              type="button"
+              onClick={() => {
+                setMenuOpen(false);
+                openSettings(true);
+              }}
+              className={[
+                'px-3 py-2 font-mono text-[11px] uppercase tracking-[0.14em]',
+                'text-reader-muted hover:text-reader-ink-2 text-left',
+                'transition-colors duration-fast ease-standard',
+                'inline-flex items-center gap-1.5 bg-transparent border-0',
+              ].join(' ')}
             >
-              {t('nav.settings')}
-            </NavLink>
+              <SettingsIcon size={14} aria-hidden="true" strokeWidth={1.75} />
+              <span>{t('nav.settings')}</span>
+            </button>
           </nav>
         </div>
       </div>

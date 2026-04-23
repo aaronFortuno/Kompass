@@ -57,6 +57,11 @@ export const DEFAULT_SETTINGS = {
   bgMusicEnabled: false,
   bgMusicVolume: 0.35,
   bgMusicTrack: null,
+  // §112: modal d'ajustaments global. Transient (no persistit). Es
+  // controla via setSettingsOpen / toggleSettings. El NAV/cog de header
+  // i el cog del reader + tecla `c` comparteixen aquest flag perquè
+  // hi hagi un únic punt d'obertura del modal.
+  settingsOpen: false,
 };
 
 export const useSettingsStore = create(
@@ -100,6 +105,8 @@ export const useSettingsStore = create(
       },
       setBgMusicTrack: (track) =>
         set({ bgMusicTrack: track == null ? null : String(track) }),
+      setSettingsOpen: (v) => set({ settingsOpen: Boolean(v) }),
+      toggleSettings: () => set((s) => ({ settingsOpen: !s.settingsOpen })),
 
       update: (patch) => set(patch),
       reset: () => set({ ...DEFAULT_SETTINGS }),

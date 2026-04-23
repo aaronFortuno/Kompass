@@ -34,7 +34,6 @@ import {
   SpeakableText,
   markNextSpeakableClickProgrammatic,
 } from '@/components/reader/SpeakableText.jsx';
-import { ReaderSettingsDrawer } from '@/components/reader/ReaderSettingsDrawer.jsx';
 import { ReaderExerciseEngine } from '@/components/reader/ReaderExerciseEngine.jsx';
 import { ReaderEntrySplash } from '@/components/reader/ReaderEntrySplash.jsx';
 
@@ -1669,7 +1668,11 @@ export function FocusReader({ topic }) {
   // següent/anterior beat preservant fastMode (salt continu).
   const [fastMode, setFastMode] = useState(false);
   // Drawer de settings (§79): s'obre amb "c" o el botó ⚙ del peu.
-  const [drawerOpen, setDrawerOpen] = useState(false);
+  // §112: el drawer d'ajustaments del reader ha estat substituït per
+  // el modal global (src/components/settings/SettingsModal.jsx). El
+  // reader llegeix el mateix flag del store i l'obre amb cog/tecla c.
+  const settingsOpen = useSettingsStore((s) => s.settingsOpen);
+  const setSettingsOpen = useSettingsStore((s) => s.setSettingsOpen);
   // Sidebar (índex de la lliçó) · a ≥1500px és pinned a la dreta; entre
   // 900-1499px funciona com a drawer amb tirador i backdrop — evita que
   // es solapi amb el backdrop del beat a amples mitjans. Sota 900px
@@ -1944,7 +1947,7 @@ export function FocusReader({ topic }) {
     const onKey = (e) => {
       // Si el drawer està obert o el splash està actiu, ignorem dreceres
       // del reader (cada un té el seu propi handler que absorbeix).
-      if (drawerOpen || splashVisible) return;
+      if (settingsOpen || splashVisible) return;
 
       if (e.key === 'Escape') {
         e.preventDefault();
@@ -1966,7 +1969,7 @@ export function FocusReader({ topic }) {
       if ((e.key === 'c' || e.key === 'C') && !e.ctrlKey && !e.metaKey && !e.altKey) {
         if (inInput) return;
         e.preventDefault();
-        setDrawerOpen(true);
+        setSettingsOpen(true);
         return;
       }
 
@@ -2044,7 +2047,7 @@ export function FocusReader({ topic }) {
     };
     window.addEventListener('keydown', onKey, true);
     return () => window.removeEventListener('keydown', onKey, true);
-  }, [closeReader, goBeat, goStep, goBlock, skipOrAdvance, drawerOpen, splashVisible, settings.autoPlay, navigate, topic.id]);
+  }, [closeReader, goBeat, goStep, goBlock, skipOrAdvance, settingsOpen, splashVisible, settings.autoPlay, navigate, topic.id]);
 
   // Tap/clic a l'àrea de contingut (fora de botons i pills interactives):
   // acaba el typewriter del beat actual i pausa l'autoplay. Un gest
@@ -2056,7 +2059,7 @@ export function FocusReader({ topic }) {
   const lastTouchRef = useRef(0);
   const onContentClick = useCallback(
     (e) => {
-      if (splashVisible || drawerOpen) return;
+      if (splashVisible || settingsOpen) return;
       if (Date.now() - lastTouchRef.current < 400) return;
       const el = e.target;
       if (!el || typeof el.closest !== 'function') return;
@@ -2066,7 +2069,7 @@ export function FocusReader({ topic }) {
       setFastMode(true);
       if (settings.autoPlay) setAutoPlayPaused(true);
     },
-    [splashVisible, drawerOpen, settings.autoPlay],
+    [splashVisible, settingsOpen, settings.autoPlay],
   );
 
   // Navegació amb scroll del ratolí / trackpad. Cada scroll amunt/avall
@@ -2075,7 +2078,7 @@ export function FocusReader({ topic }) {
   const wheelTsRef = useRef(0);
   const onWheel = useCallback(
     (e) => {
-      if (splashVisible || drawerOpen) return;
+      if (splashVisible || settingsOpen) return;
       if (isFullMode) return; // al mode full, el scroll natural del contingut manda
       const tag = document.activeElement?.tagName?.toLowerCase();
       // Dins d'un input/textarea no interceptem (podrien voler seleccionar text)
@@ -2091,7 +2094,7 @@ export function FocusReader({ topic }) {
       if (handled) return;
       goBeat(d);
     },
-    [splashVisible, drawerOpen, isFullMode, goBeat],
+    [splashVisible, settingsOpen, isFullMode, goBeat],
   );
 
   // Ref estable a goBeat per cridar-lo des de timers/altres effects sense
@@ -2137,7 +2140,7 @@ export function FocusReader({ topic }) {
     settings.autoPlay &&
     !isFullMode &&
     !splashVisible &&
-    !drawerOpen &&
+    !settingsOpen &&
     !!beat &&
     beat.type !== 'exercise' &&
     !isAtEnd;
@@ -2231,7 +2234,7 @@ export function FocusReader({ topic }) {
   const onTouchEnd = (e) => {
     if (!touchRef.current.active) return;
     touchRef.current.active = false;
-    if (splashVisible || drawerOpen) return;
+    if (splashVisible || settingsOpen) return;
     const t0 = e.changedTouches[0];
     const dx = t0.clientX - touchRef.current.x;
     const dy = t0.clientY - touchRef.current.y;
@@ -2626,7 +2629,7 @@ export function FocusReader({ topic }) {
           <button
             type="button"
             className="kf-foot-icon"
-            onClick={() => setDrawerOpen(true)}
+            onClick={() => setSettingsOpen(true)}
             aria-label={t('nav.settings')}
             title={t('nav.settings') + ' (c)'}
           >
@@ -2655,10 +2658,8 @@ export function FocusReader({ topic }) {
         </div>
       ) : null}
 
-      <ReaderSettingsDrawer
-        open={drawerOpen}
-        onClose={() => setDrawerOpen(false)}
-      />
+      {/* El modal d'ajustaments viu global a App.jsx (§112). Aquí
+          només obrim el flag; no renderitzem cap component propi. */}
 
       <TabImageLightbox
         state={lightboxState}

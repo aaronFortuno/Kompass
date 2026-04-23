@@ -113,13 +113,11 @@ per endavant — només les que tinguin feedback real.)
 ### A1a-V1 · Zahlen
 
 - **Contingut:**
-  - [✓] [nucleo-0-12 · 10/16] "Al telèfon sovint s'evita confondre...": nota confusa.  — *fet: reescrit com "Pronunciat 'zííben' (s → z, ie llarga). Al telèfon de vegades es prefereix dir-lo amb cura per no confondre'l amb altres xifres curtes."*
-  - [✓] [nucleo-0-12 · 11/16] "aspiració forta" per -cht no és correcte.  — *fet: reescrit com "la terminació _-cht_ sona amb una fricció guttural (com la _j_ castellana però més suau)".*
-  - [✓] [nucleo-0-12 · 14/16] "Curt i a part del patró. Igual de curt que en català (onze)" — anàlisi incorrecta.  — *fet: reescrit com "Fora del patró: no deriva d'ein-. Pronunciat amb e oberta i f final clara."*
-  - [✓] [nucleo-0-12 · 15/16] "Típica del rellotge." — frase òrfena.  — *fet: reescrit com "La ö es pronuncia amb llavis de o i llengua en posició d'e. Sovint és la primera paraula 'amb umlaut' que memoritzes de veritat perquè es diu molt al rellotge."*
-  - [✓] [nucleo-0-12 · 16/16] àudios de zehn/vier/drei/neun al callout.  — *fet: `!!zehn!! !!vier!! !!drei!! !!neun!!` dins del callout de pronúncia.*
+  - [A1a-V1 · teens · 1/6] aquí la paraula "teens" com que és alemany en una frase en català, posem-ho en cursiva
+  - [A1a-V1 · decenas · 3/5] posem àudio de zwanzig, vierzig i fünfzig aquí
 - **Tècnic:**
 - **Estructural:**
+  - Quan presentem teens i desenes ens falta sentir-les totes: dreizehn, vierzehn, fünfzehn... dreissig, vierzig, fünfzig... no només un parell d'exemples, fem-les totes, potser en una taula a 5 files
 
 ### A1a-V2 · Alphabet
 
@@ -172,14 +170,14 @@ format ric.)*
 ### Reader
 
 - **Bug:** 
-  - [✓] Highlight `==...==` desequilibrat verticalment (més zona inferior que superior).  — *fet: `.k-mark` ara té `padding: 0.14em 4px 0.06em` (més amunt) + `box-decoration-break: clone` per respectar el padding en multi-línia.*
+  - *
 - **Polit:**
   - Hem de decidir a les pàgines de parany com [A1a-1 · pitfalls · 3/6] si volem generar i reproduir àudios erronis o no, però fer-ho o mai o sempre. En aquesta lliçó tenim àudios d'exemples incorrectes, però en altres pitfalls no els tenim, pedagògicament no sé què val més la pena.  — *pendent de decisió teva*
 
 ### Temari / Progrés / Home
 
 - **Bug:**
-  - [✓] Typewriter desactivat + fletxa avall no avança (requereix segon ↓).  — *fet: `skipOrAdvance` ara detecta `settings.typewriter === false` i avança directament sense activar fastMode.*
+  - *
 - **Polit:**
   - Detectat a [A1a-1 · check-personal · 1/1] però aplica a més exercicis. Els exercicis d'escriure una paraula sovint deixen un espai lliure enorme. En aquest cas tenim "Hallo, ___ heisse Marc." però l'espai lliure és tan llarg com dues vegades la frase i això fa que se'ns mostri en dues files. És absolutament innecessari. Podríem deixar un espai mínim de 5-10 caràcters i si la paraula és més llarga que el text posterior s'ajusti automàticament, però no fer aquests salts tan grans
   - També aquí a [A1a-1 · check-personal · 1/1]: quan se'ns indica que és correcte el layout queda així: "Hallo         (tick) Correcte -al final de línia // ich // heisse Marc.", en tres línies. La comprovació de si és correcte o no l'únic que hauria de fer és mostrar en verd-vermell un camp (ja entrarem en si taronja com "parcialment vàlid", "vigila!" o "millorable", en estadis posteriors) però en cap cas és alterar el layout. El "tick- correcte" no hauria de desplaçar ni modificar el contingut o posicionat de l'exercici.
@@ -191,8 +189,6 @@ format ric.)*
 - **Bug:**
 - **Polit:**
   - El flow per resoldre exercicis dropdown és una mica confús en general, sobretot quan venim de moure'ns amb teclat. Cal fer un plantejament de com ho volem fer perquè sigui intuïtiu. Ara mateix no ho definiria com intuïtiu, sincerament. No és que sigui molt difícil, però tampoc surt espontàniament. Bàsicament és tema de tabuladors, focus, funcionalitat de fletxes, etc. No sé com ho hem de resoldre, potser cal investigar com ho solucionen altres plataformes reconegudes.
-
-
 
 ### Estructural
 
