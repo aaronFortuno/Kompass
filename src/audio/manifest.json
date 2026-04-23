@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-23T06:06:38.676Z",
-  "totalStrings": 1807,
-  "totalChars": 28467,
+  "generatedAt": "2026-04-23T07:27:22.504Z",
+  "totalStrings": 1903,
+  "totalChars": 30365,
   "entries": [
     {
       "hash": "00083a6e13bccdb336bccc13c4a6a13ddced3cf2",
@@ -34,6 +34,20 @@
         {
           "topic": "A1a-30",
           "path": "steps[5].blocks[0].body#inline[3]"
+        }
+      ]
+    },
+    {
+      "hash": "00236ff3ca8fc7d97ffc8451a926a6d29a423d03",
+      "text": "der Cousin",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[7].pron"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[1].rows[7][0]#inline[0]"
         }
       ]
     },
@@ -156,6 +170,14 @@
       "text": "die Schwester",
       "sources": [
         {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[7].pron"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[0].rows[8][0]#inline[0]"
+        },
+        {
           "topic": "A1a-4",
           "path": "steps[4].blocks[2].body#inline[7]"
         }
@@ -208,6 +230,20 @@
         {
           "topic": "A1a-25",
           "path": "steps[6].blocks[1].rows[1][1]#inline[0]"
+        }
+      ]
+    },
+    {
+      "hash": "0299dca6656972ba16b975bc1e00453fdfcab7e7",
+      "text": "das Auto ist rot",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[5].comparison[1].de"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[6].pitfalls[0].good"
         }
       ]
     },
@@ -364,6 +400,16 @@
       ]
     },
     {
+      "hash": "04b79b1fb4a94f4329f05e05d8038df8a3bb1110",
+      "text": "unser Kind / unsere Kinder",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[2].pairs[4].possessive"
+        }
+      ]
+    },
+    {
       "hash": "04db99044390b1d802a3af7756f21896db342b44",
       "text": "Endung",
       "sources": [
@@ -508,6 +554,16 @@
         {
           "topic": "A1a-32",
           "path": "steps[1].blocks[0].body#inline[1]"
+        }
+      ]
+    },
+    {
+      "hash": "0629ce178cd6baa1b122a1f928285daac008faad",
+      "text": "mein Eltern",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[6].pitfalls[1].bad"
         }
       ]
     },
@@ -710,6 +766,20 @@
       ]
     },
     {
+      "hash": "0893e7347dc7c1431e5007d23a3996d544bf8461",
+      "text": "Mein Bruder ist ledig.",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[5].tabs[1].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[5].tabs[1].example.de#whole"
+        }
+      ]
+    },
+    {
       "hash": "08c7fe84041032e24f76993fd24105101609ac72",
       "text": "gegen",
       "sources": [
@@ -884,6 +954,20 @@
       ]
     },
     {
+      "hash": "09c903463daa330cc80e64c276ba32018a0eff2d",
+      "text": "Meine Oma kocht sehr gut.",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[1].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[1].example.de#whole"
+        }
+      ]
+    },
+    {
       "hash": "09cd68a2a77b22a312dded612dd0d9988685189f",
       "text": "es",
       "sources": [
@@ -974,6 +1058,14 @@
         {
           "topic": "A1a-12",
           "path": "steps[1].blocks[2].body#inline[2]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[5].pron"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[1].rows[5][0]#inline[0]"
         }
       ]
     },
@@ -1720,6 +1812,16 @@
       ]
     },
     {
+      "hash": "10ac4f298f37d903afb077766a630d6791a9d07c",
+      "text": "Welche Farbe haben deine Augen? — Sie sind blau.",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[4].examples[2].de#whole"
+        }
+      ]
+    },
+    {
       "hash": "10cc358a663b395699561bb0f7361888f3ad12a2",
       "text": "Es gibt keinen Schrank.",
       "sources": [
@@ -2042,6 +2144,10 @@
         {
           "topic": "A1a-25",
           "path": "steps[6].blocks[1].rows[2][2]#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[2].pairs[4].personal"
         }
       ]
     },
@@ -2062,6 +2168,16 @@
         {
           "topic": "A1a-22",
           "path": "steps[16].blocks[1].rows[1][3]#inline[0]"
+        }
+      ]
+    },
+    {
+      "hash": "143e3b6a00bf2b3a8ecb56f1678fe2e5115cb071",
+      "text": "Das Gras ist grün.",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[1].tabs[2].example.de#whole"
         }
       ]
     },
@@ -2130,6 +2246,24 @@
         {
           "topic": "A1a-7",
           "path": "steps[0].blocks[0].body#inline[3]"
+        }
+      ]
+    },
+    {
+      "hash": "14d8bb1fad86dcac8d2dcb64bf2610bc12ce6294",
+      "text": "gelb",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[1].tabs[3].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[1].tabs[3].pron"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[7].tables[0].rows[3][0]#inline[0]"
         }
       ]
     },
@@ -2444,6 +2578,16 @@
       ]
     },
     {
+      "hash": "19daa25afbc066b1e36f1c591ec9655c1661f258",
+      "text": "sein Sohn / seine Tochter",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[2].pairs[2].possessive"
+        }
+      ]
+    },
+    {
       "hash": "19e27f5bb1b9b51a1dff81a6d8775668bbbbc5bb",
       "text": "Nachmittags gehe ich spazieren.",
       "sources": [
@@ -2500,6 +2644,16 @@
         {
           "topic": "A1a-26",
           "path": "steps[3].blocks[2].body#inline[3]"
+        }
+      ]
+    },
+    {
+      "hash": "1a5584c08fc187579d6d92c00b532a49074292b4",
+      "text": "Welche Farbe hat deine Tasche?",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[4].examples[1].de#inline[0]"
         }
       ]
     },
@@ -2744,6 +2898,20 @@
         {
           "topic": "A1a-21",
           "path": "steps[5].blocks[1].rows[2][2]#inline[0]"
+        }
+      ]
+    },
+    {
+      "hash": "1c59143295a8013ce3ae494ef3a6dc0b560d7cad",
+      "text": "der Großvater",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[0].pron"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[1].rows[0][0]#inline[0]"
         }
       ]
     },
@@ -3108,6 +3276,14 @@
       "text": "der Vater",
       "sources": [
         {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[0].pron"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[0].rows[0][0]#inline[0]"
+        },
+        {
           "topic": "A1a-5",
           "path": "steps[3].blocks[0].body#inline[0]"
         }
@@ -3222,6 +3398,20 @@
         {
           "topic": "A1a-5",
           "path": "steps[8].blocks[0].body#inline[8]"
+        }
+      ]
+    },
+    {
+      "hash": "20c09cacd43b1b86b8232857f9190b0180e10e08",
+      "text": "Mein Vater heißt Klaus.",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[0].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[0].example.de#whole"
         }
       ]
     },
@@ -3520,6 +3710,16 @@
       ]
     },
     {
+      "hash": "22a7f8170f2cea47529608e472698f59a5b4858c",
+      "text": "Der Hund ist braun.",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[3].examples[0].de#whole"
+        }
+      ]
+    },
+    {
       "hash": "22e933ebc8e7301676db7b8ccfe844e39356e040",
       "text": "im Januar",
       "sources": [
@@ -3776,6 +3976,20 @@
       ]
     },
     {
+      "hash": "25c7ba2b172fbd1c8dae84cfebcaafdc84b86e2b",
+      "text": "Mein Onkel Peter ist lustig.",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[5].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[5].example.de#whole"
+        }
+      ]
+    },
+    {
       "hash": "25d57dde748ce985ef1beb1337c16ec4b3cda43c",
       "text": "zu Silvester",
       "sources": [
@@ -3792,6 +4006,28 @@
         {
           "topic": "A1a-2",
           "path": "steps[8].examples[1].de"
+        }
+      ]
+    },
+    {
+      "hash": "25fcdae0c8e72565270ef1bc7b428617a5067b7f",
+      "text": "blau",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[1].tabs[1].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[1].tabs[1].pron"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[4].examples[2].de#inline[1]"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[7].tables[0].rows[1][0]#inline[0]"
         }
       ]
     },
@@ -3816,12 +4052,36 @@
       ]
     },
     {
+      "hash": "26a6033519949df841c544a791a93ed5c8a5f3d6",
+      "text": "ihr Sohn / ihre Tochter",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[2].pairs[3].possessive"
+        }
+      ]
+    },
+    {
       "hash": "26a7b216b7057a5f8c9043c6118ba6f51e849f0e",
       "text": "Anna und ihr Name",
       "sources": [
         {
           "topic": "A1a-1",
           "path": "steps[8].pitfalls[0].good"
+        }
+      ]
+    },
+    {
+      "hash": "26f5a7eb960369ed7c536896f6b30d92ec5570ad",
+      "text": "die Cousine",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[8].pron"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[1].rows[8][0]#inline[0]"
         }
       ]
     },
@@ -4270,6 +4530,16 @@
       ]
     },
     {
+      "hash": "2b4ac6a841867f1bf06a89b12ab72bb2fb17735a",
+      "text": "Ich bin geheiratet",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[6].pitfalls[3].bad"
+        }
+      ]
+    },
+    {
       "hash": "2b5e3cf69c51a0fcf48634cca39a6a6aa5ad4e31",
       "text": "die Autos",
       "sources": [
@@ -4284,6 +4554,16 @@
         {
           "topic": "A1a-5",
           "path": "steps[1].blocks[0].body#inline[5]"
+        }
+      ]
+    },
+    {
+      "hash": "2b894d9726a20247487a295edcd8cf55eadfe5be",
+      "text": "Die Nacht ist schwarz.",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[1].tabs[4].example.de#whole"
         }
       ]
     },
@@ -4322,6 +4602,20 @@
         {
           "topic": "A1a-3",
           "path": "steps[8].blocks[0].body#inline[16]"
+        }
+      ]
+    },
+    {
+      "hash": "2c3e2d4317cc1fe7c11432d866288198f4b2feb8",
+      "text": "Meine Schwester wohnt in München.",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[7].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[7].example.de#whole"
         }
       ]
     },
@@ -4524,6 +4818,20 @@
       ]
     },
     {
+      "hash": "2e88b3e9754105cab9a053841f3bfeb3285e67c0",
+      "text": "verwitwet",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[5].tabs[3].pron"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[2].rows[3][0]#inline[0]"
+        }
+      ]
+    },
+    {
       "hash": "2ec9b356a332cdfaa96fd3410b504ace7a2f9a78",
       "text": "Im Juli fahren wir nach Italien.",
       "sources": [
@@ -4670,12 +4978,50 @@
       ]
     },
     {
+      "hash": "307def1e94c69fc9a0453892b0511b8c05ea167d",
+      "text": "Ich habe zwei Geschwister.",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[8].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[8].example.de#whole"
+        }
+      ]
+    },
+    {
+      "hash": "30a5d5a3230ff1d8fff2aa6017784662aaa578c6",
+      "text": "Welche Farbe haben deine Augen?",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[4].examples[2].de#inline[0]"
+        }
+      ]
+    },
+    {
       "hash": "3106a5b2edc54d4f64a08d4a23ae4fcb447e2c62",
       "text": "Ich lerne viel, denn ich habe bald eine Prüfung.",
       "sources": [
         {
           "topic": "A1a-8",
           "path": "steps[6].blocks[0].body#inline[11]"
+        }
+      ]
+    },
+    {
+      "hash": "310a11c25248ba3582bc40d315aa76d699ee7f84",
+      "text": "Oma hat drei Enkel.",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[3].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[3].example.de#whole"
         }
       ]
     },
@@ -5406,6 +5752,28 @@
       ]
     },
     {
+      "hash": "3b3773372ab3455f8464fe13785154643ff447e8",
+      "text": "weiß",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[1].tabs[5].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[1].tabs[5].pron"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[3].examples[2].de#inline[0]"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[7].tables[0].rows[5][0]#inline[0]"
+        }
+      ]
+    },
+    {
       "hash": "3b800c8fc20903490afba3e907b04f42e93fe269",
       "text": "Anna ist müde, aber sie lernt Deutsch.",
       "sources": [
@@ -5554,6 +5922,14 @@
         {
           "topic": "A1a-12",
           "path": "steps[9].blocks[2].rows[1][2]#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[3].pron"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[0].rows[3][0]#inline[0]"
         }
       ]
     },
@@ -5694,6 +6070,16 @@
         {
           "topic": "A1a-31",
           "path": "steps[4].blocks[1].rows[1][0]#inline[0]"
+        }
+      ]
+    },
+    {
+      "hash": "3e56f273d10489ec768af34c27a0692034ea4d5c",
+      "text": "die Schwiegereltern",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[4].tables[0].rows[2][0]#inline[0]"
         }
       ]
     },
@@ -5884,6 +6270,20 @@
       ]
     },
     {
+      "hash": "40adc9f1f8b1f54b3ce72da456b35e7aa38c38d0",
+      "text": "die Großeltern",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[2].pron"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[1].rows[2][0]#inline[0]"
+        }
+      ]
+    },
+    {
       "hash": "414b1dd29e3b422716a3e784b55e976fb6309e7f",
       "text": "Im Januar",
       "sources": [
@@ -6002,6 +6402,20 @@
         {
           "topic": "A1a-35",
           "path": "steps[5].blocks[1].rows[1][0]#inline[0]"
+        }
+      ]
+    },
+    {
+      "hash": "426773cd9e7fd633cd8f131525397bf63e465879",
+      "text": "Meine Eltern wohnen in Berlin.",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[2].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[2].example.de#whole"
         }
       ]
     },
@@ -6464,6 +6878,16 @@
       ]
     },
     {
+      "hash": "4692afea46528c344c963ef0016edaadfb1423bb",
+      "text": "mein Vater / meine Mutter",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[2].pairs[0].possessive"
+        }
+      ]
+    },
+    {
       "hash": "46b46bff74f77502f47df8a6f7fc8c87af679b94",
       "text": "der Herbst",
       "sources": [
@@ -6858,6 +7282,20 @@
       ]
     },
     {
+      "hash": "4b946716d0c289a271a4a5331785b6c8a6f9f8f7",
+      "text": "geschieden",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[5].tabs[2].pron"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[2].rows[2][0]#inline[0]"
+        }
+      ]
+    },
+    {
       "hash": "4c1565f0477717150409ab4925e43204e0e66512",
       "text": "du bist",
       "sources": [
@@ -6878,6 +7316,20 @@
       ]
     },
     {
+      "hash": "4c8eae091da3090360556cff1aae3d75ffc3e01b",
+      "text": "Meine Tochter ist drei Jahre alt.",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[4].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[4].example.de#whole"
+        }
+      ]
+    },
+    {
       "hash": "4c9eecdb1da3fca12511afc7ca54bc09c1f91dde",
       "text": "Er kommt erst morgen.",
       "sources": [
@@ -6894,6 +7346,16 @@
         {
           "topic": "A1a-19",
           "path": "steps[6].blocks[2].body#inline[0]"
+        }
+      ]
+    },
+    {
+      "hash": "4cc43a760b8a7e17782db7399ca174bbcaf34776",
+      "text": "das rote Auto",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[5].comparison[0].de"
         }
       ]
     },
@@ -7180,6 +7642,10 @@
           "path": "steps[9].blocks[2].rows[4][2]#inline[1]"
         },
         {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[0].rows[6][0]#inline[0]"
+        },
+        {
           "topic": "A1a-6",
           "path": "steps[2].blocks[1].rows[3][2]#inline[0]"
         },
@@ -7344,6 +7810,16 @@
         {
           "topic": "A1a-13",
           "path": "steps[4].blocks[0].body#inline[11]"
+        }
+      ]
+    },
+    {
+      "hash": "51a47fa4950ec6a36db6b59f83c9d69f522975dc",
+      "text": "Die Karotte ist orange.",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[2].tabs[0].example.de#whole"
         }
       ]
     },
@@ -7618,6 +8094,16 @@
       ]
     },
     {
+      "hash": "57cfc2e77ee8a3babaf85358f67fbb46ac70a486",
+      "text": "Welche Farbe hat das Auto? — Das Auto ist rot.",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[4].examples[0].de#whole"
+        }
+      ]
+    },
+    {
       "hash": "581b3a264d0231a1f3e2bd9634d718d191a4c3ad",
       "text": "ich habe gegessen",
       "sources": [
@@ -7844,6 +8330,16 @@
       ]
     },
     {
+      "hash": "5a1ec5cbef680850f940309e2599f397008aa2f8",
+      "text": "das Auto ist rote",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[6].pitfalls[0].bad"
+        }
+      ]
+    },
+    {
       "hash": "5a5d340531c618a0242ee05dbaddce74896095ef",
       "text": "Es ist fünf nach halb drei.",
       "sources": [
@@ -7912,6 +8408,20 @@
         {
           "topic": "A1a-8",
           "path": "steps[0].blocks[0].body#inline[3]"
+        }
+      ]
+    },
+    {
+      "hash": "5b0520d67afc6d6c7a3e221a31a449d0283d8c2b",
+      "text": "die Tante",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[6].pron"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[1].rows[6][0]#inline[0]"
         }
       ]
     },
@@ -8014,12 +8524,36 @@
       ]
     },
     {
+      "hash": "5c7ad99905647410f22a3481e8ac0456f7ce80a5",
+      "text": "die Stiefmutter",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[4].tables[0].rows[6][0]#inline[0]"
+        }
+      ]
+    },
+    {
       "hash": "5d07d8bb88e1bbad9e39b711a989a715b9f05e0f",
       "text": "Wann arbeitest du?",
       "sources": [
         {
           "topic": "A1a-21",
           "path": "steps[1].blocks[0].body#inline[0]"
+        }
+      ]
+    },
+    {
+      "hash": "5d7b3e524e6e79e4dbcf1863129556cafe377698",
+      "text": "der Enkel",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[3].pron"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[1].rows[3][0]#inline[0]"
         }
       ]
     },
@@ -8156,12 +8690,40 @@
       ]
     },
     {
+      "hash": "5eae039d63ca1d918e80c287709d14845ba0f6e2",
+      "text": "Der Apfel ist rot.",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[1].tabs[0].example.de#whole"
+        }
+      ]
+    },
+    {
       "hash": "5ee3f305773f2ce95b54fd97fdb86ffb016043cb",
       "text": "um 12 Uhr",
       "sources": [
         {
           "topic": "A1a-21",
           "path": "steps[2].blocks[0].body#inline[2]"
+        }
+      ]
+    },
+    {
+      "hash": "5efc86ca883e265ab0bf38d45731d8612695cafa",
+      "text": "rosa",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[2].tabs[1].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[2].tabs[1].pron"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[7].tables[0].rows[9][0]#inline[0]"
         }
       ]
     },
@@ -8192,6 +8754,14 @@
         {
           "topic": "A1a-12",
           "path": "steps[9].blocks[2].rows[2][2]#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[1].pron"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[0].rows[1][0]#inline[0]"
         }
       ]
     },
@@ -8348,6 +8918,10 @@
         {
           "topic": "A1a-1",
           "path": "steps[4].pairs[2].personal"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[2].pairs[2].personal"
         }
       ]
     },
@@ -8432,6 +9006,42 @@
       ]
     },
     {
+      "hash": "60f51f5f378612cd2b7e3185085904274811f9f1",
+      "text": "Welche Farbe hat das Auto?",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[4].examples[0].de#inline[0]"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[6].pitfalls[2].good"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[7].tables[1].rows[2][1]#inline[0]"
+        }
+      ]
+    },
+    {
+      "hash": "6101d347feb0332253b5ececd8cd328d548f2541",
+      "text": "lila",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[2].tabs[2].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[2].tabs[2].pron"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[7].tables[0].rows[8][0]#inline[0]"
+        }
+      ]
+    },
+    {
       "hash": "6151a70c9c4ae470fa977637bffe985293983c76",
       "text": "neunzehnte",
       "sources": [
@@ -8478,6 +9088,16 @@
         {
           "topic": "A1a-15",
           "path": "steps[3].blocks[0].body#inline[28]"
+        }
+      ]
+    },
+    {
+      "hash": "61c0cd070ad0de31c2c1ac29c7f5f930601111a2",
+      "text": "Ich bin verheiratet",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[6].pitfalls[3].good"
         }
       ]
     },
@@ -8908,6 +9528,26 @@
       ]
     },
     {
+      "hash": "65af489b5cce4d195297274a4137956586074b72",
+      "text": "der Schwager",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[4].tables[0].rows[3][0]#inline[0]"
+        }
+      ]
+    },
+    {
+      "hash": "65c81f59fd6545c1324336ce0be5216a42296ba8",
+      "text": "Die Katze ist schwarz.",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[3].examples[1].de#whole"
+        }
+      ]
+    },
+    {
       "hash": "65caa18f6f33d5e89493dc608eb0055126c34997",
       "text": "kurz",
       "sources": [
@@ -8928,6 +9568,16 @@
         {
           "topic": "A1a-9",
           "path": "steps[2].blocks[1].rows[2][2]#inline[0]"
+        }
+      ]
+    },
+    {
+      "hash": "666c9c2a6b212ec2233e2c4edce7f1ef1311472c",
+      "text": "Welche Farbe ist das Auto?",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[6].pitfalls[2].bad"
         }
       ]
     },
@@ -8972,6 +9622,20 @@
         {
           "topic": "A1a-13",
           "path": "steps[1].blocks[0].body#inline[2]"
+        }
+      ]
+    },
+    {
+      "hash": "685e3961a2d6f904d4341b20895cce1caa02948d",
+      "text": "Meine Mutter ist Lehrerin.",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[1].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[1].example.de#whole"
         }
       ]
     },
@@ -9034,6 +9698,20 @@
         {
           "topic": "A1a-21",
           "path": "steps[5].blocks[0].body#inline[1]"
+        }
+      ]
+    },
+    {
+      "hash": "68ccf60f63eae8f428a1ba0a7f0890c9d80cc220",
+      "text": "Wir haben zwei Kinder.",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[5].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[5].example.de#whole"
         }
       ]
     },
@@ -9260,6 +9938,16 @@
       ]
     },
     {
+      "hash": "6bea1bf607b9be46ce44ac3889f6c11b1267bc56",
+      "text": "das Kind és femení perquè és 'nena'",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[6].pitfalls[0].bad"
+        }
+      ]
+    },
+    {
       "hash": "6c2c9b33093e6047bfcce4e787751d40bf3ca5c2",
       "text": "Ich habe Deutsch gelernt",
       "sources": [
@@ -9400,6 +10088,16 @@
         {
           "topic": "A1a-7",
           "path": "steps[8].blocks[0].body#inline[1]"
+        }
+      ]
+    },
+    {
+      "hash": "6e53e5c3a058c538e3b4f06b4ec653e60cbb396e",
+      "text": "die Tasche ist schwarz",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[6].pitfalls[1].good"
         }
       ]
     },
@@ -9604,6 +10302,20 @@
         {
           "topic": "A1a-15",
           "path": "steps[8].blocks[0].body#inline[10]"
+        }
+      ]
+    },
+    {
+      "hash": "702923515d1187a7910dce8b42dfb94095a1f7a0",
+      "text": "Meine Tante ist geschieden.",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[5].tabs[2].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[5].tabs[2].example.de#whole"
         }
       ]
     },
@@ -9958,6 +10670,16 @@
         {
           "topic": "A1a-20",
           "path": "steps[3].blocks[0].body#inline[3]"
+        }
+      ]
+    },
+    {
+      "hash": "74d5a4d8623ce16846c7061c932e5caa840f3a8c",
+      "text": "der Stiefvater",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[4].tables[0].rows[5][0]#inline[0]"
         }
       ]
     },
@@ -10446,6 +11168,20 @@
       ]
     },
     {
+      "hash": "79b78749fee239601125e6ecf851032a531c3a4c",
+      "text": "Meine Tante Lisa ist Ärztin.",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[6].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[6].example.de#whole"
+        }
+      ]
+    },
+    {
       "hash": "79bc474fd23482f164f5d4166847526bfd764b00",
       "text": "unsere",
       "sources": [
@@ -10578,6 +11314,20 @@
         {
           "topic": "A1a-2",
           "path": "steps[1].examples[0].de#inline[0]"
+        }
+      ]
+    },
+    {
+      "hash": "7b098fd2e5cc0b698ba66b19e5e56b0ee1e35419",
+      "text": "die Eltern",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[2].pron"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[0].rows[2][0]#inline[0]"
         }
       ]
     },
@@ -10754,6 +11504,20 @@
         {
           "topic": "A1a-3",
           "path": "steps[4].blocks[0].body#inline[18]"
+        }
+      ]
+    },
+    {
+      "hash": "7d72b130cc7ce96c806dede44286b947ec1feec8",
+      "text": "ledig",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[5].tabs[1].pron"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[2].rows[1][0]#inline[0]"
         }
       ]
     },
@@ -11312,6 +12076,20 @@
       ]
     },
     {
+      "hash": "822a3949f0c1f7ca206b30b0e6bb98461c9ab254",
+      "text": "die Großmutter",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[1].pron"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[1].rows[1][0]#inline[0]"
+        }
+      ]
+    },
+    {
       "hash": "823c1e79fcc29f803cf147e90983e7a8d0bfb5a5",
       "text": "gut",
       "sources": [
@@ -11498,6 +12276,16 @@
         {
           "topic": "A1a-3",
           "path": "steps[2].blocks[2].body#inline[8]"
+        }
+      ]
+    },
+    {
+      "hash": "84518643cab0534ae80ba590ffb8383b3dbed3b0",
+      "text": "die Oma",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[1].rows[1][0]#inline[1]"
         }
       ]
     },
@@ -11794,6 +12582,14 @@
       "text": "der Bruder",
       "sources": [
         {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[6].pron"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[0].rows[7][0]#inline[0]"
+        },
+        {
           "topic": "A1a-4",
           "path": "steps[4].blocks[2].body#inline[4]"
         }
@@ -11826,6 +12622,20 @@
         {
           "topic": "A1a-3",
           "path": "steps[6].blocks[0].body#inline[14]"
+        }
+      ]
+    },
+    {
+      "hash": "88396723ffef72830c7101011945cd3d494b53c9",
+      "text": "verheiratet",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[5].tabs[0].pron"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[2].rows[0][0]#inline[0]"
         }
       ]
     },
@@ -12036,6 +12846,16 @@
       ]
     },
     {
+      "hash": "8b845d39bc50e02b4a00b39e57c5117d48e8c639",
+      "text": "der Schwiegervater",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[4].tables[0].rows[0][0]#inline[0]"
+        }
+      ]
+    },
+    {
       "hash": "8b9f2a5a5e8e826a929fc5d2b7d611ed8d1b0c58",
       "text": "Die Miete ist 300 Euro.",
       "sources": [
@@ -12128,6 +12948,46 @@
       ]
     },
     {
+      "hash": "8c6817dd91d62fc7271256117e0795e5055b4ddd",
+      "text": "schwarz",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[1].tabs[4].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[1].tabs[4].pron"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[3].examples[1].de#inline[0]"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[4].examples[1].de#inline[1]"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[7].tables[0].rows[4][0]#inline[0]"
+        }
+      ]
+    },
+    {
+      "hash": "8c6bd398c1db99bde67f99171aa3b53071a34689",
+      "text": "die Geschwister",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[8].pron"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[0].rows[9][0]#inline[0]"
+        }
+      ]
+    },
+    {
       "hash": "8cc76c1c6a2d9180eee83225bb726dba92f24cee",
       "text": "Ich mag den Balkon.",
       "sources": [
@@ -12138,6 +12998,34 @@
         {
           "topic": "A1a-32",
           "path": "steps[5].blocks[0].body#inline[2]"
+        }
+      ]
+    },
+    {
+      "hash": "8ccf92bd8535c1a53b1212533fdf833a9bda2ff7",
+      "text": "Mein Cousin lebt in Berlin.",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[7].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[7].example.de#whole"
+        }
+      ]
+    },
+    {
+      "hash": "8cf49c48423e683b9be327d4f5bafe4d52a64f03",
+      "text": "Meine Großeltern sind aus Hamburg.",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[2].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[2].example.de#whole"
         }
       ]
     },
@@ -12272,6 +13160,16 @@
         {
           "topic": "A1a-28",
           "path": "steps[2].blocks[2].body#inline[2]"
+        }
+      ]
+    },
+    {
+      "hash": "8deaa1c94de04bec6be33648f21a8ed445f05c77",
+      "text": "Der Schnee ist weiß.",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[1].tabs[5].example.de#whole"
         }
       ]
     },
@@ -12802,6 +13700,20 @@
       ]
     },
     {
+      "hash": "93928201caab3e2a0dcc108249c11c855572fd57",
+      "text": "Die Blumen sind rot.",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[3].examples[3].de#whole"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[7].tables[1].rows[1][1]#inline[0]"
+        }
+      ]
+    },
+    {
       "hash": "939dd1b5b6c15cd7ca8c77e16f2a28168041d362",
       "text": "um 8 (Uhr)",
       "sources": [
@@ -12878,6 +13790,16 @@
         {
           "topic": "A1a-25",
           "path": "steps[5].blocks[1].rows[1][2]#inline[0]"
+        }
+      ]
+    },
+    {
+      "hash": "956424216ac9bc0758f41e6e265015d20709a91c",
+      "text": "Ich habe eine Geschwister",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[6].pitfalls[2].bad"
         }
       ]
     },
@@ -13508,6 +14430,16 @@
       ]
     },
     {
+      "hash": "9e1c000930886478b5d801ea780c71285e1376ad",
+      "text": "der Opa",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[1].rows[0][0]#inline[1]"
+        }
+      ]
+    },
+    {
       "hash": "9e2e066b519605026630ff7140019fab65e557c4",
       "text": "Ich gratuliere dem Thomas",
       "sources": [
@@ -13800,6 +14732,20 @@
         {
           "topic": "A1a-25",
           "path": "steps[5].blocks[1].rows[4][2]#inline[0]"
+        }
+      ]
+    },
+    {
+      "hash": "a2311ed6c4bd74c0c823215e33acdc9c7e1ecf2b",
+      "text": "Ich bin seit zehn Jahren verheiratet.",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[5].tabs[0].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[5].tabs[0].example.de#whole"
         }
       ]
     },
@@ -14382,6 +15328,20 @@
       ]
     },
     {
+      "hash": "a7b64014499fd2e6f2423498b99ee3d34a42d65b",
+      "text": "die Enkelin",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[4].pron"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[1].rows[4][0]#inline[0]"
+        }
+      ]
+    },
+    {
       "hash": "a7c07e53ede5e6835e58bf577238833e262062fd",
       "text": "Ich fahre mit dem Bus.",
       "sources": [
@@ -14452,6 +15412,10 @@
         {
           "topic": "A1a-1",
           "path": "steps[4].pairs[3].personal"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[2].pairs[3].personal"
         }
       ]
     },
@@ -14806,6 +15770,10 @@
         {
           "topic": "A1a-25",
           "path": "steps[6].blocks[1].rows[1][2]#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[2].pairs[0].personal"
         }
       ]
     },
@@ -15184,6 +16152,16 @@
         {
           "topic": "A1a-33",
           "path": "steps[6].blocks[0].body#inline[5]"
+        }
+      ]
+    },
+    {
+      "hash": "b169912b38247d00dae9dac6d653f6343813e7eb",
+      "text": "die Schwiegermutter",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[4].tables[0].rows[1][0]#inline[0]"
         }
       ]
     },
@@ -15572,6 +16550,20 @@
       ]
     },
     {
+      "hash": "b80e925f520e45d63ad1d23cd1f2b560cd36461a",
+      "text": "Meine Oma ist verwitwet.",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[5].tabs[3].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[5].tabs[3].example.de#whole"
+        }
+      ]
+    },
+    {
       "hash": "b810b81301837b340b2a4b6fce784106e09fca4a",
       "text": "sehr gut Deutsch",
       "sources": [
@@ -15928,6 +16920,24 @@
       ]
     },
     {
+      "hash": "bbbb29c05fe80b397ad394a3f490cef7f4bba376",
+      "text": "grün",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[1].tabs[2].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[1].tabs[2].pron"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[7].tables[0].rows[2][0]#inline[0]"
+        }
+      ]
+    },
+    {
       "hash": "bc39a5012aabb946cf3206aa06460538a08ed7ad",
       "text": "gut Gitarre",
       "sources": [
@@ -16020,6 +17030,16 @@
         {
           "topic": "A1a-6",
           "path": "steps[4].blocks[1].rows[1][1]#inline[0]"
+        }
+      ]
+    },
+    {
+      "hash": "bcec10a6b163d1bc69ca4bb64f0e7ee32754b3e3",
+      "text": "Welche Farbe hat deine Tasche? — Sie ist schwarz.",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[4].examples[1].de#whole"
         }
       ]
     },
@@ -16426,6 +17446,14 @@
       "text": "die Tochter",
       "sources": [
         {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[4].pron"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[0].rows[4][0]#inline[0]"
+        },
+        {
           "topic": "A1a-5",
           "path": "steps[4].blocks[0].body#inline[0]"
         }
@@ -16468,6 +17496,28 @@
         {
           "topic": "A1a-35",
           "path": "steps[6].blocks[0].body#inline[7]"
+        }
+      ]
+    },
+    {
+      "hash": "c0b3655864e01e079da62bca24b10d9d419a37c2",
+      "text": "braun",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[2].tabs[3].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[2].tabs[3].pron"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[3].examples[0].de#inline[0]"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[7].tables[0].rows[10][0]#inline[0]"
         }
       ]
     },
@@ -16856,6 +17906,10 @@
         {
           "topic": "A1a-28",
           "path": "steps[5].blocks[1].rows[3][2]#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[6].pitfalls[1].good"
         }
       ]
     },
@@ -16890,6 +17944,14 @@
         {
           "topic": "A1a-28",
           "path": "steps[2].blocks[1].rows[2][2]#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[5].pron"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[7].tables[0].rows[5][0]#inline[0]"
         },
         {
           "topic": "A1a-6",
@@ -17264,6 +18326,16 @@
       ]
     },
     {
+      "hash": "c8901fbae7882e5449fe2e643e4ca23e4321526e",
+      "text": "die Tasche ist schwarze",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[6].pitfalls[1].bad"
+        }
+      ]
+    },
+    {
       "hash": "c8c14fefeadf31df319f295760ba9aa0e334dd1e",
       "text": "Ich lerne seit zwei Monaten Deutsch.",
       "sources": [
@@ -17308,6 +18380,16 @@
       ]
     },
     {
+      "hash": "c951589ff997bf4719628c0101419247e389afce",
+      "text": "Ich habe einen Bruder",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[6].pitfalls[2].good"
+        }
+      ]
+    },
+    {
       "hash": "c99a2f2ed20b8c78abbccf6b0491152e8917fd81",
       "text": "Ihr seht den Film.",
       "sources": [
@@ -17334,6 +18416,16 @@
         {
           "topic": "A1a-28",
           "path": "steps[1].blocks[0].body#inline[0]"
+        }
+      ]
+    },
+    {
+      "hash": "c9f8d3f2f14ffbe66101694c52fdcd095d78537f",
+      "text": "Der Himmel ist heute grau.",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[1].tabs[6].example.de#whole"
         }
       ]
     },
@@ -17530,6 +18622,16 @@
       ]
     },
     {
+      "hash": "cbb6a1095cc7eae5f8a1b1565bd38ac06086825a",
+      "text": "der Halbbruder",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[4].tables[0].rows[7][0]#inline[0]"
+        }
+      ]
+    },
+    {
       "hash": "cbd271b7dd593607cc93cce7f1b920e6a3043842",
       "text": "Die Wohnung ist 100 qm Quadratmeter.",
       "sources": [
@@ -17670,12 +18772,32 @@
       ]
     },
     {
+      "hash": "cd8b2aa3e3db7d70b5439321d48aa07d24a518d9",
+      "text": "Das Auto ist rot.",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[7].tables[1].rows[0][1]#inline[0]"
+        }
+      ]
+    },
+    {
       "hash": "cd8b94bc8cd3a70ce1d7831eb16fd87e76bade2f",
       "text": "die Zeichen",
       "sources": [
         {
           "topic": "A1a-12",
           "path": "steps[1].blocks[2].body#inline[5]"
+        }
+      ]
+    },
+    {
+      "hash": "cd9dd06567f9290f0a39dbd8886c9dab761aa97d",
+      "text": "Die Sonne ist gelb.",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[1].tabs[3].example.de#whole"
         }
       ]
     },
@@ -17706,6 +18828,24 @@
         {
           "topic": "A1a-5",
           "path": "steps[3].blocks[0].body#inline[6]"
+        }
+      ]
+    },
+    {
+      "hash": "ce14e8b84975e1f2d542524c748360964f7d892e",
+      "text": "grau",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[1].tabs[6].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[1].tabs[6].pron"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[7].tables[0].rows[6][0]#inline[0]"
         }
       ]
     },
@@ -18798,6 +19938,30 @@
       ]
     },
     {
+      "hash": "d9303b3a1ec19cc6b0c553ae2d78beb8d3ad0908",
+      "text": "Meine Cousine ist aus Österreich.",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[8].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[8].example.de#whole"
+        }
+      ]
+    },
+    {
+      "hash": "d95b6c18a86a5cbfedb1c5127365ca64d87ff77e",
+      "text": "Das Kleid ist rosa.",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[2].tabs[1].example.de#whole"
+        }
+      ]
+    },
+    {
       "hash": "d963f327240ced77dac748a0feb0f55d886932de",
       "text": "Kinder",
       "sources": [
@@ -18886,6 +20050,20 @@
         {
           "topic": "A1a-33",
           "path": "steps[1].blocks[1].rows[3][0]#inline[0]"
+        }
+      ]
+    },
+    {
+      "hash": "daca65acfe4ec14943df686da2a4f42132b79e7b",
+      "text": "Ich habe einen Sohn.",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[3].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[3].example.de#whole"
         }
       ]
     },
@@ -19010,6 +20188,16 @@
       ]
     },
     {
+      "hash": "dc897f525a250225c7caa406fd3dd69194c161fa",
+      "text": "das Kind és sempre neutre, sigui nen o nena",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[6].pitfalls[0].good"
+        }
+      ]
+    },
+    {
       "hash": "dcbb1706933f9e78e08e301367f57538e0192583",
       "text": "Ich kann Gitarre spielen.",
       "sources": [
@@ -19078,6 +20266,16 @@
         {
           "topic": "A1a-35",
           "path": "steps[6].blocks[0].body#inline[2]"
+        }
+      ]
+    },
+    {
+      "hash": "dcf5d534d98d45828d5e758d4ce1f8c1964848cb",
+      "text": "die Schwägerin",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[4].tables[0].rows[4][0]#inline[0]"
         }
       ]
     },
@@ -19504,8 +20702,38 @@
       "text": "rot",
       "sources": [
         {
+          "topic": "A1a-41",
+          "path": "steps[1].tabs[0].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[1].tabs[0].pron"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[3].examples[3].de#inline[0]"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[4].examples[0].de#inline[1]"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[7].tables[0].rows[0][0]#inline[0]"
+        },
+        {
           "topic": "A1a-9",
           "path": "steps[4].blocks[1].rows[0][0]#inline[0]"
+        }
+      ]
+    },
+    {
+      "hash": "e17f2792cc64ebd453df3830a2eae34618b66083",
+      "text": "dein Bruder / deine Schwester",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[2].pairs[1].possessive"
         }
       ]
     },
@@ -19520,6 +20748,16 @@
         {
           "topic": "A1b-8",
           "path": "steps[8].blocks[1].rows[1][0]"
+        }
+      ]
+    },
+    {
+      "hash": "e1c3032dfbe215a59eb1046b38013a6a78facc46",
+      "text": "Das Haus ist weiß.",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[3].examples[2].de#whole"
         }
       ]
     },
@@ -20430,6 +21668,16 @@
       ]
     },
     {
+      "hash": "eac2e52419971fa3ff6e1a9a9a6c7b3bc52bbbea",
+      "text": "Die Schokolade ist braun.",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[2].tabs[3].example.de#whole"
+        }
+      ]
+    },
+    {
       "hash": "ead9d4a016a3046374baa020a3ce40f8bae12690",
       "text": "Ein Hund schläft hier.",
       "sources": [
@@ -20844,6 +22092,24 @@
       ]
     },
     {
+      "hash": "ef0ebbb77298e1fbd81f756a4efc35b977c93dae",
+      "text": "orange",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[2].tabs[0].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[2].tabs[0].pron"
+        },
+        {
+          "topic": "A1a-41",
+          "path": "steps[7].tables[0].rows[7][0]#inline[0]"
+        }
+      ]
+    },
+    {
       "hash": "ef2a59835205df9813818c73b494b7ca1d8a11ad",
       "text": "Oktober",
       "sources": [
@@ -20914,6 +22180,16 @@
         {
           "topic": "A1a-6",
           "path": "steps[4].blocks[5].body#inline[0]"
+        }
+      ]
+    },
+    {
+      "hash": "f00e79b87f32c84b54a7253807bfa642b78f63ac",
+      "text": "Die Blume ist lila.",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[2].tabs[2].example.de#whole"
         }
       ]
     },
@@ -21124,6 +22400,20 @@
         {
           "topic": "A1a-3",
           "path": "steps[6].blocks[0].body#inline[2]"
+        }
+      ]
+    },
+    {
+      "hash": "f300547f4b7f7102911331f9ea4dd4394209943f",
+      "text": "Mein Bruder ist älter.",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[6].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[1].tabs[6].example.de#whole"
         }
       ]
     },
@@ -21640,6 +22930,10 @@
         {
           "topic": "A1a-1",
           "path": "steps[4].pairs[1].personal"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[2].pairs[1].personal"
         }
       ]
     },
@@ -21988,6 +23282,20 @@
       ]
     },
     {
+      "hash": "fe2020e4d85e23cb48126c5ff79a74a7dbb72a4a",
+      "text": "Seine Enkelin ist fünf.",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[4].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[4].example.de#whole"
+        }
+      ]
+    },
+    {
       "hash": "fe233cd24898ae312350de4665caf46264046f93",
       "text": "Ich bin am Montag in der Schule.",
       "sources": [
@@ -22066,6 +23374,16 @@
       ]
     },
     {
+      "hash": "fedb5455690f46b98d43d58ccdbcf82434f12075",
+      "text": "Der Himmel ist blau.",
+      "sources": [
+        {
+          "topic": "A1a-41",
+          "path": "steps[1].tabs[1].example.de#whole"
+        }
+      ]
+    },
+    {
       "hash": "ff0187bcd476675a1bbe37dcb756be193e6fa293",
       "text": "aus",
       "sources": [
@@ -22086,6 +23404,20 @@
         {
           "topic": "A1a-15",
           "path": "steps[5].blocks[0].body#inline[12]"
+        }
+      ]
+    },
+    {
+      "hash": "ffd6735a5ada60b86833151aff6f68f7324ed94b",
+      "text": "Mein Opa wohnt auf dem Land.",
+      "sources": [
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[0].example.de#inline[0]"
+        },
+        {
+          "topic": "A1a-39",
+          "path": "steps[3].tabs[0].example.de#whole"
         }
       ]
     },

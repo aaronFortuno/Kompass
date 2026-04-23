@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-41",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 41,
+  "title": "Farben — els colors",
+  "shortTitle": "Farben",
+  "description": "Onze colors bàsics en ús predicatiu (_Das Auto ist rot_) + la pregunta _Welche Farbe hat...?_ Avís breu de la declinació atributiva (A2).",
+  "axes": ["vocabulari-tematic"],
+  "estimatedMinutes": 10,
+  "steps": [
+    {
+      "id": "intro",
+      "kind": "narrative",
+      "heading": "Els colors",
+      "lead": "Onze paraules per descriure el món que veus.",
+      "body": "Els colors són **adjectius** en alemany, però en aquesta lliçó els fem servir de la forma més senzilla: darrere del verb _sein_. _Das Auto ist rot_ = _El cotxe és vermell_.",
+      "callout": {
+        "variant": "info",
+        "title": "L'ús que tractem aquí",
+        "body": "Només **el color que segueix a _ist_** (predicatiu). És la forma ==invariable==: no canvia segons el gènere ni el nombre. _Der Apfel ist rot, die Tomate ist rot, das Auto ist rot, die Blumen sind rot_. Sempre _rot_."
+      }
+    },
+    {
+      "id": "basicos",
+      "kind": "narrative",
+      "heading": "Els set colors fonamentals",
+      "lead": "Els que no poden faltar.",
+      "tabs": [
+        { "pron": "rot", "gloss": "vermell", "note": "Pronunciat \"rot\" amb _o_ tancada. Cognat amb l'anglès _red_.", "example": { "de": "Der Apfel ist !!rot!!.", "ca": "La poma és vermella." } },
+        { "pron": "blau", "gloss": "blau", "note": "Pronunciat \"blau\" (el diftong _au_ sona com en català). Cognat directe.", "example": { "de": "Der Himmel ist !!blau!!.", "ca": "El cel és blau." } },
+        { "pron": "grün", "gloss": "verd", "note": "La _ü_ és la _u_ francesa. Cognat amb l'anglès _green_.", "example": { "de": "Das Gras ist !!grün!!.", "ca": "L'herba és verda." } },
+        { "pron": "gelb", "gloss": "groc", "note": "Pronunciat \"gelp\" (la _b_ final sona com _p_ al final de paraula).", "example": { "de": "Die Sonne ist !!gelb!!.", "ca": "El sol és groc." } },
+        { "pron": "schwarz", "gloss": "negre", "note": "La _schw_ inicial: _sh_ + _v_ catalana. La _z_ final sona \"ts\".", "example": { "de": "Die Nacht ist !!schwarz!!.", "ca": "La nit és negra." } },
+        { "pron": "weiß", "gloss": "blanc", "note": "Escrit amb **ß** a Alemanya i Àustria. A Suïssa s'escriu _weiss_.", "example": { "de": "Der Schnee ist !!weiß!!.", "ca": "La neu és blanca." } },
+        { "pron": "grau", "gloss": "gris", "note": "Diftong _au_ \"au\". Cognat amb l'anglès _gray/grey_.", "example": { "de": "Der Himmel ist heute !!grau!!.", "ca": "El cel és gris avui." } }
+      ],
+      "callout": {
+        "variant": "tip",
+        "title": "Truc del cognat",
+        "body": "**rot = red**, **blau = blue**, **grün = green**, **grau = gray**, **braun = brown**. Cinc colors gairebé gratuïts si saps una mica d'anglès."
+      }
+    },
+    {
+      "id": "extendido",
+      "kind": "narrative",
+      "heading": "Quatre colors més",
+      "lead": "Per a tot el que no és fonamental.",
+      "tabs": [
+        { "pron": "orange", "gloss": "taronja", "note": "Préstec del francès. Es pronuncia a la francesa: \"o-ranzh\". Invariable.", "example": { "de": "Die Karotte ist !!orange!!.", "ca": "La pastanaga és taronja." } },
+        { "pron": "rosa", "gloss": "rosa", "note": "Del llatí, igual que en català. Invariable com a color.", "example": { "de": "Das Kleid ist !!rosa!!.", "ca": "El vestit és rosa." } },
+        { "pron": "lila", "gloss": "lila / morat", "note": "Del persa/àrab. També invariable. Alternativa culta: _violett_.", "example": { "de": "Die Blume ist !!lila!!.", "ca": "La flor és lila." } },
+        { "pron": "braun", "gloss": "marró", "note": "Pronunciat \"braun\". Diftong _au_ normal.", "example": { "de": "Die Schokolade ist !!braun!!.", "ca": "La xocolata és marró." } }
+      ],
+      "callout": {
+        "variant": "warning",
+        "title": "Orange, rosa, lila: compte",
+        "body": "==**Aquests tres colors són préstecs** i es comporten diferent==: en l'ús atributiu (_das rosa Kleid_) sovint es queden invariables, contra la regla general dels adjectius. Al nostre ús predicatiu (_ist rosa_), aquest detall no t'afecta — però ho sabràs per quan vegis A2."
+      }
+    },
+    {
+      "id": "uso-predicativo",
+      "kind": "narrative",
+      "heading": "Com fer servir els colors",
+      "lead": "Estructura: ==**[substantiu] + ist + [color]**==. Invariable, sempre.",
+      "body": "Dius el substantiu (amb el seu article si cal), el verb _ist_ o _sind_, i el color. El color no canvia per gènere ni nombre.",
+      "examples": [
+        { "de": "Der Hund ist !!braun!!.", "ca": "El gos és marró.", "note": "Masculí, singular, color invariable." },
+        { "de": "Die Katze ist !!schwarz!!.", "ca": "El gat és negre.", "note": "Femení, singular, color invariable." },
+        { "de": "Das Haus ist !!weiß!!.", "ca": "La casa és blanca.", "note": "Neutre, singular, color invariable." },
+        { "de": "Die Blumen sind !!rot!!.", "ca": "Les flors són vermelles.", "note": "Plural → verb _sind_, però el color no canvia." }
+      ],
+      "callout": {
+        "variant": "tip",
+        "title": "Regla d'or",
+        "body": "Si el color ve **després** del verb, mai no canvia. Si ve **davant** del substantiu (_das rote Auto_), llavors s'ha de declinar — però això és A2. En aquesta lliçó ens quedem al primer cas."
+      }
+    },
+    {
+      "id": "welche-farbe",
+      "kind": "narrative",
+      "heading": "Welche Farbe hat...?",
+      "lead": "La pregunta que dispara les respostes que acabes d'aprendre.",
+      "body": "_Welche Farbe hat [substantiu en acusatiu]?_ literalment \"Quin color té...?\". La resposta es construeix amb _ist_ o directament amb _[substantiu] ist [color]_.",
+      "examples": [
+        { "de": "!!Welche Farbe hat das Auto?!! — Das Auto ist !!rot!!.", "ca": "De quin color és el cotxe? — El cotxe és vermell." },
+        { "de": "!!Welche Farbe hat deine Tasche?!! — Sie ist !!schwarz!!.", "ca": "De quin color és la teva bossa? — És negra.", "note": "_Sie_ aquí és \"ella\" gramatical, referint-se a _die Tasche_ (femení)." },
+        { "de": "!!Welche Farbe haben deine Augen?!! — Sie sind !!blau!!.", "ca": "De quin color són els teus ulls? — Són blaus.", "note": "Plural: _haben_ i _sind_." }
+      ]
+    },
+    {
+      "id": "atributivo-nota",
+      "kind": "narrative",
+      "heading": "Un tast d'allò que ve després",
+      "lead": "Si el color va ==davant== del substantiu, canvia.",
+      "body": "Compara: _Das Auto ist **rot**_ (invariable) vs. _das **rote** Auto_ (amb _-e_). És declinació adjectiva, un tema gran que treballaràs a A2. Aquí només t'avisem.",
+      "comparison": [
+        { "es": "el coche rojo", "ca": "el cotxe vermell", "de": "das ==rote== Auto", "en": "the red car" },
+        { "es": "el coche es rojo", "ca": "el cotxe és vermell", "de": "das Auto ist ==rot==", "en": "the car is red" }
+      ],
+      "callout": {
+        "variant": "info",
+        "title": "Per ara...",
+        "body": "Queda't amb la forma **darrere del verb**: _ist rot_, _sind blau_, _ist grün_. És la que més faràs servir al principi i la que no pot fallar."
+      }
+    },
+    {
+      "id": "pitfalls",
+      "kind": "narrative",
+      "heading": "Paranys freqüents",
+      "pitfalls": [
+        { "bad": "!!das Auto ist rote!!", "good": "!!das Auto ist rot!!", "why": "Darrere del verb, el color és invariable. La _-e_ només apareix davant del substantiu." },
+        { "bad": "!!die Tasche ist schwarze!!", "good": "!!die Tasche ist schwarz!!", "why": "Mateix error: forma predicativa = forma bàsica, sense terminació." },
+        { "bad": "Welche Farbe ist das Auto?", "good": "!!Welche Farbe hat das Auto?!!", "why": "La pregunta canònica usa _haben_ (tenir): \"Quin color té...?\". Fàcil confondre amb _sein_." }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "kind": "synthesis",
+      "heading": "Síntesi: els colors bàsics",
+      "tables": [
+        {
+          "title": "Els onze colors",
+          "headers": ["Alemany", "Català", "Nota"],
+          "rows": [
+            ["!!rot!!", "vermell", "Cognat anglès (red)."],
+            ["!!blau!!", "blau", "Cognat anglès."],
+            ["!!grün!!", "verd", "Cognat anglès (green). _ü_ francesa."],
+            ["!!gelb!!", "groc", "Final sona _-p_."],
+            ["!!schwarz!!", "negre", "_schw-_ dolç; _-z_ final = _ts_."],
+            ["!!weiß!!", "blanc", "Amb ==ß== (weiss a Suïssa)."],
+            ["!!grau!!", "gris", "Cognat anglès."],
+            ["!!orange!!", "taronja", "Préstec francès; invariable."],
+            ["!!lila!!", "lila / morat", "Préstec; invariable."],
+            ["!!rosa!!", "rosa", "Préstec; invariable."],
+            ["!!braun!!", "marró", "Cognat anglès (brown)."]
+          ]
+        },
+        {
+          "title": "Ús predicatiu",
+          "headers": ["Estructura", "Exemple"],
+          "rows": [
+            ["Subjecte + _ist_ + color", "!!Das Auto ist rot.!!"],
+            ["Subjecte plural + _sind_ + color", "!!Die Blumen sind rot.!!"],
+            ["Pregunta", "!!Welche Farbe hat das Auto?!!"]
+          ]
+        }
+      ]
+    }
+  ]
+}
