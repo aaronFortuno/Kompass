@@ -38,16 +38,16 @@
           "title": "Tipus i parts de l'habitatge",
           "headers": ["Abreviatura", "Forma completa", "Significat"],
           "rows": [
-            ["**Whg**", "_Wohnung_", "pis, habitatge"],
-            ["**Zi**", "_Zimmer_", "habitació"],
-            ["**ZKB**", "_Zimmer, Küche, Bad_", "habitacions, cuina, bany"],
-            ["**Kü**", "_Küche_", "cuina"],
-            ["**EBK**", "==_Einbauküche_==", "cuina integrada (fixa)"],
-            ["**Blk**", "_Balkon_", "balcó"],
-            ["**OG**", "_Obergeschoss_", "pis superior (planta alta)"],
-            ["**DG**", "_Dachgeschoss_", "àtic (sota la teulada)"],
-            ["**AB**", "_Altbau_", "edifici antic (normalment pre-1949)"],
-            ["**ABW**", "_Altbauwohnung_", "pis en edifici antic"]
+            ["**Whg**", "_!!Wohnung!!_", "pis, habitatge"],
+            ["**Zi**", "_!!Zimmer!!_", "habitació"],
+            ["**ZKB**", "_!!Zimmer, Küche, Bad!!_", "habitacions, cuina, bany"],
+            ["**Kü**", "_!!Küche!!_", "cuina"],
+            ["**EBK**", "==_!!Einbauküche!!_==", "cuina integrada (fixa)"],
+            ["**Blk**", "_!!Balkon!!_", "balcó"],
+            ["**OG**", "_!!Obergeschoss!!_", "pis superior (planta alta)"],
+            ["**DG**", "_!!Dachgeschoss!!_", "àtic (sota la teulada)"],
+            ["**AB**", "_!!Altbau!!_", "edifici antic (normalment pre-1949)"],
+            ["**ABW**", "_!!Altbauwohnung!!_", "pis en edifici antic"]
           ]
         },
         {
@@ -70,14 +70,14 @@
           "title": "Preu i serveis",
           "headers": ["Abreviatura", "Forma completa", "Significat"],
           "rows": [
-            ["**KM**", "==_Kaltmiete_==", "lloguer \"fred\" (només pis, sense despeses)"],
-            ["**WM**", "==_Warmmiete_==", "lloguer \"calent\" (amb despeses incloses)"],
-            ["**NK**", "_Nebenkosten_", "despeses comunitàries / serveis"],
-            ["**BK**", "_Betriebskosten_", "despeses operatives (sinònim proper de _NK_)"],
-            ["**WW**", "_Warmwasser_", "aigua calenta"],
-            ["**ZH**", "_Zentralheizung_", "calefacció central"],
-            ["**möbl.**", "_möbliert_", "moblat"],
-            ["**inkl.**", "_inklusive_", "inclòs"]
+            ["**KM**", "==_!!Kaltmiete!!_==", "lloguer \"fred\" (només pis, sense despeses)"],
+            ["**WM**", "==_!!Warmmiete!!_==", "lloguer \"calent\" (amb despeses incloses)"],
+            ["**NK**", "_!!Nebenkosten!!_", "despeses comunitàries / serveis"],
+            ["**BK**", "_!!Betriebskosten!!_", "despeses operatives (sinònim proper de _NK_)"],
+            ["**WW**", "_!!Warmwasser!!_", "aigua calenta"],
+            ["**ZH**", "_!!Zentralheizung!!_", "calefacció central"],
+            ["**möbl.**", "_!!möbliert!!_", "moblat"],
+            ["**inkl.**", "_!!inklusive!!_", "inclòs"]
           ]
         },
         {
@@ -88,7 +88,7 @@
         },
         {
           "type": "explanation",
-          "body": "**Altres freqüents:**\n\n- ==**NR**== → _Nichtraucher_ (no fumador; el llogater ha de ser no fumador).\n- Superfície: sovint en **m²** o **qm** (= _Quadratmeter_, metres quadrats)."
+          "body": "**Altres freqüents:**\n\n- ==**NR**== → _!!Nichtraucher!!_ (no fumador; el llogater ha de ser no fumador).\n- Superfície: sovint en **m²** o **qm** (= _!!Quadratmeter!!_, metres quadrats)."
         }
       ]
     },
