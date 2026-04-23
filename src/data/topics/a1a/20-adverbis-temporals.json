@@ -40,13 +40,13 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Adverbis de freqüència: l'eix 0 % → 100 %\n\nEls **adverbis de freqüència** responen a la pregunta **_Wie oft...?_** (Quant sovint...?). Es poden ordenar en una línia imaginària del **0 %** (mai) al **100 %** (sempre):\n\n> **0 %** ← **nie** — **fast nie** — **selten** — **manchmal** — **oft** — **meistens** — **immer** → **100 %**\n\nTraducció i ús:\n\n- **==nie==** — _mai_. Freqüència zero. _Ich trinke **nie** Kaffee._ (No bec cafè mai.)\n- **fast nie** — _gairebé mai_. Una mica per sobre de _nie_. _Sie kommt **fast nie** zu spät._ (Gairebé mai no arriba tard.)\n- **selten** — _poques vegades, rarament_. _Wir gehen **selten** ins Kino._ (Anem poques vegades al cinema.)\n- **==manchmal==** — _a vegades_. Freqüència mitjana-baixa. _**Manchmal** koche ich italienisch._ (A vegades cuino italià.)\n- **==oft==** — _sovint_. Freqüència alta. _Er spielt **oft** Fußball._ (Sovint juga a futbol.)\n- **meistens** — _la majoria de vegades, gairebé sempre_. _Ich frühstücke **meistens** um acht._ (Esmorzo la majoria de vegades a les vuit.)\n- **==immer==** — _sempre_. Freqüència màxima. _Anna ist **immer** müde._ (L'Anna sempre està cansada.)"
+          "body": "#### Adverbis de freqüència: l'eix 0 % → 100 %\n\nEls **adverbis de freqüència** responen a la pregunta **_Wie oft...?_** (Quant sovint...?). Es poden ordenar en una línia imaginària del **0 %** (mai) al **100 %** (sempre):\n\n> **0 %** ← **nie** — **fast nie** — **selten** — **manchmal** — **oft** — **meistens** — **immer** → **100 %**\n\nTraducció i ús:\n\n- **==nie==** — _mai_. Freqüència zero. _!!Ich trinke **nie** Kaffee.!!_ (No bec cafè mai.)\n- **fast nie** — _gairebé mai_. Una mica per sobre de _nie_. _!!Sie kommt **fast nie** zu spät.!!_ (Gairebé mai no arriba tard.)\n- **selten** — _poques vegades, rarament_. _!!Wir gehen **selten** ins Kino.!!_ (Anem poques vegades al cinema.)\n- **==manchmal==** — _a vegades_. Freqüència mitjana-baixa. _!!**Manchmal** koche ich italienisch.!!_ (A vegades cuino italià.)\n- **==oft==** — _sovint_. Freqüència alta. _!!Er spielt **oft** Fußball.!!_ (Sovint juga a futbol.)\n- **meistens** — _la majoria de vegades, gairebé sempre_. _!!Ich frühstücke **meistens** um acht.!!_ (Esmorzo la majoria de vegades a les vuit.)\n- **==immer==** — _sempre_. Freqüència màxima. _!!Anna ist **immer** müde.!!_ (L'Anna sempre està cansada.)"
         },
         {
           "type": "callout",
           "variant": "example",
           "title": "Exemples tipus",
-          "body": "_Wie oft sprichst du Deutsch? — Ich spreche **fast nie** Deutsch._\n\n_Wie oft gehst du ins Kino? — Ich gehe **oft** ins Kino._"
+          "body": "_!!Wie oft sprichst du Deutsch?!! — !!Ich spreche **fast nie** Deutsch.!!_\n\n_!!Wie oft gehst du ins Kino?!! — !!Ich gehe **oft** ins Kino.!!_"
         },
         {
           "type": "explanation",
@@ -59,21 +59,21 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Expressions de freqüència: \"X vegades per Y\" i \"cada Y\"\n\nA més dels adverbis, l'alemany té dues **construccions fixes** molt útils per dir quantes vegades passa una cosa en un període. Les esmentem ara perquè les usaràs tot el curs; la gramàtica interna (preposicions, acusatiu de durada) la veuràs completa més endavant.\n\n**1. ==X-mal== + període:** \"X vegades + període\".\n\n> **einmal** (una vegada) · **zweimal** (dues vegades) · **dreimal** (tres vegades) · **viermal, fünfmal...**\n\nCombinen amb un període introduït per **_im_, _in der_** o **_am_** (ja ho veuràs a fons a A1a-21; de moment accepta'ls com blocs fets):\n\n- **im Jahr / im Monat** — a l'any / al mes (masculí i neutre → _im_)\n- **in der Woche** — a la setmana (femení → _in der_)\n- **am Tag** — al dia (_Tag_ és masculí; amb _am_ indica \"per dia\")\n\n> _Wie oft trainiert ihr? — Wir trainieren **einmal in der Woche**._ (Entrenem un cop a la setmana.)\n> _Ich gehe **zweimal im Monat** ins Konzert._ (Vaig al concert dues vegades al mes.)\n> _Er joggt **dreimal in der Woche**._ (Corre tres vegades a la setmana.)\n\n**2. ==jeden / jede / jedes== + substantiu:** \"cada + substantiu\".\n\nL'alemany té un quantificador _jed-_ que es declina segons el **gènere i el cas** (acusatiu aquí, perquè actua com a complement de temps):"
+          "body": "#### Expressions de freqüència: \"X vegades per Y\" i \"cada Y\"\n\nA més dels adverbis, l'alemany té dues **construccions fixes** molt útils per dir quantes vegades passa una cosa en un període. Les esmentem ara perquè les usaràs tot el curs; la gramàtica interna (preposicions, acusatiu de durada) la veuràs completa més endavant.\n\n**1. ==X-mal== + període:** \"X vegades + període\".\n\n> **einmal** (una vegada) · **zweimal** (dues vegades) · **dreimal** (tres vegades) · **viermal, fünfmal...**\n\nCombinen amb un període introduït per **_im_, _in der_** o **_am_** (ja ho veuràs a fons a A1a-21; de moment accepta'ls com blocs fets):\n\n- **im Jahr / im Monat** — a l'any / al mes (masculí i neutre → _im_)\n- **in der Woche** — a la setmana (femení → _in der_)\n- **am Tag** — al dia (_Tag_ és masculí; amb _am_ indica \"per dia\")\n\n> _!!Wie oft trainiert ihr?!! — !!Wir trainieren **einmal in der Woche**.!!_ (Entrenem un cop a la setmana.)\n> _!!Ich gehe **zweimal im Monat** ins Konzert.!!_ (Vaig al concert dues vegades al mes.)\n> _!!Er joggt **dreimal in der Woche**.!!_ (Corre tres vegades a la setmana.)\n\n**2. ==jeden / jede / jedes== + substantiu:** \"cada + substantiu\".\n\nL'alemany té un quantificador _jed-_ que es declina segons el **gènere i el cas** (acusatiu aquí, perquè actua com a complement de temps):"
         },
         {
           "type": "table",
           "title": "_jeden / jede / jedes_ segons el gènere",
           "headers": ["Gènere del substantiu", "Forma", "Exemple"],
           "rows": [
-            ["Masculí (der Tag)", "**jeden**", "_**jeden** Tag_ (cada dia)"],
-            ["Femení (die Woche)", "**jede**", "_**jede** Woche_ (cada setmana)"],
-            ["Neutre (das Jahr)", "**jedes**", "_**jedes** Jahr_ (cada any)"]
+            ["Masculí (!!der Tag!!)", "!!**jeden**!!", "_!!**jeden** Tag!!_ (cada dia)"],
+            ["Femení (!!die Woche!!)", "!!**jede**!!", "_!!**jede** Woche!!_ (cada setmana)"],
+            ["Neutre (!!das Jahr!!)", "!!**jedes**!!", "_!!**jedes** Jahr!!_ (cada any)"]
           ]
         },
         {
           "type": "explanation",
-          "body": "> _Ich spiele **jeden Tag** Gitarre._ (Toco cada dia la guitarra.)\n> _Wir treffen uns **jede Woche**._ (Ens trobem cada setmana.)\n> _Sie fährt **jedes Jahr** nach Italien._ (Va cada any a Itàlia.)"
+          "body": "> _!!Ich spiele **jeden Tag** Gitarre.!!_ (Toco cada dia la guitarra.)\n> _!!Wir treffen uns **jede Woche**.!!_ (Ens trobem cada setmana.)\n> _!!Sie fährt **jedes Jahr** nach Italien.!!_ (Va cada any a Itàlia.)"
         },
         {
           "type": "callout",
@@ -88,7 +88,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Adverbis de moment: heute, morgen, gestern...\n\nEls **adverbis de moment** responen de forma parcial a **_Wann?_** (Quan?) i situen l'acció en un punt del temps sense necessitat de preposició ni article. Són els més senzills de tots.\n\n**Eix principal passat → present → futur:**\n\n> **==gestern==** (ahir) — **==heute==** (avui) — **==morgen==** (demà) — **übermorgen** (demà passat) — **vorgestern** (abans-d'ahir)\n\n> _**Heute** lerne ich Deutsch._ (Avui estudio alemany.)\n> _**Morgen** gehe ich ins Kino._ (Demà vaig al cinema.)\n> _**Gestern** war ich krank._ (Ahir estava malalt.)\n\n**Franges del dia** (els afegim ara perquè són una extensió natural):\n\n- **morgens** — al matí (cada matí, com a costum). _Ich trinke **morgens** Kaffee._\n- **vormittags** — al migdia-matí (abans de les 12). _**Vormittags** arbeite ich._\n- **mittags** — al migdia. _**Mittags** esse ich wenig._\n- **nachmittags** — a la tarda. _**Nachmittags** gehe ich spazieren._\n- **abends** — al vespre. _**Abends** sehe ich fern._\n- **nachts** — a la nit. _**Nachts** schlafe ich gut._"
+          "body": "#### Adverbis de moment: heute, morgen, gestern...\n\nEls **adverbis de moment** responen de forma parcial a **_Wann?_** (Quan?) i situen l'acció en un punt del temps sense necessitat de preposició ni article. Són els més senzills de tots.\n\n**Eix principal passat → present → futur:**\n\n> **==gestern==** (ahir) — **==heute==** (avui) — **==morgen==** (demà) — **übermorgen** (demà passat) — **vorgestern** (abans-d'ahir)\n\n> _!!**Heute** lerne ich Deutsch.!!_ (Avui estudio alemany.)\n> _!!**Morgen** gehe ich ins Kino.!!_ (Demà vaig al cinema.)\n> _!!**Gestern** war ich krank.!!_ (Ahir estava malalt.)\n\n**Franges del dia** (els afegim ara perquè són una extensió natural):\n\n- **morgens** — al matí (cada matí, com a costum). _!!Ich trinke **morgens** Kaffee.!!_\n- **vormittags** — al migdia-matí (abans de les 12). _!!**Vormittags** arbeite ich.!!_\n- **mittags** — al migdia. _!!**Mittags** esse ich wenig.!!_\n- **nachmittags** — a la tarda. _!!**Nachmittags** gehe ich spazieren.!!_\n- **abends** — al vespre. _!!**Abends** sehe ich fern.!!_\n- **nachts** — a la nit. _!!**Nachts** schlafe ich gut.!!_"
         },
         {
           "type": "callout",
@@ -109,17 +109,17 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Posició dels adverbis temporals a l'oració\n\nAquesta és la part que costa més al catalanoparlant. En català, els adverbis temporals són molt flexibles: _Avui estudio alemany_, _Estudio alemany avui_, _Jo avui estudio alemany_... totes vàlides. **En alemany la cosa és més estricta**, perquè el verb conjugat **ha d'ocupar sempre la segona posició** de l'oració (la regla del _V2_, que ja has vist).\n\n**Regla pràctica per a aquest tema:**\n\nL'adverbi temporal pot anar en **dues posicions** principals:\n\n**Posició A: al principi de l'oració (posició 1).** L'adverbi ocupa la posició 1, el verb es manté a la posició 2, i el subjecte passa a la posició 3. Això es diu ==inversió==.\n\n> **Heute** _lerne_ ich Deutsch. (Avui estudio alemany.)\n> **Oft** _gehe_ ich ins Kino. (Sovint vaig al cinema.)\n> **Jeden Tag** _spielt_ er Gitarre. (Cada dia toca la guitarra.)\n\n**Posició B: darrere del verb (i, si n'hi ha, del subjecte).**\n\n> Ich _lerne_ **heute** Deutsch.\n> Ich _gehe_ **oft** ins Kino.\n> Er _spielt_ **jeden Tag** Gitarre.\n\nLes dues posicions són correctes. L'única diferència és de matís: posar l'adverbi al davant (posició A) **emfatitza el temps**, com qui diu \"_Avui_ —no pas demà— estudio alemany\". La posició B és la neutra, per defecte."
+          "body": "#### Posició dels adverbis temporals a l'oració\n\nAquesta és la part que costa més al catalanoparlant. En català, els adverbis temporals són molt flexibles: _Avui estudio alemany_, _Estudio alemany avui_, _Jo avui estudio alemany_... totes vàlides. **En alemany la cosa és més estricta**, perquè el verb conjugat **ha d'ocupar sempre la segona posició** de l'oració (la regla del _V2_, que ja has vist).\n\n**Regla pràctica per a aquest tema:**\n\nL'adverbi temporal pot anar en **dues posicions** principals:\n\n**Posició A: al principi de l'oració (posició 1).** L'adverbi ocupa la posició 1, el verb es manté a la posició 2, i el subjecte passa a la posició 3. Això es diu ==inversió==.\n\n> !!**Heute** _lerne_ ich Deutsch.!! (Avui estudio alemany.)\n> !!**Oft** _gehe_ ich ins Kino.!! (Sovint vaig al cinema.)\n> !!**Jeden Tag** _spielt_ er Gitarre.!! (Cada dia toca la guitarra.)\n\n**Posició B: darrere del verb (i, si n'hi ha, del subjecte).**\n\n> !!Ich _lerne_ **heute** Deutsch.!!\n> !!Ich _gehe_ **oft** ins Kino.!!\n> !!Er _spielt_ **jeden Tag** Gitarre.!!\n\nLes dues posicions són correctes. L'única diferència és de matís: posar l'adverbi al davant (posició A) **emfatitza el temps**, com qui diu \"_Avui_ —no pas demà— estudio alemany\". La posició B és la neutra, per defecte."
         },
         {
           "type": "callout",
           "variant": "danger",
           "title": "El que NO es pot fer",
-          "body": "Posar l'adverbi entre el subjecte i el verb conjugat. En català ho fem sense problema (_Jo avui estudio_), però en alemany **trenca la regla V2**:\n\nIncorrecte: **~~Ich heute lerne Deutsch.~~**\n\nCorrecte: _Heute lerne ich Deutsch_ (A) o _Ich lerne heute Deutsch_ (B)."
+          "body": "Posar l'adverbi entre el subjecte i el verb conjugat. En català ho fem sense problema (_Jo avui estudio_), però en alemany **trenca la regla V2**:\n\nIncorrecte: **~~Ich heute lerne Deutsch.~~**\n\nCorrecte: _!!Heute lerne ich Deutsch.!!_ (A) o _!!Ich lerne heute Deutsch.!!_ (B)."
         },
         {
           "type": "explanation",
-          "body": "**Si hi ha diversos elements darrere del verb** (complements de temps, manera, lloc), la regla mnemotècnica clàssica és **==TeKaMoLo==**: **Te**mporal → **Ka**usal (causa) → **Mo**dal (manera) → **Lo**kal (lloc). El temps sempre va primer.\n\n> Ich gehe **heute** (temps) **mit Anna** (manera) **ins Kino** (lloc). (Avui vaig al cinema amb l'Anna.)\n\nDe moment, retén la idea simple: **adverbi temporal al davant (amb inversió) o just després del verb**. Mai entremig de subjecte i verb."
+          "body": "**Si hi ha diversos elements darrere del verb** (complements de temps, manera, lloc), la regla mnemotècnica clàssica és **==TeKaMoLo==**: **Te**mporal → **Ka**usal (causa) → **Mo**dal (manera) → **Lo**kal (lloc). El temps sempre va primer.\n\n> !!Ich gehe **heute** mit Anna ins Kino.!! (Avui vaig al cinema amb l'Anna.)\n\nDe moment, retén la idea simple: **adverbi temporal al davant (amb inversió) o just després del verb**. Mai entremig de subjecte i verb."
         }
       ]
     },
@@ -140,7 +140,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Paranys habituals\n\n**1. Posar l'adverbi entre subjecte i verb.**\nÉs l'error número u del catalanoparlant. En català diem naturalment _Jo avui vaig al cinema_; en alemany això trenca la regla V2.\n\n> Incorrecte: **~~Ich heute gehe ins Kino.~~**\n> Correcte: _**Heute** gehe ich ins Kino_ (amb inversió) o _Ich gehe **heute** ins Kino_ (després del verb).\n\n**2. Confondre _morgen_ amb _morgens_.**\n_morgen_ (sense _-s_) = **demà**. _morgens_ (amb _-s_) = **al matí, habitualment**. La diferència és crítica.\n\n> _**Morgen** habe ich eine Prüfung._ (Demà tinc un examen.)\n> _**Morgens** trinke ich Kaffee._ (Al matí bec cafè.)\n\n**3. Negació doble amb _nie_.**\n_nie_ ja és negatiu. Afegir-hi _nicht_ és redundant i incorrecte.\n\n> Incorrecte: **~~Ich trinke nicht nie Kaffee.~~**\n> Correcte: _Ich trinke **nie** Kaffee._ (No bec cafè mai.)\n\n**4. Traduir literalment \"cada dia\" com _~~jeder Tag~~_.**\nL'expressió \"cada + substantiu\" com a **complement temporal** va en **acusatiu**: _jeden Tag_, no _jeder Tag_. (Ara de moment aprèn-ho com a fórmula; la gramàtica arriba al tema de l'acusatiu.)\n\n> Incorrecte: **~~Ich spiele jeder Tag Gitarre.~~**\n> Correcte: _Ich spiele **jeden Tag** Gitarre._\n\n**5. Oblidar la inversió quan l'adverbi va davant.**\nSi comences l'oració amb un adverbi temporal, el verb ha d'anar a la posició 2, **abans** del subjecte.\n\n> Incorrecte: **~~Heute ich lerne Deutsch.~~**\n> Correcte: _Heute **lerne ich** Deutsch._\n\n**6. Fer servir _manchmal_ o _oft_ amb preposició.**\nEls adverbis són **invariables i autosuficients**. No porten preposicions ni articles.\n\n> Incorrecte: **~~In manchmal gehe ich ins Kino.~~** / **~~Am oft...~~**\n> Correcte: _**Manchmal** gehe ich ins Kino_ / _Ich gehe **oft** ins Kino._"
+          "body": "#### Paranys habituals\n\n**1. Posar l'adverbi entre subjecte i verb.**\nÉs l'error número u del catalanoparlant. En català diem naturalment _Jo avui vaig al cinema_; en alemany això trenca la regla V2.\n\n> Incorrecte: **~~Ich heute gehe ins Kino.~~**\n> Correcte: _**Heute** gehe ich ins Kino_ (amb inversió) o _Ich gehe **heute** ins Kino_ (després del verb).\n\n**2. Confondre _morgen_ amb _morgens_.**\n_morgen_ (sense _-s_) = **demà**. _morgens_ (amb _-s_) = **al matí, habitualment**. La diferència és crítica.\n\n> _!!**Morgen** habe ich eine Prüfung.!!_ (Demà tinc un examen.)\n> _!!**Morgens** trinke ich Kaffee.!!_ (Al matí bec cafè.)\n\n**3. Negació doble amb _nie_.**\n_nie_ ja és negatiu. Afegir-hi _nicht_ és redundant i incorrecte.\n\n> Incorrecte: **~~Ich trinke nicht nie Kaffee.~~**\n> Correcte: _!!Ich trinke **nie** Kaffee.!!_ (No bec cafè mai.)\n\n**4. Traduir literalment \"cada dia\" com _~~jeder Tag~~_.**\nL'expressió \"cada + substantiu\" com a **complement temporal** va en **acusatiu**: _jeden Tag_, no _jeder Tag_. (Ara de moment aprèn-ho com a fórmula; la gramàtica arriba al tema de l'acusatiu.)\n\n> Incorrecte: **~~Ich spiele jeder Tag Gitarre.~~**\n> Correcte: _!!Ich spiele **jeden Tag** Gitarre.!!_\n\n**5. Oblidar la inversió quan l'adverbi va davant.**\nSi comences l'oració amb un adverbi temporal, el verb ha d'anar a la posició 2, **abans** del subjecte.\n\n> Incorrecte: **~~Heute ich lerne Deutsch.~~**\n> Correcte: _!!Heute **lerne ich** Deutsch.!!_\n\n**6. Fer servir _manchmal_ o _oft_ amb preposició.**\nEls adverbis són **invariables i autosuficients**. No porten preposicions ni articles.\n\n> Incorrecte: **~~In manchmal gehe ich ins Kino.~~** / **~~Am oft...~~**\n> Correcte: _!!**Manchmal** gehe ich ins Kino.!!_ / _!!Ich gehe **oft** ins Kino.!!_"
         }
       ]
     },
@@ -180,13 +180,13 @@
           "title": "20.1 Escala de freqüència (0 % → 100 %)",
           "headers": ["Adverbi", "Significat", "Posició aproximada"],
           "rows": [
-            ["**nie**", "mai", "0 %"],
-            ["**fast nie**", "gairebé mai", "~5 %"],
-            ["**selten**", "poques vegades, rarament", "~20 %"],
-            ["**manchmal**", "a vegades", "~40 %"],
-            ["**oft**", "sovint", "~70 %"],
-            ["**meistens**", "la majoria de vegades", "~85 %"],
-            ["**immer**", "sempre", "100 %"]
+            ["!!**nie**!!", "mai", "0 %"],
+            ["!!**fast nie**!!", "gairebé mai", "~5 %"],
+            ["!!**selten**!!", "poques vegades, rarament", "~20 %"],
+            ["!!**manchmal**!!", "a vegades", "~40 %"],
+            ["!!**oft**!!", "sovint", "~70 %"],
+            ["!!**meistens**!!", "la majoria de vegades", "~85 %"],
+            ["!!**immer**!!", "sempre", "100 %"]
           ]
         },
         {
@@ -194,12 +194,12 @@
           "title": "20.2 Adverbis de moment",
           "headers": ["Adverbi", "Significat", "Exemple"],
           "rows": [
-            ["**gestern**", "ahir", "_Gestern war ich krank._"],
-            ["**heute**", "avui", "_Heute lerne ich Deutsch._"],
-            ["**morgen**", "demà (dia concret)", "_Morgen gehe ich ins Kino._"],
-            ["**morgens**", "al matí (rutina)", "_Morgens trinke ich Kaffee._"],
-            ["**abends**", "al vespre (rutina)", "_Abends sehe ich fern._"],
-            ["**nachmittags**", "a la tarda (rutina)", "_Nachmittags gehe ich spazieren._"]
+            ["!!**gestern**!!", "ahir", "_!!Gestern war ich krank.!!_"],
+            ["!!**heute**!!", "avui", "_!!Heute lerne ich Deutsch.!!_"],
+            ["!!**morgen**!!", "demà (dia concret)", "_!!Morgen gehe ich ins Kino.!!_"],
+            ["!!**morgens**!!", "al matí (rutina)", "_!!Morgens trinke ich Kaffee.!!_"],
+            ["!!**abends**!!", "al vespre (rutina)", "_!!Abends sehe ich fern.!!_"],
+            ["!!**nachmittags**!!", "a la tarda (rutina)", "_!!Nachmittags gehe ich spazieren.!!_"]
           ]
         },
         {
@@ -207,11 +207,11 @@
           "title": "20.3 Expressions fixes de freqüència",
           "headers": ["Patró", "Exemple", "Traducció"],
           "rows": [
-            ["_X-mal im/in der/am Y_", "_zweimal in der Woche_", "dues vegades a la setmana"],
-            ["_X-mal im Y_ (m/n)", "_einmal im Monat / im Jahr_", "una vegada al mes / a l'any"],
-            ["_jeden + masc._", "_jeden Tag_", "cada dia"],
-            ["_jede + fem._", "_jede Woche_", "cada setmana"],
-            ["_jedes + neutre_", "_jedes Jahr_", "cada any"]
+            ["_X-mal im/in der/am Y_", "_!!zweimal in der Woche!!_", "dues vegades a la setmana"],
+            ["_X-mal im Y_ (m/n)", "_!!einmal im Monat!! / !!einmal im Jahr!!_", "una vegada al mes / a l'any"],
+            ["_jeden + masc._", "_!!jeden Tag!!_", "cada dia"],
+            ["_jede + fem._", "_!!jede Woche!!_", "cada setmana"],
+            ["_jedes + neutre_", "_!!jedes Jahr!!_", "cada any"]
           ],
           "caption": "_Woche_ és femení → _in der Woche_. _Monat_ i _Jahr_ → _im Monat, im Jahr_. _Tag_ → _am Tag_."
         },
@@ -220,8 +220,8 @@
           "title": "20.4 Regla de posició (V2)",
           "headers": ["Posició", "Estructura", "Exemple"],
           "rows": [
-            ["Posició A (inversió)", "Adv + verb + subjecte + …", "_**Heute** lerne ich Deutsch._"],
-            ["Posició B (neutra)", "Subjecte + verb + adv + …", "_Ich lerne **heute** Deutsch._"],
+            ["Posició A (inversió)", "Adv + verb + subjecte + …", "_!!**Heute** lerne ich Deutsch.!!_"],
+            ["Posició B (neutra)", "Subjecte + verb + adv + …", "_!!Ich lerne **heute** Deutsch.!!_"],
             ["Incorrecte", "Subjecte + adv + verb (trenca V2)", "~~_Ich heute lerne Deutsch._~~"]
           ],
           "caption": "TeKaMoLo: Temporal → Kausal → Modal → Lokal."
