@@ -2768,6 +2768,23 @@ html.dark .k-mark {
  * moment del mount perquè l'ull sàpiga on mirar. L'animació dura
  * uns quants segons i després es queda amb el barrot discret.
  */
+/*
+ * Files del temari/progrés · §99 polit
+ *
+ * Defaults per a temes gramaticals + distinció subtil pels de
+ * vocabulari (category: 'vocabulary'). L'id apareix en el color
+ * d'accent (reader-mark) i el títol en italic, perquè l'usuari
+ * vegi de seguida que és capítol lèxic dins del bloc temàtic.
+ */
+.topic-row-id { color: rgb(var(--color-reader-muted)); }
+.is-vocab .topic-row-id {
+  color: rgb(var(--color-reader-mark));
+  font-weight: 600;
+}
+.is-vocab .topic-row-title {
+  font-style: italic;
+}
+
 .topics-focus {
   position: relative;
   animation: topics-focus-pulse 2.4s var(--ease-standard) 0.1s 1 both;

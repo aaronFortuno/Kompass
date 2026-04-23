@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-23T07:27:22.504Z",
+  "generatedAt": "2026-04-23T07:37:58.152Z",
   "totalStrings": 1903,
   "totalChars": 30365,
   "entries": [
@@ -42,11 +42,11 @@
       "text": "der Cousin",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[7].pron"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[7].tables[1].rows[7][0]#inline[0]"
         }
       ]
@@ -170,16 +170,16 @@
       "text": "die Schwester",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-4",
+          "path": "steps[4].blocks[2].body#inline[7]"
+        },
+        {
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[7].pron"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[7].tables[0].rows[8][0]#inline[0]"
-        },
-        {
-          "topic": "A1a-4",
-          "path": "steps[4].blocks[2].body#inline[7]"
         }
       ]
     },
@@ -238,11 +238,11 @@
       "text": "das Auto ist rot",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[5].comparison[1].de"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[6].pitfalls[0].good"
         }
       ]
@@ -404,7 +404,7 @@
       "text": "unser Kind / unsere Kinder",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[2].pairs[4].possessive"
         }
       ]
@@ -562,7 +562,7 @@
       "text": "mein Eltern",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[6].pitfalls[1].bad"
         }
       ]
@@ -770,11 +770,11 @@
       "text": "Mein Bruder ist ledig.",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[5].tabs[1].example.de#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[5].tabs[1].example.de#whole"
         }
       ]
@@ -958,11 +958,11 @@
       "text": "Meine Oma kocht sehr gut.",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[1].example.de#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[1].example.de#whole"
         }
       ]
@@ -1060,11 +1060,11 @@
           "path": "steps[1].blocks[2].body#inline[2]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[5].pron"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[7].tables[1].rows[5][0]#inline[0]"
         }
       ]
@@ -1816,7 +1816,7 @@
       "text": "Welche Farbe haben deine Augen? — Sie sind blau.",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[4].examples[2].de#whole"
         }
       ]
@@ -2146,7 +2146,7 @@
           "path": "steps[6].blocks[1].rows[2][2]#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[2].pairs[4].personal"
         }
       ]
@@ -2176,7 +2176,7 @@
       "text": "Das Gras ist grün.",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[1].tabs[2].example.de#whole"
         }
       ]
@@ -2254,15 +2254,15 @@
       "text": "gelb",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[1].tabs[3].example.de#inline[0]"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[1].tabs[3].pron"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[7].tables[0].rows[3][0]#inline[0]"
         }
       ]
@@ -2582,7 +2582,7 @@
       "text": "sein Sohn / seine Tochter",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[2].pairs[2].possessive"
         }
       ]
@@ -2652,7 +2652,7 @@
       "text": "Welche Farbe hat deine Tasche?",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[4].examples[1].de#inline[0]"
         }
       ]
@@ -2906,11 +2906,11 @@
       "text": "der Großvater",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[0].pron"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[7].tables[1].rows[0][0]#inline[0]"
         }
       ]
@@ -3276,16 +3276,16 @@
       "text": "der Vater",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-5",
+          "path": "steps[3].blocks[0].body#inline[0]"
+        },
+        {
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[0].pron"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[7].tables[0].rows[0][0]#inline[0]"
-        },
-        {
-          "topic": "A1a-5",
-          "path": "steps[3].blocks[0].body#inline[0]"
         }
       ]
     },
@@ -3406,11 +3406,11 @@
       "text": "Mein Vater heißt Klaus.",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[0].example.de#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[0].example.de#whole"
         }
       ]
@@ -3714,7 +3714,7 @@
       "text": "Der Hund ist braun.",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[3].examples[0].de#whole"
         }
       ]
@@ -3980,11 +3980,11 @@
       "text": "Mein Onkel Peter ist lustig.",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[5].example.de#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[5].example.de#whole"
         }
       ]
@@ -4014,19 +4014,19 @@
       "text": "blau",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[1].tabs[1].example.de#inline[0]"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[1].tabs[1].pron"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[4].examples[2].de#inline[1]"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[7].tables[0].rows[1][0]#inline[0]"
         }
       ]
@@ -4056,7 +4056,7 @@
       "text": "ihr Sohn / ihre Tochter",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[2].pairs[3].possessive"
         }
       ]
@@ -4076,11 +4076,11 @@
       "text": "die Cousine",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[8].pron"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[7].tables[1].rows[8][0]#inline[0]"
         }
       ]
@@ -4534,7 +4534,7 @@
       "text": "Ich bin geheiratet",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[6].pitfalls[3].bad"
         }
       ]
@@ -4562,7 +4562,7 @@
       "text": "Die Nacht ist schwarz.",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[1].tabs[4].example.de#whole"
         }
       ]
@@ -4610,11 +4610,11 @@
       "text": "Meine Schwester wohnt in München.",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[7].example.de#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[7].example.de#whole"
         }
       ]
@@ -4822,11 +4822,11 @@
       "text": "verwitwet",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[5].tabs[3].pron"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[7].tables[2].rows[3][0]#inline[0]"
         }
       ]
@@ -4982,11 +4982,11 @@
       "text": "Ich habe zwei Geschwister.",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[8].example.de#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[8].example.de#whole"
         }
       ]
@@ -4996,7 +4996,7 @@
       "text": "Welche Farbe haben deine Augen?",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[4].examples[2].de#inline[0]"
         }
       ]
@@ -5016,11 +5016,11 @@
       "text": "Oma hat drei Enkel.",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[3].example.de#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[3].example.de#whole"
         }
       ]
@@ -5756,19 +5756,19 @@
       "text": "weiß",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[1].tabs[5].example.de#inline[0]"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[1].tabs[5].pron"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[3].examples[2].de#inline[0]"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[7].tables[0].rows[5][0]#inline[0]"
         }
       ]
@@ -5924,11 +5924,11 @@
           "path": "steps[9].blocks[2].rows[1][2]#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[3].pron"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[7].tables[0].rows[3][0]#inline[0]"
         }
       ]
@@ -6078,7 +6078,7 @@
       "text": "die Schwiegereltern",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[4].tables[0].rows[2][0]#inline[0]"
         }
       ]
@@ -6274,11 +6274,11 @@
       "text": "die Großeltern",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[2].pron"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[7].tables[1].rows[2][0]#inline[0]"
         }
       ]
@@ -6410,11 +6410,11 @@
       "text": "Meine Eltern wohnen in Berlin.",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[2].example.de#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[2].example.de#whole"
         }
       ]
@@ -6882,7 +6882,7 @@
       "text": "mein Vater / meine Mutter",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[2].pairs[0].possessive"
         }
       ]
@@ -7286,11 +7286,11 @@
       "text": "geschieden",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[5].tabs[2].pron"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[7].tables[2].rows[2][0]#inline[0]"
         }
       ]
@@ -7320,11 +7320,11 @@
       "text": "Meine Tochter ist drei Jahre alt.",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[4].example.de#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[4].example.de#whole"
         }
       ]
@@ -7354,7 +7354,7 @@
       "text": "das rote Auto",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[5].comparison[0].de"
         }
       ]
@@ -7642,10 +7642,6 @@
           "path": "steps[9].blocks[2].rows[4][2]#inline[1]"
         },
         {
-          "topic": "A1a-39",
-          "path": "steps[7].tables[0].rows[6][0]#inline[0]"
-        },
-        {
           "topic": "A1a-6",
           "path": "steps[2].blocks[1].rows[3][2]#inline[0]"
         },
@@ -7656,6 +7652,10 @@
         {
           "topic": "A1a-9",
           "path": "steps[2].blocks[1].rows[4][0]#inline[0]"
+        },
+        {
+          "topic": "A1a-V3",
+          "path": "steps[7].tables[0].rows[6][0]#inline[0]"
         }
       ]
     },
@@ -7818,7 +7818,7 @@
       "text": "Die Karotte ist orange.",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[2].tabs[0].example.de#whole"
         }
       ]
@@ -8098,7 +8098,7 @@
       "text": "Welche Farbe hat das Auto? — Das Auto ist rot.",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[4].examples[0].de#whole"
         }
       ]
@@ -8334,7 +8334,7 @@
       "text": "das Auto ist rote",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[6].pitfalls[0].bad"
         }
       ]
@@ -8416,11 +8416,11 @@
       "text": "die Tante",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[6].pron"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[7].tables[1].rows[6][0]#inline[0]"
         }
       ]
@@ -8528,7 +8528,7 @@
       "text": "die Stiefmutter",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[4].tables[0].rows[6][0]#inline[0]"
         }
       ]
@@ -8548,11 +8548,11 @@
       "text": "der Enkel",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[3].pron"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[7].tables[1].rows[3][0]#inline[0]"
         }
       ]
@@ -8694,7 +8694,7 @@
       "text": "Der Apfel ist rot.",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[1].tabs[0].example.de#whole"
         }
       ]
@@ -8714,15 +8714,15 @@
       "text": "rosa",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[2].tabs[1].example.de#inline[0]"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[2].tabs[1].pron"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[7].tables[0].rows[9][0]#inline[0]"
         }
       ]
@@ -8756,11 +8756,11 @@
           "path": "steps[9].blocks[2].rows[2][2]#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[1].pron"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[7].tables[0].rows[1][0]#inline[0]"
         }
       ]
@@ -8920,7 +8920,7 @@
           "path": "steps[4].pairs[2].personal"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[2].pairs[2].personal"
         }
       ]
@@ -9010,15 +9010,15 @@
       "text": "Welche Farbe hat das Auto?",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[4].examples[0].de#inline[0]"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[6].pitfalls[2].good"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[7].tables[1].rows[2][1]#inline[0]"
         }
       ]
@@ -9028,15 +9028,15 @@
       "text": "lila",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[2].tabs[2].example.de#inline[0]"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[2].tabs[2].pron"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[7].tables[0].rows[8][0]#inline[0]"
         }
       ]
@@ -9096,7 +9096,7 @@
       "text": "Ich bin verheiratet",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[6].pitfalls[3].good"
         }
       ]
@@ -9532,7 +9532,7 @@
       "text": "der Schwager",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[4].tables[0].rows[3][0]#inline[0]"
         }
       ]
@@ -9542,7 +9542,7 @@
       "text": "Die Katze ist schwarz.",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[3].examples[1].de#whole"
         }
       ]
@@ -9576,7 +9576,7 @@
       "text": "Welche Farbe ist das Auto?",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[6].pitfalls[2].bad"
         }
       ]
@@ -9630,11 +9630,11 @@
       "text": "Meine Mutter ist Lehrerin.",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[1].example.de#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[1].example.de#whole"
         }
       ]
@@ -9706,11 +9706,11 @@
       "text": "Wir haben zwei Kinder.",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[5].example.de#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[5].example.de#whole"
         }
       ]
@@ -9942,7 +9942,7 @@
       "text": "das Kind és femení perquè és 'nena'",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[6].pitfalls[0].bad"
         }
       ]
@@ -10096,7 +10096,7 @@
       "text": "die Tasche ist schwarz",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[6].pitfalls[1].good"
         }
       ]
@@ -10310,11 +10310,11 @@
       "text": "Meine Tante ist geschieden.",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[5].tabs[2].example.de#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[5].tabs[2].example.de#whole"
         }
       ]
@@ -10678,7 +10678,7 @@
       "text": "der Stiefvater",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[4].tables[0].rows[5][0]#inline[0]"
         }
       ]
@@ -11172,11 +11172,11 @@
       "text": "Meine Tante Lisa ist Ärztin.",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[6].example.de#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[6].example.de#whole"
         }
       ]
@@ -11322,11 +11322,11 @@
       "text": "die Eltern",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[2].pron"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[7].tables[0].rows[2][0]#inline[0]"
         }
       ]
@@ -11512,11 +11512,11 @@
       "text": "ledig",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[5].tabs[1].pron"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[7].tables[2].rows[1][0]#inline[0]"
         }
       ]
@@ -12080,11 +12080,11 @@
       "text": "die Großmutter",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[1].pron"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[7].tables[1].rows[1][0]#inline[0]"
         }
       ]
@@ -12284,7 +12284,7 @@
       "text": "die Oma",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[7].tables[1].rows[1][0]#inline[1]"
         }
       ]
@@ -12582,16 +12582,16 @@
       "text": "der Bruder",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-4",
+          "path": "steps[4].blocks[2].body#inline[4]"
+        },
+        {
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[6].pron"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[7].tables[0].rows[7][0]#inline[0]"
-        },
-        {
-          "topic": "A1a-4",
-          "path": "steps[4].blocks[2].body#inline[4]"
         }
       ]
     },
@@ -12630,11 +12630,11 @@
       "text": "verheiratet",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[5].tabs[0].pron"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[7].tables[2].rows[0][0]#inline[0]"
         }
       ]
@@ -12850,7 +12850,7 @@
       "text": "der Schwiegervater",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[4].tables[0].rows[0][0]#inline[0]"
         }
       ]
@@ -12952,23 +12952,23 @@
       "text": "schwarz",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[1].tabs[4].example.de#inline[0]"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[1].tabs[4].pron"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[3].examples[1].de#inline[0]"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[4].examples[1].de#inline[1]"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[7].tables[0].rows[4][0]#inline[0]"
         }
       ]
@@ -12978,11 +12978,11 @@
       "text": "die Geschwister",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[8].pron"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[7].tables[0].rows[9][0]#inline[0]"
         }
       ]
@@ -13006,11 +13006,11 @@
       "text": "Mein Cousin lebt in Berlin.",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[7].example.de#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[7].example.de#whole"
         }
       ]
@@ -13020,11 +13020,11 @@
       "text": "Meine Großeltern sind aus Hamburg.",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[2].example.de#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[2].example.de#whole"
         }
       ]
@@ -13168,7 +13168,7 @@
       "text": "Der Schnee ist weiß.",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[1].tabs[5].example.de#whole"
         }
       ]
@@ -13704,11 +13704,11 @@
       "text": "Die Blumen sind rot.",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[3].examples[3].de#whole"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[7].tables[1].rows[1][1]#inline[0]"
         }
       ]
@@ -13798,7 +13798,7 @@
       "text": "Ich habe eine Geschwister",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[6].pitfalls[2].bad"
         }
       ]
@@ -14434,7 +14434,7 @@
       "text": "der Opa",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[7].tables[1].rows[0][0]#inline[1]"
         }
       ]
@@ -14740,11 +14740,11 @@
       "text": "Ich bin seit zehn Jahren verheiratet.",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[5].tabs[0].example.de#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[5].tabs[0].example.de#whole"
         }
       ]
@@ -15332,11 +15332,11 @@
       "text": "die Enkelin",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[4].pron"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[7].tables[1].rows[4][0]#inline[0]"
         }
       ]
@@ -15414,7 +15414,7 @@
           "path": "steps[4].pairs[3].personal"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[2].pairs[3].personal"
         }
       ]
@@ -15772,7 +15772,7 @@
           "path": "steps[6].blocks[1].rows[1][2]#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[2].pairs[0].personal"
         }
       ]
@@ -16160,7 +16160,7 @@
       "text": "die Schwiegermutter",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[4].tables[0].rows[1][0]#inline[0]"
         }
       ]
@@ -16554,11 +16554,11 @@
       "text": "Meine Oma ist verwitwet.",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[5].tabs[3].example.de#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[5].tabs[3].example.de#whole"
         }
       ]
@@ -16924,15 +16924,15 @@
       "text": "grün",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[1].tabs[2].example.de#inline[0]"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[1].tabs[2].pron"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[7].tables[0].rows[2][0]#inline[0]"
         }
       ]
@@ -17038,7 +17038,7 @@
       "text": "Welche Farbe hat deine Tasche? — Sie ist schwarz.",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[4].examples[1].de#whole"
         }
       ]
@@ -17446,16 +17446,16 @@
       "text": "die Tochter",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-5",
+          "path": "steps[4].blocks[0].body#inline[0]"
+        },
+        {
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[4].pron"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[7].tables[0].rows[4][0]#inline[0]"
-        },
-        {
-          "topic": "A1a-5",
-          "path": "steps[4].blocks[0].body#inline[0]"
         }
       ]
     },
@@ -17504,19 +17504,19 @@
       "text": "braun",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[2].tabs[3].example.de#inline[0]"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[2].tabs[3].pron"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[3].examples[0].de#inline[0]"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[7].tables[0].rows[10][0]#inline[0]"
         }
       ]
@@ -17908,7 +17908,7 @@
           "path": "steps[5].blocks[1].rows[3][2]#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[6].pitfalls[1].good"
         }
       ]
@@ -17946,20 +17946,20 @@
           "path": "steps[2].blocks[1].rows[2][2]#inline[0]"
         },
         {
-          "topic": "A1a-39",
-          "path": "steps[1].tabs[5].pron"
-        },
-        {
-          "topic": "A1a-39",
-          "path": "steps[7].tables[0].rows[5][0]#inline[0]"
-        },
-        {
           "topic": "A1a-6",
           "path": "steps[2].blocks[1].rows[2][2]#inline[0]"
         },
         {
           "topic": "A1a-6",
           "path": "steps[2].blocks[2].body#inline[4]"
+        },
+        {
+          "topic": "A1a-V3",
+          "path": "steps[1].tabs[5].pron"
+        },
+        {
+          "topic": "A1a-V3",
+          "path": "steps[7].tables[0].rows[5][0]#inline[0]"
         }
       ]
     },
@@ -18330,7 +18330,7 @@
       "text": "die Tasche ist schwarze",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[6].pitfalls[1].bad"
         }
       ]
@@ -18384,7 +18384,7 @@
       "text": "Ich habe einen Bruder",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[6].pitfalls[2].good"
         }
       ]
@@ -18424,7 +18424,7 @@
       "text": "Der Himmel ist heute grau.",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[1].tabs[6].example.de#whole"
         }
       ]
@@ -18626,7 +18626,7 @@
       "text": "der Halbbruder",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[4].tables[0].rows[7][0]#inline[0]"
         }
       ]
@@ -18776,7 +18776,7 @@
       "text": "Das Auto ist rot.",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[7].tables[1].rows[0][1]#inline[0]"
         }
       ]
@@ -18796,7 +18796,7 @@
       "text": "Die Sonne ist gelb.",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[1].tabs[3].example.de#whole"
         }
       ]
@@ -18836,15 +18836,15 @@
       "text": "grau",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[1].tabs[6].example.de#inline[0]"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[1].tabs[6].pron"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[7].tables[0].rows[6][0]#inline[0]"
         }
       ]
@@ -19942,11 +19942,11 @@
       "text": "Meine Cousine ist aus Österreich.",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[8].example.de#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[8].example.de#whole"
         }
       ]
@@ -19956,7 +19956,7 @@
       "text": "Das Kleid ist rosa.",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[2].tabs[1].example.de#whole"
         }
       ]
@@ -20058,11 +20058,11 @@
       "text": "Ich habe einen Sohn.",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[3].example.de#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[3].example.de#whole"
         }
       ]
@@ -20192,7 +20192,7 @@
       "text": "das Kind és sempre neutre, sigui nen o nena",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[6].pitfalls[0].good"
         }
       ]
@@ -20274,7 +20274,7 @@
       "text": "die Schwägerin",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[4].tables[0].rows[4][0]#inline[0]"
         }
       ]
@@ -20702,28 +20702,28 @@
       "text": "rot",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-9",
+          "path": "steps[4].blocks[1].rows[0][0]#inline[0]"
+        },
+        {
+          "topic": "A1a-V5",
           "path": "steps[1].tabs[0].example.de#inline[0]"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[1].tabs[0].pron"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[3].examples[3].de#inline[0]"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[4].examples[0].de#inline[1]"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[7].tables[0].rows[0][0]#inline[0]"
-        },
-        {
-          "topic": "A1a-9",
-          "path": "steps[4].blocks[1].rows[0][0]#inline[0]"
         }
       ]
     },
@@ -20732,7 +20732,7 @@
       "text": "dein Bruder / deine Schwester",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[2].pairs[1].possessive"
         }
       ]
@@ -20756,7 +20756,7 @@
       "text": "Das Haus ist weiß.",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[3].examples[2].de#whole"
         }
       ]
@@ -21672,7 +21672,7 @@
       "text": "Die Schokolade ist braun.",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[2].tabs[3].example.de#whole"
         }
       ]
@@ -22096,15 +22096,15 @@
       "text": "orange",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[2].tabs[0].example.de#inline[0]"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[2].tabs[0].pron"
         },
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[7].tables[0].rows[7][0]#inline[0]"
         }
       ]
@@ -22188,7 +22188,7 @@
       "text": "Die Blume ist lila.",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[2].tabs[2].example.de#whole"
         }
       ]
@@ -22408,11 +22408,11 @@
       "text": "Mein Bruder ist älter.",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[6].example.de#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[1].tabs[6].example.de#whole"
         }
       ]
@@ -22932,7 +22932,7 @@
           "path": "steps[4].pairs[1].personal"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[2].pairs[1].personal"
         }
       ]
@@ -23286,11 +23286,11 @@
       "text": "Seine Enkelin ist fünf.",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[4].example.de#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[4].example.de#whole"
         }
       ]
@@ -23378,7 +23378,7 @@
       "text": "Der Himmel ist blau.",
       "sources": [
         {
-          "topic": "A1a-41",
+          "topic": "A1a-V5",
           "path": "steps[1].tabs[1].example.de#whole"
         }
       ]
@@ -23412,11 +23412,11 @@
       "text": "Mein Opa wohnt auf dem Land.",
       "sources": [
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[0].example.de#inline[0]"
         },
         {
-          "topic": "A1a-39",
+          "topic": "A1a-V3",
           "path": "steps[3].tabs[0].example.de#whole"
         }
       ]

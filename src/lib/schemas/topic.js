@@ -16,7 +16,10 @@ import { ContentBlockSchema } from './contentBlock.js';
  * Un tema ha de ser tot d'un format o tot de l'altre.
  */
 
-const TOPIC_ID_REGEX = /^A\d[ab]-\d+$/;
+// Accepta tant ids de gramàtica (A1a-14, A1b-19…) com de vocabulari
+// (A1a-V3, A1b-V2…). El prefix "V" s'usa per marcar temes lèxics
+// temàtics interliveats dins dels blocs de gramàtica.
+const TOPIC_ID_REGEX = /^A\d[ab]-(V?\d+)$/;
 const STEP_ID_REGEX = /^[a-z0-9][a-z0-9-]*$/;
 
 // ─────────────────────────────── format llegat
@@ -147,6 +150,7 @@ export const TopicSchema = z
     shortTitle: z.string(),
     description: z.string(),
     axes: z.array(z.string()),
+    category: z.enum(['grammar', 'vocabulary']).optional(),
     prerequisites: z.array(z.string().regex(TOPIC_ID_REGEX)).optional(),
     estimatedMinutes: z.number().int().min(1).optional(),
     steps: z.array(StepSchema).min(1),

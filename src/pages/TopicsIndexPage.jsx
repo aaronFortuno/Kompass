@@ -5,7 +5,7 @@ import { useT } from '@/i18n';
 import { getAllLevelKeys, getTopicsByLevel } from '@/lib/dataLoader.js';
 import { useProgressStore } from '@/store/useProgressStore.js';
 import { computeTopicProgress } from '@/lib/topicProgress.js';
-import { groupTopics } from '@/lib/topicGroups.js';
+import { groupTopics, isVocabulary } from '@/lib/topicGroups.js';
 
 /*
  * TopicsIndexPage · temari com a navegador temàtic.
@@ -88,14 +88,15 @@ function TopicRow({ topic, progress, t, isFocus, focusRef, revealIndex }) {
         'hover:bg-reader-paper-2',
         'transition-colors duration-fast ease-standard',
         'progress-row-reveal',
+        isVocabulary(topic) ? 'is-vocab' : '',
         isFocus ? 'topics-focus' : '',
       ].join(' ')}
       style={{ animationDelay: `${delayMs}ms` }}
     >
-      <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-reader-muted w-7 flex-shrink-0 text-right">
+      <span className="font-mono text-[11px] uppercase tracking-[0.16em] w-7 flex-shrink-0 text-right topic-row-id">
         {topic.id.replace(/^A1[ab]-/, '')}
       </span>
-      <span className="flex-1 min-w-0 font-serif text-base text-reader-ink tracking-tight truncate">
+      <span className="flex-1 min-w-0 font-serif text-base text-reader-ink tracking-tight truncate topic-row-title">
         {topic.shortTitle}
       </span>
       <span className="flex-shrink-0">

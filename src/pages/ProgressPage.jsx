@@ -25,7 +25,7 @@ import {
   downloadJson,
   buildExportFilename,
 } from '@/lib/exportImport.js';
-import { groupTopics } from '@/lib/topicGroups.js';
+import { groupTopics, isVocabulary } from '@/lib/topicGroups.js';
 import pkg from '../../package.json';
 
 /*
@@ -482,13 +482,14 @@ function BrowseCompactRow({ state, t, revealIndex = 0 }) {
         'hover:bg-reader-paper-2',
         'transition-colors duration-fast ease-standard',
         'progress-row-reveal',
+        isVocabulary(topic) ? 'is-vocab' : '',
       ].join(' ')}
       style={{ animationDelay: `${delayMs}ms` }}
     >
-      <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-reader-muted w-7 flex-shrink-0 text-right">
+      <span className="font-mono text-[11px] uppercase tracking-[0.16em] w-7 flex-shrink-0 text-right topic-row-id">
         {topic.id.replace(/^A1[ab]-/, '')}
       </span>
-      <span className="flex-1 min-w-0 font-serif text-sm text-reader-ink tracking-tight truncate">
+      <span className="flex-1 min-w-0 font-serif text-sm text-reader-ink tracking-tight truncate topic-row-title">
         {topic.shortTitle}
       </span>
       <span className="flex-shrink-0 flex items-center gap-1.5">
