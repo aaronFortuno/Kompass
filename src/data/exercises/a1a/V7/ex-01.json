@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-V7-ex-01",
+  "topicId": "A1a-V7",
+  "title": "Prefix al seu lloc",
+  "prompt": "Col·loca correctament el verb conjugat i el prefix separable a cada frase. Recorda: la part arrel s'encarrega de la conjugació, el prefix se'n va al final.",
+  "difficulty": 1,
+  "tags": ["trennbare-verben", "tagesablauf"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "Ich {{1}} um 7 Uhr {{2}}.\nAnna {{3}} eine Jacke {{4}}.\nEr {{5}} am Abend {{6}}.",
+    "blanks": [
+      { "id": "1", "label": "conjugat (aufstehen)" },
+      { "id": "2", "label": "prefix" },
+      { "id": "3", "label": "conjugat (anziehen)" },
+      { "id": "4", "label": "prefix" },
+      { "id": "5", "label": "conjugat (fernsehen)" },
+      { "id": "6", "label": "prefix" }
+    ]
+  },
+  "interaction": {
+    "type": "typeIn",
+    "slots": [
+      { "blankId": "1", "placeholder": "verb" },
+      { "blankId": "2", "placeholder": "prefix" },
+      { "blankId": "3", "placeholder": "verb" },
+      { "blankId": "4", "placeholder": "prefix" },
+      { "blankId": "5", "placeholder": "verb" },
+      { "blankId": "6", "placeholder": "prefix" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
+  },
+  "validation": {
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["stehe"],
+      "2": ["auf"],
+      "3": ["zieht"],
+      "4": ["an"],
+      "5": ["sieht"],
+      "6": ["fern"]
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Tres verbs, tres prefixos al final. Recorda el patró: arrel conjugada en 2a posició + prefix al final. _fernsehen_ a més té canvi vocàlic _e → ie_ (_er sieht... fern_)."
+    },
+    "incorrect": {
+      "default": "Dues pistes: (a) al present els separables **parteixen**: _aufstehen_ → _Ich **stehe** ... **auf**_; mai _ich aufstehe_; (b) _fernsehen_ té canvi vocàlic _e → ie_ a 2a i 3a sg: _er **sieht** ... **fern**_, no _er seht_."
+    }
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-V7",
+  "level": "A1",
+  "sublevel": "a",
+  "number": 7,
+  "category": "vocabulary",
+  "title": "Tagesablauf — la rutina diària",
+  "shortTitle": "Tagesablauf",
+  "description": "Moments del dia, verbs simples i separables de rutina, adverbis de freqüència i connectors seqüencials. Integrador: narrar un dia sencer en alemany.",
+  "axes": ["vocabulari-tematic"],
+  "estimatedMinutes": 13,
+  "steps": [
+    {
+      "id": "intro",
+      "kind": "narrative",
+      "heading": "La rutina diària",
+      "lead": "Des que t'aixeques fins que et fiques al llit: narrar un dia sencer és un exercici rei del A1.",
+      "body": "Aquesta lliçó et dóna els ==verbs== i els ==moments== per explicar què fas cada dia. Mires el teu calendari: t'aixeques, esmorzes, vas a treballar, tornes, sopes, dorms. En alemany es diu amb set o vuit verbs.",
+      "callout": {
+        "variant": "info",
+        "title": "Integrem el que ja saps",
+        "body": "Connectors seqüencials (_zuerst, dann, danach_), verbs separables, expressions horàries (_um 7 Uhr, am Morgen_) i adverbis de freqüència. No hi ha gramàtica nova, només l'articulació en una narració coherent."
+      }
+    },
+    {
+      "id": "moments-del-dia",
+      "kind": "narrative",
+      "heading": "Els moments del dia",
+      "lead": "Cinc franges temporals de base.",
+      "tabs": [
+        { "pron": "der Morgen", "gloss": "el matí", "note": "Masculí. Franja matinal (uns 6-11 h). _Am Morgen_ = al matí.", "example": { "de": "Am Morgen trinke ich Kaffee.", "ca": "Al matí bec cafè." } },
+        { "pron": "der Mittag", "gloss": "el migdia", "note": "Masculí. Cap a les 12-13 h. _Am Mittag_ = al migdia.", "example": { "de": "Am Mittag esse ich eine Pizza.", "ca": "Al migdia menjo una pizza." } },
+        { "pron": "der Nachmittag", "gloss": "la tarda", "note": "Masculí. Literalment \"després-del-migdia\" (13-18 h). _Am Nachmittag_.", "example": { "de": "Am Nachmittag arbeite ich.", "ca": "A la tarda treballo." } },
+        { "pron": "der Abend", "gloss": "el vespre", "note": "Masculí. 18-22 h aproximadament. _Am Abend_.", "example": { "de": "Am Abend sehe ich fern.", "ca": "Al vespre miro la tele." } },
+        { "pron": "die Nacht", "gloss": "la nit", "note": "Femení. A partir de les 22 h. _In der Nacht_ (femení → in + der, datiu), no _am_.", "example": { "de": "In der Nacht schlafe ich.", "ca": "A la nit dormo." } }
+      ],
+      "callout": {
+        "variant": "warning",
+        "title": "La nit és especial",
+        "body": "Per a totes les franges del dia masculines, s'usa **_am + nom_** (_am Morgen, am Abend_). Però la nit (_die Nacht_, femení) fa servir **_in der Nacht_**. És l'única franja que canvia de preposició."
+      }
+    },
+    {
+      "id": "verbs-simples",
+      "kind": "narrative",
+      "heading": "Verbs simples de rutina",
+      "lead": "Sense prefix separable. Els conjugues com sempre.",
+      "tabs": [
+        { "pron": "frühstücken", "gloss": "esmorzar", "note": "Regular. _Ich frühstücke, du frühstückst_. És un verb format a partir de _das Frühstück_.", "example": { "de": "Ich frühstücke um 7 Uhr.", "ca": "Esmorzo a les 7." }, "image": { "src": "/Kompass/images/a1a/V7/fruehstuecken-640.webp", "srcset": "/Kompass/images/a1a/V7/fruehstuecken-640.webp 640w, /Kompass/images/a1a/V7/fruehstuecken-1280.webp 1280w", "sizes": "(max-width: 640px) 50vw, 200px", "alt": "Torrada amb melmelada sobre un plat blanc", "width": 200, "credit": "Sharon Waldron · Unsplash · Unsplash License" } },
+        { "pron": "duschen", "gloss": "dutxar-se", "note": "Regular. En alemany no cal pronom reflexiu per al significat bàsic (diferent del català).", "example": { "de": "Ich dusche am Morgen.", "ca": "Em dutxo al matí." } },
+        { "pron": "arbeiten", "gloss": "treballar", "note": "Regular. Afegeix _-e-_ a 2a i 3a sing. (_du arbeit==e==st_, _er arbeit==e==t_) perquè l'arrel acaba en _-t_.", "example": { "de": "Ich arbeite acht Stunden.", "ca": "Treballo vuit hores." }, "image": { "src": "/Kompass/images/a1a/V7/arbeiten-640.webp", "srcset": "/Kompass/images/a1a/V7/arbeiten-640.webp 640w, /Kompass/images/a1a/V7/arbeiten-1280.webp 1280w", "sizes": "(max-width: 640px) 50vw, 200px", "alt": "Un portàtil al costat d'una tassa de cafè i una llibreta", "width": 200, "credit": "Lauren Mancke · Unsplash · Unsplash License" } },
+        { "pron": "kochen", "gloss": "cuinar", "note": "Regular. _Ich koche, du kochst_.", "example": { "de": "Am Abend kochen wir Pasta.", "ca": "Al vespre cuinem pasta." }, "image": { "src": "/Kompass/images/a1a/V7/kochen-640.webp", "srcset": "/Kompass/images/a1a/V7/kochen-640.webp 640w, /Kompass/images/a1a/V7/kochen-1280.webp 1280w", "sizes": "(max-width: 640px) 50vw, 200px", "alt": "Olles i paelles sobre els fogons d'una cuina", "width": 200, "credit": "Mazda Mehrad · Unsplash · Unsplash License" } },
+        { "pron": "lernen", "gloss": "estudiar / aprendre", "note": "Regular. _Ich lerne Deutsch_ = estudio alemany.", "example": { "de": "Ich lerne jeden Tag.", "ca": "Estudio cada dia." }, "image": { "src": "/Kompass/images/a1a/V7/lernen-640.webp", "srcset": "/Kompass/images/a1a/V7/lernen-640.webp 640w, /Kompass/images/a1a/V7/lernen-1280.webp 1280w", "sizes": "(max-width: 640px) 50vw, 200px", "alt": "Primer pla d'un llibre obert amb pàgines grogoses", "width": 200, "credit": "byVlado · Unsplash · Unsplash License" } },
+        { "pron": "lesen", "gloss": "llegir", "note": "Canvi vocàlic _e → ie_. _Ich lese, du l==ie==st, er l==ie==st_.", "example": { "de": "Am Abend lese ich ein Buch.", "ca": "Al vespre llegeixo un llibre." } },
+        { "pron": "schlafen", "gloss": "dormir", "note": "Canvi vocàlic _a → ä_. _Ich schlafe, du schl==ä==fst, er schl==ä==ft_.", "example": { "de": "Ich schlafe acht Stunden.", "ca": "Dormo vuit hores." }, "image": { "src": "/Kompass/images/a1a/V7/schlafen-640.webp", "srcset": "/Kompass/images/a1a/V7/schlafen-640.webp 640w, /Kompass/images/a1a/V7/schlafen-1280.webp 1280w", "sizes": "(max-width: 640px) 50vw, 200px", "alt": "Un llit amb coixins i una tauleta de nit", "width": 200, "credit": "mk. s · Unsplash · Unsplash License" } },
+        { "pron": "essen", "gloss": "menjar", "note": "Canvi vocàlic _e → i_. Al migdia sol dir-se _zu Mittag essen_.", "example": { "de": "Ich esse zu Mittag.", "ca": "Menjo al migdia." }, "image": { "src": "/Kompass/images/a1a/V7/mittag-essen-640.webp", "srcset": "/Kompass/images/a1a/V7/mittag-essen-640.webp 640w, /Kompass/images/a1a/V7/mittag-essen-1280.webp 1280w", "sizes": "(max-width: 640px) 50vw, 200px", "alt": "Un plat blanc amb menjar i coberts preparats", "width": 200, "credit": "Mads Eneqvist · Unsplash · Unsplash License" } }
+      ]
+    },
+    {
+      "id": "verbs-separables",
+      "kind": "narrative",
+      "heading": "Verbs separables de rutina",
+      "lead": "Prefix **davant**, verb **al final**.",
+      "body": "Al present, el prefix se'n va al final de la frase: _ich **stehe** um 7 Uhr **auf**_. A l'infinitiu tornen a anar junts.",
+      "tabs": [
+        { "pron": "aufstehen", "gloss": "aixecar-se", "note": "Separable: _auf + stehen_. Conjugat: _ich stehe... auf_.", "example": { "de": "Ich stehe um 7 Uhr auf.", "ca": "M'aixeco a les 7." }, "image": { "src": "/Kompass/images/a1a/V7/aufstehen-640.webp", "srcset": "/Kompass/images/a1a/V7/aufstehen-640.webp 640w, /Kompass/images/a1a/V7/aufstehen-1280.webp 1280w", "sizes": "(max-width: 640px) 50vw, 200px", "alt": "Un llit desfet al costat d'una finestra al matí", "width": 200, "credit": "Cosmin Ursea · Unsplash · Unsplash License" } },
+        { "pron": "aufwachen", "gloss": "despertar-se", "note": "Separable: _auf + wachen_. Conjuga amb _sein_ al Perfekt.", "example": { "de": "Ich wache um 6 Uhr auf.", "ca": "Em desperto a les 6." } },
+        { "pron": "einschlafen", "gloss": "adormir-se", "note": "Separable: _ein + schlafen_. Canvi vocàlic _a → ä_.", "example": { "de": "Ich schlafe um 11 Uhr ein.", "ca": "M'adormo a les 11." } },
+        { "pron": "anziehen", "gloss": "posar-se (roba)", "note": "Separable: _an + ziehen_. Sovint amb complement: _Ich ziehe eine Jacke an_.", "example": { "de": "Ich ziehe eine Jacke an.", "ca": "Em poso una jaqueta." } },
+        { "pron": "ausziehen", "gloss": "treure's (roba)", "note": "Separable: _aus + ziehen_. Oposat a _anziehen_.", "example": { "de": "Ich ziehe die Schuhe aus.", "ca": "Em trec les sabates." } },
+        { "pron": "einkaufen", "gloss": "comprar (fer compres)", "note": "Separable: _ein + kaufen_. Usat per \"fer compres\".", "example": { "de": "Ich kaufe am Samstag ein.", "ca": "Compro dissabte." } },
+        { "pron": "fernsehen", "gloss": "mirar la tele", "note": "Separable: _fern + sehen_. Canvi vocàlic _e → ie_.", "example": { "de": "Ich sehe am Abend fern.", "ca": "Miro la tele al vespre." }, "image": { "src": "/Kompass/images/a1a/V7/fernsehen-640.webp", "srcset": "/Kompass/images/a1a/V7/fernsehen-640.webp 640w, /Kompass/images/a1a/V7/fernsehen-1280.webp 1280w", "sizes": "(max-width: 640px) 50vw, 200px", "alt": "Un saló acollidor amb televisor i llar de foc", "width": 200, "credit": "Clay Banks · Unsplash · Unsplash License" } },
+        { "pron": "zurückkommen", "gloss": "tornar (a casa)", "note": "Separable: _zurück + kommen_. Conjuga amb _sein_ al Perfekt.", "example": { "de": "Ich komme um 18 Uhr zurück.", "ca": "Torno a les 18 h." } }
+      ]
+    },
+    {
+      "id": "check-separables",
+      "kind": "exercise",
+      "exerciseId": "A1a-V7-ex-01",
+      "variant": "quick-check"
+    },
+    {
+      "id": "frequencia",
+      "kind": "narrative",
+      "heading": "Amb quina freqüència?",
+      "lead": "Adverbis per indicar quantes vegades.",
+      "tabs": [
+        { "pron": "immer", "gloss": "sempre", "note": "100% dels cops.", "example": { "de": "Ich trinke immer Kaffee am Morgen.", "ca": "Sempre bec cafè al matí." } },
+        { "pron": "oft", "gloss": "sovint", "note": "Pronunciat \"oft\". Alta freqüència.", "example": { "de": "Ich gehe oft ins Kino.", "ca": "Vaig sovint al cinema." } },
+        { "pron": "manchmal", "gloss": "de vegades", "note": "Literalment \"alguna vegada\".", "example": { "de": "Manchmal koche ich zu Hause.", "ca": "De vegades cuino a casa." } },
+        { "pron": "selten", "gloss": "rarament", "note": "Oposat a _oft_.", "example": { "de": "Ich sehe selten fern.", "ca": "Rarament miro la tele." } },
+        { "pron": "nie", "gloss": "mai", "note": "0% dels cops. No cal _nicht_ addicional.", "example": { "de": "Ich trinke nie Alkohol.", "ca": "No bec mai alcohol." } },
+        { "pron": "jeden Tag", "gloss": "cada dia", "note": "Acusatiu de _der Tag_ → _jeden Tag_. També: _jeden Morgen, jede Woche_.", "example": { "de": "Ich arbeite jeden Tag.", "ca": "Treballo cada dia." } }
+      ],
+      "callout": {
+        "variant": "tip",
+        "title": "Col·locació dels adverbis de freqüència",
+        "body": "Normalment van **just després del verb** conjugat: _Ich esse **oft** Pasta_. O al principi de la frase, amb inversió: _**Oft** esse ich Pasta_. Tots dos són correctes i idiomàtics."
+      }
+    },
+    {
+      "id": "conectar",
+      "kind": "narrative",
+      "heading": "Connectant el dia",
+      "lead": "Connectors seqüencials: _zuerst, dann, danach, zum Schluss_.",
+      "body": "Per donar forma de narració al teu dia, utilitza aquests connectors. L'ordre del verb canvia després d'ells (inversió).",
+      "examples": [
+        { "de": "Zuerst stehe ich auf.", "ca": "Primer m'aixeco.", "note": "Connector al principi → inversió verb-subjecte: _stehe ich_." },
+        { "de": "Dann frühstücke ich.", "ca": "Després esmorzo." },
+        { "de": "Danach gehe ich zur Arbeit.", "ca": "Després vaig a la feina.", "note": "_zur Arbeit_: _zu + der = zur_." },
+        { "de": "Am Abend sehe ich fern.", "ca": "Al vespre miro la tele." },
+        { "de": "Zum Schluss gehe ich ins Bett.", "ca": "Al final me'n vaig al llit.", "note": "_ins Bett gehen_: anar-se'n al llit, locució fixa." }
+      ]
+    },
+    {
+      "id": "jornada-model",
+      "kind": "narrative",
+      "heading": "Un dia model",
+      "lead": "Llegeix i fixa't com s'encadenen les peces.",
+      "body": "Aquest text et serveix d'esquelet: canvia els verbs i les hores i en tindràs una versió del teu dia.",
+      "callout": {
+        "variant": "example",
+        "title": "El dia de la Laura",
+        "body": "_==Zuerst== stehe ich um 7 Uhr ==auf==. ==Dann== dusche ich und frühstücke. ==Um 8 Uhr== gehe ich zur Arbeit. ==Am Mittag== esse ich mit Kollegen. ==Am Nachmittag== arbeite ich weiter. ==Um 18 Uhr== komme ich ==zurück==. ==Am Abend== koche ich und sehe ==fern==. ==Um 23 Uhr== schlafe ich ==ein==._"
+      }
+    },
+    {
+      "id": "pitfalls",
+      "kind": "narrative",
+      "heading": "Paranys freqüents",
+      "pitfalls": [
+        { "bad": "Ich aufstehe um 7 Uhr", "good": "Ich !!stehe um 7 Uhr auf!!", "why": "El verb separable parteix: prefix al final, arrel conjugada en 2a posició." },
+        { "bad": "Am Nacht schlafe ich", "good": "!!In der Nacht schlafe ich!!", "why": "_die Nacht_ és femení → _in der Nacht_. No es pot dir _am Nacht_." },
+        { "bad": "Ich trinke nicht nie Alkohol", "good": "Ich trinke !!nie!! Alkohol", "why": "_nie_ ja és negatiu. No cal afegir _nicht_ (mai doble negació en alemany estàndard)." },
+        { "bad": "Ich frühstücke am 7 Uhr", "good": "Ich frühstücke !!um 7 Uhr!!", "why": "_um_ per a hores concretes; _am_ per a parts del dia (_am Morgen_) o dies (_am Montag_)." },
+        { "bad": "Zuerst ich stehe auf", "good": "Zuerst !!stehe ich auf!!", "why": "Connector al principi → inversió. El verb (stehe) va immediatament després del connector." }
+      ]
+    },
+    {
+      "id": "check-final",
+      "kind": "exercise",
+      "exerciseId": "A1a-V7-ex-02",
+      "variant": "assessment"
+    },
+    {
+      "id": "synthesis",
+      "kind": "synthesis",
+      "heading": "Síntesi: la rutina diària",
+      "tables": [
+        {
+          "title": "Moments del dia",
+          "headers": ["Alemany", "Català", "Preposició"],
+          "rows": [
+            ["!!der Morgen!!", "el matí", "!!am Morgen!!"],
+            ["!!der Mittag!!", "el migdia", "!!am Mittag!!"],
+            ["!!der Nachmittag!!", "la tarda", "!!am Nachmittag!!"],
+            ["!!der Abend!!", "el vespre", "!!am Abend!!"],
+            ["!!die Nacht!!", "la nit", "!!in der Nacht!!"]
+          ]
+        },
+        {
+          "title": "Verbs separables de rutina",
+          "headers": ["Verb", "Català", "Nota"],
+          "rows": [
+            ["!!aufstehen!!", "aixecar-se", "_auf_ al final"],
+            ["!!aufwachen!!", "despertar-se", "_auf_ al final"],
+            ["!!einschlafen!!", "adormir-se", "+ _a → ä_"],
+            ["!!anziehen!!", "posar-se roba", "_an_ al final"],
+            ["!!ausziehen!!", "treure's roba", "_aus_ al final"],
+            ["!!einkaufen!!", "fer la compra", "_ein_ al final"],
+            ["!!fernsehen!!", "mirar la tele", "+ _e → ie_"],
+            ["!!zurückkommen!!", "tornar", "_zurück_ al final"]
+          ]
+        },
+        {
+          "title": "Verbs simples + freqüència",
+          "headers": ["Alemany", "Català"],
+          "rows": [
+            ["!!frühstücken!!", "esmorzar"],
+            ["!!duschen!!", "dutxar-se"],
+            ["!!arbeiten!!", "treballar"],
+            ["!!kochen!!", "cuinar"],
+            ["!!lernen!!", "estudiar"],
+            ["!!lesen!!", "llegir (e→ie)"],
+            ["!!schlafen!!", "dormir (a→ä)"],
+            ["!!immer!!", "sempre"],
+            ["!!oft!!", "sovint"],
+            ["!!manchmal!!", "de vegades"],
+            ["!!selten!!", "rarament"],
+            ["!!nie!!", "mai"]
+          ]
+        }
+      ]
+    }
+  ]
+}

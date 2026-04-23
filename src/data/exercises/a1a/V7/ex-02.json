@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "A1a-V7-ex-02",
+  "topicId": "A1a-V7",
+  "title": "La meva jornada",
+  "prompt": "Completa la narració d'un dia tipus. Tria el connector, el verb o la preposició que falti a cada buit.",
+  "difficulty": 2,
+  "tags": ["integration", "tagesablauf", "connectors"],
+  "stimulus": {
+    "type": "textWithBlanks",
+    "template": "{{1}} stehe ich {{2}} 7 Uhr auf.\n{{3}} dusche ich und frühstücke.\n{{4}} Morgen gehe ich zur Arbeit.\nAm Abend sehe ich {{5}}.\n{{6}} 23 Uhr schlafe ich ein.",
+    "blanks": [
+      { "id": "1", "label": "primer (connector)" },
+      { "id": "2", "label": "preposició d'hora" },
+      { "id": "3", "label": "després (connector)" },
+      { "id": "4", "label": "preposició de franja diària" },
+      { "id": "5", "label": "prefix de _fernsehen_" },
+      { "id": "6", "label": "preposició d'hora" }
+    ]
+  },
+  "interaction": {
+    "type": "dropdownFill",
+    "slots": [
+      { "blankId": "1", "options": ["Zuerst", "Dann", "Danach", "Zum Schluss"] },
+      { "blankId": "2", "options": ["um", "am", "in", "auf"] },
+      { "blankId": "3", "options": ["Zuerst", "Dann", "Danach", "Zum Schluss"] },
+      { "blankId": "4", "options": ["um", "am", "in", "auf"] },
+      { "blankId": "5", "options": ["fern", "auf", "ein", "an"] },
+      { "blankId": "6", "options": ["um", "am", "in", "auf"] }
+    ]
+  },
+  "validation": {
+    "type": "slotMap",
+    "answers": {
+      "1": "Zuerst",
+      "2": "um",
+      "3": "Dann",
+      "4": "am",
+      "5": "fern",
+      "6": "um"
+    }
+  },
+  "feedback": {
+    "correct": {
+      "message": "Has articulat un dia sencer. Dues idees clau: (a) _**um**_ va amb hores concretes (_um 7 Uhr_), _**am**_ amb parts del dia (_am Morgen_); (b) _fernsehen_ parteix: _sehe... fern_. La seqüència _Zuerst → Dann → Danach → Zum Schluss_ t'estructura qualsevol narració del dia."
+    },
+    "incorrect": {
+      "default": "Tres claus: (a) _um_ per a hores concretes (_um 7 Uhr_), no _am 7 Uhr_; (b) _am_ per a franges (_am Morgen, am Abend_); (c) _fernsehen_ és separable, el prefix _fern_ va al final: _ich sehe... fern_."
+    }
+  }
+}
