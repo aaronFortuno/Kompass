@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-23T17:49:40.628Z",
+  "generatedAt": "2026-04-23T18:08:33.911Z",
   "totalStrings": 2220,
   "totalChars": 35961,
   "entries": [
@@ -2789,6 +2789,10 @@
       "hash": "15d022dbd511bc96c1cd50196dc9ba5d1dbc6dcb",
       "text": "Ich bin",
       "sources": [
+        {
+          "topic": "A1a-0",
+          "path": "steps[9].body#inline[0]"
+        },
         {
           "topic": "A1a-V4",
           "path": "steps[10].tables[1].rows[1][1]#inline[0]"

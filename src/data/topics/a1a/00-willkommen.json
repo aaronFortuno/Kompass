@@ -15,16 +15,7 @@
       "kind": "narrative",
       "heading": "Willkommen",
       "lead": "Si has arribat fins aquí és que **vols aprendre alemany**. Això ja és mitja victòria.",
-      "body": "L'alemany té fama de difícil. Té sonoritats fortes i paraules llargues. Però també té una cosa a favor seu: és ==profundament lògica==.",
-      "visuals": [
-        {
-          "svg": "<svg viewBox='0 0 320 320' xmlns='http://www.w3.org/2000/svg' aria-hidden='true'><g fill='none' stroke='currentColor' stroke-width='0.6'><circle cx='160' cy='160' r='150' opacity='0.22'/><circle cx='160' cy='160' r='120' opacity='0.35'/><circle cx='160' cy='160' r='72' opacity='0.48'/></g><g fill='currentColor'><polygon points='160,22 150,152 160,160' opacity='0.85'/><polygon points='160,22 170,152 160,160' opacity='0.28'/><polygon points='160,298 170,168 160,160' opacity='0.28'/><polygon points='160,298 150,168 160,160' opacity='0.58'/><polygon points='298,160 168,150 160,160' opacity='0.28'/><polygon points='298,160 168,170 160,160' opacity='0.58'/><polygon points='22,160 152,170 160,160' opacity='0.85'/><polygon points='22,160 152,150 160,160' opacity='0.28'/><circle cx='160' cy='160' r='3.5'/></g><g font-family='Newsreader, serif' font-size='12' font-style='italic' fill='currentColor' opacity='0.6'><text x='160' y='14' text-anchor='middle'>N</text><text x='160' y='316' text-anchor='middle'>S</text><text x='312' y='164' text-anchor='end'>E</text><text x='8' y='164' text-anchor='start'>O</text></g></svg>",
-          "alt": "Una rosa dels vents — il·lustració d'obertura del curs.",
-          "caption": "Un instrument per orientar-se.",
-          "credit": "Imatge provisional · SVG inline",
-          "width": 280
-        }
-      ]
+      "body": "L'alemany té fama de difícil. Té sonoritats fortes i paraules llargues. Però també té una cosa a favor seu: és ==profundament lògic==."
     },
     {
       "id": "why-german-1",
@@ -41,7 +32,12 @@
         "És **lògica**: poques regles, però fortes. Les aprens un cop i les apliques a centenars de casos.",
         "Està **emparentada** amb el català, el castellà i l'anglès més del que sembla. Trobaràs molts cognats.",
         "Amb ==30 hores ben invertides== (el que dura A1) pots mantenir una conversa simple. És assolible."
-      ]
+      ],
+      "callout": {
+        "variant": "info",
+        "title": "Què és un cognat?",
+        "body": "Un **cognat** és una paraula que s'assembla entre dues llengües perquè tenen un origen comú. _Haus_ i _casa_ no ho són; però _Maus_ i _mouse_, o _Butter_ i _beure_ (del llatí _bibere_ indirecte) sí que comparteixen família. A l'alemany, els cognats amb l'anglès són especialment abundants (_Fisch/fish, Buch/book, Brot/bread_) i són regals gratuïts de vocabulari."
+      }
     },
     {
       "id": "mindset",
@@ -52,14 +48,14 @@
       "callout": {
         "variant": "tip",
         "title": "Els errors són part del camí",
-        "body": "Si t'equivoques a un exercici, **cap alarma**. La resposta correcta es mostra al costat per contrastar. Repeteix l'exercici quan vulguis."
+        "body": "Si t'equivoques en un exercici, **cap alarma**. La resposta correcta es mostra al costat per contrastar. Repeteix l'exercici quan vulguis."
       }
     },
     {
       "id": "pivot",
       "kind": "narrative",
-      "heading": "I tu, com ho faràs aquí?",
-      "lead": "Fins aquí el per què. Ara, el com."
+      "heading": "Com funciona Kompass",
+      "lead": "Fins aquí el ==per què==. Ara, el ==com==: quin ritme té cada lliçó, com funcionen els exercicis i on viu el teu progrés."
     },
     {
       "id": "how-it-works",
@@ -132,11 +128,11 @@
       "kind": "narrative",
       "heading": "Comencem",
       "lead": "La primera lliçó real comença on acaba aquesta: els ==pronoms personals==.",
-      "body": "Amb jo, tu, ella, nosaltres… podràs presentar-te i parlar de qualsevol persona. Tot comença per _Ich bin_ (\"Jo sóc\").",
+      "body": "Amb jo, tu, ella, nosaltres… podràs presentar-te i parlar de qualsevol persona. Tot comença per !!Ich bin!! (\"Jo sóc\").",
       "callout": {
         "variant": "info",
         "title": "Què ve ara",
-        "body": "A continuació: **A1a-1 Pronomen**. Una lliçó curta i molt visual. Prem la fletxa dreta quan estiguis preparat o preparada."
+        "body": "A continuació: **A1a-1 Pronomen**. Una lliçó curta i molt visual. Quan estiguis preparat o preparada, **avança** amb la fletxa dreta del teclat, un clic a la pantalla o un swipe cap amunt (a mòbil)."
       }
     }
   ]

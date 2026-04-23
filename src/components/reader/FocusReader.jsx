@@ -2107,16 +2107,19 @@ export function FocusReader({ topic }) {
   const [autoPlayBarActive, setAutoPlayBarActive] = useState(false);
   const [autoPlayPaused, setAutoPlayPaused] = useState(false);
 
-  // §98 polit: si l'usuari té audioAutoplay on i el beat actual conté
-  // àudio, l'auto-advance del beat és la continuació natural del flux
-  // (l'usuari espera que, un cop sonat tot, es passi sol al pas
-  // següent). Així no cal tenir autoPlay explícit encès en paral·lel —
-  // es deriva automàticament quan hi ha contingut audible.
-  const beatHasAudio =
-    settings.audioAutoplay && countSpeakablesInBeat(beat) > 0;
-  const effectiveAutoPlay = settings.autoPlay || beatHasAudio;
+  // Auto-advance estrictament controlat per `settings.autoPlay`.
+  //
+  // Un intent previ derivava l'auto-advance també de `audioAutoplay + beat
+  // amb pills` (la idea: si l'àudio sona, és natural que el reader
+  // avanci tot sol). Però provocava dues confusions:
+  //   1. El temporitzador arrencava tot i tenir autoplay off.
+  //   2. Els clics no el pausaven (el gate dels handlers mira
+  //      `settings.autoPlay`, no la derivada).
+  // Ara cada setting és independent: `audioAutoplay` només reprodueix
+  // àudio; `autoPlay` avança beats. Si l'usuari vol encadenar tots dos
+  // efectes, activa les dues opcions explícitament.
   const autoPlayEligible =
-    effectiveAutoPlay &&
+    settings.autoPlay &&
     !isFullMode &&
     !splashVisible &&
     !drawerOpen &&
