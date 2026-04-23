@@ -172,8 +172,6 @@ format ric.)*
 - **Bug:**
   - *
 - **Polit:**
-  - [✓] Input typeIn amb espai lliure desmesurat.  — *fet (global): `size` dinàmic (5–24 ch) sobre l'`<input>` i `min-width: 3.5em` al CSS. Ara creix amb la resposta sense ocupar 2× la frase.*
-  - [✓] Tick "correcte" altera el layout de l'exercici.  — *fet (global): eliminat l'aside de "Correcte" per respostes correctes (el slot verd ja ho diu). Si és incorrecta, la "Resposta correcta: …" apareix **sota** la frase, no al flex-row.*
   - Si estem navegant pels beats amb fletxa avall - fletxa avall... quan arribem a un exercici amb múltiples preguntes, "fletxa avall" ens porta al següent beat en comptes de la següent pregunta. El comportament dins d'un exercici amb múltiples preguntes hauria de ser "següent pregunta". Fletxa avall també hauria de servir per l'acció de validar (ara ho fem amb enter o fletxa dreta)  — *pendent*
   - A l'índex del sidebar, les icones d'exercici: alienar-les verticalment amb les xifres del pas. I ara el layout de l'índex és a 2 "columnes", una amb les xifres de nombre de pas, i l'altra amb el nom del capítol. Crec que les separaria una mica entre elles i posaria una segona columna precisament amb la icona d'exercici, perquè quedaria més visible que com està ara. En capítols que tenen dues files la icona queda en una posició estranya, potser així ho podem resoldre elegantment (si no ja ho canviarem)  — *pendent*
 
@@ -193,6 +191,8 @@ format ric.)*
 - Segons la lliçó i segons l'agent que l'ha fet les rutes de url són en anglès, en català o fins i tot en castellà (desconec si alguna pot ser fins i tot en alemany). Cal homogeneïtzar-ho i que sigui consistent, ara és molt inconsistent.
 
 - Alguns exercicis (com per exemple els de V1-Zahlen), en comptes de mostrar-nos sempre els mateixos nombres estaria bé disposar d'una bateria més àmplia de possibilitats i que aparegueissin aleatòriament. O si més no disposar d'un mode d'activitat "repàs" o "matxacar" que servís per fer molts exercicis d'un mateix tipus. Així que ens faltarà material aquí per tenir major diversitat.
+
+- Mostrar a l'app les **fonts i llicències dels àudios, imatges i música** que fem servir. Ara tenim el detall a `attribution/` (v5-farben.md, v6-essen-trinken.md, v7-tagesablauf.md, music.md) però l'usuari no hi té accés visible. Proposta: una secció nova a l'AboutModal — "Crèdits" — amb la llista agrupada (veu TTS Azure Seraphina, fotos Unsplash + autors, música Pixabay + DesiFreeMusic, etc.). Generat automàticament des dels manifests si pot ser, no hardcoded.
 
 ---
 
