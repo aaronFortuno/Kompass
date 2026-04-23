@@ -31,10 +31,25 @@ const LegacyStepSchema = z.object({
 
 // ─────────────────────────────── format ric: peces
 
+// TabImage · DATA-MODEL §3.10
+// Miniatura il·lustrativa inline dins d'un beat `pron` o `example`.
+// Diferent de Visual (§3.9): sempre raster, sempre petita, mai genera
+// un beat propi — es renderitza al costat del text del beat pare.
+const TabImageSchema = z.object({
+  src: z.string().min(1),
+  srcset: z.string().optional(),
+  sizes: z.string().optional(),
+  alt: z.string().min(1),
+  caption: z.string().optional(),
+  credit: z.string().optional(),
+  width: z.number().int().min(80).max(480).optional(),
+});
+
 const ExampleSchema = z.object({
   de: z.string(),
   ca: z.string().optional(),
   note: z.string().optional(),
+  image: TabImageSchema.optional(),
 });
 
 const TabSchema = z.object({
@@ -47,6 +62,7 @@ const TabSchema = z.object({
       ca: z.string().optional(),
     })
     .optional(),
+  image: TabImageSchema.optional(),
 });
 
 const PairSchema = z.object({

@@ -1241,6 +1241,90 @@
   margin-top: 4px;
 }
 
+/* TabImage · DATA-MODEL §3.10
+   Miniatura il·lustrativa inline per a tabs i exemples. Es col·loca
+   flotant a la dreta del text en desktop (≥640px) i apilada sobre el
+   text en mòbil. Caption petita en italic sota la imatge. */
+.kf-tab-image {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: auto;
+}
+.kf-tab-image-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  background: rgb(var(--color-reader-paper));
+}
+.kf-tab-image-caption {
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-size: var(--kf-meta);
+  line-height: 1.3;
+  color: rgb(var(--color-reader-muted));
+  text-align: center;
+  margin: 0;
+}
+
+/* PronBeat amb imatge: dos columnes a partir de 640px; en mòbil la
+   imatge queda al capdamunt, centrada. */
+.kf-beat-pron--with-image .kf-tab-image {
+  align-self: center;
+  margin-bottom: 8px;
+}
+@media (min-width: 640px) {
+  .kf-beat-pron--with-image {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto auto auto auto;
+    column-gap: 24px;
+    align-items: start;
+  }
+  .kf-beat-pron--with-image .kf-tab-image {
+    grid-column: 2;
+    grid-row: 1 / span 4;
+    align-self: start;
+    margin-bottom: 0;
+  }
+  .kf-beat-pron--with-image .kf-marker,
+  .kf-beat-pron--with-image .kf-beat-pron-huge,
+  .kf-beat-pron--with-image .kf-beat-pron-gloss,
+  .kf-beat-pron--with-image .kf-beat-pron-note {
+    grid-column: 1;
+  }
+  .kf-beat-pron--with-image .kf-beat-pron-ex {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ExampleBeat amb imatge: la imatge a la dreta de la frase DE quan hi
+   hagi espai, sota la frase en mòbil. */
+.kf-beat-ex--with-image .kf-tab-image {
+  align-self: center;
+  margin-bottom: 4px;
+}
+@media (min-width: 640px) {
+  .kf-beat-ex--with-image {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 24px;
+    align-items: start;
+  }
+  .kf-beat-ex--with-image .kf-tab-image {
+    grid-column: 2;
+    grid-row: 1 / span 6;
+    align-self: start;
+    margin-bottom: 0;
+  }
+  .kf-beat-ex--with-image > :not(.kf-tab-image) {
+    grid-column: 1;
+  }
+}
+
 .kf-beat-pair { display: flex; align-items: baseline; gap: 28px; flex-wrap: wrap; }
 .kf-beat-pair-personal {
   font-family: 'IBM Plex Mono', monospace;

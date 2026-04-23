@@ -103,8 +103,8 @@ Cada step declara una **classe** (`kind`) i porta camps plans específics segons
 | `lead`        | string (inline rich)      | ✓                    | —                    | Frase-guia en cursiva gran. Un beat `lead`.                                 |
 | `body`        | string (inline rich)      | ✓                    | —                    | Cos narratiu. Es fragmenta frase a frase (splits `.!?`) en beats `body`.    |
 | `points`      | string[] (inline rich)    | ✓                    | —                    | Llista de punts numerats ("Punt 1 de N"). Un beat `point` per ítem.         |
-| `examples`    | `{ de, ca, note? }[]`      | ✓                    | —                    | Exemples bilingües alemany/català. Un beat `example` per ítem.              |
-| `tabs`        | `{ pron, gloss, note, example: { de, ca } }[]` | ✓  | —                    | Pronoms destacats amb glossa i exemple. Un beat `pron` per ítem.            |
+| `examples`    | `{ de, ca, note?, image? }[]` | ✓                 | —                    | Exemples bilingües alemany/català. Opcionalment amb imatge (vegeu §3.10). Un beat `example` per ítem. |
+| `tabs`        | `{ pron, gloss, note, example: { de, ca }, image? }[]` | ✓ | —           | Pronoms destacats amb glossa i exemple. Opcionalment amb imatge il·lustrativa (vegeu §3.10). Un beat `pron` per ítem. |
 | `pairs`       | `{ personal, possessive, gloss }[]` | ✓          | —                    | Parelles pronom personal → possessiu. Un beat `pair` per ítem.              |
 | `rule`        | string[] (inline rich)    | ✓                    | —                    | Regles numerades. Un beat `rule` per ítem (com `point` però marcat "Regla").|
 | `comparison`  | `{ es, ca, de, en }[]`     | ✓                    | —                    | Taula comparativa entre llengües. Un únic beat `compare`.                   |
@@ -666,6 +666,47 @@ Element visual incrustable al reader (fotografia, il·lustració, infografia). E
 - **Vocabulari temàtic** (A1a-5+): fotos d'objectes/escenes amb el seu nom en alemany com a caption.
 - **Infografies gramaticals**: diagrames SVG de casos, Satzklammer, concordança, timelines, etc. SVG inline permet heretar el color actual (`currentColor`) i re-tematitzar automàticament segons el tema light/dark.
 - **Exercicis amb imatge**: el schema `stimulus.image` de `Exercise` (§5.4) segueix sent independent d'aquest beat — són usos diferents. El beat `visual` és per a contingut narratiu/synthesis; el `stimulus.image` és per a exercicis.
+
+---
+
+### 3.10. `TabImage` · imatge il·lustrativa en tabs i exemples
+
+Imatge petita incrustada en un beat `pron` (`tab.image`) o `example` (`examples[i].image`) per donar una ancoratge visual al vocabulari temàtic. És un camp **opcional** pensat especialment per lliçons de vocabulari (V-topics): una poma vermella al costat de _Der Apfel ist rot_, una banana al costat de _Die Banane ist gelb_, etc.
+
+**Forma:**
+
+```json
+{
+  "src": "/Kompass/images/a1a/V5/apfel-640.webp",
+  "srcset": "/Kompass/images/a1a/V5/apfel-640.webp 640w, /Kompass/images/a1a/V5/apfel-1280.webp 1280w",
+  "sizes": "(max-width: 768px) 40vw, 240px",
+  "alt": "Una poma vermella sobre fons blanc",
+  "caption": "Apfel = poma.",
+  "width": 200
+}
+```
+
+**Camps:**
+
+- `src` *(string, obligatori)*: URL relativa a la variant base (normalment la de 640w). Convenció de carpetes: `public/Kompass/images/{nivell}/{número}/{slug}-{width}.webp`. Per vocabulari, el número pot portar prefix `V` (p. ex. `V5/`).
+- `srcset` *(string, opcional)*: cadena `<url> <width>w, …` per a imatges responsives. Generada per `npm run add-image`.
+- `sizes` *(string, opcional)*: hint de mida al navegador; per defecte el render les mostra entre ~160 i ~280 px.
+- `alt` *(string, obligatori)*: text alternatiu sempre requerit, en català.
+- `caption` *(string, opcional)*: peu curt en italic sota la imatge. Inline rich (§3.6).
+- `credit` *(string, opcional)*: crèdit d'autoria/font/llicència. No es renderitza al reader (es manté al JSON per transparència de llicència).
+- `width` *(integer, opcional)*: amplada màxima renderitzada en px (entre 80 i 480, per defecte 200).
+
+**Diferències vs Visual (§3.9):**
+
+- `Visual` ocupa un beat propi, centrat i al seu pas del reproductor.
+- `TabImage` **es renderitza inline**, al costat o sota el text del beat `pron`/`example` al qual pertany. Mai genera un beat independent.
+- `Visual` suporta `svg` inline; `TabImage` no (només raster) — la motivació és que les imatges de tab representen objectes reals, per a infografies es prefereix un `Visual` dedicat.
+- `Visual` typicament ocupa fins a 720 px d'amplada; `TabImage` és sempre petita (miniatura il·lustrativa).
+
+**Restriccions:**
+
+- `src` ha de ser una ruta dins de `public/Kompass/images/`. Imatges externes es desaconsellen (CSP, offline, privacitat).
+- Les imatges han de ser optimitzades abans de commit. El pipeline `npm run add-image -- <topicId> <sourceFile> <slug>` genera les tres variants responsives i imprimeix el JSON snippet corresponent. Accepta `topicId` de gramàtica (`A1a-5`) i de vocabulari (`A1a-V5`).
 
 ---
 

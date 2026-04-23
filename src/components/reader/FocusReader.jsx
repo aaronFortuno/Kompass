@@ -716,7 +716,8 @@ function ExampleBeat({
   return (
     <>
       {showKicker ? <BeatKicker step={step} stepIdx={stepIdx} beatKicker={step.id} /> : null}
-      <div className="kf-beat-ex" ref={containerRef}>
+      <div className={`kf-beat-ex${beat.ex?.image ? ' kf-beat-ex--with-image' : ''}`} ref={containerRef}>
+        {beat.ex?.image ? <TabImage image={beat.ex.image} variant="example" /> : null}
         <span className="kf-marker">Exemple {beat.idx} / {beat.total}</span>
         {deDone ? (
           hasPills ? (
@@ -805,6 +806,32 @@ function ExampleBeat({
   );
 }
 
+/*
+ * TabImage · DATA-MODEL §3.10
+ * Miniatura il·lustrativa inline per a tabs i exemples. Render petit,
+ * amb caption opcional, sempre raster (les infografies van en Visual).
+ */
+function TabImage({ image, variant = 'side' }) {
+  if (!image) return null;
+  const width = image.width || 200;
+  const style = { maxWidth: width + 'px' };
+  return (
+    <figure className={`kf-tab-image kf-tab-image--${variant} kf-fade-in`} style={style}>
+      <img
+        className="kf-tab-image-img"
+        src={image.src}
+        {...(image.srcset ? { srcSet: image.srcset } : {})}
+        {...(image.sizes ? { sizes: image.sizes } : {})}
+        alt={image.alt}
+        loading="lazy"
+      />
+      {image.caption ? (
+        <figcaption className="kf-tab-image-caption">{parseInline(image.caption)}</figcaption>
+      ) : null}
+    </figure>
+  );
+}
+
 function PronBeat({
   beat,
   step,
@@ -824,7 +851,8 @@ function PronBeat({
   return (
     <>
       {showKicker ? <BeatKicker step={step} stepIdx={stepIdx} beatKicker={step.id} /> : null}
-      <div className="kf-beat-pron" ref={containerRef}>
+      <div className={`kf-beat-pron${tab.image ? ' kf-beat-pron--with-image' : ''}`} ref={containerRef}>
+        {tab.image ? <TabImage image={tab.image} variant="pron" /> : null}
         <span className="kf-marker">Pronom</span>
         <h2 className="kf-beat-pron-huge">
           <SpeakableText text={stripRichMarkers(tab.pron)}>

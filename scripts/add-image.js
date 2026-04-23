@@ -40,11 +40,18 @@ async function main() {
   const creditArg = args.find((a) => a.startsWith('--credit='));
   const credit = creditArg ? creditArg.slice('--credit='.length) : null;
 
-  // Parse topicId → level dir + número
-  const match = /^([A-Z]\d)([a-z]?)-(\d+)$/.exec(topicId);
-  if (!match) die(`topicId invàlid: ${topicId}. Format esperat: A1a-5, A1b-22, etc.`);
+  // Parse topicId → level dir + número/V-slug.
+  // Accepta tant gramàtica (A1a-5, A1b-22) com vocabulari (A1a-V3).
+  const match = /^([A-Z]\d)([a-z]?)-(V?\d+)$/.exec(topicId);
+  if (!match) die(`topicId invàlid: ${topicId}. Format esperat: A1a-5, A1b-22, A1a-V3, etc.`);
   const levelDir = (match[1] + (match[2] || '')).toLowerCase();
-  const numberStr = String(parseInt(match[3], 10)).padStart(2, '0');
+  const rawNumber = match[3];
+  // Per gramàtica fem pad amb zeros (05, 22). Per vocabulari mantenim
+  // la forma V-prefixada (V3, V12) perquè coincideixi amb la carpeta
+  // d'exercicis src/data/exercises/{nivell}/{V3|05}/.
+  const numberStr = rawNumber.startsWith('V')
+    ? rawNumber
+    : String(parseInt(rawNumber, 10)).padStart(2, '0');
 
   if (!fs.existsSync(sourceFile)) die(`Fitxer no trobat: ${sourceFile}`);
 
@@ -94,8 +101,22 @@ async function main() {
     ...(credit ? { credit } : { credit: '<autor · font · llicència>' }),
   };
 
-  console.log('\n─── Snippet per al camp visuals[] del topic ───');
+  console.log('\n─── Snippet per al camp visuals[] del topic (beat sencer) ───');
   console.log(JSON.stringify(snippet, null, 2));
+
+  // Variant per a tab.image / example.image — mida petita, sense credit
+  // renderitzat però conservat al JSON, i una suggerència de width.
+  const tabSnippet = {
+    src: `${publicBase}/${defaultVariant.file}`,
+    srcset,
+    sizes: '(max-width: 640px) 50vw, 200px',
+    alt: '<descripció per accessibilitat — obligatòria>',
+    width: 200,
+    ...(credit ? { credit } : { credit: '<autor · font · llicència>' }),
+  };
+  console.log('\n─── Snippet per al camp tab.image / example.image ───');
+  console.log(JSON.stringify(tabSnippet, null, 2));
+
   console.log('\nRecorda: l\'alt text és obligatori. Revisa-lo abans de commit.');
 }
 
