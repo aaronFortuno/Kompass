@@ -38,11 +38,11 @@ import musicManifest from '@/audio/music-manifest.json';
 const DUCK_RATIO = 0.3; // Volum durant audio de veu (×volumeTarget)
 const FADE_MS = 400;    // Durada del fade-in/out general
 const DUCK_MS = 180;    // Transició ràpida al baixar/pujar volum
-// Escalat global del volum efectiu vs el valor UI. Les pistes CC0
-// són lluït bastant, per això el 100% d'UI equival només al 50% real
-// de l'element <audio>. Així el slider té un rang de volum còmode
-// (30% UI = 15% real, natural per estudi).
-const VOLUME_SCALE = 0.5;
+// Escalat global del volum efectiu vs el valor UI. La música és de
+// fons per concentrar-se, no per escoltar, per això el 100% UI
+// només correspon al 35% real del <audio>. Així els sliders tenen
+// marge alt sense mai competir amb la veu dels pills.
+const VOLUME_SCALE = 0.35;
 
 function pickTrack(preferredId) {
   const tracks = Array.isArray(musicManifest?.tracks) ? musicManifest.tracks : [];

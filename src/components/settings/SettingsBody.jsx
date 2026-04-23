@@ -340,7 +340,7 @@ export function SettingsBody() {
               id="setting-bgmusic-enabled"
               icon={Music2}
               title="Música ambient de fons"
-              description="Pistes instrumentals CC0 per a sessions d'estudi. S'atenua quan sona un àudio de veu."
+              description="Per qui li agrada concentrar-se amb música. S'atenua quan sona un àudio de veu."
             >
               <Toggle
                 checked={bgMusicEnabled}
@@ -375,7 +375,6 @@ export function SettingsBody() {
                   id="setting-bgmusic-volume"
                   icon={Gauge}
                   title="Volum música"
-                  description="El 100% és volum mig real — pensat per a estudi, no primer pla."
                 >
                   <div className="flex items-center gap-3">
                     <input

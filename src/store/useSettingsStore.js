@@ -55,7 +55,7 @@ export const DEFAULT_SETTINGS = {
   //   - bgMusicTrack: id del track (p. ex. 'lofi', 'ambient', 'focus').
   //     Si és null, es tria la primera pista disponible del manifest.
   bgMusicEnabled: false,
-  bgMusicVolume: 0.35,
+  bgMusicVolume: 0.25,
   bgMusicTrack: null,
   // §112: modal d'ajustaments global. Transient (no persistit). Es
   // controla via setSettingsOpen / toggleSettings. El NAV/cog de header
@@ -101,7 +101,7 @@ export const useSettingsStore = create(
       setBgMusicEnabled: (v) => set({ bgMusicEnabled: Boolean(v) }),
       setBgMusicVolume: (v) => {
         const n = Number(v);
-        set({ bgMusicVolume: Math.min(1, Math.max(0, isNaN(n) ? 0.35 : n)) });
+        set({ bgMusicVolume: Math.min(1, Math.max(0, isNaN(n) ? 0.25 : n)) });
       },
       setBgMusicTrack: (track) =>
         set({ bgMusicTrack: track == null ? null : String(track) }),
