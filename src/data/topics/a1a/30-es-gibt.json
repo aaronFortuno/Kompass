@@ -25,7 +25,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### La construcció bàsica\n\nL'expressió **es gibt** està formada per:\n\n- **es** → pronom subjecte impersonal (com el _it_ anglès a _it rains_)\n- **gibt** → forma de 3a persona singular del verb _geben_ (donar)\n\nLiteralment seria \"dóna\", però funciona com el nostre **\"hi ha\"**.\n\n**Beispiel:**\n\n- _Es gibt einen Schrank im Zimmer._ → Hi ha un armari a l'habitació.\n\nFixa't: el verb **sempre és _gibt_**. No canvia mai, tant si el que hi ha és una cosa com moltes. És igual que en català: _hi ha **un** nen_ / _hi ha **nens**_ → sempre \"hi ha\"."
+          "body": "#### La construcció bàsica\n\nL'expressió **es gibt** està formada per:\n\n- **es** → pronom subjecte impersonal (com el _it_ anglès a _it rains_)\n- **gibt** → forma de 3a persona singular del verb _geben_ (donar)\n\nLiteralment seria \"dóna\", però funciona com el nostre **\"hi ha\"**.\n\n**Beispiel:**\n\n- _!!Es gibt einen Schrank im Zimmer.!!_ → Hi ha un armari a l'habitació.\n\nFixa't: el verb **sempre és _gibt_**. No canvia mai, tant si el que hi ha és una cosa com moltes. És igual que en català: _hi ha **un** nen_ / _hi ha **nens**_ → sempre \"hi ha\"."
         },
         {
           "type": "callout",
@@ -47,15 +47,15 @@
           "title": "Article indefinit després de _es gibt_",
           "headers": ["Gènere", "Nominatiu (no aquí)", "Acusatiu (amb _es gibt_)"],
           "rows": [
-            ["Masculí", "_ein Schrank_", "**_einen_** _Schrank_"],
-            ["Femení", "_eine Lampe_", "_eine Lampe_"],
-            ["Neutre", "_ein Buch_", "_ein Buch_"],
-            ["Plural", "— _Kinder_", "— _Kinder_"]
+            ["Masculí", "_!!ein Schrank!!_", "_!!**einen** Schrank!!_"],
+            ["Femení", "_!!eine Lampe!!_", "_!!eine Lampe!!_"],
+            ["Neutre", "_!!ein Buch!!_", "_!!ein Buch!!_"],
+            ["Plural", "— _!!Kinder!!_", "— _!!Kinder!!_"]
           ]
         },
         {
           "type": "explanation",
-          "body": "El masculí és l'únic que canvia visiblement (_ein_ → _einen_). Els altres gèneres queden igual, però estan igualment en acusatiu.\n\n**Beispiele:**\n\n- _Es gibt **einen** Tisch._ (masc.) — Hi ha una taula.\n- _Es gibt **eine** Lampe._ (fem.) — Hi ha una làmpada.\n- _Es gibt **ein** Buch._ (neutre) — Hi ha un llibre."
+          "body": "El masculí és l'únic que canvia visiblement (_ein_ → _einen_). Els altres gèneres queden igual, però estan igualment en acusatiu.\n\n**Beispiele:**\n\n- _!!Es gibt **einen** Tisch.!!_ (masc.) — Hi ha una taula.\n- _!!Es gibt **eine** Lampe.!!_ (fem.) — Hi ha una làmpada.\n- _!!Es gibt **ein** Buch.!!_ (neutre) — Hi ha un llibre."
         },
         {
           "type": "callout",
@@ -76,7 +76,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Plural i substantius sense article\n\nAmb substantius en **plural** o **incomptables**, no hi ha article indefinit (ni en singular tampoc, si hi penses: en català tampoc dius _hi ha uns nens_, dius _hi ha nens_).\n\n**Beispiele:**\n\n- _Es gibt **Kinder** im Park._ → Hi ha nens al parc.\n- _Es gibt **Bücher** auf dem Tisch._ → Hi ha llibres sobre la taula.\n- _Es gibt **Milch** im Kühlschrank._ → Hi ha llet a la nevera.\n\nEl verb continua essent **_gibt_** (singular), encara que el que hi hagi sigui plural. Aquí l'alemany coincideix amb el català, no amb l'anglès."
+          "body": "#### Plural i substantius sense article\n\nAmb substantius en **plural** o **incomptables**, no hi ha article indefinit (ni en singular tampoc, si hi penses: en català tampoc dius _hi ha uns nens_, dius _hi ha nens_).\n\n**Beispiele:**\n\n- _!!Es gibt **Kinder** im Park.!!_ → Hi ha nens al parc.\n- _!!Es gibt **Bücher** auf dem Tisch.!!_ → Hi ha llibres sobre la taula.\n- _!!Es gibt **Milch** im Kühlschrank.!!_ → Hi ha llet a la nevera.\n\nEl verb continua essent **_gibt_** (singular), encara que el que hi hagi sigui plural. Aquí l'alemany coincideix amb el català, no amb l'anglès."
         }
       ]
     },
@@ -85,7 +85,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Negació: _kein_ en acusatiu\n\nPer dir que **no hi ha** alguna cosa, uses **_kein_** (A1a-22), i com que continua essent acusatiu, també es declina:\n\n- _Es gibt **keinen** Schrank._ (masc.) — No hi ha cap armari.\n- _Es gibt **keine** Lampe._ (fem.) — No hi ha cap làmpada.\n- _Es gibt **kein** Buch._ (neutre) — No hi ha cap llibre.\n- _Es gibt **keine** Kinder._ (plural) — No hi ha nens."
+          "body": "#### Negació: _kein_ en acusatiu\n\nPer dir que **no hi ha** alguna cosa, uses **_kein_** (A1a-22), i com que continua essent acusatiu, també es declina:\n\n- _!!Es gibt **keinen** Schrank.!!_ (masc.) — No hi ha cap armari.\n- _!!Es gibt **keine** Lampe.!!_ (fem.) — No hi ha cap làmpada.\n- _!!Es gibt **kein** Buch.!!_ (neutre) — No hi ha cap llibre.\n- _!!Es gibt **keine** Kinder.!!_ (plural) — No hi ha nens."
         },
         {
           "type": "callout",
@@ -100,7 +100,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Ordre de paraules\n\nPots començar l'oració de dues maneres, i el verb **_gibt_** sempre ha d'ocupar la **segona posició** (regla V2, A1a-11):\n\n**Opció A — subjecte primer:**\n\n- _Es gibt Kinder im Park._\n- _Es gibt einen Schrank in meinem Zimmer._\n\n**Opció B — complement de lloc/temps primer:**\n\nSi comences amb un complement (lloc, temps...), el subjecte **_es_** passa darrere del verb:\n\n- _==Im Park== gibt **es** Kinder._\n- _==Auf dem Tisch== gibt **es** ein Buch._\n- _==In meinem Zimmer== gibt **es** einen Schrank._"
+          "body": "#### Ordre de paraules\n\nPots començar l'oració de dues maneres, i el verb **_gibt_** sempre ha d'ocupar la **segona posició** (regla V2, A1a-11):\n\n**Opció A — subjecte primer:**\n\n- _!!Es gibt Kinder im Park.!!_\n- _!!Es gibt einen Schrank in meinem Zimmer.!!_\n\n**Opció B — complement de lloc/temps primer:**\n\nSi comences amb un complement (lloc, temps...), el subjecte **_es_** passa darrere del verb:\n\n- _!!==Im Park== gibt **es** Kinder.!!_\n- _!!==Auf dem Tisch== gibt **es** ein Buch.!!_\n- _!!==In meinem Zimmer== gibt **es** einen Schrank.!!_"
         },
         {
           "type": "callout",
@@ -121,7 +121,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Paranys i errors freqüents\n\n**1. Oblidar l'acusatiu.**\n❌ _Es gibt ein Tisch._\n✅ _Es gibt einen Tisch._\nEl masculí sempre és el que delata l'error. Pensa: \"després de _es gibt_, acusatiu\".\n\n**2. Fer concordar el verb amb el plural.**\n❌ _Es geben Kinder im Park._\n✅ _Es gibt Kinder im Park._\nEl verb sempre és **_gibt_**, mai _geben_. El subjecte és _es_ (singular).\n\n**3. Oblidar la inversió quan comences amb un complement.**\n❌ _Im Park es gibt Kinder._\n✅ _Im Park gibt es Kinder._\n\n**4. Traduir literalment del català \"hi ha\" com si fos un subjecte.**\nEl que en català és un subjecte lògic (\"uns nens\") en alemany és un objecte gramatical (acusatiu). És un canvi de punt de vista: _es gibt_ → literalment \"(això) dóna\".\n\n**5. Confondre _es gibt_ amb _ist/sind da_.**\nTotes dues expressions existeixen, però no són intercanviables. _es gibt_ és l'existencial genèric (hi ha en general). _Da ist / da sind_ és més \"és aquí / són aquí\" (presència concreta). Al nivell A1, queda't amb ==_es gibt_== per traduir \"hi ha\"."
+          "body": "#### Paranys i errors freqüents\n\n**1. Oblidar l'acusatiu.**\n❌ _Es gibt ein Tisch._\n✅ _!!Es gibt einen Tisch.!!_\nEl masculí sempre és el que delata l'error. Pensa: \"després de _es gibt_, acusatiu\".\n\n**2. Fer concordar el verb amb el plural.**\n❌ _Es geben Kinder im Park._\n✅ _!!Es gibt Kinder im Park.!!_\nEl verb sempre és **_gibt_**, mai _geben_. El subjecte és _es_ (singular).\n\n**3. Oblidar la inversió quan comences amb un complement.**\n❌ _Im Park es gibt Kinder._\n✅ _!!Im Park gibt es Kinder.!!_\n\n**4. Traduir literalment del català \"hi ha\" com si fos un subjecte.**\nEl que en català és un subjecte lògic (\"uns nens\") en alemany és un objecte gramatical (acusatiu). És un canvi de punt de vista: _es gibt_ → literalment \"(això) dóna\".\n\n**5. Confondre _es gibt_ amb _ist/sind da_.**\nTotes dues expressions existeixen, però no són intercanviables. _es gibt_ és l'existencial genèric (hi ha en general). _Da ist / da sind_ és més \"és aquí / són aquí\" (presència concreta). Al nivell A1, queda't amb ==_es gibt_== per traduir \"hi ha\"."
         },
         {
           "type": "callout",
@@ -166,7 +166,7 @@
           "type": "callout",
           "variant": "example",
           "title": "Exemple integrador",
-          "body": "_In meinem Zimmer gibt es einen Schrank, eine Lampe und ein Bett. Es gibt auch Bücher, aber es gibt keinen Fernseher._\n\n(A la meva habitació hi ha un armari, una làmpada i un llit. També hi ha llibres, però no hi ha televisor.)"
+          "body": "_!!In meinem Zimmer gibt es einen Schrank, eine Lampe und ein Bett. Es gibt auch Bücher, aber es gibt keinen Fernseher.!!_\n\n(A la meva habitació hi ha un armari, una làmpada i un llit. També hi ha llibres, però no hi ha televisor.)"
         },
         {
           "type": "explanation",
