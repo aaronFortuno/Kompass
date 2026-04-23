@@ -53,7 +53,7 @@
     {
       "id": "teens",
       "kind": "narrative",
-      "heading": "Els teens: 13–19",
+      "heading": "Els _teens_: 13–19",
       "lead": "Com en anglès (_thirteen_, _fourteen_…), l'alemany fa servir un patró transparent.",
       "body": "Es forma afegint **_zehn_** (deu) després de la unitat: _dreizehn_ = 3 + 10, _vierzehn_ = 4 + 10. L'única cosa delicada és la pronúncia de _sechzehn_ i _siebzehn_, que perden una síl·laba.",
       "tables": [
@@ -81,7 +81,7 @@
       "kind": "narrative",
       "heading": "Les desenes (20–90)",
       "lead": "Les desenes es formen amb el sufix ==**-zig**== afegit a la unitat.",
-      "body": "_zwanzig_ (20), _vierzig_ (40), _fünfzig_ (50)... La lògica és la mateixa que en els teens però amb _-zig_ en comptes de _-zehn_.",
+      "body": "!!zwanzig!! (20), !!vierzig!! (40), !!fünfzig!! (50)... La lògica és la mateixa que als _teens_ però amb _-zig_ en comptes de _-zehn_.",
       "tables": [
         {
           "title": "Desenes",
@@ -146,17 +146,17 @@
     {
       "id": "punto-miles",
       "kind": "narrative",
-      "heading": "Un punt per als milers",
-      "lead": "En alemany **els milers es marquen amb un punt**, no amb una coma.",
-      "body": "_1.000_ (mil), _10.000_ (deu mil), _1.000.000_ (un milió). La coma, al contrari, es reserva per als **decimals**: _3,5_ = tres coma cinc.",
+      "heading": "Punts i comes als nombres",
+      "lead": "L'alemany fa servir **exactament la mateixa convenció que el català i el castellà**: punt per als milers, coma per als decimals.",
+      "body": "_1.000_ (mil), _10.000_ (deu mil), _1.000.000_ (un milió). La coma es reserva per als **decimals**: _3,5_ = tres coma cinc. Per tant no has d'aprendre res nou; només recordar no passar-te al sistema anglès.",
       "comparison": [
-        { "es": "1,000 personas", "ca": "~~1,000 persones~~", "de": "==1.000== Menschen", "en": "1,000 people" },
-        { "es": "3.5 euros", "ca": "3,5 euros", "de": "==3,5== Euro", "en": "3.5 euros" }
+        { "es": "1.000 personas", "ca": "1.000 persones", "de": "==1.000== Menschen", "en": "1,000 people" },
+        { "es": "3,5 euros", "ca": "3,5 euros", "de": "==3,5== Euro", "en": "3.5 euros" }
       ],
       "callout": {
-        "variant": "warning",
-        "title": "És a l'inrevés de l'anglès",
-        "body": "En anglès _1,000_ són mil i _3.5_ és tres i mig. En alemany (i català) és **exactament a l'inrevés**: _1.000_ són mil i _3,5_ és tres i mig."
+        "variant": "tip",
+        "title": "Igual que al català",
+        "body": "El punt separa els milers (_1.000_) i la coma marca els decimals (_3,5_). Només cal vigilar **no copiar el sistema anglès** (_1,000 / 3.5_), que és l'invers i pot despistar si llegeixes gaire en anglès."
       }
     },
     {
@@ -171,8 +171,8 @@
       ],
       "callout": {
         "variant": "tip",
-        "title": "Truc: _zwo_ en lloc de _zwei_",
-        "body": "Al telèfon sentiràs sovint **_zwo_** en comptes de _zwei_, perquè _zwei_ i _drei_ es confonen. És una convenció universal: tu també pots dir-ho."
+        "title": "Truc: _!!zwo!!_ en lloc de _!!zwei!!_",
+        "body": "Al telèfon sentiràs sovint **_!!zwo!!_** en comptes de _!!zwei!!_, perquè _zwei_ i _drei_ es confonen. És una convenció universal: tu també pots dir-ho."
       }
     },
     {
@@ -180,11 +180,11 @@
       "kind": "narrative",
       "heading": "Paranys freqüents",
       "pitfalls": [
-        { "bad": "zwanzigund eins (21)", "good": "!!einundzwanzig!!", "why": "L'ordre és invers: primer unitat, després desena. Sempre en una sola paraula." },
-        { "bad": "drei und zwanzig", "good": "!!dreiundzwanzig!!", "why": "S'escriu tot junt, sense espais, fins i tot quan el nombre és llarg: _einhundertdreiundzwanzig_." },
-        { "bad": "sechsundzwanzig pronunciat \"sekhs...\"", "good": "pronunciat \"zeks-unt-tsvantsikh\"", "why": "La _chs_ sona \"ks\", la _z_ sona \"ts\"." },
-        { "bad": "ein Euro (per dir 1)", "good": "!!eins!!", "why": "_ein_ és article (un _home_); com a nombre aïllat és _eins_ (\"un, dos, tres...\" = \"eins, zwei, drei...\")." },
-        { "bad": "1,000 Menschen (mil persones)", "good": "==1.000== Menschen", "why": "El separador de milers és el punt. La coma és per als decimals." }
+        { "bad": "!!zwanzigundeins!! (21)", "good": "!!einundzwanzig!!", "why": "L'ordre és invers al català: primer unitat, després desena, sempre tot junt en una sola paraula." },
+        { "bad": "!!drei und zwanzig!!", "good": "!!dreiundzwanzig!!", "why": "S'escriu tot junt, sense espais, fins i tot quan el nombre és llarg: _einhundertdreiundzwanzig_." },
+        { "bad": "!!sechsundzwanzig!! pronunciat \"sekhs-...\"", "good": "!!sechsundzwanzig!! pronunciat \"zeks-unt-tsvantsikh\"", "why": "La _chs_ sona \"ks\" i la _z_ sona \"ts\". Compte amb la temptació de dir \"sekhs\"." },
+        { "bad": "!!Ich habe ein!! (per dir \"en tinc un\")", "good": "!!Ich habe eins!!", "why": "Com a **número aïllat** diem _eins_ (_eins, zwei, drei_...). Quan acompanya un substantiu es declina com a article: _!!ein Euro!!_, _!!eine Frau!!_. Aquí el parany és usar _ein_ quan parlem del número sol." },
+        { "bad": "!!1,000 Menschen!!", "good": "!!1.000 Menschen!!", "why": "El separador de milers en alemany és el punt — igual que en català. La coma només apareix als decimals (_3,5 Euro_)." }
       ]
     },
     {
@@ -199,7 +199,7 @@
       "heading": "Síntesi dels nombres",
       "tables": [
         {
-          "title": "0–20 en un cop d'ull",
+          "title": "Nucli 0–12",
           "headers": ["#", "Alemany"],
           "rows": [
             ["0", "!!null!!"],
@@ -214,7 +214,13 @@
             ["9", "!!neun!!"],
             ["10", "!!zehn!!"],
             ["11", "!!elf!!"],
-            ["12", "!!zwölf!!"],
+            ["12", "!!zwölf!!"]
+          ]
+        },
+        {
+          "title": "Teens 13–20",
+          "headers": ["#", "Alemany"],
+          "rows": [
             ["13", "!!dreizehn!!"],
             ["14", "!!vierzehn!!"],
             ["15", "!!fünfzehn!!"],

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-23T19:01:20.164Z",
-  "totalStrings": 2220,
-  "totalChars": 35961,
+  "generatedAt": "2026-04-23T20:38:27.647Z",
+  "totalStrings": 2223,
+  "totalChars": 36001,
   "entries": [
     {
       "hash": "00083a6e13bccdb336bccc13c4a6a13ddced3cf2",
@@ -445,7 +445,11 @@
         },
         {
           "topic": "A1a-V1",
-          "path": "steps[11].tables[1].rows[2][1]#inline[0]"
+          "path": "steps[11].tables[2].rows[2][1]#inline[0]"
+        },
+        {
+          "topic": "A1a-V1",
+          "path": "steps[3].body#inline[1]"
         },
         {
           "topic": "A1a-V1",
@@ -653,7 +657,7 @@
       "sources": [
         {
           "topic": "A1a-V1",
-          "path": "steps[11].tables[1].rows[4][1]#inline[0]"
+          "path": "steps[11].tables[2].rows[4][1]#inline[0]"
         },
         {
           "topic": "A1a-V1",
@@ -898,6 +902,16 @@
         {
           "topic": "A1a-V7",
           "path": "steps[2].tabs[2].example.de"
+        }
+      ]
+    },
+    {
+      "hash": "07b9177e53420e91fe25c6bf25066d75f01c3c87",
+      "text": "zwanzigundeins (21)",
+      "sources": [
+        {
+          "topic": "A1a-V1",
+          "path": "steps[9].pitfalls[0].bad"
         }
       ]
     },
@@ -1485,7 +1499,7 @@
       "sources": [
         {
           "topic": "A1a-V1",
-          "path": "steps[11].tables[1].rows[6][1]#inline[0]"
+          "path": "steps[11].tables[2].rows[6][1]#inline[0]"
         },
         {
           "topic": "A1a-V1",
@@ -1662,16 +1676,6 @@
         {
           "topic": "A1a-27",
           "path": "steps[3].blocks[1].rows[5][0]#inline[0]"
-        }
-      ]
-    },
-    {
-      "hash": "0bdd0d74a0001abf2ea4ff365cc4a0a446871c9a",
-      "text": "pronunciat \"zeks-unt-tsvantsikh\"",
-      "sources": [
-        {
-          "topic": "A1a-V1",
-          "path": "steps[9].pitfalls[2].good"
         }
       ]
     },
@@ -1905,7 +1909,7 @@
       "sources": [
         {
           "topic": "A1a-V1",
-          "path": "steps[11].tables[0].rows[16][1]#inline[0]"
+          "path": "steps[11].tables[1].rows[3][1]#inline[0]"
         },
         {
           "topic": "A1a-V1",
@@ -3285,11 +3289,15 @@
         },
         {
           "topic": "A1a-V1",
-          "path": "steps[11].tables[0].rows[20][1]#inline[0]"
+          "path": "steps[11].tables[1].rows[7][1]#inline[0]"
         },
         {
           "topic": "A1a-V1",
-          "path": "steps[11].tables[1].rows[0][1]#inline[0]"
+          "path": "steps[11].tables[2].rows[0][1]#inline[0]"
+        },
+        {
+          "topic": "A1a-V1",
+          "path": "steps[3].body#inline[0]"
         },
         {
           "topic": "A1a-V1",
@@ -3606,16 +3614,6 @@
         {
           "topic": "A1a-16",
           "path": "steps[13].blocks[1].rows[1][3]#inline[0]"
-        }
-      ]
-    },
-    {
-      "hash": "1db0d4e0cdf84bb820782d0acaa298781951c3ca",
-      "text": "zwanzigund eins (21)",
-      "sources": [
-        {
-          "topic": "A1a-V1",
-          "path": "steps[9].pitfalls[0].bad"
         }
       ]
     },
@@ -4221,7 +4219,7 @@
         },
         {
           "topic": "A1a-V1",
-          "path": "steps[11].tables[1].rows[8][1]#inline[0]"
+          "path": "steps[11].tables[2].rows[8][1]#inline[0]"
         },
         {
           "topic": "A1a-V1",
@@ -5696,6 +5694,10 @@
         {
           "topic": "A1a-V1",
           "path": "steps[1].tabs[1].note#inline[1]"
+        },
+        {
+          "topic": "A1a-V1",
+          "path": "steps[9].pitfalls[3].why#inline[1]"
         }
       ]
     },
@@ -5726,6 +5728,16 @@
         {
           "topic": "A1a-7",
           "path": "steps[0].blocks[0].body#inline[1]"
+        }
+      ]
+    },
+    {
+      "hash": "2fd04c87e5ae384c472d50b7f8ba7619e40d32a5",
+      "text": "ein Euro",
+      "sources": [
+        {
+          "topic": "A1a-V1",
+          "path": "steps[9].pitfalls[3].why#inline[0]"
         }
       ]
     },
@@ -5975,7 +5987,7 @@
         },
         {
           "topic": "A1a-V1",
-          "path": "steps[11].tables[1].rows[1][1]#inline[0]"
+          "path": "steps[11].tables[2].rows[1][1]#inline[0]"
         },
         {
           "topic": "A1a-V1",
@@ -7325,7 +7337,7 @@
         },
         {
           "topic": "A1a-V1",
-          "path": "steps[11].tables[0].rows[13][1]#inline[0]"
+          "path": "steps[11].tables[1].rows[0][1]#inline[0]"
         },
         {
           "topic": "A1a-V1",
@@ -9099,7 +9111,7 @@
       "sources": [
         {
           "topic": "A1a-V1",
-          "path": "steps[11].tables[1].rows[10][1]#inline[0]"
+          "path": "steps[11].tables[2].rows[10][1]#inline[0]"
         },
         {
           "topic": "A1a-V1",
@@ -9148,12 +9160,22 @@
       ]
     },
     {
+      "hash": "534a35ea2b62b8e4a86871e8c1c37e15fe4b3c20",
+      "text": "zwo",
+      "sources": [
+        {
+          "topic": "A1a-V1",
+          "path": "steps[8].callout.body#inline[0]"
+        }
+      ]
+    },
+    {
       "hash": "536b7745d18d7112f132a09ac5d9496370995d2f",
       "text": "fünfzehn",
       "sources": [
         {
           "topic": "A1a-V1",
-          "path": "steps[11].tables[0].rows[15][1]#inline[0]"
+          "path": "steps[11].tables[1].rows[2][1]#inline[0]"
         },
         {
           "topic": "A1a-V1",
@@ -13025,7 +13047,7 @@
       "sources": [
         {
           "topic": "A1a-V1",
-          "path": "steps[11].tables[0].rows[17][1]#inline[0]"
+          "path": "steps[11].tables[1].rows[4][1]#inline[0]"
         },
         {
           "topic": "A1a-V1",
@@ -13102,6 +13124,16 @@
         {
           "topic": "A1b-22",
           "path": "steps[6].blocks[2].rows[0][0]"
+        }
+      ]
+    },
+    {
+      "hash": "7c0c22718000bf45367f5d99f2ac9943ab782d17",
+      "text": "Ich habe ein (per dir \"en tinc un\")",
+      "sources": [
+        {
+          "topic": "A1a-V1",
+          "path": "steps[9].pitfalls[3].bad"
         }
       ]
     },
@@ -13555,7 +13587,7 @@
       "sources": [
         {
           "topic": "A1a-V1",
-          "path": "steps[11].tables[1].rows[7][1]#inline[0]"
+          "path": "steps[11].tables[2].rows[7][1]#inline[0]"
         },
         {
           "topic": "A1a-V1",
@@ -14712,6 +14744,10 @@
         {
           "topic": "A1a-V1",
           "path": "steps[1].tabs[2].pron"
+        },
+        {
+          "topic": "A1a-V1",
+          "path": "steps[8].callout.body#inline[1]"
         }
       ]
     },
@@ -14870,6 +14906,16 @@
         {
           "topic": "A1a-35",
           "path": "steps[4].blocks[0].body#inline[11]"
+        }
+      ]
+    },
+    {
+      "hash": "8bdfc62f755def76c9e4ef03a43b3e50b18d5864",
+      "text": "sechsundzwanzig pronunciat \"sekhs-...\"",
+      "sources": [
+        {
+          "topic": "A1a-V1",
+          "path": "steps[9].pitfalls[2].bad"
         }
       ]
     },
@@ -15664,16 +15710,6 @@
       ]
     },
     {
-      "hash": "9261db37d04d9040aeb3f6d4f35bc1fbe7b19939",
-      "text": "sechsundzwanzig pronunciat \"sekhs...\"",
-      "sources": [
-        {
-          "topic": "A1a-V1",
-          "path": "steps[9].pitfalls[2].bad"
-        }
-      ]
-    },
-    {
       "hash": "92857550be3732131b1b6c1c55ff322c67054583",
       "text": "die Übung",
       "sources": [
@@ -15778,6 +15814,16 @@
         {
           "topic": "A1a-V5",
           "path": "steps[9].tables[1].rows[1][1]#inline[0]"
+        }
+      ]
+    },
+    {
+      "hash": "9393803eddd111605192197e30ae43c5c4653ab3",
+      "text": "1,000 Menschen",
+      "sources": [
+        {
+          "topic": "A1a-V1",
+          "path": "steps[9].pitfalls[4].bad"
         }
       ]
     },
@@ -16323,7 +16369,7 @@
         },
         {
           "topic": "A1a-V1",
-          "path": "steps[11].tables[1].rows[9][1]#inline[0]"
+          "path": "steps[11].tables[2].rows[9][1]#inline[0]"
         },
         {
           "topic": "A1a-V1",
@@ -18056,16 +18102,6 @@
       ]
     },
     {
-      "hash": "aac8c5c7676cdd2fcef97ddb56c37d771dc3dabd",
-      "text": "ein Euro (per dir 1)",
-      "sources": [
-        {
-          "topic": "A1a-V1",
-          "path": "steps[9].pitfalls[3].bad"
-        }
-      ]
-    },
-    {
       "hash": "aaed9211293a8474bb1eeed6cf7a58ff33cefbf8",
       "text": "das Tischbein",
       "sources": [
@@ -18373,7 +18409,7 @@
         },
         {
           "topic": "A1a-V1",
-          "path": "steps[11].tables[0].rows[14][1]#inline[0]"
+          "path": "steps[11].tables[1].rows[1][1]#inline[0]"
         },
         {
           "topic": "A1a-V1",
@@ -21676,6 +21712,16 @@
       ]
     },
     {
+      "hash": "cd8e8efa1c861219ac790eb0e0c1d8aba187d5fd",
+      "text": "sechsundzwanzig pronunciat \"zeks-unt-tsvantsikh\"",
+      "sources": [
+        {
+          "topic": "A1a-V1",
+          "path": "steps[9].pitfalls[2].good"
+        }
+      ]
+    },
+    {
       "hash": "cdb6b0d54acffbfe086c64930f70974c5f32d557",
       "text": "Ich rufe heute Abend meinen Bruder in München an.",
       "sources": [
@@ -22800,10 +22846,6 @@
         {
           "topic": "A1a-V1",
           "path": "steps[1].tabs[1].pron"
-        },
-        {
-          "topic": "A1a-V1",
-          "path": "steps[9].pitfalls[3].good"
         }
       ]
     },
@@ -24578,6 +24620,16 @@
       ]
     },
     {
+      "hash": "e80bd0d4cb9758f31895351e75bffef0e4946e23",
+      "text": "Ich habe eins",
+      "sources": [
+        {
+          "topic": "A1a-V1",
+          "path": "steps[9].pitfalls[3].good"
+        }
+      ]
+    },
+    {
       "hash": "e80c0f2538583babfedf3f6d89647abca490b80f",
       "text": "Es ist neun Uhr fünfzig.",
       "sources": [
@@ -25051,7 +25103,7 @@
         },
         {
           "topic": "A1a-V1",
-          "path": "steps[11].tables[0].rows[19][1]#inline[0]"
+          "path": "steps[11].tables[1].rows[6][1]#inline[0]"
         },
         {
           "topic": "A1a-V1",
@@ -26115,7 +26167,7 @@
       "sources": [
         {
           "topic": "A1a-V1",
-          "path": "steps[11].tables[1].rows[5][1]#inline[0]"
+          "path": "steps[11].tables[2].rows[5][1]#inline[0]"
         },
         {
           "topic": "A1a-V1",
@@ -26169,7 +26221,7 @@
       "sources": [
         {
           "topic": "A1a-V1",
-          "path": "steps[11].tables[0].rows[18][1]#inline[0]"
+          "path": "steps[11].tables[1].rows[5][1]#inline[0]"
         },
         {
           "topic": "A1a-V1",
@@ -26817,7 +26869,11 @@
       "sources": [
         {
           "topic": "A1a-V1",
-          "path": "steps[11].tables[1].rows[3][1]#inline[0]"
+          "path": "steps[11].tables[2].rows[3][1]#inline[0]"
+        },
+        {
+          "topic": "A1a-V1",
+          "path": "steps[3].body#inline[2]"
         },
         {
           "topic": "A1a-V1",
@@ -27158,16 +27214,6 @@
         {
           "topic": "A1a-11",
           "path": "steps[1].blocks[0].body#inline[0]"
-        }
-      ]
-    },
-    {
-      "hash": "ffedaa47be17a914a57d62a13a02d03912d25875",
-      "text": "1,000 Menschen (mil persones)",
-      "sources": [
-        {
-          "topic": "A1a-V1",
-          "path": "steps[9].pitfalls[4].bad"
         }
       ]
     }

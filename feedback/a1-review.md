@@ -113,24 +113,22 @@ per endavant — només les que tinguin feedback real.)
 ### A1a-V1 · Zahlen
 
 - **Contingut:**
-  - [A1a-V1 · teens · 1/6] aquí la paraula "teens" com que és alemany en una frase en català, posem-ho en cursiva
-  - [A1a-V1 · decenas · 3/5] posem àudio de zwanzig, vierzig i fünfzig aquí
-  - [A1a-V1 · check-und · 1/1] el nombre 37 si l'escrius com siebenunddreissig apareix com a tatxat-incorrecte però el label diu tick-correcte en verd. Entenc que correcte seria amb eszett ß però és un caràcter inexistent als teclats castellans-catalans així que no serà fàcil de gestionar. En qualsevol cas no pot ser correcte i incorrecte a la vegada.
-  - [A1a-V1 · punto-miles · 5/6] No és correcte que en castella el 1000 s'escrigui 1,000 i en català tam´be 1,000. En anglès ho desconec però aquí l'agent s'hi ha inventat. 3,5 euros és tant en castellà com en català. O sigui, alemany castellà i català utilitzem el mateix sistema. També tenim un problema amb el renderitzat en català de 1000, que apareix com ~~ 1,000 ~~
-  - [A1a-V1 · punto-miles · 6/6] jo aquí posaria l'èmfasi en que la coma i el punt s'utilitzen igual que en català o castellà, per separar decimals i milers respectivament. No tant com "al revès que en anglès", que és una mica absurd des del nostre punt de vista catalanoparlant
-  - [A1a-V1 · telefon · 8/8] aquí és la segona vegada que ens parla de "zwo" en comptes de zwei, però no en posa cap exemple audible, diu que és una convenció però no sé si cal insistir-hi gaire, i en qualsevol cas ens faltaria un exemple audible per fer-nos una idea de com sona això.
-  - [A1a-V1 · pitfalls · 4/6] aquesta diapositiva és una liada, sincerament. 
-  - [A1a-V1 · pitfalls · 5/6] Aquí l'exemple pitfall no té sentit, perquè diu "ein Euro (per dir 1)", però és que "ein Euro" crec que seria correcte, no? En canvi, per dir "1" sí seria "eins". Vull dir, que compara dues coses diferents. Crec que s'ha de revisar o aclarir que parlem de la diferència entre article i numeral.
-  - [A1a-V1 · pitfalls · 6/6] aquí potser faltaria audio, no?
-  - [A1a-V1 · check-final · 1/1] aquí compte amb l'exemple de Die Postleitzahl perquè es pot inferir que és com el Telefonnummer però no apareix explicitat, així que potser no és fàcil saber com dir aquest número
-  - [A1a-V1 · synthesis · 2/3] aquesta taula és enorme, i quan fem scroll/fletxa ens fa saltar al següent beat en comptes de permetre'ns moure per aquí. S'ha de revisar el layout i presentació perquè es vegi millor. Crec que a 3-4 columnes hi cabrà bé si apropem el numeral i el com es diu.
-  - [A1a-V1 · synthesis · 3/3] igual que l'anterior
+  - [✓] [teens · 1/6] "teens" en cursiva.  — *fet: heading i referències en `_teens_`.*
+  - [✓] [decenas · 3/5] àudio zwanzig/vierzig/fünfzig al body.  — *fet.*
+  - [✓] [check-und · 1/1] siebenunddreissig marcat incorrecte+correcte alhora.  — *fet (global): `isCorrect` per-blank ara delega a `isAnswerCorrect` que contempla totes les variants (ß/ss, umlauts).*
+  - [✓] [punto-miles · 5/6] errors de fet sobre català/castellà.  — *fet: reescrit amb la dada correcta (punt milers, coma decimals igual que al català).*
+  - [✓] [punto-miles · 6/6] replantejat: "igual que al català", no "al revés de l'anglès".  — *fet: nou callout 'Igual que al català'.*
+  - [✓] [telefon · 8/8] zwo audible.  — *fet: callout amb `!!zwo!!` i `!!zwei!!`.*
+  - [✓] [pitfalls · 4/6] "una liada".  — *fet: pitfall sechs reescrit amb bad/good audibles clars.*
+  - [✓] [pitfalls · 5/6] "ein Euro vs eins" comparava coses diferents.  — *fet: ara compara "Ich habe ein" vs "Ich habe eins" — mateix context, diferència article/numeral clara.*
+  - [✓] [pitfalls · 6/6] àudio absent.  — *fet: tots els pitfalls tenen bad+good audibles.*
+  - [✓] [check-final] Postleitzahl implícita.  — *fet: template amb "(10115, xifra per xifra com al telèfon)" explícit.*
+  - [✓] [synthesis · 2/3] taula gegant + scroll hijack.  — *fet (1): 0-20 partida en "Nucli 0-12" + "Teens 13-20". (2) global: `onWheel` deixa scroll natiu dins elements scrollables fins que arriba al topall.*
+  - [synthesis · àudio "play all"] pendent — feature nova per un commit dedicat.
 - **Tècnic:**
-  - [A1a-V1 · check-und · 1/1] al títol apareix "La regla *und*" sense parejar el _ ... _
-  - [A1a-V1 · synthesis · 2/3] aquí tenim 20 àudios, estaria bé tenir un botonet per reproduir-los tots si volem
-  - [A1a-V1 · synthesis · 3/3] igual que l'anterior
+  - [✓] [check-und · 1/1] títol amb `_und_` no parsejat.  — *fet (global): `kf-ex-title` passa per `parseInline`. Tots els exercicis ja respecten italic/bold al títol.*
 - **Estructural:**
-  - Quan presentem teens i desenes ens falta sentir-les totes: dreizehn, vierzehn, fünfzehn... dreissig, vierzig, fünfzig... no només un parell d'exemples, fem-les totes, potser en una taula a 5 files. Sé que hi ha unes taules al final (A1a-V1 · synthesis · 2/3) però crec que és vàlid mostar-les també abans.
+  - *(Les taules de `teens` i `decenas` ja tenen tots els nombres audibles. El comentari queda cobert.)*
 
 ### A1a-V2 · Alphabet
 
@@ -202,6 +200,11 @@ format ric.)*
 - **Bug:**
 - **Polit:**
   - El flow per resoldre exercicis dropdown és una mica confús en general, sobretot quan venim de moure'ns amb teclat. Cal fer un plantejament de com ho volem fer perquè sigui intuïtiu. Ara mateix no ho definiria com intuïtiu, sincerament. No és que sigui molt difícil, però tampoc surt espontàniament. Bàsicament és tema de tabuladors, focus, funcionalitat de fletxes, etc. No sé com ho hem de resoldre, potser cal investigar com ho solucionen altres plataformes reconegudes.
+- Músiques background que volem tenir pels loops d'estudi:
+  - [Ocean wave loops | Royalty-free Music - Pixabay](https://pixabay.com/music/upbeat-ocean-wave-loops-377890/)
+  - [Ocean wave loops | Royalty-free Music - Pixabay](https://pixabay.com/music/electronic-ocean-wave-loops-377887/)
+  - [Soft Aesthetic Glow Lofi Background Music for Relax and Study | Royalty-free Music - Pixabay](https://pixabay.com/music/beats-soft-aesthetic-glow-lofi-background-music-for-relax-and-study-509719/)
+  - [Quiet Evening in the Village – Peaceful Rural Ambience | Royalty-free Music - Pixabay](https://pixabay.com/music/celtic-quiet-evening-in-the-village-peaceful-rural-ambience-510903/)
 
 ### Estructural
 

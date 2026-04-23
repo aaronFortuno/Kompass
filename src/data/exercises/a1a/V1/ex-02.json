@@ -8,7 +8,7 @@
   "tags": ["integration", "zahlen"],
   "stimulus": {
     "type": "textWithBlanks",
-    "template": "Der Zug fährt um {{1}} (7) Uhr.\nDie Fahrkarte kostet {{2}} (45) Euro.\nWir sind {{3}} (23) Personen.\nDie Postleitzahl ist {{4}} (10115).",
+    "template": "Der Zug fährt um {{1}} (7) Uhr.\nDie Fahrkarte kostet {{2}} (45) Euro.\nWir sind {{3}} (23) Personen.\nDie Postleitzahl ist {{4}} (10115, xifra per xifra com al telèfon).",
     "blanks": [
       { "id": "1", "label": "7" },
       { "id": "2", "label": "45" },

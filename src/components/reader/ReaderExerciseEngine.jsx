@@ -157,7 +157,11 @@ function SlotLineRenderer({
         const blankId = m[1];
         const value = responses[blankId] ?? '';
         const correctAns = expectedForBlank(exercise, blankId);
-        const isCorrect = revealed && normalizeForMatch(value) === normalizeForMatch(correctAns);
+        // isCorrect ha de reflectir TOTES les respostes acceptades
+        // (slotMapMultiple pot tenir variants tipus ß / ss, umlauts /
+        // ae-oe-ue…). Si comparem només amb la primera, la UI marca
+        // "incorrecte" una resposta que la validació externa accepta.
+        const isCorrect = revealed && isAnswerCorrect(exercise, blankId, value);
         const isWrong = revealed && !isCorrect;
 
         if (type === 'dropdownFill') {
@@ -214,6 +218,7 @@ function SlotLineRenderer({
             type="text"
             value={value}
             disabled={revealed}
+            size={Math.max(5, Math.min(24, value.length + 2))}
             onChange={(e) => onAnswer(blankId, e.target.value)}
             onKeyDown={(e) => {
               if (e.key === 'Enter') {
@@ -635,39 +640,32 @@ export function ReaderExerciseEngine({ exercise, peek = false, navRef = null }) 
             />
           )}
         </div>
-
-        {revealed ? (
-          <div
-            className={[
-              'kf-rex-feedback-aside',
-              currentIsCorrect ? 'is-ok' : 'is-bad',
-            ].join(' ')}
-            role="status"
-            aria-live="polite"
-          >
-            {currentIsCorrect ? (
-              <>
-                <Check size={14} aria-hidden="true" />
-                <span>Correcte</span>
-              </>
-            ) : (
-              <>
-                <XIcon size={14} aria-hidden="true" />
-                <div>
-                  <span className="kf-rex-feedback-label">Correcta:</span>{' '}
-                  <b>
-                    {currentItem.kind === 'slot-line'
-                      ? currentItem.blankIds.map((b) => expectedDisplay(exercise, b)).join(' / ')
-                      : currentItem.kind === 'statement'
-                        ? String(exercise.validation?.answers?.[currentItem.statementId])
-                        : String(exercise.validation?.answer ?? '')}
-                  </b>
-                </div>
-              </>
-            )}
-          </div>
-        ) : null}
       </div>
+
+      {/* Feedback per ítem — ara va SOTA la sentència, no al flex com
+          abans (que provocava que un aside wrappat tirés la frase a
+          línies extra i alterés el layout). Si és correcte no
+          renderitzem res: el slot verd ja ho diu tot. Si és incorrecte
+          mostrem la resposta correcta a sota, sense afectar la línia. */}
+      {revealed && !currentIsCorrect ? (
+        <div
+          className="kf-rex-feedback-below is-bad"
+          role="status"
+          aria-live="polite"
+        >
+          <XIcon size={14} aria-hidden="true" />
+          <div>
+            <span className="kf-rex-feedback-label">Resposta correcta:</span>{' '}
+            <b>
+              {currentItem.kind === 'slot-line'
+                ? currentItem.blankIds.map((b) => expectedDisplay(exercise, b)).join(' / ')
+                : currentItem.kind === 'statement'
+                  ? String(exercise.validation?.answers?.[currentItem.statementId])
+                  : String(exercise.validation?.answer ?? '')}
+            </b>
+          </div>
+        </div>
+      ) : null}
 
       {!revealed && hint ? (
         <p className="kf-rex-hint">

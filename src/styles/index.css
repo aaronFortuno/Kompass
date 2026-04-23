@@ -2538,7 +2538,11 @@ html.dark .k-mark {
 .kf-rex-slot-input {
   text-align: left;
   padding: 0 10px;
-  min-width: 4em;
+  /* Width set dynamically via `size` attribute. Mantenim un mínim
+     raonable perquè no col·lapsi quan està buit. */
+  min-width: 3.5em;
+  /* size atomitzada; no forcem width fixa. */
+  width: auto;
 }
 .kf-rex-slot.is-ok {
   color: rgb(var(--color-reader-ok));
@@ -2600,6 +2604,30 @@ html.dark .k-mark {
   color: rgb(var(--color-reader-bad));
 }
 .kf-rex-choice:disabled { cursor: default; }
+
+/* Feedback d'ítem incorrecte — va SOTA la sentència (full-width) per
+   no alterar el layout. Abans vivia dins del flex-row i en wrappar
+   tirava la frase a tres línies. Ara és un bloc propi. */
+.kf-rex-feedback-below {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px 12px;
+  margin-top: 14px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  max-width: fit-content;
+}
+.kf-rex-feedback-below.is-bad {
+  background: rgb(var(--color-reader-bad-bg));
+  color: rgb(var(--color-reader-bad));
+}
+.kf-rex-feedback-below svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
 
 /* Feedback per ítem — a la dreta de la sentence (al flex row) */
 .kf-rex-feedback-aside {

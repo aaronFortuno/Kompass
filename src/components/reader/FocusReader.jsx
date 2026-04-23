@@ -1270,7 +1270,7 @@ function ExerciseBeatCard({ beat, stepIdx, onFinish, peek = false, navRef = null
           >
             {label}
           </span>
-          <h3 className="kf-ex-title">{exercise.title}</h3>
+          <h3 className="kf-ex-title">{parseInline(exercise.title)}</h3>
         </div>
         <ReaderExerciseEngine exercise={exercise} peek={peek} navRef={navRef} />
       </div>
@@ -2083,6 +2083,25 @@ export function FocusReader({ topic }) {
       const tag = document.activeElement?.tagName?.toLowerCase();
       // Dins d'un input/textarea no interceptem (podrien voler seleccionar text)
       if (['input', 'textarea'].includes(tag)) return;
+      // Si l'usuari està fent scroll dins d'un element scrollable (per
+      // exemple una taula de síntesi llarga amb overflow-y:auto), deixem
+      // que l'element scrolli internament i només passem a beat nou
+      // quan arriba al topall superior o inferior. Evita el "scroll
+      // hijacking" en taules grans.
+      const target = e.target;
+      if (target && typeof target.closest === 'function') {
+        const scrollable = target.closest('.kf-beat-syn, .kf-img-lightbox-aside, .settings-modal-body');
+        if (scrollable) {
+          const dy = e.deltaY;
+          const atTop = scrollable.scrollTop <= 0;
+          const atBottom =
+            Math.ceil(scrollable.scrollTop + scrollable.clientHeight) >= scrollable.scrollHeight;
+          // Si encara hi ha camí per scrollar dins del contenidor en
+          // la direcció desitjada, deixem passar el scroll natiu i no
+          // canviem de beat.
+          if ((dy > 0 && !atBottom) || (dy < 0 && !atTop)) return;
+        }
+      }
       const now = performance.now();
       if (now - wheelTsRef.current < 380) return;
       const dy = e.deltaY;
