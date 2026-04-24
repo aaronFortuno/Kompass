@@ -3,38 +3,45 @@
   "id": "A1a-2-ex-04",
   "topicId": "A1a-2",
   "title": "Ordena l'oració declarativa",
-  "prompt": "Ordena els elements per construir una oració declarativa correcta. Disposes de les paraules: aus, komme, ich, Barcelona. Tria a cada posició la paraula que toca.",
+  "prompt": "Escriu cada paraula al seu lloc per formar una declarativa correcta. Peces disponibles: _aus_, _komme_, _ich_, _Barcelona_ (majúscula al primer mot).",
   "difficulty": 2,
   "tags": ["declarativa", "ordre-paraules", "verb-posicio-2"],
   "stimulus": {
     "type": "textWithBlanks",
-    "template": "Ordena l'oració amb els elements [aus / komme / ich / Barcelona]:\n{{1}} {{2}} {{3}} {{4}}.",
+    "template": "{{1}} {{2}} {{3}} {{4}}.",
     "blanks": [
-      { "id": "1", "label": "posició 1 (subjecte)" },
+      { "id": "1", "label": "posició 1" },
       { "id": "2", "label": "posició 2 (verb)" },
-      { "id": "3", "label": "posició 3 (preposició)" },
-      { "id": "4", "label": "posició 4 (lloc)" }
+      { "id": "3", "label": "posició 3" },
+      { "id": "4", "label": "posició 4" }
     ]
   },
   "interaction": {
-    "type": "dropdownFill",
+    "type": "typeIn",
     "slots": [
-      { "blankId": "1", "options": ["Ich", "komme", "aus", "Barcelona"] },
-      { "blankId": "2", "options": ["Ich", "komme", "aus", "Barcelona"] },
-      { "blankId": "3", "options": ["Ich", "komme", "aus", "Barcelona"] },
-      { "blankId": "4", "options": ["Ich", "komme", "aus", "Barcelona"] }
-    ]
+      { "blankId": "1", "placeholder": "1" },
+      { "blankId": "2", "placeholder": "2" },
+      { "blankId": "3", "placeholder": "3" },
+      { "blankId": "4", "placeholder": "4" }
+    ],
+    "caseSensitive": false,
+    "trimWhitespace": true
   },
   "validation": {
-    "type": "slotMap",
-    "answers": { "1": "Ich", "2": "komme", "3": "aus", "4": "Barcelona" }
+    "type": "slotMapMultiple",
+    "answers": {
+      "1": ["Ich", "ich"],
+      "2": ["komme"],
+      "3": ["aus"],
+      "4": ["Barcelona"]
+    }
   },
   "feedback": {
     "correct": {
       "message": "Perfecte: **subjecte (1) — verb (2) — complement (3+)**."
     },
     "incorrect": {
-      "default": "Pista: el verb *komme* ha d'anar a la **posició 2**. *Ich* és el subjecte i comença l'oració. *aus Barcelona* és el complement d'origen."
+      "default": "Pista: el verb _komme_ ha d'anar a la **posició 2**. _Ich_ és el subjecte i comença l'oració. _aus Barcelona_ és el complement d'origen."
     }
   }
 }

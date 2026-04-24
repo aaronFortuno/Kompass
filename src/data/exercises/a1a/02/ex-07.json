@@ -3,17 +3,19 @@
   "id": "A1a-2-ex-07",
   "topicId": "A1a-2",
   "title": "Classifica el tipus d'oració",
-  "prompt": "Per a cada oració, identifica si és una declarativa, una W-Frage o una Ja/Nein-Frage.",
+  "prompt": "Per a cada oració, tria si és una **declarativa**, una **W-Frage** o una **Ja/Nein-Frage**.",
   "difficulty": 3,
   "tags": ["classificacio", "declarativa", "w-frage", "ja-nein-frage"],
   "stimulus": {
     "type": "textWithBlanks",
-    "template": "(1) *Ich arbeite bei Audi.* → {{1}}\n(2) *Wo wohnst du?* → {{2}}\n(3) *Kommst du aus Hamburg?* → {{3}}\n(4) *Woher kommt er?* → {{4}}",
+    "template": "_Ich arbeite bei Audi._\n {{1}}\n\n_Wo wohnst du?_\n {{2}}\n\n_Kommst du aus Hamburg?_\n {{3}}\n\n_Woher kommt er?_\n {{4}}\n\n_Meine Adresse ist Jahnstraße 5._\n {{5}}\n\n_Heißt du Anna?_\n {{6}}",
     "blanks": [
       { "id": "1", "label": "tipus d'oració" },
       { "id": "2", "label": "tipus d'oració" },
       { "id": "3", "label": "tipus d'oració" },
-      { "id": "4", "label": "tipus d'oració" }
+      { "id": "4", "label": "tipus d'oració" },
+      { "id": "5", "label": "tipus d'oració" },
+      { "id": "6", "label": "tipus d'oració" }
     ]
   },
   "interaction": {
@@ -22,7 +24,9 @@
       { "blankId": "1", "options": ["declarativa", "W-Frage", "Ja/Nein-Frage"] },
       { "blankId": "2", "options": ["declarativa", "W-Frage", "Ja/Nein-Frage"] },
       { "blankId": "3", "options": ["declarativa", "W-Frage", "Ja/Nein-Frage"] },
-      { "blankId": "4", "options": ["declarativa", "W-Frage", "Ja/Nein-Frage"] }
+      { "blankId": "4", "options": ["declarativa", "W-Frage", "Ja/Nein-Frage"] },
+      { "blankId": "5", "options": ["declarativa", "W-Frage", "Ja/Nein-Frage"] },
+      { "blankId": "6", "options": ["declarativa", "W-Frage", "Ja/Nein-Frage"] }
     ]
   },
   "validation": {
@@ -31,15 +35,17 @@
       "1": "declarativa",
       "2": "W-Frage",
       "3": "Ja/Nein-Frage",
-      "4": "W-Frage"
+      "4": "W-Frage",
+      "5": "declarativa",
+      "6": "Ja/Nein-Frage"
     }
   },
   "feedback": {
     "correct": {
-      "message": "Genial! Has identificat els tres tipus correctament: la **declarativa** té verb a la 2 sense Fragewort; la **W-Frage** comença per una paraula interrogativa; la **Ja/Nein-Frage** comença pel verb."
+      "message": "Genial! Les tres estructures clares: **declarativa** amb verb a la 2 sense Fragewort; **W-Frage** començant per una paraula interrogativa; **Ja/Nein-Frage** començant pel verb."
     },
     "incorrect": {
-      "default": "Pistes: si comença per un mot interrogatiu (*Wo, Wie, Was, Woher...*) → **W-Frage**. Si comença directament pel verb conjugat → **Ja/Nein-Frage**. Si comença pel subjecte (o complement) amb el verb a la posició 2 → **declarativa**."
+      "default": "Pistes: si comença per un mot interrogatiu (_Wo, Wie, Was, Woher..._) → **W-Frage**. Si comença directament pel verb conjugat → **Ja/Nein-Frage**. Si comença pel subjecte (o complement) amb el verb a la posició 2 → **declarativa**."
     }
   }
 }

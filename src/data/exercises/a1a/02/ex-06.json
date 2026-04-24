@@ -3,22 +3,22 @@
   "id": "A1a-2-ex-06",
   "topicId": "A1a-2",
   "title": "De declarativa a Ja/Nein-Frage",
-  "prompt": "Transforma l'oració declarativa 'Du wohnst in Berlin.' en una pregunta sí/no. Escriu les dues primeres paraules de la nova oració.",
+  "prompt": "Transforma _Du wohnst in Berlin._ en pregunta sí/no. Escriu-ne les dues primeres paraules.",
   "difficulty": 2,
   "tags": ["transformacio", "declarativa", "satzfrage", "inversio"],
   "stimulus": {
     "type": "textWithBlanks",
-    "template": "Declarativa: *Du wohnst in Berlin.*\nPregunta sí/no: {{1}} {{2}} in Berlin?",
+    "template": "{{1}} {{2}} in Berlin?",
     "blanks": [
-      { "id": "1", "label": "verb (posició 1)" },
-      { "id": "2", "label": "subjecte (posició 2)" }
+      { "id": "1", "label": "verb" },
+      { "id": "2", "label": "subjecte" }
     ]
   },
   "interaction": {
     "type": "typeIn",
     "slots": [
       { "blankId": "1", "placeholder": "verb" },
-      { "blankId": "2", "placeholder": "subjecte" }
+      { "blankId": "2", "placeholder": "subj." }
     ],
     "caseSensitive": false,
     "trimWhitespace": true
@@ -35,7 +35,7 @@
       "message": "Exacte! A les preguntes sí/no, el **verb passa a la posició 1** i el **subjecte a la 2**."
     },
     "incorrect": {
-      "default": "Has invertit l'ordre? A la Satzfrage, el verb va primer: *Wohnst du ...?* El subjecte el segueix immediatament."
+      "default": "Has invertit l'ordre? A la Satzfrage, el verb va primer: _Wohnst du ...?_ El subjecte el segueix immediatament."
     }
   }
 }

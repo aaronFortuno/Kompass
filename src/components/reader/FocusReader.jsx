@@ -1141,7 +1141,15 @@ function PitfallBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed,
       {showKicker ? <BeatKicker step={step} stepIdx={stepIdx} beatKicker={step.id} /> : null}
       <div className="kf-beat-pitfall" ref={containerRef}>
         <span className="kf-marker">Error freqüent {beat.idx} / {beat.total}</span>
-        <div className="kf-beat-pit-bad">{parseInline(pit.bad)}</div>
+        {/*
+         * La versió "dolenta" es renderitza sense àudios audibles:
+         * strippem els marcadors !!…!! per evitar que l'usuari escolti
+         * una pronunciació incorrecta (autoplay + clics). La resta del
+         * format (==mark==, **bold**) es conserva.
+         */}
+        <div className="kf-beat-pit-bad">
+          {parseInline((pit.bad || '').replace(/!!([^!]+?)!!/g, '$1'))}
+        </div>
         <div className="kf-beat-pit-arrow">→</div>
         <div className="kf-beat-pit-good">{parseInline(pit.good)}</div>
         {pit.why ? (

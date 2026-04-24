@@ -52,11 +52,18 @@ absoluta: cal confirmar manualment abans d'aplicar.
 - **Tècnic:**
 - **Estructural:**
 
-### A1a-2 · Satzstruktur
+### A1a-2 · Satzstruktur ✓ revisat
 
-- **Contingut:**
-- **Tècnic:**
-- **Estructural:**
+*Totes les observacions manuals aplicades. Tema marcat com a `reviewed: true`.*
+
+- declarative-contrast · lead reescrit ("Fins aquí, l'alemany s'assembla al català…").
+- konnektor · lead reescrit ("La regla fixa el lloc del verb, no el del subjecte").
+- Pitfalls: el bloc `bad` ara es renderitza sense pills audibles globalment (canvi a PitfallBeat al reader). Afecta tots els temes del curs.
+- Synthesis: eliminada la taula redundant "Les tres estructures bàsiques" (duplicava el SVG); la taula "Exemples comparats" passa a tenir **5 files** (3 → 5) i **totes les 15 frases** són audibles (amb `!!...!!`).
+- ex-04 (assessment-1): canvi de `dropdownFill` a `typeIn` perquè l'usuari hagi d'escriure les paraules, no només triar-les ordenades. Una sola línia, placeholders numèrics curts.
+- ex-06 (assessment-3): template compactat a una línia (`{{1}} {{2}} in Berlin?`); la declarativa passa al prompt; placeholders "verb" i "subj." més curts.
+- ex-07 (assessment-4): afegides 2 preguntes més (6 totals) per cobrir millor els tres tipus d'oració. Manté `dropdownFill` (no hi ha un tipus d'interacció de radios al sistema); la "fletxa →" original del template s'ha substituït per un format de línia buida entre cada frase i el seu dropdown.
+- Àudio "Wo?" regenerat amb Azure TTS (5.3 KB); el clic estrany del final hauria de desaparèixer.
 
 ### A1a-3 · Konjugation
 
@@ -500,7 +507,7 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### Temari / Progrés / Home
 
 - **Bug:**
-  - *
+  - En exercicis d'avaluació amb múltiples preguntes, en cap cas el fletxa avall ha de passar de beat, ha de servir per veure la següent pregunta si n'hi ha. En cas que estiguem a l'última pregunta o al quadre final de resum de l'avaluació llavors sí, pot servir per canviar de pregunta, però a mig exercici no, en cap cas.
 - **Polit:**
   - Si estem navegant pels beats amb fletxa avall - fletxa avall... quan arribem a un exercici amb múltiples preguntes, "fletxa avall" ens porta al següent beat en comptes de la següent pregunta. El comportament dins d'un exercici amb múltiples preguntes hauria de ser "següent pregunta". Fletxa avall també hauria de servir per l'acció de validar (ara ho fem amb enter o fletxa dreta)  — *pendent*
   - A l'índex del sidebar, les icones d'exercici: alienar-les verticalment amb les xifres del pas. I ara el layout de l'índex és a 2 "columnes", una amb les xifres de nombre de pas, i l'altra amb el nom del capítol. Crec que les separaria una mica entre elles i posaria una segona columna precisament amb la icona d'exercici, perquè quedaria més visible que com està ara. En capítols que tenen dues files la icona queda en una posició estranya, potser així ho podem resoldre elegantment (si no ja ho canviarem)  — *pendent*

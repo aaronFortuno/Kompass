@@ -11,6 +11,7 @@
     "sintaxi-ordre-paraules"
   ],
   "estimatedMinutes": 22,
+  "reviewed": true,
   "steps": [
     {
       "id": "intro",
@@ -76,7 +77,7 @@
       "id": "declarative-contrast",
       "kind": "narrative",
       "heading": "Comparativa ràpida",
-      "lead": "Aparentment igual — la diferència apareixerà en inversió.",
+      "lead": "Fins aquí, l'alemany s'assembla al català. La diferència sortirà d'aquí a una estona, quan comencem a moure peces dins l'oració.",
       "comparison": [
         {
           "es": "Mi dirección es Jahnstraße 5.",
@@ -96,8 +97,8 @@
       "id": "konnektor",
       "kind": "narrative",
       "heading": "Posició 1 ≠ subjecte sempre",
-      "lead": "La regla diu «verb a posició 2», ==no== «subjecte a posició 1».",
-      "body": "A la posició 1 pot anar qualsevol bloc. Quan hi posem alguna cosa que no és el subjecte, el subjecte es desplaça a la posició 3. Això s'anomena **inversió** (_Inversion_).",
+      "lead": "La regla fixa ==el lloc del verb==, no el del subjecte.",
+      "body": "A la posició 1 pot anar qualsevol bloc: el subjecte, un complement de temps, un de lloc… Quan hi posem una cosa que no és el subjecte, el subjecte es desplaça a la posició 3. Això s'anomena **inversió** (_Inversion_).",
       "rule": [
         "Els connectors **und** (_i_), **aber** (_però_) i **oder** (_o_) són ==neutres==: no ocupen posició, simplement uneixen.",
         "Després d'un connector, la nova oració torna a començar de zero: subjecte (1) + verb (2) + complements."
@@ -301,36 +302,7 @@
       ],
       "tables": [
         {
-          "title": "Les tres estructures bàsiques",
-          "headers": [
-            "Tipus",
-            "Posició 1",
-            "Posició 2",
-            "Posició 3+"
-          ],
-          "rows": [
-            [
-              "Declarativa",
-              "Subjecte o complement",
-              "**Verb**",
-              "Resta"
-            ],
-            [
-              "W-Frage (parcial)",
-              "**Fragewort** (_Wie, Wo, Was…_)",
-              "**Verb**",
-              "Subjecte + complements"
-            ],
-            [
-              "Ja/Nein-Frage (total)",
-              "**Verb**",
-              "Subjecte",
-              "Complements"
-            ]
-          ]
-        },
-        {
-          "title": "Exemples comparats",
+          "title": "Una mateixa frase en els tres formats",
           "headers": [
             "Declarativa",
             "W-Frage",
@@ -338,19 +310,29 @@
           ],
           "rows": [
             [
-              "Du ==kommst== aus Deutschland.",
-              "Woher ==kommst== du?",
-              "==Kommst== du aus Deutschland?"
+              "!!Du ==kommst== aus Deutschland.!!",
+              "!!Woher ==kommst== du?!!",
+              "!!==Kommst== du aus Deutschland?!!"
             ],
             [
-              "Er ==wohnt== in Berlin.",
-              "Wo ==wohnt== er?",
-              "==Wohnt== er in Berlin?"
+              "!!Er ==wohnt== in Berlin.!!",
+              "!!Wo ==wohnt== er?!!",
+              "!!==Wohnt== er in Berlin?!!"
             ],
             [
-              "Sie ==heißt== Anna.",
-              "Wie ==heißt== sie?",
-              "==Heißt== sie Anna?"
+              "!!Sie ==heißt== Anna.!!",
+              "!!Wie ==heißt== sie?!!",
+              "!!==Heißt== sie Anna?!!"
+            ],
+            [
+              "!!Ich ==arbeite== in Ingolstadt.!!",
+              "!!Wo ==arbeitest== du?!!",
+              "!!==Arbeitest== du in Ingolstadt?!!"
+            ],
+            [
+              "!!Das ==ist== mein Name.!!",
+              "!!Wie ==ist== dein Name?!!",
+              "!!==Ist== das dein Name?!!"
             ]
           ]
         }
