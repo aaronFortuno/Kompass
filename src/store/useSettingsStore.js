@@ -67,6 +67,11 @@ export const DEFAULT_SETTINGS = {
   // i el cog del reader + tecla `c` comparteixen aquest flag perquè
   // hi hagi un únic punt d'obertura del modal.
   settingsOpen: false,
+  // §114: modal del wizard d'onboarding tècnic. Transient (no persistit).
+  // El beat "onboarding-setup" de la lliçó A1a-0 mostra un card amb
+  // botó que l'obre. Pot estar muntat com a modal global per no barrejar
+  // la seva navegació interna amb la del reader.
+  onboardingSetupOpen: false,
 };
 
 export const useSettingsStore = create(
@@ -114,6 +119,8 @@ export const useSettingsStore = create(
         set({ onboardingCompleted: Boolean(v) }),
       setSettingsOpen: (v) => set({ settingsOpen: Boolean(v) }),
       toggleSettings: () => set((s) => ({ settingsOpen: !s.settingsOpen })),
+      setOnboardingSetupOpen: (v) =>
+        set({ onboardingSetupOpen: Boolean(v) }),
 
       update: (patch) => set(patch),
       reset: () => set({ ...DEFAULT_SETTINGS }),

@@ -1,5 +1,15 @@
 import { useEffect, useRef, useState } from 'react';
-import { ChevronLeft, ChevronRight, Play, Pause, Volume2, VolumeX, Check } from 'lucide-react';
+import {
+  ChevronLeft,
+  ChevronRight,
+  Play,
+  Pause,
+  Volume2,
+  VolumeX,
+  Check,
+  X as CloseIcon,
+  Settings2,
+} from 'lucide-react';
 import { useSettingsStore } from '@/store/useSettingsStore.js';
 import { Toggle, TypewriterPreview } from '@/components/settings/controls.jsx';
 import musicManifest from '@/audio/music-manifest.json';
@@ -7,19 +17,30 @@ import musicManifest from '@/audio/music-manifest.json';
 /*
  * OnboardingSetup · configuració tècnica inicial guiada
  *
- * Wizard de 4 passos que apareix al final de la lliçó A1a-0 (Benvinguda)
- * per ajudar l'usuari a triar les preferències principals d'estudi abans
- * d'entrar al contingut:
+ * Dos components públics:
+ *
+ *   1. <OnboardingSetup />        — contingut inline del beat
+ *      "onboarding-setup" de la lliçó A1a-0. És un card compacte
+ *      amb un botó que obre el modal global. No gestiona cap input
+ *      de teclat propi perquè no ha de competir amb la navegació
+ *      del reader (fletxes, scroll, "p"…).
+ *
+ *   2. <OnboardingSetupModal />   — modal global, muntat una sola
+ *      vegada al shell de l'app. Quan s'obre, captura Escape per
+ *      tancar-se i bloqueja les fletxes/scroll perquè no arribin
+ *      al reader de sota. Hi viu el wizard de 4 passos.
+ *
+ * Els 4 passos del wizard:
  *
  *   1. Efecte màquina d'escriure  (typewriter + typewriterSpeed)
  *   2. Mode automàtic              (autoPlay + autoPlayDelay)
  *   3. Àudio natiu                 (audioAutoplay + audioSpeed)
  *   4. Música de fons              (bgMusicEnabled + bgMusicTrack + bgMusicVolume)
  *
- * Cada pantalla té una previsualització en viu. En acabar, es marca
- * `onboardingCompleted = true` al store. Si l'usuari torna al mateix
- * pas (navegant endarrere), mostra una versió compacta amb opció de
- * reobrir el wizard.
+ * En completar-lo es marca onboardingCompleted = true al settings store
+ * (persistit). Obrir el modal amb el flag ja a true mostra una
+ * introducció curta: "Tornem a configurar". Tot és reconfigurable des
+ * del ⚙️ global o la tecla 'c'.
  */
 
 const SAMPLE_AUDIO_URL = '/Kompass/audio/aa196176db6c431983ae61e2ea54892890ed07a9.mp3';
@@ -28,52 +49,148 @@ const SAMPLE_AUDIO_TEXT = 'Hallo, ich bin Anna.';
 const SAMPLE_TYPEWRITER_TEXT =
   'El reader mostra una idea alhora, amb tipografia de paper i ritme de llibre.';
 
+// ─────────────────────────────────────── component inline del beat
+
 export function OnboardingSetup() {
   const completed = useSettingsStore((s) => s.onboardingCompleted);
-  const [reopen, setReopen] = useState(false);
+  const openModal = useSettingsStore((s) => s.setOnboardingSetupOpen);
 
-  if (completed && !reopen) {
-    return <OnboardingAlreadyDone onReopen={() => setReopen(true)} />;
-  }
-
-  return <OnboardingWizard onClose={() => setReopen(false)} />;
-}
-
-function OnboardingAlreadyDone({ onReopen }) {
   return (
     <div className="kf-ex-wrap">
       <div className="kf-ex-card">
         <div className="kf-ex-header">
-          <span className="kf-ex-chip">Configuració</span>
-          <h3 className="kf-ex-title">Ja tens l'experiència configurada</h3>
+          <span className="kf-ex-chip">Configuració inicial</span>
+          <h3 className="kf-ex-title">
+            {completed
+              ? 'Ja tens l\'experiència configurada'
+              : 'Abans de començar, com vols estudiar?'}
+          </h3>
         </div>
-        <div className="mt-4 flex items-start gap-3">
-          <Check size={20} className="mt-0.5 flex-shrink-0 text-reader-accent" aria-hidden="true" />
-          <p className="font-serif text-reader-ink-2 leading-relaxed">
-            Vas passar pel wizard en una sessió anterior. Les teves preferències es mantenen
-            desades al navegador.
+
+        {completed ? (
+          <>
+            <div className="mt-4 flex items-start gap-3">
+              <Check
+                size={20}
+                className="mt-0.5 flex-shrink-0 text-reader-accent"
+                aria-hidden="true"
+              />
+              <p className="font-serif text-reader-ink-2 leading-relaxed">
+                Vas passar pel wizard en una sessió anterior. Les teves preferències es mantenen
+                desades al navegador i pots canviar-les quan vulguis.
+              </p>
+            </div>
+          </>
+        ) : (
+          <p className="mt-4 font-serif text-reader-ink-2 leading-relaxed">
+            Un wizard breu t'ajudarà a triar les preferències bàsiques d'estudi — efecte màquina
+            d'escriure, mode automàtic, velocitat de l'àudio i música de fons. Tot amb exemples
+            audibles i previsualitzacions, i tot canviable després des de{' '}
+            <span className="font-mono text-xs">⚙️ Ajustaments</span>.
           </p>
-        </div>
-        <p className="mt-4 font-serif text-sm text-reader-muted">
-          Pots canviar aquests ajustaments en qualsevol moment des del{' '}
-          <span className="font-mono text-xs">⚙️ Ajustaments</span> del menú o amb la tecla{' '}
-          <span className="font-mono text-xs">c</span> mentre estudies.
-        </p>
+        )}
+
         <div className="mt-6">
           <button
             type="button"
-            onClick={onReopen}
-            className="font-mono text-xs uppercase tracking-[0.12em] px-4 py-2 border border-reader-rule rounded-sm hover:bg-reader-paper-2 transition-colors duration-fast ease-standard"
+            onClick={() => openModal(true)}
+            className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.12em] px-4 py-2.5 bg-reader-ink text-reader-paper rounded-sm hover:opacity-90 transition-opacity duration-fast ease-standard"
           >
-            Tornar a configurar
+            <Settings2 size={14} aria-hidden="true" />
+            {completed ? 'Tornar a configurar' : 'Configurar l\'experiència'}
           </button>
         </div>
+
+        <p className="mt-4 font-serif text-xs text-reader-muted">
+          Pots saltar-t'ho ara i configurar-ho més tard des del menú o amb la tecla{' '}
+          <span className="font-mono">c</span>.
+        </p>
       </div>
     </div>
   );
 }
 
-function OnboardingWizard({ onClose }) {
+// ─────────────────────────────────────── modal global
+
+export function OnboardingSetupModal() {
+  const open = useSettingsStore((s) => s.onboardingSetupOpen);
+  const close = useSettingsStore((s) => s.setOnboardingSetupOpen);
+
+  useEffect(() => {
+    if (!open) return undefined;
+    const onKey = (e) => {
+      // Tanca amb Escape i captura les tecles de navegació del reader
+      // (fletxes, p, PageUp/Down, c) perquè no arribin al reader de
+      // sota — el wizard té la seva navegació interna amb els botons
+      // de Anterior/Continuar.
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        e.stopPropagation();
+        close(false);
+        return;
+      }
+      const blocked = [
+        'ArrowLeft',
+        'ArrowRight',
+        'ArrowUp',
+        'ArrowDown',
+        'PageUp',
+        'PageDown',
+        ' ',
+      ];
+      if (blocked.includes(e.key)) {
+        e.stopPropagation();
+      }
+    };
+    window.addEventListener('keydown', onKey, true);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      window.removeEventListener('keydown', onKey, true);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [open, close]);
+
+  return (
+    <>
+      <div
+        className={['settings-backdrop', open ? 'is-open' : ''].join(' ')}
+        onClick={() => close(false)}
+        aria-hidden="true"
+      />
+      <div
+        className={['settings-modal onboarding-setup-modal', open ? 'is-open' : ''].join(' ')}
+        role="dialog"
+        aria-modal={open}
+        aria-labelledby="onboarding-setup-title"
+        aria-hidden={!open}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <header className="settings-modal-header">
+          <h2 id="onboarding-setup-title" className="settings-modal-title">
+            <Settings2 size={18} aria-hidden="true" strokeWidth={1.75} />
+            <span>Configuració inicial</span>
+          </h2>
+          <button
+            type="button"
+            className="settings-modal-close"
+            onClick={() => close(false)}
+            aria-label="Tancar wizard"
+          >
+            <CloseIcon size={18} aria-hidden="true" />
+          </button>
+        </header>
+        <div className="settings-modal-body">
+          {open ? <OnboardingWizard onFinish={() => close(false)} /> : null}
+        </div>
+      </div>
+    </>
+  );
+}
+
+// ─────────────────────────────────────── wizard intern
+
+function OnboardingWizard({ onFinish }) {
   const [stepIdx, setStepIdx] = useState(0);
   const setOnboardingCompleted = useSettingsStore((s) => s.setOnboardingCompleted);
 
@@ -90,87 +207,85 @@ function OnboardingWizard({ onClose }) {
 
   const finish = () => {
     setOnboardingCompleted(true);
-    onClose?.();
+    onFinish?.();
   };
 
   return (
-    <div className="kf-ex-wrap">
-      <div className="kf-ex-card">
-        <div className="kf-ex-header">
-          <span className="kf-ex-chip">Configuració inicial</span>
-          <h3 className="kf-ex-title">Abans de començar, com vols estudiar?</h3>
-        </div>
+    <div className="mx-auto max-w-2xl">
+      <p className="font-serif text-reader-ink-2 leading-relaxed mb-4">
+        Tries com vols que es vegi i soni el reader. Cada opció té una previsualització:
+        experimenta fins que et sigui còmoda.
+      </p>
 
-        <ol className="mt-2 flex gap-1.5" aria-label="Passos del wizard">
-          {steps.map((s, i) => (
-            <li
-              key={s.key}
-              className={[
-                'h-1 flex-1 rounded-full transition-colors duration-base ease-standard',
-                i <= stepIdx ? 'bg-reader-ink' : 'bg-reader-rule',
-              ].join(' ')}
-              aria-current={i === stepIdx ? 'step' : undefined}
-            />
-          ))}
-        </ol>
-        <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.18em] text-reader-muted">
-          Pas {stepIdx + 1} de {total} · {steps[stepIdx].title}
-        </p>
+      <ol className="flex gap-1.5" aria-label="Passos del wizard">
+        {steps.map((s, i) => (
+          <li
+            key={s.key}
+            className={[
+              'h-1 flex-1 rounded-full transition-colors duration-base ease-standard',
+              i <= stepIdx ? 'bg-reader-ink' : 'bg-reader-rule',
+            ].join(' ')}
+            aria-current={i === stepIdx ? 'step' : undefined}
+          />
+        ))}
+      </ol>
+      <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.18em] text-reader-muted">
+        Pas {stepIdx + 1} de {total} · {steps[stepIdx].title}
+      </p>
 
-        <div className="mt-6">
-          <Render />
-        </div>
+      <div className="mt-6">
+        <Render />
+      </div>
 
-        <div className="mt-8 flex items-center justify-between gap-3">
+      <div className="mt-8 flex items-center justify-between gap-3">
+        <button
+          type="button"
+          onClick={() => setStepIdx((i) => Math.max(0, i - 1))}
+          disabled={stepIdx === 0}
+          className={[
+            'inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-[0.12em]',
+            'px-3 py-2 border border-reader-rule rounded-sm',
+            'transition-colors duration-fast ease-standard',
+            stepIdx === 0
+              ? 'opacity-40 pointer-events-none'
+              : 'hover:bg-reader-paper-2 text-reader-ink-2',
+          ].join(' ')}
+        >
+          <ChevronLeft size={14} aria-hidden="true" />
+          Anterior
+        </button>
+
+        {isLast ? (
           <button
             type="button"
-            onClick={() => setStepIdx((i) => Math.max(0, i - 1))}
-            disabled={stepIdx === 0}
-            className={[
-              'inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-[0.12em]',
-              'px-3 py-2 border border-reader-rule rounded-sm',
-              'transition-colors duration-fast ease-standard',
-              stepIdx === 0
-                ? 'opacity-40 pointer-events-none'
-                : 'hover:bg-reader-paper-2 text-reader-ink-2',
-            ].join(' ')}
+            onClick={finish}
+            className="inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-[0.12em] px-4 py-2 bg-reader-ink text-reader-paper rounded-sm hover:opacity-90 transition-opacity duration-fast ease-standard"
           >
-            <ChevronLeft size={14} aria-hidden="true" />
-            Anterior
+            Començar a estudiar
+            <Check size={14} aria-hidden="true" />
           </button>
-
-          {isLast ? (
-            <button
-              type="button"
-              onClick={finish}
-              className="inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-[0.12em] px-4 py-2 bg-reader-ink text-reader-paper rounded-sm hover:opacity-90 transition-opacity duration-fast ease-standard"
-            >
-              Començar a estudiar
-              <Check size={14} aria-hidden="true" />
-            </button>
-          ) : (
-            <button
-              type="button"
-              onClick={() => setStepIdx((i) => Math.min(total - 1, i + 1))}
-              className="inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-[0.12em] px-4 py-2 bg-reader-ink text-reader-paper rounded-sm hover:opacity-90 transition-opacity duration-fast ease-standard"
-            >
-              Continuar
-              <ChevronRight size={14} aria-hidden="true" />
-            </button>
-          )}
-        </div>
-
-        <p className="mt-4 font-serif text-xs text-reader-muted">
-          Podràs canviar aquests ajustaments quan vulguis des de{' '}
-          <span className="font-mono">⚙️ Ajustaments</span> o amb la tecla{' '}
-          <span className="font-mono">c</span>.
-        </p>
+        ) : (
+          <button
+            type="button"
+            onClick={() => setStepIdx((i) => Math.min(total - 1, i + 1))}
+            className="inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-[0.12em] px-4 py-2 bg-reader-ink text-reader-paper rounded-sm hover:opacity-90 transition-opacity duration-fast ease-standard"
+          >
+            Continuar
+            <ChevronRight size={14} aria-hidden="true" />
+          </button>
+        )}
       </div>
+
+      <p className="mt-4 font-serif text-xs text-reader-muted">
+        Podràs canviar aquests ajustaments quan vulguis des de{' '}
+        <span className="font-mono">⚙️ Ajustaments</span> o amb la tecla{' '}
+        <span className="font-mono">c</span>.
+      </p>
     </div>
   );
 }
 
-// ─────────────────────────────────────────────── step 1: typewriter
+// ─────────────────────────────────────── step 1: typewriter
 
 function TypewriterStep() {
   const typewriter = useSettingsStore((s) => s.typewriter);
@@ -187,11 +302,12 @@ function TypewriterStep() {
       </p>
 
       <div className="mt-5 flex items-center justify-between gap-4 py-3 border-b border-reader-rule">
-        <div className="flex-1">
-          <label htmlFor="ob-tw-toggle" className="font-mono text-xs uppercase tracking-[0.14em] text-reader-ink-2">
-            Activar l'efecte
-          </label>
-        </div>
+        <label
+          htmlFor="ob-tw-toggle"
+          className="flex-1 font-mono text-xs uppercase tracking-[0.14em] text-reader-ink-2"
+        >
+          Activar l'efecte
+        </label>
         <Toggle
           id="ob-tw-toggle"
           checked={typewriter}
@@ -235,7 +351,7 @@ function TypewriterStep() {
   );
 }
 
-// ─────────────────────────────────────────────── step 2: autoPlay
+// ─────────────────────────────────────── step 2: autoPlay
 
 function AutoPlayStep() {
   const autoPlay = useSettingsStore((s) => s.autoPlay);
@@ -252,11 +368,12 @@ function AutoPlayStep() {
       </p>
 
       <div className="mt-5 flex items-center justify-between gap-4 py-3 border-b border-reader-rule">
-        <div className="flex-1">
-          <label htmlFor="ob-ap-toggle" className="font-mono text-xs uppercase tracking-[0.14em] text-reader-ink-2">
-            Activar el mode automàtic
-          </label>
-        </div>
+        <label
+          htmlFor="ob-ap-toggle"
+          className="flex-1 font-mono text-xs uppercase tracking-[0.14em] text-reader-ink-2"
+        >
+          Activar el mode automàtic
+        </label>
         <Toggle
           id="ob-ap-toggle"
           checked={autoPlay}
@@ -311,7 +428,7 @@ function AutoPlayStep() {
   );
 }
 
-// ─────────────────────────────────────────────── step 3: audio
+// ─────────────────────────────────────── step 3: audio
 
 function AudioStep() {
   const audioAutoplay = useSettingsStore((s) => s.audioAutoplay);
@@ -356,11 +473,12 @@ function AudioStep() {
       </p>
 
       <div className="mt-5 flex items-center justify-between gap-4 py-3 border-b border-reader-rule">
-        <div className="flex-1">
-          <label htmlFor="ob-aa-toggle" className="font-mono text-xs uppercase tracking-[0.14em] text-reader-ink-2">
-            Reproducció automàtica de l'àudio
-          </label>
-        </div>
+        <label
+          htmlFor="ob-aa-toggle"
+          className="flex-1 font-mono text-xs uppercase tracking-[0.14em] text-reader-ink-2"
+        >
+          Reproducció automàtica de l'àudio
+        </label>
         <Toggle
           id="ob-aa-toggle"
           checked={audioAutoplay}
@@ -409,7 +527,7 @@ function AudioStep() {
   );
 }
 
-// ─────────────────────────────────────────────── step 4: music
+// ─────────────────────────────────────── step 4: music
 
 function MusicStep() {
   const bgMusicEnabled = useSettingsStore((s) => s.bgMusicEnabled);
@@ -426,7 +544,6 @@ function MusicStep() {
   const previewRef = useRef(null);
   const [previewing, setPreviewing] = useState(false);
 
-  // Atura la previsualització si canvia la pista o el volum, o en desmuntar.
   useEffect(() => {
     return () => {
       previewRef.current?.pause();
@@ -470,15 +587,9 @@ function MusicStep() {
     }
   };
 
-  // Canvia la pista que sona a la previsualització quan l'usuari tria
-  // una pista nova mentre està reproduint.
   const pickTrack = (id) => {
     setBgMusicTrack(id);
-    if (previewing) {
-      stopPreview();
-      // Pequeno delay perquè el re-render amb la nova pista activi
-      // la previsualització amb la pista correcta al següent clic.
-    }
+    if (previewing) stopPreview();
   };
 
   return (
@@ -489,11 +600,12 @@ function MusicStep() {
       </p>
 
       <div className="mt-5 flex items-center justify-between gap-4 py-3 border-b border-reader-rule">
-        <div className="flex-1">
-          <label htmlFor="ob-m-toggle" className="font-mono text-xs uppercase tracking-[0.14em] text-reader-ink-2">
-            Activar la música de fons
-          </label>
-        </div>
+        <label
+          htmlFor="ob-m-toggle"
+          className="flex-1 font-mono text-xs uppercase tracking-[0.14em] text-reader-ink-2"
+        >
+          Activar la música de fons
+        </label>
         <Toggle
           id="ob-m-toggle"
           checked={bgMusicEnabled}

@@ -5,6 +5,7 @@ import { I18nProvider } from '@/i18n';
 import { AppShell } from '@/components/layout/AppShell.jsx';
 import { BackgroundMusicPlayer } from '@/components/layout/BackgroundMusicPlayer.jsx';
 import { SettingsModal } from '@/components/settings/SettingsModal.jsx';
+import { OnboardingSetupModal } from '@/components/reader/OnboardingSetup.jsx';
 import { useSettingsStore } from '@/store/useSettingsStore.js';
 import { HomePage } from '@/pages/HomePage.jsx';
 import { PlaceholderPage } from '@/pages/PlaceholderPage.jsx';
@@ -43,6 +44,11 @@ export default function App() {
           {/* Modal d'ajustaments global · §112. Un sol punt d'entrada,
               obert des del header, del reader o de la URL /settings. */}
           <SettingsModal />
+          {/* Modal del wizard d'onboarding tècnic · §114. S'obre des
+              del beat "onboarding-setup" d'A1a-0 (últim pas abans del
+              "begin"). Captura les fletxes perquè no arribin al reader
+              que queda de sota. */}
+          <OnboardingSetupModal />
           <Routes>
             {/*
               El FocusReader ocupa la viewport sencera i no vol el shell
