@@ -327,7 +327,7 @@ function TypewriterStep() {
             Velocitat
           </span>
           <span className="font-mono text-xs text-reader-muted">
-            {typewriterSpeed === 1 ? 'ràpid' : typewriterSpeed === 5 ? 'lent' : 'mitjà'} ·{' '}
+            {typewriterSpeed === 1 ? 'lent' : typewriterSpeed === 5 ? 'ràpid' : 'mitjà'} ·{' '}
             {typewriterSpeed}/5
           </span>
         </div>
