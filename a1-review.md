@@ -266,11 +266,11 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-32 · gefallen/finden/mögen
 
 - **Contingut:**
-  - [ALTA] [A1a-32 · intro] S'introdueixen els pronoms datius (_mir, dir, ihm/ihr…_) sense que cap tema anterior els hagi presentat sistemàticament → mini-taula prèvia o reenquadrar com a introducció avançada.
-  - [ALTA] [A1a-32 · Wie findest du…?] Exercicis sense resposta amb pronom acusatiu (_Ich finde ihn/sie/es…_). Afegir exercici dedicat.
-  - [MITJA] [A1a-32 · contrast CA/ES/DE] Afegir fila que expliqui el paral·lelisme (datiu + _gefallen_ = "agradar" reflex en cat/cast).
+  - [MITJA] [A1a-32 · Wie findest du…?] Afegir un exercici dedicat a la resposta amb pronom acusatiu — pendent (necessita JSON nou d'exercici).
 - **Tècnic:**
 - **Estructural:**
+
+*(Descartats: (a) pronoms datius amb avís + taula ja presents + remet a A1b; (b) contrast CA/ES/DE ja diu "estructura idèntica".)*
 
 ### A1a-33 · Ordinalzahlen
 
