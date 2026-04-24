@@ -368,33 +368,16 @@ absoluta: cal confirmar manualment abans d'aplicar.
 
 *Troballes de la passada automàtica amb 4 agents Explore (A1b-1..10, 11..20, 21..30, 31..41). Mateixa convenció que a la secció A1a: `[ALTA]/[MITJA]/[BAIXA]` davant de cada apunt, punt exacte `[A1b-X · step-id]`, i (pre-filtre, no veritat absoluta) cal validar manualment abans d'aplicar.*
 
-### A1b-5 · Vorlieben ausdrücken
+### A1b-5..8 · Bloc Vorlieben (tractament opció A aplicat)
 
-- **Estructural:**
-  - [ALTA] [A1b-5] Solapament amb A1b-6/7 — **decisió curricular pendent** del desenvolupador. Cal decidir si A1b-5 és panorama ultracompacte o introducció completa i ajustar A1b-6/7 en conseqüència.
+*Cada tema té ara un callout explícit amb el seu **angle pedagògic propi dins del bloc** perquè la repetició de contingut es llegeixi com a consolidació per angles diferents, no com a redundància cega:*
 
-*(Descartat: la troballa sobre pronoms datius sense avís és fals positiu — el step `gefallen` ja té el callout "Pronoms datiu bàsics a memoritzar (per a aquest tema)" amb la llista completa _mir/dir/ihm/ihr/uns/euch/ihnen_ i la referència al bloc 2 d'A1b.)*
+- **A1b-5** → panorama general del ventall (novetats: datiu amb gefallen, estructura d'interessieren, möchten cortès).
+- **A1b-6** → taula comparativa dels 4 verbs de gust + _möchten_ com a verb doble (modal + transitiu).
+- **A1b-7** → contrast crític datiu/acusatiu (_gefallen_ vs _interessieren_) + _neugierig auf_ + expressions.
+- **A1b-8** → tancament: eina per a accions (_gern/lieber/am liebsten_), sense novetat gramatical, focus en sintaxi.
 
-### A1b-6 · gefallen/finden/mögen/möchten
-
-- **Contingut:**
-  - [ALTA] [A1b-6] Redundància forta amb A1a-32 (taules idèntiques sense nous matisos gramaticals; només afegeix möchten). Decidir si manté capítol independent o es refon.
-- **Estructural:**
-  - [ALTA] [A1b-6] Considerar fusió amb A1b-5 o reestructuració.
-
-### A1b-7 · Verbs gust+
-
-- **Estructural:**
-  - [MITJA] [A1b-7] Part del cicle preferències excessivament llarg (~850 línies A1b-5+6+7); condensar — **decisió curricular pendent**.
-
-*(Descartat: _Auf keinen Fall interessiert mich Fußball_ no apareix a A1b-7. Els exemples reals són _Auf keinen Fall gehe ich ins Fußballstadion_ / _Auf keinen Fall gehe ich_, que són naturals. Fals positiu.)*
-
-### A1b-8 · Vorlieben II
-
-- **Contingut:**
-  - [MITJA] [A1b-8 · intro] Ambigu si és remediació o consolidació; text diu "reforç" però longitud + 5 assessments suggereixen nova avaluació. Clarificar el públic.
-- **Estructural:**
-  - [MITJA] [A1b-8] Valorar si mereix tema independent o integrar-se com a ampliació a A1b-6/7.
+*(Si la revisió manual encara detecta redundància, es pot escalar a opció B — reduir A1b-5 a panorama breu — o opció C — fusionar A1b-5+6 en un sol tema.)*
 
 ### A1b-9 · Ratschläge
 
