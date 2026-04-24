@@ -335,8 +335,6 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-V4 · Länder
 
 - **Contingut:**
-  - [ALTA] [A1a-V4 · kommen-aus · callout] Adverteix que no s'han dominat els casos, però el tema usa datiu profusament (_aus der Schweiz_, _aus dem Iran_) → referència explícita a A1b-19.
-  - [MITJA] [A1a-V4 · llengues] _Meine Muttersprache ist Katalanisch_ assumeix coneixement de _Muttersprache_; glossa o traducció ràpida.
 - **Tècnic:**
 - **Estructural:**
 

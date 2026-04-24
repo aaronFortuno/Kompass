@@ -85,7 +85,7 @@
       "callout": {
         "variant": "warning",
         "title": "No et sorprenguis ara",
-        "body": "Els canvis _die → der_, _der → dem_, _die (pl.) → den_ són el sistema de casos (datiu), que encara no has treballat a fons. Si no els domines, limita't als països sense article — el 90% dels que faràs servir."
+        "body": "Els canvis _die → der_, _der → dem_, _die (pl.) → den_ són el sistema de casos (**datiu**), que veuràs a fons a **A1a-34** (preposicions amb datiu). Aquí només cal que acceptis aquestes formes com a fórmules fixes per als pocs països amb article. Si no les domines, limita't als països **sense article** — cobreixen el 90% dels que faràs servir."
       }
     },
     {
@@ -136,7 +136,7 @@
         { "pron": "Spanisch", "gloss": "espanyol", "note": "La _sch_ es pronuncia \"x\" catalana (_sha_).", "example": { "de": "Wir lernen Spanisch in der Schule.", "ca": "Aprenem espanyol a l'escola." } },
         { "pron": "Französisch", "gloss": "francès", "note": "La _ö_ com _u_ francesa. Porta umlaut perquè ve de _Franzose_.", "example": { "de": "Französisch ist schön, aber schwierig.", "ca": "El francès és bonic, però difícil." } },
         { "pron": "Italienisch", "gloss": "italià", "note": "Cinc síl·labes: _i-ta-li-e-nisch_.", "example": { "de": "Sie spricht Italienisch.", "ca": "Ella parla italià." } },
-        { "pron": "Katalanisch", "gloss": "català", "note": "Existeix i és el nom oficial. Apte per a _Ich spreche Katalanisch_.", "example": { "de": "Meine Muttersprache ist Katalanisch.", "ca": "La meva llengua materna és el català." } }
+        { "pron": "Katalanisch", "gloss": "català", "note": "Existeix i és el nom oficial. Apte per a _Ich spreche Katalanisch_. _Muttersprache_ = llengua materna (literalment \"llengua de mare\": _Mutter_ + _Sprache_).", "example": { "de": "Meine Muttersprache ist Katalanisch.", "ca": "La meva llengua materna és el català." } }
       ],
       "callout": {
         "variant": "warning",
