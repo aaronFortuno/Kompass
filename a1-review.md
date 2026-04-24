@@ -163,12 +163,10 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-18 · Satzklammer
 
 - **Contingut:**
-  - [ALTA] [A1a-18 · inversió · taula 18.1] Només es mostra una combinació de posicions; contrast explícit amb la forma incorrecta *_Am Wochenende ich spiele Fußball_ ajudaria.
-  - [MITJA] [A1a-18 · analogia abraçada] Els estudiants poden pensar que verb conjugat i segona peça s'abracen entre si, quan en realitat **envolten** el contingut. Infografia ajudaria.
-  - [MITJA] [A1a-18 · preguntes amb Satzklammer] _Tango kann sie sehr gut tanzen_ no es transforma a _Kann sie…?_; la inversió interrogativa mereix exemple propi.
 - **Tècnic:**
 - **Estructural:**
-  - [ALTA] [A1a-18] Depèn fortament d'A1a-2; la recapitulació V2 és insuficient per a qui hagi saltat o oblidat A1a-2.
+
+*(Descartats: (a) la taula 18.1 ja ve acompanyada d'un callout "danger" amb el contrast explícit incorrecte/correcte; (b) el callout de l'abraçada ja diu "abracen tot el contingut de l'oració", sense ambigüitat; (c) la recapitulació V2 ja és al step `recap-positions`.)*
 
 ### A1a-19 · können i mögen
 
