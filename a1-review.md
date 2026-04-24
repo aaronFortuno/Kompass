@@ -349,11 +349,10 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-V6 · Essen und Trinken
 
 - **Contingut:**
-  - [ALTA] [A1a-V6 · essen-trinken-verben · callout] _du isst_ (doble s, doble t) vs _du ist_ es distingeix ortogràficament però no explica l'arrel del parany ortofonètic; contrastos explícits ajudarien.
-  - [MITJA] [A1a-V6 · intro] "Aliments bàsics (I)" vs "(II)" sense criteri clar a l'intro.
 - **Tècnic:**
 - **Estructural:**
-  - [MITJA] [A1a-V6] Desequilibri: Aliments (I) 8 items, Aliments (II) 9 items. Reordenar a ~13-14 per grup.
+
+*(Descartat: "desequilibri 8 vs 9 aliments" — els dos blocs són pràcticament equivalents i la divisió ara és per àpat (esmorzar / dinar-sopar), no per quantitat. Reordenar a ~13-14 per grup allargaria massa cada step sense guany pedagògic.)*
 
 ### A1a-V7 · Tagesablauf
 

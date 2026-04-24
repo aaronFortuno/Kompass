@@ -20,13 +20,13 @@
       "callout": {
         "variant": "info",
         "title": "Reutilitzem el que saps",
-        "body": "Els verbs _mögen_ (vist abans) i _essen/trinken_ els combinem amb el vocabulari nou: _Ich esse gern Käse_ (M'agrada menjar formatge). No cal gramàtica nova, només ampliar el dipòsit lèxic."
+        "body": "Els verbs _mögen_ (vist abans) i _essen/trinken_ els combinem amb el vocabulari nou: _Ich esse gern Käse_ (M'agrada menjar formatge). No cal gramàtica nova, només ampliar el dipòsit lèxic.\n\n**Dos blocs d'aliments.** A continuació veuràs \"Aliments bàsics **(I)**\" (pa, làctics, embotits, fruita: el grup més freqüent a l'esmorzar alemany) i \"Aliments bàsics **(II)**\" (carn, peix, verdura, arròs, pasta, dolços: el grup del dinar i el sopar). La divisió és pedagògica, no oficial."
       }
     },
     {
       "id": "alimentos-base",
       "kind": "narrative",
-      "heading": "Aliments bàsics (I)",
+      "heading": "Aliments bàsics (I): esmorzar",
       "lead": "Pa, ous, làctics: els pilars de la cuina alemanya.",
       "tabs": [
         { "pron": "das Brot", "gloss": "el pa", "note": "Neutre. L'alemany té centenars de tipus de pa; aquí la paraula genèrica.", "example": { "de": "Ich esse Brot zum Frühstück.", "ca": "Menjo pa per esmorzar." }, "image": { "src": "/Kompass/images/a1a/V6/brot-640.webp", "srcset": "/Kompass/images/a1a/V6/brot-640.webp 640w, /Kompass/images/a1a/V6/brot-1280.webp 1280w", "sizes": "(max-width: 640px) 50vw, 200px", "alt": "Un pa rústic alemany sobre fusta", "width": 200, "credit": "Monika Grabkowska · Unsplash · Unsplash License" } },
@@ -42,7 +42,7 @@
     {
       "id": "alimentos-mas",
       "kind": "narrative",
-      "heading": "Aliments bàsics (II)",
+      "heading": "Aliments bàsics (II): dinar i sopar",
       "lead": "Carn, peix, verdures, dolços.",
       "tabs": [
         { "pron": "das Fleisch", "gloss": "la carn", "note": "Neutre. Singular només (la carn genèrica).", "example": { "de": "Ich esse kein Fleisch.", "ca": "No menjo carn." } },
@@ -112,8 +112,8 @@
       ],
       "callout": {
         "variant": "warning",
-        "title": "_du isst_ i _du ist_: diferents",
-        "body": "_Du **isst**_ (amb dues _s_ i doble _t_) vol dir \"tu menges\". _Du **ist**_ no existeix, seria \"tu és\". Compte amb la diferència quan escrius!"
+        "title": "_du isst_ i _er ist_: sonen parescut, però són diferents",
+        "body": "L'arrel _ess-_ acaba en _-ss_, així que la forma _du_ s'escurça a _isst_ (no _issst_). Això fa que _du isst_ i _er isst_ s'escriguin igual, tots dos amb doble _s_ i doble _t_. Compara:\n\n- _!!**er/sie/es ist**!!_ (una sola _s_, una sola _t_) = **és** (verb _sein_).\n- _!!**du isst**!!_ (doble _s_, doble _t_) = **menges** (verb _essen_, canvi vocàlic _e → i_).\n- _!!**er isst**!!_ (doble _s_, doble _t_) = **menja** (mateix verb, mateix canvi vocàlic).\n\nAl parlat, la diferència entre _ist_ i _isst_ és subtil (no doblem consonants a l'oral); al text, cal distingir-les bé segons el sentit."
       }
     },
     {
