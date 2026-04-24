@@ -224,11 +224,10 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-26 · Modalverben
 
 - **Contingut:**
-  - [MITJA] [A1a-26 · taula conjugació wollen] Verificar que els `==destacats==` marquen només les vocals canviades (_i_ singular, _o_ plural).
-  - [MITJA] [A1a-26 · dürfen/können] No es referencia explícitament A1a-19 on es va veure _können_.
-  - [ALTA] [A1a-26 · sollen interrogatiu] _Soll ich dich abholen?_ s'explica però no es contrasta amb _Möchtest du, dass ich dich abhole?_. Aclarir que _sollen_ en pregunta és la forma directa/alemanya de proposar.
 - **Tècnic:**
 - **Estructural:**
+
+*(Revisat i tot descartat: (a) els destacats de _wollen_ (i/o) i de la resta són correctes; (b) la lliçó referencia A1a-19 5 vegades (descripció, prerequisites, intro, taula conjugació, taula comparativa); (c) el callout de _sollen_ interrogatiu ja fa explícit "Soll ich…? = Möchtest du, dass ich…?".)*
 
 ### A1a-27 · Verben mit Nominativ und Akkusativ
 
