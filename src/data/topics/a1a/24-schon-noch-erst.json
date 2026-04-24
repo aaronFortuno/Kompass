@@ -80,12 +80,14 @@
         {
           "type": "table",
           "title": "Els tres adverbis en contrast",
-          "headers": ["Adverbi", "Matís", "Equivalent CA", "Trampa ES"],
+          "headers": ["Adverbi", "Tipus de context", "Matís", "Equivalent CA", "Trampa ES"],
           "rows": [
-            ["_!!**schon**!!_", "abans / ja fet / molt", "ja", "\"ya\" sovint funciona"],
-            ["_!!**noch**!!_", "continua / encara no acabat", "encara", "\"todavía\" / \"aún\""],
-            ["_!!**erst**!!_", "poc / tard / tot just", "només, no... fins", "==NO és \"ya\"=="]
-          ]
+            ["_!!**schon**!!_", "durada / moment", "abans / ja fet / molt", "ja", "\"ya\" sovint funciona"],
+            ["_!!**noch**!!_", "durada / moment", "continua / encara no acabat", "encara", "\"todavía\" / \"aún\""],
+            ["_!!**erst**!!_", "**durada o edat curta**", "només, tot just", "només, tot just", "==NO és \"ya\"=="],
+            ["_!!**erst**!!_", "**hora o data tardana**", "no... fins", "no... fins", "==NO és \"ya\"=="]
+          ],
+          "caption": "_erst_ té dues subfiles perquè la seva traducció canvia radicalment segons el context: una cosa és dir \"només dos anys\" (durada) i una altra \"no fins a les 10\" (moment puntual). El sentit profund en alemany és el mateix (\"menys del que caldria / més tard del que caldria\"), però l'equivalent català és diferent."
         },
         {
           "type": "callout",

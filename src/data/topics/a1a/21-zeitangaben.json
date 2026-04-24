@@ -221,7 +221,7 @@
             ["**cap de setmana**", "!!**==am==**!!", "_!!am Wochenende!!_", "el cap de setmana"],
             ["**interval (inici→final)**", "!!**==von... bis...==**!!", "_!!von 9 bis 17 Uhr!!_", "de 9 a 17"]
           ],
-          "caption": "Repeteix-la en veu alta fins que et surti sola. La primera meitat d'A1a-22 (Uhrzeit) i bona part d'A2 es recolzaran en aquest quadre."
+          "caption": "Repeteix-la en veu alta fins que et surti sola. La primera meitat d'A1a-22 (Uhrzeit) i bona part d'A2 es recolzaran en aquest quadre. La fila de _zu Mittag_ és l'**excepció del grup**: és l'única que no fa servir ni _an_ ni _in_, sinó _zu_, i sense article."
         }
       ]
     },

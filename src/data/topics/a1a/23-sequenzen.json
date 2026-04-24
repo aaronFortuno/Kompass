@@ -75,6 +75,12 @@
           "body": "Quan el connector temporal obre l'oració, **inverteix** verb i subjecte. En català diem _**Després** l'Emma es troba malament_ (subjecte manté posició); en alemany cal dir _!!**Danach** geht es Emma schlecht.!!_ (verb abans del subjecte)."
         },
         {
+          "type": "callout",
+          "variant": "info",
+          "title": "Sobre l'expressió _es geht + [persona] + gut/schlecht_",
+          "body": "L'exemple _!!Danach geht es Emma schlecht.!!_ fa servir una construcció fixa de l'alemany: **_es geht jemandem gut / schlecht_** (literalment \"hi va bé / malament a algú\") per dir \"algú es troba bé / malament\". Aquí _es_ **no és un pronom referit a l'Emma**: és un _es_ impersonal, obligatori, que omple la posició del subjecte. La persona que es troba bé o malament apareix en datiu (_Emma_ aquí com a nom propi, però amb un substantiu seria _dem Mann_, _der Frau_...). Al tema A1a-32 veuràs una construcció semblant amb _gefallen_."
+        },
+        {
           "type": "explanation",
           "body": "**Els connectors també poden anar dins l'oració**, sense inversió, quan no obren l'oració:\n\n> _!!Ich komme um sechs nach Hause. Dann koche ich, danach räume ich die Küche auf.!!_\n\nAquí cada oració comença amb _dann_ / _danach_ i aplica la inversió. Però també seria possible:\n\n> _!!Ich koche dann.!!_ → _dann_ al mig, sense inversió, subjecte en posició 1.\n\nA nivell A1, ==la construcció més habitual i segura és posar el connector al principi i aplicar la inversió==."
         }

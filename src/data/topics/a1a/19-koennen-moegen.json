@@ -50,7 +50,7 @@
         },
         {
           "type": "explanation",
-          "body": "Aquesta és una de les causes d'error més habituals: un estudiant catalanoparlant tendeix a buscar un \"saber\" alemany (_wissen_) quan parla d'habilitats. **No ho facis.** Per a habilitats (idiomes, instruments, esports…) es fa servir _können_. _wissen_ es reserva per a \"saber informació\" (\"sé que plou\", \"sé la resposta\"), no \"saber fer alguna cosa\".\n\n> _!!Ich **weiß**, dass er kommt.!!_ (Sé que ve.) → _wissen_, informació.\n> _!!Ich **kann** Gitarre spielen.!!_ (Sé tocar la guitarra.) → _können_, habilitat."
+          "body": "Aquesta és una de les causes d'error més habituals: un estudiant catalanoparlant tendeix a buscar un \"saber\" alemany (_wissen_) quan parla d'habilitats. **No ho facis.** Per a habilitats (idiomes, instruments, esports…) es fa servir _können_. _wissen_ es reserva per a \"saber informació\" (\"sé que plou\", \"sé la resposta\"), no \"saber fer alguna cosa\".\n\nContrast directe, cara a cara:\n\n> _!!Ich **weiß**, dass Berlin die Hauptstadt ist.!!_ (Sé que Berlín és la capital.) → _wissen_ = fet.\n> _!!Ich **kann** nach Berlin fahren.!!_ (Sé/puc anar a Berlín.) → _können_ = possibilitat.\n\n> _!!Ich **weiß** die Antwort.!!_ (Sé la resposta.) → _wissen_ + informació.\n> _!!Ich **kann** die Antwort erklären.!!_ (Sé/puc explicar la resposta.) → _können_ + habilitat.\n\n> _!!**Weißt du**, wo sie wohnt?!!_ (Saps on viu?) → _wissen_ + informació indirecta.\n> _!!**Kannst du** Gitarre spielen?!!_ (Saps tocar la guitarra?) → _können_ + habilitat.\n\nLa pregunta mental: **si pots substituir \"sé\" per \"conec el fet / tinc la informació\"**, és _wissen_. **Si pots substituir-ho per \"sé fer / tinc l'habilitat de\"**, és _können_."
         }
       ]
     },
@@ -230,7 +230,7 @@
           "type": "callout",
           "variant": "tip",
           "title": "Regla d'or",
-          "body": "Si vols dir \"**m'agrada**\" (gust habitual), fes servir **_mögen_** (_ich mag_). Si vols dir \"**voldria / m'agradaria**\" (desig concret, educat), fes servir **_möchte_** (_ich möchte_). Sonen semblants però fan feines diferents."
+          "body": "Si vols dir \"**m'agrada**\" (gust habitual), fes servir **_mögen_** (_ich mag_). Si vols dir \"**voldria / m'agradaria**\" (desig concret, educat), fes servir **_möchte_** (_ich möchte_). Sonen semblants però fan feines diferents.\n\n**Un apunt sobre el registre:** _möchte_ és la forma **cortesa, educada, de restaurant i botiga**. Al tema **A1a-26** veuràs el seu germà directe, _wollen_ (voler), que expressa el mateix desig però de manera **més directa**: _!!Ich will einen Kaffee!!_ sona com un \"vull un cafè\" imperatiu, mentre que _!!Ich möchte einen Kaffee!!_ és el \"voldria un cafè, si us plau\". Per ara, fes servir _möchte_ sempre que demanis alguna cosa amb educació."
         }
       ]
     },

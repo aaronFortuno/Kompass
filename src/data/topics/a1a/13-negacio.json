@@ -60,7 +60,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### El prefix _un-_: negar adjectius sense _nicht_\n\nL'alemany té una eina addicional per negar **alguns adjectius**: afegir el prefix **_un-_** davant de l'adjectiu. El resultat és una paraula nova amb significat contrari.\n\n| Positiu | Amb _un-_ | Significat |\n|---|---|---|\n| _!!praktisch!!_ | _!!unpraktisch!!_ | pràctic → poc pràctic |\n| _!!richtig!!_ | _!!unrichtig!!_ | correcte → incorrecte (= _!!falsch!!_) |\n| _!!typisch!!_ | _!!untypisch!!_ | típic → atípic |\n| _!!freundlich!!_ | _!!unfreundlich!!_ | amable → antipàtic |\n| _!!bekannt!!_ | _!!unbekannt!!_ | conegut → desconegut |\n\n**Compara les dues maneres de negar un adjectiu:**\n\n> _!!Das ist **nicht** praktisch.!!_ (Això no és pràctic.) — negació amb _nicht_.\n> _!!Das ist **unpraktisch**.!!_ (Això és poc pràctic.) — adjectiu derivat amb _un-_.\n\nLes dues oracions són correctes i el seu significat és molt semblant, però no exactament idèntic:\n\n- **_nicht + adjectiu_** → és una negació neutra, purament gramatical. Simplement dius que **no** es dóna la qualitat.\n- **_un- + adjectiu_** → és una paraula ja ==lexicalitzada==, amb significat propi, sovint més **contundent** o **valoratiu**. _unpraktisch_ no és només \"no pràctic\", és \"molestament poc pràctic\"."
+          "body": "#### El prefix _un-_: negar adjectius sense _nicht_\n\nL'alemany té una eina addicional per negar **alguns adjectius**: afegir el prefix **_un-_** davant de l'adjectiu. El resultat és una paraula nova amb significat contrari.\n\n| Positiu | Amb _un-_ | Significat |\n|---|---|---|\n| _!!praktisch!!_ | _!!unpraktisch!!_ | pràctic → poc pràctic |\n| _!!richtig!!_ | _!!unrichtig!!_ | correcte → incorrecte (= _!!falsch!!_) |\n| _!!typisch!!_ | _!!untypisch!!_ | típic → atípic |\n| _!!freundlich!!_ | _!!unfreundlich!!_ | amable → antipàtic |\n| _!!bekannt!!_ | _!!unbekannt!!_ | conegut → desconegut |\n| _!!möglich!!_ | _!!unmöglich!!_ | possible → impossible |\n| _!!glücklich!!_ | _!!unglücklich!!_ | feliç → infeliç |\n\n**Compara les dues maneres de negar un adjectiu:**\n\n> _!!Das ist **nicht** praktisch.!!_ (Això no és pràctic.) — negació amb _nicht_.\n> _!!Das ist **unpraktisch**.!!_ (Això és poc pràctic.) — adjectiu derivat amb _un-_.\n\nLes dues oracions són correctes i el seu significat és molt semblant, però no exactament idèntic:\n\n- **_nicht + adjectiu_** → és una negació neutra, purament gramatical. Simplement dius que **no** es dóna la qualitat.\n- **_un- + adjectiu_** → és una paraula ja ==lexicalitzada==, amb significat propi, sovint més **contundent** o **valoratiu**. _unpraktisch_ no és només \"no pràctic\", és \"molestament poc pràctic\"."
         },
         {
           "type": "callout",
@@ -165,7 +165,10 @@
             ["!!richtig!!", "!!**unrichtig**!!", "correcte → incorrecte (= _!!falsch!!_)"],
             ["!!typisch!!", "!!**untypisch**!!", "típic → atípic"],
             ["!!freundlich!!", "!!**unfreundlich**!!", "amable → antipàtic"],
-            ["!!bekannt!!", "!!**unbekannt**!!", "conegut → desconegut"]
+            ["!!bekannt!!", "!!**unbekannt**!!", "conegut → desconegut"],
+            ["!!möglich!!", "!!**unmöglich**!!", "possible → impossible"],
+            ["!!glücklich!!", "!!**unglücklich**!!", "feliç → infeliç"],
+            ["!!interessant!!", "!!**uninteressant**!!", "interessant → gens interessant"]
           ],
           "caption": "No tots els adjectius admeten _un-_: _*ungut_ i _*unschön_ no són habituals; es diu _schlecht_ i _hässlich_ respectivament."
         }

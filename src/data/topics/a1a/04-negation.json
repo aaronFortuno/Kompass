@@ -14,7 +14,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "Dir **no** és tan bàsic com dir sí. A la vida real, bona part del que fem servir per presentar-nos o descriure la nostra situació és **negació**: _no estic casat/da_, _no tinc germans_, _no visc a Berlín_, _no treballo els diumenges_. Si només saps fer oracions afirmatives, et quedes a mig parlar.\n\nEn català i en castellà la negació és còmoda: tens **un** mot màgic, _no_, i el poses davant del verb. Fi de la història.\n\n> _No treballo._ / _No trabajo._\n\nEn alemany, en canvi, la negació té **dues eines** diferents, i triar-ne l'una o l'altra depèn **del que estàs negant**:\n\n- **_!!nicht!!_** → nega **verbs**, **adjectius**, o elements concrets de l'oració (un lloc, un moment, una qualitat).\n- **_!!kein / keine!!_** → nega **substantius** que, en afirmatiu, portarien _ein / eine_ o cap article (és a dir, \"no tenir cap X\", \"no ser cap X\").\n\nNo és difícil, però és una decisió que cal fer cada cop. En aquesta lliçó aprendràs **quan triar cadascuna** i **on col·locar-les** dins l'oració. Amb això cobreixes el 95% de les negacions que necessitaràs a l'A1."
+          "body": "Dir **no** és tan bàsic com dir sí. A la vida real, bona part del que fem servir per presentar-nos o descriure la nostra situació és **negació**: _no estic casat/da_, _no tinc germans_, _no visc a Berlín_, _no treballo els diumenges_. Si només saps fer oracions afirmatives, et quedes a mig parlar.\n\nEn català i en castellà la negació és còmoda: tens **un** mot màgic, _no_, i el poses davant del verb. Fi de la història.\n\n> _No treballo._ / _No trabajo._\n\nEn alemany, en canvi, la negació té **dues eines** diferents, i triar-ne l'una o l'altra depèn **del que estàs negant**:\n\n- **_!!nicht!!_** → nega **verbs**, **adjectius**, o elements concrets de l'oració (un lloc, un moment, una qualitat). També s'usa quan hi ha un substantiu amb article definit (_der/die/das_).\n- **_!!kein / keine!!_** → nega **substantius** que, en afirmatiu, portarien _ein / eine_ o cap article (és a dir, \"no tenir cap X\", \"no ser cap X\").\n\nContrast en una línia:\n\n> _!!Ich habe **ein** Auto.!!_ → _!!Ich habe **kein** Auto.!!_ (indefinit → _kein_)\n> _!!**Das** Auto ist neu.!!_ → _!!**Das** Auto ist **nicht** neu.!!_ (definit → _nicht_)\n\nNo és difícil, però és una decisió que cal fer cada cop. En aquesta lliçó aprendràs **quan triar cadascuna** i **on col·locar-les** dins l'oració. Amb això cobreixes el 95% de les negacions que necessitaràs a l'A1."
         },
         {
           "type": "callout",
@@ -182,7 +182,7 @@
             ["Un lloc amb preposició", "_!!nicht!!_ (davant de la preposició)", "!!Ich komme **nicht** aus Berlin.!!"],
             ["Un substantiu que en afirmatiu portaria _ein/eine_", "_!!kein / keine!!_", "!!Ich habe **kein** Auto.!!"],
             ["Un substantiu sense article (plural, professió)", "_!!kein / keine!!_", "!!Ich habe **keine** Kinder.!!"],
-            ["Un substantiu amb article definit (_der/die/das_)", "_!!nicht!!_", "!!Ich sehe das Buch **nicht**.!!"]
+            ["Un substantiu amb article definit (_der/die/das_)", "_!!nicht!!_", "!!Das Auto ist **nicht** neu.!!"]
           ]
         }
       ]
