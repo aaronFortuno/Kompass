@@ -58,12 +58,13 @@
         { "personal": "du", "possessive": "**dein** Bruder / **deine** Schwester", "gloss": "el teu germà / la teva germana" },
         { "personal": "er", "possessive": "**sein** Sohn / **seine** Tochter", "gloss": "el seu fill (d'ell) / la seva filla (d'ell)" },
         { "personal": "sie (ella)", "possessive": "**ihr** Sohn / **ihre** Tochter", "gloss": "el seu fill (d'ella) / la seva filla (d'ella)" },
-        { "personal": "wir", "possessive": "**unser** Kind / **unsere** Kinder", "gloss": "el nostre fill / els nostres fills" }
+        { "personal": "wir", "possessive": "**unser** Kind / **unsere** Kinder", "gloss": "el nostre fill / els nostres fills" },
+        { "personal": "Sie (formal)", "possessive": "**Ihr** Vater / **Ihre** Mutter", "gloss": "el seu pare / la seva mare (vostè)" }
       ],
       "callout": {
         "variant": "tip",
         "title": "Veure-ho sistemàtic",
-        "body": "El mateix patró d'**arrel + terminació** que vas veure al capítol de possessius, aplicat aquí a paraules que ja tenen sentit emocional. _sein Vater_ (el seu pare d'ell) i _ihr Vater_ (el seu pare d'ella) són la mateixa forma arrel-terminació."
+        "body": "El mateix patró d'**arrel + terminació** que vas veure al capítol de possessius, aplicat aquí a paraules que ja tenen sentit emocional. _sein Vater_ (el seu pare d'ell) i _ihr Vater_ (el seu pare d'ella) són la mateixa forma arrel-terminació. Recorda també _Ihr_ (amb majúscula) per al tracte formal (vostè)."
       }
     },
     {
@@ -91,7 +92,7 @@
     },
     {
       "id": "politica",
-      "kind": "synthesis",
+      "kind": "narrative",
       "heading": "La família política",
       "lead": "Sogres, cunyats... amb el prefix **Schwieger-**.",
       "body": "El patró és transparent: _Vater_ → _Schwiegervater_ (sogre), _Mutter_ → _Schwiegermutter_ (sogra). Les famílies recompostes fan servir **Stief-** (madrastra, padrastre, etc.).",

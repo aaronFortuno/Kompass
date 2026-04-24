@@ -327,11 +327,10 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-V3 · Familie
 
 - **Contingut:**
-  - [ALTA] [A1a-V3 · politica] Step marcat com `kind: "synthesis"` amb `lead` i `body`, però no és l'últim step. És l'únic `synthesis` intermedi de tots els temes → hauria de formar part del synthesis final o canviar de kind.
-  - [MITJA] [A1a-V3 · possessius-recap] El bloc "pairs" no menciona `Sie` formal/plural (_Ihr/Ihre_).
 - **Tècnic:**
 - **Estructural:**
-  - [MITJA] [A1a-V3] 11 steps; consolidar "politica" dins del synthesis final reduiria una parada intermèdia al reader.
+
+*(Descartat: "consolidar politica dins del synthesis final" — són blocs pedagògicament diferents (família política = lèxic nou; synthesis final = recap global). Mantenir-los separats és raonable.)*
 
 ### A1a-V4 · Länder
 
