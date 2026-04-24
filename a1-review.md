@@ -28,6 +28,11 @@ Format suggerit per apunt:
 Per copiar la referència ràpidament, recorda la icona de copiar del
 comptador del reader (p. ex. `A1a-5 · synthesis · 3/4`).
 
+Els apunts generats per la passada automàtica d'agents de revisió
+pedagògica porten una marca de prioritat `[ALTA]` / `[MITJA]` / `[BAIXA]`
+al davant, per ajudar a prioritzar. Són un **pre-filtre**, no veritat
+absoluta: cal confirmar manualment abans d'aplicar.
+
 ---
 
 ## A1a
@@ -44,7 +49,7 @@ comptador del reader (p. ex. `A1a-5 · synthesis · 3/4`).
 ### A1a-1 · Pronomen
 
 - **Contingut:**
-- **Tècnic:***
+- **Tècnic:**
 - **Estructural:**
 
 ### A1a-2 · Satzstruktur
@@ -62,6 +67,8 @@ comptador del reader (p. ex. `A1a-5 · synthesis · 3/4`).
 ### A1a-4 · Nein/Nicht/Kein
 
 - **Contingut:**
+  - [ALTA] [A1a-4 · nicht-vs-kein · taula 4.3] La taula de síntesi inclou un exemple amb acusatiu (!!Ich sehe das Buch **nicht**.!!) quan el tema només ha cobert nominatiu. Els articles acusatius no es presenten fins a A1a-28 → canviar l'exemple a nominatiu o marcar-lo com a "avanç".
+  - [MITJA] [A1a-4 · intro] La distinció _nicht_ / _kein_ queda circularment explicada ("substantius que en afirmatiu portarien _ein/eine_ o cap article") → afegir exemples de contrast _nicht + definit_ vs _kein + indefinit_.
 - **Tècnic:**
 - **Estructural:**
 
@@ -88,17 +95,248 @@ comptador del reader (p. ex. `A1a-5 · synthesis · 3/4`).
 - **Contingut:**
 - **Tècnic:**
 - **Estructural:**
+  - [MITJA] [A1a-8 · word-order] La "posició 0" per a la conjunció s'introdueix sense recordar que el marc de posicions va ser definit a A1a-2 → afegir referència breu.
 
 ### A1a-9 · Komposita
+
+- **Contingut:**
+  - [MITJA] [A1a-9 · intro · Fugenelemente] El text diu "a A1 no has de predir quin _Fugenelement_ porta cada paraula", però la taula 9.2 lista els 5 més freqüents de manera expositiva → aclarir que la taula és només referència (reconeixement), no producció.
+- **Tècnic:**
+- **Estructural:**
+
+### A1a-10 · Wortakzent
+
+- **Contingut:**
+  - [ALTA] [A1a-10 · ableitungen-accent] Els prefixos accentuats (_an-, auf-, ein-_) es presenten com a "separables", però el tema dels verbs separables no es veu fins a A1a-25 → afegir nota ("els estudiaràs a fons al tema 25") o triar exemple que no sigui en un verb separable.
+  - [BAIXA] [A1a-10 · contrast amb castellà · línia "Telefon"] L'accent final de _Telefon_ es presenta categòric; en alemany estàndard és més neutre/ambigu.
+- **Tècnic:**
+- **Estructural:**
+
+### A1a-11 · Intonation
+
+- **Contingut:**
+  - [ALTA] [A1a-11] "En alemany les preguntes de sí/no pugen, mentre que en català totes les preguntes pugen" és inexacte: en català les W-preguntes no pugen necessàriament. Matissar el contrast.
+  - [MITJA] [A1a-11] S'usa `!!text!!` com a marcació fonètica sense haver-ne explicat abans aquesta notació.
+- **Tècnic:**
+  - [MITJA] [A1a-11] Es passa de dos quick-checks directament a quatre assessments sense síntesi tabulada prèvia de les regles.
+- **Estructural:**
+  - [MITJA] [A1a-11] "Paranys habituals" al penúltim step; natural al final o integrat dins de cada secció temàtica.
+
+### A1a-12 · Der Plural
+
+- **Contingut:**
+  - [ALTA] [A1a-12 · pitfalls] "L'Umlaut no avisa" però no es clarifica que cap dels sis patrons és 100% predictible → deixar explícit que sempre cal apuntar el plural del diccionari.
+  - [MITJA] [A1a-12 · taula 12.2] La caption "(no es pot)" per al vocal /i/ seria més coherent redactada "sense Umlaut".
+- **Tècnic:**
+  - [BAIXA] [A1a-12] Ús de `!!...!!` per marcar plurals es barreja amb altres marques sense criteri clar.
+- **Estructural:**
+
+### A1a-13 · Die Negation (avançat)
+
+- **Contingut:**
+  - [ALTA] [A1a-13] La regla senzilla d'A1a-4 sembla contradir-se amb matissos d'A1a-13 (articles definits → _nicht_, possessius → _nicht_). Sense repàs explícit d'A1a-4, desconcerta → taula comparada A1a-4 ↔ A1a-13 o recapitulació sòlida.
+  - [MITJA] [A1a-13 · prefix un-] Secció teòrica; afegir bloc amb adjectius _un-_ d'ús A1 freqüent.
+- **Tècnic:**
+- **Estructural:**
+  - [MITJA] [A1a-13] Quatre assessments al final sense quick-check intermedi que validi la distinció _nicht_/_kein_.
+
+### A1a-14 · Deklinieren (presentació)
+
+- **Contingut:**
+  - [ALTA] [A1a-14 · identificar funció] Els 5 passos per identificar la funció sintagmàtica són genèrics; afegir walkthrough complet amb oració real (p. ex. _Der Mann sieht die Frau_).
+  - [MITJA] [A1a-14 · n-Deklination] _Junge/Student/Herr_ es presenta com a "petita excepció"; és una subcategoria rellevant, mereix més pes o nota "t'ho trobaràs diverses vegades".
+- **Tècnic:**
+  - [MITJA] [A1a-14 · taula 14.2] Només mostra declinació de _der_ masculí; afegir files femenina i neutra per completar la visió del primer cas.
+- **Estructural:**
+
+### A1a-15 · Vokalwechsel
+
+- **Contingut:**
+  - [ALTA] [A1a-15 · e→i · nehmen] "Sorpresa ortogràfica" poc explicada; mereixeria més sobre el **per què** cau la _h_ i es dobla la _m_.
+  - [MITJA] [A1a-15 · contrast amb català] La comparació amb _venir_ és imprecisa: _venir_ català és irregular de soca-rel; _nehmen_ és regular amb Umlaut.
+- **Tècnic:**
+- **Estructural:**
+  - [MITJA] [A1a-15] Els quatre patrons es presenten en paral·lel sense prioritzar el més freqüent (_e→i_). Reordenar per freqüència.
+
+### A1a-16 · Gustos i preferències
+
+- **Contingut:**
+  - [ALTA] [A1a-16 · mögen vs möchte] No s'explica per què _mögen + infinitiu_ no es fa servir i no s'introdueix _möchte + infinitiu_ com a alternativa → error sistemàtic previsible.
+  - [MITJA] [A1a-16 · finden + adj] Exemple _Ich finde Pizza lecker_ sembla suggerir que _Pizza_ va sense article sempre; aclarir que és acusatiu i que portaria article en context (_die Pizza_).
+- **Tècnic:**
+- **Estructural:**
+  - [MITJA] [A1a-16] Manca quick-check intermedi que contrasti _mögen_ (cosa) vs _gern_ (acció) abans dels assessments.
+
+### A1a-17 · gut-besser / gern-lieber
+
+- **Contingut:**
+  - [MITJA] [A1a-17 · contrast gut/gern] La confusió típica (_Ich tanze gut_ ≠ _Ich tanze gern_) mereix més protagonisme abans del _check-contrast_.
+  - [BAIXA] [A1a-17 · intro] Indicar explícitament quan apareixeran els adjectius regulars (A1a-31).
+- **Tècnic:**
+  - [MITJA] [A1a-17 · besser] Pronunciació en IPA sense haver introduït l'alfabet fonètic al curs.
+- **Estructural:**
+
+### A1a-18 · Satzklammer
+
+- **Contingut:**
+  - [ALTA] [A1a-18 · inversió · taula 18.1] Només es mostra una combinació de posicions; contrast explícit amb la forma incorrecta *_Am Wochenende ich spiele Fußball_ ajudaria.
+  - [MITJA] [A1a-18 · analogia abraçada] Els estudiants poden pensar que verb conjugat i segona peça s'abracen entre si, quan en realitat **envolten** el contingut. Infografia ajudaria.
+  - [MITJA] [A1a-18 · preguntes amb Satzklammer] _Tango kann sie sehr gut tanzen_ no es transforma a _Kann sie…?_; la inversió interrogativa mereix exemple propi.
+- **Tècnic:**
+- **Estructural:**
+  - [ALTA] [A1a-18] Depèn fortament d'A1a-2; la recapitulació V2 és insuficient per a qui hagi saltat o oblidat A1a-2.
+
+### A1a-19 · können i mögen
+
+- **Contingut:**
+  - [ALTA] [A1a-19 · können vs wissen] No es contrasta _wissen_ (saber informació) vs _können_ (saber fer). Error molt comú (_*Ich weiß Gitarre spielen_) → taula amb _Ich weiß, was X ist_ vs _Ich kann X bauen_.
+  - [MITJA] [A1a-19 · möchte] Es menciona com a Konjunktiv II però sense aclarir el registre cortès vs _will_ directe (A1a-26).
+  - [MITJA] [A1a-19 · möchte vs mag] _möchte_ manté _-e_ als singulars; _mag_ no. Taula paral·lela explícita milloraria la comparació.
+- **Tècnic:**
+- **Estructural:**
+  - [MITJA] [A1a-19] Quatre assessments al final sense check intermedi que forci distingir _können_ (habilitat) vs _mögen_ (preferència).
+
+### A1a-20 · Adverbis temporals
+
+- **Contingut:**
+  - [ALTA] [A1a-20 · jeden/jede/jedes] Es presenta com a declinat en acusatiu, però l'acusatiu no es veu fins a A1a-28/32 → presentar-ho com a fórmules fixes a A1.
+  - [MITJA] [A1a-20 · morgen/morgens/heute Abend] La combinació amb _heute_ apareix a A1a-21; la connexió endavant hauria de quedar clara aquí.
+  - [MITJA] [A1a-20 · TeKaMoLo] Regla esmentada però no practicada en cap exercici.
+- **Tècnic:**
+  - [BAIXA] [A1a-20 · diàlegs] Els exemples _Wie oft…? — …_ no es distingeixen visualment del text normal.
+- **Estructural:**
+
+### A1a-21 · Zeitangaben
+
+- **Contingut:**
+  - [ALTA] [A1a-21 · quadre-resum · _zu Mittag_] _zu_ apareix per primera vegada dins la taula sense avís; es confon amb _am/im_ → callout aclarint que _zu_ és diferent (no es contreu).
+  - [MITJA] [A1a-21 · am-parts-dia] La taula inclou _zu Mittag_ enmig del patró _am_ sense separar-ne la singularitat.
+- **Tècnic:**
+- **Estructural:**
+
+### A1a-22 · Uhrzeit
+
+- **Contingut:**
+  - [ALTA] [A1a-22 · formal-24h] El patró [hora] Uhr [minuts] no s'il·lustra amb una cascada (9:00, 9:05, 9:14, 9:30, 9:50) que faria visible que els minuts sempre van darrere d'_Uhr_.
+  - [MITJA] [A1a-22 · taula 14:00-15:00] Taula densa (12 files) amb duplicació per minuts 20 i 40. Per A1 simplificar a la variant més neta i nota sobre alternatives.
+  - [BAIXA] [A1a-22 · pitfalls · 4] Aclarir més nítidament que _um_ només va amb verbs d'acció, no amb _Wie spät ist es?_.
+- **Tècnic:**
+- **Estructural:**
+
+### A1a-23 · Sequenzen
+
+- **Contingut:**
+  - [ALTA] [A1a-23 · v2 · _Danach geht es Emma schlecht_] _es_ és un pronom anticipatori de la construcció fixa _es geht [+persona]_; sense aclarir-ho sembla que és el subjecte real.
+- **Tècnic:**
+- **Estructural:**
+
+### A1a-24 · schon/noch/erst
+
+- **Contingut:**
+  - [ALTA] [A1a-24 · contrast-global · fila _erst_] Les traduccions "poc / tard / tot just" no són igualment freqüents i depenen del context (durada vs punt temporal) → dividir la fila en dos casos o exemples contrastats.
+  - [MITJA] [A1a-24 · terminologia _erst_] Varia entre "durada curta / hora tardana" i "durada / poc". Uniformitzar (_durada_ vs _moment puntual_).
+- **Tècnic:**
+- **Estructural:**
+
+### A1a-25 · Trennbare Verben
+
+- **Contingut:**
+  - [MITJA] [A1a-25 · inseparables-contrast · besuchen] La traducció "(visitar)" podria portar nota connectant amb l'acusatiu implícit (A1a-27).
+  - [BAIXA] [A1a-25 · intro] No es posicionen els separables com "cas estrella" de la Satzklammer, que són molt més freqüents que modals a A1.
+- **Tècnic:**
+- **Estructural:**
+
+### A1a-26 · Modalverben
+
+- **Contingut:**
+  - [MITJA] [A1a-26 · taula conjugació wollen] Verificar que els `==destacats==` marquen només les vocals canviades (_i_ singular, _o_ plural).
+  - [MITJA] [A1a-26 · dürfen/können] No es referencia explícitament A1a-19 on es va veure _können_.
+  - [ALTA] [A1a-26 · sollen interrogatiu] _Soll ich dich abholen?_ s'explica però no es contrasta amb _Möchtest du, dass ich dich abhole?_. Aclarir que _sollen_ en pregunta és la forma directa/alemanya de proposar.
+- **Tècnic:**
+- **Estructural:**
+
+### A1a-27 · Verben mit Nominativ und Akkusativ
+
+- **Contingut:**
+  - [MITJA] [A1a-27 · taula verbs típics] _möchten_ va amb acusatiu (_Ich möchte einen Kaffee_); callout aclarint que _möchten_ sense infinitiu és verb transitiu normal (↔ _möchten + infinitiu_ forma Satzklammer).
+- **Tècnic:**
+- **Estructural:**
+
+### A1a-28 · Artikel im Nominativ und Akkusativ
 
 - **Contingut:**
 - **Tècnic:**
 - **Estructural:**
 
-### A1a-10..36
+### A1a-29 · Mengenangaben
 
-(Afegeix-ne les seccions que vagis trobant. No cal crear-les totes
-per endavant — només les que tinguin feedback real.)
+- **Contingut:**
+  - [ALTA] [A1a-29 · verpackungen · Bund] La taula mostra el plural _die Bund_; el plural estàndard és _die Bünde_ (amb Umlaut). Error a corregir.
+  - [ALTA] [A1a-29 · regla-central · _Netz_] _Netz_ es presenta sense aclarir que és la bosseta de xarxa del supermercat (taronges, patates); un catalanoparlant pensaria "xarxa" genèrica.
+  - [MITJA] [A1a-29 · plural-mesures] La regla "mesures invariables" és correcta; convé notar que el col·loquial admet _zwei Kilos_ en algunes regions.
+- **Tècnic:**
+- **Estructural:**
+
+### A1a-30 · Es gibt
+
+*(No cobert per la passada automàtica; pendent de revisió.)*
+
+- **Contingut:**
+- **Tècnic:**
+- **Estructural:**
+
+### A1a-31 · Komparativ und Superlativ
+
+- **Contingut:**
+  - [ALTA] [A1a-31 · intro] Referència a A1a-17 sense apuntar a un step concret → afegir referència explícita.
+  - [MITJA] [A1a-31 · taula 31.2] Afegir frase que digui "tot el que no és _gut_/_gern_ segueix els patrons d'aquest tema".
+  - [MITJA] [A1a-31 · pista fonètica Umlaut] "Com la _e_ oberta del català" insuficient sense àudio de contrast _a_ vs _ä_.
+- **Tècnic:**
+  - [MITJA] [A1a-31 · callout "doble funció de -er"] Densa; partir en dues línies.
+- **Estructural:**
+
+### A1a-32 · gefallen/finden/mögen
+
+- **Contingut:**
+  - [ALTA] [A1a-32 · intro] S'introdueixen els pronoms datius (_mir, dir, ihm/ihr…_) sense que cap tema anterior els hagi presentat sistemàticament → mini-taula prèvia o reenquadrar com a introducció avançada.
+  - [ALTA] [A1a-32 · Wie findest du…?] Exercicis sense resposta amb pronom acusatiu (_Ich finde ihn/sie/es…_). Afegir exercici dedicat.
+  - [MITJA] [A1a-32 · contrast CA/ES/DE] Afegir fila que expliqui el paral·lelisme (datiu + _gefallen_ = "agradar" reflex en cat/cast).
+- **Tècnic:**
+- **Estructural:**
+
+### A1a-33 · Ordinalzahlen
+
+- **Contingut:**
+  - [BAIXA] [A1a-33 · siebte/siebente] Ambigu: aclarir que _siebte_ és estàndard, _siebente_ arcaica/dialectal.
+- **Tècnic:**
+- **Estructural:**
+  - [MITJA] [A1a-33 · dates] Manca exercici d'escriptura de dates reals (aniversari, festiu) més enllà del reconeixement.
+
+### A1a-34 · Präpositionen mit Dativ
+
+- **Contingut:**
+  - [ALTA] [A1a-34] Marca de plural _-n_ en datiu (_den Kindern, den Freunden_) introduïda sense referència a A1a-5 (plural) → callout o referència explícita.
+  - [MITJA] [A1a-34 · bei ≠ mit] Contrast clar, però només a callout; l'exemple bilingüe hauria d'estar al text principal.
+- **Tècnic:**
+- **Estructural:**
+  - [ALTA] [A1a-34] Manca secció "ús en context" que vinculi 4-5 preposicions en un mini-text narratiu.
+
+### A1a-35 · Wie groß/hoch/teuer
+
+- **Contingut:**
+  - [MITJA] [A1a-35 · lang vs lange] Cap exercici contrasta longitud vs durada → afegir.
+- **Tècnic:**
+  - [BAIXA] [A1a-35 · ordre de paraules] Teoria densa; afegir desglossat visual (_Wie alt | bist | du | ?_).
+- **Estructural:**
+
+### A1a-36 · Abkürzungen
+
+- **Contingut:**
+  - [MITJA] [A1a-36 · habitacions] Callout explica 2-ZKB ≠ 4 peces però no contrasta el recompte alemany vs català explícitament.
+  - [MITJA] [A1a-36 · KM/WM] Aclarir excepció: si l'anunci dóna _WM_, no cal buscar _NK_ per separat.
+- **Tècnic:**
+- **Estructural:**
+  - [MITJA] [A1a-36] Manca exercici holístic de lectura d'anunci real amb 3-4 preguntes (preu, superfície, habitacions, balcó).
 
 ---
 
@@ -108,9 +346,14 @@ per endavant — només les que tinguin feedback real.)
 
 - **Contingut:**
   - [synthesis · àudio "play all"] pendent — feature nova per un commit dedicat.
+  - [ALTA] [A1a-V1 · check-und] L'exercici `A1a-V1-ex-01` està referenciat però no existeix (no hi ha carpeta `src/data/exercises/A1a/v1/` creada).
+  - [MITJA] [A1a-V1 · nucleo-0-12 · tabs callout] La nota sobre _zwo_ al telèfon no té àudio il·lustratiu; la resta de temes de vocabulari (V5-V7) sí incorporen àudios/imatges als tabs.
+  - [MITJA] [A1a-V1 · step "und"] Els paranys sobre l'ordenació (`einundzwanzig` vs `zwanzigundeins`) vénen només als pitfalls; la interferència és típica i caldria mostrar-la a l'inici del step "und".
 - **Tècnic:**
+  - [BAIXA] [A1a-V1 · synthesis · taula 3] Repetició de "20" en dues files; deixar-ho només una vegada.
 - **Estructural:**
   - *(Les taules de `teens` i `decenas` ja tenen tots els nombres audibles. El comentari queda cobert.)*
+  - [MITJA] [A1a-V1] Entre "teens" i "decenas" manca un quick-check per consolidar; ara només n'hi ha un tardà entre "und" i "grandes".
 
 ### A1a-V2 · Alphabet
 
@@ -121,30 +364,42 @@ per endavant — només les que tinguin feedback real.)
 ### A1a-V3 · Familie
 
 - **Contingut:**
+  - [ALTA] [A1a-V3 · politica] Step marcat com `kind: "synthesis"` amb `lead` i `body`, però no és l'últim step. És l'únic `synthesis` intermedi de tots els temes → hauria de formar part del synthesis final o canviar de kind.
+  - [MITJA] [A1a-V3 · possessius-recap] El bloc "pairs" no menciona `Sie` formal/plural (_Ihr/Ihre_).
 - **Tècnic:**
 - **Estructural:**
+  - [MITJA] [A1a-V3] 11 steps; consolidar "politica" dins del synthesis final reduiria una parada intermèdia al reader.
 
 ### A1a-V4 · Länder
 
 - **Contingut:**
+  - [ALTA] [A1a-V4 · kommen-aus · callout] Adverteix que no s'han dominat els casos, però el tema usa datiu profusament (_aus der Schweiz_, _aus dem Iran_) → referència explícita a A1b-19.
+  - [MITJA] [A1a-V4 · llengues] _Meine Muttersprache ist Katalanisch_ assumeix coneixement de _Muttersprache_; glossa o traducció ràpida.
 - **Tècnic:**
 - **Estructural:**
 
 ### A1a-V5 · Farben
 
 - **Contingut:**
+  - [MITJA] [A1a-V5 · extendido · callout] Menciona declinació adjectiva (orange, rosa, lila) sense haver introduït el concepte; la nota que remet a A2 és encertada.
+  - [BAIXA] [A1a-V5 · synthesis · taula] Inconsistència menor: la nota "Préstec; invariable" només apareix per `lila`, no per `orange`/`rosa`.
 - **Tècnic:**
 - **Estructural:**
 
 ### A1a-V6 · Essen und Trinken
 
 - **Contingut:**
+  - [ALTA] [A1a-V6 · essen-trinken-verben · callout] _du isst_ (doble s, doble t) vs _du ist_ es distingeix ortogràficament però no explica l'arrel del parany ortofonètic; contrastos explícits ajudarien.
+  - [MITJA] [A1a-V6 · intro] "Aliments bàsics (I)" vs "(II)" sense criteri clar a l'intro.
 - **Tècnic:**
 - **Estructural:**
+  - [MITJA] [A1a-V6] Desequilibri: Aliments (I) 8 items, Aliments (II) 9 items. Reordenar a ~13-14 per grup.
 
 ### A1a-V7 · Tagesablauf
 
 - **Contingut:**
+  - [ALTA] [A1a-V7 · jornada-model · callout] _Um 8 Uhr gehe ich zur Arbeit_ i _Zum Schluss gehe ich ins Bett_ no s'expliquen com a construccions fixes _gehen + zu + datiu / in + acusatiu_. Fàcil confondre amb verbs de moviment genèrics.
+  - [MITJA] [A1a-V7 · verbs-separables] El pitfall _*Ich aufstehe_ (parany bàsic) hauria d'aparèixer dins del step de separables, no diferit al final.
 - **Tècnic:**
 - **Estructural:**
 
