@@ -424,12 +424,10 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1b-21 · Verbs amb/sense Ortswechsel
 
 - **Contingut:**
-  - [MITJA] [A1b-21 · synthesis · taula 21.7] Mapa mental incomplet; la fila amb _legen_ deixa la columna PERMANÈNCIA buida en comptes de "—".
-  - [BAIXA] [A1b-21 · contrastos-subtils] _schwimmen ans Ufer_ amb Wechsel és correcte però el _Wohin?_ aquí és direcció/goal, caldria aclarir.
 - **Tècnic:**
-  - [MITJA] [A1b-21] 7 assessments seguits sense quick-checks intermedis entre parelles de verbs.
 - **Estructural:**
-  - [BAIXA] [A1b-21] El step "mapa-mental" (21.7) és redundant amb la síntesi final (21.8).
+
+*(Descartats: (a) el text de contrastos-subtils ja explica _schwimmen im See_ vs _schwimmen ans Ufer_ com a contrast estàtic/direccional — prou clar; (b) els 7 exercicis ja inclouen un quick-check intermedi (check-1-usgebrauch-gestern); (c) el step mapa-mental i la síntesi fan funcions diferents — mapa per memoritzar el diagrama mental abans dels pitfalls, síntesi per consolidar al final.)*
 
 ### A1b-22 · Lokalisierung im Raum
 
