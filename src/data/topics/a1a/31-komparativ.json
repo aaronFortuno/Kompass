@@ -44,7 +44,7 @@
           "type": "callout",
           "variant": "warning",
           "title": "Atenció a la doble funció de _-er_",
-          "body": "La terminació _-er_ del comparatiu és la mateixa lletra que apareix també en declinacions (per exemple _ein schöner Mann_, on _-er_ marca nominatiu masculí). **No són el mateix _-er_**: el del comparatiu s'afegeix al lexema sempre igual, sigui quin sigui el gènere o cas. De fet, l'oració típica del comparatiu és _X ist schöner als Y_, amb el verb _sein_, i aquí l'adjectiu va **sense declinar** — només amb _-er_ comparatiu."
+          "body": "La terminació _-er_ apareix a dos llocs diferents:\n\n- _-er_ **comparatiu** (el d'aquest tema): _X ist **schöner** als Y_ → marca que l'adjectiu està en grau comparatiu.\n- _-er_ **de declinació** (que veuràs més endavant): _ein **schöner** Mann_ → marca nominatiu masculí singular.\n\nSón la mateixa lletra però dues funcions **independents**. A l'A1 treballes sobretot el predicatiu (_X ist schöner als Y_, amb el verb _sein_), i aquí l'adjectiu va **sense declinar** — només amb _-er_ comparatiu."
         }
       ]
     },

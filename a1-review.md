@@ -258,12 +258,10 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-31 · Komparativ und Superlativ
 
 - **Contingut:**
-  - [ALTA] [A1a-31 · intro] Referència a A1a-17 sense apuntar a un step concret → afegir referència explícita.
-  - [MITJA] [A1a-31 · taula 31.2] Afegir frase que digui "tot el que no és _gut_/_gern_ segueix els patrons d'aquest tema".
-  - [MITJA] [A1a-31 · pista fonètica Umlaut] "Com la _e_ oberta del català" insuficient sense àudio de contrast _a_ vs _ä_.
 - **Tècnic:**
-  - [MITJA] [A1a-31 · callout "doble funció de -er"] Densa; partir en dues línies.
 - **Estructural:**
+
+*(Descartats: (a) la intro ja cita A1a-17 explícitament amb les dues tríades; (b) la síntesi (punt 6) i la taula 31.2 (fila "Totalment irregular (A1a-17)") ja aclareixen que la resta segueix els patrons d'aquest tema; (c) àudio de contrast a/ä és nice-to-have però necessita TTS nou.)*
 
 ### A1a-32 · gefallen/finden/mögen
 
