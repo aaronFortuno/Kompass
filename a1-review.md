@@ -155,11 +155,10 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-17 · gut-besser / gern-lieber
 
 - **Contingut:**
-  - [MITJA] [A1a-17 · contrast gut/gern] La confusió típica (_Ich tanze gut_ ≠ _Ich tanze gern_) mereix més protagonisme abans del _check-contrast_.
-  - [BAIXA] [A1a-17 · intro] Indicar explícitament quan apareixeran els adjectius regulars (A1a-31).
 - **Tècnic:**
-  - [MITJA] [A1a-17 · besser] Pronunciació en IPA sense haver introduït l'alfabet fonètic al curs.
 - **Estructural:**
+
+*(Descartat: "més protagonisme" al contrast gut/gern. Ja hi ha un step dedicat `contrast-gut-gern` amb taula i callout abans del `check-contrast`.)*
 
 ### A1a-18 · Satzklammer
 
