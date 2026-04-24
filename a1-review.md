@@ -88,12 +88,11 @@ absoluta: cal confirmar manualment abans d'aplicar.
 - **Tècnic:**
 - **Estructural:**
 
-### A1a-8 · Verbs separables
+### A1a-8 · Konjunktionen
 
 - **Contingut:**
 - **Tècnic:**
 - **Estructural:**
-  - [MITJA] [A1a-8 · word-order] La "posició 0" per a la conjunció s'introdueix sense recordar que el marc de posicions va ser definit a A1a-2 → afegir referència breu.
 
 ### A1a-9 · Komposita
 
