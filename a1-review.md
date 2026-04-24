@@ -282,11 +282,10 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-34 · Präpositionen mit Dativ
 
 - **Contingut:**
-  - [ALTA] [A1a-34] Marca de plural _-n_ en datiu (_den Kindern, den Freunden_) introduïda sense referència a A1a-5 (plural) → callout o referència explícita.
-  - [MITJA] [A1a-34 · bei ≠ mit] Contrast clar, però només a callout; l'exemple bilingüe hauria d'estar al text principal.
 - **Tècnic:**
 - **Estructural:**
-  - [ALTA] [A1a-34] Manca secció "ús en context" que vinculi 4-5 preposicions en un mini-text narratiu.
+
+*(Descartat: _bei ≠ mit_ al callout ja és prou visible — moure'l al text principal allargaria sense benefici clar.)*
 
 ### A1a-35 · Wie groß/hoch/teuer
 

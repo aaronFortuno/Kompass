@@ -76,7 +76,7 @@
         },
         {
           "type": "explanation",
-          "body": "Observa bé:\n\n- **Masculí i neutre comparteixen forma en datiu**: tots dos fan ==**dem**==.\n- **El femení és la forma _der_**, que en nominatiu era masculí — compte amb la confusió.\n- **El plural afegeix _-n_ al final del substantiu** (a més de l'article _den_): _die Kinder_ → ==_den Kindern_==. Si el substantiu ja acaba en _-n_ o _-s_, no se'n posa un altre.\n\n**Beispiele:**\n\n- _!!mit ==dem== Auto!!_ (el cotxe, neutre)\n- _!!mit ==der== Freundin!!_ (l'amiga, femení)\n- _!!mit ==dem== Bus!!_ (el bus, masculí)\n- _!!mit ==den== Freunden!!_ (els amics, plural → _Freunde_ + _-n_)"
+          "body": "Observa bé:\n\n- **Masculí i neutre comparteixen forma en datiu**: tots dos fan ==**dem**==.\n- **El femení és la forma _der_**, que en nominatiu era masculí — compte amb la confusió.\n- **El plural afegeix _-n_ al final del substantiu** (a més de l'article _den_): _die Kinder_ → ==_den Kindern_==. Aquesta és una marca de plural datiu que apareix **per primera vegada** aquí; els plurals bàsics (sense _-n_) els vas veure a **A1a-5**. Si el substantiu ja acaba en _-n_ o _-s_, no se'n posa un altre (_!!mit den Frauen!!_, _!!mit den Autos!!_).\n\n**Beispiele:**\n\n- _!!mit ==dem== Auto!!_ (el cotxe, neutre)\n- _!!mit ==der== Freundin!!_ (l'amiga, femení)\n- _!!mit ==dem== Bus!!_ (el bus, masculí)\n- _!!mit ==den== Freunden!!_ (els amics, plural → _Freunde_ + _-n_)"
         },
         {
           "type": "callout",
@@ -127,6 +127,15 @@
       "id": "check-prep-meaning",
       "blocks": [
         { "type": "exercise", "exerciseId": "A1a-34-ex-02", "variant": "quick-check" }
+      ]
+    },
+    {
+      "id": "ús-en-context",
+      "blocks": [
+        {
+          "type": "explanation",
+          "body": "#### Un dia amb totes les preposicions\n\nPer veure com actuen totes juntes en un context real, aquí tens un mini-text que conté **sis de les set preposicions** del tema. Llegeix-lo a poc a poc i fixa't en les marques de datiu (_dem, der, den + -n_, contraccions):\n\n> _!!**Seit** zwei Monaten wohne ich in München. Jeden Morgen fahre ich **mit dem** Fahrrad **zur** Arbeit. Die Firma ist **bei dem** Bahnhof. Manchmal, **nach** der Arbeit, gehe ich **zu** Anna. Wir kommen beide **aus** Spanien, und wir sprechen oft **von** den alten Freunden **aus** Barcelona.!!_\n\n**Traducció:** Fa dos mesos que visc a Munic. Cada matí vaig a la feina amb bicicleta. L'empresa és a prop de l'estació. De vegades, després de la feina, vaig a casa de l'Anna. Totes dues venim d'Espanya i parlem sovint dels vells amics de Barcelona.\n\n**Mapa de les preposicions del text:**\n\n- _!!**seit** zwei Monaten!!_ — durada en curs.\n- _!!**mit dem** Fahrrad!!_ — mitjà de transport.\n- _!!**zur** (= zu der) Arbeit!!_ — destinació (institució).\n- _!!**bei dem** Bahnhof!!_ — localització (a prop de).\n- _!!**nach** der Arbeit!!_ — \"després de\" (temporal).\n- _!!**zu** Anna!!_ — destinació (persona).\n- _!!**aus** Spanien!!_ — origen.\n- _!!**von** den alten Freunden!!_ — provinença / tema de conversa."
+        }
       ]
     },
     {
