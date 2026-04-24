@@ -204,7 +204,6 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-23 · Sequenzen
 
 - **Contingut:**
-  - [ALTA] [A1a-23 · v2 · _Danach geht es Emma schlecht_] _es_ és un pronom anticipatori de la construcció fixa _es geht [+persona]_; sense aclarir-ho sembla que és el subjecte real.
 - **Tècnic:**
 - **Estructural:**
 
