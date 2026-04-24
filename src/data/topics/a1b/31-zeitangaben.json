@@ -42,7 +42,8 @@
         {
           "type": "table",
           "title": "31.1 Mapa complet dels complements temporals A1",
-          "headers": ["Pregunta", "Subtipus", "Preposició", "Cas", "Exemple", "Lliçó"],
+          "caption": "A la columna \"Lliçó\", els codis amb **A1a-** són repàs (ja els has vist); els **A1b-** són la nova introducció d'aquest bloc.",
+          "headers": ["Pregunta", "Subtipus", "Preposició", "Cas", "Exemple", "Lliçó (repàs A1a / nova A1b)"],
           "rows": [
             [{ "text": "==**Wann?**== (moment)", "rowspan": 8 }, "hora", "**um**", "—", "_um 8 Uhr_", "A1a-22, A1b-32"],
             ["dia de la setmana", "**am** (_an dem_)", "datiu", "_am Montag_", "A1a-21, A1b-32"],

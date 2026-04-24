@@ -513,8 +513,7 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1b-31 · Zeitangaben (mapa)
 
 - **Contingut:**
-  - [MITJA] [A1b-31 · paso-2-mapa-global · 31.1] Barreja temes ja cursats (A1a-21…) amb temes nous d'A1b sense distingir-los; marcar "Repàs (A1a)" vs "Nova (A1b)".
-  - [BAIXA] [A1b-31] Descripcions denses a la taula de ruta (31.3); partir en bullets milloraria la llegibilitat.
+  - [BAIXA] [A1b-31] Descripcions denses a la taula de ruta (31.3); partir en bullets milloraria la llegibilitat (canvi cosmètic, low-priority).
 
 ### A1b-35 · Das Datum
 
