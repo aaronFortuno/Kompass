@@ -468,11 +468,7 @@ absoluta: cal confirmar manualment abans d'aplicar.
 
 ### A1b-26 · Perfekt
 
-- **Contingut:**
-  - [ALTA] [A1b-26 · haben-o-sein] _Wir fahren in der Stadt_ (Wo? datiu) amb _sein_ pot ser incorrecte — hauria de ser _haben_ quan no hi ha canvi de lloc. Verificar contra A1b-29.
-  - [MITJA] [A1b-26 · satzklammer] El callout "error típic" amb _ich habe gegessen Pizza_ sona artificial; repensar l'exemple.
-- **Estructural:**
-  - [MITJA] [A1b-26] Taules 26.2 i 26.3 (haben/sein) repetitives; fusionar en una taula amb dues columnes.
+*(Descartats tots tres: (a) _Wir fahren in der Stadt_ no apareix enlloc d'A1b-26; fals positiu. El text del step haben-o-sein deixa clar "moviment **amb canvi de lloc**", que és la condició correcta. (b) _ich habe gegessen Pizza_ és un error calcat del català-castellà molt real entre catalanoparlants i pedagògicament vàlid. (c) Les taules 26.2 i 26.3 mostren el paradigma complet de cada auxiliar per memòria muscular; fusionar-les en una de sola seria pitjor visualment.)*
 
 ### A1b-27 · Partizipien
 
@@ -494,21 +490,18 @@ absoluta: cal confirmar manualment abans d'aplicar.
 
 ### A1b-29 · Haben o sein
 
-- **Contingut:**
-  - [ALTA] [A1b-29 · regla-sein] _fahren_ és ambigu: amb destinació → _sein_; com a activitat sense destinació → _haben_. Aclarir la distinció.
-  - [MITJA] [A1b-29 · trampa-catala] Afegir que els reflexius sempre porten _haben_ (_Ich habe mich aufs Bett gesetzt_).
 - **Estructural:**
-  - [MITJA] [A1b-29] Només 3 exercicis per a la regla més crítica d'A1b; afegir-ne un de contrast ambigu.
+  - [MITJA] [A1b-29] Només 3 exercicis per a la regla més crítica d'A1b; afegir un exercici de contrast ambigu — pendent (necessita JSON nou d'exercici).
+
+*(Descartats: (a) _fahren_ ambigu — la regla "moviment AMB DESPLAÇAMENT" + exemples _Wir sind nach Berlin gefahren_ són suficientment precisos per al nivell A1 (a A1 gairebé sempre hi ha destinació); (b) reflexius = _haben_ ja està mencionat a 4 llocs: step regla-haben, callout "Truc", lerntipp, i explícitament al synthesis.)*
 
 ### A1b-30 · Wortstellung im Perfekt
 
 - **Contingut:**
-  - [ALTA] [A1b-30 · recap-regla-or] Aclarir explícitament que **l'auxiliar** manté V2 i el **participi** salta al final.
-  - [MITJA] [A1b-30 · taula-canonica · 30.2] La columna "Subjekt (Inversion)" és confusa; substituir per "Pos. 3 (amb inversió)".
 - **Tècnic:**
-  - [BAIXA] [A1b-30 · 30.2] Tots els exemples són declaratius; afegir una pregunta i una negació (_Hast du Pizza gegessen? / Ich habe das nicht gemacht_).
 - **Estructural:**
-  - [MITJA] [A1b-30] 7 exercicis assessment sense cap quick-check intermedi.
+
+*(Descartat: "7 assessments sense quick-check" — el tema ja té 3 exercicis intermedis (check-1-identifica, check-2-inversio, check-3-ordre). Només 1 és assessment.)*
 
 ### A1b-31 · Zeitangaben (mapa)
 

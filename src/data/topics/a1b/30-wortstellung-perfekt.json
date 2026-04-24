@@ -43,7 +43,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Refresc: la regla d'or de la posició 2\n\nAbans d'anar al Perfekt, un avís: res del que vas aprendre a A1a-2 no canvia. El verb **conjugat** continua a la posició 2 en qualsevol oració declarativa. L'única novetat del Perfekt és que hi ha una **segona peça verbal** (el participi) que s'instal·la al final.\n\n- **Present** (un sol verb): _Ich ==**esse**== gestern Pizza._ — un verb, posició 2.\n- **Perfekt** (dos verbs): _Ich ==**habe**== gestern Pizza ==**gegessen**==._ — auxiliar a la 2, participi al final.\n\nEl mecanisme és idèntic al que fas servir amb modals (_Ich ==**kann**== gut ==**tanzen**==_) i amb separables (_Ich ==**stehe**== früh ==**auf**==_). ==La Satzklammer és **una sola estructura** que es reutilitza a tot arreu.=="
+          "body": "#### Refresc: la regla d'or de la posició 2\n\nAbans d'anar al Perfekt, un avís: res del que vas aprendre a A1a-2 no canvia. En una oració declarativa en Perfekt hi ha **dos verbs**, i cadascun té un lloc fix:\n\n- **==L'auxiliar== (_haben_ o _sein_ conjugat)** manté la **posició 2**. És el verb que canvia amb la persona (_ich habe, du hast, er hat…_).\n- **==El participi==** (_gegessen, gekommen…_) és invariable i **salta al final de l'oració**. És la novetat.\n\n- **Present** (un sol verb): _Ich ==**esse**== gestern Pizza._ — un verb, posició 2.\n- **Perfekt** (dos verbs): _Ich ==**habe**== gestern Pizza ==**gegessen**==._ — auxiliar a la 2, participi al final.\n\nEl mecanisme és idèntic al que fas servir amb modals (_Ich ==**kann**== gut ==**tanzen**==_) i amb separables (_Ich ==**stehe**== früh ==**auf**==_). ==La Satzklammer és **una sola estructura** que es reutilitza a tot arreu.=="
         }
       ]
     },
@@ -57,7 +57,7 @@
         {
           "type": "table",
           "title": "30.2 La taula canònica del Perfekt",
-          "headers": ["Vorfeld / Konnektor", "Subjekt", "Verb 1 (Hilfsverb)", "Subjekt (Inversion)", "Ergänzungen", "Verb 2 (Partizip II)"],
+          "headers": ["Vorfeld / Konnektor", "Subjekt (pos. 1)", "Verb 1 (Hilfsverb)", "Subjekt (pos. 3, amb inversió)", "Ergänzungen", "Verb 2 (Partizip II)"],
           "rows": [
             ["—", "_Ich_", "**bin**", "—", "_erst um 10 Uhr_", "**aufgestanden.**"],
             ["_Danach_", "—", "**habe**", "_ich_", "_einen Kaffee im Bett_", "**getrunken.**"],
@@ -137,7 +137,7 @@
         },
         {
           "type": "explanation",
-          "body": "Amb **negació** (_nicht_), la posició natural és **just abans del participi**, al final de tot el contingut però encara dins de la Satzklammer:\n\n- _Ich ==**habe**== gestern ==**nicht**== ==**gearbeitet**==._ — _Ahir no vaig treballar._\n- _Wir ==**sind**== am Wochenende ==**nicht**== nach Berlin ==**gefahren**==._ — _El cap de setmana no vam anar a Berlín._"
+          "body": "Amb **negació** (_nicht_), la posició natural és **just abans del participi**, al final de tot el contingut però encara dins de la Satzklammer:\n\n- _Ich ==**habe**== gestern ==**nicht**== ==**gearbeitet**==._ — _Ahir no vaig treballar._\n- _Wir ==**sind**== am Wochenende ==**nicht**== nach Berlin ==**gefahren**==._ — _El cap de setmana no vam anar a Berlín._\n\nA les **preguntes**, el mecanisme és igual però l'auxiliar salta a la **posició 1** (com a A1a-18). El participi es queda al final, intacte:\n\n- Ja/Nein-Frage: _==**Hast**== du gestern Pizza ==**gegessen**==?_ — _Ahir vas menjar pizza?_\n- W-Frage: _==**Was**== ==**hast**== du gestern ==**gegessen**==?_ — _Què vas menjar ahir?_\n- W-Frage amb _sein_: _==**Wo**== ==**bist**== du gestern ==**gewesen**==?_ — _On eres ahir?_"
         }
       ]
     },
