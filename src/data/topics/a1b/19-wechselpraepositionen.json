@@ -196,6 +196,12 @@
           "variant": "info",
           "title": "Observació sobre zwischen",
           "body": "Amb *zwischen*, al datiu tens **dos** substantius regits (*einem Restaurant und einer Bar*, tots dos en datiu). La preposició regeix **els dos** grups nominals, no només el primer."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Parany: *hängen* intransitiu vs *hängen* transitiu",
+          "body": "El verb *hängen* és un dels casos on la mateixa forma d'infinitiu cobreix els dos costats del parell. Només el **cas de l'article** i el context del verb et diuen quin és quin:\n\n- *Das Bild **hängt** an **der** Wand.* — Wo? Datiu. El quadre **està penjat** a la paret (intransitiu).\n- *Ich **hänge** das Bild an **die** Wand.* — Wohin? Acusatiu. Jo **penjo** el quadre a la paret (transitiu).\n\nLa pista diagnòstica és senzilla: si hi ha **complement directe** (_das Bild_) que es desplaça cap a la paret, és la versió transitiva → acusatiu. Si el subjecte **ja hi és** penjat, sense moviment, és la versió intransitiva → datiu. Als altres parells (_liegen/legen_, _stehen/stellen_, _sitzen/setzen_) les dues formes verbals són diferents i ajuden a distingir; amb *hängen* l'únic marcador és el cas."
         }
       ]
     },

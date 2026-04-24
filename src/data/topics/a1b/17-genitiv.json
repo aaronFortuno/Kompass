@@ -73,7 +73,7 @@
           "type": "callout",
           "variant": "info",
           "title": "_der_ apareix a tres caselles diferents",
-          "body": "Fixa't que _der_ apareix al nominatiu masculí, al datiu femení, al genitiu femení i al genitiu plural. No t'espantis: el context sempre desambiguarà."
+          "body": "Fixa't que _der_ apareix al nominatiu masculí, al datiu femení, al genitiu femení i al genitiu plural. No és casual: la forma del genitiu femení **reutilitza** la del datiu femení (un patró que veuràs sovint a la declinació alemanya — no s'inventen formes noves quan en tenen de preexistents). El context sempre desambiguarà."
         }
       ]
     },

@@ -410,17 +410,16 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1b-16 · sollen
 
 - **Contingut:**
-  - [MITJA] [A1b-16 · synthesis · taula 16.4] _sollten_ (consell suavitzat) apareix sense explicar la formació (Konjunktiv II). Afegir nota curta que remeti a A1b-9.
+
+*(Descartat: la taula 16.4 ja porta l'etiqueta "(Konjunktiv II)" a la columna de descripció, "A1b-9" a la columna d'exemple, i el step "connexions" remet explícitament a A1b-9 per al Konjunktiv II. Referència suficient.)*
 
 ### A1b-17 · Genitiv
 
 - **Contingut:**
-  - [BAIXA] [A1b-17 · articles-genitiv] "_der_ apareix a tres caselles diferents" és correcte però incompleta; el genitiu femení reutilitza la forma del datiu femení. Nota educacional menor.
 
 ### A1b-19 · Wechselpräpositionen
 
 - **Contingut:**
-  - [ALTA] [A1b-19 · verbs-diagnostic] _hängen_ intransitiu/transitiu té la mateixa forma d'infinitiu però cas diferent. Hi ha callout, però la taula 19.5 de contrast no repeteix el parell. Afegir exemple: _Das Bild hängt an der Wand_ (datiu, Wo?) vs _Ich hänge das Bild an die Wand_ (acusatiu, Wohin?).
 
 ### A1b-21 · Verbs amb/sense Ortswechsel
 
