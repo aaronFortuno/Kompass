@@ -235,7 +235,6 @@
           "title": "Desenes i grans",
           "headers": ["#", "Alemany"],
           "rows": [
-            ["20", "!!zwanzig!!"],
             ["30", "!!dreißig!!"],
             ["40", "!!vierzig!!"],
             ["50", "!!fünfzig!!"],

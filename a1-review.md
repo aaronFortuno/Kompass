@@ -311,14 +311,12 @@ absoluta: cal confirmar manualment abans d'aplicar.
 
 - **Contingut:**
   - [synthesis · àudio "play all"] pendent — feature nova per un commit dedicat.
-  - [ALTA] [A1a-V1 · check-und] L'exercici `A1a-V1-ex-01` està referenciat però no existeix (no hi ha carpeta `src/data/exercises/A1a/v1/` creada).
-  - [MITJA] [A1a-V1 · nucleo-0-12 · tabs callout] La nota sobre _zwo_ al telèfon no té àudio il·lustratiu; la resta de temes de vocabulari (V5-V7) sí incorporen àudios/imatges als tabs.
-  - [MITJA] [A1a-V1 · step "und"] Els paranys sobre l'ordenació (`einundzwanzig` vs `zwanzigundeins`) vénen només als pitfalls; la interferència és típica i caldria mostrar-la a l'inici del step "und".
+  - [MITJA] [A1a-V1] Entre "teens" i "decenas" manca un quick-check per consolidar — pendent (necessita JSON nou d'exercici).
 - **Tècnic:**
-  - [BAIXA] [A1a-V1 · synthesis · taula 3] Repetició de "20" en dues files; deixar-ho només una vegada.
 - **Estructural:**
   - *(Les taules de `teens` i `decenas` ja tenen tots els nombres audibles. El comentari queda cobert.)*
-  - [MITJA] [A1a-V1] Entre "teens" i "decenas" manca un quick-check per consolidar; ara només n'hi ha un tardà entre "und" i "grandes".
+
+*(Descartats: (a) l'ALTA sobre `A1a-V1-ex-01` és fals positiu — l'exercici existeix a `src/data/exercises/a1a/v1/ex-01.json`; (b) _zwo_ al callout telèfon és una nota lèxica, no necessita àudio il·lustratiu separat; (c) la ordenació ve a pitfalls perquè és un parany; l'ordre `einundzwanzig` ja es mostra a la taula "Les desenes (20-90)" abans dels pitfalls.)*
 
 ### A1a-V2 · Alphabet
 
