@@ -125,11 +125,10 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-13 · Die Negation (avançat)
 
 - **Contingut:**
-  - [ALTA] [A1a-13] La regla senzilla d'A1a-4 sembla contradir-se amb matissos d'A1a-13 (articles definits → _nicht_, possessius → _nicht_). Sense repàs explícit d'A1a-4, desconcerta → taula comparada A1a-4 ↔ A1a-13 o recapitulació sòlida.
-  - [MITJA] [A1a-13 · prefix un-] Secció teòrica; afegir bloc amb adjectius _un-_ d'ús A1 freqüent.
 - **Tècnic:**
 - **Estructural:**
-  - [MITJA] [A1a-13] Quatre assessments al final sense quick-check intermedi que validi la distinció _nicht_/_kein_.
+
+*(Revisats i descartats per aquesta passada: (a) la "contradicció" amb A1a-4 no existeix — el tema ja té callout "Recordatori ràpid (A1a-4)" a l'intro i step `recap-decision` que explica els matissos com a ampliació, no contradicció; (b) ja hi ha dos quick-checks intermedis — `check-mixed` entre recap i Nein, i `check-un` abans dels assessments.)*
 
 ### A1a-14 · Deklinieren (presentació)
 
