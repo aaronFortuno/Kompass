@@ -370,11 +370,10 @@ absoluta: cal confirmar manualment abans d'aplicar.
 
 ### A1b-5 · Vorlieben ausdrücken
 
-- **Contingut:**
-  - [ALTA] [A1b-5] Solapament massiu amb A1b-6 i A1b-7: 5 eines comprimides (gefallen, möchten, interessieren, neugierig auf, expressions) que els dos temes següents desenvolupen → decidir si A1b-5 és panorama ultracompacte o introducció completa (i ajustar A1b-6/7 en conseqüència).
-  - [ALTA] [A1b-5 · pronoms] Els pronoms datius i acusatius (_mir, mich, dir, dich_…) apareixen sense avís ni referència a A1a-36. Afegir callout amb mini-taula dels 4 pronoms clau.
 - **Estructural:**
-  - [ALTA] [A1b-5] Racionalitzar el cicle A1b-5/6/7 globalment — decisió curricular, no simple correcció textual.
+  - [ALTA] [A1b-5] Solapament amb A1b-6/7 — **decisió curricular pendent** del desenvolupador. Cal decidir si A1b-5 és panorama ultracompacte o introducció completa i ajustar A1b-6/7 en conseqüència.
+
+*(Descartat: la troballa sobre pronoms datius sense avís és fals positiu — el step `gefallen` ja té el callout "Pronoms datiu bàsics a memoritzar (per a aquest tema)" amb la llista completa _mir/dir/ihm/ihr/uns/euch/ihnen_ i la referència al bloc 2 d'A1b.)*
 
 ### A1b-6 · gefallen/finden/mögen/möchten
 
@@ -385,10 +384,10 @@ absoluta: cal confirmar manualment abans d'aplicar.
 
 ### A1b-7 · Verbs gust+
 
-- **Contingut:**
-  - [MITJA] [A1b-7 · expressions] L'exemple _Auf keinen Fall interessiert mich Fußball_ sona forçat — natural seria _Mich interessiert auf keinen Fall Fußball_.
 - **Estructural:**
-  - [MITJA] [A1b-7] Part del cicle preferències excessivament llarg (~850 línies A1b-5+6+7); condensar.
+  - [MITJA] [A1b-7] Part del cicle preferències excessivament llarg (~850 línies A1b-5+6+7); condensar — **decisió curricular pendent**.
+
+*(Descartat: _Auf keinen Fall interessiert mich Fußball_ no apareix a A1b-7. Els exemples reals són _Auf keinen Fall gehe ich ins Fußballstadion_ / _Auf keinen Fall gehe ich_, que són naturals. Fals positiu.)*
 
 ### A1b-8 · Vorlieben II
 
