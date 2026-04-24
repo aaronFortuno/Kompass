@@ -35,6 +35,11 @@ export function buildBeats(step) {
     return beats;
   }
 
+  if (step.kind === 'onboarding-setup') {
+    beats.push({ type: 'onboarding-setup' });
+    return beats;
+  }
+
   if (step.kind === 'synthesis') {
     if (step.heading) {
       beats.push({ type: 'heading', text: step.heading, kicker: step.id || 'Síntesi' });
@@ -118,6 +123,7 @@ export function stepKind(step) {
   if (step.kind === 'exercise') {
     return step.variant === 'assessment' ? 'assessment' : 'exercise';
   }
+  if (step.kind === 'onboarding-setup') return 'narrative';
   if (step.kind) return step.kind;
   return inferredLegacyKind(step);
 }

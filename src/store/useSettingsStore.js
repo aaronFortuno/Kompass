@@ -57,6 +57,11 @@ export const DEFAULT_SETTINGS = {
   bgMusicEnabled: false,
   bgMusicVolume: 0.25,
   bgMusicTrack: null,
+  // Onboarding tècnic: es marca a true quan l'usuari ha passat pel
+  // wizard d'inici (integrat a la lliçó A1a-0, pas penúltim). Mentre
+  // sigui false, el pas mostra el wizard complet; un cop a true, mostra
+  // una versió compacta amb opció de re-obrir.
+  onboardingCompleted: false,
   // §112: modal d'ajustaments global. Transient (no persistit). Es
   // controla via setSettingsOpen / toggleSettings. El NAV/cog de header
   // i el cog del reader + tecla `c` comparteixen aquest flag perquè
@@ -105,6 +110,8 @@ export const useSettingsStore = create(
       },
       setBgMusicTrack: (track) =>
         set({ bgMusicTrack: track == null ? null : String(track) }),
+      setOnboardingCompleted: (v) =>
+        set({ onboardingCompleted: Boolean(v) }),
       setSettingsOpen: (v) => set({ settingsOpen: Boolean(v) }),
       toggleSettings: () => set((s) => ({ settingsOpen: !s.settingsOpen })),
 
@@ -137,6 +144,7 @@ export const useSettingsStore = create(
         bgMusicEnabled: state.bgMusicEnabled,
         bgMusicVolume: state.bgMusicVolume,
         bgMusicTrack: state.bgMusicTrack,
+        onboardingCompleted: state.onboardingCompleted,
       }),
       onRehydrateStorage: () => (state) => {
         // Notifica altres components que el hydrate s'ha completat per si
@@ -173,6 +181,7 @@ export function useSettings() {
     bgMusicEnabled: s.bgMusicEnabled,
     bgMusicVolume: s.bgMusicVolume,
     bgMusicTrack: s.bgMusicTrack,
+    onboardingCompleted: s.onboardingCompleted,
   }));
 }
 

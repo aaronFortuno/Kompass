@@ -36,6 +36,7 @@ import {
 } from '@/components/reader/SpeakableText.jsx';
 import { ReaderExerciseEngine } from '@/components/reader/ReaderExerciseEngine.jsx';
 import { ReaderEntrySplash } from '@/components/reader/ReaderEntrySplash.jsx';
+import { OnboardingSetup } from '@/components/reader/OnboardingSetup.jsx';
 
 /*
  * Focus Reader · ARCHITECTURE §18
@@ -1317,6 +1318,8 @@ function beatLabel(beat, idx) {
       return beat.table?.title || 'Taula';
     case 'exercise':
       return beat.variant === 'assessment' ? 'Avaluació' : 'Comprovació';
+    case 'onboarding-setup':
+      return 'Configuració inicial';
     default:
       return `Fragment ${idx + 1}`;
   }
@@ -1641,6 +1644,8 @@ function BeatBody({
           navRef={exerciseNavRef}
         />
       );
+    case 'onboarding-setup':
+      return <OnboardingSetup />;
     default:
       return null;
   }

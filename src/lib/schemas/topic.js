@@ -123,6 +123,14 @@ const RichExerciseStepSchema = z.object({
   variant: z.enum(['quick-check', 'assessment']).optional(),
 });
 
+// Step especial: wizard d'onboarding tècnic (§114). Es renderitza com
+// a una targeta full-width similar a un exercici, amb passos interns.
+// No té cap camp propi: l'estat es llegeix del settings store.
+const RichOnboardingStepSchema = z.object({
+  id: z.string().regex(STEP_ID_REGEX).optional(),
+  kind: z.literal('onboarding-setup'),
+});
+
 const RichContentStepSchema = z.object({
   id: z.string().regex(STEP_ID_REGEX).optional(),
   kind: z.enum(['narrative', 'synthesis']),
@@ -149,6 +157,7 @@ const RichContentStepSchema = z.object({
  */
 const StepSchema = z.union([
   RichExerciseStepSchema,
+  RichOnboardingStepSchema,
   RichContentStepSchema,
   LegacyStepSchema,
 ]);

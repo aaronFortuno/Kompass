@@ -48,9 +48,18 @@ const CalloutBlockSchema = z.object({
   body: RichStringSchema,
 });
 
+// Wizard d'inici: apareix com un únic beat que ocupa tota la pantalla
+// del reader i permet configurar typewriter, autoplay, velocitat d'àudio
+// i música de fons amb previsualitzacions. No té camps propis —
+// l'estat el gestiona el component a partir del settings store.
+const OnboardingSetupBlockSchema = z.object({
+  type: z.literal('onboardingSetup'),
+});
+
 export const ContentBlockSchema = z.discriminatedUnion('type', [
   ExplanationBlockSchema,
   TableBlockSchema,
   ExerciseBlockSchema,
   CalloutBlockSchema,
+  OnboardingSetupBlockSchema,
 ]);

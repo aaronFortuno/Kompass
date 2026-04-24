@@ -140,6 +140,10 @@
       ]
     },
     {
+      "id": "setup",
+      "kind": "onboarding-setup"
+    },
+    {
       "id": "begin",
       "kind": "narrative",
       "heading": "Comencem",

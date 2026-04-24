@@ -144,6 +144,8 @@ function blockToBeats(block) {
           variant: block.variant || 'quick-check',
         },
       ];
+    case 'onboardingSetup':
+      return [{ type: 'onboarding-setup' }];
     default:
       return [];
   }
