@@ -133,10 +133,7 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-14 · Deklinieren (presentació)
 
 - **Contingut:**
-  - [ALTA] [A1a-14 · identificar funció] Els 5 passos per identificar la funció sintagmàtica són genèrics; afegir walkthrough complet amb oració real (p. ex. _Der Mann sieht die Frau_).
-  - [MITJA] [A1a-14 · n-Deklination] _Junge/Student/Herr_ es presenta com a "petita excepció"; és una subcategoria rellevant, mereix més pes o nota "t'ho trobaràs diverses vegades".
 - **Tècnic:**
-  - [MITJA] [A1a-14 · taula 14.2] Només mostra declinació de _der_ masculí; afegir files femenina i neutra per completar la visió del primer cas.
 - **Estructural:**
 
 ### A1a-15 · Vokalwechsel
