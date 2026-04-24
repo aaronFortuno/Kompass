@@ -115,7 +115,7 @@ export function SettingsBody() {
             id="setting-focus-mode"
             icon={Focus}
             title="Mode focus"
-            description="Amaga capçalera, peu i índex al reader. Drecera: tecla f."
+            description="Amaga tot el que envolta el contingut (capçalera, peu, índex i barres) perquè només quedi el fragment a pantalla. Ideal per concentrar-se. Drecera: tecla «f»."
           >
             <Toggle
               checked={focusMode}
@@ -282,8 +282,8 @@ export function SettingsBody() {
           <SettingRow
             id="setting-audio-autoplay"
             icon={Volume2}
-            title="Reproduir automàticament"
-            description="Reprodueix el pill del beat en acabar el typewriter."
+            title="Reproduir l'àudio sense clicar"
+            description="Quan apareix un fragment, l'àudio alemany sona tot sol sense que hi hagis de clicar. Si a més tens l'efecte màquina d'escriure activat, sona just quan s'acaba d'escriure el text."
           >
             <Toggle
               checked={audioAutoplay}
@@ -296,8 +296,8 @@ export function SettingsBody() {
           <SettingRow
             id="setting-audio-speed"
             icon={Rabbit}
-            title="Velocitat de l'àudio"
-            description="Escala la reproducció dels MP3 (0.8×–1.2×)."
+            title="Velocitat de la veu"
+            description="Accelera o alenteix la pronunciació (de 0.8× a 1.2×). El to no canvia, així que la veu no sona ni de robot ni de dibuixos animats."
           >
             <div className="flex items-center gap-3">
               <input
@@ -320,7 +320,7 @@ export function SettingsBody() {
             id="setting-audio-voice"
             icon={Mic}
             title="Veu"
-            description="Aviat: més veus (Florian, Katja)."
+            description="Una veu femenina càlida, generada amb el TTS neuronal d'Azure. Aviat n'hi haurà més per triar."
           >
             <select
               id="setting-audio-voice"
@@ -340,7 +340,7 @@ export function SettingsBody() {
               id="setting-bgmusic-enabled"
               icon={Music2}
               title="Música ambient de fons"
-              description="Per qui li agrada concentrar-se amb música. S'atenua quan sona un àudio de veu."
+              description="Un bucle suau mentre estudies. Quan sona un àudio alemany, la música s'abaixa sola perquè no es trepitgin."
             >
               <Toggle
                 checked={bgMusicEnabled}
