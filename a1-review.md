@@ -244,9 +244,6 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-29 · Mengenangaben
 
 - **Contingut:**
-  - [ALTA] [A1a-29 · verpackungen · Bund] La taula mostra el plural _die Bund_; el plural estàndard és _die Bünde_ (amb Umlaut). Error a corregir.
-  - [ALTA] [A1a-29 · regla-central · _Netz_] _Netz_ es presenta sense aclarir que és la bosseta de xarxa del supermercat (taronges, patates); un catalanoparlant pensaria "xarxa" genèrica.
-  - [MITJA] [A1a-29 · plural-mesures] La regla "mesures invariables" és correcta; convé notar que el col·loquial admet _zwei Kilos_ en algunes regions.
 - **Tècnic:**
 - **Estructural:**
 
