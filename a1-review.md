@@ -97,7 +97,6 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-9 · Komposita
 
 - **Contingut:**
-  - [MITJA] [A1a-9 · intro · Fugenelemente] El text diu "a A1 no has de predir quin _Fugenelement_ porta cada paraula", però la taula 9.2 lista els 5 més freqüents de manera expositiva → aclarir que la taula és només referència (reconeixement), no producció.
 - **Tècnic:**
 - **Estructural:**
 
