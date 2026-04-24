@@ -179,12 +179,11 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-20 · Adverbis temporals
 
 - **Contingut:**
-  - [ALTA] [A1a-20 · jeden/jede/jedes] Es presenta com a declinat en acusatiu, però l'acusatiu no es veu fins a A1a-28/32 → presentar-ho com a fórmules fixes a A1.
-  - [MITJA] [A1a-20 · morgen/morgens/heute Abend] La combinació amb _heute_ apareix a A1a-21; la connexió endavant hauria de quedar clara aquí.
-  - [MITJA] [A1a-20 · TeKaMoLo] Regla esmentada però no practicada en cap exercici.
+  - [MITJA] [A1a-20 · TeKaMoLo] Regla esmentada però no practicada en cap exercici — pendent com a exercici futur (necessita JSON nou).
 - **Tècnic:**
-  - [BAIXA] [A1a-20 · diàlegs] Els exemples _Wie oft…? — …_ no es distingeixen visualment del text normal.
 - **Estructural:**
+
+*(Descartats: la connexió morgen/heute Abend amb A1a-21 ja està esmentada; els diàlegs Q&A ja van en blockquotes.)*
 
 ### A1a-21 · Zeitangaben
 
