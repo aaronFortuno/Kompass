@@ -216,10 +216,10 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-25 · Trennbare Verben
 
 - **Contingut:**
-  - [MITJA] [A1a-25 · inseparables-contrast · besuchen] La traducció "(visitar)" podria portar nota connectant amb l'acusatiu implícit (A1a-27).
-  - [BAIXA] [A1a-25 · intro] No es posicionen els separables com "cas estrella" de la Satzklammer, que són molt més freqüents que modals a A1.
 - **Tècnic:**
 - **Estructural:**
+
+*(Descartats: (a) la nota besuchen+acusatiu introduiria un forward-reference a A1a-27 que no ajuda al tema d'aquí; (b) l'intro ja posiciona els separables com "l'aplicació paradigmàtica de la Satzklammer".)*
 
 ### A1a-26 · Modalverben
 
