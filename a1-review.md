@@ -109,12 +109,10 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-11 · Intonation
 
 - **Contingut:**
-  - [ALTA] [A1a-11] "En alemany les preguntes de sí/no pugen, mentre que en català totes les preguntes pugen" és inexacte: en català les W-preguntes no pugen necessàriament. Matissar el contrast.
-  - [MITJA] [A1a-11] S'usa `!!text!!` com a marcació fonètica sense haver-ne explicat abans aquesta notació.
 - **Tècnic:**
-  - [MITJA] [A1a-11] Es passa de dos quick-checks directament a quatre assessments sense síntesi tabulada prèvia de les regles.
 - **Estructural:**
-  - [MITJA] [A1a-11] "Paranys habituals" al penúltim step; natural al final o integrat dins de cada secció temàtica.
+
+*(Descartats per aquesta passada: el `!!...!!` és la convenció SpeakableText de tot el curs; la síntesi final ja cobreix la taula de patrons; els pitfalls abans dels assessments és el patró habitual de la resta de temes.)*
 
 ### A1a-12 · Der Plural
 
