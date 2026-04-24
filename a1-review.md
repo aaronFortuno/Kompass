@@ -518,17 +518,14 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1b-35 · Das Datum
 
 - **Contingut:**
-  - [MITJA] [A1b-35 · jahreszahlen · taula 35.1] La nota "abans de 1100: cardinal normal" apareix dins una taula titulada "1100-1999"; confós. Separar.
 
 ### A1b-38 · Verbs i complements
 
 - **Contingut:**
-  - [MITJA] [A1b-38 · cinc-patrons · taula 38.1] Els verbs duals (_kaufen_, _schreiben_, _kochen_) s'expliquen després a "flexibilitat"; afegir callout a la taula principal.
 
 ### A1b-40 · Verbs +Dativ
 
-- **Contingut:**
-  - [MITJA] [A1b-40 · taula 40.2] _glauben_ apareix al text com a nota de _vertrauen_ però no a la taula principal. Ambigu si és A1 o no — decidir i fer consistent.
+*(Descartat: la troballa sobre _glauben_ és un fals positiu — la paraula no apareix enlloc del fitxer.)*
 
 ---
 

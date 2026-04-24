@@ -75,6 +75,12 @@
           "variant": "info",
           "title": "No t'amoïnis amb aquestes últimes combinacions ara",
           "body": "Són la previsió que justifica per què el sistema d'A1b tanca amb 38-41: posar les bases perquè a A2 puguis afegir-hi més patrons sense confondre't."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Verbs de doble valència",
+          "body": "Et pot cridar l'atenció que _==kaufen==_, _==schreiben==_ i _==kochen==_ apareguin a **dos patrons alhora** (+Akk i +Dat+Akk). No és un error de la taula: són **verbs de doble valència**. Es poden fer servir amb un sol acusatiu (_Ich kaufe ein Buch_ — compro un llibre) o afegint-hi un datiu destinatari (_Ich kaufe meiner Schwester ein Buch_ — compro un llibre **a la meva germana**). El datiu és opcional i apareix quan vols fer explícit qui és el receptor de l'acció. A la secció \"flexibilitat\" ho treballaràs amb més detall."
         }
       ]
     },
