@@ -275,10 +275,9 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-33 · Ordinalzahlen
 
 - **Contingut:**
-  - [BAIXA] [A1a-33 · siebte/siebente] Ambigu: aclarir que _siebte_ és estàndard, _siebente_ arcaica/dialectal.
 - **Tècnic:**
 - **Estructural:**
-  - [MITJA] [A1a-33 · dates] Manca exercici d'escriptura de dates reals (aniversari, festiu) més enllà del reconeixement.
+  - [MITJA] [A1a-33 · dates] Manca exercici d'escriptura de dates reals (aniversari, festiu) més enllà del reconeixement — pendent (necessita JSON nou d'exercici).
 
 ### A1a-34 · Präpositionen mit Dativ
 
