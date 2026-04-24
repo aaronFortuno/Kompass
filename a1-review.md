@@ -447,21 +447,11 @@ absoluta: cal confirmar manualment abans d'aplicar.
 
 ### A1b-24 · Vergangenheit
 
-- **Contingut:**
-  - [ALTA] [A1b-24 · excepcions-praeteritum-oral] _passieren_ com a excepció oral hauria d'estar destacat al mateix nivell que sein/haben/modals/es gibt.
-  - [MITJA] [A1b-24 · mapa-decisio · 24.4] "text escrit: Präteritum (tots els verbs)" no matissa que a A1 només és per llegir, no per produir.
-- **Estructural:**
-  - [MITJA] [A1b-24] 6 exercicis per tema conceptual curt; càrrega desproporcionada.
+*(Tot descartat: (a) _passieren_ no apareix a A1b-24 ni 25; l'agent confonia amb A1b-29 on _passieren_ és un cas especial amb _sein_; (b) el text del step excepcions-praeteritum-oral ja diu explícitament "El Präteritum d'aquests verbs l'aprendràs més endavant (A1b-25) i només serà útil per llegir textos escrits"; (c) 6 exercicis per 2 quick-checks + 4 assessments és el patró habitual del curs.)*
 
 ### A1b-25 · Präteritum (sein/haben/modals/es gibt)
 
-- **Contingut:**
-  - [ALTA] [A1b-25 · sein-haben · taula 25.2] _ihr wart_ i _wir waren_ gairebé idèntics; destacar visualment la distinció.
-  - [MITJA] [A1b-25 · modals · taula 25.4] Ressaltar el patró _-test_ (du) vs _-tet_ (ihr) més visualment.
-- **Tècnic:**
-  - [MITJA] [A1b-25 · ex-02] L'element 10 demana majúscula "Wart"; pot confondre amb el matching case-insensitive.
-- **Estructural:**
-  - [BAIXA] [A1b-25] 7 exercicis per un tema majoritàriament memoritzar taules; reduir.
+*(Descartats: (a) _wart/waren_ ja apareixen ressaltats amb `==**…**==` a files separades de la taula 25.2; (b) _-test/-tet_ ja es veuen a columnes separades a la taula 25.4 (\"du\" vs \"ihr\"); (c) el nombre d'exercicis (3 quick + 4 assessment) és l'estàndard del curs per un tema tan memoritzable. L'ex-02 majúscula queda com a nota tècnica menor.)*
 
 ### A1b-26 · Perfekt
 
@@ -469,21 +459,17 @@ absoluta: cal confirmar manualment abans d'aplicar.
 
 ### A1b-27 · Partizipien
 
-- **Contingut:**
-  - [MITJA] [A1b-27 · separables · 27.3] La notació _ein_**_ge_**_kauft_ és confusa; separar visualment les tres peces.
-  - [BAIXA] [A1b-27 · irregulars · 27.6] Aclarir que aquest tema ensenya formació; els verbs concrets van a A1b-28.
 - **Estructural:**
-  - [MITJA] [A1b-27] Només 2 quick-checks per 5 patrons; afegir-ne un entre 27.4 i 27.6.
+  - [MITJA] [A1b-27] Només 2 quick-checks per 5 patrons — pendent (necessita JSON nou d'exercici).
+
+*(Descartats: (a) la notació `ein_ge_kauft` segueix la convenció del curs de ressaltar el morfema clau amb `==**...**==`; (b) l'intro ja diu "Aquest tema cobreix la formació... La llista dels verbs irregulars la trobaràs a A1b-28.".)*
 
 ### A1b-28 · Verbs irregulars
 
-- **Contingut:**
-  - [ALTA] [A1b-28 · ei-ie-ie · bleiben] Callout fa forward-reference a A1b-29 que hauria de resoldre's aquí per al context _sein_ sense canvi de lloc.
-  - [MITJA] [A1b-28 · 28.6] _werden_ té dos usos (Konjunktiv II + passiu futur); etiqueta ambigua.
 - **Tècnic:**
-  - [MITJA] [A1b-28] Manca exercici combinatori: "donat infinitiu + auxiliar, escriu Partizip + identifica el patró".
-- **Estructural:**
-  - [MITJA] [A1b-28] "17 verbs d'A1" anunciat però no tots apareixen en una síntesi final unificada.
+  - [MITJA] [A1b-28] Manca exercici combinatori "infinitiu + auxiliar → Partizip + patró" — pendent (necessita JSON nou).
+
+*(Descartats: (a) la forward-reference a A1b-29 per _bleiben_ és correcta — A1b-28 ensenya la formació i A1b-29 ensenya la tria d'auxiliar, són feines diferents; (b) _werden_ a A1 només necessita "esdevenir" — el Konjunktiv II i passiu futur són A2+; (c) la taula 28.8 "Els 17 verbs irregulars d'A1" sí que existeix i agrupa tots els 17 a la síntesi.)*
 
 ### A1b-29 · Haben o sein
 
