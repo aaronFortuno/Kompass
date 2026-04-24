@@ -188,10 +188,10 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-21 · Zeitangaben
 
 - **Contingut:**
-  - [ALTA] [A1a-21 · quadre-resum · _zu Mittag_] _zu_ apareix per primera vegada dins la taula sense avís; es confon amb _am/im_ → callout aclarint que _zu_ és diferent (no es contreu).
-  - [MITJA] [A1a-21 · am-parts-dia] La taula inclou _zu Mittag_ enmig del patró _am_ sense separar-ne la singularitat.
 - **Tècnic:**
 - **Estructural:**
+
+*(Descartat: la MITJA sobre `am-parts-dia` ja està resolta: després de la taula ja hi ha el callout "Excepció _zu Mittag_".)*
 
 ### A1a-22 · Uhrzeit
 
