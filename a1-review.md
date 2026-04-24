@@ -147,11 +147,10 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-16 · Gustos i preferències
 
 - **Contingut:**
-  - [ALTA] [A1a-16 · mögen vs möchte] No s'explica per què _mögen + infinitiu_ no es fa servir i no s'introdueix _möchte + infinitiu_ com a alternativa → error sistemàtic previsible.
-  - [MITJA] [A1a-16 · finden + adj] Exemple _Ich finde Pizza lecker_ sembla suggerir que _Pizza_ va sense article sempre; aclarir que és acusatiu i que portaria article en context (_die Pizza_).
 - **Tècnic:**
 - **Estructural:**
-  - [MITJA] [A1a-16] Manca quick-check intermedi que contrasti _mögen_ (cosa) vs _gern_ (acció) abans dels assessments.
+
+*(Descartat: manca quick-check mögen/gern. En realitat ja existeix (`check-distingir`, ex-01, just abans de Lieblings- i finden).)*
 
 ### A1a-17 · gut-besser / gern-lieber
 
