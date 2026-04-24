@@ -196,11 +196,10 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-22 · Uhrzeit
 
 - **Contingut:**
-  - [ALTA] [A1a-22 · formal-24h] El patró [hora] Uhr [minuts] no s'il·lustra amb una cascada (9:00, 9:05, 9:14, 9:30, 9:50) que faria visible que els minuts sempre van darrere d'_Uhr_.
-  - [MITJA] [A1a-22 · taula 14:00-15:00] Taula densa (12 files) amb duplicació per minuts 20 i 40. Per A1 simplificar a la variant més neta i nota sobre alternatives.
-  - [BAIXA] [A1a-22 · pitfalls · 4] Aclarir més nítidament que _um_ només va amb verbs d'acció, no amb _Wie spät ist es?_.
 - **Tècnic:**
 - **Estructural:**
+
+*(Descartat: la MITJA sobre la taula densa ja està resolta — després de la taula hi ha un bloc explícit "Simplificació pràctica (recomanada per a principiants)" que dóna la variant més neta.)*
 
 ### A1a-23 · Sequenzen
 
