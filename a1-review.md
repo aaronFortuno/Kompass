@@ -341,10 +341,10 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-V5 · Farben
 
 - **Contingut:**
-  - [MITJA] [A1a-V5 · extendido · callout] Menciona declinació adjectiva (orange, rosa, lila) sense haver introduït el concepte; la nota que remet a A2 és encertada.
-  - [BAIXA] [A1a-V5 · synthesis · taula] Inconsistència menor: la nota "Préstec; invariable" només apareix per `lila`, no per `orange`/`rosa`.
 - **Tècnic:**
 - **Estructural:**
+
+*(Descartats com a falsos positius: (a) el callout de la declinació adjectiva ja remet explícitament a A2; (b) els tres préstecs (orange/rosa/lila) SÍ que porten la nota "Préstec; invariable" a la synthesis.)*
 
 ### A1a-V6 · Essen und Trinken
 
