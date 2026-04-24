@@ -117,11 +117,10 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-12 · Der Plural
 
 - **Contingut:**
-  - [ALTA] [A1a-12 · pitfalls] "L'Umlaut no avisa" però no es clarifica que cap dels sis patrons és 100% predictible → deixar explícit que sempre cal apuntar el plural del diccionari.
-  - [MITJA] [A1a-12 · taula 12.2] La caption "(no es pot)" per al vocal /i/ seria més coherent redactada "sense Umlaut".
 - **Tècnic:**
-  - [BAIXA] [A1a-12] Ús de `!!...!!` per marcar plurals es barreja amb altres marques sense criteri clar.
 - **Estructural:**
+
+*(Descartat: `!!...!!` és la convenció SpeakableText del curs.)*
 
 ### A1a-13 · Die Negation (avançat)
 
