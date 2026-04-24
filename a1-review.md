@@ -67,8 +67,6 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-4 · Nein/Nicht/Kein
 
 - **Contingut:**
-  - [ALTA] [A1a-4 · nicht-vs-kein · taula 4.3] La taula de síntesi inclou un exemple amb acusatiu (!!Ich sehe das Buch **nicht**.!!) quan el tema només ha cobert nominatiu. Els articles acusatius no es presenten fins a A1a-28 → canviar l'exemple a nominatiu o marcar-lo com a "avanç".
-  - [MITJA] [A1a-4 · intro] La distinció _nicht_ / _kein_ queda circularment explicada ("substantius que en afirmatiu portarien _ein/eine_ o cap article") → afegir exemples de contrast _nicht + definit_ vs _kein + indefinit_.
 - **Tècnic:**
 - **Estructural:**
 
