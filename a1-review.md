@@ -441,10 +441,9 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1b-23 · Lerntipp
 
 - **Contingut:**
-  - [ALTA] [A1b-23 · protocol] "Pas 1 elimina el 60%" usa xifra sense font; substituir per "la majoria" o "més del 60%".
-  - [MITJA] [A1b-23 · estrategies-memoria] Callout dient que memoritzar contraccions és opcional.
 - **Estructural:**
-  - [BAIXA] [A1b-23] Afegir un exercici intermedi entre check-2 i check-3.
+
+*(Descartats: (a) la nota sobre contraccions opcionals és un polit molt menor; (b) l'exercici intermedi caldria JSON nou.)*
 
 ### A1b-24 · Vergangenheit
 
