@@ -139,11 +139,10 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-15 · Vokalwechsel
 
 - **Contingut:**
-  - [ALTA] [A1a-15 · e→i · nehmen] "Sorpresa ortogràfica" poc explicada; mereixeria més sobre el **per què** cau la _h_ i es dobla la _m_.
-  - [MITJA] [A1a-15 · contrast amb català] La comparació amb _venir_ és imprecisa: _venir_ català és irregular de soca-rel; _nehmen_ és regular amb Umlaut.
 - **Tècnic:**
 - **Estructural:**
-  - [MITJA] [A1a-15] Els quatre patrons es presenten en paral·lel sense prioritzar el més freqüent (_e→i_). Reordenar per freqüència.
+
+*(Descartat: reordenar els 4 patrons. L'ordre actual va de simple a complex (a→ä, e→i, e→ie, au→äu) i el text ja marca explícitament que _e→i_ és el més freqüent.)*
 
 ### A1a-16 · Gustos i preferències
 
