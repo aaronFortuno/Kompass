@@ -290,19 +290,18 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-35 · Wie groß/hoch/teuer
 
 - **Contingut:**
-  - [MITJA] [A1a-35 · lang vs lange] Cap exercici contrasta longitud vs durada → afegir.
+  - [MITJA] [A1a-35 · lang vs lange] Manca exercici que contrasti longitud vs durada — pendent (necessita JSON nou d'exercici).
 - **Tècnic:**
-  - [BAIXA] [A1a-35 · ordre de paraules] Teoria densa; afegir desglossat visual (_Wie alt | bist | du | ?_).
 - **Estructural:**
+
+*(Descartat: "desglossat visual de l'ordre de paraules" — la taula "Wie alt / bist / du" ja dóna aquest desglossament columna a columna.)*
 
 ### A1a-36 · Abkürzungen
 
 - **Contingut:**
-  - [MITJA] [A1a-36 · habitacions] Callout explica 2-ZKB ≠ 4 peces però no contrasta el recompte alemany vs català explícitament.
-  - [MITJA] [A1a-36 · KM/WM] Aclarir excepció: si l'anunci dóna _WM_, no cal buscar _NK_ per separat.
 - **Tècnic:**
 - **Estructural:**
-  - [MITJA] [A1a-36] Manca exercici holístic de lectura d'anunci real amb 3-4 preguntes (preu, superfície, habitacions, balcó).
+  - [MITJA] [A1a-36] Manca exercici holístic de lectura d'anunci real amb 3-4 preguntes — pendent (necessita JSON nou d'exercici).
 
 ---
 

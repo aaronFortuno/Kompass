@@ -54,7 +54,7 @@
           "type": "callout",
           "variant": "warning",
           "title": "Compte amb les habitacions",
-          "body": "_2-ZKB-Whg_ vol dir **\"pis de 2 habitacions amb cuina i bany\"**. El número davant de _ZKB_ sempre és el nombre d'habitacions **sense comptar cuina ni bany**, a diferència del sistema català. _2-ZKB_ no són 4 peces: són 2 estances habitables (sala + dormitoris) + cuina + bany."
+          "body": "_2-ZKB-Whg_ vol dir **\"pis de 2 habitacions amb cuina i bany\"**. El número davant de _ZKB_ sempre és el nombre d'habitacions **sense comptar cuina ni bany**, a diferència del sistema català.\n\n**Contrast directe:**\n\n- **Sistema alemany** (comptar _ZKB_): el número només compta les estances habitables (sala + dormitoris). Cuina i bany no compten.\n- **Sistema català** (comptar \"peces\"): el número compta totes les estances, incloses cuina i bany.\n\nPer tant: _2-ZKB_ **en alemany** = \"pis de 2 habitacions\" amb una cuina i un bany addicionals, que **en català** anunciaríem com \"pis de 4 peces\". Una mateixa vivenda, dos números diferents segons quina llengua la descriu."
         }
       ]
     },
@@ -84,7 +84,7 @@
           "type": "callout",
           "variant": "info",
           "title": "_Kaltmiete_ vs. _Warmmiete_",
-          "body": "_Kalt_ (fred) i _warm_ (calent) aquí **no parlen de temperatura**, sinó de si el preu **inclou** (_warm_) o **no** (_kalt_) les despeses de calefacció, aigua, escombraries, etc. Un anunci honest et diu _KM 550 € + NK 120 €_ → total real **670 €**."
+          "body": "_Kalt_ (fred) i _warm_ (calent) aquí **no parlen de temperatura**, sinó de si el preu **inclou** (_warm_) o **no** (_kalt_) les despeses de calefacció, aigua, escombraries, etc.\n\n**Dos formats típics d'anunci:**\n\n- _KM 550 € + NK 120 €_ → et demanen sumar. Lloguer real = **670 €**.\n- _WM 670 €_ → ja et donen el total. **No** cal buscar NK, ja està dins del WM. Si sumessis NK a sobre, pagaries dues vegades el mateix.\n\nRegla d'or: si veus _WM_ directe, accepta-ho com a total. Si veus _KM_, busca el _NK_ al voltant per calcular el real."
         },
         {
           "type": "explanation",
