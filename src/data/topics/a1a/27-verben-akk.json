@@ -109,6 +109,12 @@
         },
         {
           "type": "callout",
+          "variant": "info",
+          "title": "Nota sobre _möchten_ a la taula",
+          "body": "_möchten_ és a la llista perquè, quan s'usa **sol amb un substantiu**, funciona com qualsevol verb transitiu: regeix **acusatiu** (_!!Ich möchte einen Kaffee!!_). En aquest ús no hi ha Satzklammer — la construcció és simplement verb + complement directe. La cara \"modal\" de _möchten_, **amb infinitiu al final**, ja la vas veure a A1a-19 (_!!Ich möchte einen Kaffee trinken!!_) i allà sí que hi ha Satzklammer. Són els dos usos del mateix verb; no els barregis."
+        },
+        {
+          "type": "callout",
           "variant": "tip",
           "title": "Pista pedagògica",
           "body": "El PDF de l'IOC d'aquesta lliçó treballa sobretot amb escenes de **restaurant**: _nehmen, trinken, bekommen, bezahlen, essen_ apareixen una i altra vegada amb plats i begudes. No és casualitat: és el context natural d'A1 on més acusatius amuntegaràs en poques oracions."

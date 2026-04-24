@@ -232,7 +232,6 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-27 · Verben mit Nominativ und Akkusativ
 
 - **Contingut:**
-  - [MITJA] [A1a-27 · taula verbs típics] _möchten_ va amb acusatiu (_Ich möchte einen Kaffee_); callout aclarint que _möchten_ sense infinitiu és verb transitiu normal (↔ _möchten + infinitiu_ forma Satzklammer).
 - **Tècnic:**
 - **Estructural:**
 
