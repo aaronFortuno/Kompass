@@ -432,11 +432,11 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1b-22 · Lokalisierung im Raum
 
 - **Contingut:**
-  - [ALTA] [A1b-22 · 22.3] _es gibt_ + acusatiu no es remarca que no es combina amb adverbis espacials per a localitzacions puntuals; l'ús és estrictament inventarial.
 - **Tècnic:**
-  - [MITJA] [A1b-22 · ex-02] L'enunciat barreja verbs específics amb elecció d'article i no queda clar què es valida.
+  - [MITJA] [A1b-22 · ex-02] L'enunciat barreja verbs específics amb elecció d'article — pendent de verificació manual.
 - **Estructural:**
-  - [BAIXA] [A1b-22] Vocabulari de mobles (taules 22.5-22.6) no s'integra als exercicis; moure'l a callout.
+
+*(Descartat: vocabulari de mobles dins de taules — mantenir com a referència al tema té sentit, no tot el vocabulari cal integrar-lo a exercicis.)*
 
 ### A1b-23 · Lerntipp
 
