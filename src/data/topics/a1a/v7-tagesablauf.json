@@ -108,9 +108,9 @@
       "examples": [
         { "de": "Zuerst stehe ich auf.", "ca": "Primer m'aixeco.", "note": "Connector al principi → inversió verb-subjecte: _stehe ich_." },
         { "de": "Dann frühstücke ich.", "ca": "Després esmorzo." },
-        { "de": "Danach gehe ich zur Arbeit.", "ca": "Després vaig a la feina.", "note": "_zur Arbeit_: _zu + der = zur_." },
+        { "de": "Danach gehe ich zur Arbeit.", "ca": "Després vaig a la feina.", "note": "_zur Arbeit_ = _zu + der = zur_. _zu_ demana datiu i aquí és la contracció femenina. _zur Arbeit gehen_ és la locució fixa \"anar a la feina\"." },
         { "de": "Am Abend sehe ich fern.", "ca": "Al vespre miro la tele." },
-        { "de": "Zum Schluss gehe ich ins Bett.", "ca": "Al final me'n vaig al llit.", "note": "_ins Bett gehen_: anar-se'n al llit, locució fixa." }
+        { "de": "Zum Schluss gehe ich ins Bett.", "ca": "Al final me'n vaig al llit.", "note": "_ins Bett_ = _in + das = ins_. Aquí _in_ demana **acusatiu** (moviment cap a dins d'un lloc). És una locució fixa: _ins Bett gehen_ = anar-se'n al llit." }
       ]
     },
     {

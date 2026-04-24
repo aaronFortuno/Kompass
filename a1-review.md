@@ -357,10 +357,10 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-V7 · Tagesablauf
 
 - **Contingut:**
-  - [ALTA] [A1a-V7 · jornada-model · callout] _Um 8 Uhr gehe ich zur Arbeit_ i _Zum Schluss gehe ich ins Bett_ no s'expliquen com a construccions fixes _gehen + zu + datiu / in + acusatiu_. Fàcil confondre amb verbs de moviment genèrics.
-  - [MITJA] [A1a-V7 · verbs-separables] El pitfall _*Ich aufstehe_ (parany bàsic) hauria d'aparèixer dins del step de separables, no diferit al final.
 - **Tècnic:**
 - **Estructural:**
+
+*(Descartat: el pitfall d'_Ich aufstehe_ → _ich stehe auf_ al step pitfalls és el patró de tots els temes del curs; moure'l al step de separables trencaria l'estructura editorial.)*
 
 ---
 
