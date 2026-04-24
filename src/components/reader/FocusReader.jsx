@@ -575,7 +575,23 @@ function BeatKicker({ stepIdx, step, beatKicker }) {
   );
 }
 
-function HeadingBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed }) {
+/*
+ * Helper comú: beats de text amb un únic Typed. Si es passa
+ * `audioAutoplay`, quan el typewriter acaba (o si està desactivat)
+ * es reprodueixen seqüencialment tots els pills `!!...!!` del text.
+ * Els beat types body/lead/heading/point/rule/callout fan servir
+ * aquest patró.
+ */
+function useTextBeatAudioAutoplay(audioAutoplay, typewriterActive, beat) {
+  const [textDone, setTextDone] = useState(!typewriterActive);
+  useEffect(() => { setTextDone(!typewriterActive); }, [typewriterActive, beat]);
+  const containerRef = useRef(null);
+  useBeatAutoPlaySequence(containerRef, audioAutoplay && textDone);
+  return { containerRef, setTextDone };
+}
+
+function HeadingBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay = false }) {
+  const { containerRef, setTextDone } = useTextBeatAudioAutoplay(audioAutoplay, typewriterActive, beat);
   return (
     <>
       {showKicker ? (
@@ -584,65 +600,75 @@ function HeadingBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed 
         </div>
       ) : null}
       <Typed
+        ref={containerRef}
         text={beat.text}
         as="h1"
         className="kf-beat-heading"
         active={typewriterActive}
         speed={Math.min(speed + 3, 95)}
+        onDone={() => setTextDone(true)}
       />
     </>
   );
 }
 
-function LeadBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed }) {
+function LeadBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay = false }) {
+  const { containerRef, setTextDone } = useTextBeatAudioAutoplay(audioAutoplay, typewriterActive, beat);
   return (
     <>
       {showKicker ? <BeatKicker step={step} stepIdx={stepIdx} beatKicker={step.id} /> : null}
       <Typed
+        ref={containerRef}
         text={beat.text}
         as="p"
         className="kf-beat-lead"
         active={typewriterActive}
         speed={speed}
+        onDone={() => setTextDone(true)}
       />
     </>
   );
 }
 
-function BodyBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed }) {
+function BodyBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay = false }) {
+  const { containerRef, setTextDone } = useTextBeatAudioAutoplay(audioAutoplay, typewriterActive, beat);
   return (
     <>
       {showKicker ? <BeatKicker step={step} stepIdx={stepIdx} beatKicker={step.id} /> : null}
       <Typed
+        ref={containerRef}
         text={beat.text}
         as="p"
         className="kf-beat-body"
         active={typewriterActive}
         speed={Math.max(speed - 6, 10)}
+        onDone={() => setTextDone(true)}
       />
     </>
   );
 }
 
-function PointBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed }) {
+function PointBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay = false }) {
+  const { containerRef, setTextDone } = useTextBeatAudioAutoplay(audioAutoplay, typewriterActive, beat);
   return (
     <>
       {showKicker ? <BeatKicker step={step} stepIdx={stepIdx} beatKicker={step.id} /> : null}
-      <div className="kf-beat-point">
+      <div ref={containerRef} className="kf-beat-point">
         <span className="kf-marker">Punt {beat.idx} de {beat.total}</span>
-        <Typed text={beat.text} as="span" active={typewriterActive} speed={speed - 4} />
+        <Typed text={beat.text} as="span" active={typewriterActive} speed={speed - 4} onDone={() => setTextDone(true)} />
       </div>
     </>
   );
 }
 
-function RuleBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed }) {
+function RuleBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay = false }) {
+  const { containerRef, setTextDone } = useTextBeatAudioAutoplay(audioAutoplay, typewriterActive, beat);
   return (
     <>
       {showKicker ? <BeatKicker step={step} stepIdx={stepIdx} beatKicker={step.id} /> : null}
-      <div className="kf-beat-point">
+      <div ref={containerRef} className="kf-beat-point">
         <span className="kf-marker">Regla {beat.idx} de {beat.total}</span>
-        <Typed text={beat.text} as="span" active={typewriterActive} speed={speed - 4} />
+        <Typed text={beat.text} as="span" active={typewriterActive} speed={speed - 4} onDone={() => setTextDone(true)} />
       </div>
     </>
   );
@@ -1141,13 +1167,14 @@ const CALLOUT_ICONS = {
   example: Info,
 };
 
-function CalloutBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed }) {
+function CalloutBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay = false }) {
   const c = beat.callout;
   const Icon = CALLOUT_ICONS[c.variant] || Info;
+  const { containerRef, setTextDone } = useTextBeatAudioAutoplay(audioAutoplay, typewriterActive, beat);
   return (
     <>
       {showKicker ? <BeatKicker step={step} stepIdx={stepIdx} beatKicker={step.id} /> : null}
-      <div className={`kf-beat-callout variant-${c.variant || 'info'}`}>
+      <div ref={containerRef} className={`kf-beat-callout variant-${c.variant || 'info'}`}>
         <div className="kf-beat-callout-icon">
           <Icon size={20} aria-hidden="true" />
         </div>
@@ -1159,6 +1186,7 @@ function CalloutBeat({ beat, step, stepIdx, showKicker, typewriterActive, speed 
               as="p"
               active={typewriterActive}
               speed={speed - 8}
+              onDone={() => setTextDone(true)}
             />
           ) : null}
         </div>
@@ -1603,33 +1631,34 @@ function BeatBody({
   const typewriterActive = tx === 'typewriter' && !fastMode;
   const tableAnim = tx === 'reveal-clip' && !fastMode;
 
+  const audioAutoplay = isCurrent && settings.audioAutoplay;
   switch (beat.type) {
     case 'heading':
-      return <HeadingBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed }} />;
+      return <HeadingBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay }} />;
     case 'lead':
-      return <LeadBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed }} />;
+      return <LeadBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay }} />;
     case 'body':
-      return <BodyBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed }} />;
+      return <BodyBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay }} />;
     case 'point':
-      return <PointBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed }} />;
+      return <PointBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay }} />;
     case 'rule':
-      return <RuleBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed }} />;
+      return <RuleBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay }} />;
     case 'example':
-      return <ExampleBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay: isCurrent && settings.audioAutoplay }} />;
+      return <ExampleBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay }} />;
     case 'pron':
-      return <PronBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay: isCurrent && settings.audioAutoplay }} />;
+      return <PronBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay }} />;
     case 'pair':
       return <PairBeat {...{ beat, step, stepIdx, showKicker }} />;
     case 'compare':
       return (
         <CompareBeat
-          {...{ beat, step, stepIdx, showKicker, tableAnim, audioAutoplay: isCurrent && settings.audioAutoplay }}
+          {...{ beat, step, stepIdx, showKicker, tableAnim, audioAutoplay }}
         />
       );
     case 'pitfall':
-      return <PitfallBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay: isCurrent && settings.audioAutoplay }} />;
+      return <PitfallBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay }} />;
     case 'callout':
-      return <CalloutBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed }} />;
+      return <CalloutBeat {...{ beat, step, stepIdx, showKicker, typewriterActive, speed, audioAutoplay }} />;
     case 'syn-table':
       return <SynTableBeat beat={beat} tableAnim={tableAnim} />;
     case 'visual':

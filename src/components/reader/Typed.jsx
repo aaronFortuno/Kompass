@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { forwardRef, useEffect, useMemo, useRef, useState } from 'react';
 import {
   tokenizeInline,
   visibleLength,
@@ -32,7 +32,7 @@ import {
  *     la Promise retornada es resol. Si el callback no es passa, el
  *     typewriter no fa cap pausa especial.
  */
-export function Typed({
+export const Typed = forwardRef(function Typed({
   text = '',
   speed = 42,
   startDelay = 120,
@@ -41,7 +41,7 @@ export function Typed({
   className,
   onDone,
   onSpeakableReached,
-}) {
+}, ref) {
   const tokens = useMemo(() => tokenizeInline(text), [text]);
   const total = useMemo(() => visibleLength(tokens), [tokens]);
 
@@ -150,8 +150,8 @@ export function Typed({
   const Tag = as;
 
   return (
-    <Tag className={className}>
+    <Tag ref={ref} className={className}>
       <span className={showCaret ? 'kf-caret' : undefined}>{shown}</span>
     </Tag>
   );
-}
+});
