@@ -210,8 +210,6 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-24 · schon/noch/erst
 
 - **Contingut:**
-  - [ALTA] [A1a-24 · contrast-global · fila _erst_] Les traduccions "poc / tard / tot just" no són igualment freqüents i depenen del context (durada vs punt temporal) → dividir la fila en dos casos o exemples contrastats.
-  - [MITJA] [A1a-24 · terminologia _erst_] Varia entre "durada curta / hora tardana" i "durada / poc". Uniformitzar (_durada_ vs _moment puntual_).
 - **Tècnic:**
 - **Estructural:**
 
