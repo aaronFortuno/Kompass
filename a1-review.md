@@ -171,12 +171,10 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-19 · können i mögen
 
 - **Contingut:**
-  - [ALTA] [A1a-19 · können vs wissen] No es contrasta _wissen_ (saber informació) vs _können_ (saber fer). Error molt comú (_*Ich weiß Gitarre spielen_) → taula amb _Ich weiß, was X ist_ vs _Ich kann X bauen_.
-  - [MITJA] [A1a-19 · möchte] Es menciona com a Konjunktiv II però sense aclarir el registre cortès vs _will_ directe (A1a-26).
-  - [MITJA] [A1a-19 · möchte vs mag] _möchte_ manté _-e_ als singulars; _mag_ no. Taula paral·lela explícita milloraria la comparació.
 - **Tècnic:**
 - **Estructural:**
-  - [MITJA] [A1a-19] Quatre assessments al final sense check intermedi que forci distingir _können_ (habilitat) vs _mögen_ (preferència).
+
+*(Descartats: la taula paral·lela möchte/mag ja existeix (synthesis, taula 19.2); ja hi ha dos quick-checks intermedis (`check-koennen` i `check-moegen-moechte`).)*
 
 ### A1a-20 · Adverbis temporals
 
