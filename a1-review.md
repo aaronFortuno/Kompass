@@ -103,8 +103,6 @@ absoluta: cal confirmar manualment abans d'aplicar.
 ### A1a-10 · Wortakzent
 
 - **Contingut:**
-  - [ALTA] [A1a-10 · ableitungen-accent] Els prefixos accentuats (_an-, auf-, ein-_) es presenten com a "separables", però el tema dels verbs separables no es veu fins a A1a-25 → afegir nota ("els estudiaràs a fons al tema 25") o triar exemple que no sigui en un verb separable.
-  - [BAIXA] [A1a-10 · contrast amb castellà · línia "Telefon"] L'accent final de _Telefon_ es presenta categòric; en alemany estàndard és més neutre/ambigu.
 - **Tècnic:**
 - **Estructural:**
 
