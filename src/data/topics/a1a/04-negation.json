@@ -137,9 +137,9 @@
           "why": "Col·locar _nicht_ després d'un complement de lloc amb preposició. Quan negues el lloc, _nicht_ va **davant** de la preposició, no al final."
         },
         {
-          "bad": "!!Ich habe keine Kinder.!! → \"No tinc ==cap== fill\"",
-          "good": "!!Ich habe keine Kinder.!! → \"No tinc fills\"",
-          "why": "Traduir literalment _kein_ com a \"cap\" en català. _kein_ no sempre demana \"cap\": moltes vegades n'hi ha prou amb \"no\" + substantiu plural."
+          "bad": "!!Ich habe ==nicht kein== Auto.!!",
+          "good": "!!Ich habe ==kein== Auto.!!",
+          "why": "Doble negació per calc del català \"no tinc cap\". En alemany _kein_ ja porta la negació incorporada: _nicht + kein_ no existeix."
         }
       ]
     },
