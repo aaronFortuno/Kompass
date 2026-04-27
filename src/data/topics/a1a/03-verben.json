@@ -8,6 +8,7 @@
   "shortTitle": "Verben",
   "description": "Conjugació regular en present, variants ortogràfiques (_arbeiten_, _heißen_), canvi vocàlic (_sprechen_) i els verbs irregulars essencials _sein_ i _haben_.",
   "axes": ["pronoms-verbs"],
+  "reviewed": true,
   "steps": [
     {
       "id": "intro",

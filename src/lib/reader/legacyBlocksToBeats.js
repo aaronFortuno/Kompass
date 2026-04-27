@@ -44,7 +44,7 @@ function looksLikeCompareTable(table) {
 function splitSentences(text) {
   if (!text) return [];
   return text
-    .split(/(?<=(?<!\d)[.!?…])\s+/)
+    .split(/(?<=(?<!\d)[.!?…])\s+(?=\p{Lu}|[*_]{1,2}\p{Lu})/u)
     .map((s) => s.trim())
     .filter(Boolean);
 }

@@ -15,7 +15,7 @@
 function splitSentences(text) {
   if (!text) return [];
   const parts = text
-    .split(/(?<=(?<!\d)[.!?…])\s+/)
+    .split(/(?<=(?<!\d)[.!?…])\s+(?=\p{Lu}|[*_]{1,2}\p{Lu})/u)
     .map((s) => s.trim())
     .filter(Boolean);
   if (parts.length === 0) return [text];
