@@ -1252,7 +1252,7 @@ function SynTableBeat({ beat, tableAnim }) {
   return (
     <div className="kf-beat-syn">
       <div className="kf-marker">Síntesi</div>
-      {table.title ? <h2 className="kf-beat-syn-title">{table.title}</h2> : null}
+      {table.title ? <h2 className="kf-beat-syn-title">{parseInline(table.title)}</h2> : null}
       <table>
         <thead>
           <tr>

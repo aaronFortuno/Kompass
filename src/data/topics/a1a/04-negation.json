@@ -8,6 +8,7 @@
   "shortTitle": "Negation",
   "description": "Negació amb nicht i kein/keine: quan triar-ne cadascuna, on col·locar-les i com concordar kein amb el substantiu negat.",
   "axes": ["sintaxi-ordre-paraules"],
+  "reviewed": true,
   "steps": [
     {
       "id": "intro",
