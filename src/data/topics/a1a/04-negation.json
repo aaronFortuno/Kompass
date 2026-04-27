@@ -108,10 +108,38 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals\n\n**1. Calcar l'ordre del català/castellà i posar _nicht_ davant del verb.**\n\n> Incorrecte: _!!Ich **nicht** arbeite.!!_\n> Correcte: _!!Ich arbeite **nicht**.!!_\n\nEn alemany el verb conjugat **no es mou** de la segona posició. _nicht_ s'acomoda al seu voltant.\n\n**2. Fer servir _nicht_ amb un substantiu que en afirmatiu portaria _ein_.**\n\n> Incorrecte: _!!Ich habe **nicht** ein Auto.!!_\n> Correcte: _!!Ich habe **kein** Auto.!!_\n\nLa combinació _nicht + ein_ no existeix a l'alemany estàndard: es fon en _kein_.\n\n**3. Oblidar la concordança de _kein/keine_.**\n\n> Incorrecte: _!!Ich habe **kein** Schwester.!!_\n> Correcte: _!!Ich habe **keine** Schwester.!!_ (_die Schwester_ és femení.)\n\nÉs la mateixa lògica que _mein/meine_ del tema 1. Si el substantiu és femení singular o plural, sempre **-e**.\n\n**4. Dir _kein Kind_ quan et refereixes a no tenir fills en general.**\n\n> Menys natural: _!!Ich habe **kein** Kind.!!_\n> Més natural: _!!Ich habe **keine** Kinder.!!_\n\nPer a la situació familiar (no tenir descendència), **l'alemany prefereix el plural**. El singular _kein Kind_ no és agramatical, però sona com si parlessis d'un fill específic que no tens.\n\n**5. Col·locar _nicht_ després d'un complement de lloc amb preposició.**\n\n> Poc natural: _!!Ich wohne in Stuttgart **nicht**.!!_\n> Natural: _!!Ich wohne **nicht** in Stuttgart.!!_\n\nQuan negues el lloc, _nicht_ va davant de la preposició, no al final.\n\n**6. Traduir literalment _kein_ com a \"cap\" en català.**\n\n_!!Ich habe keine Kinder.!!_ no es diu en català \"No tinc cap fill\" (això seria un èmfasi especial), sinó simplement \"No tinc fills\". _kein_ no sempre demana \"cap\" a la traducció; moltes vegades n'hi ha prou amb \"no\" + substantiu plural."
+          "bad": "!!Ich **nicht** arbeite.!!",
+          "good": "!!Ich arbeite **nicht**.!!",
+          "why": "Calcar l'ordre del català i posar _nicht_ davant del verb. En alemany el verb conjugat **no es mou** de la segona posició; _nicht_ s'acomoda al seu voltant."
+        },
+        {
+          "bad": "!!Ich habe **nicht** ein Auto.!!",
+          "good": "!!Ich habe **kein** Auto.!!",
+          "why": "Fer servir _nicht_ amb un substantiu que en afirmatiu portaria _ein_. La combinació _nicht + ein_ no existeix a l'alemany estàndard: es fon en _kein_."
+        },
+        {
+          "bad": "!!Ich habe **kein** Schwester.!!",
+          "good": "!!Ich habe **keine** Schwester.!!",
+          "why": "Oblidar la concordança de _kein/keine_. _die Schwester_ és femení → _keine_. Mateixa lògica que _mein/meine_: femení singular o plural, sempre **-e**."
+        },
+        {
+          "bad": "!!Ich habe **kein** Kind.!!",
+          "good": "!!Ich habe **keine** Kinder.!!",
+          "why": "Dir _kein Kind_ per \"no tenir fills en general\". L'alemany prefereix el plural per a la situació familiar. El singular no és agramatical, però sona com si parlessis d'un fill específic que no tens."
+        },
+        {
+          "bad": "!!Ich wohne in Stuttgart **nicht**.!!",
+          "good": "!!Ich wohne **nicht** in Stuttgart.!!",
+          "why": "Col·locar _nicht_ després d'un complement de lloc amb preposició. Quan negues el lloc, _nicht_ va **davant** de la preposició, no al final."
+        },
+        {
+          "bad": "!!Ich habe keine Kinder.!! → \"No tinc ==cap== fill\"",
+          "good": "!!Ich habe keine Kinder.!! → \"No tinc fills\"",
+          "why": "Traduir literalment _kein_ com a \"cap\" en català. _kein_ no sempre demana \"cap\": moltes vegades n'hi ha prou amb \"no\" + substantiu plural."
         }
       ]
     },

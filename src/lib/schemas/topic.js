@@ -22,12 +22,25 @@ import { ContentBlockSchema } from './contentBlock.js';
 const TOPIC_ID_REGEX = /^A\d[ab]-(V?\d+)$/;
 const STEP_ID_REGEX = /^[a-z0-9][a-z0-9-]*$/;
 
+// ─────────────────────────────── pitfalls (compartit entre formats)
+
+const PitfallSchema = z.object({
+  bad: z.string(),
+  good: z.string(),
+  why: z.string().optional(),
+});
+
 // ─────────────────────────────── format llegat
 
 const LegacyStepSchema = z.object({
   id: z.string().regex(STEP_ID_REGEX, 'kebab-case, comença amb alfanumèric').optional(),
-  blocks: z.array(ContentBlockSchema).min(1),
-});
+  blocks: z.array(ContentBlockSchema),
+  heading: z.string().optional(),
+  pitfalls: z.array(PitfallSchema).optional(),
+}).refine(
+  (s) => s.blocks.length > 0 || (Array.isArray(s.pitfalls) && s.pitfalls.length > 0),
+  { message: 'Un step llegat necessita almenys un bloc o un array de pitfalls.' },
+);
 
 // ─────────────────────────────── format ric: peces
 
@@ -76,12 +89,6 @@ const CompareRowSchema = z.object({
   ca: z.string().optional(),
   de: z.string().optional(),
   en: z.string().optional(),
-});
-
-const PitfallSchema = z.object({
-  bad: z.string(),
-  good: z.string(),
-  why: z.string().optional(),
 });
 
 const RichCalloutSchema = z.object({

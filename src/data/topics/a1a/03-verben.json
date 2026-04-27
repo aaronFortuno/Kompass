@@ -103,10 +103,43 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals\n\n**1. Oblidar canviar la terminació del verb.**\nÉs l'error número u dels catalanoparlants: traduir mentalment l'oració i deixar el verb en infinitiu o amb una terminació que no toca.\n\n> Incorrecte: **!!Ich wohnen in Barcelona.!!**\n> Correcte: **!!Ich wohne in Barcelona.!!** (1a sg. → _-e_.)\n\n**2. Barrejar _sein_ i _haben_.**\nEn català diem \"**tinc** 25 anys\", però en alemany es diu \"**sóc** 25 anys\" → **_!!Ich bin 25 Jahre alt.!!_**. L'edat, la nacionalitat i la professió van sempre amb _sein_. En canvi, la fam (_!!Ich habe Hunger.!!_ = lit. \"tinc fam\") i la set (_!!Ich habe Durst.!!_) s'expressen amb _haben_. És qüestió de memòria i de no traduir automàticament.\n\n**3. Oblidar la _-e-_ extra en verbs com _arbeiten_, _finden_.**\n\n> Incorrecte: **!!Du arbeitst!!** / **!!er findt!!**.\n> Correcte: **!!Du arbeit==e==st!!** / **!!er find==e==t!!**.\n\n**4. Posar _-st_ sencer a verbs com _heißen_, _tanzen_.**\n\n> Incorrecte: **!!Du heißst!!** / **!!du tanzst!!**.\n> Correcte: **!!Du heißt!!** / **!!du tanzt!!**. (arrel en _-ß_ o _-z_ → només _-t_.)\n\n**5. Oblidar el canvi vocàlic.**\n\n> Incorrecte: **!!Du sprechst Deutsch!!** / **!!Anna sprecht Englisch!!**.\n> Correcte: **!!Du spr==i==chst Deutsch!!** / **!!Anna spr==i==cht Englisch!!**.\n\nEl canvi _e → i_ només afecta _du_ i _er/sie/es_. _Wir_ i _ihr_ mantenen la _e_: _!!wir sprechen, ihr sprecht!!_.\n\n**6. Confondre les formes iguals.**\nEn alemany _er wohnt_ i _ihr wohnt_ són idèntics, igual que _wir wohnen_ i _sie wohnen_. No hi ha error: el que desambigua és el **pronom** davant del verb. No intentis trobar \"la diferència\" a la terminació: no n'hi ha.\n\n**7. Escriure _ich_ o el verb amb majúscula innecessària.**\nNomés van en majúscula: (a) la paraula que inicia l'oració; (b) els **substantius**; (c) les formes de cortesia _Sie / Ihr / Ihre_. Un verb al mig de oració és sempre minúscula, fins i tot _sein_ o _haben_."
+          "bad": "!!Ich wohnen in Barcelona.!!",
+          "good": "!!Ich wohn==e== in Barcelona.!!",
+          "why": "Oblidar canviar la terminació del verb. És l'error número u dels catalanoparlants: traduir mentalment l'oració i deixar el verb en infinitiu o amb una terminació que no toca. 1a sg. → _-e_."
+        },
+        {
+          "bad": "!!Ich **habe** 25 Jahre alt.!!",
+          "good": "!!Ich **bin** 25 Jahre alt.!!",
+          "why": "Barrejar _sein_ i _haben_. L'edat, la nacionalitat i la professió van sempre amb _sein_. En canvi, la fam (_!!Ich habe Hunger.!!_) i la set (_!!Ich habe Durst.!!_) s'expressen amb _haben_."
+        },
+        {
+          "bad": "!!Du arbeitst!! / !!er findt!!",
+          "good": "!!Du arbeit==e==st!! / !!er find==e==t!!",
+          "why": "Oblidar la _-e-_ extra en verbs com _arbeiten_, _finden_. Quan l'arrel acaba en _-t_ o _-d_, cal inserir una _-e-_ extra."
+        },
+        {
+          "bad": "!!Du heißst!! / !!du tanzst!!",
+          "good": "!!Du heißt!! / !!du tanzt!!",
+          "why": "Posar _-st_ sencer a verbs com _heißen_, _tanzen_. Amb arrel en _-ß_, _-s_ o _-z_, la _du_ només afegeix _-t_."
+        },
+        {
+          "bad": "!!Du sprechst Deutsch!! / !!Anna sprecht Englisch!!",
+          "good": "!!Du spr==i==chst Deutsch!! / !!Anna spr==i==cht Englisch!!",
+          "why": "Oblidar el canvi vocàlic _e → i_. Només afecta _du_ i _er/sie/es_; _wir_ i _ihr_ mantenen la _e_: _!!wir sprechen, ihr sprecht!!_."
+        },
+        {
+          "bad": "!!er wohnt!! ≠ !!ihr wohnt!!?",
+          "good": "!!er wohnt!! = !!ihr wohnt!!",
+          "why": "Confondre les formes iguals. En alemany _er wohnt_ i _ihr wohnt_ són idèntics, igual que _wir wohnen_ i _sie wohnen_. El que desambigua és el **pronom**, no la terminació."
+        },
+        {
+          "bad": "!!**ich** Arbeite bei Audi.!!",
+          "good": "!!**Ich** arbeite bei Audi.!!",
+          "why": "Escriure _ich_ o el verb amb majúscula innecessària. Només van en majúscula: la paraula que inicia l'oració, els **substantius** i les formes de cortesia _Sie / Ihr / Ihre_."
         }
       ]
     },

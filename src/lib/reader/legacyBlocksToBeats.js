@@ -207,8 +207,18 @@ export function legacyBlocksToBeats(step) {
     return blockToBeats(step.blocks[0]);
   }
   const beats = [];
+  // Si el step té heading propi (usat amb pitfalls estructurats)
+  if (step.heading) {
+    beats.push({ type: 'heading', text: step.heading, kicker: step.id });
+  }
   for (const block of step.blocks) {
     beats.push(...blockToBeats(block));
+  }
+  // Pitfalls estructurats (format ric dins de step llegat)
+  if (Array.isArray(step.pitfalls) && step.pitfalls.length) {
+    step.pitfalls.forEach((p, i) => {
+      beats.push({ type: 'pitfall', pit: p, idx: i + 1, total: step.pitfalls.length });
+    });
   }
   if (beats.length === 0) {
     beats.push({ type: 'heading', text: step.id || '(sense contingut)', kicker: '' });
