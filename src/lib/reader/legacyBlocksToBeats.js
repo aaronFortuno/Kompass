@@ -44,7 +44,7 @@ function looksLikeCompareTable(table) {
 function splitSentences(text) {
   if (!text) return [];
   return text
-    .split(/(?<=[.!?…])\s+/)
+    .split(/(?<=(?<!\d)[.!?…])\s+/)
     .map((s) => s.trim())
     .filter(Boolean);
 }

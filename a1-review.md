@@ -69,6 +69,7 @@ absoluta: cal confirmar manualment abans d'aplicar.
 
 - **Contingut:**
 - **Tècnic:**
+  - ~~[A1a-3 · pitfalls · 2/33] cal revisar el parsejat de tot aquest pas, perquè no està ben fet. Per exemple, tenim una pàgina que només mostra "**1.", quan en realitat hauria d'estar agrupat amb el següent. Passa amb varis beats aquí en aquest pas~~ — **Resolt:** `splitSentences` tallava després de `\d.` (numeració ordinal). Fix: lookbehind negatiu `(?<=(?<!\d)[.!?…])` a `buildBeats.js` i `legacyBlocksToBeats.js`.
 - **Estructural:**
 
 ### A1a-4 · Nein/Nicht/Kein

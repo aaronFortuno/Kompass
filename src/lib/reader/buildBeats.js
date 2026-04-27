@@ -15,7 +15,7 @@
 function splitSentences(text) {
   if (!text) return [];
   const parts = text
-    .split(/(?<=[.!?…])\s+/)
+    .split(/(?<=(?<!\d)[.!?…])\s+/)
     .map((s) => s.trim())
     .filter(Boolean);
   if (parts.length === 0) return [text];
