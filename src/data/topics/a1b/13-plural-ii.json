@@ -37,7 +37,7 @@
       ]
     },
     {
-      "id": "repas-taula",
+      "id": "recap-table",
       "blocks": [
         {
           "type": "explanation",
@@ -71,7 +71,7 @@
       ]
     },
     {
-      "id": "check-repas",
+      "id": "check-recap",
       "blocks": [
         { "type": "exercise", "exerciseId": "A1b-13-ex-01", "variant": "quick-check" }
       ]

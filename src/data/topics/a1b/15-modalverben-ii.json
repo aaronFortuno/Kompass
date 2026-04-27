@@ -109,7 +109,7 @@
       ]
     },
     {
-      "id": "check-7-sintesi-lliure",
+      "id": "check-7-synthesis-freeform",
       "blocks": [
         { "type": "exercise", "exerciseId": "A1b-15-ex-07", "variant": "assessment" }
       ]

@@ -46,7 +46,7 @@
       ]
     },
     {
-      "id": "repas-am-im-um",
+      "id": "recap-am-im-um",
       "blocks": [
         {
           "type": "explanation",
@@ -196,7 +196,7 @@
       ]
     },
     {
-      "id": "quadre-sintesi",
+      "id": "summary-table",
       "blocks": [
         {
           "type": "explanation",
@@ -231,7 +231,7 @@
       ]
     },
     {
-      "id": "ampliacio-pitfalls",
+      "id": "extended-pitfalls",
       "blocks": [
         {
           "type": "explanation",
