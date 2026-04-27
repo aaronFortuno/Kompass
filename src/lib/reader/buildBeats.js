@@ -12,6 +12,11 @@
  *   (exercise: un sol beat 'exercise')
  */
 
+function hasUnclosedMarker(str) {
+  return (str.match(/\*\*/g) || []).length % 2 !== 0
+      || (str.match(/==/g) || []).length % 2 !== 0;
+}
+
 function splitSentences(text) {
   if (!text) return [];
   const parts = text
@@ -19,7 +24,16 @@ function splitSentences(text) {
     .map((s) => s.trim())
     .filter(Boolean);
   if (parts.length === 0) return [text];
-  return parts;
+  // Reagrupa parts amb marcadors de format desaparellats (** o ==).
+  const merged = [];
+  for (const part of parts) {
+    if (merged.length > 0 && hasUnclosedMarker(merged[merged.length - 1])) {
+      merged[merged.length - 1] += ' ' + part;
+    } else {
+      merged.push(part);
+    }
+  }
+  return merged;
 }
 
 export function buildBeats(step) {

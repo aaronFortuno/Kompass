@@ -41,12 +41,27 @@ function looksLikeCompareTable(table) {
   );
 }
 
+function hasUnclosedMarker(str) {
+  return (str.match(/\*\*/g) || []).length % 2 !== 0
+      || (str.match(/==/g) || []).length % 2 !== 0;
+}
+
 function splitSentences(text) {
   if (!text) return [];
-  return text
+  const parts = text
     .split(/(?<=(?<!\d)[.!?…])\s+(?=\p{Lu}|[*_]{1,2}\p{Lu})/u)
     .map((s) => s.trim())
     .filter(Boolean);
+  // Reagrupa parts amb marcadors de format desaparellats (** o ==).
+  const merged = [];
+  for (const part of parts) {
+    if (merged.length > 0 && hasUnclosedMarker(merged[merged.length - 1])) {
+      merged[merged.length - 1] += ' ' + part;
+    } else {
+      merged.push(part);
+    }
+  }
+  return merged;
 }
 
 function parseMarkdownTable(tableLines) {
