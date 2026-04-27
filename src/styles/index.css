@@ -1682,16 +1682,16 @@ html.dark .topic-provisional-badge {
 .kf-beat-syn-title {
   font-family: 'Newsreader', serif;
   font-weight: 500;
-  font-size: var(--kf-hero);
-  margin: 0 0 18px;
-  letter-spacing: -0.015em;
+  font-size: var(--kf-body);
+  margin: 0 0 12px;
+  letter-spacing: -0.01em;
 }
 .kf-beat-syn table {
   border-collapse: collapse;
   font-family: 'Newsreader', serif;
   font-size: var(--kf-body);
   width: 100%;
-  max-width: 720px;
+  max-width: 900px;
 }
 .kf-beat-syn th {
   text-align: left;
