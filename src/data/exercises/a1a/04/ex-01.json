@@ -3,7 +3,7 @@
   "id": "A1a-4-ex-01",
   "topicId": "A1a-4",
   "title": "On va _nicht_ a l'oració?",
-  "prompt": "Tria en quin dels dos buits va _nicht_. L'altre buit queda com `—` (buit).",
+  "prompt": "Tria en quin dels dos buits va _nicht_. L'altre buit queda com _(buit)_.",
   "difficulty": 1,
   "tags": ["nicht", "posicio"],
   "stimulus": {
@@ -23,27 +23,27 @@
   "interaction": {
     "type": "dropdownFill",
     "slots": [
-      { "blankId": "1a", "options": ["nicht", "—"] },
-      { "blankId": "1b", "options": ["nicht", "—"] },
-      { "blankId": "2a", "options": ["nicht", "—"] },
-      { "blankId": "2b", "options": ["nicht", "—"] },
-      { "blankId": "3a", "options": ["nicht", "—"] },
-      { "blankId": "3b", "options": ["nicht", "—"] },
-      { "blankId": "4a", "options": ["nicht", "—"] },
-      { "blankId": "4b", "options": ["nicht", "—"] }
+      { "blankId": "1a", "options": ["nicht", "(buit)"] },
+      { "blankId": "1b", "options": ["nicht", "(buit)"] },
+      { "blankId": "2a", "options": ["nicht", "(buit)"] },
+      { "blankId": "2b", "options": ["nicht", "(buit)"] },
+      { "blankId": "3a", "options": ["nicht", "(buit)"] },
+      { "blankId": "3b", "options": ["nicht", "(buit)"] },
+      { "blankId": "4a", "options": ["nicht", "(buit)"] },
+      { "blankId": "4b", "options": ["nicht", "(buit)"] }
     ]
   },
   "validation": {
     "type": "slotMap",
     "answers": {
-      "1a": "—",
+      "1a": "(buit)",
       "1b": "nicht",
       "2a": "nicht",
-      "2b": "—",
+      "2b": "(buit)",
       "3a": "nicht",
-      "3b": "—",
+      "3b": "(buit)",
       "4a": "nicht",
-      "4b": "—"
+      "4b": "(buit)"
     }
   },
   "feedback": {
