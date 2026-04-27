@@ -41,7 +41,7 @@
           "type": "callout",
           "variant": "info",
           "title": "Idea clau d'aquesta sessió",
-          "body": "Del PDF de l'IOC: _\"Amb la pregunta **Wann...?** preguntem per un moment concret o per la durada d'una acció.\"_ I una regla nova, silenciosa però importantíssima per al proper bloc: ==quan responem amb un complement que no porta preposició, aquest complement es declina en **acusatiu**==."
+          "body": "Amb la pregunta **_Wann...?_** preguntem per un moment concret o per la durada d'una acció. I una regla nova, silenciosa però importantíssima per al proper bloc: ==quan responem amb un complement que no porta preposició, aquest complement es declina en **acusatiu**==."
         }
       ]
     },
@@ -155,7 +155,7 @@
       "blocks": [
         {
           "type": "explanation",
-          "body": "#### Complement temporal **sense preposició** → ==Acusatiu==\n\nAquesta és la regla invisible més potent d'aquesta lliçó. Del PDF:\n\n> _\"Quan responem amb un complement que no porta preposició, aquest complement es declina en **acusatiu**.\"_\n>\n> Exemple: _Ich mache **dieses Jahr** mein Abitur._ (Aquest any em trec el batxillerat.)\n\n**Per què acusatiu?** Perquè el grup nominal _dieses Jahr_ no té cap preposició davant que el reculli. En alemany, un grup nominal **nu** que fa de complement temporal es marca morfològicament en ==acusatiu==. És un patró que veuràs moltes vegades."
+          "body": "#### Complement temporal **sense preposició** → ==Acusatiu==\n\nAquesta és la regla invisible més potent d'aquesta lliçó:\n\n> Quan responem amb un complement que no porta preposició, aquest complement es declina en **acusatiu**.\n>\n> Exemple: _Ich mache **dieses Jahr** mein Abitur._ (Aquest any em trec el batxillerat.)\n\n**Per què acusatiu?** Perquè el grup nominal _dieses Jahr_ no té cap preposició davant que el reculli. En alemany, un grup nominal **nu** que fa de complement temporal es marca morfològicament en ==acusatiu==. És un patró que veuràs moltes vegades."
         },
         {
           "type": "table",
