@@ -49,12 +49,29 @@ function splitSentences(text) {
     .filter(Boolean);
 }
 
+function parseMarkdownTable(tableLines) {
+  // Separa una línia de taula en cel·les, eliminant les barres exteriors.
+  const parseCells = (line) =>
+    line
+      .replace(/^\|/, '')
+      .replace(/\|$/, '')
+      .split('|')
+      .map((c) => c.trim());
+
+  const headers = parseCells(tableLines[0]);
+  // Saltem la línia separadora (|---|---|)
+  const startIdx = tableLines[1] && /^[\s|:-]+$/.test(tableLines[1]) ? 2 : 1;
+  const rows = tableLines.slice(startIdx).map(parseCells);
+  return { headers, rows };
+}
+
 function markdownToBeats(body) {
   const beats = [];
   if (!body) return beats;
 
   const lines = body.split(/\n/);
   let paragraphBuffer = [];
+  let tableBuffer = [];
 
   const flushParagraph = () => {
     if (paragraphBuffer.length === 0) return;
@@ -67,12 +84,28 @@ function markdownToBeats(body) {
     });
   };
 
+  const flushTable = () => {
+    if (tableBuffer.length === 0) return;
+    const table = parseMarkdownTable(tableBuffer);
+    tableBuffer = [];
+    beats.push({ type: 'syn-table', table });
+  };
+
   for (const raw of lines) {
     const line = raw.trim();
     if (line === '') {
+      flushTable();
       flushParagraph();
       continue;
     }
+    // Taula markdown: línies que comencen i acaben amb |
+    if (/^\|.*\|$/.test(line)) {
+      flushParagraph();
+      tableBuffer.push(line);
+      continue;
+    }
+    // Si veníem d'una taula i ara no és taula, tanquem-la
+    flushTable();
     // Encapçalaments markdown ### / #### → beat heading
     const headingMatch = /^(#{3,4})\s+(.*)$/.exec(line);
     if (headingMatch) {
@@ -96,6 +129,7 @@ function markdownToBeats(body) {
     // Línia normal: s'acumula al paràgraf.
     paragraphBuffer.push(line);
   }
+  flushTable();
   flushParagraph();
 
   return beats;
