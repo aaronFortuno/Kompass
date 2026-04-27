@@ -207,16 +207,38 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals per a catalanoparlants",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. Confondre _helfen/gefallen_ amb verbs d'acusatiu.**\n\nEl català _ajudar algú_ fa pensar que el complement és directe. En alemany no: ==_jemandem helfen_==.\n\n- _Ich helfe ==meinen Bruder==._ ❌\n- _Ich helfe ==meinem Bruder==._ ✅\n\n**2. Oblidar la _-n_ del plural.**\n\nEl plural en datiu ==afegeix _-n_== al substantiu (si no l'acaba ja).\n\n- _Ich spiele mit ==den Kinder==._ ❌\n- _Ich spiele mit ==den Kindern==._ ✅\n\n**3. Calcar la preposició del català amb Wechsel.**\n\n_Sóc a la cuina_ pot fer triar _in_ + acusatiu (com _vaig a_). Però si el verb és ==estar==, és _Wo? → datiu_.\n\n- _Ich bin ==in die Küche==._ ❌\n- _Ich bin ==in der Küche==._ ✅\n\n**4. Ordre de pronoms.**\n\nEn català _t'ho dono_ és intuïtiu, però en alemany ==acusatiu abans de datiu== quan tots dos són pronoms.\n\n- _Ich gebe ==dir es==._ ❌\n- _Ich gebe ==es dir==._ ✅"
+          "bad": "!!Ich helfe **meinen** Bruder.!!",
+          "good": "!!Ich helfe ==meinem== Bruder.!!",
+          "why": "Confondre _helfen/gefallen_ amb verbs d'acusatiu. El català _ajudar algú_ fa pensar que el complement és directe. En alemany: ==_jemandem helfen_== (datiu)."
         },
         {
-          "type": "callout",
-          "variant": "danger",
-          "title": "Paranys 5 i 6",
-          "body": "**5. Dir _\"Ich bin kalt\"_.** És un error molt típic (calc de l'anglès/català _sóc fred_). En alemany la fórmula correcta és impersonal amb datiu.\n\n- _Ich bin kalt._ ❌ (vol dir _sóc fred_ com a persona)\n- ==_Mir ist kalt._== ✅ — _Tinc fred._\n\n**6. Oblidar la contracció.** _zu dem / zu der / bei dem / an dem / in dem / von dem_ es ==contrauen== sempre en el registre natural: _zum, zur, beim, am, im, vom_.\n\n- _Ich gehe ==zu dem== Arzt._ ❌ (formal, marcat)\n- _Ich gehe ==zum== Arzt._ ✅"
+          "bad": "!!Ich spiele mit den **Kinder**.!!",
+          "good": "!!Ich spiele mit den ==Kindern==.!!",
+          "why": "Oblidar la ==-n== del plural. El datiu plural afegeix _-n_ al substantiu (si no l'acaba ja)."
+        },
+        {
+          "bad": "!!Ich bin **in die** Küche.!!",
+          "good": "!!Ich bin ==in der== Küche.!!",
+          "why": "Calcar la preposició del català amb Wechsel. _Sóc a la cuina_ és ubicació (==_Wo?_ → datiu==), no direcció. _In_ + acusatiu seria _vaig a la cuina_."
+        },
+        {
+          "bad": "!!Ich gebe **dir es**.!!",
+          "good": "!!Ich gebe ==es dir==.!!",
+          "why": "Ordre de pronoms. Quan tots dos complements són pronoms, ==acusatiu abans de datiu==: _es dir_, no _dir es_."
+        },
+        {
+          "bad": "!!**Ich bin** kalt.!!",
+          "good": "!!==Mir ist== kalt.!!",
+          "why": "Calc de l'anglès/català _sóc fred_. En alemany la fórmula correcta és ==impersonal amb datiu==: _Mir ist kalt_ = tinc fred. _Ich bin kalt_ vol dir que ets una persona freda."
+        },
+        {
+          "bad": "!!Ich gehe **zu dem** Arzt.!!",
+          "good": "!!Ich gehe ==zum== Arzt.!!",
+          "why": "Oblidar la contracció. _zu dem, zu der, bei dem, an dem, in dem, von dem_ es ==contrauen== sempre en el registre natural: _zum, zur, beim, am, im, vom_."
         }
       ]
     },

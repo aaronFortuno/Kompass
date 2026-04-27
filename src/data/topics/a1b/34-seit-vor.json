@@ -173,16 +173,33 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals per a catalanoparlants",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. Traduir _\"fa X temps\"_ sempre amb _seit_.**\nÉs l'error estrella. _\"Fa tres anys\"_ en català serveix tant per a un **moment puntual** (_fa tres anys que va morir_) com per a una **durada** (_fa tres anys que hi visc_). En alemany s'han de separar.\n\n- _Fa tres anys que la Yara va arribar a Alemanya._ → ==**_Vor_ drei Jahren**== ist Yara in Deutschland angekommen. (moment)\n- _Fa tres anys que la Yara viu a Alemanya._ → ==**_Seit_ drei Jahren**== wohnt Yara in Deutschland. (durada que continua)\n\nSi pots dir _\"des de fa X\"_ i té sentit → _seit_. Si és un punt passat i prou → _vor_.\n\n**2. Usar _seit_ amb verbs en Perfekt/Präteritum.**\n_seit_ vol **present** perquè la situació continua. Si poses un passat, xoca.\n\n- Incorrecte: _Ich habe seit zwei Jahren Deutsch gelernt._\n- Correcte: _Ich lerne ==**seit**== zwei Jahren Deutsch._ (i encara n'aprenc)\n\nSi realment vols dir _\"vaig estudiar alemany durant dos anys\"_ (acabat), no fas servir _seit_ — fas servir un altre tipus de complement de durada (_zwei Jahre lang_, que veuràs més endavant).\n\n**3. Usar _vor_ amb verbs en present.**\n_vor_ apunta a un moment **acabat**. El verb natural és Perfekt (o Präteritum amb auxiliars i modals).\n\n- Incorrecte: _Vor drei Jahren komme ich in Deutschland an._\n- Correcte: _==**Vor**== drei Jahren ==**bin**== ich in Deutschland ==**angekommen**==._"
+          "bad": "!!**Seit** drei Jahren ist Yara in Deutschland angekommen.!!",
+          "good": "!!**Vor** drei Jahren ist Yara in Deutschland angekommen.!!",
+          "why": "Traduir _\"fa X temps\"_ sempre amb _seit_. En català, _\"fa tres anys\"_ serveix per a moments puntuals i durades. En alemany: si és un punt passat → ==_vor_==. Si és una durada que continua → ==_seit_==."
         },
         {
-          "type": "callout",
-          "variant": "danger",
-          "title": "Paranys 4 i 5",
-          "body": "**4. Oblidar la _-n_ del datiu plural.** Amb _Jahre, Monate, Tage_, cal afegir _-n_.\n\n- Incorrecte: _seit drei Jahre_ / _vor zwei Monate_\n- Correcte: _seit drei Jahr==n==_ · _vor zwei Monat==en==_\n\n**5. Confondre _vor_ temporal amb _vor_ local.** _vor_ també pot ser preposició de **lloc** (\"davant de\", A1b-19), i allà pot anar amb datiu o acusatiu (Wechselpräposition). Amb temps, ==sempre és datiu pur==.\n\n- _Die Katze sitzt **vor** dem Haus._ (davant de la casa — local)\n- _Ich habe **vor** einem Jahr angefangen._ (fa un any — temporal)\n\nEl context distingeix un ús de l'altre sense problema."
+          "bad": "!!Ich **habe** seit zwei Jahren Deutsch **gelernt**.!!",
+          "good": "!!Ich ==lerne== seit zwei Jahren Deutsch.!!",
+          "why": "Usar _seit_ amb verbs en Perfekt. _Seit_ vol ==**present**== perquè la situació continua. Si l'acció ja ha acabat, no fas servir _seit_."
+        },
+        {
+          "bad": "!!Vor drei Jahren **komme** ich in Deutschland **an**.!!",
+          "good": "!!Vor drei Jahren ==**bin**== ich in Deutschland ==**angekommen**==.!!",
+          "why": "Usar _vor_ amb verbs en present. _Vor_ apunta a un moment ==acabat==. El verb natural és Perfekt (o Präteritum amb auxiliars i modals)."
+        },
+        {
+          "bad": "!!seit drei **Jahre** / vor zwei **Monate**!!",
+          "good": "!!seit drei ==Jahren== / vor zwei ==Monaten==!!",
+          "why": "Oblidar la ==-n== del datiu plural. Amb _Jahre, Monate, Tage_, cal afegir _-n_ perquè _seit_ i _vor_ regeixen datiu."
+        },
+        {
+          "bad": "!!**Vor** dem Haus habe ich angefangen. _(confós amb temporal)_!!",
+          "good": "!!**Vor** einem Jahr habe ich angefangen. _(temporal)_ / Die Katze sitzt **vor** dem Haus. _(local)_!!",
+          "why": "Confondre _vor_ temporal amb _vor_ local. Amb temps, ==sempre és datiu pur==. Com a Wechselpräposition local, pot ser datiu o acusatiu. El context distingeix un ús de l'altre."
         }
       ]
     },

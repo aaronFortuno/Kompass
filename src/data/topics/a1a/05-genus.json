@@ -104,10 +104,43 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals\n\nAbans d'arribar als exercicis finals, vigila aquests errors típics:\n\n**1. Transferir el gènere del català o el castellà.**\nEl gènere no es conserva entre llengües. Pots trobar coincidències (_!!die Nation!!_ / _la nació_, totes dues femenines), però també contradiccions directes: **_!!das Auto!!_** és neutre, **_!!der Tisch!!_** és masculí, **_!!die Butter!!_** és femenina. Aprèn cada paraula **amb el seu article**.\n\n**2. Ignorar les terminacions diminutives.**\nSi veus _-chen_ o _-lein_, és **das** encara que la persona o cosa sigui dona o mascle: _!!das Mädchen!!_ (noia, neutre), _!!das Kaninchen!!_ (conill, neutre).\n\n**3. Confondre _die_ (femení singular) amb _die_ (plural).**\n_!!Die Tasche!!_ (la bossa, singular femení) i _!!die Taschen!!_ (les bosses, plural) tenen el mateix article. Distingeixes pel substantiu i pel verb.\n\n**4. Pensar que totes les begudes alcohòliques són _der_.**\nLa regla funciona per a la majoria (_!!der Wein, der Sekt, der Schnaps!!_), però **_!!das Bier!!_** és neutre. És l'excepció clàssica i cau sovint als exàmens.\n\n**5. Aprendre només la paraula, sense l'article.**\nÉs el parany més important. Apuntar _Tisch_ a la llibreta en lloc de _!!der Tisch!!_ sembla estalviar temps, però t'obliga a memoritzar el gènere més tard. És més eficient aprendre els dos alhora **des del primer contacte** amb la paraula.\n\n**6. Aplicar regles com si fossin absolutes.**\nLes regles de gènere alemanyes són **tendències fortes**, no lleis. El 98% de femenins en _-e_ deixa un 2% d'excepcions (_!!der Name!!_, _!!der Käse!!_, _!!das Auge!!_). Confia en la regla per defecte, però no t'esgarrifis quan trobis una excepció: simplement **memoritza-la com a tal**.\n\n**7. Oblidar la majúscula inicial dels substantius.**\nEn alemany, **tots els substantius porten majúscula**, sempre: _!!der Tisch!!_, _!!die Tasche!!_, _!!das Auto!!_. Escriure _der tisch_ és una falta d'ortografia, no una variant estilística."
+          "bad": "!!die Auto!! / !!der Butter!!",
+          "good": "!!==das== Auto!! / !!==die== Butter!!",
+          "why": "Transferir el gènere del català o el castellà. El gènere no es conserva entre llengües: _Auto_ és neutre, _Butter_ és femenina. Aprèn cada paraula **amb el seu article**."
+        },
+        {
+          "bad": "!!==die== Mädchen!! / !!==die== Kaninchen!!",
+          "good": "!!==das== Mädchen!! / !!==das== Kaninchen!!",
+          "why": "Ignorar les terminacions diminutives. Si veus _-chen_ o _-lein_, és **das** encara que la persona o cosa sigui dona o mascle."
+        },
+        {
+          "bad": "!!Die Tasche ==sind== schön.!!",
+          "good": "!!Die Tasche ==ist== schön.!!",
+          "why": "Confondre _die_ (femení singular) amb _die_ (plural). _Die Tasche_ (singular) i _die Taschen_ (plural) tenen el mateix article. Distingeixes pel substantiu i pel verb."
+        },
+        {
+          "bad": "!!==der== Bier!!",
+          "good": "!!==das== Bier!!",
+          "why": "Pensar que totes les begudes alcohòliques són _der_. La regla funciona per a la majoria (_der Wein, der Sekt, der Schnaps_), però **_das Bier_** és neutre. És l'excepció clàssica."
+        },
+        {
+          "bad": "!!Tisch!!",
+          "good": "!!==der== Tisch!!",
+          "why": "Aprendre només la paraula, sense l'article. Apuntar _Tisch_ a la llibreta en lloc de _der Tisch_ t'obliga a memoritzar el gènere més tard. Aprèn els dos alhora **des del primer contacte**."
+        },
+        {
+          "bad": "!!==die== Name!! / !!==die== Käse!!",
+          "good": "!!==der== Name!! / !!==der== Käse!!",
+          "why": "Aplicar regles com si fossin absolutes. El 98% de femenins en _-e_ deixa un 2% d'excepcions. Confia en la regla per defecte, però memoritza les excepcions quan apareguin."
+        },
+        {
+          "bad": "!!der tisch, die tasche, das auto!!",
+          "good": "!!der ==T==isch, die ==T==asche, das ==A==uto!!",
+          "why": "Oblidar la majúscula inicial dels substantius. En alemany, **tots els substantius porten majúscula**, sempre. Escriure _der tisch_ és una falta d'ortografia."
         }
       ]
     },

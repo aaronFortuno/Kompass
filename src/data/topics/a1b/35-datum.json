@@ -164,16 +164,38 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals per a catalanoparlants",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. Oblidar la declinació de l'ordinal.**\n\nEn català diem _\"el cinc d'octubre\"_ i _\"el 5 d'octubre\"_ igual. En alemany, ==_der fünfte Oktober_== (nominatiu) i ==_am fünften Oktober_== (datiu) són formes diferents.\n\n- Incorrecte: _Am fünfte Oktober._ ❌\n- Correcte: _Am ==fünften== Oktober._ ✅\n\n**2. Dir _\"in 1990\"_ (calcat de l'anglès).**\n\nL'any va sense preposició, o amb _im Jahr_.\n\n- Incorrecte: _Ich bin ==in 1990== geboren._ ❌\n- Correcte: _Ich bin ==1990== geboren._ ✅ o _Ich bin ==im Jahr 1990== geboren._ ✅\n\n**3. Oblidar el punt després del número en format numèric.**\n\nEl punt ==converteix el número en ordinal==. Sense punt, és cardinal.\n\n- _5 Oktober_ → _fünf Oktober_ ❌ (no té sentit; seria com dir \"cinc octubre\")\n- _==5.== Oktober_ → _der fünfte Oktober_ ✅\n\n**4. Pronunciar els anys com a cardinals sencers (abans de 2000).**\n\n- Incorrecte (però comprensible): _1492 = tausendvierhundertzweiundneunzig_\n- Correcte (idiomàtic): _1492 = ==vierzehnhundertzweiundneunzig==_ (14-cents-92)\n\nA partir del 2000 sí que es fa amb cardinal sencer: _2016 = zweitausendsechzehn_."
+          "bad": "!!Am **fünfte** Oktober.!!",
+          "good": "!!Am ==fünften== Oktober.!!",
+          "why": "Oblidar la declinació de l'ordinal. En alemany, ==_der fünfte Oktober_== (nominatiu, _-e_) i ==_am fünften Oktober_== (datiu, _-en_) són formes diferents."
         },
         {
-          "type": "callout",
-          "variant": "danger",
-          "title": "Paranys 5 i 6",
-          "body": "**5. Confondre l'ordre dia/mes en format numèric.** L'alemany segueix el format europeu **DD.MM.AAAA**, com el català. No confonguis amb el format americà (MM/DD/YYYY). _5.10.2016_ = 5 d'octubre de 2016.\n\n**6. Dir _\"der erste von Januar\"_ (calc del català _\"el primer de gener\"_).** En alemany no hi ha preposició entre ordinal i mes. Es juxtaposen directament. Incorrecte: _der erste ==von== Januar_ ❌ · Correcte: _==der erste Januar==_ ✅"
+          "bad": "!!Ich bin **in 1990** geboren.!!",
+          "good": "!!Ich bin ==1990== geboren.!!",
+          "why": "Dir _\"in 1990\"_ (calcat de l'anglès). L'any va ==sense preposició==, o amb _im Jahr_: _Ich bin im Jahr 1990 geboren._"
+        },
+        {
+          "bad": "!!**5** Oktober!!",
+          "good": "!!==5.== Oktober!!",
+          "why": "Oblidar el punt després del número en format numèric. El punt ==converteix el número en ordinal==. Sense punt, _5 Oktober_ seria \"cinc octubre\" (cardinal), que no té sentit."
+        },
+        {
+          "bad": "!!1492 = **tausendvierhundertzweiundneunzig**!!",
+          "good": "!!1492 = ==vierzehnhundertzweiundneunzig==!!",
+          "why": "Pronunciar els anys anteriors al 2000 com a cardinals sencers. El sistema idiomàtic és ==segle + _hundert_ + desenes==: 14-cents-92. A partir del 2000 sí que es fa amb cardinal sencer."
+        },
+        {
+          "bad": "!!**10.5.2016** _(mes primer)_!!",
+          "good": "!!==5.10.2016== _(dia primer)_!!",
+          "why": "Confondre l'ordre dia/mes en format numèric. L'alemany segueix el format europeu ==**DD.MM.AAAA**==, com el català. No confonguis amb el format americà (MM/DD)."
+        },
+        {
+          "bad": "!!der erste **von** Januar!!",
+          "good": "!!==der erste Januar==!!",
+          "why": "Calc del català _\"el primer de gener\"_. En alemany ==no hi ha preposició== entre ordinal i mes: es juxtaposen directament."
         }
       ]
     },

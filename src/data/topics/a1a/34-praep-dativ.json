@@ -140,20 +140,33 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys típics de catalanoparlants",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys típics de catalanoparlants\n\n**1. _nach_ vs. _zu_** — tots dos es tradueixen sovint per \"a / cap a\", però es reparteixen la feina:\n\n- _nach_ + ciutats, països (sense article), punts cardinals, _Hause_: _!!nach Berlin!!_, _!!nach Spanien!!_, _!!nach Hause!!_.\n- _zu_ + persones o institucions: _!!zum Arzt!!_, _!!zur Schule!!_, _!!zu meinem Freund!!_.\n- Incorrecte: _Ich gehe ==nach== dem Arzt._ → Correcte: _!!Ich gehe ==zum== Arzt.!!_\n\n**2. _seit_ no és \"desde hace\" amb pretèrit** — en alemany, _seit_ + datiu s'usa amb **present** per a accions que continuen:\n\n- Correcte: _!!Ich lerne ==seit zwei Jahren== Deutsch.!!_ (Fa dos anys que aprenc…)\n- Incorrecte: _Ich habe seit zwei Jahren Deutsch gelernt._ (això vol dir \"ho vaig aprendre durant dos anys\", ja no ho faig).\n\n**3. _mit_ inclou el mitjà de transport** — en català dius \"vaig **en** tren\"; en alemany: _!!Ich fahre ==mit dem== Zug.!!_\n\n**4. Plural amb _-n_** — no t'oblidis d'afegir _-n_ al substantiu plural en datiu si no l'acaba ja:\n\n- _die Kinder_ → _!!mit den Kinder==n==!!_\n- _die Freunde_ → _!!bei den Freunde==n==!!_"
+          "bad": "!!Ich gehe ==nach== dem Arzt.!!",
+          "good": "!!Ich gehe ==zum== Arzt.!!",
+          "why": "Confondre _nach_ i _zu_. _nach_ → ciutats, països sense article, _nach Hause_. _zu_ → persones o institucions (_zum Arzt, zur Schule, zu meinem Freund_)."
         },
         {
-          "type": "callout",
-          "variant": "warning",
-          "title": "_bei_ no és _mit_",
-          "body": "_bei_ és localització (\"a casa de\", \"a l'empresa X\"); _mit_ és companyia.\n\n- _!!Ich wohne **bei** meinen Eltern.!!_ (visc a casa dels pares)\n- _!!Ich wohne **mit** meinen Eltern.!!_ (visc amb els pares — convivència, pot ser a qualsevol lloc)"
+          "bad": "!!Ich ==habe== seit zwei Jahren Deutsch ==gelernt==.!!",
+          "good": "!!Ich ==lerne== seit zwei Jahren Deutsch.!!",
+          "why": "_seit_ s'usa amb **present** per a accions que continuen. Amb pretèrit vol dir «ho vaig fer durant X anys, ja no ho faig»."
         },
         {
-          "type": "explanation",
-          "body": "**Recordatori plural _-n_**: excepcions a la marca de plural en datiu són els plurals en _-s_ o en _-n_: _!!mit den Autos!!_ (no \"Autosn\"), _!!mit den Frauen!!_ (ja acaba en _-n_)."
+          "bad": "!!Ich fahre ==en dem== Zug.!!",
+          "good": "!!Ich fahre ==mit dem== Zug.!!",
+          "why": "En català dius «vaig **en** tren»; en alemany el mitjà de transport va amb _mit_ + datiu, no amb una preposició calcada del català."
+        },
+        {
+          "bad": "!!mit den ==Kinder==!!",
+          "good": "!!mit den ==Kindern==!!",
+          "why": "Oblidar la _-n_ de plural en datiu. Cal afegir _-n_ al substantiu plural si no l'acaba ja. Excepcions: plurals en _-s_ (_Autos_) o en _-n_ (_Frauen_)."
+        },
+        {
+          "bad": "!!Ich wohne ==mit== meinen Eltern.!! (amb la intenció de «a casa dels pares»)",
+          "good": "!!Ich wohne ==bei== meinen Eltern.!!",
+          "why": "Confondre _bei_ i _mit_. _bei_ = localització («a casa de», «a l'empresa X»). _mit_ = companyia. _Bei meinen Eltern_ = a casa dels pares; _mit meinen Eltern_ = amb els pares (pot ser a qualsevol lloc)."
         }
       ]
     },

@@ -183,10 +183,43 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals\n\n**1. Afegir _-e_ al neutre.**\nEl neutre sempre es comporta com el masculí en nominatiu.\n> Incorrecte: ~~meine Glas~~.\n> Correcte: **!!mein Glas!!**.\n\n**2. Oblidar _-e_ al plural.**\nEl plural es comporta com el femení en nominatiu.\n> Incorrecte: ~~mein Stifte~~.\n> Correcte: **!!meine Stifte!!**.\n\n**3. Escriure _euere_ en comptes de _eure_.**\nL'única irregularitat del tema: _euer_ perd la _-e-_ del mig quan s'allarga.\n> Incorrecte: ~~euere Tasche~~.\n> Correcte: **!!eure Tasche!!**.\n\n**4. Confondre _ihr_ (d'ella / d'ells / vosaltres pronom personal) amb _Ihr_ (de Vostè).**\nEn context formal, la majúscula és **no negociable**.\n> Incorrecte: **!!ist das ihr Stift, Herr Meier?!!**\n> Correcte: **!!Ist das ==I==hr Stift, Herr Meier?!!**\n\n**5. Usar _sein_ per un posseïdor femení.**\nJa el vam tractar a A1a-1. Si qui posseeix és una dona, la base és _ihr-_, **mai** _sein-_.\n\n**6. Creure que hi ha un possessiu diferent per a \"vosaltres\" i \"ells/elles\".**\nL'alemany fa servir _euer_ per a \"vostre\" (de vosaltres, informal) i _ihr_ per a \"d'ells/elles\". Són **dues paraules diferents**. No caiguis en l'analogia falsa amb el castellà _su_ que val per a gairebé tot.\n\n**7. Ignorar el gènere de substantius desconeguts.**\nSense saber si una paraula és masculí, femení, neutre o plural, no pots triar la forma. Per això aprendre el **substantiu amb el seu article** (_die Tasche_, no _Tasche_ sola) és el millor estalvi de temps que pots fer a A1."
+          "bad": "!!==meine== Glas!!",
+          "good": "!!==mein== Glas!!",
+          "why": "Afegir _-e_ al neutre. El neutre sempre es comporta com el masculí en nominatiu: forma curta, sense _-e_."
+        },
+        {
+          "bad": "!!==mein== Stifte!!",
+          "good": "!!==meine== Stifte!!",
+          "why": "Oblidar _-e_ al plural. El plural es comporta com el femení en nominatiu: cal la terminació _-e_."
+        },
+        {
+          "bad": "!!==euere== Tasche!!",
+          "good": "!!==eure== Tasche!!",
+          "why": "Escriure _euere_ en comptes de _eure_. L'única irregularitat del tema: _euer_ perd la _-e-_ del mig quan s'allarga."
+        },
+        {
+          "bad": "!!ist das ==ihr== Stift, Herr Meier?!!",
+          "good": "!!Ist das ==Ihr== Stift, Herr Meier?!!",
+          "why": "Confondre _ihr_ (d'ella / d'ells) amb _Ihr_ (de Vostè). En context formal, la majúscula és **no negociable**."
+        },
+        {
+          "bad": "!!Anna und ==sein== Stift!!",
+          "good": "!!Anna und ==ihr== Stift!!",
+          "why": "Usar _sein_ per un posseïdor femení. Si qui posseeix és una dona, la base és _ihr-_, **mai** _sein-_."
+        },
+        {
+          "bad": "!!Das ist ==ihr== Stift.!! (referint-se a \"vosaltres\")",
+          "good": "!!Das ist ==euer== Stift.!! (de vosaltres, informal)",
+          "why": "Confondre _euer_ (vostre) amb _ihr_ (d'ells/elles). Són **dues paraules diferents**. No caiguis en l'analogia falsa amb el castellà _su_."
+        },
+        {
+          "bad": "!!mein / meine Tasche?!!",
+          "good": "!!==meine== Tasche!! (perquè _die Tasche_ és femení)",
+          "why": "Ignorar el gènere de substantius desconeguts. Sense saber si una paraula és masculí, femení, neutre o plural, no pots triar la forma. Aprèn el **substantiu amb el seu article**."
         }
       ]
     },

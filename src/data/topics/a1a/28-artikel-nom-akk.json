@@ -134,10 +134,33 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals per a catalanoparlants",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. Oblidar-se del canvi en masculí.**\nÉs l'error més freqüent, perquè el nostre instint romànic diu \"l'article no canvia\". Davant d'un verb com _haben_, _sehen_, _kaufen_, _lesen_, _suchen_, para atenció: si el substantiu és **masculí**, l'article demana _-en_.\n\n- Incorrecte: _Ich habe ==ein== Bruder._ ❌\n- Correcte: _!!Ich habe ==einen== Bruder.!!_ ✅\n\n**2. Canviar articles que no canvien.**\nL'error contrari: sobreaplicar la regla. _Die Frau_ no passa mai a _den Frau_ ni a _einen Frau_; només el masculí rep el canvi.\n\n- Incorrecte: _Ich sehe ==den== Frau._ ❌\n- Correcte: _!!Ich sehe ==die== Frau.!!_ ✅\n\n**3. Confondre el gènere del substantiu.**\nPerquè l'acusatiu funcioni bé, necessites saber si el substantiu és _der_, _die_ o _das_ ==des del principi==. Si vas aprenent el vocabulari sense el gènere, l'acusatiu es col·lapsa. Consell: aprèn sempre _der Tisch_, _die Lampe_, _das Buch_, mai només _Tisch_, _Lampe_, _Buch_.\n\n**4. Tractar _kein_ com a invariable.**\nEn català \"cap\" no es flexiona (_cap gos_, _cap gossa_). En alemany _kein_ sí, i segueix el mateix patró que _ein_: _keinen_ en masculí acusatiu.\n\n- Incorrecte: _Ich habe ==kein== Hund._ ❌\n- Correcte: _!!Ich habe ==keinen== Hund.!!_ ✅\n\n**5. Pensar que l'ordre de l'oració n'és responsable.**\nL'article canvia **pel cas gramatical**, no per la posició. _!!Den Lehrer sehe ich.!!_ i _!!Ich sehe den Lehrer.!!_ tenen tots dos _den_ perquè _Lehrer_ és complement directe, passi el que passi amb l'ordre."
+          "bad": "!!Ich habe ==ein== Bruder.!!",
+          "good": "!!Ich habe ==einen== Bruder.!!",
+          "why": "Oblidar el canvi en masculí. L'instint romànic diu «l'article no canvia», però en acusatiu masculí _ein_ → _einen_, _der_ → _den_."
+        },
+        {
+          "bad": "!!Ich sehe ==den== Frau.!!",
+          "good": "!!Ich sehe ==die== Frau.!!",
+          "why": "Sobreaplicar la regla: canviar articles que no canvien. _Die Frau_ no passa mai a _den Frau_. Només el **masculí** rep el canvi."
+        },
+        {
+          "bad": "!!Ich kaufe ==einen== Lampe.!!",
+          "good": "!!Ich kaufe ==eine== Lampe.!!",
+          "why": "Confondre el gènere del substantiu. _Lampe_ és **femení** (_die Lampe_), no masculí. Sense saber el gènere, l'acusatiu es col·lapsa. Aprèn sempre el vocabulari amb l'article."
+        },
+        {
+          "bad": "!!Ich habe ==kein== Hund.!!",
+          "good": "!!Ich habe ==keinen== Hund.!!",
+          "why": "Tractar _kein_ com a invariable. En català «cap» no es flexiona, però en alemany _kein_ segueix el mateix patró que _ein_: masculí acusatiu → _keinen_."
+        },
+        {
+          "bad": "!!Ich sehe ==der== Lehrer.!!",
+          "good": "!!Ich sehe ==den== Lehrer.!!",
+          "why": "Pensar que l'ordre de l'oració n'és responsable. L'article canvia **pel cas gramatical**, no per la posició. _Den Lehrer sehe ich_ i _Ich sehe den Lehrer_ tenen tots dos _den_."
         }
       ]
     },

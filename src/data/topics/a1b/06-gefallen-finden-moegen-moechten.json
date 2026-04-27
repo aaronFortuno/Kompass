@@ -127,16 +127,38 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys freqüents (en aquest nivell)",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys freqüents (en aquest nivell)\n\n1. **Confondre _mag_ i _möchte_ al restaurant.** ❌ _Ich mag einen Kaffee._ ✅ _Ich möchte einen Kaffee._ Repassat ja a A1a-19, però continua sent l'error número u.\n2. **_möchten_ amb infinitiu al mig.** ❌ _Ich möchte trinken einen Kaffee._ ✅ _Ich möchte einen Kaffee trinken._ L'infinitiu tanca la Satzklammer al final.\n3. **Barrejar estructures de _gefallen_ i _finden_.** ❌ _Ich gefalle den Dom schön._ ✅ _Mir gefällt der Dom_ (datiu + nominatiu, sense adjectiu obligatori) o _Ich finde den Dom schön_ (acusatiu + adjectiu).\n4. **Concordança de _gefallen_.** ❌ _Mir gefällt die Bilder._ ✅ _Mir **gefallen** die Bilder._ El verb concorda amb el subjecte (la cosa, plural aquí), no amb la persona.\n5. **_finden_ sense adjectiu.** ❌ _Ich finde den Film._ (= \"localitzo la pel·lícula\"). ✅ _Ich finde den Film gut._\n6. **Oblidar la -e de _möchte_ (1a/3a sg.).** ❌ _Ich möcht einen Kaffee._ ✅ _Ich möchte einen Kaffee._ A diferència de _mag_ (sense -e), _möchte_ sí que en porta."
+          "bad": "!!Ich **mag** einen Kaffee.!!",
+          "good": "!!Ich **möchte** einen Kaffee.!!",
+          "why": "Confondre _mag_ i _möchte_ al restaurant. _Mag_ és gust general; _möchte_ és desig puntual. Al bar, sempre _möchte_."
         },
         {
-          "type": "callout",
-          "variant": "warning",
-          "title": "Atenció: möchten ≠ wollen",
-          "body": "**Traduir _möchten_ per \"vull\"** és un matís important a evitar. _möchten_ és **educat i suau** (\"voldria\"); _wollen_ és **directe** (\"vull\"). A l'A1b-15/16 veuràs _wollen_ a fons."
+          "bad": "!!Ich möchte **trinken** einen Kaffee.!!",
+          "good": "!!Ich möchte einen Kaffee **trinken**.!!",
+          "why": "_möchten_ amb infinitiu al mig. L'infinitiu tanca la Satzklammer al final."
+        },
+        {
+          "bad": "!!Ich **gefalle** den Dom schön.!!",
+          "good": "!!**Mir gefällt** der Dom.!!",
+          "why": "Barrejar estructures de _gefallen_ i _finden_. _gefallen_: datiu + nominatiu, sense adjectiu obligatori. _finden_: acusatiu + adjectiu (_Ich finde den Dom schön_)."
+        },
+        {
+          "bad": "!!Mir **gefällt** die Bilder.!!",
+          "good": "!!Mir **gefallen** die Bilder.!!",
+          "why": "El verb concorda amb el subjecte (la cosa, plural aquí), no amb la persona."
+        },
+        {
+          "bad": "!!Ich **finde** den Film.!!",
+          "good": "!!Ich **finde** den Film **gut**.!!",
+          "why": "_finden_ sense adjectiu vol dir \"localitzar\" (_localitzo la pel·lícula_). Per expressar opinió, cal l'adjectiu: _Ich finde den Film gut_."
+        },
+        {
+          "bad": "!!Ich **möcht** einen Kaffee.!!",
+          "good": "!!Ich **möchte** einen Kaffee.!!",
+          "why": "Oblidar la -e de _möchte_ (1a/3a sg.). A diferència de _mag_ (sense -e), _möchte_ sí que en porta."
         }
       ]
     },

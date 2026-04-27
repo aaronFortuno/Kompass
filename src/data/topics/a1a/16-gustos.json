@@ -175,10 +175,43 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals\n\n**1. Dir \\*_Ich mag kochen_ calcant el català.**\nÉs l'error més freqüent i el més important d'evitar. En alemany **no es posa un infinitiu** darrere de _mögen_ per dir \"m'agrada fer X\". La construcció correcta és **_Ich koche gern_** (verb conjugat + _gern_). Recorda-ho: si el que t'agrada és una **acció**, hi ha d'haver un verb **conjugat** i la partícula _gern_.\n\n(Petita precisió que veuràs ampliada a **A1a-19**: l'alemany **sí que té** una construcció amb infinitiu per dir \"m'agradaria fer X\" o \"voldria fer X\" — és _!!**möchte** + infinitiu!!_: _!!Ich möchte kochen.!!_ (m'agradaria cuinar). Però això expressa un desig puntual, no una preferència o un gust general. Per al sentit de \"m'agrada fer X\" en general, **la regla d'aquesta lliçó** —verb conjugat + _gern_— és la bona.)\n\n**2. Posar _gern_ en posició incorrecta.**\n_Gern_ va **just darrere del verb conjugat**, no al final de l'oració ni davant del verb. Diem _Ich spiele **gern** Fußball_, no \\*_Ich spiele Fußball gern_ ni \\*_Ich gern spiele Fußball_. A les preguntes i negacions, la regla es manté: _Kochst du **gern**?_, _Ich tanze **nicht gern**_.\n\n**3. Negar _mögen_ amb _nicht_ per defecte.**\nEn principi, quan el que neguem és un substantiu concret (l'objecte de _mögen_), l'alemany prefereix **_kein-_**: _Ich mag **keine** Pizza_, no \\*_Ich mag Pizza nicht_. Pots arribar a trobar _nicht_ en alguns contextos, però a nivell A1 la versió amb _kein-_ és la segura.\n\n**4. Confondre _gern_ (partícula) amb un verb.**\n_Gern_ **no es conjuga mai**, no té persones ni temps. És una partícula invariable. No pots dir \\*_Ich gerne_ ni \\*_Du gernst_. Sempre acompanya un verb i el verb és el que es conjuga (_ich koche gern, du kochst gern, er kocht gern_).\n\n**5. Oblidar-se de conjugar el verb amb _gern_.**\nCom que _gern_ porta el significat de \"agradar\", pot donar la sensació que el verb d'acció és secundari, i es podria oblidar de conjugar-lo. No: el verb és el **nucli gramatical** de l'oració i es conjuga com sempre. _Ich **tanze** gern_, _Du **tanzt** gern_, _Er **tanzt** gern_.\n\n**6. Pensar que _Lieblings-_ és una paraula aïllada.**\n_Lieblings-_ mai va sol. És un **component** que s'ha d'unir a un substantiu: _Lieblingsfarbe_, _Lieblingsessen_, _Lieblingsmusik_. No pots dir \\*_Meine Lieblings ist blau_; has de dir _Meine **Lieblingsfarbe** ist blau_.\n\n**7. Posar el verb \"ser\" entremig amb _finden_.**\nCalc del català: \\*_Ich finde Pizza ist lecker_. L'alemany és més econòmic: _Ich finde Pizza **lecker**_, sense cap _ist_. L'adjectiu s'uneix directament sense verb copulatiu."
+          "bad": "!!Ich mag kochen.!!",
+          "good": "!!Ich koche gern.!!",
+          "why": "En alemany **no es posa un infinitiu** darrere de _mögen_ per dir \"m'agrada fer X\". Si el que t'agrada és una **acció**, hi ha d'haver un verb **conjugat** i la partícula _gern_."
+        },
+        {
+          "bad": "!!Ich spiele Fußball gern.!! / !!Ich gern spiele Fußball.!!",
+          "good": "!!Ich spiele **gern** Fußball.!!",
+          "why": "_Gern_ va **just darrere del verb conjugat**, no al final de l'oració ni davant del verb."
+        },
+        {
+          "bad": "!!Ich mag Pizza nicht.!!",
+          "good": "!!Ich mag **keine** Pizza.!!",
+          "why": "Quan neguem un substantiu concret (objecte de _mögen_), l'alemany prefereix **_kein-_**, no _nicht_."
+        },
+        {
+          "bad": "!!Ich gerne.!! / !!Du gernst.!!",
+          "good": "!!Ich koche gern.!! / !!Du kochst gern.!!",
+          "why": "_Gern_ **no es conjuga mai**. És una partícula invariable que sempre acompanya un verb conjugat."
+        },
+        {
+          "bad": "!!Ich tanze gern.!! (amb _tanze_ sense conjugar: _~~Ich tanz gern~~_)",
+          "good": "!!Ich **tanze** gern.!! / !!Du **tanzt** gern.!! / !!Er **tanzt** gern.!!",
+          "why": "El verb és el **nucli gramatical** de l'oració i es conjuga com sempre, encara que _gern_ porti el significat d'\"agradar\"."
+        },
+        {
+          "bad": "!!Meine Lieblings ist blau.!!",
+          "good": "!!Meine **Lieblingsfarbe** ist blau.!!",
+          "why": "_Lieblings-_ mai va sol. És un **component** que s'ha d'unir a un substantiu: _Lieblingsfarbe_, _Lieblingsessen_, _Lieblingsmusik_."
+        },
+        {
+          "bad": "!!Ich finde Pizza ist lecker.!!",
+          "good": "!!Ich finde Pizza **lecker**.!!",
+          "why": "Calc del català. L'alemany no posa cap _ist_ entremig: l'adjectiu s'uneix directament a _finden_ sense verb copulatiu."
         }
       ]
     },

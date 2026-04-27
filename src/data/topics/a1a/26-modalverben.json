@@ -207,32 +207,43 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals\n\n**1. Traduir _nicht müssen_ per \"no poder\" (prohibició).**\nÉs l'error estrella. _Ich muss nicht arbeiten_ ==NO== vol dir \"no puc treballar\"; vol dir \"no cal que treballi\".\n\n> Incorrecte: _!!**Du musst hier nicht rauchen.**!!_ amb la intenció de \"no pots fumar aquí\".\n> Correcte per expressar prohibició: _!!**Du darfst hier nicht rauchen.**!!_.\n> _Du musst hier nicht rauchen_ només vol dir \"no cal que fumis aquí\", que sona absurd en un rètol.\n\nRegla d'or: **==prohibició = _dürfen + nicht_==**. Sempre."
+          "bad": "!!Du musst hier nicht rauchen.!! (amb la intenció de «no pots fumar aquí»)",
+          "good": "!!Du ==darfst== hier nicht rauchen.!!",
+          "why": "Traduir _nicht müssen_ per «no poder» (prohibició). _Nicht müssen_ = «no cal» (absència d'obligació). Per expressar **==prohibició==**, cal _dürfen + nicht_. Sempre."
         },
         {
-          "type": "explanation",
-          "body": "**2. Usar _wollen_ on tocaria _möchte_.**\nUn alemany no demana el cafè amb _Ich will einen Kaffee_ tret que estigui molt enfadat o sigui un nen de cinc anys. La forma educada és _Ich möchte einen Kaffee, bitte_.\n\n> Brusc / maleducat: _!!**Ich will einen Tee.**!!_ (a un cambrer desconegut)\n> Correcte: _!!**Ich möchte einen Tee, bitte.**!!_\n\nRegla pràctica: si hi ha un _bitte_ a prop, hi ha _möchte_. Si hi ha un _!_ molt fort, potser hi ha _wollen_."
+          "bad": "!!Ich ==will== einen Tee.!! (a un cambrer desconegut)",
+          "good": "!!Ich ==möchte== einen Tee, bitte.!!",
+          "why": "Usar _wollen_ on tocaria _möchte_. _Wollen_ és molt directe i pot sonar brusc o maleducat. Per demanar educadament, fes servir _möchte_."
         },
         {
-          "type": "explanation",
-          "body": "**3. Confondre _können_ (capacitat) i _dürfen_ (permís).**\n_Ich kann schwimmen_ = sé nedar. _Ich darf schwimmen_ = em deixen nedar. No són el mateix.\n\n> Ambigu (col·loquial): _!!**Kann ich rauchen?**!!_ (normalment s'entén com a permís, però literalment és \"sé fumar?\").\n> Precís: _!!**Darf ich rauchen?**!!_ (Em permets fumar?)."
+          "bad": "!!==Kann== ich rauchen?!! (demanant permís)",
+          "good": "!!==Darf== ich rauchen?!!",
+          "why": "Confondre _können_ (capacitat) i _dürfen_ (permís). _Kann ich rauchen?_ literalment és «sé fumar?». Per demanar permís, la forma precisa és _dürfen_."
         },
         {
-          "type": "explanation",
-          "body": "**4. Traduir _Soll ich...?_ per \"Haig de...?\".**\n_Soll ich dich abholen?_ **no** és \"Haig de venir a buscar-te?\" (que seria _Muss ich dich abholen?_, com si fos una obligació pesada). És **\"Vols que vingui a buscar-te?\"**, un oferiment educat.\n\n> _!!Soll ich dir helfen?!!_ = Vols que t'ajudi? *(oferiment)*\n> _!!Muss ich dir helfen?!!_ = Haig d'ajudar-te? *(obligació: no em ve de gust, però cal?)*\n\nSón preguntes molt diferents socialment. No les confonguis."
+          "bad": "!!==Muss== ich dich abholen?!! (amb intenció d'oferir-se)",
+          "good": "!!==Soll== ich dich abholen?!!",
+          "why": "Traduir _Soll ich...?_ per «Haig de...?». _Soll ich...?_ és un oferiment educat («Vols que...?»), no una obligació. _Muss ich...?_ sona com una càrrega pesada."
         },
         {
-          "type": "explanation",
-          "body": "**5. Oblidar la Satzklammer.**\nCalcar el català \"he de treballar a les nits\" posant l'infinitiu al mig: _Ich muss arbeiten nachts_. ==No==. L'infinitiu va al final: _Ich muss nachts arbeiten_.\n\n> Incorrecte: **_Ich will machen eine Reise._**\n> Correcte: _!!**Ich will eine Reise machen.**!!_\n\n**6. Posar terminació al singular dels modals.**\nLa temptació de \"regularitzar-los\" és forta: _ich musse, er willt, ich darfe_. ==No existeixen==. Singular dels modals = sense -e a _ich_, sense -t a _er/sie/es_. Iguals.\n\n> Incorrecte: **_Ich musse_, _er willt_, _ich solle_**.\n> Correcte: _!!**Ich muss, er will, ich soll.**!!_\n\n**7. Afegir vocal ü/ö als verbs que no canvien.**\n_sollen_ no té canvi vocàlic: _ich soll_ (amb _o_, no _ö_). Tampoc l'imperatiu infantil afegeix -ö a _wollen_: _ich will_ sempre.\n\n> Incorrecte: **_Ich söll, ich wöll_**.\n> Correcte: _!!**Ich soll, ich will.**!!_"
+          "bad": "!!Ich will ==machen eine Reise==.!!",
+          "good": "!!Ich will ==eine Reise machen==.!!",
+          "why": "Oblidar la Satzklammer. L'infinitiu va **al final** de l'oració, no al mig. El modal conjugat a la posició 2, l'infinitiu al final."
         },
         {
-          "type": "callout",
-          "variant": "danger",
-          "title": "Els dos errors crítics",
-          "body": "(1) **_nicht müssen_ ≠ _nicht dürfen_**. _No cal_ ≠ _prohibit_. Per a prohibicions fes servir **_dürfen + nicht_**, sempre.\n(2) **_wollen_ no és un \"voler\" neutre**: és directe i pot sonar brusc. Per demanar educadament, fes servir **_möchte_**."
+          "bad": "!!Ich ==musse==, er ==willt==, ich ==darfe==.!!",
+          "good": "!!Ich ==muss==, er ==will==, ich ==darf==.!!",
+          "why": "Posar terminació al singular dels modals. _ich_ i _er/sie/es_ no porten terminació (-e ni -t). Són iguals: _ich muss = er muss_."
+        },
+        {
+          "bad": "!!Ich ==söll==, ich ==wöll==.!!",
+          "good": "!!Ich ==soll==, ich ==will==.!!",
+          "why": "Afegir Umlaut (ü/ö) als modals que no canvien de vocal. _sollen_ no té canvi vocàlic (_o_ sempre). _wollen_ fa _i_ al singular (_will_), no _ö_."
         }
       ]
     },

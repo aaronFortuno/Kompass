@@ -184,10 +184,33 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys típics",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys típics\n\n**1. Posar _ge-_ al participi.** — És l'error més previsible: per analogia amb _gemacht_, _gelernt_, l'estudiant escriu _gestudiert_, _getelefoniert_. No: els verbs en _-ieren_ **mai** porten _ge-_. Aquesta regla és absoluta, sense excepcions.\n- Incorrecte: _Ich habe **ge**studiert._\n- Correcte: _Ich habe studiert._\n\n**2. Accentuar malament la paraula.** — L'accent va sobre ==**-ie-**==: _stu-**die**-ren_, no _stú-di-e-ren_ ni _studi-**é**-ren_. Si dius _telefoníeren_, _probíeren_, _funktioníeren_ sonaràs natural.\n\n**3. Inventar-se verbs que no existeixen.** — No tot verb romànic té versió alemanya en _-ieren_. _Menjar_ no és _\"menschieren\"_: és _essen_. _Dormir_ no és _\"dormieren\"_: és _schlafen_. Fes servir el truc d'_-ieren_ només per **reconèixer** i **confirmar** al diccionari, no per inventar.\n\n**4. Pronunciar _-ieren_ com una sola síl·laba.** — En alemany, _-ieren_ es diu en dues síl·labes: **-ie-ren** (amb /iː/ llarga + /rən/). No és com l'anglès _-ier_ (\"-ir\"). _Studieren_ = _stu-di-e-ren_, quatre síl·labes.\n\n**5. Confondre'ls amb verbs separables.** — Els verbs en _-ieren_ **no són separables**, encara que comencin per síl·labes com _an-_, _aus-_, _vor-_ (p. ex. _anprobieren_, _ausprobieren_, _reservieren_). Hi ha alguns compostos (_anprobieren_: emprovar-se roba; _ausprobieren_: provar/testar) que **sí** se separen perquè tenen un prefix separable davant del verb en _-ieren_; però el verb _-ieren_ pur, sol, mai no es separa."
+          "bad": "!!Ich habe **ge**studiert.!!",
+          "good": "!!Ich habe **studiert**.!!",
+          "why": "Posar _ge-_ al participi. Els verbs en _-ieren_ **mai** porten _ge-_. Aquesta regla és absoluta, sense excepcions."
+        },
+        {
+          "bad": "!!**Stú**dieren!!",
+          "good": "!!Stu**dié**ren!!",
+          "why": "L'accent va sobre ==**-ie-**==: _stu-**die**-ren_, no _stú-di-e-ren_. Si dius _telefoníeren_, _probíeren_, _funktioníeren_ sonaràs natural."
+        },
+        {
+          "bad": "!!Ich **dormiere** jeden Tag.!!",
+          "good": "!!Ich **schlafe** jeden Tag.!!",
+          "why": "No tot verb romànic té versió alemanya en _-ieren_. _Dormir_ no és _dormieren_: és _schlafen_. Fes servir el truc d'_-ieren_ només per **reconèixer** i **confirmar** al diccionari, no per inventar."
+        },
+        {
+          "bad": "!!Er stu-**djert** Medizin.!!",
+          "good": "!!Er stu-di-**ert** Medizin.!!",
+          "why": "En alemany, _-ieren_ es diu en dues síl·labes: **-ie-ren** (amb /iː/ llarga + /rən/). _Studieren_ = _stu-di-e-ren_, quatre síl·labes."
+        },
+        {
+          "bad": "!!Ich **telefonier** mit dir **iere**.!!",
+          "good": "!!Ich **telefoniere** mit dir.!!",
+          "why": "Els verbs en _-ieren_ **no són separables**. El verb _-ieren_ pur, sol, mai no es separa. (Compostos com _an-probieren_ sí se separen, per tenir un prefix separable davant.)"
         }
       ]
     },

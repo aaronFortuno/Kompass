@@ -92,10 +92,38 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals\n\n**1. Traduir sempre \"però\" per _aber_.**\nÉs la trampa número u per a catalanoparlants. Recorda: si la primera part té _nicht_ o _kein_ i la segona hi posa l'alternativa correcta, és _sondern_.\n\n> Incorrecte: **!!Das ist nicht Bier, ==aber== Wein.!!**\n> Correcte: **!!Das ist nicht Bier, ==sondern== Wein.!!**\n\n**2. Posar coma davant de _und_ o _oder_ quan uneixen només complements.**\nEn alemany, _!!Kaffee und Tee!!_ (cafè i te), _!!ein Buch oder ein Heft!!_ (un llibre o una llibreta), van **sense coma**.\n\n> Incorrecte: *!!Ich trinke Kaffee, und Tee.!!*\n> Correcte: **!!Ich trinke Kaffee und Tee.!!**\n\n**3. Oblidar la coma davant de _aber, sondern, denn_.**\nAquestes tres **sempre** porten coma al davant, perquè darrere hi ve sempre material que cal separar.\n\n> Incorrecte: *!!Ich bin müde aber ich lerne Deutsch.!!*\n> Correcte: **!!Ich bin müde, aber ich lerne Deutsch.!!**\n\n**4. Invertir el verb després de la conjunció.**\nUn reflex típic d'estudiants que han sentit dir que \"en alemany el verb va al final\" o que \"canvia l'ordre\". No: després d'una coordinant, l'oració torna a començar amb ordre normal.\n\n> Incorrecte: *!!Ich wohne in Berlin, denn arbeite ich hier.!!*\n> Correcte: **!!Ich wohne in Berlin, denn ich arbeite hier.!!**\n\n**5. Confondre _denn_ amb _dann_.**\n_Denn_ = \"ja que\" (causa). _Dann_ = \"llavors, després\" (temps). Són dues paraules diferents, amb vocal diferent (_e_ vs _a_), i no es poden intercanviar.\n\n> **!!Ich lerne jetzt, ==dann== schlafe ich.!!** (Estudio ara, després dormo. — temps, no causa.)\n> **!!Ich lerne viel, ==denn== ich habe bald eine Prüfung.!!** (Estudio molt, ja que aviat tinc un examen. — causa.)\n\n**6. Fer servir _sondern_ en oracions afirmatives.**\n_Sondern_ és exclusiu per corregir una negació prèvia. Si no hi ha _nicht_ o _kein_ a la primera part, ja pots descartar _sondern_ d'entrada."
+          "bad": "!!Das ist nicht Bier, ==aber== Wein.!!",
+          "good": "!!Das ist nicht Bier, ==sondern== Wein.!!",
+          "why": "Traduir sempre \"però\" per _aber_. Si la primera part té _nicht_ o _kein_ i la segona hi posa l'alternativa correcta, és _sondern_."
+        },
+        {
+          "bad": "!!Ich trinke Kaffee==,== und Tee.!!",
+          "good": "!!Ich trinke Kaffee und Tee.!!",
+          "why": "Posar coma davant de _und_ o _oder_ quan uneixen només complements. Sense coma si no hi ha oració nova completa."
+        },
+        {
+          "bad": "!!Ich bin müde aber ich lerne Deutsch.!!",
+          "good": "!!Ich bin müde==,== aber ich lerne Deutsch.!!",
+          "why": "Oblidar la coma davant de _aber, sondern, denn_. Aquestes tres **sempre** porten coma al davant."
+        },
+        {
+          "bad": "!!Ich wohne in Berlin, denn ==arbeite ich== hier.!!",
+          "good": "!!Ich wohne in Berlin, denn ==ich arbeite== hier.!!",
+          "why": "Invertir el verb després de la conjunció. Després d'una coordinant, l'oració torna a començar amb ordre normal (subjecte + verb en 2a posició)."
+        },
+        {
+          "bad": "!!Ich lerne viel, ==dann== ich habe bald eine Prüfung.!!",
+          "good": "!!Ich lerne viel, ==denn== ich habe bald eine Prüfung.!!",
+          "why": "Confondre _denn_ amb _dann_. _Denn_ = \"ja que\" (causa). _Dann_ = \"llavors, després\" (temps). Vocal diferent (_e_ vs _a_), significat diferent."
+        },
+        {
+          "bad": "!!Ich komme aus Spanien, ==sondern== ich wohne in Berlin.!!",
+          "good": "!!Ich komme aus Spanien, ==aber== ich wohne in Berlin.!!",
+          "why": "Fer servir _sondern_ en oracions afirmatives. _Sondern_ és exclusiu per corregir una negació prèvia. Si no hi ha _nicht_ o _kein_ a la primera part, cal _aber_."
         }
       ]
     },

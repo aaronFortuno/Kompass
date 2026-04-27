@@ -227,10 +227,43 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals\n\n**1. Oblidar l'Umlaut en adjectius monosíl·labs.**\nDir _*alter_ en lloc de _älter_, _*junger_ en lloc de _jünger_ o _*kalter_ en lloc de _kälter_ és l'error més freqüent. Recorda que molts monosíl·labs amb _a/o/u_ el prenen. Si l'adjectiu és curt i quotidià, **sospita Umlaut**.\n\n**2. Posar Umlaut on no toca.**\nL'error invers: no tots els adjectius amb _a/o/u_ prenen Umlaut. _flach → flacher_ (no *_flächer_), _rund → runder_ (no *_ründer_), _bunt → bunter_. Si no saps, consulta; però no apliquis Umlaut a tot de manera automàtica.\n\n**3. Confondre _als_ i _wie_.**\nEn alemany estàndard, **comparatiu = _als_** (que), **igualtat = _wie_** (com). _schöner **als**_, _so schön **wie**_. Els propis alemanys col·loquials barregen _als_ i _wie_, però a l'escrit i als exàmens és un error. Tu aprén-ho correctament des del principi.\n\n**4. Oblidar el _am_ del superlatiu.**\nEl superlatiu predicatiu (el d'aquest tema) **sempre** porta _am_ davant: _am schönsten_, _am billigsten_, _am ältesten_. Dir només _schönsten_ o _billigsten_ sense _am_ és agramatical en aquest ús.\n\n**5. Oblidar la _-e-_ davant de _-sten_.**\nAdjectius acabats en _-t, -d, -s, -ß, -z_ demanen _-e-_ al superlatiu: _am ält**e**sten_, _am kält**e**sten_, _am kürz**e**sten_. Sense _-e-_ és impronunciable i incorrecte.\n\n**6. Duplicar la _s_ a _groß_.**\n_groß_ acaba amb _ß_ (que ja porta el so \"s\"). Al superlatiu **no** es duplica: _am größten_, mai _*am größsten_.\n\n**7. Pensar que _gut_ i _gern_ segueixen aquest patró.**\nSón els únics dos adjectius/adverbis totalment irregulars. _gut_ **no** fa _guter_ ni _am gutsten_ — fa **besser** i **am besten**. _gern_ no fa _gerner_ ni _am gernsten_ — fa **lieber** i **am liebsten**. Ho saps de l'**A1a-17**: són els irregulars emblemàtics que cal aprendre a banda."
+          "bad": "!!==alter==, ==junger==, ==kalter==!!",
+          "good": "!!==älter==, ==jünger==, ==kälter==!!",
+          "why": "Oblidar l'Umlaut en adjectius monosíl·labs. Molts monosíl·labs amb _a/o/u_ prenen Umlaut al comparatiu i superlatiu. Si l'adjectiu és curt i quotidià, **sospita Umlaut**."
+        },
+        {
+          "bad": "!!==flächer==, ==ründer==!!",
+          "good": "!!==flacher==, ==runder==!!",
+          "why": "Posar Umlaut on no toca. No tots els adjectius amb _a/o/u_ el prenen. _flach → flacher_, _rund → runder_, _bunt → bunter_. Si no saps, consulta al diccionari."
+        },
+        {
+          "bad": "!!Die Wohnung A ist schöner ==wie== die Wohnung B.!!",
+          "good": "!!Die Wohnung A ist schöner ==als== die Wohnung B.!!",
+          "why": "Confondre _als_ i _wie_. **Comparatiu** (desigualtat) = _als_ («que»). **Igualtat** = _wie_ («com»): _so schön **wie**_."
+        },
+        {
+          "bad": "!!Die Wohnung C ist ==schönsten==.!!",
+          "good": "!!Die Wohnung C ist ==am schönsten==.!!",
+          "why": "Oblidar el _am_ del superlatiu. El superlatiu predicatiu **sempre** porta _am_ davant. Sense _am_ és agramatical."
+        },
+        {
+          "bad": "!!==am ältsten==, ==am kältsten==!!",
+          "good": "!!==am ältesten==, ==am kältesten==!!",
+          "why": "Oblidar la _-e-_ davant de _-sten_. Adjectius acabats en _-t, -d, -s, -ß, -z_ demanen _-e-_ eufònica al superlatiu."
+        },
+        {
+          "bad": "!!==am größsten==!!",
+          "good": "!!==am größten==!!",
+          "why": "Duplicar la _s_ a _groß_. La _ß_ ja porta el so «s»; al superlatiu **no** es duplica."
+        },
+        {
+          "bad": "!!==guter==, ==am gutsten==!!",
+          "good": "!!==besser==, ==am besten==!!",
+          "why": "Pensar que _gut_ i _gern_ segueixen el patró regular. Són els únics dos irregulars totals: _gut → besser → am besten_, _gern → lieber → am liebsten_. Ja els saps d'**A1a-17**."
         }
       ]
     },

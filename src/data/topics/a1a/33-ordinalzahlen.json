@@ -173,10 +173,38 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys i errors freqüents",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys i errors freqüents\n\n**1. Aplicar _-te_ a partir del 20.**\n\n❌ _zwanzigte_ → ✅ ==_zwanzigste_==. Pensa: 20 és el tall. A partir d'aquí, sempre _-ste_.\n\n**2. Fer regulars els irregulars.**\n\n❌ _einte, dreite, siebente, achtte_ → ✅ _erste, dritte, siebte, achte_. Només quatre, memoritza'ls: **1, 3, 7, 8**.\n\n**3. Oblidar el punt en format escrit.**\n\n❌ _Heute ist der 1 April._ → ✅ _Heute ist der ==1.== April._. El punt darrere del número és el que el converteix en ordinal en alemany escrit.\n\n**4. Usar cardinal en dates.**\n\n❌ _Heute ist der eins April._ → ✅ _Heute ist der **erste** April._. En dates, sempre ordinal (diferent del castellà _\"el uno de abril\"_).\n\n**5. No declinar l'ordinal.**\n\n❌ _Ich nehme den zweite Zug._ → ✅ _Ich nehme den zweit**en** Zug._. Són adjectius: acusatiu masculí → **-en**.\n\n**6. Confondre _siebte_ i _siebente_.**\n\nLes dues existeixen, però ==_siebte_== és la forma estàndard moderna. _Siebente_ encara s'escolta, sobretot en contextos formals o literaris. Al nivell A1, queda't amb _siebte_."
+          "bad": "!!==zwanzigte==!!",
+          "good": "!!==zwanzigste==!!",
+          "why": "Aplicar _-te_ a partir del 20. El tall és al **20**: de l'1 al 19 → _-te_; del 20 endavant → _-ste_."
+        },
+        {
+          "bad": "!!==einte==, ==dreite==, ==achtte==!!",
+          "good": "!!==erste==, ==dritte==, ==achte==!!",
+          "why": "Fer regulars els irregulars. Hi ha quatre excepcions: **1** (_erste_), **3** (_dritte_), **7** (_siebte_), **8** (_achte_). Memoritza-les."
+        },
+        {
+          "bad": "!!Heute ist der ==1== April.!!",
+          "good": "!!Heute ist der ==1.== April.!!",
+          "why": "Oblidar el punt en format escrit. El punt darrere del número és la marca d'ordinal en alemany escrit."
+        },
+        {
+          "bad": "!!Heute ist der ==eins== April.!!",
+          "good": "!!Heute ist der ==erste== April.!!",
+          "why": "Usar el cardinal en dates. En alemany, les dates **sempre** demanen ordinal, no cardinal."
+        },
+        {
+          "bad": "!!Ich nehme den ==zweite== Zug.!!",
+          "good": "!!Ich nehme den ==zweiten== Zug.!!",
+          "why": "No declinar l'ordinal. Els ordinals es comporten com adjectius: acusatiu masculí → _-en_."
+        },
+        {
+          "bad": "!!der ==siebente== Mai!!",
+          "good": "!!der ==siebte== Mai!!",
+          "why": "Confondre _siebte_ i _siebente_. Les dues existeixen, però _siebte_ és la forma estàndard moderna. Al nivell A1, queda't amb _siebte_."
         }
       ]
     },

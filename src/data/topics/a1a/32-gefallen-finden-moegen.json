@@ -120,10 +120,33 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys freqüents",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys freqüents\n\n1. **Subjecte de _gefallen_.** ❌ _Ich gefalle das Haus._ ✅ _Das Haus gefällt mir._ En català no dius \"jo agrado la casa\", oi? En alemany, tampoc.\n2. **Concordança de _gefallen_.** El verb concorda amb **la cosa**, no amb la persona: _Die Bilder **gefallen** mir_ (no _gefällt_).\n3. **_finden_ sense adjectiu.** ❌ _Ich finde den Film._ (això vol dir \"localitzo la pel·lícula\"). ✅ _Ich finde den Film gut._\n4. **Cas de _finden_ i _mögen_.** Tots dos volen **acusatiu**, no datiu: ❌ _Ich finde dem Balkon schön._ ✅ _Ich finde **den** Balkon schön._\n5. **Pronom datiu confús.** _mir_ (a mi) no és igual que _ich_ (jo). A _Mir gefällt das Haus_, _mir_ és la persona a qui agrada, no el subjecte.\n6. **Traduir literalment.** _Mir gefällt das Haus_ ≠ \"A mi agrado la casa\". És literalment _\"a mi m'és plaent la casa\"_, és a dir, **la casa m'agrada**."
+          "bad": "!!==Ich gefalle== das Haus.!!",
+          "good": "!!Das Haus ==gefällt mir==.!!",
+          "why": "Subjecte erroni de _gefallen_. Qui agrada és **la cosa** (subjecte), no la persona. En català no dius «jo agrado la casa»; en alemany, tampoc."
+        },
+        {
+          "bad": "!!Die Bilder ==gefällt== mir.!!",
+          "good": "!!Die Bilder ==gefallen== mir.!!",
+          "why": "Concordança de _gefallen_. El verb concorda amb **la cosa** (subjecte), no amb la persona. _Die Bilder_ és plural → _gefallen_."
+        },
+        {
+          "bad": "!!Ich finde den Film.!! (amb intenció d'opinar)",
+          "good": "!!Ich finde den Film ==gut==.!!",
+          "why": "_finden_ sense adjectiu vol dir «localitzo». Per expressar opinió, **sempre cal un adjectiu** darrere: _gut, schön, interessant, langweilig…_"
+        },
+        {
+          "bad": "!!Ich finde ==dem== Balkon schön.!!",
+          "good": "!!Ich finde ==den== Balkon schön.!!",
+          "why": "Cas erroni amb _finden_ i _mögen_. Tots dos volen **acusatiu**, no datiu. Masculí acusatiu → _den_."
+        },
+        {
+          "bad": "!!==Ich== gefällt das Haus.!!",
+          "good": "!!==Mir== gefällt das Haus.!!",
+          "why": "Confondre _ich_ (nominatiu) amb _mir_ (datiu). A _Mir gefällt das Haus_, _mir_ és «a mi» (la persona a qui agrada), no el subjecte."
         }
       ]
     },

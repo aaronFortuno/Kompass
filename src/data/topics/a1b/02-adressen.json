@@ -135,20 +135,23 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys típics de catalanoparlants",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys típics de catalanoparlants\n\n**1. No traduïr _in_ ↔ _en_ mecànicament** — en català/castellà dius \"a la plaça\" o \"en la plaza\" amb la mateixa preposició que per a un carrer. En alemany **no**: plaça = _an_, carrer = _in_.\n\n- Incorrecte: _Ich wohne **in dem** Friedensplatz._\n- Correcte: _Ich wohne **am** Friedensplatz._\n\n**2. No confondre el gènere segons l'aparença del nom** — el gènere el dicta l'**últim component** del compost, no les primeres síl·labes:\n\n- _Rosen**straße**_ → femení (per _Straße_), no pel fet que _Rosen_ soni com vulgui.\n- Correcte: _in der Rosenstraße_. Incorrecte: _im Rosenstraße_.\n\n**3. Oblidar la contracció obligatòria amb masculins** — amb _Weg_ i _Platz_ (masculins) cal contreure sempre:\n\n- Incorrecte: _in dem Brunnenweg_ → Correcte: _im Brunnenweg_.\n- Incorrecte: _an dem Friedensplatz_ → Correcte: _am Friedensplatz_.\n- Amb femenins (_Straße, Gasse, Allee_) **no** hi ha contracció: _in der Rosenstraße_ és la forma normal."
+          "bad": "!!Ich wohne **in dem** Friedensplatz.!!",
+          "good": "!!Ich wohne **am** Friedensplatz.!!",
+          "why": "No traduir _in_ ↔ _en_ mecànicament — en català/castellà dius \"a la plaça\" amb la mateixa preposició que per a un carrer. En alemany **no**: plaça = _an_, carrer = _in_."
         },
         {
-          "type": "callout",
-          "variant": "warning",
-          "title": "_Wo?_ → datiu, sempre",
-          "body": "Aquesta lliçó tracta només el cas \"on és un lloc\" (estàtic). Si més endavant veus _ich gehe **in die** Straße_ (acusatiu), és perquè respon a _Wohin?_ (\"cap a on vaig\"). Això ve a les **Wechselpräpositionen** més endavant."
+          "bad": "!!Das Hotel liegt **im** Rosenstraße.!!",
+          "good": "!!Das Hotel liegt **in der** Rosenstraße.!!",
+          "why": "No confondre el gènere segons l'aparença del nom — el gènere el dicta l'**últim component** del compost: _Rosen**straße**_ → femení (per _Straße_), no pel fet que _Rosen_ soni com vulgui."
         },
         {
-          "type": "explanation",
-          "body": "**Dir una adreça completa** — l'ordre alemany posa primer el carrer + número, i després el codi postal + ciutat:\n\n- _Ich wohne **in der** Rosenstraße **12**, **10115** Berlin._\n- En text parlat: _Meine Adresse ist Rosenstraße 12._ (sovint sense preposició, com un simple vocatiu)."
+          "bad": "!!Ich wohne **in dem** Brunnenweg.!!",
+          "good": "!!Ich wohne **im** Brunnenweg.!!",
+          "why": "Oblidar la contracció obligatòria amb masculins — amb _Weg_ i _Platz_ (masculins) cal contreure sempre: _in dem → im_, _an dem → am_. Amb femenins (_Straße, Gasse, Allee_) **no** hi ha contracció: _in der Rosenstraße_ és la forma normal."
         }
       ]
     },

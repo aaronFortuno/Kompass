@@ -242,16 +242,43 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals\n\n**1. Posar terminació a _ich_ o _er/sie/es_ amb _können_ o _mögen_.**\nL'error més freqüent quan es comencen els modals: conjugar-los com si fossin regulars.\n\n> Incorrecte: _**Ich kanne Deutsch**_ / _**Er magt Schokolade**_ / _**Ich könne spielen**_.\n> Correcte: _!!**Ich kann Deutsch.**!!_ / _!!**Er mag Schokolade.**!!_ / _!!**Ich kann spielen.**!!_\n\nRecorda: _ich kann = er kann_, _ich mag = er mag_. Sense terminació, iguals.\n\n**2. Oblidar el canvi vocàlic al singular.**\nEl singular de _können_ fa **a** (no ö), i el de _mögen_ també fa **a** (no ö). És una de les poques peces que has de memoritzar de debò.\n\n> Incorrecte: _**Ich könn Deutsch**_ / _**Du möchst Kaffee**_ (confonent _magst_ i _möchtest_).\n> Correcte: _!!**Ich kann Deutsch.**!!_ / _!!**Du magst Kaffee.**!!_ (_mögen_) / _!!**Du möchtest Kaffee.**!!_ (_möchte_).\n\n**3. Posar l'infinitiu al mig de l'oració, no al final.**\nUna tendència molt catalana: dir _Ich kann sprechen Deutsch_ (calcant \"Puc parlar alemany\"). **No.** L'infinitiu tanca la Satzklammer.\n\n> Incorrecte: _**Ich kann sprechen Deutsch**_ / _**Er kann kommen morgen nicht**_.\n> Correcte: _!!**Ich kann Deutsch sprechen.**!!_ / _!!**Er kann morgen nicht kommen.**!!_\n\n**4. Confondre _mag_ i _möchte_.**\nSón parents, però expressen coses diferents.\n\n> _!!Ich mag Kaffee.!!_ = **Normalment em ve de gust el cafè.** (gust general)\n> _!!Ich möchte (einen) Kaffee.!!_ = **Ara voldria un cafè.** (desig puntual, educat)\n\nSi al restaurant dius _Ich mag einen Kaffee_, el cambrer et miraria estrany: estàs dient \"m'agrada un cafè\" en un sentit filosòfic. El que vols és _!!Ich möchte einen Kaffee, bitte.!!_\n\n**5. Fer servir _wissen_ per a habilitats.**\nCalc del català/castellà: traduir \"sé parlar alemany\" per _Ich weiß Deutsch sprechen_. **Mai.**\n\n> Incorrecte: _**Ich weiß Gitarre spielen**_ / _**Weißt du Englisch?**_.\n> Correcte: _!!**Ich kann Gitarre spielen.**!!_ / _!!**Kannst du Englisch?**!!_\n\n_wissen_ = saber un fet, una informació. _können_ = saber fer, tenir l'habilitat.\n\n**6. Estructura de _mögen_ com si fos _agradar_ català.**\nTemptació: traduir \"m'agrada la música\" per _mir mag Musik_ (calcant \"a mi m'agrada\") o per _die Musik mag mich_. **No.** En alemany el subjecte és qui gaudeix.\n\n> Incorrecte: _**Mir mag Musik**_ / _**Die Musik mag mir**_.\n> Correcte: _!!**Ich mag Musik.**!!_ (literalment: \"Jo agrado música\".)\n\n**7. Fer servir _mögen_ amb infinitiu per dir \"m'agrada fer…\".**\nL'alemany col·loquial evita _Ich mag spielen_. Per a \"m'agrada jugar\", es fa servir **_verb + gern_** (tema A1a-16/17) o **_möchte_** si és un desig puntual.\n\n> Poc natural / dubtós: _**Ich mag Fußball spielen.**_\n> Natural: _!!**Ich spiele gern Fußball.**!!_ (M'agrada jugar a futbol, afició.)\n> Natural: _!!**Ich möchte Fußball spielen.**!!_ (Voldria jugar a futbol, ara.)"
+          "bad": "!!Ich kanne Deutsch.!! / !!Er magt Schokolade.!!",
+          "good": "!!Ich **kann** Deutsch.!! / !!Er **mag** Schokolade.!!",
+          "why": "Els modals no porten terminació a _ich_ ni _er/sie/es_: _ich kann = er kann_, _ich mag = er mag_."
         },
         {
-          "type": "callout",
-          "variant": "danger",
-          "title": "Els tres errors crítics",
-          "body": "(1) Mai posis -e o -t a _ich kann_, _er kann_, _ich mag_, _er mag_. (2) Mai usis _wissen_ per a habilitats (idiomes, instruments). (3) Mai posis l'infinitiu al mig: sempre al final de l'oració, tancant la Satzklammer."
+          "bad": "!!Ich könn Deutsch.!! / !!Du möchst Kaffee.!!",
+          "good": "!!Ich **kann** Deutsch.!! / !!Du **magst** Kaffee.!! / !!Du **möchtest** Kaffee.!!",
+          "why": "El singular de _können_ i _mögen_ fa **a** (no ö). No confonguis _magst_ (mögen) amb _möchtest_ (möchte)."
+        },
+        {
+          "bad": "!!Ich kann sprechen Deutsch.!! / !!Er kann kommen morgen nicht.!!",
+          "good": "!!Ich kann Deutsch **sprechen**.!! / !!Er kann morgen nicht **kommen**.!!",
+          "why": "L'infinitiu tanca la Satzklammer: **sempre al final** de l'oració, no al mig."
+        },
+        {
+          "bad": "!!Ich mag einen Kaffee.!! (al restaurant)",
+          "good": "!!Ich **möchte** einen Kaffee, bitte.!!",
+          "why": "_mag_ = gust general (\"m'agrada el cafè\"). _möchte_ = desig puntual i educat (\"voldria un cafè\"). Al restaurant, cal _möchte_."
+        },
+        {
+          "bad": "!!Ich weiß Gitarre spielen.!! / !!Weißt du Englisch?!!",
+          "good": "!!Ich **kann** Gitarre spielen.!! / !!**Kannst** du Englisch?!!",
+          "why": "_wissen_ = saber un fet, una informació. _können_ = saber fer, tenir l'habilitat. Per a idiomes, instruments i esports: sempre _können_."
+        },
+        {
+          "bad": "!!Mir mag Musik.!! / !!Die Musik mag mir.!!",
+          "good": "!!**Ich** mag Musik.!!",
+          "why": "En alemany, amb _mögen_, el **subjecte és qui gaudeix** (com l'anglès _I like_), no com el català \"a mi m'agrada\"."
+        },
+        {
+          "bad": "!!Ich mag Fußball spielen.!!",
+          "good": "!!Ich spiele **gern** Fußball.!! / !!Ich **möchte** Fußball spielen.!!",
+          "why": "_mögen_ + infinitiu és poc natural. Per a \"m'agrada fer X\" (afició): **verb + gern**. Per a un desig puntual: **möchte + infinitiu**."
         }
       ]
     },

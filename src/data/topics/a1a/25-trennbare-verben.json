@@ -186,16 +186,33 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals per a catalanoparlants",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. No separar el prefix.**\nÉs l'error més típic. L'instint ens diu de mantenir el verb tal com surt al diccionari, sencer.\n\n- Incorrecte: _Ich aufstehe um sieben Uhr._ ❌\n- Correcte: _!!Ich ==stehe== um sieben Uhr ==auf==.!!_ ✅\n\n**2. Conjugar el prefix.**\nEl prefix és invariable: apareix sempre exactament igual que al diccionari, independentment del subjecte.\n\n- Incorrecte: _Er ruft seine Mutter ant._ ❌ (no s'afegeix cap terminació al prefix)\n- Correcte: _!!Er ==ruft== seine Mutter ==an==.!!_ ✅\n\n**3. Posar el prefix al mig de l'oració en comptes del final.**\nEl prefix ha d'anar **al final de tot**, després de tots els complements. No és una partícula que \"acompanya\" el verb; és la peça que **tanca el claudàtor**.\n\n- Incorrecte: _Ich ==stehe== ==auf== um sieben Uhr._ ❌\n- Correcte: _!!Ich ==stehe== um sieben Uhr ==auf==.!!_ ✅\n\n**4. Confondre separables amb inseparables.**\nSi veus un verb que comença amb _be-, ver-, er-, ent-…_, ==no el separis==. _verstehen_ no és \"separable\", és _ich verstehe das_ (sencer, amb accent a _-steh-_).\n\n- Incorrecte: _Ich stehe das ver._ ❌\n- Correcte: _!!Ich ==verstehe== das.!!_ ✅\n\n**5. Oblidar-se del prefix quan l'oració és llarga.**\nQuan l'oració té molts complements, és fàcil arribar al final i no recordar que havies de \"tancar el claudàtor\". Consell: quan comencis una oració amb un verb separable, ==pensa ja el prefix== abans de començar a parlar.\n\n- Incorrecte: _Ich rufe heute Abend meinen Bruder in München._ ❌ (falta _an_ al final)\n- Correcte: _!!Ich ==rufe== heute Abend meinen Bruder in München ==an==.!!_ ✅"
+          "bad": "!!Ich aufstehe um sieben Uhr.!!",
+          "good": "!!Ich ==stehe== um sieben Uhr ==auf==.!!",
+          "why": "L'instint ens diu de mantenir el verb sencer. Però el prefix **sempre se separa** en oració enunciativa: arrel a la posició 2, prefix al final."
         },
         {
-          "type": "callout",
-          "variant": "warning",
-          "title": "Resum dels paranys",
-          "body": "**(1)** El prefix **sempre se separa** en oració enunciativa. **(2)** El prefix és **invariable** (no es conjuga). **(3)** El prefix va **al final de tot**, no al mig. **(4)** Els prefixos **_be-, ver-, er-, ent-_…** **NO** se separen. **(5)** En oracions llargues, ==recorda tancar el claudàtor==."
+          "bad": "!!Er ruft seine Mutter ant.!!",
+          "good": "!!Er ==ruft== seine Mutter ==an==.!!",
+          "why": "El prefix és **invariable**: apareix sempre exactament igual que al diccionari, sense cap terminació."
+        },
+        {
+          "bad": "!!Ich ==stehe== ==auf== um sieben Uhr.!!",
+          "good": "!!Ich ==stehe== um sieben Uhr ==auf==.!!",
+          "why": "El prefix ha d'anar **al final de tot**, després de tots els complements. No és una partícula que \"acompanya\" el verb; és la peça que **tanca el claudàtor**."
+        },
+        {
+          "bad": "!!Ich stehe das ver.!!",
+          "good": "!!Ich ==verstehe== das.!!",
+          "why": "Verbs amb prefix _be-, ver-, er-, ent-…_ són **inseparables**: ==no els separis==. L'accent cau a l'arrel (_ver**STEH**en_), no al prefix."
+        },
+        {
+          "bad": "!!Ich rufe heute Abend meinen Bruder in München.!!",
+          "good": "!!Ich ==rufe== heute Abend meinen Bruder in München ==an==.!!",
+          "why": "En oracions llargues és fàcil oblidar el prefix al final. Consell: ==pensa ja el prefix== abans de començar a parlar."
         }
       ]
     },

@@ -100,34 +100,28 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals"
+          "bad": "!!Danach Emma geht es schlecht.!!",
+          "good": "!!**Danach geht es Emma schlecht.**!!",
+          "why": "Si comences amb _Danach_ (o _Dann_, _Zuerst_), ==obligatòriament== cal inversió: verb a la posició 2, subjecte a la 3."
         },
         {
-          "type": "callout",
-          "variant": "danger",
-          "title": "Parany 1 · Traduir \"després\" com si no passés res",
-          "body": "En català dir _Després l'Emma es troba malament_ no altera l'ordre subjecte-verb. En alemany, si comences amb _Danach_, ==obligatòriament== cal inversió:\n\n- Incorrecte: _~~Danach Emma geht es schlecht.~~_\n- Correcte: _!!**Danach geht es Emma schlecht.**!!_"
+          "bad": "!!Denn koche ich.!! (volent dir \"llavors\")",
+          "good": "!!**Dann** koche ich.!!",
+          "why": "_dann_ = llavors, aleshores (temporal). _denn_ = perquè (causal) / partícula modal en preguntes. Si vols dir \"i llavors\", és **_dann_**."
         },
         {
-          "type": "callout",
-          "variant": "warning",
-          "title": "Parany 2 · Confondre _dann_ amb _denn_",
-          "body": "Són paraules diferents:\n\n- **_dann_** = llavors, aleshores (temporal)\n- **_denn_** = perquè (causal, A1b més endavant) / partícula modal en preguntes\n\nSi vols dir \"i llavors\", és **_dann_**, no **_denn_**."
+          "bad": "!!Erst esse ich.!! (volent dir \"primer\")",
+          "good": "!!**Zuerst** esse ich.!!",
+          "why": "_zuerst_ = primer (obrir seqüència). _erst_ = només, no fins... (temporal, però significat diferent: _Ich esse erst um neun_ = no menjo fins a les nou)."
         },
         {
-          "type": "callout",
-          "variant": "warning",
-          "title": "Parany 3 · _zuerst_ vs. _erst_",
-          "body": "- **_zuerst_** = primer (obrir seqüència)\n- **_erst_** = només, no fins... (temporal, però diferent significat)\n\n> _!!**Zuerst** esse ich.!!_ (Primer menjo.)\n> _!!Ich esse **erst** um neun.!!_ (No menjo fins a les nou.)\n\nA nivell A1, limita't a _zuerst_ per a seqüències."
-        },
-        {
-          "type": "callout",
-          "variant": "info",
-          "title": "Parany 4 · Posició del verb separable",
-          "body": "Si el verb té prefix separable (p. ex. _aufstehen_, _einkaufen_), el prefix va al final i el verb conjugat a la posició 2:\n\n- _!!**Dann stehe ich auf.**!!_ (no _~~Dann ich aufstehe.~~_)\n- _!!**Zuerst kauft er ein.**!!_ (no _~~Zuerst er einkauft.~~_)\n\nJa ho has vist a A1a-18 (_Satzklammer_)."
+          "bad": "!!Dann ich aufstehe.!! / !!Zuerst er einkauft.!!",
+          "good": "!!Dann **stehe** ich **auf**.!! / !!Zuerst **kauft** er **ein**.!!",
+          "why": "Amb verbs separables, el verb conjugat va a la posició 2 i el prefix al final (Satzklammer, A1a-18)."
         }
       ]
     },

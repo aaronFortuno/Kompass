@@ -199,10 +199,48 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals\n\n**1. Usar _mir_ amb _interessieren_ (o _mich_ amb _gefallen_).**\nL'error estrella del bloc: \\*_**Mir** interessiert der Dom_, \\*_**Mich** gefällt der Dom_. El correcte és **_Mir gefällt_** i **_Mich interessiert_**. Memoritza-les com dos blocs tancats i diferenciats.\n\n**2. Concordar _interessieren_ amb la persona en comptes del subjecte.**\nCalc del català: \\*_Mich interessiere der Dom_ (pensant que _ich_ és subjecte i el verb ha d'anar en primera persona). No: el subjecte és _der Dom_, i el verb concorda amb ell en tercera persona: _Mich **interessiert** der Dom_. Amb plural: _Mich **interessieren** die Museen_.\n\n**3. Dir _neugierig für_ o _neugierig über_ calcant del català.**\nLa preposició correcta és **_auf_** i només _auf_: _Ich bin neugierig **auf** die Stadt_. Ni _für_, ni _über_, ni _von_. Memoritza _neugierig auf_ com un bloc fix.\n\n**4. Posar _neugierig auf_ amb datiu en comptes d'acusatiu.**\n_Auf_ en aquest ús regeix **acusatiu**, no datiu. És _neugierig auf **den** Bruder_ (masc. acusatiu _den_), no \\*_neugierig auf **dem** Bruder_ (que seria datiu). Si et confons, recorda que aquí _auf_ té sentit de 'cap a, vers', una direcció d'atenció → acusatiu.\n\n**5. Oblidar el verb _sein_ amb _neugierig auf_.**\n_Neugierig_ és un **adjectiu**, no un verb. No pot anar sol: \\*_Ich neugierig auf die Stadt_ és agramatical. Sempre _Ich **bin** neugierig auf die Stadt_, _Du **bist** neugierig_, _Wir **sind** neugierig_, etc.\n\n**6. Posar _auf jeden Fall / auf keinen Fall_ entre el subjecte i el verb.**\nLes tres expressions són flexibles, però **no poden trencar la regla del verb en segona posició (V2)**. \\*_Ich auf keinen Fall gehe ins Museum_ viola V2. Correcte: _**Auf keinen Fall** gehe ich ins Museum_ (expressió en posició 1, verb en 2) o _Ich gehe **auf keinen Fall** ins Museum_ (expressió darrere del verb).\n\n**7. Declinar _unbedingt_ com si fos un adjectiu atribut.**\n_Unbedingt_ és un **adverbi invariable**. No té gènere, nombre ni declinació. No diguis \\*_unbedingte_ ni \\*_unbedingten_: només _unbedingt_, tal qual, sempre.\n\n**8. Confondre _auf keinen Fall_ amb una negació verbal.**\n_Auf keinen Fall_ ja porta la negació **dins** (_keinen_ = 'cap'). No cal afegir _nicht_. \\*_Ich gehe auf keinen Fall nicht ins Museum_ és doble negació (agramatical). Correcte: _Ich gehe **auf keinen Fall** ins Museum_ = 'No vaig al museu de cap manera'."
+          "bad": "!!**Mir** interessiert der Dom.!!",
+          "good": "!!**Mich** interessiert der Dom.!!",
+          "why": "L'error estrella del bloc: _gefallen_ → **datiu** (_Mir gefällt_), _interessieren_ → **acusatiu** (_Mich interessiert_). Memoritza-les com dos blocs tancats i diferenciats."
+        },
+        {
+          "bad": "!!Mich **interessiere** der Dom.!!",
+          "good": "!!Mich **interessiert** der Dom.!!",
+          "why": "Concordar _interessieren_ amb la persona en comptes del subjecte. El subjecte és _der Dom_ (3a persona), no _ich_. Amb plural: _Mich **interessieren** die Museen_."
+        },
+        {
+          "bad": "!!Ich bin neugierig **für** die Stadt.!!",
+          "good": "!!Ich bin neugierig **auf** die Stadt.!!",
+          "why": "La preposició correcta és **_auf_** i només _auf_. Ni _für_, ni _über_, ni _von_. Memoritza _neugierig auf_ com un bloc fix."
+        },
+        {
+          "bad": "!!Ich bin neugierig auf **dem** Bruder.!!",
+          "good": "!!Ich bin neugierig auf **den** Bruder.!!",
+          "why": "_Auf_ en aquest ús regeix **acusatiu**, no datiu. Aquí _auf_ té sentit de 'cap a, vers', una direcció d'atenció → acusatiu."
+        },
+        {
+          "bad": "!!Ich neugierig auf die Stadt.!!",
+          "good": "!!Ich **bin** neugierig auf die Stadt.!!",
+          "why": "_Neugierig_ és un **adjectiu**, no un verb. No pot anar sol: sempre cal el verb _sein_ (_bin, bist, ist, sind_...)."
+        },
+        {
+          "bad": "!!Ich **auf keinen Fall** gehe ins Museum.!!",
+          "good": "!!**Auf keinen Fall** gehe ich ins Museum.!!",
+          "why": "No es pot trencar la regla del verb en segona posició (V2). Correcte: expressió en posició 1 + verb en 2, o bé expressió darrere del verb."
+        },
+        {
+          "bad": "!!Ich möchte **unbedingte** den Dom sehen.!!",
+          "good": "!!Ich möchte **unbedingt** den Dom sehen.!!",
+          "why": "_Unbedingt_ és un **adverbi invariable**. No té gènere, nombre ni declinació."
+        },
+        {
+          "bad": "!!Ich gehe auf keinen Fall **nicht** ins Museum.!!",
+          "good": "!!Ich gehe **auf keinen Fall** ins Museum.!!",
+          "why": "_Auf keinen Fall_ ja porta la negació dins (_keinen_ = 'cap'). No cal afegir _nicht_: seria doble negació."
         }
       ]
     },

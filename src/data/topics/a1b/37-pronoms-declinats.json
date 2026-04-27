@@ -184,16 +184,43 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys freqüents per a catalanoparlants",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys freqüents per a catalanoparlants\n\n**1. Confondre _mich_ i _mir_.**\n\nEl català _em_ és ambigu: pot ser _a mi_ (datiu) o _a mi com a objecte directe_ (acusatiu). En alemany són dues formes diferents.\n\n- _Em veu_ → _Er sieht ==mich==._ (_sehen_ + acusatiu)\n- _Em dóna el llibre_ → _Er gibt ==mir== das Buch._ (_geben_ + datiu per al destinatari)\n\nRegla de supervivència: ==si pots reformular amb _a mi_ i sona bé, és datiu==. Si ha de ser _em_ obligatori sense preposició, pensa si el verb és transitiu (acusatiu) o de datiu pur.\n\n**2. Oblidar que _helfen, danken, gefallen_ van amb datiu.**\n\n- _Ich helfe ==dich==._ ❌ → _Ich helfe ==dir==._ ✅\n- _Das gefällt ==mich==._ ❌ → _Das gefällt ==mir==._ ✅\n\nA A1 val la pena memoritzar aquesta llista curta.\n\n**3. Dir _ihn_ quan toca _ihm_, i al revés.**\n\n- _Ich helfe ==ihn==._ ❌ → _Ich helfe ==ihm==._ ✅\n- _Ich sehe ==ihm==._ ❌ → _Ich sehe ==ihn==._ ✅\n\nMnemo: acusatiu _ihn_ acaba en _-n_ com _mich, dich, euch, ihn_. Datiu _ihm_ acaba en _-m_ com _dem, einem_."
+          "bad": "!!Er sieht **mir**.!!",
+          "good": "!!Er sieht ==mich==.!!",
+          "why": "Confondre _mich_ i _mir_. El català _em_ és ambigu. En alemany: _sehen_ + ==acusatiu== (_mich_), _geben_ + ==datiu== (_mir_). Regla: si pots reformular amb _a mi_ i sona bé, és datiu."
         },
         {
-          "type": "callout",
-          "variant": "danger",
-          "title": "Paranys 4, 5, 6 i 7",
-          "body": "**4. _ihr_ (vosaltres) quan toca _euch_.** _\"Us ajudo\"_ no és _Ich helfe **ihr**_ ❌ — _ihr_ en aquesta oració seria _a ella_! En acusatiu i datiu, ==el plural _ihr_ es converteix en _euch_==: _Ich helfe ==euch==._\n\n**5. _ihnen_ (a ells) vs _Ihnen_ (a vostè).** Totes dues formes sonen iguals; només canvia la majúscula. _Ich danke ==ihnen==_ (a ells) · _Ich danke ==Ihnen==_ (a vostè).\n\n**6. Oblidar que les preposicions manen.** Després d'una preposició de datiu, el pronom va en datiu encara que semànticament sigui \"objecte directe\" en català: _Kommst du ==mit mich==?_ ❌ → _Kommst du ==mit mir==?_ ✅\n\n**7. Dir _Das ist für ich_.** _Für_ demana acusatiu: _Das ist ==für mich==._ ✅"
+          "bad": "!!Ich helfe **dich**. / Das gefällt **mich**.!!",
+          "good": "!!Ich helfe ==dir==. / Das gefällt ==mir==.!!",
+          "why": "Oblidar que _helfen, danken, gefallen_ van amb ==datiu==. A A1 val la pena memoritzar aquesta llista curta."
+        },
+        {
+          "bad": "!!Ich helfe **ihn**. / Ich sehe **ihm**.!!",
+          "good": "!!Ich helfe ==ihm==. / Ich sehe ==ihn==.!!",
+          "why": "Dir _ihn_ quan toca _ihm_, i al revés. Mnemo: acusatiu _ihn_ acaba en ==_-n_== com _mich, dich_. Datiu _ihm_ acaba en ==_-m_== com _dem, einem_."
+        },
+        {
+          "bad": "!!Ich helfe **ihr**. _(volent dir \"us ajudo\")_!!",
+          "good": "!!Ich helfe ==euch==.!!",
+          "why": "_ihr_ (vosaltres) quan toca _euch_. En acusatiu i datiu, ==el plural _ihr_ es converteix en _euch_==. _Ihr_ en datiu seria _a ella_, no _a vosaltres_."
+        },
+        {
+          "bad": "!!Ich danke **ihnen**. _(volent dir \"a vostè\")_!!",
+          "good": "!!Ich danke ==Ihnen==.!!",
+          "why": "_ihnen_ (a ells) vs _Ihnen_ (a vostè). Totes dues sonen iguals; només canvia la ==majúscula==. _Ihnen_ = cortesia."
+        },
+        {
+          "bad": "!!Kommst du mit **mich**?!!",
+          "good": "!!Kommst du mit ==mir==?!!",
+          "why": "Oblidar que les preposicions manen. Després d'una preposició de datiu (_mit_), el pronom va en ==datiu== encara que semànticament sigui \"objecte directe\" en català."
+        },
+        {
+          "bad": "!!Das ist für **ich**.!!",
+          "good": "!!Das ist für ==mich==.!!",
+          "why": "_Für_ demana ==acusatiu==: _für mich, für dich, für ihn_. Mai nominatiu."
         }
       ]
     },

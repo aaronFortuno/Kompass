@@ -128,16 +128,33 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals per a catalanoparlants",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. Posar el verb a la posició 3 després d'un complement inicial.**\nÉs l'error rei. En català l'ordre \"complement + subjecte + verb\" sona natural. En alemany, **no existeix**: el verb es manté a la 2.\n\n- Incorrecte: _Am Wochenende ich spiele Fußball._\n- Correcte: _Am Wochenende ==spiele ich== Fußball._\n\n**2. Ajuntar les dues peces verbals.**\nPer influència del català/castellà, costa acceptar que _kann_ i _tanzen_ van separats. L'instint ens diu \"_kann tanzen_\" tot junt.\n\n- Incorrecte: _Sie kann tanzen sehr gut Tango._\n- Correcte: _!!Sie ==kann== sehr gut Tango ==tanzen==.!!_\n\n**3. Conjugar la segona peça verbal.**\nEl verb principal d'una Satzklammer va en **infinitiu** (o participi, o com a prefix); ==mai no es conjuga==. El que es conjuga és el modal o l'auxiliar.\n\n- Incorrecte: _Ich möchte ein Bier trinke._\n- Correcte: _!!Ich möchte ein Bier ==trinken==.!!_ (infinitiu)\n\n**4. Oblidar separar el prefix dels verbs separables.**\nVerbs com _aufstehen_, _ankommen_, _einkaufen_ **se separen** en present (ho veuràs a **A1a-25**). El prefix marxa al final.\n\n- Incorrecte: _Ich aufstehe um 7 Uhr._\n- Correcte: _!!Ich ==stehe== um 7 Uhr ==auf==.!!_\n\n**5. Tenir por del \"final\" de l'oració.**\nA l'inici fa vertigen: \"i si m'oblido del verb del final?\" Passa a tothom. Consell: quan comencis una oració amb un modal o un auxiliar, **tingues ja pensat el verb principal**. Amb temps es fa automàtic."
+          "bad": "!!Am Wochenende ich spiele Fußball.!!",
+          "good": "!!Am Wochenende ==spiele ich== Fußball.!!",
+          "why": "En català l'ordre \"complement + subjecte + verb\" sona natural. En alemany, **no existeix**: el verb es manté a la posició 2."
         },
         {
-          "type": "callout",
-          "variant": "warning",
-          "title": "Resum dels paranys",
-          "body": "El verb conjugat **mai** deixa la posició 2, tot i que hi hagi un complement al davant. Les dues peces verbals **mai** van juntes: la segona vola ==al final==, sempre en **infinitiu, participi o prefix**, mai conjugada. I amb els verbs separables: no els deixis sencers, **separa'ls**."
+          "bad": "!!Sie kann tanzen sehr gut Tango.!!",
+          "good": "!!Sie ==kann== sehr gut Tango ==tanzen==.!!",
+          "why": "Per influència del català/castellà, l'instint ens diu \"_kann tanzen_\" tot junt. Però les dues peces verbals van **separades**: conjugat a la 2, infinitiu al final."
+        },
+        {
+          "bad": "!!Ich möchte ein Bier trinke.!!",
+          "good": "!!Ich möchte ein Bier ==trinken==.!!",
+          "why": "La segona peça verbal va en **infinitiu** (o participi, o prefix); ==mai no es conjuga==. El que es conjuga és el modal o l'auxiliar."
+        },
+        {
+          "bad": "!!Ich aufstehe um 7 Uhr.!!",
+          "good": "!!Ich ==stehe== um 7 Uhr ==auf==.!!",
+          "why": "Verbs separables com _aufstehen_ **se separen** en present: l'arrel a la posició 2, el prefix al final."
+        },
+        {
+          "bad": "!!Ich kann... (i m'oblido del verb del final)!!",
+          "good": "!!Ich ==kann== gut Gitarre ==spielen==.!!",
+          "why": "Quan comencis una oració amb un modal o un auxiliar, **tingues ja pensat el verb principal**. Amb temps es fa automàtic."
         }
       ]
     },

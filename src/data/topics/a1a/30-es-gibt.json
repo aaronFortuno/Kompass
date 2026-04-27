@@ -118,16 +118,33 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys i errors freqüents",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys i errors freqüents\n\n**1. Oblidar l'acusatiu.**\n❌ _Es gibt ein Tisch._\n✅ _!!Es gibt einen Tisch.!!_\nEl masculí sempre és el que delata l'error. Pensa: \"després de _es gibt_, acusatiu\".\n\n**2. Fer concordar el verb amb el plural.**\n❌ _Es geben Kinder im Park._\n✅ _!!Es gibt Kinder im Park.!!_\nEl verb sempre és **_gibt_**, mai _geben_. El subjecte és _es_ (singular).\n\n**3. Oblidar la inversió quan comences amb un complement.**\n❌ _Im Park es gibt Kinder._\n✅ _!!Im Park gibt es Kinder.!!_\n\n**4. Traduir literalment del català \"hi ha\" com si fos un subjecte.**\nEl que en català és un subjecte lògic (\"uns nens\") en alemany és un objecte gramatical (acusatiu). És un canvi de punt de vista: _es gibt_ → literalment \"(això) dóna\".\n\n**5. Confondre _es gibt_ amb _ist/sind da_.**\nTotes dues expressions existeixen, però no són intercanviables. _es gibt_ és l'existencial genèric (hi ha en general). _Da ist / da sind_ és més \"és aquí / són aquí\" (presència concreta). Al nivell A1, queda't amb ==_es gibt_== per traduir \"hi ha\"."
+          "bad": "!!Es gibt ==ein== Tisch.!!",
+          "good": "!!Es gibt ==einen== Tisch.!!",
+          "why": "Oblidar l'acusatiu. Després de _es gibt_, el substantiu és complement directe → **acusatiu**. El masculí és el que delata l'error: _ein_ → _einen_."
         },
         {
-          "type": "callout",
-          "variant": "danger",
-          "title": "Parany crític",
-          "body": "El **masculí acusatiu** és on es concentren els errors. Cada cop que diguis _es gibt_, pregunta't si el substantiu és masculí: si ho és, _ein → **einen**_, _kein → **keinen**_. Tota la resta de gèneres no es mou."
+          "bad": "!!Es ==geben== Kinder im Park.!!",
+          "good": "!!Es ==gibt== Kinder im Park.!!",
+          "why": "Fer concordar el verb amb el plural. El verb sempre és **_gibt_** (singular), mai _geben_. El subjecte és _es_, no _Kinder_."
+        },
+        {
+          "bad": "!!Im Park ==es gibt== Kinder.!!",
+          "good": "!!Im Park ==gibt es== Kinder.!!",
+          "why": "Oblidar la inversió quan comences amb un complement. Regla V2: el verb (_gibt_) va en segona posició; _es_ passa darrere."
+        },
+        {
+          "bad": "!!Es gibt Kinder ==sind== im Park.!!",
+          "good": "!!Es gibt Kinder im Park.!!",
+          "why": "Traduir literalment del català «hi ha» barrejant _es gibt_ amb _sein_. _Es gibt_ ja és l'expressió completa; no cal afegir _ist/sind_."
+        },
+        {
+          "bad": "!!==Da gibt es== ein Museum.!! (genèric)",
+          "good": "!!==Es gibt== ein Museum.!! (genèric) / !!==Da ist== ein Museum.!! (concret, senyalant)",
+          "why": "Confondre _es gibt_ amb _ist/sind da_. _Es gibt_ = existencial genèric («hi ha»). _Da ist_ = presència concreta («és aquí»). A l'A1, queda't amb _es gibt_ per defecte."
         }
       ]
     },

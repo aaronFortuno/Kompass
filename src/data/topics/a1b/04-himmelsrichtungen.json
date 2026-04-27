@@ -175,16 +175,43 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Pitfalls i errors freqüents",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Pitfalls i errors freqüents\n\n**1. Confondre _im_ i _nach_.**\nÉs l'error número u. _Im Norden_ = posició (\"està al nord\"). _Nach Norden_ = direcció (\"cap al nord\"). No són intercanviables. Si dubtes, substitueix mentalment: _wo?_ → im; _wohin?_ → nach.\n\n**2. Posar article després de _nach_.**\n_Nach dem Norden_ és incorrecte. Amb punts cardinals, **nach** sempre va sol: _nach Norden_, _nach Süden_, _nach Südosten_.\n\n**3. Treure l'article després de _aus_.**\nAl contrari: _aus Norden_ és incorrecte. Aquí **sí** que cal article: _aus ==dem== Norden_.\n\n**4. Oblidar la _-e-_ interior en _östlich_.**\nÉs _östlich_ amb **ö** (umlaut) i amb **-lich**, no _ostlich_ ni _östig_. De la mateixa manera: _nördlich_ (amb ö), _südlich_ (amb ü).\n\n**5. Ordre dels intermedis.**\nÉs ==_Nordosten_==, no _Ostnorden_. ==_Südwesten_==, no _Westsüden_. Sempre **vertical + horitzontal**.\n\n**6. _Liegt_ vs. _ist_ vs. _befindet sich_.**\nPer a geografia, el verb natural és _liegen_. _Sein_ és correcte però pla. _Sich befinden_ (\"trobar-se\") és més formal i el veuràs en textos escrits, no en conversa."
+          "bad": "!!Der Zug fährt **im** Norden.!!",
+          "good": "!!Der Zug fährt **nach** Norden.!!",
+          "why": "Confondre _im_ i _nach_: _im Norden_ = posició (\"està al nord\"); _nach Norden_ = direcció (\"cap al nord\"). Si dubtes: _wo?_ → im; _wohin?_ → nach."
         },
         {
-          "type": "callout",
-          "variant": "danger",
-          "title": "Traduir literalment \"al nord de\" amb _im_",
-          "body": "\"Potsdam és al sud de Berlín\" **no** és _Potsdam liegt im Süden von Berlin_ (això vol dir \"a la part sud de Berlín mateix\", dins la ciutat!). La traducció correcta és _Potsdam liegt ==südlich von== Berlin_. Aquesta distinció _im Süden vs. südlich von_ és la trampa més subtil del tema."
+          "bad": "!!Wir fahren **nach dem** Norden.!!",
+          "good": "!!Wir fahren **nach** Norden.!!",
+          "why": "Posar article després de _nach_. Amb punts cardinals, **nach** sempre va sol: _nach Norden_, _nach Süden_, _nach Südosten_."
+        },
+        {
+          "bad": "!!Der Wind kommt **aus** Norden.!!",
+          "good": "!!Der Wind kommt **aus dem** Norden.!!",
+          "why": "Treure l'article després de _aus_. Al contrari que _nach_, _aus_ **sí** demana article: _aus ==dem== Norden_."
+        },
+        {
+          "bad": "!!Leipzig liegt **ostlich** von Dresden.!!",
+          "good": "!!Leipzig liegt **östlich** von Dresden.!!",
+          "why": "Oblidar l'umlaut en _östlich_ (amb **ö**) i _-lich_. De la mateixa manera: _nördlich_ (amb ö), _südlich_ (amb ü)."
+        },
+        {
+          "bad": "!!Bremen liegt **Ostnorden** von Hannover.!!",
+          "good": "!!Bremen liegt **nordöstlich** von Hannover.!!",
+          "why": "Ordre dels intermedis: sempre **vertical + horitzontal**. ==_Nordosten_==, no _Ostnorden_. ==_Südwesten_==, no _Westsüden_."
+        },
+        {
+          "bad": "!!München **ist** im Süden.!!",
+          "good": "!!München **liegt** im Süden.!!",
+          "why": "Per a geografia, el verb natural és _liegen_. _Sein_ és correcte però pla. _Sich befinden_ és més formal."
+        },
+        {
+          "bad": "!!Potsdam liegt **im Süden von** Berlin.!!",
+          "good": "!!Potsdam liegt ==**südlich von**== Berlin.!!",
+          "why": "_im Süden von Berlin_ vol dir \"a la part sud de Berlín mateix\" (dins la ciutat!). Per dir \"al sud de Berlín\" (relació entre ciutats), cal ==_südlich von_==."
         }
       ]
     },

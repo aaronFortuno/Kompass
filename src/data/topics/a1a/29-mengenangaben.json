@@ -141,16 +141,33 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals per a catalanoparlants",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. Afegir-hi _von_ o _aus_ per \"traduir\" el _de_.**\nÉs l'error número u. L'instint romànic demana una preposició d'enllaç, però en alemany no hi va.\n\n- Incorrecte: _eine Flasche ==von== Wasser_ ❌\n- Incorrecte: _ein Kilo ==aus== Kartoffeln_ ❌\n- Correcte: _!!eine Flasche ==∅== Wasser!!_ ✅\n- Correcte: _!!ein Kilo ==∅== Kartoffeln!!_ ✅\n\n**2. Posar _Kilos_, _Liters_, _Gramms_ en plural.**\nLes unitats de mesura no fan plural en alemany estàndard. El número ja indica la quantitat; la paraula es queda igual.\n\n- Incorrecte: _zwei ==Kilos== Orangen_ ❌\n- Incorrecte: _drei ==Liters== Saft_ ❌\n- Correcte: _!!zwei ==Kilo== Orangen!!_ ✅\n- Correcte: _!!drei ==Liter== Saft!!_ ✅\n\n_Nota:_ en la parla col·loquial es pot sentir alguna vegada _zwei Kilos_ o _drei Liter**s**_ (sobretot en zones del sud), però **a l'A1 la regla única i segura és invariable**.\n\n**3. No fer plural l'envàs quan toca.**\nAquest és l'error contrari: per excés de prudència, algú pot deixar _Flasche_ o _Dose_ en singular amb número plural. Però els envasos **sí que** fan plural normal.\n\n- Incorrecte: _zwei ==Flasche== Cola_ ❌\n- Correcte: _!!zwei ==Flaschen== Cola!!_ ✅\n\n**4. Posar l'article del producte enmig.**\nEn alemany, el producte darrere d'una expressió de quantitat ==no porta article==. No es diu _eine Flasche **das** Wasser_ ni _ein Kilo **die** Kartoffeln_. El producte apareix \"pelat\".\n\n- Incorrecte: _eine Tasse ==der== Kaffee_ ❌\n- Correcte: _!!eine Tasse ==∅== Kaffee!!_ ✅\n\n**5. Confondre _Glas_ / _Becher_ / _Tasse_.**\nEls tres es poden traduir per \"got\" o \"tassa\" en moments diferents, però a la pràctica són envasos molt distints. _==Glas==_ és vidre (pot de melmelada, got de beure); _==Becher==_ és terrina o got de plàstic (iogurt, gelat); _==Tasse==_ és la tassa amb nansa (cafè, te). Aprèn cada paraula lligada al seu producte prototípic."
+          "bad": "!!eine Flasche ==von== Wasser!!",
+          "good": "!!eine Flasche ==∅== Wasser!!",
+          "why": "Afegir-hi _von_ o _aus_ per «traduir» el _de_ català. En alemany **no hi va cap preposició** entre quantitat i producte. És aposició pura."
         },
         {
-          "type": "callout",
-          "variant": "danger",
-          "title": "Parany crític",
-          "body": "**Mai _von_ o _aus_ entre quantitat i producte.** Es diu _eine Flasche **Wasser**_, no _~~eine Flasche von Wasser~~_. I les unitats de mesura **no fan plural**: _zwei **Liter**_, _drei **Kilo**_, _vier **Stück**_ — no _~~zwei Liters~~_ ni _~~drei Kilos~~_."
+          "bad": "!!zwei ==Kilos== Orangen!!",
+          "good": "!!zwei ==Kilo== Orangen!!",
+          "why": "Posar les unitats de mesura en plural. _Kilo, Liter, Gramm, Stück_ es mantenen **invariables** amb números. El número ja indica la quantitat."
+        },
+        {
+          "bad": "!!zwei ==Flasche== Cola!!",
+          "good": "!!zwei ==Flaschen== Cola!!",
+          "why": "No fer plural l'envàs quan toca. A diferència de les mesures, els **envasos** (_Flasche, Dose, Schachtel…_) sí que fan plural normal."
+        },
+        {
+          "bad": "!!eine Tasse ==der== Kaffee!!",
+          "good": "!!eine Tasse ==∅== Kaffee!!",
+          "why": "Posar l'article del producte enmig. Darrere d'una expressió de quantitat, el producte apareix **sense article**."
+        },
+        {
+          "bad": "!!ein ==Glas== Joghurt!! (per a la terrina de iogurt)",
+          "good": "!!ein ==Becher== Joghurt!!",
+          "why": "Confondre _Glas_ / _Becher_ / _Tasse_. _==Glas==_ = vidre (pot, got). _==Becher==_ = terrina o got de plàstic (iogurt). _==Tasse==_ = tassa amb nansa (cafè, te). Aprèn cada paraula lligada al seu envàs físic."
         }
       ]
     },

@@ -115,10 +115,38 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys i errors freqüents",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Pitfalls i errors freqüents\n\n**1. Confondre _groß_ i _hoch_.**\nIncorrecte: _Wie groß ist der Berg?_ (per a una muntanya).\nCorrecte: _!!Wie hoch ist der Berg?!!_\nRecorda: _groß_ = mida general / superfície / alçada de persones. _hoch_ = alçada vertical d'objectes o imports abstractes (preu, lloguer).\n\n**2. Confondre _hoch_ i _teuer_ per a preus.**\nTots dos es fan servir, però amb matisos:\n- ==_!!Wie hoch ist die Miete?!! / !!Wie hoch ist der Preis?!!_== → per a imports abstractes (lloguer, preu oficial, salari).\n- ==_!!Wie teuer ist der Computer?!! / !!Wie teuer ist das Auto?!!_== → per al cost concret d'un objecte que compres.\n\n**3. Separar _wie_ de l'adjectiu.**\nIncorrecte: _Wie bist du alt?_\nCorrecte: _!!Wie alt bist du?!!_\nEl bloc _wie + adjectiu_ és inseparable en la pregunta.\n\n**4. Oblidar la _-e_ a _wie lange_.**\n- ==_Wie lang_== → per a longitud física (_com de llarg és el riu?_).\n- ==_Wie lange_== → per a durada (_quant temps?_).\nAl dubte, si parles de temps, posa-hi la _-e_: _wie lange_.\n\n**5. Traduir literalment del català.**\nEl català diu _quants anys tens?_ (amb \"quants\"). L'alemany ==no compta els anys==, descriu l'edat com una propietat: _!!wie alt bist du?!!_ → \"com de vell ets?\". Canvi de perspectiva.\n\n**6. _viel_ vs. _viele_.**\n- ==_!!Wie viel!!_== (sense _-e_) → per a quantitats incomptables: _!!Wie viel Milch?!!_, _!!Wie viel kostet das?!!_\n- ==_!!Wie viele!!_== (amb _-e_) → per a comptables en plural: _!!Wie viele Kinder hast du?!!_"
+          "bad": "!!Wie ==groß== ist der Berg?!!",
+          "good": "!!Wie ==hoch== ist der Berg?!!",
+          "why": "Confondre _groß_ i _hoch_. _groß_ = mida general, superfície, alçada de persones. _hoch_ = alçada vertical d'objectes (edificis, muntanyes) o imports abstractes."
+        },
+        {
+          "bad": "!!Wie ==teuer== ist die Miete?!!",
+          "good": "!!Wie ==hoch== ist die Miete?!!",
+          "why": "Confondre _hoch_ i _teuer_ per a preus. _Wie hoch_ → imports abstractes (lloguer, preu oficial, salari). _Wie teuer_ → cost concret d'un objecte que compres."
+        },
+        {
+          "bad": "!!Wie bist du ==alt==?!!",
+          "good": "!!Wie ==alt== bist du?!!",
+          "why": "Separar _wie_ de l'adjectiu. El bloc _wie + adjectiu_ és **inseparable** i va en primera posició; el verb en segona (V2)."
+        },
+        {
+          "bad": "!!Wie ==lang== bleibst du in Deutschland?!!",
+          "good": "!!Wie ==lange== bleibst du in Deutschland?!!",
+          "why": "Oblidar la _-e_ a _wie lange_. _Wie lang_ → longitud física. _Wie lange_ → **durada** (quant temps). Si parles de temps, posa-hi la _-e_."
+        },
+        {
+          "bad": "!!==Wie viel== Kinder hast du?!!",
+          "good": "!!==Wie viele== Kinder hast du?!!",
+          "why": "_viel_ vs. _viele_. Sense _-e_ → quantitats incomptables (_Wie viel Milch?_). Amb _-e_ → comptables en plural (_Wie viele Kinder?_)."
+        },
+        {
+          "bad": "!!==Wie viele== kostet das?!!",
+          "good": "!!==Wie viel== kostet das?!!",
+          "why": "Posar _-e_ a _wie viel_ quan parles d'un import (incomptable). El preu és una quantitat contínua, no comptable."
         }
       ]
     },

@@ -203,16 +203,38 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals per a catalanoparlants",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. Assumir que els verbs \"de persona\" van amb datiu.**\n\nEn català, molts verbs amb persona com a complement porten _a_: _\"ajudo **al** meu germà\"_, _\"visito **a** l'Anna\"_, _\"estimo **a** la Maria\"_. En alemany cal mirar ==el verb==, no el tipus de complement:\n\n- _Ich ==helfe meinem Bruder==._ (dat. — perquè _helfen_ pren datiu)\n- _Ich ==besuche Anna==._ (akk. — perquè _besuchen_ és transitiu)\n- _Ich ==liebe Maria==._ (akk. — perquè _lieben_ és transitiu)\n\n**2. Confondre _gefallen_ amb _mögen_.**\n\nTotes dues es tradueixen per _agradar_, però l'estructura és inversa:\n\n- ==_mögen_== = transitiu (akk.): _Ich ==mag das Lied==._ (\"M'agrada la cançó\" — **jo sóc el subjecte**)\n- ==_gefallen_== = intransitiu (dat.): _==Das Lied== ==gefällt mir==._ (\"La cançó m'agrada\" — **la cançó és el subjecte**)\n\nEstructuralment, _gefallen_ és idèntic al castellà/català _gustar_: _\"me gusta **la canción**\"_. És sovint el més fàcil dels verbs de datiu per a catalanoparlants, un cop l'identifiques.\n\n**3. Oblidar la _-n_ del plural en datiu.**\n\nEls plurals prenen _-n_ al substantiu en datiu, a banda de l'article:\n\n- _Ich helfe ==den Kinder**n**==._ (dat. pl. — _den Kinder**n**_)\n- Incorrecte: _Ich helfe den Kinder._ ❌\n\n**4. Calcar l'ordre del català en _geben_-verbs.**\n\nEn català, el pronom feble sovint va abans del verb: _\"et dono un llibre\"_ (datiu feble). En alemany, l'ordre canònic és ==Subjecte + Verb + Dat. + Akk.== i no hi ha pronoms \"febles\" moguts al davant:\n\n- _Ich ==gebe== ==dir== ==ein Buch==._ ✅\n- _Dir gebe ich ein Buch._ — és possible com a ==tematització==, però no és el neutre."
+          "bad": "!!Ich helfe **die** Anna.!!",
+          "good": "!!Ich helfe ==der== Anna.!!",
+          "why": "Assumir que els verbs \"de persona\" van amb acusatiu. En català, _ajudar_ porta complement directe, però en alemany ==_helfen_ pren datiu==. Cal mirar el verb, no el tipus de complement."
         },
         {
-          "type": "callout",
-          "variant": "danger",
-          "title": "Paranys 5 i 6",
-          "body": "**5. Fer servir acusatiu amb _helfen, gefallen, gehören_.** Aquest és l'error clàssic. Memoritza aquests tres com a ==trio== de datiu: _helfen, gefallen, gehören_. Si els interioritzes, evites el 80% dels errors de valència.\n\n- Incorrecte: _Ich helfe ==meinen== Bruder._ ❌\n- Correcte: _Ich helfe ==meinem== Bruder._ ✅\n\n**6. Pensar que \"tenir un complement\" = \"ser transitiu\".** Un verb pot ser intransitiu i tenir complement. _Helfen_ porta complement (_meinem Bruder_), però és intransitiu perquè ==aquest complement no és acusatiu==. Transitivitat = acusatiu, punt."
+          "bad": "!!Das Lied **gefällt mich**. _(com _mögen_)_!!",
+          "good": "!!Das Lied ==gefällt mir==.!!",
+          "why": "Confondre _gefallen_ amb _mögen_. ==_Mögen_== = transitiu (akk.): _Ich mag das Lied_ (jo sóc el subjecte). ==_Gefallen_== = intransitiu (dat.): _Das Lied gefällt mir_ (la cançó és el subjecte)."
+        },
+        {
+          "bad": "!!Ich helfe den **Kinder**.!!",
+          "good": "!!Ich helfe den ==Kindern==.!!",
+          "why": "Oblidar la ==-n== del plural en datiu. Els substantius en plural datiu prenen _-n_: _den Kindern, den Freunden, den Schülern_."
+        },
+        {
+          "bad": "!!**Dir** gebe ich ein Buch. _(com a forma neutra)_!!",
+          "good": "!!Ich ==gebe dir== ==ein Buch==.!!",
+          "why": "Calcar l'ordre del català en verbs de donació. L'ordre canònic neutre en alemany és ==Subjecte + Verb + Dat. + Akk.==. _Dir gebe ich…_ és tematització, no l'ordre per defecte."
+        },
+        {
+          "bad": "!!Ich helfe **meinen** Bruder.!!",
+          "good": "!!Ich helfe ==meinem== Bruder.!!",
+          "why": "Fer servir acusatiu amb _helfen, gefallen, gehören_. Memoritza aquests tres com a ==trio de datiu==. Si els interioritzes, evites el 80% dels errors de valència."
+        },
+        {
+          "bad": "!!_Helfen_ porta complement, per tant és **transitiu**.!!",
+          "good": "!!_Helfen_ porta complement en **datiu**, per tant és ==intransitiu==.!!",
+          "why": "Pensar que \"tenir un complement\" = \"ser transitiu\". Un verb pot portar complement i ser intransitiu. ==Transitivitat = admet acusatiu==, punt."
         }
       ]
     },

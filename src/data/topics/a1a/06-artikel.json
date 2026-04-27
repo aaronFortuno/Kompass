@@ -205,10 +205,43 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals\n\nAquests són els errors típics que fan els catalanoparlants en aquest tema.\n\n**1. Traduir el gènere del català.**\n_La lluna_ en català és femení, però _!!der Mond!!_ és **masculí** en alemany. _El sol_ és masculí en català, però _!!die Sonne!!_ és **femení**. _La nena_ és femení en català, però _!!das Mädchen!!_ és **neutre** en alemany. No et fiïs mai del català per endevinar el gènere alemany.\n\n> Incorrecte: **!!die Mond!!**.\n> Correcte: **!!der Mond!!**.\n\n**2. Confondre _die_ femení singular amb _die_ plural.**\nSón idèntics en forma, però el verb els distingeix sempre.\n\n> **!!Die Frau ist hier.!!** (La dona és aquí — singular.)\n> **!!Die Frauen sind hier.!!** (Les dones són aquí — plural.)\n\n**3. Oblidar que masculí i neutre comparteixen _ein_.**\nCom que a l'article determinat sí que es distingeixen (_der_ vs _das_), és fàcil voler fer-ho també amb l'indeterminat. Però no: _!!ein Mann!!_ i _!!ein Kind!!_ porten exactament el mateix article.\n\n**4. Fer servir _kein_ amb article determinat.**\n_Kein_ només nega substantius amb article indeterminat o sense article. Si vols negar una cosa concreta (amb _der/die/das_) o pròpia (amb _mein, dein_…), has de fer servir **_nicht_**.\n\n> Incorrecte: **!!Das ist kein der Mann.!!**\n> Correcte: **!!Das ist nicht der Mann.!!** (Aquell no és l'home.)\n\n**5. Posar article indeterminat en plural.**\nEn alemany, com en català, no hi ha article indeterminat en plural. Si vols dir \"uns nens\", dius simplement **Kinder**, sense article. _Ein_ no té forma plural, així com tampoc diem \"uns\" d'alguna manera.\n\n> Incorrecte: **!!Das sind eine Kinder.!!**\n> Correcte: **!!Das sind Kinder.!!** (Aquests són nens.) o **!!Das sind keine Kinder.!!** (Aquests no són nens.)\n\n**6. Oblidar la majúscula al substantiu.**\nSigui quin sigui l'article (_der, ein, kein_...), el substantiu que segueix sempre va amb **majúscula inicial**.\n\n> Incorrecte: **!!der mann, eine frau, kein buch!!**.\n> Correcte: **!!der Mann, eine Frau, kein Buch!!**.\n\n**7. Pensar que l'article canvia el gènere del substantiu.**\nL'article **reflecteix** el gènere del substantiu; no el canvia. _!!Der Mann!!_ és masculí perquè _Mann_ ho és. _!!Das Mädchen!!_ no és \"masculí o neutre segons et vingui de gust\": sempre és neutre, perquè _Mädchen_ ho és."
+          "bad": "!!==die== Mond!!",
+          "good": "!!==der== Mond!!",
+          "why": "Traduir el gènere del català. _La lluna_ és femení en català, però _der Mond_ és **masculí** en alemany. No et fiïs mai del català per endevinar el gènere alemany."
+        },
+        {
+          "bad": "!!Die Frau ==sind== hier.!!",
+          "good": "!!Die Frau ==ist== hier.!!",
+          "why": "Confondre _die_ femení singular amb _die_ plural. Són idèntics en forma, però el verb els distingeix: _die Frau **ist**_ (singular) vs _die Frauen **sind**_ (plural)."
+        },
+        {
+          "bad": "!!==eine== Kind!!",
+          "good": "!!==ein== Kind!!",
+          "why": "Oblidar que masculí i neutre comparteixen _ein_. A l'article determinat sí que es distingeixen (_der_ vs _das_), però a l'indeterminat no: _ein Mann_ i _ein Kind_ porten el mateix article."
+        },
+        {
+          "bad": "!!Das ist ==kein der== Mann.!!",
+          "good": "!!Das ist ==nicht der== Mann.!!",
+          "why": "Fer servir _kein_ amb article determinat. _Kein_ només nega substantius amb article indeterminat o sense article. Amb _der/die/das_ o possessius, cal **_nicht_**."
+        },
+        {
+          "bad": "!!Das sind ==eine== Kinder.!!",
+          "good": "!!Das sind Kinder.!!",
+          "why": "Posar article indeterminat en plural. _Ein_ no té forma plural. Si vols dir \"uns nens\", dius simplement _Kinder_, sense article."
+        },
+        {
+          "bad": "!!der ==m==ann, eine ==f==rau, kein ==b==uch!!",
+          "good": "!!der ==M==ann, eine ==F==rau, kein ==B==uch!!",
+          "why": "Oblidar la majúscula al substantiu. Sigui quin sigui l'article, el substantiu sempre va amb **majúscula inicial**."
+        },
+        {
+          "bad": "!!==Der== Mädchen!!",
+          "good": "!!==Das== Mädchen!!",
+          "why": "Pensar que l'article canvia el gènere del substantiu. L'article **reflecteix** el gènere; no el canvia. _Mädchen_ sempre és neutre perquè _Mädchen_ ho és."
         }
       ]
     },

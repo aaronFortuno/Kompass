@@ -185,16 +185,38 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals per a catalanoparlants",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. Posar una preposició davant de la durada.**\n\nPer instint, traduïm \"durant\" del català. En alemany **no hi és**.\n\n- ❌ _Ich bleibe ~~für~~ einen Monat in Spanien._ (_für_ existeix però canvia el matís)\n- ✅ _Ich bleibe ==einen Monat== in Spanien._\n\n> Nota: _für + Akkusativ_ també és possible (_für einen Monat_) i s'usa per a **durades planificades cap al futur**, però a A1 el patró bàsic i segur és ==acusatiu nu==. Comença amb això.\n\n**2. Oblidar el canvi _ein → einen_ en masculí.**\n\n- ❌ _Ich arbeite ~~ein~~ Tag in Berlin._\n- ✅ _Ich arbeite ==einen== Tag in Berlin._\n\n**3. Usar Perfekt amb _seit_.**\n\nEl parany número u. _Seit_ demana **present** per a accions que continuen.\n\n- ❌ _Ich ~~habe gewohnt~~ seit zwei Jahren in Berlin._\n- ✅ _Ich ==wohne== seit zwei Jahren in Berlin._"
+          "bad": "!!Ich bleibe **für** einen Monat in Spanien.!!",
+          "good": "!!Ich bleibe ==einen Monat== in Spanien.!!",
+          "why": "Posar una preposició davant de la durada. En alemany la durada va en ==acusatiu nu==, sense preposició. (_für_ existeix però canvia el matís; a A1 el patró bàsic i segur és sense preposició.)"
         },
         {
-          "type": "callout",
-          "variant": "danger",
-          "title": "Paranys 4, 5 i 6",
-          "body": "**4. Posar _seit_ en acusatiu.** _Seit_ és **sempre datiu**. Mai acusatiu.\n\n- ❌ _seit ~~eine~~ Woche_ → ✅ _seit ==einer== Woche_\n- ❌ _seit drei ~~Jahre~~_ → ✅ _seit drei ==Jahren==_ (datiu plural amb _-n_)\n\n**5. Confondre _von… bis…_ amb _seit_.**\n\n- _==Von 2020 bis 2023== habe ich in Berlin gewohnt._ → interval **tancat** (ja no hi visc). Perfekt.\n- _==Seit 2020== wohne ich in Berlin._ → període **obert** (encara hi visc). Present.\n\nLa tria de preposició canvia el significat i el temps verbal.\n\n**6. Barrejar _wann_ i _wie lange_ mentalment.** Si algú et pregunta _==Wie lange== bleibst du?_ i contestes _\"Am Montag\"_, no has respost a la pregunta. _Am Montag_ respon a _wann_."
+          "bad": "!!Ich arbeite **ein** Tag in Berlin.!!",
+          "good": "!!Ich arbeite ==einen== Tag in Berlin.!!",
+          "why": "Oblidar el canvi _ein → einen_ en masculí. La durada va en acusatiu, i en masculí singular l'article indefinit canvia: ==_ein → einen_==."
+        },
+        {
+          "bad": "!!Ich **habe gewohnt** seit zwei Jahren in Berlin.!!",
+          "good": "!!Ich ==wohne== seit zwei Jahren in Berlin.!!",
+          "why": "Usar Perfekt amb _seit_. _Seit_ demana ==**present**== per a accions que continuen fins ara."
+        },
+        {
+          "bad": "!!seit **eine** Woche / seit drei **Jahre**!!",
+          "good": "!!seit ==einer== Woche / seit drei ==Jahren==!!",
+          "why": "Posar _seit_ en acusatiu. _Seit_ és ==**sempre datiu**==. Mai acusatiu. Al plural, el substantiu afegeix _-n_ (datiu plural)."
+        },
+        {
+          "bad": "!!**Seit** 2020 bis 2023 habe ich in Berlin gewohnt.!!",
+          "good": "!!**Von** 2020 **bis** 2023 habe ich in Berlin gewohnt.!!",
+          "why": "Confondre _von… bis…_ amb _seit_. ==_Von… bis…_== marca un interval tancat (ja no hi visc, Perfekt). ==_Seit_== marca un període obert (encara hi visc, Present)."
+        },
+        {
+          "bad": "!!— Wie lange bleibst du? — **Am Montag**.!!",
+          "good": "!!— Wie lange bleibst du? — **Einen Monat**.!!",
+          "why": "Barrejar _wann_ i _wie lange_ mentalment. _Am Montag_ respon a ==_wann_== (moment), no a ==_wie lange_== (durada)."
         }
       ]
     },

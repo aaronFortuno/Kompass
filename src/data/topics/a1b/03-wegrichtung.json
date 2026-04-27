@@ -134,34 +134,38 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys i errors freqüents",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys i errors freqüents\n\n**1. _nach_ amb nom comú.**\n\nError: _Ich gehe **nach** dem Arzt._\nCorrecte: _Ich gehe ==**zum**== Arzt._\n\nRegla ferma: _nach_ només amb noms propis geogràfics (i _nach Hause_)."
+          "bad": "!!Ich gehe **nach** dem Arzt.!!",
+          "good": "!!Ich gehe ==**zum**== Arzt.!!",
+          "why": "Regla ferma: _nach_ només amb noms propis geogràfics (i _nach Hause_). Amb noms comuns, sempre _zu_."
         },
         {
-          "type": "explanation",
-          "body": "**2. Oblidar la contracció obligatòria _vom_ / _zum_ / _zur_.**\n\nForçat: _Ich komme von dem Bahnhof._\nNatural: _Ich komme ==**vom**== Bahnhof._\n\nAmb masculí/neutre, sempre contraccions amb _von_ i _zu_ en el registre parlat."
+          "bad": "!!Ich komme **von dem** Bahnhof.!!",
+          "good": "!!Ich komme ==**vom**== Bahnhof.!!",
+          "why": "Oblidar la contracció obligatòria _vom_ / _zum_ / _zur_. Amb masculí/neutre, sempre contraccions amb _von_ i _zu_ en el registre parlat."
         },
         {
-          "type": "callout",
-          "variant": "warning",
-          "title": "_nach die Schweiz_ — error clàssic",
-          "body": "Els països amb article no accepten _nach_. Memoritza: _die Schweiz_, _die Türkei_, _die USA_, _die Niederlande_, _der Iran_ → sempre ==**in + acusatiu**==."
+          "bad": "!!Ich fahre **nach der** Schweiz.!!",
+          "good": "!!Ich fahre ==**in die**== Schweiz.!!",
+          "why": "Els països amb article no accepten _nach_. Memoritza: _die Schweiz_, _die Türkei_, _die USA_, _die Niederlande_, _der Iran_ → sempre ==**in + acusatiu**==."
         },
         {
-          "type": "explanation",
-          "body": "**4. Confondre _zu Hause_ i _nach Hause_.**\n\n- ==**zu Hause**== = **a casa** (estar-hi, ubicació).\n- ==**nach Hause**== = **cap a casa** (moviment).\n\n_Ich gehe **nach Hause**, weil ich **zu Hause** sein will._"
+          "bad": "!!Ich bin **nach Hause**.!!",
+          "good": "!!Ich bin **zu Hause**.!!",
+          "why": "Confondre _zu Hause_ i _nach Hause_: ==**zu Hause**== = **a casa** (estar-hi, ubicació); ==**nach Hause**== = **cap a casa** (moviment)."
         },
         {
-          "type": "explanation",
-          "body": "**5. _Wohin?_ vs. _Woher?_.**\n\n- _Woher kommst du?_ (D'on véns?) → resposta amb _von_ o _aus_.\n- _Wohin gehst du?_ (Cap a on vas?) → resposta amb _nach_ o _zu_ o _in_."
+          "bad": "!!**Wohin** kommst du?!!",
+          "good": "!!**Woher** kommst du?!!",
+          "why": "_Woher?_ (d'on?) → resposta amb _von_ o _aus_. _Wohin?_ (cap a on?) → resposta amb _nach_ o _zu_ o _in_. No els confonguis."
         },
         {
-          "type": "callout",
-          "variant": "danger",
-          "title": "Mai acusatiu darrere _zu_",
-          "body": "_zu_ és **sempre datiu**. Error: _zu **den** Arzt_. Correcte: ==**zum**== _Arzt_."
+          "bad": "!!Ich gehe zu **den** Arzt.!!",
+          "good": "!!Ich gehe ==**zum**== Arzt.!!",
+          "why": "_zu_ és **sempre datiu**. _den_ és acusatiu masculí; el correcte és _dem_ → contret com ==**zum**==."
         }
       ]
     },

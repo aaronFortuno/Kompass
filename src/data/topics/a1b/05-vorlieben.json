@@ -245,10 +245,48 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals\n\n**1. Usar _mich_ amb _gefallen_ (o _mir_ amb _interessieren_).**\nL'error més freqüent i el més important d'evitar. És \\*_**Mich** gefällt der Dom_ i \\*_**Mir** interessiert der Dom_. El correcte és **_Mir gefällt_** i **_Mich interessiert_**. Memoritza les dues plantilles com un bloc tancat.\n\n**2. Fer concordar _gefallen / interessieren_ amb la persona en comptes del subjecte.**\nCalc del català: \\*_Mir gefalle der Dom_ (pensant que _ich_ és el subjecte i per tant el verb ha d'anar en primera persona). No: el subjecte és _der Dom_, i el verb concorda amb ell: _Mir **gefällt** der Dom_ (3a persona singular). Amb plural: _Mir **gefallen** die Museen_ (3a persona plural).\n\n**3. Confondre _mögen_ i _möchten_.**\nSón el mateix verb en dues formes i registres diferents. _Ich mag Kaffee_ = gust general, estable. _Ich möchte einen Kaffee_ = desig ara i aquí, cortès. Al bar **sempre _möchten_**, mai _mögen_. _Ich mag einen Kaffee_ sona com un diagnòstic metafísic, no com una comanda.\n\n**4. Dir _Ich bin neugierig für_ calcant el català \"tinc curiositat per\".**\nLa preposició correcta és **_auf_** + **acusatiu**: _Ich bin neugierig **auf** die Stadt_. Ni _für_ ni _von_ ni _über_. _Auf_ i prou, i amb acusatiu (_auf die Stadt_, no _auf der Stadt_).\n\n**5. Posar _auf jeden Fall / auf keinen Fall_ al mig en posició incorrecta.**\nAquestes expressions són flexibles, però hi ha dues posicions naturals: al principi (_Auf keinen Fall gehe ich..._) o just darrere del verb conjugat (_Ich gehe auf keinen Fall..._). Evita posar-les entre el subjecte i el verb (\\*_Ich auf keinen Fall gehe_), que violaria la regla del verb en segona posició.\n\n**6. Conjugar _unbedingt_ com si fos un adjectiu.**\n_Unbedingt_ és un **adverbi invariable**. No té plural, ni gènere, ni declinació. No diguis \\*_unbedingte_ ni \\*_unbedingten_: només _unbedingt_, tal qual.\n\n**7. Traduir _möchten_ + infinitiu al revés (infinitiu al principi).**\nCom a verb modal, _möchten_ envia l'infinitiu **al final** de l'oració (Satzklammer, A1a-18). \\*_Ich möchte sehen den Dom_ és incorrecte; el correcte és _Ich möchte den Dom **sehen**_. L'infinitiu tanca l'oració.\n\n**8. Oblidar que _gefallen_ i _interessieren_ poden anar en plural.**\nSi el que agrada/interessa és plural, **el verb també ha d'anar en plural**: _Mir **gefallen** die Museen_, _Mich **interessieren** die Bilder_. És un error fàcil de cometre perquè l'estructura ja és contraintuïtiva per al catalanoparlant."
+          "bad": "!!**Mich** gefällt der Dom.!!",
+          "good": "!!**Mir** gefällt der Dom.!!",
+          "why": "Usar _mich_ amb _gefallen_ (o _mir_ amb _interessieren_). El correcte és **_Mir gefällt_** (datiu) i **_Mich interessiert_** (acusatiu). Memoritza les dues plantilles com un bloc tancat."
+        },
+        {
+          "bad": "!!Mir **gefalle** der Dom.!!",
+          "good": "!!Mir **gefällt** der Dom.!!",
+          "why": "Fer concordar _gefallen / interessieren_ amb la persona en comptes del subjecte. El subjecte és _der Dom_ (3a persona singular), no _ich_. Amb plural: _Mir **gefallen** die Museen_."
+        },
+        {
+          "bad": "!!Ich **mag** einen Kaffee.!!",
+          "good": "!!Ich **möchte** einen Kaffee.!!",
+          "why": "Confondre _mögen_ i _möchten_. _Ich mag Kaffee_ = gust general, estable. _Ich möchte einen Kaffee_ = desig ara i aquí, cortès. Al bar **sempre _möchten_**, mai _mögen_."
+        },
+        {
+          "bad": "!!Ich bin neugierig **für** die Stadt.!!",
+          "good": "!!Ich bin neugierig **auf** die Stadt.!!",
+          "why": "Calc del català \"tinc curiositat per\". La preposició correcta és **_auf_** + **acusatiu**. Ni _für_ ni _von_ ni _über_."
+        },
+        {
+          "bad": "!!Ich **auf keinen Fall** gehe ins Museum.!!",
+          "good": "!!**Auf keinen Fall** gehe ich ins Museum.!!",
+          "why": "Posar _auf keinen Fall_ entre el subjecte i el verb viola la regla del verb en segona posició. Posicions naturals: al principi (amb inversió) o just darrere del verb conjugat."
+        },
+        {
+          "bad": "!!Ich möchte **unbedingte** den Dom sehen.!!",
+          "good": "!!Ich möchte **unbedingt** den Dom sehen.!!",
+          "why": "_Unbedingt_ és un **adverbi invariable**. No té plural, ni gènere, ni declinació. No diguis _unbedingte_ ni _unbedingten_."
+        },
+        {
+          "bad": "!!Ich möchte **sehen** den Dom.!!",
+          "good": "!!Ich möchte den Dom **sehen**.!!",
+          "why": "Com a verb modal, _möchten_ envia l'infinitiu **al final** de l'oració (Satzklammer). L'infinitiu tanca l'oració."
+        },
+        {
+          "bad": "!!Mir **gefällt** die Museen.!!",
+          "good": "!!Mir **gefallen** die Museen.!!",
+          "why": "Oblidar que _gefallen_ i _interessieren_ poden anar en plural. Si el que agrada/interessa és plural, **el verb també ha d'anar en plural**."
         }
       ]
     },

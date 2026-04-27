@@ -118,10 +118,33 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys freqüents per a catalanoparlants",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys freqüents per a catalanoparlants\n\n**1. No tot plural alemany acaba en -s.**\n\nEl reflex catalanoparlant és afegir -s a tot: *_die Tischs_, *_die Lampes_. És **gairebé sempre incorrecte**. La terminació _-s_ en alemany es reserva per a paraules estrangeres modernes. Per a paraules alemanyes de soca-rel, oblida la -s.\n\n**2. L'article plural és sempre _die_, però això no vol dir femení.**\n\n_Die Tische_ no són femenines: _der Tisch_ és masculí. El que passa és que **en plural es neutralitza el gènere** i tots els substantius comparteixen article _die_. No confonguis _die_ singular (femení) amb _die_ plural (qualsevol gènere).\n\n> !!der Tisch!! (masc.) → !!**die** Tische!!\n> !!das Buch!! (neutre) → !!**die** Bücher!!\n> !!die Lampe!! (fem.) → !!**die** Lampen!!\n\n**3. El plural pot ser igual al singular.**\n\nEl patró ② (acabats en -er, -el, -en) sovint no afegeix res. Això vol dir que _der Koffer_ i _die Koffer_ tenen la mateixa forma. ==L'única manera de saber si és singular o plural és l'article (_der_ vs. _die_) o el context de l'oració.== Si veus _die Koffer_, és plural; si veus _der Koffer_, és singular.\n\n**4. Cap patró és 100% predictible.**\n\nLes 6 regles donen **tendències**, no certeses. Quan veus _der Apfel_, res al singular no et diu que el plural serà _die Äpfel_ amb dièresi. I entre dos substantius de la mateixa terminació pots tenir patrons diferents: _der Tisch → die Tische_ (patró ③) però _die Uhr → die Uhren_ (patró ⑤). Per això la regla d'or és **memoritzar el plural amb cada paraula nova**, tal com fas amb el gènere: al diccionari mai trobaràs només _der Apfel_, sempre trobaràs _der Apfel, ¨_ o _die Äpfel_ al costat.\n\n**5. Al diccionari, el plural s'abrevia.**\n\nQuan consultis un diccionari o llibre de text, el plural es dóna en forma abreujada després del substantiu:\n\n> !!der Tisch!!, **-e** → plural _!!die Tische!!_\n> !!die Mutter!!, **¨** → plural _!!die Mütter!!_ (només Umlaut, sense terminació)\n> !!das Kind!!, **-er** → plural _!!die Kinder!!_\n> !!das Hotel!!, **-s** → plural _!!die Hotels!!_\n> !!der Koffer!!, **-** → plural _!!die Koffer!!_ (ratlla = sense canvi)\n\nAprendre a llegir aquesta notació et farà independent amb el diccionari."
+          "bad": "!!die Tisch==s==!! / !!die Lampe==s==!!",
+          "good": "!!die Tisch==e==!! / !!die Lampe==n==!!",
+          "why": "No tot plural alemany acaba en _-s_. El reflex catalanoparlant és afegir _-s_ a tot, però la terminació _-s_ es reserva per a paraules estrangeres modernes. Per a paraules alemanyes de soca-rel, oblida la _-s_."
+        },
+        {
+          "bad": "!!die Tische!! → \"són femenines\"",
+          "good": "!!die Tische!! → \"són masculines en singular: ==der== Tisch\"",
+          "why": "L'article plural és sempre _die_, però això no vol dir femení. En plural es neutralitza el gènere i tots els substantius comparteixen article _die_."
+        },
+        {
+          "bad": "!!die Koffer!! → \"ha de ser diferent del singular!\"",
+          "good": "!!der Koffer!! (sg.) → !!die Koffer!! (pl.) — mateixa forma",
+          "why": "El plural pot ser igual al singular. El patró ② (acabats en _-er, -el, -en_) sovint no afegeix res. L'article (_der_ vs _die_) o el context distingeixen singular de plural."
+        },
+        {
+          "bad": "!!die Apfel!! (sense Umlaut)",
+          "good": "!!die ==Ä==pfel!! (amb Umlaut)",
+          "why": "Cap patró és 100% predictible. Res al singular no et diu si el plural portarà Umlaut. La regla d'or és **memoritzar el plural amb cada paraula nova**, com fas amb el gènere."
+        },
+        {
+          "bad": "!!der Apfel!! (sense anotar el plural)",
+          "good": "!!der Apfel, ==¨==!! → plural _die Äpfel_",
+          "why": "Al diccionari, el plural s'abrevia: _-e_, _¨_, _-er_, _-s_, _-_ (sense canvi). Aprendre a llegir aquesta notació et farà independent amb el diccionari."
         }
       ]
     },

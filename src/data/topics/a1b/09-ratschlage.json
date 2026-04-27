@@ -388,14 +388,58 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals\n\n**1. Oblidar que _du_ conserva el canvi _e → i/ie_.**\nError típic: \\*_Ess mehr!_ (pensant en el regular _essen_ sense canvi). El correcte és **_Iss mehr!_** perquè la forma de _du_ del present és _du isst_, i l'imperatiu hereta el canvi vocàlic. Mateix passa amb _Gib!_, _Lies!_, _Sieh!_, _Sprich!_, _Hilf!_.\n\n**2. Mantenir el canvi _a → ä_ a _du_.**\nL'error invers: \\*_Fähr nach Hause!_ (pensant que com en present _du fährst_, a l'imperatiu també _ä_). **No**: el canvi _a → ä_ es perd a l'imperatiu. És _**Fahr**!_, _**Schlaf**!_, _**Lauf**!_ (amb _a_, no _ä_).\n\n**3. Oblidar el pronom _Sie_ en l'imperatiu formal.**\n\\*_Kommen bitte!_ no és un imperatiu formal: és gramaticalment mut. El _Sie_ **és obligatori**: _**Kommen Sie** bitte!_. És el que distingeix un imperatiu formal d'un infinitiu o d'un declaratiu sense subjecte.\n\n**4. Posar pronom _du_ o _ihr_ a l'imperatiu.**\n\\*_Du komm her!_ és incorrecte (o bé marcadíssim, només per èmfasi extrem). L'imperatiu informal **no porta pronom**: _**Komm** her!_, _**Kommt** her!_. Només _Sie_ i _wir_ conserven pronom (perquè són les formes que sense pronom serien ambigües).\n\n**5. Fer servir _sollst_ quan vols dir _solltest_.**\n_Sollst_ és \"has de\" (indicatiu, imposició). _Solltest_ és \"hauries de\" (condicional, consell). Si vols aconsellar suaument, **sempre _solltest_**. _Du sollst schlafen_ sona com una ordre d'un pare; _Du solltest schlafen_ sona com un consell d'un amic."
+          "bad": "!!**Ess** mehr!!!",
+          "good": "!!**Iss** mehr!!!",
+          "why": "Oblidar que _du_ conserva el canvi _e → i/ie_ a l'imperatiu. La forma de _du_ del present és _du isst_, i l'imperatiu hereta el canvi vocàlic. Igual amb _Gib!_, _Lies!_, _Sieh!_, _Sprich!_, _Hilf!_."
         },
         {
-          "type": "explanation",
-          "body": "**6. Conjugar malament _sein_.**\nLes tres formes d'imperatiu de _sein_ són **totes irregulars** i cal memoritzar-les: _**sei**_ (du), _**seid**_ (ihr), _**seien Sie**_ (Sie). Errors típics: \\*_sei Sie_, \\*_sein Sie_ (el correcte és _seien Sie_), \\*_seit_ (el correcte és _seid_, amb -d final, no -t).\n\n**7. Oblidar la -e obligatòria amb _-den, -ten, -igen_.**\n\\*_Arbeit!_ és impronunciable i incorrecte. El correcte és _**Arbeite!**_. Afegeix **-e** quan el verb acaba en grup consonàntic difícil: _arbeite, öffne, rede_. És una excepció fonètica, no una opció estètica.\n\n**8. Invertir l'ordre amb _am besten_.**\n\\*_Am besten du gehst zu Fuß_ o \\*_Du am besten gehst zu Fuß_ violen la regla del verb en segona posició. _Am besten_ ocupa la posició 1, i **el verb conjugat va immediatament després**: _**Am besten gehst** du zu Fuß_.\n\n**9. Posar l'infinitiu just darrere del modal (_solltest_).**\n\\*_Du solltest schlafen früher_ és calc del català. Com a modal, _solltest_ exigeix l'infinitiu **al final** (Satzklammer, A1a-18): _Du **solltest** früher **schlafen**_.\n\n**10. Usar _kein_ allà on cal _nicht_.**\nSi negues **una acció** (no \"fer alguna cosa\"), és _nicht_: _Geh **nicht** weg!_. Si negues **un substantiu indefinit** (\"cap X\"), és _kein-_: _Trink **keinen** Alkohol!_. Repassa A1a-24 si dubtes."
+          "bad": "!!**Fähr** nach Hause!!!",
+          "good": "!!**Fahr** nach Hause!!!",
+          "why": "El canvi _a → ä_ **es perd** a l'imperatiu. És _Fahr!_, _Schlaf!_, _Lauf!_ (amb _a_, no _ä_)."
+        },
+        {
+          "bad": "!!**Kommen** bitte!!!",
+          "good": "!!**Kommen Sie** bitte!!!",
+          "why": "Oblidar el pronom _Sie_ en l'imperatiu formal. El _Sie_ **és obligatori**: sense ell no és un imperatiu formal sinó gramaticalment mut."
+        },
+        {
+          "bad": "!!**Du** komm her!!!",
+          "good": "!!**Komm** her!!!",
+          "why": "L'imperatiu informal **no porta pronom**: _Komm her!_, _Kommt her!_. Només _Sie_ i _wir_ conserven pronom."
+        },
+        {
+          "bad": "!!Du **sollst** mehr schlafen.!!",
+          "good": "!!Du **solltest** mehr schlafen.!!",
+          "why": "_Sollst_ és \"has de\" (indicatiu, imposició). _Solltest_ és \"hauries de\" (condicional, consell). Per aconsellar suaument, **sempre _solltest_**."
+        },
+        {
+          "bad": "!!**Sein Sie** bitte ruhig!!!",
+          "good": "!!**Seien Sie** bitte ruhig!!!",
+          "why": "Les tres formes d'imperatiu de _sein_ són **totes irregulars**: _sei_ (du), _seid_ (ihr), _seien Sie_ (Sie). Cal memoritzar-les."
+        },
+        {
+          "bad": "!!**Arbeit** schneller!!!!",
+          "good": "!!**Arbeite** schneller!!!!",
+          "why": "Oblidar la -e obligatòria amb verbs acabats en _-den, -ten, -igen_. Afegeix **-e** quan el verb acaba en grup consonàntic difícil."
+        },
+        {
+          "bad": "!!Am besten **du gehst** zu Fuß.!!",
+          "good": "!!Am besten **gehst du** zu Fuß.!!",
+          "why": "_Am besten_ ocupa la posició 1, i **el verb conjugat va immediatament després** (posició 2), seguit del subjecte."
+        },
+        {
+          "bad": "!!Du solltest **schlafen früher**.!!",
+          "good": "!!Du solltest **früher schlafen**.!!",
+          "why": "Com a modal, _solltest_ exigeix l'infinitiu **al final** (Satzklammer). Els complements van entre el modal i l'infinitiu."
+        },
+        {
+          "bad": "!!Geh **kein** weg!!!!",
+          "good": "!!Geh **nicht** weg!!!!",
+          "why": "Si negues **una acció**, és _nicht_: _Geh **nicht** weg!_. Si negues **un substantiu indefinit**, és _kein-_: _Trink **keinen** Alkohol!_."
         }
       ]
     },

@@ -106,10 +106,43 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals\n\n**1. Aplicar el canvi vocàlic a persones que no toca.**\nL'error més freqüent: canviar la vocal a _ich_, _wir_ o _ihr_. **No**. Només _du_ i _er/sie/es_ canvien.\n\n> Incorrecte: **Ich ==i==sse einen Apfel** / **Wir spr==i==chen Deutsch**.\n> Correcte: !!**Ich ==e==sse einen Apfel.**!! / !!**Wir spr==e==chen Deutsch.**!!\n\n**2. Oblidar el canvi vocàlic a _du_ o _er/sie/es_.**\nEl mirall de l'error anterior: tractar el verb com si fos regular.\n\n> Incorrecte: **Du fahrst nach Berlin** / **Er lesst ein Buch**.\n> Correcte: !!**Du f==ä==hrst nach Berlin.**!! / !!**Er l==ie==st ein Buch.**!!\n\n**3. Confondre _e → i_ amb _e → ie_.**\nSón fàcils de barrejar. Pista aproximada: consonant doble a l'arrel → _i_ curta (_isst, spricht, nimmt_); consonant simple → _ie_ llarga (_liest, sieht_).\n\n> Incorrecte: **Er liesst ein Buch** / **Du issest einen Apfel**.\n> Correcte: !!**Er liest ein Buch.**!! / !!**Du isst einen Apfel.**!!\n\n**4. Oblidar la particularitat de _nehmen_.**\n_nehmen_ canvia _e → i_, però a més **la _-h-_ cau i la _-m-_ es dobla** a _du_ i _er/sie/es_:\n\n> Incorrecte: **Du nehmst den Bus** / **Er niht den Bus**.\n> Correcte: !!**Du n==i==mmst den Bus.**!! / !!**Er n==i==mmt den Bus.**!!\n\n**5. Posar la terminació _-st_ sencera a _essen_ i _lesen_.**\nLes arrels _ess-_ i _les-_ acaben en _-ss_ i _-s_, respectivament. Per tant, a _du_ només s'afegeix **_-t_** (no _-st_), seguint la regla ortogràfica del tema A1a-3:\n\n> Incorrecte: **Du isstst einen Apfel** / **Du liesst ein Buch**.\n> Correcte: !!**Du isst einen Apfel.**!! / !!**Du liest ein Buch.**!!\n\nResultat pràctic: _du isst = er isst_, i _du liest = er liest_.\n\n**6. Aplicar el canvi al tracte formal _Sie_.**\nRecorda que _Sie_ (cortesia) porta sempre la terminació _-en_ de l'infinitiu i **no** canvia la vocal, encara que el verb sigui irregular.\n\n> Incorrecte: **Sprichen Sie Deutsch?** / **Fähren Sie nach Berlin?**\n> Correcte: !!**Sprechen Sie Deutsch?**!! / !!**Fahren Sie nach Berlin?**!!\n\n**7. Escriure _ae_ quan es pot escriure _ä_.**\nSi tens teclat alemany configurat (o et saps les dreceres del teu sistema), escriu sempre _ä_ / _ö_ / _ü_. _ae, oe, ue_ són substituts acceptables quan no tens més remei (formularis antics, noms de domini), però a l'escriptura normal es considera poc acurat."
+          "bad": "!!Ich ==i==sse einen Apfel.!! / !!Wir spr==i==chen Deutsch.!!",
+          "good": "!!Ich ==e==sse einen Apfel.!! / !!Wir spr==e==chen Deutsch.!!",
+          "why": "El canvi vocàlic **només** afecta _du_ i _er/sie/es_. Mai a _ich_, _wir_ ni _ihr_."
+        },
+        {
+          "bad": "!!Du fahrst nach Berlin.!! / !!Er lesst ein Buch.!!",
+          "good": "!!Du f==ä==hrst nach Berlin.!! / !!Er l==ie==st ein Buch.!!",
+          "why": "Oblidar el canvi vocàlic a _du_ o _er/sie/es_: tractar el verb com si fos regular."
+        },
+        {
+          "bad": "!!Er liesst ein Buch.!! / !!Du issest einen Apfel.!!",
+          "good": "!!Er liest ein Buch.!! / !!Du isst einen Apfel.!!",
+          "why": "Confondre _e → i_ amb _e → ie_. Pista: consonant doble → _i_ curta (_isst, spricht_); consonant simple → _ie_ llarga (_liest, sieht_)."
+        },
+        {
+          "bad": "!!Du nehmst den Bus.!! / !!Er niht den Bus.!!",
+          "good": "!!Du n==i==mmst den Bus.!! / !!Er n==i==mmt den Bus.!!",
+          "why": "_nehmen_ canvia _e → i_, però a més **la _-h-_ cau i la _-m-_ es dobla** a _du_ i _er/sie/es_."
+        },
+        {
+          "bad": "!!Du isstst einen Apfel.!! / !!Du liesst ein Buch.!!",
+          "good": "!!Du isst einen Apfel.!! / !!Du liest ein Buch.!!",
+          "why": "Arrels acabades en _-s, -ss_: a _du_ només s'afegeix **_-t_** (no _-st_). Resultat: _du isst = er isst_, _du liest = er liest_."
+        },
+        {
+          "bad": "!!Sprichen Sie Deutsch?!! / !!Fähren Sie nach Berlin?!!",
+          "good": "!!Sprechen Sie Deutsch?!! / !!Fahren Sie nach Berlin?!!",
+          "why": "_Sie_ (cortesia) porta la terminació _-en_ de l'infinitiu i **no** canvia la vocal, encara que el verb sigui irregular."
+        },
+        {
+          "bad": "!!Du faehrst nach Berlin.!!",
+          "good": "!!Du f==ä==hrst nach Berlin.!!",
+          "why": "Si tens teclat alemany configurat, escriu sempre _ä_ / _ö_ / _ü_. _ae, oe, ue_ són substituts acceptables només quan no tens més remei."
         }
       ]
     },

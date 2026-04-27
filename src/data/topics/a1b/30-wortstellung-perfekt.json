@@ -143,16 +143,33 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals per a catalanoparlants",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals per a catalanoparlants\n\n**1. Ajuntar auxiliar i participi.**\nPer influència del català/castellà, l'instint diu \"he menjat pizza ahir\" → _\"Ich habe gegessen Pizza gestern\"_. Error clàssic.\n\n- Incorrecte: _Ich habe gegessen gestern Pizza._\n- Correcte: _Ich ==**habe**== gestern Pizza ==**gegessen**==._\n\n**2. Posar el verb a la posició 3 després d'un complement inicial.**\nEl mateix error rei que ja coneixes d'A1a-18, però ara amb el Perfekt.\n\n- Incorrecte: _Gestern ich habe Pizza gegessen._\n- Correcte: _Gestern ==**habe ich**== Pizza ==**gegessen**==._\n\n**3. Deixar el participi al mig.**\nEl participi **no és una paraula qualsevol**: té una posició fixa, el final. Si llences _gegessen_ al mig, la Satzklammer es trenca.\n\n- Incorrecte: _Ich habe gegessen Pizza mit Anna._\n- Correcte: _Ich ==**habe**== Pizza mit Anna ==**gegessen**==._"
+          "bad": "!!Ich habe **gegessen** gestern Pizza.!!",
+          "good": "!!Ich ==**habe**== gestern Pizza ==**gegessen**==.!!",
+          "why": "Ajuntar auxiliar i participi. Per influència del català (_he menjat pizza ahir_), l'instint posa el participi just darrere de l'auxiliar. En alemany, el participi ==salta al final== de l'oració."
         },
         {
-          "type": "callout",
-          "variant": "danger",
-          "title": "Paranys 4 i 5",
-          "body": "**4.** _und / aber / oder_ **no compten com a posició 1**. L'oració que segueix comença a la 1 com si el connector no hi fos: _…und ==**ich bin**== gestern nach Hause ==**gegangen**==._ (o amb inversió: _…und gestern ==**bin ich**== nach Hause ==**gegangen**==._).\n\n**5. El participi és invariable.** No canvia amb la persona. Qui es conjuga és l'auxiliar: _Wir ==**haben**== Pizza ==**gegessen**==._ (mai _\"gegessenen\"_)."
+          "bad": "!!Gestern **ich habe** Pizza gegessen.!!",
+          "good": "!!Gestern ==**habe ich**== Pizza ==**gegessen**==.!!",
+          "why": "Posar el verb a la posició 3 després d'un complement inicial. Quan un complement ocupa la posició 1, ==l'auxiliar es queda a la 2== i el subjecte passa a la 3 (inversió)."
+        },
+        {
+          "bad": "!!Ich habe **gegessen** Pizza mit Anna.!!",
+          "good": "!!Ich ==**habe**== Pizza mit Anna ==**gegessen**==.!!",
+          "why": "Deixar el participi al mig. El participi té una ==posició fixa: el final== de l'oració. Si el poses al mig, la Satzklammer es trenca."
+        },
+        {
+          "bad": "!!…und gestern **ich bin** nach Hause gegangen.!!",
+          "good": "!!…und gestern ==**bin ich**== nach Hause ==**gegangen**==.!!",
+          "why": "_und / aber / oder_ ==no compten com a posició 1==. L'oració que segueix comença a la 1 com si el connector no hi fos. La inversió funciona igual."
+        },
+        {
+          "bad": "!!Wir haben Pizza **gegessenen**.!!",
+          "good": "!!Wir ==**haben**== Pizza ==**gegessen**==.!!",
+          "why": "El participi és ==invariable==. No canvia amb la persona. Qui es conjuga és l'auxiliar (_haben/sein_)."
         }
       ]
     },

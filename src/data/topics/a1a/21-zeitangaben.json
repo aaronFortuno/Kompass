@@ -239,10 +239,43 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals\n\n**1. Oblidar la preposició (calc del castellà).**\nEn castellà es diu _el lunes voy al médico_ sense preposició. En alemany **cal sempre** la preposició:\n\n> Incorrecte: **~~Montag gehe ich zum Arzt.~~**\n> Correcte: _!!**Am** Montag gehe ich zum Arzt.!!_\n\n**2. Confondre _am_, _im_ i _um_.**\nSón tres preposicions temporals **diferents** i no intercanviables:\n\n> Incorrecte: **~~Im Montag~~** / **~~Am Januar~~** / **~~Am 8 Uhr~~**\n> Correcte: _!!**Am** Montag!!_ (dia), _!!**Im** Januar!!_ (mes), _!!**Um** 8 Uhr!!_ (hora).\n\n**3. Dir _am Nacht_.**\n_Nacht_ és **femení**, per tant no entra en la contracció _an + dem_. La forma correcta és _**in der** Nacht_.\n\n> Incorrecte: **~~Am Nacht schlafe ich.~~**\n> Correcte: _!!**In der** Nacht schlafe ich.!!_\n\n**4. Confondre _am Abend_ amb _abends_.**\nTornem al parany d'A1a-20. _**abends**_ (amb _-s_, sense preposició) = \"els vespres, com a rutina\"; _**am Abend**_ (amb preposició) = \"al vespre\" (moment puntual o general).\n\n> _!!Ich gehe **abends** spazieren.!!_ (Cada vespre vaig a passejar — rutina.)\n> _!!**Am Abend** gehe ich ins Kino.!!_ (Al vespre vaig al cinema — moment.)\n\n**5. Barrejar _um_ i _von... bis..._.**\n_um_ = un sol moment. _von... bis..._ = un interval amb inici i final.\n\n> Incorrecte: **~~Ich arbeite um 9 bis 17.~~**\n> Correcte: _!!Ich arbeite **von** 9 **bis** 17.!!_\n\n**6. Deixar l'article sense contreure.**\nEn alemany estàndard, _an dem Montag_ i _in dem Januar_ **no s'escriuen**: sempre la forma contreta _am_, _im_.\n\n> Incorrecte (en un text normal): **~~An dem Montag~~**, **~~In dem Sommer~~**.\n> Correcte: _!!**Am** Montag!!_, _!!**Im** Sommer!!_.\n\n**7. Posar el complement entre subjecte i verb (regla V2).**\nCom a A1a-20: els complements temporals van a la **posició 1** (amb inversió) o **després del verb**, mai entremig.\n\n> Incorrecte: **~~Ich am Montag arbeite.~~**\n> Correcte: _!!**Am Montag** arbeite ich.!!_ / _!!Ich arbeite **am Montag**.!!_"
+          "bad": "!!Montag gehe ich zum Arzt.!!",
+          "good": "!!**Am** Montag gehe ich zum Arzt.!!",
+          "why": "En alemany **cal sempre** la preposició temporal. No com en castellà (_el lunes_) sense preposició."
+        },
+        {
+          "bad": "!!Im Montag!! / !!Am Januar!! / !!Am 8 Uhr!!",
+          "good": "!!**Am** Montag!! (dia) / !!**Im** Januar!! (mes) / !!**Um** 8 Uhr!! (hora)",
+          "why": "_am_, _im_ i _um_ són tres preposicions temporals **diferents** i no intercanviables."
+        },
+        {
+          "bad": "!!Am Nacht schlafe ich.!!",
+          "good": "!!**In der** Nacht schlafe ich.!!",
+          "why": "_Nacht_ és **femení**, per tant no entra en la contracció _an + dem_. La forma correcta és _in der Nacht_."
+        },
+        {
+          "bad": "!!Ich gehe am Abend spazieren.!! (volent dir \"cada vespre, rutina\")",
+          "good": "!!Ich gehe **abends** spazieren.!! (rutina) / !!**Am Abend** gehe ich ins Kino.!! (moment puntual)",
+          "why": "_abends_ (amb _-s_, sense preposició) = rutina. _am Abend_ (amb preposició) = moment puntual o general."
+        },
+        {
+          "bad": "!!Ich arbeite um 9 bis 17.!!",
+          "good": "!!Ich arbeite **von** 9 **bis** 17.!!",
+          "why": "_um_ = un sol moment. _von... bis..._ = un interval amb inici i final."
+        },
+        {
+          "bad": "!!An dem Montag!! / !!In dem Sommer!!",
+          "good": "!!**Am** Montag!! / !!**Im** Sommer!!",
+          "why": "En alemany estàndard, les formes contretes _am_ i _im_ són **obligatòries**."
+        },
+        {
+          "bad": "!!Ich am Montag arbeite.!!",
+          "good": "!!**Am Montag** arbeite ich.!! / !!Ich arbeite **am Montag**.!!",
+          "why": "Els complements temporals van a la posició 1 (amb inversió) o després del verb, **mai** entre subjecte i verb (regla V2)."
         }
       ]
     },

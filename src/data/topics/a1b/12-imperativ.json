@@ -362,10 +362,48 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals (recordatori condensat)\n\n1. ==Mantenir _a → ä_ a _du_==: \\*_Fähr!_ → cal _**Fahr!**_\n2. ==Perdre _e → i/ie_ a _du_==: \\*_Ess!_ → cal _**Iss!**_\n3. ==Ometre _Sie_ a l'imperatiu formal==: \\*_Kommen bitte!_ → cal _**Kommen Sie** bitte!_\n4. ==Posar pronom a _du_ o _ihr_==: \\*_Du komm!_, \\*_Ihr esst!_ → cal _**Komm!**_, _**Esst!**_\n5. ==Escriure _seit_ en comptes de _seid_== (imperatiu de _ihr_ per _sein_): cal _**Seid!**_ amb -d.\n6. ==Posar el prefix separable a l'inici==: \\*_Aufmach die Tür!_ → cal _**Mach** die Tür **auf**!_\n7. ==Intentar afegir -e a canvi _e → i/ie_==: \\*_Isse!_, \\*_Giebe!_ → cal _**Iss!**_, _**Gib!**_\n8. ==Oblidar el reflexiu a _sich ausruhen_==: \\*_Ruh aus!_ → cal _**Ruh dich aus!**_ (amb reflexiu obligatori)."
+          "bad": "!!**Fähr!**!!",
+          "good": "!!**Fahr!**!!",
+          "why": "Mantenir el canvi ==_a → ä_== a l'imperatiu de _du_. Aquest canvi ==es perd== a l'imperatiu: l'arrel torna a la vocal original."
+        },
+        {
+          "bad": "!!**Ess!**!!",
+          "good": "!!**Iss!**!!",
+          "why": "Perdre el canvi ==_e → i/ie_== a l'imperatiu de _du_. Aquest canvi ==es conserva==: la forma ve del present (_du isst → Iss!_)."
+        },
+        {
+          "bad": "!!**Kommen** bitte!!!",
+          "good": "!!**Kommen Sie** bitte!!!",
+          "why": "Ometre _Sie_ a l'imperatiu formal. El pronom _Sie_ és ==obligatori== i va just darrere del verb."
+        },
+        {
+          "bad": "!!**Du** komm! / **Ihr** esst!!!",
+          "good": "!!**Komm!** / **Esst!**!!",
+          "why": "Posar pronom a _du_ o _ihr_. A les formes informals de l'imperatiu ==no hi ha pronom==."
+        },
+        {
+          "bad": "!!**Seit** fair!!!",
+          "good": "!!**Seid** fair!!!",
+          "why": "Escriure _seit_ (preposició temporal) en comptes de _seid_ (imperatiu de _ihr_ per _sein_). L'imperatiu porta ==**-d**== final."
+        },
+        {
+          "bad": "!!**Aufmach** die Tür!!!",
+          "good": "!!**Mach** die Tür **auf**!!!",
+          "why": "Posar el prefix separable a l'inici. La Satzklammer es manté a l'imperatiu: arrel a la posició 1, ==prefix al final==."
+        },
+        {
+          "bad": "!!**Isse!** / **Giebe!**!!",
+          "good": "!!**Iss!** / **Gib!**!!",
+          "why": "Intentar afegir ==-e== als verbs amb canvi _e → i/ie_. Aquestes formes abreujades ==no accepten la -e== opcional."
+        },
+        {
+          "bad": "!!**Ruh** aus!!!",
+          "good": "!!**Ruh dich aus!**!!",
+          "why": "Oblidar el pronom reflexiu a _sich ausruhen_. El reflexiu (_dich, euch, sich, uns_) és ==obligatori==."
         }
       ]
     },

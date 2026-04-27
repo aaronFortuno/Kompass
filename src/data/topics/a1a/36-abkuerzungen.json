@@ -121,10 +121,33 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys freqüents",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys freqüents\n\n1. **Confondre _KM_ i _WM_.** _Kaltmiete_ (_KM_) = lloguer **sense** despeses. _Warmmiete_ (_WM_) = **amb** despeses incloses. Si només veus _KM_, busca sempre _NK_ o _BK_ al costat per saber el preu real.\n2. **Pensar que _NK_ i _BK_ són coses diferents.** Col·loquialment són **sinònims**: despeses d'escala, escombraries, aigua, neteja de zones comunes. Tècnicament _BK_ (_Betriebskosten_) és un subconjunt de _NK_ (_Nebenkosten_), però en anuncis normals **pots tractar-los com equivalents**.\n3. **Comptar malament les habitacions.** _2-ZKB_ → 2 habitacions **a més de** la cuina i el bany. **No són 4 peces.** El sistema alemany compta només les estances habitables (sala + dormitoris).\n4. **Ignorar _NR_ o _möbl._** Són **condicions**: _NR_ (no fumador) pot ser excloent, i _möbl._ (moblat) implica preu més alt però gens de feina d'instal·lació.\n5. **Barrejar _OG_ i _DG_.** _OG_ = un pis superior qualsevol (_2. OG_ = segona planta). _DG_ = específicament l'últim, sota la teulada. Un _DG_ pot ser bonic però calorós a l'estiu.\n6. **Pronunciar les abreviatures.** Normalment es llegeixen **lletra a lletra** (_EBK_ = \"E-Be-Ka\"), no com una paraula. _qm_ es diu _Quadratmeter_ sencer."
+          "bad": "!!==KM== 550 € (acceptar-ho com a preu final)!!",
+          "good": "!!==KM== 550 € + ==NK== 120 € = ==WM== 670 € (preu real)!!",
+          "why": "Confondre _KM_ i _WM_. _Kaltmiete_ (_KM_) = lloguer **sense** despeses. _Warmmiete_ (_WM_) = **amb** despeses. Si veus _KM_, busca _NK_ o _BK_ per saber el cost total."
+        },
+        {
+          "bad": "!!==2-ZKB== = 4 peces (comptant com en català)!!",
+          "good": "!!==2-ZKB== = 2 habitacions + cuina + bany!!",
+          "why": "Comptar malament les habitacions. El sistema alemany compta **només les estances habitables** (sala + dormitoris). Cuina i bany no compten."
+        },
+        {
+          "bad": "!!Un pis ==DG== és igual que un ==OG==!!",
+          "good": "!!==OG== = pis superior qualsevol / ==DG== = últim pis, sota la teulada!!",
+          "why": "Barrejar _OG_ i _DG_. _OG_ (_Obergeschoss_) és una planta alta genèrica. _DG_ (_Dachgeschoss_) és específicament l'àtic."
+        },
+        {
+          "bad": "!!==NK== i ==BK== són coses diferents!!",
+          "good": "!!==NK== (_Nebenkosten_) ≈ ==BK== (_Betriebskosten_)!!",
+          "why": "Pensar que _NK_ i _BK_ són conceptes separats. En anuncis normals són pràcticament **sinònims**: despeses comunitàries."
+        },
+        {
+          "bad": "!!Pronunciar _EBK_ com una paraula: /ébk/!!",
+          "good": "!!Pronunciar _EBK_ lletra a lletra: «E-Be-Ka»!!",
+          "why": "Les abreviatures normalment es llegeixen **lletra a lletra**. _qm_ es diu _Quadratmeter_ sencer."
         }
       ]
     },

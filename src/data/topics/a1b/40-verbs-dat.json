@@ -197,16 +197,43 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals\n\n**1. Posar el complement en acusatiu per analogia amb el català.**\n\n- Incorrecte: _Ich helfe ==den== Mann._ ❌ (acusatiu)\n- Correcte: _Ich helfe ==dem== Mann._ ✅ (datiu)\n\n**2. Oblidar la _-n_ del datiu plural.**\n\n- Incorrecte: _Ich helfe ==den Kinder==._ ❌\n- Correcte: _Ich helfe ==den Kinder==**==n==**._ ✅\n\n**3. Pronom acusatiu en lloc de datiu.**\n\n- Incorrecte: _Kannst du ==mich== helfen?_ ❌ (_mich_ és acusatiu)\n- Correcte: _Kannst du ==mir== helfen?_ ✅\n\n**4. Confondre _hören_ (Akk.) amb _zuhören_ (Dat.).**\n\n- _Ich höre ==dich==._ — _Et sento._ (acusatiu)\n- _Ich höre ==dir== zu._ — _T'escolto._ (datiu, separable)\n\n**5. Confondre _antworten_ (Dat.) amb _beantworten_ (Akk.).**\n\n- _Ich antworte ==dem Lehrer==._ — _Responc al professor._\n- _Ich beantworte ==die Frage==._ — _Responc (a) la pregunta._"
+          "bad": "!!Ich helfe **den** Mann.!!",
+          "good": "!!Ich helfe ==dem== Mann.!!",
+          "why": "Posar el complement en acusatiu per analogia amb el català. En català _ajudar_ porta complement directe, però ==_helfen_ demana datiu==."
         },
         {
-          "type": "callout",
-          "variant": "danger",
-          "title": "Paranys 6 i 7",
-          "body": "**6. Posar preposició on no toca** (_a_, _per_, _en_). El datiu d'aquests verbs **no porta preposició**. No calquis _a + persona_ del català: _Ich antworte ==an den Lehrer==_ ❌ · _Ich antworte ==dem Lehrer==_ ✅\n\n**7. Oblidar el canvi vocàlic de _helfen_.** _Du ==helfst== mir_ ❌ · _Du ==hilfst== mir_ ✅ (==_e → i_==)."
+          "bad": "!!Ich helfe den **Kinder**.!!",
+          "good": "!!Ich helfe den ==Kindern==.!!",
+          "why": "Oblidar la ==-n== del datiu plural. El substantiu en plural datiu afegeix _-n_ si no en té ja."
+        },
+        {
+          "bad": "!!Kannst du **mich** helfen?!!",
+          "good": "!!Kannst du ==mir== helfen?!!",
+          "why": "Pronom acusatiu en lloc de datiu. _Mich_ és acusatiu; _helfen_ demana ==datiu== → _mir_."
+        },
+        {
+          "bad": "!!Ich höre **dir** zu. _(volent dir \"et sento\")_!!",
+          "good": "!!Ich höre ==dich==. _(et sento)_ / Ich höre ==dir== zu. _(t'escolto)_!!",
+          "why": "Confondre _hören_ (Akk.) amb _zuhören_ (Dat.). ==_Hören_== = sentir (acusatiu). ==_Zuhören_== = escoltar amb atenció (datiu, separable)."
+        },
+        {
+          "bad": "!!Ich antworte **die Frage**.!!",
+          "good": "!!Ich ==antworte== dem Lehrer. / Ich ==beantworte== die Frage.!!",
+          "why": "Confondre _antworten_ (Dat.) amb _beantworten_ (Akk.). ==_Antworten_== pren datiu per a la persona; ==_beantworten_== pren acusatiu per al contingut."
+        },
+        {
+          "bad": "!!Ich antworte **an den** Lehrer.!!",
+          "good": "!!Ich antworte ==dem== Lehrer.!!",
+          "why": "Posar preposició on no toca. El datiu d'aquests verbs és ==directe, sense preposició==. No calquis _a + persona_ del català."
+        },
+        {
+          "bad": "!!Du **helfst** mir.!!",
+          "good": "!!Du ==hilfst== mir.!!",
+          "why": "Oblidar el canvi vocàlic de _helfen_. En present, _du_ i _er/sie/es_ fan el canvi ==_e → i_==: _du hilfst, er hilft_."
         }
       ]
     },

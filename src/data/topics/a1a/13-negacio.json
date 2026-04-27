@@ -94,10 +94,33 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals (a part dels ja vistos a A1a-4)\n\n**1. Confondre _Nein_ i _nicht_.**\n\n> Incorrecte: _Ich **Nein** arbeite._\n> Correcte: _!!**Nein**, ich arbeite **nicht**.!!_\n\n_Nein_ **no entra dins de l'oració**: és una paraula independent que respon a la pregunta i sol anar seguida d'una coma.\n\n**2. Redundància _Nein_ + _nicht_: no existeix.**\n\nFer servir els dos en una resposta **no és redundant** en alemany, com tampoc ho és en català (\"No, no en tinc\"). De fet és la resposta natural i completa:\n\n> — _!!Hast du Kinder?!!_ — _!!**Nein**, ich habe **keine** Kinder.!!_\n\n**3. Inventar adjectius amb _un-_.**\n\nNo tots els adjectius admeten _un-_. Si no has vist mai _unschön_ ni _ungut_, **no els facis servir**: són poc o gens usuals. En cas de dubte, fes servir _nicht schön_, _nicht gut_ (o directament el seu antònim lexicalitzat: _hässlich_, _schlecht_).\n\n**4. Pensar que _un-_ i _nicht_ són **exactament** el mateix.**\n\nSón propers, però no idèntics. _unpraktisch_ implica una valoració (és molest, no funciona bé). _nicht praktisch_ és una descripció més neutra. Al diccionari trobaràs els adjectius amb _un-_ amb la seva pròpia entrada i matís.\n\n**5. Escriure _un-_ separat o amb guió.**\n\n> Incorrecte: _un praktisch_, _un-praktisch_.\n> Correcte: _!!**unpraktisch**!!_ (tot junt, sense guió).\n\nEn alemany, els prefixos com _un-_ s'uneixen directament a la paraula, com _mitbringen_ o _verstehen_."
+          "bad": "!!Ich ==Nein== arbeite.!!",
+          "good": "!!==Nein==, ich arbeite ==nicht==.!!",
+          "why": "Confondre _Nein_ i _nicht_. _Nein_ **no entra dins de l'oració**: és una paraula independent que respon a la pregunta, seguida d'una coma."
+        },
+        {
+          "bad": "!!Nein.!! (sense afegir l'oració amb _nicht/kein_)",
+          "good": "!!Nein, ich habe ==keine== Kinder.!!",
+          "why": "Fer servir _Nein_ + _nicht/kein_ en una resposta **no és redundant**. De fet és la resposta natural i completa, com en català (\"No, no en tinc\")."
+        },
+        {
+          "bad": "!!Das ist ==ungut==.!! / !!Das ist ==unschön==.!!",
+          "good": "!!Das ist ==schlecht==.!! / !!Das ist ==hässlich==.!!",
+          "why": "Inventar adjectius amb _un-_. No tots els admeten. Si no els has vist mai, usa _nicht_ + adjectiu o l'antònim lexicalitzat."
+        },
+        {
+          "bad": "!!Das ist ==unpraktisch==.!! = !!Das ist ==nicht praktisch==.!!",
+          "good": "!!unpraktisch!! (valoratiu) ≠ !!nicht praktisch!! (neutre)",
+          "why": "Pensar que _un-_ i _nicht_ són exactament el mateix. _unpraktisch_ implica una valoració; _nicht praktisch_ és una descripció més neutra."
+        },
+        {
+          "bad": "!!un praktisch!! / !!un-praktisch!!",
+          "good": "!!==unpraktisch==!!",
+          "why": "Escriure _un-_ separat o amb guió. En alemany, els prefixos com _un-_ s'uneixen directament a la paraula, tot junt, sense guió."
         }
       ]
     },

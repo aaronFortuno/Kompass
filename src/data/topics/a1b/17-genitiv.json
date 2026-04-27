@@ -170,14 +170,38 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys típics",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys típics\n\n**1. Oblidar la _-s/-es_ al masculí/neutre.** És l'error més freqüent al principi. L'article _des_ **sempre** va acompanyat de terminació al substantiu.\n\n- ==incorrecte==: _des Parlament_ → ==correcte==: _des Parlament**s**_\n- ==incorrecte==: _des Zentrum_ → ==correcte==: _des Zentrum**s**_\n\n**2. Afegir _-s_ al femení.** El femení **mai** canvia al genitiu. Només canvia l'article (_die → der_).\n\n- ==incorrecte==: _der Mauer**s**_ → ==correcte==: _der Mauer_\n- ==incorrecte==: _der Schweiz**s**_ → ==correcte==: _der Schweiz_\n\n**3. Posar article davant d'un nom propi de ciutat/país sense article.**\n\n- ==incorrecte==: _das Zentrum **des** Berlin**s**_ → ==correcte==: _das Zentrum **Berlins**_ (o _das Zentrum von Berlin_)\n- ==incorrecte==: _die Hauptstadt **des** Deutschland**s**_ → ==correcte==: _die Hauptstadt **Deutschlands**_"
+          "bad": "!!des Parlament / des Zentrum!!",
+          "good": "!!des Parlament**s** / des Zentrum**s**!!",
+          "why": "Oblidar la ==-s/-es== al masculí/neutre. L'article _des_ **sempre** va acompanyat de terminació al substantiu."
         },
         {
-          "type": "explanation",
-          "body": "**4. _Von_ + nom propi en lloc del genitiu amb _-s_.** En registre formal, els noms propis prefereixen la forma amb _-s_.\n\n- Acceptable en oral: _das Zentrum **von Berlin**_\n- Preferit en escrit: _das Zentrum **Berlins**_\n\n**5. Confondre el genitiu amb el nominatiu quan coincideixen en _der_.** Al femení i al plural, _der_ apareix tant al datiu singular femení (_der Frau_) com al genitiu femení (_der Frau_) i genitiu plural (_der Kinder_). El context ho aclareix: si hi ha un substantiu davant que expressa possessió, és genitiu.\n\n- _Ich helfe **der Frau**._ → datiu (complement de _helfen_).\n- _Das Haus **der Frau** ist groß._ → genitiu (la casa de la dona).\n\n**6. Tractar _die Niederlande_ o _die USA_ com si no portessin article.**\n\n- ==incorrecte==: _die Hauptstadt **Niederlands**_ / _die Hauptstadt **USAs**_\n- ==correcte==: _die Hauptstadt **der Niederlande**_ / _die Hauptstadt **der USA**_"
+          "bad": "!!der Mauer**s** / der Schweiz**s**!!",
+          "good": "!!der Mauer / der Schweiz!!",
+          "why": "Afegir _-s_ al femení. El femení **mai** canvia al genitiu: només canvia l'article (_die → der_)."
+        },
+        {
+          "bad": "!!das Zentrum **des** Berlin**s**!!",
+          "good": "!!das Zentrum **Berlins**!!",
+          "why": "Posar article davant d'un nom propi de ciutat/país sense article. Els noms propis sense article fan el genitiu amb ==només _-s_==, sense _des_."
+        },
+        {
+          "bad": "!!das Zentrum **von Berlin**!!",
+          "good": "!!das Zentrum **Berlins**!!",
+          "why": "_Von_ + nom propi en lloc del genitiu amb _-s_. En registre formal/escrit, els noms propis prefereixen la forma amb _-s_. _Von_ és acceptable a l'oral."
+        },
+        {
+          "bad": "!!Ich helfe **der Frau**. _(confós amb genitiu)_!!",
+          "good": "!!Das Haus **der Frau** ist groß. _(genitiu real)_!!",
+          "why": "Confondre datiu i genitiu quan coincideixen en _der_. El context ho aclareix: si hi ha un substantiu davant que expressa possessió, és ==genitiu==; si depèn d'un verb com _helfen_, és datiu."
+        },
+        {
+          "bad": "!!die Hauptstadt **Niederlands** / die Hauptstadt **USAs**!!",
+          "good": "!!die Hauptstadt **der Niederlande** / die Hauptstadt **der USA**!!",
+          "why": "Tractar _die Niederlande_ o _die USA_ com si no portessin article. Els països amb article definit segueixen la ==regla general== del genitiu amb article."
         }
       ]
     },

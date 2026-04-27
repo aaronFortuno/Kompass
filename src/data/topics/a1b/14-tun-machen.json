@@ -162,10 +162,33 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys típics",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys típics\n\n**1. Dir _\"Mein Fuß macht weh\"_.** — És l'error més clàssic per calc del català (_em fa mal_) o de l'anglès (_makes me hurt_). ==En alemany, l'expressió de dolor amb parts del cos s'articula sempre amb _tun_, no amb _machen_==.\n- Incorrecte: _Mein Fuß **macht** weh._\n- Correcte: _Mein Fuß **tut** weh._\n\n**2. Posar _Schmerz_ en singular.** — El substantiu _Schmerz_ pràcticament sempre apareix en **plural** quan parlem de mal físic quotidià.\n- Incorrecte: _Ich habe **Kopfschmerz**._\n- Correcte: _Ich habe **Kopfschmerzen**._\n\n**3. Traduir _fer_ automàticament per _tun_.** — El català _fer_ equival a _machen_ en la immensa majoria de casos. _Tun_ és l'excepció, no la regla. Si dubtes, posa _machen_.\n- Incorrecte: _Ich **tue** die Hausaufgaben._ (sona raro)\n- Correcte: _Ich **mache** die Hausaufgaben._\n\n**4. Conjugar _tun_ com un regular normal.** — L'arrel és _tu-_ (acaba en vocal), per tant les formes plurals són **tun** (no _\"tuen\"_), i _ich_ fa **tue** (no _\"tu\"_). Tingues present la petita irregularitat.\n- Incorrecte: _Wir **tuen** das._ / _Ich **tu** das._\n- Correcte: _Wir **tun** das._ / _Ich **tue** das._\n\n**5. Confondre _Was machst du?_ i _Was tust du?_** — Totes dues són gramaticalment correctes, però **la versió neutra i freqüent és _Was machst du?_**. _Was tust du?_ sona més formal, emfàtic o fins i tot retret (\"què estàs fent, exactament?\"). Per defecte, usa _machen_."
+          "bad": "!!Mein Fuß **macht** weh.!!",
+          "good": "!!Mein Fuß **tut** weh.!!",
+          "why": "Calc del català _em fa mal_. ==L'expressió de dolor amb parts del cos s'articula sempre amb _tun_, no amb _machen_==."
+        },
+        {
+          "bad": "!!Ich habe **Kopfschmerz**.!!",
+          "good": "!!Ich habe **Kopfschmerzen**.!!",
+          "why": "El substantiu ==_Schmerzen_== pràcticament sempre apareix en **plural** quan parlem de mal físic quotidià."
+        },
+        {
+          "bad": "!!Ich **tue** die Hausaufgaben.!!",
+          "good": "!!Ich **mache** die Hausaufgaben.!!",
+          "why": "Traduir _fer_ automàticament per _tun_. El català _fer_ equival a ==_machen_== en la immensa majoria de casos. _Tun_ és l'excepció, no la regla."
+        },
+        {
+          "bad": "!!Wir **tuen** das. / Ich **tu** das.!!",
+          "good": "!!Wir **tun** das. / Ich **tue** das.!!",
+          "why": "Conjugar _tun_ com un regular normal. L'arrel és _tu-_ (acaba en vocal): els plurals fan **tun** (no _tuen_) i _ich_ fa **tue** (no _tu_)."
+        },
+        {
+          "bad": "!!Was **tust** du?!!",
+          "good": "!!Was **machst** du?!!",
+          "why": "Totes dues són correctes, però ==_Was machst du?_== és la forma neutra i freqüent. _Was tust du?_ sona més formal, emfàtic o fins i tot retret."
         }
       ]
     },

@@ -133,10 +133,38 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Errors típics del catalanoparlant",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Errors típics del catalanoparlant\n\n1. **Dir *in* per tot** com fem amb *a* en català. Recorda: *auf der Insel* (a l'illa), *an der Küste* (a la costa), no *in*.\n2. **Oblidar l'article a països com Suïssa o Turquia**: és *in **der** Schweiz*, no *in Schweiz*.\n3. **No contraure** *an dem* / *in dem*: en alemany parlat i escrit estàndard són quasi sempre ==am== i ==im==.\n4. **Confondre *neben* i *bei***: *bei* ja el vas veure a A1a-34 (genèric: *a casa de, a l'empresa, prop de*). *neben* és més específic: **just al costat físic**.\n5. **Declinar malament el datiu femení**: *an **der** See* (no *an die See*, que seria acusatiu/direcció, tema A1b-19).\n6. **Plural sense -n**: *in den Alpen*, *in den USA*. El datiu plural afegeix **-n** al substantiu si no en té ja un."
+          "bad": "!!Wir sind **in** der Insel.!!",
+          "good": "!!Wir sind **auf** der Insel.!!",
+          "why": "Dir *in* per tot com fem amb *a* en català. Recorda: *auf der Insel* (a l'illa), *an der Küste* (a la costa), no *in*."
+        },
+        {
+          "bad": "!!Ich wohne **in** Schweiz.!!",
+          "good": "!!Ich wohne **in der** Schweiz.!!",
+          "why": "Oblidar l'article a països com Suïssa o Turquia: és *in **der** Schweiz*, no *in Schweiz*."
+        },
+        {
+          "bad": "!!Ich bin **an dem** Strand.!!",
+          "good": "!!Ich bin ==am== Strand.!!",
+          "why": "No contraure *an dem* / *in dem*: en alemany parlat i escrit estàndard són quasi sempre ==am== i ==im==."
+        },
+        {
+          "bad": "!!Die Lampe steht **bei** dem Sofa.!!",
+          "good": "!!Die Lampe steht **neben dem** Sofa.!!",
+          "why": "Confondre *neben* i *bei*: *bei* és genèric (*a casa de, a l'empresa, prop de*). *neben* és més específic: **just al costat físic**."
+        },
+        {
+          "bad": "!!Wir wohnen an **die** See.!!",
+          "good": "!!Wir wohnen an **der** See.!!",
+          "why": "Declinar malament el datiu femení: *an **der** See* (no *an die See*, que seria acusatiu/direcció, tema A1b-19)."
+        },
+        {
+          "bad": "!!Wir sind in den **Alpe**.!!",
+          "good": "!!Wir sind in den **Alpen**.!!",
+          "why": "Plural sense -n: *in den Alpen*, *in den USA*. El datiu plural afegeix **-n** al substantiu si no en té ja un."
         }
       ]
     },

@@ -203,14 +203,48 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals (d'aquest reforç)\n\n**1. Oblidar _als_ al comparatiu.**\nCalc del català \"que\": \\*_Ich fahre lieber mit dem Zug **wie** mit dem Auto_. Incorrecte. El \"que\" comparatiu en alemany és **==als==**: _lieber mit dem Zug **als** mit dem Auto_. (Pot ser que sentis _wie_ a l'alemany col·loquial; no ho imitis.)\n\n**2. Oblidar _am_ al superlatiu.**\n\\*_Liebsten trinke ich Tee_ és incorrecte. La forma és una **construcció fixa de dues paraules**: **_am liebsten_**. Apren-la com un bloc tancat i escriu-la sempre sencera.\n\n**3. No fer la inversió quan _Am liebsten_ va al principi.**\n\\*_Am liebsten ich fahre mit dem Auto_. Incorrecte: viola la regla del verb en segona posició (A1a-18). El correcte és _**Am liebsten** fahre ich mit dem Auto_ (verb en posició 2, subjecte en posició 3).\n\n**4. Posar la tríada al final de l'oració com si fos un adverbi de temps o de lloc.**\n\\*_Ich fahre mit dem Zug gern_ sona estrany en alemany estàndard. La posició natural és **darrere del verb conjugat** i **abans dels complements**: _Ich fahre **gern** mit dem Zug_. Aquesta regla val per a les tres formes."
+          "bad": "!!Ich fahre lieber mit dem Zug **wie** mit dem Auto.!!",
+          "good": "!!Ich fahre lieber mit dem Zug **als** mit dem Auto.!!",
+          "why": "Oblidar _als_ al comparatiu. El \"que\" comparatiu en alemany és **==als==**, no _wie_."
         },
         {
-          "type": "explanation",
-          "body": "**5. Fer servir _gern_ davant d'un substantiu, com si fos un adjectiu.**\n\\*_Ich habe gern Pizza_ (calc de l'anglès _I like pizza_). Incorrecte: _gern_ és un adverbi, no es combina directament amb substantius. Si vols dir \"m'agrada la pizza\", o bé: _Ich mag Pizza_ (_mögen_ + substantiu), o bé: _Ich esse **gern** Pizza_ (verb + _gern_ + complement). Mai \\*_Ich habe gern Pizza_ ni \\*_Ich gern Pizza_.\n\n**6. Conjugar _gern / lieber / am liebsten_.**\nSón **invariables**. No canvien de forma segons el subjecte, el nombre, ni el gènere. \\*_Wir gernen_, \\*_Du liebsten_: no existeixen. L'única cosa que es conjuga és el **verb** que les acompanya: _Ich lese gern, Du liest gern, Er liest gern, Wir lesen gern_...\n\n**7. Confondre _lieber_ (comparatiu de _gern_) amb _lieb_ (adjectiu \"estimat, amable\").**\nSón paraules relacionades etimològicament, però **amb usos diferents**. _Lieb_ és adjectiu i es declina: _ein lieber Freund_ (un bon amic). _Lieber_ com a comparatiu de _gern_ és **invariable** i va darrere d'un verb conjugat: _Ich trinke **lieber** Tee_.\n\n**8. Fer _gern_ amb infinitiu (\\*_Ich gern kochen_).**\nCalc del català \"m'agrada cuinar\". Incorrecte: a l'alemany el verb es conjuga i _gern_ va al darrere. _Ich **koche gern**_, no \\*_Ich gern kochen_ ni \\*_Ich mag kochen_."
+          "bad": "!!**Liebsten** trinke ich Tee.!!",
+          "good": "!!**Am liebsten** trinke ich Tee.!!",
+          "why": "Oblidar _am_ al superlatiu. La forma és una **construcció fixa de dues paraules**: **_am liebsten_**. Sempre sencera."
+        },
+        {
+          "bad": "!!Am liebsten **ich fahre** mit dem Auto.!!",
+          "good": "!!Am liebsten **fahre ich** mit dem Auto.!!",
+          "why": "No fer la inversió quan _Am liebsten_ va al principi. Verb en posició 2, subjecte en posició 3 (regla V2, A1a-18)."
+        },
+        {
+          "bad": "!!Ich fahre mit dem Zug **gern**.!!",
+          "good": "!!Ich fahre **gern** mit dem Zug.!!",
+          "why": "La posició natural de la tríada és **darrere del verb conjugat** i **abans dels complements**, no al final de l'oració."
+        },
+        {
+          "bad": "!!Ich **habe gern** Pizza.!!",
+          "good": "!!Ich **esse gern** Pizza.!!",
+          "why": "_gern_ és un adverbi que acompanya un verb d'acció, no es combina amb _haben_ per dir \"m'agrada\". Si vols el substantiu sol: _Ich mag Pizza_ (_mögen_)."
+        },
+        {
+          "bad": "!!Wir **gernen** Fußball spielen.!!",
+          "good": "!!Wir **spielen gern** Fußball.!!",
+          "why": "_gern / lieber / am liebsten_ són **invariables**. No canvien de forma. L'única cosa que es conjuga és el **verb**."
+        },
+        {
+          "bad": "!!Ich trinke **ein lieber** Tee.!!",
+          "good": "!!Ich trinke **lieber** Tee.!!",
+          "why": "No confondre _lieber_ (comparatiu invariable de _gern_) amb _lieb_ (adjectiu declinable: _ein lieber Freund_). Usos diferents."
+        },
+        {
+          "bad": "!!Ich **gern kochen**.!!",
+          "good": "!!Ich **koche gern**.!!",
+          "why": "Calc del català \"m'agrada cuinar\". En alemany el verb es conjuga i _gern_ va al darrere. No _Ich gern kochen_ ni _Ich mag kochen_."
         }
       ]
     },

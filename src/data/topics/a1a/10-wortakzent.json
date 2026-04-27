@@ -104,10 +104,38 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals\n\n**1. Buscar un accent escrit que no hi és.**\nA diferència del català i el castellà, l'alemany no marca mai l'accent ortogràficament. No perdis el temps buscant tildes: no n'hi ha. Has de confiar en les regles i l'exposició.\n\n**2. Traslladar l'accent castellà / català a l'alemany.**\nParaules que s'assemblen a paraules romàniques poden fer-te caure: _Telefon_ no s'accentua com _teléfono_ (esdrúixol en castellà, pla en català), sinó amb l'accent principal a la darrera síl·laba (!!Tele**fon**!!). És un préstec grecollatí i manté aquest patró, tot i que a la llengua parlada la diferència entre síl·labes sona més suau que l'accent marcat del castellà. En general, la regla de la primera síl·laba aplica a la majoria de paraules alemanyes d'origen germànic; per a préstecs recents (llatinismes, anglicismes) hi ha més variabilitat.\n\n**3. Accentuar els prefixos no accentuats.**\nDir _**be**kommen_ o _**ver**stehen_ és un error clàssic. El prefix _be-, ge-, ver-_ i companyia és sempre una síl·laba feble. L'accent es queda al verb: be**kom**men, ver**ste**hen.\n\n**4. No accentuar els prefixos separables.**\nL'altre error de sentit contrari: pronunciar _ein**kau**fen_ amb l'accent al verb. Els prefixos separables (_ab-, an-, auf-, ein-, mit-, vor-, weg-_...) **sí** porten l'accent: **ein**kaufen, **an**kommen.\n\n**5. Accentuar el final del compost.**\nLa temptació de dir _Wohn**zim**mer_ o _Bau**stel**le_ és real, sobretot perquè el segon element sona com una paraula \"completa\". En alemany la força va a l'esquerra: **Wohn**zimmer, **Bau**stelle.\n\n**6. Creure que la flexió mou l'accent.**\n_Ich arbeite_ o _du arbeitest_ tenen l'accent al mateix lloc que _arbeiten_: a **ar-**. No és com el castellà _trabajo, trabajamos_, on la vocal tònica canvia de posició. En alemany, un cop saps l'accent del verb base, ja el tens per tota la conjugació."
+          "bad": "!!Telefón!! (buscant un accent escrit)",
+          "good": "!!Telefon!! (sense accent ortogràfic, accent oral a _-fon_)",
+          "why": "Buscar un accent escrit que no hi és. L'alemany no marca mai l'accent ortogràficament. No n'hi ha tildes: has de confiar en les regles i l'exposició."
+        },
+        {
+          "bad": "!!==Té==lefon!! (accent a la catalana/castellana)",
+          "good": "!!Tele==fon==!! (accent a la darrera síl·laba)",
+          "why": "Traslladar l'accent castellà/català a l'alemany. _Telefon_ no s'accentua com _teléfono_. Els préstecs grecollatins mantenen patrons propis; la regla de la primera síl·laba aplica a paraules d'origen germànic."
+        },
+        {
+          "bad": "!!==be==kommen!! / !!==ver==stehen!!",
+          "good": "!!be==kom==men!! / !!ver==ste==hen!!",
+          "why": "Accentuar els prefixos no accentuats. _be-, ge-, ver-_ i companyia són sempre síl·labes febles. L'accent es queda al verb."
+        },
+        {
+          "bad": "!!ein==kau==fen!! / !!an==kom==men!!",
+          "good": "!!==ein==kaufen!! / !!==an==kommen!!",
+          "why": "No accentuar els prefixos separables. Els prefixos _ab-, an-, auf-, ein-, mit-, vor-, weg-_... **sí** porten l'accent."
+        },
+        {
+          "bad": "!!Wohn==zim==mer!! / !!Bau==stel==le!!",
+          "good": "!!==Wohn==zimmer!! / !!==Bau==stelle!!",
+          "why": "Accentuar el final del compost. En alemany, l'accent principal dels compostos va a la primera paraula (la de l'esquerra), on hi ha la informació distintiva."
+        },
+        {
+          "bad": "!!ich ar==bei==te!! / !!du ar==bei==test!!",
+          "good": "!!ich ==ar==beite!! / !!du ==ar==beitest!!",
+          "why": "Creure que la flexió mou l'accent. En alemany, un cop saps l'accent del verb base, ja el tens per tota la conjugació. No és com el castellà _trabajo / trabajamos_."
         }
       ]
     },

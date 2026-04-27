@@ -142,10 +142,33 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Errors típics del catalanoparlant",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Errors típics del catalanoparlant\n\n1. **Confondre \"on\" català amb *Wo?* alemany sempre.**\n   - \"On vas?\" NO es tradueix per *Wo gehst du?* sinó per ***Wohin** gehst du?* (hi ha moviment).\n   - \"On vius?\" → *Wo wohnst du?* (no hi ha moviment).\n2. **Oblidar el canvi de cas amb la mateixa preposició.**\n   - *Ich bin **in der** Schule* (*Wo?* → datiu femení) vs. *Ich gehe **in die** Schule* (*Wohin?* → acusatiu femení).\n3. **Barrejar *aus* i *von* en respostes a *Woher?*.**\n   - *Ich komme **aus** Deutschland* (nacionalitat/país) / *Ich komme **von** der Party* (punt concret).\n4. **Fer *nach* amb noms comuns** en respostes a *Wohin?* → error típic (vegeu A1b-3): *❌ nach dem Arzt* / *✅ zum Arzt*.\n5. **Traduir \"d'on\" per *wo* + *von* separats**: en alemany hi ha **una sola paraula**: ***woher***. Igual amb *wohin*."
+          "bad": "!!**Wo** gehst du?!!",
+          "good": "!!**Wohin** gehst du?!!",
+          "why": "Confondre \"on\" català amb _Wo?_ alemany sempre. \"On vas?\" implica moviment, per tant és ==_Wohin?_==, no _Wo?_. (_Wo wohnst du?_ sí que és correcte: no hi ha moviment.)"
+        },
+        {
+          "bad": "!!Ich bin **in die** Schule.!!",
+          "good": "!!Ich bin **in der** Schule.!!",
+          "why": "Oblidar el canvi de cas amb la mateixa preposició. _Wo?_ (ubicació) → ==datiu== (_in der_); _Wohin?_ (direcció) → acusatiu (_in die_)."
+        },
+        {
+          "bad": "!!Ich komme **von** Deutschland.!!",
+          "good": "!!Ich komme **aus** Deutschland.!!",
+          "why": "Barrejar _aus_ i _von_ en respostes a _Woher?_. ==_Aus_== = procedència general (país, ciutat). ==_Von_== = punt de partida puntual (_von der Party_)."
+        },
+        {
+          "bad": "!!Ich gehe **nach dem** Arzt.!!",
+          "good": "!!Ich gehe **zum** Arzt.!!",
+          "why": "Fer _nach_ amb noms comuns en respostes a _Wohin?_. ==_Nach_== s'usa amb noms geogràfics sense article; amb noms comuns cal ==_zu_== + datiu."
+        },
+        {
+          "bad": "!!**Wo** kommst du **von**?!!",
+          "good": "!!**Woher** kommst du?!!",
+          "why": "Traduir \"d'on\" per _wo_ + _von_ separats. En alemany hi ha ==una sola paraula==: _woher_. Igual amb _wohin_."
         }
       ]
     },

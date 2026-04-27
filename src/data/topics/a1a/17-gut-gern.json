@@ -162,16 +162,38 @@
     },
     {
       "id": "pitfalls",
-      "blocks": [
+      "blocks": [],
+      "heading": "Paranys habituals",
+      "pitfalls": [
         {
-          "type": "explanation",
-          "body": "#### Paranys habituals\n\n**1. Dir _guter_ en lloc de _besser_.**\nLa forma regular _-er_ del comparatiu alemany (_schnell → schneller_, _klein → kleiner_) no s'aplica a _gut_. _guter_ existeix, però és una forma declinada del positiu _gut_ (com a _ein guter Freund_ = un bon amic), no un comparatiu. El comparatiu és sempre _**besser**_, mai _**guter**_ ni _**gutter**_.\n\n**2. Dir _am gutsten_ en lloc de _am besten_.**\nDe la mateixa manera, el superlatiu regular amb _am + -sten_ (_am schnellsten_, _am kleinsten_) no funciona amb _gut_. El superlatiu és _**am besten**_, construït sobre l'arrel _best-_ (el mateix _best_ de l'anglès, per cert).\n\n**3. Confondre _gern_ i _gerne_.**\nPotser veuràs escrit _gerne_ en alguns llocs. Són la mateixa paraula: _gerne_ és una variant una mica més informal o col·loquial de _gern_, i el seu comportament gramatical és idèntic. Al curs utilitzarem _gern_ de manera sistemàtica, però si trobes _gerne_ no és un error.\n\n**4. Dir _gerner_ o _am gernsten_.**\nError clàssic. Al comparar _gern_, les formes són _**lieber**_ i _**am liebsten**_ — no existeix ni _gerner_ ni _am gernsten_. Són tan irregulars com les d'_gut_.\n\n**5. Oblidar _als_ al comparatiu.**\nEn alemany, \"que\" comparatiu és **_als_** (no _wie_, que és \"com\"). _Besser **als** das Buch_, _lieber **als** Kaffee_. Dir _besser **wie** das Buch_ és un error molt estès entre els propis alemanys col·loquials, però és incorrecte en llengua estàndard. Tu aprèn-ho amb _als_ des del principi.\n\n**6. Oblidar la _am_ del superlatiu.**\nLes formes superlatives d'aquest tema van **sempre** amb _am_ davant: _**am** besten_, _**am** liebsten_. Dir _besten finde ich..._ o _liebsten trinke ich..._ sense _am_ no és correcte a l'A1. És una construcció fixa; memoritza-la com un bloc de dues paraules."
+          "bad": "!!Das Buch ist guter als der Film.!!",
+          "good": "!!Das Buch ist **besser** als der Film.!!",
+          "why": "El comparatiu regular _-er_ no s'aplica a _gut_. _guter_ és una forma declinada del positiu (_ein guter Freund_), no un comparatiu. El comparatiu és sempre **_besser_**."
         },
         {
-          "type": "callout",
-          "variant": "warning",
-          "title": "Resum dels paranys",
-          "body": "No digui's _guter_ / _gutter_ / _am gutsten_ per a _gut_, ni _gerner_ / _am gernsten_ per a _gern_. Les formes correctes són irregulars i s'han de memoritzar com a tríades tancades: **gut / besser / am besten** i **gern / lieber / am liebsten**, amb **_als_** al comparatiu i **_am_** obligatori al superlatiu."
+          "bad": "!!Am gutsten finde ich Fast and Furious.!!",
+          "good": "!!**Am besten** finde ich Fast and Furious.!!",
+          "why": "El superlatiu regular _am + -sten_ no funciona amb _gut_. El superlatiu és **_am besten_**, construït sobre l'arrel _best-_."
+        },
+        {
+          "bad": "!!Ich lese gerner.!! / !!Am gernsten lese ich.!!",
+          "good": "!!Ich lese **lieber**.!! / !!**Am liebsten** lese ich.!!",
+          "why": "Les formes comparativa i superlativa de _gern_ són **_lieber_** i **_am liebsten_** — no existeix ni _gerner_ ni _am gernsten_."
+        },
+        {
+          "bad": "!!Das Buch ist besser **wie** der Film.!!",
+          "good": "!!Das Buch ist besser **als** der Film.!!",
+          "why": "\"Que\" comparatiu és **_als_** (no _wie_, que és \"com\"). Dir _besser wie_ és un error molt estès col·loquialment, però incorrecte en llengua estàndard."
+        },
+        {
+          "bad": "!!Besten finde ich Fast and Furious.!! / !!Liebsten trinke ich Tee.!!",
+          "good": "!!**Am** besten finde ich Fast and Furious.!! / !!**Am** liebsten trinke ich Tee.!!",
+          "why": "Les formes superlatives d'aquest tema van **sempre** amb _am_ davant. És una construcció fixa: memoritza-la com un bloc de dues paraules."
+        },
+        {
+          "bad": "!!Ich koche gern.!! (volent dir \"cuino bé\")",
+          "good": "!!Ich koche **gut**.!! (cuino bé) / !!Ich koche **gern**.!! (m'agrada cuinar)",
+          "why": "_gut_ = qualitat (com es fa). _gern_ = plaer (amb quin grat). No són intercanviables."
         }
       ]
     },
